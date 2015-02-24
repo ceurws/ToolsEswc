@@ -17,7 +17,7 @@ import org.fit.layout.tools.BlockBrowser;
  * 
  * @author burgetr
  */
-public class BlockBrowserTest extends BlockBrowser
+public class BlockBrowserEswc extends BlockBrowser
 {
 
     public static void main(String[] args)
