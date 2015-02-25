@@ -85,13 +85,11 @@ public class ClassTaggerOperator extends BaseOperator
     
     private void addAreaTags(Area area)
     {
-        System.out.println("Start: " + area);
         for (Box box : area.getBoxes())
         {
             String cstr = box.getAttribute("class");
             if (cstr != null)
             {
-                System.out.println("box: " + box + " cls: " + cstr);
                 String[] clss = cstr.split("\\s");
                 for (String cls : clss)
                 {
