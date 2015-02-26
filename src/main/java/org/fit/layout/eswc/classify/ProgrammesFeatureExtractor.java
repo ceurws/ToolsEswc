@@ -9,9 +9,11 @@ import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
-import org.fit.layout.classify.FeatureExtractor;
+import org.fit.layout.classify.DefaultFeatureExtractor;
 import org.fit.layout.model.Area;
 import org.fit.layout.model.Box;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import weka.core.DenseInstance;
 import weka.core.Instance;
@@ -22,8 +24,10 @@ import weka.core.Instances;
  * 
  * @author burgetr
  */
-public class ProgrammesFeatureExtractor implements FeatureExtractor
+public class ProgrammesFeatureExtractor extends DefaultFeatureExtractor
 {
+    private static Logger log = LoggerFactory.getLogger(ProgrammesFeatureExtractor.class);
+
     private Area root;
     private float avgfont;
     
@@ -46,7 +50,7 @@ public class ProgrammesFeatureExtractor implements FeatureExtractor
         int plen = text.length();
         if (plen == 0) plen = 1; //kvuli deleni nulou
 
-        Instance inst = new DenseInstance(30);
+        Instance inst = new DenseInstance(15);
         inst.setDataset(dataset);
         int i = 0;
         inst.setValue(i++, 0.0); //class
@@ -66,6 +70,17 @@ public class ProgrammesFeatureExtractor implements FeatureExtractor
         inst.setValue(i++, getRelY(area));
         
         return inst;
+    }
+
+    @Override
+    public Instances createEmptyDataset()
+    {
+        try {
+            return loadArffDatasetResource("eswc_header.arff");
+        } catch (Exception e) {
+            log.error("Couldn't create empty dataset: " + e.getMessage());
+            return null;
+        }
     }
 
     //============================================================================================

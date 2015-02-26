@@ -11,6 +11,9 @@ import java.net.URL;
 
 import javax.swing.JFrame;
 
+import org.fit.layout.api.AreaTreeOperator;
+import org.fit.layout.classify.op.VisualClassificationOperator;
+import org.fit.layout.eswc.classify.ProgrammesFeatureExtractor;
 import org.fit.layout.tools.BlockBrowser;
 
 /**
@@ -20,6 +23,18 @@ import org.fit.layout.tools.BlockBrowser;
 public class BlockBrowserEswc extends BlockBrowser
 {
 
+    public BlockBrowserEswc()
+    {
+        super();
+        AreaTreeOperator vcls = getProcessor().getOperators().get("FitLayout.Tag.Visual");
+        if (vcls != null && vcls instanceof VisualClassificationOperator)
+        {
+            ((VisualClassificationOperator) vcls).setFeatures(new ProgrammesFeatureExtractor());
+        }
+        else
+            System.err.println("Couldn't configure FitLayout.Tag.Visual!");
+    }
+    
     public static void main(String[] args)
     {
         EventQueue.invokeLater(new Runnable()
@@ -28,7 +43,7 @@ public class BlockBrowserEswc extends BlockBrowser
             {
                 try
                 {
-                    browser = new BlockBrowser();
+                    browser = new BlockBrowserEswc();
                     browser.setLoadImages(false);
                     JFrame main = browser.getMainWindow();
                     //main.setSize(1000,600);
