@@ -6,7 +6,8 @@ proc.apply('FitLayout.Segm.FindLines', {useConsistentStyle: false, maxLineEmSpac
 proc.apply('FitLayout.Segm.HomogeneousLeaves', {});
 //proc.apply('FitLayout.Segm.SuperAreas', {depthLimit: 2});
 
-proc.apply('FitLayout.Tag.Entities', {});
-proc.apply('FitLayout.Tag.Visual', {trainFile: "eswc_train.arff", classIndex: 0});
+//proc.apply('FitLayout.Tag.Entities', {});
+//proc.apply('FitLayout.Tag.Visual', {trainFile: "res:eswc_train.arff", classIndex: 0});
+proc.apply('FitLayout.Tag.Visual', {trainFile: "/tmp/test.arff", classIndex: 0});
 
 //proc.apply('FitLayout.Tools.XMLOutput', {filename: "/tmp/out.xml"});
