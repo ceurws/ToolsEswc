@@ -44,6 +44,12 @@ public class ProgrammesFeatureExtractor extends DefaultFeatureExtractor
     }
     
     @Override
+    public Area getTreeRoot()
+    {
+        return root;
+    }
+
+    @Override
     public Instance getAreaFeatures(Area area, Instances dataset)
     {
         String text = area.getText();
