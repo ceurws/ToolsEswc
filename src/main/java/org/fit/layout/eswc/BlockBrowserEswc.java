@@ -58,8 +58,9 @@ public class BlockBrowserEswc extends BlockBrowser
             
                     
                     /* CEUR */
-                    URL url = new URL(localpath + "/test/ceur/volumes/Vol-1317.html");
-                    
+                    //URL url = new URL(localpath + "/test/ceur/volumes/Vol-1317.html");
+                    URL url = new URL("http://ceur-ws.org/Vol-104/");
+                        
                     browser.setLocation(url.toString());
                         
                 } catch (Exception e) {

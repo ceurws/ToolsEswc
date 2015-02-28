@@ -100,13 +100,15 @@ public class FindPairsOperator extends BaseOperator
             //check the tags
             if (aa != null && acceptableTags(aa))
             {
-                if (root.hasTag(tpersons) && !aa.hasTag(tpersons))
+                if ((root.hasTag(tpersons) && !aa.hasTag(tpersons))
+                    || (!root.hasTag(ttitle) && aa.hasTag(ttitle)))
                 {
                     aa.addTag(etitle, 0.5f);
                     root.addTag(eauthors, 0.5f);
                     tacnt++;
                 }
-                else if (root.hasTag(ttitle) && !aa.hasTag(ttitle))
+                else if ((root.hasTag(ttitle) && !aa.hasTag(ttitle))
+                         || (!root.hasTag(tpersons) && aa.hasTag(tpersons)))
                 {
                     aa.addTag(eauthors, 0.5f);
                     root.addTag(etitle, 0.5f);
