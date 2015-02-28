@@ -11,6 +11,9 @@ import org.fit.layout.model.Area;
 import org.fit.layout.model.AreaTree;
 import org.fit.layout.model.Rectangular;
 import org.fit.layout.model.Tag;
+import org.fit.layout.tools.Console;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * Finds and tags the title/authors pairs.
@@ -19,17 +22,22 @@ import org.fit.layout.model.Tag;
  */
 public class FindPairsOperator extends BaseOperator
 {
+    private static Logger log = LoggerFactory.getLogger(Console.class);
     private static final String TT = "FitLayout.TextTag";
     
     private final String[] paramNames = {};
     private final ValueType[] paramTypes = {};
     
     //tags to compare to
-    Tag tpersons = new DefaultTag(TT, "persons");
-    Tag ttitle = new DefaultTag(TT, "title");
-    Tag eauthors = new EswcTag("authors");
-    Tag etitle = new EswcTag("title");
+    private Tag tpersons = new DefaultTag(TT, "persons");
+    private Tag ttitle = new DefaultTag(TT, "title");
+    private Tag eauthors = new EswcTag("authors");
+    private Tag etitle = new EswcTag("title");
 
+    //statistics
+    private int tacnt = 0; //title-author pairs
+    private int atcnt = 0; //author-title pairs
+    
     
     public FindPairsOperator()
     {
@@ -78,6 +86,7 @@ public class FindPairsOperator extends BaseOperator
     {
         //add tags to pairs based on their text tags
         recursivelyAddTags(root);
+        log.info("Pairs count: TA={}, AT={}", tacnt, atcnt);
     }
     
     //==============================================================================
@@ -93,13 +102,15 @@ public class FindPairsOperator extends BaseOperator
             {
                 if (root.hasTag(tpersons) && !aa.hasTag(tpersons))
                 {
-                    root.addTag(eauthors, 0.5f);
                     aa.addTag(etitle, 0.5f);
+                    root.addTag(eauthors, 0.5f);
+                    tacnt++;
                 }
                 else if (root.hasTag(ttitle) && !aa.hasTag(ttitle))
                 {
-                    root.addTag(etitle, 0.5f);
                     aa.addTag(eauthors, 0.5f);
+                    root.addTag(etitle, 0.5f);
+                    atcnt++;
                 }
             }
         }
@@ -129,9 +140,9 @@ public class FindPairsOperator extends BaseOperator
             {
                 final Area child = parent.getChildArea(i);
                 Rectangular cgp = child.getTopology().getPosition();
-                if (cgp.getX1() == gp.getX1() && cgp.getY1() < y)
+                if (cgp.getX1() == gp.getX1() && cgp.getY2() < y)
                 {
-                    final int dif = y - cgp.getY1();
+                    final int dif = y - cgp.getY2();
                     if (dif < mindif)
                     {
                         ret = child;
@@ -142,8 +153,8 @@ public class FindPairsOperator extends BaseOperator
             //sanity check: should be at most one line above
             if (ret != null)
             {
-                int dy = a.getBounds().getY1() - ret.getBounds().getY1();
-                if (dy > a.getBounds().getHeight() * 1.5)
+                int dy = a.getBounds().getY1() - ret.getBounds().getY2();
+                if (dy > a.getBounds().getHeight() / 2)
                 {
                     System.out.println("Too far " + a + " --- " + ret);
                     ret = null;
