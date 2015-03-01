@@ -28,6 +28,9 @@ public class FindPairsOperator extends BaseOperator
     private final String[] paramNames = {};
     private final ValueType[] paramTypes = {};
     
+    //params
+    private boolean useSiblings;
+    
     //tags to compare to
     private Tag tpersons = new DefaultTag(TT, "persons");
     private Tag ttitle = new DefaultTag(TT, "title");
@@ -41,6 +44,7 @@ public class FindPairsOperator extends BaseOperator
     
     public FindPairsOperator()
     {
+        useSiblings = true;
     }
     
     @Override
@@ -96,7 +100,11 @@ public class FindPairsOperator extends BaseOperator
         if (root.getParentArea() != null && acceptableTags(root))
         {
             //try to find an aligned area above
-            Area aa = findClosestAbove(root);
+            Area aa;
+            if (useSiblings)
+                aa = root.getPreviousSibling();
+            else
+                aa = findClosestAbove(root);
             //check the tags
             if (aa != null && acceptableTags(aa))
             {
