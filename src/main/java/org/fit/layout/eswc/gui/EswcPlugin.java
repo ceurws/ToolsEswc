@@ -8,6 +8,7 @@ package org.fit.layout.eswc.gui;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.HashSet;
+import java.util.Map;
 import java.util.Set;
 
 import javax.swing.JButton;
@@ -24,6 +25,8 @@ import org.fit.layout.model.Tag;
  */
 public class EswcPlugin implements BrowserPlugin
 {
+    private static final float MIN_TAG_SUPPORT = 0.3f;
+    
     private Browser browser;
     private JToolBar toolbar;
     private JButton classesButton;
@@ -96,10 +99,10 @@ public class EswcPlugin implements BrowserPlugin
     {
         //find tags of the given type
         Set<Tag> tags = new HashSet<Tag>();
-        for (Tag tag : root.getTags().keySet())
+        for (Map.Entry<Tag, Float> entry : root.getTags().entrySet())
         {
-            if (tag.getType().equals(type))
-                tags.add(tag);
+            if (entry.getValue() >= MIN_TAG_SUPPORT && entry.getKey().getType().equals(type))
+                tags.add(entry.getKey());
         }
         //display the tags
         browser.getOutputDisplay().colorizeByTags(root, tags);

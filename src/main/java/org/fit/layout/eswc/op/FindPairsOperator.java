@@ -40,6 +40,8 @@ public class FindPairsOperator extends BaseOperator
     //statistics
     private int tacnt = 0; //title-author pairs
     private int atcnt = 0; //author-title pairs
+    private int sidecnt = 0; //placed side-by side
+    private int belowcnt = 0; //placed below 
     
     
     public FindPairsOperator()
@@ -89,51 +91,146 @@ public class FindPairsOperator extends BaseOperator
     public void apply(AreaTree atree, Area root)
     {
         //add tags to pairs based on their text tags
-        recursivelyAddTags(root);
+        gatherStatistics(root, 0.2f);
         log.info("Pairs count: TA={}, AT={}", tacnt, atcnt);
+        log.info("Placement: side={}, below={}", sidecnt, belowcnt);
+        addTags(root, 0.8f);
     }
     
     //==============================================================================
     
-    private void recursivelyAddTags(Area root)
+    private void gatherStatistics(Area root, float tprob)
     {
-        if (root.getParentArea() != null && acceptableTags(root))
+        if (root.getParentArea() != null && acceptableTags(root, 0.0f, true))
         {
-            //try to find an aligned area above
-            Area aa;
-            if (useSiblings)
-                aa = root.getPreviousSibling();
-            else
-                aa = findClosestAbove(root);
+            //try to find a neighbor area
+            Area aa = findAlignedPreviousSibling(root);
             //check the tags
-            if (aa != null && acceptableTags(aa))
+            boolean found = false;
+            if (aa != null && acceptableTags(aa, 0.0f, true))
             {
                 if ((root.hasTag(tpersons) && !aa.hasTag(tpersons))
                     || (!root.hasTag(ttitle) && aa.hasTag(ttitle)))
                 {
-                    aa.addTag(etitle, 0.5f);
-                    root.addTag(eauthors, 0.5f);
+                    //title - authors
+                    aa.addTag(etitle, tprob);
+                    root.addTag(eauthors, tprob);
                     tacnt++;
+                    found = true;
                 }
                 else if ((root.hasTag(ttitle) && !aa.hasTag(ttitle))
                          || (!root.hasTag(tpersons) && aa.hasTag(tpersons)))
                 {
-                    aa.addTag(eauthors, 0.5f);
-                    root.addTag(etitle, 0.5f);
+                    //authors - title
+                    aa.addTag(eauthors, tprob);
+                    root.addTag(etitle, tprob);
                     atcnt++;
+                    found = true;
+                }
+                //other cases - will resolve later
+            }
+            if (found)
+            {
+                //placement statistics
+                if (isAtSide(aa, root))
+                    sidecnt++;
+                else
+                    belowcnt++;
+            }
+        }
+        
+        for (int i = 0; i < root.getChildCount(); i++)
+            gatherStatistics(root.getChildArea(i), tprob);
+    }
+
+    private void addTags(Area root, float tprob)
+    {
+        if (root.getParentArea() != null && acceptableTags(root, 0.5f, false))
+        {
+            //try to find a neighbor area
+            Area aa = findPairArea(root);
+            //check the tags
+            if (aa != null && acceptableTags(aa, 0.5f, false))
+            {
+                if ((sidecnt > belowcnt && isAtSide(aa, root))
+                    || (sidecnt <= belowcnt && !isAtSide(aa, root))) //required mutual positions
+                {
+                    //determine the expected order of the areas
+                    Area atitle, aauth;
+                    if (tacnt > atcnt) //title-author
+                    {
+                        atitle = aa;
+                        aauth = root;
+                    }
+                    else //author-title
+                    {
+                        aauth = aa;
+                        atitle = root;
+                    }
+                    
+                    if (atitle.hasTag(ttitle) && aauth.hasTag(tpersons)) //no doubt
+                    {
+                        atitle.addTag(etitle, tprob);
+                        aauth.addTag(eauthors, tprob);
+                    }
+                    /*else if (atitle.hasTag(ttitle)) //TODO too loose 
+                    {
+                        atitle.addTag(etitle, tprob);
+                        aauth.addTag(eauthors, tprob - 0.2f);
+                        System.out.println("Uncertain1: " + aauth + " :: " + atitle);
+                    }
+                    else if (aauth.hasTag(tpersons))
+                    {
+                        atitle.addTag(etitle, tprob - 0.2f);
+                        aauth.addTag(eauthors, tprob);
+                        System.out.println("Uncertain2: " + aauth + " :: " + atitle);
+                    }*/
                 }
             }
         }
         
         for (int i = 0; i < root.getChildCount(); i++)
-            recursivelyAddTags(root.getChildArea(i));
+            addTags(root.getChildArea(i), tprob);
     }
-
-    private boolean acceptableTags(Area a)
+    
+    //==============================================================================
+    
+    private Area findPairArea(Area root)
+    {
+        if (useSiblings)
+            return findAlignedPreviousSibling(root);
+        else
+            return findClosestAbove(root);
+    }
+    
+    private boolean acceptableTags(Area a, float minsp, boolean requireTextTag)
     {
         //area is not yet tagged and has the appropriate text tags
-        return (a.hasTag(tpersons) || a.hasTag(ttitle)) &&
-               (!a.hasTag(eauthors) && !a.hasTag(etitle));
+        return (a.hasTag(tpersons) || a.hasTag(ttitle) || !requireTextTag) &&
+               (!a.hasTag(eauthors, minsp) && !a.hasTag(etitle, minsp));
+    }
+    
+    private boolean isAtSide(Area a1, Area a2)
+    {
+        final Rectangular gp1 = a1.getTopology().getPosition();
+        final Rectangular gp2 = a2.getTopology().getPosition();
+        return (gp1.getX1() != gp2.getX1());
+    }
+    
+    private Area findAlignedPreviousSibling(Area a)
+    {
+        Area ret = a.getPreviousSibling();
+        if (ret != null)
+        {
+            final Rectangular gp1 = ret.getTopology().getPosition();
+            final Rectangular gp2 = a.getTopology().getPosition();
+            if ((gp1.getX1() == gp2.getX1()) //x-aligned
+                || (gp1.getY1() == gp2.getY1())) //y-aligned
+                return ret;
+            else
+                return null;
+        }
+        return ret;
     }
     
     private Area findClosestAbove(Area a)
