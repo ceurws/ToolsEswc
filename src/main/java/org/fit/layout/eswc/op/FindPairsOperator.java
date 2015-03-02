@@ -94,7 +94,8 @@ public class FindPairsOperator extends BaseOperator
         gatherStatistics(root, 0.2f);
         log.info("Pairs count: TA={}, AT={}", tacnt, atcnt);
         log.info("Placement: side={}, below={}", sidecnt, belowcnt);
-        addTags(root, 0.8f);
+        addTags(root, 0.8f, false);
+        addTags(root, 0.8f, true);
     }
     
     //==============================================================================
@@ -143,14 +144,14 @@ public class FindPairsOperator extends BaseOperator
             gatherStatistics(root.getChildArea(i), tprob);
     }
 
-    private void addTags(Area root, float tprob)
+    private void addTags(Area root, float tprob, boolean allowUnsure)
     {
-        if (root.getParentArea() != null && acceptableTags(root, 0.5f, false))
+        if (root.getParentArea() != null && acceptableTags(root, 0.5f, false) && !root.getText().trim().isEmpty())
         {
             //try to find a neighbor area
             Area aa = findPairArea(root);
             //check the tags
-            if (aa != null && acceptableTags(aa, 0.5f, false))
+            if (aa != null && acceptableTags(aa, 0.5f, false) && !aa.getText().trim().isEmpty())
             {
                 if ((sidecnt > belowcnt && isAtSide(aa, root))
                     || (sidecnt <= belowcnt && !isAtSide(aa, root))) //required mutual positions
@@ -173,24 +174,27 @@ public class FindPairsOperator extends BaseOperator
                         atitle.addTag(etitle, tprob);
                         aauth.addTag(eauthors, tprob);
                     }
-                    /*else if (atitle.hasTag(ttitle)) //TODO too loose 
+                    else if (allowUnsure)
                     {
-                        atitle.addTag(etitle, tprob);
-                        aauth.addTag(eauthors, tprob - 0.2f);
-                        System.out.println("Uncertain1: " + aauth + " :: " + atitle);
+                        if (atitle.hasTag(ttitle)) //TODO too loose 
+                        {
+                            atitle.addTag(etitle, tprob);
+                            aauth.addTag(eauthors, tprob - 0.2f);
+                            System.out.println("Uncertain1: " + aauth + " :: " + atitle);
+                        }
+                        else if (aauth.hasTag(tpersons))
+                        {
+                            atitle.addTag(etitle, tprob - 0.2f);
+                            aauth.addTag(eauthors, tprob);
+                            System.out.println("Uncertain2: " + aauth + " :: " + atitle);
+                        }
                     }
-                    else if (aauth.hasTag(tpersons))
-                    {
-                        atitle.addTag(etitle, tprob - 0.2f);
-                        aauth.addTag(eauthors, tprob);
-                        System.out.println("Uncertain2: " + aauth + " :: " + atitle);
-                    }*/
                 }
             }
         }
         
         for (int i = 0; i < root.getChildCount(); i++)
-            addTags(root.getChildArea(i), tprob);
+            addTags(root.getChildArea(i), tprob, allowUnsure);
     }
     
     //==============================================================================
