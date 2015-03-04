@@ -95,7 +95,7 @@ public class FindPairsOperator extends BaseOperator
         log.info("Pairs count: TA={}, AT={}", tacnt, atcnt);
         log.info("Placement: side={}, below={}", sidecnt, belowcnt);
         addTags(root, 0.8f, false);
-        addTags(root, 0.8f, true);
+        addTags(root, 0.8f, true); //add uncertain combinations TODO: style matching or learning?
     }
     
     //==============================================================================
