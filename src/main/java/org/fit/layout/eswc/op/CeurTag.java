@@ -28,6 +28,7 @@ public class CeurTag extends DefaultTag
         
         mapping.put("CEURVOLEDITOR", "veditor");
         mapping.put("CEURVOLTITLE", "vtitle");
+        mapping.put("CEURVOLACRONYM", "vacro");
     }
 
     public static String getMapping(String className)

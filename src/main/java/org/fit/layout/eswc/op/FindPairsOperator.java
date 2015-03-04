@@ -36,6 +36,7 @@ public class FindPairsOperator extends BaseOperator
     private Tag ttitle = new DefaultTag(TT, "title");
     private Tag eauthors = new EswcTag("authors");
     private Tag etitle = new EswcTag("title");
+    private Tag vtitle = new EswcTag("vtitle");
 
     //statistics
     private int tacnt = 0; //title-author pairs
@@ -211,7 +212,8 @@ public class FindPairsOperator extends BaseOperator
     {
         //area is not yet tagged and has the appropriate text tags
         return (a.hasTag(tpersons) || a.hasTag(ttitle) || !requireTextTag) &&
-               (!a.hasTag(eauthors, minsp) && !a.hasTag(etitle, minsp));
+               (!a.hasTag(eauthors, minsp) && !a.hasTag(etitle, minsp)) &&
+               !a.hasTag(vtitle); //ignore already recognized volume title
     }
     
     private boolean isAtSide(Area a1, Area a2)

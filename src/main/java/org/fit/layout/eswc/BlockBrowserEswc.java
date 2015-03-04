@@ -61,6 +61,7 @@ public class BlockBrowserEswc extends BlockBrowser
                     //URL url = new URL(localpath + "/test/ceur/volumes/Vol-1317.html");
                     URL url = new URL("http://ceur-ws.org/Vol-104/");
                     //URL url = new URL("http://ceur-ws.org/Vol-1317/");
+                    //URL url = new URL("http://ceur-ws.org/Vol-540/"); //TODO XHTML!!!
                     //URL url = new URL("http://ceur-ws.org/Vol-250/");
                     //URL url = new URL("http://ceur-ws.org/Vol-1/");
                     //URL url = new URL("http://ceur-ws.org/Vol-5/");
