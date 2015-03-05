@@ -51,8 +51,6 @@ public class FindPairsOperator extends BaseOperator
     public FindPairsOperator()
     {
         useSiblings = true;
-        tstyles = new StyleCounter();
-        astyles = new StyleCounter();
     }
     
     @Override
@@ -87,6 +85,16 @@ public class FindPairsOperator extends BaseOperator
 
     //==============================================================================
 
+    public void reset()
+    {
+        tacnt = 0;
+        atcnt = 0;
+        sidecnt = 0;
+        belowcnt = 0;
+        tstyles = new StyleCounter();
+        astyles = new StyleCounter();
+    }
+    
     @Override
     public void apply(AreaTree atree)
     {
@@ -96,6 +104,8 @@ public class FindPairsOperator extends BaseOperator
     @Override
     public void apply(AreaTree atree, Area root)
     {
+        reset();
+        
         //add tags to pairs based on their text tags
         gatherStatistics(root, 0.2f);
         log.info("Pairs count: TA={}, AT={}", tacnt, atcnt);
@@ -103,7 +113,7 @@ public class FindPairsOperator extends BaseOperator
         log.info("Title st: " + tstyles.getMostFrequent());
         log.info("Author st: " + astyles.getMostFrequent());
         addTags(root, 0.8f, false);
-        addTags(root, 0.8f, true); //add uncertain combinations TODO: style matching or learning?
+        addTags(root, 0.8f, true); //add uncertain combinations
     }
     
     //==============================================================================
