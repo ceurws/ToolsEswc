@@ -12,7 +12,8 @@ proc.apply('FitLayout.Tag.Entities', {});
 //proc.apply('FitLayout.Tag.Visual', {trainFile: "res:eswc_train.arff", classIndex: 0});
 //proc.apply('FitLayout.Tag.Visual', {trainFile: "/tmp/test.arff", classIndex: 0});
 
-proc.apply('Eswc.Tag.Titles', {});
-proc.apply('Eswc.Tag.Pairs', {});
+//proc.apply('Eswc.Tag.Titles', {});
+//proc.apply('Eswc.Tag.Pairs', {});
+proc.apply('Eswc.Tag.All', {});
 
 //proc.apply('FitLayout.Tools.XMLOutput', {filename: "/tmp/out.xml"});

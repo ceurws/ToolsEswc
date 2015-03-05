@@ -47,6 +47,7 @@ public class FindPairsOperator extends BaseOperator
     private int belowcnt = 0; //placed below 
     private StyleCounter tstyles;
     private StyleCounter astyles;
+    private Rectangular bounds;
     
     public FindPairsOperator()
     {
@@ -83,6 +84,11 @@ public class FindPairsOperator extends BaseOperator
         return paramTypes;
     }
 
+    public Rectangular getBounds()
+    {
+        return bounds;
+    }
+
     //==============================================================================
 
     public void reset()
@@ -93,6 +99,7 @@ public class FindPairsOperator extends BaseOperator
         belowcnt = 0;
         tstyles = new StyleCounter();
         astyles = new StyleCounter();
+        bounds = null;
     }
     
     @Override
@@ -191,10 +198,12 @@ public class FindPairsOperator extends BaseOperator
                         atitle = root;
                     }
                     
+                    boolean found = false;
                     if (atitle.hasTag(ttitle) && aauth.hasTag(tpersons)) //no doubt
                     {
                         atitle.addTag(etitle, tprob);
                         aauth.addTag(eauthors, tprob);
+                        found = true;
                     }
                     else if (allowUnsure)
                     {
@@ -204,14 +213,22 @@ public class FindPairsOperator extends BaseOperator
                         {
                             atitle.addTag(etitle, tprob);
                             aauth.addTag(eauthors, tprob - 0.2f);
+                            found = true;
                             System.out.println("Uncertain1: " + aauth + " :: " + atitle);
                         }
                         else if (aauth.hasTag(tpersons) && sauth.equals(astyles.getMostFrequent()))
                         {
                             atitle.addTag(etitle, tprob - 0.2f);
                             aauth.addTag(eauthors, tprob);
+                            found = true;
                             System.out.println("Uncertain2: " + aauth + " :: " + atitle);
                         }
+                    }
+                    
+                    if (found)
+                    {
+                        updateBounds(atitle);
+                        updateBounds(aauth);
                     }
                 }
             }
@@ -298,6 +315,14 @@ public class FindPairsOperator extends BaseOperator
             }
         }
         return ret;
+    }
+
+    private void updateBounds(Area a)
+    {
+        if (bounds == null)
+            bounds = new Rectangular(a.getBounds());
+        else
+            bounds.expandToEnclose(a.getBounds());
     }
     
 }

@@ -24,9 +24,11 @@ public class FindTitlesOperator extends BaseOperator
     private final String[] paramNames = {};
     private final ValueType[] paramTypes = {};
 
+    private Rectangular bounds;
+    
+    
     public FindTitlesOperator()
     {
-        
     }
     
     @Override
@@ -57,6 +59,11 @@ public class FindTitlesOperator extends BaseOperator
     public ValueType[] getParamTypes()
     {
         return paramTypes;
+    }
+
+    public Rectangular getBounds()
+    {
+        return bounds;
     }
 
     //==============================================================================
@@ -104,6 +111,7 @@ public class FindTitlesOperator extends BaseOperator
         if (first >= 0)
         {
             AreaImpl fa = (AreaImpl) leaves.elementAt(first);
+            bounds = fa.getBounds();
             Rectangular pos = fa.getGridPosition();
             System.out.println("FIRST: " + fa);
             //find the last index
@@ -116,6 +124,7 @@ public class FindTitlesOperator extends BaseOperator
                     last = i;
                     pos.expandToEnclose(a.getGridPosition());
                     fa.joinArea(a, pos, true);
+                    bounds.expandToEnclose(a.getBounds());
                 }
                 else
                     break;
