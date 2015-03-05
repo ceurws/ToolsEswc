@@ -75,10 +75,10 @@ public class FindTitlesOperator extends BaseOperator
         sortLeaves(leaves);
         
         System.out.println("MAX:");
-        for (int i = 0; i < 10; i++)
+        for (int i = 0; i < 50 && i < leaves.size(); i++)
         {
             Area a = leaves.elementAt(i);
-            System.out.println(a.getFontSize() + " " + a);
+            System.out.println(a.getFontSize() + " " + a.getFontWeight() + " " + a);
         }
         
         //find start and end of the title

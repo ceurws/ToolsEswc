@@ -26,6 +26,8 @@ public class CeurTag extends DefaultTag
         mapping.put("CEURPAGES", "pages");
         mapping.put("CEURAUTHORS", "authors");
         
+        mapping.put("CEURSESSION", "session");
+        
         mapping.put("CEURVOLEDITOR", "veditor");
         mapping.put("CEURVOLTITLE", "vtitle");
         mapping.put("CEURVOLACRONYM", "vacro");

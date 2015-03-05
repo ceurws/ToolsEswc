@@ -5,6 +5,8 @@
  */
 package org.fit.layout.eswc.op;
 
+import org.fit.layout.classify.NodeStyle;
+import org.fit.layout.classify.StyleCounter;
 import org.fit.layout.impl.BaseOperator;
 import org.fit.layout.impl.DefaultTag;
 import org.fit.layout.model.Area;
@@ -43,11 +45,14 @@ public class FindPairsOperator extends BaseOperator
     private int atcnt = 0; //author-title pairs
     private int sidecnt = 0; //placed side-by side
     private int belowcnt = 0; //placed below 
-    
+    private StyleCounter tstyles;
+    private StyleCounter astyles;
     
     public FindPairsOperator()
     {
         useSiblings = true;
+        tstyles = new StyleCounter();
+        astyles = new StyleCounter();
     }
     
     @Override
@@ -95,6 +100,8 @@ public class FindPairsOperator extends BaseOperator
         gatherStatistics(root, 0.2f);
         log.info("Pairs count: TA={}, AT={}", tacnt, atcnt);
         log.info("Placement: side={}, below={}", sidecnt, belowcnt);
+        log.info("Title st: " + tstyles.getMostFrequent());
+        log.info("Author st: " + astyles.getMostFrequent());
         addTags(root, 0.8f, false);
         addTags(root, 0.8f, true); //add uncertain combinations TODO: style matching or learning?
     }
@@ -117,6 +124,8 @@ public class FindPairsOperator extends BaseOperator
                     //title - authors
                     aa.addTag(etitle, tprob);
                     root.addTag(eauthors, tprob);
+                    tstyles.add(new NodeStyle(aa));
+                    astyles.add(new NodeStyle(root));
                     tacnt++;
                     found = true;
                 }
@@ -126,6 +135,8 @@ public class FindPairsOperator extends BaseOperator
                     //authors - title
                     aa.addTag(eauthors, tprob);
                     root.addTag(etitle, tprob);
+                    astyles.add(new NodeStyle(aa));
+                    tstyles.add(new NodeStyle(root));
                     atcnt++;
                     found = true;
                 }
@@ -177,13 +188,15 @@ public class FindPairsOperator extends BaseOperator
                     }
                     else if (allowUnsure)
                     {
-                        if (atitle.hasTag(ttitle)) //TODO too loose 
+                        NodeStyle stitle = new NodeStyle(atitle);
+                        NodeStyle sauth = new NodeStyle(aauth);
+                        if (atitle.hasTag(ttitle) && stitle.equals(tstyles.getMostFrequent())) 
                         {
                             atitle.addTag(etitle, tprob);
                             aauth.addTag(eauthors, tprob - 0.2f);
                             System.out.println("Uncertain1: " + aauth + " :: " + atitle);
                         }
-                        else if (aauth.hasTag(tpersons))
+                        else if (aauth.hasTag(tpersons) && sauth.equals(astyles.getMostFrequent()))
                         {
                             atitle.addTag(etitle, tprob - 0.2f);
                             aauth.addTag(eauthors, tprob);
