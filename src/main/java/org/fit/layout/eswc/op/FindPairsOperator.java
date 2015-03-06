@@ -13,7 +13,6 @@ import org.fit.layout.model.Area;
 import org.fit.layout.model.AreaTree;
 import org.fit.layout.model.Rectangular;
 import org.fit.layout.model.Tag;
-import org.fit.layout.tools.Console;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -24,7 +23,7 @@ import org.slf4j.LoggerFactory;
  */
 public class FindPairsOperator extends BaseOperator
 {
-    private static Logger log = LoggerFactory.getLogger(Console.class);
+    private static Logger log = LoggerFactory.getLogger(FindPairsOperator.class);
     private static final String TT = "FitLayout.TextTag";
     
     private final String[] paramNames = {};

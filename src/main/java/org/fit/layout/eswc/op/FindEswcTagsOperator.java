@@ -8,6 +8,7 @@ package org.fit.layout.eswc.op;
 import org.fit.layout.impl.BaseOperator;
 import org.fit.layout.model.Area;
 import org.fit.layout.model.AreaTree;
+import org.fit.layout.model.Rectangular;
 
 /**
  * This operator combines all the remaining operators for the ESWC tag assignment.
@@ -20,6 +21,7 @@ public class FindEswcTagsOperator extends BaseOperator
 
     private FindTitlesOperator opTitles;
     private FindPairsOperator opPairs;
+    private FindEditorsOperator opEditors;
     
     public FindEswcTagsOperator()
     {
@@ -72,6 +74,12 @@ public class FindEswcTagsOperator extends BaseOperator
         opPairs.apply(atree, root);
         System.out.println("TITLE: " + opTitles.getBounds());
         System.out.println("PAPERS: " + opPairs.getBounds());
+        
+        final Rectangular bt = opTitles.getBounds();
+        final Rectangular bp = opPairs.getBounds();
+        Rectangular between = new Rectangular(0, bt.getY2()+1, 5000, bp.getY1() - 1);
+        opEditors = new FindEditorsOperator(between);
+        opEditors.apply(atree, root);
     }
     
 }
