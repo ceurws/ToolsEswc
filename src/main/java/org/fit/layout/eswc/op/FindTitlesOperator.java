@@ -24,11 +24,18 @@ public class FindTitlesOperator extends BaseOperator
     private final String[] paramNames = {};
     private final ValueType[] paramTypes = {};
 
-    private Rectangular bounds;
+    private Rectangular bounds; //the bounds to operate on
+    private Rectangular resultBounds;
     
     
     public FindTitlesOperator()
     {
+        this.bounds = null; //use the whole page
+    }
+    
+    public FindTitlesOperator(Rectangular bounds)
+    {
+        this.bounds = bounds;
     }
     
     @Override
@@ -61,9 +68,9 @@ public class FindTitlesOperator extends BaseOperator
         return paramTypes;
     }
 
-    public Rectangular getBounds()
+    public Rectangular getResultBounds()
     {
-        return bounds;
+        return resultBounds;
     }
 
     //==============================================================================
@@ -81,12 +88,12 @@ public class FindTitlesOperator extends BaseOperator
         findLeaves(root, leaves);
         sortLeaves(leaves);
         
-        System.out.println("MAX:");
+        /*System.out.println("MAX:");
         for (int i = 0; i < 50 && i < leaves.size(); i++)
         {
             Area a = leaves.elementAt(i);
             System.out.println(a.getFontSize() + " " + a.getFontWeight() + " " + a);
-        }
+        }*/
         
         //find start and end of the title
         float maxsize = leaves.firstElement().getFontSize(); //largest font size
@@ -111,9 +118,9 @@ public class FindTitlesOperator extends BaseOperator
         if (first >= 0)
         {
             AreaImpl fa = (AreaImpl) leaves.elementAt(first);
-            bounds = fa.getBounds();
+            resultBounds = fa.getBounds();
             Rectangular pos = fa.getGridPosition();
-            System.out.println("FIRST: " + fa);
+            //System.out.println("FIRST: " + fa);
             //find the last index
             last = first;
             for (int i = first + 1; i < leaves.size(); i++)
@@ -124,12 +131,12 @@ public class FindTitlesOperator extends BaseOperator
                     last = i;
                     pos.expandToEnclose(a.getGridPosition());
                     fa.joinArea(a, pos, true);
-                    bounds.expandToEnclose(a.getBounds());
+                    resultBounds.expandToEnclose(a.getBounds());
                 }
                 else
                     break;
             }
-            System.out.println("LAST: " + leaves.elementAt(last));
+            //System.out.println("LAST: " + leaves.elementAt(last));
             
             fa.addTag(new EswcTag("vtitle"), 0.6f);
         }
@@ -142,7 +149,10 @@ public class FindTitlesOperator extends BaseOperator
     private void findLeaves(Area root, Vector<Area> dest)
     {
         if (root.isLeaf())
-            dest.add(root);
+        {
+            if (bounds == null || root.getBounds().intersects(bounds))
+                dest.add(root);
+        }
         else
         {
             for (int i = 0; i < root.getChildCount(); i++)

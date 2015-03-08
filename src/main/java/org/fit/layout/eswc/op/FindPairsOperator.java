@@ -44,13 +44,21 @@ public class FindPairsOperator extends BaseOperator
     private int atcnt = 0; //author-title pairs
     private int sidecnt = 0; //placed side-by side
     private int belowcnt = 0; //placed below 
-    private StyleCounter tstyles;
-    private StyleCounter astyles;
-    private Rectangular bounds;
+    private StyleCounter<NodeStyle> tstyles;
+    private StyleCounter<NodeStyle> astyles;
+    
+    private Rectangular bounds; //bounds to operate on
+    private Rectangular resultBounds;
     
     public FindPairsOperator()
     {
+        this(null);
+    }
+    
+    public FindPairsOperator(Rectangular bounds)
+    {
         useSiblings = true;
+        this.bounds = bounds;
     }
     
     @Override
@@ -83,9 +91,9 @@ public class FindPairsOperator extends BaseOperator
         return paramTypes;
     }
 
-    public Rectangular getBounds()
+    public Rectangular getResultBounds()
     {
-        return bounds;
+        return resultBounds;
     }
 
     //==============================================================================
@@ -96,9 +104,9 @@ public class FindPairsOperator extends BaseOperator
         atcnt = 0;
         sidecnt = 0;
         belowcnt = 0;
-        tstyles = new StyleCounter();
-        astyles = new StyleCounter();
-        bounds = null;
+        tstyles = new StyleCounter<NodeStyle>();
+        astyles = new StyleCounter<NodeStyle>();
+        resultBounds = null;
     }
     
     @Override
@@ -126,7 +134,7 @@ public class FindPairsOperator extends BaseOperator
     
     private void gatherStatistics(Area root, float tprob)
     {
-        if (root.getParentArea() != null && acceptableTags(root, 0.0f, true))
+        if (root.getParentArea() != null && isIn(root) && acceptableTags(root, 0.0f, true))
         {
             //try to find a neighbor area
             Area aa = findAlignedPreviousSibling(root);
@@ -174,7 +182,8 @@ public class FindPairsOperator extends BaseOperator
 
     private void addTags(Area root, float tprob, boolean allowUnsure)
     {
-        if (root.getParentArea() != null && acceptableTags(root, 0.5f, false) && !root.getText().trim().isEmpty())
+        if (root.getParentArea() != null && isIn(root) && acceptableTags(root, 0.5f, false) 
+                && !root.getText().trim().isEmpty())
         {
             //try to find a neighbor area
             Area aa = findPairArea(root);
@@ -245,6 +254,16 @@ public class FindPairsOperator extends BaseOperator
             return findAlignedPreviousSibling(root);
         else
             return findClosestAbove(root);
+    }
+    
+    /**
+     * Checks if the given area is in the bounds being processed
+     * @param a
+     * @return
+     */
+    private boolean isIn(Area a)
+    {
+        return bounds == null || a.getBounds().intersects(bounds); 
     }
     
     private boolean acceptableTags(Area a, float minsp, boolean requireTextTag)
@@ -318,10 +337,10 @@ public class FindPairsOperator extends BaseOperator
 
     private void updateBounds(Area a)
     {
-        if (bounds == null)
-            bounds = new Rectangular(a.getBounds());
+        if (resultBounds == null)
+            resultBounds = new Rectangular(a.getBounds());
         else
-            bounds.expandToEnclose(a.getBounds());
+            resultBounds.expandToEnclose(a.getBounds());
     }
     
 }

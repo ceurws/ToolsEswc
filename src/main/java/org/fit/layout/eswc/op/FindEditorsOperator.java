@@ -7,7 +7,6 @@ package org.fit.layout.eswc.op;
 
 import java.util.Vector;
 
-import org.fit.layout.classify.NodeStyle;
 import org.fit.layout.classify.StyleCounter;
 import org.fit.layout.impl.BaseOperator;
 import org.fit.layout.impl.DefaultTag;
@@ -98,9 +97,9 @@ public class FindEditorsOperator extends BaseOperator
         //find tagged names in the area
         Vector<Area> names = new Vector<Area>();
         Tag tag = new DefaultTag(TT, "persons");
-        findTagsInArea(root, bounds, tag, 0.5f, names);
-        for (Area a : names)
-            System.out.println("name: " + a);
+        findTagsInArea(root, bounds, tag, 0.5f, true, names);
+        /*for (Area a : names)
+            System.out.println("name: " + a);*/
         
         if (!names.isEmpty())
         {
@@ -123,7 +122,7 @@ public class FindEditorsOperator extends BaseOperator
                 else
                     break;
             }
-            System.out.println("Editors start:" + leaves.elementAt(first));
+            log.debug("Editors start: {}", leaves.elementAt(first));
             
             //build statistics about names
             prev = null;
@@ -131,13 +130,13 @@ public class FindEditorsOperator extends BaseOperator
             int nextline = 0;
             int other = 0;
             int minx = -1;
-            StyleCounter estyles = new StyleCounter();
+            StyleCounter<FontNodeStyle> estyles = new StyleCounter<FontNodeStyle>();
             for (int i = first; i <= last; i++)
             {
                 Area a = leaves.elementAt(i);
                 if (a.hasTag(tag, 0.5f))
                 {
-                    estyles.add(new NodeStyle(a));
+                    estyles.add(new FontNodeStyle(a));
                     final int x = a.getTopology().getPosition().getX1();
                     if (prev != null)
                     {
@@ -155,24 +154,30 @@ public class FindEditorsOperator extends BaseOperator
                     prev = a;
                 }
             }
-            NodeStyle estyle = estyles.getMostFrequent();
+            FontNodeStyle estyle = estyles.getMostFrequent();
             log.info("Layout: same line {}, next line {}, other {}, minx {}, style {}", sameline, nextline, other, minx, estyle);
             
             //tag the appropriate names
             for (int i = first; i <= last; i++)
             {
                 Area a = leaves.elementAt(i);
-                System.out.println("Test " + a);
-                if (estyle.equals(new NodeStyle(a))) //TODO do not match indentation and color(?)
+                //System.out.println("Test " + a);
+                if (estyle.equals(new FontNodeStyle(a)))
                 {
-                    //TODO match coordinates?
-                    a.addTag(new EswcTag("veditor"), 0.7f);
-                    System.out.println("ok");
+                    if (nextline >= sameline) //probably names on separate lines
+                    {
+                        if (a.getTopology().getPosition().getX1() == minx)
+                            a.addTag(new EswcTag("veditor"), 0.7f);
+                    }
+                    else //multiple names on lines
+                    {
+                        //TODO some conditions?
+                        a.addTag(new EswcTag("veditor"), 0.7f);
+                    }
                 }
             }
             
         }
-        
         
     }
     
@@ -186,12 +191,22 @@ public class FindEditorsOperator extends BaseOperator
             findLeavesInArea(root.getChildArea(i), limit, dest);
     }
     
-    private void findTagsInArea(Area root, Rectangular limit, Tag tag, float minSupport, Vector<Area> dest) 
+    private void findTagsInArea(Area root, Rectangular limit, Tag tag, float minSupport, 
+                                boolean startWithLetter, Vector<Area> dest) 
     {
         if (root.hasTag(tag, minSupport) && root.getBounds().intersects(limit))
-            dest.add(root);
+        {
+            if (startWithLetter)
+            {
+                String text = root.getText().trim();
+                if (!text.isEmpty() && Character.isAlphabetic(text.codePointAt(0)))
+                    dest.add(root);
+            }
+            else
+                dest.add(root);
+        }
         for (int i = 0; i < root.getChildCount(); i++)
-            findTagsInArea(root.getChildArea(i), limit, tag, minSupport, dest);
+            findTagsInArea(root.getChildArea(i), limit, tag, minSupport, startWithLetter, dest);
     }
     
     private boolean isNeighbor(Area a1, Area a2)
