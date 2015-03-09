@@ -1,0 +1,41 @@
+1)
+PREFIX swrc: <http://swrc.ontoware.org/ontology/#>
+
+SELECT ?proc ?edi WHERE { 
+  ?proc swrc:editor ?edi .
+	FILTER (?proc = <http://ceur-ws.org/Vol-1333/>  || ?proc = <http://ceur-ws.org/Vol-1085/> ) .	
+}
+
+
+2)
+PREFIX swrc: <http://swrc.ontoware.org/ontology/#>
+PREFIX swc: <http://data.semanticweb.org/ns/swc/ontology/#>
+
+SELECT ?proc ( count(?pub) AS ?paper_count) WHERE { 
+  ?proc swc:hasPart ?pub .
+	FILTER (?proc = <http://ceur-ws.org/Vol-1333/>  || ?proc = <http://ceur-ws.org/Vol-1085/> ) .
+} GROUP BY ?proc
+
+
+3)
+PREFIX swrc: <http://swrc.ontoware.org/ontology/#>
+PREFIX swc: <http://data.semanticweb.org/ns/swc/ontology/#>
+
+SELECT DISTINCT ?proc ?author_name WHERE { 
+  ?proc swc:hasPart ?pub .
+  ?author foaf:made ?pub ;
+                 foaf:name ?author_name .
+  FILTER (?proc = <http://ceur-ws.org/Vol-1333/>  || ?proc = <http://ceur-ws.org/Vol-1085/> ) . 	
+}
+
+
+4)
+PREFIX swrc: <http://swrc.ontoware.org/ontology/#>
+PREFIX swc: <http://data.semanticweb.org/ns/swc/ontology/#>
+
+SELECT ?proc (AVG(?pages) AS ?avg) WHERE { 
+  ?proc swc:hasPart ?pub .
+  ?pub swrc:numberOfPages ?pages 
+  FILTER (?proc = <http://ceur-ws.org/Vol-1333/> || ?proc = <http://ceur-ws.org/Vol-1085/> ) . 	
+}
+GROUP BY ?proc
