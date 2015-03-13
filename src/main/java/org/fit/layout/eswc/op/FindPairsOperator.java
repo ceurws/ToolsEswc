@@ -283,18 +283,20 @@ public class FindPairsOperator extends BaseOperator
     
     private Area findAlignedPreviousSibling(Area a)
     {
-        Area ret = a.getPreviousSibling();
-        if (ret != null)
+        //try to look about 10 elements back for finding the aligned sibling TODO
+        Area cur = a;
+        for (int i = 0; i < 10; i++)
         {
-            final Rectangular gp1 = ret.getTopology().getPosition();
-            final Rectangular gp2 = a.getTopology().getPosition();
-            if ((gp1.getX1() == gp2.getX1()) //x-aligned
-                || (gp1.getY1() == gp2.getY1())) //y-aligned
-                return ret;
+            cur = cur.getPreviousSibling();
+            if (cur != null)
+            {
+                if (AreaUtils.isAligned(a, cur) && AreaUtils.isNeighbor(a, cur))
+                    return cur;
+            }
             else
-                return null;
+                break;
         }
-        return ret;
+        return null;
     }
     
     private Area findClosestAbove(Area a)

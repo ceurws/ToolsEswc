@@ -97,9 +97,16 @@ public class FindEditorsOperator extends BaseOperator
         //find tagged names in the area
         Vector<Area> names = new Vector<Area>();
         Tag tag = new DefaultTag(TT, "persons");
-        findTagsInArea(root, bounds, tag, 0.5f, true, names);
+        float support = 0.5f;
+        findTagsInArea(root, bounds, tag, support, true, names);
         /*for (Area a : names)
             System.out.println("name: " + a);*/
+        
+        if (names.isEmpty()) //no names found -- try again with lower support (to obey some uncertain hints)
+        {
+            support = 0.25f;
+            findTagsInArea(root, bounds, tag, support, true, names);
+        }
         
         if (!names.isEmpty())
         {
@@ -114,15 +121,37 @@ public class FindEditorsOperator extends BaseOperator
             for (int i = last - 1; i >= 0; i--)
             {
                 Area cur = leaves.elementAt(i);
-                if (isNeighbor(cur, prev))
+                if (AreaUtils.isNeighbor(cur, prev))
                 {
                     first = i;
                     prev = cur;
                 }
-                else
-                    break;
+                //else continue because some of the previous boxes may be a neighbor too 
             }
-            log.debug("Editors start: {}", leaves.elementAt(first));
+            //go until the end of the group
+            prev = names.lastElement();
+            for (int i = last + 1; i < leaves.size(); i++)
+            {
+                Area cur = leaves.elementAt(i);
+                if (AreaUtils.isNeighbor(cur, prev))
+                {
+                    last = i;
+                    prev = cur;
+                }
+            }
+            log.debug("Editors start: {} end: {}", leaves.elementAt(first), leaves.elementAt(last));
+
+            //check if there are links to at least some author
+            boolean authorsLinked = false;
+            for (int i = first; i <= last; i++)
+            {
+                Area a = leaves.elementAt(i);
+                if (a.hasTag(tag, support) && AreaUtils.isLink(a))
+                {
+                    authorsLinked = true;
+                    break;
+                }
+            }
             
             //build statistics about names
             prev = null;
@@ -134,15 +163,16 @@ public class FindEditorsOperator extends BaseOperator
             for (int i = first; i <= last; i++)
             {
                 Area a = leaves.elementAt(i);
-                if (a.hasTag(tag, 0.5f))
+                //when some names are links, use only those for statistics 
+                if (a.hasTag(tag, support) && (!authorsLinked || AreaUtils.isLink(a)))
                 {
                     estyles.add(new FontNodeStyle(a));
                     final int x = a.getTopology().getPosition().getX1();
                     if (prev != null)
                     {
-                        if (isOnSameLine(prev, a))
+                        if (AreaUtils.isOnSameLine(prev, a))
                             sameline++;
-                        else if (isInSameColumn(prev, a))
+                        else if (AreaUtils.isInSameColumn(prev, a))
                             nextline++;
                         else
                             other++;
@@ -155,13 +185,13 @@ public class FindEditorsOperator extends BaseOperator
                 }
             }
             FontNodeStyle estyle = estyles.getMostFrequent();
-            log.info("Layout: same line {}, next line {}, other {}, minx {}, style {}", sameline, nextline, other, minx, estyle);
+            log.info("Layout: same line {}, next line {}, other {}, minx {}, style {}, linked {}", sameline, nextline, other, minx, estyle, authorsLinked);
             
             //tag the appropriate names
             for (int i = first; i <= last; i++)
             {
                 Area a = leaves.elementAt(i);
-                //System.out.println("Test " + a);
+                System.out.println("Test " + a);
                 if (estyle.equals(new FontNodeStyle(a)))
                 {
                     if (nextline >= sameline) //probably names on separate lines
@@ -178,6 +208,8 @@ public class FindEditorsOperator extends BaseOperator
             }
             
         }
+        else
+            log.warn("Could not find any names for editors!");
         
     }
     
@@ -209,32 +241,5 @@ public class FindEditorsOperator extends BaseOperator
             findTagsInArea(root.getChildArea(i), limit, tag, minSupport, startWithLetter, dest);
     }
     
-    private boolean isNeighbor(Area a1, Area a2)
-    {
-        if (isOnSameLine(a1, a2))
-            return true; //on the same line
-        else
-        {
-            //the Y difference is less than half the line height
-            int dy = a2.getBounds().getY1() - a1.getBounds().getY2();
-            if (dy < 0)
-                dy = a1.getBounds().getY1() - a2.getBounds().getY2();
-            return dy < a1.getBounds().getHeight() / 2;
-        }
-    }
-    
-    private boolean isOnSameLine(Area a1, Area a2)
-    {
-        final Rectangular gp1 = a1.getTopology().getPosition();
-        final Rectangular gp2 = a2.getTopology().getPosition();
-        return (gp1.getY1() == gp2.getY1() && gp1.getY2() == gp2.getY2()); 
-    }
-    
-    private boolean isInSameColumn(Area a1, Area a2)
-    {
-        final Rectangular gp1 = a1.getTopology().getPosition();
-        final Rectangular gp2 = a2.getTopology().getPosition();
-        return (gp1.getX1() == gp2.getX1()); 
-    }
     
 }

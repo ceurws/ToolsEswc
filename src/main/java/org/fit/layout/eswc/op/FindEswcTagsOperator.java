@@ -10,6 +10,7 @@ import java.util.Set;
 import java.util.Vector;
 
 import org.fit.layout.impl.BaseOperator;
+import org.fit.layout.impl.DefaultTag;
 import org.fit.layout.model.Area;
 import org.fit.layout.model.AreaTree;
 import org.fit.layout.model.Rectangular;
@@ -139,6 +140,14 @@ public class FindEswcTagsOperator extends BaseOperator
         else
             bpapers.setY2(bp.getY2()); //ToC present, just update Y2 
         
+        //hint for editor detection: the area after 'edited by' should be a name (if everything fails)
+        if (editedArea != null)
+        {
+            Area after = editedArea.getNextSibling();
+            if (after != null)
+                after.addTag(new DefaultTag("FitLayout.TextTag", "persons"), 0.3f);
+        }
+        //find editors
         opEditors = new FindEditorsOperator(beditors);
         opEditors.apply(atree, root);
         
