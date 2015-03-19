@@ -19,19 +19,19 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
     @Override
     public String getId()
     {
-        return "FitLayout.Grouping";
+        return "CEUR.Logical";
     }
 
     @Override
     public String getName()
     {
-        return "FitLayout grouping segmentation algorithm";
+        return "CEUR Logical Tree Builder";
     }
 
     @Override
     public String getDescription()
     {
-        return "A configurable bottom-up segmentation algorithm";
+        return "Logical structure builder for CEUR proceedings";
     }
 
     @Override
@@ -49,20 +49,7 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
     @Override
     public LogicalAreaTree createLogicalTree(AreaTree areaTree)
     {
-        // TODO Auto-generated method stub
-        return null;
-    }
-
-    @Override
-    public boolean setParam(String name, Object value)
-    {
-        return false;
-    }
-
-    @Override
-    public Object getParam(String name)
-    {
-        return null;
+        return new EswcLogicalTree(areaTree); //TODO continue building
     }
 
 }

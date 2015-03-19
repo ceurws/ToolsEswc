@@ -6,6 +6,7 @@
 package org.fit.layout.eswc.logical;
 
 import org.fit.layout.impl.DefaultLogicalArea;
+import org.fit.layout.model.Area;
 import org.fit.layout.model.Tag;
 
 /**
@@ -16,10 +17,26 @@ public class EswcLogicalArea extends DefaultLogicalArea
 {
     private Tag mainTag;
 
+    public EswcLogicalArea(Area area)
+    {
+        super(area);
+    }
+    
+    public Tag getMainTag()
+    {
+        return mainTag;
+    }
+
+    public void setMainTag(Tag mainTag)
+    {
+        this.mainTag = mainTag;
+    }
+
     @Override
     public String toString()
     {
-        return "(" + mainTag.getValue() + ") " + getText();
+        final String tagstr = (mainTag == null) ? "---" : mainTag.getValue();
+        return "(" + tagstr + ") " + getText();
     }
     
 }
