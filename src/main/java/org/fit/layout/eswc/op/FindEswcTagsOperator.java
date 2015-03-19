@@ -16,6 +16,7 @@ import org.fit.layout.model.AreaTree;
 import org.fit.layout.model.Rectangular;
 import org.fit.layout.model.Tag;
 import org.fit.segm.grouping.AreaImpl;
+import org.fit.segm.grouping.op.FindLineOperator;
 import org.fit.segm.grouping.op.MultiLineOperator;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -156,8 +157,10 @@ public class FindEswcTagsOperator extends BaseOperator
         if (apapers != null)
         {
             clearTags(apapers, "ESWC");
-            MultiLineOperator opLines = new MultiLineOperator(true, 0.5f);
+            FindLineOperator opLines = new FindLineOperator(true, 1.5f);
             opLines.apply(atree, apapers);
+            MultiLineOperator opMLines = new MultiLineOperator(true, 0.5f);
+            opMLines.apply(atree, apapers);
             opPairs = new FindPairsOperator(bpapers);
             opPairs.apply(atree, apapers);
         }
