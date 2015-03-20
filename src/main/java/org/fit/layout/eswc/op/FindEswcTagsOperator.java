@@ -28,6 +28,9 @@ import org.slf4j.LoggerFactory;
 public class FindEswcTagsOperator extends BaseOperator
 {
     private static Logger log = LoggerFactory.getLogger(FindEswcTagsOperator.class);
+
+    private Tag tagPages = new DefaultTag("FitLayout.TextTag", "pages");
+    private Tag tagEPages = new EswcTag("pages");
     
     private final String[] paramNames = {};
     private final ValueType[] paramTypes = {};
@@ -43,6 +46,7 @@ public class FindEswcTagsOperator extends BaseOperator
     
     private boolean ceurPresent;
     
+
     
     public FindEswcTagsOperator()
     {
@@ -153,6 +157,7 @@ public class FindEswcTagsOperator extends BaseOperator
         opEditors.apply(atree, root);
         
         //create a super area for all the papers
+        findPages(root, bpapers);
         Area apapers = createSuperAreaFromVerticalRegion(root, bpapers);
         if (apapers != null)
         {
@@ -275,6 +280,17 @@ public class FindEswcTagsOperator extends BaseOperator
         }
         else
             return null;
+    }
+    
+    private void findPages(Area root, Rectangular region)
+    {
+        if (region.enclosesY(root.getBounds()) && root.hasTag(tagPages))
+        {
+            root.addTag(tagEPages, 1.0f);
+            System.out.println("ADD TO " + root + " " + tagEPages);
+        }
+        for (int i = 0; i < root.getChildCount(); i++)
+            findPages(root.getChildArea(i), region);
     }
     
 }

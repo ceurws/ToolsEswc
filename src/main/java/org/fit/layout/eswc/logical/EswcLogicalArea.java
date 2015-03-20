@@ -22,6 +22,17 @@ public class EswcLogicalArea extends DefaultLogicalArea
         super(area);
     }
     
+    public EswcLogicalArea(Area area, String text)
+    {
+        super(area, text);
+    }
+    
+    public EswcLogicalArea(Area area, String text, Tag tag)
+    {
+        super(area, text);
+        setMainTag(tag);
+    }
+    
     public Tag getMainTag()
     {
         return mainTag;

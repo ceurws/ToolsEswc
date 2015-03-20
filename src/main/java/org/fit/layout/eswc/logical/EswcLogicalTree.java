@@ -21,13 +21,22 @@ public class EswcLogicalTree implements LogicalAreaTree
     public EswcLogicalTree(AreaTree atree)
     {
         this.atree = atree;
-        root = new EswcLogicalArea(atree.getRoot());
     }
     
+    public AreaTree getAreaTree()
+    {
+        return atree;
+    }
+
     @Override
     public LogicalArea getRoot()
     {
         return root;
+    }
+
+    public void setRoot(LogicalArea root)
+    {
+        this.root = root;
     }
 
 }
