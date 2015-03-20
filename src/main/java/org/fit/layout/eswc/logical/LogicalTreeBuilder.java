@@ -9,12 +9,13 @@ import java.util.Vector;
 
 import org.fit.layout.eswc.op.EswcTag;
 import org.fit.layout.impl.BaseLogicalTreeProvider;
-import org.fit.layout.impl.DefaultTag;
 import org.fit.layout.model.Area;
 import org.fit.layout.model.AreaTree;
 import org.fit.layout.model.LogicalArea;
 import org.fit.layout.model.LogicalAreaTree;
 import org.fit.layout.model.Tag;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * 
@@ -22,6 +23,10 @@ import org.fit.layout.model.Tag;
  */
 public class LogicalTreeBuilder extends BaseLogicalTreeProvider
 {
+    private static Logger log = LoggerFactory.getLogger(LogicalTreeBuilder.class);
+    
+    private static final float ms = 0.5f;
+    
     private static Tag tagRoot = new EswcTag("root");
     private static Tag tagVTitle = new EswcTag("vtitle");
     private static Tag tagVEditor = new EswcTag("veditor");
@@ -76,9 +81,20 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
 
     //====================================================================================
     
+    private void reset()
+    {
+        iTitle = -1;
+        editorStart = -1;
+        editorEnd = -1;
+        paperStart = -1;
+        paperEnd = -1;
+    }
+    
     @Override
     public LogicalAreaTree createLogicalTree(AreaTree areaTree)
     {
+        reset();
+        
         rootArea = createRoot(areaTree);
         tree = new EswcLogicalTree(areaTree);
         tree.setRoot(rootArea);
@@ -112,14 +128,14 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
         int i = 0;
         for (Area a : leaves)
         {
-            if (iTitle == -1 && a.hasTag(tagVTitle))
+            if (iTitle == -1 && a.hasTag(tagVTitle, ms))
                 iTitle = i;
-            if (a.hasTag(tagVEditor))
+            if (a.hasTag(tagVEditor, ms))
             {
                 if (editorStart == -1) editorStart = i;
                 editorEnd = i;
             }
-            if (a.hasTag(tagTitle) || a.hasTag(tagAuthor) || a.hasTag(tagPages))
+            if (a.hasTag(tagTitle, ms) || a.hasTag(tagAuthor, ms) || a.hasTag(tagPages, ms))
             {
                 if (paperStart == -1) paperStart = i;
                 paperEnd = i;
@@ -144,14 +160,67 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
     
     private void addPapers()
     {
-        String curTitle = null;
-        String curAuthors = null;
-        String curPages = null;
+        Area curTitle = null;
+        Area curAuthors = null;
+        Area curPages = null;
         
         for (int i = paperStart; i <= paperEnd; i++)
         {
-            
+            Area a = leaves.elementAt(i);
+            if (a.hasTag(tagTitle, ms) || a.hasTag(tagAuthor, ms) || a.hasTag(tagPages, ms))
+            {
+                if (curTitle == null && a.hasTag(tagTitle, ms))
+                    curTitle = a;
+                else if (curAuthors == null && a.hasTag(tagAuthor, ms))
+                    curAuthors = a;
+                else if (curPages == null && a.hasTag(tagPages, ms))
+                    curPages = a;
+                else //some duplicate
+                {
+                    savePaper(curTitle, curAuthors, curPages);
+                    curTitle = null;
+                    curAuthors = null;
+                    curPages = null;
+                    i--; //try the same area again
+                }
+            }
         }
+        savePaper(curTitle, curAuthors, curPages);
+    }
+    
+    private void savePaper(Area title, Area authors, Area pages)
+    {
+        if (title != null && authors != null)
+        {
+            LogicalArea at = new EswcLogicalArea(title, title.getText().trim(), tagTitle);
+            rootArea.appendChild(at);
+            String saut = authors.getText().trim();
+            String names[] = saut.split("\\s*[,;]\\s*(and)?\\s*");
+            for (String name : names)
+            {
+                String nnames[] = name.split("\\s+and\\s+");
+                for (String nname : nnames)
+                {
+                    LogicalArea aa = new EswcLogicalArea(authors, nname, tagAuthor);
+                    at.appendChild(aa);
+                }
+            }
+            if (pages != null)
+            {
+                String[] pp = pages.getText().trim().split("\\s*\\p{Pd}\\s*");
+                if (pp.length == 2)
+                {
+                    LogicalArea ps = new EswcLogicalArea(pages, pp[0], tagStartPage);
+                    at.appendChild(ps);
+                    LogicalArea pe = new EswcLogicalArea(pages, pp[1], tagEndPage);
+                    at.appendChild(pe);
+                }
+                else
+                    log.warn("Invalid pages: {}", pages);
+            }
+        }
+        else
+            log.warn("Incomplete paper: {} : {}", title, authors);
     }
     
 }

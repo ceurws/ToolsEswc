@@ -59,9 +59,9 @@ public class BlockBrowserEswc extends BlockBrowser
                     
                     /* CEUR */
                     //URL url = new URL(localpath + "/test/ceur/volumes/Vol-1317.html");
-                    //URL url = new URL("http://ceur-ws.org/Vol-1317/");
+                    URL url = new URL("http://ceur-ws.org/Vol-1317/");
                     //URL url = new URL("http://ceur-ws.org/Vol-585/");
-                    URL url = new URL("http://ceur-ws.org/Vol-540/"); //TODO najde jen prvniho autora
+                    //URL url = new URL("http://ceur-ws.org/Vol-540/"); //TODO najde jen prvniho autora
                     //URL url = new URL("http://ceur-ws.org/Vol-250/"); //TODO v nekterych oblastech soucasne autor i titulek
                     //URL url = new URL("http://ceur-ws.org/Vol-164/"); //(tocna) TODO ani jedno jméno v editorech
                     //URL url = new URL("http://ceur-ws.org/Vol-104/");

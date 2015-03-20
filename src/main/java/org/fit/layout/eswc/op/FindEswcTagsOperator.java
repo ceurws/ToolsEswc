@@ -157,11 +157,11 @@ public class FindEswcTagsOperator extends BaseOperator
         opEditors.apply(atree, root);
         
         //create a super area for all the papers
-        findPages(root, bpapers);
         Area apapers = createSuperAreaFromVerticalRegion(root, bpapers);
         if (apapers != null)
         {
             clearTags(apapers, "ESWC");
+            findPages(root, bpapers);
             FindLineOperator opLines = new FindLineOperator(true, 1.5f);
             opLines.apply(atree, apapers);
             MultiLineOperator opMLines = new MultiLineOperator(true, 0.5f);
@@ -170,7 +170,10 @@ public class FindEswcTagsOperator extends BaseOperator
             opPairs.apply(atree, apapers);
         }
         else
+        {
+            findPages(root, bpapers);
             log.warn("Couldn't create the papers super-area!");
+        }
     }
 
     //==============================================================================
@@ -286,8 +289,8 @@ public class FindEswcTagsOperator extends BaseOperator
     {
         if (region.enclosesY(root.getBounds()) && root.hasTag(tagPages))
         {
-            root.addTag(tagEPages, 1.0f);
             System.out.println("ADD TO " + root + " " + tagEPages);
+            root.addTag(tagEPages, 1.0f);
         }
         for (int i = 0; i < root.getChildCount(); i++)
             findPages(root.getChildArea(i), region);
