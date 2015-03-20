@@ -7,6 +7,7 @@ package org.fit.layout.eswc.logical;
 
 import java.util.Vector;
 
+import org.fit.layout.eswc.op.AreaUtils;
 import org.fit.layout.eswc.op.EswcTag;
 import org.fit.layout.impl.BaseLogicalTreeProvider;
 import org.fit.layout.model.Area;
@@ -105,6 +106,7 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
         scanLeaves();
         
         addVTitle();
+        addEditors();
         addPapers();
         
         return tree;
@@ -151,12 +153,123 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
         return new EswcLogicalArea(tree.getRoot(), uri, tagRoot);
     }
     
+    //====================================================================================
+
     private void addVTitle()
     {
         Area root = leaves.elementAt(iTitle);
         String text = root.getText();
         rootArea.appendChild(new EswcLogicalArea(root, text, tagVTitle));
     }
+    
+    //====================================================================================
+    
+    private void addEditors()
+    {
+        //extend editors till the end of the last line
+        Area last = leaves.elementAt(editorEnd);
+        while (editorEnd + 1 < leaves.size())
+        {
+            Area next = leaves.elementAt(editorEnd + 1);
+            if (AreaUtils.isOnSameLineRoughly(last, next))
+            {
+                last = next;
+                editorEnd++;
+            }
+            else
+                break;
+        }
+        //find editor data
+        Area curEd = null;
+        StringBuilder textb = null;
+        for (int i = editorStart; i <= editorEnd; i++)
+        {
+            Area a = leaves.elementAt(i);
+            if (a.hasTag(tagVEditor, ms))
+            {
+                if (curEd != null)
+                    saveEditor(curEd, textb.toString().trim());
+                curEd = a;
+                textb = new StringBuilder(a.getText());
+            }
+            else
+            {
+                if (textb != null)
+                    textb.append(a.getText());
+            }
+        }
+        if (curEd != null)
+            saveEditor(curEd, textb.toString().trim());
+    }
+    
+    private void saveEditor(Area editor, String text)
+    {
+        //System.out.println("ED: " + text);
+        //find the name
+        int i = 0;
+        while (i < text.length())
+        {
+            char ch = text.charAt(i);
+            if (ch != '.' && ch != '-' 
+                    && !Character.isLetter(ch) 
+                    && !Character.isSpaceChar(ch))
+                break;
+            i++;
+        }
+        if (i > 0)
+        {
+            String name = text.substring(0, i);
+            String affil = text.substring(i).trim();
+            while (affil.startsWith(","))
+                affil = affil.substring(1).trim();
+            while (affil.endsWith(","))
+                affil = affil.substring(0, affil.length() - 1);
+            
+            if (affil.isEmpty())
+            {
+                Area follow = leaves.elementAt(editorEnd+1);
+                if (AreaUtils.isNeighbor(editor, follow))
+                {
+                    String ftext = getTextOnLine(editorEnd+1, paperStart);
+                    affil = ftext.trim();
+                }
+                else
+                    log.warn("No affiliation for " + text);
+            }
+            
+            affil = completeAffil(affil);
+            LogicalArea aname = new EswcLogicalArea(editor, name, tagVEditor);
+            rootArea.appendChild(aname);
+            LogicalArea aaffil = new EswcLogicalArea(editor, affil, tagEAffil);
+            aname.appendChild(aaffil);
+        }
+        else
+            log.warn("Couldn't find editor name: {}", text);
+    }
+    
+    private String completeAffil(String src)
+    {
+        if (src.length() > 0 && !Character.isLetter(src.charAt(0)))
+        {
+            for (int i = editorEnd + 1; i < paperStart; i++)
+            {
+                final Area a = leaves.elementAt(i);
+                final String s = a.getText();
+                if (s.trim().startsWith(src))
+                {
+                    String ret = getTextOnLine(i, paperStart).trim();
+                    ret = ret.substring(src.length()).trim();
+                    return ret;
+                }
+            }
+            log.warn("Couldn't find affiliation for " + src);
+            return src;
+        }
+        else
+            return src;
+    }
+    
+    //====================================================================================
     
     private void addPapers()
     {
@@ -221,6 +334,25 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
         }
         else
             log.warn("Incomplete paper: {} : {}", title, authors);
+    }
+    
+    private String getTextOnLine(int start, int end)
+    {
+        Area a = leaves.elementAt(start);
+        StringBuilder sb = new StringBuilder(a.getText());
+        int i = start + 1;
+        while (i < end) //use all till end of line
+        {
+            Area next = leaves.elementAt(i);
+            if (AreaUtils.isOnSameLineRoughly(a, next))
+            {
+                sb.append(next.getText());
+                i++;
+            }
+            else
+                break;
+        }
+        return sb.toString();
     }
     
 }

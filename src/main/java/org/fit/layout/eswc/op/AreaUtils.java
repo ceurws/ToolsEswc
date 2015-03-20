@@ -50,6 +50,14 @@ public class AreaUtils
         return (gp1.getY1() == gp2.getY1() && gp1.getY2() == gp2.getY2()); 
     }
     
+    public static boolean isOnSameLineRoughly(Area a1, Area a2)
+    {
+        final Rectangular gp1 = a1.getBounds();
+        final Rectangular gp2 = a2.getBounds();
+        return (gp2.getY1() >= gp1.getY1() && gp2.getY1() < gp1.getY2())
+                || (gp2.getY2() > gp1.getY1() && gp2.getY2() <= gp1.getY2());
+    }
+    
     /**
      * Checks if the given areas are in the same column.
      * @param a1
