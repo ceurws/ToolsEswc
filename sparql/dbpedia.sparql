@@ -48,3 +48,15 @@ SELECT ?place ?name ?label WHERE {
     ?place dbprop:commonName ?name .
     ?place rdfs:label ?label
 }
+
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX yago: <http://dbpedia.org/class/yago/>
+PREFIX dbpedia-owl: <http://dbpedia.org/ontology/>
+PREFIX dbprop: <http://dbpedia.org/property/>
+SELECT ?place ?name ?label WHERE {
+    ?place rdf:type dbpedia-owl:Country .
+    ?place dbprop:commonName ?name .
+    ?place rdfs:label ?label .
+   OPTIONAL {?place dbpprop:yearEnd ?yearEnd}
+   FILTER (!bound(?yearEnd))
+}

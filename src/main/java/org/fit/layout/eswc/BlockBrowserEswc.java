@@ -12,6 +12,7 @@ import java.net.URL;
 import javax.swing.JFrame;
 
 import org.fit.layout.api.AreaTreeOperator;
+import org.fit.layout.classify.op.TagEntitiesOperator;
 import org.fit.layout.classify.op.VisualClassificationOperator;
 import org.fit.layout.eswc.classify.ProgrammesFeatureExtractor;
 import org.fit.layout.tools.BlockBrowser;
@@ -26,6 +27,7 @@ public class BlockBrowserEswc extends BlockBrowser
     public BlockBrowserEswc()
     {
         super();
+        
         AreaTreeOperator vcls = getProcessor().getOperators().get("FitLayout.Tag.Visual");
         if (vcls != null && vcls instanceof VisualClassificationOperator)
         {
@@ -33,6 +35,14 @@ public class BlockBrowserEswc extends BlockBrowser
         }
         else
             System.err.println("Couldn't configure FitLayout.Tag.Visual!");
+        
+        AreaTreeOperator tcls = getProcessor().getOperators().get("FitLayout.Tag.Entities");
+        if (tcls != null && tcls instanceof TagEntitiesOperator)
+        {
+            ((TagEntitiesOperator) tcls).addTagger(new CountriesTagger());
+        }
+        else
+            System.err.println("Couldn't configure FitLayout.Tag.Entities!");
     }
     
     public static void main(String[] args)

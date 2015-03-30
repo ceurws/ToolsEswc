@@ -10,6 +10,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Vector;
 
 /**
  * A database of countries and their URIs.
@@ -24,7 +25,7 @@ public class Countries
         try
         {
             countries = new HashMap<String, String>();
-            BufferedReader is = new BufferedReader(new InputStreamReader(ClassLoader.getSystemResourceAsStream("countries.csv")));
+            BufferedReader is = new BufferedReader(new InputStreamReader(ClassLoader.getSystemResourceAsStream("countries_all.csv")));
             String line;
             while ((line = is.readLine()) != null)
             {
@@ -44,6 +45,20 @@ public class Countries
     public static String getCountryUri(String name)
     {
         return countries.get(name.toLowerCase());
+    }
+    
+    public static Vector<String> getCountryNames(String s)
+    {
+        Vector<String> ret = new Vector<String>();
+        String[] words = s.toLowerCase().split("\\W+");
+        for (String w : words)
+        {
+            if (w.equals("italy"))
+                System.out.println("jo!");
+            if (countries.containsKey(w))
+                ret.add(w);
+        }
+        return ret;
     }
     
 }
