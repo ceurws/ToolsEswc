@@ -331,10 +331,32 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
                     String[] pp = pages.getText().trim().split("\\s*\\p{Pd}\\s*");
                     if (pp.length == 2)
                     {
-                        LogicalArea ps = new EswcLogicalArea(pages, pp[0], tagStartPage);
-                        ap.appendChild(ps);
-                        LogicalArea pe = new EswcLogicalArea(pages, pp[1], tagEndPage);
-                        ap.appendChild(pe);
+                        try {
+                            int pi1 = Integer.parseInt(pp[0]);
+                            int pi2 = Integer.parseInt(pp[1]);
+                            LogicalArea ps = new EswcLogicalArea(pages, pp[0], tagStartPage);
+                            ap.appendChild(ps);
+                            LogicalArea pe = new EswcLogicalArea(pages, pp[1], tagEndPage);
+                            ap.appendChild(pe);
+                            LogicalArea pn = new EswcLogicalArea(pages, String.valueOf(pi2 - pi1 + 1), tagPages);
+                            ap.appendChild(pn);
+                        } catch (NumberFormatException e) {
+                            log.warn("Invalid page numbers: {}", pages);
+                        }
+                    }
+                    else if (pp.length == 1)
+                    {
+                        try {
+                            Integer.parseInt(pp[0]);
+                            LogicalArea ps = new EswcLogicalArea(pages, pp[0], tagStartPage);
+                            ap.appendChild(ps);
+                            LogicalArea pe = new EswcLogicalArea(pages, pp[0], tagEndPage);
+                            ap.appendChild(pe);
+                            LogicalArea pn = new EswcLogicalArea(pages, "1", tagPages);
+                            ap.appendChild(pn);
+                        } catch (NumberFormatException e) {
+                            log.warn("Invalid page numbers: {}", pages);
+                        }
                     }
                     else
                         log.warn("Invalid pages: {}", pages);
