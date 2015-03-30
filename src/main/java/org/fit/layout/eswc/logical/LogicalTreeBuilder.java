@@ -5,6 +5,7 @@
  */
 package org.fit.layout.eswc.logical;
 
+import java.io.File;
 import java.util.Vector;
 
 import org.fit.layout.eswc.op.AreaUtils;
@@ -12,6 +13,7 @@ import org.fit.layout.eswc.op.EswcTag;
 import org.fit.layout.impl.BaseLogicalTreeProvider;
 import org.fit.layout.model.Area;
 import org.fit.layout.model.AreaTree;
+import org.fit.layout.model.Box;
 import org.fit.layout.model.LogicalArea;
 import org.fit.layout.model.LogicalAreaTree;
 import org.fit.layout.model.Tag;
@@ -305,32 +307,41 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
     {
         if (title != null && authors != null)
         {
-            LogicalArea at = new EswcLogicalArea(title, title.getText().trim(), tagTitle);
-            rootArea.appendChild(at);
-            String saut = authors.getText().trim();
-            String names[] = saut.split("\\s*[,;]\\s*(and)?\\s*");
-            for (String name : names)
+            String pid = findPaperId(title);
+            if (pid != null)
             {
-                String nnames[] = name.split("\\s+and\\s+");
-                for (String nname : nnames)
+                LogicalArea ap = new EswcLogicalArea(title, pid, tagPaper);
+                rootArea.appendChild(ap);
+                
+                LogicalArea at = new EswcLogicalArea(title, title.getText().trim(), tagTitle);
+                ap.appendChild(at);
+                String saut = authors.getText().trim();
+                String names[] = saut.split("\\s*[,;]\\s*(and)?\\s*");
+                for (String name : names)
                 {
-                    LogicalArea aa = new EswcLogicalArea(authors, nname, tagAuthor);
-                    at.appendChild(aa);
+                    String nnames[] = name.split("\\s+and\\s+");
+                    for (String nname : nnames)
+                    {
+                        LogicalArea aa = new EswcLogicalArea(authors, nname, tagAuthor);
+                        ap.appendChild(aa);
+                    }
+                }
+                if (pages != null)
+                {
+                    String[] pp = pages.getText().trim().split("\\s*\\p{Pd}\\s*");
+                    if (pp.length == 2)
+                    {
+                        LogicalArea ps = new EswcLogicalArea(pages, pp[0], tagStartPage);
+                        ap.appendChild(ps);
+                        LogicalArea pe = new EswcLogicalArea(pages, pp[1], tagEndPage);
+                        ap.appendChild(pe);
+                    }
+                    else
+                        log.warn("Invalid pages: {}", pages);
                 }
             }
-            if (pages != null)
-            {
-                String[] pp = pages.getText().trim().split("\\s*\\p{Pd}\\s*");
-                if (pp.length == 2)
-                {
-                    LogicalArea ps = new EswcLogicalArea(pages, pp[0], tagStartPage);
-                    at.appendChild(ps);
-                    LogicalArea pe = new EswcLogicalArea(pages, pp[1], tagEndPage);
-                    at.appendChild(pe);
-                }
-                else
-                    log.warn("Invalid pages: {}", pages);
-            }
+            else
+                log.error("Couldn't obtain paper id for {}", title);
         }
         else
             log.warn("Incomplete paper: {} : {}", title, authors);
@@ -353,6 +364,38 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
                 break;
         }
         return sb.toString();
+    }
+    
+    private String findPaperId(Area title)
+    {
+        Box box = title.getBoxes().firstElement();
+        int top = box.getBounds().getY1();
+        //try ID attribute
+        String pid = null;
+        Box cur = box;
+        do
+        {
+            pid = cur.getAttribute("id");
+            cur = cur.getParentBox();
+        } while (pid == null && cur != null && cur.getBounds().getY1() - top < 20);
+        if (pid != null)
+        {
+            //System.out.println("Found ID " + pid);
+            return pid;
+        }
+        //try links
+        String lnk = box.getAttribute("href").trim();
+        if (lnk != null)
+        {
+            File file = new File("/", lnk);
+            String name = file.getName();
+            if (name.toLowerCase().endsWith(".pdf"))
+                name = name.substring(0, name.length() - 4);
+            //System.out.println("Found HREF " + name);
+            return name;
+        }
+        else
+            return null;
     }
     
 }
