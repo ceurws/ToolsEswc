@@ -31,6 +31,7 @@ public class FindEditorsOperator extends BaseOperator
     private final ValueType[] paramTypes = {};
 
     private Rectangular bounds;
+    private Rectangular resultBounds;
     
     
     public FindEditorsOperator()
@@ -83,6 +84,11 @@ public class FindEditorsOperator extends BaseOperator
         return bounds;
     }
 
+    public Rectangular getResultBounds()
+    {
+        return resultBounds;
+    }
+
     //==============================================================================
 
     @Override
@@ -94,6 +100,7 @@ public class FindEditorsOperator extends BaseOperator
     @Override
     public void apply(AreaTree atree, Area root)
     {
+        resultBounds = null;
         //find tagged names in the area
         Vector<Area> names = new Vector<Area>();
         Tag tag = new DefaultTag(TT, "persons");
@@ -191,19 +198,31 @@ public class FindEditorsOperator extends BaseOperator
             for (int i = first; i <= last; i++)
             {
                 Area a = leaves.elementAt(i);
-                System.out.println("Test " + a);
+                boolean found = false;
+                //System.out.println("Test " + a);
                 if (estyle.equals(new FontNodeStyle(a)))
                 {
                     if (nextline >= sameline) //probably names on separate lines
                     {
                         if (a.getTopology().getPosition().getX1() == minx)
+                        {
                             a.addTag(new EswcTag("veditor"), 0.7f);
+                            found = true;
+                        }
                     }
                     else //multiple names on lines
                     {
                         //TODO some conditions?
                         a.addTag(new EswcTag("veditor"), 0.7f);
+                        found = true;
                     }
+                }
+                if (found)
+                {
+                    if (resultBounds == null)
+                        resultBounds = new Rectangular(a.getBounds());
+                    else
+                        resultBounds.expandToEnclose(a.getBounds());
                 }
             }
             

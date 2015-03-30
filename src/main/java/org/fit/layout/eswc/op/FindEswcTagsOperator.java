@@ -36,6 +36,7 @@ public class FindEswcTagsOperator extends BaseOperator
     private final ValueType[] paramTypes = {};
 
     private FindTitlesOperator opTitles;
+    private ScanSubtitlesOperator opSubtitles;
     private FindPairsOperator opPairs;
     private FindEditorsOperator opEditors;
     
@@ -104,6 +105,7 @@ public class FindEswcTagsOperator extends BaseOperator
         //start with the whole page for all the segments
         Rectangular whole = rootArea.getBounds();
         Rectangular btitles = new Rectangular(whole);
+        Rectangular bsubtitles = new Rectangular(whole);
         Rectangular beditors = new Rectangular(whole);
         Rectangular bpapers = new Rectangular(whole);
 
@@ -111,6 +113,7 @@ public class FindEswcTagsOperator extends BaseOperator
         if (editedArea != null)
         {
             btitles.setY2(editedArea.getBounds().getY1());
+            bsubtitles.setY2(editedArea.getBounds().getY1());
             beditors.setY1(editedArea.getBounds().getY1());
         }
         if (tocArea != null)
@@ -155,6 +158,14 @@ public class FindEswcTagsOperator extends BaseOperator
         //find editors
         opEditors = new FindEditorsOperator(beditors);
         opEditors.apply(atree, root);
+        //update subtitle bounds
+        if (bsubtitles.getY1() < bt.getY2() + 1)
+            bsubtitles.setY1(bt.getY2() + 1); //below the title
+        Rectangular be = opEditors.getResultBounds();
+        if (be == null) be = beditors;
+        if (bsubtitles.getY2() >= be.getY1())
+            bsubtitles.setY2(be.getY1() - 1); //above the editors
+        log.info("SUBTITLES: {}", bsubtitles);
         
         //create a super area for all the papers
         Area apapers = createSuperAreaFromVerticalRegion(root, bpapers);
@@ -174,6 +185,10 @@ public class FindEswcTagsOperator extends BaseOperator
             findPages(root, bpapers);
             log.warn("Couldn't create the papers super-area!");
         }
+        
+        //find workshop place and date
+        opSubtitles = new ScanSubtitlesOperator(bsubtitles);
+        opSubtitles.apply(atree, root);
     }
 
     //==============================================================================

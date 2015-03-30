@@ -56,6 +56,6 @@ public class CountriesTagger implements Tagger
     
     public Vector<String> extract(String src)
     {
-        return Countries.getCountryNames(src);
+        return new Vector<String>(Countries.getCountryNames(src));
     }
 }

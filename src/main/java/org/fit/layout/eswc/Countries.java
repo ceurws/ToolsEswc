@@ -9,8 +9,9 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Map;
-import java.util.Vector;
+import java.util.Set;
 
 /**
  * A database of countries and their URIs.
@@ -47,14 +48,20 @@ public class Countries
         return countries.get(name.toLowerCase());
     }
     
-    public static Vector<String> getCountryNames(String s)
+    public static Set<String> getCountryNames(String s)
     {
-        Vector<String> ret = new Vector<String>();
+        HashSet<String> ret = new HashSet<String>();
+        //try single words
         String[] words = s.toLowerCase().split("\\W+");
         for (String w : words)
         {
-            if (w.equals("italy"))
-                System.out.println("jo!");
+            if (countries.containsKey(w))
+                ret.add(w);
+        }
+        //try multiword separated
+        String[] elems = s.toLowerCase().split("\\s*[,;]\\s*");
+        for (String w : elems)
+        {
             if (countries.containsKey(w))
                 ret.add(w);
         }
