@@ -5,8 +5,6 @@
  */
 package org.fit.layout.eswc.op;
 
-import java.util.Collections;
-import java.util.Comparator;
 import java.util.Vector;
 
 import org.fit.layout.impl.BaseOperator;
@@ -15,7 +13,6 @@ import org.fit.layout.model.Area;
 import org.fit.layout.model.AreaTree;
 import org.fit.layout.model.Rectangular;
 import org.fit.layout.model.Tag;
-import org.fit.segm.grouping.AreaImpl;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

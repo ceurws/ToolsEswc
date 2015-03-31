@@ -304,7 +304,7 @@ public class FindEswcTagsOperator extends BaseOperator
     {
         if (region.enclosesY(root.getBounds()) && root.hasTag(tagPages))
         {
-            System.out.println("ADD TO " + root + " " + tagEPages);
+            //System.out.println("ADD TO " + root + " " + tagEPages);
             root.addTag(tagEPages, 1.0f);
         }
         for (int i = 0; i < root.getChildCount(); i++)
