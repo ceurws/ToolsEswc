@@ -7,6 +7,7 @@ package org.fit.layout.eswc.op;
 
 import java.util.Vector;
 
+import org.fit.layout.classify.taggers.DateTagger;
 import org.fit.layout.impl.BaseOperator;
 import org.fit.layout.impl.DefaultTag;
 import org.fit.layout.model.Area;

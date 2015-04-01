@@ -6,8 +6,13 @@
 package org.fit.layout.eswc.logical;
 
 import java.io.File;
+import java.util.Date;
+import java.util.List;
 import java.util.Vector;
 
+import org.fit.layout.classify.taggers.DateTagger;
+import org.fit.layout.eswc.Countries;
+import org.fit.layout.eswc.CountriesTagger;
 import org.fit.layout.eswc.op.AreaUtils;
 import org.fit.layout.eswc.op.EswcTag;
 import org.fit.layout.impl.BaseLogicalTreeProvider;
@@ -32,6 +37,10 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
     
     private static Tag tagRoot = new EswcTag("root");
     private static Tag tagVTitle = new EswcTag("vtitle");
+    private static Tag tagVCountry = new EswcTag("vcountry");
+    private static Tag tagVDate = new EswcTag("vdate");
+    private static Tag tagStartDate = new EswcTag("startdate");
+    private static Tag tagEndDate = new EswcTag("enddate");
     private static Tag tagVEditor = new EswcTag("veditor");
     private static Tag tagEAffil = new EswcTag("eaffil");
     private static Tag tagECountry = new EswcTag("ecountry");
@@ -47,6 +56,8 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
     private Vector<Area> leaves;
     
     private int iTitle = -1;
+    private int iDates = -1;
+    private int iCountry = -1;
     private int editorStart = -1;
     private int editorEnd = -1;
     private int paperStart = -1;
@@ -87,6 +98,8 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
     private void reset()
     {
         iTitle = -1;
+        iDates = -1;
+        iCountry = -1;
         editorStart = -1;
         editorEnd = -1;
         paperStart = -1;
@@ -108,6 +121,8 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
         scanLeaves();
         
         addVTitle();
+        addVDates();
+        addVCountry();
         addEditors();
         addPapers();
         
@@ -134,6 +149,10 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
         {
             if (iTitle == -1 && a.hasTag(tagVTitle, ms))
                 iTitle = i;
+            if (iDates == -1 && a.hasTag(tagVDate, ms))
+                iDates = i;
+            if (iCountry == -1 && a.hasTag(tagVCountry, ms))
+                iCountry = i;
             if (a.hasTag(tagVEditor, ms))
             {
                 if (editorStart == -1) editorStart = i;
@@ -162,6 +181,50 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
         Area root = leaves.elementAt(iTitle);
         String text = root.getText();
         rootArea.appendChild(new EswcLogicalArea(root, text, tagVTitle));
+    }
+
+    private void addVDates()
+    {
+        if (iDates != -1)
+        {
+            Area a = leaves.elementAt(iDates);
+            DateTagger dt = new DateTagger();
+            List<Date> dates = dt.extractDates(a.getText());
+            if (dates.size() == 1)
+            {
+                rootArea.appendChild(new EswcLogicalArea(a, dates.get(0).toString(), tagStartDate));
+                rootArea.appendChild(new EswcLogicalArea(a, dates.get(0).toString(), tagEndDate));
+            }
+            else if (dates.size() == 2)
+            {
+                rootArea.appendChild(new EswcLogicalArea(a, dates.get(0).toString(), tagStartDate));
+                rootArea.appendChild(new EswcLogicalArea(a, dates.get(1).toString(), tagEndDate));
+            }
+            else
+                log.warn("Strange number of date values: {} in {}", dates, a.getText());
+        }
+        else
+            log.warn("No dates found");
+    }
+    
+    private void addVCountry()
+    {
+        if (iCountry != -1)
+        {
+            Area a = leaves.elementAt(iCountry);
+            CountriesTagger ct = new CountriesTagger();
+            List<String> countries = ct.extract(a.getText());
+            if (countries.size() >= 1)
+            {
+                String uri = Countries.getCountryUri(countries.get(0));
+                rootArea.appendChild(new EswcLogicalArea(a, uri, tagVCountry));
+            }
+            if (countries.size() != 1)
+                log.warn("Strange number of countries: {} in {}", countries, a.getText());
+        }
+        else
+            log.warn("No country found");
+        
     }
     
     //====================================================================================
