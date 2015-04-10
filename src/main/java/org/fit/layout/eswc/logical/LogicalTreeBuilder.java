@@ -395,9 +395,12 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
             return src;
     }
     
-    private String[] splitAffilCountry(String affil)
+    private String[] splitAffilCountry(String src)
     {
         String[] ret = new String[2];
+        String affil = new String(src.trim());
+        while (affil.endsWith(","))
+            affil = affil.substring(0, affil.length() - 1).trim();
         int pos = affil.lastIndexOf(",");
         if (pos > 0)
         {

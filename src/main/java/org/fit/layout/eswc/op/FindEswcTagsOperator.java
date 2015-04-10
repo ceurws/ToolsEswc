@@ -157,6 +157,8 @@ public class FindEswcTagsOperator extends BaseOperator
         }
         //find editors
         opEditors = new FindEditorsOperator(beditors);
+        if (editedArea == null)
+            opEditors.setKeepGroup(true); //no 'edited by' found, try to locate the editors by maintaining a visual group
         opEditors.apply(atree, root);
         //update subtitle bounds
         if (bsubtitles.getY1() < bt.getY2() + 1)

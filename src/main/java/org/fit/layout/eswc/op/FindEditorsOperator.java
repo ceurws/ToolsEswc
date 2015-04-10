@@ -32,6 +32,7 @@ public class FindEditorsOperator extends BaseOperator
 
     private Rectangular bounds;
     private Rectangular resultBounds;
+    private boolean keepGroup = false;
     
     
     public FindEditorsOperator()
@@ -89,6 +90,11 @@ public class FindEditorsOperator extends BaseOperator
         return resultBounds;
     }
 
+    public void setKeepGroup(boolean b)
+    {
+        keepGroup = b;
+    }
+    
     //==============================================================================
 
     @Override
@@ -128,7 +134,7 @@ public class FindEditorsOperator extends BaseOperator
             for (int i = last - 1; i >= 0; i--)
             {
                 Area cur = leaves.elementAt(i);
-                if (AreaUtils.isNeighbor(cur, prev))
+                if (!keepGroup || AreaUtils.isNeighbor(cur, prev))
                 {
                     first = i;
                     prev = cur;
@@ -236,7 +242,7 @@ public class FindEditorsOperator extends BaseOperator
     
     private void findLeavesInArea(Area root, Rectangular limit, Vector<Area> dest) 
     {
-        if (root.isLeaf() && getBounds().intersects(limit))
+        if (root.isLeaf() && root.getBounds().intersects(limit))
             dest.add(root);
         for (int i = 0; i < root.getChildCount(); i++)
             findLeavesInArea(root.getChildArea(i), limit, dest);
