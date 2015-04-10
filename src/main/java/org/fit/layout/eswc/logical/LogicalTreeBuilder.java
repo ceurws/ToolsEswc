@@ -37,6 +37,8 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
     
     private static Tag tagRoot = new EswcTag("root");
     private static Tag tagVTitle = new EswcTag("vtitle");
+    private static Tag tagVShort = new EswcTag("vshort");
+    private static Tag tagColoc = new EswcTag("colocated");
     private static Tag tagVCountry = new EswcTag("vcountry");
     private static Tag tagVDate = new EswcTag("vdate");
     private static Tag tagStartDate = new EswcTag("startdate");
@@ -54,8 +56,11 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
     private EswcLogicalTree tree;
     private LogicalArea rootArea;
     private Vector<Area> leaves;
+    private String shortname;
     
     private int iTitle = -1;
+    private int iShort = -1;
+    private int iColoc = -1;
     private int iDates = -1;
     private int iCountry = -1;
     private int editorStart = -1;
@@ -98,12 +103,15 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
     private void reset()
     {
         iTitle = -1;
+        iShort = -1;
+        iColoc = -1;
         iDates = -1;
         iCountry = -1;
         editorStart = -1;
         editorEnd = -1;
         paperStart = -1;
         paperEnd = -1;
+        shortname = null;
     }
     
     @Override
@@ -121,6 +129,8 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
         scanLeaves();
         
         addVTitle();
+        addVShort();
+        addColoc();
         addVDates();
         addVCountry();
         addEditors();
@@ -149,6 +159,10 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
         {
             if (iTitle == -1 && a.hasTag(tagVTitle, ms))
                 iTitle = i;
+            if (iShort == -1 && a.hasTag(tagVShort, ms))
+                iShort = i;
+            if (iColoc == -1 && a.hasTag(tagColoc, ms))
+                iColoc = i;
             if (iDates == -1 && a.hasTag(tagVDate, ms))
                 iDates = i;
             if (iCountry == -1 && a.hasTag(tagVCountry, ms))
@@ -183,6 +197,43 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
         rootArea.appendChild(new EswcLogicalArea(root, text, tagVTitle));
     }
 
+    private void addVShort()
+    {
+        if (iShort != -1)
+        {
+            Area root = leaves.elementAt(iShort);
+            Vector<String> snames = AreaUtils.findShortTitles(root);
+            if (!snames.isEmpty())
+            {
+                shortname = snames.firstElement();
+                rootArea.appendChild(new EswcLogicalArea(root, shortname, tagVShort));
+            }
+        }
+    }
+    
+    private void addColoc()
+    {
+        int start = (iColoc == -1) ? iTitle + 1 : iColoc;
+        int end = editorStart;
+        if (iCountry != -1)
+            end = iCountry;
+        if (iDates != -1 && iDates < end)
+            end = iDates;
+        for (int i = start; i < end; i++)
+        {
+            Area a = leaves.elementAt(i);
+            Vector<String> snames = AreaUtils.findShortTitles(a);
+            for (String sn : snames)
+            {
+                if (shortname == null || !shortname.equals(sn))
+                {
+                    rootArea.appendChild(new EswcLogicalArea(a, sn, tagColoc));
+                    return;
+                }
+            }
+        }
+    }
+    
     private void addVDates()
     {
         if (iDates != -1)

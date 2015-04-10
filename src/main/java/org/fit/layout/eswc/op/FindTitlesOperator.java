@@ -140,6 +140,19 @@ public class FindTitlesOperator extends BaseOperator
             
             fa.addTag(new EswcTag("vtitle"), 0.6f);
         }
+        //find short names of the same size
+        for (Area a : leaves)
+        {
+            if (a.getFontSize() == maxsize)
+            {
+                Vector<String> snames = AreaUtils.findShortTitles(a);
+                if (!snames.isEmpty())
+                {
+                    a.addTag(new EswcTag("vshort"), 0.7f);
+                    break;
+                }
+            }
+        }
         
        
     }

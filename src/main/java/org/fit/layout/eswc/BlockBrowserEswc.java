@@ -40,10 +40,19 @@ public class BlockBrowserEswc extends BlockBrowser
         if (tcls != null && tcls instanceof TagEntitiesOperator)
         {
             ((TagEntitiesOperator) tcls).addTagger(new CountriesTagger());
+            ((TagEntitiesOperator) tcls).addTagger(new ShortNameTagger());
         }
         else
             System.err.println("Couldn't configure FitLayout.Tag.Entities!");
     }
+
+    @Override
+    public void initPlugins()
+    {
+        super.initPlugins();
+        getSegmAutorunCheckbox().setSelected(true);
+        getLogicalAutorunCheckbox().setSelected(true);
+    }    
     
     public static void main(String[] args)
     {
@@ -56,6 +65,7 @@ public class BlockBrowserEswc extends BlockBrowser
                     browser = new BlockBrowserEswc();
                     browser.setLoadImages(false);
                     JFrame main = browser.getMainWindow();
+                    
                     //main.setSize(1000,600);
                     //main.setMinimumSize(new Dimension(1200, 600));
                     //main.setSize(1500,600);
@@ -63,8 +73,8 @@ public class BlockBrowserEswc extends BlockBrowser
                     browser.initPlugins();
                     main.setVisible(true);
                     
-                    String localpath = "file://" + System.getProperty("user.home");
-                    localpath += "/git/TestingLayout";
+                    //String localpath = "file://" + System.getProperty("user.home");
+                    //localpath += "/git/TestingLayout";
             
                     
                     /* CEUR */
@@ -75,10 +85,10 @@ public class BlockBrowserEswc extends BlockBrowser
                     //URL url = new URL("http://ceur-ws.org/Vol-250/");
                     //URL url = new URL("http://ceur-ws.org/Vol-164/"); //(tocna)
                     //URL url = new URL("http://ceur-ws.org/Vol-104/");
-                    //URL url = new URL("http://ceur-ws.org/Vol-100/"); //TODO editori
+                    URL url = new URL("http://ceur-ws.org/Vol-100/"); //TODO editori
                     //URL url = new URL("http://ceur-ws.org/Vol-15/"); //TODO total chaos
                     //URL url = new URL("http://ceur-ws.org/Vol-5/");
-                    URL url = new URL("http://ceur-ws.org/Vol-1/");
+                    //URL url = new URL("http://ceur-ws.org/Vol-1/");
                     //URL url = new URL("");
                     //URL url = new URL("");
                     //URL url = new URL("");

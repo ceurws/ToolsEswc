@@ -6,8 +6,9 @@
 package org.fit.layout.eswc.op;
 
 import java.util.Vector;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
-import org.fit.layout.classify.taggers.DateTagger;
 import org.fit.layout.impl.BaseOperator;
 import org.fit.layout.impl.DefaultTag;
 import org.fit.layout.model.Area;
@@ -100,6 +101,7 @@ public class ScanSubtitlesOperator extends BaseOperator
         
         //date and place is the last applicable (usually)
         int last = leaves.size() - 1;
+        int icoloc = -1; //collocation (if found)
         for (int i = leaves.size() - 1; i >= 0; i--)
         {
             Area a = leaves.elementAt(i);
@@ -116,11 +118,23 @@ public class ScanSubtitlesOperator extends BaseOperator
                 aPlace = a;
                 last = i;
             }
+            if (icoloc == -1 && isColocated(a))
+            {
+                a.addTag(new EswcTag("colocated"), 1.0f);
+                icoloc = i;
+            }
         }
-       
     }
     
     //==============================================================================
+    
+    private boolean isColocated(Area a)
+    {
+        final String text = a.getText().toLowerCase().trim();
+        Pattern pattern = Pattern.compile("col?\\p{Pd}*ll?ocated");
+        Matcher matcher = pattern.matcher(text);
+        return matcher.find();
+    }
     
     private void findLeaves(Area root, Vector<Area> dest)
     {

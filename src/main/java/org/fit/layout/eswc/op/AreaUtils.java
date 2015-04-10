@@ -5,6 +5,12 @@
  */
 package org.fit.layout.eswc.op;
 
+import java.util.HashSet;
+import java.util.Set;
+import java.util.Vector;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
 import org.fit.layout.model.Area;
 import org.fit.layout.model.Box;
 import org.fit.layout.model.Rectangular;
@@ -16,6 +22,13 @@ import org.fit.layout.model.Rectangular;
  */
 public class AreaUtils
 {
+    public static Set<String> blackShort;
+    
+    static {
+        blackShort = new HashSet<String>();
+        blackShort.add("IEEE");
+        blackShort.add("ACM");
+    }
 
     /**
      * Checks if the given areas are in the same visual group (i.e. "are near each other"). 
@@ -100,5 +113,27 @@ public class AreaUtils
         return false;
     }
 
+    /**
+     * Finds short titles in the area using regexp.
+     * @param a
+     * @return
+     */
+    public static Vector<String> findShortTitles(Area a)
+    {
+        return findShortTitles(a.getText().trim());
+    }
     
+    public static Vector<String> findShortTitles(String text)
+    {
+        Vector<String> ret = new Vector<String>();
+        Pattern pattern = Pattern.compile("[A-Z][A-Za-z0-9]*[A-Z]");
+        Matcher matcher = pattern.matcher(text);
+        while (matcher.find())
+        {
+            final String sname = matcher.group(0);
+            if (sname.length() >= 2 && sname.length() <= 6 && !blackShort.contains(sname))
+                ret.add(sname);
+        }
+        return ret;
+    }
 }
