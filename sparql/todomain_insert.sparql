@@ -1,0 +1,51 @@
+PREFIX b: <http://fitlayout.github.io/ontology/render.owl#>
+PREFIX a: <http://fitlayout.github.io/ontology/segmentation.owl#>
+
+PREFIX dc: <http://purl.org/dc/elements/1.1/#>
+PREFIX swrc: <http://swrc.ontoware.org/ontology/#>
+PREFIX bibo: <http://purl.org/ontology/bibo/#>
+PREFIX swc: <http://data.semanticweb.org/ns/swc/ontology/#>
+PREFIX timeline: <http://purl.org/NET/c4dm/timeline.owl#>
+PREFIX dcterms: <http://dublincore.org/documents/dcmi-terms/#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+INSERT
+{ 
+  	?paper a swc:Paper .
+    ?paper dc:title ?paperTitle .
+  
+  	?paper swrc:author ?authorPart .
+    ?authorPart rdf:type foaf:Person .
+    ?authorPart foaf:name ?authorName .
+    ?authorPart foaf:made ?paper .
+    
+    ?conferencePart a swc:Proceedings .
+  	?conferencePart swc:hasPart ?paper .
+  	?paper swc:partOf ?conferencePart .
+    ?conferencePart dc:title ?conferenceTitle .
+    
+}
+WHERE {
+	  
+    ?conferencePart a a:LogicalArea .
+  	?conferencePart a:hasTag ?tagConferenceTitle .
+  	?tagConferenceTitle a:type "vtitle".
+    ?conferencePart a:hasText ?conferenceTitle .
+    
+    ?paper a a:LogicalArea .
+  	?paper a:hasTag ?tagPaper .
+  	?tagPaper a:type "paper".
+    
+  	?titlePart a:isChildOf ?paper .
+    ?titlePart a:hasTag ?tagTitle .
+    ?tagTitle a:type "title" .
+  	?titlePart a:hasText ?paperTitle .
+    
+    ?authorPart a:isChildOf ?paper .
+    ?authorPart a:hasTag ?tagAuthor .
+    ?tagAuthor a:type "authors" .
+  	?authorPart a:hasText ?authorName .
+    
+}
+
+

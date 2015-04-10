@@ -1,0 +1,54 @@
+PREFIX b: <http://fitlayout.github.io/ontology/render.owl#>
+PREFIX a: <http://fitlayout.github.io/ontology/segmentation.owl#>
+
+PREFIX dc: <http://purl.org/dc/elements/1.1/#>
+PREFIX swrc: <http://swrc.ontoware.org/ontology/#>
+PREFIX bibo: <http://purl.org/ontology/bibo/#>
+PREFIX swc: <http://data.semanticweb.org/ns/swc/ontology/#>
+PREFIX timeline: <http://purl.org/NET/c4dm/timeline.owl#>
+PREFIX dcterms: <http://dublincore.org/documents/dcmi-terms/#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+
+CONSTRUCT
+{ 
+  	?paper a swc:Paper .
+    ?paper dc:title ?paperTitle .
+  
+  	?paper swrc:author ?authorPart .
+    ?authorPart rdf:type foaf:Person .
+    ?authorPart foaf:name ?authorName .
+    ?authorPart foaf:made ?paper .
+    
+    ?conf a swc:Proceedings .
+  	?conf swc:hasPart ?paper .
+  	?paper swc:partOf ?conferencePart .
+    ?conf dc:title ?conferenceTitle .
+    
+}
+WHERE {
+	  
+    ?conferencePart a a:LogicalArea .
+  	?conferencePart a:hasTag a:tag-ESWC--root .
+  	?conferencePart a:hasText ?confUri .
+  	
+    ?avtitle a:isSubordinateTo ?conferencePart .
+  	?avtitle a:hasTag a:tag-ESWC--vtitle .
+  	?avtitle a:hasText ?conferenceTitle .
+    
+    ?apaper a:isSubordinateTo ?conferencePart .
+  	?apaper a:hasTag a:tag-ESWC--paper .
+  	?apaper a:hasText ?paperUri .
+    
+  	?titlePart a:isSubordinateTo ?apaper .
+    ?titlePart a:hasTag a:tag-ESWC--title .
+  	?titlePart a:hasText ?paperTitle .
+    
+    ?authorPart a:isSubordinateTo ?apaper .
+    ?authorPart a:hasTag a:tag-ESWC--authors .
+  	?authorPart a:hasText ?authorName
+
+	BIND (URI(?confUri) AS ?conf)    
+	BIND (URI(CONCAT(?confUri, "#",?paperUri)) AS ?paper)    
+}
+
+
