@@ -354,10 +354,18 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
             }
             
             affil = completeAffil(affil);
+            String affs[] = splitAffilCountry(affil);
+            affil = affs[0];
+                    
             LogicalArea aname = new EswcLogicalArea(editor, name, tagVEditor);
             rootArea.appendChild(aname);
             LogicalArea aaffil = new EswcLogicalArea(editor, affil, tagEAffil);
             aname.appendChild(aaffil);
+            if (affs[1] != null)
+            {
+                LogicalArea acountry = new EswcLogicalArea(editor, affs[1], tagECountry);
+                aname.appendChild(acountry);
+            }
         }
         else
             log.warn("Couldn't find editor name: {}", text);
@@ -383,6 +391,36 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
         }
         else
             return src;
+    }
+    
+    private String[] splitAffilCountry(String affil)
+    {
+        String[] ret = new String[2];
+        int pos = affil.lastIndexOf(",");
+        if (pos > 0)
+        {
+            String cname = affil.substring(pos + 1).trim().toLowerCase();
+            String curi = Countries.getCountryUri(cname);
+            if (curi != null)
+            {
+                ret[0] = affil.substring(0, pos).trim();
+                ret[1] = curi;
+            }
+            else
+            {
+                ret[0] = affil;
+                ret[1] = null;
+                log.warn("No country found in '{}' ({}?)", affil, cname);
+            }
+        }
+        else
+        {
+            ret[0] = affil;
+            ret[1] = null;
+            log.warn("No country position found in '{}'", affil);
+        }
+        
+        return ret;
     }
     
     //====================================================================================
