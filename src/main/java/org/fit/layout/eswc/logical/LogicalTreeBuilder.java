@@ -6,6 +6,7 @@
 package org.fit.layout.eswc.logical;
 
 import java.io.File;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
 import java.util.Vector;
@@ -241,15 +242,16 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
             Area a = leaves.elementAt(iDates);
             DateTagger dt = new DateTagger();
             List<Date> dates = dt.extractDates(a.getText());
+            SimpleDateFormat dfmt = new SimpleDateFormat("yyyy-MM-dd");
             if (dates.size() == 1)
             {
-                rootArea.appendChild(new EswcLogicalArea(a, dates.get(0).toString(), tagStartDate));
-                rootArea.appendChild(new EswcLogicalArea(a, dates.get(0).toString(), tagEndDate));
+                rootArea.appendChild(new EswcLogicalArea(a, dfmt.format(dates.get(0)), tagStartDate));
+                rootArea.appendChild(new EswcLogicalArea(a, dfmt.format(dates.get(0)), tagEndDate));
             }
             else if (dates.size() == 2)
             {
-                rootArea.appendChild(new EswcLogicalArea(a, dates.get(0).toString(), tagStartDate));
-                rootArea.appendChild(new EswcLogicalArea(a, dates.get(1).toString(), tagEndDate));
+                rootArea.appendChild(new EswcLogicalArea(a, dfmt.format(dates.get(0)), tagStartDate));
+                rootArea.appendChild(new EswcLogicalArea(a, dfmt.format(dates.get(1)), tagEndDate));
             }
             else
                 log.warn("Strange number of date values: {} in {}", dates, a.getText());
