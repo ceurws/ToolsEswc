@@ -563,9 +563,10 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
             return pid;
         }
         //try links
-        String lnk = box.getAttribute("href").trim();
+        String lnk = box.getAttribute("href");
         if (lnk != null)
         {
+            lnk = lnk.trim();
             File file = new File("/", lnk);
             String name = file.getName();
             if (name.toLowerCase().endsWith(".pdf"))
