@@ -26,8 +26,18 @@ import org.fit.layout.model.Tag;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+//TODO:
+//- strip (ENDING) in editor affiliations (and titles?)
+//- colocated may be also 'in conjunction with' -- vol-862
+//  nebo 'located at' -- vol-540
+//- napojeni editoru muze byt i (1) -- vol-862
+//- lepsi regularni vyraz na zkratky -- vol-859
+//- vol-895 chybi keynotes na konci
+//- zkusit i indent pro hledani sekci -- vol-250
+
+
 /**
- * 
+ *
  * @author burgetr
  */
 public class LogicalTreeBuilder extends BaseLogicalTreeProvider
@@ -53,6 +63,7 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
     private static Tag tagPages = new EswcTag("pages");
     private static Tag tagStartPage = new EswcTag("pstart");
     private static Tag tagEndPage = new EswcTag("pend");
+    private static Tag tagSection = new EswcTag("section");
     
     private EswcLogicalTree tree;
     private LogicalArea rootArea;
@@ -435,6 +446,7 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
         Area curTitle = null;
         Area curAuthors = null;
         Area curPages = null;
+        Area curSection = null;
         
         for (int i = paperStart; i <= paperEnd; i++)
         {
@@ -442,14 +454,17 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
             if (a.hasTag(tagTitle, ms) || a.hasTag(tagAuthor, ms) || a.hasTag(tagPages, ms))
             {
                 if (curTitle == null && a.hasTag(tagTitle, ms))
+                {
                     curTitle = a;
+                    curSection = findSection(i);
+                }
                 else if (curAuthors == null && a.hasTag(tagAuthor, ms))
                     curAuthors = a;
                 else if (curPages == null && a.hasTag(tagPages, ms))
                     curPages = a;
                 else //some duplicate
                 {
-                    savePaper(curTitle, curAuthors, curPages);
+                    savePaper(curTitle, curAuthors, curPages, curSection);
                     curTitle = null;
                     curAuthors = null;
                     curPages = null;
@@ -457,10 +472,27 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
                 }
             }
         }
-        savePaper(curTitle, curAuthors, curPages);
+        savePaper(curTitle, curAuthors, curPages, curSection);
     }
     
-    private void savePaper(Area title, Area authors, Area pages)
+    private Area findSection(int start)
+    {
+        float fsize = leaves.elementAt(start).getFontSize();
+        for (int i = start - 1; i > editorEnd; i--)
+        {
+            Area a = leaves.elementAt(i);
+            if (a.getFontSize() > fsize)
+            {
+                if (a.getText().equalsIgnoreCase("Table of Contents"))
+                    return null;
+                else
+                    return a;
+            }
+        }
+        return null;
+    }
+    
+    private void savePaper(Area title, Area authors, Area pages, Area curSection)
     {
         if (title != null && authors != null)
         {
@@ -517,6 +549,11 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
                     }
                     else
                         log.warn("Invalid pages: {}", pages);
+                }
+                if (curSection != null)
+                {
+                    LogicalArea asec = new EswcLogicalArea(curSection, curSection.getText().trim(), tagSection);
+                    ap.appendChild(asec);
                 }
             }
             else
