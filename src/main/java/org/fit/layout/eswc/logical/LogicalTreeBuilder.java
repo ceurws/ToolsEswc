@@ -37,6 +37,7 @@ import org.slf4j.LoggerFactory;
 //- vol-53 zmatek v editorech, chybi id u paperu
 //- ALT atributy u obrazku -- vol-53
 //- multi-workshop volumes
+//- vol-225 Georgia, affiliations
 
 
 /**
