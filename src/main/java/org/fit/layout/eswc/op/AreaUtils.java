@@ -52,6 +52,7 @@ public class AreaUtils
     
     /**
      * Checks if the given areas are on the same line.
+     * TODO what if they don't share a parent?
      * @param a1
      * @param a2
      * @return
