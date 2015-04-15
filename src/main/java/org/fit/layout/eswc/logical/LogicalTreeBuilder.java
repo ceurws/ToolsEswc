@@ -34,7 +34,7 @@ import org.slf4j.LoggerFactory;
 //- lepsi regularni vyraz na zkratky -- vol-859
 //- vol-895 chybi keynotes na konci
 //- zkusit i indent pro hledani sekci -- vol-250
-//-+ vol-53 zmatek v editorech, chybi id u paperu
+//+ vol-53 zmatek v editorech, chybi id u paperu
 //+ ALT atributy u obrazku -- vol-53
 //- multi-workshop volumes
 //- vol-225 Georgia, affiliations
@@ -287,7 +287,7 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
             List<String> countries = ct.extract(a.getText());
             if (countries.size() >= 1)
             {
-                String uri = Countries.getCountryUri(countries.get(0));
+                String uri = Countries.getCountryUri(countries.get(countries.size() - 1)); //use the last country
                 rootArea.appendChild(new EswcLogicalArea(a, uri, tagVCountry));
             }
             if (countries.size() != 1)
@@ -376,15 +376,19 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
             affil = completeAffil(affil);
             String affs[] = splitAffilCountry(affil);
             affil = affs[0];
-                    
-            LogicalArea aname = new EswcLogicalArea(editor, name, tagVEditor);
-            rootArea.appendChild(aname);
-            LogicalArea aaffil = new EswcLogicalArea(editor, affil, tagEAffil);
-            aname.appendChild(aaffil);
-            if (affs[1] != null)
+                   
+            String[] names = name.split("\\s+and\\s+"); //multiple names separated by 'and'?
+            for (String curname : names)
             {
-                LogicalArea acountry = new EswcLogicalArea(editor, affs[1], tagECountry);
-                aname.appendChild(acountry);
+                LogicalArea aname = new EswcLogicalArea(editor, curname, tagVEditor);
+                rootArea.appendChild(aname);
+                LogicalArea aaffil = new EswcLogicalArea(editor, affil, tagEAffil);
+                aname.appendChild(aaffil);
+                if (affs[1] != null)
+                {
+                    LogicalArea acountry = new EswcLogicalArea(editor, affs[1], tagECountry);
+                    aname.appendChild(acountry);
+                }
             }
         }
         else

@@ -172,6 +172,7 @@ public class FindEditorsOperator extends BaseOperator
             int nextline = 0;
             int other = 0;
             int minx = -1;
+            int multiPerson = -1;
             StyleCounter<FontNodeStyle> estyles = new StyleCounter<FontNodeStyle>();
             for (int i = first; i <= last; i++)
             {
@@ -180,6 +181,8 @@ public class FindEditorsOperator extends BaseOperator
                 if (a.hasTag(tag, support) && (!authorsLinked || AreaUtils.isLink(a)))
                 {
                     estyles.add(new FontNodeStyle(a));
+                    if (multiPerson == -1 && a.getText().contains(" and ")) //multiple persons separated by 'and'
+                        multiPerson = i;
                     final int x = a.getTopology().getPosition().getX1();
                     if (prev != null)
                     {
@@ -200,35 +203,43 @@ public class FindEditorsOperator extends BaseOperator
             FontNodeStyle estyle = estyles.getMostFrequent();
             log.info("Layout: same line {}, next line {}, other {}, minx {}, style {}, linked {}", sameline, nextline, other, minx, estyle, authorsLinked);
             
-            //tag the appropriate names
-            for (int i = first; i <= last; i++)
+            //tag the names according to the layout
+            if (sameline == 0 && nextline == 0 && multiPerson != -1) //probably a single author area
             {
-                Area a = leaves.elementAt(i);
-                boolean found = false;
-                //System.out.println("Test " + a);
-                if (estyle.equals(new FontNodeStyle(a)))
+                Area a = leaves.elementAt(multiPerson);
+                a.addTag(new EswcTag("veditor"), 0.6f);
+            }
+            else
+            {
+                for (int i = first; i <= last; i++)
                 {
-                    if (nextline >= sameline) //probably names on separate lines
+                    Area a = leaves.elementAt(i);
+                    boolean found = false;
+                    //System.out.println("Test " + a);
+                    if (estyle.equals(new FontNodeStyle(a)))
                     {
-                        if (a.getTopology().getPosition().getX1() == minx)
+                        if (nextline >= sameline) //probably names on separate lines
                         {
+                            if (a.getTopology().getPosition().getX1() == minx)
+                            {
+                                a.addTag(new EswcTag("veditor"), 0.7f);
+                                found = true;
+                            }
+                        }
+                        else //multiple names on lines
+                        {
+                            //TODO some conditions?
                             a.addTag(new EswcTag("veditor"), 0.7f);
                             found = true;
                         }
                     }
-                    else //multiple names on lines
+                    if (found)
                     {
-                        //TODO some conditions?
-                        a.addTag(new EswcTag("veditor"), 0.7f);
-                        found = true;
+                        if (resultBounds == null)
+                            resultBounds = new Rectangular(a.getBounds());
+                        else
+                            resultBounds.expandToEnclose(a.getBounds());
                     }
-                }
-                if (found)
-                {
-                    if (resultBounds == null)
-                        resultBounds = new Rectangular(a.getBounds());
-                    else
-                        resultBounds.expandToEnclose(a.getBounds());
                 }
             }
             
