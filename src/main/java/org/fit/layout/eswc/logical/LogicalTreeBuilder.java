@@ -34,8 +34,8 @@ import org.slf4j.LoggerFactory;
 //- lepsi regularni vyraz na zkratky -- vol-859
 //- vol-895 chybi keynotes na konci
 //- zkusit i indent pro hledani sekci -- vol-250
-//- vol-53 zmatek v editorech, chybi id u paperu
-//- ALT atributy u obrazku -- vol-53
+//-+ vol-53 zmatek v editorech, chybi id u paperu
+//+ ALT atributy u obrazku -- vol-53
 //- multi-workshop volumes
 //- vol-225 Georgia, affiliations
 
@@ -49,6 +49,8 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
     private static Logger log = LoggerFactory.getLogger(LogicalTreeBuilder.class);
     
     private static final float ms = 0.5f;
+    
+    private static int paperIdCnt = 0; 
     
     private static Tag tagRoot = new EswcTag("root");
     private static Tag tagVTitle = new EswcTag("vtitle");
@@ -128,6 +130,7 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
         paperStart = -1;
         paperEnd = -1;
         shortname = null;
+        paperIdCnt = 0;
     }
     
     @Override
@@ -612,8 +615,18 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
             String name = file.getName();
             if (name.toLowerCase().endsWith(".pdf"))
                 name = name.substring(0, name.length() - 4);
-            //System.out.println("Found HREF " + name);
-            return name;
+            else if (name.toLowerCase().endsWith(".ps"))
+                name = name.substring(0, name.length() - 3);
+            else if (name.toLowerCase().endsWith(".html"))
+                name = name.substring(0, name.length() - 5);
+            
+            if (!name.isEmpty())
+                return name;
+            else
+            {
+                paperIdCnt++;
+                return "paper" + paperIdCnt;
+            }
         }
         else
             return null;
