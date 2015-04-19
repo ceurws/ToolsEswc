@@ -59,9 +59,11 @@ public class AreaUtils
      */
     public static boolean isOnSameLine(Area a1, Area a2)
     {
-        final Rectangular gp1 = a1.getTopology().getPosition();
-        final Rectangular gp2 = a2.getTopology().getPosition();
-        return (gp1.getY1() == gp2.getY1() && gp1.getY2() == gp2.getY2()); 
+        final int THRESHOLD = 1;
+        final Rectangular gp1 = a1.getBounds();
+        final Rectangular gp2 = a2.getBounds();
+        return (Math.abs(gp1.getY1() - gp2.getY1()) <= THRESHOLD 
+                && Math.abs(gp1.getY2() - gp2.getY2()) <= THRESHOLD); 
     }
     
     public static boolean isOnSameLineRoughly(Area a1, Area a2)
