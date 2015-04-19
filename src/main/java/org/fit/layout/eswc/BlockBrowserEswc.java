@@ -73,18 +73,20 @@ public class BlockBrowserEswc extends BlockBrowser
                     browser.initPlugins();
                     main.setVisible(true);
                     
-                    //String localpath = "file://" + System.getProperty("user.home");
-                    //localpath += "/git/TestingLayout";
-            
+                    String localpath = "file://" + System.getProperty("user.home") + "/git/ToolsEswc/test/ceur/volumes/";
+                    String suffix = ".html";
+                    //String localpath = "http://ceur-ws.org/";
+                    //String suffix = "/";
+
+                    URL url = new URL(localpath + "Vol-225" + suffix);
                     
                     /* CEUR */
-                    //URL url = new URL(localpath + "/test/ceur/volumes/Vol-1317.html");
                     //URL url = new URL("http://ceur-ws.org/Vol-1333/");
                     //URL url = new URL("http://ceur-ws.org/Vol-1317/");
                     //URL url = new URL("http://ceur-ws.org/Vol-585/");
                     //URL url = new URL("http://ceur-ws.org/Vol-540/");
                     //URL url = new URL("http://ceur-ws.org/Vol-250/");
-                    URL url = new URL("http://ceur-ws.org/Vol-225/");
+                    //URL url = new URL("http://ceur-ws.org/Vol-225/");
                     //URL url = new URL("http://ceur-ws.org/Vol-164/"); //(tocna)
                     //URL url = new URL("http://ceur-ws.org/Vol-104/");
                     //URL url = new URL("http://ceur-ws.org/Vol-100/");
@@ -92,9 +94,6 @@ public class BlockBrowserEswc extends BlockBrowser
                     //URL url = new URL("http://ceur-ws.org/Vol-15/"); //TODO total chaos
                     //URL url = new URL("http://ceur-ws.org/Vol-5/");
                     //URL url = new URL("http://ceur-ws.org/Vol-1/");
-                    //URL url = new URL("");
-                    //URL url = new URL("");
-                    //URL url = new URL("");
                         
                     browser.setLocation(url.toString());
                         
