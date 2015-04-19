@@ -33,7 +33,7 @@ import org.slf4j.LoggerFactory;
 //- napojeni editoru muze byt i (1) -- vol-862
 //- lepsi regularni vyraz na zkratky -- vol-859
 //- vol-895 chybi keynotes na konci
-//- zkusit i indent pro hledani sekci -- vol-250
+//+ zkusit i indent pro hledani sekci -- vol-250
 //+ vol-53 zmatek v editorech, chybi id u paperu
 //+ ALT atributy u obrazku -- vol-53
 //- multi-workshop volumes
@@ -459,6 +459,8 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
         Area curPages = null;
         Area curSection = null;
         
+        int paperI = -1;
+        
         for (int i = paperStart; i <= paperEnd; i++)
         {
             Area a = leaves.elementAt(i);
@@ -467,18 +469,23 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
                 if (curTitle == null && a.hasTag(tagTitle, ms))
                 {
                     curTitle = a;
-                    curSection = findSection(i);
+                    if (paperI == -1) paperI = i;
                 }
                 else if (curAuthors == null && a.hasTag(tagAuthor, ms))
+                {
                     curAuthors = a;
+                    if (paperI == -1) paperI = i;
+                }
                 else if (curPages == null && a.hasTag(tagPages, ms))
                     curPages = a;
                 else //some duplicate
                 {
+                    curSection = findSection(paperI);
                     savePaper(curTitle, curAuthors, curPages, curSection);
                     curTitle = null;
                     curAuthors = null;
                     curPages = null;
+                    paperI = -1;
                     i--; //try the same area again
                 }
             }
@@ -488,11 +495,12 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
     
     private Area findSection(int start)
     {
-        float fsize = leaves.elementAt(start).getFontSize();
+        final float fsize = leaves.elementAt(start).getFontSize();
+        final int bx = leaves.elementAt(start).getBounds().getX1();
         for (int i = start - 1; i > editorEnd; i--)
         {
             Area a = leaves.elementAt(i);
-            if (a.getFontSize() > fsize)
+            if (a.getFontSize() > fsize || a.getBounds().getX1() < bx - 10)
             {
                 if (a.getText().equalsIgnoreCase("Table of Contents"))
                     return null;
