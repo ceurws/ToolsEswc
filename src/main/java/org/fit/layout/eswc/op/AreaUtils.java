@@ -134,7 +134,6 @@ public class AreaUtils
         while (matcher.find())
         {
             final String sname = matcher.group(0);
-            System.out.println("check:" + sname);
             if (sname.length() >= 2 && sname.length() <= 10 && !blackShort.contains(sname))
                 ret.add(sname);
         }

@@ -216,7 +216,7 @@ public class FindEswcTagsOperator extends BaseOperator
             {
                 editedArea = root;
             }
-            if (tocArea == null && root.getText().equalsIgnoreCase("Table of Contents"))
+            if (tocArea == null && root.getText().toLowerCase().startsWith("table of contents"))
             {
                 tocArea = root;
             }
