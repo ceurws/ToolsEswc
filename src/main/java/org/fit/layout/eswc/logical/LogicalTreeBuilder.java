@@ -32,7 +32,7 @@ import org.slf4j.LoggerFactory;
 //  nebo 'located at' -- vol-540
 //- napojeni editoru muze byt i (1) -- vol-862
 //- lepsi regularni vyraz na zkratky -- vol-859
-//- vol-895 chybi keynotes na konci
+//- vol-859 chybi keynotes na konci
 //+ zkusit i indent pro hledani sekci -- vol-250
 //+ vol-53 zmatek v editorech, chybi id u paperu
 //+ ALT atributy u obrazku -- vol-53
@@ -636,12 +636,21 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
                 return name;
             else
             {
-                paperIdCnt++;
-                return "paper" + paperIdCnt;
+                log.warn("Empty paper id for title " + title);
+                return generatePaperId();
             }
         }
         else
-            return null;
+        {
+            log.warn("Missing paper id (no id nor href) for title " + title);
+            return generatePaperId();
+        }
+    }
+    
+    private String generatePaperId()
+    {
+        paperIdCnt++;
+        return "paperX" + paperIdCnt;
     }
     
 }
