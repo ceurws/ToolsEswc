@@ -31,8 +31,8 @@ import org.slf4j.LoggerFactory;
 //- colocated may be also 'in conjunction with' -- vol-862
 //  nebo 'located at' -- vol-540
 //- napojeni editoru muze byt i (1) -- vol-862
-//- lepsi regularni vyraz na zkratky -- vol-859
-//- vol-859 chybi keynotes na konci
+//+ lepsi regularni vyraz na zkratky -- vol-859
+//+ vol-859 chybi keynotes na konci
 //+ zkusit i indent pro hledani sekci -- vol-250
 //+ vol-53 zmatek v editorech, chybi id u paperu
 //+ ALT atributy u obrazku -- vol-53

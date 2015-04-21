@@ -22,6 +22,7 @@ import org.fit.layout.model.Rectangular;
  */
 public class AreaUtils
 {
+    private static Pattern shortTitlePattern = Pattern.compile("[A-Z][A-Za-z0-9]*[A-Z][A-Za-z]*");
     public static Set<String> blackShort;
     
     static {
@@ -129,12 +130,12 @@ public class AreaUtils
     public static Vector<String> findShortTitles(String text)
     {
         Vector<String> ret = new Vector<String>();
-        Pattern pattern = Pattern.compile("[A-Z][A-Za-z0-9]*[A-Z]");
-        Matcher matcher = pattern.matcher(text);
+        Matcher matcher = shortTitlePattern.matcher(text);
         while (matcher.find())
         {
             final String sname = matcher.group(0);
-            if (sname.length() >= 2 && sname.length() <= 6 && !blackShort.contains(sname))
+            System.out.println("check:" + sname);
+            if (sname.length() >= 2 && sname.length() <= 10 && !blackShort.contains(sname))
                 ret.add(sname);
         }
         return ret;
