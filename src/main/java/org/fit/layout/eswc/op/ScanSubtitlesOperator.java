@@ -117,20 +117,25 @@ public class ScanSubtitlesOperator extends BaseOperator
         }
         
         //join the subtitle into a single area
-        resultBounds = null;
-        for (int i = 0; i < last; i++)
+        if (last > 0)
         {
-            final Area a = leaves.elementAt(i);
-            if (resultBounds == null)
-                resultBounds = new Rectangular(a.getBounds());
+            resultBounds = null;
+            for (int i = 0; i < last; i++)
+            {
+                final Area a = leaves.elementAt(i);
+                if (resultBounds == null)
+                    resultBounds = new Rectangular(a.getBounds());
+                else
+                    resultBounds.expandToEnclose(a.getBounds());
+            }
+            Area sub = AreaUtils.createSuperAreaFromVerticalRegion(root, resultBounds);
+            if (sub != null)
+                sub.addTag(new EswcTag("subtitle"), 1.0f);
             else
-                resultBounds.expandToEnclose(a.getBounds());
+                leaves.elementAt(0).addTag(new EswcTag("subtitle"), 1.0f);
         }
-        Area sub = AreaUtils.createSuperAreaFromVerticalRegion(root, resultBounds);
-        if (sub != null)
-            sub.addTag(new EswcTag("subtitle"), 1.0f);
-        else if (last > 0)
-            leaves.elementAt(0).addTag(new EswcTag("subtitle"), 1.0f);
+        else
+            log.warn("No content suitable for subtitle");
     }
     
     //==============================================================================

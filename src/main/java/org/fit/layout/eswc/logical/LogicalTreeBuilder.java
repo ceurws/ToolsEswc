@@ -29,9 +29,9 @@ import org.slf4j.LoggerFactory;
 
 //TODO:
 //- strip (ENDING) an trailing ., in editor affiliations (and conf titles?)
-//- colocated may be also 'in conjunction with' -- vol-862
+//+ colocated may be also 'in conjunction with' -- vol-862
 //  nebo 'located at' -- vol-540
-//- napojeni editoru muze byt i (1) -- vol-862
+//+ napojeni editoru muze byt i (1) -- vol-862
 //+ lepsi regularni vyraz na zkratky -- vol-859
 //+ vol-859 chybi keynotes na konci
 //+ zkusit i indent pro hledani sekci -- vol-250
@@ -131,6 +131,7 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
         paperStart = -1;
         paperEnd = -1;
         shortname = null;
+        subtitle = null;
         paperIdCnt = 0;
     }
     
@@ -160,14 +161,15 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
 
     private void findLeaves(Area root, Vector<Area> dest)
     {
+        if (root.hasTag(tagSubtitle) && subtitle == null)
+            subtitle = root;
+
         if (root.isLeaf())
         {
             dest.add(root);
         }
         else
         {
-            if (root.hasTag(tagSubtitle) && subtitle == null)
-                subtitle = root;
             for (int i = 0; i < root.getChildCount(); i++)
                 findLeaves(root.getChildArea(i), dest);
         }
@@ -231,11 +233,13 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
         //analyze the subtitle
         if (subtitle != null)
         {
-            SubtitleParser sp = new SubtitleParser(subtitle.getText(), titleShorts);
+            SubtitleParser sp = new SubtitleParser(subtitle.getText(" "), titleShorts);
+            System.out.println("WS=" + sp.getWorkshops());
+            System.out.println("COLOC=" + sp.getColocEvent());
             //TODO insert vshort and vcolloc tags
         }
         else
-            log.error("No subtitle!");
+            log.error("No subtitle!"); //TODO use titleShorts for subtitles
     }
     
     private void addColoc()

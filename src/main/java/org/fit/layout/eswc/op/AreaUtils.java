@@ -23,7 +23,7 @@ import org.fit.segm.grouping.AreaImpl;
  */
 public class AreaUtils
 {
-    public static Pattern shortTitlePattern = Pattern.compile("[A-Z][A-Za-z0-9]*[A-Z][A-Za-z]*");
+    public static Pattern shortTitlePattern = Pattern.compile("[A-Z][A-Za-z0-9\\-]*[A-Z][A-Za-z]*");
     public static Set<String> blackShort;
     
     static {

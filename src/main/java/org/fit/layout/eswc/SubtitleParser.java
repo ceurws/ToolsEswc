@@ -7,12 +7,16 @@ package org.fit.layout.eswc;
 
 import java.util.Collections;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Map;
+import java.util.Set;
 import java.util.Vector;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import org.fit.layout.eswc.op.AreaUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 
 /**
@@ -21,22 +25,36 @@ import org.fit.layout.eswc.op.AreaUtils;
  */
 public class SubtitleParser
 {
+    private static Logger log = LoggerFactory.getLogger(SubtitleParser.class);
+
     public enum TType { ORD, WORKSHOP, SHORT, COLOC };
     private String src;
     private Vector<String> titleShorts;
     private Vector<Token> tokens;
-    private Vector<Event> ws;
+    private Set<Event> ws;
     private Event colocEvent;
     
     public SubtitleParser(String inputText, Vector<String> titleShorts)
     {
         src = inputText;
         this.titleShorts = titleShorts;
+        ws = new HashSet<Event>();
         tokenize();
+        scanTokens();
         for (Token t: tokens)
             System.out.println(t);
     }
     
+    public Set<Event> getWorkshops()
+    {
+        return ws;
+    }
+
+    public Event getColocEvent()
+    {
+        return colocEvent;
+    }
+
     private void tokenize()
     {
         tokens = new Vector<Token>();
@@ -50,10 +68,10 @@ public class SubtitleParser
         }
         
         //st nd rd th
-        matcher = Pattern.compile("[1-9][0-9]*[snrt][tdh]\\s").matcher(src.toLowerCase());
+        matcher = Pattern.compile("[1-9][0-9]*[snrt][tdh]").matcher(src.toLowerCase());
         while (matcher.find())
         {
-            final String order = matcher.group(0);
+            final String order = matcher.group(0).trim();
             tokens.add(new Token(matcher.start(), TType.ORD, order));
         }
         
@@ -89,24 +107,42 @@ public class SubtitleParser
                 coloc = t;
         }
         
+        scanTokensWithColoc(counts, coloc);
+    }
+    
+    private void scanTokensWithColoc(Map<String, Integer> counts, Token coloc)
+    {
+        Set<String> titlesRemain = new HashSet<String>(titleShorts);
+        int titlecnt = 0;
         Event current = new Event();
         boolean acoloc = false; //after colocation
         boolean wssure = false; //preceeded by 'workhsop'
         for (Token t : tokens)
         {
+            //previous event finished, save it
             if (t.type == TType.COLOC
-                    || (t.type == TType.ORD && current.order != -1))
+                    || (t.type == TType.ORD && current.order != -1) //other event with order
+                    || (t.type == TType.WORKSHOP && current.sname != null) //other workshop starts
+                    || (t.type == TType.SHORT && current.sname != null && current.order > 0)) //other workshop name 
             {
+                if (current.sname == null) //no short name found but we try to use the next one from the title
+                {
+                    if (!titleShorts.isEmpty())
+                        current.sname = titleShorts.elementAt(titlecnt++);
+                }
+                
+                boolean next = true;
                 if (current.sname != null)
                 {
-                    if (!acoloc && 
-                            (wssure || titleShorts.contains(current.sname) || counts.get(current) > 1))
-                    {
-                        
-                    }
+                    next = saveEvent(current, coloc != null, acoloc, wssure);
+                    titlesRemain.remove(current.sname);
                 }
-                current = new Event();
-                wssure = false;
+                
+                if (next)
+                {
+                    current = new Event();
+                    wssure = false;
+                }
             }
             
             if (t.type == TType.ORD)
@@ -117,15 +153,64 @@ public class SubtitleParser
             else if (t.type == TType.SHORT)
             {
                 current.sname = t.value;
+                if (current.order == -1)
+                    current.order = 0; //no order found; use 0 for unknown
             }
             else if (t.type == TType.WORKSHOP)
                 wssure = true;
             else if (t.type == TType.COLOC)
                 acoloc = true;
-            
         }
+        if (current.sname != null)
+            saveEvent(current, coloc != null, acoloc, wssure);
+        if (!titlesRemain.isEmpty())
+            log.warn("Remaining short names from title: " + titlesRemain);
+
     }
-    
+
+    private boolean saveEvent(Event current, boolean useColoc, boolean acoloc, boolean wssure)
+    {
+        if (useColoc)
+        {
+            if (!acoloc && (wssure || titleShorts.contains(current.sname)))
+            {
+                if (titleShorts.contains(current.sname)) //skip the ones not found in the title
+                {
+                    ws.add(current);
+                    return true;
+                }
+            }
+            else if (acoloc)
+            {
+                if (colocEvent == null)
+                {
+                    colocEvent = current;
+                    return true;
+                }
+            }
+        }
+        else
+        {
+            if (wssure || titleShorts.contains(current.sname))
+            {
+                if (titleShorts.contains(current.sname)) //skip the ones not found in the title
+                {
+                    ws.add(current);
+                    return true;
+                }
+            }
+            else
+            {
+                if (colocEvent == null)
+                {
+                    colocEvent = current;
+                    return true;
+                }
+            }
+        }
+        return false;
+    }
+
     class Token implements Comparable<Token>
     {
         public TType type;
@@ -169,6 +254,40 @@ public class SubtitleParser
         {
             return "Event [order=" + order + ", sname=" + sname + "]";
         }
+
+        @Override
+        public int hashCode()
+        {
+            final int prime = 31;
+            int result = 1;
+            result = prime * result + getOuterType().hashCode();
+            result = prime * result + order;
+            result = prime * result + ((sname == null) ? 0 : sname.hashCode());
+            return result;
+        }
+
+        @Override
+        public boolean equals(Object obj)
+        {
+            if (this == obj) return true;
+            if (obj == null) return false;
+            if (getClass() != obj.getClass()) return false;
+            Event other = (Event) obj;
+            if (!getOuterType().equals(other.getOuterType())) return false;
+            if (order != other.order) return false;
+            if (sname == null)
+            {
+                if (other.sname != null) return false;
+            }
+            else if (!sname.equals(other.sname)) return false;
+            return true;
+        }
+
+        private SubtitleParser getOuterType()
+        {
+            return SubtitleParser.this;
+        }
+        
     }
     
 }
