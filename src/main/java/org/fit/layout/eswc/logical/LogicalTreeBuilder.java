@@ -14,6 +14,7 @@ import java.util.Vector;
 import org.fit.layout.classify.taggers.DateTagger;
 import org.fit.layout.eswc.Countries;
 import org.fit.layout.eswc.CountriesTagger;
+import org.fit.layout.eswc.SubtitleParser;
 import org.fit.layout.eswc.op.AreaUtils;
 import org.fit.layout.eswc.op.EswcTag;
 import org.fit.layout.impl.BaseLogicalTreeProvider;
@@ -55,7 +56,7 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
     private static Tag tagRoot = new EswcTag("root");
     private static Tag tagVTitle = new EswcTag("vtitle");
     private static Tag tagVShort = new EswcTag("vshort");
-    private static Tag tagColoc = new EswcTag("colocated");
+    private static Tag tagSubtitle = new EswcTag("subtitle");
     private static Tag tagVCountry = new EswcTag("vcountry");
     private static Tag tagVDate = new EswcTag("vdate");
     private static Tag tagStartDate = new EswcTag("startdate");
@@ -76,9 +77,10 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
     private Vector<Area> leaves;
     private String shortname;
     
+    private Area subtitle;
+    
     private int iTitle = -1;
     private int iShort = -1;
-    private int iColoc = -1;
     private int iDates = -1;
     private int iCountry = -1;
     private int editorStart = -1;
@@ -122,7 +124,6 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
     {
         iTitle = -1;
         iShort = -1;
-        iColoc = -1;
         iDates = -1;
         iCountry = -1;
         editorStart = -1;
@@ -148,8 +149,7 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
         scanLeaves();
         
         addVTitle();
-        addVShort();
-        addColoc();
+        analyzeShortNames();
         addVDates();
         addVCountry();
         addEditors();
@@ -166,6 +166,8 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
         }
         else
         {
+            if (root.hasTag(tagSubtitle) && subtitle == null)
+                subtitle = root;
             for (int i = 0; i < root.getChildCount(); i++)
                 findLeaves(root.getChildArea(i), dest);
         }
@@ -180,8 +182,6 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
                 iTitle = i;
             if (iShort == -1 && a.hasTag(tagVShort, ms))
                 iShort = i;
-            if (iColoc == -1 && a.hasTag(tagColoc, ms))
-                iColoc = i;
             if (iDates == -1 && a.hasTag(tagVDate, ms))
                 iDates = i;
             if (iCountry == -1 && a.hasTag(tagVCountry, ms))
@@ -216,23 +216,31 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
         rootArea.appendChild(new EswcLogicalArea(root, text, tagVTitle));
     }
 
-    private void addVShort()
+    private void analyzeShortNames()
     {
+        //gather the abbreviations around the title
+        Vector<String> titleShorts = null;
         if (iShort != -1)
         {
             Area root = leaves.elementAt(iShort);
-            Vector<String> snames = AreaUtils.findShortTitles(root);
-            if (!snames.isEmpty())
-            {
-                shortname = snames.firstElement();
-                rootArea.appendChild(new EswcLogicalArea(root, shortname, tagVShort));
-            }
+            titleShorts = AreaUtils.findShortTitles(root);
         }
+        else
+            titleShorts = new Vector<String>(); //no short names around the title?
+        
+        //analyze the subtitle
+        if (subtitle != null)
+        {
+            SubtitleParser sp = new SubtitleParser(subtitle.getText(), titleShorts);
+            //TODO insert vshort and vcolloc tags
+        }
+        else
+            log.error("No subtitle!");
     }
     
     private void addColoc()
     {
-        int start = (iColoc == -1) ? iTitle + 1 : iColoc;
+        int start = 0;// (iSubtitle == -1) ? iTitle + 1 : iSubtitle;
         int end = editorStart;
         if (iCountry != -1)
             end = iCountry;
@@ -246,7 +254,7 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
             {
                 if (shortname == null || !shortname.equals(sn))
                 {
-                    rootArea.appendChild(new EswcLogicalArea(a, sn, tagColoc));
+                    rootArea.appendChild(new EswcLogicalArea(a, sn, tagSubtitle));
                     return;
                 }
             }

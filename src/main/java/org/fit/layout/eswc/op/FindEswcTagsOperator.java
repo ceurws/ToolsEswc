@@ -170,7 +170,7 @@ public class FindEswcTagsOperator extends BaseOperator
         log.info("SUBTITLES: {}", bsubtitles);
         
         //create a super area for all the papers
-        Area apapers = createSuperAreaFromVerticalRegion(root, bpapers);
+        Area apapers = AreaUtils.createSuperAreaFromVerticalRegion(root, bpapers);
         if (apapers != null)
         {
             clearTags(apapers, "ESWC");
@@ -256,50 +256,6 @@ public class FindEswcTagsOperator extends BaseOperator
         }
         for (int i = 0; i < root.getChildCount(); i++)
             clearTags(root.getChildArea(i), type);
-    }
-    
-    private Area createSuperAreaFromVerticalRegion(Area root, Rectangular region)
-    {
-        //find the first and last area that belong to the region
-        int first = -1;
-        int last = -1;
-        Rectangular bounds = null;
-        Vector<Area> selected = new Vector<Area>();
-        for (int i = 0; i < root.getChildCount(); i++)
-        {
-            final Rectangular pos = root.getChildArea(i).getBounds();
-            if (region.enclosesY(pos))
-            {
-                //System.out.println("BELONGS " + root.getChildArea(i));
-                if (first == -1)
-                    first = i;
-                last = i;
-                selected.add(root.getChildArea(i));
-                if (bounds == null)
-                    bounds = new Rectangular(pos);
-                else
-                    bounds.expandToEnclose(pos);
-            }
-            else
-            {
-                //System.out.println("NOT BELONGS " + root.getChildArea(i));
-                if (first != -1)
-                    break; //region finished
-            }
-        }
-        //System.out.println("first=" + first + " last=" + last);
-        if (last > first)
-        {
-            AreaImpl ret = new AreaImpl(bounds);
-            root.insertChild(ret, first);
-            for (Area a : selected)
-                ret.appendChild(a);
-            ((AreaImpl) root).createGrid();
-            ret.createGrid();
-            return ret;
-        }
-        else
-            return null;
     }
     
     private void findPages(Area root, Rectangular region)
