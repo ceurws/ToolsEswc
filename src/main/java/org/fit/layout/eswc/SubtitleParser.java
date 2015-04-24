@@ -95,7 +95,7 @@ public class SubtitleParser
         Map<String, Integer> counts = new HashMap<String, Integer>();
         for (Token t : tokens)
         {
-            if (t.type == TType.SHORT)
+            if (t.type == TType.SHORT && coloc == null)
             {
                 Integer cnt = counts.get(t.value); 
                 if (cnt == null)
@@ -107,108 +107,52 @@ public class SubtitleParser
                 coloc = t;
         }
         
-        scanTokensWithColoc(counts, coloc);
+        Set<String> titles = new HashSet<String>(titleShorts);
+        Set<String> supported = intersection(titles, counts.keySet());
+        
+        if (supported.isEmpty())
+            scanAbbreviationsBlind(coloc);
+        else
+            scanAbbreviations(supported, coloc);
     }
     
-    private void scanTokensWithColoc(Map<String, Integer> counts, Token coloc)
+    private void scanAbbreviations(Set<String> supported, Token coloc)
     {
-        Set<String> titlesRemain = new HashSet<String>(titleShorts);
-        int titlecnt = 0;
-        Event current = new Event();
-        boolean acoloc = false; //after colocation
-        boolean wssure = false; //preceeded by 'workhsop'
-        for (Token t : tokens)
+        int max = (coloc == null) ? tokens.size() : tokens.indexOf(coloc);
+        //create ordered list of tokens
+        Vector<Token> stokens = new Vector<Token>();
+        for (String sname : supported)
         {
-            //previous event finished, save it
-            if (t.type == TType.COLOC
-                    || (t.type == TType.ORD && current.order != -1) //other event with order
-                    || (t.type == TType.WORKSHOP && current.sname != null) //other workshop starts
-                    || (t.type == TType.SHORT && current.sname != null && current.order > 0)) //other workshop name 
-            {
-                if (current.sname == null) //no short name found but we try to use the next one from the title
-                {
-                    if (!titleShorts.isEmpty())
-                        current.sname = titleShorts.elementAt(titlecnt++);
-                }
-                
-                boolean next = true;
-                if (current.sname != null)
-                {
-                    next = saveEvent(current, coloc != null, acoloc, wssure);
-                    titlesRemain.remove(current.sname);
-                }
-                
-                if (next)
-                {
-                    current = new Event();
-                    wssure = false;
-                }
-            }
-            
-            if (t.type == TType.ORD)
-            {
-                current.order = Integer.parseInt(t.value.substring(0, t.value.length() - 2));
-                wssure = false;
-            }
-            else if (t.type == TType.SHORT)
-            {
-                current.sname = t.value;
-                if (current.order == -1)
-                    current.order = 0; //no order found; use 0 for unknown
-            }
-            else if (t.type == TType.WORKSHOP)
-                wssure = true;
-            else if (t.type == TType.COLOC)
-                acoloc = true;
+            int ti = findToken(TType.SHORT, sname, max);
+            stokens.add(tokens.elementAt(ti));
         }
-        if (current.sname != null)
-            saveEvent(current, coloc != null, acoloc, wssure);
-        if (!titlesRemain.isEmpty())
-            log.warn("Remaining short names from title: " + titlesRemain);
-
+        Collections.sort(stokens);
+        //try to find the numbers
+        
     }
 
-    private boolean saveEvent(Event current, boolean useColoc, boolean acoloc, boolean wssure)
+    private void scanAbbreviationsBlind(Token coloc)
     {
-        if (useColoc)
+        
+    }
+    
+    private int findToken(TType type, String value, int max)
+    {
+        for (int i = 0; i < max; i++)
         {
-            if (!acoloc && (wssure || titleShorts.contains(current.sname)))
-            {
-                if (titleShorts.contains(current.sname)) //skip the ones not found in the title
-                {
-                    ws.add(current);
-                    return true;
-                }
-            }
-            else if (acoloc)
-            {
-                if (colocEvent == null)
-                {
-                    colocEvent = current;
-                    return true;
-                }
-            }
+            final Token t = tokens.elementAt(i);
+            if (t.type == type && value.equals(t.value))
+                return i;
         }
-        else
-        {
-            if (wssure || titleShorts.contains(current.sname))
-            {
-                if (titleShorts.contains(current.sname)) //skip the ones not found in the title
-                {
-                    ws.add(current);
-                    return true;
-                }
-            }
-            else
-            {
-                if (colocEvent == null)
-                {
-                    colocEvent = current;
-                    return true;
-                }
-            }
-        }
-        return false;
+        return -1;
+    }
+    
+    public Set<String> intersection(Set<String> set1, Set<String> set2) 
+    {
+        boolean set1IsLarger = set1.size() > set2.size();
+        Set<String> cloneSet = new HashSet<String>(set1IsLarger ? set2 : set1);
+        cloneSet.retainAll(set1IsLarger ? set1 : set2);
+        return cloneSet;
     }
 
     class Token implements Comparable<Token>
