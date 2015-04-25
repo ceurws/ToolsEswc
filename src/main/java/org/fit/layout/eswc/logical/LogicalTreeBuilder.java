@@ -232,15 +232,18 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
             titleShorts = new Vector<String>(); //no short names around the title?
         
         //analyze the subtitle
+        SubtitleParser sp;
         if (subtitle != null)
         {
-            SubtitleParser sp = new SubtitleParser(subtitle.getText(" "), titleShorts);
-            System.out.println("WS=" + sp.getWorkshops());
-            System.out.println("COLOC=" + sp.getColocEvent());
-            //TODO insert vshort and vcolloc tags
+            sp = new SubtitleParser(subtitle.getText(" "), titleShorts);
         }
         else
-            log.error("No subtitle!"); //TODO use titleShorts for subtitles
+        {
+            log.warn("No subtitle!");
+            sp = new SubtitleParser("", titleShorts);
+        }
+        System.out.println("WS=" + sp.getWorkshops());
+        System.out.println("COLOC=" + sp.getColocEvent());
     }
     
     private void addColoc()

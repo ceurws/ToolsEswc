@@ -5,6 +5,7 @@
  */
 package org.fit.layout.eswc;
 
+import java.util.Collection;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.HashSet;
@@ -143,13 +144,13 @@ public class SubtitleParser
         {
             //no abbreviations in title or significantly more in subtitles -- scan subtitle
             if (titles.size() == 0 || (titles.size() <= 1 && subtitles.size() > 2))
-                scanAbbreviations(subtitles, coloc);
+                scanAbbreviations(subtitles, coloc, false);
             else
-                scanAbbreviations(titles, coloc);
+                scanAbbreviations(titles, coloc, true);
         }
         else //some intersection exists - use the intersection short names
         {
-            scanAbbreviations(supported, coloc);
+            scanAbbreviations(supported, coloc, false);
         }
         
         //no collocation, is some abbreviation remaining?
@@ -158,7 +159,7 @@ public class SubtitleParser
             Set<String> remain = new HashSet<String>(counts.keySet());
             for (Event e : ws)
                 remain.remove(e.sname);
-            Vector<Integer> indices = findAbbrevIndices(remain, tokens.size());
+            Vector<Integer> indices = findAbbrevIndices(remain, tokens.size(), false);
             if (!indices.isEmpty())
             {
                 Token t = tokens.elementAt(indices.firstElement());
@@ -175,25 +176,34 @@ public class SubtitleParser
         }
     }
     
-    private void scanAbbreviations(Set<String> supported, Token coloc)
+    private void scanAbbreviations(Set<String> supported, Token coloc, boolean allowNotFound)
     {
         log.info("Subtitle scan for {}", supported);
         int max = (coloc == null) ? tokens.size() : tokens.indexOf(coloc);
         //create ordered list of tokens
-        Vector<Integer> indices = findAbbrevIndices(supported, max);
+        Vector<String> names = new Vector<String>(supported);
+        Vector<Integer> indices = findAbbrevIndices(names, max, allowNotFound);
         //try to find the numbers
-        for (int idx : indices)
+        for (int ii = 0; ii < indices.size(); ii++)
         {
-            Token sn = tokens.elementAt(idx);
-            sn.used = true;
-            int ord = -1;
-            Token ordt = findOrdBeforeIndex(idx);
-            if (ordt != null)
+            int idx = indices.elementAt(ii);
+            if (idx == -1) //not found in the subtitle (probably only in title)
             {
-                ordt.used = true;
-                ord = Integer.parseInt(ordt.value.substring(0, ordt.value.length() - 2));
+                ws.add(new Event(-1, names.elementAt(ii)));
             }
-            ws.add(new Event(ord, sn.value));
+            else //token found in subtitle
+            {
+                Token sn = tokens.elementAt(idx);
+                sn.used = true;
+                int ord = -1;
+                Token ordt = findOrdBeforeIndex(idx);
+                if (ordt != null)
+                {
+                    ordt.used = true;
+                    ord = Integer.parseInt(ordt.value.substring(0, ordt.value.length() - 2));
+                }
+                ws.add(new Event(ord, sn.value));
+            }
         }
     }
 
@@ -221,13 +231,13 @@ public class SubtitleParser
         return null;
     }
     
-    private Vector<Integer> findAbbrevIndices(Set<String> supported, int max)
+    private Vector<Integer> findAbbrevIndices(Collection<String> supported, int max, boolean allowNotFound)
     {
         Vector<Integer> indices = new Vector<Integer>();
         for (String sname : supported)
         {
             int ti = findToken(TType.SHORT, sname, max);
-            if (ti != -1)
+            if (ti != -1 || allowNotFound)
                 indices.add(ti);
             else
                 log.error("{} not found in subtitle, this shouldn't happen", sname);
