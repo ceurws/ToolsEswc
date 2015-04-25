@@ -40,9 +40,9 @@ public class SubtitleParser
         this.titleShorts = titleShorts;
         ws = new HashSet<Event>();
         tokenize();
-        scanTokens();
         for (Token t: tokens)
             System.out.println(t);
+        scanTokens();
     }
     
     public Set<Event> getWorkshops()
@@ -107,35 +107,96 @@ public class SubtitleParser
                 coloc = t;
         }
         
+        //if colocated is found, disambiguate colocation now
+        if (coloc != null)
+        {
+            coloc.used = true;
+            for (int i = tokens.indexOf(coloc); i < tokens.size(); i++)
+            {
+                Token t = tokens.elementAt(i);
+                if (t.type == TType.SHORT)
+                {
+                    t.used = true;
+                    int ord = -1;
+                    Token ordt = findOrdBeforeIndex(i);
+                    if (ordt != null)
+                    {
+                        ordt.used = true;
+                        ord = Integer.parseInt(ordt.value.substring(0, ordt.value.length() - 2));
+                    }
+                    colocEvent = new Event(ord, t.value);
+                    break;
+                }
+            }
+        }
+        
+        //try to find workshops
         Set<String> titles = new HashSet<String>(titleShorts);
-        Set<String> supported = intersection(titles, counts.keySet());
+        if (colocEvent != null)
+            titles.remove(colocEvent.sname);
+        Set<String> subtitles = new HashSet<String>(counts.keySet());
+        if (colocEvent != null)
+            subtitles.remove(colocEvent.sname);
+        Set<String> supported = intersection(titles, subtitles);
         
         if (supported.isEmpty())
-            scanAbbreviationsBlind(coloc);
-        else
+        {
+            //no abbreviations in title or significantly more in subtitles -- scan subtitle
+            if (titles.size() == 0 || (titles.size() <= 1 && subtitles.size() > 2))
+                scanAbbreviations(subtitles, coloc);
+            else
+                scanAbbreviations(titles, coloc);
+        }
+        else //some intersection exists - use the intersection short names
+        {
             scanAbbreviations(supported, coloc);
+        }
+        
+        //no collocation, is some abbreviation remaining?
+        if (coloc == null)
+        {
+            Set<String> remain = new HashSet<String>(counts.keySet());
+            for (Event e : ws)
+                remain.remove(e.sname);
+            Vector<Integer> indices = findAbbrevIndices(remain, tokens.size());
+            if (!indices.isEmpty())
+            {
+                Token t = tokens.elementAt(indices.firstElement());
+                t.used = true;
+                int ord = -1;
+                Token ordt = findOrdBeforeIndex(indices.firstElement());
+                if (ordt != null)
+                {
+                    ordt.used = true;
+                    ord = Integer.parseInt(ordt.value.substring(0, ordt.value.length() - 2));
+                }
+                colocEvent = new Event(ord, t.value);
+            }
+        }
     }
     
     private void scanAbbreviations(Set<String> supported, Token coloc)
     {
+        log.info("Subtitle scan for {}", supported);
         int max = (coloc == null) ? tokens.size() : tokens.indexOf(coloc);
         //create ordered list of tokens
-        Vector<Token> stokens = new Vector<Token>();
-        for (String sname : supported)
-        {
-            int ti = findToken(TType.SHORT, sname, max);
-            stokens.add(tokens.elementAt(ti));
-        }
-        Collections.sort(stokens);
+        Vector<Integer> indices = findAbbrevIndices(supported, max);
         //try to find the numbers
-        
+        for (int idx : indices)
+        {
+            Token sn = tokens.elementAt(idx);
+            sn.used = true;
+            int ord = -1;
+            Token ordt = findOrdBeforeIndex(idx);
+            if (ordt != null)
+            {
+                ordt.used = true;
+                ord = Integer.parseInt(ordt.value.substring(0, ordt.value.length() - 2));
+            }
+            ws.add(new Event(ord, sn.value));
+        }
     }
 
-    private void scanAbbreviationsBlind(Token coloc)
-    {
-        
-    }
-    
     private int findToken(TType type, String value, int max)
     {
         for (int i = 0; i < max; i++)
@@ -147,7 +208,35 @@ public class SubtitleParser
         return -1;
     }
     
-    public Set<String> intersection(Set<String> set1, Set<String> set2) 
+    private Token findOrdBeforeIndex(int index)
+    {
+        for (int i = index - 1; i >= 0; i--)
+        {
+            Token t = tokens.elementAt(i);
+            if (t.used)
+                break;
+            if (t.type == TType.ORD)
+                return t;
+        }
+        return null;
+    }
+    
+    private Vector<Integer> findAbbrevIndices(Set<String> supported, int max)
+    {
+        Vector<Integer> indices = new Vector<Integer>();
+        for (String sname : supported)
+        {
+            int ti = findToken(TType.SHORT, sname, max);
+            if (ti != -1)
+                indices.add(ti);
+            else
+                log.error("{} not found in subtitle, this shouldn't happen", sname);
+        }
+        Collections.sort(indices);
+        return indices;
+    }
+
+    private Set<String> intersection(Set<String> set1, Set<String> set2) 
     {
         boolean set1IsLarger = set1.size() > set2.size();
         Set<String> cloneSet = new HashSet<String>(set1IsLarger ? set2 : set1);
@@ -160,13 +249,14 @@ public class SubtitleParser
         public TType type;
         public int pos;
         public String value;
+        public boolean used;
         
         public Token(int pos, TType type, String value)
         {
-            super();
             this.pos = pos;
             this.type = type;
             this.value = value;
+            this.used = false;
         }
 
         @Override
@@ -193,6 +283,12 @@ public class SubtitleParser
             sname = null;
         }
         
+        public Event(int order, String sname)
+        {
+            this.order = order;
+            this.sname = sname;
+        }
+
         @Override
         public String toString()
         {
