@@ -282,10 +282,10 @@ public class SubtitleParser
         }
     }
     
-    class Event
+    public class Event
     {
-        int order;
-        String sname;
+        public int order;
+        public String sname;
         
         public Event()
         {

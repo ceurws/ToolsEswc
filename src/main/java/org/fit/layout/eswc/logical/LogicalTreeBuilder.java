@@ -57,6 +57,8 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
     private static Tag tagRoot = new EswcTag("root");
     private static Tag tagVTitle = new EswcTag("vtitle");
     private static Tag tagVShort = new EswcTag("vshort");
+    private static Tag tagVOrder = new EswcTag("vorder");
+    private static Tag tagColoc = new EswcTag("colocated");
     private static Tag tagSubtitle = new EswcTag("subtitle");
     private static Tag tagVCountry = new EswcTag("vcountry");
     private static Tag tagVDate = new EswcTag("vdate");
@@ -76,7 +78,6 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
     private EswcLogicalTree tree;
     private LogicalArea rootArea;
     private Vector<Area> leaves;
-    private String shortname;
     
     private Area subtitle;
     
@@ -131,7 +132,6 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
         editorEnd = -1;
         paperStart = -1;
         paperEnd = -1;
-        shortname = null;
         subtitle = null;
         paperIdCnt = 0;
     }
@@ -244,28 +244,17 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
         }
         System.out.println("WS=" + sp.getWorkshops());
         System.out.println("COLOC=" + sp.getColocEvent());
-    }
-    
-    private void addColoc()
-    {
-        int start = 0;// (iSubtitle == -1) ? iTitle + 1 : iSubtitle;
-        int end = editorStart;
-        if (iCountry != -1)
-            end = iCountry;
-        if (iDates != -1 && iDates < end)
-            end = iDates;
-        for (int i = start; i < end; i++)
+        for (SubtitleParser.Event ev : sp.getWorkshops())
         {
-            Area a = leaves.elementAt(i);
-            Vector<String> snames = AreaUtils.findShortTitles(a);
-            for (String sn : snames)
-            {
-                if (shortname == null || !shortname.equals(sn))
-                {
-                    rootArea.appendChild(new EswcLogicalArea(a, sn, tagSubtitle));
-                    return;
-                }
-            }
+            LogicalArea sa = new EswcLogicalArea(subtitle, ev.sname, tagVShort);
+            rootArea.appendChild(sa);
+            if (ev.order > 0)
+                sa.appendChild(new EswcLogicalArea(subtitle, String.valueOf(ev.order), tagVOrder));
+        }
+        if (sp.getColocEvent() != null)
+        {
+            LogicalArea sa = new EswcLogicalArea(subtitle, sp.getColocEvent().sname, tagColoc);
+            rootArea.appendChild(sa);
         }
     }
     
