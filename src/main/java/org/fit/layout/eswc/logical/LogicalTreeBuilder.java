@@ -12,6 +12,7 @@ import java.util.List;
 import java.util.Vector;
 
 import org.fit.layout.classify.taggers.DateTagger;
+import org.fit.layout.classify.taggers.LocationsTagger;
 import org.fit.layout.eswc.Countries;
 import org.fit.layout.eswc.CountriesTagger;
 import org.fit.layout.eswc.SubtitleParser;
@@ -438,25 +439,49 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
         int pos = affil.lastIndexOf(",");
         if (pos > 0)
         {
-            String cname = affil.substring(pos + 1).trim().toLowerCase();
-            String curi = Countries.getCountryUri(cname);
-            if (curi != null)
+            String cstr = affil.substring(pos + 1).trim().toLowerCase();
+            String[] cands = cstr.split("[^A-Za-z0-9\\s]");
+            boolean found = false;
+            for (String cname : cands)
             {
-                ret[0] = affil.substring(0, pos).trim();
-                ret[1] = curi;
+                String curi = Countries.getCountryUri(cname.trim());
+                if (curi != null)
+                {
+                    ret[0] = affil.substring(0, pos).trim();
+                    ret[1] = curi;
+                    found = true;
+                }
             }
-            else
+            
+            if (!found)
             {
                 ret[0] = affil;
                 ret[1] = null;
-                log.warn("No country found in '{}' ({}?)", affil, cname);
+                log.warn("No country found in '{}' ({}?)", affil, cands);
             }
         }
         else
         {
-            ret[0] = affil;
-            ret[1] = null;
-            log.warn("No country position found in '{}'", affil);
+            LocationsTagger ltg = new LocationsTagger(1);
+            Vector<String> cands = ltg.extract(affil);
+            boolean found = false;
+            for (String cname : cands)
+            {
+                String curi = Countries.getCountryUri(cname.trim());
+                if (curi != null)
+                {
+                    ret[0] = affil;
+                    ret[1] = curi;
+                    found = true;
+                }
+            }
+            
+            if (!found)
+            {
+                ret[0] = affil;
+                ret[1] = null;
+                log.warn("No country position found in '{}'", affil);
+            }
         }
         
         return ret;
