@@ -8,7 +8,7 @@
 BEGIN {
 	curvol="none";
 	see=0;
-	OFS="";
+	OFS=",";
 }
 
 tolower($0) ~ /name="?vol-[1-9][0-9]*"/ {
@@ -25,6 +25,6 @@ tolower($0) ~ /href="?#vol-[1-9][0-9]*"/ {
 	if (see) {
 		match($0, /Vol-[1-9][0-9]*/);
 		relvol = substr($0, RSTART, RLENGTH);
-		print "<http://ceur-ws.org/",curvol,"/>", " ceur:related ", "<http://ceur-ws.org/",relvol,"/>";
+		print curvol, relvol;
 	}
 }
