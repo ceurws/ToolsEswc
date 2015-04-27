@@ -76,7 +76,7 @@ public class IndexFile
         String line;
         while ((line = is.readLine()) != null)
         {
-            String s[] = line.split("\\s*,\\s*");
+            String s[] = line.split("\\s*;;\\s*");
             if (s.length == 3)
             {
                 int vol = parseVol(s[0]);
@@ -96,6 +96,8 @@ public class IndexFile
                     System.err.println("Couldn't decode " + s[2] + ": " + e.getMessage());
                 }
             }
+            else
+                System.out.println("Something wrong in titles.csv?");
         }
         is.close();
     }

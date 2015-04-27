@@ -7,7 +7,7 @@
 
 BEGIN {
 	curvol="none";
-	OFS=",";
+	OFS=";;";
 }
 
 tolower($0) ~ /name="?vol-[1-9][0-9]*"/ {

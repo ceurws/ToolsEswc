@@ -10,11 +10,14 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
 import java.util.Vector;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 import org.fit.layout.classify.taggers.DateTagger;
 import org.fit.layout.classify.taggers.LocationsTagger;
 import org.fit.layout.eswc.Countries;
 import org.fit.layout.eswc.CountriesTagger;
+import org.fit.layout.eswc.IndexFile;
 import org.fit.layout.eswc.SubtitleParser;
 import org.fit.layout.eswc.op.AreaUtils;
 import org.fit.layout.eswc.op.EswcTag;
@@ -29,7 +32,9 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 //TODO:
-//- strip (ENDING) an trailing ., in editor affiliations (and conf titles?)
+//- short title parsing vol-981
+//- match order numbers if there are no short titles in subtitle (vol-1317)
+//- strip (ENDING) an trailing ., in editor affiliations
 //+ colocated may be also 'in conjunction with' -- vol-862
 //  nebo 'located at' -- vol-540
 //+ napojeni editoru muze byt i (1) -- vol-862
@@ -56,6 +61,8 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
     
     private static Tag tagRoot = new EswcTag("root");
     private static Tag tagVTitle = new EswcTag("vtitle");
+    private static Tag tagPublished = new EswcTag("published");
+    private static Tag tagRelated = new EswcTag("related");
     private static Tag tagVShort = new EswcTag("vshort");
     private static Tag tagVOrder = new EswcTag("vorder");
     private static Tag tagColoc = new EswcTag("colocated");
@@ -150,7 +157,8 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
         
         scanLeaves();
         
-        addVTitle();
+        //addVTitle();
+        addIndexData();
         analyzeShortNames();
         addVDates();
         addVCountry();
@@ -212,6 +220,7 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
     
     //====================================================================================
 
+    @SuppressWarnings("unused")
     private void addVTitle()
     {
         Area root = leaves.elementAt(iTitle);
@@ -219,6 +228,25 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
         rootArea.appendChild(new EswcLogicalArea(root, text, tagVTitle));
     }
 
+    private void addIndexData()
+    {
+        String url = rootArea.getText();
+        Matcher matcher = Pattern.compile("vol-[1-9][0-9]*").matcher(url.toLowerCase());
+        if (matcher.find())
+        {
+            int vol = IndexFile.parseVol(matcher.group(0));
+            SimpleDateFormat dfmt = new SimpleDateFormat("yyyy-MM-dd");
+            rootArea.appendChild(new EswcLogicalArea(leaves.elementAt(iTitle), IndexFile.getTitle(vol), tagVTitle));
+            rootArea.appendChild(new EswcLogicalArea(leaves.elementAt(iTitle), dfmt.format(IndexFile.getPubDate(vol)), tagPublished));
+            List<Integer> related = IndexFile.getRelated(vol);
+            if (related != null)
+            {
+                for (int rel : related) 
+                    rootArea.appendChild(new EswcLogicalArea(leaves.elementAt(iTitle), "http://ceur-ws.org/Vol-" + rel + "/", tagRelated));
+            }
+        }
+    }
+    
     private void analyzeShortNames()
     {
         //gather the abbreviations around the title
@@ -378,6 +406,17 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
                     log.warn("No affiliation for " + text);
             }
             
+            //decode editor section in () if present
+            String affsect = null;
+            Matcher matcher = Pattern.compile("\\(.+\\)$").matcher(affil);
+            if (matcher.find())
+            {
+                String s = matcher.group(0); 
+                affsect = s.substring(1, s.length() - 1);
+                affil = affil.substring(0, affil.length() - s.length()).trim();
+            }
+            
+            //complete the affiliation when symbols are used
             affil = completeAffil(affil);
             String affs[] = splitAffilCountry(affil);
             affil = affs[0];
@@ -393,6 +432,10 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
                 {
                     LogicalArea acountry = new EswcLogicalArea(editor, affs[1], tagECountry);
                     aname.appendChild(acountry);
+                }
+                if (affsect != null)
+                {
+                    aname.appendChild(new EswcLogicalArea(editor, affsect, tagSection));
                 }
             }
         }
