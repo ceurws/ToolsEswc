@@ -408,7 +408,7 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
             
             //decode editor section in () if present
             String affsect = null;
-            Matcher matcher = Pattern.compile("\\(.+\\)$").matcher(affil);
+            Matcher matcher = Pattern.compile("\\([a-zA-Z].+\\)$").matcher(affil);
             if (matcher.find())
             {
                 String s = matcher.group(0); 
