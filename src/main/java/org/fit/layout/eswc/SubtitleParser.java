@@ -203,13 +203,35 @@ public class SubtitleParser
         //create ordered list of tokens
         Vector<String> names = new Vector<String>(supported);
         Vector<Integer> indices = findAbbrevIndices(names, max, allowNotFound);
+        //are there any indices found?
+        boolean ipresent = false;
+        for (int i : indices)
+        {
+            if (i != -1)
+            {
+                ipresent = true;
+                break;
+            }
+        }
         //try to find the numbers
         for (int ii = 0; ii < indices.size(); ii++)
         {
             int idx = indices.elementAt(ii);
             if (idx == -1) //not found in the subtitle (probably only in title)
             {
-                ws.add(new Event(-1, names.elementAt(ii)));
+                int ord = -1;
+                if (!ipresent) //none present, map the order numbers in order of appearance
+                {
+                    for (Token t : tokens)
+                    {
+                        if (!t.used && t.type == TType.ORD)
+                        {
+                            t.used = true;
+                            ord = parseOrder(t.value);
+                        }
+                    }
+                }
+                ws.add(new Event(ord, names.elementAt(ii)));
             }
             else //token found in subtitle
             {

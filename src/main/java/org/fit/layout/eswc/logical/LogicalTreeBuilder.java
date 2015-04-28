@@ -32,9 +32,9 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 //TODO:
-//- short title parsing vol-981
+//+ short title parsing vol-981
 //- match order numbers if there are no short titles in subtitle (vol-1317)
-//- strip (ENDING) an trailing ., in editor affiliations
+//+ strip (ENDING) an trailing ., in editor affiliations
 //+ colocated may be also 'in conjunction with' -- vol-862
 //  nebo 'located at' -- vol-540
 //+ napojeni editoru muze byt i (1) -- vol-862
