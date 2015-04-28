@@ -30,6 +30,7 @@ public class AreaUtils
         blackShort = new HashSet<String>();
         blackShort.add("IEEE");
         blackShort.add("ACM");
+        blackShort.add("RDF");
     }
 
     /**

@@ -69,7 +69,7 @@ public class SubtitleParser
         }
         
         //st nd rd th
-        matcher = Pattern.compile("[1-9][0-9]*[snrt][tdh]").matcher(src.toLowerCase());
+        matcher = Pattern.compile("[1-9][0-9]*[snrt][tdh]|first|second|third|fourth|fifth|sixth|seventh|eighth|ninth").matcher(src.toLowerCase());
         while (matcher.find())
         {
             final String order = matcher.group(0).trim();
@@ -220,13 +220,31 @@ public class SubtitleParser
                 if (ordt != null)
                 {
                     ordt.used = true;
-                    ord = Integer.parseInt(ordt.value.substring(0, ordt.value.length() - 2));
+                    ord = parseOrder(ordt.value);
                 }
                 ws.add(new Event(ord, sn.value));
             }
         }
     }
 
+    private int parseOrder(String value)
+    {
+        switch (value.toLowerCase())
+        {
+            case "first": return 1; 
+            case "second": return 2; 
+            case "third": return 3; 
+            case "fourth": return 4; 
+            case "fifth": return 5; 
+            case "sixth": return 6; 
+            case "seventh": return 7; 
+            case "eighth": return 8; 
+            case "ninth": return 9; 
+            default:
+                return Integer.parseInt(value.substring(0, value.length() - 2));
+        }
+    }
+    
     private int findToken(TType type, String value, int max)
     {
         for (int i = 0; i < max; i++)

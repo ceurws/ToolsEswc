@@ -115,6 +115,16 @@ public class FindTitlesOperator extends BaseOperator
             }
             cur++;
         }
+        //expand up
+        while (first > 0)
+        {
+            Area before = leaves.elementAt(first - 1);
+            if (before != null && before.getFontSize() == maxsize)
+                first--;
+            else
+                break;
+        }
+        //expand down
         if (first >= 0)
         {
             AreaImpl fa = (AreaImpl) leaves.elementAt(first);
