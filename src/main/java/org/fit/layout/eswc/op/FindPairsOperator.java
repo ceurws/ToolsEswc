@@ -222,14 +222,14 @@ public class FindPairsOperator extends BaseOperator
                             atitle.addTag(etitle, tprob);
                             aauth.addTag(eauthors, tprob - 0.2f);
                             found = true;
-                            System.out.println("Uncertain1: " + aauth + " :: " + atitle);
+                            //System.out.println("Uncertain1: " + aauth + " :: " + atitle);
                         }
                         else if (aauth.hasTag(tpersons) && sauth.equals(astyles.getMostFrequent()))
                         {
                             atitle.addTag(etitle, tprob - 0.2f);
                             aauth.addTag(eauthors, tprob);
                             found = true;
-                            System.out.println("Uncertain2: " + aauth + " :: " + atitle);
+                            //System.out.println("Uncertain2: " + aauth + " :: " + atitle);
                         }
                     }
                     

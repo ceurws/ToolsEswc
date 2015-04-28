@@ -270,8 +270,8 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
             log.warn("No subtitle!");
             sp = new SubtitleParser("", titleShorts);
         }
-        System.out.println("WS=" + sp.getWorkshops());
-        System.out.println("COLOC=" + sp.getColocEvent());
+        //System.out.println("WS=" + sp.getWorkshops());
+        //System.out.println("COLOC=" + sp.getColocEvent());
         for (SubtitleParser.Event ev : sp.getWorkshops())
         {
             LogicalArea sa = new EswcLogicalArea(subtitle, ev.sname, tagVShort);

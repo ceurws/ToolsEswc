@@ -41,8 +41,8 @@ public class SubtitleParser
         this.titleShorts = titleShorts;
         ws = new HashSet<Event>();
         tokenize();
-        for (Token t: tokens)
-            System.out.println(t);
+        /*for (Token t: tokens)
+            System.out.println(t);*/
         scanTokens();
     }
     
