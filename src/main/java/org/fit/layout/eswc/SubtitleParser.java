@@ -28,7 +28,7 @@ public class SubtitleParser
 {
     private static Logger log = LoggerFactory.getLogger(SubtitleParser.class);
 
-    public enum TType { ORD, WORKSHOP, SHORT, COLOC };
+    public enum TType { ORD, WORKSHOP, SHORT, COLOC, AT };
     private String src;
     private Vector<String> titleShorts;
     private Vector<Token> tokens;
@@ -86,6 +86,13 @@ public class SubtitleParser
                 tokens.add(new Token(matcher.start(), TType.COLOC, word));
         }
         
+        matcher = Pattern.compile("^at\\s|\\sat\\s").matcher(src.toLowerCase());
+        while (matcher.find())
+        {
+            final String word = matcher.group(0);
+            tokens.add(new Token(matcher.start(), TType.AT, word));
+        }
+        
         Collections.sort(tokens);
     }
     
@@ -93,9 +100,13 @@ public class SubtitleParser
     {
         //count the occurences, gather statistics
         Token coloc = null;
+        Token at = null;
+        Token behindat = null;
         Map<String, Integer> counts = new HashMap<String, Integer>();
         for (Token t : tokens)
         {
+            if (at != null && behindat == null)
+                behindat = t;
             if (t.type == TType.SHORT && coloc == null)
             {
                 Integer cnt = counts.get(t.value); 
@@ -106,6 +117,15 @@ public class SubtitleParser
             }
             else if (t.type == TType.COLOC)
                 coloc = t;
+            else if (t.type == TType.AT)
+                at = t;
+        }
+        
+        //if collocated not found, try to use 'at' if present
+        if (coloc == null && at != null)
+        {
+            if (behindat != null && behindat.type == TType.SHORT)
+                coloc = at;
         }
         
         //if colocated is found, disambiguate colocation now
