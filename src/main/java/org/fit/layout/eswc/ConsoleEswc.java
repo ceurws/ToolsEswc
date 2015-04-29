@@ -12,7 +12,6 @@ import javax.script.ScriptException;
 import org.fit.layout.api.AreaTreeOperator;
 import org.fit.layout.classify.InstanceExtractor;
 import org.fit.layout.classify.op.TagEntitiesOperator;
-import org.fit.layout.classify.op.VisualClassificationOperator;
 import org.fit.layout.eswc.classify.ProgrammesFeatureExtractor;
 import org.fit.layout.tools.Console;
 

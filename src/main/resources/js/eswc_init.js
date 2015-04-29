@@ -21,14 +21,24 @@ function processPage(url)
 	//logical tree
 	proc.initLogicalTree('CEUR.Logical', {});
 	
+	//save the result
+	saveCurrentPage();
 }
+
+function saveCurrentPage()
+{
+	storage.saveBoxTree(proc.page);
+	storage.saveAreaTree(proc.areaTree, proc.logicalAreaTree, proc.page.sourceURL);
+}
+
+storage.connect("http://localhost:8080/bigdata/sparql");
+storage.clearDB();
 
 println("ESWC init done.");
 
-//processPage('file:/home/burgetr/git/TestingLayout/test/ceur/volumes/Vol-1317.html');
 processPage('http://ceur-ws.org/Vol-1317/');
-/*processPage('http://ceur-ws.org/Vol-1186/');
-processPage('http://ceur-ws.org/Vol-1128/');
+processPage('http://ceur-ws.org/Vol-1/');
+/*processPage('http://ceur-ws.org/Vol-1128/');
 processPage('http://ceur-ws.org/Vol-1123/');
 processPage('http://ceur-ws.org/Vol-1116/');
 processPage('http://ceur-ws.org/Vol-1111/');*/
