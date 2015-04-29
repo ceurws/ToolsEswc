@@ -1,6 +1,9 @@
 
 function processPage(url)
 {
+	println("");
+	println("*** START " + url);
+	
 	//rendering
 	var srcConfig = {
 			width: 1200,
@@ -23,6 +26,7 @@ function processPage(url)
 	
 	//save the result
 	saveCurrentPage();
+	println("... DONE");
 }
 
 function saveCurrentPage()
