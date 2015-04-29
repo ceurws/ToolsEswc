@@ -9,7 +9,10 @@ import java.io.IOException;
 
 import javax.script.ScriptException;
 
+import org.fit.layout.api.AreaTreeOperator;
 import org.fit.layout.classify.InstanceExtractor;
+import org.fit.layout.classify.op.TagEntitiesOperator;
+import org.fit.layout.classify.op.VisualClassificationOperator;
 import org.fit.layout.eswc.classify.ProgrammesFeatureExtractor;
 import org.fit.layout.tools.Console;
 
@@ -28,6 +31,16 @@ public class ConsoleEswc extends Console
         //custom instance extractor for training data extraction
         extractor = new InstanceExtractor(new ProgrammesFeatureExtractor(), "CEUR");
         getProcessor().put("extr", extractor);
+        //init custom taggers
+        AreaTreeOperator tcls = getProcessor().getOperators().get("FitLayout.Tag.Entities");
+        if (tcls != null && tcls instanceof TagEntitiesOperator)
+        {
+            ((TagEntitiesOperator) tcls).addTagger(new CountriesTagger());
+            ((TagEntitiesOperator) tcls).addTagger(new ShortNameTagger());
+        }
+        else
+            System.err.println("Couldn't configure FitLayout.Tag.Entities!");
+        
     }
 
     @Override
