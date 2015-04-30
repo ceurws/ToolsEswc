@@ -78,7 +78,7 @@ public class BlockBrowserEswc extends BlockBrowser
                     //String localpath = "http://ceur-ws.org/";
                     //String suffix = "/";
 
-                    URL url = new URL(localpath + "Vol-1317" + suffix);
+                    //URL url = new URL(localpath + "Vol-1317" + suffix);
                     //URL url = new URL(localpath + "Vol-1010" + suffix);
                     //URL url = new URL(localpath + "Vol-981" + suffix);
                     //URL url = new URL(localpath + "Vol-921" + suffix);
@@ -91,6 +91,7 @@ public class BlockBrowserEswc extends BlockBrowser
                     /* CEUR */
                     //URL url = new URL("http://ceur-ws.org/Vol-1333/");
                     //URL url = new URL("http://ceur-ws.org/Vol-1317/");
+                    URL url = new URL("http://ceur-ws.org/Vol-671/");
                     //URL url = new URL("http://ceur-ws.org/Vol-585/");
                     //URL url = new URL("http://ceur-ws.org/Vol-540/");
                     //URL url = new URL("http://ceur-ws.org/Vol-250/");

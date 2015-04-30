@@ -1,3 +1,12 @@
+function help()
+{
+	println("");
+	println("HELP:");
+	println("  console.exit() -- exit");
+	println("  processPage('http://ceur-ws.org/Vol-1/') -- process the given page and store the results");
+	println("  processTrainingSet() -- process the SemPub2015 training set and store the results");
+	println("");
+}
 
 function processPage(url)
 {
@@ -36,15 +45,14 @@ function saveCurrentPage()
 }
 
 storage.connect("http://localhost:8080/bigdata/sparql");
-storage.clearDB();
+proc.execInternal('js/eswc_training.js');
 
-println("ESWC init done.");
+println("The console speaks JavaScript. Type help() for help.");
 
-processPage('http://ceur-ws.org/Vol-1317/');
+/*processPage('http://ceur-ws.org/Vol-1317/');
 processPage('http://ceur-ws.org/Vol-1/');
-/*processPage('http://ceur-ws.org/Vol-1128/');
+processPage('http://ceur-ws.org/Vol-1128/');
 processPage('http://ceur-ws.org/Vol-1123/');
 processPage('http://ceur-ws.org/Vol-1116/');
 processPage('http://ceur-ws.org/Vol-1111/');*/
 
-println("processing done.");
