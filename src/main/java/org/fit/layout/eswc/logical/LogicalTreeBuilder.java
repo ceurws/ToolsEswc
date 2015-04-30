@@ -475,7 +475,7 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
         if (pos > 0)
         {
             String cstr = affil.substring(pos + 1).trim().toLowerCase();
-            String[] cands = cstr.split("[^A-Za-z0-9\\s]");
+            String[] cands = cstr.split("[^A-Za-z0-9\\s\\.]");
             boolean found = false;
             for (String cname : cands)
             {
