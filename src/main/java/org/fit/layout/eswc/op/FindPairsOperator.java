@@ -137,7 +137,7 @@ public class FindPairsOperator extends BaseOperator
         if (root.getParentArea() != null && isIn(root) && acceptableTags(root, 0.0f, true))
         {
             //try to find a neighbor area
-            Area aa = findAlignedPreviousSibling(root);
+            Area aa = findAlignedPreviousSibling(root, 5);
             //check the tags
             boolean found = false;
             if (aa != null && acceptableTags(aa, 0.0f, true))
@@ -251,7 +251,7 @@ public class FindPairsOperator extends BaseOperator
     private Area findPairArea(Area root)
     {
         if (useSiblings)
-            return findAlignedPreviousSibling(root);
+            return findAlignedPreviousSibling(root, 5);
         else
             return findClosestAbove(root);
     }
@@ -281,7 +281,7 @@ public class FindPairsOperator extends BaseOperator
         return (gp1.getX1() != gp2.getX1());
     }
     
-    private Area findAlignedPreviousSibling(Area a)
+    private Area findAlignedPreviousSibling(Area a, int minlength)
     {
         //try to look about 10 elements back for finding the aligned sibling TODO
         Area cur = a;
@@ -290,7 +290,7 @@ public class FindPairsOperator extends BaseOperator
             cur = cur.getPreviousSibling();
             if (cur != null)
             {
-                if (AreaUtils.isAligned(a, cur) && AreaUtils.isNeighbor(a, cur))
+                if (AreaUtils.isAligned(a, cur) && AreaUtils.isNeighbor(a, cur) && cur.getText().length() >= minlength)
                     return cur;
             }
             else
