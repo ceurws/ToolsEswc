@@ -5,6 +5,7 @@
  */
 package org.fit.layout.eswc.op;
 
+import java.util.List;
 import java.util.Vector;
 
 import org.fit.layout.classify.StyleCounter;
@@ -200,7 +201,14 @@ public class FindEditorsOperator extends BaseOperator
                     prev = a;
                 }
             }
-            FontNodeStyle estyle = estyles.getMostFrequent();
+            List<FontNodeStyle> mstyles = estyles.getMostFrequentAll();
+            //use the largest font size if there are multiple styles of the same frequency
+            FontNodeStyle estyle = null;
+            for (FontNodeStyle st : mstyles)
+            {
+                if (estyle == null || st.getFontSize() > estyle.getFontSize())
+                    estyle = st;
+            }
             log.info("Layout: same line {}, next line {}, other {}, minx {}, style {}, linked {}", sameline, nextline, other, minx, estyle, authorsLinked);
             
             //tag the names according to the layout
