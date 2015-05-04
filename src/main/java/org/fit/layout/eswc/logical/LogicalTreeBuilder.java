@@ -590,7 +590,7 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
     {
         if (title != null && authors != null)
         {
-            String pid = findPaperId(title);
+            String pid = findPaperId(title, authors);
             if (pid != null)
             {
                 LogicalArea ap = new EswcLogicalArea(title, pid, tagPaper);
@@ -676,7 +676,7 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
         return sb.toString();
     }
     
-    private String findPaperId(Area title)
+    private String findPaperId(Area title, Area authors)
     {
         Box box = title.getBoxes().firstElement();
         int top = box.getBounds().getY1();
@@ -695,6 +695,14 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
         }
         //try links
         String lnk = box.getAttribute("href");
+        if (lnk == null)
+        {
+            //no link from title, try authors
+            box = authors.getBoxes().firstElement();
+            lnk = box.getAttribute("href");
+            if (lnk != null && lnk.startsWith("http") && !lnk.contains("ceur-ws.org")) //ignore links outside of ceur-ws
+                lnk = null;
+        }
         if (lnk != null)
         {
             lnk = lnk.trim();
@@ -704,6 +712,8 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
                 name = name.substring(0, name.length() - 4);
             else if (name.toLowerCase().endsWith(".ps"))
                 name = name.substring(0, name.length() - 3);
+            else if (name.toLowerCase().endsWith(".ps.gz"))
+                name = name.substring(0, name.length() - 6);
             else if (name.toLowerCase().endsWith(".html"))
                 name = name.substring(0, name.length() - 5);
             
