@@ -222,14 +222,17 @@ public class FindEditorsOperator extends BaseOperator
                 for (int i = first; i <= last; i++)
                 {
                     Area a = leaves.elementAt(i);
+                    String text = a.getText().trim();
                     boolean found = false;
                     //System.out.println("Test " + a);
-                    if (estyle.equals(new FontNodeStyle(a)))
+                    if (text.length() > 0 && estyle.equals(new FontNodeStyle(a)))
                     {
                         if (nextline >= sameline) //probably names on separate lines
                         {
                             if (a.getTopology().getPosition().getX1() == minx)
                             {
+                                if (!Character.isAlphabetic(text.charAt(0))) //not a name in the first line -- stop tagging
+                                    break;
                                 a.addTag(new EswcTag("veditor"), 0.7f);
                                 found = true;
                             }
