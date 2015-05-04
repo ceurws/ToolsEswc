@@ -220,7 +220,8 @@ public class FindEswcTagsOperator extends BaseOperator
             {
                 tocArea = root;
             }
-            if (root.getText().toLowerCase().contains("submitted by")) //prefer the last occurence
+            if (root.getText().toLowerCase().contains("submitted by")
+                    || root.getText().toLowerCase().contains("submitted to")) //prefer the last occurence
             {
                 submittedArea = root;
             }
