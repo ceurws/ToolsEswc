@@ -479,7 +479,10 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
             boolean found = false;
             for (String cname : cands)
             {
-                String curi = Countries.getCountryUri(cname.trim());
+                cname = cname.trim();
+                while (cname.endsWith("."))
+                    cname = cname.substring(0, cname.length() - 1).trim();
+                String curi = Countries.getCountryUri(cname);
                 if (curi != null)
                 {
                     ret[0] = affil.substring(0, pos).trim();
