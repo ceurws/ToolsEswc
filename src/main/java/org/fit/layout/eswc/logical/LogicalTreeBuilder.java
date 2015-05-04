@@ -468,15 +468,16 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
     private String[] splitAffilCountry(String src)
     {
         String[] ret = new String[2];
+        boolean found = false;
         String affil = new String(src.trim());
         while (affil.endsWith(","))
             affil = affil.substring(0, affil.length() - 1).trim();
+        //try the last country separated by ","
         int pos = affil.lastIndexOf(",");
         if (pos > 0)
         {
             String cstr = affil.substring(pos + 1).trim().toLowerCase();
             String[] cands = cstr.split("[^A-Za-z0-9\\s\\.]");
-            boolean found = false;
             for (String cname : cands)
             {
                 cname = cname.trim();
@@ -493,16 +494,14 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
             
             if (!found)
             {
-                ret[0] = affil;
-                ret[1] = null;
-                log.warn("No country found in '{}' ({}?)", affil, cands);
+                log.warn("No country found in '{}' ({}?), let's try another way", affil, cands);
             }
         }
-        else
+        
+        if (!found)
         {
             LocationsTagger ltg = new LocationsTagger(1);
             Vector<String> cands = ltg.extract(affil);
-            boolean found = false;
             for (String cname : cands)
             {
                 String curi = Countries.getCountryUri(cname.trim());
@@ -513,13 +512,13 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
                     found = true;
                 }
             }
+        }
             
-            if (!found)
-            {
-                ret[0] = affil;
-                ret[1] = null;
-                log.warn("No country position found in '{}'", affil);
-            }
+        if (!found)
+        {
+            ret[0] = affil;
+            ret[1] = null;
+            log.warn("No country position found in '{}', give up", affil);
         }
         
         return ret;
