@@ -49,6 +49,11 @@ public class ConsoleEswc extends Console
         getProcessor().execInternal("js/eswc_init.js");
     }
 
+    public void browser()
+    {
+        BlockBrowserEswc.main(new String[0]);
+    }
+    
     public static void main(String[] args)
     {
         System.out.println("FitLayout interactive console [ESWC]");

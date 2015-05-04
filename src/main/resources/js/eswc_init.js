@@ -2,7 +2,8 @@ function help()
 {
 	println("");
 	println("HELP:");
-	println("  console.exit() -- exit");
+	println("  console.exit() -- exit console");
+	println("  console.browser() -- open the browser gui");
 	println("  processPage('http://ceur-ws.org/Vol-1/') -- process the given page and store the results");
 	println("  processTrainingSet() -- process the SemPub2015 training set and store the results");
 	println("");
