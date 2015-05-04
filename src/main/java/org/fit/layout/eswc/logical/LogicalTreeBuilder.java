@@ -453,7 +453,7 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
                 final String s = a.getText();
                 if (s.trim().startsWith(src))
                 {
-                    String ret = getTextOnLine(i, paperStart).trim();
+                    String ret = getAffilText(i, paperStart).trim();
                     ret = ret.substring(src.length()).trim();
                     return ret;
                 }
@@ -671,6 +671,40 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
             }
             else
                 break;
+        }
+        return sb.toString();
+    }
+    
+    private String getAffilText(int start, int end)
+    {
+        Area strt = leaves.elementAt(start);
+        StringBuilder sb = new StringBuilder(strt.getText());
+        int i = start + 1;
+        while (i < end) //use all till end of line
+        {
+            Area next = leaves.elementAt(i);
+            if (AreaUtils.isOnSameLineRoughly(strt, next))
+            {
+                sb.append(next.getText());
+            }
+            else if (AreaUtils.isNeighbor(strt, next)) //next line, same group
+            {
+                String nt = next.getText().trim();
+                if (nt.length() > 0)
+                {
+                    if (Character.isAlphabetic(nt.charAt(0)))
+                    {
+                        sb.append(", ");
+                        sb.append(next.getText());
+                        strt = next;
+                    }
+                    else
+                        break;
+                }
+            }
+            else
+                break;
+            i++;
         }
         return sb.toString();
     }
