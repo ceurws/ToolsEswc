@@ -106,13 +106,13 @@ public class ScanSubtitlesOperator extends BaseOperator
             {
                 a.addTag(new EswcTag("vdate"), 1.0f);
                 aDate = a;
-                last = i;
+                //last = i;
             }
             if (a.hasTag(countriesTag) && aPlace == null)
             {
                 a.addTag(new EswcTag("vcountry"), 1.0f);
                 aPlace = a;
-                last = i;
+                //last = i;
             }
         }
         
@@ -120,7 +120,7 @@ public class ScanSubtitlesOperator extends BaseOperator
         if (last > 0)
         {
             resultBounds = null;
-            for (int i = 0; i < last; i++)
+            for (int i = 0; i <= last; i++)
             {
                 final Area a = leaves.elementAt(i);
                 if (resultBounds == null)

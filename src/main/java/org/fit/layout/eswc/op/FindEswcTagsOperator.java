@@ -112,8 +112,8 @@ public class FindEswcTagsOperator extends BaseOperator
         //refine the segment bounds based on the specific areas detected
         if (editedArea != null)
         {
-            btitles.setY2(editedArea.getBounds().getY1());
-            bsubtitles.setY2(editedArea.getBounds().getY1());
+            btitles.setY2(editedArea.getBounds().getY1() - 1);
+            bsubtitles.setY2(editedArea.getBounds().getY1() - 1);
             beditors.setY1(editedArea.getBounds().getY1());
         }
         if (tocArea != null)
