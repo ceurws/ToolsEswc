@@ -379,7 +379,7 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
         while (i < text.length())
         {
             char ch = text.charAt(i);
-            if (ch != '.' && ch != '-' 
+            if (ch != '.' && ch != '-' && ch != '\''
                     && !Character.isLetter(ch) 
                     && !Character.isSpaceChar(ch))
                 break;
