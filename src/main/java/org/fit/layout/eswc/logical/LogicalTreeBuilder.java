@@ -687,7 +687,7 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
             {
                 sb.append(next.getText());
             }
-            else if (AreaUtils.isNeighbor(strt, next)) //next line, same group
+            else if (AreaUtils.isNeighbor(strt, next) && AreaUtils.isInSameColumn(strt, next)) //next line, same column, same group
             {
                 String nt = next.getText().trim();
                 if (nt.length() > 0)
