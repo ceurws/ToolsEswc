@@ -1,7 +1,7 @@
 #! /usr/bin/gawk
 #
 # To be applied to http://ceur-ws.org
-# Extracts the related workshops and prints the relationships as RDF triples
+# Extracts the related workshops and prints the relationships as CSV
 # (c) Radek Burget 2015
 #
 
