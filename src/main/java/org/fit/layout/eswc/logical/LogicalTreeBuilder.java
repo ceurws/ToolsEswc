@@ -424,9 +424,9 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
             String[] names = name.split("\\s+and\\s+"); //multiple names separated by 'and'?
             for (String curname : names)
             {
-                LogicalArea aname = new EswcLogicalArea(editor, curname, tagVEditor);
+                LogicalArea aname = new EswcLogicalArea(editor, curname.trim(), tagVEditor);
                 rootArea.appendChild(aname);
-                LogicalArea aaffil = new EswcLogicalArea(editor, affil, tagEAffil);
+                LogicalArea aaffil = new EswcLogicalArea(editor, affil.trim(), tagEAffil);
                 aname.appendChild(aaffil);
                 if (affs[1] != null)
                 {
