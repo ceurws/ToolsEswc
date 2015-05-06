@@ -10,31 +10,38 @@ PREFIX dcterms: <http://dublincore.org/documents/dcmi-terms/#>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX dbpedia: <http://dbpedia.org/ontology/#>
 
-CONSTRUCT
+INSERT 
 { 
     ?workshop a swc:WorkshopEvent .
-    ?workshop dc:title ?workshopTitle .
-    ?workshop bibo:shortTitle ?workshopShortTitle.
-    ?workshop swc:subEventOf ?conference .
+    
+    ?workshop swc:isSubEventOf ?conference .
     ?workshop timeline:beginsAtDatetime ?startdatedt .
     ?workshop timeline:endsAtDatetime ?enddatedt .
     ?workshop swc:hasLocation ?vcountry.
-  	
+  	?workshop rdfs:seeAlso ?related.
+  
+  
+    ?workshop swc:hasPart ?WorkshopPart .
+    ?WorkshopPart a bibo:Workshop . 
+    ?WorkshopPart bibo:shortTitle ?workshopShortTitle.
+    ?WorkshopPart dc:title ?workshopTitle .
+    ?WorkshopPart swrc:edition ?editiondt .
   
     ?conference a swc:ConferenceEvent .
   	?conference dc:title ?colocatedTitle .
   
     ?proceedings a swc:Proceedings .
     ?proceedings bibo:presentedAt ?workshop.
-    
+    ?proceedings dcterms:issued ?publisheddt .
     
     ?paper a swc:Paper .
     ?paper dc:title ?paperTitle .
 	  ?paper swc:partOf ?proceedings .
-    ?paper swc:partOf ?workshop .
+    
+    ?paper bibo:numPages ?pagesdt .
     
     ?proceedings swc:hasPart ?paper .
-    ?workshop swc:hasPart ?paper .
+    
     
 	  ?paper swrc:author ?author .
     ?author rdf:type foaf:Person .
@@ -47,7 +54,8 @@ CONSTRUCT
     ?editor rdf:type foaf:Person .
     ?editor foaf:name ?editorName .
     ?editor swrc:affiliation ?eaffilName .
-    ?editor bibo:place ?ecountry .  
+    ?editor bibo:place ?ecountry .
+    ?editor bibo:section ?editorSection .  
     
 }
 WHERE {
@@ -61,14 +69,29 @@ WHERE {
   	?avtitle a:hasTag a:tag-ESWC--vtitle .
   	?avtitle a:hasText ?workshopTitle .
     
+  OPTIONAL {  
     ?vshortTitle a:isSubordinateTo ?workshopPart .
   	?vshortTitle a:hasTag a:tag-ESWC--vshort .
   	?vshortTitle a:hasText ?workshopShortTitle .
+    
+    OPTIONAL {
+    	?veditionPart a:isSubordinateTo ?vshortTitle .
+  		?veditionPart a:hasTag a:tag-ESWC--vorder .
+  		?veditionPart a:hasText ?editionText .
+    }
+  }
+  
   
   OPTIONAL {  
     ?colocated a:isSubordinateTo ?workshopPart .
   	?colocated a:hasTag a:tag-ESWC--colocated .
   	?colocated a:hasText ?colocatedTitle .
+  }
+  
+  OPTIONAL {  
+    ?relatedPart a:isSubordinateTo ?workshopPart .
+  	?relatedPart a:hasTag a:tag-ESWC--related .
+  	?relatedPart a:hasText ?relatedText .
   }
   
     ?startdatePart a:isSubordinateTo ?workshopPart .
@@ -79,10 +102,17 @@ WHERE {
   	?enddatePart a:hasTag a:tag-ESWC--enddate .
   	?enddatePart a:hasText ?enddate .
     
+  OPTIONAL {
     ?vcountryPart a:isSubordinateTo ?workshopPart .
   	?vcountryPart a:hasTag a:tag-ESWC--vcountry .
   	?vcountryPart a:hasText ?vcountryText .
-    
+  }
+
+  OPTIONAL {
+    ?publishedPart a:isSubordinateTo ?workshopPart .
+  	?publishedPart a:hasTag a:tag-ESWC--published .
+  	?publishedPart a:hasText ?publishedText .
+  }
 
     ?apaper a:isSubordinateTo ?workshopPart .
   	?apaper a:hasTag a:tag-ESWC--paper .
@@ -101,9 +131,23 @@ WHERE {
     ?paperSectionPart a:hasTag a:tag-ESWC--section .
   	?paperSectionPart a:hasText ?sectionName .
   }
+  
+  OPTIONAL {
+    ?paperPagesPart a:isSubordinateTo ?apaper .
+    ?paperPagesPart a:hasTag a:tag-ESWC--pages .
+  	?paperPagesPart a:hasText ?pagesText .
+  }
+  
   	?editorPart a:isSubordinateTo ?workshopPart .
     ?editorPart a:hasTag a:tag-ESWC--veditor .
   	?editorPart a:hasText ?editorName .
+  
+  OPTIONAL {
+    ?editorSecPart a:isSubordinateTo ?editorPart .                 
+    ?editorSecPart a:hasTag a:tag-ESWC--section .
+  	?editorSecPart a:hasText ?editorSection .
+  }  
+  
   
   OPTIONAL {
     ?eaffilPart a:isSubordinateTo ?editorPart .                 
@@ -117,17 +161,24 @@ WHERE {
   	?ecountryPart a:hasText ?ecountryText .
   }
   
+    
+  
   	BIND (URI(?workshopUri) AS ?workshop)
   	BIND (URI(?vcountryText) AS ?vcountry)
     BIND (URI(CONCAT(?workshopUri, "#",?paperUri)) AS ?paper)
     BIND (URI(CONCAT(?workshopUri, "#proc")) AS ?proceedings)  
-    BIND (URI(CONCAT(?workshopUri, "#conf")) AS ?conference)  
+    BIND (URI(CONCAT(?workshopUri, "#conf")) AS ?conference)      
+    BIND (URI(CONCAT(?workshopUri, "#part-",ENCODE_FOR_URI( replace(?workshopTitle," ", "i") ))) AS ?WorkshopPart)
     
-    BIND ( (xsd:dateTime(?startdate)) AS ?startdatedt)
-    BIND ( (xsd:dateTime(?enddate)) AS ?enddatedt)
+    BIND ( STRDT(?startdate, xsd:dateTime) AS ?startdatedt)
+    BIND ( STRDT(?enddate, xsd:dateTime) AS ?enddatedt)
+    BIND ( STRDT(?publishedText, xsd:dateTime) AS ?publisheddt)
     
-    BIND (URI(CONCAT("http://ceur-ws.org/","#", ENCODE_FOR_URI( replace(?authorName," ", "i") ) )) AS ?author) 
-    BIND (URI(CONCAT("http://ceur-ws.org/","#", ENCODE_FOR_URI( replace(?editorName," ", "i") ) )) AS ?editor)
+    BIND ( STRDT(?pagesText, xsd:integer) AS ?pagesdt)
+    BIND ( STRDT(?editionText, xsd:integer) AS ?editiondt)
+    
+    BIND (URI(CONCAT(?workshopUri, "#", ENCODE_FOR_URI( replace(?authorName," ", "i") ) )) AS ?author) 
+    BIND (URI(CONCAT(?workshopUri, "#", ENCODE_FOR_URI( replace(?editorName," ", "i") ) )) AS ?editor)
     BIND (URI(?ecountryText) AS ?ecountry)
-                       
+    BIND (URI(?relatedText) AS ?related)           
 }
