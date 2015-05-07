@@ -1,14 +1,14 @@
 #! /usr/bin/gawk
 #
 # To be applied to http://ceur-ws.org
-# Extracts the related workshops and prints the relationships as RDF triples.
+# Extracts the related workshops and prints the relationships as CSV
 # (c) Radek Burget 2015
 #
 
 BEGIN {
 	curvol="none";
 	see=0;
-	OFS=" segm:related ";
+	OFS=",";
 }
 
 tolower($0) ~ /name="?vol-[1-9][0-9]*"/ {
@@ -25,6 +25,6 @@ tolower($0) ~ /href="?#vol-[1-9][0-9]*"/ {
 	if (see) {
 		match($0, /Vol-[1-9][0-9]*/);
 		relvol = substr($0, RSTART, RLENGTH);
-		print "<http://ceur-ws.org/" curvol "/>", "<http://ceur-ws.org/" relvol "/> .";
+		print curvol, relvol;
 	}
 }
