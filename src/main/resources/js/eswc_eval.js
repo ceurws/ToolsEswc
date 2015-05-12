@@ -1,7 +1,7 @@
 function processEvaluationSet()
 {
-	storage.clearDB();
-	//processTrainingSet();
+	//storage.clearDB();
+	processTrainingSet();
 	
 	processPage('http://ceur-ws.org/Vol-1353/');
 	processPage('http://ceur-ws.org/Vol-1346/');

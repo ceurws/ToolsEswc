@@ -13,11 +13,13 @@ import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Locale;
+import java.util.Map;
+import java.util.Vector;
 
 import org.fit.layout.classify.taggers.DateTagger;
-import org.fit.layout.eswc.logical.EswcLogicalArea;
 
 /**
  * 
@@ -25,15 +27,44 @@ import org.fit.layout.eswc.logical.EswcLogicalArea;
  */
 public class CSVConvertor
 {
-
+    private static Map<String, Map<String, String>> idata;
+    
+    static {
+        idata = new HashMap<String, Map<String,String>>();
+    }
+    
+    private static void store(String s, String p, String o)
+    {
+        Map<String, String> vals = idata.get(s);
+        if (vals == null)
+        {
+            vals = new HashMap<String, String>();
+            idata.put(s, vals);
+        }
+        vals.put(p, o);
+    }
+    
     private static void out(String s, String p, String o)
     {
-        System.out.println(s + " " + p + " \"" + o + "\" .");
+        //System.out.println(s + " " + p + " \"" + o + "\" .");
+        store(s, p, "\"" + o + "\"");
     }
     
     private static void outurl(String s, String p, String o)
     {
-        System.out.println(s + " " + p + " <" + o + "> .");
+        //System.out.println(s + " " + p + " <" + o + "> .");
+        store(s, p, "<" + o + ">");
+    }
+    
+    private static void dump()
+    {
+        for (Map.Entry<String, Map<String, String>> ventry : idata.entrySet())
+        {
+            for (Map.Entry<String, String> dentry : ventry.getValue().entrySet())
+            {
+                System.out.println(ventry.getKey() + " " + dentry.getKey() + " " + dentry.getValue() + " .");
+            }
+        }
     }
     
     /**
@@ -48,9 +79,11 @@ public class CSVConvertor
             String line;
             while ((line = in.readLine()) != null)
             {
+                //volume title
                 String[] f = line.split(";;");
                 out(f[0], "segm:ititle", f[1]);
                 
+                //date of publication
                 DateFormat srcf = new SimpleDateFormat("dd-MMM-yyyy", Locale.ENGLISH);
                 DateFormat dfmt = new SimpleDateFormat("yyyy-MM-dd", Locale.ENGLISH);
                 try
@@ -62,9 +95,12 @@ public class CSVConvertor
                     System.err.println("Couldn't decode " + f[2] + ": " + e.getMessage());
                 }
 
+                //proceedings text 
                 out(f[0], "segm:iproceedings", f[3]);
+                //date and place text
                 out(f[0], "segm:idateplace", f[4]);
 
+                //start-end date
                 DateTagger dt = new DateTagger();
                 List<Date> dates = dt.extractDates(f[4]);
                 if (dates.size() == 1)
@@ -80,6 +116,7 @@ public class CSVConvertor
                 else
                     System.err.println("Strange number of date values: " + f[4]);
                 
+                //country
                 CountriesTagger ct = new CountriesTagger();
                 List<String> countries = ct.extract(f[4]);
                 if (countries.size() >= 1)
@@ -88,10 +125,20 @@ public class CSVConvertor
                     outurl(f[0], "segm:country", uri);
                 }
 
+                //short titles
+                SubtitleParser sp = new SubtitleParser(f[3], new Vector<String>());
+                for (SubtitleParser.Event ev : sp.getWorkshops())
+                {
+                    out(f[0], "segm:ishort", ev.sname + ":" + ev.order);
+                }
+                SubtitleParser.Event coloc = sp.getColocEvent();
+                if (coloc != null)
+                    out(f[0], "segm:icoloc", coloc.sname);
                 
             }
             
             in.close();
+            dump();
         } catch (FileNotFoundException e)
         {
             e.printStackTrace();
