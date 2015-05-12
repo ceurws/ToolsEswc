@@ -6,7 +6,7 @@
 #
 
 #Run:
-#cat index.html | awk -f extr_titles_longcsv.awk | php -r 'while(($line=fgets(STDIN)) !== FALSE) echo html_entity_decode($line, ENT_QUOTES|ENT_HTML401);' >titles.csv
+#cat index.html | awk -f extr_titles_longcsv.awk | php -r 'while(($line=fgets(STDIN)) !== FALSE) echo html_entity_decode($line, ENT_QUOTES|ENT_HTML401);' >titles_long.csv
 
 function ltrim(s) { sub(/^[ \t\r\n]+/, "", s); return s }
 function rtrim(s) { sub(/[ \t\r\n\.,]+$/, "", s); return s }
