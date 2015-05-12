@@ -6,6 +6,7 @@ function help()
 	println("  console.browser() -- open the browser gui");
 	println("  processPage('http://ceur-ws.org/Vol-1/') -- process the given page and store the results");
 	println("  processTrainingSet() -- process the SemPub2015 training set and store the results");
+	println("  processEvaluationSet() -- process the SemPub2015 evaluations set (includes the training set as well) and store the results");
 	println("");
 }
 
@@ -47,6 +48,7 @@ function saveCurrentPage()
 
 storage.connect("http://localhost:8080/bigdata/sparql");
 proc.execInternal('js/eswc_training.js');
+proc.execInternal('js/eswc_eval.js');
 
 println("The console speaks JavaScript. Type help() for help.");
 
