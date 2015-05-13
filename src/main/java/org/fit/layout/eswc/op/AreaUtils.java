@@ -31,6 +31,7 @@ public class AreaUtils
         blackShort.add("IEEE");
         blackShort.add("ACM");
         blackShort.add("RDF");
+        blackShort.add("PhD");
     }
 
     /**
