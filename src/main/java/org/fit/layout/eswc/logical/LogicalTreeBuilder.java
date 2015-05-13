@@ -8,7 +8,6 @@ package org.fit.layout.eswc.logical;
 import java.io.File;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 import java.util.Vector;
@@ -33,21 +32,6 @@ import org.fit.layout.model.LogicalAreaTree;
 import org.fit.layout.model.Tag;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
-//TODO:
-//+ short title parsing vol-981
-//- match order numbers if there are no short titles in subtitle (vol-1317)
-//+ strip (ENDING) an trailing ., in editor affiliations
-//+ colocated may be also 'in conjunction with' -- vol-862
-//  nebo 'located at' -- vol-540
-//+ napojeni editoru muze byt i (1) -- vol-862
-//+ lepsi regularni vyraz na zkratky -- vol-859
-//+ vol-859 chybi keynotes na konci
-//+ zkusit i indent pro hledani sekci -- vol-250
-//+ vol-53 zmatek v editorech, chybi id u paperu
-//+ ALT atributy u obrazku -- vol-53
-//- multi-workshop volumes
-//+ vol-225 Georgia, affiliations
 
 
 /**
@@ -296,12 +280,12 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
         if (!ws.equals(iws))
             log.warn("Short name mismatch: {} x {}", ws, iws);
         
-        String coloc = (sp.getColocEvent() == null) ? sp.getColocEvent().sname : "";
+        String coloc = (sp.getColocEvent() != null) ? sp.getColocEvent().sname : "";
         String icoloc = IndexFile.getColoc(curvol);
         if (icoloc == null)
             icoloc = "";
         if (!coloc.equals(icoloc))
-            log.warn("Colocation mismatch: {} {}", coloc, icoloc);
+            log.warn("Colocation mismatch: {} x {}", coloc, icoloc);
             
     }
     
