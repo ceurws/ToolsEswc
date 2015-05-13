@@ -26,14 +26,18 @@ import java.util.Vector;
 public class IndexFile
 {
     private static Map<Integer, List<Integer>> related;
+    private static Map<Integer, List<String>> editors;
     private static Map<Integer, String> titles;
     private static Map<Integer, Date> dates;
+    private static CSVConvertor csv;
     
     static {
         try
         {
             loadRelated();
             loadTitles();
+            loadEditors();
+            loadCsv();
         } catch (IOException e)
         {
             System.err.println("CSV load failed: " + e.getMessage());
@@ -62,6 +66,33 @@ public class IndexFile
                 }
                 else
                     rel.add(n2);
+            }
+        }
+        is.close();
+    }
+
+    private static void loadEditors() throws IOException
+    {
+        //read the related workshops from related.csv
+        editors = new HashMap<Integer, List<String>>();
+        BufferedReader is = new BufferedReader(new InputStreamReader(ClassLoader.getSystemResourceAsStream("editors.csv")));
+        String line;
+        while ((line = is.readLine()) != null)
+        {
+            String s[] = line.split(";;");
+            if (s.length == 2)
+            {
+                final int n1 = parseVol(s[0]);
+                final String name = s[1];
+                List<String> rel = editors.get(n1);
+                if (rel == null)
+                {
+                    rel = new Vector<String>(5);
+                    rel.add(name);
+                    editors.put(n1, rel);
+                }
+                else
+                    rel.add(name);
             }
         }
         is.close();
@@ -101,6 +132,14 @@ public class IndexFile
         }
         is.close();
     }
+    
+    private static void loadCsv() throws IOException
+    {
+        csv = new CSVConvertor();
+        BufferedReader in = new BufferedReader(new InputStreamReader(ClassLoader.getSystemResourceAsStream("titles_long.csv")));
+        csv.parseIndex(in);
+        in.close();
+    }
 
     public static int parseVol(String vol)
     {
@@ -120,6 +159,11 @@ public class IndexFile
     public static Date getPubDate(int vol)
     {
         return dates.get(vol);
+    }
+    
+    public static List<String> getEditorNames(int vol)
+    {
+        return editors.get(vol);
     }
     
 }

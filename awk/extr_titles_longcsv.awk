@@ -39,6 +39,7 @@ tolower($0) ~ /^edited by:/ {
 tolower($0) ~ /proceedings/ {
 	if (afterTitle == 1) {
 		curproc = trim($0);
+		curdate = curproc; #the date is here or after the proceedings
 	}
 }
 

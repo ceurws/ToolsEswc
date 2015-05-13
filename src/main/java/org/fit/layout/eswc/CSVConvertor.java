@@ -13,6 +13,7 @@ import java.io.PrintWriter;
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.Collections;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
@@ -21,6 +22,8 @@ import java.util.Map;
 import java.util.Vector;
 
 import org.fit.layout.classify.taggers.DateTagger;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * 
@@ -28,45 +31,70 @@ import org.fit.layout.classify.taggers.DateTagger;
  */
 public class CSVConvertor
 {
-    private static Map<String, Map<String, String>> idata;
+    private static Logger log = LoggerFactory.getLogger(CSVConvertor.class);
+
+    //stored triples: volume URL -> predicate -> list of strings
+    private Map<String, Map<String, List<String>>> idata;
     
-    static {
-        idata = new HashMap<String, Map<String,String>>();
+    public CSVConvertor() 
+    {
+        idata = new HashMap<String, Map<String, List<String>>>();
     }
     
-    private static void store(String s, String p, String o)
+    private void store(String s, String p, String o)
     {
-        Map<String, String> vals = idata.get(s);
+        Map<String, List<String>> voldata = idata.get(s);
+        if (voldata == null)
+        {
+            voldata = new HashMap<String, List<String>>();
+            idata.put(s, voldata);
+        }
+        List<String> vals = voldata.get(p);
         if (vals == null)
         {
-            vals = new HashMap<String, String>();
-            idata.put(s, vals);
+            vals = new Vector<String>();
+            voldata.put(p, vals);
         }
-        vals.put(p, o);
+        vals.add(o);
     }
     
-    private static void out(String s, String p, String o)
+    private void out(String s, String p, String o)
     {
         //System.out.println(s + " " + p + " \"" + o + "\" .");
+        o = o.replaceAll("\"", "\\\\\"");
         store(s, p, "\"" + o + "\"");
     }
     
-    private static void outurl(String s, String p, String o)
+    private void outurl(String s, String p, String o)
     {
         //System.out.println(s + " " + p + " <" + o + "> .");
         store(s, p, "<" + o + ">");
     }
     
-    private static void dump(String destfile)
+    public List<String> getData(int vol, String pred)
+    {
+        String volstr = "<http://ceur-ws.org/Vol-" + vol + "/>";
+        Map<String, List<String>> vdata = idata.get(volstr);
+        if (vdata != null)
+        {
+            List<String> pdata = vdata.get(pred);
+            if (pdata != null)
+                return pdata;
+        }
+        return Collections.emptyList();
+    }
+    
+    public void dump(String destfile)
     {
         try
         {
             PrintWriter w = new PrintWriter(destfile);
-            for (Map.Entry<String, Map<String, String>> ventry : idata.entrySet())
+            for (Map.Entry<String, Map<String, List<String>>> ventry : idata.entrySet())
             {
-                for (Map.Entry<String, String> dentry : ventry.getValue().entrySet())
+                for (Map.Entry<String, List<String>> dentry : ventry.getValue().entrySet())
                 {
-                    w.println(ventry.getKey() + " " + dentry.getKey() + " " + dentry.getValue() + " .");
+                    for (String val : dentry.getValue())
+                        w.println(ventry.getKey() + " " + dentry.getKey() + " " + val + " .");
                 }
             }
             w.close();
@@ -77,7 +105,7 @@ public class CSVConvertor
         }
     }
     
-    private static void parseIndex(BufferedReader in) throws IOException
+    public void parseIndex(BufferedReader in) throws IOException
     {
         String line;
         while ((line = in.readLine()) != null)
@@ -85,7 +113,7 @@ public class CSVConvertor
             //volume title
             String[] f = line.split(";;");
             out(f[0], "segm:ititle", f[1]);
-            System.err.println(f[0]);
+            //System.err.println(f[0]);
             
             //date of publication
             DateFormat srcf = new SimpleDateFormat("dd-MMM-yyyy", Locale.ENGLISH);
@@ -96,7 +124,7 @@ public class CSVConvertor
                 out(f[0], "segm:isubmitted", dfmt.format(pubdate));
             } catch (ParseException e)
             {
-                System.err.println("Couldn't decode " + f[2] + ": " + e.getMessage());
+                log.error("Couldn't decode " + f[2] + ": " + e.getMessage());
             }
 
             //proceedings text 
@@ -118,7 +146,7 @@ public class CSVConvertor
                 out(f[0], "segm:ienddate", dfmt.format(dates.get(1)));
             }
             else
-                System.err.println("Strange number of date values: " + f[4]);
+                log.warn("Strange number of date values: {}", f[4]);
             
             //country
             CountriesTagger ct = new CountriesTagger();
@@ -156,10 +184,11 @@ public class CSVConvertor
         
         try
         {
+            CSVConvertor csv = new CSVConvertor();
             BufferedReader in = new BufferedReader(new FileReader(args[0]));
-            parseIndex(in);
+            csv.parseIndex(in);
             in.close();
-            dump(args[1]);
+            csv.dump(args[1]);
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {
