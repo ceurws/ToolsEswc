@@ -159,12 +159,12 @@ public class CSVConvertor
 
             //short titles
             SubtitleParser sp = new SubtitleParser(f[3], new Vector<String>());
-            for (SubtitleParser.Event ev : sp.getWorkshops())
+            for (Event ev : sp.getWorkshops())
             {
                 int o = (ev.order > 0) ? ev.order : 1;
                 out(f[0], "segm:ishort", ev.sname + ":" + o);
             }
-            SubtitleParser.Event coloc = sp.getColocEvent();
+            Event coloc = sp.getColocEvent();
             if (coloc != null)
                 out(f[0], "segm:icoloc", coloc.sname);
             

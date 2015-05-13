@@ -8,7 +8,9 @@ package org.fit.layout.eswc.logical;
 import java.io.File;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 import java.util.Vector;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -17,6 +19,7 @@ import org.fit.layout.classify.taggers.DateTagger;
 import org.fit.layout.classify.taggers.LocationsTagger;
 import org.fit.layout.eswc.Countries;
 import org.fit.layout.eswc.CountriesTagger;
+import org.fit.layout.eswc.Event;
 import org.fit.layout.eswc.IndexFile;
 import org.fit.layout.eswc.SubtitleParser;
 import org.fit.layout.eswc.op.AreaUtils;
@@ -85,6 +88,7 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
     private EswcLogicalTree tree;
     private LogicalArea rootArea;
     private Vector<Area> leaves;
+    private int curvol; //currently processed volume number
     
     private Area subtitle;
     
@@ -215,6 +219,7 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
     private LogicalArea createRoot(AreaTree tree)
     {
         String uri = tree.getRoot().getAllBoxes().firstElement().getPage().getSourceURL().toString();
+        curvol = Integer.parseInt(uri.substring("http://ceur-ws.org/Vol-".length(), uri.length() - 1));
         return new EswcLogicalArea(tree.getRoot(), uri, tagRoot);
     }
     
@@ -272,7 +277,7 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
         }
         //System.out.println("WS=" + sp.getWorkshops());
         //System.out.println("COLOC=" + sp.getColocEvent());
-        for (SubtitleParser.Event ev : sp.getWorkshops())
+        for (Event ev : sp.getWorkshops())
         {
             LogicalArea sa = new EswcLogicalArea(subtitle, ev.sname, tagVShort);
             rootArea.appendChild(sa);
@@ -284,6 +289,20 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
             LogicalArea sa = new EswcLogicalArea(subtitle, sp.getColocEvent().sname, tagColoc);
             rootArea.appendChild(sa);
         }
+        
+        //cross check
+        Set<Event> ws = sp.getWorkshops();
+        Set<Event> iws = IndexFile.getShortNames(curvol);
+        if (!ws.equals(iws))
+            log.warn("Short name mismatch: {} x {}", ws, iws);
+        
+        String coloc = (sp.getColocEvent() == null) ? sp.getColocEvent().sname : "";
+        String icoloc = IndexFile.getColoc(curvol);
+        if (icoloc == null)
+            icoloc = "";
+        if (!coloc.equals(icoloc))
+            log.warn("Colocation mismatch: {} {}", coloc, icoloc);
+            
     }
     
     private void addVDates()
@@ -294,18 +313,29 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
             DateTagger dt = new DateTagger();
             List<Date> dates = dt.extractDates(a.getText());
             SimpleDateFormat dfmt = new SimpleDateFormat("yyyy-MM-dd");
+            String[] datestr = new String[2];
             if (dates.size() == 1)
             {
-                rootArea.appendChild(new EswcLogicalArea(a, dfmt.format(dates.get(0)), tagStartDate));
-                rootArea.appendChild(new EswcLogicalArea(a, dfmt.format(dates.get(0)), tagEndDate));
+                datestr[0] = datestr[1] = dfmt.format(dates.get(0));
             }
             else if (dates.size() == 2)
             {
-                rootArea.appendChild(new EswcLogicalArea(a, dfmt.format(dates.get(0)), tagStartDate));
-                rootArea.appendChild(new EswcLogicalArea(a, dfmt.format(dates.get(1)), tagEndDate));
+                datestr[0] = dfmt.format(dates.get(0));
+                datestr[1] = dfmt.format(dates.get(1));
             }
             else
                 log.warn("Strange number of date values: {} in {}", dates, a.getText());
+            
+            if (dates.size() == 1 || dates.size() == 2)
+            {
+                rootArea.appendChild(new EswcLogicalArea(a, datestr[0], tagStartDate));
+                rootArea.appendChild(new EswcLogicalArea(a, datestr[1], tagEndDate));
+                
+                //cross-check with index
+                String[] idates = IndexFile.getDates(curvol);
+                if (!datestr[0].equals(idates[0]) || !datestr[1].equals(idates[1]))
+                    log.warn("Date mismatch: {} {}", idates, datestr);
+            }
         }
         else
             log.warn("No dates found");
@@ -335,6 +365,7 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
     
     private void addEditors()
     {
+        Vector<String> names = new Vector<String>(); 
         //extend editors till the end of the last line
         Area last = leaves.elementAt(editorEnd);
         while (editorEnd + 1 < leaves.size())
@@ -357,7 +388,7 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
             if (a.hasTag(tagVEditor, ms))
             {
                 if (curEd != null)
-                    saveEditor(curEd, textb.toString().trim());
+                    names.addAll(saveEditor(curEd, textb.toString().trim()));
                 curEd = a;
                 textb = new StringBuilder(a.getText());
             }
@@ -368,11 +399,28 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
             }
         }
         if (curEd != null)
-            saveEditor(curEd, textb.toString().trim());
+            names.addAll(saveEditor(curEd, textb.toString().trim()));
+        
+        //cross-check with index file
+        List<String> inames = IndexFile.getEditorNames(curvol);
+        Vector<String> i1 = new Vector<String>(inames);
+        i1.removeAll(names);
+        names.removeAll(inames);
+        if (!i1.isEmpty() || !names.isEmpty())
+        {
+            log.warn("Editors mismatch: {} {}", i1, inames);
+        }
     }
     
-    private void saveEditor(Area editor, String text)
+    /**
+     * Saves the editor data to RDF.
+     * @param editor
+     * @param text
+     * @return the extracted editor names
+     */
+    private List<String> saveEditor(Area editor, String text)
     {
+        Vector<String> ret = new Vector<String>(3);
         //System.out.println("ED: " + text);
         //find the name
         int i = 0;
@@ -425,6 +473,7 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
             for (String curname : names)
             {
                 LogicalArea aname = new EswcLogicalArea(editor, curname.trim(), tagVEditor);
+                ret.add(curname.trim());
                 rootArea.appendChild(aname);
                 LogicalArea aaffil = new EswcLogicalArea(editor, affil.trim(), tagEAffil);
                 aname.appendChild(aaffil);
@@ -441,6 +490,8 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
         }
         else
             log.warn("Couldn't find editor name: {}", text);
+        
+        return ret;
     }
     
     private String completeAffil(String src)
