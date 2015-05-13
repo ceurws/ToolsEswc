@@ -32,6 +32,8 @@ public class AreaUtils
         blackShort.add("ACM");
         blackShort.add("RDF");
         blackShort.add("PhD");
+        blackShort.add("USA");
+        blackShort.add("UK");
     }
 
     /**

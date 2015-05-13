@@ -318,7 +318,7 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
                 //cross-check with index
                 String[] idates = IndexFile.getDates(curvol);
                 if (!datestr[0].equals(idates[0]) || !datestr[1].equals(idates[1]))
-                    log.warn("Date mismatch: {} {}", idates, datestr);
+                    log.warn("Date mismatch: {} x {}", datestr, idates);
             }
         }
         else

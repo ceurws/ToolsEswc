@@ -25,6 +25,10 @@ import org.fit.layout.classify.taggers.DateTagger;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+/*
+ * TODO: ESWC, ISWC, WWW, ICSOC colocated
+ */
+
 /**
  * 
  * @author burgetr
