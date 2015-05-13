@@ -200,6 +200,11 @@ public class IndexFile
             return null;
     }
     
+    public static void dumpIndex(String file)
+    {
+        csv.dump(file);
+    }
+    
     private static String unquote(String src)
     {
         return src.replaceAll("^\"", "").replaceAll("\"$", "");

@@ -54,6 +54,11 @@ public class ConsoleEswc extends Console
         BlockBrowserEswc.main(new String[0]);
     }
     
+    public void dumpIndex(String destfile)
+    {
+        IndexFile.dumpIndex(destfile);
+    }
+    
     public static void main(String[] args)
     {
         System.out.println("FitLayout interactive console [ESWC]");
