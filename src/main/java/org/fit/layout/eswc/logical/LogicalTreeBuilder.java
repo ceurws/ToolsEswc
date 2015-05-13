@@ -389,10 +389,11 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
         List<String> inames = IndexFile.getEditorNames(curvol);
         Vector<String> i1 = new Vector<String>(inames);
         i1.removeAll(names);
-        names.removeAll(inames);
-        if (!i1.isEmpty() || !names.isEmpty())
+        Vector<String> i2 = new Vector<String>(names);
+        i2.removeAll(inames);
+        if (!i1.isEmpty() || !i2.isEmpty())
         {
-            log.warn("Editors mismatch: {} {}", i1, inames);
+            log.warn("Editors mismatch: {} x {} ~~ ({} / {})", names, inames, i1, i2);
         }
     }
     
