@@ -15,12 +15,12 @@ Running the Extraction Task
 
 Run the extraction tool using
 ```
-java -jar  SemPub2015Extractor.jar
+java -jar SemPub2015Extractor.jar
 ```
 
 This will start a FitLayout JavaScript console. Use `help()` command for obtaining more info.
 
-For accomplishing the SemPub2015 Task1 the following command should be used:
+For accomplishing the SemPub2015 Task1 the following commands should be used:
 ```
 processEvaluationSet();
 transformToDomain();
@@ -35,4 +35,4 @@ SPARQL Queries
 --------------
 The SPARQL queries corresponding to the individual SemPub2015 queries are located in [sparql/ESWC2015-queries.txt](https://github.com/FitLayout/ToolsEswc/blob/master/sparql/ESWC2015-queries.txt).
 
-The transformation query from the domain-independent logical model to the domain-dependent CEUR workshop ontology is located in [logicalTree2domain.sparql](https://github.com/FitLayout/ToolsEswc/blob/master/src/main/resources/sparql/logicalTree2domain.sparql).
+The transformation query from the domain-independent logical model to the domain-dependent CEUR workshop ontology is located in [logicalTree2domain.sparql](https://github.com/FitLayout/ToolsEswc/blob/master/src/main/resources/sparql/logicalTree2domain.sparql). The transformation itself is included in the `transformToDomain()` call so it's not necessary to execute this query manually.
