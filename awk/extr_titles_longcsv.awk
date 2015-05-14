@@ -11,7 +11,7 @@
 function ltrim(s) { sub(/^[ \t\r\n]+/, "", s); return s }
 function rtrim(s) { sub(/[ \t\r\n\.,]+$/, "", s); return s }
 function trim(s)  { return rtrim(ltrim(s)); }
-function clean(s) { sub(/<\/?[A-Za-z]+>/, "", s); return s }
+function clean(s) { gsub(/<\/?[A-Za-z]+>/, "", s); return s }
 
 BEGIN {
 	curvol="none";
