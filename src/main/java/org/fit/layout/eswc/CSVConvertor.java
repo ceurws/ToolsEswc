@@ -10,6 +10,7 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.io.Writer;
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -115,19 +116,27 @@ public class CSVConvertor
         }
     }
     
+    public void dump(Writer writer)
+    {
+        PrintWriter w = new PrintWriter(writer);
+        w.println("@prefix segm: <http://fitlayout.github.io/ontology/segmentation.owl#> .");
+        for (Map.Entry<String, Map<String, List<String>>> ventry : idata.entrySet())
+        {
+            for (Map.Entry<String, List<String>> dentry : ventry.getValue().entrySet())
+            {
+                for (String val : dentry.getValue())
+                    w.println(ventry.getKey() + " " + dentry.getKey() + " " + val + " .");
+            }
+        }
+        w.close();
+    }
+    
     public void dump(String destfile)
     {
         try
         {
             PrintWriter w = new PrintWriter(destfile);
-            for (Map.Entry<String, Map<String, List<String>>> ventry : idata.entrySet())
-            {
-                for (Map.Entry<String, List<String>> dentry : ventry.getValue().entrySet())
-                {
-                    for (String val : dentry.getValue())
-                        w.println(ventry.getKey() + " " + dentry.getKey() + " " + val + " .");
-                }
-            }
+            dump(w);
             w.close();
         }
         catch (FileNotFoundException e)

@@ -4,9 +4,17 @@ function help()
 	println("HELP:");
 	println("  console.exit() -- exit console");
 	println("  console.browser() -- open the browser gui");
+	println("  storage.connect('http://localhost:8080/bigdata/sparql') -- connect a SPARQL endpoint for storing the data");
 	println("  processPage('http://ceur-ws.org/Vol-1/') -- process the given page and store the results");
 	println("  processTrainingSet() -- process the SemPub2015 training set and store the results");
 	println("  processEvaluationSet() -- process the SemPub2015 evaluations set (includes the training set as well) and store the results");
+	println("  transformToDomain() -- transform all the data to the target domain");
+	println("");
+	println("For accomplishing the SemPub2015 Task1 the following command should be used:");
+	println("  processEvaluationSet(); transformToDomain();");
+	println("");
+	println("This assumes the Blazegraph storage to be running at http://localhost:8080/bigdata. Use storage.connect() to connect another repository.");
+	println("After this, the storage should contain the complete extracted data.");
 	println("");
 }
 
@@ -48,8 +56,20 @@ function saveCurrentPage()
 
 function dumpIndex()
 {
-	console.dumpIndex('/tmp/all.n3');
-	console.dumpEditors('/tmp/editors.n3');
+	console.dumpIndex('/tmp/all.ttl');
+	console.dumpEditors('/tmp/editors.ttl');
+}
+
+function transformToDomain()
+{
+	//import index data
+	storage.importTurtleFromResource('related.ttl');
+	storage.importTurtle(console.dumpIndex());
+	storage.importTurtle(console.dumpEditors());
+	//transform index data to domain
+	storage.execQueryFromResource('sparql/constructIndex.sparql');
+	//transform volume data to domain
+	storage.execQueryFromResource('sparql/logicalTree2domain.sparql');
 }
 
 storage.connect("http://localhost:8080/bigdata/sparql");

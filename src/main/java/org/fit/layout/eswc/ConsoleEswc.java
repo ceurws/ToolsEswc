@@ -59,9 +59,19 @@ public class ConsoleEswc extends Console
         IndexFile.dumpIndex(destfile);
     }
     
+    public String dumpIndex()
+    {
+        return IndexFile.dumpIndex();
+    }
+    
     public void dumpEditors(String destfile)
     {
         IndexFile.dumpEditors(destfile);
+    }
+    
+    public String dumpEditors()
+    {
+        return IndexFile.dumpEditors();
     }
     
     public static void main(String[] args)

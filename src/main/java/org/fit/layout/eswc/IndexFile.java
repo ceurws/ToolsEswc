@@ -10,6 +10,8 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
+import java.io.StringWriter;
+import java.io.Writer;
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -244,7 +246,7 @@ public class IndexFile
     public static void setColoc(int vol, String coloc)
     {
         csv.remove(vol, "segm:icoloc");
-        csv.addStr(vol, "srgm:icoloc", coloc);
+        csv.addStr(vol, "segm:icoloc", coloc);
     }
     
     public static void dumpIndex(String file)
@@ -252,22 +254,58 @@ public class IndexFile
         csv.dump(file);
     }
     
+    public static String dumpIndex()
+    {
+        try
+        {
+            StringWriter w = new StringWriter();
+            csv.dump(w);
+            w.close();
+            return w.getBuffer().toString();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return "";
+    }
+    
+    public static void dumpEditors(Writer writer)
+    {
+        PrintWriter w = new PrintWriter(writer);
+        w.println("@prefix segm: <http://fitlayout.github.io/ontology/segmentation.owl#> .");
+        for (Map.Entry<Integer, List<String>> ventry : editors.entrySet())
+        {
+            for (String val : ventry.getValue())
+                w.println("<http://ceur-ws.org/Vol-" + ventry.getKey() + "/>" + " segm:editorname \"" + val + "\" .");
+        }
+        w.close();
+    }
+    
     public static void dumpEditors(String file)
     {
         try
         {
             PrintWriter w = new PrintWriter(file);
-            for (Map.Entry<Integer, List<String>> ventry : editors.entrySet())
-            {
-                for (String val : ventry.getValue())
-                    w.println("<http://ceur-ws.org/Vol-" + ventry.getKey() + "/>" + " segm:editorname \"" + val + "\" .");
-            }
+            dumpEditors(w);
             w.close();
         }
         catch (FileNotFoundException e)
         {
             e.printStackTrace();
         }
+    }
+    
+    public static String dumpEditors()
+    {
+        try
+        {
+            StringWriter w = new StringWriter();
+            dumpEditors(w);
+            w.close();
+            return w.getBuffer().toString();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return "";
     }
     
     private static String unquote(String src)
