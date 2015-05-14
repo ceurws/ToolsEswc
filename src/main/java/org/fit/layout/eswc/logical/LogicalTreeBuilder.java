@@ -288,6 +288,7 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
         if (!ws.equals(iws))
         {
             log.warn("Short name mismatch: {} x {}", ws, iws);
+            IndexFile.setShortNames(curvol, ws);
         }
         
         String coloc = (sp.getColocEvent() != null) ? sp.getColocEvent().sname : "";
@@ -295,7 +296,10 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
         if (icoloc == null)
             icoloc = "";
         if (!coloc.equals(icoloc))
+        {
             log.warn("Colocation mismatch: {} x {}", coloc, icoloc);
+            IndexFile.setColoc(curvol, coloc);
+        }
         
         //output acronyms
         for (Event ev : ws)
@@ -341,28 +345,34 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
             {
                 //cross-check with index
                 Date[] idates = IndexFile.getDates(curvol);
-                for (int i = 0; i < 2; i++)
+                if (idates[0] != null && idates[1] != null)
                 {
-                    Calendar c1 = Calendar.getInstance();
-                    c1.setTime(dates.get(i));
-                    Calendar c2 = Calendar.getInstance();
-                    c2.setTime(idates[i]);
-                
-                    if (c1.get(Calendar.DAY_OF_MONTH) != c2.get(Calendar.DAY_OF_MONTH)
-                            || c1.get(Calendar.MONTH) != c2.get(Calendar.MONTH)
-                            || c1.get(Calendar.YEAR) != c2.get(Calendar.YEAR))
+                    for (int i = 0; i < 2; i++)
                     {
-                        log.warn("Date mismatch: {} x {}", dates, idates);
-                        if (c1.get(Calendar.DAY_OF_MONTH) == c2.get(Calendar.DAY_OF_MONTH)
-                                && c1.get(Calendar.MONTH) == c2.get(Calendar.MONTH)
-                                && c1.get(Calendar.YEAR) == 2015
-                                && c2.get(Calendar.YEAR) < 2015)
+                        Calendar c1 = Calendar.getInstance();
+                        c1.setTime(dates.get(i));
+                        Calendar c2 = Calendar.getInstance();
+                        c2.setTime(idates[i]);
+                    
+                        if (c1.get(Calendar.DAY_OF_MONTH) != c2.get(Calendar.DAY_OF_MONTH)
+                                || c1.get(Calendar.MONTH) != c2.get(Calendar.MONTH)
+                                || c1.get(Calendar.YEAR) != c2.get(Calendar.YEAR))
                         {
-                            dates.set(i, idates[i]);
-                            log.warn("Using {} " + idates[i]);
+                            log.warn("Date mismatch: {} x {}", dates, idates);
+                            if (c1.get(Calendar.DAY_OF_MONTH) == c2.get(Calendar.DAY_OF_MONTH)
+                                    && c1.get(Calendar.MONTH) == c2.get(Calendar.MONTH)
+                                    && c1.get(Calendar.YEAR) == 2015
+                                    && c2.get(Calendar.YEAR) < 2015)
+                            {
+                                dates.set(i, idates[i]);
+                                log.warn("Using {} " + idates[i]);
+                            }
                         }
+                        IndexFile.setDates(curvol, dates.get(0), dates.get(1));
                     }
                 }
+                else
+                    log.warn("No dates in index file for vol {}", curvol);
                 
                 rootArea.appendChild(new EswcLogicalArea(a, dfmt.format(dates.get(0)), tagStartDate));
                 rootArea.appendChild(new EswcLogicalArea(a, dfmt.format(dates.get(1)), tagEndDate));
@@ -443,6 +453,7 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
         if (!i1.isEmpty() || !i2.isEmpty())
         {
             log.warn("Editors mismatch: {} x {} ~~ ({} / {})", names, inames, i1, i2);
+            IndexFile.setEditorNames(curvol, names);
         }
     }
     

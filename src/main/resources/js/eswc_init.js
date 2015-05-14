@@ -46,6 +46,12 @@ function saveCurrentPage()
 	storage.saveAreaTree(proc.areaTree, proc.logicalAreaTree, proc.page.sourceURL);
 }
 
+function dumpIndex()
+{
+	console.dumpIndex('/tmp/all.n3');
+	console.dumpEditors('/tmp/editors.n3');
+}
+
 storage.connect("http://localhost:8080/bigdata/sparql");
 proc.execInternal('js/eswc_training.js');
 proc.execInternal('js/eswc_eval.js');

@@ -6,8 +6,10 @@
 package org.fit.layout.eswc;
 
 import java.io.BufferedReader;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.io.PrintWriter;
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -168,6 +170,11 @@ public class IndexFile
         return editors.get(vol);
     }
     
+    public static void setEditorNames(int vol, List<String> names)
+    {
+        editors.put(vol, new Vector<String>(names));
+    }
+    
     public static Date[] getDates(int vol)
     {
         SimpleDateFormat dfmt = new SimpleDateFormat("yyyy-MM-dd");
@@ -193,6 +200,15 @@ public class IndexFile
         return ret;
     }
     
+    public static void setDates(int vol, Date d1, Date d2)
+    {
+        SimpleDateFormat dfmt = new SimpleDateFormat("yyyy-MM-dd");
+        csv.remove(vol, "segm:istartdate");
+        csv.addStr(vol, "segm:istartdate", dfmt.format(d1));
+        csv.remove(vol, "segm:ienddate");
+        csv.addStr(vol, "segm:ienddate", dfmt.format(d2));
+    }
+    
     public static Set<Event> getShortNames(int vol)
     {
         HashSet<Event> ret = new HashSet<Event>();
@@ -206,6 +222,16 @@ public class IndexFile
         return ret;
     }
     
+    public static void setShortNames(int vol, Set<Event> events)
+    {
+        csv.remove(vol, "segm:ishort");
+        for (Event ev : events)
+        {
+            int o = (ev.order > 0) ? ev.order : 1; 
+            csv.addStr(vol, "segm:ishort", ev.sname + ":" + o);
+        }
+    }
+    
     public static String getColoc(int vol)
     {
         List<String> cnames = csv.getData(vol, "segm:icoloc");
@@ -214,10 +240,34 @@ public class IndexFile
         else
             return null;
     }
+
+    public static void setColoc(int vol, String coloc)
+    {
+        csv.remove(vol, "segm:icoloc");
+        csv.addStr(vol, "srgm:icoloc", coloc);
+    }
     
     public static void dumpIndex(String file)
     {
         csv.dump(file);
+    }
+    
+    public static void dumpEditors(String file)
+    {
+        try
+        {
+            PrintWriter w = new PrintWriter(file);
+            for (Map.Entry<Integer, List<String>> ventry : editors.entrySet())
+            {
+                for (String val : ventry.getValue())
+                    w.println("<http://ceur-ws.org/Vol-" + ventry.getKey() + "/>" + " segm:editorname \"" + val + "\" .");
+            }
+            w.close();
+        }
+        catch (FileNotFoundException e)
+        {
+            e.printStackTrace();
+        }
     }
     
     private static String unquote(String src)
