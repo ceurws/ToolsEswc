@@ -16,18 +16,16 @@ import java.text.SimpleDateFormat;
 import java.util.Collections;
 import java.util.Date;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Locale;
 import java.util.Map;
+import java.util.Set;
 import java.util.Vector;
 
 import org.fit.layout.classify.taggers.DateTagger;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
-/*
- * TODO: ESWC, ISWC, WWW, ICSOC colocated
- */
 
 /**
  * 
@@ -37,6 +35,21 @@ public class CSVConvertor
 {
     private static Logger log = LoggerFactory.getLogger(CSVConvertor.class);
 
+    /** 
+     * The most frequent conference acronyms to avoid colisions with workshop acronyms.
+     * These are only used when the proceedings page is not included in the dataset and therefore,
+     * the complete colocation information is not available.
+     */
+    private static Set<String> confList;
+    static {
+        confList = new HashSet<String>(5);
+        confList.add("ESWC");
+        confList.add("ISWC");
+        confList.add("WWW");
+        confList.add("ICSOC");
+        confList.add("LPNMR");
+    }
+    
     //stored triples: volume URL -> predicate -> list of strings
     private Map<String, Map<String, List<String>>> idata;
     
@@ -163,14 +176,20 @@ public class CSVConvertor
 
             //short titles
             SubtitleParser sp = new SubtitleParser(f[3], new Vector<String>());
+            String pcoloc = null;
             for (Event ev : sp.getWorkshops())
             {
                 int o = (ev.order > 0) ? ev.order : 1;
-                out(f[0], "segm:ishort", ev.sname + ":" + o);
+                if (!confList.contains(ev.sname))
+                    out(f[0], "segm:ishort", ev.sname + ":" + o);
+                else
+                    pcoloc = ev.sname;
             }
             Event coloc = sp.getColocEvent();
             if (coloc != null)
                 out(f[0], "segm:icoloc", coloc.sname);
+            else if (pcoloc != null)
+                out(f[0], "segm:icoloc", pcoloc);
             
         }
     }

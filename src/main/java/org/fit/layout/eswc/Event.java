@@ -2,26 +2,26 @@ package org.fit.layout.eswc;
 
 public class Event
 {
-    /**
-     * 
-     */
     public int order;
     public String sname;
     
     public Event()
     {
-        order = 1;
+        order = -1;
         sname = null;
     }
     
     public Event(int order, String sname)
     {
         this.order = order;
-        if (this.order <= 0)
-            this.order = 1;
         this.sname = sname;
     }
 
+    public int getEffectiveOrder()
+    {
+        return (order <= 0) ? 1 : order;
+    }
+    
     @Override
     public String toString()
     {
@@ -33,7 +33,7 @@ public class Event
     {
         final int prime = 31;
         int result = 1;
-        result = prime * result + order;
+        result = prime * result + getEffectiveOrder();
         result = prime * result + ((sname == null) ? 0 : sname.hashCode());
         return result;
     }
@@ -45,7 +45,7 @@ public class Event
         if (obj == null) return false;
         if (getClass() != obj.getClass()) return false;
         Event other = (Event) obj;
-        if (order != other.order) return false;
+        if (getEffectiveOrder() != other.getEffectiveOrder()) return false;
         if (sname == null)
         {
             if (other.sname != null) return false;

@@ -92,7 +92,10 @@ public class BlockBrowserEswc extends BlockBrowser
                     //URL url = new URL("http://ceur-ws.org/Vol-1333/");
                     //URL url = new URL("http://ceur-ws.org/Vol-1317/");
                     //URL url = new URL("http://ceur-ws.org/Vol-1128/");
-                    URL url = new URL("http://ceur-ws.org/Vol-902/");
+                    //URL url = new URL("http://ceur-ws.org/Vol-1044/");
+                    //URL url = new URL("http://ceur-ws.org/Vol-906/");
+                    //URL url = new URL("http://ceur-ws.org/Vol-902/");
+                    URL url = new URL("http://ceur-ws.org/Vol-573/");
                     //URL url = new URL("http://ceur-ws.org/Vol-671/");
                     //URL url = new URL("http://ceur-ws.org/Vol-585/");
                     //URL url = new URL("http://ceur-ws.org/Vol-540/");

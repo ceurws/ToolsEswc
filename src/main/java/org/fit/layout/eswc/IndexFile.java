@@ -168,7 +168,22 @@ public class IndexFile
         return editors.get(vol);
     }
     
-    public static String[] getDates(int vol)
+    public static Date[] getDates(int vol)
+    {
+        SimpleDateFormat dfmt = new SimpleDateFormat("yyyy-MM-dd");
+        Date[] ret = new Date[2];
+        try {
+            List<String> slist = csv.getData(vol, "segm:istartdate");
+            ret[0] = (slist.size() > 0) ? dfmt.parse(unquote(slist.get(0))) : null;
+            List<String> elist = csv.getData(vol, "segm:ienddate");
+            ret[1] = (elist.size() > 0) ? dfmt.parse(unquote(elist.get(0))) : null;
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
+        return ret;
+    }
+    
+    public static String[] getDatesStr(int vol)
     {
         String[] ret = new String[2];
         List<String> slist = csv.getData(vol, "segm:istartdate");

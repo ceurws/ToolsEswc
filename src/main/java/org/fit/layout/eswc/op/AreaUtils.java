@@ -34,6 +34,7 @@ public class AreaUtils
         blackShort.add("PhD");
         blackShort.add("USA");
         blackShort.add("UK");
+        blackShort.add("AI");
     }
 
     /**

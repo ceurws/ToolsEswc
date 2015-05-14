@@ -8,6 +8,7 @@ package org.fit.layout.eswc.logical;
 import java.io.File;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 import java.util.Vector;
@@ -32,6 +33,8 @@ import org.fit.layout.model.LogicalAreaTree;
 import org.fit.layout.model.Tag;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import com.ibm.icu.util.Calendar;
 
 
 /**
@@ -259,9 +262,43 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
             log.warn("No subtitle!");
             sp = new SubtitleParser("", titleShorts);
         }
-        //System.out.println("WS=" + sp.getWorkshops());
-        //System.out.println("COLOC=" + sp.getColocEvent());
-        for (Event ev : sp.getWorkshops())
+        
+        //cross check
+        Set<Event> ws = sp.getWorkshops();
+        Set<Event> iws = IndexFile.getShortNames(curvol);
+        if (!ws.equals(iws))
+        {
+            Set<Event> cws = new HashSet<Event>();
+            //try to complete missing orders from index
+            for (Event ev : ws)
+            {
+                if (ev.order == -1)
+                {
+                    Event iev = findEventByName(iws, ev.sname);
+                    if (iev != null)
+                        cws.add(iev);
+                    else
+                        cws.add(ev);
+                }
+                else
+                    cws.add(ev);
+            }
+            ws = cws;
+        }
+        if (!ws.equals(iws))
+        {
+            log.warn("Short name mismatch: {} x {}", ws, iws);
+        }
+        
+        String coloc = (sp.getColocEvent() != null) ? sp.getColocEvent().sname : "";
+        String icoloc = IndexFile.getColoc(curvol);
+        if (icoloc == null)
+            icoloc = "";
+        if (!coloc.equals(icoloc))
+            log.warn("Colocation mismatch: {} x {}", coloc, icoloc);
+        
+        //output acronyms
+        for (Event ev : ws)
         {
             LogicalArea sa = new EswcLogicalArea(subtitle, ev.sname, tagVShort);
             rootArea.appendChild(sa);
@@ -274,19 +311,17 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
             rootArea.appendChild(sa);
         }
         
-        //cross check
-        Set<Event> ws = sp.getWorkshops();
-        Set<Event> iws = IndexFile.getShortNames(curvol);
-        if (!ws.equals(iws))
-            log.warn("Short name mismatch: {} x {}", ws, iws);
-        
-        String coloc = (sp.getColocEvent() != null) ? sp.getColocEvent().sname : "";
-        String icoloc = IndexFile.getColoc(curvol);
-        if (icoloc == null)
-            icoloc = "";
-        if (!coloc.equals(icoloc))
-            log.warn("Colocation mismatch: {} x {}", coloc, icoloc);
             
+    }
+    
+    private Event findEventByName(Set<Event> set, String name)
+    {
+        for (Event ev : set)
+        {
+            if (ev.sname.equals(name))
+                return ev;
+        }
+        return null;
     }
     
     private void addVDates()
@@ -297,29 +332,43 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
             DateTagger dt = new DateTagger();
             List<Date> dates = dt.extractDates(a.getText());
             SimpleDateFormat dfmt = new SimpleDateFormat("yyyy-MM-dd");
-            String[] datestr = new String[2];
+            
             if (dates.size() == 1)
             {
-                datestr[0] = datestr[1] = dfmt.format(dates.get(0));
+                dates.add(dates.get(0));
             }
-            else if (dates.size() == 2)
+            if (dates.size() == 2)
             {
-                datestr[0] = dfmt.format(dates.get(0));
-                datestr[1] = dfmt.format(dates.get(1));
+                //cross-check with index
+                Date[] idates = IndexFile.getDates(curvol);
+                for (int i = 0; i < 2; i++)
+                {
+                    Calendar c1 = Calendar.getInstance();
+                    c1.setTime(dates.get(i));
+                    Calendar c2 = Calendar.getInstance();
+                    c2.setTime(idates[i]);
+                
+                    if (c1.get(Calendar.DAY_OF_MONTH) != c2.get(Calendar.DAY_OF_MONTH)
+                            || c1.get(Calendar.MONTH) != c2.get(Calendar.MONTH)
+                            || c1.get(Calendar.YEAR) != c2.get(Calendar.YEAR))
+                    {
+                        log.warn("Date mismatch: {} x {}", dates, idates);
+                        if (c1.get(Calendar.DAY_OF_MONTH) == c2.get(Calendar.DAY_OF_MONTH)
+                                && c1.get(Calendar.MONTH) == c2.get(Calendar.MONTH)
+                                && c1.get(Calendar.YEAR) == 2015
+                                && c2.get(Calendar.YEAR) < 2015)
+                        {
+                            dates.set(i, idates[i]);
+                            log.warn("Using {} " + idates[i]);
+                        }
+                    }
+                }
+                
+                rootArea.appendChild(new EswcLogicalArea(a, dfmt.format(dates.get(0)), tagStartDate));
+                rootArea.appendChild(new EswcLogicalArea(a, dfmt.format(dates.get(1)), tagEndDate));
             }
             else
                 log.warn("Strange number of date values: {} in {}", dates, a.getText());
-            
-            if (dates.size() == 1 || dates.size() == 2)
-            {
-                rootArea.appendChild(new EswcLogicalArea(a, datestr[0], tagStartDate));
-                rootArea.appendChild(new EswcLogicalArea(a, datestr[1], tagEndDate));
-                
-                //cross-check with index
-                String[] idates = IndexFile.getDates(curvol);
-                if (!datestr[0].equals(idates[0]) || !datestr[1].equals(idates[1]))
-                    log.warn("Date mismatch: {} x {}", datestr, idates);
-            }
         }
         else
             log.warn("No dates found");
@@ -447,6 +496,13 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
                 String s = matcher.group(0); 
                 affsect = s.substring(1, s.length() - 1);
                 affil = affil.substring(0, affil.length() - s.length()).trim();
+            }
+            
+            //no affiliation but some section -- the section is probably affiliation
+            if (affil.trim().length() == 0 && affsect != null)
+            {
+                affil = affsect;
+                affsect = null;
             }
             
             //complete the affiliation when symbols are used
@@ -728,7 +784,7 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
                 String nt = next.getText().trim();
                 if (nt.length() > 0)
                 {
-                    if (Character.isAlphabetic(nt.charAt(0)))
+                    if (Character.isAlphabetic(nt.charAt(0)) && !nt.contains("proceedings"))
                     {
                         sb.append(", ");
                         sb.append(next.getText());

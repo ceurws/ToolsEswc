@@ -76,7 +76,7 @@ public class SubtitleParser
             tokens.add(new Token(matcher.start(), TType.ORD, order));
         }
         
-        matcher = Pattern.compile("workshop|col?\\p{Pd}*ll?ocated|in conjunction|located at").matcher(src.toLowerCase());
+        matcher = Pattern.compile("workshop|col?\\p{Pd}*ll?ocated|in\\s+conjun?ction|located at").matcher(src.toLowerCase());
         while (matcher.find())
         {
             final String word = matcher.group(0);
@@ -124,7 +124,7 @@ public class SubtitleParser
         //if collocated not found, try to use 'at' if present
         if (coloc == null && at != null)
         {
-            if (behindat != null && behindat.type == TType.SHORT)
+            if (behindat != null && (behindat.type == TType.SHORT || behindat.type == TType.ORD))
                 coloc = at;
         }
         
@@ -224,10 +224,13 @@ public class SubtitleParser
                 {
                     for (Token t : tokens)
                     {
+                        if (coloc != null && t.pos >= coloc.pos)
+                            break; //do not search afrer colocated
                         if (!t.used && t.type == TType.ORD)
                         {
                             t.used = true;
                             ord = parseOrder(t.value);
+                            break;
                         }
                     }
                 }
