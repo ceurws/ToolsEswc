@@ -218,7 +218,7 @@ public class IndexFile
         for (String s : snames)
         {
             String[] parts = unquote(s).split(":");
-            Event e = new Event(Integer.parseInt(parts[1]), parts[0]);
+            Event e = new Event(Integer.parseInt(parts[1]), parts[0], null);
             ret.add(e);
         }
         return ret;

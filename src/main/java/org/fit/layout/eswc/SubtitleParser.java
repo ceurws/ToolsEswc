@@ -145,7 +145,7 @@ public class SubtitleParser
                         ordt.used = true;
                         ord = Integer.parseInt(ordt.value.substring(0, ordt.value.length() - 2));
                     }
-                    colocEvent = new Event(ord, t.value);
+                    colocEvent = new Event(ord, t.value, null);
                     break;
                 }
             }
@@ -191,7 +191,7 @@ public class SubtitleParser
                     ordt.used = true;
                     ord = Integer.parseInt(ordt.value.substring(0, ordt.value.length() - 2));
                 }
-                colocEvent = new Event(ord, t.value);
+                colocEvent = new Event(ord, t.value, null);
             }
         }
     }
@@ -220,6 +220,8 @@ public class SubtitleParser
             if (idx == -1) //not found in the subtitle (probably only in title)
             {
                 int ord = -1;
+                Token ordt = null;
+                String wtitle = null;
                 if (!ipresent) //none present, map the order numbers in order of appearance
                 {
                     for (Token t : tokens)
@@ -229,27 +231,83 @@ public class SubtitleParser
                         if (!t.used && t.type == TType.ORD)
                         {
                             t.used = true;
+                            ordt = t;
                             ord = parseOrder(t.value);
                             break;
                         }
                     }
+                    if (ordt != null) //search for title between order and some end
+                    {
+                        wtitle = extractTitle(ordt, coloc);                        
+                    }
                 }
-                ws.add(new Event(ord, names.elementAt(ii)));
+                ws.add(new Event(ord, names.elementAt(ii), wtitle));
             }
             else //token found in subtitle
             {
                 Token sn = tokens.elementAt(idx);
                 sn.used = true;
                 int ord = -1;
+                String wtitle = null;
                 Token ordt = findOrdBeforeIndex(idx);
                 if (ordt != null)
                 {
                     ordt.used = true;
                     ord = parseOrder(ordt.value);
+                    wtitle = extractTitle(ordt, sn);
                 }
-                ws.add(new Event(ord, sn.value));
+                else
+                {
+                    Token wst = findWsBeforeIndex(idx);
+                    if (wst != null)
+                        wtitle = extractTitle(wst, sn);
+                }
+                ws.add(new Event(ord, sn.value, wtitle));
             }
         }
+    }
+
+    private String extractTitle(Token startt, Token stopt)
+    {
+        String wtitle = "";
+        Token first = startt;
+        Token last = stopt;
+        
+        int si = first.pos;
+        if (first.type == TType.ORD)
+            si += first.value.length();
+        
+        if (last == null) //need to find the end
+        {
+            for (Token t : tokens)
+            {
+                if (t.pos > first.pos)
+                {
+                    if (t.type == TType.ORD || t.type == TType.WORKSHOP || t.used)
+                    {
+                        last = t;
+                        break;
+                    }
+                }
+            }            
+        }
+        int ei = (last == null) ? src.length() : last.pos;
+            
+        wtitle = src.substring(si, ei).trim();
+        
+        while (wtitle.toLowerCase().startsWith("workshop"))
+            wtitle = wtitle.substring("workshop".length()).trim();
+        while (wtitle.toLowerCase().startsWith("on"))
+            wtitle = wtitle.substring("on".length()).trim();
+        while (wtitle.toLowerCase().endsWith("the"))
+            wtitle = wtitle.substring(0, wtitle.length() - "the".length()).trim();
+        while (wtitle.length() > 0 && !Character.isAlphabetic(wtitle.codePointAt(wtitle.length() - 1)))
+            wtitle = wtitle.substring(0, wtitle.length() - 1).trim();
+            
+        if (wtitle.isEmpty())
+            return null;
+        else
+            return wtitle;
     }
 
     private int parseOrder(String value)
@@ -289,6 +347,19 @@ public class SubtitleParser
             if (t.used)
                 break;
             if (t.type == TType.ORD)
+                return t;
+        }
+        return null;
+    }
+    
+    private Token findWsBeforeIndex(int index)
+    {
+        for (int i = index - 1; i >= 0; i--)
+        {
+            Token t = tokens.elementAt(i);
+            if (t.used)
+                break;
+            if (t.type == TType.WORKSHOP)
                 return t;
         }
         return null;

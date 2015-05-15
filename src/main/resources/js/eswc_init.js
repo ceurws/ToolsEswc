@@ -56,8 +56,8 @@ function saveCurrentPage()
 
 function dumpIndex()
 {
-	console.dumpIndex('/tmp/all.ttl');
-	console.dumpEditors('/tmp/editors.ttl');
+	console.dumpIndex('/tmp/all.n3');
+	console.dumpEditors('/tmp/editors.n3');
 }
 
 function transformToDomain()

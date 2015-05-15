@@ -4,17 +4,20 @@ public class Event
 {
     public int order;
     public String sname;
+    public String title;
     
     public Event()
     {
         order = -1;
         sname = null;
+        title = null;
     }
     
-    public Event(int order, String sname)
+    public Event(int order, String sname, String title)
     {
         this.order = order;
         this.sname = sname;
+        this.title = title;
     }
 
     public int getEffectiveOrder()
@@ -25,7 +28,7 @@ public class Event
     @Override
     public String toString()
     {
-        return "Event [order=" + order + ", sname=" + sname + "]";
+        return "Event [order=" + order + ", sname=" + sname + ", title=" + title + "]";
     }
 
     @Override

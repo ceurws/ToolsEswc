@@ -55,6 +55,7 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
     private static Tag tagRelated = new EswcTag("related");
     private static Tag tagVShort = new EswcTag("vshort");
     private static Tag tagVOrder = new EswcTag("vorder");
+    private static Tag tagWTitle = new EswcTag("wtitle");
     private static Tag tagColoc = new EswcTag("colocated");
     private static Tag tagSubtitle = new EswcTag("subtitle");
     private static Tag tagVCountry = new EswcTag("vcountry");
@@ -76,6 +77,7 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
     private LogicalArea rootArea;
     private Vector<Area> leaves;
     private int curvol; //currently processed volume number
+    private String curtitle;
     
     private Area subtitle;
     
@@ -218,6 +220,7 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
         Area root = leaves.elementAt(iTitle);
         String text = root.getText();
         rootArea.appendChild(new EswcLogicalArea(root, text, tagVTitle));
+        curtitle = text;
     }
 
     private void addIndexData()
@@ -228,7 +231,8 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
         {
             int vol = IndexFile.parseVol(matcher.group(0));
             SimpleDateFormat dfmt = new SimpleDateFormat("yyyy-MM-dd");
-            rootArea.appendChild(new EswcLogicalArea(leaves.elementAt(iTitle), IndexFile.getTitle(vol), tagVTitle));
+            curtitle = IndexFile.getTitle(vol);
+            rootArea.appendChild(new EswcLogicalArea(leaves.elementAt(iTitle), curtitle, tagVTitle));
             rootArea.appendChild(new EswcLogicalArea(leaves.elementAt(iTitle), dfmt.format(IndexFile.getPubDate(vol)), tagPublished));
             List<Integer> related = IndexFile.getRelated(vol);
             if (related != null)
@@ -276,7 +280,10 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
                 {
                     Event iev = findEventByName(iws, ev.sname);
                     if (iev != null)
+                    {
+                        iev.title = ev.title;
                         cws.add(iev);
+                    }
                     else
                         cws.add(ev);
                 }
@@ -308,6 +315,15 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
             rootArea.appendChild(sa);
             if (ev.order > 0)
                 sa.appendChild(new EswcLogicalArea(subtitle, String.valueOf(ev.order), tagVOrder));
+            String wt = curtitle;
+            if (ws.size() > 1) //multiworkshop volume, use individual titles
+            {
+                if (ev.title != null)
+                    wt = ev.title;
+                else
+                    wt = ev.sname;
+            }
+            sa.appendChild(new EswcLogicalArea(subtitle, wt, tagWTitle));
         }
         if (sp.getColocEvent() != null)
         {
