@@ -74,9 +74,11 @@ WHERE {
   	?vshortTitle a:hasTag a:tag-ESWC--vshort .
   	?vshortTitle a:hasText ?workshopShortTitle .
     
-    ?wTitle a:isSubordinateTo ?vshortTitle .
-  	?wTitle a:hasTag a:tag-ESWC--wtitle .
-  	?wTitle a:hasText ?workshopPartTitle .
+    OPTIONAL {
+      ?wTitle a:isSubordinateTo ?vshortTitle .
+    	?wTitle a:hasTag a:tag-ESWC--wtitle .
+    	?wTitle a:hasText ?workshopPartTitle .
+    }
 
     OPTIONAL {
     	?veditionPart a:isSubordinateTo ?vshortTitle .
@@ -172,7 +174,7 @@ WHERE {
     BIND (URI(CONCAT(?workshopUri, "#",?paperUri)) AS ?paper)
     BIND (URI(CONCAT(?workshopUri, "#proc")) AS ?proceedings)  
     BIND (URI(CONCAT(?workshopUri, "#conf")) AS ?conference)      
-    BIND (URI(CONCAT(?workshopUri, "#part-",ENCODE_FOR_URI( replace(?workshopShortTitle," ", "i") ))) AS ?WorkshopPart)
+    BIND (URI(CONCAT(?workshopUri, "#part-", ENCODE_FOR_URI(COALESCE(?workshopShortTitle, "ws")))) AS ?WorkshopPart)
     
     BIND ( STRDT(?startdate, xsd:dateTime) AS ?startdatedt)
     BIND ( STRDT(?enddate, xsd:dateTime) AS ?enddatedt)
