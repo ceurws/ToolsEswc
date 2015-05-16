@@ -25,7 +25,7 @@ function processPage(url)
 	
 	//rendering
 	var srcConfig = {
-			width: 1200,
+			width: 2400,
 			height: 800
 	};
 	srcConfig.url = url;
