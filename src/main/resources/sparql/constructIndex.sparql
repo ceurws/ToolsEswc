@@ -42,11 +42,17 @@ WHERE {
   ?workshop segm:idateplace ?dateplace .
   ?workshop segm:istartdate ?startdate .
   ?workshop segm:ienddate ?enddate .
-  ?workshop segm:country ?vcountry .
+  OPTIONAL {
+    ?workshop segm:country ?vcountry .
+  }
   ?workshop segm:editorname ?editorName .
   
-  ?workshop segm:related ?related .
-  ?workshop segm:ishort ?ishort .
+  OPTIONAL {
+    ?workshop segm:related ?related .
+  }
+  OPTIONAL {
+    ?workshop segm:ishort ?ishort .
+  }
   
   OPTIONAL {
   	?workshop segm:icoloc ?colocatedTitle .
@@ -64,7 +70,7 @@ WHERE {
   
   BIND ( URI(CONCAT(?workshopText, "#proc")) AS ?proceedings)  
   BIND ( URI(CONCAT(?workshopText, "#conf")) AS ?conference) 
-  BIND ( URI(CONCAT(?workshopText, "#part-",ENCODE_FOR_URI( replace(?workshopTitle," ", "i") ))) AS ?WorkshopPart)
+  BIND ( URI(CONCAT(?workshopText, "#part-",ENCODE_FOR_URI( COALESCE(?workshopShortTitle, "ws") ))) AS ?WorkshopPart)
   BIND ( URI(CONCAT(?workshopText, "#", ENCODE_FOR_URI( replace(?editorName," ", "i") ) )) AS ?editor)
   
 }
