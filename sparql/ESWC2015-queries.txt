@@ -19,6 +19,7 @@ SELECT ?workshop ?editor_name WHERE {
 PREFIX bibo: <http://purl.org/ontology/bibo/#>
 PREFIX swrc: <http://swrc.ontoware.org/ontology/#>
 PREFIX swc: <http://data.semanticweb.org/ns/swc/ontology/#>
+PREFIX dc: <http://purl.org/dc/elements/1.1/#> 
 
 SELECT ?workshop ( count(?paper) AS ?num_papers) WHERE {
   VALUES ?workshop {
@@ -30,6 +31,7 @@ SELECT ?workshop ( count(?paper) AS ?num_papers) WHERE {
   
   ?proc bibo:presentedAt ?workshop .
   ?proc swc:hasPart ?paper .
+  ?paper dc:title ?paper_name .
   OPTIONAL {
   	?paper bibo:section ?section 
   }
@@ -37,7 +39,10 @@ SELECT ?workshop ( count(?paper) AS ?num_papers) WHERE {
   
   FILTER( !contains( lcase( ?section) ,"introduction") && 
           !contains( lcase( ?section) ,"polemics") &&
-          !contains( lcase( ?section) ,"proceedings") )       
+          !contains( lcase( ?section) ,"proceedings") &&
+          !contains( lcase(?paper_name) ,"proceedings of") &&
+          !strstarts( lcase(?paper_name) ,"preface")
+         )       
 } GROUP BY ?workshop
 
 
@@ -45,15 +50,17 @@ SELECT ?workshop ( count(?paper) AS ?num_papers) WHERE {
 PREFIX bibo: <http://purl.org/ontology/bibo/#>
 PREFIX swrc: <http://swrc.ontoware.org/ontology/#>
 PREFIX swc: <http://data.semanticweb.org/ns/swc/ontology/#>
+PREFIX dc: <http://purl.org/dc/elements/1.1/#> 
 
 SELECT DISTINCT ?workshop ?author_name WHERE { 
   VALUES ?workshop {
-  	<http://ceur-ws.org/Vol-994/> 
     <http://ceur-ws.org/Vol-1085/>
+    <http://ceur-ws.org/Vol-994/>
   }
   
   ?proc bibo:presentedAt ?workshop ; 
         swc:hasPart ?paper .
+  ?paper dc:title ?paper_name .
   ?author foaf:made ?paper ;
           foaf:name ?author_name .
   
@@ -64,7 +71,10 @@ SELECT DISTINCT ?workshop ?author_name WHERE {
   
   FILTER( !contains( lcase( ?section) ,"introduction") && 
           !contains( lcase( ?section) ,"polemics") &&
-          !contains( lcase( ?section) ,"proceedings") )    
+          !contains( lcase( ?section) ,"proceedings") &&
+          !contains( lcase(?paper_name) ,"proceedings of") &&
+          !strstarts( lcase(?paper_name) ,"preface")
+        )    
 } ORDER BY ?paper
 
 
@@ -73,6 +83,7 @@ SELECT DISTINCT ?workshop ?author_name WHERE {
 PREFIX bibo: <http://purl.org/ontology/bibo/#>
 PREFIX swrc: <http://swrc.ontoware.org/ontology/#>
 PREFIX swc: <http://data.semanticweb.org/ns/swc/ontology/#>
+PREFIX dc: <http://purl.org/dc/elements/1.1/#>
 
 SELECT ?workshop (AVG(?num_pages) AS ?avg) WHERE { 
   VALUES ?workshop {
@@ -82,7 +93,8 @@ SELECT ?workshop (AVG(?num_pages) AS ?avg) WHERE {
   
   ?proc bibo:presentedAt ?workshop .
   ?proc swc:hasPart ?paper .
-  ?paper bibo:numPages ?num_pages .
+  ?paper bibo:numPages ?num_pages ;
+    dc:title ?paper_name .
   
   OPTIONAL {
   	?paper bibo:section ?section 
@@ -91,7 +103,10 @@ SELECT ?workshop (AVG(?num_pages) AS ?avg) WHERE {
   
   FILTER( !contains( lcase( ?section) ,"introduction") && 
           !contains( lcase( ?section) ,"polemics") &&
-          !contains( lcase( ?section) ,"proceedings") )    
+          !contains( lcase( ?section) ,"proceedings") &&
+          !contains( lcase(?paper_name) ,"proceedings of") &&
+          !strstarts( lcase(?paper_name) ,"preface")
+        )    
 }
 GROUP BY ?workshop
 
@@ -130,7 +145,7 @@ SELECT  ?search ?workshop WHERE {
   ?workshop swc:hasPart ?node .
   ?node dc:title ?title .
   
-  FILTER( strStarts(?title, ?search) ) 
+  FILTER( strstarts(?title, ?search) ) 
 } 
 GROUP BY ?workshop ?search ORDER BY ?search
 
@@ -154,7 +169,7 @@ SELECT ?search ?editor_name  WHERE {
       ?workshop a swc:WorkshopEvent.
       ?workshop swc:hasPart ?node .
       ?node dc:title ?title .
-      FILTER ( strStarts(?title, ?search) )       
+      FILTER ( strstarts(?title, ?search) )       
       [] a swc:Proceedings;
 	          bibo:presentedAt ?workshop;
             swrc:editor ?editor .
@@ -165,7 +180,7 @@ SELECT ?search ?editor_name  WHERE {
       ?workshop a swc:WorkshopEvent.
       ?workshop swc:hasPart ?node .
       ?node dc:title ?title .
-      FILTER( strStarts(?title, ?search ) )
+      FILTER( strstarts(?title, ?search ) )
     }
     GROUP BY ?search
  }
@@ -202,7 +217,7 @@ SELECT ?conf_name (YEAR(?conf_date) AS ?conf_year) ?workshop WHERE {
 }
 
 
-9) TODO - filtrovani A.D.name
+9) DONE
 PREFIX swc: <http://data.semanticweb.org/ns/swc/ontology/#>
 PREFIX swrc: <http://swrc.ontoware.org/ontology/#>
 PREFIX bibo:<http://purl.org/ontology/bibo/#>
@@ -225,8 +240,6 @@ SELECT DISTINCT ?workshop ?paper WHERE {
   
     ?paper dc:title ?ptitle .
   
-    FILTER( !contains( lcase(?ptitle) ,"proceedings") )  
-  
     OPTIONAL {
       ?paper bibo:section ?section 
     }
@@ -234,20 +247,29 @@ SELECT DISTINCT ?workshop ?paper WHERE {
 
     FILTER( !contains( lcase( ?section) ,"introduction") && 
             !contains( lcase( ?section) ,"polemics") &&
-            !contains( lcase( ?section) ,"proceedings") )   
+            !contains( lcase( ?section) ,"proceedings") &&
+          	!contains( lcase(?ptitle) ,"proceedings of") &&
+           	!contains( lcase(?ptitle) ,"preface")
+          )   
     
     ?author a foaf:Person ;
             foaf:made ?paper ;
             foaf:name ?author_name .
-    FILTER(REGEX(?author_name, CONCAT(".*", REPLACE(?editor_name, "[. ']+", ".*"), ".*"), "i")) .
-}
+  
+  FILTER( CONTAINS(?abbrev, ?author_name) || CONTAINS( ?abbrev2, ?author_name)  )
+  
+  OPTIONAL {
+    BIND(REPLACE(str(?editor_name), "^(.?)(.*?) (.*?)$", "$1. $3") AS ?abbrev)
+    BIND(REPLACE(str(?editor_name), "^(.?)(.*?) (.?)(.*?) (.*?)$", "$1.$3. $5") AS ?abbrev2)
+  }
+} GROUP BY ?workshop ?paper
 
 
 10) DONE
 PREFIX swc: <http://data.semanticweb.org/ns/swc/ontology/#>
 PREFIX bibo:<http://purl.org/ontology/bibo/#>
 
-SELECT ?workshop ?author_name  (STR(?paper) as ?pok ) {
+SELECT ?workshop ?author_name {
   VALUES ?workshop {
     <http://ceur-ws.org/Vol-1085/>
     <http://ceur-ws.org/Vol-1081/>
@@ -331,7 +353,8 @@ SELECT ?workshop ?workshop_name ?related {
 {
     SELECT ?workshop (MIN(?date) AS ?min_date) {
       VALUES ?workshop {
-        <http://ceur-ws.org/Vol-1014/>
+        <http://ceur-ws.org/Vol-1074/>
+        <http://ceur-ws.org/Vol-1049/>
       }
       ?workshop rdfs:seeAlso ?related.
       ?related timeline:beginsAtDatetime ?date .
@@ -370,7 +393,7 @@ SELECT DISTINCT ?acrn ?year ?workshop  {
 }
 
 
-14) DONE // nepokryva pripad normalnich jednoduchych workshopu - muselo by se resit sofistikovaneji (pokud je vice titulku workshopu na jedne URL ...)
+14) DONE
 PREFIX dc: <http://purl.org/dc/elements/1.1/#>
 PREFIX swrc: <http://swrc.ontoware.org/ontology/#>
 PREFIX bibo: <http://purl.org/ontology/bibo/#>
@@ -396,7 +419,7 @@ SELECT DISTINCT ?acrn ?workshop ?paper WHERE {
 } 
 
 
-15) DONE  - nefunguje na jednoduche workshopy
+15) DONE
 PREFIX dc: <http://purl.org/dc/elements/1.1/#>
 PREFIX swrc: <http://swrc.ontoware.org/ontology/#>
 PREFIX bibo: <http://purl.org/ontology/bibo/#>
@@ -423,7 +446,7 @@ SELECT DISTINCT ?acrn ?workshop ?editor_name WHERE {
 } 
   
   
-16)
+16) DONE
 PREFIX dc: <http://purl.org/dc/elements/1.1/#>
 PREFIX swrc: <http://swrc.ontoware.org/ontology/#>
 PREFIX bibo: <http://purl.org/ontology/bibo/#>
@@ -431,24 +454,24 @@ PREFIX swc: <http://data.semanticweb.org/ns/swc/ontology/#>
 PREFIX timeline: <http://purl.org/NET/c4dm/timeline.owl#>
 PREFIX dcterms: <http://dublincore.org/documents/dcmi-terms/#>
   
-SELECT ?acrn ?year ?conf_name ?workshop ?proc_numPubs {
+SELECT ?acrn (str(YEAR(?confr_date)) as ?date) ?workshopr  {
       
-      ?workshop a swc:WorkshopEvent;
-        swc:isSubEventOf ?conf ;
-        timeline:beginsAtDatetime ?conf_date .
-      ?conf a swc:ConferenceEvent;
-        dc:title ?conf_name . 
-      ?proc a swc:Proceedings ;
-        bibo:presentedAt ?workshop .
-      ?confr a swc:ConferenceEvent;
-    	dc:title ?confr_o_name.
-  	  ?workshopr rdfs:seeAlso ?workshop ;
-    	swc:isSubEventOf ?confr ;
-    	timeline:beginsAtDatetime ?confr_date .
-  	  ?procr a swc:Proceedings;   
-    	bibo:presentedAt ?workshopr .
+    ?workshop a swc:WorkshopEvent;
+      swc:isSubEventOf ?conf ;
+      timeline:beginsAtDatetime ?conf_date .
+    ?conf a swc:ConferenceEvent;
+      dc:title ?conf_name . 
+    ?proc a swc:Proceedings ;
+      bibo:presentedAt ?workshop .
+	  ?workshopr rdfs:seeAlso ?workshop ;
+      swc:isSubEventOf ?confr ;
+  	timeline:beginsAtDatetime ?confr_date .
+    ?confr a swc:ConferenceEvent;
+      dc:title ?confr_name . 
+	  ?procr a swc:Proceedings;   
+  	bibo:presentedAt ?workshopr .
   
-      {
+  {
     SELECT ?proc ( COUNT(?pub) AS ?proc_numPubs) {
       ?proc swc:hasPart ?pub.
       ?pub a swc:Paper
@@ -461,7 +484,7 @@ SELECT ?acrn ?year ?conf_name ?workshop ?proc_numPubs {
     } GROUP BY ?procr
   }
   
-  {
+  {  
     SELECT ?acrn ?year ( MAX(?procr_numPubs-?proc_numPubs) AS ?maxDiff ) {
       VALUES (?acrn ?year) {
         ("WWW" "2012")
@@ -473,11 +496,12 @@ SELECT ?acrn ?year ?conf_name ?workshop ?proc_numPubs {
         dc:title ?conf_name . 
       ?proc a swc:Proceedings ;
         bibo:presentedAt ?workshop .
-      ?confr a swc:ConferenceEvent;
-    	dc:title ?confr_o_name.
+      
   	  ?workshopr rdfs:seeAlso ?workshop ;
-    	swc:isSubEventOf ?confr ;
+        swc:isSubEventOf ?confr ;
     	timeline:beginsAtDatetime ?confr_date .
+      ?confr a swc:ConferenceEvent;
+        dc:title ?confr_name . 
   	  ?procr a swc:Proceedings;   
     	bibo:presentedAt ?workshopr .
       {
@@ -492,18 +516,16 @@ SELECT ?acrn ?year ?conf_name ?workshop ?proc_numPubs {
           ?pub a swc:Paper
         } GROUP BY ?procr
       }
-      FILTER( ?conf_name=?acrn && ?confr_name=?acrn && YEAR(?conf_date)=?year && ?conf_date<?confr_date )  
-    }
-    GROUP BY ?acrn ?year
-  }
-  FILTER( ?conf_name=?acrn && ?confr_name=?acrn && YEAR(?conf_date)=?year && 
+      FILTER( ?conf_name=?acrn && ?confr_name=?acrn && ?confr_date>?conf_date && str(YEAR(?conf_date) )=?year )  
+    } GROUP BY ?acrn ?year
+}
+FILTER( ?conf_name=?acrn && ?confr_name=?acrn && str(YEAR(?conf_date))=?year && 
           ?conf_date<?confr_date && (?procr_numPubs - ?proc_numPubs)=?maxDiff )
-    
-} 
+}   
   
   
-
-17) DONE
+  
+17)  DONE - invalid training output - index does not cover conf
 PREFIX dc: <http://purl.org/dc/elements/1.1/#>
 PREFIX swrc: <http://swrc.ontoware.org/ontology/#>
 PREFIX bibo: <http://purl.org/ontology/bibo/#>
@@ -511,7 +533,7 @@ PREFIX swc: <http://data.semanticweb.org/ns/swc/ontology/#>
 PREFIX timeline: <http://purl.org/NET/c4dm/timeline.owl#>
 PREFIX dcterms: <http://dublincore.org/documents/dcmi-terms/#>
 
-SELECT ?acrn ?year ?conf_prev_acrn  ?workshop_acrn  {
+SELECT ?acrn ?year ?workshop_acrn  {
    VALUES (?acrn ?year) {
     ("ISWC" "2012")
     ("FOIS" "2012")
@@ -549,7 +571,8 @@ SELECT ?acrn ?year ?conf_prev_acrn  ?workshop_acrn  {
 }
 
   
-18) DONE
+18) DONE - training dataset contains invalid output for Scalable...
+(solution can be based on abbrev comparison - however they can be similar within different workshops)
 PREFIX dc: <http://purl.org/dc/elements/1.1/#>
 PREFIX swrc: <http://swrc.ontoware.org/ontology/#>
 PREFIX bibo: <http://purl.org/ontology/bibo/#>
@@ -557,40 +580,41 @@ PREFIX swc: <http://data.semanticweb.org/ns/swc/ontology/#>
 PREFIX timeline: <http://purl.org/NET/c4dm/timeline.owl#>
 PREFIX dcterms: <http://dublincore.org/documents/dcmi-terms/#>  
 
-SELECT ?prefix ?prev ?date {
+SELECT ?prefix (YEAR(?prev_date) AS ?prev_year) (YEAR(?date) as ?act_date) {
   {
-    SELECT ?prefix ?x (MAX(?y_date) as ?prev) {
+    SELECT ?prefix ?x (MAX(?y_date) as ?prev_date) {
       VALUES ?prefix {
         "Linked Data on the Web"
-		"Workshop on Modular Ontologies"
-		"Scalable and High-Performance Semantic Web"
+		    "Workshop on Modular Ontologies"
+		    "Scalable and High-Performance Semantic Web"
       }
-      ?x a swc:WorkshopEvent .
-      ?x timeline:beginsAtDatetime ?x_date .
-      ?x swc:hasPart ?node .
+      ?x a swc:WorkshopEvent ;
+      	timeline:beginsAtDatetime ?x_date ;
+      	swc:hasPart ?node .
       ?node dc:title ?x_name .
       
       ?x rdfs:seeAlso ?y .
       
-      ?y a swc:WorkshopEvent .
-      ?y timeline:beginsAtDatetime ?y_date .
-      ?x swc:hasPart ?node .
-      ?node dc:title ?y_name ;
+      ?y a swc:WorkshopEvent ;
+      	timeline:beginsAtDatetime ?y_date ;
+      	swc:hasPart ?node2 .
+      ?node2 dc:title ?y_name ;
       
       FILTER(
         CONTAINS(?x_name, ?prefix)
         && CONTAINS(?y_name, ?prefix)
-        && ?x_date > ?y_date
+        && ?x_date > ?y_date 
+        
       )
-    }
-    GROUP BY ?prefix ?x
+    } GROUP BY ?prefix ?x
   }
   ?x timeline:beginsAtDatetime ?date .
-  FILTER(ABS(MONTH(?date) - MONTH(?prev))>2)
-}
+  FILTER(ABS(MONTH(?date) - MONTH(?prev_date))>2)
+} 
 
 
-19) DONE
+
+19) 
 PREFIX bibo: <http://purl.org/ontology/bibo/#>
 PREFIX swrc: <http://swrc.ontoware.org/ontology/#>
 
@@ -611,7 +635,7 @@ SELECT ?workshop ?editor_name ?affil ?country WHERE {
 } ORDER BY ?workshop
 
 
-20) DONE
+20) DONE - wrong training output - Pavel Shvaiko - publicated in every edition
 PREFIX swc: <http://data.semanticweb.org/ns/swc/ontology/#>
 PREFIX swrc: <http://swrc.ontoware.org/ontology/#>
 PREFIX dc: <http://purl.org/dc/elements/1.1/#>
@@ -620,8 +644,8 @@ PREFIX bibo: <http://purl.org/ontology/bibo/#>
 SELECT ?search ?author_name WHERE {
   {
       VALUES ?search {
-      	"Mathematical User Interfaces"
-		"Ontology Matching"
+		    "Mathematical User Interface"
+            "Ontology Matching"
       }
   }
  {
@@ -634,7 +658,23 @@ SELECT ?search ?author_name WHERE {
 	          bibo:presentedAt ?workshop;
             swc:hasPart ?paper .
       ?author foaf:made ?paper .
-    } 
+      
+      ?paper  dc:title ?paper_name .
+      
+      OPTIONAL {
+      	?paper bibo:section ?section 
+      }
+      bind ( COALESCE(?section, "default") As ?section)
+      
+      FILTER( !contains( lcase( ?section) ,"introduction") && 
+              !contains( lcase( ?section) ,"polemics") &&
+              !contains( lcase( ?section) ,"proceedings") &&
+              !contains( lcase( ?section) ,"work in progress") &&
+              !contains( lcase(?paper_name) ,"proceedings of") &&
+              #!contains( lcase(?paper_name) ,"results") &&
+              !strstarts( lcase(?paper_name) ,"preface")
+            )    
+    } GROUP BY ?search ?workshop ?author
  }
  {
     SELECT ?search (COUNT(?workshop) AS ?count) WHERE {
@@ -646,7 +686,7 @@ SELECT ?search ?author_name WHERE {
     GROUP BY ?search
  }
  ?author foaf:name ?author_name .
-}
+} 
 GROUP BY ?search ?author_name
 HAVING (COUNT(?search) = MAX(?count) )
 ORDER BY ?search

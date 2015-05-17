@@ -73,25 +73,11 @@ public class BlockBrowserEswc extends BlockBrowser
                     browser.initPlugins();
                     main.setVisible(true);
                     
-                    String localpath = "file://" + System.getProperty("user.home") + "/git/ToolsEswc/test/ceur/volumes/";
-                    String suffix = ".html";
-                    //String localpath = "http://ceur-ws.org/";
-                    //String suffix = "/";
-
-                    //URL url = new URL(localpath + "Vol-1317" + suffix);
-                    //URL url = new URL(localpath + "Vol-1010" + suffix);
-                    //URL url = new URL(localpath + "Vol-981" + suffix);
-                    //URL url = new URL(localpath + "Vol-921" + suffix);
-                    //URL url = new URL(localpath + "Vol-862" + suffix);
-                    //URL url = new URL(localpath + "Vol-859" + suffix);
-                    //URL url = new URL(localpath + "Vol-250" + suffix);
-                    //URL url = new URL(localpath + "Vol-225" + suffix);
-                    //URL url = new URL(localpath + "Vol-1" + suffix);
                     
                     /* CEUR */
                     //URL url = new URL("http://ceur-ws.org/Vol-1333/");
                     //URL url = new URL("http://ceur-ws.org/Vol-1317/");
-                    URL url = new URL("http://ceur-ws.org/Vol-1186/");
+                    //URL url = new URL("http://ceur-ws.org/Vol-1186/");
                     //URL url = new URL("http://ceur-ws.org/Vol-1044/");
                     //URL url = new URL("http://ceur-ws.org/Vol-921/");
                     //URL url = new URL("http://ceur-ws.org/Vol-906/");
@@ -108,9 +94,9 @@ public class BlockBrowserEswc extends BlockBrowser
                     //URL url = new URL("http://ceur-ws.org/Vol-100/");
                     //URL url = new URL("http://ceur-ws.org/Vol-53/");
                     //URL url = new URL("http://ceur-ws.org/Vol-49/");
-                    //URL url = new URL("http://ceur-ws.org/Vol-15/"); //TODO total chaos
+                    //URL url = new URL("http://ceur-ws.org/Vol-15/");
                     //URL url = new URL("http://ceur-ws.org/Vol-5/");
-                    //URL url = new URL("http://ceur-ws.org/Vol-1/");
+                    URL url = new URL("http://ceur-ws.org/Vol-1/");
                         
                     browser.setLocation(url.toString());
                         
