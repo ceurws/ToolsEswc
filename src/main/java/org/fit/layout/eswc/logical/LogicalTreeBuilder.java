@@ -566,6 +566,17 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
     {
         if (src.length() > 0 && !Character.isLetter(src.charAt(0)))
         {
+            src = src.trim();
+            //remove () before the affiliation sign
+            if (src.length() > 2 && src.charAt(0) == '(' && src.charAt(src.length() - 1) != ')')
+            {
+                int i = src.indexOf(')');
+                if (i != -1)
+                {
+                    src = src.substring(i+1).trim();
+                }
+            }
+            
             for (int i = editorEnd + 1; i < paperStart; i++)
             {
                 final Area a = leaves.elementAt(i);
