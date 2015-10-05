@@ -1,8 +1,7 @@
 SemPub2015 Tools and Extensions
 ===============================
 
-This project included the FitLayout extensions for automatic information extraction from the CEUR-WS.org workshop proceedings pages.
-The tools were created as a solution of the 
+This project implements FitLayout-based applications and tools for automatic information extraction from the CEUR-WS.org workshop proceedings pages. The tools were created as a proposed solution of the 
 [Task 1](https://github.com/ceurws/lod/wiki/Task1) of the [Semantic Publishing Challenge 2015](https://github.com/ceurws/lod/wiki/SemPub2015) colocated with the [Extended Semantic Web Conference 2015](http://2015.eswc-conferences.org/).
 
 How to Build
