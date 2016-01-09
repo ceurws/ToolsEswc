@@ -23,6 +23,7 @@ import org.fit.layout.eswc.Event;
 import org.fit.layout.eswc.IndexFile;
 import org.fit.layout.eswc.SubtitleParser;
 import org.fit.layout.eswc.op.AreaUtils;
+import org.fit.layout.eswc.op.CeurTag;
 import org.fit.layout.eswc.op.EswcTag;
 import org.fit.layout.impl.BaseLogicalTreeProvider;
 import org.fit.layout.model.Area;
@@ -44,11 +45,11 @@ import com.ibm.icu.util.Calendar;
 public class LogicalTreeBuilder extends BaseLogicalTreeProvider
 {
     private static Logger log = LoggerFactory.getLogger(LogicalTreeBuilder.class);
-    
+
     private static final float ms = 0.5f;
-    
-    private static int paperIdCnt = 0; 
-    
+
+    private static int paperIdCnt = 0;
+
     private static Tag tagRoot = new EswcTag("root");
     private static Tag tagVTitle = new EswcTag("vtitle");
     private static Tag tagPublished = new EswcTag("published");
@@ -68,19 +69,19 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
     private static Tag tagPaper = new EswcTag("paper");
     private static Tag tagAuthor = new EswcTag("authors");
     private static Tag tagTitle = new EswcTag("title");
-    private static Tag tagPages = new EswcTag("pages");
+    private static Tag tagPages = new CeurTag("pages");
     private static Tag tagStartPage = new EswcTag("pstart");
     private static Tag tagEndPage = new EswcTag("pend");
     private static Tag tagSection = new EswcTag("section");
-    
+
     private EswcLogicalTree tree;
     private LogicalArea rootArea;
     private Vector<Area> leaves;
     private int curvol; //currently processed volume number
     private String curtitle;
-    
+
     private Area subtitle;
-    
+
     private int iTitle = -1;
     private int iShort = -1;
     private int iDates = -1;
@@ -121,7 +122,7 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
     }
 
     //====================================================================================
-    
+
     private void reset()
     {
         iTitle = -1;
@@ -135,21 +136,21 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
         subtitle = null;
         paperIdCnt = 0;
     }
-    
+
     @Override
     public LogicalAreaTree createLogicalTree(AreaTree areaTree)
     {
         reset();
-        
+
         rootArea = createRoot(areaTree);
         tree = new EswcLogicalTree(areaTree);
         tree.setRoot(rootArea);
-        
+
         leaves = new Vector<Area>();
         findLeaves(areaTree.getRoot(), leaves);
-        
+
         scanLeaves();
-        
+
         //addVTitle();
         addIndexData();
         analyzeShortNames();
@@ -157,7 +158,7 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
         addVCountry();
         addEditors();
         addPapers();
-        
+
         return tree;
     }
 
@@ -176,7 +177,7 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
                 findLeaves(root.getChildArea(i), dest);
         }
     }
-    
+
     private void scanLeaves()
     {
         int i = 0;
@@ -200,18 +201,18 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
                 if (paperStart == -1) paperStart = i;
                 paperEnd = i;
             }
-            
+
             i++;
         }
     }
-    
+
     private LogicalArea createRoot(AreaTree tree)
     {
         String uri = tree.getRoot().getAllBoxes().firstElement().getPage().getSourceURL().toString();
         curvol = Integer.parseInt(uri.substring("http://ceur-ws.org/Vol-".length(), uri.length() - 1));
         return new EswcLogicalArea(tree.getRoot(), uri, tagRoot);
     }
-    
+
     //====================================================================================
 
     @SuppressWarnings("unused")
@@ -237,12 +238,12 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
             List<Integer> related = IndexFile.getRelated(vol);
             if (related != null)
             {
-                for (int rel : related) 
+                for (int rel : related)
                     rootArea.appendChild(new EswcLogicalArea(leaves.elementAt(iTitle), "http://ceur-ws.org/Vol-" + rel + "/", tagRelated));
             }
         }
     }
-    
+
     private void analyzeShortNames()
     {
         //gather the abbreviations around the title
@@ -254,7 +255,7 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
         }
         else
             titleShorts = new Vector<String>(); //no short names around the title?
-        
+
         //analyze the subtitle
         SubtitleParser sp;
         if (subtitle != null)
@@ -266,7 +267,7 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
             log.warn("No subtitle!");
             sp = new SubtitleParser("", titleShorts);
         }
-        
+
         //cross check
         Set<Event> ws = sp.getWorkshops();
         Set<Event> iws = IndexFile.getShortNames(curvol);
@@ -297,7 +298,7 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
             log.warn("Short name mismatch: {} x {}", ws, iws);
             IndexFile.setShortNames(curvol, ws);
         }
-        
+
         String coloc = (sp.getColocEvent() != null) ? sp.getColocEvent().sname : "";
         String icoloc = IndexFile.getColoc(curvol);
         if (icoloc == null)
@@ -307,7 +308,7 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
             log.warn("Colocation mismatch: {} x {}", coloc, icoloc);
             IndexFile.setColoc(curvol, coloc);
         }
-        
+
         //output acronyms
         for (Event ev : ws)
         {
@@ -330,10 +331,10 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
             LogicalArea sa = new EswcLogicalArea(subtitle, sp.getColocEvent().sname, tagColoc);
             rootArea.appendChild(sa);
         }
-        
-            
+
+
     }
-    
+
     private Event findEventByName(Set<Event> set, String name)
     {
         for (Event ev : set)
@@ -343,7 +344,7 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
         }
         return null;
     }
-    
+
     private void addVDates()
     {
         if (iDates != -1)
@@ -352,7 +353,7 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
             DateTagger dt = new DateTagger();
             List<Date> dates = dt.extractDates(a.getText());
             SimpleDateFormat dfmt = new SimpleDateFormat("yyyy-MM-dd");
-            
+
             if (dates.size() == 1)
             {
                 dates.add(dates.get(0));
@@ -369,7 +370,7 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
                         c1.setTime(dates.get(i));
                         Calendar c2 = Calendar.getInstance();
                         c2.setTime(idates[i]);
-                    
+
                         if (c1.get(Calendar.DAY_OF_MONTH) != c2.get(Calendar.DAY_OF_MONTH)
                                 || c1.get(Calendar.MONTH) != c2.get(Calendar.MONTH)
                                 || c1.get(Calendar.YEAR) != c2.get(Calendar.YEAR))
@@ -389,7 +390,7 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
                 }
                 else
                     log.warn("No dates in index file for vol {}", curvol);
-                
+
                 rootArea.appendChild(new EswcLogicalArea(a, dfmt.format(dates.get(0)), tagStartDate));
                 rootArea.appendChild(new EswcLogicalArea(a, dfmt.format(dates.get(1)), tagEndDate));
             }
@@ -399,7 +400,7 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
         else
             log.warn("No dates found");
     }
-    
+
     private void addVCountry()
     {
         if (iCountry != -1)
@@ -417,14 +418,14 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
         }
         else
             log.warn("No country found");
-        
+
     }
-    
+
     //====================================================================================
-    
+
     private void addEditors()
     {
-        Vector<String> names = new Vector<String>(); 
+        Vector<String> names = new Vector<String>();
         //extend editors till the end of the last line
         Area last = leaves.elementAt(editorEnd);
         while (editorEnd + 1 < leaves.size())
@@ -459,7 +460,7 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
         }
         if (curEd != null)
             names.addAll(saveEditor(curEd, textb.toString().trim()));
-        
+
         //cross-check with index file
         List<String> inames = IndexFile.getEditorNames(curvol);
         Vector<String> i1 = new Vector<String>(inames);
@@ -472,7 +473,7 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
             IndexFile.setEditorNames(curvol, names);
         }
     }
-    
+
     /**
      * Saves the editor data to RDF.
      * @param editor
@@ -489,7 +490,7 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
         {
             char ch = text.charAt(i);
             if (ch != '.' && ch != '-' && ch != '\''
-                    && !Character.isLetter(ch) 
+                    && !Character.isLetter(ch)
                     && !Character.isSpaceChar(ch))
                 break;
             i++;
@@ -502,7 +503,7 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
                 affil = affil.substring(1).trim();
             while (affil.endsWith(","))
                 affil = affil.substring(0, affil.length() - 1);
-            
+
             if (affil.isEmpty())
             {
                 Area follow = leaves.elementAt(editorEnd+1);
@@ -514,29 +515,29 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
                 else
                     log.warn("No affiliation for " + text);
             }
-            
+
             //decode editor section in () if present
             String affsect = null;
             Matcher matcher = Pattern.compile("\\([a-zA-Z].+\\)$").matcher(affil);
             if (matcher.find())
             {
-                String s = matcher.group(0); 
+                String s = matcher.group(0);
                 affsect = s.substring(1, s.length() - 1);
                 affil = affil.substring(0, affil.length() - s.length()).trim();
             }
-            
+
             //no affiliation but some section -- the section is probably affiliation
             if (affil.trim().length() == 0 && affsect != null)
             {
                 affil = affsect;
                 affsect = null;
             }
-            
+
             //complete the affiliation when symbols are used
             affil = completeAffil(affil);
             String affs[] = splitAffilCountry(affil);
             affil = affs[0];
-                   
+
             String[] names = name.split("\\s+and\\s+"); //multiple names separated by 'and'?
             for (String curname : names)
             {
@@ -558,10 +559,10 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
         }
         else
             log.warn("Couldn't find editor name: {}", text);
-        
+
         return ret;
     }
-    
+
     private String completeAffil(String src)
     {
         if (src.length() > 0 && !Character.isLetter(src.charAt(0)))
@@ -576,7 +577,7 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
                     src = src.substring(i+1).trim();
                 }
             }
-            
+
             for (int i = editorEnd + 1; i < paperStart; i++)
             {
                 final Area a = leaves.elementAt(i);
@@ -594,7 +595,7 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
         else
             return src;
     }
-    
+
     private String[] splitAffilCountry(String src)
     {
         String[] ret = new String[2];
@@ -621,13 +622,13 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
                     found = true;
                 }
             }
-            
+
             if (!found)
             {
                 log.warn("No country found in '{}' ({}?), let's try another way", affil, cands);
             }
         }
-        
+
         if (!found)
         {
             LocationsTagger ltg = new LocationsTagger(1);
@@ -643,28 +644,28 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
                 }
             }
         }
-            
+
         if (!found)
         {
             ret[0] = affil;
             ret[1] = null;
             log.warn("No country position found in '{}', give up", affil);
         }
-        
+
         return ret;
     }
-    
+
     //====================================================================================
-    
+
     private void addPapers()
     {
         Area curTitle = null;
         Area curAuthors = null;
         Area curPages = null;
         Area curSection = null;
-        
+
         int paperI = -1;
-        
+
         for (int i = paperStart; i <= paperEnd; i++)
         {
             Area a = leaves.elementAt(i);
@@ -696,7 +697,7 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
         }
         savePaper(curTitle, curAuthors, curPages, curSection);
     }
-    
+
     private Area findSection(int start)
     {
         final float fsize = leaves.elementAt(start).getFontSize();
@@ -714,7 +715,7 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
         }
         return null;
     }
-    
+
     private void savePaper(Area title, Area authors, Area pages, Area curSection)
     {
         if (title != null && authors != null)
@@ -724,7 +725,7 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
             {
                 LogicalArea ap = new EswcLogicalArea(title, pid, tagPaper);
                 rootArea.appendChild(ap);
-                
+
                 LogicalArea at = new EswcLogicalArea(title, title.getText().trim(), tagTitle);
                 ap.appendChild(at);
                 String saut = authors.getText().trim();
@@ -785,7 +786,7 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
         else
             log.warn("Incomplete paper: {} : {}", title, authors);
     }
-    
+
     private String getTextOnLine(int start, int end)
     {
         Area a = leaves.elementAt(start);
@@ -804,7 +805,7 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
         }
         return sb.toString();
     }
-    
+
     private String getAffilText(int start, int end)
     {
         Area strt = leaves.elementAt(start);
@@ -838,7 +839,7 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
         }
         return sb.toString();
     }
-    
+
     private String findPaperId(Area title, Area authors)
     {
         Box box = title.getBoxes().firstElement();
@@ -879,7 +880,7 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
                 name = name.substring(0, name.length() - 6);
             else if (name.toLowerCase().endsWith(".html"))
                 name = name.substring(0, name.length() - 5);
-            
+
             if (!name.isEmpty())
                 return name;
             else
@@ -894,11 +895,11 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
             return generatePaperId();
         }
     }
-    
+
     private String generatePaperId()
     {
         paperIdCnt++;
         return "paperX" + paperIdCnt;
     }
-    
+
 }

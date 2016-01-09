@@ -20,43 +20,43 @@ import org.slf4j.LoggerFactory;
 
 /**
  * Finds the editor names in the given area of the page.
- * 
+ *
  * @author burgetr
  */
 public class FindEditorsOperator extends BaseOperator
 {
     private static Logger log = LoggerFactory.getLogger(FindEditorsOperator.class);
     private static final String TT = "FitLayout.TextTag";
-    
+
     private final String[] paramNames = {};
     private final ValueType[] paramTypes = {};
 
     private Rectangular bounds;
     private Rectangular resultBounds;
     private boolean keepGroup = false;
-    
-    
+
+
     public FindEditorsOperator()
     {
         this(0, 300, 1200, 600); //just a guess
     }
-    
+
     public FindEditorsOperator(int x1, int y1, int x2, int y2)
     {
         bounds = new Rectangular(x1, y1, x2, y2);
     }
-    
+
     public FindEditorsOperator(Rectangular r)
     {
         bounds = new Rectangular(r);
     }
-    
+
     @Override
     public String getId()
     {
         return "Eswc.Tag.Editors";
     }
-    
+
     @Override
     public String getName()
     {
@@ -95,7 +95,7 @@ public class FindEditorsOperator extends BaseOperator
     {
         keepGroup = b;
     }
-    
+
     //==============================================================================
 
     @Override
@@ -115,20 +115,20 @@ public class FindEditorsOperator extends BaseOperator
         findTagsInArea(root, bounds, tag, support, true, names);
         /*for (Area a : names)
             System.out.println("name: " + a);*/
-        
+
         if (names.isEmpty()) //no names found -- try again with lower support (to obey some uncertain hints)
         {
             support = 0.25f;
             findTagsInArea(root, bounds, tag, support, true, names);
         }
-        
+
         if (!names.isEmpty())
         {
             //find the group containing the last name discovered
             Vector<Area> leaves = new Vector<Area>();
             findLeavesInArea(root, bounds, leaves);
             int last = leaves.indexOf(names.lastElement());
-            
+
             //go until the beginning of the group
             int first = last;
             Area prev = names.lastElement();
@@ -140,7 +140,7 @@ public class FindEditorsOperator extends BaseOperator
                     first = i;
                     prev = cur;
                 }
-                //else continue because some of the previous boxes may be a neighbor too 
+                //else continue because some of the previous boxes may be a neighbor too
             }
             //go until the end of the group
             prev = names.lastElement();
@@ -166,7 +166,7 @@ public class FindEditorsOperator extends BaseOperator
                     break;
                 }
             }
-            
+
             //build statistics about names
             prev = null;
             int sameline = 0;
@@ -178,7 +178,7 @@ public class FindEditorsOperator extends BaseOperator
             for (int i = first; i <= last; i++)
             {
                 Area a = leaves.elementAt(i);
-                //when some names are links, use only those for statistics 
+                //when some names are links, use only those for statistics
                 if (a.hasTag(tag, support) && (!authorsLinked || AreaUtils.isLink(a)))
                 {
                     estyles.add(new FontNodeStyle(a));
@@ -210,7 +210,7 @@ public class FindEditorsOperator extends BaseOperator
                     estyle = st;
             }
             log.info("Layout: same line {}, next line {}, other {}, minx {}, style {}, linked {}", sameline, nextline, other, minx, estyle, authorsLinked);
-            
+
             //tag the names according to the layout
             if (sameline == 0 && nextline == 0 && multiPerson != -1) //probably a single author area
             {
@@ -225,7 +225,8 @@ public class FindEditorsOperator extends BaseOperator
                     String text = a.getText().trim();
                     boolean found = false;
                     //System.out.println("Test " + a);
-                    if (text.length() > 0 && estyle.equals(new FontNodeStyle(a)))
+                    if (text.length() > 0 && !(text.equalsIgnoreCase("Edited by") || text.equalsIgnoreCase("Herausgeber") || text.equalsIgnoreCase("Organised by")
+                    		|| text.equalsIgnoreCase("Editorial") || text.equalsIgnoreCase("Herausgegeben von") || text.equalsIgnoreCase("Editado por"))) //&& estyle.equals(new FontNodeStyle(a)), changed because 1260
                     {
                         if (nextline >= sameline) //probably names on separate lines
                         {
@@ -253,25 +254,25 @@ public class FindEditorsOperator extends BaseOperator
                     }
                 }
             }
-            
+
         }
         else
             log.warn("Could not find any names for editors!");
-        
+
     }
-    
+
     //==============================================================================
-    
-    private void findLeavesInArea(Area root, Rectangular limit, Vector<Area> dest) 
+
+    private void findLeavesInArea(Area root, Rectangular limit, Vector<Area> dest)
     {
         if (root.isLeaf() && root.getBounds().intersects(limit))
             dest.add(root);
         for (int i = 0; i < root.getChildCount(); i++)
             findLeavesInArea(root.getChildArea(i), limit, dest);
     }
-    
-    private void findTagsInArea(Area root, Rectangular limit, Tag tag, float minSupport, 
-                                boolean startWithLetter, Vector<Area> dest) 
+
+    private void findTagsInArea(Area root, Rectangular limit, Tag tag, float minSupport,
+                                boolean startWithLetter, Vector<Area> dest)
     {
         if (root.hasTag(tag, minSupport) && root.getBounds().intersects(limit))
         {
@@ -287,6 +288,6 @@ public class FindEditorsOperator extends BaseOperator
         for (int i = 0; i < root.getChildCount(); i++)
             findTagsInArea(root.getChildArea(i), limit, tag, minSupport, startWithLetter, dest);
     }
-    
-    
+
+
 }

@@ -6,6 +6,7 @@ function help()
 	println("  console.browser() -- open the browser gui");
 	println("  storage.connect('http://localhost:8080/bigdata/sparql') -- connect a SPARQL endpoint for storing the data");
 	println("  processPage('http://ceur-ws.org/Vol-1/') -- process the given page and store the results");
+	println("  processAllData() -- process all the data set and store the results");
 	println("  processTrainingSet() -- process the SemPub2015 training set and store the results");
 	println("  processEvaluationSet() -- process the SemPub2015 evaluations set (includes the training set as well) and store the results");
 	println("  transformToDomain() -- transform all the data to the target domain");
@@ -22,7 +23,7 @@ function processPage(url)
 {
 	println("");
 	println("*** START " + url);
-	
+
 	//rendering
 	var srcConfig = {
 			width: 2400,
@@ -39,10 +40,10 @@ function processPage(url)
 	//proc.apply('Ceur.Tag.Class', {});
 	proc.apply('FitLayout.Tag.Entities', {});
 	proc.apply('Eswc.Tag.All', {});
-	
+
 	//logical tree
 	proc.initLogicalTree('CEUR.Logical', {});
-	
+
 	//save the result
 	saveCurrentPage();
 	println("... DONE");
@@ -75,6 +76,7 @@ function transformToDomain()
 storage.connect("http://localhost:8080/bigdata/sparql");
 proc.execInternal('js/eswc_training.js');
 proc.execInternal('js/eswc_eval.js');
+proc.execInternal('js/eswc_all.js');
 
 println("The console speaks JavaScript. Type help() for help.");
 
@@ -84,4 +86,3 @@ processPage('http://ceur-ws.org/Vol-1128/');
 processPage('http://ceur-ws.org/Vol-1123/');
 processPage('http://ceur-ws.org/Vol-1116/');
 processPage('http://ceur-ws.org/Vol-1111/');*/
-

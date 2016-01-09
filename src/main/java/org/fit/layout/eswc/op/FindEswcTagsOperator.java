@@ -31,7 +31,7 @@ public class FindEswcTagsOperator extends BaseOperator
 
     private Tag tagPages = new DefaultTag("FitLayout.TextTag", "pages");
     private Tag tagEPages = new EswcTag("pages");
-    
+
     private final String[] paramNames = {};
     private final ValueType[] paramTypes = {};
 
@@ -39,26 +39,26 @@ public class FindEswcTagsOperator extends BaseOperator
     private ScanSubtitlesOperator opSubtitles;
     private FindPairsOperator opPairs;
     private FindEditorsOperator opEditors;
-    
+
     private Area rootArea;
     private Area editedArea;
     private Area tocArea;
     private Area submittedArea;
-    
-    private boolean ceurPresent;
-    
 
-    
+    private boolean ceurPresent;
+
+
+
     public FindEswcTagsOperator()
     {
     }
-    
+
     @Override
     public String getId()
     {
         return "Eswc.Tag.All";
     }
-    
+
     @Override
     public String getName()
     {
@@ -125,7 +125,7 @@ public class FindEswcTagsOperator extends BaseOperator
         {
             bpapers.setY2(submittedArea.getBounds().getY1());
         }
-        
+
         opTitles = new FindTitlesOperator(btitles);
         opPairs = new FindPairsOperator(bpapers);
         opTitles.apply(atree, root);
@@ -146,8 +146,8 @@ public class FindEswcTagsOperator extends BaseOperator
         if (tocArea == null)
             bpapers = bp; //no ToC rely completely on detected region
         else
-            bpapers.setY2(bp.getY2()); //ToC present, just update Y2 
-        
+            bpapers.setY2(bp.getY2()); //ToC present, just update Y2
+
         //hint for editor detection: the area after 'edited by' should be a name (if everything fails)
         if (editedArea != null)
         {
@@ -168,7 +168,7 @@ public class FindEswcTagsOperator extends BaseOperator
         if (bsubtitles.getY2() >= be.getY1())
             bsubtitles.setY2(be.getY1() - 1); //above the editors
         log.info("SUBTITLES: {}", bsubtitles);
-        
+
         //create a super area for all the papers
         Area apapers = AreaUtils.createSuperAreaFromVerticalRegion(root, bpapers);
         if (apapers != null)
@@ -187,7 +187,7 @@ public class FindEswcTagsOperator extends BaseOperator
             findPages(root, bpapers);
             log.warn("Couldn't create the papers super-area!");
         }
-        
+
         //find workshop place and date
         opSubtitles = new ScanSubtitlesOperator(bsubtitles);
         opSubtitles.apply(atree, root);
@@ -206,17 +206,24 @@ public class FindEswcTagsOperator extends BaseOperator
         submittedArea = null;
         scanAreas(rootArea);
     }
-    
+
     public void scanAreas(Area root)
     {
         if (root.isLeaf())
         {
             //scan for specific areas
-            if (editedArea == null && root.getText().equalsIgnoreCase("Edited by"))
+            if (editedArea == null && (root.getText().equalsIgnoreCase("Edited by") ||
+                root.getText().equalsIgnoreCase("Herausgeber") || root.getText().equalsIgnoreCase("Organised by")
+                || root.getText().equalsIgnoreCase("Editorial") || root.getText().equalsIgnoreCase("Herausgegeben von")
+                || root.getText().equalsIgnoreCase("Editado por")))
             {
                 editedArea = root;
             }
-            if (tocArea == null && root.getText().toLowerCase().startsWith("table of contents"))
+            if (tocArea == null && (root.getText().toLowerCase().startsWith("table of contents") ||
+                root.getText().toLowerCase().startsWith("contents") || root.getText().toLowerCase().startsWith("inhalt")
+                || root.getText().toLowerCase().startsWith("technical papers") || root.getText().toLowerCase().startsWith("tabla de contenidos")
+                || root.getText().toLowerCase().startsWith("inhaltsverzeichnis") || root.getText().toLowerCase().startsWith("programm")
+                || root.getText().toLowerCase().startsWith("índice")))
             {
                 tocArea = root;
             }
@@ -225,7 +232,7 @@ public class FindEswcTagsOperator extends BaseOperator
             {
                 submittedArea = root;
             }
-            
+
             //scan for CEUR tags if their presence is not confirmed yet
             if (!ceurPresent)
             {
@@ -246,7 +253,7 @@ public class FindEswcTagsOperator extends BaseOperator
                 scanAreas(root.getChildArea(i));
         }
     }
-    
+
     private void clearTags(Area root, String type)
     {
         Set<Tag> tags = new HashSet<Tag>(root.getTags().keySet());
@@ -258,7 +265,7 @@ public class FindEswcTagsOperator extends BaseOperator
         for (int i = 0; i < root.getChildCount(); i++)
             clearTags(root.getChildArea(i), type);
     }
-    
+
     private void findPages(Area root, Rectangular region)
     {
         if (region.enclosesY(root.getBounds()) && root.hasTag(tagPages))
@@ -269,5 +276,5 @@ public class FindEswcTagsOperator extends BaseOperator
         for (int i = 0; i < root.getChildCount(); i++)
             findPages(root.getChildArea(i), region);
     }
-    
+
 }
