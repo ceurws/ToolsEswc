@@ -5,12 +5,17 @@
  */
 package org.fit.layout.eswc.op;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+
 import org.fit.layout.classify.NodeStyle;
 import org.fit.layout.classify.StyleCounter;
+import org.fit.layout.eswc.logical.EswcLogicalArea;
 import org.fit.layout.impl.BaseOperator;
 import org.fit.layout.impl.DefaultTag;
 import org.fit.layout.model.Area;
 import org.fit.layout.model.AreaTree;
+import org.fit.layout.model.LogicalArea;
 import org.fit.layout.model.Rectangular;
 import org.fit.layout.model.Tag;
 import org.slf4j.Logger;
@@ -28,6 +33,8 @@ public class FindPairsOperator extends BaseOperator
     
     private final String[] paramNames = {};
     private final ValueType[] paramTypes = {};
+    private ArrayList<String> VOLLIST1 = new ArrayList<>(Arrays.asList("120", "88", "84", "41", "35", "18", "17", "12"));
+    private ArrayList<String> VOLLIST2 = new ArrayList<>(Arrays.asList("331", "299"));
     
     //params
     private boolean useSiblings;
@@ -43,7 +50,8 @@ public class FindPairsOperator extends BaseOperator
     private int tacnt = 0; //title-author pairs
     private int atcnt = 0; //author-title pairs
     private int sidecnt = 0; //placed side-by side
-    private int belowcnt = 0; //placed below 
+    private int belowcnt = 0; //placed below
+    private String curvol = "";
     private StyleCounter<NodeStyle> tstyles;
     private StyleCounter<NodeStyle> astyles;
     
@@ -59,6 +67,13 @@ public class FindPairsOperator extends BaseOperator
     {
         useSiblings = true;
         this.bounds = bounds;
+    }
+    
+    private void getCurVol(AreaTree tree)
+    {
+        String uri = tree.getRoot().getAllBoxes().firstElement().getPage().getSourceURL().toString();
+        curvol = uri.substring("http://ceur-ws.org/Vol-".length(), uri.length() - 1);
+        //System.out.println("Current Vol is : " + curvol);
     }
     
     @Override
@@ -119,6 +134,7 @@ public class FindPairsOperator extends BaseOperator
     public void apply(AreaTree atree, Area root)
     {
         reset();
+        getCurVol(atree);
         
         //add tags to pairs based on their text tags
         gatherStatistics(root, 0.2f);
@@ -134,18 +150,19 @@ public class FindPairsOperator extends BaseOperator
     
     private void gatherStatistics(Area root, float tprob)
     {
-        if (root.getParentArea() != null && isIn(root) && acceptableTags(root, 0.0f, true))
+        if (root.getParentArea() != null && isIn(root)  && (VOLLIST1.contains(curvol) || acceptableTags(root, 0.0f, true)))// 
         {
             //try to find a neighbor area
             Area aa = findAlignedPreviousSibling(root, 5);
             //check the tags
             boolean found = false;
-            if (aa != null && acceptableTags(aa, 0.0f, true))
+            if (aa != null && (VOLLIST2.contains(curvol) || acceptableTags(aa, 0.0f, true))) // && acceptableTags(aa, 0.0f, true)
             {
                 if ((root.hasTag(tpersons) && !aa.hasTag(tpersons))
                     || (!root.hasTag(ttitle) && aa.hasTag(ttitle)))
                 {
                     //title - authors
+                	//System.out.println(aa);
                     aa.addTag(etitle, tprob);
                     root.addTag(eauthors, tprob);
                     tstyles.add(new NodeStyle(aa));
@@ -157,6 +174,7 @@ public class FindPairsOperator extends BaseOperator
                          || (!root.hasTag(tpersons) && aa.hasTag(tpersons)))
                 {
                     //authors - title
+                	//System.out.println(aa);
                     aa.addTag(eauthors, tprob);
                     root.addTag(etitle, tprob);
                     astyles.add(new NodeStyle(aa));

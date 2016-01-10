@@ -152,12 +152,17 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
         scanLeaves();
 
         //addVTitle();
-        addIndexData();
-        analyzeShortNames();
-        addVDates();
-        addVCountry();
-        addEditors();
-        addPapers();
+        try{
+	        addIndexData();
+	        analyzeShortNames();
+	        addVDates();
+	        addVCountry();
+	        addEditors();
+	        addPapers();
+        }catch(Exception e){
+        	e.printStackTrace();
+        	throw e;
+        }
 
         return tree;
     }
@@ -193,11 +198,13 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
                 iCountry = i;
             if (a.hasTag(tagVEditor, ms))
             {
+            	//System.out.println(a.getText());
                 if (editorStart == -1) editorStart = i;
                 editorEnd = i;
             }
             if (a.hasTag(tagTitle, ms) || a.hasTag(tagAuthor, ms) || a.hasTag(tagPages, ms))
             {
+            	//System.out.println(a.getText());
                 if (paperStart == -1) paperStart = i;
                 paperEnd = i;
             }
@@ -486,6 +493,7 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
         //System.out.println("ED: " + text);
         //find the name
         int i = 0;
+        text = text.replaceAll(", ", "").replaceAll("[*]", "");		//filter case like in vol-317
         while (i < text.length())
         {
             char ch = text.charAt(i);

@@ -104,14 +104,16 @@ public class ConsoleEswc extends Console
     	}
     	//List<String> sublist = urls.subList(1200, 1540);
     	ListIterator<String> iter = urls.listIterator();
-    	while(iter.hasNext()){
-    		String tmp_str = iter.next();
-    		if(tmp_str.equals("http://ceur-ws.org/Vol-331/")
-    				|| tmp_str.equals("http://ceur-ws.org/Vol-299/")
+    	/*tmp_str.equals("http://ceur-ws.org/Vol-331/") || tmp_str.equals("http://ceur-ws.org/Vol-299/")
     				|| tmp_str.equals("http://ceur-ws.org/Vol-120/") || tmp_str.equals("http://ceur-ws.org/Vol-88/")
     				|| tmp_str.equals("http://ceur-ws.org/Vol-84/") || tmp_str.equals("http://ceur-ws.org/Vol-41/")
     				|| tmp_str.equals("http://ceur-ws.org/Vol-35/") || tmp_str.equals("http://ceur-ws.org/Vol-18/")
-    				|| tmp_str.equals("http://ceur-ws.org/Vol-12/") || tmp_str.equals("http://ceur-ws.org/Vol-17/")){
+    				|| tmp_str.equals("http://ceur-ws.org/Vol-1260/") || tmp_str.equals("http://ceur-ws.org/Vol-989/") 
+    				|| tmp_str.equals("http://ceur-ws.org/Vol-12/") || 
+    	 * */
+    	while(iter.hasNext()){
+    		String tmp_str = iter.next();
+    		if(		tmp_str.equals("http://ceur-ws.org/Vol-41/")){
     			iter.remove();
     		}
     	}

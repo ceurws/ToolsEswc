@@ -215,22 +215,25 @@ public class FindEswcTagsOperator extends BaseOperator
             if (editedArea == null && (root.getText().equalsIgnoreCase("Edited by") ||
                 root.getText().equalsIgnoreCase("Herausgeber") || root.getText().equalsIgnoreCase("Organised by")
                 || root.getText().equalsIgnoreCase("Editorial") || root.getText().equalsIgnoreCase("Herausgegeben von")
-                || root.getText().equalsIgnoreCase("Editado por")))
+                || root.getText().equalsIgnoreCase("Editado por") || root.getText().equalsIgnoreCase("Organizing Committees:")))
             {
                 editedArea = root;
+                //System.out.println("Got editors area!");
             }
-            if (tocArea == null && (root.getText().toLowerCase().startsWith("table of contents") ||
-                root.getText().toLowerCase().startsWith("contents") || root.getText().toLowerCase().startsWith("inhalt")
+            if (tocArea == null && (root.getText().toLowerCase().startsWith("contents:") || root.getText().toLowerCase().startsWith("table of contents")
+            	|| root.getText().toLowerCase().startsWith("contents") || root.getText().toLowerCase().startsWith("inhalt")
                 || root.getText().toLowerCase().startsWith("technical papers") || root.getText().toLowerCase().startsWith("tabla de contenidos")
                 || root.getText().toLowerCase().startsWith("inhaltsverzeichnis") || root.getText().toLowerCase().startsWith("programm")
                 || root.getText().toLowerCase().startsWith("índice")))
             {
                 tocArea = root;
+                //System.out.println("Got toc area!");
             }
             if (root.getText().toLowerCase().contains("submitted by")
                     || root.getText().toLowerCase().contains("submitted to")) //prefer the last occurence
             {
                 submittedArea = root;
+                //System.out.println("Got submit area!");
             }
 
             //scan for CEUR tags if their presence is not confirmed yet
