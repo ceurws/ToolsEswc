@@ -69,7 +69,7 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
     private static Tag tagPaper = new EswcTag("paper");
     private static Tag tagAuthor = new EswcTag("authors");
     private static Tag tagTitle = new EswcTag("title");
-    private static Tag tagPages = new CeurTag("pages");
+    private static Tag tagPages = new EswcTag("pages");
     private static Tag tagStartPage = new EswcTag("pstart");
     private static Tag tagEndPage = new EswcTag("pend");
     private static Tag tagSection = new EswcTag("section");
@@ -691,7 +691,7 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
                 }
                 else if (curPages == null && a.hasTag(tagPages, ms))
                     curPages = a;
-                else //some duplicate
+                else if (paperI != -1)//some duplicate
                 {
                     curSection = findSection(paperI);
                     savePaper(curTitle, curAuthors, curPages, curSection);
