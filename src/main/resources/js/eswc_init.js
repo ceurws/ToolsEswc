@@ -71,9 +71,11 @@ function transformToDomain()
 	storage.execQueryFromResource('sparql/constructIndex.sparql');
 	//transform volume data to domain
 	storage.execQueryFromResource('sparql/logicalTree2domain.sparql');
+	//remove non used data
+	//storage.execQueryFromResource('sparql/filter_domain.sparql');
 }
 
-storage.connect("http://localhost:8080/bigdata/sparql");
+storage.connect("http://localhost:9999/bigdata/sparql");
 proc.execInternal('js/eswc_training.js');
 proc.execInternal('js/eswc_eval.js');
 proc.execInternal('js/eswc_all.js');

@@ -4,6 +4,7 @@
 # Extracts the related workshops and prints the relationships as RDF triples.
 # (c) Radek Burget 2015
 #
+# cat index.html | awk -f extr_related.awk | php -r 'while(($line=fgets(STDIN)) !== FALSE) echo html_entity_decode($line, ENT_QUOTES|ENT_HTML401);' >related.ttl
 
 BEGIN {
 	curvol="none";
