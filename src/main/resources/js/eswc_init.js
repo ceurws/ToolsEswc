@@ -71,8 +71,6 @@ function transformToDomain()
 	storage.execQueryFromResource('sparql/constructIndex.sparql');
 	//transform volume data to domain
 	storage.execQueryFromResource('sparql/logicalTree2domain.sparql');
-	//remove non used data
-	//storage.execQueryFromResource('sparql/filter_domain.sparql');
 }
 
 storage.connect("http://localhost:9999/bigdata/sparql");

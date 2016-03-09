@@ -39,6 +39,8 @@ INSERT
 	  ?paper swc:partOf ?proceedings .
     
     ?paper bibo:numPages ?pagesdt .
+    ?paper bibo:startPage ?pagestart .
+    ?paper bibo:endPage ?pageend .
     
     ?proceedings swc:hasPart ?paper .
     
@@ -46,7 +48,7 @@ INSERT
 	  ?paper swrc:author ?author .
     ?author rdf:type foaf:Person .
     ?author foaf:name ?authorName .
-    ?author foaf:made ?paper .           
+    ?author foaf:made ?paper .      
     
     ?paper bibo:section ?sectionName .
     
@@ -144,6 +146,18 @@ WHERE {
   	?paperPagesPart a:hasText ?pagesText .
   }
   
+  OPTIONAL {
+  	?paperPagesStart a:isSubordinateTo ?apaper .
+  	?paperPagesStart a:hasTag a:tag-ESWC--pstart .
+  	?paperPagesStart a:hasText ?pagesStart .
+  }
+  
+   OPTIONAL {
+  	?paperPagesEnd a:isSubordinateTo ?apaper .
+  	?paperPagesEnd a:hasTag a:tag-ESWC--pend .
+  	?paperPagesEnd a:hasText ?pagesEnd .
+  }
+  
   	?editorPart a:isSubordinateTo ?workshopPart .
     ?editorPart a:hasTag a:tag-ESWC--veditor .
   	?editorPart a:hasText ?editorName .
@@ -180,6 +194,8 @@ WHERE {
     BIND ( STRDT(?publishedText, xsd:dateTime) AS ?publisheddt)
     
     BIND ( STRDT(?pagesText, xsd:integer) AS ?pagesdt)
+    BIND ( STRDT(?pagesStart, xsd:integer) AS ?pagestart)
+    BIND ( STRDT(?pagesEnd, xsd:integer) AS ?pageend)
     BIND ( STRDT(?editionText, xsd:integer) AS ?editiondt)
     
     BIND (URI(CONCAT(?workshopUri, "#", ENCODE_FOR_URI( replace(?authorName," ", "i") ) )) AS ?author) 
