@@ -102,8 +102,9 @@ public class ConsoleEswc extends Console
     			}
 
     	}
-    	//List<String> sublist = urls.subList(1200, 1540);
-    	ListIterator<String> iter = urls.listIterator();
+    	List<String> sublist = urls.subList(1500, 1559); // Vol 1-300 (0-299)
+    	//List<String> sublist = urls.subList(300, 600); // Vol 301-600 (300-599)
+    	ListIterator<String> iter = sublist.listIterator();
     	/*tmp_str.equals("http://ceur-ws.org/Vol-331/") || tmp_str.equals("http://ceur-ws.org/Vol-299/")
     				|| tmp_str.equals("http://ceur-ws.org/Vol-120/") || tmp_str.equals("http://ceur-ws.org/Vol-88/")
     				|| tmp_str.equals("http://ceur-ws.org/Vol-84/") || tmp_str.equals("http://ceur-ws.org/Vol-41/")
@@ -111,13 +112,14 @@ public class ConsoleEswc extends Console
     				|| tmp_str.equals("http://ceur-ws.org/Vol-1260/") || tmp_str.equals("http://ceur-ws.org/Vol-989/") 
     				|| tmp_str.equals("http://ceur-ws.org/Vol-12/") || 
     	 * */
+    	
     	while(iter.hasNext()){
     		String tmp_str = iter.next();
-    		if(		tmp_str.equals("http://ceur-ws.org/Vol-41/")){
+    		if(tmp_str.equals("http://ceur-ws.org/Vol-41/")){
     			iter.remove();
     		}
     	}
-    	return urls.toString().replaceAll("^\\[|\\]$", "");
+    	return sublist.toString().replaceAll("^\\[|\\]$", "");
     }
 
     public static void main(String[] args)

@@ -73,7 +73,7 @@ function transformToDomain()
 	storage.execQueryFromResource('sparql/logicalTree2domain.sparql');
 }
 
-storage.connect("http://localhost:9999/bigdata/sparql");
+storage.connect("http://localhost:9999/blazegraph/sparql");
 proc.execInternal('js/eswc_training.js');
 proc.execInternal('js/eswc_eval.js');
 proc.execInternal('js/eswc_all.js');
