@@ -25,7 +25,7 @@ For accomplishing the SemPub2015 Task1 the following commands should be used:
 processEvaluationSet();
 transformToDomain();
 ```
-This assumes the Blazegraph storage to be running at `http://localhost:8080/bigdata`. Use `storage.connect()` to connect another repository.
+The program store generated data in Blazegraph, detail information see `https://wiki.blazegraph.com/wiki/index.php/About_Blazegraph`. This assumes the Blazegraph storage to be running at `http://localhost:9999/blazegraph`. Use `storage.connect()` to connect another repository.
 
 After this, the storage should contain the complete extracted data.
 
