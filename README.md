@@ -9,6 +9,8 @@ How to Build
 
 The whole package is build using maven. Use `mvn package` for creating the runnable `SemPub2015Extractor.jar`.
 
+The compiled program is also contained in the repository folder /target/SemPub2015Extractor.jar for convenience.
+
 
 Running the Extraction Task
 ---------------------------
@@ -25,7 +27,20 @@ For accomplishing the SemPub2015 Task1 the following commands should be used:
 processEvaluationSet();
 transformToDomain();
 ```
-The program store generated data in Blazegraph, detail information see `https://wiki.blazegraph.com/wiki/index.php/About_Blazegraph`. This assumes the Blazegraph storage to be running at `http://localhost:9999/blazegraph`. Use `storage.connect()` to connect another repository.
+
+For process all the workshops located in http://ceur-ws.org/ the following commands should be used:
+```
+processAllData();
+transformToDomain();
+```
+
+For process a single volume, like http://ceur-ws.org/Vol-1/ the following commands should be used:
+```
+processPage('http://ceur-ws.org/Vol-1/');
+transformToDomain();
+```
+
+The program stores generated data in Blazegraph, detail information see `https://wiki.blazegraph.com/wiki/index.php/About_Blazegraph`. This assumes the Blazegraph storage to be running at `http://localhost:9999/blazegraph`. Use `storage.connect()` to connect another repository.
 
 After this, the storage should contain the complete extracted data.
 
