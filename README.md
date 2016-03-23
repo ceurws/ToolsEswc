@@ -47,7 +47,17 @@ After this, the storage should contain the complete extracted data.
 
 Remove non-relevant data and serialize it from Blazegraph
 ---------------------------
-The transformed data contains a lot non relevant information, like html element information. You can remove them by using the sparql query in file [/sparql/filter_domain.sparql](https://github.com/liyakun/ToolsEswc/blob/master/src/main/resources/sparql/filter_domain.sparql).
+The transformed data contains a lot non relevant information, like html element information. The target of this section is to guide user to get clean dataset.
+
+1. You need remove most of the non-relevant dataset by using the sparql query in file [/sparql/filter_domain.sparql](https://github.com/liyakun/ToolsEswc/blob/master/src/main/resources/sparql/filter_domain.sparql)in the update window of Blazegraph.
+
+2. Then you need serialize all the dataset out of the repository by using the following command:
+```
+curl -X POST http://localhost:9999/bigdata/sparql --data-urlencode 'query=CONSTRUCT  WHERE { hint:Query hint:analytic "true" . hint:Query hint:constructDistinctSPO "false" . ?s ?p ?o }' -H 'Accept:application/rdf+xml' | gzip > output.rdf
+```
+You can also serialize the dataset with other formats, detail see [REST_APT](https://wiki.blazegraph.com/wiki/index.php/REST_API).
+
+3. You need to use the provided python script to remove the remaining non-relevant information.
 
 SPARQL Queries
 --------------
