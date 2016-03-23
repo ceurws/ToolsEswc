@@ -47,7 +47,7 @@ After this, the storage should contain the complete extracted data.
 
 Remove non-relevant data and serialize it from Blazegraph
 ---------------------------
-The transformed data contains a lot non relevant information, like html element information. You can remove them by using the sparql query in file [/sparql/remove_domain.sparql](https://github.com/liyakun/ToolsEswc/tree/master/sparql).
+The transformed data contains a lot non relevant information, like html element information. You can remove them by using the sparql query in file [/sparql/filter_domain.sparql](https://github.com/liyakun/ToolsEswc/blob/master/src/main/resources/sparql/filter_domain.sparql).
 
 SPARQL Queries
 --------------
