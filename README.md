@@ -9,7 +9,7 @@ How to Build
 
 The whole package is build using maven. Use `mvn package` for creating the runnable `SemPub2015Extractor.jar`.
 
-The compiled program is also contained in the repository folder /target/SemPub2015Extractor.jar for convenience.
+The compiled program is also contained in the repository folder [/target/SemPub2015Extractor.jar](https://github.com/liyakun/ToolsEswc/blob/master/target/SemPub2015Extractor.jar) for convenience.
 
 
 Running the Extraction Task
@@ -28,7 +28,7 @@ processEvaluationSet();
 transformToDomain();
 ```
 
-For process all the workshops located in http://ceur-ws.org/ the following commands should be used:
+For process all the workshops located in [CEUR](http://ceur-ws.org/) the following commands should be used:
 ```
 processAllData();
 transformToDomain();
@@ -40,11 +40,14 @@ processPage('http://ceur-ws.org/Vol-1/');
 transformToDomain();
 ```
 
-The program stores generated data in Blazegraph, detail information see `https://wiki.blazegraph.com/wiki/index.php/About_Blazegraph`. This assumes the Blazegraph storage to be running at `http://localhost:9999/blazegraph`. Use `storage.connect()` to connect another repository.
+The program stores generated data in Blazegraph, detail information see [About_Blazegraph](https://wiki.blazegraph.com/wiki/index.php/About_Blazegraph). This assumes the Blazegraph storage to be running at `http://localhost:9999/blazegraph`. Use `storage.connect()` to connect another repository.
 
 After this, the storage should contain the complete extracted data.
 
 
+Remove non-relevant data and serialize it from Blazegraph
+---------------------------
+The transformed data contains a lot non relevant information, like html element information. You can remove them by using the sparql query in file [/sparql/remove_domain.sparql](https://github.com/liyakun/ToolsEswc/tree/master/sparql).
 
 SPARQL Queries
 --------------
