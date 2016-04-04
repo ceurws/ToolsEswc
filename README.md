@@ -53,7 +53,7 @@ After this, the storage should contain the complete extracted data.
 
 Serialize RDF Data
 -------------------------------------------------
-You can serialize the generated rdf dataset from the repository by using the python script provided at [/serializer/serializer.py](http://).
+You can serialize the generated rdf dataset from the repository by using the python script provided at [/serialization/serializer.py](https://github.com/ceurws/ToolsEswc/blob/master/serialization/serializer.py).
 
 SPARQL Queries
 --------------
