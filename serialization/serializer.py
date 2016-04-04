@@ -46,7 +46,7 @@ bad_words = ['http://fitlayout.github.io/ontology/segmentation.owl', 'http://www
 
 skip_next_line, count = 0, 0
 # remove non-relevant data from data file
-with gzip.open('output.ttl.gz', 'rb') as oldfile, gzip.open('all_clean.ttl.gz', 'wb') as newfile:
+with gzip.open('output.ttl.gz', 'rb') as oldfile, gzip.open('all.ttl.gz', 'wb') as newfile:
     for line in oldfile:
 	if skip_next_line == 1:
 	    count += 1
