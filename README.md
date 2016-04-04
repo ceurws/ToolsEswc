@@ -53,7 +53,7 @@ After this, the storage should contain the complete extracted data.
 
 Serialize RDF Data
 -------------------------------------------------
-You can serialize the generated rdf dataset from the repository by using the python script provided at [/serialization/serializer.py](https://github.com/ceurws/ToolsEswc/blob/master/serialization/serializer.py), the generated file is called all.ttl.gz. You can also download the most recent generated dataset from.
+You can serialize the generated rdf dataset from the repository by using the python script provided at [/serialization/serializer.py](https://github.com/ceurws/ToolsEswc/blob/master/serialization/serializer.py), the generated file is called all.ttl.gz. You can also use the most recent generated dataset located at [/serialization/all.ttl.tar.gz]('https://github.com/ceurws/ToolsEswc/blob/master/serialization/all.ttl.tar.gz').
 
 SPARQL Queries
 --------------
