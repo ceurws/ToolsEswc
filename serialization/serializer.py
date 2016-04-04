@@ -33,6 +33,9 @@ else:
 arg = "curl --get -X DELETE -H 'Accept: application/xml' " + url + " --data-urlencode 'query=PREFIX box: <http://fitlayout.github.io/ontology/render.owl#> PREFIX segm: <http://fitlayout.github.io/ontology/segmentation.owl#> CONSTRUCT { ?a ?b ?c } WHERE {{ ?a rdf:type segm:AreaTree } union { ?a rdf:type segm:LogicalArea } union { ?a rdf:type segm:Area } union { ?a rdf:type box:Box } union { ?a rdf:type box:Page } union { ?a segm:ititle ?c  } union { ?a segm:ishort ?c  } union { ?a segm:idateplace ?c  } union { ?a segm:iproceedings ?c  } union { ?a segm:istartdate ?c  } union { ?a segm:ienddate ?c  } union { ?a segm:isubmitted ?c  } union { ?a segm:icoloc ?c  } union { ?a segm:editorname ?c  } union { ?a segm:hasTag ?c  } union { ?a segm:support ?c  } union {?a segm:related ?c} ?a ?b ?c.}'"
 subprocess.check_output(arg, shell=True)
 
+# add license information
+arg = "curl -X POST -H 'Content-Type:application/x-turtle' --data-binary '@license.ttl' " + url
+
 # serialize data from repository, you can also serialize with other formats, detail see 
 # https://wiki.blazegraph.com/wiki/index.php/REST_API
 arg = "curl -X POST " + url + " --data-urlencode 'query=CONSTRUCT  WHERE {hint:Query hint:analytic " + '"true"' +" . hint:Query hint:constructDistinctSPO " + '"false"' + " . ?s ?p ?o }' -H 'Accept:application/turtle' | gzip > output.ttl.gz"

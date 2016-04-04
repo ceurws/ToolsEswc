@@ -51,11 +51,9 @@ transformToDomain();
 After this, the storage should contain the complete extracted data.
 
 
-Add license information and get clean rdf dataset
+Serialize RDF Data
 -------------------------------------------------
-1. You can add the license information of workshops through the update tab of the Blazegraph software, the license file is [license.ttl](https://github.com/liyakun/ToolsEswc/blob/master/license.ttl)
-
-2. The transformed data contains a lot non relevant information, like html element information. You can use the provided python script [serializer.py](https://github.com/liyakun/ToolsEswc/blob/master/serializer.py) to get the clean dataset.
+You can serialize the generated rdf dataset from the repository by using the python script provided at [/serializer/serializer.py](http://).
 
 SPARQL Queries
 --------------
