@@ -2,7 +2,9 @@ SemPub2015 Tools and Extensions
 ===============================
 
 This project implements FitLayout-based applications and tools for automatic information extraction from the CEUR-WS.org workshop proceedings pages. The tools were created as a proposed solution of the 
-[Task 1](https://github.com/ceurws/lod/wiki/Task1) of the [Semantic Publishing Challenge 2015](https://github.com/ceurws/lod/wiki/SemPub2015) colocated with the [Extended Semantic Web Conference 2015](http://2015.eswc-conferences.org/).
+[Task 1](https://github.com/ceurws/lod/wiki/Task1) of the [Semantic Publishing Challenge 2015](https://github.com/ceurws/lod/wiki/SemPub2015) colocated with the [Extended Semantic Web Conference 2015](http://2015.eswc-conferences.org/). 
+
+The project was extended to process all the workshops located in [CEUR](http://ceur-ws.org/), you can got the most generated dataset from [dataset/all.ttl.tar.gz](https://github.com/ceurws/ToolsEswc/blob/master/dataset/all.ttl.tar.gz).
 
 How to Build the tool
 ---------------------
@@ -53,7 +55,7 @@ After this, the storage should contain the complete extracted data.
 
 Serialize RDF Data
 -------------------------------------------------
-You can serialize the generated rdf dataset from the repository by using the python script provided at [/serialization/serializer.py](https://github.com/ceurws/ToolsEswc/blob/master/serialization/serializer.py), the generated file is called all.ttl.gz. You can also use the most recent generated dataset located at [/serialization/all.ttl.tar.gz](https://github.com/ceurws/ToolsEswc/blob/master/serialization/all.ttl.tar.gz).
+You can serialize the generated rdf dataset from the repository by using the python script provided at [dataset/serializer.py](https://github.com/ceurws/ToolsEswc/blob/master/dataset/serializer.py), the generated file is called all.ttl.gz. You can also use the most recent generated dataset located at [dataset/all.ttl.tar.gz](https://github.com/ceurws/ToolsEswc/blob/master/dataset/all.ttl.tar.gz).
 
 SPARQL Queries
 --------------
