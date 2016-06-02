@@ -30,7 +30,7 @@ else:
     raise ValueError('\n'+ url + ' does not exist\n')
 
 # remove most non relevant data
-arg = "curl --get -X DELETE -H 'Accept: application/xml' " + url + " --data-urlencode 'query=PREFIX box: <http://fitlayout.github.io/ontology/render.owl#> PREFIX segm: <http://fitlayout.github.io/ontology/segmentation.owl#> CONSTRUCT { ?a ?b ?c } WHERE {{ ?a rdf:type segm:AreaTree } union { ?a rdf:type segm:LogicalArea } union { ?a rdf:type segm:Area } union { ?a rdf:type box:Box } union { ?a rdf:type box:Page } union { ?a segm:ititle ?c  } union { ?a segm:ishort ?c  } union { ?a segm:idateplace ?c  } union { ?a segm:iproceedings ?c  } union { ?a segm:istartdate ?c  } union { ?a segm:ienddate ?c  } union { ?a segm:isubmitted ?c  } union { ?a segm:icoloc ?c  } union { ?a segm:editorname ?c  } union { ?a segm:hasTag ?c  } union { ?a segm:support ?c  } union {?a segm:related ?c} ?a ?b ?c.}'"
+arg = "curl --get -X DELETE -H 'Accept: application/xml' " + url + " --data-urlencode 'query=PREFIX box: <http://fitlayout.github.io/ontology/render.owl#> PREFIX segm: <http://fitlayout.github.io/ontology/segmentation.owl#> CONSTRUCT { ?a ?b ?c } WHERE {{ ?a rdf:type segm:AreaTree } union { ?a rdf:type segm:LogicalArea } union { ?a rdf:type segm:Area } union { ?a rdf:type box:Box } union { ?a rdf:type box:Page } union { ?a segm:ititle ?c  } union { ?a segm:ishort ?c  } union { ?a segm:idateplace ?c  } union { ?a segm:iproceedings ?c  } union { ?a segm:istartdate ?c  } union { ?a segm:ienddate ?c  } union { ?a segm:isubmitted ?c  } union { ?a segm:icoloc ?c  } union { ?a segm:editorname ?c  } union { ?a segm:hasTag ?c  } union { ?a segm:support ?c  } ?a ?b ?c.}'"
 subprocess.check_output(arg, shell=True)
 
 # add license information
