@@ -3,6 +3,8 @@ import codecs
 import requests
 import subprocess
 import rdflib
+from rdflib.namespace import FOAF
+from fuzzywuzzy import fuzz
 import os
 import re
 
@@ -59,16 +61,52 @@ rdf_result = g.parse('output.ttl', format='n3')
 ns = rdflib.Namespace("http://fitlayout.github.io/ontology/segmentation.owl#")
 rdf_result.remove((None, ns['country'], None))
 rdf_result.remove((None, ns['related'], None))
-# rdflib.URIRef(u'')
-# g.subjects(predicate, object)
+
+# check if the user name in current volume is similar to any existing one
+def is_similarity(name, vol_names):
+    for names in vol_names:
+        if fuzz.WRatio(name, names[0]) > 90:
+            # print 'Same as: ' + str(names) + ', ' + name
+            return names
+    return False
+
+# if same person with different spelling in same volume, then 
+def same_person(name, person_uri, persons):
+    vol = person_uri.split('#')[0]
+    if vol not in persons:  # if the current volume is not processed yet, add it to dictionary
+        persons[vol] = []
+    result = is_similarity(name, persons[vol])
+    if result is False:  # if the name is not similarity to any existing one in current volume
+        persons[vol].append((name, person_uri))
+        return False
+    else:
+        return result
+
+# merging user names
+g.bind("foaf", FOAF)
+persons = {}
+for i, row in enumerate(g.query('SELECT ?name ?person WHERE {?person a foaf:Person ; foaf:name ?name}')):
+    name, person_uri = row
+    result = same_person(name, person_uri, persons)  # if same person name exist, then return the person name, and uri
+    if result:
+        for s, p, o in g.triples((person_uri, None, None)):
+            g.add((result[1], p, o))
+            g.remove((s, p, o))
+        for s, p, o in g.triples((None, None, person_uri)):
+            g.add((s, p, result[1]))  # replace the user
+            g.remove((s, p, o))
+
+
+# serialize data
 s = g.serialize(format='n3')
 with open('serialized.ttl', 'wb') as file_:
     file_.write(s)
 os.remove('output.ttl')
 
-# remove non relevant data
+# remove non relevant data, and solve issues with data set from 
 bad_words = ['hint:Query hint:analytic', 'hint:constructDistinctSPO', 'http://www.bigdata.com/',
              'http://www.openrdf.org/schema/sesame']
+persons = []
 with open('serialized.ttl', 'rb') as old, open('removed.ttl', 'wb') as new:
     for line in old:
         #  replace vol-1 with vol-1/#event
@@ -86,6 +124,9 @@ with open('serialized.ttl', 'rb') as old, open('removed.ttl', 'wb') as new:
             proc[2] += '/'
             proc[3] += '/>'
             line = ''.join(map(str, proc))
+        elif 'a foaf:Person' in line:
+            pass
+            # print line
         if not any(bad_word in line for bad_word in bad_words):
             new.write(line)
 os.remove('serialized.ttl')
