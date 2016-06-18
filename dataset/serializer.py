@@ -3,7 +3,7 @@ import codecs
 import requests
 import subprocess
 import rdflib
-from rdflib.namespace import FOAF
+from rdflib.namespace import FOAF, RDF, DC
 from fuzzywuzzy import fuzz
 import urllib
 import os
@@ -83,20 +83,13 @@ def same_person(name, person_uri, persons):
     else:
         return result
 
-# merging user names
+# solve mixing affiliation, and merging user names
 g.bind("foaf", FOAF)
 persons = {}
 for i, row in enumerate(g.query('SELECT ?name ?person WHERE {?person a foaf:Person ; foaf:name ?name}')):
     name, person_uri = row
-    result = same_person(name, person_uri, persons)  # if same person name exist, then return the person name, and uri
-    if result:
-        for s, p, o in g.triples((person_uri, None, None)):
-            g.add((result[1], p, o))
-            g.remove((s, p, o))
-        for s, p, o in g.triples((None, None, person_uri)):
-            g.add((s, p, result[1]))  # replace the user
-            g.remove((s, p, o))
-    if '(' in name: # most cases, the affiliation start with '(' after person name
+    #  1). most cases, the affiliation start with '(' after person name
+    if '(' in name:
         short_name = rdflib.term.Literal(name.split('(')[0].strip())
         short_person = rdflib.URIRef(urllib.unquote(person_uri.encode('utf8')).decode('utf8').split('(')[0])
         for s, p, o in g.triples((person_uri, None, None)):
@@ -108,7 +101,32 @@ for i, row in enumerate(g.query('SELECT ?name ?person WHERE {?person a foaf:Pers
         for s, p, o in g.triples((None, None, person_uri)):
             g.add((s, p, short_person))
             g.remove((s, p, o))
+    #  2). solve the same person name issue    
+    result = same_person(name, person_uri, persons)  # if same person name exist, then return the person name, and uri
+    if result:
+        for s, p, o in g.triples((person_uri, None, None)):
+            g.add((result[1], p, o))
+            g.remove((s, p, o))
+        for s, p, o in g.triples((None, None, person_uri)):
+            g.add((s, p, result[1]))  # replace the user
+            g.remove((s, p, o))
 
+# model section as resource
+swc = rdflib.Namespace('http://data.semanticweb.org/ns/swc/ontology/#')
+bibo = rdflib.Namespace('http://purl.org/ontology/bibo/#')
+dc = rdflib.Namespace('http://purl.org/dc/elements/1.1/#')
+for s, p, o in g.triples((None, bibo.section, None)):
+    vol = s.split('#')[0]
+    subj = rdflib.URIRef(vol+ '#' + "".join(o.split()))
+    # add new triple for section
+    g.add((subj, RDF.type, swc.SessionEvent))
+    g.add((subj, swc.partOf, rdflib.URIRef(vol+'#proc')))
+    g.add((rdflib.URIRef(vol + '#proc'), swc.hasSession, subj))
+    g.add((subj, dc.title, o))
+    # replace and remove old section information
+    g.add((s, p, subj))
+    g.remove((s, p, o))
+    
 
 # serialize data
 s = g.serialize(format='n3')
