@@ -5,6 +5,7 @@ import subprocess
 import rdflib
 from rdflib.namespace import FOAF
 from fuzzywuzzy import fuzz
+import urllib
 import os
 import re
 
@@ -94,6 +95,18 @@ for i, row in enumerate(g.query('SELECT ?name ?person WHERE {?person a foaf:Pers
             g.remove((s, p, o))
         for s, p, o in g.triples((None, None, person_uri)):
             g.add((s, p, result[1]))  # replace the user
+            g.remove((s, p, o))
+    if '(' in name: # most cases, the affiliation start with '(' after person name
+        short_name = rdflib.term.Literal(name.split('(')[0].strip())
+        short_person = rdflib.URIRef(urllib.unquote(person_uri.encode('utf8')).decode('utf8').split('(')[0])
+        for s, p, o in g.triples((person_uri, None, None)):
+            if p == FOAF.name:
+                g.add((short_person, FOAF.name, short_name))
+            else:
+                g.add((short_person, p, o))
+            g.remove((s, p, o))
+        for s, p, o in g.triples((None, None, person_uri)):
+            g.add((s, p, short_person))
             g.remove((s, p, o))
 
 
