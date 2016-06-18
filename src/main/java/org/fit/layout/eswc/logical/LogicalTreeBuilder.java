@@ -490,10 +490,15 @@ public class LogicalTreeBuilder extends BaseLogicalTreeProvider
     private List<String> saveEditor(Area editor, String text)
     {
         Vector<String> ret = new Vector<String>(3);
-        //System.out.println("ED: " + text);
+        System.out.println("ED: " + text);
         //find the name
         int i = 0;
-        text = text.replaceAll(", ", "").replaceAll("[*]", "");		//filter case like in vol-317
+        if (text.indexOf('*') >= 0){
+        	text = text.replaceAll(", ", "").replaceAll("[*]", "");		//filter case like in vol-317
+        }
+        // text = text.replaceAll(", ", "").replaceAll("[*]", "");		//filter case like in vol-317
+        /*The upper line remove, would also cause some problem for vol-1155
+         * */
         while (i < text.length())
         {
             char ch = text.charAt(i);
