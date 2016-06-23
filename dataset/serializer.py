@@ -63,20 +63,35 @@ ns = rdflib.Namespace("http://fitlayout.github.io/ontology/segmentation.owl#")
 rdf_result.remove((None, ns['country'], None))
 rdf_result.remove((None, ns['related'], None))
 
+
 # check if the user name in current volume is similar to any existing one
-def is_similarity(name, vol_names):
+# strategy: 1). split user name by blank space 
+#           2). if number of split blocks equal, and corresponding blocks similarity >= 90
+# then assert these two are the same person
+def is_similar(name, vol_names):
+    same_u = 0
     for names in vol_names:
-        if fuzz.WRatio(name, names[0]) > 90:
-            # print 'Same as: ' + str(names) + ', ' + name
-            return names
+        exist_u = names[0].split(' ')
+        new_u = name.split(' ')
+        if len(exist_u) == len(new_u):
+            for index, part_u in enumerate(exist_u):
+                if fuzz.WRatio(part_u, new_u[index]) >= 90:
+                    same_u = 1
+                else:
+                    same_u = 0
+                    break
+            if same_u == 1:
+                print 'Same as: ' + str(names) + ', ' + name
+                return names
     return False
+
 
 # if same person with different spelling in same volume, then 
 def same_person(name, person_uri, persons):
     vol = person_uri.split('#')[0]
     if vol not in persons:  # if the current volume is not processed yet, add it to dictionary
         persons[vol] = []
-    result = is_similarity(name, persons[vol])
+    result = is_similar(name, persons[vol])
     if result is False:  # if the name is not similarity to any existing one in current volume
         persons[vol].append((name, person_uri))
         return False
