@@ -4,7 +4,7 @@ function help()
 	println("HELP:");
 	println("  console.exit() -- exit console");
 	println("  console.browser() -- open the browser gui");
-	println("  storage.connect('http://localhost:8080/bigdata/sparql') -- connect a SPARQL endpoint for storing the data");
+	println("  storage.connect('http://localhost:9999/blazegraph/sparql') -- connect a SPARQL endpoint for storing the data");
 	println("  processPage('http://ceur-ws.org/Vol-1/') -- process the given page and store the results");
 	println("  processAllData() -- process all the data set and store the results");
 	println("  processTrainingSet() -- process the SemPub2015 training set and store the results");
