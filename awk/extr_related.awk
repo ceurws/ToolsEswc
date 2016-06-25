@@ -10,6 +10,7 @@ BEGIN {
 	curvol="none";
 	see=0;
 	OFS=" segm:related ";
+	print "@prefix segm: <http://fitlayout.github.io/ontology/segmentation.owl#> ."
 }
 
 tolower($0) ~ /name="?vol-[1-9][0-9]*"/ {
