@@ -10,11 +10,8 @@ How to Build the tool
 ---------------------
 The whole package is built using maven. 
 Therefore, after cloning the repository, you need to use this command `mvn package` to create a runnable `SemPub2015Extractor.jar` program.
-To be able to do this, you need to have mvn installed.
-We also provide an already compiled version in the target folder.
-Go to the target folder and run the SemPub2015Extractor.jar file: `/target/SemPub2015Extractor.jar`.
-If you do not want to download the whole program, you can find the runnable program in the following link and download the RAW file.
-`https://github.com/liyakun/ToolsEswc/blob/master/target/SemPub2015Extractor.jar`.
+To be able to do this, you need to have maven installed.
+We also provide an already compiled version in `https://sourceforge.net/projects/toolesws/files/SemPub2015Extractor.jar`.
 
 
 To run the extraction tool using
