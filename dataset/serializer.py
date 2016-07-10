@@ -16,8 +16,6 @@ all_clean.ttl.gz in the same folder with this script.
 
 This script uses python 2.7.6, and it has been tested on Linux Mint 17.3.
 It should also run on Ubuntu with corresponding version of Linux Mint 17.3.
-
-It should also able to run Windows as long as you have the corresponding python and shell tools installed.
 '''
 
 url = 'http://localhost:9999/blazegraph/sparql'
@@ -34,6 +32,10 @@ if request.status_code == 200:
     print '\n' + url + ' exists\n'
 else:
     raise ValueError('\n' + url + ' does not exist\n')
+    
+# call SemPub2015Extractor.jar to process dataset, Java 1.7 needed
+subprocess.call("/opt/jdk1.7.0_79/bin/java -jar ../target/SemPub2015Extractor.jar", shell=True)
+print "Data process done!"
 
 # remove most non relevant data by SPARQL query
 arg = "curl --get -X DELETE -H 'Accept: application/xml' " + url + \
