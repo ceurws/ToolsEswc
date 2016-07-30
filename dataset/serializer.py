@@ -80,15 +80,6 @@ def add_license(url):
     arg = "curl -X POST -H 'Content-Type:application/x-turtle' --data-binary '@license.ttl' " + url
     subprocess.check_output(arg, shell=True)
 
-def clean_data(url):
-    '''remove non used data from blazegraph store
-    parameters: url: url of running blazegraph
-    '''
-    # remove non used data
-    clean_by_sparql(url)
-    # add license information, assuming license.ttl in current directory
-    add_license(url)
-
 def is_similar(name, vol_names):
     '''check if the user name in current volume is similar to any existing one
              strategy: 1). split user name by blank space 
@@ -193,7 +184,8 @@ def redefine_data():
     dc = rdflib.Namespace('http://purl.org/dc/elements/1.1/#')
     for s, p, o in g.triples((None, bibo.section, None)):
         vol = s.split('#')[0]
-        subj = rdflib.URIRef(vol+ '#' + "".join(o.split()))
+        #sec = vol + '#' + o
+        subj = rdflib.URIRef(urllib.quote((vol+ '#' + "".join(o.split())).encode('utf8')))
         # add new triple for section
         g.add((subj, RDF.type, swc.SessionEvent))
         g.add((subj, swc.partOf, rdflib.URIRef(vol+'#proc')))
@@ -228,7 +220,6 @@ def remove_bad_words():
     '''
     bad_words = ['hint:Query hint:analytic', 'hint:constructDistinctSPO', 'http://www.bigdata.com/',
                  'http://www.openrdf.org/schema/sesame']
-    persons = []
     with open('serialized.ttl', 'rb') as old, open('ceurws.ttl', 'wb') as new:
         for line in old:
             if not any(bad_word in line for bad_word in bad_words):
@@ -238,7 +229,8 @@ def remove_bad_words():
 def main():
     url = check_blazegraph()
     #data_processing()
-    clean_data(url)
+    clean_by_sparql(url)
+    add_license(url)
     serialize_blazegraph(url)
     g = redefine_data()
     serialize_rdflib(g)
