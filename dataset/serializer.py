@@ -17,10 +17,15 @@ The output is generated into file all_clean.ttl.gz in current folder.
 This script uses python 2.7.6, and it has been tested on Linux Mint 17.3.
 '''
 
+swc = rdflib.Namespace('http://data.semanticweb.org/ns/swc/ontology/#')
+bibo = rdflib.Namespace('http://purl.org/ontology/bibo/#')
+dc = rdflib.Namespace('http://purl.org/dc/elements/1.1/#')
+swrc = rdflib.Namespace('http://swrc.ontoware.org/ontology/#')
+
 def check_blazegraph():
-    '''check whether blazegraph is running
+    """check whether blazegraph is running
     return: url of running blaezgraph
-    '''
+    """
     url = 'http://localhost:9999/blazegraph/sparql'
     print 'The default url for Blazegraph running is: %s\n' % url
     user_input = raw_input('If using the default url, please press Enter, else please input: ')
@@ -38,30 +43,30 @@ def check_blazegraph():
     return url
 
 def serialize_blazegraph(url):
-    '''serialize data from blazegraph, other formats see https://wiki.blazegraph.com/wiki/index.php/REST_API
+    """serialize data from blazegraph, other formats see https://wiki.blazegraph.com/wiki/index.php/REST_API
     parameters: url: url of running blazegraph
-    '''
+    """
     arg = "curl -X POST " + url + " --data-urlencode 'query=CONSTRUCT  WHERE {hint:Query hint:analytic " + '"true"' +\
           " . hint:Query hint:constructDistinctSPO " + '"false"' + " . ?s ?p ?o }' -H 'Accept:application/x-turtle' " \
                                                                    " > serialized.ttl"
     subprocess.check_output(arg, shell=True)
 
 def serialize_rdflib(g):
-    '''serialize to rdf data by using rdflib
+    """serialize to rdf data by using rdflib
     parameters: g: rdf graph store read by rdflib
-    '''
+    """
     s = g.serialize(destination='serialized.ttl', format='turtle')
 
 def data_processing():
-    '''call SemPub2015Extractor.jar to process dataset, generated dataset will be in blazegraph repository
-    '''
+    """call SemPub2015Extractor.jar to process dataset, generated dataset will be in blazegraph repository
+    """
     subprocess.call("/opt/jdk1.7.0_79/bin/java -jar ../target/SemPub2015Extractor.jar", shell=True)
     print "Data process done!"
 
 def clean_by_sparql(url):
-    '''remove most non relevant data by SPARQL query
+    """remove most non relevant data by SPARQL query
     parameters: url: url of running blazegraph
-    '''
+    """
     arg = "curl --get -X DELETE -H 'Accept: application/xml' " + url + \
           " --data-urlencode 'query=PREFIX box: <http://fitlayout.github.io/ontology/render.owl#> PREFIX segm: " \
           "<http://fitlayout.github.io/ontology/segmentation.owl#> CONSTRUCT { ?a ?b ?c } " \
@@ -74,19 +79,25 @@ def clean_by_sparql(url):
     subprocess.check_output(arg, shell=True)
 
 def add_license(url):
-    '''add license information for volumes in ceurws
+    """add license information for volumes in ceurws
     parameters: url address of running blazegraph
-    '''
+    """
     arg = "curl -X POST -H 'Content-Type:application/x-turtle' --data-binary '@license.ttl' " + url
     subprocess.check_output(arg, shell=True)
 
+def add_missed_volumes(url):
+    arg = "curl -X POST -H 'Content-Type:application/x-turtle' --data-binary '@1549-1551.ttl' " + url
+    subprocess.check_output(arg, shell=True)
+    arg = "curl -X POST -H 'Content-Type:application/x-turtle' --data-binary '@vol41.ttl' " + url
+    subprocess.check_output(arg, shell=True)
+
 def is_similar(name, vol_names):
-    '''check if the user name in current volume is similar to any existing one
+    """check if the user name in current volume is similar to any existing one
              strategy: 1). split user name by blank space 
                        2). if number of split blocks equal, and corresponding blocks similarity >= 90
              then assert these two are the same person
     parameters: name: user name, vol_names: vol name
-    '''
+    """
     for names in vol_names:
         if WRatio(names[0], name) >= 90:
             return names
@@ -106,10 +117,9 @@ def is_similar(name, vol_names):
     return False
 
 def same_person(name, person_uri, persons):
-    '''
-    function: if same person with different spelling in same volume then take them as same person
+    """if same person with different spelling in same volume then take them as same person
     Parameters: name: persone name, person_uri: person uri, persons: persons of each volume
-    '''
+    """
     vol = person_uri.split('#')[0]
     if vol not in persons:  # if the current volume is not processed yet, add it to dictionary
         persons[vol] = []
@@ -121,9 +131,9 @@ def same_person(name, person_uri, persons):
         return result
 
 def change_subject(subject_new, subject_original, g):
-    '''change the original subject in triple store g with new subject, and also situations used as object
+    """change the original subject in triple store g with new subject, and also situations used as object
     parameters: new subject_new, original subject_original, triple store g
-    '''
+    """
     for m, n, t in g.triples((subject_original, None, None)):
         g.add((subject_new, n, t))
         g.remove((m, n, t))
@@ -132,9 +142,9 @@ def change_subject(subject_new, subject_original, g):
         g.remove((m, n, t))
 
 def redefine_data():
-    '''redefine some missed concepts in serialized rdf data from blazegraph
+    """redefine some missed concepts in serialized rdf data from blazegraph
     return: redefined triple store
-    '''
+    """
     # remove remaining not used data, including 'country' and 'related'
     g = rdflib.Graph()
     rdf_result = g.parse('serialized.ttl', format='turtle')
@@ -179,9 +189,6 @@ def redefine_data():
             # g.add((person_re, OWL.sameAs, person_uri))
 
     # model section as resource
-    swc = rdflib.Namespace('http://data.semanticweb.org/ns/swc/ontology/#')
-    bibo = rdflib.Namespace('http://purl.org/ontology/bibo/#')
-    dc = rdflib.Namespace('http://purl.org/dc/elements/1.1/#')
     for s, p, o in g.triples((None, bibo.section, None)):
         vol = s.split('#')[0]
         #sec = vol + '#' + o
@@ -212,29 +219,78 @@ def redefine_data():
         subject = s
         subject = rdflib.URIRef(subject.replace("#proc", ''))
         change_subject(subject, s, g)
+    
+    g2 = rdflib.Graph()
+    g2.parse('1549-1551.ttl', format='turtle')
+    g3 = rdflib.Graph()
+    g3.parse('vol41.ttl', format='turtle')
+    g += g2
+    g += g3
 
     return g
 
 def remove_bad_words():
-    '''remove non relevant data
-    '''
+    """remove non relevant data
+    """
     bad_words = ['hint:Query hint:analytic', 'hint:constructDistinctSPO', 'http://www.bigdata.com/',
                  'http://www.openrdf.org/schema/sesame']
-    with open('serialized.ttl', 'rb') as old, open('ceurws.ttl', 'wb') as new:
+    with open('serialized.ttl', 'rb') as old, open('ceur-ws.ttl', 'wb') as new:
         for line in old:
             if not any(bad_word in line for bad_word in bad_words):
                 new.write(line)
     os.remove('serialized.ttl')
 
+def check_file(filename):
+    if not os.path.exists(os.path.dirname(filename)):
+        try:
+            os.mkdir(os.path.dirname(filename))
+        except OSError as exc:
+            if exc.errno != errno.EEXIST:
+                raise
+
+def split_into_volume():
+    g = rdflib.Graph()
+    rdf_result = g.parse('./ceur-ws.ttl', format='turtle')
+    #rdf_result = g.parse('./1549-1551.ttl', format='turtle')
+
+    for s, p, o in g.triples((None, RDF.type, swc.WorkshopEvent)):
+        g_ = rdflib.Graph()
+        filename = './volumes/'+s.split('/')[3]+'.ttl'
+        print "process: " + s
+        check_file(filename)
+        for m, n, t in g.triples((s, None, None)): # add triple for workshop event
+            if n == swrc.isSubEventOf:
+                g_.add((t, RDF.type, swc.ConferenceEvent)) # add triple for conference event
+            for proc, np, tp in g.triples((None, bibo.presentedAt, m)): # add for proceedings
+                for proc_, n_, t_ in g.triples((proc, None, None)):
+                    if n_ == swc.hasPart: # add for papers
+                        for paper, n__, t__ in g.triples((t_, None, None)):
+                            if n__ == swrc.author:
+                                for author, n___, t___ in g.triples((t__, None, None)):
+                                    g_.add((author, n___, t___))
+                            g_.add((paper, n__, t__))
+                    if n_ == swrc.editor: # add for editors
+                        for editor, n__, t__ in g.triples((t_, None, None)):
+                            g_.add((editor, n__, t__))
+                    if n_ == swc.hasSession: # add for section
+                        for section, n__, t__ in g.triples((t_, None, None)):
+                            g_.add((section, n__, t__))
+                    g_.add((proc_, n_, t_))
+            g_.add((m, n, t))
+        g_.serialize(destination=filename, format='turtle')
+
 def main():
     url = check_blazegraph()
     #data_processing()
-    clean_by_sparql(url)
-    add_license(url)
+    #clean_by_sparql(url)
+    #add_license(url)
+    #add_missed_volumes(url)
     serialize_blazegraph(url)
+    #print "Start to redefine data"
     g = redefine_data()
     serialize_rdflib(g)
     remove_bad_words()
+    split_into_volume()
 
 if __name__ == "__main__":
     main()

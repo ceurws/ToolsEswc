@@ -1,0 +1,130 @@
+@prefix ns1: <http://xmlns.com/foaf/0.1/> .
+@prefix ns2: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns3: <http://purl.org/ontology/bibo/#> .
+@prefix ns4: <http://www.w3.org/2002/07/owl#> .
+@prefix ns5: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns6: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://ceur-ws.org/Vol-1071/#AnkicaiBarisic> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/AnkicaiBarisic> ;
+    ns1:made <http://ceur-ws.org/Vol-1071/#barisic> ;
+    ns1:name "Ankica Barisic" .
+
+<http://ceur-ws.org/Vol-1071/#H%C3%BCseyiniErgin> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/H%C3%BCseyiniErgin> ;
+    ns1:made <http://ceur-ws.org/Vol-1071/#ergin> ;
+    ns1:name "Hüseyin Ergin" .
+
+<http://ceur-ws.org/Vol-1071/#HamidiGholizadeh> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/HamidiGholizadeh> ;
+    ns1:made <http://ceur-ws.org/Vol-1071/#gholizadeh> ;
+    ns1:name "Hamid Gholizadeh" .
+
+<http://ceur-ws.org/Vol-1071/#JonathaniCorley> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/JonathaniCorley> ;
+    ns1:made <http://ceur-ws.org/Vol-1071/#corley> ;
+    ns1:name "Jonathan Corley" .
+
+<http://ceur-ws.org/Vol-1071/#LoliiBurgue%C3%B1o> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/LoliiBurgue%C3%B1o> ;
+    ns1:made <http://ceur-ws.org/Vol-1071/#burgueno> ;
+    ns1:name "Loli Burgueño" .
+
+<http://ceur-ws.org/Vol-1071/#MarceliIbe> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/MarceliIbe> ;
+    ns1:made <http://ceur-ws.org/Vol-1071/#ibe> ;
+    ns1:name "Marcel Ibe" .
+
+<http://ceur-ws.org/Vol-1071/#MartiniGogolla> a ns1:Person ;
+    ns5:affiliation "" ;
+    ns4:sameAs <http://ceur-ws.org/persons/MartiniGogolla> ;
+    ns1:name "Martin Gogolla" .
+
+<http://ceur-ws.org/Vol-1071/#SebastianiLehrig> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/SebastianiLehrig> ;
+    ns1:made <http://ceur-ws.org/Vol-1071/#lehrig> ;
+    ns1:name "Sebastian Lehrig" .
+
+<http://ceur-ws.org/Vol-1071/#event> a ns2:WorkshopEvent ;
+    ns2:hasLocation <http://dbpedia.org/resource/United_States> ;
+    ns2:hasPart <http://ceur-ws.org/Vol-1071/#part-ws> ;
+    ns2:isSubEventOf <http://ceur-ws.org/Vol-1071/#conf> ;
+    ns7:beginsAtDatetime "2013-10-01T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:endsAtDatetime "2013-10-01T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:license <http://choosealicense.com/licenses/no-license/> ;
+    rdfs:seeAlso <http://ceur-ws.org/Vol-262/#event> .
+
+<http://ceur-ws.org/Vol-1071/#barisic> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1071/> ;
+    ns6:title "Evaluating the Quality in the Use of Domain-Specific Languages in an Agile Way" ;
+    ns3:endPage 8 ;
+    ns3:numPages 8 ;
+    ns3:startPage 1 ;
+    ns5:author <http://ceur-ws.org/Vol-1071/#AnkicaiBarisic> .
+
+<http://ceur-ws.org/Vol-1071/#burgueno> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1071/> ;
+    ns6:title "Concurrent and Distributed Model Transformations based on Linda" ;
+    ns3:endPage 16 ;
+    ns3:numPages 8 ;
+    ns3:startPage 9 ;
+    ns5:author <http://ceur-ws.org/Vol-1071/#LoliiBurgue%C3%B1o> .
+
+<http://ceur-ws.org/Vol-1071/#corley> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1071/> ;
+    ns6:title "Debugging for Model Transformations" ;
+    ns3:endPage 24 ;
+    ns3:numPages 8 ;
+    ns3:startPage 17 ;
+    ns5:author <http://ceur-ws.org/Vol-1071/#JonathaniCorley> .
+
+<http://ceur-ws.org/Vol-1071/#ergin> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1071/> ;
+    ns6:title "Model Transformation Design Patterns" ;
+    ns3:endPage 31 ;
+    ns3:numPages 7 ;
+    ns3:startPage 25 ;
+    ns5:author <http://ceur-ws.org/Vol-1071/#H%C3%BCseyiniErgin> .
+
+<http://ceur-ws.org/Vol-1071/#gholizadeh> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1071/> ;
+    ns6:title "Towards Declarative and Incremental Model Transformation" ;
+    ns3:endPage 39 ;
+    ns3:numPages 8 ;
+    ns3:startPage 32 ;
+    ns5:author <http://ceur-ws.org/Vol-1071/#HamidiGholizadeh> .
+
+<http://ceur-ws.org/Vol-1071/#ibe> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1071/> ;
+    ns6:title "Decomposition of Test Cases in Model-Based Testing" ;
+    ns3:endPage 47 ;
+    ns3:numPages 8 ;
+    ns3:startPage 40 ;
+    ns5:author <http://ceur-ws.org/Vol-1071/#MarceliIbe> .
+
+<http://ceur-ws.org/Vol-1071/#lehrig> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1071/> ;
+    ns6:title "Architectural Templates: Engineering Scalable SaaS Applications Based on Architectural Styles" ;
+    ns3:endPage 55 ;
+    ns3:numPages 8 ;
+    ns3:startPage 48 ;
+    ns5:author <http://ceur-ws.org/Vol-1071/#SebastianiLehrig> .
+
+<http://ceur-ws.org/Vol-1071/> a ns2:Proceedings ;
+    ns2:hasPart <http://ceur-ws.org/Vol-1071/#barisic>,
+        <http://ceur-ws.org/Vol-1071/#burgueno>,
+        <http://ceur-ws.org/Vol-1071/#corley>,
+        <http://ceur-ws.org/Vol-1071/#ergin>,
+        <http://ceur-ws.org/Vol-1071/#gholizadeh>,
+        <http://ceur-ws.org/Vol-1071/#ibe>,
+        <http://ceur-ws.org/Vol-1071/#lehrig> ;
+    ns8:issued "2013-11-01T00:00:00+00:00"^^xsd:dateTime ;
+    ns3:presentedAt <http://ceur-ws.org/Vol-1071/#event> ;
+    ns5:editor <http://ceur-ws.org/Vol-1071/#MartiniGogolla> .
+

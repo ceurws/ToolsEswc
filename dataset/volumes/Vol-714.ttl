@@ -1,0 +1,52 @@
+@prefix ns1: <http://xmlns.com/foaf/0.1/> .
+@prefix ns2: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns3: <http://www.w3.org/2002/07/owl#> .
+@prefix ns4: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns5: <http://purl.org/ontology/bibo/#> .
+@prefix ns6: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns8: <http://purl.org/dc/elements/1.1/#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://ceur-ws.org/Vol-714/> a ns4:Proceedings ;
+    ns7:issued "2011-04-18T00:00:00+00:00"^^xsd:dateTime ;
+    ns5:presentedAt <http://ceur-ws.org/Vol-714/#event> ;
+    ns2:editor <http://ceur-ws.org/Vol-714/#DietrichiRebholz-Schuhmann>,
+        <http://ceur-ws.org/Vol-714/#FabioiRinaldi>,
+        <http://ceur-ws.org/Vol-714/#NigeliCollier>,
+        <http://ceur-ws.org/Vol-714/#SampoiPyysalo>,
+        <http://ceur-ws.org/Vol-714/#UdoiHahn> .
+
+<http://ceur-ws.org/Vol-714/#DietrichiRebholz-Schuhmann> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/DietrichiRebholz-Schuhmann> ;
+    ns1:name "Dietrich Rebholz-Schuhmann" .
+
+<http://ceur-ws.org/Vol-714/#FabioiRinaldi> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/FabioiRinaldi> ;
+    ns1:name "Fabio Rinaldi" .
+
+<http://ceur-ws.org/Vol-714/#NigeliCollier> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/NigeliCollier> ;
+    ns1:name "Nigel Collier" .
+
+<http://ceur-ws.org/Vol-714/#SampoiPyysalo> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/SampoiPyysalo> ;
+    ns1:name "Sampo Pyysalo" .
+
+<http://ceur-ws.org/Vol-714/#UdoiHahn> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/UdoiHahn> ;
+    ns1:name "Udo Hahn" .
+
+<http://ceur-ws.org/Vol-714/#event> a ns4:WorkshopEvent ;
+    ns4:hasLocation <http://dbpedia.org/resource/United_Kingdom> ;
+    ns4:hasPart <http://ceur-ws.org/Vol-714/#part-SMBM> ;
+    ns4:isSubEventOf <http://ceur-ws.org/Vol-714/#conf> ;
+    ns6:beginsAtDatetime "2010-10-01T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:endsAtDatetime "2010-10-01T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:license <http://choosealicense.com/licenses/no-license/> ;
+    rdfs:seeAlso <http://ceur-ws.org/Vol-148/#event>,
+        <http://ceur-ws.org/Vol-177/#event> .
+

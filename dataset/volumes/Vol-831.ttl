@@ -1,0 +1,174 @@
+@prefix ns1: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns2: <http://xmlns.com/foaf/0.1/> .
+@prefix ns3: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns4: <http://www.w3.org/2002/07/owl#> .
+@prefix ns5: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns6: <http://purl.org/ontology/bibo/#> .
+@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://ceur-ws.org/Vol-831/#AndreasiHilbert> a ns2:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/AndreasiHilbert> ;
+    ns2:made <http://ceur-ws.org/Vol-831/#paper6> ;
+    ns2:name "Andreas Hilbert" .
+
+<http://ceur-ws.org/Vol-831/#AndreasiSchieber> a ns2:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/AndreasiSchieber> ;
+    ns2:made <http://ceur-ws.org/Vol-831/#paper6> ;
+    ns2:name "Andreas Schieber" .
+
+<http://ceur-ws.org/Vol-831/#AndreiM%C3%BCller> a ns2:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/AndreiM%C3%BCller> ;
+    ns2:made <http://ceur-ws.org/Vol-831/#paper3> ;
+    ns2:name "Andre Müller" .
+
+<http://ceur-ws.org/Vol-831/#CarsteniFelden> a ns2:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/CarsteniFelden> ;
+    ns2:made <http://ceur-ws.org/Vol-831/#paper2> ;
+    ns2:name "Carsten Felden" .
+
+<http://ceur-ws.org/Vol-831/#FriederiJacobi> a ns2:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/FriederiJacobi> ;
+    ns2:made <http://ceur-ws.org/Vol-831/#paper3> ;
+    ns2:name "Frieder Jacobi" .
+
+<http://ceur-ws.org/Vol-831/#JensiF.iLachenmaier> a ns2:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/JensiF.iLachenmaier> ;
+    ns2:made <http://ceur-ws.org/Vol-831/#paper4> ;
+    ns2:name "Jens F. Lachenmaier" .
+
+<http://ceur-ws.org/Vol-831/#KaiiHeinrich> a ns2:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/KaiiHeinrich> ;
+    ns2:made <http://ceur-ws.org/Vol-831/#paper6> ;
+    ns2:name "Kai Heinrich" .
+
+<http://ceur-ws.org/Vol-831/#KerstiniSch%C3%A4fer> a ns2:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/KerstiniSch%C3%A4fer> ;
+    ns2:made <http://ceur-ws.org/Vol-831/#paper5> ;
+    ns2:name "Kerstin Schäfer" .
+
+<http://ceur-ws.org/Vol-831/#MarcusiHofmann> a ns2:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/MarcusiHofmann> ;
+    ns2:made <http://ceur-ws.org/Vol-831/#paper3> ;
+    ns2:name "Marcus Hofmann" .
+
+<http://ceur-ws.org/Vol-831/#OliveriG%C3%BCnther> a ns2:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/OliveriG%C3%BCnther> ;
+    ns2:made <http://ceur-ws.org/Vol-831/#paper5> ;
+    ns2:name "Oliver Günther" .
+
+<http://ceur-ws.org/Vol-831/#RobertiKrawatzeck> a ns2:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/RobertiKrawatzeck> ;
+    ns2:made <http://ceur-ws.org/Vol-831/#paper3> ;
+    ns2:name "Robert Krawatzeck" .
+
+<http://ceur-ws.org/Vol-831/#TomiH%C3%A4nel> a ns2:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/TomiH%C3%A4nel> ;
+    ns2:made <http://ceur-ws.org/Vol-831/#paper2> ;
+    ns2:name "Tom Hänel" .
+
+<http://ceur-ws.org/Vol-831/#event> a ns1:WorkshopEvent ;
+    ns1:hasLocation <http://dbpedia.org/resource/Germany> ;
+    ns1:hasPart <http://ceur-ws.org/Vol-831/#part-WSBI> ;
+    ns1:isSubEventOf <http://ceur-ws.org/Vol-831/#conf> ;
+    ns7:beginsAtDatetime "2011-10-13T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:endsAtDatetime "2011-10-14T00:00:00+00:00"^^xsd:dateTime ;
+    ns3:license <http://choosealicense.com/licenses/no-license/> ;
+    rdfs:seeAlso <http://ceur-ws.org/Vol-542/#event>,
+        <http://ceur-ws.org/Vol-663/#event> .
+
+<http://ceur-ws.org/Vol-831/#paper1> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-831/> ;
+    ns3:title "Impulse für die Forschung oder Impulse durch die Forschung: Entwicklungsperspektiven der BI-Forschung in Deutschland" ;
+    ns6:endPage 6 ;
+    ns6:numPages 6 ;
+    ns6:section <file:///home/yakun/workspace/ToolsEswc/dataset/http%3A//ceur-ws.org/Vol-831/%23Inhaltsverzeichnis> ;
+    ns6:startPage 1 ;
+    ns5:author <http://ceur-ws.org/Vol-831/#22-Feb-2012%3AisubmittedibyiHenningiBaars> .
+
+<http://ceur-ws.org/Vol-831/#paper4> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-831/> ;
+    ns3:title "Development of a Concept to integrate technical Product Data and Business Data: Motivation, conceptual Framework, and consecutive Research" ;
+    ns6:endPage 34 ;
+    ns6:numPages 8 ;
+    ns6:section <file:///home/yakun/workspace/ToolsEswc/dataset/http%3A//ceur-ws.org/Vol-831/%23Inhaltsverzeichnis> ;
+    ns6:startPage 27 ;
+    ns5:author <http://ceur-ws.org/Vol-831/#JensiF.iLachenmaier> .
+
+<http://ceur-ws.org/Vol-831/#paperX1> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-831/> ;
+    ns3:title "Das Gesamtdokument kann" ;
+    ns6:section <file:///home/yakun/workspace/ToolsEswc/dataset/http%3A//ceur-ws.org/Vol-831/%23Inhaltsverzeichnis> ;
+    ns5:author <http://ceur-ws.org/Vol-831/#22-Feb-2012%3AisubmittedibyiHenningiBaars> .
+
+<http://ceur-ws.org/Vol-831/#22-Feb-2012%3AisubmittedibyiHenningiBaars> a ns2:Person ;
+    ns5:affiliation "" ;
+    ns4:sameAs <http://ceur-ws.org/persons/22-Feb-2012%3AisubmittedibyiHenningiBaars> ;
+    ns2:made <http://ceur-ws.org/Vol-831/#paper1>,
+        <http://ceur-ws.org/Vol-831/#paperX1> ;
+    ns2:name "22-Feb-2012: submitted by Henning Baars" .
+
+<http://ceur-ws.org/Vol-831/#paper2> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-831/> ;
+    ns3:title "Manufacturing Execution Systems und Operational Business Intelligence" ;
+    ns6:endPage 14 ;
+    ns6:numPages 8 ;
+    ns6:section <file:///home/yakun/workspace/ToolsEswc/dataset/http%3A//ceur-ws.org/Vol-831/%23Inhaltsverzeichnis> ;
+    ns6:startPage 7 ;
+    ns5:author <http://ceur-ws.org/Vol-831/#CarsteniFelden>,
+        <http://ceur-ws.org/Vol-831/#TomiH%C3%A4nel> .
+
+<http://ceur-ws.org/Vol-831/#paper5> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-831/> ;
+    ns3:title "Evaluating the Effectiveness of Relational Marketing Strategies in Corporate Website Performance" ;
+    ns6:endPage 49 ;
+    ns6:numPages 15 ;
+    ns6:section <file:///home/yakun/workspace/ToolsEswc/dataset/http%3A//ceur-ws.org/Vol-831/%23Inhaltsverzeichnis> ;
+    ns6:startPage 35 ;
+    ns5:author <http://ceur-ws.org/Vol-831/#KerstiniSch%C3%A4fer>,
+        <http://ceur-ws.org/Vol-831/#OliveriG%C3%BCnther> .
+
+<http://ceur-ws.org/Vol-831/#paper6> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-831/> ;
+    ns3:title "Analyse von Konsumentenmeinungen in Microblogs: Topic-based Opinion Mining" ;
+    ns6:endPage 57 ;
+    ns6:numPages 8 ;
+    ns6:section <file:///home/yakun/workspace/ToolsEswc/dataset/http%3A//ceur-ws.org/Vol-831/%23Inhaltsverzeichnis> ;
+    ns6:startPage 50 ;
+    ns5:author <http://ceur-ws.org/Vol-831/#AndreasiHilbert>,
+        <http://ceur-ws.org/Vol-831/#AndreasiSchieber>,
+        <http://ceur-ws.org/Vol-831/#KaiiHeinrich> .
+
+<http://ceur-ws.org/Vol-831/#paper3> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-831/> ;
+    ns3:title "Konzeption eines Frameworks zur automatisierten Erstellung nutzerspezifischer IT-Systemdokumentationen" ;
+    ns6:endPage 26 ;
+    ns6:numPages 12 ;
+    ns6:section <file:///home/yakun/workspace/ToolsEswc/dataset/http%3A//ceur-ws.org/Vol-831/%23Inhaltsverzeichnis> ;
+    ns6:startPage 15 ;
+    ns5:author <http://ceur-ws.org/Vol-831/#AndreiM%C3%BCller>,
+        <http://ceur-ws.org/Vol-831/#FriederiJacobi>,
+        <http://ceur-ws.org/Vol-831/#MarcusiHofmann>,
+        <http://ceur-ws.org/Vol-831/#RobertiKrawatzeck> .
+
+<file:///home/yakun/workspace/ToolsEswc/dataset/http%3A//ceur-ws.org/Vol-831/%23Inhaltsverzeichnis> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-831/> ;
+    ns3:title "Inhaltsverzeichnis" .
+
+<http://ceur-ws.org/Vol-831/> a ns1:Proceedings ;
+    ns1:hasPart <http://ceur-ws.org/Vol-831/#paper1>,
+        <http://ceur-ws.org/Vol-831/#paper2>,
+        <http://ceur-ws.org/Vol-831/#paper3>,
+        <http://ceur-ws.org/Vol-831/#paper4>,
+        <http://ceur-ws.org/Vol-831/#paper5>,
+        <http://ceur-ws.org/Vol-831/#paper6>,
+        <http://ceur-ws.org/Vol-831/#paperX1> ;
+    ns1:hasSession <file:///home/yakun/workspace/ToolsEswc/dataset/http%3A//ceur-ws.org/Vol-831/%23Inhaltsverzeichnis> ;
+    ns8:issued "2012-02-22T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:presentedAt <http://ceur-ws.org/Vol-831/#event> ;
+    ns5:editor <http://ceur-ws.org/Vol-831/#22-Feb-2012%3AisubmittedibyiHenningiBaars> .
+

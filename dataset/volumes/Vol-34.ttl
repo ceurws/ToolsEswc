@@ -1,0 +1,84 @@
+@prefix ns1: <http://www.w3.org/2002/07/owl#> .
+@prefix ns2: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns3: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns4: <http://xmlns.com/foaf/0.1/> .
+@prefix ns5: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns6: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns7: <http://purl.org/ontology/bibo/#> .
+@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://ceur-ws.org/Vol-34/#K.iSasaki> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/K.iSasaki> ;
+    ns4:made <http://ceur-ws.org/Vol-34/#nakayama_et_al> ;
+    ns4:name "K. Sasaki" .
+
+<http://ceur-ws.org/Vol-34/#K.iSumita> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/K.iSumita> ;
+    ns4:made <http://ceur-ws.org/Vol-34/#nakayama_et_al> ;
+    ns4:name "K. Sumita" .
+
+<http://ceur-ws.org/Vol-34/#M.iSuzuki> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/M.iSuzuki> ;
+    ns4:made <http://ceur-ws.org/Vol-34/#nakayama_et_al> ;
+    ns4:name "M. Suzuki" .
+
+<http://ceur-ws.org/Vol-34/#MarioiRaich> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/MarioiRaich> ;
+    ns4:made <http://ceur-ws.org/Vol-34/#raich_slides> ;
+    ns4:name "Mario Raich" .
+
+<http://ceur-ws.org/Vol-34/#T.iManabe> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/T.iManabe> ;
+    ns4:made <http://ceur-ws.org/Vol-34/#nakayama_et_al> ;
+    ns4:name "T. Manabe" .
+
+<http://ceur-ws.org/Vol-34/#UlrichiReimer> a ns4:Person ;
+    ns2:affiliation "" ;
+    ns1:sameAs <http://ceur-ws.org/persons/UlrichiReimer> ;
+    ns4:name "Ulrich Reimer" .
+
+<http://ceur-ws.org/Vol-34/#Y.iNakayama> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/Y.iNakayama> ;
+    ns4:made <http://ceur-ws.org/Vol-34/#nakayama_et_al> ;
+    ns4:name "Y. Nakayama" .
+
+<http://ceur-ws.org/Vol-34/#event> a ns5:WorkshopEvent ;
+    ns5:hasLocation <http://dbpedia.org/resource/Switzerland> ;
+    ns5:hasPart <http://ceur-ws.org/Vol-34/#part-PAKM> ;
+    ns5:isSubEventOf <http://ceur-ws.org/Vol-34/#conf> ;
+    ns3:beginsAtDatetime "2000-10-30T00:00:00+00:00"^^xsd:dateTime ;
+    ns3:endsAtDatetime "2000-10-31T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:license <http://choosealicense.com/licenses/no-license/> .
+
+<http://ceur-ws.org/Vol-34/#raich_slides> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-34/> ;
+    ns6:title "Slides" ;
+    ns7:section <file:///home/yakun/workspace/ToolsEswc/dataset/http%3A//ceur-ws.org/Vol-34/%23InvitedTalks%3A> ;
+    ns2:author <http://ceur-ws.org/Vol-34/#MarioiRaich> .
+
+<file:///home/yakun/workspace/ToolsEswc/dataset/http%3A//ceur-ws.org/Vol-34/%23InvitedTalks%3A> a ns5:SessionEvent ;
+    ns5:partOf <http://ceur-ws.org/Vol-34/> ;
+    ns6:title "Invited Talks:" .
+
+<http://ceur-ws.org/Vol-34/> a ns5:Proceedings ;
+    ns5:hasPart <http://ceur-ws.org/Vol-34/#nakayama_et_al>,
+        <http://ceur-ws.org/Vol-34/#raich_slides> ;
+    ns5:hasSession <file:///home/yakun/workspace/ToolsEswc/dataset/http%3A//ceur-ws.org/Vol-34/%23InvitedTalks%3A> ;
+    ns8:issued "2000-11-13T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:presentedAt <http://ceur-ws.org/Vol-34/#event> ;
+    ns2:editor <http://ceur-ws.org/Vol-34/#UlrichiReimer> .
+
+<http://ceur-ws.org/Vol-34/#nakayama_et_al> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-34/> ;
+    ns6:title "Know-How Sharing Using a Knowledge Sharing System KIDS - A Knowledge Management Practice at a Research Laboratory -" ;
+    ns7:section <file:///home/yakun/workspace/ToolsEswc/dataset/http%3A//ceur-ws.org/Vol-34/%23InvitedTalks%3A> ;
+    ns2:author <http://ceur-ws.org/Vol-34/#K.iSasaki>,
+        <http://ceur-ws.org/Vol-34/#K.iSumita>,
+        <http://ceur-ws.org/Vol-34/#M.iSuzuki>,
+        <http://ceur-ws.org/Vol-34/#T.iManabe>,
+        <http://ceur-ws.org/Vol-34/#Y.iNakayama> .
+

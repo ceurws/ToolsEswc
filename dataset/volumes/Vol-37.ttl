@@ -1,0 +1,44 @@
+@prefix ns1: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns2: <http://xmlns.com/foaf/0.1/> .
+@prefix ns3: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns4: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns5: <http://purl.org/ontology/bibo/#> .
+@prefix ns6: <http://www.w3.org/2002/07/owl#> .
+@prefix ns7: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://ceur-ws.org/Vol-37/> a ns4:Proceedings ;
+    ns8:issued "2001-03-07T00:00:00+00:00"^^xsd:dateTime ;
+    ns5:presentedAt <http://ceur-ws.org/Vol-37/#event> ;
+    ns1:editor <http://ceur-ws.org/Vol-37/#AndreasiAbecker>,
+        <http://ceur-ws.org/Vol-37/#Dr.iKnutiHinkelmann>,
+        <http://ceur-ws.org/Vol-37/#HeikoiMaus>,
+        <http://ceur-ws.org/Vol-37/#Prof.iDr.iHeinziJ%C3%BCrgeniM%C3%BCller> .
+
+<http://ceur-ws.org/Vol-37/#AndreasiAbecker> a ns2:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/AndreasiAbecker> ;
+    ns2:name "Andreas Abecker" .
+
+<http://ceur-ws.org/Vol-37/#Dr.iKnutiHinkelmann> a ns2:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/Dr.iKnutiHinkelmann> ;
+    ns2:name "Dr. Knut Hinkelmann" .
+
+<http://ceur-ws.org/Vol-37/#HeikoiMaus> a ns2:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/HeikoiMaus> ;
+    ns2:name "Heiko Maus" .
+
+<http://ceur-ws.org/Vol-37/#Prof.iDr.iHeinziJ%C3%BCrgeniM%C3%BCller> a ns2:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/Prof.iDr.iHeinziJ%C3%BCrgeniM%C3%BCller> ;
+    ns2:name "Prof. Dr. Heinz Jürgen Müller" .
+
+<http://ceur-ws.org/Vol-37/#event> a ns4:WorkshopEvent ;
+    ns4:hasPart <http://ceur-ws.org/Vol-37/#part-WM> ;
+    ns4:isSubEventOf <http://ceur-ws.org/Vol-37/#conf> ;
+    ns3:beginsAtDatetime "2001-03-14T00:00:00+00:00"^^xsd:dateTime ;
+    ns3:endsAtDatetime "2001-03-16T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:license <http://choosealicense.com/licenses/no-license/> .
+

@@ -1,0 +1,148 @@
+@prefix ns1: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns2: <http://www.w3.org/2002/07/owl#> .
+@prefix ns3: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns4: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns5: <http://purl.org/ontology/bibo/#> .
+@prefix ns6: <http://xmlns.com/foaf/0.1/> .
+@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://ceur-ws.org/Vol-786/#BerndiLudwig> a ns6:Person ;
+    ns1:affiliation "" ;
+    ns2:sameAs <http://ceur-ws.org/persons/BerndiLudwig> ;
+    ns6:name "Bernd Ludwig" .
+
+<http://ceur-ws.org/Vol-786/#BjoerniZenker> a ns6:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/BjoerniZenker> ;
+    ns6:made <http://ceur-ws.org/Vol-786/#paper4> ;
+    ns6:name "Bjoern Zenker" .
+
+<http://ceur-ws.org/Vol-786/#FlorianiMichahelles> a ns6:Person ;
+    ns1:affiliation "" ;
+    ns2:sameAs <http://ceur-ws.org/persons/FlorianiMichahelles> ;
+    ns6:name "Florian Michahelles" .
+
+<http://ceur-ws.org/Vol-786/#MartiniHacker> a ns6:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/MartiniHacker> ;
+    ns6:made <http://ceur-ws.org/Vol-786/#paper1> ;
+    ns6:name "Martin Hacker" .
+
+<http://ceur-ws.org/Vol-786/#RichardiSchaller> a ns6:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/RichardiSchaller> ;
+    ns6:made <http://ceur-ws.org/Vol-786/#paper5> ;
+    ns6:name "Richard Schaller" .
+
+<http://ceur-ws.org/Vol-786/#SebastianiBader> a ns6:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/SebastianiBader> ;
+    ns6:made <http://ceur-ws.org/Vol-786/#paper2> ;
+    ns6:name "Sebastian Bader" .
+
+<http://ceur-ws.org/Vol-786/#StefaniBienk> a ns6:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/StefaniBienk> ;
+    ns6:made <http://ceur-ws.org/Vol-786/#paper6> ;
+    ns6:name "Stefan Bienk" .
+
+<http://ceur-ws.org/Vol-786/#StefaniMandl> a ns6:Person ;
+    ns1:affiliation "" ;
+    ns2:sameAs <http://ceur-ws.org/persons/StefaniMandl> ;
+    ns6:name "Stefan Mandl" .
+
+<http://ceur-ws.org/Vol-786/#StefanieiMika> a ns6:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/StefanieiMika> ;
+    ns6:made <http://ceur-ws.org/Vol-786/#paper3> ;
+    ns6:name "Stefanie Mika" .
+
+<http://ceur-ws.org/Vol-786/#event> a ns3:WorkshopEvent ;
+    ns3:hasLocation <http://dbpedia.org/resource/Germany> ;
+    ns3:hasPart <http://ceur-ws.org/Vol-786/#part-CAIA> ;
+    ns3:isSubEventOf <http://ceur-ws.org/Vol-786/#conf> ;
+    ns8:beginsAtDatetime "2011-10-04T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:endsAtDatetime "2011-10-04T00:00:00+00:00"^^xsd:dateTime ;
+    ns4:license <http://choosealicense.com/licenses/no-license/> .
+
+<file:///home/yakun/workspace/ToolsEswc/dataset/http%3A//ceur-ws.org/Vol-786/%23Session3%3AHealthInformatics> a ns3:SessionEvent ;
+    ns3:partOf <http://ceur-ws.org/Vol-786/> ;
+    ns4:title "Session 3: Health Informatics" .
+
+<http://ceur-ws.org/Vol-786/#paper1> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-786/> ;
+    ns4:title "Context-aware Speech Recognition in a Robot Navigation Scenario" ;
+    ns5:endPage 3 ;
+    ns5:numPages 3 ;
+    ns5:section <file:///home/yakun/workspace/ToolsEswc/dataset/http%3A//ceur-ws.org/Vol-786/%23Session1%3AUserInteraction> ;
+    ns5:startPage 1 ;
+    ns1:author <http://ceur-ws.org/Vol-786/#MartiniHacker> .
+
+<http://ceur-ws.org/Vol-786/#paper2> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-786/> ;
+    ns4:title "Probably Asked Questions: Intelligibility through Question Generation" ;
+    ns5:endPage 15 ;
+    ns5:numPages 12 ;
+    ns5:section <file:///home/yakun/workspace/ToolsEswc/dataset/http%3A//ceur-ws.org/Vol-786/%23Session1%3AUserInteraction> ;
+    ns5:startPage 4 ;
+    ns1:author <http://ceur-ws.org/Vol-786/#SebastianiBader> .
+
+<http://ceur-ws.org/Vol-786/#paper3> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-786/> ;
+    ns4:title "Challenges for Nutrition Recommender Systems" ;
+    ns5:endPage 24 ;
+    ns5:numPages 9 ;
+    ns5:section <file:///home/yakun/workspace/ToolsEswc/dataset/http%3A//ceur-ws.org/Vol-786/%23Session2%3APersonalAssistance> ;
+    ns5:startPage 16 ;
+    ns1:author <http://ceur-ws.org/Vol-786/#StefanieiMika> .
+
+<http://ceur-ws.org/Vol-786/#paper4> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-786/> ;
+    ns4:title "People Go Out Together: a Neglected Context Factor in Pedestrian Assistance Systems" ;
+    ns5:endPage 33 ;
+    ns5:numPages 9 ;
+    ns5:section <file:///home/yakun/workspace/ToolsEswc/dataset/http%3A//ceur-ws.org/Vol-786/%23Session2%3APersonalAssistance> ;
+    ns5:startPage 25 ;
+    ns1:author <http://ceur-ws.org/Vol-786/#BjoerniZenker> .
+
+<http://ceur-ws.org/Vol-786/#paper5> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-786/> ;
+    ns4:title "Planning and Navigational Assistance for Distributed Events" ;
+    ns5:endPage 43 ;
+    ns5:numPages 10 ;
+    ns5:section <file:///home/yakun/workspace/ToolsEswc/dataset/http%3A//ceur-ws.org/Vol-786/%23Session2%3APersonalAssistance> ;
+    ns5:startPage 34 ;
+    ns1:author <http://ceur-ws.org/Vol-786/#RichardiSchaller> .
+
+<http://ceur-ws.org/Vol-786/#paper6> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-786/> ;
+    ns4:title "Home Lab - Context-Aware Fall-Risk Assessment at Home" ;
+    ns5:endPage 56 ;
+    ns5:numPages 13 ;
+    ns5:section <file:///home/yakun/workspace/ToolsEswc/dataset/http%3A//ceur-ws.org/Vol-786/%23Session3%3AHealthInformatics> ;
+    ns5:startPage 44 ;
+    ns1:author <http://ceur-ws.org/Vol-786/#StefaniBienk> .
+
+<file:///home/yakun/workspace/ToolsEswc/dataset/http%3A//ceur-ws.org/Vol-786/%23Session1%3AUserInteraction> a ns3:SessionEvent ;
+    ns3:partOf <http://ceur-ws.org/Vol-786/> ;
+    ns4:title "Session 1: User Interaction" .
+
+<file:///home/yakun/workspace/ToolsEswc/dataset/http%3A//ceur-ws.org/Vol-786/%23Session2%3APersonalAssistance> a ns3:SessionEvent ;
+    ns3:partOf <http://ceur-ws.org/Vol-786/> ;
+    ns4:title "Session 2: Personal Assistance" .
+
+<http://ceur-ws.org/Vol-786/> a ns3:Proceedings ;
+    ns3:hasPart <http://ceur-ws.org/Vol-786/#paper1>,
+        <http://ceur-ws.org/Vol-786/#paper2>,
+        <http://ceur-ws.org/Vol-786/#paper3>,
+        <http://ceur-ws.org/Vol-786/#paper4>,
+        <http://ceur-ws.org/Vol-786/#paper5>,
+        <http://ceur-ws.org/Vol-786/#paper6> ;
+    ns3:hasSession <file:///home/yakun/workspace/ToolsEswc/dataset/http%3A//ceur-ws.org/Vol-786/%23Session1%3AUserInteraction>,
+        <file:///home/yakun/workspace/ToolsEswc/dataset/http%3A//ceur-ws.org/Vol-786/%23Session2%3APersonalAssistance>,
+        <file:///home/yakun/workspace/ToolsEswc/dataset/http%3A//ceur-ws.org/Vol-786/%23Session3%3AHealthInformatics> ;
+    ns7:issued "2011-10-12T00:00:00+00:00"^^xsd:dateTime ;
+    ns5:presentedAt <http://ceur-ws.org/Vol-786/#event> ;
+    ns1:editor <http://ceur-ws.org/Vol-786/#BerndiLudwig>,
+        <http://ceur-ws.org/Vol-786/#FlorianiMichahelles>,
+        <http://ceur-ws.org/Vol-786/#StefaniMandl> .
+

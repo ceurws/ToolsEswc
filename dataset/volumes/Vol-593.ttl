@@ -1,0 +1,125 @@
+@prefix ns1: <http://xmlns.com/foaf/0.1/> .
+@prefix ns2: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns3: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns4: <http://www.w3.org/2002/07/owl#> .
+@prefix ns5: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns6: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns8: <http://purl.org/ontology/bibo/#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://ceur-ws.org/Vol-593/#AdneneiGuabtni> a ns1:Person ;
+    ns3:affiliation "" ;
+    ns4:sameAs <http://ceur-ws.org/persons/AdneneiGuabtni> ;
+    ns1:name "Adnene Guabtni" .
+
+<http://ceur-ws.org/Vol-593/#BoualemiBenatallah> a ns1:Person ;
+    ns3:affiliation "" ;
+    ns4:sameAs <http://ceur-ws.org/persons/BoualemiBenatallah> ;
+    ns1:name "Boualem Benatallah" .
+
+<http://ceur-ws.org/Vol-593/#CinziaiCappiello> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/CinziaiCappiello> ;
+    ns1:made <http://ceur-ws.org/Vol-593/#paperX1> ;
+    ns1:name "Cinzia Cappiello" .
+
+<http://ceur-ws.org/Vol-593/#JonathaniLemaitre> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/JonathaniLemaitre> ;
+    ns1:made <http://ceur-ws.org/Vol-593/#Paper05> ;
+    ns1:name "Jonathan Lemaitre" .
+
+<http://ceur-ws.org/Vol-593/#KadaniAljoumaa> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/KadaniAljoumaa> ;
+    ns1:made <http://ceur-ws.org/Vol-593/#Paper01> ;
+    ns1:name "Kadan Aljoumaa" .
+
+<http://ceur-ws.org/Vol-593/#MaximeiBernaert> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/MaximeiBernaert> ;
+    ns1:made <http://ceur-ws.org/Vol-593/#Paper02> ;
+    ns1:name "Maxime Bernaert" .
+
+<http://ceur-ws.org/Vol-593/#RaviiRamdoyal> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/RaviiRamdoyal> ;
+    ns1:made <http://ceur-ws.org/Vol-593/#Paper06> ;
+    ns1:name "Ravi Ramdoyal" .
+
+<http://ceur-ws.org/Vol-593/#ThomasiKohlborn> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/ThomasiKohlborn> ;
+    ns1:made <http://ceur-ws.org/Vol-593/#Paper04> ;
+    ns1:name "Thomas Kohlborn" .
+
+<http://ceur-ws.org/Vol-593/#WassimiDerguech> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/WassimiDerguech> ;
+    ns1:made <http://ceur-ws.org/Vol-593/#Paper03> ;
+    ns1:name "Wassim Derguech" .
+
+<http://ceur-ws.org/Vol-593/#event> a ns2:WorkshopEvent ;
+    ns2:hasLocation <http://dbpedia.org/resource/Tunisia> ;
+    ns2:hasPart <http://ceur-ws.org/Vol-593/#part-CAiSE> ;
+    ns2:isSubEventOf <http://ceur-ws.org/Vol-593/#conf> ;
+    ns7:beginsAtDatetime "2010-06-08T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:endsAtDatetime "2010-06-08T00:00:00+00:00"^^xsd:dateTime ;
+    ns5:license <http://choosealicense.com/licenses/no-license/> ;
+    rdfs:seeAlso <http://ceur-ws.org/Vol-263/#event>,
+        <http://ceur-ws.org/Vol-343/#event>,
+        <http://ceur-ws.org/Vol-479/#event> .
+
+<http://ceur-ws.org/Vol-593/#AnneiPersson> a ns1:Person ;
+    ns3:affiliation "" ;
+    ns4:sameAs <http://ceur-ws.org/persons/AnneiPersson> ;
+    ns1:made <http://ceur-ws.org/Vol-593/#paperX1> ;
+    ns1:name "Anne Persson" .
+
+<http://ceur-ws.org/Vol-593/#Paper01> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-593/> ;
+    ns5:title "Publishing and Discovery of Intentional Services: Goal-driven Approach" ;
+    ns3:author <http://ceur-ws.org/Vol-593/#KadaniAljoumaa> .
+
+<http://ceur-ws.org/Vol-593/#Paper02> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-593/> ;
+    ns5:title "Integrating the Semantics of Events, Processes and Tasks across Requirements Engineering Layers" ;
+    ns3:author <http://ceur-ws.org/Vol-593/#MaximeiBernaert> .
+
+<http://ceur-ws.org/Vol-593/#Paper03> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-593/> ;
+    ns5:title "Towards a Framework for Business Process Models Reuse" ;
+    ns3:author <http://ceur-ws.org/Vol-593/#WassimiDerguech> .
+
+<http://ceur-ws.org/Vol-593/#Paper04> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-593/> ;
+    ns5:title "Decision-Support for Service Bundling" ;
+    ns3:author <http://ceur-ws.org/Vol-593/#ThomasiKohlborn> .
+
+<http://ceur-ws.org/Vol-593/#Paper05> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-593/> ;
+    ns5:title "Evaluation and Improvement of Database Schemas: A Transformation-based Framework" ;
+    ns3:author <http://ceur-ws.org/Vol-593/#JonathaniLemaitre> .
+
+<http://ceur-ws.org/Vol-593/#Paper06> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-593/> ;
+    ns5:title "Reverse Engineering User-Drawn Form-Based Interfaces for Interactive Database Conceptual Analysis" ;
+    ns3:author <http://ceur-ws.org/Vol-593/#RaviiRamdoyal> .
+
+<http://ceur-ws.org/Vol-593/#paperX1> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-593/> ;
+    ns5:title "The whole proceedings can also be downloaded as a single file (" ;
+    ns3:author <http://ceur-ws.org/Vol-593/#AnneiPersson>,
+        <http://ceur-ws.org/Vol-593/#CinziaiCappiello> .
+
+<http://ceur-ws.org/Vol-593/> a ns2:Proceedings ;
+    ns2:hasPart <http://ceur-ws.org/Vol-593/#Paper01>,
+        <http://ceur-ws.org/Vol-593/#Paper02>,
+        <http://ceur-ws.org/Vol-593/#Paper03>,
+        <http://ceur-ws.org/Vol-593/#Paper04>,
+        <http://ceur-ws.org/Vol-593/#Paper05>,
+        <http://ceur-ws.org/Vol-593/#Paper06>,
+        <http://ceur-ws.org/Vol-593/#paperX1> ;
+    ns6:issued "2010-06-15T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:presentedAt <http://ceur-ws.org/Vol-593/#event> ;
+    ns3:editor <http://ceur-ws.org/Vol-593/#AdneneiGuabtni>,
+        <http://ceur-ws.org/Vol-593/#AnneiPersson>,
+        <http://ceur-ws.org/Vol-593/#BoualemiBenatallah> .
+

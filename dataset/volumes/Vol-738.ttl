@@ -1,0 +1,204 @@
+@prefix ns1: <http://xmlns.com/foaf/0.1/> .
+@prefix ns2: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns3: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns4: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns5: <http://purl.org/ontology/bibo/#> .
+@prefix ns6: <http://www.w3.org/2002/07/owl#> .
+@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://ceur-ws.org/Vol-738/#AlessandraiMileo> a ns1:Person ;
+    ns2:affiliation "" ;
+    ns6:sameAs <http://ceur-ws.org/persons/AlessandraiMileo> ;
+    ns1:name "Alessandra Mileo" .
+
+<http://ceur-ws.org/Vol-738/#GiovambattistaiIanni> a ns1:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/GiovambattistaiIanni> ;
+    ns1:made <http://ceur-ws.org/Vol-738/#eiter-etal> ;
+    ns1:name "Giovambattista Ianni" .
+
+<http://ceur-ws.org/Vol-738/#Jozefi%C5%A0i%C5%A1ka> a ns1:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/Jozefi%C5%A0i%C5%A1ka> ;
+    ns1:made <http://ceur-ws.org/Vol-738/#dziuban-etal> ;
+    ns1:name "Jozef Šiška" .
+
+<http://ceur-ws.org/Vol-738/#Michali%C4%8Certick%C3%BD> a ns1:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/Michali%C4%8Certick%C3%BD> ;
+    ns1:made <http://ceur-ws.org/Vol-738/#dziuban-etal> ;
+    ns1:name "Michal Čertický" .
+
+<http://ceur-ws.org/Vol-738/#MichaliVince> a ns1:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/MichaliVince> ;
+    ns1:made <http://ceur-ws.org/Vol-738/#dziuban-etal> ;
+    ns1:name "Michal Vince" .
+
+<http://ceur-ws.org/Vol-738/#MinhiDao-Tran> a ns1:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/MinhiDao-Tran> ;
+    ns1:made <http://ceur-ws.org/Vol-738/#dao-tran-etal> ;
+    ns1:name "Minh Dao-Tran" .
+
+<http://ceur-ws.org/Vol-738/#PedroiCabalar> a ns1:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/PedroiCabalar> ;
+    ns1:made <http://ceur-ws.org/Vol-738/#cabalar> ;
+    ns1:name "Pedro Cabalar" .
+
+<http://ceur-ws.org/Vol-738/#PeteriSch%C3%BCller> a ns1:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/PeteriSch%C3%BCller> ;
+    ns1:made <http://ceur-ws.org/Vol-738/#eiter-etal> ;
+    ns1:name "Peter Schüller" .
+
+<http://ceur-ws.org/Vol-738/#ThomasiKrennwallner> a ns1:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/ThomasiKrennwallner> ;
+    ns1:made <http://ceur-ws.org/Vol-738/#dao-tran-etal> ;
+    ns1:name "Thomas Krennwallner" .
+
+<http://ceur-ws.org/Vol-738/#TorsteniSchaub> a ns1:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/TorsteniSchaub> ;
+    ns1:made <http://ceur-ws.org/Vol-738/#schaub> ;
+    ns1:name "Torsten Schaub" .
+
+<http://ceur-ws.org/Vol-738/#Vladim%C3%ADriDziuban> a ns1:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/Vladim%C3%ADriDziuban> ;
+    ns1:made <http://ceur-ws.org/Vol-738/#dziuban-etal> ;
+    ns1:name "Vladimír Dziuban" .
+
+<http://ceur-ws.org/Vol-738/#WolfgangiFaber> a ns1:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/WolfgangiFaber> ;
+    ns1:made <http://ceur-ws.org/Vol-738/#faber> ;
+    ns1:name "Wolfgang Faber" .
+
+<http://ceur-ws.org/Vol-738/#event> a ns3:WorkshopEvent ;
+    ns3:hasLocation <http://dbpedia.org/resource/Canada> ;
+    ns3:hasPart <http://ceur-ws.org/Vol-738/#part-ws> ;
+    ns3:isSubEventOf <http://ceur-ws.org/Vol-738/#conf> ;
+    ns8:beginsAtDatetime "2011-05-16T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:endsAtDatetime "2011-05-16T00:00:00+00:00"^^xsd:dateTime ;
+    ns4:license <http://choosealicense.com/licenses/no-license/> ;
+    rdfs:seeAlso <http://ceur-ws.org/Vol-550/#event> .
+
+<http://ceur-ws.org/Vol-738/#cabalar> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-738/> ;
+    ns4:title "Temporal Equilibrium Logic" ;
+    ns5:endPage 3 ;
+    ns5:numPages 1 ;
+    ns5:section <file:///home/yakun/workspace/ToolsEswc/dataset/http%3A//ceur-ws.org/Vol-738/%23InvitedTalks> ;
+    ns5:startPage 3 ;
+    ns2:author <http://ceur-ws.org/Vol-738/#PedroiCabalar> .
+
+<http://ceur-ws.org/Vol-738/#eiter> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-738/> ;
+    ns4:title "Nonmonotonic Multi-Context Systems in Dynamic Environments" ;
+    ns5:endPage 5 ;
+    ns5:numPages 1 ;
+    ns5:section <file:///home/yakun/workspace/ToolsEswc/dataset/http%3A//ceur-ws.org/Vol-738/%23InvitedTalks> ;
+    ns5:startPage 5 ;
+    ns2:author <http://ceur-ws.org/Vol-738/#ThomasiEiter> .
+
+<http://ceur-ws.org/Vol-738/#faber> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-738/> ;
+    ns4:title "Privacy Preservation Using Multi-Context Systems" ;
+    ns5:endPage 51 ;
+    ns5:numPages 7 ;
+    ns5:section <file:///home/yakun/workspace/ToolsEswc/dataset/http%3A//ceur-ws.org/Vol-738/%23ShortPapers> ;
+    ns5:startPage 45 ;
+    ns2:author <http://ceur-ws.org/Vol-738/#WolfgangiFaber> .
+
+<http://ceur-ws.org/Vol-738/#paperX1> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-738/> ;
+    ns4:title "Complete Workshop Proceedings (" ;
+    ns5:section <file:///home/yakun/workspace/ToolsEswc/dataset/http%3A//ceur-ws.org/Vol-738/%23ShortPapers> ;
+    ns2:author <http://ceur-ws.org/Vol-738/#MichaeliFink> .
+
+<http://ceur-ws.org/Vol-738/#schaub> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-738/> ;
+    ns4:title "Knowledge-intensive Stream Reasoning" ;
+    ns5:endPage 7 ;
+    ns5:numPages 1 ;
+    ns5:section <file:///home/yakun/workspace/ToolsEswc/dataset/http%3A//ceur-ws.org/Vol-738/%23InvitedTalks> ;
+    ns5:startPage 7 ;
+    ns2:author <http://ceur-ws.org/Vol-738/#TorsteniSchaub> .
+
+<file:///home/yakun/workspace/ToolsEswc/dataset/http%3A//ceur-ws.org/Vol-738/%23FullPapers> a ns3:SessionEvent ;
+    ns3:partOf <http://ceur-ws.org/Vol-738/> ;
+    ns4:title "Full Papers" .
+
+<http://ceur-ws.org/Vol-738/#ThomasiEiter> a ns1:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/ThomasiEiter> ;
+    ns1:made <http://ceur-ws.org/Vol-738/#dao-tran-etal>,
+        <http://ceur-ws.org/Vol-738/#eiter>,
+        <http://ceur-ws.org/Vol-738/#eiter-etal> ;
+    ns1:name "Thomas Eiter" .
+
+<file:///home/yakun/workspace/ToolsEswc/dataset/http%3A//ceur-ws.org/Vol-738/%23InvitedTalks> a ns3:SessionEvent ;
+    ns3:partOf <http://ceur-ws.org/Vol-738/> ;
+    ns4:title "Invited Talks" .
+
+<file:///home/yakun/workspace/ToolsEswc/dataset/http%3A//ceur-ws.org/Vol-738/%23ShortPapers> a ns3:SessionEvent ;
+    ns3:partOf <http://ceur-ws.org/Vol-738/> ;
+    ns4:title "Short Papers" .
+
+<http://ceur-ws.org/Vol-738/#MichaeliFink> a ns1:Person ;
+    ns2:affiliation "" ;
+    ns6:sameAs <http://ceur-ws.org/persons/MichaeliFink> ;
+    ns1:made <http://ceur-ws.org/Vol-738/#dao-tran-etal>,
+        <http://ceur-ws.org/Vol-738/#eiter-etal>,
+        <http://ceur-ws.org/Vol-738/#paperX1> ;
+    ns1:name "Michael Fink" .
+
+<http://ceur-ws.org/Vol-738/#dao-tran-etal> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-738/> ;
+    ns4:title "Model Streaming for Distributed Multi-Context Systems" ;
+    ns5:endPage 22 ;
+    ns5:numPages 12 ;
+    ns5:section <file:///home/yakun/workspace/ToolsEswc/dataset/http%3A//ceur-ws.org/Vol-738/%23FullPapers> ;
+    ns5:startPage 11 ;
+    ns2:author <http://ceur-ws.org/Vol-738/#MichaeliFink>,
+        <http://ceur-ws.org/Vol-738/#MinhiDao-Tran>,
+        <http://ceur-ws.org/Vol-738/#ThomasiEiter>,
+        <http://ceur-ws.org/Vol-738/#ThomasiKrennwallner> .
+
+<http://ceur-ws.org/Vol-738/#dziuban-etal> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-738/> ;
+    ns4:title "Lightweight Communication Platform for Heterogeneous Multi-context Systems: A Preliminary Report" ;
+    ns5:endPage 44 ;
+    ns5:numPages 6 ;
+    ns5:section <file:///home/yakun/workspace/ToolsEswc/dataset/http%3A//ceur-ws.org/Vol-738/%23ShortPapers> ;
+    ns5:startPage 39 ;
+    ns2:author <http://ceur-ws.org/Vol-738/#Jozefi%C5%A0i%C5%A1ka>,
+        <http://ceur-ws.org/Vol-738/#Michali%C4%8Certick%C3%BD>,
+        <http://ceur-ws.org/Vol-738/#MichaliVince>,
+        <http://ceur-ws.org/Vol-738/#Vladim%C3%ADriDziuban> .
+
+<http://ceur-ws.org/Vol-738/#eiter-etal> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-738/> ;
+    ns4:title "Towards a Policy Language for Managing Inconsistency in Multi-Context Systems" ;
+    ns5:endPage 35 ;
+    ns5:numPages 13 ;
+    ns5:section <file:///home/yakun/workspace/ToolsEswc/dataset/http%3A//ceur-ws.org/Vol-738/%23FullPapers> ;
+    ns5:startPage 23 ;
+    ns2:author <http://ceur-ws.org/Vol-738/#GiovambattistaiIanni>,
+        <http://ceur-ws.org/Vol-738/#MichaeliFink>,
+        <http://ceur-ws.org/Vol-738/#PeteriSch%C3%BCller>,
+        <http://ceur-ws.org/Vol-738/#ThomasiEiter> .
+
+<http://ceur-ws.org/Vol-738/> a ns3:Proceedings ;
+    ns3:hasPart <http://ceur-ws.org/Vol-738/#cabalar>,
+        <http://ceur-ws.org/Vol-738/#dao-tran-etal>,
+        <http://ceur-ws.org/Vol-738/#dziuban-etal>,
+        <http://ceur-ws.org/Vol-738/#eiter>,
+        <http://ceur-ws.org/Vol-738/#eiter-etal>,
+        <http://ceur-ws.org/Vol-738/#faber>,
+        <http://ceur-ws.org/Vol-738/#paperX1>,
+        <http://ceur-ws.org/Vol-738/#schaub> ;
+    ns3:hasSession <file:///home/yakun/workspace/ToolsEswc/dataset/http%3A//ceur-ws.org/Vol-738/%23FullPapers>,
+        <file:///home/yakun/workspace/ToolsEswc/dataset/http%3A//ceur-ws.org/Vol-738/%23InvitedTalks>,
+        <file:///home/yakun/workspace/ToolsEswc/dataset/http%3A//ceur-ws.org/Vol-738/%23ShortPapers> ;
+    ns7:issued "2011-06-23T00:00:00+00:00"^^xsd:dateTime ;
+    ns5:presentedAt <http://ceur-ws.org/Vol-738/#event> ;
+    ns2:editor <http://ceur-ws.org/Vol-738/#AlessandraiMileo>,
+        <http://ceur-ws.org/Vol-738/#MichaeliFink> .
+

@@ -1,0 +1,144 @@
+@prefix ns1: <http://xmlns.com/foaf/0.1/> .
+@prefix ns2: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns3: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns4: <http://www.w3.org/2002/07/owl#> .
+@prefix ns5: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns6: <http://purl.org/ontology/bibo/#> .
+@prefix ns7: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://ceur-ws.org/Vol-1049/#DanieliDahl> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/DanieliDahl> ;
+    ns1:made <http://ceur-ws.org/Vol-1049/#paper1> ;
+    ns1:name "Daniel Dahl" .
+
+<http://ceur-ws.org/Vol-1049/#FriederiJacobi> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/FriederiJacobi> ;
+    ns1:made <http://ceur-ws.org/Vol-1049/#paper2> ;
+    ns1:name "Frieder Jacobi" .
+
+<http://ceur-ws.org/Vol-1049/#JoachimiKurzh%C3%B6fer> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/JoachimiKurzh%C3%B6fer> ;
+    ns1:made <http://ceur-ws.org/Vol-1049/#paper3> ;
+    ns1:name "Joachim Kurzhöfer" .
+
+<http://ceur-ws.org/Vol-1049/#JorgeiMarxiG%C3%B3mez> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/JorgeiMarxiG%C3%B3mez> ;
+    ns1:made <http://ceur-ws.org/Vol-1049/#paper3> ;
+    ns1:name "Jorge Marx Gómez" .
+
+<http://ceur-ws.org/Vol-1049/#JulianiEreth> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/JulianiEreth> ;
+    ns1:made <http://ceur-ws.org/Vol-1049/#paper1> ;
+    ns1:name "Julian Ereth" .
+
+<http://ceur-ws.org/Vol-1049/#MarcoiFischer> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/MarcoiFischer> ;
+    ns1:made <http://ceur-ws.org/Vol-1049/#paper4> ;
+    ns1:name "Marco Fischer" .
+
+<http://ceur-ws.org/Vol-1049/#MarcusiHofmann> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/MarcusiHofmann> ;
+    ns1:made <http://ceur-ws.org/Vol-1049/#paper2> ;
+    ns1:name "Marcus Hofmann" .
+
+<http://ceur-ws.org/Vol-1049/#RobertiKrawatzeck> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/RobertiKrawatzeck> ;
+    ns1:made <http://ceur-ws.org/Vol-1049/#paper2> ;
+    ns1:name "Robert Krawatzeck" .
+
+<http://ceur-ws.org/Vol-1049/#SafwaniSulaiman> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/SafwaniSulaiman> ;
+    ns1:made <http://ceur-ws.org/Vol-1049/#paper3> ;
+    ns1:name "Safwan Sulaiman" .
+
+<http://ceur-ws.org/Vol-1049/#UweiWieland> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/UweiWieland> ;
+    ns1:made <http://ceur-ws.org/Vol-1049/#paper4> ;
+    ns1:name "Uwe Wieland" .
+
+<http://ceur-ws.org/Vol-1049/#event> a ns2:WorkshopEvent ;
+    ns2:hasLocation <http://dbpedia.org/resource/Germany> ;
+    ns2:hasPart <http://ceur-ws.org/Vol-1049/#part-WSBI> ;
+    ns2:isSubEventOf <http://ceur-ws.org/Vol-1049/#conf> ;
+    ns5:beginsAtDatetime "2013-07-12T00:00:00+00:00"^^xsd:dateTime ;
+    ns5:endsAtDatetime "2013-07-12T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:license <http://choosealicense.com/licenses/no-license/> ;
+    rdfs:seeAlso <http://ceur-ws.org/Vol-1048/#event>,
+        <http://ceur-ws.org/Vol-542/#event>,
+        <http://ceur-ws.org/Vol-663/#event>,
+        <http://ceur-ws.org/Vol-831/#event> .
+
+<http://ceur-ws.org/Vol-1049/#HenningiBaars> a ns1:Person ;
+    ns3:affiliation "" ;
+    ns4:sameAs <http://ceur-ws.org/persons/HenningiBaars> ;
+    ns1:made <http://ceur-ws.org/Vol-1049/#paperX1> ;
+    ns1:name "Henning Baars" .
+
+<http://ceur-ws.org/Vol-1049/#paperX1> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1049/> ;
+    ns7:title "Das Gesamtdokument kann" ;
+    ns6:section <file:///home/yakun/workspace/ToolsEswc/dataset/http%3A//ceur-ws.org/Vol-1049/%23Inhaltsverzeichnis> ;
+    ns3:author <http://ceur-ws.org/Vol-1049/#HenningiBaars> .
+
+<http://ceur-ws.org/Vol-1049/#paper1> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1049/> ;
+    ns7:title "Fundamentals for a Service-based evaluation concept for Business Intelligence in the Cloud" ;
+    ns6:endPage 20 ;
+    ns6:numPages 20 ;
+    ns6:section <file:///home/yakun/workspace/ToolsEswc/dataset/http%3A//ceur-ws.org/Vol-1049/%23Inhaltsverzeichnis> ;
+    ns6:startPage 1 ;
+    ns3:author <http://ceur-ws.org/Vol-1049/#DanieliDahl>,
+        <http://ceur-ws.org/Vol-1049/#JulianiEreth> .
+
+<http://ceur-ws.org/Vol-1049/#paper4> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1049/> ;
+    ns7:title "Zur methodischen Vorbereitung von Data-Mining-Projekten im Kontext diskreter Produktionsprozesse" ;
+    ns6:endPage 63 ;
+    ns6:numPages 17 ;
+    ns6:section <file:///home/yakun/workspace/ToolsEswc/dataset/http%3A//ceur-ws.org/Vol-1049/%23Inhaltsverzeichnis> ;
+    ns6:startPage 47 ;
+    ns3:author <http://ceur-ws.org/Vol-1049/#MarcoiFischer>,
+        <http://ceur-ws.org/Vol-1049/#UweiWieland> .
+
+<http://ceur-ws.org/Vol-1049/#paper2> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1049/> ;
+    ns7:title "Entwicklung eines Software-Prototyps zur automatischen Erstellung nutzerspezifischer ETL-Dokumentation: Ein Fallbeispiel für gestaltungsorientierte, problemzentrierte Forschung" ;
+    ns6:endPage 34 ;
+    ns6:numPages 14 ;
+    ns6:section <file:///home/yakun/workspace/ToolsEswc/dataset/http%3A//ceur-ws.org/Vol-1049/%23Inhaltsverzeichnis> ;
+    ns6:startPage 21 ;
+    ns3:author <http://ceur-ws.org/Vol-1049/#FriederiJacobi>,
+        <http://ceur-ws.org/Vol-1049/#MarcusiHofmann>,
+        <http://ceur-ws.org/Vol-1049/#RobertiKrawatzeck> .
+
+<http://ceur-ws.org/Vol-1049/#paper3> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1049/> ;
+    ns7:title "Business Intelligence Systems Optimization to Enable Better Self-Service Business Users" ;
+    ns6:endPage 46 ;
+    ns6:numPages 12 ;
+    ns6:section <file:///home/yakun/workspace/ToolsEswc/dataset/http%3A//ceur-ws.org/Vol-1049/%23Inhaltsverzeichnis> ;
+    ns6:startPage 35 ;
+    ns3:author <http://ceur-ws.org/Vol-1049/#JoachimiKurzh%C3%B6fer>,
+        <http://ceur-ws.org/Vol-1049/#JorgeiMarxiG%C3%B3mez>,
+        <http://ceur-ws.org/Vol-1049/#SafwaniSulaiman> .
+
+<file:///home/yakun/workspace/ToolsEswc/dataset/http%3A//ceur-ws.org/Vol-1049/%23Inhaltsverzeichnis> a ns2:SessionEvent ;
+    ns2:partOf <http://ceur-ws.org/Vol-1049/> ;
+    ns7:title "Inhaltsverzeichnis" .
+
+<http://ceur-ws.org/Vol-1049/> a ns2:Proceedings ;
+    ns2:hasPart <http://ceur-ws.org/Vol-1049/#paper1>,
+        <http://ceur-ws.org/Vol-1049/#paper2>,
+        <http://ceur-ws.org/Vol-1049/#paper3>,
+        <http://ceur-ws.org/Vol-1049/#paper4>,
+        <http://ceur-ws.org/Vol-1049/#paperX1> ;
+    ns2:hasSession <file:///home/yakun/workspace/ToolsEswc/dataset/http%3A//ceur-ws.org/Vol-1049/%23Inhaltsverzeichnis> ;
+    ns8:issued "2013-09-27T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:presentedAt <http://ceur-ws.org/Vol-1049/#event> ;
+    ns3:editor <http://ceur-ws.org/Vol-1049/#HenningiBaars> .
+

@@ -1,0 +1,49 @@
+@prefix ns1: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns2: <http://www.w3.org/2002/07/owl#> .
+@prefix ns3: <http://xmlns.com/foaf/0.1/> .
+@prefix ns4: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns5: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns6: <http://purl.org/ontology/bibo/#> .
+@prefix ns7: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://ceur-ws.org/Vol-36/> a ns4:Proceedings ;
+    ns8:issued "2001-03-28T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:presentedAt <http://ceur-ws.org/Vol-36/#event> ;
+    ns1:editor <http://ceur-ws.org/Vol-36/#AlexanderiHorsch>,
+        <http://ceur-ws.org/Vol-36/#Hans-PeteriMeinzer>,
+        <http://ceur-ws.org/Vol-36/#HeinziHandels>,
+        <http://ceur-ws.org/Vol-36/#Herausgegebenivon>,
+        <http://ceur-ws.org/Vol-36/#ThomasiLehmann> .
+
+<http://ceur-ws.org/Vol-36/#AlexanderiHorsch> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/AlexanderiHorsch> ;
+    ns3:name "Alexander Horsch" .
+
+<http://ceur-ws.org/Vol-36/#Hans-PeteriMeinzer> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/Hans-PeteriMeinzer> ;
+    ns3:name "Hans-Peter Meinzer" .
+
+<http://ceur-ws.org/Vol-36/#HeinziHandels> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/HeinziHandels> ;
+    ns3:name "Heinz Handels" .
+
+<http://ceur-ws.org/Vol-36/#Herausgegebenivon> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/Herausgegebenivon> ;
+    ns3:name "Herausgegeben von" .
+
+<http://ceur-ws.org/Vol-36/#ThomasiLehmann> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/ThomasiLehmann> ;
+    ns3:name "Thomas Lehmann" .
+
+<http://ceur-ws.org/Vol-36/#event> a ns4:WorkshopEvent ;
+    ns4:hasPart <http://ceur-ws.org/Vol-36/#part-ws> ;
+    ns4:isSubEventOf <http://ceur-ws.org/Vol-36/#conf> ;
+    ns5:beginsAtDatetime "2001-03-06T00:00:00+00:00"^^xsd:dateTime ;
+    ns5:endsAtDatetime "2001-03-06T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:license <http://choosealicense.com/licenses/no-license/> .
+

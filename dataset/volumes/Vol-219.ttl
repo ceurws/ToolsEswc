@@ -1,0 +1,121 @@
+@prefix ns1: <http://xmlns.com/foaf/0.1/> .
+@prefix ns2: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns3: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns4: <http://www.w3.org/2002/07/owl#> .
+@prefix ns5: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns6: <http://purl.org/ontology/bibo/#> .
+@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://ceur-ws.org/Vol-219/#FrodeiLaugen> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/FrodeiLaugen> ;
+    ns1:made <http://ceur-ws.org/Vol-219/#paper04> ;
+    ns1:name "Frode Laugen" .
+
+<http://ceur-ws.org/Vol-219/#JakobiValen> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/JakobiValen> ;
+    ns1:made <http://ceur-ws.org/Vol-219/#paper03> ;
+    ns1:name "Jakob Valen" .
+
+<http://ceur-ws.org/Vol-219/#KnutiHalvoriLarsen> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/KnutiHalvoriLarsen> ;
+    ns1:made <http://ceur-ws.org/Vol-219/#paper05> ;
+    ns1:name "Knut Halvor Larsen" .
+
+<http://ceur-ws.org/Vol-219/#MikhailaiS.iE.iBurgess> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/MikhailaiS.iE.iBurgess> ;
+    ns1:made <http://ceur-ws.org/Vol-219/#paper02> ;
+    ns1:name "Mikhaila S. E. Burgess" .
+
+<http://ceur-ws.org/Vol-219/#OmniaiAllam> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/OmniaiAllam> ;
+    ns1:made <http://ceur-ws.org/Vol-219/#paper02> ;
+    ns1:name "Omnia Allam" .
+
+<http://ceur-ws.org/Vol-219/#TorsteiniJensen> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/TorsteiniJensen> ;
+    ns1:made <http://ceur-ws.org/Vol-219/#paper05> ;
+    ns1:name "Torstein Jensen" .
+
+<http://ceur-ws.org/Vol-219/#W.iAlexiGray> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/W.iAlexiGray> ;
+    ns1:made <http://ceur-ws.org/Vol-219/#paper02> ;
+    ns1:name "W. Alex Gray" .
+
+<http://ceur-ws.org/Vol-219/#WilliamiCrawford> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/WilliamiCrawford> ;
+    ns1:made <http://ceur-ws.org/Vol-219/#paper01> ;
+    ns1:name "William Crawford" .
+
+<http://ceur-ws.org/Vol-219/#event> a ns2:WorkshopEvent ;
+    ns2:hasLocation <http://dbpedia.org/resource/Norway> ;
+    ns2:hasPart <http://ceur-ws.org/Vol-219/#part-ISePHR> ;
+    ns2:isSubEventOf <http://ceur-ws.org/Vol-219/#conf> ;
+    ns7:beginsAtDatetime "2006-09-28T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:endsAtDatetime "2006-09-28T00:00:00+00:00"^^xsd:dateTime ;
+    ns5:license <http://choosealicense.com/licenses/no-license/> .
+
+<http://ceur-ws.org/Vol-219/#TerjeiBrasethvik> a ns1:Person ;
+    ns3:affiliation "" ;
+    ns4:sameAs <http://ceur-ws.org/persons/TerjeiBrasethvik> ;
+    ns1:made <http://ceur-ws.org/Vol-219/#paper00> ;
+    ns1:name "Terje Brasethvik" .
+
+<http://ceur-ws.org/Vol-219/#paper01> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-219/> ;
+    ns5:title "Personally Controlled Health Records: The US Landscape and the Indivo Project" ;
+    ns3:author <http://ceur-ws.org/Vol-219/#WilliamiCrawford> .
+
+<http://ceur-ws.org/Vol-219/#paper03> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-219/> ;
+    ns5:title "Personal electronic record systems in Psychiatric care; assessment, treatment matching, quality assurance, and research" ;
+    ns3:author <http://ceur-ws.org/Vol-219/#JakobiValen> .
+
+<http://ceur-ws.org/Vol-219/#paper04> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-219/> ;
+    ns5:title "Development of a computerized tool for self-assessment of subjective symptoms that can be integrated in a Personal health record" ;
+    ns3:author <http://ceur-ws.org/Vol-219/#FrodeiLaugen> .
+
+<http://ceur-ws.org/Vol-219/#AndersiKofod-Petersen> a ns1:Person ;
+    ns3:affiliation "" ;
+    ns4:sameAs <http://ceur-ws.org/persons/AndersiKofod-Petersen> ;
+    ns1:made <http://ceur-ws.org/Vol-219/#paper00>,
+        <http://ceur-ws.org/Vol-219/#paper05> ;
+    ns1:name "Anders Kofod-Petersen" .
+
+<http://ceur-ws.org/Vol-219/#paper00> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-219/> ;
+    ns5:title "Preface" ;
+    ns3:author <http://ceur-ws.org/Vol-219/#AndersiKofod-Petersen>,
+        <http://ceur-ws.org/Vol-219/#TerjeiBrasethvik> .
+
+<http://ceur-ws.org/Vol-219/#paper02> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-219/> ;
+    ns5:title "Patient-Centred Approach to Focusing Online Health Information Search Results" ;
+    ns3:author <http://ceur-ws.org/Vol-219/#MikhailaiS.iE.iBurgess>,
+        <http://ceur-ws.org/Vol-219/#OmniaiAllam>,
+        <http://ceur-ws.org/Vol-219/#W.iAlexiGray> .
+
+<http://ceur-ws.org/Vol-219/#paper05> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-219/> ;
+    ns5:title "Towards a Norwegian Implementation of Electronic Personal Health Records" ;
+    ns3:author <http://ceur-ws.org/Vol-219/#AndersiKofod-Petersen>,
+        <http://ceur-ws.org/Vol-219/#KnutiHalvoriLarsen>,
+        <http://ceur-ws.org/Vol-219/#TorsteiniJensen> .
+
+<http://ceur-ws.org/Vol-219/> a ns2:Proceedings ;
+    ns2:hasPart <http://ceur-ws.org/Vol-219/#paper00>,
+        <http://ceur-ws.org/Vol-219/#paper01>,
+        <http://ceur-ws.org/Vol-219/#paper02>,
+        <http://ceur-ws.org/Vol-219/#paper03>,
+        <http://ceur-ws.org/Vol-219/#paper04>,
+        <http://ceur-ws.org/Vol-219/#paper05> ;
+    ns8:issued "2006-11-23T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:presentedAt <http://ceur-ws.org/Vol-219/#event> ;
+    ns3:editor <http://ceur-ws.org/Vol-219/#AndersiKofod-Petersen>,
+        <http://ceur-ws.org/Vol-219/#TerjeiBrasethvik> .
+

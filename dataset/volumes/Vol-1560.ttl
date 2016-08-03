@@ -1,0 +1,150 @@
+@prefix ns1: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns2: <http://purl.org/ontology/bibo/#> .
+@prefix ns3: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns4: <http://xmlns.com/foaf/0.1/> .
+@prefix ns5: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns6: <http://www.w3.org/2002/07/owl#> .
+@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://ceur-ws.org/Vol-1560/#ColiniAtkinson> a ns4:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/ColiniAtkinson> ;
+    ns4:made <http://ceur-ws.org/Vol-1560/#paper5> ;
+    ns4:name "Colin Atkinson" .
+
+<http://ceur-ws.org/Vol-1560/#DomenikiPavletic> a ns4:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/DomenikiPavletic> ;
+    ns4:made <http://ceur-ws.org/Vol-1560/#paper6> ;
+    ns4:name "Domenik Pavletic" .
+
+<http://ceur-ws.org/Vol-1560/#EdiSeidewitz> a ns4:Person ;
+    ns2:place <http://dbpedia.org/resource/United_States> ;
+    ns3:affiliation "USA" ;
+    ns6:sameAs <http://ceur-ws.org/persons/EdiSeidewitz> ;
+    ns4:name "Ed Seidewitz" .
+
+<http://ceur-ws.org/Vol-1560/#FlorentiLatombe> a ns4:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/FlorentiLatombe> ;
+    ns4:made <http://ceur-ws.org/Vol-1560/#paper4> ;
+    ns4:name "Florent Latombe" .
+
+<http://ceur-ws.org/Vol-1560/#FrancisiBordeleau> a ns4:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/FrancisiBordeleau> ;
+    ns4:made <http://ceur-ws.org/Vol-1560/#keynote> ;
+    ns4:name "Francis Bordeleau" .
+
+<http://ceur-ws.org/Vol-1560/#GergelyiD%C3%A9vai> a ns4:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/GergelyiD%C3%A9vai> ;
+    ns4:made <http://ceur-ws.org/Vol-1560/#paper2> ;
+    ns4:name "Gergely Dévai" .
+
+<http://ceur-ws.org/Vol-1560/#HamoudiAljamaan> a ns4:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/HamoudiAljamaan> ;
+    ns4:made <http://ceur-ws.org/Vol-1560/#paper3> ;
+    ns4:name "Hamoud Aljamaan" .
+
+<http://ceur-ws.org/Vol-1560/#JeffiGray> a ns4:Person ;
+    ns2:place <http://dbpedia.org/resource/United_States> ;
+    ns3:affiliation "University of Alabama" ;
+    ns6:sameAs <http://ceur-ws.org/persons/JeffiGray> ;
+    ns4:name "Jeff Gray" .
+
+<http://ceur-ws.org/Vol-1560/#PhilipiLanger> a ns4:Person ;
+    ns2:place <http://dbpedia.org/resource/Austria> ;
+    ns3:affiliation "EclipseSource" ;
+    ns6:sameAs <http://ceur-ws.org/persons/PhilipiLanger> ;
+    ns4:name "Philip Langer" .
+
+<http://ceur-ws.org/Vol-1560/#SahariGuermazi> a ns4:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/SahariGuermazi> ;
+    ns4:made <http://ceur-ws.org/Vol-1560/#paper1> ;
+    ns4:name "Sahar Guermazi" .
+
+<http://ceur-ws.org/Vol-1560/#TanjaiMayerhofer> a ns4:Person ;
+    ns2:place <http://dbpedia.org/resource/Austria> ;
+    ns3:affiliation "TU Wien" ;
+    ns6:sameAs <http://ceur-ws.org/persons/TanjaiMayerhofer> ;
+    ns4:name "Tanja Mayerhofer" .
+
+<http://ceur-ws.org/Vol-1560/#event> a ns5:WorkshopEvent ;
+    ns5:hasLocation <http://dbpedia.org/resource/Canada> ;
+    ns5:hasPart <http://ceur-ws.org/Vol-1560/#part-EXE> ;
+    ns5:isSubEventOf <http://ceur-ws.org/Vol-1560/#conf> ;
+    ns7:beginsAtDatetime "2015-09-27T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:endsAtDatetime "2015-09-27T00:00:00+00:00"^^xsd:dateTime .
+
+<http://ceur-ws.org/Vol-1560/#keynote> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1560/> ;
+    ns1:title "Why and Where Do We Need Model Execution?" ;
+    ns2:endPage 2 ;
+    ns2:numPages 2 ;
+    ns2:startPage 1 ;
+    ns3:author <http://ceur-ws.org/Vol-1560/#FrancisiBordeleau> .
+
+<http://ceur-ws.org/Vol-1560/#paper1> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1560/> ;
+    ns1:title "Executable Modeling with fUML and Alf in Papyrus: Tooling and Experiments" ;
+    ns2:endPage 8 ;
+    ns2:numPages 6 ;
+    ns2:startPage 3 ;
+    ns3:author <http://ceur-ws.org/Vol-1560/#SahariGuermazi> .
+
+<http://ceur-ws.org/Vol-1560/#paper2> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1560/> ;
+    ns1:title "UML Model Execution via Code Generation" ;
+    ns2:endPage 15 ;
+    ns2:numPages 7 ;
+    ns2:startPage 9 ;
+    ns3:author <http://ceur-ws.org/Vol-1560/#GergelyiD%C3%A9vai> .
+
+<http://ceur-ws.org/Vol-1560/#paper3> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1560/> ;
+    ns1:title "UmpleRun: a Dynamic Analysis Tool for Textually Modeled State Machines using Umple" ;
+    ns2:endPage 20 ;
+    ns2:numPages 5 ;
+    ns2:startPage 16 ;
+    ns3:author <http://ceur-ws.org/Vol-1560/#HamoudiAljamaan> .
+
+<http://ceur-ws.org/Vol-1560/#paper4> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1560/> ;
+    ns1:title "Coping with Semantic Variation Points in Domain-Specific Modeling Languages" ;
+    ns2:endPage 27 ;
+    ns2:numPages 7 ;
+    ns2:startPage 21 ;
+    ns3:author <http://ceur-ws.org/Vol-1560/#FlorentiLatombe> .
+
+<http://ceur-ws.org/Vol-1560/#paper5> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1560/> ;
+    ns1:title "On the Execution of Deep Models" ;
+    ns2:endPage 33 ;
+    ns2:numPages 6 ;
+    ns2:startPage 28 ;
+    ns3:author <http://ceur-ws.org/Vol-1560/#ColiniAtkinson> .
+
+<http://ceur-ws.org/Vol-1560/#paper6> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1560/> ;
+    ns1:title "Testing Extensible Language Debuggers" ;
+    ns2:endPage 40 ;
+    ns2:numPages 7 ;
+    ns2:startPage 34 ;
+    ns3:author <http://ceur-ws.org/Vol-1560/#DomenikiPavletic> .
+
+<http://ceur-ws.org/Vol-1560/> a ns5:Proceedings ;
+    ns5:hasPart <http://ceur-ws.org/Vol-1560/#keynote>,
+        <http://ceur-ws.org/Vol-1560/#paper1>,
+        <http://ceur-ws.org/Vol-1560/#paper2>,
+        <http://ceur-ws.org/Vol-1560/#paper3>,
+        <http://ceur-ws.org/Vol-1560/#paper4>,
+        <http://ceur-ws.org/Vol-1560/#paper5>,
+        <http://ceur-ws.org/Vol-1560/#paper6> ;
+    ns8:issued "2016-02-17T00:00:00+00:00"^^xsd:dateTime ;
+    ns2:presentedAt <http://ceur-ws.org/Vol-1560/#event> ;
+    ns3:editor <http://ceur-ws.org/Vol-1560/#EdiSeidewitz>,
+        <http://ceur-ws.org/Vol-1560/#JeffiGray>,
+        <http://ceur-ws.org/Vol-1560/#PhilipiLanger>,
+        <http://ceur-ws.org/Vol-1560/#TanjaiMayerhofer> .
+

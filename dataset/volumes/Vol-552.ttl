@@ -1,0 +1,133 @@
+@prefix ns1: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns2: <http://xmlns.com/foaf/0.1/> .
+@prefix ns3: <http://purl.org/ontology/bibo/#> .
+@prefix ns4: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns5: <http://www.w3.org/2002/07/owl#> .
+@prefix ns6: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://ceur-ws.org/Vol-552/#AlexanderiSigel> a ns2:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/AlexanderiSigel> ;
+    ns2:made <http://ceur-ws.org/Vol-552/#Sigel-KF08> ;
+    ns2:name "Alexander Sigel" .
+
+<http://ceur-ws.org/Vol-552/#BerndiMarkscheffel> a ns2:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/BerndiMarkscheffel> ;
+    ns2:made <http://ceur-ws.org/Vol-552/#Thomas-et-al-KF08> ;
+    ns2:name "Bernd Markscheffel" .
+
+<http://ceur-ws.org/Vol-552/#HendrikiThomas> a ns2:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/HendrikiThomas> ;
+    ns2:made <http://ceur-ws.org/Vol-552/#Thomas-et-al-KF08> ;
+    ns2:name "Hendrik Thomas" .
+
+<http://ceur-ws.org/Vol-552/#RoyiLachica> a ns2:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/RoyiLachica> ;
+    ns2:made <http://ceur-ws.org/Vol-552/#Karabeg-Lachica-KF08> ;
+    ns2:name "Roy Lachica" .
+
+<http://ceur-ws.org/Vol-552/#SimoniBuckinghamiShum> a ns2:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/SimoniBuckinghamiShum> ;
+    ns2:made <http://ceur-ws.org/Vol-552/#Buckingham_Shum-KF08> ;
+    ns2:name "Simon Buckingham Shum" .
+
+<http://ceur-ws.org/Vol-552/#TobiasiRedmann> a ns2:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/TobiasiRedmann> ;
+    ns2:made <http://ceur-ws.org/Vol-552/#Thomas-et-al-KF08> ;
+    ns2:name "Tobias Redmann" .
+
+<http://ceur-ws.org/Vol-552/#YuzuruiTanaka> a ns2:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/YuzuruiTanaka> ;
+    ns2:made <http://ceur-ws.org/Vol-552/#Tanaka-KF08> ;
+    ns2:name "Yuzuru Tanaka" .
+
+<http://ceur-ws.org/Vol-552/#event> a ns4:WorkshopEvent ;
+    ns4:hasLocation <http://dbpedia.org/resource/Duchy_of_Croatia> ;
+    ns4:hasPart <http://ceur-ws.org/Vol-552/#part-ws> ;
+    ns4:isSubEventOf <http://ceur-ws.org/Vol-552/#conf> ;
+    ns7:beginsAtDatetime "2008-10-20T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:endsAtDatetime "2008-10-22T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:license <http://choosealicense.com/licenses/no-license/> .
+
+<http://ceur-ws.org/Vol-552/#Buckingham_Shum-KF08> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-552/> ;
+    ns6:title "Knowledge Federation as Hypermedia Discourse" ;
+    ns3:section <file:///home/yakun/workspace/ToolsEswc/dataset/http%3A//ceur-ws.org/Vol-552/%23Preface> ;
+    ns1:author <http://ceur-ws.org/Vol-552/#SimoniBuckinghamiShum> .
+
+<http://ceur-ws.org/Vol-552/#JackiPark> a ns2:Person ;
+    ns3:place <http://dbpedia.org/resource/United_Kingdom> ;
+    ns1:affiliation "The Open University, Knowledge Media Institute, PO Box 197, Milton Keynes MK7 6BJ" ;
+    ns5:sameAs <http://ceur-ws.org/persons/JackiPark> ;
+    ns2:made <http://ceur-ws.org/Vol-552/#Park-KF08> ;
+    ns2:name "Jack Park" .
+
+<http://ceur-ws.org/Vol-552/#KF-Patterns> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-552/> ;
+    ns6:title "Knowledge Federation Patterns" ;
+    ns3:section <file:///home/yakun/workspace/ToolsEswc/dataset/http%3A//ceur-ws.org/Vol-552/%23Preface> ;
+    ns1:author <http://ceur-ws.org/Vol-552/#DinoiKarabeg> .
+
+<http://ceur-ws.org/Vol-552/#Park-KF08> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-552/> ;
+    ns6:title "Knowledge Gardening as Knowledge Federation" ;
+    ns3:section <file:///home/yakun/workspace/ToolsEswc/dataset/http%3A//ceur-ws.org/Vol-552/%23Preface> ;
+    ns1:author <http://ceur-ws.org/Vol-552/#JackiPark> .
+
+<http://ceur-ws.org/Vol-552/#Sigel-KF08> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-552/> ;
+    ns6:title "Knowledge Federation from a Knowledge Organization Perspective: A Position Paper" ;
+    ns3:section <file:///home/yakun/workspace/ToolsEswc/dataset/http%3A//ceur-ws.org/Vol-552/%23Preface> ;
+    ns1:author <http://ceur-ws.org/Vol-552/#AlexanderiSigel> .
+
+<http://ceur-ws.org/Vol-552/#Tanaka-KF08> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-552/> ;
+    ns6:title "Knowledge Federation: Necessity and Required Technologies" ;
+    ns3:section <file:///home/yakun/workspace/ToolsEswc/dataset/http%3A//ceur-ws.org/Vol-552/%23Preface> ;
+    ns1:author <http://ceur-ws.org/Vol-552/#YuzuruiTanaka> .
+
+<http://ceur-ws.org/Vol-552/#DinoiKarabeg> a ns2:Person ;
+    ns1:affiliation "" ;
+    ns5:sameAs <http://ceur-ws.org/persons/DinoiKarabeg> ;
+    ns2:made <http://ceur-ws.org/Vol-552/#KF-Patterns>,
+        <http://ceur-ws.org/Vol-552/#Karabeg-Lachica-KF08> ;
+    ns2:name "Dino Karabeg" .
+
+<http://ceur-ws.org/Vol-552/#Karabeg-Lachica-KF08> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-552/> ;
+    ns6:title "Knowledge Federation as a Principle of Social Organization of Knowledge Creation and Sharing" ;
+    ns3:section <file:///home/yakun/workspace/ToolsEswc/dataset/http%3A//ceur-ws.org/Vol-552/%23Preface> ;
+    ns1:author <http://ceur-ws.org/Vol-552/#DinoiKarabeg>,
+        <http://ceur-ws.org/Vol-552/#RoyiLachica> .
+
+<http://ceur-ws.org/Vol-552/#Thomas-et-al-KF08> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-552/> ;
+    ns6:title "From Subjects to Concept Clouds - Why semantic mapping is necessary" ;
+    ns3:section <file:///home/yakun/workspace/ToolsEswc/dataset/http%3A//ceur-ws.org/Vol-552/%23Preface> ;
+    ns1:author <http://ceur-ws.org/Vol-552/#BerndiMarkscheffel>,
+        <http://ceur-ws.org/Vol-552/#HendrikiThomas>,
+        <http://ceur-ws.org/Vol-552/#TobiasiRedmann> .
+
+<file:///home/yakun/workspace/ToolsEswc/dataset/http%3A//ceur-ws.org/Vol-552/%23Preface> a ns4:SessionEvent ;
+    ns4:partOf <http://ceur-ws.org/Vol-552/> ;
+    ns6:title "Preface" .
+
+<http://ceur-ws.org/Vol-552/> a ns4:Proceedings ;
+    ns4:hasPart <http://ceur-ws.org/Vol-552/#Buckingham_Shum-KF08>,
+        <http://ceur-ws.org/Vol-552/#KF-Patterns>,
+        <http://ceur-ws.org/Vol-552/#Karabeg-Lachica-KF08>,
+        <http://ceur-ws.org/Vol-552/#Park-KF08>,
+        <http://ceur-ws.org/Vol-552/#Sigel-KF08>,
+        <http://ceur-ws.org/Vol-552/#Tanaka-KF08>,
+        <http://ceur-ws.org/Vol-552/#Thomas-et-al-KF08> ;
+    ns4:hasSession <file:///home/yakun/workspace/ToolsEswc/dataset/http%3A//ceur-ws.org/Vol-552/%23Preface> ;
+    ns8:issued "2009-12-21T00:00:00+00:00"^^xsd:dateTime ;
+    ns3:presentedAt <http://ceur-ws.org/Vol-552/#event> ;
+    ns1:editor <http://ceur-ws.org/Vol-552/#DinoiKarabeg>,
+        <http://ceur-ws.org/Vol-552/#JackiPark> .
+

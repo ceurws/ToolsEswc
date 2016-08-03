@@ -1,0 +1,161 @@
+@prefix ns1: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns2: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns3: <http://xmlns.com/foaf/0.1/> .
+@prefix ns4: <http://www.w3.org/2002/07/owl#> .
+@prefix ns5: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns6: <http://purl.org/ontology/bibo/#> .
+@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://ceur-ws.org/Vol-725/#AlexiYakovlev> a ns3:Person ;
+    ns2:affiliation "" ;
+    ns4:sameAs <http://ceur-ws.org/persons/AlexiYakovlev> ;
+    ns3:name "Alex Yakovlev" .
+
+<http://ceur-ws.org/Vol-725/#GrzegorziRozenberg> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/GrzegorziRozenberg> ;
+    ns3:made <http://ceur-ws.org/Vol-725/#paper01> ;
+    ns3:name "Grzegorz Rozenberg" .
+
+<http://ceur-ws.org/Vol-725/#J%C3%B6rgiDesel> a ns3:Person ;
+    ns2:affiliation "" ;
+    ns4:sameAs <http://ceur-ws.org/persons/J%C3%B6rgiDesel> ;
+    ns3:name "Jörg Desel" .
+
+<http://ceur-ws.org/Vol-725/#JettyiKleijn> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/JettyiKleijn> ;
+    ns3:made <http://ceur-ws.org/Vol-725/#paper01> ;
+    ns3:name "Jetty Kleijn" .
+
+<http://ceur-ws.org/Vol-725/#JosepiCarmona> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/JosepiCarmona> ;
+    ns3:made <http://ceur-ws.org/Vol-725/#paper02> ;
+    ns3:name "Josep Carmona" .
+
+<http://ceur-ws.org/Vol-725/#LaurieiRicker> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/LaurieiRicker> ;
+    ns3:made <http://ceur-ws.org/Vol-725/#paper05> ;
+    ns3:name "Laurie Ricker" .
+
+<http://ceur-ws.org/Vol-725/#MaciejiKoutny> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/MaciejiKoutny> ;
+    ns3:made <http://ceur-ws.org/Vol-725/#paper01> ;
+    ns3:name "Maciej Koutny" .
+
+<http://ceur-ws.org/Vol-725/#MartaiPietkiewicz-Koutny> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/MartaiPietkiewicz-Koutny> ;
+    ns3:made <http://ceur-ws.org/Vol-725/#paper01> ;
+    ns3:name "Marta Pietkiewicz-Koutny" .
+
+<http://ceur-ws.org/Vol-725/#PhilippeiDarondeau> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/PhilippeiDarondeau> ;
+    ns3:made <http://ceur-ws.org/Vol-725/#paper05> ;
+    ns3:name "Philippe Darondeau" .
+
+<http://ceur-ws.org/Vol-725/#RobiniBergenthum> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/RobiniBergenthum> ;
+    ns3:made <http://ceur-ws.org/Vol-725/#paper06> ;
+    ns3:name "Robin Bergenthum" .
+
+<http://ceur-ws.org/Vol-725/#SebastianiMauser> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/SebastianiMauser> ;
+    ns3:made <http://ceur-ws.org/Vol-725/#paper06> ;
+    ns3:name "Sebastian Mauser" .
+
+<http://ceur-ws.org/Vol-725/#WilivanideriAalst> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/WilivanideriAalst> ;
+    ns3:made <http://ceur-ws.org/Vol-725/#paper07> ;
+    ns3:name "Wil van der Aalst" .
+
+<http://ceur-ws.org/Vol-725/#event> a ns5:WorkshopEvent ;
+    ns5:hasLocation <http://dbpedia.org/resource/United_Kingdom> ;
+    ns5:hasPart <http://ceur-ws.org/Vol-725/#part-ART> ;
+    ns5:isSubEventOf <http://ceur-ws.org/Vol-725/#conf> ;
+    ns8:beginsAtDatetime "2011-06-21T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:endsAtDatetime "2011-06-21T00:00:00+00:00"^^xsd:dateTime ;
+    ns1:license <http://choosealicense.com/licenses/no-license/> .
+
+<http://ceur-ws.org/Vol-725/#CarlosiNombre> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/CarlosiNombre> ;
+    ns3:made <http://ceur-ws.org/Vol-725/#paper03>,
+        <http://ceur-ws.org/Vol-725/#paper04> ;
+    ns3:name "Carlos Nombre" .
+
+<http://ceur-ws.org/Vol-725/#paper02> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-725/> ;
+    ns1:title "The Label Splitting Problem" ;
+    ns6:endPage 35 ;
+    ns6:numPages 14 ;
+    ns6:startPage 22 ;
+    ns2:author <http://ceur-ws.org/Vol-725/#JosepiCarmona> .
+
+<http://ceur-ws.org/Vol-725/#paper03> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-725/> ;
+    ns1:title "Aggregating Causal Runs into Workflow Nets" ;
+    ns6:endPage 51 ;
+    ns6:numPages 16 ;
+    ns6:startPage 36 ;
+    ns2:author <http://ceur-ws.org/Vol-725/#CarlosiNombre> .
+
+<http://ceur-ws.org/Vol-725/#paper04> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-725/> ;
+    ns1:title "Folding Partially Ordered Runs" ;
+    ns6:endPage 62 ;
+    ns6:numPages 11 ;
+    ns6:startPage 52 ;
+    ns2:author <http://ceur-ws.org/Vol-725/#CarlosiNombre> .
+
+<http://ceur-ws.org/Vol-725/#paper07> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-725/> ;
+    ns1:title "Do Petri Nets Provide the Right Representational Bias for Process Mining?" ;
+    ns6:endPage 94 ;
+    ns6:numPages 10 ;
+    ns6:startPage 85 ;
+    ns2:author <http://ceur-ws.org/Vol-725/#WilivanideriAalst> .
+
+<http://ceur-ws.org/Vol-725/#paper05> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-725/> ;
+    ns1:title "Towards Distributed Control of Discrete-Event Systems" ;
+    ns6:endPage 78 ;
+    ns6:numPages 16 ;
+    ns6:startPage 63 ;
+    ns2:author <http://ceur-ws.org/Vol-725/#LaurieiRicker>,
+        <http://ceur-ws.org/Vol-725/#PhilippeiDarondeau> .
+
+<http://ceur-ws.org/Vol-725/#paper06> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-725/> ;
+    ns1:title "Mining with User Interaction" ;
+    ns6:endPage 84 ;
+    ns6:numPages 6 ;
+    ns6:startPage 79 ;
+    ns2:author <http://ceur-ws.org/Vol-725/#RobiniBergenthum>,
+        <http://ceur-ws.org/Vol-725/#SebastianiMauser> .
+
+<http://ceur-ws.org/Vol-725/#paper01> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-725/> ;
+    ns1:title "Classifying Boolean Nets for Region-based Synthesis" ;
+    ns6:endPage 21 ;
+    ns6:numPages 17 ;
+    ns6:startPage 5 ;
+    ns2:author <http://ceur-ws.org/Vol-725/#GrzegorziRozenberg>,
+        <http://ceur-ws.org/Vol-725/#JettyiKleijn>,
+        <http://ceur-ws.org/Vol-725/#MaciejiKoutny>,
+        <http://ceur-ws.org/Vol-725/#MartaiPietkiewicz-Koutny> .
+
+<http://ceur-ws.org/Vol-725/> a ns5:Proceedings ;
+    ns5:hasPart <http://ceur-ws.org/Vol-725/#paper01>,
+        <http://ceur-ws.org/Vol-725/#paper02>,
+        <http://ceur-ws.org/Vol-725/#paper03>,
+        <http://ceur-ws.org/Vol-725/#paper04>,
+        <http://ceur-ws.org/Vol-725/#paper05>,
+        <http://ceur-ws.org/Vol-725/#paper06>,
+        <http://ceur-ws.org/Vol-725/#paper07> ;
+    ns7:issued "2011-06-16T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:presentedAt <http://ceur-ws.org/Vol-725/#event> ;
+    ns2:editor <http://ceur-ws.org/Vol-725/#AlexiYakovlev>,
+        <http://ceur-ws.org/Vol-725/#J%C3%B6rgiDesel> .
+

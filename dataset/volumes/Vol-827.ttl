@@ -1,0 +1,47 @@
+@prefix ns1: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns2: <http://xmlns.com/foaf/0.1/> .
+@prefix ns3: <http://purl.org/ontology/bibo/#> .
+@prefix ns4: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns5: <http://www.w3.org/2002/07/owl#> .
+@prefix ns6: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://ceur-ws.org/Vol-827/> a ns6:Proceedings ;
+    ns8:issued "2012-01-26T00:00:00+00:00"^^xsd:dateTime ;
+    ns3:presentedAt <http://ceur-ws.org/Vol-827/#event> ;
+    ns4:editor <http://ceur-ws.org/Vol-827/#JettyiKleijn>,
+        <http://ceur-ws.org/Vol-827/#Jo%C3%A3oiM.iFernandes>,
+        <http://ceur-ws.org/Vol-827/#RicardoiJ.iMachado>,
+        <http://ceur-ws.org/Vol-827/#SusannaiDonatelli> .
+
+<http://ceur-ws.org/Vol-827/#JettyiKleijn> a ns2:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/JettyiKleijn> ;
+    ns2:name "Jetty Kleijn" .
+
+<http://ceur-ws.org/Vol-827/#Jo%C3%A3oiM.iFernandes> a ns2:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/Jo%C3%A3oiM.iFernandes> ;
+    ns2:name "João M. Fernandes" .
+
+<http://ceur-ws.org/Vol-827/#RicardoiJ.iMachado> a ns2:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/RicardoiJ.iMachado> ;
+    ns2:name "Ricardo J. Machado" .
+
+<http://ceur-ws.org/Vol-827/#SusannaiDonatelli> a ns2:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/SusannaiDonatelli> ;
+    ns2:name "Susanna Donatelli" .
+
+<http://ceur-ws.org/Vol-827/#event> a ns6:WorkshopEvent ;
+    ns6:hasLocation <http://dbpedia.org/resource/Portugal> ;
+    ns6:hasPart <http://ceur-ws.org/Vol-827/#part-ACSD>,
+        <http://ceur-ws.org/Vol-827/#part-NETS>,
+        <http://ceur-ws.org/Vol-827/#part-PETRI> ;
+    ns6:isSubEventOf <http://ceur-ws.org/Vol-827/#conf> ;
+    ns7:beginsAtDatetime "2010-06-01T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:endsAtDatetime "2010-06-01T00:00:00+00:00"^^xsd:dateTime ;
+    ns1:license <http://choosealicense.com/licenses/no-license/> .
+

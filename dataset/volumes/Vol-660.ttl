@@ -1,0 +1,108 @@
+@prefix ns1: <http://xmlns.com/foaf/0.1/> .
+@prefix ns2: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns3: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns4: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns5: <http://www.w3.org/2002/07/owl#> .
+@prefix ns6: <http://purl.org/ontology/bibo/#> .
+@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://ceur-ws.org/Vol-660/#DanieliBertinshaw> a ns1:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/DanieliBertinshaw> ;
+    ns1:made <http://ceur-ws.org/Vol-660/#paper5> ;
+    ns1:name "Daniel Bertinshaw" .
+
+<http://ceur-ws.org/Vol-660/#HaishaniLiu> a ns1:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/HaishaniLiu> ;
+    ns1:made <http://ceur-ws.org/Vol-660/#paper6> ;
+    ns1:name "Haishan Liu" .
+
+<http://ceur-ws.org/Vol-660/#JeffiZ.iPan> a ns1:Person ;
+    ns4:affiliation "" ;
+    ns5:sameAs <http://ceur-ws.org/persons/JeffiZ.iPan> ;
+    ns1:name "Jeff Z. Pan" .
+
+<http://ceur-ws.org/Vol-660/#MilaniStankovic> a ns1:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/MilaniStankovic> ;
+    ns1:made <http://ceur-ws.org/Vol-660/#paper7> ;
+    ns1:name "Milan Stankovic" .
+
+<http://ceur-ws.org/Vol-660/#NunoiLopes> a ns1:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/NunoiLopes> ;
+    ns1:made <http://ceur-ws.org/Vol-660/#paper2> ;
+    ns1:name "Nuno Lopes" .
+
+<http://ceur-ws.org/Vol-660/#PeiqiniGu> a ns1:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/PeiqiniGu> ;
+    ns1:made <http://ceur-ws.org/Vol-660/#paper4> ;
+    ns1:name "Peiqin Gu" .
+
+<http://ceur-ws.org/Vol-660/#RogeriCastillo> a ns1:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/RogeriCastillo> ;
+    ns1:made <http://ceur-ws.org/Vol-660/#paper1> ;
+    ns1:name "Roger Castillo" .
+
+<http://ceur-ws.org/Vol-660/#XiniLiu> a ns1:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/XiniLiu> ;
+    ns1:made <http://ceur-ws.org/Vol-660/#paper3> ;
+    ns1:name "Xin Liu" .
+
+<http://ceur-ws.org/Vol-660/#event> a ns2:WorkshopEvent ;
+    ns2:hasLocation <http://dbpedia.org/resource/China> ;
+    ns2:hasPart <http://ceur-ws.org/Vol-660/#part-ISWC> ;
+    ns2:isSubEventOf <http://ceur-ws.org/Vol-660/#conf> ;
+    ns7:beginsAtDatetime "2010-11-09T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:endsAtDatetime "2010-11-09T00:00:00+00:00"^^xsd:dateTime ;
+    ns3:license <http://choosealicense.com/licenses/no-license/> .
+
+<http://ceur-ws.org/Vol-660/#paper1> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-660/> ;
+    ns3:title "RDFMatView: Indexing RDF Data for SPARQL Queries" ;
+    ns4:author <http://ceur-ws.org/Vol-660/#RogeriCastillo> .
+
+<http://ceur-ws.org/Vol-660/#paper2> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-660/> ;
+    ns3:title "Extensions of SPARQL towards Heterogeneous Sources and Domain Annotations" ;
+    ns4:author <http://ceur-ws.org/Vol-660/#NunoiLopes> .
+
+<http://ceur-ws.org/Vol-660/#paper3> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-660/> ;
+    ns3:title "A General Approach to Query the Web of Data" ;
+    ns4:author <http://ceur-ws.org/Vol-660/#XiniLiu> .
+
+<http://ceur-ws.org/Vol-660/#paper4> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-660/> ;
+    ns3:title "Causal Knowledge Modeling for Traditional Chinese Medicine using OWL 2" ;
+    ns4:author <http://ceur-ws.org/Vol-660/#PeiqiniGu> .
+
+<http://ceur-ws.org/Vol-660/#paper5> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-660/> ;
+    ns3:title "Using Multi-Agent Based Middleware to Implement a Distributed Peer-To-Peer Semantic Service Oriented Architecture" ;
+    ns4:author <http://ceur-ws.org/Vol-660/#DanieliBertinshaw> .
+
+<http://ceur-ws.org/Vol-660/#paper6> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-660/> ;
+    ns3:title "Towards Semantic Data Mining" ;
+    ns4:author <http://ceur-ws.org/Vol-660/#HaishaniLiu> .
+
+<http://ceur-ws.org/Vol-660/#paper7> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-660/> ;
+    ns3:title "Open Innovation and Semantic Web : Problem Solver Search on Linked Data" ;
+    ns4:author <http://ceur-ws.org/Vol-660/#MilaniStankovic> .
+
+<http://ceur-ws.org/Vol-660/> a ns2:Proceedings ;
+    ns2:hasPart <http://ceur-ws.org/Vol-660/#paper1>,
+        <http://ceur-ws.org/Vol-660/#paper2>,
+        <http://ceur-ws.org/Vol-660/#paper3>,
+        <http://ceur-ws.org/Vol-660/#paper4>,
+        <http://ceur-ws.org/Vol-660/#paper5>,
+        <http://ceur-ws.org/Vol-660/#paper6>,
+        <http://ceur-ws.org/Vol-660/#paper7> ;
+    ns8:issued "2010-10-27T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:presentedAt <http://ceur-ws.org/Vol-660/#event> ;
+    ns4:editor <http://ceur-ws.org/Vol-660/#JeffiZ.iPan> .
+

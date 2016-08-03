@@ -122,8 +122,8 @@ class BuildModel:
         self.swc = rdflib.Namespace('http://data.semanticweb.org/ns/swc/ontology/#')
         self.bibo = rdflib.Namespace('http://purl.org/ontology/bibo/#')
         self.dc = rdflib.Namespace('http://purl.org/dc/elements/1.1/#')
-        self.swrc = rdflib.Namespace('http://swrc.ontoware.org/ontology#')
-        self.time = rdflib.Namespace('http://purl.org/NET/c4dm/timeline.owl#')
+        self.swrc = rdflib.Namespace('http://swrc.ontoware.org/ontology/#')
+        self.time = rdflib.Namespace('http://purl.org/NET/c4dm/timeline.owl/#')
         self.purl = rdflib.Namespace('http://purl.org/dc/elements/1.1/#')
         self.rdfs = rdflib.Namespace('http://www.w3.org/2000/01/rdf-schema#')
         self.owl = rdflib.Namespace('http://www.w3.org/2002/07/owl#')
@@ -131,7 +131,7 @@ class BuildModel:
         self.location = 'http://dbpedia.org/resource/'
         self.tools = CommonTools()
 
-    def serialize(self, g, filename='seriazlied.ttl'):
+    def serialize(self, g, filename='1549-1551.ttl'):
         """serialize graph g
         :param g: rdf graph g
         :param filename: file name to serialize
@@ -146,7 +146,7 @@ class BuildModel:
         :param index_page: index page list
         :return:
         """
-        volume = rdflib.URIRef(page.get('volume'))
+        volume = rdflib.URIRef(page.get('volume')+'#event')
         g.add((volume, RDF.type, self.swc.WorkshopEvent))
         g.add((volume, self.swrc.hasLocation, rdflib.Literal(self.location + self.tools.clean_string(page['location'].split(',')[-1]))))
         g.add((volume, self.swrc.isSubEventOf, rdflib.URIRef(page.get('volume') + '#conf')))
@@ -184,10 +184,12 @@ class BuildModel:
         :return:
         """
         volume = page.get('volume').strip()
+        #proc = rdflib.URIRef(volume + 'proc')
         paper_list = []
         for paper in page.get('papers'):
             paper_uri = rdflib.URIRef(volume + '#' + self.tools.clean_string(paper[0]).split('.')[0])
             g.add((paper_uri, RDF.type, self.swc.Paper))
+            #g.add((paper_uri, self.swc.partOf, rdflib.URIRef(proc)))
             g.add((paper_uri, self.swc.partOf, rdflib.URIRef(volume)))
             g.add((paper_uri, self.purl.title, rdflib.Literal(self.tools.clean_string(paper[1]))))
             for authors in paper[2: -1]:
@@ -230,7 +232,8 @@ class BuildModel:
         :return:
         """
         volume = page.get('volume').strip()
-        proc = rdflib.URIRef(volume + 'proc')
+        #proc = rdflib.URIRef(volume + 'proc')
+        proc = rdflib.URIRef(volume)
 
         g.add((proc, RDF.type, self.swc.Proceedings))
 
@@ -238,7 +241,7 @@ class BuildModel:
             g.add((proc, self.swc.hasPart, paper_uri))
 
         # present at
-        g.add((proc, self.bibo.presentedAt, rdflib.URIRef(volume)))
+        g.add((proc, self.bibo.presentedAt, rdflib.URIRef(volume+'#event')))
 
         # issued
         g.add((proc, self.issued.issued, rdflib.Literal(dateparser.parse(page.get('issue_date')), datatype=XSD.date)))

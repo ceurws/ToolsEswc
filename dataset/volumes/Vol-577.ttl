@@ -1,0 +1,35 @@
+@prefix ns1: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns2: <http://www.w3.org/2002/07/owl#> .
+@prefix ns3: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns4: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns5: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns6: <http://purl.org/ontology/bibo/#> .
+@prefix ns7: <http://xmlns.com/foaf/0.1/> .
+@prefix ns8: <http://swrc.ontoware.org/ontology/#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://ceur-ws.org/Vol-577/> a ns4:Proceedings ;
+    ns5:issued "2010-04-28T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:presentedAt <http://ceur-ws.org/Vol-577/#event> ;
+    ns8:editor <http://ceur-ws.org/Vol-577/#MarkusiN%C3%BCttgens>,
+        <http://ceur-ws.org/Vol-577/#OliveriThomas> .
+
+<http://ceur-ws.org/Vol-577/#MarkusiN%C3%BCttgens> a ns7:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/MarkusiN%C3%BCttgens> ;
+    ns7:name "Markus Nüttgens" .
+
+<http://ceur-ws.org/Vol-577/#OliveriThomas> a ns7:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/OliveriThomas> ;
+    ns7:name "Oliver Thomas" .
+
+<http://ceur-ws.org/Vol-577/#event> a ns4:WorkshopEvent ;
+    ns4:hasLocation <http://dbpedia.org/resource/Austria> ;
+    ns4:hasPart <http://ceur-ws.org/Vol-577/#part-DLM> ;
+    ns4:isSubEventOf <http://ceur-ws.org/Vol-577/#conf> ;
+    ns1:beginsAtDatetime "2010-03-26T00:00:00+00:00"^^xsd:dateTime ;
+    ns1:endsAtDatetime "2010-03-26T00:00:00+00:00"^^xsd:dateTime ;
+    ns3:license <http://choosealicense.com/licenses/no-license/> .
+

@@ -1,0 +1,201 @@
+@prefix ns1: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns2: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns3: <http://www.w3.org/2002/07/owl#> .
+@prefix ns4: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns5: <http://xmlns.com/foaf/0.1/> .
+@prefix ns6: <http://purl.org/ontology/bibo/#> .
+@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://ceur-ws.org/Vol-330/#DavidiToth> a ns5:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/DavidiToth> ;
+    ns5:made <http://ceur-ws.org/Vol-330/#paper5> ;
+    ns5:name "David Toth" .
+
+<http://ceur-ws.org/Vol-330/#JanaiKocibova> a ns5:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/JanaiKocibova> ;
+    ns5:made <http://ceur-ws.org/Vol-330/#paper6> ;
+    ns5:name "Jana Kocibova" .
+
+<http://ceur-ws.org/Vol-330/#KareliRichta> a ns5:Person ;
+    ns6:place <http://dbpedia.org/resource/Czech_Republic> ;
+    ns1:affiliation "Department of Computer Science and Engineering, FEE, Czech Technical University in Prague, Prague" ;
+    ns3:sameAs <http://ceur-ws.org/persons/KareliRichta> ;
+    ns5:name "Karel Richta" .
+
+<http://ceur-ws.org/Vol-330/#KaterinaiOpocenska> a ns5:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/KaterinaiOpocenska> ;
+    ns5:made <http://ceur-ws.org/Vol-330/#paper1> ;
+    ns5:name "Katerina Opocenska" .
+
+<http://ceur-ws.org/Vol-330/#MartiniNecasky> a ns5:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/MartiniNecasky> ;
+    ns5:made <http://ceur-ws.org/Vol-330/#paper2> ;
+    ns5:name "Martin Necasky" .
+
+<http://ceur-ws.org/Vol-330/#MichaliKopecky> a ns5:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/MichaliKopecky> ;
+    ns5:made <http://ceur-ws.org/Vol-330/#paper1> ;
+    ns5:name "Michal Kopecky" .
+
+<http://ceur-ws.org/Vol-330/#MichaliKratky> a ns5:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/MichaliKratky> ;
+    ns5:made <http://ceur-ws.org/Vol-330/#Invited1> ;
+    ns5:name "Michal Kratky" .
+
+<http://ceur-ws.org/Vol-330/#PaveliLoupal> a ns5:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/PaveliLoupal> ;
+    ns5:made <http://ceur-ws.org/Vol-330/#paper3> ;
+    ns5:name "Pavel Loupal" .
+
+<http://ceur-ws.org/Vol-330/#PaveliMoravec> a ns5:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/PaveliMoravec> ;
+    ns5:made <http://ceur-ws.org/Vol-330/#paper6> ;
+    ns5:name "Pavel Moravec" .
+
+<http://ceur-ws.org/Vol-330/#PaveliStrnad> a ns5:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/PaveliStrnad> ;
+    ns5:made <http://ceur-ws.org/Vol-330/#paper3> ;
+    ns5:name "Pavel Strnad" .
+
+<http://ceur-ws.org/Vol-330/#PeteriVojtas> a ns5:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/PeteriVojtas> ;
+    ns5:made <http://ceur-ws.org/Vol-330/#Invited3> ;
+    ns5:name "Peter Vojtas" .
+
+<http://ceur-ws.org/Vol-330/#RadimiBaca> a ns5:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/RadimiBaca> ;
+    ns5:made <http://ceur-ws.org/Vol-330/#Invited1> ;
+    ns5:name "Radim Baca" .
+
+<http://ceur-ws.org/Vol-330/#event> a ns4:WorkshopEvent ;
+    ns4:hasLocation <http://dbpedia.org/resource/Czech_Republic> ;
+    ns4:hasPart <http://ceur-ws.org/Vol-330/#part-DATESO> ;
+    ns4:isSubEventOf <http://ceur-ws.org/Vol-330/#conf> ;
+    ns8:beginsAtDatetime "2008-04-16T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:endsAtDatetime "2008-04-18T00:00:00+00:00"^^xsd:dateTime ;
+    ns2:license <http://choosealicense.com/licenses/no-license/> ;
+    rdfs:seeAlso <http://ceur-ws.org/Vol-129/#event>,
+        <http://ceur-ws.org/Vol-176/#event>,
+        <http://ceur-ws.org/Vol-235/#event>,
+        <http://ceur-ws.org/Vol-98/#event> .
+
+<http://ceur-ws.org/Vol-330/#Invited2> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-330/> ;
+    ns2:title "Vector-Oriented Retrieval in XML Data Collections" ;
+    ns6:section <file:///home/yakun/workspace/ToolsEswc/dataset/http%3A//ceur-ws.org/Vol-330/%23InvitedLectures> ;
+    ns1:author <http://ceur-ws.org/Vol-330/#JaroslaviPokorny> .
+
+<http://ceur-ws.org/Vol-330/#Invited3> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-330/> ;
+    ns2:title "Decathlon, Conflicting Objectives and User Preference Querying" ;
+    ns6:section <file:///home/yakun/workspace/ToolsEswc/dataset/http%3A//ceur-ws.org/Vol-330/%23InvitedLectures> ;
+    ns1:author <http://ceur-ws.org/Vol-330/#PeteriVojtas> .
+
+<http://ceur-ws.org/Vol-330/#JaniPlatos> a ns5:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/JaniPlatos> ;
+    ns5:made <http://ceur-ws.org/Vol-330/#paper6>,
+        <http://ceur-ws.org/Vol-330/#paper7> ;
+    ns5:name "Jan Platos" .
+
+<http://ceur-ws.org/Vol-330/#JaroslaviPokorny> a ns5:Person ;
+    ns6:place <http://dbpedia.org/resource/Czech_Republic> ;
+    ns1:affiliation "Department of Software Engineering, MFF, Charles University, Prague" ;
+    ns3:sameAs <http://ceur-ws.org/persons/JaroslaviPokorny> ;
+    ns5:made <http://ceur-ws.org/Vol-330/#Invited2> ;
+    ns5:name "Jaroslav Pokorny" .
+
+<http://ceur-ws.org/Vol-330/#PaveliKromer> a ns5:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/PaveliKromer> ;
+    ns5:made <http://ceur-ws.org/Vol-330/#paper6>,
+        <http://ceur-ws.org/Vol-330/#paper7> ;
+    ns5:name "Pavel Kromer" .
+
+<http://ceur-ws.org/Vol-330/#paper2> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-330/> ;
+    ns2:title "Conceptual Model Based Normalization of XML Views" ;
+    ns6:section <file:///home/yakun/workspace/ToolsEswc/dataset/http%3A//ceur-ws.org/Vol-330/%23FullPapers> ;
+    ns1:author <http://ceur-ws.org/Vol-330/#MartiniNecasky> .
+
+<http://ceur-ws.org/Vol-330/#paper5> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-330/> ;
+    ns2:title "Database Engineering from the Category Theory Viewpoint" ;
+    ns6:section <file:///home/yakun/workspace/ToolsEswc/dataset/http%3A//ceur-ws.org/Vol-330/%23FullPapers> ;
+    ns1:author <http://ceur-ws.org/Vol-330/#DavidiToth> .
+
+<http://ceur-ws.org/Vol-330/#Invited1> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-330/> ;
+    ns2:title "Towards Cost-based Optimizations of Twig Content-based Queries" ;
+    ns6:section <file:///home/yakun/workspace/ToolsEswc/dataset/http%3A//ceur-ws.org/Vol-330/%23InvitedLectures> ;
+    ns1:author <http://ceur-ws.org/Vol-330/#MichaliKratky>,
+        <http://ceur-ws.org/Vol-330/#RadimiBaca> .
+
+<http://ceur-ws.org/Vol-330/#VaclaviSnasel> a ns5:Person ;
+    ns1:affiliation "" ;
+    ns3:sameAs <http://ceur-ws.org/persons/VaclaviSnasel> ;
+    ns5:made <http://ceur-ws.org/Vol-330/#paper6>,
+        <http://ceur-ws.org/Vol-330/#paper7> ;
+    ns5:name "Vaclav Snasel" .
+
+<http://ceur-ws.org/Vol-330/#paper1> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-330/> ;
+    ns2:title "Incox - A language for XML Integrity Constraints Description" ;
+    ns6:section <file:///home/yakun/workspace/ToolsEswc/dataset/http%3A//ceur-ws.org/Vol-330/%23FullPapers> ;
+    ns1:author <http://ceur-ws.org/Vol-330/#KaterinaiOpocenska>,
+        <http://ceur-ws.org/Vol-330/#MichaliKopecky> .
+
+<http://ceur-ws.org/Vol-330/#paper3> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-330/> ;
+    ns2:title "Using taDOM Locking Protocol in a Functional XML Update Language" ;
+    ns6:section <file:///home/yakun/workspace/ToolsEswc/dataset/http%3A//ceur-ws.org/Vol-330/%23FullPapers> ;
+    ns1:author <http://ceur-ws.org/Vol-330/#PaveliLoupal>,
+        <http://ceur-ws.org/Vol-330/#PaveliStrnad> .
+
+<file:///home/yakun/workspace/ToolsEswc/dataset/http%3A//ceur-ws.org/Vol-330/%23InvitedLectures> a ns4:SessionEvent ;
+    ns4:partOf <http://ceur-ws.org/Vol-330/> ;
+    ns2:title "Invited Lectures" .
+
+<http://ceur-ws.org/Vol-330/#paper7> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-330/> ;
+    ns2:title "Developing Genetic Algorithms for Boolean Matrix Factorization" ;
+    ns6:section <file:///home/yakun/workspace/ToolsEswc/dataset/http%3A//ceur-ws.org/Vol-330/%23FullPapers> ;
+    ns1:author <http://ceur-ws.org/Vol-330/#JaniPlatos>,
+        <http://ceur-ws.org/Vol-330/#PaveliKromer>,
+        <http://ceur-ws.org/Vol-330/#VaclaviSnasel> .
+
+<http://ceur-ws.org/Vol-330/#paper6> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-330/> ;
+    ns2:title "Tensor Decomposition for 3D Bars Problem" ;
+    ns6:section <file:///home/yakun/workspace/ToolsEswc/dataset/http%3A//ceur-ws.org/Vol-330/%23FullPapers> ;
+    ns1:author <http://ceur-ws.org/Vol-330/#JanaiKocibova>,
+        <http://ceur-ws.org/Vol-330/#JaniPlatos>,
+        <http://ceur-ws.org/Vol-330/#PaveliKromer>,
+        <http://ceur-ws.org/Vol-330/#PaveliMoravec>,
+        <http://ceur-ws.org/Vol-330/#VaclaviSnasel> .
+
+<file:///home/yakun/workspace/ToolsEswc/dataset/http%3A//ceur-ws.org/Vol-330/%23FullPapers> a ns4:SessionEvent ;
+    ns4:partOf <http://ceur-ws.org/Vol-330/> ;
+    ns2:title "Full Papers" .
+
+<http://ceur-ws.org/Vol-330/> a ns4:Proceedings ;
+    ns4:hasPart <http://ceur-ws.org/Vol-330/#Invited1>,
+        <http://ceur-ws.org/Vol-330/#Invited2>,
+        <http://ceur-ws.org/Vol-330/#Invited3>,
+        <http://ceur-ws.org/Vol-330/#paper1>,
+        <http://ceur-ws.org/Vol-330/#paper2>,
+        <http://ceur-ws.org/Vol-330/#paper3>,
+        <http://ceur-ws.org/Vol-330/#paper5>,
+        <http://ceur-ws.org/Vol-330/#paper6>,
+        <http://ceur-ws.org/Vol-330/#paper7> ;
+    ns4:hasSession <file:///home/yakun/workspace/ToolsEswc/dataset/http%3A//ceur-ws.org/Vol-330/%23FullPapers>,
+        <file:///home/yakun/workspace/ToolsEswc/dataset/http%3A//ceur-ws.org/Vol-330/%23InvitedLectures> ;
+    ns7:issued "2008-05-20T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:presentedAt <http://ceur-ws.org/Vol-330/#event> ;
+    ns1:editor <http://ceur-ws.org/Vol-330/#JaroslaviPokorny>,
+        <http://ceur-ws.org/Vol-330/#KareliRichta>,
+        <http://ceur-ws.org/Vol-330/#VaclaviSnasel> .
+

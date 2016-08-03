@@ -1,0 +1,113 @@
+@prefix ns1: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns2: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns3: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns4: <http://purl.org/ontology/bibo/#> .
+@prefix ns5: <http://www.w3.org/2002/07/owl#> .
+@prefix ns6: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns7: <http://xmlns.com/foaf/0.1/> .
+@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://ceur-ws.org/Vol-544/#AndreaiSplendiani> a ns7:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/AndreaiSplendiani> ;
+    ns7:made <http://ceur-ws.org/Vol-544/#splendiani_swui2009> ;
+    ns7:name "Andrea Splendiani" .
+
+<http://ceur-ws.org/Vol-544/#ChrisiJiRawlings> a ns7:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/ChrisiJiRawlings> ;
+    ns7:made <http://ceur-ws.org/Vol-544/#splendiani_swui2009> ;
+    ns7:name "Chris J Rawlings" .
+
+<http://ceur-ws.org/Vol-544/#DuaneiDegler> a ns7:Person ;
+    ns2:affiliation "" ;
+    ns5:sameAs <http://ceur-ws.org/persons/DuaneiDegler> ;
+    ns7:name "Duane Degler" .
+
+<http://ceur-ws.org/Vol-544/#IaniDickinson> a ns7:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/IaniDickinson> ;
+    ns7:made <http://ceur-ws.org/Vol-544/#dickinson_swui2009> ;
+    ns7:name "Ian Dickinson" .
+
+<http://ceur-ws.org/Vol-544/#JenniferiGolbeck> a ns7:Person ;
+    ns4:place <http://dbpedia.org/resource/United_States> ;
+    ns2:affiliation "University of Maryland, College Park, MD" ;
+    ns5:sameAs <http://ceur-ws.org/persons/JenniferiGolbeck> ;
+    ns7:name "Jennifer Golbeck" .
+
+<http://ceur-ws.org/Vol-544/#LloydiRutledge> a ns7:Person ;
+    ns4:place <http://dbpedia.org/resource/Netherlands> ;
+    ns2:affiliation "Open Universiteit Nederland, Amsterdam" ;
+    ns5:sameAs <http://ceur-ws.org/persons/LloydiRutledge> ;
+    ns7:name "Lloyd Rutledge" .
+
+<http://ceur-ws.org/Vol-544/#MartiniKuiper> a ns7:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/MartiniKuiper> ;
+    ns7:made <http://ceur-ws.org/Vol-544/#splendiani_swui2009> ;
+    ns7:name "Martin Kuiper" .
+
+<http://ceur-ws.org/Vol-544/#MaxiL.iWilson> a ns7:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/MaxiL.iWilson> ;
+    ns7:made <http://ceur-ws.org/Vol-544/#wilson_swui2009> ;
+    ns7:name "Max L. Wilson" .
+
+<http://ceur-ws.org/Vol-544/#event> a ns1:WorkshopEvent ;
+    ns1:hasLocation <http://dbpedia.org/resource/United_States> ;
+    ns1:hasPart <http://ceur-ws.org/Vol-544/#part-SWUI> ;
+    ns1:isSubEventOf <http://ceur-ws.org/Vol-544/#conf> ;
+    ns3:beginsAtDatetime "2009-10-25T00:00:00+00:00"^^xsd:dateTime ;
+    ns3:endsAtDatetime "2009-10-25T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:license <http://choosealicense.com/licenses/no-license/> ;
+    rdfs:seeAlso <http://ceur-ws.org/Vol-543/#event> .
+
+<file:///home/yakun/workspace/ToolsEswc/dataset/http%3A//ceur-ws.org/Vol-544/%23Scalability%26Heterogeneity> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-544/> ;
+    ns6:title "Scalability & Heterogeneity" .
+
+<http://ceur-ws.org/Vol-544/#dickinson_swui2009> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-544/> ;
+    ns6:title "In Favour of (more) Intelligence in the Semantic UI" ;
+    ns4:section <file:///home/yakun/workspace/ToolsEswc/dataset/http%3A//ceur-ws.org/Vol-544/%23Adaptability%26Context> ;
+    ns2:author <http://ceur-ws.org/Vol-544/#IaniDickinson> .
+
+<http://ceur-ws.org/Vol-544/#mcischraefel> a ns7:Person ;
+    ns4:place <http://dbpedia.org/resource/United_Kingdom> ;
+    ns2:affiliation "University of Southampton, Southampton" ;
+    ns5:sameAs <http://ceur-ws.org/persons/mcischraefel> ;
+    ns7:made <http://ceur-ws.org/Vol-544/#wilson_swui2009> ;
+    ns7:name "mc schraefel" .
+
+<file:///home/yakun/workspace/ToolsEswc/dataset/http%3A//ceur-ws.org/Vol-544/%23Adaptability%26Context> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-544/> ;
+    ns6:title "Adaptability & Context" .
+
+<http://ceur-ws.org/Vol-544/#wilson_swui2009> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-544/> ;
+    ns6:title "Exploring Heterogeneous Datasets from Different Searcher Perspectives" ;
+    ns4:section <file:///home/yakun/workspace/ToolsEswc/dataset/http%3A//ceur-ws.org/Vol-544/%23Adaptability%26Context> ;
+    ns2:author <http://ceur-ws.org/Vol-544/#MaxiL.iWilson>,
+        <http://ceur-ws.org/Vol-544/#mcischraefel> .
+
+<http://ceur-ws.org/Vol-544/#splendiani_swui2009> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-544/> ;
+    ns6:title "Toward a New Paradigm for User Interaction on the Semantic Web to Support Life Sciences Investigation" ;
+    ns4:section <file:///home/yakun/workspace/ToolsEswc/dataset/http%3A//ceur-ws.org/Vol-544/%23Scalability%26Heterogeneity> ;
+    ns2:author <http://ceur-ws.org/Vol-544/#AndreaiSplendiani>,
+        <http://ceur-ws.org/Vol-544/#ChrisiJiRawlings>,
+        <http://ceur-ws.org/Vol-544/#MartiniKuiper> .
+
+<http://ceur-ws.org/Vol-544/> a ns1:Proceedings ;
+    ns1:hasPart <http://ceur-ws.org/Vol-544/#dickinson_swui2009>,
+        <http://ceur-ws.org/Vol-544/#splendiani_swui2009>,
+        <http://ceur-ws.org/Vol-544/#wilson_swui2009> ;
+    ns1:hasSession <file:///home/yakun/workspace/ToolsEswc/dataset/http%3A//ceur-ws.org/Vol-544/%23Adaptability%26Context>,
+        <file:///home/yakun/workspace/ToolsEswc/dataset/http%3A//ceur-ws.org/Vol-544/%23Scalability%26Heterogeneity> ;
+    ns8:issued "2009-11-30T00:00:00+00:00"^^xsd:dateTime ;
+    ns4:presentedAt <http://ceur-ws.org/Vol-544/#event> ;
+    ns2:editor <http://ceur-ws.org/Vol-544/#DuaneiDegler>,
+        <http://ceur-ws.org/Vol-544/#JenniferiGolbeck>,
+        <http://ceur-ws.org/Vol-544/#LloydiRutledge>,
+        <http://ceur-ws.org/Vol-544/#mcischraefel> .
+

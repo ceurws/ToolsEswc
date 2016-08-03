@@ -1,0 +1,55 @@
+@prefix ns1: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns2: <http://xmlns.com/foaf/0.1/> .
+@prefix ns3: <http://purl.org/ontology/bibo/#> .
+@prefix ns4: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns5: <http://www.w3.org/2002/07/owl#> .
+@prefix ns6: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns8: <http://purl.org/dc/elements/1.1/#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://ceur-ws.org/Vol-1297/> a ns6:Proceedings ;
+    ns6:hasPart <http://ceur-ws.org/Vol-1297/#paperX1> ;
+    ns7:issued "2014-11-18T00:00:00+00:00"^^xsd:dateTime ;
+    ns3:presentedAt <http://ceur-ws.org/Vol-1297/#event> ;
+    ns1:editor <http://ceur-ws.org/Vol-1297/#LidiaiKalmykova>,
+        <http://ceur-ws.org/Vol-1297/#MikhailiKogalovsky> .
+
+<http://ceur-ws.org/Vol-1297/#MikhailiKogalovsky> a ns2:Person ;
+    ns1:affiliation "" ;
+    ns5:sameAs <http://ceur-ws.org/persons/MikhailiKogalovsky> ;
+    ns2:name "Mikhail Kogalovsky" .
+
+<http://ceur-ws.org/Vol-1297/#event> a ns6:WorkshopEvent ;
+    ns6:hasLocation <http://dbpedia.org/resource/Russia> ;
+    ns6:hasPart <http://ceur-ws.org/Vol-1297/#part-RCDL> ;
+    ns6:isSubEventOf <http://ceur-ws.org/Vol-1297/#conf> ;
+    ns4:beginsAtDatetime "2014-10-13T00:00:00+00:00"^^xsd:dateTime ;
+    ns4:endsAtDatetime "2014-10-16T00:00:00+00:00"^^xsd:dateTime ;
+    rdfs:seeAlso <http://ceur-ws.org/Vol-1108/#event>,
+        <http://ceur-ws.org/Vol-803/#event>,
+        <http://ceur-ws.org/Vol-934/#event> .
+
+<http://ceur-ws.org/Vol-1297/#metadataiincl.ibibliographicidataipublishediunder> a ns2:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/metadataiincl.ibibliographicidataipublishediunder> ;
+    ns2:made <http://ceur-ws.org/Vol-1297/#paperX1> ;
+    ns2:name "metadata incl. bibliographic data published under" .
+
+<http://ceur-ws.org/Vol-1297/#LidiaiKalmykova> a ns2:Person ;
+    ns1:affiliation "" ;
+    ns5:sameAs <http://ceur-ws.org/persons/LidiaiKalmykova> ;
+    ns2:made <http://ceur-ws.org/Vol-1297/#paperX1> ;
+    ns2:name "Lidia Kalmykova" .
+
+<http://ceur-ws.org/Vol-1297/#paperX1> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1297/> ;
+    ns8:title "The whole proceedings can also be downloaded as a single file (" ;
+    ns3:endPage 9 ;
+    ns3:numPages 4 ;
+    ns3:startPage 6 ;
+    ns1:author <http://ceur-ws.org/Vol-1297/#LidiaiKalmykova>,
+        <http://ceur-ws.org/Vol-1297/#metadataiincl.ibibliographicidataipublishediunder> .
+

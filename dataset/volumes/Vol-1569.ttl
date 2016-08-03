@@ -1,0 +1,112 @@
+@prefix ns1: <http://purl.org/ontology/bibo/#> .
+@prefix ns2: <http://www.w3.org/2002/07/owl#> .
+@prefix ns3: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns4: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns5: <http://xmlns.com/foaf/0.1/> .
+@prefix ns6: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns7: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://ceur-ws.org/Vol-1569/#C.iDavidiEmele> a ns5:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/C.iDavidiEmele> ;
+    ns5:made <http://ceur-ws.org/Vol-1569/#paper5> ;
+    ns5:name "C. David Emele" .
+
+<http://ceur-ws.org/Vol-1569/#HenryiHexmoor> a ns5:Person ;
+    ns7:affiliation "" ;
+    ns2:sameAs <http://ceur-ws.org/persons/HenryiHexmoor> ;
+    ns5:name "Henry Hexmoor" .
+
+<http://ceur-ws.org/Vol-1569/#Mariuszi%C5%BBytniewski> a ns5:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/Mariuszi%C5%BBytniewski> ;
+    ns5:made <http://ceur-ws.org/Vol-1569/#paper2> ;
+    ns5:name "Mariusz Żytniewski" .
+
+<http://ceur-ws.org/Vol-1569/#NaderiHanna> a ns5:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/NaderiHanna> ;
+    ns5:made <http://ceur-ws.org/Vol-1569/#paper4> ;
+    ns5:name "Nader Hanna" .
+
+<http://ceur-ws.org/Vol-1569/#RinoiFalcone> a ns5:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/RinoiFalcone> ;
+    ns5:made <http://ceur-ws.org/Vol-1569/#paper3> ;
+    ns5:name "Rino Falcone" .
+
+<http://ceur-ws.org/Vol-1569/#event> a ns3:WorkshopEvent ;
+    ns3:hasLocation <http://dbpedia.org/resource/Turkey> ;
+    ns3:hasPart <http://ceur-ws.org/Vol-1569/#part-COOS> ;
+    ns3:isSubEventOf <http://ceur-ws.org/Vol-1569/#conf> ;
+    ns6:beginsAtDatetime "2015-05-04T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:endsAtDatetime "2015-05-04T00:00:00+00:00"^^xsd:dateTime .
+
+<http://ceur-ws.org/Vol-1569/#SaadiAlqithami> a ns5:Person ;
+    ns7:affiliation "" ;
+    ns2:sameAs <http://ceur-ws.org/persons/SaadiAlqithami> ;
+    ns5:made <http://ceur-ws.org/Vol-1569/#paper1> ;
+    ns5:name "Saad Alqithami" .
+
+<http://ceur-ws.org/Vol-1569/#paper1> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1569/> ;
+    ns4:title "Network Organization Paradigm: Synergistic Effect on the Productivity of a Collaborative Organization" ;
+    ns1:endPage 9 ;
+    ns1:numPages 9 ;
+    ns1:section <file:///home/yakun/workspace/ToolsEswc/dataset/http%3A//ceur-ws.org/Vol-1569/%23WorkshopPapers> ;
+    ns1:startPage 1 ;
+    ns7:author <http://ceur-ws.org/Vol-1569/#SaadiAlqithami> .
+
+<http://ceur-ws.org/Vol-1569/#paper2> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1569/> ;
+    ns4:title "Integration of Knowledge Management Systems and Business Processes using Multi-Agent Systems" ;
+    ns1:endPage 18 ;
+    ns1:numPages 9 ;
+    ns1:section <file:///home/yakun/workspace/ToolsEswc/dataset/http%3A//ceur-ws.org/Vol-1569/%23WorkshopPapers> ;
+    ns1:startPage 10 ;
+    ns7:author <http://ceur-ws.org/Vol-1569/#Mariuszi%C5%BBytniewski> .
+
+<http://ceur-ws.org/Vol-1569/#paper3> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1569/> ;
+    ns4:title "Valorizing Prejudice in MAS: A Computational Model" ;
+    ns1:endPage 27 ;
+    ns1:numPages 9 ;
+    ns1:section <file:///home/yakun/workspace/ToolsEswc/dataset/http%3A//ceur-ws.org/Vol-1569/%23WorkshopPapers> ;
+    ns1:startPage 19 ;
+    ns7:author <http://ceur-ws.org/Vol-1569/#RinoiFalcone> .
+
+<http://ceur-ws.org/Vol-1569/#paper4> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1569/> ;
+    ns4:title "Do Birds of a Feather Work Better Together? The Impact of Virtual Agent Personality on a Shared Mental Model with Humans during Collaboration" ;
+    ns1:endPage 37 ;
+    ns1:numPages 10 ;
+    ns1:section <file:///home/yakun/workspace/ToolsEswc/dataset/http%3A//ceur-ws.org/Vol-1569/%23WorkshopPapers> ;
+    ns1:startPage 28 ;
+    ns7:author <http://ceur-ws.org/Vol-1569/#NaderiHanna> .
+
+<http://ceur-ws.org/Vol-1569/#paper5> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1569/> ;
+    ns4:title "ADOVA: Anomaly Detection in Online and Virtual spAces" ;
+    ns1:endPage 41 ;
+    ns1:numPages 4 ;
+    ns1:section <file:///home/yakun/workspace/ToolsEswc/dataset/http%3A//ceur-ws.org/Vol-1569/%23WorkshopPapers> ;
+    ns1:startPage 38 ;
+    ns7:author <http://ceur-ws.org/Vol-1569/#C.iDavidiEmele> .
+
+<file:///home/yakun/workspace/ToolsEswc/dataset/http%3A//ceur-ws.org/Vol-1569/%23WorkshopPapers> a ns3:SessionEvent ;
+    ns3:partOf <http://ceur-ws.org/Vol-1569/> ;
+    ns4:title "Workshop Papers" .
+
+<http://ceur-ws.org/Vol-1569/> a ns3:Proceedings ;
+    ns3:hasPart <http://ceur-ws.org/Vol-1569/#paper1>,
+        <http://ceur-ws.org/Vol-1569/#paper2>,
+        <http://ceur-ws.org/Vol-1569/#paper3>,
+        <http://ceur-ws.org/Vol-1569/#paper4>,
+        <http://ceur-ws.org/Vol-1569/#paper5> ;
+    ns3:hasSession <file:///home/yakun/workspace/ToolsEswc/dataset/http%3A//ceur-ws.org/Vol-1569/%23WorkshopPapers> ;
+    ns8:issued "2016-03-19T00:00:00+00:00"^^xsd:dateTime ;
+    ns1:presentedAt <http://ceur-ws.org/Vol-1569/#event> ;
+    ns7:editor <http://ceur-ws.org/Vol-1569/#HenryiHexmoor>,
+        <http://ceur-ws.org/Vol-1569/#SaadiAlqithami> .
+

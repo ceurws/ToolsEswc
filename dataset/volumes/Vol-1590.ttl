@@ -1,0 +1,155 @@
+@prefix ns1: <http://purl.org/ontology/bibo/#> .
+@prefix ns2: <http://www.w3.org/2002/07/owl#> .
+@prefix ns3: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns4: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns5: <http://xmlns.com/foaf/0.1/> .
+@prefix ns6: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns7: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://ceur-ws.org/Vol-1590/#Bla%C5%BEenkaiDivjak> a ns5:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/Bla%C5%BEenkaiDivjak> ;
+    ns5:made <http://ceur-ws.org/Vol-1590/#paper-05> ;
+    ns5:name "Blaženka Divjak" .
+
+<http://ceur-ws.org/Vol-1590/#DannyiY.T.iLiu> a ns5:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/DannyiY.T.iLiu> ;
+    ns5:made <http://ceur-ws.org/Vol-1590/#paper-01> ;
+    ns5:name "Danny Y.T. Liu" .
+
+<http://ceur-ws.org/Vol-1590/#JohniFritz> a ns5:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/JohniFritz> ;
+    ns5:made <http://ceur-ws.org/Vol-1590/#paper-03> ;
+    ns5:name "John Fritz" .
+
+<http://ceur-ws.org/Vol-1590/#TimothyiMcKay> a ns5:Person ;
+    ns1:place <http://dbpedia.org/resource/United_States> ;
+    ns3:affiliation "University of Michigan" ;
+    ns2:sameAs <http://ceur-ws.org/persons/TimothyiMcKay> ;
+    ns5:name "Timothy McKay" .
+
+<http://ceur-ws.org/Vol-1590/#WaiiYeeiWong> a ns5:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/WaiiYeeiWong> ;
+    ns5:made <http://ceur-ws.org/Vol-1590/#paper-02> ;
+    ns5:name "Wai Yee Wong" .
+
+<http://ceur-ws.org/Vol-1590/#event> a ns6:WorkshopEvent ;
+    ns6:hasLocation <http://dbpedia.org/resource/United_Kingdom> ;
+    ns6:hasPart <http://ceur-ws.org/Vol-1590/#part-PCLA> ;
+    ns6:isSubEventOf <http://ceur-ws.org/Vol-1590/#conf> ;
+    ns8:beginsAtDatetime "2016-04-25T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:endsAtDatetime "2016-04-25T00:00:00+00:00"^^xsd:dateTime .
+
+<http://ceur-ws.org/Vol-1590/#JimiGreer> a ns5:Person ;
+    ns1:place <http://dbpedia.org/resource/Canada> ;
+    ns3:affiliation "University of Saskatchewan" ;
+    ns2:sameAs <http://ceur-ws.org/persons/JimiGreer> ;
+    ns5:made <http://ceur-ws.org/Vol-1590/#paper-06> ;
+    ns5:name "Jim Greer" .
+
+<http://ceur-ws.org/Vol-1590/#MarcoiMolinaro> a ns5:Person ;
+    ns1:place <http://dbpedia.org/resource/United_States> ;
+    ns3:affiliation "University of California – Davis" ;
+    ns2:sameAs <http://ceur-ws.org/persons/MarcoiMolinaro> ;
+    ns5:made <http://ceur-ws.org/Vol-1590/#paper-07> ;
+    ns5:name "Marco Molinaro" .
+
+<http://ceur-ws.org/Vol-1590/#XavieriOchoa> a ns5:Person ;
+    ns1:place <http://dbpedia.org/resource/Ecuador> ;
+    ns3:affiliation "Escuela Superior Politécnica del Litoral" ;
+    ns2:sameAs <http://ceur-ws.org/persons/XavieriOchoa> ;
+    ns5:made <http://ceur-ws.org/Vol-1590/#paper-04> ;
+    ns5:name "Xavier Ochoa" .
+
+<http://ceur-ws.org/Vol-1590/#paper-01> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1590/> ;
+    ns7:title "Empowering Instructors Through Customizable Collection and Analyses of Actionable Information" ;
+    ns1:endPage 9 ;
+    ns1:numPages 7 ;
+    ns1:section <file:///home/yakun/workspace/ToolsEswc/dataset/http%3A//ceur-ws.org/Vol-1590/%23Session1> ;
+    ns1:startPage 3 ;
+    ns3:author <http://ceur-ws.org/Vol-1590/#DannyiY.T.iLiu> .
+
+<http://ceur-ws.org/Vol-1590/#paper-02> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1590/> ;
+    ns7:title "Using a Risk Management Approach in Analytics for Curriculum and Program Quality Improvement" ;
+    ns1:endPage 14 ;
+    ns1:numPages 5 ;
+    ns1:section <file:///home/yakun/workspace/ToolsEswc/dataset/http%3A//ceur-ws.org/Vol-1590/%23Session1> ;
+    ns1:startPage 10 ;
+    ns3:author <http://ceur-ws.org/Vol-1590/#WaiiYeeiWong> .
+
+<http://ceur-ws.org/Vol-1590/#paper-03> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1590/> ;
+    ns7:title "LMS Course Design As Learning Analytics Variable" ;
+    ns1:endPage 19 ;
+    ns1:numPages 5 ;
+    ns1:section <file:///home/yakun/workspace/ToolsEswc/dataset/http%3A//ceur-ws.org/Vol-1590/%23Session1> ;
+    ns1:startPage 15 ;
+    ns3:author <http://ceur-ws.org/Vol-1590/#JohniFritz> .
+
+<http://ceur-ws.org/Vol-1590/#paper-04> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1590/> ;
+    ns7:title "Simple Metrics for Curriculum Analytics" ;
+    ns1:endPage 26 ;
+    ns1:numPages 7 ;
+    ns1:section <file:///home/yakun/workspace/ToolsEswc/dataset/http%3A//ceur-ws.org/Vol-1590/%23Session1> ;
+    ns1:startPage 20 ;
+    ns3:author <http://ceur-ws.org/Vol-1590/#XavieriOchoa> .
+
+<http://ceur-ws.org/Vol-1590/#paper-05> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1590/> ;
+    ns7:title "Assessment Analytics for Peer-Assessment: A Model and Implementation" ;
+    ns1:endPage 31 ;
+    ns1:numPages 5 ;
+    ns1:section <file:///home/yakun/workspace/ToolsEswc/dataset/http%3A//ceur-ws.org/Vol-1590/%23Session2> ;
+    ns1:startPage 27 ;
+    ns3:author <http://ceur-ws.org/Vol-1590/#Bla%C5%BEenkaiDivjak> .
+
+<http://ceur-ws.org/Vol-1590/#paper-06> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1590/> ;
+    ns7:title "Data-Driven Programmatic Change at Universities: What Works and How" ;
+    ns1:endPage 35 ;
+    ns1:numPages 4 ;
+    ns1:section <file:///home/yakun/workspace/ToolsEswc/dataset/http%3A//ceur-ws.org/Vol-1590/%23Session2> ;
+    ns1:startPage 32 ;
+    ns3:author <http://ceur-ws.org/Vol-1590/#JimiGreer> .
+
+<http://ceur-ws.org/Vol-1590/#paper-07> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1590/> ;
+    ns7:title "Promoting Instructor and Department Action via Simple, Actionable Tools and Analyses" ;
+    ns1:endPage 40 ;
+    ns1:numPages 5 ;
+    ns1:section <file:///home/yakun/workspace/ToolsEswc/dataset/http%3A//ceur-ws.org/Vol-1590/%23Session2> ;
+    ns1:startPage 36 ;
+    ns3:author <http://ceur-ws.org/Vol-1590/#MarcoiMolinaro> .
+
+<file:///home/yakun/workspace/ToolsEswc/dataset/http%3A//ceur-ws.org/Vol-1590/%23Session2> a ns6:SessionEvent ;
+    ns6:partOf <http://ceur-ws.org/Vol-1590/> ;
+    ns7:title "Session 2" .
+
+<file:///home/yakun/workspace/ToolsEswc/dataset/http%3A//ceur-ws.org/Vol-1590/%23Session1> a ns6:SessionEvent ;
+    ns6:partOf <http://ceur-ws.org/Vol-1590/> ;
+    ns7:title "Session 1" .
+
+<http://ceur-ws.org/Vol-1590/> a ns6:Proceedings ;
+    ns6:hasPart <http://ceur-ws.org/Vol-1590/#paper-01>,
+        <http://ceur-ws.org/Vol-1590/#paper-02>,
+        <http://ceur-ws.org/Vol-1590/#paper-03>,
+        <http://ceur-ws.org/Vol-1590/#paper-04>,
+        <http://ceur-ws.org/Vol-1590/#paper-05>,
+        <http://ceur-ws.org/Vol-1590/#paper-06>,
+        <http://ceur-ws.org/Vol-1590/#paper-07> ;
+    ns6:hasSession <file:///home/yakun/workspace/ToolsEswc/dataset/http%3A//ceur-ws.org/Vol-1590/%23Session1>,
+        <file:///home/yakun/workspace/ToolsEswc/dataset/http%3A//ceur-ws.org/Vol-1590/%23Session2> ;
+    ns4:issued "2016-05-19T00:00:00+00:00"^^xsd:dateTime ;
+    ns1:presentedAt <http://ceur-ws.org/Vol-1590/#event> ;
+    ns3:editor <http://ceur-ws.org/Vol-1590/#JimiGreer>,
+        <http://ceur-ws.org/Vol-1590/#MarcoiMolinaro>,
+        <http://ceur-ws.org/Vol-1590/#TimothyiMcKay>,
+        <http://ceur-ws.org/Vol-1590/#XavieriOchoa> .
+

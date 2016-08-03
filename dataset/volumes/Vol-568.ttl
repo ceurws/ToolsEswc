@@ -1,0 +1,36 @@
+@prefix ns1: <http://www.w3.org/2002/07/owl#> .
+@prefix ns2: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns3: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns4: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns5: <http://xmlns.com/foaf/0.1/> .
+@prefix ns6: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns7: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns8: <http://purl.org/ontology/bibo/#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://ceur-ws.org/Vol-568/> a ns2:Proceedings ;
+    ns6:issued "2010-03-18T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:presentedAt <http://ceur-ws.org/Vol-568/#event> ;
+    ns3:editor <http://ceur-ws.org/Vol-568/#AnnetteiteniTeije>,
+        <http://ceur-ws.org/Vol-568/#HeineriStuckenschmidt> .
+
+<http://ceur-ws.org/Vol-568/#AnnetteiteniTeije> a ns5:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/AnnetteiteniTeije> ;
+    ns5:name "Annette ten Teije" .
+
+<http://ceur-ws.org/Vol-568/#HeineriStuckenschmidt> a ns5:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/HeineriStuckenschmidt> ;
+    ns5:name "Heiner Stuckenschmidt" .
+
+<http://ceur-ws.org/Vol-568/#event> a ns2:WorkshopEvent ;
+    ns2:hasLocation <http://dbpedia.org/resource/Greece> ;
+    ns2:hasPart <http://ceur-ws.org/Vol-568/#part-ESWC> ;
+    ns2:isSubEventOf <http://ceur-ws.org/Vol-568/#conf> ;
+    ns4:beginsAtDatetime "2010-05-01T00:00:00+00:00"^^xsd:dateTime ;
+    ns4:endsAtDatetime "2010-05-01T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:license <http://choosealicense.com/licenses/no-license/> ;
+    rdfs:seeAlso <http://ceur-ws.org/Vol-367/#event> .
+

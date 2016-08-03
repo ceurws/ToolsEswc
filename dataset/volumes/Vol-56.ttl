@@ -1,0 +1,54 @@
+@prefix ns1: <http://purl.org/ontology/bibo/#> .
+@prefix ns2: <http://xmlns.com/foaf/0.1/> .
+@prefix ns3: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns4: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns5: <http://www.w3.org/2002/07/owl#> .
+@prefix ns6: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns7: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://ceur-ws.org/Vol-56/> a ns6:Proceedings ;
+    ns8:issued "2002-05-01T00:00:00+00:00"^^xsd:dateTime ;
+    ns1:presentedAt <http://ceur-ws.org/Vol-56/#event> ;
+    ns3:editor <http://ceur-ws.org/Vol-56/#DietmariSaupe>,
+        <http://ceur-ws.org/Vol-56/#FrithjofiKruggel>,
+        <http://ceur-ws.org/Vol-56/#HeinziHandels>,
+        <http://ceur-ws.org/Vol-56/#Herausgegebenivon>,
+        <http://ceur-ws.org/Vol-56/#MonikaiMeiler>,
+        <http://ceur-ws.org/Vol-56/#ThomasiLehmann> .
+
+<http://ceur-ws.org/Vol-56/#DietmariSaupe> a ns2:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/DietmariSaupe> ;
+    ns2:name "Dietmar Saupe" .
+
+<http://ceur-ws.org/Vol-56/#FrithjofiKruggel> a ns2:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/FrithjofiKruggel> ;
+    ns2:name "Frithjof Kruggel" .
+
+<http://ceur-ws.org/Vol-56/#HeinziHandels> a ns2:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/HeinziHandels> ;
+    ns2:name "Heinz Handels" .
+
+<http://ceur-ws.org/Vol-56/#Herausgegebenivon> a ns2:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/Herausgegebenivon> ;
+    ns2:name "Herausgegeben von" .
+
+<http://ceur-ws.org/Vol-56/#MonikaiMeiler> a ns2:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/MonikaiMeiler> ;
+    ns2:name "Monika Meiler" .
+
+<http://ceur-ws.org/Vol-56/#ThomasiLehmann> a ns2:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/ThomasiLehmann> ;
+    ns2:name "Thomas Lehmann" .
+
+<http://ceur-ws.org/Vol-56/#event> a ns6:WorkshopEvent ;
+    ns6:hasPart <http://ceur-ws.org/Vol-56/#part-ws> ;
+    ns6:isSubEventOf <http://ceur-ws.org/Vol-56/#conf> ;
+    ns4:beginsAtDatetime "2002-03-12T00:00:00+00:00"^^xsd:dateTime ;
+    ns4:endsAtDatetime "2002-03-12T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:license <http://choosealicense.com/licenses/no-license/> .
+

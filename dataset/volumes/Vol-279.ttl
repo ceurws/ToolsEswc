@@ -1,0 +1,95 @@
+@prefix ns1: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns2: <http://purl.org/ontology/bibo/#> .
+@prefix ns3: <http://xmlns.com/foaf/0.1/> .
+@prefix ns4: <http://www.w3.org/2002/07/owl#> .
+@prefix ns5: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns6: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://ceur-ws.org/Vol-279/#Johannes-GerhardiSchute> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/Johannes-GerhardiSchute> ;
+    ns3:made <http://ceur-ws.org/Vol-279/#paper3> ;
+    ns3:name "Johannes-Gerhard Schute" .
+
+<http://ceur-ws.org/Vol-279/#MathiasiUslar> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/MathiasiUslar> ;
+    ns3:made <http://ceur-ws.org/Vol-279/#paper2> ;
+    ns3:name "Mathias Uslar" .
+
+<http://ceur-ws.org/Vol-279/#MatthiasiRohr> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/MatthiasiRohr> ;
+    ns3:made <http://ceur-ws.org/Vol-279/#paper3> ;
+    ns3:name "Matthias Rohr" .
+
+<http://ceur-ws.org/Vol-279/#PeteriHaas> a ns3:Person ;
+    ns2:place <http://dbpedia.org/resource/Germany> ;
+    ns5:affiliation "Fachhochschule Dortmund, Fachbereich Informatik, D-44227 Dortmund" ;
+    ns4:sameAs <http://ceur-ws.org/persons/PeteriHaas> ;
+    ns3:name "Peter Haas" .
+
+<http://ceur-ws.org/Vol-279/#RalphiBobrik> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/RalphiBobrik> ;
+    ns3:made <http://ceur-ws.org/Vol-279/#paper1> ;
+    ns3:name "Ralph Bobrik" .
+
+<http://ceur-ws.org/Vol-279/#RichardiLenz> a ns3:Person ;
+    ns5:affiliation "" ;
+    ns4:sameAs <http://ceur-ws.org/persons/RichardiLenz> ;
+    ns3:name "Richard Lenz" .
+
+<http://ceur-ws.org/Vol-279/#ThiloiFocke> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/ThiloiFocke> ;
+    ns3:made <http://ceur-ws.org/Vol-279/#paper3> ;
+    ns3:name "Thilo Focke" .
+
+<http://ceur-ws.org/Vol-279/#ThomasiBauer> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/ThomasiBauer> ;
+    ns3:made <http://ceur-ws.org/Vol-279/#paper1> ;
+    ns3:name "Thomas Bauer" .
+
+<http://ceur-ws.org/Vol-279/#WilhelmiHasselbring> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/WilhelmiHasselbring> ;
+    ns3:made <http://ceur-ws.org/Vol-279/#paper3> ;
+    ns3:name "Wilhelm Hasselbring" .
+
+<http://ceur-ws.org/Vol-279/#event> a ns1:WorkshopEvent ;
+    ns1:hasLocation <http://dbpedia.org/resource/Germany> ;
+    ns1:hasPart <http://ceur-ws.org/Vol-279/#part-EAI> ;
+    ns1:isSubEventOf <http://ceur-ws.org/Vol-279/#conf> ;
+    ns7:beginsAtDatetime "2006-12-01T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:endsAtDatetime "2006-12-01T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:license <http://choosealicense.com/licenses/no-license/> .
+
+<http://ceur-ws.org/Vol-279/#paper2> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-279/> ;
+    ns6:title "Das CIM als Integrationsstandard für Utilities" ;
+    ns5:author <http://ceur-ws.org/Vol-279/#MathiasiUslar> .
+
+<http://ceur-ws.org/Vol-279/> a ns1:Proceedings ;
+    ns1:hasPart <http://ceur-ws.org/Vol-279/#paper1>,
+        <http://ceur-ws.org/Vol-279/#paper2>,
+        <http://ceur-ws.org/Vol-279/#paper3> ;
+    ns8:issued "2007-09-13T00:00:00+00:00"^^xsd:dateTime ;
+    ns2:presentedAt <http://ceur-ws.org/Vol-279/#event> ;
+    ns5:editor <http://ceur-ws.org/Vol-279/#PeteriHaas>,
+        <http://ceur-ws.org/Vol-279/#RichardiLenz> .
+
+<http://ceur-ws.org/Vol-279/#paper1> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-279/> ;
+    ns6:title "Applikationsübergreifendes Monitoring von Geschäftsprozessen" ;
+    ns5:author <http://ceur-ws.org/Vol-279/#RalphiBobrik>,
+        <http://ceur-ws.org/Vol-279/#ThomasiBauer> .
+
+<http://ceur-ws.org/Vol-279/#paper3> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-279/> ;
+    ns6:title "Ein Vorgehensmodell für Performance-Monitoring von Informationssystemlandschaften" ;
+    ns5:author <http://ceur-ws.org/Vol-279/#Johannes-GerhardiSchute>,
+        <http://ceur-ws.org/Vol-279/#MatthiasiRohr>,
+        <http://ceur-ws.org/Vol-279/#ThiloiFocke>,
+        <http://ceur-ws.org/Vol-279/#WilhelmiHasselbring> .
+

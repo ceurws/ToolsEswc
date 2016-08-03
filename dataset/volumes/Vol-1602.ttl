@@ -1,0 +1,157 @@
+@prefix ns1: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns2: <http://purl.org/ontology/bibo/#> .
+@prefix ns3: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns4: <http://xmlns.com/foaf/0.1/> .
+@prefix ns5: <http://www.w3.org/2002/07/owl#> .
+@prefix ns6: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns7: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://ceur-ws.org/Vol-1602/#CarmeloiArdito> a ns4:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/CarmeloiArdito> ;
+    ns4:made <http://ceur-ws.org/Vol-1602/#paper1> ;
+    ns4:name "Carmelo Ardito" .
+
+<http://ceur-ws.org/Vol-1602/#FabioiSorrentino> a ns4:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/FabioiSorrentino> ;
+    ns4:made <http://ceur-ws.org/Vol-1602/#paper6> ;
+    ns4:name "Fabio Sorrentino" .
+
+<http://ceur-ws.org/Vol-1602/#FrancescoiGianni> a ns4:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/FrancescoiGianni> ;
+    ns4:made <http://ceur-ws.org/Vol-1602/#paper3> ;
+    ns4:name "Francesco Gianni" .
+
+<http://ceur-ws.org/Vol-1602/#GualtieroiVolpe> a ns4:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/GualtieroiVolpe> ;
+    ns4:made <http://ceur-ws.org/Vol-1602/#paper9> ;
+    ns4:name "Gualtiero Volpe" .
+
+<http://ceur-ws.org/Vol-1602/#JulianiDax> a ns4:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/JulianiDax> ;
+    ns4:made <http://ceur-ws.org/Vol-1602/#paper2> ;
+    ns4:name "Julian Dax" .
+
+<http://ceur-ws.org/Vol-1602/#MartiniRisseeuw> a ns4:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/MartiniRisseeuw> ;
+    ns4:made <http://ceur-ws.org/Vol-1602/#paper5> ;
+    ns4:name "Martin Risseeuw" .
+
+<http://ceur-ws.org/Vol-1602/#SandraiTrullemans> a ns4:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/SandraiTrullemans> ;
+    ns4:made <http://ceur-ws.org/Vol-1602/#paper7> ;
+    ns4:name "Sandra Trullemans" .
+
+<http://ceur-ws.org/Vol-1602/#SimoneiMora> a ns4:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/SimoneiMora> ;
+    ns4:made <http://ceur-ws.org/Vol-1602/#paper4> ;
+    ns4:name "Simone Mora" .
+
+<http://ceur-ws.org/Vol-1602/#StefanoiValtolina> a ns4:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/StefanoiValtolina> ;
+    ns4:made <http://ceur-ws.org/Vol-1602/#paper8> ;
+    ns4:name "Stefano Valtolina" .
+
+<http://ceur-ws.org/Vol-1602/#Universit%C3%A0idegliiStudiidiiBariiAldoiMoro> a ns4:Person ;
+    ns2:place <http://dbpedia.org/resource/Italy> ;
+    ns1:affiliation "Bari" ;
+    ns5:sameAs <http://ceur-ws.org/persons/Universit%C3%A0idegliiStudiidiiBariiAldoiMoro> ;
+    ns4:name "Università degli Studi di Bari Aldo Moro" .
+
+<http://ceur-ws.org/Vol-1602/#event> a ns3:WorkshopEvent ;
+    ns3:hasLocation <http://dbpedia.org/resource/Italy> ;
+    ns3:hasPart <http://ceur-ws.org/Vol-1602/#part-SERVE> ;
+    ns3:isSubEventOf <http://ceur-ws.org/Vol-1602/#conf> ;
+    ns6:beginsAtDatetime "2016-06-07T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:endsAtDatetime "2016-06-07T00:00:00+00:00"^^xsd:dateTime .
+
+<http://ceur-ws.org/Vol-1602/#paper1> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1602/> ;
+    ns7:title "A Visual Paradigm for Defining Task Automation" ;
+    ns2:endPage 6 ;
+    ns2:numPages 6 ;
+    ns2:startPage 1 ;
+    ns1:author <http://ceur-ws.org/Vol-1602/#CarmeloiArdito> .
+
+<http://ceur-ws.org/Vol-1602/#paper2> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1602/> ;
+    ns7:title "Remotino: Supporting End-User Developers in Prototyping Embedded Devices" ;
+    ns2:endPage 11 ;
+    ns2:numPages 5 ;
+    ns2:startPage 7 ;
+    ns1:author <http://ceur-ws.org/Vol-1602/#JulianiDax> .
+
+<http://ceur-ws.org/Vol-1602/#paper3> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1602/> ;
+    ns7:title "IoT for Smart City Learning: Towards Requirements for an Authoring Tool" ;
+    ns2:endPage 18 ;
+    ns2:numPages 7 ;
+    ns2:startPage 12 ;
+    ns1:author <http://ceur-ws.org/Vol-1602/#FrancescoiGianni> .
+
+<http://ceur-ws.org/Vol-1602/#paper4> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1602/> ;
+    ns7:title "Tiles Cards: a Card-based Design Game for Smart Objects Ecosystems" ;
+    ns2:endPage 24 ;
+    ns2:numPages 6 ;
+    ns2:startPage 19 ;
+    ns1:author <http://ceur-ws.org/Vol-1602/#SimoneiMora> .
+
+<http://ceur-ws.org/Vol-1602/#paper5> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1602/> ;
+    ns7:title "An Authoring Environment for Smart Objects in Museums: the meSch Approach" ;
+    ns2:endPage 30 ;
+    ns2:numPages 6 ;
+    ns2:startPage 25 ;
+    ns1:author <http://ceur-ws.org/Vol-1602/#MartiniRisseeuw> .
+
+<http://ceur-ws.org/Vol-1602/#paper6> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1602/> ;
+    ns7:title "Internet of T(eachi)ngs: Assessing Children's Learning in the IoT Era" ;
+    ns2:endPage 35 ;
+    ns2:numPages 5 ;
+    ns2:startPage 31 ;
+    ns1:author <http://ceur-ws.org/Vol-1602/#FabioiSorrentino> .
+
+<http://ceur-ws.org/Vol-1602/#paper7> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1602/> ;
+    ns7:title "A Multi-layered Context Modelling Approach for End Users, Expert Users and Programmers" ;
+    ns2:endPage 41 ;
+    ns2:numPages 6 ;
+    ns2:startPage 36 ;
+    ns1:author <http://ceur-ws.org/Vol-1602/#SandraiTrullemans> .
+
+<http://ceur-ws.org/Vol-1602/#paper8> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1602/> ;
+    ns7:title "End-User Development for Lifelogging and eWellness" ;
+    ns2:endPage 48 ;
+    ns2:numPages 7 ;
+    ns2:startPage 42 ;
+    ns1:author <http://ceur-ws.org/Vol-1602/#StefanoiValtolina> .
+
+<http://ceur-ws.org/Vol-1602/#paper9> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1602/> ;
+    ns7:title "Designing Multimodal Interactive Systems using EyesWeb XMI" ;
+    ns2:endPage 56 ;
+    ns2:numPages 8 ;
+    ns2:startPage 49 ;
+    ns1:author <http://ceur-ws.org/Vol-1602/#GualtieroiVolpe> .
+
+<http://ceur-ws.org/Vol-1602/> a ns3:Proceedings ;
+    ns3:hasPart <http://ceur-ws.org/Vol-1602/#paper1>,
+        <http://ceur-ws.org/Vol-1602/#paper2>,
+        <http://ceur-ws.org/Vol-1602/#paper3>,
+        <http://ceur-ws.org/Vol-1602/#paper4>,
+        <http://ceur-ws.org/Vol-1602/#paper5>,
+        <http://ceur-ws.org/Vol-1602/#paper6>,
+        <http://ceur-ws.org/Vol-1602/#paper7>,
+        <http://ceur-ws.org/Vol-1602/#paper8>,
+        <http://ceur-ws.org/Vol-1602/#paper9> ;
+    ns8:issued "2016-06-03T00:00:00+00:00"^^xsd:dateTime ;
+    ns2:presentedAt <http://ceur-ws.org/Vol-1602/#event> ;
+    ns1:editor <http://ceur-ws.org/Vol-1602/#Universit%C3%A0idegliiStudiidiiBariiAldoiMoro> .
+

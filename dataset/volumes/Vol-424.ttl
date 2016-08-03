@@ -1,0 +1,136 @@
+@prefix ns1: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns2: <http://www.w3.org/2002/07/owl#> .
+@prefix ns3: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns4: <http://purl.org/ontology/bibo/#> .
+@prefix ns5: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns6: <http://xmlns.com/foaf/0.1/> .
+@prefix ns7: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://ceur-ws.org/Vol-424/#AkilaiSarirete> a ns6:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/AkilaiSarirete> ;
+    ns6:made <http://ceur-ws.org/Vol-424/#paper5> ;
+    ns6:name "Akila Sarirete" .
+
+<http://ceur-ws.org/Vol-424/#ChristianiGlahn> a ns6:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/ChristianiGlahn> ;
+    ns6:made <http://ceur-ws.org/Vol-424/#paper2> ;
+    ns6:name "Christian Glahn" .
+
+<http://ceur-ws.org/Vol-424/#LindaiCasta%C3%B1eda> a ns6:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/LindaiCasta%C3%B1eda> ;
+    ns6:made <http://ceur-ws.org/Vol-424/#paper1> ;
+    ns6:name "Linda Castañeda" .
+
+<http://ceur-ws.org/Vol-424/#MaaikeiHarbers> a ns6:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/MaaikeiHarbers> ;
+    ns6:made <http://ceur-ws.org/Vol-424/#paper4> ;
+    ns6:name "Maaike Harbers" .
+
+<http://ceur-ws.org/Vol-424/#NicolasiWeber> a ns6:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/NicolasiWeber> ;
+    ns6:made <http://ceur-ws.org/Vol-424/#paper6> ;
+    ns6:name "Nicolas Weber" .
+
+<http://ceur-ws.org/Vol-424/#Val%C3%A9rieiEmin> a ns6:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/Val%C3%A9rieiEmin> ;
+    ns6:made <http://ceur-ws.org/Vol-424/#paper3> ;
+    ns6:name "Valérie Emin" .
+
+<http://ceur-ws.org/Vol-424/#event> a ns1:WorkshopEvent ;
+    ns1:hasLocation <http://dbpedia.org/resource/Netherlands> ;
+    ns1:hasPart <http://ceur-ws.org/Vol-424/#part-EC-TEL>,
+        <http://ceur-ws.org/Vol-424/#part-PROLEARN> ;
+    ns1:isSubEventOf <http://ceur-ws.org/Vol-424/#conf> ;
+    ns5:beginsAtDatetime "2008-09-17T00:00:00+00:00"^^xsd:dateTime ;
+    ns5:endsAtDatetime "2008-09-17T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:license <http://choosealicense.com/licenses/no-license/> ;
+    rdfs:seeAlso <http://ceur-ws.org/Vol-213/#event>,
+        <http://ceur-ws.org/Vol-280/#event>,
+        <http://ceur-ws.org/Vol-288/#event> .
+
+<http://ceur-ws.org/Vol-424/#DenisiGillet> a ns6:Person ;
+    ns4:place <http://dbpedia.org/resource/Switzerland> ;
+    ns3:affiliation "Swiss Federal Institute of Technology" ;
+    ns2:sameAs <http://ceur-ws.org/persons/DenisiGillet> ;
+    ns6:made <http://ceur-ws.org/Vol-424/#preface> ;
+    ns6:name "Denis Gillet" .
+
+<http://ceur-ws.org/Vol-424/#KatherineiMaillet> a ns6:Person ;
+    ns4:place <http://dbpedia.org/resource/France> ;
+    ns3:affiliation "Institut Telecom Sud Paris" ;
+    ns2:sameAs <http://ceur-ws.org/persons/KatherineiMaillet> ;
+    ns6:made <http://ceur-ws.org/Vol-424/#preface> ;
+    ns6:name "Katherine Maillet" .
+
+<http://ceur-ws.org/Vol-424/#RalfiKlamma> a ns6:Person ;
+    ns4:place <http://dbpedia.org/resource/Germany> ;
+    ns3:affiliation "RWTH Aachen University" ;
+    ns2:sameAs <http://ceur-ws.org/persons/RalfiKlamma> ;
+    ns6:made <http://ceur-ws.org/Vol-424/#preface> ;
+    ns6:name "Ralf Klamma" .
+
+<http://ceur-ws.org/Vol-424/#TomaziKlobucar> a ns6:Person ;
+    ns4:place <http://dbpedia.org/resource/Euro_gold_and_silver_commemorative_coins> ;
+    ns3:affiliation "Institut Jozef Stefan" ;
+    ns2:sameAs <http://ceur-ws.org/persons/TomaziKlobucar> ;
+    ns6:made <http://ceur-ws.org/Vol-424/#preface> ;
+    ns6:name "Tomaz Klobucar" .
+
+<http://ceur-ws.org/Vol-424/#paper1> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-424/> ;
+    ns7:title "e-Learning in Higher Education: Searching for a Model of Curriculum Analysis" ;
+    ns3:author <http://ceur-ws.org/Vol-424/#LindaiCasta%C3%B1eda> .
+
+<http://ceur-ws.org/Vol-424/#paper2> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-424/> ;
+    ns7:title "Supporting Reflection in Informal Learning" ;
+    ns3:author <http://ceur-ws.org/Vol-424/#ChristianiGlahn> .
+
+<http://ceur-ws.org/Vol-424/#paper3> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-424/> ;
+    ns7:title "A Goal-oriented Authoring Approach to Design, Share and Reuse Learning Scenarios" ;
+    ns3:author <http://ceur-ws.org/Vol-424/#Val%C3%A9rieiEmin> .
+
+<http://ceur-ws.org/Vol-424/#paper4> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-424/> ;
+    ns7:title "Self-Explaining Agents in Virtual Training" ;
+    ns3:author <http://ceur-ws.org/Vol-424/#MaaikeiHarbers> .
+
+<http://ceur-ws.org/Vol-424/#paper5> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-424/> ;
+    ns7:title "Knowledge Management in the Communities of Practice of e-Learning" ;
+    ns3:author <http://ceur-ws.org/Vol-424/#AkilaiSarirete> .
+
+<http://ceur-ws.org/Vol-424/#paper6> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-424/> ;
+    ns7:title "The Evolution of Social Ontologies" ;
+    ns3:author <http://ceur-ws.org/Vol-424/#NicolasiWeber> .
+
+<http://ceur-ws.org/Vol-424/#preface> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-424/> ;
+    ns7:title "Preface" ;
+    ns3:author <http://ceur-ws.org/Vol-424/#DenisiGillet>,
+        <http://ceur-ws.org/Vol-424/#KatherineiMaillet>,
+        <http://ceur-ws.org/Vol-424/#RalfiKlamma>,
+        <http://ceur-ws.org/Vol-424/#TomaziKlobucar> .
+
+<http://ceur-ws.org/Vol-424/> a ns1:Proceedings ;
+    ns1:hasPart <http://ceur-ws.org/Vol-424/#paper1>,
+        <http://ceur-ws.org/Vol-424/#paper2>,
+        <http://ceur-ws.org/Vol-424/#paper3>,
+        <http://ceur-ws.org/Vol-424/#paper4>,
+        <http://ceur-ws.org/Vol-424/#paper5>,
+        <http://ceur-ws.org/Vol-424/#paper6>,
+        <http://ceur-ws.org/Vol-424/#preface> ;
+    ns8:issued "2008-12-09T00:00:00+00:00"^^xsd:dateTime ;
+    ns4:presentedAt <http://ceur-ws.org/Vol-424/#event> ;
+    ns3:editor <http://ceur-ws.org/Vol-424/#DenisiGillet>,
+        <http://ceur-ws.org/Vol-424/#KatherineiMaillet>,
+        <http://ceur-ws.org/Vol-424/#RalfiKlamma>,
+        <http://ceur-ws.org/Vol-424/#TomaziKlobucar> .
+

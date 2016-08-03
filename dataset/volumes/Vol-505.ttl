@@ -1,0 +1,118 @@
+@prefix ns1: <http://xmlns.com/foaf/0.1/> .
+@prefix ns2: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns3: <http://www.w3.org/2002/07/owl#> .
+@prefix ns4: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns5: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns6: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns8: <http://purl.org/ontology/bibo/#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://ceur-ws.org/Vol-505/#ClaudiaiWerner> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/ClaudiaiWerner> ;
+    ns1:made <http://ceur-ws.org/Vol-505/#iwseco09-2Werner> ;
+    ns1:name "Claudia Werner" .
+
+<http://ceur-ws.org/Vol-505/#HazelineiU.iAsuncion> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/HazelineiU.iAsuncion> ;
+    ns1:made <http://ceur-ws.org/Vol-505/#iwseco09-3AlspaughAcunsionScacchi> ;
+    ns1:name "Hazeline U. Asuncion" .
+
+<http://ceur-ws.org/Vol-505/#SamueliFricker> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/SamueliFricker> ;
+    ns1:made <http://ceur-ws.org/Vol-505/#iwseco09-4Fricker> ;
+    ns1:name "Samuel Fricker" .
+
+<http://ceur-ws.org/Vol-505/#ThomasiA.iAlspaugh> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/ThomasiA.iAlspaugh> ;
+    ns1:made <http://ceur-ws.org/Vol-505/#iwseco09-3AlspaughAcunsionScacchi> ;
+    ns1:name "Thomas A. Alspaugh" .
+
+<http://ceur-ws.org/Vol-505/#WaltiScacchi> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/WaltiScacchi> ;
+    ns1:made <http://ceur-ws.org/Vol-505/#iwseco09-3AlspaughAcunsionScacchi> ;
+    ns1:name "Walt Scacchi" .
+
+<http://ceur-ws.org/Vol-505/#event> a ns5:WorkshopEvent ;
+    ns5:hasLocation <http://dbpedia.org/resource/United_States> ;
+    ns5:hasPart <http://ceur-ws.org/Vol-505/#part-IWSECO> ;
+    ns5:isSubEventOf <http://ceur-ws.org/Vol-505/#conf> ;
+    ns7:beginsAtDatetime "2009-09-27T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:endsAtDatetime "2009-09-27T00:00:00+00:00"^^xsd:dateTime ;
+    ns2:license <http://choosealicense.com/licenses/no-license/> .
+
+<http://ceur-ws.org/Vol-505/#JaniBosch> a ns1:Person ;
+    ns4:affiliation "" ;
+    ns3:sameAs <http://ceur-ws.org/persons/JaniBosch> ;
+    ns1:made <http://ceur-ws.org/Vol-505/#iwseco09-1JansenBrinkkemperFinkelsteinBosch> ;
+    ns1:name "Jan Bosch" .
+
+<http://ceur-ws.org/Vol-505/#iwseco09-2Werner> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-505/> ;
+    ns2:title "Building Software Ecosystems from a Reuse Perspective" ;
+    ns4:author <http://ceur-ws.org/Vol-505/#ClaudiaiWerner> .
+
+<http://ceur-ws.org/Vol-505/#iwseco09-4Fricker> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-505/> ;
+    ns2:title "Specification and Analysis of Requirements Negotiation Strategy in Software Ecosystems" ;
+    ns4:author <http://ceur-ws.org/Vol-505/#SamueliFricker> .
+
+<http://ceur-ws.org/Vol-505/#AnthonyiFinkelstein> a ns1:Person ;
+    ns4:affiliation "" ;
+    ns3:sameAs <http://ceur-ws.org/persons/AnthonyiFinkelstein> ;
+    ns1:made <http://ceur-ws.org/Vol-505/#iwseco09-1JansenBrinkkemperFinkelsteinBosch>,
+        <http://ceur-ws.org/Vol-505/#iwseco09-5JansenBrinkkemperFinkelstein> ;
+    ns1:name "Anthony Finkelstein" .
+
+<http://ceur-ws.org/Vol-505/#SjaakiBrinkkemper> a ns1:Person ;
+    ns4:affiliation "" ;
+    ns3:sameAs <http://ceur-ws.org/persons/SjaakiBrinkkemper> ;
+    ns1:made <http://ceur-ws.org/Vol-505/#iwseco09-1JansenBrinkkemperFinkelsteinBosch>,
+        <http://ceur-ws.org/Vol-505/#iwseco09-5JansenBrinkkemperFinkelstein> ;
+    ns1:name "Sjaak Brinkkemper" .
+
+<http://ceur-ws.org/Vol-505/#SlingeriJansen> a ns1:Person ;
+    ns4:affiliation "" ;
+    ns3:sameAs <http://ceur-ws.org/persons/SlingeriJansen> ;
+    ns1:made <http://ceur-ws.org/Vol-505/#iwseco09-1JansenBrinkkemperFinkelsteinBosch>,
+        <http://ceur-ws.org/Vol-505/#iwseco09-5JansenBrinkkemperFinkelstein> ;
+    ns1:name "Slinger Jansen" .
+
+<http://ceur-ws.org/Vol-505/#iwseco09-3AlspaughAcunsionScacchi> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-505/> ;
+    ns2:title "The Role of Software Licenses in Open Architecture Ecosystems" ;
+    ns4:author <http://ceur-ws.org/Vol-505/#HazelineiU.iAsuncion>,
+        <http://ceur-ws.org/Vol-505/#ThomasiA.iAlspaugh>,
+        <http://ceur-ws.org/Vol-505/#WaltiScacchi> .
+
+<http://ceur-ws.org/Vol-505/#iwseco09-5JansenBrinkkemperFinkelstein> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-505/> ;
+    ns2:title "Business Network Management as a Survival Strategy: A Tale of Two Software Ecosystems" ;
+    ns4:author <http://ceur-ws.org/Vol-505/#AnthonyiFinkelstein>,
+        <http://ceur-ws.org/Vol-505/#SjaakiBrinkkemper>,
+        <http://ceur-ws.org/Vol-505/#SlingeriJansen> .
+
+<http://ceur-ws.org/Vol-505/> a ns5:Proceedings ;
+    ns5:hasPart <http://ceur-ws.org/Vol-505/#iwseco09-1JansenBrinkkemperFinkelsteinBosch>,
+        <http://ceur-ws.org/Vol-505/#iwseco09-2Werner>,
+        <http://ceur-ws.org/Vol-505/#iwseco09-3AlspaughAcunsionScacchi>,
+        <http://ceur-ws.org/Vol-505/#iwseco09-4Fricker>,
+        <http://ceur-ws.org/Vol-505/#iwseco09-5JansenBrinkkemperFinkelstein> ;
+    ns6:issued "2009-09-23T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:presentedAt <http://ceur-ws.org/Vol-505/#event> ;
+    ns4:editor <http://ceur-ws.org/Vol-505/#AnthonyiFinkelstein>,
+        <http://ceur-ws.org/Vol-505/#JaniBosch>,
+        <http://ceur-ws.org/Vol-505/#SjaakiBrinkkemper>,
+        <http://ceur-ws.org/Vol-505/#SlingeriJansen> .
+
+<http://ceur-ws.org/Vol-505/#iwseco09-1JansenBrinkkemperFinkelsteinBosch> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-505/> ;
+    ns2:title "Introduction to the Proceedings of the First Workshop on Software Ecosystems" ;
+    ns4:author <http://ceur-ws.org/Vol-505/#AnthonyiFinkelstein>,
+        <http://ceur-ws.org/Vol-505/#JaniBosch>,
+        <http://ceur-ws.org/Vol-505/#SjaakiBrinkkemper>,
+        <http://ceur-ws.org/Vol-505/#SlingeriJansen> .
+

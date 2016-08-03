@@ -1,0 +1,50 @@
+@prefix ns1: <http://purl.org/ontology/bibo/#> .
+@prefix ns2: <http://www.w3.org/2002/07/owl#> .
+@prefix ns3: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns4: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns5: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns6: <http://xmlns.com/foaf/0.1/> .
+@prefix ns7: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns8: <http://purl.org/dc/elements/1.1/#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://ceur-ws.org/Vol-20/> a ns3:Proceedings ;
+    ns5:issued "1999-05-18T00:00:00+00:00"^^xsd:dateTime ;
+    ns1:presentedAt <http://ceur-ws.org/Vol-20/#event> ;
+    ns7:editor <http://ceur-ws.org/Vol-20/#GeraldiGlombitza>,
+        <http://ceur-ws.org/Vol-20/#Hans-PeteriMeinzer>,
+        <http://ceur-ws.org/Vol-20/#HaraldiEvers>,
+        <http://ceur-ws.org/Vol-20/#Herausgegebenivon>,
+        <http://ceur-ws.org/Vol-20/#ThomasiLehmann> .
+
+<http://ceur-ws.org/Vol-20/#GeraldiGlombitza> a ns6:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/GeraldiGlombitza> ;
+    ns6:name "Gerald Glombitza" .
+
+<http://ceur-ws.org/Vol-20/#Hans-PeteriMeinzer> a ns6:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/Hans-PeteriMeinzer> ;
+    ns6:name "Hans-Peter Meinzer" .
+
+<http://ceur-ws.org/Vol-20/#HaraldiEvers> a ns6:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/HaraldiEvers> ;
+    ns6:name "Harald Evers" .
+
+<http://ceur-ws.org/Vol-20/#Herausgegebenivon> a ns6:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/Herausgegebenivon> ;
+    ns6:name "Herausgegeben von" .
+
+<http://ceur-ws.org/Vol-20/#ThomasiLehmann> a ns6:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/ThomasiLehmann> ;
+    ns6:name "Thomas Lehmann" .
+
+<http://ceur-ws.org/Vol-20/#event> a ns3:WorkshopEvent ;
+    ns3:hasLocation <http://dbpedia.org/resource/Germany> ;
+    ns3:hasPart <http://ceur-ws.org/Vol-20/#part-ws> ;
+    ns3:isSubEventOf <http://ceur-ws.org/Vol-20/#conf> ;
+    ns4:beginsAtDatetime "1999-03-04T00:00:00+00:00"^^xsd:dateTime ;
+    ns4:endsAtDatetime "1999-03-05T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:license <http://choosealicense.com/licenses/no-license/> .
+

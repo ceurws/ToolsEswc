@@ -1,0 +1,127 @@
+@prefix ns1: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns2: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns3: <http://www.w3.org/2002/07/owl#> .
+@prefix ns4: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns5: <http://xmlns.com/foaf/0.1/> .
+@prefix ns6: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns8: <http://purl.org/ontology/bibo/#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://ceur-ws.org/Vol-150/#AncaiRarau> a ns5:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/AncaiRarau> ;
+    ns5:made <http://ceur-ws.org/Vol-150/#paper2> ;
+    ns5:name "Anca Rarau" .
+
+<http://ceur-ws.org/Vol-150/#AthanasiosiManitsaris> a ns5:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/AthanasiosiManitsaris> ;
+    ns5:made <http://ceur-ws.org/Vol-150/#paper3> ;
+    ns5:name "Athanasios Manitsaris" .
+
+<http://ceur-ws.org/Vol-150/#BorisiDragovic> a ns5:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/BorisiDragovic> ;
+    ns5:made <http://ceur-ws.org/Vol-150/#paper1> ;
+    ns5:name "Boris Dragovic" .
+
+<http://ceur-ws.org/Vol-150/#ChristosiK.iGeorgiadis> a ns5:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/ChristosiK.iGeorgiadis> ;
+    ns5:made <http://ceur-ws.org/Vol-150/#paper3> ;
+    ns5:name "Christos K. Georgiadis" .
+
+<http://ceur-ws.org/Vol-150/#DavyiPreuveneers> a ns5:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/DavyiPreuveneers> ;
+    ns5:made <http://ceur-ws.org/Vol-150/#paper4> ;
+    ns5:name "Davy Preuveneers" .
+
+<http://ceur-ws.org/Vol-150/#IoaniSalomie> a ns5:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/IoaniSalomie> ;
+    ns5:made <http://ceur-ws.org/Vol-150/#paper2> ;
+    ns5:name "Ioan Salomie" .
+
+<http://ceur-ws.org/Vol-150/#IoannisiMavridis> a ns5:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/IoannisiMavridis> ;
+    ns5:made <http://ceur-ws.org/Vol-150/#paper3> ;
+    ns5:name "Ioannis Mavridis" .
+
+<http://ceur-ws.org/Vol-150/#JoniCrowcroft> a ns5:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/JoniCrowcroft> ;
+    ns5:made <http://ceur-ws.org/Vol-150/#paper1> ;
+    ns5:name "Jon Crowcroft" .
+
+<http://ceur-ws.org/Vol-150/#KalmaniPusztai> a ns5:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/KalmaniPusztai> ;
+    ns5:made <http://ceur-ws.org/Vol-150/#paper2> ;
+    ns5:name "Kalman Pusztai" .
+
+<http://ceur-ws.org/Vol-150/#YolandeiBerbers> a ns5:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/YolandeiBerbers> ;
+    ns5:made <http://ceur-ws.org/Vol-150/#paper4> ;
+    ns5:name "Yolande Berbers" .
+
+<http://ceur-ws.org/Vol-150/#event> a ns2:WorkshopEvent ;
+    ns2:hasLocation <http://dbpedia.org/resource/Greece> ;
+    ns2:hasPart <http://ceur-ws.org/Vol-150/#part-IWSAC> ;
+    ns2:isSubEventOf <http://ceur-ws.org/Vol-150/#conf> ;
+    ns7:beginsAtDatetime "2005-07-05T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:endsAtDatetime "2005-07-06T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:license <http://choosealicense.com/licenses/no-license/> .
+
+<http://ceur-ws.org/Vol-150/#GhitaiKouadriiMostefaoui> a ns5:Person ;
+    ns1:affiliation "" ;
+    ns3:sameAs <http://ceur-ws.org/persons/GhitaiKouadriiMostefaoui> ;
+    ns5:made <http://ceur-ws.org/Vol-150/#preface> ;
+    ns5:name "Ghita Kouadri Mostefaoui" .
+
+<http://ceur-ws.org/Vol-150/#PatrickiBrezillon> a ns5:Person ;
+    ns8:place <http://dbpedia.org/resource/France> ;
+    ns1:affiliation "LIP6, University Paris VI" ;
+    ns3:sameAs <http://ceur-ws.org/persons/PatrickiBrezillon> ;
+    ns5:made <http://ceur-ws.org/Vol-150/#preface> ;
+    ns5:name "Patrick Brezillon" .
+
+<http://ceur-ws.org/Vol-150/#paper1> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-150/> ;
+    ns6:title "Containment: From Context Awareness to Contextual Effects Awareness" ;
+    ns1:author <http://ceur-ws.org/Vol-150/#BorisiDragovic>,
+        <http://ceur-ws.org/Vol-150/#JoniCrowcroft> .
+
+<http://ceur-ws.org/Vol-150/#paper4> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-150/> ;
+    ns6:title "Automated Context-Driven Composition of Pervasive Services to Alleviate Non-Functional Concerns" ;
+    ns1:author <http://ceur-ws.org/Vol-150/#DavyiPreuveneers>,
+        <http://ceur-ws.org/Vol-150/#YolandeiBerbers> .
+
+<http://ceur-ws.org/Vol-150/#preface> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-150/> ;
+    ns6:title "Preface" ;
+    ns1:author <http://ceur-ws.org/Vol-150/#GhitaiKouadriiMostefaoui>,
+        <http://ceur-ws.org/Vol-150/#PatrickiBrezillon> .
+
+<http://ceur-ws.org/Vol-150/#paper2> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-150/> ;
+    ns6:title "Software Framework for Building Context-Aware Applications Using MultiFacet Items" ;
+    ns1:author <http://ceur-ws.org/Vol-150/#AncaiRarau>,
+        <http://ceur-ws.org/Vol-150/#IoaniSalomie>,
+        <http://ceur-ws.org/Vol-150/#KalmaniPusztai> .
+
+<http://ceur-ws.org/Vol-150/#paper3> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-150/> ;
+    ns6:title "Context-Based Humanized and Authorized Personalization in Mobile Commerce Applications" ;
+    ns1:author <http://ceur-ws.org/Vol-150/#AthanasiosiManitsaris>,
+        <http://ceur-ws.org/Vol-150/#ChristosiK.iGeorgiadis>,
+        <http://ceur-ws.org/Vol-150/#IoannisiMavridis> .
+
+<http://ceur-ws.org/Vol-150/> a ns2:Proceedings ;
+    ns2:hasPart <http://ceur-ws.org/Vol-150/#paper1>,
+        <http://ceur-ws.org/Vol-150/#paper2>,
+        <http://ceur-ws.org/Vol-150/#paper3>,
+        <http://ceur-ws.org/Vol-150/#paper4>,
+        <http://ceur-ws.org/Vol-150/#preface> ;
+    ns4:issued "2005-09-14T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:presentedAt <http://ceur-ws.org/Vol-150/#event> ;
+    ns1:editor <http://ceur-ws.org/Vol-150/#GhitaiKouadriiMostefaoui>,
+        <http://ceur-ws.org/Vol-150/#PatrickiBrezillon> .
+
