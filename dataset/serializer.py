@@ -142,13 +142,10 @@ def change_subject(subject_new, subject_original, g):
         g.add((m, n, subject_new))
         g.remove((m, n, t))
 
-def redefine_data():
-    """redefine some missed concepts in serialized rdf data from blazegraph
-    return: redefined triple store
-    """
+def define_person(filename):
     # remove remaining not used data, including 'country' and 'related'
     g = rdflib.Graph()
-    rdf_result = g.parse('serialized.ttl', format='turtle')
+    rdf_result = g.parse(filename, format='turtle')
     ns = rdflib.Namespace("http://fitlayout.github.io/ontology/segmentation.owl#")
     rdf_result.remove((None, ns['country'], None))
     rdf_result.remove((None, ns['related'], None))
@@ -188,8 +185,9 @@ def redefine_data():
             person_re = rdflib.URIRef('http://ceur-ws.org/persons/' + person_uri.split('#')[-1])
             g.add((person_uri, OWL.sameAs, person_re))
             # g.add((person_re, OWL.sameAs, person_uri))
+    return g
 
-    # model section as resource
+def define_section(g):
     for s, p, o in g.triples((None, bibo.section, None)):
         vol = s.split('#')[0]
         #sec = vol + '#' + o
@@ -202,15 +200,17 @@ def redefine_data():
         # replace and remove old section information
         g.add((s, p, subj))
         g.remove((s, p, o))
+    return g
 
-    # set global resources for event series
+def define_series(g):
     for s, p, o in g.triples((None, RDF.type, bibo.Workshop)):
         if 'part-' in s:
             subj = rdflib.URIRef('http://ceur-ws.org/series/' + s.split('part-')[-1])
             g.add((subj, swc.hasPart, s))
             g.add((s, swc.partOf, subj))
+    return g
 
-    # swap concept of proceeding and event
+def define_proc_event(g):
     for s, p, o in g.triples((None, RDF.type, swc.WorkshopEvent)):
         subject = s
         subject += '#event'
@@ -220,13 +220,34 @@ def redefine_data():
         subject = s
         subject = rdflib.URIRef(subject.replace("#proc", ''))
         change_subject(subject, s, g)
-    
-    g2 = rdflib.Graph()
-    g2.parse('1549-1551.ttl', format='turtle')
-    g3 = rdflib.Graph()
-    g3.parse('vol41.ttl', format='turtle')
+    return g
+
+def merge_graphs(g):
+    g2 = define_person('1549-1551.ttl')
+    g2 = define_section(g2)
+    g3 = define_person('vol41.ttl')
+    g3 = define_section(g3)
     g += g2
     g += g3
+    return g
+
+def redefine_data():
+    """redefine some missed concepts in serialized rdf data from blazegraph
+    return: redefined triple store
+    """
+    # merge person
+    g = define_person('serialized.ttl')
+
+    # model section as resource
+    g = define_section(g)
+    
+    # set global resources for event series
+    g = define_series(g)
+
+    # swap concept of proceeding and event
+    g = define_proc_event(g)
+    
+    g = merge_graphs(g)
 
     return g
 
@@ -281,6 +302,8 @@ def split_into_volume():
         g_.serialize(destination=filename, format='turtle')
 
 def clean_file(filename):
+    """clean a file by replace some string in a file, and rewrite the new data into it
+    """
     # Read in the file
     filedata = None
     with open(filename, 'r') as file :
@@ -294,6 +317,8 @@ def clean_file(filename):
       file.write(filedata)
 
 def clean_serializatioin(dirname):
+    """clean the serialization dataset, one issue is that the serialization contains the path name for some uri
+    """
     path = dirname
     dirs = os.listdir( path )
     # This would print all the files and directories
@@ -302,18 +327,19 @@ def clean_serializatioin(dirname):
         clean_file(dirname + file)
 
 def main():
-    #url = check_blazegraph()
+    url = check_blazegraph()
     #data_processing()
-    #clean_by_sparql(url)
-    #add_license(url)
+    clean_by_sparql(url)
+    add_license(url)
     #add_missed_volumes(url)
-    #serialize_blazegraph(url)
+    serialize_blazegraph(url)
     #print "Start to redefine data"
-    #g = redefine_data()
-    #serialize_rdflib(g)
-    #remove_bad_words()
+    g = redefine_data()
+    serialize_rdflib(g)
+    remove_bad_words()
     #split_into_volume()
-    clean_serializatioin('./volumes/')
+    #clean_serializatioin('./volumes/')
+    clean_file('ceur-ws.ttl')
 
 if __name__ == "__main__":
     main()
