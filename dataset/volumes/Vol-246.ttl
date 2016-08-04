@@ -1,36 +1,36 @@
 @prefix ns1: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns2: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns3: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns4: <http://purl.org/ontology/bibo/#> .
-@prefix ns5: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns6: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns7: <http://www.w3.org/2002/07/owl#> .
-@prefix ns8: <http://xmlns.com/foaf/0.1/> .
+@prefix ns2: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns3: <http://xmlns.com/foaf/0.1/> .
+@prefix ns4: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns5: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns6: <http://www.w3.org/2002/07/owl#> .
+@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns8: <http://purl.org/ontology/bibo/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-246/> a ns2:Proceedings ;
-    ns3:issued "2007-05-09T00:00:00+00:00"^^xsd:dateTime ;
-    ns4:presentedAt <http://ceur-ws.org/Vol-246/#event> ;
+<http://ceur-ws.org/Vol-246/> a ns5:Proceedings ;
+    ns2:issued "2007-05-09T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:presentedAt <http://ceur-ws.org/Vol-246/#event> ;
     ns1:editor <http://ceur-ws.org/Vol-246/#AlexanderiHorschiundiThomasiTolxdorff>,
         <http://ceur-ws.org/Vol-246/#HerausgegebenivoniHans-PeteriMeinzer> .
 
-<http://ceur-ws.org/Vol-246/#AlexanderiHorschiundiThomasiTolxdorff> a ns8:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/AlexanderiHorschiundiThomasiTolxdorff> ;
-    ns8:name "Alexander Horsch und Thomas Tolxdorff" .
+<http://ceur-ws.org/Vol-246/#AlexanderiHorschiundiThomasiTolxdorff> a ns3:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/AlexanderiHorschiundiThomasiTolxdorff> ;
+    ns3:name "Alexander Horsch und Thomas Tolxdorff" .
 
-<http://ceur-ws.org/Vol-246/#HerausgegebenivoniHans-PeteriMeinzer> a ns8:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/HerausgegebenivoniHans-PeteriMeinzer> ;
-    ns8:name "Herausgegeben von Hans-Peter Meinzer" .
+<http://ceur-ws.org/Vol-246/#HerausgegebenivoniHans-PeteriMeinzer> a ns3:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/HerausgegebenivoniHans-PeteriMeinzer> ;
+    ns3:name "Herausgegeben von Hans-Peter Meinzer" .
 
-<http://ceur-ws.org/Vol-246/#event> a ns2:WorkshopEvent ;
-    ns2:hasPart <http://ceur-ws.org/Vol-246/#part-ws> ;
-    ns2:isSubEventOf <http://ceur-ws.org/Vol-246/#conf> ;
-    ns6:beginsAtDatetime "2016-03-15T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:endsAtDatetime "2016-03-15T00:00:00+00:00"^^xsd:dateTime ;
-    ns5:license <http://choosealicense.com/licenses/no-license/> ;
+<http://ceur-ws.org/Vol-246/#event> a ns5:WorkshopEvent ;
+    ns5:hasPart <http://ceur-ws.org/Vol-246/#part-ws> ;
+    ns5:isSubEventOf <http://ceur-ws.org/Vol-246/#conf> ;
+    ns7:beginsAtDatetime "2016-03-15T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:endsAtDatetime "2016-03-15T00:00:00+00:00"^^xsd:dateTime ;
+    ns4:license <http://choosealicense.com/licenses/no-license/> ;
     rdfs:seeAlso <http://ceur-ws.org/Vol-116/#event>,
         <http://ceur-ws.org/Vol-12/#event>,
         <http://ceur-ws.org/Vol-20/#event>,

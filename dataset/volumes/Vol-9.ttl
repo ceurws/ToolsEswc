@@ -1,27 +1,27 @@
 @prefix ns1: <http://xmlns.com/foaf/0.1/> .
 @prefix ns2: <http://www.w3.org/2002/07/owl#> .
 @prefix ns3: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns4: <http://purl.org/ontology/bibo/#> .
-@prefix ns5: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns6: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns7: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns8: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns4: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns5: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns6: <http://purl.org/ontology/bibo/#> .
+@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-9/> a ns8:Proceedings ;
-    ns5:issued "1998-03-30T00:00:00+00:00"^^xsd:dateTime ;
-    ns4:presentedAt <http://ceur-ws.org/Vol-9/#event> ;
+<http://ceur-ws.org/Vol-9/> a ns5:Proceedings ;
+    ns8:issued "1998-03-30T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:presentedAt <http://ceur-ws.org/Vol-9/#event> ;
     ns3:editor <http://ceur-ws.org/Vol-9/#%C2%A0>,
         <http://ceur-ws.org/Vol-9/#%C2%A0%C2%A0%C2%A0iAachen>,
+        <http://ceur-ws.org/Vol-9/#.iDeriWorkshopiwurdeigemeinsamivonidenisiebeniobenigenannteniFachgruppenideriGesellschaftif%C3%BCriInformatikiveranstaltet.>,
         <http://ceur-ws.org/Vol-9/#AndyiSch%C3%BCrr>,
         <http://ceur-ws.org/Vol-9/#Aufgrundideri%C3%BCberausihoheniResonanziimiVorfeldidesiWorkshopsihabeniwiriaberibereitsi%C3%BCberieineiFolgeveranstaltungiimiJahre>,
         <http://ceur-ws.org/Vol-9/#AufideriProgrammkomitee-Sitzungiam>,
         <http://ceur-ws.org/Vol-9/#Aufispannende>,
         <http://ceur-ws.org/Vol-9/#Entwicklungsmethodenif%C3%BCriInformationssystemeiundidereniAnwendung>,
-        <http://ceur-ws.org/Vol-9/#Gesellschaftif%C3%BCriInformatik>,
         <http://ceur-ws.org/Vol-9/#GottfriediVossen>,
         <http://ceur-ws.org/Vol-9/#KlausiPohl>,
         <http://ceur-ws.org/Vol-9/#KnowledgeiEngineering>,
@@ -45,6 +45,10 @@
     ns2:sameAs <http://ceur-ws.org/persons/%C2%A0%C2%A0%C2%A0iAachen> ;
     ns1:name "    Aachen" .
 
+<http://ceur-ws.org/Vol-9/#.iDeriWorkshopiwurdeigemeinsamivonidenisiebeniobenigenannteniFachgruppenideriGesellschaftif%C3%BCriInformatikiveranstaltet.> a ns1:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/.iDeriWorkshopiwurdeigemeinsamivonidenisiebeniobenigenannteniFachgruppenideriGesellschaftif%C3%BCriInformatikiveranstaltet.> ;
+    ns1:name ". Der Workshop wurde gemeinsam von den sieben oben genannten Fachgruppen der Gesellschaft für Informatik veranstaltet." .
+
 <http://ceur-ws.org/Vol-9/#AndyiSch%C3%BCrr> a ns1:Person ;
     ns2:sameAs <http://ceur-ws.org/persons/AndyiSch%C3%BCrr> ;
     ns1:name "Andy Schürr" .
@@ -64,10 +68,6 @@
 <http://ceur-ws.org/Vol-9/#Entwicklungsmethodenif%C3%BCriInformationssystemeiundidereniAnwendung> a ns1:Person ;
     ns2:sameAs <http://ceur-ws.org/persons/Entwicklungsmethodenif%C3%BCriInformationssystemeiundidereniAnwendung> ;
     ns1:name "Entwicklungsmethoden für Informationssysteme und deren Anwendung" .
-
-<http://ceur-ws.org/Vol-9/#Gesellschaftif%C3%BCriInformatik> a ns1:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/Gesellschaftif%C3%BCriInformatik> ;
-    ns1:name "Gesellschaft für Informatik" .
 
 <http://ceur-ws.org/Vol-9/#GottfriediVossen> a ns1:Person ;
     ns2:sameAs <http://ceur-ws.org/persons/GottfriediVossen> ;
@@ -117,12 +117,12 @@
     ns2:sameAs <http://ceur-ws.org/persons/befassenisichimitideriModellierungiunterschiedlicheriAspekteivoniSoftware-iundiInformationssystemen.iDieidaf%C3%BCrientwickelteniKonzepteiundiVorgehensweisenivorzustellen> ;
     ns1:name "befassen sich mit der Modellierung unterschiedlicher Aspekte von Software- und Informationssystemen. Die dafür entwickelten Konzepte und Vorgehensweisen vorzustellen" .
 
-<http://ceur-ws.org/Vol-9/#event> a ns8:WorkshopEvent ;
-    ns8:hasPart <http://ceur-ws.org/Vol-9/#part-ws> ;
-    ns8:isSubEventOf <http://ceur-ws.org/Vol-9/#conf> ;
-    ns6:beginsAtDatetime "1998-03-11T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:endsAtDatetime "1998-03-11T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:license <http://choosealicense.com/licenses/no-license/> .
+<http://ceur-ws.org/Vol-9/#event> a ns5:WorkshopEvent ;
+    ns5:hasPart <http://ceur-ws.org/Vol-9/#part-ws> ;
+    ns5:isSubEventOf <http://ceur-ws.org/Vol-9/#conf> ;
+    ns7:beginsAtDatetime "1998-03-11T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:endsAtDatetime "1998-03-11T00:00:00+00:00"^^xsd:dateTime ;
+    ns4:license <http://choosealicense.com/licenses/no-license/> .
 
 <http://ceur-ws.org/Vol-9/#gedankt.iAmiTageideriEinreichungsfristifehlteiunsikeinieinzigesiGutachten> a ns1:Person ;
     ns2:sameAs <http://ceur-ws.org/persons/gedankt.iAmiTageideriEinreichungsfristifehlteiunsikeinieinzigesiGutachten> ;

@@ -1,11 +1,11 @@
-@prefix ns1: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns1: <http://data.semanticweb.org/ns/swc/ontology/#> .
 @prefix ns2: <http://xmlns.com/foaf/0.1/> .
 @prefix ns3: <http://www.w3.org/2002/07/owl#> .
-@prefix ns4: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns5: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns4: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns5: <http://purl.org/dc/elements/1.1/#> .
 @prefix ns6: <http://purl.org/ontology/bibo/#> .
-@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -201,13 +201,13 @@
     ns2:made <http://ceur-ws.org/Vol-704/#3> ;
     ns2:name "Ugo Scaiella" .
 
-<http://ceur-ws.org/Vol-704/#event> a ns5:WorkshopEvent ;
-    ns5:hasLocation <http://dbpedia.org/resource/Italy> ;
-    ns5:hasPart <http://ceur-ws.org/Vol-704/#part-IIR> ;
-    ns5:isSubEventOf <http://ceur-ws.org/Vol-704/#conf> ;
-    ns7:beginsAtDatetime "2011-01-27T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:endsAtDatetime "2011-01-28T00:00:00+00:00"^^xsd:dateTime ;
-    ns4:license <http://choosealicense.com/licenses/no-license/> ;
+<http://ceur-ws.org/Vol-704/#event> a ns1:WorkshopEvent ;
+    ns1:hasLocation <http://dbpedia.org/resource/Italy> ;
+    ns1:hasPart <http://ceur-ws.org/Vol-704/#part-IIR> ;
+    ns1:isSubEventOf <http://ceur-ws.org/Vol-704/#conf> ;
+    ns8:beginsAtDatetime "2011-01-27T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:endsAtDatetime "2011-01-28T00:00:00+00:00"^^xsd:dateTime ;
+    ns5:license <http://choosealicense.com/licenses/no-license/> ;
     rdfs:seeAlso <http://ceur-ws.org/Vol-560/#event> .
 
 <http://ceur-ws.org/Vol-704/#AndreaiEsuli> a ns2:Person ;
@@ -253,56 +253,56 @@
     ns2:name "Roberto Basili" .
 
 <http://ceur-ws.org/Vol-704/#StefanoiMizzaro> a ns2:Person ;
-    ns1:affiliation "" ;
+    ns4:affiliation "" ;
     ns3:sameAs <http://ceur-ws.org/persons/StefanoiMizzaro> ;
     ns2:made <http://ceur-ws.org/Vol-704/#23> ;
     ns2:name "Stefano Mizzaro" .
 
-<http://ceur-ws.org/Vol-704/#invited> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-704/> ;
-    ns4:title "Web Information Retrieval for Complex Not-Informational Intents: An Introduction to User Intent Analysis" ;
-    ns1:author <http://ceur-ws.org/Vol-704/#DeboraiDonato> .
+<http://ceur-ws.org/Vol-704/#invited> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-704/> ;
+    ns5:title "Web Information Retrieval for Complex Not-Informational Intents: An Introduction to User Intent Analysis" ;
+    ns4:author <http://ceur-ws.org/Vol-704/#DeboraiDonato> .
 
-<http://ceur-ws.org/Vol-704/#15> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-704/> ;
-    ns4:title "A Methodology for Analyzing Web Search Results" ;
-    ns1:author <http://ceur-ws.org/Vol-704/#GiuseppeiPsaila>,
+<http://ceur-ws.org/Vol-704/#15> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-704/> ;
+    ns5:title "A Methodology for Analyzing Web Search Results" ;
+    ns4:author <http://ceur-ws.org/Vol-704/#GiuseppeiPsaila>,
         <http://ceur-ws.org/Vol-704/#GloriaiBordogna> .
 
-<http://ceur-ws.org/Vol-704/#23> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-704/> ;
-    ns4:title "IR Models Based on Network Science: A Research Agenda" ;
-    ns1:author <http://ceur-ws.org/Vol-704/#GiulioiLeso>,
+<http://ceur-ws.org/Vol-704/#23> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-704/> ;
+    ns5:title "IR Models Based on Network Science: A Research Agenda" ;
+    ns4:author <http://ceur-ws.org/Vol-704/#GiulioiLeso>,
         <http://ceur-ws.org/Vol-704/#StefanoiMizzaro> .
 
-<http://ceur-ws.org/Vol-704/#3> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-704/> ;
-    ns4:title "First Steps Beyond the Bag-Of-Words Representation of Short Texts" ;
-    ns1:author <http://ceur-ws.org/Vol-704/#PaoloiFerragina>,
+<http://ceur-ws.org/Vol-704/#3> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-704/> ;
+    ns5:title "First Steps Beyond the Bag-Of-Words Representation of Short Texts" ;
+    ns4:author <http://ceur-ws.org/Vol-704/#PaoloiFerragina>,
         <http://ceur-ws.org/Vol-704/#UgoiScaiella> .
 
-<http://ceur-ws.org/Vol-704/#32> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-704/> ;
-    ns4:title "Definition of User Profiles Based on the YAGO Ontology" ;
-    ns1:author <http://ceur-ws.org/Vol-704/#GabriellaiPasi>,
+<http://ceur-ws.org/Vol-704/#32> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-704/> ;
+    ns5:title "Definition of User Profiles Based on the YAGO Ontology" ;
+    ns4:author <http://ceur-ws.org/Vol-704/#GabriellaiPasi>,
         <http://ceur-ws.org/Vol-704/#SilviaiCalegari> .
 
-<http://ceur-ws.org/Vol-704/#33> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-704/> ;
-    ns4:title "Modeling Emergent Associations of Nominal Compound: Ongoing Research and Preliminary Results" ;
-    ns1:author <http://ceur-ws.org/Vol-704/#LaurianneiSitbon>,
+<http://ceur-ws.org/Vol-704/#33> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-704/> ;
+    ns5:title "Modeling Emergent Associations of Nominal Compound: Ongoing Research and Preliminary Results" ;
+    ns4:author <http://ceur-ws.org/Vol-704/#LaurianneiSitbon>,
         <http://ceur-ws.org/Vol-704/#MassimoiMelucci> .
 
-<http://ceur-ws.org/Vol-704/#4> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-704/> ;
-    ns4:title "Retrieve Volunteered Geographic Information for Forest Fire" ;
-    ns1:author <http://ceur-ws.org/Vol-704/#FrankiOstermann>,
+<http://ceur-ws.org/Vol-704/#4> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-704/> ;
+    ns5:title "Retrieve Volunteered Geographic Information for Forest Fire" ;
+    ns4:author <http://ceur-ws.org/Vol-704/#FrankiOstermann>,
         <http://ceur-ws.org/Vol-704/#LauraiSpinsanti> .
 
-<http://ceur-ws.org/Vol-704/#5> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-704/> ;
-    ns4:title "Heterogeneous Data Co-Clustering by Pseudo-Semantic Affinity Functions" ;
-    ns1:author <http://ceur-ws.org/Vol-704/#AlbertoiMessina>,
+<http://ceur-ws.org/Vol-704/#5> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-704/> ;
+    ns5:title "Heterogeneous Data Co-Clustering by Pseudo-Semantic Affinity Functions" ;
+    ns4:author <http://ceur-ws.org/Vol-704/#AlbertoiMessina>,
         <http://ceur-ws.org/Vol-704/#MaurizioiMontagnuolo> .
 
 <http://ceur-ws.org/Vol-704/#AnnalinaiCaputo> a ns2:Person ;
@@ -313,72 +313,72 @@
     ns2:name "Annalina Caputo" .
 
 <http://ceur-ws.org/Vol-704/#GabriellaiPasi> a ns2:Person ;
-    ns1:affiliation "" ;
+    ns4:affiliation "" ;
     ns3:sameAs <http://ceur-ws.org/persons/GabriellaiPasi> ;
     ns2:made <http://ceur-ws.org/Vol-704/#21>,
         <http://ceur-ws.org/Vol-704/#32> ;
     ns2:name "Gabriella Pasi" .
 
 <http://ceur-ws.org/Vol-704/#MassimoiMelucci> a ns2:Person ;
-    ns1:affiliation "" ;
+    ns4:affiliation "" ;
     ns3:sameAs <http://ceur-ws.org/persons/MassimoiMelucci> ;
     ns2:made <http://ceur-ws.org/Vol-704/#25>,
         <http://ceur-ws.org/Vol-704/#33> ;
     ns2:name "Massimo Melucci" .
 
-<http://ceur-ws.org/Vol-704/#12> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-704/> ;
-    ns4:title "Experimenting Text Summarization Techniques for Contextual Advertising" ;
-    ns1:author <http://ceur-ws.org/Vol-704/#AlessandroiGiuliani>,
+<http://ceur-ws.org/Vol-704/#12> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-704/> ;
+    ns5:title "Experimenting Text Summarization Techniques for Contextual Advertising" ;
+    ns4:author <http://ceur-ws.org/Vol-704/#AlessandroiGiuliani>,
         <http://ceur-ws.org/Vol-704/#EloisaiVargiu>,
         <http://ceur-ws.org/Vol-704/#GiulianoiArmano> .
 
-<http://ceur-ws.org/Vol-704/#18> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-704/> ;
-    ns4:title "From Terms to Concepts: A Revisited Approach to Local Context Analysis" ;
-    ns1:author <http://ceur-ws.org/Vol-704/#AnnalinaiCaputo>,
+<http://ceur-ws.org/Vol-704/#18> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-704/> ;
+    ns5:title "From Terms to Concepts: A Revisited Approach to Local Context Analysis" ;
+    ns4:author <http://ceur-ws.org/Vol-704/#AnnalinaiCaputo>,
         <http://ceur-ws.org/Vol-704/#GiovanniiSemeraro>,
         <http://ceur-ws.org/Vol-704/#PierpaoloiBasile> .
 
-<http://ceur-ws.org/Vol-704/#19> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-704/> ;
-    ns4:title "A Query Algebra for Quantum Information Retrieval" ;
-    ns1:author <http://ceur-ws.org/Vol-704/#AnnalinaiCaputo>,
+<http://ceur-ws.org/Vol-704/#19> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-704/> ;
+    ns5:title "A Query Algebra for Quantum Information Retrieval" ;
+    ns4:author <http://ceur-ws.org/Vol-704/#AnnalinaiCaputo>,
         <http://ceur-ws.org/Vol-704/#BenjaminiPiwowarski>,
         <http://ceur-ws.org/Vol-704/#MouniaiLalmas> .
 
-<http://ceur-ws.org/Vol-704/#21> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-704/> ;
-    ns4:title "A Flexible XML Query Language for NON Dummies" ;
-    ns1:author <http://ceur-ws.org/Vol-704/#EmanueleiPanzeri>,
+<http://ceur-ws.org/Vol-704/#21> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-704/> ;
+    ns5:title "A Flexible XML Query Language for NON Dummies" ;
+    ns4:author <http://ceur-ws.org/Vol-704/#EmanueleiPanzeri>,
         <http://ceur-ws.org/Vol-704/#GabriellaiPasi>,
         <http://ceur-ws.org/Vol-704/#StefaniaiMarrara> .
 
-<http://ceur-ws.org/Vol-704/#29> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-704/> ;
-    ns4:title "HNews: An Enhanced Multilingual Hyperlinking News Platform" ;
-    ns1:author <http://ceur-ws.org/Vol-704/#DanieleiPrevitali>,
+<http://ceur-ws.org/Vol-704/#29> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-704/> ;
+    ns5:title "HNews: An Enhanced Multilingual Hyperlinking News Platform" ;
+    ns4:author <http://ceur-ws.org/Vol-704/#DanieleiPrevitali>,
         <http://ceur-ws.org/Vol-704/#DiegoiDeiCao>,
         <http://ceur-ws.org/Vol-704/#RobertoiBasili> .
 
-<http://ceur-ws.org/Vol-704/#7> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-704/> ;
-    ns4:title "Using Micro-Documents for Feature Selection: The Case of Ordinal Text Classification" ;
-    ns1:author <http://ceur-ws.org/Vol-704/#AndreaiEsuli>,
+<http://ceur-ws.org/Vol-704/#7> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-704/> ;
+    ns5:title "Using Micro-Documents for Feature Selection: The Case of Ordinal Text Classification" ;
+    ns4:author <http://ceur-ws.org/Vol-704/#AndreaiEsuli>,
         <http://ceur-ws.org/Vol-704/#FabrizioiSebastiani>,
         <http://ceur-ws.org/Vol-704/#StefanoiBaccianella> .
 
-<http://ceur-ws.org/Vol-704/#8> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-704/> ;
-    ns4:title "Investigating Subspace Distances in Semantic Spaces" ;
-    ns1:author <http://ceur-ws.org/Vol-704/#EnricoiGasco>,
+<http://ceur-ws.org/Vol-704/#8> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-704/> ;
+    ns5:title "Investigating Subspace Distances in Semantic Spaces" ;
+    ns4:author <http://ceur-ws.org/Vol-704/#EnricoiGasco>,
         <http://ceur-ws.org/Vol-704/#GuidoiZuccon>,
         <http://ceur-ws.org/Vol-704/#LeifiAzzopardi> .
 
-<http://ceur-ws.org/Vol-704/#9> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-704/> ;
-    ns4:title "Semantic Re-ranking in Ad-hoc Robust Retrieval" ;
-    ns1:author <http://ceur-ws.org/Vol-704/#AnnalinaiCaputo>,
+<http://ceur-ws.org/Vol-704/#9> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-704/> ;
+    ns5:title "Semantic Re-ranking in Ad-hoc Robust Retrieval" ;
+    ns4:author <http://ceur-ws.org/Vol-704/#AnnalinaiCaputo>,
         <http://ceur-ws.org/Vol-704/#GiovanniiSemeraro>,
         <http://ceur-ws.org/Vol-704/#PierpaoloiBasile> .
 
@@ -390,57 +390,57 @@
         <http://ceur-ws.org/Vol-704/#9> ;
     ns2:name "Giovanni Semeraro" .
 
-<http://ceur-ws.org/Vol-704/#17> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-704/> ;
-    ns4:title "Random Indexing for Content-Based Recommender Systems" ;
-    ns1:author <http://ceur-ws.org/Vol-704/#CataldoiMusto>,
+<http://ceur-ws.org/Vol-704/#17> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-704/> ;
+    ns5:title "Random Indexing for Content-Based Recommender Systems" ;
+    ns4:author <http://ceur-ws.org/Vol-704/#CataldoiMusto>,
         <http://ceur-ws.org/Vol-704/#GiovanniiSemeraro>,
         <http://ceur-ws.org/Vol-704/#MarcoideiGemmis>,
         <http://ceur-ws.org/Vol-704/#PasqualeiLops> .
 
-<http://ceur-ws.org/Vol-704/#25> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-704/> ;
-    ns4:title "Quantum Contextual Information Access and Retrieval" ;
-    ns1:author <http://ceur-ws.org/Vol-704/#EmanueleiDiiBuccio>,
+<http://ceur-ws.org/Vol-704/#25> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-704/> ;
+    ns5:title "Quantum Contextual Information Access and Retrieval" ;
+    ns4:author <http://ceur-ws.org/Vol-704/#EmanueleiDiiBuccio>,
         <http://ceur-ws.org/Vol-704/#GiorgioiMariaiDiiNunzio>,
         <http://ceur-ws.org/Vol-704/#MassimoiMelucci>,
         <http://ceur-ws.org/Vol-704/#NicolaiOrio> .
 
-<http://ceur-ws.org/Vol-704/#26> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-704/> ;
-    ns4:title "Blog Distillation via Sentiment-Sensitive Link Analysis" ;
-    ns1:author <http://ceur-ws.org/Vol-704/#AndreaiEsuli>,
+<http://ceur-ws.org/Vol-704/#26> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-704/> ;
+    ns5:title "Blog Distillation via Sentiment-Sensitive Link Analysis" ;
+    ns4:author <http://ceur-ws.org/Vol-704/#AndreaiEsuli>,
         <http://ceur-ws.org/Vol-704/#FabrizioiSebastiani>,
         <http://ceur-ws.org/Vol-704/#FabrizioiSilvestri>,
         <http://ceur-ws.org/Vol-704/#GiacomoiBerardi> .
 
-<http://ceur-ws.org/Vol-704/#27> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-704/> ;
-    ns4:title "Explicit Semantic Analysis for Enriching Content-Based User Profiles" ;
-    ns1:author <http://ceur-ws.org/Vol-704/#FedelucioiNarducci>,
+<http://ceur-ws.org/Vol-704/#27> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-704/> ;
+    ns5:title "Explicit Semantic Analysis for Enriching Content-Based User Profiles" ;
+    ns4:author <http://ceur-ws.org/Vol-704/#FedelucioiNarducci>,
         <http://ceur-ws.org/Vol-704/#GiovanniiSemeraro>,
         <http://ceur-ws.org/Vol-704/#MarcoideiGemmis>,
         <http://ceur-ws.org/Vol-704/#PasqualeiLops> .
 
-<http://ceur-ws.org/Vol-704/#28> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-704/> ;
-    ns4:title "On the Probabilistic Logical Modelling of Quantum and Geometrically-Inspired IR" ;
-    ns1:author <http://ceur-ws.org/Vol-704/#FabrizioiSmeraldi>,
+<http://ceur-ws.org/Vol-704/#28> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-704/> ;
+    ns5:title "On the Probabilistic Logical Modelling of Quantum and Geometrically-Inspired IR" ;
+    ns4:author <http://ceur-ws.org/Vol-704/#FabrizioiSmeraldi>,
         <http://ceur-ws.org/Vol-704/#IngoiFrommholz>,
         <http://ceur-ws.org/Vol-704/#MigueliMartinez-Alvarez>,
         <http://ceur-ws.org/Vol-704/#ThomasiRoelleke> .
 
-<http://ceur-ws.org/Vol-704/#31> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-704/> ;
-    ns4:title "Enriched Page Rank for Multilingual Word Sense Disambiguation" ;
-    ns1:author <http://ceur-ws.org/Vol-704/#DiegoiDeiCao>,
+<http://ceur-ws.org/Vol-704/#31> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-704/> ;
+    ns5:title "Enriched Page Rank for Multilingual Word Sense Disambiguation" ;
+    ns4:author <http://ceur-ws.org/Vol-704/#DiegoiDeiCao>,
         <http://ceur-ws.org/Vol-704/#FrancescoiMesiano>,
         <http://ceur-ws.org/Vol-704/#MatteoiLuciani>,
         <http://ceur-ws.org/Vol-704/#RiccardoiRossi>,
         <http://ceur-ws.org/Vol-704/#RobertoiBasili> .
 
-<http://ceur-ws.org/Vol-704/> a ns5:Proceedings ;
-    ns5:hasPart <http://ceur-ws.org/Vol-704/#12>,
+<http://ceur-ws.org/Vol-704/> a ns1:Proceedings ;
+    ns1:hasPart <http://ceur-ws.org/Vol-704/#12>,
         <http://ceur-ws.org/Vol-704/#15>,
         <http://ceur-ws.org/Vol-704/#17>,
         <http://ceur-ws.org/Vol-704/#18>,
@@ -462,9 +462,9 @@
         <http://ceur-ws.org/Vol-704/#8>,
         <http://ceur-ws.org/Vol-704/#9>,
         <http://ceur-ws.org/Vol-704/#invited> ;
-    ns8:issued "2011-03-03T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:issued "2011-03-03T00:00:00+00:00"^^xsd:dateTime ;
     ns6:presentedAt <http://ceur-ws.org/Vol-704/#event> ;
-    ns1:editor <http://ceur-ws.org/Vol-704/#GabriellaiPasi>,
+    ns4:editor <http://ceur-ws.org/Vol-704/#GabriellaiPasi>,
         <http://ceur-ws.org/Vol-704/#MassimoiMelucci>,
         <http://ceur-ws.org/Vol-704/#StefanoiMizzaro> .
 

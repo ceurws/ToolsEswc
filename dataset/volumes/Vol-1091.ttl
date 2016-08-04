@@ -1,11 +1,11 @@
 @prefix ns1: <http://xmlns.com/foaf/0.1/> .
 @prefix ns2: <http://www.w3.org/2002/07/owl#> .
-@prefix ns3: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns4: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns5: <http://purl.org/ontology/bibo/#> .
-@prefix ns6: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns7: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns3: <http://purl.org/ontology/bibo/#> .
+@prefix ns4: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns5: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns6: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns7: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -77,7 +77,7 @@
     ns1:name "Konstantinos Makris" .
 
 <http://ceur-ws.org/Vol-1091/#LiviaiPredoiu> a ns1:Person ;
-    ns3:affiliation "" ;
+    ns4:affiliation "" ;
     ns2:sameAs <http://ceur-ws.org/persons/LiviaiPredoiu> ;
     ns1:name "Livia Predoiu" .
 
@@ -117,7 +117,7 @@
     ns1:name "Sandro Schmidt" .
 
 <http://ceur-ws.org/Vol-1091/#SeamusiRoss> a ns1:Person ;
-    ns3:affiliation "" ;
+    ns4:affiliation "" ;
     ns2:sameAs <http://ceur-ws.org/persons/SeamusiRoss> ;
     ns1:name "Seamus Ross" .
 
@@ -156,24 +156,24 @@
     ns1:made <http://ceur-ws.org/Vol-1091/#paper1> ;
     ns1:name "Ujwal Gadiraju" .
 
-<http://ceur-ws.org/Vol-1091/#event> a ns4:WorkshopEvent ;
-    ns4:hasLocation <http://dbpedia.org/resource/Euro_gold_and_silver_commemorative_coins_(Malta)> ;
-    ns4:hasPart <http://ceur-ws.org/Vol-1091/#part-SDA> ;
-    ns4:isSubEventOf <http://ceur-ws.org/Vol-1091/#conf> ;
-    ns8:beginsAtDatetime "2013-09-26T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:endsAtDatetime "2013-09-26T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:license <http://choosealicense.com/licenses/no-license/> ;
+<http://ceur-ws.org/Vol-1091/#event> a ns7:WorkshopEvent ;
+    ns7:hasLocation <http://dbpedia.org/resource/Euro_gold_and_silver_commemorative_coins_(Malta)> ;
+    ns7:hasPart <http://ceur-ws.org/Vol-1091/#part-SDA> ;
+    ns7:isSubEventOf <http://ceur-ws.org/Vol-1091/#conf> ;
+    ns5:beginsAtDatetime "2013-09-26T00:00:00+00:00"^^xsd:dateTime ;
+    ns5:endsAtDatetime "2013-09-26T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:license <http://choosealicense.com/licenses/no-license/> ;
     rdfs:seeAlso <http://ceur-ws.org/Vol-801/#event>,
         <http://ceur-ws.org/Vol-912/#event> .
 
 <http://ceur-ws.org/Vol-1091/#2013-11-25%3AisubmittedibyiAnnettiMitschick> a ns1:Person ;
-    ns3:affiliation "" ;
+    ns4:affiliation "" ;
     ns2:sameAs <http://ceur-ws.org/persons/2013-11-25%3AisubmittedibyiAnnettiMitschick> ;
     ns1:made <http://ceur-ws.org/Vol-1091/#paperX1> ;
     ns1:name "2013-11-25: submitted by Annett Mitschick" .
 
 <http://ceur-ws.org/Vol-1091/#AndreasiN%C3%BCrnberger> a ns1:Person ;
-    ns3:affiliation "" ;
+    ns4:affiliation "" ;
     ns2:sameAs <http://ceur-ws.org/persons/AndreasiN%C3%BCrnberger> ;
     ns1:made <http://ceur-ws.org/Vol-1091/#paper7> ;
     ns1:name "Andreas Nürnberger" .
@@ -190,154 +190,154 @@
         <http://ceur-ws.org/Vol-1091/#paper3> ;
     ns1:name "Nina Tahmasebi" .
 
-<http://ceur-ws.org/Vol-1091/#paper0> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1091/> ;
-    ns7:title "Digital Geolinguistics: On the Use of Linked Open Data for Data-Level Interoperability Between Geolinguistic Resources" ;
-    ns5:endPage 3 ;
-    ns5:numPages 3 ;
-    ns5:startPage 1 ;
-    ns3:author <http://ceur-ws.org/Vol-1091/#GiorgioiMariaiDiiNunzio> .
+<http://ceur-ws.org/Vol-1091/#paper0> a ns7:Paper ;
+    ns7:partOf <http://ceur-ws.org/Vol-1091/> ;
+    ns6:title "Digital Geolinguistics: On the Use of Linked Open Data for Data-Level Interoperability Between Geolinguistic Resources" ;
+    ns3:endPage 3 ;
+    ns3:numPages 3 ;
+    ns3:startPage 1 ;
+    ns4:author <http://ceur-ws.org/Vol-1091/#GiorgioiMariaiDiiNunzio> .
 
-<http://ceur-ws.org/Vol-1091/#paperX1> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1091/> ;
-    ns7:title "Please have a look at the" ;
-    ns5:section <http%3A//ceur-ws.org/Vol-1091/%23AspectsofInformationManagementandAccess> ;
-    ns3:author <http://ceur-ws.org/Vol-1091/#2013-11-25%3AisubmittedibyiAnnettiMitschick> .
+<http://ceur-ws.org/Vol-1091/#paperX1> a ns7:Paper ;
+    ns7:partOf <http://ceur-ws.org/Vol-1091/> ;
+    ns6:title "Please have a look at the" ;
+    ns3:section <http%3A//ceur-ws.org/Vol-1091/%23AspectsofInformationManagementandAccess> ;
+    ns4:author <http://ceur-ws.org/Vol-1091/#2013-11-25%3AisubmittedibyiAnnettiMitschick> .
 
 <http://ceur-ws.org/Vol-1091/#ThomasiRisse> a ns1:Person ;
-    ns3:affiliation "" ;
+    ns4:affiliation "" ;
     ns2:sameAs <http://ceur-ws.org/persons/ThomasiRisse> ;
     ns1:made <http://ceur-ws.org/Vol-1091/#paper2>,
         <http://ceur-ws.org/Vol-1091/#paper3> ;
     ns1:name "Thomas Risse" .
 
-<http://ceur-ws.org/Vol-1091/#paper10> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1091/> ;
-    ns7:title "Semantification of Query Interfaces to Improve Access to Deep Web Content" ;
-    ns5:endPage 111 ;
-    ns5:numPages 8 ;
-    ns5:section <http%3A//ceur-ws.org/Vol-1091/%23AspectsofInformationManagementandAccess> ;
-    ns5:startPage 104 ;
-    ns3:author <http://ceur-ws.org/Vol-1091/#ArneiMartiniKlemenz>,
+<http://ceur-ws.org/Vol-1091/#paper10> a ns7:Paper ;
+    ns7:partOf <http://ceur-ws.org/Vol-1091/> ;
+    ns6:title "Semantification of Query Interfaces to Improve Access to Deep Web Content" ;
+    ns3:endPage 111 ;
+    ns3:numPages 8 ;
+    ns3:section <http%3A//ceur-ws.org/Vol-1091/%23AspectsofInformationManagementandAccess> ;
+    ns3:startPage 104 ;
+    ns4:author <http://ceur-ws.org/Vol-1091/#ArneiMartiniKlemenz>,
         <http://ceur-ws.org/Vol-1091/#KlausiTochtermann> .
 
-<http://ceur-ws.org/Vol-1091/#paper2> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1091/> ;
-    ns7:title "The Role of Language Evolution in Digital Archives" ;
-    ns5:endPage 27 ;
-    ns5:numPages 12 ;
-    ns5:section <http%3A//ceur-ws.org/Vol-1091/%23DigitalPreservationandLanguageEvolution> ;
-    ns5:startPage 16 ;
-    ns3:author <http://ceur-ws.org/Vol-1091/#NinaiTahmasebi>,
+<http://ceur-ws.org/Vol-1091/#paper2> a ns7:Paper ;
+    ns7:partOf <http://ceur-ws.org/Vol-1091/> ;
+    ns6:title "The Role of Language Evolution in Digital Archives" ;
+    ns3:endPage 27 ;
+    ns3:numPages 12 ;
+    ns3:section <http%3A//ceur-ws.org/Vol-1091/%23DigitalPreservationandLanguageEvolution> ;
+    ns3:startPage 16 ;
+    ns4:author <http://ceur-ws.org/Vol-1091/#NinaiTahmasebi>,
         <http://ceur-ws.org/Vol-1091/#ThomasiRisse> .
 
-<http://ceur-ws.org/Vol-1091/#paper7> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1091/> ;
-    ns7:title "Towards Persistent Identification of Resources in Personal Information Management" ;
-    ns5:endPage 80 ;
-    ns5:numPages 8 ;
-    ns5:section <http%3A//ceur-ws.org/Vol-1091/%23AspectsofInformationManagementandAccess> ;
-    ns5:startPage 73 ;
-    ns3:author <http://ceur-ws.org/Vol-1091/#AndreasiN%C3%BCrnberger>,
+<http://ceur-ws.org/Vol-1091/#paper7> a ns7:Paper ;
+    ns7:partOf <http://ceur-ws.org/Vol-1091/> ;
+    ns6:title "Towards Persistent Identification of Resources in Personal Information Management" ;
+    ns3:endPage 80 ;
+    ns3:numPages 8 ;
+    ns3:section <http%3A//ceur-ws.org/Vol-1091/%23AspectsofInformationManagementandAccess> ;
+    ns3:startPage 73 ;
+    ns4:author <http://ceur-ws.org/Vol-1091/#AndreasiN%C3%BCrnberger>,
         <http://ceur-ws.org/Vol-1091/#StefaniHaun> .
 
-<http://ceur-ws.org/Vol-1091/#paper9> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1091/> ;
-    ns7:title "Semantic Retrieval Interface for Statistical Research Data" ;
-    ns5:endPage 103 ;
-    ns5:numPages 11 ;
-    ns5:section <http%3A//ceur-ws.org/Vol-1091/%23AspectsofInformationManagementandAccess> ;
-    ns5:startPage 93 ;
-    ns3:author <http://ceur-ws.org/Vol-1091/#DanieliBahls>,
+<http://ceur-ws.org/Vol-1091/#paper9> a ns7:Paper ;
+    ns7:partOf <http://ceur-ws.org/Vol-1091/> ;
+    ns6:title "Semantic Retrieval Interface for Statistical Research Data" ;
+    ns3:endPage 103 ;
+    ns3:numPages 11 ;
+    ns3:section <http%3A//ceur-ws.org/Vol-1091/%23AspectsofInformationManagementandAccess> ;
+    ns3:startPage 93 ;
+    ns4:author <http://ceur-ws.org/Vol-1091/#DanieliBahls>,
         <http://ceur-ws.org/Vol-1091/#KlausiTochtermann> .
 
-<http%3A//ceur-ws.org/Vol-1091/%23DigitalPreservationandLanguageEvolution> a ns4:SessionEvent ;
-    ns4:partOf <http://ceur-ws.org/Vol-1091/> ;
-    ns7:title "Digital Preservation and Language Evolution" .
+<http%3A//ceur-ws.org/Vol-1091/%23DigitalPreservationandLanguageEvolution> a ns7:SessionEvent ;
+    ns7:partOf <http://ceur-ws.org/Vol-1091/> ;
+    ns6:title "Digital Preservation and Language Evolution" .
 
-<http%3A//ceur-ws.org/Vol-1091/%23LinkedOpenDataandSemanticWebContent> a ns4:SessionEvent ;
-    ns4:partOf <http://ceur-ws.org/Vol-1091/> ;
-    ns7:title "Linked Open Data and Semantic Web Content" .
+<http%3A//ceur-ws.org/Vol-1091/%23LinkedOpenDataandSemanticWebContent> a ns7:SessionEvent ;
+    ns7:partOf <http://ceur-ws.org/Vol-1091/> ;
+    ns6:title "Linked Open Data and Semantic Web Content" .
 
-<http://ceur-ws.org/Vol-1091/#paper3> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1091/> ;
-    ns7:title "BlogNEER: Applying Named Entity Evolution Recognition on the Blogosphere?" ;
-    ns5:endPage 39 ;
-    ns5:numPages 12 ;
-    ns5:section <http%3A//ceur-ws.org/Vol-1091/%23DigitalPreservationandLanguageEvolution> ;
-    ns5:startPage 28 ;
-    ns3:author <http://ceur-ws.org/Vol-1091/#HelgeiHolzmann>,
+<http://ceur-ws.org/Vol-1091/#paper3> a ns7:Paper ;
+    ns7:partOf <http://ceur-ws.org/Vol-1091/> ;
+    ns6:title "BlogNEER: Applying Named Entity Evolution Recognition on the Blogosphere?" ;
+    ns3:endPage 39 ;
+    ns3:numPages 12 ;
+    ns3:section <http%3A//ceur-ws.org/Vol-1091/%23DigitalPreservationandLanguageEvolution> ;
+    ns3:startPage 28 ;
+    ns4:author <http://ceur-ws.org/Vol-1091/#HelgeiHolzmann>,
         <http://ceur-ws.org/Vol-1091/#NinaiTahmasebi>,
         <http://ceur-ws.org/Vol-1091/#ThomasiRisse> .
 
-<http://ceur-ws.org/Vol-1091/#paper5> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1091/> ;
-    ns7:title "A Linked Open Data Architecture for Contemporary Historical Archives" ;
-    ns5:endPage 64 ;
-    ns5:numPages 13 ;
-    ns5:section <http%3A//ceur-ws.org/Vol-1091/%23LinkedOpenDataandSemanticWebContent> ;
-    ns5:startPage 52 ;
-    ns3:author <http://ceur-ws.org/Vol-1091/#AlexandreiRademaker>,
+<http://ceur-ws.org/Vol-1091/#paper5> a ns7:Paper ;
+    ns7:partOf <http://ceur-ws.org/Vol-1091/> ;
+    ns6:title "A Linked Open Data Architecture for Contemporary Historical Archives" ;
+    ns3:endPage 64 ;
+    ns3:numPages 13 ;
+    ns3:section <http%3A//ceur-ws.org/Vol-1091/%23LinkedOpenDataandSemanticWebContent> ;
+    ns3:startPage 52 ;
+    ns4:author <http://ceur-ws.org/Vol-1091/#AlexandreiRademaker>,
         <http://ceur-ws.org/Vol-1091/#DarioiAugustoiBorgesiOliveira>,
         <http://ceur-ws.org/Vol-1091/#SuemiiHiguchi> .
 
-<http://ceur-ws.org/Vol-1091/#paper4> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1091/> ;
-    ns7:title "Elevating Natural History Museums' Cultural Collections to the Linked Data Cloud" ;
-    ns5:endPage 51 ;
-    ns5:numPages 12 ;
-    ns5:section <http%3A//ceur-ws.org/Vol-1091/%23LinkedOpenDataandSemanticWebContent> ;
-    ns5:startPage 40 ;
-    ns3:author <http://ceur-ws.org/Vol-1091/#GiannisiSkevakis>,
+<http://ceur-ws.org/Vol-1091/#paper4> a ns7:Paper ;
+    ns7:partOf <http://ceur-ws.org/Vol-1091/> ;
+    ns6:title "Elevating Natural History Museums' Cultural Collections to the Linked Data Cloud" ;
+    ns3:endPage 51 ;
+    ns3:numPages 12 ;
+    ns3:section <http%3A//ceur-ws.org/Vol-1091/%23LinkedOpenDataandSemanticWebContent> ;
+    ns3:startPage 40 ;
+    ns4:author <http://ceur-ws.org/Vol-1091/#GiannisiSkevakis>,
         <http://ceur-ws.org/Vol-1091/#KonstantinosiMakris>,
         <http://ceur-ws.org/Vol-1091/#PolyxeniiArapi>,
         <http://ceur-ws.org/Vol-1091/#StavrosiChristodoulakis> .
 
-<http://ceur-ws.org/Vol-1091/#paper8> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1091/> ;
-    ns7:title "A Storage Ontology for Hierarchical Storage Management Systems" ;
-    ns5:endPage 92 ;
-    ns5:numPages 12 ;
-    ns5:section <http%3A//ceur-ws.org/Vol-1091/%23AspectsofInformationManagementandAccess> ;
-    ns5:startPage 81 ;
-    ns3:author <http://ceur-ws.org/Vol-1091/#KlausiMei%C3%9Fner>,
+<http://ceur-ws.org/Vol-1091/#paper8> a ns7:Paper ;
+    ns7:partOf <http://ceur-ws.org/Vol-1091/> ;
+    ns6:title "A Storage Ontology for Hierarchical Storage Management Systems" ;
+    ns3:endPage 92 ;
+    ns3:numPages 12 ;
+    ns3:section <http%3A//ceur-ws.org/Vol-1091/%23AspectsofInformationManagementandAccess> ;
+    ns3:startPage 81 ;
+    ns4:author <http://ceur-ws.org/Vol-1091/#KlausiMei%C3%9Fner>,
         <http://ceur-ws.org/Vol-1091/#RonnyiFritzsche>,
         <http://ceur-ws.org/Vol-1091/#SandroiSchmidt>,
         <http://ceur-ws.org/Vol-1091/#TorsteniWauer> .
 
-<http%3A//ceur-ws.org/Vol-1091/%23AspectsofInformationManagementandAccess> a ns4:SessionEvent ;
-    ns4:partOf <http://ceur-ws.org/Vol-1091/> ;
-    ns7:title "Aspects of Information Management and Access" .
+<http%3A//ceur-ws.org/Vol-1091/%23AspectsofInformationManagementandAccess> a ns7:SessionEvent ;
+    ns7:partOf <http://ceur-ws.org/Vol-1091/> ;
+    ns6:title "Aspects of Information Management and Access" .
 
-<http://ceur-ws.org/Vol-1091/#paper6> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1091/> ;
-    ns7:title "Pundit: Creating, Exploring and Consuming Semantic Annotations" ;
-    ns5:endPage 72 ;
-    ns5:numPages 8 ;
-    ns5:section <http%3A//ceur-ws.org/Vol-1091/%23LinkedOpenDataandSemanticWebContent> ;
-    ns5:startPage 65 ;
-    ns3:author <http://ceur-ws.org/Vol-1091/#ChristianiMorbidoni>,
+<http://ceur-ws.org/Vol-1091/#paper6> a ns7:Paper ;
+    ns7:partOf <http://ceur-ws.org/Vol-1091/> ;
+    ns6:title "Pundit: Creating, Exploring and Consuming Semantic Annotations" ;
+    ns3:endPage 72 ;
+    ns3:numPages 8 ;
+    ns3:section <http%3A//ceur-ws.org/Vol-1091/%23LinkedOpenDataandSemanticWebContent> ;
+    ns3:startPage 65 ;
+    ns4:author <http://ceur-ws.org/Vol-1091/#ChristianiMorbidoni>,
         <http://ceur-ws.org/Vol-1091/#FrancescaiDiiDonato>,
         <http://ceur-ws.org/Vol-1091/#MarcoiGrassi>,
         <http://ceur-ws.org/Vol-1091/#MicheleiNucci>,
         <http://ceur-ws.org/Vol-1091/#SimoneiFonda> .
 
-<http://ceur-ws.org/Vol-1091/#paper1> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1091/> ;
-    ns7:title "Towards Preservation of Semantically Enriched Architectural Knowledge" ;
-    ns5:endPage 15 ;
-    ns5:numPages 12 ;
-    ns5:section <http%3A//ceur-ws.org/Vol-1091/%23DigitalPreservationandLanguageEvolution> ;
-    ns5:startPage 4 ;
-    ns3:author <http://ceur-ws.org/Vol-1091/#GeorgiosiKatsimpras>,
+<http://ceur-ws.org/Vol-1091/#paper1> a ns7:Paper ;
+    ns7:partOf <http://ceur-ws.org/Vol-1091/> ;
+    ns6:title "Towards Preservation of Semantically Enriched Architectural Knowledge" ;
+    ns3:endPage 15 ;
+    ns3:numPages 12 ;
+    ns3:section <http%3A//ceur-ws.org/Vol-1091/%23DigitalPreservationandLanguageEvolution> ;
+    ns3:startPage 4 ;
+    ns4:author <http://ceur-ws.org/Vol-1091/#GeorgiosiKatsimpras>,
         <http://ceur-ws.org/Vol-1091/#JakobiBeetz>,
         <http://ceur-ws.org/Vol-1091/#RaouliWessel>,
         <http://ceur-ws.org/Vol-1091/#Ren%C3%A9iBerndt>,
         <http://ceur-ws.org/Vol-1091/#StefaniDietze>,
         <http://ceur-ws.org/Vol-1091/#UjwaliGadiraju> .
 
-<http://ceur-ws.org/Vol-1091/> a ns4:Proceedings ;
-    ns4:hasPart <http://ceur-ws.org/Vol-1091/#paper0>,
+<http://ceur-ws.org/Vol-1091/> a ns7:Proceedings ;
+    ns7:hasPart <http://ceur-ws.org/Vol-1091/#paper0>,
         <http://ceur-ws.org/Vol-1091/#paper1>,
         <http://ceur-ws.org/Vol-1091/#paper10>,
         <http://ceur-ws.org/Vol-1091/#paper2>,
@@ -349,12 +349,12 @@
         <http://ceur-ws.org/Vol-1091/#paper8>,
         <http://ceur-ws.org/Vol-1091/#paper9>,
         <http://ceur-ws.org/Vol-1091/#paperX1> ;
-    ns4:hasSession <http%3A//ceur-ws.org/Vol-1091/%23AspectsofInformationManagementandAccess>,
+    ns7:hasSession <http%3A//ceur-ws.org/Vol-1091/%23AspectsofInformationManagementandAccess>,
         <http%3A//ceur-ws.org/Vol-1091/%23DigitalPreservationandLanguageEvolution>,
         <http%3A//ceur-ws.org/Vol-1091/%23LinkedOpenDataandSemanticWebContent> ;
-    ns6:issued "2013-11-25T00:00:00+00:00"^^xsd:dateTime ;
-    ns5:presentedAt <http://ceur-ws.org/Vol-1091/#event> ;
-    ns3:editor <http://ceur-ws.org/Vol-1091/#2013-11-25%3AisubmittedibyiAnnettiMitschick>,
+    ns8:issued "2013-11-25T00:00:00+00:00"^^xsd:dateTime ;
+    ns3:presentedAt <http://ceur-ws.org/Vol-1091/#event> ;
+    ns4:editor <http://ceur-ws.org/Vol-1091/#2013-11-25%3AisubmittedibyiAnnettiMitschick>,
         <http://ceur-ws.org/Vol-1091/#AndreasiN%C3%BCrnberger>,
         <http://ceur-ws.org/Vol-1091/#LiviaiPredoiu>,
         <http://ceur-ws.org/Vol-1091/#SeamusiRoss>,

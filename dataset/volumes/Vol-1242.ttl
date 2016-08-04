@@ -1,9 +1,9 @@
 @prefix ns1: <http://www.w3.org/2002/07/owl#> .
-@prefix ns2: <http://purl.org/ontology/bibo/#> .
-@prefix ns3: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns2: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns3: <http://purl.org/ontology/bibo/#> .
 @prefix ns4: <http://xmlns.com/foaf/0.1/> .
-@prefix ns5: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns6: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns5: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns6: <http://purl.org/dc/elements/1.1/#> .
 @prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
 @prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -62,7 +62,7 @@
     ns4:name "Gerti Kappel" .
 
 <http://ceur-ws.org/Vol-1242/#JamesiH.iHill> a ns4:Person ;
-    ns3:affiliation "" ;
+    ns2:affiliation "" ;
     ns1:sameAs <http://ceur-ws.org/persons/JamesiH.iHill> ;
     ns4:name "James H. Hill" .
 
@@ -72,7 +72,7 @@
     ns4:name "Jon Whittle" .
 
 <http://ceur-ws.org/Vol-1242/#JordiiCabot> a ns4:Person ;
-    ns3:affiliation "" ;
+    ns2:affiliation "" ;
     ns1:sameAs <http://ceur-ws.org/persons/JordiiCabot> ;
     ns4:name "Jordi Cabot" .
 
@@ -97,7 +97,7 @@
     ns4:name "Márk Asztalos" .
 
 <http://ceur-ws.org/Vol-1242/#MarcoiBrambilla> a ns4:Person ;
-    ns3:affiliation "" ;
+    ns2:affiliation "" ;
     ns1:sameAs <http://ceur-ws.org/persons/MarcoiBrambilla> ;
     ns4:name "Marco Brambilla" .
 
@@ -132,7 +132,7 @@
     ns4:name "Radu Calinescu" .
 
 <http://ceur-ws.org/Vol-1242/#RichardiPaige> a ns4:Person ;
-    ns3:affiliation "" ;
+    ns2:affiliation "" ;
     ns1:sameAs <http://ceur-ws.org/persons/RichardiPaige> ;
     ns4:name "Richard Paige" .
 
@@ -146,13 +146,13 @@
     ns4:made <http://ceur-ws.org/Vol-1242/#paper3> ;
     ns4:name "Ta'id Holmes" .
 
-<http://ceur-ws.org/Vol-1242/#event> a ns6:WorkshopEvent ;
-    ns6:hasLocation <http://dbpedia.org/resource/Spain> ;
-    ns6:hasPart <http://ceur-ws.org/Vol-1242/#part-CloudMDE> ;
-    ns6:isSubEventOf <http://ceur-ws.org/Vol-1242/#conf> ;
+<http://ceur-ws.org/Vol-1242/#event> a ns5:WorkshopEvent ;
+    ns5:hasLocation <http://dbpedia.org/resource/Spain> ;
+    ns5:hasPart <http://ceur-ws.org/Vol-1242/#part-CloudMDE> ;
+    ns5:isSubEventOf <http://ceur-ws.org/Vol-1242/#conf> ;
     ns7:beginsAtDatetime "2014-09-30T00:00:00+00:00"^^xsd:dateTime ;
     ns7:endsAtDatetime "2014-09-30T00:00:00+00:00"^^xsd:dateTime ;
-    ns5:license <http://choosealicense.com/licenses/no-license/> .
+    ns6:license <http://choosealicense.com/licenses/no-license/> .
 
 <http://ceur-ws.org/Vol-1242/#JavieriTroya> a ns4:Person ;
     ns1:sameAs <http://ceur-ws.org/persons/JavieriTroya> ;
@@ -160,11 +160,11 @@
         <http://ceur-ws.org/Vol-1242/#paper7> ;
     ns4:name "Javier Troya" .
 
-<http://ceur-ws.org/Vol-1242/#LouisiM.iRose> a ns4:Person ;
-    ns3:affiliation "" ;
-    ns1:sameAs <http://ceur-ws.org/persons/LouisiM.iRose> ;
+<http://ceur-ws.org/Vol-1242/#LouisiRose> a ns4:Person ;
+    ns2:affiliation "" ;
+    ns1:sameAs <http://ceur-ws.org/persons/LouisiRose> ;
     ns4:made <http://ceur-ws.org/Vol-1242/#paper9> ;
-    ns4:name "Louis M. Rose" .
+    ns4:name "Louis Rose" .
 
 <http://ceur-ws.org/Vol-1242/#ManueliWimmer> a ns4:Person ;
     ns1:sameAs <http://ceur-ws.org/persons/ManueliWimmer> ;
@@ -172,92 +172,92 @@
         <http://ceur-ws.org/Vol-1242/#paper7> ;
     ns4:name "Manuel Wimmer" .
 
-<http://ceur-ws.org/Vol-1242/#paper3> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-1242/> ;
-    ns5:title "Automated Provisioning of Customized Cloud Service Stacks using Domain-Specific Languages" ;
-    ns2:endPage 55 ;
-    ns2:numPages 10 ;
-    ns2:startPage 46 ;
-    ns3:author <http://ceur-ws.org/Vol-1242/#Ta%27idiHolmes> .
+<http://ceur-ws.org/Vol-1242/#paper3> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1242/> ;
+    ns6:title "Automated Provisioning of Customized Cloud Service Stacks using Domain-Specific Languages" ;
+    ns3:endPage 55 ;
+    ns3:numPages 10 ;
+    ns3:startPage 46 ;
+    ns2:author <http://ceur-ws.org/Vol-1242/#Ta%27idiHolmes> .
 
-<http://ceur-ws.org/Vol-1242/#paper1> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-1242/> ;
-    ns5:title "MDE Opportunities in Multi-Tenant Cloud Applications" ;
-    ns2:endPage 5 ;
-    ns2:numPages 5 ;
-    ns2:startPage 1 ;
-    ns3:author <http://ceur-ws.org/Vol-1242/#JoniWhittle>,
+<http://ceur-ws.org/Vol-1242/#paper1> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1242/> ;
+    ns6:title "MDE Opportunities in Multi-Tenant Cloud Applications" ;
+    ns3:endPage 5 ;
+    ns3:numPages 5 ;
+    ns3:startPage 1 ;
+    ns2:author <http://ceur-ws.org/Vol-1242/#JoniWhittle>,
         <http://ceur-ws.org/Vol-1242/#MohammadiAbuiMatar> .
 
-<http://ceur-ws.org/Vol-1242/#paper2> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-1242/> ;
-    ns5:title "Modeling Cloud Messaging with a Domain-Specific Modeling Language" ;
-    ns2:endPage 35 ;
-    ns2:numPages 10 ;
-    ns2:startPage 26 ;
-    ns3:author <http://ceur-ws.org/Vol-1242/#G%C3%A1boriK%C3%B6vesd%C3%A1n>,
+<http://ceur-ws.org/Vol-1242/#paper2> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1242/> ;
+    ns6:title "Modeling Cloud Messaging with a Domain-Specific Modeling Language" ;
+    ns3:endPage 35 ;
+    ns3:numPages 10 ;
+    ns3:startPage 26 ;
+    ns2:author <http://ceur-ws.org/Vol-1242/#G%C3%A1boriK%C3%B6vesd%C3%A1n>,
         <http://ceur-ws.org/Vol-1242/#L%C3%A1szl%C3%B3iLengyel>,
         <http://ceur-ws.org/Vol-1242/#M%C3%A1rkiAsztalos> .
 
-<http://ceur-ws.org/Vol-1242/#paper9> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-1242/> ;
-    ns5:title "Cloud DSL: A Language for Supporting Cloud Portability by Describing Cloud Entities" ;
-    ns2:endPage 45 ;
-    ns2:numPages 10 ;
-    ns2:startPage 36 ;
-    ns3:author <http://ceur-ws.org/Vol-1242/#GabrieliCostaiSilva>,
-        <http://ceur-ws.org/Vol-1242/#LouisiM.iRose>,
+<http://ceur-ws.org/Vol-1242/#paper9> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1242/> ;
+    ns6:title "Cloud DSL: A Language for Supporting Cloud Portability by Describing Cloud Entities" ;
+    ns3:endPage 45 ;
+    ns3:numPages 10 ;
+    ns3:startPage 36 ;
+    ns2:author <http://ceur-ws.org/Vol-1242/#GabrieliCostaiSilva>,
+        <http://ceur-ws.org/Vol-1242/#LouisiRose>,
         <http://ceur-ws.org/Vol-1242/#RaduiCalinescu> .
 
-<http://ceur-ws.org/Vol-1242/#paper4> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-1242/> ;
-    ns5:title "Towards Cloud-Based Software Process Modelling and Enactment" ;
-    ns2:endPage 15 ;
-    ns2:numPages 10 ;
-    ns2:startPage 6 ;
-    ns3:author <http://ceur-ws.org/Vol-1242/#AlexanderiRomanovsky>,
+<http://ceur-ws.org/Vol-1242/#paper4> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1242/> ;
+    ns6:title "Towards Cloud-Based Software Process Modelling and Enactment" ;
+    ns3:endPage 15 ;
+    ns3:numPages 10 ;
+    ns3:startPage 6 ;
+    ns2:author <http://ceur-ws.org/Vol-1242/#AlexanderiRomanovsky>,
         <http://ceur-ws.org/Vol-1242/#AndreasiRoth>,
         <http://ceur-ws.org/Vol-1242/#PauliWatson>,
         <http://ceur-ws.org/Vol-1242/#SamiiAlajrami> .
 
-<http://ceur-ws.org/Vol-1242/#paper6> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-1242/> ;
-    ns5:title "Towards Pattern-Based Optimization of Cloud Applications" ;
-    ns2:endPage 25 ;
-    ns2:numPages 10 ;
-    ns2:startPage 16 ;
-    ns3:author <http://ceur-ws.org/Vol-1242/#JavieriTroya>,
+<http://ceur-ws.org/Vol-1242/#paper6> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1242/> ;
+    ns6:title "Towards Pattern-Based Optimization of Cloud Applications" ;
+    ns3:endPage 25 ;
+    ns3:numPages 10 ;
+    ns3:startPage 16 ;
+    ns2:author <http://ceur-ws.org/Vol-1242/#JavieriTroya>,
         <http://ceur-ws.org/Vol-1242/#ManueliWimmer>,
         <http://ceur-ws.org/Vol-1242/#MartiniFleck>,
         <http://ceur-ws.org/Vol-1242/#PhilipiLanger> .
 
-<http://ceur-ws.org/Vol-1242/#paper7> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-1242/> ;
-    ns5:title "UML-based Cloud Application Modeling with Libraries, Profiles, and Templates" ;
-    ns2:endPage 65 ;
-    ns2:numPages 10 ;
-    ns2:startPage 56 ;
-    ns3:author <http://ceur-ws.org/Vol-1242/#AlexanderiBergmayr>,
+<http://ceur-ws.org/Vol-1242/#paper7> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1242/> ;
+    ns6:title "UML-based Cloud Application Modeling with Libraries, Profiles, and Templates" ;
+    ns3:endPage 65 ;
+    ns3:numPages 10 ;
+    ns3:startPage 56 ;
+    ns2:author <http://ceur-ws.org/Vol-1242/#AlexanderiBergmayr>,
         <http://ceur-ws.org/Vol-1242/#GertiiKappel>,
         <http://ceur-ws.org/Vol-1242/#JavieriTroya>,
         <http://ceur-ws.org/Vol-1242/#ManueliWimmer>,
         <http://ceur-ws.org/Vol-1242/#PatrickiNeubauer> .
 
-<http://ceur-ws.org/Vol-1242/#paper10> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-1242/> ;
-    ns5:title "MDEForge: an Extensible Web-Based Modeling Platform" ;
-    ns2:endPage 75 ;
-    ns2:numPages 10 ;
-    ns2:startPage 66 ;
-    ns3:author <http://ceur-ws.org/Vol-1242/#AlfonsoiPierantonio>,
+<http://ceur-ws.org/Vol-1242/#paper10> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1242/> ;
+    ns6:title "MDEForge: an Extensible Web-Based Modeling Platform" ;
+    ns3:endPage 75 ;
+    ns3:numPages 10 ;
+    ns3:startPage 66 ;
+    ns2:author <http://ceur-ws.org/Vol-1242/#AlfonsoiPierantonio>,
         <http://ceur-ws.org/Vol-1242/#AmletoiDiiSalle>,
         <http://ceur-ws.org/Vol-1242/#DavideiDiiRuscio>,
         <http://ceur-ws.org/Vol-1242/#FrancescoiBasciani>,
         <http://ceur-ws.org/Vol-1242/#JuriiDiiRocco>,
         <http://ceur-ws.org/Vol-1242/#LudovicoiIovino> .
 
-<http://ceur-ws.org/Vol-1242/> a ns6:Proceedings ;
-    ns6:hasPart <http://ceur-ws.org/Vol-1242/#paper1>,
+<http://ceur-ws.org/Vol-1242/> a ns5:Proceedings ;
+    ns5:hasPart <http://ceur-ws.org/Vol-1242/#paper1>,
         <http://ceur-ws.org/Vol-1242/#paper10>,
         <http://ceur-ws.org/Vol-1242/#paper2>,
         <http://ceur-ws.org/Vol-1242/#paper3>,
@@ -266,10 +266,10 @@
         <http://ceur-ws.org/Vol-1242/#paper7>,
         <http://ceur-ws.org/Vol-1242/#paper9> ;
     ns8:issued "2014-09-16T00:00:00+00:00"^^xsd:dateTime ;
-    ns2:presentedAt <http://ceur-ws.org/Vol-1242/#event> ;
-    ns3:editor <http://ceur-ws.org/Vol-1242/#JamesiH.iHill>,
+    ns3:presentedAt <http://ceur-ws.org/Vol-1242/#event> ;
+    ns2:editor <http://ceur-ws.org/Vol-1242/#JamesiH.iHill>,
         <http://ceur-ws.org/Vol-1242/#JordiiCabot>,
-        <http://ceur-ws.org/Vol-1242/#LouisiM.iRose>,
+        <http://ceur-ws.org/Vol-1242/#LouisiRose>,
         <http://ceur-ws.org/Vol-1242/#MarcoiBrambilla>,
         <http://ceur-ws.org/Vol-1242/#RichardiPaige> .
 

@@ -1,10 +1,10 @@
 @prefix ns1: <http://xmlns.com/foaf/0.1/> .
 @prefix ns2: <http://www.w3.org/2002/07/owl#> .
 @prefix ns3: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns4: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns5: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns4: <http://purl.org/ontology/bibo/#> .
+@prefix ns5: <http://data.semanticweb.org/ns/swc/ontology/#> .
 @prefix ns6: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns7: <http://purl.org/ontology/bibo/#> .
+@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -32,7 +32,7 @@
     ns1:name "Alexander Maedche" .
 
 <http://ceur-ws.org/Vol-64/#AsuncioniGomez-Perez> a ns1:Person ;
-    ns7:place <http://dbpedia.org/resource/Spain> ;
+    ns4:place <http://dbpedia.org/resource/Spain> ;
     ns3:affiliation "Universidad Polytecnica de Madrid" ;
     ns2:sameAs <http://ceur-ws.org/persons/AsuncioniGomez-Perez> ;
     ns1:name "Asuncion Gomez-Perez" .
@@ -148,7 +148,7 @@
     ns1:name "Michel Klein" .
 
 <http://ceur-ws.org/Vol-64/#NicolaiGuarino> a ns1:Person ;
-    ns7:place <http://dbpedia.org/resource/Italy> ;
+    ns4:place <http://dbpedia.org/resource/Italy> ;
     ns3:affiliation "LADSEP-CNR, Padova" ;
     ns2:sameAs <http://ceur-ws.org/persons/NicolaiGuarino> ;
     ns1:name "Nicola Guarino" .
@@ -198,59 +198,59 @@
     ns1:made <http://ceur-ws.org/Vol-64/#hammer> ;
     ns1:name "William O'Brien" .
 
-<http://ceur-ws.org/Vol-64/#event> a ns4:WorkshopEvent ;
-    ns4:hasLocation <http://dbpedia.org/resource/France> ;
-    ns4:hasPart <http://ceur-ws.org/Vol-64/#part-ECAI> ;
-    ns4:isSubEventOf <http://ceur-ws.org/Vol-64/#conf> ;
+<http://ceur-ws.org/Vol-64/#event> a ns5:WorkshopEvent ;
+    ns5:hasLocation <http://dbpedia.org/resource/France> ;
+    ns5:hasPart <http://ceur-ws.org/Vol-64/#part-ECAI> ;
+    ns5:isSubEventOf <http://ceur-ws.org/Vol-64/#conf> ;
     ns8:beginsAtDatetime "2002-07-22T00:00:00+00:00"^^xsd:dateTime ;
     ns8:endsAtDatetime "2002-07-22T00:00:00+00:00"^^xsd:dateTime ;
     ns6:license <http://choosealicense.com/licenses/no-license/> .
 
-<http://ceur-ws.org/Vol-64/#fernandez> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-64/> ;
+<http://ceur-ws.org/Vol-64/#fernandez> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-64/> ;
     ns6:title "Meta-modelling for ontology development and knowledge exchange" ;
     ns3:author <http://ceur-ws.org/Vol-64/#MarianoiFernandez-Lopez> .
 
-<http://ceur-ws.org/Vol-64/#menzel> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-64/> ;
+<http://ceur-ws.org/Vol-64/#menzel> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-64/> ;
     ns6:title "Ontology Theory" ;
     ns3:author <http://ceur-ws.org/Vol-64/#ChristopheriMenzel> .
 
-<http://ceur-ws.org/Vol-64/#mitra> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-64/> ;
+<http://ceur-ws.org/Vol-64/#mitra> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-64/> ;
     ns6:title "Resolving Terminological Heterogeneity In Ontologies" ;
     ns3:author <http://ceur-ws.org/Vol-64/#GioiWiederhold>,
         <http://ceur-ws.org/Vol-64/#PrasenjitiMitra> .
 
-<http://ceur-ws.org/Vol-64/#tamma> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-64/> ;
+<http://ceur-ws.org/Vol-64/#tamma> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-64/> ;
     ns6:title "Attribute meta-properties for knowledge sharing" ;
     ns3:author <http://ceur-ws.org/Vol-64/#TrevoriJ.M.iBenchiCapon>,
         <http://ceur-ws.org/Vol-64/#ValentinaiTamma> .
 
-<http://ceur-ws.org/Vol-64/#visser> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-64/> ;
+<http://ceur-ws.org/Vol-64/#visser> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-64/> ;
     ns6:title "Finding and Integration of Information - A Practical Solution for the Semantic Web" ;
     ns3:author <http://ceur-ws.org/Vol-64/#GerhardiSchuster>,
         <http://ceur-ws.org/Vol-64/#UbboiVisser> .
 
-<http://ceur-ws.org/Vol-64/#volz> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-64/> ;
+<http://ceur-ws.org/Vol-64/#volz> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-64/> ;
     ns6:title "Towards a Modularized Semantic Web" ;
     ns3:author <http://ceur-ws.org/Vol-64/#AlexanderiMaedche>,
         <http://ceur-ws.org/Vol-64/#DanieliOberle>,
         <http://ceur-ws.org/Vol-64/#RaffaeliVolz> .
 
-<http://ceur-ws.org/Vol-64/#klein> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-64/> ;
+<http://ceur-ws.org/Vol-64/#klein> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-64/> ;
     ns6:title "Finding and specifying relations between ontology versions" ;
     ns3:author <http://ceur-ws.org/Vol-64/#AtanasiKiryakov>,
         <http://ceur-ws.org/Vol-64/#DamyaniOgnyanoff>,
         <http://ceur-ws.org/Vol-64/#DieteriFensel>,
         <http://ceur-ws.org/Vol-64/#MicheliKlein> .
 
-<http://ceur-ws.org/Vol-64/#hammer> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-64/> ;
+<http://ceur-ws.org/Vol-64/#hammer> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-64/> ;
     ns6:title "SEEKing Knowledge in Legacy Information Systems to Support Interoperability" ;
     ns3:author <http://ceur-ws.org/Vol-64/#JoachimiHammer>,
         <http://ceur-ws.org/Vol-64/#MarkiSchmalz>,
@@ -258,8 +258,8 @@
         <http://ceur-ws.org/Vol-64/#SangeethaiShekar>,
         <http://ceur-ws.org/Vol-64/#WilliamiO%27Brien> .
 
-<http://ceur-ws.org/Vol-64/#fiedler> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-64/> ;
+<http://ceur-ws.org/Vol-64/#fiedler> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-64/> ;
     ns6:title "Ontological Issues in the Representation and Presentation of Mathematical Concepts" ;
     ns3:author <http://ceur-ws.org/Vol-64/#A.iFiedler>,
         <http://ceur-ws.org/Vol-64/#A.iFranke>,
@@ -268,8 +268,8 @@
         <http://ceur-ws.org/Vol-64/#MiMoschner>,
         <http://ceur-ws.org/Vol-64/#V.iSorge> .
 
-<http://ceur-ws.org/Vol-64/#gangemi> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-64/> ;
+<http://ceur-ws.org/Vol-64/#gangemi> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-64/> ;
     ns6:title "A Formal Ontological Framework for Semantic Interoperability in the Fishery Domain" ;
     ns3:author <http://ceur-ws.org/Vol-64/#AldoiGangemi>,
         <http://ceur-ws.org/Vol-64/#Domenico>,
@@ -279,8 +279,8 @@
         <http://ceur-ws.org/Vol-64/#M.Pisanelli>,
         <http://ceur-ws.org/Vol-64/#MarciTaconet> .
 
-<http://ceur-ws.org/Vol-64/> a ns4:Proceedings ;
-    ns4:hasPart <http://ceur-ws.org/Vol-64/#fernandez>,
+<http://ceur-ws.org/Vol-64/> a ns5:Proceedings ;
+    ns5:hasPart <http://ceur-ws.org/Vol-64/#fernandez>,
         <http://ceur-ws.org/Vol-64/#fiedler>,
         <http://ceur-ws.org/Vol-64/#gangemi>,
         <http://ceur-ws.org/Vol-64/#hammer>,
@@ -290,8 +290,8 @@
         <http://ceur-ws.org/Vol-64/#tamma>,
         <http://ceur-ws.org/Vol-64/#visser>,
         <http://ceur-ws.org/Vol-64/#volz> ;
-    ns5:issued "2002-11-04T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:presentedAt <http://ceur-ws.org/Vol-64/#event> ;
+    ns7:issued "2002-11-04T00:00:00+00:00"^^xsd:dateTime ;
+    ns4:presentedAt <http://ceur-ws.org/Vol-64/#event> ;
     ns3:editor <http://ceur-ws.org/Vol-64/#AsuncioniGomez-Perez>,
         <http://ceur-ws.org/Vol-64/#HeineriStuckenschmidt>,
         <http://ceur-ws.org/Vol-64/#JeromeiEuzenat>,

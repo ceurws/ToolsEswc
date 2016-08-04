@@ -1,44 +1,44 @@
-@prefix ns1: <http://xmlns.com/foaf/0.1/> .
+@prefix ns1: <http://www.w3.org/2002/07/owl#> .
 @prefix ns2: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns3: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns4: <http://www.w3.org/2002/07/owl#> .
-@prefix ns5: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns6: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns7: <http://purl.org/ontology/bibo/#> .
-@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns3: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns4: <http://xmlns.com/foaf/0.1/> .
+@prefix ns5: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns6: <http://purl.org/ontology/bibo/#> .
+@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns8: <http://purl.org/dc/elements/1.1/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-27/> a ns3:Proceedings ;
-    ns8:issued "2000-03-24T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:presentedAt <http://ceur-ws.org/Vol-27/#event> ;
+<http://ceur-ws.org/Vol-27/> a ns5:Proceedings ;
+    ns7:issued "2000-03-24T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:presentedAt <http://ceur-ws.org/Vol-27/#event> ;
     ns2:editor <http://ceur-ws.org/Vol-27/#AlexanderiHorsch>,
         <http://ceur-ws.org/Vol-27/#Herausgegebenivon>,
         <http://ceur-ws.org/Vol-27/#ThomasiLehmann>,
         <http://ceur-ws.org/Vol-27/#und> .
 
-<http://ceur-ws.org/Vol-27/#AlexanderiHorsch> a ns1:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/AlexanderiHorsch> ;
-    ns1:name "Alexander Horsch" .
+<http://ceur-ws.org/Vol-27/#AlexanderiHorsch> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/AlexanderiHorsch> ;
+    ns4:name "Alexander Horsch" .
 
-<http://ceur-ws.org/Vol-27/#Herausgegebenivon> a ns1:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/Herausgegebenivon> ;
-    ns1:name "Herausgegeben von" .
+<http://ceur-ws.org/Vol-27/#Herausgegebenivon> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/Herausgegebenivon> ;
+    ns4:name "Herausgegeben von" .
 
-<http://ceur-ws.org/Vol-27/#ThomasiLehmann> a ns1:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/ThomasiLehmann> ;
-    ns1:name "Thomas Lehmann" .
+<http://ceur-ws.org/Vol-27/#ThomasiLehmann> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/ThomasiLehmann> ;
+    ns4:name "Thomas Lehmann" .
 
-<http://ceur-ws.org/Vol-27/#event> a ns3:WorkshopEvent ;
-    ns3:hasPart <http://ceur-ws.org/Vol-27/#part-ws> ;
-    ns3:isSubEventOf <http://ceur-ws.org/Vol-27/#conf> ;
-    ns5:beginsAtDatetime "2000-03-14T00:00:00+00:00"^^xsd:dateTime ;
-    ns5:endsAtDatetime "2000-03-14T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:license <http://choosealicense.com/licenses/no-license/> .
+<http://ceur-ws.org/Vol-27/#event> a ns5:WorkshopEvent ;
+    ns5:hasPart <http://ceur-ws.org/Vol-27/#part-ws> ;
+    ns5:isSubEventOf <http://ceur-ws.org/Vol-27/#conf> ;
+    ns3:beginsAtDatetime "2000-03-14T00:00:00+00:00"^^xsd:dateTime ;
+    ns3:endsAtDatetime "2000-03-14T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:license <http://choosealicense.com/licenses/no-license/> .
 
-<http://ceur-ws.org/Vol-27/#und> a ns1:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/und> ;
-    ns1:name "und" .
+<http://ceur-ws.org/Vol-27/#und> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/und> ;
+    ns4:name "und" .
 

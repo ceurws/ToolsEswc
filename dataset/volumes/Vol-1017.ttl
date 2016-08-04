@@ -1,11 +1,11 @@
-@prefix ns1: <http://purl.org/ontology/bibo/#> .
+@prefix ns1: <http://purl.org/dc/elements/1.1/#> .
 @prefix ns2: <http://xmlns.com/foaf/0.1/> .
 @prefix ns3: <http://www.w3.org/2002/07/owl#> .
-@prefix ns4: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns5: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns6: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns4: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns5: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns6: <http://purl.org/ontology/bibo/#> .
+@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -177,25 +177,25 @@
     ns2:name "Vadim Chepegin" .
 
 <http://ceur-ws.org/Vol-1017/#VicenteiPelechano> a ns2:Person ;
-    ns6:affiliation "" ;
+    ns5:affiliation "" ;
     ns3:sameAs <http://ceur-ws.org/persons/VicenteiPelechano> ;
     ns2:name "Vicente Pelechano" .
 
 <http://ceur-ws.org/Vol-1017/#YvesiPigneur> a ns2:Person ;
-    ns6:affiliation "" ;
+    ns5:affiliation "" ;
     ns3:sameAs <http://ceur-ws.org/persons/YvesiPigneur> ;
     ns2:name "Yves Pigneur" .
 
-<http://ceur-ws.org/Vol-1017/#event> a ns5:WorkshopEvent ;
-    ns5:hasLocation <http://dbpedia.org/resource/Spain> ;
-    ns5:hasPart <http://ceur-ws.org/Vol-1017/#part-CAiSE-IT> ;
-    ns5:isSubEventOf <http://ceur-ws.org/Vol-1017/#conf> ;
-    ns8:beginsAtDatetime "2013-06-21T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:endsAtDatetime "2013-06-21T00:00:00+00:00"^^xsd:dateTime ;
-    ns4:license <http://choosealicense.com/licenses/no-license/> .
+<http://ceur-ws.org/Vol-1017/#event> a ns4:WorkshopEvent ;
+    ns4:hasLocation <http://dbpedia.org/resource/Spain> ;
+    ns4:hasPart <http://ceur-ws.org/Vol-1017/#part-CAiSE-IT> ;
+    ns4:isSubEventOf <http://ceur-ws.org/Vol-1017/#conf> ;
+    ns7:beginsAtDatetime "2013-06-21T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:endsAtDatetime "2013-06-21T00:00:00+00:00"^^xsd:dateTime ;
+    ns1:license <http://choosealicense.com/licenses/no-license/> .
 
 <http://ceur-ws.org/Vol-1017/#GiliRegev> a ns2:Person ;
-    ns6:affiliation "" ;
+    ns5:affiliation "" ;
     ns3:sameAs <http://ceur-ws.org/persons/GiliRegev> ;
     ns2:made <http://ceur-ws.org/Vol-1017/#Panel1CAiSE_IT2013> ;
     ns2:name "Gil Regev" .
@@ -206,92 +206,92 @@
         <http://ceur-ws.org/Vol-1017/#Paper4CAiSE_IT2013> ;
     ns2:name "M.J. Escalona" .
 
-<http://ceur-ws.org/Vol-1017/#Panel1CAiSE_IT2013> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1017/> ;
-    ns4:title "The Relationship Between IS Research and Industry. What Do They Learn From One Another?" ;
-    ns1:endPage 42 ;
-    ns1:numPages 2 ;
-    ns1:section <http%3A//ceur-ws.org/Vol-1017/%23Session2%3APanels> ;
-    ns1:startPage 41 ;
-    ns6:author <http://ceur-ws.org/Vol-1017/#GiliRegev> .
+<http://ceur-ws.org/Vol-1017/#Panel1CAiSE_IT2013> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1017/> ;
+    ns1:title "The Relationship Between IS Research and Industry. What Do They Learn From One Another?" ;
+    ns6:endPage 42 ;
+    ns6:numPages 2 ;
+    ns6:section <http%3A//ceur-ws.org/Vol-1017/%23Session2%3APanels> ;
+    ns6:startPage 41 ;
+    ns5:author <http://ceur-ws.org/Vol-1017/#GiliRegev> .
 
-<http%3A//ceur-ws.org/Vol-1017/%23Session2%3APanels> a ns5:SessionEvent ;
-    ns5:partOf <http://ceur-ws.org/Vol-1017/> ;
-    ns4:title "Session 2: Panels" .
+<http%3A//ceur-ws.org/Vol-1017/%23Session2%3APanels> a ns4:SessionEvent ;
+    ns4:partOf <http://ceur-ws.org/Vol-1017/> ;
+    ns1:title "Session 2: Panels" .
 
-<http://ceur-ws.org/Vol-1017/#Panel2CAiSE_IT2013> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1017/> ;
-    ns4:title "Successful Empirical Research in Software Testing With Industry" ;
-    ns1:endPage 45 ;
-    ns1:numPages 3 ;
-    ns1:section <http%3A//ceur-ws.org/Vol-1017/%23Session2%3APanels> ;
-    ns1:startPage 43 ;
-    ns6:author <http://ceur-ws.org/Vol-1017/#NellyiCondori-Fernandez>,
+<http://ceur-ws.org/Vol-1017/#Panel2CAiSE_IT2013> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1017/> ;
+    ns1:title "Successful Empirical Research in Software Testing With Industry" ;
+    ns6:endPage 45 ;
+    ns6:numPages 3 ;
+    ns6:section <http%3A//ceur-ws.org/Vol-1017/%23Session2%3APanels> ;
+    ns6:startPage 43 ;
+    ns5:author <http://ceur-ws.org/Vol-1017/#NellyiCondori-Fernandez>,
         <http://ceur-ws.org/Vol-1017/#TanjaiVos> .
 
-<http://ceur-ws.org/Vol-1017/#Paper3CAiSE_IT2013> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1017/> ;
-    ns4:title "Transformation of IT Systems - Socially Acceptable, Efficient, Successful" ;
-    ns1:endPage 24 ;
-    ns1:numPages 8 ;
-    ns1:section <http%3A//ceur-ws.org/Vol-1017/%23Session1%3AIndustrySession> ;
-    ns1:startPage 17 ;
-    ns6:author <http://ceur-ws.org/Vol-1017/#AndreasiEberhardt>,
+<http://ceur-ws.org/Vol-1017/#Paper3CAiSE_IT2013> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1017/> ;
+    ns1:title "Transformation of IT Systems - Socially Acceptable, Efficient, Successful" ;
+    ns6:endPage 24 ;
+    ns6:numPages 8 ;
+    ns6:section <http%3A//ceur-ws.org/Vol-1017/%23Session1%3AIndustrySession> ;
+    ns6:startPage 17 ;
+    ns5:author <http://ceur-ws.org/Vol-1017/#AndreasiEberhardt>,
         <http://ceur-ws.org/Vol-1017/#Pierre-YvesiCloux> .
 
-<http://ceur-ws.org/Vol-1017/#Paper1CAiSE_IT2013> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1017/> ;
-    ns4:title "Agile in Public Administration: Oxymoron or Reality? An Experience Report." ;
-    ns1:endPage 8 ;
-    ns1:numPages 8 ;
-    ns1:section <http%3A//ceur-ws.org/Vol-1017/%23Session1%3AIndustrySession> ;
-    ns1:startPage 1 ;
-    ns6:author <http://ceur-ws.org/Vol-1017/#CarlosiTorrecilla-Salinas>,
+<http://ceur-ws.org/Vol-1017/#Paper1CAiSE_IT2013> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1017/> ;
+    ns1:title "Agile in Public Administration: Oxymoron or Reality? An Experience Report." ;
+    ns6:endPage 8 ;
+    ns6:numPages 8 ;
+    ns6:section <http%3A//ceur-ws.org/Vol-1017/%23Session1%3AIndustrySession> ;
+    ns6:startPage 1 ;
+    ns5:author <http://ceur-ws.org/Vol-1017/#CarlosiTorrecilla-Salinas>,
         <http://ceur-ws.org/Vol-1017/#JorgeiSede%C3%B1o>,
         <http://ceur-ws.org/Vol-1017/#M.J.iEscalona>,
         <http://ceur-ws.org/Vol-1017/#ManueliMej%C3%ADas> .
 
-<http%3A//ceur-ws.org/Vol-1017/%23Session1%3AIndustrySession> a ns5:SessionEvent ;
-    ns5:partOf <http://ceur-ws.org/Vol-1017/> ;
-    ns4:title "Session 1: Industry Session" .
+<http%3A//ceur-ws.org/Vol-1017/%23Session1%3AIndustrySession> a ns4:SessionEvent ;
+    ns4:partOf <http://ceur-ws.org/Vol-1017/> ;
+    ns1:title "Session 1: Industry Session" .
 
-<http://ceur-ws.org/Vol-1017/#Paper4CAiSE_IT2013> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1017/> ;
-    ns4:title "Applying Model-Driven Paradigm: CALIPSOneo Experience" ;
-    ns1:endPage 32 ;
-    ns1:numPages 8 ;
-    ns1:section <http%3A//ceur-ws.org/Vol-1017/%23Session1%3AIndustrySession> ;
-    ns1:startPage 25 ;
-    ns6:author <http://ceur-ws.org/Vol-1017/#CarmeloiDeliValle>,
+<http://ceur-ws.org/Vol-1017/#Paper4CAiSE_IT2013> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1017/> ;
+    ns1:title "Applying Model-Driven Paradigm: CALIPSOneo Experience" ;
+    ns6:endPage 32 ;
+    ns6:numPages 8 ;
+    ns6:section <http%3A//ceur-ws.org/Vol-1017/%23Session1%3AIndustrySession> ;
+    ns6:startPage 25 ;
+    ns5:author <http://ceur-ws.org/Vol-1017/#CarmeloiDeliValle>,
         <http://ceur-ws.org/Vol-1017/#FernandoiMas>,
         <http://ceur-ws.org/Vol-1017/#JulianiGarcia-Garcia>,
         <http://ceur-ws.org/Vol-1017/#M.J.iEscalona>,
         <http://ceur-ws.org/Vol-1017/#ManueliOliva> .
 
-<http://ceur-ws.org/Vol-1017/> a ns5:Proceedings ;
-    ns5:hasPart <http://ceur-ws.org/Vol-1017/#Panel1CAiSE_IT2013>,
+<http://ceur-ws.org/Vol-1017/> a ns4:Proceedings ;
+    ns4:hasPart <http://ceur-ws.org/Vol-1017/#Panel1CAiSE_IT2013>,
         <http://ceur-ws.org/Vol-1017/#Panel2CAiSE_IT2013>,
         <http://ceur-ws.org/Vol-1017/#Paper1CAiSE_IT2013>,
         <http://ceur-ws.org/Vol-1017/#Paper2CAiSE_IT2013>,
         <http://ceur-ws.org/Vol-1017/#Paper3CAiSE_IT2013>,
         <http://ceur-ws.org/Vol-1017/#Paper4CAiSE_IT2013>,
         <http://ceur-ws.org/Vol-1017/#Paper5CAiSE_IT2013> ;
-    ns5:hasSession <http%3A//ceur-ws.org/Vol-1017/%23Session1%3AIndustrySession>,
+    ns4:hasSession <http%3A//ceur-ws.org/Vol-1017/%23Session1%3AIndustrySession>,
         <http%3A//ceur-ws.org/Vol-1017/%23Session2%3APanels> ;
-    ns7:issued "2013-08-01T00:00:00+00:00"^^xsd:dateTime ;
-    ns1:presentedAt <http://ceur-ws.org/Vol-1017/#event> ;
-    ns6:editor <http://ceur-ws.org/Vol-1017/#GiliRegev>,
+    ns8:issued "2013-08-01T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:presentedAt <http://ceur-ws.org/Vol-1017/#event> ;
+    ns5:editor <http://ceur-ws.org/Vol-1017/#GiliRegev>,
         <http://ceur-ws.org/Vol-1017/#VicenteiPelechano>,
         <http://ceur-ws.org/Vol-1017/#YvesiPigneur> .
 
-<http://ceur-ws.org/Vol-1017/#Paper2CAiSE_IT2013> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1017/> ;
-    ns4:title "Ontology-Based Data Access: The Experience at the Italian Department of Treasury." ;
-    ns1:endPage 16 ;
-    ns1:numPages 8 ;
-    ns1:section <http%3A//ceur-ws.org/Vol-1017/%23Session1%3AIndustrySession> ;
-    ns1:startPage 9 ;
-    ns6:author <http://ceur-ws.org/Vol-1017/#AntonellaiPoggi>,
+<http://ceur-ws.org/Vol-1017/#Paper2CAiSE_IT2013> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1017/> ;
+    ns1:title "Ontology-Based Data Access: The Experience at the Italian Department of Treasury." ;
+    ns6:endPage 16 ;
+    ns6:numPages 8 ;
+    ns6:section <http%3A//ceur-ws.org/Vol-1017/%23Session1%3AIndustrySession> ;
+    ns6:startPage 9 ;
+    ns5:author <http://ceur-ws.org/Vol-1017/#AntonellaiPoggi>,
         <http://ceur-ws.org/Vol-1017/#CristinaiCivili>,
         <http://ceur-ws.org/Vol-1017/#DomenicoiFabioiSavo>,
         <http://ceur-ws.org/Vol-1017/#DomenicoiLembo>,
@@ -302,14 +302,14 @@
         <http://ceur-ws.org/Vol-1017/#SpartacoiColetta>,
         <http://ceur-ws.org/Vol-1017/#StefanoiGrossi> .
 
-<http://ceur-ws.org/Vol-1017/#Paper5CAiSE_IT2013> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1017/> ;
-    ns4:title "Application of Intelligent Service Bus in a Ramp-up Production Context" ;
-    ns1:endPage 40 ;
-    ns1:numPages 8 ;
-    ns1:section <http%3A//ceur-ws.org/Vol-1017/%23Session1%3AIndustrySession> ;
-    ns1:startPage 33 ;
-    ns6:author <http://ceur-ws.org/Vol-1017/#AlexanderiTsarev>,
+<http://ceur-ws.org/Vol-1017/#Paper5CAiSE_IT2013> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1017/> ;
+    ns1:title "Application of Intelligent Service Bus in a Ramp-up Production Context" ;
+    ns6:endPage 40 ;
+    ns6:numPages 8 ;
+    ns6:section <http%3A//ceur-ws.org/Vol-1017/%23Session1%3AIndustrySession> ;
+    ns6:startPage 33 ;
+    ns5:author <http://ceur-ws.org/Vol-1017/#AlexanderiTsarev>,
         <http://ceur-ws.org/Vol-1017/#CesariMarin>,
         <http://ceur-ws.org/Vol-1017/#DariaiKazanskaia>,
         <http://ceur-ws.org/Vol-1017/#GeorgiosiLioudakis>,

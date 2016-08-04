@@ -1,42 +1,42 @@
-@prefix ns1: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns2: <http://www.w3.org/2002/07/owl#> .
-@prefix ns3: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns4: <http://xmlns.com/foaf/0.1/> .
-@prefix ns5: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns6: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns7: <http://purl.org/ontology/bibo/#> .
-@prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns1: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns2: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns3: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns4: <http://www.w3.org/2002/07/owl#> .
+@prefix ns5: <http://purl.org/ontology/bibo/#> .
+@prefix ns6: <http://xmlns.com/foaf/0.1/> .
+@prefix ns7: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns8: <http://data.semanticweb.org/ns/swc/ontology/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-95/> a ns1:Proceedings ;
-    ns5:issued "2004-02-24T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:presentedAt <http://ceur-ws.org/Vol-95/#event> ;
-    ns6:editor <http://ceur-ws.org/Vol-95/#AlexandraiPoulovassilis>,
+<http://ceur-ws.org/Vol-95/> a ns8:Proceedings ;
+    ns2:issued "2004-02-24T00:00:00+00:00"^^xsd:dateTime ;
+    ns5:presentedAt <http://ceur-ws.org/Vol-95/#event> ;
+    ns7:editor <http://ceur-ws.org/Vol-95/#AlexandraiPoulovassilis>,
         <http://ceur-ws.org/Vol-95/#KeviniKeenoy>,
         <http://ceur-ws.org/Vol-95/#VassilisiChristophides> .
 
-<http://ceur-ws.org/Vol-95/#AlexandraiPoulovassilis> a ns4:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/AlexandraiPoulovassilis> ;
-    ns4:name "Alexandra Poulovassilis" .
+<http://ceur-ws.org/Vol-95/#AlexandraiPoulovassilis> a ns6:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/AlexandraiPoulovassilis> ;
+    ns6:name "Alexandra Poulovassilis" .
 
-<http://ceur-ws.org/Vol-95/#KeviniKeenoy> a ns4:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/KeviniKeenoy> ;
-    ns4:name "Kevin Keenoy" .
+<http://ceur-ws.org/Vol-95/#KeviniKeenoy> a ns6:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/KeviniKeenoy> ;
+    ns6:name "Kevin Keenoy" .
 
-<http://ceur-ws.org/Vol-95/#VassilisiChristophides> a ns4:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/VassilisiChristophides> ;
-    ns4:name "Vassilis Christophides" .
+<http://ceur-ws.org/Vol-95/#VassilisiChristophides> a ns6:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/VassilisiChristophides> ;
+    ns6:name "Vassilis Christophides" .
 
-<http://ceur-ws.org/Vol-95/#event> a ns1:WorkshopEvent ;
-    ns1:hasLocation <http://dbpedia.org/resource/United_Kingdom> ;
-    ns1:hasPart <http://ceur-ws.org/Vol-95/#part-IST>,
+<http://ceur-ws.org/Vol-95/#event> a ns8:WorkshopEvent ;
+    ns8:hasLocation <http://dbpedia.org/resource/United_Kingdom> ;
+    ns8:hasPart <http://ceur-ws.org/Vol-95/#part-IST>,
         <http://ceur-ws.org/Vol-95/#part-MMGPS>,
         <http://ceur-ws.org/Vol-95/#part-P2P> ;
-    ns1:isSubEventOf <http://ceur-ws.org/Vol-95/#conf> ;
-    ns8:beginsAtDatetime "2003-12-16T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:endsAtDatetime "2003-12-16T00:00:00+00:00"^^xsd:dateTime ;
-    ns3:license <http://choosealicense.com/licenses/no-license/> .
+    ns8:isSubEventOf <http://ceur-ws.org/Vol-95/#conf> ;
+    ns3:beginsAtDatetime "2003-12-16T00:00:00+00:00"^^xsd:dateTime ;
+    ns3:endsAtDatetime "2003-12-16T00:00:00+00:00"^^xsd:dateTime ;
+    ns1:license <http://choosealicense.com/licenses/no-license/> .
 

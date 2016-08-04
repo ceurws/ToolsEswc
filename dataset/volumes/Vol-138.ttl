@@ -1,11 +1,11 @@
-@prefix ns1: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns1: <http://purl.org/dc/elements/1.1/#> .
 @prefix ns2: <http://xmlns.com/foaf/0.1/> .
-@prefix ns3: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns3: <http://data.semanticweb.org/ns/swc/ontology/#> .
 @prefix ns4: <http://www.w3.org/2002/07/owl#> .
-@prefix ns5: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns5: <http://swrc.ontoware.org/ontology/#> .
 @prefix ns6: <http://purl.org/ontology/bibo/#> .
-@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -27,7 +27,7 @@
     ns2:name "A. Woolf" .
 
 <http://ceur-ws.org/Vol-138/#Editediby> a ns2:Person ;
-    ns3:affiliation "" ;
+    ns5:affiliation "" ;
     ns4:sameAs <http://ceur-ws.org/persons/Editediby> ;
     ns2:name "Edited by" .
 
@@ -62,7 +62,7 @@
     ns2:name "L. Dixon" .
 
 <http://ceur-ws.org/Vol-138/#LineiC.iPouchard> a ns2:Person ;
-    ns3:affiliation "Oak Ridge National Laboratory" ;
+    ns5:affiliation "Oak Ridge National Laboratory" ;
     ns4:sameAs <http://ceur-ws.org/persons/LineiC.iPouchard> ;
     ns2:name "Line C. Pouchard" .
 
@@ -96,91 +96,91 @@
     ns2:made <http://ceur-ws.org/Vol-138/#paper6> ;
     ns2:name "T. Payne" .
 
-<http://ceur-ws.org/Vol-138/#event> a ns1:WorkshopEvent ;
-    ns1:hasLocation <http://dbpedia.org/resource/United_Kingdom> ;
-    ns1:hasPart <http://ceur-ws.org/Vol-138/#part-SIGAW> ;
-    ns1:isSubEventOf <http://ceur-ws.org/Vol-138/#conf> ;
-    ns8:beginsAtDatetime "2005-05-09T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:endsAtDatetime "2005-05-12T00:00:00+00:00"^^xsd:dateTime ;
-    ns5:license <http://choosealicense.com/licenses/no-license/> .
+<http://ceur-ws.org/Vol-138/#event> a ns3:WorkshopEvent ;
+    ns3:hasLocation <http://dbpedia.org/resource/United_Kingdom> ;
+    ns3:hasPart <http://ceur-ws.org/Vol-138/#part-SIGAW> ;
+    ns3:isSubEventOf <http://ceur-ws.org/Vol-138/#conf> ;
+    ns7:beginsAtDatetime "2005-05-09T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:endsAtDatetime "2005-05-12T00:00:00+00:00"^^xsd:dateTime ;
+    ns1:license <http://choosealicense.com/licenses/no-license/> .
 
 <http://ceur-ws.org/Vol-138/#LuciMoreau> a ns2:Person ;
-    ns3:affiliation "Southampton University" ;
+    ns5:affiliation "Southampton University" ;
     ns4:sameAs <http://ceur-ws.org/persons/LuciMoreau> ;
     ns2:made <http://ceur-ws.org/Vol-138/#paper6> ;
     ns2:name "Luc Moreau" .
 
-<http://ceur-ws.org/Vol-138/#T.iTalbott> a ns2:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/T.iTalbott> ;
+<http://ceur-ws.org/Vol-138/#et.ial.> a ns2:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/et.ial.> ;
     ns2:made <http://ceur-ws.org/Vol-138/#paper4>,
         <http://ceur-ws.org/Vol-138/#paper5>,
         <http://ceur-ws.org/Vol-138/#paper7> ;
-    ns2:name "T. Talbott" .
+    ns2:name "et. al." .
 
-<http://ceur-ws.org/Vol-138/#paper2> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-138/> ;
-    ns5:title "Semi-Automated Preservation and Archival of Scientific Data Using Semantic Grid Services." ;
+<http://ceur-ws.org/Vol-138/#paper2> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-138/> ;
+    ns1:title "Semi-Automated Preservation and Archival of Scientific Data Using Semantic Grid Services." ;
     ns6:section <http%3A//ceur-ws.org/Vol-138/%23Thispublicationincludesthepresentationsmadeattheworkshop.> ;
-    ns3:author <http://ceur-ws.org/Vol-138/#J.iHunter>,
+    ns5:author <http://ceur-ws.org/Vol-138/#J.iHunter>,
         <http://ceur-ws.org/Vol-138/#S.iChoudhury> .
 
-<http://ceur-ws.org/Vol-138/#paper3> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-138/> ;
-    ns5:title "Deductive Synthesis of Workflows for e-Science." ;
+<http://ceur-ws.org/Vol-138/#paper3> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-138/> ;
+    ns1:title "Deductive Synthesis of Workflows for e-Science." ;
     ns6:section <http%3A//ceur-ws.org/Vol-138/%23Thispublicationincludesthepresentationsmadeattheworkshop.> ;
-    ns3:author <http://ceur-ws.org/Vol-138/#A.iBundy>,
+    ns5:author <http://ceur-ws.org/Vol-138/#A.iBundy>,
         <http://ceur-ws.org/Vol-138/#A.iSmaill>,
         <http://ceur-ws.org/Vol-138/#L.iDixon> .
 
-<http://ceur-ws.org/Vol-138/#paper4> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-138/> ;
-    ns5:title "Bootstrapping to a Semantic Grid" ;
+<http://ceur-ws.org/Vol-138/#paper4> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-138/> ;
+    ns1:title "Bootstrapping to a Semantic Grid" ;
     ns6:section <http%3A//ceur-ws.org/Vol-138/%23Thispublicationincludesthepresentationsmadeattheworkshop.> ;
-    ns3:author <http://ceur-ws.org/Vol-138/#J.iMyers>,
+    ns5:author <http://ceur-ws.org/Vol-138/#J.iMyers>,
         <http://ceur-ws.org/Vol-138/#J.iSchwidder>,
-        <http://ceur-ws.org/Vol-138/#T.iTalbott> .
+        <http://ceur-ws.org/Vol-138/#et.ial.> .
 
-<http://ceur-ws.org/Vol-138/#paper6> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-138/> ;
-    ns5:title "Using Semantic Web Technology to Automate Data Integration in Grid and Web Service Architectures." ;
+<http://ceur-ws.org/Vol-138/#paper6> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-138/> ;
+    ns1:title "Using Semantic Web Technology to Automate Data Integration in Grid and Web Service Architectures." ;
     ns6:section <http%3A//ceur-ws.org/Vol-138/%23Thispublicationincludesthepresentationsmadeattheworkshop.> ;
-    ns3:author <http://ceur-ws.org/Vol-138/#LuciMoreau>,
+    ns5:author <http://ceur-ws.org/Vol-138/#LuciMoreau>,
         <http://ceur-ws.org/Vol-138/#M.iSzomszor>,
         <http://ceur-ws.org/Vol-138/#T.iPayne> .
 
-<http://ceur-ws.org/Vol-138/#paper5> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-138/> ;
-    ns5:title "Semantic Integration of File-based Data for Grid Services" ;
+<http://ceur-ws.org/Vol-138/#paper5> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-138/> ;
+    ns1:title "Semantic Integration of File-based Data for Grid Services" ;
     ns6:section <http%3A//ceur-ws.org/Vol-138/%23Thispublicationincludesthepresentationsmadeattheworkshop.> ;
-    ns3:author <http://ceur-ws.org/Vol-138/#A.iWoolf>,
+    ns5:author <http://ceur-ws.org/Vol-138/#A.iWoolf>,
         <http://ceur-ws.org/Vol-138/#M.iGutierrez>,
         <http://ceur-ws.org/Vol-138/#R.iCramer>,
-        <http://ceur-ws.org/Vol-138/#T.iTalbott> .
+        <http://ceur-ws.org/Vol-138/#et.ial.> .
 
-<http://ceur-ws.org/Vol-138/#paper7> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-138/> ;
-    ns5:title "A Semantic-grid Based Data Access and Integration for Bioinformatics" ;
+<http://ceur-ws.org/Vol-138/#paper7> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-138/> ;
+    ns1:title "A Semantic-grid Based Data Access and Integration for Bioinformatics" ;
     ns6:section <http%3A//ceur-ws.org/Vol-138/%23Thispublicationincludesthepresentationsmadeattheworkshop.> ;
-    ns3:author <http://ceur-ws.org/Vol-138/#G.iAloisio>,
+    ns5:author <http://ceur-ws.org/Vol-138/#G.iAloisio>,
         <http://ceur-ws.org/Vol-138/#G.iCafaro>,
         <http://ceur-ws.org/Vol-138/#M.iMirto>,
-        <http://ceur-ws.org/Vol-138/#T.iTalbott> .
+        <http://ceur-ws.org/Vol-138/#et.ial.> .
 
-<http%3A//ceur-ws.org/Vol-138/%23Thispublicationincludesthepresentationsmadeattheworkshop.> a ns1:SessionEvent ;
-    ns1:partOf <http://ceur-ws.org/Vol-138/> ;
-    ns5:title "This publication includes the presentations made at the workshop." .
+<http%3A//ceur-ws.org/Vol-138/%23Thispublicationincludesthepresentationsmadeattheworkshop.> a ns3:SessionEvent ;
+    ns3:partOf <http://ceur-ws.org/Vol-138/> ;
+    ns1:title "This publication includes the presentations made at the workshop." .
 
-<http://ceur-ws.org/Vol-138/> a ns1:Proceedings ;
-    ns1:hasPart <http://ceur-ws.org/Vol-138/#paper2>,
+<http://ceur-ws.org/Vol-138/> a ns3:Proceedings ;
+    ns3:hasPart <http://ceur-ws.org/Vol-138/#paper2>,
         <http://ceur-ws.org/Vol-138/#paper3>,
         <http://ceur-ws.org/Vol-138/#paper4>,
         <http://ceur-ws.org/Vol-138/#paper5>,
         <http://ceur-ws.org/Vol-138/#paper6>,
         <http://ceur-ws.org/Vol-138/#paper7> ;
-    ns1:hasSession <http%3A//ceur-ws.org/Vol-138/%23Thispublicationincludesthepresentationsmadeattheworkshop.> ;
-    ns7:issued "2005-06-28T00:00:00+00:00"^^xsd:dateTime ;
+    ns3:hasSession <http%3A//ceur-ws.org/Vol-138/%23Thispublicationincludesthepresentationsmadeattheworkshop.> ;
+    ns8:issued "2005-06-28T00:00:00+00:00"^^xsd:dateTime ;
     ns6:presentedAt <http://ceur-ws.org/Vol-138/#event> ;
-    ns3:editor <http://ceur-ws.org/Vol-138/#Editediby>,
+    ns5:editor <http://ceur-ws.org/Vol-138/#Editediby>,
         <http://ceur-ws.org/Vol-138/#LineiC.iPouchard>,
         <http://ceur-ws.org/Vol-138/#LuciMoreau> .
 

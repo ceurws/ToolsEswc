@@ -1,10 +1,10 @@
 @prefix ns1: <http://www.w3.org/2002/07/owl#> .
-@prefix ns2: <http://purl.org/ontology/bibo/#> .
+@prefix ns2: <http://data.semanticweb.org/ns/swc/ontology/#> .
 @prefix ns3: <http://swrc.ontoware.org/ontology/#> .
 @prefix ns4: <http://xmlns.com/foaf/0.1/> .
-@prefix ns5: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns6: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns7: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns5: <http://purl.org/ontology/bibo/#> .
+@prefix ns6: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
 @prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -111,13 +111,13 @@
     ns1:sameAs <http://ceur-ws.org/persons/UtaiPriss> ;
     ns4:name "Uta Priss" .
 
-<http://ceur-ws.org/Vol-1067/#event> a ns5:WorkshopEvent ;
-    ns5:hasLocation <http://dbpedia.org/resource/Germany> ;
-    ns5:hasPart <http://ceur-ws.org/Vol-1067/#part-ABP> ;
-    ns5:isSubEventOf <http://ceur-ws.org/Vol-1067/#conf> ;
-    ns6:beginsAtDatetime "2013-10-28T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:endsAtDatetime "2013-10-28T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:license <http://choosealicense.com/licenses/no-license/> .
+<http://ceur-ws.org/Vol-1067/#event> a ns2:WorkshopEvent ;
+    ns2:hasLocation <http://dbpedia.org/resource/Germany> ;
+    ns2:hasPart <http://ceur-ws.org/Vol-1067/#part-ABP> ;
+    ns2:isSubEventOf <http://ceur-ws.org/Vol-1067/#conf> ;
+    ns7:beginsAtDatetime "2013-10-28T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:endsAtDatetime "2013-10-28T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:license <http://choosealicense.com/licenses/no-license/> .
 
 <http://ceur-ws.org/Vol-1067/#MichaeliStriewe> a ns4:Person ;
     ns3:affiliation "" ;
@@ -131,64 +131,64 @@
         <http://ceur-ws.org/Vol-1067/#abp2013_submission_2> ;
     ns4:name "Robert Garmann" .
 
-<http://ceur-ws.org/Vol-1067/#abp2013_submission_1> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1067/> ;
-    ns7:title "Sicherheitsimplikationen beim Einsatz von Test Doubles zur automatisierten Bewertung studentischer Java-Programme mit Graja und mockito" ;
-    ns2:section <http%3A//ceur-ws.org/Vol-1067/%23Session1%3AAktuelleEntwicklungenundFallstudien> ;
+<http://ceur-ws.org/Vol-1067/#abp2013_submission_1> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1067/> ;
+    ns6:title "Sicherheitsimplikationen beim Einsatz von Test Doubles zur automatisierten Bewertung studentischer Java-Programme mit Graja und mockito" ;
+    ns5:section <http%3A//ceur-ws.org/Vol-1067/%23Session1%3AAktuelleEntwicklungenundFallstudien> ;
     ns3:author <http://ceur-ws.org/Vol-1067/#RobertiGarmann> .
 
-<http://ceur-ws.org/Vol-1067/#abp2013_submission_6> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1067/> ;
-    ns7:title "Generierung von Zusatzinformationen in automatischen Systemen zur Bewertung von Programmieraufgaben" ;
-    ns2:section <http%3A//ceur-ws.org/Vol-1067/%23Session1%3AAktuelleEntwicklungenundFallstudien> ;
+<http://ceur-ws.org/Vol-1067/#abp2013_submission_6> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1067/> ;
+    ns6:title "Generierung von Zusatzinformationen in automatischen Systemen zur Bewertung von Programmieraufgaben" ;
+    ns5:section <http%3A//ceur-ws.org/Vol-1067/%23Session1%3AAktuelleEntwicklungenundFallstudien> ;
     ns3:author <http://ceur-ws.org/Vol-1067/#MichaeliStriewe> .
 
-<http://ceur-ws.org/Vol-1067/#abp2013_submission_3> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1067/> ;
-    ns7:title "GWT basiertes System zur automatischen Bewertung von Programmieraufgaben" ;
-    ns2:section <http%3A//ceur-ws.org/Vol-1067/%23Session2%3AWerkzeugezurautomatischenBewertungvonProgrammieraufgaben> ;
+<http://ceur-ws.org/Vol-1067/#abp2013_submission_3> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1067/> ;
+    ns6:title "GWT basiertes System zur automatischen Bewertung von Programmieraufgaben" ;
+    ns5:section <http%3A//ceur-ws.org/Vol-1067/%23Session2%3AWerkzeugezurautomatischenBewertungvonProgrammieraufgaben> ;
     ns3:author <http://ceur-ws.org/Vol-1067/#DanieliEggert>,
         <http://ceur-ws.org/Vol-1067/#EikeiClasiSchulze> .
 
-<http://ceur-ws.org/Vol-1067/#abp2013_submission_5> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1067/> ;
-    ns7:title "Automatische Bewertung von Übungsaufgaben in VIPS" ;
-    ns2:section <http%3A//ceur-ws.org/Vol-1067/%23Session2%3AWerkzeugezurautomatischenBewertungvonProgrammieraufgaben> ;
+<http://ceur-ws.org/Vol-1067/#abp2013_submission_5> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1067/> ;
+    ns6:title "Automatische Bewertung von Übungsaufgaben in VIPS" ;
+    ns5:section <http%3A//ceur-ws.org/Vol-1067/%23Session2%3AWerkzeugezurautomatischenBewertungvonProgrammieraufgaben> ;
     ns3:author <http://ceur-ws.org/Vol-1067/#HelmariGust>,
         <http://ceur-ws.org/Vol-1067/#NadineiWerner> .
 
-<http://ceur-ws.org/Vol-1067/#abp2013_submission_8> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1067/> ;
-    ns7:title "GATE - Ein System zur Verbesserung der Programmierausbildung und zur Unterstützung von Tutoren" ;
-    ns2:section <http%3A//ceur-ws.org/Vol-1067/%23Session2%3AWerkzeugezurautomatischenBewertungvonProgrammieraufgaben> ;
+<http://ceur-ws.org/Vol-1067/#abp2013_submission_8> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1067/> ;
+    ns6:title "GATE - Ein System zur Verbesserung der Programmierausbildung und zur Unterstützung von Tutoren" ;
+    ns5:section <http%3A//ceur-ws.org/Vol-1067/%23Session2%3AWerkzeugezurautomatischenBewertungvonProgrammieraufgaben> ;
     ns3:author <http://ceur-ws.org/Vol-1067/#OliveriM%C3%BCller>,
         <http://ceur-ws.org/Vol-1067/#SveniStrickroth> .
 
-<http://ceur-ws.org/Vol-1067/#abp2013_submission_9> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1067/> ;
-    ns7:title "Automatische Bewertung von Datenbankaufgaben unter Verwendung von LON- CAPA und Praktomat" ;
-    ns2:section <http%3A//ceur-ws.org/Vol-1067/%23Session1%3AAktuelleEntwicklungenundFallstudien> ;
+<http://ceur-ws.org/Vol-1067/#abp2013_submission_9> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1067/> ;
+    ns6:title "Automatische Bewertung von Datenbankaufgaben unter Verwendung von LON- CAPA und Praktomat" ;
+    ns5:section <http%3A//ceur-ws.org/Vol-1067/%23Session1%3AAktuelleEntwicklungenundFallstudien> ;
     ns3:author <http://ceur-ws.org/Vol-1067/#MarceliKruse>,
         <http://ceur-ws.org/Vol-1067/#NilsiJensen> .
 
-<http://ceur-ws.org/Vol-1067/#abp2013_submission_7> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1067/> ;
-    ns7:title "Automated assessment of C++ programming exercises with unit tests" ;
-    ns2:section <http%3A//ceur-ws.org/Vol-1067/%23Session2%3AWerkzeugezurautomatischenBewertungvonProgrammieraufgaben> ;
+<http://ceur-ws.org/Vol-1067/#abp2013_submission_7> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1067/> ;
+    ns6:title "Automated assessment of C++ programming exercises with unit tests" ;
+    ns5:section <http%3A//ceur-ws.org/Vol-1067/%23Session2%3AWerkzeugezurautomatischenBewertungvonProgrammieraufgaben> ;
     ns3:author <http://ceur-ws.org/Vol-1067/#AxeliWagner>,
         <http://ceur-ws.org/Vol-1067/#BarbaraiPaech>,
         <http://ceur-ws.org/Vol-1067/#Tom-MichaeliHesse> .
 
-<http%3A//ceur-ws.org/Vol-1067/%23Session1%3AAktuelleEntwicklungenundFallstudien> a ns5:SessionEvent ;
-    ns5:partOf <http://ceur-ws.org/Vol-1067/> ;
-    ns7:title "Session 1: Aktuelle Entwicklungen und Fallstudien" .
+<http%3A//ceur-ws.org/Vol-1067/%23Session1%3AAktuelleEntwicklungenundFallstudien> a ns2:SessionEvent ;
+    ns2:partOf <http://ceur-ws.org/Vol-1067/> ;
+    ns6:title "Session 1: Aktuelle Entwicklungen und Fallstudien" .
 
-<http%3A//ceur-ws.org/Vol-1067/%23Session2%3AWerkzeugezurautomatischenBewertungvonProgrammieraufgaben> a ns5:SessionEvent ;
-    ns5:partOf <http://ceur-ws.org/Vol-1067/> ;
-    ns7:title "Session 2: Werkzeuge zur automatischen Bewertung von Programmieraufgaben" .
+<http%3A//ceur-ws.org/Vol-1067/%23Session2%3AWerkzeugezurautomatischenBewertungvonProgrammieraufgaben> a ns2:SessionEvent ;
+    ns2:partOf <http://ceur-ws.org/Vol-1067/> ;
+    ns6:title "Session 2: Werkzeuge zur automatischen Bewertung von Programmieraufgaben" .
 
-<http://ceur-ws.org/Vol-1067/> a ns5:Proceedings ;
-    ns5:hasPart <http://ceur-ws.org/Vol-1067/#abp2013_submission_1>,
+<http://ceur-ws.org/Vol-1067/> a ns2:Proceedings ;
+    ns2:hasPart <http://ceur-ws.org/Vol-1067/#abp2013_submission_1>,
         <http://ceur-ws.org/Vol-1067/#abp2013_submission_2>,
         <http://ceur-ws.org/Vol-1067/#abp2013_submission_3>,
         <http://ceur-ws.org/Vol-1067/#abp2013_submission_5>,
@@ -196,17 +196,17 @@
         <http://ceur-ws.org/Vol-1067/#abp2013_submission_7>,
         <http://ceur-ws.org/Vol-1067/#abp2013_submission_8>,
         <http://ceur-ws.org/Vol-1067/#abp2013_submission_9> ;
-    ns5:hasSession <http%3A//ceur-ws.org/Vol-1067/%23Session1%3AAktuelleEntwicklungenundFallstudien>,
+    ns2:hasSession <http%3A//ceur-ws.org/Vol-1067/%23Session1%3AAktuelleEntwicklungenundFallstudien>,
         <http%3A//ceur-ws.org/Vol-1067/%23Session2%3AWerkzeugezurautomatischenBewertungvonProgrammieraufgaben> ;
     ns8:issued "2013-10-26T00:00:00+00:00"^^xsd:dateTime ;
-    ns2:presentedAt <http://ceur-ws.org/Vol-1067/#event> ;
+    ns5:presentedAt <http://ceur-ws.org/Vol-1067/#event> ;
     ns3:editor <http://ceur-ws.org/Vol-1067/#MichaeliStriewe>,
         <http://ceur-ws.org/Vol-1067/#UtaiPriss> .
 
-<http://ceur-ws.org/Vol-1067/#abp2013_submission_2> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1067/> ;
-    ns7:title "Prototypische Integration automatisierter Programmbewertung in das LMS Moodle" ;
-    ns2:section <http%3A//ceur-ws.org/Vol-1067/%23Session1%3AAktuelleEntwicklungenundFallstudien> ;
+<http://ceur-ws.org/Vol-1067/#abp2013_submission_2> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1067/> ;
+    ns6:title "Prototypische Integration automatisierter Programmbewertung in das LMS Moodle" ;
+    ns5:section <http%3A//ceur-ws.org/Vol-1067/%23Session1%3AAktuelleEntwicklungenundFallstudien> ;
     ns3:author <http://ceur-ws.org/Vol-1067/#AndreasiSt%C3%B6cker>,
         <http://ceur-ws.org/Vol-1067/#CarsteniKleiner>,
         <http://ceur-ws.org/Vol-1067/#DanieliBr%C3%A4ckelmann>,

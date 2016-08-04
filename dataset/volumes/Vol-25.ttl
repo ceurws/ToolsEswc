@@ -1,11 +1,11 @@
 @prefix ns1: <http://xmlns.com/foaf/0.1/> .
-@prefix ns2: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns3: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns2: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns3: <http://swrc.ontoware.org/ontology/#> .
 @prefix ns4: <http://www.w3.org/2002/07/owl#> .
 @prefix ns5: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns6: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns7: <http://purl.org/ontology/bibo/#> .
-@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns6: <http://purl.org/ontology/bibo/#> .
+@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -47,8 +47,8 @@
     ns1:name "Jörn Rehse" .
 
 <http://ceur-ws.org/Vol-25/#JohanniChristophiFreytag> a ns1:Person ;
-    ns7:place <http://dbpedia.org/resource/Germany> ;
-    ns2:affiliation "Humboldt Universität zu Berlin, Institut für Informatik, Unter den Linden 6, D-10099 Berlin" ;
+    ns6:place <http://dbpedia.org/resource/Germany> ;
+    ns3:affiliation "Humboldt Universität zu Berlin, Institut für Informatik, Unter den Linden 6, D-10099 Berlin" ;
     ns4:sameAs <http://ceur-ws.org/persons/JohanniChristophiFreytag> ;
     ns1:name "Johann Christoph Freytag" .
 
@@ -103,7 +103,7 @@
     ns1:name "Rainer Conrad" .
 
 <http://ceur-ws.org/Vol-25/#Ralf-DetlefiKutsche> a ns1:Person ;
-    ns2:affiliation "" ;
+    ns3:affiliation "" ;
     ns4:sameAs <http://ceur-ws.org/persons/Ralf-DetlefiKutsche> ;
     ns1:name "Ralf-Detlef Kutsche" .
 
@@ -117,88 +117,88 @@
     ns1:made <http://ceur-ws.org/Vol-25/#paper6> ;
     ns1:name "Theo Härder" .
 
-<http://ceur-ws.org/Vol-25/#event> a ns3:WorkshopEvent ;
-    ns3:hasLocation <http://dbpedia.org/resource/Germany> ;
-    ns3:hasPart <http://ceur-ws.org/Vol-25/#part-FDBS> ;
-    ns3:isSubEventOf <http://ceur-ws.org/Vol-25/#conf> ;
-    ns6:beginsAtDatetime "1999-11-25T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:endsAtDatetime "1999-11-26T00:00:00+00:00"^^xsd:dateTime ;
+<http://ceur-ws.org/Vol-25/#event> a ns2:WorkshopEvent ;
+    ns2:hasLocation <http://dbpedia.org/resource/Germany> ;
+    ns2:hasPart <http://ceur-ws.org/Vol-25/#part-FDBS> ;
+    ns2:isSubEventOf <http://ceur-ws.org/Vol-25/#conf> ;
+    ns8:beginsAtDatetime "1999-11-25T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:endsAtDatetime "1999-11-26T00:00:00+00:00"^^xsd:dateTime ;
     ns5:license <http://choosealicense.com/licenses/no-license/> .
 
-<http://ceur-ws.org/Vol-25/#paper1> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-25/> ;
+<http://ceur-ws.org/Vol-25/#paper1> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-25/> ;
     ns5:title "A Practitioners Approach to Database Federation" ;
-    ns2:author <http://ceur-ws.org/Vol-25/#FrankiLeymann> .
+    ns3:author <http://ceur-ws.org/Vol-25/#FrankiLeymann> .
 
-<http://ceur-ws.org/Vol-25/#paper4> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-25/> ;
+<http://ceur-ws.org/Vol-25/#paper4> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-25/> ;
     ns5:title "Integrating Town Information Servers" ;
-    ns2:author <http://ceur-ws.org/Vol-25/#LukasiFaulstich> .
+    ns3:author <http://ceur-ws.org/Vol-25/#LukasiFaulstich> .
 
-<http://ceur-ws.org/Vol-25/#paper9> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-25/> ;
+<http://ceur-ws.org/Vol-25/#paper9> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-25/> ;
     ns5:title "Datenintegration durch Objekt-Identifikation" ;
-    ns2:author <http://ceur-ws.org/Vol-25/#MattisiNeiling> .
+    ns3:author <http://ceur-ws.org/Vol-25/#MattisiNeiling> .
 
 <http://ceur-ws.org/Vol-25/#UlfiLeser> a ns1:Person ;
-    ns2:affiliation "" ;
+    ns3:affiliation "" ;
     ns4:sameAs <http://ceur-ws.org/persons/UlfiLeser> ;
     ns1:made <http://ceur-ws.org/Vol-25/#paper7>,
         <http://ceur-ws.org/Vol-25/#paper8> ;
     ns1:name "Ulf Leser" .
 
-<http://ceur-ws.org/Vol-25/#paper10> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-25/> ;
+<http://ceur-ws.org/Vol-25/#paper10> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-25/> ;
     ns5:title "Konfliktbehandlung in einer Anfragesprache für Datenbankföderationen" ;
-    ns2:author <http://ceur-ws.org/Vol-25/#Kai-UweiSattler>,
+    ns3:author <http://ceur-ws.org/Vol-25/#Kai-UweiSattler>,
         <http://ceur-ws.org/Vol-25/#StefaniConrad> .
 
-<http://ceur-ws.org/Vol-25/#paper11> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-25/> ;
+<http://ceur-ws.org/Vol-25/#paper11> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-25/> ;
     ns5:title "On-Demand Application Integration: Business Concepts and Strategies for the ASP Market" ;
-    ns2:author <http://ceur-ws.org/Vol-25/#GerritiTamm>,
+    ns3:author <http://ceur-ws.org/Vol-25/#GerritiTamm>,
         <http://ceur-ws.org/Vol-25/#OliveriG%C3%BCnther> .
 
-<http://ceur-ws.org/Vol-25/#paper2> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-25/> ;
+<http://ceur-ws.org/Vol-25/#paper2> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-25/> ;
     ns5:title "Konzeptionelle Modellierung von XML fuer die Integration" ;
-    ns2:author <http://ceur-ws.org/Vol-25/#DieteriScheffner>,
+    ns3:author <http://ceur-ws.org/Vol-25/#DieteriScheffner>,
         <http://ceur-ws.org/Vol-25/#RaineriConrad> .
 
-<http://ceur-ws.org/Vol-25/#paper6> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-25/> ;
+<http://ceur-ws.org/Vol-25/#paper6> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-25/> ;
     ns5:title "Eine Abbildungsbeschreibung zur Funktionsintegration in heterogenen Anwendungssystemen" ;
-    ns2:author <http://ceur-ws.org/Vol-25/#KlaudiaiHergula>,
+    ns3:author <http://ceur-ws.org/Vol-25/#KlaudiaiHergula>,
         <http://ceur-ws.org/Vol-25/#TheoiH%C3%A4rder> .
 
-<http://ceur-ws.org/Vol-25/#paper7> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-25/> ;
+<http://ceur-ws.org/Vol-25/#paper7> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-25/> ;
     ns5:title "Integration durch Standards: Erfahrungen mit CORBA in Life Science Research" ;
-    ns2:author <http://ceur-ws.org/Vol-25/#HeikoiM%C3%BCller>,
+    ns3:author <http://ceur-ws.org/Vol-25/#HeikoiM%C3%BCller>,
         <http://ceur-ws.org/Vol-25/#UlfiLeser> .
 
-<http://ceur-ws.org/Vol-25/#paper8> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-25/> ;
+<http://ceur-ws.org/Vol-25/#paper8> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-25/> ;
     ns5:title "Density Scores for Cooperative Query Answering" ;
-    ns2:author <http://ceur-ws.org/Vol-25/#FelixiNaumann>,
+    ns3:author <http://ceur-ws.org/Vol-25/#FelixiNaumann>,
         <http://ceur-ws.org/Vol-25/#UlfiLeser> .
 
-<http://ceur-ws.org/Vol-25/#paper3> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-25/> ;
+<http://ceur-ws.org/Vol-25/#paper3> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-25/> ;
     ns5:title "AMetaCar - a mediated eCommerce-Solution for the Used-Car-Market" ;
-    ns2:author <http://ceur-ws.org/Vol-25/#AndreiMaric>,
+    ns3:author <http://ceur-ws.org/Vol-25/#AndreiMaric>,
         <http://ceur-ws.org/Vol-25/#LarsiDittmann>,
         <http://ceur-ws.org/Vol-25/#PeteriFankhauser> .
 
-<http://ceur-ws.org/Vol-25/#paper5> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-25/> ;
+<http://ceur-ws.org/Vol-25/#paper5> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-25/> ;
     ns5:title "Föderierung betrieblicher Anwendungssysteme auf der Grundlage Web-basierter Dienste" ;
-    ns2:author <http://ceur-ws.org/Vol-25/#J%C3%B6rniRehse>,
+    ns3:author <http://ceur-ws.org/Vol-25/#J%C3%B6rniRehse>,
         <http://ceur-ws.org/Vol-25/#KlausiTurowski>,
         <http://ceur-ws.org/Vol-25/#MartiniGaedke> .
 
-<http://ceur-ws.org/Vol-25/> a ns3:Proceedings ;
-    ns3:hasPart <http://ceur-ws.org/Vol-25/#paper1>,
+<http://ceur-ws.org/Vol-25/> a ns2:Proceedings ;
+    ns2:hasPart <http://ceur-ws.org/Vol-25/#paper1>,
         <http://ceur-ws.org/Vol-25/#paper10>,
         <http://ceur-ws.org/Vol-25/#paper11>,
         <http://ceur-ws.org/Vol-25/#paper2>,
@@ -209,9 +209,9 @@
         <http://ceur-ws.org/Vol-25/#paper7>,
         <http://ceur-ws.org/Vol-25/#paper8>,
         <http://ceur-ws.org/Vol-25/#paper9> ;
-    ns8:issued "1999-12-07T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:presentedAt <http://ceur-ws.org/Vol-25/#event> ;
-    ns2:editor <http://ceur-ws.org/Vol-25/#JohanniChristophiFreytag>,
+    ns7:issued "1999-12-07T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:presentedAt <http://ceur-ws.org/Vol-25/#event> ;
+    ns3:editor <http://ceur-ws.org/Vol-25/#JohanniChristophiFreytag>,
         <http://ceur-ws.org/Vol-25/#Ralf-DetlefiKutsche>,
         <http://ceur-ws.org/Vol-25/#UlfiLeser> .
 

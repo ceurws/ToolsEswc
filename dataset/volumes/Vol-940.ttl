@@ -1,8 +1,8 @@
-@prefix ns1: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns2: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns1: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns2: <http://purl.org/ontology/bibo/#> .
 @prefix ns3: <http://www.w3.org/2002/07/owl#> .
 @prefix ns4: <http://xmlns.com/foaf/0.1/> .
-@prefix ns5: <http://purl.org/ontology/bibo/#> .
+@prefix ns5: <http://data.semanticweb.org/ns/swc/ontology/#> .
 @prefix ns6: <http://purl.org/dc/elements/1.1/#> .
 @prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
 @prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
@@ -177,7 +177,7 @@
     ns4:name "Mirko Sonntag" .
 
 <http://ceur-ws.org/Vol-940/#NielsiLohmann> a ns4:Person ;
-    ns2:affiliation "" ;
+    ns1:affiliation "" ;
     ns3:sameAs <http://ceur-ws.org/persons/NielsiLohmann> ;
     ns4:name "Niels Lohmann" .
 
@@ -197,14 +197,14 @@
     ns4:name "Robert Engel" .
 
 <http://ceur-ws.org/Vol-940/#SimoniMoser> a ns4:Person ;
-    ns2:affiliation "" ;
+    ns1:affiliation "" ;
     ns3:sameAs <http://ceur-ws.org/persons/SimoniMoser> ;
     ns4:name "Simon Moser" .
 
-<http://ceur-ws.org/Vol-940/#event> a ns1:WorkshopEvent ;
-    ns1:hasLocation <http://dbpedia.org/resource/Estonia> ;
-    ns1:hasPart <http://ceur-ws.org/Vol-940/#part-BPM> ;
-    ns1:isSubEventOf <http://ceur-ws.org/Vol-940/#conf> ;
+<http://ceur-ws.org/Vol-940/#event> a ns5:WorkshopEvent ;
+    ns5:hasLocation <http://dbpedia.org/resource/Estonia> ;
+    ns5:hasPart <http://ceur-ws.org/Vol-940/#part-BPM> ;
+    ns5:isSubEventOf <http://ceur-ws.org/Vol-940/#conf> ;
     ns7:beginsAtDatetime "2012-09-04T00:00:00+00:00"^^xsd:dateTime ;
     ns7:endsAtDatetime "2012-09-04T00:00:00+00:00"^^xsd:dateTime ;
     ns6:license <http://choosealicense.com/licenses/no-license/> ;
@@ -218,116 +218,116 @@
         <http://ceur-ws.org/Vol-940/#paper6> ;
     ns4:name "Arthur H. M. ter Hofstede" .
 
-<http://ceur-ws.org/Vol-940/#paper7> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-940/> ;
+<http://ceur-ws.org/Vol-940/#paper7> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-940/> ;
     ns6:title "Information Flow Security for Business Process Models - just one click away" ;
-    ns5:endPage 39 ;
-    ns5:numPages 6 ;
-    ns5:startPage 34 ;
-    ns2:author <http://ceur-ws.org/Vol-940/#AndreasiLehmann>,
+    ns2:endPage 39 ;
+    ns2:numPages 6 ;
+    ns2:startPage 34 ;
+    ns1:author <http://ceur-ws.org/Vol-940/#AndreasiLehmann>,
         <http://ceur-ws.org/Vol-940/#DirkiFahland> .
 
-<http://ceur-ws.org/Vol-940/#paper8> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-940/> ;
+<http://ceur-ws.org/Vol-940/#paper8> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-940/> ;
     ns6:title "Disco: Discover Your Processes" ;
-    ns5:endPage 44 ;
-    ns5:numPages 5 ;
-    ns5:startPage 40 ;
-    ns2:author <http://ceur-ws.org/Vol-940/#AnneiRozinat>,
+    ns2:endPage 44 ;
+    ns2:numPages 5 ;
+    ns2:startPage 40 ;
+    ns1:author <http://ceur-ws.org/Vol-940/#AnneiRozinat>,
         <http://ceur-ws.org/Vol-940/#ChristianiW.iG%C3%BCnther> .
 
-<http://ceur-ws.org/Vol-940/#paper1> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-940/> ;
+<http://ceur-ws.org/Vol-940/#paper1> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-940/> ;
     ns6:title "BPM Academic Initiative - Fostering Empirical Research" ;
-    ns5:endPage 5 ;
-    ns5:numPages 5 ;
-    ns5:startPage 1 ;
-    ns2:author <http://ceur-ws.org/Vol-940/#MathiasiWeske>,
+    ns2:endPage 5 ;
+    ns2:numPages 5 ;
+    ns2:startPage 1 ;
+    ns1:author <http://ceur-ws.org/Vol-940/#MathiasiWeske>,
         <http://ceur-ws.org/Vol-940/#MatthiasiKunze>,
         <http://ceur-ws.org/Vol-940/#PhilippiBerger> .
 
-<http://ceur-ws.org/Vol-940/#paper2> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-940/> ;
+<http://ceur-ws.org/Vol-940/#paper2> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-940/> ;
     ns6:title "Updatable Process Views for Adapting Large Process Models: The" ;
-    ns5:endPage 11 ;
-    ns5:numPages 6 ;
-    ns5:startPage 6 ;
-    ns2:author <http://ceur-ws.org/Vol-940/#JensiKolb>,
+    ns2:endPage 11 ;
+    ns2:numPages 6 ;
+    ns2:startPage 6 ;
+    ns1:author <http://ceur-ws.org/Vol-940/#JensiKolb>,
         <http://ceur-ws.org/Vol-940/#KlausiKammerer>,
         <http://ceur-ws.org/Vol-940/#ManfrediReichert> .
 
-<http://ceur-ws.org/Vol-940/#paper3> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-940/> ;
+<http://ceur-ws.org/Vol-940/#paper3> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-940/> ;
     ns6:title "The Shared Process Model" ;
-    ns5:endPage 16 ;
-    ns5:numPages 5 ;
-    ns5:startPage 12 ;
-    ns2:author <http://ceur-ws.org/Vol-940/#C%C3%A9driciFavre>,
+    ns2:endPage 16 ;
+    ns2:numPages 5 ;
+    ns2:startPage 12 ;
+    ns1:author <http://ceur-ws.org/Vol-940/#C%C3%A9driciFavre>,
         <http://ceur-ws.org/Vol-940/#HageniV%C3%B6lzer>,
         <http://ceur-ws.org/Vol-940/#JocheniK%C3%BCster> .
 
-<http://ceur-ws.org/Vol-940/#paper9> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-940/> ;
+<http://ceur-ws.org/Vol-940/#paper9> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-940/> ;
     ns6:title "Mayflower - Explorative Modeling of Scientific Workflows with BPEL" ;
-    ns5:endPage 50 ;
-    ns5:numPages 6 ;
-    ns5:startPage 45 ;
-    ns2:author <http://ceur-ws.org/Vol-940/#DimkaiKarastoyanova>,
+    ns2:endPage 50 ;
+    ns2:numPages 6 ;
+    ns2:startPage 45 ;
+    ns1:author <http://ceur-ws.org/Vol-940/#DimkaiKarastoyanova>,
         <http://ceur-ws.org/Vol-940/#MichaeliHahn>,
         <http://ceur-ws.org/Vol-940/#MirkoiSonntag> .
 
-<http://ceur-ws.org/Vol-940/#paper10> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-940/> ;
+<http://ceur-ws.org/Vol-940/#paper10> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-940/> ;
     ns6:title "CRISTAL: Collection of Resource-centrIc Supporting Tools And Languages" ;
-    ns5:endPage 56 ;
-    ns5:numPages 6 ;
-    ns5:startPage 51 ;
-    ns2:author <http://ceur-ws.org/Vol-940/#Adelaidel-R%C3%ADo-Ortega>,
+    ns2:endPage 56 ;
+    ns2:numPages 6 ;
+    ns2:startPage 51 ;
+    ns1:author <http://ceur-ws.org/Vol-940/#Adelaidel-R%C3%ADo-Ortega>,
         <http://ceur-ws.org/Vol-940/#AntonioiRuiz-Cort%C3%A9s>,
         <http://ceur-ws.org/Vol-940/#CristinaiCabanillas>,
         <http://ceur-ws.org/Vol-940/#ManueliResinas> .
 
-<http://ceur-ws.org/Vol-940/#paper4> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-940/> ;
+<http://ceur-ws.org/Vol-940/#paper4> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-940/> ;
     ns6:title "Eventifier: Extracting Process Execution Logs from Operational Databases" ;
-    ns5:endPage 22 ;
-    ns5:numPages 6 ;
-    ns5:startPage 17 ;
-    ns2:author <http://ceur-ws.org/Vol-940/#CarlosiRodr%C3%ADguez>,
+    ns2:endPage 22 ;
+    ns2:numPages 6 ;
+    ns2:startPage 17 ;
+    ns1:author <http://ceur-ws.org/Vol-940/#CarlosiRodr%C3%ADguez>,
         <http://ceur-ws.org/Vol-940/#FabioiCasati>,
         <http://ceur-ws.org/Vol-940/#FlorianiDaniel>,
         <http://ceur-ws.org/Vol-940/#GalenaiKostoska>,
         <http://ceur-ws.org/Vol-940/#MarcoiAimar>,
         <http://ceur-ws.org/Vol-940/#RobertiEngel> .
 
-<http://ceur-ws.org/Vol-940/#paper5> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-940/> ;
+<http://ceur-ws.org/Vol-940/#paper5> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-940/> ;
     ns6:title "Supporting Blended Workflows" ;
-    ns5:endPage 28 ;
-    ns5:numPages 6 ;
-    ns5:startPage 23 ;
-    ns2:author <http://ceur-ws.org/Vol-940/#Ant%C3%B3nioiRitoiSilva>,
+    ns2:endPage 28 ;
+    ns2:numPages 6 ;
+    ns2:startPage 23 ;
+    ns1:author <http://ceur-ws.org/Vol-940/#Ant%C3%B3nioiRitoiSilva>,
         <http://ceur-ws.org/Vol-940/#ArthuriH.iM.iteriHofstede>,
         <http://ceur-ws.org/Vol-940/#BernardoiOliveiraiPinto>,
         <http://ceur-ws.org/Vol-940/#DavideiPassinhas>,
         <http://ceur-ws.org/Vol-940/#MichaeliAdams>,
         <http://ceur-ws.org/Vol-940/#RicardoiCosta> .
 
-<http://ceur-ws.org/Vol-940/#paper6> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-940/> ;
+<http://ceur-ws.org/Vol-940/#paper6> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-940/> ;
     ns6:title "Detecting Approximate Clones in Process Model Repositories with Apromore" ;
-    ns5:endPage 33 ;
-    ns5:numPages 5 ;
-    ns5:startPage 29 ;
-    ns2:author <http://ceur-ws.org/Vol-940/#ArthuriH.iM.iteriHofstede>,
+    ns2:endPage 33 ;
+    ns2:numPages 5 ;
+    ns2:startPage 29 ;
+    ns1:author <http://ceur-ws.org/Vol-940/#ArthuriH.iM.iteriHofstede>,
         <http://ceur-ws.org/Vol-940/#ChathuraiC.iEkanayake>,
         <http://ceur-ws.org/Vol-940/#FelixiMannhardt>,
         <http://ceur-ws.org/Vol-940/#LucianoiGarc%C3%ADa-Ba%C3%B1uelos>,
         <http://ceur-ws.org/Vol-940/#MarcelloiLaiRosa>,
         <http://ceur-ws.org/Vol-940/#MarloniDumas> .
 
-<http://ceur-ws.org/Vol-940/> a ns1:Proceedings ;
-    ns1:hasPart <http://ceur-ws.org/Vol-940/#paper1>,
+<http://ceur-ws.org/Vol-940/> a ns5:Proceedings ;
+    ns5:hasPart <http://ceur-ws.org/Vol-940/#paper1>,
         <http://ceur-ws.org/Vol-940/#paper10>,
         <http://ceur-ws.org/Vol-940/#paper2>,
         <http://ceur-ws.org/Vol-940/#paper3>,
@@ -338,7 +338,7 @@
         <http://ceur-ws.org/Vol-940/#paper8>,
         <http://ceur-ws.org/Vol-940/#paper9> ;
     ns8:issued "2012-11-19T00:00:00+00:00"^^xsd:dateTime ;
-    ns5:presentedAt <http://ceur-ws.org/Vol-940/#event> ;
-    ns2:editor <http://ceur-ws.org/Vol-940/#NielsiLohmann>,
+    ns2:presentedAt <http://ceur-ws.org/Vol-940/#event> ;
+    ns1:editor <http://ceur-ws.org/Vol-940/#NielsiLohmann>,
         <http://ceur-ws.org/Vol-940/#SimoniMoser> .
 

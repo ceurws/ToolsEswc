@@ -1,50 +1,50 @@
-@prefix ns1: <http://xmlns.com/foaf/0.1/> .
-@prefix ns2: <http://www.w3.org/2002/07/owl#> .
-@prefix ns3: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns4: <http://purl.org/ontology/bibo/#> .
-@prefix ns5: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns6: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns1: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns2: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns3: <http://purl.org/ontology/bibo/#> .
+@prefix ns4: <http://xmlns.com/foaf/0.1/> .
+@prefix ns5: <http://www.w3.org/2002/07/owl#> .
+@prefix ns6: <http://purl.org/NET/c4dm/timeline.owl#> .
 @prefix ns7: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <http://ceur-ws.org/Vol-18/> a ns7:Proceedings ;
-    ns6:issued "1999-06-22T00:00:00+00:00"^^xsd:dateTime ;
-    ns4:presentedAt <http://ceur-ws.org/Vol-18/#event> ;
-    ns3:editor <http://ceur-ws.org/Vol-18/#A.iG%C3%B3meziP%C3%A9rez>,
+    ns8:issued "1999-06-22T00:00:00+00:00"^^xsd:dateTime ;
+    ns3:presentedAt <http://ceur-ws.org/Vol-18/#event> ;
+    ns1:editor <http://ceur-ws.org/Vol-18/#A.iG%C3%B3meziP%C3%A9rez>,
         <http://ceur-ws.org/Vol-18/#B.iChandrasekaran>,
         <http://ceur-ws.org/Vol-18/#MikeiUschold>,
         <http://ceur-ws.org/Vol-18/#NicolaiGuarino>,
         <http://ceur-ws.org/Vol-18/#V.iRichardiBenjamins> .
 
-<http://ceur-ws.org/Vol-18/#A.iG%C3%B3meziP%C3%A9rez> a ns1:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/A.iG%C3%B3meziP%C3%A9rez> ;
-    ns1:name "A. Gómez Pérez" .
+<http://ceur-ws.org/Vol-18/#A.iG%C3%B3meziP%C3%A9rez> a ns4:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/A.iG%C3%B3meziP%C3%A9rez> ;
+    ns4:name "A. Gómez Pérez" .
 
-<http://ceur-ws.org/Vol-18/#B.iChandrasekaran> a ns1:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/B.iChandrasekaran> ;
-    ns1:name "B. Chandrasekaran" .
+<http://ceur-ws.org/Vol-18/#B.iChandrasekaran> a ns4:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/B.iChandrasekaran> ;
+    ns4:name "B. Chandrasekaran" .
 
-<http://ceur-ws.org/Vol-18/#MikeiUschold> a ns1:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/MikeiUschold> ;
-    ns1:name "Mike Uschold" .
+<http://ceur-ws.org/Vol-18/#MikeiUschold> a ns4:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/MikeiUschold> ;
+    ns4:name "Mike Uschold" .
 
-<http://ceur-ws.org/Vol-18/#NicolaiGuarino> a ns1:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/NicolaiGuarino> ;
-    ns1:name "Nicola Guarino" .
+<http://ceur-ws.org/Vol-18/#NicolaiGuarino> a ns4:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/NicolaiGuarino> ;
+    ns4:name "Nicola Guarino" .
 
-<http://ceur-ws.org/Vol-18/#V.iRichardiBenjamins> a ns1:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/V.iRichardiBenjamins> ;
-    ns1:name "V. Richard Benjamins" .
+<http://ceur-ws.org/Vol-18/#V.iRichardiBenjamins> a ns4:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/V.iRichardiBenjamins> ;
+    ns4:name "V. Richard Benjamins" .
 
 <http://ceur-ws.org/Vol-18/#event> a ns7:WorkshopEvent ;
     ns7:hasLocation <http://dbpedia.org/resource/Sweden> ;
     ns7:hasPart <http://ceur-ws.org/Vol-18/#part-IJCAI> ;
     ns7:isSubEventOf <http://ceur-ws.org/Vol-18/#conf> ;
-    ns8:beginsAtDatetime "1999-08-02T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:endsAtDatetime "1999-08-02T00:00:00+00:00"^^xsd:dateTime ;
-    ns5:license <http://choosealicense.com/licenses/no-license/> .
+    ns6:beginsAtDatetime "1999-08-02T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:endsAtDatetime "1999-08-02T00:00:00+00:00"^^xsd:dateTime ;
+    ns2:license <http://choosealicense.com/licenses/no-license/> .
 

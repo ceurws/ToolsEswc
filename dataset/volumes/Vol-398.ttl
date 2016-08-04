@@ -1,9 +1,9 @@
 @prefix ns1: <http://xmlns.com/foaf/0.1/> .
 @prefix ns2: <http://www.w3.org/2002/07/owl#> .
-@prefix ns3: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns4: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns5: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns6: <http://purl.org/ontology/bibo/#> .
+@prefix ns3: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns4: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns5: <http://purl.org/ontology/bibo/#> .
+@prefix ns6: <http://swrc.ontoware.org/ontology/#> .
 @prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
 @prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -321,23 +321,23 @@
     ns1:made <http://ceur-ws.org/Vol-398/#S5_Ardourel> ;
     ns1:name "Y. ARDOUREL" .
 
-<http://ceur-ws.org/Vol-398/#event> a ns3:WorkshopEvent ;
-    ns3:hasLocation <http://dbpedia.org/resource/Italy> ;
-    ns3:hasPart <http://ceur-ws.org/Vol-398/#part-CSCL>,
+<http://ceur-ws.org/Vol-398/#event> a ns4:WorkshopEvent ;
+    ns4:hasLocation <http://dbpedia.org/resource/Italy> ;
+    ns4:hasPart <http://ceur-ws.org/Vol-398/#part-CSCL>,
         <http://ceur-ws.org/Vol-398/#part-ICT>,
         <http://ceur-ws.org/Vol-398/#part-ODL>,
         <http://ceur-ws.org/Vol-398/#part-SNA> ;
-    ns3:isSubEventOf <http://ceur-ws.org/Vol-398/#conf> ;
+    ns4:isSubEventOf <http://ceur-ws.org/Vol-398/#conf> ;
     ns7:beginsAtDatetime "2008-09-01T00:00:00+00:00"^^xsd:dateTime ;
     ns7:endsAtDatetime "2008-09-02T00:00:00+00:00"^^xsd:dateTime ;
-    ns5:license <http://choosealicense.com/licenses/no-license/> .
+    ns3:license <http://choosealicense.com/licenses/no-license/> .
 
-<http://ceur-ws.org/Vol-398/#A.iOMICINI> a ns1:Person ;
-    ns6:place <http://dbpedia.org/resource/Italy> ;
-    ns4:affiliation "Department of Electronics, Informatics and Systems (DEIS) - The Second Faculty of Engineering, ALMA MATER STUDIORUM - University of Bologna, Bologna - Cesena" ;
-    ns2:sameAs <http://ceur-ws.org/persons/A.iOMICINI> ;
+<http://ceur-ws.org/Vol-398/#AndreaiOmicini> a ns1:Person ;
+    ns5:place <http://dbpedia.org/resource/Italy> ;
+    ns6:affiliation "Department of Electronics, Informatics and Systems (DEIS) - The Second Faculty of Engineering, ALMA MATER STUDIORUM - University of Bologna, Bologna - Cesena" ;
+    ns2:sameAs <http://ceur-ws.org/persons/AndreaiOmicini> ;
     ns1:made <http://ceur-ws.org/Vol-398/#S1_NardiniEtAl> ;
-    ns1:name "A. OMICINI" .
+    ns1:name "Andrea Omicini" .
 
 <http://ceur-ws.org/Vol-398/#B.iERTL> a ns1:Person ;
     ns2:sameAs <http://ceur-ws.org/persons/B.iERTL> ;
@@ -357,23 +357,23 @@
         <http://ceur-ws.org/Vol-398/#S4_CarugatiEtAl> ;
     ns1:name "C. TOMASETTO" .
 
-<http://ceur-ws.org/Vol-398/#Carugati> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-398/> ;
-    ns5:title "About collaborative e-learning" ;
-    ns4:author <http://ceur-ws.org/Vol-398/#FeliceiCARUGATI> .
-
-<http://ceur-ws.org/Vol-398/#E.iNARDINI> a ns1:Person ;
-    ns6:place <http://dbpedia.org/resource/Italy> ;
-    ns4:affiliation "Department of Electronics, Informatics and Systems (DEIS) - The Second Faculty of Engineering, ALMA MATER STUDIORUM - University of Bologna, Bologna - Cesena" ;
-    ns2:sameAs <http://ceur-ws.org/persons/E.iNARDINI> ;
-    ns1:made <http://ceur-ws.org/Vol-398/#S1_NardiniEtAl> ;
-    ns1:name "E. NARDINI" .
+<http://ceur-ws.org/Vol-398/#Carugati> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-398/> ;
+    ns3:title "About collaborative e-learning" ;
+    ns6:author <http://ceur-ws.org/Vol-398/#FeliceiCARUGATI> .
 
 <http://ceur-ws.org/Vol-398/#E.iSPADAVECCHIA> a ns1:Person ;
     ns2:sameAs <http://ceur-ws.org/persons/E.iSPADAVECCHIA> ;
     ns1:made <http://ceur-ws.org/Vol-398/#S2_FiniEtAl>,
         <http://ceur-ws.org/Vol-398/#S2_Spadavecchia> ;
     ns1:name "E. SPADAVECCHIA" .
+
+<http://ceur-ws.org/Vol-398/#ElenaiNardini> a ns1:Person ;
+    ns5:place <http://dbpedia.org/resource/Italy> ;
+    ns6:affiliation "Department of Electronics, Informatics and Systems (DEIS) - The Second Faculty of Engineering, ALMA MATER STUDIORUM - University of Bologna, Bologna - Cesena" ;
+    ns2:sameAs <http://ceur-ws.org/persons/ElenaiNardini> ;
+    ns1:made <http://ceur-ws.org/Vol-398/#S1_NardiniEtAl> ;
+    ns1:name "Elena Nardini" .
 
 <http://ceur-ws.org/Vol-398/#N.iS.iPIRRUCCELLO> a ns1:Person ;
     ns2:sameAs <http://ceur-ws.org/persons/N.iS.iPIRRUCCELLO> ;
@@ -382,7 +382,7 @@
     ns1:name "N. S. PIRRUCCELLO" .
 
 <http://ceur-ws.org/Vol-398/#P.iGAFFURI> a ns1:Person ;
-    ns4:affiliation "" ;
+    ns6:affiliation "" ;
     ns2:sameAs <http://ceur-ws.org/persons/P.iGAFFURI> ;
     ns1:made <http://ceur-ws.org/Vol-398/#S4_CarugatiEtAl> ;
     ns1:name "P. GAFFURI" .
@@ -393,52 +393,52 @@
         <http://ceur-ws.org/Vol-398/#S4_CarugatiEtAl> ;
     ns1:name "P. SELLERI" .
 
-<http://ceur-ws.org/Vol-398/#Preface> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-398/> ;
-    ns5:title "Preface" ;
-    ns4:author <http://ceur-ws.org/Vol-398/#MariaiCristinaiMatteucci> .
+<http://ceur-ws.org/Vol-398/#Preface> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-398/> ;
+    ns3:title "Preface" ;
+    ns6:author <http://ceur-ws.org/Vol-398/#MariaiCristinaiMatteucci> .
 
-<http://ceur-ws.org/Vol-398/#S2_Moschini> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-398/> ;
-    ns5:title "The construction of knowledge through gaming. How to engage university students in the understanding of the historical developments of knowledge and scholarship via playing and networking" ;
-    ns6:section <http%3A//ceur-ws.org/Vol-398/%23Sessionchair%3AMIRKOVIROLI%2CDepartmentofElectronics%2CInformaticsandSystems%28DEIS%29%2CUniversityofBologna> ;
-    ns4:author <http://ceur-ws.org/Vol-398/#E.iMOSCHINI> .
+<http://ceur-ws.org/Vol-398/#S2_Moschini> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-398/> ;
+    ns3:title "The construction of knowledge through gaming. How to engage university students in the understanding of the historical developments of knowledge and scholarship via playing and networking" ;
+    ns5:section <http%3A//ceur-ws.org/Vol-398/%23Sessionchair%3AMIRKOVIROLI%2CDepartmentofElectronics%2CInformaticsandSystems%28DEIS%29%2CUniversityofBologna> ;
+    ns6:author <http://ceur-ws.org/Vol-398/#E.iMOSCHINI> .
 
-<http://ceur-ws.org/Vol-398/#S2_Spadavecchia> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-398/> ;
-    ns5:title "Open Source LMS and Web 2.0 for supplementary teaching: an experience" ;
-    ns6:section <http%3A//ceur-ws.org/Vol-398/%23Sessionchair%3AMIRKOVIROLI%2CDepartmentofElectronics%2CInformaticsandSystems%28DEIS%29%2CUniversityofBologna> ;
-    ns4:author <http://ceur-ws.org/Vol-398/#E.iSPADAVECCHIA> .
+<http://ceur-ws.org/Vol-398/#S2_Spadavecchia> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-398/> ;
+    ns3:title "Open Source LMS and Web 2.0 for supplementary teaching: an experience" ;
+    ns5:section <http%3A//ceur-ws.org/Vol-398/%23Sessionchair%3AMIRKOVIROLI%2CDepartmentofElectronics%2CInformaticsandSystems%28DEIS%29%2CUniversityofBologna> ;
+    ns6:author <http://ceur-ws.org/Vol-398/#E.iSPADAVECCHIA> .
 
-<http://ceur-ws.org/Vol-398/#S3_Pacetti> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-398/> ;
-    ns5:title "Improving the quality of education in Palestine through e-learning and ICT: the bottom-up approach for a sustainable pedagogy" ;
-    ns6:section <http%3A//ceur-ws.org/Vol-398/%23SessionChair%3AERNOLEHTINEN%2CUniversityofTurku> ;
-    ns4:author <http://ceur-ws.org/Vol-398/#E.iPACETTI> .
+<http://ceur-ws.org/Vol-398/#S3_Pacetti> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-398/> ;
+    ns3:title "Improving the quality of education in Palestine through e-learning and ICT: the bottom-up approach for a sustainable pedagogy" ;
+    ns5:section <http%3A//ceur-ws.org/Vol-398/%23SessionChair%3AERNOLEHTINEN%2CUniversityofTurku> ;
+    ns6:author <http://ceur-ws.org/Vol-398/#E.iPACETTI> .
 
-<http://ceur-ws.org/Vol-398/#S5_Agostinelli> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-398/> ;
-    ns5:title "For e-learning, also the « e » is important" ;
-    ns6:section <http%3A//ceur-ws.org/Vol-398/%23Sessionchair%3ALISEVIEIRA%2CUniversityofBordeuxIIIMicheldeMontaigne%E2%80%94%22CEMICGRESIC%22> ;
-    ns4:author <http://ceur-ws.org/Vol-398/#S.iAGOSTINELLI> .
+<http://ceur-ws.org/Vol-398/#S5_Agostinelli> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-398/> ;
+    ns3:title "For e-learning, also the « e » is important" ;
+    ns5:section <http%3A//ceur-ws.org/Vol-398/%23Sessionchair%3ALISEVIEIRA%2CUniversityofBordeuxIIIMicheldeMontaigne%E2%80%94%22CEMICGRESIC%22> ;
+    ns6:author <http://ceur-ws.org/Vol-398/#S.iAGOSTINELLI> .
 
-<http://ceur-ws.org/Vol-398/#S5_Ardourel> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-398/> ;
-    ns5:title "Conquérir une autonomie en communication. Une plateforme de formation à distance pour des publics en difficulté en lecture et écriture" ;
-    ns6:section <http%3A//ceur-ws.org/Vol-398/%23Sessionchair%3ALISEVIEIRA%2CUniversityofBordeuxIIIMicheldeMontaigne%E2%80%94%22CEMICGRESIC%22> ;
-    ns4:author <http://ceur-ws.org/Vol-398/#Y.iARDOUREL> .
+<http://ceur-ws.org/Vol-398/#S5_Ardourel> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-398/> ;
+    ns3:title "Conquérir une autonomie en communication. Une plateforme de formation à distance pour des publics en difficulté en lecture et écriture" ;
+    ns5:section <http%3A//ceur-ws.org/Vol-398/%23Sessionchair%3ALISEVIEIRA%2CUniversityofBordeuxIIIMicheldeMontaigne%E2%80%94%22CEMICGRESIC%22> ;
+    ns6:author <http://ceur-ws.org/Vol-398/#Y.iARDOUREL> .
 
-<http://ceur-ws.org/Vol-398/#S5_Pascal> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-398/> ;
-    ns5:title "E-Learning: les stratégies managériales des organisations et les potentialisations d'acteurs. Paradoxes entre déterminisme technologique, hypermatérialité et coopération" ;
-    ns6:section <http%3A//ceur-ws.org/Vol-398/%23Sessionchair%3ALISEVIEIRA%2CUniversityofBordeuxIIIMicheldeMontaigne%E2%80%94%22CEMICGRESIC%22> ;
-    ns4:author <http://ceur-ws.org/Vol-398/#C.iPASCAL> .
+<http://ceur-ws.org/Vol-398/#S5_Pascal> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-398/> ;
+    ns3:title "E-Learning: les stratégies managériales des organisations et les potentialisations d'acteurs. Paradoxes entre déterminisme technologique, hypermatérialité et coopération" ;
+    ns5:section <http%3A//ceur-ws.org/Vol-398/%23Sessionchair%3ALISEVIEIRA%2CUniversityofBordeuxIIIMicheldeMontaigne%E2%80%94%22CEMICGRESIC%22> ;
+    ns6:author <http://ceur-ws.org/Vol-398/#C.iPASCAL> .
 
-<http://ceur-ws.org/Vol-398/#S6_Gaballo> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-398/> ;
-    ns5:title "Learning translation strategies in a CSCL framework" ;
-    ns6:section <http%3A//ceur-ws.org/Vol-398/%23SessionChair%3ACARLOTOMASETTO%2CDepartmentofEducation-FacultyofPsychology%2CUniversityofBologna> ;
-    ns4:author <http://ceur-ws.org/Vol-398/#V.iGABALLO> .
+<http://ceur-ws.org/Vol-398/#S6_Gaballo> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-398/> ;
+    ns3:title "Learning translation strategies in a CSCL framework" ;
+    ns5:section <http%3A//ceur-ws.org/Vol-398/%23SessionChair%3ACARLOTOMASETTO%2CDepartmentofEducation-FacultyofPsychology%2CUniversityofBologna> ;
+    ns6:author <http://ceur-ws.org/Vol-398/#V.iGABALLO> .
 
 <http://ceur-ws.org/Vol-398/#FeliceiCARUGATI> a ns1:Person ;
     ns2:sameAs <http://ceur-ws.org/persons/FeliceiCARUGATI> ;
@@ -454,224 +454,224 @@
         <http://ceur-ws.org/Vol-398/#S6_ErtlEtAl2> ;
     ns1:name "H. MANDL" .
 
-<http://ceur-ws.org/Vol-398/#S1_KoppEtAl> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-398/> ;
-    ns5:title "Collaborative online learning: A heterogeneous phenomenon" ;
-    ns6:section <http%3A//ceur-ws.org/Vol-398/%23Sessionchair%3AFELICECARUGATI%2CDepartmentofEducation-FacultyofPsychology%2CUniversityofBologna> ;
-    ns4:author <http://ceur-ws.org/Vol-398/#B.iKOPP>,
+<http://ceur-ws.org/Vol-398/#S1_KoppEtAl> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-398/> ;
+    ns3:title "Collaborative online learning: A heterogeneous phenomenon" ;
+    ns5:section <http%3A//ceur-ws.org/Vol-398/%23Sessionchair%3AFELICECARUGATI%2CDepartmentofEducation-FacultyofPsychology%2CUniversityofBologna> ;
+    ns6:author <http://ceur-ws.org/Vol-398/#B.iKOPP>,
         <http://ceur-ws.org/Vol-398/#H.iMANDL> .
 
-<http://ceur-ws.org/Vol-398/#S1_NardiniEtAl> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-398/> ;
-    ns5:title "Agent-Based Collaboration Systems: a Case Study" ;
-    ns6:section <http%3A//ceur-ws.org/Vol-398/%23Sessionchair%3AFELICECARUGATI%2CDepartmentofEducation-FacultyofPsychology%2CUniversityofBologna> ;
-    ns4:author <http://ceur-ws.org/Vol-398/#A.iOMICINI>,
-        <http://ceur-ws.org/Vol-398/#E.iNARDINI> .
+<http://ceur-ws.org/Vol-398/#S1_NardiniEtAl> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-398/> ;
+    ns3:title "Agent-Based Collaboration Systems: a Case Study" ;
+    ns5:section <http%3A//ceur-ws.org/Vol-398/%23Sessionchair%3AFELICECARUGATI%2CDepartmentofEducation-FacultyofPsychology%2CUniversityofBologna> ;
+    ns6:author <http://ceur-ws.org/Vol-398/#AndreaiOmicini>,
+        <http://ceur-ws.org/Vol-398/#ElenaiNardini> .
 
-<http://ceur-ws.org/Vol-398/#S3_LehnerEtAl> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-398/> ;
-    ns5:title "iVideo — Interactive Videos as an Instrument for E-Learning and Knowledge Construction" ;
-    ns6:section <http%3A//ceur-ws.org/Vol-398/%23SessionChair%3AERNOLEHTINEN%2CUniversityofTurku> ;
-    ns4:author <http://ceur-ws.org/Vol-398/#C.iRO%C3%9FNAGEL>,
+<http://ceur-ws.org/Vol-398/#S3_LehnerEtAl> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-398/> ;
+    ns3:title "iVideo — Interactive Videos as an Instrument for E-Learning and Knowledge Construction" ;
+    ns5:section <http%3A//ceur-ws.org/Vol-398/%23SessionChair%3AERNOLEHTINEN%2CUniversityofTurku> ;
+    ns6:author <http://ceur-ws.org/Vol-398/#C.iRO%C3%9FNAGEL>,
         <http://ceur-ws.org/Vol-398/#F.iLEHNER> .
 
-<http://ceur-ws.org/Vol-398/#S4_NeofotistosEtAl> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-398/> ;
-    ns5:title "Knowledge Construction for Science Jobs: Employing Network Analysis to Identify the Scaffold of Competencies" ;
-    ns6:section <http%3A//ceur-ws.org/Vol-398/%23Sessionchair%3AELVISMAZZONI%2CDepartmentofEducation-FacultyofPsychology%2CUniversityofBologna> ;
-    ns4:author <http://ceur-ws.org/Vol-398/#G.iNEOFOTISTOS>,
+<http://ceur-ws.org/Vol-398/#S4_NeofotistosEtAl> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-398/> ;
+    ns3:title "Knowledge Construction for Science Jobs: Employing Network Analysis to Identify the Scaffold of Competencies" ;
+    ns5:section <http%3A//ceur-ws.org/Vol-398/%23Sessionchair%3AELVISMAZZONI%2CDepartmentofEducation-FacultyofPsychology%2CUniversityofBologna> ;
+    ns6:author <http://ceur-ws.org/Vol-398/#G.iNEOFOTISTOS>,
         <http://ceur-ws.org/Vol-398/#N.iKASTIS> .
 
-<http://ceur-ws.org/Vol-398/#S5_RoussiEtAl> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-398/> ;
-    ns5:title "Interaction humaine et e-learning en contextes universitaires" ;
-    ns6:section <http%3A//ceur-ws.org/Vol-398/%23Sessionchair%3ALISEVIEIRA%2CUniversityofBordeuxIIIMicheldeMontaigne%E2%80%94%22CEMICGRESIC%22> ;
-    ns4:author <http://ceur-ws.org/Vol-398/#L.iVIEIRA>,
+<http://ceur-ws.org/Vol-398/#S5_RoussiEtAl> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-398/> ;
+    ns3:title "Interaction humaine et e-learning en contextes universitaires" ;
+    ns5:section <http%3A//ceur-ws.org/Vol-398/%23Sessionchair%3ALISEVIEIRA%2CUniversityofBordeuxIIIMicheldeMontaigne%E2%80%94%22CEMICGRESIC%22> ;
+    ns6:author <http://ceur-ws.org/Vol-398/#L.iVIEIRA>,
         <http://ceur-ws.org/Vol-398/#S.iROUISSI> .
 
-<http://ceur-ws.org/Vol-398/#S6_ArcangeliEtAl> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-398/> ;
-    ns5:title "Cultural capital, learning and ICT in a southern Italian university" ;
-    ns6:section <http%3A//ceur-ws.org/Vol-398/%23SessionChair%3ACARLOTOMASETTO%2CDepartmentofEducation-FacultyofPsychology%2CUniversityofBologna> ;
-    ns4:author <http://ceur-ws.org/Vol-398/#B.iARCANGELI>,
+<http://ceur-ws.org/Vol-398/#S6_ArcangeliEtAl> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-398/> ;
+    ns3:title "Cultural capital, learning and ICT in a southern Italian university" ;
+    ns5:section <http%3A//ceur-ws.org/Vol-398/%23SessionChair%3ACARLOTOMASETTO%2CDepartmentofEducation-FacultyofPsychology%2CUniversityofBologna> ;
+    ns6:author <http://ceur-ws.org/Vol-398/#B.iARCANGELI>,
         <http://ceur-ws.org/Vol-398/#P.iDIANA> .
 
-<http://ceur-ws.org/Vol-398/#S6_ErtlEtAl2> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-398/> ;
-    ns5:title "Effects of individual prior knowledge on collaborative knowledge construction and individual learning outcomes" ;
-    ns6:section <http%3A//ceur-ws.org/Vol-398/%23SessionChair%3ACARLOTOMASETTO%2CDepartmentofEducation-FacultyofPsychology%2CUniversityofBologna> ;
-    ns4:author <http://ceur-ws.org/Vol-398/#B.iERTL>,
+<http://ceur-ws.org/Vol-398/#S6_ErtlEtAl2> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-398/> ;
+    ns3:title "Effects of individual prior knowledge on collaborative knowledge construction and individual learning outcomes" ;
+    ns5:section <http%3A//ceur-ws.org/Vol-398/%23SessionChair%3ACARLOTOMASETTO%2CDepartmentofEducation-FacultyofPsychology%2CUniversityofBologna> ;
+    ns6:author <http://ceur-ws.org/Vol-398/#B.iERTL>,
         <http://ceur-ws.org/Vol-398/#H.iMANDL> .
 
-<http://ceur-ws.org/Vol-398/#S6_GiannandreaEtAl> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-398/> ;
-    ns5:title "Collaborative strategies in on line communities of in-service teachers" ;
-    ns6:section <http%3A//ceur-ws.org/Vol-398/%23SessionChair%3ACARLOTOMASETTO%2CDepartmentofEducation-FacultyofPsychology%2CUniversityofBologna> ;
-    ns4:author <http://ceur-ws.org/Vol-398/#L.iGIANNANDREA>,
+<http://ceur-ws.org/Vol-398/#S6_GiannandreaEtAl> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-398/> ;
+    ns3:title "Collaborative strategies in on line communities of in-service teachers" ;
+    ns5:section <http%3A//ceur-ws.org/Vol-398/%23SessionChair%3ACARLOTOMASETTO%2CDepartmentofEducation-FacultyofPsychology%2CUniversityofBologna> ;
+    ns6:author <http://ceur-ws.org/Vol-398/#L.iGIANNANDREA>,
         <http://ceur-ws.org/Vol-398/#T.iMAGNATERRA> .
 
-<http://ceur-ws.org/Vol-398/#S6_LoiEtAl> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-398/> ;
-    ns5:title "Cost-effectiveness analysis applied to a blended-learning-model" ;
-    ns6:section <http%3A//ceur-ws.org/Vol-398/%23SessionChair%3ACARLOTOMASETTO%2CDepartmentofEducation-FacultyofPsychology%2CUniversityofBologna> ;
-    ns4:author <http://ceur-ws.org/Vol-398/#A.iCATTANEO>,
+<http://ceur-ws.org/Vol-398/#S6_LoiEtAl> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-398/> ;
+    ns3:title "Cost-effectiveness analysis applied to a blended-learning-model" ;
+    ns5:section <http%3A//ceur-ws.org/Vol-398/%23SessionChair%3ACARLOTOMASETTO%2CDepartmentofEducation-FacultyofPsychology%2CUniversityofBologna> ;
+    ns6:author <http://ceur-ws.org/Vol-398/#A.iCATTANEO>,
         <http://ceur-ws.org/Vol-398/#M.iLOI> .
 
-<http://ceur-ws.org/Vol-398/#S6_NicoliniEtAl> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-398/> ;
-    ns5:title "From daily language to scientific jargon: the role of peer interaction in web forum" ;
-    ns6:section <http%3A//ceur-ws.org/Vol-398/%23SessionChair%3ACARLOTOMASETTO%2CDepartmentofEducation-FacultyofPsychology%2CUniversityofBologna> ;
-    ns4:author <http://ceur-ws.org/Vol-398/#P.iNICOLINI>,
+<http://ceur-ws.org/Vol-398/#S6_NicoliniEtAl> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-398/> ;
+    ns3:title "From daily language to scientific jargon: the role of peer interaction in web forum" ;
+    ns5:section <http%3A//ceur-ws.org/Vol-398/%23SessionChair%3ACARLOTOMASETTO%2CDepartmentofEducation-FacultyofPsychology%2CUniversityofBologna> ;
+    ns6:author <http://ceur-ws.org/Vol-398/#P.iNICOLINI>,
         <http://ceur-ws.org/Vol-398/#T.iLAPUCCI> .
 
-<http://ceur-ws.org/Vol-398/#S6_PirruccelloEtAl> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-398/> ;
-    ns5:title "ScribaLab Ver. 2.0" ;
-    ns6:section <http%3A//ceur-ws.org/Vol-398/%23SessionChair%3ACARLOTOMASETTO%2CDepartmentofEducation-FacultyofPsychology%2CUniversityofBologna> ;
-    ns4:author <http://ceur-ws.org/Vol-398/#G.iTRAMONTANA>,
+<http://ceur-ws.org/Vol-398/#S6_PirruccelloEtAl> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-398/> ;
+    ns3:title "ScribaLab Ver. 2.0" ;
+    ns5:section <http%3A//ceur-ws.org/Vol-398/%23SessionChair%3ACARLOTOMASETTO%2CDepartmentofEducation-FacultyofPsychology%2CUniversityofBologna> ;
+    ns6:author <http://ceur-ws.org/Vol-398/#G.iTRAMONTANA>,
         <http://ceur-ws.org/Vol-398/#N.iS.iPIRRUCCELLO> .
 
-<http%3A//ceur-ws.org/Vol-398/%23Sessionchair%3AELVISMAZZONI%2CDepartmentofEducation-FacultyofPsychology%2CUniversityofBologna> a ns3:SessionEvent ;
-    ns3:partOf <http://ceur-ws.org/Vol-398/> ;
-    ns5:title "Session chair: ELVIS MAZZONI, Department of Education - Faculty of Psychology, University of Bologna" .
+<http%3A//ceur-ws.org/Vol-398/%23Sessionchair%3AELVISMAZZONI%2CDepartmentofEducation-FacultyofPsychology%2CUniversityofBologna> a ns4:SessionEvent ;
+    ns4:partOf <http://ceur-ws.org/Vol-398/> ;
+    ns3:title "Session chair: ELVIS MAZZONI, Department of Education - Faculty of Psychology, University of Bologna" .
 
-<http%3A//ceur-ws.org/Vol-398/%23Sessionchair%3AFELICECARUGATI%2CDepartmentofEducation-FacultyofPsychology%2CUniversityofBologna> a ns3:SessionEvent ;
-    ns3:partOf <http://ceur-ws.org/Vol-398/> ;
-    ns5:title "Session chair: FELICE CARUGATI, Department of Education - Faculty of Psychology, University of Bologna" .
+<http%3A//ceur-ws.org/Vol-398/%23Sessionchair%3AFELICECARUGATI%2CDepartmentofEducation-FacultyofPsychology%2CUniversityofBologna> a ns4:SessionEvent ;
+    ns4:partOf <http://ceur-ws.org/Vol-398/> ;
+    ns3:title "Session chair: FELICE CARUGATI, Department of Education - Faculty of Psychology, University of Bologna" .
 
 <http://ceur-ws.org/Vol-398/#MariaiCristinaiMatteucci> a ns1:Person ;
-    ns4:affiliation "" ;
+    ns6:affiliation "" ;
     ns2:sameAs <http://ceur-ws.org/persons/MariaiCristinaiMatteucci> ;
     ns1:made <http://ceur-ws.org/Vol-398/#Preface>,
         <http://ceur-ws.org/Vol-398/#S1_MatteucciEtAl>,
         <http://ceur-ws.org/Vol-398/#S4_CarugatiEtAl> ;
     ns1:name "Maria Cristina Matteucci" .
 
-<http://ceur-ws.org/Vol-398/#S2_ChesaniEtAl> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-398/> ;
-    ns5:title "E-learning by Doing with Computational Logic" ;
-    ns6:section <http%3A//ceur-ws.org/Vol-398/%23Sessionchair%3AMIRKOVIROLI%2CDepartmentofElectronics%2CInformaticsandSystems%28DEIS%29%2CUniversityofBologna> ;
-    ns4:author <http://ceur-ws.org/Vol-398/#A.iCIAMPOLINI>,
+<http://ceur-ws.org/Vol-398/#S2_ChesaniEtAl> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-398/> ;
+    ns3:title "E-learning by Doing with Computational Logic" ;
+    ns5:section <http%3A//ceur-ws.org/Vol-398/%23Sessionchair%3AMIRKOVIROLI%2CDepartmentofElectronics%2CInformaticsandSystems%28DEIS%29%2CUniversityofBologna> ;
+    ns6:author <http://ceur-ws.org/Vol-398/#A.iCIAMPOLINI>,
         <http://ceur-ws.org/Vol-398/#F.iCHESANI>,
         <http://ceur-ws.org/Vol-398/#P.iMELLO> .
 
-<http://ceur-ws.org/Vol-398/#S3_DucosEtAl> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-398/> ;
-    ns5:title "OVIDE-project: Methods of using online video in teacher education" ;
-    ns6:section <http%3A//ceur-ws.org/Vol-398/%23SessionChair%3AERNOLEHTINEN%2CUniversityofTurku> ;
-    ns4:author <http://ceur-ws.org/Vol-398/#G.iDUCOS>,
+<http://ceur-ws.org/Vol-398/#S3_DucosEtAl> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-398/> ;
+    ns3:title "OVIDE-project: Methods of using online video in teacher education" ;
+    ns5:section <http%3A//ceur-ws.org/Vol-398/%23SessionChair%3AERNOLEHTINEN%2CUniversityofTurku> ;
+    ns6:author <http://ceur-ws.org/Vol-398/#G.iDUCOS>,
         <http://ceur-ws.org/Vol-398/#P.iVROEGOP>,
         <http://ceur-ws.org/Vol-398/#P.iVUORINEN> .
 
-<http://ceur-ws.org/Vol-398/#S3_GuerraEtAl> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-398/> ;
-    ns5:title "A problematic teaching model for the implementation of e-learning formative pathways" ;
-    ns6:section <http%3A//ceur-ws.org/Vol-398/%23SessionChair%3AERNOLEHTINEN%2CUniversityofTurku> ;
-    ns4:author <http://ceur-ws.org/Vol-398/#G.iMAERAN>,
+<http://ceur-ws.org/Vol-398/#S3_GuerraEtAl> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-398/> ;
+    ns3:title "A problematic teaching model for the implementation of e-learning formative pathways" ;
+    ns5:section <http%3A//ceur-ws.org/Vol-398/%23SessionChair%3AERNOLEHTINEN%2CUniversityofTurku> ;
+    ns6:author <http://ceur-ws.org/Vol-398/#G.iMAERAN>,
         <http://ceur-ws.org/Vol-398/#L.iGUERRA>,
         <http://ceur-ws.org/Vol-398/#M.iFABBRI> .
 
-<http://ceur-ws.org/Vol-398/#S6_ErtlEtAl1> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-398/> ;
-    ns5:title "Supporting learners collaborative knowledge construction by external representations" ;
-    ns6:section <http%3A//ceur-ws.org/Vol-398/%23SessionChair%3ACARLOTOMASETTO%2CDepartmentofEducation-FacultyofPsychology%2CUniversityofBologna> ;
-    ns4:author <http://ceur-ws.org/Vol-398/#B.iERTL>,
+<http://ceur-ws.org/Vol-398/#S6_ErtlEtAl1> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-398/> ;
+    ns3:title "Supporting learners collaborative knowledge construction by external representations" ;
+    ns5:section <http%3A//ceur-ws.org/Vol-398/%23SessionChair%3ACARLOTOMASETTO%2CDepartmentofEducation-FacultyofPsychology%2CUniversityofBologna> ;
+    ns6:author <http://ceur-ws.org/Vol-398/#B.iERTL>,
         <http://ceur-ws.org/Vol-398/#B.iKOPP>,
         <http://ceur-ws.org/Vol-398/#H.iMANDL> .
 
-<http://ceur-ws.org/Vol-398/#S6_MakelaEtAl> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-398/> ;
-    ns5:title "Collaborative Knowledge Construction in Online Vocational Teacher Education" ;
-    ns6:section <http%3A//ceur-ws.org/Vol-398/%23SessionChair%3ACARLOTOMASETTO%2CDepartmentofEducation-FacultyofPsychology%2CUniversityofBologna> ;
-    ns4:author <http://ceur-ws.org/Vol-398/#H.iTORP>,
+<http://ceur-ws.org/Vol-398/#S6_MakelaEtAl> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-398/> ;
+    ns3:title "Collaborative Knowledge Construction in Online Vocational Teacher Education" ;
+    ns5:section <http%3A//ceur-ws.org/Vol-398/%23SessionChair%3ACARLOTOMASETTO%2CDepartmentofEducation-FacultyofPsychology%2CUniversityofBologna> ;
+    ns6:author <http://ceur-ws.org/Vol-398/#H.iTORP>,
         <http://ceur-ws.org/Vol-398/#M.iMYLLYL%C3%84>,
         <http://ceur-ws.org/Vol-398/#R.iM%C3%84KEL%C3%84> .
 
-<http://ceur-ws.org/Vol-398/#S6_SalminenEtAl> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-398/> ;
-    ns5:title "Argument elaboration during structured and unstructured dyadic chat discussion in secondary school" ;
-    ns6:section <http%3A//ceur-ws.org/Vol-398/%23SessionChair%3ACARLOTOMASETTO%2CDepartmentofEducation-FacultyofPsychology%2CUniversityofBologna> ;
-    ns4:author <http://ceur-ws.org/Vol-398/#L.iLAURINEN>,
+<http://ceur-ws.org/Vol-398/#S6_SalminenEtAl> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-398/> ;
+    ns3:title "Argument elaboration during structured and unstructured dyadic chat discussion in secondary school" ;
+    ns5:section <http%3A//ceur-ws.org/Vol-398/%23SessionChair%3ACARLOTOMASETTO%2CDepartmentofEducation-FacultyofPsychology%2CUniversityofBologna> ;
+    ns6:author <http://ceur-ws.org/Vol-398/#L.iLAURINEN>,
         <http://ceur-ws.org/Vol-398/#M.iMARTTUNEN>,
         <http://ceur-ws.org/Vol-398/#T.iSALMINEN> .
 
-<http%3A//ceur-ws.org/Vol-398/%23Sessionchair%3ALISEVIEIRA%2CUniversityofBordeuxIIIMicheldeMontaigne%E2%80%94%22CEMICGRESIC%22> a ns3:SessionEvent ;
-    ns3:partOf <http://ceur-ws.org/Vol-398/> ;
-    ns5:title "Session chair: LISE VIEIRA, University of Bordeux III Michel de Montaigne — \"CEMICGRESIC\"" .
+<http%3A//ceur-ws.org/Vol-398/%23Sessionchair%3ALISEVIEIRA%2CUniversityofBordeuxIIIMicheldeMontaigne%E2%80%94%22CEMICGRESIC%22> a ns4:SessionEvent ;
+    ns4:partOf <http://ceur-ws.org/Vol-398/> ;
+    ns3:title "Session chair: LISE VIEIRA, University of Bordeux III Michel de Montaigne — \"CEMICGRESIC\"" .
 
-<http%3A//ceur-ws.org/Vol-398/%23Sessionchair%3AMIRKOVIROLI%2CDepartmentofElectronics%2CInformaticsandSystems%28DEIS%29%2CUniversityofBologna> a ns3:SessionEvent ;
-    ns3:partOf <http://ceur-ws.org/Vol-398/> ;
-    ns5:title "Session chair: MIRKO VIROLI, Department of Electronics, Informatics and Systems (DEIS), University of Bologna" .
+<http%3A//ceur-ws.org/Vol-398/%23Sessionchair%3AMIRKOVIROLI%2CDepartmentofElectronics%2CInformaticsandSystems%28DEIS%29%2CUniversityofBologna> a ns4:SessionEvent ;
+    ns4:partOf <http://ceur-ws.org/Vol-398/> ;
+    ns3:title "Session chair: MIRKO VIROLI, Department of Electronics, Informatics and Systems (DEIS), University of Bologna" .
 
-<http://ceur-ws.org/Vol-398/#S1_MatteucciEtAl> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-398/> ;
-    ns5:title "Social networks and knowledge construction promotion in e-learning contexts" ;
-    ns6:section <http%3A//ceur-ws.org/Vol-398/%23Sessionchair%3AFELICECARUGATI%2CDepartmentofEducation-FacultyofPsychology%2CUniversityofBologna> ;
-    ns4:author <http://ceur-ws.org/Vol-398/#C.iTOMASETTO>,
+<http://ceur-ws.org/Vol-398/#S1_MatteucciEtAl> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-398/> ;
+    ns3:title "Social networks and knowledge construction promotion in e-learning contexts" ;
+    ns5:section <http%3A//ceur-ws.org/Vol-398/%23Sessionchair%3AFELICECARUGATI%2CDepartmentofEducation-FacultyofPsychology%2CUniversityofBologna> ;
+    ns6:author <http://ceur-ws.org/Vol-398/#C.iTOMASETTO>,
         <http://ceur-ws.org/Vol-398/#FeliceiCARUGATI>,
         <http://ceur-ws.org/Vol-398/#MariaiCristinaiMatteucci>,
         <http://ceur-ws.org/Vol-398/#P.iSELLERI> .
 
-<http://ceur-ws.org/Vol-398/#S6_GhislandiEtAl> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-398/> ;
-    ns5:title "Quality in eLearning. Some results from a national research program" ;
-    ns6:section <http%3A//ceur-ws.org/Vol-398/%23SessionChair%3ACARLOTOMASETTO%2CDepartmentofEducation-FacultyofPsychology%2CUniversityofBologna> ;
-    ns4:author <http://ceur-ws.org/Vol-398/#A.iPEDRONI>,
+<http://ceur-ws.org/Vol-398/#S6_GhislandiEtAl> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-398/> ;
+    ns3:title "Quality in eLearning. Some results from a national research program" ;
+    ns5:section <http%3A//ceur-ws.org/Vol-398/%23SessionChair%3ACARLOTOMASETTO%2CDepartmentofEducation-FacultyofPsychology%2CUniversityofBologna> ;
+    ns6:author <http://ceur-ws.org/Vol-398/#A.iPEDRONI>,
         <http://ceur-ws.org/Vol-398/#D.iFRANCESCHINI>,
         <http://ceur-ws.org/Vol-398/#D.iPAOLINO>,
         <http://ceur-ws.org/Vol-398/#P.iGHISLANDI> .
 
-<http://ceur-ws.org/Vol-398/#S3_GianninoEtAl> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-398/> ;
-    ns5:title "A web-based learning tool for applied mathematics disciplines" ;
-    ns6:section <http%3A//ceur-ws.org/Vol-398/%23SessionChair%3AERNOLEHTINEN%2CUniversityofTurku> ;
-    ns4:author <http://ceur-ws.org/Vol-398/#F.iGIANNINO>,
+<http://ceur-ws.org/Vol-398/#S3_GianninoEtAl> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-398/> ;
+    ns3:title "A web-based learning tool for applied mathematics disciplines" ;
+    ns5:section <http%3A//ceur-ws.org/Vol-398/%23SessionChair%3AERNOLEHTINEN%2CUniversityofTurku> ;
+    ns6:author <http://ceur-ws.org/Vol-398/#F.iGIANNINO>,
         <http://ceur-ws.org/Vol-398/#G.iTORALDO>,
         <http://ceur-ws.org/Vol-398/#L.iRANDAZZO>,
         <http://ceur-ws.org/Vol-398/#M.iR.iGUARRACINO>,
         <http://ceur-ws.org/Vol-398/#V.iM.iMONETTI> .
 
-<http://ceur-ws.org/Vol-398/#S4_RientiesEtAl> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-398/> ;
-    ns5:title "Virtual teams and preferential attachment for intrinsic motivation" ;
-    ns6:section <http%3A//ceur-ws.org/Vol-398/%23Sessionchair%3AELVISMAZZONI%2CDepartmentofEducation-FacultyofPsychology%2CUniversityofBologna> ;
-    ns4:author <http://ceur-ws.org/Vol-398/#B.iGIESBERS>,
+<http://ceur-ws.org/Vol-398/#S4_RientiesEtAl> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-398/> ;
+    ns3:title "Virtual teams and preferential attachment for intrinsic motivation" ;
+    ns5:section <http%3A//ceur-ws.org/Vol-398/%23Sessionchair%3AELVISMAZZONI%2CDepartmentofEducation-FacultyofPsychology%2CUniversityofBologna> ;
+    ns6:author <http://ceur-ws.org/Vol-398/#B.iGIESBERS>,
         <http://ceur-ws.org/Vol-398/#B.iRIENTIES>,
         <http://ceur-ws.org/Vol-398/#D.T.iTEMPELAAR>,
         <http://ceur-ws.org/Vol-398/#M.iSEGERS>,
         <http://ceur-ws.org/Vol-398/#W.H.iGIJSELAERS> .
 
-<http%3A//ceur-ws.org/Vol-398/%23SessionChair%3AERNOLEHTINEN%2CUniversityofTurku> a ns3:SessionEvent ;
-    ns3:partOf <http://ceur-ws.org/Vol-398/> ;
-    ns5:title "Session Chair: ERNO LEHTINEN, University of Turku" .
+<http%3A//ceur-ws.org/Vol-398/%23SessionChair%3AERNOLEHTINEN%2CUniversityofTurku> a ns4:SessionEvent ;
+    ns4:partOf <http://ceur-ws.org/Vol-398/> ;
+    ns3:title "Session Chair: ERNO LEHTINEN, University of Turku" .
 
-<http://ceur-ws.org/Vol-398/#S2_FiniEtAl> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-398/> ;
-    ns5:title "Open Education and virtual communities: an experience" ;
-    ns6:section <http%3A//ceur-ws.org/Vol-398/%23Sessionchair%3AMIRKOVIROLI%2CDepartmentofElectronics%2CInformaticsandSystems%28DEIS%29%2CUniversityofBologna> ;
-    ns4:author <http://ceur-ws.org/Vol-398/#A.iFINI>,
+<http://ceur-ws.org/Vol-398/#S2_FiniEtAl> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-398/> ;
+    ns3:title "Open Education and virtual communities: an experience" ;
+    ns5:section <http%3A//ceur-ws.org/Vol-398/%23Sessionchair%3AMIRKOVIROLI%2CDepartmentofElectronics%2CInformaticsandSystems%28DEIS%29%2CUniversityofBologna> ;
+    ns6:author <http://ceur-ws.org/Vol-398/#A.iFINI>,
         <http://ceur-ws.org/Vol-398/#A.iFORMICONI>,
         <http://ceur-ws.org/Vol-398/#A.iGIORNI>,
         <http://ceur-ws.org/Vol-398/#E.iSPADAVECCHIA>,
         <http://ceur-ws.org/Vol-398/#E.iZIBORDI>,
         <http://ceur-ws.org/Vol-398/#N.iS.iPIRRUCCELLO> .
 
-<http://ceur-ws.org/Vol-398/#S4_CarugatiEtAl> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-398/> ;
-    ns5:title "Monitoring and Analyzing collaboration in e-learning environment: two case studies applied to vocational training" ;
-    ns6:section <http%3A//ceur-ws.org/Vol-398/%23Sessionchair%3AELVISMAZZONI%2CDepartmentofEducation-FacultyofPsychology%2CUniversityofBologna> ;
-    ns4:author <http://ceur-ws.org/Vol-398/#C.iTOMASETTO>,
+<http://ceur-ws.org/Vol-398/#S4_CarugatiEtAl> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-398/> ;
+    ns3:title "Monitoring and Analyzing collaboration in e-learning environment: two case studies applied to vocational training" ;
+    ns5:section <http%3A//ceur-ws.org/Vol-398/%23Sessionchair%3AELVISMAZZONI%2CDepartmentofEducation-FacultyofPsychology%2CUniversityofBologna> ;
+    ns6:author <http://ceur-ws.org/Vol-398/#C.iTOMASETTO>,
         <http://ceur-ws.org/Vol-398/#E.iMAZZONI>,
         <http://ceur-ws.org/Vol-398/#FeliceiCARUGATI>,
         <http://ceur-ws.org/Vol-398/#MariaiCristinaiMatteucci>,
         <http://ceur-ws.org/Vol-398/#P.iGAFFURI>,
         <http://ceur-ws.org/Vol-398/#P.iSELLERI> .
 
-<http://ceur-ws.org/Vol-398/#S3_AnyfandiEtAl> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-398/> ;
-    ns5:title "Laboratory door opens to non-formal learning communities. Science centres as mediators" ;
-    ns6:section <http%3A//ceur-ws.org/Vol-398/%23SessionChair%3AERNOLEHTINEN%2CUniversityofTurku> ;
-    ns4:author <http://ceur-ws.org/Vol-398/#D.iMARKOVITSI>,
+<http://ceur-ws.org/Vol-398/#S3_AnyfandiEtAl> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-398/> ;
+    ns3:title "Laboratory door opens to non-formal learning communities. Science centres as mediators" ;
+    ns5:section <http%3A//ceur-ws.org/Vol-398/%23SessionChair%3AERNOLEHTINEN%2CUniversityofTurku> ;
+    ns6:author <http://ceur-ws.org/Vol-398/#D.iMARKOVITSI>,
         <http://ceur-ws.org/Vol-398/#G.iANYFANDI>,
         <http://ceur-ws.org/Vol-398/#N.iAPOSTOLOPOULOS>,
         <http://ceur-ws.org/Vol-398/#V.iDEiSEMIR>,
@@ -679,12 +679,12 @@
         <http://ceur-ws.org/Vol-398/#V.iLAOPODIS>,
         <http://ceur-ws.org/Vol-398/#X.iTSILIBARIS> .
 
-<http%3A//ceur-ws.org/Vol-398/%23SessionChair%3ACARLOTOMASETTO%2CDepartmentofEducation-FacultyofPsychology%2CUniversityofBologna> a ns3:SessionEvent ;
-    ns3:partOf <http://ceur-ws.org/Vol-398/> ;
-    ns5:title "Session Chair: CARLO TOMASETTO, Department of Education - Faculty of Psychology, University of Bologna" .
+<http%3A//ceur-ws.org/Vol-398/%23SessionChair%3ACARLOTOMASETTO%2CDepartmentofEducation-FacultyofPsychology%2CUniversityofBologna> a ns4:SessionEvent ;
+    ns4:partOf <http://ceur-ws.org/Vol-398/> ;
+    ns3:title "Session Chair: CARLO TOMASETTO, Department of Education - Faculty of Psychology, University of Bologna" .
 
-<http://ceur-ws.org/Vol-398/> a ns3:Proceedings ;
-    ns3:hasPart <http://ceur-ws.org/Vol-398/#Carugati>,
+<http://ceur-ws.org/Vol-398/> a ns4:Proceedings ;
+    ns4:hasPart <http://ceur-ws.org/Vol-398/#Carugati>,
         <http://ceur-ws.org/Vol-398/#Preface>,
         <http://ceur-ws.org/Vol-398/#S1_KoppEtAl>,
         <http://ceur-ws.org/Vol-398/#S1_MatteucciEtAl>,
@@ -717,16 +717,16 @@
         <http://ceur-ws.org/Vol-398/#S6_NicoliniEtAl>,
         <http://ceur-ws.org/Vol-398/#S6_PirruccelloEtAl>,
         <http://ceur-ws.org/Vol-398/#S6_SalminenEtAl> ;
-    ns3:hasSession <http%3A//ceur-ws.org/Vol-398/%23SessionChair%3ACARLOTOMASETTO%2CDepartmentofEducation-FacultyofPsychology%2CUniversityofBologna>,
+    ns4:hasSession <http%3A//ceur-ws.org/Vol-398/%23SessionChair%3ACARLOTOMASETTO%2CDepartmentofEducation-FacultyofPsychology%2CUniversityofBologna>,
         <http%3A//ceur-ws.org/Vol-398/%23SessionChair%3AERNOLEHTINEN%2CUniversityofTurku>,
         <http%3A//ceur-ws.org/Vol-398/%23Sessionchair%3AELVISMAZZONI%2CDepartmentofEducation-FacultyofPsychology%2CUniversityofBologna>,
         <http%3A//ceur-ws.org/Vol-398/%23Sessionchair%3AFELICECARUGATI%2CDepartmentofEducation-FacultyofPsychology%2CUniversityofBologna>,
         <http%3A//ceur-ws.org/Vol-398/%23Sessionchair%3ALISEVIEIRA%2CUniversityofBordeuxIIIMicheldeMontaigne%E2%80%94%22CEMICGRESIC%22>,
         <http%3A//ceur-ws.org/Vol-398/%23Sessionchair%3AMIRKOVIROLI%2CDepartmentofElectronics%2CInformaticsandSystems%28DEIS%29%2CUniversityofBologna> ;
     ns8:issued "2008-10-07T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:presentedAt <http://ceur-ws.org/Vol-398/#event> ;
-    ns4:editor <http://ceur-ws.org/Vol-398/#A.iOMICINI>,
-        <http://ceur-ws.org/Vol-398/#E.iNARDINI>,
+    ns5:presentedAt <http://ceur-ws.org/Vol-398/#event> ;
+    ns6:editor <http://ceur-ws.org/Vol-398/#AndreaiOmicini>,
+        <http://ceur-ws.org/Vol-398/#ElenaiNardini>,
         <http://ceur-ws.org/Vol-398/#MariaiCristinaiMatteucci>,
         <http://ceur-ws.org/Vol-398/#P.iGAFFURI> .
 

@@ -1,45 +1,45 @@
-@prefix ns1: <http://www.w3.org/2002/07/owl#> .
-@prefix ns2: <http://xmlns.com/foaf/0.1/> .
-@prefix ns3: <http://purl.org/ontology/bibo/#> .
-@prefix ns4: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns5: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns6: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns7: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns1: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns2: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns3: <http://xmlns.com/foaf/0.1/> .
+@prefix ns4: <http://purl.org/ontology/bibo/#> .
+@prefix ns5: <http://www.w3.org/2002/07/owl#> .
+@prefix ns6: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
 @prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-414/> a ns6:Proceedings ;
+<http://ceur-ws.org/Vol-414/> a ns1:Proceedings ;
     ns8:issued "2008-11-04T00:00:00+00:00"^^xsd:dateTime ;
-    ns3:presentedAt <http://ceur-ws.org/Vol-414/#event> ;
-    ns4:editor <http://ceur-ws.org/Vol-414/#FacultyiofiMathematics>,
+    ns4:presentedAt <http://ceur-ws.org/Vol-414/#event> ;
+    ns6:editor <http://ceur-ws.org/Vol-414/#FacultyiofiMathematics>,
         <http://ceur-ws.org/Vol-414/#InstituteiofiComputeriScience>,
         <http://ceur-ws.org/Vol-414/#Physics>,
         <http://ceur-ws.org/Vol-414/#SlovakiArtificialiIntelligenceiSociety> .
 
-<http://ceur-ws.org/Vol-414/#FacultyiofiMathematics> a ns2:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/FacultyiofiMathematics> ;
-    ns2:name "Faculty of Mathematics" .
+<http://ceur-ws.org/Vol-414/#FacultyiofiMathematics> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/FacultyiofiMathematics> ;
+    ns3:name "Faculty of Mathematics" .
 
-<http://ceur-ws.org/Vol-414/#InstituteiofiComputeriScience> a ns2:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/InstituteiofiComputeriScience> ;
-    ns2:name "Institute of Computer Science" .
+<http://ceur-ws.org/Vol-414/#InstituteiofiComputeriScience> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/InstituteiofiComputeriScience> ;
+    ns3:name "Institute of Computer Science" .
 
-<http://ceur-ws.org/Vol-414/#Physics> a ns2:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/Physics> ;
-    ns2:name "Physics" .
+<http://ceur-ws.org/Vol-414/#Physics> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/Physics> ;
+    ns3:name "Physics" .
 
-<http://ceur-ws.org/Vol-414/#SlovakiArtificialiIntelligenceiSociety> a ns2:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/SlovakiArtificialiIntelligenceiSociety> ;
-    ns2:name "Slovak Artificial Intelligence Society" .
+<http://ceur-ws.org/Vol-414/#SlovakiArtificialiIntelligenceiSociety> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/SlovakiArtificialiIntelligenceiSociety> ;
+    ns3:name "Slovak Artificial Intelligence Society" .
 
-<http://ceur-ws.org/Vol-414/#event> a ns6:WorkshopEvent ;
-    ns6:hasLocation <http://dbpedia.org/resource/Euro_gold_and_silver_commemorative_coins_(Slovakia)> ;
-    ns6:hasPart <http://ceur-ws.org/Vol-414/#part-ITAT> ;
-    ns6:isSubEventOf <http://ceur-ws.org/Vol-414/#conf> ;
-    ns5:beginsAtDatetime "2008-09-22T00:00:00+00:00"^^xsd:dateTime ;
-    ns5:endsAtDatetime "2008-09-26T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:license <http://choosealicense.com/licenses/no-license/> .
+<http://ceur-ws.org/Vol-414/#event> a ns1:WorkshopEvent ;
+    ns1:hasLocation <http://dbpedia.org/resource/Euro_gold_and_silver_commemorative_coins_(Slovakia)> ;
+    ns1:hasPart <http://ceur-ws.org/Vol-414/#part-ITAT> ;
+    ns1:isSubEventOf <http://ceur-ws.org/Vol-414/#conf> ;
+    ns7:beginsAtDatetime "2008-09-22T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:endsAtDatetime "2008-09-26T00:00:00+00:00"^^xsd:dateTime ;
+    ns2:license <http://choosealicense.com/licenses/no-license/> .
 

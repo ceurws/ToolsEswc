@@ -1,11 +1,11 @@
 @prefix ns1: <http://xmlns.com/foaf/0.1/> .
-@prefix ns2: <http://purl.org/ontology/bibo/#> .
-@prefix ns3: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns2: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns3: <http://purl.org/ontology/bibo/#> .
 @prefix ns4: <http://data.semanticweb.org/ns/swc/ontology/#> .
 @prefix ns5: <http://www.w3.org/2002/07/owl#> .
-@prefix ns6: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns7: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns6: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -87,7 +87,7 @@
     ns1:name "Tim Lethbridge" .
 
 <http://ceur-ws.org/Vol-1555/#TonyiClark> a ns1:Person ;
-    ns3:affiliation "" ;
+    ns2:affiliation "" ;
     ns5:sameAs <http://ceur-ws.org/persons/TonyiClark> ;
     ns1:name "Tony Clark" .
 
@@ -100,78 +100,78 @@
     ns4:hasLocation <http://dbpedia.org/resource/Canada> ;
     ns4:hasPart <http://ceur-ws.org/Vol-1555/#part-EduSymp> ;
     ns4:isSubEventOf <http://ceur-ws.org/Vol-1555/#conf> ;
-    ns6:beginsAtDatetime "2015-09-29T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:endsAtDatetime "2015-09-29T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:beginsAtDatetime "2015-09-29T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:endsAtDatetime "2015-09-29T00:00:00+00:00"^^xsd:dateTime ;
     rdfs:seeAlso <http://ceur-ws.org/Vol-1134/#event>,
         <http://ceur-ws.org/Vol-1346/#event> .
 
 <http://ceur-ws.org/Vol-1555/#ArnoniSturm> a ns1:Person ;
-    ns3:affiliation "" ;
+    ns2:affiliation "" ;
     ns5:sameAs <http://ceur-ws.org/persons/ArnoniSturm> ;
     ns1:made <http://ceur-ws.org/Vol-1555/#panel> ;
     ns1:name "Arnon Sturm" .
 
-<http://ceur-ws.org/Vol-1555/#DaveiR.iStikkolorum> a ns1:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/DaveiR.iStikkolorum> ;
+<http://ceur-ws.org/Vol-1555/#DaveiStikkolorum> a ns1:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/DaveiStikkolorum> ;
     ns1:made <http://ceur-ws.org/Vol-1555/#panel>,
         <http://ceur-ws.org/Vol-1555/#paper3> ;
-    ns1:name "Dave R. Stikkolorum" .
+    ns1:name "Dave Stikkolorum" .
 
 <http://ceur-ws.org/Vol-1555/#keynote> a ns4:Paper ;
     ns4:partOf <http://ceur-ws.org/Vol-1555/> ;
-    ns7:title "UML@Classroom: An Introduction to Object-Oriented Modeling" ;
-    ns2:endPage 3 ;
-    ns2:numPages 3 ;
-    ns2:startPage 1 ;
-    ns3:author <http://ceur-ws.org/Vol-1555/#MartinaiSeidl> .
+    ns6:title "UML@Classroom: An Introduction to Object-Oriented Modeling" ;
+    ns3:endPage 3 ;
+    ns3:numPages 3 ;
+    ns3:startPage 1 ;
+    ns2:author <http://ceur-ws.org/Vol-1555/#MartinaiSeidl> .
 
 <http://ceur-ws.org/Vol-1555/#paper1> a ns4:Paper ;
     ns4:partOf <http://ceur-ws.org/Vol-1555/> ;
-    ns7:title "An Approach to Employ Modeling in a Traditional Computer Science Curriculum or: Why Posing Essentials of the Object Constraint Language without Objects and Constraints?" ;
-    ns2:endPage 5 ;
-    ns2:numPages 2 ;
-    ns2:startPage 4 ;
-    ns3:author <http://ceur-ws.org/Vol-1555/#MartiniGogolla> .
+    ns6:title "An Approach to Employ Modeling in a Traditional Computer Science Curriculum or: Why Posing Essentials of the Object Constraint Language without Objects and Constraints?" ;
+    ns3:endPage 5 ;
+    ns3:numPages 2 ;
+    ns3:startPage 4 ;
+    ns2:author <http://ceur-ws.org/Vol-1555/#MartiniGogolla> .
 
 <http://ceur-ws.org/Vol-1555/#paper2> a ns4:Paper ;
     ns4:partOf <http://ceur-ws.org/Vol-1555/> ;
-    ns7:title "Flipped Top-Down is Systematic Bottom-Up" ;
-    ns2:endPage 16 ;
-    ns2:numPages 11 ;
-    ns2:startPage 6 ;
-    ns3:author <http://ceur-ws.org/Vol-1555/#VadimiZaytsev> .
+    ns6:title "Flipped Top-Down is Systematic Bottom-Up" ;
+    ns3:endPage 16 ;
+    ns3:numPages 11 ;
+    ns3:startPage 6 ;
+    ns2:author <http://ceur-ws.org/Vol-1555/#VadimiZaytsev> .
 
 <http://ceur-ws.org/Vol-1555/#paper3> a ns4:Paper ;
     ns4:partOf <http://ceur-ws.org/Vol-1555/> ;
-    ns7:title "Uncovering Students' Common Difficulties and Strategies During a Class Diagram Design Process: an Online Experiment" ;
-    ns2:endPage 28 ;
-    ns2:numPages 12 ;
-    ns2:startPage 17 ;
-    ns3:author <http://ceur-ws.org/Vol-1555/#DaveiR.iStikkolorum> .
+    ns6:title "Uncovering Students' Common Difficulties and Strategies During a Class Diagram Design Process: an Online Experiment" ;
+    ns3:endPage 28 ;
+    ns3:numPages 12 ;
+    ns3:startPage 17 ;
+    ns2:author <http://ceur-ws.org/Vol-1555/#DaveiStikkolorum> .
 
 <http://ceur-ws.org/Vol-1555/#paper4> a ns4:Paper ;
     ns4:partOf <http://ceur-ws.org/Vol-1555/> ;
-    ns7:title "Experiences of Teaching Model-based Development" ;
-    ns2:endPage 42 ;
-    ns2:numPages 14 ;
-    ns2:startPage 29 ;
-    ns3:author <http://ceur-ws.org/Vol-1555/#KeviniLano> .
+    ns6:title "Experiences of Teaching Model-based Development" ;
+    ns3:endPage 42 ;
+    ns3:numPages 14 ;
+    ns3:startPage 29 ;
+    ns2:author <http://ceur-ws.org/Vol-1555/#KeviniLano> .
 
 <http://ceur-ws.org/Vol-1555/#paper5> a ns4:Paper ;
     ns4:partOf <http://ceur-ws.org/Vol-1555/> ;
-    ns7:title "Quality Assessment of UML Class Diagrams - A Study Comparing Experts and Students" ;
-    ns2:endPage 54 ;
-    ns2:numPages 12 ;
-    ns2:startPage 43 ;
-    ns3:author <http://ceur-ws.org/Vol-1555/#BilaliKarasneh> .
+    ns6:title "Quality Assessment of UML Class Diagrams - A Study Comparing Experts and Students" ;
+    ns3:endPage 54 ;
+    ns3:numPages 12 ;
+    ns3:startPage 43 ;
+    ns2:author <http://ceur-ws.org/Vol-1555/#BilaliKarasneh> .
 
 <http://ceur-ws.org/Vol-1555/#paper6> a ns4:Paper ;
     ns4:partOf <http://ceur-ws.org/Vol-1555/> ;
-    ns7:title "Evaluating Student Work in Modelling Courses" ;
-    ns2:endPage 67 ;
-    ns2:numPages 13 ;
-    ns2:startPage 55 ;
-    ns3:author <http://ceur-ws.org/Vol-1555/#RichardiF.iPaige> .
+    ns6:title "Evaluating Student Work in Modelling Courses" ;
+    ns3:endPage 67 ;
+    ns3:numPages 13 ;
+    ns3:startPage 55 ;
+    ns2:author <http://ceur-ws.org/Vol-1555/#RichardiF.iPaige> .
 
 <http://ceur-ws.org/Vol-1555/> a ns4:Proceedings ;
     ns4:hasPart <http://ceur-ws.org/Vol-1555/#keynote>,
@@ -182,21 +182,21 @@
         <http://ceur-ws.org/Vol-1555/#paper4>,
         <http://ceur-ws.org/Vol-1555/#paper5>,
         <http://ceur-ws.org/Vol-1555/#paper6> ;
-    ns8:issued "2016-02-04T00:00:00+00:00"^^xsd:dateTime ;
-    ns2:presentedAt <http://ceur-ws.org/Vol-1555/#event> ;
-    ns3:editor <http://ceur-ws.org/Vol-1555/#ArnoniSturm>,
+    ns7:issued "2016-02-04T00:00:00+00:00"^^xsd:dateTime ;
+    ns3:presentedAt <http://ceur-ws.org/Vol-1555/#event> ;
+    ns2:editor <http://ceur-ws.org/Vol-1555/#ArnoniSturm>,
         <http://ceur-ws.org/Vol-1555/#TonyiClark> .
 
 <http://ceur-ws.org/Vol-1555/#panel> a ns4:Paper ;
     ns4:partOf <http://ceur-ws.org/Vol-1555/> ;
-    ns7:title "Software Models in Practice in Student Projects - Panel Summary" ;
-    ns2:endPage 76 ;
-    ns2:numPages 9 ;
-    ns2:startPage 68 ;
-    ns3:author <http://ceur-ws.org/Vol-1555/#ArnoniSturm>,
+    ns6:title "Software Models in Practice in Student Projects - Panel Summary" ;
+    ns3:endPage 76 ;
+    ns3:numPages 9 ;
+    ns3:startPage 68 ;
+    ns2:author <http://ceur-ws.org/Vol-1555/#ArnoniSturm>,
         <http://ceur-ws.org/Vol-1555/#BettyiCheng>,
         <http://ceur-ws.org/Vol-1555/#DaniChiorean>,
-        <http://ceur-ws.org/Vol-1555/#DaveiR.iStikkolorum>,
+        <http://ceur-ws.org/Vol-1555/#DaveiStikkolorum>,
         <http://ceur-ws.org/Vol-1555/#EmilioiPelozo>,
         <http://ceur-ws.org/Vol-1555/#GeriiGeorg>,
         <http://ceur-ws.org/Vol-1555/#GrischaiLiebel>,

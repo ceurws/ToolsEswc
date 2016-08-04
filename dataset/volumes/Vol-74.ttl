@@ -1,35 +1,35 @@
-@prefix ns1: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns2: <http://purl.org/ontology/bibo/#> .
-@prefix ns3: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns4: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns5: <http://xmlns.com/foaf/0.1/> .
+@prefix ns1: <http://xmlns.com/foaf/0.1/> .
+@prefix ns2: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns3: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns4: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns5: <http://purl.org/NET/c4dm/timeline.owl#> .
 @prefix ns6: <http://www.w3.org/2002/07/owl#> .
-@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns8: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns7: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns8: <http://purl.org/ontology/bibo/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-74/> a ns4:Proceedings ;
-    ns7:issued "2003-08-11T00:00:00+00:00"^^xsd:dateTime ;
-    ns2:presentedAt <http://ceur-ws.org/Vol-74/#event> ;
-    ns8:editor <http://ceur-ws.org/Vol-74/#Bo%C5%A1tjaniBrumen>,
+<http://ceur-ws.org/Vol-74/> a ns3:Proceedings ;
+    ns4:issued "2003-08-11T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:presentedAt <http://ceur-ws.org/Vol-74/#event> ;
+    ns2:editor <http://ceur-ws.org/Vol-74/#Bo%C5%A1tjaniBrumen>,
         <http://ceur-ws.org/Vol-74/#MarekiLehmann> .
 
-<http://ceur-ws.org/Vol-74/#Bo%C5%A1tjaniBrumen> a ns5:Person ;
+<http://ceur-ws.org/Vol-74/#Bo%C5%A1tjaniBrumen> a ns1:Person ;
     ns6:sameAs <http://ceur-ws.org/persons/Bo%C5%A1tjaniBrumen> ;
-    ns5:name "Boštjan Brumen" .
+    ns1:name "Boštjan Brumen" .
 
-<http://ceur-ws.org/Vol-74/#MarekiLehmann> a ns5:Person ;
+<http://ceur-ws.org/Vol-74/#MarekiLehmann> a ns1:Person ;
     ns6:sameAs <http://ceur-ws.org/persons/MarekiLehmann> ;
-    ns5:name "Marek Lehmann" .
+    ns1:name "Marek Lehmann" .
 
-<http://ceur-ws.org/Vol-74/#event> a ns4:WorkshopEvent ;
-    ns4:hasLocation <http://dbpedia.org/resource/Austria> ;
-    ns4:hasPart <http://ceur-ws.org/Vol-74/#part-CAiSE> ;
-    ns4:isSubEventOf <http://ceur-ws.org/Vol-74/#conf> ;
-    ns3:beginsAtDatetime "2003-06-16T00:00:00+00:00"^^xsd:dateTime ;
-    ns3:endsAtDatetime "2003-06-20T00:00:00+00:00"^^xsd:dateTime ;
-    ns1:license <http://choosealicense.com/licenses/no-license/> .
+<http://ceur-ws.org/Vol-74/#event> a ns3:WorkshopEvent ;
+    ns3:hasLocation <http://dbpedia.org/resource/Austria> ;
+    ns3:hasPart <http://ceur-ws.org/Vol-74/#part-CAiSE> ;
+    ns3:isSubEventOf <http://ceur-ws.org/Vol-74/#conf> ;
+    ns5:beginsAtDatetime "2003-06-16T00:00:00+00:00"^^xsd:dateTime ;
+    ns5:endsAtDatetime "2003-06-20T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:license <http://choosealicense.com/licenses/no-license/> .
 

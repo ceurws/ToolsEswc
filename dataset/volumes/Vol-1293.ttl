@@ -1,11 +1,11 @@
 @prefix ns1: <http://xmlns.com/foaf/0.1/> .
-@prefix ns2: <http://purl.org/ontology/bibo/#> .
+@prefix ns2: <http://purl.org/NET/c4dm/timeline.owl#> .
 @prefix ns3: <http://www.w3.org/2002/07/owl#> .
-@prefix ns4: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns5: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns6: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns4: <http://purl.org/ontology/bibo/#> .
+@prefix ns5: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns6: <http://purl.org/dc/elements/1.1/#> .
 @prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns8: <http://data.semanticweb.org/ns/swc/ontology/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -37,8 +37,8 @@
     ns1:name "Awatef Hicheur Cairns" .
 
 <http://ceur-ws.org/Vol-1293/#BarbaraiRusso> a ns1:Person ;
-    ns2:place <http://dbpedia.org/resource/Italy> ;
-    ns6:affiliation "Free University of Bozen-Bolzano" ;
+    ns4:place <http://dbpedia.org/resource/Italy> ;
+    ns5:affiliation "Free University of Bozen-Bolzano" ;
     ns3:sameAs <http://ceur-ws.org/persons/BarbaraiRusso> ;
     ns1:name "Barbara Russo" .
 
@@ -188,14 +188,14 @@
     ns1:name "Nicola Zannone" .
 
 <http://ceur-ws.org/Vol-1293/#PaoloiCeravolo> a ns1:Person ;
-    ns2:place <http://dbpedia.org/resource/Italy> ;
-    ns6:affiliation "Università degli Studi di Milano" ;
+    ns4:place <http://dbpedia.org/resource/Italy> ;
+    ns5:affiliation "Università degli Studi di Milano" ;
     ns3:sameAs <http://ceur-ws.org/persons/PaoloiCeravolo> ;
     ns1:name "Paolo Ceravolo" .
 
 <http://ceur-ws.org/Vol-1293/#RafaeliAccorsi> a ns1:Person ;
-    ns2:place <http://dbpedia.org/resource/Germany> ;
-    ns6:affiliation "University of Freiburg" ;
+    ns4:place <http://dbpedia.org/resource/Germany> ;
+    ns5:affiliation "University of Freiburg" ;
     ns3:sameAs <http://ceur-ws.org/persons/RafaeliAccorsi> ;
     ns1:name "Rafael Accorsi" .
 
@@ -229,12 +229,12 @@
     ns1:made <http://ceur-ws.org/Vol-1293/#paper7> ;
     ns1:name "Wasif Gilani" .
 
-<http://ceur-ws.org/Vol-1293/#event> a ns4:WorkshopEvent ;
-    ns4:hasLocation <http://dbpedia.org/resource/Italy> ;
-    ns4:hasPart <http://ceur-ws.org/Vol-1293/#part-SIMPDA> ;
-    ns4:isSubEventOf <http://ceur-ws.org/Vol-1293/#conf> ;
-    ns8:beginsAtDatetime "2014-11-19T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:endsAtDatetime "2014-11-21T00:00:00+00:00"^^xsd:dateTime ;
+<http://ceur-ws.org/Vol-1293/#event> a ns8:WorkshopEvent ;
+    ns8:hasLocation <http://dbpedia.org/resource/Italy> ;
+    ns8:hasPart <http://ceur-ws.org/Vol-1293/#part-SIMPDA> ;
+    ns8:isSubEventOf <http://ceur-ws.org/Vol-1293/#conf> ;
+    ns2:beginsAtDatetime "2014-11-19T00:00:00+00:00"^^xsd:dateTime ;
+    ns2:endsAtDatetime "2014-11-21T00:00:00+00:00"^^xsd:dateTime ;
     rdfs:seeAlso <http://ceur-ws.org/Vol-1027/#event> .
 
 <http://ceur-ws.org/Vol-1293/#EriciVerbeek> a ns1:Person ;
@@ -243,18 +243,18 @@
         <http://ceur-ws.org/Vol-1293/#paper9> ;
     ns1:name "Eric Verbeek" .
 
-<http://ceur-ws.org/Vol-1293/#paper14> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1293/> ;
-    ns5:title "Process Mining Extension to SCAMPI" ;
-    ns2:endPage 183 ;
-    ns2:numPages 5 ;
-    ns2:section <http%3A//ceur-ws.org/Vol-1293/%23ResearchPlans> ;
-    ns2:startPage 179 ;
-    ns6:author <http://ceur-ws.org/Vol-1293/#ArthuriValle> .
+<http://ceur-ws.org/Vol-1293/#paper14> a ns8:Paper ;
+    ns8:partOf <http://ceur-ws.org/Vol-1293/> ;
+    ns6:title "Process Mining Extension to SCAMPI" ;
+    ns4:endPage 183 ;
+    ns4:numPages 5 ;
+    ns4:section <http%3A//ceur-ws.org/Vol-1293/%23ResearchPlans> ;
+    ns4:startPage 179 ;
+    ns5:author <http://ceur-ws.org/Vol-1293/#ArthuriValle> .
 
-<http%3A//ceur-ws.org/Vol-1293/%23ResearchPlans> a ns4:SessionEvent ;
-    ns4:partOf <http://ceur-ws.org/Vol-1293/> ;
-    ns5:title "Research Plans" .
+<http%3A//ceur-ws.org/Vol-1293/%23ResearchPlans> a ns8:SessionEvent ;
+    ns8:partOf <http://ceur-ws.org/Vol-1293/> ;
+    ns6:title "Research Plans" .
 
 <http://ceur-ws.org/Vol-1293/#WilivanideriAalst> a ns1:Person ;
     ns3:sameAs <http://ceur-ws.org/persons/WilivanideriAalst> ;
@@ -263,151 +263,151 @@
         <http://ceur-ws.org/Vol-1293/#paper9> ;
     ns1:name "Wil van der Aalst" .
 
-<http://ceur-ws.org/Vol-1293/#paper3> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1293/> ;
-    ns5:title "Discovery of Frequent Episodes in Event Logs" ;
-    ns2:endPage 45 ;
-    ns2:numPages 15 ;
-    ns2:section <http%3A//ceur-ws.org/Vol-1293/%23ResearchPapers> ;
-    ns2:startPage 31 ;
-    ns6:author <http://ceur-ws.org/Vol-1293/#MaikeliLeemans>,
+<http://ceur-ws.org/Vol-1293/#paper3> a ns8:Paper ;
+    ns8:partOf <http://ceur-ws.org/Vol-1293/> ;
+    ns6:title "Discovery of Frequent Episodes in Event Logs" ;
+    ns4:endPage 45 ;
+    ns4:numPages 15 ;
+    ns4:section <http%3A//ceur-ws.org/Vol-1293/%23ResearchPapers> ;
+    ns4:startPage 31 ;
+    ns5:author <http://ceur-ws.org/Vol-1293/#MaikeliLeemans>,
         <http://ceur-ws.org/Vol-1293/#WilivanideriAalst> .
 
-<http://ceur-ws.org/Vol-1293/#paper4> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1293/> ;
-    ns5:title "Business Process Measurement in Small Enterprises after the Installation of an ERP Software" ;
-    ns2:endPage 59 ;
-    ns2:numPages 14 ;
-    ns2:section <http%3A//ceur-ws.org/Vol-1293/%23ResearchPapers> ;
-    ns2:startPage 46 ;
-    ns6:author <http://ceur-ws.org/Vol-1293/#ClaudiaiSebastiani>,
+<http://ceur-ws.org/Vol-1293/#paper4> a ns8:Paper ;
+    ns8:partOf <http://ceur-ws.org/Vol-1293/> ;
+    ns6:title "Business Process Measurement in Small Enterprises after the Installation of an ERP Software" ;
+    ns4:endPage 59 ;
+    ns4:numPages 14 ;
+    ns4:section <http%3A//ceur-ws.org/Vol-1293/%23ResearchPapers> ;
+    ns4:startPage 46 ;
+    ns5:author <http://ceur-ws.org/Vol-1293/#ClaudiaiSebastiani>,
         <http://ceur-ws.org/Vol-1293/#StefanoiSiccardi> .
 
-<http://ceur-ws.org/Vol-1293/#paper5> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1293/> ;
-    ns5:title "Reasoning on Data-Aware Business Processes with Constraint Logic" ;
-    ns2:endPage 75 ;
-    ns2:numPages 16 ;
-    ns2:section <http%3A//ceur-ws.org/Vol-1293/%23ResearchPapers> ;
-    ns2:startPage 60 ;
-    ns6:author <http://ceur-ws.org/Vol-1293/#FabrizioiSmith>,
+<http://ceur-ws.org/Vol-1293/#paper5> a ns8:Paper ;
+    ns8:partOf <http://ceur-ws.org/Vol-1293/> ;
+    ns6:title "Reasoning on Data-Aware Business Processes with Constraint Logic" ;
+    ns4:endPage 75 ;
+    ns4:numPages 16 ;
+    ns4:section <http%3A//ceur-ws.org/Vol-1293/%23ResearchPapers> ;
+    ns4:startPage 60 ;
+    ns5:author <http://ceur-ws.org/Vol-1293/#FabrizioiSmith>,
         <http://ceur-ws.org/Vol-1293/#MaurizioiProietti> .
 
-<http%3A//ceur-ws.org/Vol-1293/%23Demonstrations> a ns4:SessionEvent ;
-    ns4:partOf <http://ceur-ws.org/Vol-1293/> ;
-    ns5:title "Demonstrations" .
+<http%3A//ceur-ws.org/Vol-1293/%23Demonstrations> a ns8:SessionEvent ;
+    ns8:partOf <http://ceur-ws.org/Vol-1293/> ;
+    ns6:title "Demonstrations" .
 
-<http://ceur-ws.org/Vol-1293/#paper1> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1293/> ;
-    ns5:title "History-based Construction of Log-Process Alignments for Conformance Checking: Discovering What Really Went Wrong" ;
-    ns2:endPage 15 ;
-    ns2:numPages 15 ;
-    ns2:section <http%3A//ceur-ws.org/Vol-1293/%23ResearchPapers> ;
-    ns2:startPage 1 ;
-    ns6:author <http://ceur-ws.org/Vol-1293/#MahdiiAlizadeh>,
+<http://ceur-ws.org/Vol-1293/#paper1> a ns8:Paper ;
+    ns8:partOf <http://ceur-ws.org/Vol-1293/> ;
+    ns6:title "History-based Construction of Log-Process Alignments for Conformance Checking: Discovering What Really Went Wrong" ;
+    ns4:endPage 15 ;
+    ns4:numPages 15 ;
+    ns4:section <http%3A//ceur-ws.org/Vol-1293/%23ResearchPapers> ;
+    ns4:startPage 1 ;
+    ns5:author <http://ceur-ws.org/Vol-1293/#MahdiiAlizadeh>,
         <http://ceur-ws.org/Vol-1293/#MassimilianoideiLeoni>,
         <http://ceur-ws.org/Vol-1293/#NicolaiZannone> .
 
-<http://ceur-ws.org/Vol-1293/#paper10> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1293/> ;
-    ns5:title "Tracking Hot Topics for the Monitoring of Open-World Processes" ;
-    ns2:endPage 149 ;
-    ns2:numPages 12 ;
-    ns2:section <http%3A//ceur-ws.org/Vol-1293/%23Demonstrations> ;
-    ns2:startPage 138 ;
-    ns6:author <http://ceur-ws.org/Vol-1293/#FabioiStella>,
+<http://ceur-ws.org/Vol-1293/#paper10> a ns8:Paper ;
+    ns8:partOf <http://ceur-ws.org/Vol-1293/> ;
+    ns6:title "Tracking Hot Topics for the Monitoring of Open-World Processes" ;
+    ns4:endPage 149 ;
+    ns4:numPages 12 ;
+    ns4:section <http%3A//ceur-ws.org/Vol-1293/%23Demonstrations> ;
+    ns4:startPage 138 ;
+    ns5:author <http://ceur-ws.org/Vol-1293/#FabioiStella>,
         <http://ceur-ws.org/Vol-1293/#MarcoiRossetti>,
         <http://ceur-ws.org/Vol-1293/#RemoiPareschi> .
 
-<http://ceur-ws.org/Vol-1293/#paper12> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1293/> ;
-    ns5:title "From Declarative Processes to Imperative Models" ;
-    ns2:endPage 173 ;
-    ns2:numPages 12 ;
-    ns2:section <http%3A//ceur-ws.org/Vol-1293/%23Demonstrations> ;
-    ns2:startPage 162 ;
-    ns6:author <http://ceur-ws.org/Vol-1293/#ClaudioiDiiCiccio>,
+<http://ceur-ws.org/Vol-1293/#paper12> a ns8:Paper ;
+    ns8:partOf <http://ceur-ws.org/Vol-1293/> ;
+    ns6:title "From Declarative Processes to Imperative Models" ;
+    ns4:endPage 173 ;
+    ns4:numPages 12 ;
+    ns4:section <http%3A//ceur-ws.org/Vol-1293/%23Demonstrations> ;
+    ns4:startPage 162 ;
+    ns5:author <http://ceur-ws.org/Vol-1293/#ClaudioiDiiCiccio>,
         <http://ceur-ws.org/Vol-1293/#JaniMendling>,
         <http://ceur-ws.org/Vol-1293/#JohannesiPrescher> .
 
-<http://ceur-ws.org/Vol-1293/#paper13> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1293/> ;
-    ns5:title "A Methodology for Generating Artificial Event Logs to Compare Process Discovery Techniques" ;
-    ns2:endPage 178 ;
-    ns2:numPages 5 ;
-    ns2:section <http%3A//ceur-ws.org/Vol-1293/%23ResearchPlans> ;
-    ns2:startPage 174 ;
-    ns6:author <http://ceur-ws.org/Vol-1293/#Beno%C3%AEtiDepaire>,
+<http://ceur-ws.org/Vol-1293/#paper13> a ns8:Paper ;
+    ns8:partOf <http://ceur-ws.org/Vol-1293/> ;
+    ns6:title "A Methodology for Generating Artificial Event Logs to Compare Process Discovery Techniques" ;
+    ns4:endPage 178 ;
+    ns4:numPages 5 ;
+    ns4:section <http%3A//ceur-ws.org/Vol-1293/%23ResearchPlans> ;
+    ns4:startPage 174 ;
+    ns5:author <http://ceur-ws.org/Vol-1293/#Beno%C3%AEtiDepaire>,
         <http://ceur-ws.org/Vol-1293/#MarijkeiSwennen>,
         <http://ceur-ws.org/Vol-1293/#TooniJouck> .
 
-<http://ceur-ws.org/Vol-1293/#paper2> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1293/> ;
-    ns5:title "Finding Suitable Activity Clusters for Decomposed Process Discovery" ;
-    ns2:endPage 30 ;
-    ns2:numPages 15 ;
-    ns2:section <http%3A//ceur-ws.org/Vol-1293/%23ResearchPapers> ;
-    ns2:startPage 16 ;
-    ns6:author <http://ceur-ws.org/Vol-1293/#BartiHompes>,
+<http://ceur-ws.org/Vol-1293/#paper2> a ns8:Paper ;
+    ns8:partOf <http://ceur-ws.org/Vol-1293/> ;
+    ns6:title "Finding Suitable Activity Clusters for Decomposed Process Discovery" ;
+    ns4:endPage 30 ;
+    ns4:numPages 15 ;
+    ns4:section <http%3A//ceur-ws.org/Vol-1293/%23ResearchPapers> ;
+    ns4:startPage 16 ;
+    ns5:author <http://ceur-ws.org/Vol-1293/#BartiHompes>,
         <http://ceur-ws.org/Vol-1293/#EriciVerbeek>,
         <http://ceur-ws.org/Vol-1293/#WilivanideriAalst> .
 
-<http://ceur-ws.org/Vol-1293/#paper8> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1293/> ;
-    ns5:title "Scalable Process Monitoring through Rules and Neural Networks" ;
-    ns2:endPage 122 ;
-    ns2:numPages 15 ;
-    ns2:section <http%3A//ceur-ws.org/Vol-1293/%23ResearchPapers> ;
-    ns2:startPage 108 ;
-    ns6:author <http://ceur-ws.org/Vol-1293/#AlaniPerotti>,
+<http://ceur-ws.org/Vol-1293/#paper8> a ns8:Paper ;
+    ns8:partOf <http://ceur-ws.org/Vol-1293/> ;
+    ns6:title "Scalable Process Monitoring through Rules and Neural Networks" ;
+    ns4:endPage 122 ;
+    ns4:numPages 15 ;
+    ns4:section <http%3A//ceur-ws.org/Vol-1293/%23ResearchPapers> ;
+    ns4:startPage 108 ;
+    ns5:author <http://ceur-ws.org/Vol-1293/#AlaniPerotti>,
         <http://ceur-ws.org/Vol-1293/#ArturiD%27AvilaiGarcez>,
         <http://ceur-ws.org/Vol-1293/#GuidoiBoella> .
 
-<http://ceur-ws.org/Vol-1293/#paper6> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1293/> ;
-    ns5:title "CoPra2Go: An APP for Coding Collaboration Processes" ;
-    ns2:endPage 90 ;
-    ns2:numPages 15 ;
-    ns2:section <http%3A//ceur-ws.org/Vol-1293/%23ResearchPapers> ;
-    ns2:startPage 76 ;
-    ns6:author <http://ceur-ws.org/Vol-1293/#EmmanueliNowakowski>,
+<http://ceur-ws.org/Vol-1293/#paper6> a ns8:Paper ;
+    ns8:partOf <http://ceur-ws.org/Vol-1293/> ;
+    ns6:title "CoPra2Go: An APP for Coding Collaboration Processes" ;
+    ns4:endPage 90 ;
+    ns4:numPages 15 ;
+    ns4:section <http%3A//ceur-ws.org/Vol-1293/%23ResearchPapers> ;
+    ns4:startPage 76 ;
+    ns5:author <http://ceur-ws.org/Vol-1293/#EmmanueliNowakowski>,
         <http://ceur-ws.org/Vol-1293/#FulvioiFrati>,
         <http://ceur-ws.org/Vol-1293/#IsabellaiSeeber>,
         <http://ceur-ws.org/Vol-1293/#RonaldiMaier> .
 
-<http://ceur-ws.org/Vol-1293/#paper9> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1293/> ;
-    ns5:title "Using Monotonicity to Find Optimal Process Configurations Faster" ;
-    ns2:endPage 137 ;
-    ns2:numPages 15 ;
-    ns2:section <http%3A//ceur-ws.org/Vol-1293/%23ResearchPapers> ;
-    ns2:startPage 123 ;
-    ns6:author <http://ceur-ws.org/Vol-1293/#DennisiSchunselaar>,
+<http://ceur-ws.org/Vol-1293/#paper9> a ns8:Paper ;
+    ns8:partOf <http://ceur-ws.org/Vol-1293/> ;
+    ns6:title "Using Monotonicity to Find Optimal Process Configurations Faster" ;
+    ns4:endPage 137 ;
+    ns4:numPages 15 ;
+    ns4:section <http%3A//ceur-ws.org/Vol-1293/%23ResearchPapers> ;
+    ns4:startPage 123 ;
+    ns5:author <http://ceur-ws.org/Vol-1293/#DennisiSchunselaar>,
         <http://ceur-ws.org/Vol-1293/#EriciVerbeek>,
         <http://ceur-ws.org/Vol-1293/#HajoiA.iReijers>,
         <http://ceur-ws.org/Vol-1293/#WilivanideriAalst> .
 
-<http://ceur-ws.org/Vol-1293/#paper7> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1293/> ;
-    ns5:title "Scalable Dynamic Business Process Discovery with the Constructs Competition Miner" ;
-    ns2:endPage 107 ;
-    ns2:numPages 17 ;
-    ns2:section <http%3A//ceur-ws.org/Vol-1293/%23ResearchPapers> ;
-    ns2:startPage 91 ;
-    ns6:author <http://ceur-ws.org/Vol-1293/#AwaisiRashid>,
+<http://ceur-ws.org/Vol-1293/#paper7> a ns8:Paper ;
+    ns8:partOf <http://ceur-ws.org/Vol-1293/> ;
+    ns6:title "Scalable Dynamic Business Process Discovery with the Constructs Competition Miner" ;
+    ns4:endPage 107 ;
+    ns4:numPages 17 ;
+    ns4:section <http%3A//ceur-ws.org/Vol-1293/%23ResearchPapers> ;
+    ns4:startPage 91 ;
+    ns5:author <http://ceur-ws.org/Vol-1293/#AwaisiRashid>,
         <http://ceur-ws.org/Vol-1293/#DavidiRedlich>,
         <http://ceur-ws.org/Vol-1293/#GordoniBlair>,
         <http://ceur-ws.org/Vol-1293/#ThomasiMolka>,
         <http://ceur-ws.org/Vol-1293/#WasifiGilani> .
 
-<http://ceur-ws.org/Vol-1293/#paper11> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1293/> ;
-    ns5:title "Using Semantic Lifting for Improving Educational Process Models Discovery and Analysis" ;
-    ns2:endPage 161 ;
-    ns2:numPages 12 ;
-    ns2:section <http%3A//ceur-ws.org/Vol-1293/%23Demonstrations> ;
-    ns2:startPage 150 ;
-    ns6:author <http://ceur-ws.org/Vol-1293/#AwatefiHicheuriCairns>,
+<http://ceur-ws.org/Vol-1293/#paper11> a ns8:Paper ;
+    ns8:partOf <http://ceur-ws.org/Vol-1293/> ;
+    ns6:title "Using Semantic Lifting for Improving Educational Process Models Discovery and Analysis" ;
+    ns4:endPage 161 ;
+    ns4:numPages 12 ;
+    ns4:section <http%3A//ceur-ws.org/Vol-1293/%23Demonstrations> ;
+    ns4:startPage 150 ;
+    ns5:author <http://ceur-ws.org/Vol-1293/#AwatefiHicheuriCairns>,
         <http://ceur-ws.org/Vol-1293/#BilleliGueni>,
         <http://ceur-ws.org/Vol-1293/#ChristianiJoubert>,
         <http://ceur-ws.org/Vol-1293/#JosephiAssuiOndo>,
@@ -415,12 +415,12 @@
         <http://ceur-ws.org/Vol-1293/#MehdiiFhima>,
         <http://ceur-ws.org/Vol-1293/#NasseriKhelifa> .
 
-<http%3A//ceur-ws.org/Vol-1293/%23ResearchPapers> a ns4:SessionEvent ;
-    ns4:partOf <http://ceur-ws.org/Vol-1293/> ;
-    ns5:title "Research Papers" .
+<http%3A//ceur-ws.org/Vol-1293/%23ResearchPapers> a ns8:SessionEvent ;
+    ns8:partOf <http://ceur-ws.org/Vol-1293/> ;
+    ns6:title "Research Papers" .
 
-<http://ceur-ws.org/Vol-1293/> a ns4:Proceedings ;
-    ns4:hasPart <http://ceur-ws.org/Vol-1293/#paper1>,
+<http://ceur-ws.org/Vol-1293/> a ns8:Proceedings ;
+    ns8:hasPart <http://ceur-ws.org/Vol-1293/#paper1>,
         <http://ceur-ws.org/Vol-1293/#paper10>,
         <http://ceur-ws.org/Vol-1293/#paper11>,
         <http://ceur-ws.org/Vol-1293/#paper12>,
@@ -434,12 +434,12 @@
         <http://ceur-ws.org/Vol-1293/#paper7>,
         <http://ceur-ws.org/Vol-1293/#paper8>,
         <http://ceur-ws.org/Vol-1293/#paper9> ;
-    ns4:hasSession <http%3A//ceur-ws.org/Vol-1293/%23Demonstrations>,
+    ns8:hasSession <http%3A//ceur-ws.org/Vol-1293/%23Demonstrations>,
         <http%3A//ceur-ws.org/Vol-1293/%23ResearchPapers>,
         <http%3A//ceur-ws.org/Vol-1293/%23ResearchPlans> ;
     ns7:issued "2014-11-14T00:00:00+00:00"^^xsd:dateTime ;
-    ns2:presentedAt <http://ceur-ws.org/Vol-1293/#event> ;
-    ns6:editor <http://ceur-ws.org/Vol-1293/#BarbaraiRusso>,
+    ns4:presentedAt <http://ceur-ws.org/Vol-1293/#event> ;
+    ns5:editor <http://ceur-ws.org/Vol-1293/#BarbaraiRusso>,
         <http://ceur-ws.org/Vol-1293/#PaoloiCeravolo>,
         <http://ceur-ws.org/Vol-1293/#RafaeliAccorsi> .
 

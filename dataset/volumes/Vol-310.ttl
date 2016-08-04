@@ -1,98 +1,98 @@
-@prefix ns1: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns2: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns1: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns2: <http://swrc.ontoware.org/ontology/#> .
 @prefix ns3: <http://xmlns.com/foaf/0.1/> .
-@prefix ns4: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns5: <http://purl.org/ontology/bibo/#> .
-@prefix ns6: <http://www.w3.org/2002/07/owl#> .
-@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns4: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns5: <http://www.w3.org/2002/07/owl#> .
+@prefix ns6: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns7: <http://purl.org/ontology/bibo/#> .
+@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <http://ceur-ws.org/Vol-310/#HaraldiGapski> a ns3:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/HaraldiGapski> ;
+    ns5:sameAs <http://ceur-ws.org/persons/HaraldiGapski> ;
     ns3:made <http://ceur-ws.org/Vol-310/#paper05> ;
     ns3:name "Harald Gapski" .
 
 <http://ceur-ws.org/Vol-310/#IsabeliPedrosa> a ns3:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/IsabeliPedrosa> ;
+    ns5:sameAs <http://ceur-ws.org/persons/IsabeliPedrosa> ;
     ns3:made <http://ceur-ws.org/Vol-310/#paper03> ;
     ns3:name "Isabel Pedrosa" .
 
 <http://ceur-ws.org/Vol-310/#LamprosiStergioulas> a ns3:Person ;
-    ns1:affiliation "" ;
-    ns6:sameAs <http://ceur-ws.org/persons/LamprosiStergioulas> ;
+    ns2:affiliation "" ;
+    ns5:sameAs <http://ceur-ws.org/persons/LamprosiStergioulas> ;
     ns3:name "Lampros Stergioulas" .
 
 <http://ceur-ws.org/Vol-310/#OlaiErstad> a ns3:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/OlaiErstad> ;
+    ns5:sameAs <http://ceur-ws.org/persons/OlaiErstad> ;
     ns3:made <http://ceur-ws.org/Vol-310/#paper01> ;
     ns3:name "Ola Erstad" .
 
 <http://ceur-ws.org/Vol-310/#RadoslaviWechtersbach> a ns3:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/RadoslaviWechtersbach> ;
+    ns5:sameAs <http://ceur-ws.org/persons/RadoslaviWechtersbach> ;
     ns3:made <http://ceur-ws.org/Vol-310/#paper04> ;
     ns3:name "Radoslav Wechtersbach" .
 
 <http://ceur-ws.org/Vol-310/#VanaiKamtsiou> a ns3:Person ;
-    ns1:affiliation "" ;
-    ns6:sameAs <http://ceur-ws.org/persons/VanaiKamtsiou> ;
+    ns2:affiliation "" ;
+    ns5:sameAs <http://ceur-ws.org/persons/VanaiKamtsiou> ;
     ns3:name "Vana Kamtsiou" .
 
 <http://ceur-ws.org/Vol-310/#VittorioiMidoro> a ns3:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/VittorioiMidoro> ;
+    ns5:sameAs <http://ceur-ws.org/persons/VittorioiMidoro> ;
     ns3:made <http://ceur-ws.org/Vol-310/#paper02> ;
     ns3:name "Vittorio Midoro" .
 
 <http://ceur-ws.org/Vol-310/#andiFransiVaniAssche> a ns3:Person ;
-    ns1:affiliation "" ;
-    ns6:sameAs <http://ceur-ws.org/persons/andiFransiVaniAssche> ;
+    ns2:affiliation "" ;
+    ns5:sameAs <http://ceur-ws.org/persons/andiFransiVaniAssche> ;
     ns3:name "and Frans Van Assche" .
 
-<http://ceur-ws.org/Vol-310/#event> a ns2:WorkshopEvent ;
-    ns2:hasLocation <http://dbpedia.org/resource/Greece> ;
-    ns2:hasPart <http://ceur-ws.org/Vol-310/#part-ws> ;
-    ns2:isSubEventOf <http://ceur-ws.org/Vol-310/#conf> ;
-    ns8:beginsAtDatetime "2007-09-17T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:endsAtDatetime "2007-09-17T00:00:00+00:00"^^xsd:dateTime ;
-    ns4:license <http://choosealicense.com/licenses/no-license/> .
+<http://ceur-ws.org/Vol-310/#event> a ns4:WorkshopEvent ;
+    ns4:hasLocation <http://dbpedia.org/resource/Greece> ;
+    ns4:hasPart <http://ceur-ws.org/Vol-310/#part-ws> ;
+    ns4:isSubEventOf <http://ceur-ws.org/Vol-310/#conf> ;
+    ns6:beginsAtDatetime "2007-09-17T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:endsAtDatetime "2007-09-17T00:00:00+00:00"^^xsd:dateTime ;
+    ns1:license <http://choosealicense.com/licenses/no-license/> .
 
-<http://ceur-ws.org/Vol-310/#paper01> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-310/> ;
-    ns4:title "Conceiving digital literacies in schools - Norwegian experiences" ;
-    ns1:author <http://ceur-ws.org/Vol-310/#OlaiErstad> .
+<http://ceur-ws.org/Vol-310/#paper01> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-310/> ;
+    ns1:title "Conceiving digital literacies in schools - Norwegian experiences" ;
+    ns2:author <http://ceur-ws.org/Vol-310/#OlaiErstad> .
 
-<http://ceur-ws.org/Vol-310/#paper02> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-310/> ;
-    ns4:title "Literacy for the knowledge society" ;
-    ns1:author <http://ceur-ws.org/Vol-310/#VittorioiMidoro> .
+<http://ceur-ws.org/Vol-310/#paper02> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-310/> ;
+    ns1:title "Literacy for the knowledge society" ;
+    ns2:author <http://ceur-ws.org/Vol-310/#VittorioiMidoro> .
 
-<http://ceur-ws.org/Vol-310/#paper03> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-310/> ;
-    ns4:title "Improving digital literacy in Portuguese teachers context - moodle as a new platform for teachers training" ;
-    ns1:author <http://ceur-ws.org/Vol-310/#IsabeliPedrosa> .
+<http://ceur-ws.org/Vol-310/#paper03> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-310/> ;
+    ns1:title "Improving digital literacy in Portuguese teachers context - moodle as a new platform for teachers training" ;
+    ns2:author <http://ceur-ws.org/Vol-310/#IsabeliPedrosa> .
 
-<http://ceur-ws.org/Vol-310/#paper04> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-310/> ;
-    ns4:title "Developing digital competence in Slovenian education" ;
-    ns1:author <http://ceur-ws.org/Vol-310/#RadoslaviWechtersbach> .
+<http://ceur-ws.org/Vol-310/#paper04> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-310/> ;
+    ns1:title "Developing digital competence in Slovenian education" ;
+    ns2:author <http://ceur-ws.org/Vol-310/#RadoslaviWechtersbach> .
 
-<http://ceur-ws.org/Vol-310/#paper05> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-310/> ;
-    ns4:title "Reflections on digital literacy" ;
-    ns1:author <http://ceur-ws.org/Vol-310/#HaraldiGapski> .
+<http://ceur-ws.org/Vol-310/#paper05> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-310/> ;
+    ns1:title "Reflections on digital literacy" ;
+    ns2:author <http://ceur-ws.org/Vol-310/#HaraldiGapski> .
 
-<http://ceur-ws.org/Vol-310/> a ns2:Proceedings ;
-    ns2:hasPart <http://ceur-ws.org/Vol-310/#paper01>,
+<http://ceur-ws.org/Vol-310/> a ns4:Proceedings ;
+    ns4:hasPart <http://ceur-ws.org/Vol-310/#paper01>,
         <http://ceur-ws.org/Vol-310/#paper02>,
         <http://ceur-ws.org/Vol-310/#paper03>,
         <http://ceur-ws.org/Vol-310/#paper04>,
         <http://ceur-ws.org/Vol-310/#paper05> ;
-    ns7:issued "2008-01-07T00:00:00+00:00"^^xsd:dateTime ;
-    ns5:presentedAt <http://ceur-ws.org/Vol-310/#event> ;
-    ns1:editor <http://ceur-ws.org/Vol-310/#LamprosiStergioulas>,
+    ns8:issued "2008-01-07T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:presentedAt <http://ceur-ws.org/Vol-310/#event> ;
+    ns2:editor <http://ceur-ws.org/Vol-310/#LamprosiStergioulas>,
         <http://ceur-ws.org/Vol-310/#VanaiKamtsiou>,
         <http://ceur-ws.org/Vol-310/#andiFransiVaniAssche> .
 

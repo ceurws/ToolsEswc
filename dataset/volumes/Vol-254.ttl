@@ -1,11 +1,11 @@
 @prefix ns1: <http://www.w3.org/2002/07/owl#> .
 @prefix ns2: <http://xmlns.com/foaf/0.1/> .
-@prefix ns3: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns3: <http://data.semanticweb.org/ns/swc/ontology/#> .
 @prefix ns4: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns5: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns6: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns8: <http://purl.org/ontology/bibo/#> .
+@prefix ns5: <http://purl.org/ontology/bibo/#> .
+@prefix ns6: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -151,15 +151,14 @@
     ns2:made <http://ceur-ws.org/Vol-254/#paper04> ;
     ns2:name "Steve Neely" .
 
-<http://ceur-ws.org/Vol-254/#SunnyiConsolvo> a ns2:Person ;
-    ns8:place <http://dbpedia.org/resource/United_States> ;
-    ns4:affiliation "Intel Research, Seattle" ;
-    ns1:sameAs <http://ceur-ws.org/persons/SunnyiConsolvo> ;
-    ns2:name "Sunny Consolvo" .
-
 <http://ceur-ws.org/Vol-254/#SunnyiConsolvoi-i> a ns2:Person ;
     ns2:made <http://ceur-ws.org/Vol-254/#paperX1> ;
     ns2:name "Sunny Consolvo -" .
+
+<http://ceur-ws.org/Vol-254/#SunnyiConsolvoi-i%28eds.%29%3AiProc.iofi1stiWorkshopioniAmbientiInformationiSystems.iColocatediwithiPervasivei2007> a ns2:Person ;
+    ns5:place <http://dbpedia.org/resource/United_States> ;
+    ns4:affiliation "Intel Research, Seattle" ;
+    ns1:sameAs <http://ceur-ws.org/persons/SunnyiConsolvoi-i%28eds.%29%3AiProc.iofi1stiWorkshopioniAmbientiInformationiSystems.iColocatediwithiPervasivei2007> .
 
 <http://ceur-ws.org/Vol-254/#ThomasiGrechenig> a ns2:Person ;
     ns1:sameAs <http://ceur-ws.org/persons/ThomasiGrechenig> ;
@@ -186,13 +185,13 @@
     ns2:made <http://ceur-ws.org/Vol-254/#paper06> ;
     ns2:name "Zachary Pousman" .
 
-<http://ceur-ws.org/Vol-254/#event> a ns5:WorkshopEvent ;
-    ns5:hasLocation <http://dbpedia.org/resource/Canada> ;
-    ns5:hasPart <http://ceur-ws.org/Vol-254/#part-ws> ;
-    ns5:isSubEventOf <http://ceur-ws.org/Vol-254/#conf> ;
-    ns7:beginsAtDatetime "2007-05-13T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:endsAtDatetime "2007-05-13T00:00:00+00:00"^^xsd:dateTime ;
-    ns3:license <http://choosealicense.com/licenses/no-license/> .
+<http://ceur-ws.org/Vol-254/#event> a ns3:WorkshopEvent ;
+    ns3:hasLocation <http://dbpedia.org/resource/Canada> ;
+    ns3:hasPart <http://ceur-ws.org/Vol-254/#part-ws> ;
+    ns3:isSubEventOf <http://ceur-ws.org/Vol-254/#conf> ;
+    ns8:beginsAtDatetime "2007-05-13T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:endsAtDatetime "2007-05-13T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:license <http://choosealicense.com/licenses/no-license/> .
 
 <http://ceur-ws.org/Vol-254/#AndrewiVandeiMoere> a ns2:Person ;
     ns1:sameAs <http://ceur-ws.org/persons/AndrewiVandeiMoere> ;
@@ -207,100 +206,100 @@
     ns2:name "John Stasko" .
 
 <http://ceur-ws.org/Vol-254/#LorcaniCoyle> a ns2:Person ;
-    ns8:place <http://dbpedia.org/resource/Republic_of_Ireland> ;
+    ns5:place <http://dbpedia.org/resource/Republic_of_Ireland> ;
     ns4:affiliation "Systems Research Group, University College Dublin" ;
     ns1:sameAs <http://ceur-ws.org/persons/LorcaniCoyle> ;
     ns2:made <http://ceur-ws.org/Vol-254/#paperX1> ;
     ns2:name "Lorcan Coyle" .
 
 <http://ceur-ws.org/Vol-254/#WilliamiR.iHazlewood> a ns2:Person ;
-    ns8:place <http://dbpedia.org/resource/United_States> ;
+    ns5:place <http://dbpedia.org/resource/United_States> ;
     ns4:affiliation "School of Informatics, Indiana University @ Bloomington" ;
     ns1:sameAs <http://ceur-ws.org/persons/WilliamiR.iHazlewood> ;
     ns2:made <http://ceur-ws.org/Vol-254/#paperX1> ;
     ns2:name "William R. Hazlewood" .
 
-<http://ceur-ws.org/Vol-254/#paper10> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-254/> ;
-    ns3:title "Towards Designing Persuasive Ambient Visualization" ;
+<http://ceur-ws.org/Vol-254/#paper10> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-254/> ;
+    ns6:title "Towards Designing Persuasive Ambient Visualization" ;
     ns4:author <http://ceur-ws.org/Vol-254/#AndrewiVandeiMoere> .
 
-<http://ceur-ws.org/Vol-254/#paper03> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-254/> ;
-    ns3:title "Competing for your Attention: Negative Externalities in Digital Signage Advertising" ;
+<http://ceur-ws.org/Vol-254/#paper03> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-254/> ;
+    ns6:title "Competing for your Attention: Negative Externalities in Digital Signage Advertising" ;
     ns4:author <http://ceur-ws.org/Vol-254/#AntonioiKr%C3%BCger>,
         <http://ceur-ws.org/Vol-254/#J%C3%B6rgiM%C3%BCller> .
 
-<http://ceur-ws.org/Vol-254/#paper06> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-254/> ;
-    ns3:title "Ambient Information Systems: Evaluation in Two Paradigms" ;
+<http://ceur-ws.org/Vol-254/#paper06> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-254/> ;
+    ns6:title "Ambient Information Systems: Evaluation in Two Paradigms" ;
     ns4:author <http://ceur-ws.org/Vol-254/#JohniStasko>,
         <http://ceur-ws.org/Vol-254/#ZacharyiPousman> .
 
-<http://ceur-ws.org/Vol-254/#paper02> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-254/> ;
-    ns3:title "Ambient Interfaces that Motivate Changes in Human Behavior" ;
+<http://ceur-ws.org/Vol-254/#paper02> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-254/> ;
+    ns6:title "Ambient Interfaces that Motivate Changes in Human Behavior" ;
     ns4:author <http://ceur-ws.org/Vol-254/#AnindiDey>,
         <http://ceur-ws.org/Vol-254/#IaniLi>,
         <http://ceur-ws.org/Vol-254/#JodiiForlizzi> .
 
-<http://ceur-ws.org/Vol-254/#paper04> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-254/> ;
-    ns3:title "Assessing the Suitability of Context Information for Ambient Display" ;
+<http://ceur-ws.org/Vol-254/#paper04> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-254/> ;
+    ns6:title "Assessing the Suitability of Context Information for Ambient Display" ;
     ns4:author <http://ceur-ws.org/Vol-254/#GraemeiStevenson>,
         <http://ceur-ws.org/Vol-254/#PaddyiNixon>,
         <http://ceur-ws.org/Vol-254/#SteveiNeely> .
 
-<http://ceur-ws.org/Vol-254/#paper05> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-254/> ;
-    ns3:title "Urban Score: Measuring Your Relationship with the City" ;
+<http://ceur-ws.org/Vol-254/#paper05> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-254/> ;
+    ns6:title "Urban Score: Measuring Your Relationship with the City" ;
     ns4:author <http://ceur-ws.org/Vol-254/#BeniHooker>,
         <http://ceur-ws.org/Vol-254/#EriciPaulos>,
         <http://ceur-ws.org/Vol-254/#IaniSmith> .
 
-<http://ceur-ws.org/Vol-254/#paper11> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-254/> ;
-    ns3:title "Interstitial Interfaces for Mobile Media" ;
+<http://ceur-ws.org/Vol-254/#paper11> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-254/> ;
+    ns6:title "Interstitial Interfaces for Mobile Media" ;
     ns4:author <http://ceur-ws.org/Vol-254/#JehaniWickramasuriya>,
         <http://ceur-ws.org/Vol-254/#NityaiNarasimhan>,
         <http://ceur-ws.org/Vol-254/#VenuiVasudevan> .
 
-<http://ceur-ws.org/Vol-254/#paper07> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-254/> ;
-    ns3:title "Intrusive and Non-intrusive Evaluation of Ambient Displays" ;
+<http://ceur-ws.org/Vol-254/#paper07> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-254/> ;
+    ns6:title "Intrusive and Non-intrusive Evaluation of Ambient Displays" ;
     ns4:author <http://ceur-ws.org/Vol-254/#AndrewiVandeiMoere>,
         <http://ceur-ws.org/Vol-254/#PeteriEades>,
         <http://ceur-ws.org/Vol-254/#SeokheeiHong>,
         <http://ceur-ws.org/Vol-254/#XiaobiniShen> .
 
-<http://ceur-ws.org/Vol-254/#paper08> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-254/> ;
-    ns3:title "Explorations and Experiences with Ambient Information Systems" ;
+<http://ceur-ws.org/Vol-254/#paper08> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-254/> ;
+    ns6:title "Explorations and Experiences with Ambient Information Systems" ;
     ns4:author <http://ceur-ws.org/Vol-254/#BrianiDorn>,
         <http://ceur-ws.org/Vol-254/#ChristopheriPlaue>,
         <http://ceur-ws.org/Vol-254/#JohniStasko>,
         <http://ceur-ws.org/Vol-254/#MyungcheoliDoo> .
 
-<http://ceur-ws.org/Vol-254/#paper09> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-254/> ;
-    ns3:title "Towards a Taxonomy for Ambient Information Systems" ;
+<http://ceur-ws.org/Vol-254/#paper09> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-254/> ;
+    ns6:title "Towards a Taxonomy for Ambient Information Systems" ;
     ns4:author <http://ceur-ws.org/Vol-254/#AndreasiLehner>,
         <http://ceur-ws.org/Vol-254/#KariniKappel>,
         <http://ceur-ws.org/Vol-254/#MartiniTomitsch>,
         <http://ceur-ws.org/Vol-254/#ThomasiGrechenig> .
 
-<http://ceur-ws.org/Vol-254/#paper01> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-254/> ;
-    ns3:title "A Time to Glance: Studying the Use of Mobile Ambient Information" ;
+<http://ceur-ws.org/Vol-254/#paper01> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-254/> ;
+    ns6:title "A Time to Glance: Studying the Use of Mobile Ambient Information" ;
     ns4:author <http://ceur-ws.org/Vol-254/#CrystaiMetcalf>,
         <http://ceur-ws.org/Vol-254/#DrewiHarry>,
         <http://ceur-ws.org/Vol-254/#FrankiBentley>,
         <http://ceur-ws.org/Vol-254/#JoeiTullio>,
         <http://ceur-ws.org/Vol-254/#NoeliMassey> .
 
-<http://ceur-ws.org/Vol-254/#paperX1> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-254/> ;
-    ns3:title "The proceedings are usually cited as follows:" ;
+<http://ceur-ws.org/Vol-254/#paperX1> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-254/> ;
+    ns6:title "The proceedings are usually cited as follows:" ;
     ns4:author <http://ceur-ws.org/Vol-254/#Canada>,
         <http://ceur-ws.org/Vol-254/#LorcaniCoyle>,
         <http://ceur-ws.org/Vol-254/#Mayi13i2007>,
@@ -308,8 +307,8 @@
         <http://ceur-ws.org/Vol-254/#Toronto>,
         <http://ceur-ws.org/Vol-254/#WilliamiR.iHazlewood> .
 
-<http://ceur-ws.org/Vol-254/> a ns5:Proceedings ;
-    ns5:hasPart <http://ceur-ws.org/Vol-254/#paper01>,
+<http://ceur-ws.org/Vol-254/> a ns3:Proceedings ;
+    ns3:hasPart <http://ceur-ws.org/Vol-254/#paper01>,
         <http://ceur-ws.org/Vol-254/#paper02>,
         <http://ceur-ws.org/Vol-254/#paper03>,
         <http://ceur-ws.org/Vol-254/#paper04>,
@@ -321,9 +320,9 @@
         <http://ceur-ws.org/Vol-254/#paper10>,
         <http://ceur-ws.org/Vol-254/#paper11>,
         <http://ceur-ws.org/Vol-254/#paperX1> ;
-    ns6:issued "2007-06-20T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:presentedAt <http://ceur-ws.org/Vol-254/#event> ;
+    ns7:issued "2007-06-20T00:00:00+00:00"^^xsd:dateTime ;
+    ns5:presentedAt <http://ceur-ws.org/Vol-254/#event> ;
     ns4:editor <http://ceur-ws.org/Vol-254/#LorcaniCoyle>,
-        <http://ceur-ws.org/Vol-254/#SunnyiConsolvo>,
+        <http://ceur-ws.org/Vol-254/#SunnyiConsolvoi-i%28eds.%29%3AiProc.iofi1stiWorkshopioniAmbientiInformationiSystems.iColocatediwithiPervasivei2007>,
         <http://ceur-ws.org/Vol-254/#WilliamiR.iHazlewood> .
 

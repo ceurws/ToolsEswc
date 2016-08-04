@@ -1,11 +1,11 @@
-@prefix ns1: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns2: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns1: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns2: <http://swrc.ontoware.org/ontology/#> .
 @prefix ns3: <http://xmlns.com/foaf/0.1/> .
-@prefix ns4: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns4: <http://purl.org/dc/elements/1.1/#> .
 @prefix ns5: <http://www.w3.org/2002/07/owl#> .
-@prefix ns6: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns7: <http://purl.org/ontology/bibo/#> .
-@prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns6: <http://purl.org/ontology/bibo/#> .
+@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -47,7 +47,7 @@
     ns3:name "Christine Orengo" .
 
 <http://ceur-ws.org/Vol-645/#DietrichiRebholz-Schuhmann> a ns3:Person ;
-    ns1:affiliation "" ;
+    ns2:affiliation "" ;
     ns5:sameAs <http://ceur-ws.org/persons/DietrichiRebholz-Schuhmann> ;
     ns3:name "Dietrich Rebholz-Schuhmann" .
 
@@ -82,7 +82,7 @@
     ns3:name "Michael Bada" .
 
 <http://ceur-ws.org/Vol-645/#Ren%C3%A9iWitte> a ns3:Person ;
-    ns1:affiliation "" ;
+    ns2:affiliation "" ;
     ns5:sameAs <http://ceur-ws.org/persons/Ren%C3%A9iWitte> ;
     ns3:name "René Witte" .
 
@@ -91,13 +91,13 @@
     ns3:made <http://ceur-ws.org/Vol-645/#Paper1> ;
     ns3:name "Russ B Altman" .
 
-<http://ceur-ws.org/Vol-645/#event> a ns4:WorkshopEvent ;
-    ns4:hasLocation <http://dbpedia.org/resource/Euro_gold_and_silver_commemorative_coins> ;
-    ns4:hasPart <http://ceur-ws.org/Vol-645/#part-AIMM> ;
-    ns4:isSubEventOf <http://ceur-ws.org/Vol-645/#conf> ;
-    ns8:beginsAtDatetime "2010-09-26T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:endsAtDatetime "2010-09-26T00:00:00+00:00"^^xsd:dateTime ;
-    ns2:license <http://choosealicense.com/licenses/no-license/> ;
+<http://ceur-ws.org/Vol-645/#event> a ns1:WorkshopEvent ;
+    ns1:hasLocation <http://dbpedia.org/resource/Euro_gold_and_silver_commemorative_coins> ;
+    ns1:hasPart <http://ceur-ws.org/Vol-645/#part-AIMM> ;
+    ns1:isSubEventOf <http://ceur-ws.org/Vol-645/#conf> ;
+    ns7:beginsAtDatetime "2010-09-26T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:endsAtDatetime "2010-09-26T00:00:00+00:00"^^xsd:dateTime ;
+    ns4:license <http://choosealicense.com/licenses/no-license/> ;
     rdfs:seeAlso <http://ceur-ws.org/Vol-429/#event> .
 
 <http://ceur-ws.org/Vol-645/#JonasiBiLaurila> a ns3:Person ;
@@ -107,61 +107,61 @@
     ns3:name "Jonas B Laurila" .
 
 <http://ceur-ws.org/Vol-645/#ChristopheriJiOiBaker> a ns3:Person ;
-    ns1:affiliation "" ;
+    ns2:affiliation "" ;
     ns5:sameAs <http://ceur-ws.org/persons/ChristopheriJiOiBaker> ;
     ns3:made <http://ceur-ws.org/Vol-645/#Paper4>,
         <http://ceur-ws.org/Vol-645/#Paper5> ;
     ns3:name "Christopher J O Baker" .
 
-<http://ceur-ws.org/Vol-645/#Paper1> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-645/> ;
-    ns2:title "Improving the prediction of disease-related variants using protein three-dimensional structure" ;
-    ns1:author <http://ceur-ws.org/Vol-645/#EmidioiCapriotti>,
+<http://ceur-ws.org/Vol-645/#Paper1> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-645/> ;
+    ns4:title "Improving the prediction of disease-related variants using protein three-dimensional structure" ;
+    ns2:author <http://ceur-ws.org/Vol-645/#EmidioiCapriotti>,
         <http://ceur-ws.org/Vol-645/#RussiBiAltman> .
 
-<http://ceur-ws.org/Vol-645/#Paper2> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-645/> ;
-    ns2:title "Frankenstein Junior: a relational learning approach toward protein engineering" ;
-    ns1:author <http://ceur-ws.org/Vol-645/#AndreaiPasserini>,
+<http://ceur-ws.org/Vol-645/#Paper2> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-645/> ;
+    ns4:title "Frankenstein Junior: a relational learning approach toward protein engineering" ;
+    ns2:author <http://ceur-ws.org/Vol-645/#AndreaiPasserini>,
         <http://ceur-ws.org/Vol-645/#ElisaiCilia> .
 
-<http://ceur-ws.org/Vol-645/#Paper6> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-645/> ;
-    ns2:title "Toward a richer representation of sequence variation in the Sequence Ontology" ;
-    ns1:author <http://ceur-ws.org/Vol-645/#KareniEilbeck>,
+<http://ceur-ws.org/Vol-645/#Paper6> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-645/> ;
+    ns4:title "Toward a richer representation of sequence variation in the Sequence Ontology" ;
+    ns2:author <http://ceur-ws.org/Vol-645/#KareniEilbeck>,
         <http://ceur-ws.org/Vol-645/#MichaeliBada> .
 
-<http://ceur-ws.org/Vol-645/#Paper4> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-645/> ;
-    ns2:title "A semantic assistant for mutation mentions in PubMed abstracts" ;
-    ns1:author <http://ceur-ws.org/Vol-645/#AlexandreiKouznetsov>,
+<http://ceur-ws.org/Vol-645/#Paper4> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-645/> ;
+    ns4:title "A semantic assistant for mutation mentions in PubMed abstracts" ;
+    ns2:author <http://ceur-ws.org/Vol-645/#AlexandreiKouznetsov>,
         <http://ceur-ws.org/Vol-645/#ChristopheriJiOiBaker>,
         <http://ceur-ws.org/Vol-645/#JonasiBiLaurila> .
 
-<http://ceur-ws.org/Vol-645/#Paper5> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-645/> ;
-    ns2:title "Deploying the mutation impact mining pipeline with SADI: An exploratory case study" ;
-    ns1:author <http://ceur-ws.org/Vol-645/#AlexandreiRiazanov>,
+<http://ceur-ws.org/Vol-645/#Paper5> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-645/> ;
+    ns4:title "Deploying the mutation impact mining pipeline with SADI: An exploratory case study" ;
+    ns2:author <http://ceur-ws.org/Vol-645/#AlexandreiRiazanov>,
         <http://ceur-ws.org/Vol-645/#ChristopheriJiOiBaker>,
         <http://ceur-ws.org/Vol-645/#JonasiBiLaurila> .
 
-<http://ceur-ws.org/Vol-645/> a ns4:Proceedings ;
-    ns4:hasPart <http://ceur-ws.org/Vol-645/#Paper1>,
+<http://ceur-ws.org/Vol-645/> a ns1:Proceedings ;
+    ns1:hasPart <http://ceur-ws.org/Vol-645/#Paper1>,
         <http://ceur-ws.org/Vol-645/#Paper2>,
         <http://ceur-ws.org/Vol-645/#Paper3>,
         <http://ceur-ws.org/Vol-645/#Paper4>,
         <http://ceur-ws.org/Vol-645/#Paper5>,
         <http://ceur-ws.org/Vol-645/#Paper6> ;
-    ns6:issued "2010-10-12T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:presentedAt <http://ceur-ws.org/Vol-645/#event> ;
-    ns1:editor <http://ceur-ws.org/Vol-645/#ChristopheriJiOiBaker>,
+    ns8:issued "2010-10-12T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:presentedAt <http://ceur-ws.org/Vol-645/#event> ;
+    ns2:editor <http://ceur-ws.org/Vol-645/#ChristopheriJiOiBaker>,
         <http://ceur-ws.org/Vol-645/#DietrichiRebholz-Schuhmann>,
         <http://ceur-ws.org/Vol-645/#Ren%C3%A9iWitte> .
 
-<http://ceur-ws.org/Vol-645/#Paper3> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-645/> ;
-    ns2:title "Characterization of pathogenic germline mutations in human protein kinases" ;
-    ns1:author <http://ceur-ws.org/Vol-645/#AlfonsoiValencia>,
+<http://ceur-ws.org/Vol-645/#Paper3> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-645/> ;
+    ns4:title "Characterization of pathogenic germline mutations in human protein kinases" ;
+    ns2:author <http://ceur-ws.org/Vol-645/#AlfonsoiValencia>,
         <http://ceur-ws.org/Vol-645/#AndrewiMartin>,
         <http://ceur-ws.org/Vol-645/#AnjaiBaresic>,
         <http://ceur-ws.org/Vol-645/#ChristineiOrengo>,

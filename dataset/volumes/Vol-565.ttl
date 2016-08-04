@@ -1,11 +1,11 @@
-@prefix ns1: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns1: <http://swrc.ontoware.org/ontology/#> .
 @prefix ns2: <http://www.w3.org/2002/07/owl#> .
-@prefix ns3: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns3: <http://purl.org/dc/elements/1.1/#> .
 @prefix ns4: <http://xmlns.com/foaf/0.1/> .
-@prefix ns5: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns6: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns7: <http://purl.org/ontology/bibo/#> .
-@prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns5: <http://purl.org/ontology/bibo/#> .
+@prefix ns6: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -52,8 +52,8 @@
     ns4:name "Hidir Aras" .
 
 <http://ceur-ws.org/Vol-565/#IaniDickinson> a ns4:Person ;
-    ns7:place <http://dbpedia.org/resource/United_Kingdom> ;
-    ns3:affiliation "Epimorphics Ltd" ;
+    ns5:place <http://dbpedia.org/resource/United_Kingdom> ;
+    ns1:affiliation "Epimorphics Ltd" ;
     ns2:sameAs <http://ceur-ws.org/persons/IaniDickinson> ;
     ns4:name "Ian Dickinson" .
 
@@ -73,8 +73,8 @@
     ns4:name "Knud Möller" .
 
 <http://ceur-ws.org/Vol-565/#LoraiAroyo> a ns4:Person ;
-    ns7:place <http://dbpedia.org/resource/Kingdom_of_the_Netherlands> ;
-    ns3:affiliation "VU Amsterdam" ;
+    ns5:place <http://dbpedia.org/resource/Kingdom_of_the_Netherlands> ;
+    ns1:affiliation "VU Amsterdam" ;
     ns2:sameAs <http://ceur-ws.org/persons/LoraiAroyo> ;
     ns4:name "Lora Aroyo" .
 
@@ -114,30 +114,30 @@
     ns4:name "Sebastian Boring" .
 
 <http://ceur-ws.org/Vol-565/#TomiHeath> a ns4:Person ;
-    ns7:place <http://dbpedia.org/resource/United_Kingdom> ;
-    ns3:affiliation "Talis Information Ltd, Knights Court, Solihull Parkway, Birmingham Business Park" ;
+    ns5:place <http://dbpedia.org/resource/United_Kingdom> ;
+    ns1:affiliation "Talis Information Ltd, Knights Court, Solihull Parkway, Birmingham Business Park" ;
     ns2:sameAs <http://ceur-ws.org/persons/TomiHeath> ;
     ns4:name "Tom Heath" .
 
 <http://ceur-ws.org/Vol-565/#ValentinaiPresutti> a ns4:Person ;
-    ns7:place <http://dbpedia.org/resource/Italy> ;
-    ns3:affiliation "Semantic Technology Laboratory (STLab), ISTC" ;
+    ns5:place <http://dbpedia.org/resource/Italy> ;
+    ns1:affiliation "Semantic Technology Laboratory (STLab), ISTC" ;
     ns2:sameAs <http://ceur-ws.org/persons/ValentinaiPresutti> ;
     ns4:name "Valentina Presutti" .
 
 <http://ceur-ws.org/Vol-565/#VinhTuaniThai> a ns4:Person ;
-    ns7:place <http://dbpedia.org/resource/Republic_of_Ireland> ;
-    ns3:affiliation "Digital Enterprise Research Institute, National University of Ireland, Galway" ;
+    ns5:place <http://dbpedia.org/resource/Republic_of_Ireland> ;
+    ns1:affiliation "Digital Enterprise Research Institute, National University of Ireland, Galway" ;
     ns2:sameAs <http://ceur-ws.org/persons/VinhTuaniThai> ;
     ns4:name "VinhTuan Thai" .
 
-<http://ceur-ws.org/Vol-565/#event> a ns1:WorkshopEvent ;
-    ns1:hasLocation <http://dbpedia.org/resource/China> ;
-    ns1:hasPart <http://ceur-ws.org/Vol-565/#part-VISSW> ;
-    ns1:isSubEventOf <http://ceur-ws.org/Vol-565/#conf> ;
-    ns8:beginsAtDatetime "2010-02-07T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:endsAtDatetime "2010-02-07T00:00:00+00:00"^^xsd:dateTime ;
-    ns5:license <http://choosealicense.com/licenses/no-license/> ;
+<http://ceur-ws.org/Vol-565/#event> a ns6:WorkshopEvent ;
+    ns6:hasLocation <http://dbpedia.org/resource/China> ;
+    ns6:hasPart <http://ceur-ws.org/Vol-565/#part-VISSW> ;
+    ns6:isSubEventOf <http://ceur-ws.org/Vol-565/#conf> ;
+    ns7:beginsAtDatetime "2010-02-07T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:endsAtDatetime "2010-02-07T00:00:00+00:00"^^xsd:dateTime ;
+    ns3:license <http://choosealicense.com/licenses/no-license/> ;
     rdfs:seeAlso <http://ceur-ws.org/Vol-443/#event> .
 
 <http://ceur-ws.org/Vol-565/#AndreasiButz> a ns4:Person ;
@@ -147,8 +147,8 @@
     ns4:name "Andreas Butz" .
 
 <http://ceur-ws.org/Vol-565/#SiegfriediHandschuh> a ns4:Person ;
-    ns7:place <http://dbpedia.org/resource/Republic_of_Ireland> ;
-    ns3:affiliation "Digital Enterprise Research Institute, National University of Ireland, Galway" ;
+    ns5:place <http://dbpedia.org/resource/Republic_of_Ireland> ;
+    ns1:affiliation "Digital Enterprise Research Institute, National University of Ireland, Galway" ;
     ns2:sameAs <http://ceur-ws.org/persons/SiegfriediHandschuh> ;
     ns4:made <http://ceur-ws.org/Vol-565/#paper4> ;
     ns4:name "Siegfried Handschuh" .
@@ -159,63 +159,63 @@
         <http://ceur-ws.org/Vol-565/#paper7> ;
     ns4:name "Ya-Xi Chen" .
 
-<http://ceur-ws.org/Vol-565/#paper1> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-565/> ;
-    ns5:title "Scenarios and Challenges for the Sharing of Event-Indexed Media" ;
-    ns3:author <http://ceur-ws.org/Vol-565/#AnthonyiJameson> .
+<http://ceur-ws.org/Vol-565/#paper1> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-565/> ;
+    ns3:title "Scenarios and Challenges for the Sharing of Event-Indexed Media" ;
+    ns1:author <http://ceur-ws.org/Vol-565/#AnthonyiJameson> .
 
-<http://ceur-ws.org/Vol-565/#paper3> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-565/> ;
-    ns5:title "An Intelligent Query Interface Based on Ontology Navigation" ;
-    ns3:author <http://ceur-ws.org/Vol-565/#EnricoiFranconi>,
+<http://ceur-ws.org/Vol-565/#paper3> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-565/> ;
+    ns3:title "An Intelligent Query Interface Based on Ontology Navigation" ;
+    ns1:author <http://ceur-ws.org/Vol-565/#EnricoiFranconi>,
         <http://ceur-ws.org/Vol-565/#MarcoiTrevisan>,
         <http://ceur-ws.org/Vol-565/#PaoloiGuagliardo> .
 
-<http://ceur-ws.org/Vol-565/#paper4> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-565/> ;
-    ns5:title "Konduit VQB: a Visual Query Builder for SPARQL on the Social Semantic Desktop" ;
-    ns3:author <http://ceur-ws.org/Vol-565/#KnudiM%C3%B6ller>,
+<http://ceur-ws.org/Vol-565/#paper4> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-565/> ;
+    ns3:title "Konduit VQB: a Visual Query Builder for SPARQL on the Social Semantic Desktop" ;
+    ns1:author <http://ceur-ws.org/Vol-565/#KnudiM%C3%B6ller>,
         <http://ceur-ws.org/Vol-565/#OszkariAmbrus>,
         <http://ceur-ws.org/Vol-565/#SiegfriediHandschuh> .
 
-<http://ceur-ws.org/Vol-565/#paper5> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-565/> ;
-    ns5:title "Semantic Cloud: An Enhanced Browsing Interface for Exploring Resources in Folksonomy Systems" ;
-    ns3:author <http://ceur-ws.org/Vol-565/#HidiriAras>,
+<http://ceur-ws.org/Vol-565/#paper5> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-565/> ;
+    ns3:title "Semantic Cloud: An Enhanced Browsing Interface for Exploring Resources in Folksonomy Systems" ;
+    ns1:author <http://ceur-ws.org/Vol-565/#HidiriAras>,
         <http://ceur-ws.org/Vol-565/#RaineriMalaka>,
         <http://ceur-ws.org/Vol-565/#SandraiSiegel> .
 
-<http://ceur-ws.org/Vol-565/#paper6> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-565/> ;
-    ns5:title "How Last.fm Illustrates the Musical World: User Behavior and Relevant User-Generated Content" ;
-    ns3:author <http://ceur-ws.org/Vol-565/#AndreasiButz>,
+<http://ceur-ws.org/Vol-565/#paper6> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-565/> ;
+    ns3:title "How Last.fm Illustrates the Musical World: User Behavior and Relevant User-Generated Content" ;
+    ns1:author <http://ceur-ws.org/Vol-565/#AndreasiButz>,
         <http://ceur-ws.org/Vol-565/#SebastianiBoring>,
         <http://ceur-ws.org/Vol-565/#Ya-XiiChen> .
 
-<http://ceur-ws.org/Vol-565/#paper7> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-565/> ;
-    ns5:title "Gaining Musical Insights: Visualizing Multiple Listening Histories" ;
-    ns3:author <http://ceur-ws.org/Vol-565/#AndreasiButz>,
+<http://ceur-ws.org/Vol-565/#paper7> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-565/> ;
+    ns3:title "Gaining Musical Insights: Visualizing Multiple Listening Histories" ;
+    ns1:author <http://ceur-ws.org/Vol-565/#AndreasiButz>,
         <http://ceur-ws.org/Vol-565/#DominikusiBaur>,
         <http://ceur-ws.org/Vol-565/#Ya-XiiChen> .
 
-<http://ceur-ws.org/Vol-565/#paper8> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-565/> ;
-    ns5:title "Designing Social Mobile Interfaces: Experiences with MobiMood, a Mobile Mood Sharing Application" ;
-    ns3:author <http://ceur-ws.org/Vol-565/#EveiHoggan>,
+<http://ceur-ws.org/Vol-565/#paper8> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-565/> ;
+    ns3:title "Designing Social Mobile Interfaces: Experiences with MobiMood, a Mobile Mood Sharing Application" ;
+    ns1:author <http://ceur-ws.org/Vol-565/#EveiHoggan>,
         <http://ceur-ws.org/Vol-565/#KareniChurch>,
         <http://ceur-ws.org/Vol-565/#NuriaiOliver> .
 
-<http://ceur-ws.org/Vol-565/#paper2> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-565/> ;
-    ns5:title "Ontology Based Queries - Investigating a Natural Language Interface" ;
-    ns3:author <http://ceur-ws.org/Vol-565/#ChrisiMellish>,
+<http://ceur-ws.org/Vol-565/#paper2> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-565/> ;
+    ns3:title "Ontology Based Queries - Investigating a Natural Language Interface" ;
+    ns1:author <http://ceur-ws.org/Vol-565/#ChrisiMellish>,
         <http://ceur-ws.org/Vol-565/#FeikjeiHielkema>,
         <http://ceur-ws.org/Vol-565/#GaviniDoherty>,
         <http://ceur-ws.org/Vol-565/#IelkaivanideriSluis> .
 
-<http://ceur-ws.org/Vol-565/> a ns1:Proceedings ;
-    ns1:hasPart <http://ceur-ws.org/Vol-565/#paper1>,
+<http://ceur-ws.org/Vol-565/> a ns6:Proceedings ;
+    ns6:hasPart <http://ceur-ws.org/Vol-565/#paper1>,
         <http://ceur-ws.org/Vol-565/#paper2>,
         <http://ceur-ws.org/Vol-565/#paper3>,
         <http://ceur-ws.org/Vol-565/#paper4>,
@@ -223,9 +223,9 @@
         <http://ceur-ws.org/Vol-565/#paper6>,
         <http://ceur-ws.org/Vol-565/#paper7>,
         <http://ceur-ws.org/Vol-565/#paper8> ;
-    ns6:issued "2010-02-18T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:presentedAt <http://ceur-ws.org/Vol-565/#event> ;
-    ns3:editor <http://ceur-ws.org/Vol-565/#IaniDickinson>,
+    ns8:issued "2010-02-18T00:00:00+00:00"^^xsd:dateTime ;
+    ns5:presentedAt <http://ceur-ws.org/Vol-565/#event> ;
+    ns1:editor <http://ceur-ws.org/Vol-565/#IaniDickinson>,
         <http://ceur-ws.org/Vol-565/#LoraiAroyo>,
         <http://ceur-ws.org/Vol-565/#SiegfriediHandschuh>,
         <http://ceur-ws.org/Vol-565/#TomiHeath>,

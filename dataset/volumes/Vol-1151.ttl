@@ -1,8 +1,8 @@
 @prefix ns1: <http://xmlns.com/foaf/0.1/> .
 @prefix ns2: <http://www.w3.org/2002/07/owl#> .
-@prefix ns3: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns4: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns5: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns3: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns4: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns5: <http://purl.org/dc/elements/1.1/#> .
 @prefix ns6: <http://purl.org/NET/c4dm/timeline.owl#> .
 @prefix ns7: <http://purl.org/ontology/bibo/#> .
 @prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
@@ -98,7 +98,7 @@
 
 <http://ceur-ws.org/Vol-1151/#L> a ns1:Person ;
     ns7:place <http://dbpedia.org/resource/Germany> ;
-    ns3:affiliation "3S Research Center, Leibniz Universität Hannover" ;
+    ns4:affiliation "3S Research Center, Leibniz Universität Hannover" ;
     ns2:sameAs <http://ceur-ws.org/persons/L> ;
     ns1:name "L" .
 
@@ -177,13 +177,13 @@
     ns1:made <http://ceur-ws.org/Vol-1151/#paper5> ;
     ns1:name "Zohra Bellahsene" .
 
-<http://ceur-ws.org/Vol-1151/#event> a ns5:WorkshopEvent ;
-    ns5:hasLocation <http://dbpedia.org/resource/Greece> ;
-    ns5:hasPart <http://ceur-ws.org/Vol-1151/#part-PROFILES> ;
-    ns5:isSubEventOf <http://ceur-ws.org/Vol-1151/#conf> ;
+<http://ceur-ws.org/Vol-1151/#event> a ns3:WorkshopEvent ;
+    ns3:hasLocation <http://dbpedia.org/resource/Greece> ;
+    ns3:hasPart <http://ceur-ws.org/Vol-1151/#part-PROFILES> ;
+    ns3:isSubEventOf <http://ceur-ws.org/Vol-1151/#conf> ;
     ns6:beginsAtDatetime "2014-05-26T00:00:00+00:00"^^xsd:dateTime ;
     ns6:endsAtDatetime "2014-05-26T00:00:00+00:00"^^xsd:dateTime ;
-    ns4:license <http://choosealicense.com/licenses/no-license/> .
+    ns5:license <http://choosealicense.com/licenses/no-license/> .
 
 <http://ceur-ws.org/Vol-1151/#ThomasiGottron> a ns1:Person ;
     ns2:sameAs <http://ceur-ws.org/persons/ThomasiGottron> ;
@@ -191,63 +191,63 @@
         <http://ceur-ws.org/Vol-1151/#paper7> ;
     ns1:name "Thomas Gottron" .
 
-<http://ceur-ws.org/Vol-1151/#paper7> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1151/> ;
-    ns4:title "Of Sampling and Smoothing: Approximating Distributions over Linked Open Data" ;
-    ns3:author <http://ceur-ws.org/Vol-1151/#ThomasiGottron> .
+<http://ceur-ws.org/Vol-1151/#paper7> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1151/> ;
+    ns5:title "Of Sampling and Smoothing: Approximating Distributions over Linked Open Data" ;
+    ns4:author <http://ceur-ws.org/Vol-1151/#ThomasiGottron> .
 
-<http://ceur-ws.org/Vol-1151/#paper9> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1151/> ;
-    ns4:title "LODOP - Multi-Query Optimization for Linked Data Profiling Queries" ;
-    ns3:author <http://ceur-ws.org/Vol-1151/#AnjaiJentzsch>,
+<http://ceur-ws.org/Vol-1151/#paper9> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1151/> ;
+    ns5:title "LODOP - Multi-Query Optimization for Linked Data Profiling Queries" ;
+    ns4:author <http://ceur-ws.org/Vol-1151/#AnjaiJentzsch>,
         <http://ceur-ws.org/Vol-1151/#BenediktiForchhammer>,
         <http://ceur-ws.org/Vol-1151/#FelixiNaumann> .
 
-<http://ceur-ws.org/Vol-1151/#paper2> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1151/> ;
-    ns4:title "Entity-based Data Source Contextualization for Searching the Web of Data" ;
-    ns3:author <http://ceur-ws.org/Vol-1151/#AchimiRettinger>,
+<http://ceur-ws.org/Vol-1151/#paper2> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1151/> ;
+    ns5:title "Entity-based Data Source Contextualization for Searching the Web of Data" ;
+    ns4:author <http://ceur-ws.org/Vol-1151/#AchimiRettinger>,
         <http://ceur-ws.org/Vol-1151/#AndreasiWagner>,
         <http://ceur-ws.org/Vol-1151/#HolgeriLamm>,
         <http://ceur-ws.org/Vol-1151/#PeteriHaase> .
 
-<http://ceur-ws.org/Vol-1151/#paper4> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1151/> ;
-    ns4:title "From Changes to Dynamics: Dynamics Analysis of Linked Open Data Sources" ;
-    ns3:author <http://ceur-ws.org/Vol-1151/#AnsgariScherp>,
+<http://ceur-ws.org/Vol-1151/#paper4> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1151/> ;
+    ns5:title "From Changes to Dynamics: Dynamics Analysis of Linked Open Data Sources" ;
+    ns4:author <http://ceur-ws.org/Vol-1151/#AnsgariScherp>,
         <http://ceur-ws.org/Vol-1151/#GerdiGr%C3%B6ner>,
         <http://ceur-ws.org/Vol-1151/#RenataiDividino>,
         <http://ceur-ws.org/Vol-1151/#ThomasiGottron> .
 
-<http://ceur-ws.org/Vol-1151/#paper5> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1151/> ;
-    ns4:title "Towards Semantic Dataset Profiling" ;
-    ns3:author <http://ceur-ws.org/Vol-1151/#Fran%C3%A7oisiScharffe>,
+<http://ceur-ws.org/Vol-1151/#paper5> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1151/> ;
+    ns5:title "Towards Semantic Dataset Profiling" ;
+    ns4:author <http://ceur-ws.org/Vol-1151/#Fran%C3%A7oisiScharffe>,
         <http://ceur-ws.org/Vol-1151/#KonstantiniTodorov>,
         <http://ceur-ws.org/Vol-1151/#MohamediBeniEllefi>,
         <http://ceur-ws.org/Vol-1151/#ZohraiBellahsene> .
 
-<http://ceur-ws.org/Vol-1151/#paper6> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1151/> ;
-    ns4:title "Towards a Framework for Managing Evolving Information Resources on the Data Web" ;
-    ns3:author <http://ceur-ws.org/Vol-1151/#ChristosiPateritsas>,
+<http://ceur-ws.org/Vol-1151/#paper6> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1151/> ;
+    ns5:title "Towards a Framework for Managing Evolving Information Resources on the Data Web" ;
+    ns4:author <http://ceur-ws.org/Vol-1151/#ChristosiPateritsas>,
         <http://ceur-ws.org/Vol-1151/#GeorgeiPapastefanatos>,
         <http://ceur-ws.org/Vol-1151/#MariosiMeimaris>,
         <http://ceur-ws.org/Vol-1151/#TheodoraiGalani>,
         <http://ceur-ws.org/Vol-1151/#YannisiStavrakas> .
 
-<http://ceur-ws.org/Vol-1151/#paper3> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1151/> ;
-    ns4:title "Towards Analytics and Collaborative Exploration of Social and linked Media for Technology-Enchanced Learning Scenarios" ;
-    ns3:author <http://ceur-ws.org/Vol-1151/#AdamouiAlessandro>,
+<http://ceur-ws.org/Vol-1151/#paper3> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1151/> ;
+    ns5:title "Towards Analytics and Collaborative Exploration of Social and linked Media for Technology-Enchanced Learning Scenarios" ;
+    ns4:author <http://ceur-ws.org/Vol-1151/#AdamouiAlessandro>,
         <http://ceur-ws.org/Vol-1151/#DavideiTaibi>,
         <http://ceur-ws.org/Vol-1151/#IvanaiMarenzi>,
         <http://ceur-ws.org/Vol-1151/#MathieuiD%27Aquin>,
         <http://ceur-ws.org/Vol-1151/#SergejiZerr>,
         <http://ceur-ws.org/Vol-1151/#StefaniDietze> .
 
-<http://ceur-ws.org/Vol-1151/> a ns5:Proceedings ;
-    ns5:hasPart <http://ceur-ws.org/Vol-1151/#paper10>,
+<http://ceur-ws.org/Vol-1151/> a ns3:Proceedings ;
+    ns3:hasPart <http://ceur-ws.org/Vol-1151/#paper10>,
         <http://ceur-ws.org/Vol-1151/#paper2>,
         <http://ceur-ws.org/Vol-1151/#paper3>,
         <http://ceur-ws.org/Vol-1151/#paper4>,
@@ -257,12 +257,12 @@
         <http://ceur-ws.org/Vol-1151/#paper9> ;
     ns8:issued "2014-05-06T00:00:00+00:00"^^xsd:dateTime ;
     ns7:presentedAt <http://ceur-ws.org/Vol-1151/#event> ;
-    ns3:editor <http://ceur-ws.org/Vol-1151/#L> .
+    ns4:editor <http://ceur-ws.org/Vol-1151/#L> .
 
-<http://ceur-ws.org/Vol-1151/#paper10> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1151/> ;
-    ns4:title "Extending VoID for Expressing Connectivity Metrics of a Semantic Warehouse" ;
-    ns3:author <http://ceur-ws.org/Vol-1151/#CarloiAllocca>,
+<http://ceur-ws.org/Vol-1151/#paper10> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1151/> ;
+    ns5:title "Extending VoID for Expressing Connectivity Metrics of a Semantic Warehouse" ;
+    ns4:author <http://ceur-ws.org/Vol-1151/#CarloiAllocca>,
         <http://ceur-ws.org/Vol-1151/#CristinaiLantzaki>,
         <http://ceur-ws.org/Vol-1151/#MichalisiMountantonakis>,
         <http://ceur-ws.org/Vol-1151/#NikosiMinadakis>,

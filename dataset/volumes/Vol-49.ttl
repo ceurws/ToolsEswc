@@ -1,10 +1,10 @@
 @prefix ns1: <http://xmlns.com/foaf/0.1/> .
-@prefix ns2: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns3: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns4: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns2: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns3: <http://purl.org/ontology/bibo/#> .
+@prefix ns4: <http://data.semanticweb.org/ns/swc/ontology/#> .
 @prefix ns5: <http://www.w3.org/2002/07/owl#> .
-@prefix ns6: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns7: <http://purl.org/ontology/bibo/#> .
+@prefix ns6: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -126,13 +126,13 @@
     ns1:made <http://ceur-ws.org/Vol-49/#LutzSattlerWolter-66start> ;
     ns1:name "Ulrike Sattler" .
 
-<http://ceur-ws.org/Vol-49/#event> a ns3:WorkshopEvent ;
-    ns3:hasLocation <http://dbpedia.org/resource/United_States> ;
-    ns3:hasPart <http://ceur-ws.org/Vol-49/#part-DL> ;
-    ns3:isSubEventOf <http://ceur-ws.org/Vol-49/#conf> ;
+<http://ceur-ws.org/Vol-49/#event> a ns4:WorkshopEvent ;
+    ns4:hasLocation <http://dbpedia.org/resource/United_States> ;
+    ns4:hasPart <http://ceur-ws.org/Vol-49/#part-DL> ;
+    ns4:isSubEventOf <http://ceur-ws.org/Vol-49/#conf> ;
     ns8:beginsAtDatetime "2016-08-01T00:00:00+00:00"^^xsd:dateTime ;
     ns8:endsAtDatetime "2016-08-03T00:00:00+00:00"^^xsd:dateTime ;
-    ns2:license <http://choosealicense.com/licenses/no-license/> .
+    ns6:license <http://choosealicense.com/licenses/no-license/> .
 
 <http://ceur-ws.org/Vol-49/#Anni-YasminiTurhan> a ns1:Person ;
     ns5:sameAs <http://ceur-ws.org/persons/Anni-YasminiTurhan> ;
@@ -140,28 +140,28 @@
         <http://ceur-ws.org/Vol-49/#TurhanMolitor-86start> ;
     ns1:name "Anni-Yasmin Turhan" .
 
-<http://ceur-ws.org/Vol-49/#Borgida-106start> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-49/> ;
-    ns2:title "Diachronic Description Logics" ;
-    ns4:author <http://ceur-ws.org/Vol-49/#AlexiBorgida> .
+<http://ceur-ws.org/Vol-49/#Borgida-106start> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-49/> ;
+    ns6:title "Diachronic Description Logics" ;
+    ns2:author <http://ceur-ws.org/Vol-49/#AlexiBorgida> .
 
 <http://ceur-ws.org/Vol-49/#CaroleiGoble> a ns1:Person ;
-    ns4:affiliation "" ;
+    ns2:affiliation "" ;
     ns5:sameAs <http://ceur-ws.org/persons/CaroleiGoble> ;
     ns1:made <http://ceur-ws.org/Vol-49/#BechhoferHorrocksGobleStevens-1start> ;
     ns1:name "Carole Goble" .
 
 <http://ceur-ws.org/Vol-49/#DeborahiL.iMcGuinness> a ns1:Person ;
-    ns7:place <http://dbpedia.org/resource/United_States> ;
-    ns4:affiliation "Knowledge Systems Laboratory, Stanford University, Stanford, CA" ;
+    ns3:place <http://dbpedia.org/resource/United_States> ;
+    ns2:affiliation "Knowledge Systems Laboratory, Stanford University, Stanford, CA" ;
     ns5:sameAs <http://ceur-ws.org/persons/DeborahiL.iMcGuinness> ;
     ns1:made <http://ceur-ws.org/Vol-49/#McGuinness-180start> ;
     ns1:name "Deborah L. McGuinness" .
 
-<http://ceur-ws.org/Vol-49/#Euzenat-20start> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-49/> ;
-    ns2:title "Preserving Modularity in XML Encoding of Description Logics" ;
-    ns4:author <http://ceur-ws.org/Vol-49/#JeromeiEuzenat> .
+<http://ceur-ws.org/Vol-49/#Euzenat-20start> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-49/> ;
+    ns6:title "Preserving Modularity in XML Encoding of Description Logics" ;
+    ns2:author <http://ceur-ws.org/Vol-49/#JeromeiEuzenat> .
 
 <http://ceur-ws.org/Vol-49/#FranziBaader> a ns1:Person ;
     ns5:sameAs <http://ceur-ws.org/persons/FranziBaader> ;
@@ -169,10 +169,10 @@
         <http://ceur-ws.org/Vol-49/#BaaderTurhan-46start> ;
     ns1:name "Franz Baader" .
 
-<http://ceur-ws.org/Vol-49/#Grandi-56start> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-49/> ;
-    ns2:title "On Expressive Number Restrictions in Description Logics" ;
-    ns4:author <http://ceur-ws.org/Vol-49/#FabioiGrandi> .
+<http://ceur-ws.org/Vol-49/#Grandi-56start> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-49/> ;
+    ns6:title "On Expressive Number Restrictions in Description Logics" ;
+    ns2:author <http://ceur-ws.org/Vol-49/#FabioiGrandi> .
 
 <http://ceur-ws.org/Vol-49/#IaniHorrocks> a ns1:Person ;
     ns5:sameAs <http://ceur-ws.org/persons/IaniHorrocks> ;
@@ -180,10 +180,10 @@
         <http://ceur-ws.org/Vol-49/#HorrocksPatelSchneider-30start> ;
     ns1:name "Ian Horrocks" .
 
-<http://ceur-ws.org/Vol-49/#McGuinness-180start> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-49/> ;
-    ns2:title "Description Logics Emerge from Ivory Towers" ;
-    ns4:author <http://ceur-ws.org/Vol-49/#DeborahiL.iMcGuinness> .
+<http://ceur-ws.org/Vol-49/#McGuinness-180start> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-49/> ;
+    ns6:title "Description Logics Emerge from Ivory Towers" ;
+    ns2:author <http://ceur-ws.org/Vol-49/#DeborahiL.iMcGuinness> .
 
 <http://ceur-ws.org/Vol-49/#MichaeliZakharyaschev> a ns1:Person ;
     ns5:sameAs <http://ceur-ws.org/persons/MichaeliZakharyaschev> ;
@@ -192,32 +192,32 @@
     ns1:name "Michael Zakharyaschev" .
 
 <http://ceur-ws.org/Vol-49/#PeteriF.iPatel-Schneider> a ns1:Person ;
-    ns7:place <http://dbpedia.org/resource/United_States> ;
-    ns4:affiliation "Bell Labs Research, Murray Hill, NJ" ;
+    ns3:place <http://dbpedia.org/resource/United_States> ;
+    ns2:affiliation "Bell Labs Research, Murray Hill, NJ" ;
     ns5:sameAs <http://ceur-ws.org/persons/PeteriF.iPatel-Schneider> ;
     ns1:made <http://ceur-ws.org/Vol-49/#HorrocksPatelSchneider-30start> ;
     ns1:name "Peter F. Patel-Schneider" .
 
-<http://ceur-ws.org/Vol-49/#Tessaris-170start> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-49/> ;
-    ns2:title "Querying expressive DLs" ;
-    ns4:author <http://ceur-ws.org/Vol-49/#SergioiTessaris> .
+<http://ceur-ws.org/Vol-49/#Tessaris-170start> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-49/> ;
+    ns6:title "Querying expressive DLs" ;
+    ns2:author <http://ceur-ws.org/Vol-49/#SergioiTessaris> .
 
-<http://ceur-ws.org/Vol-49/#Wessel-122start> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-49/> ;
-    ns2:title "Obstacles on the Way to Qualitative Spatial Reasoning with Description Logics: Some Undecidability Results" ;
-    ns4:author <http://ceur-ws.org/Vol-49/#MichaeliWessel> .
+<http://ceur-ws.org/Vol-49/#Wessel-122start> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-49/> ;
+    ns6:title "Obstacles on the Way to Qualitative Spatial Reasoning with Description Logics: Some Undecidability Results" ;
+    ns2:author <http://ceur-ws.org/Vol-49/#MichaeliWessel> .
 
-<http://ceur-ws.org/Vol-49/#BaaderKuesters-36start> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-49/> ;
-    ns2:title "Unification in a Description Logic with Transitive Closure of Roles" ;
-    ns4:author <http://ceur-ws.org/Vol-49/#FranziBaader>,
+<http://ceur-ws.org/Vol-49/#BaaderKuesters-36start> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-49/> ;
+    ns6:title "Unification in a Description Logic with Transitive Closure of Roles" ;
+    ns2:author <http://ceur-ws.org/Vol-49/#FranziBaader>,
         <http://ceur-ws.org/Vol-49/#RalfiK%C3%BCsters> .
 
-<http://ceur-ws.org/Vol-49/#BaaderTurhan-46start> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-49/> ;
-    ns2:title "TBoxes do not Yield a Compact Representation of Least Common Subsumers" ;
-    ns4:author <http://ceur-ws.org/Vol-49/#Anni-YasminiTurhan>,
+<http://ceur-ws.org/Vol-49/#BaaderTurhan-46start> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-49/> ;
+    ns6:title "TBoxes do not Yield a Compact Representation of Least Common Subsumers" ;
+    ns2:author <http://ceur-ws.org/Vol-49/#Anni-YasminiTurhan>,
         <http://ceur-ws.org/Vol-49/#FranziBaader> .
 
 <http://ceur-ws.org/Vol-49/#FrankiWolter> a ns1:Person ;
@@ -227,40 +227,40 @@
         <http://ceur-ws.org/Vol-49/#LutzSattlerWolter-66start> ;
     ns1:name "Frank Wolter" .
 
-<http://ceur-ws.org/Vol-49/#GuenselWittmann-162start> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-49/> ;
-    ns2:title "Towards an Implementation of the Temporal Description Logic TLALC" ;
-    ns4:author <http://ceur-ws.org/Vol-49/#ChristianiG%C3%BCnsel>,
+<http://ceur-ws.org/Vol-49/#GuenselWittmann-162start> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-49/> ;
+    ns6:title "Towards an Implementation of the Temporal Description Logic TLALC" ;
+    ns2:author <http://ceur-ws.org/Vol-49/#ChristianiG%C3%BCnsel>,
         <http://ceur-ws.org/Vol-49/#MarcoiWittmann> .
 
-<http://ceur-ws.org/Vol-49/#HaarslevMoeller-132start> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-49/> ;
-    ns2:title "Description of the RACER System and its Applications" ;
-    ns4:author <http://ceur-ws.org/Vol-49/#RalfiM%C3%B6ller>,
+<http://ceur-ws.org/Vol-49/#HaarslevMoeller-132start> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-49/> ;
+    ns6:title "Description of the RACER System and its Applications" ;
+    ns2:author <http://ceur-ws.org/Vol-49/#RalfiM%C3%B6ller>,
         <http://ceur-ws.org/Vol-49/#VolkeriHaarslev> .
 
-<http://ceur-ws.org/Vol-49/#HaarslevMoeller-142start> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-49/> ;
-    ns2:title "Optimizing Reasoning in Description Logics with Qualified Number Restrictions" ;
-    ns4:author <http://ceur-ws.org/Vol-49/#RalfiM%C3%B6ller>,
+<http://ceur-ws.org/Vol-49/#HaarslevMoeller-142start> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-49/> ;
+    ns6:title "Optimizing Reasoning in Description Logics with Qualified Number Restrictions" ;
+    ns2:author <http://ceur-ws.org/Vol-49/#RalfiM%C3%B6ller>,
         <http://ceur-ws.org/Vol-49/#VolkeriHaarslev> .
 
-<http://ceur-ws.org/Vol-49/#HorrocksPatelSchneider-30start> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-49/> ;
-    ns2:title "The Generation of DAML+OIL" ;
-    ns4:author <http://ceur-ws.org/Vol-49/#IaniHorrocks>,
+<http://ceur-ws.org/Vol-49/#HorrocksPatelSchneider-30start> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-49/> ;
+    ns6:title "The Generation of DAML+OIL" ;
+    ns2:author <http://ceur-ws.org/Vol-49/#IaniHorrocks>,
         <http://ceur-ws.org/Vol-49/#PeteriF.iPatel-Schneider> .
 
-<http://ceur-ws.org/Vol-49/#TomanWeddell-76start> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-49/> ;
-    ns2:title "On Attributes, Roles, and Dependencies in Description Logics and the Ackermann Case of the Decision Problem" ;
-    ns4:author <http://ceur-ws.org/Vol-49/#DavidiToman>,
+<http://ceur-ws.org/Vol-49/#TomanWeddell-76start> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-49/> ;
+    ns6:title "On Attributes, Roles, and Dependencies in Description Logics and the Ackermann Case of the Decision Problem" ;
+    ns2:author <http://ceur-ws.org/Vol-49/#DavidiToman>,
         <http://ceur-ws.org/Vol-49/#GrantiWeddell> .
 
-<http://ceur-ws.org/Vol-49/#TurhanMolitor-86start> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-49/> ;
-    ns2:title "Using Lazy Unfolding for the Computation of Least Common Subsumers" ;
-    ns4:author <http://ceur-ws.org/Vol-49/#Anni-YasminiTurhan>,
+<http://ceur-ws.org/Vol-49/#TurhanMolitor-86start> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-49/> ;
+    ns6:title "Using Lazy Unfolding for the Computation of Least Common Subsumers" ;
+    ns2:author <http://ceur-ws.org/Vol-49/#Anni-YasminiTurhan>,
         <http://ceur-ws.org/Vol-49/#RalfiMolitor> .
 
 <http://ceur-ws.org/Vol-49/#VolkeriHaarslev> a ns1:Person ;
@@ -270,62 +270,62 @@
         <http://ceur-ws.org/Vol-49/#HaarslevTimmannMoeller-152start> ;
     ns1:name "Volker Haarslev" .
 
-<http://ceur-ws.org/Vol-49/#CalvaneseDeGiacomoLenzerini-10start> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-49/> ;
-    ns2:title "Ontology of Integration and Integration of Ontologies" ;
-    ns4:author <http://ceur-ws.org/Vol-49/#DiegoiCalvanese>,
+<http://ceur-ws.org/Vol-49/#CalvaneseDeGiacomoLenzerini-10start> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-49/> ;
+    ns6:title "Ontology of Integration and Integration of Ontologies" ;
+    ns2:author <http://ceur-ws.org/Vol-49/#DiegoiCalvanese>,
         <http://ceur-ws.org/Vol-49/#GiuseppeiDeiGiacomo>,
         <http://ceur-ws.org/Vol-49/#MaurizioiLenzerini> .
 
-<http://ceur-ws.org/Vol-49/#HaarslevTimmannMoeller-152start> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-49/> ;
-    ns2:title "Combining Tableaux and Algebraic Methods for Reasoning with Qualified Number Restrictions" ;
-    ns4:author <http://ceur-ws.org/Vol-49/#MartinaiTimmann>,
+<http://ceur-ws.org/Vol-49/#HaarslevTimmannMoeller-152start> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-49/> ;
+    ns6:title "Combining Tableaux and Algebraic Methods for Reasoning with Qualified Number Restrictions" ;
+    ns2:author <http://ceur-ws.org/Vol-49/#MartinaiTimmann>,
         <http://ceur-ws.org/Vol-49/#RalfiM%C3%B6ller>,
         <http://ceur-ws.org/Vol-49/#VolkeriHaarslev> .
 
-<http://ceur-ws.org/Vol-49/#KutzWolterZakharyaschev-113start> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-49/> ;
-    ns2:title "A Note on Concepts and Distances" ;
-    ns4:author <http://ceur-ws.org/Vol-49/#FrankiWolter>,
+<http://ceur-ws.org/Vol-49/#KutzWolterZakharyaschev-113start> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-49/> ;
+    ns6:title "A Note on Concepts and Distances" ;
+    ns2:author <http://ceur-ws.org/Vol-49/#FrankiWolter>,
         <http://ceur-ws.org/Vol-49/#MichaeliZakharyaschev>,
         <http://ceur-ws.org/Vol-49/#OliveriKutz> .
 
-<http://ceur-ws.org/Vol-49/#LutzSattlerWolter-66start> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-49/> ;
-    ns2:title "Description Logics and the Two-Variable Fragment" ;
-    ns4:author <http://ceur-ws.org/Vol-49/#CarsteniLutz>,
+<http://ceur-ws.org/Vol-49/#LutzSattlerWolter-66start> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-49/> ;
+    ns6:title "Description Logics and the Two-Variable Fragment" ;
+    ns2:author <http://ceur-ws.org/Vol-49/#CarsteniLutz>,
         <http://ceur-ws.org/Vol-49/#FrankiWolter>,
         <http://ceur-ws.org/Vol-49/#UlrikeiSattler> .
 
 <http://ceur-ws.org/Vol-49/#RalfiM%C3%B6ller> a ns1:Person ;
-    ns7:place <http://dbpedia.org/resource/Germany> ;
-    ns4:affiliation "Computer Science Department, University of Hamburg, Hamburg" ;
+    ns3:place <http://dbpedia.org/resource/Germany> ;
+    ns2:affiliation "Computer Science Department, University of Hamburg, Hamburg" ;
     ns5:sameAs <http://ceur-ws.org/persons/RalfiM%C3%B6ller> ;
     ns1:made <http://ceur-ws.org/Vol-49/#HaarslevMoeller-132start>,
         <http://ceur-ws.org/Vol-49/#HaarslevMoeller-142start>,
         <http://ceur-ws.org/Vol-49/#HaarslevTimmannMoeller-152start> ;
     ns1:name "Ralf Möller" .
 
-<http://ceur-ws.org/Vol-49/#BechhoferHorrocksGobleStevens-1start> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-49/> ;
-    ns2:title "OilEd: a Reason-able Ontology Editor for the Semantic Web" ;
-    ns4:author <http://ceur-ws.org/Vol-49/#CaroleiGoble>,
+<http://ceur-ws.org/Vol-49/#BechhoferHorrocksGobleStevens-1start> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-49/> ;
+    ns6:title "OilEd: a Reason-able Ontology Editor for the Semantic Web" ;
+    ns2:author <http://ceur-ws.org/Vol-49/#CaroleiGoble>,
         <http://ceur-ws.org/Vol-49/#IaniHorrocks>,
         <http://ceur-ws.org/Vol-49/#RobertiStevens>,
         <http://ceur-ws.org/Vol-49/#SeaniBechhofer> .
 
-<http://ceur-ws.org/Vol-49/#ArtaleFranconiMosurovicWolterZakharyaschev-96start> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-49/> ;
-    ns2:title "The DLRUS Temporal Description Logic" ;
-    ns4:author <http://ceur-ws.org/Vol-49/#AlessandroiArtale>,
+<http://ceur-ws.org/Vol-49/#ArtaleFranconiMosurovicWolterZakharyaschev-96start> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-49/> ;
+    ns6:title "The DLRUS Temporal Description Logic" ;
+    ns2:author <http://ceur-ws.org/Vol-49/#AlessandroiArtale>,
         <http://ceur-ws.org/Vol-49/#EnricoiFranconi>,
         <http://ceur-ws.org/Vol-49/#FrankiWolter>,
         <http://ceur-ws.org/Vol-49/#MichaeliZakharyaschev>,
         <http://ceur-ws.org/Vol-49/#MilenkoiMosurovic> .
 
-<http://ceur-ws.org/Vol-49/> a ns3:Proceedings ;
-    ns3:hasPart <http://ceur-ws.org/Vol-49/#ArtaleFranconiMosurovicWolterZakharyaschev-96start>,
+<http://ceur-ws.org/Vol-49/> a ns4:Proceedings ;
+    ns4:hasPart <http://ceur-ws.org/Vol-49/#ArtaleFranconiMosurovicWolterZakharyaschev-96start>,
         <http://ceur-ws.org/Vol-49/#BaaderKuesters-36start>,
         <http://ceur-ws.org/Vol-49/#BaaderTurhan-46start>,
         <http://ceur-ws.org/Vol-49/#BechhoferHorrocksGobleStevens-1start>,
@@ -345,9 +345,9 @@
         <http://ceur-ws.org/Vol-49/#TomanWeddell-76start>,
         <http://ceur-ws.org/Vol-49/#TurhanMolitor-86start>,
         <http://ceur-ws.org/Vol-49/#Wessel-122start> ;
-    ns6:issued "2001-09-04T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:presentedAt <http://ceur-ws.org/Vol-49/#event> ;
-    ns4:editor <http://ceur-ws.org/Vol-49/#CaroleiGoble>,
+    ns7:issued "2001-09-04T00:00:00+00:00"^^xsd:dateTime ;
+    ns3:presentedAt <http://ceur-ws.org/Vol-49/#event> ;
+    ns2:editor <http://ceur-ws.org/Vol-49/#CaroleiGoble>,
         <http://ceur-ws.org/Vol-49/#DeborahiL.iMcGuinness>,
         <http://ceur-ws.org/Vol-49/#PeteriF.iPatel-Schneider>,
         <http://ceur-ws.org/Vol-49/#RalfiM%C3%B6ller> .

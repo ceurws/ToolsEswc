@@ -1,10 +1,10 @@
 @prefix ns1: <http://xmlns.com/foaf/0.1/> .
 @prefix ns2: <http://purl.org/ontology/bibo/#> .
-@prefix ns3: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns4: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns3: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns4: <http://data.semanticweb.org/ns/swc/ontology/#> .
 @prefix ns5: <http://www.w3.org/2002/07/owl#> .
-@prefix ns6: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns6: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns7: <http://purl.org/dc/elements/1.1/#> .
 @prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -67,7 +67,7 @@
     ns1:name "Ernesto Diaz-Aviles" .
 
 <http://ceur-ws.org/Vol-842/#FaustoiGiunchiglia> a ns1:Person ;
-    ns4:affiliation "" ;
+    ns6:affiliation "" ;
     ns5:sameAs <http://ceur-ws.org/persons/FaustoiGiunchiglia> ;
     ns1:name "Fausto Giunchiglia" .
 
@@ -147,7 +147,7 @@
     ns1:name "Raynor Vliegendhart" .
 
 <http://ceur-ws.org/Vol-842/#RicardoiBaeza-Yates> a ns1:Person ;
-    ns4:affiliation "" ;
+    ns6:affiliation "" ;
     ns5:sameAs <http://ceur-ws.org/persons/RicardoiBaeza-Yates> ;
     ns1:name "Ricardo Baeza-Yates" .
 
@@ -162,7 +162,7 @@
     ns1:name "Sihem Amer-Yahia" .
 
 <http://ceur-ws.org/Vol-842/#StefanoiCeri> a ns1:Person ;
-    ns4:affiliation "" ;
+    ns6:affiliation "" ;
     ns5:sameAs <http://ceur-ws.org/persons/StefanoiCeri> ;
     ns1:name "Stefano Ceri" .
 
@@ -171,13 +171,13 @@
     ns1:made <http://ceur-ws.org/Vol-842/#crowdsearch-goto> ;
     ns1:name "Tomoyasu Nakano" .
 
-<http://ceur-ws.org/Vol-842/#event> a ns3:WorkshopEvent ;
-    ns3:hasLocation <http://dbpedia.org/resource/France> ;
-    ns3:hasPart <http://ceur-ws.org/Vol-842/#part-ws> ;
-    ns3:isSubEventOf <http://ceur-ws.org/Vol-842/#conf> ;
-    ns7:beginsAtDatetime "2012-04-17T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:endsAtDatetime "2012-04-17T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:license <http://choosealicense.com/licenses/no-license/> .
+<http://ceur-ws.org/Vol-842/#event> a ns4:WorkshopEvent ;
+    ns4:hasLocation <http://dbpedia.org/resource/France> ;
+    ns4:hasPart <http://ceur-ws.org/Vol-842/#part-ws> ;
+    ns4:isSubEventOf <http://ceur-ws.org/Vol-842/#conf> ;
+    ns3:beginsAtDatetime "2012-04-17T00:00:00+00:00"^^xsd:dateTime ;
+    ns3:endsAtDatetime "2012-04-17T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:license <http://choosealicense.com/licenses/no-license/> .
 
 <http://ceur-ws.org/Vol-842/#AlessandroiBozzon> a ns1:Person ;
     ns5:sameAs <http://ceur-ws.org/persons/AlessandroiBozzon> ;
@@ -186,157 +186,157 @@
     ns1:name "Alessandro Bozzon" .
 
 <http://ceur-ws.org/Vol-842/#PieroiFraternali> a ns1:Person ;
-    ns4:affiliation "" ;
+    ns6:affiliation "" ;
     ns5:sameAs <http://ceur-ws.org/persons/PieroiFraternali> ;
     ns1:made <http://ceur-ws.org/Vol-842/#crowdsearch-bozzon> ;
     ns1:name "Piero Fraternali" .
 
-<http://ceur-ws.org/Vol-842/#crowdsearch-ameryahia> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-842/> ;
-    ns6:title "Crowd Sourcing Literature Review in SUNFLOWER" ;
+<http://ceur-ws.org/Vol-842/#crowdsearch-ameryahia> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-842/> ;
+    ns7:title "Crowd Sourcing Literature Review in SUNFLOWER" ;
     ns2:endPage 2 ;
     ns2:numPages 1 ;
     ns2:section <http%3A//ceur-ws.org/Vol-842/%23Session1%3AInvitedtalks> ;
     ns2:startPage 2 ;
-    ns4:author <http://ceur-ws.org/Vol-842/#SihemiAmer-Yahia> .
+    ns6:author <http://ceur-ws.org/Vol-842/#SihemiAmer-Yahia> .
 
-<http://ceur-ws.org/Vol-842/#crowdsearch-harris> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-842/> ;
-    ns6:title "An Evaluation of Search Strategies for User-Generated Video Content" ;
+<http://ceur-ws.org/Vol-842/#crowdsearch-harris> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-842/> ;
+    ns7:title "An Evaluation of Search Strategies for User-Generated Video Content" ;
     ns2:endPage 53 ;
     ns2:numPages 6 ;
     ns2:section <http%3A//ceur-ws.org/Vol-842/%23Session4%3ACrowdsourcingforMultimediaApplications> ;
     ns2:startPage 48 ;
-    ns4:author <http://ceur-ws.org/Vol-842/#ChristopheriG.iHarris> .
+    ns6:author <http://ceur-ws.org/Vol-842/#ChristopheriG.iHarris> .
 
-<http://ceur-ws.org/Vol-842/#crowdsearch-kossman> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-842/> ;
-    ns6:title "Using the Crowd to Solve Database Problems" ;
+<http://ceur-ws.org/Vol-842/#crowdsearch-kossman> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-842/> ;
+    ns7:title "Using the Crowd to Solve Database Problems" ;
     ns2:endPage 1 ;
     ns2:numPages 1 ;
     ns2:section <http%3A//ceur-ws.org/Vol-842/%23Session1%3AInvitedtalks> ;
     ns2:startPage 1 ;
-    ns4:author <http://ceur-ws.org/Vol-842/#DonaldiKossman> .
+    ns6:author <http://ceur-ws.org/Vol-842/#DonaldiKossman> .
 
-<http://ceur-ws.org/Vol-842/#crowdsearch-paritosh> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-842/> ;
-    ns6:title "Human Computation Must Be Reproducible" ;
+<http://ceur-ws.org/Vol-842/#crowdsearch-paritosh> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-842/> ;
+    ns7:title "Human Computation Must Be Reproducible" ;
     ns2:endPage 25 ;
     ns2:numPages 6 ;
     ns2:section <http%3A//ceur-ws.org/Vol-842/%23Session3%3AMethodsandToolsforCrowdSearching> ;
     ns2:startPage 20 ;
-    ns4:author <http://ceur-ws.org/Vol-842/#PraveeniParitosh> .
+    ns6:author <http://ceur-ws.org/Vol-842/#PraveeniParitosh> .
 
-<http%3A//ceur-ws.org/Vol-842/%23Session1%3AInvitedtalks> a ns3:SessionEvent ;
-    ns3:partOf <http://ceur-ws.org/Vol-842/> ;
-    ns6:title "Session 1: Invited talks" .
+<http%3A//ceur-ws.org/Vol-842/%23Session1%3AInvitedtalks> a ns4:SessionEvent ;
+    ns4:partOf <http://ceur-ws.org/Vol-842/> ;
+    ns7:title "Session 1: Invited talks" .
 
-<http://ceur-ws.org/Vol-842/#crowdsearch-diaz> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-842/> ;
-    ns6:title "Exploiting Twitter as a Social Channel for Human Computation" ;
+<http://ceur-ws.org/Vol-842/#crowdsearch-diaz> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-842/> ;
+    ns7:title "Exploiting Twitter as a Social Channel for Human Computation" ;
     ns2:endPage 19 ;
     ns2:numPages 5 ;
     ns2:section <http%3A//ceur-ws.org/Vol-842/%23Session2%3ACrowdsearchingontextualandlinkeddata> ;
     ns2:startPage 15 ;
-    ns4:author <http://ceur-ws.org/Vol-842/#ErnestoiDiaz-Aviles>,
+    ns6:author <http://ceur-ws.org/Vol-842/#ErnestoiDiaz-Aviles>,
         <http://ceur-ws.org/Vol-842/#RicardoiKawase> .
 
-<http://ceur-ws.org/Vol-842/#crowdsearch-khodaei> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-842/> ;
-    ns6:title "Social-Textual Search and Ranking" ;
+<http://ceur-ws.org/Vol-842/#crowdsearch-khodaei> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-842/> ;
+    ns7:title "Social-Textual Search and Ranking" ;
     ns2:endPage 8 ;
     ns2:numPages 6 ;
     ns2:section <http%3A//ceur-ws.org/Vol-842/%23Session2%3ACrowdsearchingontextualandlinkeddata> ;
     ns2:startPage 3 ;
-    ns4:author <http://ceur-ws.org/Vol-842/#AliiKhodaei>,
+    ns6:author <http://ceur-ws.org/Vol-842/#AliiKhodaei>,
         <http://ceur-ws.org/Vol-842/#CyrusiShahabi> .
 
-<http%3A//ceur-ws.org/Vol-842/%23Session2%3ACrowdsearchingontextualandlinkeddata> a ns3:SessionEvent ;
-    ns3:partOf <http://ceur-ws.org/Vol-842/> ;
-    ns6:title "Session 2: Crowdsearching on textual and linked data" .
+<http%3A//ceur-ws.org/Vol-842/%23Session2%3ACrowdsearchingontextualandlinkeddata> a ns4:SessionEvent ;
+    ns4:partOf <http://ceur-ws.org/Vol-842/> ;
+    ns7:title "Session 2: Crowdsearching on textual and linked data" .
 
-<http%3A//ceur-ws.org/Vol-842/%23Session3%3AMethodsandToolsforCrowdSearching> a ns3:SessionEvent ;
-    ns3:partOf <http://ceur-ws.org/Vol-842/> ;
-    ns6:title "Session 3: Methods and Tools for CrowdSearching" .
+<http%3A//ceur-ws.org/Vol-842/%23Session3%3AMethodsandToolsforCrowdSearching> a ns4:SessionEvent ;
+    ns4:partOf <http://ceur-ws.org/Vol-842/> ;
+    ns7:title "Session 3: Methods and Tools for CrowdSearching" .
 
-<http://ceur-ws.org/Vol-842/#crowdsearch-brambilla> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-842/> ;
-    ns6:title "A Model-Driven Approach for Crowdsourcing Search" ;
+<http://ceur-ws.org/Vol-842/#crowdsearch-brambilla> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-842/> ;
+    ns7:title "A Model-Driven Approach for Crowdsourcing Search" ;
     ns2:endPage 35 ;
     ns2:numPages 5 ;
     ns2:section <http%3A//ceur-ws.org/Vol-842/%23Session3%3AMethodsandToolsforCrowdSearching> ;
     ns2:startPage 31 ;
-    ns4:author <http://ceur-ws.org/Vol-842/#AlessandroiBozzon>,
+    ns6:author <http://ceur-ws.org/Vol-842/#AlessandroiBozzon>,
         <http://ceur-ws.org/Vol-842/#AndreaiMauri>,
         <http://ceur-ws.org/Vol-842/#MarcoiBrambilla> .
 
-<http://ceur-ws.org/Vol-842/#crowdsearch-difallah> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-842/> ;
-    ns6:title "Mechanical Cheat: Spamming Schemes and Adversarial Techniques on Crowdsourcing Platforms" ;
+<http://ceur-ws.org/Vol-842/#crowdsearch-difallah> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-842/> ;
+    ns7:title "Mechanical Cheat: Spamming Schemes and Adversarial Techniques on Crowdsourcing Platforms" ;
     ns2:endPage 30 ;
     ns2:numPages 5 ;
     ns2:section <http%3A//ceur-ws.org/Vol-842/%23Session3%3AMethodsandToolsforCrowdSearching> ;
     ns2:startPage 26 ;
-    ns4:author <http://ceur-ws.org/Vol-842/#DjelleliEddineiDifallah>,
+    ns6:author <http://ceur-ws.org/Vol-842/#DjelleliEddineiDifallah>,
         <http://ceur-ws.org/Vol-842/#GianlucaiDemartini>,
         <http://ceur-ws.org/Vol-842/#PhilippeiCudr%C3%A9-Mauroux> .
 
-<http://ceur-ws.org/Vol-842/#crowdsearch-simperl> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-842/> ;
-    ns6:title "A Semantically Enabled Architecture for Crowdsourced Linked Data Management" ;
+<http://ceur-ws.org/Vol-842/#crowdsearch-simperl> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-842/> ;
+    ns7:title "A Semantically Enabled Architecture for Crowdsourced Linked Data Management" ;
     ns2:endPage 14 ;
     ns2:numPages 6 ;
     ns2:section <http%3A//ceur-ws.org/Vol-842/%23Session2%3ACrowdsearchingontextualandlinkeddata> ;
     ns2:startPage 9 ;
-    ns4:author <http://ceur-ws.org/Vol-842/#BarryiNorton>,
+    ns6:author <http://ceur-ws.org/Vol-842/#BarryiNorton>,
         <http://ceur-ws.org/Vol-842/#ElenaiSimperl>,
         <http://ceur-ws.org/Vol-842/#MaribeliAcosta> .
 
-<http://ceur-ws.org/Vol-842/#crowdsearch-vliegendhart> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-842/> ;
-    ns6:title "Discovering User Perceptions of Semantic Similarity in Near-duplicate Multimedia Files" ;
+<http://ceur-ws.org/Vol-842/#crowdsearch-vliegendhart> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-842/> ;
+    ns7:title "Discovering User Perceptions of Semantic Similarity in Near-duplicate Multimedia Files" ;
     ns2:endPage 58 ;
     ns2:numPages 5 ;
     ns2:section <http%3A//ceur-ws.org/Vol-842/%23Session4%3ACrowdsourcingforMultimediaApplications> ;
     ns2:startPage 54 ;
-    ns4:author <http://ceur-ws.org/Vol-842/#JohaniPouwelse>,
+    ns6:author <http://ceur-ws.org/Vol-842/#JohaniPouwelse>,
         <http://ceur-ws.org/Vol-842/#MarthaiLarson>,
         <http://ceur-ws.org/Vol-842/#RaynoriVliegendhart> .
 
-<http%3A//ceur-ws.org/Vol-842/%23Session4%3ACrowdsourcingforMultimediaApplications> a ns3:SessionEvent ;
-    ns3:partOf <http://ceur-ws.org/Vol-842/> ;
-    ns6:title "Session 4: Crowdsourcing for Multimedia Applications" .
+<http%3A//ceur-ws.org/Vol-842/%23Session4%3ACrowdsourcingforMultimediaApplications> a ns4:SessionEvent ;
+    ns4:partOf <http://ceur-ws.org/Vol-842/> ;
+    ns7:title "Session 4: Crowdsourcing for Multimedia Applications" .
 
-<http://ceur-ws.org/Vol-842/#crowdsearch-bozzon> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-842/> ;
-    ns6:title "A Framework for Crowdsourced Multimedia Processing and Querying" ;
+<http://ceur-ws.org/Vol-842/#crowdsearch-bozzon> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-842/> ;
+    ns7:title "A Framework for Crowdsourced Multimedia Processing and Querying" ;
     ns2:endPage 47 ;
     ns2:numPages 6 ;
     ns2:section <http%3A//ceur-ws.org/Vol-842/%23Session4%3ACrowdsourcingforMultimediaApplications> ;
     ns2:startPage 42 ;
-    ns4:author <http://ceur-ws.org/Vol-842/#AlessandroiBozzon>,
+    ns6:author <http://ceur-ws.org/Vol-842/#AlessandroiBozzon>,
         <http://ceur-ws.org/Vol-842/#DavideiMartinenghi>,
         <http://ceur-ws.org/Vol-842/#EleonoraiCiceri>,
         <http://ceur-ws.org/Vol-842/#IlioiCatallo>,
         <http://ceur-ws.org/Vol-842/#MarcoiTagliasacchi>,
         <http://ceur-ws.org/Vol-842/#PieroiFraternali> .
 
-<http://ceur-ws.org/Vol-842/#crowdsearch-goto> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-842/> ;
-    ns6:title "PodCastle and Songle: Crowdsourcing-Based Web Services for Retrieval and Browsing of Speech and Music Content" ;
+<http://ceur-ws.org/Vol-842/#crowdsearch-goto> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-842/> ;
+    ns7:title "PodCastle and Songle: Crowdsourcing-Based Web Services for Retrieval and Browsing of Speech and Music Content" ;
     ns2:endPage 41 ;
     ns2:numPages 6 ;
     ns2:section <http%3A//ceur-ws.org/Vol-842/%23Session4%3ACrowdsourcingforMultimediaApplications> ;
     ns2:startPage 36 ;
-    ns4:author <http://ceur-ws.org/Vol-842/#HiromasaiFujihara>,
+    ns6:author <http://ceur-ws.org/Vol-842/#HiromasaiFujihara>,
         <http://ceur-ws.org/Vol-842/#JuniOgata>,
         <http://ceur-ws.org/Vol-842/#KazuyoshiiYoshii>,
         <http://ceur-ws.org/Vol-842/#MasatakaiGoto>,
         <http://ceur-ws.org/Vol-842/#MatthiasiMauch>,
         <http://ceur-ws.org/Vol-842/#TomoyasuiNakano> .
 
-<http://ceur-ws.org/Vol-842/> a ns3:Proceedings ;
-    ns3:hasPart <http://ceur-ws.org/Vol-842/#crowdsearch-ameryahia>,
+<http://ceur-ws.org/Vol-842/> a ns4:Proceedings ;
+    ns4:hasPart <http://ceur-ws.org/Vol-842/#crowdsearch-ameryahia>,
         <http://ceur-ws.org/Vol-842/#crowdsearch-bozzon>,
         <http://ceur-ws.org/Vol-842/#crowdsearch-brambilla>,
         <http://ceur-ws.org/Vol-842/#crowdsearch-diaz>,
@@ -348,13 +348,13 @@
         <http://ceur-ws.org/Vol-842/#crowdsearch-paritosh>,
         <http://ceur-ws.org/Vol-842/#crowdsearch-simperl>,
         <http://ceur-ws.org/Vol-842/#crowdsearch-vliegendhart> ;
-    ns3:hasSession <http%3A//ceur-ws.org/Vol-842/%23Session1%3AInvitedtalks>,
+    ns4:hasSession <http%3A//ceur-ws.org/Vol-842/%23Session1%3AInvitedtalks>,
         <http%3A//ceur-ws.org/Vol-842/%23Session2%3ACrowdsearchingontextualandlinkeddata>,
         <http%3A//ceur-ws.org/Vol-842/%23Session3%3AMethodsandToolsforCrowdSearching>,
         <http%3A//ceur-ws.org/Vol-842/%23Session4%3ACrowdsourcingforMultimediaApplications> ;
     ns8:issued "2012-04-18T00:00:00+00:00"^^xsd:dateTime ;
     ns2:presentedAt <http://ceur-ws.org/Vol-842/#event> ;
-    ns4:editor <http://ceur-ws.org/Vol-842/#FaustoiGiunchiglia>,
+    ns6:editor <http://ceur-ws.org/Vol-842/#FaustoiGiunchiglia>,
         <http://ceur-ws.org/Vol-842/#PieroiFraternali>,
         <http://ceur-ws.org/Vol-842/#RicardoiBaeza-Yates>,
         <http://ceur-ws.org/Vol-842/#StefanoiCeri> .

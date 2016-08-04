@@ -1,34 +1,34 @@
-@prefix ns1: <http://purl.org/ontology/bibo/#> .
-@prefix ns2: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns3: <http://www.w3.org/2002/07/owl#> .
-@prefix ns4: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns1: <http://www.w3.org/2002/07/owl#> .
+@prefix ns2: <http://xmlns.com/foaf/0.1/> .
+@prefix ns3: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns4: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix ns5: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns6: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns7: <http://xmlns.com/foaf/0.1/> .
-@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns6: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns7: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns8: <http://purl.org/ontology/bibo/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <http://ceur-ws.org/Vol-659/> a ns5:Proceedings ;
-    ns8:issued "2010-10-26T00:00:00+00:00"^^xsd:dateTime ;
-    ns1:presentedAt <http://ceur-ws.org/Vol-659/#event> ;
-    ns6:editor <http://ceur-ws.org/Vol-659/#LyndoniNixon>,
+    ns4:issued "2010-10-26T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:presentedAt <http://ceur-ws.org/Vol-659/#event> ;
+    ns3:editor <http://ceur-ws.org/Vol-659/#LyndoniNixon>,
         <http://ceur-ws.org/Vol-659/#MicheleiMissikof>,
         <http://ceur-ws.org/Vol-659/#SergioiGusmaroli> .
 
-<http://ceur-ws.org/Vol-659/#LyndoniNixon> a ns7:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/LyndoniNixon> ;
-    ns7:name "Lyndon Nixon" .
+<http://ceur-ws.org/Vol-659/#LyndoniNixon> a ns2:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/LyndoniNixon> ;
+    ns2:name "Lyndon Nixon" .
 
-<http://ceur-ws.org/Vol-659/#MicheleiMissikof> a ns7:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/MicheleiMissikof> ;
-    ns7:name "Michele Missikof" .
+<http://ceur-ws.org/Vol-659/#MicheleiMissikof> a ns2:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/MicheleiMissikof> ;
+    ns2:name "Michele Missikof" .
 
-<http://ceur-ws.org/Vol-659/#SergioiGusmaroli> a ns7:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/SergioiGusmaroli> ;
-    ns7:name "Sergio Gusmaroli" .
+<http://ceur-ws.org/Vol-659/#SergioiGusmaroli> a ns2:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/SergioiGusmaroli> ;
+    ns2:name "Sergio Gusmaroli" .
 
 <http://ceur-ws.org/Vol-659/#event> a ns5:WorkshopEvent ;
     ns5:hasLocation <http://dbpedia.org/resource/Germany> ;
@@ -36,7 +36,7 @@
         <http://ceur-ws.org/Vol-659/#part-EU>,
         <http://ceur-ws.org/Vol-659/#part-IP> ;
     ns5:isSubEventOf <http://ceur-ws.org/Vol-659/#conf> ;
-    ns4:beginsAtDatetime "2010-09-01T00:00:00+00:00"^^xsd:dateTime ;
-    ns4:endsAtDatetime "2010-09-01T00:00:00+00:00"^^xsd:dateTime ;
-    ns2:license <http://choosealicense.com/licenses/no-license/> .
+    ns6:beginsAtDatetime "2010-09-01T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:endsAtDatetime "2010-09-01T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:license <http://choosealicense.com/licenses/no-license/> .
 

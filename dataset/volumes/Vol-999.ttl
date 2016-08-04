@@ -1,8 +1,8 @@
-@prefix ns1: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns2: <http://purl.org/ontology/bibo/#> .
+@prefix ns1: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns2: <http://data.semanticweb.org/ns/swc/ontology/#> .
 @prefix ns3: <http://xmlns.com/foaf/0.1/> .
-@prefix ns4: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns5: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns4: <http://purl.org/ontology/bibo/#> .
+@prefix ns5: <http://purl.org/dc/elements/1.1/#> .
 @prefix ns6: <http://www.w3.org/2002/07/owl#> .
 @prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
 @prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
@@ -62,8 +62,8 @@
     ns3:name "Giovanna Guerrini" .
 
 <http://ceur-ws.org/Vol-999/#GuiliniQi> a ns3:Person ;
-    ns2:place <http://dbpedia.org/resource/China> ;
-    ns4:affiliation "Southeast University" ;
+    ns4:place <http://dbpedia.org/resource/China> ;
+    ns1:affiliation "Southeast University" ;
     ns6:sameAs <http://ceur-ws.org/persons/GuiliniQi> ;
     ns3:name "Guilin Qi" .
 
@@ -93,8 +93,8 @@
     ns3:name "Maria Copeland" .
 
 <http://ceur-ws.org/Vol-999/#MatthewiHorridge> a ns3:Person ;
-    ns2:place <http://dbpedia.org/resource/United_States> ;
-    ns4:affiliation "Stanford University" ;
+    ns4:place <http://dbpedia.org/resource/United_States> ;
+    ns1:affiliation "Stanford University" ;
     ns6:sameAs <http://ceur-ws.org/persons/MatthewiHorridge> ;
     ns3:name "Matthew Horridge" .
 
@@ -148,21 +148,21 @@
     ns3:made <http://ceur-ws.org/Vol-999/#paper3> ;
     ns3:name "Zlatan Dragisic" .
 
-<http://ceur-ws.org/Vol-999/#event> a ns5:WorkshopEvent ;
-    ns5:hasLocation <http://dbpedia.org/resource/France> ;
-    ns5:hasPart <http://ceur-ws.org/Vol-999/#part-WoDOOM> ;
-    ns5:isSubEventOf <http://ceur-ws.org/Vol-999/#conf> ;
+<http://ceur-ws.org/Vol-999/#event> a ns2:WorkshopEvent ;
+    ns2:hasLocation <http://dbpedia.org/resource/France> ;
+    ns2:hasPart <http://ceur-ws.org/Vol-999/#part-WoDOOM> ;
+    ns2:isSubEventOf <http://ceur-ws.org/Vol-999/#conf> ;
     ns7:beginsAtDatetime "2013-05-27T00:00:00+00:00"^^xsd:dateTime ;
     ns7:endsAtDatetime "2013-05-27T00:00:00+00:00"^^xsd:dateTime ;
-    ns1:license <http://choosealicense.com/licenses/no-license/> .
+    ns5:license <http://choosealicense.com/licenses/no-license/> .
 
-<http%3A//ceur-ws.org/Vol-999/%23Invitedtalk> a ns5:SessionEvent ;
-    ns5:partOf <http://ceur-ws.org/Vol-999/> ;
-    ns1:title "Invited talk" .
+<http%3A//ceur-ws.org/Vol-999/%23Invitedtalk> a ns2:SessionEvent ;
+    ns2:partOf <http://ceur-ws.org/Vol-999/> ;
+    ns5:title "Invited talk" .
 
 <http://ceur-ws.org/Vol-999/#BijaniParsia> a ns3:Person ;
-    ns2:place <http://dbpedia.org/resource/United_Kingdom> ;
-    ns4:affiliation "University of Manchester" ;
+    ns4:place <http://dbpedia.org/resource/United_Kingdom> ;
+    ns1:affiliation "University of Manchester" ;
     ns6:sameAs <http://ceur-ws.org/persons/BijaniParsia> ;
     ns3:made <http://ceur-ws.org/Vol-999/#paper1> ;
     ns3:name "Bijan Parsia" .
@@ -174,106 +174,106 @@
     ns3:name "Ondrej Zamazal" .
 
 <http://ceur-ws.org/Vol-999/#PatrickiLambrix> a ns3:Person ;
-    ns2:place <http://dbpedia.org/resource/Sweden> ;
-    ns4:affiliation "Linköping University" ;
+    ns4:place <http://dbpedia.org/resource/Sweden> ;
+    ns1:affiliation "Linköping University" ;
     ns6:sameAs <http://ceur-ws.org/persons/PatrickiLambrix> ;
     ns3:made <http://ceur-ws.org/Vol-999/#paper3> ;
     ns3:name "Patrick Lambrix" .
 
-<http://ceur-ws.org/Vol-999/#invited> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-999/> ;
-    ns1:title "Debugging weighted ontologies" ;
-    ns2:endPage 8 ;
-    ns2:numPages 8 ;
-    ns2:section <http%3A//ceur-ws.org/Vol-999/%23Invitedtalk> ;
-    ns2:startPage 1 ;
-    ns4:author <http://ceur-ws.org/Vol-999/#HeineriStuckenschmidt> .
+<http://ceur-ws.org/Vol-999/#invited> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-999/> ;
+    ns5:title "Debugging weighted ontologies" ;
+    ns4:endPage 8 ;
+    ns4:numPages 8 ;
+    ns4:section <http%3A//ceur-ws.org/Vol-999/%23Invitedtalk> ;
+    ns4:startPage 1 ;
+    ns1:author <http://ceur-ws.org/Vol-999/#HeineriStuckenschmidt> .
 
-<http://ceur-ws.org/Vol-999/#paper4> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-999/> ;
-    ns1:title "Antipattern detection: how to debug an ontology without a reasoner" ;
-    ns2:endPage 56 ;
-    ns2:numPages 12 ;
-    ns2:section <http%3A//ceur-ws.org/Vol-999/%23Fullpapers> ;
-    ns2:startPage 45 ;
-    ns4:author <http://ceur-ws.org/Vol-999/#CatherineiRoussey>,
+<http://ceur-ws.org/Vol-999/#paper4> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-999/> ;
+    ns5:title "Antipattern detection: how to debug an ontology without a reasoner" ;
+    ns4:endPage 56 ;
+    ns4:numPages 12 ;
+    ns4:section <http%3A//ceur-ws.org/Vol-999/%23Fullpapers> ;
+    ns4:startPage 45 ;
+    ns1:author <http://ceur-ws.org/Vol-999/#CatherineiRoussey>,
         <http://ceur-ws.org/Vol-999/#OndrejiZamazal> .
 
-<http://ceur-ws.org/Vol-999/#paper5> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-999/> ;
-    ns1:title "Ontology adaptation upon updates" ;
-    ns2:endPage 68 ;
-    ns2:numPages 12 ;
-    ns2:section <http%3A//ceur-ws.org/Vol-999/%23Fullpapers> ;
-    ns2:startPage 57 ;
-    ns4:author <http://ceur-ws.org/Vol-999/#AlessandroiSolimando>,
+<http://ceur-ws.org/Vol-999/#paper5> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-999/> ;
+    ns5:title "Ontology adaptation upon updates" ;
+    ns4:endPage 68 ;
+    ns4:numPages 12 ;
+    ns4:section <http%3A//ceur-ws.org/Vol-999/%23Fullpapers> ;
+    ns4:startPage 57 ;
+    ns1:author <http://ceur-ws.org/Vol-999/#AlessandroiSolimando>,
         <http://ceur-ws.org/Vol-999/#GiovannaiGuerrini> .
 
-<http://ceur-ws.org/Vol-999/#paper6> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-999/> ;
-    ns1:title "Checking and repairing ontological naming patterns using ORE and PatOMat" ;
-    ns2:endPage 76 ;
-    ns2:numPages 8 ;
-    ns2:section <http%3A//ceur-ws.org/Vol-999/%23Fullpapers> ;
-    ns2:startPage 69 ;
-    ns4:author <http://ceur-ws.org/Vol-999/#LorenziBuhmann>,
+<http://ceur-ws.org/Vol-999/#paper6> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-999/> ;
+    ns5:title "Checking and repairing ontological naming patterns using ORE and PatOMat" ;
+    ns4:endPage 76 ;
+    ns4:numPages 8 ;
+    ns4:section <http%3A//ceur-ws.org/Vol-999/%23Fullpapers> ;
+    ns4:startPage 69 ;
+    ns1:author <http://ceur-ws.org/Vol-999/#LorenziBuhmann>,
         <http://ceur-ws.org/Vol-999/#OndrejiZamazal>,
         <http://ceur-ws.org/Vol-999/#VojtechiSvatek> .
 
-<http://ceur-ws.org/Vol-999/#paper3> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-999/> ;
-    ns1:title "Repairing missing is-a structure in ontologies is an abductive reasoning problem" ;
-    ns2:endPage 44 ;
-    ns2:numPages 12 ;
-    ns2:section <http%3A//ceur-ws.org/Vol-999/%23Fullpapers> ;
-    ns2:startPage 33 ;
-    ns4:author <http://ceur-ws.org/Vol-999/#FangiWei-Kleiner>,
+<http://ceur-ws.org/Vol-999/#paper3> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-999/> ;
+    ns5:title "Repairing missing is-a structure in ontologies is an abductive reasoning problem" ;
+    ns4:endPage 44 ;
+    ns4:numPages 12 ;
+    ns4:section <http%3A//ceur-ws.org/Vol-999/%23Fullpapers> ;
+    ns4:startPage 33 ;
+    ns1:author <http://ceur-ws.org/Vol-999/#FangiWei-Kleiner>,
         <http://ceur-ws.org/Vol-999/#PatrickiLambrix>,
         <http://ceur-ws.org/Vol-999/#ValentinaiIvanova>,
         <http://ceur-ws.org/Vol-999/#ZlataniDragisic> .
 
-<http://ceur-ws.org/Vol-999/#paper1> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-999/> ;
-    ns1:title "Finding fault: detecting issues in a versioned ontology" ;
-    ns2:endPage 20 ;
-    ns2:numPages 12 ;
-    ns2:section <http%3A//ceur-ws.org/Vol-999/%23Fullpapers> ;
-    ns2:startPage 9 ;
-    ns4:author <http://ceur-ws.org/Vol-999/#BijaniParsia>,
+<http://ceur-ws.org/Vol-999/#paper1> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-999/> ;
+    ns5:title "Finding fault: detecting issues in a versioned ontology" ;
+    ns4:endPage 20 ;
+    ns4:numPages 12 ;
+    ns4:section <http%3A//ceur-ws.org/Vol-999/%23Fullpapers> ;
+    ns4:startPage 9 ;
+    ns1:author <http://ceur-ws.org/Vol-999/#BijaniParsia>,
         <http://ceur-ws.org/Vol-999/#MariaiCopeland>,
         <http://ceur-ws.org/Vol-999/#RafaeliS.iGoncalves>,
         <http://ceur-ws.org/Vol-999/#RobertiStevens>,
         <http://ceur-ws.org/Vol-999/#UliiSattler> .
 
-<http%3A//ceur-ws.org/Vol-999/%23Fullpapers> a ns5:SessionEvent ;
-    ns5:partOf <http://ceur-ws.org/Vol-999/> ;
-    ns1:title "Full papers" .
+<http%3A//ceur-ws.org/Vol-999/%23Fullpapers> a ns2:SessionEvent ;
+    ns2:partOf <http://ceur-ws.org/Vol-999/> ;
+    ns5:title "Full papers" .
 
-<http://ceur-ws.org/Vol-999/> a ns5:Proceedings ;
-    ns5:hasPart <http://ceur-ws.org/Vol-999/#invited>,
+<http://ceur-ws.org/Vol-999/> a ns2:Proceedings ;
+    ns2:hasPart <http://ceur-ws.org/Vol-999/#invited>,
         <http://ceur-ws.org/Vol-999/#paper1>,
         <http://ceur-ws.org/Vol-999/#paper2>,
         <http://ceur-ws.org/Vol-999/#paper3>,
         <http://ceur-ws.org/Vol-999/#paper4>,
         <http://ceur-ws.org/Vol-999/#paper5>,
         <http://ceur-ws.org/Vol-999/#paper6> ;
-    ns5:hasSession <http%3A//ceur-ws.org/Vol-999/%23Fullpapers>,
+    ns2:hasSession <http%3A//ceur-ws.org/Vol-999/%23Fullpapers>,
         <http%3A//ceur-ws.org/Vol-999/%23Invitedtalk> ;
     ns8:issued "2013-06-12T00:00:00+00:00"^^xsd:dateTime ;
-    ns2:presentedAt <http://ceur-ws.org/Vol-999/#event> ;
-    ns4:editor <http://ceur-ws.org/Vol-999/#BijaniParsia>,
+    ns4:presentedAt <http://ceur-ws.org/Vol-999/#event> ;
+    ns1:editor <http://ceur-ws.org/Vol-999/#BijaniParsia>,
         <http://ceur-ws.org/Vol-999/#GuiliniQi>,
         <http://ceur-ws.org/Vol-999/#MatthewiHorridge>,
         <http://ceur-ws.org/Vol-999/#PatrickiLambrix> .
 
-<http://ceur-ws.org/Vol-999/#paper2> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-999/> ;
-    ns1:title "Optique System: towards ontology and mapping management in OBDA solutions" ;
-    ns2:endPage 32 ;
-    ns2:numPages 12 ;
-    ns2:section <http%3A//ceur-ws.org/Vol-999/%23Fullpapers> ;
-    ns2:startPage 21 ;
-    ns4:author <http://ceur-ws.org/Vol-999/#AhmetiSoylu>,
+<http://ceur-ws.org/Vol-999/#paper2> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-999/> ;
+    ns5:title "Optique System: towards ontology and mapping management in OBDA solutions" ;
+    ns4:endPage 32 ;
+    ns4:numPages 12 ;
+    ns4:section <http%3A//ceur-ws.org/Vol-999/%23Fullpapers> ;
+    ns4:startPage 21 ;
+    ns1:author <http://ceur-ws.org/Vol-999/#AhmetiSoylu>,
         <http://ceur-ws.org/Vol-999/#ChristophiPinkel>,
         <http://ceur-ws.org/Vol-999/#DagiHovland>,
         <http://ceur-ws.org/Vol-999/#DmitriyiZheleznyakov>,

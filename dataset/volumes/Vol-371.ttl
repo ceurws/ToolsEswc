@@ -1,31 +1,31 @@
-@prefix ns1: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns2: <http://www.w3.org/2002/07/owl#> .
+@prefix ns1: <http://www.w3.org/2002/07/owl#> .
+@prefix ns2: <http://data.semanticweb.org/ns/swc/ontology/#> .
 @prefix ns3: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns4: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns5: <http://purl.org/ontology/bibo/#> .
-@prefix ns6: <http://xmlns.com/foaf/0.1/> .
-@prefix ns7: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns4: <http://purl.org/ontology/bibo/#> .
+@prefix ns5: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns6: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns7: <http://xmlns.com/foaf/0.1/> .
+@prefix ns8: <http://purl.org/dc/elements/1.1/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-371/> a ns4:Proceedings ;
-    ns1:issued "2008-08-11T00:00:00+00:00"^^xsd:dateTime ;
-    ns5:presentedAt <http://ceur-ws.org/Vol-371/#event> ;
+<http://ceur-ws.org/Vol-371/> a ns2:Proceedings ;
+    ns6:issued "2008-08-11T00:00:00+00:00"^^xsd:dateTime ;
+    ns4:presentedAt <http://ceur-ws.org/Vol-371/#event> ;
     ns3:editor <http://ceur-ws.org/Vol-371/#GabrieleiLenziniBobiHulseboschSanttuiToivonenandiJean-MarciSeigneur> .
 
-<http://ceur-ws.org/Vol-371/#GabrieleiLenziniBobiHulseboschSanttuiToivonenandiJean-MarciSeigneur> a ns6:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/GabrieleiLenziniBobiHulseboschSanttuiToivonenandiJean-MarciSeigneur> ;
-    ns6:name "Gabriele LenziniBob HulseboschSanttu Toivonenand Jean-Marc Seigneur" .
+<http://ceur-ws.org/Vol-371/#GabrieleiLenziniBobiHulseboschSanttuiToivonenandiJean-MarciSeigneur> a ns7:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/GabrieleiLenziniBobiHulseboschSanttuiToivonenandiJean-MarciSeigneur> ;
+    ns7:name "Gabriele LenziniBob HulseboschSanttu Toivonenand Jean-Marc Seigneur" .
 
-<http://ceur-ws.org/Vol-371/#event> a ns4:WorkshopEvent ;
-    ns4:hasLocation <http://dbpedia.org/resource/Norway> ;
-    ns4:hasPart <http://ceur-ws.org/Vol-371/#part-CAT> ;
-    ns4:isSubEventOf <http://ceur-ws.org/Vol-371/#conf> ;
-    ns8:beginsAtDatetime "2008-06-16T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:endsAtDatetime "2008-06-16T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:license <http://choosealicense.com/licenses/no-license/> ;
+<http://ceur-ws.org/Vol-371/#event> a ns2:WorkshopEvent ;
+    ns2:hasLocation <http://dbpedia.org/resource/Norway> ;
+    ns2:hasPart <http://ceur-ws.org/Vol-371/#part-CAT> ;
+    ns2:isSubEventOf <http://ceur-ws.org/Vol-371/#conf> ;
+    ns5:beginsAtDatetime "2008-06-16T00:00:00+00:00"^^xsd:dateTime ;
+    ns5:endsAtDatetime "2008-06-16T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:license <http://choosealicense.com/licenses/no-license/> ;
     rdfs:seeAlso <http://ceur-ws.org/Vol-269/#event> .
 

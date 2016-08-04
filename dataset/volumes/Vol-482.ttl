@@ -1,11 +1,11 @@
 @prefix ns1: <http://xmlns.com/foaf/0.1/> .
-@prefix ns2: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns2: <http://data.semanticweb.org/ns/swc/ontology/#> .
 @prefix ns3: <http://www.w3.org/2002/07/owl#> .
-@prefix ns4: <http://purl.org/ontology/bibo/#> .
-@prefix ns5: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns6: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns7: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns4: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns5: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns6: <http://purl.org/ontology/bibo/#> .
+@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -96,98 +96,98 @@
     ns1:made <http://ceur-ws.org/Vol-482/#Paper_4> ;
     ns1:name "Xenogene Gray" .
 
-<http://ceur-ws.org/Vol-482/#event> a ns6:WorkshopEvent ;
-    ns6:hasLocation <http://dbpedia.org/resource/Spain> ;
-    ns6:hasPart <http://ceur-ws.org/Vol-482/#part-LDSS> ;
-    ns6:isSubEventOf <http://ceur-ws.org/Vol-482/#conf> ;
-    ns2:beginsAtDatetime "2009-06-12T00:00:00+00:00"^^xsd:dateTime ;
-    ns2:endsAtDatetime "2009-06-12T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:license <http://choosealicense.com/licenses/no-license/> .
+<http://ceur-ws.org/Vol-482/#event> a ns2:WorkshopEvent ;
+    ns2:hasLocation <http://dbpedia.org/resource/Spain> ;
+    ns2:hasPart <http://ceur-ws.org/Vol-482/#part-LDSS> ;
+    ns2:isSubEventOf <http://ceur-ws.org/Vol-482/#conf> ;
+    ns8:beginsAtDatetime "2009-06-12T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:endsAtDatetime "2009-06-12T00:00:00+00:00"^^xsd:dateTime ;
+    ns5:license <http://choosealicense.com/licenses/no-license/> .
 
 <http://ceur-ws.org/Vol-482/#JohniZeleznikow> a ns1:Person ;
-    ns5:affiliation "" ;
+    ns4:affiliation "" ;
     ns3:sameAs <http://ceur-ws.org/persons/JohniZeleznikow> ;
     ns1:made <http://ceur-ws.org/Vol-482/#Paper_4> ;
     ns1:name "John Zeleznikow" .
 
 <http://ceur-ws.org/Vol-482/#MartaiPoblet> a ns1:Person ;
-    ns5:affiliation "" ;
+    ns4:affiliation "" ;
     ns3:sameAs <http://ceur-ws.org/persons/MartaiPoblet> ;
     ns1:made <http://ceur-ws.org/Vol-482/#Paper_3> ;
     ns1:name "Marta Poblet" .
 
-<http://ceur-ws.org/Vol-482/#Paper_5> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-482/> ;
-    ns7:title "Software Developed for Use in Family Mediation - AssetDivider" ;
-    ns4:section <http%3A//ceur-ws.org/Vol-482/%23CompleteproceedingsForeword> ;
-    ns5:author <http://ceur-ws.org/Vol-482/#EmiliaiBellucci> .
+<http://ceur-ws.org/Vol-482/#Paper_5> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-482/> ;
+    ns5:title "Software Developed for Use in Family Mediation - AssetDivider" ;
+    ns6:section <http%3A//ceur-ws.org/Vol-482/%23CompleteproceedingsForeword> ;
+    ns4:author <http://ceur-ws.org/Vol-482/#EmiliaiBellucci> .
 
-<http://ceur-ws.org/Vol-482/#UriiSchild> a ns1:Person ;
-    ns5:affiliation "" ;
-    ns3:sameAs <http://ceur-ws.org/persons/UriiSchild> ;
+<http://ceur-ws.org/Vol-482/#UriiJ.iSchild> a ns1:Person ;
+    ns4:affiliation "" ;
+    ns3:sameAs <http://ceur-ws.org/persons/UriiJ.iSchild> ;
     ns1:made <http://ceur-ws.org/Vol-482/#Paper_1> ;
-    ns1:name "Uri Schild" .
+    ns1:name "Uri J. Schild" .
 
-<http://ceur-ws.org/Vol-482/#Paper_1> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-482/> ;
-    ns7:title "Intelligent Evaluation of Traffic Offender Records" ;
-    ns4:section <http%3A//ceur-ws.org/Vol-482/%23CompleteproceedingsForeword> ;
-    ns5:author <http://ceur-ws.org/Vol-482/#RuthiKannai>,
-        <http://ceur-ws.org/Vol-482/#UriiSchild> .
+<http://ceur-ws.org/Vol-482/#Paper_1> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-482/> ;
+    ns5:title "Intelligent Evaluation of Traffic Offender Records" ;
+    ns6:section <http%3A//ceur-ws.org/Vol-482/%23CompleteproceedingsForeword> ;
+    ns4:author <http://ceur-ws.org/Vol-482/#RuthiKannai>,
+        <http://ceur-ws.org/Vol-482/#UriiJ.iSchild> .
 
-<http://ceur-ws.org/Vol-482/#Paper_6> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-482/> ;
-    ns7:title "Towards a Platform for Online Mediation" ;
-    ns4:section <http%3A//ceur-ws.org/Vol-482/%23CompleteproceedingsForeword> ;
-    ns5:author <http://ceur-ws.org/Vol-482/#CarlosiL%C3%B3pez>,
+<http://ceur-ws.org/Vol-482/#Paper_6> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-482/> ;
+    ns5:title "Towards a Platform for Online Mediation" ;
+    ns6:section <http%3A//ceur-ws.org/Vol-482/%23CompleteproceedingsForeword> ;
+    ns4:author <http://ceur-ws.org/Vol-482/#CarlosiL%C3%B3pez>,
         <http://ceur-ws.org/Vol-482/#PabloiNoriega> .
 
-<http://ceur-ws.org/Vol-482/#Paper_7> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-482/> ;
-    ns7:title "Advisory System for the Agricultural Tax Law" ;
-    ns4:section <http%3A//ceur-ws.org/Vol-482/%23CompleteproceedingsForeword> ;
-    ns5:author <http://ceur-ws.org/Vol-482/#EmiliKruk>,
+<http://ceur-ws.org/Vol-482/#Paper_7> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-482/> ;
+    ns5:title "Advisory System for the Agricultural Tax Law" ;
+    ns6:section <http%3A//ceur-ws.org/Vol-482/%23CompleteproceedingsForeword> ;
+    ns4:author <http://ceur-ws.org/Vol-482/#EmiliKruk>,
         <http://ceur-ws.org/Vol-482/#TomasziZurek> .
 
-<http://ceur-ws.org/Vol-482/#Paper_3> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-482/> ;
-    ns7:title "Linking the Semantic Web to ODR: the Ontomedia project" ;
-    ns4:section <http%3A//ceur-ws.org/Vol-482/%23CompleteproceedingsForeword> ;
-    ns5:author <http://ceur-ws.org/Vol-482/#Jos%C3%A9iManueliL%C3%B3peziCobo>,
+<http://ceur-ws.org/Vol-482/#Paper_3> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-482/> ;
+    ns5:title "Linking the Semantic Web to ODR: the Ontomedia project" ;
+    ns6:section <http%3A//ceur-ws.org/Vol-482/%23CompleteproceedingsForeword> ;
+    ns4:author <http://ceur-ws.org/Vol-482/#Jos%C3%A9iManueliL%C3%B3peziCobo>,
         <http://ceur-ws.org/Vol-482/#MartaiPoblet>,
         <http://ceur-ws.org/Vol-482/#PompeuiCasanovas> .
 
-<http://ceur-ws.org/Vol-482/#Paper_4> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-482/> ;
-    ns7:title "Intelligent Negotiation Technology" ;
-    ns4:section <http%3A//ceur-ws.org/Vol-482/%23CompleteproceedingsForeword> ;
-    ns5:author <http://ceur-ws.org/Vol-482/#JohniZeleznikow>,
+<http://ceur-ws.org/Vol-482/#Paper_4> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-482/> ;
+    ns5:title "Intelligent Negotiation Technology" ;
+    ns6:section <http%3A//ceur-ws.org/Vol-482/%23CompleteproceedingsForeword> ;
+    ns4:author <http://ceur-ws.org/Vol-482/#JohniZeleznikow>,
         <http://ceur-ws.org/Vol-482/#PamelaiN.iGray>,
         <http://ceur-ws.org/Vol-482/#XenogeneiGray> .
 
-<http://ceur-ws.org/Vol-482/#Paper_8> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-482/> ;
-    ns7:title "Environmental, Social and Normative Networks in the MAELIA Platform" ;
-    ns4:section <http%3A//ceur-ws.org/Vol-482/%23CompleteproceedingsForeword> ;
-    ns5:author <http://ceur-ws.org/Vol-482/#BertrandiJouve>,
+<http://ceur-ws.org/Vol-482/#Paper_8> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-482/> ;
+    ns5:title "Environmental, Social and Normative Networks in the MAELIA Platform" ;
+    ns6:section <http%3A//ceur-ws.org/Vol-482/%23CompleteproceedingsForeword> ;
+    ns4:author <http://ceur-ws.org/Vol-482/#BertrandiJouve>,
         <http://ceur-ws.org/Vol-482/#PierreiMazzega>,
         <http://ceur-ws.org/Vol-482/#RomainiBoulet> .
 
-<http://ceur-ws.org/Vol-482/#Paper_2> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-482/> ;
-    ns7:title "From Real-World Regulations to Concrete Norms for Software Agents: A Case-Based Reasoning Approach" ;
-    ns4:section <http%3A//ceur-ws.org/Vol-482/%23CompleteproceedingsForeword> ;
-    ns5:author <http://ceur-ws.org/Vol-482/#FranciscoiAndrade>,
+<http://ceur-ws.org/Vol-482/#Paper_2> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-482/> ;
+    ns5:title "From Real-World Regulations to Concrete Norms for Software Agents: A Case-Based Reasoning Approach" ;
+    ns6:section <http%3A//ceur-ws.org/Vol-482/%23CompleteproceedingsForeword> ;
+    ns4:author <http://ceur-ws.org/Vol-482/#FranciscoiAndrade>,
         <http://ceur-ws.org/Vol-482/#PauloiNovais>,
         <http://ceur-ws.org/Vol-482/#TinaiBalke>,
         <http://ceur-ws.org/Vol-482/#TorsteniEymann> .
 
-<http%3A//ceur-ws.org/Vol-482/%23CompleteproceedingsForeword> a ns6:SessionEvent ;
-    ns6:partOf <http://ceur-ws.org/Vol-482/> ;
-    ns7:title "Complete proceedings Foreword" .
+<http%3A//ceur-ws.org/Vol-482/%23CompleteproceedingsForeword> a ns2:SessionEvent ;
+    ns2:partOf <http://ceur-ws.org/Vol-482/> ;
+    ns5:title "Complete proceedings Foreword" .
 
-<http://ceur-ws.org/Vol-482/> a ns6:Proceedings ;
-    ns6:hasPart <http://ceur-ws.org/Vol-482/#Paper_1>,
+<http://ceur-ws.org/Vol-482/> a ns2:Proceedings ;
+    ns2:hasPart <http://ceur-ws.org/Vol-482/#Paper_1>,
         <http://ceur-ws.org/Vol-482/#Paper_2>,
         <http://ceur-ws.org/Vol-482/#Paper_3>,
         <http://ceur-ws.org/Vol-482/#Paper_4>,
@@ -195,10 +195,10 @@
         <http://ceur-ws.org/Vol-482/#Paper_6>,
         <http://ceur-ws.org/Vol-482/#Paper_7>,
         <http://ceur-ws.org/Vol-482/#Paper_8> ;
-    ns6:hasSession <http%3A//ceur-ws.org/Vol-482/%23CompleteproceedingsForeword> ;
-    ns8:issued "2009-07-20T00:00:00+00:00"^^xsd:dateTime ;
-    ns4:presentedAt <http://ceur-ws.org/Vol-482/#event> ;
-    ns5:editor <http://ceur-ws.org/Vol-482/#JohniZeleznikow>,
+    ns2:hasSession <http%3A//ceur-ws.org/Vol-482/%23CompleteproceedingsForeword> ;
+    ns7:issued "2009-07-20T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:presentedAt <http://ceur-ws.org/Vol-482/#event> ;
+    ns4:editor <http://ceur-ws.org/Vol-482/#JohniZeleznikow>,
         <http://ceur-ws.org/Vol-482/#MartaiPoblet>,
-        <http://ceur-ws.org/Vol-482/#UriiSchild> .
+        <http://ceur-ws.org/Vol-482/#UriiJ.iSchild> .
 

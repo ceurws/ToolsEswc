@@ -1,11 +1,11 @@
 @prefix ns1: <http://xmlns.com/foaf/0.1/> .
 @prefix ns2: <http://swrc.ontoware.org/ontology/#> .
 @prefix ns3: <http://www.w3.org/2002/07/owl#> .
-@prefix ns4: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns5: <http://purl.org/ontology/bibo/#> .
-@prefix ns6: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns7: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns4: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns5: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns6: <http://purl.org/ontology/bibo/#> .
+@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -171,14 +171,14 @@
     ns1:made <http://ceur-ws.org/Vol-796/#owled2011_submission_10> ;
     ns1:name "Wesley Saunders" .
 
-<http://ceur-ws.org/Vol-796/#event> a ns6:WorkshopEvent ;
-    ns6:hasLocation <http://dbpedia.org/resource/United_States> ;
-    ns6:hasPart <http://ceur-ws.org/Vol-796/#part-OWL>,
+<http://ceur-ws.org/Vol-796/#event> a ns4:WorkshopEvent ;
+    ns4:hasLocation <http://dbpedia.org/resource/United_States> ;
+    ns4:hasPart <http://ceur-ws.org/Vol-796/#part-OWL>,
         <http://ceur-ws.org/Vol-796/#part-OWLED> ;
-    ns6:isSubEventOf <http://ceur-ws.org/Vol-796/#conf> ;
-    ns8:beginsAtDatetime "2011-06-05T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:endsAtDatetime "2011-06-06T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:license <http://choosealicense.com/licenses/no-license/> ;
+    ns4:isSubEventOf <http://ceur-ws.org/Vol-796/#conf> ;
+    ns7:beginsAtDatetime "2011-06-05T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:endsAtDatetime "2011-06-06T00:00:00+00:00"^^xsd:dateTime ;
+    ns5:license <http://choosealicense.com/licenses/no-license/> ;
     rdfs:seeAlso <http://ceur-ws.org/Vol-188/#event>,
         <http://ceur-ws.org/Vol-216/#event>,
         <http://ceur-ws.org/Vol-258/#event>,
@@ -187,9 +187,9 @@
         <http://ceur-ws.org/Vol-529/#event>,
         <http://ceur-ws.org/Vol-614/#event> .
 
-<http%3A//ceur-ws.org/Vol-796/%23ShortPapers> a ns6:SessionEvent ;
-    ns6:partOf <http://ceur-ws.org/Vol-796/> ;
-    ns7:title "Short Papers" .
+<http%3A//ceur-ws.org/Vol-796/%23ShortPapers> a ns4:SessionEvent ;
+    ns4:partOf <http://ceur-ws.org/Vol-796/> ;
+    ns5:title "Short Papers" .
 
 <http://ceur-ws.org/Vol-796/#JannaiHastings> a ns1:Person ;
     ns3:sameAs <http://ceur-ws.org/persons/JannaiHastings> ;
@@ -209,111 +209,111 @@
         <http://ceur-ws.org/Vol-796/#owled2011_submission_6> ;
     ns1:name "Stefan Schulz" .
 
-<http://ceur-ws.org/Vol-796/#owled2011_submission_15> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-796/> ;
-    ns7:title "Posh - The Prolog OWL Shell" ;
-    ns5:section <http%3A//ceur-ws.org/Vol-796/%23ApplicationNotes> ;
+<http://ceur-ws.org/Vol-796/#owled2011_submission_15> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-796/> ;
+    ns5:title "Posh - The Prolog OWL Shell" ;
+    ns6:section <http%3A//ceur-ws.org/Vol-796/%23ApplicationNotes> ;
     ns2:author <http://ceur-ws.org/Vol-796/#ChrisiMungall> .
 
-<http%3A//ceur-ws.org/Vol-796/%23FlashTalks> a ns6:SessionEvent ;
-    ns6:partOf <http://ceur-ws.org/Vol-796/> ;
-    ns7:title "Flash Talks" .
+<http%3A//ceur-ws.org/Vol-796/%23FlashTalks> a ns4:SessionEvent ;
+    ns4:partOf <http://ceur-ws.org/Vol-796/> ;
+    ns5:title "Flash Talks" .
 
-<http://ceur-ws.org/Vol-796/#owled2011_submission_3> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-796/> ;
-    ns7:title "Implementing OWL 2 RL and OWL 2 QL Rule-Sets for OWLIM" ;
-    ns5:section <http%3A//ceur-ws.org/Vol-796/%23LongPapers> ;
+<http://ceur-ws.org/Vol-796/#owled2011_submission_3> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-796/> ;
+    ns5:title "Implementing OWL 2 RL and OWL 2 QL Rule-Sets for OWLIM" ;
+    ns6:section <http%3A//ceur-ws.org/Vol-796/%23LongPapers> ;
     ns2:author <http://ceur-ws.org/Vol-796/#BarryiBishop>,
         <http://ceur-ws.org/Vol-796/#SpasiBojanov> .
 
-<http%3A//ceur-ws.org/Vol-796/%23ApplicationNotes> a ns6:SessionEvent ;
-    ns6:partOf <http://ceur-ws.org/Vol-796/> ;
-    ns7:title "Application Notes" .
+<http%3A//ceur-ws.org/Vol-796/%23ApplicationNotes> a ns4:SessionEvent ;
+    ns4:partOf <http://ceur-ws.org/Vol-796/> ;
+    ns5:title "Application Notes" .
 
-<http://ceur-ws.org/Vol-796/#owled2011_submission_10> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-796/> ;
-    ns7:title "Protege Extensions for Scientist-Oriented Modeling of Observation and Measurement Semantics" ;
-    ns5:section <http%3A//ceur-ws.org/Vol-796/%23ApplicationNotes> ;
+<http://ceur-ws.org/Vol-796/#owled2011_submission_10> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-796/> ;
+    ns5:title "Protege Extensions for Scientist-Oriented Modeling of Observation and Measurement Semantics" ;
+    ns6:section <http%3A//ceur-ws.org/Vol-796/%23ApplicationNotes> ;
     ns2:author <http://ceur-ws.org/Vol-796/#MargaretiO%27Brien>,
         <http://ceur-ws.org/Vol-796/#ShawniBowers>,
         <http://ceur-ws.org/Vol-796/#WesleyiSaunders> .
 
-<http://ceur-ws.org/Vol-796/#owled2011_submission_12> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-796/> ;
-    ns7:title "Chemical Hazard Estimation and Method Comparison with OWL-Encoded Toxicity Decision Trees" ;
-    ns5:section <http%3A//ceur-ws.org/Vol-796/%23LongPapers> ;
+<http://ceur-ws.org/Vol-796/#owled2011_submission_12> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-796/> ;
+    ns5:title "Chemical Hazard Estimation and Method Comparison with OWL-Encoded Toxicity Decision Trees" ;
+    ns6:section <http%3A//ceur-ws.org/Vol-796/%23LongPapers> ;
     ns2:author <http://ceur-ws.org/Vol-796/#DanaiKlassen>,
         <http://ceur-ws.org/Vol-796/#LeonidiL.iChepelev>,
         <http://ceur-ws.org/Vol-796/#MicheliDumontier> .
 
-<http://ceur-ws.org/Vol-796/#owled2011_submission_4> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-796/> ;
-    ns7:title "Answering Queries over OWL Ontologies with SPARQL" ;
-    ns5:section <http%3A//ceur-ws.org/Vol-796/%23LongPapers> ;
+<http://ceur-ws.org/Vol-796/#owled2011_submission_4> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-796/> ;
+    ns5:title "Answering Queries over OWL Ontologies with SPARQL" ;
+    ns6:section <http%3A//ceur-ws.org/Vol-796/%23LongPapers> ;
     ns2:author <http://ceur-ws.org/Vol-796/#BirteiGlimm>,
         <http://ceur-ws.org/Vol-796/#IaniHorrocks>,
         <http://ceur-ws.org/Vol-796/#IliannaiKollia> .
 
-<http://ceur-ws.org/Vol-796/#owled2011_submission_5> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-796/> ;
-    ns7:title "OWL2 based Data Cleansing Using Conditional Exclusion Dependencies" ;
-    ns5:section <http%3A//ceur-ws.org/Vol-796/%23FlashTalks> ;
+<http://ceur-ws.org/Vol-796/#owled2011_submission_5> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-796/> ;
+    ns5:title "OWL2 based Data Cleansing Using Conditional Exclusion Dependencies" ;
+    ns6:section <http%3A//ceur-ws.org/Vol-796/%23FlashTalks> ;
     ns2:author <http://ceur-ws.org/Vol-796/#ChaniLeiDuc>,
         <http://ceur-ws.org/Vol-796/#MyriamiLamolle>,
         <http://ceur-ws.org/Vol-796/#OlivieriCur%C3%A9> .
 
-<http://ceur-ws.org/Vol-796/#owled2011_submission_16> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-796/> ;
-    ns7:title "A T-Box Generator for Testing Scalability of OWL Mereotopological Patterns" ;
-    ns5:section <http%3A//ceur-ws.org/Vol-796/%23LongPapers> ;
+<http://ceur-ws.org/Vol-796/#owled2011_submission_16> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-796/> ;
+    ns5:title "A T-Box Generator for Testing Scalability of OWL Mereotopological Patterns" ;
+    ns6:section <http%3A//ceur-ws.org/Vol-796/%23LongPapers> ;
     ns2:author <http://ceur-ws.org/Vol-796/#DanieliSchober>,
         <http://ceur-ws.org/Vol-796/#JannaiHastings>,
         <http://ceur-ws.org/Vol-796/#MartiniBoeker>,
         <http://ceur-ws.org/Vol-796/#StefaniSchulz> .
 
-<http://ceur-ws.org/Vol-796/#owled2011_submission_6> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-796/> ;
-    ns7:title "Modelling Threshold Phenomena in OWL: Metabolite Concentrations as Evidence For Disorders" ;
-    ns5:section <http%3A//ceur-ws.org/Vol-796/%23LongPapers> ;
+<http://ceur-ws.org/Vol-796/#owled2011_submission_6> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-796/> ;
+    ns5:title "Modelling Threshold Phenomena in OWL: Metabolite Concentrations as Evidence For Disorders" ;
+    ns6:section <http%3A//ceur-ws.org/Vol-796/%23LongPapers> ;
     ns2:author <http://ceur-ws.org/Vol-796/#ChristophiSteinbeck>,
         <http://ceur-ws.org/Vol-796/#JannaiHastings>,
         <http://ceur-ws.org/Vol-796/#LudgeriJansen>,
         <http://ceur-ws.org/Vol-796/#StefaniSchulz> .
 
-<http://ceur-ws.org/Vol-796/#owled2011_submission_7> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-796/> ;
-    ns7:title "Advanced Ontology Visualization with OWLGrEd" ;
-    ns5:section <http%3A//ceur-ws.org/Vol-796/%23ApplicationNotes> ;
+<http://ceur-ws.org/Vol-796/#owled2011_submission_7> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-796/> ;
+    ns5:title "Advanced Ontology Visualization with OWLGrEd" ;
+    ns6:section <http%3A//ceur-ws.org/Vol-796/%23ApplicationNotes> ;
     ns2:author <http://ceur-ws.org/Vol-796/#ArtursiSprogis>,
         <http://ceur-ws.org/Vol-796/#JanisiBarzdins>,
         <http://ceur-ws.org/Vol-796/#KarlisiCerans>,
         <http://ceur-ws.org/Vol-796/#RenarsiLiepins> .
 
-<http://ceur-ws.org/Vol-796/#owled2011_submission_8> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-796/> ;
-    ns7:title "Representation of Parsimonious Covering Theory in OWL-DL" ;
-    ns5:section <http%3A//ceur-ws.org/Vol-796/%23ShortPapers> ;
+<http://ceur-ws.org/Vol-796/#owled2011_submission_8> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-796/> ;
+    ns5:title "Representation of Parsimonious Covering Theory in OWL-DL" ;
+    ns6:section <http%3A//ceur-ws.org/Vol-796/%23ShortPapers> ;
     ns2:author <http://ceur-ws.org/Vol-796/#AmitiSheth>,
         <http://ceur-ws.org/Vol-796/#CoryiHenson>,
         <http://ceur-ws.org/Vol-796/#KrishnaprasadiThirunarayan>,
         <http://ceur-ws.org/Vol-796/#PascaliHitzler> .
 
-<http%3A//ceur-ws.org/Vol-796/%23LongPapers> a ns6:SessionEvent ;
-    ns6:partOf <http://ceur-ws.org/Vol-796/> ;
-    ns7:title "Long Papers" .
+<http%3A//ceur-ws.org/Vol-796/%23LongPapers> a ns4:SessionEvent ;
+    ns4:partOf <http://ceur-ws.org/Vol-796/> ;
+    ns5:title "Long Papers" .
 
-<http://ceur-ws.org/Vol-796/#owled2011_submission_9> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-796/> ;
-    ns7:title "Choosing Between Axioms, Rules and Queries: Experiments in Semantic Integration Techniques" ;
-    ns5:section <http%3A//ceur-ws.org/Vol-796/%23FlashTalks> ;
+<http://ceur-ws.org/Vol-796/#owled2011_submission_9> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-796/> ;
+    ns5:title "Choosing Between Axioms, Rules and Queries: Experiments in Semantic Integration Techniques" ;
+    ns6:section <http%3A//ceur-ws.org/Vol-796/%23FlashTalks> ;
     ns2:author <http://ceur-ws.org/Vol-796/#AidaniBoran>,
         <http://ceur-ws.org/Vol-796/#ChristopheriMatheus>,
         <http://ceur-ws.org/Vol-796/#IvaniBedini>,
         <http://ceur-ws.org/Vol-796/#JohniKeeney>,
         <http://ceur-ws.org/Vol-796/#PeteriPatel-Schneider> .
 
-<http://ceur-ws.org/Vol-796/> a ns6:Proceedings ;
-    ns6:hasPart <http://ceur-ws.org/Vol-796/#owled2011_submission_10>,
+<http://ceur-ws.org/Vol-796/> a ns4:Proceedings ;
+    ns4:hasPart <http://ceur-ws.org/Vol-796/#owled2011_submission_10>,
         <http://ceur-ws.org/Vol-796/#owled2011_submission_12>,
         <http://ceur-ws.org/Vol-796/#owled2011_submission_15>,
         <http://ceur-ws.org/Vol-796/#owled2011_submission_16>,
@@ -324,12 +324,12 @@
         <http://ceur-ws.org/Vol-796/#owled2011_submission_7>,
         <http://ceur-ws.org/Vol-796/#owled2011_submission_8>,
         <http://ceur-ws.org/Vol-796/#owled2011_submission_9> ;
-    ns6:hasSession <http%3A//ceur-ws.org/Vol-796/%23ApplicationNotes>,
+    ns4:hasSession <http%3A//ceur-ws.org/Vol-796/%23ApplicationNotes>,
         <http%3A//ceur-ws.org/Vol-796/%23FlashTalks>,
         <http%3A//ceur-ws.org/Vol-796/%23LongPapers>,
         <http%3A//ceur-ws.org/Vol-796/%23ShortPapers> ;
-    ns4:issued "2011-10-22T00:00:00+00:00"^^xsd:dateTime ;
-    ns5:presentedAt <http://ceur-ws.org/Vol-796/#event> ;
+    ns8:issued "2011-10-22T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:presentedAt <http://ceur-ws.org/Vol-796/#event> ;
     ns2:editor <http://ceur-ws.org/Vol-796/#MelanieiCourtot>,
         <http://ceur-ws.org/Vol-796/#MicheliDumontier> .
 

@@ -1,20 +1,20 @@
-@prefix ns1: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns1: <http://purl.org/NET/c4dm/timeline.owl#> .
 @prefix ns2: <http://www.w3.org/2002/07/owl#> .
 @prefix ns3: <http://xmlns.com/foaf/0.1/> .
-@prefix ns4: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns5: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns6: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns4: <http://purl.org/ontology/bibo/#> .
+@prefix ns5: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns6: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix ns7: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns8: <http://purl.org/ontology/bibo/#> .
+@prefix ns8: <http://swrc.ontoware.org/ontology/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-80/> a ns1:Proceedings ;
-    ns4:issued "2003-09-04T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:presentedAt <http://ceur-ws.org/Vol-80/#event> ;
-    ns6:editor <http://ceur-ws.org/Vol-80/#AlexanderiHorschiundiHans-PeteriMeinzer>,
+<http://ceur-ws.org/Vol-80/> a ns5:Proceedings ;
+    ns6:issued "2003-09-04T00:00:00+00:00"^^xsd:dateTime ;
+    ns4:presentedAt <http://ceur-ws.org/Vol-80/#event> ;
+    ns8:editor <http://ceur-ws.org/Vol-80/#AlexanderiHorschiundiHans-PeteriMeinzer>,
         <http://ceur-ws.org/Vol-80/#HerausgegebenivoniThomasiWittenberg> .
 
 <http://ceur-ws.org/Vol-80/#AlexanderiHorschiundiHans-PeteriMeinzer> a ns3:Person ;
@@ -25,11 +25,11 @@
     ns2:sameAs <http://ceur-ws.org/persons/HerausgegebenivoniThomasiWittenberg> ;
     ns3:name "Herausgegeben von Thomas Wittenberg" .
 
-<http://ceur-ws.org/Vol-80/#event> a ns1:WorkshopEvent ;
-    ns1:hasPart <http://ceur-ws.org/Vol-80/#part-ws> ;
-    ns1:isSubEventOf <http://ceur-ws.org/Vol-80/#conf> ;
-    ns5:beginsAtDatetime "2003-03-11T00:00:00+00:00"^^xsd:dateTime ;
-    ns5:endsAtDatetime "2003-03-11T00:00:00+00:00"^^xsd:dateTime ;
+<http://ceur-ws.org/Vol-80/#event> a ns5:WorkshopEvent ;
+    ns5:hasPart <http://ceur-ws.org/Vol-80/#part-ws> ;
+    ns5:isSubEventOf <http://ceur-ws.org/Vol-80/#conf> ;
+    ns1:beginsAtDatetime "2003-03-11T00:00:00+00:00"^^xsd:dateTime ;
+    ns1:endsAtDatetime "2003-03-11T00:00:00+00:00"^^xsd:dateTime ;
     ns7:license <http://choosealicense.com/licenses/no-license/> ;
     rdfs:seeAlso <http://ceur-ws.org/Vol-12/#event>,
         <http://ceur-ws.org/Vol-20/#event>,
