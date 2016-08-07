@@ -1,344 +1,45 @@
-@prefix ns1: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns2: <http://www.w3.org/2002/07/owl#> .
-@prefix ns3: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns4: <http://purl.org/ontology/bibo/#> .
-@prefix ns5: <http://xmlns.com/foaf/0.1/> .
-@prefix ns6: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns1: <http://www.w3.org/2002/07/owl#> .
+@prefix ns2: <http://xmlns.com/foaf/0.1/> .
+@prefix ns3: <http://purl.org/ontology/bibo/#> .
+@prefix ns4: <http://purl.org/dc/elements/1.1/> .
+@prefix ns5: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns6: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns7: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns8: <http://data.semanticweb.org/ns/swc/ontology/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-870/#AlexanderiFishkov> a ns5:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/AlexanderiFishkov> ;
-    ns5:made <http://ceur-ws.org/Vol-870/#paper_5> ;
-    ns5:name "Alexander Fishkov" .
-
-<http://ceur-ws.org/Vol-870/#AlexanderiVelizhev> a ns5:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/AlexanderiVelizhev> ;
-    ns5:made <http://ceur-ws.org/Vol-870/#paper_1> ;
-    ns5:name "Alexander Velizhev" .
-
-<http://ceur-ws.org/Vol-870/#AlexandraiYu.iKaminskaya> a ns5:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/AlexandraiYu.iKaminskaya> ;
-    ns5:made <http://ceur-ws.org/Vol-870/#paper_7> ;
-    ns5:name "Alexandra Yu. Kaminskaya" .
-
-<http://ceur-ws.org/Vol-870/#AlexeyiA.iNeznanov> a ns5:Person ;
-    ns3:affiliation "" ;
-    ns2:sameAs <http://ceur-ws.org/persons/AlexeyiA.iNeznanov> ;
-    ns5:name "Alexey A. Neznanov" .
-
-<http://ceur-ws.org/Vol-870/#AlexeyiDrutsa> a ns5:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/AlexeyiDrutsa> ;
-    ns5:made <http://ceur-ws.org/Vol-870/#paper_4> ;
-    ns5:name "Alexey Drutsa" .
-
-<http://ceur-ws.org/Vol-870/#AnastasiaiBezzubtseva> a ns5:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/AnastasiaiBezzubtseva> ;
-    ns5:made <http://ceur-ws.org/Vol-870/#paper_2> ;
-    ns5:name "Anastasia Bezzubtseva" .
-
-<http://ceur-ws.org/Vol-870/#AnastasyaiA.iBezzubtseva> a ns5:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/AnastasyaiA.iBezzubtseva> ;
-    ns5:made <http://ceur-ws.org/Vol-870/#paper_7> ;
-    ns5:name "Anastasya A. Bezzubtseva" .
-
-<http://ceur-ws.org/Vol-870/#AntoniKorshunov> a ns5:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/AntoniKorshunov> ;
-    ns5:made <http://ceur-ws.org/Vol-870/#paper_3> ;
-    ns5:name "Anton Korshunov" .
-
-<http://ceur-ws.org/Vol-870/#DaniiliR.iNedumov> a ns5:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/DaniiliR.iNedumov> ;
-    ns5:made <http://ceur-ws.org/Vol-870/#paper_7> ;
-    ns5:name "Daniil R. Nedumov" .
-
-<http://ceur-ws.org/Vol-870/#DariaiA.iGoncharova> a ns5:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/DariaiA.iGoncharova> ;
-    ns5:made <http://ceur-ws.org/Vol-870/#paper_7> ;
-    ns5:name "Daria A. Goncharova" .
-
-<http://ceur-ws.org/Vol-870/#DariaiM.iPuchkova> a ns5:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/DariaiM.iPuchkova> ;
-    ns5:made <http://ceur-ws.org/Vol-870/#paper_11> ;
-    ns5:name "Daria M. Puchkova" .
-
-<http://ceur-ws.org/Vol-870/#DavidiNaranjo-Gil> a ns5:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/DavidiNaranjo-Gil> ;
-    ns5:made <http://ceur-ws.org/Vol-870/#paper_6> ;
-    ns5:name "David Naranjo-Gil" .
-
-<http://ceur-ws.org/Vol-870/#EkaterinaiL.iChernyak> a ns5:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/EkaterinaiL.iChernyak> ;
-    ns5:made <http://ceur-ws.org/Vol-870/#paper_7> ;
-    ns5:name "Ekaterina L. Chernyak" .
-
-<http://ceur-ws.org/Vol-870/#FedoriV.iStrok> a ns5:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/FedoriV.iStrok> ;
-    ns5:made <http://ceur-ws.org/Vol-870/#paper_7> ;
-    ns5:name "Fedor V. Strok" .
-
-<http://ceur-ws.org/Vol-870/#I.iBolodurina> a ns5:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/I.iBolodurina> ;
-    ns5:made <http://ceur-ws.org/Vol-870/#paper_10> ;
-    ns5:name "I. Bolodurina" .
-
-<http://ceur-ws.org/Vol-870/#JonasiPoelmans> a ns5:Person ;
-    ns3:affiliation "" ;
-    ns2:sameAs <http://ceur-ws.org/persons/JonasiPoelmans> ;
-    ns5:name "Jonas Poelmans" .
-
-<http://ceur-ws.org/Vol-870/#KonstantiniN.iBlinkin> a ns5:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/KonstantiniN.iBlinkin> ;
-    ns5:made <http://ceur-ws.org/Vol-870/#paper_7> ;
-    ns5:name "Konstantin N. Blinkin" .
-
-<http://ceur-ws.org/Vol-870/#KonstantiniYavorskiy> a ns5:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/KonstantiniYavorskiy> ;
-    ns5:made <http://ceur-ws.org/Vol-870/#paper_4> ;
-    ns5:name "Konstantin Yavorskiy" .
-
-<http://ceur-ws.org/Vol-870/#Mar%C3%ADaiGilabert-Carreras> a ns5:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/Mar%C3%ADaiGilabert-Carreras> ;
-    ns5:made <http://ceur-ws.org/Vol-870/#paper_6> ;
-    ns5:name "María Gilabert-Carreras" .
-
-<http://ceur-ws.org/Vol-870/#NazariBuzun> a ns5:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/NazariBuzun> ;
-    ns5:made <http://ceur-ws.org/Vol-870/#paper_3> ;
-    ns5:name "Nazar Buzun" .
-
-<http://ceur-ws.org/Vol-870/#NikitaiS.iRomashkin> a ns5:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/NikitaiS.iRomashkin> ;
-    ns5:made <http://ceur-ws.org/Vol-870/#paper_7> ;
-    ns5:name "Nikita S. Romashkin" .
-
-<http://ceur-ws.org/Vol-870/#OlgaiBarinova> a ns5:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/OlgaiBarinova> ;
-    ns5:made <http://ceur-ws.org/Vol-870/#paper_1> ;
-    ns5:name "Olga Barinova" .
-
-<http://ceur-ws.org/Vol-870/#OlgaiN.iChugunova> a ns5:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/OlgaiN.iChugunova> ;
-    ns5:made <http://ceur-ws.org/Vol-870/#paper_7> ;
-    ns5:name "Olga N. Chugunova" .
-
-<http://ceur-ws.org/Vol-870/#RomaniShapovalov> a ns5:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/RomaniShapovalov> ;
-    ns5:made <http://ceur-ws.org/Vol-870/#paper_1> ;
-    ns5:name "Roman Shapovalov" .
-
-<http://ceur-ws.org/Vol-870/#RostislaviE.Yavorsky> a ns5:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/RostislaviE.Yavorsky> ;
-    ns5:made <http://ceur-ws.org/Vol-870/#paper_7> ;
-    ns5:name "Rostislav E.Yavorsky" .
-
-<http://ceur-ws.org/Vol-870/#SergeyiSudakov> a ns5:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/SergeyiSudakov> ;
-    ns5:made <http://ceur-ws.org/Vol-870/#paper_1> ;
-    ns5:name "Sergey Sudakov" .
-
-<http://ceur-ws.org/Vol-870/#SusanaiGago> a ns5:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/SusanaiGago> ;
-    ns5:made <http://ceur-ws.org/Vol-870/#paper_6> ;
-    ns5:name "Susana Gago" .
-
-<http://ceur-ws.org/Vol-870/#VasilyiZaharchuk> a ns5:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/VasilyiZaharchuk> ;
-    ns5:made <http://ceur-ws.org/Vol-870/#paper_8> ;
-    ns5:name "Vasily Zaharchuk" .
-
-<http://ceur-ws.org/Vol-870/#Y.iAkhmayzyanova> a ns5:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/Y.iAkhmayzyanova> ;
-    ns5:made <http://ceur-ws.org/Vol-870/#paper_10> ;
-    ns5:name "Y. Akhmayzyanova" .
-
-<http://ceur-ws.org/Vol-870/#event> a ns1:WorkshopEvent ;
-    ns1:hasLocation <http://dbpedia.org/resource/Euro_gold_and_silver_commemorative_coins> ;
-    ns1:hasPart <http://ceur-ws.org/Vol-870/#part-EEML> ;
-    ns1:isSubEventOf <http://ceur-ws.org/Vol-870/#conf> ;
-    ns7:beginsAtDatetime "2012-05-09T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:endsAtDatetime "2012-05-09T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:license <http://choosealicense.com/licenses/no-license/> .
-
-<http://ceur-ws.org/Vol-870/#AndreyiV.iKonstantinov> a ns5:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/AndreyiV.iKonstantinov> ;
-    ns5:made <http://ceur-ws.org/Vol-870/#paper_7>,
-        <http://ceur-ws.org/Vol-870/#paper_8> ;
-    ns5:name "Andrey V. Konstantinov" .
-
-<http://ceur-ws.org/Vol-870/#RustamiTagiew> a ns5:Person ;
-    ns3:affiliation "" ;
-    ns2:sameAs <http://ceur-ws.org/persons/RustamiTagiew> ;
-    ns5:made <http://ceur-ws.org/Vol-870/#paper_9> ;
-    ns5:name "Rustam Tagiew" .
-
-<http://ceur-ws.org/Vol-870/#SergeyiNikolenko> a ns5:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/SergeyiNikolenko> ;
-    ns5:made <http://ceur-ws.org/Vol-870/#paper_5>,
-        <http://ceur-ws.org/Vol-870/#paper_8> ;
-    ns5:name "Sergey Nikolenko" .
-
-<http://ceur-ws.org/Vol-870/#paper_11> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-870/> ;
-    ns6:title "Image Processing Using Dynamical NK-Networks Consisting of Binary Logical Elements" ;
-    ns4:endPage 95 ;
-    ns4:numPages 1 ;
-    ns4:section <http%3A//ceur-ws.org/Vol-870/%23Abstracts> ;
-    ns4:startPage 95 ;
-    ns3:author <http://ceur-ws.org/Vol-870/#DariaiM.iPuchkova> .
-
-<http://ceur-ws.org/Vol-870/#paper_9> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-870/> ;
-    ns6:title "Mining Determinism in Human Strategic Behavior" ;
-    ns4:endPage 91 ;
-    ns4:numPages 6 ;
-    ns4:section <http%3A//ceur-ws.org/Vol-870/%23RegularPapers> ;
-    ns4:startPage 86 ;
-    ns3:author <http://ceur-ws.org/Vol-870/#RustamiTagiew> .
-
-<http%3A//ceur-ws.org/Vol-870/%23Abstracts> a ns1:SessionEvent ;
-    ns1:partOf <http://ceur-ws.org/Vol-870/> ;
-    ns6:title "Abstracts" .
-
-<http://ceur-ws.org/Vol-870/#paper_10> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-870/> ;
-    ns6:title "Criteria Formation of Effective High-School Graduates Employment Based upon Data Mining Methods" ;
-    ns4:endPage 94 ;
-    ns4:numPages 1 ;
-    ns4:section <http%3A//ceur-ws.org/Vol-870/%23Abstracts> ;
-    ns4:startPage 94 ;
-    ns3:author <http://ceur-ws.org/Vol-870/#I.iBolodurina>,
-        <http://ceur-ws.org/Vol-870/#Y.iAkhmayzyanova> .
-
-<http://ceur-ws.org/Vol-870/#paper_2> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-870/> ;
-    ns6:title "A Typology of Collaboration Platform Users" ;
-    ns4:endPage 19 ;
-    ns4:numPages 11 ;
-    ns4:section <http%3A//ceur-ws.org/Vol-870/%23RegularPapers> ;
-    ns4:startPage 9 ;
-    ns3:author <http://ceur-ws.org/Vol-870/#AnastasiaiBezzubtseva>,
-        <http://ceur-ws.org/Vol-870/#DmitryiI.iIgnatov> .
-
-<http://ceur-ws.org/Vol-870/#paper_3> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-870/> ;
-    ns6:title "Innovative Methods and Measures in Overlapping Community Detection" ;
-    ns4:endPage 31 ;
-    ns4:numPages 12 ;
-    ns4:section <http%3A//ceur-ws.org/Vol-870/%23RegularPapers> ;
-    ns4:startPage 20 ;
-    ns3:author <http://ceur-ws.org/Vol-870/#AntoniKorshunov>,
-        <http://ceur-ws.org/Vol-870/#NazariBuzun> .
-
-<http://ceur-ws.org/Vol-870/#paper_4> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-870/> ;
-    ns6:title "Socio-Semantic Network Data Visualization" ;
-    ns4:endPage 38 ;
-    ns4:numPages 7 ;
-    ns4:section <http%3A//ceur-ws.org/Vol-870/%23RegularPapers> ;
-    ns4:startPage 32 ;
-    ns3:author <http://ceur-ws.org/Vol-870/#AlexeyiDrutsa>,
-        <http://ceur-ws.org/Vol-870/#KonstantiniYavorskiy> .
-
-<http://ceur-ws.org/Vol-870/#paper_5> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-870/> ;
-    ns6:title "A New Click Model for Relevance Prediction in Web Search" ;
-    ns4:endPage 48 ;
-    ns4:numPages 10 ;
-    ns4:section <http%3A//ceur-ws.org/Vol-870/%23RegularPapers> ;
-    ns4:startPage 39 ;
-    ns3:author <http://ceur-ws.org/Vol-870/#AlexanderiFishkov>,
-        <http://ceur-ws.org/Vol-870/#SergeyiNikolenko> .
-
-<http://ceur-ws.org/Vol-870/#DmitryiI.iIgnatov> a ns5:Person ;
-    ns3:affiliation "" ;
-    ns2:sameAs <http://ceur-ws.org/persons/DmitryiI.iIgnatov> ;
-    ns5:made <http://ceur-ws.org/Vol-870/#paper_2>,
-        <http://ceur-ws.org/Vol-870/#paper_7>,
-        <http://ceur-ws.org/Vol-870/#paper_8> ;
-    ns5:name "Dmitry I. Ignatov" .
-
-<http://ceur-ws.org/Vol-870/#paper_6> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-870/> ;
-    ns6:title "The Relationship between Trust and Budgetary Slack: an Empirical Study" ;
-    ns4:endPage 60 ;
-    ns4:numPages 12 ;
-    ns4:section <http%3A//ceur-ws.org/Vol-870/%23RegularPapers> ;
-    ns4:startPage 49 ;
-    ns3:author <http://ceur-ws.org/Vol-870/#DavidiNaranjo-Gil>,
-        <http://ceur-ws.org/Vol-870/#Mar%C3%ADaiGilabert-Carreras>,
-        <http://ceur-ws.org/Vol-870/#SusanaiGago> .
-
-<http://ceur-ws.org/Vol-870/#paper_1> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-870/> ;
-    ns6:title "Online Random Forest for Interactive Image Segmentation" ;
-    ns4:endPage 8 ;
-    ns4:numPages 8 ;
-    ns4:section <http%3A//ceur-ws.org/Vol-870/%23RegularPapers> ;
-    ns4:startPage 1 ;
-    ns3:author <http://ceur-ws.org/Vol-870/#AlexanderiVelizhev>,
-        <http://ceur-ws.org/Vol-870/#OlgaiBarinova>,
-        <http://ceur-ws.org/Vol-870/#RomaniShapovalov>,
-        <http://ceur-ws.org/Vol-870/#SergeyiSudakov> .
-
-<http://ceur-ws.org/Vol-870/#paper_8> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-870/> ;
-    ns6:title "A New Recommender System for the Interactive Radio Network FMhost" ;
-    ns4:endPage 85 ;
-    ns4:numPages 14 ;
-    ns4:section <http%3A//ceur-ws.org/Vol-870/%23RegularPapers> ;
-    ns4:startPage 72 ;
-    ns3:author <http://ceur-ws.org/Vol-870/#AndreyiV.iKonstantinov>,
-        <http://ceur-ws.org/Vol-870/#DmitryiI.iIgnatov>,
-        <http://ceur-ws.org/Vol-870/#SergeyiNikolenko>,
-        <http://ceur-ws.org/Vol-870/#VasilyiZaharchuk> .
-
-<http%3A//ceur-ws.org/Vol-870/%23RegularPapers> a ns1:SessionEvent ;
-    ns1:partOf <http://ceur-ws.org/Vol-870/> ;
-    ns6:title "Regular Papers" .
-
-<http://ceur-ws.org/Vol-870/> a ns1:Proceedings ;
-    ns1:hasPart <http://ceur-ws.org/Vol-870/#paper_1>,
-        <http://ceur-ws.org/Vol-870/#paper_10>,
-        <http://ceur-ws.org/Vol-870/#paper_11>,
-        <http://ceur-ws.org/Vol-870/#paper_2>,
-        <http://ceur-ws.org/Vol-870/#paper_3>,
-        <http://ceur-ws.org/Vol-870/#paper_4>,
-        <http://ceur-ws.org/Vol-870/#paper_5>,
-        <http://ceur-ws.org/Vol-870/#paper_6>,
-        <http://ceur-ws.org/Vol-870/#paper_7>,
-        <http://ceur-ws.org/Vol-870/#paper_8>,
-        <http://ceur-ws.org/Vol-870/#paper_9> ;
-    ns1:hasSession <http%3A//ceur-ws.org/Vol-870/%23Abstracts>,
-        <http%3A//ceur-ws.org/Vol-870/%23RegularPapers> ;
-    ns8:issued "2012-07-09T00:00:00+00:00"^^xsd:dateTime ;
-    ns4:presentedAt <http://ceur-ws.org/Vol-870/#event> ;
-    ns3:editor <http://ceur-ws.org/Vol-870/#AlexeyiA.iNeznanov>,
+<http://ceur-ws.org/Vol-870/> a ns8:Proceedings ;
+    ns6:issued "2012-07-09T00:00:00+00:00"^^xsd:dateTime ;
+    ns3:presentedAt <http://ceur-ws.org/Vol-870/#event> ;
+    ns7:editor <http://ceur-ws.org/Vol-870/#AlexeyiA.iNeznanov>,
         <http://ceur-ws.org/Vol-870/#DmitryiI.iIgnatov>,
         <http://ceur-ws.org/Vol-870/#JonasiPoelmans>,
         <http://ceur-ws.org/Vol-870/#RustamiTagiew> .
 
-<http://ceur-ws.org/Vol-870/#paper_7> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-870/> ;
-    ns6:title "CrowDM: the System for Collaborative Platform Data Analysis" ;
-    ns4:endPage 71 ;
-    ns4:numPages 11 ;
-    ns4:section <http%3A//ceur-ws.org/Vol-870/%23RegularPapers> ;
-    ns4:startPage 61 ;
-    ns3:author <http://ceur-ws.org/Vol-870/#AlexandraiYu.iKaminskaya>,
-        <http://ceur-ws.org/Vol-870/#AnastasyaiA.iBezzubtseva>,
-        <http://ceur-ws.org/Vol-870/#AndreyiV.iKonstantinov>,
-        <http://ceur-ws.org/Vol-870/#DaniiliR.iNedumov>,
-        <http://ceur-ws.org/Vol-870/#DariaiA.iGoncharova>,
-        <http://ceur-ws.org/Vol-870/#DmitryiI.iIgnatov>,
-        <http://ceur-ws.org/Vol-870/#EkaterinaiL.iChernyak>,
-        <http://ceur-ws.org/Vol-870/#FedoriV.iStrok>,
-        <http://ceur-ws.org/Vol-870/#KonstantiniN.iBlinkin>,
-        <http://ceur-ws.org/Vol-870/#NikitaiS.iRomashkin>,
-        <http://ceur-ws.org/Vol-870/#OlgaiN.iChugunova>,
-        <http://ceur-ws.org/Vol-870/#RostislaviE.Yavorsky> .
+<http://ceur-ws.org/Vol-870/#AlexeyiA.iNeznanov> a ns2:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/AlexeyiA.iNeznanov> ;
+    ns2:name "Alexey A. Neznanov" .
+
+<http://ceur-ws.org/Vol-870/#DmitryiI.iIgnatov> a ns2:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/DmitryiI.iIgnatov> ;
+    ns2:name "Dmitry I. Ignatov" .
+
+<http://ceur-ws.org/Vol-870/#JonasiPoelmans> a ns2:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/JonasiPoelmans> ;
+    ns2:name "Jonas Poelmans" .
+
+<http://ceur-ws.org/Vol-870/#RustamiTagiew> a ns2:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/RustamiTagiew> ;
+    ns2:name "Rustam Tagiew" .
+
+<http://ceur-ws.org/Vol-870/#event> a ns8:WorkshopEvent ;
+    ns8:hasLocation <http://dbpedia.org/resource/Euro_gold_and_silver_commemorative_coins> ;
+    ns8:hasPart <http://ceur-ws.org/Vol-870/#part-CEUR-WS> ;
+    ns8:isSubEventOf <http://ceur-ws.org/Vol-870/#conf> ;
+    ns5:beginsAtDatetime "2012-05-09T00:00:00+00:00"^^xsd:dateTime ;
+    ns5:endsAtDatetime "2012-05-09T00:00:00+00:00"^^xsd:dateTime ;
+    ns4:license "http://choosealicense.com/licenses/no-license/" .
 

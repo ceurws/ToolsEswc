@@ -1,155 +1,35 @@
-@prefix ns1: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns2: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns1: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns2: <http://purl.org/dc/elements/1.1/> .
 @prefix ns3: <http://www.w3.org/2002/07/owl#> .
-@prefix ns4: <http://purl.org/ontology/bibo/#> .
-@prefix ns5: <http://xmlns.com/foaf/0.1/> .
-@prefix ns6: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns4: <http://xmlns.com/foaf/0.1/> .
+@prefix ns5: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns6: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns8: <http://purl.org/ontology/bibo/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1412/#AlexandraiVarga> a ns5:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/AlexandraiVarga> ;
-    ns5:made <http://ceur-ws.org/Vol-1412/#o4> ;
-    ns5:name "Alexandra Varga" .
+<http://ceur-ws.org/Vol-1412/> a ns5:Proceedings ;
+    ns7:issued "2015-07-27T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:presentedAt <http://ceur-ws.org/Vol-1412/#event> ;
+    ns1:editor <http://ceur-ws.org/Vol-1412/#ClaudiaiSchon>,
+        <http://ceur-ws.org/Vol-1412/#UlrichiFurbach> .
 
-<http://ceur-ws.org/Vol-1412/#AndrewiS.iGordon> a ns5:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/AndrewiS.iGordon> ;
-    ns5:made <http://ceur-ws.org/Vol-1412/#o5> ;
-    ns5:name "Andrew S. Gordon" .
+<http://ceur-ws.org/Vol-1412/#ClaudiaiSchon> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/ClaudiaiSchon> ;
+    ns4:name "Claudia Schon" .
 
-<http://ceur-ws.org/Vol-1412/#BernhardiBeckert> a ns5:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/BernhardiBeckert> ;
-    ns5:made <http://ceur-ws.org/Vol-1412/#o6> ;
-    ns5:name "Bernhard Beckert" .
-
-<http://ceur-ws.org/Vol-1412/#Emanuelle-AnnaiDietz> a ns5:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/Emanuelle-AnnaiDietz> ;
-    ns5:made <http://ceur-ws.org/Vol-1412/#o3> ;
-    ns5:name "Emanuelle-Anna Dietz" .
-
-<http://ceur-ws.org/Vol-1412/#KeithiStenning> a ns5:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/KeithiStenning> ;
-    ns5:made <http://ceur-ws.org/Vol-1412/#o4> ;
-    ns5:name "Keith Stenning" .
-
-<http://ceur-ws.org/Vol-1412/#LauraiMartignon> a ns5:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/LauraiMartignon> ;
-    ns5:made <http://ceur-ws.org/Vol-1412/#o4> ;
-    ns5:name "Laura Martignon" .
-
-<http://ceur-ws.org/Vol-1412/#MarcoiRagni> a ns5:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/MarcoiRagni> ;
-    ns5:made <http://ceur-ws.org/Vol-1412/#o1> ;
-    ns5:name "Marco Ragni" .
-
-<http://ceur-ws.org/Vol-1412/#SarahiGrebing> a ns5:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/SarahiGrebing> ;
-    ns5:made <http://ceur-ws.org/Vol-1412/#o6> ;
-    ns5:name "Sarah Grebing" .
-
-<http://ceur-ws.org/Vol-1412/#SteffeniH%C3%B6lldobler> a ns5:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/SteffeniH%C3%B6lldobler> ;
-    ns5:made <http://ceur-ws.org/Vol-1412/#o2> ;
-    ns5:name "Steffen Hölldobler" .
-
-<http://ceur-ws.org/Vol-1412/#event> a ns1:WorkshopEvent ;
-    ns1:hasLocation <http://dbpedia.org/resource/Germany> ;
-    ns1:hasPart <http://ceur-ws.org/Vol-1412/#part-CADE> ;
-    ns1:isSubEventOf <http://ceur-ws.org/Vol-1412/#conf> ;
-    ns7:beginsAtDatetime "2015-08-01T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:endsAtDatetime "2015-08-01T00:00:00+00:00"^^xsd:dateTime .
-
-<http://ceur-ws.org/Vol-1412/#metadataiincl.ibibliographicidataipublishediunder> a ns5:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/metadataiincl.ibibliographicidataipublishediunder> ;
-    ns5:made <http://ceur-ws.org/Vol-1412/#paperX1> ;
-    ns5:name "metadata incl. bibliographic data published under" .
-
-<http://ceur-ws.org/Vol-1412/#UlrichiFurbach> a ns5:Person ;
-    ns2:affiliation "" ;
+<http://ceur-ws.org/Vol-1412/#UlrichiFurbach> a ns4:Person ;
     ns3:sameAs <http://ceur-ws.org/persons/UlrichiFurbach> ;
-    ns5:made <http://ceur-ws.org/Vol-1412/#o5> ;
-    ns5:name "Ulrich Furbach" .
+    ns4:name "Ulrich Furbach" .
 
-<http://ceur-ws.org/Vol-1412/#o1> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-1412/> ;
-    ns6:title "Three-levels of Analysis: Connecting Cognitive Theories of Reasoning with Empirical Results and Cognitive Modelin" ;
-    ns4:endPage 1 ;
-    ns4:numPages 1 ;
-    ns4:startPage 1 ;
-    ns2:author <http://ceur-ws.org/Vol-1412/#MarcoiRagni> .
-
-<http://ceur-ws.org/Vol-1412/#o2> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-1412/> ;
-    ns6:title "Weak Completion Semantics and its Applications in Human Reasoning" ;
-    ns4:endPage 16 ;
-    ns4:numPages 15 ;
-    ns4:startPage 2 ;
-    ns2:author <http://ceur-ws.org/Vol-1412/#SteffeniH%C3%B6lldobler> .
-
-<http://ceur-ws.org/Vol-1412/#o3> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-1412/> ;
-    ns6:title "A Computational Logic Approach to Syllogisms in Human Reasoning" ;
-    ns4:endPage 31 ;
-    ns4:numPages 15 ;
-    ns4:startPage 17 ;
-    ns2:author <http://ceur-ws.org/Vol-1412/#Emanuelle-AnnaiDietz> .
-
-<http://ceur-ws.org/Vol-1412/#2015-07-24%3AisubmittedibyiClaudiaiSchon> a ns5:Person ;
-    ns2:affiliation "" ;
-    ns3:sameAs <http://ceur-ws.org/persons/2015-07-24%3AisubmittedibyiClaudiaiSchon> ;
-    ns5:made <http://ceur-ws.org/Vol-1412/#o5>,
-        <http://ceur-ws.org/Vol-1412/#paperX1> ;
-    ns5:name "2015-07-24: submitted by Claudia Schon" .
-
-<http://ceur-ws.org/Vol-1412/#o6> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-1412/> ;
-    ns6:title "Interactive Theorem Proving - Modelling the User in the Proof Process" ;
-    ns4:endPage 73 ;
-    ns4:numPages 14 ;
-    ns4:startPage 60 ;
-    ns2:author <http://ceur-ws.org/Vol-1412/#BernhardiBeckert>,
-        <http://ceur-ws.org/Vol-1412/#SarahiGrebing> .
-
-<http://ceur-ws.org/Vol-1412/#paperX1> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-1412/> ;
-    ns6:title "The whole proceedings can also be downloaded as a" ;
-    ns2:author <http://ceur-ws.org/Vol-1412/#2015-07-24%3AisubmittedibyiClaudiaiSchon>,
-        <http://ceur-ws.org/Vol-1412/#metadataiincl.ibibliographicidataipublishediunder> .
-
-<http://ceur-ws.org/Vol-1412/#o4> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-1412/> ;
-    ns6:title "There is no one Logic to Model Human Reasoning: the Case from Interpretation" ;
-    ns4:endPage 46 ;
-    ns4:numPages 15 ;
-    ns4:startPage 32 ;
-    ns2:author <http://ceur-ws.org/Vol-1412/#AlexandraiVarga>,
-        <http://ceur-ws.org/Vol-1412/#KeithiStenning>,
-        <http://ceur-ws.org/Vol-1412/#LauraiMartignon> .
-
-<http://ceur-ws.org/Vol-1412/#o5> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-1412/> ;
-    ns6:title "Tackling Benchmark Problems of Commonsense Reasoning" ;
-    ns4:endPage 59 ;
-    ns4:numPages 13 ;
-    ns4:startPage 47 ;
-    ns2:author <http://ceur-ws.org/Vol-1412/#2015-07-24%3AisubmittedibyiClaudiaiSchon>,
-        <http://ceur-ws.org/Vol-1412/#AndrewiS.iGordon>,
-        <http://ceur-ws.org/Vol-1412/#UlrichiFurbach> .
-
-<http://ceur-ws.org/Vol-1412/> a ns1:Proceedings ;
-    ns1:hasPart <http://ceur-ws.org/Vol-1412/#o1>,
-        <http://ceur-ws.org/Vol-1412/#o2>,
-        <http://ceur-ws.org/Vol-1412/#o3>,
-        <http://ceur-ws.org/Vol-1412/#o4>,
-        <http://ceur-ws.org/Vol-1412/#o5>,
-        <http://ceur-ws.org/Vol-1412/#o6>,
-        <http://ceur-ws.org/Vol-1412/#paperX1> ;
-    ns8:issued "2015-07-27T00:00:00+00:00"^^xsd:dateTime ;
-    ns4:presentedAt <http://ceur-ws.org/Vol-1412/#event> ;
-    ns2:editor <http://ceur-ws.org/Vol-1412/#2015-07-24%3AisubmittedibyiClaudiaiSchon>,
-        <http://ceur-ws.org/Vol-1412/#UlrichiFurbach> .
+<http://ceur-ws.org/Vol-1412/#event> a ns5:WorkshopEvent ;
+    ns5:hasLocation <http://dbpedia.org/resource/Germany> ;
+    ns5:hasPart <http://ceur-ws.org/Vol-1412/#part-CADE> ;
+    ns5:isSubEventOf <http://ceur-ws.org/Vol-1412/#conf> ;
+    ns6:beginsAtDatetime "2015-08-01T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:endsAtDatetime "2015-08-01T00:00:00+00:00"^^xsd:dateTime ;
+    ns2:license "http://creativecommons.org/publicdomain/zero/1.0/" .
 

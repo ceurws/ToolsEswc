@@ -1,297 +1,35 @@
-@prefix ns1: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns2: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns3: <http://www.w3.org/2002/07/owl#> .
-@prefix ns4: <http://purl.org/ontology/bibo/#> .
+@prefix ns1: <http://www.w3.org/2002/07/owl#> .
+@prefix ns2: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns3: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns4: <http://xmlns.com/foaf/0.1/> .
 @prefix ns5: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns6: <http://xmlns.com/foaf/0.1/> .
-@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns6: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns7: <http://purl.org/dc/elements/1.1/> .
+@prefix ns8: <http://purl.org/ontology/bibo/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1278/#AnthonyiJameson> a ns6:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/AnthonyiJameson> ;
-    ns6:made <http://ceur-ws.org/Vol-1278/#paper1> ;
-    ns6:name "Anthony Jameson" .
+<http://ceur-ws.org/Vol-1278/> a ns5:Proceedings ;
+    ns2:issued "2014-10-29T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:presentedAt <http://ceur-ws.org/Vol-1278/#event> ;
+    ns3:editor <http://ceur-ws.org/Vol-1278/#FrancescoiRicci>,
+        <http://ceur-ws.org/Vol-1278/#MouzhiiGe> .
 
-<http://ceur-ws.org/Vol-1278/#Catalin-MihaiiBarbu> a ns6:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/Catalin-MihaiiBarbu> ;
-    ns6:made <http://ceur-ws.org/Vol-1278/#paper10> ;
-    ns6:name "Catalin-Mihai Barbu" .
+<http://ceur-ws.org/Vol-1278/#FrancescoiRicci> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/FrancescoiRicci> ;
+    ns4:name "Francesco Ricci" .
 
-<http://ceur-ws.org/Vol-1278/#CleotildeiGonzalez> a ns6:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/CleotildeiGonzalez> ;
-    ns6:made <http://ceur-ws.org/Vol-1278/#paper5> ;
-    ns6:name "Cleotilde Gonzalez" .
-
-<http://ceur-ws.org/Vol-1278/#EinatiMinkov> a ns6:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/EinatiMinkov> ;
-    ns6:made <http://ceur-ws.org/Vol-1278/#paper9> ;
-    ns6:name "Einat Minkov" .
-
-<http://ceur-ws.org/Vol-1278/#FabioiDeliMissier> a ns6:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/FabioiDeliMissier> ;
-    ns6:made <http://ceur-ws.org/Vol-1278/#paper2> ;
-    ns6:name "Fabio Del Missier" .
-
-<http://ceur-ws.org/Vol-1278/#FrancescoiRicci> a ns6:Person ;
-    ns2:affiliation "" ;
-    ns3:sameAs <http://ceur-ws.org/persons/FrancescoiRicci> ;
-    ns6:name "Francesco Ricci" .
-
-<http://ceur-ws.org/Vol-1278/#GiovanniiSemeraro> a ns6:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/GiovanniiSemeraro> ;
-    ns6:made <http://ceur-ws.org/Vol-1278/#paper3> ;
-    ns6:name "Giovanni Semeraro" .
-
-<http://ceur-ws.org/Vol-1278/#IdoiErev> a ns6:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/IdoiErev> ;
-    ns6:made <http://ceur-ws.org/Vol-1278/#paper7> ;
-    ns6:name "Ido Erev" .
-
-<http://ceur-ws.org/Vol-1278/#IgnacioiFern%C3%A1ndez-Tob%C3%ADas> a ns6:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/IgnacioiFern%C3%A1ndez-Tob%C3%ADas> ;
-    ns6:made <http://ceur-ws.org/Vol-1278/#paper8> ;
-    ns6:name "Ignacio Fernández-Tobías" .
-
-<http://ceur-ws.org/Vol-1278/#Iv%C3%A1niCantador> a ns6:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/Iv%C3%A1niCantador> ;
-    ns6:made <http://ceur-ws.org/Vol-1278/#paper8> ;
-    ns6:name "Iván Cantador" .
-
-<http://ceur-ws.org/Vol-1278/#KereniKahanov> a ns6:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/KereniKahanov> ;
-    ns6:made <http://ceur-ws.org/Vol-1278/#paper9> ;
-    ns6:name "Keren Kahanov" .
-
-<http://ceur-ws.org/Vol-1278/#MarcoideiGemmis> a ns6:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/MarcoideiGemmis> ;
-    ns6:made <http://ceur-ws.org/Vol-1278/#paper3> ;
-    ns6:name "Marco de Gemmis" .
-
-<http://ceur-ws.org/Vol-1278/#MarkoiTkalcic> a ns6:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/MarkoiTkalcic> ;
-    ns6:made <http://ceur-ws.org/Vol-1278/#paper3> ;
-    ns6:name "Marko Tkalcic" .
-
-<http://ceur-ws.org/Vol-1278/#MarkusiKoehler> a ns6:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/MarkusiKoehler> ;
-    ns6:made <http://ceur-ws.org/Vol-1278/#paper13> ;
-    ns6:name "Markus Koehler" .
-
-<http://ceur-ws.org/Vol-1278/#MartiniStettinger> a ns6:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/MartiniStettinger> ;
-    ns6:made <http://ceur-ws.org/Vol-1278/#paper12> ;
-    ns6:name "Martin Stettinger" .
-
-<http://ceur-ws.org/Vol-1278/#MilosiKravcik> a ns6:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/MilosiKravcik> ;
-    ns6:made <http://ceur-ws.org/Vol-1278/#paper11> ;
-    ns6:name "Milos Kravcik" .
-
-<http://ceur-ws.org/Vol-1278/#MouzhiiGe> a ns6:Person ;
-    ns2:affiliation "" ;
-    ns3:sameAs <http://ceur-ws.org/persons/MouzhiiGe> ;
-    ns6:name "Mouzhi Ge" .
-
-<http://ceur-ws.org/Vol-1278/#PaoloiViappiani> a ns6:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/PaoloiViappiani> ;
-    ns6:made <http://ceur-ws.org/Vol-1278/#paper4> ;
-    ns6:name "Paolo Viappiani" .
-
-<http://ceur-ws.org/Vol-1278/#RalfiKlamma> a ns6:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/RalfiKlamma> ;
-    ns6:made <http://ceur-ws.org/Vol-1278/#paper11> ;
-    ns6:name "Ralf Klamma" .
-
-<http://ceur-ws.org/Vol-1278/#StefanieiTurber> a ns6:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/StefanieiTurber> ;
-    ns6:made <http://ceur-ws.org/Vol-1278/#paper13> ;
-    ns6:name "Stefanie Turber" .
-
-<http://ceur-ws.org/Vol-1278/#TanjaiSchneeberger> a ns6:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/TanjaiSchneeberger> ;
-    ns6:made <http://ceur-ws.org/Vol-1278/#paper10> ;
-    ns6:name "Tanja Schneeberger" .
-
-<http://ceur-ws.org/Vol-1278/#ThorbeniKeller> a ns6:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/ThorbeniKeller> ;
-    ns6:made <http://ceur-ws.org/Vol-1278/#paper13> ;
-    ns6:name "Thorben Keller" .
-
-<http://ceur-ws.org/Vol-1278/#TsviiKuflik> a ns6:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/TsviiKuflik> ;
-    ns6:made <http://ceur-ws.org/Vol-1278/#paper9> ;
-    ns6:name "Tsvi Kuflik" .
+<http://ceur-ws.org/Vol-1278/#MouzhiiGe> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/MouzhiiGe> ;
+    ns4:name "Mouzhi Ge" .
 
 <http://ceur-ws.org/Vol-1278/#event> a ns5:WorkshopEvent ;
     ns5:hasLocation <http://dbpedia.org/resource/Italy> ;
     ns5:hasPart <http://ceur-ws.org/Vol-1278/#part-DMRS> ;
     ns5:isSubEventOf <http://ceur-ws.org/Vol-1278/#conf> ;
-    ns7:beginsAtDatetime "2014-09-18T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:endsAtDatetime "2014-09-19T00:00:00+00:00"^^xsd:dateTime .
-
-<http://ceur-ws.org/Vol-1278/#AlexanderiFelfernig> a ns6:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/AlexanderiFelfernig> ;
-    ns6:made <http://ceur-ws.org/Vol-1278/#paper12>,
-        <http://ceur-ws.org/Vol-1278/#paper6> ;
-    ns6:name "Alexander Felfernig" .
-
-<http://ceur-ws.org/Vol-1278/#paper1> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1278/> ;
-    ns1:title "Recommender Systems as Part of a Choice Architecture for HCI" ;
-    ns4:endPage 7 ;
-    ns4:numPages 5 ;
-    ns4:section <http%3A//ceur-ws.org/Vol-1278/%23InvitedPresentations> ;
-    ns4:startPage 3 ;
-    ns2:author <http://ceur-ws.org/Vol-1278/#AnthonyiJameson> .
-
-<http://ceur-ws.org/Vol-1278/#paper2> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1278/> ;
-    ns1:title "Memory and Decision Making: From Basic Cognitive Research to Design Issues" ;
-    ns4:endPage 13 ;
-    ns4:numPages 6 ;
-    ns4:section <http%3A//ceur-ws.org/Vol-1278/%23InvitedPresentations> ;
-    ns4:startPage 8 ;
-    ns2:author <http://ceur-ws.org/Vol-1278/#FabioiDeliMissier> .
-
-<http://ceur-ws.org/Vol-1278/#paper4> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1278/> ;
-    ns1:title "Preference Modeling and Preference Elicitation: An Overview" ;
-    ns4:endPage 24 ;
-    ns4:numPages 6 ;
-    ns4:section <http%3A//ceur-ws.org/Vol-1278/%23InvitedPresentations> ;
-    ns4:startPage 19 ;
-    ns2:author <http://ceur-ws.org/Vol-1278/#PaoloiViappiani> .
-
-<http://ceur-ws.org/Vol-1278/#paper5> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1278/> ;
-    ns1:title "Dynamic Decision Making: Implications for Recommender System Design" ;
-    ns4:endPage 31 ;
-    ns4:numPages 7 ;
-    ns4:section <http%3A//ceur-ws.org/Vol-1278/%23InvitedPresentations> ;
-    ns4:startPage 25 ;
-    ns2:author <http://ceur-ws.org/Vol-1278/#CleotildeiGonzalez> .
-
-<http://ceur-ws.org/Vol-1278/#paper6> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1278/> ;
-    ns1:title "Biases in Decision Making" ;
-    ns4:endPage 37 ;
-    ns4:numPages 6 ;
-    ns4:section <http%3A//ceur-ws.org/Vol-1278/%23InvitedPresentations> ;
-    ns4:startPage 32 ;
-    ns2:author <http://ceur-ws.org/Vol-1278/#AlexanderiFelfernig> .
-
-<http://ceur-ws.org/Vol-1278/#paper7> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1278/> ;
-    ns1:title "Recommender Systems and Learning Traps" ;
-    ns4:endPage 41 ;
-    ns4:numPages 4 ;
-    ns4:section <http%3A//ceur-ws.org/Vol-1278/%23InvitedPresentations> ;
-    ns4:startPage 38 ;
-    ns2:author <http://ceur-ws.org/Vol-1278/#IdoiErev> .
-
-<http://ceur-ws.org/Vol-1278/#paper10> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1278/> ;
-    ns1:title "How Can Recommender Systems Help People Learn While Choosing?" ;
-    ns4:endPage 51 ;
-    ns4:numPages 3 ;
-    ns4:section <http%3A//ceur-ws.org/Vol-1278/%23PosterPapers> ;
-    ns4:startPage 49 ;
-    ns2:author <http://ceur-ws.org/Vol-1278/#Catalin-MihaiiBarbu>,
-        <http://ceur-ws.org/Vol-1278/#TanjaiSchneeberger> .
-
-<http://ceur-ws.org/Vol-1278/#paper11> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1278/> ;
-    ns1:title "Self-Regulated Learning Nudges" ;
-    ns4:endPage 54 ;
-    ns4:numPages 3 ;
-    ns4:section <http%3A//ceur-ws.org/Vol-1278/%23PosterPapers> ;
-    ns4:startPage 52 ;
-    ns2:author <http://ceur-ws.org/Vol-1278/#MilosiKravcik>,
-        <http://ceur-ws.org/Vol-1278/#RalfiKlamma> .
-
-<http://ceur-ws.org/Vol-1278/#paper12> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1278/> ;
-    ns1:title "Choicla: An Intelligent Group Decision Support Environment" ;
-    ns4:endPage 57 ;
-    ns4:numPages 3 ;
-    ns4:section <http%3A//ceur-ws.org/Vol-1278/%23PosterPapers> ;
-    ns4:startPage 55 ;
-    ns2:author <http://ceur-ws.org/Vol-1278/#AlexanderiFelfernig>,
-        <http://ceur-ws.org/Vol-1278/#MartiniStettinger> .
-
-<http://ceur-ws.org/Vol-1278/#paper8> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1278/> ;
-    ns1:title "On the Exploitation of User Personality in Recommender Systems" ;
-    ns4:endPage 45 ;
-    ns4:numPages 4 ;
-    ns4:section <http%3A//ceur-ws.org/Vol-1278/%23PosterPapers> ;
-    ns4:startPage 42 ;
-    ns2:author <http://ceur-ws.org/Vol-1278/#IgnacioiFern%C3%A1ndez-Tob%C3%ADas>,
-        <http://ceur-ws.org/Vol-1278/#Iv%C3%A1niCantador> .
-
-<http://ceur-ws.org/Vol-1278/#paper13> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1278/> ;
-    ns1:title "Towards a Residential Micro-Location Based Product and Service Recommender System" ;
-    ns4:endPage 61 ;
-    ns4:numPages 4 ;
-    ns4:section <http%3A//ceur-ws.org/Vol-1278/%23PosterPapers> ;
-    ns4:startPage 58 ;
-    ns2:author <http://ceur-ws.org/Vol-1278/#MarkusiKoehler>,
-        <http://ceur-ws.org/Vol-1278/#StefanieiTurber>,
-        <http://ceur-ws.org/Vol-1278/#ThorbeniKeller> .
-
-<http://ceur-ws.org/Vol-1278/#paper3> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1278/> ;
-    ns1:title "Personality and Emotions in Decision Making and Recommender Systems" ;
-    ns4:endPage 18 ;
-    ns4:numPages 5 ;
-    ns4:section <http%3A//ceur-ws.org/Vol-1278/%23InvitedPresentations> ;
-    ns4:startPage 14 ;
-    ns2:author <http://ceur-ws.org/Vol-1278/#GiovanniiSemeraro>,
-        <http://ceur-ws.org/Vol-1278/#MarcoideiGemmis>,
-        <http://ceur-ws.org/Vol-1278/#MarkoiTkalcic> .
-
-<http://ceur-ws.org/Vol-1278/#paper9> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1278/> ;
-    ns1:title "Graph-based Recommendation in the Museum" ;
-    ns4:endPage 48 ;
-    ns4:numPages 3 ;
-    ns4:section <http%3A//ceur-ws.org/Vol-1278/%23PosterPapers> ;
-    ns4:startPage 46 ;
-    ns2:author <http://ceur-ws.org/Vol-1278/#EinatiMinkov>,
-        <http://ceur-ws.org/Vol-1278/#KereniKahanov>,
-        <http://ceur-ws.org/Vol-1278/#TsviiKuflik> .
-
-<http%3A//ceur-ws.org/Vol-1278/%23PosterPapers> a ns5:SessionEvent ;
-    ns5:partOf <http://ceur-ws.org/Vol-1278/> ;
-    ns1:title "Poster Papers" .
-
-<http%3A//ceur-ws.org/Vol-1278/%23InvitedPresentations> a ns5:SessionEvent ;
-    ns5:partOf <http://ceur-ws.org/Vol-1278/> ;
-    ns1:title "Invited Presentations" .
-
-<http://ceur-ws.org/Vol-1278/> a ns5:Proceedings ;
-    ns5:hasPart <http://ceur-ws.org/Vol-1278/#paper1>,
-        <http://ceur-ws.org/Vol-1278/#paper10>,
-        <http://ceur-ws.org/Vol-1278/#paper11>,
-        <http://ceur-ws.org/Vol-1278/#paper12>,
-        <http://ceur-ws.org/Vol-1278/#paper13>,
-        <http://ceur-ws.org/Vol-1278/#paper2>,
-        <http://ceur-ws.org/Vol-1278/#paper3>,
-        <http://ceur-ws.org/Vol-1278/#paper4>,
-        <http://ceur-ws.org/Vol-1278/#paper5>,
-        <http://ceur-ws.org/Vol-1278/#paper6>,
-        <http://ceur-ws.org/Vol-1278/#paper7>,
-        <http://ceur-ws.org/Vol-1278/#paper8>,
-        <http://ceur-ws.org/Vol-1278/#paper9> ;
-    ns5:hasSession <http%3A//ceur-ws.org/Vol-1278/%23InvitedPresentations>,
-        <http%3A//ceur-ws.org/Vol-1278/%23PosterPapers> ;
-    ns8:issued "2014-10-29T00:00:00+00:00"^^xsd:dateTime ;
-    ns4:presentedAt <http://ceur-ws.org/Vol-1278/#event> ;
-    ns2:editor <http://ceur-ws.org/Vol-1278/#FrancescoiRicci>,
-        <http://ceur-ws.org/Vol-1278/#MouzhiiGe> .
+    ns6:beginsAtDatetime "2014-09-18T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:endsAtDatetime "2014-09-19T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:license "http://creativecommons.org/publicdomain/zero/1.0/" .
 

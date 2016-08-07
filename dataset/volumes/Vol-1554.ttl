@@ -1,268 +1,37 @@
 @prefix ns1: <http://purl.org/ontology/bibo/#> .
-@prefix ns2: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns3: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns2: <http://www.w3.org/2002/07/owl#> .
+@prefix ns3: <http://purl.org/NET/c4dm/timeline.owl#> .
 @prefix ns4: <http://xmlns.com/foaf/0.1/> .
-@prefix ns5: <http://www.w3.org/2002/07/owl#> .
-@prefix ns6: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns5: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns6: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns7: <http://purl.org/dc/elements/1.1/> .
+@prefix ns8: <http://data.semanticweb.org/ns/swc/ontology/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1554/#AlejandroiRago> a ns4:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/AlejandroiRago> ;
-    ns4:made <http://ceur-ws.org/Vol-1554/#PD_MoDELS_2015_paper_11> ;
-    ns4:name "Alejandro Rago" .
-
-<http://ceur-ws.org/Vol-1554/#AlessioiDiiSandro> a ns4:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/AlessioiDiiSandro> ;
-    ns4:made <http://ceur-ws.org/Vol-1554/#PD_MoDELS_2015_paper_6> ;
-    ns4:name "Alessio Di Sandro" .
-
-<http://ceur-ws.org/Vol-1554/#DavidiBlanes> a ns4:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/DavidiBlanes> ;
-    ns4:made <http://ceur-ws.org/Vol-1554/#PD_MoDELS_2015_paper_7> ;
-    ns4:name "David Blanes" .
-
-<http://ceur-ws.org/Vol-1554/#FernandoiPereira> a ns4:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/FernandoiPereira> ;
-    ns4:made <http://ceur-ws.org/Vol-1554/#PD_MoDELS_2015_paper_13> ;
-    ns4:name "Fernando Pereira" .
-
-<http://ceur-ws.org/Vol-1554/#Fr%C3%A9d%C3%A9riciMadiot> a ns4:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/Fr%C3%A9d%C3%A9riciMadiot> ;
-    ns4:made <http://ceur-ws.org/Vol-1554/#PD_MoDELS_2015_paper_4> ;
-    ns4:name "Frédéric Madiot" .
-
-<http://ceur-ws.org/Vol-1554/#FrancescoiBasciani> a ns4:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/FrancescoiBasciani> ;
-    ns4:made <http://ceur-ws.org/Vol-1554/#PD_MoDELS_2015_paper_2> ;
-    ns4:name "Francesco Basciani" .
-
-<http://ceur-ws.org/Vol-1554/#HuiiSong> a ns4:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/HuiiSong> ;
-    ns4:made <http://ceur-ws.org/Vol-1554/#PD_MoDELS_2015_paper_3> ;
-    ns4:name "Hui Song" .
-
-<http://ceur-ws.org/Vol-1554/#LeviiL%C3%BAcio> a ns4:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/LeviiL%C3%BAcio> ;
-    ns4:made <http://ceur-ws.org/Vol-1554/#PD_MoDELS_2015_paper_8> ;
-    ns4:name "Levi Lúcio" .
-
-<http://ceur-ws.org/Vol-1554/#LuisiSilvestre> a ns4:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/LuisiSilvestre> ;
-    ns4:made <http://ceur-ws.org/Vol-1554/#PD_MoDELS_2015_paper_12> ;
-    ns4:name "Luis Silvestre" .
-
-<http://ceur-ws.org/Vol-1554/#MatiasiEzequieliVaraiLarsen> a ns4:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/MatiasiEzequieliVaraiLarsen> ;
-    ns4:made <http://ceur-ws.org/Vol-1554/#PD_MoDELS_2015_paper_14> ;
-    ns4:name "Matias Ezequiel Vara Larsen" .
+<http://ceur-ws.org/Vol-1554/> a ns8:Proceedings ;
+    ns5:issued "2016-02-02T00:00:00+00:00"^^xsd:dateTime ;
+    ns1:presentedAt <http://ceur-ws.org/Vol-1554/#event> ;
+    ns6:editor <http://ceur-ws.org/Vol-1554/#OmariBadreddin>,
+        <http://ceur-ws.org/Vol-1554/#VinayiKulkarni> .
 
 <http://ceur-ws.org/Vol-1554/#OmariBadreddin> a ns4:Person ;
-    ns2:affiliation "" ;
-    ns5:sameAs <http://ceur-ws.org/persons/OmariBadreddin> ;
+    ns2:sameAs <http://ceur-ws.org/persons/OmariBadreddin> ;
     ns4:name "Omar Badreddin" .
 
-<http://ceur-ws.org/Vol-1554/#RomainiAlexandre> a ns4:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/RomainiAlexandre> ;
-    ns4:made <http://ceur-ws.org/Vol-1554/#PD_MoDELS_2015_paper_10> ;
-    ns4:name "Romain Alexandre" .
-
-<http://ceur-ws.org/Vol-1554/#Ta%E2%80%99idiHolmes> a ns4:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/Ta%E2%80%99idiHolmes> ;
-    ns4:made <http://ceur-ws.org/Vol-1554/#PD_MoDELS_2015_paper_17> ;
-    ns4:name "Ta’id Holmes" .
-
-<http://ceur-ws.org/Vol-1554/#TiyamiRobati> a ns4:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/TiyamiRobati> ;
-    ns4:made <http://ceur-ws.org/Vol-1554/#PD_MoDELS_2015_paper_18.pdf> ;
-    ns4:name "Tiyam Robati" .
-
-<http://ceur-ws.org/Vol-1554/#VictoriGuana> a ns4:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/VictoriGuana> ;
-    ns4:made <http://ceur-ws.org/Vol-1554/#PD_MoDELS_2015_paper_5> ;
-    ns4:name "Victor Guana" .
-
 <http://ceur-ws.org/Vol-1554/#VinayiKulkarni> a ns4:Person ;
-    ns2:affiliation "" ;
-    ns5:sameAs <http://ceur-ws.org/persons/VinayiKulkarni> ;
+    ns2:sameAs <http://ceur-ws.org/persons/VinayiKulkarni> ;
     ns4:name "Vinay Kulkarni" .
 
-<http://ceur-ws.org/Vol-1554/#ZamiraiDaw> a ns4:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/ZamiraiDaw> ;
-    ns4:made <http://ceur-ws.org/Vol-1554/#PD_MoDELS_2015_paper_16> ;
-    ns4:name "Zamira Daw" .
-
-<http://ceur-ws.org/Vol-1554/#event> a ns6:WorkshopEvent ;
-    ns6:hasLocation <http://dbpedia.org/resource/Canada> ;
-    ns6:hasPart <http://ceur-ws.org/Vol-1554/#part-ws> ;
-    ns6:isSubEventOf <http://ceur-ws.org/Vol-1554/#conf> ;
-    ns8:beginsAtDatetime "2015-09-27T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:endsAtDatetime "2015-09-27T00:00:00+00:00"^^xsd:dateTime ;
+<http://ceur-ws.org/Vol-1554/#event> a ns8:WorkshopEvent ;
+    ns8:hasLocation <http://dbpedia.org/resource/Canada> ;
+    ns8:hasPart <http://ceur-ws.org/Vol-1554/#part-ws> ;
+    ns8:isSubEventOf <http://ceur-ws.org/Vol-1554/#conf> ;
+    ns3:beginsAtDatetime "2015-09-27T00:00:00+00:00"^^xsd:dateTime ;
+    ns3:endsAtDatetime "2015-09-27T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:license "http://creativecommons.org/publicdomain/zero/1.0/" ;
     rdfs:seeAlso <http://ceur-ws.org/Vol-1115/#event>,
         <http://ceur-ws.org/Vol-1258/#event> .
-
-<http://ceur-ws.org/Vol-1554/#PD_MoDELS_2015_paper_10> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-1554/> ;
-    ns3:title "Support for Evaluation of Impact Models in Reuse Hierarchies with jUCMNav and TouchCORE" ;
-    ns1:endPage 31 ;
-    ns1:numPages 4 ;
-    ns1:section <http%3A//ceur-ws.org/Vol-1554/%23DemoandPosterSession> ;
-    ns1:startPage 28 ;
-    ns2:author <http://ceur-ws.org/Vol-1554/#RomainiAlexandre> .
-
-<http://ceur-ws.org/Vol-1554/#PD_MoDELS_2015_paper_11> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-1554/> ;
-    ns3:title "REAssistant: a Tool for Identifying Crosscutting Concerns in Textual Requirements" ;
-    ns1:endPage 35 ;
-    ns1:numPages 4 ;
-    ns1:section <http%3A//ceur-ws.org/Vol-1554/%23DemoandPosterSession> ;
-    ns1:startPage 32 ;
-    ns2:author <http://ceur-ws.org/Vol-1554/#AlejandroiRago> .
-
-<http://ceur-ws.org/Vol-1554/#PD_MoDELS_2015_paper_12> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-1554/> ;
-    ns3:title "A Usable MDE-based Tool for Software Process Tailoring" ;
-    ns1:endPage 39 ;
-    ns1:numPages 4 ;
-    ns1:section <http%3A//ceur-ws.org/Vol-1554/%23DemoandPosterSession> ;
-    ns1:startPage 36 ;
-    ns2:author <http://ceur-ws.org/Vol-1554/#LuisiSilvestre> .
-
-<http://ceur-ws.org/Vol-1554/#PD_MoDELS_2015_paper_13> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-1554/> ;
-    ns3:title "Executable models for Embedded Controllers Development — A Cloud Based Development Framework" ;
-    ns1:endPage 43 ;
-    ns1:numPages 4 ;
-    ns1:section <http%3A//ceur-ws.org/Vol-1554/%23DemoandPosterSession> ;
-    ns1:startPage 40 ;
-    ns2:author <http://ceur-ws.org/Vol-1554/#FernandoiPereira> .
-
-<http://ceur-ws.org/Vol-1554/#PD_MoDELS_2015_paper_14> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-1554/> ;
-    ns3:title "A Model-Driven Based Environment for Automatic Model Coordination" ;
-    ns1:endPage 47 ;
-    ns1:numPages 4 ;
-    ns1:section <http%3A//ceur-ws.org/Vol-1554/%23DemoandPosterSession> ;
-    ns1:startPage 44 ;
-    ns2:author <http://ceur-ws.org/Vol-1554/#MatiasiEzequieliVaraiLarsen> .
-
-<http://ceur-ws.org/Vol-1554/#PD_MoDELS_2015_paper_16> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-1554/> ;
-    ns3:title "UML-VT: A Formal Verification Environment for UML Activity Diagrams" ;
-    ns1:endPage 51 ;
-    ns1:numPages 4 ;
-    ns1:section <http%3A//ceur-ws.org/Vol-1554/%23DemoandPosterSession> ;
-    ns1:startPage 48 ;
-    ns2:author <http://ceur-ws.org/Vol-1554/#ZamiraiDaw> .
-
-<http://ceur-ws.org/Vol-1554/#PD_MoDELS_2015_paper_17> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-1554/> ;
-    ns3:title "Facilitating Agile Prototyping of Cloud Applications – A Model-based Approach" ;
-    ns1:endPage 55 ;
-    ns1:numPages 4 ;
-    ns1:section <http%3A//ceur-ws.org/Vol-1554/%23DemoandPosterSession> ;
-    ns1:startPage 52 ;
-    ns2:author <http://ceur-ws.org/Vol-1554/#Ta%E2%80%99idiHolmes> .
-
-<http://ceur-ws.org/Vol-1554/#PD_MoDELS_2015_paper_18.pdf> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-1554/> ;
-    ns3:title "Simulation-Based Verification of Avionic Systems Deployed on IMA Architectures" ;
-    ns1:endPage 59 ;
-    ns1:numPages 4 ;
-    ns1:section <http%3A//ceur-ws.org/Vol-1554/%23DemoandPosterSession> ;
-    ns1:startPage 56 ;
-    ns2:author <http://ceur-ws.org/Vol-1554/#TiyamiRobati> .
-
-<http://ceur-ws.org/Vol-1554/#PD_MoDELS_2015_paper_2> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-1554/> ;
-    ns3:title "A Tool for Clustering Metamodel Repositories" ;
-    ns1:endPage 4 ;
-    ns1:numPages 4 ;
-    ns1:section <http%3A//ceur-ws.org/Vol-1554/%23DemoandPosterSession> ;
-    ns1:startPage 1 ;
-    ns2:author <http://ceur-ws.org/Vol-1554/#FrancescoiBasciani> .
-
-<http://ceur-ws.org/Vol-1554/#PD_MoDELS_2015_paper_3> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-1554/> ;
-    ns3:title "Consolas: A Model-Based Tool for Automatic Configuration and Deployment of Cloud Applications" ;
-    ns1:endPage 8 ;
-    ns1:numPages 4 ;
-    ns1:section <http%3A//ceur-ws.org/Vol-1554/%23DemoandPosterSession> ;
-    ns1:startPage 5 ;
-    ns2:author <http://ceur-ws.org/Vol-1554/#HuiiSong> .
-
-<http://ceur-ws.org/Vol-1554/#PD_MoDELS_2015_paper_4> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-1554/> ;
-    ns3:title "Eclipse Sirius Demonstration" ;
-    ns1:endPage 11 ;
-    ns1:numPages 3 ;
-    ns1:section <http%3A//ceur-ws.org/Vol-1554/%23DemoandPosterSession> ;
-    ns1:startPage 9 ;
-    ns2:author <http://ceur-ws.org/Vol-1554/#Fr%C3%A9d%C3%A9riciMadiot> .
-
-<http://ceur-ws.org/Vol-1554/#PD_MoDELS_2015_paper_5> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-1554/> ;
-    ns3:title "Reflecting on Model-based Code Generators Using Traceability Information" ;
-    ns1:endPage 15 ;
-    ns1:numPages 4 ;
-    ns1:section <http%3A//ceur-ws.org/Vol-1554/%23DemoandPosterSession> ;
-    ns1:startPage 12 ;
-    ns2:author <http://ceur-ws.org/Vol-1554/#VictoriGuana> .
-
-<http://ceur-ws.org/Vol-1554/#PD_MoDELS_2015_paper_6> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-1554/> ;
-    ns3:title "MMINT: A Graphical Tool for Interactive Model Management" ;
-    ns1:endPage 19 ;
-    ns1:numPages 4 ;
-    ns1:section <http%3A//ceur-ws.org/Vol-1554/%23DemoandPosterSession> ;
-    ns1:startPage 16 ;
-    ns2:author <http://ceur-ws.org/Vol-1554/#AlessioiDiiSandro> .
-
-<http://ceur-ws.org/Vol-1554/#PD_MoDELS_2015_paper_7> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-1554/> ;
-    ns3:title "A Tool for the Automatic Generation of Multimodel Editors" ;
-    ns1:endPage 23 ;
-    ns1:numPages 4 ;
-    ns1:section <http%3A//ceur-ws.org/Vol-1554/%23DemoandPosterSession> ;
-    ns1:startPage 20 ;
-    ns2:author <http://ceur-ws.org/Vol-1554/#DavidiBlanes> .
-
-<http://ceur-ws.org/Vol-1554/#PD_MoDELS_2015_paper_8> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-1554/> ;
-    ns3:title "SyVOLT: Full Model Transformation Verification Using Contracts" ;
-    ns1:endPage 27 ;
-    ns1:numPages 4 ;
-    ns1:section <http%3A//ceur-ws.org/Vol-1554/%23DemoandPosterSession> ;
-    ns1:startPage 24 ;
-    ns2:author <http://ceur-ws.org/Vol-1554/#LeviiL%C3%BAcio> .
-
-<http%3A//ceur-ws.org/Vol-1554/%23DemoandPosterSession> a ns6:SessionEvent ;
-    ns6:partOf <http://ceur-ws.org/Vol-1554/> ;
-    ns3:title "Demo and Poster Session" .
-
-<http://ceur-ws.org/Vol-1554/> a ns6:Proceedings ;
-    ns6:hasPart <http://ceur-ws.org/Vol-1554/#PD_MoDELS_2015_paper_10>,
-        <http://ceur-ws.org/Vol-1554/#PD_MoDELS_2015_paper_11>,
-        <http://ceur-ws.org/Vol-1554/#PD_MoDELS_2015_paper_12>,
-        <http://ceur-ws.org/Vol-1554/#PD_MoDELS_2015_paper_13>,
-        <http://ceur-ws.org/Vol-1554/#PD_MoDELS_2015_paper_14>,
-        <http://ceur-ws.org/Vol-1554/#PD_MoDELS_2015_paper_16>,
-        <http://ceur-ws.org/Vol-1554/#PD_MoDELS_2015_paper_17>,
-        <http://ceur-ws.org/Vol-1554/#PD_MoDELS_2015_paper_18.pdf>,
-        <http://ceur-ws.org/Vol-1554/#PD_MoDELS_2015_paper_2>,
-        <http://ceur-ws.org/Vol-1554/#PD_MoDELS_2015_paper_3>,
-        <http://ceur-ws.org/Vol-1554/#PD_MoDELS_2015_paper_4>,
-        <http://ceur-ws.org/Vol-1554/#PD_MoDELS_2015_paper_5>,
-        <http://ceur-ws.org/Vol-1554/#PD_MoDELS_2015_paper_6>,
-        <http://ceur-ws.org/Vol-1554/#PD_MoDELS_2015_paper_7>,
-        <http://ceur-ws.org/Vol-1554/#PD_MoDELS_2015_paper_8> ;
-    ns6:hasSession <http%3A//ceur-ws.org/Vol-1554/%23DemoandPosterSession> ;
-    ns7:issued "2016-02-02T00:00:00+00:00"^^xsd:dateTime ;
-    ns1:presentedAt <http://ceur-ws.org/Vol-1554/#event> ;
-    ns2:editor <http://ceur-ws.org/Vol-1554/#OmariBadreddin>,
-        <http://ceur-ws.org/Vol-1554/#VinayiKulkarni> .
 

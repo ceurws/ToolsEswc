@@ -1,157 +1,45 @@
-@prefix ns1: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns2: <http://xmlns.com/foaf/0.1/> .
-@prefix ns3: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns4: <http://www.w3.org/2002/07/owl#> .
-@prefix ns5: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns6: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns1: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns2: <http://www.w3.org/2002/07/owl#> .
+@prefix ns3: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns4: <http://purl.org/dc/elements/1.1/> .
+@prefix ns5: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns6: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns7: <http://xmlns.com/foaf/0.1/> .
 @prefix ns8: <http://purl.org/ontology/bibo/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-817/#ErikiDuval> a ns2:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/ErikiDuval> ;
-    ns2:made <http://ceur-ws.org/Vol-817/#paper4> ;
-    ns2:name "Erik Duval" .
-
-<http://ceur-ws.org/Vol-817/#GonzaloiParra> a ns2:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/GonzaloiParra> ;
-    ns2:made <http://ceur-ws.org/Vol-817/#paper4> ;
-    ns2:name "Gonzalo Parra" .
-
-<http://ceur-ws.org/Vol-817/#IaniMacColl> a ns2:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/IaniMacColl> ;
-    ns2:made <http://ceur-ws.org/Vol-817/#paper2> ;
-    ns2:name "Ian MacColl" .
-
-<http://ceur-ws.org/Vol-817/#JasminkoiNovak> a ns2:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/JasminkoiNovak> ;
-    ns2:made <http://ceur-ws.org/Vol-817/#paper1> ;
-    ns2:name "Jasminko Novak" .
-
-<http://ceur-ws.org/Vol-817/#JorisiKlerkx> a ns2:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/JorisiKlerkx> ;
-    ns2:made <http://ceur-ws.org/Vol-817/#paper4> ;
-    ns2:name "Joris Klerkx" .
-
-<http://ceur-ws.org/Vol-817/#MichaeliDocherty> a ns2:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/MichaeliDocherty> ;
-    ns2:made <http://ceur-ws.org/Vol-817/#paper2> ;
-    ns2:name "Michael Docherty" .
-
-<http://ceur-ws.org/Vol-817/#PalomaiD%C3%ADaz> a ns2:Person ;
-    ns1:affiliation "" ;
-    ns4:sameAs <http://ceur-ws.org/persons/PalomaiD%C3%ADaz> ;
-    ns2:name "Paloma Díaz" .
-
-<http://ceur-ws.org/Vol-817/#PhilippiHeim> a ns2:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/PhilippiHeim> ;
-    ns2:made <http://ceur-ws.org/Vol-817/#paper3> ;
-    ns2:name "Philipp Heim" .
-
-<http://ceur-ws.org/Vol-817/#RajineshiRavendran> a ns2:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/RajineshiRavendran> ;
-    ns2:made <http://ceur-ws.org/Vol-817/#paper2> ;
-    ns2:name "Rajinesh Ravendran" .
-
-<http://ceur-ws.org/Vol-817/#S%C3%B6reniBrunk> a ns2:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/S%C3%B6reniBrunk> ;
-    ns2:made <http://ceur-ws.org/Vol-817/#paper3> ;
-    ns2:name "Sören Brunk" .
-
-<http://ceur-ws.org/Vol-817/#SebastianiPreu%C3%9Fe> a ns2:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/SebastianiPreu%C3%9Fe> ;
-    ns2:made <http://ceur-ws.org/Vol-817/#paper1> ;
-    ns2:name "Sebastian Preuße" .
-
-<http://ceur-ws.org/Vol-817/#SteffeniLohmann> a ns2:Person ;
-    ns1:affiliation "" ;
-    ns4:sameAs <http://ceur-ws.org/persons/SteffeniLohmann> ;
-    ns2:name "Steffen Lohmann" .
-
-<http://ceur-ws.org/Vol-817/#TimoiStegemann> a ns2:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/TimoiStegemann> ;
-    ns2:made <http://ceur-ws.org/Vol-817/#paper5> ;
-    ns2:name "Timo Stegemann" .
-
-<http://ceur-ws.org/Vol-817/#WerneriGaulke> a ns2:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/WerneriGaulke> ;
-    ns2:made <http://ceur-ws.org/Vol-817/#paper5> ;
-    ns2:name "Werner Gaulke" .
-
-<http://ceur-ws.org/Vol-817/#event> a ns3:WorkshopEvent ;
-    ns3:hasLocation <http://dbpedia.org/resource/Portugal> ;
-    ns3:hasPart <http://ceur-ws.org/Vol-817/#part-DCI> ;
-    ns3:isSubEventOf <http://ceur-ws.org/Vol-817/#conf> ;
-    ns6:beginsAtDatetime "2011-09-06T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:endsAtDatetime "2011-09-06T00:00:00+00:00"^^xsd:dateTime ;
-    ns5:license <http://choosealicense.com/licenses/no-license/> .
-
-<http://ceur-ws.org/Vol-817/#J%C3%BCrgeniZiegler> a ns2:Person ;
-    ns1:affiliation "" ;
-    ns4:sameAs <http://ceur-ws.org/persons/J%C3%BCrgeniZiegler> ;
-    ns2:made <http://ceur-ws.org/Vol-817/#paper5> ;
-    ns2:name "Jürgen Ziegler" .
-
-<http://ceur-ws.org/Vol-817/#paperX1> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-817/> ;
-    ns5:title "The proceedings are also available as a" ;
-    ns1:author <http://ceur-ws.org/Vol-817/#TimiHussein> .
-
-<http://ceur-ws.org/Vol-817/#TimiHussein> a ns2:Person ;
-    ns1:affiliation "" ;
-    ns4:sameAs <http://ceur-ws.org/persons/TimiHussein> ;
-    ns2:made <http://ceur-ws.org/Vol-817/#paper5>,
-        <http://ceur-ws.org/Vol-817/#paperX1> ;
-    ns2:name "Tim Hussein" .
-
-<http://ceur-ws.org/Vol-817/#paper1> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-817/> ;
-    ns5:title "Designing Visual Systems for Social Data Analysis in Open Government Applications" ;
-    ns1:author <http://ceur-ws.org/Vol-817/#JasminkoiNovak>,
-        <http://ceur-ws.org/Vol-817/#SebastianiPreu%C3%9Fe> .
-
-<http://ceur-ws.org/Vol-817/#paper3> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-817/> ;
-    ns5:title "tFacet: Hierarchical Faceted Exploration of Semantic Data Using Well-Known Interaction Concepts" ;
-    ns1:author <http://ceur-ws.org/Vol-817/#PhilippiHeim>,
-        <http://ceur-ws.org/Vol-817/#S%C3%B6reniBrunk> .
-
-<http://ceur-ws.org/Vol-817/#paper2> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-817/> ;
-    ns5:title "Online Banking Customization via Tag-based Interaction" ;
-    ns1:author <http://ceur-ws.org/Vol-817/#IaniMacColl>,
-        <http://ceur-ws.org/Vol-817/#MichaeliDocherty>,
-        <http://ceur-ws.org/Vol-817/#RajineshiRavendran> .
-
-<http://ceur-ws.org/Vol-817/#paper4> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-817/> ;
-    ns5:title "More!: Mobile Interaction with Linked Data" ;
-    ns1:author <http://ceur-ws.org/Vol-817/#ErikiDuval>,
-        <http://ceur-ws.org/Vol-817/#GonzaloiParra>,
-        <http://ceur-ws.org/Vol-817/#JorisiKlerkx> .
-
-<http://ceur-ws.org/Vol-817/#paper5> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-817/> ;
-    ns5:title "Interacting with Semantic Data by Using X3S" ;
-    ns1:author <http://ceur-ws.org/Vol-817/#J%C3%BCrgeniZiegler>,
-        <http://ceur-ws.org/Vol-817/#TimiHussein>,
-        <http://ceur-ws.org/Vol-817/#TimoiStegemann>,
-        <http://ceur-ws.org/Vol-817/#WerneriGaulke> .
-
-<http://ceur-ws.org/Vol-817/> a ns3:Proceedings ;
-    ns3:hasPart <http://ceur-ws.org/Vol-817/#paper1>,
-        <http://ceur-ws.org/Vol-817/#paper2>,
-        <http://ceur-ws.org/Vol-817/#paper3>,
-        <http://ceur-ws.org/Vol-817/#paper4>,
-        <http://ceur-ws.org/Vol-817/#paper5>,
-        <http://ceur-ws.org/Vol-817/#paperX1> ;
-    ns7:issued "2011-12-07T00:00:00+00:00"^^xsd:dateTime ;
+<http://ceur-ws.org/Vol-817/> a ns1:Proceedings ;
+    ns5:issued "2011-12-07T00:00:00+00:00"^^xsd:dateTime ;
     ns8:presentedAt <http://ceur-ws.org/Vol-817/#event> ;
-    ns1:editor <http://ceur-ws.org/Vol-817/#J%C3%BCrgeniZiegler>,
+    ns6:editor <http://ceur-ws.org/Vol-817/#J%C3%BCrgeniZiegler>,
         <http://ceur-ws.org/Vol-817/#PalomaiD%C3%ADaz>,
         <http://ceur-ws.org/Vol-817/#SteffeniLohmann>,
         <http://ceur-ws.org/Vol-817/#TimiHussein> .
+
+<http://ceur-ws.org/Vol-817/#J%C3%BCrgeniZiegler> a ns7:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/J%C3%BCrgeniZiegler> ;
+    ns7:name "Jürgen Ziegler" .
+
+<http://ceur-ws.org/Vol-817/#PalomaiD%C3%ADaz> a ns7:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/PalomaiD%C3%ADaz> ;
+    ns7:name "Paloma Díaz" .
+
+<http://ceur-ws.org/Vol-817/#SteffeniLohmann> a ns7:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/SteffeniLohmann> ;
+    ns7:name "Steffen Lohmann" .
+
+<http://ceur-ws.org/Vol-817/#TimiHussein> a ns7:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/TimiHussein> ;
+    ns7:name "Tim Hussein" .
+
+<http://ceur-ws.org/Vol-817/#event> a ns1:WorkshopEvent ;
+    ns1:hasLocation <http://dbpedia.org/resource/Portugal> ;
+    ns1:hasPart <http://ceur-ws.org/Vol-817/#part-CEUR-WS> ;
+    ns1:isSubEventOf <http://ceur-ws.org/Vol-817/#conf> ;
+    ns3:beginsAtDatetime "2011-09-06T00:00:00+00:00"^^xsd:dateTime ;
+    ns3:endsAtDatetime "2011-09-06T00:00:00+00:00"^^xsd:dateTime ;
+    ns4:license "http://choosealicense.com/licenses/no-license/" .
 

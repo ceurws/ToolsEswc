@@ -1,123 +1,120 @@
-@prefix ns1: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns2: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns1: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns2: <http://purl.org/NET/c4dm/timeline.owl#> .
 @prefix ns3: <http://xmlns.com/foaf/0.1/> .
-@prefix ns4: <http://purl.org/ontology/bibo/#> .
-@prefix ns5: <http://www.w3.org/2002/07/owl#> .
-@prefix ns6: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns4: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns5: <http://purl.org/ontology/bibo/#> .
+@prefix ns6: <http://www.w3.org/2002/07/owl#> .
+@prefix ns7: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns9: <http://purl.org/dc/elements/1.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <http://ceur-ws.org/Vol-374/#AnjaiStrunk> a ns3:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/AnjaiStrunk> ;
+    ns6:sameAs <http://ceur-ws.org/persons/AnjaiStrunk> ;
     ns3:made <http://ceur-ws.org/Vol-374/#I-ESA2008_AnjaStrunk> ;
     ns3:name "Anja Strunk" .
 
 <http://ceur-ws.org/Vol-374/#GregoriScheithauer> a ns3:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/GregoriScheithauer> ;
+    ns6:sameAs <http://ceur-ws.org/persons/GregoriScheithauer> ;
     ns3:made <http://ceur-ws.org/Vol-374/#I-ESA2008_GregorScheithauer> ;
     ns3:name "Gregor Scheithauer" .
 
 <http://ceur-ws.org/Vol-374/#KonradiVoigt> a ns3:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/KonradiVoigt> ;
+    ns6:sameAs <http://ceur-ws.org/persons/KonradiVoigt> ;
     ns3:made <http://ceur-ws.org/Vol-374/#I-ESA2008_KonradVoigt> ;
     ns3:name "Konrad Voigt" .
 
 <http://ceur-ws.org/Vol-374/#MarkusiD%C3%B6hring> a ns3:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/MarkusiD%C3%B6hring> ;
+    ns6:sameAs <http://ceur-ws.org/persons/MarkusiD%C3%B6hring> ;
     ns3:made <http://ceur-ws.org/Vol-374/#I-ESA2008_MarkusDoehring> ;
     ns3:name "Markus Döhring" .
 
 <http://ceur-ws.org/Vol-374/#MartiniKnechtel> a ns3:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/MartiniKnechtel> ;
+    ns6:sameAs <http://ceur-ws.org/persons/MartiniKnechtel> ;
     ns3:made <http://ceur-ws.org/Vol-374/#I-ESA2008_MartinKnechtel> ;
     ns3:name "Martin Knechtel" .
 
 <http://ceur-ws.org/Vol-374/#MatthiasiWinkler> a ns3:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/MatthiasiWinkler> ;
+    ns6:sameAs <http://ceur-ws.org/persons/MatthiasiWinkler> ;
     ns3:made <http://ceur-ws.org/Vol-374/#I-ESA2008_MatthiasWinkler> ;
     ns3:name "Matthias Winkler" .
 
 <http://ceur-ws.org/Vol-374/#MichaeliNiemann> a ns3:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/MichaeliNiemann> ;
+    ns6:sameAs <http://ceur-ws.org/persons/MichaeliNiemann> ;
     ns3:made <http://ceur-ws.org/Vol-374/#I-ESA2008_MichaelNiemann> ;
     ns3:name "Michael Niemann" .
 
 <http://ceur-ws.org/Vol-374/#RaineriRuggaber> a ns3:Person ;
-    ns1:affiliation "" ;
-    ns5:sameAs <http://ceur-ws.org/persons/RaineriRuggaber> ;
+    ns4:affiliation "" ;
+    ns6:sameAs <http://ceur-ws.org/persons/RaineriRuggaber> ;
     ns3:name "Rainer Ruggaber" .
 
 <http://ceur-ws.org/Vol-374/#SonjaiLehmann> a ns3:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/SonjaiLehmann> ;
+    ns6:sameAs <http://ceur-ws.org/persons/SonjaiLehmann> ;
     ns3:made <http://ceur-ws.org/Vol-374/#I-ESA2008_SonjaLehmann> ;
     ns3:name "Sonja Lehmann" .
 
-<http://ceur-ws.org/Vol-374/#event> a ns2:WorkshopEvent ;
-    ns2:hasLocation <http://dbpedia.org/resource/Germany> ;
-    ns2:hasPart <http://ceur-ws.org/Vol-374/#part-ws> ;
-    ns2:isSubEventOf <http://ceur-ws.org/Vol-374/#conf> ;
-    ns8:beginsAtDatetime "2008-03-25T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:endsAtDatetime "2008-03-25T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:license <http://choosealicense.com/licenses/no-license/> .
+<http://ceur-ws.org/Vol-374/#event> a ns1:WorkshopEvent ;
+    ns1:hasLocation <http://dbpedia.org/resource/Germany> ;
+    ns1:hasPart <http://ceur-ws.org/Vol-374/#part-ws> ;
+    ns1:isSubEventOf <http://ceur-ws.org/Vol-374/#conf> ;
+    ns2:beginsAtDatetime "2008-09-02T00:00:00+00:00"^^xsd:dateTime ;
+    ns2:endsAtDatetime "2008-09-02T00:00:00+00:00"^^xsd:dateTime ;
+    ns9:license "http://choosealicense.com/licenses/no-license/" .
 
-<http://ceur-ws.org/Vol-374/#I-ESA2008_AnjaStrunk> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-374/> ;
-    ns6:title "A Feedback-Aware Binding Component" ;
-    ns4:section <http%3A//ceur-ws.org/Vol-374/%23> ;
-    ns1:author <http://ceur-ws.org/Vol-374/#AnjaiStrunk> .
+<http://ceur-ws.org/Vol-374/#I-ESA2008_AnjaStrunk> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-374/> ;
+    ns7:title "A Feedback-Aware Binding Component" ;
+    ns5:section <http://ceur-ws.org/Vol-374/#> ;
+    ns4:author <http://ceur-ws.org/Vol-374/#AnjaiStrunk> .
 
-<http://ceur-ws.org/Vol-374/#I-ESA2008_GregorScheithauer> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-374/> ;
-    ns6:title "Process-oriented Requirement Modeling for the Internet of Services" ;
-    ns4:section <http%3A//ceur-ws.org/Vol-374/%23> ;
-    ns1:author <http://ceur-ws.org/Vol-374/#GregoriScheithauer> .
+<http://ceur-ws.org/Vol-374/#I-ESA2008_GregorScheithauer> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-374/> ;
+    ns7:title "Process-oriented Requirement Modeling for the Internet of Services" ;
+    ns5:section <http://ceur-ws.org/Vol-374/#> ;
+    ns4:author <http://ceur-ws.org/Vol-374/#GregoriScheithauer> .
 
-<http://ceur-ws.org/Vol-374/#I-ESA2008_KonradVoigt> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-374/> ;
-    ns6:title "Generation of Language-Specific Transformation Rules based on Metamodels" ;
-    ns4:section <http%3A//ceur-ws.org/Vol-374/%23> ;
-    ns1:author <http://ceur-ws.org/Vol-374/#KonradiVoigt> .
+<http://ceur-ws.org/Vol-374/#I-ESA2008_KonradVoigt> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-374/> ;
+    ns7:title "Generation of Language-Specific Transformation Rules based on Metamodels" ;
+    ns5:section <http://ceur-ws.org/Vol-374/#> ;
+    ns4:author <http://ceur-ws.org/Vol-374/#KonradiVoigt> .
 
-<http://ceur-ws.org/Vol-374/#I-ESA2008_MarkusDoehring> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-374/> ;
-    ns6:title "EXTRACONN: Extraction and Analysis of Company Networks from News" ;
-    ns4:section <http%3A//ceur-ws.org/Vol-374/%23> ;
-    ns1:author <http://ceur-ws.org/Vol-374/#MarkusiD%C3%B6hring> .
+<http://ceur-ws.org/Vol-374/#I-ESA2008_MarkusDoehring> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-374/> ;
+    ns7:title "EXTRACONN: Extraction and Analysis of Company Networks from News" ;
+    ns5:section <http://ceur-ws.org/Vol-374/#> ;
+    ns4:author <http://ceur-ws.org/Vol-374/#MarkusiD%C3%B6hring> .
 
-<http://ceur-ws.org/Vol-374/#I-ESA2008_MartinKnechtel> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-374/> ;
-    ns6:title "Access restriction inside ontologies" ;
-    ns4:section <http%3A//ceur-ws.org/Vol-374/%23> ;
-    ns1:author <http://ceur-ws.org/Vol-374/#MartiniKnechtel> .
+<http://ceur-ws.org/Vol-374/#I-ESA2008_MartinKnechtel> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-374/> ;
+    ns7:title "Access restriction inside ontologies" ;
+    ns5:section <http://ceur-ws.org/Vol-374/#> ;
+    ns4:author <http://ceur-ws.org/Vol-374/#MartiniKnechtel> .
 
-<http://ceur-ws.org/Vol-374/#I-ESA2008_MatthiasWinkler> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-374/> ;
-    ns6:title "Service Description in Business Value Networks" ;
-    ns4:section <http%3A//ceur-ws.org/Vol-374/%23> ;
-    ns1:author <http://ceur-ws.org/Vol-374/#MatthiasiWinkler> .
+<http://ceur-ws.org/Vol-374/#I-ESA2008_MatthiasWinkler> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-374/> ;
+    ns7:title "Service Description in Business Value Networks" ;
+    ns5:section <http://ceur-ws.org/Vol-374/#> ;
+    ns4:author <http://ceur-ws.org/Vol-374/#MatthiasiWinkler> .
 
-<http://ceur-ws.org/Vol-374/#I-ESA2008_MichaelNiemann> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-374/> ;
-    ns6:title "Governance for Service-oriented Architectures: An Implementation Approach" ;
-    ns4:section <http%3A//ceur-ws.org/Vol-374/%23> ;
-    ns1:author <http://ceur-ws.org/Vol-374/#MichaeliNiemann> .
+<http://ceur-ws.org/Vol-374/#I-ESA2008_MichaelNiemann> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-374/> ;
+    ns7:title "Governance for Service-oriented Architectures: An Implementation Approach" ;
+    ns5:section <http://ceur-ws.org/Vol-374/#> ;
+    ns4:author <http://ceur-ws.org/Vol-374/#MichaeliNiemann> .
 
-<http://ceur-ws.org/Vol-374/#I-ESA2008_SonjaLehmann> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-374/> ;
-    ns6:title "Revenue and Pricing Models for Software Vendors with a Focus on Software-as-a-Service" ;
-    ns4:section <http%3A//ceur-ws.org/Vol-374/%23> ;
-    ns1:author <http://ceur-ws.org/Vol-374/#SonjaiLehmann> .
+<http://ceur-ws.org/Vol-374/#I-ESA2008_SonjaLehmann> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-374/> ;
+    ns7:title "Revenue and Pricing Models for Software Vendors with a Focus on Software-as-a-Service" ;
+    ns5:section <http://ceur-ws.org/Vol-374/#> ;
+    ns4:author <http://ceur-ws.org/Vol-374/#SonjaiLehmann> .
 
-<http%3A//ceur-ws.org/Vol-374/%23> a ns2:SessionEvent ;
-    ns2:partOf <http://ceur-ws.org/Vol-374/> ;
-    ns6:title "" .
-
-<http://ceur-ws.org/Vol-374/> a ns2:Proceedings ;
-    ns2:hasPart <http://ceur-ws.org/Vol-374/#I-ESA2008_AnjaStrunk>,
+<http://ceur-ws.org/Vol-374/> a ns1:Proceedings ;
+    ns1:hasPart <http://ceur-ws.org/Vol-374/#I-ESA2008_AnjaStrunk>,
         <http://ceur-ws.org/Vol-374/#I-ESA2008_GregorScheithauer>,
         <http://ceur-ws.org/Vol-374/#I-ESA2008_KonradVoigt>,
         <http://ceur-ws.org/Vol-374/#I-ESA2008_MarkusDoehring>,
@@ -125,8 +122,12 @@
         <http://ceur-ws.org/Vol-374/#I-ESA2008_MatthiasWinkler>,
         <http://ceur-ws.org/Vol-374/#I-ESA2008_MichaelNiemann>,
         <http://ceur-ws.org/Vol-374/#I-ESA2008_SonjaLehmann> ;
-    ns2:hasSession <http%3A//ceur-ws.org/Vol-374/%23> ;
-    ns7:issued "2008-08-11T00:00:00+00:00"^^xsd:dateTime ;
-    ns4:presentedAt <http://ceur-ws.org/Vol-374/#event> ;
-    ns1:editor <http://ceur-ws.org/Vol-374/#RaineriRuggaber> .
+    ns1:hasSession <http://ceur-ws.org/Vol-374/#> ;
+    ns8:issued "2008-08-11T00:00:00+00:00"^^xsd:dateTime ;
+    ns5:presentedAt <http://ceur-ws.org/Vol-374/#event> ;
+    ns4:editor <http://ceur-ws.org/Vol-374/#RaineriRuggaber> .
+
+<http://ceur-ws.org/Vol-374/#> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-374/> ;
+    ns7:title "" .
 

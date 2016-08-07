@@ -1,0 +1,49 @@
+@prefix ns1: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns2: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns3: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns4: <http://www.w3.org/2002/07/owl#> .
+@prefix ns5: <http://xmlns.com/foaf/0.1/> .
+@prefix ns6: <http://purl.org/ontology/bibo/#> .
+@prefix ns7: <http://purl.org/dc/elements/1.1/> .
+@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://ceur-ws.org/Vol-1618/> a ns1:Proceedings ;
+    ns8:issued "2016-07-04T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:presentedAt <http://ceur-ws.org/Vol-1618/#event> ;
+    ns3:editor <http://ceur-ws.org/Vol-1618/#DarinaiDicheva>,
+        <http://ceur-ws.org/Vol-1618/#FedericaiCena>,
+        <http://ceur-ws.org/Vol-1618/#JieiZhang>,
+        <http://ceur-ws.org/Vol-1618/#MicheliDesmarais> .
+
+<http://ceur-ws.org/Vol-1618/#DarinaiDicheva> a ns5:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/DarinaiDicheva> ;
+    ns5:name "Darina Dicheva" .
+
+<http://ceur-ws.org/Vol-1618/#FedericaiCena> a ns5:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/FedericaiCena> ;
+    ns5:name "Federica Cena" .
+
+<http://ceur-ws.org/Vol-1618/#JieiZhang> a ns5:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/JieiZhang> ;
+    ns5:name "Jie Zhang" .
+
+<http://ceur-ws.org/Vol-1618/#MicheliDesmarais> a ns5:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/MicheliDesmarais> ;
+    ns5:name "Michel Desmarais" .
+
+<http://ceur-ws.org/Vol-1618/#event> a ns1:WorkshopEvent ;
+    ns1:hasLocation <http://dbpedia.org/resource/Canada> ;
+    ns1:hasPart <http://ceur-ws.org/Vol-1618/#part-UMAP> ;
+    ns1:isSubEventOf <http://ceur-ws.org/Vol-1618/#conf> ;
+    ns2:beginsAtDatetime "2016-07-13T00:00:00+00:00"^^xsd:dateTime ;
+    ns2:endsAtDatetime "2016-07-16T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:license "http://creativecommons.org/publicdomain/zero/1.0/" ;
+    rdfs:seeAlso <http://ceur-ws.org/Vol-1181/#event>,
+        <http://ceur-ws.org/Vol-1388/#event>,
+        <http://ceur-ws.org/Vol-872/#event>,
+        <http://ceur-ws.org/Vol-997/#event> .
+

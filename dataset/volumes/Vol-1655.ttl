@@ -1,0 +1,45 @@
+@prefix ns1: <http://www.w3.org/2002/07/owl#> .
+@prefix ns2: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns3: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns4: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns5: <http://xmlns.com/foaf/0.1/> .
+@prefix ns6: <http://purl.org/dc/elements/1.1/> .
+@prefix ns7: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns8: <http://purl.org/ontology/bibo/#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://ceur-ws.org/Vol-1655/> a ns7:Proceedings ;
+    ns2:issued "2016-08-06T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:presentedAt <http://ceur-ws.org/Vol-1655/#event> ;
+    ns3:editor <http://ceur-ws.org/Vol-1655/#PeteriRodgers>,
+        <http://ceur-ws.org/Vol-1655/#SveniLinker>,
+        <http://ceur-ws.org/Vol-1655/#UniversityiofiBrighton>,
+        <http://ceur-ws.org/Vol-1655/#UniversityiofiKent> .
+
+<http://ceur-ws.org/Vol-1655/#PeteriRodgers> a ns5:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/PeteriRodgers> ;
+    ns5:name "Peter Rodgers" .
+
+<http://ceur-ws.org/Vol-1655/#SveniLinker> a ns5:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/SveniLinker> ;
+    ns5:name "Sven Linker" .
+
+<http://ceur-ws.org/Vol-1655/#UniversityiofiBrighton> a ns5:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/UniversityiofiBrighton> ;
+    ns5:name "University of Brighton" .
+
+<http://ceur-ws.org/Vol-1655/#UniversityiofiKent> a ns5:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/UniversityiofiKent> ;
+    ns5:name "University of Kent" .
+
+<http://ceur-ws.org/Vol-1655/#event> a ns7:WorkshopEvent ;
+    ns7:hasLocation <http://dbpedia.org/resource/United_States> ;
+    ns7:hasPart <http://ceur-ws.org/Vol-1655/#part-ws> ;
+    ns7:isSubEventOf <http://ceur-ws.org/Vol-1655/#conf> ;
+    ns4:beginsAtDatetime "2016-08-07T00:00:00+00:00"^^xsd:dateTime ;
+    ns4:endsAtDatetime "2016-08-07T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:license "http://creativecommons.org/publicdomain/zero/1.0/" .
+

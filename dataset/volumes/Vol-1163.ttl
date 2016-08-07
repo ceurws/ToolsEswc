@@ -1,317 +1,37 @@
-@prefix ns1: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns2: <http://xmlns.com/foaf/0.1/> .
-@prefix ns3: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns4: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns5: <http://purl.org/ontology/bibo/#> .
-@prefix ns6: <http://www.w3.org/2002/07/owl#> .
-@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns1: <http://www.w3.org/2002/07/owl#> .
+@prefix ns2: <http://purl.org/ontology/bibo/#> .
+@prefix ns3: <http://xmlns.com/foaf/0.1/> .
+@prefix ns4: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns5: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns6: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns7: <http://purl.org/dc/elements/1.1/> .
+@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1163/#AndreasiDolzmann> a ns2:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/AndreasiDolzmann> ;
-    ns2:made <http://ceur-ws.org/Vol-1163/#paper-12> ;
-    ns2:name "Andreas Dolzmann" .
+<http://ceur-ws.org/Vol-1163/> a ns4:Proceedings ;
+    ns8:issued "2014-06-29T00:00:00+00:00"^^xsd:dateTime ;
+    ns2:presentedAt <http://ceur-ws.org/Vol-1163/#event> ;
+    ns5:editor <http://ceur-ws.org/Vol-1163/#ChristophiM.iWintersteiger>,
+        <http://ceur-ws.org/Vol-1163/#PhilippiR%C3%BCmmer> .
 
-<http://ceur-ws.org/Vol-1163/#CesareiTinelli> a ns2:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/CesareiTinelli> ;
-    ns2:made <http://ceur-ws.org/Vol-1163/#paper-10> ;
-    ns2:name "Cesare Tinelli" .
+<http://ceur-ws.org/Vol-1163/#ChristophiM.iWintersteiger> a ns3:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/ChristophiM.iWintersteiger> ;
+    ns3:name "Christoph M. Wintersteiger" .
 
-<http://ceur-ws.org/Vol-1163/#ChristophiM.iWintersteiger> a ns2:Person ;
-    ns4:affiliation "" ;
-    ns6:sameAs <http://ceur-ws.org/persons/ChristophiM.iWintersteiger> ;
-    ns2:name "Christoph M. Wintersteiger" .
+<http://ceur-ws.org/Vol-1163/#PhilippiR%C3%BCmmer> a ns3:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/PhilippiR%C3%BCmmer> ;
+    ns3:name "Philipp Rümmer" .
 
-<http://ceur-ws.org/Vol-1163/#Cl%C3%A1udiaiTavares> a ns2:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/Cl%C3%A1udiaiTavares> ;
-    ns2:made <http://ceur-ws.org/Vol-1163/#paper-08> ;
-    ns2:name "Cláudia Tavares" .
-
-<http://ceur-ws.org/Vol-1163/#CristianiCadar> a ns2:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/CristianiCadar> ;
-    ns2:made <http://ceur-ws.org/Vol-1163/#paper-03> ;
-    ns2:name "Cristian Cadar" .
-
-<http://ceur-ws.org/Vol-1163/#DanieliJ.iFremont> a ns2:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/DanieliJ.iFremont> ;
-    ns2:made <http://ceur-ws.org/Vol-1163/#paper-02> ;
-    ns2:name "Daniel J. Fremont" .
-
-<http://ceur-ws.org/Vol-1163/#DavidiD%C3%A9harbe> a ns2:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/DavidiD%C3%A9harbe> ;
-    ns2:made <http://ceur-ws.org/Vol-1163/#paper-08> ;
-    ns2:name "David Déharbe" .
-
-<http://ceur-ws.org/Vol-1163/#EdmundiS.iL.iLam> a ns2:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/EdmundiS.iL.iLam> ;
-    ns2:made <http://ceur-ws.org/Vol-1163/#paper-05> ;
-    ns2:name "Edmund S. L. Lam" .
-
-<http://ceur-ws.org/Vol-1163/#FrancescoiAlberti> a ns2:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/FrancescoiAlberti> ;
-    ns2:made <http://ceur-ws.org/Vol-1163/#paper-07> ;
-    ns2:name "Francesco Alberti" .
-
-<http://ceur-ws.org/Vol-1163/#GuillaumeiMelquiond> a ns2:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/GuillaumeiMelquiond> ;
-    ns2:made <http://ceur-ws.org/Vol-1163/#paper-09> ;
-    ns2:name "Guillaume Melquiond" .
-
-<http://ceur-ws.org/Vol-1163/#HristinaiPalikareva> a ns2:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/HristinaiPalikareva> ;
-    ns2:made <http://ceur-ws.org/Vol-1163/#paper-03> ;
-    ns2:name "Hristina Palikareva" .
-
-<http://ceur-ws.org/Vol-1163/#IlianoiCervesato> a ns2:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/IlianoiCervesato> ;
-    ns2:made <http://ceur-ws.org/Vol-1163/#paper-05> ;
-    ns2:name "Iliano Cervesato" .
-
-<http://ceur-ws.org/Vol-1163/#JocheniHoenicke> a ns2:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/JocheniHoenicke> ;
-    ns2:made <http://ceur-ws.org/Vol-1163/#paper-06> ;
-    ns2:name "Jochen Hoenicke" .
-
-<http://ceur-ws.org/Vol-1163/#JuergeniChrist> a ns2:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/JuergeniChrist> ;
-    ns2:made <http://ceur-ws.org/Vol-1163/#paper-06> ;
-    ns2:name "Juergen Christ" .
-
-<http://ceur-ws.org/Vol-1163/#JustiniPearson> a ns2:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/JustiniPearson> ;
-    ns2:made <http://ceur-ws.org/Vol-1163/#paper-04> ;
-    ns2:name "Justin Pearson" .
-
-<http://ceur-ws.org/Vol-1163/#KonstantiniKorovin> a ns2:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/KonstantiniKorovin> ;
-    ns2:made <http://ceur-ws.org/Vol-1163/#paper-13> ;
-    ns2:name "Konstantin Korovin" .
-
-<http://ceur-ws.org/Vol-1163/#MatsiCarlsson> a ns2:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/MatsiCarlsson> ;
-    ns2:made <http://ceur-ws.org/Vol-1163/#paper-04> ;
-    ns2:name "Mats Carlsson" .
-
-<http://ceur-ws.org/Vol-1163/#MizuhitoiOgawa> a ns2:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/MizuhitoiOgawa> ;
-    ns2:made <http://ceur-ws.org/Vol-1163/#paper-11> ;
-    ns2:name "Mizuhito Ogawa" .
-
-<http://ceur-ws.org/Vol-1163/#NatashaiSharygina> a ns2:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/NatashaiSharygina> ;
-    ns2:made <http://ceur-ws.org/Vol-1163/#paper-07> ;
-    ns2:name "Natasha Sharygina" .
-
-<http://ceur-ws.org/Vol-1163/#OlgaiGrinchtein> a ns2:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/OlgaiGrinchtein> ;
-    ns2:made <http://ceur-ws.org/Vol-1163/#paper-04> ;
-    ns2:name "Olga Grinchtein" .
-
-<http://ceur-ws.org/Vol-1163/#PhilippiR%C3%BCmmer> a ns2:Person ;
-    ns4:affiliation "" ;
-    ns6:sameAs <http://ceur-ws.org/persons/PhilippiR%C3%BCmmer> ;
-    ns2:name "Philipp Rümmer" .
-
-<http://ceur-ws.org/Vol-1163/#RichardiBonichon> a ns2:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/RichardiBonichon> ;
-    ns2:made <http://ceur-ws.org/Vol-1163/#paper-08> ;
-    ns2:name "Richard Bonichon" .
-
-<http://ceur-ws.org/Vol-1163/#SanjitiA.iSeshia> a ns2:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/SanjitiA.iSeshia> ;
-    ns2:made <http://ceur-ws.org/Vol-1163/#paper-02> ;
-    ns2:name "Sanjit A. Seshia" .
-
-<http://ceur-ws.org/Vol-1163/#SilvioiGhilardi> a ns2:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/SilvioiGhilardi> ;
-    ns2:made <http://ceur-ws.org/Vol-1163/#paper-07> ;
-    ns2:name "Silvio Ghilardi" .
-
-<http://ceur-ws.org/Vol-1163/#TimiKing> a ns2:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/TimiKing> ;
-    ns2:made <http://ceur-ws.org/Vol-1163/#paper-10> ;
-    ns2:name "Tim King" .
-
-<http://ceur-ws.org/Vol-1163/#ToiVaniKhanh> a ns2:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/ToiVaniKhanh> ;
-    ns2:made <http://ceur-ws.org/Vol-1163/#paper-11> ;
-    ns2:name "To Van Khanh" .
-
-<http://ceur-ws.org/Vol-1163/#VuiXuaniTung> a ns2:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/VuiXuaniTung> ;
-    ns2:made <http://ceur-ws.org/Vol-1163/#paper-11> ;
-    ns2:name "Vu Xuan Tung" .
-
-<http://ceur-ws.org/Vol-1163/#event> a ns1:WorkshopEvent ;
-    ns1:hasLocation <http://dbpedia.org/resource/Austria> ;
-    ns1:hasPart <http://ceur-ws.org/Vol-1163/#part-CAV>,
+<http://ceur-ws.org/Vol-1163/#event> a ns4:WorkshopEvent ;
+    ns4:hasLocation <http://dbpedia.org/resource/Austria> ;
+    ns4:hasPart <http://ceur-ws.org/Vol-1163/#part-CAV>,
         <http://ceur-ws.org/Vol-1163/#part-IJCAR>,
         <http://ceur-ws.org/Vol-1163/#part-SAT> ;
-    ns1:isSubEventOf <http://ceur-ws.org/Vol-1163/#conf> ;
-    ns8:beginsAtDatetime "2014-07-17T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:endsAtDatetime "2014-07-18T00:00:00+00:00"^^xsd:dateTime ;
-    ns3:license <http://choosealicense.com/licenses/no-license/> .
-
-<http://ceur-ws.org/Vol-1163/#ClarkiBarrett> a ns2:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/ClarkiBarrett> ;
-    ns2:made <http://ceur-ws.org/Vol-1163/#paper-01>,
-        <http://ceur-ws.org/Vol-1163/#paper-10> ;
-    ns2:name "Clark Barrett" .
-
-<http://ceur-ws.org/Vol-1163/#MarekiKosta> a ns2:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/MarekiKosta> ;
-    ns2:made <http://ceur-ws.org/Vol-1163/#paper-12>,
-        <http://ceur-ws.org/Vol-1163/#paper-13> ;
-    ns2:name "Marek Kosta" .
-
-<http://ceur-ws.org/Vol-1163/#ThomasiSturm> a ns2:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/ThomasiSturm> ;
-    ns2:made <http://ceur-ws.org/Vol-1163/#paper-12>,
-        <http://ceur-ws.org/Vol-1163/#paper-13> ;
-    ns2:name "Thomas Sturm" .
-
-<http://ceur-ws.org/Vol-1163/#paper-01> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-1163/> ;
-    ns3:title "SMT: Where do we go from here?" ;
-    ns5:endPage 1 ;
-    ns5:numPages 1 ;
-    ns5:startPage 1 ;
-    ns4:author <http://ceur-ws.org/Vol-1163/#ClarkiBarrett> .
-
-<http://ceur-ws.org/Vol-1163/#paper-09> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-1163/> ;
-    ns3:title "Automating the Verification of Floating-Point Algorithms" ;
-    ns5:endPage 63 ;
-    ns5:numPages 1 ;
-    ns5:startPage 63 ;
-    ns4:author <http://ceur-ws.org/Vol-1163/#GuillaumeiMelquiond> .
-
-<http://ceur-ws.org/Vol-1163/#paper-02> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-1163/> ;
-    ns3:title "Speeding Up SMT-Based Quantitative Program Analysis" ;
-    ns5:endPage 13 ;
-    ns5:numPages 11 ;
-    ns5:startPage 3 ;
-    ns4:author <http://ceur-ws.org/Vol-1163/#DanieliJ.iFremont>,
-        <http://ceur-ws.org/Vol-1163/#SanjitiA.iSeshia> .
-
-<http://ceur-ws.org/Vol-1163/#paper-03> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-1163/> ;
-    ns3:title "Multi-solver Support in Symbolic Execution" ;
-    ns5:endPage 15 ;
-    ns5:numPages 1 ;
-    ns5:startPage 15 ;
-    ns4:author <http://ceur-ws.org/Vol-1163/#CristianiCadar>,
-        <http://ceur-ws.org/Vol-1163/#HristinaiPalikareva> .
-
-<http://ceur-ws.org/Vol-1163/#paper-05> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-1163/> ;
-    ns3:title "Reasoning About Set Comprehensions" ;
-    ns5:endPage 37 ;
-    ns5:numPages 11 ;
-    ns5:startPage 27 ;
-    ns4:author <http://ceur-ws.org/Vol-1163/#EdmundiS.iL.iLam>,
-        <http://ceur-ws.org/Vol-1163/#IlianoiCervesato> .
-
-<http://ceur-ws.org/Vol-1163/#paper-06> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-1163/> ;
-    ns3:title "Weakly Equivalent Arrays" ;
-    ns5:endPage 49 ;
-    ns5:numPages 11 ;
-    ns5:startPage 39 ;
-    ns4:author <http://ceur-ws.org/Vol-1163/#JocheniHoenicke>,
-        <http://ceur-ws.org/Vol-1163/#JuergeniChrist> .
-
-<http://ceur-ws.org/Vol-1163/#paper-04> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-1163/> ;
-    ns3:title "Protocol Log Analysis with Constraint Programming" ;
-    ns5:endPage 26 ;
-    ns5:numPages 10 ;
-    ns5:startPage 17 ;
-    ns4:author <http://ceur-ws.org/Vol-1163/#JustiniPearson>,
-        <http://ceur-ws.org/Vol-1163/#MatsiCarlsson>,
-        <http://ceur-ws.org/Vol-1163/#OlgaiGrinchtein> .
-
-<http://ceur-ws.org/Vol-1163/#paper-07> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-1163/> ;
-    ns3:title "Decision Procedures for Flat Array Properties" ;
-    ns5:endPage 51 ;
-    ns5:numPages 1 ;
-    ns5:startPage 51 ;
-    ns4:author <http://ceur-ws.org/Vol-1163/#FrancescoiAlberti>,
-        <http://ceur-ws.org/Vol-1163/#NatashaiSharygina>,
-        <http://ceur-ws.org/Vol-1163/#SilvioiGhilardi> .
-
-<http://ceur-ws.org/Vol-1163/#paper-08> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-1163/> ;
-    ns3:title "Extending SMT-LIB v2 with λ-Terms and Polymorphism" ;
-    ns5:endPage 62 ;
-    ns5:numPages 10 ;
-    ns5:startPage 53 ;
-    ns4:author <http://ceur-ws.org/Vol-1163/#Cl%C3%A1udiaiTavares>,
-        <http://ceur-ws.org/Vol-1163/#DavidiD%C3%A9harbe>,
-        <http://ceur-ws.org/Vol-1163/#RichardiBonichon> .
-
-<http://ceur-ws.org/Vol-1163/#paper-10> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-1163/> ;
-    ns3:title "Leveraging Linear and Mixed Integer Programming for SMT" ;
-    ns5:endPage 65 ;
-    ns5:numPages 1 ;
-    ns5:startPage 65 ;
-    ns4:author <http://ceur-ws.org/Vol-1163/#CesareiTinelli>,
-        <http://ceur-ws.org/Vol-1163/#ClarkiBarrett>,
-        <http://ceur-ws.org/Vol-1163/#TimiKing> .
-
-<http://ceur-ws.org/Vol-1163/#paper-11> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-1163/> ;
-    ns3:title "raSAT: SMT for Polynomial Inequality" ;
-    ns5:endPage 67 ;
-    ns5:numPages 1 ;
-    ns5:startPage 67 ;
-    ns4:author <http://ceur-ws.org/Vol-1163/#MizuhitoiOgawa>,
-        <http://ceur-ws.org/Vol-1163/#ToiVaniKhanh>,
-        <http://ceur-ws.org/Vol-1163/#VuiXuaniTung> .
-
-<http://ceur-ws.org/Vol-1163/#paper-12> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-1163/> ;
-    ns3:title "Better Answers to Real Questions" ;
-    ns5:endPage 69 ;
-    ns5:numPages 1 ;
-    ns5:startPage 69 ;
-    ns4:author <http://ceur-ws.org/Vol-1163/#AndreasiDolzmann>,
-        <http://ceur-ws.org/Vol-1163/#MarekiKosta>,
-        <http://ceur-ws.org/Vol-1163/#ThomasiSturm> .
-
-<http://ceur-ws.org/Vol-1163/#paper-13> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-1163/> ;
-    ns3:title "Towards Conflict-Driven Learning for Virtual Substitution" ;
-    ns5:endPage 71 ;
-    ns5:numPages 1 ;
-    ns5:startPage 71 ;
-    ns4:author <http://ceur-ws.org/Vol-1163/#KonstantiniKorovin>,
-        <http://ceur-ws.org/Vol-1163/#MarekiKosta>,
-        <http://ceur-ws.org/Vol-1163/#ThomasiSturm> .
-
-<http://ceur-ws.org/Vol-1163/> a ns1:Proceedings ;
-    ns1:hasPart <http://ceur-ws.org/Vol-1163/#paper-01>,
-        <http://ceur-ws.org/Vol-1163/#paper-02>,
-        <http://ceur-ws.org/Vol-1163/#paper-03>,
-        <http://ceur-ws.org/Vol-1163/#paper-04>,
-        <http://ceur-ws.org/Vol-1163/#paper-05>,
-        <http://ceur-ws.org/Vol-1163/#paper-06>,
-        <http://ceur-ws.org/Vol-1163/#paper-07>,
-        <http://ceur-ws.org/Vol-1163/#paper-08>,
-        <http://ceur-ws.org/Vol-1163/#paper-09>,
-        <http://ceur-ws.org/Vol-1163/#paper-10>,
-        <http://ceur-ws.org/Vol-1163/#paper-11>,
-        <http://ceur-ws.org/Vol-1163/#paper-12>,
-        <http://ceur-ws.org/Vol-1163/#paper-13> ;
-    ns7:issued "2014-06-29T00:00:00+00:00"^^xsd:dateTime ;
-    ns5:presentedAt <http://ceur-ws.org/Vol-1163/#event> ;
-    ns4:editor <http://ceur-ws.org/Vol-1163/#ChristophiM.iWintersteiger>,
-        <http://ceur-ws.org/Vol-1163/#PhilippiR%C3%BCmmer> .
+    ns4:isSubEventOf <http://ceur-ws.org/Vol-1163/#conf> ;
+    ns6:beginsAtDatetime "2014-07-17T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:endsAtDatetime "2014-07-18T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:license "http://choosealicense.com/licenses/no-license/" .
 

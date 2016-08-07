@@ -1,11 +1,12 @@
 @prefix ns1: <http://swrc.ontoware.org/ontology/#> .
 @prefix ns2: <http://xmlns.com/foaf/0.1/> .
 @prefix ns3: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns4: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns4: <http://purl.org/NET/c4dm/timeline.owl#> .
 @prefix ns5: <http://www.w3.org/2002/07/owl#> .
-@prefix ns6: <http://purl.org/ontology/bibo/#> .
-@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns6: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns7: <http://purl.org/dc/elements/1.1/> .
+@prefix ns8: <http://purl.org/ontology/bibo/#> .
+@prefix ns9: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -81,16 +82,16 @@
     ns3:hasPart <http://ceur-ws.org/Vol-306/#part-E-Learning>,
         <http://ceur-ws.org/Vol-306/#part-LOKMOL> ;
     ns3:isSubEventOf <http://ceur-ws.org/Vol-306/#conf> ;
-    ns7:beginsAtDatetime "2007-09-18T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:endsAtDatetime "2007-09-18T00:00:00+00:00"^^xsd:dateTime ;
-    ns4:license <http://choosealicense.com/licenses/no-license/> .
+    ns4:beginsAtDatetime "2008-02-03T00:00:00+00:00"^^xsd:dateTime ;
+    ns4:endsAtDatetime "2008-02-03T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:license "http://choosealicense.com/licenses/no-license/" .
 
 <http://ceur-ws.org/Vol-306/> a ns3:Proceedings ;
     ns3:hasPart <http://ceur-ws.org/Vol-306/#paper01>,
         <http://ceur-ws.org/Vol-306/#paper02>,
         <http://ceur-ws.org/Vol-306/#paper03> ;
-    ns8:issued "2008-01-07T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:presentedAt <http://ceur-ws.org/Vol-306/#event> ;
+    ns9:issued "2008-01-07T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:presentedAt <http://ceur-ws.org/Vol-306/#event> ;
     ns1:editor <http://ceur-ws.org/Vol-306/#EriciRas>,
         <http://ceur-ws.org/Vol-306/#MartiniMemmel>,
         <http://ceur-ws.org/Vol-306/#MartiniWolpers>,
@@ -98,20 +99,20 @@
 
 <http://ceur-ws.org/Vol-306/#paper03> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-306/> ;
-    ns4:title "LOExtractor - Rapid Authoring Tool to Support Workflow-Embedded Authoring" ;
+    ns6:title "LOExtractor - Rapid Authoring Tool to Support Workflow-Embedded Authoring" ;
     ns1:author <http://ceur-ws.org/Vol-306/#MarkusiLudwar>,
         <http://ceur-ws.org/Vol-306/#OlegiRostanin> .
 
 <http://ceur-ws.org/Vol-306/#paper01> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-306/> ;
-    ns4:title "Context assessment as a basis for appropriate support of individual and organizational learning" ;
+    ns6:title "Context assessment as a basis for appropriate support of individual and organizational learning" ;
     ns1:author <http://ceur-ws.org/Vol-306/#HannaiRisku>,
         <http://ceur-ws.org/Vol-306/#LukasiZenk>,
         <http://ceur-ws.org/Vol-306/#RichardiPircher> .
 
 <http://ceur-ws.org/Vol-306/#paper02> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-306/> ;
-    ns4:title "Learn@Work: Competency Advancement with Learning Templates" ;
+    ns6:title "Learn@Work: Competency Advancement with Learning Templates" ;
     ns1:author <http://ceur-ws.org/Vol-306/#BarbaraiKump>,
         <http://ceur-ws.org/Vol-306/#StefanieiLindstaedt>,
         <http://ceur-ws.org/Vol-306/#TobiasiLey>,

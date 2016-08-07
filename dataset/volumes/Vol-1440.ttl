@@ -1,272 +1,53 @@
-@prefix ns1: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns2: <http://xmlns.com/foaf/0.1/> .
-@prefix ns3: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns1: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns2: <http://purl.org/ontology/bibo/#> .
+@prefix ns3: <http://xmlns.com/foaf/0.1/> .
 @prefix ns4: <http://www.w3.org/2002/07/owl#> .
-@prefix ns5: <http://purl.org/ontology/bibo/#> .
+@prefix ns5: <http://purl.org/dc/elements/1.1/> .
 @prefix ns6: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns8: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns7: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1440/#AndreaiPasserini> a ns2:Person ;
-    ns1:affiliation "" ;
-    ns4:sameAs <http://ceur-ws.org/persons/AndreaiPasserini> ;
-    ns2:name "Andrea Passerini" .
-
-<http://ceur-ws.org/Vol-1440/#AntonelaiTommasel> a ns2:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/AntonelaiTommasel> ;
-    ns2:made <http://ceur-ws.org/Vol-1440/#paper8> ;
-    ns2:name "Antonela Tommasel" .
-
-<http://ceur-ws.org/Vol-1440/#CeciliaidiiSciascio> a ns2:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/CeciliaidiiSciascio> ;
-    ns2:made <http://ceur-ws.org/Vol-1440/#paper3> ;
-    ns2:name "Cecilia di Sciascio" .
-
-<http://ceur-ws.org/Vol-1440/#DanielaiGodoy> a ns2:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/DanielaiGodoy> ;
-    ns2:made <http://ceur-ws.org/Vol-1440/#paper8> ;
-    ns2:name "Daniela Godoy" .
-
-<http://ceur-ws.org/Vol-1440/#DietmariJannach> a ns2:Person ;
-    ns1:affiliation "" ;
-    ns4:sameAs <http://ceur-ws.org/persons/DietmariJannach> ;
-    ns2:name "Dietmar Jannach" .
-
-<http://ceur-ws.org/Vol-1440/#EduardoiVeas> a ns2:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/EduardoiVeas> ;
-    ns2:made <http://ceur-ws.org/Vol-1440/#paper3> ;
-    ns2:name "Eduardo Veas" .
-
-<http://ceur-ws.org/Vol-1440/#FumitoiMasui> a ns2:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/FumitoiMasui> ;
-    ns2:made <http://ceur-ws.org/Vol-1440/#paper6> ;
-    ns2:name "Fumito Masui" .
-
-<http://ceur-ws.org/Vol-1440/#J%C3%A9r%C3%B4meiMengin> a ns2:Person ;
-    ns1:affiliation "" ;
-    ns4:sameAs <http://ceur-ws.org/persons/J%C3%A9r%C3%B4meiMengin> ;
-    ns2:name "Jérôme Mengin" .
-
-<http://ceur-ws.org/Vol-1440/#KenjiiAraki> a ns2:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/KenjiiAraki> ;
-    ns2:made <http://ceur-ws.org/Vol-1440/#paper6> ;
-    ns2:name "Kenji Araki" .
-
-<http://ceur-ws.org/Vol-1440/#MartiniStettinger> a ns2:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/MartiniStettinger> ;
-    ns2:made <http://ceur-ws.org/Vol-1440/#paper1> ;
-    ns2:name "Martin Stettinger" .
-
-<http://ceur-ws.org/Vol-1440/#MichaliPtaszynski> a ns2:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/MichaliPtaszynski> ;
-    ns2:made <http://ceur-ws.org/Vol-1440/#paper6> ;
-    ns2:name "Michal Ptaszynski" .
-
-<http://ceur-ws.org/Vol-1440/#NoureddineiAribi> a ns2:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/NoureddineiAribi> ;
-    ns2:made <http://ceur-ws.org/Vol-1440/#paper9> ;
-    ns2:name "Noureddine Aribi" .
-
-<http://ceur-ws.org/Vol-1440/#PaoloiViappiani> a ns2:Person ;
-    ns1:affiliation "" ;
-    ns4:sameAs <http://ceur-ws.org/persons/PaoloiViappiani> ;
-    ns2:name "Paolo Viappiani" .
-
-<http://ceur-ws.org/Vol-1440/#RafaliRzepka> a ns2:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/RafaliRzepka> ;
-    ns2:made <http://ceur-ws.org/Vol-1440/#paper6> ;
-    ns2:name "Rafal Rzepka" .
-
-<http://ceur-ws.org/Vol-1440/#RajyashreeiMukherjee> a ns2:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/RajyashreeiMukherjee> ;
-    ns2:made <http://ceur-ws.org/Vol-1440/#paper2> ;
-    ns2:name "Rajyashree Mukherjee" .
-
-<http://ceur-ws.org/Vol-1440/#RobiniArcangioli> a ns2:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/RobiniArcangioli> ;
-    ns2:made <http://ceur-ws.org/Vol-1440/#paper4> ;
-    ns2:name "Robin Arcangioli" .
-
-<http://ceur-ws.org/Vol-1440/#RobiniBurke> a ns2:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/RobiniBurke> ;
-    ns2:made <http://ceur-ws.org/Vol-1440/#paper5> ;
-    ns2:name "Robin Burke" .
-
-<http://ceur-ws.org/Vol-1440/#SouhilaiKaci> a ns2:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/SouhilaiKaci> ;
-    ns2:made <http://ceur-ws.org/Vol-1440/#paper9> ;
-    ns2:name "Souhila Kaci" .
-
-<http://ceur-ws.org/Vol-1440/#TolgaiK%C3%B6nik> a ns2:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/TolgaiK%C3%B6nik> ;
-    ns2:made <http://ceur-ws.org/Vol-1440/#paper2> ;
-    ns2:name "Tolga Könik" .
-
-<http://ceur-ws.org/Vol-1440/#YasutomoiKimura> a ns2:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/YasutomoiKimura> ;
-    ns2:made <http://ceur-ws.org/Vol-1440/#paper6> ;
-    ns2:name "Yasutomo Kimura" .
-
-<http://ceur-ws.org/Vol-1440/#YongiZheng> a ns2:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/YongiZheng> ;
-    ns2:made <http://ceur-ws.org/Vol-1440/#paper5> ;
-    ns2:name "Yong Zheng" .
-
-<http://ceur-ws.org/Vol-1440/#YoniiMedoff> a ns2:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/YoniiMedoff> ;
-    ns2:made <http://ceur-ws.org/Vol-1440/#paper2> ;
-    ns2:name "Yoni Medoff" .
-
-<http://ceur-ws.org/Vol-1440/#event> a ns3:WorkshopEvent ;
-    ns3:hasLocation <http://dbpedia.org/resource/Argentina> ;
-    ns3:hasPart <http://ceur-ws.org/Vol-1440/#part-CPCR>,
-        <http://ceur-ws.org/Vol-1440/#part-ITWP> ;
-    ns3:isSubEventOf <http://ceur-ws.org/Vol-1440/#conf> ;
-    ns6:beginsAtDatetime "2015-07-27T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:endsAtDatetime "2015-07-27T00:00:00+00:00"^^xsd:dateTime ;
-    rdfs:seeAlso <http://ceur-ws.org/Vol-528/#event>,
-        <http://ceur-ws.org/Vol-606/#event>,
-        <http://ceur-ws.org/Vol-756/#event> .
-
-<http://ceur-ws.org/Vol-1440/#AlexanderiFelfernig> a ns2:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/AlexanderiFelfernig> ;
-    ns2:made <http://ceur-ws.org/Vol-1440/#paper1>,
-        <http://ceur-ws.org/Vol-1440/#paper7> ;
-    ns2:name "Alexander Felfernig" .
-
-<http://ceur-ws.org/Vol-1440/#BamshadiMobasher> a ns2:Person ;
-    ns1:affiliation "" ;
-    ns4:sameAs <http://ceur-ws.org/persons/BamshadiMobasher> ;
-    ns2:made <http://ceur-ws.org/Vol-1440/#paper5> ;
-    ns2:name "Bamshad Mobasher" .
-
-<http://ceur-ws.org/Vol-1440/#FlorianiReinfrank> a ns2:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/FlorianiReinfrank> ;
-    ns2:made <http://ceur-ws.org/Vol-1440/#paper1>,
-        <http://ceur-ws.org/Vol-1440/#paper7> ;
-    ns2:name "Florian Reinfrank" .
-
-<http://ceur-ws.org/Vol-1440/#FranziWotawa> a ns2:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/FranziWotawa> ;
-    ns2:made <http://ceur-ws.org/Vol-1440/#paper1>,
-        <http://ceur-ws.org/Vol-1440/#paper7> ;
-    ns2:name "Franz Wotawa" .
-
-<http://ceur-ws.org/Vol-1440/#GeraldiNinaus> a ns2:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/GeraldiNinaus> ;
-    ns2:made <http://ceur-ws.org/Vol-1440/#paper1>,
-        <http://ceur-ws.org/Vol-1440/#paper7> ;
-    ns2:name "Gerald Ninaus" .
-
-<http://ceur-ws.org/Vol-1440/#NadjibiLazaar> a ns2:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/NadjibiLazaar> ;
-    ns2:made <http://ceur-ws.org/Vol-1440/#paper4>,
-        <http://ceur-ws.org/Vol-1440/#paper9> ;
-    ns2:name "Nadjib Lazaar" .
-
-<http://ceur-ws.org/Vol-1440/#paper3> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1440/> ;
-    ns8:title "Interactive Preference Elicitation for Scientific and Cultural Recommendations" ;
-    ns5:section <http%3A//ceur-ws.org/Vol-1440/%23Longpapers> ;
-    ns1:author <http://ceur-ws.org/Vol-1440/#CeciliaidiiSciascio>,
-        <http://ceur-ws.org/Vol-1440/#EduardoiVeas> .
-
-<http://ceur-ws.org/Vol-1440/#paper4> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1440/> ;
-    ns8:title "Multiple Constraint Acquisition" ;
-    ns5:section <http%3A//ceur-ws.org/Vol-1440/%23Longpapers> ;
-    ns1:author <http://ceur-ws.org/Vol-1440/#NadjibiLazaar>,
-        <http://ceur-ws.org/Vol-1440/#RobiniArcangioli> .
-
-<http://ceur-ws.org/Vol-1440/#paper8> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1440/> ;
-    ns8:title "An Adaptive Technique for Weighting Multiple Factors in Followee Recommendation Algorithms" ;
-    ns5:section <http%3A//ceur-ws.org/Vol-1440/%23Shortandpositionpapers> ;
-    ns1:author <http://ceur-ws.org/Vol-1440/#AntonelaiTommasel>,
-        <http://ceur-ws.org/Vol-1440/#DanielaiGodoy> .
-
-<http://ceur-ws.org/Vol-1440/#paper2> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1440/> ;
-    ns8:title "Interactive Search with Contextual Navigation Recommendations" ;
-    ns5:section <http%3A//ceur-ws.org/Vol-1440/%23Longpapers> ;
-    ns1:author <http://ceur-ws.org/Vol-1440/#RajyashreeiMukherjee>,
-        <http://ceur-ws.org/Vol-1440/#TolgaiK%C3%B6nik>,
-        <http://ceur-ws.org/Vol-1440/#YoniiMedoff> .
-
-<http://ceur-ws.org/Vol-1440/#paper5> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1440/> ;
-    ns8:title "Incorporating Context Correlation into Context-aware Matrix Factorization" ;
-    ns5:section <http%3A//ceur-ws.org/Vol-1440/%23Longpapers> ;
-    ns1:author <http://ceur-ws.org/Vol-1440/#BamshadiMobasher>,
-        <http://ceur-ws.org/Vol-1440/#RobiniBurke>,
-        <http://ceur-ws.org/Vol-1440/#YongiZheng> .
-
-<http://ceur-ws.org/Vol-1440/#paper9> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1440/> ;
-    ns8:title "Towards an MDD-based Representation of Preferences" ;
-    ns5:section <http%3A//ceur-ws.org/Vol-1440/%23Shortandpositionpapers> ;
-    ns1:author <http://ceur-ws.org/Vol-1440/#NadjibiLazaar>,
-        <http://ceur-ws.org/Vol-1440/#NoureddineiAribi>,
-        <http://ceur-ws.org/Vol-1440/#SouhilaiKaci> .
-
-<http%3A//ceur-ws.org/Vol-1440/%23Shortandpositionpapers> a ns3:SessionEvent ;
-    ns3:partOf <http://ceur-ws.org/Vol-1440/> ;
-    ns8:title "Short and position papers" .
-
-<http://ceur-ws.org/Vol-1440/#paper7> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1440/> ;
-    ns8:title "iCone: Intelligent Environment for the Development and Maintenance of Configuration Knowledge Bases" ;
-    ns5:section <http%3A//ceur-ws.org/Vol-1440/%23Shortandpositionpapers> ;
-    ns1:author <http://ceur-ws.org/Vol-1440/#AlexanderiFelfernig>,
-        <http://ceur-ws.org/Vol-1440/#FlorianiReinfrank>,
-        <http://ceur-ws.org/Vol-1440/#FranziWotawa>,
-        <http://ceur-ws.org/Vol-1440/#GeraldiNinaus> .
-
-<http%3A//ceur-ws.org/Vol-1440/%23Longpapers> a ns3:SessionEvent ;
-    ns3:partOf <http://ceur-ws.org/Vol-1440/> ;
-    ns8:title "Long papers" .
-
-<http://ceur-ws.org/Vol-1440/#paper1> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1440/> ;
-    ns8:title "Conflict Management for Constraint-based Recommendation" ;
-    ns5:section <http%3A//ceur-ws.org/Vol-1440/%23Longpapers> ;
-    ns1:author <http://ceur-ws.org/Vol-1440/#AlexanderiFelfernig>,
-        <http://ceur-ws.org/Vol-1440/#FlorianiReinfrank>,
-        <http://ceur-ws.org/Vol-1440/#FranziWotawa>,
-        <http://ceur-ws.org/Vol-1440/#GeraldiNinaus>,
-        <http://ceur-ws.org/Vol-1440/#MartiniStettinger> .
-
-<http://ceur-ws.org/Vol-1440/#paper6> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1440/> ;
-    ns8:title "Brute Force Works Best Against Bullying" ;
-    ns5:section <http%3A//ceur-ws.org/Vol-1440/%23Shortandpositionpapers> ;
-    ns1:author <http://ceur-ws.org/Vol-1440/#FumitoiMasui>,
-        <http://ceur-ws.org/Vol-1440/#KenjiiAraki>,
-        <http://ceur-ws.org/Vol-1440/#MichaliPtaszynski>,
-        <http://ceur-ws.org/Vol-1440/#RafaliRzepka>,
-        <http://ceur-ws.org/Vol-1440/#YasutomoiKimura> .
-
-<http://ceur-ws.org/Vol-1440/> a ns3:Proceedings ;
-    ns3:hasPart <http://ceur-ws.org/Vol-1440/#paper1>,
-        <http://ceur-ws.org/Vol-1440/#paper2>,
-        <http://ceur-ws.org/Vol-1440/#paper3>,
-        <http://ceur-ws.org/Vol-1440/#paper4>,
-        <http://ceur-ws.org/Vol-1440/#paper5>,
-        <http://ceur-ws.org/Vol-1440/#paper6>,
-        <http://ceur-ws.org/Vol-1440/#paper7>,
-        <http://ceur-ws.org/Vol-1440/#paper8>,
-        <http://ceur-ws.org/Vol-1440/#paper9> ;
-    ns3:hasSession <http%3A//ceur-ws.org/Vol-1440/%23Longpapers>,
-        <http%3A//ceur-ws.org/Vol-1440/%23Shortandpositionpapers> ;
-    ns7:issued "2015-09-04T00:00:00+00:00"^^xsd:dateTime ;
-    ns5:presentedAt <http://ceur-ws.org/Vol-1440/#event> ;
-    ns1:editor <http://ceur-ws.org/Vol-1440/#AndreaiPasserini>,
+<http://ceur-ws.org/Vol-1440/> a ns1:Proceedings ;
+    ns8:issued "2015-09-04T00:00:00+00:00"^^xsd:dateTime ;
+    ns2:presentedAt <http://ceur-ws.org/Vol-1440/#event> ;
+    ns7:editor <http://ceur-ws.org/Vol-1440/#AndreaiPasserini>,
         <http://ceur-ws.org/Vol-1440/#BamshadiMobasher>,
         <http://ceur-ws.org/Vol-1440/#DietmariJannach>,
         <http://ceur-ws.org/Vol-1440/#J%C3%A9r%C3%B4meiMengin>,
         <http://ceur-ws.org/Vol-1440/#PaoloiViappiani> .
+
+<http://ceur-ws.org/Vol-1440/#AndreaiPasserini> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/AndreaiPasserini> ;
+    ns3:name "Andrea Passerini" .
+
+<http://ceur-ws.org/Vol-1440/#BamshadiMobasher> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/BamshadiMobasher> ;
+    ns3:name "Bamshad Mobasher" .
+
+<http://ceur-ws.org/Vol-1440/#DietmariJannach> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/DietmariJannach> ;
+    ns3:name "Dietmar Jannach" .
+
+<http://ceur-ws.org/Vol-1440/#J%C3%A9r%C3%B4meiMengin> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/J%C3%A9r%C3%B4meiMengin> ;
+    ns3:name "Jérôme Mengin" .
+
+<http://ceur-ws.org/Vol-1440/#PaoloiViappiani> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/PaoloiViappiani> ;
+    ns3:name "Paolo Viappiani" .
+
+<http://ceur-ws.org/Vol-1440/#event> a ns1:WorkshopEvent ;
+    ns1:hasLocation <http://dbpedia.org/resource/Argentina> ;
+    ns1:hasPart <http://ceur-ws.org/Vol-1440/#part-ws> ;
+    ns1:isSubEventOf <http://ceur-ws.org/Vol-1440/#conf> ;
+    ns6:beginsAtDatetime "2015-07-27T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:endsAtDatetime "2015-07-27T00:00:00+00:00"^^xsd:dateTime ;
+    ns5:license "http://creativecommons.org/publicdomain/zero/1.0/" ;
+    rdfs:seeAlso <http://ceur-ws.org/Vol-528/#event>,
+        <http://ceur-ws.org/Vol-606/#event>,
+        <http://ceur-ws.org/Vol-756/#event> .
 

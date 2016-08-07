@@ -1,292 +1,32 @@
-@prefix ns1: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns2: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns3: <http://www.w3.org/2002/07/owl#> .
-@prefix ns4: <http://xmlns.com/foaf/0.1/> .
-@prefix ns5: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns6: <http://purl.org/ontology/bibo/#> .
-@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns1: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns2: <http://purl.org/ontology/bibo/#> .
+@prefix ns3: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns4: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns5: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns6: <http://purl.org/dc/elements/1.1/> .
+@prefix ns7: <http://xmlns.com/foaf/0.1/> .
+@prefix ns8: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-15/#BeateiStoffels> a ns4:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/BeateiStoffels> ;
-    ns4:made <http://ceur-ws.org/Vol-15/#mailto:stoffels@hdz-ima.rwth-aachen.de> ;
-    ns4:name "Beate Stoffels" .
+<http://ceur-ws.org/Vol-15/> a ns1:Proceedings ;
+    ns5:issued "1999-01-11T00:00:00+00:00"^^xsd:dateTime ;
+    ns2:presentedAt <http://ceur-ws.org/Vol-15/#event> ;
+    ns3:editor <http://ceur-ws.org/Vol-15/#GraueiReiheidesiIAT> .
 
-<http://ceur-ws.org/Vol-15/#ElkeiBayer> a ns4:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/ElkeiBayer> ;
-    ns4:made <http://ceur-ws.org/Vol-15/#mailto:bayer@iug.informatik.uni-dortmund.de> ;
-    ns4:name "Elke Bayer" .
+<http://ceur-ws.org/Vol-15/#GraueiReiheidesiIAT> a ns7:Person ;
+    ns8:sameAs <http://ceur-ws.org/persons/GraueiReiheidesiIAT> ;
+    ns7:name "Graue Reihe des IAT" .
 
-<http://ceur-ws.org/Vol-15/#ErichiOrtner> a ns4:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/ErichiOrtner> ;
-    ns4:made <http://ceur-ws.org/Vol-15/#mailto:ortner@bwl.tu-darmstadt.de> ;
-    ns4:name "Erich Ortner" .
-
-<http://ceur-ws.org/Vol-15/#GraueiReiheidesiIAT> a ns4:Person ;
-    ns5:affiliation "Integration von Mensch, Organisation und Technik: eine partielle Bilanz. Beiträge zum EMISA-Fachgruppentreffen 1998. Herausgegeben von Hansjürgen Paul und Irene Maucher (59 KByte)." ;
-    ns3:sameAs <http://ceur-ws.org/persons/GraueiReiheidesiIAT> ;
-    ns4:name "Graue Reihe des IAT" .
-
-<http://ceur-ws.org/Vol-15/#IngeborgiBothe> a ns4:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/IngeborgiBothe> ;
-    ns4:made <http://ceur-ws.org/Vol-15/#iat-info.iatge.de> ;
-    ns4:name "Ingeborg Bothe" .
-
-<http://ceur-ws.org/Vol-15/#KirstiiGrobel> a ns4:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/KirstiiGrobel> ;
-    ns4:made <http://ceur-ws.org/Vol-15/#mailto:grobel@techinfo.rwth-aachen.de> ;
-    ns4:name "Kirsti Grobel" .
-
-<http://ceur-ws.org/Vol-15/#KlausiHenning> a ns4:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/KlausiHenning> ;
-    ns4:made <http://ceur-ws.org/Vol-15/#www.hdz-ima.rwth-aachen.de> ;
-    ns4:name "Klaus Henning" .
-
-<http://ceur-ws.org/Vol-15/#KlausiMoysich> a ns4:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/KlausiMoysich> ;
-    ns4:made <http://ceur-ws.org/Vol-15/#mailto:moysich@iug.informatik.uni-dortmund.de> ;
-    ns4:name "Klaus Moysich" .
-
-<http://ceur-ws.org/Vol-15/#LarsiDistelrath> a ns4:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/LarsiDistelrath> ;
-    ns4:made <http://ceur-ws.org/Vol-15/#mailto:distelra@iug.informatik.uni-dortmund.de> ;
-    ns4:name "Lars Distelrath" .
-
-<http://ceur-ws.org/Vol-15/#MartiniMeyer> a ns4:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/MartiniMeyer> ;
-    ns4:made <http://ceur-ws.org/Vol-15/#mailto:meyer@ie.iwi.unibe.ch> ;
-    ns4:name "Martin Meyer" .
-
-<http://ceur-ws.org/Vol-15/#Maschinenbau> a ns4:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/Maschinenbau> ;
-    ns4:made <http://ceur-ws.org/Vol-15/#paperX2> ;
-    ns4:name "Maschinenbau" .
-
-<http://ceur-ws.org/Vol-15/#MichaeliFreudenberg> a ns4:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/MichaeliFreudenberg> ;
-    ns4:made <http://ceur-ws.org/Vol-15/#mailto:mfreudenberg@comdes.de> ;
-    ns4:name "Michael Freudenberg" .
-
-<http://ceur-ws.org/Vol-15/#PeteriKueng> a ns4:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/PeteriKueng> ;
-    ns4:made <http://ceur-ws.org/Vol-15/#mailto:peter.kueng@unifr.ch> ;
-    ns4:name "Peter Kueng" .
-
-<http://ceur-ws.org/Vol-15/#PeteriLoos> a ns4:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/PeteriLoos> ;
-    ns4:made <http://ceur-ws.org/Vol-15/#www.iwi.uni-sb.de> ;
-    ns4:name "Peter Loos" .
-
-<http://ceur-ws.org/Vol-15/#RaineriWolf> a ns4:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/RaineriWolf> ;
-    ns4:made <http://ceur-ws.org/Vol-15/#www.itvd.uni-stuttgart.de> ;
-    ns4:name "Rainer Wolf" .
-
-<http://ceur-ws.org/Vol-15/#SebastianiKutscha> a ns4:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/SebastianiKutscha> ;
-    ns4:made <http://ceur-ws.org/Vol-15/#paperX1> ;
-    ns4:name "Sebastian Kutscha" .
-
-<http://ceur-ws.org/Vol-15/#ThomasiHerrmann> a ns4:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/ThomasiHerrmann> ;
-    ns4:made <http://ceur-ws.org/Vol-15/#mailto:herrmann@iug.informatik.uni-dortmund.de> ;
-    ns4:name "Thomas Herrmann" .
-
-<http://ceur-ws.org/Vol-15/#ThorsteniHeiderich> a ns4:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/ThorsteniHeiderich> ;
-    ns4:made <http://ceur-ws.org/Vol-15/#mailto:hei@fir-main.fir.rwth-aachen.de> ;
-    ns4:name "Thorsten Heiderich" .
-
-<http://ceur-ws.org/Vol-15/#event> a ns2:WorkshopEvent ;
-    ns2:hasLocation <http://dbpedia.org/resource/Germany> ;
-    ns2:hasPart <http://ceur-ws.org/Vol-15/#part-EMISA>,
+<http://ceur-ws.org/Vol-15/#event> a ns1:WorkshopEvent ;
+    ns1:hasLocation <http://dbpedia.org/resource/Germany> ;
+    ns1:hasPart <http://ceur-ws.org/Vol-15/#part-EMISA>,
         <http://ceur-ws.org/Vol-15/#part-IAT>,
         <http://ceur-ws.org/Vol-15/#part-PDF> ;
-    ns2:isSubEventOf <http://ceur-ws.org/Vol-15/#conf> ;
-    ns7:beginsAtDatetime "1998-10-09T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:endsAtDatetime "1998-10-09T00:00:00+00:00"^^xsd:dateTime ;
-    ns1:license <http://choosealicense.com/licenses/no-license/> .
-
-<http://ceur-ws.org/Vol-15/#undibestelleniSieiunteriAngabeivoniNameniundiPostanschriftiden> a ns4:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/undibestelleniSieiunteriAngabeivoniNameniundiPostanschriftiden> ;
-    ns4:made <http://ceur-ws.org/Vol-15/#paperX3> ;
-    ns4:name "und bestellen Sie unter Angabe von Namen und Postanschrift den" .
-
-<http://ceur-ws.org/Vol-15/#von> a ns4:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/von> ;
-    ns4:made <http://ceur-ws.org/Vol-15/#mailto:fl@bwl.tu-darmstadt.de> ;
-    ns4:name "von" .
-
-<http%3A//ceur-ws.org/Vol-15/%23%2C> a ns2:SessionEvent ;
-    ns2:partOf <http://ceur-ws.org/Vol-15/> ;
-    ns1:title " ," .
-
-<http%3A//ceur-ws.org/Vol-15/%23BeateStoffels> a ns2:SessionEvent ;
-    ns2:partOf <http://ceur-ws.org/Vol-15/> ;
-    ns1:title "Beate Stoffels" .
-
-<http%3A//ceur-ws.org/Vol-15/%23DieumfassendeBedeutungderWorkflow-Management-Technologie> a ns2:SessionEvent ;
-    ns2:partOf <http://ceur-ws.org/Vol-15/> ;
-    ns1:title "Die umfassende Bedeutung der Workflow- Management- Technologie" .
-
-<http%3A//ceur-ws.org/Vol-15/%23ThomasHerrmann> a ns2:SessionEvent ;
-    ns2:partOf <http://ceur-ws.org/Vol-15/> ;
-    ns1:title "Thomas Herrmann" .
-
-<http://ceur-ws.org/Vol-15/#iat-info.iatge.de> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-15/> ;
-    ns1:title "Institut Arbeit und Technik" ;
-    ns6:section <http%3A//ceur-ws.org/Vol-15/%23von> ;
-    ns5:author <http://ceur-ws.org/Vol-15/#IngeborgiBothe> .
-
-<http://ceur-ws.org/Vol-15/#mailto:bayer@iug.informatik.uni-dortmund.de> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-15/> ;
-    ns1:title " -" ;
-    ns6:section <http%3A//ceur-ws.org/Vol-15/%23und> ;
-    ns5:author <http://ceur-ws.org/Vol-15/#ElkeiBayer> .
-
-<http://ceur-ws.org/Vol-15/#mailto:distelra@iug.informatik.uni-dortmund.de> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-15/> ;
-    ns1:title " -" ;
-    ns6:section <http%3A//ceur-ws.org/Vol-15/%23und> ;
-    ns5:author <http://ceur-ws.org/Vol-15/#LarsiDistelrath> .
-
-<http://ceur-ws.org/Vol-15/#mailto:fl@bwl.tu-darmstadt.de> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-15/> ;
-    ns1:title "Frank R. Lehmann" ;
-    ns6:section <http%3A//ceur-ws.org/Vol-15/%23DieumfassendeBedeutungderWorkflow-Management-Technologie> ;
-    ns5:author <http://ceur-ws.org/Vol-15/#von> .
-
-<http://ceur-ws.org/Vol-15/#mailto:grobel@techinfo.rwth-aachen.de> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-15/> ;
-    ns1:title " ," ;
-    ns6:section <http%3A//ceur-ws.org/Vol-15/%23BeateStoffels> ;
-    ns5:author <http://ceur-ws.org/Vol-15/#KirstiiGrobel> .
-
-<http://ceur-ws.org/Vol-15/#mailto:hei@fir-main.fir.rwth-aachen.de> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-15/> ;
-    ns1:title " -" ;
-    ns6:section <http%3A//ceur-ws.org/Vol-15/%23von> ;
-    ns5:author <http://ceur-ws.org/Vol-15/#ThorsteniHeiderich> .
-
-<http://ceur-ws.org/Vol-15/#mailto:herrmann@iug.informatik.uni-dortmund.de> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-15/> ;
-    ns1:title ",",
-        "und" ;
-    ns6:section <http%3A//ceur-ws.org/Vol-15/%23von> ;
-    ns5:author <http://ceur-ws.org/Vol-15/#ThomasiHerrmann> .
-
-<http://ceur-ws.org/Vol-15/#mailto:meyer@ie.iwi.unibe.ch> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-15/> ;
-    ns1:title " -" ;
-    ns6:section <http%3A//ceur-ws.org/Vol-15/%23von> ;
-    ns5:author <http://ceur-ws.org/Vol-15/#MartiniMeyer> .
-
-<http://ceur-ws.org/Vol-15/#mailto:mfreudenberg@comdes.de> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-15/> ;
-    ns1:title "  und" ;
-    ns6:section <http%3A//ceur-ws.org/Vol-15/%23von> ;
-    ns5:author <http://ceur-ws.org/Vol-15/#MichaeliFreudenberg> .
-
-<http://ceur-ws.org/Vol-15/#mailto:moysich@iug.informatik.uni-dortmund.de> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-15/> ;
-    ns1:title "und" ;
-    ns6:section <http%3A//ceur-ws.org/Vol-15/%23ThomasHerrmann> ;
-    ns5:author <http://ceur-ws.org/Vol-15/#KlausiMoysich> .
-
-<http://ceur-ws.org/Vol-15/#mailto:ortner@bwl.tu-darmstadt.de> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-15/> ;
-    ns1:title " -" ;
-    ns6:section <http%3A//ceur-ws.org/Vol-15/%23und> ;
-    ns5:author <http://ceur-ws.org/Vol-15/#ErichiOrtner> .
-
-<http://ceur-ws.org/Vol-15/#mailto:peter.kueng@unifr.ch> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-15/> ;
-    ns1:title " -" ;
-    ns6:section <http%3A//ceur-ws.org/Vol-15/%23von> ;
-    ns5:author <http://ceur-ws.org/Vol-15/#PeteriKueng> .
-
-<http://ceur-ws.org/Vol-15/#mailto:stoffels@hdz-ima.rwth-aachen.de> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-15/> ;
-    ns1:title "," ;
-    ns6:section <http%3A//ceur-ws.org/Vol-15/%23von> ;
-    ns5:author <http://ceur-ws.org/Vol-15/#BeateiStoffels> .
-
-<http://ceur-ws.org/Vol-15/#paperX1> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-15/> ;
-    ns1:title "und" ;
-    ns6:section <http%3A//ceur-ws.org/Vol-15/%23%2C> ;
-    ns5:author <http://ceur-ws.org/Vol-15/#SebastianiKutscha> .
-
-<http://ceur-ws.org/Vol-15/#paperX2> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-15/> ;
-    ns1:title "an der" ;
-    ns5:author <http://ceur-ws.org/Vol-15/#Maschinenbau> .
-
-<http://ceur-ws.org/Vol-15/#paperX3> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-15/> ;
-    ns1:title "Beitrag zur Grauen Reihe des IAT 1998-04" ;
-    ns6:section <http%3A//ceur-ws.org/Vol-15/%23und> ;
-    ns5:author <http://ceur-ws.org/Vol-15/#undibestelleniSieiunteriAngabeivoniNameniundiPostanschriftiden> .
-
-<http://ceur-ws.org/Vol-15/#www.hdz-ima.rwth-aachen.de> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-15/> ;
-    ns1:title "Lehrstuhl Informatik im" ;
-    ns6:section <http%3A//ceur-ws.org/Vol-15/%23und> ;
-    ns5:author <http://ceur-ws.org/Vol-15/#KlausiHenning> .
-
-<http://ceur-ws.org/Vol-15/#www.itvd.uni-stuttgart.de> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-15/> ;
-    ns1:title "Institut für Textil- und Verfahrenstechnik" ;
-    ns6:section <http%3A//ceur-ws.org/Vol-15/%23und> ;
-    ns5:author <http://ceur-ws.org/Vol-15/#RaineriWolf> .
-
-<http://ceur-ws.org/Vol-15/#www.iwi.uni-sb.de> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-15/> ;
-    ns1:title "IDS Prof. Scheer GmbH / Institut für Wirtschaftsinformatik" ;
-    ns6:section <http%3A//ceur-ws.org/Vol-15/%23von> ;
-    ns5:author <http://ceur-ws.org/Vol-15/#PeteriLoos> .
-
-<http%3A//ceur-ws.org/Vol-15/%23und> a ns2:SessionEvent ;
-    ns2:partOf <http://ceur-ws.org/Vol-15/> ;
-    ns1:title "und",
-        "  und" .
-
-<http%3A//ceur-ws.org/Vol-15/%23von> a ns2:SessionEvent ;
-    ns2:partOf <http://ceur-ws.org/Vol-15/> ;
-    ns1:title "von" .
-
-<http://ceur-ws.org/Vol-15/> a ns2:Proceedings ;
-    ns2:hasPart <http://ceur-ws.org/Vol-15/#iat-info.iatge.de>,
-        <http://ceur-ws.org/Vol-15/#mailto:bayer@iug.informatik.uni-dortmund.de>,
-        <http://ceur-ws.org/Vol-15/#mailto:distelra@iug.informatik.uni-dortmund.de>,
-        <http://ceur-ws.org/Vol-15/#mailto:fl@bwl.tu-darmstadt.de>,
-        <http://ceur-ws.org/Vol-15/#mailto:grobel@techinfo.rwth-aachen.de>,
-        <http://ceur-ws.org/Vol-15/#mailto:hei@fir-main.fir.rwth-aachen.de>,
-        <http://ceur-ws.org/Vol-15/#mailto:herrmann@iug.informatik.uni-dortmund.de>,
-        <http://ceur-ws.org/Vol-15/#mailto:meyer@ie.iwi.unibe.ch>,
-        <http://ceur-ws.org/Vol-15/#mailto:mfreudenberg@comdes.de>,
-        <http://ceur-ws.org/Vol-15/#mailto:moysich@iug.informatik.uni-dortmund.de>,
-        <http://ceur-ws.org/Vol-15/#mailto:ortner@bwl.tu-darmstadt.de>,
-        <http://ceur-ws.org/Vol-15/#mailto:peter.kueng@unifr.ch>,
-        <http://ceur-ws.org/Vol-15/#mailto:stoffels@hdz-ima.rwth-aachen.de>,
-        <http://ceur-ws.org/Vol-15/#paperX1>,
-        <http://ceur-ws.org/Vol-15/#paperX2>,
-        <http://ceur-ws.org/Vol-15/#paperX3>,
-        <http://ceur-ws.org/Vol-15/#www.hdz-ima.rwth-aachen.de>,
-        <http://ceur-ws.org/Vol-15/#www.itvd.uni-stuttgart.de>,
-        <http://ceur-ws.org/Vol-15/#www.iwi.uni-sb.de> ;
-    ns2:hasSession <http%3A//ceur-ws.org/Vol-15/%23%2C>,
-        <http%3A//ceur-ws.org/Vol-15/%23BeateStoffels>,
-        <http%3A//ceur-ws.org/Vol-15/%23DieumfassendeBedeutungderWorkflow-Management-Technologie>,
-        <http%3A//ceur-ws.org/Vol-15/%23ThomasHerrmann>,
-        <http%3A//ceur-ws.org/Vol-15/%23und>,
-        <http%3A//ceur-ws.org/Vol-15/%23von> ;
-    ns8:issued "1999-01-11T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:presentedAt <http://ceur-ws.org/Vol-15/#event> ;
-    ns5:editor <http://ceur-ws.org/Vol-15/#GraueiReiheidesiIAT> .
+    ns1:isSubEventOf <http://ceur-ws.org/Vol-15/#conf> ;
+    ns4:beginsAtDatetime "1998-10-07T00:00:00+00:00"^^xsd:dateTime ;
+    ns4:endsAtDatetime "1998-10-09T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:license "http://choosealicense.com/licenses/no-license/" .
 

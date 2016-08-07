@@ -1,130 +1,31 @@
-@prefix ns1: <http://www.w3.org/2002/07/owl#> .
-@prefix ns2: <http://purl.org/ontology/bibo/#> .
-@prefix ns3: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns1: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns2: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns3: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix ns4: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns5: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns6: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns7: <http://xmlns.com/foaf/0.1/> .
-@prefix ns8: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns5: <http://purl.org/ontology/bibo/#> .
+@prefix ns6: <http://purl.org/dc/elements/1.1/> .
+@prefix ns7: <http://www.w3.org/2002/07/owl#> .
+@prefix ns8: <http://xmlns.com/foaf/0.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1071/#AnkicaiBarisic> a ns7:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/AnkicaiBarisic> ;
-    ns7:made <http://ceur-ws.org/Vol-1071/#barisic> ;
-    ns7:name "Ankica Barisic" .
-
-<http://ceur-ws.org/Vol-1071/#H%C3%BCseyiniErgin> a ns7:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/H%C3%BCseyiniErgin> ;
-    ns7:made <http://ceur-ws.org/Vol-1071/#ergin> ;
-    ns7:name "Hüseyin Ergin" .
-
-<http://ceur-ws.org/Vol-1071/#HamidiGholizadeh> a ns7:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/HamidiGholizadeh> ;
-    ns7:made <http://ceur-ws.org/Vol-1071/#gholizadeh> ;
-    ns7:name "Hamid Gholizadeh" .
-
-<http://ceur-ws.org/Vol-1071/#JonathaniCorley> a ns7:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/JonathaniCorley> ;
-    ns7:made <http://ceur-ws.org/Vol-1071/#corley> ;
-    ns7:name "Jonathan Corley" .
-
-<http://ceur-ws.org/Vol-1071/#LoliiBurgue%C3%B1o> a ns7:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/LoliiBurgue%C3%B1o> ;
-    ns7:made <http://ceur-ws.org/Vol-1071/#burgueno> ;
-    ns7:name "Loli Burgueño" .
-
-<http://ceur-ws.org/Vol-1071/#MarceliIbe> a ns7:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/MarceliIbe> ;
-    ns7:made <http://ceur-ws.org/Vol-1071/#ibe> ;
-    ns7:name "Marcel Ibe" .
-
-<http://ceur-ws.org/Vol-1071/#MartiniGogolla> a ns7:Person ;
-    ns4:affiliation "" ;
-    ns1:sameAs <http://ceur-ws.org/persons/MartiniGogolla> ;
-    ns7:name "Martin Gogolla" .
-
-<http://ceur-ws.org/Vol-1071/#SebastianiLehrig> a ns7:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/SebastianiLehrig> ;
-    ns7:made <http://ceur-ws.org/Vol-1071/#lehrig> ;
-    ns7:name "Sebastian Lehrig" .
-
-<http://ceur-ws.org/Vol-1071/#event> a ns5:WorkshopEvent ;
-    ns5:hasLocation <http://dbpedia.org/resource/United_States> ;
-    ns5:hasPart <http://ceur-ws.org/Vol-1071/#part-ws> ;
-    ns5:isSubEventOf <http://ceur-ws.org/Vol-1071/#conf> ;
-    ns3:beginsAtDatetime "2013-10-01T00:00:00+00:00"^^xsd:dateTime ;
-    ns3:endsAtDatetime "2013-10-01T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:license <http://choosealicense.com/licenses/no-license/> ;
-    rdfs:seeAlso <http://ceur-ws.org/Vol-262/#event> .
-
-<http://ceur-ws.org/Vol-1071/#barisic> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1071/> ;
-    ns8:title "Evaluating the Quality in the Use of Domain-Specific Languages in an Agile Way" ;
-    ns2:endPage 8 ;
-    ns2:numPages 8 ;
-    ns2:startPage 1 ;
-    ns4:author <http://ceur-ws.org/Vol-1071/#AnkicaiBarisic> .
-
-<http://ceur-ws.org/Vol-1071/#burgueno> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1071/> ;
-    ns8:title "Concurrent and Distributed Model Transformations based on Linda" ;
-    ns2:endPage 16 ;
-    ns2:numPages 8 ;
-    ns2:startPage 9 ;
-    ns4:author <http://ceur-ws.org/Vol-1071/#LoliiBurgue%C3%B1o> .
-
-<http://ceur-ws.org/Vol-1071/#corley> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1071/> ;
-    ns8:title "Debugging for Model Transformations" ;
-    ns2:endPage 24 ;
-    ns2:numPages 8 ;
-    ns2:startPage 17 ;
-    ns4:author <http://ceur-ws.org/Vol-1071/#JonathaniCorley> .
-
-<http://ceur-ws.org/Vol-1071/#ergin> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1071/> ;
-    ns8:title "Model Transformation Design Patterns" ;
-    ns2:endPage 31 ;
-    ns2:numPages 7 ;
-    ns2:startPage 25 ;
-    ns4:author <http://ceur-ws.org/Vol-1071/#H%C3%BCseyiniErgin> .
-
-<http://ceur-ws.org/Vol-1071/#gholizadeh> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1071/> ;
-    ns8:title "Towards Declarative and Incremental Model Transformation" ;
-    ns2:endPage 39 ;
-    ns2:numPages 8 ;
-    ns2:startPage 32 ;
-    ns4:author <http://ceur-ws.org/Vol-1071/#HamidiGholizadeh> .
-
-<http://ceur-ws.org/Vol-1071/#ibe> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1071/> ;
-    ns8:title "Decomposition of Test Cases in Model-Based Testing" ;
-    ns2:endPage 47 ;
-    ns2:numPages 8 ;
-    ns2:startPage 40 ;
-    ns4:author <http://ceur-ws.org/Vol-1071/#MarceliIbe> .
-
-<http://ceur-ws.org/Vol-1071/#lehrig> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1071/> ;
-    ns8:title "Architectural Templates: Engineering Scalable SaaS Applications Based on Architectural Styles" ;
-    ns2:endPage 55 ;
-    ns2:numPages 8 ;
-    ns2:startPage 48 ;
-    ns4:author <http://ceur-ws.org/Vol-1071/#SebastianiLehrig> .
-
-<http://ceur-ws.org/Vol-1071/> a ns5:Proceedings ;
-    ns5:hasPart <http://ceur-ws.org/Vol-1071/#barisic>,
-        <http://ceur-ws.org/Vol-1071/#burgueno>,
-        <http://ceur-ws.org/Vol-1071/#corley>,
-        <http://ceur-ws.org/Vol-1071/#ergin>,
-        <http://ceur-ws.org/Vol-1071/#gholizadeh>,
-        <http://ceur-ws.org/Vol-1071/#ibe>,
-        <http://ceur-ws.org/Vol-1071/#lehrig> ;
-    ns6:issued "2013-11-01T00:00:00+00:00"^^xsd:dateTime ;
-    ns2:presentedAt <http://ceur-ws.org/Vol-1071/#event> ;
+<http://ceur-ws.org/Vol-1071/> a ns2:Proceedings ;
+    ns3:issued "2013-11-01T00:00:00+00:00"^^xsd:dateTime ;
+    ns5:presentedAt <http://ceur-ws.org/Vol-1071/#event> ;
     ns4:editor <http://ceur-ws.org/Vol-1071/#MartiniGogolla> .
+
+<http://ceur-ws.org/Vol-1071/#MartiniGogolla> a ns8:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/MartiniGogolla> ;
+    ns8:name "Martin Gogolla" .
+
+<http://ceur-ws.org/Vol-1071/#event> a ns2:WorkshopEvent ;
+    ns2:hasLocation <http://dbpedia.org/resource/United_States> ;
+    ns2:hasPart <http://ceur-ws.org/Vol-1071/#part-ws> ;
+    ns2:isSubEventOf <http://ceur-ws.org/Vol-1071/#conf> ;
+    ns1:beginsAtDatetime "2013-10-01T00:00:00+00:00"^^xsd:dateTime ;
+    ns1:endsAtDatetime "2013-10-01T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:license "http://choosealicense.com/licenses/no-license/" ;
+    rdfs:seeAlso <http://ceur-ws.org/Vol-262/#event> .
 

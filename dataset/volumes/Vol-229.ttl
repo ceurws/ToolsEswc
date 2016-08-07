@@ -1,11 +1,12 @@
-@prefix ns1: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns2: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns1: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns2: <http://data.semanticweb.org/ns/swc/ontology/#> .
 @prefix ns3: <http://www.w3.org/2002/07/owl#> .
 @prefix ns4: <http://xmlns.com/foaf/0.1/> .
-@prefix ns5: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns5: <http://purl.org/dc/elements/1.1/#> .
 @prefix ns6: <http://purl.org/ontology/bibo/#> .
 @prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns8: <http://purl.org/dc/elements/1.1/> .
+@prefix ns9: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -88,7 +89,7 @@
 
 <http://ceur-ws.org/Vol-229/#MarceloiArenas> a ns4:Person ;
     ns6:place <http://dbpedia.org/resource/Chile> ;
-    ns2:affiliation "Pontificia Universidad Católica de Chile" ;
+    ns1:affiliation "Pontificia Universidad Católica de Chile" ;
     ns3:sameAs <http://ceur-ws.org/persons/MarceloiArenas> ;
     ns4:name "Marcelo Arenas" .
 
@@ -147,78 +148,78 @@
     ns4:made <http://ceur-ws.org/Vol-229/#paper4> ;
     ns4:name "Yuqing Wu" .
 
-<http://ceur-ws.org/Vol-229/#event> a ns5:WorkshopEvent ;
-    ns5:hasLocation <http://dbpedia.org/resource/Spain> ;
-    ns5:hasPart <http://ceur-ws.org/Vol-229/#part-EROW> ;
-    ns5:isSubEventOf <http://ceur-ws.org/Vol-229/#conf> ;
-    ns7:beginsAtDatetime "2007-01-13T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:endsAtDatetime "2007-01-13T00:00:00+00:00"^^xsd:dateTime ;
-    ns1:license <http://choosealicense.com/licenses/no-license/> .
+<http://ceur-ws.org/Vol-229/#event> a ns2:WorkshopEvent ;
+    ns2:hasLocation <http://dbpedia.org/resource/Spain> ;
+    ns2:hasPart <http://ceur-ws.org/Vol-229/#part-EROW> ;
+    ns2:isSubEventOf <http://ceur-ws.org/Vol-229/#conf> ;
+    ns7:beginsAtDatetime "2007-02-02T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:endsAtDatetime "2007-02-02T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:license "http://choosealicense.com/licenses/no-license/" .
 
-<http://ceur-ws.org/Vol-229/#paper6> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-229/> ;
-    ns1:title "Finding K Optimum Edit Scripts between an XML Document and a RegularTree Grammar" ;
-    ns2:author <http://ceur-ws.org/Vol-229/#NobutakaiSuzuki> .
+<http://ceur-ws.org/Vol-229/#paper6> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-229/> ;
+    ns5:title "Finding K Optimum Edit Scripts between an XML Document and a RegularTree Grammar" ;
+    ns1:author <http://ceur-ws.org/Vol-229/#NobutakaiSuzuki> .
 
-<http://ceur-ws.org/Vol-229/#paper8> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-229/> ;
-    ns1:title "Representing data as resources in RDF and OWL" ;
-    ns2:author <http://ceur-ws.org/Vol-229/#Pierre-AntoineiChampin> .
+<http://ceur-ws.org/Vol-229/#paper8> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-229/> ;
+    ns5:title "Representing data as resources in RDF and OWL" ;
+    ns1:author <http://ceur-ws.org/Vol-229/#Pierre-AntoineiChampin> .
 
-<http://ceur-ws.org/Vol-229/#paper1> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-229/> ;
-    ns1:title "Integrating XQuery and P2P in MonetDB/XQuery*" ;
-    ns2:author <http://ceur-ws.org/Vol-229/#PeteriBoncz>,
+<http://ceur-ws.org/Vol-229/#paper1> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-229/> ;
+    ns5:title "Integrating XQuery and P2P in MonetDB/XQuery*" ;
+    ns1:author <http://ceur-ws.org/Vol-229/#PeteriBoncz>,
         <http://ceur-ws.org/Vol-229/#YingiZhang> .
 
-<http://ceur-ws.org/Vol-229/#paper3> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-229/> ;
-    ns1:title "Optimization of Query Plans in the presence of Access Limitations" ;
-    ns2:author <http://ceur-ws.org/Vol-229/#AndreaiCali>,
+<http://ceur-ws.org/Vol-229/#paper3> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-229/> ;
+    ns5:title "Optimization of Query Plans in the presence of Access Limitations" ;
+    ns1:author <http://ceur-ws.org/Vol-229/#AndreaiCali>,
         <http://ceur-ws.org/Vol-229/#DavideiMartinenghi>,
         <http://ceur-ws.org/Vol-229/#DiegoiCalvanese> .
 
-<http://ceur-ws.org/Vol-229/#paper5> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-229/> ;
-    ns1:title "Hierarchical Summarizing and Evaluating for Web Pages" ;
-    ns2:author <http://ceur-ws.org/Vol-229/#IsamuiShioya>,
+<http://ceur-ws.org/Vol-229/#paper5> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-229/> ;
+    ns5:title "Hierarchical Summarizing and Evaluating for Web Pages" ;
+    ns1:author <http://ceur-ws.org/Vol-229/#IsamuiShioya>,
         <http://ceur-ws.org/Vol-229/#KouiTakahashi>,
         <http://ceur-ws.org/Vol-229/#TakaoiMiura> .
 
-<http://ceur-ws.org/Vol-229/#paper9> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-229/> ;
-    ns1:title "XML Schema Mappings in the Presence of Key Constraints and Value Dependencies" ;
-    ns2:author <http://ceur-ws.org/Vol-229/#AdamiMeissner>,
+<http://ceur-ws.org/Vol-229/#paper9> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-229/> ;
+    ns5:title "XML Schema Mappings in the Presence of Key Constraints and Value Dependencies" ;
+    ns1:author <http://ceur-ws.org/Vol-229/#AdamiMeissner>,
         <http://ceur-ws.org/Vol-229/#JolantaiCybulka>,
         <http://ceur-ws.org/Vol-229/#TadeusziPankowski> .
 
-<http://ceur-ws.org/Vol-229/#paper2> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-229/> ;
-    ns1:title "Scalable Query Dissemination in XPeer" ;
-    ns2:author <http://ceur-ws.org/Vol-229/#CarloiSartiani>,
+<http://ceur-ws.org/Vol-229/#paper2> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-229/> ;
+    ns5:title "Scalable Query Dissemination in XPeer" ;
+    ns1:author <http://ceur-ws.org/Vol-229/#CarloiSartiani>,
         <http://ceur-ws.org/Vol-229/#GiorgioiGhelli>,
         <http://ceur-ws.org/Vol-229/#GiovanniiConforti>,
         <http://ceur-ws.org/Vol-229/#PaoloiManghi> .
 
-<http://ceur-ws.org/Vol-229/#paper7> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-229/> ;
-    ns1:title "Updating Views Over Recursive XML" ;
-    ns2:author <http://ceur-ws.org/Vol-229/#ElkeiRundensteiner>,
+<http://ceur-ws.org/Vol-229/#paper7> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-229/> ;
+    ns5:title "Updating Views Over Recursive XML" ;
+    ns1:author <http://ceur-ws.org/Vol-229/#ElkeiRundensteiner>,
         <http://ceur-ws.org/Vol-229/#LingiWang>,
         <http://ceur-ws.org/Vol-229/#MingiJiang>,
         <http://ceur-ws.org/Vol-229/#MuraliiMani> .
 
-<http://ceur-ws.org/Vol-229/#paper4> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-229/> ;
-    ns1:title "Coupling Fragments of XPath with XML Indexing and Query Decomposition" ;
-    ns2:author <http://ceur-ws.org/Vol-229/#DirkiVaniGucht>,
+<http://ceur-ws.org/Vol-229/#paper4> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-229/> ;
+    ns5:title "Coupling Fragments of XPath with XML Indexing and Query Decomposition" ;
+    ns1:author <http://ceur-ws.org/Vol-229/#DirkiVaniGucht>,
         <http://ceur-ws.org/Vol-229/#GeorgeiH.L.iFletcher>,
         <http://ceur-ws.org/Vol-229/#JaniParedaens>,
         <http://ceur-ws.org/Vol-229/#MarciGyssens>,
         <http://ceur-ws.org/Vol-229/#YuqingiWu> .
 
-<http://ceur-ws.org/Vol-229/> a ns5:Proceedings ;
-    ns5:hasPart <http://ceur-ws.org/Vol-229/#paper1>,
+<http://ceur-ws.org/Vol-229/> a ns2:Proceedings ;
+    ns2:hasPart <http://ceur-ws.org/Vol-229/#paper1>,
         <http://ceur-ws.org/Vol-229/#paper2>,
         <http://ceur-ws.org/Vol-229/#paper3>,
         <http://ceur-ws.org/Vol-229/#paper4>,
@@ -227,7 +228,7 @@
         <http://ceur-ws.org/Vol-229/#paper7>,
         <http://ceur-ws.org/Vol-229/#paper8>,
         <http://ceur-ws.org/Vol-229/#paper9> ;
-    ns8:issued "2007-01-08T00:00:00+00:00"^^xsd:dateTime ;
+    ns9:issued "2007-01-08T00:00:00+00:00"^^xsd:dateTime ;
     ns6:presentedAt <http://ceur-ws.org/Vol-229/#event> ;
-    ns2:editor <http://ceur-ws.org/Vol-229/#MarceloiArenas> .
+    ns1:editor <http://ceur-ws.org/Vol-229/#MarceloiArenas> .
 

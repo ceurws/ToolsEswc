@@ -2,10 +2,11 @@
 @prefix ns2: <http://purl.org/dc/elements/1.1/#> .
 @prefix ns3: <http://www.w3.org/2002/07/owl#> .
 @prefix ns4: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns5: <http://purl.org/ontology/bibo/#> .
-@prefix ns6: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns5: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns6: <http://purl.org/dc/elements/1.1/> .
+@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns9: <http://purl.org/ontology/bibo/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -236,13 +237,13 @@
     ns1:made <http://ceur-ws.org/Vol-589/#paper11> ;
     ns1:name "Zineb Habbas" .
 
-<http://ceur-ws.org/Vol-589/#event> a ns6:WorkshopEvent ;
-    ns6:hasLocation <http://dbpedia.org/resource/Italy> ;
-    ns6:hasPart <http://ceur-ws.org/Vol-589/#part-RCRA> ;
-    ns6:isSubEventOf <http://ceur-ws.org/Vol-589/#conf> ;
-    ns8:beginsAtDatetime "2009-12-11T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:endsAtDatetime "2009-12-12T00:00:00+00:00"^^xsd:dateTime ;
-    ns2:license <http://choosealicense.com/licenses/no-license/> ;
+<http://ceur-ws.org/Vol-589/#event> a ns5:WorkshopEvent ;
+    ns5:hasLocation <http://dbpedia.org/resource/Italy> ;
+    ns5:hasPart <http://ceur-ws.org/Vol-589/#part-CEUR-WS> ;
+    ns5:isSubEventOf <http://ceur-ws.org/Vol-589/#conf> ;
+    ns7:beginsAtDatetime "2010-06-04T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:endsAtDatetime "2010-06-04T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:license "http://choosealicense.com/licenses/no-license/" ;
     rdfs:seeAlso <http://ceur-ws.org/Vol-451/#event> .
 
 <http://ceur-ws.org/Vol-589/#EnricoiGiunchiglia> a ns1:Person ;
@@ -269,8 +270,8 @@
         <http://ceur-ws.org/Vol-589/#paperX1> ;
     ns1:name "Pierre Flener" .
 
-<http://ceur-ws.org/Vol-589/#paperX2> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-589/> ;
+<http://ceur-ws.org/Vol-589/#paperX2> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-589/> ;
     ns2:title "Negotiation Exploiting Reasoning by Projections" ;
     ns4:author <http://ceur-ws.org/Vol-589/#ToniiMancini> .
 
@@ -281,69 +282,69 @@
         <http://ceur-ws.org/Vol-589/#paperX2> ;
     ns1:name "Toni Mancini" .
 
-<http://ceur-ws.org/Vol-589/#paper08> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-589/> ;
+<http://ceur-ws.org/Vol-589/#paper08> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-589/> ;
     ns2:title "Efficient Kernels for Sentence Pair Classification" ;
     ns4:author <http://ceur-ws.org/Vol-589/#FabioiMassimoiZanzotto>,
         <http://ceur-ws.org/Vol-589/#LorenzoiDell%27Arciprete> .
 
-<http://ceur-ws.org/Vol-589/#paper13> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-589/> ;
+<http://ceur-ws.org/Vol-589/#paper13> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-589/> ;
     ns2:title "Restoring CSP Satisfiability with MaxSAT" ;
     ns4:author <http://ceur-ws.org/Vol-589/#In%C3%AAsiLynce>,
         <http://ceur-ws.org/Vol-589/#JoaoiMarques-Silva> .
 
-<http://ceur-ws.org/Vol-589/#paper15> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-589/> ;
+<http://ceur-ws.org/Vol-589/#paper15> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-589/> ;
     ns2:title "A structural approach to reasoning with quantified Boolean formulas" ;
     ns4:author <http://ceur-ws.org/Vol-589/#ArmandoiTacchella>,
         <http://ceur-ws.org/Vol-589/#LucaiPulina> .
 
-<http://ceur-ws.org/Vol-589/#paper05> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-589/> ;
+<http://ceur-ws.org/Vol-589/#paper05> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-589/> ;
     ns2:title "Advanced Heuristics for Parallel ASP Instantiation" ;
     ns4:author <http://ceur-ws.org/Vol-589/#FrancescoiRicca>,
         <http://ceur-ws.org/Vol-589/#MarcoiSirianni>,
         <http://ceur-ws.org/Vol-589/#SimonaiPerri> .
 
-<http://ceur-ws.org/Vol-589/#paper07> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-589/> ;
+<http://ceur-ws.org/Vol-589/#paper07> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-589/> ;
     ns2:title "An Empirical Analysis of Some Heuristic Features for Planning with Local Search in LPG" ;
     ns4:author <http://ceur-ws.org/Vol-589/#AlessandroiSaetti>,
         <http://ceur-ws.org/Vol-589/#AlfonsoiGerevini>,
         <http://ceur-ws.org/Vol-589/#IvaniSerina> .
 
-<http://ceur-ws.org/Vol-589/#paper11> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-589/> ;
+<http://ceur-ws.org/Vol-589/#paper11> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-589/> ;
     ns2:title "Solving Hypertree Structured CSP: Sequential and Parallel Approaches" ;
     ns4:author <http://ceur-ws.org/Vol-589/#KamaliAmroun>,
         <http://ceur-ws.org/Vol-589/#MohammediLalou>,
         <http://ceur-ws.org/Vol-589/#ZinebiHabbas> .
 
-<http://ceur-ws.org/Vol-589/#paper12> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-589/> ;
+<http://ceur-ws.org/Vol-589/#paper12> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-589/> ;
     ns2:title "A Hybrid Solver for Large Neighborhood Search: Mixing Gecode and EasyLocal++" ;
     ns4:author <http://ceur-ws.org/Vol-589/#AgostinoiDovier>,
         <http://ceur-ws.org/Vol-589/#LucaiDiiGaspero>,
         <http://ceur-ws.org/Vol-589/#RaffaeleiCipriano> .
 
-<http://ceur-ws.org/Vol-589/#paperX1> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-589/> ;
+<http://ceur-ws.org/Vol-589/#paperX1> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-589/> ;
     ns2:title "An Automaton Constraint for Local Search" ;
     ns4:author <http://ceur-ws.org/Vol-589/#JuniHe>,
         <http://ceur-ws.org/Vol-589/#JustiniPearson>,
         <http://ceur-ws.org/Vol-589/#PierreiFlener> .
 
-<http://ceur-ws.org/Vol-589/#paper10> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-589/> ;
+<http://ceur-ws.org/Vol-589/#paper10> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-589/> ;
     ns2:title "Constrained Optimization Over Massive Databases" ;
     ns4:author <http://ceur-ws.org/Vol-589/#AmiriHosseiniMonshi>,
         <http://ceur-ws.org/Vol-589/#JustiniPearson>,
         <http://ceur-ws.org/Vol-589/#PierreiFlener>,
         <http://ceur-ws.org/Vol-589/#ToniiMancini> .
 
-<http://ceur-ws.org/Vol-589/#paper01> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-589/> ;
+<http://ceur-ws.org/Vol-589/#paper01> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-589/> ;
     ns2:title "Comparing ASP and CP on Four Grid Puzzles" ;
     ns4:author <http://ceur-ws.org/Vol-589/#EsraiErdem>,
         <http://ceur-ws.org/Vol-589/#FiratiTahao%C4%9Flu>,
@@ -351,8 +352,8 @@
         <http://ceur-ws.org/Vol-589/#Mehmeti%C3%87elik>,
         <http://ceur-ws.org/Vol-589/#TanseliUras> .
 
-<http://ceur-ws.org/Vol-589/#paper03> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-589/> ;
+<http://ceur-ws.org/Vol-589/#paper03> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-589/> ;
     ns2:title "Flexible Plan Verification: Feasibility Results" ;
     ns4:author <http://ceur-ws.org/Vol-589/#AlbertoiFinzi>,
         <http://ceur-ws.org/Vol-589/#AmedeoiCesta>,
@@ -360,8 +361,8 @@
         <http://ceur-ws.org/Vol-589/#EnricoiTronci>,
         <http://ceur-ws.org/Vol-589/#SimoneiFratini> .
 
-<http://ceur-ws.org/Vol-589/#paper02> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-589/> ;
+<http://ceur-ws.org/Vol-589/#paper02> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-589/> ;
     ns2:title "Applying Simulation and Reliability to Vehicle Routing Problems with Stochastic Demands" ;
     ns4:author <http://ceur-ws.org/Vol-589/#AngeliA.iJuan>,
         <http://ceur-ws.org/Vol-589/#BernardoiRuiz>,
@@ -370,8 +371,8 @@
         <http://ceur-ws.org/Vol-589/#JavieriFaulin>,
         <http://ceur-ws.org/Vol-589/#ScottiE.iGrasman> .
 
-<http://ceur-ws.org/Vol-589/#paper04> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-589/> ;
+<http://ceur-ws.org/Vol-589/#paper04> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-589/> ;
     ns2:title "Improving the Automatic Test Generation process for Coverage Analysis using CBMC" ;
     ns4:author <http://ceur-ws.org/Vol-589/#AlessandraiPuddu>,
         <http://ceur-ws.org/Vol-589/#DamianoiAngeletti>,
@@ -380,8 +381,8 @@
         <http://ceur-ws.org/Vol-589/#MassimoiNarizzano>,
         <http://ceur-ws.org/Vol-589/#SalvatoreiSabina> .
 
-<http://ceur-ws.org/Vol-589/#paper06> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-589/> ;
+<http://ceur-ws.org/Vol-589/#paper06> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-589/> ;
     ns2:title "Evaluation of Knowledge Sharing Strategies in a Parallel QBF Solver" ;
     ns4:author <http://ceur-ws.org/Vol-589/#BerndiBecker>,
         <http://ceur-ws.org/Vol-589/#EnricoiGiunchiglia>,
@@ -390,8 +391,8 @@
         <http://ceur-ws.org/Vol-589/#PaoloiMarin>,
         <http://ceur-ws.org/Vol-589/#TobiasiSchubert> .
 
-<http://ceur-ws.org/Vol-589/> a ns6:Proceedings ;
-    ns6:hasPart <http://ceur-ws.org/Vol-589/#paper01>,
+<http://ceur-ws.org/Vol-589/> a ns5:Proceedings ;
+    ns5:hasPart <http://ceur-ws.org/Vol-589/#paper01>,
         <http://ceur-ws.org/Vol-589/#paper02>,
         <http://ceur-ws.org/Vol-589/#paper03>,
         <http://ceur-ws.org/Vol-589/#paper04>,
@@ -406,8 +407,8 @@
         <http://ceur-ws.org/Vol-589/#paper15>,
         <http://ceur-ws.org/Vol-589/#paperX1>,
         <http://ceur-ws.org/Vol-589/#paperX2> ;
-    ns7:issued "2010-06-04T00:00:00+00:00"^^xsd:dateTime ;
-    ns5:presentedAt <http://ceur-ws.org/Vol-589/#event> ;
+    ns8:issued "2010-06-04T00:00:00+00:00"^^xsd:dateTime ;
+    ns9:presentedAt <http://ceur-ws.org/Vol-589/#event> ;
     ns4:editor <http://ceur-ws.org/Vol-589/#MarcoiGavanelli>,
         <http://ceur-ws.org/Vol-589/#ToniiMancini> .
 

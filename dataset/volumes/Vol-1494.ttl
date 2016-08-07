@@ -1,176 +1,36 @@
-@prefix ns1: <http://www.w3.org/2002/07/owl#> .
-@prefix ns2: <http://xmlns.com/foaf/0.1/> .
-@prefix ns3: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns4: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns5: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns6: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns8: <http://purl.org/ontology/bibo/#> .
+@prefix ns1: <http://xmlns.com/foaf/0.1/> .
+@prefix ns2: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns3: <http://www.w3.org/2002/07/owl#> .
+@prefix ns4: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns5: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns6: <http://purl.org/ontology/bibo/#> .
+@prefix ns7: <http://purl.org/dc/elements/1.1/> .
+@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1494/#AdrianiNuradiansyah> a ns2:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/AdrianiNuradiansyah> ;
-    ns2:made <http://ceur-ws.org/Vol-1494/#paper4> ;
-    ns2:name "Adrian Nuradiansyah" .
+<http://ceur-ws.org/Vol-1494/> a ns2:Proceedings ;
+    ns8:issued "2015-10-30T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:presentedAt <http://ceur-ws.org/Vol-1494/#event> ;
+    ns4:editor <http://ceur-ws.org/Vol-1494/#KrisanaiChinnasarn>,
+        <http://ceur-ws.org/Vol-1494/#SteffeniH%C3%B6lldobler> .
 
-<http://ceur-ws.org/Vol-1494/#DantongiOuyang> a ns2:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/DantongiOuyang> ;
-    ns2:made <http://ceur-ws.org/Vol-1494/#paper1> ;
-    ns2:name "Dantong Ouyang" .
+<http://ceur-ws.org/Vol-1494/#KrisanaiChinnasarn> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/KrisanaiChinnasarn> ;
+    ns1:name "Krisana Chinnasarn" .
 
-<http://ceur-ws.org/Vol-1494/#Emmanuelle-AnnaiDietz> a ns2:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/Emmanuelle-AnnaiDietz> ;
-    ns2:made <http://ceur-ws.org/Vol-1494/#paper5> ;
-    ns2:name "Emmanuelle-Anna Dietz" .
+<http://ceur-ws.org/Vol-1494/#SteffeniH%C3%B6lldobler> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/SteffeniH%C3%B6lldobler> ;
+    ns1:name "Steffen Hölldobler" .
 
-<http://ceur-ws.org/Vol-1494/#IndraiBudi> a ns2:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/IndraiBudi> ;
-    ns2:made <http://ceur-ws.org/Vol-1494/#paper4> ;
-    ns2:name "Indra Budi" .
-
-<http://ceur-ws.org/Vol-1494/#JinchaoiZhu> a ns2:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/JinchaoiZhu> ;
-    ns2:made <http://ceur-ws.org/Vol-1494/#paper3> ;
-    ns2:name "Jinchao Zhu" .
-
-<http://ceur-ws.org/Vol-1494/#KaiiFeng> a ns2:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/KaiiFeng> ;
-    ns2:made <http://ceur-ws.org/Vol-1494/#paper2> ;
-    ns2:name "Kai Feng" .
-
-<http://ceur-ws.org/Vol-1494/#KrisanaiChinnasarn> a ns2:Person ;
-    ns3:affiliation "" ;
-    ns1:sameAs <http://ceur-ws.org/persons/KrisanaiChinnasarn> ;
-    ns2:name "Krisana Chinnasarn" .
-
-<http://ceur-ws.org/Vol-1494/#LeiAnhiPhuong> a ns2:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/LeiAnhiPhuong> ;
-    ns2:made <http://ceur-ws.org/Vol-1494/#paper7> ;
-    ns2:name "Le Anh Phuong" .
-
-<http://ceur-ws.org/Vol-1494/#MarcoiRagni> a ns2:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/MarcoiRagni> ;
-    ns2:made <http://ceur-ws.org/Vol-1494/#paper5> ;
-    ns2:name "Marco Ragni" .
-
-<http://ceur-ws.org/Vol-1494/#NguyeniVinhiTrung> a ns2:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/NguyeniVinhiTrung> ;
-    ns2:made <http://ceur-ws.org/Vol-1494/#paper7> ;
-    ns2:name "Nguyen Vinh Trung" .
-
-<http://ceur-ws.org/Vol-1494/#Van-HungiLe> a ns2:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/Van-HungiLe> ;
-    ns2:made <http://ceur-ws.org/Vol-1494/#paper6> ;
-    ns2:name "Van-Hung Le" .
-
-<http://ceur-ws.org/Vol-1494/#XiangbiniGao> a ns2:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/XiangbiniGao> ;
-    ns2:made <http://ceur-ws.org/Vol-1494/#paper1> ;
-    ns2:name "Xiangbin Gao" .
-
-<http://ceur-ws.org/Vol-1494/#YangiChi> a ns2:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/YangiChi> ;
-    ns2:made <http://ceur-ws.org/Vol-1494/#paper3> ;
-    ns2:name "Yang Chi" .
-
-<http://ceur-ws.org/Vol-1494/#YuxiniYe> a ns2:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/YuxiniYe> ;
-    ns2:made <http://ceur-ws.org/Vol-1494/#paper1> ;
-    ns2:name "Yuxin Ye" .
-
-<http://ceur-ws.org/Vol-1494/#event> a ns4:WorkshopEvent ;
-    ns4:hasLocation <http://dbpedia.org/resource/Thailand> ;
-    ns4:hasPart <http://ceur-ws.org/Vol-1494/#part-IWOST> ;
-    ns4:isSubEventOf <http://ceur-ws.org/Vol-1494/#conf> ;
-    ns7:beginsAtDatetime "2015-11-02T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:endsAtDatetime "2015-11-03T00:00:00+00:00"^^xsd:dateTime ;
+<http://ceur-ws.org/Vol-1494/#event> a ns2:WorkshopEvent ;
+    ns2:hasLocation <http://dbpedia.org/resource/Thailand> ;
+    ns2:hasPart <http://ceur-ws.org/Vol-1494/#part-IWOST> ;
+    ns2:isSubEventOf <http://ceur-ws.org/Vol-1494/#conf> ;
+    ns5:beginsAtDatetime "2015-11-02T00:00:00+00:00"^^xsd:dateTime ;
+    ns5:endsAtDatetime "2015-11-03T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:license "http://creativecommons.org/publicdomain/zero/1.0/" ;
     rdfs:seeAlso <http://ceur-ws.org/Vol-1339/#event> .
-
-<http://ceur-ws.org/Vol-1494/#HaoiXu> a ns2:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/HaoiXu> ;
-    ns2:made <http://ceur-ws.org/Vol-1494/#paper2>,
-        <http://ceur-ws.org/Vol-1494/#paper3> ;
-    ns2:name "Hao Xu" .
-
-<http://ceur-ws.org/Vol-1494/#LaniHuang> a ns2:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/LaniHuang> ;
-    ns2:made <http://ceur-ws.org/Vol-1494/#paper2>,
-        <http://ceur-ws.org/Vol-1494/#paper3> ;
-    ns2:name "Lan Huang" .
-
-<http://ceur-ws.org/Vol-1494/#SteffeniH%C3%B6lldobler> a ns2:Person ;
-    ns3:affiliation "" ;
-    ns1:sameAs <http://ceur-ws.org/persons/SteffeniH%C3%B6lldobler> ;
-    ns2:made <http://ceur-ws.org/Vol-1494/#paper5> ;
-    ns2:name "Steffen Hölldobler" .
-
-<http://ceur-ws.org/Vol-1494/#TraniDinhiKhang> a ns2:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/TraniDinhiKhang> ;
-    ns2:made <http://ceur-ws.org/Vol-1494/#paper6>,
-        <http://ceur-ws.org/Vol-1494/#paper7> ;
-    ns2:name "Tran Dinh Khang" .
-
-<http://ceur-ws.org/Vol-1494/#paper4> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1494/> ;
-    ns5:title "Development of Geospatial Dashboard with Analytic Hierarchy Processing for the Expansion of Branch Office Location" ;
-    ns3:author <http://ceur-ws.org/Vol-1494/#AdrianiNuradiansyah>,
-        <http://ceur-ws.org/Vol-1494/#IndraiBudi> .
-
-<http://ceur-ws.org/Vol-1494/#paper6> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1494/> ;
-    ns5:title "Linguistic Logics with Hedges" ;
-    ns3:author <http://ceur-ws.org/Vol-1494/#TraniDinhiKhang>,
-        <http://ceur-ws.org/Vol-1494/#Van-HungiLe> .
-
-<http://ceur-ws.org/Vol-1494/#paper1> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1494/> ;
-    ns5:title "Designment of E-R model based on RDF(S)" ;
-    ns3:author <http://ceur-ws.org/Vol-1494/#DantongiOuyang>,
-        <http://ceur-ws.org/Vol-1494/#XiangbiniGao>,
-        <http://ceur-ws.org/Vol-1494/#YuxiniYe> .
-
-<http://ceur-ws.org/Vol-1494/#paper2> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1494/> ;
-    ns5:title "Semantic Search for Scientific Publications Based on Rhetorical Structure" ;
-    ns3:author <http://ceur-ws.org/Vol-1494/#HaoiXu>,
-        <http://ceur-ws.org/Vol-1494/#KaiiFeng>,
-        <http://ceur-ws.org/Vol-1494/#LaniHuang> .
-
-<http://ceur-ws.org/Vol-1494/#paper5> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1494/> ;
-    ns5:title "A Syllogistic Reasoning Theory and Three Examples" ;
-    ns3:author <http://ceur-ws.org/Vol-1494/#Emmanuelle-AnnaiDietz>,
-        <http://ceur-ws.org/Vol-1494/#MarcoiRagni>,
-        <http://ceur-ws.org/Vol-1494/#SteffeniH%C3%B6lldobler> .
-
-<http://ceur-ws.org/Vol-1494/#paper7> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1494/> ;
-    ns5:title "New Approach to Mining Fuzzy Association Rule with Linguistic Threshold Based on Hedge Algebras" ;
-    ns3:author <http://ceur-ws.org/Vol-1494/#LeiAnhiPhuong>,
-        <http://ceur-ws.org/Vol-1494/#NguyeniVinhiTrung>,
-        <http://ceur-ws.org/Vol-1494/#TraniDinhiKhang> .
-
-<http://ceur-ws.org/Vol-1494/#paper3> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1494/> ;
-    ns5:title "Automatic Semantic Annotation for Abstracts of Scientific Discourses" ;
-    ns3:author <http://ceur-ws.org/Vol-1494/#HaoiXu>,
-        <http://ceur-ws.org/Vol-1494/#JinchaoiZhu>,
-        <http://ceur-ws.org/Vol-1494/#LaniHuang>,
-        <http://ceur-ws.org/Vol-1494/#YangiChi> .
-
-<http://ceur-ws.org/Vol-1494/> a ns4:Proceedings ;
-    ns4:hasPart <http://ceur-ws.org/Vol-1494/#paper1>,
-        <http://ceur-ws.org/Vol-1494/#paper2>,
-        <http://ceur-ws.org/Vol-1494/#paper3>,
-        <http://ceur-ws.org/Vol-1494/#paper4>,
-        <http://ceur-ws.org/Vol-1494/#paper5>,
-        <http://ceur-ws.org/Vol-1494/#paper6>,
-        <http://ceur-ws.org/Vol-1494/#paper7> ;
-    ns6:issued "2015-10-30T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:presentedAt <http://ceur-ws.org/Vol-1494/#event> ;
-    ns3:editor <http://ceur-ws.org/Vol-1494/#KrisanaiChinnasarn>,
-        <http://ceur-ws.org/Vol-1494/#SteffeniH%C3%B6lldobler> .
 

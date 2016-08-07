@@ -1,164 +1,40 @@
-@prefix ns1: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns2: <http://www.w3.org/2002/07/owl#> .
-@prefix ns3: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns4: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns5: <http://xmlns.com/foaf/0.1/> .
-@prefix ns6: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns7: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns8: <http://purl.org/ontology/bibo/#> .
+@prefix ns1: <http://xmlns.com/foaf/0.1/> .
+@prefix ns2: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns3: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns4: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns5: <http://www.w3.org/2002/07/owl#> .
+@prefix ns6: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns7: <http://purl.org/ontology/bibo/#> .
+@prefix ns8: <http://purl.org/dc/elements/1.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-995/#AlejandraiRodriguez> a ns5:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/AlejandraiRodriguez> ;
-    ns5:made <http://ceur-ws.org/Vol-995/#paper2> ;
-    ns5:name "Alejandra Rodriguez" .
-
-<http://ceur-ws.org/Vol-995/#AlexandreiMelloiFerreira> a ns5:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/AlexandreiMelloiFerreira> ;
-    ns5:made <http://ceur-ws.org/Vol-995/#paper6> ;
-    ns5:name "Alexandre Mello Ferreira" .
-
-<http://ceur-ws.org/Vol-995/#AlexiJ.iStringfellow> a ns5:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/AlexiJ.iStringfellow> ;
-    ns5:made <http://ceur-ws.org/Vol-995/#paper7> ;
-    ns5:name "Alex J. Stringfellow" .
-
-<http://ceur-ws.org/Vol-995/#BarbaraiPernici> a ns5:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/BarbaraiPernici> ;
-    ns5:made <http://ceur-ws.org/Vol-995/#paper6> ;
-    ns5:name "Barbara Pernici" .
-
-<http://ceur-ws.org/Vol-995/#BilliTomlinson> a ns5:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/BilliTomlinson> ;
-    ns5:made <http://ceur-ws.org/Vol-995/#paper7> ;
-    ns5:name "Bill Tomlinson" .
-
-<http://ceur-ws.org/Vol-995/#CamilleiSalinesi> a ns5:Person ;
-    ns1:affiliation "" ;
-    ns2:sameAs <http://ceur-ws.org/persons/CamilleiSalinesi> ;
-    ns5:name "Camille Salinesi" .
-
-<http://ceur-ws.org/Vol-995/#CoraliCalero> a ns5:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/CoraliCalero> ;
-    ns5:made <http://ceur-ws.org/Vol-995/#paper5> ;
-    ns5:name "Coral Calero" .
-
-<http://ceur-ws.org/Vol-995/#HenningiFemmer> a ns5:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/HenningiFemmer> ;
-    ns5:made <http://ceur-ws.org/Vol-995/#paper1> ;
-    ns5:name "Henning Femmer" .
-
-<http://ceur-ws.org/Vol-995/#JosephiJ.iLaViolaiJr.> a ns5:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/JosephiJ.iLaViolaiJr.> ;
-    ns5:made <http://ceur-ws.org/Vol-995/#paper7> ;
-    ns5:name "Joseph J. LaViola Jr." .
-
-<http://ceur-ws.org/Vol-995/#JulietiNorton> a ns5:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/JulietiNorton> ;
-    ns5:made <http://ceur-ws.org/Vol-995/#paper7> ;
-    ns5:name "Juliet Norton" .
-
-<http://ceur-ws.org/Vol-995/#MaiAngelesiMoraga> a ns5:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/MaiAngelesiMoraga> ;
-    ns5:made <http://ceur-ws.org/Vol-995/#paper5> ;
-    ns5:name "Ma Angeles Moraga" .
-
-<http://ceur-ws.org/Vol-995/#ManueliF.iBertoa> a ns5:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/ManueliF.iBertoa> ;
-    ns5:made <http://ceur-ws.org/Vol-995/#paper5> ;
-    ns5:name "Manuel F. Bertoa" .
-
-<http://ceur-ws.org/Vol-995/#TimoiJohann> a ns5:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/TimoiJohann> ;
-    ns5:made <http://ceur-ws.org/Vol-995/#paper4> ;
-    ns5:name "Timo Johann" .
-
-<http://ceur-ws.org/Vol-995/#WalidiMaalej> a ns5:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/WalidiMaalej> ;
-    ns5:made <http://ceur-ws.org/Vol-995/#paper4> ;
-    ns5:name "Walid Maalej" .
-
-<http://ceur-ws.org/Vol-995/#event> a ns6:WorkshopEvent ;
-    ns6:hasLocation <http://dbpedia.org/resource/Brazil> ;
-    ns6:hasPart <http://ceur-ws.org/Vol-995/#part-RE4SuSy> ;
-    ns6:isSubEventOf <http://ceur-ws.org/Vol-995/#conf> ;
-    ns3:beginsAtDatetime "2013-07-15T00:00:00+00:00"^^xsd:dateTime ;
-    ns3:endsAtDatetime "2013-07-15T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:license <http://choosealicense.com/licenses/no-license/> .
-
-<http://ceur-ws.org/Vol-995/#MartiniMahaux> a ns5:Person ;
-    ns1:affiliation "" ;
-    ns2:sameAs <http://ceur-ws.org/persons/MartiniMahaux> ;
-    ns5:made <http://ceur-ws.org/Vol-995/#paper3> ;
-    ns5:name "Martin Mahaux" .
-
-<http://ceur-ws.org/Vol-995/#paper3> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-995/> ;
-    ns7:title "Could Participation Support Sustainability in Requirements Engineering ?" ;
-    ns1:author <http://ceur-ws.org/Vol-995/#MartiniMahaux> .
-
-<http://ceur-ws.org/Vol-995/#paper1> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-995/> ;
-    ns7:title "RE@21: Time to Sustain!" ;
-    ns1:author <http://ceur-ws.org/Vol-995/#BirgitiPenzenstadler>,
-        <http://ceur-ws.org/Vol-995/#HenningiFemmer> .
-
-<http://ceur-ws.org/Vol-995/#paper2> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-995/> ;
-    ns7:title "An Assessment Technique for Sustainability: Applying the IMAGINE Approach to Software Systems" ;
-    ns1:author <http://ceur-ws.org/Vol-995/#AlejandraiRodriguez>,
-        <http://ceur-ws.org/Vol-995/#BirgitiPenzenstadler> .
-
-<http://ceur-ws.org/Vol-995/#paper4> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-995/> ;
-    ns7:title "The Social Dimension of Sustainability in Requirements Engineering" ;
-    ns1:author <http://ceur-ws.org/Vol-995/#TimoiJohann>,
-        <http://ceur-ws.org/Vol-995/#WalidiMaalej> .
-
-<http://ceur-ws.org/Vol-995/#paper6> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-995/> ;
-    ns7:title "Using Intelligent Agents to Discover Energy Saving Opportunities within Data Centers" ;
-    ns1:author <http://ceur-ws.org/Vol-995/#AlexandreiMelloiFerreira>,
-        <http://ceur-ws.org/Vol-995/#BarbaraiPernici> .
-
-<http://ceur-ws.org/Vol-995/#BirgitiPenzenstadler> a ns5:Person ;
-    ns1:affiliation "" ;
-    ns2:sameAs <http://ceur-ws.org/persons/BirgitiPenzenstadler> ;
-    ns5:made <http://ceur-ws.org/Vol-995/#paper1>,
-        <http://ceur-ws.org/Vol-995/#paper2>,
-        <http://ceur-ws.org/Vol-995/#paper7> ;
-    ns5:name "Birgit Penzenstadler" .
-
-<http://ceur-ws.org/Vol-995/#paper5> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-995/> ;
-    ns7:title "Sustainability and Quality: Icing on the Cake" ;
-    ns1:author <http://ceur-ws.org/Vol-995/#CoraliCalero>,
-        <http://ceur-ws.org/Vol-995/#MaiAngelesiMoraga>,
-        <http://ceur-ws.org/Vol-995/#ManueliF.iBertoa> .
-
-<http://ceur-ws.org/Vol-995/#paper7> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-995/> ;
-    ns7:title "Plant Guild Composer: A Software System for Sustainability" ;
-    ns1:author <http://ceur-ws.org/Vol-995/#AlexiJ.iStringfellow>,
-        <http://ceur-ws.org/Vol-995/#BilliTomlinson>,
-        <http://ceur-ws.org/Vol-995/#BirgitiPenzenstadler>,
-        <http://ceur-ws.org/Vol-995/#JosephiJ.iLaViolaiJr.>,
-        <http://ceur-ws.org/Vol-995/#JulietiNorton> .
-
-<http://ceur-ws.org/Vol-995/> a ns6:Proceedings ;
-    ns6:hasPart <http://ceur-ws.org/Vol-995/#paper1>,
-        <http://ceur-ws.org/Vol-995/#paper2>,
-        <http://ceur-ws.org/Vol-995/#paper3>,
-        <http://ceur-ws.org/Vol-995/#paper4>,
-        <http://ceur-ws.org/Vol-995/#paper5>,
-        <http://ceur-ws.org/Vol-995/#paper6>,
-        <http://ceur-ws.org/Vol-995/#paper7> ;
-    ns4:issued "2013-06-26T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:presentedAt <http://ceur-ws.org/Vol-995/#event> ;
-    ns1:editor <http://ceur-ws.org/Vol-995/#BirgitiPenzenstadler>,
+<http://ceur-ws.org/Vol-995/> a ns2:Proceedings ;
+    ns3:issued "2013-06-26T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:presentedAt <http://ceur-ws.org/Vol-995/#event> ;
+    ns4:editor <http://ceur-ws.org/Vol-995/#BirgitiPenzenstadler>,
         <http://ceur-ws.org/Vol-995/#CamilleiSalinesi>,
         <http://ceur-ws.org/Vol-995/#MartiniMahaux> .
+
+<http://ceur-ws.org/Vol-995/#BirgitiPenzenstadler> a ns1:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/BirgitiPenzenstadler> ;
+    ns1:name "Birgit Penzenstadler" .
+
+<http://ceur-ws.org/Vol-995/#CamilleiSalinesi> a ns1:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/CamilleiSalinesi> ;
+    ns1:name "Camille Salinesi" .
+
+<http://ceur-ws.org/Vol-995/#MartiniMahaux> a ns1:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/MartiniMahaux> ;
+    ns1:name "Martin Mahaux" .
+
+<http://ceur-ws.org/Vol-995/#event> a ns2:WorkshopEvent ;
+    ns2:hasLocation <http://dbpedia.org/resource/Brazil> ;
+    ns2:hasPart <http://ceur-ws.org/Vol-995/#part-CEUR-WS> ;
+    ns2:isSubEventOf <http://ceur-ws.org/Vol-995/#conf> ;
+    ns6:beginsAtDatetime "2013-07-15T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:endsAtDatetime "2013-07-15T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:license "http://choosealicense.com/licenses/no-license/" .
 

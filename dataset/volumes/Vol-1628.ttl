@@ -1,0 +1,36 @@
+@prefix ns1: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns2: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns3: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns4: <http://xmlns.com/foaf/0.1/> .
+@prefix ns5: <http://www.w3.org/2002/07/owl#> .
+@prefix ns6: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns7: <http://purl.org/ontology/bibo/#> .
+@prefix ns8: <http://purl.org/dc/elements/1.1/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://ceur-ws.org/Vol-1628/> a ns3:Proceedings ;
+    ns1:issued "2016-07-09T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:presentedAt <http://ceur-ws.org/Vol-1628/#event> ;
+    ns6:editor <http://ceur-ws.org/Vol-1628/#BeniSteichen>,
+        <http://ceur-ws.org/Vol-1628/#KeviniKoidl> .
+
+<http://ceur-ws.org/Vol-1628/#BeniSteichen> a ns4:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/BeniSteichen> ;
+    ns4:name "Ben Steichen" .
+
+<http://ceur-ws.org/Vol-1628/#KeviniKoidl> a ns4:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/KeviniKoidl> ;
+    ns4:name "Kevin Koidl" .
+
+<http://ceur-ws.org/Vol-1628/#event> a ns3:WorkshopEvent ;
+    ns3:hasLocation <http://dbpedia.org/resource/Canada> ;
+    ns3:hasPart <http://ceur-ws.org/Vol-1628/#part-HT> ;
+    ns3:isSubEventOf <http://ceur-ws.org/Vol-1628/#conf> ;
+    ns2:beginsAtDatetime "2016-07-13T00:00:00+00:00"^^xsd:dateTime ;
+    ns2:endsAtDatetime "2016-07-16T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:license "http://creativecommons.org/publicdomain/zero/1.0/" ;
+    rdfs:seeAlso <http://ceur-ws.org/Vol-1210/#event> .
+

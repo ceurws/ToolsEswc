@@ -1,249 +1,41 @@
-@prefix ns1: <http://purl.org/ontology/bibo/#> .
-@prefix ns2: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns3: <http://xmlns.com/foaf/0.1/> .
-@prefix ns4: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns5: <http://www.w3.org/2002/07/owl#> .
-@prefix ns6: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns1: <http://xmlns.com/foaf/0.1/> .
+@prefix ns2: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns3: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns4: <http://purl.org/ontology/bibo/#> .
+@prefix ns5: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns6: <http://www.w3.org/2002/07/owl#> .
+@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns8: <http://purl.org/dc/elements/1.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1013/#AroshaiBandara> a ns3:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/AroshaiBandara> ;
-    ns3:made <http://ceur-ws.org/Vol-1013/#casfe2013_submission_3> ;
-    ns3:name "Arosha Bandara" .
+<http://ceur-ws.org/Vol-1013/> a ns3:Proceedings ;
+    ns7:issued "2013-07-17T00:00:00+00:00"^^xsd:dateTime ;
+    ns4:presentedAt <http://ceur-ws.org/Vol-1013/#event> ;
+    ns5:editor <http://ceur-ws.org/Vol-1013/#FabioiPatern%C3%B2>,
+        <http://ceur-ws.org/Vol-1013/#FranciscoiJavieriCamineroiGil>,
+        <http://ceur-ws.org/Vol-1013/#VivianiGenaroiMotti> .
 
-<http://ceur-ws.org/Vol-1013/#CarlosiPicazo> a ns3:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/CarlosiPicazo> ;
-    ns3:made <http://ceur-ws.org/Vol-1013/#casfe2013_submission_5> ;
-    ns3:name "Carlos Picazo" .
+<http://ceur-ws.org/Vol-1013/#FabioiPatern%C3%B2> a ns1:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/FabioiPatern%C3%B2> ;
+    ns1:name "Fabio Paternò" .
 
-<http://ceur-ws.org/Vol-1013/#CarmeniSantoro> a ns3:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/CarmeniSantoro> ;
-    ns3:made <http://ceur-ws.org/Vol-1013/#casfe2013_submission_8> ;
-    ns3:name "Carmen Santoro" .
+<http://ceur-ws.org/Vol-1013/#FranciscoiJavieriCamineroiGil> a ns1:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/FranciscoiJavieriCamineroiGil> ;
+    ns1:name "Francisco Javier Caminero Gil" .
 
-<http://ceur-ws.org/Vol-1013/#CristinaiG.iCach%C3%B3n> a ns3:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/CristinaiG.iCach%C3%B3n> ;
-    ns3:made <http://ceur-ws.org/Vol-1013/#casfe2013_submission_6> ;
-    ns3:name "Cristina G. Cachón" .
+<http://ceur-ws.org/Vol-1013/#VivianiGenaroiMotti> a ns1:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/VivianiGenaroiMotti> ;
+    ns1:name "Vivian Genaro Motti" .
 
-<http://ceur-ws.org/Vol-1013/#DaveiRaggett> a ns3:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/DaveiRaggett> ;
-    ns3:made <http://ceur-ws.org/Vol-1013/#casfe2013_submission_4> ;
-    ns3:name "Dave Raggett" .
-
-<http://ceur-ws.org/Vol-1013/#GiuseppeiGhiani> a ns3:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/GiuseppeiGhiani> ;
-    ns3:made <http://ceur-ws.org/Vol-1013/#casfe2013_submission_8> ;
-    ns3:name "Giuseppe Ghiani" .
-
-<http://ceur-ws.org/Vol-1013/#IgnacioiMar%C3%ADn> a ns3:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/IgnacioiMar%C3%ADn> ;
-    ns3:made <http://ceur-ws.org/Vol-1013/#casfe2013_submission_6> ;
-    ns3:name "Ignacio Marín" .
-
-<http://ceur-ws.org/Vol-1013/#JavieriR.iEscolar> a ns3:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/JavieriR.iEscolar> ;
-    ns3:made <http://ceur-ws.org/Vol-1013/#casfe2013_submission_6> ;
-    ns3:name "Javier R. Escolar" .
-
-<http://ceur-ws.org/Vol-1013/#JoseiRela%C3%B1o> a ns3:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/JoseiRela%C3%B1o> ;
-    ns3:made <http://ceur-ws.org/Vol-1013/#casfe2013_submission_5> ;
-    ns3:name "Jose Relaño" .
-
-<http://ceur-ws.org/Vol-1013/#JulioiIvaniAlegre-Torrejon> a ns3:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/JulioiIvaniAlegre-Torrejon> ;
-    ns3:made <http://ceur-ws.org/Vol-1013/#casfe2013_submission_2> ;
-    ns3:name "Julio Ivan Alegre-Torrejon" .
-
-<http://ceur-ws.org/Vol-1013/#MarcoiManca> a ns3:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/MarcoiManca> ;
-    ns3:made <http://ceur-ws.org/Vol-1013/#casfe2013_submission_8> ;
-    ns3:name "Marco Manca" .
-
-<http://ceur-ws.org/Vol-1013/#NicanoriGuti%C3%A9rrez> a ns3:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/NicanoriGuti%C3%A9rrez> ;
-    ns3:made <http://ceur-ws.org/Vol-1013/#casfe2013_submission_6> ;
-    ns3:name "Nicanor Gutiérrez" .
-
-<http://ceur-ws.org/Vol-1013/#PierreiAkiki> a ns3:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/PierreiAkiki> ;
-    ns3:made <http://ceur-ws.org/Vol-1013/#casfe2013_submission_3> ;
-    ns3:name "Pierre Akiki" .
-
-<http://ceur-ws.org/Vol-1013/#SafdariAli> a ns3:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/SafdariAli> ;
-    ns3:made <http://ceur-ws.org/Vol-1013/#casfe2013_submission_7> ;
-    ns3:name "Safdar Ali" .
-
-<http://ceur-ws.org/Vol-1013/#UgoiSangiorgi> a ns3:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/UgoiSangiorgi> ;
-    ns3:made <http://ceur-ws.org/Vol-1013/#casfe2013_submission_1> ;
-    ns3:name "Ugo Sangiorgi" .
-
-<http://ceur-ws.org/Vol-1013/#UmairiJaved> a ns3:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/UmairiJaved> ;
-    ns3:made <http://ceur-ws.org/Vol-1013/#casfe2013_submission_7> ;
-    ns3:name "Umair Javed" .
-
-<http://ceur-ws.org/Vol-1013/#YijuniYu> a ns3:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/YijuniYu> ;
-    ns3:made <http://ceur-ws.org/Vol-1013/#casfe2013_submission_3> ;
-    ns3:name "Yijun Yu" .
-
-<http://ceur-ws.org/Vol-1013/#event> a ns4:WorkshopEvent ;
-    ns4:hasLocation <http://dbpedia.org/resource/United_Kingdom> ;
-    ns4:hasPart <http://ceur-ws.org/Vol-1013/#part-Front-Ends> ;
-    ns4:isSubEventOf <http://ceur-ws.org/Vol-1013/#conf> ;
-    ns7:beginsAtDatetime "2013-06-24T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:endsAtDatetime "2013-06-24T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:license <http://choosealicense.com/licenses/no-license/> ;
+<http://ceur-ws.org/Vol-1013/#event> a ns3:WorkshopEvent ;
+    ns3:hasLocation <http://dbpedia.org/resource/United_Kingdom> ;
+    ns3:hasPart <http://ceur-ws.org/Vol-1013/#part-CEUR-WS> ;
+    ns3:isSubEventOf <http://ceur-ws.org/Vol-1013/#conf> ;
+    ns2:beginsAtDatetime "2013-06-24T00:00:00+00:00"^^xsd:dateTime ;
+    ns2:endsAtDatetime "2013-06-24T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:license "http://choosealicense.com/licenses/no-license/" ;
     rdfs:seeAlso <http://ceur-ws.org/Vol-970/#event> .
-
-<http://ceur-ws.org/Vol-1013/#FabioiPatern%C3%B2> a ns3:Person ;
-    ns2:affiliation "" ;
-    ns5:sameAs <http://ceur-ws.org/persons/FabioiPatern%C3%B2> ;
-    ns3:made <http://ceur-ws.org/Vol-1013/#casfe2013_submission_8> ;
-    ns3:name "Fabio Paternò" .
-
-<http://ceur-ws.org/Vol-1013/#JeaniVanderdonckt> a ns3:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/JeaniVanderdonckt> ;
-    ns3:made <http://ceur-ws.org/Vol-1013/#casfe2013_submission_1>,
-        <http://ceur-ws.org/Vol-1013/#casfe2013_submission_4> ;
-    ns3:name "Jean Vanderdonckt" .
-
-<http://ceur-ws.org/Vol-1013/#MariiCarmeniRodr%C3%ADguez-Gancedo> a ns3:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/MariiCarmeniRodr%C3%ADguez-Gancedo> ;
-    ns3:made <http://ceur-ws.org/Vol-1013/#casfe2013_submission_2>,
-        <http://ceur-ws.org/Vol-1013/#casfe2013_submission_5> ;
-    ns3:name "Mari Carmen Rodríguez-Gancedo" .
-
-<http://ceur-ws.org/Vol-1013/#FranciscoiJavieriCamineroiGil> a ns3:Person ;
-    ns2:affiliation "" ;
-    ns5:sameAs <http://ceur-ws.org/persons/FranciscoiJavieriCamineroiGil> ;
-    ns3:made <http://ceur-ws.org/Vol-1013/#casfe2013_submission_2>,
-        <http://ceur-ws.org/Vol-1013/#casfe2013_submission_5> ;
-    ns3:name "Francisco Javier Caminero Gil" .
-
-<http://ceur-ws.org/Vol-1013/#VivianiGenaroiMotti> a ns3:Person ;
-    ns2:affiliation "" ;
-    ns5:sameAs <http://ceur-ws.org/persons/VivianiGenaroiMotti> ;
-    ns3:made <http://ceur-ws.org/Vol-1013/#casfe2013_submission_1>,
-        <http://ceur-ws.org/Vol-1013/#casfe2013_submission_4> ;
-    ns3:name "Vivian Genaro Motti" .
-
-<http://ceur-ws.org/Vol-1013/#casfe2013_submission_7> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1013/> ;
-    ns6:title "An Eclipse-Based Authoring Tool For Developing Model-Based Adaptive Service Frond-Ends" ;
-    ns1:endPage 35 ;
-    ns1:numPages 4 ;
-    ns1:section <http%3A//ceur-ws.org/Vol-1013/%23MainSession> ;
-    ns1:startPage 32 ;
-    ns2:author <http://ceur-ws.org/Vol-1013/#SafdariAli>,
-        <http://ceur-ws.org/Vol-1013/#UmairiJaved> .
-
-<http://ceur-ws.org/Vol-1013/#casfe2013_submission_1> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1013/> ;
-    ns6:title "Enhancing Collaborative Sketching with Adaptation Guidelines" ;
-    ns1:endPage 4 ;
-    ns1:numPages 4 ;
-    ns1:section <http%3A//ceur-ws.org/Vol-1013/%23MainSession> ;
-    ns1:startPage 1 ;
-    ns2:author <http://ceur-ws.org/Vol-1013/#JeaniVanderdonckt>,
-        <http://ceur-ws.org/Vol-1013/#UgoiSangiorgi>,
-        <http://ceur-ws.org/Vol-1013/#VivianiGenaroiMotti> .
-
-<http://ceur-ws.org/Vol-1013/#casfe2013_submission_2> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1013/> ;
-    ns6:title "Collaborative Working Solutions based on Web Technologies powered by the Webinos platform" ;
-    ns1:endPage 8 ;
-    ns1:numPages 4 ;
-    ns1:section <http%3A//ceur-ws.org/Vol-1013/%23MainSession> ;
-    ns1:startPage 5 ;
-    ns2:author <http://ceur-ws.org/Vol-1013/#FranciscoiJavieriCamineroiGil>,
-        <http://ceur-ws.org/Vol-1013/#JulioiIvaniAlegre-Torrejon>,
-        <http://ceur-ws.org/Vol-1013/#MariiCarmeniRodr%C3%ADguez-Gancedo> .
-
-<http://ceur-ws.org/Vol-1013/#casfe2013_submission_3> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1013/> ;
-    ns6:title "Preserving Designer Input on Concrete User Interfaces Using Constraints While Maintaining Adaptive Behavior" ;
-    ns1:endPage 16 ;
-    ns1:numPages 8 ;
-    ns1:section <http%3A//ceur-ws.org/Vol-1013/%23MainSession> ;
-    ns1:startPage 9 ;
-    ns2:author <http://ceur-ws.org/Vol-1013/#AroshaiBandara>,
-        <http://ceur-ws.org/Vol-1013/#PierreiAkiki>,
-        <http://ceur-ws.org/Vol-1013/#YijuniYu> .
-
-<http://ceur-ws.org/Vol-1013/#casfe2013_submission_4> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1013/> ;
-    ns6:title "Current Practices on Model-based Context-aware Adaptation" ;
-    ns1:endPage 23 ;
-    ns1:numPages 7 ;
-    ns1:section <http%3A//ceur-ws.org/Vol-1013/%23MainSession> ;
-    ns1:startPage 17 ;
-    ns2:author <http://ceur-ws.org/Vol-1013/#DaveiRaggett>,
-        <http://ceur-ws.org/Vol-1013/#JeaniVanderdonckt>,
-        <http://ceur-ws.org/Vol-1013/#VivianiGenaroiMotti> .
-
-<http://ceur-ws.org/Vol-1013/#casfe2013_submission_5> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1013/> ;
-    ns6:title "T-OMT: A Novel Opinion Mining Tool for Improving Global Customer Relationship Management" ;
-    ns1:endPage 27 ;
-    ns1:numPages 4 ;
-    ns1:section <http%3A//ceur-ws.org/Vol-1013/%23MainSession> ;
-    ns1:startPage 24 ;
-    ns2:author <http://ceur-ws.org/Vol-1013/#CarlosiPicazo>,
-        <http://ceur-ws.org/Vol-1013/#FranciscoiJavieriCamineroiGil>,
-        <http://ceur-ws.org/Vol-1013/#JoseiRela%C3%B1o>,
-        <http://ceur-ws.org/Vol-1013/#MariiCarmeniRodr%C3%ADguez-Gancedo> .
-
-<http://ceur-ws.org/Vol-1013/#casfe2013_submission_6> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1013/> ;
-    ns6:title "MMW-4S: a model-based approach for generating context-aware user interfaces for the mobile Web" ;
-    ns1:endPage 31 ;
-    ns1:numPages 4 ;
-    ns1:section <http%3A//ceur-ws.org/Vol-1013/%23MainSession> ;
-    ns1:startPage 28 ;
-    ns2:author <http://ceur-ws.org/Vol-1013/#CristinaiG.iCach%C3%B3n>,
-        <http://ceur-ws.org/Vol-1013/#IgnacioiMar%C3%ADn>,
-        <http://ceur-ws.org/Vol-1013/#JavieriR.iEscolar>,
-        <http://ceur-ws.org/Vol-1013/#NicanoriGuti%C3%A9rrez> .
-
-<http://ceur-ws.org/Vol-1013/#casfe2013_submission_8> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1013/> ;
-    ns6:title "Towards an Architecture Supporting Social, Adaptive and Persuasive Services for Active Elderly" ;
-    ns1:endPage 41 ;
-    ns1:numPages 6 ;
-    ns1:section <http%3A//ceur-ws.org/Vol-1013/%23MainSession> ;
-    ns1:startPage 36 ;
-    ns2:author <http://ceur-ws.org/Vol-1013/#CarmeniSantoro>,
-        <http://ceur-ws.org/Vol-1013/#FabioiPatern%C3%B2>,
-        <http://ceur-ws.org/Vol-1013/#GiuseppeiGhiani>,
-        <http://ceur-ws.org/Vol-1013/#MarcoiManca> .
-
-<http%3A//ceur-ws.org/Vol-1013/%23MainSession> a ns4:SessionEvent ;
-    ns4:partOf <http://ceur-ws.org/Vol-1013/> ;
-    ns6:title "Main Session" .
-
-<http://ceur-ws.org/Vol-1013/> a ns4:Proceedings ;
-    ns4:hasPart <http://ceur-ws.org/Vol-1013/#casfe2013_submission_1>,
-        <http://ceur-ws.org/Vol-1013/#casfe2013_submission_2>,
-        <http://ceur-ws.org/Vol-1013/#casfe2013_submission_3>,
-        <http://ceur-ws.org/Vol-1013/#casfe2013_submission_4>,
-        <http://ceur-ws.org/Vol-1013/#casfe2013_submission_5>,
-        <http://ceur-ws.org/Vol-1013/#casfe2013_submission_6>,
-        <http://ceur-ws.org/Vol-1013/#casfe2013_submission_7>,
-        <http://ceur-ws.org/Vol-1013/#casfe2013_submission_8> ;
-    ns4:hasSession <http%3A//ceur-ws.org/Vol-1013/%23MainSession> ;
-    ns8:issued "2013-07-17T00:00:00+00:00"^^xsd:dateTime ;
-    ns1:presentedAt <http://ceur-ws.org/Vol-1013/#event> ;
-    ns2:editor <http://ceur-ws.org/Vol-1013/#FabioiPatern%C3%B2>,
-        <http://ceur-ws.org/Vol-1013/#FranciscoiJavieriCamineroiGil>,
-        <http://ceur-ws.org/Vol-1013/#VivianiGenaroiMotti> .
 

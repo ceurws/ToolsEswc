@@ -1,292 +1,40 @@
 @prefix ns1: <http://www.w3.org/2002/07/owl#> .
-@prefix ns2: <http://purl.org/ontology/bibo/#> .
+@prefix ns2: <http://purl.org/dc/elements/1.1/> .
 @prefix ns3: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns4: <http://xmlns.com/foaf/0.1/> .
-@prefix ns5: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns6: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns4: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns5: <http://xmlns.com/foaf/0.1/> .
+@prefix ns6: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns7: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns8: <http://purl.org/ontology/bibo/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-770/#AleksanderiSadikov> a ns4:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/AleksanderiSadikov> ;
-    ns4:made <http://ceur-ws.org/Vol-770/#paper7> ;
-    ns4:name "Aleksander Sadikov" .
+<http://ceur-ws.org/Vol-770/> a ns3:Proceedings ;
+    ns4:issued "2011-08-30T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:presentedAt <http://ceur-ws.org/Vol-770/#event> ;
+    ns7:editor <http://ceur-ws.org/Vol-770/#Miko%C5%82ajiMorzy>,
+        <http://ceur-ws.org/Vol-770/#NinoiAntonov-Fantulin>,
+        <http://ceur-ws.org/Vol-770/#Tomi%C5%A0muc> .
 
-<http://ceur-ws.org/Vol-770/#AlexanderiD%27yakonov> a ns4:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/AlexanderiD%27yakonov> ;
-    ns4:made <http://ceur-ws.org/Vol-770/#paper5> ;
-    ns4:name "Alexander D'yakonov" .
+<http://ceur-ws.org/Vol-770/#Miko%C5%82ajiMorzy> a ns5:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/Miko%C5%82ajiMorzy> ;
+    ns5:name "Mikołaj Morzy" .
 
-<http://ceur-ws.org/Vol-770/#C.iLeeiGiles> a ns4:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/C.iLeeiGiles> ;
-    ns4:made <http://ceur-ws.org/Vol-770/#paper6> ;
-    ns4:name "C. Lee Giles" .
+<http://ceur-ws.org/Vol-770/#NinoiAntonov-Fantulin> a ns5:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/NinoiAntonov-Fantulin> ;
+    ns5:name "Nino Antonov-Fantulin" .
 
-<http://ceur-ws.org/Vol-770/#DamieniDudognon> a ns4:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/DamieniDudognon> ;
-    ns4:made <http://ceur-ws.org/Vol-770/#paper4> ;
-    ns4:name "Damien Dudognon" .
-
-<http://ceur-ws.org/Vol-770/#DongwoniLee> a ns4:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/DongwoniLee> ;
-    ns4:made <http://ceur-ws.org/Vol-770/#paper6> ;
-    ns4:name "Dongwon Lee" .
-
-<http://ceur-ws.org/Vol-770/#EitaniAbraham> a ns4:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/EitaniAbraham> ;
-    ns4:made <http://ceur-ws.org/Vol-770/#paper2> ;
-    ns4:name "Eitan Abraham" .
-
-<http://ceur-ws.org/Vol-770/#EleftheriosiSpyromitros-Xioufis> a ns4:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/EleftheriosiSpyromitros-Xioufis> ;
-    ns4:made <http://ceur-ws.org/Vol-770/#paper10> ;
-    ns4:name "Eleftherios Spyromitros-Xioufis" .
-
-<http://ceur-ws.org/Vol-770/#EmmanouelaiStachtiari> a ns4:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/EmmanouelaiStachtiari> ;
-    ns4:made <http://ceur-ws.org/Vol-770/#paper10> ;
-    ns4:name "Emmanouela Stachtiari" .
-
-<http://ceur-ws.org/Vol-770/#GiovanniiSemeraro> a ns4:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/GiovanniiSemeraro> ;
-    ns4:made <http://ceur-ws.org/Vol-770/#paper9> ;
-    ns4:name "Giovanni Semeraro" .
-
-<http://ceur-ws.org/Vol-770/#GokhaniCapan> a ns4:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/GokhaniCapan> ;
-    ns4:made <http://ceur-ws.org/Vol-770/#paper8> ;
-    ns4:name "Gokhan Capan" .
-
-<http://ceur-ws.org/Vol-770/#GrigoriosiTsoumakas> a ns4:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/GrigoriosiTsoumakas> ;
-    ns4:made <http://ceur-ws.org/Vol-770/#paper10> ;
-    ns4:name "Grigorios Tsoumakas" .
-
-<http://ceur-ws.org/Vol-770/#HaibiniLiu> a ns4:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/HaibiniLiu> ;
-    ns4:made <http://ceur-ws.org/Vol-770/#paper6> ;
-    ns4:name "Haibin Liu" .
-
-<http://ceur-ws.org/Vol-770/#IoannisiVlahavas> a ns4:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/IoannisiVlahavas> ;
-    ns4:made <http://ceur-ws.org/Vol-770/#paper10> ;
-    ns4:name "Ioannis Vlahavas" .
-
-<http://ceur-ws.org/Vol-770/#IvaniBratko> a ns4:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/IvaniBratko> ;
-    ns4:made <http://ceur-ws.org/Vol-770/#paper7> ;
-    ns4:name "Ivan Bratko" .
-
-<http://ceur-ws.org/Vol-770/#JavieriA.iKreiner> a ns4:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/JavieriA.iKreiner> ;
-    ns4:made <http://ceur-ws.org/Vol-770/#paper2> ;
-    ns4:name "Javier A. Kreiner" .
-
-<http://ceur-ws.org/Vol-770/#JosianeiMothe> a ns4:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/JosianeiMothe> ;
-    ns4:made <http://ceur-ws.org/Vol-770/#paper4> ;
-    ns4:name "Josiane Mothe" .
-
-<http://ceur-ws.org/Vol-770/#LeoiIaquinta> a ns4:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/LeoiIaquinta> ;
-    ns4:made <http://ceur-ws.org/Vol-770/#paper9> ;
-    ns4:name "Leo Iaquinta" .
-
-<http://ceur-ws.org/Vol-770/#Martini%C5%BDnidar%C5%A1i%C4%8D> a ns4:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/Martini%C5%BDnidar%C5%A1i%C4%8D> ;
-    ns4:made <http://ceur-ws.org/Vol-770/#overview> ;
-    ns4:name "Martin Žnidaršič" .
-
-<http://ceur-ws.org/Vol-770/#MartiniMo%C5%BEina> a ns4:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/MartiniMo%C5%BEina> ;
-    ns4:made <http://ceur-ws.org/Vol-770/#paper7> ;
-    ns4:name "Martin Možina" .
-
-<http://ceur-ws.org/Vol-770/#MatkoiBo%C5%A1njak> a ns4:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/MatkoiBo%C5%A1njak> ;
-    ns4:made <http://ceur-ws.org/Vol-770/#overview> ;
-    ns4:name "Matko Bošnjak" .
-
-<http://ceur-ws.org/Vol-770/#MaxiChevalier> a ns4:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/MaxiChevalier> ;
-    ns4:made <http://ceur-ws.org/Vol-770/#paper4> ;
-    ns4:name "Max Chevalier" .
-
-<http://ceur-ws.org/Vol-770/#MihaiGr%C4%8Dar> a ns4:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/MihaiGr%C4%8Dar> ;
-    ns4:made <http://ceur-ws.org/Vol-770/#overview> ;
-    ns4:name "Miha Grčar" .
-
-<http://ceur-ws.org/Vol-770/#OzguriYilmazel> a ns4:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/OzguriYilmazel> ;
-    ns4:made <http://ceur-ws.org/Vol-770/#paper8> ;
-    ns4:name "Ozgur Yilmazel" .
-
-<http://ceur-ws.org/Vol-770/#PrasenjitiMitra> a ns4:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/PrasenjitiMitra> ;
-    ns4:made <http://ceur-ws.org/Vol-770/#paper6> ;
-    ns4:name "Prasenjit Mitra" .
-
-<http://ceur-ws.org/Vol-770/#SujathaiDas> a ns4:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/SujathaiDas> ;
-    ns4:made <http://ceur-ws.org/Vol-770/#paper6> ;
-    ns4:name "Sujatha Das" .
-
-<http://ceur-ws.org/Vol-770/#TaoufiqiDkaki> a ns4:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/TaoufiqiDkaki> ;
-    ns4:made <http://ceur-ws.org/Vol-770/#paper4> ;
-    ns4:name "Taoufiq Dkaki" .
-
-<http://ceur-ws.org/Vol-770/#VladimiriNikulin> a ns4:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/VladimiriNikulin> ;
-    ns4:made <http://ceur-ws.org/Vol-770/#paper3> ;
-    ns4:name "Vladimir Nikulin" .
+<http://ceur-ws.org/Vol-770/#Tomi%C5%A0muc> a ns5:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/Tomi%C5%A0muc> ;
+    ns5:name "Tom Šmuc" .
 
 <http://ceur-ws.org/Vol-770/#event> a ns3:WorkshopEvent ;
     ns3:hasLocation <http://dbpedia.org/resource/Greece> ;
-    ns3:hasPart <http://ceur-ws.org/Vol-770/#part-ECML>,
-        <http://ceur-ws.org/Vol-770/#part-PKDD> ;
+    ns3:hasPart <http://ceur-ws.org/Vol-770/#part-CEUR-WS> ;
     ns3:isSubEventOf <http://ceur-ws.org/Vol-770/#conf> ;
-    ns7:beginsAtDatetime "2011-09-05T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:endsAtDatetime "2011-09-05T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:license <http://choosealicense.com/licenses/no-license/> .
-
-<http://ceur-ws.org/Vol-770/#Miko%C5%82ajiMorzy> a ns4:Person ;
-    ns5:affiliation "" ;
-    ns1:sameAs <http://ceur-ws.org/persons/Miko%C5%82ajiMorzy> ;
-    ns4:made <http://ceur-ws.org/Vol-770/#overview> ;
-    ns4:name "Mikołaj Morzy" .
-
-<http://ceur-ws.org/Vol-770/#NinoiAntulov-Fantulin> a ns4:Person ;
-    ns5:affiliation "" ;
-    ns1:sameAs <http://ceur-ws.org/persons/NinoiAntulov-Fantulin> ;
-    ns4:made <http://ceur-ws.org/Vol-770/#overview> ;
-    ns4:name "Nino Antulov-Fantulin" .
-
-<http://ceur-ws.org/Vol-770/#Tomislavi%C5%A0muc> a ns4:Person ;
-    ns5:affiliation "" ;
-    ns1:sameAs <http://ceur-ws.org/persons/Tomislavi%C5%A0muc> ;
-    ns4:made <http://ceur-ws.org/Vol-770/#overview> ;
-    ns4:name "Tomislav Šmuc" .
-
-<http://ceur-ws.org/Vol-770/#paper3> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-770/> ;
-    ns6:title "OpenStudy: Recommendations of the Following Ten Lectures After Viewing a Set of Three Given Lectures" ;
-    ns2:endPage 70 ;
-    ns2:numPages 12 ;
-    ns2:startPage 59 ;
-    ns5:author <http://ceur-ws.org/Vol-770/#VladimiriNikulin> .
-
-<http://ceur-ws.org/Vol-770/#paper5> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-770/> ;
-    ns6:title "Two Recommendation Algorithms Based on Deformed Linear Combinations" ;
-    ns2:endPage 28 ;
-    ns2:numPages 8 ;
-    ns2:startPage 21 ;
-    ns5:author <http://ceur-ws.org/Vol-770/#AlexanderiD%27yakonov> .
-
-<http://ceur-ws.org/Vol-770/#paper2> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-770/> ;
-    ns6:title "Recommender System Based on Purely Probabilistic Model from Pooled Sequence Statistics" ;
-    ns2:endPage 58 ;
-    ns2:numPages 8 ;
-    ns2:startPage 51 ;
-    ns5:author <http://ceur-ws.org/Vol-770/#EitaniAbraham>,
-        <http://ceur-ws.org/Vol-770/#JavieriA.iKreiner> .
-
-<http://ceur-ws.org/Vol-770/#paper8> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-770/> ;
-    ns6:title "Joint Features Regression for Cold-Start Recommendation on VideoLectures.Net" ;
-    ns2:endPage 109 ;
-    ns2:numPages 7 ;
-    ns2:startPage 103 ;
-    ns5:author <http://ceur-ws.org/Vol-770/#GokhaniCapan>,
-        <http://ceur-ws.org/Vol-770/#OzguriYilmazel> .
-
-<http://ceur-ws.org/Vol-770/#paper9> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-770/> ;
-    ns6:title "Lightweight Approach to the Cold Start Problem in the Video Lecture Recommendation" ;
-    ns2:endPage 94 ;
-    ns2:numPages 12 ;
-    ns2:startPage 83 ;
-    ns5:author <http://ceur-ws.org/Vol-770/#GiovanniiSemeraro>,
-        <http://ceur-ws.org/Vol-770/#LeoiIaquinta> .
-
-<http://ceur-ws.org/Vol-770/#paper7> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-770/> ;
-    ns6:title "Recommending VideoLectures with Linear Regression" ;
-    ns2:endPage 50 ;
-    ns2:numPages 10 ;
-    ns2:startPage 41 ;
-    ns5:author <http://ceur-ws.org/Vol-770/#AleksanderiSadikov>,
-        <http://ceur-ws.org/Vol-770/#IvaniBratko>,
-        <http://ceur-ws.org/Vol-770/#MartiniMo%C5%BEina> .
-
-<http://ceur-ws.org/Vol-770/#paper10> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-770/> ;
-    ns6:title "A Hybrid Approach for Cold-start Recommendations of Videolectures" ;
-    ns2:endPage 40 ;
-    ns2:numPages 12 ;
-    ns2:startPage 29 ;
-    ns5:author <http://ceur-ws.org/Vol-770/#EleftheriosiSpyromitros-Xioufis>,
-        <http://ceur-ws.org/Vol-770/#EmmanouelaiStachtiari>,
-        <http://ceur-ws.org/Vol-770/#GrigoriosiTsoumakas>,
-        <http://ceur-ws.org/Vol-770/#IoannisiVlahavas> .
-
-<http://ceur-ws.org/Vol-770/#paper4> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-770/> ;
-    ns6:title "Recommender System Based on Random Walks and Text Retrieval Approaches" ;
-    ns2:endPage 102 ;
-    ns2:numPages 8 ;
-    ns2:startPage 95 ;
-    ns5:author <http://ceur-ws.org/Vol-770/#DamieniDudognon>,
-        <http://ceur-ws.org/Vol-770/#JosianeiMothe>,
-        <http://ceur-ws.org/Vol-770/#MaxiChevalier>,
-        <http://ceur-ws.org/Vol-770/#TaoufiqiDkaki> .
-
-<http://ceur-ws.org/Vol-770/#paper6> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-770/> ;
-    ns6:title "Using Co-views Information to Learn Lecture Recommendations" ;
-    ns2:endPage 82 ;
-    ns2:numPages 12 ;
-    ns2:startPage 71 ;
-    ns5:author <http://ceur-ws.org/Vol-770/#C.iLeeiGiles>,
-        <http://ceur-ws.org/Vol-770/#DongwoniLee>,
-        <http://ceur-ws.org/Vol-770/#HaibiniLiu>,
-        <http://ceur-ws.org/Vol-770/#PrasenjitiMitra>,
-        <http://ceur-ws.org/Vol-770/#SujathaiDas> .
-
-<http://ceur-ws.org/Vol-770/#overview> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-770/> ;
-    ns6:title "ECML-PKDD 2011 Discovery Challenge Overview" ;
-    ns2:endPage 20 ;
-    ns2:numPages 14 ;
-    ns2:startPage 7 ;
-    ns5:author <http://ceur-ws.org/Vol-770/#Martini%C5%BDnidar%C5%A1i%C4%8D>,
-        <http://ceur-ws.org/Vol-770/#MatkoiBo%C5%A1njak>,
-        <http://ceur-ws.org/Vol-770/#MihaiGr%C4%8Dar>,
-        <http://ceur-ws.org/Vol-770/#Miko%C5%82ajiMorzy>,
-        <http://ceur-ws.org/Vol-770/#NinoiAntulov-Fantulin>,
-        <http://ceur-ws.org/Vol-770/#Tomislavi%C5%A0muc> .
-
-<http://ceur-ws.org/Vol-770/> a ns3:Proceedings ;
-    ns3:hasPart <http://ceur-ws.org/Vol-770/#overview>,
-        <http://ceur-ws.org/Vol-770/#paper10>,
-        <http://ceur-ws.org/Vol-770/#paper2>,
-        <http://ceur-ws.org/Vol-770/#paper3>,
-        <http://ceur-ws.org/Vol-770/#paper4>,
-        <http://ceur-ws.org/Vol-770/#paper5>,
-        <http://ceur-ws.org/Vol-770/#paper6>,
-        <http://ceur-ws.org/Vol-770/#paper7>,
-        <http://ceur-ws.org/Vol-770/#paper8>,
-        <http://ceur-ws.org/Vol-770/#paper9> ;
-    ns8:issued "2011-08-30T00:00:00+00:00"^^xsd:dateTime ;
-    ns2:presentedAt <http://ceur-ws.org/Vol-770/#event> ;
-    ns5:editor <http://ceur-ws.org/Vol-770/#Miko%C5%82ajiMorzy>,
-        <http://ceur-ws.org/Vol-770/#NinoiAntulov-Fantulin>,
-        <http://ceur-ws.org/Vol-770/#Tomislavi%C5%A0muc> .
+    ns6:beginsAtDatetime "2011-09-05T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:endsAtDatetime "2011-09-05T00:00:00+00:00"^^xsd:dateTime ;
+    ns2:license "http://choosealicense.com/licenses/no-license/" .
 

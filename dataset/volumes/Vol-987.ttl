@@ -1,188 +1,48 @@
-@prefix ns1: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns1: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix ns2: <http://swrc.ontoware.org/ontology/#> .
 @prefix ns3: <http://xmlns.com/foaf/0.1/> .
-@prefix ns4: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns5: <http://purl.org/ontology/bibo/#> .
-@prefix ns6: <http://www.w3.org/2002/07/owl#> .
-@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns4: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns5: <http://www.w3.org/2002/07/owl#> .
+@prefix ns6: <http://purl.org/ontology/bibo/#> .
+@prefix ns7: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns8: <http://purl.org/dc/elements/1.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-987/#AdrieniPalomba> a ns3:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/AdrieniPalomba> ;
-    ns3:made <http://ceur-ws.org/Vol-987/#4> ;
-    ns3:name "Adrien Palomba" .
-
-<http://ceur-ws.org/Vol-987/#CarinaiF.iAlves> a ns3:Person ;
-    ns2:affiliation "IWSECO" ;
-    ns6:sameAs <http://ceur-ws.org/persons/CarinaiF.iAlves> ;
-    ns3:name "Carina F. Alves" .
-
-<http://ceur-ws.org/Vol-987/#Cl%C3%A1udiaiM.iL.iWerner> a ns3:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/Cl%C3%A1udiaiM.iL.iWerner> ;
-    ns3:made <http://ceur-ws.org/Vol-987/#1> ;
-    ns3:name "Cláudia M. L. Werner" .
-
-<http://ceur-ws.org/Vol-987/#FranciscoiW.iSantana> a ns3:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/FranciscoiW.iSantana> ;
-    ns3:made <http://ceur-ws.org/Vol-987/#1> ;
-    ns3:name "Francisco W. Santana" .
-
-<http://ceur-ws.org/Vol-987/#GeiriK.iHanssen> a ns3:Person ;
-    ns2:affiliation "IWSECO" ;
-    ns6:sameAs <http://ceur-ws.org/persons/GeiriK.iHanssen> ;
-    ns3:name "Geir K. Hanssen" .
-
-<http://ceur-ws.org/Vol-987/#J.iYatesiMonteith> a ns3:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/J.iYatesiMonteith> ;
-    ns3:made <http://ceur-ws.org/Vol-987/#5> ;
-    ns3:name "J. Yates Monteith" .
-
-<http://ceur-ws.org/Vol-987/#JaniBosch> a ns3:Person ;
-    ns2:affiliation "IWSECO" ;
-    ns6:sameAs <http://ceur-ws.org/persons/JaniBosch> ;
-    ns3:name "Jan Bosch" .
-
-<http://ceur-ws.org/Vol-987/#JohniD.iMcGregor> a ns3:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/JohniD.iMcGregor> ;
-    ns3:made <http://ceur-ws.org/Vol-987/#5> ;
-    ns3:name "John D. McGregor" .
-
-<http://ceur-ws.org/Vol-987/#JohniE.iIngram> a ns3:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/JohniE.iIngram> ;
-    ns3:made <http://ceur-ws.org/Vol-987/#5> ;
-    ns3:name "John E. Ingram" .
-
-<http://ceur-ws.org/Vol-987/#KlausiMariusiHansen> a ns3:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/KlausiMariusiHansen> ;
-    ns3:made <http://ceur-ws.org/Vol-987/#3> ;
-    ns3:name "Klaus Marius Hansen" .
-
-<http://ceur-ws.org/Vol-987/#KonstantinosiManikas> a ns3:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/KonstantinosiManikas> ;
-    ns3:made <http://ceur-ws.org/Vol-987/#3> ;
-    ns3:name "Konstantinos Manikas" .
-
-<http://ceur-ws.org/Vol-987/#RuvariSpauwen> a ns3:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/RuvariSpauwen> ;
-    ns3:made <http://ceur-ws.org/Vol-987/#6> ;
-    ns3:name "Ruvar Spauwen" .
-
-<http://ceur-ws.org/Vol-987/#ShaheeniSyed> a ns3:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/ShaheeniSyed> ;
-    ns3:made <http://ceur-ws.org/Vol-987/#2> ;
-    ns3:name "Shaheen Syed" .
-
-<http://ceur-ws.org/Vol-987/#SonnyivaniLingen> a ns3:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/SonnyivaniLingen> ;
-    ns3:made <http://ceur-ws.org/Vol-987/#4> ;
-    ns3:name "Sonny van Lingen" .
-
-<http://ceur-ws.org/Vol-987/#event> a ns1:WorkshopEvent ;
-    ns1:hasLocation <http://dbpedia.org/resource/Germany> ;
-    ns1:hasPart <http://ceur-ws.org/Vol-987/#part-IWSECO> ;
-    ns1:isSubEventOf <http://ceur-ws.org/Vol-987/#conf> ;
-    ns7:beginsAtDatetime "2013-06-11T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:endsAtDatetime "2013-06-11T00:00:00+00:00"^^xsd:dateTime ;
-    ns4:license <http://choosealicense.com/licenses/no-license/> ;
-    rdfs:seeAlso <http://ceur-ws.org/Vol-505/#event>,
-        <http://ceur-ws.org/Vol-746/#event>,
-        <http://ceur-ws.org/Vol-879/#event> .
-
-<http://ceur-ws.org/Vol-987/#GarmiLucassen> a ns3:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/GarmiLucassen> ;
-    ns3:made <http://ceur-ws.org/Vol-987/#4>,
-        <http://ceur-ws.org/Vol-987/#7> ;
-    ns3:name "Garm Lucassen" .
-
-<http://ceur-ws.org/Vol-987/#1> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-987/> ;
-    ns4:title "Towards the Analysis of Software Projects Dependencies: An Exploratory Visual Study of Software Ecosystems" ;
-    ns5:endPage 18 ;
-    ns5:numPages 12 ;
-    ns5:startPage 7 ;
-    ns2:author <http://ceur-ws.org/Vol-987/#Cl%C3%A1udiaiM.iL.iWerner>,
-        <http://ceur-ws.org/Vol-987/#FranciscoiW.iSantana> .
-
-<http://ceur-ws.org/Vol-987/#2> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-987/> ;
-    ns4:title "On Clusters in Open Source Ecosystems" ;
-    ns5:endPage 32 ;
-    ns5:numPages 14 ;
-    ns5:startPage 19 ;
-    ns2:author <http://ceur-ws.org/Vol-987/#ShaheeniSyed>,
-        <http://ceur-ws.org/Vol-987/#SlingeriJansen> .
-
-<http://ceur-ws.org/Vol-987/#3> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-987/> ;
-    ns4:title "Reviewing the Health of Software Ecosystems - A Conceptual Framework Proposal" ;
-    ns5:endPage 44 ;
-    ns5:numPages 12 ;
-    ns5:startPage 33 ;
-    ns2:author <http://ceur-ws.org/Vol-987/#KlausiMariusiHansen>,
-        <http://ceur-ws.org/Vol-987/#KonstantinosiManikas> .
-
-<http://ceur-ws.org/Vol-987/#6> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-987/> ;
-    ns4:title "Towards the Roles and Motives of Open Source Software Developers" ;
-    ns5:endPage 80 ;
-    ns5:numPages 12 ;
-    ns5:startPage 69 ;
-    ns2:author <http://ceur-ws.org/Vol-987/#RuvariSpauwen>,
-        <http://ceur-ws.org/Vol-987/#SlingeriJansen> .
-
-<http://ceur-ws.org/Vol-987/#7> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-987/> ;
-    ns4:title "Notes form the panel" ;
-    ns5:endPage 82 ;
-    ns5:numPages 2 ;
-    ns5:startPage 81 ;
-    ns2:author <http://ceur-ws.org/Vol-987/#GarmiLucassen>,
-        <http://ceur-ws.org/Vol-987/#SlingeriJansen> .
-
-<http://ceur-ws.org/Vol-987/#4> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-987/> ;
-    ns4:title "On the Software Ecosystem Health of Open Source Content Management Systems" ;
-    ns5:endPage 56 ;
-    ns5:numPages 12 ;
-    ns5:startPage 45 ;
-    ns2:author <http://ceur-ws.org/Vol-987/#AdrieniPalomba>,
-        <http://ceur-ws.org/Vol-987/#GarmiLucassen>,
-        <http://ceur-ws.org/Vol-987/#SonnyivaniLingen> .
-
-<http://ceur-ws.org/Vol-987/#5> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-987/> ;
-    ns4:title "Hadoop and its Evolving Ecosystem" ;
-    ns5:endPage 68 ;
-    ns5:numPages 12 ;
-    ns5:startPage 57 ;
-    ns2:author <http://ceur-ws.org/Vol-987/#J.iYatesiMonteith>,
-        <http://ceur-ws.org/Vol-987/#JohniD.iMcGregor>,
-        <http://ceur-ws.org/Vol-987/#JohniE.iIngram> .
-
-<http://ceur-ws.org/Vol-987/#SlingeriJansen> a ns3:Person ;
-    ns2:affiliation "ICSOB" ;
-    ns6:sameAs <http://ceur-ws.org/persons/SlingeriJansen> ;
-    ns3:made <http://ceur-ws.org/Vol-987/#2>,
-        <http://ceur-ws.org/Vol-987/#6>,
-        <http://ceur-ws.org/Vol-987/#7> ;
-    ns3:name "Slinger Jansen" .
-
-<http://ceur-ws.org/Vol-987/> a ns1:Proceedings ;
-    ns1:hasPart <http://ceur-ws.org/Vol-987/#1>,
-        <http://ceur-ws.org/Vol-987/#2>,
-        <http://ceur-ws.org/Vol-987/#3>,
-        <http://ceur-ws.org/Vol-987/#4>,
-        <http://ceur-ws.org/Vol-987/#5>,
-        <http://ceur-ws.org/Vol-987/#6>,
-        <http://ceur-ws.org/Vol-987/#7> ;
-    ns8:issued "2013-06-18T00:00:00+00:00"^^xsd:dateTime ;
-    ns5:presentedAt <http://ceur-ws.org/Vol-987/#event> ;
+<http://ceur-ws.org/Vol-987/> a ns7:Proceedings ;
+    ns1:issued "2013-06-18T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:presentedAt <http://ceur-ws.org/Vol-987/#event> ;
     ns2:editor <http://ceur-ws.org/Vol-987/#CarinaiF.iAlves>,
         <http://ceur-ws.org/Vol-987/#GeiriK.iHanssen>,
         <http://ceur-ws.org/Vol-987/#JaniBosch>,
         <http://ceur-ws.org/Vol-987/#SlingeriJansen> .
+
+<http://ceur-ws.org/Vol-987/#CarinaiF.iAlves> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/CarinaiF.iAlves> ;
+    ns3:name "Carina F. Alves" .
+
+<http://ceur-ws.org/Vol-987/#GeiriK.iHanssen> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/GeiriK.iHanssen> ;
+    ns3:name "Geir K. Hanssen" .
+
+<http://ceur-ws.org/Vol-987/#JaniBosch> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/JaniBosch> ;
+    ns3:name "Jan Bosch" .
+
+<http://ceur-ws.org/Vol-987/#SlingeriJansen> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/SlingeriJansen> ;
+    ns3:name "Slinger Jansen" .
+
+<http://ceur-ws.org/Vol-987/#event> a ns7:WorkshopEvent ;
+    ns7:hasLocation <http://dbpedia.org/resource/Germany> ;
+    ns7:hasPart <http://ceur-ws.org/Vol-987/#part-CEUR-WS> ;
+    ns7:isSubEventOf <http://ceur-ws.org/Vol-987/#conf> ;
+    ns4:beginsAtDatetime "2013-06-11T00:00:00+00:00"^^xsd:dateTime ;
+    ns4:endsAtDatetime "2013-06-11T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:license "http://choosealicense.com/licenses/no-license/" ;
+    rdfs:seeAlso <http://ceur-ws.org/Vol-505/#event>,
+        <http://ceur-ws.org/Vol-746/#event>,
+        <http://ceur-ws.org/Vol-879/#event> .
 

@@ -3,9 +3,10 @@
 @prefix ns3: <http://purl.org/ontology/bibo/#> .
 @prefix ns4: <http://www.w3.org/2002/07/owl#> .
 @prefix ns5: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns6: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns7: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns6: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns9: <http://purl.org/dc/elements/1.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -113,11 +114,11 @@
 
 <http://ceur-ws.org/Vol-630/#event> a ns5:WorkshopEvent ;
     ns5:hasLocation <http://dbpedia.org/resource/Switzerland> ;
-    ns5:hasPart <http://ceur-ws.org/Vol-630/#part-LSDS-IR> ;
+    ns5:hasPart <http://ceur-ws.org/Vol-630/#part-ws> ;
     ns5:isSubEventOf <http://ceur-ws.org/Vol-630/#conf> ;
-    ns6:beginsAtDatetime "2010-07-23T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:endsAtDatetime "2010-07-23T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:license <http://choosealicense.com/licenses/no-license/> ;
+    ns8:beginsAtDatetime "2010-09-22T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:endsAtDatetime "2010-09-22T00:00:00+00:00"^^xsd:dateTime ;
+    ns9:license "http://choosealicense.com/licenses/no-license/" ;
     rdfs:seeAlso <http://ceur-ws.org/Vol-480/#event> .
 
 <http://ceur-ws.org/Vol-630/#ClaudioiLucchese> a ns1:Person ;
@@ -128,52 +129,52 @@
 
 <http://ceur-ws.org/Vol-630/#talk1> a ns5:Paper ;
     ns5:partOf <http://ceur-ws.org/Vol-630/> ;
-    ns7:title "Twitter" ;
+    ns6:title "Twitter" ;
     ns3:endPage 5 ;
     ns3:numPages 1 ;
-    ns3:section <http%3A//ceur-ws.org/Vol-630/%23InvitedTalks> ;
+    ns3:section <http://ceur-ws.org/Vol-630/#InvitedTalks> ;
     ns3:startPage 5 ;
     ns2:author <http://ceur-ws.org/Vol-630/#AbduriChowdhury> .
 
 <http://ceur-ws.org/Vol-630/#talk2> a ns5:Paper ;
     ns5:partOf <http://ceur-ws.org/Vol-630/> ;
-    ns7:title "Towards a Distributed Search Engine" ;
+    ns6:title "Towards a Distributed Search Engine" ;
     ns3:endPage 6 ;
     ns3:numPages 1 ;
-    ns3:section <http%3A//ceur-ws.org/Vol-630/%23InvitedTalks> ;
+    ns3:section <http://ceur-ws.org/Vol-630/#InvitedTalks> ;
     ns3:startPage 6 ;
     ns2:author <http://ceur-ws.org/Vol-630/#RicardoiBaeza-Yates> .
 
-<http%3A//ceur-ws.org/Vol-630/%23InvitedTalks> a ns5:SessionEvent ;
+<http://ceur-ws.org/Vol-630/#InvitedTalks> a ns5:SessionEvent ;
     ns5:partOf <http://ceur-ws.org/Vol-630/> ;
-    ns7:title "Invited Talks" .
+    ns6:title "Invited Talks" .
 
 <http://ceur-ws.org/Vol-630/#lsdsir1> a ns5:Paper ;
     ns5:partOf <http://ceur-ws.org/Vol-630/> ;
-    ns7:title "Query-Based Sampling using Snippets" ;
+    ns6:title "Query-Based Sampling using Snippets" ;
     ns3:endPage 12 ;
     ns3:numPages 6 ;
-    ns3:section <http%3A//ceur-ws.org/Vol-630/%23Regularpapers> ;
+    ns3:section <http://ceur-ws.org/Vol-630/#Regularpapers> ;
     ns3:startPage 7 ;
     ns2:author <http://ceur-ws.org/Vol-630/#AlmeriS.iTigelaar>,
         <http://ceur-ws.org/Vol-630/#DjoerdiHiemstra> .
 
 <http://ceur-ws.org/Vol-630/#lsdsir3> a ns5:Paper ;
     ns5:partOf <http://ceur-ws.org/Vol-630/> ;
-    ns7:title "Topic-based Index Partitions for Efficient and Effective Selective Search" ;
+    ns6:title "Topic-based Index Partitions for Efficient and Effective Selective Search" ;
     ns3:endPage 24 ;
     ns3:numPages 6 ;
-    ns3:section <http%3A//ceur-ws.org/Vol-630/%23Regularpapers> ;
+    ns3:section <http://ceur-ws.org/Vol-630/#Regularpapers> ;
     ns3:startPage 19 ;
     ns2:author <http://ceur-ws.org/Vol-630/#AnaghaiKulkarni>,
         <http://ceur-ws.org/Vol-630/#JamieiCallan> .
 
 <http://ceur-ws.org/Vol-630/#lsdsir2> a ns5:Paper ;
     ns5:partOf <http://ceur-ws.org/Vol-630/> ;
-    ns7:title "RankReduce - Processing K-Nearest Neighbor Queries on Top of MapReduce" ;
+    ns6:title "RankReduce - Processing K-Nearest Neighbor Queries on Top of MapReduce" ;
     ns3:endPage 18 ;
     ns3:numPages 6 ;
-    ns3:section <http%3A//ceur-ws.org/Vol-630/%23Regularpapers> ;
+    ns3:section <http://ceur-ws.org/Vol-630/#Regularpapers> ;
     ns3:startPage 13 ;
     ns2:author <http://ceur-ws.org/Vol-630/#AleksandariStupar>,
         <http://ceur-ws.org/Vol-630/#RalfiSchenkel>,
@@ -181,10 +182,10 @@
 
 <http://ceur-ws.org/Vol-630/#lsdsir4> a ns5:Paper ;
     ns5:partOf <http://ceur-ws.org/Vol-630/> ;
-    ns7:title "Scaling Out All Pairs Similarity Search with MapReduce" ;
+    ns6:title "Scaling Out All Pairs Similarity Search with MapReduce" ;
     ns3:endPage 30 ;
     ns3:numPages 6 ;
-    ns3:section <http%3A//ceur-ws.org/Vol-630/%23Regularpapers> ;
+    ns3:section <http://ceur-ws.org/Vol-630/#Regularpapers> ;
     ns3:startPage 25 ;
     ns2:author <http://ceur-ws.org/Vol-630/#ClaudioiLucchese>,
         <http://ceur-ws.org/Vol-630/#GianmarcoiDeiFrancisciiMorales>,
@@ -192,10 +193,10 @@
 
 <http://ceur-ws.org/Vol-630/#lsdsir5> a ns5:Paper ;
     ns5:partOf <http://ceur-ws.org/Vol-630/> ;
-    ns7:title "Efficient Dynamic Pruning with Proximity Support" ;
+    ns6:title "Efficient Dynamic Pruning with Proximity Support" ;
     ns3:endPage 35 ;
     ns3:numPages 5 ;
-    ns3:section <http%3A//ceur-ws.org/Vol-630/%23Regularpapers> ;
+    ns3:section <http://ceur-ws.org/Vol-630/#Regularpapers> ;
     ns3:startPage 31 ;
     ns2:author <http://ceur-ws.org/Vol-630/#CraigiMacdonald>,
         <http://ceur-ws.org/Vol-630/#IadhiOunis>,
@@ -203,19 +204,19 @@
 
 <http://ceur-ws.org/Vol-630/#lsdsir6> a ns5:Paper ;
     ns5:partOf <http://ceur-ws.org/Vol-630/> ;
-    ns7:title "Performance Evaluation of Large-scale Information Retrieval Systems Scaling Down" ;
+    ns6:title "Performance Evaluation of Large-scale Information Retrieval Systems Scaling Down" ;
     ns3:endPage 39 ;
     ns3:numPages 4 ;
-    ns3:section <http%3A//ceur-ws.org/Vol-630/%23Regularpapers> ;
+    ns3:section <http://ceur-ws.org/Vol-630/#Regularpapers> ;
     ns3:startPage 36 ;
     ns2:author <http://ceur-ws.org/Vol-630/#DiegoiFernandez>,
         <http://ceur-ws.org/Vol-630/#FideliCacheda>,
         <http://ceur-ws.org/Vol-630/#VictoriCarneiro>,
         <http://ceur-ws.org/Vol-630/#VreixoiFormoso> .
 
-<http%3A//ceur-ws.org/Vol-630/%23Regularpapers> a ns5:SessionEvent ;
+<http://ceur-ws.org/Vol-630/#Regularpapers> a ns5:SessionEvent ;
     ns5:partOf <http://ceur-ws.org/Vol-630/> ;
-    ns7:title "Regular papers" .
+    ns6:title "Regular papers" .
 
 <http://ceur-ws.org/Vol-630/> a ns5:Proceedings ;
     ns5:hasPart <http://ceur-ws.org/Vol-630/#lsdsir1>,
@@ -226,9 +227,9 @@
         <http://ceur-ws.org/Vol-630/#lsdsir6>,
         <http://ceur-ws.org/Vol-630/#talk1>,
         <http://ceur-ws.org/Vol-630/#talk2> ;
-    ns5:hasSession <http%3A//ceur-ws.org/Vol-630/%23InvitedTalks>,
-        <http%3A//ceur-ws.org/Vol-630/%23Regularpapers> ;
-    ns8:issued "2010-09-15T00:00:00+00:00"^^xsd:dateTime ;
+    ns5:hasSession <http://ceur-ws.org/Vol-630/#InvitedTalks>,
+        <http://ceur-ws.org/Vol-630/#Regularpapers> ;
+    ns7:issued "2010-09-15T00:00:00+00:00"^^xsd:dateTime ;
     ns3:presentedAt <http://ceur-ws.org/Vol-630/#event> ;
     ns2:editor <http://ceur-ws.org/Vol-630/#B.iBarlaiCambazoglu>,
         <http://ceur-ws.org/Vol-630/#ClaudioiLucchese>,

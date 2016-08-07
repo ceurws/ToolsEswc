@@ -1,0 +1,45 @@
+@prefix ns1: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns2: <http://purl.org/ontology/bibo/#> .
+@prefix ns3: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns4: <http://purl.org/dc/elements/1.1/> .
+@prefix ns5: <http://xmlns.com/foaf/0.1/> .
+@prefix ns6: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns7: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns8: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://ceur-ws.org/Vol-1624/> a ns1:Proceedings ;
+    ns6:issued "2016-07-15T00:00:00+00:00"^^xsd:dateTime ;
+    ns2:presentedAt <http://ceur-ws.org/Vol-1624/#event> ;
+    ns7:editor <http://ceur-ws.org/Vol-1624/#MarianneiHuchard>,
+        <http://ceur-ws.org/Vol-1624/#SergeiiKuznetsov> .
+
+<http://ceur-ws.org/Vol-1624/#MarianneiHuchard> a ns5:Person ;
+    ns8:sameAs <http://ceur-ws.org/persons/MarianneiHuchard> ;
+    ns5:name "Marianne Huchard" .
+
+<http://ceur-ws.org/Vol-1624/#SergeiiKuznetsov> a ns5:Person ;
+    ns8:sameAs <http://ceur-ws.org/persons/SergeiiKuznetsov> ;
+    ns5:name "Sergei Kuznetsov" .
+
+<http://ceur-ws.org/Vol-1624/#event> a ns1:WorkshopEvent ;
+    ns1:hasLocation <http://dbpedia.org/resource/Russia> ;
+    ns1:hasPart <http://ceur-ws.org/Vol-1624/#part-ws> ;
+    ns1:isSubEventOf <http://ceur-ws.org/Vol-1624/#conf> ;
+    ns3:beginsAtDatetime "2016-07-18T00:00:00+00:00"^^xsd:dateTime ;
+    ns3:endsAtDatetime "2016-07-22T00:00:00+00:00"^^xsd:dateTime ;
+    ns4:license "http://creativecommons.org/publicdomain/zero/1.0/" ;
+    rdfs:seeAlso <http://ceur-ws.org/Vol-1062/#event>,
+        <http://ceur-ws.org/Vol-110/#event>,
+        <http://ceur-ws.org/Vol-1252/#event>,
+        <http://ceur-ws.org/Vol-1466/#event>,
+        <http://ceur-ws.org/Vol-162/#event>,
+        <http://ceur-ws.org/Vol-331/#event>,
+        <http://ceur-ws.org/Vol-433/#event>,
+        <http://ceur-ws.org/Vol-672/#event>,
+        <http://ceur-ws.org/Vol-959/#event>,
+        <http://ceur-ws.org/Vol-972/#event> .
+

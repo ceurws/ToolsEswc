@@ -1,245 +1,47 @@
-@prefix ns1: <http://xmlns.com/foaf/0.1/> .
-@prefix ns2: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns3: <http://purl.org/ontology/bibo/#> .
-@prefix ns4: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns5: <http://www.w3.org/2002/07/owl#> .
+@prefix ns1: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns2: <http://www.w3.org/2002/07/owl#> .
+@prefix ns3: <http://xmlns.com/foaf/0.1/> .
+@prefix ns4: <http://purl.org/ontology/bibo/#> .
+@prefix ns5: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix ns6: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns7: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns7: <http://purl.org/dc/elements/1.1/> .
 @prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1409/#AdrianiGschwend> a ns1:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/AdrianiGschwend> ;
-    ns1:made <http://ceur-ws.org/Vol-1409/#paper-07> ;
-    ns1:name "Adrian Gschwend" .
+<http://ceur-ws.org/Vol-1409/> a ns6:Proceedings ;
+    ns5:issued "2015-07-31T00:00:00+00:00"^^xsd:dateTime ;
+    ns4:presentedAt <http://ceur-ws.org/Vol-1409/#event> ;
+    ns1:editor <http://ceur-ws.org/Vol-1409/#ChristianiBizer>,
+        <http://ceur-ws.org/Vol-1409/#S%C3%B6reniAuer>,
+        <http://ceur-ws.org/Vol-1409/#TimiBerners-Lee>,
+        <http://ceur-ws.org/Vol-1409/#TomiHeath> .
 
-<http://ceur-ws.org/Vol-1409/#AgissilaosiPapantoniou> a ns1:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/AgissilaosiPapantoniou> ;
-    ns1:made <http://ceur-ws.org/Vol-1409/#paper-10> ;
-    ns1:name "Agissilaos Papantoniou" .
+<http://ceur-ws.org/Vol-1409/#ChristianiBizer> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/ChristianiBizer> ;
+    ns3:name "Christian Bizer" .
 
-<http://ceur-ws.org/Vol-1409/#AidaniHogan> a ns1:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/AidaniHogan> ;
-    ns1:made <http://ceur-ws.org/Vol-1409/#paper-06> ;
-    ns1:name "Aidan Hogan" .
+<http://ceur-ws.org/Vol-1409/#S%C3%B6reniAuer> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/S%C3%B6reniAuer> ;
+    ns3:name "Sören Auer" .
 
-<http://ceur-ws.org/Vol-1409/#AlbertoiTonon> a ns1:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/AlbertoiTonon> ;
-    ns1:made <http://ceur-ws.org/Vol-1409/#paper-01> ;
-    ns1:name "Alberto Tonon" .
+<http://ceur-ws.org/Vol-1409/#TimiBerners-Lee> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/TimiBerners-Lee> ;
+    ns3:name "Tim Berners-Lee" .
 
-<http://ceur-ws.org/Vol-1409/#AndreaiMarchetti> a ns1:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/AndreaiMarchetti> ;
-    ns1:made <http://ceur-ws.org/Vol-1409/#paper-05> ;
-    ns1:name "Andrea Marchetti" .
-
-<http://ceur-ws.org/Vol-1409/#AnrigiBernhard> a ns1:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/AnrigiBernhard> ;
-    ns1:made <http://ceur-ws.org/Vol-1409/#paper-07> ;
-    ns1:name "Anrig Bernhard" .
-
-<http://ceur-ws.org/Vol-1409/#Axel-C.iNgongaiNgomo> a ns1:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/Axel-C.iNgongaiNgomo> ;
-    ns1:made <http://ceur-ws.org/Vol-1409/#paper-04> ;
-    ns1:name "Axel-C. Ngonga Ngomo" .
-
-<http://ceur-ws.org/Vol-1409/#BlerinaiSpahiu> a ns1:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/BlerinaiSpahiu> ;
-    ns1:made <http://ceur-ws.org/Vol-1409/#paper-03> ;
-    ns1:name "Blerina Spahiu" .
-
-<http://ceur-ws.org/Vol-1409/#BrianiDuggan> a ns1:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/BrianiDuggan> ;
-    ns1:made <http://ceur-ws.org/Vol-1409/#paper-12> ;
-    ns1:name "Brian Duggan" .
-
-<http://ceur-ws.org/Vol-1409/#ClaraiBacciu> a ns1:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/ClaraiBacciu> ;
-    ns1:made <http://ceur-ws.org/Vol-1409/#paper-05> ;
-    ns1:name "Clara Bacciu" .
-
-<http://ceur-ws.org/Vol-1409/#ClausiStadler> a ns1:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/ClausiStadler> ;
-    ns1:made <http://ceur-ws.org/Vol-1409/#paper-09> ;
-    ns1:name "Claus Stadler" .
-
-<http://ceur-ws.org/Vol-1409/#CurtiTilmes> a ns1:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/CurtiTilmes> ;
-    ns1:made <http://ceur-ws.org/Vol-1409/#paper-12> ;
-    ns1:name "Curt Tilmes" .
-
-<http://ceur-ws.org/Vol-1409/#DanaiiSymeonidou> a ns1:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/DanaiiSymeonidou> ;
-    ns1:made <http://ceur-ws.org/Vol-1409/#paper-02> ;
-    ns1:name "Danai Symeonidou" .
-
-<http://ceur-ws.org/Vol-1409/#FabioiValsecchi> a ns1:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/FabioiValsecchi> ;
-    ns1:made <http://ceur-ws.org/Vol-1409/#paper-05> ;
-    ns1:name "Fabio Valsecchi" .
-
-<http://ceur-ws.org/Vol-1409/#GeraldiManipon> a ns1:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/GeraldiManipon> ;
-    ns1:made <http://ceur-ws.org/Vol-1409/#paper-12> ;
-    ns1:name "Gerald Manipon" .
-
-<http://ceur-ws.org/Vol-1409/#GianlucaiDemartini> a ns1:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/GianlucaiDemartini> ;
-    ns1:made <http://ceur-ws.org/Vol-1409/#paper-01> ;
-    ns1:name "Gianluca Demartini" .
-
-<http://ceur-ws.org/Vol-1409/#HeikoiPaulheim> a ns1:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/HeikoiPaulheim> ;
-    ns1:made <http://ceur-ws.org/Vol-1409/#paper-03> ;
-    ns1:name "Heiko Paulheim" .
-
-<http://ceur-ws.org/Vol-1409/#JakubiKl%C3%ADmek> a ns1:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/JakubiKl%C3%ADmek> ;
-    ns1:made <http://ceur-ws.org/Vol-1409/#paper-08> ;
-    ns1:name "Jakub Klímek" .
-
-<http://ceur-ws.org/Vol-1409/#Jean-ClaudeiMoissinac> a ns1:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/Jean-ClaudeiMoissinac> ;
-    ns1:made <http://ceur-ws.org/Vol-1409/#paper-02> ;
-    ns1:name "Jean-Claude Moissinac" .
-
-<http://ceur-ws.org/Vol-1409/#Ji%C5%99%C3%ADiHelmich> a ns1:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/Ji%C5%99%C3%ADiHelmich> ;
-    ns1:made <http://ceur-ws.org/Vol-1409/#paper-08> ;
-    ns1:name "Jiří Helmich" .
-
-<http://ceur-ws.org/Vol-1409/#JoergiUnbehauen> a ns1:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/JoergiUnbehauen> ;
-    ns1:made <http://ceur-ws.org/Vol-1409/#paper-09> ;
-    ns1:name "Joerg Unbehauen" .
-
-<http://ceur-ws.org/Vol-1409/#JohaniDeiSmedt> a ns1:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/JohaniDeiSmedt> ;
-    ns1:made <http://ceur-ws.org/Vol-1409/#paper-10> ;
-    ns1:name "Johan De Smedt" .
-
-<http://ceur-ws.org/Vol-1409/#JustiniGoldstein> a ns1:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/JustiniGoldstein> ;
-    ns1:made <http://ceur-ws.org/Vol-1409/#paper-12> ;
-    ns1:name "Justin Goldstein" .
-
-<http://ceur-ws.org/Vol-1409/#LucaiMatteis> a ns1:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/LucaiMatteis> ;
-    ns1:made <http://ceur-ws.org/Vol-1409/#paper-06> ;
-    ns1:name "Luca Matteis" .
-
-<http://ceur-ws.org/Vol-1409/#LuisiGal%C3%A1rraga> a ns1:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/LuisiGal%C3%A1rraga> ;
-    ns1:made <http://ceur-ws.org/Vol-1409/#paper-02> ;
-    ns1:name "Luis Galárraga" .
-
-<http://ceur-ws.org/Vol-1409/#MartiniLeiVrang> a ns1:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/MartiniLeiVrang> ;
-    ns1:made <http://ceur-ws.org/Vol-1409/#paper-10> ;
-    ns1:name "Martin Le Vrang" .
-
-<http://ceur-ws.org/Vol-1409/#MartiniNe%C4%8Dask%C3%BD> a ns1:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/MartiniNe%C4%8Dask%C3%BD> ;
-    ns1:made <http://ceur-ws.org/Vol-1409/#paper-08> ;
-    ns1:name "Martin Nečaský" .
-
-<http://ceur-ws.org/Vol-1409/#MatteoiAbrate> a ns1:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/MatteoiAbrate> ;
-    ns1:made <http://ceur-ws.org/Vol-1409/#paper-05> ;
-    ns1:name "Matteo Abrate" .
-
-<http://ceur-ws.org/Vol-1409/#MaurizioiTesconi> a ns1:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/MaurizioiTesconi> ;
-    ns1:made <http://ceur-ws.org/Vol-1409/#paper-05> ;
-    ns1:name "Maurizio Tesconi" .
-
-<http://ceur-ws.org/Vol-1409/#MichaeliLuggen> a ns1:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/MichaeliLuggen> ;
-    ns1:made <http://ceur-ws.org/Vol-1409/#paper-07> ;
-    ns1:name "Michael Luggen" .
-
-<http://ceur-ws.org/Vol-1409/#MicheleiCatasta> a ns1:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/MicheleiCatasta> ;
-    ns1:made <http://ceur-ws.org/Vol-1409/#paper-01> ;
-    ns1:name "Michele Catasta" .
-
-<http://ceur-ws.org/Vol-1409/#MofeediHassan> a ns1:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/MofeediHassan> ;
-    ns1:made <http://ceur-ws.org/Vol-1409/#paper-04> ;
-    ns1:name "Mofeed Hassan" .
-
-<http://ceur-ws.org/Vol-1409/#MohamediAhmediSherif> a ns1:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/MohamediAhmediSherif> ;
-    ns1:made <http://ceur-ws.org/Vol-1409/#paper-09> ;
-    ns1:name "Mohamed Ahmed Sherif" .
-
-<http://ceur-ws.org/Vol-1409/#NuriiUmutiKose> a ns1:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/NuriiUmutiKose> ;
-    ns1:made <http://ceur-ws.org/Vol-1409/#paper-11> ;
-    ns1:name "Nuri Umut Kose" .
-
-<http://ceur-ws.org/Vol-1409/#OguziDikenelli> a ns1:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/OguziDikenelli> ;
-    ns1:made <http://ceur-ws.org/Vol-1409/#paper-11> ;
-    ns1:name "Oguz Dikenelli" .
-
-<http://ceur-ws.org/Vol-1409/#PatrickiWestphal> a ns1:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/PatrickiWestphal> ;
-    ns1:made <http://ceur-ws.org/Vol-1409/#paper-09> ;
-    ns1:name "Patrick Westphal" .
-
-<http://ceur-ws.org/Vol-1409/#PinariGocebe> a ns1:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/PinariGocebe> ;
-    ns1:made <http://ceur-ws.org/Vol-1409/#paper-11> ;
-    ns1:name "Pinar Gocebe" .
-
-<http://ceur-ws.org/Vol-1409/#RobertiMeusel> a ns1:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/RobertiMeusel> ;
-    ns1:made <http://ceur-ws.org/Vol-1409/#paper-03> ;
-    ns1:name "Robert Meusel" .
-
-<http://ceur-ws.org/Vol-1409/#RobertiWolfe> a ns1:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/RobertiWolfe> ;
-    ns1:made <http://ceur-ws.org/Vol-1409/#paper-12> ;
-    ns1:name "Robert Wolfe" .
-
-<http://ceur-ws.org/Vol-1409/#RobertoiNavigli> a ns1:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/RobertoiNavigli> ;
-    ns1:made <http://ceur-ws.org/Vol-1409/#paper-06> ;
-    ns1:name "Roberto Navigli" .
-
-<http://ceur-ws.org/Vol-1409/#S%C3%B6reniAuer> a ns1:Person ;
-    ns3:place <http://dbpedia.org/resource/Germany> ;
-    ns2:affiliation "University of Bonn and Fraunhofer IAIS" ;
-    ns5:sameAs <http://ceur-ws.org/persons/S%C3%B6reniAuer> ;
-    ns1:name "Sören Auer" .
-
-<http://ceur-ws.org/Vol-1409/#SteveiAulenbach> a ns1:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/SteveiAulenbach> ;
-    ns1:made <http://ceur-ws.org/Vol-1409/#paper-12> ;
-    ns1:name "Steve Aulenbach" .
-
-<http://ceur-ws.org/Vol-1409/#TimiBerners-Lee> a ns1:Person ;
-    ns3:place <http://dbpedia.org/resource/United_States> ;
-    ns2:affiliation "W3C/MIT" ;
-    ns5:sameAs <http://ceur-ws.org/persons/TimiBerners-Lee> ;
-    ns1:name "Tim Berners-Lee" .
-
-<http://ceur-ws.org/Vol-1409/#TomiHeath> a ns1:Person ;
-    ns3:place <http://dbpedia.org/resource/United_Kingdom> ;
-    ns2:affiliation "Open Data Institute" ;
-    ns5:sameAs <http://ceur-ws.org/persons/TomiHeath> ;
-    ns1:name "Tom Heath" .
+<http://ceur-ws.org/Vol-1409/#TomiHeath> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/TomiHeath> ;
+    ns3:name "Tom Heath" .
 
 <http://ceur-ws.org/Vol-1409/#event> a ns6:WorkshopEvent ;
     ns6:hasLocation <http://dbpedia.org/resource/Italy> ;
-    ns6:hasPart <http://ceur-ws.org/Vol-1409/#part-LDOW> ;
+    ns6:hasPart <http://ceur-ws.org/Vol-1409/#part-ws> ;
     ns6:isSubEventOf <http://ceur-ws.org/Vol-1409/#conf> ;
     ns8:beginsAtDatetime "2015-05-19T00:00:00+00:00"^^xsd:dateTime ;
     ns8:endsAtDatetime "2015-05-19T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:license "http://creativecommons.org/publicdomain/zero/1.0/" ;
     rdfs:seeAlso <http://ceur-ws.org/Vol-1184/#event>,
         <http://ceur-ws.org/Vol-369/#event>,
         <http://ceur-ws.org/Vol-538/#event>,
@@ -247,164 +49,4 @@
         <http://ceur-ws.org/Vol-813/#event>,
         <http://ceur-ws.org/Vol-937/#event>,
         <http://ceur-ws.org/Vol-996/#event> .
-
-<http://ceur-ws.org/Vol-1409/#ChristianiBizer> a ns1:Person ;
-    ns3:place <http://dbpedia.org/resource/Germany> ;
-    ns2:affiliation "University of Mannheim" ;
-    ns5:sameAs <http://ceur-ws.org/persons/ChristianiBizer> ;
-    ns1:made <http://ceur-ws.org/Vol-1409/#paper-03> ;
-    ns1:name "Christian Bizer" .
-
-<http://ceur-ws.org/Vol-1409/#JensiLehmann> a ns1:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/JensiLehmann> ;
-    ns1:made <http://ceur-ws.org/Vol-1409/#paper-04>,
-        <http://ceur-ws.org/Vol-1409/#paper-09> ;
-    ns1:name "Jens Lehmann" .
-
-<http://ceur-ws.org/Vol-1409/#PhilippeiCudr%C3%A9-Mauroux> a ns1:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/PhilippeiCudr%C3%A9-Mauroux> ;
-    ns1:made <http://ceur-ws.org/Vol-1409/#paper-01>,
-        <http://ceur-ws.org/Vol-1409/#paper-07> ;
-    ns1:name "Philippe Cudré-Mauroux" .
-
-<http://ceur-ws.org/Vol-1409/#paper-02> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-1409/> ;
-    ns7:title "Rule Mining for Semantifying Wikilinks" ;
-    ns3:section <http%3A//ceur-ws.org/Vol-1409/%23Session1%3AUnderstandingWebData> ;
-    ns2:author <http://ceur-ws.org/Vol-1409/#DanaiiSymeonidou>,
-        <http://ceur-ws.org/Vol-1409/#Jean-ClaudeiMoissinac>,
-        <http://ceur-ws.org/Vol-1409/#LuisiGal%C3%A1rraga> .
-
-<http://ceur-ws.org/Vol-1409/#paper-04> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-1409/> ;
-    ns7:title "Interlinking: Performance Assessment of User Evaluation vs. Supervised Learning Approaches" ;
-    ns3:section <http%3A//ceur-ws.org/Vol-1409/%23Session1%3AUnderstandingWebData> ;
-    ns2:author <http://ceur-ws.org/Vol-1409/#Axel-C.iNgongaiNgomo>,
-        <http://ceur-ws.org/Vol-1409/#JensiLehmann>,
-        <http://ceur-ws.org/Vol-1409/#MofeediHassan> .
-
-<http://ceur-ws.org/Vol-1409/#paper-06> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-1409/> ;
-    ns7:title "Keyword-Based Navigation and Search over the Linked Data Web" ;
-    ns3:section <http%3A//ceur-ws.org/Vol-1409/%23Session2%3AVisualizationandExploration> ;
-    ns2:author <http://ceur-ws.org/Vol-1409/#AidaniHogan>,
-        <http://ceur-ws.org/Vol-1409/#LucaiMatteis>,
-        <http://ceur-ws.org/Vol-1409/#RobertoiNavigli> .
-
-<http://ceur-ws.org/Vol-1409/#paper-08> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-1409/> ;
-    ns7:title "Use Cases for Linked Data Visualization Model" ;
-    ns3:section <http%3A//ceur-ws.org/Vol-1409/%23Session2%3AVisualizationandExploration> ;
-    ns2:author <http://ceur-ws.org/Vol-1409/#JakubiKl%C3%ADmek>,
-        <http://ceur-ws.org/Vol-1409/#Ji%C5%99%C3%ADiHelmich>,
-        <http://ceur-ws.org/Vol-1409/#MartiniNe%C4%8Dask%C3%BD> .
-
-<http://ceur-ws.org/Vol-1409/#paper-10> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-1409/> ;
-    ns7:title "ESCO: Towards a Semantic Web for the European Labor Market" ;
-    ns3:section <http%3A//ceur-ws.org/Vol-1409/%23Session3%3AInfrastructureandApplications> ;
-    ns2:author <http://ceur-ws.org/Vol-1409/#AgissilaosiPapantoniou>,
-        <http://ceur-ws.org/Vol-1409/#JohaniDeiSmedt>,
-        <http://ceur-ws.org/Vol-1409/#MartiniLeiVrang> .
-
-<http://ceur-ws.org/Vol-1409/#paper-11> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-1409/> ;
-    ns7:title "Bringing Agility into Linked Data Development: An Industrial Use Case in Logistics Domain" ;
-    ns3:section <http%3A//ceur-ws.org/Vol-1409/%23Session3%3AInfrastructureandApplications> ;
-    ns2:author <http://ceur-ws.org/Vol-1409/#NuriiUmutiKose>,
-        <http://ceur-ws.org/Vol-1409/#OguziDikenelli>,
-        <http://ceur-ws.org/Vol-1409/#PinariGocebe> .
-
-<http%3A//ceur-ws.org/Vol-1409/%23Session1%3AUnderstandingWebData> a ns6:SessionEvent ;
-    ns6:partOf <http://ceur-ws.org/Vol-1409/> ;
-    ns7:title "Session 1: Understanding Web Data" .
-
-<http%3A//ceur-ws.org/Vol-1409/%23Session2%3AVisualizationandExploration> a ns6:SessionEvent ;
-    ns6:partOf <http://ceur-ws.org/Vol-1409/> ;
-    ns7:title "Session 2: Visualization and Exploration" .
-
-<http%3A//ceur-ws.org/Vol-1409/%23Session3%3AInfrastructureandApplications> a ns6:SessionEvent ;
-    ns6:partOf <http://ceur-ws.org/Vol-1409/> ;
-    ns7:title "Session 3: Infrastructure and Applications" .
-
-<http://ceur-ws.org/Vol-1409/#paper-01> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-1409/> ;
-    ns7:title "Fixing the Domain and Range of Properties in Linked Data by Context Disambiguation" ;
-    ns3:section <http%3A//ceur-ws.org/Vol-1409/%23Session1%3AUnderstandingWebData> ;
-    ns2:author <http://ceur-ws.org/Vol-1409/#AlbertoiTonon>,
-        <http://ceur-ws.org/Vol-1409/#GianlucaiDemartini>,
-        <http://ceur-ws.org/Vol-1409/#MicheleiCatasta>,
-        <http://ceur-ws.org/Vol-1409/#PhilippeiCudr%C3%A9-Mauroux> .
-
-<http://ceur-ws.org/Vol-1409/#paper-03> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-1409/> ;
-    ns7:title "Towards Automatic Topical Classification of LOD Datasets" ;
-    ns3:section <http%3A//ceur-ws.org/Vol-1409/%23Session1%3AUnderstandingWebData> ;
-    ns2:author <http://ceur-ws.org/Vol-1409/#BlerinaiSpahiu>,
-        <http://ceur-ws.org/Vol-1409/#ChristianiBizer>,
-        <http://ceur-ws.org/Vol-1409/#HeikoiPaulheim>,
-        <http://ceur-ws.org/Vol-1409/#RobertiMeusel> .
-
-<http://ceur-ws.org/Vol-1409/#paper-07> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-1409/> ;
-    ns7:title "Uduvudu: a Graph-Aware and Adaptive UI Engine for Linked Data" ;
-    ns3:section <http%3A//ceur-ws.org/Vol-1409/%23Session2%3AVisualizationandExploration> ;
-    ns2:author <http://ceur-ws.org/Vol-1409/#AdrianiGschwend>,
-        <http://ceur-ws.org/Vol-1409/#AnrigiBernhard>,
-        <http://ceur-ws.org/Vol-1409/#MichaeliLuggen>,
-        <http://ceur-ws.org/Vol-1409/#PhilippeiCudr%C3%A9-Mauroux> .
-
-<http://ceur-ws.org/Vol-1409/#paper-05> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-1409/> ;
-    ns7:title "DBpedia Atlas: Mapping the Uncharted Lands of Linked Data" ;
-    ns3:section <http%3A//ceur-ws.org/Vol-1409/%23Session2%3AVisualizationandExploration> ;
-    ns2:author <http://ceur-ws.org/Vol-1409/#AndreaiMarchetti>,
-        <http://ceur-ws.org/Vol-1409/#ClaraiBacciu>,
-        <http://ceur-ws.org/Vol-1409/#FabioiValsecchi>,
-        <http://ceur-ws.org/Vol-1409/#MatteoiAbrate>,
-        <http://ceur-ws.org/Vol-1409/#MaurizioiTesconi> .
-
-<http://ceur-ws.org/Vol-1409/#paper-09> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-1409/> ;
-    ns7:title "Simplified RDB2RDF Mapping" ;
-    ns3:section <http%3A//ceur-ws.org/Vol-1409/%23Session3%3AInfrastructureandApplications> ;
-    ns2:author <http://ceur-ws.org/Vol-1409/#ClausiStadler>,
-        <http://ceur-ws.org/Vol-1409/#JensiLehmann>,
-        <http://ceur-ws.org/Vol-1409/#JoergiUnbehauen>,
-        <http://ceur-ws.org/Vol-1409/#MohamediAhmediSherif>,
-        <http://ceur-ws.org/Vol-1409/#PatrickiWestphal> .
-
-<http://ceur-ws.org/Vol-1409/#paper-12> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-1409/> ;
-    ns7:title "Normalizing Resource Identifiers using Lexicons in the Global Change Information System" ;
-    ns3:section <http%3A//ceur-ws.org/Vol-1409/%23Session3%3AInfrastructureandApplications> ;
-    ns2:author <http://ceur-ws.org/Vol-1409/#BrianiDuggan>,
-        <http://ceur-ws.org/Vol-1409/#CurtiTilmes>,
-        <http://ceur-ws.org/Vol-1409/#GeraldiManipon>,
-        <http://ceur-ws.org/Vol-1409/#JustiniGoldstein>,
-        <http://ceur-ws.org/Vol-1409/#RobertiWolfe>,
-        <http://ceur-ws.org/Vol-1409/#SteveiAulenbach> .
-
-<http://ceur-ws.org/Vol-1409/> a ns6:Proceedings ;
-    ns6:hasPart <http://ceur-ws.org/Vol-1409/#paper-01>,
-        <http://ceur-ws.org/Vol-1409/#paper-02>,
-        <http://ceur-ws.org/Vol-1409/#paper-03>,
-        <http://ceur-ws.org/Vol-1409/#paper-04>,
-        <http://ceur-ws.org/Vol-1409/#paper-05>,
-        <http://ceur-ws.org/Vol-1409/#paper-06>,
-        <http://ceur-ws.org/Vol-1409/#paper-07>,
-        <http://ceur-ws.org/Vol-1409/#paper-08>,
-        <http://ceur-ws.org/Vol-1409/#paper-09>,
-        <http://ceur-ws.org/Vol-1409/#paper-10>,
-        <http://ceur-ws.org/Vol-1409/#paper-11>,
-        <http://ceur-ws.org/Vol-1409/#paper-12> ;
-    ns6:hasSession <http%3A//ceur-ws.org/Vol-1409/%23Session1%3AUnderstandingWebData>,
-        <http%3A//ceur-ws.org/Vol-1409/%23Session2%3AVisualizationandExploration>,
-        <http%3A//ceur-ws.org/Vol-1409/%23Session3%3AInfrastructureandApplications> ;
-    ns4:issued "2015-07-31T00:00:00+00:00"^^xsd:dateTime ;
-    ns3:presentedAt <http://ceur-ws.org/Vol-1409/#event> ;
-    ns2:editor <http://ceur-ws.org/Vol-1409/#ChristianiBizer>,
-        <http://ceur-ws.org/Vol-1409/#S%C3%B6reniAuer>,
-        <http://ceur-ws.org/Vol-1409/#TimiBerners-Lee>,
-        <http://ceur-ws.org/Vol-1409/#TomiHeath> .
 

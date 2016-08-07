@@ -1,11 +1,12 @@
 @prefix ns1: <http://swrc.ontoware.org/ontology/#> .
 @prefix ns2: <http://xmlns.com/foaf/0.1/> .
 @prefix ns3: <http://www.w3.org/2002/07/owl#> .
-@prefix ns4: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns4: <http://data.semanticweb.org/ns/swc/ontology/#> .
 @prefix ns5: <http://purl.org/ontology/bibo/#> .
-@prefix ns6: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns6: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns8: <http://purl.org/dc/elements/1.1/> .
+@prefix ns9: <http://purl.org/NET/c4dm/timeline.owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -119,13 +120,13 @@
     ns2:made <http://ceur-ws.org/Vol-439/#paper1> ;
     ns2:name "Stefano Levialdi" .
 
-<http://ceur-ws.org/Vol-439/#event> a ns6:WorkshopEvent ;
-    ns6:hasLocation <http://dbpedia.org/resource/Iceland> ;
-    ns6:hasPart <http://ceur-ws.org/Vol-439/#part-MDDAUI> ;
-    ns6:isSubEventOf <http://ceur-ws.org/Vol-439/#conf> ;
-    ns7:beginsAtDatetime "2009-02-08T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:endsAtDatetime "2009-02-08T00:00:00+00:00"^^xsd:dateTime ;
-    ns4:license <http://choosealicense.com/licenses/no-license/> ;
+<http://ceur-ws.org/Vol-439/#event> a ns4:WorkshopEvent ;
+    ns4:hasLocation <http://dbpedia.org/resource/Iceland> ;
+    ns4:hasPart <http://ceur-ws.org/Vol-439/#part-CEUR-WS> ;
+    ns4:isSubEventOf <http://ceur-ws.org/Vol-439/#conf> ;
+    ns9:beginsAtDatetime "2009-02-27T00:00:00+00:00"^^xsd:dateTime ;
+    ns9:endsAtDatetime "2009-02-27T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:license "http://choosealicense.com/licenses/no-license/" ;
     rdfs:seeAlso <http://ceur-ws.org/Vol-159/#event>,
         <http://ceur-ws.org/Vol-214/#event>,
         <http://ceur-ws.org/Vol-297/#event> .
@@ -177,73 +178,73 @@
         <http://ceur-ws.org/Vol-439/#paper5> ;
     ns2:name "Gerrit Meixner" .
 
-<http://ceur-ws.org/Vol-439/#paper2> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-439/> ;
-    ns4:title "Modeling Information from Wearable Sensors" ;
+<http://ceur-ws.org/Vol-439/#paper2> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-439/> ;
+    ns6:title "Modeling Information from Wearable Sensors" ;
     ns1:author <http://ceur-ws.org/Vol-439/#FlorenceiBalagtas-Fernandez>,
         <http://ceur-ws.org/Vol-439/#HeinrichiHussmann> .
 
-<http://ceur-ws.org/Vol-439/#paper8> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-439/> ;
-    ns4:title "Deriving User Interfaces from Task Models" ;
+<http://ceur-ws.org/Vol-439/#paper8> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-439/> ;
+    ns6:title "Deriving User Interfaces from Task Models" ;
     ns1:author <http://ceur-ws.org/Vol-439/#AndreasiWolff>,
         <http://ceur-ws.org/Vol-439/#PeteriForbrig> .
 
-<http://ceur-ws.org/Vol-439/#paper1> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-439/> ;
-    ns4:title "WOEB: Rapid Setting of Wizard of Oz Experiments and Reuse for Deployed Applications" ;
+<http://ceur-ws.org/Vol-439/#paper1> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-439/> ;
+    ns6:title "WOEB: Rapid Setting of Wizard of Oz Experiments and Reuse for Deployed Applications" ;
     ns1:author <http://ceur-ws.org/Vol-439/#AndreaiBellucci>,
         <http://ceur-ws.org/Vol-439/#PaoloiBottoni>,
         <http://ceur-ws.org/Vol-439/#StefanoiLevialdi> .
 
-<http://ceur-ws.org/Vol-439/#paper3> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-439/> ;
-    ns4:title "Udit - A Graphical Editor for Task Models" ;
+<http://ceur-ws.org/Vol-439/#paper3> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-439/> ;
+    ns6:title "Udit - A Graphical Editor for Task Models" ;
     ns1:author <http://ceur-ws.org/Vol-439/#GerritiMeixner>,
         <http://ceur-ws.org/Vol-439/#MarceliNahler>,
         <http://ceur-ws.org/Vol-439/#MarciSeissler> .
 
-<http://ceur-ws.org/Vol-439/#paper4> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-439/> ;
-    ns4:title "Using Meta User Interfaces to Control Multimodal Interaction in Smart Environments" ;
+<http://ceur-ws.org/Vol-439/#paper4> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-439/> ;
+    ns6:title "Using Meta User Interfaces to Control Multimodal Interaction in Smart Environments" ;
     ns1:author <http://ceur-ws.org/Vol-439/#DirkiRoschner>,
         <http://ceur-ws.org/Vol-439/#MarcoiBlumendorf>,
         <http://ceur-ws.org/Vol-439/#SahiniAlbayrak> .
 
-<http://ceur-ws.org/Vol-439/#paper6> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-439/> ;
-    ns4:title "Fully Automatic Content Presentation Specific to Intentions" ;
+<http://ceur-ws.org/Vol-439/#paper6> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-439/> ;
+    ns6:title "Fully Automatic Content Presentation Specific to Intentions" ;
     ns1:author <http://ceur-ws.org/Vol-439/#HermanniKaindl>,
         <http://ceur-ws.org/Vol-439/#J%C3%BCrgeniFalb>,
         <http://ceur-ws.org/Vol-439/#SevaniKavaldjian> .
 
-<http://ceur-ws.org/Vol-439/#paper5> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-439/> ;
-    ns4:title "Towards Automatically Interfacing Application Services Integrated in a Automated Model-Based User Interface Generation Process" ;
+<http://ceur-ws.org/Vol-439/#paper5> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-439/> ;
+    ns6:title "Towards Automatically Interfacing Application Services Integrated in a Automated Model-Based User Interface Generation Process" ;
     ns1:author <http://ceur-ws.org/Vol-439/#DanieliG%C3%B6rlich>,
         <http://ceur-ws.org/Vol-439/#GerritiMeixner>,
         <http://ceur-ws.org/Vol-439/#KaiiBreiner>,
         <http://ceur-ws.org/Vol-439/#OliveriMaschino> .
 
-<http://ceur-ws.org/Vol-439/#paper9> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-439/> ;
-    ns4:title "Transformations Between Specifications of Requirements and User Interfaces" ;
+<http://ceur-ws.org/Vol-439/#paper9> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-439/> ;
+    ns6:title "Transformations Between Specifications of Requirements and User Interfaces" ;
     ns1:author <http://ceur-ws.org/Vol-439/#HermanniKaindl>,
         <http://ceur-ws.org/Vol-439/#J%C3%BCrgeniFalb>,
         <http://ceur-ws.org/Vol-439/#KizitoiSsamulaiMukasa>,
         <http://ceur-ws.org/Vol-439/#SevaniKavaldjian> .
 
-<http://ceur-ws.org/Vol-439/#paper7> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-439/> ;
-    ns4:title "A Graph Diagram Engine for the Transformation-Driven Architecture" ;
+<http://ceur-ws.org/Vol-439/#paper7> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-439/> ;
+    ns6:title "A Graph Diagram Engine for the Transformation-Driven Architecture" ;
     ns1:author <http://ceur-ws.org/Vol-439/#AndrisiZarins>,
         <http://ceur-ws.org/Vol-439/#EdgarsiRencis>,
         <http://ceur-ws.org/Vol-439/#JanisiBarzdins>,
         <http://ceur-ws.org/Vol-439/#KarlisiCerans>,
         <http://ceur-ws.org/Vol-439/#SergejsiKozlovics> .
 
-<http://ceur-ws.org/Vol-439/> a ns6:Proceedings ;
-    ns6:hasPart <http://ceur-ws.org/Vol-439/#paper1>,
+<http://ceur-ws.org/Vol-439/> a ns4:Proceedings ;
+    ns4:hasPart <http://ceur-ws.org/Vol-439/#paper1>,
         <http://ceur-ws.org/Vol-439/#paper2>,
         <http://ceur-ws.org/Vol-439/#paper3>,
         <http://ceur-ws.org/Vol-439/#paper4>,
@@ -252,7 +253,7 @@
         <http://ceur-ws.org/Vol-439/#paper7>,
         <http://ceur-ws.org/Vol-439/#paper8>,
         <http://ceur-ws.org/Vol-439/#paper9> ;
-    ns8:issued "2009-02-27T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:issued "2009-02-27T00:00:00+00:00"^^xsd:dateTime ;
     ns5:presentedAt <http://ceur-ws.org/Vol-439/#event> ;
     ns1:editor <http://ceur-ws.org/Vol-439/#AndreasiPleuss>,
         <http://ceur-ws.org/Vol-439/#DanieliG%C3%B6rlich>,

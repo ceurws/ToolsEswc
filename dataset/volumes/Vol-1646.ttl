@@ -1,0 +1,57 @@
+@prefix ns1: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns2: <http://www.w3.org/2002/07/owl#> .
+@prefix ns3: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns4: <http://purl.org/ontology/bibo/#> .
+@prefix ns5: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns6: <http://xmlns.com/foaf/0.1/> .
+@prefix ns7: <http://purl.org/dc/elements/1.1/> .
+@prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://ceur-ws.org/Vol-1646/> a ns3:Proceedings ;
+    ns5:issued "2016-07-28T00:00:00+00:00"^^xsd:dateTime ;
+    ns4:presentedAt <http://ceur-ws.org/Vol-1646/#event> ;
+    ns1:editor <http://ceur-ws.org/Vol-1646/#DepartmentiofiComputeriScience>,
+        <http://ceur-ws.org/Vol-1646/#FacultyiofiComputeriScience>,
+        <http://ceur-ws.org/Vol-1646/#INRIAiNancyiGrand-Est>,
+        <http://ceur-ws.org/Vol-1646/#INSAiRennes>,
+        <http://ceur-ws.org/Vol-1646/#Universit%C3%A9iParis>,
+        <http://ceur-ws.org/Vol-1646/#UniversityiofiW%C3%BCrzburg> .
+
+<http://ceur-ws.org/Vol-1646/#DepartmentiofiComputeriScience> a ns6:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/DepartmentiofiComputeriScience> ;
+    ns6:name "Department of Computer Science" .
+
+<http://ceur-ws.org/Vol-1646/#FacultyiofiComputeriScience> a ns6:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/FacultyiofiComputeriScience> ;
+    ns6:name "Faculty of Computer Science" .
+
+<http://ceur-ws.org/Vol-1646/#INRIAiNancyiGrand-Est> a ns6:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/INRIAiNancyiGrand-Est> ;
+    ns6:name "INRIA Nancy Grand-Est" .
+
+<http://ceur-ws.org/Vol-1646/#INSAiRennes> a ns6:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/INSAiRennes> ;
+    ns6:name "INSA Rennes" .
+
+<http://ceur-ws.org/Vol-1646/#Universit%C3%A9iParis> a ns6:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/Universit%C3%A9iParis> ;
+    ns6:name "Université Paris" .
+
+<http://ceur-ws.org/Vol-1646/#UniversityiofiW%C3%BCrzburg> a ns6:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/UniversityiofiW%C3%BCrzburg> ;
+    ns6:name "University of Würzburg" .
+
+<http://ceur-ws.org/Vol-1646/#event> a ns3:WorkshopEvent ;
+    ns3:hasLocation <http://dbpedia.org/resource/Italy> ;
+    ns3:hasPart <http://ceur-ws.org/Vol-1646/#part-ws> ;
+    ns3:isSubEventOf <http://ceur-ws.org/Vol-1646/#conf> ;
+    ns8:beginsAtDatetime "2016-09-23T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:endsAtDatetime "2016-09-23T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:license "http://creativecommons.org/publicdomain/zero/1.0/" ;
+    rdfs:seeAlso <http://ceur-ws.org/Vol-1202/#event>,
+        <http://ceur-ws.org/Vol-1410/#event> .
+

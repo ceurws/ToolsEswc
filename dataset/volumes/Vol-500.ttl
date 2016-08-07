@@ -1,11 +1,12 @@
-@prefix ns1: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns2: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns3: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns1: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns2: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns3: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix ns4: <http://www.w3.org/2002/07/owl#> .
 @prefix ns5: <http://xmlns.com/foaf/0.1/> .
-@prefix ns6: <http://purl.org/ontology/bibo/#> .
-@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns6: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns7: <http://purl.org/ontology/bibo/#> .
+@prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns9: <http://purl.org/dc/elements/1.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -27,12 +28,12 @@
     ns5:name "Benedikt Meuthrath" .
 
 <http://ceur-ws.org/Vol-500/#DieteriFensel> a ns5:Person ;
-    ns2:affiliation "" ;
+    ns1:affiliation "" ;
     ns4:sameAs <http://ceur-ws.org/persons/DieteriFensel> ;
     ns5:name "Dieter Fensel" .
 
 <http://ceur-ws.org/Vol-500/#ElenaiSimperl> a ns5:Person ;
-    ns2:affiliation "" ;
+    ns1:affiliation "" ;
     ns4:sameAs <http://ceur-ws.org/persons/ElenaiSimperl> ;
     ns5:name "Elena Simperl" .
 
@@ -107,8 +108,8 @@
     ns5:name "Reto Krummenacher" .
 
 <http://ceur-ws.org/Vol-500/#RobertiTolksdorf> a ns5:Person ;
-    ns6:place <http://dbpedia.org/resource/Germany> ;
-    ns2:affiliation "Networked Information Systems (NBI), Freie Universität Berlin, Königin-Luise-Str. 24/26, 14195 Berlin" ;
+    ns7:place <http://dbpedia.org/resource/Germany> ;
+    ns1:affiliation "Networked Information Systems (NBI), Freie Universität Berlin, Königin-Luise-Str. 24/26, 14195 Berlin" ;
     ns4:sameAs <http://ceur-ws.org/persons/RobertiTolksdorf> ;
     ns5:name "Robert Tolksdorf" .
 
@@ -127,116 +128,116 @@
     ns5:made <http://ceur-ws.org/Vol-500/#paper13> ;
     ns5:name "Yi Zeng" .
 
-<http://ceur-ws.org/Vol-500/#event> a ns3:WorkshopEvent ;
-    ns3:hasLocation <http://dbpedia.org/resource/Germany> ;
-    ns3:hasPart <http://ceur-ws.org/Vol-500/#part-STI> ;
-    ns3:isSubEventOf <http://ceur-ws.org/Vol-500/#conf> ;
-    ns7:beginsAtDatetime "2009-09-21T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:endsAtDatetime "2009-09-22T00:00:00+00:00"^^xsd:dateTime ;
-    ns1:license <http://choosealicense.com/licenses/no-license/> .
+<http://ceur-ws.org/Vol-500/#event> a ns6:WorkshopEvent ;
+    ns6:hasLocation <http://dbpedia.org/resource/Germany> ;
+    ns6:hasPart <http://ceur-ws.org/Vol-500/#part-CEUR-WS> ;
+    ns6:isSubEventOf <http://ceur-ws.org/Vol-500/#conf> ;
+    ns8:beginsAtDatetime "2009-09-13T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:endsAtDatetime "2009-09-13T00:00:00+00:00"^^xsd:dateTime ;
+    ns9:license "http://choosealicense.com/licenses/no-license/" .
 
-<http://ceur-ws.org/Vol-500/#paper1> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-500/> ;
-    ns1:title "Ontology Merging by Matching a Selection of Ontologies in a Cluster Environment" ;
-    ns2:author <http://ceur-ws.org/Vol-500/#AxeliTenschert> .
+<http://ceur-ws.org/Vol-500/#paper1> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-500/> ;
+    ns2:title "Ontology Merging by Matching a Selection of Ontologies in a Cluster Environment" ;
+    ns1:author <http://ceur-ws.org/Vol-500/#AxeliTenschert> .
 
-<http://ceur-ws.org/Vol-500/#paper10> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-500/> ;
-    ns1:title "Structure-based Analysis and Modularization of Ontologies" ;
-    ns2:author <http://ceur-ws.org/Vol-500/#GoekhaniCoskun> .
+<http://ceur-ws.org/Vol-500/#paper10> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-500/> ;
+    ns2:title "Structure-based Analysis and Modularization of Ontologies" ;
+    ns1:author <http://ceur-ws.org/Vol-500/#GoekhaniCoskun> .
 
-<http://ceur-ws.org/Vol-500/#paper11> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-500/> ;
-    ns1:title "Explorative Analysis of Real World Dynamic Networks" ;
-    ns2:author <http://ceur-ws.org/Vol-500/#BenediktiMeuthrath> .
+<http://ceur-ws.org/Vol-500/#paper11> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-500/> ;
+    ns2:title "Explorative Analysis of Real World Dynamic Networks" ;
+    ns1:author <http://ceur-ws.org/Vol-500/#BenediktiMeuthrath> .
 
-<http://ceur-ws.org/Vol-500/#paper12> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-500/> ;
-    ns1:title "Reliable Statements for the Semantic Web" ;
-    ns2:author <http://ceur-ws.org/Vol-500/#LutziSuhrbier> .
+<http://ceur-ws.org/Vol-500/#paper12> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-500/> ;
+    ns2:title "Reliable Statements for the Semantic Web" ;
+    ns1:author <http://ceur-ws.org/Vol-500/#LutziSuhrbier> .
 
-<http://ceur-ws.org/Vol-500/#paper13> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-500/> ;
-    ns1:title "Unifying Search and Reasoning: From the Viewpoint of Granularity" ;
-    ns2:author <http://ceur-ws.org/Vol-500/#YiiZeng> .
+<http://ceur-ws.org/Vol-500/#paper13> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-500/> ;
+    ns2:title "Unifying Search and Reasoning: From the Viewpoint of Granularity" ;
+    ns1:author <http://ceur-ws.org/Vol-500/#YiiZeng> .
 
-<http://ceur-ws.org/Vol-500/#paper14> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-500/> ;
-    ns1:title "MEMOS: A Methodology for Modeling Services" ;
-    ns2:author <http://ceur-ws.org/Vol-500/#MickiKerrigan> .
+<http://ceur-ws.org/Vol-500/#paper14> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-500/> ;
+    ns2:title "MEMOS: A Methodology for Modeling Services" ;
+    ns1:author <http://ceur-ws.org/Vol-500/#MickiKerrigan> .
 
-<http://ceur-ws.org/Vol-500/#paper15> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-500/> ;
-    ns1:title "Automatic Plug-in Workflow Construction" ;
-    ns2:author <http://ceur-ws.org/Vol-500/#LukaiBradesko> .
+<http://ceur-ws.org/Vol-500/#paper15> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-500/> ;
+    ns2:title "Automatic Plug-in Workflow Construction" ;
+    ns1:author <http://ceur-ws.org/Vol-500/#LukaiBradesko> .
 
-<http://ceur-ws.org/Vol-500/#paper16> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-500/> ;
-    ns1:title "Latent-Class Statistical Relational Learning from Formal Knowledge" ;
-    ns2:author <http://ceur-ws.org/Vol-500/#AchimiRettinger> .
+<http://ceur-ws.org/Vol-500/#paper16> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-500/> ;
+    ns2:title "Latent-Class Statistical Relational Learning from Formal Knowledge" ;
+    ns1:author <http://ceur-ws.org/Vol-500/#AchimiRettinger> .
 
-<http://ceur-ws.org/Vol-500/#paper17> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-500/> ;
-    ns1:title "Information Extraction and Integration from Heterogeneous Semi-structured Web Sources in the Domain of Used Cars" ;
-    ns2:author <http://ceur-ws.org/Vol-500/#RadoslawiOldakowsk> .
+<http://ceur-ws.org/Vol-500/#paper17> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-500/> ;
+    ns2:title "Information Extraction and Integration from Heterogeneous Semi-structured Web Sources in the Domain of Used Cars" ;
+    ns1:author <http://ceur-ws.org/Vol-500/#RadoslawiOldakowsk> .
 
-<http://ceur-ws.org/Vol-500/#paper18> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-500/> ;
-    ns1:title "Cognitively-inspired Heuristic Reasoning for Scalable Semantic Web Reasoning" ;
-    ns2:author <http://ceur-ws.org/Vol-500/#GastoniTagni> .
+<http://ceur-ws.org/Vol-500/#paper18> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-500/> ;
+    ns2:title "Cognitively-inspired Heuristic Reasoning for Scalable Semantic Web Reasoning" ;
+    ns1:author <http://ceur-ws.org/Vol-500/#GastoniTagni> .
 
-<http://ceur-ws.org/Vol-500/#paper19> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-500/> ;
-    ns1:title "Monitoring and Adaption of Semantic Execution Environments" ;
-    ns2:author <http://ceur-ws.org/Vol-500/#SrdjaniKomazec> .
+<http://ceur-ws.org/Vol-500/#paper19> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-500/> ;
+    ns2:title "Monitoring and Adaption of Semantic Execution Environments" ;
+    ns1:author <http://ceur-ws.org/Vol-500/#SrdjaniKomazec> .
 
-<http://ceur-ws.org/Vol-500/#paper2> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-500/> ;
-    ns1:title "Towards Agile Ontology Maintenance" ;
-    ns2:author <http://ceur-ws.org/Vol-500/#MarkusiLuczak-R%C3%B6sch> .
+<http://ceur-ws.org/Vol-500/#paper2> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-500/> ;
+    ns2:title "Towards Agile Ontology Maintenance" ;
+    ns1:author <http://ceur-ws.org/Vol-500/#MarkusiLuczak-R%C3%B6sch> .
 
-<http://ceur-ws.org/Vol-500/#paper20> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-500/> ;
-    ns1:title "Developing a Framework for Object-semantic Mapping" ;
-    ns2:author <http://ceur-ws.org/Vol-500/#MarkoiKranz> .
+<http://ceur-ws.org/Vol-500/#paper20> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-500/> ;
+    ns2:title "Developing a Framework for Object-semantic Mapping" ;
+    ns1:author <http://ceur-ws.org/Vol-500/#MarkoiKranz> .
 
-<http://ceur-ws.org/Vol-500/#paper3> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-500/> ;
-    ns1:title "A Parametric Design Approach to Scalability Management of Semantic Middleware" ;
-    ns2:author <http://ceur-ws.org/Vol-500/#RetoiKrummenacher> .
+<http://ceur-ws.org/Vol-500/#paper3> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-500/> ;
+    ns2:title "A Parametric Design Approach to Scalability Management of Semantic Middleware" ;
+    ns1:author <http://ceur-ws.org/Vol-500/#RetoiKrummenacher> .
 
-<http://ceur-ws.org/Vol-500/#paper4> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-500/> ;
-    ns1:title "Query Optimization in Semantic-Web-Databases" ;
-    ns2:author <http://ceur-ws.org/Vol-500/#RalfiHeese> .
+<http://ceur-ws.org/Vol-500/#paper4> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-500/> ;
+    ns2:title "Query Optimization in Semantic-Web-Databases" ;
+    ns1:author <http://ceur-ws.org/Vol-500/#RalfiHeese> .
 
-<http://ceur-ws.org/Vol-500/#paper5> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-500/> ;
-    ns1:title "Feedback-driven Ontology Reorganisation" ;
-    ns2:author <http://ceur-ws.org/Vol-500/#ElmariWach> .
+<http://ceur-ws.org/Vol-500/#paper5> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-500/> ;
+    ns2:title "Feedback-driven Ontology Reorganisation" ;
+    ns1:author <http://ceur-ws.org/Vol-500/#ElmariWach> .
 
-<http://ceur-ws.org/Vol-500/#paper6> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-500/> ;
-    ns1:title "Evaluating WSMO-Lite" ;
-    ns2:author <http://ceur-ws.org/Vol-500/#JacekiKopecky> .
+<http://ceur-ws.org/Vol-500/#paper6> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-500/> ;
+    ns2:title "Evaluating WSMO-Lite" ;
+    ns1:author <http://ceur-ws.org/Vol-500/#JacekiKopecky> .
 
-<http://ceur-ws.org/Vol-500/#paper7> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-500/> ;
-    ns1:title "Search Refinement through User Interests: A Case Study in Medical Research" ;
-    ns2:author <http://ceur-ws.org/Vol-500/#YaniWang> .
+<http://ceur-ws.org/Vol-500/#paper7> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-500/> ;
+    ns2:title "Search Refinement through User Interests: A Case Study in Medical Research" ;
+    ns1:author <http://ceur-ws.org/Vol-500/#YaniWang> .
 
-<http://ceur-ws.org/Vol-500/#paper8> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-500/> ;
-    ns1:title "Semantic Learning for Trend Recognition in Text Collections" ;
-    ns2:author <http://ceur-ws.org/Vol-500/#OlgaiStreibel> .
+<http://ceur-ws.org/Vol-500/#paper8> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-500/> ;
+    ns2:title "Semantic Learning for Trend Recognition in Text Collections" ;
+    ns1:author <http://ceur-ws.org/Vol-500/#OlgaiStreibel> .
 
-<http://ceur-ws.org/Vol-500/#paper9> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-500/> ;
-    ns1:title "Knowledge-based Complex Event Processing" ;
-    ns2:author <http://ceur-ws.org/Vol-500/#KiaiTeymourian> .
+<http://ceur-ws.org/Vol-500/#paper9> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-500/> ;
+    ns2:title "Knowledge-based Complex Event Processing" ;
+    ns1:author <http://ceur-ws.org/Vol-500/#KiaiTeymourian> .
 
-<http://ceur-ws.org/Vol-500/> a ns3:Proceedings ;
-    ns3:hasPart <http://ceur-ws.org/Vol-500/#paper1>,
+<http://ceur-ws.org/Vol-500/> a ns6:Proceedings ;
+    ns6:hasPart <http://ceur-ws.org/Vol-500/#paper1>,
         <http://ceur-ws.org/Vol-500/#paper10>,
         <http://ceur-ws.org/Vol-500/#paper11>,
         <http://ceur-ws.org/Vol-500/#paper12>,
@@ -256,9 +257,9 @@
         <http://ceur-ws.org/Vol-500/#paper7>,
         <http://ceur-ws.org/Vol-500/#paper8>,
         <http://ceur-ws.org/Vol-500/#paper9> ;
-    ns8:issued "2009-09-13T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:presentedAt <http://ceur-ws.org/Vol-500/#event> ;
-    ns2:editor <http://ceur-ws.org/Vol-500/#DieteriFensel>,
+    ns3:issued "2009-09-13T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:presentedAt <http://ceur-ws.org/Vol-500/#event> ;
+    ns1:editor <http://ceur-ws.org/Vol-500/#DieteriFensel>,
         <http://ceur-ws.org/Vol-500/#ElenaiSimperl>,
         <http://ceur-ws.org/Vol-500/#RobertiTolksdorf> .
 

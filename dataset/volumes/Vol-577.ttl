@@ -1,35 +1,141 @@
-@prefix ns1: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns2: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns1: <http://purl.org/ontology/bibo/#> .
+@prefix ns2: <http://xmlns.com/foaf/0.1/> .
 @prefix ns3: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns4: <http://www.w3.org/2002/07/owl#> .
-@prefix ns5: <http://xmlns.com/foaf/0.1/> .
+@prefix ns4: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns5: <http://purl.org/dc/elements/1.1/#> .
 @prefix ns6: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns8: <http://purl.org/ontology/bibo/#> .
+@prefix ns7: <http://www.w3.org/2002/07/owl#> .
+@prefix ns8: <http://purl.org/dc/elements/1.1/> .
+@prefix ns9: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-577/> a ns3:Proceedings ;
-    ns7:issued "2010-04-28T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:presentedAt <http://ceur-ws.org/Vol-577/#event> ;
-    ns6:editor <http://ceur-ws.org/Vol-577/#MarkusiN%C3%BCttgens>,
-        <http://ceur-ws.org/Vol-577/#OliveriThomas> .
+<http://ceur-ws.org/Vol-577/#Andr%C3%A9iNimmich> a ns2:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/Andr%C3%A9iNimmich> ;
+    ns2:made <http://ceur-ws.org/Vol-577/#dlm2010-dk-paper04> ;
+    ns2:name "André Nimmich" .
 
-<http://ceur-ws.org/Vol-577/#MarkusiN%C3%BCttgens> a ns5:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/MarkusiN%C3%BCttgens> ;
-    ns5:name "Markus Nüttgens" .
+<http://ceur-ws.org/Vol-577/#EdzardiWeber> a ns2:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/EdzardiWeber> ;
+    ns2:made <http://ceur-ws.org/Vol-577/#dlm2010-dk-paper04> ;
+    ns2:name "Edzard Weber" .
 
-<http://ceur-ws.org/Vol-577/#OliveriThomas> a ns5:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/OliveriThomas> ;
-    ns5:name "Oliver Thomas" .
+<http://ceur-ws.org/Vol-577/#HolgeriSchr%C3%B6dl> a ns2:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/HolgeriSchr%C3%B6dl> ;
+    ns2:made <http://ceur-ws.org/Vol-577/#dlm2010-dk-paper01> ;
+    ns2:name "Holger Schrödl" .
+
+<http://ceur-ws.org/Vol-577/#JeannetteiStark> a ns2:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/JeannetteiStark> ;
+    ns2:made <http://ceur-ws.org/Vol-577/#dlm2010-dk-paper03> ;
+    ns2:name "Jeannette Stark" .
+
+<http://ceur-ws.org/Vol-577/#KlausiTurowski> a ns2:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/KlausiTurowski> ;
+    ns2:made <http://ceur-ws.org/Vol-577/#dlm2010-dk-paper01> ;
+    ns2:name "Klaus Turowski" .
+
+<http://ceur-ws.org/Vol-577/#MichaeliSchlicker> a ns2:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/MichaeliSchlicker> ;
+    ns2:made <http://ceur-ws.org/Vol-577/#dlm2010-dk-paper02> ;
+    ns2:name "Michael Schlicker" .
+
+<http://ceur-ws.org/Vol-577/#NadineiBlinn> a ns2:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/NadineiBlinn> ;
+    ns2:made <http://ceur-ws.org/Vol-577/#dlm2010-dk-paper02> ;
+    ns2:name "Nadine Blinn" .
+
+<http://ceur-ws.org/Vol-577/#OliveriThomas> a ns2:Person ;
+    ns6:affiliation "" ;
+    ns7:sameAs <http://ceur-ws.org/persons/OliveriThomas> ;
+    ns2:name "Oliver Thomas" .
+
+<http://ceur-ws.org/Vol-577/#PatrickiGugel> a ns2:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/PatrickiGugel> ;
+    ns2:made <http://ceur-ws.org/Vol-577/#dlm2010-dk-paper01> ;
+    ns2:name "Patrick Gugel" .
+
+<http://ceur-ws.org/Vol-577/#SinaiLehrmann> a ns2:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/SinaiLehrmann> ;
+    ns2:made <http://ceur-ws.org/Vol-577/#dlm2010-dk-paper03> ;
+    ns2:name "Sina Lehrmann" .
+
+<http://ceur-ws.org/Vol-577/#WerneriEsswein> a ns2:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/WerneriEsswein> ;
+    ns2:made <http://ceur-ws.org/Vol-577/#dlm2010-dk-paper03> ;
+    ns2:name "Werner Esswein" .
 
 <http://ceur-ws.org/Vol-577/#event> a ns3:WorkshopEvent ;
     ns3:hasLocation <http://dbpedia.org/resource/Austria> ;
-    ns3:hasPart <http://ceur-ws.org/Vol-577/#part-DLM> ;
+    ns3:hasPart <http://ceur-ws.org/Vol-577/#part-CEUR-WS> ;
     ns3:isSubEventOf <http://ceur-ws.org/Vol-577/#conf> ;
-    ns1:beginsAtDatetime "2010-03-26T00:00:00+00:00"^^xsd:dateTime ;
-    ns1:endsAtDatetime "2010-03-26T00:00:00+00:00"^^xsd:dateTime ;
-    ns2:license <http://choosealicense.com/licenses/no-license/> .
+    ns4:beginsAtDatetime "2010-03-28T00:00:00+00:00"^^xsd:dateTime ;
+    ns4:endsAtDatetime "2010-03-28T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:license "http://choosealicense.com/licenses/no-license/" .
+
+<http://ceur-ws.org/Vol-577/#MarkusiN%C3%BCttgens> a ns2:Person ;
+    ns6:affiliation "" ;
+    ns7:sameAs <http://ceur-ws.org/persons/MarkusiN%C3%BCttgens> ;
+    ns2:made <http://ceur-ws.org/Vol-577/#dlm2010-dk-paper02> ;
+    ns2:name "Markus Nüttgens" .
+
+<http://ceur-ws.org/Vol-577/#dlm2010-dk-paper04> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-577/> ;
+    ns5:title "Meta-Kennzahlen für die Bewertung von Dienstleistungen" ;
+    ns1:endPage 88 ;
+    ns1:numPages 24 ;
+    ns1:section <http://ceur-ws.org/Vol-577/#Diskussionsbeiträge> ;
+    ns1:startPage 65 ;
+    ns6:author <http://ceur-ws.org/Vol-577/#Andr%C3%A9iNimmich>,
+        <http://ceur-ws.org/Vol-577/#EdzardiWeber> .
+
+<http://ceur-ws.org/Vol-577/#dlm2010-dk-paper01> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-577/> ;
+    ns5:title "Modellierung strategischer Liefernetze für hybride Leistungsbündel" ;
+    ns1:endPage 18 ;
+    ns1:numPages 18 ;
+    ns1:section <http://ceur-ws.org/Vol-577/#Diskussionsbeiträge> ;
+    ns1:startPage 1 ;
+    ns6:author <http://ceur-ws.org/Vol-577/#HolgeriSchr%C3%B6dl>,
+        <http://ceur-ws.org/Vol-577/#KlausiTurowski>,
+        <http://ceur-ws.org/Vol-577/#PatrickiGugel> .
+
+<http://ceur-ws.org/Vol-577/#dlm2010-dk-paper02> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-577/> ;
+    ns5:title "Modellierung hybrider Wertschöpfung - Grundlagen und Fallbeispiel im Kontext technischer Kundendienstleistungen" ;
+    ns1:endPage 43 ;
+    ns1:numPages 24 ;
+    ns1:section <http://ceur-ws.org/Vol-577/#Diskussionsbeiträge> ;
+    ns1:startPage 20 ;
+    ns6:author <http://ceur-ws.org/Vol-577/#MarkusiN%C3%BCttgens>,
+        <http://ceur-ws.org/Vol-577/#MichaeliSchlicker>,
+        <http://ceur-ws.org/Vol-577/#NadineiBlinn> .
+
+<http://ceur-ws.org/Vol-577/#dlm2010-dk-paper03> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-577/> ;
+    ns5:title "Kontinuierliche Referenzmodellverwaltung für die Maschinensimulation" ;
+    ns1:endPage 64 ;
+    ns1:numPages 21 ;
+    ns1:section <http://ceur-ws.org/Vol-577/#Diskussionsbeiträge> ;
+    ns1:startPage 44 ;
+    ns6:author <http://ceur-ws.org/Vol-577/#JeannetteiStark>,
+        <http://ceur-ws.org/Vol-577/#SinaiLehrmann>,
+        <http://ceur-ws.org/Vol-577/#WerneriEsswein> .
+
+<http://ceur-ws.org/Vol-577/> a ns3:Proceedings ;
+    ns3:hasPart <http://ceur-ws.org/Vol-577/#dlm2010-dk-paper01>,
+        <http://ceur-ws.org/Vol-577/#dlm2010-dk-paper02>,
+        <http://ceur-ws.org/Vol-577/#dlm2010-dk-paper03>,
+        <http://ceur-ws.org/Vol-577/#dlm2010-dk-paper04> ;
+    ns3:hasSession <http://ceur-ws.org/Vol-577/#Diskussionsbeiträge> ;
+    ns9:issued "2010-04-28T00:00:00+00:00"^^xsd:dateTime ;
+    ns1:presentedAt <http://ceur-ws.org/Vol-577/#event> ;
+    ns6:editor <http://ceur-ws.org/Vol-577/#MarkusiN%C3%BCttgens>,
+        <http://ceur-ws.org/Vol-577/#OliveriThomas> .
+
+<http://ceur-ws.org/Vol-577/#Diskussionsbeiträge> a ns3:SessionEvent ;
+    ns3:partOf <http://ceur-ws.org/Vol-577/> ;
+    ns5:title "Diskussionsbeiträge" .
 

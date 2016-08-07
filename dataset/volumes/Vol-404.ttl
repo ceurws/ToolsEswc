@@ -1,11 +1,12 @@
 @prefix ns1: <http://www.w3.org/2002/07/owl#> .
 @prefix ns2: <http://xmlns.com/foaf/0.1/> .
-@prefix ns3: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns4: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns5: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns6: <http://purl.org/ontology/bibo/#> .
+@prefix ns3: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns4: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns5: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns6: <http://purl.org/NET/c4dm/timeline.owl#> .
 @prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns8: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns8: <http://purl.org/dc/elements/1.1/> .
+@prefix ns9: <http://purl.org/ontology/bibo/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -32,12 +33,12 @@
     ns2:name "Daniel Mican" .
 
 <http://ceur-ws.org/Vol-404/#ElenaiSimperl> a ns2:Person ;
-    ns3:affiliation "" ;
+    ns5:affiliation "" ;
     ns1:sameAs <http://ceur-ws.org/persons/ElenaiSimperl> ;
     ns2:name "Elena Simperl" .
 
 <http://ceur-ws.org/Vol-404/#IlonaiZaremba> a ns2:Person ;
-    ns3:affiliation "" ;
+    ns5:affiliation "" ;
     ns1:sameAs <http://ceur-ws.org/persons/IlonaiZaremba> ;
     ns2:name "Ilona Zaremba" .
 
@@ -71,62 +72,62 @@
     ns2:made <http://ceur-ws.org/Vol-404/#Paper4> ;
     ns2:name "Yevgeniya Kovalchuk" .
 
-<http://ceur-ws.org/Vol-404/#event> a ns4:WorkshopEvent ;
-    ns4:hasLocation <http://dbpedia.org/resource/Austria> ;
-    ns4:hasPart <http://ceur-ws.org/Vol-404/#part-ICEC> ;
-    ns4:isSubEventOf <http://ceur-ws.org/Vol-404/#conf> ;
-    ns5:beginsAtDatetime "2008-08-19T00:00:00+00:00"^^xsd:dateTime ;
-    ns5:endsAtDatetime "2008-08-19T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:license <http://choosealicense.com/licenses/no-license/> .
+<http://ceur-ws.org/Vol-404/#event> a ns3:WorkshopEvent ;
+    ns3:hasLocation <http://dbpedia.org/resource/Austria> ;
+    ns3:hasPart <http://ceur-ws.org/Vol-404/#part-CEUR-WS> ;
+    ns3:isSubEventOf <http://ceur-ws.org/Vol-404/#conf> ;
+    ns6:beginsAtDatetime "2008-10-21T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:endsAtDatetime "2008-10-21T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:license "http://choosealicense.com/licenses/no-license/" .
 
-<http://ceur-ws.org/Vol-404/#Paper1> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-404/> ;
-    ns8:title "Making Pre-Trip Services Context-Aware" ;
-    ns3:author <http://ceur-ws.org/Vol-404/#ChristophiGr%C3%BCn> .
+<http://ceur-ws.org/Vol-404/#Paper1> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-404/> ;
+    ns4:title "Making Pre-Trip Services Context-Aware" ;
+    ns5:author <http://ceur-ws.org/Vol-404/#ChristophiGr%C3%BCn> .
 
-<http://ceur-ws.org/Vol-404/#Paper2> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-404/> ;
-    ns8:title "Optimized Advertising Content Delivery in Affiliate Networks" ;
-    ns3:author <http://ceur-ws.org/Vol-404/#DanieliMican> .
+<http://ceur-ws.org/Vol-404/#Paper2> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-404/> ;
+    ns4:title "Optimized Advertising Content Delivery in Affiliate Networks" ;
+    ns5:author <http://ceur-ws.org/Vol-404/#DanieliMican> .
 
-<http://ceur-ws.org/Vol-404/#Paper3> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-404/> ;
-    ns8:title "A holistic Methodology for Model-driven B2B Integration: From Business Values over Business Collaborations to Deployment Artifacts" ;
-    ns3:author <http://ceur-ws.org/Vol-404/#MarcoiZapletal> .
+<http://ceur-ws.org/Vol-404/#Paper3> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-404/> ;
+    ns4:title "A holistic Methodology for Model-driven B2B Integration: From Business Values over Business Collaborations to Deployment Artifacts" ;
+    ns5:author <http://ceur-ws.org/Vol-404/#MarcoiZapletal> .
 
-<http://ceur-ws.org/Vol-404/#Paper4> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-404/> ;
-    ns8:title "Multi-Agent Decision Support System for Supply Chain Management" ;
-    ns3:author <http://ceur-ws.org/Vol-404/#YevgeniyaiKovalchuk> .
+<http://ceur-ws.org/Vol-404/#Paper4> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-404/> ;
+    ns4:title "Multi-Agent Decision Support System for Supply Chain Management" ;
+    ns5:author <http://ceur-ws.org/Vol-404/#YevgeniyaiKovalchuk> .
 
-<http://ceur-ws.org/Vol-404/#Paper6> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-404/> ;
-    ns8:title "Business Documents in a Service Oriented Context" ;
-    ns3:author <http://ceur-ws.org/Vol-404/#PhilippiLiegl> .
+<http://ceur-ws.org/Vol-404/#Paper6> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-404/> ;
+    ns4:title "Business Documents in a Service Oriented Context" ;
+    ns5:author <http://ceur-ws.org/Vol-404/#PhilippiLiegl> .
 
-<http://ceur-ws.org/Vol-404/#Paper7> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-404/> ;
-    ns8:title "Semantic Based Project Management" ;
-    ns3:author <http://ceur-ws.org/Vol-404/#BirgitiDippelreiter> .
+<http://ceur-ws.org/Vol-404/#Paper7> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-404/> ;
+    ns4:title "Semantic Based Project Management" ;
+    ns5:author <http://ceur-ws.org/Vol-404/#BirgitiDippelreiter> .
 
-<http://ceur-ws.org/Vol-404/#Paper8> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-404/> ;
-    ns8:title "A Multi-Agent System for Content Trading in Electronic Telecom Markets Using Multi-Attribute Auctions" ;
-    ns3:author <http://ceur-ws.org/Vol-404/#AnaiPetric> .
+<http://ceur-ws.org/Vol-404/#Paper8> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-404/> ;
+    ns4:title "A Multi-Agent System for Content Trading in Electronic Telecom Markets Using Multi-Attribute Auctions" ;
+    ns5:author <http://ceur-ws.org/Vol-404/#AnaiPetric> .
 
-<http://ceur-ws.org/Vol-404/#Paper9> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-404/> ;
-    ns8:title "Development of an Extended Selection Algorithm for Projects in a Project Portfolio" ;
-    ns3:author <http://ceur-ws.org/Vol-404/#MarkusiBrandst%C3%A4tter> .
+<http://ceur-ws.org/Vol-404/#Paper9> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-404/> ;
+    ns4:title "Development of an Extended Selection Algorithm for Projects in a Project Portfolio" ;
+    ns5:author <http://ceur-ws.org/Vol-404/#MarkusiBrandst%C3%A4tter> .
 
-<http://ceur-ws.org/Vol-404/#Paper5> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-404/> ;
-    ns8:title "A Holistic Approach Towards a UML Profile for Business Modeling" ;
-    ns3:author <http://ceur-ws.org/Vol-404/#RaineriSchuster>,
+<http://ceur-ws.org/Vol-404/#Paper5> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-404/> ;
+    ns4:title "A Holistic Approach Towards a UML Profile for Business Modeling" ;
+    ns5:author <http://ceur-ws.org/Vol-404/#RaineriSchuster>,
         <http://ceur-ws.org/Vol-404/#ThomasiMotal> .
 
-<http://ceur-ws.org/Vol-404/> a ns4:Proceedings ;
-    ns4:hasPart <http://ceur-ws.org/Vol-404/#Paper1>,
+<http://ceur-ws.org/Vol-404/> a ns3:Proceedings ;
+    ns3:hasPart <http://ceur-ws.org/Vol-404/#Paper1>,
         <http://ceur-ws.org/Vol-404/#Paper2>,
         <http://ceur-ws.org/Vol-404/#Paper3>,
         <http://ceur-ws.org/Vol-404/#Paper4>,
@@ -136,7 +137,7 @@
         <http://ceur-ws.org/Vol-404/#Paper8>,
         <http://ceur-ws.org/Vol-404/#Paper9> ;
     ns7:issued "2008-10-21T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:presentedAt <http://ceur-ws.org/Vol-404/#event> ;
-    ns3:editor <http://ceur-ws.org/Vol-404/#ElenaiSimperl>,
+    ns9:presentedAt <http://ceur-ws.org/Vol-404/#event> ;
+    ns5:editor <http://ceur-ws.org/Vol-404/#ElenaiSimperl>,
         <http://ceur-ws.org/Vol-404/#IlonaiZaremba> .
 

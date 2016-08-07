@@ -1,9 +1,9 @@
-@prefix ns1: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns2: <http://xmlns.com/foaf/0.1/> .
-@prefix ns3: <http://www.w3.org/2002/07/owl#> .
-@prefix ns4: <http://purl.org/ontology/bibo/#> .
-@prefix ns5: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns6: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns1: <http://purl.org/dc/elements/1.1/> .
+@prefix ns2: <http://www.w3.org/2002/07/owl#> .
+@prefix ns3: <http://purl.org/ontology/bibo/#> .
+@prefix ns4: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns5: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns6: <http://xmlns.com/foaf/0.1/> .
 @prefix ns7: <http://data.semanticweb.org/ns/swc/ontology/#> .
 @prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -11,233 +11,31 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1187/#Agn%C3%A8siBraud> a ns2:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/Agn%C3%A8siBraud> ;
-    ns2:made <http://ceur-ws.org/Vol-1187/#paper-02> ;
-    ns2:name "Agnès Braud" .
+<http://ceur-ws.org/Vol-1187/> a ns7:Proceedings ;
+    ns8:issued "2014-07-29T00:00:00+00:00"^^xsd:dateTime ;
+    ns3:presentedAt <http://ceur-ws.org/Vol-1187/#event> ;
+    ns5:editor <http://ceur-ws.org/Vol-1187/#AlineiPaes>,
+        <http://ceur-ws.org/Vol-1187/#GersoniZaverucha>,
+        <http://ceur-ws.org/Vol-1187/#V%C3%ADtoriSantosiCosta> .
 
-<http://ceur-ws.org/Vol-1187/#AjayiNagesh> a ns2:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/AjayiNagesh> ;
-    ns2:made <http://ceur-ws.org/Vol-1187/#paper-06> ;
-    ns2:name "Ajay Nagesh" .
+<http://ceur-ws.org/Vol-1187/#AlineiPaes> a ns6:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/AlineiPaes> ;
+    ns6:name "Aline Paes" .
 
-<http://ceur-ws.org/Vol-1187/#AndreiiDoncescu> a ns2:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/AndreiiDoncescu> ;
-    ns2:made <http://ceur-ws.org/Vol-1187/#paper-03> ;
-    ns2:name "Andrei Doncescu" .
+<http://ceur-ws.org/Vol-1187/#GersoniZaverucha> a ns6:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/GersoniZaverucha> ;
+    ns6:name "Gerson Zaverucha" .
 
-<http://ceur-ws.org/Vol-1187/#Cl%C3%A9mentiCharnay> a ns2:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/Cl%C3%A9mentiCharnay> ;
-    ns2:made <http://ceur-ws.org/Vol-1187/#paper-02> ;
-    ns2:name "Clément Charnay" .
-
-<http://ceur-ws.org/Vol-1187/#ElenaiBellodi> a ns2:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/ElenaiBellodi> ;
-    ns2:made <http://ceur-ws.org/Vol-1187/#paper-08> ;
-    ns2:name "Elena Bellodi" .
-
-<http://ceur-ws.org/Vol-1187/#ElizabethiBurnside> a ns2:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/ElizabethiBurnside> ;
-    ns2:made <http://ceur-ws.org/Vol-1187/#paper-07> ;
-    ns2:name "Elizabeth Burnside" .
-
-<http://ceur-ws.org/Vol-1187/#EvelinaiLamma> a ns2:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/EvelinaiLamma> ;
-    ns2:made <http://ceur-ws.org/Vol-1187/#paper-08> ;
-    ns2:name "Evelina Lamma" .
-
-<http://ceur-ws.org/Vol-1187/#FabrizioiRiguzzi> a ns2:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/FabrizioiRiguzzi> ;
-    ns2:made <http://ceur-ws.org/Vol-1187/#paper-08> ;
-    ns2:name "Fabrizio Riguzzi" .
-
-<http://ceur-ws.org/Vol-1187/#FilipiZelezny> a ns2:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/FilipiZelezny> ;
-    ns2:made <http://ceur-ws.org/Vol-1187/#paper-09> ;
-    ns2:name "Filip Zelezny" .
-
-<http://ceur-ws.org/Vol-1187/#FinniKuusisto> a ns2:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/FinniKuusisto> ;
-    ns2:made <http://ceur-ws.org/Vol-1187/#paper-07> ;
-    ns2:name "Finn Kuusisto" .
-
-<http://ceur-ws.org/Vol-1187/#GaneshiRamakrishnan> a ns2:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/GaneshiRamakrishnan> ;
-    ns2:made <http://ceur-ws.org/Vol-1187/#paper-06> ;
-    ns2:name "Ganesh Ramakrishnan" .
-
-<http://ceur-ws.org/Vol-1187/#GersoniZaverucha> a ns2:Person ;
-    ns1:affiliation "" ;
-    ns3:sameAs <http://ceur-ws.org/persons/GersoniZaverucha> ;
-    ns2:name "Gerson Zaverucha" .
-
-<http://ceur-ws.org/Vol-1187/#GustaviSourek> a ns2:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/GustaviSourek> ;
-    ns2:made <http://ceur-ws.org/Vol-1187/#paper-09> ;
-    ns2:name "Gustav Sourek" .
-
-<http://ceur-ws.org/Vol-1187/#HoussamiNassif> a ns2:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/HoussamiNassif> ;
-    ns2:made <http://ceur-ws.org/Vol-1187/#paper-07> ;
-    ns2:name "Houssam Nassif" .
-
-<http://ceur-ws.org/Vol-1187/#JudeiShavlik> a ns2:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/JudeiShavlik> ;
-    ns2:made <http://ceur-ws.org/Vol-1187/#paper-07> ;
-    ns2:name "Jude Shavlik" .
-
-<http://ceur-ws.org/Vol-1187/#KateiRevoredo> a ns2:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/KateiRevoredo> ;
-    ns2:made <http://ceur-ws.org/Vol-1187/#paper-04> ;
-    ns2:name "Kate Revoredo" .
-
-<http://ceur-ws.org/Vol-1187/#NaveeniNair> a ns2:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/NaveeniNair> ;
-    ns2:made <http://ceur-ws.org/Vol-1187/#paper-06> ;
-    ns2:name "Naveen Nair" .
-
-<http://ceur-ws.org/Vol-1187/#NicolasiLachiche> a ns2:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/NicolasiLachiche> ;
-    ns2:made <http://ceur-ws.org/Vol-1187/#paper-02> ;
-    ns2:name "Nicolas Lachiche" .
-
-<http://ceur-ws.org/Vol-1187/#Ond%C5%99ejiKu%C5%BEelka> a ns2:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/Ond%C5%99ejiKu%C5%BEelka> ;
-    ns2:made <http://ceur-ws.org/Vol-1187/#paper-09> ;
-    ns2:name "Ondřej Kuželka" .
-
-<http://ceur-ws.org/Vol-1187/#OrlandoiMu%C3%B1oziTexzocotetla> a ns2:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/OrlandoiMu%C3%B1oziTexzocotetla> ;
-    ns2:made <http://ceur-ws.org/Vol-1187/#paper-05> ;
-    ns2:name "Orlando Muñoz Texzocotetla" .
-
-<http://ceur-ws.org/Vol-1187/#RaphaeliMelo> a ns2:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/RaphaeliMelo> ;
-    ns2:made <http://ceur-ws.org/Vol-1187/#paper-04> ;
-    ns2:name "Raphael Melo" .
-
-<http://ceur-ws.org/Vol-1187/#ReneiMacKinney-Romero> a ns2:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/ReneiMacKinney-Romero> ;
-    ns2:made <http://ceur-ws.org/Vol-1187/#paper-05> ;
-    ns2:name "Rene MacKinney-Romero" .
-
-<http://ceur-ws.org/Vol-1187/#RiccardoiZese> a ns2:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/RiccardoiZese> ;
-    ns2:made <http://ceur-ws.org/Vol-1187/#paper-08> ;
-    ns2:name "Riccardo Zese" .
-
-<http://ceur-ws.org/Vol-1187/#V%C3%ADtoriSantosiCosta> a ns2:Person ;
-    ns1:affiliation "" ;
-    ns3:sameAs <http://ceur-ws.org/persons/V%C3%ADtoriSantosiCosta> ;
-    ns2:name "Vítor Santos Costa" .
+<http://ceur-ws.org/Vol-1187/#V%C3%ADtoriSantosiCosta> a ns6:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/V%C3%ADtoriSantosiCosta> ;
+    ns6:name "Vítor Santos Costa" .
 
 <http://ceur-ws.org/Vol-1187/#event> a ns7:WorkshopEvent ;
     ns7:hasLocation <http://dbpedia.org/resource/Brazil> ;
-    ns7:hasPart <http://ceur-ws.org/Vol-1187/#part-ILP>,
-        <http://ceur-ws.org/Vol-1187/#part-LBP-ILP> ;
+    ns7:hasPart <http://ceur-ws.org/Vol-1187/#part-ws> ;
     ns7:isSubEventOf <http://ceur-ws.org/Vol-1187/#conf> ;
-    ns6:beginsAtDatetime "2013-01-30T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:endsAtDatetime "2013-01-30T00:00:00+00:00"^^xsd:dateTime ;
-    ns5:license <http://choosealicense.com/licenses/no-license/> ;
+    ns4:beginsAtDatetime "2016-08-28T00:00:00+00:00"^^xsd:dateTime ;
+    ns4:endsAtDatetime "2016-08-28T00:00:00+00:00"^^xsd:dateTime ;
+    ns1:license "http://choosealicense.com/licenses/no-license/" ;
     rdfs:seeAlso <http://ceur-ws.org/Vol-975/#event> .
-
-<http://ceur-ws.org/Vol-1187/#AlineiPaes> a ns2:Person ;
-    ns1:affiliation "" ;
-    ns3:sameAs <http://ceur-ws.org/persons/AlineiPaes> ;
-    ns2:made <http://ceur-ws.org/Vol-1187/#paper-04> ;
-    ns2:name "Aline Paes" .
-
-<http://ceur-ws.org/Vol-1187/#paper-03> a ns7:Paper ;
-    ns7:partOf <http://ceur-ws.org/Vol-1187/> ;
-    ns5:title "Modeling of Resilient Systems in Default Logic" ;
-    ns4:endPage 16 ;
-    ns4:numPages 10 ;
-    ns4:startPage 7 ;
-    ns1:author <http://ceur-ws.org/Vol-1187/#AndreiiDoncescu> .
-
-<http://ceur-ws.org/Vol-1187/#paper-05> a ns7:Paper ;
-    ns7:partOf <http://ceur-ws.org/Vol-1187/> ;
-    ns5:title "Background Knowledge-enrichment for Bottom Clauses Improving" ;
-    ns4:endPage 28 ;
-    ns4:numPages 6 ;
-    ns4:startPage 23 ;
-    ns1:author <http://ceur-ws.org/Vol-1187/#OrlandoiMu%C3%B1oziTexzocotetla>,
-        <http://ceur-ws.org/Vol-1187/#ReneiMacKinney-Romero> .
-
-<http://ceur-ws.org/Vol-1187/#paper-02> a ns7:Paper ;
-    ns7:partOf <http://ceur-ws.org/Vol-1187/> ;
-    ns5:title "Incremental Construction of Complex Aggregates: Counting over a Secondary Table" ;
-    ns4:endPage 6 ;
-    ns4:numPages 6 ;
-    ns4:startPage 1 ;
-    ns1:author <http://ceur-ws.org/Vol-1187/#Agn%C3%A8siBraud>,
-        <http://ceur-ws.org/Vol-1187/#Cl%C3%A9mentiCharnay>,
-        <http://ceur-ws.org/Vol-1187/#NicolasiLachiche> .
-
-<http://ceur-ws.org/Vol-1187/#paper-04> a ns7:Paper ;
-    ns7:partOf <http://ceur-ws.org/Vol-1187/> ;
-    ns5:title "Learning Multiple Description Logics Concepts" ;
-    ns4:endPage 22 ;
-    ns4:numPages 6 ;
-    ns4:startPage 17 ;
-    ns1:author <http://ceur-ws.org/Vol-1187/#AlineiPaes>,
-        <http://ceur-ws.org/Vol-1187/#KateiRevoredo>,
-        <http://ceur-ws.org/Vol-1187/#RaphaeliMelo> .
-
-<http://ceur-ws.org/Vol-1187/#paper-06> a ns7:Paper ;
-    ns7:partOf <http://ceur-ws.org/Vol-1187/> ;
-    ns5:title "Comparison between Explicit Learning and Implicit Modeling of Relational Features in Structured Output Spaces" ;
-    ns4:endPage 39 ;
-    ns4:numPages 11 ;
-    ns4:startPage 29 ;
-    ns1:author <http://ceur-ws.org/Vol-1187/#AjayiNagesh>,
-        <http://ceur-ws.org/Vol-1187/#GaneshiRamakrishnan>,
-        <http://ceur-ws.org/Vol-1187/#NaveeniNair> .
-
-<http://ceur-ws.org/Vol-1187/#paper-09> a ns7:Paper ;
-    ns7:partOf <http://ceur-ws.org/Vol-1187/> ;
-    ns5:title "Predicting Top-k Trends on Twitter using Graphlets and Time Features" ;
-    ns4:endPage 57 ;
-    ns4:numPages 6 ;
-    ns4:startPage 52 ;
-    ns1:author <http://ceur-ws.org/Vol-1187/#FilipiZelezny>,
-        <http://ceur-ws.org/Vol-1187/#GustaviSourek>,
-        <http://ceur-ws.org/Vol-1187/#Ond%C5%99ejiKu%C5%BEelka> .
-
-<http://ceur-ws.org/Vol-1187/#paper-07> a ns7:Paper ;
-    ns7:partOf <http://ceur-ws.org/Vol-1187/> ;
-    ns5:title "Uplift Modeling with ROC: An SRL Case Study" ;
-    ns4:endPage 45 ;
-    ns4:numPages 6 ;
-    ns4:startPage 40 ;
-    ns1:author <http://ceur-ws.org/Vol-1187/#ElizabethiBurnside>,
-        <http://ceur-ws.org/Vol-1187/#FinniKuusisto>,
-        <http://ceur-ws.org/Vol-1187/#HoussamiNassif>,
-        <http://ceur-ws.org/Vol-1187/#JudeiShavlik> .
-
-<http://ceur-ws.org/Vol-1187/#paper-08> a ns7:Paper ;
-    ns7:partOf <http://ceur-ws.org/Vol-1187/> ;
-    ns5:title "Learning the Parameters of Probabilistic Description Logics" ;
-    ns4:endPage 51 ;
-    ns4:numPages 6 ;
-    ns4:startPage 46 ;
-    ns1:author <http://ceur-ws.org/Vol-1187/#ElenaiBellodi>,
-        <http://ceur-ws.org/Vol-1187/#EvelinaiLamma>,
-        <http://ceur-ws.org/Vol-1187/#FabrizioiRiguzzi>,
-        <http://ceur-ws.org/Vol-1187/#RiccardoiZese> .
-
-<http://ceur-ws.org/Vol-1187/> a ns7:Proceedings ;
-    ns7:hasPart <http://ceur-ws.org/Vol-1187/#paper-02>,
-        <http://ceur-ws.org/Vol-1187/#paper-03>,
-        <http://ceur-ws.org/Vol-1187/#paper-04>,
-        <http://ceur-ws.org/Vol-1187/#paper-05>,
-        <http://ceur-ws.org/Vol-1187/#paper-06>,
-        <http://ceur-ws.org/Vol-1187/#paper-07>,
-        <http://ceur-ws.org/Vol-1187/#paper-08>,
-        <http://ceur-ws.org/Vol-1187/#paper-09> ;
-    ns8:issued "2014-07-29T00:00:00+00:00"^^xsd:dateTime ;
-    ns4:presentedAt <http://ceur-ws.org/Vol-1187/#event> ;
-    ns1:editor <http://ceur-ws.org/Vol-1187/#AlineiPaes>,
-        <http://ceur-ws.org/Vol-1187/#GersoniZaverucha>,
-        <http://ceur-ws.org/Vol-1187/#V%C3%ADtoriSantosiCosta> .
 

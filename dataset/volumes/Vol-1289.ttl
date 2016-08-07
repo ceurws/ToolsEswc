@@ -1,127 +1,37 @@
-@prefix ns1: <http://xmlns.com/foaf/0.1/> .
-@prefix ns2: <http://www.w3.org/2002/07/owl#> .
-@prefix ns3: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns4: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns5: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns6: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns7: <http://purl.org/ontology/bibo/#> .
-@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns1: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns2: <http://xmlns.com/foaf/0.1/> .
+@prefix ns3: <http://www.w3.org/2002/07/owl#> .
+@prefix ns4: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns5: <http://purl.org/ontology/bibo/#> .
+@prefix ns6: <http://purl.org/dc/elements/1.1/> .
+@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1289/#ChristianiSeveriniSauer> a ns1:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/ChristianiSeveriniSauer> ;
-    ns1:made <http://ceur-ws.org/Vol-1289/#kese10-09_submission_11> ;
-    ns1:name "Christian Severin Sauer" .
+<http://ceur-ws.org/Vol-1289/> a ns4:Proceedings ;
+    ns7:issued "2014-11-06T00:00:00+00:00"^^xsd:dateTime ;
+    ns5:presentedAt <http://ceur-ws.org/Vol-1289/#event> ;
+    ns1:editor <http://ceur-ws.org/Vol-1289/#GrzegorziJ.iNalepa>,
+        <http://ceur-ws.org/Vol-1289/#JoachimiBaumeister> .
 
-<http://ceur-ws.org/Vol-1289/#ClaudioiMasolo> a ns1:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/ClaudioiMasolo> ;
-    ns1:made <http://ceur-ws.org/Vol-1289/#kese10-06_submission_9> ;
-    ns1:name "Claudio Masolo" .
+<http://ceur-ws.org/Vol-1289/#GrzegorziJ.iNalepa> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/GrzegorziJ.iNalepa> ;
+    ns2:name "Grzegorz J. Nalepa" .
 
-<http://ceur-ws.org/Vol-1289/#DietmariSeipel> a ns1:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/DietmariSeipel> ;
-    ns1:made <http://ceur-ws.org/Vol-1289/#kese10-07_submission_6> ;
-    ns1:name "Dietmar Seipel" .
+<http://ceur-ws.org/Vol-1289/#JoachimiBaumeister> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/JoachimiBaumeister> ;
+    ns2:name "Joachim Baumeister" .
 
-<http://ceur-ws.org/Vol-1289/#EmilioiM.iSanfilippo> a ns1:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/EmilioiM.iSanfilippo> ;
-    ns1:made <http://ceur-ws.org/Vol-1289/#kese10-06_submission_9> ;
-    ns1:name "Emilio M. Sanfilippo" .
-
-<http://ceur-ws.org/Vol-1289/#FrankiFlederer> a ns1:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/FrankiFlederer> ;
-    ns1:made <http://ceur-ws.org/Vol-1289/#kese10-07_submission_6> ;
-    ns1:name "Frank Flederer" .
-
-<http://ceur-ws.org/Vol-1289/#KerstiniBach> a ns1:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/KerstiniBach> ;
-    ns1:made <http://ceur-ws.org/Vol-1289/#kese10-09_submission_11> ;
-    ns1:name "Kerstin Bach" .
-
-<http://ceur-ws.org/Vol-1289/#Klaus-DieteriAlthoff> a ns1:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/Klaus-DieteriAlthoff> ;
-    ns1:made <http://ceur-ws.org/Vol-1289/#kese10-09_submission_11> ;
-    ns1:name "Klaus-Dieter Althoff" .
-
-<http://ceur-ws.org/Vol-1289/#KrzysztofiKluza> a ns1:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/KrzysztofiKluza> ;
-    ns1:made <http://ceur-ws.org/Vol-1289/#kese10-10_submission_7> ;
-    ns1:name "Krzysztof Kluza" .
-
-<http://ceur-ws.org/Vol-1289/#KrzysztofiKutt> a ns1:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/KrzysztofiKutt> ;
-    ns1:made <http://ceur-ws.org/Vol-1289/#kese10-10_submission_7> ;
-    ns1:name "Krzysztof Kutt" .
-
-<http://ceur-ws.org/Vol-1289/#LudwigiOstermayer> a ns1:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/LudwigiOstermayer> ;
-    ns1:made <http://ceur-ws.org/Vol-1289/#kese10-07_submission_6> ;
-    ns1:name "Ludwig Ostermayer" .
-
-<http://ceur-ws.org/Vol-1289/#MartaiWozniak> a ns1:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/MartaiWozniak> ;
-    ns1:made <http://ceur-ws.org/Vol-1289/#kese10-10_submission_7> ;
-    ns1:name "Marta Wozniak" .
-
-<http://ceur-ws.org/Vol-1289/#MartinaiFreiberg> a ns1:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/MartinaiFreiberg> ;
-    ns1:made <http://ceur-ws.org/Vol-1289/#kese10-01_submission_1> ;
-    ns1:name "Martina Freiberg" .
-
-<http://ceur-ws.org/Vol-1289/#MateusziSlazynski> a ns1:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/MateusziSlazynski> ;
-    ns1:made <http://ceur-ws.org/Vol-1289/#kese10-08_submission_4> ;
-    ns1:name "Mateusz Slazynski" .
-
-<http://ceur-ws.org/Vol-1289/#NhaniLe-Thanh> a ns1:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/NhaniLe-Thanh> ;
-    ns1:made <http://ceur-ws.org/Vol-1289/#kese10-04_submission_2> ;
-    ns1:name "Nhan Le-Thanh" .
-
-<http://ceur-ws.org/Vol-1289/#OlgierdiGrodzki> a ns1:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/OlgierdiGrodzki> ;
-    ns1:made <http://ceur-ws.org/Vol-1289/#kese10-05_submission_10> ;
-    ns1:name "Olgierd Grodzki" .
-
-<http://ceur-ws.org/Vol-1289/#ReinhardiHatko> a ns1:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/ReinhardiHatko> ;
-    ns1:made <http://ceur-ws.org/Vol-1289/#kese10-03_submission_8> ;
-    ns1:name "Reinhard Hatko" .
-
-<http://ceur-ws.org/Vol-1289/#SebastianiFurth> a ns1:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/SebastianiFurth> ;
-    ns1:made <http://ceur-ws.org/Vol-1289/#kese10-02_submission_3> ;
-    ns1:name "Sebastian Furth" .
-
-<http://ceur-ws.org/Vol-1289/#StefaniMersmann> a ns1:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/StefaniMersmann> ;
-    ns1:made <http://ceur-ws.org/Vol-1289/#kese10-03_submission_8> ;
-    ns1:name "Stefan Mersmann" .
-
-<http://ceur-ws.org/Vol-1289/#StefanoiBorgo> a ns1:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/StefanoiBorgo> ;
-    ns1:made <http://ceur-ws.org/Vol-1289/#kese10-06_submission_9> ;
-    ns1:name "Stefano Borgo" .
-
-<http://ceur-ws.org/Vol-1289/#Thi-Hoa-HueiNguyen> a ns1:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/Thi-Hoa-HueiNguyen> ;
-    ns1:made <http://ceur-ws.org/Vol-1289/#kese10-04_submission_2> ;
-    ns1:name "Thi-Hoa-Hue Nguyen" .
-
-<http://ceur-ws.org/Vol-1289/#ThomasiRoth-Berghofer> a ns1:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/ThomasiRoth-Berghofer> ;
-    ns1:made <http://ceur-ws.org/Vol-1289/#kese10-09_submission_11> ;
-    ns1:name "Thomas Roth-Berghofer" .
-
-<http://ceur-ws.org/Vol-1289/#event> a ns5:WorkshopEvent ;
-    ns5:hasLocation <http://dbpedia.org/resource/Czech_Republic> ;
-    ns5:hasPart <http://ceur-ws.org/Vol-1289/#part-KESE> ;
-    ns5:isSubEventOf <http://ceur-ws.org/Vol-1289/#conf> ;
-    ns4:beginsAtDatetime "2014-08-19T00:00:00+00:00"^^xsd:dateTime ;
-    ns4:endsAtDatetime "2014-08-19T00:00:00+00:00"^^xsd:dateTime ;
+<http://ceur-ws.org/Vol-1289/#event> a ns4:WorkshopEvent ;
+    ns4:hasLocation <http://dbpedia.org/resource/Czech_Republic> ;
+    ns4:hasPart <http://ceur-ws.org/Vol-1289/#part-KESE> ;
+    ns4:isSubEventOf <http://ceur-ws.org/Vol-1289/#conf> ;
+    ns8:beginsAtDatetime "2014-08-19T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:endsAtDatetime "2014-08-19T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:license "http://creativecommons.org/publicdomain/zero/1.0/" ;
     rdfs:seeAlso <http://ceur-ws.org/Vol-1070/#event>,
         <http://ceur-ws.org/Vol-282/#event>,
         <http://ceur-ws.org/Vol-425/#event>,
@@ -129,138 +39,4 @@
         <http://ceur-ws.org/Vol-636/#event>,
         <http://ceur-ws.org/Vol-805/#event>,
         <http://ceur-ws.org/Vol-949/#event> .
-
-<http://ceur-ws.org/Vol-1289/#FrankiPuppe> a ns1:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/FrankiPuppe> ;
-    ns1:made <http://ceur-ws.org/Vol-1289/#kese10-01_submission_1>,
-        <http://ceur-ws.org/Vol-1289/#kese10-03_submission_8> ;
-    ns1:name "Frank Puppe" .
-
-<http://ceur-ws.org/Vol-1289/#JoachimiBaumeister> a ns1:Person ;
-    ns3:affiliation "" ;
-    ns2:sameAs <http://ceur-ws.org/persons/JoachimiBaumeister> ;
-    ns1:made <http://ceur-ws.org/Vol-1289/#kese10-02_submission_3> ;
-    ns1:name "Joachim Baumeister" .
-
-<http://ceur-ws.org/Vol-1289/#SzymoniBobek> a ns1:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/SzymoniBobek> ;
-    ns1:made <http://ceur-ws.org/Vol-1289/#kese10-05_submission_10>,
-        <http://ceur-ws.org/Vol-1289/#kese10-08_submission_4> ;
-    ns1:name "Szymon Bobek" .
-
-<http://ceur-ws.org/Vol-1289/#GrzegorziJ.iNalepa> a ns1:Person ;
-    ns3:affiliation "" ;
-    ns2:sameAs <http://ceur-ws.org/persons/GrzegorziJ.iNalepa> ;
-    ns1:made <http://ceur-ws.org/Vol-1289/#kese10-05_submission_10>,
-        <http://ceur-ws.org/Vol-1289/#kese10-08_submission_4> ;
-    ns1:name "Grzegorz J. Nalepa" .
-
-<http://ceur-ws.org/Vol-1289/#kese10-01_submission_1> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1289/> ;
-    ns6:title "Pattern-driven Knowledge Systems Engineering" ;
-    ns7:section <http%3A//ceur-ws.org/Vol-1289/%23Session1%3AKnowledgeModelling> ;
-    ns3:author <http://ceur-ws.org/Vol-1289/#FrankiPuppe>,
-        <http://ceur-ws.org/Vol-1289/#MartinaiFreiberg> .
-
-<http://ceur-ws.org/Vol-1289/#kese10-02_submission_3> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1289/> ;
-    ns6:title "An Ontology Debugger for the Semantic Wiki KnowWE (Tool Presentation)" ;
-    ns7:section <http%3A//ceur-ws.org/Vol-1289/%23Session1%3AKnowledgeModelling> ;
-    ns3:author <http://ceur-ws.org/Vol-1289/#JoachimiBaumeister>,
-        <http://ceur-ws.org/Vol-1289/#SebastianiFurth> .
-
-<http://ceur-ws.org/Vol-1289/#kese10-04_submission_2> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1289/> ;
-    ns6:title "Ensuring the Semantic Correctness of Workflow Processes: An Ontological Approach" ;
-    ns7:section <http%3A//ceur-ws.org/Vol-1289/%23Session2%3ABusinessProcessesinKE%26SE> ;
-    ns3:author <http://ceur-ws.org/Vol-1289/#NhaniLe-Thanh>,
-        <http://ceur-ws.org/Vol-1289/#Thi-Hoa-HueiNguyen> .
-
-<http%3A//ceur-ws.org/Vol-1289/%23Session1%3AKnowledgeModelling> a ns5:SessionEvent ;
-    ns5:partOf <http://ceur-ws.org/Vol-1289/> ;
-    ns6:title "Session 1: Knowledge Modelling" .
-
-<http%3A//ceur-ws.org/Vol-1289/%23Session2%3ABusinessProcessesinKE%26SE> a ns5:SessionEvent ;
-    ns5:partOf <http://ceur-ws.org/Vol-1289/> ;
-    ns6:title "Session 2: Business Processes in KE&SE" .
-
-<http://ceur-ws.org/Vol-1289/#kese10-03_submission_8> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1289/> ;
-    ns6:title "Behaviour-Driven Development for Computer-Interpretable Clinical Guidelines" ;
-    ns7:section <http%3A//ceur-ws.org/Vol-1289/%23Session1%3AKnowledgeModelling> ;
-    ns3:author <http://ceur-ws.org/Vol-1289/#FrankiPuppe>,
-        <http://ceur-ws.org/Vol-1289/#ReinhardiHatko>,
-        <http://ceur-ws.org/Vol-1289/#StefaniMersmann> .
-
-<http://ceur-ws.org/Vol-1289/#kese10-05_submission_10> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1289/> ;
-    ns6:title "Integration of Activity Modeller with Bayesian Network Based Recommender for Business Processes" ;
-    ns7:section <http%3A//ceur-ws.org/Vol-1289/%23Session2%3ABusinessProcessesinKE%26SE> ;
-    ns3:author <http://ceur-ws.org/Vol-1289/#GrzegorziJ.iNalepa>,
-        <http://ceur-ws.org/Vol-1289/#OlgierdiGrodzki>,
-        <http://ceur-ws.org/Vol-1289/#SzymoniBobek> .
-
-<http://ceur-ws.org/Vol-1289/#kese10-06_submission_9> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1289/> ;
-    ns6:title "Towards an Ontological Analysis of BPMN" ;
-    ns7:section <http%3A//ceur-ws.org/Vol-1289/%23Session2%3ABusinessProcessesinKE%26SE> ;
-    ns3:author <http://ceur-ws.org/Vol-1289/#ClaudioiMasolo>,
-        <http://ceur-ws.org/Vol-1289/#EmilioiM.iSanfilippo>,
-        <http://ceur-ws.org/Vol-1289/#StefanoiBorgo> .
-
-<http://ceur-ws.org/Vol-1289/#kese10-07_submission_6> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1289/> ;
-    ns6:title "CAPJA - A Connector Architecture for Prolog and Java" ;
-    ns7:section <http%3A//ceur-ws.org/Vol-1289/%23Session3%3ASystemsandTools> ;
-    ns3:author <http://ceur-ws.org/Vol-1289/#DietmariSeipel>,
-        <http://ceur-ws.org/Vol-1289/#FrankiFlederer>,
-        <http://ceur-ws.org/Vol-1289/#LudwigiOstermayer> .
-
-<http://ceur-ws.org/Vol-1289/#kese10-08_submission_4> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1289/> ;
-    ns6:title "Migration of Rule Inference Engine to Mobile Platform. Challenges and Case Study" ;
-    ns7:section <http%3A//ceur-ws.org/Vol-1289/%23Session3%3ASystemsandTools> ;
-    ns3:author <http://ceur-ws.org/Vol-1289/#GrzegorziJ.iNalepa>,
-        <http://ceur-ws.org/Vol-1289/#MateusziSlazynski>,
-        <http://ceur-ws.org/Vol-1289/#SzymoniBobek> .
-
-<http://ceur-ws.org/Vol-1289/#kese10-10_submission_7> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1289/> ;
-    ns6:title "SBVRwiki (Tool Presentation)" ;
-    ns7:section <http%3A//ceur-ws.org/Vol-1289/%23Session3%3ASystemsandTools> ;
-    ns3:author <http://ceur-ws.org/Vol-1289/#KrzysztofiKluza>,
-        <http://ceur-ws.org/Vol-1289/#KrzysztofiKutt>,
-        <http://ceur-ws.org/Vol-1289/#MartaiWozniak> .
-
-<http%3A//ceur-ws.org/Vol-1289/%23Session3%3ASystemsandTools> a ns5:SessionEvent ;
-    ns5:partOf <http://ceur-ws.org/Vol-1289/> ;
-    ns6:title "Session 3: Systems and Tools" .
-
-<http://ceur-ws.org/Vol-1289/#kese10-09_submission_11> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1289/> ;
-    ns6:title "Knowledge Modeling with the Open Source Tool myCBR" ;
-    ns7:section <http%3A//ceur-ws.org/Vol-1289/%23Session3%3ASystemsandTools> ;
-    ns3:author <http://ceur-ws.org/Vol-1289/#ChristianiSeveriniSauer>,
-        <http://ceur-ws.org/Vol-1289/#KerstiniBach>,
-        <http://ceur-ws.org/Vol-1289/#Klaus-DieteriAlthoff>,
-        <http://ceur-ws.org/Vol-1289/#ThomasiRoth-Berghofer> .
-
-<http://ceur-ws.org/Vol-1289/> a ns5:Proceedings ;
-    ns5:hasPart <http://ceur-ws.org/Vol-1289/#kese10-01_submission_1>,
-        <http://ceur-ws.org/Vol-1289/#kese10-02_submission_3>,
-        <http://ceur-ws.org/Vol-1289/#kese10-03_submission_8>,
-        <http://ceur-ws.org/Vol-1289/#kese10-04_submission_2>,
-        <http://ceur-ws.org/Vol-1289/#kese10-05_submission_10>,
-        <http://ceur-ws.org/Vol-1289/#kese10-06_submission_9>,
-        <http://ceur-ws.org/Vol-1289/#kese10-07_submission_6>,
-        <http://ceur-ws.org/Vol-1289/#kese10-08_submission_4>,
-        <http://ceur-ws.org/Vol-1289/#kese10-09_submission_11>,
-        <http://ceur-ws.org/Vol-1289/#kese10-10_submission_7> ;
-    ns5:hasSession <http%3A//ceur-ws.org/Vol-1289/%23Session1%3AKnowledgeModelling>,
-        <http%3A//ceur-ws.org/Vol-1289/%23Session2%3ABusinessProcessesinKE%26SE>,
-        <http%3A//ceur-ws.org/Vol-1289/%23Session3%3ASystemsandTools> ;
-    ns8:issued "2014-11-06T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:presentedAt <http://ceur-ws.org/Vol-1289/#event> ;
-    ns3:editor <http://ceur-ws.org/Vol-1289/#GrzegorziJ.iNalepa>,
-        <http://ceur-ws.org/Vol-1289/#JoachimiBaumeister> .
 

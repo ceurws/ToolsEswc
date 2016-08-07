@@ -1,191 +1,35 @@
-@prefix ns1: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns2: <http://xmlns.com/foaf/0.1/> .
-@prefix ns3: <http://purl.org/ontology/bibo/#> .
-@prefix ns4: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns5: <http://www.w3.org/2002/07/owl#> .
-@prefix ns6: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns1: <http://purl.org/dc/elements/1.1/> .
+@prefix ns2: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns3: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns4: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns5: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns6: <http://purl.org/ontology/bibo/#> .
+@prefix ns7: <http://www.w3.org/2002/07/owl#> .
+@prefix ns8: <http://xmlns.com/foaf/0.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1065/#AlessandraiMelonio> a ns2:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/AlessandraiMelonio> ;
-    ns2:made <http://ceur-ws.org/Vol-1065/#paper3> ;
-    ns2:name "Alessandra Melonio" .
-
-<http://ceur-ws.org/Vol-1065/#AliakseiiMiniukovich> a ns2:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/AliakseiiMiniukovich> ;
-    ns2:made <http://ceur-ws.org/Vol-1065/#paper10> ;
-    ns2:name "Aliaksei Miniukovich" .
-
-<http://ceur-ws.org/Vol-1065/#AmjadiW.iHawash> a ns2:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/AmjadiW.iHawash> ;
-    ns2:made <http://ceur-ws.org/Vol-1065/#paper6> ;
-    ns2:name "Amjad W. Hawash" .
-
-<http://ceur-ws.org/Vol-1065/#BarbaraiMellini> a ns2:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/BarbaraiMellini> ;
-    ns2:made <http://ceur-ws.org/Vol-1065/#paper9> ;
-    ns2:name "Barbara Mellini" .
-
-<http://ceur-ws.org/Vol-1065/#FabioiMorreale> a ns2:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/FabioiMorreale> ;
-    ns2:made <http://ceur-ws.org/Vol-1065/#paper2> ;
-    ns2:name "Fabio Morreale" .
-
-<http://ceur-ws.org/Vol-1065/#GianlucaiSchiavo> a ns2:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/GianlucaiSchiavo> ;
-    ns2:made <http://ceur-ws.org/Vol-1065/#paper5> ;
-    ns2:name "Gianluca Schiavo" .
-
-<http://ceur-ws.org/Vol-1065/#GiuseppeiDesolda> a ns2:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/GiuseppeiDesolda> ;
-    ns2:made <http://ceur-ws.org/Vol-1065/#paper8> ;
-    ns2:name "Giuseppe Desolda" .
-
-<http://ceur-ws.org/Vol-1065/#JohniM.iBlythe> a ns2:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/JohniM.iBlythe> ;
-    ns2:made <http://ceur-ws.org/Vol-1065/#paper11> ;
-    ns2:name "John M. Blythe" .
-
-<http://ceur-ws.org/Vol-1065/#MaristellaiMatera> a ns2:Person ;
-    ns6:affiliation "" ;
-    ns5:sameAs <http://ceur-ws.org/persons/MaristellaiMatera> ;
-    ns2:name "Maristella Matera" .
-
-<http://ceur-ws.org/Vol-1065/#MatteoiPicozzi> a ns2:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/MatteoiPicozzi> ;
-    ns2:made <http://ceur-ws.org/Vol-1065/#paper7> ;
-    ns2:name "Matteo Picozzi" .
-
-<http://ceur-ws.org/Vol-1065/#MatteoiValoriani> a ns2:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/MatteoiValoriani> ;
-    ns2:made <http://ceur-ws.org/Vol-1065/#paper4> ;
-    ns2:name "Matteo Valoriani" .
-
-<http://ceur-ws.org/Vol-1065/#MonicaiBordegoni> a ns2:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/MonicaiBordegoni> ;
-    ns2:made <http://ceur-ws.org/Vol-1065/#paper1> ;
-    ns2:name "Monica Bordegoni" .
-
-<http://ceur-ws.org/Vol-1065/#PaoloiBottoni> a ns2:Person ;
-    ns6:affiliation "" ;
-    ns5:sameAs <http://ceur-ws.org/persons/PaoloiBottoni> ;
-    ns2:name "Paolo Bottoni" .
-
-<http://ceur-ws.org/Vol-1065/#event> a ns1:WorkshopEvent ;
-    ns1:hasLocation <http://dbpedia.org/resource/Italy> ;
-    ns1:hasPart <http://ceur-ws.org/Vol-1065/#part-CHItaly> ;
-    ns1:isSubEventOf <http://ceur-ws.org/Vol-1065/#conf> ;
-    ns7:beginsAtDatetime "2013-09-16T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:endsAtDatetime "2013-09-16T00:00:00+00:00"^^xsd:dateTime ;
-    ns4:license <http://choosealicense.com/licenses/no-license/> .
-
-<http://ceur-ws.org/Vol-1065/#paper1> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-1065/> ;
-    ns4:title "User-Product Experience and Emotions" ;
-    ns3:endPage 4 ;
-    ns3:numPages 4 ;
-    ns3:startPage 1 ;
-    ns6:author <http://ceur-ws.org/Vol-1065/#MonicaiBordegoni> .
-
-<http://ceur-ws.org/Vol-1065/#paper10> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-1065/> ;
-    ns4:title "Development of Attractiveness Walkthrough" ;
-    ns3:endPage 91 ;
-    ns3:numPages 8 ;
-    ns3:startPage 84 ;
-    ns6:author <http://ceur-ws.org/Vol-1065/#AliakseiiMiniukovich> .
-
-<http://ceur-ws.org/Vol-1065/#paper11> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-1065/> ;
-    ns4:title "Cyber Security in the Workplace: Understanding and Promoting Behaviour Change" ;
-    ns3:endPage 101 ;
-    ns3:numPages 10 ;
-    ns3:startPage 92 ;
-    ns6:author <http://ceur-ws.org/Vol-1065/#JohniM.iBlythe> .
-
-<http://ceur-ws.org/Vol-1065/#paper2> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-1065/> ;
-    ns4:title "Opening Musical Creativity to Non-Musicians" ;
-    ns3:endPage 10 ;
-    ns3:numPages 6 ;
-    ns3:startPage 5 ;
-    ns6:author <http://ceur-ws.org/Vol-1065/#FabioiMorreale> .
-
-<http://ceur-ws.org/Vol-1065/#paper3> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-1065/> ;
-    ns4:title "Game-based Co-design of Games for Learning with Children and Teachers: Research Goals and a Study" ;
-    ns3:endPage 22 ;
-    ns3:numPages 12 ;
-    ns3:startPage 11 ;
-    ns6:author <http://ceur-ws.org/Vol-1065/#AlessandraiMelonio> .
-
-<http://ceur-ws.org/Vol-1065/#paper4> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-1065/> ;
-    ns4:title "Technological and Methodological Tools for Personalized Touchless Applications" ;
-    ns3:endPage 32 ;
-    ns3:numPages 10 ;
-    ns3:startPage 23 ;
-    ns6:author <http://ceur-ws.org/Vol-1065/#MatteoiValoriani> .
-
-<http://ceur-ws.org/Vol-1065/#paper5> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-1065/> ;
-    ns4:title "Socially-Aware Interfaces for Supporting Collocated Interaction" ;
-    ns3:endPage 42 ;
-    ns3:numPages 10 ;
-    ns3:startPage 33 ;
-    ns6:author <http://ceur-ws.org/Vol-1065/#GianlucaiSchiavo> .
-
-<http://ceur-ws.org/Vol-1065/#paper6> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-1065/> ;
-    ns4:title "Introducing Groups to an Annotation System" ;
-    ns3:endPage 54 ;
-    ns3:numPages 12 ;
-    ns3:startPage 43 ;
-    ns6:author <http://ceur-ws.org/Vol-1065/#AmjadiW.iHawash> .
-
-<http://ceur-ws.org/Vol-1065/#paper7> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-1065/> ;
-    ns4:title "End User Development of Multidevice and Collaborative Mashups" ;
-    ns3:endPage 65 ;
-    ns3:numPages 11 ;
-    ns3:startPage 55 ;
-    ns6:author <http://ceur-ws.org/Vol-1065/#MatteoiPicozzi> .
-
-<http://ceur-ws.org/Vol-1065/#paper8> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-1065/> ;
-    ns4:title "Empowering End Users to Create Interactive Workspaces by Service Composition" ;
-    ns3:endPage 73 ;
-    ns3:numPages 8 ;
-    ns3:startPage 66 ;
-    ns6:author <http://ceur-ws.org/Vol-1065/#GiuseppeiDesolda> .
-
-<http://ceur-ws.org/Vol-1065/#paper9> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-1065/> ;
-    ns4:title "The Materialization of Articulation Work and its Implications on Nursing Practices" ;
-    ns3:endPage 83 ;
-    ns3:numPages 10 ;
-    ns3:startPage 74 ;
-    ns6:author <http://ceur-ws.org/Vol-1065/#BarbaraiMellini> .
-
-<http://ceur-ws.org/Vol-1065/> a ns1:Proceedings ;
-    ns1:hasPart <http://ceur-ws.org/Vol-1065/#paper1>,
-        <http://ceur-ws.org/Vol-1065/#paper10>,
-        <http://ceur-ws.org/Vol-1065/#paper11>,
-        <http://ceur-ws.org/Vol-1065/#paper2>,
-        <http://ceur-ws.org/Vol-1065/#paper3>,
-        <http://ceur-ws.org/Vol-1065/#paper4>,
-        <http://ceur-ws.org/Vol-1065/#paper5>,
-        <http://ceur-ws.org/Vol-1065/#paper6>,
-        <http://ceur-ws.org/Vol-1065/#paper7>,
-        <http://ceur-ws.org/Vol-1065/#paper8>,
-        <http://ceur-ws.org/Vol-1065/#paper9> ;
-    ns8:issued "2013-10-21T00:00:00+00:00"^^xsd:dateTime ;
-    ns3:presentedAt <http://ceur-ws.org/Vol-1065/#event> ;
-    ns6:editor <http://ceur-ws.org/Vol-1065/#MaristellaiMatera>,
+<http://ceur-ws.org/Vol-1065/> a ns2:Proceedings ;
+    ns4:issued "2013-10-21T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:presentedAt <http://ceur-ws.org/Vol-1065/#event> ;
+    ns5:editor <http://ceur-ws.org/Vol-1065/#MaristellaiMatera>,
         <http://ceur-ws.org/Vol-1065/#PaoloiBottoni> .
+
+<http://ceur-ws.org/Vol-1065/#MaristellaiMatera> a ns8:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/MaristellaiMatera> ;
+    ns8:name "Maristella Matera" .
+
+<http://ceur-ws.org/Vol-1065/#PaoloiBottoni> a ns8:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/PaoloiBottoni> ;
+    ns8:name "Paolo Bottoni" .
+
+<http://ceur-ws.org/Vol-1065/#event> a ns2:WorkshopEvent ;
+    ns2:hasLocation <http://dbpedia.org/resource/Italy> ;
+    ns2:hasPart <http://ceur-ws.org/Vol-1065/#part-CHItaly> ;
+    ns2:isSubEventOf <http://ceur-ws.org/Vol-1065/#conf> ;
+    ns3:beginsAtDatetime "2013-09-16T00:00:00+00:00"^^xsd:dateTime ;
+    ns3:endsAtDatetime "2013-09-16T00:00:00+00:00"^^xsd:dateTime ;
+    ns1:license "http://choosealicense.com/licenses/no-license/" .
 

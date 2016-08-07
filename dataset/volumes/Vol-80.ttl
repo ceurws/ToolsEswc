@@ -1,40 +1,3040 @@
-@prefix ns1: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns2: <http://www.w3.org/2002/07/owl#> .
-@prefix ns3: <http://xmlns.com/foaf/0.1/> .
-@prefix ns4: <http://purl.org/ontology/bibo/#> .
-@prefix ns5: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns6: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns7: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns8: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns1: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns2: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns3: <http://www.w3.org/2002/07/owl#> .
+@prefix ns4: <http://xmlns.com/foaf/0.1/> .
+@prefix ns5: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns6: <http://purl.org/ontology/bibo/#> .
+@prefix ns7: <http://purl.org/dc/elements/1.1/> .
+@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns9: <http://purl.org/NET/c4dm/timeline.owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-80/> a ns5:Proceedings ;
-    ns6:issued "2003-09-04T00:00:00+00:00"^^xsd:dateTime ;
-    ns4:presentedAt <http://ceur-ws.org/Vol-80/#event> ;
-    ns8:editor <http://ceur-ws.org/Vol-80/#AlexanderiHorschiundiHans-PeteriMeinzer>,
-        <http://ceur-ws.org/Vol-80/#HerausgegebenivoniThomasiWittenberg> .
+<http://ceur-ws.org/Vol-80/#AlexanderiHorschiundiHans-PeteriMeinzer> a ns4:Person ;
+    ns2:affiliation "" ;
+    ns3:sameAs <http://ceur-ws.org/persons/AlexanderiHorschiundiHans-PeteriMeinzer> ;
+    ns4:name "Alexander Horsch und Hans-Peter Meinzer" .
 
-<http://ceur-ws.org/Vol-80/#AlexanderiHorschiundiHans-PeteriMeinzer> a ns3:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/AlexanderiHorschiundiHans-PeteriMeinzer> ;
-    ns3:name "Alexander Horsch und Hans-Peter Meinzer" .
+<http://ceur-ws.org/Vol-80/#AnnackeriK> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/AnnackeriK> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX46> ;
+    ns4:name "Annacker K" .
 
-<http://ceur-ws.org/Vol-80/#HerausgegebenivoniThomasiWittenberg> a ns3:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/HerausgegebenivoniThomasiWittenberg> ;
-    ns3:name "Herausgegeben von Thomas Wittenberg" .
+<http://ceur-ws.org/Vol-80/#AthelogouiM> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/AthelogouiM> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX42> ;
+    ns4:name "Athelogou M" .
 
-<http://ceur-ws.org/Vol-80/#event> a ns5:WorkshopEvent ;
-    ns5:hasPart <http://ceur-ws.org/Vol-80/#part-ws> ;
-    ns5:isSubEventOf <http://ceur-ws.org/Vol-80/#conf> ;
-    ns1:beginsAtDatetime "2003-03-11T00:00:00+00:00"^^xsd:dateTime ;
-    ns1:endsAtDatetime "2003-03-11T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:license <http://choosealicense.com/licenses/no-license/> ;
+<http://ceur-ws.org/Vol-80/#AueriD> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/AueriD> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX82> ;
+    ns4:name "Auer D" .
+
+<http://ceur-ws.org/Vol-80/#B%C3%B6ttgeriT> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/B%C3%B6ttgeriT> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX65> ;
+    ns4:name "Böttger T" .
+
+<http://ceur-ws.org/Vol-80/#B%C3%BCchleriMW> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/B%C3%BCchleriMW> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX12> ;
+    ns4:name "Büchler MW" .
+
+<http://ceur-ws.org/Vol-80/#B%C3%BClliU> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/B%C3%BClliU> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX77> ;
+    ns4:name "Büll U" .
+
+<http://ceur-ws.org/Vol-80/#BartlingiS> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/BartlingiS> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX52> ;
+    ns4:name "Bartling S" .
+
+<http://ceur-ws.org/Vol-80/#BaueriM> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/BaueriM> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX5> ;
+    ns4:name "Bauer M" .
+
+<http://ceur-ws.org/Vol-80/#BeckeriH> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/BeckeriH> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX52> ;
+    ns4:name "Becker H" .
+
+<http://ceur-ws.org/Vol-80/#BeckeriR> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/BeckeriR> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX55> ;
+    ns4:name "Becker R" .
+
+<http://ceur-ws.org/Vol-80/#BehrensiS> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/BehrensiS> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX83> ;
+    ns4:name "Behrens S" .
+
+<http://ceur-ws.org/Vol-80/#BeicheliR> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/BeicheliR> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX51> ;
+    ns4:name "Beichel R" .
+
+<http://ceur-ws.org/Vol-80/#BelleriM> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/BelleriM> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX40> ;
+    ns4:name "Beller M" .
+
+<http://ceur-ws.org/Vol-80/#BenteiKA> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/BenteiKA> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX8> ;
+    ns4:name "Bente KA" .
+
+<http://ceur-ws.org/Vol-80/#BenziM> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/BenziM> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX3> ;
+    ns4:name "Benz M" .
+
+<http://ceur-ws.org/Vol-80/#BernardingiJ> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/BernardingiJ> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX24> ;
+    ns4:name "Bernarding J" .
+
+<http://ceur-ws.org/Vol-80/#BiersackiHJ> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/BiersackiHJ> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX88> ;
+    ns4:name "Biersack HJ" .
+
+<http://ceur-ws.org/Vol-80/#BingmanniD> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/BingmanniD> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX46> ;
+    ns4:name "Bingmann D" .
+
+<http://ceur-ws.org/Vol-80/#BluemkeiDA> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/BluemkeiDA> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX19> ;
+    ns4:name "Bluemke DA" .
+
+<http://ceur-ws.org/Vol-80/#BootziF> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/BootziF> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX67> ;
+    ns4:name "Bootz F" .
+
+<http://ceur-ws.org/Vol-80/#BornikiA> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/BornikiA> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX51> ;
+    ns4:name "Bornik A" .
+
+<http://ceur-ws.org/Vol-80/#BoscheniF> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/BoscheniF> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX88> ;
+    ns4:name "Boschen F" .
+
+<http://ceur-ws.org/Vol-80/#BrandtiAS> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/BrandtiAS> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX84> ;
+    ns4:name "Brandt AS" .
+
+<http://ceur-ws.org/Vol-80/#BraumanniUD> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/BraumanniUD> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX47> ;
+    ns4:name "Braumann UD" .
+
+<http://ceur-ws.org/Vol-80/#BrauniJ> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/BrauniJ> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX24> ;
+    ns4:name "Braun J" .
+
+<http://ceur-ws.org/Vol-80/#BrookiBS> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/BrookiBS> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX68> ;
+    ns4:name "Brook BS" .
+
+<http://ceur-ws.org/Vol-80/#BruijnsiJ> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/BruijnsiJ> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX11> ;
+    ns4:name "Bruijns J" .
+
+<http://ceur-ws.org/Vol-80/#BurmeisteriH> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/BurmeisteriH> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX52> ;
+    ns4:name "Burmeister H" .
+
+<http://ceur-ws.org/Vol-80/#BusseiH> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/BusseiH> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX67> ;
+    ns4:name "Busse H" .
+
+<http://ceur-ws.org/Vol-80/#C%C3%A1rdenasiCE> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/C%C3%A1rdenasiCE> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX16> ;
+    ns4:name "Cárdenas CE" .
+
+<http://ceur-ws.org/Vol-80/#CelleriA> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/CelleriA> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX36> ;
+    ns4:name "Celler A" .
+
+<http://ceur-ws.org/Vol-80/#Chr%C3%A1stekiR> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/Chr%C3%A1stekiR> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX69> ;
+    ns4:name "Chrástek R" .
+
+<http://ceur-ws.org/Vol-80/#CorneliusiT> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/CorneliusiT> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX73> ;
+    ns4:name "Cornelius T" .
+
+<http://ceur-ws.org/Vol-80/#D%C3%A4uberiS> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/D%C3%A4uberiS> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX56> ;
+    ns4:name "Däuber S" .
+
+<http://ceur-ws.org/Vol-80/#DeckeriP> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/DeckeriP> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX27> ;
+    ns4:name "Decker P" .
+
+<http://ceur-ws.org/Vol-80/#Della-MontaiC> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/Della-MontaiC> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX75> ;
+    ns4:name "Della-Monta C" .
+
+<http://ceur-ws.org/Vol-80/#DickhausiH> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/DickhausiH> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX17> ;
+    ns4:name "Dickhaus H" .
+
+<http://ceur-ws.org/Vol-80/#DietmayeriK> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/DietmayeriK> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX35> ;
+    ns4:name "Dietmayer K" .
+
+<http://ceur-ws.org/Vol-80/#DonathiK> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/DonathiK> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX69> ;
+    ns4:name "Donath K" .
+
+<http://ceur-ws.org/Vol-80/#Dreschler-FischeriL> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/Dreschler-FischeriL> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX86> ;
+    ns4:name "Dreschler-Fischer L" .
+
+<http://ceur-ws.org/Vol-80/#DrexliJ> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/DrexliJ> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX21> ;
+    ns4:name "Drexl J" .
+
+<http://ceur-ws.org/Vol-80/#DroskeiM> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/DroskeiM> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX7> ;
+    ns4:name "Droske M" .
+
+<http://ceur-ws.org/Vol-80/#EidiA> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/EidiA> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX70> ;
+    ns4:name "Eid A" .
+
+<http://ceur-ws.org/Vol-80/#EinenkeliJ> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/EinenkeliJ> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX47> ;
+    ns4:name "Einenkel J" .
+
+<http://ceur-ws.org/Vol-80/#El-MessiryiH> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/El-MessiryiH> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX37> ;
+    ns4:name "El-Messiry H" .
+
+<http://ceur-ws.org/Vol-80/#ElahiiSV> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/ElahiiSV> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX89> ;
+    ns4:name "Elahi SV" .
+
+<http://ceur-ws.org/Vol-80/#F%C3%BChriH> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/F%C3%BChriH> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX20> ;
+    ns4:name "Führ H" .
+
+<http://ceur-ws.org/Vol-80/#Fr%C3%BChlingiC> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/Fr%C3%BChlingiC> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX66> ;
+    ns4:name "Frühling C" .
+
+<http://ceur-ws.org/Vol-80/#G%C3%B6beliG> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/G%C3%B6beliG> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX89> ;
+    ns4:name "Göbel G" .
+
+<http://ceur-ws.org/Vol-80/#G%C3%BCntheriRW> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/G%C3%BCntheriRW> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX84> ;
+    ns4:name "Günther RW" .
+
+<http://ceur-ws.org/Vol-80/#G%C3%BCrviti%C3%96> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/G%C3%BCrviti%C3%96> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX61> ;
+    ns4:name "Gürvit Ö" .
+
+<http://ceur-ws.org/Vol-80/#GermeriCT> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/GermeriCT> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX87> ;
+    ns4:name "Germer CT" .
+
+<http://ceur-ws.org/Vol-80/#GlasbergeriA> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/GlasbergeriA> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX55> ;
+    ns4:name "Glasberger A" .
+
+<http://ceur-ws.org/Vol-80/#GongiRH> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/GongiRH> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX14> ;
+    ns4:name "Gong RH" .
+
+<http://ceur-ws.org/Vol-80/#GoschiC> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/GoschiC> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX22> ;
+    ns4:name "Gosch C" .
+
+<http://ceur-ws.org/Vol-80/#GotschuliiG> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/GotschuliiG> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX51> ;
+    ns4:name "Gotschuli G" .
+
+<http://ceur-ws.org/Vol-80/#GottwaldiS> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/GottwaldiS> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX55> ;
+    ns4:name "Gottwald S" .
+
+<http://ceur-ws.org/Vol-80/#GraicheniU> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/GraicheniU> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX58> ;
+    ns4:name "Graichen U" .
+
+<http://ceur-ws.org/Vol-80/#GrebeiO> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/GrebeiO> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX37> ;
+    ns4:name "Grebe O" .
+
+<http://ceur-ws.org/Vol-80/#GrenacheriL> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/GrenacheriL> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX12> ;
+    ns4:name "Grenacher L" .
+
+<http://ceur-ws.org/Vol-80/#Gro%C3%9FkopfiS> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/Gro%C3%9FkopfiS> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX75> ;
+    ns4:name "Großkopf S" .
+
+<http://ceur-ws.org/Vol-80/#H%C3%A4usleriG> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/H%C3%A4usleriG> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX3> ;
+    ns4:name "Häusler G" .
+
+<http://ceur-ws.org/Vol-80/#HansmanniW> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/HansmanniW> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX86> ;
+    ns4:name "Hansmann W" .
+
+<http://ceur-ws.org/Vol-80/#HarmsiW> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/HarmsiW> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX56> ;
+    ns4:name "Harms W" .
+
+<http://ceur-ws.org/Vol-80/#HastenteufeliM> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/HastenteufeliM> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX25> ;
+    ns4:name "Hastenteufel M" .
+
+<http://ceur-ws.org/Vol-80/#HeinleiniP> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/HeinleiniP> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX21> ;
+    ns4:name "Heinlein P" .
+
+<http://ceur-ws.org/Vol-80/#HennemuthiA> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/HennemuthiA> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX86> ;
+    ns4:name "Hennemuth A" .
+
+<http://ceur-ws.org/Vol-80/#HenniS> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/HenniS> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX64> ;
+    ns4:name "Henn S" .
+
+<http://ceur-ws.org/Vol-80/#HerausgegebenivoniThomasiWittenberg> a ns4:Person ;
+    ns2:affiliation "Peter Hastreiter, Ulrich Hoppe, Heinz Handels" ;
+    ns3:sameAs <http://ceur-ws.org/persons/HerausgegebenivoniThomasiWittenberg> ;
+    ns4:name "Herausgegeben von Thomas Wittenberg" .
+
+<http://ceur-ws.org/Vol-80/#HerfarthiKK> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/HerfarthiKK> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX65> ;
+    ns4:name "Herfarth KK" .
+
+<http://ceur-ws.org/Vol-80/#HeusseliCP> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/HeusseliCP> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX68> ;
+    ns4:name "Heussel CP" .
+
+<http://ceur-ws.org/Vol-80/#HoffmanniJ> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/HoffmanniJ> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX59> ;
+    ns4:name "Hoffmann J" .
+
+<http://ceur-ws.org/Vol-80/#HollerbachiS> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/HollerbachiS> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX73> ;
+    ns4:name "Hollerbach S" .
+
+<http://ceur-ws.org/Vol-80/#Holzm%C3%BCller-LaueiS> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/Holzm%C3%BCller-LaueiS> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX33> ;
+    ns4:name "Holzmüller-Laue S" .
+
+<http://ceur-ws.org/Vol-80/#HooleiP> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/HooleiP> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX38> ;
+    ns4:name "Hoole P" .
+
+<http://ceur-ws.org/Vol-80/#HoppeiH> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/HoppeiH> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX56> ;
+    ns4:name "Hoppe H" .
+
+<http://ceur-ws.org/Vol-80/#HorneggeriJ> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/HorneggeriJ> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX9> ;
+    ns4:name "Hornegger J" .
+
+<http://ceur-ws.org/Vol-80/#HorschiA> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/HorschiA> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX74> ;
+    ns4:name "Horsch A" .
+
+<http://ceur-ws.org/Vol-80/#HothorniT> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/HothorniT> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX69> ;
+    ns4:name "Hothorn T" .
+
+<http://ceur-ws.org/Vol-80/#IssingiP> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/IssingiP> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX52> ;
+    ns4:name "Issing P" .
+
+<http://ceur-ws.org/Vol-80/#JacobsiMA> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/JacobsiMA> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX19> ;
+    ns4:name "Jacobs MA" .
+
+<http://ceur-ws.org/Vol-80/#JoeiA> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/JoeiA> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX88> ;
+    ns4:name "Joe A" .
+
+<http://ceur-ws.org/Vol-80/#JosteniM> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/JosteniM> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX44> ;
+    ns4:name "Josten M" .
+
+<http://ceur-ws.org/Vol-80/#JukiciM> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/JukiciM> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX82> ;
+    ns4:name "Jukic M" .
+
+<http://ceur-ws.org/Vol-80/#K%C3%B6nigiS> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/K%C3%B6nigiS> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX32> ;
+    ns4:name "König S" .
+
+<http://ceur-ws.org/Vol-80/#K%C3%BCchereriH> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/K%C3%BCchereriH> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX17> ;
+    ns4:name "Kücherer H" .
+
+<http://ceur-ws.org/Vol-80/#K%C3%BChniKU> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/K%C3%BChniKU> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX88> ;
+    ns4:name "Kühn KU" .
+
+<http://ceur-ws.org/Vol-80/#KahniT> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/KahniT> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX67> ;
+    ns4:name "Kahn T" .
+
+<http://ceur-ws.org/Vol-80/#KaiseriHJ> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/KaiseriHJ> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX77> ;
+    ns4:name "Kaiser HJ" .
+
+<http://ceur-ws.org/Vol-80/#KaiseriWA> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/KaiseriWA> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX18> ;
+    ns4:name "Kaiser WA" .
+
+<http://ceur-ws.org/Vol-80/#KauczoriHU> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/KauczoriHU> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX68> ;
+    ns4:name "Kauczor HU" .
+
+<http://ceur-ws.org/Vol-80/#KausiM> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/KausiM> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX35> ;
+    ns4:name "Kaus M" .
+
+<http://ceur-ws.org/Vol-80/#KestleriHA> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/KestleriHA> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX37> ;
+    ns4:name "Kestler HA" .
+
+<http://ceur-ws.org/Vol-80/#KeszleriT> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/KeszleriT> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX55> ;
+    ns4:name "Keszler T" .
+
+<http://ceur-ws.org/Vol-80/#KlotziE> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/KlotziE> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX86> ;
+    ns4:name "Klotz E" .
+
+<http://ceur-ws.org/Vol-80/#KnedlitschekiG> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/KnedlitschekiG> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX40> ;
+    ns4:name "Knedlitschek G" .
+
+<http://ceur-ws.org/Vol-80/#KrempieniR> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/KrempieniR> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX56> ;
+    ns4:name "Krempien R" .
+
+<http://ceur-ws.org/Vol-80/#KreuschiJ> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/KreuschiJ> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX45> ;
+    ns4:name "Kreusch J" .
+
+<http://ceur-ws.org/Vol-80/#KuskaiJP> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/KuskaiJP> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX47> ;
+    ns4:name "Kuska JP" .
+
+<http://ceur-ws.org/Vol-80/#L%C3%A4mmeriR> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/L%C3%A4mmeriR> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX69> ;
+    ns4:name "Lämmer R" .
+
+<http://ceur-ws.org/Vol-80/#LangeiO> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/LangeiO> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX82> ;
+    ns4:name "Lange O" .
+
+<http://ceur-ws.org/Vol-80/#LauseniB> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/LauseniB> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX69> ;
+    ns4:name "Lausen B" .
+
+<http://ceur-ws.org/Vol-80/#LeberliF> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/LeberliF> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX51> ;
+    ns4:name "Leberl F" .
+
+<http://ceur-ws.org/Vol-80/#LehmanniK> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/LehmanniK> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX87> ;
+    ns4:name "Lehmann K" .
+
+<http://ceur-ws.org/Vol-80/#LeidereriR> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/LeidereriR> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX42> ;
+    ns4:name "Leiderer R" .
+
+<http://ceur-ws.org/Vol-80/#LeinsingeriGL> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/LeinsingeriGL> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX38> ;
+    ns4:name "Leinsinger GL" .
+
+<http://ceur-ws.org/Vol-80/#LeischneriC> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/LeischneriC> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX45> ;
+    ns4:name "Leischner C" .
+
+<http://ceur-ws.org/Vol-80/#LeisteniM> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/LeisteniM> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX79> ;
+    ns4:name "Leisten M" .
+
+<http://ceur-ws.org/Vol-80/#LenarziT> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/LenarziT> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX52> ;
+    ns4:name "Lenarz T" .
+
+<http://ceur-ws.org/Vol-80/#LeyiS> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/LeyiS> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX68> ;
+    ns4:name "Ley S" .
+
+<http://ceur-ws.org/Vol-80/#LierschiD> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/LierschiD> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX34> ;
+    ns4:name "Liersch D" .
+
+<http://ceur-ws.org/Vol-80/#Linnenbr%C3%BCggeriNI> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/Linnenbr%C3%BCggeriNI> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX76> ;
+    ns4:name "Linnenbrügger NI" .
+
+<http://ceur-ws.org/Vol-80/#LipinskiiHG> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/LipinskiiHG> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX46> ;
+    ns4:name "Lipinski HG" .
+
+<http://ceur-ws.org/Vol-80/#LudwigiR> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/LudwigiR> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX12> ;
+    ns4:name "Ludwig R" .
+
+<http://ceur-ws.org/Vol-80/#M%C3%BChldorferiS> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/M%C3%BChldorferiS> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX39> ;
+    ns4:name "Mühldorfer S" .
+
+<http://ceur-ws.org/Vol-80/#MaasiS> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/MaasiS> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX73> ;
+    ns4:name "Maas S" .
+
+<http://ceur-ws.org/Vol-80/#MaieriT> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/MaieriT> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX3> ;
+    ns4:name "Maier T" .
+
+<http://ceur-ws.org/Vol-80/#MaiiJK> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/MaiiJK> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX64> ;
+    ns4:name "Mai JK" .
+
+<http://ceur-ws.org/Vol-80/#MalinaiT> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/MalinaiT> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX62> ;
+    ns4:name "Malina T" .
+
+<http://ceur-ws.org/Vol-80/#MalschiU> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/MalschiU> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX17> ;
+    ns4:name "Malsch U" .
+
+<http://ceur-ws.org/Vol-80/#MardiniCY> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/MardiniCY> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX69> ;
+    ns4:name "Mardin CY" .
+
+<http://ceur-ws.org/Vol-80/#MasseniR> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/MasseniR> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX44> ;
+    ns4:name "Massen R" .
+
+<http://ceur-ws.org/Vol-80/#MatthiesiH> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/MatthiesiH> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX52> ;
+    ns4:name "Matthies H" .
+
+<http://ceur-ws.org/Vol-80/#MayeriD> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/MayeriD> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX68> ;
+    ns4:name "Mayer D" .
+
+<http://ceur-ws.org/Vol-80/#MayingeriB> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/MayingeriB> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX39> ;
+    ns4:name "Mayinger B" .
+
+<http://ceur-ws.org/Vol-80/#MeieriSA> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/MeieriSA> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX83> ;
+    ns4:name "Meier SA" .
+
+<http://ceur-ws.org/Vol-80/#MelzeriK> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/MelzeriK> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX46> ;
+    ns4:name "Melzer K" .
+
+<http://ceur-ws.org/Vol-80/#MichelsoniG> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/MichelsoniG> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX69> ;
+    ns4:name "Michelson G" .
+
+<http://ceur-ws.org/Vol-80/#MildenbergeriP> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/MildenbergeriP> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX83> ;
+    ns4:name "Mildenberger P" .
+
+<http://ceur-ws.org/Vol-80/#MocheiM> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/MocheiM> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX67> ;
+    ns4:name "Moche M" .
+
+<http://ceur-ws.org/Vol-80/#ModersitzkiiJ> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/ModersitzkiiJ> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX1> ;
+    ns4:name "Modersitzki J" .
+
+<http://ceur-ws.org/Vol-80/#MorgensterniU> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/MorgensterniU> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX63> ;
+    ns4:name "Morgenstern U" .
+
+<http://ceur-ws.org/Vol-80/#Mottl-LinkiS> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/Mottl-LinkiS> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX25> ;
+    ns4:name "Mottl-Link S" .
+
+<http://ceur-ws.org/Vol-80/#MuelleriM> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/MuelleriM> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX57> ;
+    ns4:name "Mueller M" .
+
+<http://ceur-ws.org/Vol-80/#NeukamiFW> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/NeukamiFW> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX3> ;
+    ns4:name "Neukam FW" .
+
+<http://ceur-ws.org/Vol-80/#NeumanniH> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/NeumanniH> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX37> ;
+    ns4:name "Neumann H" .
+
+<http://ceur-ws.org/Vol-80/#NkenkeiE> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/NkenkeiE> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX3> ;
+    ns4:name "Nkenke E" .
+
+<http://ceur-ws.org/Vol-80/#OrmaniJ> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/OrmaniJ> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX61> ;
+    ns4:name "Orman J" .
+
+<http://ceur-ws.org/Vol-80/#OverhoffiHM> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/OverhoffiHM> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX73> ;
+    ns4:name "Overhoff HM" .
+
+<http://ceur-ws.org/Vol-80/#P%C3%A1liI> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/P%C3%A1liI> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX15> ;
+    ns4:name "Pál I" .
+
+<http://ceur-ws.org/Vol-80/#PaariG> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/PaariG> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX43> ;
+    ns4:name "Paar G" .
+
+<http://ceur-ws.org/Vol-80/#PekariV> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/PekariV> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX35> ;
+    ns4:name "Pekar V" .
+
+<http://ceur-ws.org/Vol-80/#PeldschussiK> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/PeldschussiK> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX52> ;
+    ns4:name "Peldschuss K" .
+
+<http://ceur-ws.org/Vol-80/#PietrzykiU> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/PietrzykiU> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX8> ;
+    ns4:name "Pietrzyk U" .
+
+<http://ceur-ws.org/Vol-80/#Pl%C3%B6tziW> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/Pl%C3%B6tziW> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX62> ;
+    ns4:name "Plötz W" .
+
+<http://ceur-ws.org/Vol-80/#PohleiR> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/PohleiR> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX36> ;
+    ns4:name "Pohle R" .
+
+<http://ceur-ws.org/Vol-80/#PoliwodaiC> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/PoliwodaiC> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX22> ;
+    ns4:name "Poliwoda C" .
+
+<http://ceur-ws.org/Vol-80/#PrinziM> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/PrinziM> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX74> ;
+    ns4:name "Prinz M" .
+
+<http://ceur-ws.org/Vol-80/#R%C3%B6deliR> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/R%C3%B6deliR> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX88> ;
+    ns4:name "Rödel R" .
+
+<http://ceur-ws.org/Vol-80/#RauiA> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/RauiA> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX66> ;
+    ns4:name "Rau A" .
+
+<http://ceur-ws.org/Vol-80/#ReichenbachiJR> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/ReichenbachiJR> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX18> ;
+    ns4:name "Reichenbach JR" .
+
+<http://ceur-ws.org/Vol-80/#ReichmanniK> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/ReichmanniK> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX88> ;
+    ns4:name "Reichmann K" .
+
+<http://ceur-ws.org/Vol-80/#ReinaueriF> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/ReinaueriF> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX59> ;
+    ns4:name "Reinauer F" .
+
+<http://ceur-ws.org/Vol-80/#ReitingeriB> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/ReitingeriB> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX51> ;
+    ns4:name "Reitinger B" .
+
+<http://ceur-ws.org/Vol-80/#Rezk-SalamaiC> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/Rezk-SalamaiC> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX5> ;
+    ns4:name "Rezk-Salama C" .
+
+<http://ceur-ws.org/Vol-80/#RichteriD> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/RichteriD> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX55> ;
+    ns4:name "Richter D" .
+
+<http://ceur-ws.org/Vol-80/#RichteriGM> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/RichteriGM> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX12> ;
+    ns4:name "Richter GM" .
+
+<http://ceur-ws.org/Vol-80/#RitziJP> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/RitziJP> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX87> ;
+    ns4:name "Ritz JP" .
+
+<http://ceur-ws.org/Vol-80/#RodtiT> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/RodtiT> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX52> ;
+    ns4:name "Rodt T" .
+
+<http://ceur-ws.org/Vol-80/#RogganiA> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/RogganiA> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX87> ;
+    ns4:name "Roggan A" .
+
+<http://ceur-ws.org/Vol-80/#RosanowskiiF> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/RosanowskiiF> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX49> ;
+    ns4:name "Rosanowski F" .
+
+<http://ceur-ws.org/Vol-80/#RothiA> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/RothiA> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX46> ;
+    ns4:name "Roth A" .
+
+<http://ceur-ws.org/Vol-80/#RothiM> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/RothiM> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX4> ;
+    ns4:name "Roth M" .
+
+<http://ceur-ws.org/Vol-80/#RumpfiM> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/RumpfiM> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX7> ;
+    ns4:name "Rumpf M" .
+
+<http://ceur-ws.org/Vol-80/#RussakoffiDB> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/RussakoffiDB> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX71> ;
+    ns4:name "Russakoff DB" .
+
+<http://ceur-ws.org/Vol-80/#RutschmanniD> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/RutschmanniD> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX44> ;
+    ns4:name "Rutschmann D" .
+
+<http://ceur-ws.org/Vol-80/#SabriiO> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/SabriiO> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX77> ;
+    ns4:name "Sabri O" .
+
+<http://ceur-ws.org/Vol-80/#SackiI> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/SackiI> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX24> ;
+    ns4:name "Sack I" .
+
+<http://ceur-ws.org/Vol-80/#SaupeiD> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/SaupeiD> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX58> ;
+    ns4:name "Saupe D" .
+
+<http://ceur-ws.org/Vol-80/#Sch%C3%A4peiA> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/Sch%C3%A4peiA> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX42> ;
+    ns4:name "Schäpe A" .
+
+<http://ceur-ws.org/Vol-80/#Sch%C3%BCleiT> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/Sch%C3%BCleiT> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX9> ;
+    ns4:name "Schüle T" .
+
+<http://ceur-ws.org/Vol-80/#SchalleriC> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/SchalleriC> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX7> ;
+    ns4:name "Schaller C" .
+
+<http://ceur-ws.org/Vol-80/#Schlote-HolubekiK> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/Schlote-HolubekiK> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX89> ;
+    ns4:name "Schlote-Holubek K" .
+
+<http://ceur-ws.org/Vol-80/#SchmitgeniA> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/SchmitgeniA> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX67> ;
+    ns4:name "Schmitgen A" .
+
+<http://ceur-ws.org/Vol-80/#SchmitziKP> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/SchmitziKP> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX33> ;
+    ns4:name "Schmitz KP" .
+
+<http://ceur-ws.org/Vol-80/#Schn%C3%B6rriC> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/Schn%C3%B6rriC> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX9> ;
+    ns4:name "Schnörr C" .
+
+<http://ceur-ws.org/Vol-80/#SchneideriJP> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/SchneideriJP> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX67> ;
+    ns4:name "Schneider JP" .
+
+<http://ceur-ws.org/Vol-80/#ScholziR> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/ScholziR> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX67> ;
+    ns4:name "Scholz R" .
+
+<http://ceur-ws.org/Vol-80/#SchorriO> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/SchorriO> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX56> ;
+    ns4:name "Schorr O" .
+
+<http://ceur-ws.org/Vol-80/#SchusteriM> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/SchusteriM> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX54> ;
+    ns4:name "Schuster M" .
+
+<http://ceur-ws.org/Vol-80/#SeiwertsiM> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/SeiwertsiM> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX67> ;
+    ns4:name "Seiwerts M" .
+
+<http://ceur-ws.org/Vol-80/#Sipil%C3%A4iO> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/Sipil%C3%A4iO> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX74> ;
+    ns4:name "Sipilä O" .
+
+<http://ceur-ws.org/Vol-80/#SmolleiJ> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/SmolleiJ> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX43> ;
+    ns4:name "Smolle J" .
+
+<http://ceur-ws.org/Vol-80/#SonkaiM> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/SonkaiM> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX51> ;
+    ns4:name "Sonka M" .
+
+<http://ceur-ws.org/Vol-80/#SorantiniE> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/SorantiniE> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX51> ;
+    ns4:name "Sorantin E" .
+
+<http://ceur-ws.org/Vol-80/#SovakariA> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/SovakariA> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX34> ;
+    ns4:name "Sovakar A" .
+
+<http://ceur-ws.org/Vol-80/#SozaiG> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/SozaiG> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX5> ;
+    ns4:name "Soza G" .
+
+<http://ceur-ws.org/Vol-80/#SpinnleriK> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/SpinnleriK> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX74> ;
+    ns4:name "Spinnler K" .
+
+<http://ceur-ws.org/Vol-80/#SteinmeieriR> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/SteinmeieriR> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX63> ;
+    ns4:name "Steinmeier R" .
+
+<http://ceur-ws.org/Vol-80/#Stra%C3%9FmanniG> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/Stra%C3%9FmanniG> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX55> ;
+    ns4:name "Straßmann G" .
+
+<http://ceur-ws.org/Vol-80/#StrathmanniB> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/StrathmanniB> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX62> ;
+    ns4:name "Strathmann B" .
+
+<http://ceur-ws.org/Vol-80/#StrobeliN> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/StrobeliN> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX22> ;
+    ns4:name "Strobel N" .
+
+<http://ceur-ws.org/Vol-80/#T%C3%B6nniesiKD> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/T%C3%B6nniesiKD> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX36> ;
+    ns4:name "Tönnies KD" .
+
+<http://ceur-ws.org/Vol-80/#TeschneriM> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/TeschneriM> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX57> ;
+    ns4:name "Teschner M" .
+
+<http://ceur-ws.org/Vol-80/#ThustiS> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/ThustiS> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX68> ;
+    ns4:name "Thust S" .
+
+<http://ceur-ws.org/Vol-80/#TietjeniC> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/TietjeniC> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX53> ;
+    ns4:name "Tietjen C" .
+
+<http://ceur-ws.org/Vol-80/#TillmanniHG> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/TillmanniHG> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX38> ;
+    ns4:name "Tillmann HG" .
+
+<http://ceur-ws.org/Vol-80/#TimingeriH> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/TimingeriH> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX35> ;
+    ns4:name "Timinger H" .
+
+<http://ceur-ws.org/Vol-80/#TolxdorffiT> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/TolxdorffiT> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX24> ;
+    ns4:name "Tolxdorff T" .
+
+<http://ceur-ws.org/Vol-80/#TomandliB> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/TomandliB> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX10> ;
+    ns4:name "Tomandl B" .
+
+<http://ceur-ws.org/Vol-80/#TrappeiF> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/TrappeiF> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX75> ;
+    ns4:name "Trappe F" .
+
+<http://ceur-ws.org/Vol-80/#TreiberiO> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/TreiberiO> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX20> ;
+    ns4:name "Treiber O" .
+
+<http://ceur-ws.org/Vol-80/#TroitzschiD> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/TroitzschiD> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX59> ;
+    ns4:name "Troitzsch D" .
+
+<http://ceur-ws.org/Vol-80/#UhlemanniF> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/UhlemanniF> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX63> ;
+    ns4:name "Uhlemann F" .
+
+<http://ceur-ws.org/Vol-80/#UhliW> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/UhliW> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX12> ;
+    ns4:name "Uhl W" .
+
+<http://ceur-ws.org/Vol-80/#UrbaniiM> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/UrbaniiM> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX42> ;
+    ns4:name "Urbani M" .
+
+<http://ceur-ws.org/Vol-80/#Vall%C3%A9eiJP> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/Vall%C3%A9eiJP> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX74> ;
+    ns4:name "Vallée JP" .
+
+<http://ceur-ws.org/Vol-80/#Verdonck-deiLeeuwiI> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/Verdonck-deiLeeuwiI> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX74> ;
+    ns4:name "Verdonck-de Leeuw I" .
+
+<http://ceur-ws.org/Vol-80/#VogelbuschiC> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/VogelbuschiC> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX64> ;
+    ns4:name "Vogelbusch C" .
+
+<http://ceur-ws.org/Vol-80/#VogliR> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/VogliR> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX74> ;
+    ns4:name "Vogl R" .
+
+<http://ceur-ws.org/Vol-80/#VossiT> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/VossiT> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX64> ;
+    ns4:name "Voss T" .
+
+<http://ceur-ws.org/Vol-80/#W%C3%B6rniH> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/W%C3%B6rniH> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX56> ;
+    ns4:name "Wörn H" .
+
+<http://ceur-ws.org/Vol-80/#WagenknechtiG> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/WagenknechtiG> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX77> ;
+    ns4:name "Wagenknecht G" .
+
+<http://ceur-ws.org/Vol-80/#WannenmacheriM> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/WannenmacheriM> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX56> ;
+    ns4:name "Wannenmacher M" .
+
+<http://ceur-ws.org/Vol-80/#WanningeriF> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/WanningeriF> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX20> ;
+    ns4:name "Wanninger F" .
+
+<http://ceur-ws.org/Vol-80/#WawroiM> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/WawroiM> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX13> ;
+    ns4:name "Wawro M" .
+
+<http://ceur-ws.org/Vol-80/#WebberiRL> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/WebberiRL> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX76> ;
+    ns4:name "Webber RL" .
+
+<http://ceur-ws.org/Vol-80/#WeberiS> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/WeberiS> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX9> ;
+    ns4:name "Weber S" .
+
+<http://ceur-ws.org/Vol-80/#WeibezahniKF> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/WeibezahniKF> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX40> ;
+    ns4:name "Weibezahn KF" .
+
+<http://ceur-ws.org/Vol-80/#WesargiS> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/WesargiS> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX6> ;
+    ns4:name "Wesarg S" .
+
+<http://ceur-ws.org/Vol-80/#WiemanniM> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/WiemanniM> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX46> ;
+    ns4:name "Wiemann M" .
+
+<http://ceur-ws.org/Vol-80/#WitschiK> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/WitschiK> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX64> ;
+    ns4:name "Witsch K" .
+
+<http://ceur-ws.org/Vol-80/#WolfiM> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/WolfiM> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX69> ;
+    ns4:name "Wolf M" .
+
+<http://ceur-ws.org/Vol-80/#WolsifferiK> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/WolsifferiK> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX86> ;
+    ns4:name "Wolsiffer K" .
+
+<http://ceur-ws.org/Vol-80/#ZahlmanniG> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/ZahlmanniG> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX74> ;
+    ns4:name "Zahlmann G" .
+
+<http://ceur-ws.org/Vol-80/#ZotziR> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/ZotziR> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX58> ;
+    ns4:name "Zotz R" .
+
+<http://ceur-ws.org/Vol-80/#deiSimoneiR> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/deiSimoneiR> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX25> ;
+    ns4:name "de Simone R" .
+
+<http://ceur-ws.org/Vol-80/#event> a ns1:WorkshopEvent ;
+    ns1:hasPart <http://ceur-ws.org/Vol-80/#part-ws> ;
+    ns1:isSubEventOf <http://ceur-ws.org/Vol-80/#conf> ;
+    ns9:beginsAtDatetime "2003-09-04T00:00:00+00:00"^^xsd:dateTime ;
+    ns9:endsAtDatetime "2003-09-04T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:license "http://choosealicense.com/licenses/no-license/" ;
     rdfs:seeAlso <http://ceur-ws.org/Vol-12/#event>,
         <http://ceur-ws.org/Vol-20/#event>,
         <http://ceur-ws.org/Vol-27/#event>,
         <http://ceur-ws.org/Vol-36/#event>,
         <http://ceur-ws.org/Vol-56/#event>,
         <http://ceur-ws.org/Vol-6/#event> .
+
+<http://ceur-ws.org/Vol-80/#voniBergiJ> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/voniBergiJ> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX35> ;
+    ns4:name "von Berg J" .
+
+<http://ceur-ws.org/Vol-80/#BartziD> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/BartziD> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX59>,
+        <http://ceur-ws.org/Vol-80/#paperX61> ;
+    ns4:name "Bartz D" .
+
+<http://ceur-ws.org/Vol-80/#BehrendsiJ> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/BehrendsiJ> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX38>,
+        <http://ceur-ws.org/Vol-80/#paperX82> ;
+    ns4:name "Behrends J" .
+
+<http://ceur-ws.org/Vol-80/#BendliR> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/BendliR> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX65>,
+        <http://ceur-ws.org/Vol-80/#paperX66> ;
+    ns4:name "Bendl R" .
+
+<http://ceur-ws.org/Vol-80/#BurgkartiR> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/BurgkartiR> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX26>,
+        <http://ceur-ws.org/Vol-80/#paperX4> ;
+    ns4:name "Burgkart R" .
+
+<http://ceur-ws.org/Vol-80/#BurkhardtiS> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/BurkhardtiS> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX26>,
+        <http://ceur-ws.org/Vol-80/#paperX4> ;
+    ns4:name "Burkhardt S" .
+
+<http://ceur-ws.org/Vol-80/#D%C3%B6llingeriM> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/D%C3%B6llingeriM> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX49>,
+        <http://ceur-ws.org/Vol-80/#paperX54> ;
+    ns4:name "Döllinger M" .
+
+<http://ceur-ws.org/Vol-80/#DeckiTM> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/DeckiTM> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX28>,
+        <http://ceur-ws.org/Vol-80/#paperX89> ;
+    ns4:name "Deck TM" .
+
+<http://ceur-ws.org/Vol-80/#DickeniV> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/DickeniV> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX30>,
+        <http://ceur-ws.org/Vol-80/#paperX50> ;
+    ns4:name "Dicken V" .
+
+<http://ceur-ws.org/Vol-80/#DoldiC> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/DoldiC> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX29>,
+        <http://ceur-ws.org/Vol-80/#paperX6> ;
+    ns4:name "Dold C" .
+
+<http://ceur-ws.org/Vol-80/#EhrhardtiJ> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/EhrhardtiJ> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX62>,
+        <http://ceur-ws.org/Vol-80/#paperX80> ;
+    ns4:name "Ehrhardt J" .
+
+<http://ceur-ws.org/Vol-80/#EysholdtiU> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/EysholdtiU> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX49>,
+        <http://ceur-ws.org/Vol-80/#paperX54> ;
+    ns4:name "Eysholdt U" .
+
+<http://ceur-ws.org/Vol-80/#FirleiE> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/FirleiE> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX29>,
+        <http://ceur-ws.org/Vol-80/#paperX6> ;
+    ns4:name "Firle E" .
+
+<http://ceur-ws.org/Vol-80/#GreineriG> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/GreineriG> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX10>,
+        <http://ceur-ws.org/Vol-80/#paperX5> ;
+    ns4:name "Greiner G" .
+
+<http://ceur-ws.org/Vol-80/#HastreiteriP> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/HastreiteriP> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX10>,
+        <http://ceur-ws.org/Vol-80/#paperX5> ;
+    ns4:name "Hastreiter P" .
+
+<http://ceur-ws.org/Vol-80/#HesseriJ> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/HesseriJ> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX22>,
+        <http://ceur-ws.org/Vol-80/#paperX32> ;
+    ns4:name "Hesser J" .
+
+<http://ceur-ws.org/Vol-80/#HindennachiM> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/HindennachiM> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX30>,
+        <http://ceur-ws.org/Vol-80/#paperX53> ;
+    ns4:name "Hindennach M" .
+
+<http://ceur-ws.org/Vol-80/#HohenbergeriW> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/HohenbergeriW> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX60>,
+        <http://ceur-ws.org/Vol-80/#paperX85> ;
+    ns4:name "Hohenberger W" .
+
+<http://ceur-ws.org/Vol-80/#HoppeiU> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/HoppeiU> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX49>,
+        <http://ceur-ws.org/Vol-80/#paperX54> ;
+    ns4:name "Hoppe U" .
+
+<http://ceur-ws.org/Vol-80/#KobbeltiLP> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/KobbeltiLP> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX34>,
+        <http://ceur-ws.org/Vol-80/#paperX76> ;
+    ns4:name "Kobbelt LP" .
+
+<http://ceur-ws.org/Vol-80/#KohneniM> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/KohneniM> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX31>,
+        <http://ceur-ws.org/Vol-80/#paperX84> ;
+    ns4:name "Kohnen M" .
+
+<http://ceur-ws.org/Vol-80/#Kr%C3%BCgeriS> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/Kr%C3%BCgeriS> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX60>,
+        <http://ceur-ws.org/Vol-80/#paperX85> ;
+    ns4:name "Krüger S" .
+
+<http://ceur-ws.org/Vol-80/#Kra%C3%9FiS> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/Kra%C3%9FiS> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX30>,
+        <http://ceur-ws.org/Vol-80/#paperX50> ;
+    ns4:name "Kraß S" .
+
+<http://ceur-ws.org/Vol-80/#KuhnigkiJM> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/KuhnigkiJM> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX30>,
+        <http://ceur-ws.org/Vol-80/#paperX50> ;
+    ns4:name "Kuhnigk JM" .
+
+<http://ceur-ws.org/Vol-80/#LameckeriH> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/LameckeriH> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX23>,
+        <http://ceur-ws.org/Vol-80/#paperX81> ;
+    ns4:name "Lamecker H" .
+
+<http://ceur-ws.org/Vol-80/#LangeiT> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/LangeiT> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX23>,
+        <http://ceur-ws.org/Vol-80/#paperX81> ;
+    ns4:name "Lange T" .
+
+<http://ceur-ws.org/Vol-80/#LittmanniA> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/LittmanniA> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX66>,
+        <http://ceur-ws.org/Vol-80/#paperX87> ;
+    ns4:name "Littmann A" .
+
+<http://ceur-ws.org/Vol-80/#LohschelleriJ> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/LohschelleriJ> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX49>,
+        <http://ceur-ws.org/Vol-80/#paperX54> ;
+    ns4:name "Lohscheller J" .
+
+<http://ceur-ws.org/Vol-80/#MahnkeniA> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/MahnkeniA> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX84>,
+        <http://ceur-ws.org/Vol-80/#paperX86> ;
+    ns4:name "Mahnken A" .
+
+<http://ceur-ws.org/Vol-80/#MaureriCRiJr> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/MaureriCRiJr> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX19>,
+        <http://ceur-ws.org/Vol-80/#paperX71> ;
+    ns4:name "Maurer CR Jr" .
+
+<http://ceur-ws.org/Vol-80/#NimskyiC> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/NimskyiC> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX10>,
+        <http://ceur-ws.org/Vol-80/#paperX5> ;
+    ns4:name "Nimsky C" .
+
+<http://ceur-ws.org/Vol-80/#PaulusiD> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/PaulusiD> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX60>,
+        <http://ceur-ws.org/Vol-80/#paperX85> ;
+    ns4:name "Paulus D" .
+
+<http://ceur-ws.org/Vol-80/#PlodowskiiB> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/PlodowskiiB> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX78>,
+        <http://ceur-ws.org/Vol-80/#paperX79> ;
+    ns4:name "Plodowski B" .
+
+<http://ceur-ws.org/Vol-80/#PreimiB> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/PreimiB> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX53>,
+        <http://ceur-ws.org/Vol-80/#paperX87> ;
+    ns4:name "Preim B" .
+
+<http://ceur-ws.org/Vol-80/#ReiseriM> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/ReiseriM> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX38>,
+        <http://ceur-ws.org/Vol-80/#paperX82> ;
+    ns4:name "Reiser M" .
+
+<http://ceur-ws.org/Vol-80/#RohlfingiT> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/RohlfingiT> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX19>,
+        <http://ceur-ws.org/Vol-80/#paperX71> ;
+    ns4:name "Rohlfing T" .
+
+<http://ceur-ws.org/Vol-80/#RohriK> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/RohriK> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX14>,
+        <http://ceur-ws.org/Vol-80/#paperX2> ;
+    ns4:name "Rohr K" .
+
+<http://ceur-ws.org/Vol-80/#RuiteriNV> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/RuiteriNV> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX18>,
+        <http://ceur-ws.org/Vol-80/#paperX65> ;
+    ns4:name "Ruiter NV" .
+
+<http://ceur-ws.org/Vol-80/#Sch%C3%B6bingeriM> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/Sch%C3%B6bingeriM> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX12>,
+        <http://ceur-ws.org/Vol-80/#paperX16> ;
+    ns4:name "Schöbinger M" .
+
+<http://ceur-ws.org/Vol-80/#SchenkiA> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/SchenkiA> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX83>,
+        <http://ceur-ws.org/Vol-80/#paperX87> ;
+    ns4:name "Schenk A" .
+
+<http://ceur-ws.org/Vol-80/#SchickiCH> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/SchickiCH> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX60>,
+        <http://ceur-ws.org/Vol-80/#paperX85> ;
+    ns4:name "Schick CH" .
+
+<http://ceur-ws.org/Vol-80/#SchweikardiA> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/SchweikardiA> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX26>,
+        <http://ceur-ws.org/Vol-80/#paperX4> ;
+    ns4:name "Schweikard A" .
+
+<http://ceur-ws.org/Vol-80/#Seeba%C3%9FiM> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/Seeba%C3%9FiM> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX23>,
+        <http://ceur-ws.org/Vol-80/#paperX81> ;
+    ns4:name "Seebaß M" .
+
+<http://ceur-ws.org/Vol-80/#ThiesiC> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/ThiesiC> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX31>,
+        <http://ceur-ws.org/Vol-80/#paperX72> ;
+    ns4:name "Thies C" .
+
+<http://ceur-ws.org/Vol-80/#ThorniM> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/ThorniM> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX12>,
+        <http://ceur-ws.org/Vol-80/#paperX16> ;
+    ns4:name "Thorn M" .
+
+<http://ceur-ws.org/Vol-80/#VegaiF> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/VegaiF> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX10>,
+        <http://ceur-ws.org/Vol-80/#paperX5> ;
+    ns4:name "Vega F" .
+
+<http://ceur-ws.org/Vol-80/#W%C3%B6rziS> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/W%C3%B6rziS> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX14>,
+        <http://ceur-ws.org/Vol-80/#paperX2> ;
+    ns4:name "Wörz S" .
+
+<http://ceur-ws.org/Vol-80/#WeichertiF> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/WeichertiF> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX13>,
+        <http://ceur-ws.org/Vol-80/#paperX90> ;
+    ns4:name "Weichert F" .
+
+<http://ceur-ws.org/Vol-80/#WeiniB> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/WeiniB> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX50>,
+        <http://ceur-ws.org/Vol-80/#paperX84> ;
+    ns4:name "Wein B" .
+
+<http://ceur-ws.org/Vol-80/#WilkeiC> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/WilkeiC> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX13>,
+        <http://ceur-ws.org/Vol-80/#paperX90> ;
+    ns4:name "Wilke C" .
+
+<http://ceur-ws.org/Vol-80/#Wism%C3%BClleriA> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/Wism%C3%BClleriA> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX38>,
+        <http://ceur-ws.org/Vol-80/#paperX82> ;
+    ns4:name "Wismüller A" .
+
+<http://ceur-ws.org/Vol-80/#p001pdf> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "p001 .pdf" .
+
+<http://ceur-ws.org/Vol-80/#p006pdf> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "p006.pdf" .
+
+<http://ceur-ws.org/Vol-80/#p011pdf> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "p011.pdf" .
+
+<http://ceur-ws.org/Vol-80/#p016pdf> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "p016.pdf" .
+
+<http://ceur-ws.org/Vol-80/#p021pdf> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "p021.pdf" .
+
+<http://ceur-ws.org/Vol-80/#p026pdf> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "p026.pdf" .
+
+<http://ceur-ws.org/Vol-80/#p031pdf> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "p031.pdf" .
+
+<http://ceur-ws.org/Vol-80/#p036pdf> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "p036.pdf" .
+
+<http://ceur-ws.org/Vol-80/#p041pdf> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "p041.pdf" .
+
+<http://ceur-ws.org/Vol-80/#p046pdf> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "p046.pdf" .
+
+<http://ceur-ws.org/Vol-80/#p051pdf> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "p051.pdf" .
+
+<http://ceur-ws.org/Vol-80/#p056pdf> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "p056.pdf" .
+
+<http://ceur-ws.org/Vol-80/#p061pdf> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "p061.pdf" .
+
+<http://ceur-ws.org/Vol-80/#p066pdf> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "p066.pdf" .
+
+<http://ceur-ws.org/Vol-80/#p071pdf> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "p071.pdf" .
+
+<http://ceur-ws.org/Vol-80/#p076pdf> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "p076.pdf" .
+
+<http://ceur-ws.org/Vol-80/#p081pdf> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "p081.pdf" .
+
+<http://ceur-ws.org/Vol-80/#p086pdf> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "p086.pdf" .
+
+<http://ceur-ws.org/Vol-80/#p091pdf> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "p091.pdf" .
+
+<http://ceur-ws.org/Vol-80/#p096pdf> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "p096.pdf" .
+
+<http://ceur-ws.org/Vol-80/#p101pdf> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "p101.pdf" .
+
+<http://ceur-ws.org/Vol-80/#p106pdf> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "p106.pdf" .
+
+<http://ceur-ws.org/Vol-80/#p111pdf> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "p111.pdf" .
+
+<http://ceur-ws.org/Vol-80/#p116pdf> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "p116.pdf" .
+
+<http://ceur-ws.org/Vol-80/#p121pdf> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "p121.pdf" .
+
+<http://ceur-ws.org/Vol-80/#p126pdf> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "p126.pdf" .
+
+<http://ceur-ws.org/Vol-80/#p131pdf> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "p131.pdf" .
+
+<http://ceur-ws.org/Vol-80/#p136pdf> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "p136.pdf" .
+
+<http://ceur-ws.org/Vol-80/#p141pdf> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "p141.pdf" .
+
+<http://ceur-ws.org/Vol-80/#p146pdf> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "p146.pdf" .
+
+<http://ceur-ws.org/Vol-80/#p151pdf> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "p151.pdf" .
+
+<http://ceur-ws.org/Vol-80/#p156pdf> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "p156.pdf" .
+
+<http://ceur-ws.org/Vol-80/#p161pdf> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "p161.pdf" .
+
+<http://ceur-ws.org/Vol-80/#p166pdf> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "p166.pdf" .
+
+<http://ceur-ws.org/Vol-80/#p171pdf> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "p171.pdf" .
+
+<http://ceur-ws.org/Vol-80/#p176pdf> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "p176.pdf" .
+
+<http://ceur-ws.org/Vol-80/#p181pdf> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "p181.pdf" .
+
+<http://ceur-ws.org/Vol-80/#p186pdf> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "p186.pdf" .
+
+<http://ceur-ws.org/Vol-80/#p191pdf> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "p191.pdf" .
+
+<http://ceur-ws.org/Vol-80/#p196pdf> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "p196.pdf" .
+
+<http://ceur-ws.org/Vol-80/#p201pdf> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "p201.pdf" .
+
+<http://ceur-ws.org/Vol-80/#p206pdf> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "p206.pdf" .
+
+<http://ceur-ws.org/Vol-80/#p211pdf> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "p211.pdf" .
+
+<http://ceur-ws.org/Vol-80/#p216pdf> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "p216.pdf" .
+
+<http://ceur-ws.org/Vol-80/#p220pdf> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "p220.pdf" .
+
+<http://ceur-ws.org/Vol-80/#p225pdf> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "p225.pdf" .
+
+<http://ceur-ws.org/Vol-80/#p230pdf> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "p230.pdf" .
+
+<http://ceur-ws.org/Vol-80/#p235pdf> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "p235.pdf" .
+
+<http://ceur-ws.org/Vol-80/#p240pdf> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "p240.pdf" .
+
+<http://ceur-ws.org/Vol-80/#p244pdf> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "p244.pdf" .
+
+<http://ceur-ws.org/Vol-80/#p249pdf> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "p249.pdf" .
+
+<http://ceur-ws.org/Vol-80/#p254pdf> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "p254.pdf" .
+
+<http://ceur-ws.org/Vol-80/#p259pdf> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "p259.pdf" .
+
+<http://ceur-ws.org/Vol-80/#p264pdf> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "p264.pdf" .
+
+<http://ceur-ws.org/Vol-80/#p269pdf> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "p269.pdf" .
+
+<http://ceur-ws.org/Vol-80/#p274pdf> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "p274.pdf" .
+
+<http://ceur-ws.org/Vol-80/#p279pdf> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "p279.pdf" .
+
+<http://ceur-ws.org/Vol-80/#p284pdf> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "p284.pdf" .
+
+<http://ceur-ws.org/Vol-80/#p289pdf> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "p289.pdf" .
+
+<http://ceur-ws.org/Vol-80/#p293pdf> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "p293.pdf" .
+
+<http://ceur-ws.org/Vol-80/#p298pdf> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "p298.pdf" .
+
+<http://ceur-ws.org/Vol-80/#p303pdf> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "p303.pdf" .
+
+<http://ceur-ws.org/Vol-80/#p308pdf> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "p308.pdf" .
+
+<http://ceur-ws.org/Vol-80/#p313pdf> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "p313.pdf" .
+
+<http://ceur-ws.org/Vol-80/#p318pdf> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "p318.pdf" .
+
+<http://ceur-ws.org/Vol-80/#p323pdf> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "p323.pdf" .
+
+<http://ceur-ws.org/Vol-80/#p328pdf> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "p328.pdf" .
+
+<http://ceur-ws.org/Vol-80/#p333pdf> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "p333.pdf" .
+
+<http://ceur-ws.org/Vol-80/#p338pdf> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "p338.pdf" .
+
+<http://ceur-ws.org/Vol-80/#p343pdf> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "p343.pdf" .
+
+<http://ceur-ws.org/Vol-80/#p348pdf> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "p348.pdf" .
+
+<http://ceur-ws.org/Vol-80/#p353pdf> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "p353.pdf" .
+
+<http://ceur-ws.org/Vol-80/#p358pdf> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "p358.pdf" .
+
+<http://ceur-ws.org/Vol-80/#p363pdf> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "p363. pdf" .
+
+<http://ceur-ws.org/Vol-80/#p368pdf> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "p368.pdf" .
+
+<http://ceur-ws.org/Vol-80/#p373pdf> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "p373.pdf" .
+
+<http://ceur-ws.org/Vol-80/#p378pdf> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "p378.pdf" .
+
+<http://ceur-ws.org/Vol-80/#p383pdf> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "p383.pdf" .
+
+<http://ceur-ws.org/Vol-80/#p388pdf> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "p388.pdf" .
+
+<http://ceur-ws.org/Vol-80/#p393pdf> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "p393.pdf" .
+
+<http://ceur-ws.org/Vol-80/#p398pdf> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "p398.pdf" .
+
+<http://ceur-ws.org/Vol-80/#p403pdf> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "p403.pdf" .
+
+<http://ceur-ws.org/Vol-80/#p408pdf> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "p408.pdf" .
+
+<http://ceur-ws.org/Vol-80/#p413pdf> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "p413.pdf" .
+
+<http://ceur-ws.org/Vol-80/#p418pdf> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "p418.pdf" .
+
+<http://ceur-ws.org/Vol-80/#p423pdf> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "p423.pdf" .
+
+<http://ceur-ws.org/Vol-80/#p428pdf> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "p428.pdf" .
+
+<http://ceur-ws.org/Vol-80/#p433pdf> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "p433.pdf" .
+
+<http://ceur-ws.org/Vol-80/#paperX11> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "Fully-Automatic Labelling of Aneurysm Voxels for Volume Estimation" ;
+    ns6:section <http://ceur-ws.org/Vol-80/#p051pdf> ;
+    ns2:author <http://ceur-ws.org/Vol-80/#BruijnsiJ> .
+
+<http://ceur-ws.org/Vol-80/#paperX15> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "Ein Skelettierungsalgorithmus für die Berechnung der Gefäßlänge" ;
+    ns6:section <http://ceur-ws.org/Vol-80/#p071pdf> ;
+    ns2:author <http://ceur-ws.org/Vol-80/#P%C3%A1liI> .
+
+<http://ceur-ws.org/Vol-80/#paperX27> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "Auflösungserhöhung von Dosimetriedetektoren zur Bildgebung in der Strahlentherapie. Rekonstruktion von Projektionsbildern mit CT-Algorithmen" ;
+    ns6:section <http://ceur-ws.org/Vol-80/#p131pdf> ;
+    ns2:author <http://ceur-ws.org/Vol-80/#DeckeriP> .
+
+<http://ceur-ws.org/Vol-80/#FischeriB> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/FischeriB> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX1>,
+        <http://ceur-ws.org/Vol-80/#paperX72>,
+        <http://ceur-ws.org/Vol-80/#paperX79> ;
+    ns4:name "Fischer B" .
+
+<http://ceur-ws.org/Vol-80/#G%C3%BCldiMO> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/G%C3%BCldiMO> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX72>,
+        <http://ceur-ws.org/Vol-80/#paperX78>,
+        <http://ceur-ws.org/Vol-80/#paperX79> ;
+    ns4:name "Güld MO" .
+
+<http://ceur-ws.org/Vol-80/#GrobeiM> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/GrobeiM> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX39>,
+        <http://ceur-ws.org/Vol-80/#paperX41>,
+        <http://ceur-ws.org/Vol-80/#paperX48> ;
+    ns4:name "Grobe M" .
+
+<http://ceur-ws.org/Vol-80/#HahniK> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/HahniK> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX30>,
+        <http://ceur-ws.org/Vol-80/#paperX38>,
+        <http://ceur-ws.org/Vol-80/#paperX82> ;
+    ns4:name "Hahn K" .
+
+<http://ceur-ws.org/Vol-80/#HandelsiH> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/HandelsiH> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX45>,
+        <http://ceur-ws.org/Vol-80/#paperX62>,
+        <http://ceur-ws.org/Vol-80/#paperX80> ;
+    ns4:name "Handels H" .
+
+<http://ceur-ws.org/Vol-80/#HassenpflugiP> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/HassenpflugiP> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX12>,
+        <http://ceur-ws.org/Vol-80/#paperX16>,
+        <http://ceur-ws.org/Vol-80/#paperX70> ;
+    ns4:name "Hassenpflug P" .
+
+<http://ceur-ws.org/Vol-80/#KeysersiD> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/KeysersiD> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX31>,
+        <http://ceur-ws.org/Vol-80/#paperX78>,
+        <http://ceur-ws.org/Vol-80/#paperX79> ;
+    ns4:name "Keysers D" .
+
+<http://ceur-ws.org/Vol-80/#M%C3%BClleriTO> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/M%C3%BClleriTO> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX18>,
+        <http://ceur-ws.org/Vol-80/#paperX28>,
+        <http://ceur-ws.org/Vol-80/#paperX89> ;
+    ns4:name "Müller TO" .
+
+<http://ceur-ws.org/Vol-80/#M%C3%BCnzenmayeriC> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/M%C3%BCnzenmayeriC> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX39>,
+        <http://ceur-ws.org/Vol-80/#paperX41>,
+        <http://ceur-ws.org/Vol-80/#paperX48> ;
+    ns4:name "Münzenmayer C" .
+
+<http://ceur-ws.org/Vol-80/#NiemanniH> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/NiemanniH> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX60>,
+        <http://ceur-ws.org/Vol-80/#paperX69>,
+        <http://ceur-ws.org/Vol-80/#paperX85> ;
+    ns4:name "Niemann H" .
+
+<http://ceur-ws.org/Vol-80/#P%C3%B6ppliSJ> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/P%C3%B6ppliSJ> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX45>,
+        <http://ceur-ws.org/Vol-80/#paperX62>,
+        <http://ceur-ws.org/Vol-80/#paperX80> ;
+    ns4:name "Pöppl SJ" .
+
+<http://ceur-ws.org/Vol-80/#SchneideriM> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/SchneideriM> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX21>,
+        <http://ceur-ws.org/Vol-80/#paperX59>,
+        <http://ceur-ws.org/Vol-80/#paperX74> ;
+    ns4:name "Schneider M" .
+
+<http://ceur-ws.org/Vol-80/#SchubertiH> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/SchubertiH> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX50>,
+        <http://ceur-ws.org/Vol-80/#paperX78>,
+        <http://ceur-ws.org/Vol-80/#paperX79> ;
+    ns4:name "Schubert H" .
+
+<http://ceur-ws.org/Vol-80/#VetteriM> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/VetteriM> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX12>,
+        <http://ceur-ws.org/Vol-80/#paperX16>,
+        <http://ceur-ws.org/Vol-80/#paperX70> ;
+    ns4:name "Vetter M" .
+
+<http://ceur-ws.org/Vol-80/#VogtiF> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/VogtiF> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX3>,
+        <http://ceur-ws.org/Vol-80/#paperX60>,
+        <http://ceur-ws.org/Vol-80/#paperX85> ;
+    ns4:name "Vogt F" .
+
+<http://ceur-ws.org/Vol-80/#VolkiH> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/VolkiH> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX39>,
+        <http://ceur-ws.org/Vol-80/#paperX41>,
+        <http://ceur-ws.org/Vol-80/#paperX48> ;
+    ns4:name "Volk H" .
+
+<http://ceur-ws.org/Vol-80/#p438pdf> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "p438.pdf" .
+
+<http://ceur-ws.org/Vol-80/#paperX1> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "Optimal Image Registration with a Guaranteed One-to-one Point Match" ;
+    ns6:section <http://ceur-ws.org/Vol-80/#p001pdf> ;
+    ns2:author <http://ceur-ws.org/Vol-80/#FischeriB>,
+        <http://ceur-ws.org/Vol-80/#ModersitzkiiJ> .
+
+<http://ceur-ws.org/Vol-80/#paperX2> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "Localization of Anatomical Point Landmarks in 3D Medical Images by Fitting 3D Parametric Intensity Models" ;
+    ns6:section <http://ceur-ws.org/Vol-80/#p006pdf> ;
+    ns2:author <http://ceur-ws.org/Vol-80/#RohriK>,
+        <http://ceur-ws.org/Vol-80/#W%C3%B6rziS> .
+
+<http://ceur-ws.org/Vol-80/#paperX29> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "Aufnahme von Kopfbewegungen in Echtzeit zur Korrektur von Bewegungsartefakten bei fMRI" ;
+    ns6:section <http://ceur-ws.org/Vol-80/#p141pdf> ;
+    ns2:author <http://ceur-ws.org/Vol-80/#DoldiC>,
+        <http://ceur-ws.org/Vol-80/#FirleiE> .
+
+<http://ceur-ws.org/Vol-80/#paperX32> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "Live-Wires on Egdes of Presegmented 2D-Data" ;
+    ns6:section <http://ceur-ws.org/Vol-80/#p156pdf> ;
+    ns2:author <http://ceur-ws.org/Vol-80/#HesseriJ>,
+        <http://ceur-ws.org/Vol-80/#K%C3%B6nigiS> .
+
+<http://ceur-ws.org/Vol-80/#paperX33> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "Segmentierung des Femurs mittels automatisch parametrisierter B-Spline-Snakes" ;
+    ns6:section <http://ceur-ws.org/Vol-80/#p161pdf> ;
+    ns2:author <http://ceur-ws.org/Vol-80/#Holzm%C3%BCller-LaueiS>,
+        <http://ceur-ws.org/Vol-80/#SchmitziKP> .
+
+<http://ceur-ws.org/Vol-80/#paperX43> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "Stereoscopic Skin Mapping for Dermatology" ;
+    ns6:section <http://ceur-ws.org/Vol-80/#p211pdf> ;
+    ns2:author <http://ceur-ws.org/Vol-80/#PaariG>,
+        <http://ceur-ws.org/Vol-80/#SmolleiJ> .
+
+<http://ceur-ws.org/Vol-80/#paperX57> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "Volumetric Meshes for Real-Time Medical Simulations" ;
+    ns6:section <http://ceur-ws.org/Vol-80/#p279pdf> ;
+    ns2:author <http://ceur-ws.org/Vol-80/#MuelleriM>,
+        <http://ceur-ws.org/Vol-80/#TeschneriM> .
+
+<http://ceur-ws.org/Vol-80/#paperX8> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "Erzeugung von Modelldaten zur Prüfung von Bildregistrierungstechniken angewandt auf Daten aus der PET und MRT" ;
+    ns6:section <http://ceur-ws.org/Vol-80/#p036pdf> ;
+    ns2:author <http://ceur-ws.org/Vol-80/#BenteiKA>,
+        <http://ceur-ws.org/Vol-80/#PietrzykiU> .
+
+<http://ceur-ws.org/Vol-80/#paperX90> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "Approximation koronarer Strukturen in IVUS-Frames durch unscharfe elliptische Templates" ;
+    ns6:section <http://ceur-ws.org/Vol-80/#p438pdf> ;
+    ns2:author <http://ceur-ws.org/Vol-80/#WeichertiF>,
+        <http://ceur-ws.org/Vol-80/#WilkeiC> .
+
+<http://ceur-ws.org/Vol-80/#GemmekeiH> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/GemmekeiH> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX18>,
+        <http://ceur-ws.org/Vol-80/#paperX28>,
+        <http://ceur-ws.org/Vol-80/#paperX40>,
+        <http://ceur-ws.org/Vol-80/#paperX89> ;
+    ns4:name "Gemmeke H" .
+
+<http://ceur-ws.org/Vol-80/#MeinzeriHP> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/MeinzeriHP> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX12>,
+        <http://ceur-ws.org/Vol-80/#paperX16>,
+        <http://ceur-ws.org/Vol-80/#paperX25>,
+        <http://ceur-ws.org/Vol-80/#paperX70> ;
+    ns4:name "Meinzer HP" .
+
+<http://ceur-ws.org/Vol-80/#WittenbergiT> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/WittenbergiT> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX39>,
+        <http://ceur-ws.org/Vol-80/#paperX41>,
+        <http://ceur-ws.org/Vol-80/#paperX48>,
+        <http://ceur-ws.org/Vol-80/#paperX74> ;
+    ns4:name "Wittenberg T" .
+
+<http://ceur-ws.org/Vol-80/#WolfiI> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/WolfiI> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX12>,
+        <http://ceur-ws.org/Vol-80/#paperX16>,
+        <http://ceur-ws.org/Vol-80/#paperX25>,
+        <http://ceur-ws.org/Vol-80/#paperX70> ;
+    ns4:name "Wolf I" .
+
+<http://ceur-ws.org/Vol-80/#paperX13> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "Korrekte dreidimensionale Visualisierung von Blutgefäßen durch Matching von intravaskulären Ultraschall- und biplanaren Angiographiedaten als Basis eines IVB-Systems" ;
+    ns6:section <http://ceur-ws.org/Vol-80/#p061pdf> ;
+    ns2:author <http://ceur-ws.org/Vol-80/#WawroiM>,
+        <http://ceur-ws.org/Vol-80/#WeichertiF>,
+        <http://ceur-ws.org/Vol-80/#WilkeiC> .
+
+<http://ceur-ws.org/Vol-80/#paperX14> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "Segmentation of Coronary Arteries of the Human Heart from 3D Medical Images" ;
+    ns6:section <http://ceur-ws.org/Vol-80/#p066pdf> ;
+    ns2:author <http://ceur-ws.org/Vol-80/#GongiRH>,
+        <http://ceur-ws.org/Vol-80/#RohriK>,
+        <http://ceur-ws.org/Vol-80/#W%C3%B6rziS> .
+
+<http://ceur-ws.org/Vol-80/#paperX17> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "Quantitative Analyse von Koronarangiographischen Bildfolgen zur Bestimmung der Myokardperfusion" ;
+    ns6:section <http://ceur-ws.org/Vol-80/#p081pdf> ;
+    ns2:author <http://ceur-ws.org/Vol-80/#DickhausiH>,
+        <http://ceur-ws.org/Vol-80/#K%C3%BCchereriH>,
+        <http://ceur-ws.org/Vol-80/#MalschiU> .
+
+<http://ceur-ws.org/Vol-80/#paperX20> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "Cluster-oriented Detection of Microcalcifications in Simulated Low-Dose Mammography" ;
+    ns6:section <http://ceur-ws.org/Vol-80/#p096pdf> ;
+    ns2:author <http://ceur-ws.org/Vol-80/#F%C3%BChriH>,
+        <http://ceur-ws.org/Vol-80/#TreiberiO>,
+        <http://ceur-ws.org/Vol-80/#WanningeriF> .
+
+<http://ceur-ws.org/Vol-80/#paperX21> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "MammoInsight Computer Assisted Detection: Performance study with large database" ;
+    ns6:section <http://ceur-ws.org/Vol-80/#p101pdf> ;
+    ns2:author <http://ceur-ws.org/Vol-80/#DrexliJ>,
+        <http://ceur-ws.org/Vol-80/#HeinleiniP>,
+        <http://ceur-ws.org/Vol-80/#SchneideriM> .
+
+<http://ceur-ws.org/Vol-80/#paperX23> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "Ein Softwarepaket für die modellbasierte Segmentierung anatomischer Strukturen" ;
+    ns6:section <http://ceur-ws.org/Vol-80/#p111pdf> ;
+    ns2:author <http://ceur-ws.org/Vol-80/#LameckeriH>,
+        <http://ceur-ws.org/Vol-80/#LangeiT>,
+        <http://ceur-ws.org/Vol-80/#Seeba%C3%9FiM> .
+
+<http://ceur-ws.org/Vol-80/#paperX26> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "Bestimmung der Gradientenstärken von MR-Sequenzen mit Hilfe von Kalibrierkörpern" ;
+    ns6:section <http://ceur-ws.org/Vol-80/#p126pdf> ;
+    ns2:author <http://ceur-ws.org/Vol-80/#BurgkartiR>,
+        <http://ceur-ws.org/Vol-80/#BurkhardtiS>,
+        <http://ceur-ws.org/Vol-80/#SchweikardiA> .
+
+<http://ceur-ws.org/Vol-80/#paperX34> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "Parameter Reduction and Automatic Generation of Active Shape Models" ;
+    ns6:section <http://ceur-ws.org/Vol-80/#p166pdf> ;
+    ns2:author <http://ceur-ws.org/Vol-80/#KobbeltiLP>,
+        <http://ceur-ws.org/Vol-80/#LierschiD>,
+        <http://ceur-ws.org/Vol-80/#SovakariA> .
+
+<http://ceur-ws.org/Vol-80/#paperX36> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "4D-Segmentierung von dSPECT-Aufnahmen des Herzens" ;
+    ns6:section <http://ceur-ws.org/Vol-80/#p176pdf> ;
+    ns2:author <http://ceur-ws.org/Vol-80/#CelleriA>,
+        <http://ceur-ws.org/Vol-80/#PohleiR>,
+        <http://ceur-ws.org/Vol-80/#T%C3%B6nniesiKD> .
+
+<http://ceur-ws.org/Vol-80/#paperX44> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "Messbar einfach: Mobiles und wirtschaftliches 3D Body Scanning in der Medizin mit dem MagicalSkin Scanner" ;
+    ns6:section <http://ceur-ws.org/Vol-80/#p216pdf> ;
+    ns2:author <http://ceur-ws.org/Vol-80/#JosteniM>,
+        <http://ceur-ws.org/Vol-80/#MasseniR>,
+        <http://ceur-ws.org/Vol-80/#RutschmanniD> .
+
+<http://ceur-ws.org/Vol-80/#paperX47> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "Dreidimensionale Rekonstruktion der Invasionsfront von Gebärmutterhalskarzinomen" ;
+    ns6:section <http://ceur-ws.org/Vol-80/#p230pdf> ;
+    ns2:author <http://ceur-ws.org/Vol-80/#BraumanniUD>,
+        <http://ceur-ws.org/Vol-80/#EinenkeliJ>,
+        <http://ceur-ws.org/Vol-80/#KuskaiJP> .
+
+<http://ceur-ws.org/Vol-80/#paperX58> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "Verbesserte Volumenrekonstruktion aus 2D transesophagal Ultraschallbildserien" ;
+    ns6:section <http://ceur-ws.org/Vol-80/#p284pdf> ;
+    ns2:author <http://ceur-ws.org/Vol-80/#GraicheniU>,
+        <http://ceur-ws.org/Vol-80/#SaupeiD>,
+        <http://ceur-ws.org/Vol-80/#ZotziR> .
+
+<http://ceur-ws.org/Vol-80/#paperX6> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "Registrierung und Visualisierung von 3D U/S und CT Datensätzen der Prostata" ;
+    ns6:section <http://ceur-ws.org/Vol-80/#p026pdf> ;
+    ns2:author <http://ceur-ws.org/Vol-80/#DoldiC>,
+        <http://ceur-ws.org/Vol-80/#FirleiE>,
+        <http://ceur-ws.org/Vol-80/#WesargiS> .
+
+<http://ceur-ws.org/Vol-80/#paperX61> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "Volumetrische Messungen und Qualitätsassessment von anatomischen Kavitäten" ;
+    ns6:section <http://ceur-ws.org/Vol-80/#p298pdf> ;
+    ns2:author <http://ceur-ws.org/Vol-80/#BartziD>,
+        <http://ceur-ws.org/Vol-80/#G%C3%BCrviti%C3%96>,
+        <http://ceur-ws.org/Vol-80/#OrmaniJ> .
+
+<http://ceur-ws.org/Vol-80/#paperX63> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "Ein Verfahren zur objektiven Quantifizierung der Genauigkeit von dreidimensionalen Fusionsalgorithmen  Ein Optimierungs- und Bewertungswerkzeug" ;
+    ns6:section <http://ceur-ws.org/Vol-80/#p308pdf> ;
+    ns2:author <http://ceur-ws.org/Vol-80/#MorgensterniU>,
+        <http://ceur-ws.org/Vol-80/#SteinmeieriR>,
+        <http://ceur-ws.org/Vol-80/#UhlemanniF> .
+
+<http://ceur-ws.org/Vol-80/#paperX7> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "Non-Rigid Morphological Image Registration" ;
+    ns6:section <http://ceur-ws.org/Vol-80/#p031pdf> ;
+    ns2:author <http://ceur-ws.org/Vol-80/#DroskeiM>,
+        <http://ceur-ws.org/Vol-80/#RumpfiM>,
+        <http://ceur-ws.org/Vol-80/#SchalleriC> .
+
+<http://ceur-ws.org/Vol-80/#paperX71> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "An Expectation Maximization-Like Algorithm for Multi-Atlas Multi-Label Segmentation" ;
+    ns6:section <http://ceur-ws.org/Vol-80/#p348pdf> ;
+    ns2:author <http://ceur-ws.org/Vol-80/#MaureriCRiJr>,
+        <http://ceur-ws.org/Vol-80/#RohlfingiT>,
+        <http://ceur-ws.org/Vol-80/#RussakoffiDB> .
+
+<http://ceur-ws.org/Vol-80/#paperX75> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "Reproduzierbarkeit der Volumenmessung von Lungenrundherden in Mehrschicht-CT. Erste Ergebnisse eines neuen ellipsoiden Ansatzes" ;
+    ns6:section <http://ceur-ws.org/Vol-80/#p368pdf> ;
+    ns2:author <http://ceur-ws.org/Vol-80/#Della-MontaiC>,
+        <http://ceur-ws.org/Vol-80/#Gro%C3%9FkopfiS>,
+        <http://ceur-ws.org/Vol-80/#TrappeiF> .
+
+<http://ceur-ws.org/Vol-80/#paperX80> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "Atlasbasierte Erkennung anatomischer Landmarken" ;
+    ns6:section <http://ceur-ws.org/Vol-80/#p393pdf> ;
+    ns2:author <http://ceur-ws.org/Vol-80/#EhrhardtiJ>,
+        <http://ceur-ws.org/Vol-80/#HandelsiH>,
+        <http://ceur-ws.org/Vol-80/#P%C3%B6ppliSJ> .
+
+<http://ceur-ws.org/Vol-80/#paperX81> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "Erzeugung statistischer 3D-Formmodelle zur Segmentierung medizinischer Bilddaten" ;
+    ns6:section <http://ceur-ws.org/Vol-80/#p398pdf> ;
+    ns2:author <http://ceur-ws.org/Vol-80/#LameckeriH>,
+        <http://ceur-ws.org/Vol-80/#LangeiT>,
+        <http://ceur-ws.org/Vol-80/#Seeba%C3%9FiM> .
+
+<http://ceur-ws.org/Vol-80/#LehmanniTM> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/LehmanniTM> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX31>,
+        <http://ceur-ws.org/Vol-80/#paperX72>,
+        <http://ceur-ws.org/Vol-80/#paperX76>,
+        <http://ceur-ws.org/Vol-80/#paperX78>,
+        <http://ceur-ws.org/Vol-80/#paperX79> ;
+    ns4:name "Lehmann TM" .
+
+<http://ceur-ws.org/Vol-80/#PeitgeniHO> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/PeitgeniHO> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX30>,
+        <http://ceur-ws.org/Vol-80/#paperX50>,
+        <http://ceur-ws.org/Vol-80/#paperX53>,
+        <http://ceur-ws.org/Vol-80/#paperX83>,
+        <http://ceur-ws.org/Vol-80/#paperX87> ;
+    ns4:name "Peitgen HO" .
+
+<http://ceur-ws.org/Vol-80/#StotzkaiR> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/StotzkaiR> ;
+    ns4:made <http://ceur-ws.org/Vol-80/#paperX18>,
+        <http://ceur-ws.org/Vol-80/#paperX28>,
+        <http://ceur-ws.org/Vol-80/#paperX40>,
+        <http://ceur-ws.org/Vol-80/#paperX65>,
+        <http://ceur-ws.org/Vol-80/#paperX89> ;
+    ns4:name "Stotzka R" .
+
+<http://ceur-ws.org/Vol-80/#paperX19> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "Volumenerhaltende elastische Registrierung. Evaluierung mit klinischen MR-Mammographien" ;
+    ns6:section <http://ceur-ws.org/Vol-80/#p091pdf> ;
+    ns2:author <http://ceur-ws.org/Vol-80/#BluemkeiDA>,
+        <http://ceur-ws.org/Vol-80/#JacobsiMA>,
+        <http://ceur-ws.org/Vol-80/#MaureriCRiJr>,
+        <http://ceur-ws.org/Vol-80/#RohlfingiT> .
+
+<http://ceur-ws.org/Vol-80/#paperX22> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "Multiresolution Data Handling for Visualization of Very Large Data Sets" ;
+    ns6:section <http://ceur-ws.org/Vol-80/#p106pdf> ;
+    ns2:author <http://ceur-ws.org/Vol-80/#GoschiC>,
+        <http://ceur-ws.org/Vol-80/#HesseriJ>,
+        <http://ceur-ws.org/Vol-80/#PoliwodaiC>,
+        <http://ceur-ws.org/Vol-80/#StrobeliN> .
+
+<http://ceur-ws.org/Vol-80/#paperX24> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "Simulation von Kernspinelastographie-Experimenten zur Beurteilung der Machbarkeit und Optimierung potentieller Anwendungen" ;
+    ns6:section <http://ceur-ws.org/Vol-80/#p116pdf> ;
+    ns2:author <http://ceur-ws.org/Vol-80/#BernardingiJ>,
+        <http://ceur-ws.org/Vol-80/#BrauniJ>,
+        <http://ceur-ws.org/Vol-80/#SackiI>,
+        <http://ceur-ws.org/Vol-80/#TolxdorffiT> .
+
+<http://ceur-ws.org/Vol-80/#paperX28> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "Rekonstruktion von Geschwindigkeits- und Absorptionsbildern eines Ultraschall-Computertomographen" ;
+    ns6:section <http://ceur-ws.org/Vol-80/#p136pdf> ;
+    ns2:author <http://ceur-ws.org/Vol-80/#DeckiTM>,
+        <http://ceur-ws.org/Vol-80/#GemmekeiH>,
+        <http://ceur-ws.org/Vol-80/#M%C3%BClleriTO>,
+        <http://ceur-ws.org/Vol-80/#StotzkaiR> .
+
+<http://ceur-ws.org/Vol-80/#paperX31> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "Synthese von regionen- und kantenorientierter parameterfreien Erzeugung von Multiskalengraphen mittels Region Growing" ;
+    ns6:section <http://ceur-ws.org/Vol-80/#p151pdf> ;
+    ns2:author <http://ceur-ws.org/Vol-80/#KeysersiD>,
+        <http://ceur-ws.org/Vol-80/#KohneniM>,
+        <http://ceur-ws.org/Vol-80/#LehmanniTM>,
+        <http://ceur-ws.org/Vol-80/#ThiesiC> .
+
+<http://ceur-ws.org/Vol-80/#paperX37> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "Morphological Scale-Space Decomposition for Segmenting the Ventricular Structure in Cardiac MR Images" ;
+    ns6:section <http://ceur-ws.org/Vol-80/#p181pdf> ;
+    ns2:author <http://ceur-ws.org/Vol-80/#El-MessiryiH>,
+        <http://ceur-ws.org/Vol-80/#GrebeiO>,
+        <http://ceur-ws.org/Vol-80/#KestleriHA>,
+        <http://ceur-ws.org/Vol-80/#NeumanniH> .
+
+<http://ceur-ws.org/Vol-80/#paperX4> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "Registrierung von präoperativen 3D-MRT-Daten mit intraoperativen 2D-Fluoroskopieaufnahmen zur Patientenlageerkennung" ;
+    ns6:section <http://ceur-ws.org/Vol-80/#p016pdf> ;
+    ns2:author <http://ceur-ws.org/Vol-80/#BurgkartiR>,
+        <http://ceur-ws.org/Vol-80/#BurkhardtiS>,
+        <http://ceur-ws.org/Vol-80/#RothiM>,
+        <http://ceur-ws.org/Vol-80/#SchweikardiA> .
+
+<http://ceur-ws.org/Vol-80/#paperX41> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "Segmentierung von überlappenden Zellen in Fluoreszenz- und Durchlichtaufnahmen" ;
+    ns6:section <http://ceur-ws.org/Vol-80/#p201pdf> ;
+    ns2:author <http://ceur-ws.org/Vol-80/#GrobeiM>,
+        <http://ceur-ws.org/Vol-80/#M%C3%BCnzenmayeriC>,
+        <http://ceur-ws.org/Vol-80/#VolkiH>,
+        <http://ceur-ws.org/Vol-80/#WittenbergiT> .
+
+<http://ceur-ws.org/Vol-80/#paperX42> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "Fraktal hierarchische, prozess- und objektbasierte Bildanalyse. Anwendungen in der biomedizinischen Mikroskopie" ;
+    ns6:section <http://ceur-ws.org/Vol-80/#p206pdf> ;
+    ns2:author <http://ceur-ws.org/Vol-80/#AthelogouiM>,
+        <http://ceur-ws.org/Vol-80/#LeidereriR>,
+        <http://ceur-ws.org/Vol-80/#Sch%C3%A4peiA>,
+        <http://ceur-ws.org/Vol-80/#UrbaniiM> .
+
+<http://ceur-ws.org/Vol-80/#paperX45> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "Analyse kleiner pigmentierter Hautläsionen für die Melanomfrüherkennung" ;
+    ns6:section <http://ceur-ws.org/Vol-80/#p220pdf> ;
+    ns2:author <http://ceur-ws.org/Vol-80/#HandelsiH>,
+        <http://ceur-ws.org/Vol-80/#KreuschiJ>,
+        <http://ceur-ws.org/Vol-80/#LeischneriC>,
+        <http://ceur-ws.org/Vol-80/#P%C3%B6ppliSJ> .
+
+<http://ceur-ws.org/Vol-80/#paperX48> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "Ein schneller Klassifikations-Ansatz für das Screening von Zervix-Proben basierend auf einer linearen Approximation des Sammon-Mappings" ;
+    ns6:section <http://ceur-ws.org/Vol-80/#p235pdf> ;
+    ns2:author <http://ceur-ws.org/Vol-80/#GrobeiM>,
+        <http://ceur-ws.org/Vol-80/#M%C3%BCnzenmayeriC>,
+        <http://ceur-ws.org/Vol-80/#VolkiH>,
+        <http://ceur-ws.org/Vol-80/#WittenbergiT> .
+
+<http://ceur-ws.org/Vol-80/#paperX53> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "Integration automatischer Abstandsberechnungen in die Interventionsplanung" ;
+    ns6:section <http://ceur-ws.org/Vol-80/#p259pdf> ;
+    ns2:author <http://ceur-ws.org/Vol-80/#HindennachiM>,
+        <http://ceur-ws.org/Vol-80/#PeitgeniHO>,
+        <http://ceur-ws.org/Vol-80/#PreimiB>,
+        <http://ceur-ws.org/Vol-80/#TietjeniC> .
+
+<http://ceur-ws.org/Vol-80/#paperX66> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "Automatische, robuste Anpassung von segmentierten Strukturen an geänderte Organgeometrien bei der fraktionierten Strahlentherapie" ;
+    ns6:section <http://ceur-ws.org/Vol-80/#p323pdf> ;
+    ns2:author <http://ceur-ws.org/Vol-80/#BendliR>,
+        <http://ceur-ws.org/Vol-80/#Fr%C3%BChlingiC>,
+        <http://ceur-ws.org/Vol-80/#LittmanniA>,
+        <http://ceur-ws.org/Vol-80/#RauiA> .
+
+<http://ceur-ws.org/Vol-80/#paperX72> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "Matching von Multiskalengraphen für den inhaltsbasierten Zugriff auf medizinische Bilder" ;
+    ns6:section <http://ceur-ws.org/Vol-80/#p353pdf> ;
+    ns2:author <http://ceur-ws.org/Vol-80/#FischeriB>,
+        <http://ceur-ws.org/Vol-80/#G%C3%BCldiMO>,
+        <http://ceur-ws.org/Vol-80/#LehmanniTM>,
+        <http://ceur-ws.org/Vol-80/#ThiesiC> .
+
+<http://ceur-ws.org/Vol-80/#paperX73> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "Visualisierung anatomischer Strukturen von Oberbauchorganen mittels automatisch segmentierter 3D-Ultraschallbildvolumina. Ergebnisse einer Pilotstudie" ;
+    ns6:section <http://ceur-ws.org/Vol-80/#p358pdf> ;
+    ns2:author <http://ceur-ws.org/Vol-80/#CorneliusiT>,
+        <http://ceur-ws.org/Vol-80/#HollerbachiS>,
+        <http://ceur-ws.org/Vol-80/#MaasiS>,
+        <http://ceur-ws.org/Vol-80/#OverhoffiHM> .
+
+<http://ceur-ws.org/Vol-80/#paperX76> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "Automated hybrid TACT volume reconstructions" ;
+    ns6:section <http://ceur-ws.org/Vol-80/#p373pdf> ;
+    ns2:author <http://ceur-ws.org/Vol-80/#KobbeltiLP>,
+        <http://ceur-ws.org/Vol-80/#LehmanniTM>,
+        <http://ceur-ws.org/Vol-80/#Linnenbr%C3%BCggeriNI>,
+        <http://ceur-ws.org/Vol-80/#WebberiRL> .
+
+<http://ceur-ws.org/Vol-80/#paperX77> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "MRT-basierte individuelle Regionenatlanten des menschlichen Gehirns. Ziele, Methoden, Ausblick" ;
+    ns6:section <http://ceur-ws.org/Vol-80/#p378pdf> ;
+    ns2:author <http://ceur-ws.org/Vol-80/#B%C3%BClliU>,
+        <http://ceur-ws.org/Vol-80/#KaiseriHJ>,
+        <http://ceur-ws.org/Vol-80/#SabriiO>,
+        <http://ceur-ws.org/Vol-80/#WagenknechtiG> .
+
+<http://ceur-ws.org/Vol-80/#paperX9> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "A Linear Programming Approach to Limited Angle 3D Reconstruction from DSA Projections" ;
+    ns6:section <http://ceur-ws.org/Vol-80/#p041pdf> ;
+    ns2:author <http://ceur-ws.org/Vol-80/#HorneggeriJ>,
+        <http://ceur-ws.org/Vol-80/#Sch%C3%BCleiT>,
+        <http://ceur-ws.org/Vol-80/#Schn%C3%B6rriC>,
+        <http://ceur-ws.org/Vol-80/#WeberiS> .
+
+<http://ceur-ws.org/Vol-80/#paperX10> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "3D Visualization of Intracranial Aneurysms with Multidimensional Transfer Functions" ;
+    ns6:section <http://ceur-ws.org/Vol-80/#p046pdf> ;
+    ns2:author <http://ceur-ws.org/Vol-80/#GreineriG>,
+        <http://ceur-ws.org/Vol-80/#HastreiteriP>,
+        <http://ceur-ws.org/Vol-80/#NimskyiC>,
+        <http://ceur-ws.org/Vol-80/#TomandliB>,
+        <http://ceur-ws.org/Vol-80/#VegaiF> .
+
+<http://ceur-ws.org/Vol-80/#paperX25> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "Rekonstruktion von Myokardgeschwindigkeiten mittels Tikhonov Regularisierung" ;
+    ns6:section <http://ceur-ws.org/Vol-80/#p121pdf> ;
+    ns2:author <http://ceur-ws.org/Vol-80/#HastenteufeliM>,
+        <http://ceur-ws.org/Vol-80/#MeinzeriHP>,
+        <http://ceur-ws.org/Vol-80/#Mottl-LinkiS>,
+        <http://ceur-ws.org/Vol-80/#WolfiI>,
+        <http://ceur-ws.org/Vol-80/#deiSimoneiR> .
+
+<http://ceur-ws.org/Vol-80/#paperX35> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "Integration of Interactive Corrections to Model-Based Segmentation Algorithms" ;
+    ns6:section <http://ceur-ws.org/Vol-80/#p171pdf> ;
+    ns2:author <http://ceur-ws.org/Vol-80/#DietmayeriK>,
+        <http://ceur-ws.org/Vol-80/#KausiM>,
+        <http://ceur-ws.org/Vol-80/#PekariV>,
+        <http://ceur-ws.org/Vol-80/#TimingeriH>,
+        <http://ceur-ws.org/Vol-80/#voniBergiJ> .
+
+<http://ceur-ws.org/Vol-80/#paperX40> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "Bildverarbeitung für ein motorisiertes Lichtmikroskop zur automatischen Lymphozytenidentifikation" ;
+    ns6:section <http://ceur-ws.org/Vol-80/#p196pdf> ;
+    ns2:author <http://ceur-ws.org/Vol-80/#BelleriM>,
+        <http://ceur-ws.org/Vol-80/#GemmekeiH>,
+        <http://ceur-ws.org/Vol-80/#KnedlitschekiG>,
+        <http://ceur-ws.org/Vol-80/#StotzkaiR>,
+        <http://ceur-ws.org/Vol-80/#WeibezahniKF> .
+
+<http://ceur-ws.org/Vol-80/#paperX49> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "Visualisierung und Interpretation von Stimmlippenschwingungen" ;
+    ns6:section <http://ceur-ws.org/Vol-80/#p240pdf> ;
+    ns2:author <http://ceur-ws.org/Vol-80/#D%C3%B6llingeriM>,
+        <http://ceur-ws.org/Vol-80/#EysholdtiU>,
+        <http://ceur-ws.org/Vol-80/#HoppeiU>,
+        <http://ceur-ws.org/Vol-80/#LohschelleriJ>,
+        <http://ceur-ws.org/Vol-80/#RosanowskiiF> .
+
+<http://ceur-ws.org/Vol-80/#paperX54> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "Modellierung und Visualisierung der dynamischen Eigenschaften des Tongenerators bei der Ersatzstimmgebung" ;
+    ns6:section <http://ceur-ws.org/Vol-80/#p264pdf> ;
+    ns2:author <http://ceur-ws.org/Vol-80/#D%C3%B6llingeriM>,
+        <http://ceur-ws.org/Vol-80/#EysholdtiU>,
+        <http://ceur-ws.org/Vol-80/#HoppeiU>,
+        <http://ceur-ws.org/Vol-80/#LohschelleriJ>,
+        <http://ceur-ws.org/Vol-80/#SchusteriM> .
+
+<http://ceur-ws.org/Vol-80/#paperX59> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "Evaluation der 3-D-Präzision eines bilddatengestützten chirurgischen Navigationssystems" ;
+    ns6:section <http://ceur-ws.org/Vol-80/#p289pdf> ;
+    ns2:author <http://ceur-ws.org/Vol-80/#BartziD>,
+        <http://ceur-ws.org/Vol-80/#HoffmanniJ>,
+        <http://ceur-ws.org/Vol-80/#ReinaueriF>,
+        <http://ceur-ws.org/Vol-80/#SchneideriM>,
+        <http://ceur-ws.org/Vol-80/#TroitzschiD> .
+
+<http://ceur-ws.org/Vol-80/#paperX64> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "Image Fusion of 3D MR-Images to improve the spatial resolution" ;
+    ns6:section <http://ceur-ws.org/Vol-80/#p313pdf> ;
+    ns2:author <http://ceur-ws.org/Vol-80/#HenniS>,
+        <http://ceur-ws.org/Vol-80/#MaiiJK>,
+        <http://ceur-ws.org/Vol-80/#VogelbuschiC>,
+        <http://ceur-ws.org/Vol-80/#VossiT>,
+        <http://ceur-ws.org/Vol-80/#WitschiK> .
+
+<http://ceur-ws.org/Vol-80/#paperX65> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "Registrierung von CT- und MRT-Volumendaten der Leber" ;
+    ns6:section <http://ceur-ws.org/Vol-80/#p318pdf> ;
+    ns2:author <http://ceur-ws.org/Vol-80/#B%C3%B6ttgeriT>,
+        <http://ceur-ws.org/Vol-80/#BendliR>,
+        <http://ceur-ws.org/Vol-80/#HerfarthiKK>,
+        <http://ceur-ws.org/Vol-80/#RuiteriNV>,
+        <http://ceur-ws.org/Vol-80/#StotzkaiR> .
+
+<http://ceur-ws.org/Vol-80/#paperX70> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "Segmentierung dreidimensionaler Objekte durch Interpolation beliebig orientierter, zweidimensionaler Segmentierungsergebnisse" ;
+    ns6:section <http://ceur-ws.org/Vol-80/#p343pdf> ;
+    ns2:author <http://ceur-ws.org/Vol-80/#EidiA>,
+        <http://ceur-ws.org/Vol-80/#HassenpflugiP>,
+        <http://ceur-ws.org/Vol-80/#MeinzeriHP>,
+        <http://ceur-ws.org/Vol-80/#VetteriM>,
+        <http://ceur-ws.org/Vol-80/#WolfiI> .
+
+<http://ceur-ws.org/Vol-80/#paperX78> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "Modulares Design von webbasierten Benutzerschnittstellen für inhaltsbasierte Zugriffe auf medizinische Bilddaten" ;
+    ns6:section <http://ceur-ws.org/Vol-80/#p383pdf> ;
+    ns2:author <http://ceur-ws.org/Vol-80/#G%C3%BCldiMO>,
+        <http://ceur-ws.org/Vol-80/#KeysersiD>,
+        <http://ceur-ws.org/Vol-80/#LehmanniTM>,
+        <http://ceur-ws.org/Vol-80/#PlodowskiiB>,
+        <http://ceur-ws.org/Vol-80/#SchubertiH> .
+
+<http://ceur-ws.org/Vol-80/#paperX83> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "Segmentierung von Hepatozellulären Karzinomen mit Fuzzy-Connectedness" ;
+    ns6:section <http://ceur-ws.org/Vol-80/#p408pdf> ;
+    ns2:author <http://ceur-ws.org/Vol-80/#BehrensiS>,
+        <http://ceur-ws.org/Vol-80/#MeieriSA>,
+        <http://ceur-ws.org/Vol-80/#MildenbergeriP>,
+        <http://ceur-ws.org/Vol-80/#PeitgeniHO>,
+        <http://ceur-ws.org/Vol-80/#SchenkiA> .
+
+<http://ceur-ws.org/Vol-80/#paperX84> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "Fully automatic segmentation and evaluation of lateral spine radiographs" ;
+    ns6:section <http://ceur-ws.org/Vol-80/#p413pdf> ;
+    ns2:author <http://ceur-ws.org/Vol-80/#BrandtiAS>,
+        <http://ceur-ws.org/Vol-80/#G%C3%BCntheriRW>,
+        <http://ceur-ws.org/Vol-80/#KohneniM>,
+        <http://ceur-ws.org/Vol-80/#MahnkeniA>,
+        <http://ceur-ws.org/Vol-80/#WeiniB> .
+
+<http://ceur-ws.org/Vol-80/#paperX18> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "Finite Element Simulation of the Breast's Deformation during Mammography to Generate a Deformation Model for Registration" ;
+    ns6:section <http://ceur-ws.org/Vol-80/#p086pdf> ;
+    ns2:author <http://ceur-ws.org/Vol-80/#GemmekeiH>,
+        <http://ceur-ws.org/Vol-80/#KaiseriWA>,
+        <http://ceur-ws.org/Vol-80/#M%C3%BClleriTO>,
+        <http://ceur-ws.org/Vol-80/#ReichenbachiJR>,
+        <http://ceur-ws.org/Vol-80/#RuiteriNV>,
+        <http://ceur-ws.org/Vol-80/#StotzkaiR> .
+
+<http://ceur-ws.org/Vol-80/#paperX3> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "Automatische Grobregistrierung intraoperativ akquirierter 3D-Daten von Gesichtsoberflächen anhand ihrer Gauß'schen Abbilder" ;
+    ns6:section <http://ceur-ws.org/Vol-80/#p011pdf> ;
+    ns2:author <http://ceur-ws.org/Vol-80/#BenziM>,
+        <http://ceur-ws.org/Vol-80/#H%C3%A4usleriG>,
+        <http://ceur-ws.org/Vol-80/#MaieriT>,
+        <http://ceur-ws.org/Vol-80/#NeukamiFW>,
+        <http://ceur-ws.org/Vol-80/#NkenkeiE>,
+        <http://ceur-ws.org/Vol-80/#VogtiF> .
+
+<http://ceur-ws.org/Vol-80/#paperX30> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "3D-Lungenlappen-Segmentierung durch Kombination von Region Growing, Distanz- und Wasserscheiden-Transformation" ;
+    ns6:section <http://ceur-ws.org/Vol-80/#p146pdf> ;
+    ns2:author <http://ceur-ws.org/Vol-80/#DickeniV>,
+        <http://ceur-ws.org/Vol-80/#HahniK>,
+        <http://ceur-ws.org/Vol-80/#HindennachiM>,
+        <http://ceur-ws.org/Vol-80/#Kra%C3%9FiS>,
+        <http://ceur-ws.org/Vol-80/#KuhnigkiJM>,
+        <http://ceur-ws.org/Vol-80/#PeitgeniHO> .
+
+<http://ceur-ws.org/Vol-80/#paperX39> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "Farbtexturbasierte optische Biopsie auf hochauflösenden endoskopischen Farbbildern des Ösophagus" ;
+    ns6:section <http://ceur-ws.org/Vol-80/#p191pdf> ;
+    ns2:author <http://ceur-ws.org/Vol-80/#GrobeiM>,
+        <http://ceur-ws.org/Vol-80/#M%C3%BChldorferiS>,
+        <http://ceur-ws.org/Vol-80/#M%C3%BCnzenmayeriC>,
+        <http://ceur-ws.org/Vol-80/#MayingeriB>,
+        <http://ceur-ws.org/Vol-80/#VolkiH>,
+        <http://ceur-ws.org/Vol-80/#WittenbergiT> .
+
+<http://ceur-ws.org/Vol-80/#paperX46> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "3D-Visualisierung vitaler Knochenzellen" ;
+    ns6:section <http://ceur-ws.org/Vol-80/#p225pdf> ;
+    ns2:author <http://ceur-ws.org/Vol-80/#AnnackeriK>,
+        <http://ceur-ws.org/Vol-80/#BingmanniD>,
+        <http://ceur-ws.org/Vol-80/#LipinskiiHG>,
+        <http://ceur-ws.org/Vol-80/#MelzeriK>,
+        <http://ceur-ws.org/Vol-80/#RothiA>,
+        <http://ceur-ws.org/Vol-80/#WiemanniM> .
+
+<http://ceur-ws.org/Vol-80/#paperX50> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "Projektionsansichten zur Vereinfachung der Diagnose von multiplen Lungenrundherden in CT-Thorax-Aufnahmen" ;
+    ns6:section <http://ceur-ws.org/Vol-80/#p244pdf> ;
+    ns2:author <http://ceur-ws.org/Vol-80/#DickeniV>,
+        <http://ceur-ws.org/Vol-80/#Kra%C3%9FiS>,
+        <http://ceur-ws.org/Vol-80/#KuhnigkiJM>,
+        <http://ceur-ws.org/Vol-80/#PeitgeniHO>,
+        <http://ceur-ws.org/Vol-80/#SchubertiH>,
+        <http://ceur-ws.org/Vol-80/#WeiniB> .
+
+<http://ceur-ws.org/Vol-80/#paperX55> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "Visualisierung einer 3D-Sondennavigation zur Nadelpositionierung in Tumoren im CT-Datensatz für die interstitielle Brachytherapie" ;
+    ns6:section <http://ceur-ws.org/Vol-80/#p269pdf> ;
+    ns2:author <http://ceur-ws.org/Vol-80/#BeckeriR>,
+        <http://ceur-ws.org/Vol-80/#GlasbergeriA>,
+        <http://ceur-ws.org/Vol-80/#GottwaldiS>,
+        <http://ceur-ws.org/Vol-80/#KeszleriT>,
+        <http://ceur-ws.org/Vol-80/#RichteriD>,
+        <http://ceur-ws.org/Vol-80/#Stra%C3%9FmanniG> .
+
+<http://ceur-ws.org/Vol-80/#paperX60> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "Evaluation der rechnergestützen Bildverbesserung in der Videoendoskopie von Körperhöhlen" ;
+    ns6:section <http://ceur-ws.org/Vol-80/#p293pdf> ;
+    ns2:author <http://ceur-ws.org/Vol-80/#HohenbergeriW>,
+        <http://ceur-ws.org/Vol-80/#Kr%C3%BCgeriS>,
+        <http://ceur-ws.org/Vol-80/#NiemanniH>,
+        <http://ceur-ws.org/Vol-80/#PaulusiD>,
+        <http://ceur-ws.org/Vol-80/#SchickiCH>,
+        <http://ceur-ws.org/Vol-80/#VogtiF> .
+
+<http://ceur-ws.org/Vol-80/#paperX62> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "Automatische Berechnung orthopädischer Maßzahlen auf der Basis virtueller dreidimensionaler Modelle der Hüfte" ;
+    ns6:section <http://ceur-ws.org/Vol-80/#p303pdf> ;
+    ns2:author <http://ceur-ws.org/Vol-80/#EhrhardtiJ>,
+        <http://ceur-ws.org/Vol-80/#HandelsiH>,
+        <http://ceur-ws.org/Vol-80/#MalinaiT>,
+        <http://ceur-ws.org/Vol-80/#P%C3%B6ppliSJ>,
+        <http://ceur-ws.org/Vol-80/#Pl%C3%B6tziW>,
+        <http://ceur-ws.org/Vol-80/#StrathmanniB> .
+
+<http://ceur-ws.org/Vol-80/#paperX68> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "3D-Segmentierung des menschlichen Tracheobronchialbaums aus CT-Bilddaten" ;
+    ns6:section <http://ceur-ws.org/Vol-80/#p333pdf> ;
+    ns2:author <http://ceur-ws.org/Vol-80/#BrookiBS>,
+        <http://ceur-ws.org/Vol-80/#HeusseliCP>,
+        <http://ceur-ws.org/Vol-80/#KauczoriHU>,
+        <http://ceur-ws.org/Vol-80/#LeyiS>,
+        <http://ceur-ws.org/Vol-80/#MayeriD>,
+        <http://ceur-ws.org/Vol-80/#ThustiS> .
+
+<http://ceur-ws.org/Vol-80/#paperX85> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "Endoskopische Lichtfelder mit einem kameraführenden Roboter" ;
+    ns6:section <http://ceur-ws.org/Vol-80/#p418pdf> ;
+    ns2:author <http://ceur-ws.org/Vol-80/#HohenbergeriW>,
+        <http://ceur-ws.org/Vol-80/#Kr%C3%BCgeriS>,
+        <http://ceur-ws.org/Vol-80/#NiemanniH>,
+        <http://ceur-ws.org/Vol-80/#PaulusiD>,
+        <http://ceur-ws.org/Vol-80/#SchickiCH>,
+        <http://ceur-ws.org/Vol-80/#VogtiF> .
+
+<http://ceur-ws.org/Vol-80/#paperX86> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "Auswertung von Testbolusdaten. Untersuchungsplanung und Berechnung von Herzfunktionsparametern" ;
+    ns6:section <http://ceur-ws.org/Vol-80/#p423pdf> ;
+    ns2:author <http://ceur-ws.org/Vol-80/#Dreschler-FischeriL>,
+        <http://ceur-ws.org/Vol-80/#HansmanniW>,
+        <http://ceur-ws.org/Vol-80/#HennemuthiA>,
+        <http://ceur-ws.org/Vol-80/#KlotziE>,
+        <http://ceur-ws.org/Vol-80/#MahnkeniA>,
+        <http://ceur-ws.org/Vol-80/#WolsifferiK> .
+
+<http://ceur-ws.org/Vol-80/#paperX88> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "Erkennung von Kopfbewegungen während Emissionstomographischer Datenaufnahmen" ;
+    ns6:section <http://ceur-ws.org/Vol-80/#p433pdf> ;
+    ns2:author <http://ceur-ws.org/Vol-80/#BiersackiHJ>,
+        <http://ceur-ws.org/Vol-80/#BoscheniF>,
+        <http://ceur-ws.org/Vol-80/#JoeiA>,
+        <http://ceur-ws.org/Vol-80/#K%C3%BChniKU>,
+        <http://ceur-ws.org/Vol-80/#R%C3%B6deliR>,
+        <http://ceur-ws.org/Vol-80/#ReichmanniK> .
+
+<http://ceur-ws.org/Vol-80/#paperX16> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "Robuste Analyse von Gefäßstrukturen auf Basis einer 3D-Skelettierung" ;
+    ns6:section <http://ceur-ws.org/Vol-80/#p076pdf> ;
+    ns2:author <http://ceur-ws.org/Vol-80/#C%C3%A1rdenasiCE>,
+        <http://ceur-ws.org/Vol-80/#HassenpflugiP>,
+        <http://ceur-ws.org/Vol-80/#MeinzeriHP>,
+        <http://ceur-ws.org/Vol-80/#Sch%C3%B6bingeriM>,
+        <http://ceur-ws.org/Vol-80/#ThorniM>,
+        <http://ceur-ws.org/Vol-80/#VetteriM>,
+        <http://ceur-ws.org/Vol-80/#WolfiI> .
+
+<http://ceur-ws.org/Vol-80/#paperX38> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "A Segmentation and Analysis Method for MRI Data of the Human Vocal Tract" ;
+    ns6:section <http://ceur-ws.org/Vol-80/#p186pdf> ;
+    ns2:author <http://ceur-ws.org/Vol-80/#BehrendsiJ>,
+        <http://ceur-ws.org/Vol-80/#HahniK>,
+        <http://ceur-ws.org/Vol-80/#HooleiP>,
+        <http://ceur-ws.org/Vol-80/#LeinsingeriGL>,
+        <http://ceur-ws.org/Vol-80/#ReiseriM>,
+        <http://ceur-ws.org/Vol-80/#TillmanniHG>,
+        <http://ceur-ws.org/Vol-80/#Wism%C3%BClleriA> .
+
+<http://ceur-ws.org/Vol-80/#paperX5> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "Non-linear Intraoperative Correction of Brain Shift with 1.5 T Data" ;
+    ns6:section <http://ceur-ws.org/Vol-80/#p021pdf> ;
+    ns2:author <http://ceur-ws.org/Vol-80/#BaueriM>,
+        <http://ceur-ws.org/Vol-80/#GreineriG>,
+        <http://ceur-ws.org/Vol-80/#HastreiteriP>,
+        <http://ceur-ws.org/Vol-80/#NimskyiC>,
+        <http://ceur-ws.org/Vol-80/#Rezk-SalamaiC>,
+        <http://ceur-ws.org/Vol-80/#SozaiG>,
+        <http://ceur-ws.org/Vol-80/#VegaiF> .
+
+<http://ceur-ws.org/Vol-80/#paperX51> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "Computer Aided Liver Surgery Planning Based on Augmented Reality Techniques" ;
+    ns6:section <http://ceur-ws.org/Vol-80/#p249pdf> ;
+    ns2:author <http://ceur-ws.org/Vol-80/#BeicheliR>,
+        <http://ceur-ws.org/Vol-80/#BornikiA>,
+        <http://ceur-ws.org/Vol-80/#GotschuliiG>,
+        <http://ceur-ws.org/Vol-80/#LeberliF>,
+        <http://ceur-ws.org/Vol-80/#ReitingeriB>,
+        <http://ceur-ws.org/Vol-80/#SonkaiM>,
+        <http://ceur-ws.org/Vol-80/#SorantiniE> .
+
+<http://ceur-ws.org/Vol-80/#paperX56> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "Projektorbasierte erweiterte Realität in der interstitiellen Brachytherapy" ;
+    ns6:section <http://ceur-ws.org/Vol-80/#p274pdf> ;
+    ns2:author <http://ceur-ws.org/Vol-80/#D%C3%A4uberiS>,
+        <http://ceur-ws.org/Vol-80/#HarmsiW>,
+        <http://ceur-ws.org/Vol-80/#HoppeiH>,
+        <http://ceur-ws.org/Vol-80/#KrempieniR>,
+        <http://ceur-ws.org/Vol-80/#SchorriO>,
+        <http://ceur-ws.org/Vol-80/#W%C3%B6rniH>,
+        <http://ceur-ws.org/Vol-80/#WannenmacheriM> .
+
+<http://ceur-ws.org/Vol-80/#paperX79> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "Automatische Kategorisierung von medizinischem Bildmaterial in einen multiaxialen monohierarchischen Code" ;
+    ns6:section <http://ceur-ws.org/Vol-80/#p388pdf> ;
+    ns2:author <http://ceur-ws.org/Vol-80/#FischeriB>,
+        <http://ceur-ws.org/Vol-80/#G%C3%BCldiMO>,
+        <http://ceur-ws.org/Vol-80/#KeysersiD>,
+        <http://ceur-ws.org/Vol-80/#LehmanniTM>,
+        <http://ceur-ws.org/Vol-80/#LeisteniM>,
+        <http://ceur-ws.org/Vol-80/#PlodowskiiB>,
+        <http://ceur-ws.org/Vol-80/#SchubertiH> .
+
+<http://ceur-ws.org/Vol-80/#paperX82> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "High-Precision Computer-Assisted Segmentation of Multispectral MRI Data Sets in Patients with Multiple Sclerosis by a Flexible Machine Learning Image Analysis Approach" ;
+    ns6:section <http://ceur-ws.org/Vol-80/#p403pdf> ;
+    ns2:author <http://ceur-ws.org/Vol-80/#AueriD>,
+        <http://ceur-ws.org/Vol-80/#BehrendsiJ>,
+        <http://ceur-ws.org/Vol-80/#HahniK>,
+        <http://ceur-ws.org/Vol-80/#JukiciM>,
+        <http://ceur-ws.org/Vol-80/#LangeiO>,
+        <http://ceur-ws.org/Vol-80/#ReiseriM>,
+        <http://ceur-ws.org/Vol-80/#Wism%C3%BClleriA> .
+
+<http://ceur-ws.org/Vol-80/#paperX89> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "Aufbau eines Ultraschall-Computertomographen für die Brustkrebsdiagnostik" ;
+    ns6:section <http://ceur-ws.org/Vol-80/#p438pdf> ;
+    ns2:author <http://ceur-ws.org/Vol-80/#DeckiTM>,
+        <http://ceur-ws.org/Vol-80/#ElahiiSV>,
+        <http://ceur-ws.org/Vol-80/#G%C3%B6beliG>,
+        <http://ceur-ws.org/Vol-80/#GemmekeiH>,
+        <http://ceur-ws.org/Vol-80/#M%C3%BClleriTO>,
+        <http://ceur-ws.org/Vol-80/#Schlote-HolubekiK>,
+        <http://ceur-ws.org/Vol-80/#StotzkaiR> .
+
+<http://ceur-ws.org/Vol-80/#paperX52> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "3D-Nachverarbeitung in der CT-Bildgebung des Felsenbeins" ;
+    ns6:section <http://ceur-ws.org/Vol-80/#p254pdf> ;
+    ns2:author <http://ceur-ws.org/Vol-80/#BartlingiS>,
+        <http://ceur-ws.org/Vol-80/#BeckeriH>,
+        <http://ceur-ws.org/Vol-80/#BurmeisteriH>,
+        <http://ceur-ws.org/Vol-80/#IssingiP>,
+        <http://ceur-ws.org/Vol-80/#LenarziT>,
+        <http://ceur-ws.org/Vol-80/#MatthiesiH>,
+        <http://ceur-ws.org/Vol-80/#PeldschussiK>,
+        <http://ceur-ws.org/Vol-80/#RodtiT> .
+
+<http://ceur-ws.org/Vol-80/#paperX67> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "Intraoperative Bildverarbeitung zur Verbesserung MRT-gestützter Interventionen. Erweiterung auf nicht-neurochirurgische Anwendungen" ;
+    ns6:section <http://ceur-ws.org/Vol-80/#p328pdf> ;
+    ns2:author <http://ceur-ws.org/Vol-80/#BootziF>,
+        <http://ceur-ws.org/Vol-80/#BusseiH>,
+        <http://ceur-ws.org/Vol-80/#KahniT>,
+        <http://ceur-ws.org/Vol-80/#MocheiM>,
+        <http://ceur-ws.org/Vol-80/#SchmitgeniA>,
+        <http://ceur-ws.org/Vol-80/#SchneideriJP>,
+        <http://ceur-ws.org/Vol-80/#ScholziR>,
+        <http://ceur-ws.org/Vol-80/#SeiwertsiM> .
+
+<http://ceur-ws.org/Vol-80/#paperX87> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "Kombination von Bildanalyse und physikalischer Simulation für die Planung von Behandlungen maligner Lebertumoren mittels laserinduzierter Thermotherapie" ;
+    ns6:section <http://ceur-ws.org/Vol-80/#p428pdf> ;
+    ns2:author <http://ceur-ws.org/Vol-80/#GermeriCT>,
+        <http://ceur-ws.org/Vol-80/#LehmanniK>,
+        <http://ceur-ws.org/Vol-80/#LittmanniA>,
+        <http://ceur-ws.org/Vol-80/#PeitgeniHO>,
+        <http://ceur-ws.org/Vol-80/#PreimiB>,
+        <http://ceur-ws.org/Vol-80/#RitziJP>,
+        <http://ceur-ws.org/Vol-80/#RogganiA>,
+        <http://ceur-ws.org/Vol-80/#SchenkiA> .
+
+<http://ceur-ws.org/Vol-80/#paperX69> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "Automated Segmentation of the Optic Nerve Head for Glaucoma Diagnosis" ;
+    ns6:section <http://ceur-ws.org/Vol-80/#p338pdf> ;
+    ns2:author <http://ceur-ws.org/Vol-80/#Chr%C3%A1stekiR>,
+        <http://ceur-ws.org/Vol-80/#DonathiK>,
+        <http://ceur-ws.org/Vol-80/#HothorniT>,
+        <http://ceur-ws.org/Vol-80/#L%C3%A4mmeriR>,
+        <http://ceur-ws.org/Vol-80/#LauseniB>,
+        <http://ceur-ws.org/Vol-80/#MardiniCY>,
+        <http://ceur-ws.org/Vol-80/#MichelsoniG>,
+        <http://ceur-ws.org/Vol-80/#NiemanniH>,
+        <http://ceur-ws.org/Vol-80/#WolfiM> .
+
+<http://ceur-ws.org/Vol-80/#paperX74> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "Establishing an International Reference Image Database for Research and Development in Medical Image Processing" ;
+    ns6:section <http://ceur-ws.org/Vol-80/#p363pdf> ;
+    ns2:author <http://ceur-ws.org/Vol-80/#HorschiA>,
+        <http://ceur-ws.org/Vol-80/#PrinziM>,
+        <http://ceur-ws.org/Vol-80/#SchneideriM>,
+        <http://ceur-ws.org/Vol-80/#Sipil%C3%A4iO>,
+        <http://ceur-ws.org/Vol-80/#SpinnleriK>,
+        <http://ceur-ws.org/Vol-80/#Vall%C3%A9eiJP>,
+        <http://ceur-ws.org/Vol-80/#Verdonck-deiLeeuwiI>,
+        <http://ceur-ws.org/Vol-80/#VogliR>,
+        <http://ceur-ws.org/Vol-80/#WittenbergiT>,
+        <http://ceur-ws.org/Vol-80/#ZahlmanniG> .
+
+<http://ceur-ws.org/Vol-80/#paperX12> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-80/> ;
+    ns5:title "Intraoperative Gefäßrekonstruktion für die multimodale Registrierung zur bildgestützten Navigation in der Leberchirurgie" ;
+    ns6:section <http://ceur-ws.org/Vol-80/#p056pdf> ;
+    ns2:author <http://ceur-ws.org/Vol-80/#B%C3%BCchleriMW>,
+        <http://ceur-ws.org/Vol-80/#GrenacheriL>,
+        <http://ceur-ws.org/Vol-80/#HassenpflugiP>,
+        <http://ceur-ws.org/Vol-80/#LudwigiR>,
+        <http://ceur-ws.org/Vol-80/#MeinzeriHP>,
+        <http://ceur-ws.org/Vol-80/#RichteriGM>,
+        <http://ceur-ws.org/Vol-80/#Sch%C3%B6bingeriM>,
+        <http://ceur-ws.org/Vol-80/#ThorniM>,
+        <http://ceur-ws.org/Vol-80/#UhliW>,
+        <http://ceur-ws.org/Vol-80/#VetteriM>,
+        <http://ceur-ws.org/Vol-80/#WolfiI> .
+
+<http://ceur-ws.org/Vol-80/> a ns1:Proceedings ;
+    ns1:hasPart <http://ceur-ws.org/Vol-80/#paperX1>,
+        <http://ceur-ws.org/Vol-80/#paperX10>,
+        <http://ceur-ws.org/Vol-80/#paperX11>,
+        <http://ceur-ws.org/Vol-80/#paperX12>,
+        <http://ceur-ws.org/Vol-80/#paperX13>,
+        <http://ceur-ws.org/Vol-80/#paperX14>,
+        <http://ceur-ws.org/Vol-80/#paperX15>,
+        <http://ceur-ws.org/Vol-80/#paperX16>,
+        <http://ceur-ws.org/Vol-80/#paperX17>,
+        <http://ceur-ws.org/Vol-80/#paperX18>,
+        <http://ceur-ws.org/Vol-80/#paperX19>,
+        <http://ceur-ws.org/Vol-80/#paperX2>,
+        <http://ceur-ws.org/Vol-80/#paperX20>,
+        <http://ceur-ws.org/Vol-80/#paperX21>,
+        <http://ceur-ws.org/Vol-80/#paperX22>,
+        <http://ceur-ws.org/Vol-80/#paperX23>,
+        <http://ceur-ws.org/Vol-80/#paperX24>,
+        <http://ceur-ws.org/Vol-80/#paperX25>,
+        <http://ceur-ws.org/Vol-80/#paperX26>,
+        <http://ceur-ws.org/Vol-80/#paperX27>,
+        <http://ceur-ws.org/Vol-80/#paperX28>,
+        <http://ceur-ws.org/Vol-80/#paperX29>,
+        <http://ceur-ws.org/Vol-80/#paperX3>,
+        <http://ceur-ws.org/Vol-80/#paperX30>,
+        <http://ceur-ws.org/Vol-80/#paperX31>,
+        <http://ceur-ws.org/Vol-80/#paperX32>,
+        <http://ceur-ws.org/Vol-80/#paperX33>,
+        <http://ceur-ws.org/Vol-80/#paperX34>,
+        <http://ceur-ws.org/Vol-80/#paperX35>,
+        <http://ceur-ws.org/Vol-80/#paperX36>,
+        <http://ceur-ws.org/Vol-80/#paperX37>,
+        <http://ceur-ws.org/Vol-80/#paperX38>,
+        <http://ceur-ws.org/Vol-80/#paperX39>,
+        <http://ceur-ws.org/Vol-80/#paperX4>,
+        <http://ceur-ws.org/Vol-80/#paperX40>,
+        <http://ceur-ws.org/Vol-80/#paperX41>,
+        <http://ceur-ws.org/Vol-80/#paperX42>,
+        <http://ceur-ws.org/Vol-80/#paperX43>,
+        <http://ceur-ws.org/Vol-80/#paperX44>,
+        <http://ceur-ws.org/Vol-80/#paperX45>,
+        <http://ceur-ws.org/Vol-80/#paperX46>,
+        <http://ceur-ws.org/Vol-80/#paperX47>,
+        <http://ceur-ws.org/Vol-80/#paperX48>,
+        <http://ceur-ws.org/Vol-80/#paperX49>,
+        <http://ceur-ws.org/Vol-80/#paperX5>,
+        <http://ceur-ws.org/Vol-80/#paperX50>,
+        <http://ceur-ws.org/Vol-80/#paperX51>,
+        <http://ceur-ws.org/Vol-80/#paperX52>,
+        <http://ceur-ws.org/Vol-80/#paperX53>,
+        <http://ceur-ws.org/Vol-80/#paperX54>,
+        <http://ceur-ws.org/Vol-80/#paperX55>,
+        <http://ceur-ws.org/Vol-80/#paperX56>,
+        <http://ceur-ws.org/Vol-80/#paperX57>,
+        <http://ceur-ws.org/Vol-80/#paperX58>,
+        <http://ceur-ws.org/Vol-80/#paperX59>,
+        <http://ceur-ws.org/Vol-80/#paperX6>,
+        <http://ceur-ws.org/Vol-80/#paperX60>,
+        <http://ceur-ws.org/Vol-80/#paperX61>,
+        <http://ceur-ws.org/Vol-80/#paperX62>,
+        <http://ceur-ws.org/Vol-80/#paperX63>,
+        <http://ceur-ws.org/Vol-80/#paperX64>,
+        <http://ceur-ws.org/Vol-80/#paperX65>,
+        <http://ceur-ws.org/Vol-80/#paperX66>,
+        <http://ceur-ws.org/Vol-80/#paperX67>,
+        <http://ceur-ws.org/Vol-80/#paperX68>,
+        <http://ceur-ws.org/Vol-80/#paperX69>,
+        <http://ceur-ws.org/Vol-80/#paperX7>,
+        <http://ceur-ws.org/Vol-80/#paperX70>,
+        <http://ceur-ws.org/Vol-80/#paperX71>,
+        <http://ceur-ws.org/Vol-80/#paperX72>,
+        <http://ceur-ws.org/Vol-80/#paperX73>,
+        <http://ceur-ws.org/Vol-80/#paperX74>,
+        <http://ceur-ws.org/Vol-80/#paperX75>,
+        <http://ceur-ws.org/Vol-80/#paperX76>,
+        <http://ceur-ws.org/Vol-80/#paperX77>,
+        <http://ceur-ws.org/Vol-80/#paperX78>,
+        <http://ceur-ws.org/Vol-80/#paperX79>,
+        <http://ceur-ws.org/Vol-80/#paperX8>,
+        <http://ceur-ws.org/Vol-80/#paperX80>,
+        <http://ceur-ws.org/Vol-80/#paperX81>,
+        <http://ceur-ws.org/Vol-80/#paperX82>,
+        <http://ceur-ws.org/Vol-80/#paperX83>,
+        <http://ceur-ws.org/Vol-80/#paperX84>,
+        <http://ceur-ws.org/Vol-80/#paperX85>,
+        <http://ceur-ws.org/Vol-80/#paperX86>,
+        <http://ceur-ws.org/Vol-80/#paperX87>,
+        <http://ceur-ws.org/Vol-80/#paperX88>,
+        <http://ceur-ws.org/Vol-80/#paperX89>,
+        <http://ceur-ws.org/Vol-80/#paperX9>,
+        <http://ceur-ws.org/Vol-80/#paperX90> ;
+    ns1:hasSession <http://ceur-ws.org/Vol-80/#p001pdf>,
+        <http://ceur-ws.org/Vol-80/#p006pdf>,
+        <http://ceur-ws.org/Vol-80/#p011pdf>,
+        <http://ceur-ws.org/Vol-80/#p016pdf>,
+        <http://ceur-ws.org/Vol-80/#p021pdf>,
+        <http://ceur-ws.org/Vol-80/#p026pdf>,
+        <http://ceur-ws.org/Vol-80/#p031pdf>,
+        <http://ceur-ws.org/Vol-80/#p036pdf>,
+        <http://ceur-ws.org/Vol-80/#p041pdf>,
+        <http://ceur-ws.org/Vol-80/#p046pdf>,
+        <http://ceur-ws.org/Vol-80/#p051pdf>,
+        <http://ceur-ws.org/Vol-80/#p056pdf>,
+        <http://ceur-ws.org/Vol-80/#p061pdf>,
+        <http://ceur-ws.org/Vol-80/#p066pdf>,
+        <http://ceur-ws.org/Vol-80/#p071pdf>,
+        <http://ceur-ws.org/Vol-80/#p076pdf>,
+        <http://ceur-ws.org/Vol-80/#p081pdf>,
+        <http://ceur-ws.org/Vol-80/#p086pdf>,
+        <http://ceur-ws.org/Vol-80/#p091pdf>,
+        <http://ceur-ws.org/Vol-80/#p096pdf>,
+        <http://ceur-ws.org/Vol-80/#p101pdf>,
+        <http://ceur-ws.org/Vol-80/#p106pdf>,
+        <http://ceur-ws.org/Vol-80/#p111pdf>,
+        <http://ceur-ws.org/Vol-80/#p116pdf>,
+        <http://ceur-ws.org/Vol-80/#p121pdf>,
+        <http://ceur-ws.org/Vol-80/#p126pdf>,
+        <http://ceur-ws.org/Vol-80/#p131pdf>,
+        <http://ceur-ws.org/Vol-80/#p136pdf>,
+        <http://ceur-ws.org/Vol-80/#p141pdf>,
+        <http://ceur-ws.org/Vol-80/#p146pdf>,
+        <http://ceur-ws.org/Vol-80/#p151pdf>,
+        <http://ceur-ws.org/Vol-80/#p156pdf>,
+        <http://ceur-ws.org/Vol-80/#p161pdf>,
+        <http://ceur-ws.org/Vol-80/#p166pdf>,
+        <http://ceur-ws.org/Vol-80/#p171pdf>,
+        <http://ceur-ws.org/Vol-80/#p176pdf>,
+        <http://ceur-ws.org/Vol-80/#p181pdf>,
+        <http://ceur-ws.org/Vol-80/#p186pdf>,
+        <http://ceur-ws.org/Vol-80/#p191pdf>,
+        <http://ceur-ws.org/Vol-80/#p196pdf>,
+        <http://ceur-ws.org/Vol-80/#p201pdf>,
+        <http://ceur-ws.org/Vol-80/#p206pdf>,
+        <http://ceur-ws.org/Vol-80/#p211pdf>,
+        <http://ceur-ws.org/Vol-80/#p216pdf>,
+        <http://ceur-ws.org/Vol-80/#p220pdf>,
+        <http://ceur-ws.org/Vol-80/#p225pdf>,
+        <http://ceur-ws.org/Vol-80/#p230pdf>,
+        <http://ceur-ws.org/Vol-80/#p235pdf>,
+        <http://ceur-ws.org/Vol-80/#p240pdf>,
+        <http://ceur-ws.org/Vol-80/#p244pdf>,
+        <http://ceur-ws.org/Vol-80/#p249pdf>,
+        <http://ceur-ws.org/Vol-80/#p254pdf>,
+        <http://ceur-ws.org/Vol-80/#p259pdf>,
+        <http://ceur-ws.org/Vol-80/#p264pdf>,
+        <http://ceur-ws.org/Vol-80/#p269pdf>,
+        <http://ceur-ws.org/Vol-80/#p274pdf>,
+        <http://ceur-ws.org/Vol-80/#p279pdf>,
+        <http://ceur-ws.org/Vol-80/#p284pdf>,
+        <http://ceur-ws.org/Vol-80/#p289pdf>,
+        <http://ceur-ws.org/Vol-80/#p293pdf>,
+        <http://ceur-ws.org/Vol-80/#p298pdf>,
+        <http://ceur-ws.org/Vol-80/#p303pdf>,
+        <http://ceur-ws.org/Vol-80/#p308pdf>,
+        <http://ceur-ws.org/Vol-80/#p313pdf>,
+        <http://ceur-ws.org/Vol-80/#p318pdf>,
+        <http://ceur-ws.org/Vol-80/#p323pdf>,
+        <http://ceur-ws.org/Vol-80/#p328pdf>,
+        <http://ceur-ws.org/Vol-80/#p333pdf>,
+        <http://ceur-ws.org/Vol-80/#p338pdf>,
+        <http://ceur-ws.org/Vol-80/#p343pdf>,
+        <http://ceur-ws.org/Vol-80/#p348pdf>,
+        <http://ceur-ws.org/Vol-80/#p353pdf>,
+        <http://ceur-ws.org/Vol-80/#p358pdf>,
+        <http://ceur-ws.org/Vol-80/#p363pdf>,
+        <http://ceur-ws.org/Vol-80/#p368pdf>,
+        <http://ceur-ws.org/Vol-80/#p373pdf>,
+        <http://ceur-ws.org/Vol-80/#p378pdf>,
+        <http://ceur-ws.org/Vol-80/#p383pdf>,
+        <http://ceur-ws.org/Vol-80/#p388pdf>,
+        <http://ceur-ws.org/Vol-80/#p393pdf>,
+        <http://ceur-ws.org/Vol-80/#p398pdf>,
+        <http://ceur-ws.org/Vol-80/#p403pdf>,
+        <http://ceur-ws.org/Vol-80/#p408pdf>,
+        <http://ceur-ws.org/Vol-80/#p413pdf>,
+        <http://ceur-ws.org/Vol-80/#p418pdf>,
+        <http://ceur-ws.org/Vol-80/#p423pdf>,
+        <http://ceur-ws.org/Vol-80/#p428pdf>,
+        <http://ceur-ws.org/Vol-80/#p433pdf>,
+        <http://ceur-ws.org/Vol-80/#p438pdf> ;
+    ns8:issued "2003-09-04T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:presentedAt <http://ceur-ws.org/Vol-80/#event> ;
+    ns2:editor <http://ceur-ws.org/Vol-80/#AlexanderiHorschiundiHans-PeteriMeinzer>,
+        <http://ceur-ws.org/Vol-80/#HerausgegebenivoniThomasiWittenberg> .
 

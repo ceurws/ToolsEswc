@@ -1,11 +1,12 @@
 @prefix ns1: <http://swrc.ontoware.org/ontology/#> .
 @prefix ns2: <http://xmlns.com/foaf/0.1/> .
 @prefix ns3: <http://www.w3.org/2002/07/owl#> .
-@prefix ns4: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns5: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns6: <http://purl.org/ontology/bibo/#> .
-@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns4: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns5: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns6: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns7: <http://purl.org/ontology/bibo/#> .
 @prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns9: <http://purl.org/dc/elements/1.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -156,13 +157,13 @@
     ns2:made <http://ceur-ws.org/Vol-253/#paper03> ;
     ns2:name "Yannis Avrithis" .
 
-<http://ceur-ws.org/Vol-253/#event> a ns4:WorkshopEvent ;
-    ns4:hasLocation <http://dbpedia.org/resource/Italy> ;
-    ns4:hasPart <http://ceur-ws.org/Vol-253/#part-KAMC> ;
-    ns4:isSubEventOf <http://ceur-ws.org/Vol-253/#conf> ;
-    ns8:beginsAtDatetime "2007-12-05T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:endsAtDatetime "2007-12-05T00:00:00+00:00"^^xsd:dateTime ;
-    ns5:license <http://choosealicense.com/licenses/no-license/> .
+<http://ceur-ws.org/Vol-253/#event> a ns5:WorkshopEvent ;
+    ns5:hasLocation <http://dbpedia.org/resource/Italy> ;
+    ns5:hasPart <http://ceur-ws.org/Vol-253/#part-CEUR-WS> ;
+    ns5:isSubEventOf <http://ceur-ws.org/Vol-253/#conf> ;
+    ns8:beginsAtDatetime "2007-12-10T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:endsAtDatetime "2007-12-10T00:00:00+00:00"^^xsd:dateTime ;
+    ns9:license "http://choosealicense.com/licenses/no-license/" .
 
 <http://ceur-ws.org/Vol-253/#NikosiSimou> a ns2:Person ;
     ns3:sameAs <http://ceur-ws.org/persons/NikosiSimou> ;
@@ -183,63 +184,59 @@
         <http://ceur-ws.org/Vol-253/#paper04> ;
     ns2:name "Vassilis Tzouvaras" .
 
-<http://ceur-ws.org/Vol-253/#paper02> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-253/> ;
-    ns5:title "A Generic Framework for Semantic Medical Image Retrieval" ;
-    ns6:section <http%3A//ceur-ws.org/Vol-253/%23ResearchPapers> ;
+<http://ceur-ws.org/Vol-253/#paper02> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-253/> ;
+    ns4:title "A Generic Framework for Semantic Medical Image Retrieval" ;
+    ns7:section <http://ceur-ws.org/Vol-253/#ResearchPapers> ;
     ns1:author <http://ceur-ws.org/Vol-253/#ManueliM%C3%B6ller>,
         <http://ceur-ws.org/Vol-253/#MichaeliSintek> .
 
-<http://ceur-ws.org/Vol-253/#paper05> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-253/> ;
-    ns5:title "Semantic Video Classification Based on Subtitles and Domain Terminologies" ;
-    ns6:section <http%3A//ceur-ws.org/Vol-253/%23ResearchPapers> ;
+<http://ceur-ws.org/Vol-253/#paper05> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-253/> ;
+    ns4:title "Semantic Video Classification Based on Subtitles and Domain Terminologies" ;
+    ns7:section <http://ceur-ws.org/Vol-253/#ResearchPapers> ;
     ns1:author <http://ceur-ws.org/Vol-253/#PolyxeniiKatsiouli>,
         <http://ceur-ws.org/Vol-253/#StathesiHadjiefthymiades>,
         <http://ceur-ws.org/Vol-253/#VassileiosiTsetsos> .
 
-<http://ceur-ws.org/Vol-253/#paper03> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-253/> ;
-    ns5:title "Towards Semantic Multimedia Indexing by Classification & Reasoning on Textual Metadata" ;
-    ns6:section <http%3A//ceur-ws.org/Vol-253/%23ResearchPapers> ;
+<http://ceur-ws.org/Vol-253/#paper03> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-253/> ;
+    ns4:title "Towards Semantic Multimedia Indexing by Classification & Reasoning on Textual Metadata" ;
+    ns7:section <http://ceur-ws.org/Vol-253/#ResearchPapers> ;
     ns1:author <http://ceur-ws.org/Vol-253/#NikosiSimou>,
         <http://ceur-ws.org/Vol-253/#PhivosiMylonas>,
         <http://ceur-ws.org/Vol-253/#VassilisiTzouvaras>,
         <http://ceur-ws.org/Vol-253/#YannisiAvrithis> .
 
-<http://ceur-ws.org/Vol-253/#paper06> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-253/> ;
-    ns5:title "Compressed Domain Features Extraction for Shot Characterization" ;
-    ns6:section <http%3A//ceur-ws.org/Vol-253/%23ResearchPapers> ;
+<http://ceur-ws.org/Vol-253/#paper06> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-253/> ;
+    ns4:title "Compressed Domain Features Extraction for Shot Characterization" ;
+    ns7:section <http://ceur-ws.org/Vol-253/#ResearchPapers> ;
     ns1:author <http://ceur-ws.org/Vol-253/#CostantinoiGrana>,
         <http://ceur-ws.org/Vol-253/#DanieleiBorghesani>,
         <http://ceur-ws.org/Vol-253/#RitaiCucchiara>,
         <http://ceur-ws.org/Vol-253/#RobertoiVezzani> .
 
-<http://ceur-ws.org/Vol-253/#paper01> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-253/> ;
-    ns5:title "Legal Knowledge Acquisition and Multimedia Applications" ;
-    ns6:section <http%3A//ceur-ws.org/Vol-253/%23ResearchPapers> ;
+<http://ceur-ws.org/Vol-253/#paper01> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-253/> ;
+    ns4:title "Legal Knowledge Acquisition and Multimedia Applications" ;
+    ns7:section <http://ceur-ws.org/Vol-253/#ResearchPapers> ;
     ns1:author <http://ceur-ws.org/Vol-253/#CiroiGracia>,
         <http://ceur-ws.org/Vol-253/#JordiiCarrabina>,
         <http://ceur-ws.org/Vol-253/#MartaiPoblet>,
         <http://ceur-ws.org/Vol-253/#PompeuiCasanovas>,
         <http://ceur-ws.org/Vol-253/#XavieriBinefa> .
 
-<http%3A//ceur-ws.org/Vol-253/%23ResearchPapers> a ns4:SessionEvent ;
-    ns4:partOf <http://ceur-ws.org/Vol-253/> ;
-    ns5:title "Research Papers" .
-
-<http://ceur-ws.org/Vol-253/> a ns4:Proceedings ;
-    ns4:hasPart <http://ceur-ws.org/Vol-253/#paper01>,
+<http://ceur-ws.org/Vol-253/> a ns5:Proceedings ;
+    ns5:hasPart <http://ceur-ws.org/Vol-253/#paper01>,
         <http://ceur-ws.org/Vol-253/#paper02>,
         <http://ceur-ws.org/Vol-253/#paper03>,
         <http://ceur-ws.org/Vol-253/#paper04>,
         <http://ceur-ws.org/Vol-253/#paper05>,
         <http://ceur-ws.org/Vol-253/#paper06> ;
-    ns4:hasSession <http%3A//ceur-ws.org/Vol-253/%23ResearchPapers> ;
-    ns7:issued "2007-12-10T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:presentedAt <http://ceur-ws.org/Vol-253/#event> ;
+    ns5:hasSession <http://ceur-ws.org/Vol-253/#ResearchPapers> ;
+    ns6:issued "2007-12-10T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:presentedAt <http://ceur-ws.org/Vol-253/#event> ;
     ns1:editor <http://ceur-ws.org/Vol-253/#ChristianiEckes>,
         <http://ceur-ws.org/Vol-253/#JohniPereira>,
         <http://ceur-ws.org/Vol-253/#StamatiaiDasiopoulou>,
@@ -248,10 +245,14 @@
         <http://ceur-ws.org/Vol-253/#VassilisiTzouvaras>,
         <http://ceur-ws.org/Vol-253/#and> .
 
-<http://ceur-ws.org/Vol-253/#paper04> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-253/> ;
-    ns5:title "An Architecture for Mining Resources Complementary to Audio-Visual Streams" ;
-    ns6:section <http%3A//ceur-ws.org/Vol-253/%23ResearchPapers> ;
+<http://ceur-ws.org/Vol-253/#ResearchPapers> a ns5:SessionEvent ;
+    ns5:partOf <http://ceur-ws.org/Vol-253/> ;
+    ns4:title "Research Papers" .
+
+<http://ceur-ws.org/Vol-253/#paper04> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-253/> ;
+    ns4:title "An Architecture for Mining Resources Complementary to Audio-Visual Streams" ;
+    ns7:section <http://ceur-ws.org/Vol-253/#ResearchPapers> ;
     ns1:author <http://ceur-ws.org/Vol-253/#DavidiSadlier>,
         <http://ceur-ws.org/Vol-253/#HerwigiZeiner>,
         <http://ceur-ws.org/Vol-253/#JaniNemrava>,

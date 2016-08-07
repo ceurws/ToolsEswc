@@ -1,36 +1,127 @@
-@prefix ns1: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns2: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns3: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns4: <http://www.w3.org/2002/07/owl#> .
-@prefix ns5: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns1: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns2: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns3: <http://www.w3.org/2002/07/owl#> .
+@prefix ns4: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns5: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix ns6: <http://xmlns.com/foaf/0.1/> .
 @prefix ns7: <http://purl.org/ontology/bibo/#> .
-@prefix ns8: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns9: <http://purl.org/dc/elements/1.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-568/> a ns1:Proceedings ;
-    ns2:issued "2010-03-18T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:presentedAt <http://ceur-ws.org/Vol-568/#event> ;
-    ns3:editor <http://ceur-ws.org/Vol-568/#AnnetteiteniTeije>,
-        <http://ceur-ws.org/Vol-568/#HeineriStuckenschmidt> .
-
 <http://ceur-ws.org/Vol-568/#AnnetteiteniTeije> a ns6:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/AnnetteiteniTeije> ;
+    ns1:affiliation "" ;
+    ns3:sameAs <http://ceur-ws.org/persons/AnnetteiteniTeije> ;
     ns6:name "Annette ten Teije" .
 
+<http://ceur-ws.org/Vol-568/#ClemensiForster> a ns6:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/ClemensiForster> ;
+    ns6:made <http://ceur-ws.org/Vol-568/#paper7> ;
+    ns6:name "Clemens Forster" .
+
+<http://ceur-ws.org/Vol-568/#CristinaiSarasua> a ns6:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/CristinaiSarasua> ;
+    ns6:made <http://ceur-ws.org/Vol-568/#paper2> ;
+    ns6:name "Cristina Sarasua" .
+
+<http://ceur-ws.org/Vol-568/#DannyiCheng> a ns6:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/DannyiCheng> ;
+    ns6:made <http://ceur-ws.org/Vol-568/#paper8> ;
+    ns6:name "Danny Cheng" .
+
 <http://ceur-ws.org/Vol-568/#HeineriStuckenschmidt> a ns6:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/HeineriStuckenschmidt> ;
+    ns1:affiliation "" ;
+    ns3:sameAs <http://ceur-ws.org/persons/HeineriStuckenschmidt> ;
     ns6:name "Heiner Stuckenschmidt" .
 
-<http://ceur-ws.org/Vol-568/#event> a ns1:WorkshopEvent ;
-    ns1:hasLocation <http://dbpedia.org/resource/Greece> ;
-    ns1:hasPart <http://ceur-ws.org/Vol-568/#part-ESWC> ;
-    ns1:isSubEventOf <http://ceur-ws.org/Vol-568/#conf> ;
-    ns5:beginsAtDatetime "2010-05-01T00:00:00+00:00"^^xsd:dateTime ;
-    ns5:endsAtDatetime "2010-05-01T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:license <http://choosealicense.com/licenses/no-license/> ;
+<http://ceur-ws.org/Vol-568/#JamesiMcGlothlin> a ns6:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/JamesiMcGlothlin> ;
+    ns6:made <http://ceur-ws.org/Vol-568/#paper6> ;
+    ns6:name "James McGlothlin" .
+
+<http://ceur-ws.org/Vol-568/#SajjadiHussain> a ns6:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/SajjadiHussain> ;
+    ns6:made <http://ceur-ws.org/Vol-568/#paper5> ;
+    ns6:name "Sajjad Hussain" .
+
+<http://ceur-ws.org/Vol-568/#SamuriAraujo> a ns6:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/SamuriAraujo> ;
+    ns6:made <http://ceur-ws.org/Vol-568/#paper3> ;
+    ns6:name "Samur Araujo" .
+
+<http://ceur-ws.org/Vol-568/#SuvodeepiMazumdar> a ns6:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/SuvodeepiMazumdar> ;
+    ns6:made <http://ceur-ws.org/Vol-568/#paper1> ;
+    ns6:name "Suvodeep Mazumdar" .
+
+<http://ceur-ws.org/Vol-568/#ThomasiFischer> a ns6:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/ThomasiFischer> ;
+    ns6:made <http://ceur-ws.org/Vol-568/#paper4> ;
+    ns6:name "Thomas Fischer" .
+
+<http://ceur-ws.org/Vol-568/#event> a ns4:WorkshopEvent ;
+    ns4:hasLocation <http://dbpedia.org/resource/Greece> ;
+    ns4:hasPart <http://ceur-ws.org/Vol-568/#part-CEUR-WS> ;
+    ns4:isSubEventOf <http://ceur-ws.org/Vol-568/#conf> ;
+    ns8:beginsAtDatetime "2010-03-17T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:endsAtDatetime "2010-03-17T00:00:00+00:00"^^xsd:dateTime ;
+    ns9:license "http://choosealicense.com/licenses/no-license/" ;
     rdfs:seeAlso <http://ceur-ws.org/Vol-367/#event> .
+
+<http://ceur-ws.org/Vol-568/#paper1> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-568/> ;
+    ns2:title "Visualization of Large Datasets using Semantic Web Technologies" ;
+    ns1:author <http://ceur-ws.org/Vol-568/#SuvodeepiMazumdar> .
+
+<http://ceur-ws.org/Vol-568/#paper2> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-568/> ;
+    ns2:title "Towards Pattern-Based Knowledge about Ontological Resource Reuse" ;
+    ns1:author <http://ceur-ws.org/Vol-568/#CristinaiSarasua> .
+
+<http://ceur-ws.org/Vol-568/#paper3> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-568/> ;
+    ns2:title "I Remember I Have Seen This: How Can I Re-find it?" ;
+    ns1:author <http://ceur-ws.org/Vol-568/#SamuriAraujo> .
+
+<http://ceur-ws.org/Vol-568/#paper4> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-568/> ;
+    ns2:title "Using Semantic Web and Relational Learning in the Context of Risk Management" ;
+    ns1:author <http://ceur-ws.org/Vol-568/#ThomasiFischer> .
+
+<http://ceur-ws.org/Vol-568/#paper5> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-568/> ;
+    ns2:title "K-MORPH: Knowledge Morphing via Reconciliation of Contextualized Sub-ontologies" ;
+    ns1:author <http://ceur-ws.org/Vol-568/#SajjadiHussain> .
+
+<http://ceur-ws.org/Vol-568/#paper6> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-568/> ;
+    ns2:title "RDFVector: An Efficient and Scalable Schema for Semantic Web Knowledge Bases" ;
+    ns1:author <http://ceur-ws.org/Vol-568/#JamesiMcGlothlin> .
+
+<http://ceur-ws.org/Vol-568/#paper7> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-568/> ;
+    ns2:title "Semantic Technologies used in the Data Analysis Process: Measuring Customer Satisfaction in context" ;
+    ns1:author <http://ceur-ws.org/Vol-568/#ClemensiForster> .
+
+<http://ceur-ws.org/Vol-568/#paper8> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-568/> ;
+    ns2:title "A Framework towards Sustaining Scalable Community- Driven Ontology Engineering" ;
+    ns1:author <http://ceur-ws.org/Vol-568/#DannyiCheng> .
+
+<http://ceur-ws.org/Vol-568/> a ns4:Proceedings ;
+    ns4:hasPart <http://ceur-ws.org/Vol-568/#paper1>,
+        <http://ceur-ws.org/Vol-568/#paper2>,
+        <http://ceur-ws.org/Vol-568/#paper3>,
+        <http://ceur-ws.org/Vol-568/#paper4>,
+        <http://ceur-ws.org/Vol-568/#paper5>,
+        <http://ceur-ws.org/Vol-568/#paper6>,
+        <http://ceur-ws.org/Vol-568/#paper7>,
+        <http://ceur-ws.org/Vol-568/#paper8> ;
+    ns5:issued "2010-03-18T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:presentedAt <http://ceur-ws.org/Vol-568/#event> ;
+    ns1:editor <http://ceur-ws.org/Vol-568/#AnnetteiteniTeije>,
+        <http://ceur-ws.org/Vol-568/#HeineriStuckenschmidt> .
 

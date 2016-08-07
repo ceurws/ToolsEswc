@@ -1,341 +1,46 @@
-@prefix ns1: <http://xmlns.com/foaf/0.1/> .
-@prefix ns2: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns3: <http://www.w3.org/2002/07/owl#> .
-@prefix ns4: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns5: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns1: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns2: <http://www.w3.org/2002/07/owl#> .
+@prefix ns3: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns4: <http://xmlns.com/foaf/0.1/> .
+@prefix ns5: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix ns6: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns7: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns8: <http://purl.org/ontology/bibo/#> .
+@prefix ns7: <http://purl.org/ontology/bibo/#> .
+@prefix ns8: <http://purl.org/dc/elements/1.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-884/#AndrewiSellers> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/AndrewiSellers> ;
-    ns1:made <http://ceur-ws.org/Vol-884/#VLDS2012_p29_Furche> ;
-    ns1:name "Andrew Sellers" .
+<http://ceur-ws.org/Vol-884/> a ns1:Proceedings ;
+    ns5:issued "2012-08-16T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:presentedAt <http://ceur-ws.org/Vol-884/#event> ;
+    ns3:editor <http://ceur-ws.org/Vol-884/#GeorgiGottlob>,
+        <http://ceur-ws.org/Vol-884/#MarcoiBrambilla>,
+        <http://ceur-ws.org/Vol-884/#StefanoiCeri>,
+        <http://ceur-ws.org/Vol-884/#TimiFurche> .
 
-<http://ceur-ws.org/Vol-884/#AntoineiAmarilli> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/AntoineiAmarilli> ;
-    ns1:made <http://ceur-ws.org/Vol-884/#VLDS2012_p05_Oita> ;
-    ns1:name "Antoine Amarilli" .
+<http://ceur-ws.org/Vol-884/#GeorgiGottlob> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/GeorgiGottlob> ;
+    ns4:name "Georg Gottlob" .
 
-<http://ceur-ws.org/Vol-884/#AntoninoiRullo> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/AntoninoiRullo> ;
-    ns1:made <http://ceur-ws.org/Vol-884/#VLDS2012_p29_Furche> ;
-    ns1:name "Antonino Rullo" .
+<http://ceur-ws.org/Vol-884/#MarcoiBrambilla> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/MarcoiBrambilla> ;
+    ns4:name "Marco Brambilla" .
 
-<http://ceur-ws.org/Vol-884/#CeiZhang> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/CeiZhang> ;
-    ns1:made <http://ceur-ws.org/Vol-884/#VLDS2012_p25_Niu> ;
-    ns1:name "Ce Zhang" .
+<http://ceur-ws.org/Vol-884/#StefanoiCeri> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/StefanoiCeri> ;
+    ns4:name "Stefano Ceri" .
 
-<http://ceur-ws.org/Vol-884/#ChristianiSchallhart> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/ChristianiSchallhart> ;
-    ns1:made <http://ceur-ws.org/Vol-884/#VLDS2012_p29_Furche> ;
-    ns1:name "Christian Schallhart" .
+<http://ceur-ws.org/Vol-884/#TimiFurche> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/TimiFurche> ;
+    ns4:name "Tim Furche" .
 
-<http://ceur-ws.org/Vol-884/#ChristopheriRe> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/ChristopheriRe> ;
-    ns1:made <http://ceur-ws.org/Vol-884/#VLDS2012_p25_Niu> ;
-    ns1:name "Christopher Re" .
-
-<http://ceur-ws.org/Vol-884/#DanieliDeutch> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/DanieliDeutch> ;
-    ns1:made <http://ceur-ws.org/Vol-884/#VLDS2012_p21_Bienvenu> ;
-    ns1:name "Daniel Deutch" .
-
-<http://ceur-ws.org/Vol-884/#DavideiMartinenghi> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/DavideiMartinenghi> ;
-    ns1:made <http://ceur-ws.org/Vol-884/#VLDS2012_p21_Bienvenu> ;
-    ns1:name "Davide Martinenghi" .
-
-<http://ceur-ws.org/Vol-884/#DishengiQiu> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/DishengiQiu> ;
-    ns1:made <http://ceur-ws.org/Vol-884/#VLDS2012_p35_Creo> ;
-    ns1:name "Disheng Qiu" .
-
-<http://ceur-ws.org/Vol-884/#FengiNiu> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/FengiNiu> ;
-    ns1:made <http://ceur-ws.org/Vol-884/#VLDS2012_p25_Niu> ;
-    ns1:name "Feng Niu" .
-
-<http://ceur-ws.org/Vol-884/#GerhardiWeikum> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/GerhardiWeikum> ;
-    ns1:made <http://ceur-ws.org/Vol-884/#VLDS2012_p03_invited_Weikum> ;
-    ns1:name "Gerhard Weikum" .
-
-<http://ceur-ws.org/Vol-884/#GiovanniiGrasso> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/GiovanniiGrasso> ;
-    ns1:made <http://ceur-ws.org/Vol-884/#VLDS2012_p29_Furche> ;
-    ns1:name "Giovanni Grasso" .
-
-<http://ceur-ws.org/Vol-884/#JianfengiSi> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/JianfengiSi> ;
-    ns1:made <http://ceur-ws.org/Vol-884/#VLDS2012_p09_Si> ;
-    ns1:name "Jianfeng Si" .
-
-<http://ceur-ws.org/Vol-884/#JudeiShavlik> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/JudeiShavlik> ;
-    ns1:made <http://ceur-ws.org/Vol-884/#VLDS2012_p25_Niu> ;
-    ns1:name "Jude Shavlik" .
-
-<http://ceur-ws.org/Vol-884/#MarilenaiOita> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/MarilenaiOita> ;
-    ns1:made <http://ceur-ws.org/Vol-884/#VLDS2012_p05_Oita> ;
-    ns1:name "Marilena Oita" .
-
-<http://ceur-ws.org/Vol-884/#MartiniTheobald> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/MartiniTheobald> ;
-    ns1:made <http://ceur-ws.org/Vol-884/#VLDS2012_p15_Nakashole> ;
-    ns1:name "Martin Theobald" .
-
-<http://ceur-ws.org/Vol-884/#MauroiSozio> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/MauroiSozio> ;
-    ns1:made <http://ceur-ws.org/Vol-884/#VLDS2012_p15_Nakashole> ;
-    ns1:name "Mauro Sozio" .
-
-<http://ceur-ws.org/Vol-884/#MeghyniBienvenu> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/MeghyniBienvenu> ;
-    ns1:made <http://ceur-ws.org/Vol-884/#VLDS2012_p21_Bienvenu> ;
-    ns1:name "Meghyn Bienvenu" .
-
-<http://ceur-ws.org/Vol-884/#NdapandulaiNakashole> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/NdapandulaiNakashole> ;
-    ns1:made <http://ceur-ws.org/Vol-884/#VLDS2012_p15_Nakashole> ;
-    ns1:name "Ndapandula Nakashole" .
-
-<http://ceur-ws.org/Vol-884/#PaoloiMerialdo> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/PaoloiMerialdo> ;
-    ns1:made <http://ceur-ws.org/Vol-884/#VLDS2012_p35_Creo> ;
-    ns1:name "Paolo Merialdo" .
-
-<http://ceur-ws.org/Vol-884/#QingiLi> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/QingiLi> ;
-    ns1:made <http://ceur-ws.org/Vol-884/#VLDS2012_p09_Si> ;
-    ns1:name "Qing Li" .
-
-<http://ceur-ws.org/Vol-884/#RaghuiRamakrishnan> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/RaghuiRamakrishnan> ;
-    ns1:made <http://ceur-ws.org/Vol-884/#VLDS2012_p04_invited_Ramakrishnan> ;
-    ns1:name "Raghu Ramakrishnan" .
-
-<http://ceur-ws.org/Vol-884/#RolandoiCreo> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/RolandoiCreo> ;
-    ns1:made <http://ceur-ws.org/Vol-884/#VLDS2012_p35_Creo> ;
-    ns1:name "Rolando Creo" .
-
-<http://ceur-ws.org/Vol-884/#TieyuniQian> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/TieyuniQian> ;
-    ns1:made <http://ceur-ws.org/Vol-884/#VLDS2012_p09_Si> ;
-    ns1:name "Tieyun Qian" .
-
-<http://ceur-ws.org/Vol-884/#ValteriCrescenzi> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/ValteriCrescenzi> ;
-    ns1:made <http://ceur-ws.org/Vol-884/#VLDS2012_p35_Creo> ;
-    ns1:name "Valter Crescenzi" .
-
-<http://ceur-ws.org/Vol-884/#XiaotieiDeng> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/XiaotieiDeng> ;
-    ns1:made <http://ceur-ws.org/Vol-884/#VLDS2012_p09_Si> ;
-    ns1:name "Xiaotie Deng" .
-
-<http://ceur-ws.org/Vol-884/#event> a ns7:WorkshopEvent ;
-    ns7:hasLocation <http://dbpedia.org/resource/Turkey> ;
-    ns7:hasPart <http://ceur-ws.org/Vol-884/#part-VLDS> ;
-    ns7:isSubEventOf <http://ceur-ws.org/Vol-884/#conf> ;
+<http://ceur-ws.org/Vol-884/#event> a ns1:WorkshopEvent ;
+    ns1:hasLocation <http://dbpedia.org/resource/Turkey> ;
+    ns1:hasPart <http://ceur-ws.org/Vol-884/#part-CEUR-WS> ;
+    ns1:isSubEventOf <http://ceur-ws.org/Vol-884/#conf> ;
     ns6:beginsAtDatetime "2012-08-31T00:00:00+00:00"^^xsd:dateTime ;
     ns6:endsAtDatetime "2012-08-31T00:00:00+00:00"^^xsd:dateTime ;
-    ns2:license <http://choosealicense.com/licenses/no-license/> ;
+    ns8:license "http://choosealicense.com/licenses/no-license/" ;
     rdfs:seeAlso <http://ceur-ws.org/Vol-880/#event> .
-
-<http://ceur-ws.org/Vol-884/#FabianiSuchanek> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/FabianiSuchanek> ;
-    ns1:made <http://ceur-ws.org/Vol-884/#VLDS2012_p15_Nakashole>,
-        <http://ceur-ws.org/Vol-884/#VLDS2012_p21_Bienvenu> ;
-    ns1:name "Fabian Suchanek" .
-
-<http://ceur-ws.org/Vol-884/#GeorgiGottlob> a ns1:Person ;
-    ns5:affiliation "" ;
-    ns3:sameAs <http://ceur-ws.org/persons/GeorgiGottlob> ;
-    ns1:made <http://ceur-ws.org/Vol-884/#VLDS2012_p01_preface> ;
-    ns1:name "Georg Gottlob" .
-
-<http://ceur-ws.org/Vol-884/#MarcoiBrambilla> a ns1:Person ;
-    ns5:affiliation "" ;
-    ns3:sameAs <http://ceur-ws.org/persons/MarcoiBrambilla> ;
-    ns1:made <http://ceur-ws.org/Vol-884/#VLDS2012_p01_preface> ;
-    ns1:name "Marco Brambilla" .
-
-<http://ceur-ws.org/Vol-884/#PierreiSenellart> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/PierreiSenellart> ;
-    ns1:made <http://ceur-ws.org/Vol-884/#VLDS2012_p05_Oita>,
-        <http://ceur-ws.org/Vol-884/#VLDS2012_p21_Bienvenu> ;
-    ns1:name "Pierre Senellart" .
-
-<http://ceur-ws.org/Vol-884/#StefanoiCeri> a ns1:Person ;
-    ns5:affiliation "" ;
-    ns3:sameAs <http://ceur-ws.org/persons/StefanoiCeri> ;
-    ns1:made <http://ceur-ws.org/Vol-884/#VLDS2012_p01_preface> ;
-    ns1:name "Stefano Ceri" .
-
-<http://ceur-ws.org/Vol-884/#VLDS2012_p03_invited_Weikum> a ns7:Paper ;
-    ns7:partOf <http://ceur-ws.org/Vol-884/> ;
-    ns2:title "Semantic Search: from Names and Phrases to Entities and Relations" ;
-    ns8:endPage 3 ;
-    ns8:numPages 1 ;
-    ns8:section <http%3A//ceur-ws.org/Vol-884/%23Session1%3AInvitedtalks> ;
-    ns8:startPage 3 ;
-    ns5:author <http://ceur-ws.org/Vol-884/#GerhardiWeikum> .
-
-<http://ceur-ws.org/Vol-884/#VLDS2012_p04_invited_Ramakrishnan> a ns7:Paper ;
-    ns7:partOf <http://ceur-ws.org/Vol-884/> ;
-    ns2:title "The Future of Information Discovery and Search: Content Optimization, Interactivity, Semantics, and Social Networks" ;
-    ns8:endPage 4 ;
-    ns8:numPages 1 ;
-    ns8:section <http%3A//ceur-ws.org/Vol-884/%23Session1%3AInvitedtalks> ;
-    ns8:startPage 4 ;
-    ns5:author <http://ceur-ws.org/Vol-884/#RaghuiRamakrishnan> .
-
-<http%3A//ceur-ws.org/Vol-884/%23Session1%3AInvitedtalks> a ns7:SessionEvent ;
-    ns7:partOf <http://ceur-ws.org/Vol-884/> ;
-    ns2:title "Session 1: Invited talks" .
-
-<http%3A//ceur-ws.org/Vol-884/%23Session3%3ADeepWeb> a ns7:SessionEvent ;
-    ns7:partOf <http://ceur-ws.org/Vol-884/> ;
-    ns2:title "Session 3: Deep Web" .
-
-<http%3A//ceur-ws.org/Vol-884/%23Session4%3AWrappers> a ns7:SessionEvent ;
-    ns7:partOf <http://ceur-ws.org/Vol-884/> ;
-    ns2:title "Session 4: Wrappers" .
-
-<http://ceur-ws.org/Vol-884/#TimiFurche> a ns1:Person ;
-    ns5:affiliation "" ;
-    ns3:sameAs <http://ceur-ws.org/persons/TimiFurche> ;
-    ns1:made <http://ceur-ws.org/Vol-884/#VLDS2012_p01_preface>,
-        <http://ceur-ws.org/Vol-884/#VLDS2012_p29_Furche> ;
-    ns1:name "Tim Furche" .
-
-<http%3A//ceur-ws.org/Vol-884/%23Session2%3AWebKnowledgeBases> a ns7:SessionEvent ;
-    ns7:partOf <http://ceur-ws.org/Vol-884/> ;
-    ns2:title "Session 2: Web Knowledge Bases" .
-
-<http://ceur-ws.org/Vol-884/#VLDS2012_p05_Oita> a ns7:Paper ;
-    ns7:partOf <http://ceur-ws.org/Vol-884/> ;
-    ns2:title "Cross-Fertilizing Deep Web Analysis and Ontology Enrichment" ;
-    ns8:endPage 8 ;
-    ns8:numPages 4 ;
-    ns8:section <http%3A//ceur-ws.org/Vol-884/%23Session2%3AWebKnowledgeBases> ;
-    ns8:startPage 5 ;
-    ns5:author <http://ceur-ws.org/Vol-884/#AntoineiAmarilli>,
-        <http://ceur-ws.org/Vol-884/#MarilenaiOita>,
-        <http://ceur-ws.org/Vol-884/#PierreiSenellart> .
-
-<http://ceur-ws.org/Vol-884/#VLDS2012_p01_preface> a ns7:Paper ;
-    ns7:partOf <http://ceur-ws.org/Vol-884/> ;
-    ns2:title "Preface" ;
-    ns8:endPage 2 ;
-    ns8:numPages 2 ;
-    ns8:startPage 1 ;
-    ns5:author <http://ceur-ws.org/Vol-884/#GeorgiGottlob>,
-        <http://ceur-ws.org/Vol-884/#MarcoiBrambilla>,
-        <http://ceur-ws.org/Vol-884/#StefanoiCeri>,
-        <http://ceur-ws.org/Vol-884/#TimiFurche> .
-
-<http://ceur-ws.org/Vol-884/#VLDS2012_p09_Si> a ns7:Paper ;
-    ns7:partOf <http://ceur-ws.org/Vol-884/> ;
-    ns2:title "Hierarchical Clustering on HDP Topics to build a Semantic Tree from Text" ;
-    ns8:endPage 14 ;
-    ns8:numPages 6 ;
-    ns8:section <http%3A//ceur-ws.org/Vol-884/%23Session2%3AWebKnowledgeBases> ;
-    ns8:startPage 9 ;
-    ns5:author <http://ceur-ws.org/Vol-884/#JianfengiSi>,
-        <http://ceur-ws.org/Vol-884/#QingiLi>,
-        <http://ceur-ws.org/Vol-884/#TieyuniQian>,
-        <http://ceur-ws.org/Vol-884/#XiaotieiDeng> .
-
-<http://ceur-ws.org/Vol-884/#VLDS2012_p15_Nakashole> a ns7:Paper ;
-    ns7:partOf <http://ceur-ws.org/Vol-884/> ;
-    ns2:title "Query-Time Reasoning in Uncertain RDF Knowledge Bases with Soft and Hard Rules" ;
-    ns8:endPage 20 ;
-    ns8:numPages 6 ;
-    ns8:section <http%3A//ceur-ws.org/Vol-884/%23Session2%3AWebKnowledgeBases> ;
-    ns8:startPage 15 ;
-    ns5:author <http://ceur-ws.org/Vol-884/#FabianiSuchanek>,
-        <http://ceur-ws.org/Vol-884/#MartiniTheobald>,
-        <http://ceur-ws.org/Vol-884/#MauroiSozio>,
-        <http://ceur-ws.org/Vol-884/#NdapandulaiNakashole> .
-
-<http://ceur-ws.org/Vol-884/#VLDS2012_p25_Niu> a ns7:Paper ;
-    ns7:partOf <http://ceur-ws.org/Vol-884/> ;
-    ns2:title "DeepDive: Web-scale Knowledge-base Construction using Statistical Learning and Inference" ;
-    ns8:endPage 28 ;
-    ns8:numPages 4 ;
-    ns8:section <http%3A//ceur-ws.org/Vol-884/%23Session3%3ADeepWeb> ;
-    ns8:startPage 25 ;
-    ns5:author <http://ceur-ws.org/Vol-884/#CeiZhang>,
-        <http://ceur-ws.org/Vol-884/#ChristopheriRe>,
-        <http://ceur-ws.org/Vol-884/#FengiNiu>,
-        <http://ceur-ws.org/Vol-884/#JudeiShavlik> .
-
-<http://ceur-ws.org/Vol-884/#VLDS2012_p35_Creo> a ns7:Paper ;
-    ns7:partOf <http://ceur-ws.org/Vol-884/> ;
-    ns2:title "Minimizing the Costs of the Training Data for Learning Web Wrappers" ;
-    ns8:endPage 40 ;
-    ns8:numPages 6 ;
-    ns8:section <http%3A//ceur-ws.org/Vol-884/%23Session4%3AWrappers> ;
-    ns8:startPage 35 ;
-    ns5:author <http://ceur-ws.org/Vol-884/#DishengiQiu>,
-        <http://ceur-ws.org/Vol-884/#PaoloiMerialdo>,
-        <http://ceur-ws.org/Vol-884/#RolandoiCreo>,
-        <http://ceur-ws.org/Vol-884/#ValteriCrescenzi> .
-
-<http://ceur-ws.org/Vol-884/#VLDS2012_p21_Bienvenu> a ns7:Paper ;
-    ns7:partOf <http://ceur-ws.org/Vol-884/> ;
-    ns2:title "Dealing with the Deep Web and all its Quirks" ;
-    ns8:endPage 24 ;
-    ns8:numPages 4 ;
-    ns8:section <http%3A//ceur-ws.org/Vol-884/%23Session3%3ADeepWeb> ;
-    ns8:startPage 21 ;
-    ns5:author <http://ceur-ws.org/Vol-884/#DanieliDeutch>,
-        <http://ceur-ws.org/Vol-884/#DavideiMartinenghi>,
-        <http://ceur-ws.org/Vol-884/#FabianiSuchanek>,
-        <http://ceur-ws.org/Vol-884/#MeghyniBienvenu>,
-        <http://ceur-ws.org/Vol-884/#PierreiSenellart> .
-
-<http://ceur-ws.org/Vol-884/#VLDS2012_p29_Furche> a ns7:Paper ;
-    ns7:partOf <http://ceur-ws.org/Vol-884/> ;
-    ns2:title "Think before you Act! Minimising Action Execution in Wrappers" ;
-    ns8:endPage 34 ;
-    ns8:numPages 6 ;
-    ns8:section <http%3A//ceur-ws.org/Vol-884/%23Session4%3AWrappers> ;
-    ns8:startPage 29 ;
-    ns5:author <http://ceur-ws.org/Vol-884/#AndrewiSellers>,
-        <http://ceur-ws.org/Vol-884/#AntoninoiRullo>,
-        <http://ceur-ws.org/Vol-884/#ChristianiSchallhart>,
-        <http://ceur-ws.org/Vol-884/#GiovanniiGrasso>,
-        <http://ceur-ws.org/Vol-884/#TimiFurche> .
-
-<http://ceur-ws.org/Vol-884/> a ns7:Proceedings ;
-    ns7:hasPart <http://ceur-ws.org/Vol-884/#VLDS2012_p01_preface>,
-        <http://ceur-ws.org/Vol-884/#VLDS2012_p03_invited_Weikum>,
-        <http://ceur-ws.org/Vol-884/#VLDS2012_p04_invited_Ramakrishnan>,
-        <http://ceur-ws.org/Vol-884/#VLDS2012_p05_Oita>,
-        <http://ceur-ws.org/Vol-884/#VLDS2012_p09_Si>,
-        <http://ceur-ws.org/Vol-884/#VLDS2012_p15_Nakashole>,
-        <http://ceur-ws.org/Vol-884/#VLDS2012_p21_Bienvenu>,
-        <http://ceur-ws.org/Vol-884/#VLDS2012_p25_Niu>,
-        <http://ceur-ws.org/Vol-884/#VLDS2012_p29_Furche>,
-        <http://ceur-ws.org/Vol-884/#VLDS2012_p35_Creo> ;
-    ns7:hasSession <http%3A//ceur-ws.org/Vol-884/%23Session1%3AInvitedtalks>,
-        <http%3A//ceur-ws.org/Vol-884/%23Session2%3AWebKnowledgeBases>,
-        <http%3A//ceur-ws.org/Vol-884/%23Session3%3ADeepWeb>,
-        <http%3A//ceur-ws.org/Vol-884/%23Session4%3AWrappers> ;
-    ns4:issued "2012-08-16T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:presentedAt <http://ceur-ws.org/Vol-884/#event> ;
-    ns5:editor <http://ceur-ws.org/Vol-884/#GeorgiGottlob>,
-        <http://ceur-ws.org/Vol-884/#MarcoiBrambilla>,
-        <http://ceur-ws.org/Vol-884/#StefanoiCeri>,
-        <http://ceur-ws.org/Vol-884/#TimiFurche> .
 

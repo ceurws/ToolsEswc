@@ -1,151 +1,41 @@
-@prefix ns1: <http://xmlns.com/foaf/0.1/> .
+@prefix ns1: <http://www.w3.org/2002/07/owl#> .
 @prefix ns2: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns3: <http://www.w3.org/2002/07/owl#> .
-@prefix ns4: <http://purl.org/ontology/bibo/#> .
-@prefix ns5: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns6: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns3: <http://xmlns.com/foaf/0.1/> .
+@prefix ns4: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns5: <http://purl.org/ontology/bibo/#> .
+@prefix ns6: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns8: <http://purl.org/dc/elements/1.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1605/#AlsayediAlgergawy> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/AlsayediAlgergawy> ;
-    ns1:made <http://ceur-ws.org/Vol-1605/#paper4> ;
-    ns1:name "Alsayed Algergawy" .
+<http://ceur-ws.org/Vol-1605/> a ns2:Proceedings ;
+    ns6:issued "2016-06-11T00:00:00+00:00"^^xsd:dateTime ;
+    ns5:presentedAt <http://ceur-ws.org/Vol-1605/#event> ;
+    ns4:editor <http://ceur-ws.org/Vol-1605/#AndreasiThalhammer>,
+        <http://ceur-ws.org/Vol-1605/#GongiCheng>,
+        <http://ceur-ws.org/Vol-1605/#KalpaiGunaratna> .
 
-<http://ceur-ws.org/Vol-1605/#AndreasiThalhammer> a ns1:Person ;
-    ns5:affiliation "" ;
-    ns3:sameAs <http://ceur-ws.org/persons/AndreasiThalhammer> ;
-    ns1:name "Andreas Thalhammer" .
+<http://ceur-ws.org/Vol-1605/#AndreasiThalhammer> a ns3:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/AndreasiThalhammer> ;
+    ns3:name "Andreas Thalhammer" .
 
-<http://ceur-ws.org/Vol-1605/#BlerinaiSpahiu> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/BlerinaiSpahiu> ;
-    ns1:made <http://ceur-ws.org/Vol-1605/#paper3> ;
-    ns1:name "Blerina Spahiu" .
+<http://ceur-ws.org/Vol-1605/#GongiCheng> a ns3:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/GongiCheng> ;
+    ns3:name "Gong Cheng" .
 
-<http://ceur-ws.org/Vol-1605/#DanyuniXu> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/DanyuniXu> ;
-    ns1:made <http://ceur-ws.org/Vol-1605/#ensec1> ;
-    ns1:name "Danyun Xu" .
-
-<http://ceur-ws.org/Vol-1605/#EdgardiMarx> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/EdgardiMarx> ;
-    ns1:made <http://ceur-ws.org/Vol-1605/#paper5> ;
-    ns1:name "Edgard Marx" .
-
-<http://ceur-ws.org/Vol-1605/#GongiCheng> a ns1:Person ;
-    ns5:affiliation "" ;
-    ns3:sameAs <http://ceur-ws.org/persons/GongiCheng> ;
-    ns1:name "Gong Cheng" .
-
-<http://ceur-ws.org/Vol-1605/#Ond%26rcaron> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/Ond%26rcaron> ;
-    ns1:made <http://ceur-ws.org/Vol-1605/#paper2> ;
-    ns1:name "Ond&rcaron" .
-
-<http://ceur-ws.org/Vol-1605/#ThomasiGottron> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/ThomasiGottron> ;
-    ns1:made <http://ceur-ws.org/Vol-1605/#paper1> ;
-    ns1:name "Thomas Gottron" .
-
-<http://ceur-ws.org/Vol-1605/#YangiLi> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/YangiLi> ;
-    ns1:made <http://ceur-ws.org/Vol-1605/#ensec2> ;
-    ns1:name "Yang Li" .
-
-<http://ceur-ws.org/Vol-1605/#ejiZamazal> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/ejiZamazal> ;
-    ns1:made <http://ceur-ws.org/Vol-1605/#paper2> ;
-    ns1:name "ej Zamazal" .
+<http://ceur-ws.org/Vol-1605/#KalpaiGunaratna> a ns3:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/KalpaiGunaratna> ;
+    ns3:name "Kalpa Gunaratna" .
 
 <http://ceur-ws.org/Vol-1605/#event> a ns2:WorkshopEvent ;
     ns2:hasLocation <http://dbpedia.org/resource/Greece> ;
     ns2:hasPart <http://ceur-ws.org/Vol-1605/#part-SumPre> ;
     ns2:isSubEventOf <http://ceur-ws.org/Vol-1605/#conf> ;
-    ns8:beginsAtDatetime "2016-05-30T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:endsAtDatetime "2016-05-30T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:beginsAtDatetime "2016-05-30T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:endsAtDatetime "2016-05-30T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:license "http://creativecommons.org/publicdomain/zero/1.0/" ;
     rdfs:seeAlso <http://ceur-ws.org/Vol-1556/#event> .
-
-<http://ceur-ws.org/Vol-1605/#KalpaiGunaratna> a ns1:Person ;
-    ns5:affiliation "" ;
-    ns3:sameAs <http://ceur-ws.org/persons/KalpaiGunaratna> ;
-    ns1:made <http://ceur-ws.org/Vol-1605/#ensec> ;
-    ns1:name "Kalpa Gunaratna" .
-
-<http://ceur-ws.org/Vol-1605/#ensec> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1605/> ;
-    ns6:title "Results of the 2016 ENtity Summarization Evaluation Campaign (ENSEC 2016)" ;
-    ns4:section <http%3A//ceur-ws.org/Vol-1605/%23ENSECPapers> ;
-    ns5:author <http://ceur-ws.org/Vol-1605/#KalpaiGunaratna> .
-
-<http://ceur-ws.org/Vol-1605/#ensec1> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1605/> ;
-    ns6:title "CD at ENSEC 2016: Generating Characteristic and Diverse Entity Summaries" ;
-    ns4:section <http%3A//ceur-ws.org/Vol-1605/%23ENSECPapers> ;
-    ns5:author <http://ceur-ws.org/Vol-1605/#DanyuniXu> .
-
-<http://ceur-ws.org/Vol-1605/#ensec2> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1605/> ;
-    ns6:title "A Common Property and Special Property Entity Summarization Approach Based on Statistical Distribution" ;
-    ns4:section <http%3A//ceur-ws.org/Vol-1605/%23ENSECPapers> ;
-    ns5:author <http://ceur-ws.org/Vol-1605/#YangiLi> .
-
-<http://ceur-ws.org/Vol-1605/#paper1> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1605/> ;
-    ns6:title "ELLIS: Interactive Exploration of Linked Data on the Level of Induced Schema Patterns" ;
-    ns4:section <http%3A//ceur-ws.org/Vol-1605/%23RegularPapers> ;
-    ns5:author <http://ceur-ws.org/Vol-1605/#ThomasiGottron> .
-
-<http://ceur-ws.org/Vol-1605/#paper3> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1605/> ;
-    ns6:title "ABSTAT: Ontology-driven Linked Data Summaries with Pattern Minimalization" ;
-    ns4:section <http%3A//ceur-ws.org/Vol-1605/%23RegularPapers> ;
-    ns5:author <http://ceur-ws.org/Vol-1605/#BlerinaiSpahiu> .
-
-<http://ceur-ws.org/Vol-1605/#paper4> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1605/> ;
-    ns6:title "A New Metric To Evaluate Ontology Modularization" ;
-    ns4:section <http%3A//ceur-ws.org/Vol-1605/%23RegularPapers> ;
-    ns5:author <http://ceur-ws.org/Vol-1605/#AlsayediAlgergawy> .
-
-<http://ceur-ws.org/Vol-1605/#paper5> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1605/> ;
-    ns6:title "DBtrends: Publishing and Benchmarking RDF Ranking Functions" ;
-    ns4:section <http%3A//ceur-ws.org/Vol-1605/%23RegularPapers> ;
-    ns5:author <http://ceur-ws.org/Vol-1605/#EdgardiMarx> .
-
-<http://ceur-ws.org/Vol-1605/#paper2> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1605/> ;
-    ns6:title "Ontology Search by Categorization Power" ;
-    ns4:section <http%3A//ceur-ws.org/Vol-1605/%23RegularPapers> ;
-    ns5:author <http://ceur-ws.org/Vol-1605/#Ond%26rcaron>,
-        <http://ceur-ws.org/Vol-1605/#ejiZamazal> .
-
-<http%3A//ceur-ws.org/Vol-1605/%23ENSECPapers> a ns2:SessionEvent ;
-    ns2:partOf <http://ceur-ws.org/Vol-1605/> ;
-    ns6:title "ENSEC Papers" .
-
-<http%3A//ceur-ws.org/Vol-1605/%23RegularPapers> a ns2:SessionEvent ;
-    ns2:partOf <http://ceur-ws.org/Vol-1605/> ;
-    ns6:title "Regular Papers" .
-
-<http://ceur-ws.org/Vol-1605/> a ns2:Proceedings ;
-    ns2:hasPart <http://ceur-ws.org/Vol-1605/#ensec>,
-        <http://ceur-ws.org/Vol-1605/#ensec1>,
-        <http://ceur-ws.org/Vol-1605/#ensec2>,
-        <http://ceur-ws.org/Vol-1605/#paper1>,
-        <http://ceur-ws.org/Vol-1605/#paper2>,
-        <http://ceur-ws.org/Vol-1605/#paper3>,
-        <http://ceur-ws.org/Vol-1605/#paper4>,
-        <http://ceur-ws.org/Vol-1605/#paper5> ;
-    ns2:hasSession <http%3A//ceur-ws.org/Vol-1605/%23ENSECPapers>,
-        <http%3A//ceur-ws.org/Vol-1605/%23RegularPapers> ;
-    ns7:issued "2016-06-11T00:00:00+00:00"^^xsd:dateTime ;
-    ns4:presentedAt <http://ceur-ws.org/Vol-1605/#event> ;
-    ns5:editor <http://ceur-ws.org/Vol-1605/#AndreasiThalhammer>,
-        <http://ceur-ws.org/Vol-1605/#GongiCheng>,
-        <http://ceur-ws.org/Vol-1605/#KalpaiGunaratna> .
 

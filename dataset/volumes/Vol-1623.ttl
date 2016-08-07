@@ -1,0 +1,50 @@
+@prefix ns1: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns2: <http://www.w3.org/2002/07/owl#> .
+@prefix ns3: <http://xmlns.com/foaf/0.1/> .
+@prefix ns4: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns5: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns6: <http://purl.org/dc/elements/1.1/> .
+@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns8: <http://purl.org/ontology/bibo/#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://ceur-ws.org/Vol-1623/> a ns1:Proceedings ;
+    ns7:issued "2016-08-02T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:presentedAt <http://ceur-ws.org/Vol-1623/#event> ;
+    ns5:editor <http://ceur-ws.org/Vol-1623/#AlexandriKononov>,
+        <http://ceur-ws.org/Vol-1623/#IgoriBykadorov>,
+        <http://ceur-ws.org/Vol-1623/#IvaniDavydov>,
+        <http://ceur-ws.org/Vol-1623/#OlegiKhamisov>,
+        <http://ceur-ws.org/Vol-1623/#PolinaiKononova> .
+
+<http://ceur-ws.org/Vol-1623/#AlexandriKononov> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/AlexandriKononov> ;
+    ns3:name "Alexandr Kononov" .
+
+<http://ceur-ws.org/Vol-1623/#IgoriBykadorov> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/IgoriBykadorov> ;
+    ns3:name "Igor Bykadorov" .
+
+<http://ceur-ws.org/Vol-1623/#IvaniDavydov> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/IvaniDavydov> ;
+    ns3:name "Ivan Davydov" .
+
+<http://ceur-ws.org/Vol-1623/#OlegiKhamisov> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/OlegiKhamisov> ;
+    ns3:name "Oleg Khamisov" .
+
+<http://ceur-ws.org/Vol-1623/#PolinaiKononova> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/PolinaiKononova> ;
+    ns3:name "Polina Kononova" .
+
+<http://ceur-ws.org/Vol-1623/#event> a ns1:WorkshopEvent ;
+    ns1:hasLocation <http://dbpedia.org/resource/Russia> ;
+    ns1:hasPart <http://ceur-ws.org/Vol-1623/#part-DOOR> ;
+    ns1:isSubEventOf <http://ceur-ws.org/Vol-1623/#conf> ;
+    ns4:beginsAtDatetime "2016-09-19T00:00:00+00:00"^^xsd:dateTime ;
+    ns4:endsAtDatetime "2016-09-23T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:license "http://creativecommons.org/publicdomain/zero/1.0/" .
+

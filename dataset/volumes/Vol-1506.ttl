@@ -1,203 +1,40 @@
 @prefix ns1: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns2: <http://www.w3.org/2002/07/owl#> .
-@prefix ns3: <http://purl.org/ontology/bibo/#> .
-@prefix ns4: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns5: <http://xmlns.com/foaf/0.1/> .
-@prefix ns6: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns2: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns3: <http://xmlns.com/foaf/0.1/> .
+@prefix ns4: <http://purl.org/dc/elements/1.1/> .
+@prefix ns5: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns6: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns7: <http://www.w3.org/2002/07/owl#> .
+@prefix ns8: <http://purl.org/ontology/bibo/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1506/#AlexanderiBorgida> a ns5:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/AlexanderiBorgida> ;
-    ns5:made <http://ceur-ws.org/Vol-1506/#paper3> ;
-    ns5:name "Alexander Borgida" .
-
-<http://ceur-ws.org/Vol-1506/#AnupamiJoshi> a ns5:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/AnupamiJoshi> ;
-    ns5:made <http://ceur-ws.org/Vol-1506/#paper2> ;
-    ns5:name "Anupam Joshi" .
-
-<http://ceur-ws.org/Vol-1506/#DeborahiL.iMcGuinness> a ns5:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/DeborahiL.iMcGuinness> ;
-    ns5:made <http://ceur-ws.org/Vol-1506/#paper4> ;
-    ns5:name "Deborah L. McGuinness" .
-
-<http://ceur-ws.org/Vol-1506/#IlariaiLiccardi> a ns5:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/IlariaiLiccardi> ;
-    ns5:made <http://ceur-ws.org/Vol-1506/#paper5> ;
-    ns5:name "Ilaria Liccardi" .
-
-<http://ceur-ws.org/Vol-1506/#JeffiZ.iPan> a ns5:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/JeffiZ.iPan> ;
-    ns5:made <http://ceur-ws.org/Vol-1506/#invited> ;
-    ns5:name "Jeff Z. Pan" .
-
-<http://ceur-ws.org/Vol-1506/#LauraiKinkead> a ns5:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/LauraiKinkead> ;
-    ns5:made <http://ceur-ws.org/Vol-1506/#paper4> ;
-    ns5:name "Laura Kinkead" .
-
-<http://ceur-ws.org/Vol-1506/#PauloiPinheiro> a ns5:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/PauloiPinheiro> ;
-    ns5:made <http://ceur-ws.org/Vol-1506/#paper4> ;
-    ns5:name "Paulo Pinheiro" .
-
-<http://ceur-ws.org/Vol-1506/#PrajitiKumariDas> a ns5:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/PrajitiKumariDas> ;
-    ns5:made <http://ceur-ws.org/Vol-1506/#paper2> ;
-    ns5:name "Prajit Kumar Das" .
-
-<http://ceur-ws.org/Vol-1506/#SharadiMehrotra> a ns5:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/SharadiMehrotra> ;
-    ns5:made <http://ceur-ws.org/Vol-1506/#paper2> ;
-    ns5:name "Sharad Mehrotra" .
-
-<http://ceur-ws.org/Vol-1506/#TimiFinin> a ns5:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/TimiFinin> ;
-    ns5:made <http://ceur-ws.org/Vol-1506/#paper2> ;
-    ns5:name "Tim Finin" .
-
-<http://ceur-ws.org/Vol-1506/#event> a ns4:WorkshopEvent ;
-    ns4:hasLocation <http://dbpedia.org/resource/United_States> ;
-    ns4:hasPart <http://ceur-ws.org/Vol-1506/#part-MoDeST> ;
-    ns4:isSubEventOf <http://ceur-ws.org/Vol-1506/#conf> ;
-    ns7:beginsAtDatetime "2015-10-11T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:endsAtDatetime "2015-10-11T00:00:00+00:00"^^xsd:dateTime .
-
-<http%3A//ceur-ws.org/Vol-1506/%23Keynote> a ns4:SessionEvent ;
-    ns4:partOf <http://ceur-ws.org/Vol-1506/> ;
-    ns6:title "Keynote" .
-
-<http://ceur-ws.org/Vol-1506/#PrimaliPappachan> a ns5:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/PrimaliPappachan> ;
-    ns5:made <http://ceur-ws.org/Vol-1506/#paper1>,
-        <http://ceur-ws.org/Vol-1506/#paper2> ;
-    ns5:name "Primal Pappachan" .
-
-<http://ceur-ws.org/Vol-1506/#WilliamiVaniWoensel> a ns5:Person ;
-    ns1:affiliation "" ;
-    ns2:sameAs <http://ceur-ws.org/persons/WilliamiVaniWoensel> ;
-    ns5:made <http://ceur-ws.org/Vol-1506/#paper6> ;
-    ns5:name "William Van Woensel" .
-
-<http://ceur-ws.org/Vol-1506/#invited> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1506/> ;
-    ns6:title "The Ubiquitous Semantic Web: The Story So Far" ;
-    ns3:endPage 1 ;
-    ns3:numPages 1 ;
-    ns3:section <http%3A//ceur-ws.org/Vol-1506/%23Keynote> ;
-    ns3:startPage 1 ;
-    ns1:author <http://ceur-ws.org/Vol-1506/#JeffiZ.iPan> .
-
-<http://ceur-ws.org/Vol-1506/#paper6> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1506/> ;
-    ns6:title "Mobile Semantic Query Distribution with Graph-Based Outsourcing of Subqueries" ;
-    ns3:endPage 61 ;
-    ns3:numPages 12 ;
-    ns3:section <http%3A//ceur-ws.org/Vol-1506/%23Session3%3ASupportingTools%26Techniques> ;
-    ns3:startPage 50 ;
-    ns1:author <http://ceur-ws.org/Vol-1506/#WilliamiVaniWoensel> .
-
-<http%3A//ceur-ws.org/Vol-1506/%23Session1%3AMetaAnalyses> a ns4:SessionEvent ;
-    ns4:partOf <http://ceur-ws.org/Vol-1506/> ;
-    ns6:title "Session 1: Meta Analyses" .
-
-<http%3A//ceur-ws.org/Vol-1506/%23Session2%3AMobileSemanticApps> a ns4:SessionEvent ;
-    ns4:partOf <http://ceur-ws.org/Vol-1506/> ;
-    ns6:title "Session 2: Mobile Semantic Apps" .
-
-<http%3A//ceur-ws.org/Vol-1506/%23Session3%3ASupportingTools%26Techniques> a ns4:SessionEvent ;
-    ns4:partOf <http://ceur-ws.org/Vol-1506/> ;
-    ns6:title "Session 3: Supporting Tools & Techniques" .
-
-<http://ceur-ws.org/Vol-1506/#EvaniW.iPatton> a ns5:Person ;
-    ns1:affiliation "" ;
-    ns2:sameAs <http://ceur-ws.org/persons/EvaniW.iPatton> ;
-    ns5:made <http://ceur-ws.org/Vol-1506/#paper3>,
-        <http://ceur-ws.org/Vol-1506/#paper5> ;
-    ns5:name "Evan W. Patton" .
-
-<http://ceur-ws.org/Vol-1506/#RobertoiYus> a ns5:Person ;
-    ns1:affiliation "" ;
-    ns2:sameAs <http://ceur-ws.org/persons/RobertoiYus> ;
-    ns5:made <http://ceur-ws.org/Vol-1506/#paper1>,
-        <http://ceur-ws.org/Vol-1506/#paper2> ;
-    ns5:name "Roberto Yus" .
-
-<http://ceur-ws.org/Vol-1506/#paper1> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1506/> ;
-    ns6:title "Are Apps Going Semantic? A Systematic Review of Semantic Mobile Applications" ;
-    ns3:endPage 13 ;
-    ns3:numPages 12 ;
-    ns3:section <http%3A//ceur-ws.org/Vol-1506/%23Session1%3AMetaAnalyses> ;
-    ns3:startPage 2 ;
-    ns1:author <http://ceur-ws.org/Vol-1506/#PrimaliPappachan>,
-        <http://ceur-ws.org/Vol-1506/#RobertoiYus> .
-
-<http://ceur-ws.org/Vol-1506/#paper3> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1506/> ;
-    ns6:title "Challenges for Semantic Technologies in Distributed Mobile Environments" ;
-    ns3:endPage 31 ;
-    ns3:numPages 6 ;
-    ns3:section <http%3A//ceur-ws.org/Vol-1506/%23Session2%3AMobileSemanticApps> ;
-    ns3:startPage 26 ;
-    ns1:author <http://ceur-ws.org/Vol-1506/#AlexanderiBorgida>,
-        <http://ceur-ws.org/Vol-1506/#EvaniW.iPatton> .
-
-<http://ceur-ws.org/Vol-1506/#paper5> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1506/> ;
-    ns6:title "Linked Data and Mobile Application Privacy" ;
-    ns3:endPage 49 ;
-    ns3:numPages 6 ;
-    ns3:section <http%3A//ceur-ws.org/Vol-1506/%23Session3%3ASupportingTools%26Techniques> ;
-    ns3:startPage 44 ;
-    ns1:author <http://ceur-ws.org/Vol-1506/#EvaniW.iPatton>,
-        <http://ceur-ws.org/Vol-1506/#IlariaiLiccardi> .
-
-<http://ceur-ws.org/Vol-1506/#paper4> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1506/> ;
-    ns6:title "Automating the Collection of Semantic Sensor Network Metadata in the Field with Mobile Applications" ;
-    ns3:endPage 43 ;
-    ns3:numPages 12 ;
-    ns3:section <http%3A//ceur-ws.org/Vol-1506/%23Session2%3AMobileSemanticApps> ;
-    ns3:startPage 32 ;
-    ns1:author <http://ceur-ws.org/Vol-1506/#DeborahiL.iMcGuinness>,
-        <http://ceur-ws.org/Vol-1506/#LauraiKinkead>,
-        <http://ceur-ws.org/Vol-1506/#PauloiPinheiro> .
-
-<http://ceur-ws.org/Vol-1506/#paper2> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1506/> ;
-    ns6:title "Building a Mobile Applications Knowledge Base for the Linked Data Cloud" ;
-    ns3:endPage 25 ;
-    ns3:numPages 12 ;
-    ns3:section <http%3A//ceur-ws.org/Vol-1506/%23Session1%3AMetaAnalyses> ;
-    ns3:startPage 14 ;
-    ns1:author <http://ceur-ws.org/Vol-1506/#AnupamiJoshi>,
-        <http://ceur-ws.org/Vol-1506/#PrajitiKumariDas>,
-        <http://ceur-ws.org/Vol-1506/#PrimaliPappachan>,
-        <http://ceur-ws.org/Vol-1506/#RobertoiYus>,
-        <http://ceur-ws.org/Vol-1506/#SharadiMehrotra>,
-        <http://ceur-ws.org/Vol-1506/#TimiFinin> .
-
-<http://ceur-ws.org/Vol-1506/> a ns4:Proceedings ;
-    ns4:hasPart <http://ceur-ws.org/Vol-1506/#invited>,
-        <http://ceur-ws.org/Vol-1506/#paper1>,
-        <http://ceur-ws.org/Vol-1506/#paper2>,
-        <http://ceur-ws.org/Vol-1506/#paper3>,
-        <http://ceur-ws.org/Vol-1506/#paper4>,
-        <http://ceur-ws.org/Vol-1506/#paper5>,
-        <http://ceur-ws.org/Vol-1506/#paper6> ;
-    ns4:hasSession <http%3A//ceur-ws.org/Vol-1506/%23Keynote>,
-        <http%3A//ceur-ws.org/Vol-1506/%23Session1%3AMetaAnalyses>,
-        <http%3A//ceur-ws.org/Vol-1506/%23Session2%3AMobileSemanticApps>,
-        <http%3A//ceur-ws.org/Vol-1506/%23Session3%3ASupportingTools%26Techniques> ;
-    ns8:issued "2015-11-09T00:00:00+00:00"^^xsd:dateTime ;
-    ns3:presentedAt <http://ceur-ws.org/Vol-1506/#event> ;
+<http://ceur-ws.org/Vol-1506/> a ns6:Proceedings ;
+    ns2:issued "2015-11-09T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:presentedAt <http://ceur-ws.org/Vol-1506/#event> ;
     ns1:editor <http://ceur-ws.org/Vol-1506/#EvaniW.iPatton>,
         <http://ceur-ws.org/Vol-1506/#RobertoiYus>,
         <http://ceur-ws.org/Vol-1506/#WilliamiVaniWoensel> .
+
+<http://ceur-ws.org/Vol-1506/#EvaniW.iPatton> a ns3:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/EvaniW.iPatton> ;
+    ns3:name "Evan W. Patton" .
+
+<http://ceur-ws.org/Vol-1506/#RobertoiYus> a ns3:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/RobertoiYus> ;
+    ns3:name "Roberto Yus" .
+
+<http://ceur-ws.org/Vol-1506/#WilliamiVaniWoensel> a ns3:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/WilliamiVaniWoensel> ;
+    ns3:name "William Van Woensel" .
+
+<http://ceur-ws.org/Vol-1506/#event> a ns6:WorkshopEvent ;
+    ns6:hasLocation <http://dbpedia.org/resource/United_States> ;
+    ns6:hasPart <http://ceur-ws.org/Vol-1506/#part-MoDeST> ;
+    ns6:isSubEventOf <http://ceur-ws.org/Vol-1506/#conf> ;
+    ns5:beginsAtDatetime "2015-10-11T00:00:00+00:00"^^xsd:dateTime ;
+    ns5:endsAtDatetime "2015-10-11T00:00:00+00:00"^^xsd:dateTime ;
+    ns4:license "http://creativecommons.org/publicdomain/zero/1.0/" .
 

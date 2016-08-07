@@ -1,182 +1,41 @@
-@prefix ns1: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns1: <http://purl.org/dc/elements/1.1/> .
 @prefix ns2: <http://xmlns.com/foaf/0.1/> .
-@prefix ns3: <http://www.w3.org/2002/07/owl#> .
+@prefix ns3: <http://swrc.ontoware.org/ontology/#> .
 @prefix ns4: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns5: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns6: <http://purl.org/ontology/bibo/#> .
-@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns8: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns5: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns6: <http://www.w3.org/2002/07/owl#> .
+@prefix ns7: <http://purl.org/ontology/bibo/#> .
+@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-948/#DanteiBartoli> a ns2:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/DanteiBartoli> ;
-    ns2:made <http://ceur-ws.org/Vol-948/#paper5> ;
-    ns2:name "Dante Bartoli" .
-
-<http://ceur-ws.org/Vol-948/#DomenicoiVisintini> a ns2:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/DomenicoiVisintini> ;
-    ns2:made <http://ceur-ws.org/Vol-948/#paper2> ;
-    ns2:name "Domenico Visintini" .
-
-<http://ceur-ws.org/Vol-948/#EmanueleiForte> a ns2:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/EmanueleiForte> ;
-    ns2:made <http://ceur-ws.org/Vol-948/#paper1> ;
-    ns2:name "Emanuele Forte" .
-
-<http://ceur-ws.org/Vol-948/#FabioiRemondino> a ns2:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/FabioiRemondino> ;
-    ns2:made <http://ceur-ws.org/Vol-948/#paper2> ;
-    ns2:name "Fabio Remondino" .
+<http://ceur-ws.org/Vol-948/> a ns4:Proceedings ;
+    ns8:issued "2012-12-14T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:presentedAt <http://ceur-ws.org/Vol-948/#event> ;
+    ns3:editor <http://ceur-ws.org/Vol-948/#LuigiiFozzati>,
+        <http://ceur-ws.org/Vol-948/#VitoiRoberto>,
+        <http://ceur-ws.org/Vol-948/#and> .
 
 <http://ceur-ws.org/Vol-948/#LuigiiFozzati> a ns2:Person ;
-    ns1:affiliation "" ;
-    ns3:sameAs <http://ceur-ws.org/persons/LuigiiFozzati> ;
+    ns6:sameAs <http://ceur-ws.org/persons/LuigiiFozzati> ;
     ns2:name "Luigi Fozzati" .
 
-<http://ceur-ws.org/Vol-948/#MassimoiCapulli> a ns2:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/MassimoiCapulli> ;
-    ns2:made <http://ceur-ws.org/Vol-948/#paper5> ;
-    ns2:name "Massimo Capulli" .
-
-<http://ceur-ws.org/Vol-948/#MaurizioiBuora> a ns2:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/MaurizioiBuora> ;
-    ns2:made <http://ceur-ws.org/Vol-948/#paper7> ;
-    ns2:name "Maurizio Buora" .
-
-<http://ceur-ws.org/Vol-948/#MicheleiPipan> a ns2:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/MicheleiPipan> ;
-    ns2:made <http://ceur-ws.org/Vol-948/#paper1> ;
-    ns2:name "Michele Pipan" .
-
-<http://ceur-ws.org/Vol-948/#PaoloiGallo> a ns2:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/PaoloiGallo> ;
-    ns2:made <http://ceur-ws.org/Vol-948/#paper3> ;
-    ns2:name "Paolo Gallo" .
-
-<http://ceur-ws.org/Vol-948/#PeteriHolt> a ns2:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/PeteriHolt> ;
-    ns2:made <http://ceur-ws.org/Vol-948/#paper5> ;
-    ns2:name "Peter Holt" .
-
-<http://ceur-ws.org/Vol-948/#SaraiGonizziiBarsanti> a ns2:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/SaraiGonizziiBarsanti> ;
-    ns2:made <http://ceur-ws.org/Vol-948/#paper2> ;
-    ns2:name "Sara Gonizzi Barsanti" .
-
-<http://ceur-ws.org/Vol-948/#StefaniGroh> a ns2:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/StefaniGroh> ;
-    ns2:made <http://ceur-ws.org/Vol-948/#paper4> ;
-    ns2:name "Stefan Groh" .
-
-<http://ceur-ws.org/Vol-948/#StefanoiMagnani> a ns2:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/StefanoiMagnani> ;
-    ns2:made <http://ceur-ws.org/Vol-948/#paper6> ;
-    ns2:name "Stefano Magnani" .
-
-<http://ceur-ws.org/Vol-948/#TianiGang> a ns2:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/TianiGang> ;
-    ns2:made <http://ceur-ws.org/Vol-948/#paper1> ;
-    ns2:name "Tian Gang" .
-
-<http://ceur-ws.org/Vol-948/#ZhaoiWenke> a ns2:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/ZhaoiWenke> ;
-    ns2:made <http://ceur-ws.org/Vol-948/#paper1> ;
-    ns2:name "Zhao Wenke" .
+<http://ceur-ws.org/Vol-948/#VitoiRoberto> a ns2:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/VitoiRoberto> ;
+    ns2:name "Vito Roberto" .
 
 <http://ceur-ws.org/Vol-948/#and> a ns2:Person ;
-    ns1:affiliation "" ;
-    ns3:sameAs <http://ceur-ws.org/persons/and> ;
+    ns6:sameAs <http://ceur-ws.org/persons/and> ;
     ns2:name "and" .
 
 <http://ceur-ws.org/Vol-948/#event> a ns4:WorkshopEvent ;
     ns4:hasLocation <http://dbpedia.org/resource/Italy> ;
-    ns4:hasPart <http://ceur-ws.org/Vol-948/#part-NTA> ;
+    ns4:hasPart <http://ceur-ws.org/Vol-948/#part-CEUR-WS> ;
     ns4:isSubEventOf <http://ceur-ws.org/Vol-948/#conf> ;
-    ns7:beginsAtDatetime "2012-06-25T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:endsAtDatetime "2012-06-25T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:license <http://choosealicense.com/licenses/no-license/> ;
+    ns5:beginsAtDatetime "2012-06-25T00:00:00+00:00"^^xsd:dateTime ;
+    ns5:endsAtDatetime "2012-06-25T00:00:00+00:00"^^xsd:dateTime ;
+    ns1:license "http://choosealicense.com/licenses/no-license/" ;
     rdfs:seeAlso <http://ceur-ws.org/Vol-806/#event> .
-
-<http://ceur-ws.org/Vol-948/#VitoiRoberto> a ns2:Person ;
-    ns1:affiliation "" ;
-    ns3:sameAs <http://ceur-ws.org/persons/VitoiRoberto> ;
-    ns2:made <http://ceur-ws.org/Vol-948/#paper3> ;
-    ns2:name "Vito Roberto" .
-
-<http://ceur-ws.org/Vol-948/#paper4> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-948/> ;
-    ns8:title "Research on the Urban and Suburban Topography of Aquileia" ;
-    ns6:section <http%3A//ceur-ws.org/Vol-948/%23PartII%3ANondestructiveInvestigations> ;
-    ns1:author <http://ceur-ws.org/Vol-948/#StefaniGroh> .
-
-<http://ceur-ws.org/Vol-948/#paper6> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-948/> ;
-    ns8:title "Persistence and Change in the Landscape between Aquileia and the Lagoon: Some Observations" ;
-    ns6:section <http%3A//ceur-ws.org/Vol-948/%23PartII%3ANondestructiveInvestigations> ;
-    ns1:author <http://ceur-ws.org/Vol-948/#StefanoiMagnani> .
-
-<http://ceur-ws.org/Vol-948/#paper7> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-948/> ;
-    ns8:title "Aquileia: Problems about the Theatre. Contributions of the New Technologies" ;
-    ns6:section <http%3A//ceur-ws.org/Vol-948/%23PartII%3ANondestructiveInvestigations> ;
-    ns1:author <http://ceur-ws.org/Vol-948/#MaurizioiBuora> .
-
-<http://ceur-ws.org/Vol-948/#paper3> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-948/> ;
-    ns8:title "ANTEO: Sharing Archaeological Data on a WebGIS Platform" ;
-    ns6:section <http%3A//ceur-ws.org/Vol-948/%23PartI%3AMethodsandTechniques> ;
-    ns1:author <http://ceur-ws.org/Vol-948/#PaoloiGallo>,
-        <http://ceur-ws.org/Vol-948/#VitoiRoberto> .
-
-<http%3A//ceur-ws.org/Vol-948/%23PartI%3AMethodsandTechniques> a ns4:SessionEvent ;
-    ns4:partOf <http://ceur-ws.org/Vol-948/> ;
-    ns8:title "Part I: Methods and Techniques" .
-
-<http://ceur-ws.org/Vol-948/#paper2> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-948/> ;
-    ns8:title "Photogrammetry and Laser Scanning for Archaeological Site 3D Modeling � Some Critical Issues" ;
-    ns6:section <http%3A//ceur-ws.org/Vol-948/%23PartI%3AMethodsandTechniques> ;
-    ns1:author <http://ceur-ws.org/Vol-948/#DomenicoiVisintini>,
-        <http://ceur-ws.org/Vol-948/#FabioiRemondino>,
-        <http://ceur-ws.org/Vol-948/#SaraiGonizziiBarsanti> .
-
-<http://ceur-ws.org/Vol-948/#paper5> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-948/> ;
-    ns8:title "Creating a GIS for the Underwater Research Project ANAXUM: the Stella 1 Shipwreck" ;
-    ns6:section <http%3A//ceur-ws.org/Vol-948/%23PartII%3ANondestructiveInvestigations> ;
-    ns1:author <http://ceur-ws.org/Vol-948/#DanteiBartoli>,
-        <http://ceur-ws.org/Vol-948/#MassimoiCapulli>,
-        <http://ceur-ws.org/Vol-948/#PeteriHolt> .
-
-<http%3A//ceur-ws.org/Vol-948/%23PartII%3ANondestructiveInvestigations> a ns4:SessionEvent ;
-    ns4:partOf <http://ceur-ws.org/Vol-948/> ;
-    ns8:title "Part II: Nondestructive Investigations" .
-
-<http://ceur-ws.org/Vol-948/#paper1> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-948/> ;
-    ns8:title "High-Resolution Geophysics in Imaging and Characterization of Buried Cultural Heritage" ;
-    ns6:section <http%3A//ceur-ws.org/Vol-948/%23PartI%3AMethodsandTechniques> ;
-    ns1:author <http://ceur-ws.org/Vol-948/#EmanueleiForte>,
-        <http://ceur-ws.org/Vol-948/#MicheleiPipan>,
-        <http://ceur-ws.org/Vol-948/#TianiGang>,
-        <http://ceur-ws.org/Vol-948/#ZhaoiWenke> .
-
-<http://ceur-ws.org/Vol-948/> a ns4:Proceedings ;
-    ns4:hasPart <http://ceur-ws.org/Vol-948/#paper1>,
-        <http://ceur-ws.org/Vol-948/#paper2>,
-        <http://ceur-ws.org/Vol-948/#paper3>,
-        <http://ceur-ws.org/Vol-948/#paper4>,
-        <http://ceur-ws.org/Vol-948/#paper5>,
-        <http://ceur-ws.org/Vol-948/#paper6>,
-        <http://ceur-ws.org/Vol-948/#paper7> ;
-    ns4:hasSession <http%3A//ceur-ws.org/Vol-948/%23PartI%3AMethodsandTechniques>,
-        <http%3A//ceur-ws.org/Vol-948/%23PartII%3ANondestructiveInvestigations> ;
-    ns5:issued "2012-12-14T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:presentedAt <http://ceur-ws.org/Vol-948/#event> ;
-    ns1:editor <http://ceur-ws.org/Vol-948/#LuigiiFozzati>,
-        <http://ceur-ws.org/Vol-948/#VitoiRoberto>,
-        <http://ceur-ws.org/Vol-948/#and> .
 

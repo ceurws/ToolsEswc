@@ -1,372 +1,46 @@
-@prefix ns1: <http://purl.org/ontology/bibo/#> .
-@prefix ns2: <http://www.w3.org/2002/07/owl#> .
-@prefix ns3: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns4: <http://xmlns.com/foaf/0.1/> .
-@prefix ns5: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns6: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns1: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns2: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns3: <http://xmlns.com/foaf/0.1/> .
+@prefix ns4: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns5: <http://purl.org/ontology/bibo/#> .
+@prefix ns6: <http://www.w3.org/2002/07/owl#> .
 @prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns8: <http://purl.org/dc/elements/1.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1594/#AlexanderiAskinadze> a ns4:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/AlexanderiAskinadze> ;
-    ns4:made <http://ceur-ws.org/Vol-1594/#paper4> ;
-    ns4:name "Alexander Askinadze" .
+<http://ceur-ws.org/Vol-1594/> a ns4:Proceedings ;
+    ns1:issued "2016-05-25T00:00:00+00:00"^^xsd:dateTime ;
+    ns5:presentedAt <http://ceur-ws.org/Vol-1594/#event> ;
+    ns2:editor <http://ceur-ws.org/Vol-1594/#HendrikiBitzmann>,
+        <http://ceur-ws.org/Vol-1594/#LenaiWiese>,
+        <http://ceur-ws.org/Vol-1594/#TimiWaage> .
 
-<http://ceur-ws.org/Vol-1594/#AlexanderiKrause> a ns4:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/AlexanderiKrause> ;
-    ns4:made <http://ceur-ws.org/Vol-1594/#paper13> ;
-    ns4:name "Alexander Krause" .
+<http://ceur-ws.org/Vol-1594/#HendrikiBitzmann> a ns3:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/HendrikiBitzmann> ;
+    ns3:name "Hendrik Bitzmann" .
 
-<http://ceur-ws.org/Vol-1594/#AndreasiHarth> a ns4:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/AndreasiHarth> ;
-    ns4:made <http://ceur-ws.org/Vol-1594/#paper12> ;
-    ns4:name "Andreas Harth" .
+<http://ceur-ws.org/Vol-1594/#LenaiWiese> a ns3:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/LenaiWiese> ;
+    ns3:name "Lena Wiese" .
 
-<http://ceur-ws.org/Vol-1594/#AndreasiMeister> a ns4:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/AndreasiMeister> ;
-    ns4:made <http://ceur-ws.org/Vol-1594/#paper16> ;
-    ns4:name "Andreas Meister" .
+<http://ceur-ws.org/Vol-1594/#TimiWaage> a ns3:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/TimiWaage> ;
+    ns3:name "Tim Waage" .
 
-<http://ceur-ws.org/Vol-1594/#AnsgariScherp> a ns4:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/AnsgariScherp> ;
-    ns4:made <http://ceur-ws.org/Vol-1594/#paper1> ;
-    ns4:name "Ansgar Scherp" .
-
-<http://ceur-ws.org/Vol-1594/#BezayeiTesfaye> a ns4:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/BezayeiTesfaye> ;
-    ns4:made <http://ceur-ws.org/Vol-1594/#paper20> ;
-    ns4:name "Bezaye Tesfaye" .
-
-<http://ceur-ws.org/Vol-1594/#ChristianiBock> a ns4:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/ChristianiBock> ;
-    ns4:made <http://ceur-ws.org/Vol-1594/#paper5> ;
-    ns4:name "Christian Bock" .
-
-<http://ceur-ws.org/Vol-1594/#DavidiFekete> a ns4:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/DavidiFekete> ;
-    ns4:made <http://ceur-ws.org/Vol-1594/#paper10> ;
-    ns4:name "David Fekete" .
-
-<http://ceur-ws.org/Vol-1594/#DorisiSilbernagl> a ns4:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/DorisiSilbernagl> ;
-    ns4:made <http://ceur-ws.org/Vol-1594/#paper19> ;
-    ns4:name "Doris Silbernagl" .
-
-<http://ceur-ws.org/Vol-1594/#FabianiSchomm> a ns4:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/FabianiSchomm> ;
-    ns4:made <http://ceur-ws.org/Vol-1594/#paper18> ;
-    ns4:name "Fabian Schomm" .
-
-<http://ceur-ws.org/Vol-1594/#FerdinandiBollwein> a ns4:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/FerdinandiBollwein> ;
-    ns4:made <http://ceur-ws.org/Vol-1594/#paper7> ;
-    ns4:name "Ferdinand Bollwein" .
-
-<http://ceur-ws.org/Vol-1594/#JuliaiRomberg> a ns4:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/JuliaiRomberg> ;
-    ns4:made <http://ceur-ws.org/Vol-1594/#paper17> ;
-    ns4:name "Julia Romberg" .
-
-<http://ceur-ws.org/Vol-1594/#KerstiniSchneider> a ns4:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/KerstiniSchneider> ;
-    ns4:made <http://ceur-ws.org/Vol-1594/#paper2> ;
-    ns4:name "Kerstin Schneider" .
-
-<http://ceur-ws.org/Vol-1594/#KirilliBogomasov> a ns4:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/KirilliBogomasov> ;
-    ns4:made <http://ceur-ws.org/Vol-1594/#paper6> ;
-    ns4:name "Kirill Bogomasov" .
-
-<http://ceur-ws.org/Vol-1594/#LenaiWiese> a ns4:Person ;
-    ns6:affiliation "" ;
-    ns2:sameAs <http://ceur-ws.org/persons/LenaiWiese> ;
-    ns4:name "Lena Wiese" .
-
-<http://ceur-ws.org/Vol-1594/#LucasiLersch> a ns4:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/LucasiLersch> ;
-    ns4:made <http://ceur-ws.org/Vol-1594/#paper15> ;
-    ns4:name "Lucas Lersch" .
-
-<http://ceur-ws.org/Vol-1594/#NikolausiKrismer> a ns4:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/NikolausiKrismer> ;
-    ns4:made <http://ceur-ws.org/Vol-1594/#paper14> ;
-    ns4:name "Nikolaus Krismer" .
-
-<http://ceur-ws.org/Vol-1594/#ParinaziAmeri> a ns4:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/ParinaziAmeri> ;
-    ns4:made <http://ceur-ws.org/Vol-1594/#paper3> ;
-    ns4:name "Parinaz Ameri" .
-
-<http://ceur-ws.org/Vol-1594/#PhilippiEgert> a ns4:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/PhilippiEgert> ;
-    ns4:made <http://ceur-ws.org/Vol-1594/#paper9> ;
-    ns4:name "Philipp Egert" .
-
-<http://ceur-ws.org/Vol-1594/#PhilippiG%C3%B6tze> a ns4:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/PhilippiG%C3%B6tze> ;
-    ns4:made <http://ceur-ws.org/Vol-1594/#paper11> ;
-    ns4:name "Philipp Götze" .
-
-<http://ceur-ws.org/Vol-1594/#SebastianiDorok> a ns4:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/SebastianiDorok> ;
-    ns4:made <http://ceur-ws.org/Vol-1594/#paper8> ;
-    ns4:name "Sebastian Dorok" .
-
-<http://ceur-ws.org/Vol-1594/#TimiWaage> a ns4:Person ;
-    ns6:affiliation "" ;
-    ns2:sameAs <http://ceur-ws.org/persons/TimiWaage> ;
-    ns4:name "Tim Waage" .
-
-<http://ceur-ws.org/Vol-1594/#event> a ns5:WorkshopEvent ;
-    ns5:hasLocation <http://dbpedia.org/resource/Germany> ;
-    ns5:hasPart <http://ceur-ws.org/Vol-1594/#part-GvDB> ;
-    ns5:isSubEventOf <http://ceur-ws.org/Vol-1594/#conf> ;
+<http://ceur-ws.org/Vol-1594/#event> a ns4:WorkshopEvent ;
+    ns4:hasLocation <http://dbpedia.org/resource/Germany> ;
+    ns4:hasPart <http://ceur-ws.org/Vol-1594/#part-ws> ;
+    ns4:isSubEventOf <http://ceur-ws.org/Vol-1594/#conf> ;
     ns7:beginsAtDatetime "2016-05-24T00:00:00+00:00"^^xsd:dateTime ;
     ns7:endsAtDatetime "2016-05-27T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:license "http://creativecommons.org/publicdomain/zero/1.0/" ;
     rdfs:seeAlso <http://ceur-ws.org/Vol-1020/#event>,
         <http://ceur-ws.org/Vol-1313/#event>,
         <http://ceur-ws.org/Vol-1366/#event>,
         <http://ceur-ws.org/Vol-581/#event>,
         <http://ceur-ws.org/Vol-733/#event>,
         <http://ceur-ws.org/Vol-850/#event> .
-
-<http://ceur-ws.org/Vol-1594/#metadataiincl.ibibliographicidataipublishediunder> a ns4:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/metadataiincl.ibibliographicidataipublishediunder> ;
-    ns4:made <http://ceur-ws.org/Vol-1594/#Vol-1594.zip> ;
-    ns4:name "metadata incl. bibliographic data published under" .
-
-<http://ceur-ws.org/Vol-1594/#2016-05-24%3AisubmittedibyiHendrikiBitzmann> a ns4:Person ;
-    ns6:affiliation "" ;
-    ns2:sameAs <http://ceur-ws.org/persons/2016-05-24%3AisubmittedibyiHendrikiBitzmann> ;
-    ns4:made <http://ceur-ws.org/Vol-1594/#Vol-1594.zip> ;
-    ns4:name "2016-05-24: submitted by Hendrik Bitzmann" .
-
-<http://ceur-ws.org/Vol-1594/#paper1> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1594/> ;
-    ns3:title "Mining and Managing Large-Scale Linked Open Data" ;
-    ns1:endPage 8 ;
-    ns1:numPages 1 ;
-    ns1:section <http%3A//ceur-ws.org/Vol-1594/%23Keynotes> ;
-    ns1:startPage 8 ;
-    ns6:author <http://ceur-ws.org/Vol-1594/#AnsgariScherp> .
-
-<http://ceur-ws.org/Vol-1594/#paper10> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1594/> ;
-    ns3:title "The GOBIA Method: Fusing Data Warehouses and Big Data in a Goal-Oriented BI Architecture" ;
-    ns1:endPage 55 ;
-    ns1:numPages 6 ;
-    ns1:section <http%3A//ceur-ws.org/Vol-1594/%23WorkshopSubmissions> ;
-    ns1:startPage 50 ;
-    ns6:author <http://ceur-ws.org/Vol-1594/#DavidiFekete> .
-
-<http://ceur-ws.org/Vol-1594/#paper11> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1594/> ;
-    ns3:title "Rewriting and Code Generation for Dataflow Programs" ;
-    ns1:endPage 61 ;
-    ns1:numPages 6 ;
-    ns1:section <http%3A//ceur-ws.org/Vol-1594/%23WorkshopSubmissions> ;
-    ns1:startPage 56 ;
-    ns6:author <http://ceur-ws.org/Vol-1594/#PhilippiG%C3%B6tze> .
-
-<http://ceur-ws.org/Vol-1594/#paper12> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1594/> ;
-    ns3:title "Towards Specification and Execution of Linked Systems" ;
-    ns1:endPage 67 ;
-    ns1:numPages 6 ;
-    ns1:section <http%3A//ceur-ws.org/Vol-1594/%23WorkshopSubmissions> ;
-    ns1:startPage 62 ;
-    ns6:author <http://ceur-ws.org/Vol-1594/#AndreasiHarth> .
-
-<http://ceur-ws.org/Vol-1594/#paper13> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1594/> ;
-    ns3:title "HUGS – A Lightweight Graph Partitioning Approach" ;
-    ns1:endPage 73 ;
-    ns1:numPages 6 ;
-    ns1:section <http%3A//ceur-ws.org/Vol-1594/%23WorkshopSubmissions> ;
-    ns1:startPage 68 ;
-    ns6:author <http://ceur-ws.org/Vol-1594/#AlexanderiKrause> .
-
-<http://ceur-ws.org/Vol-1594/#paper14> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1594/> ;
-    ns3:title "Elevation Enabled Bicycle Router Supporting User-Profiles" ;
-    ns1:endPage 79 ;
-    ns1:numPages 6 ;
-    ns1:section <http%3A//ceur-ws.org/Vol-1594/%23WorkshopSubmissions> ;
-    ns1:startPage 74 ;
-    ns6:author <http://ceur-ws.org/Vol-1594/#NikolausiKrismer> .
-
-<http://ceur-ws.org/Vol-1594/#paper15> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1594/> ;
-    ns3:title "Decoupling Persistence Services from DBMS Buffer Management" ;
-    ns1:endPage 85 ;
-    ns1:numPages 6 ;
-    ns1:section <http%3A//ceur-ws.org/Vol-1594/%23WorkshopSubmissions> ;
-    ns1:startPage 80 ;
-    ns6:author <http://ceur-ws.org/Vol-1594/#LucasiLersch> .
-
-<http://ceur-ws.org/Vol-1594/#paper16> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1594/> ;
-    ns3:title "Challenges for a GPU-Accelerated Dynamic Programming Approach for Join-Order Optimization" ;
-    ns1:endPage 81 ;
-    ns1:numPages -4 ;
-    ns1:section <http%3A//ceur-ws.org/Vol-1594/%23WorkshopSubmissions> ;
-    ns1:startPage 86 ;
-    ns6:author <http://ceur-ws.org/Vol-1594/#AndreasiMeister> .
-
-<http://ceur-ws.org/Vol-1594/#paper17> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1594/> ;
-    ns3:title "Actor Identification and Relevance Filtering in Movie Reviews" ;
-    ns1:endPage 97 ;
-    ns1:numPages 6 ;
-    ns1:section <http%3A//ceur-ws.org/Vol-1594/%23WorkshopSubmissions> ;
-    ns1:startPage 92 ;
-    ns6:author <http://ceur-ws.org/Vol-1594/#JuliaiRomberg> .
-
-<http://ceur-ws.org/Vol-1594/#paper18> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1594/> ;
-    ns3:title "Data Profiling as a Process - Bridging the Gap Between Academia and Practitioners" ;
-    ns1:endPage 102 ;
-    ns1:numPages 5 ;
-    ns1:section <http%3A//ceur-ws.org/Vol-1594/%23WorkshopSubmissions> ;
-    ns1:startPage 98 ;
-    ns6:author <http://ceur-ws.org/Vol-1594/#FabianiSchomm> .
-
-<http://ceur-ws.org/Vol-1594/#paper19> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1594/> ;
-    ns3:title "Optimization of Digital Elevation Models for Routing" ;
-    ns1:endPage 108 ;
-    ns1:numPages 6 ;
-    ns1:section <http%3A//ceur-ws.org/Vol-1594/%23WorkshopSubmissions> ;
-    ns1:startPage 103 ;
-    ns6:author <http://ceur-ws.org/Vol-1594/#DorisiSilbernagl> .
-
-<http://ceur-ws.org/Vol-1594/#paper2> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1594/> ;
-    ns3:title "It’s all about the Data: Big Data, Real Data, Research Data, Open Data, ..." ;
-    ns1:endPage 9 ;
-    ns1:numPages 1 ;
-    ns1:section <http%3A//ceur-ws.org/Vol-1594/%23Keynotes> ;
-    ns1:startPage 9 ;
-    ns6:author <http://ceur-ws.org/Vol-1594/#KerstiniSchneider> .
-
-<http://ceur-ws.org/Vol-1594/#paper20> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1594/> ;
-    ns3:title "Reachability Queries in Public Transport Networks" ;
-    ns1:endPage 114 ;
-    ns1:numPages 6 ;
-    ns1:section <http%3A//ceur-ws.org/Vol-1594/%23WorkshopSubmissions> ;
-    ns1:startPage 109 ;
-    ns6:author <http://ceur-ws.org/Vol-1594/#BezayeiTesfaye> .
-
-<http://ceur-ws.org/Vol-1594/#paper3> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1594/> ;
-    ns3:title "Challenges of Index Recommendation for Databases" ;
-    ns1:endPage 14 ;
-    ns1:numPages 5 ;
-    ns1:section <http%3A//ceur-ws.org/Vol-1594/%23WorkshopSubmissions> ;
-    ns1:startPage 10 ;
-    ns6:author <http://ceur-ws.org/Vol-1594/#ParinaziAmeri> .
-
-<http://ceur-ws.org/Vol-1594/#paper4> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1594/> ;
-    ns3:title "Anwendung der Regressions-SVM zur Vorhersage studentischer Leistungen" ;
-    ns1:endPage 20 ;
-    ns1:numPages 6 ;
-    ns1:section <http%3A//ceur-ws.org/Vol-1594/%23WorkshopSubmissions> ;
-    ns1:startPage 15 ;
-    ns6:author <http://ceur-ws.org/Vol-1594/#AlexanderiAskinadze> .
-
-<http://ceur-ws.org/Vol-1594/#paper5> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1594/> ;
-    ns3:title "Clustering-Ansatz zur Erstellung von Lastprofilen zur Vorhersage des Stromverbrauchs" ;
-    ns1:endPage 26 ;
-    ns1:numPages 6 ;
-    ns1:section <http%3A//ceur-ws.org/Vol-1594/%23WorkshopSubmissions> ;
-    ns1:startPage 21 ;
-    ns6:author <http://ceur-ws.org/Vol-1594/#ChristianiBock> .
-
-<http://ceur-ws.org/Vol-1594/#paper6> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1594/> ;
-    ns3:title "FSC - FloodFill Sky Classification" ;
-    ns1:endPage 32 ;
-    ns1:numPages 6 ;
-    ns1:section <http%3A//ceur-ws.org/Vol-1594/%23WorkshopSubmissions> ;
-    ns1:startPage 27 ;
-    ns6:author <http://ceur-ws.org/Vol-1594/#KirilliBogomasov> .
-
-<http://ceur-ws.org/Vol-1594/#paper7> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1594/> ;
-    ns3:title "Ein Replikationsschema für multiple Fragmentierungen mit überlappenden Fragmenten" ;
-    ns1:endPage 38 ;
-    ns1:numPages 6 ;
-    ns1:section <http%3A//ceur-ws.org/Vol-1594/%23WorkshopSubmissions> ;
-    ns1:startPage 33 ;
-    ns6:author <http://ceur-ws.org/Vol-1594/#FerdinandiBollwein> .
-
-<http://ceur-ws.org/Vol-1594/#paper8> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1594/> ;
-    ns3:title "Memory Efficient Processing of DNA Sequences in Relational Main-Memory Database Systems" ;
-    ns1:endPage 43 ;
-    ns1:numPages 5 ;
-    ns1:section <http%3A//ceur-ws.org/Vol-1594/%23WorkshopSubmissions> ;
-    ns1:startPage 39 ;
-    ns6:author <http://ceur-ws.org/Vol-1594/#SebastianiDorok> .
-
-<http://ceur-ws.org/Vol-1594/#paper9> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1594/> ;
-    ns3:title "FM-DBSCAN: Ein effizienter, dichte-basierter Clustering-Algorithmus" ;
-    ns1:endPage 49 ;
-    ns1:numPages 6 ;
-    ns1:section <http%3A//ceur-ws.org/Vol-1594/%23WorkshopSubmissions> ;
-    ns1:startPage 44 ;
-    ns6:author <http://ceur-ws.org/Vol-1594/#PhilippiEgert> .
-
-<http%3A//ceur-ws.org/Vol-1594/%23Keynotes> a ns5:SessionEvent ;
-    ns5:partOf <http://ceur-ws.org/Vol-1594/> ;
-    ns3:title "Keynotes" .
-
-<http://ceur-ws.org/Vol-1594/#Vol-1594.zip> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1594/> ;
-    ns3:title "Complete proceedings in one ZIP file Complete proceedings in one PDF" ;
-    ns1:section <http%3A//ceur-ws.org/Vol-1594/%23WorkshopSubmissions> ;
-    ns6:author <http://ceur-ws.org/Vol-1594/#2016-05-24%3AisubmittedibyiHendrikiBitzmann>,
-        <http://ceur-ws.org/Vol-1594/#metadataiincl.ibibliographicidataipublishediunder> .
-
-<http%3A//ceur-ws.org/Vol-1594/%23WorkshopSubmissions> a ns5:SessionEvent ;
-    ns5:partOf <http://ceur-ws.org/Vol-1594/> ;
-    ns3:title "Workshop Submissions" .
-
-<http://ceur-ws.org/Vol-1594/> a ns5:Proceedings ;
-    ns5:hasPart <http://ceur-ws.org/Vol-1594/#Vol-1594.zip>,
-        <http://ceur-ws.org/Vol-1594/#paper1>,
-        <http://ceur-ws.org/Vol-1594/#paper10>,
-        <http://ceur-ws.org/Vol-1594/#paper11>,
-        <http://ceur-ws.org/Vol-1594/#paper12>,
-        <http://ceur-ws.org/Vol-1594/#paper13>,
-        <http://ceur-ws.org/Vol-1594/#paper14>,
-        <http://ceur-ws.org/Vol-1594/#paper15>,
-        <http://ceur-ws.org/Vol-1594/#paper16>,
-        <http://ceur-ws.org/Vol-1594/#paper17>,
-        <http://ceur-ws.org/Vol-1594/#paper18>,
-        <http://ceur-ws.org/Vol-1594/#paper19>,
-        <http://ceur-ws.org/Vol-1594/#paper2>,
-        <http://ceur-ws.org/Vol-1594/#paper20>,
-        <http://ceur-ws.org/Vol-1594/#paper3>,
-        <http://ceur-ws.org/Vol-1594/#paper4>,
-        <http://ceur-ws.org/Vol-1594/#paper5>,
-        <http://ceur-ws.org/Vol-1594/#paper6>,
-        <http://ceur-ws.org/Vol-1594/#paper7>,
-        <http://ceur-ws.org/Vol-1594/#paper8>,
-        <http://ceur-ws.org/Vol-1594/#paper9> ;
-    ns5:hasSession <http%3A//ceur-ws.org/Vol-1594/%23Keynotes>,
-        <http%3A//ceur-ws.org/Vol-1594/%23WorkshopSubmissions> ;
-    ns8:issued "2016-05-25T00:00:00+00:00"^^xsd:dateTime ;
-    ns1:presentedAt <http://ceur-ws.org/Vol-1594/#event> ;
-    ns6:editor <http://ceur-ws.org/Vol-1594/#2016-05-24%3AisubmittedibyiHendrikiBitzmann>,
-        <http://ceur-ws.org/Vol-1594/#LenaiWiese>,
-        <http://ceur-ws.org/Vol-1594/#TimiWaage> .
 

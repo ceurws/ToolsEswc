@@ -1,230 +1,42 @@
-@prefix ns1: <http://xmlns.com/foaf/0.1/> .
-@prefix ns2: <http://www.w3.org/2002/07/owl#> .
-@prefix ns3: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns4: <http://purl.org/ontology/bibo/#> .
-@prefix ns5: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns6: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns1: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns2: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns3: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns4: <http://purl.org/dc/elements/1.1/> .
+@prefix ns5: <http://xmlns.com/foaf/0.1/> .
+@prefix ns6: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns7: <http://purl.org/ontology/bibo/#> .
+@prefix ns8: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1567/#AndiiRexha> a ns1:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/AndiiRexha> ;
-    ns1:made <http://ceur-ws.org/Vol-1567/#paper3> ;
-    ns1:name "Andi Rexha" .
+<http://ceur-ws.org/Vol-1567/> a ns3:Proceedings ;
+    ns6:issued "2016-03-17T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:presentedAt <http://ceur-ws.org/Vol-1567/#event> ;
+    ns2:editor <http://ceur-ws.org/Vol-1567/#GuillaumeiCabanac>,
+        <http://ceur-ws.org/Vol-1567/#IngoiFrommholz>,
+        <http://ceur-ws.org/Vol-1567/#PhilippiMayr> .
 
-<http://ceur-ws.org/Vol-1567/#BirgeriLarsen> a ns1:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/BirgeriLarsen> ;
-    ns1:made <http://ceur-ws.org/Vol-1567/#paper8> ;
-    ns1:name "Birger Larsen" .
+<http://ceur-ws.org/Vol-1567/#GuillaumeiCabanac> a ns5:Person ;
+    ns8:sameAs <http://ceur-ws.org/persons/GuillaumeiCabanac> ;
+    ns5:name "Guillaume Cabanac" .
 
-<http://ceur-ws.org/Vol-1567/#ChristinaiLioma> a ns1:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/ChristinaiLioma> ;
-    ns1:made <http://ceur-ws.org/Vol-1567/#paper8> ;
-    ns1:name "Christina Lioma" .
+<http://ceur-ws.org/Vol-1567/#IngoiFrommholz> a ns5:Person ;
+    ns8:sameAs <http://ceur-ws.org/persons/IngoiFrommholz> ;
+    ns5:name "Ingo Frommholz" .
 
-<http://ceur-ws.org/Vol-1567/#ClaraiRiera-Quintero> a ns1:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/ClaraiRiera-Quintero> ;
-    ns1:made <http://ceur-ws.org/Vol-1567/#paper5> ;
-    ns1:name "Clara Riera-Quintero" .
+<http://ceur-ws.org/Vol-1567/#PhilippiMayr> a ns5:Person ;
+    ns8:sameAs <http://ceur-ws.org/persons/PhilippiMayr> ;
+    ns5:name "Philipp Mayr" .
 
-<http://ceur-ws.org/Vol-1567/#CyriliLabb%C3%A9> a ns1:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/CyriliLabb%C3%A9> ;
-    ns1:made <http://ceur-ws.org/Vol-1567/#paper6> ;
-    ns1:name "Cyril Labbé" .
-
-<http://ceur-ws.org/Vol-1567/#Fr%C3%A9d%C3%A9riciKaplan> a ns1:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/Fr%C3%A9d%C3%A9riciKaplan> ;
-    ns1:made <http://ceur-ws.org/Vol-1567/#paper4> ;
-    ns1:name "Frédéric Kaplan" .
-
-<http://ceur-ws.org/Vol-1567/#FrancesciMarch-Mir> a ns1:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/FrancesciMarch-Mir> ;
-    ns1:made <http://ceur-ws.org/Vol-1567/#paper5> ;
-    ns1:name "Francesc March-Mir" .
-
-<http://ceur-ws.org/Vol-1567/#GiovanniiColavizza> a ns1:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/GiovanniiColavizza> ;
-    ns1:made <http://ceur-ws.org/Vol-1567/#paper4> ;
-    ns1:name "Giovanni Colavizza" .
-
-<http://ceur-ws.org/Vol-1567/#HowardiD.iWhite> a ns1:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/HowardiD.iWhite> ;
-    ns1:made <http://ceur-ws.org/Vol-1567/#paper7> ;
-    ns1:name "Howard D. White" .
-
-<http://ceur-ws.org/Vol-1567/#IanaiAtanassova> a ns1:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/IanaiAtanassova> ;
-    ns1:made <http://ceur-ws.org/Vol-1567/#paper2> ;
-    ns1:name "Iana Atanassova" .
-
-<http://ceur-ws.org/Vol-1567/#MarciBertin> a ns1:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/MarciBertin> ;
-    ns1:made <http://ceur-ws.org/Vol-1567/#paper2> ;
-    ns1:name "Marc Bertin" .
-
-<http://ceur-ws.org/Vol-1567/#MarijniKoolen> a ns1:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/MarijniKoolen> ;
-    ns1:made <http://ceur-ws.org/Vol-1567/#paper1> ;
-    ns1:name "Marijn Koolen" .
-
-<http://ceur-ws.org/Vol-1567/#MarkiKr%C3%B6ll> a ns1:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/MarkiKr%C3%B6ll> ;
-    ns1:made <http://ceur-ws.org/Vol-1567/#paper3> ;
-    ns1:name "Mark Kröll" .
-
-<http://ceur-ws.org/Vol-1567/#MatteoiRomanello> a ns1:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/MatteoiRomanello> ;
-    ns1:made <http://ceur-ws.org/Vol-1567/#paper4> ;
-    ns1:name "Matteo Romanello" .
-
-<http://ceur-ws.org/Vol-1567/#NguyeniMinhiTien> a ns1:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/NguyeniMinhiTien> ;
-    ns1:made <http://ceur-ws.org/Vol-1567/#paper6> ;
-    ns1:name "Nguyen Minh Tien" .
-
-<http://ceur-ws.org/Vol-1567/#RomaniKern> a ns1:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/RomaniKern> ;
-    ns1:made <http://ceur-ws.org/Vol-1567/#paper3> ;
-    ns1:name "Roman Kern" .
-
-<http://ceur-ws.org/Vol-1567/#RosaiPadr%C3%B3s-Cuxart> a ns1:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/RosaiPadr%C3%B3s-Cuxart> ;
-    ns1:made <http://ceur-ws.org/Vol-1567/#paper5> ;
-    ns1:name "Rosa Padrós-Cuxart" .
-
-<http://ceur-ws.org/Vol-1567/#StefaniKlampfl> a ns1:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/StefaniKlampfl> ;
-    ns1:made <http://ceur-ws.org/Vol-1567/#paper3> ;
-    ns1:name "Stefan Klampfl" .
-
-<http://ceur-ws.org/Vol-1567/#event> a ns6:WorkshopEvent ;
-    ns6:hasLocation <http://dbpedia.org/resource/Italy> ;
-    ns6:hasPart <http://ceur-ws.org/Vol-1567/#part-BIR> ;
-    ns6:isSubEventOf <http://ceur-ws.org/Vol-1567/#conf> ;
-    ns7:beginsAtDatetime "2016-03-20T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:endsAtDatetime "2016-03-20T00:00:00+00:00"^^xsd:dateTime ;
+<http://ceur-ws.org/Vol-1567/#event> a ns3:WorkshopEvent ;
+    ns3:hasLocation <http://dbpedia.org/resource/Italy> ;
+    ns3:hasPart <http://ceur-ws.org/Vol-1567/#part-ws> ;
+    ns3:isSubEventOf <http://ceur-ws.org/Vol-1567/#conf> ;
+    ns1:beginsAtDatetime "2016-03-20T00:00:00+00:00"^^xsd:dateTime ;
+    ns1:endsAtDatetime "2016-03-20T00:00:00+00:00"^^xsd:dateTime ;
+    ns4:license "http://creativecommons.org/publicdomain/zero/1.0/" ;
     rdfs:seeAlso <http://ceur-ws.org/Vol-1143/#event>,
         <http://ceur-ws.org/Vol-1344/#event> .
-
-<http://ceur-ws.org/Vol-1567/#GuillaumeiCabanac> a ns1:Person ;
-    ns3:affiliation "" ;
-    ns2:sameAs <http://ceur-ws.org/persons/GuillaumeiCabanac> ;
-    ns1:made <http://ceur-ws.org/Vol-1567/#preface> ;
-    ns1:name "Guillaume Cabanac" .
-
-<http://ceur-ws.org/Vol-1567/#IngoiFrommholz> a ns1:Person ;
-    ns3:affiliation "" ;
-    ns2:sameAs <http://ceur-ws.org/persons/IngoiFrommholz> ;
-    ns1:made <http://ceur-ws.org/Vol-1567/#preface> ;
-    ns1:name "Ingo Frommholz" .
-
-<http://ceur-ws.org/Vol-1567/#PhilippiMayr> a ns1:Person ;
-    ns3:affiliation "" ;
-    ns2:sameAs <http://ceur-ws.org/persons/PhilippiMayr> ;
-    ns1:made <http://ceur-ws.org/Vol-1567/#preface> ;
-    ns1:name "Philipp Mayr" .
-
-<http://ceur-ws.org/Vol-1567/#paper1> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-1567/> ;
-    ns5:title "Bibliometrics in Online Book Discussions: Lessons for Complex Search Tasks" ;
-    ns4:endPage 13 ;
-    ns4:numPages 9 ;
-    ns4:startPage 5 ;
-    ns3:author <http://ceur-ws.org/Vol-1567/#MarijniKoolen> .
-
-<http://ceur-ws.org/Vol-1567/#paper7> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-1567/> ;
-    ns5:title "Bag of Works Retrieval: TF*IDF Weighting of Co-cited Works" ;
-    ns4:endPage 72 ;
-    ns4:numPages 10 ;
-    ns4:startPage 63 ;
-    ns3:author <http://ceur-ws.org/Vol-1567/#HowardiD.iWhite> .
-
-<http://ceur-ws.org/Vol-1567/#paper2> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-1567/> ;
-    ns5:title "Weak Links and Strong Meaning: The Complex Phenomenon of Negational Citations" ;
-    ns4:endPage 25 ;
-    ns4:numPages 12 ;
-    ns4:startPage 14 ;
-    ns3:author <http://ceur-ws.org/Vol-1567/#IanaiAtanassova>,
-        <http://ceur-ws.org/Vol-1567/#MarciBertin> .
-
-<http://ceur-ws.org/Vol-1567/#paper6> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-1567/> ;
-    ns5:title "Engineering a Tool to Detect Automatically Generated Papers" ;
-    ns4:endPage 62 ;
-    ns4:numPages 9 ;
-    ns4:startPage 54 ;
-    ns3:author <http://ceur-ws.org/Vol-1567/#CyriliLabb%C3%A9>,
-        <http://ceur-ws.org/Vol-1567/#NguyeniMinhiTien> .
-
-<http://ceur-ws.org/Vol-1567/#paper8> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-1567/> ;
-    ns5:title "On the Need for and Provision for an 'IDEAL' Scholarly Information Retrieval Test Collection" ;
-    ns4:endPage 81 ;
-    ns4:numPages 9 ;
-    ns4:startPage 73 ;
-    ns3:author <http://ceur-ws.org/Vol-1567/#BirgeriLarsen>,
-        <http://ceur-ws.org/Vol-1567/#ChristinaiLioma> .
-
-<http://ceur-ws.org/Vol-1567/#paper4> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-1567/> ;
-    ns5:title "The References of References: Enriching Library Catalogs via Domain-Specific Reference Mining" ;
-    ns4:endPage 43 ;
-    ns4:numPages 12 ;
-    ns4:startPage 32 ;
-    ns3:author <http://ceur-ws.org/Vol-1567/#Fr%C3%A9d%C3%A9riciKaplan>,
-        <http://ceur-ws.org/Vol-1567/#GiovanniiColavizza>,
-        <http://ceur-ws.org/Vol-1567/#MatteoiRomanello> .
-
-<http://ceur-ws.org/Vol-1567/#paper5> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-1567/> ;
-    ns5:title "Bibliometrics: a Publication Analysis Tool" ;
-    ns4:endPage 53 ;
-    ns4:numPages 10 ;
-    ns4:startPage 44 ;
-    ns3:author <http://ceur-ws.org/Vol-1567/#ClaraiRiera-Quintero>,
-        <http://ceur-ws.org/Vol-1567/#FrancesciMarch-Mir>,
-        <http://ceur-ws.org/Vol-1567/#RosaiPadr%C3%B3s-Cuxart> .
-
-<http://ceur-ws.org/Vol-1567/#preface> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-1567/> ;
-    ns5:title "Editorial for the 3rd Bibliometric-Enhanced Information Retrieval Workshop at ECIR 2016" ;
-    ns4:endPage 4 ;
-    ns4:numPages 4 ;
-    ns4:startPage 1 ;
-    ns3:author <http://ceur-ws.org/Vol-1567/#GuillaumeiCabanac>,
-        <http://ceur-ws.org/Vol-1567/#IngoiFrommholz>,
-        <http://ceur-ws.org/Vol-1567/#PhilippiMayr> .
-
-<http://ceur-ws.org/Vol-1567/#paper3> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-1567/> ;
-    ns5:title "Towards a More Fine Grained Analysis of Scientific Authorship: Predicting the Number of Authors Using Stylometric Features" ;
-    ns4:endPage 31 ;
-    ns4:numPages 6 ;
-    ns4:startPage 26 ;
-    ns3:author <http://ceur-ws.org/Vol-1567/#AndiiRexha>,
-        <http://ceur-ws.org/Vol-1567/#MarkiKr%C3%B6ll>,
-        <http://ceur-ws.org/Vol-1567/#RomaniKern>,
-        <http://ceur-ws.org/Vol-1567/#StefaniKlampfl> .
-
-<http://ceur-ws.org/Vol-1567/> a ns6:Proceedings ;
-    ns6:hasPart <http://ceur-ws.org/Vol-1567/#paper1>,
-        <http://ceur-ws.org/Vol-1567/#paper2>,
-        <http://ceur-ws.org/Vol-1567/#paper3>,
-        <http://ceur-ws.org/Vol-1567/#paper4>,
-        <http://ceur-ws.org/Vol-1567/#paper5>,
-        <http://ceur-ws.org/Vol-1567/#paper6>,
-        <http://ceur-ws.org/Vol-1567/#paper7>,
-        <http://ceur-ws.org/Vol-1567/#paper8>,
-        <http://ceur-ws.org/Vol-1567/#preface> ;
-    ns8:issued "2016-03-17T00:00:00+00:00"^^xsd:dateTime ;
-    ns4:presentedAt <http://ceur-ws.org/Vol-1567/#event> ;
-    ns3:editor <http://ceur-ws.org/Vol-1567/#GuillaumeiCabanac>,
-        <http://ceur-ws.org/Vol-1567/#IngoiFrommholz>,
-        <http://ceur-ws.org/Vol-1567/#PhilippiMayr> .
 

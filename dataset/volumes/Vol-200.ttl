@@ -1,43 +1,517 @@
-@prefix ns1: <http://www.w3.org/2002/07/owl#> .
-@prefix ns2: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns3: <http://xmlns.com/foaf/0.1/> .
-@prefix ns4: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns5: <http://purl.org/ontology/bibo/#> .
+@prefix ns1: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns2: <http://www.w3.org/2002/07/owl#> .
+@prefix ns3: <http://purl.org/ontology/bibo/#> .
+@prefix ns4: <http://xmlns.com/foaf/0.1/> .
+@prefix ns5: <http://data.semanticweb.org/ns/swc/ontology/#> .
 @prefix ns6: <http://purl.org/dc/elements/1.1/#> .
 @prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns8: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns9: <http://purl.org/dc/elements/1.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-200/> a ns8:Proceedings ;
-    ns2:issued "2006-09-13T00:00:00+00:00"^^xsd:dateTime ;
-    ns5:presentedAt <http://ceur-ws.org/Vol-200/#event> ;
-    ns4:editor <http://ceur-ws.org/Vol-200/#AntonioiDeiNicola>,
-        <http://ceur-ws.org/Vol-200/#FulvioiD%27Antonio>,
-        <http://ceur-ws.org/Vol-200/#MicheleiMissikoff> .
+<http://ceur-ws.org/Vol-200/#%C2%A0J.iB.iM.iGoossenaerts> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/%C2%A0J.iB.iM.iGoossenaerts> ;
+    ns4:made <http://ceur-ws.org/Vol-200/#13> ;
+    ns4:name " J. B. M. Goossenaerts" .
 
-<http://ceur-ws.org/Vol-200/#AntonioiDeiNicola> a ns3:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/AntonioiDeiNicola> ;
-    ns3:name "Antonio De Nicola" .
+<http://ceur-ws.org/Vol-200/#%C2%A0K.iWiggisser> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/%C2%A0K.iWiggisser> ;
+    ns4:made <http://ceur-ws.org/Vol-200/#11> ;
+    ns4:name " K. Wiggisser" .
 
-<http://ceur-ws.org/Vol-200/#FulvioiD%27Antonio> a ns3:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/FulvioiD%27Antonio> ;
-    ns3:name "Fulvio D'Antonio" .
+<http://ceur-ws.org/Vol-200/#A.-J.iBerre> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/A.-J.iBerre> ;
+    ns4:made <http://ceur-ws.org/Vol-200/#17> ;
+    ns4:name "A.-J. Berre" .
 
-<http://ceur-ws.org/Vol-200/#MicheleiMissikoff> a ns3:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/MicheleiMissikoff> ;
-    ns3:name "Michele Missikoff" .
+<http://ceur-ws.org/Vol-200/#A.iEdirisuriya> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/A.iEdirisuriya> ;
+    ns4:made <http://ceur-ws.org/Vol-200/#10> ;
+    ns4:name "A. Edirisuriya" .
 
-<http://ceur-ws.org/Vol-200/#event> a ns8:WorkshopEvent ;
-    ns8:hasLocation <http://dbpedia.org/resource/Luxembourg> ;
-    ns8:hasPart <http://ceur-ws.org/Vol-200/#part-EMOI>,
-        <http://ceur-ws.org/Vol-200/#part-INTEROP> ;
-    ns8:isSubEventOf <http://ceur-ws.org/Vol-200/#conf> ;
-    ns7:beginsAtDatetime "2006-06-05T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:endsAtDatetime "2006-06-06T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:license <http://choosealicense.com/licenses/no-license/> ;
+<http://ceur-ws.org/Vol-200/#A.iFerrara> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/A.iFerrara> ;
+    ns4:made <http://ceur-ws.org/Vol-200/#02> ;
+    ns4:name "A. Ferrara" .
+
+<http://ceur-ws.org/Vol-200/#B.F.ivaniDongen> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/B.F.ivaniDongen> ;
+    ns4:made <http://ceur-ws.org/Vol-200/#08> ;
+    ns4:name "B.F. van Dongen" .
+
+<http://ceur-ws.org/Vol-200/#B.iAndersson> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/B.iAndersson> ;
+    ns4:made <http://ceur-ws.org/Vol-200/#10> ;
+    ns4:name "B. Andersson" .
+
+<http://ceur-ws.org/Vol-200/#B.iGr%EF%BF%BDgoire> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/B.iGr%EF%BF%BDgoire> ;
+    ns4:made <http://ceur-ws.org/Vol-200/#10> ;
+    ns4:name "B. Gr�goire" .
+
+<http://ceur-ws.org/Vol-200/#B.iHabegger> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/B.iHabegger> ;
+    ns4:made <http://ceur-ws.org/Vol-200/#06> ;
+    ns4:name "B. Habegger" .
+
+<http://ceur-ws.org/Vol-200/#B.iVallespir> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/B.iVallespir> ;
+    ns4:made <http://ceur-ws.org/Vol-200/#20> ;
+    ns4:name "B. Vallespir" .
+
+<http://ceur-ws.org/Vol-200/#B.iWangler> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/B.iWangler> ;
+    ns4:made <http://ceur-ws.org/Vol-200/#10> ;
+    ns4:name "B. Wangler" .
+
+<http://ceur-ws.org/Vol-200/#D.iBianchini> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/D.iBianchini> ;
+    ns4:made <http://ceur-ws.org/Vol-200/#07> ;
+    ns4:name "D. Bianchini" .
+
+<http://ceur-ws.org/Vol-200/#E.iDubois> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/E.iDubois> ;
+    ns4:made <http://ceur-ws.org/Vol-200/#10> ;
+    ns4:name "E. Dubois" .
+
+<http://ceur-ws.org/Vol-200/#F.iTaglino> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/F.iTaglino> ;
+    ns4:made <http://ceur-ws.org/Vol-200/#17> ;
+    ns4:name "F. Taglino" .
+
+<http://ceur-ws.org/Vol-200/#FabriceiGuillet> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/FabriceiGuillet> ;
+    ns4:made <http://ceur-ws.org/Vol-200/#05> ;
+    ns4:name "Fabrice Guillet" .
+
+<http://ceur-ws.org/Vol-200/#H.M.W.iVerbeek> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/H.M.W.iVerbeek> ;
+    ns4:made <http://ceur-ws.org/Vol-200/#08> ;
+    ns4:name "H.M.W. Verbeek" .
+
+<http://ceur-ws.org/Vol-200/#H.iWeigand> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/H.iWeigand> ;
+    ns4:made <http://ceur-ws.org/Vol-200/#10> ;
+    ns4:name "H. Weigand" .
+
+<http://ceur-ws.org/Vol-200/#HenriiBriand> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/HenriiBriand> ;
+    ns4:made <http://ceur-ws.org/Vol-200/#05> ;
+    ns4:name "Henri Briand" .
+
+<http://ceur-ws.org/Vol-200/#J%EF%BF%BDr%EF%BF%BDmeiDavid> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/J%EF%BF%BDr%EF%BF%BDmeiDavid> ;
+    ns4:made <http://ceur-ws.org/Vol-200/#05> ;
+    ns4:name "J�r�me David" .
+
+<http://ceur-ws.org/Vol-200/#J.iEder> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/J.iEder> ;
+    ns4:made <http://ceur-ws.org/Vol-200/#11> ;
+    ns4:name "J. Eder" .
+
+<http://ceur-ws.org/Vol-200/#J.iGordijn> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/J.iGordijn> ;
+    ns4:made <http://ceur-ws.org/Vol-200/#10> ;
+    ns4:name "J. Gordijn" .
+
+<http://ceur-ws.org/Vol-200/#J.iMendling> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/J.iMendling> ;
+    ns4:made <http://ceur-ws.org/Vol-200/#08> ;
+    ns4:name "J. Mendling" .
+
+<http://ceur-ws.org/Vol-200/#K.iArnarsd%EF%BF%BDttir> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/K.iArnarsd%EF%BF%BDttir> ;
+    ns4:made <http://ceur-ws.org/Vol-200/#17> ;
+    ns4:name "K. Arnarsd�ttir" .
+
+<http://ceur-ws.org/Vol-200/#L.iKutvonen> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/L.iKutvonen> ;
+    ns4:made <http://ceur-ws.org/Vol-200/#15> ;
+    ns4:name "L. Kutvonen" .
+
+<http://ceur-ws.org/Vol-200/#M.iBergholtz> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/M.iBergholtz> ;
+    ns4:made <http://ceur-ws.org/Vol-200/#10> ;
+    ns4:name "M. Bergholtz" .
+
+<http://ceur-ws.org/Vol-200/#M.iChenine> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/M.iChenine> ;
+    ns4:made <http://ceur-ws.org/Vol-200/#04> ;
+    ns4:name "M. Chenine" .
+
+<http://ceur-ws.org/Vol-200/#M.iChimienti> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/M.iChimienti> ;
+    ns4:made <http://ceur-ws.org/Vol-200/#14> ;
+    ns4:name "M. Chimienti" .
+
+<http://ceur-ws.org/Vol-200/#M.iDassisti> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/M.iDassisti> ;
+    ns4:made <http://ceur-ws.org/Vol-200/#14> ;
+    ns4:name "M. Dassisti" .
+
+<http://ceur-ws.org/Vol-200/#M.iGarciaiLozano> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/M.iGarciaiLozano> ;
+    ns4:made <http://ceur-ws.org/Vol-200/#04> ;
+    ns4:name "M. Garcia Lozano" .
+
+<http://ceur-ws.org/Vol-200/#M.iMelchiori> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/M.iMelchiori> ;
+    ns4:made <http://ceur-ws.org/Vol-200/#07> ;
+    ns4:name "M. Melchiori" .
+
+<http://ceur-ws.org/Vol-200/#M.iSchmitt> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/M.iSchmitt> ;
+    ns4:made <http://ceur-ws.org/Vol-200/#10> ;
+    ns4:name "M. Schmitt" .
+
+<http://ceur-ws.org/Vol-200/#N.iBoudjlida> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/N.iBoudjlida> ;
+    ns4:made <http://ceur-ws.org/Vol-200/#16> ;
+    ns4:name "N. Boudjlida" .
+
+<http://ceur-ws.org/Vol-200/#N.iDaclin> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/N.iDaclin> ;
+    ns4:made <http://ceur-ws.org/Vol-200/#20> ;
+    ns4:name "N. Daclin" .
+
+<http://ceur-ws.org/Vol-200/#R%EF%BF%BDgisiGras> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/R%EF%BF%BDgisiGras> ;
+    ns4:made <http://ceur-ws.org/Vol-200/#05> ;
+    ns4:name "R�gis Gras" .
+
+<http://ceur-ws.org/Vol-200/#R.iDieng-Kuntz> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/R.iDieng-Kuntz> ;
+    ns4:made <http://ceur-ws.org/Vol-200/#00-Keynote> ;
+    ns4:name "R. Dieng-Kuntz" .
+
+<http://ceur-ws.org/Vol-200/#S.iCastano> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/S.iCastano> ;
+    ns4:made <http://ceur-ws.org/Vol-200/#02> ;
+    ns4:name "S. Castano" .
+
+<http://ceur-ws.org/Vol-200/#S.iMontanelli> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/S.iMontanelli> ;
+    ns4:made <http://ceur-ws.org/Vol-200/#02> ;
+    ns4:name "S. Montanelli" .
+
+<http://ceur-ws.org/Vol-200/#T.iIlayperuma> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/T.iIlayperuma> ;
+    ns4:made <http://ceur-ws.org/Vol-200/#10> ;
+    ns4:name "T. Ilayperuma" .
+
+<http://ceur-ws.org/Vol-200/#T.iLatour> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/T.iLatour> ;
+    ns4:made <http://ceur-ws.org/Vol-200/#09> ;
+    ns4:name "T. Latour" .
+
+<http://ceur-ws.org/Vol-200/#T.iRuokolainen> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/T.iRuokolainen> ;
+    ns4:made <http://ceur-ws.org/Vol-200/#15> ;
+    ns4:name "T. Ruokolainen" .
+
+<http://ceur-ws.org/Vol-200/#V.iDeiAntonellis> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/V.iDeiAntonellis> ;
+    ns4:made <http://ceur-ws.org/Vol-200/#07> ;
+    ns4:name "V. De Antonellis" .
+
+<http://ceur-ws.org/Vol-200/#V.iKabilan> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/V.iKabilan> ;
+    ns4:made <http://ceur-ws.org/Vol-200/#04> ;
+    ns4:name "V. Kabilan" .
+
+<http://ceur-ws.org/Vol-200/#W.M.P.ivanideriAalst> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/W.M.P.ivanideriAalst> ;
+    ns4:made <http://ceur-ws.org/Vol-200/#08> ;
+    ns4:name "W.M.P. van der Aalst" .
+
+<http://ceur-ws.org/Vol-200/#Y.iNaudet> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/Y.iNaudet> ;
+    ns4:made <http://ceur-ws.org/Vol-200/#09> ;
+    ns4:name "Y. Naudet" .
+
+<http://ceur-ws.org/Vol-200/#event> a ns5:WorkshopEvent ;
+    ns5:hasLocation <http://dbpedia.org/resource/Luxembourg> ;
+    ns5:hasPart <http://ceur-ws.org/Vol-200/#part-CEUR-WS> ;
+    ns5:isSubEventOf <http://ceur-ws.org/Vol-200/#conf> ;
+    ns7:beginsAtDatetime "2006-09-13T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:endsAtDatetime "2006-09-13T00:00:00+00:00"^^xsd:dateTime ;
+    ns9:license "http://choosealicense.com/licenses/no-license/" ;
     rdfs:seeAlso <http://ceur-ws.org/Vol-125/#event>,
         <http://ceur-ws.org/Vol-160/#event> .
+
+<http://ceur-ws.org/Vol-200/#00-Keynote> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-200/> ;
+    ns6:title "Knowledge Management through Organizational Semantic Webs" ;
+    ns3:section <http://ceur-ws.org/Vol-200/#KeynoteSpeech> ;
+    ns1:author <http://ceur-ws.org/Vol-200/#R.iDieng-Kuntz> .
+
+<http://ceur-ws.org/Vol-200/#06> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-200/> ;
+    ns6:title "Learning Data-Consistent Mappings from a Relational Database to an Ontology" ;
+    ns3:section <http://ceur-ws.org/Vol-200/#Regularpapers> ;
+    ns1:author <http://ceur-ws.org/Vol-200/#B.iHabegger> .
+
+<http://ceur-ws.org/Vol-200/#13> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-200/> ;
+    ns6:title "Monitoring, Evaluation & Decision Interoperability in Networked Organisations" ;
+    ns3:section <http://ceur-ws.org/Vol-200/#ShortPapers> ;
+    ns1:author <http://ceur-ws.org/Vol-200/#%C2%A0J.iB.iM.iGoossenaerts> .
+
+<http://ceur-ws.org/Vol-200/#19> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-200/> ;
+    ns6:title "Enterprise Interoperability Framework" ;
+    ns3:section <http://ceur-ws.org/Vol-200/#ShortPapers> ;
+    ns1:author <http://ceur-ws.org/Vol-200/#D.iCheng> .
+
+<http://ceur-ws.org/Vol-200/#AntonioiDeiNicola> a ns4:Person ;
+    ns1:affiliation "" ;
+    ns2:sameAs <http://ceur-ws.org/persons/AntonioiDeiNicola> ;
+    ns4:made <http://ceur-ws.org/Vol-200/#14> ;
+    ns4:name "Antonio De Nicola" .
+
+<http://ceur-ws.org/Vol-200/#KeviniHausmann> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/KeviniHausmann> ;
+    ns4:made <http://ceur-ws.org/Vol-200/#09>,
+        <http://ceur-ws.org/Vol-200/#18> ;
+    ns4:name "Kevin Hausmann" .
+
+<http://ceur-ws.org/Vol-200/#P.iJohannesonn> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/P.iJohannesonn> ;
+    ns4:made <http://ceur-ws.org/Vol-200/#09>,
+        <http://ceur-ws.org/Vol-200/#10> ;
+    ns4:name "P. Johannesonn" .
+
+<http://ceur-ws.org/Vol-200/#PaoloiBottoni> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/PaoloiBottoni> ;
+    ns4:made <http://ceur-ws.org/Vol-200/#03>,
+        <http://ceur-ws.org/Vol-200/#18> ;
+    ns4:name "Paolo Bottoni" .
+
+<http://ceur-ws.org/Vol-200/#S.iAbels> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/S.iAbels> ;
+    ns4:made <http://ceur-ws.org/Vol-200/#09>,
+        <http://ceur-ws.org/Vol-200/#10> ;
+    ns4:name "S. Abels" .
+
+<http://ceur-ws.org/Vol-200/#01-Tutorial> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-200/> ;
+    ns6:title "An Overview of Model Transformation Mechanisms" ;
+    ns3:section <http://ceur-ws.org/Vol-200/#KeynoteSpeech> ;
+    ns1:author <http://ceur-ws.org/Vol-200/#F.iD%EF%BF%BDAntonio>,
+        <http://ceur-ws.org/Vol-200/#M.iMissikoff> .
+
+<http://ceur-ws.org/Vol-200/#11> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-200/> ;
+    ns6:title "Detecting Changes in Ontologies via DAG Comparison" ;
+    ns3:section <http://ceur-ws.org/Vol-200/#ShortPapers> ;
+    ns1:author <http://ceur-ws.org/Vol-200/#%C2%A0K.iWiggisser>,
+        <http://ceur-ws.org/Vol-200/#J.iEder> .
+
+<http://ceur-ws.org/Vol-200/#15> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-200/> ;
+    ns6:title "Extending the Model of Interoperability" ;
+    ns3:section <http://ceur-ws.org/Vol-200/#ShortPapers> ;
+    ns1:author <http://ceur-ws.org/Vol-200/#L.iKutvonen>,
+        <http://ceur-ws.org/Vol-200/#T.iRuokolainen> .
+
+<http://ceur-ws.org/Vol-200/#16> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-200/> ;
+    ns6:title "Capability Management and Discovery in Description Logic" ;
+    ns3:section <http://ceur-ws.org/Vol-200/#ShortPapers> ;
+    ns1:author <http://ceur-ws.org/Vol-200/#D.iCheng>,
+        <http://ceur-ws.org/Vol-200/#N.iBoudjlida> .
+
+<http://ceur-ws.org/Vol-200/#D.iCheng> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/D.iCheng> ;
+    ns4:made <http://ceur-ws.org/Vol-200/#16>,
+        <http://ceur-ws.org/Vol-200/#19>,
+        <http://ceur-ws.org/Vol-200/#20> ;
+    ns4:name "D. Cheng" .
+
+<http://ceur-ws.org/Vol-200/#KeynoteSpeech> a ns5:SessionEvent ;
+    ns5:partOf <http://ceur-ws.org/Vol-200/> ;
+    ns6:title "Keynote Speech:" .
+
+<http://ceur-ws.org/Vol-200/#02> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-200/> ;
+    ns6:title "A Matchmaking-based Ontology Evolution Methodology" ;
+    ns3:section <http://ceur-ws.org/Vol-200/#Regularpapers> ;
+    ns1:author <http://ceur-ws.org/Vol-200/#A.iFerrara>,
+        <http://ceur-ws.org/Vol-200/#S.iCastano>,
+        <http://ceur-ws.org/Vol-200/#S.iMontanelli> .
+
+<http://ceur-ws.org/Vol-200/#03> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-200/> ;
+    ns6:title "Towards a Unified View of Model Mapping and Transformation" ;
+    ns3:section <http://ceur-ws.org/Vol-200/#Regularpapers> ;
+    ns1:author <http://ceur-ws.org/Vol-200/#F.iD%EF%BF%BDAntonio>,
+        <http://ceur-ws.org/Vol-200/#M.iMissikoff>,
+        <http://ceur-ws.org/Vol-200/#PaoloiBottoni> .
+
+<http://ceur-ws.org/Vol-200/#04> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-200/> ;
+    ns6:title "A Pattern for Designing Distributed Heterogeneous Ontologies for Facilitating Application Interoperability" ;
+    ns3:section <http://ceur-ws.org/Vol-200/#Regularpapers> ;
+    ns1:author <http://ceur-ws.org/Vol-200/#M.iChenine>,
+        <http://ceur-ws.org/Vol-200/#M.iGarciaiLozano>,
+        <http://ceur-ws.org/Vol-200/#V.iKabilan> .
+
+<http://ceur-ws.org/Vol-200/#07> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-200/> ;
+    ns6:title "Evaluating Similarity and Difference in Service Matchmaking" ;
+    ns3:section <http://ceur-ws.org/Vol-200/#Regularpapers> ;
+    ns1:author <http://ceur-ws.org/Vol-200/#D.iBianchini>,
+        <http://ceur-ws.org/Vol-200/#M.iMelchiori>,
+        <http://ceur-ws.org/Vol-200/#V.iDeiAntonellis> .
+
+<http://ceur-ws.org/Vol-200/#20> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-200/> ;
+    ns6:title "Enterprise interoperability measurement - Basic concepts" ;
+    ns3:section <http://ceur-ws.org/Vol-200/#ShortPapers> ;
+    ns1:author <http://ceur-ws.org/Vol-200/#B.iVallespir>,
+        <http://ceur-ws.org/Vol-200/#D.iCheng>,
+        <http://ceur-ws.org/Vol-200/#N.iDaclin> .
+
+<http://ceur-ws.org/Vol-200/#A.iHahn> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/A.iHahn> ;
+    ns4:made <http://ceur-ws.org/Vol-200/#09>,
+        <http://ceur-ws.org/Vol-200/#10>,
+        <http://ceur-ws.org/Vol-200/#17>,
+        <http://ceur-ws.org/Vol-200/#18> ;
+    ns4:name "A. Hahn" .
+
+<http://ceur-ws.org/Vol-200/#F.iD%EF%BF%BDAntonio> a ns4:Person ;
+    ns1:affiliation "" ;
+    ns2:sameAs <http://ceur-ws.org/persons/F.iD%EF%BF%BDAntonio> ;
+    ns4:made <http://ceur-ws.org/Vol-200/#01-Tutorial>,
+        <http://ceur-ws.org/Vol-200/#03>,
+        <http://ceur-ws.org/Vol-200/#18> ;
+    ns4:name "F. D�Antonio" .
+
+<http://ceur-ws.org/Vol-200/#05> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-200/> ;
+    ns6:title "An Interactive, Asymmetric and Extensional Method for Matching Conceptual Hierarchies" ;
+    ns3:section <http://ceur-ws.org/Vol-200/#Regularpapers> ;
+    ns1:author <http://ceur-ws.org/Vol-200/#FabriceiGuillet>,
+        <http://ceur-ws.org/Vol-200/#HenriiBriand>,
+        <http://ceur-ws.org/Vol-200/#J%EF%BF%BDr%EF%BF%BDmeiDavid>,
+        <http://ceur-ws.org/Vol-200/#R%EF%BF%BDgisiGras> .
+
+<http://ceur-ws.org/Vol-200/#08> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-200/> ;
+    ns6:title "Interoperability in the ProM Framework" ;
+    ns3:section <http://ceur-ws.org/Vol-200/#Regularpapers> ;
+    ns1:author <http://ceur-ws.org/Vol-200/#B.F.ivaniDongen>,
+        <http://ceur-ws.org/Vol-200/#H.M.W.iVerbeek>,
+        <http://ceur-ws.org/Vol-200/#J.iMendling>,
+        <http://ceur-ws.org/Vol-200/#W.M.P.ivanideriAalst> .
+
+<http://ceur-ws.org/Vol-200/#14> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-200/> ;
+    ns6:title "Benchmarking Criteria to Evaluate Ontology Building Methodologies" ;
+    ns3:section <http://ceur-ws.org/Vol-200/#ShortPapers> ;
+    ns1:author <http://ceur-ws.org/Vol-200/#AntonioiDeiNicola>,
+        <http://ceur-ws.org/Vol-200/#M.iChimienti>,
+        <http://ceur-ws.org/Vol-200/#M.iDassisti>,
+        <http://ceur-ws.org/Vol-200/#M.iMissikoff> .
+
+<http://ceur-ws.org/Vol-200/#17> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-200/> ;
+    ns6:title "Semantic mapping: ontology-based vs. model-based approach Alternative or complementary approaches?" ;
+    ns3:section <http://ceur-ws.org/Vol-200/#ShortPapers> ;
+    ns1:author <http://ceur-ws.org/Vol-200/#A.-J.iBerre>,
+        <http://ceur-ws.org/Vol-200/#A.iHahn>,
+        <http://ceur-ws.org/Vol-200/#F.iTaglino>,
+        <http://ceur-ws.org/Vol-200/#K.iArnarsd%EF%BF%BDttir>,
+        <http://ceur-ws.org/Vol-200/#M.iMissikoff> .
+
+<http://ceur-ws.org/Vol-200/#18> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-200/> ;
+    ns6:title "An ontology for describing model mapping/transformation tools and methodologies: the MoMo ontology" ;
+    ns3:section <http://ceur-ws.org/Vol-200/#ShortPapers> ;
+    ns1:author <http://ceur-ws.org/Vol-200/#A.iHahn>,
+        <http://ceur-ws.org/Vol-200/#F.iD%EF%BF%BDAntonio>,
+        <http://ceur-ws.org/Vol-200/#KeviniHausmann>,
+        <http://ceur-ws.org/Vol-200/#M.iMissikoff>,
+        <http://ceur-ws.org/Vol-200/#PaoloiBottoni> .
+
+<http://ceur-ws.org/Vol-200/#M.iMissikoff> a ns4:Person ;
+    ns1:affiliation "" ;
+    ns2:sameAs <http://ceur-ws.org/persons/M.iMissikoff> ;
+    ns4:made <http://ceur-ws.org/Vol-200/#01-Tutorial>,
+        <http://ceur-ws.org/Vol-200/#03>,
+        <http://ceur-ws.org/Vol-200/#14>,
+        <http://ceur-ws.org/Vol-200/#17>,
+        <http://ceur-ws.org/Vol-200/#18> ;
+    ns4:name "M. Missikoff" .
+
+<http://ceur-ws.org/Vol-200/#09> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-200/> ;
+    ns6:title "Describing Interoperability: the OoI Ontology" ;
+    ns3:section <http://ceur-ws.org/Vol-200/#Regularpapers> ;
+    ns1:author <http://ceur-ws.org/Vol-200/#A.iHahn>,
+        <http://ceur-ws.org/Vol-200/#KeviniHausmann>,
+        <http://ceur-ws.org/Vol-200/#P.iJohannesonn>,
+        <http://ceur-ws.org/Vol-200/#S.iAbels>,
+        <http://ceur-ws.org/Vol-200/#T.iLatour>,
+        <http://ceur-ws.org/Vol-200/#Y.iNaudet> .
+
+<http://ceur-ws.org/Vol-200/#Regularpapers> a ns5:SessionEvent ;
+    ns5:partOf <http://ceur-ws.org/Vol-200/> ;
+    ns6:title "Regular papers:" .
+
+<http://ceur-ws.org/Vol-200/#ShortPapers> a ns5:SessionEvent ;
+    ns5:partOf <http://ceur-ws.org/Vol-200/> ;
+    ns6:title "Short Papers:" .
+
+<http://ceur-ws.org/Vol-200/#10> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-200/> ;
+    ns6:title "Towards a Common Ontology for Business Models" ;
+    ns3:section <http://ceur-ws.org/Vol-200/#Regularpapers> ;
+    ns1:author <http://ceur-ws.org/Vol-200/#A.iEdirisuriya>,
+        <http://ceur-ws.org/Vol-200/#A.iHahn>,
+        <http://ceur-ws.org/Vol-200/#B.iAndersson>,
+        <http://ceur-ws.org/Vol-200/#B.iGr%EF%BF%BDgoire>,
+        <http://ceur-ws.org/Vol-200/#B.iWangler>,
+        <http://ceur-ws.org/Vol-200/#E.iDubois>,
+        <http://ceur-ws.org/Vol-200/#H.iWeigand>,
+        <http://ceur-ws.org/Vol-200/#J.iGordijn>,
+        <http://ceur-ws.org/Vol-200/#M.iBergholtz>,
+        <http://ceur-ws.org/Vol-200/#M.iSchmitt>,
+        <http://ceur-ws.org/Vol-200/#P.iJohannesonn>,
+        <http://ceur-ws.org/Vol-200/#S.iAbels>,
+        <http://ceur-ws.org/Vol-200/#T.iIlayperuma> .
+
+<http://ceur-ws.org/Vol-200/> a ns5:Proceedings ;
+    ns5:hasPart <http://ceur-ws.org/Vol-200/#00-Keynote>,
+        <http://ceur-ws.org/Vol-200/#01-Tutorial>,
+        <http://ceur-ws.org/Vol-200/#02>,
+        <http://ceur-ws.org/Vol-200/#03>,
+        <http://ceur-ws.org/Vol-200/#04>,
+        <http://ceur-ws.org/Vol-200/#05>,
+        <http://ceur-ws.org/Vol-200/#06>,
+        <http://ceur-ws.org/Vol-200/#07>,
+        <http://ceur-ws.org/Vol-200/#08>,
+        <http://ceur-ws.org/Vol-200/#09>,
+        <http://ceur-ws.org/Vol-200/#10>,
+        <http://ceur-ws.org/Vol-200/#11>,
+        <http://ceur-ws.org/Vol-200/#13>,
+        <http://ceur-ws.org/Vol-200/#14>,
+        <http://ceur-ws.org/Vol-200/#15>,
+        <http://ceur-ws.org/Vol-200/#16>,
+        <http://ceur-ws.org/Vol-200/#17>,
+        <http://ceur-ws.org/Vol-200/#18>,
+        <http://ceur-ws.org/Vol-200/#19>,
+        <http://ceur-ws.org/Vol-200/#20> ;
+    ns5:hasSession <http://ceur-ws.org/Vol-200/#KeynoteSpeech>,
+        <http://ceur-ws.org/Vol-200/#Regularpapers>,
+        <http://ceur-ws.org/Vol-200/#ShortPapers> ;
+    ns8:issued "2006-09-13T00:00:00+00:00"^^xsd:dateTime ;
+    ns3:presentedAt <http://ceur-ws.org/Vol-200/#event> ;
+    ns1:editor <http://ceur-ws.org/Vol-200/#AntonioiDeiNicola>,
+        <http://ceur-ws.org/Vol-200/#F.iD%EF%BF%BDAntonio>,
+        <http://ceur-ws.org/Vol-200/#M.iMissikoff> .
 

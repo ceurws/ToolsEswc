@@ -2,10 +2,11 @@
 @prefix ns2: <http://www.w3.org/2002/07/owl#> .
 @prefix ns3: <http://swrc.ontoware.org/ontology/#> .
 @prefix ns4: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns5: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns6: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns7: <http://purl.org/ontology/bibo/#> .
-@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns5: <http://purl.org/ontology/bibo/#> .
+@prefix ns6: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns9: <http://purl.org/dc/elements/1.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -143,11 +144,12 @@
 
 <http://ceur-ws.org/Vol-62/#event> a ns4:WorkshopEvent ;
     ns4:hasLocation <http://dbpedia.org/resource/Spain> ;
-    ns4:hasPart <http://ceur-ws.org/Vol-62/#part-EON> ;
+    ns4:hasPart <http://ceur-ws.org/Vol-62/#part-OntoWeb>,
+        <http://ceur-ws.org/Vol-62/#part-SIG> ;
     ns4:isSubEventOf <http://ceur-ws.org/Vol-62/#conf> ;
-    ns6:beginsAtDatetime "2002-09-30T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:endsAtDatetime "2002-09-30T00:00:00+00:00"^^xsd:dateTime ;
-    ns5:license <http://choosealicense.com/licenses/no-license/> .
+    ns8:beginsAtDatetime "2002-09-20T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:endsAtDatetime "2002-09-20T00:00:00+00:00"^^xsd:dateTime ;
+    ns9:license "http://choosealicense.com/licenses/no-license/" .
 
 <http://ceur-ws.org/Vol-62/#pagei79> a ns1:Person ;
     ns2:sameAs <http://ceur-ws.org/persons/pagei79> ;
@@ -232,7 +234,7 @@
     ns1:name "University of Manchester" .
 
 <http://ceur-ws.org/Vol-62/#YorkiSure> a ns1:Person ;
-    ns7:place <http://dbpedia.org/resource/Germany> ;
+    ns5:place <http://dbpedia.org/resource/Germany> ;
     ns3:affiliation "Institute AIFB, University of Karlsruhe, Postfach, 76128 Karlsruhe" ;
     ns2:sameAs <http://ceur-ws.org/persons/YorkiSure> ;
     ns1:made <http://ceur-ws.org/Vol-62/#EON2002_Introduction> ;
@@ -240,93 +242,93 @@
 
 <http://ceur-ws.org/Vol-62/#EON2002_Experiment_Description> a ns4:Paper ;
     ns4:partOf <http://ceur-ws.org/Vol-62/> ;
-    ns5:title "Domain natural language description for the experiment" ;
-    ns7:section <http%3A//ceur-ws.org/Vol-62/%23PartII%3AExperimentContributions> ;
+    ns6:title "Domain natural language description for the experiment" ;
+    ns5:section <http://ceur-ws.org/Vol-62/#PartIIExperimentContributions> ;
     ns3:author <http://ceur-ws.org/Vol-62/#TakenifromiOntoWebideliverablei1.3>,
         <http://ceur-ws.org/Vol-62/#pagei79> .
 
 <http://ceur-ws.org/Vol-62/#EON2002_Mika> a ns4:Paper ;
     ns4:partOf <http://ceur-ws.org/Vol-62/> ;
-    ns5:title "Integrating Ontology Storage and Ontology-based Applications Through Client-side Query and Transformations" ;
-    ns7:section <http%3A//ceur-ws.org/Vol-62/%23PartI%3AAcceptedPapers> ;
+    ns6:title "Integrating Ontology Storage and Ontology-based Applications Through Client-side Query and Transformations" ;
+    ns5:section <http://ceur-ws.org/Vol-62/#PartIAcceptedPapers> ;
     ns3:author <http://ceur-ws.org/Vol-62/#PeteriMika>,
         <http://ceur-ws.org/Vol-62/#pagesi27-37> .
 
 <http://ceur-ws.org/Vol-62/#EON2002_Experiment_OilEd.zip> a ns4:Paper ;
     ns4:partOf <http://ceur-ws.org/Vol-62/> ;
-    ns5:title "OilEd" ;
-    ns7:section <http%3A//ceur-ws.org/Vol-62/%23PartII%3AExperimentContributions> ;
+    ns6:title "OilEd" ;
+    ns5:section <http://ceur-ws.org/Vol-62/#PartIIExperimentContributions> ;
     ns3:author <http://ceur-ws.org/Vol-62/#SeaniBechhofer>,
         <http://ceur-ws.org/Vol-62/#UniversityiofiManchester>,
         <http://ceur-ws.org/Vol-62/#pagesi80-82> .
 
 <http://ceur-ws.org/Vol-62/#EON2002_Experiment_OpenKnoME.zip> a ns4:Paper ;
     ns4:partOf <http://ceur-ws.org/Vol-62/> ;
-    ns5:title "OpenKnoME" ;
-    ns7:section <http%3A//ceur-ws.org/Vol-62/%23PartII%3AExperimentContributions> ;
+    ns6:title "OpenKnoME" ;
+    ns5:section <http://ceur-ws.org/Vol-62/#PartIIExperimentContributions> ;
     ns3:author <http://ceur-ws.org/Vol-62/#JeremyiRogers>,
         <http://ceur-ws.org/Vol-62/#UniversityiofiManchester>,
         <http://ceur-ws.org/Vol-62/#pagesi99-102> .
 
 <http://ceur-ws.org/Vol-62/#EON2002_Experiment_Protege.zip> a ns4:Paper ;
     ns4:partOf <http://ceur-ws.org/Vol-62/> ;
-    ns5:title "Protégé" ;
-    ns7:section <http%3A//ceur-ws.org/Vol-62/%23PartII%3AExperimentContributions> ;
+    ns6:title "Protégé" ;
+    ns5:section <http://ceur-ws.org/Vol-62/#PartIIExperimentContributions> ;
     ns3:author <http://ceur-ws.org/Vol-62/#NatashaiF.iNoy>,
         <http://ceur-ws.org/Vol-62/#StanfordiUniversity>,
         <http://ceur-ws.org/Vol-62/#pagesi103-107> .
 
 <http://ceur-ws.org/Vol-62/#EON2002_Experiment_Terminae.zip> a ns4:Paper ;
     ns4:partOf <http://ceur-ws.org/Vol-62/> ;
-    ns5:title "Terminae" ;
-    ns7:section <http%3A//ceur-ws.org/Vol-62/%23PartII%3AExperimentContributions> ;
+    ns6:title "Terminae" ;
+    ns5:section <http://ceur-ws.org/Vol-62/#PartIIExperimentContributions> ;
     ns3:author <http://ceur-ws.org/Vol-62/#NathalieiAussenac-Gilles>,
         <http://ceur-ws.org/Vol-62/#UniversiteiP.iSabatier>,
         <http://ceur-ws.org/Vol-62/#pagesi112-128> .
 
 <http://ceur-ws.org/Vol-62/#EON2002_Experiment_WebODE.zip> a ns4:Paper ;
     ns4:partOf <http://ceur-ws.org/Vol-62/> ;
-    ns5:title "WebODE" ;
-    ns7:section <http%3A//ceur-ws.org/Vol-62/%23PartII%3AExperimentContributions> ;
+    ns6:title "WebODE" ;
+    ns5:section <http://ceur-ws.org/Vol-62/#PartIIExperimentContributions> ;
     ns3:author <http://ceur-ws.org/Vol-62/#OscariCorcho>,
         <http://ceur-ws.org/Vol-62/#UniversidadiPolit%C3%A9cnicaideiMadrid>,
         <http://ceur-ws.org/Vol-62/#pagesi129-134> .
 
 <http://ceur-ws.org/Vol-62/#EON2002_Introduction> a ns4:Paper ;
     ns4:partOf <http://ceur-ws.org/Vol-62/> ;
-    ns5:title "Introduction" ;
+    ns6:title "Introduction" ;
     ns3:author <http://ceur-ws.org/Vol-62/#J%C3%BCrgeniAngele>,
         <http://ceur-ws.org/Vol-62/#YorkiSure>,
         <http://ceur-ws.org/Vol-62/#pagesii-iv> .
 
 <http://ceur-ws.org/Vol-62/#EON2002_Lopez> a ns4:Paper ;
     ns4:partOf <http://ceur-ws.org/Vol-62/> ;
-    ns5:title "The Integration of OntoClean in WebODE" ;
-    ns7:section <http%3A//ceur-ws.org/Vol-62/%23PartI%3AAcceptedPapers> ;
+    ns6:title "The Integration of OntoClean in WebODE" ;
+    ns5:section <http://ceur-ws.org/Vol-62/#PartIAcceptedPapers> ;
     ns3:author <http://ceur-ws.org/Vol-62/#Asunci%C3%B3niG%C3%B3mez-P%C3%A9rez>,
         <http://ceur-ws.org/Vol-62/#MarianoiFern%C3%A1ndez-L%C3%B3pez>,
         <http://ceur-ws.org/Vol-62/#pagesi38-52> .
 
 <http://ceur-ws.org/Vol-62/#EON2002_Noy> a ns4:Paper ;
     ns4:partOf <http://ceur-ws.org/Vol-62/> ;
-    ns5:title "Evaluating Ontology-Mapping Tools: Requirements and Experience" ;
-    ns7:section <http%3A//ceur-ws.org/Vol-62/%23PartI%3AAcceptedPapers> ;
+    ns6:title "Evaluating Ontology-Mapping Tools: Requirements and Experience" ;
+    ns5:section <http://ceur-ws.org/Vol-62/#PartIAcceptedPapers> ;
     ns3:author <http://ceur-ws.org/Vol-62/#MarkiA.iMusen>,
         <http://ceur-ws.org/Vol-62/#NatalyaiF.iNoy>,
         <http://ceur-ws.org/Vol-62/#pagesi1-14> .
 
 <http://ceur-ws.org/Vol-62/#EON2002_Stojanovic> a ns4:Paper ;
     ns4:partOf <http://ceur-ws.org/Vol-62/> ;
-    ns5:title "Ontology Evolution within Ontology Editors" ;
-    ns7:section <http%3A//ceur-ws.org/Vol-62/%23PartI%3AAcceptedPapers> ;
+    ns6:title "Ontology Evolution within Ontology Editors" ;
+    ns5:section <http://ceur-ws.org/Vol-62/#PartIAcceptedPapers> ;
     ns3:author <http://ceur-ws.org/Vol-62/#BorisiMotik>,
         <http://ceur-ws.org/Vol-62/#LjilianaiStojanovic>,
         <http://ceur-ws.org/Vol-62/#pagesi53-62> .
 
 <http://ceur-ws.org/Vol-62/#EON2002_Hameed> a ns4:Paper ;
     ns4:partOf <http://ceur-ws.org/Vol-62/> ;
-    ns5:title "OntoManager: A Workbench Environment to facilitate Ontology Management and Interoperability" ;
-    ns7:section <http%3A//ceur-ws.org/Vol-62/%23PartI%3AAcceptedPapers> ;
+    ns6:title "OntoManager: A Workbench Environment to facilitate Ontology Management and Interoperability" ;
+    ns5:section <http://ceur-ws.org/Vol-62/#PartIAcceptedPapers> ;
     ns3:author <http://ceur-ws.org/Vol-62/#AdiliHameed>,
         <http://ceur-ws.org/Vol-62/#AluniPreece>,
         <http://ceur-ws.org/Vol-62/#DerekiSleeman>,
@@ -334,8 +336,8 @@
 
 <http://ceur-ws.org/Vol-62/#EON2002_Pinto> a ns4:Paper ;
     ns4:partOf <http://ceur-ws.org/Vol-62/> ;
-    ns5:title "Using Protégé-2000 in Reuse Processes" ;
-    ns7:section <http%3A//ceur-ws.org/Vol-62/%23PartI%3AAcceptedPapers> ;
+    ns6:title "Using Protégé-2000 in Reuse Processes" ;
+    ns5:section <http://ceur-ws.org/Vol-62/#PartIAcceptedPapers> ;
     ns3:author <http://ceur-ws.org/Vol-62/#DuarteiNunoiPeralta>,
         <http://ceur-ws.org/Vol-62/#H.iSofiaiPinto>,
         <http://ceur-ws.org/Vol-62/#NunoiJ.iMamede>,
@@ -343,21 +345,21 @@
 
 <http://ceur-ws.org/Vol-62/#EON2002_Giboin> a ns4:Paper ;
     ns4:partOf <http://ceur-ws.org/Vol-62/> ;
-    ns5:title "Assessment of Ontology-based Tools: Systemizing the Scenario Approach" ;
-    ns7:section <http%3A//ceur-ws.org/Vol-62/%23PartI%3AAcceptedPapers> ;
+    ns6:title "Assessment of Ontology-based Tools: Systemizing the Scenario Approach" ;
+    ns5:section <http://ceur-ws.org/Vol-62/#PartIAcceptedPapers> ;
     ns3:author <http://ceur-ws.org/Vol-62/#AlainiGiboin>,
         <http://ceur-ws.org/Vol-62/#FabieniGandon>,
         <http://ceur-ws.org/Vol-62/#OlivieriCorby>,
         <http://ceur-ws.org/Vol-62/#RoseiDieng>,
         <http://ceur-ws.org/Vol-62/#pagesi63-73> .
 
-<http%3A//ceur-ws.org/Vol-62/%23PartII%3AExperimentContributions> a ns4:SessionEvent ;
+<http://ceur-ws.org/Vol-62/#PartIIExperimentContributions> a ns4:SessionEvent ;
     ns4:partOf <http://ceur-ws.org/Vol-62/> ;
-    ns5:title "Part II: Experiment Contributions" .
+    ns6:title "Part II: Experiment Contributions" .
 
-<http%3A//ceur-ws.org/Vol-62/%23PartI%3AAcceptedPapers> a ns4:SessionEvent ;
+<http://ceur-ws.org/Vol-62/#PartIAcceptedPapers> a ns4:SessionEvent ;
     ns4:partOf <http://ceur-ws.org/Vol-62/> ;
-    ns5:title "Part I: Accepted Papers" .
+    ns6:title "Part I: Accepted Papers" .
 
 <http://ceur-ws.org/Vol-62/> a ns4:Proceedings ;
     ns4:hasPart <http://ceur-ws.org/Vol-62/#EON2002_Experiment_Description>,
@@ -374,10 +376,10 @@
         <http://ceur-ws.org/Vol-62/#EON2002_Noy>,
         <http://ceur-ws.org/Vol-62/#EON2002_Pinto>,
         <http://ceur-ws.org/Vol-62/#EON2002_Stojanovic> ;
-    ns4:hasSession <http%3A//ceur-ws.org/Vol-62/%23PartI%3AAcceptedPapers>,
-        <http%3A//ceur-ws.org/Vol-62/%23PartII%3AExperimentContributions> ;
-    ns8:issued "2002-09-20T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:presentedAt <http://ceur-ws.org/Vol-62/#event> ;
+    ns4:hasSession <http://ceur-ws.org/Vol-62/#PartIAcceptedPapers>,
+        <http://ceur-ws.org/Vol-62/#PartIIExperimentContributions> ;
+    ns7:issued "2002-09-20T00:00:00+00:00"^^xsd:dateTime ;
+    ns5:presentedAt <http://ceur-ws.org/Vol-62/#event> ;
     ns3:editor <http://ceur-ws.org/Vol-62/#J%C3%BCrgeniAngele>,
         <http://ceur-ws.org/Vol-62/#YorkiSure> .
 

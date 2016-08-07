@@ -1,11 +1,12 @@
-@prefix ns1: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns1: <http://purl.org/dc/elements/1.1/#> .
 @prefix ns2: <http://www.w3.org/2002/07/owl#> .
 @prefix ns3: <http://xmlns.com/foaf/0.1/> .
 @prefix ns4: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns5: <http://purl.org/ontology/bibo/#> .
-@prefix ns6: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns7: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns5: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns6: <http://purl.org/dc/elements/1.1/> .
+@prefix ns7: <http://purl.org/ontology/bibo/#> .
 @prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns9: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -32,7 +33,7 @@
     ns3:name "Christopher Baker" .
 
 <http://ceur-ws.org/Vol-293/#ClaudioiBergamini> a ns3:Person ;
-    ns5:place <http://dbpedia.org/resource/Italy> ;
+    ns7:place <http://dbpedia.org/resource/Italy> ;
     ns4:affiliation "Imola Informatica" ;
     ns2:sameAs <http://ceur-ws.org/persons/ClaudioiBergamini> ;
     ns3:name "Claudio Bergamini" .
@@ -88,7 +89,7 @@
     ns3:name "Luigi Guadagno" .
 
 <http://ceur-ws.org/Vol-293/#LyndoniNixon> a ns3:Person ;
-    ns5:place <http://dbpedia.org/resource/Germany> ;
+    ns7:place <http://dbpedia.org/resource/Germany> ;
     ns4:affiliation "Free University Berlin" ;
     ns2:sameAs <http://ceur-ws.org/persons/LyndoniNixon> ;
     ns3:name "Lyndon Nixon" .
@@ -154,7 +155,7 @@
     ns3:name "Reuben Wright" .
 
 <http://ceur-ws.org/Vol-293/#RobertaiCuel> a ns3:Person ;
-    ns5:place <http://dbpedia.org/resource/Italy> ;
+    ns7:place <http://dbpedia.org/resource/Italy> ;
     ns4:affiliation "University of Trento" ;
     ns2:sameAs <http://ceur-ws.org/persons/RobertaiCuel> ;
     ns3:name "Roberta Cuel" .
@@ -189,13 +190,13 @@
     ns3:made <http://ceur-ws.org/Vol-293/#paper4> ;
     ns3:name "Wee Tiong Ang" .
 
-<http://ceur-ws.org/Vol-293/#event> a ns1:WorkshopEvent ;
-    ns1:hasLocation <http://dbpedia.org/resource/South_Korea> ;
-    ns1:hasPart <http://ceur-ws.org/Vol-293/#part-ws> ;
-    ns1:isSubEventOf <http://ceur-ws.org/Vol-293/#conf> ;
-    ns8:beginsAtDatetime "2007-11-11T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:endsAtDatetime "2007-11-11T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:license <http://choosealicense.com/licenses/no-license/> .
+<http://ceur-ws.org/Vol-293/#event> a ns5:WorkshopEvent ;
+    ns5:hasLocation <http://dbpedia.org/resource/South_Korea> ;
+    ns5:hasPart <http://ceur-ws.org/Vol-293/#part-CEUR-WS> ;
+    ns5:isSubEventOf <http://ceur-ws.org/Vol-293/#conf> ;
+    ns8:beginsAtDatetime "2007-11-13T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:endsAtDatetime "2007-11-13T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:license "http://choosealicense.com/licenses/no-license/" .
 
 <http://ceur-ws.org/Vol-293/#pagesi1-13> a ns3:Person ;
     ns2:sameAs <http://ceur-ws.org/persons/pagesi1-13> ;
@@ -233,46 +234,46 @@
         <http://ceur-ws.org/Vol-293/#paper3> ;
     ns3:name "Asuncion Gomez-Perez" .
 
-<http://ceur-ws.org/Vol-293/#paper1> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-293/> ;
-    ns7:title "A Case Study of an Ontology-Driven Dynamic Data Integration in a Telecommunications Supply Chain" ;
+<http://ceur-ws.org/Vol-293/#paper1> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-293/> ;
+    ns1:title "A Case Study of an Ontology-Driven Dynamic Data Integration in a Telecommunications Supply Chain" ;
     ns4:author <http://ceur-ws.org/Vol-293/#AidaniBoran>,
         <http://ceur-ws.org/Vol-293/#DeclaniO%27Sullivan>,
         <http://ceur-ws.org/Vol-293/#VincentiWade>,
         <http://ceur-ws.org/Vol-293/#pagesi1-13> .
 
-<http://ceur-ws.org/Vol-293/#paper3> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-293/> ;
-    ns7:title "Reusing Human Resources Management Standards for Employment Services" ;
+<http://ceur-ws.org/Vol-293/#paper3> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-293/> ;
+    ns1:title "Reusing Human Resources Management Standards for Employment Services" ;
     ns4:author <http://ceur-ws.org/Vol-293/#AsuncioniGomez-Perez>,
         <http://ceur-ws.org/Vol-293/#BorisiVillazon-Terrazas>,
         <http://ceur-ws.org/Vol-293/#JaimeiRamirez>,
         <http://ceur-ws.org/Vol-293/#pagesi28-41> .
 
-<http://ceur-ws.org/Vol-293/#paper6> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-293/> ;
-    ns7:title "Semantic Enterprise Technologies" ;
+<http://ceur-ws.org/Vol-293/#paper6> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-293/> ;
+    ns1:title "Semantic Enterprise Technologies" ;
     ns4:author <http://ceur-ws.org/Vol-293/#InderbiriSidhu>,
         <http://ceur-ws.org/Vol-293/#LuigiiGuadagno>,
         <http://ceur-ws.org/Vol-293/#MassimoiRuffolo>,
         <http://ceur-ws.org/Vol-293/#pagesi70-84> .
 
-<http://ceur-ws.org/Vol-293/> a ns1:Proceedings ;
-    ns1:hasPart <http://ceur-ws.org/Vol-293/#paper1>,
+<http://ceur-ws.org/Vol-293/> a ns5:Proceedings ;
+    ns5:hasPart <http://ceur-ws.org/Vol-293/#paper1>,
         <http://ceur-ws.org/Vol-293/#paper2>,
         <http://ceur-ws.org/Vol-293/#paper3>,
         <http://ceur-ws.org/Vol-293/#paper4>,
         <http://ceur-ws.org/Vol-293/#paper5>,
         <http://ceur-ws.org/Vol-293/#paper6> ;
-    ns6:issued "2007-11-13T00:00:00+00:00"^^xsd:dateTime ;
-    ns5:presentedAt <http://ceur-ws.org/Vol-293/#event> ;
+    ns9:issued "2007-11-13T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:presentedAt <http://ceur-ws.org/Vol-293/#event> ;
     ns4:editor <http://ceur-ws.org/Vol-293/#ClaudioiBergamini>,
         <http://ceur-ws.org/Vol-293/#LyndoniNixon>,
         <http://ceur-ws.org/Vol-293/#RobertaiCuel> .
 
-<http://ceur-ws.org/Vol-293/#paper2> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-293/> ;
-    ns7:title "A Semantic Data Grid for Satellite Mission Quality Analysis" ;
+<http://ceur-ws.org/Vol-293/#paper2> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-293/> ;
+    ns1:title "A Semantic Data Grid for Satellite Mission Quality Analysis" ;
     ns4:author <http://ceur-ws.org/Vol-293/#AsuncioniGomez-Perez>,
         <http://ceur-ws.org/Vol-293/#ManueliSanchez-Gestido>,
         <http://ceur-ws.org/Vol-293/#MariaiPerez-Hernandez>,
@@ -281,9 +282,9 @@
         <http://ceur-ws.org/Vol-293/#ReubeniWright>,
         <http://ceur-ws.org/Vol-293/#pagesi14-27> .
 
-<http://ceur-ws.org/Vol-293/#paper4> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-293/> ;
-    ns7:title "Literature-driven, Ontology-centric Knowledge Navigation for Lipidomics" ;
+<http://ceur-ws.org/Vol-293/#paper4> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-293/> ;
+    ns1:title "Literature-driven, Ontology-centric Knowledge Navigation for Lipidomics" ;
     ns4:author <http://ceur-ws.org/Vol-293/#AnithaiVeeramani>,
         <http://ceur-ws.org/Vol-293/#ChristopheriBaker>,
         <http://ceur-ws.org/Vol-293/#HongiSangiLow>,
@@ -292,9 +293,9 @@
         <http://ceur-ws.org/Vol-293/#WeeiTiongiAng>,
         <http://ceur-ws.org/Vol-293/#pagesi42-55> .
 
-<http://ceur-ws.org/Vol-293/#paper5> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-293/> ;
-    ns7:title "Enabling the Semantic Web with Ready-to-Use Web Widgets" ;
+<http://ceur-ws.org/Vol-293/#paper5> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-293/> ;
+    ns1:title "Enabling the Semantic Web with Ready-to-Use Web Widgets" ;
     ns4:author <http://ceur-ws.org/Vol-293/#EeroiHyvnent>,
         <http://ceur-ws.org/Vol-293/#EetuiMakela>,
         <http://ceur-ws.org/Vol-293/#JouniiTuominen>,

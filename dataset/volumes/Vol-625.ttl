@@ -1,11 +1,12 @@
 @prefix ns1: <http://xmlns.com/foaf/0.1/> .
 @prefix ns2: <http://purl.org/ontology/bibo/#> .
 @prefix ns3: <http://www.w3.org/2002/07/owl#> .
-@prefix ns4: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns5: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns6: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns4: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns5: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns6: <http://purl.org/dc/elements/1.1/> .
+@prefix ns7: <http://purl.org/dc/elements/1.1/#> .
 @prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns9: <http://purl.org/NET/c4dm/timeline.owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -22,7 +23,7 @@
     ns1:name "Ø ystein Haugen" .
 
 <http://ceur-ws.org/Vol-625/#AndreasiPleuss> a ns1:Person ;
-    ns4:affiliation "" ;
+    ns5:affiliation "" ;
     ns3:sameAs <http://ceur-ws.org/persons/AndreasiPleuss> ;
     ns1:name "Andreas Pleuss" .
 
@@ -67,7 +68,7 @@
     ns1:name "Gilad Saadoun" .
 
 <http://ceur-ws.org/Vol-625/#GoetziBotterweck> a ns1:Person ;
-    ns4:affiliation "" ;
+    ns5:affiliation "" ;
     ns3:sameAs <http://ceur-ws.org/persons/GoetziBotterweck> ;
     ns1:name "Goetz Botterweck" .
 
@@ -92,7 +93,7 @@
     ns1:name "Holger Rendel" .
 
 <http://ceur-ws.org/Vol-625/#ItayiMaman> a ns1:Person ;
-    ns4:affiliation "" ;
+    ns5:affiliation "" ;
     ns3:sameAs <http://ceur-ws.org/persons/ItayiMaman> ;
     ns1:name "Itay Maman" .
 
@@ -102,7 +103,7 @@
     ns1:name "Josune De Sosa" .
 
 <http://ceur-ws.org/Vol-625/#JuliaiRubin> a ns1:Person ;
-    ns4:affiliation "" ;
+    ns5:affiliation "" ;
     ns3:sameAs <http://ceur-ws.org/persons/JuliaiRubin> ;
     ns1:name "Julia Rubin" .
 
@@ -142,7 +143,7 @@
     ns1:name "Oscar Díaz" .
 
 <http://ceur-ws.org/Vol-625/#PatrickiHeymans> a ns1:Person ;
-    ns4:affiliation "" ;
+    ns5:affiliation "" ;
     ns3:sameAs <http://ceur-ws.org/persons/PatrickiHeymans> ;
     ns1:name "Patrick Heymans" .
 
@@ -171,100 +172,100 @@
     ns1:made <http://ceur-ws.org/Vol-625/#MDPLE2010-paper7-Possompes> ;
     ns1:name "Xavier Vasques" .
 
-<http://ceur-ws.org/Vol-625/#event> a ns5:WorkshopEvent ;
-    ns5:hasLocation <http://dbpedia.org/resource/France> ;
-    ns5:hasPart <http://ceur-ws.org/Vol-625/#part-MDPLE> ;
-    ns5:isSubEventOf <http://ceur-ws.org/Vol-625/#conf> ;
-    ns7:beginsAtDatetime "2010-06-16T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:endsAtDatetime "2010-06-16T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:license <http://choosealicense.com/licenses/no-license/> ;
+<http://ceur-ws.org/Vol-625/#event> a ns4:WorkshopEvent ;
+    ns4:hasLocation <http://dbpedia.org/resource/France> ;
+    ns4:hasPart <http://ceur-ws.org/Vol-625/#part-CEUR-WS> ;
+    ns4:isSubEventOf <http://ceur-ws.org/Vol-625/#conf> ;
+    ns9:beginsAtDatetime "2010-08-27T00:00:00+00:00"^^xsd:dateTime ;
+    ns9:endsAtDatetime "2010-08-27T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:license "http://choosealicense.com/licenses/no-license/" ;
     rdfs:seeAlso <http://ceur-ws.org/Vol-557/#event> .
 
-<http://ceur-ws.org/Vol-625/#MDPLE2010-keynote-Haugen> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-625/> ;
-    ns6:title "Common Variability Language - Emerging Standard" ;
+<http://ceur-ws.org/Vol-625/#MDPLE2010-keynote-Haugen> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-625/> ;
+    ns7:title "Common Variability Language - Emerging Standard" ;
     ns2:endPage 1 ;
     ns2:numPages 1 ;
     ns2:startPage 1 ;
-    ns4:author <http://ceur-ws.org/Vol-625/#%C3%98iysteiniHaugen> .
+    ns5:author <http://ceur-ws.org/Vol-625/#%C3%98iysteiniHaugen> .
 
-<http://ceur-ws.org/Vol-625/#MDPLE2010-paper3-Gomaa> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-625/> ;
-    ns6:title "Variability Modeling in Model-Driven Software Product Line Engineering" ;
+<http://ceur-ws.org/Vol-625/#MDPLE2010-paper3-Gomaa> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-625/> ;
+    ns7:title "Variability Modeling in Model-Driven Software Product Line Engineering" ;
     ns2:endPage 36 ;
     ns2:numPages 12 ;
     ns2:startPage 25 ;
-    ns4:author <http://ceur-ws.org/Vol-625/#HassaniGomaa>,
+    ns5:author <http://ceur-ws.org/Vol-625/#HassaniGomaa>,
         <http://ceur-ws.org/Vol-625/#MichaeliE.iShin> .
 
-<http://ceur-ws.org/Vol-625/#MDPLE2010-paper4-Kuhlemann> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-625/> ;
-    ns6:title "Algebraic and Cost-based Optimization of Refactoring Sequences" ;
+<http://ceur-ws.org/Vol-625/#MDPLE2010-paper4-Kuhlemann> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-625/> ;
+    ns7:title "Algebraic and Cost-based Optimization of Refactoring Sequences" ;
     ns2:endPage 48 ;
     ns2:numPages 12 ;
     ns2:startPage 37 ;
-    ns4:author <http://ceur-ws.org/Vol-625/#GunteriSaake>,
+    ns5:author <http://ceur-ws.org/Vol-625/#GunteriSaake>,
         <http://ceur-ws.org/Vol-625/#LiangiLiang>,
         <http://ceur-ws.org/Vol-625/#MartiniKuhlemann> .
 
-<http://ceur-ws.org/Vol-625/#MDPLE2010-paper6-Pichler> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-625/> ;
-    ns6:title "Managing Variability and Evolution of Business Document Models" ;
+<http://ceur-ws.org/Vol-625/#MDPLE2010-paper6-Pichler> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-625/> ;
+    ns7:title "Managing Variability and Evolution of Business Document Models" ;
     ns2:endPage 72 ;
     ns2:numPages 12 ;
     ns2:startPage 61 ;
-    ns4:author <http://ceur-ws.org/Vol-625/#ChristianiHuemer>,
+    ns5:author <http://ceur-ws.org/Vol-625/#ChristianiHuemer>,
         <http://ceur-ws.org/Vol-625/#ChristianiPichler>,
         <http://ceur-ws.org/Vol-625/#MartinaiSeidl> .
 
-<http://ceur-ws.org/Vol-625/#MDPLE2010-paper1-Azanza> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-625/> ;
-    ns6:title "Towards a Process-Line for MDPLE" ;
+<http://ceur-ws.org/Vol-625/#MDPLE2010-paper1-Azanza> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-625/> ;
+    ns7:title "Towards a Process-Line for MDPLE" ;
     ns2:endPage 12 ;
     ns2:numPages 10 ;
     ns2:startPage 3 ;
-    ns4:author <http://ceur-ws.org/Vol-625/#JosuneiDeiSosa>,
+    ns5:author <http://ceur-ws.org/Vol-625/#JosuneiDeiSosa>,
         <http://ceur-ws.org/Vol-625/#MaideriAzanza>,
         <http://ceur-ws.org/Vol-625/#OscariD%C3%ADaz>,
         <http://ceur-ws.org/Vol-625/#SalvadoriTrujillo> .
 
-<http://ceur-ws.org/Vol-625/#MDPLE2010-paper2-Dotan> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-625/> ;
-    ns6:title "Extending a Model-Driven Engineering Environment to Support Product Line Engineering" ;
+<http://ceur-ws.org/Vol-625/#MDPLE2010-paper2-Dotan> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-625/> ;
+    ns7:title "Extending a Model-Driven Engineering Environment to Support Product Line Engineering" ;
     ns2:endPage 24 ;
     ns2:numPages 12 ;
     ns2:startPage 13 ;
-    ns4:author <http://ceur-ws.org/Vol-625/#DoleviDotan>,
+    ns5:author <http://ceur-ws.org/Vol-625/#DoleviDotan>,
         <http://ceur-ws.org/Vol-625/#GiladiSaadoun>,
         <http://ceur-ws.org/Vol-625/#TaliiYatzkar-Haham>,
         <http://ceur-ws.org/Vol-625/#TomeriAmarilio> .
 
-<http://ceur-ws.org/Vol-625/#MDPLE2010-paper5-Mengi> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-625/> ;
-    ns6:title "Model-driven Configuration of Function Net Families in Automotive Software Engineering" ;
+<http://ceur-ws.org/Vol-625/#MDPLE2010-paper5-Mengi> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-625/> ;
+    ns7:title "Model-driven Configuration of Function Net Families in Automotive Software Engineering" ;
     ns2:endPage 60 ;
     ns2:numPages 12 ;
     ns2:startPage 49 ;
-    ns4:author <http://ceur-ws.org/Vol-625/#%C3%96nderiBabur>,
+    ns5:author <http://ceur-ws.org/Vol-625/#%C3%96nderiBabur>,
         <http://ceur-ws.org/Vol-625/#CemiMengi>,
         <http://ceur-ws.org/Vol-625/#ChristianiBerger>,
         <http://ceur-ws.org/Vol-625/#HolgeriRendel> .
 
-<http://ceur-ws.org/Vol-625/#MDPLE2010-paper7-Possompes> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-625/> ;
-    ns6:title "Towards Software Product Lines Application in the Context of a Smart Building Project" ;
+<http://ceur-ws.org/Vol-625/#MDPLE2010-paper7-Possompes> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-625/> ;
+    ns7:title "Towards Software Product Lines Application in the Context of a Smart Building Project" ;
     ns2:endPage 84 ;
     ns2:numPages 12 ;
     ns2:startPage 73 ;
-    ns4:author <http://ceur-ws.org/Vol-625/#ChoukiiTibermacine>,
+    ns5:author <http://ceur-ws.org/Vol-625/#ChoukiiTibermacine>,
         <http://ceur-ws.org/Vol-625/#ChristopheiDony>,
         <http://ceur-ws.org/Vol-625/#Herv%C3%A9iRey>,
         <http://ceur-ws.org/Vol-625/#MarianneiHuchard>,
         <http://ceur-ws.org/Vol-625/#ThibautiPossomp%C3%A8s>,
         <http://ceur-ws.org/Vol-625/#XavieriVasques> .
 
-<http://ceur-ws.org/Vol-625/> a ns5:Proceedings ;
-    ns5:hasPart <http://ceur-ws.org/Vol-625/#MDPLE2010-keynote-Haugen>,
+<http://ceur-ws.org/Vol-625/> a ns4:Proceedings ;
+    ns4:hasPart <http://ceur-ws.org/Vol-625/#MDPLE2010-keynote-Haugen>,
         <http://ceur-ws.org/Vol-625/#MDPLE2010-paper1-Azanza>,
         <http://ceur-ws.org/Vol-625/#MDPLE2010-paper2-Dotan>,
         <http://ceur-ws.org/Vol-625/#MDPLE2010-paper3-Gomaa>,
@@ -274,7 +275,7 @@
         <http://ceur-ws.org/Vol-625/#MDPLE2010-paper7-Possompes> ;
     ns8:issued "2010-08-27T00:00:00+00:00"^^xsd:dateTime ;
     ns2:presentedAt <http://ceur-ws.org/Vol-625/#event> ;
-    ns4:editor <http://ceur-ws.org/Vol-625/#AndreasiPleuss>,
+    ns5:editor <http://ceur-ws.org/Vol-625/#AndreasiPleuss>,
         <http://ceur-ws.org/Vol-625/#GoetziBotterweck>,
         <http://ceur-ws.org/Vol-625/#ItayiMaman>,
         <http://ceur-ws.org/Vol-625/#JuliaiRubin>,

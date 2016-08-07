@@ -1,9 +1,9 @@
-@prefix ns1: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns1: <http://purl.org/NET/c4dm/timeline.owl#> .
 @prefix ns2: <http://xmlns.com/foaf/0.1/> .
-@prefix ns3: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns4: <http://purl.org/ontology/bibo/#> .
-@prefix ns5: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns6: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns3: <http://purl.org/dc/elements/1.1/> .
+@prefix ns4: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns5: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns6: <http://purl.org/ontology/bibo/#> .
 @prefix ns7: <http://www.w3.org/2002/07/owl#> .
 @prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -11,10 +11,10 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-35/> a ns3:Proceedings ;
+<http://ceur-ws.org/Vol-35/> a ns5:Proceedings ;
     ns8:issued "2000-11-02T00:00:00+00:00"^^xsd:dateTime ;
-    ns4:presentedAt <http://ceur-ws.org/Vol-35/#event> ;
-    ns1:editor <http://ceur-ws.org/Vol-35/#AlaniFrisch>,
+    ns6:presentedAt <http://ceur-ws.org/Vol-35/#event> ;
+    ns4:editor <http://ceur-ws.org/Vol-35/#AlaniFrisch>,
         <http://ceur-ws.org/Vol-35/#BothiatiDepartmentiofiComputeriScience>,
         <http://ceur-ws.org/Vol-35/#JamesiCussens> .
 
@@ -30,10 +30,10 @@
     ns7:sameAs <http://ceur-ws.org/persons/JamesiCussens> ;
     ns2:name "James Cussens" .
 
-<http://ceur-ws.org/Vol-35/#event> a ns3:WorkshopEvent ;
-    ns3:hasPart <http://ceur-ws.org/Vol-35/#part-ILP> ;
-    ns3:isSubEventOf <http://ceur-ws.org/Vol-35/#conf> ;
-    ns5:beginsAtDatetime "2000-07-01T00:00:00+00:00"^^xsd:dateTime ;
-    ns5:endsAtDatetime "2000-07-01T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:license <http://choosealicense.com/licenses/no-license/> .
+<http://ceur-ws.org/Vol-35/#event> a ns5:WorkshopEvent ;
+    ns5:hasPart <http://ceur-ws.org/Vol-35/#part-ws> ;
+    ns5:isSubEventOf <http://ceur-ws.org/Vol-35/#conf> ;
+    ns1:beginsAtDatetime "2000-11-01T00:00:00+00:00"^^xsd:dateTime ;
+    ns1:endsAtDatetime "2000-11-01T00:00:00+00:00"^^xsd:dateTime ;
+    ns3:license "http://choosealicense.com/licenses/no-license/" .
 

@@ -1,164 +1,42 @@
-@prefix ns1: <http://www.w3.org/2002/07/owl#> .
-@prefix ns2: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns3: <http://xmlns.com/foaf/0.1/> .
-@prefix ns4: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns5: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns1: <http://xmlns.com/foaf/0.1/> .
+@prefix ns2: <http://www.w3.org/2002/07/owl#> .
+@prefix ns3: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns4: <http://purl.org/dc/elements/1.1/> .
+@prefix ns5: <http://swrc.ontoware.org/ontology/#> .
 @prefix ns6: <http://purl.org/ontology/bibo/#> .
-@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-837/#AlesiKantor> a ns3:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/AlesiKantor> ;
-    ns3:made <http://ceur-ws.org/Vol-837/#poster13> ;
-    ns3:name "Ales Kantor" .
+<http://ceur-ws.org/Vol-837/> a ns3:Proceedings ;
+    ns8:issued "2012-05-14T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:presentedAt <http://ceur-ws.org/Vol-837/#event> ;
+    ns5:editor <http://ceur-ws.org/Vol-837/#JaroslaviPokorny>,
+        <http://ceur-ws.org/Vol-837/#KareliRichta>,
+        <http://ceur-ws.org/Vol-837/#VaclaviSnasel> .
 
-<http://ceur-ws.org/Vol-837/#AlisaiBabskova> a ns3:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/AlisaiBabskova> ;
-    ns3:made <http://ceur-ws.org/Vol-837/#paper14> ;
-    ns3:name "Alisa Babskova" .
+<http://ceur-ws.org/Vol-837/#JaroslaviPokorny> a ns1:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/JaroslaviPokorny> ;
+    ns1:name "Jaroslav Pokorny" .
 
-<http://ceur-ws.org/Vol-837/#AntoniniProchazka> a ns3:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/AntoniniProchazka> ;
-    ns3:made <http://ceur-ws.org/Vol-837/#poster17> ;
-    ns3:name "Antonin Prochazka" .
+<http://ceur-ws.org/Vol-837/#KareliRichta> a ns1:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/KareliRichta> ;
+    ns1:name "Karel Richta" .
 
-<http://ceur-ws.org/Vol-837/#EyasiEl-Qawasmeh> a ns3:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/EyasiEl-Qawasmeh> ;
-    ns3:made <http://ceur-ws.org/Vol-837/#paper18> ;
-    ns3:name "Eyas El-Qawasmeh" .
+<http://ceur-ws.org/Vol-837/#VaclaviSnasel> a ns1:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/VaclaviSnasel> ;
+    ns1:name "Vaclav Snasel" .
 
-<http://ceur-ws.org/Vol-837/#IvoiLasek> a ns3:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/IvoiLasek> ;
-    ns3:made <http://ceur-ws.org/Vol-837/#paper6> ;
-    ns3:name "Ivo Lasek" .
-
-<http://ceur-ws.org/Vol-837/#JakubiKlimek> a ns3:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/JakubiKlimek> ;
-    ns3:made <http://ceur-ws.org/Vol-837/#paper19> ;
-    ns3:name "Jakub Klimek" .
-
-<http://ceur-ws.org/Vol-837/#JakubiMaly> a ns3:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/JakubiMaly> ;
-    ns3:made <http://ceur-ws.org/Vol-837/#paper19> ;
-    ns3:name "Jakub Maly" .
-
-<http://ceur-ws.org/Vol-837/#JakubiStarka> a ns3:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/JakubiStarka> ;
-    ns3:made <http://ceur-ws.org/Vol-837/#poster8> ;
-    ns3:name "Jakub Starka" .
-
-<http://ceur-ws.org/Vol-837/#JakubiStolfa> a ns3:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/JakubiStolfa> ;
-    ns3:made <http://ceur-ws.org/Vol-837/#paper12> ;
-    ns3:name "Jakub Stolfa" .
-
-<http://ceur-ws.org/Vol-837/#JaniKozusznik> a ns3:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/JaniKozusznik> ;
-    ns3:made <http://ceur-ws.org/Vol-837/#paper12> ;
-    ns3:name "Jan Kozusznik" .
-
-<http://ceur-ws.org/Vol-837/#JaniPlatos> a ns3:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/JaniPlatos> ;
-    ns3:made <http://ceur-ws.org/Vol-837/#paper18> ;
-    ns3:name "Jan Platos" .
-
-<http://ceur-ws.org/Vol-837/#JaroslaviPokorny> a ns3:Person ;
-    ns6:place <http://dbpedia.org/resource/Czech_Republic> ;
-    ns4:affiliation "Department of Software Engineering, MFF, Charles University, Prague" ;
-    ns1:sameAs <http://ceur-ws.org/persons/JaroslaviPokorny> ;
-    ns3:name "Jaroslav Pokorny" .
-
-<http://ceur-ws.org/Vol-837/#MartiniKopka> a ns3:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/MartiniKopka> ;
-    ns3:made <http://ceur-ws.org/Vol-837/#paper12> ;
-    ns3:name "Martin Kopka" .
-
-<http://ceur-ws.org/Vol-837/#MartiniMazanec> a ns3:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/MartiniMazanec> ;
-    ns3:made <http://ceur-ws.org/Vol-837/#paper10> ;
-    ns3:name "Martin Mazanec" .
-
-<http://ceur-ws.org/Vol-837/#MartiniNecasky> a ns3:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/MartiniNecasky> ;
-    ns3:made <http://ceur-ws.org/Vol-837/#paper19> ;
-    ns3:name "Martin Necasky" .
-
-<http://ceur-ws.org/Vol-837/#MartiniSvoboda> a ns3:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/MartiniSvoboda> ;
-    ns3:made <http://ceur-ws.org/Vol-837/#poster8> ;
-    ns3:name "Martin Svoboda" .
-
-<http://ceur-ws.org/Vol-837/#MichaliPrilepok> a ns3:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/MichaliPrilepok> ;
-    ns3:made <http://ceur-ws.org/Vol-837/#paper18> ;
-    ns3:name "Michal Prilepok" .
-
-<http://ceur-ws.org/Vol-837/#MirceaiLungu> a ns3:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/MirceaiLungu> ;
-    ns3:made <http://ceur-ws.org/Vol-837/#poster17> ;
-    ns3:name "Mircea Lungu" .
-
-<http://ceur-ws.org/Vol-837/#OndrejiKobersky> a ns3:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/OndrejiKobersky> ;
-    ns3:made <http://ceur-ws.org/Vol-837/#paper12> ;
-    ns3:name "Ondrej Kobersky" .
-
-<http://ceur-ws.org/Vol-837/#PaveliLoupal> a ns3:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/PaveliLoupal> ;
-    ns3:made <http://ceur-ws.org/Vol-837/#poster13> ;
-    ns3:name "Pavel Loupal" .
-
-<http://ceur-ws.org/Vol-837/#PaveliStrnad> a ns3:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/PaveliStrnad> ;
-    ns3:made <http://ceur-ws.org/Vol-837/#poster13> ;
-    ns3:name "Pavel Strnad" .
-
-<http://ceur-ws.org/Vol-837/#PeteriVojtas> a ns3:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/PeteriVojtas> ;
-    ns3:made <http://ceur-ws.org/Vol-837/#paper6> ;
-    ns3:name "Peter Vojtas" .
-
-<http://ceur-ws.org/Vol-837/#PrzemyslawiKazienko> a ns3:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/PrzemyslawiKazienko> ;
-    ns3:made <http://ceur-ws.org/Vol-837/#invited2> ;
-    ns3:name "Przemyslaw Kazienko" .
-
-<http://ceur-ws.org/Vol-837/#StepaniKuchar> a ns3:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/StepaniKuchar> ;
-    ns3:made <http://ceur-ws.org/Vol-837/#paper2> ;
-    ns3:name "Stepan Kuchar" .
-
-<http://ceur-ws.org/Vol-837/#StepaniMinks> a ns3:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/StepaniMinks> ;
-    ns3:made <http://ceur-ws.org/Vol-837/#paper14> ;
-    ns3:name "Stepan Minks" .
-
-<http://ceur-ws.org/Vol-837/#SvatoplukiStolfa> a ns3:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/SvatoplukiStolfa> ;
-    ns3:made <http://ceur-ws.org/Vol-837/#paper12> ;
-    ns3:name "Svatopluk Stolfa" .
-
-<http://ceur-ws.org/Vol-837/#ZbynekiJanoska> a ns3:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/ZbynekiJanoska> ;
-    ns3:made <http://ceur-ws.org/Vol-837/#paper11> ;
-    ns3:name "Zbynek Janoska" .
-
-<http://ceur-ws.org/Vol-837/#ZdenekiRybola> a ns3:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/ZdenekiRybola> ;
-    ns3:made <http://ceur-ws.org/Vol-837/#paper3> ;
-    ns3:name "Zdenek Rybola" .
-
-<http://ceur-ws.org/Vol-837/#event> a ns5:WorkshopEvent ;
-    ns5:hasLocation <http://dbpedia.org/resource/Czech_Republic> ;
-    ns5:hasPart <http://ceur-ws.org/Vol-837/#part-DATESO> ;
-    ns5:isSubEventOf <http://ceur-ws.org/Vol-837/#conf> ;
-    ns8:beginsAtDatetime "2012-04-18T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:endsAtDatetime "2012-04-18T00:00:00+00:00"^^xsd:dateTime ;
-    ns2:license <http://choosealicense.com/licenses/no-license/> ;
+<http://ceur-ws.org/Vol-837/#event> a ns3:WorkshopEvent ;
+    ns3:hasLocation <http://dbpedia.org/resource/Czech_Republic> ;
+    ns3:hasPart <http://ceur-ws.org/Vol-837/#part-CEUR-WS> ;
+    ns3:isSubEventOf <http://ceur-ws.org/Vol-837/#conf> ;
+    ns7:beginsAtDatetime "2012-04-18T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:endsAtDatetime "2012-04-18T00:00:00+00:00"^^xsd:dateTime ;
+    ns4:license "http://choosealicense.com/licenses/no-license/" ;
     rdfs:seeAlso <http://ceur-ws.org/Vol-129/#event>,
         <http://ceur-ws.org/Vol-176/#event>,
         <http://ceur-ws.org/Vol-235/#event>,
@@ -167,258 +45,4 @@
         <http://ceur-ws.org/Vol-567/#event>,
         <http://ceur-ws.org/Vol-706/#event>,
         <http://ceur-ws.org/Vol-98/#event> .
-
-<http%3A//ceur-ws.org/Vol-837/%23Invitedpapers> a ns5:SessionEvent ;
-    ns5:partOf <http://ceur-ws.org/Vol-837/> ;
-    ns2:title "Invited papers" .
-
-<http://ceur-ws.org/Vol-837/#IrenaiMlynkova> a ns3:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/IrenaiMlynkova> ;
-    ns3:made <http://ceur-ws.org/Vol-837/#paper19>,
-        <http://ceur-ws.org/Vol-837/#poster8> ;
-    ns3:name "Irena Mlynkova" .
-
-<http://ceur-ws.org/Vol-837/#JiriiDvorsky> a ns3:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/JiriiDvorsky> ;
-    ns3:made <http://ceur-ws.org/Vol-837/#paper11>,
-        <http://ceur-ws.org/Vol-837/#paper2> ;
-    ns3:name "Jiri Dvorsky" .
-
-<http://ceur-ws.org/Vol-837/#KaterinaiSlaninova> a ns3:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/KaterinaiSlaninova> ;
-    ns3:made <http://ceur-ws.org/Vol-837/#paper14>,
-        <http://ceur-ws.org/Vol-837/#paper16> ;
-    ns3:name "Katerina Slaninova" .
-
-<http://ceur-ws.org/Vol-837/#OndrejiMacek> a ns3:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/OndrejiMacek> ;
-    ns3:made <http://ceur-ws.org/Vol-837/#paper10>,
-        <http://ceur-ws.org/Vol-837/#poster13> ;
-    ns3:name "Ondrej Macek" .
-
-<http://ceur-ws.org/Vol-837/#PavlaiDrazdilova> a ns3:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/PavlaiDrazdilova> ;
-    ns3:made <http://ceur-ws.org/Vol-837/#paper14>,
-        <http://ceur-ws.org/Vol-837/#paper16> ;
-    ns3:name "Pavla Drazdilova" .
-
-<http://ceur-ws.org/Vol-837/#TomasiKocyan> a ns3:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/TomasiKocyan> ;
-    ns3:made <http://ceur-ws.org/Vol-837/#paper16>,
-        <http://ceur-ws.org/Vol-837/#paper2> ;
-    ns3:name "Tomas Kocyan" .
-
-<http://ceur-ws.org/Vol-837/#invited2> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-837/> ;
-    ns2:title "Social Network Analysis: Selected Methods and Applications" ;
-    ns6:endPage 150 ;
-    ns6:numPages 8 ;
-    ns6:section <http%3A//ceur-ws.org/Vol-837/%23Invitedpapers> ;
-    ns6:startPage 143 ;
-    ns4:author <http://ceur-ws.org/Vol-837/#PrzemyslawiKazienko> .
-
-<http://ceur-ws.org/Vol-837/#JaniMartinovic> a ns3:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/JaniMartinovic> ;
-    ns3:made <http://ceur-ws.org/Vol-837/#paper14>,
-        <http://ceur-ws.org/Vol-837/#paper16>,
-        <http://ceur-ws.org/Vol-837/#paper2> ;
-    ns3:name "Jan Martinovic" .
-
-<http://ceur-ws.org/Vol-837/#KareliRichta> a ns3:Person ;
-    ns6:place <http://dbpedia.org/resource/Czech_Republic> ;
-    ns4:affiliation "Department of Computer Science and Engineering, FEE, Czech Technical University in Prague, Prague" ;
-    ns1:sameAs <http://ceur-ws.org/persons/KareliRichta> ;
-    ns3:made <http://ceur-ws.org/Vol-837/#paper3>,
-        <http://ceur-ws.org/Vol-837/#poster17> ;
-    ns3:name "Karel Richta" .
-
-<http://ceur-ws.org/Vol-837/#paper10> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-837/> ;
-    ns2:title "On General-purpose Textual Modeling Languages" ;
-    ns6:endPage 12 ;
-    ns6:numPages 12 ;
-    ns6:section <http%3A//ceur-ws.org/Vol-837/%23Fullpapers> ;
-    ns6:startPage 1 ;
-    ns4:author <http://ceur-ws.org/Vol-837/#MartiniMazanec>,
-        <http://ceur-ws.org/Vol-837/#OndrejiMacek> .
-
-<http://ceur-ws.org/Vol-837/#paper11> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-837/> ;
-    ns2:title "P systems: State of the Art with Respect to Representation of Geographical Space" ;
-    ns6:endPage 24 ;
-    ns6:numPages 12 ;
-    ns6:section <http%3A//ceur-ws.org/Vol-837/%23Fullpapers> ;
-    ns6:startPage 13 ;
-    ns4:author <http://ceur-ws.org/Vol-837/#JiriiDvorsky>,
-        <http://ceur-ws.org/Vol-837/#ZbynekiJanoska> .
-
-<http://ceur-ws.org/Vol-837/#paper3> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-837/> ;
-    ns2:title "Using OCL in Model Validation According to Stereotypes" ;
-    ns6:endPage 102 ;
-    ns6:numPages 10 ;
-    ns6:section <http%3A//ceur-ws.org/Vol-837/%23Fullpapers> ;
-    ns6:startPage 93 ;
-    ns4:author <http://ceur-ws.org/Vol-837/#KareliRichta>,
-        <http://ceur-ws.org/Vol-837/#ZdenekiRybola> .
-
-<http://ceur-ws.org/Vol-837/#paper6> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-837/> ;
-    ns2:title "Models for Efficient Semantic Data Storage Demonstrated on Concrete Example of DBpedia" ;
-    ns6:endPage 114 ;
-    ns6:numPages 12 ;
-    ns6:section <http%3A//ceur-ws.org/Vol-837/%23Fullpapers> ;
-    ns6:startPage 103 ;
-    ns4:author <http://ceur-ws.org/Vol-837/#IvoiLasek>,
-        <http://ceur-ws.org/Vol-837/#PeteriVojtas> .
-
-<http%3A//ceur-ws.org/Vol-837/%23Posters> a ns5:SessionEvent ;
-    ns5:partOf <http://ceur-ws.org/Vol-837/> ;
-    ns2:title "Posters" .
-
-<http://ceur-ws.org/Vol-837/#VaclaviSnasel> a ns3:Person ;
-    ns4:affiliation "" ;
-    ns1:sameAs <http://ceur-ws.org/persons/VaclaviSnasel> ;
-    ns3:made <http://ceur-ws.org/Vol-837/#paper12>,
-        <http://ceur-ws.org/Vol-837/#paper16>,
-        <http://ceur-ws.org/Vol-837/#paper18> ;
-    ns3:name "Vaclav Snasel" .
-
-<http://ceur-ws.org/Vol-837/#poster17> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-837/> ;
-    ns2:title "Inter-Project Dependenciesin Java Software Ecosystems" ;
-    ns6:endPage 134 ;
-    ns6:numPages 8 ;
-    ns6:section <http%3A//ceur-ws.org/Vol-837/%23Posters> ;
-    ns6:startPage 127 ;
-    ns4:author <http://ceur-ws.org/Vol-837/#AntoniniProchazka>,
-        <http://ceur-ws.org/Vol-837/#KareliRichta>,
-        <http://ceur-ws.org/Vol-837/#MirceaiLungu> .
-
-<http://ceur-ws.org/Vol-837/#poster8> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-837/> ;
-    ns2:title "On Distributed Querying of Linked Data" ;
-    ns6:endPage 142 ;
-    ns6:numPages 8 ;
-    ns6:section <http%3A//ceur-ws.org/Vol-837/%23Posters> ;
-    ns6:startPage 135 ;
-    ns4:author <http://ceur-ws.org/Vol-837/#IrenaiMlynkova>,
-        <http://ceur-ws.org/Vol-837/#JakubiStarka>,
-        <http://ceur-ws.org/Vol-837/#MartiniSvoboda> .
-
-<http://ceur-ws.org/Vol-837/#paper18> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-837/> ;
-    ns2:title "The Bayesian Spam Filter with NCD" ;
-    ns6:endPage 68 ;
-    ns6:numPages 9 ;
-    ns6:section <http%3A//ceur-ws.org/Vol-837/%23Fullpapers> ;
-    ns6:startPage 60 ;
-    ns4:author <http://ceur-ws.org/Vol-837/#EyasiEl-Qawasmeh>,
-        <http://ceur-ws.org/Vol-837/#JaniPlatos>,
-        <http://ceur-ws.org/Vol-837/#MichaliPrilepok>,
-        <http://ceur-ws.org/Vol-837/#VaclaviSnasel> .
-
-<http://ceur-ws.org/Vol-837/#paper19> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-837/> ;
-    ns2:title "eXolutio" ;
-    ns6:endPage 80 ;
-    ns6:numPages 12 ;
-    ns6:section <http%3A//ceur-ws.org/Vol-837/%23Fullpapers> ;
-    ns6:startPage 69 ;
-    ns4:author <http://ceur-ws.org/Vol-837/#IrenaiMlynkova>,
-        <http://ceur-ws.org/Vol-837/#JakubiKlimek>,
-        <http://ceur-ws.org/Vol-837/#JakubiMaly>,
-        <http://ceur-ws.org/Vol-837/#MartiniNecasky> .
-
-<http://ceur-ws.org/Vol-837/#paper2> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-837/> ;
-    ns2:title "Unsupervised Algorithm for Post-Processing of Roughly Segmented Categorical Time Series" ;
-    ns6:endPage 92 ;
-    ns6:numPages 12 ;
-    ns6:section <http%3A//ceur-ws.org/Vol-837/%23Fullpapers> ;
-    ns6:startPage 81 ;
-    ns4:author <http://ceur-ws.org/Vol-837/#JaniMartinovic>,
-        <http://ceur-ws.org/Vol-837/#JiriiDvorsky>,
-        <http://ceur-ws.org/Vol-837/#StepaniKuchar>,
-        <http://ceur-ws.org/Vol-837/#TomasiKocyan> .
-
-<http://ceur-ws.org/Vol-837/#poster13> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-837/> ;
-    ns2:title "On Indexing in Native XML Database Systems" ;
-    ns6:endPage 126 ;
-    ns6:numPages 12 ;
-    ns6:section <http%3A//ceur-ws.org/Vol-837/%23Posters> ;
-    ns6:startPage 115 ;
-    ns4:author <http://ceur-ws.org/Vol-837/#AlesiKantor>,
-        <http://ceur-ws.org/Vol-837/#OndrejiMacek>,
-        <http://ceur-ws.org/Vol-837/#PaveliLoupal>,
-        <http://ceur-ws.org/Vol-837/#PaveliStrnad> .
-
-<http://ceur-ws.org/Vol-837/#paper14> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-837/> ;
-    ns2:title "Developers' Cooperation based on Terms of Project Description" ;
-    ns6:endPage 48 ;
-    ns6:numPages 11 ;
-    ns6:section <http%3A//ceur-ws.org/Vol-837/%23Fullpapers> ;
-    ns6:startPage 38 ;
-    ns4:author <http://ceur-ws.org/Vol-837/#AlisaiBabskova>,
-        <http://ceur-ws.org/Vol-837/#JaniMartinovic>,
-        <http://ceur-ws.org/Vol-837/#KaterinaiSlaninova>,
-        <http://ceur-ws.org/Vol-837/#PavlaiDrazdilova>,
-        <http://ceur-ws.org/Vol-837/#StepaniMinks> .
-
-<http://ceur-ws.org/Vol-837/#paper16> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-837/> ;
-    ns2:title "Dynamic Time Warping in Analysis of Student Behavioral Patterns" ;
-    ns6:endPage 59 ;
-    ns6:numPages 11 ;
-    ns6:section <http%3A//ceur-ws.org/Vol-837/%23Fullpapers> ;
-    ns6:startPage 49 ;
-    ns4:author <http://ceur-ws.org/Vol-837/#JaniMartinovic>,
-        <http://ceur-ws.org/Vol-837/#KaterinaiSlaninova>,
-        <http://ceur-ws.org/Vol-837/#PavlaiDrazdilova>,
-        <http://ceur-ws.org/Vol-837/#TomasiKocyan>,
-        <http://ceur-ws.org/Vol-837/#VaclaviSnasel> .
-
-<http://ceur-ws.org/Vol-837/#paper12> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-837/> ;
-    ns2:title "Methodology for Estimating Working Time Effort of the Software Project" ;
-    ns6:endPage 37 ;
-    ns6:numPages 13 ;
-    ns6:section <http%3A//ceur-ws.org/Vol-837/%23Fullpapers> ;
-    ns6:startPage 25 ;
-    ns4:author <http://ceur-ws.org/Vol-837/#JakubiStolfa>,
-        <http://ceur-ws.org/Vol-837/#JaniKozusznik>,
-        <http://ceur-ws.org/Vol-837/#MartiniKopka>,
-        <http://ceur-ws.org/Vol-837/#OndrejiKobersky>,
-        <http://ceur-ws.org/Vol-837/#SvatoplukiStolfa>,
-        <http://ceur-ws.org/Vol-837/#VaclaviSnasel> .
-
-<http%3A//ceur-ws.org/Vol-837/%23Fullpapers> a ns5:SessionEvent ;
-    ns5:partOf <http://ceur-ws.org/Vol-837/> ;
-    ns2:title "Full papers" .
-
-<http://ceur-ws.org/Vol-837/> a ns5:Proceedings ;
-    ns5:hasPart <http://ceur-ws.org/Vol-837/#invited2>,
-        <http://ceur-ws.org/Vol-837/#paper10>,
-        <http://ceur-ws.org/Vol-837/#paper11>,
-        <http://ceur-ws.org/Vol-837/#paper12>,
-        <http://ceur-ws.org/Vol-837/#paper14>,
-        <http://ceur-ws.org/Vol-837/#paper16>,
-        <http://ceur-ws.org/Vol-837/#paper18>,
-        <http://ceur-ws.org/Vol-837/#paper19>,
-        <http://ceur-ws.org/Vol-837/#paper2>,
-        <http://ceur-ws.org/Vol-837/#paper3>,
-        <http://ceur-ws.org/Vol-837/#paper6>,
-        <http://ceur-ws.org/Vol-837/#poster13>,
-        <http://ceur-ws.org/Vol-837/#poster17>,
-        <http://ceur-ws.org/Vol-837/#poster8> ;
-    ns5:hasSession <http%3A//ceur-ws.org/Vol-837/%23Fullpapers>,
-        <http%3A//ceur-ws.org/Vol-837/%23Invitedpapers>,
-        <http%3A//ceur-ws.org/Vol-837/%23Posters> ;
-    ns7:issued "2012-05-14T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:presentedAt <http://ceur-ws.org/Vol-837/#event> ;
-    ns4:editor <http://ceur-ws.org/Vol-837/#JaroslaviPokorny>,
-        <http://ceur-ws.org/Vol-837/#KareliRichta>,
-        <http://ceur-ws.org/Vol-837/#VaclaviSnasel> .
 

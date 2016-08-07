@@ -1,0 +1,35 @@
+@prefix ns1: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns2: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns3: <http://purl.org/ontology/bibo/#> .
+@prefix ns4: <http://www.w3.org/2002/07/owl#> .
+@prefix ns5: <http://xmlns.com/foaf/0.1/> .
+@prefix ns6: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns7: <http://purl.org/dc/elements/1.1/> .
+@prefix ns8: <http://swrc.ontoware.org/ontology/#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://ceur-ws.org/Vol-1639/> a ns6:Proceedings ;
+    ns2:issued "2016-07-14T00:00:00+00:00"^^xsd:dateTime ;
+    ns3:presentedAt <http://ceur-ws.org/Vol-1639/#event> ;
+    ns8:editor <http://ceur-ws.org/Vol-1639/#ChristophiM.iWintersteiger>,
+        <http://ceur-ws.org/Vol-1639/#OmeriTripp> .
+
+<http://ceur-ws.org/Vol-1639/#ChristophiM.iWintersteiger> a ns5:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/ChristophiM.iWintersteiger> ;
+    ns5:name "Christoph M. Wintersteiger" .
+
+<http://ceur-ws.org/Vol-1639/#OmeriTripp> a ns5:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/OmeriTripp> ;
+    ns5:name "Omer Tripp" .
+
+<http://ceur-ws.org/Vol-1639/#event> a ns6:WorkshopEvent ;
+    ns6:hasLocation <http://dbpedia.org/resource/Germany> ;
+    ns6:hasPart <http://ceur-ws.org/Vol-1639/#part-ws> ;
+    ns6:isSubEventOf <http://ceur-ws.org/Vol-1639/#conf> ;
+    ns1:beginsAtDatetime "2016-07-17T00:00:00+00:00"^^xsd:dateTime ;
+    ns1:endsAtDatetime "2016-07-17T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:license "http://creativecommons.org/publicdomain/zero/1.0/" .
+

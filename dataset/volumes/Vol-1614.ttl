@@ -1,0 +1,34 @@
+@prefix ns1: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns2: <http://purl.org/ontology/bibo/#> .
+@prefix ns3: <http://purl.org/dc/elements/1.1/> .
+@prefix ns4: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns5: <http://www.w3.org/2002/07/owl#> .
+@prefix ns6: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns7: <http://xmlns.com/foaf/0.1/> .
+@prefix ns8: <http://swrc.ontoware.org/ontology/#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://ceur-ws.org/Vol-1614/> a ns1:Proceedings ;
+    ns6:issued "2016-06-26T00:00:00+00:00"^^xsd:dateTime ;
+    ns2:presentedAt <http://ceur-ws.org/Vol-1614/#event> ;
+    ns8:editor <http://ceur-ws.org/Vol-1614/#VerkhovnaiRadaiofiUkraine> .
+
+<http://ceur-ws.org/Vol-1614/#VerkhovnaiRadaiofiUkraine> a ns7:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/VerkhovnaiRadaiofiUkraine> ;
+    ns7:name "Verkhovna Rada of Ukraine" .
+
+<http://ceur-ws.org/Vol-1614/#event> a ns1:WorkshopEvent ;
+    ns1:hasLocation <http://dbpedia.org/resource/Ukraine> ;
+    ns1:hasPart <http://ceur-ws.org/Vol-1614/#part-ICT> ;
+    ns1:isSubEventOf <http://ceur-ws.org/Vol-1614/#conf> ;
+    ns4:beginsAtDatetime "2016-06-21T00:00:00+00:00"^^xsd:dateTime ;
+    ns4:endsAtDatetime "2016-06-24T00:00:00+00:00"^^xsd:dateTime ;
+    ns3:license "http://creativecommons.org/publicdomain/zero/1.0/" ;
+    rdfs:seeAlso <http://ceur-ws.org/Vol-1000/#event>,
+        <http://ceur-ws.org/Vol-1356/#event>,
+        <http://ceur-ws.org/Vol-716/#event>,
+        <http://ceur-ws.org/Vol-848/#event> .
+

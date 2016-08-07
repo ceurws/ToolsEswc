@@ -1,251 +1,36 @@
 @prefix ns1: <http://xmlns.com/foaf/0.1/> .
-@prefix ns2: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns2: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix ns3: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns4: <http://purl.org/ontology/bibo/#> .
-@prefix ns5: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns6: <http://www.w3.org/2002/07/owl#> .
-@prefix ns7: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns4: <http://www.w3.org/2002/07/owl#> .
+@prefix ns5: <http://purl.org/ontology/bibo/#> .
+@prefix ns6: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns8: <http://purl.org/dc/elements/1.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-822/#ArnimiBleier> a ns1:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/ArnimiBleier> ;
-    ns1:made <http://ceur-ws.org/Vol-822/#AB> ;
-    ns1:name "Arnim Bleier" .
+<http://ceur-ws.org/Vol-822/> a ns3:Proceedings ;
+    ns2:issued "2011-12-31T00:00:00+00:00"^^xsd:dateTime ;
+    ns5:presentedAt <http://ceur-ws.org/Vol-822/#event> ;
+    ns6:editor <http://ceur-ws.org/Vol-822/#DinoiKarabeg>,
+        <http://ceur-ws.org/Vol-822/#JackiPark> .
 
-<http://ceur-ws.org/Vol-822/#DejaniRakovic> a ns1:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/DejaniRakovic> ;
-    ns1:made <http://ceur-ws.org/Vol-822/#DR> ;
-    ns1:name "Dejan Rakovic" .
+<http://ceur-ws.org/Vol-822/#DinoiKarabeg> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/DinoiKarabeg> ;
+    ns1:name "Dino Karabeg" .
 
-<http://ceur-ws.org/Vol-822/#GeorgeiP%C3%B3r> a ns1:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/GeorgeiP%C3%B3r> ;
-    ns1:made <http://ceur-ws.org/Vol-822/#GP> ;
-    ns1:name "George Pór" .
-
-<http://ceur-ws.org/Vol-822/#JaakkoiSalonen> a ns1:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/JaakkoiSalonen> ;
-    ns1:made <http://ceur-ws.org/Vol-822/#JH> ;
-    ns1:name "Jaakko Salonen" .
-
-<http://ceur-ws.org/Vol-822/#JarnoiMarttila> a ns1:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/JarnoiMarttila> ;
-    ns1:made <http://ceur-ws.org/Vol-822/#JH> ;
-    ns1:name "Jarno Marttila" .
-
-<http://ceur-ws.org/Vol-822/#JukkaiHuhtamaki> a ns1:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/JukkaiHuhtamaki> ;
-    ns1:made <http://ceur-ws.org/Vol-822/#JH> ;
-    ns1:name "Jukka Huhtamaki" .
-
-<http://ceur-ws.org/Vol-822/#KarliF.iHebenstreitiJr.> a ns1:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/KarliF.iHebenstreitiJr.> ;
-    ns1:made <http://ceur-ws.org/Vol-822/#KH> ;
-    ns1:name "Karl F. Hebenstreit Jr." .
-
-<http://ceur-ws.org/Vol-822/#LutziMaicher> a ns1:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/LutziMaicher> ;
-    ns1:made <http://ceur-ws.org/Vol-822/#AB> ;
-    ns1:name "Lutz Maicher" .
-
-<http://ceur-ws.org/Vol-822/#MarcoiQuaggiotto> a ns1:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/MarcoiQuaggiotto> ;
-    ns1:made <http://ceur-ws.org/Vol-822/#MQ> ;
-    ns1:name "Marco Quaggiotto" .
-
-<http://ceur-ws.org/Vol-822/#MarioiPaolucci> a ns1:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/MarioiPaolucci> ;
-    ns1:made <http://ceur-ws.org/Vol-822/#MP> ;
-    ns1:name "Mario Paolucci" .
-
-<http://ceur-ws.org/Vol-822/#MeiiLiniFung> a ns1:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/MeiiLiniFung> ;
-    ns1:made <http://ceur-ws.org/Vol-822/#MF> ;
-    ns1:name "Mei Lin Fung" .
-
-<http://ceur-ws.org/Vol-822/#MickeiN.iKuwahara> a ns1:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/MickeiN.iKuwahara> ;
-    ns1:made <http://ceur-ws.org/Vol-822/#MK> ;
-    ns1:name "Micke N. Kuwahara" .
-
-<http://ceur-ws.org/Vol-822/#OssiiNykanen> a ns1:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/OssiiNykanen> ;
-    ns1:made <http://ceur-ws.org/Vol-822/#JH> ;
-    ns1:name "Ossi Nykanen" .
-
-<http://ceur-ws.org/Vol-822/#PatrickiJahnichen> a ns1:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/PatrickiJahnichen> ;
-    ns1:made <http://ceur-ws.org/Vol-822/#AB> ;
-    ns1:name "Patrick Jahnichen" .
-
-<http://ceur-ws.org/Vol-822/#RobertiS.iStephenson> a ns1:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/RobertiS.iStephenson> ;
-    ns1:made <http://ceur-ws.org/Vol-822/#MF> ;
-    ns1:name "Robert S. Stephenson" .
-
-<http://ceur-ws.org/Vol-822/#Shiqini%22Eddie%22iChoo> a ns1:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/Shiqini%22Eddie%22iChoo> ;
-    ns1:made <http://ceur-ws.org/Vol-822/#EC> ;
-    ns1:name "Shiqin \"Eddie\" Choo" .
-
-<http://ceur-ws.org/Vol-822/#StefanoiPicascia> a ns1:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/StefanoiPicascia> ;
-    ns1:made <http://ceur-ws.org/Vol-822/#MP> ;
-    ns1:name "Stefano Picascia" .
-
-<http://ceur-ws.org/Vol-822/#TanjaiAitamurto> a ns1:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/TanjaiAitamurto> ;
-    ns1:made <http://ceur-ws.org/Vol-822/#TA> ;
-    ns1:name "Tanja Aitamurto" .
-
-<http://ceur-ws.org/Vol-822/#UtaiSchulze> a ns1:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/UtaiSchulze> ;
-    ns1:made <http://ceur-ws.org/Vol-822/#AB> ;
-    ns1:name "Uta Schulze" .
-
-<http://ceur-ws.org/Vol-822/#WalteriQuattrociocchi> a ns1:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/WalteriQuattrociocchi> ;
-    ns1:made <http://ceur-ws.org/Vol-822/#MP> ;
-    ns1:name "Walter Quattrociocchi" .
-
-<http://ceur-ws.org/Vol-822/#YuzuruiTanaka> a ns1:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/YuzuruiTanaka> ;
-    ns1:made <http://ceur-ws.org/Vol-822/#MK> ;
-    ns1:name "Yuzuru Tanaka" .
+<http://ceur-ws.org/Vol-822/#JackiPark> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/JackiPark> ;
+    ns1:name "Jack Park" .
 
 <http://ceur-ws.org/Vol-822/#event> a ns3:WorkshopEvent ;
     ns3:hasLocation <http://dbpedia.org/resource/Duchy_of_Croatia> ;
-    ns3:hasPart <http://ceur-ws.org/Vol-822/#part-ws> ;
+    ns3:hasPart <http://ceur-ws.org/Vol-822/#part-CEUR-WS> ;
     ns3:isSubEventOf <http://ceur-ws.org/Vol-822/#conf> ;
-    ns5:beginsAtDatetime "2010-10-03T00:00:00+00:00"^^xsd:dateTime ;
-    ns5:endsAtDatetime "2010-10-06T00:00:00+00:00"^^xsd:dateTime ;
-    ns2:license <http://choosealicense.com/licenses/no-license/> ;
+    ns7:beginsAtDatetime "2010-10-03T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:endsAtDatetime "2010-10-06T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:license "http://choosealicense.com/licenses/no-license/" ;
     rdfs:seeAlso <http://ceur-ws.org/Vol-552/#event> .
-
-<http://ceur-ws.org/Vol-822/#DK> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-822/> ;
-    ns2:title "Steps Towards a Federated Course Model" ;
-    ns4:section <http%3A//ceur-ws.org/Vol-822/%23Preface> ;
-    ns7:author <http://ceur-ws.org/Vol-822/#DinoiKarabeg> .
-
-<http://ceur-ws.org/Vol-822/#DR> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-822/> ;
-    ns2:title "On Nature and Control of Creativity: Tesla as a Case Study" ;
-    ns4:section <http%3A//ceur-ws.org/Vol-822/%23Preface> ;
-    ns7:author <http://ceur-ws.org/Vol-822/#DejaniRakovic> .
-
-<http://ceur-ws.org/Vol-822/#DinoiKarabeg> a ns1:Person ;
-    ns7:affiliation "" ;
-    ns6:sameAs <http://ceur-ws.org/persons/DinoiKarabeg> ;
-    ns1:made <http://ceur-ws.org/Vol-822/#DK> ;
-    ns1:name "Dino Karabeg" .
-
-<http://ceur-ws.org/Vol-822/#EC> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-822/> ;
-    ns2:title "Semiotic Perspective on Sensemaking Software and Consequences for Journalism" ;
-    ns4:section <http%3A//ceur-ws.org/Vol-822/%23Preface> ;
-    ns7:author <http://ceur-ws.org/Vol-822/#Shiqini%22Eddie%22iChoo> .
-
-<http://ceur-ws.org/Vol-822/#GP> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-822/> ;
-    ns2:title "Towards a Federated Framework for Self-evolving Educational Experience Design on Massive Scale (SEED-M)" ;
-    ns4:section <http%3A//ceur-ws.org/Vol-822/%23Preface> ;
-    ns7:author <http://ceur-ws.org/Vol-822/#GeorgeiP%C3%B3r> .
-
-<http://ceur-ws.org/Vol-822/#JP> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-822/> ;
-    ns2:title "Boundary Infrastructures for Conversational Knowledge Federation" ;
-    ns4:section <http%3A//ceur-ws.org/Vol-822/%23Preface> ;
-    ns7:author <http://ceur-ws.org/Vol-822/#JackiPark> .
-
-<http://ceur-ws.org/Vol-822/#JackiPark> a ns1:Person ;
-    ns7:affiliation "" ;
-    ns6:sameAs <http://ceur-ws.org/persons/JackiPark> ;
-    ns1:made <http://ceur-ws.org/Vol-822/#JP> ;
-    ns1:name "Jack Park" .
-
-<http://ceur-ws.org/Vol-822/#KH> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-822/> ;
-    ns2:title "Combinatorial Inquiries into Knowledge Federation" ;
-    ns4:section <http%3A//ceur-ws.org/Vol-822/%23Preface> ;
-    ns7:author <http://ceur-ws.org/Vol-822/#KarliF.iHebenstreitiJr.> .
-
-<http://ceur-ws.org/Vol-822/#MQ> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-822/> ;
-    ns2:title "Images of knowledge. Interfaces for knowledge access in an epistemic transition" ;
-    ns4:section <http%3A//ceur-ws.org/Vol-822/%23Preface> ;
-    ns7:author <http://ceur-ws.org/Vol-822/#MarcoiQuaggiotto> .
-
-<http://ceur-ws.org/Vol-822/#TA> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-822/> ;
-    ns2:title "New ecosystem in journalism: Decentralized newsrooms empowered by self-organized crowds" ;
-    ns4:section <http%3A//ceur-ws.org/Vol-822/%23Preface> ;
-    ns7:author <http://ceur-ws.org/Vol-822/#TanjaiAitamurto> .
-
-<http://ceur-ws.org/Vol-822/#MF> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-822/> ;
-    ns2:title "An Ark for the Exaflood Rushing upon Us" ;
-    ns4:section <http%3A//ceur-ws.org/Vol-822/%23Preface> ;
-    ns7:author <http://ceur-ws.org/Vol-822/#MeiiLiniFung>,
-        <http://ceur-ws.org/Vol-822/#RobertiS.iStephenson> .
-
-<http://ceur-ws.org/Vol-822/#MK> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-822/> ;
-    ns2:title "Webbles: Programmable and Customizable Meme Media Objects in a Knowledge Federation Framework Environment on the Web" ;
-    ns4:section <http%3A//ceur-ws.org/Vol-822/%23Preface> ;
-    ns7:author <http://ceur-ws.org/Vol-822/#MickeiN.iKuwahara>,
-        <http://ceur-ws.org/Vol-822/#YuzuruiTanaka> .
-
-<http://ceur-ws.org/Vol-822/#MP> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-822/> ;
-    ns2:title "Causality in collective filtering" ;
-    ns4:section <http%3A//ceur-ws.org/Vol-822/%23Preface> ;
-    ns7:author <http://ceur-ws.org/Vol-822/#MarioiPaolucci>,
-        <http://ceur-ws.org/Vol-822/#StefanoiPicascia>,
-        <http://ceur-ws.org/Vol-822/#WalteriQuattrociocchi> .
-
-<http://ceur-ws.org/Vol-822/#AB> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-822/> ;
-    ns2:title "The Praxis of Social Knowledge Federation" ;
-    ns4:section <http%3A//ceur-ws.org/Vol-822/%23Preface> ;
-    ns7:author <http://ceur-ws.org/Vol-822/#ArnimiBleier>,
-        <http://ceur-ws.org/Vol-822/#LutziMaicher>,
-        <http://ceur-ws.org/Vol-822/#PatrickiJahnichen>,
-        <http://ceur-ws.org/Vol-822/#UtaiSchulze> .
-
-<http://ceur-ws.org/Vol-822/#JH> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-822/> ;
-    ns2:title "Context-Driven Social Network Visualisation: Case Wiki Co-Creation" ;
-    ns4:section <http%3A//ceur-ws.org/Vol-822/%23Preface> ;
-    ns7:author <http://ceur-ws.org/Vol-822/#JaakkoiSalonen>,
-        <http://ceur-ws.org/Vol-822/#JarnoiMarttila>,
-        <http://ceur-ws.org/Vol-822/#JukkaiHuhtamaki>,
-        <http://ceur-ws.org/Vol-822/#OssiiNykanen> .
-
-<http%3A//ceur-ws.org/Vol-822/%23Preface> a ns3:SessionEvent ;
-    ns3:partOf <http://ceur-ws.org/Vol-822/> ;
-    ns2:title "Preface" .
-
-<http://ceur-ws.org/Vol-822/> a ns3:Proceedings ;
-    ns3:hasPart <http://ceur-ws.org/Vol-822/#AB>,
-        <http://ceur-ws.org/Vol-822/#DK>,
-        <http://ceur-ws.org/Vol-822/#DR>,
-        <http://ceur-ws.org/Vol-822/#EC>,
-        <http://ceur-ws.org/Vol-822/#GP>,
-        <http://ceur-ws.org/Vol-822/#JH>,
-        <http://ceur-ws.org/Vol-822/#JP>,
-        <http://ceur-ws.org/Vol-822/#KH>,
-        <http://ceur-ws.org/Vol-822/#MF>,
-        <http://ceur-ws.org/Vol-822/#MK>,
-        <http://ceur-ws.org/Vol-822/#MP>,
-        <http://ceur-ws.org/Vol-822/#MQ>,
-        <http://ceur-ws.org/Vol-822/#TA> ;
-    ns3:hasSession <http%3A//ceur-ws.org/Vol-822/%23Preface> ;
-    ns8:issued "2011-12-31T00:00:00+00:00"^^xsd:dateTime ;
-    ns4:presentedAt <http://ceur-ws.org/Vol-822/#event> ;
-    ns7:editor <http://ceur-ws.org/Vol-822/#DinoiKarabeg>,
-        <http://ceur-ws.org/Vol-822/#JackiPark> .
 

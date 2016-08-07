@@ -1,194 +1,40 @@
 @prefix ns1: <http://xmlns.com/foaf/0.1/> .
-@prefix ns2: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns3: <http://purl.org/ontology/bibo/#> .
-@prefix ns4: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns2: <http://purl.org/ontology/bibo/#> .
+@prefix ns3: <http://purl.org/dc/elements/1.1/> .
+@prefix ns4: <http://www.w3.org/2002/07/owl#> .
 @prefix ns5: <http://data.semanticweb.org/ns/swc/ontology/#> .
 @prefix ns6: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns7: <http://www.w3.org/2002/07/owl#> .
+@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
 @prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1028/#AlexanderiSmirnov> a ns1:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/AlexanderiSmirnov> ;
-    ns1:made <http://ceur-ws.org/Vol-1028/#paper-06> ;
-    ns1:name "Alexander Smirnov" .
-
-<http://ceur-ws.org/Vol-1028/#AndrejsiGaidukovs> a ns1:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/AndrejsiGaidukovs> ;
-    ns1:made <http://ceur-ws.org/Vol-1028/#paper-04> ;
-    ns1:name "Andrejs Gaidukovs" .
-
-<http://ceur-ws.org/Vol-1028/#DirkiStamer> a ns1:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/DirkiStamer> ;
-    ns1:made <http://ceur-ws.org/Vol-1028/#paper-02> ;
-    ns1:name "Dirk Stamer" .
-
-<http://ceur-ws.org/Vol-1028/#JanisiGrabis> a ns1:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/JanisiGrabis> ;
-    ns1:made <http://ceur-ws.org/Vol-1028/#paper-01> ;
-    ns1:name "Janis Grabis" .
-
-<http://ceur-ws.org/Vol-1028/#LauraiHeinermann> a ns1:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/LauraiHeinermann> ;
-    ns1:made <http://ceur-ws.org/Vol-1028/#paper-02> ;
-    ns1:name "Laura Heinermann" .
-
-<http://ceur-ws.org/Vol-1028/#MariteiKirikova> a ns1:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/MariteiKirikova> ;
-    ns1:made <http://ceur-ws.org/Vol-1028/#paper-04> ;
-    ns1:name "Marite Kirikova" .
-
-<http://ceur-ws.org/Vol-1028/#RaikiKuhlisch> a ns1:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/RaikiKuhlisch> ;
-    ns1:made <http://ceur-ws.org/Vol-1028/#paper-05> ;
-    ns1:name "Raik Kuhlisch" .
-
-<http://ceur-ws.org/Vol-1028/#SveniMeister> a ns1:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/SveniMeister> ;
-    ns1:made <http://ceur-ws.org/Vol-1028/#paper-03> ;
-    ns1:name "Sven Meister" .
-
-<http://ceur-ws.org/Vol-1028/#SveniSchafer> a ns1:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/SveniSchafer> ;
-    ns1:made <http://ceur-ws.org/Vol-1028/#paper-03> ;
-    ns1:name "Sven Schafer" .
-
-<http://ceur-ws.org/Vol-1028/#TatianaiLevashova> a ns1:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/TatianaiLevashova> ;
-    ns1:made <http://ceur-ws.org/Vol-1028/#paper-06> ;
-    ns1:name "Tatiana Levashova" .
-
-<http://ceur-ws.org/Vol-1028/#UlfiSeigerroth> a ns1:Person ;
-    ns6:affiliation "Jönköping University, SE" ;
-    ns7:sameAs <http://ceur-ws.org/persons/UlfiSeigerroth> ;
-    ns1:name "Ulf Seigerroth" .
-
-<http://ceur-ws.org/Vol-1028/#ValentiniStahlmann> a ns1:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/ValentiniStahlmann> ;
-    ns1:made <http://ceur-ws.org/Vol-1028/#paper-03> ;
-    ns1:name "Valentin Stahlmann" .
-
-<http://ceur-ws.org/Vol-1028/#VladimiriTarasov> a ns1:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/VladimiriTarasov> ;
-    ns1:made <http://ceur-ws.org/Vol-1028/#paper-07> ;
-    ns1:name "Vladimir Tarasov" .
-
-<http://ceur-ws.org/Vol-1028/#event> a ns5:WorkshopEvent ;
-    ns5:hasLocation <http://dbpedia.org/resource/Commemorative_coins_of_Poland> ;
-    ns5:hasPart <http://ceur-ws.org/Vol-1028/#part-ILOG> ;
-    ns5:isSubEventOf <http://ceur-ws.org/Vol-1028/#conf> ;
-    ns4:beginsAtDatetime "2013-09-23T00:00:00+00:00"^^xsd:dateTime ;
-    ns4:endsAtDatetime "2013-09-23T00:00:00+00:00"^^xsd:dateTime ;
-    ns2:license <http://choosealicense.com/licenses/no-license/> .
-
-<http://ceur-ws.org/Vol-1028/#BirgeriLantow> a ns1:Person ;
-    ns6:affiliation "University of Rostock, DE" ;
-    ns7:sameAs <http://ceur-ws.org/persons/BirgeriLantow> ;
-    ns1:made <http://ceur-ws.org/Vol-1028/#paper-07> ;
-    ns1:name "Birger Lantow" .
-
-<http://ceur-ws.org/Vol-1028/#paper-01> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1028/> ;
-    ns2:title "Concurrent Optimization of Physical and Information Flows in Supply Chains" ;
-    ns3:endPage 10 ;
-    ns3:numPages 10 ;
-    ns3:section <http%3A//ceur-ws.org/Vol-1028/%23InformationLogisticsConcepts%2CTechnologiesandApplications> ;
-    ns3:startPage 1 ;
-    ns6:author <http://ceur-ws.org/Vol-1028/#JanisiGrabis> .
-
-<http://ceur-ws.org/Vol-1028/#paper-05> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1028/> ;
-    ns2:title "A Description Model for Policy Conflicts for Managing Access to Health Information" ;
-    ns3:endPage 55 ;
-    ns3:numPages 12 ;
-    ns3:section <http%3A//ceur-ws.org/Vol-1028/%23OntologiesandInformationSystems> ;
-    ns3:startPage 44 ;
-    ns6:author <http://ceur-ws.org/Vol-1028/#RaikiKuhlisch> .
-
-<http://ceur-ws.org/Vol-1028/#KurtiSandkuhl> a ns1:Person ;
-    ns6:affiliation "University of Rostock, DE" ;
-    ns7:sameAs <http://ceur-ws.org/persons/KurtiSandkuhl> ;
-    ns1:made <http://ceur-ws.org/Vol-1028/#paper-02>,
-        <http://ceur-ws.org/Vol-1028/#paper-07> ;
-    ns1:name "Kurt Sandkuhl" .
-
-<http://ceur-ws.org/Vol-1028/#paper-04> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1028/> ;
-    ns2:title "The Time Dimension in Information Logistics" ;
-    ns3:endPage 43 ;
-    ns3:numPages 9 ;
-    ns3:section <http%3A//ceur-ws.org/Vol-1028/%23InformationLogisticsConcepts%2CTechnologiesandApplications> ;
-    ns3:startPage 35 ;
-    ns6:author <http://ceur-ws.org/Vol-1028/#AndrejsiGaidukovs>,
-        <http://ceur-ws.org/Vol-1028/#MariteiKirikova> .
-
-<http://ceur-ws.org/Vol-1028/#paper-06> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1028/> ;
-    ns2:title "Towards Methodology for Design of Context-Aware Decision Support Systems based on Knowledge Fusion Patterns" ;
-    ns3:endPage 67 ;
-    ns3:numPages 12 ;
-    ns3:section <http%3A//ceur-ws.org/Vol-1028/%23OntologiesandInformationSystems> ;
-    ns3:startPage 56 ;
-    ns6:author <http://ceur-ws.org/Vol-1028/#AlexanderiSmirnov>,
-        <http://ceur-ws.org/Vol-1028/#TatianaiLevashova> .
-
-<http%3A//ceur-ws.org/Vol-1028/%23OntologiesandInformationSystems> a ns5:SessionEvent ;
-    ns5:partOf <http://ceur-ws.org/Vol-1028/> ;
-    ns2:title "Ontologies and Information Systems" .
-
-<http://ceur-ws.org/Vol-1028/#paper-02> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1028/> ;
-    ns2:title "Usability Evaluation of Method Handbook" ;
-    ns3:endPage 22 ;
-    ns3:numPages 12 ;
-    ns3:section <http%3A//ceur-ws.org/Vol-1028/%23InformationLogisticsConcepts%2CTechnologiesandApplications> ;
-    ns3:startPage 11 ;
-    ns6:author <http://ceur-ws.org/Vol-1028/#DirkiStamer>,
-        <http://ceur-ws.org/Vol-1028/#KurtiSandkuhl>,
-        <http://ceur-ws.org/Vol-1028/#LauraiHeinermann> .
-
-<http://ceur-ws.org/Vol-1028/#paper-03> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1028/> ;
-    ns2:title "TiEE – The Telemedical ILOG Event Engine: Optimizing Information Supply in Telemedicine" ;
-    ns3:endPage 34 ;
-    ns3:numPages 12 ;
-    ns3:section <http%3A//ceur-ws.org/Vol-1028/%23InformationLogisticsConcepts%2CTechnologiesandApplications> ;
-    ns3:startPage 23 ;
-    ns6:author <http://ceur-ws.org/Vol-1028/#SveniMeister>,
-        <http://ceur-ws.org/Vol-1028/#SveniSchafer>,
-        <http://ceur-ws.org/Vol-1028/#ValentiniStahlmann> .
-
-<http://ceur-ws.org/Vol-1028/#paper-07> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1028/> ;
-    ns2:title "Selecting Content Ontology Design Patterns for Ontology Quality Improvement" ;
-    ns3:endPage 79 ;
-    ns3:numPages 12 ;
-    ns3:section <http%3A//ceur-ws.org/Vol-1028/%23OntologiesandInformationSystems> ;
-    ns3:startPage 68 ;
-    ns6:author <http://ceur-ws.org/Vol-1028/#BirgeriLantow>,
-        <http://ceur-ws.org/Vol-1028/#KurtiSandkuhl>,
-        <http://ceur-ws.org/Vol-1028/#VladimiriTarasov> .
-
-<http%3A//ceur-ws.org/Vol-1028/%23InformationLogisticsConcepts%2CTechnologiesandApplications> a ns5:SessionEvent ;
-    ns5:partOf <http://ceur-ws.org/Vol-1028/> ;
-    ns2:title "Information Logistics Concepts, Technologies and Applications" .
-
 <http://ceur-ws.org/Vol-1028/> a ns5:Proceedings ;
-    ns5:hasPart <http://ceur-ws.org/Vol-1028/#paper-01>,
-        <http://ceur-ws.org/Vol-1028/#paper-02>,
-        <http://ceur-ws.org/Vol-1028/#paper-03>,
-        <http://ceur-ws.org/Vol-1028/#paper-04>,
-        <http://ceur-ws.org/Vol-1028/#paper-05>,
-        <http://ceur-ws.org/Vol-1028/#paper-06>,
-        <http://ceur-ws.org/Vol-1028/#paper-07> ;
-    ns5:hasSession <http%3A//ceur-ws.org/Vol-1028/%23InformationLogisticsConcepts%2CTechnologiesandApplications>,
-        <http%3A//ceur-ws.org/Vol-1028/%23OntologiesandInformationSystems> ;
     ns8:issued "2013-09-05T00:00:00+00:00"^^xsd:dateTime ;
-    ns3:presentedAt <http://ceur-ws.org/Vol-1028/#event> ;
+    ns2:presentedAt <http://ceur-ws.org/Vol-1028/#event> ;
     ns6:editor <http://ceur-ws.org/Vol-1028/#BirgeriLantow>,
         <http://ceur-ws.org/Vol-1028/#KurtiSandkuhl>,
         <http://ceur-ws.org/Vol-1028/#UlfiSeigerroth> .
+
+<http://ceur-ws.org/Vol-1028/#BirgeriLantow> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/BirgeriLantow> ;
+    ns1:name "Birger Lantow" .
+
+<http://ceur-ws.org/Vol-1028/#KurtiSandkuhl> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/KurtiSandkuhl> ;
+    ns1:name "Kurt Sandkuhl" .
+
+<http://ceur-ws.org/Vol-1028/#UlfiSeigerroth> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/UlfiSeigerroth> ;
+    ns1:name "Ulf Seigerroth" .
+
+<http://ceur-ws.org/Vol-1028/#event> a ns5:WorkshopEvent ;
+    ns5:hasLocation <http://dbpedia.org/resource/Commemorative_coins_of_Poland> ;
+    ns5:hasPart <http://ceur-ws.org/Vol-1028/#part-CEUR-WS> ;
+    ns5:isSubEventOf <http://ceur-ws.org/Vol-1028/#conf> ;
+    ns7:beginsAtDatetime "2013-09-23T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:endsAtDatetime "2013-09-23T00:00:00+00:00"^^xsd:dateTime ;
+    ns3:license "http://choosealicense.com/licenses/no-license/" .
 

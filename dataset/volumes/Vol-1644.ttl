@@ -1,0 +1,42 @@
+@prefix ns1: <http://www.w3.org/2002/07/owl#> .
+@prefix ns2: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns3: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns4: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns5: <http://purl.org/dc/elements/1.1/> .
+@prefix ns6: <http://xmlns.com/foaf/0.1/> .
+@prefix ns7: <http://purl.org/ontology/bibo/#> .
+@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://ceur-ws.org/Vol-1644/> a ns3:Proceedings ;
+    ns8:issued "2016-07-17T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:presentedAt <http://ceur-ws.org/Vol-1644/#event> ;
+    ns2:editor <http://ceur-ws.org/Vol-1644/#AltigraniSoaresidaiSilva>,
+        <http://ceur-ws.org/Vol-1644/#ReinhardiPichler> .
+
+<http://ceur-ws.org/Vol-1644/#AltigraniSoaresidaiSilva> a ns6:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/AltigraniSoaresidaiSilva> ;
+    ns6:name "Altigran Soares da Silva" .
+
+<http://ceur-ws.org/Vol-1644/#ReinhardiPichler> a ns6:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/ReinhardiPichler> ;
+    ns6:name "Reinhard Pichler" .
+
+<http://ceur-ws.org/Vol-1644/#event> a ns3:WorkshopEvent ;
+    ns3:hasLocation <http://dbpedia.org/resource/Panama> ;
+    ns3:hasPart <http://ceur-ws.org/Vol-1644/#part-ws> ;
+    ns3:isSubEventOf <http://ceur-ws.org/Vol-1644/#conf> ;
+    ns4:beginsAtDatetime "2016-05-08T00:00:00+00:00"^^xsd:dateTime ;
+    ns4:endsAtDatetime "2016-05-10T00:00:00+00:00"^^xsd:dateTime ;
+    ns5:license "http://creativecommons.org/publicdomain/zero/1.0/" ;
+    rdfs:seeAlso <http://ceur-ws.org/Vol-1087/#event>,
+        <http://ceur-ws.org/Vol-1189/#event>,
+        <http://ceur-ws.org/Vol-1378/#event>,
+        <http://ceur-ws.org/Vol-450/#event>,
+        <http://ceur-ws.org/Vol-619/#event>,
+        <http://ceur-ws.org/Vol-749/#event>,
+        <http://ceur-ws.org/Vol-866/#event> .
+

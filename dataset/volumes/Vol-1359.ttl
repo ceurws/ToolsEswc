@@ -1,105 +1,34 @@
-@prefix ns1: <http://www.w3.org/2002/07/owl#> .
+@prefix ns1: <http://purl.org/dc/elements/1.1/> .
 @prefix ns2: <http://xmlns.com/foaf/0.1/> .
-@prefix ns3: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns3: <http://www.w3.org/2002/07/owl#> .
 @prefix ns4: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns5: <http://purl.org/ontology/bibo/#> .
+@prefix ns5: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix ns6: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns7: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns7: <http://purl.org/ontology/bibo/#> .
+@prefix ns8: <http://swrc.ontoware.org/ontology/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1359/#AndreasiHarth> a ns2:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/AndreasiHarth> ;
-    ns2:made <http://ceur-ws.org/Vol-1359/#paper2> ;
-    ns2:name "Andreas Harth" .
+<http://ceur-ws.org/Vol-1359/> a ns4:Proceedings ;
+    ns5:issued "2015-05-13T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:presentedAt <http://ceur-ws.org/Vol-1359/#event> ;
+    ns8:editor <http://ceur-ws.org/Vol-1359/#MariaiMaleshkova>,
+        <http://ceur-ws.org/Vol-1359/#RubeniVerborgh>,
+        <http://ceur-ws.org/Vol-1359/#SteffeniStadtm%C3%BCller> .
 
-<http://ceur-ws.org/Vol-1359/#BenjaminiAziz> a ns2:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/BenjaminiAziz> ;
-    ns2:made <http://ceur-ws.org/Vol-1359/#paper1> ;
-    ns2:name "Benjamin Aziz" .
-
-<http://ceur-ws.org/Vol-1359/#CarlosiPedrinaci> a ns2:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/CarlosiPedrinaci> ;
-    ns2:made <http://ceur-ws.org/Vol-1359/#paper4> ;
-    ns2:name "Carlos Pedrinaci" .
-
-<http://ceur-ws.org/Vol-1359/#EnricoiDaga> a ns2:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/EnricoiDaga> ;
-    ns2:made <http://ceur-ws.org/Vol-1359/#paper4> ;
-    ns2:name "Enrico Daga" .
-
-<http://ceur-ws.org/Vol-1359/#FelixiLeifiKeppmann> a ns2:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/FelixiLeifiKeppmann> ;
-    ns2:made <http://ceur-ws.org/Vol-1359/#paper2> ;
-    ns2:name "Felix Leif Keppmann" .
-
-<http://ceur-ws.org/Vol-1359/#IkeriAzpeitia> a ns2:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/IkeriAzpeitia> ;
-    ns2:made <http://ceur-ws.org/Vol-1359/#paper3> ;
-    ns2:name "Iker Azpeitia" .
-
-<http://ceur-ws.org/Vol-1359/#JacekiKopeck%C3%BD> a ns2:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/JacekiKopeck%C3%BD> ;
-    ns2:made <http://ceur-ws.org/Vol-1359/#paper1> ;
-    ns2:name "Jacek Kopecký" .
-
-<http://ceur-ws.org/Vol-1359/#JoniIturrioz> a ns2:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/JoniIturrioz> ;
-    ns2:made <http://ceur-ws.org/Vol-1359/#paper3> ;
-    ns2:name "Jon Iturrioz" .
-
-<http://ceur-ws.org/Vol-1359/#KenoiM%C3%A4rz> a ns2:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/KenoiM%C3%A4rz> ;
-    ns2:made <http://ceur-ws.org/Vol-1359/#paper6> ;
-    ns2:name "Keno März" .
-
-<http://ceur-ws.org/Vol-1359/#LenaiMaier-Hein> a ns2:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/LenaiMaier-Hein> ;
-    ns2:made <http://ceur-ws.org/Vol-1359/#paper6> ;
-    ns2:name "Lena Maier-Hein" .
-
-<http://ceur-ws.org/Vol-1359/#LucaiPanziera> a ns2:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/LucaiPanziera> ;
-    ns2:made <http://ceur-ws.org/Vol-1359/#paper4> ;
-    ns2:name "Luca Panziera" .
-
-<http://ceur-ws.org/Vol-1359/#NandanaiMihindukulasooriya> a ns2:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/NandanaiMihindukulasooriya> ;
-    ns2:made <http://ceur-ws.org/Vol-1359/#paper5> ;
-    ns2:name "Nandana Mihindukulasooriya" .
-
-<http://ceur-ws.org/Vol-1359/#OscariD%C3%ADaz> a ns2:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/OscariD%C3%ADaz> ;
-    ns2:made <http://ceur-ws.org/Vol-1359/#paper3> ;
-    ns2:name "Oscar Díaz" .
-
-<http://ceur-ws.org/Vol-1359/#PauliFremantle> a ns2:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/PauliFremantle> ;
-    ns2:made <http://ceur-ws.org/Vol-1359/#paper1> ;
-    ns2:name "Paul Fremantle" .
-
-<http://ceur-ws.org/Vol-1359/#Ra%C3%BAliGarc%C3%ADa-Castro> a ns2:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/Ra%C3%BAliGarc%C3%ADa-Castro> ;
-    ns2:made <http://ceur-ws.org/Vol-1359/#paper5> ;
-    ns2:name "Raúl García-Castro" .
+<http://ceur-ws.org/Vol-1359/#MariaiMaleshkova> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/MariaiMaleshkova> ;
+    ns2:name "Maria Maleshkova" .
 
 <http://ceur-ws.org/Vol-1359/#RubeniVerborgh> a ns2:Person ;
-    ns3:affiliation "" ;
-    ns1:sameAs <http://ceur-ws.org/persons/RubeniVerborgh> ;
+    ns3:sameAs <http://ceur-ws.org/persons/RubeniVerborgh> ;
     ns2:name "Ruben Verborgh" .
 
 <http://ceur-ws.org/Vol-1359/#SteffeniStadtm%C3%BCller> a ns2:Person ;
-    ns3:affiliation "" ;
-    ns1:sameAs <http://ceur-ws.org/persons/SteffeniStadtm%C3%BCller> ;
+    ns3:sameAs <http://ceur-ws.org/persons/SteffeniStadtm%C3%BCller> ;
     ns2:name "Steffen Stadtmüller" .
-
-<http://ceur-ws.org/Vol-1359/#TobiasiWeller> a ns2:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/TobiasiWeller> ;
-    ns2:made <http://ceur-ws.org/Vol-1359/#paper6> ;
-    ns2:name "Tobias Weller" .
 
 <http://ceur-ws.org/Vol-1359/#event> a ns4:WorkshopEvent ;
     ns4:hasLocation <http://dbpedia.org/resource/Euro_gold_and_silver_commemorative_coins> ;
@@ -107,86 +36,7 @@
     ns4:isSubEventOf <http://ceur-ws.org/Vol-1359/#conf> ;
     ns6:beginsAtDatetime "2015-06-01T00:00:00+00:00"^^xsd:dateTime ;
     ns6:endsAtDatetime "2015-06-01T00:00:00+00:00"^^xsd:dateTime ;
+    ns1:license "http://creativecommons.org/publicdomain/zero/1.0/" ;
     rdfs:seeAlso <http://ceur-ws.org/Vol-1056/#event>,
         <http://ceur-ws.org/Vol-1165/#event> .
-
-<http://ceur-ws.org/Vol-1359/#MariaiMaleshkova> a ns2:Person ;
-    ns3:affiliation "" ;
-    ns1:sameAs <http://ceur-ws.org/persons/MariaiMaleshkova> ;
-    ns2:made <http://ceur-ws.org/Vol-1359/#paper2>,
-        <http://ceur-ws.org/Vol-1359/#paper6> ;
-    ns2:name "Maria Maleshkova" .
-
-<http://ceur-ws.org/Vol-1359/#paper5> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1359/> ;
-    ns7:title "Describing LDP Applications with the Hydra Core Vocabulary" ;
-    ns5:endPage 36 ;
-    ns5:numPages 4 ;
-    ns5:startPage 33 ;
-    ns3:author <http://ceur-ws.org/Vol-1359/#NandanaiMihindukulasooriya>,
-        <http://ceur-ws.org/Vol-1359/#Ra%C3%BAliGarc%C3%ADa-Castro> .
-
-<http://ceur-ws.org/Vol-1359/#paper1> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1359/> ;
-    ns7:title "Web API Management Meets the Internet of Things" ;
-    ns5:endPage 9 ;
-    ns5:numPages 9 ;
-    ns5:startPage 1 ;
-    ns3:author <http://ceur-ws.org/Vol-1359/#BenjaminiAziz>,
-        <http://ceur-ws.org/Vol-1359/#JacekiKopeck%C3%BD>,
-        <http://ceur-ws.org/Vol-1359/#PauliFremantle> .
-
-<http://ceur-ws.org/Vol-1359/#paper2> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1359/> ;
-    ns7:title "Building REST APIs for the Robot Operating System - Mapping Concepts and Interaction" ;
-    ns5:endPage 19 ;
-    ns5:numPages 10 ;
-    ns5:startPage 10 ;
-    ns3:author <http://ceur-ws.org/Vol-1359/#AndreasiHarth>,
-        <http://ceur-ws.org/Vol-1359/#FelixiLeifiKeppmann>,
-        <http://ceur-ws.org/Vol-1359/#MariaiMaleshkova> .
-
-<http://ceur-ws.org/Vol-1359/#paper3> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1359/> ;
-    ns7:title "Linked Data Wrappers atop Yahoo's YQL" ;
-    ns5:endPage 21 ;
-    ns5:numPages 2 ;
-    ns5:startPage 20 ;
-    ns3:author <http://ceur-ws.org/Vol-1359/#IkeriAzpeitia>,
-        <http://ceur-ws.org/Vol-1359/#JoniIturrioz>,
-        <http://ceur-ws.org/Vol-1359/#OscariD%C3%ADaz> .
-
-<http://ceur-ws.org/Vol-1359/#paper4> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1359/> ;
-    ns7:title "A BASILar Approach for Building Web APIs on Top of SPARQL Endpoints" ;
-    ns5:endPage 32 ;
-    ns5:numPages 11 ;
-    ns5:startPage 22 ;
-    ns3:author <http://ceur-ws.org/Vol-1359/#CarlosiPedrinaci>,
-        <http://ceur-ws.org/Vol-1359/#EnricoiDaga>,
-        <http://ceur-ws.org/Vol-1359/#LucaiPanziera> .
-
-<http://ceur-ws.org/Vol-1359/#paper6> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1359/> ;
-    ns7:title "A RESTful Approach for Developing Medical Decision Support Systems" ;
-    ns5:endPage 45 ;
-    ns5:numPages 9 ;
-    ns5:startPage 37 ;
-    ns3:author <http://ceur-ws.org/Vol-1359/#KenoiM%C3%A4rz>,
-        <http://ceur-ws.org/Vol-1359/#LenaiMaier-Hein>,
-        <http://ceur-ws.org/Vol-1359/#MariaiMaleshkova>,
-        <http://ceur-ws.org/Vol-1359/#TobiasiWeller> .
-
-<http://ceur-ws.org/Vol-1359/> a ns4:Proceedings ;
-    ns4:hasPart <http://ceur-ws.org/Vol-1359/#paper1>,
-        <http://ceur-ws.org/Vol-1359/#paper2>,
-        <http://ceur-ws.org/Vol-1359/#paper3>,
-        <http://ceur-ws.org/Vol-1359/#paper4>,
-        <http://ceur-ws.org/Vol-1359/#paper5>,
-        <http://ceur-ws.org/Vol-1359/#paper6> ;
-    ns8:issued "2015-05-13T00:00:00+00:00"^^xsd:dateTime ;
-    ns5:presentedAt <http://ceur-ws.org/Vol-1359/#event> ;
-    ns3:editor <http://ceur-ws.org/Vol-1359/#MariaiMaleshkova>,
-        <http://ceur-ws.org/Vol-1359/#RubeniVerborgh>,
-        <http://ceur-ws.org/Vol-1359/#SteffeniStadtm%C3%BCller> .
 

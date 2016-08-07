@@ -1,186 +1,37 @@
-@prefix ns1: <http://purl.org/ontology/bibo/#> .
-@prefix ns2: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns3: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns4: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns5: <http://xmlns.com/foaf/0.1/> .
-@prefix ns6: <http://www.w3.org/2002/07/owl#> .
-@prefix ns7: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns1: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns2: <http://xmlns.com/foaf/0.1/> .
+@prefix ns3: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns4: <http://www.w3.org/2002/07/owl#> .
+@prefix ns5: <http://purl.org/ontology/bibo/#> .
+@prefix ns6: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns7: <http://purl.org/dc/elements/1.1/> .
 @prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1262/#AnastasiaiDimou> a ns5:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/AnastasiaiDimou> ;
-    ns5:made <http://ceur-ws.org/Vol-1262/#paper10> ;
-    ns5:name "Anastasia Dimou" .
+<http://ceur-ws.org/Vol-1262/> a ns6:Proceedings ;
+    ns8:issued "2014-10-04T00:00:00+00:00"^^xsd:dateTime ;
+    ns5:presentedAt <http://ceur-ws.org/Vol-1262/#event> ;
+    ns3:editor <http://ceur-ws.org/Vol-1262/#NatashaiNoy>,
+        <http://ceur-ws.org/Vol-1262/#PauliGroth> .
 
-<http://ceur-ws.org/Vol-1262/#AnjaiJentzsch> a ns5:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/AnjaiJentzsch> ;
-    ns5:made <http://ceur-ws.org/Vol-1262/#paper4> ;
-    ns5:name "Anja Jentzsch" .
+<http://ceur-ws.org/Vol-1262/#NatashaiNoy> a ns2:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/NatashaiNoy> ;
+    ns2:name "Natasha Noy" .
 
-<http://ceur-ws.org/Vol-1262/#FadiiMaali> a ns5:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/FadiiMaali> ;
-    ns5:made <http://ceur-ws.org/Vol-1262/#paper7> ;
-    ns5:name "Fadi Maali" .
+<http://ceur-ws.org/Vol-1262/#PauliGroth> a ns2:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/PauliGroth> ;
+    ns2:name "Paul Groth" .
 
-<http://ceur-ws.org/Vol-1262/#FrosinaiKoceva> a ns5:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/FrosinaiKoceva> ;
-    ns5:made <http://ceur-ws.org/Vol-1262/#paper3> ;
-    ns5:name "Frosina Koceva" .
-
-<http://ceur-ws.org/Vol-1262/#LeandroiMendoza> a ns5:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/LeandroiMendoza> ;
-    ns5:made <http://ceur-ws.org/Vol-1262/#paper8> ;
-    ns5:name "Leandro Mendoza" .
-
-<http://ceur-ws.org/Vol-1262/#Luis-DanieliIb%C3%A1%C3%B1ez> a ns5:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/Luis-DanieliIb%C3%A1%C3%B1ez> ;
-    ns5:made <http://ceur-ws.org/Vol-1262/#paper5> ;
-    ns5:name "Luis-Daniel Ibáñez" .
-
-<http://ceur-ws.org/Vol-1262/#MartineideiVos> a ns5:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/MartineideiVos> ;
-    ns5:made <http://ceur-ws.org/Vol-1262/#paper1> ;
-    ns5:name "Martine de Vos" .
-
-<http://ceur-ws.org/Vol-1262/#NatashaiNoy> a ns5:Person ;
-    ns7:affiliation "" ;
-    ns6:sameAs <http://ceur-ws.org/persons/NatashaiNoy> ;
-    ns5:name "Natasha Noy" .
-
-<http://ceur-ws.org/Vol-1262/#ShimaiZahmatkesh> a ns5:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/ShimaiZahmatkesh> ;
-    ns5:made <http://ceur-ws.org/Vol-1262/#paper6> ;
-    ns5:name "Shima Zahmatkesh" .
-
-<http://ceur-ws.org/Vol-1262/#SoheilaiDehghanzadeh> a ns5:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/SoheilaiDehghanzadeh> ;
-    ns5:made <http://ceur-ws.org/Vol-1262/#paper2> ;
-    ns5:name "Soheila Dehghanzadeh" .
-
-<http://ceur-ws.org/Vol-1262/#YusufiMashoodiAbiodun> a ns5:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/YusufiMashoodiAbiodun> ;
-    ns5:made <http://ceur-ws.org/Vol-1262/#paper9> ;
-    ns5:name "Yusuf Mashood Abiodun" .
-
-<http://ceur-ws.org/Vol-1262/#event> a ns4:WorkshopEvent ;
-    ns4:hasLocation <http://dbpedia.org/resource/Italy> ;
-    ns4:hasPart <http://ceur-ws.org/Vol-1262/#part-ISWC-DC> ;
-    ns4:isSubEventOf <http://ceur-ws.org/Vol-1262/#conf> ;
-    ns2:beginsAtDatetime "2014-10-20T00:00:00+00:00"^^xsd:dateTime ;
-    ns2:endsAtDatetime "2014-10-20T00:00:00+00:00"^^xsd:dateTime ;
-    ns3:license <http://choosealicense.com/licenses/no-license/> ;
+<http://ceur-ws.org/Vol-1262/#event> a ns6:WorkshopEvent ;
+    ns6:hasLocation <http://dbpedia.org/resource/Italy> ;
+    ns6:hasPart <http://ceur-ws.org/Vol-1262/#part-ws> ;
+    ns6:isSubEventOf <http://ceur-ws.org/Vol-1262/#conf> ;
+    ns1:beginsAtDatetime "2014-10-20T00:00:00+00:00"^^xsd:dateTime ;
+    ns1:endsAtDatetime "2014-10-20T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:license "http://choosealicense.com/licenses/no-license/" ;
     rdfs:seeAlso <http://ceur-ws.org/Vol-1045/#event>,
         <http://ceur-ws.org/Vol-660/#event> .
-
-<http://ceur-ws.org/Vol-1262/#PauliGroth> a ns5:Person ;
-    ns7:affiliation "" ;
-    ns6:sameAs <http://ceur-ws.org/persons/PauliGroth> ;
-    ns5:made <http://ceur-ws.org/Vol-1262/#paperX1> ;
-    ns5:name "Paul Groth" .
-
-<http://ceur-ws.org/Vol-1262/#paper1> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1262/> ;
-    ns3:title "Interpreting Environmental Computational Spreadsheets" ;
-    ns1:endPage 14 ;
-    ns1:numPages 8 ;
-    ns1:startPage 7 ;
-    ns7:author <http://ceur-ws.org/Vol-1262/#MartineideiVos> .
-
-<http://ceur-ws.org/Vol-1262/#paper10> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1262/> ;
-    ns3:title "Mapping, Enriching and Interlinking Data from Heterogeneous Distributed Sources" ;
-    ns1:endPage 87 ;
-    ns1:numPages 8 ;
-    ns1:startPage 80 ;
-    ns7:author <http://ceur-ws.org/Vol-1262/#AnastasiaiDimou> .
-
-<http://ceur-ws.org/Vol-1262/#paper2> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1262/> ;
-    ns3:title "Optimizing SPARQL Query Processing On Dynamic and Static Data Based on Query Response Requirements Using Materialization" ;
-    ns1:endPage 23 ;
-    ns1:numPages 9 ;
-    ns1:startPage 15 ;
-    ns7:author <http://ceur-ws.org/Vol-1262/#SoheilaiDehghanzadeh> .
-
-<http://ceur-ws.org/Vol-1262/#paper3> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1262/> ;
-    ns3:title "A Knowledge-Based Model for Instructional Design" ;
-    ns1:endPage 31 ;
-    ns1:numPages 8 ;
-    ns1:startPage 24 ;
-    ns7:author <http://ceur-ws.org/Vol-1262/#FrosinaiKoceva> .
-
-<http://ceur-ws.org/Vol-1262/#paper4> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1262/> ;
-    ns3:title "Profiling the Web of Data" ;
-    ns1:endPage 39 ;
-    ns1:numPages 8 ;
-    ns1:startPage 32 ;
-    ns7:author <http://ceur-ws.org/Vol-1262/#AnjaiJentzsch> .
-
-<http://ceur-ws.org/Vol-1262/#paper5> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1262/> ;
-    ns3:title "Consistency Criteria for a Read/Write Web of Linked Data" ;
-    ns1:endPage 47 ;
-    ns1:numPages 8 ;
-    ns1:startPage 40 ;
-    ns7:author <http://ceur-ws.org/Vol-1262/#Luis-DanieliIb%C3%A1%C3%B1ez> .
-
-<http://ceur-ws.org/Vol-1262/#paper6> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1262/> ;
-    ns3:title "Retrieval of the Most Relevant Combinations of Data Published in Heterogeneous Distributed Datasets on the Web" ;
-    ns1:endPage 55 ;
-    ns1:numPages 8 ;
-    ns1:startPage 48 ;
-    ns7:author <http://ceur-ws.org/Vol-1262/#ShimaiZahmatkesh> .
-
-<http://ceur-ws.org/Vol-1262/#paper7> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1262/> ;
-    ns3:title "A Data-flow Language for Big RDF Data Processing" ;
-    ns1:endPage 63 ;
-    ns1:numPages 8 ;
-    ns1:startPage 56 ;
-    ns7:author <http://ceur-ws.org/Vol-1262/#FadiiMaali> .
-
-<http://ceur-ws.org/Vol-1262/#paper8> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1262/> ;
-    ns3:title "A Rule-Based Approach to Address Semantic Accuracy Problems on Linked Data" ;
-    ns1:endPage 71 ;
-    ns1:numPages 8 ;
-    ns1:startPage 64 ;
-    ns7:author <http://ceur-ws.org/Vol-1262/#LeandroiMendoza> .
-
-<http://ceur-ws.org/Vol-1262/#paper9> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1262/> ;
-    ns3:title "A Linked Data Application Development Framework (LDADF)" ;
-    ns1:endPage 79 ;
-    ns1:numPages 8 ;
-    ns1:startPage 72 ;
-    ns7:author <http://ceur-ws.org/Vol-1262/#YusufiMashoodiAbiodun> .
-
-<http://ceur-ws.org/Vol-1262/#paperX1> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1262/> ;
-    ns3:title "The whole proceedings can also be downloaded as a single file (" ;
-    ns7:author <http://ceur-ws.org/Vol-1262/#PauliGroth> .
-
-<http://ceur-ws.org/Vol-1262/> a ns4:Proceedings ;
-    ns4:hasPart <http://ceur-ws.org/Vol-1262/#paper1>,
-        <http://ceur-ws.org/Vol-1262/#paper10>,
-        <http://ceur-ws.org/Vol-1262/#paper2>,
-        <http://ceur-ws.org/Vol-1262/#paper3>,
-        <http://ceur-ws.org/Vol-1262/#paper4>,
-        <http://ceur-ws.org/Vol-1262/#paper5>,
-        <http://ceur-ws.org/Vol-1262/#paper6>,
-        <http://ceur-ws.org/Vol-1262/#paper7>,
-        <http://ceur-ws.org/Vol-1262/#paper8>,
-        <http://ceur-ws.org/Vol-1262/#paper9>,
-        <http://ceur-ws.org/Vol-1262/#paperX1> ;
-    ns8:issued "2014-10-04T00:00:00+00:00"^^xsd:dateTime ;
-    ns1:presentedAt <http://ceur-ws.org/Vol-1262/#event> ;
-    ns7:editor <http://ceur-ws.org/Vol-1262/#NatashaiNoy>,
-        <http://ceur-ws.org/Vol-1262/#PauliGroth> .
 

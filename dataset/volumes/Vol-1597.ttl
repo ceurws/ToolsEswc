@@ -1,83 +1,48 @@
 @prefix ns1: <http://xmlns.com/foaf/0.1/> .
-@prefix ns2: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns2: <http://purl.org/NET/c4dm/timeline.owl#> .
 @prefix ns3: <http://www.w3.org/2002/07/owl#> .
-@prefix ns4: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns4: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix ns5: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns6: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns8: <http://purl.org/ontology/bibo/#> .
+@prefix ns6: <http://purl.org/ontology/bibo/#> .
+@prefix ns7: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns8: <http://purl.org/dc/elements/1.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1597/#ChifumiiNishioka> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/ChifumiiNishioka> ;
-    ns1:made <http://ceur-ws.org/Vol-1597/#PROFILES2016_paper2> ;
-    ns1:name "Chifumi Nishioka" .
-
-<http://ceur-ws.org/Vol-1597/#ElenaiDemidova> a ns1:Person ;
-    ns5:affiliation "" ;
-    ns3:sameAs <http://ceur-ws.org/persons/ElenaiDemidova> ;
-    ns1:name "Elena Demidova" .
-
-<http://ceur-ws.org/Vol-1597/#JohniBreslin> a ns1:Person ;
-    ns5:affiliation "" ;
-    ns3:sameAs <http://ceur-ws.org/persons/JohniBreslin> ;
-    ns1:name "John Breslin" .
-
-<http://ceur-ws.org/Vol-1597/#JoseiM.iGimenez-Garcia> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/JoseiM.iGimenez-Garcia> ;
-    ns1:made <http://ceur-ws.org/Vol-1597/#PROFILES2016_paper5> ;
-    ns1:name "Jose M. Gimenez-Garcia" .
-
-<http://ceur-ws.org/Vol-1597/#JulianiSzyma%C5%84ski> a ns1:Person ;
-    ns5:affiliation "" ;
-    ns3:sameAs <http://ceur-ws.org/persons/JulianiSzyma%C5%84ski> ;
-    ns1:name "Julian Szymański" .
-
-<http://ceur-ws.org/Vol-1597/#MohammadiAbdel-Qader> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/MohammadiAbdel-Qader> ;
-    ns1:made <http://ceur-ws.org/Vol-1597/#PROFILES2016_paper1> ;
-    ns1:name "Mohammad Abdel-Qader" .
-
-<http://ceur-ws.org/Vol-1597/#StefaniDietze> a ns1:Person ;
-    ns5:affiliation "" ;
-    ns3:sameAs <http://ceur-ws.org/persons/StefaniDietze> ;
-    ns1:name "Stefan Dietze" .
-
-<http://ceur-ws.org/Vol-1597/#event> a ns4:WorkshopEvent ;
-    ns4:hasLocation <http://dbpedia.org/resource/Greece> ;
-    ns4:hasPart <http://ceur-ws.org/Vol-1597/#part-PROFILES> ;
-    ns4:isSubEventOf <http://ceur-ws.org/Vol-1597/#conf> ;
-    ns7:beginsAtDatetime "2016-05-30T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:endsAtDatetime "2016-05-30T00:00:00+00:00"^^xsd:dateTime ;
-    rdfs:seeAlso <http://ceur-ws.org/Vol-1151/#event>,
-        <http://ceur-ws.org/Vol-1362/#event> .
-
-<http://ceur-ws.org/Vol-1597/#PROFILES2016_paper1> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1597/> ;
-    ns2:title "Qualitative Analysis of Vocabulary Evolution on the Linked Open Data Cloud" ;
-    ns5:author <http://ceur-ws.org/Vol-1597/#MohammadiAbdel-Qader> .
-
-<http://ceur-ws.org/Vol-1597/#PROFILES2016_paper2> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1597/> ;
-    ns2:title "Information-theoretic Analysis of Entity Dynamics on the Linked Open Data Cloud" ;
-    ns5:author <http://ceur-ws.org/Vol-1597/#ChifumiiNishioka> .
-
-<http://ceur-ws.org/Vol-1597/#PROFILES2016_paper5> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1597/> ;
-    ns2:title "Assessing Trust with PageRank in the Web of Data" ;
-    ns5:author <http://ceur-ws.org/Vol-1597/#JoseiM.iGimenez-Garcia> .
-
-<http://ceur-ws.org/Vol-1597/> a ns4:Proceedings ;
-    ns4:hasPart <http://ceur-ws.org/Vol-1597/#PROFILES2016_paper1>,
-        <http://ceur-ws.org/Vol-1597/#PROFILES2016_paper2>,
-        <http://ceur-ws.org/Vol-1597/#PROFILES2016_paper5> ;
-    ns6:issued "2016-05-29T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:presentedAt <http://ceur-ws.org/Vol-1597/#event> ;
+<http://ceur-ws.org/Vol-1597/> a ns7:Proceedings ;
+    ns4:issued "2016-05-29T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:presentedAt <http://ceur-ws.org/Vol-1597/#event> ;
     ns5:editor <http://ceur-ws.org/Vol-1597/#ElenaiDemidova>,
         <http://ceur-ws.org/Vol-1597/#JohniBreslin>,
         <http://ceur-ws.org/Vol-1597/#JulianiSzyma%C5%84ski>,
         <http://ceur-ws.org/Vol-1597/#StefaniDietze> .
+
+<http://ceur-ws.org/Vol-1597/#ElenaiDemidova> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/ElenaiDemidova> ;
+    ns1:name "Elena Demidova" .
+
+<http://ceur-ws.org/Vol-1597/#JohniBreslin> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/JohniBreslin> ;
+    ns1:name "John Breslin" .
+
+<http://ceur-ws.org/Vol-1597/#JulianiSzyma%C5%84ski> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/JulianiSzyma%C5%84ski> ;
+    ns1:name "Julian Szymański" .
+
+<http://ceur-ws.org/Vol-1597/#StefaniDietze> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/StefaniDietze> ;
+    ns1:name "Stefan Dietze" .
+
+<http://ceur-ws.org/Vol-1597/#event> a ns7:WorkshopEvent ;
+    ns7:hasLocation <http://dbpedia.org/resource/Greece> ;
+    ns7:hasPart <http://ceur-ws.org/Vol-1597/#part-PROFILES>,
+        <http://ceur-ws.org/Vol-1597/#part-PROFIling> ;
+    ns7:isSubEventOf <http://ceur-ws.org/Vol-1597/#conf> ;
+    ns2:beginsAtDatetime "2016-05-30T00:00:00+00:00"^^xsd:dateTime ;
+    ns2:endsAtDatetime "2016-05-30T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:license "http://creativecommons.org/publicdomain/zero/1.0/" ;
+    rdfs:seeAlso <http://ceur-ws.org/Vol-1151/#event>,
+        <http://ceur-ws.org/Vol-1362/#event> .
 

@@ -1,230 +1,43 @@
-@prefix ns1: <http://www.w3.org/2002/07/owl#> .
-@prefix ns2: <http://purl.org/ontology/bibo/#> .
-@prefix ns3: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns4: <http://xmlns.com/foaf/0.1/> .
-@prefix ns5: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns6: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns1: <http://xmlns.com/foaf/0.1/> .
+@prefix ns2: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns3: <http://www.w3.org/2002/07/owl#> .
+@prefix ns4: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns5: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns6: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns7: <http://purl.org/dc/elements/1.1/> .
+@prefix ns8: <http://purl.org/ontology/bibo/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1270/#AndreasiMetzger> a ns4:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/AndreasiMetzger> ;
-    ns4:made <http://ceur-ws.org/Vol-1270/#paper5> ;
-    ns4:name "Andreas Metzger" .
+<http://ceur-ws.org/Vol-1270/> a ns6:Proceedings ;
+    ns5:issued "2014-10-17T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:presentedAt <http://ceur-ws.org/Vol-1270/#event> ;
+    ns2:editor <http://ceur-ws.org/Vol-1270/#NellyiBencomo>,
+        <http://ceur-ws.org/Vol-1270/#RobertiFrance>,
+        <http://ceur-ws.org/Vol-1270/#SebastianiG%C3%B6tz> .
 
-<http://ceur-ws.org/Vol-1270/#DimitriiVaniLanduyt> a ns4:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/DimitriiVaniLanduyt> ;
-    ns4:made <http://ceur-ws.org/Vol-1270/#paper3> ;
-    ns4:name "Dimitri Van Landuyt" .
+<http://ceur-ws.org/Vol-1270/#NellyiBencomo> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/NellyiBencomo> ;
+    ns1:name "Nelly Bencomo" .
 
-<http://ceur-ws.org/Vol-1270/#EmilioiInsfran> a ns4:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/EmilioiInsfran> ;
-    ns4:made <http://ceur-ws.org/Vol-1270/#paper4> ;
-    ns4:name "Emilio Insfran" .
+<http://ceur-ws.org/Vol-1270/#RobertiFrance> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/RobertiFrance> ;
+    ns1:name "Robert France" .
 
-<http://ceur-ws.org/Vol-1270/#EriciSchmieders> a ns4:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/EriciSchmieders> ;
-    ns4:made <http://ceur-ws.org/Vol-1270/#paper5> ;
-    ns4:name "Eric Schmieders" .
+<http://ceur-ws.org/Vol-1270/#SebastianiG%C3%B6tz> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/SebastianiG%C3%B6tz> ;
+    ns1:name "Sebastian Götz" .
 
-<http://ceur-ws.org/Vol-1270/#FatihiGey> a ns4:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/FatihiGey> ;
-    ns4:made <http://ceur-ws.org/Vol-1270/#paper3> ;
-    ns4:name "Fatih Gey" .
-
-<http://ceur-ws.org/Vol-1270/#JavieriGonzalez-Huerta> a ns4:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/JavieriGonzalez-Huerta> ;
-    ns4:made <http://ceur-ws.org/Vol-1270/#paper4> ;
-    ns4:name "Javier Gonzalez-Huerta" .
-
-<http://ceur-ws.org/Vol-1270/#KianaiRostami> a ns4:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/KianaiRostami> ;
-    ns4:made <http://ceur-ws.org/Vol-1270/#paper5> ;
-    ns4:name "Kiana Rostami" .
-
-<http://ceur-ws.org/Vol-1270/#KlausiPohl> a ns4:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/KlausiPohl> ;
-    ns4:made <http://ceur-ws.org/Vol-1270/#paper5> ;
-    ns4:name "Klaus Pohl" .
-
-<http://ceur-ws.org/Vol-1270/#PriscilaiCedillo> a ns4:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/PriscilaiCedillo> ;
-    ns4:made <http://ceur-ws.org/Vol-1270/#paper4> ;
-    ns4:name "Priscila Cedillo" .
-
-<http://ceur-ws.org/Vol-1270/#RalfiReussner> a ns4:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/RalfiReussner> ;
-    ns4:made <http://ceur-ws.org/Vol-1270/#paper5> ;
-    ns4:name "Ralf Reussner" .
-
-<http://ceur-ws.org/Vol-1270/#ReineriJung> a ns4:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/ReineriJung> ;
-    ns4:made <http://ceur-ws.org/Vol-1270/#paper5> ;
-    ns4:name "Reiner Jung" .
-
-<http://ceur-ws.org/Vol-1270/#RobertiHeinrich> a ns4:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/RobertiHeinrich> ;
-    ns4:made <http://ceur-ws.org/Vol-1270/#paper5> ;
-    ns4:name "Robert Heinrich" .
-
-<http://ceur-ws.org/Vol-1270/#SebastianiW%C3%A4tzold> a ns4:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/SebastianiW%C3%A4tzold> ;
-    ns4:made <http://ceur-ws.org/Vol-1270/#paper2> ;
-    ns4:name "Sebastian Wätzold" .
-
-<http://ceur-ws.org/Vol-1270/#SilviaiAbrahao> a ns4:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/SilviaiAbrahao> ;
-    ns4:made <http://ceur-ws.org/Vol-1270/#paper4> ;
-    ns4:name "Silvia Abrahao" .
-
-<http://ceur-ws.org/Vol-1270/#StefaniWalraven> a ns4:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/StefaniWalraven> ;
-    ns4:made <http://ceur-ws.org/Vol-1270/#paper3> ;
-    ns4:name "Stefan Walraven" .
-
-<http://ceur-ws.org/Vol-1270/#ThomasiVogel> a ns4:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/ThomasiVogel> ;
-    ns4:made <http://ceur-ws.org/Vol-1270/#paper1> ;
-    ns4:name "Thomas Vogel" .
-
-<http://ceur-ws.org/Vol-1270/#WillhelmiHasselbring> a ns4:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/WillhelmiHasselbring> ;
-    ns4:made <http://ceur-ws.org/Vol-1270/#paper5> ;
-    ns4:name "Willhelm Hasselbring" .
-
-<http://ceur-ws.org/Vol-1270/#WouteriJoosen> a ns4:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/WouteriJoosen> ;
-    ns4:made <http://ceur-ws.org/Vol-1270/#paper3> ;
-    ns4:name "Wouter Joosen" .
-
-<http://ceur-ws.org/Vol-1270/#event> a ns5:WorkshopEvent ;
-    ns5:hasLocation <http://dbpedia.org/resource/Spain> ;
-    ns5:hasPart <http://ceur-ws.org/Vol-1270/#part-MRT> ;
-    ns5:isSubEventOf <http://ceur-ws.org/Vol-1270/#conf> ;
-    ns7:beginsAtDatetime "2014-09-30T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:endsAtDatetime "2014-09-30T00:00:00+00:00"^^xsd:dateTime ;
+<http://ceur-ws.org/Vol-1270/#event> a ns6:WorkshopEvent ;
+    ns6:hasLocation <http://dbpedia.org/resource/Spain> ;
+    ns6:hasPart <http://ceur-ws.org/Vol-1270/#part-ws> ;
+    ns6:isSubEventOf <http://ceur-ws.org/Vol-1270/#conf> ;
+    ns4:beginsAtDatetime "2014-09-30T00:00:00+00:00"^^xsd:dateTime ;
+    ns4:endsAtDatetime "2014-09-30T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:license "http://creativecommons.org/publicdomain/zero/1.0/" ;
     rdfs:seeAlso <http://ceur-ws.org/Vol-509/#event>,
         <http://ceur-ws.org/Vol-641/#event>,
         <http://ceur-ws.org/Vol-794/#event> .
-
-<http://ceur-ws.org/Vol-1270/#HolgeriGiese> a ns4:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/HolgeriGiese> ;
-    ns4:made <http://ceur-ws.org/Vol-1270/#paper1>,
-        <http://ceur-ws.org/Vol-1270/#paper2> ;
-    ns4:name "Holger Giese" .
-
-<http://ceur-ws.org/Vol-1270/#NellyiBencomo> a ns4:Person ;
-    ns3:affiliation "" ;
-    ns1:sameAs <http://ceur-ws.org/persons/NellyiBencomo> ;
-    ns4:made <http://ceur-ws.org/Vol-1270/#summary> ;
-    ns4:name "Nelly Bencomo" .
-
-<http://ceur-ws.org/Vol-1270/#RobertiFrance> a ns4:Person ;
-    ns3:affiliation "" ;
-    ns1:sameAs <http://ceur-ws.org/persons/RobertiFrance> ;
-    ns4:made <http://ceur-ws.org/Vol-1270/#summary> ;
-    ns4:name "Robert France" .
-
-<http://ceur-ws.org/Vol-1270/#SebastianiG%C3%B6tz> a ns4:Person ;
-    ns3:affiliation "" ;
-    ns1:sameAs <http://ceur-ws.org/persons/SebastianiG%C3%B6tz> ;
-    ns4:made <http://ceur-ws.org/Vol-1270/#summary> ;
-    ns4:name "Sebastian Götz" .
-
-<http%3A//ceur-ws.org/Vol-1270/%23Session1%3AFoundations> a ns5:SessionEvent ;
-    ns5:partOf <http://ceur-ws.org/Vol-1270/> ;
-    ns6:title "Session 1: Foundations" .
-
-<http://ceur-ws.org/Vol-1270/#paper1> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1270/> ;
-    ns6:title "On Unifying Development Models and Runtime Models" ;
-    ns2:endPage 10 ;
-    ns2:numPages 6 ;
-    ns2:section <http%3A//ceur-ws.org/Vol-1270/%23Session1%3AFoundations> ;
-    ns2:startPage 5 ;
-    ns3:author <http://ceur-ws.org/Vol-1270/#HolgeriGiese>,
-        <http://ceur-ws.org/Vol-1270/#ThomasiVogel> .
-
-<http://ceur-ws.org/Vol-1270/#paper2> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1270/> ;
-    ns6:title "Classifying Distributed Self-* Systems Based on Runtime Models and Their Coupling" ;
-    ns2:endPage 20 ;
-    ns2:numPages 10 ;
-    ns2:section <http%3A//ceur-ws.org/Vol-1270/%23Session1%3AFoundations> ;
-    ns2:startPage 11 ;
-    ns3:author <http://ceur-ws.org/Vol-1270/#HolgeriGiese>,
-        <http://ceur-ws.org/Vol-1270/#SebastianiW%C3%A4tzold> .
-
-<http%3A//ceur-ws.org/Vol-1270/%23Session2%3ASampleStyles> a ns5:SessionEvent ;
-    ns5:partOf <http://ceur-ws.org/Vol-1270/> ;
-    ns6:title "Session 2: Sample Styles" .
-
-<http://ceur-ws.org/Vol-1270/#summary> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1270/> ;
-    ns6:title "Summary of the 9th Workshop on Models@run.time" ;
-    ns2:endPage 4 ;
-    ns2:numPages 4 ;
-    ns2:startPage 1 ;
-    ns3:author <http://ceur-ws.org/Vol-1270/#NellyiBencomo>,
-        <http://ceur-ws.org/Vol-1270/#RobertiFrance>,
-        <http://ceur-ws.org/Vol-1270/#SebastianiG%C3%B6tz> .
-
-<http://ceur-ws.org/Vol-1270/#paper3> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1270/> ;
-    ns6:title "Feature Models at Run Time: Feature Middleware for Multi-tenant SaaS applications" ;
-    ns2:endPage 30 ;
-    ns2:numPages 10 ;
-    ns2:section <http%3A//ceur-ws.org/Vol-1270/%23Session2%3ASampleStyles> ;
-    ns2:startPage 21 ;
-    ns3:author <http://ceur-ws.org/Vol-1270/#DimitriiVaniLanduyt>,
-        <http://ceur-ws.org/Vol-1270/#FatihiGey>,
-        <http://ceur-ws.org/Vol-1270/#StefaniWalraven>,
-        <http://ceur-ws.org/Vol-1270/#WouteriJoosen> .
-
-<http://ceur-ws.org/Vol-1270/#paper4> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1270/> ;
-    ns6:title "Towards Monitoring Cloud Services using Models@run.time" ;
-    ns2:endPage 40 ;
-    ns2:numPages 10 ;
-    ns2:section <http%3A//ceur-ws.org/Vol-1270/%23Session2%3ASampleStyles> ;
-    ns2:startPage 31 ;
-    ns3:author <http://ceur-ws.org/Vol-1270/#EmilioiInsfran>,
-        <http://ceur-ws.org/Vol-1270/#JavieriGonzalez-Huerta>,
-        <http://ceur-ws.org/Vol-1270/#PriscilaiCedillo>,
-        <http://ceur-ws.org/Vol-1270/#SilviaiAbrahao> .
-
-<http://ceur-ws.org/Vol-1270/> a ns5:Proceedings ;
-    ns5:hasPart <http://ceur-ws.org/Vol-1270/#paper1>,
-        <http://ceur-ws.org/Vol-1270/#paper2>,
-        <http://ceur-ws.org/Vol-1270/#paper3>,
-        <http://ceur-ws.org/Vol-1270/#paper4>,
-        <http://ceur-ws.org/Vol-1270/#paper5>,
-        <http://ceur-ws.org/Vol-1270/#summary> ;
-    ns5:hasSession <http%3A//ceur-ws.org/Vol-1270/%23Session1%3AFoundations>,
-        <http%3A//ceur-ws.org/Vol-1270/%23Session2%3ASampleStyles> ;
-    ns8:issued "2014-10-17T00:00:00+00:00"^^xsd:dateTime ;
-    ns2:presentedAt <http://ceur-ws.org/Vol-1270/#event> ;
-    ns3:editor <http://ceur-ws.org/Vol-1270/#NellyiBencomo>,
-        <http://ceur-ws.org/Vol-1270/#RobertiFrance>,
-        <http://ceur-ws.org/Vol-1270/#SebastianiG%C3%B6tz> .
-
-<http://ceur-ws.org/Vol-1270/#paper5> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1270/> ;
-    ns6:title "Integrating Run-time Observations and Design Component Models for Cloud System Analysis" ;
-    ns2:endPage 46 ;
-    ns2:numPages 6 ;
-    ns2:section <http%3A//ceur-ws.org/Vol-1270/%23Session2%3ASampleStyles> ;
-    ns2:startPage 41 ;
-    ns3:author <http://ceur-ws.org/Vol-1270/#AndreasiMetzger>,
-        <http://ceur-ws.org/Vol-1270/#EriciSchmieders>,
-        <http://ceur-ws.org/Vol-1270/#KianaiRostami>,
-        <http://ceur-ws.org/Vol-1270/#KlausiPohl>,
-        <http://ceur-ws.org/Vol-1270/#RalfiReussner>,
-        <http://ceur-ws.org/Vol-1270/#ReineriJung>,
-        <http://ceur-ws.org/Vol-1270/#RobertiHeinrich>,
-        <http://ceur-ws.org/Vol-1270/#WillhelmiHasselbring> .
 

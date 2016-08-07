@@ -1,155 +1,35 @@
-@prefix ns1: <http://purl.org/ontology/bibo/#> .
-@prefix ns2: <http://www.w3.org/2002/07/owl#> .
-@prefix ns3: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns4: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns5: <http://xmlns.com/foaf/0.1/> .
-@prefix ns6: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns1: <http://xmlns.com/foaf/0.1/> .
+@prefix ns2: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns3: <http://purl.org/ontology/bibo/#> .
+@prefix ns4: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns5: <http://www.w3.org/2002/07/owl#> .
+@prefix ns6: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns7: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns8: <http://purl.org/dc/elements/1.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1469/#AdrianiSantosiParrilla> a ns5:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/AdrianiSantosiParrilla> ;
-    ns5:made <http://ceur-ws.org/Vol-1469/#paper1> ;
-    ns5:name "Adrian Santos Parrilla" .
-
-<http://ceur-ws.org/Vol-1469/#DerekiReimanis> a ns5:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/DerekiReimanis> ;
-    ns5:made <http://ceur-ws.org/Vol-1469/#paper6> ;
-    ns5:name "Derek Reimanis" .
-
-<http://ceur-ws.org/Vol-1469/#HennieiHuijgens> a ns5:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/HennieiHuijgens> ;
-    ns5:made <http://ceur-ws.org/Vol-1469/#paper4> ;
-    ns5:name "Hennie Huijgens" .
-
-<http://ceur-ws.org/Vol-1469/#MariaiTeresaiBaldassarre> a ns5:Person ;
-    ns4:affiliation "" ;
-    ns2:sameAs <http://ceur-ws.org/persons/MariaiTeresaiBaldassarre> ;
-    ns5:name "Maria Teresa Baldassarre" .
-
-<http://ceur-ws.org/Vol-1469/#ShiriniAkbarinasaji> a ns5:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/ShiriniAkbarinasaji> ;
-    ns5:made <http://ceur-ws.org/Vol-1469/#paper3> ;
-    ns5:name "Shirin Akbarinasaji" .
-
-<http://ceur-ws.org/Vol-1469/#SiraiVegas> a ns5:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/SiraiVegas> ;
-    ns5:made <http://ceur-ws.org/Vol-1469/#intro1> ;
-    ns5:name "Sira Vegas" .
-
-<http://ceur-ws.org/Vol-1469/#VilmariNepomuceno> a ns5:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/VilmariNepomuceno> ;
-    ns5:made <http://ceur-ws.org/Vol-1469/#paper2> ;
-    ns5:name "Vilmar Nepomuceno" .
-
-<http://ceur-ws.org/Vol-1469/#XavieriFranch> a ns5:Person ;
-    ns4:affiliation "" ;
-    ns2:sameAs <http://ceur-ws.org/persons/XavieriFranch> ;
-    ns5:name "Xavier Franch" .
-
-<http://ceur-ws.org/Vol-1469/#XinyeiTang> a ns5:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/XinyeiTang> ;
-    ns5:made <http://ceur-ws.org/Vol-1469/#paper5> ;
-    ns5:name "Xinye Tang" .
-
-<http://ceur-ws.org/Vol-1469/#event> a ns3:WorkshopEvent ;
-    ns3:hasLocation <http://dbpedia.org/resource/China> ;
-    ns3:hasPart <http://ceur-ws.org/Vol-1469/#part-IDoESE> ;
-    ns3:isSubEventOf <http://ceur-ws.org/Vol-1469/#conf> ;
-    ns7:beginsAtDatetime "2015-10-21T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:endsAtDatetime "2015-10-21T00:00:00+00:00"^^xsd:dateTime .
-
-<http://ceur-ws.org/Vol-1469/#intro1> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1469/> ;
-    ns6:title "What makes a good Empirical Software Engineering Thesis?: Some Advice" ;
-    ns1:endPage 3 ;
-    ns1:numPages 3 ;
-    ns1:startPage 1 ;
-    ns4:author <http://ceur-ws.org/Vol-1469/#SiraiVegas> .
-
-<http://ceur-ws.org/Vol-1469/#paper1> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1469/> ;
-    ns6:title "Joint Analysis of Families of SE Experiments" ;
-    ns1:endPage 9 ;
-    ns1:numPages 6 ;
-    ns1:section <http%3A//ceur-ws.org/Vol-1469/%23Session1%3AMethodologyandTools> ;
-    ns1:startPage 4 ;
-    ns4:author <http://ceur-ws.org/Vol-1469/#AdrianiSantosiParrilla> .
-
-<http://ceur-ws.org/Vol-1469/#paper2> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1469/> ;
-    ns6:title "Decision Support Architecture for Primary Studies Evaluation" ;
-    ns1:endPage 14 ;
-    ns1:numPages 5 ;
-    ns1:section <http%3A//ceur-ws.org/Vol-1469/%23Session1%3AMethodologyandTools> ;
-    ns1:startPage 10 ;
-    ns4:author <http://ceur-ws.org/Vol-1469/#VilmariNepomuceno> .
-
-<http://ceur-ws.org/Vol-1469/#paper3> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1469/> ;
-    ns6:title "Toward Measuring Defect Debt and Developing a Recommender system for their Prioritization" ;
-    ns1:endPage 20 ;
-    ns1:numPages 6 ;
-    ns1:section <http%3A//ceur-ws.org/Vol-1469/%23Session2%3ACost-relatedStudies> ;
-    ns1:startPage 15 ;
-    ns4:author <http://ceur-ws.org/Vol-1469/#ShiriniAkbarinasaji> .
-
-<http://ceur-ws.org/Vol-1469/#paper4> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1469/> ;
-    ns6:title "Evidence-Based Software Portfolio Management" ;
-    ns1:endPage 26 ;
-    ns1:numPages 6 ;
-    ns1:section <http%3A//ceur-ws.org/Vol-1469/%23Session2%3ACost-relatedStudies> ;
-    ns1:startPage 21 ;
-    ns4:author <http://ceur-ws.org/Vol-1469/#HennieiHuijgens> .
-
-<http://ceur-ws.org/Vol-1469/#paper5> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1469/> ;
-    ns6:title "Attention, Test Code is Low-quality!" ;
-    ns1:endPage 32 ;
-    ns1:numPages 6 ;
-    ns1:section <http%3A//ceur-ws.org/Vol-1469/%23Session3%3ACode-relatedStudies> ;
-    ns1:startPage 27 ;
-    ns4:author <http://ceur-ws.org/Vol-1469/#XinyeiTang> .
-
-<http://ceur-ws.org/Vol-1469/#paper6> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1469/> ;
-    ns6:title "A Research Plan to Characterize, Evaluate, and Predict the Impacts of Behavioral Decay in Design Patterns" ;
-    ns1:endPage 38 ;
-    ns1:numPages 6 ;
-    ns1:section <http%3A//ceur-ws.org/Vol-1469/%23Session3%3ACode-relatedStudies> ;
-    ns1:startPage 33 ;
-    ns4:author <http://ceur-ws.org/Vol-1469/#DerekiReimanis> .
-
-<http%3A//ceur-ws.org/Vol-1469/%23Session1%3AMethodologyandTools> a ns3:SessionEvent ;
-    ns3:partOf <http://ceur-ws.org/Vol-1469/> ;
-    ns6:title "Session 1: Methodology and Tools" .
-
-<http%3A//ceur-ws.org/Vol-1469/%23Session2%3ACost-relatedStudies> a ns3:SessionEvent ;
-    ns3:partOf <http://ceur-ws.org/Vol-1469/> ;
-    ns6:title "Session 2: Cost-related Studies" .
-
-<http%3A//ceur-ws.org/Vol-1469/%23Session3%3ACode-relatedStudies> a ns3:SessionEvent ;
-    ns3:partOf <http://ceur-ws.org/Vol-1469/> ;
-    ns6:title "Session 3: Code-related Studies" .
-
-<http://ceur-ws.org/Vol-1469/> a ns3:Proceedings ;
-    ns3:hasPart <http://ceur-ws.org/Vol-1469/#intro1>,
-        <http://ceur-ws.org/Vol-1469/#paper1>,
-        <http://ceur-ws.org/Vol-1469/#paper2>,
-        <http://ceur-ws.org/Vol-1469/#paper3>,
-        <http://ceur-ws.org/Vol-1469/#paper4>,
-        <http://ceur-ws.org/Vol-1469/#paper5>,
-        <http://ceur-ws.org/Vol-1469/#paper6> ;
-    ns3:hasSession <http%3A//ceur-ws.org/Vol-1469/%23Session1%3AMethodologyandTools>,
-        <http%3A//ceur-ws.org/Vol-1469/%23Session2%3ACost-relatedStudies>,
-        <http%3A//ceur-ws.org/Vol-1469/%23Session3%3ACode-relatedStudies> ;
-    ns8:issued "2015-10-09T00:00:00+00:00"^^xsd:dateTime ;
-    ns1:presentedAt <http://ceur-ws.org/Vol-1469/#event> ;
-    ns4:editor <http://ceur-ws.org/Vol-1469/#MariaiTeresaiBaldassarre>,
+<http://ceur-ws.org/Vol-1469/> a ns4:Proceedings ;
+    ns2:issued "2015-10-09T00:00:00+00:00"^^xsd:dateTime ;
+    ns3:presentedAt <http://ceur-ws.org/Vol-1469/#event> ;
+    ns7:editor <http://ceur-ws.org/Vol-1469/#MariaiTeresaiBaldassarre>,
         <http://ceur-ws.org/Vol-1469/#XavieriFranch> .
+
+<http://ceur-ws.org/Vol-1469/#MariaiTeresaiBaldassarre> a ns1:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/MariaiTeresaiBaldassarre> ;
+    ns1:name "Maria Teresa Baldassarre" .
+
+<http://ceur-ws.org/Vol-1469/#XavieriFranch> a ns1:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/XavieriFranch> ;
+    ns1:name "Xavier Franch" .
+
+<http://ceur-ws.org/Vol-1469/#event> a ns4:WorkshopEvent ;
+    ns4:hasLocation <http://dbpedia.org/resource/China> ;
+    ns4:hasPart <http://ceur-ws.org/Vol-1469/#part-ESEIW> ;
+    ns4:isSubEventOf <http://ceur-ws.org/Vol-1469/#conf> ;
+    ns6:beginsAtDatetime "2015-10-21T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:endsAtDatetime "2015-10-21T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:license "http://creativecommons.org/publicdomain/zero/1.0/" .
 

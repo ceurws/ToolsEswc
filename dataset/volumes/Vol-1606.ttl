@@ -1,155 +1,41 @@
-@prefix ns1: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns2: <http://www.w3.org/2002/07/owl#> .
-@prefix ns3: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns4: <http://xmlns.com/foaf/0.1/> .
-@prefix ns5: <http://purl.org/ontology/bibo/#> .
-@prefix ns6: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns7: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns1: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns2: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns3: <http://xmlns.com/foaf/0.1/> .
+@prefix ns4: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns5: <http://www.w3.org/2002/07/owl#> .
+@prefix ns6: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns7: <http://purl.org/dc/elements/1.1/> .
+@prefix ns8: <http://purl.org/ontology/bibo/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1606/#AlexanderiFelfernig> a ns4:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/AlexanderiFelfernig> ;
-    ns4:made <http://ceur-ws.org/Vol-1606/#paper5> ;
-    ns4:name "Alexander Felfernig" .
-
-<http://ceur-ws.org/Vol-1606/#CataldoiMusto> a ns4:Person ;
-    ns6:affiliation "" ;
-    ns2:sameAs <http://ceur-ws.org/persons/CataldoiMusto> ;
-    ns4:name "Cataldo Musto" .
-
-<http://ceur-ws.org/Vol-1606/#DavidiZibriczky> a ns4:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/DavidiZibriczky> ;
-    ns4:made <http://ceur-ws.org/Vol-1606/#paper2> ;
-    ns4:name "David Zibriczky" .
-
-<http://ceur-ws.org/Vol-1606/#GiovanniiSemeraro> a ns4:Person ;
-    ns6:affiliation "" ;
-    ns2:sameAs <http://ceur-ws.org/persons/GiovanniiSemeraro> ;
-    ns4:name "Giovanni Semeraro" .
-
-<http://ceur-ws.org/Vol-1606/#LeonidiIvonin> a ns4:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/LeonidiIvonin> ;
-    ns4:made <http://ceur-ws.org/Vol-1606/#paper6> ;
-    ns4:name "Leonid Ivonin" .
-
-<http://ceur-ws.org/Vol-1606/#LuigiiPortinale> a ns4:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/LuigiiPortinale> ;
-    ns4:made <http://ceur-ws.org/Vol-1606/#paper8> ;
-    ns4:name "Luigi Portinale" .
-
-<http://ceur-ws.org/Vol-1606/#MarcoiBrambilla> a ns4:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/MarcoiBrambilla> ;
-    ns4:made <http://ceur-ws.org/Vol-1606/#paper3> ;
-    ns4:name "Marco Brambilla" .
-
-<http://ceur-ws.org/Vol-1606/#MathiasiBauer> a ns4:Person ;
-    ns6:affiliation "" ;
-    ns2:sameAs <http://ceur-ws.org/persons/MathiasiBauer> ;
-    ns4:name "Mathias Bauer" .
-
-<http://ceur-ws.org/Vol-1606/#PietroiLeo> a ns4:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/PietroiLeo> ;
-    ns4:made <http://ceur-ws.org/Vol-1606/#paper1> ;
-    ns4:name "Pietro Leo" .
-
-<http://ceur-ws.org/Vol-1606/#VaniTieniHoang> a ns4:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/VaniTieniHoang> ;
-    ns4:made <http://ceur-ws.org/Vol-1606/#paper4> ;
-    ns4:name "Van Tien Hoang" .
-
-<http://ceur-ws.org/Vol-1606/#YleniaiMaruccia> a ns4:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/YleniaiMaruccia> ;
-    ns4:made <http://ceur-ws.org/Vol-1606/#paper7> ;
-    ns4:name "Ylenia Maruccia" .
-
-<http://ceur-ws.org/Vol-1606/#event> a ns7:WorkshopEvent ;
-    ns7:hasLocation <http://dbpedia.org/resource/Italy> ;
-    ns7:hasPart <http://ceur-ws.org/Vol-1606/#part-FINREC> ;
-    ns7:isSubEventOf <http://ceur-ws.org/Vol-1606/#conf> ;
-    ns3:beginsAtDatetime "2016-06-16T00:00:00+00:00"^^xsd:dateTime ;
-    ns3:endsAtDatetime "2016-06-16T00:00:00+00:00"^^xsd:dateTime ;
-    rdfs:seeAlso <http://ceur-ws.org/Vol-1349/#event> .
-
-<http://ceur-ws.org/Vol-1606/#paper1> a ns7:Paper ;
-    ns7:partOf <http://ceur-ws.org/Vol-1606/> ;
-    ns1:title "A Cognitive Business is a Business that Thinks (invited talk)" ;
-    ns5:endPage 2 ;
-    ns5:numPages 2 ;
-    ns5:startPage 1 ;
-    ns6:author <http://ceur-ws.org/Vol-1606/#PietroiLeo> .
-
-<http://ceur-ws.org/Vol-1606/#paper2> a ns7:Paper ;
-    ns7:partOf <http://ceur-ws.org/Vol-1606/> ;
-    ns1:title "Recommender Systems meet Finance: a Literature Review" ;
-    ns5:endPage 10 ;
-    ns5:numPages 8 ;
-    ns5:startPage 3 ;
-    ns6:author <http://ceur-ws.org/Vol-1606/#DavidiZibriczky> .
-
-<http://ceur-ws.org/Vol-1606/#paper3> a ns7:Paper ;
-    ns7:partOf <http://ceur-ws.org/Vol-1606/> ;
-    ns1:title "Forecasting Out-of-the-Ordinary Financial Events" ;
-    ns5:endPage 15 ;
-    ns5:numPages 5 ;
-    ns5:startPage 11 ;
-    ns6:author <http://ceur-ws.org/Vol-1606/#MarcoiBrambilla> .
-
-<http://ceur-ws.org/Vol-1606/#paper4> a ns7:Paper ;
-    ns7:partOf <http://ceur-ws.org/Vol-1606/> ;
-    ns1:title "Online User Behavioural Modeling with Applications to Price Steering" ;
-    ns5:endPage 21 ;
-    ns5:numPages 6 ;
-    ns5:startPage 16 ;
-    ns6:author <http://ceur-ws.org/Vol-1606/#VaniTieniHoang> .
-
-<http://ceur-ws.org/Vol-1606/#paper5> a ns7:Paper ;
-    ns7:partOf <http://ceur-ws.org/Vol-1606/> ;
-    ns1:title "Application of Constraint-based Technologies in Financial Services Recommendation (invited talk)" ;
-    ns5:endPage 23 ;
-    ns5:numPages 2 ;
-    ns5:startPage 22 ;
-    ns6:author <http://ceur-ws.org/Vol-1606/#AlexanderiFelfernig> .
-
-<http://ceur-ws.org/Vol-1606/#paper6> a ns7:Paper ;
-    ns7:partOf <http://ceur-ws.org/Vol-1606/> ;
-    ns1:title "The Art of Spending and Recommendations in Personal Finance" ;
-    ns5:endPage 28 ;
-    ns5:numPages 5 ;
-    ns5:startPage 24 ;
-    ns6:author <http://ceur-ws.org/Vol-1606/#LeonidiIvonin> .
-
-<http://ceur-ws.org/Vol-1606/#paper7> a ns7:Paper ;
-    ns7:partOf <http://ceur-ws.org/Vol-1606/> ;
-    ns1:title "NormaSearch: a Big Data Application for Financial Services." ;
-    ns5:endPage 32 ;
-    ns5:numPages 4 ;
-    ns5:startPage 29 ;
-    ns6:author <http://ceur-ws.org/Vol-1606/#YleniaiMaruccia> .
-
-<http://ceur-ws.org/Vol-1606/#paper8> a ns7:Paper ;
-    ns7:partOf <http://ceur-ws.org/Vol-1606/> ;
-    ns1:title "A Smart Financial Advisory System Exploiting Case-Based Reasoning" ;
-    ns5:endPage 40 ;
-    ns5:numPages 8 ;
-    ns5:startPage 33 ;
-    ns6:author <http://ceur-ws.org/Vol-1606/#LuigiiPortinale> .
-
-<http://ceur-ws.org/Vol-1606/> a ns7:Proceedings ;
-    ns7:hasPart <http://ceur-ws.org/Vol-1606/#paper1>,
-        <http://ceur-ws.org/Vol-1606/#paper2>,
-        <http://ceur-ws.org/Vol-1606/#paper3>,
-        <http://ceur-ws.org/Vol-1606/#paper4>,
-        <http://ceur-ws.org/Vol-1606/#paper5>,
-        <http://ceur-ws.org/Vol-1606/#paper6>,
-        <http://ceur-ws.org/Vol-1606/#paper7>,
-        <http://ceur-ws.org/Vol-1606/#paper8> ;
-    ns8:issued "2016-06-18T00:00:00+00:00"^^xsd:dateTime ;
-    ns5:presentedAt <http://ceur-ws.org/Vol-1606/#event> ;
-    ns6:editor <http://ceur-ws.org/Vol-1606/#CataldoiMusto>,
+<http://ceur-ws.org/Vol-1606/> a ns2:Proceedings ;
+    ns4:issued "2016-06-18T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:presentedAt <http://ceur-ws.org/Vol-1606/#event> ;
+    ns1:editor <http://ceur-ws.org/Vol-1606/#CataldoiMusto>,
         <http://ceur-ws.org/Vol-1606/#GiovanniiSemeraro>,
         <http://ceur-ws.org/Vol-1606/#MathiasiBauer> .
+
+<http://ceur-ws.org/Vol-1606/#CataldoiMusto> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/CataldoiMusto> ;
+    ns3:name "Cataldo Musto" .
+
+<http://ceur-ws.org/Vol-1606/#GiovanniiSemeraro> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/GiovanniiSemeraro> ;
+    ns3:name "Giovanni Semeraro" .
+
+<http://ceur-ws.org/Vol-1606/#MathiasiBauer> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/MathiasiBauer> ;
+    ns3:name "Mathias Bauer" .
+
+<http://ceur-ws.org/Vol-1606/#event> a ns2:WorkshopEvent ;
+    ns2:hasLocation <http://dbpedia.org/resource/Italy> ;
+    ns2:hasPart <http://ceur-ws.org/Vol-1606/#part-ws> ;
+    ns2:isSubEventOf <http://ceur-ws.org/Vol-1606/#conf> ;
+    ns6:beginsAtDatetime "2016-06-16T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:endsAtDatetime "2016-06-16T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:license "http://creativecommons.org/publicdomain/zero/1.0/" ;
+    rdfs:seeAlso <http://ceur-ws.org/Vol-1349/#event> .
 

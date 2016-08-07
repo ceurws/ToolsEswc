@@ -1,182 +1,35 @@
-@prefix ns1: <http://xmlns.com/foaf/0.1/> .
-@prefix ns2: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns3: <http://www.w3.org/2002/07/owl#> .
-@prefix ns4: <http://purl.org/ontology/bibo/#> .
-@prefix ns5: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns6: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns1: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns2: <http://www.w3.org/2002/07/owl#> .
+@prefix ns3: <http://purl.org/ontology/bibo/#> .
+@prefix ns4: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns5: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns6: <http://xmlns.com/foaf/0.1/> .
+@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns8: <http://purl.org/dc/elements/1.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-991/#ArturiLugmayr> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/ArturiLugmayr> ;
-    ns1:made <http://ceur-ws.org/Vol-991/#paper1> ;
-    ns1:name "Artur Lugmayr" .
-
-<http://ceur-ws.org/Vol-991/#BelmabroukiKarima> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/BelmabroukiKarima> ;
-    ns1:made <http://ceur-ws.org/Vol-991/#paper4> ;
-    ns1:name "Belmabrouk Karima" .
-
-<http://ceur-ws.org/Vol-991/#BendellaiFatima> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/BendellaiFatima> ;
-    ns1:made <http://ceur-ws.org/Vol-991/#paper4> ;
-    ns1:name "Bendella Fatima" .
-
-<http://ceur-ws.org/Vol-991/#ChadliiAbdelhafid> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/ChadliiAbdelhafid> ;
-    ns1:made <http://ceur-ws.org/Vol-991/#paper4> ;
-    ns1:name "Chadli Abdelhafid" .
-
-<http://ceur-ws.org/Vol-991/#FredrikiPaulsson> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/FredrikiPaulsson> ;
-    ns1:made <http://ceur-ws.org/Vol-991/#paper5> ;
-    ns1:name "Fredrik Paulsson" .
-
-<http://ceur-ws.org/Vol-991/#MilenaiHead> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/MilenaiHead> ;
-    ns1:made <http://ceur-ws.org/Vol-991/#paper0> ;
-    ns1:name "Milena Head" .
-
-<http://ceur-ws.org/Vol-991/#TakuyaiKatase> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/TakuyaiKatase> ;
-    ns1:made <http://ceur-ws.org/Vol-991/#paper3> ;
-    ns1:name "Takuya Katase" .
-
-<http://ceur-ws.org/Vol-991/#YoshikiiSakurai> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/YoshikiiSakurai> ;
-    ns1:made <http://ceur-ws.org/Vol-991/#paper3> ;
-    ns1:name "Yoshiki Sakurai" .
-
-<http://ceur-ws.org/Vol-991/#event> a ns2:WorkshopEvent ;
-    ns2:hasLocation <http://dbpedia.org/resource/Netherlands> ;
-    ns2:hasPart <http://ceur-ws.org/Vol-991/#part-IEETeL> ;
-    ns2:isSubEventOf <http://ceur-ws.org/Vol-991/#conf> ;
-    ns7:beginsAtDatetime "2013-06-04T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:endsAtDatetime "2013-06-04T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:license <http://choosealicense.com/licenses/no-license/> .
-
-<http%3A//ceur-ws.org/Vol-991/%23KeynoteAddress> a ns2:SessionEvent ;
-    ns2:partOf <http://ceur-ws.org/Vol-991/> ;
-    ns6:title "Keynote Address" .
-
-<http://ceur-ws.org/Vol-991/#HirohiYamamoto> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/HirohiYamamoto> ;
-    ns1:made <http://ceur-ws.org/Vol-991/#paper2>,
-        <http://ceur-ws.org/Vol-991/#paper3> ;
-    ns1:name "Hiroh Yamamoto" .
-
-<http://ceur-ws.org/Vol-991/#KouichiiMutsuura> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/KouichiiMutsuura> ;
-    ns1:made <http://ceur-ws.org/Vol-991/#paper2>,
-        <http://ceur-ws.org/Vol-991/#paper3> ;
-    ns1:name "Kouichi Mutsuura" .
-
-<http://ceur-ws.org/Vol-991/#MalinkaiIvanova> a ns1:Person ;
-    ns4:place <http://dbpedia.org/resource/Commemorative_coins_of_Bulgaria> ;
-    ns5:affiliation "Technical University of Sofia" ;
-    ns3:sameAs <http://ceur-ws.org/persons/MalinkaiIvanova> ;
-    ns1:made <http://ceur-ws.org/Vol-991/#paper6> ;
-    ns1:name "Malinka Ivanova" .
-
-<http://ceur-ws.org/Vol-991/#paper0> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-991/> ;
-    ns6:title "Understanding the Impacts of Design on the User Experience: Lessons from Online Shoppers Applied to eLearners" ;
-    ns4:endPage 4 ;
-    ns4:numPages 1 ;
-    ns4:section <http%3A//ceur-ws.org/Vol-991/%23KeynoteAddress> ;
-    ns4:startPage 4 ;
-    ns5:author <http://ceur-ws.org/Vol-991/#MilenaiHead> .
-
-<http://ceur-ws.org/Vol-991/#paper1> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-991/> ;
-    ns6:title "E-Learning Environments as Niche Strategy to Match the 'DNA' of a Particular University" ;
-    ns4:endPage 12 ;
-    ns4:numPages 8 ;
-    ns4:section <http%3A//ceur-ws.org/Vol-991/%23ResearchPapers> ;
-    ns4:startPage 5 ;
-    ns5:author <http://ceur-ws.org/Vol-991/#ArturiLugmayr> .
-
-<http://ceur-ws.org/Vol-991/#paper5> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-991/> ;
-    ns6:title "From Silos to Mashups Conformance through Widget-based Mashup Approaches to Learning Environments" ;
-    ns4:endPage 57 ;
-    ns4:numPages 12 ;
-    ns4:section <http%3A//ceur-ws.org/Vol-991/%23ResearchPapers> ;
-    ns4:startPage 46 ;
-    ns5:author <http://ceur-ws.org/Vol-991/#FredrikiPaulsson> .
-
-<http://ceur-ws.org/Vol-991/#paper6> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-991/> ;
-    ns6:title "Intelligent Tutoring in Informal Settings: Empirical Study" ;
-    ns4:endPage 66 ;
-    ns4:numPages 9 ;
-    ns4:section <http%3A//ceur-ws.org/Vol-991/%23ResearchPapers> ;
-    ns4:startPage 58 ;
-    ns5:author <http://ceur-ws.org/Vol-991/#MalinkaiIvanova> .
-
-<http://ceur-ws.org/Vol-991/#MinoruiNakayama> a ns1:Person ;
-    ns4:place <http://dbpedia.org/resource/Japan> ;
-    ns5:affiliation "Tokyo Institute of Technology" ;
-    ns3:sameAs <http://ceur-ws.org/persons/MinoruiNakayama> ;
-    ns1:made <http://ceur-ws.org/Vol-991/#paper2>,
-        <http://ceur-ws.org/Vol-991/#paper3> ;
-    ns1:name "Minoru Nakayama" .
-
-<http://ceur-ws.org/Vol-991/#paper2> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-991/> ;
-    ns6:title "Effectiveness of Note-Taking Skills and Student's Characteristics on Learning Performance in Online Courses" ;
-    ns4:endPage 21 ;
-    ns4:numPages 9 ;
-    ns4:section <http%3A//ceur-ws.org/Vol-991/%23ResearchPapers> ;
-    ns4:startPage 13 ;
-    ns5:author <http://ceur-ws.org/Vol-991/#HirohiYamamoto>,
-        <http://ceur-ws.org/Vol-991/#KouichiiMutsuura>,
+<http://ceur-ws.org/Vol-991/> a ns1:Proceedings ;
+    ns7:issued "2013-05-31T00:00:00+00:00"^^xsd:dateTime ;
+    ns3:presentedAt <http://ceur-ws.org/Vol-991/#event> ;
+    ns4:editor <http://ceur-ws.org/Vol-991/#MalinkaiIvanova>,
         <http://ceur-ws.org/Vol-991/#MinoruiNakayama> .
 
-<http://ceur-ws.org/Vol-991/#paper4> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-991/> ;
-    ns6:title "Computer-assisted Problem-based Learning for Word-based Mathematical Problem Solving" ;
-    ns4:endPage 45 ;
-    ns4:numPages 14 ;
-    ns4:section <http%3A//ceur-ws.org/Vol-991/%23ResearchPapers> ;
-    ns4:startPage 32 ;
-    ns5:author <http://ceur-ws.org/Vol-991/#BelmabroukiKarima>,
-        <http://ceur-ws.org/Vol-991/#BendellaiFatima>,
-        <http://ceur-ws.org/Vol-991/#ChadliiAbdelhafid> .
+<http://ceur-ws.org/Vol-991/#MalinkaiIvanova> a ns6:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/MalinkaiIvanova> ;
+    ns6:name "Malinka Ivanova" .
 
-<http://ceur-ws.org/Vol-991/#paper3> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-991/> ;
-    ns6:title "Simple Measures to Encourage More Note-Taking in the Era of Electronic Notebooks and Their Evaluations" ;
-    ns4:endPage 31 ;
-    ns4:numPages 10 ;
-    ns4:section <http%3A//ceur-ws.org/Vol-991/%23ResearchPapers> ;
-    ns4:startPage 22 ;
-    ns5:author <http://ceur-ws.org/Vol-991/#HirohiYamamoto>,
-        <http://ceur-ws.org/Vol-991/#KouichiiMutsuura>,
-        <http://ceur-ws.org/Vol-991/#MinoruiNakayama>,
-        <http://ceur-ws.org/Vol-991/#TakuyaiKatase>,
-        <http://ceur-ws.org/Vol-991/#YoshikiiSakurai> .
+<http://ceur-ws.org/Vol-991/#MinoruiNakayama> a ns6:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/MinoruiNakayama> ;
+    ns6:name "Minoru Nakayama" .
 
-<http%3A//ceur-ws.org/Vol-991/%23ResearchPapers> a ns2:SessionEvent ;
-    ns2:partOf <http://ceur-ws.org/Vol-991/> ;
-    ns6:title "Research Papers" .
-
-<http://ceur-ws.org/Vol-991/> a ns2:Proceedings ;
-    ns2:hasPart <http://ceur-ws.org/Vol-991/#paper0>,
-        <http://ceur-ws.org/Vol-991/#paper1>,
-        <http://ceur-ws.org/Vol-991/#paper2>,
-        <http://ceur-ws.org/Vol-991/#paper3>,
-        <http://ceur-ws.org/Vol-991/#paper4>,
-        <http://ceur-ws.org/Vol-991/#paper5>,
-        <http://ceur-ws.org/Vol-991/#paper6> ;
-    ns2:hasSession <http%3A//ceur-ws.org/Vol-991/%23KeynoteAddress>,
-        <http%3A//ceur-ws.org/Vol-991/%23ResearchPapers> ;
-    ns8:issued "2013-05-31T00:00:00+00:00"^^xsd:dateTime ;
-    ns4:presentedAt <http://ceur-ws.org/Vol-991/#event> ;
-    ns5:editor <http://ceur-ws.org/Vol-991/#MalinkaiIvanova>,
-        <http://ceur-ws.org/Vol-991/#MinoruiNakayama> .
+<http://ceur-ws.org/Vol-991/#event> a ns1:WorkshopEvent ;
+    ns1:hasLocation <http://dbpedia.org/resource/Netherlands> ;
+    ns1:hasPart <http://ceur-ws.org/Vol-991/#part-CEUR-WS> ;
+    ns1:isSubEventOf <http://ceur-ws.org/Vol-991/#conf> ;
+    ns5:beginsAtDatetime "2013-06-04T00:00:00+00:00"^^xsd:dateTime ;
+    ns5:endsAtDatetime "2013-06-04T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:license "http://choosealicense.com/licenses/no-license/" .
 

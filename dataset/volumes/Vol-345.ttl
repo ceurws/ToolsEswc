@@ -1,40 +1,392 @@
-@prefix ns1: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns2: <http://www.w3.org/2002/07/owl#> .
-@prefix ns3: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns4: <http://xmlns.com/foaf/0.1/> .
-@prefix ns5: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns1: <http://xmlns.com/foaf/0.1/> .
+@prefix ns2: <http://purl.org/ontology/bibo/#> .
+@prefix ns3: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns4: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns5: <http://www.w3.org/2002/07/owl#> .
 @prefix ns6: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns8: <http://purl.org/ontology/bibo/#> .
+@prefix ns7: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns8: <http://purl.org/dc/elements/1.1/> .
+@prefix ns9: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-345/> a ns1:Proceedings ;
-    ns7:issued "2008-05-16T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:presentedAt <http://ceur-ws.org/Vol-345/#event> ;
-    ns3:editor <http://ceur-ws.org/Vol-345/#JamesiOhene-Djan>,
-        <http://ceur-ws.org/Vol-345/#MarioniHershiiDepartmentiofiComputingGoldsmithsiCollegeUniversityiofiLondonSE>,
+<http://ceur-ws.org/Vol-345/#%EF%BF%BDriciBel> a ns1:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/%EF%BF%BDriciBel> ;
+    ns1:made <http://ceur-ws.org/Vol-345/#paper5> ;
+    ns1:name "�ric Bel" .
+
+<http://ceur-ws.org/Vol-345/#AlejandroiRodriguez-Ascaso> a ns1:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/AlejandroiRodriguez-Ascaso> ;
+    ns1:made <http://ceur-ws.org/Vol-345/#paper3> ;
+    ns1:name "Alejandro Rodriguez-Ascaso" .
+
+<http://ceur-ws.org/Vol-345/#AlexandraiTsiligkyri> a ns1:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/AlexandraiTsiligkyri> ;
+    ns1:made <http://ceur-ws.org/Vol-345/#paper2> ;
+    ns1:name "Alexandra Tsiligkyri" .
+
+<http://ceur-ws.org/Vol-345/#AnaiIglesias> a ns1:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/AnaiIglesias> ;
+    ns1:made <http://ceur-ws.org/Vol-345/#paper11> ;
+    ns1:name "Ana Iglesias" .
+
+<http://ceur-ws.org/Vol-345/#AntonioiGiraldo> a ns1:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/AntonioiGiraldo> ;
+    ns1:made <http://ceur-ws.org/Vol-345/#paper1> ;
+    ns1:name "Antonio Giraldo" .
+
+<http://ceur-ws.org/Vol-345/#BeleniRuiz> a ns1:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/BeleniRuiz> ;
+    ns1:made <http://ceur-ws.org/Vol-345/#paper11> ;
+    ns1:name "Belen Ruiz" .
+
+<http://ceur-ws.org/Vol-345/#CarmeniEscribano> a ns1:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/CarmeniEscribano> ;
+    ns1:made <http://ceur-ws.org/Vol-345/#paper1> ;
+    ns1:name "Carmen Escribano" .
+
+<http://ceur-ws.org/Vol-345/#ClaireiStockton> a ns1:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/ClaireiStockton> ;
+    ns1:made <http://ceur-ws.org/Vol-345/#paper4> ;
+    ns1:name "Claire Stockton" .
+
+<http://ceur-ws.org/Vol-345/#DanieliFern%EF%BF%BDndez> a ns1:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/DanieliFern%EF%BF%BDndez> ;
+    ns1:made <http://ceur-ws.org/Vol-345/#paper1> ;
+    ns1:name "Daniel Fern�ndez" .
+
+<http://ceur-ws.org/Vol-345/#DimitrisiBolis> a ns1:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/DimitrisiBolis> ;
+    ns1:made <http://ceur-ws.org/Vol-345/#paper2> ;
+    ns1:name "Dimitris Bolis" .
+
+<http://ceur-ws.org/Vol-345/#ElenaideliCampo> a ns1:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/ElenaideliCampo> ;
+    ns1:made <http://ceur-ws.org/Vol-345/#paper3> ;
+    ns1:name "Elena del Campo" .
+
+<http://ceur-ws.org/Vol-345/#EmmaiBradburn> a ns1:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/EmmaiBradburn> ;
+    ns1:made <http://ceur-ws.org/Vol-345/#paper5> ;
+    ns1:name "Emma Bradburn" .
+
+<http://ceur-ws.org/Vol-345/#GeorgeiSt.iKaprinis> a ns1:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/GeorgeiSt.iKaprinis> ;
+    ns1:made <http://ceur-ws.org/Vol-345/#paper6> ;
+    ns1:name "George St. Kaprinis" .
+
+<http://ceur-ws.org/Vol-345/#GeorgiaiN.iNikolaidou> a ns1:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/GeorgiaiN.iNikolaidou> ;
+    ns1:made <http://ceur-ws.org/Vol-345/#paper6> ;
+    ns1:name "Georgia N. Nikolaidou" .
+
+<http://ceur-ws.org/Vol-345/#JasoniVittorias> a ns1:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/JasoniVittorias> ;
+    ns1:made <http://ceur-ws.org/Vol-345/#paper2> ;
+    ns1:name "Jason Vittorias" .
+
+<http://ceur-ws.org/Vol-345/#JesusiG.Boticario1> a ns1:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/JesusiG.Boticario1> ;
+    ns1:made <http://ceur-ws.org/Vol-345/#paper3> ;
+    ns1:name "Jesus G.Boticario1" .
+
+<http://ceur-ws.org/Vol-345/#LourdesiMoreno> a ns1:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/LourdesiMoreno> ;
+    ns1:made <http://ceur-ws.org/Vol-345/#paper11> ;
+    ns1:name "Lourdes Moreno" .
+
+<http://ceur-ws.org/Vol-345/#MagdaiNikolaraizi> a ns1:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/MagdaiNikolaraizi> ;
+    ns1:made <http://ceur-ws.org/Vol-345/#paper7> ;
+    ns1:name "Magda Nikolaraizi" .
+
+<http://ceur-ws.org/Vol-345/#Mar%EF%BF%BDaiAsunci%EF%BF%BDniSastre> a ns1:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/Mar%EF%BF%BDaiAsunci%EF%BF%BDniSastre> ;
+    ns1:made <http://ceur-ws.org/Vol-345/#paper1> ;
+    ns1:name "Mar�a Asunci�n Sastre" .
+
+<http://ceur-ws.org/Vol-345/#MariSaneiro> a ns1:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/MariSaneiro> ;
+    ns1:made <http://ceur-ws.org/Vol-345/#paper3> ;
+    ns1:name "Mar Saneiro" .
+
+<http://ceur-ws.org/Vol-345/#MattiHarrison> a ns1:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/MattiHarrison> ;
+    ns1:made <http://ceur-ws.org/Vol-345/#paper4> ;
+    ns1:name "Matt Harrison" .
+
+<http://ceur-ws.org/Vol-345/#MohammadiShirali-Shahreza> a ns1:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/MohammadiShirali-Shahreza> ;
+    ns1:made <http://ceur-ws.org/Vol-345/#paper8> ;
+    ns1:name "Mohammad Shirali-Shahreza" .
+
+<http://ceur-ws.org/Vol-345/#OlgaiC.Santos> a ns1:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/OlgaiC.Santos> ;
+    ns1:made <http://ceur-ws.org/Vol-345/#paper3> ;
+    ns1:name "Olga C.Santos" .
+
+<http://ceur-ws.org/Vol-345/#PalomaiMartinez> a ns1:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/PalomaiMartinez> ;
+    ns1:made <http://ceur-ws.org/Vol-345/#paper11> ;
+    ns1:name "Paloma Martinez" .
+
+<http://ceur-ws.org/Vol-345/#RahimaiBegum> a ns1:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/RahimaiBegum> ;
+    ns1:made <http://ceur-ws.org/Vol-345/#paper10> ;
+    ns1:name "Rahima Begum" .
+
+<http://ceur-ws.org/Vol-345/#SajadiShirali-Shahreza> a ns1:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/SajadiShirali-Shahreza> ;
+    ns1:made <http://ceur-ws.org/Vol-345/#paper8> ;
+    ns1:name "Sajad Shirali-Shahreza" .
+
+<http://ceur-ws.org/Vol-345/#SofiaiKoutsogiorgou> a ns1:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/SofiaiKoutsogiorgou> ;
+    ns1:made <http://ceur-ws.org/Vol-345/#paper7> ;
+    ns1:name "Sofia Koutsogiorgou" .
+
+<http://ceur-ws.org/Vol-345/#StergiosiG.iKaprinis> a ns1:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/StergiosiG.iKaprinis> ;
+    ns1:made <http://ceur-ws.org/Vol-345/#paper6> ;
+    ns1:name "Stergios G. Kaprinis" .
+
+<http://ceur-ws.org/Vol-345/#Tom%EF%BF%BDsi%EF%BF%BDlvarez> a ns1:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/Tom%EF%BF%BDsi%EF%BF%BDlvarez> ;
+    ns1:made <http://ceur-ws.org/Vol-345/#paper1> ;
+    ns1:name "Tom�s �lvarez" .
+
+<http://ceur-ws.org/Vol-345/#VasilikiiTh.iIliadou> a ns1:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/VasilikiiTh.iIliadou> ;
+    ns1:made <http://ceur-ws.org/Vol-345/#paper6> ;
+    ns1:name "Vasiliki Th. Iliadou" .
+
+<http://ceur-ws.org/Vol-345/#WALTDiwasiheldiiniconjunctioniwithithe> a ns1:Person ;
+    ns2:place <http://dbpedia.org/resource/Spain> ;
+    ns4:affiliation "8th IEEE International Conference on Advanced Learning Technologies, July 1st- July 5th, 2008, Santander, Cantabria, Spain. Learning technologies in the Information society" ;
+    ns5:sameAs <http://ceur-ws.org/persons/WALTDiwasiheldiiniconjunctioniwithithe> ;
+    ns1:name "WALTD was held in conjunction with the" .
+
+<http://ceur-ws.org/Vol-345/#event> a ns3:WorkshopEvent ;
+    ns3:hasLocation <http://dbpedia.org/resource/Spain> ;
+    ns3:hasPart <http://ceur-ws.org/Vol-345/#part-ws> ;
+    ns3:isSubEventOf <http://ceur-ws.org/Vol-345/#conf> ;
+    ns6:beginsAtDatetime "2008-06-11T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:endsAtDatetime "2008-06-11T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:license "http://choosealicense.com/licenses/no-license/" .
+
+<http://ceur-ws.org/Vol-345/#pagesi10-14> a ns1:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/pagesi10-14> ;
+    ns1:made <http://ceur-ws.org/Vol-345/#paper2> ;
+    ns1:name "pages 10-14" .
+
+<http://ceur-ws.org/Vol-345/#pagesi15-19> a ns1:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/pagesi15-19> ;
+    ns1:made <http://ceur-ws.org/Vol-345/#paper3> ;
+    ns1:name "pages 15-19" .
+
+<http://ceur-ws.org/Vol-345/#pagesi20-24> a ns1:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/pagesi20-24> ;
+    ns1:made <http://ceur-ws.org/Vol-345/#paper4> ;
+    ns1:name "pages 20-24" .
+
+<http://ceur-ws.org/Vol-345/#pagesi25-29> a ns1:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/pagesi25-29> ;
+    ns1:made <http://ceur-ws.org/Vol-345/#paper5> ;
+    ns1:name "pages 25-29" .
+
+<http://ceur-ws.org/Vol-345/#pagesi30-34> a ns1:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/pagesi30-34> ;
+    ns1:made <http://ceur-ws.org/Vol-345/#paper6> ;
+    ns1:name "pages 30-34" .
+
+<http://ceur-ws.org/Vol-345/#pagesi35-39> a ns1:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/pagesi35-39> ;
+    ns1:made <http://ceur-ws.org/Vol-345/#paper7> ;
+    ns1:name "pages 35-39" .
+
+<http://ceur-ws.org/Vol-345/#pagesi40-43> a ns1:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/pagesi40-43> ;
+    ns1:made <http://ceur-ws.org/Vol-345/#paper8> ;
+    ns1:name "pages 40-43" .
+
+<http://ceur-ws.org/Vol-345/#pagesi44-50> a ns1:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/pagesi44-50> ;
+    ns1:made <http://ceur-ws.org/Vol-345/#paper9> ;
+    ns1:name "pages 44-50" .
+
+<http://ceur-ws.org/Vol-345/#pagesi51-55> a ns1:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/pagesi51-55> ;
+    ns1:made <http://ceur-ws.org/Vol-345/#paper10> ;
+    ns1:name "pages 51-55" .
+
+<http://ceur-ws.org/Vol-345/#pagesi56-60> a ns1:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/pagesi56-60> ;
+    ns1:made <http://ceur-ws.org/Vol-345/#paper11> ;
+    ns1:name "pages 56-60" .
+
+<http://ceur-ws.org/Vol-345/#pagesi6-9> a ns1:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/pagesi6-9> ;
+    ns1:made <http://ceur-ws.org/Vol-345/#paper1> ;
+    ns1:name "pages 6-9" .
+
+<http://ceur-ws.org/Vol-345/#JamesiOhene-Djan> a ns1:Person ;
+    ns4:affiliation "" ;
+    ns5:sameAs <http://ceur-ws.org/persons/JamesiOhene-Djan> ;
+    ns1:made <http://ceur-ws.org/Vol-345/#paper10> ;
+    ns1:name "James Ohene-Djan" .
+
+<http://ceur-ws.org/Vol-345/#MarioniHersh> a ns1:Person ;
+    ns4:affiliation "14 6NW,LondonUKEmail: j.djan@gold.ac.ukTel: +44 (0)20-7919-7862Fax: +44 (0)20-7919-7853 Electronics & Electrical Engineering,Rankine BuildingUniversity of GlasgowG12 8LTm.hersh@elec.gla.ac.ukTel: +44 (0)141-330 5218fax: +44 (0)141-330 4907" ;
+    ns5:sameAs <http://ceur-ws.org/persons/MarioniHersh> ;
+    ns1:made <http://ceur-ws.org/Vol-345/#paper9> ;
+    ns1:name "Marion Hersh" .
+
+<http://ceur-ws.org/Vol-345/#PanagiotisiPetrantonakis> a ns1:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/PanagiotisiPetrantonakis> ;
+    ns1:made <http://ceur-ws.org/Vol-345/#paper2>,
+        <http://ceur-ws.org/Vol-345/#paper7> ;
+    ns1:name "Panagiotis Petrantonakis" .
+
+<http://ceur-ws.org/Vol-345/#VasilikiiKosmidou> a ns1:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/VasilikiiKosmidou> ;
+    ns1:made <http://ceur-ws.org/Vol-345/#paper2>,
+        <http://ceur-ws.org/Vol-345/#paper7> ;
+    ns1:name "Vasiliki Kosmidou" .
+
+<http://ceur-ws.org/Vol-345/#LeontiosiJ.iHadjileontiadis> a ns1:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/LeontiosiJ.iHadjileontiadis> ;
+    ns1:made <http://ceur-ws.org/Vol-345/#paper2>,
+        <http://ceur-ws.org/Vol-345/#paper6>,
+        <http://ceur-ws.org/Vol-345/#paper7> ;
+    ns1:name "Leontios J. Hadjileontiadis" .
+
+<http://ceur-ws.org/Vol-345/#paper9> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-345/> ;
+    ns7:title "Acessibility and Usability of Virtual Learning Environments" ;
+    ns2:section <http://ceur-ws.org/Vol-345/#JamesOheneDjanandMarionHershpages15> ;
+    ns4:author <http://ceur-ws.org/Vol-345/#MarioniHersh>,
+        <http://ceur-ws.org/Vol-345/#pagesi44-50> .
+
+<http://ceur-ws.org/Vol-345/#paper10> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-345/> ;
+    ns7:title "Multisensory Games for Dyslexic Children" ;
+    ns2:section <http://ceur-ws.org/Vol-345/#JamesOheneDjanandMarionHershpages15> ;
+    ns4:author <http://ceur-ws.org/Vol-345/#JamesiOhene-Djan>,
+        <http://ceur-ws.org/Vol-345/#RahimaiBegum>,
+        <http://ceur-ws.org/Vol-345/#pagesi51-55> .
+
+<http://ceur-ws.org/Vol-345/#paper4> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-345/> ;
+    ns7:title "Inclusive, Adaptive Design for Students with Severe Learning Disabilities" ;
+    ns2:section <http://ceur-ws.org/Vol-345/#JamesOheneDjanandMarionHershpages15> ;
+    ns4:author <http://ceur-ws.org/Vol-345/#ClaireiStockton>,
+        <http://ceur-ws.org/Vol-345/#MattiHarrison>,
+        <http://ceur-ws.org/Vol-345/#pagesi20-24> .
+
+<http://ceur-ws.org/Vol-345/#paper5> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-345/> ;
+    ns7:title "Reframing Teachers� Conceptions of Accessible E-Learning Designs" ;
+    ns2:section <http://ceur-ws.org/Vol-345/#JamesOheneDjanandMarionHershpages15> ;
+    ns4:author <http://ceur-ws.org/Vol-345/#%EF%BF%BDriciBel>,
+        <http://ceur-ws.org/Vol-345/#EmmaiBradburn>,
+        <http://ceur-ws.org/Vol-345/#pagesi25-29> .
+
+<http://ceur-ws.org/Vol-345/#paper8> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-345/> ;
+    ns7:title "Encouraging Persons with Hearing Problem to Learn Sign Language by Internet Websites" ;
+    ns2:section <http://ceur-ws.org/Vol-345/#JamesOheneDjanandMarionHershpages15> ;
+    ns4:author <http://ceur-ws.org/Vol-345/#MohammadiShirali-Shahreza>,
+        <http://ceur-ws.org/Vol-345/#SajadiShirali-Shahreza>,
+        <http://ceur-ws.org/Vol-345/#pagesi40-43> .
+
+<http://ceur-ws.org/Vol-345/#paper11> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-345/> ;
+    ns7:title "Accessible interfaces for educational multimedia contents" ;
+    ns2:section <http://ceur-ws.org/Vol-345/#JamesOheneDjanandMarionHershpages15> ;
+    ns4:author <http://ceur-ws.org/Vol-345/#AnaiIglesias>,
+        <http://ceur-ws.org/Vol-345/#BeleniRuiz>,
+        <http://ceur-ws.org/Vol-345/#LourdesiMoreno>,
+        <http://ceur-ws.org/Vol-345/#PalomaiMartinez>,
+        <http://ceur-ws.org/Vol-345/#pagesi56-60> .
+
+<http://ceur-ws.org/Vol-345/#paper1> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-345/> ;
+    ns7:title "An Intelligent Engine for the Generation of Adaptive Tutorials" ;
+    ns2:section <http://ceur-ws.org/Vol-345/#JamesOheneDjanandMarionHershpages15> ;
+    ns4:author <http://ceur-ws.org/Vol-345/#AntonioiGiraldo>,
+        <http://ceur-ws.org/Vol-345/#CarmeniEscribano>,
+        <http://ceur-ws.org/Vol-345/#DanieliFern%EF%BF%BDndez>,
+        <http://ceur-ws.org/Vol-345/#Mar%EF%BF%BDaiAsunci%EF%BF%BDniSastre>,
+        <http://ceur-ws.org/Vol-345/#Tom%EF%BF%BDsi%EF%BF%BDlvarez>,
+        <http://ceur-ws.org/Vol-345/#pagesi6-9> .
+
+<http://ceur-ws.org/Vol-345/#paper3> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-345/> ;
+    ns7:title "Personalised support for students with disabilities based on psycho-educational guidelines" ;
+    ns2:section <http://ceur-ws.org/Vol-345/#JamesOheneDjanandMarionHershpages15> ;
+    ns4:author <http://ceur-ws.org/Vol-345/#AlejandroiRodriguez-Ascaso>,
+        <http://ceur-ws.org/Vol-345/#ElenaideliCampo>,
+        <http://ceur-ws.org/Vol-345/#JesusiG.Boticario1>,
+        <http://ceur-ws.org/Vol-345/#MariSaneiro>,
+        <http://ceur-ws.org/Vol-345/#OlgaiC.Santos>,
+        <http://ceur-ws.org/Vol-345/#pagesi15-19> .
+
+<http://ceur-ws.org/Vol-345/#paper6> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-345/> ;
+    ns7:title "Primary School Music Education and the Effect of Auditory Processing Disorders: Pedagogical/ICT-based Implications" ;
+    ns2:section <http://ceur-ws.org/Vol-345/#JamesOheneDjanandMarionHershpages15> ;
+    ns4:author <http://ceur-ws.org/Vol-345/#GeorgeiSt.iKaprinis>,
+        <http://ceur-ws.org/Vol-345/#GeorgiaiN.iNikolaidou>,
+        <http://ceur-ws.org/Vol-345/#LeontiosiJ.iHadjileontiadis>,
+        <http://ceur-ws.org/Vol-345/#StergiosiG.iKaprinis>,
+        <http://ceur-ws.org/Vol-345/#VasilikiiTh.iIliadou>,
+        <http://ceur-ws.org/Vol-345/#pagesi30-34> .
+
+<http://ceur-ws.org/Vol-345/#paper7> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-345/> ;
+    ns7:title "�SEE and SEE�: An Educational Tool for Kids with Hearing Impairment" ;
+    ns2:section <http://ceur-ws.org/Vol-345/#JamesOheneDjanandMarionHershpages15> ;
+    ns4:author <http://ceur-ws.org/Vol-345/#LeontiosiJ.iHadjileontiadis>,
+        <http://ceur-ws.org/Vol-345/#MagdaiNikolaraizi>,
+        <http://ceur-ws.org/Vol-345/#PanagiotisiPetrantonakis>,
+        <http://ceur-ws.org/Vol-345/#SofiaiKoutsogiorgou>,
+        <http://ceur-ws.org/Vol-345/#VasilikiiKosmidou>,
+        <http://ceur-ws.org/Vol-345/#pagesi35-39> .
+
+<http://ceur-ws.org/Vol-345/#paper2> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-345/> ;
+    ns7:title "NOESIS: An Enhanced Educational Environment for Kids with Autism Spectrum Disorders" ;
+    ns2:section <http://ceur-ws.org/Vol-345/#JamesOheneDjanandMarionHershpages15> ;
+    ns4:author <http://ceur-ws.org/Vol-345/#AlexandraiTsiligkyri>,
+        <http://ceur-ws.org/Vol-345/#DimitrisiBolis>,
+        <http://ceur-ws.org/Vol-345/#JasoniVittorias>,
+        <http://ceur-ws.org/Vol-345/#LeontiosiJ.iHadjileontiadis>,
+        <http://ceur-ws.org/Vol-345/#PanagiotisiPetrantonakis>,
+        <http://ceur-ws.org/Vol-345/#VasilikiiKosmidou>,
+        <http://ceur-ws.org/Vol-345/#pagesi10-14> .
+
+<http://ceur-ws.org/Vol-345/> a ns3:Proceedings ;
+    ns3:hasPart <http://ceur-ws.org/Vol-345/#paper1>,
+        <http://ceur-ws.org/Vol-345/#paper10>,
+        <http://ceur-ws.org/Vol-345/#paper11>,
+        <http://ceur-ws.org/Vol-345/#paper2>,
+        <http://ceur-ws.org/Vol-345/#paper3>,
+        <http://ceur-ws.org/Vol-345/#paper4>,
+        <http://ceur-ws.org/Vol-345/#paper5>,
+        <http://ceur-ws.org/Vol-345/#paper6>,
+        <http://ceur-ws.org/Vol-345/#paper7>,
+        <http://ceur-ws.org/Vol-345/#paper8>,
+        <http://ceur-ws.org/Vol-345/#paper9> ;
+    ns3:hasSession <http://ceur-ws.org/Vol-345/#JamesOheneDjanandMarionHershpages15> ;
+    ns9:issued "2008-05-16T00:00:00+00:00"^^xsd:dateTime ;
+    ns2:presentedAt <http://ceur-ws.org/Vol-345/#event> ;
+    ns4:editor <http://ceur-ws.org/Vol-345/#JamesiOhene-Djan>,
+        <http://ceur-ws.org/Vol-345/#MarioniHersh>,
         <http://ceur-ws.org/Vol-345/#WALTDiwasiheldiiniconjunctioniwithithe> .
 
-<http://ceur-ws.org/Vol-345/#JamesiOhene-Djan> a ns4:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/JamesiOhene-Djan> ;
-    ns4:name "James Ohene-Djan" .
-
-<http://ceur-ws.org/Vol-345/#MarioniHershiiDepartmentiofiComputingGoldsmithsiCollegeUniversityiofiLondonSE> a ns4:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/MarioniHershiiDepartmentiofiComputingGoldsmithsiCollegeUniversityiofiLondonSE> ;
-    ns4:name "Marion Hersh  Department of ComputingGoldsmiths CollegeUniversity of LondonSE" .
-
-<http://ceur-ws.org/Vol-345/#WALTDiwasiheldiiniconjunctioniwithithe> a ns4:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/WALTDiwasiheldiiniconjunctioniwithithe> ;
-    ns4:name "WALTD was held in conjunction with the" .
-
-<http://ceur-ws.org/Vol-345/#event> a ns1:WorkshopEvent ;
-    ns1:hasLocation <http://dbpedia.org/resource/Spain> ;
-    ns1:hasPart <http://ceur-ws.org/Vol-345/#part-WALTD> ;
-    ns1:isSubEventOf <http://ceur-ws.org/Vol-345/#conf> ;
-    ns6:beginsAtDatetime "2008-07-01T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:endsAtDatetime "2008-07-05T00:00:00+00:00"^^xsd:dateTime ;
-    ns5:license <http://choosealicense.com/licenses/no-license/> .
+<http://ceur-ws.org/Vol-345/#JamesOheneDjanandMarionHershpages15> a ns3:SessionEvent ;
+    ns3:partOf <http://ceur-ws.org/Vol-345/> ;
+    ns7:title "James Ohene-Djan and Marion Hersh, pages 1-5" .
 

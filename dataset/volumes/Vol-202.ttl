@@ -1,11 +1,12 @@
 @prefix ns1: <http://www.w3.org/2002/07/owl#> .
 @prefix ns2: <http://xmlns.com/foaf/0.1/> .
-@prefix ns3: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns4: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns5: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns6: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns8: <http://purl.org/ontology/bibo/#> .
+@prefix ns3: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns4: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns5: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns6: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns7: <http://purl.org/ontology/bibo/#> .
+@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns9: <http://purl.org/dc/elements/1.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -177,7 +178,7 @@
     ns2:name "Richard Guilii" .
 
 <http://ceur-ws.org/Vol-202/#S> a ns2:Person ;
-    ns3:affiliation "�ren Auer #" ;
+    ns4:affiliation "�ren Auer #" ;
     ns1:sameAs <http://ceur-ws.org/persons/S> ;
     ns2:name "S" .
 
@@ -187,12 +188,12 @@
     ns2:name "Sanguk Noh" .
 
 <http://ceur-ws.org/Vol-202/#SiegfriediHandschuh> a ns2:Person ;
-    ns3:affiliation "" ;
+    ns4:affiliation "" ;
     ns1:sameAs <http://ceur-ws.org/persons/SiegfriediHandschuh> ;
     ns2:name "Siegfried Handschuh" .
 
 <http://ceur-ws.org/Vol-202/#StefaniDecker> a ns2:Person ;
-    ns3:affiliation "" ;
+    ns4:affiliation "" ;
     ns1:sameAs <http://ceur-ws.org/persons/StefaniDecker> ;
     ns2:name "Stefan Decker" .
 
@@ -241,104 +242,104 @@
     ns2:made <http://ceur-ws.org/Vol-202/#SEMDESK2006_0001> ;
     ns2:name "YASUHISA KATO" .
 
-<http://ceur-ws.org/Vol-202/#event> a ns4:WorkshopEvent ;
-    ns4:hasLocation <http://dbpedia.org/resource/United_States> ;
-    ns4:hasPart <http://ceur-ws.org/Vol-202/#part-SemDesk> ;
-    ns4:isSubEventOf <http://ceur-ws.org/Vol-202/#conf> ;
-    ns7:beginsAtDatetime "2006-11-06T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:endsAtDatetime "2006-11-06T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:license <http://choosealicense.com/licenses/no-license/> ;
+<http://ceur-ws.org/Vol-202/#event> a ns5:WorkshopEvent ;
+    ns5:hasLocation <http://dbpedia.org/resource/United_States> ;
+    ns5:hasPart <http://ceur-ws.org/Vol-202/#part-SemDesk> ;
+    ns5:isSubEventOf <http://ceur-ws.org/Vol-202/#conf> ;
+    ns6:beginsAtDatetime "2007-01-22T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:endsAtDatetime "2007-01-22T00:00:00+00:00"^^xsd:dateTime ;
+    ns9:license "http://choosealicense.com/licenses/no-license/" ;
     rdfs:seeAlso <http://ceur-ws.org/Vol-175/#event> .
 
 <http://ceur-ws.org/Vol-202/#JackiPark> a ns2:Person ;
-    ns3:affiliation "SRI, SRI International, Menlo Park" ;
+    ns4:affiliation "SRI, SRI International, Menlo Park" ;
     ns1:sameAs <http://ceur-ws.org/persons/JackiPark> ;
     ns2:made <http://ceur-ws.org/Vol-202/#SEMDESK2006_0035> ;
     ns2:name "Jack Park" .
 
 <http://ceur-ws.org/Vol-202/#LeoiSauermann> a ns2:Person ;
-    ns3:affiliation "DFKI, DFKI German Research Center for Artificial Intelligence GmbH" ;
+    ns4:affiliation "DFKI, DFKI German Research Center for Artificial Intelligence GmbH" ;
     ns1:sameAs <http://ceur-ws.org/persons/LeoiSauermann> ;
     ns2:made <http://ceur-ws.org/Vol-202/#SEMDESK2006_0008> ;
     ns2:name "Leo Sauermann" .
 
-<http://ceur-ws.org/Vol-202/#SEMDESK2006_0009> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-202/> ;
-    ns6:title "SemDAV: A File Exchange Protocol for the Semantic Desktop" ;
-    ns3:author <http://ceur-ws.org/Vol-202/#BernhardiSchandl> .
+<http://ceur-ws.org/Vol-202/#SEMDESK2006_0009> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-202/> ;
+    ns3:title "SemDAV: A File Exchange Protocol for the Semantic Desktop" ;
+    ns4:author <http://ceur-ws.org/Vol-202/#BernhardiSchandl> .
 
-<http://ceur-ws.org/Vol-202/#SEMDESK2006_0010> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-202/> ;
-    ns6:title "An Overview of Information Management and Knowledge Work Studies: Lessons for the Semantic Desktop" ;
-    ns3:author <http://ceur-ws.org/Vol-202/#EyaliOren> .
+<http://ceur-ws.org/Vol-202/#SEMDESK2006_0010> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-202/> ;
+    ns3:title "An Overview of Information Management and Knowledge Work Studies: Lessons for the Semantic Desktop" ;
+    ns4:author <http://ceur-ws.org/Vol-202/#EyaliOren> .
 
-<http://ceur-ws.org/Vol-202/#SEMDESK2006_0035> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-202/> ;
-    ns6:title "Promiscuous Semantic Federation: Semantic Desktops meet Web 2.0" ;
-    ns3:author <http://ceur-ws.org/Vol-202/#JackiPark> .
+<http://ceur-ws.org/Vol-202/#SEMDESK2006_0035> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-202/> ;
+    ns3:title "Promiscuous Semantic Federation: Semantic Desktops meet Web 2.0" ;
+    ns4:author <http://ceur-ws.org/Vol-202/#JackiPark> .
 
-<http://ceur-ws.org/Vol-202/#SEMDESK2006_0036> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-202/> ;
-    ns6:title "The Measurable Belief of Trust in Social Networks" ;
-    ns3:author <http://ceur-ws.org/Vol-202/#SangukiNoh> .
+<http://ceur-ws.org/Vol-202/#SEMDESK2006_0036> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-202/> ;
+    ns3:title "The Measurable Belief of Trust in Social Networks" ;
+    ns4:author <http://ceur-ws.org/Vol-202/#SangukiNoh> .
 
-<http://ceur-ws.org/Vol-202/#SEMDESK2006_0014> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-202/> ;
-    ns6:title "Application Design and Interoperability for Managing Personal Information in the Semantic Desktop" ;
-    ns3:author <http://ceur-ws.org/Vol-202/#HuiyongiXiao>,
+<http://ceur-ws.org/Vol-202/#SEMDESK2006_0014> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-202/> ;
+    ns3:title "Application Design and Interoperability for Managing Personal Information in the Semantic Desktop" ;
+    ns4:author <http://ceur-ws.org/Vol-202/#HuiyongiXiao>,
         <http://ceur-ws.org/Vol-202/#IsabeliCruz> .
 
-<http://ceur-ws.org/Vol-202/#SEMDESK2006_0037> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-202/> ;
-    ns6:title "Open Constitution Based Knowledge Communities in the Semantic Web" ;
-    ns3:author <http://ceur-ws.org/Vol-202/#ChideiGroenouwe>,
+<http://ceur-ws.org/Vol-202/#SEMDESK2006_0037> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-202/> ;
+    ns3:title "Open Constitution Based Knowledge Communities in the Semantic Web" ;
+    ns4:author <http://ceur-ws.org/Vol-202/#ChideiGroenouwe>,
         <http://ceur-ws.org/Vol-202/#JaniTop> .
 
-<http://ceur-ws.org/Vol-202/#SEMDESK2006_0011> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-202/> ;
-    ns6:title "Semantic Clipboard - Semantically Enriched Data Exchange Between Desktop Applications" ;
-    ns3:author <http://ceur-ws.org/Vol-202/#GeraldiReif>,
+<http://ceur-ws.org/Vol-202/#SEMDESK2006_0011> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-202/> ;
+    ns3:title "Semantic Clipboard - Semantically Enriched Data Exchange Between Desktop Applications" ;
+    ns4:author <http://ceur-ws.org/Vol-202/#GeraldiReif>,
         <http://ceur-ws.org/Vol-202/#HaraldiGall>,
         <http://ceur-ws.org/Vol-202/#MartiniMorger> .
 
-<http://ceur-ws.org/Vol-202/#SEMDESK2006_0032> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-202/> ;
-    ns6:title "Spontaneous Collaboration via Browsing of Semantic Data on Mobile Devices" ;
-    ns3:author <http://ceur-ws.org/Vol-202/#DeepaliiKhushraj>,
+<http://ceur-ws.org/Vol-202/#SEMDESK2006_0032> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-202/> ;
+    ns3:title "Spontaneous Collaboration via Browsing of Semantic Data on Mobile Devices" ;
+    ns4:author <http://ceur-ws.org/Vol-202/#DeepaliiKhushraj>,
         <http://ceur-ws.org/Vol-202/#OraiLassila>,
         <http://ceur-ws.org/Vol-202/#RalphiR.iSwick> .
 
-<http://ceur-ws.org/Vol-202/#SEMDESK2006_0008> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-202/> ;
-    ns6:title "PIMO Population and Semantic Annotation for the Gnowsis Semantic Desktop" ;
-    ns3:author <http://ceur-ws.org/Vol-202/#AnsgariBernardi>,
+<http://ceur-ws.org/Vol-202/#SEMDESK2006_0008> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-202/> ;
+    ns3:title "PIMO Population and Semantic Annotation for the Gnowsis Semantic Desktop" ;
+    ns4:author <http://ceur-ws.org/Vol-202/#AnsgariBernardi>,
         <http://ceur-ws.org/Vol-202/#LeoiSauermann>,
         <http://ceur-ws.org/Vol-202/#LuisiSanchez>,
         <http://ceur-ws.org/Vol-202/#NorbertoiFernandez-Garcia> .
 
-<http://ceur-ws.org/Vol-202/#SEMDESK2006_0001> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-202/> ;
-    ns6:title "Method of Retrieving a Web Browsing Experience Using Semantic Periods" ;
-    ns3:author <http://ceur-ws.org/Vol-202/#AKIMICHIiTANAKA>,
+<http://ceur-ws.org/Vol-202/#SEMDESK2006_0001> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-202/> ;
+    ns3:title "Method of Retrieving a Web Browsing Experience Using Semantic Periods" ;
+    ns4:author <http://ceur-ws.org/Vol-202/#AKIMICHIiTANAKA>,
         <http://ceur-ws.org/Vol-202/#TETSUOiHIDAKA>,
         <http://ceur-ws.org/Vol-202/#TETSUSHIiMORITA>,
         <http://ceur-ws.org/Vol-202/#TSUNEKOiKURA>,
         <http://ceur-ws.org/Vol-202/#YASUHISAiKATO> .
 
-<http://ceur-ws.org/Vol-202/#SEMDESK2006_0033> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-202/> ;
-    ns6:title "A Case Study in Engineering a Knowledge Base for an Intelligent Personal Assistant" ;
-    ns3:author <http://ceur-ws.org/Vol-202/#AdamiCheyer>,
+<http://ceur-ws.org/Vol-202/#SEMDESK2006_0033> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-202/> ;
+    ns3:title "A Case Study in Engineering a Knowledge Base for an Intelligent Personal Assistant" ;
+    ns4:author <http://ceur-ws.org/Vol-202/#AdamiCheyer>,
         <http://ceur-ws.org/Vol-202/#BilliJarrold>,
         <http://ceur-ws.org/Vol-202/#JohniNiekarsz>,
         <http://ceur-ws.org/Vol-202/#KareniMyers>,
         <http://ceur-ws.org/Vol-202/#RichardiGuilii>,
         <http://ceur-ws.org/Vol-202/#VinayiChaudhri> .
 
-<http://ceur-ws.org/Vol-202/#SEMDESK2006_0025> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-202/> ;
-    ns6:title "Supporting Mobile Service Interaction through Semantic Service Description Annotation and Automatic Interface Generation" ;
-    ns3:author <http://ceur-ws.org/Vol-202/#AlbrechtiSchmidt>,
+<http://ceur-ws.org/Vol-202/#SEMDESK2006_0025> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-202/> ;
+    ns3:title "Supporting Mobile Service Interaction through Semantic Service Description Annotation and Automatic Interface Generation" ;
+    ns4:author <http://ceur-ws.org/Vol-202/#AlbrechtiSchmidt>,
         <http://ceur-ws.org/Vol-202/#EnricoiRukzio>,
         <http://ceur-ws.org/Vol-202/#GregoriBroll>,
         <http://ceur-ws.org/Vol-202/#JohniHamard>,
@@ -346,10 +347,10 @@
         <http://ceur-ws.org/Vol-202/#PaolucciiMassimo>,
         <http://ceur-ws.org/Vol-202/#SveniSiorpaes> .
 
-<http://ceur-ws.org/Vol-202/#SEMDESK2006_0028> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-202/> ;
-    ns6:title "The Beagle++ Toolbox: Towards an Extendable Desktop Search Architecture" ;
-    ns3:author <http://ceur-ws.org/Vol-202/#EkateriniiIoannou>,
+<http://ceur-ws.org/Vol-202/#SEMDESK2006_0028> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-202/> ;
+    ns3:title "The Beagle++ Toolbox: Towards an Extendable Desktop Search Architecture" ;
+    ns4:author <http://ceur-ws.org/Vol-202/#EkateriniiIoannou>,
         <http://ceur-ws.org/Vol-202/#EnricoiMinack>,
         <http://ceur-ws.org/Vol-202/#IngoiBrunkhorst>,
         <http://ceur-ws.org/Vol-202/#JulieniGaugaz>,
@@ -359,8 +360,8 @@
         <http://ceur-ws.org/Vol-202/#TerezaiIofciu>,
         <http://ceur-ws.org/Vol-202/#WolfgangiNejdl> .
 
-<http://ceur-ws.org/Vol-202/> a ns4:Proceedings ;
-    ns4:hasPart <http://ceur-ws.org/Vol-202/#SEMDESK2006_0001>,
+<http://ceur-ws.org/Vol-202/> a ns5:Proceedings ;
+    ns5:hasPart <http://ceur-ws.org/Vol-202/#SEMDESK2006_0001>,
         <http://ceur-ws.org/Vol-202/#SEMDESK2006_0008>,
         <http://ceur-ws.org/Vol-202/#SEMDESK2006_0009>,
         <http://ceur-ws.org/Vol-202/#SEMDESK2006_0010>,
@@ -373,9 +374,9 @@
         <http://ceur-ws.org/Vol-202/#SEMDESK2006_0035>,
         <http://ceur-ws.org/Vol-202/#SEMDESK2006_0036>,
         <http://ceur-ws.org/Vol-202/#SEMDESK2006_0037> ;
-    ns5:issued "2006-11-06T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:presentedAt <http://ceur-ws.org/Vol-202/#event> ;
-    ns3:editor <http://ceur-ws.org/Vol-202/#JackiPark>,
+    ns8:issued "2006-11-06T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:presentedAt <http://ceur-ws.org/Vol-202/#event> ;
+    ns4:editor <http://ceur-ws.org/Vol-202/#JackiPark>,
         <http://ceur-ws.org/Vol-202/#LeoiSauermann>,
         <http://ceur-ws.org/Vol-202/#S>,
         <http://ceur-ws.org/Vol-202/#SiegfriediHandschuh>,

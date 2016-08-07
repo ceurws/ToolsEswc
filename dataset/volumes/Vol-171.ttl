@@ -1,11 +1,12 @@
 @prefix ns1: <http://xmlns.com/foaf/0.1/> .
 @prefix ns2: <http://www.w3.org/2002/07/owl#> .
-@prefix ns3: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns4: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns3: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns4: <http://swrc.ontoware.org/ontology/#> .
 @prefix ns5: <http://purl.org/dc/elements/1.1/#> .
 @prefix ns6: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
 @prefix ns8: <http://purl.org/ontology/bibo/#> .
+@prefix ns9: <http://purl.org/dc/elements/1.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -22,7 +23,7 @@
     ns1:name "Alexandre Gonçalves" .
 
 <http://ceur-ws.org/Vol-171/#BettinaiHoser> a ns1:Person ;
-    ns3:affiliation "Chair of Informationservices and Electronic Markets, Universität Karlsruhe" ;
+    ns4:affiliation "Chair of Informationservices and Electronic Markets, Universität Karlsruhe" ;
     ns2:sameAs <http://ceur-ws.org/persons/BettinaiHoser> ;
     ns1:name "Bettina Hoser" .
 
@@ -37,7 +38,7 @@
     ns1:name "Chris Denham" .
 
 <http://ceur-ws.org/Vol-171/#ChristophiSchmitz> a ns1:Person ;
-    ns3:affiliation "" ;
+    ns4:affiliation "" ;
     ns2:sameAs <http://ceur-ws.org/persons/ChristophiSchmitz> ;
     ns1:name "Christoph Schmitz" .
 
@@ -52,12 +53,12 @@
     ns1:name "Elke Michlmayr" .
 
 <http://ceur-ws.org/Vol-171/#GerdiStumme> a ns1:Person ;
-    ns3:affiliation "" ;
+    ns4:affiliation "" ;
     ns2:sameAs <http://ceur-ws.org/persons/GerdiStumme> ;
     ns1:name "Gerd Stumme" .
 
 <http://ceur-ws.org/Vol-171/#HarithiAlani> a ns1:Person ;
-    ns3:affiliation "Intelligence, Agents, Multimedia Research Group, University of Southampton" ;
+    ns4:affiliation "Intelligence, Agents, Multimedia Research Group, University of Southampton" ;
     ns2:sameAs <http://ceur-ws.org/persons/HarithiAlani> ;
     ns1:name "Harith Alani" .
 
@@ -116,69 +117,69 @@
     ns1:made <http://ceur-ws.org/Vol-171/#paper9> ;
     ns1:name "Stefan Decker" .
 
-<http://ceur-ws.org/Vol-171/#event> a ns4:WorkshopEvent ;
-    ns4:hasLocation <http://dbpedia.org/resource/Republic_of_Ireland> ;
-    ns4:hasPart <http://ceur-ws.org/Vol-171/#part-SNA> ;
-    ns4:isSubEventOf <http://ceur-ws.org/Vol-171/#conf> ;
-    ns7:beginsAtDatetime "2005-11-07T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:endsAtDatetime "2005-11-07T00:00:00+00:00"^^xsd:dateTime ;
-    ns5:license <http://choosealicense.com/licenses/no-license/> .
+<http://ceur-ws.org/Vol-171/#event> a ns3:WorkshopEvent ;
+    ns3:hasLocation <http://dbpedia.org/resource/Republic_of_Ireland> ;
+    ns3:hasPart <http://ceur-ws.org/Vol-171/#part-ISWC> ;
+    ns3:isSubEventOf <http://ceur-ws.org/Vol-171/#conf> ;
+    ns7:beginsAtDatetime "2006-01-16T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:endsAtDatetime "2006-01-16T00:00:00+00:00"^^xsd:dateTime ;
+    ns9:license "http://choosealicense.com/licenses/no-license/" .
 
-<http://ceur-ws.org/Vol-171/#paper1> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-171/> ;
+<http://ceur-ws.org/Vol-171/#paper1> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-171/> ;
     ns5:title "A Case Study onEmergent Semantics in Communities" ;
-    ns3:author <http://ceur-ws.org/Vol-171/#ElkeiMichlmayr> .
+    ns4:author <http://ceur-ws.org/Vol-171/#ElkeiMichlmayr> .
 
-<http://ceur-ws.org/Vol-171/#paper2> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-171/> ;
+<http://ceur-ws.org/Vol-171/#paper2> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-171/> ;
     ns5:title "Personalizing Applications through Integration of Inferred Trust Values in Semantic Web-Based Social Networks" ;
-    ns3:author <http://ceur-ws.org/Vol-171/#JenniferiGolbeck> .
+    ns4:author <http://ceur-ws.org/Vol-171/#JenniferiGolbeck> .
 
-<http://ceur-ws.org/Vol-171/#paper3> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-171/> ;
+<http://ceur-ws.org/Vol-171/#paper3> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-171/> ;
     ns5:title "Generalized Preferential Attachment: Towards Realistic Socio-Semantic Network Models" ;
-    ns3:author <http://ceur-ws.org/Vol-171/#CamilleiRoth> .
+    ns4:author <http://ceur-ws.org/Vol-171/#CamilleiRoth> .
 
-<http://ceur-ws.org/Vol-171/#paper4> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-171/> ;
+<http://ceur-ws.org/Vol-171/#paper4> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-171/> ;
     ns5:title "Network Analysis as a Basis for Partitioning Class Hierarchies" ;
-    ns3:author <http://ceur-ws.org/Vol-171/#HeineriStuckenschmidt> .
+    ns4:author <http://ceur-ws.org/Vol-171/#HeineriStuckenschmidt> .
 
-<http://ceur-ws.org/Vol-171/#paper8> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-171/> ;
+<http://ceur-ws.org/Vol-171/#paper8> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-171/> ;
     ns5:title "Ontologies are Us: A Unified Model of Social Networks and Semantics" ;
-    ns3:author <http://ceur-ws.org/Vol-171/#PeteriMika> .
+    ns4:author <http://ceur-ws.org/Vol-171/#PeteriMika> .
 
-<http://ceur-ws.org/Vol-171/#paper9> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-171/> ;
+<http://ceur-ws.org/Vol-171/#paper9> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-171/> ;
     ns5:title "From the Semantic Web to Web 2.0 - Semantic Web for Social Networks" ;
-    ns3:author <http://ceur-ws.org/Vol-171/#StefaniDecker> .
+    ns4:author <http://ceur-ws.org/Vol-171/#StefaniDecker> .
 
-<http://ceur-ws.org/Vol-171/#paper6> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-171/> ;
+<http://ceur-ws.org/Vol-171/#paper6> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-171/> ;
     ns5:title "The Social Semantics of LiveJournal FOAF: Structure and Change from 2004 to 2005" ;
-    ns3:author <http://ceur-ws.org/Vol-171/#ElijahiWright>,
+    ns4:author <http://ceur-ws.org/Vol-171/#ElijahiWright>,
         <http://ceur-ws.org/Vol-171/#JohniC.iPaolillo>,
         <http://ceur-ws.org/Vol-171/#SarahiMercure> .
 
-<http://ceur-ws.org/Vol-171/#paper5> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-171/> ;
+<http://ceur-ws.org/Vol-171/#paper5> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-171/> ;
     ns5:title "BuddyFinder-CORDER: Leveraging Social Networks for Matchmaking by Opportunistic Discovery" ;
-    ns3:author <http://ceur-ws.org/Vol-171/#AlexandreiGon%C3%A7alves>,
+    ns4:author <http://ceur-ws.org/Vol-171/#AlexandreiGon%C3%A7alves>,
         <http://ceur-ws.org/Vol-171/#ChrisiDenham>,
         <http://ceur-ws.org/Vol-171/#JianhaniZhu>,
         <http://ceur-ws.org/Vol-171/#MarciEisenstadt> .
 
-<http://ceur-ws.org/Vol-171/#paper7> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-171/> ;
+<http://ceur-ws.org/Vol-171/#paper7> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-171/> ;
     ns5:title "Analysing Semantic Interoperability in Bioinformatic Database Networks" ;
-    ns3:author <http://ceur-ws.org/Vol-171/#AdrianaiBudura>,
+    ns4:author <http://ceur-ws.org/Vol-171/#AdrianaiBudura>,
         <http://ceur-ws.org/Vol-171/#JulieniGaugaz>,
         <http://ceur-ws.org/Vol-171/#KarliAberer>,
         <http://ceur-ws.org/Vol-171/#PhilippeiCudr%C3%A9-Mauroux> .
 
-<http://ceur-ws.org/Vol-171/> a ns4:Proceedings ;
-    ns4:hasPart <http://ceur-ws.org/Vol-171/#paper1>,
+<http://ceur-ws.org/Vol-171/> a ns3:Proceedings ;
+    ns3:hasPart <http://ceur-ws.org/Vol-171/#paper1>,
         <http://ceur-ws.org/Vol-171/#paper2>,
         <http://ceur-ws.org/Vol-171/#paper3>,
         <http://ceur-ws.org/Vol-171/#paper4>,
@@ -189,7 +190,7 @@
         <http://ceur-ws.org/Vol-171/#paper9> ;
     ns6:issued "2006-01-16T00:00:00+00:00"^^xsd:dateTime ;
     ns8:presentedAt <http://ceur-ws.org/Vol-171/#event> ;
-    ns3:editor <http://ceur-ws.org/Vol-171/#BettinaiHoser>,
+    ns4:editor <http://ceur-ws.org/Vol-171/#BettinaiHoser>,
         <http://ceur-ws.org/Vol-171/#ChristophiSchmitz>,
         <http://ceur-ws.org/Vol-171/#GerdiStumme>,
         <http://ceur-ws.org/Vol-171/#HarithiAlani> .

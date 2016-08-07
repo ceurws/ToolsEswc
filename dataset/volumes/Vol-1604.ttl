@@ -1,184 +1,41 @@
-@prefix ns1: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns2: <http://xmlns.com/foaf/0.1/> .
-@prefix ns3: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns4: <http://purl.org/ontology/bibo/#> .
-@prefix ns5: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns6: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns1: <http://xmlns.com/foaf/0.1/> .
+@prefix ns2: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns3: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns4: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns5: <http://purl.org/dc/elements/1.1/> .
+@prefix ns6: <http://data.semanticweb.org/ns/swc/ontology/#> .
 @prefix ns7: <http://www.w3.org/2002/07/owl#> .
-@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns8: <http://purl.org/ontology/bibo/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1604/#GiliRegev> a ns2:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/GiliRegev> ;
-    ns2:made <http://ceur-ws.org/Vol-1604/#Paper6> ;
-    ns2:name "Gil Regev" .
-
-<http://ceur-ws.org/Vol-1604/#GoricaiTapandjieva> a ns2:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/GoricaiTapandjieva> ;
-    ns2:made <http://ceur-ws.org/Vol-1604/#Paper2> ;
-    ns2:name "Gorica Tapandjieva" .
-
-<http://ceur-ws.org/Vol-1604/#HansiWeigand> a ns2:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/HansiWeigand> ;
-    ns2:made <http://ceur-ws.org/Vol-1604/#Paper5> ;
-    ns2:name "Hans Weigand" .
-
-<http://ceur-ws.org/Vol-1604/#NaomiiUnkelos-Shpigel> a ns2:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/NaomiiUnkelos-Shpigel> ;
-    ns2:made <http://ceur-ws.org/Vol-1604/#Paper7> ;
-    ns2:name "Naomi Unkelos-Shpigel" .
-
-<http://ceur-ws.org/Vol-1604/#NinaiHabjan> a ns2:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/NinaiHabjan> ;
-    ns2:made <http://ceur-ws.org/Vol-1604/#Paper1> ;
-    ns2:name "Nina Habjan" .
-
-<http://ceur-ws.org/Vol-1604/#PaolaiMauri> a ns2:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/PaolaiMauri> ;
-    ns2:made <http://ceur-ws.org/Vol-1604/#Paper4> ;
-    ns2:name "Paola Mauri" .
-
-<http://ceur-ws.org/Vol-1604/#PeteriBednar> a ns2:Person ;
-    ns5:affiliation "" ;
-    ns7:sameAs <http://ceur-ws.org/persons/PeteriBednar> ;
-    ns2:name "Peter Bednar" .
-
-<http://ceur-ws.org/Vol-1604/#Shao-FangiWen> a ns2:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/Shao-FangiWen> ;
-    ns2:made <http://ceur-ws.org/Vol-1604/#Paper8> ;
-    ns2:name "Shao-Fang Wen" .
-
-<http://ceur-ws.org/Vol-1604/#StewartiKowalski> a ns2:Person ;
-    ns5:affiliation "" ;
-    ns7:sameAs <http://ceur-ws.org/persons/StewartiKowalski> ;
-    ns2:name "Stewart Kowalski" .
-
-<http://ceur-ws.org/Vol-1604/#ThomasiHerrmann> a ns2:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/ThomasiHerrmann> ;
-    ns2:made <http://ceur-ws.org/Vol-1604/#Paper9> ;
-    ns2:name "Thomas Herrmann" .
-
-<http://ceur-ws.org/Vol-1604/#event> a ns1:WorkshopEvent ;
-    ns1:hasLocation <http://dbpedia.org/resource/Euro_gold_and_silver_commemorative_coins> ;
-    ns1:hasPart <http://ceur-ws.org/Vol-1604/#part-IS> ;
-    ns1:isSubEventOf <http://ceur-ws.org/Vol-1604/#conf> ;
-    ns6:beginsAtDatetime "2016-06-14T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:endsAtDatetime "2016-06-14T00:00:00+00:00"^^xsd:dateTime ;
-    rdfs:seeAlso <http://ceur-ws.org/Vol-1374/#event> .
-
-<http://ceur-ws.org/Vol-1604/#IliaiBider> a ns2:Person ;
-    ns5:affiliation "" ;
-    ns7:sameAs <http://ceur-ws.org/persons/IliaiBider> ;
-    ns2:made <http://ceur-ws.org/Vol-1604/#Paper3> ;
-    ns2:name "Ilia Bider" .
-
-<http://ceur-ws.org/Vol-1604/#Paper1> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-1604/> ;
-    ns3:title "Evaluating ERP as a Composition of Different Functionalities from Key Stakeholder Perspectives" ;
-    ns4:endPage 14 ;
-    ns4:numPages 14 ;
-    ns4:section <http%3A//ceur-ws.org/Vol-1604/%23Session1%3AIndustrialexperienceandcasestudies> ;
-    ns4:startPage 1 ;
-    ns5:author <http://ceur-ws.org/Vol-1604/#NinaiHabjan> .
-
-<http://ceur-ws.org/Vol-1604/#Paper2> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-1604/> ;
-    ns3:title "SLA: To Sign or Not to Sign" ;
-    ns4:endPage 24 ;
-    ns4:numPages 10 ;
-    ns4:section <http%3A//ceur-ws.org/Vol-1604/%23Session1%3AIndustrialexperienceandcasestudies> ;
-    ns4:startPage 15 ;
-    ns5:author <http://ceur-ws.org/Vol-1604/#GoricaiTapandjieva> .
-
-<http://ceur-ws.org/Vol-1604/#Paper3> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-1604/> ;
-    ns3:title "Stray Lamb - Misalignment in a Socio-technical Structure of an Enterprise when Transiting to Intelligent Products" ;
-    ns4:endPage 38 ;
-    ns4:numPages 14 ;
-    ns4:section <http%3A//ceur-ws.org/Vol-1604/%23Session1%3AIndustrialexperienceandcasestudies> ;
-    ns4:startPage 25 ;
-    ns5:author <http://ceur-ws.org/Vol-1604/#IliaiBider> .
-
-<http://ceur-ws.org/Vol-1604/#Paper4> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-1604/> ;
-    ns3:title "Applying Social and Technical Topics in the Design of Management and Information Systems" ;
-    ns4:endPage 49 ;
-    ns4:numPages 11 ;
-    ns4:section <http%3A//ceur-ws.org/Vol-1604/%23Session1%3AIndustrialexperienceandcasestudies> ;
-    ns4:startPage 39 ;
-    ns5:author <http://ceur-ws.org/Vol-1604/#PaolaiMauri> .
-
-<http://ceur-ws.org/Vol-1604/#Paper5> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-1604/> ;
-    ns3:title "The Value of a Meta Perspective in Social Innovation" ;
-    ns4:endPage 64 ;
-    ns4:numPages 15 ;
-    ns4:section <http%3A//ceur-ws.org/Vol-1604/%23Session2%3ATheoryandTeaching> ;
-    ns4:startPage 50 ;
-    ns5:author <http://ceur-ws.org/Vol-1604/#HansiWeigand> .
-
-<http://ceur-ws.org/Vol-1604/#Paper6> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-1604/> ;
-    ns3:title "Introducing Ethnography to IS Practitioners with an Experiential Pedagogy" ;
-    ns4:endPage 74 ;
-    ns4:numPages 10 ;
-    ns4:section <http%3A//ceur-ws.org/Vol-1604/%23Session2%3ATheoryandTeaching> ;
-    ns4:startPage 65 ;
-    ns5:author <http://ceur-ws.org/Vol-1604/#GiliRegev> .
-
-<http://ceur-ws.org/Vol-1604/#Paper7> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-1604/> ;
-    ns3:title "Ace That Game: Educating Students to Gamified Design Thinking" ;
-    ns4:endPage 82 ;
-    ns4:numPages 8 ;
-    ns4:section <http%3A//ceur-ws.org/Vol-1604/%23Session2%3ATheoryandTeaching> ;
-    ns4:startPage 75 ;
-    ns5:author <http://ceur-ws.org/Vol-1604/#NaomiiUnkelos-Shpigel> .
-
-<http://ceur-ws.org/Vol-1604/#Paper8> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-1604/> ;
-    ns3:title "Hyper Contextual Software Security Management for Open Source Software" ;
-    ns4:endPage 90 ;
-    ns4:numPages 8 ;
-    ns4:section <http%3A//ceur-ws.org/Vol-1604/%23Session2%3ATheoryandTeaching> ;
-    ns4:startPage 83 ;
-    ns5:author <http://ceur-ws.org/Vol-1604/#Shao-FangiWen> .
-
-<http://ceur-ws.org/Vol-1604/#Paper9> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-1604/> ;
-    ns3:title "Evaluating Socio-Technical Systems with Heuristics - A Feasible Approach?" ;
-    ns4:endPage 97 ;
-    ns4:numPages 7 ;
-    ns4:section <http%3A//ceur-ws.org/Vol-1604/%23Session2%3ATheoryandTeaching> ;
-    ns4:startPage 91 ;
-    ns5:author <http://ceur-ws.org/Vol-1604/#ThomasiHerrmann> .
-
-<http%3A//ceur-ws.org/Vol-1604/%23Session1%3AIndustrialexperienceandcasestudies> a ns1:SessionEvent ;
-    ns1:partOf <http://ceur-ws.org/Vol-1604/> ;
-    ns3:title "Session 1: Industrial experience and case studies" .
-
-<http%3A//ceur-ws.org/Vol-1604/%23Session2%3ATheoryandTeaching> a ns1:SessionEvent ;
-    ns1:partOf <http://ceur-ws.org/Vol-1604/> ;
-    ns3:title "Session 2: Theory and Teaching" .
-
-<http://ceur-ws.org/Vol-1604/> a ns1:Proceedings ;
-    ns1:hasPart <http://ceur-ws.org/Vol-1604/#Paper1>,
-        <http://ceur-ws.org/Vol-1604/#Paper2>,
-        <http://ceur-ws.org/Vol-1604/#Paper3>,
-        <http://ceur-ws.org/Vol-1604/#Paper4>,
-        <http://ceur-ws.org/Vol-1604/#Paper5>,
-        <http://ceur-ws.org/Vol-1604/#Paper6>,
-        <http://ceur-ws.org/Vol-1604/#Paper7>,
-        <http://ceur-ws.org/Vol-1604/#Paper8>,
-        <http://ceur-ws.org/Vol-1604/#Paper9> ;
-    ns1:hasSession <http%3A//ceur-ws.org/Vol-1604/%23Session1%3AIndustrialexperienceandcasestudies>,
-        <http%3A//ceur-ws.org/Vol-1604/%23Session2%3ATheoryandTeaching> ;
-    ns8:issued "2016-06-08T00:00:00+00:00"^^xsd:dateTime ;
-    ns4:presentedAt <http://ceur-ws.org/Vol-1604/#event> ;
-    ns5:editor <http://ceur-ws.org/Vol-1604/#IliaiBider>,
+<http://ceur-ws.org/Vol-1604/> a ns6:Proceedings ;
+    ns3:issued "2016-06-08T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:presentedAt <http://ceur-ws.org/Vol-1604/#event> ;
+    ns4:editor <http://ceur-ws.org/Vol-1604/#IliaiBider>,
         <http://ceur-ws.org/Vol-1604/#PeteriBednar>,
         <http://ceur-ws.org/Vol-1604/#StewartiKowalski> .
+
+<http://ceur-ws.org/Vol-1604/#IliaiBider> a ns1:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/IliaiBider> ;
+    ns1:name "Ilia Bider" .
+
+<http://ceur-ws.org/Vol-1604/#PeteriBednar> a ns1:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/PeteriBednar> ;
+    ns1:name "Peter Bednar" .
+
+<http://ceur-ws.org/Vol-1604/#StewartiKowalski> a ns1:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/StewartiKowalski> ;
+    ns1:name "Stewart Kowalski" .
+
+<http://ceur-ws.org/Vol-1604/#event> a ns6:WorkshopEvent ;
+    ns6:hasLocation <http://dbpedia.org/resource/Euro_gold_and_silver_commemorative_coins> ;
+    ns6:hasPart <http://ceur-ws.org/Vol-1604/#part-IS> ;
+    ns6:isSubEventOf <http://ceur-ws.org/Vol-1604/#conf> ;
+    ns2:beginsAtDatetime "2016-06-14T00:00:00+00:00"^^xsd:dateTime ;
+    ns2:endsAtDatetime "2016-06-14T00:00:00+00:00"^^xsd:dateTime ;
+    ns5:license "http://creativecommons.org/publicdomain/zero/1.0/" ;
+    rdfs:seeAlso <http://ceur-ws.org/Vol-1374/#event> .
 

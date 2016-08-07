@@ -1,186 +1,49 @@
-@prefix ns1: <http://xmlns.com/foaf/0.1/> .
-@prefix ns2: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns3: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns4: <http://purl.org/ontology/bibo/#> .
-@prefix ns5: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns6: <http://www.w3.org/2002/07/owl#> .
-@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns1: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns2: <http://purl.org/dc/elements/1.1/> .
+@prefix ns3: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns4: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns5: <http://www.w3.org/2002/07/owl#> .
+@prefix ns6: <http://xmlns.com/foaf/0.1/> .
+@prefix ns7: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns8: <http://purl.org/ontology/bibo/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1529/#AndreasiN%C3%BCrnberger> a ns1:Person ;
-    ns2:affiliation "" ;
-    ns6:sameAs <http://ceur-ws.org/persons/AndreasiN%C3%BCrnberger> ;
-    ns1:name "Andreas Nürnberger" .
+<http://ceur-ws.org/Vol-1529/> a ns4:Proceedings ;
+    ns1:issued "2015-12-16T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:presentedAt <http://ceur-ws.org/Vol-1529/#event> ;
+    ns7:editor <http://ceur-ws.org/Vol-1529/#AndreasiN%C3%BCrnberger>,
+        <http://ceur-ws.org/Vol-1529/#LiviaiPredoiu>,
+        <http://ceur-ws.org/Vol-1529/#SeamusiRoss>,
+        <http://ceur-ws.org/Vol-1529/#ThomasiRisse> .
 
-<http://ceur-ws.org/Vol-1529/#ChristianiT.iJacobs> a ns1:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/ChristianiT.iJacobs> ;
-    ns1:made <http://ceur-ws.org/Vol-1529/#paper2> ;
-    ns1:name "Christian T. Jacobs" .
+<http://ceur-ws.org/Vol-1529/#AndreasiN%C3%BCrnberger> a ns6:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/AndreasiN%C3%BCrnberger> ;
+    ns6:name "Andreas Nürnberger" .
 
-<http://ceur-ws.org/Vol-1529/#ClaudiaiNieder%C3%A9e> a ns1:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/ClaudiaiNieder%C3%A9e> ;
-    ns1:made <http://ceur-ws.org/Vol-1529/#paper1> ;
-    ns1:name "Claudia Niederée" .
+<http://ceur-ws.org/Vol-1529/#LiviaiPredoiu> a ns6:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/LiviaiPredoiu> ;
+    ns6:name "Livia Predoiu" .
 
-<http://ceur-ws.org/Vol-1529/#ElenaiDemidova> a ns1:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/ElenaiDemidova> ;
-    ns1:made <http://ceur-ws.org/Vol-1529/#paper7> ;
-    ns1:name "Elena Demidova" .
+<http://ceur-ws.org/Vol-1529/#SeamusiRoss> a ns6:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/SeamusiRoss> ;
+    ns6:name "Seamus Ross" .
 
-<http://ceur-ws.org/Vol-1529/#H%C3%A9l%C3%A8neideiRibaupierre> a ns1:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/H%C3%A9l%C3%A8neideiRibaupierre> ;
-    ns1:made <http://ceur-ws.org/Vol-1529/#paper4> ;
-    ns1:name "Hélène de Ribaupierre" .
+<http://ceur-ws.org/Vol-1529/#ThomasiRisse> a ns6:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/ThomasiRisse> ;
+    ns6:name "Thomas Risse" .
 
-<http://ceur-ws.org/Vol-1529/#Lena-LuiseiStahn> a ns1:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/Lena-LuiseiStahn> ;
-    ns1:made <http://ceur-ws.org/Vol-1529/#paper5> ;
-    ns1:name "Lena-Luise Stahn" .
-
-<http://ceur-ws.org/Vol-1529/#MarcoiPavan> a ns1:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/MarcoiPavan> ;
-    ns1:made <http://ceur-ws.org/Vol-1529/#paper3> ;
-    ns1:name "Marco Pavan" .
-
-<http://ceur-ws.org/Vol-1529/#SeamusiRoss> a ns1:Person ;
-    ns2:affiliation "" ;
-    ns6:sameAs <http://ceur-ws.org/persons/SeamusiRoss> ;
-    ns1:name "Seamus Ross" .
-
-<http://ceur-ws.org/Vol-1529/#ThaeriSamar> a ns1:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/ThaeriSamar> ;
-    ns1:made <http://ceur-ws.org/Vol-1529/#paper6> ;
-    ns1:name "Thaer Samar" .
-
-<http://ceur-ws.org/Vol-1529/#ThomasiRisse> a ns1:Person ;
-    ns2:affiliation "" ;
-    ns6:sameAs <http://ceur-ws.org/persons/ThomasiRisse> ;
-    ns1:name "Thomas Risse" .
-
-<http://ceur-ws.org/Vol-1529/#event> a ns3:WorkshopEvent ;
-    ns3:hasLocation <http://dbpedia.org/resource/Commemorative_coins_of_Poland> ;
-    ns3:hasPart <http://ceur-ws.org/Vol-1529/#part-SDA> ;
-    ns3:isSubEventOf <http://ceur-ws.org/Vol-1529/#conf> ;
-    ns8:beginsAtDatetime "2015-09-18T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:endsAtDatetime "2015-09-18T00:00:00+00:00"^^xsd:dateTime ;
+<http://ceur-ws.org/Vol-1529/#event> a ns4:WorkshopEvent ;
+    ns4:hasLocation <http://dbpedia.org/resource/Commemorative_coins_of_Poland> ;
+    ns4:hasPart <http://ceur-ws.org/Vol-1529/#part-ws> ;
+    ns4:isSubEventOf <http://ceur-ws.org/Vol-1529/#conf> ;
+    ns3:beginsAtDatetime "2015-09-18T00:00:00+00:00"^^xsd:dateTime ;
+    ns3:endsAtDatetime "2015-09-18T00:00:00+00:00"^^xsd:dateTime ;
+    ns2:license "http://creativecommons.org/publicdomain/zero/1.0/" ;
     rdfs:seeAlso <http://ceur-ws.org/Vol-1091/#event>,
         <http://ceur-ws.org/Vol-1306/#event>,
         <http://ceur-ws.org/Vol-801/#event>,
         <http://ceur-ws.org/Vol-912/#event> .
-
-<http://ceur-ws.org/Vol-1529/#metadataiincl.ibibliographicidataipublishediunder> a ns1:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/metadataiincl.ibibliographicidataipublishediunder> ;
-    ns1:made <http://ceur-ws.org/Vol-1529/#paperX1> ;
-    ns1:name "metadata incl. bibliographic data published under" .
-
-<http%3A//ceur-ws.org/Vol-1529/%23InvitedContribution> a ns3:SessionEvent ;
-    ns3:partOf <http://ceur-ws.org/Vol-1529/> ;
-    ns5:title "Invited Contribution" .
-
-<http://ceur-ws.org/Vol-1529/#LiviaiPredoiu> a ns1:Person ;
-    ns2:affiliation "" ;
-    ns6:sameAs <http://ceur-ws.org/persons/LiviaiPredoiu> ;
-    ns1:made <http://ceur-ws.org/Vol-1529/#paperX1> ;
-    ns1:name "Livia Predoiu" .
-
-<http://ceur-ws.org/Vol-1529/#paper1> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1529/> ;
-    ns5:title "Learning from Human Memory: Managed Forgetting and Contextualized Remembering for Digital Memories" ;
-    ns4:endPage 6 ;
-    ns4:numPages 6 ;
-    ns4:section <http%3A//ceur-ws.org/Vol-1529/%23InvitedContribution> ;
-    ns4:startPage 1 ;
-    ns2:author <http://ceur-ws.org/Vol-1529/#ClaudiaiNieder%C3%A9e> .
-
-<http://ceur-ws.org/Vol-1529/#paper2> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1529/> ;
-    ns5:title "Integrating Research Data Management into Geographical Information Systems" ;
-    ns4:endPage 17 ;
-    ns4:numPages 11 ;
-    ns4:section <http%3A//ceur-ws.org/Vol-1529/%23SemanticsinPractice> ;
-    ns4:startPage 7 ;
-    ns2:author <http://ceur-ws.org/Vol-1529/#ChristianiT.iJacobs> .
-
-<http://ceur-ws.org/Vol-1529/#paper3> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1529/> ;
-    ns5:title "Semantic-based Expert Search in Textbook Research Archives" ;
-    ns4:endPage 29 ;
-    ns4:numPages 12 ;
-    ns4:section <http%3A//ceur-ws.org/Vol-1529/%23SemanticsinPractice> ;
-    ns4:startPage 18 ;
-    ns2:author <http://ceur-ws.org/Vol-1529/#MarcoiPavan> .
-
-<http://ceur-ws.org/Vol-1529/#paper4> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1529/> ;
-    ns5:title "An Automated Annotation Process for the SciDocAnnot Scientific Document Model" ;
-    ns4:endPage 41 ;
-    ns4:numPages 12 ;
-    ns4:section <http%3A//ceur-ws.org/Vol-1529/%23SemanticsinPractice> ;
-    ns4:startPage 30 ;
-    ns2:author <http://ceur-ws.org/Vol-1529/#H%C3%A9l%C3%A8neideiRibaupierre> .
-
-<http://ceur-ws.org/Vol-1529/#paper5> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1529/> ;
-    ns5:title "World Views - A Digital Archive Infrastructure for the Georg Eckert Institute for International Textbook Research" ;
-    ns4:endPage 48 ;
-    ns4:numPages 7 ;
-    ns4:section <http%3A//ceur-ws.org/Vol-1529/%23SemanticsinPractice> ;
-    ns4:startPage 42 ;
-    ns2:author <http://ceur-ws.org/Vol-1529/#Lena-LuiseiStahn> .
-
-<http://ceur-ws.org/Vol-1529/#paper6> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1529/> ;
-    ns5:title "Temporal Anchor Text as Proxy for Real User Queries" ;
-    ns4:endPage 60 ;
-    ns4:numPages 12 ;
-    ns4:section <http%3A//ceur-ws.org/Vol-1529/%23Searching%2CPreservingandForgetting> ;
-    ns4:startPage 49 ;
-    ns2:author <http://ceur-ws.org/Vol-1529/#ThaeriSamar> .
-
-<http://ceur-ws.org/Vol-1529/#paper7> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1529/> ;
-    ns5:title "Entity-Centric Preservation for Linked Open Data: Use Cases, Requirements and Models" ;
-    ns4:endPage 75 ;
-    ns4:numPages 15 ;
-    ns4:section <http%3A//ceur-ws.org/Vol-1529/%23Searching%2CPreservingandForgetting> ;
-    ns4:startPage 61 ;
-    ns2:author <http://ceur-ws.org/Vol-1529/#ElenaiDemidova> .
-
-<http://ceur-ws.org/Vol-1529/#paperX1> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1529/> ;
-    ns5:title "Please have a look at the" ;
-    ns4:section <http%3A//ceur-ws.org/Vol-1529/%23Searching%2CPreservingandForgetting> ;
-    ns2:author <http://ceur-ws.org/Vol-1529/#LiviaiPredoiu>,
-        <http://ceur-ws.org/Vol-1529/#metadataiincl.ibibliographicidataipublishediunder> .
-
-<http%3A//ceur-ws.org/Vol-1529/%23Searching%2CPreservingandForgetting> a ns3:SessionEvent ;
-    ns3:partOf <http://ceur-ws.org/Vol-1529/> ;
-    ns5:title "Searching, Preserving and Forgetting" .
-
-<http%3A//ceur-ws.org/Vol-1529/%23SemanticsinPractice> a ns3:SessionEvent ;
-    ns3:partOf <http://ceur-ws.org/Vol-1529/> ;
-    ns5:title "Semantics in Practice" .
-
-<http://ceur-ws.org/Vol-1529/> a ns3:Proceedings ;
-    ns3:hasPart <http://ceur-ws.org/Vol-1529/#paper1>,
-        <http://ceur-ws.org/Vol-1529/#paper2>,
-        <http://ceur-ws.org/Vol-1529/#paper3>,
-        <http://ceur-ws.org/Vol-1529/#paper4>,
-        <http://ceur-ws.org/Vol-1529/#paper5>,
-        <http://ceur-ws.org/Vol-1529/#paper6>,
-        <http://ceur-ws.org/Vol-1529/#paper7>,
-        <http://ceur-ws.org/Vol-1529/#paperX1> ;
-    ns3:hasSession <http%3A//ceur-ws.org/Vol-1529/%23InvitedContribution>,
-        <http%3A//ceur-ws.org/Vol-1529/%23Searching%2CPreservingandForgetting>,
-        <http%3A//ceur-ws.org/Vol-1529/%23SemanticsinPractice> ;
-    ns7:issued "2015-12-16T00:00:00+00:00"^^xsd:dateTime ;
-    ns4:presentedAt <http://ceur-ws.org/Vol-1529/#event> ;
-    ns2:editor <http://ceur-ws.org/Vol-1529/#AndreasiN%C3%BCrnberger>,
-        <http://ceur-ws.org/Vol-1529/#LiviaiPredoiu>,
-        <http://ceur-ws.org/Vol-1529/#SeamusiRoss>,
-        <http://ceur-ws.org/Vol-1529/#ThomasiRisse> .
 

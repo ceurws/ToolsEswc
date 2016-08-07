@@ -1,11 +1,12 @@
 @prefix ns1: <http://xmlns.com/foaf/0.1/> .
-@prefix ns2: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns3: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns2: <http://purl.org/dc/elements/1.1/> .
+@prefix ns3: <http://swrc.ontoware.org/ontology/#> .
 @prefix ns4: <http://www.w3.org/2002/07/owl#> .
-@prefix ns5: <http://purl.org/ontology/bibo/#> .
-@prefix ns6: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns5: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns6: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns9: <http://purl.org/ontology/bibo/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -22,7 +23,7 @@
     ns1:name "Antonio Jimeno" .
 
 <http://ceur-ws.org/Vol-429/#ChristopheriJ.iO.iBaker> a ns1:Person ;
-    ns2:affiliation "" ;
+    ns3:affiliation "" ;
     ns4:sameAs <http://ceur-ws.org/persons/ChristopheriJ.iO.iBaker> ;
     ns1:name "Christopher J. O. Baker" .
 
@@ -91,62 +92,63 @@
     ns1:made <http://ceur-ws.org/Vol-429/#paper1> ;
     ns1:name "Simon Forbes" .
 
-<http://ceur-ws.org/Vol-429/#event> a ns3:WorkshopEvent ;
-    ns3:hasLocation <http://dbpedia.org/resource/Italy> ;
-    ns3:hasPart <http://ceur-ws.org/Vol-429/#part-ECCB> ;
-    ns3:isSubEventOf <http://ceur-ws.org/Vol-429/#conf> ;
-    ns7:beginsAtDatetime "2008-09-22T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:endsAtDatetime "2008-06-22T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:license <http://choosealicense.com/licenses/no-license/> .
+<http://ceur-ws.org/Vol-429/#event> a ns6:WorkshopEvent ;
+    ns6:hasLocation <http://dbpedia.org/resource/Italy> ;
+    ns6:hasPart <http://ceur-ws.org/Vol-429/#part-AIMM>,
+        <http://ceur-ws.org/Vol-429/#part-ECCB> ;
+    ns6:isSubEventOf <http://ceur-ws.org/Vol-429/#conf> ;
+    ns8:beginsAtDatetime "2008-12-23T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:endsAtDatetime "2008-12-23T00:00:00+00:00"^^xsd:dateTime ;
+    ns2:license "http://choosealicense.com/licenses/no-license/" .
 
-<http://ceur-ws.org/Vol-429/#DietrichiRebholziSchuhmann> a ns1:Person ;
-    ns2:affiliation "" ;
-    ns4:sameAs <http://ceur-ws.org/persons/DietrichiRebholziSchuhmann> ;
+<http://ceur-ws.org/Vol-429/#DietrichiRebholz-Schuhmann> a ns1:Person ;
+    ns3:affiliation "" ;
+    ns4:sameAs <http://ceur-ws.org/persons/DietrichiRebholz-Schuhmann> ;
     ns1:made <http://ceur-ws.org/Vol-429/#paper4> ;
-    ns1:name "Dietrich Rebholz Schuhmann" .
+    ns1:name "Dietrich Rebholz-Schuhmann" .
 
-<http://ceur-ws.org/Vol-429/#paper3> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-429/> ;
-    ns6:title "An analysis of different ontological approaches to describe renal mutant phenotypes" ;
-    ns2:author <http://ceur-ws.org/Vol-429/#DuncaniDavidson>,
+<http://ceur-ws.org/Vol-429/#paper3> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-429/> ;
+    ns5:title "An analysis of different ontological approaches to describe renal mutant phenotypes" ;
+    ns3:author <http://ceur-ws.org/Vol-429/#DuncaniDavidson>,
         <http://ceur-ws.org/Vol-429/#KirstyiLee> .
 
-<http://ceur-ws.org/Vol-429/#paper2> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-429/> ;
-    ns6:title "Using structural bioinformatics to investigate the impact of non synonymous SNPs and disease mutations: scope and limitations" ;
-    ns2:author <http://ceur-ws.org/Vol-429/#FredericiRousseau>,
+<http://ceur-ws.org/Vol-429/#paper2> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-429/> ;
+    ns5:title "Using structural bioinformatics to investigate the impact of non synonymous SNPs and disease mutations: scope and limitations" ;
+    ns3:author <http://ceur-ws.org/Vol-429/#FredericiRousseau>,
         <http://ceur-ws.org/Vol-429/#JokeiReumers>,
         <http://ceur-ws.org/Vol-429/#JoostiSchymkowitz> .
 
-<http://ceur-ws.org/Vol-429/#paper4> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-429/> ;
-    ns6:title "Annotation of protein residues based on a literature analysis: cross-validation against UniProtKB" ;
-    ns2:author <http://ceur-ws.org/Vol-429/#AntonioiJimeno>,
-        <http://ceur-ws.org/Vol-429/#DietrichiRebholziSchuhmann>,
+<http://ceur-ws.org/Vol-429/#paper4> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-429/> ;
+    ns5:title "Annotation of protein residues based on a literature analysis: cross-validation against UniProtKB" ;
+    ns3:author <http://ceur-ws.org/Vol-429/#AntonioiJimeno>,
+        <http://ceur-ws.org/Vol-429/#DietrichiRebholz-Schuhmann>,
         <http://ceur-ws.org/Vol-429/#KeviniNagel> .
 
-<http://ceur-ws.org/Vol-429/#paper5> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-429/> ;
-    ns6:title "Mutation tagging with gene identifiers applied to membrane protein stability prediction" ;
-    ns2:author <http://ceur-ws.org/Vol-429/#ConradiPlake>,
+<http://ceur-ws.org/Vol-429/#paper5> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-429/> ;
+    ns5:title "Mutation tagging with gene identifiers applied to membrane protein stability prediction" ;
+    ns3:author <http://ceur-ws.org/Vol-429/#ConradiPlake>,
         <http://ceur-ws.org/Vol-429/#MichaeliSchroeder>,
         <http://ceur-ws.org/Vol-429/#RaineriWinnenburg> .
 
-<http://ceur-ws.org/Vol-429/> a ns3:Proceedings ;
-    ns3:hasPart <http://ceur-ws.org/Vol-429/#paper1>,
+<http://ceur-ws.org/Vol-429/> a ns6:Proceedings ;
+    ns6:hasPart <http://ceur-ws.org/Vol-429/#paper1>,
         <http://ceur-ws.org/Vol-429/#paper2>,
         <http://ceur-ws.org/Vol-429/#paper3>,
         <http://ceur-ws.org/Vol-429/#paper4>,
         <http://ceur-ws.org/Vol-429/#paper5> ;
-    ns8:issued "2008-12-17T00:00:00+00:00"^^xsd:dateTime ;
-    ns5:presentedAt <http://ceur-ws.org/Vol-429/#event> ;
-    ns2:editor <http://ceur-ws.org/Vol-429/#ChristopheriJ.iO.iBaker>,
-        <http://ceur-ws.org/Vol-429/#DietrichiRebholziSchuhmann> .
+    ns7:issued "2008-12-17T00:00:00+00:00"^^xsd:dateTime ;
+    ns9:presentedAt <http://ceur-ws.org/Vol-429/#event> ;
+    ns3:editor <http://ceur-ws.org/Vol-429/#ChristopheriJ.iO.iBaker>,
+        <http://ceur-ws.org/Vol-429/#DietrichiRebholz-Schuhmann> .
 
-<http://ceur-ws.org/Vol-429/#paper1> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-429/> ;
-    ns6:title "COSMIC, curating the cancer variome" ;
-    ns2:author <http://ceur-ws.org/Vol-429/#AndrewiFutreal>,
+<http://ceur-ws.org/Vol-429/#paper1> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-429/> ;
+    ns5:title "COSMIC, curating the cancer variome" ;
+    ns3:author <http://ceur-ws.org/Vol-429/#AndrewiFutreal>,
         <http://ceur-ws.org/Vol-429/#GurpreetiTang>,
         <http://ceur-ws.org/Vol-429/#JoniTeague>,
         <http://ceur-ws.org/Vol-429/#MikeiStratton>,

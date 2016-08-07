@@ -1,11 +1,12 @@
-@prefix ns1: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns1: <http://purl.org/dc/elements/1.1/#> .
 @prefix ns2: <http://xmlns.com/foaf/0.1/> .
 @prefix ns3: <http://data.semanticweb.org/ns/swc/ontology/#> .
 @prefix ns4: <http://www.w3.org/2002/07/owl#> .
-@prefix ns5: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns6: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns5: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns6: <http://swrc.ontoware.org/ontology/#> .
 @prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns8: <http://purl.org/ontology/bibo/#> .
+@prefix ns8: <http://purl.org/dc/elements/1.1/> .
+@prefix ns9: <http://purl.org/ontology/bibo/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -36,9 +37,9 @@
     ns2:made <http://ceur-ws.org/Vol-42/#paper2_duquenne> ;
     ns2:name "Douglas Pickering" .
 
-<http://ceur-ws.org/Vol-42/#FJi> a ns2:Person ;
+<http://ceur-ws.org/Vol-42/#FJi%28Dean%29ivanideriMerwe> a ns2:Person ;
     ns2:made <http://ceur-ws.org/Vol-42/#paper6_merwe> ;
-    ns2:name "FJ" .
+    ns2:name "FJ (Dean) van der Merwe" .
 
 <http://ceur-ws.org/Vol-42/#IsabelleiBournaud> a ns2:Person ;
     ns4:sameAs <http://ceur-ws.org/persons/IsabelleiBournaud> ;
@@ -61,7 +62,7 @@
     ns2:name "M�lanie Courtine" .
 
 <http://ceur-ws.org/Vol-42/#MicheliLiqui> a ns2:Person ;
-    ns1:affiliation "�re +" ;
+    ns6:affiliation "�re +" ;
     ns4:sameAs <http://ceur-ws.org/persons/MicheliLiqui> ;
     ns2:name "Michel Liqui" .
 
@@ -99,70 +100,70 @@
     ns3:hasLocation <http://dbpedia.org/resource/United_States> ;
     ns3:hasPart <http://ceur-ws.org/Vol-42/#part-CLKDD> ;
     ns3:isSubEventOf <http://ceur-ws.org/Vol-42/#conf> ;
-    ns7:beginsAtDatetime "2001-07-30T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:endsAtDatetime "2001-07-30T00:00:00+00:00"^^xsd:dateTime ;
-    ns5:license <http://choosealicense.com/licenses/no-license/> .
+    ns7:beginsAtDatetime "2001-07-23T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:endsAtDatetime "2001-07-23T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:license "http://choosealicense.com/licenses/no-license/" .
 
 <http://ceur-ws.org/Vol-42/#EngelbertiMephuiNguifo> a ns2:Person ;
-    ns1:affiliation "" ;
+    ns6:affiliation "" ;
     ns4:sameAs <http://ceur-ws.org/persons/EngelbertiMephuiNguifo> ;
     ns2:made <http://ceur-ws.org/Vol-42/#introduction_clkdd01> ;
     ns2:name "Engelbert Mephu Nguifo" .
 
 <http://ceur-ws.org/Vol-42/#VincentiDuquenne> a ns2:Person ;
-    ns1:affiliation "G�n�tique, NeuroG�n�tique et Comportement, CNRS FRE 2134, 2B rue de la f�rollerie, 45071 Orl�ans cedex 02" ;
+    ns6:affiliation "G�n�tique, NeuroG�n�tique et Comportement, CNRS FRE 2134, 2B rue de la f�rollerie, 45071 Orl�ans cedex 02" ;
     ns4:sameAs <http://ceur-ws.org/persons/VincentiDuquenne> ;
     ns2:made <http://ceur-ws.org/Vol-42/#paper2_duquenne> ;
     ns2:name "Vincent Duquenne" .
 
 <http://ceur-ws.org/Vol-42/#introduction_clkdd01> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-42/> ;
-    ns5:title "Introduction" ;
-    ns1:author <http://ceur-ws.org/Vol-42/#EngelbertiMephuiNguifo> .
+    ns1:title "Introduction" ;
+    ns6:author <http://ceur-ws.org/Vol-42/#EngelbertiMephuiNguifo> .
 
 <http://ceur-ws.org/Vol-42/#paper0_srikant> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-42/> ;
-    ns5:title "Association Rules : Past, Present and Future" ;
-    ns1:author <http://ceur-ws.org/Vol-42/#RamakrishnaniSrikant> .
+    ns1:title "Association Rules : Past, Present and Future" ;
+    ns6:author <http://ceur-ws.org/Vol-42/#RamakrishnaniSrikant> .
 
 <http://ceur-ws.org/Vol-42/#paper1_wille> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-42/> ;
-    ns5:title "Why Can Concept Lattices Support KDD" ;
-    ns1:author <http://ceur-ws.org/Vol-42/#RudolfiWille> .
+    ns1:title "Why Can Concept Lattices Support KDD" ;
+    ns6:author <http://ceur-ws.org/Vol-42/#RudolfiWille> .
 
 <http://ceur-ws.org/Vol-42/#paper7_wolff> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-42/> ;
-    ns5:title "Temporal Concept Analysis" ;
-    ns1:author <http://ceur-ws.org/Vol-42/#KarliErichiWolff> .
+    ns1:title "Temporal Concept Analysis" ;
+    ns6:author <http://ceur-ws.org/Vol-42/#KarliErichiWolff> .
 
 <http://ceur-ws.org/Vol-42/#paper3_kuznetsov> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-42/> ;
-    ns5:title "Comparing Performance of Algorithms for Generating Concept Lattices" ;
-    ns1:author <http://ceur-ws.org/Vol-42/#SergeiiA.iOb%27%27edkov>,
+    ns1:title "Comparing Performance of Algorithms for Generating Concept Lattices" ;
+    ns6:author <http://ceur-ws.org/Vol-42/#SergeiiA.iOb%27%27edkov>,
         <http://ceur-ws.org/Vol-42/#SergeiiO.iKuznetsov> .
 
 <http://ceur-ws.org/Vol-42/#paper4_taouil> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-42/> ;
-    ns5:title "Computing Proper Implications" ;
-    ns1:author <http://ceur-ws.org/Vol-42/#RafikiTaouil>,
+    ns1:title "Computing Proper Implications" ;
+    ns6:author <http://ceur-ws.org/Vol-42/#RafikiTaouil>,
         <http://ceur-ws.org/Vol-42/#YvesiBastide> .
 
 <http://ceur-ws.org/Vol-42/#paper5_courtine> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-42/> ;
-    ns5:title "Building a pruned inheritance lattice for relational descriptions" ;
-    ns1:author <http://ceur-ws.org/Vol-42/#IsabelleiBournaud>,
+    ns1:title "Building a pruned inheritance lattice for relational descriptions" ;
+    ns6:author <http://ceur-ws.org/Vol-42/#IsabelleiBournaud>,
         <http://ceur-ws.org/Vol-42/#M%EF%BF%BDlanieiCourtine> .
 
 <http://ceur-ws.org/Vol-42/#paper6_merwe> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-42/> ;
-    ns5:title "A Lattice-based Data Structure for Information Retrieval and ML" ;
-    ns1:author <http://ceur-ws.org/Vol-42/#DGiKourie>,
-        <http://ceur-ws.org/Vol-42/#FJi> .
+    ns1:title "A Lattice-based Data Structure for Information Retrieval and ML" ;
+    ns6:author <http://ceur-ws.org/Vol-42/#DGiKourie>,
+        <http://ceur-ws.org/Vol-42/#FJi%28Dean%29ivanideriMerwe> .
 
 <http://ceur-ws.org/Vol-42/#paper2_duquenne> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-42/> ;
-    ns5:title "Structuration of phenotypes/genotypes through Galois lattices and implications" ;
-    ns1:author <http://ceur-ws.org/Vol-42/#Am%EF%BF%BDzianeiCherfouh>,
+    ns1:title "Structuration of phenotypes/genotypes through Galois lattices and implications" ;
+    ns6:author <http://ceur-ws.org/Vol-42/#Am%EF%BF%BDzianeiCherfouh>,
         <http://ceur-ws.org/Vol-42/#Anne-LiseiDoyen>,
         <http://ceur-ws.org/Vol-42/#CarolineiChabert>,
         <http://ceur-ws.org/Vol-42/#DouglasiPickering>,
@@ -179,9 +180,9 @@
         <http://ceur-ws.org/Vol-42/#paper5_courtine>,
         <http://ceur-ws.org/Vol-42/#paper6_merwe>,
         <http://ceur-ws.org/Vol-42/#paper7_wolff> ;
-    ns6:issued "2001-07-30T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:presentedAt <http://ceur-ws.org/Vol-42/#event> ;
-    ns1:editor <http://ceur-ws.org/Vol-42/#EngelbertiMephuiNguifo>,
+    ns5:issued "2001-07-30T00:00:00+00:00"^^xsd:dateTime ;
+    ns9:presentedAt <http://ceur-ws.org/Vol-42/#event> ;
+    ns6:editor <http://ceur-ws.org/Vol-42/#EngelbertiMephuiNguifo>,
         <http://ceur-ws.org/Vol-42/#MicheliLiqui>,
         <http://ceur-ws.org/Vol-42/#VincentiDuquenne> .
 

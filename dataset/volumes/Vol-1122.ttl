@@ -1,202 +1,30 @@
-@prefix ns1: <http://xmlns.com/foaf/0.1/> .
-@prefix ns2: <http://www.w3.org/2002/07/owl#> .
-@prefix ns3: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns4: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns5: <http://purl.org/ontology/bibo/#> .
-@prefix ns6: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns1: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns2: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns3: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns4: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns5: <http://xmlns.com/foaf/0.1/> .
+@prefix ns6: <http://www.w3.org/2002/07/owl#> .
+@prefix ns7: <http://purl.org/dc/elements/1.1/> .
+@prefix ns8: <http://purl.org/ontology/bibo/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1122/#AldoiFrancoiDragoni> a ns1:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/AldoiFrancoiDragoni> ;
-    ns1:made <http://ceur-ws.org/Vol-1122/#paper1> ;
-    ns1:name "Aldo Franco Dragoni" .
+<http://ceur-ws.org/Vol-1122/> a ns1:Proceedings ;
+    ns4:issued "2014-02-06T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:presentedAt <http://ceur-ws.org/Vol-1122/#event> ;
+    ns3:editor <http://ceur-ws.org/Vol-1122/#DipartimentoidiiIngegneriaiinformaticaiautomaticaieigestionaleiAntonioiRuberti> .
 
-<http://ceur-ws.org/Vol-1122/#AndreaiClaudi> a ns1:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/AndreaiClaudi> ;
-    ns1:made <http://ceur-ws.org/Vol-1122/#paper1> ;
-    ns1:name "Andrea Claudi" .
+<http://ceur-ws.org/Vol-1122/#DipartimentoidiiIngegneriaiinformaticaiautomaticaieigestionaleiAntonioiRuberti> a ns5:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/DipartimentoidiiIngegneriaiinformaticaiautomaticaieigestionaleiAntonioiRuberti> ;
+    ns5:name "Dipartimento di Ingegneria informatica automatica e gestionale Antonio Ruberti" .
 
-<http://ceur-ws.org/Vol-1122/#BerardinaiDeiCarolis> a ns1:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/BerardinaiDeiCarolis> ;
-    ns1:made <http://ceur-ws.org/Vol-1122/#paper2> ;
-    ns1:name "Berardina De Carolis" .
-
-<http://ceur-ws.org/Vol-1122/#DipartimentoidiiIngegneriaiinformaticaiautomaticaieigestionaleiAntonioiRuberti> a ns1:Person ;
-    ns5:place <http://dbpedia.org/resource/Italy> ;
-    ns6:affiliation "Sapienza Università di Roma, Via Ariosto 25, 00185 Roma" ;
-    ns2:sameAs <http://ceur-ws.org/persons/DipartimentoidiiIngegneriaiinformaticaiautomaticaieigestionaleiAntonioiRuberti> ;
-    ns1:name "Dipartimento di Ingegneria informatica automatica e gestionale Antonio Ruberti" .
-
-<http://ceur-ws.org/Vol-1122/#DomenicoiGrieco> a ns1:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/DomenicoiGrieco> ;
-    ns1:made <http://ceur-ws.org/Vol-1122/#paper2> ;
-    ns1:name "Domenico Grieco" .
-
-<http://ceur-ws.org/Vol-1122/#FlavioiDeiPaoli> a ns1:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/FlavioiDeiPaoli> ;
-    ns1:made <http://ceur-ws.org/Vol-1122/#paper8> ;
-    ns1:name "Flavio De Paoli" .
-
-<http://ceur-ws.org/Vol-1122/#GianlucaiDolcini> a ns1:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/GianlucaiDolcini> ;
-    ns1:made <http://ceur-ws.org/Vol-1122/#paper1> ;
-    ns1:name "Gianluca Dolcini" .
-
-<http://ceur-ws.org/Vol-1122/#GiuseppeiVizzari> a ns1:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/GiuseppeiVizzari> ;
-    ns1:made <http://ceur-ws.org/Vol-1122/#paper7> ;
-    ns1:name "Giuseppe Vizzari" .
-
-<http://ceur-ws.org/Vol-1122/#LauraiQuerci> a ns1:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/LauraiQuerci> ;
-    ns1:made <http://ceur-ws.org/Vol-1122/#paper9> ;
-    ns1:name "Laura Querci" .
-
-<http://ceur-ws.org/Vol-1122/#LucaiCrociani> a ns1:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/LucaiCrociani> ;
-    ns1:made <http://ceur-ws.org/Vol-1122/#paper7> ;
-    ns1:name "Luca Crociani" .
-
-<http://ceur-ws.org/Vol-1122/#LucaiPalazzo> a ns1:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/LucaiPalazzo> ;
-    ns1:made <http://ceur-ws.org/Vol-1122/#paper1> ;
-    ns1:name "Luca Palazzo" .
-
-<http://ceur-ws.org/Vol-1122/#MeheruniNesaiLucky> a ns1:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/MeheruniNesaiLucky> ;
-    ns1:made <http://ceur-ws.org/Vol-1122/#paper8> ;
-    ns1:name "Meherun Nesa Lucky" .
-
-<http://ceur-ws.org/Vol-1122/#PaoloiSernani> a ns1:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/PaoloiSernani> ;
-    ns1:made <http://ceur-ws.org/Vol-1122/#paper1> ;
-    ns1:name "Paolo Sernani" .
-
-<http://ceur-ws.org/Vol-1122/#StefaniaiBandini> a ns1:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/StefaniaiBandini> ;
-    ns1:made <http://ceur-ws.org/Vol-1122/#paper7> ;
-    ns1:name "Stefania Bandini" .
-
-<http://ceur-ws.org/Vol-1122/#StefanoiFerilli> a ns1:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/StefanoiFerilli> ;
-    ns1:made <http://ceur-ws.org/Vol-1122/#paper2> ;
-    ns1:name "Stefano Ferilli" .
-
-<http://ceur-ws.org/Vol-1122/#SultaniDaudiKhan> a ns1:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/SultaniDaudiKhan> ;
-    ns1:made <http://ceur-ws.org/Vol-1122/#paper6> ;
-    ns1:name "Sultan Daud Khan" .
-
-<http://ceur-ws.org/Vol-1122/#event> a ns4:WorkshopEvent ;
-    ns4:hasLocation <http://dbpedia.org/resource/Italy> ;
-    ns4:hasPart <http://ceur-ws.org/Vol-1122/#part-AgeingAI> ;
-    ns4:isSubEventOf <http://ceur-ws.org/Vol-1122/#conf> ;
-    ns8:beginsAtDatetime "2013-12-06T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:endsAtDatetime "2013-12-06T00:00:00+00:00"^^xsd:dateTime ;
-    ns3:license <http://choosealicense.com/licenses/no-license/> .
-
-<http://ceur-ws.org/Vol-1122/#NamiiAvento> a ns1:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/NamiiAvento> ;
-    ns1:made <http://ceur-ws.org/Vol-1122/#paper3>,
-        <http://ceur-ws.org/Vol-1122/#paper5> ;
-    ns1:name "Nami Avento" .
-
-<http://ceur-ws.org/Vol-1122/#TunazzinaiSultana> a ns1:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/TunazzinaiSultana> ;
-    ns1:made <http://ceur-ws.org/Vol-1122/#paper4>,
-        <http://ceur-ws.org/Vol-1122/#paper5> ;
-    ns1:name "Tunazzina Sultana" .
-
-<http://ceur-ws.org/Vol-1122/#paper3> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1122/> ;
-    ns3:title "Ageing Societies: Japan. Technology in Response to Demographic Changes" ;
-    ns5:section <http%3A//ceur-ws.org/Vol-1122/%23Session1%3AAIande-Health> ;
-    ns6:author <http://ceur-ws.org/Vol-1122/#NamiiAvento> .
-
-<http://ceur-ws.org/Vol-1122/#paper4> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1122/> ;
-    ns3:title "Technology for the Health Services of Ageing Societies in Developed Countries: Lessons for Developing Countries" ;
-    ns5:section <http%3A//ceur-ws.org/Vol-1122/%23Session1%3AAIande-Health> ;
-    ns6:author <http://ceur-ws.org/Vol-1122/#TunazzinaiSultana> .
-
-<http://ceur-ws.org/Vol-1122/#paper6> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1122/> ;
-    ns3:title "Estimating Speeds and Directions of Pedestrians in Real-Time Videos: A solution to Road-Safety Problem" ;
-    ns5:section <http%3A//ceur-ws.org/Vol-1122/%23Session2%3ASupportingActiveAgeing> ;
-    ns6:author <http://ceur-ws.org/Vol-1122/#SultaniDaudiKhan> .
-
-<http://ceur-ws.org/Vol-1122/#paper9> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1122/> ;
-    ns3:title "Once Upon a Time... me Ageing and narratives: The Lifebook" ;
-    ns5:section <http%3A//ceur-ws.org/Vol-1122/%23Session2%3ASupportingActiveAgeing> ;
-    ns6:author <http://ceur-ws.org/Vol-1122/#LauraiQuerci> .
-
-<http://ceur-ws.org/Vol-1122/#paper5> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1122/> ;
-    ns3:title "Potentialities of E-health in Bangladesh: Cooperation from Japan" ;
-    ns5:section <http%3A//ceur-ws.org/Vol-1122/%23Session1%3AAIande-Health> ;
-    ns6:author <http://ceur-ws.org/Vol-1122/#NamiiAvento>,
-        <http://ceur-ws.org/Vol-1122/#TunazzinaiSultana> .
-
-<http://ceur-ws.org/Vol-1122/#paper8> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1122/> ;
-    ns3:title "Towards Social Inclusion of Elder People using Smart Systems" ;
-    ns5:section <http%3A//ceur-ws.org/Vol-1122/%23Session2%3ASupportingActiveAgeing> ;
-    ns6:author <http://ceur-ws.org/Vol-1122/#FlavioiDeiPaoli>,
-        <http://ceur-ws.org/Vol-1122/#MeheruniNesaiLucky> .
-
-<http://ceur-ws.org/Vol-1122/#paper2> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1122/> ;
-    ns3:title "Towards a Caring Home for Assisted Living" ;
-    ns5:section <http%3A//ceur-ws.org/Vol-1122/%23Session1%3AAIande-Health> ;
-    ns6:author <http://ceur-ws.org/Vol-1122/#BerardinaiDeiCarolis>,
-        <http://ceur-ws.org/Vol-1122/#DomenicoiGrieco>,
-        <http://ceur-ws.org/Vol-1122/#StefanoiFerilli> .
-
-<http://ceur-ws.org/Vol-1122/#paper7> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1122/> ;
-    ns3:title "Towards a More Comprehensive Estimation of Social Costs in Pedestrian Facilities" ;
-    ns5:section <http%3A//ceur-ws.org/Vol-1122/%23Session2%3ASupportingActiveAgeing> ;
-    ns6:author <http://ceur-ws.org/Vol-1122/#GiuseppeiVizzari>,
-        <http://ceur-ws.org/Vol-1122/#LucaiCrociani>,
-        <http://ceur-ws.org/Vol-1122/#StefaniaiBandini> .
-
-<http%3A//ceur-ws.org/Vol-1122/%23Session2%3ASupportingActiveAgeing> a ns4:SessionEvent ;
-    ns4:partOf <http://ceur-ws.org/Vol-1122/> ;
-    ns3:title "Session 2: Supporting Active Ageing" .
-
-<http%3A//ceur-ws.org/Vol-1122/%23Session1%3AAIande-Health> a ns4:SessionEvent ;
-    ns4:partOf <http://ceur-ws.org/Vol-1122/> ;
-    ns3:title "Session 1: AI and e-Health" .
-
-<http://ceur-ws.org/Vol-1122/#paper1> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1122/> ;
-    ns3:title "Home Care Expert Systems for Ambient Assisted Living: A Multi-Agent Approach" ;
-    ns5:section <http%3A//ceur-ws.org/Vol-1122/%23Session1%3AAIande-Health> ;
-    ns6:author <http://ceur-ws.org/Vol-1122/#AldoiFrancoiDragoni>,
-        <http://ceur-ws.org/Vol-1122/#AndreaiClaudi>,
-        <http://ceur-ws.org/Vol-1122/#GianlucaiDolcini>,
-        <http://ceur-ws.org/Vol-1122/#LucaiPalazzo>,
-        <http://ceur-ws.org/Vol-1122/#PaoloiSernani> .
-
-<http://ceur-ws.org/Vol-1122/> a ns4:Proceedings ;
-    ns4:hasPart <http://ceur-ws.org/Vol-1122/#paper1>,
-        <http://ceur-ws.org/Vol-1122/#paper2>,
-        <http://ceur-ws.org/Vol-1122/#paper3>,
-        <http://ceur-ws.org/Vol-1122/#paper4>,
-        <http://ceur-ws.org/Vol-1122/#paper5>,
-        <http://ceur-ws.org/Vol-1122/#paper6>,
-        <http://ceur-ws.org/Vol-1122/#paper7>,
-        <http://ceur-ws.org/Vol-1122/#paper8>,
-        <http://ceur-ws.org/Vol-1122/#paper9> ;
-    ns4:hasSession <http%3A//ceur-ws.org/Vol-1122/%23Session1%3AAIande-Health>,
-        <http%3A//ceur-ws.org/Vol-1122/%23Session2%3ASupportingActiveAgeing> ;
-    ns7:issued "2014-02-06T00:00:00+00:00"^^xsd:dateTime ;
-    ns5:presentedAt <http://ceur-ws.org/Vol-1122/#event> ;
-    ns6:editor <http://ceur-ws.org/Vol-1122/#DipartimentoidiiIngegneriaiinformaticaiautomaticaieigestionaleiAntonioiRuberti> .
+<http://ceur-ws.org/Vol-1122/#event> a ns1:WorkshopEvent ;
+    ns1:hasLocation <http://dbpedia.org/resource/Italy> ;
+    ns1:hasPart <http://ceur-ws.org/Vol-1122/#part-ws> ;
+    ns1:isSubEventOf <http://ceur-ws.org/Vol-1122/#conf> ;
+    ns2:beginsAtDatetime "2013-12-06T00:00:00+00:00"^^xsd:dateTime ;
+    ns2:endsAtDatetime "2013-12-06T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:license "http://choosealicense.com/licenses/no-license/" .
 

@@ -1,0 +1,42 @@
+@prefix ns1: <http://xmlns.com/foaf/0.1/> .
+@prefix ns2: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns3: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns4: <http://purl.org/dc/elements/1.1/> .
+@prefix ns5: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns6: <http://www.w3.org/2002/07/owl#> .
+@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns8: <http://purl.org/ontology/bibo/#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://ceur-ws.org/Vol-1636/> a ns5:Proceedings ;
+    ns7:issued "2016-07-13T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:presentedAt <http://ceur-ws.org/Vol-1636/#event> ;
+    ns3:editor <http://ceur-ws.org/Vol-1636/#AkihiroiYamamoto>,
+        <http://ceur-ws.org/Vol-1636/#HayatoiOhwada>,
+        <http://ceur-ws.org/Vol-1636/#KatsumiiInoue> .
+
+<http://ceur-ws.org/Vol-1636/#AkihiroiYamamoto> a ns1:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/AkihiroiYamamoto> ;
+    ns1:name "Akihiro Yamamoto" .
+
+<http://ceur-ws.org/Vol-1636/#HayatoiOhwada> a ns1:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/HayatoiOhwada> ;
+    ns1:name "Hayato Ohwada" .
+
+<http://ceur-ws.org/Vol-1636/#KatsumiiInoue> a ns1:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/KatsumiiInoue> ;
+    ns1:name "Katsumi Inoue" .
+
+<http://ceur-ws.org/Vol-1636/#event> a ns5:WorkshopEvent ;
+    ns5:hasLocation <http://dbpedia.org/resource/Japan> ;
+    ns5:hasPart <http://ceur-ws.org/Vol-1636/#part-ws> ;
+    ns5:isSubEventOf <http://ceur-ws.org/Vol-1636/#conf> ;
+    ns2:beginsAtDatetime "2015-08-20T00:00:00+00:00"^^xsd:dateTime ;
+    ns2:endsAtDatetime "2015-08-22T00:00:00+00:00"^^xsd:dateTime ;
+    ns4:license "http://creativecommons.org/publicdomain/zero/1.0/" ;
+    rdfs:seeAlso <http://ceur-ws.org/Vol-1187/#event>,
+        <http://ceur-ws.org/Vol-975/#event> .
+

@@ -1,332 +1,45 @@
-@prefix ns1: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns2: <http://xmlns.com/foaf/0.1/> .
+@prefix ns1: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns2: <http://purl.org/ontology/bibo/#> .
 @prefix ns3: <http://www.w3.org/2002/07/owl#> .
-@prefix ns4: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns5: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns6: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns8: <http://purl.org/ontology/bibo/#> .
+@prefix ns4: <http://xmlns.com/foaf/0.1/> .
+@prefix ns5: <http://purl.org/dc/elements/1.1/> .
+@prefix ns6: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1292/#AllaniHanbury> a ns2:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/AllaniHanbury> ;
-    ns2:made <http://ceur-ws.org/Vol-1292/#ipamin2014_paper10> ;
-    ns2:name "Allan Hanbury" .
+<http://ceur-ws.org/Vol-1292/> a ns6:Proceedings ;
+    ns7:issued "2014-11-14T00:00:00+00:00"^^xsd:dateTime ;
+    ns2:presentedAt <http://ceur-ws.org/Vol-1292/#event> ;
+    ns1:editor <http://ceur-ws.org/Vol-1292/#ChristaiWomser-Hacker>,
+        <http://ceur-ws.org/Vol-1292/#HanminiJung>,
+        <http://ceur-ws.org/Vol-1292/#ShuoiXu>,
+        <http://ceur-ws.org/Vol-1292/#ThomasiMandl> .
 
-<http://ceur-ws.org/Vol-1292/#AndreasiRauber> a ns2:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/AndreasiRauber> ;
-    ns2:made <http://ceur-ws.org/Vol-1292/#ipamin2014_paper10> ;
-    ns2:name "Andreas Rauber" .
-
-<http://ceur-ws.org/Vol-1292/#DanieliEisinger> a ns2:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/DanieliEisinger> ;
-    ns2:made <http://ceur-ws.org/Vol-1292/#ipamin2014_paper11> ;
-    ns2:name "Daniel Eisinger" .
-
-<http://ceur-ws.org/Vol-1292/#Do-HeoniJeong> a ns2:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/Do-HeoniJeong> ;
-    ns2:made <http://ceur-ws.org/Vol-1292/#ipamin2014_paper2> ;
-    ns2:name "Do-Heon Jeong" .
-
-<http://ceur-ws.org/Vol-1292/#DominikiHerr> a ns2:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/DominikiHerr> ;
-    ns2:made <http://ceur-ws.org/Vol-1292/#ipamin2014_paper8> ;
-    ns2:name "Dominik Herr" .
-
-<http://ceur-ws.org/Vol-1292/#FlorinaiPiroi> a ns2:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/FlorinaiPiroi> ;
-    ns2:made <http://ceur-ws.org/Vol-1292/#ipamin2014_paper10> ;
-    ns2:name "Florina Piroi" .
-
-<http://ceur-ws.org/Vol-1292/#FrederikiSimoniB%C3%A4umer> a ns2:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/FrederikiSimoniB%C3%A4umer> ;
-    ns2:made <http://ceur-ws.org/Vol-1292/#ipamin2014_paper2> ;
-    ns2:name "Frederik Simon Bäumer" .
-
-<http://ceur-ws.org/Vol-1292/#HaniZhang> a ns2:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/HaniZhang> ;
-    ns2:made <http://ceur-ws.org/Vol-1292/#ipamin2014_paper7> ;
-    ns2:name "Han Zhang" .
-
-<http://ceur-ws.org/Vol-1292/#HeiYanqing> a ns2:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/HeiYanqing> ;
-    ns2:made <http://ceur-ws.org/Vol-1292/#ipamin2014_paper5> ;
-    ns2:name "He Yanqing" .
-
-<http://ceur-ws.org/Vol-1292/#HidiriAras> a ns2:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/HidiriAras> ;
-    ns2:made <http://ceur-ws.org/Vol-1292/#ipamin2014_paper4> ;
-    ns2:name "Hidir Aras" .
-
-<http://ceur-ws.org/Vol-1292/#JangwoniGim> a ns2:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/JangwoniGim> ;
-    ns2:made <http://ceur-ws.org/Vol-1292/#ipamin2014_paper2> ;
-    ns2:name "Jangwon Gim" .
-
-<http://ceur-ws.org/Vol-1292/#JaniM%C3%B6nnich> a ns2:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/JaniM%C3%B6nnich> ;
-    ns2:made <http://ceur-ws.org/Vol-1292/#ipamin2014_paper11> ;
-    ns2:name "Jan Mönnich" .
-
-<http://ceur-ws.org/Vol-1292/#JensiWeber> a ns2:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/JensiWeber> ;
-    ns2:made <http://ceur-ws.org/Vol-1292/#ipamin2014_paper1> ;
-    ns2:name "Jens Weber" .
-
-<http://ceur-ws.org/Vol-1292/#JieiGui> a ns2:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/JieiGui> ;
-    ns2:made <http://ceur-ws.org/Vol-1292/#ipamin2014_paper3> ;
-    ns2:name "Jie Gui" .
-
-<http://ceur-ws.org/Vol-1292/#JoaoiPalotti> a ns2:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/JoaoiPalotti> ;
-    ns2:made <http://ceur-ws.org/Vol-1292/#ipamin2014_paper10> ;
-    ns2:name "Joao Palotti" .
-
-<http://ceur-ws.org/Vol-1292/#JuliaiMariaiStru%C3%9F> a ns2:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/JuliaiMariaiStru%C3%9F> ;
-    ns2:made <http://ceur-ws.org/Vol-1292/#ipamin2014_paper9> ;
-    ns2:name "Julia Maria Struß" .
-
-<http://ceur-ws.org/Vol-1292/#LiiYing> a ns2:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/LiiYing> ;
-    ns2:made <http://ceur-ws.org/Vol-1292/#ipamin2014_paper5> ;
-    ns2:name "Li Ying" .
-
-<http://ceur-ws.org/Vol-1292/#LindaiAndersson> a ns2:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/LindaiAndersson> ;
-    ns2:made <http://ceur-ws.org/Vol-1292/#ipamin2014_paper10> ;
-    ns2:name "Linda Andersson" .
-
-<http://ceur-ws.org/Vol-1292/#MengiLing%C2%B4en> a ns2:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/MengiLing%C2%B4en> ;
-    ns2:made <http://ceur-ws.org/Vol-1292/#ipamin2014_paper5> ;
-    ns2:name "Meng Ling´en" .
-
-<http://ceur-ws.org/Vol-1292/#MichaeliSchroeder> a ns2:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/MichaeliSchroeder> ;
-    ns2:made <http://ceur-ws.org/Vol-1292/#ipamin2014_paper11> ;
-    ns2:name "Michael Schroeder" .
-
-<http://ceur-ws.org/Vol-1292/#MihaiiLupu> a ns2:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/MihaiiLupu> ;
-    ns2:made <http://ceur-ws.org/Vol-1292/#ipamin2014_paper10> ;
-    ns2:name "Mihai Lupu" .
-
-<http://ceur-ws.org/Vol-1292/#MikyoungiLee> a ns2:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/MikyoungiLee> ;
-    ns2:made <http://ceur-ws.org/Vol-1292/#ipamin2014_paper1> ;
-    ns2:name "Mikyoung Lee" .
-
-<http://ceur-ws.org/Vol-1292/#MinheeiCho> a ns2:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/MinheeiCho> ;
-    ns2:made <http://ceur-ws.org/Vol-1292/#ipamin2014_paper1> ;
-    ns2:name "Minhee Cho" .
-
-<http://ceur-ws.org/Vol-1292/#MustafaiSofean> a ns2:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/MustafaiSofean> ;
-    ns2:made <http://ceur-ws.org/Vol-1292/#ipamin2014_paper4> ;
-    ns2:name "Mustafa Sofean" .
-
-<http://ceur-ws.org/Vol-1292/#Ren%C3%A9iHackl-Sommer> a ns2:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/Ren%C3%A9iHackl-Sommer> ;
-    ns2:made <http://ceur-ws.org/Vol-1292/#ipamin2014_paper4> ;
-    ns2:name "René Hackl-Sommer" .
-
-<http://ceur-ws.org/Vol-1292/#S%C3%B6reniBr%C3%BCgmann> a ns2:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/S%C3%B6reniBr%C3%BCgmann> ;
-    ns2:made <http://ceur-ws.org/Vol-1292/#ipamin2014_paper8> ;
-    ns2:name "Sören Brügmann" .
-
-<http://ceur-ws.org/Vol-1292/#Sa-KwangiSong> a ns2:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/Sa-KwangiSong> ;
-    ns2:made <http://ceur-ws.org/Vol-1292/#ipamin2014_paper1> ;
-    ns2:name "Sa-Kwang Song" .
-
-<http://ceur-ws.org/Vol-1292/#SteffeniLohmann> a ns2:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/SteffeniLohmann> ;
-    ns2:made <http://ceur-ws.org/Vol-1292/#ipamin2014_paper8> ;
-    ns2:name "Steffen Lohmann" .
-
-<http://ceur-ws.org/Vol-1292/#ThomasiErtl> a ns2:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/ThomasiErtl> ;
-    ns2:made <http://ceur-ws.org/Vol-1292/#ipamin2014_paper8> ;
-    ns2:name "Thomas Ertl" .
-
-<http://ceur-ws.org/Vol-1292/#ZhuiLijun> a ns2:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/ZhuiLijun> ;
-    ns2:made <http://ceur-ws.org/Vol-1292/#ipamin2014_paper3> ;
-    ns2:name "Zhu Lijun" .
-
-<http://ceur-ws.org/Vol-1292/#event> a ns1:WorkshopEvent ;
-    ns1:hasLocation <http://dbpedia.org/resource/Germany> ;
-    ns1:hasPart <http://ceur-ws.org/Vol-1292/#part-IPaMin> ;
-    ns1:isSubEventOf <http://ceur-ws.org/Vol-1292/#conf> ;
-    ns7:beginsAtDatetime "2014-10-06T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:endsAtDatetime "2014-10-07T00:00:00+00:00"^^xsd:dateTime .
-
-<http://ceur-ws.org/Vol-1292/#ChristaiWomser-Hacker> a ns2:Person ;
-    ns5:affiliation "" ;
+<http://ceur-ws.org/Vol-1292/#ChristaiWomser-Hacker> a ns4:Person ;
     ns3:sameAs <http://ceur-ws.org/persons/ChristaiWomser-Hacker> ;
-    ns2:made <http://ceur-ws.org/Vol-1292/#ipamin2014_paper9> ;
-    ns2:name "Christa Womser-Hacker" .
+    ns4:name "Christa Womser-Hacker" .
 
-<http://ceur-ws.org/Vol-1292/#MichaelaiGeierhos> a ns2:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/MichaelaiGeierhos> ;
-    ns2:made <http://ceur-ws.org/Vol-1292/#ipamin2014_paper1>,
-        <http://ceur-ws.org/Vol-1292/#ipamin2014_paper2> ;
-    ns2:name "Michaela Geierhos" .
-
-<http://ceur-ws.org/Vol-1292/#MichaeliSchwantner> a ns2:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/MichaeliSchwantner> ;
-    ns2:made <http://ceur-ws.org/Vol-1292/#ipamin2014_paper4>,
-        <http://ceur-ws.org/Vol-1292/#ipamin2014_paper9> ;
-    ns2:name "Michael Schwantner" .
-
-<http://ceur-ws.org/Vol-1292/#ThomasiMandl> a ns2:Person ;
-    ns5:affiliation "" ;
-    ns3:sameAs <http://ceur-ws.org/persons/ThomasiMandl> ;
-    ns2:made <http://ceur-ws.org/Vol-1292/#ipamin2014_paper9> ;
-    ns2:name "Thomas Mandl" .
-
-<http://ceur-ws.org/Vol-1292/#XiaodongiQiao> a ns2:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/XiaodongiQiao> ;
-    ns2:made <http://ceur-ws.org/Vol-1292/#ipamin2014_paper3>,
-        <http://ceur-ws.org/Vol-1292/#ipamin2014_paper7> ;
-    ns2:name "Xiaodong Qiao" .
-
-<http://ceur-ws.org/Vol-1292/#ZhaofengiZhang> a ns2:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/ZhaofengiZhang> ;
-    ns2:made <http://ceur-ws.org/Vol-1292/#ipamin2014_paper3>,
-        <http://ceur-ws.org/Vol-1292/#ipamin2014_paper7> ;
-    ns2:name "Zhaofeng Zhang" .
-
-<http://ceur-ws.org/Vol-1292/#HanminiJung> a ns2:Person ;
-    ns5:affiliation "" ;
+<http://ceur-ws.org/Vol-1292/#HanminiJung> a ns4:Person ;
     ns3:sameAs <http://ceur-ws.org/persons/HanminiJung> ;
-    ns2:made <http://ceur-ws.org/Vol-1292/#ipamin2014_paper1>,
-        <http://ceur-ws.org/Vol-1292/#ipamin2014_paper2> ;
-    ns2:name "Hanmin Jung" .
+    ns4:name "Hanmin Jung" .
 
-<http://ceur-ws.org/Vol-1292/#HongqiiHan> a ns2:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/HongqiiHan> ;
-    ns2:made <http://ceur-ws.org/Vol-1292/#ipamin2014_paper3>,
-        <http://ceur-ws.org/Vol-1292/#ipamin2014_paper7>,
-        <http://ceur-ws.org/Vol-1292/#ipamin2014_paper8> ;
-    ns2:name "Hongqi Han" .
-
-<http://ceur-ws.org/Vol-1292/#ShuoiXu> a ns2:Person ;
-    ns5:affiliation "" ;
+<http://ceur-ws.org/Vol-1292/#ShuoiXu> a ns4:Person ;
     ns3:sameAs <http://ceur-ws.org/persons/ShuoiXu> ;
-    ns2:made <http://ceur-ws.org/Vol-1292/#ipamin2014_paper3>,
-        <http://ceur-ws.org/Vol-1292/#ipamin2014_paper7> ;
-    ns2:name "Shuo Xu" .
+    ns4:name "Shuo Xu" .
 
-<http://ceur-ws.org/Vol-1292/#ipamin2014_paper11> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-1292/> ;
-    ns4:title "Developing Semantic Search for the Patent Domain" ;
-    ns5:author <http://ceur-ws.org/Vol-1292/#DanieliEisinger>,
-        <http://ceur-ws.org/Vol-1292/#JaniM%C3%B6nnich>,
-        <http://ceur-ws.org/Vol-1292/#MichaeliSchroeder> .
+<http://ceur-ws.org/Vol-1292/#ThomasiMandl> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/ThomasiMandl> ;
+    ns4:name "Thomas Mandl" .
 
-<http://ceur-ws.org/Vol-1292/#ipamin2014_paper5> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-1292/> ;
-    ns4:title "Research of Semantic Role Labeling and Application in Patent Knowledge Extraction" ;
-    ns5:author <http://ceur-ws.org/Vol-1292/#HeiYanqing>,
-        <http://ceur-ws.org/Vol-1292/#LiiYing>,
-        <http://ceur-ws.org/Vol-1292/#MengiLing%C2%B4en> .
-
-<http://ceur-ws.org/Vol-1292/#ipamin2014_paper4> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-1292/> ;
-    ns4:title "Applications and Challenges of Text Mining with Patents" ;
-    ns5:author <http://ceur-ws.org/Vol-1292/#HidiriAras>,
-        <http://ceur-ws.org/Vol-1292/#MichaeliSchwantner>,
-        <http://ceur-ws.org/Vol-1292/#MustafaiSofean>,
-        <http://ceur-ws.org/Vol-1292/#Ren%C3%A9iHackl-Sommer> .
-
-<http://ceur-ws.org/Vol-1292/#ipamin2014_paper9> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-1292/> ;
-    ns4:title "Understanding Trends in the Patent Domain" ;
-    ns5:author <http://ceur-ws.org/Vol-1292/#ChristaiWomser-Hacker>,
-        <http://ceur-ws.org/Vol-1292/#JuliaiMariaiStru%C3%9F>,
-        <http://ceur-ws.org/Vol-1292/#MichaeliSchwantner>,
-        <http://ceur-ws.org/Vol-1292/#ThomasiMandl> .
-
-<http://ceur-ws.org/Vol-1292/#ipamin2014_paper2> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-1292/> ;
-    ns4:title "Linked Open Data System for Scientific Data Sets" ;
-    ns5:author <http://ceur-ws.org/Vol-1292/#Do-HeoniJeong>,
-        <http://ceur-ws.org/Vol-1292/#FrederikiSimoniB%C3%A4umer>,
-        <http://ceur-ws.org/Vol-1292/#HanminiJung>,
-        <http://ceur-ws.org/Vol-1292/#JangwoniGim>,
-        <http://ceur-ws.org/Vol-1292/#MichaelaiGeierhos> .
-
-<http://ceur-ws.org/Vol-1292/#ipamin2014_paper7> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-1292/> ;
-    ns4:title "Infinite Coauthor Topic Model (Infinite coAT): A Non-Parametric Generalization for coAT Model" ;
-    ns5:author <http://ceur-ws.org/Vol-1292/#HaniZhang>,
-        <http://ceur-ws.org/Vol-1292/#HongqiiHan>,
-        <http://ceur-ws.org/Vol-1292/#ShuoiXu>,
-        <http://ceur-ws.org/Vol-1292/#XiaodongiQiao>,
-        <http://ceur-ws.org/Vol-1292/#ZhaofengiZhang> .
-
-<http://ceur-ws.org/Vol-1292/#ipamin2014_paper8> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-1292/> ;
-    ns4:title "Visual Exploration of Patent Collections with IPC Clouds" ;
-    ns5:author <http://ceur-ws.org/Vol-1292/#DominikiHerr>,
-        <http://ceur-ws.org/Vol-1292/#HongqiiHan>,
-        <http://ceur-ws.org/Vol-1292/#S%C3%B6reniBr%C3%BCgmann>,
-        <http://ceur-ws.org/Vol-1292/#SteffeniLohmann>,
-        <http://ceur-ws.org/Vol-1292/#ThomasiErtl> .
-
-<http://ceur-ws.org/Vol-1292/#ipamin2014_paper1> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-1292/> ;
-    ns4:title "System Thinking: Crafting Scenarios for Prescriptive Analytics" ;
-    ns5:author <http://ceur-ws.org/Vol-1292/#HanminiJung>,
-        <http://ceur-ws.org/Vol-1292/#JensiWeber>,
-        <http://ceur-ws.org/Vol-1292/#MichaelaiGeierhos>,
-        <http://ceur-ws.org/Vol-1292/#MikyoungiLee>,
-        <http://ceur-ws.org/Vol-1292/#MinheeiCho>,
-        <http://ceur-ws.org/Vol-1292/#Sa-KwangiSong> .
-
-<http://ceur-ws.org/Vol-1292/#ipamin2014_paper10> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-1292/> ;
-    ns4:title "Insight to Hyponymy Lexical Relation Extraction in the Patent Genre Versus Other Text Genres" ;
-    ns5:author <http://ceur-ws.org/Vol-1292/#AllaniHanbury>,
-        <http://ceur-ws.org/Vol-1292/#AndreasiRauber>,
-        <http://ceur-ws.org/Vol-1292/#FlorinaiPiroi>,
-        <http://ceur-ws.org/Vol-1292/#JoaoiPalotti>,
-        <http://ceur-ws.org/Vol-1292/#LindaiAndersson>,
-        <http://ceur-ws.org/Vol-1292/#MihaiiLupu> .
-
-<http://ceur-ws.org/Vol-1292/#ipamin2014_paper3> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-1292/> ;
-    ns4:title "Mining Technical Topic Networks from Chinese Patents" ;
-    ns5:author <http://ceur-ws.org/Vol-1292/#HongqiiHan>,
-        <http://ceur-ws.org/Vol-1292/#JieiGui>,
-        <http://ceur-ws.org/Vol-1292/#ShuoiXu>,
-        <http://ceur-ws.org/Vol-1292/#XiaodongiQiao>,
-        <http://ceur-ws.org/Vol-1292/#ZhaofengiZhang>,
-        <http://ceur-ws.org/Vol-1292/#ZhuiLijun> .
-
-<http://ceur-ws.org/Vol-1292/> a ns1:Proceedings ;
-    ns1:hasPart <http://ceur-ws.org/Vol-1292/#ipamin2014_paper1>,
-        <http://ceur-ws.org/Vol-1292/#ipamin2014_paper10>,
-        <http://ceur-ws.org/Vol-1292/#ipamin2014_paper11>,
-        <http://ceur-ws.org/Vol-1292/#ipamin2014_paper2>,
-        <http://ceur-ws.org/Vol-1292/#ipamin2014_paper3>,
-        <http://ceur-ws.org/Vol-1292/#ipamin2014_paper4>,
-        <http://ceur-ws.org/Vol-1292/#ipamin2014_paper5>,
-        <http://ceur-ws.org/Vol-1292/#ipamin2014_paper7>,
-        <http://ceur-ws.org/Vol-1292/#ipamin2014_paper8>,
-        <http://ceur-ws.org/Vol-1292/#ipamin2014_paper9> ;
-    ns6:issued "2014-11-14T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:presentedAt <http://ceur-ws.org/Vol-1292/#event> ;
-    ns5:editor <http://ceur-ws.org/Vol-1292/#ChristaiWomser-Hacker>,
-        <http://ceur-ws.org/Vol-1292/#HanminiJung>,
-        <http://ceur-ws.org/Vol-1292/#ShuoiXu>,
-        <http://ceur-ws.org/Vol-1292/#ThomasiMandl> .
+<http://ceur-ws.org/Vol-1292/#event> a ns6:WorkshopEvent ;
+    ns6:hasLocation <http://dbpedia.org/resource/Germany> ;
+    ns6:hasPart <http://ceur-ws.org/Vol-1292/#part-IPaMin> ;
+    ns6:isSubEventOf <http://ceur-ws.org/Vol-1292/#conf> ;
+    ns8:beginsAtDatetime "2014-10-06T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:endsAtDatetime "2014-10-07T00:00:00+00:00"^^xsd:dateTime ;
+    ns5:license "http://creativecommons.org/publicdomain/zero/1.0/" .
 

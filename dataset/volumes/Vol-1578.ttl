@@ -1,154 +1,40 @@
 @prefix ns1: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns2: <http://xmlns.com/foaf/0.1/> .
-@prefix ns3: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns4: <http://www.w3.org/2002/07/owl#> .
-@prefix ns5: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns2: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns3: <http://www.w3.org/2002/07/owl#> .
+@prefix ns4: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns5: <http://xmlns.com/foaf/0.1/> .
 @prefix ns6: <http://purl.org/ontology/bibo/#> .
-@prefix ns7: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns8: <http://purl.org/dc/elements/1.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1578/#AlessandroiSapienza> a ns2:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/AlessandroiSapienza> ;
-    ns2:made <http://ceur-ws.org/Vol-1578/#paper11> ;
-    ns2:name "Alessandro Sapienza" .
-
-<http://ceur-ws.org/Vol-1578/#EdmundiH.iDurfee> a ns2:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/EdmundiH.iDurfee> ;
-    ns2:made <http://ceur-ws.org/Vol-1578/#paper9> ;
-    ns2:name "Edmund H. Durfee" .
-
-<http://ceur-ws.org/Vol-1578/#JerzyiKonorski> a ns2:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/JerzyiKonorski> ;
-    ns2:made <http://ceur-ws.org/Vol-1578/#paper8> ;
-    ns2:name "Jerzy Konorski" .
-
-<http://ceur-ws.org/Vol-1578/#JieiZhang> a ns2:Person ;
-    ns1:affiliation "" ;
-    ns4:sameAs <http://ceur-ws.org/persons/JieiZhang> ;
-    ns2:name "Jie Zhang" .
-
-<http://ceur-ws.org/Vol-1578/#LingiLiu> a ns2:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/LingiLiu> ;
-    ns2:made <http://ceur-ws.org/Vol-1578/#paper2> ;
-    ns2:name "Ling Liu" .
-
-<http://ceur-ws.org/Vol-1578/#MuratiSensoy> a ns2:Person ;
-    ns1:affiliation "" ;
-    ns4:sameAs <http://ceur-ws.org/persons/MuratiSensoy> ;
-    ns2:name "Murat Sensoy" .
-
-<http://ceur-ws.org/Vol-1578/#NardineiOsman> a ns2:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/NardineiOsman> ;
-    ns2:made <http://ceur-ws.org/Vol-1578/#paper1> ;
-    ns2:name "Nardine Osman" .
-
-<http://ceur-ws.org/Vol-1578/#QikuniXiang> a ns2:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/QikuniXiang> ;
-    ns2:made <http://ceur-ws.org/Vol-1578/#paper4> ;
-    ns2:name "Qikun Xiang" .
-
-<http://ceur-ws.org/Vol-1578/#RobiniCohen> a ns2:Person ;
-    ns1:affiliation "" ;
-    ns4:sameAs <http://ceur-ws.org/persons/RobiniCohen> ;
-    ns2:name "Robin Cohen" .
-
-<http://ceur-ws.org/Vol-1578/#TimiMuller> a ns2:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/TimiMuller> ;
-    ns2:made <http://ceur-ws.org/Vol-1578/#paper10> ;
-    ns2:name "Tim Muller" .
-
-<http://ceur-ws.org/Vol-1578/#VictoriS.iMelo> a ns2:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/VictoriS.iMelo> ;
-    ns2:made <http://ceur-ws.org/Vol-1578/#paper6> ;
-    ns2:name "Victor S. Melo" .
-
-<http://ceur-ws.org/Vol-1578/#event> a ns7:WorkshopEvent ;
-    ns7:hasLocation <http://dbpedia.org/resource/Singapore> ;
-    ns7:hasPart <http://ceur-ws.org/Vol-1578/#part-TRUST> ;
-    ns7:isSubEventOf <http://ceur-ws.org/Vol-1578/#conf> ;
-    ns8:beginsAtDatetime "2016-05-10T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:endsAtDatetime "2016-05-10T00:00:00+00:00"^^xsd:dateTime .
-
-<http://ceur-ws.org/Vol-1578/#paper1> a ns7:Paper ;
-    ns7:partOf <http://ceur-ws.org/Vol-1578/> ;
-    ns3:title "Reputation in the Academic World" ;
-    ns6:endPage 17 ;
-    ns6:numPages 17 ;
-    ns6:startPage 1 ;
-    ns1:author <http://ceur-ws.org/Vol-1578/#NardineiOsman> .
-
-<http://ceur-ws.org/Vol-1578/#paper10> a ns7:Paper ;
-    ns7:partOf <http://ceur-ws.org/Vol-1578/> ;
-    ns3:title "A Language for Trust Modelling" ;
-    ns6:endPage 70 ;
-    ns6:numPages 8 ;
-    ns6:startPage 63 ;
-    ns1:author <http://ceur-ws.org/Vol-1578/#TimiMuller> .
-
-<http://ceur-ws.org/Vol-1578/#paper11> a ns7:Paper ;
-    ns7:partOf <http://ceur-ws.org/Vol-1578/> ;
-    ns3:title "How to Manage the Information Sources' Trustworthiness in a Scenario of Hydrogeological Risks" ;
-    ns6:endPage 82 ;
-    ns6:numPages 12 ;
-    ns6:startPage 71 ;
-    ns1:author <http://ceur-ws.org/Vol-1578/#AlessandroiSapienza> .
-
-<http://ceur-ws.org/Vol-1578/#paper2> a ns7:Paper ;
-    ns7:partOf <http://ceur-ws.org/Vol-1578/> ;
-    ns3:title "Machine to Machine Trust in the IoT Era" ;
-    ns6:endPage 29 ;
-    ns6:numPages 12 ;
-    ns6:startPage 18 ;
-    ns1:author <http://ceur-ws.org/Vol-1578/#LingiLiu> .
-
-<http://ceur-ws.org/Vol-1578/#paper4> a ns7:Paper ;
-    ns7:partOf <http://ceur-ws.org/Vol-1578/> ;
-    ns3:title "Collusion-resistant Spatial Phenomena Crowdsourcing via Mixture of Gaussian Processes Regression" ;
-    ns6:endPage 30 ;
-    ns6:numPages 12 ;
-    ns6:startPage 19 ;
-    ns1:author <http://ceur-ws.org/Vol-1578/#QikuniXiang> .
-
-<http://ceur-ws.org/Vol-1578/#paper6> a ns7:Paper ;
-    ns7:partOf <http://ceur-ws.org/Vol-1578/> ;
-    ns3:title "Trust on Beliefs: Source, Time and Expertise" ;
-    ns6:endPage 42 ;
-    ns6:numPages 12 ;
-    ns6:startPage 31 ;
-    ns1:author <http://ceur-ws.org/Vol-1578/#VictoriS.iMelo> .
-
-<http://ceur-ws.org/Vol-1578/#paper8> a ns7:Paper ;
-    ns7:partOf <http://ceur-ws.org/Vol-1578/> ;
-    ns3:title "Trust Dynamics Analysis of CTR Scheme Subversion under Virtual Anonymity and Trust-Unaware Partner Selection" ;
-    ns6:endPage 53 ;
-    ns6:numPages 11 ;
-    ns6:startPage 43 ;
-    ns1:author <http://ceur-ws.org/Vol-1578/#JerzyiKonorski> .
-
-<http://ceur-ws.org/Vol-1578/#paper9> a ns7:Paper ;
-    ns7:partOf <http://ceur-ws.org/Vol-1578/> ;
-    ns3:title "On the Trustworthy Fulfillment of Commitments" ;
-    ns6:endPage 62 ;
-    ns6:numPages 9 ;
-    ns6:startPage 54 ;
-    ns1:author <http://ceur-ws.org/Vol-1578/#EdmundiH.iDurfee> .
-
-<http://ceur-ws.org/Vol-1578/> a ns7:Proceedings ;
-    ns7:hasPart <http://ceur-ws.org/Vol-1578/#paper1>,
-        <http://ceur-ws.org/Vol-1578/#paper10>,
-        <http://ceur-ws.org/Vol-1578/#paper11>,
-        <http://ceur-ws.org/Vol-1578/#paper2>,
-        <http://ceur-ws.org/Vol-1578/#paper4>,
-        <http://ceur-ws.org/Vol-1578/#paper6>,
-        <http://ceur-ws.org/Vol-1578/#paper8>,
-        <http://ceur-ws.org/Vol-1578/#paper9> ;
-    ns5:issued "2016-04-15T00:00:00+00:00"^^xsd:dateTime ;
+<http://ceur-ws.org/Vol-1578/> a ns2:Proceedings ;
+    ns7:issued "2016-04-15T00:00:00+00:00"^^xsd:dateTime ;
     ns6:presentedAt <http://ceur-ws.org/Vol-1578/#event> ;
     ns1:editor <http://ceur-ws.org/Vol-1578/#JieiZhang>,
         <http://ceur-ws.org/Vol-1578/#MuratiSensoy>,
         <http://ceur-ws.org/Vol-1578/#RobiniCohen> .
+
+<http://ceur-ws.org/Vol-1578/#JieiZhang> a ns5:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/JieiZhang> ;
+    ns5:name "Jie Zhang" .
+
+<http://ceur-ws.org/Vol-1578/#MuratiSensoy> a ns5:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/MuratiSensoy> ;
+    ns5:name "Murat Sensoy" .
+
+<http://ceur-ws.org/Vol-1578/#RobiniCohen> a ns5:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/RobiniCohen> ;
+    ns5:name "Robin Cohen" .
+
+<http://ceur-ws.org/Vol-1578/#event> a ns2:WorkshopEvent ;
+    ns2:hasLocation <http://dbpedia.org/resource/Singapore> ;
+    ns2:hasPart <http://ceur-ws.org/Vol-1578/#part-ws> ;
+    ns2:isSubEventOf <http://ceur-ws.org/Vol-1578/#conf> ;
+    ns4:beginsAtDatetime "2016-05-10T00:00:00+00:00"^^xsd:dateTime ;
+    ns4:endsAtDatetime "2016-05-10T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:license "http://creativecommons.org/publicdomain/zero/1.0/" .
 

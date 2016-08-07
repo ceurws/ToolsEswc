@@ -1,181 +1,40 @@
-@prefix ns1: <http://purl.org/ontology/bibo/#> .
-@prefix ns2: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns3: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns4: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns5: <http://xmlns.com/foaf/0.1/> .
-@prefix ns6: <http://www.w3.org/2002/07/owl#> .
-@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns1: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns2: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns3: <http://purl.org/dc/elements/1.1/> .
+@prefix ns4: <http://xmlns.com/foaf/0.1/> .
+@prefix ns5: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns6: <http://purl.org/ontology/bibo/#> .
+@prefix ns7: <http://www.w3.org/2002/07/owl#> .
 @prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1055/#AndreasiN%C3%BCchter> a ns5:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/AndreasiN%C3%BCchter> ;
-    ns5:made <http://ceur-ws.org/Vol-1055/#paper4> ;
-    ns5:name "Andreas Nüchter" .
-
-<http://ceur-ws.org/Vol-1055/#ChristianiFreksa> a ns5:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/ChristianiFreksa> ;
-    ns5:made <http://ceur-ws.org/Vol-1055/#invited> ;
-    ns5:name "Christian Freksa" .
-
-<http://ceur-ws.org/Vol-1055/#ChristophiZetzsche> a ns5:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/ChristophiZetzsche> ;
-    ns5:made <http://ceur-ws.org/Vol-1055/#paper1> ;
-    ns5:name "Christoph Zetzsche" .
-
-<http://ceur-ws.org/Vol-1055/#CorinaiGurau> a ns5:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/CorinaiGurau> ;
-    ns5:made <http://ceur-ws.org/Vol-1055/#paper4> ;
-    ns5:name "Corina Gurau" .
-
-<http://ceur-ws.org/Vol-1055/#DanieliWeiskopf> a ns5:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/DanieliWeiskopf> ;
-    ns5:made <http://ceur-ws.org/Vol-1055/#paper5> ;
-    ns5:name "Daniel Weiskopf" .
-
-<http://ceur-ws.org/Vol-1055/#FalkiSchmidsberger> a ns5:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/FalkiSchmidsberger> ;
-    ns5:made <http://ceur-ws.org/Vol-1055/#paper3> ;
-    ns5:name "Falk Schmidsberger" .
-
-<http://ceur-ws.org/Vol-1055/#HulyaiYalcin> a ns5:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/HulyaiYalcin> ;
-    ns5:made <http://ceur-ws.org/Vol-1055/#paper2> ;
-    ns5:name "Hulya Yalcin" .
-
-<http://ceur-ws.org/Vol-1055/#MarcoiRagni> a ns5:Person ;
-    ns3:affiliation "" ;
-    ns6:sameAs <http://ceur-ws.org/persons/MarcoiRagni> ;
-    ns5:name "Marco Ragni" .
-
-<http://ceur-ws.org/Vol-1055/#MichaeliBurch> a ns5:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/MichaeliBurch> ;
-    ns5:made <http://ceur-ws.org/Vol-1055/#paper5> ;
-    ns5:name "Michael Burch" .
-
-<http://ceur-ws.org/Vol-1055/#MustafaiErsen> a ns5:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/MustafaiErsen> ;
-    ns5:made <http://ceur-ws.org/Vol-1055/#paper2> ;
-    ns5:name "Mustafa Ersen" .
-
-<http://ceur-ws.org/Vol-1055/#SanemiSariel-Talay> a ns5:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/SanemiSariel-Talay> ;
-    ns5:made <http://ceur-ws.org/Vol-1055/#paper2> ;
-    ns5:name "Sanem Sariel-Talay" .
-
-<http://ceur-ws.org/Vol-1055/#SveniEberhardt> a ns5:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/SveniEberhardt> ;
-    ns5:made <http://ceur-ws.org/Vol-1055/#paper1> ;
-    ns5:name "Sven Eberhardt" .
-
-<http://ceur-ws.org/Vol-1055/#TanjaiBlascheck> a ns5:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/TanjaiBlascheck> ;
-    ns5:made <http://ceur-ws.org/Vol-1055/#paper6> ;
-    ns5:name "Tanja Blascheck" .
-
-<http://ceur-ws.org/Vol-1055/#ThomasiErtl> a ns5:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/ThomasiErtl> ;
-    ns5:made <http://ceur-ws.org/Vol-1055/#paper6> ;
-    ns5:name "Thomas Ertl" .
-
-<http://ceur-ws.org/Vol-1055/#event> a ns2:WorkshopEvent ;
-    ns2:hasLocation <http://dbpedia.org/resource/Germany> ;
-    ns2:hasPart <http://ceur-ws.org/Vol-1055/#part-KIK-WS> ;
-    ns2:isSubEventOf <http://ceur-ws.org/Vol-1055/#conf> ;
-    ns7:beginsAtDatetime "2013-09-17T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:endsAtDatetime "2013-09-17T00:00:00+00:00"^^xsd:dateTime ;
-    ns4:license <http://choosealicense.com/licenses/no-license/> .
-
-<http://ceur-ws.org/Vol-1055/#FriederiStolzenburg> a ns5:Person ;
-    ns3:affiliation "" ;
-    ns6:sameAs <http://ceur-ws.org/persons/FriederiStolzenburg> ;
-    ns5:made <http://ceur-ws.org/Vol-1055/#paper3> ;
-    ns5:name "Frieder Stolzenburg" .
-
-<http://ceur-ws.org/Vol-1055/#MichaeliRaschke> a ns5:Person ;
-    ns3:affiliation "" ;
-    ns6:sameAs <http://ceur-ws.org/persons/MichaeliRaschke> ;
-    ns5:made <http://ceur-ws.org/Vol-1055/#paper5> ;
-    ns5:name "Michael Raschke" .
-
-<http://ceur-ws.org/Vol-1055/#invited> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1055/> ;
-    ns4:title "The Power of Space and Time" ;
-    ns1:endPage 4 ;
-    ns1:numPages 1 ;
-    ns1:startPage 4 ;
-    ns3:author <http://ceur-ws.org/Vol-1055/#ChristianiFreksa> .
-
-<http://ceur-ws.org/Vol-1055/#paper1> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1055/> ;
-    ns4:title "Low-level global features for vision-based localizations" ;
-    ns1:endPage 12 ;
-    ns1:numPages 8 ;
-    ns1:startPage 5 ;
-    ns3:author <http://ceur-ws.org/Vol-1055/#ChristophiZetzsche>,
-        <http://ceur-ws.org/Vol-1055/#SveniEberhardt> .
-
-<http://ceur-ws.org/Vol-1055/#paper3> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1055/> ;
-    ns4:title "Semantic Object Recognition with Segment Faces" ;
-    ns1:endPage 28 ;
-    ns1:numPages 8 ;
-    ns1:startPage 21 ;
-    ns3:author <http://ceur-ws.org/Vol-1055/#FalkiSchmidsberger>,
-        <http://ceur-ws.org/Vol-1055/#FriederiStolzenburg> .
-
-<http://ceur-ws.org/Vol-1055/#paper4> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1055/> ;
-    ns4:title "Challenges in Using Semantic Knowledge for 3D Object Classification" ;
-    ns1:endPage 35 ;
-    ns1:numPages 7 ;
-    ns1:startPage 29 ;
-    ns3:author <http://ceur-ws.org/Vol-1055/#AndreasiN%C3%BCchter>,
-        <http://ceur-ws.org/Vol-1055/#CorinaiGurau> .
-
-<http://ceur-ws.org/Vol-1055/#paper6> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1055/> ;
-    ns4:title "Techniques for Analyzing Empirical Visualization Experiments Through Visual Methods" ;
-    ns1:endPage 51 ;
-    ns1:numPages 8 ;
-    ns1:startPage 44 ;
-    ns3:author <http://ceur-ws.org/Vol-1055/#TanjaiBlascheck>,
-        <http://ceur-ws.org/Vol-1055/#ThomasiErtl> .
-
-<http://ceur-ws.org/Vol-1055/#paper2> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1055/> ;
-    ns4:title "Extracting Spatial Relations Among Objects for Failure Detection" ;
-    ns1:endPage 20 ;
-    ns1:numPages 8 ;
-    ns1:startPage 13 ;
-    ns3:author <http://ceur-ws.org/Vol-1055/#HulyaiYalcin>,
-        <http://ceur-ws.org/Vol-1055/#MustafaiErsen>,
-        <http://ceur-ws.org/Vol-1055/#SanemiSariel-Talay> .
-
-<http://ceur-ws.org/Vol-1055/#paper5> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1055/> ;
-    ns4:title "Exploring Spatio-Temporal Data Modeled as Dynamic Weighted Relations" ;
-    ns1:endPage 43 ;
-    ns1:numPages 8 ;
-    ns1:startPage 36 ;
-    ns3:author <http://ceur-ws.org/Vol-1055/#DanieliWeiskopf>,
-        <http://ceur-ws.org/Vol-1055/#MichaeliBurch>,
-        <http://ceur-ws.org/Vol-1055/#MichaeliRaschke> .
-
-<http://ceur-ws.org/Vol-1055/> a ns2:Proceedings ;
-    ns2:hasPart <http://ceur-ws.org/Vol-1055/#invited>,
-        <http://ceur-ws.org/Vol-1055/#paper1>,
-        <http://ceur-ws.org/Vol-1055/#paper2>,
-        <http://ceur-ws.org/Vol-1055/#paper3>,
-        <http://ceur-ws.org/Vol-1055/#paper4>,
-        <http://ceur-ws.org/Vol-1055/#paper5>,
-        <http://ceur-ws.org/Vol-1055/#paper6> ;
+<http://ceur-ws.org/Vol-1055/> a ns1:Proceedings ;
     ns8:issued "2013-10-07T00:00:00+00:00"^^xsd:dateTime ;
-    ns1:presentedAt <http://ceur-ws.org/Vol-1055/#event> ;
-    ns3:editor <http://ceur-ws.org/Vol-1055/#FriederiStolzenburg>,
+    ns6:presentedAt <http://ceur-ws.org/Vol-1055/#event> ;
+    ns2:editor <http://ceur-ws.org/Vol-1055/#FriederiStolzenburg>,
         <http://ceur-ws.org/Vol-1055/#MarcoiRagni>,
         <http://ceur-ws.org/Vol-1055/#MichaeliRaschke> .
+
+<http://ceur-ws.org/Vol-1055/#FriederiStolzenburg> a ns4:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/FriederiStolzenburg> ;
+    ns4:name "Frieder Stolzenburg" .
+
+<http://ceur-ws.org/Vol-1055/#MarcoiRagni> a ns4:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/MarcoiRagni> ;
+    ns4:name "Marco Ragni" .
+
+<http://ceur-ws.org/Vol-1055/#MichaeliRaschke> a ns4:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/MichaeliRaschke> ;
+    ns4:name "Michael Raschke" .
+
+<http://ceur-ws.org/Vol-1055/#event> a ns1:WorkshopEvent ;
+    ns1:hasLocation <http://dbpedia.org/resource/Germany> ;
+    ns1:hasPart <http://ceur-ws.org/Vol-1055/#part-CEUR-WS> ;
+    ns1:isSubEventOf <http://ceur-ws.org/Vol-1055/#conf> ;
+    ns5:beginsAtDatetime "2013-09-17T00:00:00+00:00"^^xsd:dateTime ;
+    ns5:endsAtDatetime "2013-09-17T00:00:00+00:00"^^xsd:dateTime ;
+    ns3:license "http://choosealicense.com/licenses/no-license/" .
 

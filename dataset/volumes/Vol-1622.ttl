@@ -1,0 +1,46 @@
+@prefix ns1: <http://purl.org/dc/elements/1.1/> .
+@prefix ns2: <http://xmlns.com/foaf/0.1/> .
+@prefix ns3: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns4: <http://www.w3.org/2002/07/owl#> .
+@prefix ns5: <http://purl.org/ontology/bibo/#> .
+@prefix ns6: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://ceur-ws.org/Vol-1622/> a ns3:Proceedings ;
+    ns8:issued "2016-07-07T00:00:00+00:00"^^xsd:dateTime ;
+    ns5:presentedAt <http://ceur-ws.org/Vol-1622/#event> ;
+    ns6:editor <http://ceur-ws.org/Vol-1622/#ArieliMonteserin>,
+        <http://ceur-ws.org/Vol-1622/#JieiTang>,
+        <http://ceur-ws.org/Vol-1622/#MarceloiG.iArmentano>,
+        <http://ceur-ws.org/Vol-1622/#VirginiaiYannibelli> .
+
+<http://ceur-ws.org/Vol-1622/#ArieliMonteserin> a ns2:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/ArieliMonteserin> ;
+    ns2:name "Ariel Monteserin" .
+
+<http://ceur-ws.org/Vol-1622/#JieiTang> a ns2:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/JieiTang> ;
+    ns2:name "Jie Tang" .
+
+<http://ceur-ws.org/Vol-1622/#MarceloiG.iArmentano> a ns2:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/MarceloiG.iArmentano> ;
+    ns2:name "Marcelo G. Armentano" .
+
+<http://ceur-ws.org/Vol-1622/#VirginiaiYannibelli> a ns2:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/VirginiaiYannibelli> ;
+    ns2:name "Virginia Yannibelli" .
+
+<http://ceur-ws.org/Vol-1622/#event> a ns3:WorkshopEvent ;
+    ns3:hasLocation <http://dbpedia.org/resource/United_States> ;
+    ns3:hasPart <http://ceur-ws.org/Vol-1622/#part-ws> ;
+    ns3:isSubEventOf <http://ceur-ws.org/Vol-1622/#conf> ;
+    ns7:beginsAtDatetime "2016-07-09T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:endsAtDatetime "2016-07-09T00:00:00+00:00"^^xsd:dateTime ;
+    ns1:license "http://creativecommons.org/publicdomain/zero/1.0/" ;
+    rdfs:seeAlso <http://ceur-ws.org/Vol-1398/#event> .
+

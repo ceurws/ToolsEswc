@@ -1,89 +1,54 @@
-@prefix ns1: <http://purl.org/ontology/bibo/#> .
+@prefix ns1: <http://swrc.ontoware.org/ontology/#> .
 @prefix ns2: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns3: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns3: <http://purl.org/ontology/bibo/#> .
 @prefix ns4: <http://www.w3.org/2002/07/owl#> .
-@prefix ns5: <http://xmlns.com/foaf/0.1/> .
-@prefix ns6: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns5: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns6: <http://xmlns.com/foaf/0.1/> .
+@prefix ns7: <http://purl.org/dc/elements/1.1/> .
+@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-853/#ArturiMeski> a ns5:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/ArturiMeski> ;
-    ns5:made <http://ceur-ws.org/Vol-853/#lam5> ;
-    ns5:name "Artur Meski" .
+<http://ceur-ws.org/Vol-853/> a ns2:Proceedings ;
+    ns8:issued "2012-06-11T00:00:00+00:00"^^xsd:dateTime ;
+    ns3:presentedAt <http://ceur-ws.org/Vol-853/#event> ;
+    ns1:editor <http://ceur-ws.org/Vol-853/#BerndtiFarwer>,
+        <http://ceur-ws.org/Vol-853/#EditedibyMichaeliK%C3%B6hler-Bu%C3%9FmeierUniversityiofiHamburg>,
+        <http://ceur-ws.org/Vol-853/#FranckiPommereau>,
+        <http://ceur-ws.org/Vol-853/#HannaiKlaudel>,
+        <http://ceur-ws.org/Vol-853/#RafaeliAccorsi>,
+        <http://ceur-ws.org/Vol-853/#SilvioiRanise>,
+        <http://ceur-ws.org/Vol-853/#TadaoiMurata> .
 
-<http://ceur-ws.org/Vol-853/#BerndtiFarwer> a ns5:Person ;
-    ns3:affiliation "LAM'12" ;
+<http://ceur-ws.org/Vol-853/#BerndtiFarwer> a ns6:Person ;
     ns4:sameAs <http://ceur-ws.org/persons/BerndtiFarwer> ;
-    ns5:name "Berndt Farwer" .
+    ns6:name "Berndt Farwer" .
 
-<http://ceur-ws.org/Vol-853/#BerndtiMülleri> a ns5:Person ;
-    ns5:made <http://ceur-ws.org/Vol-853/#lam1> ;
-    ns5:name "Berndt Müller" .
+<http://ceur-ws.org/Vol-853/#EditedibyMichaeliK%C3%B6hler-Bu%C3%9FmeierUniversityiofiHamburg> a ns6:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/EditedibyMichaeliK%C3%B6hler-Bu%C3%9FmeierUniversityiofiHamburg> ;
+    ns6:name "Edited byMichael Köhler-BußmeierUniversity of Hamburg" .
 
-<http://ceur-ws.org/Vol-853/#CarloiFerigato> a ns5:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/CarloiFerigato> ;
-    ns5:made <http://ceur-ws.org/Vol-853/#woops3> ;
-    ns5:name "Carlo Ferigato" .
+<http://ceur-ws.org/Vol-853/#FranckiPommereau> a ns6:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/FranckiPommereau> ;
+    ns6:name "Franck Pommereau" .
 
-<http://ceur-ws.org/Vol-853/#ChristianiStahl> a ns5:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/ChristianiStahl> ;
-    ns5:made <http://ceur-ws.org/Vol-853/#componet3> ;
-    ns5:name "Christian Stahl" .
+<http://ceur-ws.org/Vol-853/#HannaiKlaudel> a ns6:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/HannaiKlaudel> ;
+    ns6:name "Hanna Klaudel" .
 
-<http://ceur-ws.org/Vol-853/#FrankiHeitmann> a ns5:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/FrankiHeitmann> ;
-    ns5:made <http://ceur-ws.org/Vol-853/#lam4> ;
-    ns5:name "Frank Heitmann" .
+<http://ceur-ws.org/Vol-853/#RafaeliAccorsi> a ns6:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/RafaeliAccorsi> ;
+    ns6:name "Rafael Accorsi" .
 
-<http://ceur-ws.org/Vol-853/#Jos%C3%A9iMart%C3%ADniCastro-Manzano> a ns5:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/Jos%C3%A9iMart%C3%ADniCastro-Manzano> ;
-    ns5:made <http://ceur-ws.org/Vol-853/#lam3> ;
-    ns5:name "José Martín Castro-Manzano" .
+<http://ceur-ws.org/Vol-853/#SilvioiRanise> a ns6:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/SilvioiRanise> ;
+    ns6:name "Silvio Ranise" .
 
-<http://ceur-ws.org/Vol-853/#JuliaiPadberg> a ns5:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/JuliaiPadberg> ;
-    ns5:made <http://ceur-ws.org/Vol-853/#lam2> ;
-    ns5:name "Julia Padberg" .
-
-<http://ceur-ws.org/Vol-853/#Karsteniwolf> a ns5:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/Karsteniwolf> ;
-    ns5:made <http://ceur-ws.org/Vol-853/#woops1> ;
-    ns5:name "Karsten wolf" .
-
-<http://ceur-ws.org/Vol-853/#LucaiBernardinello> a ns5:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/LucaiBernardinello> ;
-    ns5:made <http://ceur-ws.org/Vol-853/#componet2> ;
-    ns5:name "Luca Bernardinello" .
-
-<http://ceur-ws.org/Vol-853/#LuciaiPomello> a ns5:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/LuciaiPomello> ;
-    ns5:made <http://ceur-ws.org/Vol-853/#componet2> ;
-    ns5:name "Lucia Pomello" .
-
-<http://ceur-ws.org/Vol-853/#MaciejiSzreter> a ns5:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/MaciejiSzreter> ;
-    ns5:made <http://ceur-ws.org/Vol-853/#lam5> ;
-    ns5:name "Maciej Szreter" .
-
-<http://ceur-ws.org/Vol-853/#RichardiM%C3%BCller> a ns5:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/RichardiM%C3%BCller> ;
-    ns5:made <http://ceur-ws.org/Vol-853/#componet3> ;
-    ns5:name "Richard Müller" .
-
-<http://ceur-ws.org/Vol-853/#WojciechiPenczek> a ns5:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/WojciechiPenczek> ;
-    ns5:made <http://ceur-ws.org/Vol-853/#lam5> ;
-    ns5:name "Wojciech Penczek" .
-
-<http://ceur-ws.org/Vol-853/#Yves-StaniLeiCornec> a ns5:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/Yves-StaniLeiCornec> ;
-    ns5:made <http://ceur-ws.org/Vol-853/#componet4> ;
-    ns5:name "Yves-Stan Le Cornec" .
+<http://ceur-ws.org/Vol-853/#TadaoiMurata> a ns6:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/TadaoiMurata> ;
+    ns6:name "Tadao Murata" .
 
 <http://ceur-ws.org/Vol-853/#event> a ns2:WorkshopEvent ;
     ns2:hasLocation <http://dbpedia.org/resource/Germany> ;
@@ -91,219 +56,7 @@
         <http://ceur-ws.org/Vol-853/#part-LAM>,
         <http://ceur-ws.org/Vol-853/#part-WooPS> ;
     ns2:isSubEventOf <http://ceur-ws.org/Vol-853/#conf> ;
-    ns8:beginsAtDatetime "2012-06-25T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:endsAtDatetime "2012-06-26T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:license <http://choosealicense.com/licenses/no-license/> .
-
-<http://ceur-ws.org/Vol-853/#ElisabettaiMangioni> a ns5:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/ElisabettaiMangioni> ;
-    ns5:made <http://ceur-ws.org/Vol-853/#componet2>,
-        <http://ceur-ws.org/Vol-853/#woops3> ;
-    ns5:name "Elisabetta Mangioni" .
-
-<http://ceur-ws.org/Vol-853/#FranckiPommereau> a ns5:Person ;
-    ns3:affiliation "CompoNet'12" ;
-    ns4:sameAs <http://ceur-ws.org/persons/FranckiPommereau> ;
-    ns5:made <http://ceur-ws.org/Vol-853/#componet1> ;
-    ns5:name "Franck Pommereau" .
-
-<http://ceur-ws.org/Vol-853/#HannaiKlaudel> a ns5:Person ;
-    ns3:affiliation "CompoNet'12" ;
-    ns4:sameAs <http://ceur-ws.org/persons/HannaiKlaudel> ;
-    ns5:made <http://ceur-ws.org/Vol-853/#componet1> ;
-    ns5:name "Hanna Klaudel" .
-
-<http://ceur-ws.org/Vol-853/#RafaeliAccorsi> a ns5:Person ;
-    ns3:affiliation "WooPS'12" ;
-    ns4:sameAs <http://ceur-ws.org/persons/RafaeliAccorsi> ;
-    ns5:made <http://ceur-ws.org/Vol-853/#woops0> ;
-    ns5:name "Rafael Accorsi" .
-
-<http://ceur-ws.org/Vol-853/#SilvioiRanise> a ns5:Person ;
-    ns3:affiliation "Dept. of TelematicsUniversity of Freiburg Germany Department of Computer ScienceUniversity of IllinoisChicagoUSA Fondazione Bruno KesslerCenter for Information TechnologySecurity and Trust" ;
-    ns4:sameAs <http://ceur-ws.org/persons/SilvioiRanise> ;
-    ns5:made <http://ceur-ws.org/Vol-853/#woops0> ;
-    ns5:name "Silvio Ranise" .
-
-<http://ceur-ws.org/Vol-853/#TadaoiMurata> a ns5:Person ;
-    ns3:affiliation "WooPS'12" ;
-    ns4:sameAs <http://ceur-ws.org/persons/TadaoiMurata> ;
-    ns5:made <http://ceur-ws.org/Vol-853/#woops0> ;
-    ns5:name "Tadao Murata" .
-
-<http://ceur-ws.org/Vol-853/#componet4> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-853/> ;
-    ns6:title "Compositional Analysis of Modular Petri Nets using Hierarchical State Space Abstraction" ;
-    ns1:endPage 119 ;
-    ns1:numPages 1 ;
-    ns1:section <http%3A//ceur-ws.org/Vol-853/%232ndInternationalWorkshoponPetriNetsCompositions> ;
-    ns1:startPage 119 ;
-    ns3:author <http://ceur-ws.org/Vol-853/#Yves-StaniLeiCornec> .
-
-<http://ceur-ws.org/Vol-853/#lam2> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-853/> ;
-    ns6:title "Reconfigurable Petri Nets: Modeling and Analysis" ;
-    ns1:endPage 3 ;
-    ns1:numPages 1 ;
-    ns1:section <http%3A//ceur-ws.org/Vol-853/%235thInternationalWorkshoponLogics%2CAgents%2CandMobility> ;
-    ns1:startPage 3 ;
-    ns3:author <http://ceur-ws.org/Vol-853/#JuliaiPadberg> .
-
-<http://ceur-ws.org/Vol-853/#lam3> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-853/> ;
-    ns6:title "Modelling Intentional Reasoning with Defeasible and Temporal Logic" ;
-    ns1:endPage 5 ;
-    ns1:numPages 1 ;
-    ns1:section <http%3A//ceur-ws.org/Vol-853/%235thInternationalWorkshoponLogics%2CAgents%2CandMobility> ;
-    ns1:startPage 5 ;
-    ns3:author <http://ceur-ws.org/Vol-853/#Jos%C3%A9iMart%C3%ADniCastro-Manzano> .
-
-<http://ceur-ws.org/Vol-853/#woops1> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-853/> ;
-    ns6:title "Developing and Integrating Petri net tools - an Experience Report" ;
-    ns1:endPage 53 ;
-    ns1:numPages 1 ;
-    ns1:section <http%3A//ceur-ws.org/Vol-853/%231stInternationalWorkshoponPetriNet-basedSecurity> ;
-    ns1:startPage 53 ;
-    ns3:author <http://ceur-ws.org/Vol-853/#Karsteniwolf> .
-
-<http://ceur-ws.org/Vol-853/#woops2> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-853/> ;
-    ns6:title "Analysing SONAR Model Transformations" ;
-    ns1:endPage 55 ;
-    ns1:numPages 1 ;
-    ns1:section <http%3A//ceur-ws.org/Vol-853/%231stInternationalWorkshoponPetriNet-basedSecurity> ;
-    ns1:startPage 55 ;
-    ns3:author <http://ceur-ws.org/Vol-853/#MichaeliK%C3%B6hler-Bu%C3%9Fmeier> .
-
-<http://ceur-ws.org/Vol-853/#componet1> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-853/> ;
-    ns6:title "Preface of the 2nd International Workshop on Petri Nets Compositions (CompoNet'12)" ;
-    ns1:endPage 85 ;
-    ns1:numPages 1 ;
-    ns1:section <http%3A//ceur-ws.org/Vol-853/%232ndInternationalWorkshoponPetriNetsCompositions> ;
-    ns1:startPage 85 ;
-    ns3:author <http://ceur-ws.org/Vol-853/#FranckiPommereau>,
-        <http://ceur-ws.org/Vol-853/#HannaiKlaudel> .
-
-<http://ceur-ws.org/Vol-853/#componet3> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-853/> ;
-    ns6:title "Deciding the Precongruence for Deadlock Freedom Using Operating Guidelines" ;
-    ns1:endPage 103 ;
-    ns1:numPages 1 ;
-    ns1:section <http%3A//ceur-ws.org/Vol-853/%232ndInternationalWorkshoponPetriNetsCompositions> ;
-    ns1:startPage 103 ;
-    ns3:author <http://ceur-ws.org/Vol-853/#ChristianiStahl>,
-        <http://ceur-ws.org/Vol-853/#RichardiM%C3%BCller> .
-
-<http://ceur-ws.org/Vol-853/#lam1> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-853/> ;
-    ns6:title "Preface of the International Workshop on Logics, Agents, and Mobility (LAM'12)" ;
-    ns1:endPage 1 ;
-    ns1:numPages 1 ;
-    ns1:section <http%3A//ceur-ws.org/Vol-853/%235thInternationalWorkshoponLogics%2CAgents%2CandMobility> ;
-    ns1:startPage 1 ;
-    ns3:author <http://ceur-ws.org/Vol-853/#BerndtiMülleri>,
-        <http://ceur-ws.org/Vol-853/#MichaeliK%C3%B6hler-Bu%C3%9Fmeier> .
-
-<http://ceur-ws.org/Vol-853/#lam4> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-853/> ;
-    ns6:title "A Mobility Logic for Object Net Systems" ;
-    ns1:endPage 19 ;
-    ns1:numPages 1 ;
-    ns1:section <http%3A//ceur-ws.org/Vol-853/%235thInternationalWorkshoponLogics%2CAgents%2CandMobility> ;
-    ns1:startPage 19 ;
-    ns3:author <http://ceur-ws.org/Vol-853/#FrankiHeitmann>,
-        <http://ceur-ws.org/Vol-853/#MichaeliK%C3%B6hler-Bu%C3%9Fmeier> .
-
-<http://ceur-ws.org/Vol-853/#woops3> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-853/> ;
-    ns6:title "Inference of Local Properties in Petri Nets Composed through an Interface" ;
-    ns1:endPage 71 ;
-    ns1:numPages 1 ;
-    ns1:section <http%3A//ceur-ws.org/Vol-853/%231stInternationalWorkshoponPetriNet-basedSecurity> ;
-    ns1:startPage 71 ;
-    ns3:author <http://ceur-ws.org/Vol-853/#CarloiFerigato>,
-        <http://ceur-ws.org/Vol-853/#ElisabettaiMangioni> .
-
-<http://ceur-ws.org/Vol-853/#MichaeliK%C3%B6hler-Bu%C3%9Fmeier> a ns5:Person ;
-    ns3:affiliation "MIN Faculty, Informatics. D-22527 Hamburg, Germany.Workshop Chairs:",
-        "University of GlamorganFaculty of Advanced Technology. University of HamburgMIN FacultyInformatics. D-22527 HamburgGermany." ;
-    ns4:sameAs <http://ceur-ws.org/persons/MichaeliK%C3%B6hler-Bu%C3%9Fmeier> ;
-    ns5:made <http://ceur-ws.org/Vol-853/#lam1>,
-        <http://ceur-ws.org/Vol-853/#lam4>,
-        <http://ceur-ws.org/Vol-853/#woops2> ;
-    ns5:name "Michael Köhler-Bußmeier" .
-
-<http://ceur-ws.org/Vol-853/#componet2> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-853/> ;
-    ns6:title "Composition of Elementary Net Systems based on α-Morphisms" ;
-    ns1:endPage 87 ;
-    ns1:numPages 1 ;
-    ns1:section <http%3A//ceur-ws.org/Vol-853/%232ndInternationalWorkshoponPetriNetsCompositions> ;
-    ns1:startPage 87 ;
-    ns3:author <http://ceur-ws.org/Vol-853/#ElisabettaiMangioni>,
-        <http://ceur-ws.org/Vol-853/#LucaiBernardinello>,
-        <http://ceur-ws.org/Vol-853/#LuciaiPomello> .
-
-<http://ceur-ws.org/Vol-853/#lam5> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-853/> ;
-    ns6:title "BDD-based Bounded Model Checking for LTLK over Two Variants of Interpreted Systems" ;
-    ns1:endPage 35 ;
-    ns1:numPages 1 ;
-    ns1:section <http%3A//ceur-ws.org/Vol-853/%235thInternationalWorkshoponLogics%2CAgents%2CandMobility> ;
-    ns1:startPage 35 ;
-    ns3:author <http://ceur-ws.org/Vol-853/#ArturiMeski>,
-        <http://ceur-ws.org/Vol-853/#MaciejiSzreter>,
-        <http://ceur-ws.org/Vol-853/#WojciechiPenczek> .
-
-<http://ceur-ws.org/Vol-853/#woops0> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-853/> ;
-    ns6:title "Preface of the International Workshop on Petri Net-based Security (WooPS)" ;
-    ns1:endPage 51 ;
-    ns1:numPages 1 ;
-    ns1:section <http%3A//ceur-ws.org/Vol-853/%231stInternationalWorkshoponPetriNet-basedSecurity> ;
-    ns1:startPage 51 ;
-    ns3:author <http://ceur-ws.org/Vol-853/#RafaeliAccorsi>,
-        <http://ceur-ws.org/Vol-853/#SilvioiRanise>,
-        <http://ceur-ws.org/Vol-853/#TadaoiMurata> .
-
-<http%3A//ceur-ws.org/Vol-853/%231stInternationalWorkshoponPetriNet-basedSecurity> a ns2:SessionEvent ;
-    ns2:partOf <http://ceur-ws.org/Vol-853/> ;
-    ns6:title "1st International Workshop on Petri Net-based Security" .
-
-<http%3A//ceur-ws.org/Vol-853/%232ndInternationalWorkshoponPetriNetsCompositions> a ns2:SessionEvent ;
-    ns2:partOf <http://ceur-ws.org/Vol-853/> ;
-    ns6:title "2nd International Workshop on Petri Nets Compositions" .
-
-<http%3A//ceur-ws.org/Vol-853/%235thInternationalWorkshoponLogics%2CAgents%2CandMobility> a ns2:SessionEvent ;
-    ns2:partOf <http://ceur-ws.org/Vol-853/> ;
-    ns6:title "5th International Workshop on Logics, Agents, and Mobility" .
-
-<http://ceur-ws.org/Vol-853/> a ns2:Proceedings ;
-    ns2:hasPart <http://ceur-ws.org/Vol-853/#componet1>,
-        <http://ceur-ws.org/Vol-853/#componet2>,
-        <http://ceur-ws.org/Vol-853/#componet3>,
-        <http://ceur-ws.org/Vol-853/#componet4>,
-        <http://ceur-ws.org/Vol-853/#lam1>,
-        <http://ceur-ws.org/Vol-853/#lam2>,
-        <http://ceur-ws.org/Vol-853/#lam3>,
-        <http://ceur-ws.org/Vol-853/#lam4>,
-        <http://ceur-ws.org/Vol-853/#lam5>,
-        <http://ceur-ws.org/Vol-853/#woops0>,
-        <http://ceur-ws.org/Vol-853/#woops1>,
-        <http://ceur-ws.org/Vol-853/#woops2>,
-        <http://ceur-ws.org/Vol-853/#woops3> ;
-    ns2:hasSession <http%3A//ceur-ws.org/Vol-853/%231stInternationalWorkshoponPetriNet-basedSecurity>,
-        <http%3A//ceur-ws.org/Vol-853/%232ndInternationalWorkshoponPetriNetsCompositions>,
-        <http%3A//ceur-ws.org/Vol-853/%235thInternationalWorkshoponLogics%2CAgents%2CandMobility> ;
-    ns7:issued "2012-06-11T00:00:00+00:00"^^xsd:dateTime ;
-    ns1:presentedAt <http://ceur-ws.org/Vol-853/#event> ;
-    ns3:editor <http://ceur-ws.org/Vol-853/#BerndtiFarwer>,
-        <http://ceur-ws.org/Vol-853/#FranckiPommereau>,
-        <http://ceur-ws.org/Vol-853/#HannaiKlaudel>,
-        <http://ceur-ws.org/Vol-853/#MichaeliK%C3%B6hler-Bu%C3%9Fmeier>,
-        <http://ceur-ws.org/Vol-853/#RafaeliAccorsi>,
-        <http://ceur-ws.org/Vol-853/#SilvioiRanise>,
-        <http://ceur-ws.org/Vol-853/#TadaoiMurata> .
+    ns5:beginsAtDatetime "2012-06-25T00:00:00+00:00"^^xsd:dateTime ;
+    ns5:endsAtDatetime "2012-06-26T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:license "http://choosealicense.com/licenses/no-license/" .
 

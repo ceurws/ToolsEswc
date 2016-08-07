@@ -1,244 +1,45 @@
-@prefix ns1: <http://xmlns.com/foaf/0.1/> .
+@prefix ns1: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix ns2: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns3: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns4: <http://www.w3.org/2002/07/owl#> .
-@prefix ns5: <http://purl.org/ontology/bibo/#> .
-@prefix ns6: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns3: <http://www.w3.org/2002/07/owl#> .
+@prefix ns4: <http://xmlns.com/foaf/0.1/> .
+@prefix ns5: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns6: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns7: <http://purl.org/dc/elements/1.1/> .
+@prefix ns8: <http://purl.org/ontology/bibo/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-765/#AndrewiJames> a ns1:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/AndrewiJames> ;
-    ns1:made <http://ceur-ws.org/Vol-765/#paper5> ;
-    ns1:name "Andrew James" .
+<http://ceur-ws.org/Vol-765/> a ns2:Proceedings ;
+    ns1:issued "2011-11-02T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:presentedAt <http://ceur-ws.org/Vol-765/#event> ;
+    ns6:editor <http://ceur-ws.org/Vol-765/#Jo%C3%A3oiGama>,
+        <http://ceur-ws.org/Vol-765/#MohamediMedhatiGaber>,
+        <http://ceur-ws.org/Vol-765/#MykolaiPechenizkiy>,
+        <http://ceur-ws.org/Vol-765/#PedroiPereiraiRodrigues> .
 
-<http://ceur-ws.org/Vol-765/#CarolyniMcGregor> a ns1:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/CarolyniMcGregor> ;
-    ns1:made <http://ceur-ws.org/Vol-765/#paper5> ;
-    ns1:name "Carolyn McGregor" .
+<http://ceur-ws.org/Vol-765/#Jo%C3%A3oiGama> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/Jo%C3%A3oiGama> ;
+    ns4:name "João Gama" .
 
-<http://ceur-ws.org/Vol-765/#ChristinaiCatley> a ns1:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/ChristinaiCatley> ;
-    ns1:made <http://ceur-ws.org/Vol-765/#paper5> ;
-    ns1:name "Christina Catley" .
+<http://ceur-ws.org/Vol-765/#MohamediMedhatiGaber> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/MohamediMedhatiGaber> ;
+    ns4:name "Mohamed Medhat Gaber" .
 
-<http://ceur-ws.org/Vol-765/#Cl%C3%A1udiaiDias> a ns1:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/Cl%C3%A1udiaiDias> ;
-    ns1:made <http://ceur-ws.org/Vol-765/#paper4> ;
-    ns1:name "Cláudia Dias" .
+<http://ceur-ws.org/Vol-765/#MykolaiPechenizkiy> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/MykolaiPechenizkiy> ;
+    ns4:name "Mykola Pechenizkiy" .
 
-<http://ceur-ws.org/Vol-765/#CristinaiCostaiSantos> a ns1:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/CristinaiCostaiSantos> ;
-    ns1:made <http://ceur-ws.org/Vol-765/#paper7> ;
-    ns1:name "Cristina Costa Santos" .
-
-<http://ceur-ws.org/Vol-765/#HarmiOpiDeniAkker> a ns1:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/HarmiOpiDeniAkker> ;
-    ns1:made <http://ceur-ws.org/Vol-765/#paper3> ;
-    ns1:name "Harm Op Den Akker" .
-
-<http://ceur-ws.org/Vol-765/#HermieiHermens> a ns1:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/HermieiHermens> ;
-    ns1:made <http://ceur-ws.org/Vol-765/#paper3> ;
-    ns1:name "Hermie Hermens" .
-
-<http://ceur-ws.org/Vol-765/#IngiWidya> a ns1:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/IngiWidya> ;
-    ns1:made <http://ceur-ws.org/Vol-765/#paper3> ;
-    ns1:name "Ing Widya" .
-
-<http://ceur-ws.org/Vol-765/#MargaridaiSilva> a ns1:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/MargaridaiSilva> ;
-    ns1:made <http://ceur-ws.org/Vol-765/#paper6> ;
-    ns1:name "Margarida Silva" .
-
-<http://ceur-ws.org/Vol-765/#MiriamiVollenbroek-Hutten> a ns1:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/MiriamiVollenbroek-Hutten> ;
-    ns1:made <http://ceur-ws.org/Vol-765/#paper3> ;
-    ns1:name "Miriam Vollenbroek-Hutten" .
-
-<http://ceur-ws.org/Vol-765/#PeteriLucas> a ns1:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/PeteriLucas> ;
-    ns1:made <http://ceur-ws.org/Vol-765/#paper2> ;
-    ns1:name "Peter Lucas" .
-
-<http://ceur-ws.org/Vol-765/#RiannaiHuisiIn%27TiVeld> a ns1:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/RiannaiHuisiIn%27TiVeld> ;
-    ns1:made <http://ceur-ws.org/Vol-765/#paper3> ;
-    ns1:name "Rianna Huis In'T Veld" .
-
-<http://ceur-ws.org/Vol-765/#RicardoiBatista> a ns1:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/RicardoiBatista> ;
-    ns1:made <http://ceur-ws.org/Vol-765/#paper3> ;
-    ns1:name "Ricardo Batista" .
-
-<http://ceur-ws.org/Vol-765/#RicardoiCruz-Correia> a ns1:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/RicardoiCruz-Correia> ;
-    ns1:made <http://ceur-ws.org/Vol-765/#paper4> ;
-    ns1:name "Ricardo Cruz-Correia" .
-
-<http://ceur-ws.org/Vol-765/#RichardiBults> a ns1:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/RichardiBults> ;
-    ns1:made <http://ceur-ws.org/Vol-765/#paper3> ;
-    ns1:name "Richard Bults" .
-
-<http://ceur-ws.org/Vol-765/#TeresaiMendon%C3%A7a> a ns1:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/TeresaiMendon%C3%A7a> ;
-    ns1:made <http://ceur-ws.org/Vol-765/#paper6> ;
-    ns1:name "Teresa Mendonça" .
-
-<http://ceur-ws.org/Vol-765/#ThijsiTonis> a ns1:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/ThijsiTonis> ;
-    ns1:made <http://ceur-ws.org/Vol-765/#paper3> ;
-    ns1:name "Thijs Tonis" .
-
-<http://ceur-ws.org/Vol-765/#ValiJones> a ns1:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/ValiJones> ;
-    ns1:made <http://ceur-ws.org/Vol-765/#paper3> ;
-    ns1:name "Val Jones" .
+<http://ceur-ws.org/Vol-765/#PedroiPereiraiRodrigues> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/PedroiPereiraiRodrigues> ;
+    ns4:name "Pedro Pereira Rodrigues" .
 
 <http://ceur-ws.org/Vol-765/#event> a ns2:WorkshopEvent ;
     ns2:hasLocation <http://dbpedia.org/resource/Euro_gold_and_silver_commemorative_coins> ;
-    ns2:hasPart <http://ceur-ws.org/Vol-765/#part-LEMEDS> ;
+    ns2:hasPart <http://ceur-ws.org/Vol-765/#part-CEUR-WS> ;
     ns2:isSubEventOf <http://ceur-ws.org/Vol-765/#conf> ;
-    ns8:beginsAtDatetime "2011-07-06T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:endsAtDatetime "2011-07-06T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:license <http://choosealicense.com/licenses/no-license/> .
-
-<http://ceur-ws.org/Vol-765/#MohamediMedhatiGaber> a ns1:Person ;
-    ns3:affiliation "" ;
-    ns4:sameAs <http://ceur-ws.org/persons/MohamediMedhatiGaber> ;
-    ns1:made <http://ceur-ws.org/Vol-765/#paper1> ;
-    ns1:name "Mohamed Medhat Gaber" .
-
-<http://ceur-ws.org/Vol-765/#MykolaiPechenizkiy> a ns1:Person ;
-    ns3:affiliation "" ;
-    ns4:sameAs <http://ceur-ws.org/persons/MykolaiPechenizkiy> ;
-    ns1:made <http://ceur-ws.org/Vol-765/#paper1> ;
-    ns1:name "Mykola Pechenizkiy" .
-
-<http://ceur-ws.org/Vol-765/#RaqueliSebasti%C3%A3o> a ns1:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/RaqueliSebasti%C3%A3o> ;
-    ns1:made <http://ceur-ws.org/Vol-765/#paper6>,
-        <http://ceur-ws.org/Vol-765/#paper7> ;
-    ns1:name "Raquel Sebastião" .
-
-<http://ceur-ws.org/Vol-765/#paper2> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-765/> ;
-    ns6:title "Disease monitoring and clinical decision support" ;
-    ns5:section <http%3A//ceur-ws.org/Vol-765/%23Introduction> ;
-    ns3:author <http://ceur-ws.org/Vol-765/#PeteriLucas> .
-
-<http://ceur-ws.org/Vol-765/#paper8> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-765/> ;
-    ns6:title "Challenges and roadmap for machine learning from medical data streams" ;
-    ns5:section <http%3A//ceur-ws.org/Vol-765/%23SessionII> ;
-    ns3:author <http://ceur-ws.org/Vol-765/#PedroiPereiraiRodrigues> .
-
-<http%3A//ceur-ws.org/Vol-765/%23Introduction> a ns2:SessionEvent ;
-    ns2:partOf <http://ceur-ws.org/Vol-765/> ;
-    ns6:title "Introduction" .
-
-<http%3A//ceur-ws.org/Vol-765/%23SessionI> a ns2:SessionEvent ;
-    ns2:partOf <http://ceur-ws.org/Vol-765/> ;
-    ns6:title "Session I" .
-
-<http://ceur-ws.org/Vol-765/#Jo%C3%A3oiGama> a ns1:Person ;
-    ns3:affiliation "" ;
-    ns4:sameAs <http://ceur-ws.org/persons/Jo%C3%A3oiGama> ;
-    ns1:made <http://ceur-ws.org/Vol-765/#paper1>,
-        <http://ceur-ws.org/Vol-765/#paper6> ;
-    ns1:name "João Gama" .
-
-<http://ceur-ws.org/Vol-765/#paper4> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-765/> ;
-    ns6:title "Improving clinical record visualization recommendations with Bayesian stream learning" ;
-    ns5:section <http%3A//ceur-ws.org/Vol-765/%23SessionI> ;
-    ns3:author <http://ceur-ws.org/Vol-765/#Cl%C3%A1udiaiDias>,
-        <http://ceur-ws.org/Vol-765/#PedroiPereiraiRodrigues>,
-        <http://ceur-ws.org/Vol-765/#RicardoiCruz-Correia> .
-
-<http://ceur-ws.org/Vol-765/#paper5> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-765/> ;
-    ns6:title "A process mining driven framework for clinical guideline improvement in critical care" ;
-    ns5:section <http%3A//ceur-ws.org/Vol-765/%23SessionII> ;
-    ns3:author <http://ceur-ws.org/Vol-765/#AndrewiJames>,
-        <http://ceur-ws.org/Vol-765/#CarolyniMcGregor>,
-        <http://ceur-ws.org/Vol-765/#ChristinaiCatley> .
-
-<http://ceur-ws.org/Vol-765/#paper7> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-765/> ;
-    ns6:title "Improving cardiotocography monitoring: a memory-less stream learning approach" ;
-    ns5:section <http%3A//ceur-ws.org/Vol-765/%23SessionII> ;
-    ns3:author <http://ceur-ws.org/Vol-765/#CristinaiCostaiSantos>,
-        <http://ceur-ws.org/Vol-765/#PedroiPereiraiRodrigues>,
-        <http://ceur-ws.org/Vol-765/#RaqueliSebasti%C3%A3o> .
-
-<http%3A//ceur-ws.org/Vol-765/%23SessionII> a ns2:SessionEvent ;
-    ns2:partOf <http://ceur-ws.org/Vol-765/> ;
-    ns6:title "Session II" .
-
-<http://ceur-ws.org/Vol-765/#PedroiPereiraiRodrigues> a ns1:Person ;
-    ns3:affiliation "" ;
-    ns4:sameAs <http://ceur-ws.org/persons/PedroiPereiraiRodrigues> ;
-    ns1:made <http://ceur-ws.org/Vol-765/#paper1>,
-        <http://ceur-ws.org/Vol-765/#paper4>,
-        <http://ceur-ws.org/Vol-765/#paper7>,
-        <http://ceur-ws.org/Vol-765/#paper8> ;
-    ns1:name "Pedro Pereira Rodrigues" .
-
-<http://ceur-ws.org/Vol-765/#paper1> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-765/> ;
-    ns6:title "Learning from medical data streams: an introduction" ;
-    ns5:section <http%3A//ceur-ws.org/Vol-765/%23Introduction> ;
-    ns3:author <http://ceur-ws.org/Vol-765/#Jo%C3%A3oiGama>,
-        <http://ceur-ws.org/Vol-765/#MohamediMedhatiGaber>,
-        <http://ceur-ws.org/Vol-765/#MykolaiPechenizkiy>,
-        <http://ceur-ws.org/Vol-765/#PedroiPereiraiRodrigues> .
-
-<http://ceur-ws.org/Vol-765/#paper6> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-765/> ;
-    ns6:title "Contributions to an advisory system for changes detection in depth of anesthesia signals" ;
-    ns5:section <http%3A//ceur-ws.org/Vol-765/%23SessionII> ;
-    ns3:author <http://ceur-ws.org/Vol-765/#Jo%C3%A3oiGama>,
-        <http://ceur-ws.org/Vol-765/#MargaridaiSilva>,
-        <http://ceur-ws.org/Vol-765/#RaqueliSebasti%C3%A3o>,
-        <http://ceur-ws.org/Vol-765/#TeresaiMendon%C3%A7a> .
-
-<http://ceur-ws.org/Vol-765/#paper3> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-765/> ;
-    ns6:title "Interpreting streaming biosignals: in search of best approaches to augmenting mobile health monitoring with machine learning for adaptive clinical decision support" ;
-    ns5:section <http%3A//ceur-ws.org/Vol-765/%23SessionI> ;
-    ns3:author <http://ceur-ws.org/Vol-765/#HarmiOpiDeniAkker>,
-        <http://ceur-ws.org/Vol-765/#HermieiHermens>,
-        <http://ceur-ws.org/Vol-765/#IngiWidya>,
-        <http://ceur-ws.org/Vol-765/#MiriamiVollenbroek-Hutten>,
-        <http://ceur-ws.org/Vol-765/#RiannaiHuisiIn%27TiVeld>,
-        <http://ceur-ws.org/Vol-765/#RicardoiBatista>,
-        <http://ceur-ws.org/Vol-765/#RichardiBults>,
-        <http://ceur-ws.org/Vol-765/#ThijsiTonis>,
-        <http://ceur-ws.org/Vol-765/#ValiJones> .
-
-<http://ceur-ws.org/Vol-765/> a ns2:Proceedings ;
-    ns2:hasPart <http://ceur-ws.org/Vol-765/#paper1>,
-        <http://ceur-ws.org/Vol-765/#paper2>,
-        <http://ceur-ws.org/Vol-765/#paper3>,
-        <http://ceur-ws.org/Vol-765/#paper4>,
-        <http://ceur-ws.org/Vol-765/#paper5>,
-        <http://ceur-ws.org/Vol-765/#paper6>,
-        <http://ceur-ws.org/Vol-765/#paper7>,
-        <http://ceur-ws.org/Vol-765/#paper8> ;
-    ns2:hasSession <http%3A//ceur-ws.org/Vol-765/%23Introduction>,
-        <http%3A//ceur-ws.org/Vol-765/%23SessionI>,
-        <http%3A//ceur-ws.org/Vol-765/%23SessionII> ;
-    ns7:issued "2011-11-02T00:00:00+00:00"^^xsd:dateTime ;
-    ns5:presentedAt <http://ceur-ws.org/Vol-765/#event> ;
-    ns3:editor <http://ceur-ws.org/Vol-765/#Jo%C3%A3oiGama>,
-        <http://ceur-ws.org/Vol-765/#MohamediMedhatiGaber>,
-        <http://ceur-ws.org/Vol-765/#MykolaiPechenizkiy>,
-        <http://ceur-ws.org/Vol-765/#PedroiPereiraiRodrigues> .
+    ns5:beginsAtDatetime "2011-07-06T00:00:00+00:00"^^xsd:dateTime ;
+    ns5:endsAtDatetime "2011-07-06T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:license "http://choosealicense.com/licenses/no-license/" .
 

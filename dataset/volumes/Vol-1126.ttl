@@ -1,170 +1,36 @@
-@prefix ns1: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns2: <http://www.w3.org/2002/07/owl#> .
-@prefix ns3: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns4: <http://purl.org/ontology/bibo/#> .
-@prefix ns5: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns1: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns2: <http://purl.org/ontology/bibo/#> .
+@prefix ns3: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns4: <http://purl.org/dc/elements/1.1/> .
+@prefix ns5: <http://swrc.ontoware.org/ontology/#> .
 @prefix ns6: <http://xmlns.com/foaf/0.1/> .
-@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns7: <http://www.w3.org/2002/07/owl#> .
+@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1126/#AdemiTuncer> a ns6:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/AdemiTuncer> ;
-    ns6:made <http://ceur-ws.org/Vol-1126/#paper3> ;
-    ns6:name "Adem Tuncer" .
+<http://ceur-ws.org/Vol-1126/> a ns3:Proceedings ;
+    ns8:issued "2014-02-15T00:00:00+00:00"^^xsd:dateTime ;
+    ns2:presentedAt <http://ceur-ws.org/Vol-1126/#event> ;
+    ns5:editor <http://ceur-ws.org/Vol-1126/#AlaniPerotti>,
+        <http://ceur-ws.org/Vol-1126/#LuigiiDiiCaro> .
 
 <http://ceur-ws.org/Vol-1126/#AlaniPerotti> a ns6:Person ;
-    ns3:affiliation "" ;
-    ns2:sameAs <http://ceur-ws.org/persons/AlaniPerotti> ;
+    ns7:sameAs <http://ceur-ws.org/persons/AlaniPerotti> ;
     ns6:name "Alan Perotti" .
 
-<http://ceur-ws.org/Vol-1126/#AlessioiAntonini> a ns6:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/AlessioiAntonini> ;
-    ns6:made <http://ceur-ws.org/Vol-1126/#paper4> ;
-    ns6:name "Alessio Antonini" .
-
-<http://ceur-ws.org/Vol-1126/#AndreaiBonisoli> a ns6:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/AndreaiBonisoli> ;
-    ns6:made <http://ceur-ws.org/Vol-1126/#paper6> ;
-    ns6:name "Andrea Bonisoli" .
-
-<http://ceur-ws.org/Vol-1126/#DelphineiNicolay> a ns6:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/DelphineiNicolay> ;
-    ns6:made <http://ceur-ws.org/Vol-1126/#paper5> ;
-    ns6:name "Delphine Nicolay" .
-
-<http://ceur-ws.org/Vol-1126/#EmanueleiBastianelli> a ns6:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/EmanueleiBastianelli> ;
-    ns6:made <http://ceur-ws.org/Vol-1126/#paper1> ;
-    ns6:name "Emanuele Bastianelli" .
-
-<http://ceur-ws.org/Vol-1126/#ErkaniKiyak> a ns6:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/ErkaniKiyak> ;
-    ns6:made <http://ceur-ws.org/Vol-1126/#paper3> ;
-    ns6:name "Erkan Kiyak" .
-
-<http://ceur-ws.org/Vol-1126/#FulvioiRotella> a ns6:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/FulvioiRotella> ;
-    ns6:made <http://ceur-ws.org/Vol-1126/#paper7> ;
-    ns6:name "Fulvio Rotella" .
-
 <http://ceur-ws.org/Vol-1126/#LuigiiDiiCaro> a ns6:Person ;
-    ns3:affiliation "" ;
-    ns2:sameAs <http://ceur-ws.org/persons/LuigiiDiiCaro> ;
+    ns7:sameAs <http://ceur-ws.org/persons/LuigiiDiiCaro> ;
     ns6:name "Luigi Di Caro" .
 
-<http://ceur-ws.org/Vol-1126/#MehmetiYildirim> a ns6:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/MehmetiYildirim> ;
-    ns6:made <http://ceur-ws.org/Vol-1126/#paper3> ;
-    ns6:name "Mehmet Yildirim" .
-
-<http://ceur-ws.org/Vol-1126/#StefanoiFerilli> a ns6:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/StefanoiFerilli> ;
-    ns6:made <http://ceur-ws.org/Vol-1126/#paper7> ;
-    ns6:name "Stefano Ferilli" .
-
-<http://ceur-ws.org/Vol-1126/#SuniYi%27an> a ns6:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/SuniYi%27an> ;
-    ns6:made <http://ceur-ws.org/Vol-1126/#paper2> ;
-    ns6:name "Sun Yi'an" .
-
-<http://ceur-ws.org/Vol-1126/#TimoteoiCarletti> a ns6:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/TimoteoiCarletti> ;
-    ns6:made <http://ceur-ws.org/Vol-1126/#paper5> ;
-    ns6:name "Timoteo Carletti" .
-
-<http://ceur-ws.org/Vol-1126/#event> a ns1:WorkshopEvent ;
-    ns1:hasLocation <http://dbpedia.org/resource/Italy> ;
-    ns1:hasPart <http://ceur-ws.org/Vol-1126/#part-DWAI> ;
-    ns1:isSubEventOf <http://ceur-ws.org/Vol-1126/#conf> ;
-    ns8:beginsAtDatetime "2013-12-05T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:endsAtDatetime "2013-12-05T00:00:00+00:00"^^xsd:dateTime ;
-    ns5:license <http://choosealicense.com/licenses/no-license/> .
-
-<http://ceur-ws.org/Vol-1126/#paper1> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-1126/> ;
-    ns5:title "Talking Robots" ;
-    ns4:section <http%3A//ceur-ws.org/Vol-1126/%23FullPapers> ;
-    ns3:author <http://ceur-ws.org/Vol-1126/#EmanueleiBastianelli> .
-
-<http://ceur-ws.org/Vol-1126/#paper2> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-1126/> ;
-    ns5:title "A Survey of Peirce Semiotics Ontology for Artificial Intelligence and a Nested Graphic Model for Knowledge Representation" ;
-    ns4:section <http%3A//ceur-ws.org/Vol-1126/%23FullPapers> ;
-    ns3:author <http://ceur-ws.org/Vol-1126/#SuniYi%27an> .
-
-<http://ceur-ws.org/Vol-1126/#paper4> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-1126/> ;
-    ns5:title "Shared Knowledge and Interpretation of Norms in Multi-Agent Systems" ;
-    ns4:endPage 29 ;
-    ns4:numPages 6 ;
-    ns4:section <http%3A//ceur-ws.org/Vol-1126/%23FullPapers> ;
-    ns4:startPage 24 ;
-    ns3:author <http://ceur-ws.org/Vol-1126/#AlessioiAntonini> .
-
-<http://ceur-ws.org/Vol-1126/#paper6> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-1126/> ;
-    ns5:title "Distributed and Multi-Agent Planning: Challenges and Open Issues" ;
-    ns4:endPage 45 ;
-    ns4:numPages 5 ;
-    ns4:section <http%3A//ceur-ws.org/Vol-1126/%23ShortPapers> ;
-    ns4:startPage 41 ;
-    ns3:author <http://ceur-ws.org/Vol-1126/#AndreaiBonisoli> .
-
-<http%3A//ceur-ws.org/Vol-1126/%23ShortPapers> a ns1:SessionEvent ;
-    ns1:partOf <http://ceur-ws.org/Vol-1126/> ;
-    ns5:title "Short Papers" .
-
-<http://ceur-ws.org/Vol-1126/#paper5> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-1126/> ;
-    ns5:title "Neural Networks Learning: Some Preliminary Results on Heuristic Methods and Applications" ;
-    ns4:endPage 40 ;
-    ns4:numPages 11 ;
-    ns4:section <http%3A//ceur-ws.org/Vol-1126/%23FullPapers> ;
-    ns4:startPage 30 ;
-    ns3:author <http://ceur-ws.org/Vol-1126/#DelphineiNicolay>,
-        <http://ceur-ws.org/Vol-1126/#TimoteoiCarletti> .
-
-<http://ceur-ws.org/Vol-1126/#paper7> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-1126/> ;
-    ns5:title "Probabilistic Abductive Logic Programming: a Joint Approach of Logic and Probability" ;
-    ns4:endPage 51 ;
-    ns4:numPages 6 ;
-    ns4:section <http%3A//ceur-ws.org/Vol-1126/%23ShortPapers> ;
-    ns4:startPage 46 ;
-    ns3:author <http://ceur-ws.org/Vol-1126/#FulvioiRotella>,
-        <http://ceur-ws.org/Vol-1126/#StefanoiFerilli> .
-
-<http://ceur-ws.org/Vol-1126/#paper3> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-1126/> ;
-    ns5:title "Stock Optimization of Spare Parts with Genetic Algorithm" ;
-    ns4:endPage 23 ;
-    ns4:numPages 5 ;
-    ns4:section <http%3A//ceur-ws.org/Vol-1126/%23FullPapers> ;
-    ns4:startPage 19 ;
-    ns3:author <http://ceur-ws.org/Vol-1126/#AdemiTuncer>,
-        <http://ceur-ws.org/Vol-1126/#ErkaniKiyak>,
-        <http://ceur-ws.org/Vol-1126/#MehmetiYildirim> .
-
-<http%3A//ceur-ws.org/Vol-1126/%23FullPapers> a ns1:SessionEvent ;
-    ns1:partOf <http://ceur-ws.org/Vol-1126/> ;
-    ns5:title "Full Papers" .
-
-<http://ceur-ws.org/Vol-1126/> a ns1:Proceedings ;
-    ns1:hasPart <http://ceur-ws.org/Vol-1126/#paper1>,
-        <http://ceur-ws.org/Vol-1126/#paper2>,
-        <http://ceur-ws.org/Vol-1126/#paper3>,
-        <http://ceur-ws.org/Vol-1126/#paper4>,
-        <http://ceur-ws.org/Vol-1126/#paper5>,
-        <http://ceur-ws.org/Vol-1126/#paper6>,
-        <http://ceur-ws.org/Vol-1126/#paper7> ;
-    ns1:hasSession <http%3A//ceur-ws.org/Vol-1126/%23FullPapers>,
-        <http%3A//ceur-ws.org/Vol-1126/%23ShortPapers> ;
-    ns7:issued "2014-02-15T00:00:00+00:00"^^xsd:dateTime ;
-    ns4:presentedAt <http://ceur-ws.org/Vol-1126/#event> ;
-    ns3:editor <http://ceur-ws.org/Vol-1126/#AlaniPerotti>,
-        <http://ceur-ws.org/Vol-1126/#LuigiiDiiCaro> .
+<http://ceur-ws.org/Vol-1126/#event> a ns3:WorkshopEvent ;
+    ns3:hasLocation <http://dbpedia.org/resource/Italy> ;
+    ns3:hasPart <http://ceur-ws.org/Vol-1126/#part-DWAI>,
+        <http://ceur-ws.org/Vol-1126/#part-IA> ;
+    ns3:isSubEventOf <http://ceur-ws.org/Vol-1126/#conf> ;
+    ns1:beginsAtDatetime "2013-12-05T00:00:00+00:00"^^xsd:dateTime ;
+    ns1:endsAtDatetime "2013-12-05T00:00:00+00:00"^^xsd:dateTime ;
+    ns4:license "http://choosealicense.com/licenses/no-license/" .
 

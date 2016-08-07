@@ -1,206 +1,20 @@
-@prefix ns1: <http://www.w3.org/2002/07/owl#> .
-@prefix ns2: <http://xmlns.com/foaf/0.1/> .
-@prefix ns3: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns4: <http://purl.org/ontology/bibo/#> .
-@prefix ns5: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns6: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns1: <http://xmlns.com/foaf/0.1/> .
+@prefix ns2: <http://www.w3.org/2002/07/owl#> .
+@prefix ns3: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns4: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns5: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns6: <http://purl.org/dc/elements/1.1/> .
+@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns8: <http://purl.org/ontology/bibo/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1338/#AdrieliDean-Hall> a ns2:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/AdrieliDean-Hall> ;
-    ns2:made <http://ceur-ws.org/Vol-1338/#paper9> ;
-    ns2:name "Adriel Dean-Hall" .
-
-<http://ceur-ws.org/Vol-1338/#CharlesiClarke> a ns2:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/CharlesiClarke> ;
-    ns2:made <http://ceur-ws.org/Vol-1338/#paper9> ;
-    ns2:name "Charles Clarke" .
-
-<http://ceur-ws.org/Vol-1338/#DianeiKelly> a ns2:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/DianeiKelly> ;
-    ns2:made <http://ceur-ws.org/Vol-1338/#paper2> ;
-    ns2:name "Diane Kelly" .
-
-<http://ceur-ws.org/Vol-1338/#EladiYom-Tov> a ns2:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/EladiYom-Tov> ;
-    ns2:made <http://ceur-ws.org/Vol-1338/#paper3> ;
-    ns2:name "Elad Yom-Tov" .
-
-<http://ceur-ws.org/Vol-1338/#ErwiniGunadi> a ns2:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/ErwiniGunadi> ;
-    ns2:made <http://ceur-ws.org/Vol-1338/#paper4> ;
-    ns2:name "Erwin Gunadi" .
-
-<http://ceur-ws.org/Vol-1338/#JamesiAllan> a ns2:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/JamesiAllan> ;
-    ns2:made <http://ceur-ws.org/Vol-1338/#paper3> ;
-    ns2:name "James Allan" .
-
-<http://ceur-ws.org/Vol-1338/#JuliaiKiseleva> a ns2:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/JuliaiKiseleva> ;
-    ns2:made <http://ceur-ws.org/Vol-1338/#paper9> ;
-    ns2:name "Julia Kiseleva" .
-
-<http://ceur-ws.org/Vol-1338/#KrisztianiBalog> a ns2:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/KrisztianiBalog> ;
-    ns2:made <http://ceur-ws.org/Vol-1338/#paper5> ;
-    ns2:name "Krisztian Balog" .
-
-<http://ceur-ws.org/Vol-1338/#SahiniAlbayrak> a ns2:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/SahiniAlbayrak> ;
-    ns2:made <http://ceur-ws.org/Vol-1338/#paper4> ;
-    ns2:name "Sahin Albayrak" .
-
-<http://ceur-ws.org/Vol-1338/#SannaiKumpulainen> a ns2:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/SannaiKumpulainen> ;
-    ns2:made <http://ceur-ws.org/Vol-1338/#paper7> ;
-    ns2:name "Sanna Kumpulainen" .
-
-<http://ceur-ws.org/Vol-1338/#ShiriiDori-Hacohen> a ns2:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/ShiriiDori-Hacohen> ;
-    ns2:made <http://ceur-ws.org/Vol-1338/#paper3> ;
-    ns2:name "Shiri Dori-Hacohen" .
-
-<http://ceur-ws.org/Vol-1338/#TilliPlumbaum> a ns2:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/TilliPlumbaum> ;
-    ns2:made <http://ceur-ws.org/Vol-1338/#paper4> ;
-    ns2:name "Till Plumbaum" .
-
-<http://ceur-ws.org/Vol-1338/#event> a ns5:WorkshopEvent ;
-    ns5:hasLocation <http://dbpedia.org/resource/Austria> ;
-    ns5:hasPart <http://ceur-ws.org/Vol-1338/#part-SCST> ;
-    ns5:isSubEventOf <http://ceur-ws.org/Vol-1338/#conf> ;
-    ns8:beginsAtDatetime "2015-03-29T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:endsAtDatetime "2015-03-29T00:00:00+00:00"^^xsd:dateTime .
-
-<http://ceur-ws.org/Vol-1338/#MariaiG%C3%A4de> a ns2:Person ;
-    ns4:place <http://dbpedia.org/resource/Germany> ;
-    ns3:affiliation "Humboldt University Berlin" ;
-    ns1:sameAs <http://ceur-ws.org/persons/MariaiG%C3%A4de> ;
-    ns2:made <http://ceur-ws.org/Vol-1338/#paper1> ;
-    ns2:name "Maria Gäde" .
-
-<http://ceur-ws.org/Vol-1338/#MarijniKoolen> a ns2:Person ;
-    ns4:place <http://dbpedia.org/resource/Netherlands> ;
-    ns3:affiliation "University of Amsterdam" ;
-    ns1:sameAs <http://ceur-ws.org/persons/MarijniKoolen> ;
-    ns2:made <http://ceur-ws.org/Vol-1338/#paper1> ;
-    ns2:name "Marijn Koolen" .
-
-<http://ceur-ws.org/Vol-1338/#MetteiSkov> a ns2:Person ;
-    ns4:place <http://dbpedia.org/resource/Denmark> ;
-    ns3:affiliation "Aalborg University" ;
-    ns1:sameAs <http://ceur-ws.org/persons/MetteiSkov> ;
-    ns2:made <http://ceur-ws.org/Vol-1338/#paper1> ;
-    ns2:name "Mette Skov" .
-
-<http://ceur-ws.org/Vol-1338/#paper2> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1338/> ;
-    ns6:title "When Effort Exceeds Expectations: A Theory of Search Task Difficulty (keynote)" ;
-    ns3:author <http://ceur-ws.org/Vol-1338/#DianeiKelly> .
-
-<http://ceur-ws.org/Vol-1338/#paper5> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1338/> ;
-    ns6:title "Task-completion Engines: A Vision with a Plan" ;
-    ns3:author <http://ceur-ws.org/Vol-1338/#KrisztianiBalog> .
-
-<http://ceur-ws.org/Vol-1338/#paper8> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1338/> ;
-    ns6:title "Complex Tools for Complex Tasks" ;
-    ns3:author <http://ceur-ws.org/Vol-1338/#ElaineiToms> .
-
-<http://ceur-ws.org/Vol-1338/#DavidiWalsh> a ns2:Person ;
-    ns4:place <http://dbpedia.org/resource/United_Kingdom> ;
-    ns3:affiliation "Edge Hill University" ;
-    ns1:sameAs <http://ceur-ws.org/persons/DavidiWalsh> ;
-    ns2:made <http://ceur-ws.org/Vol-1338/#paper1>,
-        <http://ceur-ws.org/Vol-1338/#paper6> ;
-    ns2:name "David Walsh" .
-
-<http://ceur-ws.org/Vol-1338/#ElaineiToms> a ns2:Person ;
-    ns4:place <http://dbpedia.org/resource/United_Kingdom> ;
-    ns3:affiliation "Sheffield University" ;
-    ns1:sameAs <http://ceur-ws.org/persons/ElaineiToms> ;
-    ns2:made <http://ceur-ws.org/Vol-1338/#paper1>,
-        <http://ceur-ws.org/Vol-1338/#paper8> ;
-    ns2:name "Elaine Toms" .
-
-<http://ceur-ws.org/Vol-1338/#HugoiHuurdeman> a ns2:Person ;
-    ns4:place <http://dbpedia.org/resource/Netherlands> ;
-    ns3:affiliation "University of Amsterdam" ;
-    ns1:sameAs <http://ceur-ws.org/persons/HugoiHuurdeman> ;
-    ns2:made <http://ceur-ws.org/Vol-1338/#paper1>,
-        <http://ceur-ws.org/Vol-1338/#paper7> ;
-    ns2:name "Hugo Huurdeman" .
-
-<http://ceur-ws.org/Vol-1338/#JaapiKamps> a ns2:Person ;
-    ns4:place <http://dbpedia.org/resource/Netherlands> ;
-    ns3:affiliation "University of Amsterdam" ;
-    ns1:sameAs <http://ceur-ws.org/persons/JaapiKamps> ;
-    ns2:made <http://ceur-ws.org/Vol-1338/#paper1>,
-        <http://ceur-ws.org/Vol-1338/#paper9> ;
-    ns2:name "Jaap Kamps" .
-
-<http://ceur-ws.org/Vol-1338/#MarkiMichaeliHall> a ns2:Person ;
-    ns4:place <http://dbpedia.org/resource/United_Kingdom> ;
-    ns3:affiliation "Edge Hill University" ;
-    ns1:sameAs <http://ceur-ws.org/persons/MarkiMichaeliHall> ;
-    ns2:made <http://ceur-ws.org/Vol-1338/#paper1>,
-        <http://ceur-ws.org/Vol-1338/#paper6> ;
-    ns2:name "Mark Michael Hall" .
-
-<http://ceur-ws.org/Vol-1338/#paper6> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1338/> ;
-    ns6:title "Just Looking Around: Supporting Casual Users Initial Encounters with Digital Cultural Heritage" ;
-    ns3:author <http://ceur-ws.org/Vol-1338/#DavidiWalsh>,
-        <http://ceur-ws.org/Vol-1338/#MarkiMichaeliHall> .
-
-<http://ceur-ws.org/Vol-1338/#paper7> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1338/> ;
-    ns6:title "Shaken, Not Steered: The Value of Shaking Up the Search Process" ;
-    ns3:author <http://ceur-ws.org/Vol-1338/#HugoiHuurdeman>,
-        <http://ceur-ws.org/Vol-1338/#SannaiKumpulainen> .
-
-<http://ceur-ws.org/Vol-1338/#paper3> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1338/> ;
-    ns6:title "Navigating Controversy as a Complex Search Task" ;
-    ns3:author <http://ceur-ws.org/Vol-1338/#EladiYom-Tov>,
-        <http://ceur-ws.org/Vol-1338/#JamesiAllan>,
-        <http://ceur-ws.org/Vol-1338/#ShiriiDori-Hacohen> .
-
-<http://ceur-ws.org/Vol-1338/#paper4> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1338/> ;
-    ns6:title "Applied Distributed Information Retrieval in Enterprise Search" ;
-    ns3:author <http://ceur-ws.org/Vol-1338/#ErwiniGunadi>,
-        <http://ceur-ws.org/Vol-1338/#SahiniAlbayrak>,
-        <http://ceur-ws.org/Vol-1338/#TilliPlumbaum> .
-
-<http://ceur-ws.org/Vol-1338/#paper9> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1338/> ;
-    ns6:title "Online Evaluation of Point-Of-Interest Recommendation Systems" ;
-    ns3:author <http://ceur-ws.org/Vol-1338/#AdrieliDean-Hall>,
-        <http://ceur-ws.org/Vol-1338/#CharlesiClarke>,
-        <http://ceur-ws.org/Vol-1338/#JaapiKamps>,
-        <http://ceur-ws.org/Vol-1338/#JuliaiKiseleva> .
-
-<http://ceur-ws.org/Vol-1338/> a ns5:Proceedings ;
-    ns5:hasPart <http://ceur-ws.org/Vol-1338/#paper1>,
-        <http://ceur-ws.org/Vol-1338/#paper2>,
-        <http://ceur-ws.org/Vol-1338/#paper3>,
-        <http://ceur-ws.org/Vol-1338/#paper4>,
-        <http://ceur-ws.org/Vol-1338/#paper5>,
-        <http://ceur-ws.org/Vol-1338/#paper6>,
-        <http://ceur-ws.org/Vol-1338/#paper7>,
-        <http://ceur-ws.org/Vol-1338/#paper8>,
-        <http://ceur-ws.org/Vol-1338/#paper9> ;
-    ns7:issued "2015-03-28T00:00:00+00:00"^^xsd:dateTime ;
-    ns4:presentedAt <http://ceur-ws.org/Vol-1338/#event> ;
-    ns3:editor <http://ceur-ws.org/Vol-1338/#DavidiWalsh>,
+<http://ceur-ws.org/Vol-1338/> a ns3:Proceedings ;
+    ns5:issued "2015-03-28T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:presentedAt <http://ceur-ws.org/Vol-1338/#event> ;
+    ns4:editor <http://ceur-ws.org/Vol-1338/#DavidiWalsh>,
         <http://ceur-ws.org/Vol-1338/#ElaineiToms>,
         <http://ceur-ws.org/Vol-1338/#HugoiHuurdeman>,
         <http://ceur-ws.org/Vol-1338/#JaapiKamps>,
@@ -209,15 +23,43 @@
         <http://ceur-ws.org/Vol-1338/#MarkiMichaeliHall>,
         <http://ceur-ws.org/Vol-1338/#MetteiSkov> .
 
-<http://ceur-ws.org/Vol-1338/#paper1> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1338/> ;
-    ns6:title "First Workshop on Supporting Complex Search Tasks" ;
-    ns3:author <http://ceur-ws.org/Vol-1338/#DavidiWalsh>,
-        <http://ceur-ws.org/Vol-1338/#ElaineiToms>,
-        <http://ceur-ws.org/Vol-1338/#HugoiHuurdeman>,
-        <http://ceur-ws.org/Vol-1338/#JaapiKamps>,
-        <http://ceur-ws.org/Vol-1338/#MariaiG%C3%A4de>,
-        <http://ceur-ws.org/Vol-1338/#MarijniKoolen>,
-        <http://ceur-ws.org/Vol-1338/#MarkiMichaeliHall>,
-        <http://ceur-ws.org/Vol-1338/#MetteiSkov> .
+<http://ceur-ws.org/Vol-1338/#DavidiWalsh> a ns1:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/DavidiWalsh> ;
+    ns1:name "David Walsh" .
+
+<http://ceur-ws.org/Vol-1338/#ElaineiToms> a ns1:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/ElaineiToms> ;
+    ns1:name "Elaine Toms" .
+
+<http://ceur-ws.org/Vol-1338/#HugoiHuurdeman> a ns1:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/HugoiHuurdeman> ;
+    ns1:name "Hugo Huurdeman" .
+
+<http://ceur-ws.org/Vol-1338/#JaapiKamps> a ns1:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/JaapiKamps> ;
+    ns1:name "Jaap Kamps" .
+
+<http://ceur-ws.org/Vol-1338/#MariaiG%C3%A4de> a ns1:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/MariaiG%C3%A4de> ;
+    ns1:name "Maria Gäde" .
+
+<http://ceur-ws.org/Vol-1338/#MarijniKoolen> a ns1:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/MarijniKoolen> ;
+    ns1:name "Marijn Koolen" .
+
+<http://ceur-ws.org/Vol-1338/#MarkiMichaeliHall> a ns1:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/MarkiMichaeliHall> ;
+    ns1:name "Mark Michael Hall" .
+
+<http://ceur-ws.org/Vol-1338/#MetteiSkov> a ns1:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/MetteiSkov> ;
+    ns1:name "Mette Skov" .
+
+<http://ceur-ws.org/Vol-1338/#event> a ns3:WorkshopEvent ;
+    ns3:hasLocation <http://dbpedia.org/resource/Austria> ;
+    ns3:hasPart <http://ceur-ws.org/Vol-1338/#part-ws> ;
+    ns3:isSubEventOf <http://ceur-ws.org/Vol-1338/#conf> ;
+    ns7:beginsAtDatetime "2015-03-29T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:endsAtDatetime "2015-03-29T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:license "http://creativecommons.org/publicdomain/zero/1.0/" .
 

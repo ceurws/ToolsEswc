@@ -1,11 +1,12 @@
 @prefix ns1: <http://purl.org/ontology/bibo/#> .
 @prefix ns2: <http://www.w3.org/2002/07/owl#> .
 @prefix ns3: <http://xmlns.com/foaf/0.1/> .
-@prefix ns4: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns5: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns6: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns4: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns5: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns6: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns7: <http://purl.org/dc/elements/1.1/> .
+@prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns9: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -37,7 +38,7 @@
     ns3:name "Axel Steinhage" .
 
 <http://ceur-ws.org/Vol-396/#Bj%C3%B6rniGottfried> a ns3:Person ;
-    ns6:affiliation "" ;
+    ns4:affiliation "" ;
     ns2:sameAs <http://ceur-ws.org/persons/Bj%C3%B6rniGottfried> ;
     ns3:name "Björn Gottfried" .
 
@@ -57,7 +58,7 @@
     ns3:name "Georg Gartner" .
 
 <http://ceur-ws.org/Vol-396/#HamidiAghajan> a ns3:Person ;
-    ns6:affiliation "" ;
+    ns4:affiliation "" ;
     ns2:sameAs <http://ceur-ws.org/persons/HamidiAghajan> ;
     ns3:name "Hamid Aghajan" .
 
@@ -106,93 +107,93 @@
     ns3:made <http://ceur-ws.org/Vol-396/#paper05wood> ;
     ns3:name "Zena Wood" .
 
-<http://ceur-ws.org/Vol-396/#event> a ns4:WorkshopEvent ;
-    ns4:hasLocation <http://dbpedia.org/resource/Germany> ;
-    ns4:hasPart <http://ceur-ws.org/Vol-396/#part-BMI> ;
-    ns4:isSubEventOf <http://ceur-ws.org/Vol-396/#conf> ;
-    ns7:beginsAtDatetime "2008-09-23T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:endsAtDatetime "2008-09-23T00:00:00+00:00"^^xsd:dateTime ;
-    ns5:license <http://choosealicense.com/licenses/no-license/> ;
+<http://ceur-ws.org/Vol-396/#event> a ns5:WorkshopEvent ;
+    ns5:hasLocation <http://dbpedia.org/resource/Germany> ;
+    ns5:hasPart <http://ceur-ws.org/Vol-396/#part-BMI> ;
+    ns5:isSubEventOf <http://ceur-ws.org/Vol-396/#conf> ;
+    ns8:beginsAtDatetime "2008-10-01T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:endsAtDatetime "2008-10-01T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:license "http://choosealicense.com/licenses/no-license/" ;
     rdfs:seeAlso <http://ceur-ws.org/Vol-296/#event> .
 
 <http://ceur-ws.org/Vol-396/#and> a ns3:Person ;
-    ns6:affiliation "" ;
+    ns4:affiliation "" ;
     ns2:sameAs <http://ceur-ws.org/persons/and> ;
     ns3:made <http://ceur-ws.org/Vol-396/#paper01millonig> ;
     ns3:name "and" .
 
-<http%3A//ceur-ws.org/Vol-396/%23BehaviourMonitoring> a ns4:SessionEvent ;
-    ns4:partOf <http://ceur-ws.org/Vol-396/> ;
-    ns5:title "Behaviour Monitoring" .
+<http://ceur-ws.org/Vol-396/#BehaviourMonitoring> a ns5:SessionEvent ;
+    ns5:partOf <http://ceur-ws.org/Vol-396/> ;
+    ns6:title "Behaviour Monitoring" .
 
-<http://ceur-ws.org/Vol-396/#paper01millonig> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-396/> ;
-    ns5:title "Shadowing - Tracking - Interviewing: How to Explore Human Spatio-Temporal Behaviour Patterns" ;
-    ns1:section <http%3A//ceur-ws.org/Vol-396/%23BehaviourMonitoring> ;
-    ns6:author <http://ceur-ws.org/Vol-396/#GeorgiGartner>,
+<http://ceur-ws.org/Vol-396/#paper01millonig> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-396/> ;
+    ns6:title "Shadowing - Tracking - Interviewing: How to Explore Human Spatio-Temporal Behaviour Patterns" ;
+    ns1:section <http://ceur-ws.org/Vol-396/#BehaviourMonitoring> ;
+    ns4:author <http://ceur-ws.org/Vol-396/#GeorgiGartner>,
         <http://ceur-ws.org/Vol-396/#and> .
 
-<http://ceur-ws.org/Vol-396/#paper02steinhage> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-396/> ;
-    ns5:title "Monitoring Movement Behavior by Means of a Large Area Proximity Sensor Array in the Floor" ;
-    ns1:section <http%3A//ceur-ws.org/Vol-396/%23BehaviourMonitoring> ;
-    ns6:author <http://ceur-ws.org/Vol-396/#AxeliSteinhage>,
+<http://ceur-ws.org/Vol-396/#paper02steinhage> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-396/> ;
+    ns6:title "Monitoring Movement Behavior by Means of a Large Area Proximity Sensor Array in the Floor" ;
+    ns1:section <http://ceur-ws.org/Vol-396/#BehaviourMonitoring> ;
+    ns4:author <http://ceur-ws.org/Vol-396/#AxeliSteinhage>,
         <http://ceur-ws.org/Vol-396/#ChristliLauterbach> .
 
-<http://ceur-ws.org/Vol-396/#paper03kiefer> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-396/> ;
-    ns5:title "A Framework for Mobile Intention Recognition in Spatially Structured Environments" ;
-    ns1:section <http%3A//ceur-ws.org/Vol-396/%23BehaviourRepresentation> ;
-    ns6:author <http://ceur-ws.org/Vol-396/#KlausiStein>,
+<http://ceur-ws.org/Vol-396/#paper03kiefer> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-396/> ;
+    ns6:title "A Framework for Mobile Intention Recognition in Spatially Structured Environments" ;
+    ns1:section <http://ceur-ws.org/Vol-396/#BehaviourRepresentation> ;
+    ns4:author <http://ceur-ws.org/Vol-396/#KlausiStein>,
         <http://ceur-ws.org/Vol-396/#PeteriKiefer> .
 
-<http://ceur-ws.org/Vol-396/#paper04shi> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-396/> ;
-    ns5:title "Modeling Ontological Concepts of Motions with Two Projection-Based Spatial Models" ;
-    ns1:section <http%3A//ceur-ws.org/Vol-396/%23BehaviourRepresentation> ;
-    ns6:author <http://ceur-ws.org/Vol-396/#HuiiShi>,
+<http://ceur-ws.org/Vol-396/#paper04shi> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-396/> ;
+    ns6:title "Modeling Ontological Concepts of Motions with Two Projection-Based Spatial Models" ;
+    ns1:section <http://ceur-ws.org/Vol-396/#BehaviourRepresentation> ;
+    ns4:author <http://ceur-ws.org/Vol-396/#HuiiShi>,
         <http://ceur-ws.org/Vol-396/#YoheiiKurata> .
 
-<http://ceur-ws.org/Vol-396/#paper05wood> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-396/> ;
-    ns5:title "Collectives and How They Move: A Tale of Two Classifications" ;
-    ns1:section <http%3A//ceur-ws.org/Vol-396/%23BehaviourRepresentation> ;
-    ns6:author <http://ceur-ws.org/Vol-396/#AntonyiGalton>,
+<http://ceur-ws.org/Vol-396/#paper05wood> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-396/> ;
+    ns6:title "Collectives and How They Move: A Tale of Two Classifications" ;
+    ns1:section <http://ceur-ws.org/Vol-396/#BehaviourRepresentation> ;
+    ns4:author <http://ceur-ws.org/Vol-396/#AntonyiGalton>,
         <http://ceur-ws.org/Vol-396/#ZenaiWood> .
 
-<http://ceur-ws.org/Vol-396/#paper08hein> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-396/> ;
-    ns5:title "Towards Recognizing Abstract Activities: An Unsupervised Approach" ;
-    ns1:section <http%3A//ceur-ws.org/Vol-396/%23AALApplications> ;
-    ns6:author <http://ceur-ws.org/Vol-396/#AlbertiHein>,
+<http://ceur-ws.org/Vol-396/#paper08hein> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-396/> ;
+    ns6:title "Towards Recognizing Abstract Activities: An Unsupervised Approach" ;
+    ns1:section <http://ceur-ws.org/Vol-396/#AALApplications> ;
+    ns4:author <http://ceur-ws.org/Vol-396/#AlbertiHein>,
         <http://ceur-ws.org/Vol-396/#ThomasiKirste> .
 
-<http%3A//ceur-ws.org/Vol-396/%23AALApplications> a ns4:SessionEvent ;
-    ns4:partOf <http://ceur-ws.org/Vol-396/> ;
-    ns5:title "AAL Applications" .
+<http://ceur-ws.org/Vol-396/#AALApplications> a ns5:SessionEvent ;
+    ns5:partOf <http://ceur-ws.org/Vol-396/> ;
+    ns6:title "AAL Applications" .
 
-<http%3A//ceur-ws.org/Vol-396/%23BehaviourRepresentation> a ns4:SessionEvent ;
-    ns4:partOf <http://ceur-ws.org/Vol-396/> ;
-    ns5:title "Behaviour Representation" .
+<http://ceur-ws.org/Vol-396/#BehaviourRepresentation> a ns5:SessionEvent ;
+    ns5:partOf <http://ceur-ws.org/Vol-396/> ;
+    ns6:title "Behaviour Representation" .
 
-<http://ceur-ws.org/Vol-396/#paper06aztiria> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-396/> ;
-    ns5:title "Autonomous Learning of User's Preferences improved through User Feedback" ;
-    ns1:section <http%3A//ceur-ws.org/Vol-396/%23AALApplications> ;
-    ns6:author <http://ceur-ws.org/Vol-396/#AlbertoiIzaguirre>,
+<http://ceur-ws.org/Vol-396/#paper06aztiria> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-396/> ;
+    ns6:title "Autonomous Learning of User's Preferences improved through User Feedback" ;
+    ns1:section <http://ceur-ws.org/Vol-396/#AALApplications> ;
+    ns4:author <http://ceur-ws.org/Vol-396/#AlbertoiIzaguirre>,
         <http://ceur-ws.org/Vol-396/#AsieriAztiria>,
         <http://ceur-ws.org/Vol-396/#JuaniCarlosiAugusto> .
 
-<http://ceur-ws.org/Vol-396/#paper07goshorn> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-396/> ;
-    ns5:title "The Enhancement of Low-Level Classifications for Ambient Assisted Living" ;
-    ns1:section <http%3A//ceur-ws.org/Vol-396/%23AALApplications> ;
-    ns6:author <http://ceur-ws.org/Vol-396/#DeborahiGoshorn>,
+<http://ceur-ws.org/Vol-396/#paper07goshorn> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-396/> ;
+    ns6:title "The Enhancement of Low-Level Classifications for Ambient Assisted Living" ;
+    ns1:section <http://ceur-ws.org/Vol-396/#AALApplications> ;
+    ns4:author <http://ceur-ws.org/Vol-396/#DeborahiGoshorn>,
         <http://ceur-ws.org/Vol-396/#MathiasiK%C3%B6lsch>,
         <http://ceur-ws.org/Vol-396/#RacheliGoshorn> .
 
-<http://ceur-ws.org/Vol-396/> a ns4:Proceedings ;
-    ns4:hasPart <http://ceur-ws.org/Vol-396/#paper01millonig>,
+<http://ceur-ws.org/Vol-396/> a ns5:Proceedings ;
+    ns5:hasPart <http://ceur-ws.org/Vol-396/#paper01millonig>,
         <http://ceur-ws.org/Vol-396/#paper02steinhage>,
         <http://ceur-ws.org/Vol-396/#paper03kiefer>,
         <http://ceur-ws.org/Vol-396/#paper04shi>,
@@ -200,12 +201,12 @@
         <http://ceur-ws.org/Vol-396/#paper06aztiria>,
         <http://ceur-ws.org/Vol-396/#paper07goshorn>,
         <http://ceur-ws.org/Vol-396/#paper08hein> ;
-    ns4:hasSession <http%3A//ceur-ws.org/Vol-396/%23AALApplications>,
-        <http%3A//ceur-ws.org/Vol-396/%23BehaviourMonitoring>,
-        <http%3A//ceur-ws.org/Vol-396/%23BehaviourRepresentation> ;
-    ns8:issued "2008-09-28T00:00:00+00:00"^^xsd:dateTime ;
+    ns5:hasSession <http://ceur-ws.org/Vol-396/#AALApplications>,
+        <http://ceur-ws.org/Vol-396/#BehaviourMonitoring>,
+        <http://ceur-ws.org/Vol-396/#BehaviourRepresentation> ;
+    ns9:issued "2008-09-28T00:00:00+00:00"^^xsd:dateTime ;
     ns1:presentedAt <http://ceur-ws.org/Vol-396/#event> ;
-    ns6:editor <http://ceur-ws.org/Vol-396/#Bj%C3%B6rniGottfried>,
+    ns4:editor <http://ceur-ws.org/Vol-396/#Bj%C3%B6rniGottfried>,
         <http://ceur-ws.org/Vol-396/#HamidiAghajan>,
         <http://ceur-ws.org/Vol-396/#and> .
 

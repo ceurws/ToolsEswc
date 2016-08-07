@@ -1,0 +1,39 @@
+@prefix ns1: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns2: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns3: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns4: <http://www.w3.org/2002/07/owl#> .
+@prefix ns5: <http://xmlns.com/foaf/0.1/> .
+@prefix ns6: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns7: <http://purl.org/ontology/bibo/#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://ceur-ws.org/Vol-1645/> a ns2:Proceedings ;
+    ns6:issued "2016-07-18T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:presentedAt <http://ceur-ws.org/Vol-1645/#event> ;
+    ns1:editor <http://ceur-ws.org/Vol-1645/#AlbertoiMomigliano>,
+        <http://ceur-ws.org/Vol-1645/#CamilloiFiorentini> .
+
+<http://ceur-ws.org/Vol-1645/#AlbertoiMomigliano> a ns5:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/AlbertoiMomigliano> ;
+    ns5:name "Alberto Momigliano" .
+
+<http://ceur-ws.org/Vol-1645/#CamilloiFiorentini> a ns5:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/CamilloiFiorentini> ;
+    ns5:name "Camillo Fiorentini" .
+
+<http://ceur-ws.org/Vol-1645/#event> a ns2:WorkshopEvent ;
+    ns2:hasLocation <http://dbpedia.org/resource/Italy> ;
+    ns2:hasPart <http://ceur-ws.org/Vol-1645/#part-ws> ;
+    ns2:isSubEventOf <http://ceur-ws.org/Vol-1645/#conf> ;
+    ns3:beginsAtDatetime "2016-06-20T00:00:00+00:00"^^xsd:dateTime ;
+    ns3:endsAtDatetime "2016-06-22T00:00:00+00:00"^^xsd:dateTime ;
+    rdfs:seeAlso <http://ceur-ws.org/Vol-1068/#event>,
+        <http://ceur-ws.org/Vol-1195/#event>,
+        <http://ceur-ws.org/Vol-1459/#event>,
+        <http://ceur-ws.org/Vol-598/#event>,
+        <http://ceur-ws.org/Vol-810/#event>,
+        <http://ceur-ws.org/Vol-857/#event> .
+

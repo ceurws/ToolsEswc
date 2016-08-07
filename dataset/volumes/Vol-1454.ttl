@@ -1,154 +1,40 @@
-@prefix ns1: <http://www.w3.org/2002/07/owl#> .
+@prefix ns1: <http://data.semanticweb.org/ns/swc/ontology/#> .
 @prefix ns2: <http://xmlns.com/foaf/0.1/> .
-@prefix ns3: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns4: <http://purl.org/ontology/bibo/#> .
-@prefix ns5: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns6: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns3: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns4: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns5: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns6: <http://purl.org/dc/elements/1.1/> .
+@prefix ns7: <http://www.w3.org/2002/07/owl#> .
+@prefix ns8: <http://purl.org/ontology/bibo/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1454/#AndreasiZelend> a ns2:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/AndreasiZelend> ;
-    ns2:made <http://ceur-ws.org/Vol-1454/#ramics15-st_33-42> ;
-    ns2:name "Andreas Zelend" .
-
-<http://ceur-ws.org/Vol-1454/#DylaniKillingbeck> a ns2:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/DylaniKillingbeck> ;
-    ns2:made <http://ceur-ws.org/Vol-1454/#ramics15-st_61-69> ;
-    ns2:name "Dylan Killingbeck" .
-
-<http://ceur-ws.org/Vol-1454/#InsaiStucke> a ns2:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/InsaiStucke> ;
-    ns2:made <http://ceur-ws.org/Vol-1454/#ramics15-st_53-60> ;
-    ns2:name "Insa Stucke" .
+<http://ceur-ws.org/Vol-1454/> a ns1:Proceedings ;
+    ns3:issued "2015-09-24T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:presentedAt <http://ceur-ws.org/Vol-1454/#event> ;
+    ns4:editor <http://ceur-ws.org/Vol-1454/#JoseiNunoiOliveira>,
+        <http://ceur-ws.org/Vol-1454/#MichaeliWinter>,
+        <http://ceur-ws.org/Vol-1454/#WolframiKahl> .
 
 <http://ceur-ws.org/Vol-1454/#JoseiNunoiOliveira> a ns2:Person ;
-    ns5:affiliation "" ;
-    ns1:sameAs <http://ceur-ws.org/persons/JoseiNunoiOliveira> ;
+    ns7:sameAs <http://ceur-ws.org/persons/JoseiNunoiOliveira> ;
     ns2:name "Jose Nuno Oliveira" .
 
 <http://ceur-ws.org/Vol-1454/#MichaeliWinter> a ns2:Person ;
-    ns5:affiliation "" ;
-    ns1:sameAs <http://ceur-ws.org/persons/MichaeliWinter> ;
+    ns7:sameAs <http://ceur-ws.org/persons/MichaeliWinter> ;
     ns2:name "Michael Winter" .
 
-<http://ceur-ws.org/Vol-1454/#NafiiDiallo> a ns2:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/NafiiDiallo> ;
-    ns2:made <http://ceur-ws.org/Vol-1454/#ramics15-st_23-32> ;
-    ns2:name "Nafi Diallo" .
-
-<http://ceur-ws.org/Vol-1454/#OliveriLanzerath> a ns2:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/OliveriLanzerath> ;
-    ns2:made <http://ceur-ws.org/Vol-1454/#ramics15-st_9-14> ;
-    ns2:name "Oliver Lanzerath" .
-
-<http://ceur-ws.org/Vol-1454/#RenatoiNeves> a ns2:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/RenatoiNeves> ;
-    ns2:made <http://ceur-ws.org/Vol-1454/#ramics15-st_43-52> ;
-    ns2:name "Renato Neves" .
-
-<http://ceur-ws.org/Vol-1454/#VictoriMiraldo> a ns2:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/VictoriMiraldo> ;
-    ns2:made <http://ceur-ws.org/Vol-1454/#ramics15-st_15-22> ;
-    ns2:name "Victor Miraldo" .
-
 <http://ceur-ws.org/Vol-1454/#WolframiKahl> a ns2:Person ;
-    ns5:affiliation "" ;
-    ns1:sameAs <http://ceur-ws.org/persons/WolframiKahl> ;
+    ns7:sameAs <http://ceur-ws.org/persons/WolframiKahl> ;
     ns2:name "Wolfram Kahl" .
 
-<http://ceur-ws.org/Vol-1454/#YoshikiiNakamura> a ns2:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/YoshikiiNakamura> ;
-    ns2:made <http://ceur-ws.org/Vol-1454/#ramics15-st_1-8> ;
-    ns2:name "Yoshiki Nakamura" .
-
-<http://ceur-ws.org/Vol-1454/#event> a ns3:WorkshopEvent ;
-    ns3:hasLocation <http://dbpedia.org/resource/Portugal> ;
-    ns3:hasPart <http://ceur-ws.org/Vol-1454/#part-RAMiCS> ;
-    ns3:isSubEventOf <http://ceur-ws.org/Vol-1454/#conf> ;
-    ns8:beginsAtDatetime "2016-09-28T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:endsAtDatetime "2016-09-28T00:00:00+00:00"^^xsd:dateTime .
-
-<http://ceur-ws.org/Vol-1454/#ramics15-st_1-8> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1454/> ;
-    ns6:title "Decision Methods for Concurrent Kleene Algebra with Tests: Based on Derivative" ;
-    ns4:endPage 8 ;
-    ns4:numPages 8 ;
-    ns4:startPage 1 ;
-    ns5:author <http://ceur-ws.org/Vol-1454/#YoshikiiNakamura> .
-
-<http://ceur-ws.org/Vol-1454/#ramics15-st_15-22> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1454/> ;
-    ns6:title "Relational Equality in the Intensional Theory of Types" ;
-    ns4:endPage 22 ;
-    ns4:numPages 8 ;
-    ns4:startPage 15 ;
-    ns5:author <http://ceur-ws.org/Vol-1454/#VictoriMiraldo> .
-
-<http://ceur-ws.org/Vol-1454/#ramics15-st_23-32> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1454/> ;
-    ns6:title "Loop Analysis and Repair" ;
-    ns4:endPage 32 ;
-    ns4:numPages 10 ;
-    ns4:startPage 23 ;
-    ns5:author <http://ceur-ws.org/Vol-1454/#NafiiDiallo> .
-
-<http://ceur-ws.org/Vol-1454/#ramics15-st_33-42> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1454/> ;
-    ns6:title "Monoid Modules and Structured Document Algebra" ;
-    ns4:endPage 42 ;
-    ns4:numPages 10 ;
-    ns4:startPage 33 ;
-    ns5:author <http://ceur-ws.org/Vol-1454/#AndreasiZelend> .
-
-<http://ceur-ws.org/Vol-1454/#ramics15-st_43-52> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1454/> ;
-    ns6:title "On a Monadic Encoding of Continuous Behaviour" ;
-    ns4:endPage 52 ;
-    ns4:numPages 10 ;
-    ns4:startPage 43 ;
-    ns5:author <http://ceur-ws.org/Vol-1454/#RenatoiNeves> .
-
-<http://ceur-ws.org/Vol-1454/#ramics15-st_53-60> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1454/> ;
-    ns6:title "Relational Approximation of Maximum Independent Sets" ;
-    ns4:endPage 60 ;
-    ns4:numPages 8 ;
-    ns4:startPage 53 ;
-    ns5:author <http://ceur-ws.org/Vol-1454/#InsaiStucke> .
-
-<http://ceur-ws.org/Vol-1454/#ramics15-st_61-69> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1454/> ;
-    ns6:title "A Generic Matrix Manipulator" ;
-    ns4:endPage 69 ;
-    ns4:numPages 9 ;
-    ns4:startPage 61 ;
-    ns5:author <http://ceur-ws.org/Vol-1454/#DylaniKillingbeck> .
-
-<http://ceur-ws.org/Vol-1454/#ramics15-st_9-14> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1454/> ;
-    ns6:title "RLE-based Algorithm for Testing Biorders" ;
-    ns4:endPage 14 ;
-    ns4:numPages 6 ;
-    ns4:startPage 9 ;
-    ns5:author <http://ceur-ws.org/Vol-1454/#OliveriLanzerath> .
-
-<http://ceur-ws.org/Vol-1454/> a ns3:Proceedings ;
-    ns3:hasPart <http://ceur-ws.org/Vol-1454/#ramics15-st_1-8>,
-        <http://ceur-ws.org/Vol-1454/#ramics15-st_15-22>,
-        <http://ceur-ws.org/Vol-1454/#ramics15-st_23-32>,
-        <http://ceur-ws.org/Vol-1454/#ramics15-st_33-42>,
-        <http://ceur-ws.org/Vol-1454/#ramics15-st_43-52>,
-        <http://ceur-ws.org/Vol-1454/#ramics15-st_53-60>,
-        <http://ceur-ws.org/Vol-1454/#ramics15-st_61-69>,
-        <http://ceur-ws.org/Vol-1454/#ramics15-st_9-14> ;
-    ns7:issued "2015-09-24T00:00:00+00:00"^^xsd:dateTime ;
-    ns4:presentedAt <http://ceur-ws.org/Vol-1454/#event> ;
-    ns5:editor <http://ceur-ws.org/Vol-1454/#JoseiNunoiOliveira>,
-        <http://ceur-ws.org/Vol-1454/#MichaeliWinter>,
-        <http://ceur-ws.org/Vol-1454/#WolframiKahl> .
+<http://ceur-ws.org/Vol-1454/#event> a ns1:WorkshopEvent ;
+    ns1:hasLocation <http://dbpedia.org/resource/Portugal> ;
+    ns1:hasPart <http://ceur-ws.org/Vol-1454/#part-RAMiCS> ;
+    ns1:isSubEventOf <http://ceur-ws.org/Vol-1454/#conf> ;
+    ns5:beginsAtDatetime "2016-09-28T00:00:00+00:00"^^xsd:dateTime ;
+    ns5:endsAtDatetime "2016-09-28T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:license "http://creativecommons.org/publicdomain/zero/1.0/" .
 

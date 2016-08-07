@@ -1,232 +1,47 @@
-@prefix ns1: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns2: <http://xmlns.com/foaf/0.1/> .
+@prefix ns1: <http://purl.org/dc/elements/1.1/> .
+@prefix ns2: <http://purl.org/NET/c4dm/timeline.owl#> .
 @prefix ns3: <http://data.semanticweb.org/ns/swc/ontology/#> .
 @prefix ns4: <http://www.w3.org/2002/07/owl#> .
-@prefix ns5: <http://purl.org/ontology/bibo/#> .
-@prefix ns6: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns5: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns6: <http://xmlns.com/foaf/0.1/> .
+@prefix ns7: <http://purl.org/ontology/bibo/#> .
 @prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1523/#AlexanderiKott> a ns2:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/AlexanderiKott> ;
-    ns2:made <http://ceur-ws.org/Vol-1523/#STIDS_2015_K3_Kott> ;
-    ns2:name "Alexander Kott" .
+<http://ceur-ws.org/Vol-1523/> a ns3:Proceedings ;
+    ns8:issued "2015-12-09T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:presentedAt <http://ceur-ws.org/Vol-1523/#event> ;
+    ns5:editor <http://ceur-ws.org/Vol-1523/#AlessandroiOltramari>,
+        <http://ceur-ws.org/Vol-1523/#IaniEmmons>,
+        <http://ceur-ws.org/Vol-1523/#KathryniBlackmondiLaskey>,
+        <http://ceur-ws.org/Vol-1523/#PauloiC.iG.iCosta> .
 
-<http://ceur-ws.org/Vol-1523/#AlonzaiMumford> a ns2:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/AlonzaiMumford> ;
-    ns2:made <http://ceur-ws.org/Vol-1523/#STIDS_2015_T11_Mumford_etal> ;
-    ns2:name "Alonza Mumford" .
+<http://ceur-ws.org/Vol-1523/#AlessandroiOltramari> a ns6:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/AlessandroiOltramari> ;
+    ns6:name "Alessandro Oltramari" .
 
-<http://ceur-ws.org/Vol-1523/#AmardeepiBhattal> a ns2:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/AmardeepiBhattal> ;
-    ns2:made <http://ceur-ws.org/Vol-1523/#STIDS_2015_T10_Donohue_etal> ;
-    ns2:name "Amardeep Bhattal" .
-
-<http://ceur-ws.org/Vol-1523/#Bernd-PeteriParis> a ns2:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/Bernd-PeteriParis> ;
-    ns2:made <http://ceur-ws.org/Vol-1523/#STIDS_2015_T03_Laskey_etal> ;
-    ns2:name "Bernd-Peter Paris" .
-
-<http://ceur-ws.org/Vol-1523/#BlaineiHoffman> a ns2:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/BlaineiHoffman> ;
-    ns2:made <http://ceur-ws.org/Vol-1523/#STIDS_2015_T04_Oltramari_etal> ;
-    ns2:name "Blaine Hoffman" .
-
-<http://ceur-ws.org/Vol-1523/#BoiYu> a ns2:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/BoiYu> ;
-    ns2:made <http://ceur-ws.org/Vol-1523/#STIDS_2015_T09_Yu_etal> ;
-    ns2:name "Bo Yu" .
-
-<http://ceur-ws.org/Vol-1523/#BrianiDonohue> a ns2:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/BrianiDonohue> ;
-    ns2:made <http://ceur-ws.org/Vol-1523/#STIDS_2015_T10_Donohue_etal> ;
-    ns2:name "Brian Donohue" .
-
-<http://ceur-ws.org/Vol-1523/#BrunoiSinopoli> a ns2:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/BrunoiSinopoli> ;
-    ns2:made <http://ceur-ws.org/Vol-1523/#STIDS_2015_K2_Sinopoli> ;
-    ns2:name "Bruno Sinopoli" .
-
-<http://ceur-ws.org/Vol-1523/#CarliAndersen> a ns2:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/CarliAndersen> ;
-    ns2:made <http://ceur-ws.org/Vol-1523/#STIDS_2015_T07_Vanderlyn_etal> ;
-    ns2:name "Carl Andersen" .
-
-<http://ceur-ws.org/Vol-1523/#ChrisiWacek> a ns2:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/ChrisiWacek> ;
-    ns2:made <http://ceur-ws.org/Vol-1523/#STIDS_2015_T06_BenSalem_Wacek> ;
-    ns2:name "Chris Wacek" .
-
-<http://ceur-ws.org/Vol-1523/#CleotildeiGonzalez> a ns2:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/CleotildeiGonzalez> ;
-    ns2:made <http://ceur-ws.org/Vol-1523/#STIDS_2015_T05_BenAsher_etal> ;
-    ns2:name "Cleotilde Gonzalez" .
-
-<http://ceur-ws.org/Vol-1523/#DaveiBraines> a ns2:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/DaveiBraines> ;
-    ns2:made <http://ceur-ws.org/Vol-1523/#STIDS_2015_T10_Donohue_etal> ;
-    ns2:name "Dave Braines" .
-
-<http://ceur-ws.org/Vol-1523/#DianeiHenshel> a ns2:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/DianeiHenshel> ;
-    ns2:made <http://ceur-ws.org/Vol-1523/#STIDS_2015_T04_Oltramari_etal> ;
-    ns2:name "Diane Henshel" .
-
-<http://ceur-ws.org/Vol-1523/#DoriniMarcu> a ns2:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/DoriniMarcu> ;
-    ns2:made <http://ceur-ws.org/Vol-1523/#STIDS_2015_T08_Meckl_etal> ;
-    ns2:name "Dorin Marcu" .
-
-<http://ceur-ws.org/Vol-1523/#DouglasiKutach> a ns2:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/DouglasiKutach> ;
-    ns2:made <http://ceur-ws.org/Vol-1523/#STIDS_2015_T10_Donohue_etal> ;
-    ns2:name "Douglas Kutach" .
-
-<http://ceur-ws.org/Vol-1523/#GeethideiMel> a ns2:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/GeethideiMel> ;
-    ns2:made <http://ceur-ws.org/Vol-1523/#STIDS_2015_T10_Donohue_etal> ;
-    ns2:name "Geeth de Mel" .
-
-<http://ceur-ws.org/Vol-1523/#GheorgheiTecuci> a ns2:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/GheorgheiTecuci> ;
-    ns2:made <http://ceur-ws.org/Vol-1523/#STIDS_2015_T08_Meckl_etal> ;
-    ns2:name "Gheorghe Tecuci" .
-
-<http://ceur-ws.org/Vol-1523/#IaniEmmons> a ns2:Person ;
-    ns1:affiliation "" ;
+<http://ceur-ws.org/Vol-1523/#IaniEmmons> a ns6:Person ;
     ns4:sameAs <http://ceur-ws.org/persons/IaniEmmons> ;
-    ns2:name "Ian Emmons" .
+    ns6:name "Ian Emmons" .
 
-<http://ceur-ws.org/Vol-1523/#J.iMarkiPullen> a ns2:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/J.iMarkiPullen> ;
-    ns2:made <http://ceur-ws.org/Vol-1523/#STIDS_2015_T02_Singapogu_etal> ;
-    ns2:name "J. Mark Pullen" .
-
-<http://ceur-ws.org/Vol-1523/#JamesiMomoh> a ns2:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/JamesiMomoh> ;
-    ns2:made <http://ceur-ws.org/Vol-1523/#STIDS_2015_K4_Momoh> ;
-    ns2:name "James Momoh" .
-
-<http://ceur-ws.org/Vol-1523/#JasoniBryant> a ns2:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/JasoniBryant> ;
-    ns2:made <http://ceur-ws.org/Vol-1523/#STIDS_2015_T01_Morosoff_etal> ;
-    ns2:name "Jason Bryant" .
-
-<http://ceur-ws.org/Vol-1523/#KathryniBlackmondiLaskey> a ns2:Person ;
-    ns1:affiliation "" ;
+<http://ceur-ws.org/Vol-1523/#KathryniBlackmondiLaskey> a ns6:Person ;
     ns4:sameAs <http://ceur-ws.org/persons/KathryniBlackmondiLaskey> ;
-    ns2:name "Kathryn Blackmond Laskey" .
+    ns6:name "Kathryn Blackmond Laskey" .
 
-<http://ceur-ws.org/Vol-1523/#KathryniLaskey> a ns2:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/KathryniLaskey> ;
-    ns2:made <http://ceur-ws.org/Vol-1523/#STIDS_2015_T03_Laskey_etal> ;
-    ns2:name "Kathryn Laskey" .
-
-<http://ceur-ws.org/Vol-1523/#LindseyiVanderlyn> a ns2:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/LindseyiVanderlyn> ;
-    ns2:made <http://ceur-ws.org/Vol-1523/#STIDS_2015_T07_Vanderlyn_etal> ;
-    ns2:name "Lindsey Vanderlyn" .
-
-<http://ceur-ws.org/Vol-1523/#MalekiBeniSalem> a ns2:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/MalekiBeniSalem> ;
-    ns2:made <http://ceur-ws.org/Vol-1523/#STIDS_2015_T06_BenSalem_Wacek> ;
-    ns2:name "Malek Ben Salem" .
-
-<http://ceur-ws.org/Vol-1523/#MarcoiRomano> a ns2:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/MarcoiRomano> ;
-    ns2:made <http://ceur-ws.org/Vol-1523/#STIDS_2015_P1_Cilia_etal> ;
-    ns2:name "Marco Romano" .
-
-<http://ceur-ws.org/Vol-1523/#MarianaiCains> a ns2:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/MarianaiCains> ;
-    ns2:made <http://ceur-ws.org/Vol-1523/#STIDS_2015_T04_Oltramari_etal> ;
-    ns2:name "Mariana Cains" .
-
-<http://ceur-ws.org/Vol-1523/#MarkiHartong> a ns2:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/MarkiHartong> ;
-    ns2:made <http://ceur-ws.org/Vol-1523/#STIDS_2015_K1_Hartong> ;
-    ns2:name "Mark Hartong" .
-
-<http://ceur-ws.org/Vol-1523/#MihaiiBoicu> a ns2:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/MihaiiBoicu> ;
-    ns2:made <http://ceur-ws.org/Vol-1523/#STIDS_2015_T08_Meckl_etal> ;
-    ns2:name "Mihai Boicu" .
-
-<http://ceur-ws.org/Vol-1523/#NicoleiDaliaiCilia> a ns2:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/NicoleiDaliaiCilia> ;
-    ns2:made <http://ceur-ws.org/Vol-1523/#STIDS_2015_P1_Cilia_etal> ;
-    ns2:name "Nicole Dalia Cilia" .
-
-<http://ceur-ws.org/Vol-1523/#NoamiBen-Asher> a ns2:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/NoamiBen-Asher> ;
-    ns2:made <http://ceur-ws.org/Vol-1523/#STIDS_2015_T05_BenAsher_etal> ;
-    ns2:name "Noam Ben-Asher" .
-
-<http://ceur-ws.org/Vol-1523/#NoemiiScarpato> a ns2:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/NoemiiScarpato> ;
-    ns2:made <http://ceur-ws.org/Vol-1523/#STIDS_2015_P1_Cilia_etal> ;
-    ns2:name "Noemi Scarpato" .
-
-<http://ceur-ws.org/Vol-1523/#PeteriMorosoff> a ns2:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/PeteriMorosoff> ;
-    ns2:made <http://ceur-ws.org/Vol-1523/#STIDS_2015_T01_Morosoff_etal> ;
-    ns2:name "Peter Morosoff" .
-
-<http://ceur-ws.org/Vol-1523/#PlameniPetrov> a ns2:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/PlameniPetrov> ;
-    ns2:made <http://ceur-ws.org/Vol-1523/#STIDS_2015_T07_Vanderlyn_etal> ;
-    ns2:name "Plamen Petrov" .
-
-<http://ceur-ws.org/Vol-1523/#RobertiErbacher> a ns2:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/RobertiErbacher> ;
-    ns2:made <http://ceur-ws.org/Vol-1523/#STIDS_2015_T05_BenAsher_etal> ;
-    ns2:name "Robert Erbacher" .
-
-<http://ceur-ws.org/Vol-1523/#RobertiFarrell> a ns2:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/RobertiFarrell> ;
-    ns2:made <http://ceur-ws.org/Vol-1523/#STIDS_2015_T01_Morosoff_etal> ;
-    ns2:name "Robert Farrell" .
-
-<http://ceur-ws.org/Vol-1523/#RobertiGanger> a ns2:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/RobertiGanger> ;
-    ns2:made <http://ceur-ws.org/Vol-1523/#STIDS_2015_T10_Donohue_etal> ;
-    ns2:name "Robert Ganger" .
-
-<http://ceur-ws.org/Vol-1523/#SamueliSuhasiSingapogu> a ns2:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/SamueliSuhasiSingapogu> ;
-    ns2:made <http://ceur-ws.org/Vol-1523/#STIDS_2015_T02_Singapogu_etal> ;
-    ns2:name "Samuel Suhas Singapogu" .
-
-<http://ceur-ws.org/Vol-1523/#SharathiHiremegalore> a ns2:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/SharathiHiremegalore> ;
-    ns2:made <http://ceur-ws.org/Vol-1523/#STIDS_2015_T09_Yu_etal> ;
-    ns2:name "Sharath Hiremegalore" .
-
-<http://ceur-ws.org/Vol-1523/#SteveniMeckl> a ns2:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/SteveniMeckl> ;
-    ns2:made <http://ceur-ws.org/Vol-1523/#STIDS_2015_T08_Meckl_etal> ;
-    ns2:name "Steven Meckl" .
-
-<http://ceur-ws.org/Vol-1523/#SudhanshuiChandekar> a ns2:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/SudhanshuiChandekar> ;
-    ns2:made <http://ceur-ws.org/Vol-1523/#STIDS_2015_T03_Laskey_etal> ;
-    ns2:name "Sudhanshu Chandekar" .
-
-<http://ceur-ws.org/Vol-1523/#TieniPham> a ns2:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/TieniPham> ;
-    ns2:made <http://ceur-ws.org/Vol-1523/#STIDS_2015_T10_Donohue_etal> ;
-    ns2:name "Tien Pham" .
+<http://ceur-ws.org/Vol-1523/#PauloiC.iG.iCosta> a ns6:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/PauloiC.iG.iCosta> ;
+    ns6:name "Paulo C. G. Costa" .
 
 <http://ceur-ws.org/Vol-1523/#event> a ns3:WorkshopEvent ;
     ns3:hasLocation <http://dbpedia.org/resource/United_States> ;
-    ns3:hasPart <http://ceur-ws.org/Vol-1523/#part-STIDS> ;
+    ns3:hasPart <http://ceur-ws.org/Vol-1523/#part-VA> ;
     ns3:isSubEventOf <http://ceur-ws.org/Vol-1523/#conf> ;
-    ns7:beginsAtDatetime "2015-11-18T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:endsAtDatetime "2015-11-20T00:00:00+00:00"^^xsd:dateTime ;
+    ns2:beginsAtDatetime "2015-11-18T00:00:00+00:00"^^xsd:dateTime ;
+    ns2:endsAtDatetime "2015-11-20T00:00:00+00:00"^^xsd:dateTime ;
+    ns1:license "http://creativecommons.org/publicdomain/zero/1.0/" ;
     rdfs:seeAlso <http://ceur-ws.org/Vol-1097/#event>,
         <http://ceur-ws.org/Vol-1304/#event>,
         <http://ceur-ws.org/Vol-299/#event>,
@@ -235,242 +50,4 @@
         <http://ceur-ws.org/Vol-713/#event>,
         <http://ceur-ws.org/Vol-808/#event>,
         <http://ceur-ws.org/Vol-966/#event> .
-
-<http://ceur-ws.org/Vol-1523/#BarryiSmith> a ns2:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/BarryiSmith> ;
-    ns2:made <http://ceur-ws.org/Vol-1523/#STIDS_2015_T01_Morosoff_etal>,
-        <http://ceur-ws.org/Vol-1523/#STIDS_2015_T10_Donohue_etal> ;
-    ns2:name "Barry Smith" .
-
-<http://ceur-ws.org/Vol-1523/#DumindaiWijesekera> a ns2:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/DumindaiWijesekera> ;
-    ns2:made <http://ceur-ws.org/Vol-1523/#STIDS_2015_T09_Yu_etal>,
-        <http://ceur-ws.org/Vol-1523/#STIDS_2015_T11_Mumford_etal> ;
-    ns2:name "Duminda Wijesekera" .
-
-<http://ceur-ws.org/Vol-1523/#PauloiC.iG.iCosta> a ns2:Person ;
-    ns1:affiliation "" ;
-    ns4:sameAs <http://ceur-ws.org/persons/PauloiC.iG.iCosta> ;
-    ns2:made <http://ceur-ws.org/Vol-1523/#STIDS_2015_T02_Singapogu_etal> ;
-    ns2:name "Paulo C. G. Costa" .
-
-<http://ceur-ws.org/Vol-1523/#PauloiCosta> a ns2:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/PauloiCosta> ;
-    ns2:made <http://ceur-ws.org/Vol-1523/#STIDS_2015_T09_Yu_etal>,
-        <http://ceur-ws.org/Vol-1523/#STIDS_2015_T11_Mumford_etal> ;
-    ns2:name "Paulo Costa" .
-
-<http://ceur-ws.org/Vol-1523/#RoniRudnicki> a ns2:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/RoniRudnicki> ;
-    ns2:made <http://ceur-ws.org/Vol-1523/#STIDS_2015_T01_Morosoff_etal>,
-        <http://ceur-ws.org/Vol-1523/#STIDS_2015_T10_Donohue_etal> ;
-    ns2:name "Ron Rudnicki" .
-
-<http://ceur-ws.org/Vol-1523/#STIDS_2015_K1_Hartong> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1523/> ;
-    ns6:title "Positive Train Control Critical Infrastructure" ;
-    ns5:section <http%3A//ceur-ws.org/Vol-1523/%23InvitedTalks> ;
-    ns1:author <http://ceur-ws.org/Vol-1523/#MarkiHartong> .
-
-<http://ceur-ws.org/Vol-1523/#STIDS_2015_K2_Sinopoli> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1523/> ;
-    ns6:title "On the Security of Cyber-Physical Systems" ;
-    ns5:section <http%3A//ceur-ws.org/Vol-1523/%23InvitedTalks> ;
-    ns1:author <http://ceur-ws.org/Vol-1523/#BrunoiSinopoli> .
-
-<http://ceur-ws.org/Vol-1523/#STIDS_2015_K3_Kott> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1523/> ;
-    ns6:title "The Unbearable Lightness in the Meaning of Cyber Risk" ;
-    ns5:section <http%3A//ceur-ws.org/Vol-1523/%23InvitedTalks> ;
-    ns1:author <http://ceur-ws.org/Vol-1523/#AlexanderiKott> .
-
-<http://ceur-ws.org/Vol-1523/#STIDS_2015_K4_Momoh> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1523/> ;
-    ns6:title "Resilient Power Grids" ;
-    ns5:section <http%3A//ceur-ws.org/Vol-1523/%23InvitedTalks> ;
-    ns1:author <http://ceur-ws.org/Vol-1523/#JamesiMomoh> .
-
-<http://ceur-ws.org/Vol-1523/#AlessandroiOltramari> a ns2:Person ;
-    ns1:affiliation "" ;
-    ns4:sameAs <http://ceur-ws.org/persons/AlessandroiOltramari> ;
-    ns2:made <http://ceur-ws.org/Vol-1523/#STIDS_2015_T04_Oltramari_etal>,
-        <http://ceur-ws.org/Vol-1523/#STIDS_2015_T05_BenAsher_etal> ;
-    ns2:name "Alessandro Oltramari" .
-
-<http://ceur-ws.org/Vol-1523/#STIDS_2015_T06_BenSalem_Wacek> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1523/> ;
-    ns6:title "Enabling New Technologies for Cyber Security Defense with the ICAS Cyber Security Ontology" ;
-    ns5:endPage 49 ;
-    ns5:numPages 8 ;
-    ns5:section <http%3A//ceur-ws.org/Vol-1523/%23TechnicalPapers> ;
-    ns5:startPage 42 ;
-    ns1:author <http://ceur-ws.org/Vol-1523/#ChrisiWacek>,
-        <http://ceur-ws.org/Vol-1523/#MalekiBeniSalem> .
-
-<http://ceur-ws.org/Vol-1523/#STIDS_2015_P1_Cilia_etal> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1523/> ;
-    ns6:title "A Semantic Approach to Reachability Matrix Computation" ;
-    ns5:endPage 94 ;
-    ns5:numPages 4 ;
-    ns5:section <http%3A//ceur-ws.org/Vol-1523/%23TechnicalPapers> ;
-    ns5:startPage 91 ;
-    ns1:author <http://ceur-ws.org/Vol-1523/#MarcoiRomano>,
-        <http://ceur-ws.org/Vol-1523/#NicoleiDaliaiCilia>,
-        <http://ceur-ws.org/Vol-1523/#NoemiiScarpato> .
-
-<http://ceur-ws.org/Vol-1523/#STIDS_2015_T02_Singapogu_etal> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1523/> ;
-    ns6:title "Automated Ontology Creation using XML Schema Elements" ;
-    ns5:endPage 17 ;
-    ns5:numPages 8 ;
-    ns5:section <http%3A//ceur-ws.org/Vol-1523/%23TechnicalPapers> ;
-    ns5:startPage 10 ;
-    ns1:author <http://ceur-ws.org/Vol-1523/#J.iMarkiPullen>,
-        <http://ceur-ws.org/Vol-1523/#PauloiC.iG.iCosta>,
-        <http://ceur-ws.org/Vol-1523/#SamueliSuhasiSingapogu> .
-
-<http://ceur-ws.org/Vol-1523/#STIDS_2015_T03_Laskey_etal> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1523/> ;
-    ns6:title "A Probabilistic Ontology for Large-Scale IP Geolocation" ;
-    ns5:endPage 25 ;
-    ns5:numPages 8 ;
-    ns5:section <http%3A//ceur-ws.org/Vol-1523/%23TechnicalPapers> ;
-    ns5:startPage 18 ;
-    ns1:author <http://ceur-ws.org/Vol-1523/#Bernd-PeteriParis>,
-        <http://ceur-ws.org/Vol-1523/#KathryniLaskey>,
-        <http://ceur-ws.org/Vol-1523/#SudhanshuiChandekar> .
-
-<http://ceur-ws.org/Vol-1523/#STIDS_2015_T07_Vanderlyn_etal> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1523/> ;
-    ns6:title "Similarity in Semantic Graphs: Combining Structural, Literal, and Ontology-based Measures" ;
-    ns5:endPage 57 ;
-    ns5:numPages 8 ;
-    ns5:section <http%3A//ceur-ws.org/Vol-1523/%23TechnicalPapers> ;
-    ns5:startPage 50 ;
-    ns1:author <http://ceur-ws.org/Vol-1523/#CarliAndersen>,
-        <http://ceur-ws.org/Vol-1523/#LindseyiVanderlyn>,
-        <http://ceur-ws.org/Vol-1523/#PlameniPetrov> .
-
-<http://ceur-ws.org/Vol-1523/#STIDS_2015_T11_Mumford_etal> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1523/> ;
-    ns6:title "Toward Representing and Recognizing Cyber-Physical Autonomous Agents in Competition Using Event Semantics" ;
-    ns5:endPage 89 ;
-    ns5:numPages 8 ;
-    ns5:section <http%3A//ceur-ws.org/Vol-1523/%23TechnicalPapers> ;
-    ns5:startPage 82 ;
-    ns1:author <http://ceur-ws.org/Vol-1523/#AlonzaiMumford>,
-        <http://ceur-ws.org/Vol-1523/#DumindaiWijesekera>,
-        <http://ceur-ws.org/Vol-1523/#PauloiCosta> .
-
-<http%3A//ceur-ws.org/Vol-1523/%23InvitedTalks> a ns3:SessionEvent ;
-    ns3:partOf <http://ceur-ws.org/Vol-1523/> ;
-    ns6:title "Invited Talks" .
-
-<http://ceur-ws.org/Vol-1523/#STIDS_2015_T04_Oltramari_etal> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1523/> ;
-    ns6:title "Towards a Human Factors Ontology for Cyber Security" ;
-    ns5:endPage 33 ;
-    ns5:numPages 8 ;
-    ns5:section <http%3A//ceur-ws.org/Vol-1523/%23TechnicalPapers> ;
-    ns5:startPage 26 ;
-    ns1:author <http://ceur-ws.org/Vol-1523/#AlessandroiOltramari>,
-        <http://ceur-ws.org/Vol-1523/#BlaineiHoffman>,
-        <http://ceur-ws.org/Vol-1523/#DianeiHenshel>,
-        <http://ceur-ws.org/Vol-1523/#MarianaiCains> .
-
-<http://ceur-ws.org/Vol-1523/#STIDS_2015_T05_BenAsher_etal> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1523/> ;
-    ns6:title "Ontology-based Adaptive Systems of Cyber Defense" ;
-    ns5:endPage 41 ;
-    ns5:numPages 8 ;
-    ns5:section <http%3A//ceur-ws.org/Vol-1523/%23TechnicalPapers> ;
-    ns5:startPage 34 ;
-    ns1:author <http://ceur-ws.org/Vol-1523/#AlessandroiOltramari>,
-        <http://ceur-ws.org/Vol-1523/#CleotildeiGonzalez>,
-        <http://ceur-ws.org/Vol-1523/#NoamiBen-Asher>,
-        <http://ceur-ws.org/Vol-1523/#RobertiErbacher> .
-
-<http://ceur-ws.org/Vol-1523/#STIDS_2015_T08_Meckl_etal> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1523/> ;
-    ns6:title "Towards an Operational Semantic Theory of Cyber Defense Against Advanced Persistent Threats" ;
-    ns5:endPage 65 ;
-    ns5:numPages 8 ;
-    ns5:section <http%3A//ceur-ws.org/Vol-1523/%23TechnicalPapers> ;
-    ns5:startPage 58 ;
-    ns1:author <http://ceur-ws.org/Vol-1523/#DoriniMarcu>,
-        <http://ceur-ws.org/Vol-1523/#GheorgheiTecuci>,
-        <http://ceur-ws.org/Vol-1523/#MihaiiBoicu>,
-        <http://ceur-ws.org/Vol-1523/#SteveniMeckl> .
-
-<http://ceur-ws.org/Vol-1523/#STIDS_2015_T09_Yu_etal> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1523/> ;
-    ns6:title "Genetic Counseling Using Workflow-based EMRs" ;
-    ns5:endPage 73 ;
-    ns5:numPages 8 ;
-    ns5:section <http%3A//ceur-ws.org/Vol-1523/%23TechnicalPapers> ;
-    ns5:startPage 66 ;
-    ns1:author <http://ceur-ws.org/Vol-1523/#BoiYu>,
-        <http://ceur-ws.org/Vol-1523/#DumindaiWijesekera>,
-        <http://ceur-ws.org/Vol-1523/#PauloiCosta>,
-        <http://ceur-ws.org/Vol-1523/#SharathiHiremegalore> .
-
-<http://ceur-ws.org/Vol-1523/#STIDS_2015_T01_Morosoff_etal> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1523/> ;
-    ns6:title "Joint Doctrine Ontology: A Benchmark for Military Information Systems Interoperability" ;
-    ns5:endPage 9 ;
-    ns5:numPages 8 ;
-    ns5:section <http%3A//ceur-ws.org/Vol-1523/%23TechnicalPapers> ;
-    ns5:startPage 2 ;
-    ns1:author <http://ceur-ws.org/Vol-1523/#BarryiSmith>,
-        <http://ceur-ws.org/Vol-1523/#JasoniBryant>,
-        <http://ceur-ws.org/Vol-1523/#PeteriMorosoff>,
-        <http://ceur-ws.org/Vol-1523/#RobertiFarrell>,
-        <http://ceur-ws.org/Vol-1523/#RoniRudnicki> .
-
-<http://ceur-ws.org/Vol-1523/#STIDS_2015_T10_Donohue_etal> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1523/> ;
-    ns6:title "Controlled and Uncontrolled English for Ontology Editing" ;
-    ns5:endPage 81 ;
-    ns5:numPages 8 ;
-    ns5:section <http%3A//ceur-ws.org/Vol-1523/%23TechnicalPapers> ;
-    ns5:startPage 74 ;
-    ns1:author <http://ceur-ws.org/Vol-1523/#AmardeepiBhattal>,
-        <http://ceur-ws.org/Vol-1523/#BarryiSmith>,
-        <http://ceur-ws.org/Vol-1523/#BrianiDonohue>,
-        <http://ceur-ws.org/Vol-1523/#DaveiBraines>,
-        <http://ceur-ws.org/Vol-1523/#DouglasiKutach>,
-        <http://ceur-ws.org/Vol-1523/#GeethideiMel>,
-        <http://ceur-ws.org/Vol-1523/#RobertiGanger>,
-        <http://ceur-ws.org/Vol-1523/#RoniRudnicki>,
-        <http://ceur-ws.org/Vol-1523/#TieniPham> .
-
-<http%3A//ceur-ws.org/Vol-1523/%23TechnicalPapers> a ns3:SessionEvent ;
-    ns3:partOf <http://ceur-ws.org/Vol-1523/> ;
-    ns6:title "Technical Papers" .
-
-<http://ceur-ws.org/Vol-1523/> a ns3:Proceedings ;
-    ns3:hasPart <http://ceur-ws.org/Vol-1523/#STIDS_2015_K1_Hartong>,
-        <http://ceur-ws.org/Vol-1523/#STIDS_2015_K2_Sinopoli>,
-        <http://ceur-ws.org/Vol-1523/#STIDS_2015_K3_Kott>,
-        <http://ceur-ws.org/Vol-1523/#STIDS_2015_K4_Momoh>,
-        <http://ceur-ws.org/Vol-1523/#STIDS_2015_P1_Cilia_etal>,
-        <http://ceur-ws.org/Vol-1523/#STIDS_2015_T01_Morosoff_etal>,
-        <http://ceur-ws.org/Vol-1523/#STIDS_2015_T02_Singapogu_etal>,
-        <http://ceur-ws.org/Vol-1523/#STIDS_2015_T03_Laskey_etal>,
-        <http://ceur-ws.org/Vol-1523/#STIDS_2015_T04_Oltramari_etal>,
-        <http://ceur-ws.org/Vol-1523/#STIDS_2015_T05_BenAsher_etal>,
-        <http://ceur-ws.org/Vol-1523/#STIDS_2015_T06_BenSalem_Wacek>,
-        <http://ceur-ws.org/Vol-1523/#STIDS_2015_T07_Vanderlyn_etal>,
-        <http://ceur-ws.org/Vol-1523/#STIDS_2015_T08_Meckl_etal>,
-        <http://ceur-ws.org/Vol-1523/#STIDS_2015_T09_Yu_etal>,
-        <http://ceur-ws.org/Vol-1523/#STIDS_2015_T10_Donohue_etal>,
-        <http://ceur-ws.org/Vol-1523/#STIDS_2015_T11_Mumford_etal> ;
-    ns3:hasSession <http%3A//ceur-ws.org/Vol-1523/%23InvitedTalks>,
-        <http%3A//ceur-ws.org/Vol-1523/%23TechnicalPapers> ;
-    ns8:issued "2015-12-09T00:00:00+00:00"^^xsd:dateTime ;
-    ns5:presentedAt <http://ceur-ws.org/Vol-1523/#event> ;
-    ns1:editor <http://ceur-ws.org/Vol-1523/#AlessandroiOltramari>,
-        <http://ceur-ws.org/Vol-1523/#IaniEmmons>,
-        <http://ceur-ws.org/Vol-1523/#KathryniBlackmondiLaskey>,
-        <http://ceur-ws.org/Vol-1523/#PauloiC.iG.iCosta> .
 

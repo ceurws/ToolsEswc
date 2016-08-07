@@ -1,289 +1,37 @@
-@prefix ns1: <http://xmlns.com/foaf/0.1/> .
-@prefix ns2: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns3: <http://www.w3.org/2002/07/owl#> .
-@prefix ns4: <http://purl.org/ontology/bibo/#> .
-@prefix ns5: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns6: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns1: <http://purl.org/ontology/bibo/#> .
+@prefix ns2: <http://www.w3.org/2002/07/owl#> .
+@prefix ns3: <http://xmlns.com/foaf/0.1/> .
+@prefix ns4: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns5: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns6: <http://swrc.ontoware.org/ontology/#> .
 @prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns8: <http://purl.org/dc/elements/1.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1375/#%C3%81roniBar%C3%A1th> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/%C3%81roniBar%C3%A1th> ;
-    ns1:made <http://ceur-ws.org/Vol-1375/#paper1> ;
-    ns1:name "Áron Baráth" .
+<http://ceur-ws.org/Vol-1375/> a ns4:Proceedings ;
+    ns5:issued "2015-06-06T00:00:00+00:00"^^xsd:dateTime ;
+    ns1:presentedAt <http://ceur-ws.org/Vol-1375/#event> ;
+    ns6:editor <http://ceur-ws.org/Vol-1375/#MarjaniHeri%C4%8Dko>,
+        <http://ceur-ws.org/Vol-1375/#ZoraniBudimac> .
 
-<http://ceur-ws.org/Vol-1375/#AnastasiMishev> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/AnastasiMishev> ;
-    ns1:made <http://ceur-ws.org/Vol-1375/#paper4> ;
-    ns1:name "Anastas Mishev" .
+<http://ceur-ws.org/Vol-1375/#MarjaniHeri%C4%8Dko> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/MarjaniHeri%C4%8Dko> ;
+    ns3:name "Marjan Heričko" .
 
-<http://ceur-ws.org/Vol-1375/#BojanaiDalbeloiBa%C5%A1i%C4%87> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/BojanaiDalbeloiBa%C5%A1i%C4%87> ;
-    ns1:made <http://ceur-ws.org/Vol-1375/#paper5> ;
-    ns1:name "Bojana Dalbelo Bašić" .
+<http://ceur-ws.org/Vol-1375/#ZoraniBudimac> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/ZoraniBudimac> ;
+    ns3:name "Zoran Budimac" .
 
-<http://ceur-ws.org/Vol-1375/#BojanaiKoteska> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/BojanaiKoteska> ;
-    ns1:made <http://ceur-ws.org/Vol-1375/#paper4> ;
-    ns1:name "Bojana Koteska" .
-
-<http://ceur-ws.org/Vol-1375/#DraganiJankovic> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/DraganiJankovic> ;
-    ns1:made <http://ceur-ws.org/Vol-1375/#paper6> ;
-    ns1:name "Dragan Jankovic" .
-
-<http://ceur-ws.org/Vol-1375/#GoraniMau%C5%A1a> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/GoraniMau%C5%A1a> ;
-    ns1:made <http://ceur-ws.org/Vol-1375/#paper5> ;
-    ns1:name "Goran Mauša" .
-
-<http://ceur-ws.org/Vol-1375/#GordanaiRaki%C4%87> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/GordanaiRaki%C4%87> ;
-    ns1:made <http://ceur-ws.org/Vol-1375/#paper7> ;
-    ns1:name "Gordana Rakić" .
-
-<http://ceur-ws.org/Vol-1375/#HannuiJaakkola> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/HannuiJaakkola> ;
-    ns1:made <http://ceur-ws.org/Vol-1375/#paper3> ;
-    ns1:name "Hannu Jaakkola" .
-
-<http://ceur-ws.org/Vol-1375/#IvaniPetkovic> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/IvaniPetkovic> ;
-    ns1:made <http://ceur-ws.org/Vol-1375/#paper6> ;
-    ns1:name "Ivan Petkovic" .
-
-<http://ceur-ws.org/Vol-1375/#JaakiHenno> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/JaakiHenno> ;
-    ns1:made <http://ceur-ws.org/Vol-1375/#paper3> ;
-    ns1:name "Jaak Henno" .
-
-<http://ceur-ws.org/Vol-1375/#JariiSoini> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/JariiSoini> ;
-    ns1:made <http://ceur-ws.org/Vol-1375/#paper3> ;
-    ns1:name "Jari Soini" .
-
-<http://ceur-ws.org/Vol-1375/#LiliiNemeciZlatolas> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/LiliiNemeciZlatolas> ;
-    ns1:made <http://ceur-ws.org/Vol-1375/#paper10> ;
-    ns1:name "Lili Nemec Zlatolas" .
-
-<http://ceur-ws.org/Vol-1375/#LjupcoiPejov> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/LjupcoiPejov> ;
-    ns1:made <http://ceur-ws.org/Vol-1375/#paper4> ;
-    ns1:name "Ljupco Pejov" .
-
-<http://ceur-ws.org/Vol-1375/#MarjaniDruzovec> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/MarjaniDruzovec> ;
-    ns1:made <http://ceur-ws.org/Vol-1375/#paper10> ;
-    ns1:name "Marjan Druzovec" .
-
-<http://ceur-ws.org/Vol-1375/#MarjaniHeri%C4%8Dko> a ns1:Person ;
-    ns2:affiliation "" ;
-    ns3:sameAs <http://ceur-ws.org/persons/MarjaniHeri%C4%8Dko> ;
-    ns1:name "Marjan Heričko" .
-
-<http://ceur-ws.org/Vol-1375/#MartiniGjoshevski> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/MartiniGjoshevski> ;
-    ns1:made <http://ceur-ws.org/Vol-1375/#paper2> ;
-    ns1:name "Martin Gjoshevski" .
-
-<http://ceur-ws.org/Vol-1375/#MuhamediTurkanovi%C4%87> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/MuhamediTurkanovi%C4%87> ;
-    ns1:made <http://ceur-ws.org/Vol-1375/#paper9> ;
-    ns1:name "Muhamed Turkanović" .
-
-<http://ceur-ws.org/Vol-1375/#NikolaiBogunovi%C4%87> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/NikolaiBogunovi%C4%87> ;
-    ns1:made <http://ceur-ws.org/Vol-1375/#paper5> ;
-    ns1:name "Nikola Bogunović" .
-
-<http://ceur-ws.org/Vol-1375/#PetariRajkovic> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/PetariRajkovic> ;
-    ns1:made <http://ceur-ws.org/Vol-1375/#paper6> ;
-    ns1:name "Petar Rajkovic" .
-
-<http://ceur-ws.org/Vol-1375/#TatjanaiWelzer> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/TatjanaiWelzer> ;
-    ns1:made <http://ceur-ws.org/Vol-1375/#paper10> ;
-    ns1:name "Tatjana Welzer" .
-
-<http://ceur-ws.org/Vol-1375/#TihanaiGalinaciGrbac> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/TihanaiGalinaciGrbac> ;
-    ns1:made <http://ceur-ws.org/Vol-1375/#paper5> ;
-    ns1:name "Tihana Galinac Grbac" .
-
-<http://ceur-ws.org/Vol-1375/#TinaiSchweighofer> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/TinaiSchweighofer> ;
-    ns1:made <http://ceur-ws.org/Vol-1375/#paper2> ;
-    ns1:name "Tina Schweighofer" .
-
-<http://ceur-ws.org/Vol-1375/#Zolt%C3%A1niPorkol%C3%A1b> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/Zolt%C3%A1niPorkol%C3%A1b> ;
-    ns1:made <http://ceur-ws.org/Vol-1375/#paper1> ;
-    ns1:name "Zoltán Porkoláb" .
-
-<http://ceur-ws.org/Vol-1375/#event> a ns5:WorkshopEvent ;
-    ns5:hasLocation <http://dbpedia.org/resource/Euro_gold_and_silver_commemorative_coins> ;
-    ns5:hasPart <http://ceur-ws.org/Vol-1375/#part-SQAMIA> ;
-    ns5:isSubEventOf <http://ceur-ws.org/Vol-1375/#conf> ;
+<http://ceur-ws.org/Vol-1375/#event> a ns4:WorkshopEvent ;
+    ns4:hasLocation <http://dbpedia.org/resource/Euro_gold_and_silver_commemorative_coins> ;
+    ns4:hasPart <http://ceur-ws.org/Vol-1375/#part-SQAMIA> ;
+    ns4:isSubEventOf <http://ceur-ws.org/Vol-1375/#conf> ;
     ns7:beginsAtDatetime "2015-06-08T00:00:00+00:00"^^xsd:dateTime ;
     ns7:endsAtDatetime "2015-06-10T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:license "http://creativecommons.org/publicdomain/zero/1.0/" ;
     rdfs:seeAlso <http://ceur-ws.org/Vol-1053/#event>,
         <http://ceur-ws.org/Vol-1266/#event> .
-
-<http://ceur-ws.org/Vol-1375/#metadataiincl.ibibliographicidataipublishediunder> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/metadataiincl.ibibliographicidataipublishediunder> ;
-    ns1:made <http://ceur-ws.org/Vol-1375/#paperX1> ;
-    ns1:name "metadata incl. bibliographic data published under" .
-
-<http://ceur-ws.org/Vol-1375/#MarkoiH%C3%B6lbl> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/MarkoiH%C3%B6lbl> ;
-    ns1:made <http://ceur-ws.org/Vol-1375/#paper10>,
-        <http://ceur-ws.org/Vol-1375/#paper9> ;
-    ns1:name "Marko Hölbl" .
-
-<http://ceur-ws.org/Vol-1375/#Milo%C5%A1iSavi%C4%87> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/Milo%C5%A1iSavi%C4%87> ;
-    ns1:made <http://ceur-ws.org/Vol-1375/#paper7>,
-        <http://ceur-ws.org/Vol-1375/#paper8> ;
-    ns1:name "Miloš Savić" .
-
-<http://ceur-ws.org/Vol-1375/#MirjanaiIvanovi%C4%87> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/MirjanaiIvanovi%C4%87> ;
-    ns1:made <http://ceur-ws.org/Vol-1375/#paper7>,
-        <http://ceur-ws.org/Vol-1375/#paper8> ;
-    ns1:name "Mirjana Ivanović" .
-
-<http://ceur-ws.org/Vol-1375/#2015-06-05%3AisubmittedibyiZoraniBudimac> a ns1:Person ;
-    ns2:affiliation "" ;
-    ns3:sameAs <http://ceur-ws.org/persons/2015-06-05%3AisubmittedibyiZoraniBudimac> ;
-    ns1:made <http://ceur-ws.org/Vol-1375/#paper7>,
-        <http://ceur-ws.org/Vol-1375/#paperX1> ;
-    ns1:name "2015-06-05: submitted by Zoran Budimac" .
-
-<http://ceur-ws.org/Vol-1375/#paper1> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1375/> ;
-    ns6:title "Compile-time Unit Testing" ;
-    ns4:endPage 7 ;
-    ns4:numPages 7 ;
-    ns4:startPage 1 ;
-    ns2:author <http://ceur-ws.org/Vol-1375/#%C3%81roniBar%C3%A1th>,
-        <http://ceur-ws.org/Vol-1375/#Zolt%C3%A1niPorkol%C3%A1b> .
-
-<http://ceur-ws.org/Vol-1375/#paper2> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1375/> ;
-    ns6:title "Small Scale Analysis of Source Code Quality with regard to Native Android Mobile Applications" ;
-    ns4:endPage 16 ;
-    ns4:numPages 8 ;
-    ns4:startPage 9 ;
-    ns2:author <http://ceur-ws.org/Vol-1375/#MartiniGjoshevski>,
-        <http://ceur-ws.org/Vol-1375/#TinaiSchweighofer> .
-
-<http://ceur-ws.org/Vol-1375/#paper8> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1375/> ;
-    ns6:title "Validation of Static Program Analysis Tools by Self-Application: A Case Study" ;
-    ns4:endPage 68 ;
-    ns4:numPages 8 ;
-    ns4:startPage 61 ;
-    ns2:author <http://ceur-ws.org/Vol-1375/#Milo%C5%A1iSavi%C4%87>,
-        <http://ceur-ws.org/Vol-1375/#MirjanaiIvanovi%C4%87> .
-
-<http://ceur-ws.org/Vol-1375/#paper9> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1375/> ;
-    ns6:title "Application Challenges of the I/W/SW-OT Paradigm" ;
-    ns4:endPage 74 ;
-    ns4:numPages 6 ;
-    ns4:startPage 69 ;
-    ns2:author <http://ceur-ws.org/Vol-1375/#MarkoiH%C3%B6lbl>,
-        <http://ceur-ws.org/Vol-1375/#MuhamediTurkanovi%C4%87> .
-
-<http://ceur-ws.org/Vol-1375/#paperX1> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1375/> ;
-    ns6:title "The whole proceedings can also be downloaded as a single file (" ;
-    ns2:author <http://ceur-ws.org/Vol-1375/#2015-06-05%3AisubmittedibyiZoraniBudimac>,
-        <http://ceur-ws.org/Vol-1375/#metadataiincl.ibibliographicidataipublishediunder> .
-
-<http://ceur-ws.org/Vol-1375/#paper3> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1375/> ;
-    ns6:title "Data Driven Ecosystem - Perspectives and Problems" ;
-    ns4:endPage 26 ;
-    ns4:numPages 10 ;
-    ns4:startPage 17 ;
-    ns2:author <http://ceur-ws.org/Vol-1375/#HannuiJaakkola>,
-        <http://ceur-ws.org/Vol-1375/#JaakiHenno>,
-        <http://ceur-ws.org/Vol-1375/#JariiSoini> .
-
-<http://ceur-ws.org/Vol-1375/#paper4> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1375/> ;
-    ns6:title "Scientific Software Testing: A Practical Example" ;
-    ns4:endPage 34 ;
-    ns4:numPages 8 ;
-    ns4:startPage 27 ;
-    ns2:author <http://ceur-ws.org/Vol-1375/#AnastasiMishev>,
-        <http://ceur-ws.org/Vol-1375/#BojanaiKoteska>,
-        <http://ceur-ws.org/Vol-1375/#LjupcoiPejov> .
-
-<http://ceur-ws.org/Vol-1375/#paper6> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1375/> ;
-    ns6:title "Benefits of Using Domain Model Code Generation Framework in Medical Information Systems" ;
-    ns4:endPage 52 ;
-    ns4:numPages 8 ;
-    ns4:startPage 45 ;
-    ns2:author <http://ceur-ws.org/Vol-1375/#DraganiJankovic>,
-        <http://ceur-ws.org/Vol-1375/#IvaniPetkovic>,
-        <http://ceur-ws.org/Vol-1375/#PetariRajkovic> .
-
-<http://ceur-ws.org/Vol-1375/#paper10> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1375/> ;
-    ns6:title "Influence of Cultural Issues on Data Quality Dimensions" ;
-    ns4:endPage 80 ;
-    ns4:numPages 6 ;
-    ns4:startPage 75 ;
-    ns2:author <http://ceur-ws.org/Vol-1375/#LiliiNemeciZlatolas>,
-        <http://ceur-ws.org/Vol-1375/#MarjaniDruzovec>,
-        <http://ceur-ws.org/Vol-1375/#MarkoiH%C3%B6lbl>,
-        <http://ceur-ws.org/Vol-1375/#TatjanaiWelzer> .
-
-<http://ceur-ws.org/Vol-1375/#paper5> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1375/> ;
-    ns6:title "Rotation Forest in Software Defect Prediction" ;
-    ns4:endPage 43 ;
-    ns4:numPages 9 ;
-    ns4:startPage 35 ;
-    ns2:author <http://ceur-ws.org/Vol-1375/#BojanaiDalbeloiBa%C5%A1i%C4%87>,
-        <http://ceur-ws.org/Vol-1375/#GoraniMau%C5%A1a>,
-        <http://ceur-ws.org/Vol-1375/#NikolaiBogunovi%C4%87>,
-        <http://ceur-ws.org/Vol-1375/#TihanaiGalinaciGrbac> .
-
-<http://ceur-ws.org/Vol-1375/#paper7> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1375/> ;
-    ns6:title "Towards the Formalization of Software Measurement by Involving Network Theory" ;
-    ns4:endPage 59 ;
-    ns4:numPages 7 ;
-    ns4:startPage 53 ;
-    ns2:author <http://ceur-ws.org/Vol-1375/#2015-06-05%3AisubmittedibyiZoraniBudimac>,
-        <http://ceur-ws.org/Vol-1375/#GordanaiRaki%C4%87>,
-        <http://ceur-ws.org/Vol-1375/#Milo%C5%A1iSavi%C4%87>,
-        <http://ceur-ws.org/Vol-1375/#MirjanaiIvanovi%C4%87> .
-
-<http://ceur-ws.org/Vol-1375/> a ns5:Proceedings ;
-    ns5:hasPart <http://ceur-ws.org/Vol-1375/#paper1>,
-        <http://ceur-ws.org/Vol-1375/#paper10>,
-        <http://ceur-ws.org/Vol-1375/#paper2>,
-        <http://ceur-ws.org/Vol-1375/#paper3>,
-        <http://ceur-ws.org/Vol-1375/#paper4>,
-        <http://ceur-ws.org/Vol-1375/#paper5>,
-        <http://ceur-ws.org/Vol-1375/#paper6>,
-        <http://ceur-ws.org/Vol-1375/#paper7>,
-        <http://ceur-ws.org/Vol-1375/#paper8>,
-        <http://ceur-ws.org/Vol-1375/#paper9>,
-        <http://ceur-ws.org/Vol-1375/#paperX1> ;
-    ns8:issued "2015-06-06T00:00:00+00:00"^^xsd:dateTime ;
-    ns4:presentedAt <http://ceur-ws.org/Vol-1375/#event> ;
-    ns2:editor <http://ceur-ws.org/Vol-1375/#2015-06-05%3AisubmittedibyiZoraniBudimac>,
-        <http://ceur-ws.org/Vol-1375/#MarjaniHeri%C4%8Dko> .
 

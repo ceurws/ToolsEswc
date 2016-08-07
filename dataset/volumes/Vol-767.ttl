@@ -1,231 +1,35 @@
 @prefix ns1: <http://xmlns.com/foaf/0.1/> .
-@prefix ns2: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns3: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns4: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns2: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns3: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns4: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix ns5: <http://purl.org/ontology/bibo/#> .
-@prefix ns6: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns7: <http://www.w3.org/2002/07/owl#> .
-@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns6: <http://www.w3.org/2002/07/owl#> .
+@prefix ns7: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns8: <http://purl.org/dc/elements/1.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-767/#ArndiPoetzsch-Heffter> a ns1:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/ArndiPoetzsch-Heffter> ;
-    ns1:made <http://ceur-ws.org/Vol-767/#paper-05> ;
-    ns1:name "Arnd Poetzsch-Heffter" .
-
-<http://ceur-ws.org/Vol-767/#CarstiTankink> a ns1:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/CarstiTankink> ;
-    ns1:made <http://ceur-ws.org/Vol-767/#paper-08> ;
-    ns1:name "Carst Tankink" .
+<http://ceur-ws.org/Vol-767/> a ns3:Proceedings ;
+    ns4:issued "2011-08-24T00:00:00+00:00"^^xsd:dateTime ;
+    ns5:presentedAt <http://ceur-ws.org/Vol-767/#event> ;
+    ns7:editor <http://ceur-ws.org/Vol-767/#ChristophiLange>,
+        <http://ceur-ws.org/Vol-767/#JosefiUrban> .
 
 <http://ceur-ws.org/Vol-767/#ChristophiLange> a ns1:Person ;
-    ns5:place <http://dbpedia.org/resource/Germany> ;
-    ns4:affiliation "Jacobs University Bremen" ;
-    ns7:sameAs <http://ceur-ws.org/persons/ChristophiLange> ;
+    ns6:sameAs <http://ceur-ws.org/persons/ChristophiLange> ;
     ns1:name "Christoph Lange" .
 
-<http://ceur-ws.org/Vol-767/#HirakuiKuroda> a ns1:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/HirakuiKuroda> ;
-    ns1:made <http://ceur-ws.org/Vol-767/#paper-06> ;
-    ns1:name "Hiraku Kuroda" .
-
-<http://ceur-ws.org/Vol-767/#JamesiMcKinna> a ns1:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/JamesiMcKinna> ;
-    ns1:made <http://ceur-ws.org/Vol-767/#paper-08> ;
-    ns1:name "James McKinna" .
-
-<http://ceur-ws.org/Vol-767/#Jean-MarieiGaillourdet> a ns1:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/Jean-MarieiGaillourdet> ;
-    ns1:made <http://ceur-ws.org/Vol-767/#paper-05> ;
-    ns1:name "Jean-Marie Gaillourdet" .
-
-<http://ceur-ws.org/Vol-767/#JesseiAlama> a ns1:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/JesseiAlama> ;
-    ns1:made <http://ceur-ws.org/Vol-767/#paper-02> ;
-    ns1:name "Jesse Alama" .
-
-<http://ceur-ws.org/Vol-767/#JosephiCorneli> a ns1:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/JosephiCorneli> ;
-    ns1:made <http://ceur-ws.org/Vol-767/#paper-03> ;
-    ns1:name "Joseph Corneli" .
-
-<http://ceur-ws.org/Vol-767/#KarsteniSchmidt> a ns1:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/KarsteniSchmidt> ;
-    ns1:made <http://ceur-ws.org/Vol-767/#paper-05> ;
-    ns1:name "Karsten Schmidt" .
-
-<http://ceur-ws.org/Vol-767/#LeeiWorden> a ns1:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/LeeiWorden> ;
-    ns1:made <http://ceur-ws.org/Vol-767/#paper-11> ;
-    ns1:name "Lee Worden" .
-
-<http://ceur-ws.org/Vol-767/#MartiniMemmel> a ns1:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/MartiniMemmel> ;
-    ns1:made <http://ceur-ws.org/Vol-767/#paper-05> ;
-    ns1:name "Martin Memmel" .
-
-<http://ceur-ws.org/Vol-767/#MattiWestwood> a ns1:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/MattiWestwood> ;
-    ns1:made <http://ceur-ws.org/Vol-767/#paper-10> ;
-    ns1:name "Matt Westwood" .
-
-<http://ceur-ws.org/Vol-767/#MichaeliDoob> a ns1:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/MichaeliDoob> ;
-    ns1:made <http://ceur-ws.org/Vol-767/#paper-04> ;
-    ns1:name "Michael Doob" .
-
-<http://ceur-ws.org/Vol-767/#NeiliJ.iA.iSloane> a ns1:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/NeiliJ.iA.iSloane> ;
-    ns1:made <http://ceur-ws.org/Vol-767/#paper-01> ;
-    ns1:name "Neil J. A. Sloane" .
-
-<http://ceur-ws.org/Vol-767/#SebastianiReichelt> a ns1:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/SebastianiReichelt> ;
-    ns1:made <http://ceur-ws.org/Vol-767/#paper-07> ;
-    ns1:name "Sebastian Reichelt" .
-
-<http://ceur-ws.org/Vol-767/#StefaniDe%C3%9Floch> a ns1:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/StefaniDe%C3%9Floch> ;
-    ns1:made <http://ceur-ws.org/Vol-767/#paper-05> ;
-    ns1:name "Stefan Deßloch" .
-
-<http://ceur-ws.org/Vol-767/#TakaoiNamiki> a ns1:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/TakaoiNamiki> ;
-    ns1:made <http://ceur-ws.org/Vol-767/#paper-06> ;
-    ns1:name "Takao Namiki" .
-
-<http://ceur-ws.org/Vol-767/#ThomasiGrundmann> a ns1:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/ThomasiGrundmann> ;
-    ns1:made <http://ceur-ws.org/Vol-767/#paper-05> ;
-    ns1:name "Thomas Grundmann" .
-
-<http://ceur-ws.org/Vol-767/#event> a ns2:WorkshopEvent ;
-    ns2:hasLocation <http://dbpedia.org/resource/Netherlands> ;
-    ns2:hasPart <http://ceur-ws.org/Vol-767/#part-MathWikis> ;
-    ns2:isSubEventOf <http://ceur-ws.org/Vol-767/#conf> ;
-    ns6:beginsAtDatetime "2011-08-27T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:endsAtDatetime "2011-08-27T00:00:00+00:00"^^xsd:dateTime ;
-    ns3:license <http://choosealicense.com/licenses/no-license/> .
-
 <http://ceur-ws.org/Vol-767/#JosefiUrban> a ns1:Person ;
-    ns5:place <http://dbpedia.org/resource/Netherlands> ;
-    ns4:affiliation "Radboud Universiteit, Nijmegen" ;
-    ns7:sameAs <http://ceur-ws.org/persons/JosefiUrban> ;
-    ns1:made <http://ceur-ws.org/Vol-767/#paper-09> ;
+    ns6:sameAs <http://ceur-ws.org/persons/JosefiUrban> ;
     ns1:name "Josef Urban" .
 
-<http://ceur-ws.org/Vol-767/#paper-01> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-767/> ;
-    ns3:title "The On-Line Encyclopedia of Integer Sequences: From Punched Cards to Wiki in 46 Years" ;
-    ns5:endPage 1 ;
-    ns5:numPages 1 ;
-    ns5:startPage 1 ;
-    ns4:author <http://ceur-ws.org/Vol-767/#NeiliJ.iA.iSloane> .
-
-<http://ceur-ws.org/Vol-767/#paper-02> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-767/> ;
-    ns3:title "Metadata for a wiki of formalized mathematics" ;
-    ns5:endPage 5 ;
-    ns5:numPages 4 ;
-    ns5:startPage 2 ;
-    ns4:author <http://ceur-ws.org/Vol-767/#JesseiAlama> .
-
-<http://ceur-ws.org/Vol-767/#paper-03> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-767/> ;
-    ns3:title "The PlanetMath Encyclopedia" ;
-    ns5:endPage 12 ;
-    ns5:numPages 7 ;
-    ns5:startPage 6 ;
-    ns4:author <http://ceur-ws.org/Vol-767/#JosephiCorneli> .
-
-<http://ceur-ws.org/Vol-767/#paper-04> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-767/> ;
-    ns3:title "A Linear Algebra Wiki" ;
-    ns5:endPage 18 ;
-    ns5:numPages 6 ;
-    ns5:startPage 13 ;
-    ns4:author <http://ceur-ws.org/Vol-767/#MichaeliDoob> .
-
-<http://ceur-ws.org/Vol-767/#paper-07> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-767/> ;
-    ns3:title "Ideas for a MathWiki Editor" ;
-    ns5:endPage 44 ;
-    ns5:numPages 7 ;
-    ns5:startPage 38 ;
-    ns4:author <http://ceur-ws.org/Vol-767/#SebastianiReichelt> .
-
-<http://ceur-ws.org/Vol-767/#paper-09> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-767/> ;
-    ns3:title "Content-based encoding of mathematical and code libraries" ;
-    ns5:endPage 53 ;
-    ns5:numPages 5 ;
-    ns5:startPage 49 ;
-    ns4:author <http://ceur-ws.org/Vol-767/#JosefiUrban> .
-
-<http://ceur-ws.org/Vol-767/#paper-10> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-767/> ;
-    ns3:title "ProofWiki" ;
-    ns5:endPage 62 ;
-    ns5:numPages 9 ;
-    ns5:startPage 54 ;
-    ns4:author <http://ceur-ws.org/Vol-767/#MattiWestwood> .
-
-<http://ceur-ws.org/Vol-767/#paper-11> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-767/> ;
-    ns3:title "WorkingWiki: a MediaWiki-based platform for collaborative research" ;
-    ns5:endPage 73 ;
-    ns5:numPages 11 ;
-    ns5:startPage 63 ;
-    ns4:author <http://ceur-ws.org/Vol-767/#LeeiWorden> .
-
-<http://ceur-ws.org/Vol-767/#paper-06> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-767/> ;
-    ns3:title "Wiki Authoring and Semantics of Mathematical Document Structure" ;
-    ns5:endPage 37 ;
-    ns5:numPages 10 ;
-    ns5:startPage 28 ;
-    ns4:author <http://ceur-ws.org/Vol-767/#HirakuiKuroda>,
-        <http://ceur-ws.org/Vol-767/#TakaoiNamiki> .
-
-<http://ceur-ws.org/Vol-767/#paper-08> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-767/> ;
-    ns3:title "Dynamic Proof Pages" ;
-    ns5:endPage 48 ;
-    ns5:numPages 4 ;
-    ns5:startPage 45 ;
-    ns4:author <http://ceur-ws.org/Vol-767/#CarstiTankink>,
-        <http://ceur-ws.org/Vol-767/#JamesiMcKinna> .
-
-<http://ceur-ws.org/Vol-767/#paper-05> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-767/> ;
-    ns3:title "The Web of Mathematical Models: A Schema-based, Wiki-like, Interactive Platform" ;
-    ns5:endPage 27 ;
-    ns5:numPages 9 ;
-    ns5:startPage 19 ;
-    ns4:author <http://ceur-ws.org/Vol-767/#ArndiPoetzsch-Heffter>,
-        <http://ceur-ws.org/Vol-767/#Jean-MarieiGaillourdet>,
-        <http://ceur-ws.org/Vol-767/#KarsteniSchmidt>,
-        <http://ceur-ws.org/Vol-767/#MartiniMemmel>,
-        <http://ceur-ws.org/Vol-767/#StefaniDe%C3%9Floch>,
-        <http://ceur-ws.org/Vol-767/#ThomasiGrundmann> .
-
-<http://ceur-ws.org/Vol-767/> a ns2:Proceedings ;
-    ns2:hasPart <http://ceur-ws.org/Vol-767/#paper-01>,
-        <http://ceur-ws.org/Vol-767/#paper-02>,
-        <http://ceur-ws.org/Vol-767/#paper-03>,
-        <http://ceur-ws.org/Vol-767/#paper-04>,
-        <http://ceur-ws.org/Vol-767/#paper-05>,
-        <http://ceur-ws.org/Vol-767/#paper-06>,
-        <http://ceur-ws.org/Vol-767/#paper-07>,
-        <http://ceur-ws.org/Vol-767/#paper-08>,
-        <http://ceur-ws.org/Vol-767/#paper-09>,
-        <http://ceur-ws.org/Vol-767/#paper-10>,
-        <http://ceur-ws.org/Vol-767/#paper-11> ;
-    ns8:issued "2011-08-24T00:00:00+00:00"^^xsd:dateTime ;
-    ns5:presentedAt <http://ceur-ws.org/Vol-767/#event> ;
-    ns4:editor <http://ceur-ws.org/Vol-767/#ChristophiLange>,
-        <http://ceur-ws.org/Vol-767/#JosefiUrban> .
+<http://ceur-ws.org/Vol-767/#event> a ns3:WorkshopEvent ;
+    ns3:hasLocation <http://dbpedia.org/resource/Netherlands> ;
+    ns3:hasPart <http://ceur-ws.org/Vol-767/#part-CEUR-WS> ;
+    ns3:isSubEventOf <http://ceur-ws.org/Vol-767/#conf> ;
+    ns2:beginsAtDatetime "2011-08-27T00:00:00+00:00"^^xsd:dateTime ;
+    ns2:endsAtDatetime "2011-08-27T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:license "http://choosealicense.com/licenses/no-license/" .
 

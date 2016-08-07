@@ -1,45 +1,49 @@
-@prefix ns1: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns2: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns3: <http://xmlns.com/foaf/0.1/> .
+@prefix ns1: <http://www.w3.org/2002/07/owl#> .
+@prefix ns2: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns3: <http://swrc.ontoware.org/ontology/#> .
 @prefix ns4: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns5: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns6: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns7: <http://www.w3.org/2002/07/owl#> .
-@prefix ns8: <http://purl.org/ontology/bibo/#> .
+@prefix ns5: <http://xmlns.com/foaf/0.1/> .
+@prefix ns6: <http://purl.org/dc/elements/1.1/> .
+@prefix ns7: <http://purl.org/ontology/bibo/#> .
+@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-84/> a ns1:Proceedings ;
-    ns2:issued "2003-10-16T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:presentedAt <http://ceur-ws.org/Vol-84/#event> ;
-    ns5:editor <http://ceur-ws.org/Vol-84/#Jos%C3%A9iJavieriDolado>,
+<http://ceur-ws.org/Vol-84/> a ns2:Proceedings ;
+    ns8:issued "2003-10-16T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:presentedAt <http://ceur-ws.org/Vol-84/#event> ;
+    ns3:editor <http://ceur-ws.org/Vol-84/#Jos%C3%A9iJavieriDolado>,
         <http://ceur-ws.org/Vol-84/#JuaniJ.iCuadrado>,
         <http://ceur-ws.org/Vol-84/#MarioiPiattini>,
         <http://ceur-ws.org/Vol-84/#MigueliToro> .
 
-<http://ceur-ws.org/Vol-84/#Jos%C3%A9iJavieriDolado> a ns3:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/Jos%C3%A9iJavieriDolado> ;
-    ns3:name "José Javier Dolado" .
+<http://ceur-ws.org/Vol-84/#Jos%C3%A9iJavieriDolado> a ns5:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/Jos%C3%A9iJavieriDolado> ;
+    ns5:name "José Javier Dolado" .
 
-<http://ceur-ws.org/Vol-84/#JuaniJ.iCuadrado> a ns3:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/JuaniJ.iCuadrado> ;
-    ns3:name "Juan J. Cuadrado" .
+<http://ceur-ws.org/Vol-84/#JuaniJ.iCuadrado> a ns5:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/JuaniJ.iCuadrado> ;
+    ns5:name "Juan J. Cuadrado" .
 
-<http://ceur-ws.org/Vol-84/#MarioiPiattini> a ns3:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/MarioiPiattini> ;
-    ns3:name "Mario Piattini" .
+<http://ceur-ws.org/Vol-84/#MarioiPiattini> a ns5:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/MarioiPiattini> ;
+    ns5:name "Mario Piattini" .
 
-<http://ceur-ws.org/Vol-84/#MigueliToro> a ns3:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/MigueliToro> ;
-    ns3:name "Miguel Toro" .
+<http://ceur-ws.org/Vol-84/#MigueliToro> a ns5:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/MigueliToro> ;
+    ns5:name "Miguel Toro" .
 
-<http://ceur-ws.org/Vol-84/#event> a ns1:WorkshopEvent ;
-    ns1:hasLocation <http://dbpedia.org/resource/Spain> ;
-    ns1:hasPart <http://ceur-ws.org/Vol-84/#part-ADIS> ;
-    ns1:isSubEventOf <http://ceur-ws.org/Vol-84/#conf> ;
-    ns4:beginsAtDatetime "2001-11-20T00:00:00+00:00"^^xsd:dateTime ;
-    ns4:endsAtDatetime "2001-11-20T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:license <http://choosealicense.com/licenses/no-license/> .
+<http://ceur-ws.org/Vol-84/#event> a ns2:WorkshopEvent ;
+    ns2:hasLocation <http://dbpedia.org/resource/Spain> ;
+    ns2:hasPart <http://ceur-ws.org/Vol-84/#part-ADIS>,
+        <http://ceur-ws.org/Vol-84/#part-CICYT>,
+        <http://ceur-ws.org/Vol-84/#part-II>,
+        <http://ceur-ws.org/Vol-84/#part-ISBN>,
+        <http://ceur-ws.org/Vol-84/#part-TIC> ;
+    ns2:isSubEventOf <http://ceur-ws.org/Vol-84/#conf> ;
+    ns4:beginsAtDatetime "2003-10-16T00:00:00+00:00"^^xsd:dateTime ;
+    ns4:endsAtDatetime "2003-10-16T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:license "http://choosealicense.com/licenses/no-license/" .
 

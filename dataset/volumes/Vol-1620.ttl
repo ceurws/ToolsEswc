@@ -1,0 +1,60 @@
+@prefix ns1: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns2: <http://www.w3.org/2002/07/owl#> .
+@prefix ns3: <http://xmlns.com/foaf/0.1/> .
+@prefix ns4: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns5: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns6: <http://purl.org/dc/elements/1.1/> .
+@prefix ns7: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns8: <http://purl.org/ontology/bibo/#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://ceur-ws.org/Vol-1620/> a ns7:Proceedings ;
+    ns1:issued "2016-07-05T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:presentedAt <http://ceur-ws.org/Vol-1620/#event> ;
+    ns5:editor <http://ceur-ws.org/Vol-1620/#AdrianiGiurca>,
+        <http://ceur-ws.org/Vol-1620/#KiaiTeymourian>,
+        <http://ceur-ws.org/Vol-1620/#MarkiProctor>,
+        <http://ceur-ws.org/Vol-1620/#RolfiGr%C3%BCtter>,
+        <http://ceur-ws.org/Vol-1620/#TaraiAthan>,
+        <http://ceur-ws.org/Vol-1620/#WilliamiVaniWoensel> .
+
+<http://ceur-ws.org/Vol-1620/#AdrianiGiurca> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/AdrianiGiurca> ;
+    ns3:name "Adrian Giurca" .
+
+<http://ceur-ws.org/Vol-1620/#KiaiTeymourian> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/KiaiTeymourian> ;
+    ns3:name "Kia Teymourian" .
+
+<http://ceur-ws.org/Vol-1620/#MarkiProctor> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/MarkiProctor> ;
+    ns3:name "Mark Proctor" .
+
+<http://ceur-ws.org/Vol-1620/#RolfiGr%C3%BCtter> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/RolfiGr%C3%BCtter> ;
+    ns3:name "Rolf Grütter" .
+
+<http://ceur-ws.org/Vol-1620/#TaraiAthan> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/TaraiAthan> ;
+    ns3:name "Tara Athan" .
+
+<http://ceur-ws.org/Vol-1620/#WilliamiVaniWoensel> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/WilliamiVaniWoensel> ;
+    ns3:name "William Van Woensel" .
+
+<http://ceur-ws.org/Vol-1620/#event> a ns7:WorkshopEvent ;
+    ns7:hasLocation <http://dbpedia.org/resource/United_States> ;
+    ns7:hasPart <http://ceur-ws.org/Vol-1620/#part-RuleML> ;
+    ns7:isSubEventOf <http://ceur-ws.org/Vol-1620/#conf> ;
+    ns4:beginsAtDatetime "2016-07-06T00:00:00+00:00"^^xsd:dateTime ;
+    ns4:endsAtDatetime "2016-07-09T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:license "http://creativecommons.org/publicdomain/zero/1.0/" ;
+    rdfs:seeAlso <http://ceur-ws.org/Vol-1004/#event>,
+        <http://ceur-ws.org/Vol-1211/#event>,
+        <http://ceur-ws.org/Vol-1417/#event>,
+        <http://ceur-ws.org/Vol-799/#event>,
+        <http://ceur-ws.org/Vol-874/#event> .
+

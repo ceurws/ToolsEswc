@@ -4,8 +4,9 @@
 @prefix ns4: <http://data.semanticweb.org/ns/swc/ontology/#> .
 @prefix ns5: <http://purl.org/dc/elements/1.1/#> .
 @prefix ns6: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns8: <http://purl.org/ontology/bibo/#> .
+@prefix ns7: <http://purl.org/dc/elements/1.1/> .
+@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns9: <http://purl.org/ontology/bibo/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -78,22 +79,22 @@
 
 <http://ceur-ws.org/Vol-282/#event> a ns4:WorkshopEvent ;
     ns4:hasLocation <http://dbpedia.org/resource/Germany> ;
-    ns4:hasPart <http://ceur-ws.org/Vol-282/#part-KESE> ;
+    ns4:hasPart <http://ceur-ws.org/Vol-282/#part-CEUR-WS> ;
     ns4:isSubEventOf <http://ceur-ws.org/Vol-282/#conf> ;
-    ns6:beginsAtDatetime "2007-09-10T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:endsAtDatetime "2007-09-10T00:00:00+00:00"^^xsd:dateTime ;
-    ns5:license <http://choosealicense.com/licenses/no-license/> .
+    ns6:beginsAtDatetime "2007-10-01T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:endsAtDatetime "2007-10-01T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:license "http://choosealicense.com/licenses/no-license/" .
 
 <http://ceur-ws.org/Vol-282/#02-AtzmuellerM-KESE-Paper-CRC> a ns4:Paper ;
     ns4:partOf <http://ceur-ws.org/Vol-282/> ;
     ns5:title "Experience Management with Task-Configurations and Task-Patterns for Descriptive Data Mining" ;
     ns2:author <http://ceur-ws.org/Vol-282/#MartiniAtzmueller> .
 
-<http://ceur-ws.org/Vol-282/#and> a ns3:Person ;
+<http://ceur-ws.org/Vol-282/#AlexandreiHanft> a ns3:Person ;
     ns2:affiliation "" ;
-    ns1:sameAs <http://ceur-ws.org/persons/and> ;
+    ns1:sameAs <http://ceur-ws.org/persons/AlexandreiHanft> ;
     ns3:made <http://ceur-ws.org/Vol-282/#01-CoMES_AlthoffEtAl_CRC> ;
-    ns3:name "and" .
+    ns3:name "Alexandre Hanft" .
 
 <http://ceur-ws.org/Vol-282/#03-furbach_obermaier_edit> a ns4:Paper ;
     ns4:partOf <http://ceur-ws.org/Vol-282/> ;
@@ -140,22 +141,22 @@
         <http://ceur-ws.org/Vol-282/#04-GJN-KESE2007-KE_UML_edit>,
         <http://ceur-ws.org/Vol-282/#05-GJN-KESE2007-ExeDes_edit>,
         <http://ceur-ws.org/Vol-282/#06-GJN-KESE2007-GREP_edit> ;
-    ns7:issued "2007-10-01T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:presentedAt <http://ceur-ws.org/Vol-282/#event> ;
-    ns2:editor <http://ceur-ws.org/Vol-282/#DietmariSeipel>,
-        <http://ceur-ws.org/Vol-282/#JoachimiBaumeister>,
-        <http://ceur-ws.org/Vol-282/#and> .
+    ns8:issued "2007-10-01T00:00:00+00:00"^^xsd:dateTime ;
+    ns9:presentedAt <http://ceur-ws.org/Vol-282/#event> ;
+    ns2:editor <http://ceur-ws.org/Vol-282/#AlexandreiHanft>,
+        <http://ceur-ws.org/Vol-282/#DietmariSeipel>,
+        <http://ceur-ws.org/Vol-282/#JoachimiBaumeister> .
 
 <http://ceur-ws.org/Vol-282/#01-CoMES_AlthoffEtAl_CRC> a ns4:Paper ;
     ns4:partOf <http://ceur-ws.org/Vol-282/> ;
     ns5:title "Collaborative Multi-Expert-Systems - Realizing Knowledge-Lines with Case Factories and Distributed Learning Systems" ;
-    ns2:author <http://ceur-ws.org/Vol-282/#Jan-OliveriDeutsch>,
+    ns2:author <http://ceur-ws.org/Vol-282/#AlexandreiHanft>,
+        <http://ceur-ws.org/Vol-282/#Jan-OliveriDeutsch>,
         <http://ceur-ws.org/Vol-282/#JensiM%C3%A4nz>,
         <http://ceur-ws.org/Vol-282/#KerstiniBach>,
         <http://ceur-ws.org/Vol-282/#Klaus-DieteriAlthoff>,
         <http://ceur-ws.org/Vol-282/#MartiniSchaafi%26iKarl-HeinziWeis>,
         <http://ceur-ws.org/Vol-282/#MeikeiReichle>,
         <http://ceur-ws.org/Vol-282/#R%C3%A9gisiNewo>,
-        <http://ceur-ws.org/Vol-282/#ThomasiM%C3%BCller>,
-        <http://ceur-ws.org/Vol-282/#and> .
+        <http://ceur-ws.org/Vol-282/#ThomasiM%C3%BCller> .
 

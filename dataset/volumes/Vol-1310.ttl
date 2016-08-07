@@ -1,233 +1,50 @@
 @prefix ns1: <http://xmlns.com/foaf/0.1/> .
-@prefix ns2: <http://purl.org/ontology/bibo/#> .
+@prefix ns2: <http://data.semanticweb.org/ns/swc/ontology/#> .
 @prefix ns3: <http://www.w3.org/2002/07/owl#> .
-@prefix ns4: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns5: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns6: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns4: <http://purl.org/dc/elements/1.1/> .
+@prefix ns5: <http://purl.org/ontology/bibo/#> .
+@prefix ns6: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns7: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1310/#AlexandruiIonutiDospinescu> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/AlexandruiIonutiDospinescu> ;
-    ns1:made <http://ceur-ws.org/Vol-1310/#paper5> ;
-    ns1:name "Alexandru Ionut Dospinescu" .
+<http://ceur-ws.org/Vol-1310/> a ns2:Proceedings ;
+    ns8:issued "2014-12-19T00:00:00+00:00"^^xsd:dateTime ;
+    ns5:presentedAt <http://ceur-ws.org/Vol-1310/#event> ;
+    ns7:editor <http://ceur-ws.org/Vol-1310/#BogdaniCautis>,
+        <http://ceur-ws.org/Vol-1310/#NgociThanhiNguyen>,
+        <http://ceur-ws.org/Vol-1310/#OmariBoucelma>,
+        <http://ceur-ws.org/Vol-1310/#PauloiRupinoidaiCunha>,
+        <http://ceur-ws.org/Vol-1310/#YannisiVelegrakis> .
 
-<http://ceur-ws.org/Vol-1310/#AnaiMe%C5%A1trovi%C4%87> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/AnaiMe%C5%A1trovi%C4%87> ;
-    ns1:made <http://ceur-ws.org/Vol-1310/#paper1> ;
-    ns1:name "Ana Meštrović" .
-
-<http://ceur-ws.org/Vol-1310/#BrunoiFi%C3%A8s> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/BrunoiFi%C3%A8s> ;
-    ns1:made <http://ceur-ws.org/Vol-1310/#paper2> ;
-    ns1:name "Bruno Fiès" .
-
-<http://ceur-ws.org/Vol-1310/#CatarinaiFerreiraidaiSilva> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/CatarinaiFerreiraidaiSilva> ;
-    ns1:made <http://ceur-ws.org/Vol-1310/#paper2> ;
-    ns1:name "Catarina Ferreira da Silva" .
-
-<http://ceur-ws.org/Vol-1310/#CheikhiKacfahiEmani> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/CheikhiKacfahiEmani> ;
-    ns1:made <http://ceur-ws.org/Vol-1310/#paper2> ;
-    ns1:name "Cheikh Kacfah Emani" .
-
-<http://ceur-ws.org/Vol-1310/#DavideiFerrari> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/DavideiFerrari> ;
-    ns1:made <http://ceur-ws.org/Vol-1310/#paper3> ;
-    ns1:name "Davide Ferrari" .
-
-<http://ceur-ws.org/Vol-1310/#DjoerdiHiemstra> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/DjoerdiHiemstra> ;
-    ns1:made <http://ceur-ws.org/Vol-1310/#paper4> ;
-    ns1:name "Djoerd Hiemstra" .
-
-<http://ceur-ws.org/Vol-1310/#FloriniPop> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/FloriniPop> ;
-    ns1:made <http://ceur-ws.org/Vol-1310/#paper5> ;
-    ns1:name "Florin Pop" .
-
-<http://ceur-ws.org/Vol-1310/#Fran%C3%A7oisiGoasdou%C3%A9> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/Fran%C3%A7oisiGoasdou%C3%A9> ;
-    ns1:made <http://ceur-ws.org/Vol-1310/#paper6> ;
-    ns1:name "François Goasdoué" .
-
-<http://ceur-ws.org/Vol-1310/#FrancescoiGuerra> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/FrancescoiGuerra> ;
-    ns1:made <http://ceur-ws.org/Vol-1310/#paper3> ;
-    ns1:name "Francesco Guerra" .
-
-<http://ceur-ws.org/Vol-1310/#GiovanniiSimonini> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/GiovanniiSimonini> ;
-    ns1:made <http://ceur-ws.org/Vol-1310/#paper3> ;
-    ns1:name "Giovanni Simonini" .
-
-<http://ceur-ws.org/Vol-1310/#IoanaiManolescu> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/IoanaiManolescu> ;
-    ns1:made <http://ceur-ws.org/Vol-1310/#paper6> ;
-    ns1:name "Ioana Manolescu" .
-
-<http://ceur-ws.org/Vol-1310/#MauriceivaniKeulen> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/MauriceivaniKeulen> ;
-    ns1:made <http://ceur-ws.org/Vol-1310/#paper4> ;
-    ns1:name "Maurice van Keulen" .
-
-<http://ceur-ws.org/Vol-1310/#MohamamdrezaiKhelghati> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/MohamamdrezaiKhelghati> ;
-    ns1:made <http://ceur-ws.org/Vol-1310/#paper4> ;
-    ns1:name "Mohamamdreza Khelghati" .
-
-<http://ceur-ws.org/Vol-1310/#ParisaiGhodous> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/ParisaiGhodous> ;
-    ns1:made <http://ceur-ws.org/Vol-1310/#paper2> ;
-    ns1:name "Parisa Ghodous" .
-
-<http://ceur-ws.org/Vol-1310/#Rapha%C3%ABliBonaque> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/Rapha%C3%ABliBonaque> ;
-    ns1:made <http://ceur-ws.org/Vol-1310/#paper6> ;
-    ns1:name "Raphaël Bonaque" .
-
-<http://ceur-ws.org/Vol-1310/#SandaiMartin%C4%8Di%C4%87%E2%80%93Ip%C5%A1i%C4%87> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/SandaiMartin%C4%8Di%C4%87%E2%80%93Ip%C5%A1i%C4%87> ;
-    ns1:made <http://ceur-ws.org/Vol-1310/#paper1> ;
-    ns1:name "Sanda Martinčić–Ipšić" .
-
-<http://ceur-ws.org/Vol-1310/#SlobodaniBeliga> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/SlobodaniBeliga> ;
-    ns1:made <http://ceur-ws.org/Vol-1310/#paper1> ;
-    ns1:name "Slobodan Beliga" .
-
-<http://ceur-ws.org/Vol-1310/#SoniaiBergamaschi> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/SoniaiBergamaschi> ;
-    ns1:made <http://ceur-ws.org/Vol-1310/#paper3> ;
-    ns1:name "Sonia Bergamaschi" .
-
-<http://ceur-ws.org/Vol-1310/#ValentiniCristea> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/ValentiniCristea> ;
-    ns1:made <http://ceur-ws.org/Vol-1310/#paper5> ;
-    ns1:name "Valentin Cristea" .
-
-<http://ceur-ws.org/Vol-1310/#event> a ns6:WorkshopEvent ;
-    ns6:hasLocation <http://dbpedia.org/resource/Italy> ;
-    ns6:hasPart <http://ceur-ws.org/Vol-1310/#part-SDSW> ;
-    ns6:isSubEventOf <http://ceur-ws.org/Vol-1310/#conf> ;
-    ns8:beginsAtDatetime "2014-10-19T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:endsAtDatetime "2014-10-19T00:00:00+00:00"^^xsd:dateTime .
+<http://ceur-ws.org/Vol-1310/#BogdaniCautis> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/BogdaniCautis> ;
+    ns1:name "Bogdan Cautis" .
 
 <http://ceur-ws.org/Vol-1310/#NgociThanhiNguyen> a ns1:Person ;
-    ns5:affiliation "" ;
     ns3:sameAs <http://ceur-ws.org/persons/NgociThanhiNguyen> ;
-    ns1:made <http://ceur-ws.org/Vol-1310/#avenues> ;
     ns1:name "Ngoc Thanh Nguyen" .
 
 <http://ceur-ws.org/Vol-1310/#OmariBoucelma> a ns1:Person ;
-    ns5:affiliation "" ;
     ns3:sameAs <http://ceur-ws.org/persons/OmariBoucelma> ;
-    ns1:made <http://ceur-ws.org/Vol-1310/#avenues> ;
     ns1:name "Omar Boucelma" .
 
 <http://ceur-ws.org/Vol-1310/#PauloiRupinoidaiCunha> a ns1:Person ;
-    ns5:affiliation "" ;
     ns3:sameAs <http://ceur-ws.org/persons/PauloiRupinoidaiCunha> ;
-    ns1:made <http://ceur-ws.org/Vol-1310/#avenues> ;
     ns1:name "Paulo Rupino da Cunha" .
 
 <http://ceur-ws.org/Vol-1310/#YannisiVelegrakis> a ns1:Person ;
-    ns5:affiliation "" ;
     ns3:sameAs <http://ceur-ws.org/persons/YannisiVelegrakis> ;
-    ns1:made <http://ceur-ws.org/Vol-1310/#avenues> ;
     ns1:name "Yannis Velegrakis" .
 
-<http://ceur-ws.org/Vol-1310/#BogdaniCautis> a ns1:Person ;
-    ns5:affiliation "" ;
-    ns3:sameAs <http://ceur-ws.org/persons/BogdaniCautis> ;
-    ns1:made <http://ceur-ws.org/Vol-1310/#avenues>,
-        <http://ceur-ws.org/Vol-1310/#paper6> ;
-    ns1:name "Bogdan Cautis" .
-
-<http://ceur-ws.org/Vol-1310/#paper1> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-1310/> ;
-    ns4:title "Toward Selectivity-Based Keyword Extraction for Croatian News" ;
-    ns2:section <http%3A//ceur-ws.org/Vol-1310/%23Papers> ;
-    ns5:author <http://ceur-ws.org/Vol-1310/#AnaiMe%C5%A1trovi%C4%87>,
-        <http://ceur-ws.org/Vol-1310/#SandaiMartin%C4%8Di%C4%87%E2%80%93Ip%C5%A1i%C4%87>,
-        <http://ceur-ws.org/Vol-1310/#SlobodaniBeliga> .
-
-<http://ceur-ws.org/Vol-1310/#paper4> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-1310/> ;
-    ns4:title "Designing a General Deep Web Harvester by Harvestability Factor" ;
-    ns2:section <http%3A//ceur-ws.org/Vol-1310/%23Papers> ;
-    ns5:author <http://ceur-ws.org/Vol-1310/#DjoerdiHiemstra>,
-        <http://ceur-ws.org/Vol-1310/#MauriceivaniKeulen>,
-        <http://ceur-ws.org/Vol-1310/#MohamamdrezaiKhelghati> .
-
-<http://ceur-ws.org/Vol-1310/#paper5> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-1310/> ;
-    ns4:title "Web Experience Enhancer Based on a Fast Hierarchical Document Clustering Approach" ;
-    ns2:section <http%3A//ceur-ws.org/Vol-1310/%23Papers> ;
-    ns5:author <http://ceur-ws.org/Vol-1310/#AlexandruiIonutiDospinescu>,
-        <http://ceur-ws.org/Vol-1310/#FloriniPop>,
-        <http://ceur-ws.org/Vol-1310/#ValentiniCristea> .
-
-<http://ceur-ws.org/Vol-1310/#paper2> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-1310/> ;
-    ns4:title "Improving Open Information Extraction Using Domain Knowledge" ;
-    ns2:section <http%3A//ceur-ws.org/Vol-1310/%23Papers> ;
-    ns5:author <http://ceur-ws.org/Vol-1310/#BrunoiFi%C3%A8s>,
-        <http://ceur-ws.org/Vol-1310/#CatarinaiFerreiraidaiSilva>,
-        <http://ceur-ws.org/Vol-1310/#CheikhiKacfahiEmani>,
-        <http://ceur-ws.org/Vol-1310/#ParisaiGhodous> .
-
-<http://ceur-ws.org/Vol-1310/#paper3> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-1310/> ;
-    ns4:title "Discovering the Topics of a Data Source: a Statistical Approach" ;
-    ns2:section <http%3A//ceur-ws.org/Vol-1310/%23Papers> ;
-    ns5:author <http://ceur-ws.org/Vol-1310/#DavideiFerrari>,
-        <http://ceur-ws.org/Vol-1310/#FrancescoiGuerra>,
-        <http://ceur-ws.org/Vol-1310/#GiovanniiSimonini>,
-        <http://ceur-ws.org/Vol-1310/#SoniaiBergamaschi> .
-
-<http://ceur-ws.org/Vol-1310/#paper6> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-1310/> ;
-    ns4:title "Toward Social, Structured and Semantic Search" ;
-    ns2:section <http%3A//ceur-ws.org/Vol-1310/%23Papers> ;
-    ns5:author <http://ceur-ws.org/Vol-1310/#BogdaniCautis>,
-        <http://ceur-ws.org/Vol-1310/#Fran%C3%A7oisiGoasdou%C3%A9>,
-        <http://ceur-ws.org/Vol-1310/#IoanaiManolescu>,
-        <http://ceur-ws.org/Vol-1310/#Rapha%C3%ABliBonaque> .
-
-<http://ceur-ws.org/Vol-1310/#avenues> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-1310/> ;
-    ns4:title "Research Challenges and Avenues in Surfacing the Deep and the Social Web" ;
-    ns2:section <http%3A//ceur-ws.org/Vol-1310/%23Papers> ;
-    ns5:author <http://ceur-ws.org/Vol-1310/#BogdaniCautis>,
-        <http://ceur-ws.org/Vol-1310/#NgociThanhiNguyen>,
-        <http://ceur-ws.org/Vol-1310/#OmariBoucelma>,
-        <http://ceur-ws.org/Vol-1310/#PauloiRupinoidaiCunha>,
-        <http://ceur-ws.org/Vol-1310/#YannisiVelegrakis> .
-
-<http%3A//ceur-ws.org/Vol-1310/%23Papers> a ns6:SessionEvent ;
-    ns6:partOf <http://ceur-ws.org/Vol-1310/> ;
-    ns4:title "Papers" .
-
-<http://ceur-ws.org/Vol-1310/> a ns6:Proceedings ;
-    ns6:hasPart <http://ceur-ws.org/Vol-1310/#avenues>,
-        <http://ceur-ws.org/Vol-1310/#paper1>,
-        <http://ceur-ws.org/Vol-1310/#paper2>,
-        <http://ceur-ws.org/Vol-1310/#paper3>,
-        <http://ceur-ws.org/Vol-1310/#paper4>,
-        <http://ceur-ws.org/Vol-1310/#paper5>,
-        <http://ceur-ws.org/Vol-1310/#paper6> ;
-    ns6:hasSession <http%3A//ceur-ws.org/Vol-1310/%23Papers> ;
-    ns7:issued "2014-12-19T00:00:00+00:00"^^xsd:dateTime ;
-    ns2:presentedAt <http://ceur-ws.org/Vol-1310/#event> ;
-    ns5:editor <http://ceur-ws.org/Vol-1310/#BogdaniCautis>,
-        <http://ceur-ws.org/Vol-1310/#NgociThanhiNguyen>,
-        <http://ceur-ws.org/Vol-1310/#OmariBoucelma>,
-        <http://ceur-ws.org/Vol-1310/#PauloiRupinoidaiCunha>,
-        <http://ceur-ws.org/Vol-1310/#YannisiVelegrakis> .
+<http://ceur-ws.org/Vol-1310/#event> a ns2:WorkshopEvent ;
+    ns2:hasLocation <http://dbpedia.org/resource/Italy> ;
+    ns2:hasPart <http://ceur-ws.org/Vol-1310/#part-ws> ;
+    ns2:isSubEventOf <http://ceur-ws.org/Vol-1310/#conf> ;
+    ns6:beginsAtDatetime "2014-10-19T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:endsAtDatetime "2014-10-19T00:00:00+00:00"^^xsd:dateTime ;
+    ns4:license "http://creativecommons.org/publicdomain/zero/1.0/" .
 

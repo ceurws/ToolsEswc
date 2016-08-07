@@ -1,181 +1,40 @@
 @prefix ns1: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns2: <http://www.w3.org/2002/07/owl#> .
-@prefix ns3: <http://xmlns.com/foaf/0.1/> .
-@prefix ns4: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns5: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns6: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns7: <http://purl.org/ontology/bibo/#> .
-@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns2: <http://xmlns.com/foaf/0.1/> .
+@prefix ns3: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns4: <http://purl.org/ontology/bibo/#> .
+@prefix ns5: <http://www.w3.org/2002/07/owl#> .
+@prefix ns6: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns8: <http://purl.org/dc/elements/1.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1089/#AlfonsoiPierantonio> a ns3:Person ;
-    ns1:affiliation "" ;
-    ns2:sameAs <http://ceur-ws.org/persons/AlfonsoiPierantonio> ;
-    ns3:name "Alfonso Pierantonio" .
-
-<http://ceur-ws.org/Vol-1089/#DavideiDiiRuscio> a ns3:Person ;
-    ns1:affiliation "" ;
-    ns2:sameAs <http://ceur-ws.org/persons/DavideiDiiRuscio> ;
-    ns3:name "Davide Di Ruscio" .
-
-<http://ceur-ws.org/Vol-1089/#HakaniBurden> a ns3:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/HakaniBurden> ;
-    ns3:made <http://ceur-ws.org/Vol-1089/#intro3> ;
-    ns3:name "Hakan Burden" .
-
-<http://ceur-ws.org/Vol-1089/#HoracioiHoyosiRodriguez> a ns3:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/HoracioiHoyosiRodriguez> ;
-    ns3:made <http://ceur-ws.org/Vol-1089/#intro2> ;
-    ns3:name "Horacio Hoyos Rodriguez" .
-
-<http://ceur-ws.org/Vol-1089/#JoniWhittle> a ns3:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/JoniWhittle> ;
-    ns3:made <http://ceur-ws.org/Vol-1089/#intro1> ;
-    ns3:name "Jon Whittle" .
-
-<http://ceur-ws.org/Vol-1089/#JuanideiLara> a ns3:Person ;
-    ns1:affiliation "" ;
-    ns2:sameAs <http://ceur-ws.org/persons/JuanideiLara> ;
-    ns3:name "Juan de Lara" .
-
-<http://ceur-ws.org/Vol-1089/#KonstantinosiBarmpis> a ns3:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/KonstantinosiBarmpis> ;
-    ns3:made <http://ceur-ws.org/Vol-1089/#paper2p> ;
-    ns3:name "Konstantinos Barmpis" .
-
-<http://ceur-ws.org/Vol-1089/#MarshaiChechik> a ns3:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/MarshaiChechik> ;
-    ns3:made <http://ceur-ws.org/Vol-1089/#paper1> ;
-    ns3:name "Marsha Chechik" .
-
-<http://ceur-ws.org/Vol-1089/#NicholasiMatragkas> a ns3:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/NicholasiMatragkas> ;
-    ns3:made <http://ceur-ws.org/Vol-1089/#intro2> ;
-    ns3:name "Nicholas Matragkas" .
-
-<http://ceur-ws.org/Vol-1089/#RalfiLaemmel> a ns3:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/RalfiLaemmel> ;
-    ns3:made <http://ceur-ws.org/Vol-1089/#paper2> ;
-    ns3:name "Ralf Laemmel" .
-
-<http://ceur-ws.org/Vol-1089/#RaniWei> a ns3:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/RaniWei> ;
-    ns3:made <http://ceur-ws.org/Vol-1089/#paper2p> ;
-    ns3:name "Ran Wei" .
-
-<http://ceur-ws.org/Vol-1089/#RichardiF.iPaige> a ns3:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/RichardiF.iPaige> ;
-    ns3:made <http://ceur-ws.org/Vol-1089/#intro2> ;
-    ns3:name "Richard F. Paige" .
-
-<http://ceur-ws.org/Vol-1089/#RickiSalay> a ns3:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/RickiSalay> ;
-    ns3:made <http://ceur-ws.org/Vol-1089/#paper1> ;
-    ns3:name "Rick Salay" .
-
-<http://ceur-ws.org/Vol-1089/#UlfiEliasson> a ns3:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/UlfiEliasson> ;
-    ns3:made <http://ceur-ws.org/Vol-1089/#intro3> ;
-    ns3:name "Ulf Eliasson" .
-
-<http://ceur-ws.org/Vol-1089/#event> a ns4:WorkshopEvent ;
-    ns4:hasLocation <http://dbpedia.org/resource/United_States> ;
-    ns4:hasPart <http://ceur-ws.org/Vol-1089/#part-XM> ;
-    ns4:isSubEventOf <http://ceur-ws.org/Vol-1089/#conf> ;
-    ns6:beginsAtDatetime "2013-09-29T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:endsAtDatetime "2013-09-29T00:00:00+00:00"^^xsd:dateTime ;
-    ns5:license <http://choosealicense.com/licenses/no-license/> .
-
-<http://ceur-ws.org/Vol-1089/#DimitriosiS.iKolovos> a ns3:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/DimitriosiS.iKolovos> ;
-    ns3:made <http://ceur-ws.org/Vol-1089/#intro2>,
-        <http://ceur-ws.org/Vol-1089/#paper2p> ;
-    ns3:name "Dimitrios S. Kolovos" .
-
-<http://ceur-ws.org/Vol-1089/#VadimiZaytsev> a ns3:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/VadimiZaytsev> ;
-    ns3:made <http://ceur-ws.org/Vol-1089/#paper1p>,
-        <http://ceur-ws.org/Vol-1089/#paper2> ;
-    ns3:name "Vadim Zaytsev" .
-
-<http://ceur-ws.org/Vol-1089/#intro1> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1089/> ;
-    ns5:title "Agile versus MDE - Friend or Foe?" ;
-    ns7:endPage 1 ;
-    ns7:numPages 1 ;
-    ns7:startPage 1 ;
-    ns1:author <http://ceur-ws.org/Vol-1089/#JoniWhittle> .
-
-<http://ceur-ws.org/Vol-1089/#paper1p> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1089/> ;
-    ns5:title "Pending Evolution of Grammars" ;
-    ns7:endPage 35 ;
-    ns7:numPages 8 ;
-    ns7:startPage 28 ;
-    ns1:author <http://ceur-ws.org/Vol-1089/#VadimiZaytsev> .
-
-<http://ceur-ws.org/Vol-1089/#intro3> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1089/> ;
-    ns5:title "Extending Agile Practices in Automotive MDE" ;
-    ns7:endPage 19 ;
-    ns7:numPages 9 ;
-    ns7:startPage 11 ;
-    ns1:author <http://ceur-ws.org/Vol-1089/#HakaniBurden>,
-        <http://ceur-ws.org/Vol-1089/#UlfiEliasson> .
-
-<http://ceur-ws.org/Vol-1089/#paper1> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1089/> ;
-    ns5:title "Supporting Agility in MDE Through Modeling Language Relaxation" ;
-    ns7:endPage 27 ;
-    ns7:numPages 8 ;
-    ns7:startPage 20 ;
-    ns1:author <http://ceur-ws.org/Vol-1089/#MarshaiChechik>,
-        <http://ceur-ws.org/Vol-1089/#RickiSalay> .
-
-<http://ceur-ws.org/Vol-1089/#paper2> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1089/> ;
-    ns5:title "Language Support for Megamodel Renarration" ;
-    ns7:endPage 45 ;
-    ns7:numPages 10 ;
-    ns7:startPage 36 ;
-    ns1:author <http://ceur-ws.org/Vol-1089/#RalfiLaemmel>,
-        <http://ceur-ws.org/Vol-1089/#VadimiZaytsev> .
-
-<http://ceur-ws.org/Vol-1089/#paper2p> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1089/> ;
-    ns5:title "An Approach for Efficient Querying of Large Relational Datasets with OCL based Languages" ;
-    ns7:endPage 54 ;
-    ns7:numPages 9 ;
-    ns7:startPage 46 ;
-    ns1:author <http://ceur-ws.org/Vol-1089/#DimitriosiS.iKolovos>,
-        <http://ceur-ws.org/Vol-1089/#KonstantinosiBarmpis>,
-        <http://ceur-ws.org/Vol-1089/#RaniWei> .
-
-<http://ceur-ws.org/Vol-1089/#intro2> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1089/> ;
-    ns5:title "Programmatic Muddle Management" ;
-    ns7:endPage 10 ;
-    ns7:numPages 9 ;
-    ns7:startPage 2 ;
-    ns1:author <http://ceur-ws.org/Vol-1089/#DimitriosiS.iKolovos>,
-        <http://ceur-ws.org/Vol-1089/#HoracioiHoyosiRodriguez>,
-        <http://ceur-ws.org/Vol-1089/#NicholasiMatragkas>,
-        <http://ceur-ws.org/Vol-1089/#RichardiF.iPaige> .
-
-<http://ceur-ws.org/Vol-1089/> a ns4:Proceedings ;
-    ns4:hasPart <http://ceur-ws.org/Vol-1089/#intro1>,
-        <http://ceur-ws.org/Vol-1089/#intro2>,
-        <http://ceur-ws.org/Vol-1089/#intro3>,
-        <http://ceur-ws.org/Vol-1089/#paper1>,
-        <http://ceur-ws.org/Vol-1089/#paper1p>,
-        <http://ceur-ws.org/Vol-1089/#paper2>,
-        <http://ceur-ws.org/Vol-1089/#paper2p> ;
-    ns8:issued "2013-11-23T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:presentedAt <http://ceur-ws.org/Vol-1089/#event> ;
+<http://ceur-ws.org/Vol-1089/> a ns6:Proceedings ;
+    ns7:issued "2013-11-23T00:00:00+00:00"^^xsd:dateTime ;
+    ns4:presentedAt <http://ceur-ws.org/Vol-1089/#event> ;
     ns1:editor <http://ceur-ws.org/Vol-1089/#AlfonsoiPierantonio>,
         <http://ceur-ws.org/Vol-1089/#DavideiDiiRuscio>,
         <http://ceur-ws.org/Vol-1089/#JuanideiLara> .
+
+<http://ceur-ws.org/Vol-1089/#AlfonsoiPierantonio> a ns2:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/AlfonsoiPierantonio> ;
+    ns2:name "Alfonso Pierantonio" .
+
+<http://ceur-ws.org/Vol-1089/#DavideiDiiRuscio> a ns2:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/DavideiDiiRuscio> ;
+    ns2:name "Davide Di Ruscio" .
+
+<http://ceur-ws.org/Vol-1089/#JuanideiLara> a ns2:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/JuanideiLara> ;
+    ns2:name "Juan de Lara" .
+
+<http://ceur-ws.org/Vol-1089/#event> a ns6:WorkshopEvent ;
+    ns6:hasLocation <http://dbpedia.org/resource/United_States> ;
+    ns6:hasPart <http://ceur-ws.org/Vol-1089/#part-ws> ;
+    ns6:isSubEventOf <http://ceur-ws.org/Vol-1089/#conf> ;
+    ns3:beginsAtDatetime "2013-09-29T00:00:00+00:00"^^xsd:dateTime ;
+    ns3:endsAtDatetime "2013-09-29T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:license "http://choosealicense.com/licenses/no-license/" .
 

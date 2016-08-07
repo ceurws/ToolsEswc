@@ -1,0 +1,61 @@
+@prefix ns1: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns2: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns3: <http://www.w3.org/2002/07/owl#> .
+@prefix ns4: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns5: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns6: <http://xmlns.com/foaf/0.1/> .
+@prefix ns7: <http://purl.org/ontology/bibo/#> .
+@prefix ns8: <http://purl.org/dc/elements/1.1/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://ceur-ws.org/Vol-1613/> a ns4:Proceedings ;
+    ns2:issued "2016-06-26T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:presentedAt <http://ceur-ws.org/Vol-1613/#event> ;
+    ns1:editor <http://ceur-ws.org/Vol-1613/#DiegoiReforgiatoiRecupero>,
+        <http://ceur-ws.org/Vol-1613/#EMSA-SWiChairs>,
+        <http://ceur-ws.org/Vol-1613/#KerstiniDenecke>,
+        <http://ceur-ws.org/Vol-1613/#MauroiDragoni>,
+        <http://ceur-ws.org/Vol-1613/#RichMedSemiChairs>,
+        <http://ceur-ws.org/Vol-1613/#ThierryiDeclerck>,
+        <http://ceur-ws.org/Vol-1613/#YihaniDengUniversityiofiLeipzig> .
+
+<http://ceur-ws.org/Vol-1613/#DiegoiReforgiatoiRecupero> a ns6:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/DiegoiReforgiatoiRecupero> ;
+    ns6:name "Diego Reforgiato Recupero" .
+
+<http://ceur-ws.org/Vol-1613/#EMSA-SWiChairs> a ns6:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/EMSA-SWiChairs> ;
+    ns6:name "EMSA-SW Chairs" .
+
+<http://ceur-ws.org/Vol-1613/#KerstiniDenecke> a ns6:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/KerstiniDenecke> ;
+    ns6:name "Kerstin Denecke" .
+
+<http://ceur-ws.org/Vol-1613/#MauroiDragoni> a ns6:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/MauroiDragoni> ;
+    ns6:name "Mauro Dragoni" .
+
+<http://ceur-ws.org/Vol-1613/#RichMedSemiChairs> a ns6:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/RichMedSemiChairs> ;
+    ns6:name "RichMedSem Chairs" .
+
+<http://ceur-ws.org/Vol-1613/#ThierryiDeclerck> a ns6:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/ThierryiDeclerck> ;
+    ns6:name "Thierry Declerck" .
+
+<http://ceur-ws.org/Vol-1613/#YihaniDengUniversityiofiLeipzig> a ns6:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/YihaniDengUniversityiofiLeipzig> ;
+    ns6:name "Yihan DengUniversity of Leipzig" .
+
+<http://ceur-ws.org/Vol-1613/#event> a ns4:WorkshopEvent ;
+    ns4:hasLocation <http://dbpedia.org/resource/Greece> ;
+    ns4:hasPart <http://ceur-ws.org/Vol-1613/#part-WebThe> ;
+    ns4:isSubEventOf <http://ceur-ws.org/Vol-1613/#conf> ;
+    ns5:beginsAtDatetime "2016-05-29T00:00:00+00:00"^^xsd:dateTime ;
+    ns5:endsAtDatetime "2016-05-29T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:license "http://creativecommons.org/publicdomain/zero/1.0/" ;
+    rdfs:seeAlso <http://ceur-ws.org/Vol-1329/#event> .
+

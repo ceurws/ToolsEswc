@@ -1,0 +1,43 @@
+@prefix ns1: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns2: <http://xmlns.com/foaf/0.1/> .
+@prefix ns3: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns4: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns5: <http://www.w3.org/2002/07/owl#> .
+@prefix ns6: <http://purl.org/ontology/bibo/#> .
+@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://ceur-ws.org/Vol-1621/> a ns4:Proceedings ;
+    ns3:issued "2016-07-05T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:presentedAt <http://ceur-ws.org/Vol-1621/#event> ;
+    ns1:editor <http://ceur-ws.org/Vol-1621/#BerardinaiNadjaiDeiCarolis>,
+        <http://ceur-ws.org/Vol-1621/#CristinaiGena>,
+        <http://ceur-ws.org/Vol-1621/#FabrizioiNunnari>,
+        <http://ceur-ws.org/Vol-1621/#TsviiKuflik> .
+
+<http://ceur-ws.org/Vol-1621/#BerardinaiNadjaiDeiCarolis> a ns2:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/BerardinaiNadjaiDeiCarolis> ;
+    ns2:name "Berardina Nadja De Carolis" .
+
+<http://ceur-ws.org/Vol-1621/#CristinaiGena> a ns2:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/CristinaiGena> ;
+    ns2:name "Cristina Gena" .
+
+<http://ceur-ws.org/Vol-1621/#FabrizioiNunnari> a ns2:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/FabrizioiNunnari> ;
+    ns2:name "Fabrizio Nunnari" .
+
+<http://ceur-ws.org/Vol-1621/#TsviiKuflik> a ns2:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/TsviiKuflik> ;
+    ns2:name "Tsvi Kuflik" .
+
+<http://ceur-ws.org/Vol-1621/#event> a ns4:WorkshopEvent ;
+    ns4:hasLocation <http://dbpedia.org/resource/Italy> ;
+    ns4:hasPart <http://ceur-ws.org/Vol-1621/#part-ws> ;
+    ns4:isSubEventOf <http://ceur-ws.org/Vol-1621/#conf> ;
+    ns7:beginsAtDatetime "2016-06-07T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:endsAtDatetime "2016-06-10T00:00:00+00:00"^^xsd:dateTime .
+

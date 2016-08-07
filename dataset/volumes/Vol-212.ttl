@@ -1,11 +1,12 @@
 @prefix ns1: <http://xmlns.com/foaf/0.1/> .
-@prefix ns2: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns3: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns4: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns2: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns3: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns4: <http://swrc.ontoware.org/ontology/#> .
 @prefix ns5: <http://www.w3.org/2002/07/owl#> .
 @prefix ns6: <http://purl.org/NET/c4dm/timeline.owl#> .
 @prefix ns7: <http://purl.org/ontology/bibo/#> .
-@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns8: <http://purl.org/dc/elements/1.1/> .
+@prefix ns9: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -31,14 +32,15 @@
     ns1:made <http://ceur-ws.org/Vol-212/#03_Theiss> ;
     ns1:name "Frank Theiß" .
 
-<http://ceur-ws.org/Vol-212/#GeoffiSutcliffei> a ns1:Person ;
-    ns1:made <http://ceur-ws.org/Vol-212/#IWIL-6Proceedings> ;
+<http://ceur-ws.org/Vol-212/#GeoffiSutcliffe> a ns1:Person ;
+    ns7:place <http://dbpedia.org/resource/United_States> ;
+    ns4:affiliation "University of Miami" ;
+    ns5:sameAs <http://ceur-ws.org/persons/GeoffiSutcliffe> ;
     ns1:name "Geoff Sutcliffe" .
 
 <http://ceur-ws.org/Vol-212/#GeoffiSutcliffei%28eds.%29> a ns1:Person ;
-    ns7:place <http://dbpedia.org/resource/United_States> ;
-    ns2:affiliation "University of Miami" ;
-    ns5:sameAs <http://ceur-ws.org/persons/GeoffiSutcliffei%28eds.%29> .
+    ns1:made <http://ceur-ws.org/Vol-212/#IWIL-6Proceedings> ;
+    ns1:name "Geoff Sutcliffe (eds.)" .
 
 <http://ceur-ws.org/Vol-212/#GuidoiFiorino> a ns1:Person ;
     ns5:sameAs <http://ceur-ws.org/persons/GuidoiFiorino> ;
@@ -95,86 +97,86 @@
     ns1:made <http://ceur-ws.org/Vol-212/#07_Fiorino> ;
     ns1:name "Ugo Moscato" .
 
-<http://ceur-ws.org/Vol-212/#event> a ns4:WorkshopEvent ;
-    ns4:hasLocation <http://dbpedia.org/resource/Cambodia> ;
-    ns4:hasPart <http://ceur-ws.org/Vol-212/#part-ws> ;
-    ns4:isSubEventOf <http://ceur-ws.org/Vol-212/#conf> ;
-    ns6:beginsAtDatetime "2006-11-17T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:endsAtDatetime "2006-11-17T00:00:00+00:00"^^xsd:dateTime ;
-    ns3:license <http://choosealicense.com/licenses/no-license/> .
+<http://ceur-ws.org/Vol-212/#event> a ns3:WorkshopEvent ;
+    ns3:hasLocation <http://dbpedia.org/resource/Cambodia> ;
+    ns3:hasPart <http://ceur-ws.org/Vol-212/#part-ws> ;
+    ns3:isSubEventOf <http://ceur-ws.org/Vol-212/#conf> ;
+    ns6:beginsAtDatetime "2006-11-08T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:endsAtDatetime "2006-11-08T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:license "http://choosealicense.com/licenses/no-license/" .
 
-<http://ceur-ws.org/Vol-212/#02_Schulz> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-212/> ;
-    ns3:title "Algorithms and Data Structures for First-Order Equational Deduction" ;
-    ns2:author <http://ceur-ws.org/Vol-212/#StephaniSchulz> .
+<http://ceur-ws.org/Vol-212/#02_Schulz> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-212/> ;
+    ns2:title "Algorithms and Data Structures for First-Order Equational Deduction" ;
+    ns4:author <http://ceur-ws.org/Vol-212/#StephaniSchulz> .
 
-<http://ceur-ws.org/Vol-212/#05_Weber> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-212/> ;
-    ns3:title "Efficiently Checking Propositional Resolution Proofs in Isabelle/HOL" ;
-    ns2:author <http://ceur-ws.org/Vol-212/#TjarkiWeber> .
+<http://ceur-ws.org/Vol-212/#05_Weber> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-212/> ;
+    ns2:title "Efficiently Checking Propositional Resolution Proofs in Isabelle/HOL" ;
+    ns4:author <http://ceur-ws.org/Vol-212/#TjarkiWeber> .
 
-<http://ceur-ws.org/Vol-212/#06_Korovin> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-212/> ;
-    ns3:title "Implementing an Instantiation-based Theorem Prover for First-order Logic" ;
-    ns2:author <http://ceur-ws.org/Vol-212/#KonstantiniKorovin> .
+<http://ceur-ws.org/Vol-212/#06_Korovin> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-212/> ;
+    ns2:title "Implementing an Instantiation-based Theorem Prover for First-order Logic" ;
+    ns4:author <http://ceur-ws.org/Vol-212/#KonstantiniKorovin> .
 
 <http://ceur-ws.org/Vol-212/#BerndiFischer> a ns1:Person ;
     ns7:place <http://dbpedia.org/resource/England> ;
-    ns2:affiliation "University of Southampton" ;
+    ns4:affiliation "University of Southampton" ;
     ns5:sameAs <http://ceur-ws.org/persons/BerndiFischer> ;
     ns1:made <http://ceur-ws.org/Vol-212/#IWIL-6Proceedings> ;
     ns1:name "Bernd Fischer" .
 
-<http://ceur-ws.org/Vol-212/#03_Theiss> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-212/> ;
-    ns3:title "Term Indexing for the LEO-II Prover" ;
-    ns2:author <http://ceur-ws.org/Vol-212/#ChrisiBenzm%C3%BCller>,
+<http://ceur-ws.org/Vol-212/#03_Theiss> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-212/> ;
+    ns2:title "Term Indexing for the LEO-II Prover" ;
+    ns4:author <http://ceur-ws.org/Vol-212/#ChristophiBenzm%C3%BCller>,
         <http://ceur-ws.org/Vol-212/#FrankiThei%C3%9F> .
 
-<http://ceur-ws.org/Vol-212/#08_Skvortsova> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-212/> ;
-    ns3:title "LIFT-UP: Lifted First-Order Planning Under Uncertainty" ;
-    ns2:author <http://ceur-ws.org/Vol-212/#OlgaiSkvortsova>,
+<http://ceur-ws.org/Vol-212/#08_Skvortsova> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-212/> ;
+    ns2:title "LIFT-UP: Lifted First-Order Planning Under Uncertainty" ;
+    ns4:author <http://ceur-ws.org/Vol-212/#OlgaiSkvortsova>,
         <http://ceur-ws.org/Vol-212/#SteffeniH%C3%B6lldobler> .
 
-<http://ceur-ws.org/Vol-212/#09_Anbulagan> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-212/> ;
-    ns3:title "Multiple Preprocessing for Systematic SAT Solvers" ;
-    ns2:author <http://ceur-ws.org/Vol-212/#Anbulagan>,
+<http://ceur-ws.org/Vol-212/#09_Anbulagan> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-212/> ;
+    ns2:title "Multiple Preprocessing for Systematic SAT Solvers" ;
+    ns4:author <http://ceur-ws.org/Vol-212/#Anbulagan>,
         <http://ceur-ws.org/Vol-212/#JohniSlaney> .
 
-<http://ceur-ws.org/Vol-212/#ChrisiBenzm%C3%BCller> a ns1:Person ;
+<http://ceur-ws.org/Vol-212/#ChristophiBenzm%C3%BCller> a ns1:Person ;
     ns7:place <http://dbpedia.org/resource/England> ;
-    ns2:affiliation "University of Cambridge" ;
-    ns5:sameAs <http://ceur-ws.org/persons/ChrisiBenzm%C3%BCller> ;
+    ns4:affiliation "University of Cambridge" ;
+    ns5:sameAs <http://ceur-ws.org/persons/ChristophiBenzm%C3%BCller> ;
     ns1:made <http://ceur-ws.org/Vol-212/#03_Theiss>,
         <http://ceur-ws.org/Vol-212/#IWIL-6Proceedings> ;
-    ns1:name "Chris Benzmüller" .
+    ns1:name "Christoph Benzmüller" .
 
-<http://ceur-ws.org/Vol-212/#07_Fiorino> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-212/> ;
-    ns3:title "Tableau Decision Procedure for Propositional Intuitionistic Logic" ;
-    ns2:author <http://ceur-ws.org/Vol-212/#AlessandroiAvellone>,
+<http://ceur-ws.org/Vol-212/#07_Fiorino> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-212/> ;
+    ns2:title "Tableau Decision Procedure for Propositional Intuitionistic Logic" ;
+    ns4:author <http://ceur-ws.org/Vol-212/#AlessandroiAvellone>,
         <http://ceur-ws.org/Vol-212/#GuidoiFiorino>,
         <http://ceur-ws.org/Vol-212/#UgoiMoscato> .
 
-<http://ceur-ws.org/Vol-212/#IWIL-6Proceedings> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-212/> ;
-    ns3:title "Complete Proceedings" ;
-    ns2:author <http://ceur-ws.org/Vol-212/#BerndiFischer>,
-        <http://ceur-ws.org/Vol-212/#ChrisiBenzm%C3%BCller>,
-        <http://ceur-ws.org/Vol-212/#GeoffiSutcliffei> .
+<http://ceur-ws.org/Vol-212/#IWIL-6Proceedings> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-212/> ;
+    ns2:title "Complete Proceedings" ;
+    ns4:author <http://ceur-ws.org/Vol-212/#BerndiFischer>,
+        <http://ceur-ws.org/Vol-212/#ChristophiBenzm%C3%BCller>,
+        <http://ceur-ws.org/Vol-212/#GeoffiSutcliffei%28eds.%29> .
 
-<http://ceur-ws.org/Vol-212/#04_Kaufmann> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-212/> ;
-    ns3:title "Integrating External Deduction Tools with ACL2" ;
-    ns2:author <http://ceur-ws.org/Vol-212/#ErikiReeber>,
+<http://ceur-ws.org/Vol-212/#04_Kaufmann> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-212/> ;
+    ns2:title "Integrating External Deduction Tools with ACL2" ;
+    ns4:author <http://ceur-ws.org/Vol-212/#ErikiReeber>,
         <http://ceur-ws.org/Vol-212/#JiStrotheriMoore>,
         <http://ceur-ws.org/Vol-212/#MattiKaufmann>,
         <http://ceur-ws.org/Vol-212/#SandipiRay> .
 
-<http://ceur-ws.org/Vol-212/> a ns4:Proceedings ;
-    ns4:hasPart <http://ceur-ws.org/Vol-212/#02_Schulz>,
+<http://ceur-ws.org/Vol-212/> a ns3:Proceedings ;
+    ns3:hasPart <http://ceur-ws.org/Vol-212/#02_Schulz>,
         <http://ceur-ws.org/Vol-212/#03_Theiss>,
         <http://ceur-ws.org/Vol-212/#04_Kaufmann>,
         <http://ceur-ws.org/Vol-212/#05_Weber>,
@@ -183,9 +185,9 @@
         <http://ceur-ws.org/Vol-212/#08_Skvortsova>,
         <http://ceur-ws.org/Vol-212/#09_Anbulagan>,
         <http://ceur-ws.org/Vol-212/#IWIL-6Proceedings> ;
-    ns8:issued "2006-11-07T00:00:00+00:00"^^xsd:dateTime ;
+    ns9:issued "2006-11-07T00:00:00+00:00"^^xsd:dateTime ;
     ns7:presentedAt <http://ceur-ws.org/Vol-212/#event> ;
-    ns2:editor <http://ceur-ws.org/Vol-212/#BerndiFischer>,
-        <http://ceur-ws.org/Vol-212/#ChrisiBenzm%C3%BCller>,
-        <http://ceur-ws.org/Vol-212/#GeoffiSutcliffei%28eds.%29> .
+    ns4:editor <http://ceur-ws.org/Vol-212/#BerndiFischer>,
+        <http://ceur-ws.org/Vol-212/#ChristophiBenzm%C3%BCller>,
+        <http://ceur-ws.org/Vol-212/#GeoffiSutcliffe> .
 

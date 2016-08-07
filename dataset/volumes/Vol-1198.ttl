@@ -1,275 +1,50 @@
-@prefix ns1: <http://xmlns.com/foaf/0.1/> .
+@prefix ns1: <http://www.w3.org/2002/07/owl#> .
 @prefix ns2: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns3: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns4: <http://www.w3.org/2002/07/owl#> .
-@prefix ns5: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns6: <http://purl.org/ontology/bibo/#> .
-@prefix ns7: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns3: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns4: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns5: <http://xmlns.com/foaf/0.1/> .
+@prefix ns6: <http://purl.org/dc/elements/1.1/> .
+@prefix ns7: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns8: <http://purl.org/ontology/bibo/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1198/#AbhineshwariTomar> a ns1:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/AbhineshwariTomar> ;
-    ns1:made <http://ceur-ws.org/Vol-1198/#vandersmissen> ;
-    ns1:name "Abhineshwar Tomar" .
+<http://ceur-ws.org/Vol-1198/> a ns2:Proceedings ;
+    ns3:issued "2014-07-27T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:presentedAt <http://ceur-ws.org/Vol-1198/#event> ;
+    ns7:editor <http://ceur-ws.org/Vol-1198/#AislingiKelliher>,
+        <http://ceur-ws.org/Vol-1198/#DavidiA.iShamma>,
+        <http://ceur-ws.org/Vol-1198/#PabloiCesar>,
+        <http://ceur-ws.org/Vol-1198/#RameshiJain>,
+        <http://ceur-ws.org/Vol-1198/#SymeoniPapadopoulos> .
 
-<http://ceur-ws.org/Vol-1198/#AyseiG%C3%B6ker> a ns1:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/AyseiG%C3%B6ker> ;
-    ns1:made <http://ceur-ws.org/Vol-1198/#corney> ;
-    ns1:name "Ayse Göker" .
+<http://ceur-ws.org/Vol-1198/#AislingiKelliher> a ns5:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/AislingiKelliher> ;
+    ns5:name "Aisling Kelliher" .
 
-<http://ceur-ws.org/Vol-1198/#BaptistiVandersmissen> a ns1:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/BaptistiVandersmissen> ;
-    ns1:made <http://ceur-ws.org/Vol-1198/#vandersmissen> ;
-    ns1:name "Baptist Vandersmissen" .
+<http://ceur-ws.org/Vol-1198/#DavidiA.iShamma> a ns5:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/DavidiA.iShamma> ;
+    ns5:name "David A. Shamma" .
 
-<http://ceur-ws.org/Vol-1198/#CarloiAndreaiConte> a ns1:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/CarloiAndreaiConte> ;
-    ns1:made <http://ceur-ws.org/Vol-1198/#conte> ;
-    ns1:name "Carlo Andrea Conte" .
+<http://ceur-ws.org/Vol-1198/#PabloiCesar> a ns5:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/PabloiCesar> ;
+    ns5:name "Pablo Cesar" .
 
-<http://ceur-ws.org/Vol-1198/#CarlosiMartin> a ns1:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/CarlosiMartin> ;
-    ns1:made <http://ceur-ws.org/Vol-1198/#corney> ;
-    ns1:name "Carlos Martin" .
+<http://ceur-ws.org/Vol-1198/#RameshiJain> a ns5:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/RameshiJain> ;
+    ns5:name "Ramesh Jain" .
 
-<http://ceur-ws.org/Vol-1198/#ElizeuiSantos-Neto> a ns1:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/ElizeuiSantos-Neto> ;
-    ns1:made <http://ceur-ws.org/Vol-1198/#santosneto> ;
-    ns1:name "Elizeu Santos-Neto" .
-
-<http://ceur-ws.org/Vol-1198/#EmmaiByrne> a ns1:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/EmmaiByrne> ;
-    ns1:made <http://ceur-ws.org/Vol-1198/#byrne> ;
-    ns1:name "Emma Byrne" .
-
-<http://ceur-ws.org/Vol-1198/#Fr%C3%A9dericiGodin> a ns1:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/Fr%C3%A9dericiGodin> ;
-    ns1:made <http://ceur-ws.org/Vol-1198/#vandersmissen> ;
-    ns1:name "Fréderic Godin" .
-
-<http://ceur-ws.org/Vol-1198/#JussaraiAlmeida> a ns1:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/JussaraiAlmeida> ;
-    ns1:made <http://ceur-ws.org/Vol-1198/#santosneto> ;
-    ns1:name "Jussara Almeida" .
-
-<http://ceur-ws.org/Vol-1198/#ManosiSchinas> a ns1:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/ManosiSchinas> ;
-    ns1:made <http://ceur-ws.org/Vol-1198/#schinas> ;
-    ns1:name "Manos Schinas" .
-
-<http://ceur-ws.org/Vol-1198/#MateiiRipeanu> a ns1:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/MateiiRipeanu> ;
-    ns1:made <http://ceur-ws.org/Vol-1198/#santosneto> ;
-    ns1:name "Matei Ripeanu" .
-
-<http://ceur-ws.org/Vol-1198/#MoriNaaman> a ns1:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/MoriNaaman> ;
-    ns1:made <http://ceur-ws.org/Vol-1198/#conte> ;
-    ns1:name "Mor Naaman" .
-
-<http://ceur-ws.org/Vol-1198/#PericlesiMitkas> a ns1:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/PericlesiMitkas> ;
-    ns1:made <http://ceur-ws.org/Vol-1198/#schinas> ;
-    ns1:name "Pericles Mitkas" .
-
-<http://ceur-ws.org/Vol-1198/#PhilippiWille> a ns1:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/PhilippiWille> ;
-    ns1:made <http://ceur-ws.org/Vol-1198/#wille> ;
-    ns1:name "Philipp Wille" .
-
-<http://ceur-ws.org/Vol-1198/#Rapha%C3%ABliTroncy> a ns1:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/Rapha%C3%ABliTroncy> ;
-    ns1:made <http://ceur-ws.org/Vol-1198/#conte> ;
-    ns1:name "Raphaël Troncy" .
-
-<http://ceur-ws.org/Vol-1198/#RebeccaiFinster> a ns1:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/RebeccaiFinster> ;
-    ns1:made <http://ceur-ws.org/Vol-1198/#wille> ;
-    ns1:name "Rebecca Finster" .
-
-<http://ceur-ws.org/Vol-1198/#RikiVanideiWalle> a ns1:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/RikiVanideiWalle> ;
-    ns1:made <http://ceur-ws.org/Vol-1198/#vandersmissen> ;
-    ns1:name "Rik Van de Walle" .
-
-<http://ceur-ws.org/Vol-1198/#TatianaiPontes> a ns1:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/TatianaiPontes> ;
-    ns1:made <http://ceur-ws.org/Vol-1198/#santosneto> ;
-    ns1:name "Tatiana Pontes" .
-
-<http://ceur-ws.org/Vol-1198/#ThomasiSteiner> a ns1:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/ThomasiSteiner> ;
-    ns1:made <http://ceur-ws.org/Vol-1198/#steiner> ;
-    ns1:name "Thomas Steiner" .
-
-<http://ceur-ws.org/Vol-1198/#WesleyiDeiNeve> a ns1:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/WesleyiDeiNeve> ;
-    ns1:made <http://ceur-ws.org/Vol-1198/#vandersmissen> ;
-    ns1:name "Wesley De Neve" .
-
-<http://ceur-ws.org/Vol-1198/#Wolf-TiloiBalke> a ns1:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/Wolf-TiloiBalke> ;
-    ns1:made <http://ceur-ws.org/Vol-1198/#wille> ;
-    ns1:name "Wolf-Tilo Balke" .
-
-<http://ceur-ws.org/Vol-1198/#YiannisiKompatsiaris> a ns1:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/YiannisiKompatsiaris> ;
-    ns1:made <http://ceur-ws.org/Vol-1198/#schinas> ;
-    ns1:name "Yiannis Kompatsiaris" .
+<http://ceur-ws.org/Vol-1198/#SymeoniPapadopoulos> a ns5:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/SymeoniPapadopoulos> ;
+    ns5:name "Symeon Papadopoulos" .
 
 <http://ceur-ws.org/Vol-1198/#event> a ns2:WorkshopEvent ;
     ns2:hasLocation <http://dbpedia.org/resource/United_Kingdom> ;
-    ns2:hasPart <http://ceur-ws.org/Vol-1198/#part-SoMuS> ;
+    ns2:hasPart <http://ceur-ws.org/Vol-1198/#part-ws> ;
     ns2:isSubEventOf <http://ceur-ws.org/Vol-1198/#conf> ;
-    ns8:beginsAtDatetime "2014-04-01T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:endsAtDatetime "2014-04-01T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:license <http://choosealicense.com/licenses/no-license/> .
-
-<http://ceur-ws.org/Vol-1198/#AislingiKelliher> a ns1:Person ;
-    ns6:place <http://dbpedia.org/resource/United_States> ;
-    ns3:affiliation "Carnegie Mellon University (CMU), School of Design, Pittsburgh" ;
-    ns4:sameAs <http://ceur-ws.org/persons/AislingiKelliher> ;
-    ns1:made <http://ceur-ws.org/Vol-1198/#overview> ;
-    ns1:name "Aisling Kelliher" .
-
-<http://ceur-ws.org/Vol-1198/#DavidiA.iShamma> a ns1:Person ;
-    ns6:place <http://dbpedia.org/resource/United_States> ;
-    ns3:affiliation "Yahoo Labs, HCI Research Group, San Francisco" ;
-    ns4:sameAs <http://ceur-ws.org/persons/DavidiA.iShamma> ;
-    ns1:made <http://ceur-ws.org/Vol-1198/#overview> ;
-    ns1:name "David A. Shamma" .
-
-<http://ceur-ws.org/Vol-1198/#DavidiCorney> a ns1:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/DavidiCorney> ;
-    ns1:made <http://ceur-ws.org/Vol-1198/#byrne>,
-        <http://ceur-ws.org/Vol-1198/#corney> ;
-    ns1:name "David Corney" .
-
-<http://ceur-ws.org/Vol-1198/#PabloiCesar> a ns1:Person ;
-    ns6:place <http://dbpedia.org/resource/Kingdom_of_the_Netherlands> ;
-    ns3:affiliation "Centrum Wiskunde & Informatica (CWI), Distributed and Interactive Systems Group, Amsterdam" ;
-    ns4:sameAs <http://ceur-ws.org/persons/PabloiCesar> ;
-    ns1:made <http://ceur-ws.org/Vol-1198/#overview> ;
-    ns1:name "Pablo Cesar" .
-
-<http://ceur-ws.org/Vol-1198/#RameshiJain> a ns1:Person ;
-    ns6:place <http://dbpedia.org/resource/United_States> ;
-    ns3:affiliation "University of California, Irvine (UCI), School of Information and Computer Sciences, Irvine, California" ;
-    ns4:sameAs <http://ceur-ws.org/persons/RameshiJain> ;
-    ns1:made <http://ceur-ws.org/Vol-1198/#overview> ;
-    ns1:name "Ramesh Jain" .
-
-<http://ceur-ws.org/Vol-1198/#steiner> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1198/> ;
-    ns7:title "Telling Breaking News Stories from Wikipedia with Social Multimedia: A Case Study of the 2014 Winter Olympics" ;
-    ns6:section <http%3A//ceur-ws.org/Vol-1198/%23Storytelling> ;
-    ns3:author <http://ceur-ws.org/Vol-1198/#ThomasiSteiner> .
-
-<http%3A//ceur-ws.org/Vol-1198/%23Storytelling> a ns2:SessionEvent ;
-    ns2:partOf <http://ceur-ws.org/Vol-1198/> ;
-    ns7:title "Storytelling" .
-
-<http://ceur-ws.org/Vol-1198/#SymeoniPapadopoulos> a ns1:Person ;
-    ns6:place <http://dbpedia.org/resource/Greece> ;
-    ns3:affiliation "Centre for Research and Technology Hellas (CERTH), Information Technologies Institute, 57001 Thermi-Thessaloniki" ;
-    ns4:sameAs <http://ceur-ws.org/persons/SymeoniPapadopoulos> ;
-    ns1:made <http://ceur-ws.org/Vol-1198/#overview>,
-        <http://ceur-ws.org/Vol-1198/#schinas> ;
-    ns1:name "Symeon Papadopoulos" .
-
-<http://ceur-ws.org/Vol-1198/#byrne> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1198/> ;
-    ns7:title "Sweet FA: Sentiment, Swearing and Soccer" ;
-    ns6:section <http%3A//ceur-ws.org/Vol-1198/%23MultimediaSharing%2CCollectionandRanking> ;
-    ns3:author <http://ceur-ws.org/Vol-1198/#DavidiCorney>,
-        <http://ceur-ws.org/Vol-1198/#EmmaiByrne> .
-
-<http://ceur-ws.org/Vol-1198/#conte> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1198/> ;
-    ns7:title "Extracting Resources that Help Tell Events' Stories" ;
-    ns6:section <http%3A//ceur-ws.org/Vol-1198/%23MultimediaSharing%2CCollectionandRanking> ;
-    ns3:author <http://ceur-ws.org/Vol-1198/#CarloiAndreaiConte>,
-        <http://ceur-ws.org/Vol-1198/#MoriNaaman>,
-        <http://ceur-ws.org/Vol-1198/#Rapha%C3%ABliTroncy> .
-
-<http://ceur-ws.org/Vol-1198/#corney> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1198/> ;
-    ns7:title "Two Sides to Every Story: Subjective Event Summarization of Sports Events using Twitter" ;
-    ns6:section <http%3A//ceur-ws.org/Vol-1198/%23MultimediaSharing%2CCollectionandRanking> ;
-    ns3:author <http://ceur-ws.org/Vol-1198/#AyseiG%C3%B6ker>,
-        <http://ceur-ws.org/Vol-1198/#CarlosiMartin>,
-        <http://ceur-ws.org/Vol-1198/#DavidiCorney> .
-
-<http://ceur-ws.org/Vol-1198/#wille> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1198/> ;
-    ns7:title "A Model for Interactive CSR Campaigns using Storytelling" ;
-    ns6:section <http%3A//ceur-ws.org/Vol-1198/%23Storytelling> ;
-    ns3:author <http://ceur-ws.org/Vol-1198/#PhilippiWille>,
-        <http://ceur-ws.org/Vol-1198/#RebeccaiFinster>,
-        <http://ceur-ws.org/Vol-1198/#Wolf-TiloiBalke> .
-
-<http://ceur-ws.org/Vol-1198/#santosneto> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1198/> ;
-    ns7:title "Towards Boosting Video Popularity via Tag Selection" ;
-    ns6:section <http%3A//ceur-ws.org/Vol-1198/%23MultimediaSharing%2CCollectionandRanking> ;
-    ns3:author <http://ceur-ws.org/Vol-1198/#ElizeuiSantos-Neto>,
-        <http://ceur-ws.org/Vol-1198/#JussaraiAlmeida>,
-        <http://ceur-ws.org/Vol-1198/#MateiiRipeanu>,
-        <http://ceur-ws.org/Vol-1198/#TatianaiPontes> .
-
-<http://ceur-ws.org/Vol-1198/#schinas> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1198/> ;
-    ns7:title "StreamGrid: Summarization of Large Scale Events using Topic Modelling and Temporal Analysis" ;
-    ns6:section <http%3A//ceur-ws.org/Vol-1198/%23MultimediaSharing%2CCollectionandRanking> ;
-    ns3:author <http://ceur-ws.org/Vol-1198/#ManosiSchinas>,
-        <http://ceur-ws.org/Vol-1198/#PericlesiMitkas>,
-        <http://ceur-ws.org/Vol-1198/#SymeoniPapadopoulos>,
-        <http://ceur-ws.org/Vol-1198/#YiannisiKompatsiaris> .
-
-<http://ceur-ws.org/Vol-1198/#overview> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1198/> ;
-    ns7:title "SoMuS: Social Multimedia and Storytelling" ;
-    ns3:author <http://ceur-ws.org/Vol-1198/#AislingiKelliher>,
-        <http://ceur-ws.org/Vol-1198/#DavidiA.iShamma>,
-        <http://ceur-ws.org/Vol-1198/#PabloiCesar>,
-        <http://ceur-ws.org/Vol-1198/#RameshiJain>,
-        <http://ceur-ws.org/Vol-1198/#SymeoniPapadopoulos> .
-
-<http://ceur-ws.org/Vol-1198/#vandersmissen> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1198/> ;
-    ns7:title "The Rise of Mobile Social Video: An In-depth Analysis of Vine" ;
-    ns6:section <http%3A//ceur-ws.org/Vol-1198/%23MultimediaSharing%2CCollectionandRanking> ;
-    ns3:author <http://ceur-ws.org/Vol-1198/#AbhineshwariTomar>,
-        <http://ceur-ws.org/Vol-1198/#BaptistiVandersmissen>,
-        <http://ceur-ws.org/Vol-1198/#Fr%C3%A9dericiGodin>,
-        <http://ceur-ws.org/Vol-1198/#RikiVanideiWalle>,
-        <http://ceur-ws.org/Vol-1198/#WesleyiDeiNeve> .
-
-<http%3A//ceur-ws.org/Vol-1198/%23MultimediaSharing%2CCollectionandRanking> a ns2:SessionEvent ;
-    ns2:partOf <http://ceur-ws.org/Vol-1198/> ;
-    ns7:title "Multimedia Sharing, Collection and Ranking" .
-
-<http://ceur-ws.org/Vol-1198/> a ns2:Proceedings ;
-    ns2:hasPart <http://ceur-ws.org/Vol-1198/#byrne>,
-        <http://ceur-ws.org/Vol-1198/#conte>,
-        <http://ceur-ws.org/Vol-1198/#corney>,
-        <http://ceur-ws.org/Vol-1198/#overview>,
-        <http://ceur-ws.org/Vol-1198/#santosneto>,
-        <http://ceur-ws.org/Vol-1198/#schinas>,
-        <http://ceur-ws.org/Vol-1198/#steiner>,
-        <http://ceur-ws.org/Vol-1198/#vandersmissen>,
-        <http://ceur-ws.org/Vol-1198/#wille> ;
-    ns2:hasSession <http%3A//ceur-ws.org/Vol-1198/%23MultimediaSharing%2CCollectionandRanking>,
-        <http%3A//ceur-ws.org/Vol-1198/%23Storytelling> ;
-    ns5:issued "2014-07-27T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:presentedAt <http://ceur-ws.org/Vol-1198/#event> ;
-    ns3:editor <http://ceur-ws.org/Vol-1198/#AislingiKelliher>,
-        <http://ceur-ws.org/Vol-1198/#DavidiA.iShamma>,
-        <http://ceur-ws.org/Vol-1198/#PabloiCesar>,
-        <http://ceur-ws.org/Vol-1198/#RameshiJain>,
-        <http://ceur-ws.org/Vol-1198/#SymeoniPapadopoulos> .
+    ns4:beginsAtDatetime "2014-04-01T00:00:00+00:00"^^xsd:dateTime ;
+    ns4:endsAtDatetime "2014-04-01T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:license "http://choosealicense.com/licenses/no-license/" .
 

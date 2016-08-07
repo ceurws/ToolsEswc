@@ -1,0 +1,45 @@
+@prefix ns1: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns2: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns3: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns4: <http://xmlns.com/foaf/0.1/> .
+@prefix ns5: <http://purl.org/dc/elements/1.1/> .
+@prefix ns6: <http://purl.org/ontology/bibo/#> .
+@prefix ns7: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns8: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://ceur-ws.org/Vol-1619/> a ns7:Proceedings ;
+    ns2:issued "2016-07-07T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:presentedAt <http://ceur-ws.org/Vol-1619/#event> ;
+    ns3:editor <http://ceur-ws.org/Vol-1619/#BrajaiGopaliPatra>,
+        <http://ceur-ws.org/Vol-1619/#DipankariDas>,
+        <http://ceur-ws.org/Vol-1619/#ErikiCambria>,
+        <http://ceur-ws.org/Vol-1619/#SivajiiBandyopadhyay> .
+
+<http://ceur-ws.org/Vol-1619/#BrajaiGopaliPatra> a ns4:Person ;
+    ns8:sameAs <http://ceur-ws.org/persons/BrajaiGopaliPatra> ;
+    ns4:name "Braja Gopal Patra" .
+
+<http://ceur-ws.org/Vol-1619/#DipankariDas> a ns4:Person ;
+    ns8:sameAs <http://ceur-ws.org/persons/DipankariDas> ;
+    ns4:name "Dipankar Das" .
+
+<http://ceur-ws.org/Vol-1619/#ErikiCambria> a ns4:Person ;
+    ns8:sameAs <http://ceur-ws.org/persons/ErikiCambria> ;
+    ns4:name "Erik Cambria" .
+
+<http://ceur-ws.org/Vol-1619/#SivajiiBandyopadhyay> a ns4:Person ;
+    ns8:sameAs <http://ceur-ws.org/persons/SivajiiBandyopadhyay> ;
+    ns4:name "Sivaji Bandyopadhyay" .
+
+<http://ceur-ws.org/Vol-1619/#event> a ns7:WorkshopEvent ;
+    ns7:hasLocation <http://dbpedia.org/resource/United_States> ;
+    ns7:hasPart <http://ceur-ws.org/Vol-1619/#part-SAAIP> ;
+    ns7:isSubEventOf <http://ceur-ws.org/Vol-1619/#conf> ;
+    ns1:beginsAtDatetime "2016-07-10T00:00:00+00:00"^^xsd:dateTime ;
+    ns1:endsAtDatetime "2016-07-10T00:00:00+00:00"^^xsd:dateTime ;
+    ns5:license "http://creativecommons.org/publicdomain/zero/1.0/" .
+

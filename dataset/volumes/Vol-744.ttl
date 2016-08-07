@@ -1,271 +1,40 @@
-@prefix ns1: <http://xmlns.com/foaf/0.1/> .
-@prefix ns2: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns3: <http://www.w3.org/2002/07/owl#> .
-@prefix ns4: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns1: <http://purl.org/ontology/bibo/#> .
+@prefix ns2: <http://xmlns.com/foaf/0.1/> .
+@prefix ns3: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns4: <http://purl.org/dc/elements/1.1/> .
 @prefix ns5: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns6: <http://purl.org/ontology/bibo/#> .
-@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns6: <http://www.w3.org/2002/07/owl#> .
+@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-744/#%C3%98ysteiniNytr%C3%B8> a ns1:Person ;
-    ns4:affiliation "" ;
-    ns3:sameAs <http://ceur-ws.org/persons/%C3%98ysteiniNytr%C3%B8> ;
-    ns1:name "Øystein Nytrø" .
+<http://ceur-ws.org/Vol-744/> a ns5:Proceedings ;
+    ns7:issued "2011-08-17T00:00:00+00:00"^^xsd:dateTime ;
+    ns1:presentedAt <http://ceur-ws.org/Vol-744/#event> ;
+    ns3:editor <http://ceur-ws.org/Vol-744/#%C3%98ysteiniNytr%C3%B8>,
+        <http://ceur-ws.org/Vol-744/#HansiMoen>,
+        <http://ceur-ws.org/Vol-744/#LauraiSlaughter> .
 
-<http://ceur-ws.org/Vol-744/#A.iRosemaryiTate> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/A.iRosemaryiTate> ;
-    ns1:made <http://ceur-ws.org/Vol-744/#paper6> ;
-    ns1:name "A. Rosemary Tate" .
+<http://ceur-ws.org/Vol-744/#%C3%98ysteiniNytr%C3%B8> a ns2:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/%C3%98ysteiniNytr%C3%B8> ;
+    ns2:name "Øystein Nytrø" .
 
-<http://ceur-ws.org/Vol-744/#AbeediSarker> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/AbeediSarker> ;
-    ns1:made <http://ceur-ws.org/Vol-744/#paper7> ;
-    ns1:name "Abeed Sarker" .
+<http://ceur-ws.org/Vol-744/#HansiMoen> a ns2:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/HansiMoen> ;
+    ns2:name "Hans Moen" .
 
-<http://ceur-ws.org/Vol-744/#AgnieszkaiMykowiecka> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/AgnieszkaiMykowiecka> ;
-    ns1:made <http://ceur-ws.org/Vol-744/#paper5> ;
-    ns1:name "Agnieszka Mykowiecka" .
-
-<http://ceur-ws.org/Vol-744/#AmandaiNicholson> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/AmandaiNicholson> ;
-    ns1:made <http://ceur-ws.org/Vol-744/#paper6> ;
-    ns1:name "Amanda Nicholson" .
-
-<http://ceur-ws.org/Vol-744/#AnaiJimenez-Castellanos> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/AnaiJimenez-Castellanos> ;
-    ns1:made <http://ceur-ws.org/Vol-744/#paper3> ;
-    ns1:name "Ana Jimenez-Castellanos" .
-
-<http://ceur-ws.org/Vol-744/#Ann-MarieiEklund> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/Ann-MarieiEklund> ;
-    ns1:made <http://ceur-ws.org/Vol-744/#paper4> ;
-    ns1:name "Ann-Marie Eklund" .
-
-<http://ceur-ws.org/Vol-744/#AroniHenriksson> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/AroniHenriksson> ;
-    ns1:made <http://ceur-ws.org/Vol-744/#paper9> ;
-    ns1:name "Aron Henriksson" .
-
-<http://ceur-ws.org/Vol-744/#C%C3%A9cileiParis> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/C%C3%A9cileiParis> ;
-    ns1:made <http://ceur-ws.org/Vol-744/#paper7> ;
-    ns1:name "Cécile Paris" .
-
-<http://ceur-ws.org/Vol-744/#DavidiPerez-Rey> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/DavidiPerez-Rey> ;
-    ns1:made <http://ceur-ws.org/Vol-744/#paper3> ;
-    ns1:name "David Perez-Rey" .
-
-<http://ceur-ws.org/Vol-744/#DiegoiMoll%C3%A1-Aliod> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/DiegoiMoll%C3%A1-Aliod> ;
-    ns1:made <http://ceur-ws.org/Vol-744/#paper7> ;
-    ns1:name "Diego Mollá-Aliod" .
-
-<http://ceur-ws.org/Vol-744/#HansiMoen> a ns1:Person ;
-    ns4:affiliation "" ;
-    ns3:sameAs <http://ceur-ws.org/persons/HansiMoen> ;
-    ns1:name "Hans Moen" .
-
-<http://ceur-ws.org/Vol-744/#HideyukiiTanushi> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/HideyukiiTanushi> ;
-    ns1:made <http://ceur-ws.org/Vol-744/#paper8> ;
-    ns1:name "Hideyuki Tanushi" .
-
-<http://ceur-ws.org/Vol-744/#IzaskuniFernandez> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/IzaskuniFernandez> ;
-    ns1:made <http://ceur-ws.org/Vol-744/#paper3> ;
-    ns1:name "Izaskun Fernandez" .
-
-<http://ceur-ws.org/Vol-744/#JohniCarroll> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/JohniCarroll> ;
-    ns1:made <http://ceur-ws.org/Vol-744/#paper6> ;
-    ns1:name "John Carroll" .
-
-<http://ceur-ws.org/Vol-744/#JohniDowling> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/JohniDowling> ;
-    ns1:made <http://ceur-ws.org/Vol-744/#paper10> ;
-    ns1:name "John Dowling" .
-
-<http://ceur-ws.org/Vol-744/#LauraiSlaughter> a ns1:Person ;
-    ns4:affiliation "" ;
-    ns3:sameAs <http://ceur-ws.org/persons/LauraiSlaughter> ;
-    ns1:name "Laura Slaughter" .
-
-<http://ceur-ws.org/Vol-744/#Ma%C5%82gorzataiMarciniak> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/Ma%C5%82gorzataiMarciniak> ;
-    ns1:made <http://ceur-ws.org/Vol-744/#paper5> ;
-    ns1:name "Małgorzata Marciniak" .
-
-<http://ceur-ws.org/Vol-744/#MariaiSkeppstedt> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/MariaiSkeppstedt> ;
-    ns1:made <http://ceur-ws.org/Vol-744/#paper2> ;
-    ns1:name "Maria Skeppstedt" .
-
-<http://ceur-ws.org/Vol-744/#MartiniHassel> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/MartiniHassel> ;
-    ns1:made <http://ceur-ws.org/Vol-744/#paper9> ;
-    ns1:name "Martin Hassel" .
-
-<http://ceur-ws.org/Vol-744/#MikeiConway> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/MikeiConway> ;
-    ns1:made <http://ceur-ws.org/Vol-744/#paper10> ;
-    ns1:name "Mike Conway" .
-
-<http://ceur-ws.org/Vol-744/#MoriPeleg> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/MoriPeleg> ;
-    ns1:made <http://ceur-ws.org/Vol-744/#paper1> ;
-    ns1:name "Mor Peleg" .
-
-<http://ceur-ws.org/Vol-744/#RobiKoeling> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/RobiKoeling> ;
-    ns1:made <http://ceur-ws.org/Vol-744/#paper6> ;
-    ns1:name "Rob Koeling" .
-
-<http://ceur-ws.org/Vol-744/#WendyiChapman> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/WendyiChapman> ;
-    ns1:made <http://ceur-ws.org/Vol-744/#paper10> ;
-    ns1:name "Wendy Chapman" .
-
-<http://ceur-ws.org/Vol-744/#XabieriGarc%C3%ADaiDeiKortazar> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/XabieriGarc%C3%ADaiDeiKortazar> ;
-    ns1:made <http://ceur-ws.org/Vol-744/#paper3> ;
-    ns1:name "Xabier García De Kortazar" .
+<http://ceur-ws.org/Vol-744/#LauraiSlaughter> a ns2:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/LauraiSlaughter> ;
+    ns2:name "Laura Slaughter" .
 
 <http://ceur-ws.org/Vol-744/#event> a ns5:WorkshopEvent ;
     ns5:hasLocation <http://dbpedia.org/resource/Euro_gold_and_silver_commemorative_coins> ;
-    ns5:hasPart <http://ceur-ws.org/Vol-744/#part-LOUHI> ;
+    ns5:hasPart <http://ceur-ws.org/Vol-744/#part-CEUR-WS> ;
     ns5:isSubEventOf <http://ceur-ws.org/Vol-744/#conf> ;
-    ns7:beginsAtDatetime "2011-07-06T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:endsAtDatetime "2011-07-06T00:00:00+00:00"^^xsd:dateTime ;
-    ns2:license <http://choosealicense.com/licenses/no-license/> .
-
-<http://ceur-ws.org/Vol-744/#GunnariHiNilsson> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/GunnariHiNilsson> ;
-    ns1:made <http://ceur-ws.org/Vol-744/#paper2>,
-        <http://ceur-ws.org/Vol-744/#paper8> ;
-    ns1:name "Gunnar H Nilsson" .
-
-<http://ceur-ws.org/Vol-744/#HerculesiDalianis> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/HerculesiDalianis> ;
-    ns1:made <http://ceur-ws.org/Vol-744/#paper2>,
-        <http://ceur-ws.org/Vol-744/#paper8> ;
-    ns1:name "Hercules Dalianis" .
-
-<http://ceur-ws.org/Vol-744/#paper1> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-744/> ;
-    ns2:title "Futuristic Usage of EHR Content by Clinical Guideline-based Decision-support Systems" ;
-    ns6:endPage 9 ;
-    ns6:numPages 1 ;
-    ns6:startPage 9 ;
-    ns4:author <http://ceur-ws.org/Vol-744/#MoriPeleg> .
-
-<http://ceur-ws.org/Vol-744/#paper4> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-744/> ;
-    ns2:title "Relational Annotation of Scientific Medical Corpora - A Case Study" ;
-    ns6:endPage 34 ;
-    ns6:numPages 8 ;
-    ns6:startPage 27 ;
-    ns4:author <http://ceur-ws.org/Vol-744/#Ann-MarieiEklund> .
-
-<http://ceur-ws.org/Vol-744/#paper5> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-744/> ;
-    ns2:title "Some Remarks on Automatic Semantic Annotation of a Medical Corpus" ;
-    ns6:endPage 42 ;
-    ns6:numPages 8 ;
-    ns6:startPage 35 ;
-    ns4:author <http://ceur-ws.org/Vol-744/#AgnieszkaiMykowiecka>,
-        <http://ceur-ws.org/Vol-744/#Ma%C5%82gorzataiMarciniak> .
-
-<http://ceur-ws.org/Vol-744/#paper9> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-744/> ;
-    ns2:title "Election of Diagnosis Codes: Words as Responsible Citizens" ;
-    ns6:endPage 74 ;
-    ns6:numPages 8 ;
-    ns6:startPage 67 ;
-    ns4:author <http://ceur-ws.org/Vol-744/#AroniHenriksson>,
-        <http://ceur-ws.org/Vol-744/#MartiniHassel> .
-
-<http://ceur-ws.org/Vol-744/#paper10> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-744/> ;
-    ns2:title "Developing an Application Ontology for Mining Free Text Clinical Reports: The Extended Syndromic Surveillance Ontology" ;
-    ns6:endPage 82 ;
-    ns6:numPages 8 ;
-    ns6:startPage 75 ;
-    ns4:author <http://ceur-ws.org/Vol-744/#JohniDowling>,
-        <http://ceur-ws.org/Vol-744/#MikeiConway>,
-        <http://ceur-ws.org/Vol-744/#WendyiChapman> .
-
-<http://ceur-ws.org/Vol-744/#paper2> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-744/> ;
-    ns2:title "Retrieving Disorders and Findings: Results Using SNOMED CT and NegEx Adapted for Swedish" ;
-    ns6:endPage 17 ;
-    ns6:numPages 7 ;
-    ns6:startPage 11 ;
-    ns4:author <http://ceur-ws.org/Vol-744/#GunnariHiNilsson>,
-        <http://ceur-ws.org/Vol-744/#HerculesiDalianis>,
-        <http://ceur-ws.org/Vol-744/#MariaiSkeppstedt> .
-
-<http://ceur-ws.org/Vol-744/#paper7> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-744/> ;
-    ns2:title "Towards Automatic Grading of Evidence" ;
-    ns6:endPage 58 ;
-    ns6:numPages 8 ;
-    ns6:startPage 51 ;
-    ns4:author <http://ceur-ws.org/Vol-744/#AbeediSarker>,
-        <http://ceur-ws.org/Vol-744/#C%C3%A9cileiParis>,
-        <http://ceur-ws.org/Vol-744/#DiegoiMoll%C3%A1-Aliod> .
-
-<http://ceur-ws.org/Vol-744/#paper8> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-744/> ;
-    ns2:title "Calculating Prevalence of Comorbidity and Comorbidity Combinations with Diabetes in Hospital Care in Sweden Using a Health Care Record Database" ;
-    ns6:endPage 65 ;
-    ns6:numPages 7 ;
-    ns6:startPage 59 ;
-    ns4:author <http://ceur-ws.org/Vol-744/#GunnariHiNilsson>,
-        <http://ceur-ws.org/Vol-744/#HerculesiDalianis>,
-        <http://ceur-ws.org/Vol-744/#HideyukiiTanushi> .
-
-<http://ceur-ws.org/Vol-744/#paper3> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-744/> ;
-    ns2:title "A New Method to Retrieve, Cluster And Annotate Clinical Literature Related To Electronic Health Records" ;
-    ns6:endPage 26 ;
-    ns6:numPages 8 ;
-    ns6:startPage 19 ;
-    ns4:author <http://ceur-ws.org/Vol-744/#AnaiJimenez-Castellanos>,
-        <http://ceur-ws.org/Vol-744/#DavidiPerez-Rey>,
-        <http://ceur-ws.org/Vol-744/#IzaskuniFernandez>,
-        <http://ceur-ws.org/Vol-744/#XabieriGarc%C3%ADaiDeiKortazar> .
-
-<http://ceur-ws.org/Vol-744/#paper6> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-744/> ;
-    ns2:title "Annotating a Corpus of Clinical Text Records for Learning to Recognize Symptoms Automatically" ;
-    ns6:endPage 50 ;
-    ns6:numPages 8 ;
-    ns6:startPage 43 ;
-    ns4:author <http://ceur-ws.org/Vol-744/#A.iRosemaryiTate>,
-        <http://ceur-ws.org/Vol-744/#AmandaiNicholson>,
-        <http://ceur-ws.org/Vol-744/#JohniCarroll>,
-        <http://ceur-ws.org/Vol-744/#RobiKoeling> .
-
-<http://ceur-ws.org/Vol-744/> a ns5:Proceedings ;
-    ns5:hasPart <http://ceur-ws.org/Vol-744/#paper1>,
-        <http://ceur-ws.org/Vol-744/#paper10>,
-        <http://ceur-ws.org/Vol-744/#paper2>,
-        <http://ceur-ws.org/Vol-744/#paper3>,
-        <http://ceur-ws.org/Vol-744/#paper4>,
-        <http://ceur-ws.org/Vol-744/#paper5>,
-        <http://ceur-ws.org/Vol-744/#paper6>,
-        <http://ceur-ws.org/Vol-744/#paper7>,
-        <http://ceur-ws.org/Vol-744/#paper8>,
-        <http://ceur-ws.org/Vol-744/#paper9> ;
-    ns8:issued "2011-08-17T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:presentedAt <http://ceur-ws.org/Vol-744/#event> ;
-    ns4:editor <http://ceur-ws.org/Vol-744/#%C3%98ysteiniNytr%C3%B8>,
-        <http://ceur-ws.org/Vol-744/#HansiMoen>,
-        <http://ceur-ws.org/Vol-744/#LauraiSlaughter> .
+    ns8:beginsAtDatetime "2011-07-06T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:endsAtDatetime "2011-07-06T00:00:00+00:00"^^xsd:dateTime ;
+    ns4:license "http://choosealicense.com/licenses/no-license/" .
 

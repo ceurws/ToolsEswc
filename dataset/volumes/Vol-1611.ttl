@@ -1,143 +1,45 @@
-@prefix ns1: <http://purl.org/ontology/bibo/#> .
+@prefix ns1: <http://data.semanticweb.org/ns/swc/ontology/#> .
 @prefix ns2: <http://xmlns.com/foaf/0.1/> .
-@prefix ns3: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns4: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns5: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns6: <http://www.w3.org/2002/07/owl#> .
-@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns3: <http://www.w3.org/2002/07/owl#> .
+@prefix ns4: <http://purl.org/ontology/bibo/#> .
+@prefix ns5: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns6: <http://purl.org/dc/elements/1.1/> .
+@prefix ns7: <http://swrc.ontoware.org/ontology/#> .
 @prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1611/#CheryliKlimaszewski> a ns2:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/CheryliKlimaszewski> ;
-    ns2:made <http://ceur-ws.org/Vol-1611/#paper1> ;
-    ns2:name "Cheryl Klimaszewski" .
-
-<http://ceur-ws.org/Vol-1611/#DavidiWalsh> a ns2:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/DavidiWalsh> ;
-    ns2:made <http://ceur-ws.org/Vol-1611/#paper6> ;
-    ns2:name "David Walsh" .
-
-<http://ceur-ws.org/Vol-1611/#GaryiMunnelly> a ns2:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/GaryiMunnelly> ;
-    ns2:made <http://ceur-ws.org/Vol-1611/#paper4> ;
-    ns2:name "Gary Munnelly" .
-
-<http://ceur-ws.org/Vol-1611/#GiorgioiMariaiDiiNunzio> a ns2:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/GiorgioiMariaiDiiNunzio> ;
-    ns2:made <http://ceur-ws.org/Vol-1611/#paper3> ;
-    ns2:name "Giorgio Maria Di Nunzio" .
-
-<http://ceur-ws.org/Vol-1611/#MaristellaiAgosti> a ns2:Person ;
-    ns3:affiliation "" ;
-    ns6:sameAs <http://ceur-ws.org/persons/MaristellaiAgosti> ;
-    ns2:name "Maristella Agosti" .
-
-<http://ceur-ws.org/Vol-1611/#NicolaiFerro> a ns2:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/NicolaiFerro> ;
-    ns2:made <http://ceur-ws.org/Vol-1611/#paper2> ;
-    ns2:name "Nicola Ferro" .
-
-<http://ceur-ws.org/Vol-1611/#PauliClough> a ns2:Person ;
-    ns3:affiliation "" ;
-    ns6:sameAs <http://ceur-ws.org/persons/PauliClough> ;
-    ns2:name "Paul Clough" .
-
-<http://ceur-ws.org/Vol-1611/#PhilipiWebster> a ns2:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/PhilipiWebster> ;
-    ns2:made <http://ceur-ws.org/Vol-1611/#paper5> ;
-    ns2:name "Philip Webster" .
-
-<http://ceur-ws.org/Vol-1611/#S%C3%A9amusiLawless> a ns2:Person ;
-    ns3:affiliation "" ;
-    ns6:sameAs <http://ceur-ws.org/persons/S%C3%A9amusiLawless> ;
-    ns2:name "Séamus Lawless" .
-
-<http://ceur-ws.org/Vol-1611/#event> a ns5:WorkshopEvent ;
-    ns5:hasLocation <http://dbpedia.org/resource/United_States> ;
-    ns5:hasPart <http://ceur-ws.org/Vol-1611/#part-ACHS> ;
-    ns5:isSubEventOf <http://ceur-ws.org/Vol-1611/#conf> ;
-    ns8:beginsAtDatetime "2016-06-22T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:endsAtDatetime "2016-06-22T00:00:00+00:00"^^xsd:dateTime .
-
-<http://ceur-ws.org/Vol-1611/#PaulaiGoodale> a ns2:Person ;
-    ns3:affiliation "" ;
-    ns6:sameAs <http://ceur-ws.org/persons/PaulaiGoodale> ;
-    ns2:made <http://ceur-ws.org/Vol-1611/#paper8> ;
-    ns2:name "Paula Goodale" .
-
-<http://ceur-ws.org/Vol-1611/#paper1> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1611/> ;
-    ns4:title "What makes you click? A Case Study of One User’s Experience of the Europeana.eu Portal" ;
-    ns1:section <http%3A//ceur-ws.org/Vol-1611/%23Session3%3APosterPapers> ;
-    ns3:author <http://ceur-ws.org/Vol-1611/#CheryliKlimaszewski> .
-
-<http://ceur-ws.org/Vol-1611/#paper2> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1611/> ;
-    ns4:title "From Users to Systems: Identifying and Overcoming Barriers to Efficiently Access Archival Data" ;
-    ns1:section <http%3A//ceur-ws.org/Vol-1611/%23Session1%3AFullPapers> ;
-    ns3:author <http://ceur-ws.org/Vol-1611/#NicolaiFerro> .
-
-<http://ceur-ws.org/Vol-1611/#paper3> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1611/> ;
-    ns4:title "A Love-Hate Relationship for Big Data and Linguistics: Present Issues and Future Possibilities" ;
-    ns1:section <http%3A//ceur-ws.org/Vol-1611/%23Session3%3APosterPapers> ;
-    ns3:author <http://ceur-ws.org/Vol-1611/#GiorgioiMariaiDiiNunzio> .
-
-<http://ceur-ws.org/Vol-1611/#paper4> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1611/> ;
-    ns4:title "Exposing Ourselves: Displaying our Cultural Assets for Public Consumption" ;
-    ns1:section <http%3A//ceur-ws.org/Vol-1611/%23Session2%3AShortPapers> ;
-    ns3:author <http://ceur-ws.org/Vol-1611/#GaryiMunnelly> .
-
-<http://ceur-ws.org/Vol-1611/#paper5> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1611/> ;
-    ns4:title "Exploring Entity-Centric Methods in the UK Government Web Archive" ;
-    ns1:section <http%3A//ceur-ws.org/Vol-1611/%23Session2%3AShortPapers> ;
-    ns3:author <http://ceur-ws.org/Vol-1611/#PhilipiWebster> .
-
-<http://ceur-ws.org/Vol-1611/#paper6> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1611/> ;
-    ns4:title "User Categories for Digital Cultural Heritage" ;
-    ns1:section <http%3A//ceur-ws.org/Vol-1611/%23Session1%3AFullPapers> ;
-    ns3:author <http://ceur-ws.org/Vol-1611/#DavidiWalsh> .
-
-<http://ceur-ws.org/Vol-1611/#paper8> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1611/> ;
-    ns4:title "Individual Differences in Exploration and Content Curation Activities within a Cultural Heritage Digital Library" ;
-    ns1:section <http%3A//ceur-ws.org/Vol-1611/%23Session2%3AShortPapers> ;
-    ns3:author <http://ceur-ws.org/Vol-1611/#PaulaiGoodale> .
-
-<http%3A//ceur-ws.org/Vol-1611/%23Session1%3AFullPapers> a ns5:SessionEvent ;
-    ns5:partOf <http://ceur-ws.org/Vol-1611/> ;
-    ns4:title "Session 1: Full Papers" .
-
-<http%3A//ceur-ws.org/Vol-1611/%23Session3%3APosterPapers> a ns5:SessionEvent ;
-    ns5:partOf <http://ceur-ws.org/Vol-1611/> ;
-    ns4:title "Session 3: Poster Papers" .
-
-<http%3A//ceur-ws.org/Vol-1611/%23Session2%3AShortPapers> a ns5:SessionEvent ;
-    ns5:partOf <http://ceur-ws.org/Vol-1611/> ;
-    ns4:title "Session 2: Short Papers" .
-
-<http://ceur-ws.org/Vol-1611/> a ns5:Proceedings ;
-    ns5:hasPart <http://ceur-ws.org/Vol-1611/#paper1>,
-        <http://ceur-ws.org/Vol-1611/#paper2>,
-        <http://ceur-ws.org/Vol-1611/#paper3>,
-        <http://ceur-ws.org/Vol-1611/#paper4>,
-        <http://ceur-ws.org/Vol-1611/#paper5>,
-        <http://ceur-ws.org/Vol-1611/#paper6>,
-        <http://ceur-ws.org/Vol-1611/#paper8> ;
-    ns5:hasSession <http%3A//ceur-ws.org/Vol-1611/%23Session1%3AFullPapers>,
-        <http%3A//ceur-ws.org/Vol-1611/%23Session2%3AShortPapers>,
-        <http%3A//ceur-ws.org/Vol-1611/%23Session3%3APosterPapers> ;
-    ns7:issued "2016-06-18T00:00:00+00:00"^^xsd:dateTime ;
-    ns1:presentedAt <http://ceur-ws.org/Vol-1611/#event> ;
-    ns3:editor <http://ceur-ws.org/Vol-1611/#MaristellaiAgosti>,
+<http://ceur-ws.org/Vol-1611/> a ns1:Proceedings ;
+    ns5:issued "2016-06-18T00:00:00+00:00"^^xsd:dateTime ;
+    ns4:presentedAt <http://ceur-ws.org/Vol-1611/#event> ;
+    ns7:editor <http://ceur-ws.org/Vol-1611/#MaristellaiAgosti>,
         <http://ceur-ws.org/Vol-1611/#PaulaiGoodale>,
         <http://ceur-ws.org/Vol-1611/#PauliClough>,
         <http://ceur-ws.org/Vol-1611/#S%C3%A9amusiLawless> .
+
+<http://ceur-ws.org/Vol-1611/#MaristellaiAgosti> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/MaristellaiAgosti> ;
+    ns2:name "Maristella Agosti" .
+
+<http://ceur-ws.org/Vol-1611/#PaulaiGoodale> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/PaulaiGoodale> ;
+    ns2:name "Paula Goodale" .
+
+<http://ceur-ws.org/Vol-1611/#PauliClough> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/PauliClough> ;
+    ns2:name "Paul Clough" .
+
+<http://ceur-ws.org/Vol-1611/#S%C3%A9amusiLawless> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/S%C3%A9amusiLawless> ;
+    ns2:name "Séamus Lawless" .
+
+<http://ceur-ws.org/Vol-1611/#event> a ns1:WorkshopEvent ;
+    ns1:hasLocation <http://dbpedia.org/resource/United_States> ;
+    ns1:hasPart <http://ceur-ws.org/Vol-1611/#part-ws> ;
+    ns1:isSubEventOf <http://ceur-ws.org/Vol-1611/#conf> ;
+    ns8:beginsAtDatetime "2016-06-22T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:endsAtDatetime "2016-06-22T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:license "http://creativecommons.org/publicdomain/zero/1.0/" .
 

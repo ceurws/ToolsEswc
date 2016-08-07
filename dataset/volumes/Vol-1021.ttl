@@ -1,192 +1,39 @@
-@prefix ns1: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns2: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns3: <http://www.w3.org/2002/07/owl#> .
-@prefix ns4: <http://xmlns.com/foaf/0.1/> .
+@prefix ns1: <http://purl.org/ontology/bibo/#> .
+@prefix ns2: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns3: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns4: <http://www.w3.org/2002/07/owl#> .
 @prefix ns5: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns6: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns7: <http://purl.org/ontology/bibo/#> .
-@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns6: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns7: <http://purl.org/dc/elements/1.1/> .
+@prefix ns8: <http://xmlns.com/foaf/0.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1021/#AndreasiMeyer> a ns4:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/AndreasiMeyer> ;
-    ns4:made <http://ceur-ws.org/Vol-1021/#paper_4> ;
-    ns4:name "Andreas Meyer" .
+<http://ceur-ws.org/Vol-1021/> a ns5:Proceedings ;
+    ns6:issued "2013-08-18T00:00:00+00:00"^^xsd:dateTime ;
+    ns1:presentedAt <http://ceur-ws.org/Vol-1021/#event> ;
+    ns3:editor <http://ceur-ws.org/Vol-1021/#BoudewijnivaniDongen>,
+        <http://ceur-ws.org/Vol-1021/#Marie-ChristineiFauvet> .
 
-<http://ceur-ws.org/Vol-1021/#Ant%C3%B3nioiRitoiSilva> a ns4:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/Ant%C3%B3nioiRitoiSilva> ;
-    ns4:made <http://ceur-ws.org/Vol-1021/#paper_7> ;
-    ns4:name "António Rito Silva" .
+<http://ceur-ws.org/Vol-1021/#BoudewijnivaniDongen> a ns8:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/BoudewijnivaniDongen> ;
+    ns8:name "Boudewijn van Dongen" .
 
-<http://ceur-ws.org/Vol-1021/#BoudewijnivaniDongen> a ns4:Person ;
-    ns2:affiliation "" ;
-    ns3:sameAs <http://ceur-ws.org/persons/BoudewijnivaniDongen> ;
-    ns4:name "Boudewijn van Dongen" .
-
-<http://ceur-ws.org/Vol-1021/#ChristianiRess> a ns4:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/ChristianiRess> ;
-    ns4:made <http://ceur-ws.org/Vol-1021/#paper_5> ;
-    ns4:name "Christian Ress" .
-
-<http://ceur-ws.org/Vol-1021/#ChristianiStahl> a ns4:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/ChristianiStahl> ;
-    ns4:made <http://ceur-ws.org/Vol-1021/#paper_10> ;
-    ns4:name "Christian Stahl" .
-
-<http://ceur-ws.org/Vol-1021/#DavidiMartinho> a ns4:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/DavidiMartinho> ;
-    ns4:made <http://ceur-ws.org/Vol-1021/#paper_7> ;
-    ns4:name "David Martinho" .
-
-<http://ceur-ws.org/Vol-1021/#DirkiFahland> a ns4:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/DirkiFahland> ;
-    ns4:made <http://ceur-ws.org/Vol-1021/#paper_4> ;
-    ns4:name "Dirk Fahland" .
-
-<http://ceur-ws.org/Vol-1021/#FabrizioiMariaiMaggi> a ns4:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/FabrizioiMariaiMaggi> ;
-    ns4:made <http://ceur-ws.org/Vol-1021/#paper_8> ;
-    ns4:name "Fabrizio Maria Maggi" .
-
-<http://ceur-ws.org/Vol-1021/#HyuniAhn> a ns4:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/HyuniAhn> ;
-    ns4:made <http://ceur-ws.org/Vol-1021/#paper_11> ;
-    ns4:name "Hyun Ahn" .
-
-<http://ceur-ws.org/Vol-1021/#KwanghooniPioiKim> a ns4:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/KwanghooniPioiKim> ;
-    ns4:made <http://ceur-ws.org/Vol-1021/#paper_11> ;
-    ns4:name "Kwanghoon Pio Kim" .
-
-<http://ceur-ws.org/Vol-1021/#LuiseiPufahl> a ns4:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/LuiseiPufahl> ;
-    ns4:made <http://ceur-ws.org/Vol-1021/#paper_4> ;
-    ns4:name "Luise Pufahl" .
-
-<http://ceur-ws.org/Vol-1021/#MarciKerremans> a ns4:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/MarciKerremans> ;
-    ns4:made <http://ceur-ws.org/Vol-1021/#paper_2> ;
-    ns4:name "Marc Kerremans" .
-
-<http://ceur-ws.org/Vol-1021/#Marie-ChristineiFauvet> a ns4:Person ;
-    ns2:affiliation "" ;
-    ns3:sameAs <http://ceur-ws.org/persons/Marie-ChristineiFauvet> ;
-    ns4:name "Marie-Christine Fauvet" .
-
-<http://ceur-ws.org/Vol-1021/#MathiasiWeske> a ns4:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/MathiasiWeske> ;
-    ns4:made <http://ceur-ws.org/Vol-1021/#paper_4> ;
-    ns4:name "Mathias Weske" .
-
-<http://ceur-ws.org/Vol-1021/#MatthiasiKunze> a ns4:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/MatthiasiKunze> ;
-    ns4:made <http://ceur-ws.org/Vol-1021/#paper_5> ;
-    ns4:name "Matthias Kunze" .
-
-<http://ceur-ws.org/Vol-1021/#MinjaeiPark> a ns4:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/MinjaeiPark> ;
-    ns4:made <http://ceur-ws.org/Vol-1021/#paper_11> ;
-    ns4:name "Minjae Park" .
-
-<http://ceur-ws.org/Vol-1021/#TijsiSlaats> a ns4:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/TijsiSlaats> ;
-    ns4:made <http://ceur-ws.org/Vol-1021/#paper_3> ;
-    ns4:name "Tijs Slaats" .
+<http://ceur-ws.org/Vol-1021/#Marie-ChristineiFauvet> a ns8:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/Marie-ChristineiFauvet> ;
+    ns8:name "Marie-Christine Fauvet" .
 
 <http://ceur-ws.org/Vol-1021/#event> a ns5:WorkshopEvent ;
     ns5:hasLocation <http://dbpedia.org/resource/China> ;
-    ns5:hasPart <http://ceur-ws.org/Vol-1021/#part-BPMD> ;
+    ns5:hasPart <http://ceur-ws.org/Vol-1021/#part-CEUR-WS> ;
     ns5:isSubEventOf <http://ceur-ws.org/Vol-1021/#conf> ;
-    ns6:beginsAtDatetime "2013-08-26T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:endsAtDatetime "2013-08-30T00:00:00+00:00"^^xsd:dateTime ;
-    ns1:license <http://choosealicense.com/licenses/no-license/> ;
+    ns2:beginsAtDatetime "2013-08-26T00:00:00+00:00"^^xsd:dateTime ;
+    ns2:endsAtDatetime "2013-08-30T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:license "http://choosealicense.com/licenses/no-license/" ;
     rdfs:seeAlso <http://ceur-ws.org/Vol-489/#event>,
         <http://ceur-ws.org/Vol-615/#event>,
         <http://ceur-ws.org/Vol-820/#event>,
         <http://ceur-ws.org/Vol-940/#event> .
-
-<http://ceur-ws.org/Vol-1021/#MichaeliWestergaard> a ns4:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/MichaeliWestergaard> ;
-    ns4:made <http://ceur-ws.org/Vol-1021/#paper_10>,
-        <http://ceur-ws.org/Vol-1021/#paper_3> ;
-    ns4:name "Michael Westergaard" .
-
-<http://ceur-ws.org/Vol-1021/#paper_2> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1021/> ;
-    ns1:title "VisionWaves: Aligning Business Process Management and Performance Management to Achieve Business (Process) Excellence" ;
-    ns7:section <http%3A//ceur-ws.org/Vol-1021/%23DemoPapers> ;
-    ns2:author <http://ceur-ws.org/Vol-1021/#MarciKerremans> .
-
-<http://ceur-ws.org/Vol-1021/#paper_8> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1021/> ;
-    ns1:title "Declarative Process Mining with the Declare Component of ProM" ;
-    ns7:section <http%3A//ceur-ws.org/Vol-1021/%23DemoPapers> ;
-    ns2:author <http://ceur-ws.org/Vol-1021/#FabrizioiMariaiMaggi> .
-
-<http://ceur-ws.org/Vol-1021/#paper_10> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1021/> ;
-    ns1:title "Leveraging Super-Scalarity and Parallelism to Provide Fast Declare Mining without Restrictions" ;
-    ns7:section <http%3A//ceur-ws.org/Vol-1021/%23DemoPapers> ;
-    ns2:author <http://ceur-ws.org/Vol-1021/#ChristianiStahl>,
-        <http://ceur-ws.org/Vol-1021/#MichaeliWestergaard> .
-
-<http://ceur-ws.org/Vol-1021/#paper_3> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1021/> ;
-    ns1:title "CPN Tools 4: A Process Modeling Tool Combining Declarative and Imperative Paradigms" ;
-    ns7:section <http%3A//ceur-ws.org/Vol-1021/%23DemoPapers> ;
-    ns2:author <http://ceur-ws.org/Vol-1021/#MichaeliWestergaard>,
-        <http://ceur-ws.org/Vol-1021/#TijsiSlaats> .
-
-<http://ceur-ws.org/Vol-1021/#paper_5> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1021/> ;
-    ns1:title "An Extensible Platform for Process Model Search and Evaluation" ;
-    ns7:section <http%3A//ceur-ws.org/Vol-1021/%23DemoPapers> ;
-    ns2:author <http://ceur-ws.org/Vol-1021/#ChristianiRess>,
-        <http://ceur-ws.org/Vol-1021/#MatthiasiKunze> .
-
-<http://ceur-ws.org/Vol-1021/#paper_7> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1021/> ;
-    ns1:title "Worklr: Supporting and Capturing Business Processes from Knowledge Workers" ;
-    ns7:section <http%3A//ceur-ws.org/Vol-1021/%23DemoPapers> ;
-    ns2:author <http://ceur-ws.org/Vol-1021/#Ant%C3%B3nioiRitoiSilva>,
-        <http://ceur-ws.org/Vol-1021/#DavidiMartinho> .
-
-<http://ceur-ws.org/Vol-1021/#paper_11> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1021/> ;
-    ns1:title "wOIS - Discovering Performer-Activity Affiliation Networking Knowledge from XPDL-based Worflow Models" ;
-    ns7:section <http%3A//ceur-ws.org/Vol-1021/%23DemoPapers> ;
-    ns2:author <http://ceur-ws.org/Vol-1021/#HyuniAhn>,
-        <http://ceur-ws.org/Vol-1021/#KwanghooniPioiKim>,
-        <http://ceur-ws.org/Vol-1021/#MinjaeiPark> .
-
-<http://ceur-ws.org/Vol-1021/#paper_4> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1021/> ;
-    ns1:title "Enacting Complex Data Dependencies from Activity-Centric Business Process Models" ;
-    ns7:section <http%3A//ceur-ws.org/Vol-1021/%23DemoPapers> ;
-    ns2:author <http://ceur-ws.org/Vol-1021/#AndreasiMeyer>,
-        <http://ceur-ws.org/Vol-1021/#DirkiFahland>,
-        <http://ceur-ws.org/Vol-1021/#LuiseiPufahl>,
-        <http://ceur-ws.org/Vol-1021/#MathiasiWeske> .
-
-<http%3A//ceur-ws.org/Vol-1021/%23DemoPapers> a ns5:SessionEvent ;
-    ns5:partOf <http://ceur-ws.org/Vol-1021/> ;
-    ns1:title "Demo Papers" .
-
-<http://ceur-ws.org/Vol-1021/> a ns5:Proceedings ;
-    ns5:hasPart <http://ceur-ws.org/Vol-1021/#paper_10>,
-        <http://ceur-ws.org/Vol-1021/#paper_11>,
-        <http://ceur-ws.org/Vol-1021/#paper_2>,
-        <http://ceur-ws.org/Vol-1021/#paper_3>,
-        <http://ceur-ws.org/Vol-1021/#paper_4>,
-        <http://ceur-ws.org/Vol-1021/#paper_5>,
-        <http://ceur-ws.org/Vol-1021/#paper_7>,
-        <http://ceur-ws.org/Vol-1021/#paper_8> ;
-    ns5:hasSession <http%3A//ceur-ws.org/Vol-1021/%23DemoPapers> ;
-    ns8:issued "2013-08-18T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:presentedAt <http://ceur-ws.org/Vol-1021/#event> ;
-    ns2:editor <http://ceur-ws.org/Vol-1021/#BoudewijnivaniDongen>,
-        <http://ceur-ws.org/Vol-1021/#Marie-ChristineiFauvet> .
 

@@ -1,208 +1,48 @@
-@prefix ns1: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns2: <http://xmlns.com/foaf/0.1/> .
+@prefix ns1: <http://xmlns.com/foaf/0.1/> .
+@prefix ns2: <http://www.w3.org/2002/07/owl#> .
 @prefix ns3: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns4: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns5: <http://www.w3.org/2002/07/owl#> .
-@prefix ns6: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns7: <http://purl.org/ontology/bibo/#> .
-@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns4: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns5: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns6: <http://purl.org/dc/elements/1.1/> .
+@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns8: <http://purl.org/ontology/bibo/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1306/#AndreaiWei-ChingiHuang> a ns2:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/AndreaiWei-ChingiHuang> ;
-    ns2:made <http://ceur-ws.org/Vol-1306/#paper6> ;
-    ns2:name "Andrea Wei-Ching Huang" .
-
-<http://ceur-ws.org/Vol-1306/#AngelaiDiiIorio> a ns2:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/AngelaiDiiIorio> ;
-    ns2:made <http://ceur-ws.org/Vol-1306/#paper3> ;
-    ns2:name "Angela Di Iorio" .
-
-<http://ceur-ws.org/Vol-1306/#BernhardiHumm> a ns2:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/BernhardiHumm> ;
-    ns2:made <http://ceur-ws.org/Vol-1306/#paper5> ;
-    ns2:name "Bernhard Humm" .
-
-<http://ceur-ws.org/Vol-1306/#HeleniHockx-Yu> a ns2:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/HeleniHockx-Yu> ;
-    ns2:made <http://ceur-ws.org/Vol-1306/#paper1> ;
-    ns2:name "Helen Hockx-Yu" .
-
-<http://ceur-ws.org/Vol-1306/#MarcoiSchaerf> a ns2:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/MarcoiSchaerf> ;
-    ns2:made <http://ceur-ws.org/Vol-1306/#paper3> ;
-    ns2:name "Marco Schaerf" .
-
-<http://ceur-ws.org/Vol-1306/#RogeriCummings> a ns2:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/RogeriCummings> ;
-    ns2:made <http://ceur-ws.org/Vol-1306/#paper2> ;
-    ns2:name "Roger Cummings" .
-
-<http://ceur-ws.org/Vol-1306/#SamiFineberg> a ns2:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/SamiFineberg> ;
-    ns2:made <http://ceur-ws.org/Vol-1306/#paper2> ;
-    ns2:name "Sam Fineberg" .
-
-<http://ceur-ws.org/Vol-1306/#SeamusiRoss> a ns2:Person ;
-    ns3:affiliation "" ;
-    ns5:sameAs <http://ceur-ws.org/persons/SeamusiRoss> ;
-    ns2:name "Seamus Ross" .
-
-<http://ceur-ws.org/Vol-1306/#SimonaiRabinovici-Cohen> a ns2:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/SimonaiRabinovici-Cohen> ;
-    ns2:made <http://ceur-ws.org/Vol-1306/#paper2> ;
-    ns2:name "Simona Rabinovici-Cohen" .
-
-<http://ceur-ws.org/Vol-1306/#StefaniHaun> a ns2:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/StefaniHaun> ;
-    ns2:made <http://ceur-ws.org/Vol-1306/#paper4> ;
-    ns2:name "Stefan Haun" .
-
-<http://ceur-ws.org/Vol-1306/#ThomasiRisse> a ns2:Person ;
-    ns3:affiliation "" ;
-    ns5:sameAs <http://ceur-ws.org/persons/ThomasiRisse> ;
-    ns2:name "Thomas Risse" .
-
-<http://ceur-ws.org/Vol-1306/#TilmaniDeuschel> a ns2:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/TilmaniDeuschel> ;
-    ns2:made <http://ceur-ws.org/Vol-1306/#paper5> ;
-    ns2:name "Tilman Deuschel" .
-
-<http://ceur-ws.org/Vol-1306/#TimmiHeuss> a ns2:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/TimmiHeuss> ;
-    ns2:made <http://ceur-ws.org/Vol-1306/#paper5> ;
-    ns2:name "Timm Heuss" .
-
-<http://ceur-ws.org/Vol-1306/#Tyng-RueyiChuang> a ns2:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/Tyng-RueyiChuang> ;
-    ns2:made <http://ceur-ws.org/Vol-1306/#paper6> ;
-    ns2:name "Tyng-Ruey Chuang" .
-
-<http://ceur-ws.org/Vol-1306/#event> a ns1:WorkshopEvent ;
-    ns1:hasLocation <http://dbpedia.org/resource/United_Kingdom> ;
-    ns1:hasPart <http://ceur-ws.org/Vol-1306/#part-SDA> ;
-    ns1:isSubEventOf <http://ceur-ws.org/Vol-1306/#conf> ;
-    ns6:beginsAtDatetime "2014-09-12T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:endsAtDatetime "2014-09-12T00:00:00+00:00"^^xsd:dateTime ;
-    rdfs:seeAlso <http://ceur-ws.org/Vol-1091/#event>,
-        <http://ceur-ws.org/Vol-801/#event>,
-        <http://ceur-ws.org/Vol-912/#event> .
-
-<http://ceur-ws.org/Vol-1306/#metadataiincl.ibibliographicidataipublishediunder> a ns2:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/metadataiincl.ibibliographicidataipublishediunder> ;
-    ns2:made <http://ceur-ws.org/Vol-1306/#paperX1> ;
-    ns2:name "metadata incl. bibliographic data published under" .
-
-<http%3A//ceur-ws.org/Vol-1306/%23InvitedContribution> a ns1:SessionEvent ;
-    ns1:partOf <http://ceur-ws.org/Vol-1306/> ;
-    ns4:title "Invited Contribution" .
-
-<http://ceur-ws.org/Vol-1306/#AndreasiN%C3%BCrnberger> a ns2:Person ;
-    ns3:affiliation "" ;
-    ns5:sameAs <http://ceur-ws.org/persons/AndreasiN%C3%BCrnberger> ;
-    ns2:made <http://ceur-ws.org/Vol-1306/#paper4> ;
-    ns2:name "Andreas Nürnberger" .
-
-<http://ceur-ws.org/Vol-1306/#LiviaiPredoiu> a ns2:Person ;
-    ns3:affiliation "" ;
-    ns5:sameAs <http://ceur-ws.org/persons/LiviaiPredoiu> ;
-    ns2:made <http://ceur-ws.org/Vol-1306/#paperX1> ;
-    ns2:name "Livia Predoiu" .
-
-<http://ceur-ws.org/Vol-1306/#paper1> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-1306/> ;
-    ns4:title "Understanding Web Archives" ;
-    ns7:endPage 3 ;
-    ns7:numPages 3 ;
-    ns7:section <http%3A//ceur-ws.org/Vol-1306/%23InvitedContribution> ;
-    ns7:startPage 1 ;
-    ns3:author <http://ceur-ws.org/Vol-1306/#HeleniHockx-Yu> .
-
-<http://ceur-ws.org/Vol-1306/#paper3> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-1306/> ;
-    ns4:title "Identification Semantics for an Organization Establishing a Digital Library System" ;
-    ns7:endPage 27 ;
-    ns7:numPages 12 ;
-    ns7:section <http%3A//ceur-ws.org/Vol-1306/%23SemanticsforInteroperabilityandIdentification> ;
-    ns7:startPage 16 ;
-    ns3:author <http://ceur-ws.org/Vol-1306/#AngelaiDiiIorio>,
-        <http://ceur-ws.org/Vol-1306/#MarcoiSchaerf> .
-
-<http://ceur-ws.org/Vol-1306/#paper4> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-1306/> ;
-    ns4:title "Persistent E-mail Identification is Viable!" ;
-    ns7:endPage 37 ;
-    ns7:numPages 10 ;
-    ns7:section <http%3A//ceur-ws.org/Vol-1306/%23SemanticsforInteroperabilityandIdentification> ;
-    ns7:startPage 28 ;
-    ns3:author <http://ceur-ws.org/Vol-1306/#AndreasiN%C3%BCrnberger>,
-        <http://ceur-ws.org/Vol-1306/#StefaniHaun> .
-
-<http://ceur-ws.org/Vol-1306/#paper6> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-1306/> ;
-    ns4:title "Relations for Reusing (R4R) in a Shared Context: An Exploration on Research Publications and Cultural Objects" ;
-    ns7:endPage 60 ;
-    ns7:numPages 12 ;
-    ns7:section <http%3A//ceur-ws.org/Vol-1306/%23CulturemeetsSemantics> ;
-    ns7:startPage 49 ;
-    ns3:author <http://ceur-ws.org/Vol-1306/#AndreaiWei-ChingiHuang>,
-        <http://ceur-ws.org/Vol-1306/#Tyng-RueyiChuang> .
-
-<http://ceur-ws.org/Vol-1306/#paperX1> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-1306/> ;
-    ns4:title "Please have a look at the" ;
-    ns7:section <http%3A//ceur-ws.org/Vol-1306/%23CulturemeetsSemantics> ;
-    ns3:author <http://ceur-ws.org/Vol-1306/#LiviaiPredoiu>,
-        <http://ceur-ws.org/Vol-1306/#metadataiincl.ibibliographicidataipublishediunder> .
-
-<http%3A//ceur-ws.org/Vol-1306/%23CulturemeetsSemantics> a ns1:SessionEvent ;
-    ns1:partOf <http://ceur-ws.org/Vol-1306/> ;
-    ns4:title "Culture meets Semantics" .
-
-<http%3A//ceur-ws.org/Vol-1306/%23SemanticsforInteroperabilityandIdentification> a ns1:SessionEvent ;
-    ns1:partOf <http://ceur-ws.org/Vol-1306/> ;
-    ns4:title "Semantics for Interoperability and Identification" .
-
-<http://ceur-ws.org/Vol-1306/#paper2> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-1306/> ;
-    ns4:title "Self-contained Information Retention Format for Future Semantic Interoperability" ;
-    ns7:endPage 15 ;
-    ns7:numPages 12 ;
-    ns7:section <http%3A//ceur-ws.org/Vol-1306/%23SemanticsforInteroperabilityandIdentification> ;
-    ns7:startPage 4 ;
-    ns3:author <http://ceur-ws.org/Vol-1306/#RogeriCummings>,
-        <http://ceur-ws.org/Vol-1306/#SamiFineberg>,
-        <http://ceur-ws.org/Vol-1306/#SimonaiRabinovici-Cohen> .
-
-<http://ceur-ws.org/Vol-1306/#paper5> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-1306/> ;
-    ns4:title "The Digital Online Museum: A new Approach to Experience Virtual Heritage" ;
-    ns7:endPage 48 ;
-    ns7:numPages 11 ;
-    ns7:section <http%3A//ceur-ws.org/Vol-1306/%23CulturemeetsSemantics> ;
-    ns7:startPage 38 ;
-    ns3:author <http://ceur-ws.org/Vol-1306/#BernhardiHumm>,
-        <http://ceur-ws.org/Vol-1306/#TilmaniDeuschel>,
-        <http://ceur-ws.org/Vol-1306/#TimmiHeuss> .
-
-<http://ceur-ws.org/Vol-1306/> a ns1:Proceedings ;
-    ns1:hasPart <http://ceur-ws.org/Vol-1306/#paper1>,
-        <http://ceur-ws.org/Vol-1306/#paper2>,
-        <http://ceur-ws.org/Vol-1306/#paper3>,
-        <http://ceur-ws.org/Vol-1306/#paper4>,
-        <http://ceur-ws.org/Vol-1306/#paper5>,
-        <http://ceur-ws.org/Vol-1306/#paper6>,
-        <http://ceur-ws.org/Vol-1306/#paperX1> ;
-    ns1:hasSession <http%3A//ceur-ws.org/Vol-1306/%23CulturemeetsSemantics>,
-        <http%3A//ceur-ws.org/Vol-1306/%23InvitedContribution>,
-        <http%3A//ceur-ws.org/Vol-1306/%23SemanticsforInteroperabilityandIdentification> ;
-    ns8:issued "2014-12-18T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:presentedAt <http://ceur-ws.org/Vol-1306/#event> ;
+<http://ceur-ws.org/Vol-1306/> a ns4:Proceedings ;
+    ns5:issued "2014-12-18T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:presentedAt <http://ceur-ws.org/Vol-1306/#event> ;
     ns3:editor <http://ceur-ws.org/Vol-1306/#AndreasiN%C3%BCrnberger>,
         <http://ceur-ws.org/Vol-1306/#LiviaiPredoiu>,
         <http://ceur-ws.org/Vol-1306/#SeamusiRoss>,
         <http://ceur-ws.org/Vol-1306/#ThomasiRisse> .
+
+<http://ceur-ws.org/Vol-1306/#AndreasiN%C3%BCrnberger> a ns1:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/AndreasiN%C3%BCrnberger> ;
+    ns1:name "Andreas Nürnberger" .
+
+<http://ceur-ws.org/Vol-1306/#LiviaiPredoiu> a ns1:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/LiviaiPredoiu> ;
+    ns1:name "Livia Predoiu" .
+
+<http://ceur-ws.org/Vol-1306/#SeamusiRoss> a ns1:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/SeamusiRoss> ;
+    ns1:name "Seamus Ross" .
+
+<http://ceur-ws.org/Vol-1306/#ThomasiRisse> a ns1:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/ThomasiRisse> ;
+    ns1:name "Thomas Risse" .
+
+<http://ceur-ws.org/Vol-1306/#event> a ns4:WorkshopEvent ;
+    ns4:hasLocation <http://dbpedia.org/resource/United_Kingdom> ;
+    ns4:hasPart <http://ceur-ws.org/Vol-1306/#part-SDA> ;
+    ns4:isSubEventOf <http://ceur-ws.org/Vol-1306/#conf> ;
+    ns7:beginsAtDatetime "2014-09-12T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:endsAtDatetime "2014-09-12T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:license "http://creativecommons.org/publicdomain/zero/1.0/" ;
+    rdfs:seeAlso <http://ceur-ws.org/Vol-1091/#event>,
+        <http://ceur-ws.org/Vol-801/#event>,
+        <http://ceur-ws.org/Vol-912/#event> .
 

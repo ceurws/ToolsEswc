@@ -1,213 +1,35 @@
-@prefix ns1: <http://www.w3.org/2002/07/owl#> .
-@prefix ns2: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns3: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns4: <http://xmlns.com/foaf/0.1/> .
-@prefix ns5: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns6: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns7: <http://purl.org/ontology/bibo/#> .
+@prefix ns1: <http://xmlns.com/foaf/0.1/> .
+@prefix ns2: <http://www.w3.org/2002/07/owl#> .
+@prefix ns3: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns4: <http://purl.org/ontology/bibo/#> .
+@prefix ns5: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns6: <http://purl.org/dc/elements/1.1/> .
+@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1094/#AlfonsoiE.iRomero> a ns4:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/AlfonsoiE.iRomero> ;
-    ns4:made <http://ceur-ws.org/Vol-1094/#sub4> ;
-    ns4:name "Alfonso E. Romero" .
+<http://ceur-ws.org/Vol-1094/> a ns5:Proceedings ;
+    ns7:issued "2013-11-27T00:00:00+00:00"^^xsd:dateTime ;
+    ns4:presentedAt <http://ceur-ws.org/Vol-1094/#event> ;
+    ns3:editor <http://ceur-ws.org/Vol-1094/#Axel-CyrilleiNgongaiNgomo>,
+        <http://ceur-ws.org/Vol-1094/#GeorgeiPaliouras> .
 
-<http://ceur-ws.org/Vol-1094/#BeniCarterette> a ns4:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/BeniCarterette> ;
-    ns4:made <http://ceur-ws.org/Vol-1094/#sub7> ;
-    ns4:name "Ben Carterette" .
+<http://ceur-ws.org/Vol-1094/#Axel-CyrilleiNgongaiNgomo> a ns1:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/Axel-CyrilleiNgongaiNgomo> ;
+    ns1:name "Axel-Cyrille Ngonga Ngomo" .
 
-<http://ceur-ws.org/Vol-1094/#DingchengiLi> a ns4:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/DingchengiLi> ;
-    ns4:made <http://ceur-ws.org/Vol-1094/#sub7> ;
-    ns4:name "Dingcheng Li" .
+<http://ceur-ws.org/Vol-1094/#GeorgeiPaliouras> a ns1:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/GeorgeiPaliouras> ;
+    ns1:name "George Paliouras" .
 
-<http://ceur-ws.org/Vol-1094/#DirkiWeissenborn> a ns4:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/DirkiWeissenborn> ;
-    ns4:made <http://ceur-ws.org/Vol-1094/#sub5> ;
-    ns4:name "Dirk Weissenborn" .
-
-<http://ceur-ws.org/Vol-1094/#DongqingiZhu> a ns4:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/DongqingiZhu> ;
-    ns4:made <http://ceur-ws.org/Vol-1094/#sub7> ;
-    ns4:name "Dongqing Zhu" .
-
-<http://ceur-ws.org/Vol-1094/#EriciGaussier> a ns4:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/EriciGaussier> ;
-    ns4:made <http://ceur-ws.org/Vol-1094/#overview> ;
-    ns4:name "Eric Gaussier" .
-
-<http://ceur-ws.org/Vol-1094/#FranciscoiJ.iRibadas-Pena> a ns4:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/FranciscoiJ.iRibadas-Pena> ;
-    ns4:made <http://ceur-ws.org/Vol-1094/#sub4> ;
-    ns4:name "Francisco J. Ribadas-Pena" .
-
-<http://ceur-ws.org/Vol-1094/#GeorgeiPaliouras> a ns4:Person ;
-    ns6:affiliation "" ;
-    ns1:sameAs <http://ceur-ws.org/persons/GeorgeiPaliouras> ;
-    ns4:name "George Paliouras" .
-
-<http://ceur-ws.org/Vol-1094/#GeorgeiTsatsaronis> a ns4:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/GeorgeiTsatsaronis> ;
-    ns4:made <http://ceur-ws.org/Vol-1094/#sub5> ;
-    ns4:name "George Tsatsaronis" .
-
-<http://ceur-ws.org/Vol-1094/#HongfangiLiu> a ns4:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/HongfangiLiu> ;
-    ns4:made <http://ceur-ws.org/Vol-1094/#sub7> ;
-    ns4:name "Hongfang Liu" .
-
-<http://ceur-ws.org/Vol-1094/#IoannisiPartalas> a ns4:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/IoannisiPartalas> ;
-    ns4:made <http://ceur-ws.org/Vol-1094/#overview> ;
-    ns4:name "Ioannis Partalas" .
-
-<http://ceur-ws.org/Vol-1094/#IoannisiVlahavas> a ns4:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/IoannisiVlahavas> ;
-    ns4:made <http://ceur-ws.org/Vol-1094/#sub6> ;
-    ns4:name "Ioannis Vlahavas" .
-
-<http://ceur-ws.org/Vol-1094/#LuisiM.ideiCamposiIba%C3%B1ez> a ns4:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/LuisiM.ideiCamposiIba%C3%B1ez> ;
-    ns4:made <http://ceur-ws.org/Vol-1094/#sub4> ;
-    ns4:name "Luis M. de Campos Ibañez" .
-
-<http://ceur-ws.org/Vol-1094/#ManosiLaliotis> a ns4:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/ManosiLaliotis> ;
-    ns4:made <http://ceur-ws.org/Vol-1094/#sub6> ;
-    ns4:name "Manos Laliotis" .
-
-<http://ceur-ws.org/Vol-1094/#MichaeliSchroeder> a ns4:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/MichaeliSchroeder> ;
-    ns4:made <http://ceur-ws.org/Vol-1094/#sub5> ;
-    ns4:name "Michael Schroeder" .
-
-<http://ceur-ws.org/Vol-1094/#NewtoniSpolaor> a ns4:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/NewtoniSpolaor> ;
-    ns4:made <http://ceur-ws.org/Vol-1094/#sub8> ;
-    ns4:name "Newton Spolaor" .
-
-<http://ceur-ws.org/Vol-1094/#NikosiMarkantonatos> a ns4:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/NikosiMarkantonatos> ;
-    ns4:made <http://ceur-ws.org/Vol-1094/#sub6> ;
-    ns4:name "Nikos Markantonatos" .
-
-<http://ceur-ws.org/Vol-1094/#VictoriM.iDarriba-Bilbao> a ns4:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/VictoriM.iDarriba-Bilbao> ;
-    ns4:made <http://ceur-ws.org/Vol-1094/#sub4> ;
-    ns4:name "Victor M. Darriba-Bilbao" .
-
-<http://ceur-ws.org/Vol-1094/#event> a ns3:WorkshopEvent ;
-    ns3:hasLocation <http://dbpedia.org/resource/Spain> ;
-    ns3:hasPart <http://ceur-ws.org/Vol-1094/#part-BioASQ> ;
-    ns3:isSubEventOf <http://ceur-ws.org/Vol-1094/#conf> ;
+<http://ceur-ws.org/Vol-1094/#event> a ns5:WorkshopEvent ;
+    ns5:hasLocation <http://dbpedia.org/resource/Spain> ;
+    ns5:hasPart <http://ceur-ws.org/Vol-1094/#part-CLEF> ;
+    ns5:isSubEventOf <http://ceur-ws.org/Vol-1094/#conf> ;
     ns8:beginsAtDatetime "2013-09-27T00:00:00+00:00"^^xsd:dateTime ;
     ns8:endsAtDatetime "2013-09-27T00:00:00+00:00"^^xsd:dateTime ;
-    ns2:license <http://choosealicense.com/licenses/no-license/> .
-
-<http://ceur-ws.org/Vol-1094/#AlaniAronson> a ns4:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/AlaniAronson> ;
-    ns4:made <http://ceur-ws.org/Vol-1094/#sub2>,
-        <http://ceur-ws.org/Vol-1094/#sub3> ;
-    ns4:name "Alan Aronson" .
-
-<http://ceur-ws.org/Vol-1094/#AntonioiJimeno-Yepes> a ns4:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/AntonioiJimeno-Yepes> ;
-    ns4:made <http://ceur-ws.org/Vol-1094/#sub2>,
-        <http://ceur-ws.org/Vol-1094/#sub3> ;
-    ns4:name "Antonio Jimeno-Yepes" .
-
-<http://ceur-ws.org/Vol-1094/#Axel-CyrilleiNgongaiNgomo> a ns4:Person ;
-    ns6:affiliation "" ;
-    ns1:sameAs <http://ceur-ws.org/persons/Axel-CyrilleiNgongaiNgomo> ;
-    ns4:made <http://ceur-ws.org/Vol-1094/#overview> ;
-    ns4:name "Axel-Cyrille Ngonga Ngomo" .
-
-<http://ceur-ws.org/Vol-1094/#GrigoriosiTsoumakas> a ns4:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/GrigoriosiTsoumakas> ;
-    ns4:made <http://ceur-ws.org/Vol-1094/#sub6>,
-        <http://ceur-ws.org/Vol-1094/#sub8> ;
-    ns4:name "Grigorios Tsoumakas" .
-
-<http://ceur-ws.org/Vol-1094/#JamesiMork> a ns4:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/JamesiMork> ;
-    ns4:made <http://ceur-ws.org/Vol-1094/#sub2>,
-        <http://ceur-ws.org/Vol-1094/#sub3> ;
-    ns4:name "James Mork" .
-
-<http://ceur-ws.org/Vol-1094/#sub8> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1094/> ;
-    ns2:title "Evaluating Feature Selection Methods for Multi-Label Text Classication" ;
-    ns6:author <http://ceur-ws.org/Vol-1094/#GrigoriosiTsoumakas>,
-        <http://ceur-ws.org/Vol-1094/#NewtoniSpolaor> .
-
-<http://ceur-ws.org/Vol-1094/#overview> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1094/> ;
-    ns2:title "Results of the First BioASQ Workshop" ;
-    ns6:author <http://ceur-ws.org/Vol-1094/#Axel-CyrilleiNgongaiNgomo>,
-        <http://ceur-ws.org/Vol-1094/#EriciGaussier>,
-        <http://ceur-ws.org/Vol-1094/#IoannisiPartalas> .
-
-<http://ceur-ws.org/Vol-1094/#sub2> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1094/> ;
-    ns2:title "Identifying Publication Types Using Machine Learning" ;
-    ns6:author <http://ceur-ws.org/Vol-1094/#AlaniAronson>,
-        <http://ceur-ws.org/Vol-1094/#AntonioiJimeno-Yepes>,
-        <http://ceur-ws.org/Vol-1094/#JamesiMork> .
-
-<http://ceur-ws.org/Vol-1094/#sub3> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1094/> ;
-    ns2:title "The NLM Medical Text Indexer System for Indexing Biomedical Literature" ;
-    ns6:author <http://ceur-ws.org/Vol-1094/#AlaniAronson>,
-        <http://ceur-ws.org/Vol-1094/#AntonioiJimeno-Yepes>,
-        <http://ceur-ws.org/Vol-1094/#JamesiMork> .
-
-<http://ceur-ws.org/Vol-1094/#sub5> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1094/> ;
-    ns2:title "Answering Factoid Questions in the Biomedical Domain" ;
-    ns6:author <http://ceur-ws.org/Vol-1094/#DirkiWeissenborn>,
-        <http://ceur-ws.org/Vol-1094/#GeorgeiTsatsaronis>,
-        <http://ceur-ws.org/Vol-1094/#MichaeliSchroeder> .
-
-<http://ceur-ws.org/Vol-1094/#sub4> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1094/> ;
-    ns2:title "Two Hierarchical Text Categorization Approaches for BioASQ Semantic Indexing Challenge" ;
-    ns6:author <http://ceur-ws.org/Vol-1094/#AlfonsoiE.iRomero>,
-        <http://ceur-ws.org/Vol-1094/#FranciscoiJ.iRibadas-Pena>,
-        <http://ceur-ws.org/Vol-1094/#LuisiM.ideiCamposiIba%C3%B1ez>,
-        <http://ceur-ws.org/Vol-1094/#VictoriM.iDarriba-Bilbao> .
-
-<http://ceur-ws.org/Vol-1094/#sub6> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1094/> ;
-    ns2:title "Large-Scale Semantic Indexing of Biomedical Publications" ;
-    ns6:author <http://ceur-ws.org/Vol-1094/#GrigoriosiTsoumakas>,
-        <http://ceur-ws.org/Vol-1094/#IoannisiVlahavas>,
-        <http://ceur-ws.org/Vol-1094/#ManosiLaliotis>,
-        <http://ceur-ws.org/Vol-1094/#NikosiMarkantonatos> .
-
-<http://ceur-ws.org/Vol-1094/#sub7> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1094/> ;
-    ns2:title "An Incremental Approach for MEDLINE MeSH Indexing" ;
-    ns6:author <http://ceur-ws.org/Vol-1094/#BeniCarterette>,
-        <http://ceur-ws.org/Vol-1094/#DingchengiLi>,
-        <http://ceur-ws.org/Vol-1094/#DongqingiZhu>,
-        <http://ceur-ws.org/Vol-1094/#HongfangiLiu> .
-
-<http://ceur-ws.org/Vol-1094/> a ns3:Proceedings ;
-    ns3:hasPart <http://ceur-ws.org/Vol-1094/#overview>,
-        <http://ceur-ws.org/Vol-1094/#sub2>,
-        <http://ceur-ws.org/Vol-1094/#sub3>,
-        <http://ceur-ws.org/Vol-1094/#sub4>,
-        <http://ceur-ws.org/Vol-1094/#sub5>,
-        <http://ceur-ws.org/Vol-1094/#sub6>,
-        <http://ceur-ws.org/Vol-1094/#sub7>,
-        <http://ceur-ws.org/Vol-1094/#sub8> ;
-    ns5:issued "2013-11-27T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:presentedAt <http://ceur-ws.org/Vol-1094/#event> ;
-    ns6:editor <http://ceur-ws.org/Vol-1094/#Axel-CyrilleiNgongaiNgomo>,
-        <http://ceur-ws.org/Vol-1094/#GeorgeiPaliouras> .
+    ns6:license "http://choosealicense.com/licenses/no-license/" .
 

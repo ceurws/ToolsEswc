@@ -1,182 +1,45 @@
-@prefix ns1: <http://purl.org/ontology/bibo/#> .
-@prefix ns2: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns3: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns1: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns2: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns3: <http://purl.org/ontology/bibo/#> .
 @prefix ns4: <http://xmlns.com/foaf/0.1/> .
-@prefix ns5: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns5: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix ns6: <http://www.w3.org/2002/07/owl#> .
-@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns7: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns8: <http://purl.org/dc/elements/1.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1538/#ChrisiTalaveraiOrme%C3%B1o> a ns4:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/ChrisiTalaveraiOrme%C3%B1o> ;
-    ns4:made <http://ceur-ws.org/Vol-1538/#paper-07> ;
-    ns4:name "Chris Talavera Ormeño" .
+<http://ceur-ws.org/Vol-1538/> a ns7:Proceedings ;
+    ns5:issued "2015-12-21T00:00:00+00:00"^^xsd:dateTime ;
+    ns3:presentedAt <http://ceur-ws.org/Vol-1538/#event> ;
+    ns2:editor <http://ceur-ws.org/Vol-1538/#DzmitryiKliazovich>,
+        <http://ceur-ws.org/Vol-1538/#GonzaloiFern%C3%A1ndeziDeliCarpio>,
+        <http://ceur-ws.org/Vol-1538/#JimmyiLudenaiChoez>,
+        <http://ceur-ws.org/Vol-1538/#NelsoniFonseca> .
 
 <http://ceur-ws.org/Vol-1538/#DzmitryiKliazovich> a ns4:Person ;
-    ns1:place <http://dbpedia.org/resource/Luxembourg> ;
-    ns5:affiliation "University of Luxembourg" ;
     ns6:sameAs <http://ceur-ws.org/persons/DzmitryiKliazovich> ;
     ns4:name "Dzmitry Kliazovich" .
 
 <http://ceur-ws.org/Vol-1538/#GonzaloiFern%C3%A1ndeziDeliCarpio> a ns4:Person ;
-    ns1:place <http://dbpedia.org/resource/Peru> ;
-    ns5:affiliation "Universidad Catolica San Pablo" ;
     ns6:sameAs <http://ceur-ws.org/persons/GonzaloiFern%C3%A1ndeziDeliCarpio> ;
     ns4:name "Gonzalo Fernández Del Carpio" .
 
-<http://ceur-ws.org/Vol-1538/#GonzaloiOlmedo> a ns4:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/GonzaloiOlmedo> ;
-    ns4:made <http://ceur-ws.org/Vol-1538/#paper-06> ;
-    ns4:name "Gonzalo Olmedo" .
-
 <http://ceur-ws.org/Vol-1538/#JimmyiLudenaiChoez> a ns4:Person ;
-    ns1:place <http://dbpedia.org/resource/Peru> ;
-    ns5:affiliation "Universidad Catolica San Pablo" ;
     ns6:sameAs <http://ceur-ws.org/persons/JimmyiLudenaiChoez> ;
     ns4:name "Jimmy Ludena Choez" .
 
-<http://ceur-ws.org/Vol-1538/#JorgeiSosa-Pedroza> a ns4:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/JorgeiSosa-Pedroza> ;
-    ns4:made <http://ceur-ws.org/Vol-1538/#paper-05> ;
-    ns4:name "Jorge Sosa-Pedroza" .
-
-<http://ceur-ws.org/Vol-1538/#JulianaiFerreira> a ns4:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/JulianaiFerreira> ;
-    ns4:made <http://ceur-ws.org/Vol-1538/#paper-02> ;
-    ns4:name "Juliana Ferreira" .
-
-<http://ceur-ws.org/Vol-1538/#JulioiSantisteban> a ns4:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/JulioiSantisteban> ;
-    ns4:made <http://ceur-ws.org/Vol-1538/#paper-09> ;
-    ns4:name "Julio Santisteban" .
-
-<http://ceur-ws.org/Vol-1538/#LuisiDiaz> a ns4:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/LuisiDiaz> ;
-    ns4:made <http://ceur-ws.org/Vol-1538/#paper-03> ;
-    ns4:name "Luis Diaz" .
-
-<http://ceur-ws.org/Vol-1538/#LuisiJaimes> a ns4:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/LuisiJaimes> ;
-    ns4:made <http://ceur-ws.org/Vol-1538/#paper-08> ;
-    ns4:name "Luis Jaimes" .
-
 <http://ceur-ws.org/Vol-1538/#NelsoniFonseca> a ns4:Person ;
-    ns1:place <http://dbpedia.org/resource/Brazil> ;
-    ns5:affiliation "UNICAMP" ;
     ns6:sameAs <http://ceur-ws.org/persons/NelsoniFonseca> ;
     ns4:name "Nelson Fonseca" .
 
-<http://ceur-ws.org/Vol-1538/#RenatoiBaldiniiFilho> a ns4:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/RenatoiBaldiniiFilho> ;
-    ns4:made <http://ceur-ws.org/Vol-1538/#paper-04> ;
-    ns4:name "Renato Baldini Filho" .
-
-<http://ceur-ws.org/Vol-1538/#event> a ns3:WorkshopEvent ;
-    ns3:hasLocation <http://dbpedia.org/resource/Peru> ;
-    ns3:hasPart <http://ceur-ws.org/Vol-1538/#part-LAWC> ;
-    ns3:isSubEventOf <http://ceur-ws.org/Vol-1538/#conf> ;
-    ns7:beginsAtDatetime "2015-11-06T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:endsAtDatetime "2015-11-06T00:00:00+00:00"^^xsd:dateTime .
-
-<http://ceur-ws.org/Vol-1538/#paper-02> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1538/> ;
-    ns2:title "Specific Absorption Rate (SAR) in the head of Tablet user's" ;
-    ns1:endPage 4 ;
-    ns1:numPages 4 ;
-    ns1:section <http%3A//ceur-ws.org/Vol-1538/%23Session2%3APhysicalLayerTechniquesandHigh-speedNetworks> ;
-    ns1:startPage 1 ;
-    ns5:author <http://ceur-ws.org/Vol-1538/#JulianaiFerreira> .
-
-<http://ceur-ws.org/Vol-1538/#paper-03> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1538/> ;
-    ns2:title "Windowing Functions Comparison for Peak Detection of Amplitud Coded SAW ID-tags" ;
-    ns1:endPage 9 ;
-    ns1:numPages 5 ;
-    ns1:section <http%3A//ceur-ws.org/Vol-1538/%23Session2%3APhysicalLayerTechniquesandHigh-speedNetworks> ;
-    ns1:startPage 5 ;
-    ns5:author <http://ceur-ws.org/Vol-1538/#LuisiDiaz> .
-
-<http://ceur-ws.org/Vol-1538/#paper-04> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1538/> ;
-    ns2:title "A Study on VHDL Implementation of a Class of Irregular Structured LDPC Codes applied to 100 Gbps Optical Networks" ;
-    ns1:endPage 14 ;
-    ns1:numPages 5 ;
-    ns1:section <http%3A//ceur-ws.org/Vol-1538/%23Session2%3APhysicalLayerTechniquesandHigh-speedNetworks> ;
-    ns1:startPage 10 ;
-    ns5:author <http://ceur-ws.org/Vol-1538/#RenatoiBaldiniiFilho> .
-
-<http://ceur-ws.org/Vol-1538/#paper-05> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1538/> ;
-    ns2:title "Analysis of electromagnetic propagation of 5 scenarios in Mexico City" ;
-    ns1:endPage 19 ;
-    ns1:numPages 5 ;
-    ns1:section <http%3A//ceur-ws.org/Vol-1538/%23Session2%3APhysicalLayerTechniquesandHigh-speedNetworks> ;
-    ns1:startPage 15 ;
-    ns5:author <http://ceur-ws.org/Vol-1538/#JorgeiSosa-Pedroza> .
-
-<http://ceur-ws.org/Vol-1538/#paper-06> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1538/> ;
-    ns2:title "Transport Stream Generator and Player for Digital Terrestrial Television ISDB-Tb" ;
-    ns1:endPage 25 ;
-    ns1:numPages 6 ;
-    ns1:section <http%3A//ceur-ws.org/Vol-1538/%23Session2%3APhysicalLayerTechniquesandHigh-speedNetworks> ;
-    ns1:startPage 20 ;
-    ns5:author <http://ceur-ws.org/Vol-1538/#GonzaloiOlmedo> .
-
-<http://ceur-ws.org/Vol-1538/#paper-07> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1538/> ;
-    ns2:title "Design of Network Infrastructure of a Cloud Data Center for use in Health Sector" ;
-    ns1:endPage 29 ;
-    ns1:numPages 4 ;
-    ns1:section <http%3A//ceur-ws.org/Vol-1538/%23Session3%3ACommunicationTechnologiesandServices> ;
-    ns1:startPage 26 ;
-    ns5:author <http://ceur-ws.org/Vol-1538/#ChrisiTalaveraiOrme%C3%B1o> .
-
-<http://ceur-ws.org/Vol-1538/#paper-08> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1538/> ;
-    ns2:title "CORREDOR, A mobile Human-Centric Sensing System for Activity Recognition" ;
-    ns1:endPage 35 ;
-    ns1:numPages 6 ;
-    ns1:section <http%3A//ceur-ws.org/Vol-1538/%23Session3%3ACommunicationTechnologiesandServices> ;
-    ns1:startPage 30 ;
-    ns5:author <http://ceur-ws.org/Vol-1538/#LuisiJaimes> .
-
-<http://ceur-ws.org/Vol-1538/#paper-09> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1538/> ;
-    ns2:title "GPS Assistance Taximeter Suited to the Characteristics of a City" ;
-    ns1:endPage 39 ;
-    ns1:numPages 4 ;
-    ns1:section <http%3A//ceur-ws.org/Vol-1538/%23Session3%3ACommunicationTechnologiesandServices> ;
-    ns1:startPage 36 ;
-    ns5:author <http://ceur-ws.org/Vol-1538/#JulioiSantisteban> .
-
-<http%3A//ceur-ws.org/Vol-1538/%23Session3%3ACommunicationTechnologiesandServices> a ns3:SessionEvent ;
-    ns3:partOf <http://ceur-ws.org/Vol-1538/> ;
-    ns2:title "Session 3: Communication Technologies and Services" .
-
-<http%3A//ceur-ws.org/Vol-1538/%23Session2%3APhysicalLayerTechniquesandHigh-speedNetworks> a ns3:SessionEvent ;
-    ns3:partOf <http://ceur-ws.org/Vol-1538/> ;
-    ns2:title "Session 2: Physical Layer Techniques and High-speed Networks" .
-
-<http://ceur-ws.org/Vol-1538/> a ns3:Proceedings ;
-    ns3:hasPart <http://ceur-ws.org/Vol-1538/#paper-02>,
-        <http://ceur-ws.org/Vol-1538/#paper-03>,
-        <http://ceur-ws.org/Vol-1538/#paper-04>,
-        <http://ceur-ws.org/Vol-1538/#paper-05>,
-        <http://ceur-ws.org/Vol-1538/#paper-06>,
-        <http://ceur-ws.org/Vol-1538/#paper-07>,
-        <http://ceur-ws.org/Vol-1538/#paper-08>,
-        <http://ceur-ws.org/Vol-1538/#paper-09> ;
-    ns3:hasSession <http%3A//ceur-ws.org/Vol-1538/%23Session2%3APhysicalLayerTechniquesandHigh-speedNetworks>,
-        <http%3A//ceur-ws.org/Vol-1538/%23Session3%3ACommunicationTechnologiesandServices> ;
-    ns8:issued "2015-12-21T00:00:00+00:00"^^xsd:dateTime ;
-    ns1:presentedAt <http://ceur-ws.org/Vol-1538/#event> ;
-    ns5:editor <http://ceur-ws.org/Vol-1538/#DzmitryiKliazovich>,
-        <http://ceur-ws.org/Vol-1538/#GonzaloiFern%C3%A1ndeziDeliCarpio>,
-        <http://ceur-ws.org/Vol-1538/#JimmyiLudenaiChoez>,
-        <http://ceur-ws.org/Vol-1538/#NelsoniFonseca> .
+<http://ceur-ws.org/Vol-1538/#event> a ns7:WorkshopEvent ;
+    ns7:hasLocation <http://dbpedia.org/resource/Peru> ;
+    ns7:hasPart <http://ceur-ws.org/Vol-1538/#part-ws> ;
+    ns7:isSubEventOf <http://ceur-ws.org/Vol-1538/#conf> ;
+    ns1:beginsAtDatetime "2015-11-06T00:00:00+00:00"^^xsd:dateTime ;
+    ns1:endsAtDatetime "2015-11-06T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:license "http://creativecommons.org/publicdomain/zero/1.0/" .
 

@@ -1,0 +1,46 @@
+@prefix ns1: <http://www.w3.org/2002/07/owl#> .
+@prefix ns2: <http://purl.org/ontology/bibo/#> .
+@prefix ns3: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns4: <http://xmlns.com/foaf/0.1/> .
+@prefix ns5: <http://purl.org/dc/elements/1.1/> .
+@prefix ns6: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns7: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns8: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://ceur-ws.org/Vol-1653/> a ns8:Proceedings ;
+    ns3:issued "2016-08-06T00:00:00+00:00"^^xsd:dateTime ;
+    ns2:presentedAt <http://ceur-ws.org/Vol-1653/#event> ;
+    ns7:editor <http://ceur-ws.org/Vol-1653/#FrancoiMariaiNardini>,
+        <http://ceur-ws.org/Vol-1653/#GiorgioiMariaiDiiNunzio>,
+        <http://ceur-ws.org/Vol-1653/#SalvatoreiOrlando> .
+
+<http://ceur-ws.org/Vol-1653/#FrancoiMariaiNardini> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/FrancoiMariaiNardini> ;
+    ns4:name "Franco Maria Nardini" .
+
+<http://ceur-ws.org/Vol-1653/#GiorgioiMariaiDiiNunzio> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/GiorgioiMariaiDiiNunzio> ;
+    ns4:name "Giorgio Maria Di Nunzio" .
+
+<http://ceur-ws.org/Vol-1653/#SalvatoreiOrlando> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/SalvatoreiOrlando> ;
+    ns4:name "Salvatore Orlando" .
+
+<http://ceur-ws.org/Vol-1653/#event> a ns8:WorkshopEvent ;
+    ns8:hasLocation <http://dbpedia.org/resource/Italy> ;
+    ns8:hasPart <http://ceur-ws.org/Vol-1653/#part-ws> ;
+    ns8:isSubEventOf <http://ceur-ws.org/Vol-1653/#conf> ;
+    ns6:beginsAtDatetime "2016-05-30T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:endsAtDatetime "2016-05-31T00:00:00+00:00"^^xsd:dateTime ;
+    ns5:license "http://creativecommons.org/publicdomain/zero/1.0/" ;
+    rdfs:seeAlso <http://ceur-ws.org/Vol-1127/#event>,
+        <http://ceur-ws.org/Vol-1404/#event>,
+        <http://ceur-ws.org/Vol-560/#event>,
+        <http://ceur-ws.org/Vol-704/#event>,
+        <http://ceur-ws.org/Vol-835/#event>,
+        <http://ceur-ws.org/Vol-964/#event> .
+

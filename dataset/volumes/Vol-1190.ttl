@@ -1,181 +1,50 @@
-@prefix ns1: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns2: <http://purl.org/ontology/bibo/#> .
-@prefix ns3: <http://www.w3.org/2002/07/owl#> .
-@prefix ns4: <http://xmlns.com/foaf/0.1/> .
-@prefix ns5: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns6: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns1: <http://xmlns.com/foaf/0.1/> .
+@prefix ns2: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns3: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns4: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns5: <http://www.w3.org/2002/07/owl#> .
+@prefix ns6: <http://purl.org/dc/elements/1.1/> .
+@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns8: <http://purl.org/ontology/bibo/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1190/#AndreasiSchrader> a ns4:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/AndreasiSchrader> ;
-    ns4:made <http://ceur-ws.org/Vol-1190/#paper1> ;
-    ns4:name "Andreas Schrader" .
-
-<http://ceur-ws.org/Vol-1190/#ArnaudiHamon> a ns4:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/ArnaudiHamon> ;
-    ns4:made <http://ceur-ws.org/Vol-1190/#paper3> ;
-    ns4:name "Arnaud Hamon" .
-
-<http://ceur-ws.org/Vol-1190/#BashariAltakrouri> a ns4:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/BashariAltakrouri> ;
-    ns4:made <http://ceur-ws.org/Vol-1190/#paper1> ;
-    ns4:name "Bashar Altakrouri" .
-
-<http://ceur-ws.org/Vol-1190/#DavyiVanacken> a ns4:Person ;
-    ns1:affiliation "" ;
-    ns3:sameAs <http://ceur-ws.org/persons/DavyiVanacken> ;
-    ns4:name "Davy Vanacken" .
-
-<http://ceur-ws.org/Vol-1190/#EriciBarboni> a ns4:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/EriciBarboni> ;
-    ns4:made <http://ceur-ws.org/Vol-1190/#paper3> ;
-    ns4:name "Eric Barboni" .
-
-<http://ceur-ws.org/Vol-1190/#FlorianiEchtler> a ns4:Person ;
-    ns1:affiliation "" ;
-    ns3:sameAs <http://ceur-ws.org/persons/FlorianiEchtler> ;
-    ns4:name "Florian Echtler" .
-
-<http://ceur-ws.org/Vol-1190/#LucioiDavideiSpano> a ns4:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/LucioiDavideiSpano> ;
-    ns4:made <http://ceur-ws.org/Vol-1190/#paper6> ;
-    ns4:name "Lucio Davide Spano" .
-
-<http://ceur-ws.org/Vol-1190/#MandyiKeck> a ns4:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/MandyiKeck> ;
-    ns4:made <http://ceur-ws.org/Vol-1190/#paper5> ;
-    ns4:name "Mandy Keck" .
-
-<http://ceur-ws.org/Vol-1190/#MehmetiAyd%C4%B1niBayta%C5%9F> a ns4:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/MehmetiAyd%C4%B1niBayta%C5%9F> ;
-    ns4:made <http://ceur-ws.org/Vol-1190/#paper2> ;
-    ns4:name "Mehmet Aydın Baytaş" .
-
-<http://ceur-ws.org/Vol-1190/#O%C4%9Fuzhani%C3%96zcan> a ns4:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/O%C4%9Fuzhani%C3%96zcan> ;
-    ns4:made <http://ceur-ws.org/Vol-1190/#paper2> ;
-    ns4:name "Oğuzhan Özcan" .
-
-<http://ceur-ws.org/Vol-1190/#PhilippeiPalanque> a ns4:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/PhilippeiPalanque> ;
-    ns4:made <http://ceur-ws.org/Vol-1190/#paper3> ;
-    ns4:name "Philippe Palanque" .
-
-<http://ceur-ws.org/Vol-1190/#RaineriGroh> a ns4:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/RaineriGroh> ;
-    ns4:made <http://ceur-ws.org/Vol-1190/#paper5> ;
-    ns4:name "Rainer Groh" .
-
-<http://ceur-ws.org/Vol-1190/#Rapha%C3%ABliAndr%C3%A9> a ns4:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/Rapha%C3%ABliAndr%C3%A9> ;
-    ns4:made <http://ceur-ws.org/Vol-1190/#paper3> ;
-    ns4:name "Raphaël André" .
-
-<http://ceur-ws.org/Vol-1190/#Y%C3%BCceliYemez> a ns4:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/Y%C3%BCceliYemez> ;
-    ns4:made <http://ceur-ws.org/Vol-1190/#paper2> ;
-    ns4:name "Yücel Yemez" .
-
-<http://ceur-ws.org/Vol-1190/#event> a ns6:WorkshopEvent ;
-    ns6:hasLocation <http://dbpedia.org/resource/Italy> ;
-    ns6:hasPart <http://ceur-ws.org/Vol-1190/#part-EGMI> ;
-    ns6:isSubEventOf <http://ceur-ws.org/Vol-1190/#conf> ;
-    ns7:beginsAtDatetime "2014-06-17T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:endsAtDatetime "2014-06-17T00:00:00+00:00"^^xsd:dateTime ;
-    ns5:license <http://choosealicense.com/licenses/no-license/> .
-
-<http://ceur-ws.org/Vol-1190/#BeatiSigner> a ns4:Person ;
-    ns1:affiliation "" ;
-    ns3:sameAs <http://ceur-ws.org/persons/BeatiSigner> ;
-    ns4:made <http://ceur-ws.org/Vol-1190/#paper4> ;
-    ns4:name "Beat Signer" .
-
-<http://ceur-ws.org/Vol-1190/#DietrichiKammer> a ns4:Person ;
-    ns1:affiliation "" ;
-    ns3:sameAs <http://ceur-ws.org/persons/DietrichiKammer> ;
-    ns4:made <http://ceur-ws.org/Vol-1190/#paper5> ;
-    ns4:name "Dietrich Kammer" .
-
-<http://ceur-ws.org/Vol-1190/#LodeiHoste> a ns4:Person ;
-    ns1:affiliation "" ;
-    ns3:sameAs <http://ceur-ws.org/persons/LodeiHoste> ;
-    ns4:made <http://ceur-ws.org/Vol-1190/#paper4> ;
-    ns4:name "Lode Hoste" .
-
-<http://ceur-ws.org/Vol-1190/#paper6> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-1190/> ;
-    ns5:title "Defining CARE Properties Through Temporal Input Models" ;
-    ns2:endPage 41 ;
-    ns2:numPages 7 ;
-    ns2:startPage 35 ;
-    ns1:author <http://ceur-ws.org/Vol-1190/#LucioiDavideiSpano> .
-
-<http://ceur-ws.org/Vol-1190/#paper1> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-1190/> ;
-    ns5:title "Describing Movements for Motion Gestures" ;
-    ns2:endPage 7 ;
-    ns2:numPages 7 ;
-    ns2:startPage 1 ;
-    ns1:author <http://ceur-ws.org/Vol-1190/#AndreasiSchrader>,
-        <http://ceur-ws.org/Vol-1190/#BashariAltakrouri> .
-
-<http://ceur-ws.org/Vol-1190/#paper4> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-1190/> ;
-    ns5:title "Criteria, Challenges and Opportunities for Gesture Programming Languages" ;
-    ns2:endPage 29 ;
-    ns2:numPages 8 ;
-    ns2:startPage 22 ;
-    ns1:author <http://ceur-ws.org/Vol-1190/#BeatiSigner>,
-        <http://ceur-ws.org/Vol-1190/#LodeiHoste> .
-
-<http://ceur-ws.org/Vol-1190/#paper2> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-1190/> ;
-    ns5:title "User Interface Paradigms for Visually Authoring Mid-Air Gestures: A Survey and a Provocation" ;
-    ns2:endPage 14 ;
-    ns2:numPages 7 ;
-    ns2:startPage 8 ;
-    ns1:author <http://ceur-ws.org/Vol-1190/#MehmetiAyd%C4%B1niBayta%C5%9F>,
-        <http://ceur-ws.org/Vol-1190/#O%C4%9Fuzhani%C3%96zcan>,
-        <http://ceur-ws.org/Vol-1190/#Y%C3%BCceliYemez> .
-
-<http://ceur-ws.org/Vol-1190/#paper5> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-1190/> ;
-    ns5:title "Towards a Periodic Table of Gestural Interaction" ;
-    ns2:endPage 34 ;
-    ns2:numPages 5 ;
-    ns2:startPage 30 ;
-    ns1:author <http://ceur-ws.org/Vol-1190/#DietrichiKammer>,
-        <http://ceur-ws.org/Vol-1190/#MandyiKeck>,
-        <http://ceur-ws.org/Vol-1190/#RaineriGroh> .
-
-<http://ceur-ws.org/Vol-1190/#paper3> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-1190/> ;
-    ns5:title "Notation and a Layered Architecture to Model Dynamic Instantiation of Input Devices and Interaction Techniques: Application to Multi-Touch Interactions" ;
-    ns2:endPage 21 ;
-    ns2:numPages 7 ;
-    ns2:startPage 15 ;
-    ns1:author <http://ceur-ws.org/Vol-1190/#ArnaudiHamon>,
-        <http://ceur-ws.org/Vol-1190/#EriciBarboni>,
-        <http://ceur-ws.org/Vol-1190/#PhilippeiPalanque>,
-        <http://ceur-ws.org/Vol-1190/#Rapha%C3%ABliAndr%C3%A9> .
-
-<http://ceur-ws.org/Vol-1190/> a ns6:Proceedings ;
-    ns6:hasPart <http://ceur-ws.org/Vol-1190/#paper1>,
-        <http://ceur-ws.org/Vol-1190/#paper2>,
-        <http://ceur-ws.org/Vol-1190/#paper3>,
-        <http://ceur-ws.org/Vol-1190/#paper4>,
-        <http://ceur-ws.org/Vol-1190/#paper5>,
-        <http://ceur-ws.org/Vol-1190/#paper6> ;
-    ns8:issued "2014-07-09T00:00:00+00:00"^^xsd:dateTime ;
-    ns2:presentedAt <http://ceur-ws.org/Vol-1190/#event> ;
-    ns1:editor <http://ceur-ws.org/Vol-1190/#BeatiSigner>,
+<http://ceur-ws.org/Vol-1190/> a ns2:Proceedings ;
+    ns7:issued "2014-07-09T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:presentedAt <http://ceur-ws.org/Vol-1190/#event> ;
+    ns3:editor <http://ceur-ws.org/Vol-1190/#BeatiSigner>,
         <http://ceur-ws.org/Vol-1190/#DavyiVanacken>,
         <http://ceur-ws.org/Vol-1190/#DietrichiKammer>,
         <http://ceur-ws.org/Vol-1190/#FlorianiEchtler>,
         <http://ceur-ws.org/Vol-1190/#LodeiHoste> .
+
+<http://ceur-ws.org/Vol-1190/#BeatiSigner> a ns1:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/BeatiSigner> ;
+    ns1:name "Beat Signer" .
+
+<http://ceur-ws.org/Vol-1190/#DavyiVanacken> a ns1:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/DavyiVanacken> ;
+    ns1:name "Davy Vanacken" .
+
+<http://ceur-ws.org/Vol-1190/#DietrichiKammer> a ns1:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/DietrichiKammer> ;
+    ns1:name "Dietrich Kammer" .
+
+<http://ceur-ws.org/Vol-1190/#FlorianiEchtler> a ns1:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/FlorianiEchtler> ;
+    ns1:name "Florian Echtler" .
+
+<http://ceur-ws.org/Vol-1190/#LodeiHoste> a ns1:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/LodeiHoste> ;
+    ns1:name "Lode Hoste" .
+
+<http://ceur-ws.org/Vol-1190/#event> a ns2:WorkshopEvent ;
+    ns2:hasLocation <http://dbpedia.org/resource/Italy> ;
+    ns2:hasPart <http://ceur-ws.org/Vol-1190/#part-ws> ;
+    ns2:isSubEventOf <http://ceur-ws.org/Vol-1190/#conf> ;
+    ns4:beginsAtDatetime "2014-06-17T00:00:00+00:00"^^xsd:dateTime ;
+    ns4:endsAtDatetime "2014-06-17T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:license "http://choosealicense.com/licenses/no-license/" .
 

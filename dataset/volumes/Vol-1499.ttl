@@ -1,137 +1,40 @@
-@prefix ns1: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns1: <http://www.w3.org/2002/07/owl#> .
 @prefix ns2: <http://xmlns.com/foaf/0.1/> .
-@prefix ns3: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns4: <http://purl.org/ontology/bibo/#> .
-@prefix ns5: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns6: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns7: <http://www.w3.org/2002/07/owl#> .
-@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns3: <http://purl.org/ontology/bibo/#> .
+@prefix ns4: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns5: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns6: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns8: <http://purl.org/dc/elements/1.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1499/#AlessioiBucaioni> a ns2:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/AlessioiBucaioni> ;
-    ns2:made <http://ceur-ws.org/Vol-1499/#paper2> ;
-    ns2:name "Alessio Bucaioni" .
-
-<http://ceur-ws.org/Vol-1499/#D%C3%A1nieliVarr%C3%B3> a ns2:Person ;
-    ns1:affiliation "" ;
-    ns7:sameAs <http://ceur-ws.org/persons/D%C3%A1nieliVarr%C3%B3> ;
-    ns2:name "Dániel Varró" .
-
-<http://ceur-ws.org/Vol-1499/#EriciUmuhoza> a ns2:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/EriciUmuhoza> ;
-    ns2:made <http://ceur-ws.org/Vol-1499/#paper6> ;
-    ns2:name "Eric Umuhoza" .
-
-<http://ceur-ws.org/Vol-1499/#ErnestoiCidiBrasilideiMatos> a ns2:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/ErnestoiCidiBrasilideiMatos> ;
-    ns2:made <http://ceur-ws.org/Vol-1499/#paper4> ;
-    ns2:name "Ernesto Cid Brasil de Matos" .
-
-<http://ceur-ws.org/Vol-1499/#F%C3%A1bioiPauloiBasso> a ns2:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/F%C3%A1bioiPauloiBasso> ;
-    ns2:made <http://ceur-ws.org/Vol-1499/#paper3> ;
-    ns2:name "Fábio Paulo Basso" .
-
-<http://ceur-ws.org/Vol-1499/#GennaroiVessio> a ns2:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/GennaroiVessio> ;
-    ns2:made <http://ceur-ws.org/Vol-1499/#paper1> ;
-    ns2:name "Gennaro Vessio" .
-
-<http://ceur-ws.org/Vol-1499/#HenryiMuccini> a ns2:Person ;
-    ns1:affiliation "" ;
-    ns7:sameAs <http://ceur-ws.org/persons/HenryiMuccini> ;
-    ns2:name "Henry Muccini" .
-
-<http://ceur-ws.org/Vol-1499/#J%C3%B3haniDavidsen> a ns2:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/J%C3%B3haniDavidsen> ;
-    ns2:made <http://ceur-ws.org/Vol-1499/#paper5> ;
-    ns2:name "Jóhan Davidsen" .
-
-<http://ceur-ws.org/Vol-1499/#MartiniGogolla> a ns2:Person ;
-    ns1:affiliation "" ;
-    ns7:sameAs <http://ceur-ws.org/persons/MartiniGogolla> ;
-    ns2:name "Martin Gogolla" .
-
-<http://ceur-ws.org/Vol-1499/#event> a ns3:WorkshopEvent ;
-    ns3:hasLocation <http://dbpedia.org/resource/Italy> ;
-    ns3:hasPart <http://ceur-ws.org/Vol-1499/#part-STAF-DS> ;
-    ns3:isSubEventOf <http://ceur-ws.org/Vol-1499/#conf> ;
-    ns5:beginsAtDatetime "2015-07-20T00:00:00+00:00"^^xsd:dateTime ;
-    ns5:endsAtDatetime "2015-07-20T00:00:00+00:00"^^xsd:dateTime .
-
-<http://ceur-ws.org/Vol-1499/#paper1> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1499/> ;
-    ns6:title "Reasoning about Properties with Abstract State Machines" ;
-    ns4:endPage 10 ;
-    ns4:numPages 10 ;
-    ns4:section <http%3A//ceur-ws.org/Vol-1499/%23Allcontributions> ;
-    ns4:startPage 1 ;
-    ns1:author <http://ceur-ws.org/Vol-1499/#GennaroiVessio> .
-
-<http://ceur-ws.org/Vol-1499/#paper2> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1499/> ;
-    ns6:title "Raising Abstraction in Timing Analysis for Vehicular Embedded Systems through Model-Driven Engineering" ;
-    ns4:endPage 20 ;
-    ns4:numPages 10 ;
-    ns4:section <http%3A//ceur-ws.org/Vol-1499/%23Allcontributions> ;
-    ns4:startPage 11 ;
-    ns1:author <http://ceur-ws.org/Vol-1499/#AlessioiBucaioni> .
-
-<http://ceur-ws.org/Vol-1499/#paper3> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1499/> ;
-    ns6:title "A Proposal for a Common Representation Language for MDE Artifacts and Settings" ;
-    ns4:endPage 31 ;
-    ns4:numPages 11 ;
-    ns4:section <http%3A//ceur-ws.org/Vol-1499/%23Allcontributions> ;
-    ns4:startPage 21 ;
-    ns1:author <http://ceur-ws.org/Vol-1499/#F%C3%A1bioiPauloiBasso> .
-
-<http://ceur-ws.org/Vol-1499/#paper4> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1499/> ;
-    ns6:title "Complementing the B-Method with Model-Based Testing" ;
-    ns4:endPage 41 ;
-    ns4:numPages 10 ;
-    ns4:section <http%3A//ceur-ws.org/Vol-1499/%23Allcontributions> ;
-    ns4:startPage 32 ;
-    ns1:author <http://ceur-ws.org/Vol-1499/#ErnestoiCidiBrasilideiMatos> .
-
-<http://ceur-ws.org/Vol-1499/#paper5> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1499/> ;
-    ns6:title "Communication with Models" ;
-    ns4:endPage 49 ;
-    ns4:numPages 8 ;
-    ns4:section <http%3A//ceur-ws.org/Vol-1499/%23Allcontributions> ;
-    ns4:startPage 42 ;
-    ns1:author <http://ceur-ws.org/Vol-1499/#J%C3%B3haniDavidsen> .
-
-<http://ceur-ws.org/Vol-1499/#paper6> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1499/> ;
-    ns6:title "Domain-Specific Modeling and Code Generation for Cross-Platform Multi-Device Mobile Apps" ;
-    ns4:endPage 60 ;
-    ns4:numPages 11 ;
-    ns4:section <http%3A//ceur-ws.org/Vol-1499/%23Allcontributions> ;
-    ns4:startPage 50 ;
-    ns1:author <http://ceur-ws.org/Vol-1499/#EriciUmuhoza> .
-
-<http%3A//ceur-ws.org/Vol-1499/%23Allcontributions> a ns3:SessionEvent ;
-    ns3:partOf <http://ceur-ws.org/Vol-1499/> ;
-    ns6:title "All contributions" .
-
-<http://ceur-ws.org/Vol-1499/> a ns3:Proceedings ;
-    ns3:hasPart <http://ceur-ws.org/Vol-1499/#paper1>,
-        <http://ceur-ws.org/Vol-1499/#paper2>,
-        <http://ceur-ws.org/Vol-1499/#paper3>,
-        <http://ceur-ws.org/Vol-1499/#paper4>,
-        <http://ceur-ws.org/Vol-1499/#paper5>,
-        <http://ceur-ws.org/Vol-1499/#paper6> ;
-    ns3:hasSession <http%3A//ceur-ws.org/Vol-1499/%23Allcontributions> ;
-    ns8:issued "2015-11-03T00:00:00+00:00"^^xsd:dateTime ;
-    ns4:presentedAt <http://ceur-ws.org/Vol-1499/#event> ;
-    ns1:editor <http://ceur-ws.org/Vol-1499/#D%C3%A1nieliVarr%C3%B3>,
+<http://ceur-ws.org/Vol-1499/> a ns4:Proceedings ;
+    ns7:issued "2015-11-03T00:00:00+00:00"^^xsd:dateTime ;
+    ns3:presentedAt <http://ceur-ws.org/Vol-1499/#event> ;
+    ns5:editor <http://ceur-ws.org/Vol-1499/#D%C3%A1nieliVarr%C3%B3>,
         <http://ceur-ws.org/Vol-1499/#HenryiMuccini>,
         <http://ceur-ws.org/Vol-1499/#MartiniGogolla> .
+
+<http://ceur-ws.org/Vol-1499/#D%C3%A1nieliVarr%C3%B3> a ns2:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/D%C3%A1nieliVarr%C3%B3> ;
+    ns2:name "Dániel Varró" .
+
+<http://ceur-ws.org/Vol-1499/#HenryiMuccini> a ns2:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/HenryiMuccini> ;
+    ns2:name "Henry Muccini" .
+
+<http://ceur-ws.org/Vol-1499/#MartiniGogolla> a ns2:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/MartiniGogolla> ;
+    ns2:name "Martin Gogolla" .
+
+<http://ceur-ws.org/Vol-1499/#event> a ns4:WorkshopEvent ;
+    ns4:hasLocation <http://dbpedia.org/resource/Italy> ;
+    ns4:hasPart <http://ceur-ws.org/Vol-1499/#part-ws> ;
+    ns4:isSubEventOf <http://ceur-ws.org/Vol-1499/#conf> ;
+    ns6:beginsAtDatetime "2015-07-20T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:endsAtDatetime "2015-07-20T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:license "http://creativecommons.org/publicdomain/zero/1.0/" .
 

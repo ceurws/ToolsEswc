@@ -1,223 +1,37 @@
-@prefix ns1: <http://www.w3.org/2002/07/owl#> .
-@prefix ns2: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns3: <http://xmlns.com/foaf/0.1/> .
-@prefix ns4: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns5: <http://purl.org/ontology/bibo/#> .
-@prefix ns6: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns7: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns1: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns2: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns3: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns4: <http://purl.org/dc/elements/1.1/> .
+@prefix ns5: <http://www.w3.org/2002/07/owl#> .
+@prefix ns6: <http://purl.org/ontology/bibo/#> .
+@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns8: <http://xmlns.com/foaf/0.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1051/#AlessandroiDaiSilveiraiDias> a ns3:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/AlessandroiDaiSilveiraiDias> ;
-    ns3:made <http://ceur-ws.org/Vol-1051/#paper1> ;
-    ns3:name "Alessandro Da Silveira Dias" .
+<http://ceur-ws.org/Vol-1051/> a ns2:Proceedings ;
+    ns7:issued "2013-09-30T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:presentedAt <http://ceur-ws.org/Vol-1051/#event> ;
+    ns3:editor <http://ceur-ws.org/Vol-1051/#CristianoiMaciel>,
+        <http://ceur-ws.org/Vol-1051/#Jos%C3%A9iViterbo> .
 
-<http://ceur-ws.org/Vol-1051/#AlexandreiMatos> a ns3:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/AlexandreiMatos> ;
-    ns3:made <http://ceur-ws.org/Vol-1051/#paper3> ;
-    ns3:name "Alexandre Matos" .
+<http://ceur-ws.org/Vol-1051/#CristianoiMaciel> a ns8:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/CristianoiMaciel> ;
+    ns8:name "Cristiano Maciel" .
 
-<http://ceur-ws.org/Vol-1051/#AnaiCarolinaideiCastroiNunes> a ns3:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/AnaiCarolinaideiCastroiNunes> ;
-    ns3:made <http://ceur-ws.org/Vol-1051/#paper0> ;
-    ns3:name "Ana Carolina de Castro Nunes" .
+<http://ceur-ws.org/Vol-1051/#Jos%C3%A9iViterbo> a ns8:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/Jos%C3%A9iViterbo> ;
+    ns8:name "José Viterbo" .
 
-<http://ceur-ws.org/Vol-1051/#AvanildeiKemczinski> a ns3:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/AvanildeiKemczinski> ;
-    ns3:made <http://ceur-ws.org/Vol-1051/#paper3> ;
-    ns3:name "Avanilde Kemczinski" .
-
-<http://ceur-ws.org/Vol-1051/#CarlaiDiacuiiMedeirosiBerkenbrock> a ns3:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/CarlaiDiacuiiMedeirosiBerkenbrock> ;
-    ns3:made <http://ceur-ws.org/Vol-1051/#paper4> ;
-    ns3:name "Carla Diacui Medeiros Berkenbrock" .
-
-<http://ceur-ws.org/Vol-1051/#EcivaldoiMatos> a ns3:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/EcivaldoiMatos> ;
-    ns3:made <http://ceur-ws.org/Vol-1051/#paper0> ;
-    ns3:name "Ecivaldo Matos" .
-
-<http://ceur-ws.org/Vol-1051/#EdsoniPedroiSchiehl> a ns3:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/EdsoniPedroiSchiehl> ;
-    ns3:made <http://ceur-ws.org/Vol-1051/#paper3> ;
-    ns3:name "Edson Pedro Schiehl" .
-
-<http://ceur-ws.org/Vol-1051/#EvandroiRocha> a ns3:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/EvandroiRocha> ;
-    ns3:made <http://ceur-ws.org/Vol-1051/#paper2> ;
-    ns3:name "Evandro Rocha" .
-
-<http://ceur-ws.org/Vol-1051/#FernandoiPinto> a ns3:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/FernandoiPinto> ;
-    ns3:made <http://ceur-ws.org/Vol-1051/#paper5> ;
-    ns3:name "Fernando Pinto" .
-
-<http://ceur-ws.org/Vol-1051/#JanoiSouza> a ns3:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/JanoiSouza> ;
-    ns3:made <http://ceur-ws.org/Vol-1051/#paper2> ;
-    ns3:name "Jano Souza" .
-
-<http://ceur-ws.org/Vol-1051/#Jos%C3%A9iViterbo> a ns3:Person ;
-    ns2:affiliation "" ;
-    ns1:sameAs <http://ceur-ws.org/persons/Jos%C3%A9iViterbo> ;
-    ns3:name "José Viterbo" .
-
-<http://ceur-ws.org/Vol-1051/#LeandroiKrugiWives> a ns3:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/LeandroiKrugiWives> ;
-    ns3:made <http://ceur-ws.org/Vol-1051/#paper1> ;
-    ns3:name "Leandro Krug Wives" .
-
-<http://ceur-ws.org/Vol-1051/#Lu%C3%A3iMarceloiMuriana> a ns3:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/Lu%C3%A3iMarceloiMuriana> ;
-    ns3:made <http://ceur-ws.org/Vol-1051/#paper6> ;
-    ns3:name "Luã Marcelo Muriana" .
-
-<http://ceur-ws.org/Vol-1051/#LucasiFelipeiDaiCunha> a ns3:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/LucasiFelipeiDaiCunha> ;
-    ns3:made <http://ceur-ws.org/Vol-1051/#paper4> ;
-    ns3:name "Lucas Felipe Da Cunha" .
-
-<http://ceur-ws.org/Vol-1051/#MiriamiChaves> a ns3:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/MiriamiChaves> ;
-    ns3:made <http://ceur-ws.org/Vol-1051/#paper2> ;
-    ns3:name "Miriam Chaves" .
-
-<http://ceur-ws.org/Vol-1051/#NayatiSanchez-Pi> a ns3:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/NayatiSanchez-Pi> ;
-    ns3:made <http://ceur-ws.org/Vol-1051/#paper5> ;
-    ns3:name "Nayat Sanchez-Pi" .
-
-<http://ceur-ws.org/Vol-1051/#Oct%C3%A1vioiTurraiBarbosa> a ns3:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/Oct%C3%A1vioiTurraiBarbosa> ;
-    ns3:made <http://ceur-ws.org/Vol-1051/#paper0> ;
-    ns3:name "Octávio Turra Barbosa" .
-
-<http://ceur-ws.org/Vol-1051/#RodrigoiSantos> a ns3:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/RodrigoiSantos> ;
-    ns3:made <http://ceur-ws.org/Vol-1051/#paper2> ;
-    ns3:name "Rodrigo Santos" .
-
-<http://ceur-ws.org/Vol-1051/#S%C3%A9rgioiRodrigues> a ns3:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/S%C3%A9rgioiRodrigues> ;
-    ns3:made <http://ceur-ws.org/Vol-1051/#paper2> ;
-    ns3:name "Sérgio Rodrigues" .
-
-<http://ceur-ws.org/Vol-1051/#event> a ns4:WorkshopEvent ;
-    ns4:hasLocation <http://dbpedia.org/resource/Brazil> ;
-    ns4:hasPart <http://ceur-ws.org/Vol-1051/#part-WAIHCWS> ;
-    ns4:isSubEventOf <http://ceur-ws.org/Vol-1051/#conf> ;
-    ns6:beginsAtDatetime "2013-10-08T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:endsAtDatetime "2013-10-08T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:license <http://choosealicense.com/licenses/no-license/> ;
+<http://ceur-ws.org/Vol-1051/#event> a ns2:WorkshopEvent ;
+    ns2:hasLocation <http://dbpedia.org/resource/Brazil> ;
+    ns2:hasPart <http://ceur-ws.org/Vol-1051/#part-CEUR-WS> ;
+    ns2:isSubEventOf <http://ceur-ws.org/Vol-1051/#conf> ;
+    ns1:beginsAtDatetime "2013-10-08T00:00:00+00:00"^^xsd:dateTime ;
+    ns1:endsAtDatetime "2013-10-08T00:00:00+00:00"^^xsd:dateTime ;
+    ns4:license "http://choosealicense.com/licenses/no-license/" ;
     rdfs:seeAlso <http://ceur-ws.org/Vol-797/#event>,
         <http://ceur-ws.org/Vol-980/#event> .
-
-<http://ceur-ws.org/Vol-1051/#AnaiCristinaiBicharraiGarcia> a ns3:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/AnaiCristinaiBicharraiGarcia> ;
-    ns3:made <http://ceur-ws.org/Vol-1051/#paper5>,
-        <http://ceur-ws.org/Vol-1051/#paper6> ;
-    ns3:name "Ana Cristina Bicharra Garcia" .
-
-<http://ceur-ws.org/Vol-1051/#CristianoiMaciel> a ns3:Person ;
-    ns2:affiliation "" ;
-    ns1:sameAs <http://ceur-ws.org/persons/CristianoiMaciel> ;
-    ns3:made <http://ceur-ws.org/Vol-1051/#paper6> ;
-    ns3:name "Cristiano Maciel" .
-
-<http://ceur-ws.org/Vol-1051/#IsabelaiGasparini> a ns3:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/IsabelaiGasparini> ;
-    ns3:made <http://ceur-ws.org/Vol-1051/#paper1>,
-        <http://ceur-ws.org/Vol-1051/#paper3>,
-        <http://ceur-ws.org/Vol-1051/#paper4> ;
-    ns3:name "Isabela Gasparini" .
-
-<http://ceur-ws.org/Vol-1051/#paper0> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1051/> ;
-    ns7:title "Técnicas de Avaliação de Usabilidade do Tipo Do-It Yourself e seus Impactos no Processo de Desenvolvimento de uma Rede Social na Web" ;
-    ns5:endPage 6 ;
-    ns5:numPages 6 ;
-    ns5:startPage 1 ;
-    ns2:author <http://ceur-ws.org/Vol-1051/#AnaiCarolinaideiCastroiNunes>,
-        <http://ceur-ws.org/Vol-1051/#EcivaldoiMatos>,
-        <http://ceur-ws.org/Vol-1051/#Oct%C3%A1vioiTurraiBarbosa> .
-
-<http://ceur-ws.org/Vol-1051/#paper1> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1051/> ;
-    ns7:title "SOI Based Video Recommender Systems - Interaction Design Issues and Collective Intelligence" ;
-    ns5:endPage 13 ;
-    ns5:numPages 7 ;
-    ns5:startPage 7 ;
-    ns2:author <http://ceur-ws.org/Vol-1051/#AlessandroiDaiSilveiraiDias>,
-        <http://ceur-ws.org/Vol-1051/#IsabelaiGasparini>,
-        <http://ceur-ws.org/Vol-1051/#LeandroiKrugiWives> .
-
-<http://ceur-ws.org/Vol-1051/#paper4> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1051/> ;
-    ns7:title "Investigando o Uso de Gamificação para Aumentar o Engajamento em Sistemas Colaborativos" ;
-    ns5:endPage 33 ;
-    ns5:numPages 6 ;
-    ns5:startPage 28 ;
-    ns2:author <http://ceur-ws.org/Vol-1051/#CarlaiDiacuiiMedeirosiBerkenbrock>,
-        <http://ceur-ws.org/Vol-1051/#IsabelaiGasparini>,
-        <http://ceur-ws.org/Vol-1051/#LucasiFelipeiDaiCunha> .
-
-<http://ceur-ws.org/Vol-1051/#paper5> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1051/> ;
-    ns7:title "An Ontology-Based Tool for Collaborative and Social Sensemaking" ;
-    ns5:endPage 38 ;
-    ns5:numPages 5 ;
-    ns5:startPage 34 ;
-    ns2:author <http://ceur-ws.org/Vol-1051/#AnaiCristinaiBicharraiGarcia>,
-        <http://ceur-ws.org/Vol-1051/#FernandoiPinto>,
-        <http://ceur-ws.org/Vol-1051/#NayatiSanchez-Pi> .
-
-<http://ceur-ws.org/Vol-1051/#paper6> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1051/> ;
-    ns7:title "Do Facebook às Ruas - Comunidades em Interação" ;
-    ns5:endPage 50 ;
-    ns5:numPages 12 ;
-    ns5:startPage 39 ;
-    ns2:author <http://ceur-ws.org/Vol-1051/#AnaiCristinaiBicharraiGarcia>,
-        <http://ceur-ws.org/Vol-1051/#CristianoiMaciel>,
-        <http://ceur-ws.org/Vol-1051/#Lu%C3%A3iMarceloiMuriana> .
-
-<http://ceur-ws.org/Vol-1051/#paper3> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1051/> ;
-    ns7:title "Padrões de Projeto e o Estímulo ao Compartilhamento de Experiências Docentes em Redes Sociais Educacionais" ;
-    ns5:endPage 27 ;
-    ns5:numPages 7 ;
-    ns5:startPage 21 ;
-    ns2:author <http://ceur-ws.org/Vol-1051/#AlexandreiMatos>,
-        <http://ceur-ws.org/Vol-1051/#AvanildeiKemczinski>,
-        <http://ceur-ws.org/Vol-1051/#EdsoniPedroiSchiehl>,
-        <http://ceur-ws.org/Vol-1051/#IsabelaiGasparini> .
-
-<http://ceur-ws.org/Vol-1051/#paper2> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1051/> ;
-    ns7:title "GovMobile: Uma Proposta para Disponibilizar Dados Abertos Georreferenciados para Governo Eletrônico" ;
-    ns5:endPage 20 ;
-    ns5:numPages 7 ;
-    ns5:startPage 14 ;
-    ns2:author <http://ceur-ws.org/Vol-1051/#EvandroiRocha>,
-        <http://ceur-ws.org/Vol-1051/#JanoiSouza>,
-        <http://ceur-ws.org/Vol-1051/#MiriamiChaves>,
-        <http://ceur-ws.org/Vol-1051/#RodrigoiSantos>,
-        <http://ceur-ws.org/Vol-1051/#S%C3%A9rgioiRodrigues> .
-
-<http://ceur-ws.org/Vol-1051/> a ns4:Proceedings ;
-    ns4:hasPart <http://ceur-ws.org/Vol-1051/#paper0>,
-        <http://ceur-ws.org/Vol-1051/#paper1>,
-        <http://ceur-ws.org/Vol-1051/#paper2>,
-        <http://ceur-ws.org/Vol-1051/#paper3>,
-        <http://ceur-ws.org/Vol-1051/#paper4>,
-        <http://ceur-ws.org/Vol-1051/#paper5>,
-        <http://ceur-ws.org/Vol-1051/#paper6> ;
-    ns8:issued "2013-09-30T00:00:00+00:00"^^xsd:dateTime ;
-    ns5:presentedAt <http://ceur-ws.org/Vol-1051/#event> ;
-    ns2:editor <http://ceur-ws.org/Vol-1051/#CristianoiMaciel>,
-        <http://ceur-ws.org/Vol-1051/#Jos%C3%A9iViterbo> .
 

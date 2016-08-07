@@ -1,0 +1,46 @@
+@prefix ns1: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns2: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns3: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns4: <http://www.w3.org/2002/07/owl#> .
+@prefix ns5: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns6: <http://purl.org/ontology/bibo/#> .
+@prefix ns7: <http://xmlns.com/foaf/0.1/> .
+@prefix ns8: <http://purl.org/dc/elements/1.1/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://ceur-ws.org/Vol-1642/> a ns1:Proceedings ;
+    ns3:issued "2016-07-16T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:presentedAt <http://ceur-ws.org/Vol-1642/#event> ;
+    ns2:editor <http://ceur-ws.org/Vol-1642/#FrankiHopfgartner>,
+        <http://ceur-ws.org/Vol-1642/#GabriellaiKazai>,
+        <http://ceur-ws.org/Vol-1642/#MichaeliMeder>,
+        <http://ceur-ws.org/Vol-1642/#UdoiKruschwitz> .
+
+<http://ceur-ws.org/Vol-1642/#FrankiHopfgartner> a ns7:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/FrankiHopfgartner> ;
+    ns7:name "Frank Hopfgartner" .
+
+<http://ceur-ws.org/Vol-1642/#GabriellaiKazai> a ns7:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/GabriellaiKazai> ;
+    ns7:name "Gabriella Kazai" .
+
+<http://ceur-ws.org/Vol-1642/#MichaeliMeder> a ns7:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/MichaeliMeder> ;
+    ns7:name "Michael Meder" .
+
+<http://ceur-ws.org/Vol-1642/#UdoiKruschwitz> a ns7:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/UdoiKruschwitz> ;
+    ns7:name "Udo Kruschwitz" .
+
+<http://ceur-ws.org/Vol-1642/#event> a ns1:WorkshopEvent ;
+    ns1:hasLocation <http://dbpedia.org/resource/Italy> ;
+    ns1:hasPart <http://ceur-ws.org/Vol-1642/#part-ws> ;
+    ns1:isSubEventOf <http://ceur-ws.org/Vol-1642/#conf> ;
+    ns5:beginsAtDatetime "2016-07-21T00:00:00+00:00"^^xsd:dateTime ;
+    ns5:endsAtDatetime "2016-07-21T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:license "http://creativecommons.org/publicdomain/zero/1.0/" ;
+    rdfs:seeAlso <http://ceur-ws.org/Vol-1345/#event> .
+

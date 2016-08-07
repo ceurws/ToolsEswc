@@ -1,284 +1,35 @@
-@prefix ns1: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns2: <http://purl.org/ontology/bibo/#> .
-@prefix ns3: <http://xmlns.com/foaf/0.1/> .
-@prefix ns4: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns5: <http://www.w3.org/2002/07/owl#> .
+@prefix ns1: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns2: <http://xmlns.com/foaf/0.1/> .
+@prefix ns3: <http://www.w3.org/2002/07/owl#> .
+@prefix ns4: <http://purl.org/ontology/bibo/#> .
+@prefix ns5: <http://purl.org/dc/elements/1.1/> .
 @prefix ns6: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns8: <http://swrc.ontoware.org/ontology/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1335/#AlexanderiBau> a ns3:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/AlexanderiBau> ;
-    ns3:made <http://ceur-ws.org/Vol-1335/#wlp2014_paper2> ;
-    ns3:name "Alexander Bau" .
+<http://ceur-ws.org/Vol-1335/> a ns6:Proceedings ;
+    ns1:issued "2015-02-26T00:00:00+00:00"^^xsd:dateTime ;
+    ns4:presentedAt <http://ceur-ws.org/Vol-1335/#event> ;
+    ns8:editor <http://ceur-ws.org/Vol-1335/#JohannesiWaldmann>,
+        <http://ceur-ws.org/Vol-1335/#StefaniBrass> .
 
-<http://ceur-ws.org/Vol-1335/#BaltasariTranc%C3%B3niyiWidemann> a ns3:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/BaltasariTranc%C3%B3niyiWidemann> ;
-    ns3:made <http://ceur-ws.org/Vol-1335/#wflp2014_paper1> ;
-    ns3:name "Baltasar Trancón y Widemann" .
+<http://ceur-ws.org/Vol-1335/#JohannesiWaldmann> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/JohannesiWaldmann> ;
+    ns2:name "Johannes Waldmann" .
 
-<http://ceur-ws.org/Vol-1335/#Bj%C3%B6rniPeem%C3%B6ller> a ns3:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/Bj%C3%B6rniPeem%C3%B6ller> ;
-    ns3:made <http://ceur-ws.org/Vol-1335/#wflp2014_paper6> ;
-    ns3:name "Björn Peemöller" .
-
-<http://ceur-ws.org/Vol-1335/#FrankiFlederer> a ns3:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/FrankiFlederer> ;
-    ns3:made <http://ceur-ws.org/Vol-1335/#wlp2014_paper3> ;
-    ns3:name "Frank Flederer" .
-
-<http://ceur-ws.org/Vol-1335/#GiorgosiFlouris> a ns3:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/GiorgosiFlouris> ;
-    ns3:made <http://ceur-ws.org/Vol-1335/#wlp2014_paper1> ;
-    ns3:name "Giorgos Flouris" .
-
-<http://ceur-ws.org/Vol-1335/#J%C3%A1ni%C5%A0efr%C3%A1nek> a ns3:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/J%C3%A1ni%C5%A0efr%C3%A1nek> ;
-    ns3:made <http://ceur-ws.org/Vol-1335/#wlp2014_paper1> ;
-    ns3:name "Ján Šefránek" .
-
-<http://ceur-ws.org/Vol-1335/#JanisiVoigtl%C3%A4nder> a ns3:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/JanisiVoigtl%C3%A4nder> ;
-    ns3:made <http://ceur-ws.org/Vol-1335/#wflp2014_paper9> ;
-    ns3:name "Janis Voigtländer" .
-
-<http://ceur-ws.org/Vol-1335/#JoachimiBaumeister> a ns3:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/JoachimiBaumeister> ;
-    ns3:made <http://ceur-ws.org/Vol-1335/#wlp2014_paper4> ;
-    ns3:name "Joachim Baumeister" .
-
-<http://ceur-ws.org/Vol-1335/#JozefiFrt%C3%BAs> a ns3:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/JozefiFrt%C3%BAs> ;
-    ns3:made <http://ceur-ws.org/Vol-1335/#wlp2014_paper1> ;
-    ns3:name "Jozef Frtús" .
-
-<http://ceur-ws.org/Vol-1335/#KlausiPr%C3%A4tor> a ns3:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/KlausiPr%C3%A4tor> ;
-    ns3:made <http://ceur-ws.org/Vol-1335/#wlp2014_paper4> ;
-    ns3:name "Klaus Prätor" .
-
-<http://ceur-ws.org/Vol-1335/#LudwigiOstermayer> a ns3:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/LudwigiOstermayer> ;
-    ns3:made <http://ceur-ws.org/Vol-1335/#wlp2014_paper3> ;
-    ns3:name "Ludwig Ostermayer" .
-
-<http://ceur-ws.org/Vol-1335/#MarkusiLepper> a ns3:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/MarkusiLepper> ;
-    ns3:made <http://ceur-ws.org/Vol-1335/#wflp2014_paper1> ;
-    ns3:name "Markus Lepper" .
-
-<http://ceur-ws.org/Vol-1335/#MartiniBal%C3%A1%C5%BE> a ns3:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/MartiniBal%C3%A1%C5%BE> ;
-    ns3:made <http://ceur-ws.org/Vol-1335/#wlp2014_paper1> ;
-    ns3:name "Martin Baláž" .
-
-<http://ceur-ws.org/Vol-1335/#MartiniHomola> a ns3:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/MartiniHomola> ;
-    ns3:made <http://ceur-ws.org/Vol-1335/#wlp2014_paper1> ;
-    ns3:name "Martin Homola" .
-
-<http://ceur-ws.org/Vol-1335/#NikitaiDanilenko> a ns3:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/NikitaiDanilenko> ;
-    ns3:made <http://ceur-ws.org/Vol-1335/#wflp2014_paper4> ;
-    ns3:name "Nikita Danilenko" .
-
-<http://ceur-ws.org/Vol-1335/#SergioiAntoy> a ns3:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/SergioiAntoy> ;
-    ns3:made <http://ceur-ws.org/Vol-1335/#wflp2014_paper5> ;
-    ns3:name "Sergio Antoy" .
-
-<http://ceur-ws.org/Vol-1335/#StefaniBrass> a ns3:Person ;
-    ns1:affiliation "" ;
-    ns5:sameAs <http://ceur-ws.org/persons/StefaniBrass> ;
-    ns3:name "Stefan Brass" .
-
-<http://ceur-ws.org/Vol-1335/#Ta%C3%AFebiMellouli> a ns3:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/Ta%C3%AFebiMellouli> ;
-    ns3:made <http://ceur-ws.org/Vol-1335/#wlp2014_paper6> ;
-    ns3:name "Taïeb Mellouli" .
-
-<http://ceur-ws.org/Vol-1335/#TobiasiG%C3%B6dderz> a ns3:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/TobiasiG%C3%B6dderz> ;
-    ns3:made <http://ceur-ws.org/Vol-1335/#wflp2014_paper9> ;
-    ns3:name "Tobias Gödderz" .
+<http://ceur-ws.org/Vol-1335/#StefaniBrass> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/StefaniBrass> ;
+    ns2:name "Stefan Brass" .
 
 <http://ceur-ws.org/Vol-1335/#event> a ns6:WorkshopEvent ;
     ns6:hasLocation <http://dbpedia.org/resource/Germany> ;
     ns6:hasPart <http://ceur-ws.org/Vol-1335/#part-WLP> ;
     ns6:isSubEventOf <http://ceur-ws.org/Vol-1335/#conf> ;
-    ns8:beginsAtDatetime "2014-09-15T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:endsAtDatetime "2014-09-17T00:00:00+00:00"^^xsd:dateTime .
-
-<http://ceur-ws.org/Vol-1335/#DietmariSeipel> a ns3:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/DietmariSeipel> ;
-    ns3:made <http://ceur-ws.org/Vol-1335/#wlp2014_paper3>,
-        <http://ceur-ws.org/Vol-1335/#wlp2014_paper4> ;
-    ns3:name "Dietmar Seipel" .
-
-<http://ceur-ws.org/Vol-1335/#wflp2014_paper4> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-1335/> ;
-    ns4:title "Exploring Non-Determinism in Graph Algorithms" ;
-    ns2:endPage 124 ;
-    ns2:numPages 17 ;
-    ns2:section <http%3A//ceur-ws.org/Vol-1335/%23WFLPTrack> ;
-    ns2:startPage 108 ;
-    ns1:author <http://ceur-ws.org/Vol-1335/#NikitaiDanilenko> .
-
-<http://ceur-ws.org/Vol-1335/#wflp2014_tutorial> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-1335/> ;
-    ns4:title "Declarative Multi-paradigm Programming" ;
-    ns2:endPage 102 ;
-    ns2:numPages 22 ;
-    ns2:section <http%3A//ceur-ws.org/Vol-1335/%23WFLPTrack> ;
-    ns2:startPage 81 ;
-    ns1:author <http://ceur-ws.org/Vol-1335/#MichaeliHanus> .
-
-<http://ceur-ws.org/Vol-1335/#wlp2014_paper5> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-1335/> ;
-    ns4:title "Automated Exercises for Constraint Programming" ;
-    ns2:endPage 65 ;
-    ns2:numPages 13 ;
-    ns2:section <http%3A//ceur-ws.org/Vol-1335/%23WLPTrack> ;
-    ns2:startPage 53 ;
-    ns1:author <http://ceur-ws.org/Vol-1335/#JohannesiWaldmann> .
-
-<http://ceur-ws.org/Vol-1335/#wlp2014_paper6> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-1335/> ;
-    ns4:title "Complex Certainty Factors for Rule Based Systems – Detecting Inconsistent Argumentations" ;
-    ns2:endPage 80 ;
-    ns2:numPages 15 ;
-    ns2:section <http%3A//ceur-ws.org/Vol-1335/%23WLPTrack> ;
-    ns2:startPage 66 ;
-    ns1:author <http://ceur-ws.org/Vol-1335/#Ta%C3%AFebiMellouli> .
-
-<http://ceur-ws.org/Vol-1335/#JohannesiWaldmann> a ns3:Person ;
-    ns1:affiliation "" ;
-    ns5:sameAs <http://ceur-ws.org/persons/JohannesiWaldmann> ;
-    ns3:made <http://ceur-ws.org/Vol-1335/#wlp2014_paper2>,
-        <http://ceur-ws.org/Vol-1335/#wlp2014_paper5> ;
-    ns3:name "Johannes Waldmann" .
-
-<http://ceur-ws.org/Vol-1335/#MichaeliHanus> a ns3:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/MichaeliHanus> ;
-    ns3:made <http://ceur-ws.org/Vol-1335/#wflp2014_paper5>,
-        <http://ceur-ws.org/Vol-1335/#wflp2014_paper6>,
-        <http://ceur-ws.org/Vol-1335/#wflp2014_tutorial> ;
-    ns3:name "Michael Hanus" .
-
-<http://ceur-ws.org/Vol-1335/#wflp2014_paper1> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-1335/> ;
-    ns4:title "Interpreting XPath by Iterative Pattern Matching with Paisley" ;
-    ns2:endPage 107 ;
-    ns2:numPages 3 ;
-    ns2:section <http%3A//ceur-ws.org/Vol-1335/%23WFLPTrack> ;
-    ns2:startPage 105 ;
-    ns1:author <http://ceur-ws.org/Vol-1335/#BaltasariTranc%C3%B3niyiWidemann>,
-        <http://ceur-ws.org/Vol-1335/#MarkusiLepper> .
-
-<http://ceur-ws.org/Vol-1335/#wflp2014_paper5> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-1335/> ;
-    ns4:title "Curry without Success" ;
-    ns2:endPage 139 ;
-    ns2:numPages 15 ;
-    ns2:section <http%3A//ceur-ws.org/Vol-1335/%23WFLPTrack> ;
-    ns2:startPage 125 ;
-    ns1:author <http://ceur-ws.org/Vol-1335/#MichaeliHanus>,
-        <http://ceur-ws.org/Vol-1335/#SergioiAntoy> .
-
-<http://ceur-ws.org/Vol-1335/#wflp2014_paper6> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-1335/> ;
-    ns4:title "A Partial Evaluator for Curry" ;
-    ns2:endPage 154 ;
-    ns2:numPages 15 ;
-    ns2:section <http%3A//ceur-ws.org/Vol-1335/%23WFLPTrack> ;
-    ns2:startPage 140 ;
-    ns1:author <http://ceur-ws.org/Vol-1335/#Bj%C3%B6rniPeem%C3%B6ller>,
-        <http://ceur-ws.org/Vol-1335/#MichaeliHanus> .
-
-<http://ceur-ws.org/Vol-1335/#wflp2014_paper9> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-1335/> ;
-    ns4:title "Automatic Testing of Operation Invariance" ;
-    ns2:endPage 171 ;
-    ns2:numPages 17 ;
-    ns2:section <http%3A//ceur-ws.org/Vol-1335/%23WFLPTrack> ;
-    ns2:startPage 155 ;
-    ns1:author <http://ceur-ws.org/Vol-1335/#JanisiVoigtl%C3%A4nder>,
-        <http://ceur-ws.org/Vol-1335/#TobiasiG%C3%B6dderz> .
-
-<http://ceur-ws.org/Vol-1335/#wlp2014_paper2> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-1335/> ;
-    ns4:title "Describing and Measuring the Complexity of SAT encodings for Constraint Programs" ;
-    ns2:endPage 25 ;
-    ns2:numPages 15 ;
-    ns2:section <http%3A//ceur-ws.org/Vol-1335/%23WLPTrack> ;
-    ns2:startPage 11 ;
-    ns1:author <http://ceur-ws.org/Vol-1335/#AlexanderiBau>,
-        <http://ceur-ws.org/Vol-1335/#JohannesiWaldmann> .
-
-<http://ceur-ws.org/Vol-1335/#wlp2014_paper3> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-1335/> ;
-    ns4:title "PPI - A Portable Prolog Interface for Java" ;
-    ns2:endPage 37 ;
-    ns2:numPages 12 ;
-    ns2:section <http%3A//ceur-ws.org/Vol-1335/%23WLPTrack> ;
-    ns2:startPage 26 ;
-    ns1:author <http://ceur-ws.org/Vol-1335/#DietmariSeipel>,
-        <http://ceur-ws.org/Vol-1335/#FrankiFlederer>,
-        <http://ceur-ws.org/Vol-1335/#LudwigiOstermayer> .
-
-<http://ceur-ws.org/Vol-1335/#wlp2014_paper4> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-1335/> ;
-    ns4:title "Declarative Evaluation of Ontologies with Rules" ;
-    ns2:endPage 52 ;
-    ns2:numPages 15 ;
-    ns2:section <http%3A//ceur-ws.org/Vol-1335/%23WLPTrack> ;
-    ns2:startPage 38 ;
-    ns1:author <http://ceur-ws.org/Vol-1335/#DietmariSeipel>,
-        <http://ceur-ws.org/Vol-1335/#JoachimiBaumeister>,
-        <http://ceur-ws.org/Vol-1335/#KlausiPr%C3%A4tor> .
-
-<http://ceur-ws.org/Vol-1335/#wlp2014_paper1> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-1335/> ;
-    ns4:title "Embedding Defeasible Logic Programs into Generalized Logic Programs" ;
-    ns2:endPage 3 ;
-    ns2:numPages 3 ;
-    ns2:section <http%3A//ceur-ws.org/Vol-1335/%23WLPTrack> ;
-    ns2:startPage 1 ;
-    ns1:author <http://ceur-ws.org/Vol-1335/#GiorgosiFlouris>,
-        <http://ceur-ws.org/Vol-1335/#J%C3%A1ni%C5%A0efr%C3%A1nek>,
-        <http://ceur-ws.org/Vol-1335/#JozefiFrt%C3%BAs>,
-        <http://ceur-ws.org/Vol-1335/#MartiniBal%C3%A1%C5%BE>,
-        <http://ceur-ws.org/Vol-1335/#MartiniHomola> .
-
-<http%3A//ceur-ws.org/Vol-1335/%23WFLPTrack> a ns6:SessionEvent ;
-    ns6:partOf <http://ceur-ws.org/Vol-1335/> ;
-    ns4:title "WFLP Track" .
-
-<http%3A//ceur-ws.org/Vol-1335/%23WLPTrack> a ns6:SessionEvent ;
-    ns6:partOf <http://ceur-ws.org/Vol-1335/> ;
-    ns4:title "WLP Track" .
-
-<http://ceur-ws.org/Vol-1335/> a ns6:Proceedings ;
-    ns6:hasPart <http://ceur-ws.org/Vol-1335/#wflp2014_paper1>,
-        <http://ceur-ws.org/Vol-1335/#wflp2014_paper4>,
-        <http://ceur-ws.org/Vol-1335/#wflp2014_paper5>,
-        <http://ceur-ws.org/Vol-1335/#wflp2014_paper6>,
-        <http://ceur-ws.org/Vol-1335/#wflp2014_paper9>,
-        <http://ceur-ws.org/Vol-1335/#wflp2014_tutorial>,
-        <http://ceur-ws.org/Vol-1335/#wlp2014_paper1>,
-        <http://ceur-ws.org/Vol-1335/#wlp2014_paper2>,
-        <http://ceur-ws.org/Vol-1335/#wlp2014_paper3>,
-        <http://ceur-ws.org/Vol-1335/#wlp2014_paper4>,
-        <http://ceur-ws.org/Vol-1335/#wlp2014_paper5>,
-        <http://ceur-ws.org/Vol-1335/#wlp2014_paper6> ;
-    ns6:hasSession <http%3A//ceur-ws.org/Vol-1335/%23WFLPTrack>,
-        <http%3A//ceur-ws.org/Vol-1335/%23WLPTrack> ;
-    ns7:issued "2015-02-26T00:00:00+00:00"^^xsd:dateTime ;
-    ns2:presentedAt <http://ceur-ws.org/Vol-1335/#event> ;
-    ns1:editor <http://ceur-ws.org/Vol-1335/#JohannesiWaldmann>,
-        <http://ceur-ws.org/Vol-1335/#StefaniBrass> .
+    ns7:beginsAtDatetime "2014-09-15T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:endsAtDatetime "2014-09-17T00:00:00+00:00"^^xsd:dateTime ;
+    ns5:license "http://creativecommons.org/publicdomain/zero/1.0/" .
 

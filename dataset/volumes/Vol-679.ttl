@@ -1,11 +1,12 @@
 @prefix ns1: <http://xmlns.com/foaf/0.1/> .
 @prefix ns2: <http://www.w3.org/2002/07/owl#> .
 @prefix ns3: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns4: <http://purl.org/ontology/bibo/#> .
-@prefix ns5: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns6: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns4: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns5: <http://purl.org/ontology/bibo/#> .
+@prefix ns6: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns7: <http://purl.org/dc/elements/1.1/> .
+@prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns9: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -47,7 +48,7 @@
     ns1:name "Ari Karppinen" .
 
 <http://ceur-ws.org/Vol-679/#ArneiJ.iBerre> a ns1:Person ;
-    ns6:affiliation "" ;
+    ns4:affiliation "" ;
     ns2:sameAs <http://ceur-ws.org/persons/ArneiJ.iBerre> ;
     ns1:name "Arne J. Berre" .
 
@@ -82,7 +83,7 @@
     ns1:name "Denis Havlik" .
 
 <http://ceur-ws.org/Vol-679/#DumitruiRoman> a ns1:Person ;
-    ns6:affiliation "" ;
+    ns4:affiliation "" ;
     ns2:sameAs <http://ceur-ws.org/persons/DumitruiRoman> ;
     ns1:name "Dumitru Roman" .
 
@@ -297,8 +298,8 @@
     ns1:name "Nadjet Bouayad-Agha" .
 
 <http://ceur-ws.org/Vol-679/#PatrickiMau%C3%A9> a ns1:Person ;
-    ns4:place <http://dbpedia.org/resource/Norway> ;
-    ns6:affiliation "* SINTEF, Oslo" ;
+    ns5:place <http://dbpedia.org/resource/Norway> ;
+    ns4:affiliation "* SINTEF, Oslo" ;
     ns2:sameAs <http://ceur-ws.org/persons/PatrickiMau%C3%A9> ;
     ns1:name "Patrick Maué" .
 
@@ -399,11 +400,11 @@
 
 <http://ceur-ws.org/Vol-679/#event> a ns3:WorkshopEvent ;
     ns3:hasLocation <http://dbpedia.org/resource/Germany> ;
-    ns3:hasPart <http://ceur-ws.org/Vol-679/#part-ws> ;
+    ns3:hasPart <http://ceur-ws.org/Vol-679/#part-CEUR-WS> ;
     ns3:isSubEventOf <http://ceur-ws.org/Vol-679/#conf> ;
-    ns7:beginsAtDatetime "2010-10-06T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:endsAtDatetime "2010-10-08T00:00:00+00:00"^^xsd:dateTime ;
-    ns5:license <http://choosealicense.com/licenses/no-license/> .
+    ns8:beginsAtDatetime "2010-11-19T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:endsAtDatetime "2010-11-19T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:license "http://choosealicense.com/licenses/no-license/" .
 
 <http://ceur-ws.org/Vol-679/#SaschaiSchlobinski> a ns1:Person ;
     ns2:sameAs <http://ceur-ws.org/persons/SaschaiSchlobinski> ;
@@ -411,67 +412,67 @@
         <http://ceur-ws.org/Vol-679/#paper3> ;
     ns1:name "Sascha Schlobinski" .
 
-<http%3A//ceur-ws.org/Vol-679/%23InfrastructureswithDecisionSupportandAugmentedReality> a ns3:SessionEvent ;
+<http://ceur-ws.org/Vol-679/#InfrastructureswithDecisionSupportandAugmentedReality> a ns3:SessionEvent ;
     ns3:partOf <http://ceur-ws.org/Vol-679/> ;
-    ns5:title "Infrastructures with Decision Support and Augmented Reality" .
+    ns6:title "Infrastructures with Decision Support and Augmented Reality" .
 
 <http://ceur-ws.org/Vol-679/#paper5> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-679/> ;
-    ns5:title "Supporting Content Provision in Environmental Information Infrastructures" ;
-    ns4:section <http%3A//ceur-ws.org/Vol-679/%23InfrastructureswithDiscoveryandServiceChaining> ;
-    ns6:author <http://ceur-ws.org/Vol-679/#LauraiD%C3%ADaz>,
+    ns6:title "Supporting Content Provision in Environmental Information Infrastructures" ;
+    ns5:section <http://ceur-ws.org/Vol-679/#InfrastructureswithDiscoveryandServiceChaining> ;
+    ns4:author <http://ceur-ws.org/Vol-679/#LauraiD%C3%ADaz>,
         <http://ceur-ws.org/Vol-679/#SveniSchade> .
 
 <http://ceur-ws.org/Vol-679/#paper9> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-679/> ;
-    ns5:title "Supporting Environmental Information Systems and Services Realization with the Geo-Spatial and Streaming Dimensions of the Semantic Web" ;
-    ns4:section <http%3A//ceur-ws.org/Vol-679/%23InfrastructureswithOntologiesandEnvironmentalindicators> ;
-    ns6:author <http://ceur-ws.org/Vol-679/#AlessioiCarenini>,
+    ns6:title "Supporting Environmental Information Systems and Services Realization with the Geo-Spatial and Streaming Dimensions of the Semantic Web" ;
+    ns5:section <http://ceur-ws.org/Vol-679/#InfrastructureswithOntologiesandEnvironmentalindicators> ;
+    ns4:author <http://ceur-ws.org/Vol-679/#AlessioiCarenini>,
         <http://ceur-ws.org/Vol-679/#EmanueleiDellaiValle> .
 
-<http%3A//ceur-ws.org/Vol-679/%23InfrastructureswithDiscoveryandServiceChaining> a ns3:SessionEvent ;
+<http://ceur-ws.org/Vol-679/#InfrastructureswithDiscoveryandServiceChaining> a ns3:SessionEvent ;
     ns3:partOf <http://ceur-ws.org/Vol-679/> ;
-    ns5:title "Infrastructures with Discovery and Service Chaining" .
+    ns6:title "Infrastructures with Discovery and Service Chaining" .
 
 <http://ceur-ws.org/Vol-679/#paper6> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-679/> ;
-    ns5:title "A new Approach to Collaborative Information Processing in Complex Environmental Management Problems" ;
-    ns4:section <http%3A//ceur-ws.org/Vol-679/%23InfrastructureswithDiscoveryandServiceChaining> ;
-    ns6:author <http://ceur-ws.org/Vol-679/#GregoriPavlin>,
+    ns6:title "A new Approach to Collaborative Information Processing in Complex Environmental Management Problems" ;
+    ns5:section <http://ceur-ws.org/Vol-679/#InfrastructureswithDiscoveryandServiceChaining> ;
+    ns4:author <http://ceur-ws.org/Vol-679/#GregoriPavlin>,
         <http://ceur-ws.org/Vol-679/#KeesiNieuwenhuis>,
         <http://ceur-ws.org/Vol-679/#MichieliKamermans> .
 
-<http%3A//ceur-ws.org/Vol-679/%23InfrastructureswithOntologiesandEnvironmentalindicators> a ns3:SessionEvent ;
+<http://ceur-ws.org/Vol-679/#InfrastructureswithOntologiesandEnvironmentalindicators> a ns3:SessionEvent ;
     ns3:partOf <http://ceur-ws.org/Vol-679/> ;
-    ns5:title "Infrastructures with Ontologies and Environmental indicators" .
+    ns6:title "Infrastructures with Ontologies and Environmental indicators" .
 
-<http%3A//ceur-ws.org/Vol-679/%23InfrastructureswithSemanticAnnotationandUncertainty> a ns3:SessionEvent ;
+<http://ceur-ws.org/Vol-679/#InfrastructureswithSemanticAnnotationandUncertainty> a ns3:SessionEvent ;
     ns3:partOf <http://ceur-ws.org/Vol-679/> ;
-    ns5:title "Infrastructures with Semantic Annotation and Uncertainty" .
+    ns6:title "Infrastructures with Semantic Annotation and Uncertainty" .
 
 <http://ceur-ws.org/Vol-679/#paper10> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-679/> ;
-    ns5:title "The Uncertainty Enabled Model Web (UncertWeb)" ;
-    ns4:section <http%3A//ceur-ws.org/Vol-679/%23InfrastructureswithSemanticAnnotationandUncertainty> ;
-    ns6:author <http://ceur-ws.org/Vol-679/#ChristophiStasch>,
+    ns6:title "The Uncertainty Enabled Model Web (UncertWeb)" ;
+    ns5:section <http://ceur-ws.org/Vol-679/#InfrastructureswithSemanticAnnotationandUncertainty> ;
+    ns4:author <http://ceur-ws.org/Vol-679/#ChristophiStasch>,
         <http://ceur-ws.org/Vol-679/#DaniCornford>,
         <http://ceur-ws.org/Vol-679/#EdzeriPebesma>,
         <http://ceur-ws.org/Vol-679/#StefanoiNativi> .
 
 <http://ceur-ws.org/Vol-679/#paper2> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-679/> ;
-    ns5:title "On-Site Monitoring of Environmental Processes using Mobile Augmented Reality (HYDROSYS)" ;
-    ns4:section <http%3A//ceur-ws.org/Vol-679/%23InfrastructureswithDecisionSupportandAugmentedReality> ;
-    ns6:author <http://ceur-ws.org/Vol-679/#EduardoiVeas>,
+    ns6:title "On-Site Monitoring of Environmental Processes using Mobile Augmented Reality (HYDROSYS)" ;
+    ns5:section <http://ceur-ws.org/Vol-679/#InfrastructureswithDecisionSupportandAugmentedReality> ;
+    ns4:author <http://ceur-ws.org/Vol-679/#EduardoiVeas>,
         <http://ceur-ws.org/Vol-679/#ErickiMendez>,
         <http://ceur-ws.org/Vol-679/#ErnstiKruijff>,
         <http://ceur-ws.org/Vol-679/#ThomasiGruenewald> .
 
 <http://ceur-ws.org/Vol-679/#paper11> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-679/> ;
-    ns5:title "Ontologies and Ontology Extension for Marine Environmental Information Systems" ;
-    ns4:section <http%3A//ceur-ws.org/Vol-679/%23InfrastructureswithOntologiesandEnvironmentalindicators> ;
-    ns6:author <http://ceur-ws.org/Vol-679/#AdamiLeadbetter>,
+    ns6:title "Ontologies and Ontology Extension for Marine Environmental Information Systems" ;
+    ns5:section <http://ceur-ws.org/Vol-679/#InfrastructureswithOntologiesandEnvironmentalindicators> ;
+    ns4:author <http://ceur-ws.org/Vol-679/#AdamiLeadbetter>,
         <http://ceur-ws.org/Vol-679/#DeclaniDunne>,
         <http://ceur-ws.org/Vol-679/#RoyiLowry>,
         <http://ceur-ws.org/Vol-679/#TorilliHamre>,
@@ -479,9 +480,9 @@
 
 <http://ceur-ws.org/Vol-679/#paper12> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-679/> ;
-    ns5:title "Closing the Discovery Gap in Environmental Information Resources using Semantic Annotations: the TaToo Approach" ;
-    ns4:section <http%3A//ceur-ws.org/Vol-679/%23InfrastructureswithSemanticAnnotationandUncertainty> ;
-    ns6:author <http://ceur-ws.org/Vol-679/#GeraldiSchimak>,
+    ns6:title "Closing the Discovery Gap in Environmental Information Resources using Semantic Annotations: the TaToo Approach" ;
+    ns5:section <http://ceur-ws.org/Vol-679/#InfrastructureswithSemanticAnnotationandUncertainty> ;
+    ns4:author <http://ceur-ws.org/Vol-679/#GeraldiSchimak>,
         <http://ceur-ws.org/Vol-679/#GiuseppeiAvellino>,
         <http://ceur-ws.org/Vol-679/#MauricioiCiprian>,
         <http://ceur-ws.org/Vol-679/#SaschaiSchlobinski>,
@@ -489,9 +490,9 @@
 
 <http://ceur-ws.org/Vol-679/#paper13> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-679/> ;
-    ns5:title "Bringing Sustainability to the Daily Business: The OEPI Project" ;
-    ns4:section <http%3A//ceur-ws.org/Vol-679/%23InfrastructureswithOntologiesandEnvironmentalindicators> ;
-    ns6:author <http://ceur-ws.org/Vol-679/#AliiDada>,
+    ns6:title "Bringing Sustainability to the Daily Business: The OEPI Project" ;
+    ns5:section <http://ceur-ws.org/Vol-679/#InfrastructureswithOntologiesandEnvironmentalindicators> ;
+    ns4:author <http://ceur-ws.org/Vol-679/#AliiDada>,
         <http://ceur-ws.org/Vol-679/#BarbaraiRapp>,
         <http://ceur-ws.org/Vol-679/#DanieliMeyerholt>,
         <http://ceur-ws.org/Vol-679/#J%C3%B6rgiBremer>,
@@ -499,9 +500,9 @@
 
 <http://ceur-ws.org/Vol-679/#paper7> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-679/> ;
-    ns5:title "Adaptable Environmental Service Chains: The Challenges of Distributed Execution and Information Collection" ;
-    ns4:section <http%3A//ceur-ws.org/Vol-679/%23InfrastructureswithDiscoveryandServiceChaining> ;
-    ns6:author <http://ceur-ws.org/Vol-679/#AphroditeiTsalgatidou>,
+    ns6:title "Adaptable Environmental Service Chains: The Challenges of Distributed Execution and Information Collection" ;
+    ns5:section <http://ceur-ws.org/Vol-679/#InfrastructureswithDiscoveryandServiceChaining> ;
+    ns4:author <http://ceur-ws.org/Vol-679/#AphroditeiTsalgatidou>,
         <http://ceur-ws.org/Vol-679/#GeorgeiAthanasopoulos>,
         <http://ceur-ws.org/Vol-679/#IoannisiPogkas>,
         <http://ceur-ws.org/Vol-679/#MichaeliPantazoglou>,
@@ -509,9 +510,9 @@
 
 <http://ceur-ws.org/Vol-679/#paper3> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-679/> ;
-    ns5:title "Sustainable Urban Development Planner for Climate Change Adaptation (SUDPLAN)" ;
-    ns4:section <http%3A//ceur-ws.org/Vol-679/%23InfrastructureswithDecisionSupportandAugmentedReality> ;
-    ns6:author <http://ceur-ws.org/Vol-679/#DenisiHavlik>,
+    ns6:title "Sustainable Urban Development Planner for Climate Change Adaptation (SUDPLAN)" ;
+    ns5:section <http://ceur-ws.org/Vol-679/#InfrastructureswithDecisionSupportandAugmentedReality> ;
+    ns4:author <http://ceur-ws.org/Vol-679/#DenisiHavlik>,
         <http://ceur-ws.org/Vol-679/#FrankiMichel>,
         <http://ceur-ws.org/Vol-679/#LarsiGidhagen>,
         <http://ceur-ws.org/Vol-679/#PeteriKutschera>,
@@ -520,9 +521,9 @@
 
 <http://ceur-ws.org/Vol-679/#paper4> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-679/> ;
-    ns5:title "GENESI-DEC: a Federative E-Infrastructure for Earth Science Data Discovery, Access, and On-Demand Processing" ;
-    ns4:section <http%3A//ceur-ws.org/Vol-679/%23InfrastructureswithOntologiesandEnvironmentalindicators> ;
-    ns6:author <http://ceur-ws.org/Vol-679/#AndreaiParrini>,
+    ns6:title "GENESI-DEC: a Federative E-Infrastructure for Earth Science Data Discovery, Access, and On-Demand Processing" ;
+    ns5:section <http://ceur-ws.org/Vol-679/#InfrastructureswithOntologiesandEnvironmentalindicators> ;
+    ns4:author <http://ceur-ws.org/Vol-679/#AndreaiParrini>,
         <http://ceur-ws.org/Vol-679/#ElianaiLiiSanti>,
         <http://ceur-ws.org/Vol-679/#FabriceiBrito>,
         <http://ceur-ws.org/Vol-679/#FabrizioiPacini>,
@@ -531,9 +532,9 @@
 
 <http://ceur-ws.org/Vol-679/#paper8> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-679/> ;
-    ns5:title "Validation Scenario for Anthropogenic Impact and Global Climate Change for Tatoo" ;
-    ns4:section <http%3A//ceur-ws.org/Vol-679/%23InfrastructureswithSemanticAnnotationandUncertainty> ;
-    ns6:author <http://ceur-ws.org/Vol-679/#IvaniHoloubek>,
+    ns6:title "Validation Scenario for Anthropogenic Impact and Global Climate Change for Tatoo" ;
+    ns5:section <http://ceur-ws.org/Vol-679/#InfrastructureswithSemanticAnnotationandUncertainty> ;
+    ns4:author <http://ceur-ws.org/Vol-679/#IvaniHoloubek>,
         <http://ceur-ws.org/Vol-679/#JaroslaviUrbanek>,
         <http://ceur-ws.org/Vol-679/#JiriiHrebicek>,
         <http://ceur-ws.org/Vol-679/#JiriiJarkovsky>,
@@ -556,21 +557,21 @@
         <http://ceur-ws.org/Vol-679/#paper7>,
         <http://ceur-ws.org/Vol-679/#paper8>,
         <http://ceur-ws.org/Vol-679/#paper9> ;
-    ns3:hasSession <http%3A//ceur-ws.org/Vol-679/%23InfrastructureswithDecisionSupportandAugmentedReality>,
-        <http%3A//ceur-ws.org/Vol-679/%23InfrastructureswithDiscoveryandServiceChaining>,
-        <http%3A//ceur-ws.org/Vol-679/%23InfrastructureswithOntologiesandEnvironmentalindicators>,
-        <http%3A//ceur-ws.org/Vol-679/%23InfrastructureswithSemanticAnnotationandUncertainty> ;
-    ns8:issued "2010-11-19T00:00:00+00:00"^^xsd:dateTime ;
-    ns4:presentedAt <http://ceur-ws.org/Vol-679/#event> ;
-    ns6:editor <http://ceur-ws.org/Vol-679/#ArneiJ.iBerre>,
+    ns3:hasSession <http://ceur-ws.org/Vol-679/#InfrastructureswithDecisionSupportandAugmentedReality>,
+        <http://ceur-ws.org/Vol-679/#InfrastructureswithDiscoveryandServiceChaining>,
+        <http://ceur-ws.org/Vol-679/#InfrastructureswithOntologiesandEnvironmentalindicators>,
+        <http://ceur-ws.org/Vol-679/#InfrastructureswithSemanticAnnotationandUncertainty> ;
+    ns9:issued "2010-11-19T00:00:00+00:00"^^xsd:dateTime ;
+    ns5:presentedAt <http://ceur-ws.org/Vol-679/#event> ;
+    ns4:editor <http://ceur-ws.org/Vol-679/#ArneiJ.iBerre>,
         <http://ceur-ws.org/Vol-679/#DumitruiRoman>,
         <http://ceur-ws.org/Vol-679/#PatrickiMau%C3%A9> .
 
 <http://ceur-ws.org/Vol-679/#paper1> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-679/> ;
-    ns5:title "Service-Based Infrastructure for User-Oriented Environmental Information Delivery" ;
-    ns4:section <http%3A//ceur-ws.org/Vol-679/%23InfrastructureswithSemanticAnnotationandUncertainty> ;
-    ns6:author <http://ceur-ws.org/Vol-679/#AnastasiaiMoumtzidou>,
+    ns6:title "Service-Based Infrastructure for User-Oriented Environmental Information Delivery" ;
+    ns5:section <http://ceur-ws.org/Vol-679/#InfrastructureswithSemanticAnnotationandUncertainty> ;
+    ns4:author <http://ceur-ws.org/Vol-679/#AnastasiaiMoumtzidou>,
         <http://ceur-ws.org/Vol-679/#AriiKarppinen>,
         <http://ceur-ws.org/Vol-679/#EmanueleiPianta>,
         <http://ceur-ws.org/Vol-679/#GerardiCasamayor>,

@@ -1,193 +1,37 @@
-@prefix ns1: <http://purl.org/ontology/bibo/#> .
-@prefix ns2: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns3: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns1: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns2: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns3: <http://purl.org/dc/elements/1.1/> .
 @prefix ns4: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns5: <http://xmlns.com/foaf/0.1/> .
-@prefix ns6: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns8: <http://www.w3.org/2002/07/owl#> .
+@prefix ns5: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns6: <http://www.w3.org/2002/07/owl#> .
+@prefix ns7: <http://xmlns.com/foaf/0.1/> .
+@prefix ns8: <http://purl.org/ontology/bibo/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1503/#AmaliKhalil> a ns5:Person ;
-    ns8:sameAs <http://ceur-ws.org/persons/AmaliKhalil> ;
-    ns5:made <http://ceur-ws.org/Vol-1503/#04_pap_khalil> ;
-    ns5:name "Amal Khalil" .
+<http://ceur-ws.org/Vol-1503/> a ns4:Proceedings ;
+    ns2:issued "2015-11-06T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:presentedAt <http://ceur-ws.org/Vol-1503/#event> ;
+    ns1:editor <http://ceur-ws.org/Vol-1503/#MartiniGogolla>,
+        <http://ceur-ws.org/Vol-1503/#MiraiBalaban> .
 
-<http://ceur-ws.org/Vol-1503/#EdouardiBatot> a ns5:Person ;
-    ns8:sameAs <http://ceur-ws.org/persons/EdouardiBatot> ;
-    ns5:made <http://ceur-ws.org/Vol-1503/#01_pap_batot> ;
-    ns5:name "Edouard Batot" .
+<http://ceur-ws.org/Vol-1503/#MartiniGogolla> a ns7:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/MartiniGogolla> ;
+    ns7:name "Martin Gogolla" .
 
-<http://ceur-ws.org/Vol-1503/#GianniiRosa> a ns5:Person ;
-    ns8:sameAs <http://ceur-ws.org/persons/GianniiRosa> ;
-    ns5:made <http://ceur-ws.org/Vol-1503/#06_pap_rosa> ;
-    ns5:name "Gianni Rosa" .
-
-<http://ceur-ws.org/Vol-1503/#IvaniRuchkin> a ns5:Person ;
-    ns8:sameAs <http://ceur-ws.org/persons/IvaniRuchkin> ;
-    ns5:made <http://ceur-ws.org/Vol-1503/#07_pap_ruchkin> ;
-    ns5:name "Ivan Ruchkin" .
-
-<http://ceur-ws.org/Vol-1503/#LoliiBurgueno> a ns5:Person ;
-    ns8:sameAs <http://ceur-ws.org/persons/LoliiBurgueno> ;
-    ns5:made <http://ceur-ws.org/Vol-1503/#02_pap_burgueno> ;
-    ns5:name "Loli Burgueno" .
-
-<http://ceur-ws.org/Vol-1503/#LuisiSilvestre> a ns5:Person ;
-    ns8:sameAs <http://ceur-ws.org/persons/LuisiSilvestre> ;
-    ns5:made <http://ceur-ws.org/Vol-1503/#09_pap_silvestre> ;
-    ns5:name "Luis Silvestre" .
-
-<http://ceur-ws.org/Vol-1503/#MartiniGogolla> a ns5:Person ;
-    ns1:place <http://dbpedia.org/resource/Germany> ;
-    ns2:affiliation "University of Bremen, Computer Science Department, Bremen" ;
-    ns8:sameAs <http://ceur-ws.org/persons/MartiniGogolla> ;
-    ns5:name "Martin Gogolla" .
-
-<http://ceur-ws.org/Vol-1503/#MatthiasiSchoettle> a ns5:Person ;
-    ns8:sameAs <http://ceur-ws.org/persons/MatthiasiSchoettle> ;
-    ns5:made <http://ceur-ws.org/Vol-1503/#08_pap_schoettle> ;
-    ns5:name "Matthias Schoettle" .
-
-<http://ceur-ws.org/Vol-1503/#MiraiBalaban> a ns5:Person ;
-    ns2:affiliation "" ;
-    ns8:sameAs <http://ceur-ws.org/persons/MiraiBalaban> ;
-    ns5:name "Mira Balaban" .
-
-<http://ceur-ws.org/Vol-1503/#MosheiWeinstock> a ns5:Person ;
-    ns8:sameAs <http://ceur-ws.org/persons/MosheiWeinstock> ;
-    ns5:made <http://ceur-ws.org/Vol-1503/#11_pap_weinstock> ;
-    ns5:name "Moshe Weinstock" .
-
-<http://ceur-ws.org/Vol-1503/#SimonivaniMierlo> a ns5:Person ;
-    ns8:sameAs <http://ceur-ws.org/persons/SimonivaniMierlo> ;
-    ns5:made <http://ceur-ws.org/Vol-1503/#05_pap_mierlo> ;
-    ns5:name "Simon van Mierlo" .
-
-<http://ceur-ws.org/Vol-1503/#WaeliKessentini> a ns5:Person ;
-    ns8:sameAs <http://ceur-ws.org/persons/WaeliKessentini> ;
-    ns5:made <http://ceur-ws.org/Vol-1503/#03_pap_kessentini> ;
-    ns5:name "Wael Kessentini" .
-
-<http://ceur-ws.org/Vol-1503/#YentlivaniTendeloo> a ns5:Person ;
-    ns8:sameAs <http://ceur-ws.org/persons/YentlivaniTendeloo> ;
-    ns5:made <http://ceur-ws.org/Vol-1503/#10_pap_tendeloo> ;
-    ns5:name "Yentl van Tendeloo" .
+<http://ceur-ws.org/Vol-1503/#MiraiBalaban> a ns7:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/MiraiBalaban> ;
+    ns7:name "Mira Balaban" .
 
 <http://ceur-ws.org/Vol-1503/#event> a ns4:WorkshopEvent ;
     ns4:hasLocation <http://dbpedia.org/resource/Canada> ;
-    ns4:hasPart <http://ceur-ws.org/Vol-1503/#part-MODELS-SRC> ;
+    ns4:hasPart <http://ceur-ws.org/Vol-1503/#part-ws> ;
     ns4:isSubEventOf <http://ceur-ws.org/Vol-1503/#conf> ;
-    ns6:beginsAtDatetime "2015-09-29T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:endsAtDatetime "2015-09-29T00:00:00+00:00"^^xsd:dateTime ;
+    ns5:beginsAtDatetime "2015-09-29T00:00:00+00:00"^^xsd:dateTime ;
+    ns5:endsAtDatetime "2015-09-29T00:00:00+00:00"^^xsd:dateTime ;
+    ns3:license "http://creativecommons.org/publicdomain/zero/1.0/" ;
     rdfs:seeAlso <http://ceur-ws.org/Vol-1115/#event>,
         <http://ceur-ws.org/Vol-1258/#event> .
-
-<http://ceur-ws.org/Vol-1503/#01_pap_batot> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1503/> ;
-    ns3:title "Generating Examples for Knowledge Abstraction in MDE: a Multi-Objective Framework" ;
-    ns1:endPage 6 ;
-    ns1:numPages 6 ;
-    ns1:startPage 1 ;
-    ns2:author <http://ceur-ws.org/Vol-1503/#EdouardiBatot> .
-
-<http://ceur-ws.org/Vol-1503/#02_pap_burgueno> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1503/> ;
-    ns3:title "Testing M2M/M2T/T2M Transformations" ;
-    ns1:endPage 12 ;
-    ns1:numPages 6 ;
-    ns1:startPage 7 ;
-    ns2:author <http://ceur-ws.org/Vol-1503/#LoliiBurgueno> .
-
-<http://ceur-ws.org/Vol-1503/#03_pap_kessentini> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1503/> ;
-    ns3:title "Automated Metamodel/Model Co-Evolution using a Multi-Objective Optimization Approach" ;
-    ns1:endPage 18 ;
-    ns1:numPages 6 ;
-    ns1:startPage 13 ;
-    ns2:author <http://ceur-ws.org/Vol-1503/#WaeliKessentini> .
-
-<http://ceur-ws.org/Vol-1503/#04_pap_khalil> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1503/> ;
-    ns3:title "Change-driven Incremental Symbolic Execution of Evolving State Machines" ;
-    ns1:endPage 23 ;
-    ns1:numPages 5 ;
-    ns1:startPage 19 ;
-    ns2:author <http://ceur-ws.org/Vol-1503/#AmaliKhalil> .
-
-<http://ceur-ws.org/Vol-1503/#05_pap_mierlo> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1503/> ;
-    ns3:title "Explicitly Modelling Model Debugging Environments" ;
-    ns1:endPage 29 ;
-    ns1:numPages 6 ;
-    ns1:startPage 24 ;
-    ns2:author <http://ceur-ws.org/Vol-1503/#SimonivaniMierlo> .
-
-<http://ceur-ws.org/Vol-1503/#06_pap_rosa> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1503/> ;
-    ns3:title "Generating Model with Uncertainty by Means of JTL" ;
-    ns1:endPage 34 ;
-    ns1:numPages 5 ;
-    ns1:startPage 30 ;
-    ns2:author <http://ceur-ws.org/Vol-1503/#GianniiRosa> .
-
-<http://ceur-ws.org/Vol-1503/#07_pap_ruchkin> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1503/> ;
-    ns3:title "Architectural and Analytic Integration of Cyber-Physical System Models" ;
-    ns1:endPage 40 ;
-    ns1:numPages 6 ;
-    ns1:startPage 35 ;
-    ns2:author <http://ceur-ws.org/Vol-1503/#IvaniRuchkin> .
-
-<http://ceur-ws.org/Vol-1503/#08_pap_schoettle> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1503/> ;
-    ns3:title "Model-Based Reuse of APIs using Concern-Orientation" ;
-    ns1:endPage 45 ;
-    ns1:numPages 5 ;
-    ns1:startPage 41 ;
-    ns2:author <http://ceur-ws.org/Vol-1503/#MatthiasiSchoettle> .
-
-<http://ceur-ws.org/Vol-1503/#09_pap_silvestre> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1503/> ;
-    ns3:title "Automatic Generation of Transformations for Software Process Tailoring" ;
-    ns1:endPage 51 ;
-    ns1:numPages 6 ;
-    ns1:startPage 46 ;
-    ns2:author <http://ceur-ws.org/Vol-1503/#LuisiSilvestre> .
-
-<http://ceur-ws.org/Vol-1503/#10_pap_tendeloo> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1503/> ;
-    ns3:title "Foundations of a Multi-Paradigm Modelling Tool" ;
-    ns1:endPage 57 ;
-    ns1:numPages 6 ;
-    ns1:startPage 52 ;
-    ns2:author <http://ceur-ws.org/Vol-1503/#YentlivaniTendeloo> .
-
-<http://ceur-ws.org/Vol-1503/#11_pap_weinstock> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1503/> ;
-    ns3:title "A Behavioral Programming Approach to Search Based Software Engineering" ;
-    ns1:endPage 63 ;
-    ns1:numPages 6 ;
-    ns1:startPage 58 ;
-    ns2:author <http://ceur-ws.org/Vol-1503/#MosheiWeinstock> .
-
-<http://ceur-ws.org/Vol-1503/> a ns4:Proceedings ;
-    ns4:hasPart <http://ceur-ws.org/Vol-1503/#01_pap_batot>,
-        <http://ceur-ws.org/Vol-1503/#02_pap_burgueno>,
-        <http://ceur-ws.org/Vol-1503/#03_pap_kessentini>,
-        <http://ceur-ws.org/Vol-1503/#04_pap_khalil>,
-        <http://ceur-ws.org/Vol-1503/#05_pap_mierlo>,
-        <http://ceur-ws.org/Vol-1503/#06_pap_rosa>,
-        <http://ceur-ws.org/Vol-1503/#07_pap_ruchkin>,
-        <http://ceur-ws.org/Vol-1503/#08_pap_schoettle>,
-        <http://ceur-ws.org/Vol-1503/#09_pap_silvestre>,
-        <http://ceur-ws.org/Vol-1503/#10_pap_tendeloo>,
-        <http://ceur-ws.org/Vol-1503/#11_pap_weinstock> ;
-    ns7:issued "2015-11-06T00:00:00+00:00"^^xsd:dateTime ;
-    ns1:presentedAt <http://ceur-ws.org/Vol-1503/#event> ;
-    ns2:editor <http://ceur-ws.org/Vol-1503/#MartiniGogolla>,
-        <http://ceur-ws.org/Vol-1503/#MiraiBalaban> .
 

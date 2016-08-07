@@ -1,9 +1,9 @@
-@prefix ns1: <http://purl.org/ontology/bibo/#> .
-@prefix ns2: <http://xmlns.com/foaf/0.1/> .
-@prefix ns3: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns4: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns5: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns6: <http://www.w3.org/2002/07/owl#> .
+@prefix ns1: <http://purl.org/dc/elements/1.1/> .
+@prefix ns2: <http://purl.org/ontology/bibo/#> .
+@prefix ns3: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns4: <http://www.w3.org/2002/07/owl#> .
+@prefix ns5: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns6: <http://xmlns.com/foaf/0.1/> .
 @prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
 @prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -11,412 +11,40 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1366/#AndreasiMeister> a ns2:Person ;
-    ns3:affiliation "" ;
-    ns6:sameAs <http://ceur-ws.org/persons/AndreasiMeister> ;
-    ns2:name "Andreas Meister" .
+<http://ceur-ws.org/Vol-1366/> a ns3:Proceedings ;
+    ns8:issued "2015-05-20T00:00:00+00:00"^^xsd:dateTime ;
+    ns2:presentedAt <http://ceur-ws.org/Vol-1366/#event> ;
+    ns5:editor <http://ceur-ws.org/Vol-1366/#AndreasiMeister>,
+        <http://ceur-ws.org/Vol-1366/#DavidiBroneske>,
+        <http://ceur-ws.org/Vol-1366/#GunteriSaake>,
+        <http://ceur-ws.org/Vol-1366/#SebastianiDorok> .
 
-<http://ceur-ws.org/Vol-1366/#BirgittaiKoenig-Ries> a ns2:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/BirgittaiKoenig-Ries> ;
-    ns2:made <http://ceur-ws.org/Vol-1366/#paper7.pdf> ;
-    ns2:name "Birgitta Koenig-Ries" .
+<http://ceur-ws.org/Vol-1366/#AndreasiMeister> a ns6:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/AndreasiMeister> ;
+    ns6:name "Andreas Meister" .
 
-<http://ceur-ws.org/Vol-1366/#ChristophiKoch> a ns2:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/ChristophiKoch> ;
-    ns2:made <http://ceur-ws.org/Vol-1366/#paper10.pdf> ;
-    ns2:name "Christoph Koch" .
+<http://ceur-ws.org/Vol-1366/#DavidiBroneske> a ns6:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/DavidiBroneske> ;
+    ns6:name "David Broneske" .
 
-<http://ceur-ws.org/Vol-1366/#CorneliusiA.iLudmann> a ns2:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/CorneliusiA.iLudmann> ;
-    ns2:made <http://ceur-ws.org/Vol-1366/#paper18.pdf> ;
-    ns2:name "Cornelius A. Ludmann" .
+<http://ceur-ws.org/Vol-1366/#GunteriSaake> a ns6:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/GunteriSaake> ;
+    ns6:name "Gunter Saake" .
 
-<http://ceur-ws.org/Vol-1366/#DanieliBraun> a ns2:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/DanieliBraun> ;
-    ns2:made <http://ceur-ws.org/Vol-1366/#paper5.pdf> ;
-    ns2:name "Daniel Braun" .
+<http://ceur-ws.org/Vol-1366/#SebastianiDorok> a ns6:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/SebastianiDorok> ;
+    ns6:name "Sebastian Dorok" .
 
-<http://ceur-ws.org/Vol-1366/#DennisiMarten> a ns2:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/DennisiMarten> ;
-    ns2:made <http://ceur-ws.org/Vol-1366/#paper8.pdf> ;
-    ns2:name "Dennis Marten" .
-
-<http://ceur-ws.org/Vol-1366/#DirkiHabich> a ns2:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/DirkiHabich> ;
-    ns2:made <http://ceur-ws.org/Vol-1366/#paper11.pdf> ;
-    ns2:name "Dirk Habich" .
-
-<http://ceur-ws.org/Vol-1366/#ErhardiRahm> a ns2:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/ErhardiRahm> ;
-    ns2:made <http://ceur-ws.org/Vol-1366/#paper2> ;
-    ns2:name "Erhard Rahm" .
-
-<http://ceur-ws.org/Vol-1366/#HannesiGrunert> a ns2:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/HannesiGrunert> ;
-    ns2:made <http://ceur-ws.org/Vol-1366/#paper6.pdf> ;
-    ns2:name "Hannes Grunert" .
-
-<http://ceur-ws.org/Vol-1366/#Hans-J%C3%BCrgeniAppelrath> a ns2:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/Hans-J%C3%BCrgeniAppelrath> ;
-    ns2:made <http://ceur-ws.org/Vol-1366/#paper18.pdf> ;
-    ns2:name "Hans-Jürgen Appelrath" .
-
-<http://ceur-ws.org/Vol-1366/#HolgeriMeyer> a ns2:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/HolgeriMeyer> ;
-    ns2:made <http://ceur-ws.org/Vol-1366/#paper19> ;
-    ns2:name "Holger Meyer" .
-
-<http://ceur-ws.org/Vol-1366/#JulianaiHildebrandt> a ns2:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/JulianaiHildebrandt> ;
-    ns2:made <http://ceur-ws.org/Vol-1366/#paper11.pdf> ;
-    ns2:name "Juliana Hildebrandt" .
-
-<http://ceur-ws.org/Vol-1366/#KatharinaiB%C3%BCchse> a ns2:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/KatharinaiB%C3%BCchse> ;
-    ns2:made <http://ceur-ws.org/Vol-1366/#paper10.pdf> ;
-    ns2:name "Katharina Büchse" .
-
-<http://ceur-ws.org/Vol-1366/#LenaiWiese> a ns2:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/LenaiWiese> ;
-    ns2:made <http://ceur-ws.org/Vol-1366/#paper4.pdf> ;
-    ns2:name "Lena Wiese" .
-
-<http://ceur-ws.org/Vol-1366/#MarcoiGrawunder> a ns2:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/MarcoiGrawunder> ;
-    ns2:made <http://ceur-ws.org/Vol-1366/#paper18.pdf> ;
-    ns2:name "Marco Grawunder" .
-
-<http://ceur-ws.org/Vol-1366/#MarcusiPinnecke> a ns2:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/MarcusiPinnecke> ;
-    ns2:made <http://ceur-ws.org/Vol-1366/#paper15.pdf> ;
-    ns2:name "Marcus Pinnecke" .
-
-<http://ceur-ws.org/Vol-1366/#MatthiasiLiebeck> a ns2:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/MatthiasiLiebeck> ;
-    ns2:made <http://ceur-ws.org/Vol-1366/#paper9.pdf> ;
-    ns2:name "Matthias Liebeck" .
-
-<http://ceur-ws.org/Vol-1366/#MichaeliGertz> a ns2:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/MichaeliGertz> ;
-    ns2:made <http://ceur-ws.org/Vol-1366/#paper17.pdf> ;
-    ns2:name "Michael Gertz" .
-
-<http://ceur-ws.org/Vol-1366/#MichaeliOwonibi> a ns2:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/MichaeliOwonibi> ;
-    ns2:made <http://ceur-ws.org/Vol-1366/#paper7.pdf> ;
-    ns2:name "Michael Owonibi" .
-
-<http://ceur-ws.org/Vol-1366/#MichaeliSinghof> a ns2:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/MichaeliSinghof> ;
-    ns2:made <http://ceur-ws.org/Vol-1366/#paper5.pdf> ;
-    ns2:name "Michael Singhof" .
-
-<http://ceur-ws.org/Vol-1366/#MuhammadiSaqibiNiaz> a ns2:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/MuhammadiSaqibiNiaz> ;
-    ns2:made <http://ceur-ws.org/Vol-1366/#paper13.pdf> ;
-    ns2:name "Muhammad Saqib Niaz" .
-
-<http://ceur-ws.org/Vol-1366/#PatrickiDamme> a ns2:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/PatrickiDamme> ;
-    ns2:made <http://ceur-ws.org/Vol-1366/#paper11.pdf> ;
-    ns2:name "Patrick Damme" .
-
-<http://ceur-ws.org/Vol-1366/#PawandeepiKaur> a ns2:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/PawandeepiKaur> ;
-    ns2:made <http://ceur-ws.org/Vol-1366/#paper7.pdf> ;
-    ns2:name "Pawandeep Kaur" .
-
-<http://ceur-ws.org/Vol-1366/#SebastianiDorok> a ns2:Person ;
-    ns3:affiliation "" ;
-    ns6:sameAs <http://ceur-ws.org/persons/SebastianiDorok> ;
-    ns2:name "Sebastian Dorok" .
-
-<http://ceur-ws.org/Vol-1366/#StefaniHagedorn> a ns2:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/StefaniHagedorn> ;
-    ns2:made <http://ceur-ws.org/Vol-1366/#paper17.pdf> ;
-    ns2:name "Stefan Hagedorn" .
-
-<http://ceur-ws.org/Vol-1366/#TobiasiM%C3%BCller> a ns2:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/TobiasiM%C3%BCller> ;
-    ns2:made <http://ceur-ws.org/Vol-1366/#paper16.pdf> ;
-    ns2:name "Tobias Müller" .
-
-<http://ceur-ws.org/Vol-1366/#VictoriChristen> a ns2:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/VictoriChristen> ;
-    ns2:made <http://ceur-ws.org/Vol-1366/#paper12.pdf> ;
-    ns2:name "Victor Christen" .
-
-<http://ceur-ws.org/Vol-1366/#XiaoiChen> a ns2:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/XiaoiChen> ;
-    ns2:made <http://ceur-ws.org/Vol-1366/#paper14.pdf> ;
-    ns2:name "Xiao Chen" .
-
-<http://ceur-ws.org/Vol-1366/#event> a ns5:WorkshopEvent ;
-    ns5:hasLocation <http://dbpedia.org/resource/Germany> ;
-    ns5:hasPart <http://ceur-ws.org/Vol-1366/#part-GvD> ;
-    ns5:isSubEventOf <http://ceur-ws.org/Vol-1366/#conf> ;
+<http://ceur-ws.org/Vol-1366/#event> a ns3:WorkshopEvent ;
+    ns3:hasLocation <http://dbpedia.org/resource/Germany> ;
+    ns3:hasPart <http://ceur-ws.org/Vol-1366/#part-ws> ;
+    ns3:isSubEventOf <http://ceur-ws.org/Vol-1366/#conf> ;
     ns7:beginsAtDatetime "2015-05-26T00:00:00+00:00"^^xsd:dateTime ;
     ns7:endsAtDatetime "2015-05-29T00:00:00+00:00"^^xsd:dateTime ;
+    ns1:license "http://creativecommons.org/publicdomain/zero/1.0/" ;
     rdfs:seeAlso <http://ceur-ws.org/Vol-1020/#event>,
         <http://ceur-ws.org/Vol-1313/#event>,
         <http://ceur-ws.org/Vol-581/#event>,
         <http://ceur-ws.org/Vol-733/#event>,
         <http://ceur-ws.org/Vol-850/#event> .
-
-<http://ceur-ws.org/Vol-1366/#DavidiBroneske> a ns2:Person ;
-    ns3:affiliation "" ;
-    ns6:sameAs <http://ceur-ws.org/persons/DavidiBroneske> ;
-    ns2:made <http://ceur-ws.org/Vol-1366/#paper15.pdf> ;
-    ns2:name "David Broneske" .
-
-<http://ceur-ws.org/Vol-1366/#Kai-UweiSattler> a ns2:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/Kai-UweiSattler> ;
-    ns2:made <http://ceur-ws.org/Vol-1366/#paper1>,
-        <http://ceur-ws.org/Vol-1366/#paper17.pdf> ;
-    ns2:name "Kai-Uwe Sattler" .
-
-<http://ceur-ws.org/Vol-1366/#WolfgangiLehner> a ns2:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/WolfgangiLehner> ;
-    ns2:made <http://ceur-ws.org/Vol-1366/#paper11.pdf>,
-        <http://ceur-ws.org/Vol-1366/#paper3> ;
-    ns2:name "Wolfgang Lehner" .
-
-<http://ceur-ws.org/Vol-1366/#paper1> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1366/> ;
-    ns4:title "Optimierung von Datenflussprogrammen - ein Fall klassischer Anfrageoptimierung?" ;
-    ns1:endPage 9 ;
-    ns1:numPages 1 ;
-    ns1:section <http%3A//ceur-ws.org/Vol-1366/%23Keynotes> ;
-    ns1:startPage 9 ;
-    ns3:author <http://ceur-ws.org/Vol-1366/#Kai-UweiSattler> .
-
-<http://ceur-ws.org/Vol-1366/#paper12.pdf> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1366/> ;
-    ns4:title "Annotation und Management heterogener medizinischer Studienformulare" ;
-    ns1:endPage 65 ;
-    ns1:numPages 6 ;
-    ns1:section <http%3A//ceur-ws.org/Vol-1366/%23WorkshopSubmissions> ;
-    ns1:startPage 60 ;
-    ns3:author <http://ceur-ws.org/Vol-1366/#VictoriChristen> .
-
-<http://ceur-ws.org/Vol-1366/#paper14.pdf> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1366/> ;
-    ns4:title "Crowdsourcing Entity Resolution: A Short Overview and Open Issues" ;
-    ns1:endPage 77 ;
-    ns1:numPages 6 ;
-    ns1:section <http%3A//ceur-ws.org/Vol-1366/%23WorkshopSubmissions> ;
-    ns1:startPage 72 ;
-    ns3:author <http://ceur-ws.org/Vol-1366/#XiaoiChen> .
-
-<http://ceur-ws.org/Vol-1366/#paper16.pdf> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1366/> ;
-    ns4:title "Where- und Why-Provenance für syntaktisch reiches SQL durch Kombination von Programmanalysetechniken" ;
-    ns1:endPage 89 ;
-    ns1:numPages 6 ;
-    ns1:section <http%3A//ceur-ws.org/Vol-1366/%23WorkshopSubmissions> ;
-    ns1:startPage 84 ;
-    ns3:author <http://ceur-ws.org/Vol-1366/#TobiasiM%C3%BCller> .
-
-<http://ceur-ws.org/Vol-1366/#paper2> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1366/> ;
-    ns4:title "Scalable Graph Analytics with GRADOOP" ;
-    ns1:endPage 10 ;
-    ns1:numPages 1 ;
-    ns1:section <http%3A//ceur-ws.org/Vol-1366/%23Keynotes> ;
-    ns1:startPage 10 ;
-    ns3:author <http://ceur-ws.org/Vol-1366/#ErhardiRahm> .
-
-<http://ceur-ws.org/Vol-1366/#paper3> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1366/> ;
-    ns4:title "Next-Generation Hardware for Data Management – More a Blessing than a Curse?" ;
-    ns1:endPage 11 ;
-    ns1:numPages 1 ;
-    ns1:section <http%3A//ceur-ws.org/Vol-1366/%23Keynotes> ;
-    ns1:startPage 11 ;
-    ns3:author <http://ceur-ws.org/Vol-1366/#WolfgangiLehner> .
-
-<http://ceur-ws.org/Vol-1366/#paper4.pdf> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1366/> ;
-    ns4:title "Ontologie-basierte Fragmentierungs- und Replikationsverfahren für verteilte Datenbanksysteme" ;
-    ns1:endPage 17 ;
-    ns1:numPages 6 ;
-    ns1:section <http%3A//ceur-ws.org/Vol-1366/%23WorkshopSubmissions> ;
-    ns1:startPage 12 ;
-    ns3:author <http://ceur-ws.org/Vol-1366/#LenaiWiese> .
-
-<http://ceur-ws.org/Vol-1366/#paper9.pdf> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1366/> ;
-    ns4:title "Ansätze zur Erkennung von Kommunikationsmodi in Online-Diskussionen" ;
-    ns1:endPage 47 ;
-    ns1:numPages 6 ;
-    ns1:section <http%3A//ceur-ws.org/Vol-1366/%23WorkshopSubmissions> ;
-    ns1:startPage 42 ;
-    ns3:author <http://ceur-ws.org/Vol-1366/#MatthiasiLiebeck> .
-
-<http://ceur-ws.org/Vol-1366/#AndreasiHeuer> a ns2:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/AndreasiHeuer> ;
-    ns2:made <http://ceur-ws.org/Vol-1366/#paper19>,
-        <http://ceur-ws.org/Vol-1366/#paper6.pdf>,
-        <http://ceur-ws.org/Vol-1366/#paper8.pdf> ;
-    ns2:name "Andreas Heuer" .
-
-<http://ceur-ws.org/Vol-1366/#GunteriSaake> a ns2:Person ;
-    ns3:affiliation "" ;
-    ns6:sameAs <http://ceur-ws.org/persons/GunteriSaake> ;
-    ns2:made <http://ceur-ws.org/Vol-1366/#paper13.pdf>,
-        <http://ceur-ws.org/Vol-1366/#paper15.pdf> ;
-    ns2:name "Gunter Saake" .
-
-<http://ceur-ws.org/Vol-1366/#paper10.pdf> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1366/> ;
-    ns4:title "Ausführungspläne und -planoperatoren relationaler Datenbankmanagementsysteme" ;
-    ns1:endPage 53 ;
-    ns1:numPages 6 ;
-    ns1:section <http%3A//ceur-ws.org/Vol-1366/%23WorkshopSubmissions> ;
-    ns1:startPage 48 ;
-    ns3:author <http://ceur-ws.org/Vol-1366/#ChristophiKoch>,
-        <http://ceur-ws.org/Vol-1366/#KatharinaiB%C3%BCchse> .
-
-<http://ceur-ws.org/Vol-1366/#paper13.pdf> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1366/> ;
-    ns4:title "Merkle Hash Tree based Techniques for Data Integrity of Outsourced Data" ;
-    ns1:endPage 71 ;
-    ns1:numPages 6 ;
-    ns1:section <http%3A//ceur-ws.org/Vol-1366/%23WorkshopSubmissions> ;
-    ns1:startPage 66 ;
-    ns3:author <http://ceur-ws.org/Vol-1366/#GunteriSaake>,
-        <http://ceur-ws.org/Vol-1366/#MuhammadiSaqibiNiaz> .
-
-<http://ceur-ws.org/Vol-1366/#paper19> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1366/> ;
-    ns4:title "Das PArADISE-Projekt - Big-Data-Analysen für die Entwicklung von Assistenzsystemen" ;
-    ns1:endPage 103 ;
-    ns1:numPages 2 ;
-    ns1:section <http%3A//ceur-ws.org/Vol-1366/%23WorkshopSubmissions> ;
-    ns1:startPage 102 ;
-    ns3:author <http://ceur-ws.org/Vol-1366/#AndreasiHeuer>,
-        <http://ceur-ws.org/Vol-1366/#HolgeriMeyer> .
-
-<http://ceur-ws.org/Vol-1366/#paper5.pdf> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1366/> ;
-    ns4:title "Automated Silhouette Extraction for Mountain Recognition" ;
-    ns1:endPage 23 ;
-    ns1:numPages 6 ;
-    ns1:section <http%3A//ceur-ws.org/Vol-1366/%23WorkshopSubmissions> ;
-    ns1:startPage 18 ;
-    ns3:author <http://ceur-ws.org/Vol-1366/#DanieliBraun>,
-        <http://ceur-ws.org/Vol-1366/#MichaeliSinghof> .
-
-<http://ceur-ws.org/Vol-1366/#paper6.pdf> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1366/> ;
-    ns4:title "Slicing in Assistenzsystemen - Wie trotz Anonymisierung von Daten wertvolle Analyseergebnisse gewonnen werden können" ;
-    ns1:endPage 29 ;
-    ns1:numPages 6 ;
-    ns1:section <http%3A//ceur-ws.org/Vol-1366/%23WorkshopSubmissions> ;
-    ns1:startPage 24 ;
-    ns3:author <http://ceur-ws.org/Vol-1366/#AndreasiHeuer>,
-        <http://ceur-ws.org/Vol-1366/#HannesiGrunert> .
-
-<http://ceur-ws.org/Vol-1366/#paper8.pdf> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1366/> ;
-    ns4:title "Transparente Datenbankunterstützung für Analysen auf Big Data" ;
-    ns1:endPage 41 ;
-    ns1:numPages 6 ;
-    ns1:section <http%3A//ceur-ws.org/Vol-1366/%23WorkshopSubmissions> ;
-    ns1:startPage 36 ;
-    ns3:author <http://ceur-ws.org/Vol-1366/#AndreasiHeuer>,
-        <http://ceur-ws.org/Vol-1366/#DennisiMarten> .
-
-<http%3A//ceur-ws.org/Vol-1366/%23Keynotes> a ns5:SessionEvent ;
-    ns5:partOf <http://ceur-ws.org/Vol-1366/> ;
-    ns4:title "Keynotes" .
-
-<http://ceur-ws.org/Vol-1366/#paper15.pdf> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1366/> ;
-    ns4:title "Toward GPU Accelerated Data Stream Processing" ;
-    ns1:endPage 83 ;
-    ns1:numPages 6 ;
-    ns1:section <http%3A//ceur-ws.org/Vol-1366/%23WorkshopSubmissions> ;
-    ns1:startPage 78 ;
-    ns3:author <http://ceur-ws.org/Vol-1366/#DavidiBroneske>,
-        <http://ceur-ws.org/Vol-1366/#GunteriSaake>,
-        <http://ceur-ws.org/Vol-1366/#MarcusiPinnecke> .
-
-<http://ceur-ws.org/Vol-1366/#paper17.pdf> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1366/> ;
-    ns4:title "Large-scale Analysis of Event Data" ;
-    ns1:endPage 95 ;
-    ns1:numPages 6 ;
-    ns1:section <http%3A//ceur-ws.org/Vol-1366/%23WorkshopSubmissions> ;
-    ns1:startPage 90 ;
-    ns3:author <http://ceur-ws.org/Vol-1366/#Kai-UweiSattler>,
-        <http://ceur-ws.org/Vol-1366/#MichaeliGertz>,
-        <http://ceur-ws.org/Vol-1366/#StefaniHagedorn> .
-
-<http://ceur-ws.org/Vol-1366/#paper18.pdf> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1366/> ;
-    ns4:title "Flexible Online-Recommender-Systeme durch die Integration in ein Datenstrommanagementsystem" ;
-    ns1:endPage 101 ;
-    ns1:numPages 6 ;
-    ns1:section <http%3A//ceur-ws.org/Vol-1366/%23WorkshopSubmissions> ;
-    ns1:startPage 96 ;
-    ns3:author <http://ceur-ws.org/Vol-1366/#CorneliusiA.iLudmann>,
-        <http://ceur-ws.org/Vol-1366/#Hans-J%C3%BCrgeniAppelrath>,
-        <http://ceur-ws.org/Vol-1366/#MarcoiGrawunder> .
-
-<http://ceur-ws.org/Vol-1366/#paper7.pdf> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1366/> ;
-    ns4:title "Towards Visualization Recommendation - A Semi-Automated Domain-Specific Learning Approach" ;
-    ns1:endPage 35 ;
-    ns1:numPages 6 ;
-    ns1:section <http%3A//ceur-ws.org/Vol-1366/%23WorkshopSubmissions> ;
-    ns1:startPage 30 ;
-    ns3:author <http://ceur-ws.org/Vol-1366/#BirgittaiKoenig-Ries>,
-        <http://ceur-ws.org/Vol-1366/#MichaeliOwonibi>,
-        <http://ceur-ws.org/Vol-1366/#PawandeepiKaur> .
-
-<http://ceur-ws.org/Vol-1366/#paper11.pdf> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1366/> ;
-    ns4:title "Modularisierung leichtgewichtiger Kompressionsalgorithmen" ;
-    ns1:endPage 59 ;
-    ns1:numPages 6 ;
-    ns1:section <http%3A//ceur-ws.org/Vol-1366/%23WorkshopSubmissions> ;
-    ns1:startPage 54 ;
-    ns3:author <http://ceur-ws.org/Vol-1366/#DirkiHabich>,
-        <http://ceur-ws.org/Vol-1366/#JulianaiHildebrandt>,
-        <http://ceur-ws.org/Vol-1366/#PatrickiDamme>,
-        <http://ceur-ws.org/Vol-1366/#WolfgangiLehner> .
-
-<http%3A//ceur-ws.org/Vol-1366/%23WorkshopSubmissions> a ns5:SessionEvent ;
-    ns5:partOf <http://ceur-ws.org/Vol-1366/> ;
-    ns4:title "Workshop Submissions" .
-
-<http://ceur-ws.org/Vol-1366/> a ns5:Proceedings ;
-    ns5:hasPart <http://ceur-ws.org/Vol-1366/#paper1>,
-        <http://ceur-ws.org/Vol-1366/#paper10.pdf>,
-        <http://ceur-ws.org/Vol-1366/#paper11.pdf>,
-        <http://ceur-ws.org/Vol-1366/#paper12.pdf>,
-        <http://ceur-ws.org/Vol-1366/#paper13.pdf>,
-        <http://ceur-ws.org/Vol-1366/#paper14.pdf>,
-        <http://ceur-ws.org/Vol-1366/#paper15.pdf>,
-        <http://ceur-ws.org/Vol-1366/#paper16.pdf>,
-        <http://ceur-ws.org/Vol-1366/#paper17.pdf>,
-        <http://ceur-ws.org/Vol-1366/#paper18.pdf>,
-        <http://ceur-ws.org/Vol-1366/#paper19>,
-        <http://ceur-ws.org/Vol-1366/#paper2>,
-        <http://ceur-ws.org/Vol-1366/#paper3>,
-        <http://ceur-ws.org/Vol-1366/#paper4.pdf>,
-        <http://ceur-ws.org/Vol-1366/#paper5.pdf>,
-        <http://ceur-ws.org/Vol-1366/#paper6.pdf>,
-        <http://ceur-ws.org/Vol-1366/#paper7.pdf>,
-        <http://ceur-ws.org/Vol-1366/#paper8.pdf>,
-        <http://ceur-ws.org/Vol-1366/#paper9.pdf> ;
-    ns5:hasSession <http%3A//ceur-ws.org/Vol-1366/%23Keynotes>,
-        <http%3A//ceur-ws.org/Vol-1366/%23WorkshopSubmissions> ;
-    ns8:issued "2015-05-20T00:00:00+00:00"^^xsd:dateTime ;
-    ns1:presentedAt <http://ceur-ws.org/Vol-1366/#event> ;
-    ns3:editor <http://ceur-ws.org/Vol-1366/#AndreasiMeister>,
-        <http://ceur-ws.org/Vol-1366/#DavidiBroneske>,
-        <http://ceur-ws.org/Vol-1366/#GunteriSaake>,
-        <http://ceur-ws.org/Vol-1366/#SebastianiDorok> .
 

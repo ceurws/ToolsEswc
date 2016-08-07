@@ -1,247 +1,39 @@
-@prefix ns1: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns2: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns1: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns2: <http://xmlns.com/foaf/0.1/> .
 @prefix ns3: <http://purl.org/ontology/bibo/#> .
-@prefix ns4: <http://xmlns.com/foaf/0.1/> .
-@prefix ns5: <http://www.w3.org/2002/07/owl#> .
+@prefix ns4: <http://purl.org/dc/elements/1.1/> .
+@prefix ns5: <http://swrc.ontoware.org/ontology/#> .
 @prefix ns6: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns7: <http://www.w3.org/2002/07/owl#> .
 @prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1029/#AbeeriElsafie> a ns4:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/AbeeriElsafie> ;
-    ns4:made <http://ceur-ws.org/Vol-1029/#paper9> ;
-    ns4:name "Abeer Elsafie" .
+<http://ceur-ws.org/Vol-1029/> a ns6:Proceedings ;
+    ns8:issued "2013-09-05T00:00:00+00:00"^^xsd:dateTime ;
+    ns3:presentedAt <http://ceur-ws.org/Vol-1029/#event> ;
+    ns5:editor <http://ceur-ws.org/Vol-1029/#NielsiLohmann>,
+        <http://ceur-ws.org/Vol-1029/#OliveriKopp> .
 
-<http://ceur-ws.org/Vol-1029/#AndreasiMeyer> a ns4:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/AndreasiMeyer> ;
-    ns4:made <http://ceur-ws.org/Vol-1029/#paper4> ;
-    ns4:name "Andreas Meyer" .
+<http://ceur-ws.org/Vol-1029/#NielsiLohmann> a ns2:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/NielsiLohmann> ;
+    ns2:name "Niels Lohmann" .
 
-<http://ceur-ws.org/Vol-1029/#ChristianiMainka> a ns4:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/ChristianiMainka> ;
-    ns4:made <http://ceur-ws.org/Vol-1029/#paper9> ;
-    ns4:name "Christian Mainka" .
-
-<http://ceur-ws.org/Vol-1029/#ChristophiDemont> a ns4:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/ChristophiDemont> ;
-    ns4:made <http://ceur-ws.org/Vol-1029/#paper6> ;
-    ns4:name "Christoph Demont" .
-
-<http://ceur-ws.org/Vol-1029/#DominiciBreuker> a ns4:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/DominiciBreuker> ;
-    ns4:made <http://ceur-ws.org/Vol-1029/#paper3> ;
-    ns4:name "Dominic Breuker" .
-
-<http://ceur-ws.org/Vol-1029/#EvelliniCardoso> a ns4:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/EvelliniCardoso> ;
-    ns4:made <http://ceur-ws.org/Vol-1029/#paper10> ;
-    ns4:name "Evellin Cardoso" .
-
-<http://ceur-ws.org/Vol-1029/#GuidoiWirtz> a ns4:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/GuidoiWirtz> ;
-    ns4:made <http://ceur-ws.org/Vol-1029/#paper8> ;
-    ns4:name "Guido Wirtz" .
-
-<http://ceur-ws.org/Vol-1029/#J%C3%B6rgiBecker> a ns4:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/J%C3%B6rgiBecker> ;
-    ns4:made <http://ceur-ws.org/Vol-1029/#paper3> ;
-    ns4:name "Jörg Becker" .
-
-<http://ceur-ws.org/Vol-1029/#J%C3%B6rgiSchwenk> a ns4:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/J%C3%B6rgiSchwenk> ;
-    ns4:made <http://ceur-ws.org/Vol-1029/#paper9> ;
-    ns4:name "Jörg Schwenk" .
-
-<http://ceur-ws.org/Vol-1029/#MatthiasiGeiger> a ns4:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/MatthiasiGeiger> ;
-    ns4:made <http://ceur-ws.org/Vol-1029/#paper8> ;
-    ns4:name "Matthias Geiger" .
-
-<http://ceur-ws.org/Vol-1029/#NicoiHerzberg> a ns4:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/NicoiHerzberg> ;
-    ns4:made <http://ceur-ws.org/Vol-1029/#paper4> ;
-    ns4:name "Nico Herzberg" .
-
-<http://ceur-ws.org/Vol-1029/#NielsiLohmann> a ns4:Person ;
-    ns2:affiliation "" ;
-    ns5:sameAs <http://ceur-ws.org/persons/NielsiLohmann> ;
-    ns4:name "Niels Lohmann" .
-
-<http://ceur-ws.org/Vol-1029/#SebastianiWagner> a ns4:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/SebastianiWagner> ;
-    ns4:made <http://ceur-ws.org/Vol-1029/#paper2> ;
-    ns4:name "Sebastian Wagner" .
-
-<http://ceur-ws.org/Vol-1029/#SimoniMoser> a ns4:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/SimoniMoser> ;
-    ns4:made <http://ceur-ws.org/Vol-1029/#paper1> ;
-    ns4:name "Simon Moser" .
-
-<http://ceur-ws.org/Vol-1029/#ThomasiHeinze> a ns4:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/ThomasiHeinze> ;
-    ns4:made <http://ceur-ws.org/Vol-1029/#paper1> ;
-    ns4:name "Thomas Heinze" .
-
-<http://ceur-ws.org/Vol-1029/#ThomasiPrinz> a ns4:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/ThomasiPrinz> ;
-    ns4:made <http://ceur-ws.org/Vol-1029/#paper7> ;
-    ns4:name "Thomas Prinz" .
-
-<http://ceur-ws.org/Vol-1029/#UweiBreitenb%C3%BCcher> a ns4:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/UweiBreitenb%C3%BCcher> ;
-    ns4:made <http://ceur-ws.org/Vol-1029/#paper6> ;
-    ns4:name "Uwe Breitenbücher" .
-
-<http://ceur-ws.org/Vol-1029/#WolframiAmme> a ns4:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/WolframiAmme> ;
-    ns4:made <http://ceur-ws.org/Vol-1029/#paper1> ;
-    ns4:name "Wolfram Amme" .
+<http://ceur-ws.org/Vol-1029/#OliveriKopp> a ns2:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/OliveriKopp> ;
+    ns2:name "Oliver Kopp" .
 
 <http://ceur-ws.org/Vol-1029/#event> a ns6:WorkshopEvent ;
     ns6:hasLocation <http://dbpedia.org/resource/Germany> ;
-    ns6:hasPart <http://ceur-ws.org/Vol-1029/#part-ZEUS> ;
+    ns6:hasPart <http://ceur-ws.org/Vol-1029/#part-CEUR-WS> ;
     ns6:isSubEventOf <http://ceur-ws.org/Vol-1029/#conf> ;
-    ns7:beginsAtDatetime "2013-02-21T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:endsAtDatetime "2013-02-22T00:00:00+00:00"^^xsd:dateTime ;
-    ns1:license <http://choosealicense.com/licenses/no-license/> ;
+    ns1:beginsAtDatetime "2013-02-21T00:00:00+00:00"^^xsd:dateTime ;
+    ns1:endsAtDatetime "2013-02-22T00:00:00+00:00"^^xsd:dateTime ;
+    ns4:license "http://choosealicense.com/licenses/no-license/" ;
     rdfs:seeAlso <http://ceur-ws.org/Vol-438/#event>,
         <http://ceur-ws.org/Vol-563/#event>,
         <http://ceur-ws.org/Vol-705/#event>,
         <http://ceur-ws.org/Vol-847/#event> .
-
-<http://ceur-ws.org/Vol-1029/#JohannesiWettinger> a ns4:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/JohannesiWettinger> ;
-    ns4:made <http://ceur-ws.org/Vol-1029/#paper5>,
-        <http://ceur-ws.org/Vol-1029/#paper6> ;
-    ns4:name "Johannes Wettinger" .
-
-<http://ceur-ws.org/Vol-1029/#paper10> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-1029/> ;
-    ns1:title "Goal-Oriented Enterprise Architecture Analysis" ;
-    ns3:endPage 57 ;
-    ns3:numPages 9 ;
-    ns3:startPage 49 ;
-    ns2:author <http://ceur-ws.org/Vol-1029/#EvelliniCardoso> .
-
-<http://ceur-ws.org/Vol-1029/#paper7> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-1029/> ;
-    ns1:title "Fast Soundness Verification of Workflow Graphs" ;
-    ns3:endPage 40 ;
-    ns3:numPages 9 ;
-    ns3:startPage 32 ;
-    ns2:author <http://ceur-ws.org/Vol-1029/#ThomasiPrinz> .
-
-<http://ceur-ws.org/Vol-1029/#FrankiLeymann> a ns4:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/FrankiLeymann> ;
-    ns4:made <http://ceur-ws.org/Vol-1029/#paper2>,
-        <http://ceur-ws.org/Vol-1029/#paper5>,
-        <http://ceur-ws.org/Vol-1029/#paper6> ;
-    ns4:name "Frank Leymann" .
-
-<http://ceur-ws.org/Vol-1029/#paper3> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-1029/> ;
-    ns1:title "Business Process Mining for Collaborative Service-Oriented Systems – “Duality” of Process Representations and the Need for Statistical Treatment" ;
-    ns3:endPage 19 ;
-    ns3:numPages 3 ;
-    ns3:startPage 17 ;
-    ns2:author <http://ceur-ws.org/Vol-1029/#DominiciBreuker>,
-        <http://ceur-ws.org/Vol-1029/#J%C3%B6rgiBecker> .
-
-<http://ceur-ws.org/Vol-1029/#paper4> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-1029/> ;
-    ns1:title "Improving Process Monitoring and Progress Prediction with Data State Transition Events" ;
-    ns3:endPage 23 ;
-    ns3:numPages 4 ;
-    ns3:startPage 20 ;
-    ns2:author <http://ceur-ws.org/Vol-1029/#AndreasiMeyer>,
-        <http://ceur-ws.org/Vol-1029/#NicoiHerzberg> .
-
-<http://ceur-ws.org/Vol-1029/#paper8> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-1029/> ;
-    ns1:title "Detecting Interoperability and Correctness Issues in BPMN 2.0 Process Models" ;
-    ns3:endPage 44 ;
-    ns3:numPages 4 ;
-    ns3:startPage 41 ;
-    ns2:author <http://ceur-ws.org/Vol-1029/#GuidoiWirtz>,
-        <http://ceur-ws.org/Vol-1029/#MatthiasiGeiger> .
-
-<http://ceur-ws.org/Vol-1029/#OliveriKopp> a ns4:Person ;
-    ns2:affiliation "" ;
-    ns5:sameAs <http://ceur-ws.org/persons/OliveriKopp> ;
-    ns4:made <http://ceur-ws.org/Vol-1029/#paper2>,
-        <http://ceur-ws.org/Vol-1029/#paper5>,
-        <http://ceur-ws.org/Vol-1029/#paper6> ;
-    ns4:name "Oliver Kopp" .
-
-<http://ceur-ws.org/Vol-1029/#paper1> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-1029/> ;
-    ns1:title "Control Flow Unfolding of Workflow Graphs Using Predicate Analysis and SMT Solving" ;
-    ns3:endPage 8 ;
-    ns3:numPages 8 ;
-    ns3:startPage 1 ;
-    ns2:author <http://ceur-ws.org/Vol-1029/#SimoniMoser>,
-        <http://ceur-ws.org/Vol-1029/#ThomasiHeinze>,
-        <http://ceur-ws.org/Vol-1029/#WolframiAmme> .
-
-<http://ceur-ws.org/Vol-1029/#paper2> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-1029/> ;
-    ns1:title "Consolidation of Interacting BPEL Process Models with Fault Handlers" ;
-    ns3:endPage 16 ;
-    ns3:numPages 8 ;
-    ns3:startPage 9 ;
-    ns2:author <http://ceur-ws.org/Vol-1029/#FrankiLeymann>,
-        <http://ceur-ws.org/Vol-1029/#OliveriKopp>,
-        <http://ceur-ws.org/Vol-1029/#SebastianiWagner> .
-
-<http://ceur-ws.org/Vol-1029/#paper5> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-1029/> ;
-    ns1:title "Improving Portability of Cloud Service Topology Models Relying on Script-Based Deployment" ;
-    ns3:endPage 27 ;
-    ns3:numPages 4 ;
-    ns3:startPage 24 ;
-    ns2:author <http://ceur-ws.org/Vol-1029/#FrankiLeymann>,
-        <http://ceur-ws.org/Vol-1029/#JohannesiWettinger>,
-        <http://ceur-ws.org/Vol-1029/#OliveriKopp> .
-
-<http://ceur-ws.org/Vol-1029/#paper9> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-1029/> ;
-    ns1:title "A new approach for WS-Policy Intersection using Partial Ordered Sets" ;
-    ns3:endPage 48 ;
-    ns3:numPages 4 ;
-    ns3:startPage 45 ;
-    ns2:author <http://ceur-ws.org/Vol-1029/#AbeeriElsafie>,
-        <http://ceur-ws.org/Vol-1029/#ChristianiMainka>,
-        <http://ceur-ws.org/Vol-1029/#J%C3%B6rgiSchwenk> .
-
-<http://ceur-ws.org/Vol-1029/#paper6> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-1029/> ;
-    ns1:title "Towards Integrating TOSCA and ITIL" ;
-    ns3:endPage 31 ;
-    ns3:numPages 4 ;
-    ns3:startPage 28 ;
-    ns2:author <http://ceur-ws.org/Vol-1029/#ChristophiDemont>,
-        <http://ceur-ws.org/Vol-1029/#FrankiLeymann>,
-        <http://ceur-ws.org/Vol-1029/#JohannesiWettinger>,
-        <http://ceur-ws.org/Vol-1029/#OliveriKopp>,
-        <http://ceur-ws.org/Vol-1029/#UweiBreitenb%C3%BCcher> .
-
-<http://ceur-ws.org/Vol-1029/> a ns6:Proceedings ;
-    ns6:hasPart <http://ceur-ws.org/Vol-1029/#paper1>,
-        <http://ceur-ws.org/Vol-1029/#paper10>,
-        <http://ceur-ws.org/Vol-1029/#paper2>,
-        <http://ceur-ws.org/Vol-1029/#paper3>,
-        <http://ceur-ws.org/Vol-1029/#paper4>,
-        <http://ceur-ws.org/Vol-1029/#paper5>,
-        <http://ceur-ws.org/Vol-1029/#paper6>,
-        <http://ceur-ws.org/Vol-1029/#paper7>,
-        <http://ceur-ws.org/Vol-1029/#paper8>,
-        <http://ceur-ws.org/Vol-1029/#paper9> ;
-    ns8:issued "2013-09-05T00:00:00+00:00"^^xsd:dateTime ;
-    ns3:presentedAt <http://ceur-ws.org/Vol-1029/#event> ;
-    ns2:editor <http://ceur-ws.org/Vol-1029/#NielsiLohmann>,
-        <http://ceur-ws.org/Vol-1029/#OliveriKopp> .
 

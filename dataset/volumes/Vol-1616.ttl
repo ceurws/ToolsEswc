@@ -1,0 +1,42 @@
+@prefix ns1: <http://xmlns.com/foaf/0.1/> .
+@prefix ns2: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns3: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns4: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns5: <http://purl.org/ontology/bibo/#> .
+@prefix ns6: <http://www.w3.org/2002/07/owl#> .
+@prefix ns7: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns8: <http://purl.org/dc/elements/1.1/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://ceur-ws.org/Vol-1616/> a ns4:Proceedings ;
+    ns2:issued "2016-06-27T00:00:00+00:00"^^xsd:dateTime ;
+    ns5:presentedAt <http://ceur-ws.org/Vol-1616/#event> ;
+    ns7:editor <http://ceur-ws.org/Vol-1616/#MehuliBhatt>,
+        <http://ceur-ws.org/Vol-1616/#OliveriKutz>,
+        <http://ceur-ws.org/Vol-1616/#StefanoiBorgo> .
+
+<http://ceur-ws.org/Vol-1616/#MehuliBhatt> a ns1:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/MehuliBhatt> ;
+    ns1:name "Mehul Bhatt" .
+
+<http://ceur-ws.org/Vol-1616/#OliveriKutz> a ns1:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/OliveriKutz> ;
+    ns1:name "Oliver Kutz" .
+
+<http://ceur-ws.org/Vol-1616/#StefanoiBorgo> a ns1:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/StefanoiBorgo> ;
+    ns1:name "Stefano Borgo" .
+
+<http://ceur-ws.org/Vol-1616/#event> a ns4:WorkshopEvent ;
+    ns4:hasLocation <http://dbpedia.org/resource/Euro_gold_and_silver_commemorative_coins> ;
+    ns4:hasPart <http://ceur-ws.org/Vol-1616/#part-SHAPES> ;
+    ns4:isSubEventOf <http://ceur-ws.org/Vol-1616/#conf> ;
+    ns3:beginsAtDatetime "2015-11-02T00:00:00+00:00"^^xsd:dateTime ;
+    ns3:endsAtDatetime "2015-11-02T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:license "http://creativecommons.org/publicdomain/zero/1.0/" ;
+    rdfs:seeAlso <http://ceur-ws.org/Vol-1007/#event>,
+        <http://ceur-ws.org/Vol-812/#event> .
+

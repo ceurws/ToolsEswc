@@ -1,0 +1,55 @@
+@prefix ns1: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns2: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns3: <http://www.w3.org/2002/07/owl#> .
+@prefix ns4: <http://xmlns.com/foaf/0.1/> .
+@prefix ns5: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns6: <http://purl.org/dc/elements/1.1/> .
+@prefix ns7: <http://purl.org/ontology/bibo/#> .
+@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://ceur-ws.org/Vol-1643/> a ns5:Proceedings ;
+    ns8:issued "2016-07-16T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:presentedAt <http://ceur-ws.org/Vol-1643/#event> ;
+    ns2:editor <http://ceur-ws.org/Vol-1643/#AmiriHosseiniAshouri>,
+        <http://ceur-ws.org/Vol-1643/#CristinaiSilvano>,
+        <http://ceur-ws.org/Vol-1643/#JeronimoiCastrillion>,
+        <http://ceur-ws.org/Vol-1643/#MichaeliH%C3%BCbner>,
+        <http://ceur-ws.org/Vol-1643/#StephaniWong>,
+        <http://ceur-ws.org/Vol-1643/#WalteriStechele> .
+
+<http://ceur-ws.org/Vol-1643/#AmiriHosseiniAshouri> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/AmiriHosseiniAshouri> ;
+    ns4:name "Amir Hossein Ashouri" .
+
+<http://ceur-ws.org/Vol-1643/#CristinaiSilvano> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/CristinaiSilvano> ;
+    ns4:name "Cristina Silvano" .
+
+<http://ceur-ws.org/Vol-1643/#JeronimoiCastrillion> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/JeronimoiCastrillion> ;
+    ns4:name "Jeronimo Castrillion" .
+
+<http://ceur-ws.org/Vol-1643/#MichaeliH%C3%BCbner> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/MichaeliH%C3%BCbner> ;
+    ns4:name "Michael Hübner" .
+
+<http://ceur-ws.org/Vol-1643/#StephaniWong> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/StephaniWong> ;
+    ns4:name "Stephan Wong" .
+
+<http://ceur-ws.org/Vol-1643/#WalteriStechele> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/WalteriStechele> ;
+    ns4:name "Walter Stechele" .
+
+<http://ceur-ws.org/Vol-1643/#event> a ns5:WorkshopEvent ;
+    ns5:hasLocation <http://dbpedia.org/resource/Germany> ;
+    ns5:hasPart <http://ceur-ws.org/Vol-1643/#part-RESource> ;
+    ns5:isSubEventOf <http://ceur-ws.org/Vol-1643/#conf> ;
+    ns1:beginsAtDatetime "2016-03-18T00:00:00+00:00"^^xsd:dateTime ;
+    ns1:endsAtDatetime "2016-03-18T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:license "http://creativecommons.org/publicdomain/zero/1.0/" .
+

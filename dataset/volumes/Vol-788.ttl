@@ -1,179 +1,32 @@
-@prefix ns1: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns1: <http://purl.org/NET/c4dm/timeline.owl#> .
 @prefix ns2: <http://xmlns.com/foaf/0.1/> .
 @prefix ns3: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns4: <http://www.w3.org/2002/07/owl#> .
+@prefix ns4: <http://swrc.ontoware.org/ontology/#> .
 @prefix ns5: <http://purl.org/ontology/bibo/#> .
-@prefix ns6: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns6: <http://www.w3.org/2002/07/owl#> .
+@prefix ns7: <http://purl.org/dc/elements/1.1/> .
+@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-788/#Ale%C5%A1iTamchyna> a ns2:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/Ale%C5%A1iTamchyna> ;
-    ns2:made <http://ceur-ws.org/Vol-788/#paper4> ;
-    ns2:name "Aleš Tamchyna" .
-
-<http://ceur-ws.org/Vol-788/#Bro%C5%88aiBrejov%C3%A1> a ns2:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/Bro%C5%88aiBrejov%C3%A1> ;
-    ns2:made <http://ceur-ws.org/Vol-788/#paper6> ;
-    ns2:name "Broňa Brejová" .
-
-<http://ceur-ws.org/Vol-788/#DanieliPr%C5%AF%C5%A1a> a ns2:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/DanieliPr%C5%AF%C5%A1a> ;
-    ns2:made <http://ceur-ws.org/Vol-788/#paper7> ;
-    ns2:name "Daniel Průša" .
-
-<http://ceur-ws.org/Vol-788/#JakubiKov%C3%A1%C4%8D> a ns2:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/JakubiKov%C3%A1%C4%8D> ;
-    ns2:made <http://ceur-ws.org/Vol-788/#paper6> ;
-    ns2:name "Jakub Kováč" .
-
-<http://ceur-ws.org/Vol-788/#JaniStria> a ns2:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/JaniStria> ;
-    ns2:made <http://ceur-ws.org/Vol-788/#paper7> ;
-    ns2:name "Jan Stria" .
-
-<http://ceur-ws.org/Vol-788/#KareliOliva> a ns2:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/KareliOliva> ;
-    ns2:made <http://ceur-ws.org/Vol-788/#paper1> ;
-    ns2:name "Karel Oliva" .
-
-<http://ceur-ws.org/Vol-788/#MarceliKuchar%C3%ADk> a ns2:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/MarceliKuchar%C3%ADk> ;
-    ns2:made <http://ceur-ws.org/Vol-788/#paper6> ;
-    ns2:name "Marcel Kucharík" .
-
-<http://ceur-ws.org/Vol-788/#MarekiKo%C5%A1ta> a ns2:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/MarekiKo%C5%A1ta> ;
-    ns2:made <http://ceur-ws.org/Vol-788/#paper3> ;
-    ns2:name "Marek Košta" .
+<http://ceur-ws.org/Vol-788/> a ns3:Proceedings ;
+    ns8:issued "2011-10-17T00:00:00+00:00"^^xsd:dateTime ;
+    ns5:presentedAt <http://ceur-ws.org/Vol-788/#event> ;
+    ns4:editor <http://ceur-ws.org/Vol-788/#Mark%C3%A9taiLopatkov%C3%A1> .
 
 <http://ceur-ws.org/Vol-788/#Mark%C3%A9taiLopatkov%C3%A1> a ns2:Person ;
-    ns1:affiliation "" ;
-    ns4:sameAs <http://ceur-ws.org/persons/Mark%C3%A9taiLopatkov%C3%A1> ;
+    ns6:sameAs <http://ceur-ws.org/persons/Mark%C3%A9taiLopatkov%C3%A1> ;
     ns2:name "Markéta Lopatková" .
 
-<http://ceur-ws.org/Vol-788/#MartiniHole%C5%88a> a ns2:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/MartiniHole%C5%88a> ;
-    ns2:made <http://ceur-ws.org/Vol-788/#paper5> ;
-    ns2:name "Martin Holeňa" .
-
-<http://ceur-ws.org/Vol-788/#OndrejiBojar> a ns2:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/OndrejiBojar> ;
-    ns2:made <http://ceur-ws.org/Vol-788/#paper4> ;
-    ns2:name "Ondrej Bojar" .
-
-<http://ceur-ws.org/Vol-788/#OndrejiH%C3%A1lek> a ns2:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/OndrejiH%C3%A1lek> ;
-    ns2:made <http://ceur-ws.org/Vol-788/#paper4> ;
-    ns2:name "Ondrej Hálek" .
-
-<http://ceur-ws.org/Vol-788/#Pavoli%C4%8Euri%C5%A1> a ns2:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/Pavoli%C4%8Euri%C5%A1> ;
-    ns2:made <http://ceur-ws.org/Vol-788/#paper3> ;
-    ns2:name "Pavol Ďuriš" .
-
-<http://ceur-ws.org/Vol-788/#RadimiDemut> a ns2:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/RadimiDemut> ;
-    ns2:made <http://ceur-ws.org/Vol-788/#paper5> ;
-    ns2:name "Radim Demut" .
-
-<http://ceur-ws.org/Vol-788/#RudolfiRosa> a ns2:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/RudolfiRosa> ;
-    ns2:made <http://ceur-ws.org/Vol-788/#paper4> ;
-    ns2:name "Rudolf Rosa" .
-
-<http://ceur-ws.org/Vol-788/#Zden%C4%9Bki%C5%BDabokrtsk%C3%BD> a ns2:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/Zden%C4%9Bki%C5%BDabokrtsk%C3%BD> ;
-    ns2:made <http://ceur-ws.org/Vol-788/#paper2> ;
-    ns2:name "Zdeněk Žabokrtský" .
-
 <http://ceur-ws.org/Vol-788/#event> a ns3:WorkshopEvent ;
-    ns3:hasPart <http://ceur-ws.org/Vol-788/#part-ITAT> ;
+    ns3:hasPart <http://ceur-ws.org/Vol-788/#part-CEUR-WS> ;
     ns3:isSubEventOf <http://ceur-ws.org/Vol-788/#conf> ;
-    ns8:beginsAtDatetime "2011-09-23T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:endsAtDatetime "2011-09-27T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:license <http://choosealicense.com/licenses/no-license/> ;
+    ns1:beginsAtDatetime "2011-09-23T00:00:00+00:00"^^xsd:dateTime ;
+    ns1:endsAtDatetime "2011-09-27T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:license "http://choosealicense.com/licenses/no-license/" ;
     rdfs:seeAlso <http://ceur-ws.org/Vol-414/#event>,
         <http://ceur-ws.org/Vol-584/#event>,
         <http://ceur-ws.org/Vol-683/#event> .
-
-<http://ceur-ws.org/Vol-788/#paper1> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-788/> ;
-    ns6:title "Linguistics behind the mirror" ;
-    ns5:endPage 6 ;
-    ns5:numPages 6 ;
-    ns5:startPage 1 ;
-    ns1:author <http://ceur-ws.org/Vol-788/#KareliOliva> .
-
-<http://ceur-ws.org/Vol-788/#paper2> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-788/> ;
-    ns6:title "Treex - an open-source framework for natural language processing" ;
-    ns5:endPage 14 ;
-    ns5:numPages 8 ;
-    ns5:startPage 7 ;
-    ns1:author <http://ceur-ws.org/Vol-788/#Zden%C4%9Bki%C5%BDabokrtsk%C3%BD> .
-
-<http://ceur-ws.org/Vol-788/#paper3> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-788/> ;
-    ns6:title "Flip-pushdown automata: nondeterministic $\\epsilon$-moves can be removed" ;
-    ns5:endPage 22 ;
-    ns5:numPages 8 ;
-    ns5:startPage 15 ;
-    ns1:author <http://ceur-ws.org/Vol-788/#MarekiKo%C5%A1ta>,
-        <http://ceur-ws.org/Vol-788/#Pavoli%C4%8Euri%C5%A1> .
-
-<http://ceur-ws.org/Vol-788/#paper5> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-788/> ;
-    ns6:title "Assessing the suitability of surrogate models in evolutionary optimization" ;
-    ns5:endPage 38 ;
-    ns5:numPages 8 ;
-    ns5:startPage 31 ;
-    ns1:author <http://ceur-ws.org/Vol-788/#MartiniHole%C5%88a>,
-        <http://ceur-ws.org/Vol-788/#RadimiDemut> .
-
-<http://ceur-ws.org/Vol-788/#paper7> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-788/> ;
-    ns6:title "Web application for recognition of mathematical formulas" ;
-    ns5:endPage 54 ;
-    ns5:numPages 8 ;
-    ns5:startPage 47 ;
-    ns1:author <http://ceur-ws.org/Vol-788/#DanieliPr%C5%AF%C5%A1a>,
-        <http://ceur-ws.org/Vol-788/#JaniStria> .
-
-<http://ceur-ws.org/Vol-788/#paper6> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-788/> ;
-    ns6:title "Gene finding with complex external information" ;
-    ns5:endPage 46 ;
-    ns5:numPages 8 ;
-    ns5:startPage 39 ;
-    ns1:author <http://ceur-ws.org/Vol-788/#Bro%C5%88aiBrejov%C3%A1>,
-        <http://ceur-ws.org/Vol-788/#JakubiKov%C3%A1%C4%8D>,
-        <http://ceur-ws.org/Vol-788/#MarceliKuchar%C3%ADk> .
-
-<http://ceur-ws.org/Vol-788/#paper4> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-788/> ;
-    ns6:title "Named entities from Wikipedia for machine translation" ;
-    ns5:endPage 30 ;
-    ns5:numPages 8 ;
-    ns5:startPage 23 ;
-    ns1:author <http://ceur-ws.org/Vol-788/#Ale%C5%A1iTamchyna>,
-        <http://ceur-ws.org/Vol-788/#OndrejiBojar>,
-        <http://ceur-ws.org/Vol-788/#OndrejiH%C3%A1lek>,
-        <http://ceur-ws.org/Vol-788/#RudolfiRosa> .
-
-<http://ceur-ws.org/Vol-788/> a ns3:Proceedings ;
-    ns3:hasPart <http://ceur-ws.org/Vol-788/#paper1>,
-        <http://ceur-ws.org/Vol-788/#paper2>,
-        <http://ceur-ws.org/Vol-788/#paper3>,
-        <http://ceur-ws.org/Vol-788/#paper4>,
-        <http://ceur-ws.org/Vol-788/#paper5>,
-        <http://ceur-ws.org/Vol-788/#paper6>,
-        <http://ceur-ws.org/Vol-788/#paper7> ;
-    ns7:issued "2011-10-17T00:00:00+00:00"^^xsd:dateTime ;
-    ns5:presentedAt <http://ceur-ws.org/Vol-788/#event> ;
-    ns1:editor <http://ceur-ws.org/Vol-788/#Mark%C3%A9taiLopatkov%C3%A1> .
 

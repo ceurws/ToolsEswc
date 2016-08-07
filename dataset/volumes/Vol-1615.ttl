@@ -1,0 +1,66 @@
+@prefix ns1: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns2: <http://www.w3.org/2002/07/owl#> .
+@prefix ns3: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns4: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns5: <http://xmlns.com/foaf/0.1/> .
+@prefix ns6: <http://purl.org/dc/elements/1.1/> .
+@prefix ns7: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns8: <http://purl.org/ontology/bibo/#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://ceur-ws.org/Vol-1615/> a ns7:Proceedings ;
+    ns3:issued "2016-06-27T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:presentedAt <http://ceur-ws.org/Vol-1615/#event> ;
+    ns1:editor <http://ceur-ws.org/Vol-1615/#KaiiSchlegel>,
+        <http://ceur-ws.org/Vol-1615/#LiMEiChairs>,
+        <http://ceur-ws.org/Vol-1615/#LyndoniNixon>,
+        <http://ceur-ws.org/Vol-1615/#MieliVanderiSande>,
+        <http://ceur-ws.org/Vol-1615/#Rapha%C3%ABliTroncy>,
+        <http://ceur-ws.org/Vol-1615/#RubeniVerborgh>,
+        <http://ceur-ws.org/Vol-1615/#SemDeviChairs>,
+        <http://ceur-ws.org/Vol-1615/#ThomasiKurz> .
+
+<http://ceur-ws.org/Vol-1615/#KaiiSchlegel> a ns5:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/KaiiSchlegel> ;
+    ns5:name "Kai Schlegel" .
+
+<http://ceur-ws.org/Vol-1615/#LiMEiChairs> a ns5:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/LiMEiChairs> ;
+    ns5:name "LiME Chairs" .
+
+<http://ceur-ws.org/Vol-1615/#LyndoniNixon> a ns5:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/LyndoniNixon> ;
+    ns5:name "Lyndon Nixon" .
+
+<http://ceur-ws.org/Vol-1615/#MieliVanderiSande> a ns5:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/MieliVanderiSande> ;
+    ns5:name "Miel Vander Sande" .
+
+<http://ceur-ws.org/Vol-1615/#Rapha%C3%ABliTroncy> a ns5:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/Rapha%C3%ABliTroncy> ;
+    ns5:name "Raphaël Troncy" .
+
+<http://ceur-ws.org/Vol-1615/#RubeniVerborgh> a ns5:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/RubeniVerborgh> ;
+    ns5:name "Ruben Verborgh" .
+
+<http://ceur-ws.org/Vol-1615/#SemDeviChairs> a ns5:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/SemDeviChairs> ;
+    ns5:name "SemDev Chairs" .
+
+<http://ceur-ws.org/Vol-1615/#ThomasiKurz> a ns5:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/ThomasiKurz> ;
+    ns5:name "Thomas Kurz" .
+
+<http://ceur-ws.org/Vol-1615/#event> a ns7:WorkshopEvent ;
+    ns7:hasLocation <http://dbpedia.org/resource/Greece> ;
+    ns7:hasPart <http://ceur-ws.org/Vol-1615/#part-MediaThe> ;
+    ns7:isSubEventOf <http://ceur-ws.org/Vol-1615/#conf> ;
+    ns4:beginsAtDatetime "2016-05-30T00:00:00+00:00"^^xsd:dateTime ;
+    ns4:endsAtDatetime "2016-05-30T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:license "http://creativecommons.org/publicdomain/zero/1.0/" ;
+    rdfs:seeAlso <http://ceur-ws.org/Vol-1361/#event> .
+

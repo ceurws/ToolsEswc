@@ -1,257 +1,52 @@
-@prefix ns1: <http://xmlns.com/foaf/0.1/> .
-@prefix ns2: <http://purl.org/ontology/bibo/#> .
-@prefix ns3: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns1: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns2: <http://www.w3.org/2002/07/owl#> .
+@prefix ns3: <http://xmlns.com/foaf/0.1/> .
 @prefix ns4: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns5: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns6: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns7: <http://www.w3.org/2002/07/owl#> .
+@prefix ns5: <http://purl.org/dc/elements/1.1/> .
+@prefix ns6: <http://purl.org/ontology/bibo/#> .
+@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1581/#AgataiFilipowska> a ns1:Person ;
-    ns4:affiliation "" ;
-    ns7:sameAs <http://ceur-ws.org/persons/AgataiFilipowska> ;
-    ns1:name "Agata Filipowska" .
-
-<http://ceur-ws.org/Vol-1581/#BeniDeiMeester> a ns1:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/BeniDeiMeester> ;
-    ns1:made <http://ceur-ws.org/Vol-1581/#paper6> ;
-    ns1:name "Ben De Meester" .
-
-<http://ceur-ws.org/Vol-1581/#ChristinaiUnger> a ns1:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/ChristinaiUnger> ;
-    ns1:made <http://ceur-ws.org/Vol-1581/#paper10> ;
-    ns1:name "Christina Unger" .
-
-<http://ceur-ws.org/Vol-1581/#FilipiIlievski> a ns1:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/FilipiIlievski> ;
-    ns1:made <http://ceur-ws.org/Vol-1581/#paper11> ;
-    ns1:name "Filip Ilievski" .
-
-<http://ceur-ws.org/Vol-1581/#GiuseppeiRizzo> a ns1:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/GiuseppeiRizzo> ;
-    ns1:made <http://ceur-ws.org/Vol-1581/#paper11> ;
-    ns1:name "Giuseppe Rizzo" .
-
-<http://ceur-ws.org/Vol-1581/#JiseongiKim> a ns1:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/JiseongiKim> ;
-    ns1:made <http://ceur-ws.org/Vol-1581/#paper7> ;
-    ns1:name "Jiseong Kim" .
-
-<http://ceur-ws.org/Vol-1581/#MartiniBr%C3%BCmmer> a ns1:Person ;
-    ns4:affiliation "" ;
-    ns7:sameAs <http://ceur-ws.org/persons/MartiniBr%C3%BCmmer> ;
-    ns1:name "Martin Brümmer" .
-
-<http://ceur-ws.org/Vol-1581/#SaemiiJang> a ns1:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/SaemiiJang> ;
-    ns1:made <http://ceur-ws.org/Vol-1581/#paper5> ;
-    ns1:name "Saemi Jang" .
-
-<http://ceur-ws.org/Vol-1581/#SebastianiWalter> a ns1:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/SebastianiWalter> ;
-    ns1:made <http://ceur-ws.org/Vol-1581/#paper9> ;
-    ns1:name "Sebastian Walter" .
-
-<http://ceur-ws.org/Vol-1581/#VolhaiBryl> a ns1:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/VolhaiBryl> ;
-    ns1:made <http://ceur-ws.org/Vol-1581/#paper2> ;
-    ns1:name "Volha Bryl" .
-
-<http://ceur-ws.org/Vol-1581/#event> a ns3:WorkshopEvent ;
-    ns3:hasLocation <http://dbpedia.org/resource/United_States> ;
-    ns3:hasPart <http://ceur-ws.org/Vol-1581/#part-DBpedia>,
-        <http://ceur-ws.org/Vol-1581/#part-NLP> ;
-    ns3:isSubEventOf <http://ceur-ws.org/Vol-1581/#conf> ;
-    ns8:beginsAtDatetime "2015-10-11T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:endsAtDatetime "2015-10-11T00:00:00+00:00"^^xsd:dateTime ;
-    rdfs:seeAlso <http://ceur-ws.org/Vol-1064/#event> .
-
-<http://ceur-ws.org/Vol-1581/#FelixiTristam> a ns1:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/FelixiTristam> ;
-    ns1:made <http://ceur-ws.org/Vol-1581/#paper11>,
-        <http://ceur-ws.org/Vol-1581/#paper3> ;
-    ns1:name "Felix Tristam" .
-
-<http://ceur-ws.org/Vol-1581/#J%C3%B6rgiWaitelonis> a ns1:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/J%C3%B6rgiWaitelonis> ;
-    ns1:made <http://ceur-ws.org/Vol-1581/#paper11>,
-        <http://ceur-ws.org/Vol-1581/#paper4> ;
-    ns1:name "Jörg Waitelonis" .
-
-<http://ceur-ws.org/Vol-1581/#JulieniPlu> a ns1:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/JulieniPlu> ;
-    ns1:made <http://ceur-ws.org/Vol-1581/#paper1>,
-        <http://ceur-ws.org/Vol-1581/#paper11> ;
-    ns1:name "Julien Plu" .
-
-<http://ceur-ws.org/Vol-1581/#PabloiMendes> a ns1:Person ;
-    ns4:affiliation "" ;
-    ns7:sameAs <http://ceur-ws.org/persons/PabloiMendes> ;
-    ns1:made <http://ceur-ws.org/Vol-1581/#paper11> ;
-    ns1:name "Pablo Mendes" .
-
-<http://ceur-ws.org/Vol-1581/#paper1> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1581/> ;
-    ns5:title "Reveal Entities from Texts with a Hybrid Approach" ;
-    ns2:endPage 12 ;
-    ns2:numPages 12 ;
-    ns2:section <http%3A//ceur-ws.org/Vol-1581/%23Session1%3AEntityLinking> ;
-    ns2:startPage 1 ;
-    ns4:author <http://ceur-ws.org/Vol-1581/#JulieniPlu> .
-
-<http://ceur-ws.org/Vol-1581/#paper2> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1581/> ;
-    ns5:title "Gathering Alternative Surface Forms for DBpedia Entities" ;
-    ns2:endPage 24 ;
-    ns2:numPages 12 ;
-    ns2:section <http%3A//ceur-ws.org/Vol-1581/%23Session1%3AEntityLinking> ;
-    ns2:startPage 13 ;
-    ns4:author <http://ceur-ws.org/Vol-1581/#VolhaiBryl> .
-
-<http://ceur-ws.org/Vol-1581/#paper3> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1581/> ;
-    ns5:title "Weasel: a Machine Learning Based Approach to Entity Linking combining different features" ;
-    ns2:endPage 32 ;
-    ns2:numPages 8 ;
-    ns2:section <http%3A//ceur-ws.org/Vol-1581/%23Session1%3AEntityLinking> ;
-    ns2:startPage 25 ;
-    ns4:author <http://ceur-ws.org/Vol-1581/#FelixiTristam> .
-
-<http://ceur-ws.org/Vol-1581/#paper4> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1581/> ;
-    ns5:title "Enabled Generalized Vector Space Model to Improve Document Retrieval" ;
-    ns2:endPage 44 ;
-    ns2:numPages 12 ;
-    ns2:section <http%3A//ceur-ws.org/Vol-1581/%23Session2%3AApplications> ;
-    ns2:startPage 33 ;
-    ns4:author <http://ceur-ws.org/Vol-1581/#J%C3%B6rgiWaitelonis> .
-
-<http://ceur-ws.org/Vol-1581/#paper5> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1581/> ;
-    ns5:title "Semi-Automatic Quality Assessment of Linked Data without Requiring Ontology" ;
-    ns2:endPage 55 ;
-    ns2:numPages 11 ;
-    ns2:section <http%3A//ceur-ws.org/Vol-1581/%23Session2%3AApplications> ;
-    ns2:startPage 45 ;
-    ns4:author <http://ceur-ws.org/Vol-1581/#SaemiiJang> .
-
-<http://ceur-ws.org/Vol-1581/#paper6> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1581/> ;
-    ns5:title "Exposing Digital Content as Linked Data, and Linking Them Using StoryBlink" ;
-    ns2:endPage 67 ;
-    ns2:numPages 12 ;
-    ns2:section <http%3A//ceur-ws.org/Vol-1581/%23Session2%3AApplications> ;
-    ns2:startPage 56 ;
-    ns4:author <http://ceur-ws.org/Vol-1581/#BeniDeiMeester> .
-
-<http://ceur-ws.org/Vol-1581/#paper7> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1581/> ;
-    ns5:title "The Association Rule Mining System for Acquiring Knowledge of DBpedia from Wikipedia Categories" ;
-    ns2:endPage 80 ;
-    ns2:numPages 13 ;
-    ns2:section <http%3A//ceur-ws.org/Vol-1581/%23Session3%3ADataEnrichment> ;
-    ns2:startPage 68 ;
-    ns4:author <http://ceur-ws.org/Vol-1581/#JiseongiKim> .
-
-<http://ceur-ws.org/Vol-1581/#paper8> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1581/> ;
-    ns5:title "Missing Mr. Brown and Buying an Abraham Lincoln - Dark Entities and DBpedia" ;
-    ns2:endPage 86 ;
-    ns2:numPages 6 ;
-    ns2:section <http%3A//ceur-ws.org/Vol-1581/%23Session3%3ADataEnrichment> ;
-    ns2:startPage 81 ;
-    ns4:author <http://ceur-ws.org/Vol-1581/#MariekeivaniErp> .
-
-<http://ceur-ws.org/Vol-1581/#paper9> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1581/> ;
-    ns5:title "DBlexipedia: A Nucleus for a Multilingual Lexical Semantic Web" ;
-    ns2:endPage 92 ;
-    ns2:numPages 6 ;
-    ns2:section <http%3A//ceur-ws.org/Vol-1581/%23Session3%3ADataEnrichment> ;
-    ns2:startPage 87 ;
-    ns4:author <http://ceur-ws.org/Vol-1581/#SebastianiWalter> .
-
-<http%3A//ceur-ws.org/Vol-1581/%23Breakoutsessionresults> a ns3:SessionEvent ;
-    ns3:partOf <http://ceur-ws.org/Vol-1581/> ;
-    ns5:title "Breakout session results" .
-
-<http://ceur-ws.org/Vol-1581/#HeikoiPaulheim> a ns1:Person ;
-    ns4:affiliation "" ;
-    ns7:sameAs <http://ceur-ws.org/persons/HeikoiPaulheim> ;
-    ns1:made <http://ceur-ws.org/Vol-1581/#paper10>,
-        <http://ceur-ws.org/Vol-1581/#paper11> ;
-    ns1:name "Heiko Paulheim" .
-
-<http://ceur-ws.org/Vol-1581/#MariekeivaniErp> a ns1:Person ;
-    ns4:affiliation "" ;
-    ns7:sameAs <http://ceur-ws.org/persons/MariekeivaniErp> ;
-    ns1:made <http://ceur-ws.org/Vol-1581/#paper11>,
-        <http://ceur-ws.org/Vol-1581/#paper8> ;
-    ns1:name "Marieke van Erp" .
-
-<http://ceur-ws.org/Vol-1581/#paper10> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1581/> ;
-    ns5:title "Can Predicate Lexicalizations Help in Named Entity Disambiguation" ;
-    ns2:endPage 97 ;
-    ns2:numPages 6 ;
-    ns2:section <http%3A//ceur-ws.org/Vol-1581/%23Breakoutsessionresults> ;
-    ns2:startPage 92 ;
-    ns4:author <http://ceur-ws.org/Vol-1581/#ChristinaiUnger>,
-        <http://ceur-ws.org/Vol-1581/#HeikoiPaulheim> .
-
-<http%3A//ceur-ws.org/Vol-1581/%23Session1%3AEntityLinking> a ns3:SessionEvent ;
-    ns3:partOf <http://ceur-ws.org/Vol-1581/> ;
-    ns5:title "Session 1: Entity Linking" .
-
-<http%3A//ceur-ws.org/Vol-1581/%23Session2%3AApplications> a ns3:SessionEvent ;
-    ns3:partOf <http://ceur-ws.org/Vol-1581/> ;
-    ns5:title "Session 2: Applications" .
-
-<http%3A//ceur-ws.org/Vol-1581/%23Session3%3ADataEnrichment> a ns3:SessionEvent ;
-    ns3:partOf <http://ceur-ws.org/Vol-1581/> ;
-    ns5:title "Session 3: Data Enrichment" .
-
-<http://ceur-ws.org/Vol-1581/#paper11> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1581/> ;
-    ns5:title "Evaluating Entity Linking: An Analysis of Current Benchmark Datasets and a Roadmap for Doing a Better Job (abstract)" ;
-    ns2:endPage 98 ;
-    ns2:numPages 1 ;
-    ns2:section <http%3A//ceur-ws.org/Vol-1581/%23Breakoutsessionresults> ;
-    ns2:startPage 98 ;
-    ns4:author <http://ceur-ws.org/Vol-1581/#FelixiTristam>,
-        <http://ceur-ws.org/Vol-1581/#FilipiIlievski>,
-        <http://ceur-ws.org/Vol-1581/#GiuseppeiRizzo>,
-        <http://ceur-ws.org/Vol-1581/#HeikoiPaulheim>,
-        <http://ceur-ws.org/Vol-1581/#J%C3%B6rgiWaitelonis>,
-        <http://ceur-ws.org/Vol-1581/#JulieniPlu>,
-        <http://ceur-ws.org/Vol-1581/#MariekeivaniErp>,
-        <http://ceur-ws.org/Vol-1581/#PabloiMendes> .
-
-<http://ceur-ws.org/Vol-1581/> a ns3:Proceedings ;
-    ns3:hasPart <http://ceur-ws.org/Vol-1581/#paper1>,
-        <http://ceur-ws.org/Vol-1581/#paper10>,
-        <http://ceur-ws.org/Vol-1581/#paper11>,
-        <http://ceur-ws.org/Vol-1581/#paper2>,
-        <http://ceur-ws.org/Vol-1581/#paper3>,
-        <http://ceur-ws.org/Vol-1581/#paper4>,
-        <http://ceur-ws.org/Vol-1581/#paper5>,
-        <http://ceur-ws.org/Vol-1581/#paper6>,
-        <http://ceur-ws.org/Vol-1581/#paper7>,
-        <http://ceur-ws.org/Vol-1581/#paper8>,
-        <http://ceur-ws.org/Vol-1581/#paper9> ;
-    ns3:hasSession <http%3A//ceur-ws.org/Vol-1581/%23Breakoutsessionresults>,
-        <http%3A//ceur-ws.org/Vol-1581/%23Session1%3AEntityLinking>,
-        <http%3A//ceur-ws.org/Vol-1581/%23Session2%3AApplications>,
-        <http%3A//ceur-ws.org/Vol-1581/%23Session3%3ADataEnrichment> ;
-    ns6:issued "2016-04-26T00:00:00+00:00"^^xsd:dateTime ;
-    ns2:presentedAt <http://ceur-ws.org/Vol-1581/#event> ;
+<http://ceur-ws.org/Vol-1581/> a ns1:Proceedings ;
+    ns7:issued "2016-04-26T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:presentedAt <http://ceur-ws.org/Vol-1581/#event> ;
     ns4:editor <http://ceur-ws.org/Vol-1581/#AgataiFilipowska>,
         <http://ceur-ws.org/Vol-1581/#HeikoiPaulheim>,
         <http://ceur-ws.org/Vol-1581/#MariekeivaniErp>,
         <http://ceur-ws.org/Vol-1581/#MartiniBr%C3%BCmmer>,
-        <http://ceur-ws.org/Vol-1581/#PabloiMendes> .
+        <http://ceur-ws.org/Vol-1581/#PabloiN.iMendes> .
+
+<http://ceur-ws.org/Vol-1581/#AgataiFilipowska> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/AgataiFilipowska> ;
+    ns3:name "Agata Filipowska" .
+
+<http://ceur-ws.org/Vol-1581/#HeikoiPaulheim> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/HeikoiPaulheim> ;
+    ns3:name "Heiko Paulheim" .
+
+<http://ceur-ws.org/Vol-1581/#MariekeivaniErp> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/MariekeivaniErp> ;
+    ns3:name "Marieke van Erp" .
+
+<http://ceur-ws.org/Vol-1581/#MartiniBr%C3%BCmmer> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/MartiniBr%C3%BCmmer> ;
+    ns3:name "Martin Brümmer" .
+
+<http://ceur-ws.org/Vol-1581/#PabloiN.iMendes> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/PabloiN.iMendes> ;
+    ns3:name "Pablo N. Mendes" .
+
+<http://ceur-ws.org/Vol-1581/#event> a ns1:WorkshopEvent ;
+    ns1:hasLocation <http://dbpedia.org/resource/United_States> ;
+    ns1:hasPart <http://ceur-ws.org/Vol-1581/#part-DBpedia>,
+        <http://ceur-ws.org/Vol-1581/#part-NLP> ;
+    ns1:isSubEventOf <http://ceur-ws.org/Vol-1581/#conf> ;
+    ns8:beginsAtDatetime "2015-10-11T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:endsAtDatetime "2015-10-11T00:00:00+00:00"^^xsd:dateTime ;
+    ns5:license "http://creativecommons.org/publicdomain/zero/1.0/" ;
+    rdfs:seeAlso <http://ceur-ws.org/Vol-1064/#event> .
 

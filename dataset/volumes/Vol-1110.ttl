@@ -1,171 +1,45 @@
-@prefix ns1: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns2: <http://www.w3.org/2002/07/owl#> .
-@prefix ns3: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns4: <http://xmlns.com/foaf/0.1/> .
-@prefix ns5: <http://purl.org/ontology/bibo/#> .
-@prefix ns6: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns7: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns1: <http://www.w3.org/2002/07/owl#> .
+@prefix ns2: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns3: <http://xmlns.com/foaf/0.1/> .
+@prefix ns4: <http://purl.org/dc/elements/1.1/> .
+@prefix ns5: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns6: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns7: <http://purl.org/ontology/bibo/#> .
 @prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1110/#AminuiMuhammad> a ns4:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/AminuiMuhammad> ;
-    ns4:made <http://ceur-ws.org/Vol-1110/#paper1> ;
-    ns4:name "Aminu Muhammad" .
-
-<http://ceur-ws.org/Vol-1110/#AndrewiMacFarlane> a ns4:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/AndrewiMacFarlane> ;
-    ns4:made <http://ceur-ws.org/Vol-1110/#paper3> ;
-    ns4:name "Andrew MacFarlane" .
-
-<http://ceur-ws.org/Vol-1110/#CarlosiMartin> a ns4:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/CarlosiMartin> ;
-    ns4:made <http://ceur-ws.org/Vol-1110/#paper3> ;
-    ns4:name "Carlos Martin" .
-
-<http://ceur-ws.org/Vol-1110/#DavidiCorney> a ns4:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/DavidiCorney> ;
-    ns4:made <http://ceur-ws.org/Vol-1110/#paper3> ;
-    ns4:name "David Corney" .
-
-<http://ceur-ws.org/Vol-1110/#DavidiDupplaw> a ns4:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/DavidiDupplaw> ;
-    ns4:made <http://ceur-ws.org/Vol-1110/#paper4> ;
-    ns4:name "David Dupplaw" .
-
-<http://ceur-ws.org/Vol-1110/#DianaiMaynard> a ns4:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/DianaiMaynard> ;
-    ns4:made <http://ceur-ws.org/Vol-1110/#paper4> ;
-    ns4:name "Diana Maynard" .
-
-<http://ceur-ws.org/Vol-1110/#JonathoniHare> a ns4:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/JonathoniHare> ;
-    ns4:made <http://ceur-ws.org/Vol-1110/#paper4> ;
-    ns4:name "Jonathon Hare" .
-
-<http://ceur-ws.org/Vol-1110/#MohamediGaber> a ns4:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/MohamediGaber> ;
-    ns4:made <http://ceur-ws.org/Vol-1110/#introduction> ;
-    ns4:name "Mohamed Gaber" .
-
-<http://ceur-ws.org/Vol-1110/#MohamediMedhatiGaber> a ns4:Person ;
-    ns3:affiliation "" ;
-    ns2:sameAs <http://ceur-ws.org/persons/MohamediMedhatiGaber> ;
-    ns4:name "Mohamed Medhat Gaber" .
-
-<http://ceur-ws.org/Vol-1110/#MoustafaiM.iGhanem> a ns4:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/MoustafaiM.iGhanem> ;
-    ns4:made <http://ceur-ws.org/Vol-1110/#paper2> ;
-    ns4:name "Moustafa M. Ghanem" .
-
-<http://ceur-ws.org/Vol-1110/#NicholasiA.iThapen> a ns4:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/NicholasiA.iThapen> ;
-    ns4:made <http://ceur-ws.org/Vol-1110/#paper2> ;
-    ns4:name "Nicholas A. Thapen" .
-
-<http://ceur-ws.org/Vol-1110/#RichardiGlassey> a ns4:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/RichardiGlassey> ;
-    ns4:made <http://ceur-ws.org/Vol-1110/#paper1> ;
-    ns4:name "Richard Glassey" .
-
-<http://ceur-ws.org/Vol-1110/#RobertiLothian> a ns4:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/RobertiLothian> ;
-    ns4:made <http://ceur-ws.org/Vol-1110/#paper1> ;
-    ns4:name "Robert Lothian" .
-
-<http://ceur-ws.org/Vol-1110/#event> a ns7:WorkshopEvent ;
-    ns7:hasLocation <http://dbpedia.org/resource/United_Kingdom> ;
-    ns7:hasPart <http://ceur-ws.org/Vol-1110/#part-BCS> ;
-    ns7:isSubEventOf <http://ceur-ws.org/Vol-1110/#conf> ;
-    ns6:beginsAtDatetime "2013-12-10T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:endsAtDatetime "2013-12-10T00:00:00+00:00"^^xsd:dateTime ;
-    ns1:license <http://choosealicense.com/licenses/no-license/> .
-
-<http://ceur-ws.org/Vol-1110/#MihaelaiCocea> a ns4:Person ;
-    ns3:affiliation "" ;
-    ns2:sameAs <http://ceur-ws.org/persons/MihaelaiCocea> ;
-    ns4:made <http://ceur-ws.org/Vol-1110/#introduction> ;
-    ns4:name "Mihaela Cocea" .
-
-<http://ceur-ws.org/Vol-1110/#AyseiGoker> a ns4:Person ;
-    ns3:affiliation "" ;
-    ns2:sameAs <http://ceur-ws.org/persons/AyseiGoker> ;
-    ns4:made <http://ceur-ws.org/Vol-1110/#introduction>,
-        <http://ceur-ws.org/Vol-1110/#paper3> ;
-    ns4:name "Ayse Goker" .
-
-<http://ceur-ws.org/Vol-1110/#NirmalieiWiratunga> a ns4:Person ;
-    ns3:affiliation "" ;
-    ns2:sameAs <http://ceur-ws.org/persons/NirmalieiWiratunga> ;
-    ns4:made <http://ceur-ws.org/Vol-1110/#introduction>,
-        <http://ceur-ws.org/Vol-1110/#paper1> ;
-    ns4:name "Nirmalie Wiratunga" .
-
-<http://ceur-ws.org/Vol-1110/#paper2> a ns7:Paper ;
-    ns7:partOf <http://ceur-ws.org/Vol-1110/> ;
-    ns1:title "Towards Passive Political Opinion Polling using Twitter" ;
-    ns5:endPage 34 ;
-    ns5:numPages 16 ;
-    ns5:startPage 19 ;
-    ns3:author <http://ceur-ws.org/Vol-1110/#MoustafaiM.iGhanem>,
-        <http://ceur-ws.org/Vol-1110/#NicholasiA.iThapen> .
-
-<http://ceur-ws.org/Vol-1110/#paper4> a ns7:Paper ;
-    ns7:partOf <http://ceur-ws.org/Vol-1110/> ;
-    ns1:title "Multimodal Sentiment Analysis of Social Media" ;
-    ns5:endPage 58 ;
-    ns5:numPages 12 ;
-    ns5:startPage 47 ;
-    ns3:author <http://ceur-ws.org/Vol-1110/#DavidiDupplaw>,
-        <http://ceur-ws.org/Vol-1110/#DianaiMaynard>,
-        <http://ceur-ws.org/Vol-1110/#JonathoniHare> .
-
-<http://ceur-ws.org/Vol-1110/> a ns7:Proceedings ;
-    ns7:hasPart <http://ceur-ws.org/Vol-1110/#introduction>,
-        <http://ceur-ws.org/Vol-1110/#paper1>,
-        <http://ceur-ws.org/Vol-1110/#paper2>,
-        <http://ceur-ws.org/Vol-1110/#paper3>,
-        <http://ceur-ws.org/Vol-1110/#paper4> ;
+<http://ceur-ws.org/Vol-1110/> a ns5:Proceedings ;
     ns8:issued "2013-12-12T00:00:00+00:00"^^xsd:dateTime ;
-    ns5:presentedAt <http://ceur-ws.org/Vol-1110/#event> ;
-    ns3:editor <http://ceur-ws.org/Vol-1110/#AyseiGoker>,
+    ns7:presentedAt <http://ceur-ws.org/Vol-1110/#event> ;
+    ns6:editor <http://ceur-ws.org/Vol-1110/#AyseiGoker>,
         <http://ceur-ws.org/Vol-1110/#MihaelaiCocea>,
         <http://ceur-ws.org/Vol-1110/#MohamediMedhatiGaber>,
         <http://ceur-ws.org/Vol-1110/#NirmalieiWiratunga> .
 
-<http://ceur-ws.org/Vol-1110/#introduction> a ns7:Paper ;
-    ns7:partOf <http://ceur-ws.org/Vol-1110/> ;
-    ns1:title "Introduction to the Proceedings of the BCS SGAI Workshop on Social Media Analysis 2013" ;
-    ns5:endPage 6 ;
-    ns5:numPages 2 ;
-    ns5:startPage 5 ;
-    ns3:author <http://ceur-ws.org/Vol-1110/#AyseiGoker>,
-        <http://ceur-ws.org/Vol-1110/#MihaelaiCocea>,
-        <http://ceur-ws.org/Vol-1110/#MohamediGaber>,
-        <http://ceur-ws.org/Vol-1110/#NirmalieiWiratunga> .
+<http://ceur-ws.org/Vol-1110/#AyseiGoker> a ns3:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/AyseiGoker> ;
+    ns3:name "Ayse Goker" .
 
-<http://ceur-ws.org/Vol-1110/#paper1> a ns7:Paper ;
-    ns7:partOf <http://ceur-ws.org/Vol-1110/> ;
-    ns1:title "Domain-Based Lexicon Enhancement for Sentiment Analysis" ;
-    ns5:endPage 18 ;
-    ns5:numPages 12 ;
-    ns5:startPage 7 ;
-    ns3:author <http://ceur-ws.org/Vol-1110/#AminuiMuhammad>,
-        <http://ceur-ws.org/Vol-1110/#NirmalieiWiratunga>,
-        <http://ceur-ws.org/Vol-1110/#RichardiGlassey>,
-        <http://ceur-ws.org/Vol-1110/#RobertiLothian> .
+<http://ceur-ws.org/Vol-1110/#MihaelaiCocea> a ns3:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/MihaelaiCocea> ;
+    ns3:name "Mihaela Cocea" .
 
-<http://ceur-ws.org/Vol-1110/#paper3> a ns7:Paper ;
-    ns7:partOf <http://ceur-ws.org/Vol-1110/> ;
-    ns1:title "Mining Newsworthy Topics from Social Media" ;
-    ns5:endPage 46 ;
-    ns5:numPages 12 ;
-    ns5:startPage 35 ;
-    ns3:author <http://ceur-ws.org/Vol-1110/#AndrewiMacFarlane>,
-        <http://ceur-ws.org/Vol-1110/#AyseiGoker>,
-        <http://ceur-ws.org/Vol-1110/#CarlosiMartin>,
-        <http://ceur-ws.org/Vol-1110/#DavidiCorney> .
+<http://ceur-ws.org/Vol-1110/#MohamediMedhatiGaber> a ns3:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/MohamediMedhatiGaber> ;
+    ns3:name "Mohamed Medhat Gaber" .
+
+<http://ceur-ws.org/Vol-1110/#NirmalieiWiratunga> a ns3:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/NirmalieiWiratunga> ;
+    ns3:name "Nirmalie Wiratunga" .
+
+<http://ceur-ws.org/Vol-1110/#event> a ns5:WorkshopEvent ;
+    ns5:hasLocation <http://dbpedia.org/resource/United_Kingdom> ;
+    ns5:hasPart <http://ceur-ws.org/Vol-1110/#part-BCS> ;
+    ns5:isSubEventOf <http://ceur-ws.org/Vol-1110/#conf> ;
+    ns2:beginsAtDatetime "2013-12-10T00:00:00+00:00"^^xsd:dateTime ;
+    ns2:endsAtDatetime "2013-12-10T00:00:00+00:00"^^xsd:dateTime ;
+    ns4:license "http://choosealicense.com/licenses/no-license/" .
 

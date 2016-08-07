@@ -1,185 +1,40 @@
-@prefix ns1: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns2: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns3: <http://purl.org/ontology/bibo/#> .
+@prefix ns1: <http://www.w3.org/2002/07/owl#> .
+@prefix ns2: <http://xmlns.com/foaf/0.1/> .
+@prefix ns3: <http://purl.org/NET/c4dm/timeline.owl#> .
 @prefix ns4: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns5: <http://www.w3.org/2002/07/owl#> .
-@prefix ns6: <http://xmlns.com/foaf/0.1/> .
-@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns5: <http://purl.org/ontology/bibo/#> .
+@prefix ns6: <http://purl.org/dc/elements/1.1/> .
+@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns8: <http://swrc.ontoware.org/ontology/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-859/#AndreasiBeinsteiner> a ns6:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/AndreasiBeinsteiner> ;
-    ns6:made <http://ceur-ws.org/Vol-859/#paper3> ;
-    ns6:name "Andreas Beinsteiner" .
+<http://ceur-ws.org/Vol-859/> a ns4:Proceedings ;
+    ns7:issued "2012-06-04T00:00:00+00:00"^^xsd:dateTime ;
+    ns5:presentedAt <http://ceur-ws.org/Vol-859/#event> ;
+    ns8:editor <http://ceur-ws.org/Vol-859/#AlexandreiMonnin>,
+        <http://ceur-ws.org/Vol-859/#HarryiHalpin>,
+        <http://ceur-ws.org/Vol-859/#LeslieiCarr> .
 
-<http://ceur-ws.org/Vol-859/#Aur%C3%A9lieniB%C3%A9nel> a ns6:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/Aur%C3%A9lieniB%C3%A9nel> ;
-    ns6:made <http://ceur-ws.org/Vol-859/#paper4> ;
-    ns6:name "Aurélien Bénel" .
+<http://ceur-ws.org/Vol-859/#AlexandreiMonnin> a ns2:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/AlexandreiMonnin> ;
+    ns2:name "Alexandre Monnin" .
 
-<http://ceur-ws.org/Vol-859/#CameroniBuckner> a ns6:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/CameroniBuckner> ;
-    ns6:made <http://ceur-ws.org/Vol-859/#paper7> ;
-    ns6:name "Cameron Buckner" .
+<http://ceur-ws.org/Vol-859/#HarryiHalpin> a ns2:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/HarryiHalpin> ;
+    ns2:name "Harry Halpin" .
 
-<http://ceur-ws.org/Vol-859/#ColiniAllen> a ns6:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/ColiniAllen> ;
-    ns6:made <http://ceur-ws.org/Vol-859/#paper7> ;
-    ns6:name "Colin Allen" .
-
-<http://ceur-ws.org/Vol-859/#EddieiSoulier> a ns6:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/EddieiSoulier> ;
-    ns6:made <http://ceur-ws.org/Vol-859/#paper2> ;
-    ns6:name "Eddie Soulier" .
-
-<http://ceur-ws.org/Vol-859/#FabieniGandon> a ns6:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/FabieniGandon> ;
-    ns6:made <http://ceur-ws.org/Vol-859/#paper6> ;
-    ns6:name "Fabien Gandon" .
-
-<http://ceur-ws.org/Vol-859/#HarryiHalpin> a ns6:Person ;
-    ns1:affiliation "" ;
-    ns5:sameAs <http://ceur-ws.org/persons/HarryiHalpin> ;
-    ns6:name "Harry Halpin" .
-
-<http://ceur-ws.org/Vol-859/#IoannisiAnagnostopoulos> a ns6:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/IoannisiAnagnostopoulos> ;
-    ns6:made <http://ceur-ws.org/Vol-859/#paper1> ;
-    ns6:name "Ioannis Anagnostopoulos" .
-
-<http://ceur-ws.org/Vol-859/#JaimieiMurdock> a ns6:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/JaimieiMurdock> ;
-    ns6:made <http://ceur-ws.org/Vol-859/#paper7> ;
-    ns6:name "Jaimie Murdock" .
-
-<http://ceur-ws.org/Vol-859/#KieroniO%27Hara> a ns6:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/KieroniO%27Hara> ;
-    ns6:made <http://ceur-ws.org/Vol-859/#paper1> ;
-    ns6:name "Kieron O'Hara" .
-
-<http://ceur-ws.org/Vol-859/#LeslieiCarr> a ns6:Person ;
-    ns1:affiliation "" ;
-    ns5:sameAs <http://ceur-ws.org/persons/LeslieiCarr> ;
-    ns6:name "Leslie Carr" .
-
-<http://ceur-ws.org/Vol-859/#MichalisiVafopoulos> a ns6:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/MichalisiVafopoulos> ;
-    ns6:made <http://ceur-ws.org/Vol-859/#paper1> ;
-    ns6:name "Michalis Vafopoulos" .
-
-<http://ceur-ws.org/Vol-859/#NicolasiDelaforge> a ns6:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/NicolasiDelaforge> ;
-    ns6:made <http://ceur-ws.org/Vol-859/#paper6> ;
-    ns6:name "Nicolas Delaforge" .
-
-<http://ceur-ws.org/Vol-859/#PetrosiStefaneas> a ns6:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/PetrosiStefaneas> ;
-    ns6:made <http://ceur-ws.org/Vol-859/#paper1> ;
-    ns6:name "Petros Stefaneas" .
-
-<http://ceur-ws.org/Vol-859/#PhilippeiLacour> a ns6:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/PhilippeiLacour> ;
-    ns6:made <http://ceur-ws.org/Vol-859/#paper5> ;
-    ns6:name "Philippe Lacour" .
+<http://ceur-ws.org/Vol-859/#LeslieiCarr> a ns2:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/LeslieiCarr> ;
+    ns2:name "Leslie Carr" .
 
 <http://ceur-ws.org/Vol-859/#event> a ns4:WorkshopEvent ;
     ns4:hasLocation <http://dbpedia.org/resource/France> ;
-    ns4:hasPart <http://ceur-ws.org/Vol-859/#part-PhiloWeb> ;
+    ns4:hasPart <http://ceur-ws.org/Vol-859/#part-CEUR-WS> ;
     ns4:isSubEventOf <http://ceur-ws.org/Vol-859/#conf> ;
-    ns7:beginsAtDatetime "2012-04-17T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:endsAtDatetime "2012-04-17T00:00:00+00:00"^^xsd:dateTime ;
-    ns2:license <http://choosealicense.com/licenses/no-license/> .
-
-<http%3A//ceur-ws.org/Vol-859/%23Session2%3AWebandCognition> a ns4:SessionEvent ;
-    ns4:partOf <http://ceur-ws.org/Vol-859/> ;
-    ns2:title "Session 2: Web and Cognition" .
-
-<http://ceur-ws.org/Vol-859/#AlexandreiMonnin> a ns6:Person ;
-    ns1:affiliation "" ;
-    ns5:sameAs <http://ceur-ws.org/persons/AlexandreiMonnin> ;
-    ns6:made <http://ceur-ws.org/Vol-859/#paper6> ;
-    ns6:name "Alexandre Monnin" .
-
-<http://ceur-ws.org/Vol-859/#paper2> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-859/> ;
-    ns2:title "What Social Ontology for Social Web? An Assemblage Theory Promoted" ;
-    ns3:section <http%3A//ceur-ws.org/Vol-859/%23Session1%3AWebandSociety> ;
-    ns1:author <http://ceur-ws.org/Vol-859/#EddieiSoulier> .
-
-<http://ceur-ws.org/Vol-859/#paper3> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-859/> ;
-    ns2:title "Filter Bubble and Enframing: On the Self-Affirming Dynamics of Technologies" ;
-    ns3:section <http%3A//ceur-ws.org/Vol-859/%23Session2%3AWebandCognition> ;
-    ns1:author <http://ceur-ws.org/Vol-859/#AndreasiBeinsteiner> .
-
-<http://ceur-ws.org/Vol-859/#paper4> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-859/> ;
-    ns2:title "Where Do 'Ontologies' Come From? Seeking for the Missing Link" ;
-    ns3:section <http%3A//ceur-ws.org/Vol-859/%23Session3%3AWebandLanguage> ;
-    ns1:author <http://ceur-ws.org/Vol-859/#Aur%C3%A9lieniB%C3%A9nel> .
-
-<http://ceur-ws.org/Vol-859/#paper5> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-859/> ;
-    ns2:title "Web Metaphysics Between Logic and Ontology" ;
-    ns3:section <http%3A//ceur-ws.org/Vol-859/%23Session3%3AWebandLanguage> ;
-    ns1:author <http://ceur-ws.org/Vol-859/#PhilippeiLacour> .
-
-<http%3A//ceur-ws.org/Vol-859/%23Session1%3AWebandSociety> a ns4:SessionEvent ;
-    ns4:partOf <http://ceur-ws.org/Vol-859/> ;
-    ns2:title "Session 1: Web and Society" .
-
-<http%3A//ceur-ws.org/Vol-859/%23Session3%3AWebandLanguage> a ns4:SessionEvent ;
-    ns4:partOf <http://ceur-ws.org/Vol-859/> ;
-    ns2:title "Session 3: Web and Language" .
-
-<http%3A//ceur-ws.org/Vol-859/%23Session4%3AWebandLogic%28%26Computation%29> a ns4:SessionEvent ;
-    ns4:partOf <http://ceur-ws.org/Vol-859/> ;
-    ns2:title "Session 4: Web and Logic (& Computation)" .
-
-<http://ceur-ws.org/Vol-859/#paper6> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-859/> ;
-    ns2:title "CoReWeb: From Linked Documentary Resources to Linked Computational Resources" ;
-    ns3:section <http%3A//ceur-ws.org/Vol-859/%23Session4%3AWebandLogic%28%26Computation%29> ;
-    ns1:author <http://ceur-ws.org/Vol-859/#AlexandreiMonnin>,
-        <http://ceur-ws.org/Vol-859/#FabieniGandon>,
-        <http://ceur-ws.org/Vol-859/#NicolasiDelaforge> .
-
-<http://ceur-ws.org/Vol-859/#paper7> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-859/> ;
-    ns2:title "Containing the Semantic Explosion" ;
-    ns3:section <http%3A//ceur-ws.org/Vol-859/%23Session4%3AWebandLogic%28%26Computation%29> ;
-    ns1:author <http://ceur-ws.org/Vol-859/#CameroniBuckner>,
-        <http://ceur-ws.org/Vol-859/#ColiniAllen>,
-        <http://ceur-ws.org/Vol-859/#JaimieiMurdock> .
-
-<http://ceur-ws.org/Vol-859/#paper1> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-859/> ;
-    ns2:title "A Methodology for Internal Web Ethics" ;
-    ns3:section <http%3A//ceur-ws.org/Vol-859/%23Session1%3AWebandSociety> ;
-    ns1:author <http://ceur-ws.org/Vol-859/#IoannisiAnagnostopoulos>,
-        <http://ceur-ws.org/Vol-859/#KieroniO%27Hara>,
-        <http://ceur-ws.org/Vol-859/#MichalisiVafopoulos>,
-        <http://ceur-ws.org/Vol-859/#PetrosiStefaneas> .
-
-<http://ceur-ws.org/Vol-859/> a ns4:Proceedings ;
-    ns4:hasPart <http://ceur-ws.org/Vol-859/#paper1>,
-        <http://ceur-ws.org/Vol-859/#paper2>,
-        <http://ceur-ws.org/Vol-859/#paper3>,
-        <http://ceur-ws.org/Vol-859/#paper4>,
-        <http://ceur-ws.org/Vol-859/#paper5>,
-        <http://ceur-ws.org/Vol-859/#paper6>,
-        <http://ceur-ws.org/Vol-859/#paper7> ;
-    ns4:hasSession <http%3A//ceur-ws.org/Vol-859/%23Session1%3AWebandSociety>,
-        <http%3A//ceur-ws.org/Vol-859/%23Session2%3AWebandCognition>,
-        <http%3A//ceur-ws.org/Vol-859/%23Session3%3AWebandLanguage>,
-        <http%3A//ceur-ws.org/Vol-859/%23Session4%3AWebandLogic%28%26Computation%29> ;
-    ns8:issued "2012-06-04T00:00:00+00:00"^^xsd:dateTime ;
-    ns3:presentedAt <http://ceur-ws.org/Vol-859/#event> ;
-    ns1:editor <http://ceur-ws.org/Vol-859/#AlexandreiMonnin>,
-        <http://ceur-ws.org/Vol-859/#HarryiHalpin>,
-        <http://ceur-ws.org/Vol-859/#LeslieiCarr> .
+    ns3:beginsAtDatetime "2012-04-17T00:00:00+00:00"^^xsd:dateTime ;
+    ns3:endsAtDatetime "2012-04-17T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:license "http://choosealicense.com/licenses/no-license/" .
 

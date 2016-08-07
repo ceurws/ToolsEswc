@@ -1,227 +1,40 @@
-@prefix ns1: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns2: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns3: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns4: <http://www.w3.org/2002/07/owl#> .
+@prefix ns1: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns2: <http://purl.org/dc/elements/1.1/> .
+@prefix ns3: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns4: <http://purl.org/ontology/bibo/#> .
 @prefix ns5: <http://xmlns.com/foaf/0.1/> .
-@prefix ns6: <http://purl.org/ontology/bibo/#> .
-@prefix ns7: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns6: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns7: <http://www.w3.org/2002/07/owl#> .
+@prefix ns8: <http://data.semanticweb.org/ns/swc/ontology/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-963/#AlekseyiShutov> a ns5:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/AlekseyiShutov> ;
-    ns5:made <http://ceur-ws.org/Vol-963/#paper1> ;
-    ns5:name "Aleksey Shutov" .
-
-<http://ceur-ws.org/Vol-963/#BenktiWangler> a ns5:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/BenktiWangler> ;
-    ns5:made <http://ceur-ws.org/Vol-963/#paper7> ;
-    ns5:name "Benkt Wangler" .
-
-<http://ceur-ws.org/Vol-963/#DirkiStamer> a ns5:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/DirkiStamer> ;
-    ns5:made <http://ceur-ws.org/Vol-963/#paper2> ;
-    ns5:name "Dirk Stamer" .
+<http://ceur-ws.org/Vol-963/> a ns8:Proceedings ;
+    ns3:issued "2013-02-20T00:00:00+00:00"^^xsd:dateTime ;
+    ns4:presentedAt <http://ceur-ws.org/Vol-963/#event> ;
+    ns6:editor <http://ceur-ws.org/Vol-963/#EduardiBabkin>,
+        <http://ceur-ws.org/Vol-963/#NataliaiAseeva>,
+        <http://ceur-ws.org/Vol-963/#OlegiKozyrev> .
 
 <http://ceur-ws.org/Vol-963/#EduardiBabkin> a ns5:Person ;
-    ns1:affiliation "" ;
-    ns4:sameAs <http://ceur-ws.org/persons/EduardiBabkin> ;
+    ns7:sameAs <http://ceur-ws.org/persons/EduardiBabkin> ;
     ns5:name "Eduard Babkin" .
 
-<http://ceur-ws.org/Vol-963/#EkaterinaiBazhenova> a ns5:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/EkaterinaiBazhenova> ;
-    ns5:made <http://ceur-ws.org/Vol-963/#paper6> ;
-    ns5:name "Ekaterina Bazhenova" .
-
-<http://ceur-ws.org/Vol-963/#ElenaiPesotskaya> a ns5:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/ElenaiPesotskaya> ;
-    ns5:made <http://ceur-ws.org/Vol-963/#paper3> ;
-    ns5:name "Elena Pesotskaya" .
-
-<http://ceur-ws.org/Vol-963/#HabibiAbdulrab> a ns5:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/HabibiAbdulrab> ;
-    ns5:made <http://ceur-ws.org/Vol-963/#paper4> ;
-    ns5:name "Habib Abdulrab" .
-
-<http://ceur-ws.org/Vol-963/#J%C3%B6rgiBecker> a ns5:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/J%C3%B6rgiBecker> ;
-    ns5:made <http://ceur-ws.org/Vol-963/#paper6> ;
-    ns5:name "Jörg Becker" .
-
-<http://ceur-ws.org/Vol-963/#KurtiSandkuhl> a ns5:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/KurtiSandkuhl> ;
-    ns5:made <http://ceur-ws.org/Vol-963/#paper2> ;
-    ns5:name "Kurt Sandkuhl" .
-
-<http://ceur-ws.org/Vol-963/#Lars-OlofiJohansson> a ns5:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/Lars-OlofiJohansson> ;
-    ns5:made <http://ceur-ws.org/Vol-963/#paper5> ;
-    ns5:name "Lars-Olof Johansson" .
-
-<http://ceur-ws.org/Vol-963/#MagnusiW%C3%A4rja> a ns5:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/MagnusiW%C3%A4rja> ;
-    ns5:made <http://ceur-ws.org/Vol-963/#paper5> ;
-    ns5:name "Magnus Wärja" .
-
-<http://ceur-ws.org/Vol-963/#MargaritaiKarpunina> a ns5:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/MargaritaiKarpunina> ;
-    ns5:made <http://ceur-ws.org/Vol-963/#paper1> ;
-    ns5:name "Margarita Karpunina" .
-
-<http://ceur-ws.org/Vol-963/#MhamediItmi> a ns5:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/MhamediItmi> ;
-    ns5:made <http://ceur-ws.org/Vol-963/#paper4> ;
-    ns5:name "Mhamed Itmi" .
-
-<http://ceur-ws.org/Vol-963/#MonicaiWinge> a ns5:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/MonicaiWinge> ;
-    ns5:made <http://ceur-ws.org/Vol-963/#paper7> ;
-    ns5:name "Monica Winge" .
-
-<http://ceur-ws.org/Vol-963/#NadezhdaiTitova> a ns5:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/NadezhdaiTitova> ;
-    ns5:made <http://ceur-ws.org/Vol-963/#paper1> ;
-    ns5:name "Nadezhda Titova" .
-
 <http://ceur-ws.org/Vol-963/#NataliaiAseeva> a ns5:Person ;
-    ns1:affiliation "" ;
-    ns4:sameAs <http://ceur-ws.org/persons/NataliaiAseeva> ;
+    ns7:sameAs <http://ceur-ws.org/persons/NataliaiAseeva> ;
     ns5:name "Natalia Aseeva" .
 
 <http://ceur-ws.org/Vol-963/#OlegiKozyrev> a ns5:Person ;
-    ns1:affiliation "" ;
-    ns4:sameAs <http://ceur-ws.org/persons/OlegiKozyrev> ;
+    ns7:sameAs <http://ceur-ws.org/persons/OlegiKozyrev> ;
     ns5:name "Oleg Kozyrev" .
 
-<http://ceur-ws.org/Vol-963/#SagvaniSaleh> a ns5:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/SagvaniSaleh> ;
-    ns5:made <http://ceur-ws.org/Vol-963/#paper4> ;
-    ns5:name "Sagvan Saleh" .
-
-<http://ceur-ws.org/Vol-963/#SergeyiAvdoshin> a ns5:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/SergeyiAvdoshin> ;
-    ns5:made <http://ceur-ws.org/Vol-963/#paper3> ;
-    ns5:name "Sergey Avdoshin" .
-
-<http://ceur-ws.org/Vol-963/#SveniCarlsson> a ns5:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/SveniCarlsson> ;
-    ns5:made <http://ceur-ws.org/Vol-963/#paper5> ;
-    ns5:name "Sven Carlsson" .
-
-<http://ceur-ws.org/Vol-963/#TatianaiPoletaeva> a ns5:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/TatianaiPoletaeva> ;
-    ns5:made <http://ceur-ws.org/Vol-963/#paper4> ;
-    ns5:name "Tatiana Poletaeva" .
-
-<http://ceur-ws.org/Vol-963/#VictoriTaratoukhine> a ns5:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/VictoriTaratoukhine> ;
-    ns5:made <http://ceur-ws.org/Vol-963/#paper6> ;
-    ns5:name "Victor Taratoukhine" .
-
-<http://ceur-ws.org/Vol-963/#event> a ns3:WorkshopEvent ;
-    ns3:hasLocation <http://dbpedia.org/resource/Russia> ;
-    ns3:hasPart <http://ceur-ws.org/Vol-963/#part-BIR> ;
-    ns3:isSubEventOf <http://ceur-ws.org/Vol-963/#conf> ;
-    ns8:beginsAtDatetime "2012-09-24T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:endsAtDatetime "2012-09-26T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:license <http://choosealicense.com/licenses/no-license/> .
-
-<http%3A//ceur-ws.org/Vol-963/%23Session2%3ABusiness%2Cpeopleandsystemsinteroperability> a ns3:SessionEvent ;
-    ns3:partOf <http://ceur-ws.org/Vol-963/> ;
-    ns7:title "Session 2: Business, people and systems interoperability" .
-
-<http://ceur-ws.org/Vol-963/#paper2> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-963/> ;
-    ns7:title "Towards improving structure and content of information demand patterns" ;
-    ns6:endPage 31 ;
-    ns6:numPages 13 ;
-    ns6:section <http%3A//ceur-ws.org/Vol-963/%23Session1%3ABusinessandinformationsystemsdevelopment> ;
-    ns6:startPage 19 ;
-    ns1:author <http://ceur-ws.org/Vol-963/#DirkiStamer>,
-        <http://ceur-ws.org/Vol-963/#KurtiSandkuhl> .
-
-<http://ceur-ws.org/Vol-963/#paper3> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-963/> ;
-    ns7:title "Software risk management: using the automated tools" ;
-    ns6:endPage 43 ;
-    ns6:numPages 12 ;
-    ns6:section <http%3A//ceur-ws.org/Vol-963/%23Session1%3ABusinessandinformationsystemsdevelopment> ;
-    ns6:startPage 32 ;
-    ns1:author <http://ceur-ws.org/Vol-963/#ElenaiPesotskaya>,
-        <http://ceur-ws.org/Vol-963/#SergeyiAvdoshin> .
-
-<http://ceur-ws.org/Vol-963/#paper7> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-963/> ;
-    ns7:title "Needs, requirements and e-services for collaborative and patient-centered care" ;
-    ns6:section <http%3A//ceur-ws.org/Vol-963/%23Session2%3ABusiness%2Cpeopleandsystemsinteroperability> ;
-    ns1:author <http://ceur-ws.org/Vol-963/#BenktiWangler>,
-        <http://ceur-ws.org/Vol-963/#MonicaiWinge> .
-
-<http://ceur-ws.org/Vol-963/#paper1> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-963/> ;
-    ns7:title "Towards a new modeling method for developing a balanced hierarchical strategy for heterogeneous organizations: the case of universities" ;
-    ns6:endPage 18 ;
-    ns6:numPages 18 ;
-    ns6:section <http%3A//ceur-ws.org/Vol-963/%23Session1%3ABusinessandinformationsystemsdevelopment> ;
-    ns6:startPage 1 ;
-    ns1:author <http://ceur-ws.org/Vol-963/#AlekseyiShutov>,
-        <http://ceur-ws.org/Vol-963/#MargaritaiKarpunina>,
-        <http://ceur-ws.org/Vol-963/#NadezhdaiTitova> .
-
-<http://ceur-ws.org/Vol-963/#paper5> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-963/> ;
-    ns7:title "An evaluation of business process model techniques, using Moody's quality criterion for a good diagram" ;
-    ns6:endPage 64 ;
-    ns6:numPages 11 ;
-    ns6:section <http%3A//ceur-ws.org/Vol-963/%23Session1%3ABusinessandinformationsystemsdevelopment> ;
-    ns6:startPage 54 ;
-    ns1:author <http://ceur-ws.org/Vol-963/#Lars-OlofiJohansson>,
-        <http://ceur-ws.org/Vol-963/#MagnusiW%C3%A4rja>,
-        <http://ceur-ws.org/Vol-963/#SveniCarlsson> .
-
-<http://ceur-ws.org/Vol-963/#paper6> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-963/> ;
-    ns7:title "Impact of information and communication technologies on business process management on small and medium enterprises in the emerging countries" ;
-    ns6:endPage 74 ;
-    ns6:numPages 10 ;
-    ns6:section <http%3A//ceur-ws.org/Vol-963/%23Session2%3ABusiness%2Cpeopleandsystemsinteroperability> ;
-    ns6:startPage 65 ;
-    ns1:author <http://ceur-ws.org/Vol-963/#EkaterinaiBazhenova>,
-        <http://ceur-ws.org/Vol-963/#J%C3%B6rgiBecker>,
-        <http://ceur-ws.org/Vol-963/#VictoriTaratoukhine> .
-
-<http://ceur-ws.org/Vol-963/#paper4> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-963/> ;
-    ns7:title "Integrated approach to traceability data management" ;
-    ns6:endPage 53 ;
-    ns6:numPages 10 ;
-    ns6:section <http%3A//ceur-ws.org/Vol-963/%23Session1%3ABusinessandinformationsystemsdevelopment> ;
-    ns6:startPage 44 ;
-    ns1:author <http://ceur-ws.org/Vol-963/#HabibiAbdulrab>,
-        <http://ceur-ws.org/Vol-963/#MhamediItmi>,
-        <http://ceur-ws.org/Vol-963/#SagvaniSaleh>,
-        <http://ceur-ws.org/Vol-963/#TatianaiPoletaeva> .
-
-<http%3A//ceur-ws.org/Vol-963/%23Session1%3ABusinessandinformationsystemsdevelopment> a ns3:SessionEvent ;
-    ns3:partOf <http://ceur-ws.org/Vol-963/> ;
-    ns7:title "Session 1: Business and information systems development" .
-
-<http://ceur-ws.org/Vol-963/> a ns3:Proceedings ;
-    ns3:hasPart <http://ceur-ws.org/Vol-963/#paper1>,
-        <http://ceur-ws.org/Vol-963/#paper2>,
-        <http://ceur-ws.org/Vol-963/#paper3>,
-        <http://ceur-ws.org/Vol-963/#paper4>,
-        <http://ceur-ws.org/Vol-963/#paper5>,
-        <http://ceur-ws.org/Vol-963/#paper6>,
-        <http://ceur-ws.org/Vol-963/#paper7> ;
-    ns3:hasSession <http%3A//ceur-ws.org/Vol-963/%23Session1%3ABusinessandinformationsystemsdevelopment>,
-        <http%3A//ceur-ws.org/Vol-963/%23Session2%3ABusiness%2Cpeopleandsystemsinteroperability> ;
-    ns2:issued "2013-02-20T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:presentedAt <http://ceur-ws.org/Vol-963/#event> ;
-    ns1:editor <http://ceur-ws.org/Vol-963/#EduardiBabkin>,
-        <http://ceur-ws.org/Vol-963/#NataliaiAseeva>,
-        <http://ceur-ws.org/Vol-963/#OlegiKozyrev> .
+<http://ceur-ws.org/Vol-963/#event> a ns8:WorkshopEvent ;
+    ns8:hasLocation <http://dbpedia.org/resource/Russia> ;
+    ns8:hasPart <http://ceur-ws.org/Vol-963/#part-CEUR-WS> ;
+    ns8:isSubEventOf <http://ceur-ws.org/Vol-963/#conf> ;
+    ns1:beginsAtDatetime "2012-09-24T00:00:00+00:00"^^xsd:dateTime ;
+    ns1:endsAtDatetime "2012-09-26T00:00:00+00:00"^^xsd:dateTime ;
+    ns2:license "http://choosealicense.com/licenses/no-license/" .
 

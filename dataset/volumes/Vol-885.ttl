@@ -1,236 +1,40 @@
-@prefix ns1: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns2: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns3: <http://purl.org/ontology/bibo/#> .
-@prefix ns4: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns5: <http://xmlns.com/foaf/0.1/> .
-@prefix ns6: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns7: <http://www.w3.org/2002/07/owl#> .
-@prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns1: <http://xmlns.com/foaf/0.1/> .
+@prefix ns2: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns3: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns4: <http://purl.org/dc/elements/1.1/> .
+@prefix ns5: <http://purl.org/ontology/bibo/#> .
+@prefix ns6: <http://www.w3.org/2002/07/owl#> .
+@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-885/#AlbertoiPirni> a ns5:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/AlbertoiPirni> ;
-    ns5:made <http://ceur-ws.org/Vol-885/#paper4> ;
-    ns5:name "Alberto Pirni" .
-
-<http://ceur-ws.org/Vol-885/#AngelaiDiiCarlo> a ns5:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/AngelaiDiiCarlo> ;
-    ns5:made <http://ceur-ws.org/Vol-885/#paper4> ;
-    ns5:name "Angela Di Carlo" .
-
-<http://ceur-ws.org/Vol-885/#AntonioiCarlosidaiCostaiRocha> a ns5:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/AntonioiCarlosidaiCostaiRocha> ;
-    ns5:made <http://ceur-ws.org/Vol-885/#invited> ;
-    ns5:name "Antonio Carlos da Costa Rocha" .
-
-<http://ceur-ws.org/Vol-885/#BartiKamphorst> a ns5:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/BartiKamphorst> ;
-    ns5:made <http://ceur-ws.org/Vol-885/#paper3> ;
-    ns5:name "Bart Kamphorst" .
-
-<http://ceur-ws.org/Vol-885/#CalogeroiMariaiOddo> a ns5:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/CalogeroiMariaiOddo> ;
-    ns5:made <http://ceur-ws.org/Vol-885/#paper4> ;
-    ns5:name "Calogero Maria Oddo" .
-
-<http://ceur-ws.org/Vol-885/#ClaraiSmith> a ns5:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/ClaraiSmith> ;
-    ns5:made <http://ceur-ws.org/Vol-885/#paper5> ;
-    ns5:name "Clara Smith" .
-
-<http://ceur-ws.org/Vol-885/#ElettraiStradella> a ns5:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/ElettraiStradella> ;
-    ns5:made <http://ceur-ws.org/Vol-885/#paper4> ;
-    ns5:name "Elettra Stradella" .
-
-<http://ceur-ws.org/Vol-885/#EricaiPalmerini> a ns5:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/EricaiPalmerini> ;
-    ns5:made <http://ceur-ws.org/Vol-885/#paper4> ;
-    ns5:name "Erica Palmerini" .
-
-<http://ceur-ws.org/Vol-885/#FlorianiGros> a ns5:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/FlorianiGros> ;
-    ns5:made <http://ceur-ws.org/Vol-885/#paper1> ;
-    ns5:name "Florian Gros" .
-
-<http://ceur-ws.org/Vol-885/#Fr%26eacuted%26eacutericiDehais> a ns5:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/Fr%26eacuted%26eacutericiDehais> ;
-    ns5:made <http://ceur-ws.org/Vol-885/#paper7> ;
-    ns5:name "Fr&eacuted&eacuteric Dehais" .
-
-<http://ceur-ws.org/Vol-885/#Gr%C3%A9goryiBonnet> a ns5:Person ;
-    ns1:affiliation "" ;
-    ns7:sameAs <http://ceur-ws.org/persons/Gr%C3%A9goryiBonnet> ;
-    ns5:name "Grégory Bonnet" .
-
-<http://ceur-ws.org/Vol-885/#Jean-GabrieliGanascia> a ns5:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/Jean-GabrieliGanascia> ;
-    ns5:made <http://ceur-ws.org/Vol-885/#paper6> ;
-    ns5:name "Jean-Gabriel Ganascia" .
-
-<http://ceur-ws.org/Vol-885/#MihneaiTufis> a ns5:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/MihneaiTufis> ;
-    ns5:made <http://ceur-ws.org/Vol-885/#paper6> ;
-    ns5:name "Mihnea Tufis" .
-
-<http://ceur-ws.org/Vol-885/#OlivieriBoissier> a ns5:Person ;
-    ns1:affiliation "" ;
-    ns7:sameAs <http://ceur-ws.org/persons/OlivieriBoissier> ;
-    ns5:name "Olivier Boissier" .
-
-<http://ceur-ws.org/Vol-885/#PaoloiDario> a ns5:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/PaoloiDario> ;
-    ns5:made <http://ceur-ws.org/Vol-885/#paper4> ;
-    ns5:name "Paolo Dario" .
-
-<http://ceur-ws.org/Vol-885/#PericleiSalvini> a ns5:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/PericleiSalvini> ;
-    ns5:made <http://ceur-ws.org/Vol-885/#paper4> ;
-    ns5:name "Pericle Salvini" .
-
-<http://ceur-ws.org/Vol-885/#SergioiPizziol> a ns5:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/SergioiPizziol> ;
-    ns5:made <http://ceur-ws.org/Vol-885/#paper7> ;
-    ns5:name "Sergio Pizziol" .
-
-<http://ceur-ws.org/Vol-885/#ThierryiPichevin> a ns5:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/ThierryiPichevin> ;
-    ns5:made <http://ceur-ws.org/Vol-885/#paper1> ;
-    ns5:name "Thierry Pichevin" .
-
-<http://ceur-ws.org/Vol-885/#ThomasiDubot> a ns5:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/ThomasiDubot> ;
-    ns5:made <http://ceur-ws.org/Vol-885/#paper2> ;
-    ns5:name "Thomas Dubot" .
-
-<http://ceur-ws.org/Vol-885/#event> a ns6:WorkshopEvent ;
-    ns6:hasLocation <http://dbpedia.org/resource/France> ;
-    ns6:hasPart <http://ceur-ws.org/Vol-885/#part-RDA> ;
-    ns6:isSubEventOf <http://ceur-ws.org/Vol-885/#conf> ;
-    ns8:beginsAtDatetime "2012-08-28T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:endsAtDatetime "2012-08-28T00:00:00+00:00"^^xsd:dateTime ;
-    ns2:license <http://choosealicense.com/licenses/no-license/> .
-
-<http%3A//ceur-ws.org/Vol-885/%23Keynote> a ns6:SessionEvent ;
-    ns6:partOf <http://ceur-ws.org/Vol-885/> ;
-    ns2:title "Keynote" .
-
-<http://ceur-ws.org/Vol-885/#invited> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-885/> ;
-    ns2:title "Functional rights and duties at the micro and macro social levels" ;
-    ns3:endPage 6 ;
-    ns3:numPages 1 ;
-    ns3:section <http%3A//ceur-ws.org/Vol-885/%23Keynote> ;
-    ns3:startPage 6 ;
-    ns1:author <http://ceur-ws.org/Vol-885/#AntonioiCarlosidaiCostaiRocha> .
-
-<http://ceur-ws.org/Vol-885/#paper2> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-885/> ;
-    ns2:title "Integrating civil unmanned aircraft operating autonomously in non-segregated airspace: towards a dronoethics?" ;
-    ns3:endPage 18 ;
-    ns3:numPages 6 ;
-    ns3:section <http%3A//ceur-ws.org/Vol-885/%23Session1%3AEthicsandLegalFrameworkforRightsandDutiesofAutonomousAgents> ;
-    ns3:startPage 13 ;
-    ns1:author <http://ceur-ws.org/Vol-885/#ThomasiDubot> .
-
-<http://ceur-ws.org/Vol-885/#paper3> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-885/> ;
-    ns2:title "The primacy of human autonomy: understanding agent rights through the human rights framework" ;
-    ns3:endPage 24 ;
-    ns3:numPages 6 ;
-    ns3:section <http%3A//ceur-ws.org/Vol-885/%23Session1%3AEthicsandLegalFrameworkforRightsandDutiesofAutonomousAgents> ;
-    ns3:startPage 19 ;
-    ns1:author <http://ceur-ws.org/Vol-885/#BartiKamphorst> .
-
-<http://ceur-ws.org/Vol-885/#paper5> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-885/> ;
-    ns2:title "Principal and helper: notes on reflex responsibility in MAS" ;
-    ns3:endPage 37 ;
-    ns3:numPages 6 ;
-    ns3:section <http%3A//ceur-ws.org/Vol-885/%23Session2%3ARightsandDutiesConflictManagementbyAutonomousAgents> ;
-    ns3:startPage 32 ;
-    ns1:author <http://ceur-ws.org/Vol-885/#ClaraiSmith> .
-
-<http://ceur-ws.org/Vol-885/#CatherineiTessier> a ns5:Person ;
-    ns1:affiliation "" ;
-    ns7:sameAs <http://ceur-ws.org/persons/CatherineiTessier> ;
-    ns5:made <http://ceur-ws.org/Vol-885/#paper1>,
-        <http://ceur-ws.org/Vol-885/#paper7> ;
-    ns5:name "Catherine Tessier" .
-
-<http://ceur-ws.org/Vol-885/#paper6> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-885/> ;
-    ns2:title "Normative rational agents - A BDI approach" ;
-    ns3:endPage 43 ;
-    ns3:numPages 7 ;
-    ns3:section <http%3A//ceur-ws.org/Vol-885/%23Session2%3ARightsandDutiesConflictManagementbyAutonomousAgents> ;
-    ns3:startPage 37 ;
-    ns1:author <http://ceur-ws.org/Vol-885/#Jean-GabrieliGanascia>,
-        <http://ceur-ws.org/Vol-885/#MihneaiTufis> .
-
-<http%3A//ceur-ws.org/Vol-885/%23Session2%3ARightsandDutiesConflictManagementbyAutonomousAgents> a ns6:SessionEvent ;
-    ns6:partOf <http://ceur-ws.org/Vol-885/> ;
-    ns2:title "Session 2: Rights and Duties Conflict Management by Autonomous Agents" .
-
-<http://ceur-ws.org/Vol-885/#paper1> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-885/> ;
-    ns2:title "Ethics and authority sharing for autonomous armed robots" ;
-    ns3:endPage 12 ;
-    ns3:numPages 6 ;
-    ns3:section <http%3A//ceur-ws.org/Vol-885/%23Session1%3AEthicsandLegalFrameworkforRightsandDutiesofAutonomousAgents> ;
-    ns3:startPage 7 ;
-    ns1:author <http://ceur-ws.org/Vol-885/#CatherineiTessier>,
-        <http://ceur-ws.org/Vol-885/#FlorianiGros>,
-        <http://ceur-ws.org/Vol-885/#ThierryiPichevin> .
-
-<http://ceur-ws.org/Vol-885/#paper7> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-885/> ;
-    ns2:title "What the heck is it doing? Better understanding Human-Machine conflicts through models" ;
-    ns3:endPage 49 ;
-    ns3:numPages 6 ;
-    ns3:section <http%3A//ceur-ws.org/Vol-885/%23Session2%3ARightsandDutiesConflictManagementbyAutonomousAgents> ;
-    ns3:startPage 44 ;
-    ns1:author <http://ceur-ws.org/Vol-885/#CatherineiTessier>,
-        <http://ceur-ws.org/Vol-885/#Fr%26eacuted%26eacutericiDehais>,
-        <http://ceur-ws.org/Vol-885/#SergioiPizziol> .
-
-<http%3A//ceur-ws.org/Vol-885/%23Session1%3AEthicsandLegalFrameworkforRightsandDutiesofAutonomousAgents> a ns6:SessionEvent ;
-    ns6:partOf <http://ceur-ws.org/Vol-885/> ;
-    ns2:title "Session 1: Ethics and Legal Framework for Rights and Duties of Autonomous Agents" .
-
-<http://ceur-ws.org/Vol-885/#paper4> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-885/> ;
-    ns2:title "Subjectivity of autonomous agents. Some philosophical and legal remarks" ;
-    ns3:endPage 31 ;
-    ns3:numPages 8 ;
-    ns3:section <http%3A//ceur-ws.org/Vol-885/%23Session1%3AEthicsandLegalFrameworkforRightsandDutiesofAutonomousAgents> ;
-    ns3:startPage 24 ;
-    ns1:author <http://ceur-ws.org/Vol-885/#AlbertoiPirni>,
-        <http://ceur-ws.org/Vol-885/#AngelaiDiiCarlo>,
-        <http://ceur-ws.org/Vol-885/#CalogeroiMariaiOddo>,
-        <http://ceur-ws.org/Vol-885/#ElettraiStradella>,
-        <http://ceur-ws.org/Vol-885/#EricaiPalmerini>,
-        <http://ceur-ws.org/Vol-885/#PaoloiDario>,
-        <http://ceur-ws.org/Vol-885/#PericleiSalvini> .
-
-<http://ceur-ws.org/Vol-885/> a ns6:Proceedings ;
-    ns6:hasPart <http://ceur-ws.org/Vol-885/#invited>,
-        <http://ceur-ws.org/Vol-885/#paper1>,
-        <http://ceur-ws.org/Vol-885/#paper2>,
-        <http://ceur-ws.org/Vol-885/#paper3>,
-        <http://ceur-ws.org/Vol-885/#paper4>,
-        <http://ceur-ws.org/Vol-885/#paper5>,
-        <http://ceur-ws.org/Vol-885/#paper6>,
-        <http://ceur-ws.org/Vol-885/#paper7> ;
-    ns6:hasSession <http%3A//ceur-ws.org/Vol-885/%23Keynote>,
-        <http%3A//ceur-ws.org/Vol-885/%23Session1%3AEthicsandLegalFrameworkforRightsandDutiesofAutonomousAgents>,
-        <http%3A//ceur-ws.org/Vol-885/%23Session2%3ARightsandDutiesConflictManagementbyAutonomousAgents> ;
-    ns4:issued "2012-08-20T00:00:00+00:00"^^xsd:dateTime ;
-    ns3:presentedAt <http://ceur-ws.org/Vol-885/#event> ;
-    ns1:editor <http://ceur-ws.org/Vol-885/#CatherineiTessier>,
+<http://ceur-ws.org/Vol-885/> a ns3:Proceedings ;
+    ns8:issued "2012-08-20T00:00:00+00:00"^^xsd:dateTime ;
+    ns5:presentedAt <http://ceur-ws.org/Vol-885/#event> ;
+    ns2:editor <http://ceur-ws.org/Vol-885/#CatherineiTessier>,
         <http://ceur-ws.org/Vol-885/#Gr%C3%A9goryiBonnet>,
         <http://ceur-ws.org/Vol-885/#OlivieriBoissier> .
+
+<http://ceur-ws.org/Vol-885/#CatherineiTessier> a ns1:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/CatherineiTessier> ;
+    ns1:name "Catherine Tessier" .
+
+<http://ceur-ws.org/Vol-885/#Gr%C3%A9goryiBonnet> a ns1:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/Gr%C3%A9goryiBonnet> ;
+    ns1:name "Grégory Bonnet" .
+
+<http://ceur-ws.org/Vol-885/#OlivieriBoissier> a ns1:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/OlivieriBoissier> ;
+    ns1:name "Olivier Boissier" .
+
+<http://ceur-ws.org/Vol-885/#event> a ns3:WorkshopEvent ;
+    ns3:hasLocation <http://dbpedia.org/resource/France> ;
+    ns3:hasPart <http://ceur-ws.org/Vol-885/#part-CEUR-WS> ;
+    ns3:isSubEventOf <http://ceur-ws.org/Vol-885/#conf> ;
+    ns7:beginsAtDatetime "2012-08-28T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:endsAtDatetime "2012-08-28T00:00:00+00:00"^^xsd:dateTime ;
+    ns4:license "http://choosealicense.com/licenses/no-license/" .
 

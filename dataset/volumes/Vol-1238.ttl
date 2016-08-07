@@ -1,409 +1,58 @@
-@prefix ns1: <http://xmlns.com/foaf/0.1/> .
+@prefix ns1: <http://swrc.ontoware.org/ontology/#> .
 @prefix ns2: <http://www.w3.org/2002/07/owl#> .
-@prefix ns3: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns4: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns5: <http://purl.org/ontology/bibo/#> .
-@prefix ns6: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns3: <http://xmlns.com/foaf/0.1/> .
+@prefix ns4: <http://purl.org/ontology/bibo/#> .
+@prefix ns5: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns6: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns8: <http://purl.org/dc/elements/1.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1238/#AlaniBrown> a ns1:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/AlaniBrown> ;
-    ns1:made <http://ceur-ws.org/Vol-1238/#paper5> ;
-    ns1:name "Alan Brown" .
+<http://ceur-ws.org/Vol-1238/> a ns5:Proceedings ;
+    ns7:issued "2014-09-15T00:00:00+00:00"^^xsd:dateTime ;
+    ns4:presentedAt <http://ceur-ws.org/Vol-1238/#event> ;
+    ns1:editor <http://ceur-ws.org/Vol-1238/#AlexanderiMikroyannidis>,
+        <http://ceur-ws.org/Vol-1238/#FridoliniWild>,
+        <http://ceur-ws.org/Vol-1238/#MichaeliPrilla>,
+        <http://ceur-ws.org/Vol-1238/#MilosiKravcik>,
+        <http://ceur-ws.org/Vol-1238/#ThomasiDanieliUllmann>,
+        <http://ceur-ws.org/Vol-1238/#ViktoriaiPammer> .
 
-<http://ceur-ws.org/Vol-1238/#AmbjorniNaeve> a ns1:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/AmbjorniNaeve> ;
-    ns1:made <http://ceur-ws.org/Vol-1238/#paper2> ;
-    ns1:name "Ambjorn Naeve" .
+<http://ceur-ws.org/Vol-1238/#AlexanderiMikroyannidis> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/AlexanderiMikroyannidis> ;
+    ns3:name "Alexander Mikroyannidis" .
 
-<http://ceur-ws.org/Vol-1238/#AndreasiJanson> a ns1:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/AndreasiJanson> ;
-    ns1:made <http://ceur-ws.org/Vol-1238/#paper3> ;
-    ns1:name "Andreas Janson" .
+<http://ceur-ws.org/Vol-1238/#FridoliniWild> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/FridoliniWild> ;
+    ns3:name "Fridolin Wild" .
 
-<http://ceur-ws.org/Vol-1238/#AngelaiFessl> a ns1:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/AngelaiFessl> ;
-    ns1:made <http://ceur-ws.org/Vol-1238/#paper4> ;
-    ns1:name "Angela Fessl" .
+<http://ceur-ws.org/Vol-1238/#MichaeliPrilla> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/MichaeliPrilla> ;
+    ns3:name "Michael Prilla" .
 
-<http://ceur-ws.org/Vol-1238/#ChristineiMichel> a ns1:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/ChristineiMichel> ;
-    ns1:made <http://ceur-ws.org/Vol-1238/#paper8> ;
-    ns1:name "Christine Michel" .
+<http://ceur-ws.org/Vol-1238/#MilosiKravcik> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/MilosiKravcik> ;
+    ns3:name "Milos Kravcik" .
 
-<http://ceur-ws.org/Vol-1238/#EliseiLavoue> a ns1:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/EliseiLavoue> ;
-    ns1:made <http://ceur-ws.org/Vol-1238/#paper8> ;
-    ns1:name "Elise Lavoue" .
+<http://ceur-ws.org/Vol-1238/#ThomasiDanieliUllmann> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/ThomasiDanieliUllmann> ;
+    ns3:name "Thomas Daniel Ullmann" .
 
-<http://ceur-ws.org/Vol-1238/#ErikiDuval> a ns1:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/ErikiDuval> ;
-    ns1:made <http://ceur-ws.org/Vol-1238/#paper9> ;
-    ns1:name "Erik Duval" .
+<http://ceur-ws.org/Vol-1238/#ViktoriaiPammer> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/ViktoriaiPammer> ;
+    ns3:name "Viktoria Pammer" .
 
-<http://ceur-ws.org/Vol-1238/#ErikiIsaksson> a ns1:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/ErikiIsaksson> ;
-    ns1:made <http://ceur-ws.org/Vol-1238/#paper2> ;
-    ns1:name "Erik Isaksson" .
-
-<http://ceur-ws.org/Vol-1238/#GianluigiiDiiVito> a ns1:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/GianluigiiDiiVito> ;
-    ns1:made <http://ceur-ws.org/Vol-1238/#paper1> ;
-    ns1:name "Gianluigi Di Vito" .
-
-<http://ceur-ws.org/Vol-1238/#GranitiLuzhnica> a ns1:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/GranitiLuzhnica> ;
-    ns1:made <http://ceur-ws.org/Vol-1238/#paper4> ;
-    ns1:name "Granit Luzhnica" .
-
-<http://ceur-ws.org/Vol-1238/#GudruniWesiak> a ns1:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/GudruniWesiak> ;
-    ns1:made <http://ceur-ws.org/Vol-1238/#paper4> ;
-    ns1:name "Gudrun Wesiak" .
-
-<http://ceur-ws.org/Vol-1238/#JaakkoiKarjalainen> a ns1:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/JaakkoiKarjalainen> ;
-    ns1:made <http://ceur-ws.org/Vol-1238/#paper2> ;
-    ns1:name "Jaakko Karjalainen" .
-
-<http://ceur-ws.org/Vol-1238/#JaniMarcoiLeimeister> a ns1:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/JaniMarcoiLeimeister> ;
-    ns1:made <http://ceur-ws.org/Vol-1238/#paper3> ;
-    ns1:name "Jan Marco Leimeister" .
-
-<http://ceur-ws.org/Vol-1238/#JennyiBimrose> a ns1:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/JennyiBimrose> ;
-    ns1:made <http://ceur-ws.org/Vol-1238/#paper5> ;
-    ns1:name "Jenny Bimrose" .
-
-<http://ceur-ws.org/Vol-1238/#JorisiKlerkx> a ns1:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/JorisiKlerkx> ;
-    ns1:made <http://ceur-ws.org/Vol-1238/#paper9> ;
-    ns1:name "Joris Klerkx" .
-
-<http://ceur-ws.org/Vol-1238/#JoseiLuisiSantos> a ns1:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/JoseiLuisiSantos> ;
-    ns1:made <http://ceur-ws.org/Vol-1238/#paper9> ;
-    ns1:name "Jose Luis Santos" .
-
-<http://ceur-ws.org/Vol-1238/#KajiHelin> a ns1:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/KajiHelin> ;
-    ns1:made <http://ceur-ws.org/Vol-1238/#paper2> ;
-    ns1:name "Kaj Helin" .
-
-<http://ceur-ws.org/Vol-1238/#KaterynaiNeulinger> a ns1:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/KaterynaiNeulinger> ;
-    ns1:made <http://ceur-ws.org/Vol-1238/#paper6> ;
-    ns1:name "Kateryna Neulinger" .
-
-<http://ceur-ws.org/Vol-1238/#KatjaiLehmann> a ns1:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/KatjaiLehmann> ;
-    ns1:made <http://ceur-ws.org/Vol-1238/#paper3> ;
-    ns1:name "Katja Lehmann" .
-
-<http://ceur-ws.org/Vol-1238/#MargretiJung> a ns1:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/MargretiJung> ;
-    ns1:made <http://ceur-ws.org/Vol-1238/#paper7> ;
-    ns1:name "Margret Jung" .
-
-<http://ceur-ws.org/Vol-1238/#MaurizioiMegliola> a ns1:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/MaurizioiMegliola> ;
-    ns1:made <http://ceur-ws.org/Vol-1238/#paper1> ;
-    ns1:name "Maurizio Megliola" .
-
-<http://ceur-ws.org/Vol-1238/#MiniJi> a ns1:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/MiniJi> ;
-    ns1:made <http://ceur-ws.org/Vol-1238/#paper8> ;
-    ns1:name "Min Ji" .
-
-<http://ceur-ws.org/Vol-1238/#NilsiFaltin> a ns1:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/NilsiFaltin> ;
-    ns1:made <http://ceur-ws.org/Vol-1238/#paper7> ;
-    ns1:name "Nils Faltin" .
-
-<http://ceur-ws.org/Vol-1238/#OliveriBlunk> a ns1:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/OliveriBlunk> ;
-    ns1:made <http://ceur-ws.org/Vol-1238/#paper5> ;
-    ns1:name "Oliver Blunk" .
-
-<http://ceur-ws.org/Vol-1238/#PeteriScott> a ns1:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/PeteriScott> ;
-    ns1:made <http://ceur-ws.org/Vol-1238/#paper2> ;
-    ns1:name "Peter Scott" .
-
-<http://ceur-ws.org/Vol-1238/#RalfiKlamma> a ns1:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/RalfiKlamma> ;
-    ns1:made <http://ceur-ws.org/Vol-1238/#paper6> ;
-    ns1:name "Ralf Klamma" .
-
-<http://ceur-ws.org/Vol-1238/#RobertoiSanguini> a ns1:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/RobertoiSanguini> ;
-    ns1:made <http://ceur-ws.org/Vol-1238/#paper1> ;
-    ns1:name "Roberto Sanguini" .
-
-<http://ceur-ws.org/Vol-1238/#SebastieniGeorge> a ns1:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/SebastieniGeorge> ;
-    ns1:made <http://ceur-ws.org/Vol-1238/#paper8> ;
-    ns1:name "Sebastien George" .
-
-<http://ceur-ws.org/Vol-1238/#SimoniSchwantzer> a ns1:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/SimoniSchwantzer> ;
-    ns1:made <http://ceur-ws.org/Vol-1238/#paper7> ;
-    ns1:name "Simon Schwantzer" .
-
-<http://ceur-ws.org/Vol-1238/#Sissy-JosefinaiErnst> a ns1:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/Sissy-JosefinaiErnst> ;
-    ns1:made <http://ceur-ws.org/Vol-1238/#paper3> ;
-    ns1:name "Sissy-Josefina Ernst" .
-
-<http://ceur-ws.org/Vol-1238/#SveniCharleer> a ns1:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/SveniCharleer> ;
-    ns1:made <http://ceur-ws.org/Vol-1238/#paper9> ;
-    ns1:name "Sven Charleer" .
-
-<http://ceur-ws.org/Vol-1238/#event> a ns3:WorkshopEvent ;
-    ns3:hasLocation <http://dbpedia.org/resource/Austria> ;
-    ns3:hasPart <http://ceur-ws.org/Vol-1238/#part-ARTEL> ;
-    ns3:isSubEventOf <http://ceur-ws.org/Vol-1238/#conf> ;
-    ns7:beginsAtDatetime "2014-09-16T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:endsAtDatetime "2014-09-16T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:license <http://choosealicense.com/licenses/no-license/> ;
+<http://ceur-ws.org/Vol-1238/#event> a ns5:WorkshopEvent ;
+    ns5:hasLocation <http://dbpedia.org/resource/Austria> ;
+    ns5:hasPart <http://ceur-ws.org/Vol-1238/#part-ws> ;
+    ns5:isSubEventOf <http://ceur-ws.org/Vol-1238/#conf> ;
+    ns6:beginsAtDatetime "2014-09-16T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:endsAtDatetime "2014-09-16T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:license "http://choosealicense.com/licenses/no-license/" ;
     rdfs:seeAlso <http://ceur-ws.org/Vol-1103/#event>,
         <http://ceur-ws.org/Vol-790/#event>,
         <http://ceur-ws.org/Vol-931/#event> .
-
-<http%3A//ceur-ws.org/Vol-1238/%23Editorial> a ns3:SessionEvent ;
-    ns3:partOf <http://ceur-ws.org/Vol-1238/> ;
-    ns6:title "Editorial" .
-
-<http%3A//ceur-ws.org/Vol-1238/%23Shortpapers> a ns3:SessionEvent ;
-    ns3:partOf <http://ceur-ws.org/Vol-1238/> ;
-    ns6:title "Short papers" .
-
-<http://ceur-ws.org/Vol-1238/#PauliLefrere> a ns1:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/PauliLefrere> ;
-    ns1:made <http://ceur-ws.org/Vol-1238/#paper1>,
-        <http://ceur-ws.org/Vol-1238/#paper2> ;
-    ns1:name "Paul Lefrere" .
-
-<http://ceur-ws.org/Vol-1238/#AlexanderiMikroyannidis> a ns1:Person ;
-    ns4:affiliation "" ;
-    ns2:sameAs <http://ceur-ws.org/persons/AlexanderiMikroyannidis> ;
-    ns1:made <http://ceur-ws.org/Vol-1238/#artel14>,
-        <http://ceur-ws.org/Vol-1238/#editorial> ;
-    ns1:name "Alexander Mikroyannidis" .
-
-<http://ceur-ws.org/Vol-1238/#ThomasiDanieliUllmann> a ns1:Person ;
-    ns4:affiliation "" ;
-    ns2:sameAs <http://ceur-ws.org/persons/ThomasiDanieliUllmann> ;
-    ns1:made <http://ceur-ws.org/Vol-1238/#artel14>,
-        <http://ceur-ws.org/Vol-1238/#editorial> ;
-    ns1:name "Thomas Daniel Ullmann" .
-
-<http://ceur-ws.org/Vol-1238/#ViktoriaiPammer> a ns1:Person ;
-    ns4:affiliation "" ;
-    ns2:sameAs <http://ceur-ws.org/persons/ViktoriaiPammer> ;
-    ns1:made <http://ceur-ws.org/Vol-1238/#artel14>,
-        <http://ceur-ws.org/Vol-1238/#editorial> ;
-    ns1:name "Viktoria Pammer" .
-
-<http://ceur-ws.org/Vol-1238/#MichaeliPrilla> a ns1:Person ;
-    ns4:affiliation "" ;
-    ns2:sameAs <http://ceur-ws.org/persons/MichaeliPrilla> ;
-    ns1:made <http://ceur-ws.org/Vol-1238/#artel14>,
-        <http://ceur-ws.org/Vol-1238/#editorial>,
-        <http://ceur-ws.org/Vol-1238/#paper5> ;
-    ns1:name "Michael Prilla" .
-
-<http://ceur-ws.org/Vol-1238/#MilosiKravcik> a ns1:Person ;
-    ns4:affiliation "" ;
-    ns2:sameAs <http://ceur-ws.org/persons/MilosiKravcik> ;
-    ns1:made <http://ceur-ws.org/Vol-1238/#artel14>,
-        <http://ceur-ws.org/Vol-1238/#editorial>,
-        <http://ceur-ws.org/Vol-1238/#paper6> ;
-    ns1:name "Milos Kravcik" .
-
-<http://ceur-ws.org/Vol-1238/#paper4> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1238/> ;
-    ns6:title "Application overlapping user profiles to foster reflective learning at work" ;
-    ns5:endPage 64 ;
-    ns5:numPages 14 ;
-    ns5:section <http%3A//ceur-ws.org/Vol-1238/%23Longpapers> ;
-    ns5:startPage 51 ;
-    ns4:author <http://ceur-ws.org/Vol-1238/#AngelaiFessl>,
-        <http://ceur-ws.org/Vol-1238/#GranitiLuzhnica>,
-        <http://ceur-ws.org/Vol-1238/#GudruniWesiak> .
-
-<http://ceur-ws.org/Vol-1238/#paper6> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1238/> ;
-    ns6:title "Boosting informal workplace learning in small enterprises" ;
-    ns5:endPage 75 ;
-    ns5:numPages 3 ;
-    ns5:section <http%3A//ceur-ws.org/Vol-1238/%23Demopapers> ;
-    ns5:startPage 73 ;
-    ns4:author <http://ceur-ws.org/Vol-1238/#KaterynaiNeulinger>,
-        <http://ceur-ws.org/Vol-1238/#MilosiKravcik>,
-        <http://ceur-ws.org/Vol-1238/#RalfiKlamma> .
-
-<http://ceur-ws.org/Vol-1238/#paper7> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1238/> ;
-    ns6:title "Activity recommendation app - software to evaluate the usefulness of improvement recommendations created in a team" ;
-    ns5:endPage 79 ;
-    ns5:numPages 3 ;
-    ns5:section <http%3A//ceur-ws.org/Vol-1238/%23Demopapers> ;
-    ns5:startPage 77 ;
-    ns4:author <http://ceur-ws.org/Vol-1238/#MargretiJung>,
-        <http://ceur-ws.org/Vol-1238/#NilsiFaltin>,
-        <http://ceur-ws.org/Vol-1238/#SimoniSchwantzer> .
-
-<http%3A//ceur-ws.org/Vol-1238/%23Longpapers> a ns3:SessionEvent ;
-    ns3:partOf <http://ceur-ws.org/Vol-1238/> ;
-    ns6:title "Long papers" .
-
-<http://ceur-ws.org/Vol-1238/#FridoliniWild> a ns1:Person ;
-    ns4:affiliation "" ;
-    ns2:sameAs <http://ceur-ws.org/persons/FridoliniWild> ;
-    ns1:made <http://ceur-ws.org/Vol-1238/#artel14>,
-        <http://ceur-ws.org/Vol-1238/#editorial>,
-        <http://ceur-ws.org/Vol-1238/#paper1>,
-        <http://ceur-ws.org/Vol-1238/#paper2> ;
-    ns1:name "Fridolin Wild" .
-
-<http://ceur-ws.org/Vol-1238/#paper3> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1238/> ;
-    ns6:title "Creating awareness and reflection in a large-scale IS lecture - the application of a peer assessment in a flipped classroom scenario" ;
-    ns5:endPage 50 ;
-    ns5:numPages 16 ;
-    ns5:section <http%3A//ceur-ws.org/Vol-1238/%23Longpapers> ;
-    ns5:startPage 35 ;
-    ns4:author <http://ceur-ws.org/Vol-1238/#AndreasiJanson>,
-        <http://ceur-ws.org/Vol-1238/#JaniMarcoiLeimeister>,
-        <http://ceur-ws.org/Vol-1238/#KatjaiLehmann>,
-        <http://ceur-ws.org/Vol-1238/#Sissy-JosefinaiErnst> .
-
-<http://ceur-ws.org/Vol-1238/#paper5> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1238/> ;
-    ns6:title "Reflection as support for career adaptability: A concept for reflective learning in public administration" ;
-    ns5:endPage 71 ;
-    ns5:numPages 7 ;
-    ns5:section <http%3A//ceur-ws.org/Vol-1238/%23Shortpapers> ;
-    ns5:startPage 65 ;
-    ns4:author <http://ceur-ws.org/Vol-1238/#AlaniBrown>,
-        <http://ceur-ws.org/Vol-1238/#JennyiBimrose>,
-        <http://ceur-ws.org/Vol-1238/#MichaeliPrilla>,
-        <http://ceur-ws.org/Vol-1238/#OliveriBlunk> .
-
-<http://ceur-ws.org/Vol-1238/#paper8> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1238/> ;
-    ns6:title "DDART: An awareness system to favor reflection during project-based learning" ;
-    ns5:endPage 83 ;
-    ns5:numPages 3 ;
-    ns5:section <http%3A//ceur-ws.org/Vol-1238/%23Demopapers> ;
-    ns5:startPage 81 ;
-    ns4:author <http://ceur-ws.org/Vol-1238/#ChristineiMichel>,
-        <http://ceur-ws.org/Vol-1238/#EliseiLavoue>,
-        <http://ceur-ws.org/Vol-1238/#MiniJi>,
-        <http://ceur-ws.org/Vol-1238/#SebastieniGeorge> .
-
-<http://ceur-ws.org/Vol-1238/#paper9> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1238/> ;
-    ns6:title "LARAe: Learning analytics reflection & awareness environment" ;
-    ns5:endPage 87 ;
-    ns5:numPages 3 ;
-    ns5:section <http%3A//ceur-ws.org/Vol-1238/%23Demopapers> ;
-    ns5:startPage 85 ;
-    ns4:author <http://ceur-ws.org/Vol-1238/#ErikiDuval>,
-        <http://ceur-ws.org/Vol-1238/#JorisiKlerkx>,
-        <http://ceur-ws.org/Vol-1238/#JoseiLuisiSantos>,
-        <http://ceur-ws.org/Vol-1238/#SveniCharleer> .
-
-<http%3A//ceur-ws.org/Vol-1238/%23Demopapers> a ns3:SessionEvent ;
-    ns3:partOf <http://ceur-ws.org/Vol-1238/> ;
-    ns6:title "Demo papers" .
-
-<http://ceur-ws.org/Vol-1238/#paper1> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1238/> ;
-    ns6:title "Creating awareness of kinaesthetic learning using the Experience API: current practices, emerging challenges, possible solutions" ;
-    ns5:endPage 22 ;
-    ns5:numPages 12 ;
-    ns5:section <http%3A//ceur-ws.org/Vol-1238/%23Longpapers> ;
-    ns5:startPage 11 ;
-    ns4:author <http://ceur-ws.org/Vol-1238/#FridoliniWild>,
-        <http://ceur-ws.org/Vol-1238/#GianluigiiDiiVito>,
-        <http://ceur-ws.org/Vol-1238/#MaurizioiMegliola>,
-        <http://ceur-ws.org/Vol-1238/#PauliLefrere>,
-        <http://ceur-ws.org/Vol-1238/#RobertoiSanguini> .
-
-<http://ceur-ws.org/Vol-1238/#artel14> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1238/> ;
-    ns6:title "Proceedings of the 4th workshop on awareness and reflection in technology enhanced learning. In conjunction with the 9th European conference on technology enhanced learning: Open learning and teaching in educational communities" ;
-    ns5:endPage 87 ;
-    ns5:numPages 87 ;
-    ns5:section <http%3A//ceur-ws.org/Vol-1238/%23Demopapers> ;
-    ns5:startPage 1 ;
-    ns4:author <http://ceur-ws.org/Vol-1238/#AlexanderiMikroyannidis>,
-        <http://ceur-ws.org/Vol-1238/#FridoliniWild>,
-        <http://ceur-ws.org/Vol-1238/#MichaeliPrilla>,
-        <http://ceur-ws.org/Vol-1238/#MilosiKravcik>,
-        <http://ceur-ws.org/Vol-1238/#ThomasiDanieliUllmann>,
-        <http://ceur-ws.org/Vol-1238/#ViktoriaiPammer> .
-
-<http://ceur-ws.org/Vol-1238/#editorial> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1238/> ;
-    ns6:title "Awareness and reflection in technology enhanced learning" ;
-    ns5:endPage 9 ;
-    ns5:numPages 9 ;
-    ns5:section <http%3A//ceur-ws.org/Vol-1238/%23Editorial> ;
-    ns5:startPage 1 ;
-    ns4:author <http://ceur-ws.org/Vol-1238/#AlexanderiMikroyannidis>,
-        <http://ceur-ws.org/Vol-1238/#FridoliniWild>,
-        <http://ceur-ws.org/Vol-1238/#MichaeliPrilla>,
-        <http://ceur-ws.org/Vol-1238/#MilosiKravcik>,
-        <http://ceur-ws.org/Vol-1238/#ThomasiDanieliUllmann>,
-        <http://ceur-ws.org/Vol-1238/#ViktoriaiPammer> .
-
-<http://ceur-ws.org/Vol-1238/#paper2> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1238/> ;
-    ns6:title "Towards data exchange formats for learning experiences in manufacturing workplaces" ;
-    ns5:endPage 33 ;
-    ns5:numPages 11 ;
-    ns5:section <http%3A//ceur-ws.org/Vol-1238/%23Longpapers> ;
-    ns5:startPage 23 ;
-    ns4:author <http://ceur-ws.org/Vol-1238/#AmbjorniNaeve>,
-        <http://ceur-ws.org/Vol-1238/#ErikiIsaksson>,
-        <http://ceur-ws.org/Vol-1238/#FridoliniWild>,
-        <http://ceur-ws.org/Vol-1238/#JaakkoiKarjalainen>,
-        <http://ceur-ws.org/Vol-1238/#KajiHelin>,
-        <http://ceur-ws.org/Vol-1238/#PauliLefrere>,
-        <http://ceur-ws.org/Vol-1238/#PeteriScott> .
-
-<http://ceur-ws.org/Vol-1238/> a ns3:Proceedings ;
-    ns3:hasPart <http://ceur-ws.org/Vol-1238/#artel14>,
-        <http://ceur-ws.org/Vol-1238/#editorial>,
-        <http://ceur-ws.org/Vol-1238/#paper1>,
-        <http://ceur-ws.org/Vol-1238/#paper2>,
-        <http://ceur-ws.org/Vol-1238/#paper3>,
-        <http://ceur-ws.org/Vol-1238/#paper4>,
-        <http://ceur-ws.org/Vol-1238/#paper5>,
-        <http://ceur-ws.org/Vol-1238/#paper6>,
-        <http://ceur-ws.org/Vol-1238/#paper7>,
-        <http://ceur-ws.org/Vol-1238/#paper8>,
-        <http://ceur-ws.org/Vol-1238/#paper9> ;
-    ns3:hasSession <http%3A//ceur-ws.org/Vol-1238/%23Demopapers>,
-        <http%3A//ceur-ws.org/Vol-1238/%23Editorial>,
-        <http%3A//ceur-ws.org/Vol-1238/%23Longpapers>,
-        <http%3A//ceur-ws.org/Vol-1238/%23Shortpapers> ;
-    ns8:issued "2014-09-15T00:00:00+00:00"^^xsd:dateTime ;
-    ns5:presentedAt <http://ceur-ws.org/Vol-1238/#event> ;
-    ns4:editor <http://ceur-ws.org/Vol-1238/#AlexanderiMikroyannidis>,
-        <http://ceur-ws.org/Vol-1238/#FridoliniWild>,
-        <http://ceur-ws.org/Vol-1238/#MichaeliPrilla>,
-        <http://ceur-ws.org/Vol-1238/#MilosiKravcik>,
-        <http://ceur-ws.org/Vol-1238/#ThomasiDanieliUllmann>,
-        <http://ceur-ws.org/Vol-1238/#ViktoriaiPammer> .
 

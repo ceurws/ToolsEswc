@@ -1,78 +1,42 @@
-@prefix ns1: <http://purl.org/ontology/bibo/#> .
+@prefix ns1: <http://purl.org/NET/c4dm/timeline.owl#> .
 @prefix ns2: <http://xmlns.com/foaf/0.1/> .
-@prefix ns3: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns4: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns3: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns4: <http://purl.org/ontology/bibo/#> .
 @prefix ns5: <http://www.w3.org/2002/07/owl#> .
-@prefix ns6: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns6: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns7: <http://purl.org/dc/elements/1.1/> .
 @prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1415/#AdnaniKraljic> a ns2:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/AdnaniKraljic> ;
-    ns2:made <http://ceur-ws.org/Vol-1415/#CAISE2015DC04> ;
-    ns2:name "Adnan Kraljic" .
-
-<http://ceur-ws.org/Vol-1415/#AmaliKhtira> a ns2:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/AmaliKhtira> ;
-    ns2:made <http://ceur-ws.org/Vol-1415/#CAISE2015DC08> ;
-    ns2:name "Amal Khtira" .
-
-<http://ceur-ws.org/Vol-1415/#GiovanniiMeroni> a ns2:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/GiovanniiMeroni> ;
-    ns2:made <http://ceur-ws.org/Vol-1415/#CAISE2015DC07> ;
-    ns2:name "Giovanni Meroni" .
+<http://ceur-ws.org/Vol-1415/> a ns6:Proceedings ;
+    ns8:issued "2015-08-02T00:00:00+00:00"^^xsd:dateTime ;
+    ns4:presentedAt <http://ceur-ws.org/Vol-1415/#event> ;
+    ns3:editor <http://ceur-ws.org/Vol-1415/#HansiWeigand>,
+        <http://ceur-ws.org/Vol-1415/#PericlesiLoucopoulos>,
+        <http://ceur-ws.org/Vol-1415/#SelminiNurcan> .
 
 <http://ceur-ws.org/Vol-1415/#HansiWeigand> a ns2:Person ;
-    ns6:affiliation "" ;
     ns5:sameAs <http://ceur-ws.org/persons/HansiWeigand> ;
     ns2:name "Hans Weigand" .
 
-<http://ceur-ws.org/Vol-1415/#MarkusiRaab> a ns2:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/MarkusiRaab> ;
-    ns2:made <http://ceur-ws.org/Vol-1415/#CAISE2015DC09> ;
-    ns2:name "Markus Raab" .
-
 <http://ceur-ws.org/Vol-1415/#PericlesiLoucopoulos> a ns2:Person ;
-    ns6:affiliation "" ;
     ns5:sameAs <http://ceur-ws.org/persons/PericlesiLoucopoulos> ;
     ns2:name "Pericles Loucopoulos" .
 
-<http://ceur-ws.org/Vol-1415/#Pierre-AymericiMassec> a ns2:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/Pierre-AymericiMassec> ;
-    ns2:made <http://ceur-ws.org/Vol-1415/#CAISE2015DC06> ;
-    ns2:name "Pierre-Aymeric Massec" .
+<http://ceur-ws.org/Vol-1415/#SelminiNurcan> a ns2:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/SelminiNurcan> ;
+    ns2:name "Selmin Nurcan" .
 
-<http://ceur-ws.org/Vol-1415/#RenataiPetrevskaiNechkoska> a ns2:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/RenataiPetrevskaiNechkoska> ;
-    ns2:made <http://ceur-ws.org/Vol-1415/#CAISE2015DC03> ;
-    ns2:name "Renata Petrevska Nechkoska" .
-
-<http://ceur-ws.org/Vol-1415/#RichardiMrasek> a ns2:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/RichardiMrasek> ;
-    ns2:made <http://ceur-ws.org/Vol-1415/#CAISE2015DC01> ;
-    ns2:name "Richard Mrasek" .
-
-<http://ceur-ws.org/Vol-1415/#SteveniMertens> a ns2:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/SteveniMertens> ;
-    ns2:made <http://ceur-ws.org/Vol-1415/#CAISE2015DC02> ;
-    ns2:name "Steven Mertens" .
-
-<http://ceur-ws.org/Vol-1415/#XuesongiPeng> a ns2:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/XuesongiPeng> ;
-    ns2:made <http://ceur-ws.org/Vol-1415/#CAISE2015DC05> ;
-    ns2:name "Xuesong Peng" .
-
-<http://ceur-ws.org/Vol-1415/#event> a ns3:WorkshopEvent ;
-    ns3:hasLocation <http://dbpedia.org/resource/Sweden> ;
-    ns3:hasPart <http://ceur-ws.org/Vol-1415/#part-CAISE>,
-        <http://ceur-ws.org/Vol-1415/#part-CAISE-DC> ;
-    ns3:isSubEventOf <http://ceur-ws.org/Vol-1415/#conf> ;
-    ns7:beginsAtDatetime "2015-06-11T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:endsAtDatetime "2015-06-12T00:00:00+00:00"^^xsd:dateTime ;
+<http://ceur-ws.org/Vol-1415/#event> a ns6:WorkshopEvent ;
+    ns6:hasLocation <http://dbpedia.org/resource/Sweden> ;
+    ns6:hasPart <http://ceur-ws.org/Vol-1415/#part-ws> ;
+    ns6:isSubEventOf <http://ceur-ws.org/Vol-1415/#conf> ;
+    ns1:beginsAtDatetime "2015-06-11T00:00:00+00:00"^^xsd:dateTime ;
+    ns1:endsAtDatetime "2015-06-12T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:license "http://creativecommons.org/publicdomain/zero/1.0/" ;
     rdfs:seeAlso <http://ceur-ws.org/Vol-1001/#event>,
         <http://ceur-ws.org/Vol-1164/#event>,
         <http://ceur-ws.org/Vol-263/#event>,
@@ -81,125 +45,4 @@
         <http://ceur-ws.org/Vol-593/#event>,
         <http://ceur-ws.org/Vol-731/#event>,
         <http://ceur-ws.org/Vol-863/#event> .
-
-<http://ceur-ws.org/Vol-1415/#metadataiincl.ibibliographicidataipublishediunder> a ns2:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/metadataiincl.ibibliographicidataipublishediunder> ;
-    ns2:made <http://ceur-ws.org/Vol-1415/#paperX1> ;
-    ns2:name "metadata incl. bibliographic data published under" .
-
-<http://ceur-ws.org/Vol-1415/#2015-08-02%3AisubmittedibyiSelminiNurcan> a ns2:Person ;
-    ns6:affiliation "" ;
-    ns5:sameAs <http://ceur-ws.org/persons/2015-08-02%3AisubmittedibyiSelminiNurcan> ;
-    ns2:made <http://ceur-ws.org/Vol-1415/#paperX1> ;
-    ns2:name "2015-08-02: submitted by Selmin Nurcan" .
-
-<http://ceur-ws.org/Vol-1415/#CAISE2015DC01> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1415/> ;
-    ns4:title "Process Verification and Synthesis - The Use Case of Commissioning Processes in the Automobile Industry" ;
-    ns1:endPage 9 ;
-    ns1:numPages 9 ;
-    ns1:section <http%3A//ceur-ws.org/Vol-1415/%23DoctoralPapers> ;
-    ns1:startPage 1 ;
-    ns6:author <http://ceur-ws.org/Vol-1415/#RichardiMrasek> .
-
-<http://ceur-ws.org/Vol-1415/#CAISE2015DC02> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1415/> ;
-    ns4:title "Supporting and Assisting the Execution of Knowledge-Intensive Processes" ;
-    ns1:endPage 18 ;
-    ns1:numPages 9 ;
-    ns1:section <http%3A//ceur-ws.org/Vol-1415/%23DoctoralPapers> ;
-    ns1:startPage 10 ;
-    ns6:author <http://ceur-ws.org/Vol-1415/#SteveniMertens> .
-
-<http://ceur-ws.org/Vol-1415/#CAISE2015DC03> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1415/> ;
-    ns4:title "Tactical Management in Focus: Adaptability and Information Systems" ;
-    ns1:endPage 27 ;
-    ns1:numPages 9 ;
-    ns1:section <http%3A//ceur-ws.org/Vol-1415/%23DoctoralPapers> ;
-    ns1:startPage 19 ;
-    ns6:author <http://ceur-ws.org/Vol-1415/#RenataiPetrevskaiNechkoska> .
-
-<http://ceur-ws.org/Vol-1415/#CAISE2015DC04> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1415/> ;
-    ns4:title "Situational Method Engineering in ERP Implementation Methodologies" ;
-    ns1:endPage 38 ;
-    ns1:numPages 11 ;
-    ns1:section <http%3A//ceur-ws.org/Vol-1415/%23DoctoralPapers> ;
-    ns1:startPage 28 ;
-    ns6:author <http://ceur-ws.org/Vol-1415/#AdnaniKraljic> .
-
-<http://ceur-ws.org/Vol-1415/#CAISE2015DC05> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1415/> ;
-    ns4:title "Data Reduction in Monitored Data" ;
-    ns1:endPage 46 ;
-    ns1:numPages 8 ;
-    ns1:section <http%3A//ceur-ws.org/Vol-1415/%23DoctoralPapers> ;
-    ns1:startPage 39 ;
-    ns6:author <http://ceur-ws.org/Vol-1415/#XuesongiPeng> .
-
-<http://ceur-ws.org/Vol-1415/#CAISE2015DC06> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1415/> ;
-    ns4:title "Enrichment of Business Process Management with External Data" ;
-    ns1:endPage 55 ;
-    ns1:numPages 9 ;
-    ns1:section <http%3A//ceur-ws.org/Vol-1415/%23DoctoralPapers> ;
-    ns1:startPage 47 ;
-    ns6:author <http://ceur-ws.org/Vol-1415/#Pierre-AymericiMassec> .
-
-<http://ceur-ws.org/Vol-1415/#CAISE2015DC07> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1415/> ;
-    ns4:title "Integrating the Internet of Things with Business Process Management: A Process-aware Framework for Smart Objects" ;
-    ns1:endPage 64 ;
-    ns1:numPages 9 ;
-    ns1:section <http%3A//ceur-ws.org/Vol-1415/%23DoctoralPapers> ;
-    ns1:startPage 56 ;
-    ns6:author <http://ceur-ws.org/Vol-1415/#GiovanniiMeroni> .
-
-<http://ceur-ws.org/Vol-1415/#CAISE2015DC08> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1415/> ;
-    ns4:title "Towards a Framework for Feature Deduplication during Software Product Lines Evolution" ;
-    ns1:endPage 73 ;
-    ns1:numPages 9 ;
-    ns1:section <http%3A//ceur-ws.org/Vol-1415/%23DoctoralPapers> ;
-    ns1:startPage 65 ;
-    ns6:author <http://ceur-ws.org/Vol-1415/#AmaliKhtira> .
-
-<http://ceur-ws.org/Vol-1415/#CAISE2015DC09> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1415/> ;
-    ns4:title "Safe Management of Software Configuration" ;
-    ns1:endPage 82 ;
-    ns1:numPages 9 ;
-    ns1:section <http%3A//ceur-ws.org/Vol-1415/%23DoctoralPapers> ;
-    ns1:startPage 74 ;
-    ns6:author <http://ceur-ws.org/Vol-1415/#MarkusiRaab> .
-
-<http://ceur-ws.org/Vol-1415/#paperX1> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1415/> ;
-    ns4:title "The whole Doctoral Consortium proceedings can also be downloaded as a single file (" ;
-    ns1:section <http%3A//ceur-ws.org/Vol-1415/%23DoctoralPapers> ;
-    ns6:author <http://ceur-ws.org/Vol-1415/#2015-08-02%3AisubmittedibyiSelminiNurcan>,
-        <http://ceur-ws.org/Vol-1415/#metadataiincl.ibibliographicidataipublishediunder> .
-
-<http%3A//ceur-ws.org/Vol-1415/%23DoctoralPapers> a ns3:SessionEvent ;
-    ns3:partOf <http://ceur-ws.org/Vol-1415/> ;
-    ns4:title "Doctoral Papers" .
-
-<http://ceur-ws.org/Vol-1415/> a ns3:Proceedings ;
-    ns3:hasPart <http://ceur-ws.org/Vol-1415/#CAISE2015DC01>,
-        <http://ceur-ws.org/Vol-1415/#CAISE2015DC02>,
-        <http://ceur-ws.org/Vol-1415/#CAISE2015DC03>,
-        <http://ceur-ws.org/Vol-1415/#CAISE2015DC04>,
-        <http://ceur-ws.org/Vol-1415/#CAISE2015DC05>,
-        <http://ceur-ws.org/Vol-1415/#CAISE2015DC06>,
-        <http://ceur-ws.org/Vol-1415/#CAISE2015DC07>,
-        <http://ceur-ws.org/Vol-1415/#CAISE2015DC08>,
-        <http://ceur-ws.org/Vol-1415/#CAISE2015DC09>,
-        <http://ceur-ws.org/Vol-1415/#paperX1> ;
-    ns3:hasSession <http%3A//ceur-ws.org/Vol-1415/%23DoctoralPapers> ;
-    ns8:issued "2015-08-02T00:00:00+00:00"^^xsd:dateTime ;
-    ns1:presentedAt <http://ceur-ws.org/Vol-1415/#event> ;
-    ns6:editor <http://ceur-ws.org/Vol-1415/#2015-08-02%3AisubmittedibyiSelminiNurcan>,
-        <http://ceur-ws.org/Vol-1415/#HansiWeigand>,
-        <http://ceur-ws.org/Vol-1415/#PericlesiLoucopoulos> .
 

@@ -1,207 +1,57 @@
-@prefix ns1: <http://purl.org/ontology/bibo/#> .
+@prefix ns1: <http://www.w3.org/2002/07/owl#> .
 @prefix ns2: <http://data.semanticweb.org/ns/swc/ontology/#> .
 @prefix ns3: <http://xmlns.com/foaf/0.1/> .
 @prefix ns4: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns5: <http://www.w3.org/2002/07/owl#> .
-@prefix ns6: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns7: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns5: <http://purl.org/dc/elements/1.1/> .
+@prefix ns6: <http://purl.org/ontology/bibo/#> .
+@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
 @prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1334/#AlaniPerotti> a ns3:Person ;
-    ns4:affiliation "" ;
-    ns5:sameAs <http://ceur-ws.org/persons/AlaniPerotti> ;
-    ns3:name "Alan Perotti" .
-
-<http://ceur-ws.org/Vol-1334/#AlessioiAntonini> a ns3:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/AlessioiAntonini> ;
-    ns3:made <http://ceur-ws.org/Vol-1334/#paper6> ;
-    ns3:name "Alessio Antonini" .
-
-<http://ceur-ws.org/Vol-1334/#AndreaiLoreggia> a ns3:Person ;
-    ns4:affiliation "" ;
-    ns5:sameAs <http://ceur-ws.org/persons/AndreaiLoreggia> ;
-    ns3:name "Andrea Loreggia" .
-
-<http://ceur-ws.org/Vol-1334/#CarmineiDodaro> a ns3:Person ;
-    ns4:affiliation "" ;
-    ns5:sameAs <http://ceur-ws.org/persons/CarmineiDodaro> ;
-    ns3:name "Carmine Dodaro" .
-
-<http://ceur-ws.org/Vol-1334/#FrosinaiKoceva> a ns3:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/FrosinaiKoceva> ;
-    ns3:made <http://ceur-ws.org/Vol-1334/#idea2> ;
-    ns3:name "Frosina Koceva" .
-
-<http://ceur-ws.org/Vol-1334/#GiovanniiAmendola> a ns3:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/GiovanniiAmendola> ;
-    ns3:made <http://ceur-ws.org/Vol-1334/#paper3> ;
-    ns3:name "Giovanni Amendola" .
-
-<http://ceur-ws.org/Vol-1334/#LuigiiDiiCaro> a ns3:Person ;
-    ns4:affiliation "" ;
-    ns5:sameAs <http://ceur-ws.org/persons/LuigiiDiiCaro> ;
-    ns3:name "Luigi Di Caro" .
-
-<http://ceur-ws.org/Vol-1334/#MamouniAbuiHelou> a ns3:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/MamouniAbuiHelou> ;
-    ns3:made <http://ceur-ws.org/Vol-1334/#paper1> ;
-    ns3:name "Mamoun Abu Helou" .
-
-<http://ceur-ws.org/Vol-1334/#ManuelaiSanguinetti> a ns3:Person ;
-    ns4:affiliation "" ;
-    ns5:sameAs <http://ceur-ws.org/persons/ManuelaiSanguinetti> ;
-    ns3:name "Manuela Sanguinetti" .
-
-<http://ceur-ws.org/Vol-1334/#RiccardoiDeiBenedictis> a ns3:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/RiccardoiDeiBenedictis> ;
-    ns3:made <http://ceur-ws.org/Vol-1334/#paper5> ;
-    ns3:name "Riccardo De Benedictis" .
-
-<http://ceur-ws.org/Vol-1334/#RiccardoiZese> a ns3:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/RiccardoiZese> ;
-    ns3:made <http://ceur-ws.org/Vol-1334/#paper2> ;
-    ns3:name "Riccardo Zese" .
-
-<http://ceur-ws.org/Vol-1334/#RobertoiCapobianco> a ns3:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/RobertoiCapobianco> ;
-    ns3:made <http://ceur-ws.org/Vol-1334/#idea3> ;
-    ns3:name "Roberto Capobianco" .
-
-<http://ceur-ws.org/Vol-1334/#RobertoiNavigli> a ns3:Person ;
-    ns4:affiliation "" ;
-    ns5:sameAs <http://ceur-ws.org/persons/RobertoiNavigli> ;
-    ns3:name "Roberto Navigli" .
-
-<http://ceur-ws.org/Vol-1334/#SandeepiKumariE> a ns3:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/SandeepiKumariE> ;
-    ns3:made <http://ceur-ws.org/Vol-1334/#idea1> ;
-    ns3:name "Sandeep Kumar E" .
-
-<http://ceur-ws.org/Vol-1334/#SimoneiMagnolini> a ns3:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/SimoneiMagnolini> ;
-    ns3:made <http://ceur-ws.org/Vol-1334/#paper4> ;
-    ns3:name "Simone Magnolini" .
-
-<http://ceur-ws.org/Vol-1334/#event> a ns2:WorkshopEvent ;
-    ns2:hasLocation <http://dbpedia.org/resource/Italy> ;
-    ns2:hasPart <http://ceur-ws.org/Vol-1334/#part-DWAI> ;
-    ns2:isSubEventOf <http://ceur-ws.org/Vol-1334/#conf> ;
-    ns6:beginsAtDatetime "2014-12-11T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:endsAtDatetime "2014-12-11T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:license <http://choosealicense.com/licenses/no-license/> ;
-    rdfs:seeAlso <http://ceur-ws.org/Vol-1126/#event> .
-
-<http://ceur-ws.org/Vol-1334/#idea1> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1334/> ;
-    ns7:title "Improving WSN Routing and Security with an Artificial Intelligence Approach" ;
-    ns1:endPage 71 ;
-    ns1:numPages 10 ;
-    ns1:section <http%3A//ceur-ws.org/Vol-1334/%23Session2%3AIdeaPapers> ;
-    ns1:startPage 62 ;
-    ns4:author <http://ceur-ws.org/Vol-1334/#SandeepiKumariE> .
-
-<http://ceur-ws.org/Vol-1334/#idea2> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1334/> ;
-    ns7:title "Towards a Knowledge-Based Model for Instructional Design" ;
-    ns1:endPage 81 ;
-    ns1:numPages 10 ;
-    ns1:section <http%3A//ceur-ws.org/Vol-1334/%23Session2%3AIdeaPapers> ;
-    ns1:startPage 72 ;
-    ns4:author <http://ceur-ws.org/Vol-1334/#FrosinaiKoceva> .
-
-<http://ceur-ws.org/Vol-1334/#idea3> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1334/> ;
-    ns7:title "Robust and Incremental Robot Learning by Imitation" ;
-    ns1:endPage 91 ;
-    ns1:numPages 10 ;
-    ns1:section <http%3A//ceur-ws.org/Vol-1334/%23Session2%3AIdeaPapers> ;
-    ns1:startPage 82 ;
-    ns4:author <http://ceur-ws.org/Vol-1334/#RobertoiCapobianco> .
-
-<http://ceur-ws.org/Vol-1334/#paper1> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1334/> ;
-    ns7:title "Towards Constructing Linguistic Ontologies: Mapping Framework and Preliminary Experimental Analysis" ;
-    ns1:endPage 12 ;
-    ns1:numPages 11 ;
-    ns1:section <http%3A//ceur-ws.org/Vol-1334/%23Session1%3AFullpapers> ;
-    ns1:startPage 2 ;
-    ns4:author <http://ceur-ws.org/Vol-1334/#MamouniAbuiHelou> .
-
-<http://ceur-ws.org/Vol-1334/#paper2> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1334/> ;
-    ns7:title "Learning Probabilistic Description Logics Theories" ;
-    ns1:endPage 22 ;
-    ns1:numPages 10 ;
-    ns1:section <http%3A//ceur-ws.org/Vol-1334/%23Session1%3AFullpapers> ;
-    ns1:startPage 13 ;
-    ns4:author <http://ceur-ws.org/Vol-1334/#RiccardoiZese> .
-
-<http://ceur-ws.org/Vol-1334/#paper3> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1334/> ;
-    ns7:title "Dealing with Incoherence in ASP: Split Semi-Equilibrium Semantics" ;
-    ns1:endPage 32 ;
-    ns1:numPages 10 ;
-    ns1:section <http%3A//ceur-ws.org/Vol-1334/%23Session1%3AFullpapers> ;
-    ns1:startPage 23 ;
-    ns4:author <http://ceur-ws.org/Vol-1334/#GiovanniiAmendola> .
-
-<http://ceur-ws.org/Vol-1334/#paper4> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1334/> ;
-    ns7:title "A Survey on Paraphrase Recognition" ;
-    ns1:endPage 41 ;
-    ns1:numPages 9 ;
-    ns1:section <http%3A//ceur-ws.org/Vol-1334/%23Session1%3AFullpapers> ;
-    ns1:startPage 33 ;
-    ns4:author <http://ceur-ws.org/Vol-1334/#SimoneiMagnolini> .
-
-<http://ceur-ws.org/Vol-1334/#paper5> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1334/> ;
-    ns7:title "J-TRE: An Integrated Reasoning Environment and its Application to Timeline-based Planning" ;
-    ns1:endPage 51 ;
-    ns1:numPages 10 ;
-    ns1:section <http%3A//ceur-ws.org/Vol-1334/%23Session1%3AFullpapers> ;
-    ns1:startPage 42 ;
-    ns4:author <http://ceur-ws.org/Vol-1334/#RiccardoiDeiBenedictis> .
-
-<http://ceur-ws.org/Vol-1334/#paper6> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1334/> ;
-    ns7:title "Agent-based Knowledge Management System for Urban Social Space" ;
-    ns1:endPage 61 ;
-    ns1:numPages 10 ;
-    ns1:section <http%3A//ceur-ws.org/Vol-1334/%23Session1%3AFullpapers> ;
-    ns1:startPage 52 ;
-    ns4:author <http://ceur-ws.org/Vol-1334/#AlessioiAntonini> .
-
-<http%3A//ceur-ws.org/Vol-1334/%23Session2%3AIdeaPapers> a ns2:SessionEvent ;
-    ns2:partOf <http://ceur-ws.org/Vol-1334/> ;
-    ns7:title "Session 2: Idea Papers" .
-
-<http%3A//ceur-ws.org/Vol-1334/%23Session1%3AFullpapers> a ns2:SessionEvent ;
-    ns2:partOf <http://ceur-ws.org/Vol-1334/> ;
-    ns7:title "Session 1: Full papers" .
-
 <http://ceur-ws.org/Vol-1334/> a ns2:Proceedings ;
-    ns2:hasPart <http://ceur-ws.org/Vol-1334/#idea1>,
-        <http://ceur-ws.org/Vol-1334/#idea2>,
-        <http://ceur-ws.org/Vol-1334/#idea3>,
-        <http://ceur-ws.org/Vol-1334/#paper1>,
-        <http://ceur-ws.org/Vol-1334/#paper2>,
-        <http://ceur-ws.org/Vol-1334/#paper3>,
-        <http://ceur-ws.org/Vol-1334/#paper4>,
-        <http://ceur-ws.org/Vol-1334/#paper5>,
-        <http://ceur-ws.org/Vol-1334/#paper6> ;
-    ns2:hasSession <http%3A//ceur-ws.org/Vol-1334/%23Session1%3AFullpapers>,
-        <http%3A//ceur-ws.org/Vol-1334/%23Session2%3AIdeaPapers> ;
     ns8:issued "2015-02-18T00:00:00+00:00"^^xsd:dateTime ;
-    ns1:presentedAt <http://ceur-ws.org/Vol-1334/#event> ;
+    ns6:presentedAt <http://ceur-ws.org/Vol-1334/#event> ;
     ns4:editor <http://ceur-ws.org/Vol-1334/#AlaniPerotti>,
         <http://ceur-ws.org/Vol-1334/#AndreaiLoreggia>,
         <http://ceur-ws.org/Vol-1334/#CarmineiDodaro>,
         <http://ceur-ws.org/Vol-1334/#LuigiiDiiCaro>,
         <http://ceur-ws.org/Vol-1334/#ManuelaiSanguinetti>,
         <http://ceur-ws.org/Vol-1334/#RobertoiNavigli> .
+
+<http://ceur-ws.org/Vol-1334/#AlaniPerotti> a ns3:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/AlaniPerotti> ;
+    ns3:name "Alan Perotti" .
+
+<http://ceur-ws.org/Vol-1334/#AndreaiLoreggia> a ns3:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/AndreaiLoreggia> ;
+    ns3:name "Andrea Loreggia" .
+
+<http://ceur-ws.org/Vol-1334/#CarmineiDodaro> a ns3:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/CarmineiDodaro> ;
+    ns3:name "Carmine Dodaro" .
+
+<http://ceur-ws.org/Vol-1334/#LuigiiDiiCaro> a ns3:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/LuigiiDiiCaro> ;
+    ns3:name "Luigi Di Caro" .
+
+<http://ceur-ws.org/Vol-1334/#ManuelaiSanguinetti> a ns3:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/ManuelaiSanguinetti> ;
+    ns3:name "Manuela Sanguinetti" .
+
+<http://ceur-ws.org/Vol-1334/#RobertoiNavigli> a ns3:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/RobertoiNavigli> ;
+    ns3:name "Roberto Navigli" .
+
+<http://ceur-ws.org/Vol-1334/#event> a ns2:WorkshopEvent ;
+    ns2:hasLocation <http://dbpedia.org/resource/Italy> ;
+    ns2:hasPart <http://ceur-ws.org/Vol-1334/#part-DWAI>,
+        <http://ceur-ws.org/Vol-1334/#part-IA> ;
+    ns2:isSubEventOf <http://ceur-ws.org/Vol-1334/#conf> ;
+    ns7:beginsAtDatetime "2014-12-11T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:endsAtDatetime "2014-12-11T00:00:00+00:00"^^xsd:dateTime ;
+    ns5:license "http://choosealicense.com/licenses/no-license/" ;
+    rdfs:seeAlso <http://ceur-ws.org/Vol-1126/#event> .
 

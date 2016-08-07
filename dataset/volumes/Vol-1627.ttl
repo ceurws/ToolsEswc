@@ -1,0 +1,46 @@
+@prefix ns1: <http://www.w3.org/2002/07/owl#> .
+@prefix ns2: <http://xmlns.com/foaf/0.1/> .
+@prefix ns3: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns4: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns5: <http://purl.org/ontology/bibo/#> .
+@prefix ns6: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns8: <http://purl.org/dc/elements/1.1/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://ceur-ws.org/Vol-1627/> a ns3:Proceedings ;
+    ns7:issued "2016-07-25T00:00:00+00:00"^^xsd:dateTime ;
+    ns5:presentedAt <http://ceur-ws.org/Vol-1627/#event> ;
+    ns4:editor <http://ceur-ws.org/Vol-1627/#AndreasiHilbert>,
+        <http://ceur-ws.org/Vol-1627/#DmitryiI.iIgnatov>,
+        <http://ceur-ws.org/Vol-1627/#RadhakrishnaniDelhibabu>,
+        <http://ceur-ws.org/Vol-1627/#RustamiTagiew> .
+
+<http://ceur-ws.org/Vol-1627/#AndreasiHilbert> a ns2:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/AndreasiHilbert> ;
+    ns2:name "Andreas Hilbert" .
+
+<http://ceur-ws.org/Vol-1627/#DmitryiI.iIgnatov> a ns2:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/DmitryiI.iIgnatov> ;
+    ns2:name "Dmitry I. Ignatov" .
+
+<http://ceur-ws.org/Vol-1627/#RadhakrishnaniDelhibabu> a ns2:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/RadhakrishnaniDelhibabu> ;
+    ns2:name "Radhakrishnan Delhibabu" .
+
+<http://ceur-ws.org/Vol-1627/#RustamiTagiew> a ns2:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/RustamiTagiew> ;
+    ns2:name "Rustam Tagiew" .
+
+<http://ceur-ws.org/Vol-1627/#event> a ns3:WorkshopEvent ;
+    ns3:hasLocation <http://dbpedia.org/resource/Russia> ;
+    ns3:hasPart <http://ceur-ws.org/Vol-1627/#part-ws> ;
+    ns3:isSubEventOf <http://ceur-ws.org/Vol-1627/#conf> ;
+    ns6:beginsAtDatetime "2016-07-18T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:endsAtDatetime "2016-07-18T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:license "http://creativecommons.org/publicdomain/zero/1.0/" ;
+    rdfs:seeAlso <http://ceur-ws.org/Vol-870/#event> .
+

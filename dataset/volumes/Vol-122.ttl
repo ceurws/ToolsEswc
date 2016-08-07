@@ -1,11 +1,12 @@
-@prefix ns1: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns1: <http://data.semanticweb.org/ns/swc/ontology/#> .
 @prefix ns2: <http://xmlns.com/foaf/0.1/> .
 @prefix ns3: <http://www.w3.org/2002/07/owl#> .
-@prefix ns4: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns5: <http://purl.org/ontology/bibo/#> .
-@prefix ns6: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns4: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns5: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns6: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns7: <http://purl.org/ontology/bibo/#> .
+@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns9: <http://purl.org/dc/elements/1.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -186,13 +187,14 @@
     ns2:made <http://ceur-ws.org/Vol-122/#paper10> ;
     ns2:name "Yuangui Lei" .
 
-<http://ceur-ws.org/Vol-122/#event> a ns4:WorkshopEvent ;
-    ns4:hasLocation <http://dbpedia.org/resource/United_Kingdom> ;
-    ns4:hasPart <http://ceur-ws.org/Vol-122/#part-AKT> ;
-    ns4:isSubEventOf <http://ceur-ws.org/Vol-122/#conf> ;
-    ns8:beginsAtDatetime "2004-12-08T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:endsAtDatetime "2004-12-08T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:license <http://choosealicense.com/licenses/no-license/> .
+<http://ceur-ws.org/Vol-122/#event> a ns1:WorkshopEvent ;
+    ns1:hasLocation <http://dbpedia.org/resource/United_Kingdom> ;
+    ns1:hasPart <http://ceur-ws.org/Vol-122/#part-AKT>,
+        <http://ceur-ws.org/Vol-122/#part-KMi> ;
+    ns1:isSubEventOf <http://ceur-ws.org/Vol-122/#conf> ;
+    ns6:beginsAtDatetime "2004-12-20T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:endsAtDatetime "2004-12-20T00:00:00+00:00"^^xsd:dateTime ;
+    ns9:license "http://choosealicense.com/licenses/no-license/" .
 
 <http://ceur-ws.org/Vol-122/#BarryiNorton> a ns2:Person ;
     ns3:sameAs <http://ceur-ws.org/persons/BarryiNorton> ;
@@ -224,91 +226,91 @@
         <http://ceur-ws.org/Vol-122/#paper7> ;
     ns2:name "Michael Klein" .
 
-<http://ceur-ws.org/Vol-122/#paper13> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-122/> ;
-    ns6:title "Proposed Functional-Style Extensions for Semantic Web Service Composition" ;
-    ns5:section <http%3A//ceur-ws.org/Vol-122/%23PositionPapers> ;
-    ns1:author <http://ceur-ws.org/Vol-122/#BarryiNorton> .
+<http://ceur-ws.org/Vol-122/#paper13> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-122/> ;
+    ns5:title "Proposed Functional-Style Extensions for Semantic Web Service Composition" ;
+    ns7:section <http://ceur-ws.org/Vol-122/#PositionPapers> ;
+    ns4:author <http://ceur-ws.org/Vol-122/#BarryiNorton> .
 
 <http://ceur-ws.org/Vol-122/#LilianaiCabral> a ns2:Person ;
-    ns1:affiliation "" ;
+    ns4:affiliation "" ;
     ns3:sameAs <http://ceur-ws.org/persons/LilianaiCabral> ;
     ns2:made <http://ceur-ws.org/Vol-122/#paper10>,
         <http://ceur-ws.org/Vol-122/#paper8> ;
     ns2:name "Liliana Cabral" .
 
-<http://ceur-ws.org/Vol-122/#paper14> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-122/> ;
-    ns6:title "The DIANE Service Description" ;
-    ns5:section <http%3A//ceur-ws.org/Vol-122/%23PositionPapers> ;
-    ns1:author <http://ceur-ws.org/Vol-122/#BirgittaiKonig-Ries>,
+<http://ceur-ws.org/Vol-122/#paper14> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-122/> ;
+    ns5:title "The DIANE Service Description" ;
+    ns7:section <http://ceur-ws.org/Vol-122/#PositionPapers> ;
+    ns4:author <http://ceur-ws.org/Vol-122/#BirgittaiKonig-Ries>,
         <http://ceur-ws.org/Vol-122/#MichaeliKlein> .
 
-<http://ceur-ws.org/Vol-122/#paper7> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-122/> ;
-    ns6:title "Integrating Preferences into Service Requests to Automate Service Usage" ;
-    ns5:section <http%3A//ceur-ws.org/Vol-122/%23Fullpapers> ;
-    ns1:author <http://ceur-ws.org/Vol-122/#BirgittaiKonig-Ries>,
+<http://ceur-ws.org/Vol-122/#paper7> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-122/> ;
+    ns5:title "Integrating Preferences into Service Requests to Automate Service Usage" ;
+    ns7:section <http://ceur-ws.org/Vol-122/#Fullpapers> ;
+    ns4:author <http://ceur-ws.org/Vol-122/#BirgittaiKonig-Ries>,
         <http://ceur-ws.org/Vol-122/#MichaeliKlein> .
 
 <http://ceur-ws.org/Vol-122/#EnricoiMotta> a ns2:Person ;
-    ns1:affiliation "" ;
+    ns4:affiliation "" ;
     ns3:sameAs <http://ceur-ws.org/persons/EnricoiMotta> ;
     ns2:made <http://ceur-ws.org/Vol-122/#paper10>,
         <http://ceur-ws.org/Vol-122/#paper3>,
         <http://ceur-ws.org/Vol-122/#paper4> ;
     ns2:name "Enrico Motta" .
 
-<http://ceur-ws.org/Vol-122/#paper2> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-122/> ;
-    ns6:title "Agent-based Mediation in Semantic Web Service Framework" ;
-    ns5:section <http%3A//ceur-ws.org/Vol-122/%23Fullpapers> ;
-    ns1:author <http://ceur-ws.org/Vol-122/#RenatoideiFreitasiBulcaoiNeto>,
+<http://ceur-ws.org/Vol-122/#paper2> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-122/> ;
+    ns5:title "Agent-based Mediation in Semantic Web Service Framework" ;
+    ns7:section <http://ceur-ws.org/Vol-122/#Fullpapers> ;
+    ns4:author <http://ceur-ws.org/Vol-122/#RenatoideiFreitasiBulcaoiNeto>,
         <http://ceur-ws.org/Vol-122/#SteveiBattle>,
         <http://ceur-ws.org/Vol-122/#YathirajiBhatiUdupi> .
 
-<http://ceur-ws.org/Vol-122/#paper3> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-122/> ;
-    ns6:title "Orchestration of Semantic Web Services in IRS-III" ;
-    ns5:section <http%3A//ceur-ws.org/Vol-122/%23Fullpapers> ;
-    ns1:author <http://ceur-ws.org/Vol-122/#EnricoiMotta>,
+<http://ceur-ws.org/Vol-122/#paper3> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-122/> ;
+    ns5:title "Orchestration of Semantic Web Services in IRS-III" ;
+    ns7:section <http://ceur-ws.org/Vol-122/#Fullpapers> ;
+    ns4:author <http://ceur-ws.org/Vol-122/#EnricoiMotta>,
         <http://ceur-ws.org/Vol-122/#JohniDomingue>,
         <http://ceur-ws.org/Vol-122/#RobertoiConfalonieri> .
 
-<http://ceur-ws.org/Vol-122/#paper5> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-122/> ;
-    ns6:title "SWSDesigner: The Graphical Interface of ODESWS" ;
-    ns5:section <http%3A//ceur-ws.org/Vol-122/%23Fullpapers> ;
-    ns1:author <http://ceur-ws.org/Vol-122/#Asunci%C3%B3niG%C3%B3mez-P%C3%A9rez>,
+<http://ceur-ws.org/Vol-122/#paper5> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-122/> ;
+    ns5:title "SWSDesigner: The Graphical Interface of ODESWS" ;
+    ns7:section <http://ceur-ws.org/Vol-122/#Fullpapers> ;
+    ns4:author <http://ceur-ws.org/Vol-122/#Asunci%C3%B3niG%C3%B3mez-P%C3%A9rez>,
         <http://ceur-ws.org/Vol-122/#ManueliLama>,
         <http://ceur-ws.org/Vol-122/#RafaeliGonz%C3%A1lez-Cabero> .
 
-<http://ceur-ws.org/Vol-122/#paper6> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-122/> ;
-    ns6:title "Developing a Service-Oriented Architecture to Harvest Information for the Semantic Web" ;
-    ns5:section <http%3A//ceur-ws.org/Vol-122/%23Fullpapers> ;
-    ns1:author <http://ceur-ws.org/Vol-122/#BarryiNorton>,
+<http://ceur-ws.org/Vol-122/#paper6> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-122/> ;
+    ns5:title "Developing a Service-Oriented Architecture to Harvest Information for the Semantic Web" ;
+    ns7:section <http://ceur-ws.org/Vol-122/#Fullpapers> ;
+    ns4:author <http://ceur-ws.org/Vol-122/#BarryiNorton>,
         <http://ceur-ws.org/Vol-122/#FabioiCiravegna>,
         <http://ceur-ws.org/Vol-122/#SamiChapman> .
 
-<http://ceur-ws.org/Vol-122/#paper8> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-122/> ;
-    ns6:title "OCML Ontologies to XML Schema Lowering" ;
-    ns5:section <http%3A//ceur-ws.org/Vol-122/%23Fullpapers> ;
-    ns1:author <http://ceur-ws.org/Vol-122/#JohniDomingue>,
+<http://ceur-ws.org/Vol-122/#paper8> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-122/> ;
+    ns5:title "OCML Ontologies to XML Schema Lowering" ;
+    ns7:section <http://ceur-ws.org/Vol-122/#Fullpapers> ;
+    ns4:author <http://ceur-ws.org/Vol-122/#JohniDomingue>,
         <http://ceur-ws.org/Vol-122/#LilianaiCabral>,
         <http://ceur-ws.org/Vol-122/#VladiTanasescu> .
 
-<http://ceur-ws.org/Vol-122/#paper9> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-122/> ;
-    ns6:title "Using OWL-S to annotate services with ancillary behaviour" ;
-    ns5:section <http%3A//ceur-ws.org/Vol-122/%23Fullpapers> ;
-    ns1:author <http://ceur-ws.org/Vol-122/#MariusziJacyno>,
+<http://ceur-ws.org/Vol-122/#paper9> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-122/> ;
+    ns5:title "Using OWL-S to annotate services with ancillary behaviour" ;
+    ns7:section <http://ceur-ws.org/Vol-122/#Fullpapers> ;
+    ns4:author <http://ceur-ws.org/Vol-122/#MariusziJacyno>,
         <http://ceur-ws.org/Vol-122/#RoxanaiBelecheanu>,
         <http://ceur-ws.org/Vol-122/#TerryiPayne> .
 
 <http://ceur-ws.org/Vol-122/#JohniDomingue> a ns2:Person ;
-    ns1:affiliation "" ;
+    ns4:affiliation "" ;
     ns3:sameAs <http://ceur-ws.org/persons/JohniDomingue> ;
     ns2:made <http://ceur-ws.org/Vol-122/#paper10>,
         <http://ceur-ws.org/Vol-122/#paper3>,
@@ -316,77 +318,77 @@
         <http://ceur-ws.org/Vol-122/#paper8> ;
     ns2:name "John Domingue" .
 
-<http%3A//ceur-ws.org/Vol-122/%23PositionPapers> a ns4:SessionEvent ;
-    ns4:partOf <http://ceur-ws.org/Vol-122/> ;
-    ns6:title "Position Papers" .
+<http://ceur-ws.org/Vol-122/#PositionPapers> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-122/> ;
+    ns5:title "Position Papers" .
 
-<http://ceur-ws.org/Vol-122/#paper1> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-122/> ;
-    ns6:title "Treating “shimantic web” syndrome with ontologies" ;
-    ns5:section <http%3A//ceur-ws.org/Vol-122/%23Fullpapers> ;
-    ns1:author <http://ceur-ws.org/Vol-122/#CaroleiGoble>,
+<http://ceur-ws.org/Vol-122/#paper1> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-122/> ;
+    ns5:title "Treating “shimantic web” syndrome with ontologies" ;
+    ns7:section <http://ceur-ws.org/Vol-122/#Fullpapers> ;
+    ns4:author <http://ceur-ws.org/Vol-122/#CaroleiGoble>,
         <http://ceur-ws.org/Vol-122/#ChrisiWroe>,
         <http://ceur-ws.org/Vol-122/#DuncaniHull>,
         <http://ceur-ws.org/Vol-122/#PhillipiLord>,
         <http://ceur-ws.org/Vol-122/#RobertiStevens> .
 
-<http://ceur-ws.org/Vol-122/#paper10> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-122/> ;
-    ns6:title "Integration of OWL-S into IRS-III" ;
-    ns5:section <http%3A//ceur-ws.org/Vol-122/%23Fullpapers> ;
-    ns1:author <http://ceur-ws.org/Vol-122/#EnricoiMotta>,
+<http://ceur-ws.org/Vol-122/#paper10> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-122/> ;
+    ns5:title "Integration of OWL-S into IRS-III" ;
+    ns7:section <http://ceur-ws.org/Vol-122/#Fullpapers> ;
+    ns4:author <http://ceur-ws.org/Vol-122/#EnricoiMotta>,
         <http://ceur-ws.org/Vol-122/#FarshadiHakimpour>,
         <http://ceur-ws.org/Vol-122/#JohniDomingue>,
         <http://ceur-ws.org/Vol-122/#LilianaiCabral>,
         <http://ceur-ws.org/Vol-122/#YuanguiiLei> .
 
-<http://ceur-ws.org/Vol-122/#paper11> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-122/> ;
-    ns6:title "MIAKT" ;
-    ns5:section <http%3A//ceur-ws.org/Vol-122/%23PositionPapers> ;
-    ns1:author <http://ceur-ws.org/Vol-122/#BoiHu>,
+<http://ceur-ws.org/Vol-122/#paper11> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-122/> ;
+    ns5:title "MIAKT" ;
+    ns7:section <http://ceur-ws.org/Vol-122/#PositionPapers> ;
+    ns4:author <http://ceur-ws.org/Vol-122/#BoiHu>,
         <http://ceur-ws.org/Vol-122/#DavidiDupplaw>,
         <http://ceur-ws.org/Vol-122/#NigeliShadbolt>,
         <http://ceur-ws.org/Vol-122/#PauliLewis>,
         <http://ceur-ws.org/Vol-122/#SrinandaniDasmahapatra> .
 
-<http://ceur-ws.org/Vol-122/#paper12> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-122/> ;
-    ns6:title "Web Service Support for Scientific Data Analysis" ;
-    ns5:section <http%3A//ceur-ws.org/Vol-122/%23PositionPapers> ;
-    ns1:author <http://ceur-ws.org/Vol-122/#DerekiSleeman>,
+<http://ceur-ws.org/Vol-122/#paper12> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-122/> ;
+    ns5:title "Web Service Support for Scientific Data Analysis" ;
+    ns7:section <http://ceur-ws.org/Vol-122/#PositionPapers> ;
+    ns4:author <http://ceur-ws.org/Vol-122/#DerekiSleeman>,
         <http://ceur-ws.org/Vol-122/#KuniCai>,
         <http://ceur-ws.org/Vol-122/#MartiniJiKollingbaum>,
         <http://ceur-ws.org/Vol-122/#TimothyiJiNorman>,
         <http://ceur-ws.org/Vol-122/#WambertoiVasconcelos> .
 
-<http://ceur-ws.org/Vol-122/#paper4> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-122/> ;
-    ns6:title "Interactive Composition of WSMO-based Semantic Web Services in IRS-III" ;
-    ns5:section <http%3A//ceur-ws.org/Vol-122/%23Fullpapers> ;
-    ns1:author <http://ceur-ws.org/Vol-122/#DenilsoniSell>,
+<http://ceur-ws.org/Vol-122/#paper4> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-122/> ;
+    ns5:title "Interactive Composition of WSMO-based Semantic Web Services in IRS-III" ;
+    ns7:section <http://ceur-ws.org/Vol-122/#Fullpapers> ;
+    ns4:author <http://ceur-ws.org/Vol-122/#DenilsoniSell>,
         <http://ceur-ws.org/Vol-122/#EnricoiMotta>,
         <http://ceur-ws.org/Vol-122/#FarshadiHakimpour>,
         <http://ceur-ws.org/Vol-122/#JohniDomingue>,
         <http://ceur-ws.org/Vol-122/#RobertoiC.iS.iPacheco> .
 
-<http://ceur-ws.org/Vol-122/#paper15> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-122/> ;
-    ns6:title "OntoSearch: a Semantic Web Service to Support the Reuse of Ontologies" ;
-    ns5:section <http%3A//ceur-ws.org/Vol-122/%23PositionPapers> ;
-    ns1:author <http://ceur-ws.org/Vol-122/#AluniPreece>,
+<http://ceur-ws.org/Vol-122/#paper15> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-122/> ;
+    ns5:title "OntoSearch: a Semantic Web Service to Support the Reuse of Ontologies" ;
+    ns7:section <http://ceur-ws.org/Vol-122/#PositionPapers> ;
+    ns4:author <http://ceur-ws.org/Vol-122/#AluniPreece>,
         <http://ceur-ws.org/Vol-122/#CraigiMcKenzie>,
         <http://ceur-ws.org/Vol-122/#DerekiSleeman>,
         <http://ceur-ws.org/Vol-122/#EdwardiThomas>,
         <http://ceur-ws.org/Vol-122/#JoeiWright>,
         <http://ceur-ws.org/Vol-122/#YiiZhang> .
 
-<http%3A//ceur-ws.org/Vol-122/%23Fullpapers> a ns4:SessionEvent ;
-    ns4:partOf <http://ceur-ws.org/Vol-122/> ;
-    ns6:title "Full papers" .
+<http://ceur-ws.org/Vol-122/#Fullpapers> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-122/> ;
+    ns5:title "Full papers" .
 
-<http://ceur-ws.org/Vol-122/> a ns4:Proceedings ;
-    ns4:hasPart <http://ceur-ws.org/Vol-122/#paper1>,
+<http://ceur-ws.org/Vol-122/> a ns1:Proceedings ;
+    ns1:hasPart <http://ceur-ws.org/Vol-122/#paper1>,
         <http://ceur-ws.org/Vol-122/#paper10>,
         <http://ceur-ws.org/Vol-122/#paper11>,
         <http://ceur-ws.org/Vol-122/#paper12>,
@@ -401,11 +403,11 @@
         <http://ceur-ws.org/Vol-122/#paper7>,
         <http://ceur-ws.org/Vol-122/#paper8>,
         <http://ceur-ws.org/Vol-122/#paper9> ;
-    ns4:hasSession <http%3A//ceur-ws.org/Vol-122/%23Fullpapers>,
-        <http%3A//ceur-ws.org/Vol-122/%23PositionPapers> ;
-    ns7:issued "2004-12-21T00:00:00+00:00"^^xsd:dateTime ;
-    ns5:presentedAt <http://ceur-ws.org/Vol-122/#event> ;
-    ns1:editor <http://ceur-ws.org/Vol-122/#EnricoiMotta>,
+    ns1:hasSession <http://ceur-ws.org/Vol-122/#Fullpapers>,
+        <http://ceur-ws.org/Vol-122/#PositionPapers> ;
+    ns8:issued "2004-12-21T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:presentedAt <http://ceur-ws.org/Vol-122/#event> ;
+    ns4:editor <http://ceur-ws.org/Vol-122/#EnricoiMotta>,
         <http://ceur-ws.org/Vol-122/#JohniDomingue>,
         <http://ceur-ws.org/Vol-122/#LilianaiCabral> .
 

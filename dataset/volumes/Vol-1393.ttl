@@ -1,297 +1,40 @@
-@prefix ns1: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns1: <http://xmlns.com/foaf/0.1/> .
 @prefix ns2: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns3: <http://purl.org/ontology/bibo/#> .
-@prefix ns4: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns5: <http://xmlns.com/foaf/0.1/> .
-@prefix ns6: <http://www.w3.org/2002/07/owl#> .
-@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns3: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns4: <http://www.w3.org/2002/07/owl#> .
+@prefix ns5: <http://purl.org/ontology/bibo/#> .
+@prefix ns6: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns7: <http://purl.org/dc/elements/1.1/> .
 @prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1393/#AlexiD.iWade> a ns5:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/AlexiD.iWade> ;
-    ns5:made <http://ceur-ws.org/Vol-1393/#paper-06> ;
-    ns5:name "Alex D. Wade" .
+<http://ceur-ws.org/Vol-1393/> a ns2:Proceedings ;
+    ns8:issued "2015-07-28T00:00:00+00:00"^^xsd:dateTime ;
+    ns5:presentedAt <http://ceur-ws.org/Vol-1393/#event> ;
+    ns3:editor <http://ceur-ws.org/Vol-1393/#JaapiKamps>,
+        <http://ceur-ws.org/Vol-1393/#MartiiA.iHearst>,
+        <http://ceur-ws.org/Vol-1393/#OmariAlonso> .
 
-<http://ceur-ws.org/Vol-1393/#AndreasiRauber> a ns5:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/AndreasiRauber> ;
-    ns5:made <http://ceur-ws.org/Vol-1393/#paper-08> ;
-    ns5:name "Andreas Rauber" .
+<http://ceur-ws.org/Vol-1393/#JaapiKamps> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/JaapiKamps> ;
+    ns1:name "Jaap Kamps" .
 
-<http://ceur-ws.org/Vol-1393/#BiniTong> a ns5:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/BiniTong> ;
-    ns5:made <http://ceur-ws.org/Vol-1393/#paper-11> ;
-    ns5:name "Bin Tong" .
+<http://ceur-ws.org/Vol-1393/#MartiiA.iHearst> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/MartiiA.iHearst> ;
+    ns1:name "Marti A. Hearst" .
 
-<http://ceur-ws.org/Vol-1393/#DouglasiW.iOard> a ns5:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/DouglasiW.iOard> ;
-    ns5:made <http://ceur-ws.org/Vol-1393/#paper-04> ;
-    ns5:name "Douglas W. Oard" .
-
-<http://ceur-ws.org/Vol-1393/#HideyukiiShibuki> a ns5:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/HideyukiiShibuki> ;
-    ns5:made <http://ceur-ws.org/Vol-1393/#paper-09> ;
-    ns5:name "Hideyuki Shibuki" .
-
-<http://ceur-ws.org/Vol-1393/#HiroakiiOzaki> a ns5:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/HiroakiiOzaki> ;
-    ns5:made <http://ceur-ws.org/Vol-1393/#paper-11> ;
-    ns5:name "Hiroaki Ozaki" .
-
-<http://ceur-ws.org/Vol-1393/#JavieriTejadaiC%C3%A1rcamo> a ns5:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/JavieriTejadaiC%C3%A1rcamo> ;
-    ns5:made <http://ceur-ws.org/Vol-1393/#paper-10> ;
-    ns5:name "Javier Tejada Cárcamo" .
-
-<http://ceur-ws.org/Vol-1393/#JulioiSantisteban> a ns5:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/JulioiSantisteban> ;
-    ns5:made <http://ceur-ws.org/Vol-1393/#paper-10> ;
-    ns5:name "Julio Santisteban" .
-
-<http://ceur-ws.org/Vol-1393/#KeshaiShah> a ns5:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/KeshaiShah> ;
-    ns5:made <http://ceur-ws.org/Vol-1393/#paper-07> ;
-    ns5:name "Kesha Shah" .
-
-<http://ceur-ws.org/Vol-1393/#KotaroiSakamoto> a ns5:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/KotaroiSakamoto> ;
-    ns5:made <http://ceur-ws.org/Vol-1393/#paper-09> ;
-    ns5:name "Kotaro Sakamoto" .
-
-<http://ceur-ws.org/Vol-1393/#MahipaliJadeja> a ns5:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/MahipaliJadeja> ;
-    ns5:made <http://ceur-ws.org/Vol-1393/#paper-07> ;
-    ns5:name "Mahipal Jadeja" .
-
-<http://ceur-ws.org/Vol-1393/#MakotoiIwayama> a ns5:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/MakotoiIwayama> ;
-    ns5:made <http://ceur-ws.org/Vol-1393/#paper-11> ;
-    ns5:name "Makoto Iwayama" .
-
-<http://ceur-ws.org/Vol-1393/#MihaiiLupu> a ns5:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/MihaiiLupu> ;
-    ns5:made <http://ceur-ws.org/Vol-1393/#paper-08> ;
-    ns5:name "Mihai Lupu" .
-
-<http://ceur-ws.org/Vol-1393/#NorikoiKando> a ns5:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/NorikoiKando> ;
-    ns5:made <http://ceur-ws.org/Vol-1393/#paper-09> ;
-    ns5:name "Noriko Kando" .
-
-<http://ceur-ws.org/Vol-1393/#RoseiMarieiPhilip> a ns5:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/RoseiMarieiPhilip> ;
-    ns5:made <http://ceur-ws.org/Vol-1393/#paper-05> ;
-    ns5:name "Rose Marie Philip" .
-
-<http://ceur-ws.org/Vol-1393/#SerwahiSabetghadam> a ns5:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/SerwahiSabetghadam> ;
-    ns5:made <http://ceur-ws.org/Vol-1393/#paper-08> ;
-    ns5:name "Serwah Sabetghadam" .
-
-<http://ceur-ws.org/Vol-1393/#SweeiLim> a ns5:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/SweeiLim> ;
-    ns5:made <http://ceur-ws.org/Vol-1393/#paper-03> ;
-    ns5:name "Swee Lim" .
-
-<http://ceur-ws.org/Vol-1393/#TatsunoriiMori> a ns5:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/TatsunoriiMori> ;
-    ns5:made <http://ceur-ws.org/Vol-1393/#paper-09> ;
-    ns5:name "Tatsunori Mori" .
-
-<http://ceur-ws.org/Vol-1393/#ToshihikoiYanase> a ns5:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/ToshihikoiYanase> ;
-    ns5:made <http://ceur-ws.org/Vol-1393/#paper-11> ;
-    ns5:name "Toshihiko Yanase" .
-
-<http://ceur-ws.org/Vol-1393/#XiaozhongiLiu> a ns5:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/XiaozhongiLiu> ;
-    ns5:made <http://ceur-ws.org/Vol-1393/#paper-12> ;
-    ns5:name "Xiaozhong Liu" .
-
-<http://ceur-ws.org/Vol-1393/#YingyingiYu> a ns5:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/YingyingiYu> ;
-    ns5:made <http://ceur-ws.org/Vol-1393/#paper-12> ;
-    ns5:name "Yingying Yu" .
-
-<http://ceur-ws.org/Vol-1393/#ZhuoreniJiang> a ns5:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/ZhuoreniJiang> ;
-    ns5:made <http://ceur-ws.org/Vol-1393/#paper-12> ;
-    ns5:name "Zhuoren Jiang" .
+<http://ceur-ws.org/Vol-1393/#OmariAlonso> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/OmariAlonso> ;
+    ns1:name "Omar Alonso" .
 
 <http://ceur-ws.org/Vol-1393/#event> a ns2:WorkshopEvent ;
     ns2:hasLocation <http://dbpedia.org/resource/Chile> ;
-    ns2:hasPart <http://ceur-ws.org/Vol-1393/#part-GSB> ;
+    ns2:hasPart <http://ceur-ws.org/Vol-1393/#part-ws> ;
     ns2:isSubEventOf <http://ceur-ws.org/Vol-1393/#conf> ;
-    ns7:beginsAtDatetime "2015-08-13T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:endsAtDatetime "2015-08-13T00:00:00+00:00"^^xsd:dateTime .
-
-<http%3A//ceur-ws.org/Vol-1393/%23Session2%3AOverviewPaper> a ns2:SessionEvent ;
-    ns2:partOf <http://ceur-ws.org/Vol-1393/> ;
-    ns1:title "Session 2: Overview Paper" .
-
-<http://ceur-ws.org/Vol-1393/#JaapiKamps> a ns5:Person ;
-    ns3:place <http://dbpedia.org/resource/Kingdom_of_the_Netherlands> ;
-    ns4:affiliation "University of Amsterdam" ;
-    ns6:sameAs <http://ceur-ws.org/persons/JaapiKamps> ;
-    ns5:made <http://ceur-ws.org/Vol-1393/#paper-02> ;
-    ns5:name "Jaap Kamps" .
-
-<http://ceur-ws.org/Vol-1393/#MartiiA.iHearst> a ns5:Person ;
-    ns3:place <http://dbpedia.org/resource/United_States> ;
-    ns4:affiliation "UC Berkeley" ;
-    ns6:sameAs <http://ceur-ws.org/persons/MartiiA.iHearst> ;
-    ns5:made <http://ceur-ws.org/Vol-1393/#paper-02> ;
-    ns5:name "Marti A. Hearst" .
-
-<http://ceur-ws.org/Vol-1393/#OmariAlonso> a ns5:Person ;
-    ns3:place <http://dbpedia.org/resource/United_States> ;
-    ns4:affiliation "Microsoft" ;
-    ns6:sameAs <http://ceur-ws.org/persons/OmariAlonso> ;
-    ns5:made <http://ceur-ws.org/Vol-1393/#paper-02> ;
-    ns5:name "Omar Alonso" .
-
-<http://ceur-ws.org/Vol-1393/#paper-03> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1393/> ;
-    ns1:title "Graph Search at LinkedIn" ;
-    ns3:endPage 5 ;
-    ns3:numPages 1 ;
-    ns3:section <http%3A//ceur-ws.org/Vol-1393/%23Session3%3AInvitedPapers> ;
-    ns3:startPage 5 ;
-    ns4:author <http://ceur-ws.org/Vol-1393/#SweeiLim> .
-
-<http://ceur-ws.org/Vol-1393/#paper-04> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1393/> ;
-    ns1:title "Good Uses for Crummy Knowledge Graphs" ;
-    ns3:endPage 6 ;
-    ns3:numPages 1 ;
-    ns3:section <http%3A//ceur-ws.org/Vol-1393/%23Session3%3AInvitedPapers> ;
-    ns3:startPage 6 ;
-    ns4:author <http://ceur-ws.org/Vol-1393/#DouglasiW.iOard> .
-
-<http://ceur-ws.org/Vol-1393/#paper-05> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1393/> ;
-    ns1:title "Personalized Post Search at Facebook" ;
-    ns3:endPage 7 ;
-    ns3:numPages 1 ;
-    ns3:section <http%3A//ceur-ws.org/Vol-1393/%23Session3%3AInvitedPapers> ;
-    ns3:startPage 7 ;
-    ns4:author <http://ceur-ws.org/Vol-1393/#RoseiMarieiPhilip> .
-
-<http://ceur-ws.org/Vol-1393/#paper-06> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1393/> ;
-    ns1:title "Overview of Microsoft Academic Graph" ;
-    ns3:endPage 8 ;
-    ns3:numPages 1 ;
-    ns3:section <http%3A//ceur-ws.org/Vol-1393/%23Session3%3AInvitedPapers> ;
-    ns3:startPage 8 ;
-    ns4:author <http://ceur-ws.org/Vol-1393/#AlexiD.iWade> .
-
-<http://ceur-ws.org/Vol-1393/#paper-07> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1393/> ;
-    ns1:title "Tree-Map: A Visualization Tool for Large Data" ;
-    ns3:endPage 13 ;
-    ns3:numPages 5 ;
-    ns3:section <http%3A//ceur-ws.org/Vol-1393/%23Session4%3AContributedPapers> ;
-    ns3:startPage 9 ;
-    ns4:author <http://ceur-ws.org/Vol-1393/#KeshaiShah>,
-        <http://ceur-ws.org/Vol-1393/#MahipaliJadeja> .
-
-<http://ceur-ws.org/Vol-1393/#paper-10> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1393/> ;
-    ns1:title "Unilateral Jaccard Similarity Coefficient" ;
-    ns3:endPage 27 ;
-    ns3:numPages 5 ;
-    ns3:section <http%3A//ceur-ws.org/Vol-1393/%23Session4%3AContributedPapers> ;
-    ns3:startPage 23 ;
-    ns4:author <http://ceur-ws.org/Vol-1393/#JavieriTejadaiC%C3%A1rcamo>,
-        <http://ceur-ws.org/Vol-1393/#JulioiSantisteban> .
-
-<http://ceur-ws.org/Vol-1393/#paper-02> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1393/> ;
-    ns1:title "Overview of Graph Search and Beyond" ;
-    ns3:endPage 4 ;
-    ns3:numPages 4 ;
-    ns3:section <http%3A//ceur-ws.org/Vol-1393/%23Session2%3AOverviewPaper> ;
-    ns3:startPage 1 ;
-    ns4:author <http://ceur-ws.org/Vol-1393/#JaapiKamps>,
-        <http://ceur-ws.org/Vol-1393/#MartiiA.iHearst>,
-        <http://ceur-ws.org/Vol-1393/#OmariAlonso> .
-
-<http://ceur-ws.org/Vol-1393/#paper-08> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1393/> ;
-    ns1:title "Leveraging Metropolis-Hastings Algorithm on Graph-based Model for Multimodal IR" ;
-    ns3:endPage 18 ;
-    ns3:numPages 5 ;
-    ns3:section <http%3A//ceur-ws.org/Vol-1393/%23Session4%3AContributedPapers> ;
-    ns3:startPage 14 ;
-    ns4:author <http://ceur-ws.org/Vol-1393/#AndreasiRauber>,
-        <http://ceur-ws.org/Vol-1393/#MihaiiLupu>,
-        <http://ceur-ws.org/Vol-1393/#SerwahiSabetghadam> .
-
-<http://ceur-ws.org/Vol-1393/#paper-12> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1393/> ;
-    ns1:title "Random Walk and Feedback on Scholarly Network" ;
-    ns3:endPage 37 ;
-    ns3:numPages 5 ;
-    ns3:section <http%3A//ceur-ws.org/Vol-1393/%23Session4%3AContributedPapers> ;
-    ns3:startPage 33 ;
-    ns4:author <http://ceur-ws.org/Vol-1393/#XiaozhongiLiu>,
-        <http://ceur-ws.org/Vol-1393/#YingyingiYu>,
-        <http://ceur-ws.org/Vol-1393/#ZhuoreniJiang> .
-
-<http%3A//ceur-ws.org/Vol-1393/%23Session3%3AInvitedPapers> a ns2:SessionEvent ;
-    ns2:partOf <http://ceur-ws.org/Vol-1393/> ;
-    ns1:title "Session 3: Invited Papers" .
-
-<http://ceur-ws.org/Vol-1393/#paper-09> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1393/> ;
-    ns1:title "Fusion of Heterogeneous Information in Graph-Based Ranking for Query-Biased Summarization" ;
-    ns3:endPage 22 ;
-    ns3:numPages 4 ;
-    ns3:section <http%3A//ceur-ws.org/Vol-1393/%23Session4%3AContributedPapers> ;
-    ns3:startPage 19 ;
-    ns4:author <http://ceur-ws.org/Vol-1393/#HideyukiiShibuki>,
-        <http://ceur-ws.org/Vol-1393/#KotaroiSakamoto>,
-        <http://ceur-ws.org/Vol-1393/#NorikoiKando>,
-        <http://ceur-ws.org/Vol-1393/#TatsunoriiMori> .
-
-<http://ceur-ws.org/Vol-1393/#paper-11> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1393/> ;
-    ns1:title "Information Retrieval Boosted by Category for Troubleshooting Search System" ;
-    ns3:endPage 32 ;
-    ns3:numPages 5 ;
-    ns3:section <http%3A//ceur-ws.org/Vol-1393/%23Session4%3AContributedPapers> ;
-    ns3:startPage 28 ;
-    ns4:author <http://ceur-ws.org/Vol-1393/#BiniTong>,
-        <http://ceur-ws.org/Vol-1393/#HiroakiiOzaki>,
-        <http://ceur-ws.org/Vol-1393/#MakotoiIwayama>,
-        <http://ceur-ws.org/Vol-1393/#ToshihikoiYanase> .
-
-<http%3A//ceur-ws.org/Vol-1393/%23Session4%3AContributedPapers> a ns2:SessionEvent ;
-    ns2:partOf <http://ceur-ws.org/Vol-1393/> ;
-    ns1:title "Session 4: Contributed Papers" .
-
-<http://ceur-ws.org/Vol-1393/> a ns2:Proceedings ;
-    ns2:hasPart <http://ceur-ws.org/Vol-1393/#paper-02>,
-        <http://ceur-ws.org/Vol-1393/#paper-03>,
-        <http://ceur-ws.org/Vol-1393/#paper-04>,
-        <http://ceur-ws.org/Vol-1393/#paper-05>,
-        <http://ceur-ws.org/Vol-1393/#paper-06>,
-        <http://ceur-ws.org/Vol-1393/#paper-07>,
-        <http://ceur-ws.org/Vol-1393/#paper-08>,
-        <http://ceur-ws.org/Vol-1393/#paper-09>,
-        <http://ceur-ws.org/Vol-1393/#paper-10>,
-        <http://ceur-ws.org/Vol-1393/#paper-11>,
-        <http://ceur-ws.org/Vol-1393/#paper-12> ;
-    ns2:hasSession <http%3A//ceur-ws.org/Vol-1393/%23Session2%3AOverviewPaper>,
-        <http%3A//ceur-ws.org/Vol-1393/%23Session3%3AInvitedPapers>,
-        <http%3A//ceur-ws.org/Vol-1393/%23Session4%3AContributedPapers> ;
-    ns8:issued "2015-07-28T00:00:00+00:00"^^xsd:dateTime ;
-    ns3:presentedAt <http://ceur-ws.org/Vol-1393/#event> ;
-    ns4:editor <http://ceur-ws.org/Vol-1393/#JaapiKamps>,
-        <http://ceur-ws.org/Vol-1393/#MartiiA.iHearst>,
-        <http://ceur-ws.org/Vol-1393/#OmariAlonso> .
+    ns6:beginsAtDatetime "2015-08-13T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:endsAtDatetime "2015-08-13T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:license "http://creativecommons.org/publicdomain/zero/1.0/" .
 

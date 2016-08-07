@@ -1,0 +1,48 @@
+@prefix ns1: <http://www.w3.org/2002/07/owl#> .
+@prefix ns2: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns3: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns4: <http://purl.org/dc/elements/1.1/> .
+@prefix ns5: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns6: <http://purl.org/ontology/bibo/#> .
+@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns8: <http://xmlns.com/foaf/0.1/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://ceur-ws.org/Vol-1650/> a ns2:Proceedings ;
+    ns7:issued "2016-08-02T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:presentedAt <http://ceur-ws.org/Vol-1650/#event> ;
+    ns5:editor <http://ceur-ws.org/Vol-1650/#DietrichiRebholz-Schuhmann>,
+        <http://ceur-ws.org/Vol-1650/#FabioiRinaldi>,
+        <http://ceur-ws.org/Vol-1650/#GoraniNenadic>,
+        <http://ceur-ws.org/Vol-1650/#MarianaiNeves> .
+
+<http://ceur-ws.org/Vol-1650/#DietrichiRebholz-Schuhmann> a ns8:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/DietrichiRebholz-Schuhmann> ;
+    ns8:name "Dietrich Rebholz-Schuhmann" .
+
+<http://ceur-ws.org/Vol-1650/#FabioiRinaldi> a ns8:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/FabioiRinaldi> ;
+    ns8:name "Fabio Rinaldi" .
+
+<http://ceur-ws.org/Vol-1650/#GoraniNenadic> a ns8:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/GoraniNenadic> ;
+    ns8:name "Goran Nenadic" .
+
+<http://ceur-ws.org/Vol-1650/#MarianaiNeves> a ns8:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/MarianaiNeves> ;
+    ns8:name "Mariana Neves" .
+
+<http://ceur-ws.org/Vol-1650/#event> a ns2:WorkshopEvent ;
+    ns2:hasLocation <http://dbpedia.org/resource/Germany> ;
+    ns2:hasPart <http://ceur-ws.org/Vol-1650/#part-ws> ;
+    ns2:isSubEventOf <http://ceur-ws.org/Vol-1650/#conf> ;
+    ns3:beginsAtDatetime "2016-08-04T00:00:00+00:00"^^xsd:dateTime ;
+    ns3:endsAtDatetime "2016-08-05T00:00:00+00:00"^^xsd:dateTime ;
+    ns4:license "http://creativecommons.org/publicdomain/zero/1.0/" ;
+    rdfs:seeAlso <http://ceur-ws.org/Vol-148/#event>,
+        <http://ceur-ws.org/Vol-177/#event>,
+        <http://ceur-ws.org/Vol-714/#event> .
+

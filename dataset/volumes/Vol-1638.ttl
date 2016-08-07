@@ -1,0 +1,61 @@
+@prefix ns1: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns2: <http://xmlns.com/foaf/0.1/> .
+@prefix ns3: <http://www.w3.org/2002/07/owl#> .
+@prefix ns4: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns5: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns6: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns7: <http://purl.org/dc/elements/1.1/> .
+@prefix ns8: <http://purl.org/ontology/bibo/#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://ceur-ws.org/Vol-1638/> a ns5:Proceedings ;
+    ns6:issued "2016-08-02T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:presentedAt <http://ceur-ws.org/Vol-1638/#event> ;
+    ns1:editor <http://ceur-ws.org/Vol-1638/#DenisiV.iKudryashov>,
+        <http://ceur-ws.org/Vol-1638/#NikolayiL.iKazanskiy>,
+        <http://ceur-ws.org/Vol-1638/#RomaniV.iSkidanov>,
+        <http://ceur-ws.org/Vol-1638/#SergeyiB.iPopov>,
+        <http://ceur-ws.org/Vol-1638/#VladimiriA.iFursov>,
+        <http://ceur-ws.org/Vol-1638/#VladimiriA.iSobolev>,
+        <http://ceur-ws.org/Vol-1638/#VladislaviV.iSergeev> .
+
+<http://ceur-ws.org/Vol-1638/#DenisiV.iKudryashov> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/DenisiV.iKudryashov> ;
+    ns2:name "Denis V. Kudryashov" .
+
+<http://ceur-ws.org/Vol-1638/#NikolayiL.iKazanskiy> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/NikolayiL.iKazanskiy> ;
+    ns2:name "Nikolay L. Kazanskiy" .
+
+<http://ceur-ws.org/Vol-1638/#RomaniV.iSkidanov> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/RomaniV.iSkidanov> ;
+    ns2:name "Roman V. Skidanov" .
+
+<http://ceur-ws.org/Vol-1638/#SergeyiB.iPopov> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/SergeyiB.iPopov> ;
+    ns2:name "Sergey B. Popov" .
+
+<http://ceur-ws.org/Vol-1638/#VladimiriA.iFursov> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/VladimiriA.iFursov> ;
+    ns2:name "Vladimir A. Fursov" .
+
+<http://ceur-ws.org/Vol-1638/#VladimiriA.iSobolev> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/VladimiriA.iSobolev> ;
+    ns2:name "Vladimir A. Sobolev" .
+
+<http://ceur-ws.org/Vol-1638/#VladislaviV.iSergeev> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/VladislaviV.iSergeev> ;
+    ns2:name "Vladislav V. Sergeev" .
+
+<http://ceur-ws.org/Vol-1638/#event> a ns5:WorkshopEvent ;
+    ns5:hasLocation <http://dbpedia.org/resource/Russia> ;
+    ns5:hasPart <http://ceur-ws.org/Vol-1638/#part-ws> ;
+    ns5:isSubEventOf <http://ceur-ws.org/Vol-1638/#conf> ;
+    ns4:beginsAtDatetime "2016-05-17T00:00:00+00:00"^^xsd:dateTime ;
+    ns4:endsAtDatetime "2016-05-19T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:license "http://creativecommons.org/publicdomain/zero/1.0/" ;
+    rdfs:seeAlso <http://ceur-ws.org/Vol-1490/#event> .
+

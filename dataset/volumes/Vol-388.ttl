@@ -1,11 +1,12 @@
-@prefix ns1: <http://purl.org/ontology/bibo/#> .
+@prefix ns1: <http://swrc.ontoware.org/ontology/#> .
 @prefix ns2: <http://xmlns.com/foaf/0.1/> .
 @prefix ns3: <http://data.semanticweb.org/ns/swc/ontology/#> .
 @prefix ns4: <http://www.w3.org/2002/07/owl#> .
-@prefix ns5: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns6: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns5: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns6: <http://purl.org/ontology/bibo/#> .
 @prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns8: <http://purl.org/dc/elements/1.1/> .
+@prefix ns9: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -127,7 +128,7 @@
     ns2:name "Manuel Benito" .
 
 <http://ceur-ws.org/Vol-388/#MarcoiKalz> a ns2:Person ;
-    ns5:affiliation "" ;
+    ns1:affiliation "" ;
     ns4:sameAs <http://ceur-ws.org/persons/MarcoiKalz> ;
     ns2:name "Marco Kalz" .
 
@@ -200,9 +201,9 @@
     ns3:hasLocation <http://dbpedia.org/resource/Netherlands> ;
     ns3:hasPart <http://ceur-ws.org/Vol-388/#part-MUPPLE> ;
     ns3:isSubEventOf <http://ceur-ws.org/Vol-388/#conf> ;
-    ns7:beginsAtDatetime "2008-09-18T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:endsAtDatetime "2008-09-19T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:license <http://choosealicense.com/licenses/no-license/> .
+    ns7:beginsAtDatetime "2008-09-24T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:endsAtDatetime "2008-09-24T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:license "http://choosealicense.com/licenses/no-license/" .
 
 <http://ceur-ws.org/Vol-388/#FelixiM%EF%BF%BDdritscher> a ns2:Person ;
     ns4:sameAs <http://ceur-ws.org/persons/FelixiM%EF%BF%BDdritscher> ;
@@ -211,19 +212,19 @@
     ns2:name "Felix M�dritscher" .
 
 <http://ceur-ws.org/Vol-388/#MatthiasiPalm> a ns2:Person ;
-    ns5:affiliation "�r" ;
+    ns1:affiliation "�r" ;
     ns4:sameAs <http://ceur-ws.org/persons/MatthiasiPalm> ;
     ns2:made <http://ceur-ws.org/Vol-388/#ebner> ;
     ns2:name "Matthias Palm" .
 
 <http://ceur-ws.org/Vol-388/#vuorikari> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-388/> ;
-    ns6:title "A case study on teachers' use of social tagging tools to create collections of resources - and how to consolidate them" ;
-    ns1:section <http%3A//ceur-ws.org/Vol-388/%23Preface> ;
-    ns5:author <http://ceur-ws.org/Vol-388/#RiinaiVuorikari> .
+    ns5:title "A case study on teachers' use of social tagging tools to create collections of resources - and how to consolidate them" ;
+    ns6:section <http://ceur-ws.org/Vol-388/#Preface> ;
+    ns1:author <http://ceur-ws.org/Vol-388/#RiinaiVuorikari> .
 
 <http://ceur-ws.org/Vol-388/#FridoliniWild> a ns2:Person ;
-    ns5:affiliation "" ;
+    ns1:affiliation "" ;
     ns4:sameAs <http://ceur-ws.org/persons/FridoliniWild> ;
     ns2:made <http://ceur-ws.org/Vol-388/#moedritscher>,
         <http://ceur-ws.org/Vol-388/#soylu> ;
@@ -231,83 +232,83 @@
 
 <http://ceur-ws.org/Vol-388/#ebner> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-388/> ;
-    ns6:title "A Mashup-friendly Resource and Metadata Management" ;
-    ns1:section <http%3A//ceur-ws.org/Vol-388/%23Preface> ;
-    ns5:author <http://ceur-ws.org/Vol-388/#HannesiEbner>,
+    ns5:title "A Mashup-friendly Resource and Metadata Management" ;
+    ns6:section <http://ceur-ws.org/Vol-388/#Preface> ;
+    ns1:author <http://ceur-ws.org/Vol-388/#HannesiEbner>,
         <http://ceur-ws.org/Vol-388/#MatthiasiPalm> .
 
 <http://ceur-ws.org/Vol-388/#sire> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-388/> ;
-    ns6:title "Increasing Widgets Interoperability at the Portal Level" ;
-    ns1:section <http%3A//ceur-ws.org/Vol-388/%23Preface> ;
-    ns5:author <http://ceur-ws.org/Vol-388/#AlainiVagner>,
+    ns5:title "Increasing Widgets Interoperability at the Portal Level" ;
+    ns6:section <http://ceur-ws.org/Vol-388/#Preface> ;
+    ns1:author <http://ceur-ws.org/Vol-388/#AlainiVagner>,
         <http://ceur-ws.org/Vol-388/#StephaneiSire> .
 
 <http://ceur-ws.org/Vol-388/#moedritscher> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-388/> ;
-    ns6:title "Language Design for a Personal Learning Environment Design Language" ;
-    ns1:section <http%3A//ceur-ws.org/Vol-388/%23Preface> ;
-    ns5:author <http://ceur-ws.org/Vol-388/#FelixiM%EF%BF%BDdritscher>,
+    ns5:title "Language Design for a Personal Learning Environment Design Language" ;
+    ns6:section <http://ceur-ws.org/Vol-388/#Preface> ;
+    ns1:author <http://ceur-ws.org/Vol-388/#FelixiM%EF%BF%BDdritscher>,
         <http://ceur-ws.org/Vol-388/#FridoliniWild>,
         <http://ceur-ws.org/Vol-388/#SteinniSigurdarson> .
 
 <http://ceur-ws.org/Vol-388/#weber> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-388/> ;
-    ns6:title "Investigating the Suitability of Mashups for Informal Learning and Personal Knowledge Management" ;
-    ns1:section <http%3A//ceur-ws.org/Vol-388/%23Preface> ;
-    ns5:author <http://ceur-ws.org/Vol-388/#EriciRas>,
+    ns5:title "Investigating the Suitability of Mashups for Informal Learning and Personal Knowledge Management" ;
+    ns6:section <http://ceur-ws.org/Vol-388/#Preface> ;
+    ns1:author <http://ceur-ws.org/Vol-388/#EriciRas>,
         <http://ceur-ws.org/Vol-388/#LudgeriThomas>,
         <http://ceur-ws.org/Vol-388/#SebastianiWeber> .
 
 <http://ceur-ws.org/Vol-388/#wilson> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-388/> ;
-    ns6:title "Distributing education services to personal and institutional systems using Widgets" ;
-    ns1:section <http%3A//ceur-ws.org/Vol-388/%23Preface> ;
-    ns5:author <http://ceur-ws.org/Vol-388/#DaiiGriffiths>,
+    ns5:title "Distributing education services to personal and institutional systems using Widgets" ;
+    ns6:section <http://ceur-ws.org/Vol-388/#Preface> ;
+    ns1:author <http://ceur-ws.org/Vol-388/#DaiiGriffiths>,
         <http://ceur-ws.org/Vol-388/#PauliSharples>,
         <http://ceur-ws.org/Vol-388/#ScottiWilson> .
 
 <http://ceur-ws.org/Vol-388/#attwell> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-388/> ;
-    ns6:title "Maturing learning: Mash up Personal Learning Environments" ;
-    ns1:section <http%3A//ceur-ws.org/Vol-388/%23Preface> ;
-    ns5:author <http://ceur-ws.org/Vol-388/#AlaniBrown>,
+    ns5:title "Maturing learning: Mash up Personal Learning Environments" ;
+    ns6:section <http://ceur-ws.org/Vol-388/#Preface> ;
+    ns1:author <http://ceur-ws.org/Vol-388/#AlaniBrown>,
         <http://ceur-ws.org/Vol-388/#GrahamiAttwell>,
         <http://ceur-ws.org/Vol-388/#JennyiBimrose>,
         <http://ceur-ws.org/Vol-388/#Sally-AnneiBarnes> .
 
 <http://ceur-ws.org/Vol-388/#bogdanov> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-388/> ;
-    ns6:title "Social Software Modeling and Mashup based on Actors, Activities and Assets" ;
-    ns1:section <http%3A//ceur-ws.org/Vol-388/%23Preface> ;
-    ns5:author <http://ceur-ws.org/Vol-388/#ChristopheiSalzmann>,
+    ns5:title "Social Software Modeling and Mashup based on Actors, Activities and Assets" ;
+    ns6:section <http://ceur-ws.org/Vol-388/#Preface> ;
+    ns1:author <http://ceur-ws.org/Vol-388/#ChristopheiSalzmann>,
         <http://ceur-ws.org/Vol-388/#DenisiGillet>,
         <http://ceur-ws.org/Vol-388/#EvgenyiBogdanov>,
         <http://ceur-ws.org/Vol-388/#SandyiEliHelou> .
 
 <http://ceur-ws.org/Vol-388/#soylu> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-388/> ;
-    ns6:title "A Learning Object Harvesting Model and a Sample Application" ;
-    ns1:section <http%3A//ceur-ws.org/Vol-388/%23Preface> ;
-    ns5:author <http://ceur-ws.org/Vol-388/#AhmetiSoylu>,
+    ns5:title "A Learning Object Harvesting Model and a Sample Application" ;
+    ns6:section <http://ceur-ws.org/Vol-388/#Preface> ;
+    ns1:author <http://ceur-ws.org/Vol-388/#AhmetiSoylu>,
         <http://ceur-ws.org/Vol-388/#FelixiM%EF%BF%BDdritscher>,
         <http://ceur-ws.org/Vol-388/#FridoliniWild>,
         <http://ceur-ws.org/Vol-388/#SelahattiniKuru> .
 
 <http://ceur-ws.org/Vol-388/#valentin> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-388/> ;
-    ns6:title "Mashups in Learning Design: pushing the flexibility envelope" ;
-    ns1:section <http%3A//ceur-ws.org/Vol-388/%23Preface> ;
-    ns5:author <http://ceur-ws.org/Vol-388/#AbelardoiPardo>,
+    ns5:title "Mashups in Learning Design: pushing the flexibility envelope" ;
+    ns6:section <http://ceur-ws.org/Vol-388/#Preface> ;
+    ns1:author <http://ceur-ws.org/Vol-388/#AbelardoiPardo>,
         <http://ceur-ws.org/Vol-388/#CarlosiDelgadoiKloos>,
         <http://ceur-ws.org/Vol-388/#DerickiLeony>,
         <http://ceur-ws.org/Vol-388/#LuisideilaiFuenteiValentin> .
 
 <http://ceur-ws.org/Vol-388/#casquero> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-388/> ;
-    ns6:title "iGoogle and gadgets as a platform for integrating institutional and external services" ;
-    ns1:section <http%3A//ceur-ws.org/Vol-388/%23Preface> ;
-    ns5:author <http://ceur-ws.org/Vol-388/#JavieriPortillo>,
+    ns5:title "iGoogle and gadgets as a platform for integrating institutional and external services" ;
+    ns6:section <http://ceur-ws.org/Vol-388/#Preface> ;
+    ns1:author <http://ceur-ws.org/Vol-388/#JavieriPortillo>,
         <http://ceur-ws.org/Vol-388/#Jes%EF%BF%BDsiRomo>,
         <http://ceur-ws.org/Vol-388/#ManueliBenito>,
         <http://ceur-ws.org/Vol-388/#OskariCasquero>,
@@ -315,18 +316,14 @@
 
 <http://ceur-ws.org/Vol-388/#asensio-perez> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-388/> ;
-    ns6:title "Adding mash-up based tailorability to VLEs for scripted Collaborative Learning" ;
-    ns1:section <http%3A//ceur-ws.org/Vol-388/%23Preface> ;
-    ns5:author <http://ceur-ws.org/Vol-388/#EduardoiGomez-Sanchez>,
+    ns5:title "Adding mash-up based tailorability to VLEs for scripted Collaborative Learning" ;
+    ns6:section <http://ceur-ws.org/Vol-388/#Preface> ;
+    ns1:author <http://ceur-ws.org/Vol-388/#EduardoiGomez-Sanchez>,
         <http://ceur-ws.org/Vol-388/#EloyiD.iVillasclaras-Fernandez>,
         <http://ceur-ws.org/Vol-388/#GuillermoiVega-Gorgojo>,
         <http://ceur-ws.org/Vol-388/#JuaniI.iAsensio-Perez>,
         <http://ceur-ws.org/Vol-388/#MigueliL.iBote-Lorenzo>,
         <http://ceur-ws.org/Vol-388/#YannisiA.iDimitriadis> .
-
-<http%3A//ceur-ws.org/Vol-388/%23Preface> a ns3:SessionEvent ;
-    ns3:partOf <http://ceur-ws.org/Vol-388/> ;
-    ns6:title "Preface" .
 
 <http://ceur-ws.org/Vol-388/> a ns3:Proceedings ;
     ns3:hasPart <http://ceur-ws.org/Vol-388/#asensio-perez>,
@@ -341,10 +338,14 @@
         <http://ceur-ws.org/Vol-388/#vuorikari>,
         <http://ceur-ws.org/Vol-388/#weber>,
         <http://ceur-ws.org/Vol-388/#wilson> ;
-    ns3:hasSession <http%3A//ceur-ws.org/Vol-388/%23Preface> ;
-    ns8:issued "2008-09-15T00:00:00+00:00"^^xsd:dateTime ;
-    ns1:presentedAt <http://ceur-ws.org/Vol-388/#event> ;
-    ns5:editor <http://ceur-ws.org/Vol-388/#FridoliniWild>,
+    ns3:hasSession <http://ceur-ws.org/Vol-388/#Preface> ;
+    ns9:issued "2008-09-15T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:presentedAt <http://ceur-ws.org/Vol-388/#event> ;
+    ns1:editor <http://ceur-ws.org/Vol-388/#FridoliniWild>,
         <http://ceur-ws.org/Vol-388/#MarcoiKalz>,
         <http://ceur-ws.org/Vol-388/#MatthiasiPalm> .
+
+<http://ceur-ws.org/Vol-388/#Preface> a ns3:SessionEvent ;
+    ns3:partOf <http://ceur-ws.org/Vol-388/> ;
+    ns5:title "Preface" .
 

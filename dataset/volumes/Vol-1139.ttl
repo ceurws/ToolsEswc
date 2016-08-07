@@ -1,158 +1,43 @@
-@prefix ns1: <http://xmlns.com/foaf/0.1/> .
-@prefix ns2: <http://purl.org/ontology/bibo/#> .
-@prefix ns3: <http://www.w3.org/2002/07/owl#> .
-@prefix ns4: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns1: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns2: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns3: <http://xmlns.com/foaf/0.1/> .
+@prefix ns4: <http://www.w3.org/2002/07/owl#> .
 @prefix ns5: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns6: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns6: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns7: <http://purl.org/dc/elements/1.1/> .
+@prefix ns8: <http://purl.org/ontology/bibo/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1139/#BarboraiVidova-Hladka> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/BarboraiVidova-Hladka> ;
-    ns1:made <http://ceur-ws.org/Vol-1139/#paper2> ;
-    ns1:name "Barbora Vidova-Hladka" .
+<http://ceur-ws.org/Vol-1139/> a ns1:Proceedings ;
+    ns2:issued "2014-05-16T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:presentedAt <http://ceur-ws.org/Vol-1139/#event> ;
+    ns5:editor <http://ceur-ws.org/Vol-1139/#JaroslaviPokorny>,
+        <http://ceur-ws.org/Vol-1139/#KareliRichta>,
+        <http://ceur-ws.org/Vol-1139/#VaclaviSnasel> .
 
-<http://ceur-ws.org/Vol-1139/#DanieliRobenek> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/DanieliRobenek> ;
-    ns1:made <http://ceur-ws.org/Vol-1139/#paper6> ;
-    ns1:name "Daniel Robenek" .
+<http://ceur-ws.org/Vol-1139/#JaroslaviPokorny> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/JaroslaviPokorny> ;
+    ns3:name "Jaroslav Pokorny" .
 
-<http://ceur-ws.org/Vol-1139/#FilipiZavoral> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/FilipiZavoral> ;
-    ns1:made <http://ceur-ws.org/Vol-1139/#poster10> ;
-    ns1:name "Filip Zavoral" .
+<http://ceur-ws.org/Vol-1139/#KareliRichta> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/KareliRichta> ;
+    ns3:name "Karel Richta" .
 
-<http://ceur-ws.org/Vol-1139/#IrenaiHolubova> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/IrenaiHolubova> ;
-    ns1:made <http://ceur-ws.org/Vol-1139/#paper2> ;
-    ns1:name "Irena Holubova" .
+<http://ceur-ws.org/Vol-1139/#VaclaviSnasel> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/VaclaviSnasel> ;
+    ns3:name "Vaclav Snasel" .
 
-<http://ceur-ws.org/Vol-1139/#JakubiStolfa> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/JakubiStolfa> ;
-    ns1:made <http://ceur-ws.org/Vol-1139/#poster12> ;
-    ns1:name "Jakub Stolfa" .
-
-<http://ceur-ws.org/Vol-1139/#JaniMartinovic> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/JaniMartinovic> ;
-    ns1:made <http://ceur-ws.org/Vol-1139/#poster12> ;
-    ns1:name "Jan Martinovic" .
-
-<http://ceur-ws.org/Vol-1139/#JiriiDvorsky> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/JiriiDvorsky> ;
-    ns1:made <http://ceur-ws.org/Vol-1139/#paper3> ;
-    ns1:name "Jiri Dvorsky" .
-
-<http://ceur-ws.org/Vol-1139/#KareliRichta> a ns1:Person ;
-    ns5:affiliation "#, +" ;
-    ns3:sameAs <http://ceur-ws.org/persons/KareliRichta> ;
-    ns1:name "Karel Richta" .
-
-<http://ceur-ws.org/Vol-1139/#KaterinaiSlaninova> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/KaterinaiSlaninova> ;
-    ns1:made <http://ceur-ws.org/Vol-1139/#poster12> ;
-    ns1:name "Katerina Slaninova" .
-
-<http://ceur-ws.org/Vol-1139/#LadislaviMarsik> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/LadislaviMarsik> ;
-    ns1:made <http://ceur-ws.org/Vol-1139/#paper11> ;
-    ns1:name "Ladislav Marsik" .
-
-<http://ceur-ws.org/Vol-1139/#LukasiMarek> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/LukasiMarek> ;
-    ns1:made <http://ceur-ws.org/Vol-1139/#paper3> ;
-    ns1:name "Lukas Marek" .
-
-<http://ceur-ws.org/Vol-1139/#MartiniIlcik> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/MartiniIlcik> ;
-    ns1:made <http://ceur-ws.org/Vol-1139/#paper11> ;
-    ns1:name "Martin Ilcik" .
-
-<http://ceur-ws.org/Vol-1139/#MartiniKrulis> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/MartiniKrulis> ;
-    ns1:made <http://ceur-ws.org/Vol-1139/#poster10> ;
-    ns1:name "Martin Krulis" .
-
-<http://ceur-ws.org/Vol-1139/#MartiniNecasky> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/MartiniNecasky> ;
-    ns1:made <http://ceur-ws.org/Vol-1139/#paper2> ;
-    ns1:name "Martin Necasky" .
-
-<http://ceur-ws.org/Vol-1139/#MichaliKratky> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/MichaliKratky> ;
-    ns1:made <http://ceur-ws.org/Vol-1139/#poster13> ;
-    ns1:name "Michal Kratky" .
-
-<http://ceur-ws.org/Vol-1139/#MichaliPrilepok> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/MichaliPrilepok> ;
-    ns1:made <http://ceur-ws.org/Vol-1139/#paper7> ;
-    ns1:name "Michal Prilepok" .
-
-<http://ceur-ws.org/Vol-1139/#PaveliTucek> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/PaveliTucek> ;
-    ns1:made <http://ceur-ws.org/Vol-1139/#paper3> ;
-    ns1:name "Pavel Tucek" .
-
-<http://ceur-ws.org/Vol-1139/#PeteriChovanec> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/PeteriChovanec> ;
-    ns1:made <http://ceur-ws.org/Vol-1139/#poster13> ;
-    ns1:name "Peter Chovanec" .
-
-<http://ceur-ws.org/Vol-1139/#PetriLukas> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/PetriLukas> ;
-    ns1:made <http://ceur-ws.org/Vol-1139/#poster13> ;
-    ns1:name "Petr Lukas" .
-
-<http://ceur-ws.org/Vol-1139/#RadimiBaca> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/RadimiBaca> ;
-    ns1:made <http://ceur-ws.org/Vol-1139/#poster13> ;
-    ns1:name "Radim Baca" .
-
-<http://ceur-ws.org/Vol-1139/#SebastianiBasterrech> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/SebastianiBasterrech> ;
-    ns1:made <http://ceur-ws.org/Vol-1139/#paper4> ;
-    ns1:name "Sebastian Basterrech" .
-
-<http://ceur-ws.org/Vol-1139/#SvatoplukiStolfa> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/SvatoplukiStolfa> ;
-    ns1:made <http://ceur-ws.org/Vol-1139/#poster12> ;
-    ns1:name "Svatopluk Stolfa" .
-
-<http://ceur-ws.org/Vol-1139/#TomasiBurianek> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/TomasiBurianek> ;
-    ns1:made <http://ceur-ws.org/Vol-1139/#paper4> ;
-    ns1:name "Tomas Burianek" .
-
-<http://ceur-ws.org/Vol-1139/#TomasiKnap> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/TomasiKnap> ;
-    ns1:made <http://ceur-ws.org/Vol-1139/#paper2> ;
-    ns1:name "Tomas Knap" .
-
-<http://ceur-ws.org/Vol-1139/#VincentiKriz> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/VincentiKriz> ;
-    ns1:made <http://ceur-ws.org/Vol-1139/#paper2> ;
-    ns1:name "Vincent Kriz" .
-
-<http://ceur-ws.org/Vol-1139/#VitiPaszto> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/VitiPaszto> ;
-    ns1:made <http://ceur-ws.org/Vol-1139/#paper3> ;
-    ns1:name "Vit Paszto" .
-
-<http://ceur-ws.org/Vol-1139/#ZbynekiFalt> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/ZbynekiFalt> ;
-    ns1:made <http://ceur-ws.org/Vol-1139/#poster10> ;
-    ns1:name "Zbynek Falt" .
-
-<http://ceur-ws.org/Vol-1139/#event> a ns4:WorkshopEvent ;
-    ns4:hasLocation <http://dbpedia.org/resource/Czech_Republic> ;
-    ns4:hasPart <http://ceur-ws.org/Vol-1139/#part-DATESO> ;
-    ns4:isSubEventOf <http://ceur-ws.org/Vol-1139/#conf> ;
-    ns7:beginsAtDatetime "2014-04-16T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:endsAtDatetime "2014-04-16T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:license <http://choosealicense.com/licenses/no-license/> ;
+<http://ceur-ws.org/Vol-1139/#event> a ns1:WorkshopEvent ;
+    ns1:hasLocation <http://dbpedia.org/resource/Czech_Republic> ;
+    ns1:hasPart <http://ceur-ws.org/Vol-1139/#part-DAtabases>,
+        <http://ceur-ws.org/Vol-1139/#part-TExts> ;
+    ns1:isSubEventOf <http://ceur-ws.org/Vol-1139/#conf> ;
+    ns6:beginsAtDatetime "2014-04-16T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:endsAtDatetime "2014-04-16T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:license "http://choosealicense.com/licenses/no-license/" ;
     rdfs:seeAlso <http://ceur-ws.org/Vol-129/#event>,
         <http://ceur-ws.org/Vol-176/#event>,
         <http://ceur-ws.org/Vol-235/#event>,
@@ -163,153 +48,4 @@
         <http://ceur-ws.org/Vol-837/#event>,
         <http://ceur-ws.org/Vol-971/#event>,
         <http://ceur-ws.org/Vol-98/#event> .
-
-<http://ceur-ws.org/Vol-1139/#JaniPlatos> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/JaniPlatos> ;
-    ns1:made <http://ceur-ws.org/Vol-1139/#paper6>,
-        <http://ceur-ws.org/Vol-1139/#paper7> ;
-    ns1:name "Jan Platos" .
-
-<http://ceur-ws.org/Vol-1139/#JaroslaviPokorny> a ns1:Person ;
-    ns2:place <http://dbpedia.org/resource/Czech_Republic> ;
-    ns5:affiliation "Department of Software Engineering, MFF, Charles University, Prague" ;
-    ns3:sameAs <http://ceur-ws.org/persons/JaroslaviPokorny> ;
-    ns1:made <http://ceur-ws.org/Vol-1139/#paper11> ;
-    ns1:name "Jaroslav Pokorny" .
-
-<http://ceur-ws.org/Vol-1139/#VaclaviSnasel> a ns1:Person ;
-    ns5:affiliation "" ;
-    ns3:sameAs <http://ceur-ws.org/persons/VaclaviSnasel> ;
-    ns1:made <http://ceur-ws.org/Vol-1139/#paper6>,
-        <http://ceur-ws.org/Vol-1139/#paper7> ;
-    ns1:name "Vaclav Snasel" .
-
-<http://ceur-ws.org/Vol-1139/#paper4> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1139/> ;
-    ns6:title "Performance Analysis of the Activation Neuron Function in the Flexible Neural Tree Model" ;
-    ns2:endPage 46 ;
-    ns2:numPages 12 ;
-    ns2:section <http%3A//ceur-ws.org/Vol-1139/%23Fullpapers> ;
-    ns2:startPage 35 ;
-    ns5:author <http://ceur-ws.org/Vol-1139/#SebastianiBasterrech>,
-        <http://ceur-ws.org/Vol-1139/#TomasiBurianek> .
-
-<http%3A//ceur-ws.org/Vol-1139/%23ShortPapers> a ns4:SessionEvent ;
-    ns4:partOf <http://ceur-ws.org/Vol-1139/> ;
-    ns6:title "Short Papers" .
-
-<http://ceur-ws.org/Vol-1139/#paper11> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1139/> ;
-    ns6:title "Towards a Harmonic Complexity of Musical Pieces" ;
-    ns2:endPage 12 ;
-    ns2:numPages 12 ;
-    ns2:section <http%3A//ceur-ws.org/Vol-1139/%23Fullpapers> ;
-    ns2:startPage 1 ;
-    ns5:author <http://ceur-ws.org/Vol-1139/#JaroslaviPokorny>,
-        <http://ceur-ws.org/Vol-1139/#LadislaviMarsik>,
-        <http://ceur-ws.org/Vol-1139/#MartiniIlcik> .
-
-<http://ceur-ws.org/Vol-1139/#paper6> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1139/> ;
-    ns6:title "Ternary Tree Optimalization for n-gram Indexing" ;
-    ns2:endPage 58 ;
-    ns2:numPages 12 ;
-    ns2:section <http%3A//ceur-ws.org/Vol-1139/%23Fullpapers> ;
-    ns2:startPage 47 ;
-    ns5:author <http://ceur-ws.org/Vol-1139/#DanieliRobenek>,
-        <http://ceur-ws.org/Vol-1139/#JaniPlatos>,
-        <http://ceur-ws.org/Vol-1139/#VaclaviSnasel> .
-
-<http://ceur-ws.org/Vol-1139/#paper7> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1139/> ;
-    ns6:title "EEG signals similarity based on compression" ;
-    ns2:endPage 70 ;
-    ns2:numPages 12 ;
-    ns2:section <http%3A//ceur-ws.org/Vol-1139/%23Fullpapers> ;
-    ns2:startPage 59 ;
-    ns5:author <http://ceur-ws.org/Vol-1139/#JaniPlatos>,
-        <http://ceur-ws.org/Vol-1139/#MichaliPrilepok>,
-        <http://ceur-ws.org/Vol-1139/#VaclaviSnasel> .
-
-<http://ceur-ws.org/Vol-1139/#poster10> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1139/> ;
-    ns6:title "Exploiting HTML5 Technologies for Distributed Parasitic Web Storge" ;
-    ns2:endPage 80 ;
-    ns2:numPages 10 ;
-    ns2:section <http%3A//ceur-ws.org/Vol-1139/%23ShortPapers> ;
-    ns2:startPage 71 ;
-    ns5:author <http://ceur-ws.org/Vol-1139/#FilipiZavoral>,
-        <http://ceur-ws.org/Vol-1139/#MartiniKrulis>,
-        <http://ceur-ws.org/Vol-1139/#ZbynekiFalt> .
-
-<http://ceur-ws.org/Vol-1139/#paper3> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1139/> ;
-    ns6:title "Spatial Clustering of Disease Events Using Bayesian Methods" ;
-    ns2:endPage 34 ;
-    ns2:numPages 10 ;
-    ns2:section <http%3A//ceur-ws.org/Vol-1139/%23Fullpapers> ;
-    ns2:startPage 25 ;
-    ns5:author <http://ceur-ws.org/Vol-1139/#JiriiDvorsky>,
-        <http://ceur-ws.org/Vol-1139/#LukasiMarek>,
-        <http://ceur-ws.org/Vol-1139/#PaveliTucek>,
-        <http://ceur-ws.org/Vol-1139/#VitiPaszto> .
-
-<http://ceur-ws.org/Vol-1139/#poster12> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1139/> ;
-    ns6:title "An Application of Process Mining by Sequence Alignment Methods to the SAP Invoice Process Example" ;
-    ns2:endPage 90 ;
-    ns2:numPages 10 ;
-    ns2:section <http%3A//ceur-ws.org/Vol-1139/%23ShortPapers> ;
-    ns2:startPage 81 ;
-    ns5:author <http://ceur-ws.org/Vol-1139/#JakubiStolfa>,
-        <http://ceur-ws.org/Vol-1139/#JaniMartinovic>,
-        <http://ceur-ws.org/Vol-1139/#KaterinaiSlaninova>,
-        <http://ceur-ws.org/Vol-1139/#SvatoplukiStolfa> .
-
-<http://ceur-ws.org/Vol-1139/#poster13> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1139/> ;
-    ns6:title "QuickDB - Yet Another Database Management System?" ;
-    ns2:endPage 99 ;
-    ns2:numPages 9 ;
-    ns2:section <http%3A//ceur-ws.org/Vol-1139/%23ShortPapers> ;
-    ns2:startPage 91 ;
-    ns5:author <http://ceur-ws.org/Vol-1139/#MichaliKratky>,
-        <http://ceur-ws.org/Vol-1139/#PeteriChovanec>,
-        <http://ceur-ws.org/Vol-1139/#PetriLukas>,
-        <http://ceur-ws.org/Vol-1139/#RadimiBaca> .
-
-<http://ceur-ws.org/Vol-1139/#paper2> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1139/> ;
-    ns6:title "INTLIB - an INTelligent LIBrary" ;
-    ns2:endPage 24 ;
-    ns2:numPages 12 ;
-    ns2:section <http%3A//ceur-ws.org/Vol-1139/%23Fullpapers> ;
-    ns2:startPage 13 ;
-    ns5:author <http://ceur-ws.org/Vol-1139/#BarboraiVidova-Hladka>,
-        <http://ceur-ws.org/Vol-1139/#IrenaiHolubova>,
-        <http://ceur-ws.org/Vol-1139/#MartiniNecasky>,
-        <http://ceur-ws.org/Vol-1139/#TomasiKnap>,
-        <http://ceur-ws.org/Vol-1139/#VincentiKriz> .
-
-<http%3A//ceur-ws.org/Vol-1139/%23Fullpapers> a ns4:SessionEvent ;
-    ns4:partOf <http://ceur-ws.org/Vol-1139/> ;
-    ns6:title "Full papers" .
-
-<http://ceur-ws.org/Vol-1139/> a ns4:Proceedings ;
-    ns4:hasPart <http://ceur-ws.org/Vol-1139/#paper11>,
-        <http://ceur-ws.org/Vol-1139/#paper2>,
-        <http://ceur-ws.org/Vol-1139/#paper3>,
-        <http://ceur-ws.org/Vol-1139/#paper4>,
-        <http://ceur-ws.org/Vol-1139/#paper6>,
-        <http://ceur-ws.org/Vol-1139/#paper7>,
-        <http://ceur-ws.org/Vol-1139/#poster10>,
-        <http://ceur-ws.org/Vol-1139/#poster12>,
-        <http://ceur-ws.org/Vol-1139/#poster13> ;
-    ns4:hasSession <http%3A//ceur-ws.org/Vol-1139/%23Fullpapers>,
-        <http%3A//ceur-ws.org/Vol-1139/%23ShortPapers> ;
-    ns8:issued "2014-05-16T00:00:00+00:00"^^xsd:dateTime ;
-    ns2:presentedAt <http://ceur-ws.org/Vol-1139/#event> ;
-    ns5:editor <http://ceur-ws.org/Vol-1139/#JaroslaviPokorny>,
-        <http://ceur-ws.org/Vol-1139/#KareliRichta>,
-        <http://ceur-ws.org/Vol-1139/#VaclaviSnasel> .
 

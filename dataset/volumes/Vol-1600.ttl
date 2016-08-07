@@ -1,119 +1,36 @@
-@prefix ns1: <http://www.w3.org/2002/07/owl#> .
-@prefix ns2: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns3: <http://xmlns.com/foaf/0.1/> .
-@prefix ns4: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns5: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns6: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns7: <http://purl.org/ontology/bibo/#> .
-@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns1: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns2: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns3: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns4: <http://xmlns.com/foaf/0.1/> .
+@prefix ns5: <http://purl.org/dc/elements/1.1/> .
+@prefix ns6: <http://www.w3.org/2002/07/owl#> .
+@prefix ns7: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns8: <http://purl.org/ontology/bibo/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1600/#Bo%C5%A1tjaniDelak> a ns3:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/Bo%C5%A1tjaniDelak> ;
-    ns3:made <http://ceur-ws.org/Vol-1600/#session2p1> ;
-    ns3:name "Boštjan Delak" .
-
-<http://ceur-ws.org/Vol-1600/#DimitrisiKaragiannis> a ns3:Person ;
-    ns4:affiliation "" ;
-    ns1:sameAs <http://ceur-ws.org/persons/DimitrisiKaragiannis> ;
-    ns3:name "Dimitris Karagiannis" .
-
-<http://ceur-ws.org/Vol-1600/#ElianeiMariaiLoiola> a ns3:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/ElianeiMariaiLoiola> ;
-    ns3:made <http://ceur-ws.org/Vol-1600/#session1p2> ;
-    ns3:name "Eliane Maria Loiola" .
-
-<http://ceur-ws.org/Vol-1600/#EthaniHadar> a ns3:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/EthaniHadar> ;
-    ns3:made <http://ceur-ws.org/Vol-1600/#session2p3> ;
-    ns3:name "Ethan Hadar" .
-
-<http://ceur-ws.org/Vol-1600/#Hans-GeorgiFill> a ns3:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/Hans-GeorgiFill> ;
-    ns3:made <http://ceur-ws.org/Vol-1600/#session1p3> ;
-    ns3:name "Hans-Georg Fill" .
-
-<http://ceur-ws.org/Vol-1600/#NikoiSchlamberger> a ns3:Person ;
-    ns4:affiliation "" ;
-    ns1:sameAs <http://ceur-ws.org/persons/NikoiSchlamberger> ;
-    ns3:name "Niko Schlamberger" .
-
-<http://ceur-ws.org/Vol-1600/#PaoloiAtzeni> a ns3:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/PaoloiAtzeni> ;
-    ns3:made <http://ceur-ws.org/Vol-1600/#session2p2> ;
-    ns3:name "Paolo Atzeni" .
-
-<http://ceur-ws.org/Vol-1600/#RobertiWoitsch> a ns3:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/RobertiWoitsch> ;
-    ns3:made <http://ceur-ws.org/Vol-1600/#session1p1> ;
-    ns3:name "Robert Woitsch" .
-
-<http://ceur-ws.org/Vol-1600/#event> a ns2:WorkshopEvent ;
-    ns2:hasLocation <http://dbpedia.org/resource/Euro_gold_and_silver_commemorative_coins> ;
-    ns2:hasPart <http://ceur-ws.org/Vol-1600/#part-CAiSE-IT> ;
-    ns2:isSubEventOf <http://ceur-ws.org/Vol-1600/#conf> ;
-    ns6:beginsAtDatetime "2016-06-13T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:endsAtDatetime "2016-06-17T00:00:00+00:00"^^xsd:dateTime ;
-    rdfs:seeAlso <http://ceur-ws.org/Vol-1381/#event> .
-
-<http://ceur-ws.org/Vol-1600/#session1p1> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1600/> ;
-    ns5:title "Business Process as a Service (BPaaS): The BPaaS Design Environment" ;
-    ns7:section <http%3A//ceur-ws.org/Vol-1600/%23Session1%3AEnterpriseArchitecturesandBusinessProcesses> ;
-    ns4:author <http://ceur-ws.org/Vol-1600/#RobertiWoitsch> .
-
-<http://ceur-ws.org/Vol-1600/#session1p2> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1600/> ;
-    ns5:title "Business Process Families: A Case Study in the Brazilian Public Sector" ;
-    ns7:section <http%3A//ceur-ws.org/Vol-1600/%23Session1%3AEnterpriseArchitecturesandBusinessProcesses> ;
-    ns4:author <http://ceur-ws.org/Vol-1600/#ElianeiMariaiLoiola> .
-
-<http://ceur-ws.org/Vol-1600/#session1p3> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1600/> ;
-    ns5:title "Developing Cloud-based Enterprise Architectures Using Archetypes" ;
-    ns7:section <http%3A//ceur-ws.org/Vol-1600/%23Session1%3AEnterpriseArchitecturesandBusinessProcesses> ;
-    ns4:author <http://ceur-ws.org/Vol-1600/#Hans-GeorgiFill> .
-
-<http://ceur-ws.org/Vol-1600/#session2p1> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1600/> ;
-    ns5:title "Approach for Information System Maturity Assessment" ;
-    ns7:section <http%3A//ceur-ws.org/Vol-1600/%23Session2%3ADataManagementandInformationSystemMaturity> ;
-    ns4:author <http://ceur-ws.org/Vol-1600/#Bo%C5%A1tjaniDelak> .
-
-<http://ceur-ws.org/Vol-1600/#session2p2> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1600/> ;
-    ns5:title "SAMIZDATA: A Scale-independent Data Management System for Time Series" ;
-    ns7:section <http%3A//ceur-ws.org/Vol-1600/%23Session2%3ADataManagementandInformationSystemMaturity> ;
-    ns4:author <http://ceur-ws.org/Vol-1600/#PaoloiAtzeni> .
-
-<http://ceur-ws.org/Vol-1600/#session2p3> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1600/> ;
-    ns5:title "BIDCEP: A Vision of Big Data Complex Event Processing for Near Real Time Data Streaming" ;
-    ns7:section <http%3A//ceur-ws.org/Vol-1600/%23Session2%3ADataManagementandInformationSystemMaturity> ;
-    ns4:author <http://ceur-ws.org/Vol-1600/#EthaniHadar> .
-
-<http%3A//ceur-ws.org/Vol-1600/%23Session1%3AEnterpriseArchitecturesandBusinessProcesses> a ns2:SessionEvent ;
-    ns2:partOf <http://ceur-ws.org/Vol-1600/> ;
-    ns5:title "Session 1: Enterprise Architectures and Business Processes" .
-
-<http%3A//ceur-ws.org/Vol-1600/%23Session2%3ADataManagementandInformationSystemMaturity> a ns2:SessionEvent ;
-    ns2:partOf <http://ceur-ws.org/Vol-1600/> ;
-    ns5:title "Session 2: Data Management and Information System Maturity" .
-
-<http://ceur-ws.org/Vol-1600/> a ns2:Proceedings ;
-    ns2:hasPart <http://ceur-ws.org/Vol-1600/#session1p1>,
-        <http://ceur-ws.org/Vol-1600/#session1p2>,
-        <http://ceur-ws.org/Vol-1600/#session1p3>,
-        <http://ceur-ws.org/Vol-1600/#session2p1>,
-        <http://ceur-ws.org/Vol-1600/#session2p2>,
-        <http://ceur-ws.org/Vol-1600/#session2p3> ;
-    ns2:hasSession <http%3A//ceur-ws.org/Vol-1600/%23Session1%3AEnterpriseArchitecturesandBusinessProcesses>,
-        <http%3A//ceur-ws.org/Vol-1600/%23Session2%3ADataManagementandInformationSystemMaturity> ;
-    ns8:issued "2016-05-29T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:presentedAt <http://ceur-ws.org/Vol-1600/#event> ;
-    ns4:editor <http://ceur-ws.org/Vol-1600/#DimitrisiKaragiannis>,
+<http://ceur-ws.org/Vol-1600/> a ns1:Proceedings ;
+    ns2:issued "2016-05-29T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:presentedAt <http://ceur-ws.org/Vol-1600/#event> ;
+    ns7:editor <http://ceur-ws.org/Vol-1600/#DimitrisiKaragiannis>,
         <http://ceur-ws.org/Vol-1600/#NikoiSchlamberger> .
+
+<http://ceur-ws.org/Vol-1600/#DimitrisiKaragiannis> a ns4:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/DimitrisiKaragiannis> ;
+    ns4:name "Dimitris Karagiannis" .
+
+<http://ceur-ws.org/Vol-1600/#NikoiSchlamberger> a ns4:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/NikoiSchlamberger> ;
+    ns4:name "Niko Schlamberger" .
+
+<http://ceur-ws.org/Vol-1600/#event> a ns1:WorkshopEvent ;
+    ns1:hasLocation <http://dbpedia.org/resource/Euro_gold_and_silver_commemorative_coins> ;
+    ns1:hasPart <http://ceur-ws.org/Vol-1600/#part-ws> ;
+    ns1:isSubEventOf <http://ceur-ws.org/Vol-1600/#conf> ;
+    ns3:beginsAtDatetime "2016-06-13T00:00:00+00:00"^^xsd:dateTime ;
+    ns3:endsAtDatetime "2016-06-17T00:00:00+00:00"^^xsd:dateTime ;
+    ns5:license "http://creativecommons.org/publicdomain/zero/1.0/" ;
+    rdfs:seeAlso <http://ceur-ws.org/Vol-1381/#event> .
 

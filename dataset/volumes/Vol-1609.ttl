@@ -1,0 +1,61 @@
+@prefix ns1: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns2: <http://xmlns.com/foaf/0.1/> .
+@prefix ns3: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns4: <http://www.w3.org/2002/07/owl#> .
+@prefix ns5: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns6: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns7: <http://purl.org/ontology/bibo/#> .
+@prefix ns8: <http://purl.org/dc/elements/1.1/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://ceur-ws.org/Vol-1609/> a ns6:Proceedings ;
+    ns5:issued "2016-07-25T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:presentedAt <http://ceur-ws.org/Vol-1609/#event> ;
+    ns1:editor <http://ceur-ws.org/Vol-1609/#CraigiMacdonald>,
+        <http://ceur-ws.org/Vol-1609/#KrisztianiBalog>,
+        <http://ceur-ws.org/Vol-1609/#LindaiCappellato>,
+        <http://ceur-ws.org/Vol-1609/#NicolaiFerro> .
+
+<http://ceur-ws.org/Vol-1609/#CraigiMacdonald> a ns2:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/CraigiMacdonald> ;
+    ns2:name "Craig Macdonald" .
+
+<http://ceur-ws.org/Vol-1609/#KrisztianiBalog> a ns2:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/KrisztianiBalog> ;
+    ns2:name "Krisztian Balog" .
+
+<http://ceur-ws.org/Vol-1609/#LindaiCappellato> a ns2:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/LindaiCappellato> ;
+    ns2:name "Linda Cappellato" .
+
+<http://ceur-ws.org/Vol-1609/#NicolaiFerro> a ns2:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/NicolaiFerro> ;
+    ns2:name "Nicola Ferro" .
+
+<http://ceur-ws.org/Vol-1609/#event> a ns6:WorkshopEvent ;
+    ns6:hasLocation <http://dbpedia.org/resource/Portugal> ;
+    ns6:hasPart <http://ceur-ws.org/Vol-1609/#part-CLEF> ;
+    ns6:isSubEventOf <http://ceur-ws.org/Vol-1609/#conf> ;
+    ns3:beginsAtDatetime "2016-09-05T00:00:00+00:00"^^xsd:dateTime ;
+    ns3:endsAtDatetime "2016-09-08T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:license "http://creativecommons.org/publicdomain/zero/1.0/" ;
+    rdfs:seeAlso <http://ceur-ws.org/Vol-1166/#event>,
+        <http://ceur-ws.org/Vol-1167/#event>,
+        <http://ceur-ws.org/Vol-1168/#event>,
+        <http://ceur-ws.org/Vol-1169/#event>,
+        <http://ceur-ws.org/Vol-1170/#event>,
+        <http://ceur-ws.org/Vol-1171/#event>,
+        <http://ceur-ws.org/Vol-1172/#event>,
+        <http://ceur-ws.org/Vol-1173/#event>,
+        <http://ceur-ws.org/Vol-1174/#event>,
+        <http://ceur-ws.org/Vol-1175/#event>,
+        <http://ceur-ws.org/Vol-1176/#event>,
+        <http://ceur-ws.org/Vol-1177/#event>,
+        <http://ceur-ws.org/Vol-1178/#event>,
+        <http://ceur-ws.org/Vol-1179/#event>,
+        <http://ceur-ws.org/Vol-1180/#event>,
+        <http://ceur-ws.org/Vol-1391/#event> .
+

@@ -3,9 +3,10 @@
 @prefix ns3: <http://data.semanticweb.org/ns/swc/ontology/#> .
 @prefix ns4: <http://swrc.ontoware.org/ontology/#> .
 @prefix ns5: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns6: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns7: <http://purl.org/ontology/bibo/#> .
-@prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns6: <http://purl.org/ontology/bibo/#> .
+@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns8: <http://purl.org/dc/elements/1.1/> .
+@prefix ns9: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -248,11 +249,11 @@
 
 <http://ceur-ws.org/Vol-33/#event> a ns3:WorkshopEvent ;
     ns3:hasLocation <http://dbpedia.org/resource/Germany> ;
-    ns3:hasPart <http://ceur-ws.org/Vol-33/#part-DL> ;
+    ns3:hasPart <http://ceur-ws.org/Vol-33/#part-CEUR-WS> ;
     ns3:isSubEventOf <http://ceur-ws.org/Vol-33/#conf> ;
-    ns8:beginsAtDatetime "2016-08-17T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:endsAtDatetime "2016-08-17T00:00:00+00:00"^^xsd:dateTime ;
-    ns5:license <http://choosealicense.com/licenses/no-license/> .
+    ns7:beginsAtDatetime "2000-07-14T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:endsAtDatetime "2000-07-14T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:license "http://choosealicense.com/licenses/no-license/" .
 
 <http://ceur-ws.org/Vol-33/#Alvarez11-20> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-33/> ;
@@ -270,12 +271,12 @@
     ns5:title "Leveraging Knowledge Bases, a decade ago, and now" ;
     ns4:author <http://ceur-ws.org/Vol-33/#P.iDevanbu> .
 
-<http://ceur-ws.org/Vol-33/#F.iBaader> a ns2:Person ;
-    ns7:place <http://dbpedia.org/resource/Germany> ;
+<http://ceur-ws.org/Vol-33/#FranziBaader> a ns2:Person ;
+    ns6:place <http://dbpedia.org/resource/Germany> ;
     ns4:affiliation "RWTH Aachen" ;
-    ns1:sameAs <http://ceur-ws.org/persons/F.iBaader> ;
+    ns1:sameAs <http://ceur-ws.org/persons/FranziBaader> ;
     ns2:made <http://ceur-ws.org/Vol-33/#Baader21-30> ;
-    ns2:name "F. Baader" .
+    ns2:name "Franz Baader" .
 
 <http://ceur-ws.org/Vol-33/#Goble3-7> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-33/> ;
@@ -303,7 +304,7 @@
     ns4:author <http://ceur-ws.org/Vol-33/#S.iSchlobach> .
 
 <http://ceur-ws.org/Vol-33/#UlrikeiSattler> a ns2:Person ;
-    ns7:place <http://dbpedia.org/resource/Germany> ;
+    ns6:place <http://dbpedia.org/resource/Germany> ;
     ns4:affiliation "RWTH Aachen" ;
     ns1:sameAs <http://ceur-ws.org/persons/UlrikeiSattler> ;
     ns2:made <http://ceur-ws.org/Vol-33/#Lutz213-226> ;
@@ -456,8 +457,8 @@
     ns3:partOf <http://ceur-ws.org/Vol-33/> ;
     ns5:title "Fusions of Description Logics" ;
     ns4:author <http://ceur-ws.org/Vol-33/#C.iLutz>,
-        <http://ceur-ws.org/Vol-33/#F.iBaader>,
         <http://ceur-ws.org/Vol-33/#F.iWolter>,
+        <http://ceur-ws.org/Vol-33/#FranziBaader>,
         <http://ceur-ws.org/Vol-33/#H.iSturm> .
 
 <http://ceur-ws.org/Vol-33/#Decker89-97> a ns3:Paper ;
@@ -500,8 +501,8 @@
         <http://ceur-ws.org/Vol-33/#Turhan247-256>,
         <http://ceur-ws.org/Vol-33/#Valencia257-266>,
         <http://ceur-ws.org/Vol-33/#Wessel267-276> ;
-    ns6:issued "2000-07-18T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:presentedAt <http://ceur-ws.org/Vol-33/#event> ;
-    ns4:editor <http://ceur-ws.org/Vol-33/#F.iBaader>,
+    ns9:issued "2000-07-18T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:presentedAt <http://ceur-ws.org/Vol-33/#event> ;
+    ns4:editor <http://ceur-ws.org/Vol-33/#FranziBaader>,
         <http://ceur-ws.org/Vol-33/#UlrikeiSattler> .
 

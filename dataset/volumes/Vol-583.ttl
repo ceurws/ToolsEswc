@@ -1,11 +1,12 @@
-@prefix ns1: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns1: <http://swrc.ontoware.org/ontology/#> .
 @prefix ns2: <http://xmlns.com/foaf/0.1/> .
 @prefix ns3: <http://purl.org/ontology/bibo/#> .
-@prefix ns4: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns4: <http://data.semanticweb.org/ns/swc/ontology/#> .
 @prefix ns5: <http://www.w3.org/2002/07/owl#> .
 @prefix ns6: <http://purl.org/dc/elements/1.1/#> .
 @prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns9: <http://purl.org/dc/elements/1.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -202,7 +203,7 @@
     ns2:name "Tobias R. Mayer" .
 
 <http://ceur-ws.org/Vol-583/#V%C3%ADctoriRodr%C3%ADguez> a ns2:Person ;
-    ns4:affiliation "" ;
+    ns1:affiliation "" ;
     ns5:sameAs <http://ceur-ws.org/persons/V%C3%ADctoriRodr%C3%ADguez> ;
     ns2:name "Víctor Rodríguez" .
 
@@ -226,16 +227,16 @@
     ns2:made <http://ceur-ws.org/Vol-583/#paper01> ;
     ns2:name "Yiwei Cao" .
 
-<http://ceur-ws.org/Vol-583/#event> a ns1:WorkshopEvent ;
-    ns1:hasLocation <http://dbpedia.org/resource/Spain> ;
-    ns1:hasPart <http://ceur-ws.org/Vol-583/#part-WISMA> ;
-    ns1:isSubEventOf <http://ceur-ws.org/Vol-583/#conf> ;
-    ns8:beginsAtDatetime "2010-05-19T00:00:00+00:00"^^xsd:dateTime ;
+<http://ceur-ws.org/Vol-583/#event> a ns4:WorkshopEvent ;
+    ns4:hasLocation <http://dbpedia.org/resource/Spain> ;
+    ns4:hasPart <http://ceur-ws.org/Vol-583/#part-ws> ;
+    ns4:isSubEventOf <http://ceur-ws.org/Vol-583/#conf> ;
+    ns8:beginsAtDatetime "2010-05-20T00:00:00+00:00"^^xsd:dateTime ;
     ns8:endsAtDatetime "2010-05-20T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:license <http://choosealicense.com/licenses/no-license/> .
+    ns9:license "http://choosealicense.com/licenses/no-license/" .
 
 <http://ceur-ws.org/Vol-583/#AnnaiCarreras> a ns2:Person ;
-    ns4:affiliation "" ;
+    ns1:affiliation "" ;
     ns5:sameAs <http://ceur-ws.org/persons/AnnaiCarreras> ;
     ns2:made <http://ceur-ws.org/Vol-583/#papera> ;
     ns2:name "Anna Carreras" .
@@ -277,17 +278,17 @@
     ns2:name "Mario Döller" .
 
 <http://ceur-ws.org/Vol-583/#XavieriMaro%C3%B1as> a ns2:Person ;
-    ns4:affiliation "" ;
+    ns1:affiliation "" ;
     ns5:sameAs <http://ceur-ws.org/persons/XavieriMaro%C3%B1as> ;
     ns2:made <http://ceur-ws.org/Vol-583/#papera> ;
     ns2:name "Xavier Maroñas" .
 
-<http%3A//ceur-ws.org/Vol-583/%23DemoPapers> a ns1:SessionEvent ;
-    ns1:partOf <http://ceur-ws.org/Vol-583/> ;
+<http://ceur-ws.org/Vol-583/#DemoPapers> a ns4:SessionEvent ;
+    ns4:partOf <http://ceur-ws.org/Vol-583/> ;
     ns6:title "Demo Papers" .
 
 <http://ceur-ws.org/Vol-583/#JaimeiDelgado> a ns2:Person ;
-    ns4:affiliation "Chair" ;
+    ns1:affiliation "Chair" ;
     ns5:sameAs <http://ceur-ws.org/persons/JaimeiDelgado> ;
     ns2:made <http://ceur-ws.org/Vol-583/#paper03>,
         <http://ceur-ws.org/Vol-583/#papera> ;
@@ -300,209 +301,209 @@
         <http://ceur-ws.org/Vol-583/#papere> ;
     ns2:name "Ralf Klamma" .
 
-<http://ceur-ws.org/Vol-583/#paper03> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-583/> ;
+<http://ceur-ws.org/Vol-583/#paper03> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-583/> ;
     ns6:title "Image Search Based on a Broker Approach" ;
     ns3:endPage 30 ;
     ns3:numPages 8 ;
-    ns3:section <http%3A//ceur-ws.org/Vol-583/%23LongPapers> ;
+    ns3:section <http://ceur-ws.org/Vol-583/#LongPapers> ;
     ns3:startPage 23 ;
-    ns4:author <http://ceur-ws.org/Vol-583/#JaimeiDelgado>,
+    ns1:author <http://ceur-ws.org/Vol-583/#JaimeiDelgado>,
         <http://ceur-ws.org/Vol-583/#PereiTor%C3%A1n> .
 
-<http://ceur-ws.org/Vol-583/#paperd> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-583/> ;
+<http://ceur-ws.org/Vol-583/#paperd> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-583/> ;
     ns6:title "A Cloud Multimedia Platform" ;
     ns3:endPage 64 ;
     ns3:numPages 4 ;
-    ns3:section <http%3A//ceur-ws.org/Vol-583/%23ShortPapers> ;
+    ns3:section <http://ceur-ws.org/Vol-583/#ShortPapers> ;
     ns3:startPage 61 ;
-    ns4:author <http://ceur-ws.org/Vol-583/#DejaniKovachev>,
+    ns1:author <http://ceur-ws.org/Vol-583/#DejaniKovachev>,
         <http://ceur-ws.org/Vol-583/#RalfiKlamma> .
 
-<http://ceur-ws.org/Vol-583/#papere> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-583/> ;
+<http://ceur-ws.org/Vol-583/#papere> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-583/> ;
     ns6:title "Towards Detecting Faked Images" ;
     ns3:endPage 68 ;
     ns3:numPages 4 ;
-    ns3:section <http%3A//ceur-ws.org/Vol-583/%23ShortPapers> ;
+    ns3:section <http://ceur-ws.org/Vol-583/#ShortPapers> ;
     ns3:startPage 65 ;
-    ns4:author <http://ceur-ws.org/Vol-583/#KhalediA.iN.iRashed>,
+    ns1:author <http://ceur-ws.org/Vol-583/#KhalediA.iN.iRashed>,
         <http://ceur-ws.org/Vol-583/#RalfiKlamma> .
 
-<http://ceur-ws.org/Vol-583/#paper02> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-583/> ;
+<http://ceur-ws.org/Vol-583/#paper02> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-583/> ;
     ns6:title "User-aware Reactive Components for Social Network" ;
     ns3:endPage 22 ;
     ns3:numPages 8 ;
-    ns3:section <http%3A//ceur-ws.org/Vol-583/%23LongPapers> ;
+    ns3:section <http://ceur-ws.org/Vol-583/#LongPapers> ;
     ns3:startPage 15 ;
-    ns4:author <http://ceur-ws.org/Vol-583/#BenoitiBaccot>,
+    ns1:author <http://ceur-ws.org/Vol-583/#BenoitiBaccot>,
         <http://ceur-ws.org/Vol-583/#RomulusiGrigoras>,
         <http://ceur-ws.org/Vol-583/#VincentiCharvillat> .
 
-<http://ceur-ws.org/Vol-583/#paper05> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-583/> ;
+<http://ceur-ws.org/Vol-583/#paper05> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-583/> ;
     ns6:title "Enabling Interoperability between Multimedia Resources: An Ontology Matching Perspective" ;
     ns3:endPage 46 ;
     ns3:numPages 8 ;
-    ns3:section <http%3A//ceur-ws.org/Vol-583/%23LongPapers> ;
+    ns3:section <http://ceur-ws.org/Vol-583/#LongPapers> ;
     ns3:startPage 39 ;
-    ns4:author <http://ceur-ws.org/Vol-583/#C%C3%A9lineiHudelot>,
+    ns1:author <http://ceur-ws.org/Vol-583/#C%C3%A9lineiHudelot>,
         <http://ceur-ws.org/Vol-583/#KonstantiniTodorov>,
         <http://ceur-ws.org/Vol-583/#NicolasiJames> .
 
-<http://ceur-ws.org/Vol-583/#paperbeta> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-583/> ;
+<http://ceur-ws.org/Vol-583/#paperbeta> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-583/> ;
     ns6:title "Callisto: Tag Recommendations by Image Content" ;
     ns3:endPage 88 ;
     ns3:numPages 2 ;
-    ns3:section <http%3A//ceur-ws.org/Vol-583/%23DemoPapers> ;
+    ns3:section <http://ceur-ws.org/Vol-583/#DemoPapers> ;
     ns3:startPage 87 ;
-    ns4:author <http://ceur-ws.org/Vol-583/#ArthuriPitman>,
+    ns1:author <http://ceur-ws.org/Vol-583/#ArthuriPitman>,
         <http://ceur-ws.org/Vol-583/#MathiasiLux>,
         <http://ceur-ws.org/Vol-583/#OgeiMarques> .
 
-<http://ceur-ws.org/Vol-583/#paperc> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-583/> ;
+<http://ceur-ws.org/Vol-583/#paperc> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-583/> ;
     ns6:title "Are Sensory Effects Ready for the World Wide Web?" ;
     ns3:endPage 60 ;
     ns3:numPages 4 ;
-    ns3:section <http%3A//ceur-ws.org/Vol-583/%23ShortPapers> ;
+    ns3:section <http://ceur-ws.org/Vol-583/#ShortPapers> ;
     ns3:startPage 57 ;
-    ns4:author <http://ceur-ws.org/Vol-583/#ChristianiTimmerer>,
+    ns1:author <http://ceur-ws.org/Vol-583/#ChristianiTimmerer>,
         <http://ceur-ws.org/Vol-583/#HermanniHellwagner>,
         <http://ceur-ws.org/Vol-583/#MarkusiWaltl> .
 
-<http%3A//ceur-ws.org/Vol-583/%23SpecialSessionPapers> a ns1:SessionEvent ;
-    ns1:partOf <http://ceur-ws.org/Vol-583/> ;
+<http://ceur-ws.org/Vol-583/#SpecialSessionPapers> a ns4:SessionEvent ;
+    ns4:partOf <http://ceur-ws.org/Vol-583/> ;
     ns6:title "Special Session Papers" .
 
-<http://ceur-ws.org/Vol-583/#paper01> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-583/> ;
+<http://ceur-ws.org/Vol-583/#paper01> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-583/> ;
     ns6:title "Collaborative Video Annotation for Multimedia Sharing between Experts and Amateurs" ;
     ns3:endPage 14 ;
     ns3:numPages 8 ;
-    ns3:section <http%3A//ceur-ws.org/Vol-583/%23LongPapers> ;
+    ns3:section <http://ceur-ws.org/Vol-583/#LongPapers> ;
     ns3:startPage 7 ;
-    ns4:author <http://ceur-ws.org/Vol-583/#DominikiRenzel>,
+    ns1:author <http://ceur-ws.org/Vol-583/#DominikiRenzel>,
         <http://ceur-ws.org/Vol-583/#MichaeliLottko>,
         <http://ceur-ws.org/Vol-583/#RalfiKlamma>,
         <http://ceur-ws.org/Vol-583/#YiweiiCao> .
 
-<http://ceur-ws.org/Vol-583/#papera> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-583/> ;
+<http://ceur-ws.org/Vol-583/#papera> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-583/> ;
     ns6:title "Access Control Issues in Social Networks" ;
     ns3:endPage 51 ;
     ns3:numPages 5 ;
-    ns3:section <http%3A//ceur-ws.org/Vol-583/%23ShortPapers> ;
+    ns3:section <http://ceur-ws.org/Vol-583/#ShortPapers> ;
     ns3:startPage 47 ;
-    ns4:author <http://ceur-ws.org/Vol-583/#AnnaiCarreras>,
+    ns1:author <http://ceur-ws.org/Vol-583/#AnnaiCarreras>,
         <http://ceur-ws.org/Vol-583/#EvaiRodr%C3%ADguez>,
         <http://ceur-ws.org/Vol-583/#JaimeiDelgado>,
         <http://ceur-ws.org/Vol-583/#XavieriMaro%C3%B1as> .
 
-<http://ceur-ws.org/Vol-583/#paperf> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-583/> ;
+<http://ceur-ws.org/Vol-583/#paperf> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-583/> ;
     ns6:title "Content Security and Privacy Preservation in Social Networks" ;
     ns3:endPage 72 ;
     ns3:numPages 4 ;
-    ns3:section <http%3A//ceur-ws.org/Vol-583/%23SpecialSessionPapers> ;
+    ns3:section <http://ceur-ws.org/Vol-583/#SpecialSessionPapers> ;
     ns3:startPage 69 ;
-    ns4:author <http://ceur-ws.org/Vol-583/#IgoriSantos>,
+    ns1:author <http://ceur-ws.org/Vol-583/#IgoriSantos>,
         <http://ceur-ws.org/Vol-583/#Jos%C3%A9iMar%C3%ADaiG%C3%B3mez>,
         <http://ceur-ws.org/Vol-583/#Jos%C3%A9iMigueliMart%C3%ADn>,
         <http://ceur-ws.org/Vol-583/#PabloiGarc%C3%ADa> .
 
-<http://ceur-ws.org/Vol-583/#paperg> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-583/> ;
+<http://ceur-ws.org/Vol-583/#paperg> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-583/> ;
     ns6:title "Security 2.0: Trusted Identity Service" ;
     ns3:endPage 76 ;
     ns3:numPages 4 ;
-    ns3:section <http%3A//ceur-ws.org/Vol-583/%23SpecialSessionPapers> ;
+    ns3:section <http://ceur-ws.org/Vol-583/#SpecialSessionPapers> ;
     ns3:startPage 73 ;
-    ns4:author <http://ceur-ws.org/Vol-583/#AntonioiAmaya>,
+    ns1:author <http://ceur-ws.org/Vol-583/#AntonioiAmaya>,
         <http://ceur-ws.org/Vol-583/#DavidiPrieto>,
         <http://ceur-ws.org/Vol-583/#MigueliOchoa>,
         <http://ceur-ws.org/Vol-583/#VanessaiAlvarez> .
 
-<http%3A//ceur-ws.org/Vol-583/%23LongPapers> a ns1:SessionEvent ;
-    ns1:partOf <http://ceur-ws.org/Vol-583/> ;
+<http://ceur-ws.org/Vol-583/#LongPapers> a ns4:SessionEvent ;
+    ns4:partOf <http://ceur-ws.org/Vol-583/> ;
     ns6:title "Long Papers" .
 
-<http%3A//ceur-ws.org/Vol-583/%23ShortPapers> a ns1:SessionEvent ;
-    ns1:partOf <http://ceur-ws.org/Vol-583/> ;
+<http://ceur-ws.org/Vol-583/#ShortPapers> a ns4:SessionEvent ;
+    ns4:partOf <http://ceur-ws.org/Vol-583/> ;
     ns6:title "Short Papers" .
 
-<http://ceur-ws.org/Vol-583/#paperalfa> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-583/> ;
+<http://ceur-ws.org/Vol-583/#paperalfa> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-583/> ;
     ns6:title "VAnalyzer: a MPEG-7 based Semantic Video Annotation Tool" ;
     ns3:endPage 86 ;
     ns3:numPages 2 ;
-    ns3:section <http%3A//ceur-ws.org/Vol-583/%23DemoPapers> ;
+    ns3:section <http://ceur-ws.org/Vol-583/#DemoPapers> ;
     ns3:startPage 85 ;
-    ns4:author <http://ceur-ws.org/Vol-583/#DavidiCoquil>,
+    ns1:author <http://ceur-ws.org/Vol-583/#DavidiCoquil>,
         <http://ceur-ws.org/Vol-583/#FlorianiStegmaier>,
         <http://ceur-ws.org/Vol-583/#HaraldiKosch>,
         <http://ceur-ws.org/Vol-583/#MarioiD%C3%B6ller>,
         <http://ceur-ws.org/Vol-583/#VanessaiEl-Khoury> .
 
-<http://ceur-ws.org/Vol-583/#paperh> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-583/> ;
+<http://ceur-ws.org/Vol-583/#paperh> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-583/> ;
     ns6:title "Distributed Control Access Management in Federated Identity Systems" ;
     ns3:endPage 80 ;
     ns3:numPages 4 ;
-    ns3:section <http%3A//ceur-ws.org/Vol-583/%23SpecialSessionPapers> ;
+    ns3:section <http://ceur-ws.org/Vol-583/#SpecialSessionPapers> ;
     ns3:startPage 77 ;
-    ns4:author <http://ceur-ws.org/Vol-583/#AlbertoiSicre>,
+    ns1:author <http://ceur-ws.org/Vol-583/#AlbertoiSicre>,
         <http://ceur-ws.org/Vol-583/#AljosaiPasic>,
         <http://ceur-ws.org/Vol-583/#AntonioiF.iG%C3%B3mez>,
         <http://ceur-ws.org/Vol-583/#GabrieliL%C3%B3pez>,
         <http://ceur-ws.org/Vol-583/#ManueliGil> .
 
-<http://ceur-ws.org/Vol-583/#paperi> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-583/> ;
+<http://ceur-ws.org/Vol-583/#paperi> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-583/> ;
     ns6:title "A Trustworthy and Privacy-Enhancing Registration Process for Social Network Services" ;
     ns3:endPage 84 ;
     ns3:numPages 4 ;
-    ns3:section <http%3A//ceur-ws.org/Vol-583/%23SpecialSessionPapers> ;
+    ns3:section <http://ceur-ws.org/Vol-583/#SpecialSessionPapers> ;
     ns3:startPage 81 ;
-    ns4:author <http://ceur-ws.org/Vol-583/#AnaiBallester>,
+    ns1:author <http://ceur-ws.org/Vol-583/#AnaiBallester>,
         <http://ceur-ws.org/Vol-583/#DavidiCampos>,
         <http://ceur-ws.org/Vol-583/#FranciscoiJordan>,
         <http://ceur-ws.org/Vol-583/#HelenaiPujol>,
         <http://ceur-ws.org/Vol-583/#JorgeiPalacio> .
 
-<http://ceur-ws.org/Vol-583/#paper04> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-583/> ;
+<http://ceur-ws.org/Vol-583/#paper04> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-583/> ;
     ns6:title "A Metadata Model for P2P Distribution" ;
     ns3:endPage 38 ;
     ns3:numPages 8 ;
-    ns3:section <http%3A//ceur-ws.org/Vol-583/%23LongPapers> ;
+    ns3:section <http://ceur-ws.org/Vol-583/#LongPapers> ;
     ns3:startPage 31 ;
-    ns4:author <http://ceur-ws.org/Vol-583/#ChristianiTimmerer>,
+    ns1:author <http://ceur-ws.org/Vol-583/#ChristianiTimmerer>,
         <http://ceur-ws.org/Vol-583/#HermanniHellwagner>,
         <http://ceur-ws.org/Vol-583/#KeithiMitchell>,
         <http://ceur-ws.org/Vol-583/#MichaeliEberhard>,
         <http://ceur-ws.org/Vol-583/#MichaeliGrafl>,
         <http://ceur-ws.org/Vol-583/#SamiDutton> .
 
-<http://ceur-ws.org/Vol-583/#paperb> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-583/> ;
+<http://ceur-ws.org/Vol-583/#paperb> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-583/> ;
     ns6:title "Live-Ticker Supported Sports Video Annotation" ;
     ns3:endPage 56 ;
     ns3:numPages 4 ;
-    ns3:section <http%3A//ceur-ws.org/Vol-583/%23ShortPapers> ;
+    ns3:section <http://ceur-ws.org/Vol-583/#ShortPapers> ;
     ns3:startPage 53 ;
-    ns4:author <http://ceur-ws.org/Vol-583/#DavidiCoquil>,
+    ns1:author <http://ceur-ws.org/Vol-583/#DavidiCoquil>,
         <http://ceur-ws.org/Vol-583/#FlorianiStegmaier>,
         <http://ceur-ws.org/Vol-583/#HaraldiKosch>,
         <http://ceur-ws.org/Vol-583/#LyesiLimam>,
         <http://ceur-ws.org/Vol-583/#MarioiD%C3%B6ller>,
         <http://ceur-ws.org/Vol-583/#TobiasiR.iMayer> .
 
-<http://ceur-ws.org/Vol-583/> a ns1:Proceedings ;
-    ns1:hasPart <http://ceur-ws.org/Vol-583/#paper01>,
+<http://ceur-ws.org/Vol-583/> a ns4:Proceedings ;
+    ns4:hasPart <http://ceur-ws.org/Vol-583/#paper01>,
         <http://ceur-ws.org/Vol-583/#paper02>,
         <http://ceur-ws.org/Vol-583/#paper03>,
         <http://ceur-ws.org/Vol-583/#paper04>,
@@ -518,13 +519,13 @@
         <http://ceur-ws.org/Vol-583/#paperg>,
         <http://ceur-ws.org/Vol-583/#paperh>,
         <http://ceur-ws.org/Vol-583/#paperi> ;
-    ns1:hasSession <http%3A//ceur-ws.org/Vol-583/%23DemoPapers>,
-        <http%3A//ceur-ws.org/Vol-583/%23LongPapers>,
-        <http%3A//ceur-ws.org/Vol-583/%23ShortPapers>,
-        <http%3A//ceur-ws.org/Vol-583/%23SpecialSessionPapers> ;
+    ns4:hasSession <http://ceur-ws.org/Vol-583/#DemoPapers>,
+        <http://ceur-ws.org/Vol-583/#LongPapers>,
+        <http://ceur-ws.org/Vol-583/#ShortPapers>,
+        <http://ceur-ws.org/Vol-583/#SpecialSessionPapers> ;
     ns7:issued "2010-05-18T00:00:00+00:00"^^xsd:dateTime ;
     ns3:presentedAt <http://ceur-ws.org/Vol-583/#event> ;
-    ns4:editor <http://ceur-ws.org/Vol-583/#AnnaiCarreras>,
+    ns1:editor <http://ceur-ws.org/Vol-583/#AnnaiCarreras>,
         <http://ceur-ws.org/Vol-583/#JaimeiDelgado>,
         <http://ceur-ws.org/Vol-583/#V%C3%ADctoriRodr%C3%ADguez>,
         <http://ceur-ws.org/Vol-583/#XavieriMaro%C3%B1as> .

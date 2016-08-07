@@ -1,139 +1,45 @@
 @prefix ns1: <http://purl.org/ontology/bibo/#> .
-@prefix ns2: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns2: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix ns3: <http://data.semanticweb.org/ns/swc/ontology/#> .
 @prefix ns4: <http://xmlns.com/foaf/0.1/> .
 @prefix ns5: <http://swrc.ontoware.org/ontology/#> .
 @prefix ns6: <http://www.w3.org/2002/07/owl#> .
 @prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns8: <http://purl.org/dc/elements/1.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1579/#%C5%81ukasziKidzi%C5%84ski> a ns4:Person ;
-    ns5:affiliation "" ;
-    ns6:sameAs <http://ceur-ws.org/persons/%C5%81ukasziKidzi%C5%84ski> ;
-    ns4:name "Łukasz Kidziński" .
-
-<http://ceur-ws.org/Vol-1579/#AbelardoiPardo> a ns4:Person ;
-    ns5:affiliation "" ;
-    ns6:sameAs <http://ceur-ws.org/persons/AbelardoiPardo> ;
-    ns4:name "Abelardo Pardo" .
-
-<http://ceur-ws.org/Vol-1579/#AlexandrosiKleftodimos> a ns4:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/AlexandrosiKleftodimos> ;
-    ns4:made <http://ceur-ws.org/Vol-1579/#paper5> ;
-    ns4:name "Alexandros Kleftodimos" .
-
-<http://ceur-ws.org/Vol-1579/#CarlosiTurro> a ns4:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/CarlosiTurro> ;
-    ns4:made <http://ceur-ws.org/Vol-1579/#paper4> ;
-    ns4:name "Carlos Turro" .
-
-<http://ceur-ws.org/Vol-1579/#DemetriosiG.iSampson> a ns4:Person ;
-    ns5:affiliation "" ;
-    ns6:sameAs <http://ceur-ws.org/persons/DemetriosiG.iSampson> ;
-    ns4:name "Demetrios G. Sampson" .
-
-<http://ceur-ws.org/Vol-1579/#H.iUlrichiHoppe> a ns4:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/H.iUlrichiHoppe> ;
-    ns4:made <http://ceur-ws.org/Vol-1579/#paper2> ;
-    ns4:name "H. Ulrich Hoppe" .
-
-<http://ceur-ws.org/Vol-1579/#JosefiWachtler> a ns4:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/JosefiWachtler> ;
-    ns4:made <http://ceur-ws.org/Vol-1579/#paper3> ;
-    ns4:name "Josef Wachtler" .
-
-<http://ceur-ws.org/Vol-1579/#event> a ns3:WorkshopEvent ;
-    ns3:hasLocation <http://dbpedia.org/resource/Scotland> ;
-    ns3:hasPart <http://ceur-ws.org/Vol-1579/#part-SE>,
-        <http://ceur-ws.org/Vol-1579/#part-VBL> ;
-    ns3:isSubEventOf <http://ceur-ws.org/Vol-1579/#conf> ;
-    ns7:beginsAtDatetime "2016-04-26T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:endsAtDatetime "2016-04-26T00:00:00+00:00"^^xsd:dateTime .
-
-<http://ceur-ws.org/Vol-1579/#IliasiO.iPappas> a ns4:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/IliasiO.iPappas> ;
-    ns4:made <http://ceur-ws.org/Vol-1579/#paper6>,
-        <http://ceur-ws.org/Vol-1579/#paper7> ;
-    ns4:name "Ilias O. Pappas" .
-
-<http://ceur-ws.org/Vol-1579/#MichailiN.iGiannakos> a ns4:Person ;
-    ns5:affiliation "" ;
-    ns6:sameAs <http://ceur-ws.org/persons/MichailiN.iGiannakos> ;
-    ns4:made <http://ceur-ws.org/Vol-1579/#paper1> ;
-    ns4:name "Michail N. Giannakos" .
-
-<http://ceur-ws.org/Vol-1579/#paper1> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1579/> ;
-    ns2:title "Enhancing Video-Based Learning Experience through Smart Environments and Analytics" ;
-    ns1:endPage 6 ;
-    ns1:numPages 6 ;
-    ns1:startPage 1 ;
-    ns5:author <http://ceur-ws.org/Vol-1579/#MichailiN.iGiannakos> .
-
-<http://ceur-ws.org/Vol-1579/#paper2> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1579/> ;
-    ns2:title "Learning about Science through the Creation of Videos - Lessons Learned from the JuxtaLearn Project" ;
-    ns1:endPage 7 ;
-    ns1:numPages 1 ;
-    ns1:startPage 7 ;
-    ns5:author <http://ceur-ws.org/Vol-1579/#H.iUlrichiHoppe> .
-
-<http://ceur-ws.org/Vol-1579/#paper3> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1579/> ;
-    ns2:title "On Using Learning Analytics to Track the Activity of Interactive MOOC Videos" ;
-    ns1:endPage 17 ;
-    ns1:numPages 10 ;
-    ns1:startPage 8 ;
-    ns5:author <http://ceur-ws.org/Vol-1579/#JosefiWachtler> .
-
-<http://ceur-ws.org/Vol-1579/#paper4> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1579/> ;
-    ns2:title "Video is Key for Flipped Learning: An Experience at Universitat Politecnica de Valencia" ;
-    ns1:endPage 25 ;
-    ns1:numPages 8 ;
-    ns1:startPage 18 ;
-    ns5:author <http://ceur-ws.org/Vol-1579/#CarlosiTurro> .
-
-<http://ceur-ws.org/Vol-1579/#paper5> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1579/> ;
-    ns2:title "An Interactive Video-based Learning Environment that Supports Learning Analytics for Teaching 'Image Editing'" ;
-    ns1:endPage 33 ;
-    ns1:numPages 8 ;
-    ns1:startPage 26 ;
-    ns5:author <http://ceur-ws.org/Vol-1579/#AlexandrosiKleftodimos> .
-
-<http://ceur-ws.org/Vol-1579/#paper6> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1579/> ;
-    ns2:title "Video-Based Learning Adoption: A Typology of Learners" ;
-    ns1:endPage 41 ;
-    ns1:numPages 8 ;
-    ns1:startPage 34 ;
-    ns5:author <http://ceur-ws.org/Vol-1579/#IliasiO.iPappas> .
-
-<http://ceur-ws.org/Vol-1579/#paper7> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1579/> ;
-    ns2:title "Making Sense of Learning Analytics with a Configurational Approach" ;
-    ns1:endPage 52 ;
-    ns1:numPages 11 ;
-    ns1:startPage 42 ;
-    ns5:author <http://ceur-ws.org/Vol-1579/#IliasiO.iPappas> .
-
 <http://ceur-ws.org/Vol-1579/> a ns3:Proceedings ;
-    ns3:hasPart <http://ceur-ws.org/Vol-1579/#paper1>,
-        <http://ceur-ws.org/Vol-1579/#paper2>,
-        <http://ceur-ws.org/Vol-1579/#paper3>,
-        <http://ceur-ws.org/Vol-1579/#paper4>,
-        <http://ceur-ws.org/Vol-1579/#paper5>,
-        <http://ceur-ws.org/Vol-1579/#paper6>,
-        <http://ceur-ws.org/Vol-1579/#paper7> ;
-    ns8:issued "2016-04-19T00:00:00+00:00"^^xsd:dateTime ;
+    ns2:issued "2016-04-19T00:00:00+00:00"^^xsd:dateTime ;
     ns1:presentedAt <http://ceur-ws.org/Vol-1579/#event> ;
     ns5:editor <http://ceur-ws.org/Vol-1579/#%C5%81ukasziKidzi%C5%84ski>,
         <http://ceur-ws.org/Vol-1579/#AbelardoiPardo>,
         <http://ceur-ws.org/Vol-1579/#DemetriosiG.iSampson>,
         <http://ceur-ws.org/Vol-1579/#MichailiN.iGiannakos> .
+
+<http://ceur-ws.org/Vol-1579/#%C5%81ukasziKidzi%C5%84ski> a ns4:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/%C5%81ukasziKidzi%C5%84ski> ;
+    ns4:name "Łukasz Kidziński" .
+
+<http://ceur-ws.org/Vol-1579/#AbelardoiPardo> a ns4:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/AbelardoiPardo> ;
+    ns4:name "Abelardo Pardo" .
+
+<http://ceur-ws.org/Vol-1579/#DemetriosiG.iSampson> a ns4:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/DemetriosiG.iSampson> ;
+    ns4:name "Demetrios G. Sampson" .
+
+<http://ceur-ws.org/Vol-1579/#MichailiN.iGiannakos> a ns4:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/MichailiN.iGiannakos> ;
+    ns4:name "Michail N. Giannakos" .
+
+<http://ceur-ws.org/Vol-1579/#event> a ns3:WorkshopEvent ;
+    ns3:hasLocation <http://dbpedia.org/resource/Scotland> ;
+    ns3:hasPart <http://ceur-ws.org/Vol-1579/#part-LAK> ;
+    ns3:isSubEventOf <http://ceur-ws.org/Vol-1579/#conf> ;
+    ns7:beginsAtDatetime "2016-04-26T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:endsAtDatetime "2016-04-26T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:license "http://creativecommons.org/publicdomain/zero/1.0/" .
 

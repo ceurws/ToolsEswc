@@ -1,11 +1,12 @@
 @prefix ns1: <http://xmlns.com/foaf/0.1/> .
 @prefix ns2: <http://www.w3.org/2002/07/owl#> .
 @prefix ns3: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns4: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns5: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns6: <http://purl.org/ontology/bibo/#> .
-@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns4: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns5: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns6: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns7: <http://purl.org/ontology/bibo/#> .
+@prefix ns8: <http://purl.org/dc/elements/1.1/> .
+@prefix ns9: <http://purl.org/NET/c4dm/timeline.owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -216,11 +217,6 @@
     ns1:made <http://ceur-ws.org/Vol-208/#paper11> ;
     ns1:name "Jon del Portillo" .
 
-<http://ceur-ws.org/Vol-208/#Jos%EF%BF%BDiM.iGarc%EF%BF%BDa> a ns1:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/Jos%EF%BF%BDiM.iGarc%EF%BF%BDa> ;
-    ns1:made <http://ceur-ws.org/Vol-208/#paper24> ;
-    ns1:name "Jos� M. Garc�a" .
-
 <http://ceur-ws.org/Vol-208/#Jos%EF%BF%BDiMar%EF%BF%BDaiGuti%EF%BF%BDrrez> a ns1:Person ;
     ns2:sameAs <http://ceur-ws.org/persons/Jos%EF%BF%BDiMar%EF%BF%BDaiGuti%EF%BF%BDrrez> ;
     ns1:made <http://ceur-ws.org/Vol-208/#paper17> ;
@@ -411,13 +407,13 @@
     ns1:made <http://ceur-ws.org/Vol-208/#paper20> ;
     ns1:name "Yen-Ling Chang" .
 
-<http://ceur-ws.org/Vol-208/#event> a ns5:WorkshopEvent ;
-    ns5:hasLocation <http://dbpedia.org/resource/Spain> ;
-    ns5:hasPart <http://ceur-ws.org/Vol-208/#part-ICUC> ;
-    ns5:isSubEventOf <http://ceur-ws.org/Vol-208/#conf> ;
-    ns7:beginsAtDatetime "2006-06-07T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:endsAtDatetime "2006-06-09T00:00:00+00:00"^^xsd:dateTime ;
-    ns4:license <http://choosealicense.com/licenses/no-license/> .
+<http://ceur-ws.org/Vol-208/#event> a ns4:WorkshopEvent ;
+    ns4:hasLocation <http://dbpedia.org/resource/Spain> ;
+    ns4:hasPart <http://ceur-ws.org/Vol-208/#part-CEUR-WS> ;
+    ns4:isSubEventOf <http://ceur-ws.org/Vol-208/#conf> ;
+    ns9:beginsAtDatetime "2006-10-31T00:00:00+00:00"^^xsd:dateTime ;
+    ns9:endsAtDatetime "2006-10-31T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:license "http://choosealicense.com/licenses/no-license/" .
 
 <http://ceur-ws.org/Vol-208/#EnriqueideilaiHoz> a ns1:Person ;
     ns2:sameAs <http://ceur-ws.org/persons/EnriqueideilaiHoz> ;
@@ -436,6 +432,14 @@
     ns1:made <http://ceur-ws.org/Vol-208/#paper04>,
         <http://ceur-ws.org/Vol-208/#paper17> ;
     ns1:name "Jos� Antonio Guti�rrez" .
+
+<http://ceur-ws.org/Vol-208/#Jos%EF%BF%BDiM.iGarc%EF%BF%BDa> a ns1:Person ;
+    ns3:affiliation "� A. Guti�rrez de Mesa",
+        "� M. Guti�rrez Mart�nez",
+        "� R. Hilera Gonz�lez" ;
+    ns2:sameAs <http://ceur-ws.org/persons/Jos%EF%BF%BDiM.iGarc%EF%BF%BDa> ;
+    ns1:made <http://ceur-ws.org/Vol-208/#paper24> ;
+    ns1:name "Jos� M. Garc�a" .
 
 <http://ceur-ws.org/Vol-208/#JuaniAntonioi%EF%BF%BDlvarez> a ns1:Person ;
     ns2:sameAs <http://ceur-ws.org/persons/JuaniAntonioi%EF%BF%BDlvarez> ;
@@ -461,52 +465,52 @@
     ns1:made <http://ceur-ws.org/Vol-208/#paper17> ;
     ns1:name "Roberto Barchino" .
 
-<http://ceur-ws.org/Vol-208/#paper01> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-208/> ;
-    ns4:title "Smart Technologies and Privacy: Running a close race?" ;
+<http://ceur-ws.org/Vol-208/#paper01> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-208/> ;
+    ns5:title "Smart Technologies and Privacy: Running a close race?" ;
     ns3:author <http://ceur-ws.org/Vol-208/#UlrikeiHugl> .
 
-<http://ceur-ws.org/Vol-208/#paper03> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-208/> ;
-    ns4:title "Problems Security Solution by Data Transmision in Ubicuos Systems Based in Rijndael�s Algorithm to Wifi Routers" ;
+<http://ceur-ws.org/Vol-208/#paper03> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-208/> ;
+    ns5:title "Problems Security Solution by Data Transmision in Ubicuos Systems Based in Rijndael�s Algorithm to Wifi Routers" ;
     ns3:author <http://ceur-ws.org/Vol-208/#SalvadoriG%EF%BF%BDmeziPedraz> .
 
-<http://ceur-ws.org/Vol-208/#paper15> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-208/> ;
-    ns4:title "Ontologies in Ubiquitous Computing" ;
+<http://ceur-ws.org/Vol-208/#paper15> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-208/> ;
+    ns5:title "Ontologies in Ubiquitous Computing" ;
     ns3:author <http://ceur-ws.org/Vol-208/#Jos%EF%BF%BDiR.iHilera> .
 
-<http://ceur-ws.org/Vol-208/#paper16> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-208/> ;
-    ns4:title "SOA-based generic architecture for CSCW systems" ;
+<http://ceur-ws.org/Vol-208/#paper16> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-208/> ;
+    ns5:title "SOA-based generic architecture for CSCW systems" ;
     ns3:author <http://ceur-ws.org/Vol-208/#MarioiAnzures-Garc%EF%BF%BDa> .
 
-<http://ceur-ws.org/Vol-208/#paper22> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-208/> ;
-    ns4:title "Implicit Plasticity Framework: a Client-Side Generic Framework for Context-Awareness" ;
+<http://ceur-ws.org/Vol-208/#paper22> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-208/> ;
+    ns5:title "Implicit Plasticity Framework: a Client-Side Generic Framework for Context-Awareness" ;
     ns3:author <http://ceur-ws.org/Vol-208/#MontserratiSend%EF%BF%BDn> .
 
-<http://ceur-ws.org/Vol-208/#paper23> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-208/> ;
-    ns4:title "A Proposal for System Architecture to Integrate Scarce-resources Wireless Sensor Networks into Ubiquitous Environments" ;
+<http://ceur-ws.org/Vol-208/#paper23> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-208/> ;
+    ns5:title "A Proposal for System Architecture to Integrate Scarce-resources Wireless Sensor Networks into Ubiquitous Environments" ;
     ns3:author <http://ceur-ws.org/Vol-208/#PabloiPancardoiGarc%EF%BF%BDa> .
 
-<http://ceur-ws.org/Vol-208/#paper32> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-208/> ;
-    ns4:title "SHOPS: Towards a Secure System for Identity Management and Payments in the New Electrical Market" ;
+<http://ceur-ws.org/Vol-208/#paper32> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-208/> ;
+    ns5:title "SHOPS: Towards a Secure System for Identity Management and Payments in the New Electrical Market" ;
     ns3:author <http://ceur-ws.org/Vol-208/#AlejandroiBascu%EF%BF%BDana> .
 
-<http://ceur-ws.org/Vol-208/#paper34> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-208/> ;
-    ns4:title "On the Performance of XHTML encoding and compression" ;
+<http://ceur-ws.org/Vol-208/#paper34> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-208/> ;
+    ns5:title "On the Performance of XHTML encoding and compression" ;
     ns3:author <http://ceur-ws.org/Vol-208/#SathiamoorthyiManoharan> .
 
-<http://ceur-ws.org/Vol-208/#BernardoiAlarcos> a ns1:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/BernardoiAlarcos> ;
+<http://ceur-ws.org/Vol-208/#BernanrdoiAlarcos> a ns1:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/BernanrdoiAlarcos> ;
     ns1:made <http://ceur-ws.org/Vol-208/#paper02>,
         <http://ceur-ws.org/Vol-208/#paper26>,
         <http://ceur-ws.org/Vol-208/#paper28> ;
-    ns1:name "Bernardo Alarcos" .
+    ns1:name "Bernanrdo Alarcos" .
 
 <http://ceur-ws.org/Vol-208/#CarmeniPag%EF%BF%BDs> a ns1:Person ;
     ns2:sameAs <http://ceur-ws.org/persons/CarmeniPag%EF%BF%BDs> ;
@@ -515,12 +519,19 @@
         <http://ceur-ws.org/Vol-208/#paper33> ;
     ns1:name "Carmen Pag�s" .
 
-<http://ceur-ws.org/Vol-208/#Iv%EF%BF%BDniMars%EF%BF%BD> a ns1:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/Iv%EF%BF%BDniMars%EF%BF%BD> ;
+<http://ceur-ws.org/Vol-208/#Iv%EF%BF%BDniMars%EF%BF%BD-Maestre> a ns1:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/Iv%EF%BF%BDniMars%EF%BF%BD-Maestre> ;
     ns1:made <http://ceur-ws.org/Vol-208/#paper02>,
         <http://ceur-ws.org/Vol-208/#paper07>,
         <http://ceur-ws.org/Vol-208/#paper26> ;
-    ns1:name "Iv�n Mars�" .
+    ns1:name "Iv�n Mars�-Maestre" .
+
+<http://ceur-ws.org/Vol-208/#Jos%EF%BF%BDiJavieriMart%EF%BF%BDnez> a ns1:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/Jos%EF%BF%BDiJavieriMart%EF%BF%BDnez> ;
+    ns1:made <http://ceur-ws.org/Vol-208/#paper04>,
+        <http://ceur-ws.org/Vol-208/#paper17>,
+        <http://ceur-ws.org/Vol-208/#paper33> ;
+    ns1:name "Jos� Javier Mart�nez" .
 
 <http://ceur-ws.org/Vol-208/#Jos%EF%BF%BDiR.iHilera> a ns1:Person ;
     ns2:sameAs <http://ceur-ws.org/persons/Jos%EF%BF%BDiR.iHilera> ;
@@ -536,226 +547,216 @@
         <http://ceur-ws.org/Vol-208/#paper28> ;
     ns1:name "Ju�n R. Velasco" .
 
-<http://ceur-ws.org/Vol-208/#paper08> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-208/> ;
-    ns4:title "A DHCP-based IP address autoconfiguration for MANETs" ;
+<http://ceur-ws.org/Vol-208/#paper08> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-208/> ;
+    ns5:title "A DHCP-based IP address autoconfiguration for MANETs" ;
     ns3:author <http://ceur-ws.org/Vol-208/#CarlosiJ.iBernardos>,
         <http://ceur-ws.org/Vol-208/#Mar%EF%BF%BDaiCalderon> .
 
-<http://ceur-ws.org/Vol-208/#paper09> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-208/> ;
-    ns4:title "A transport and application-layer approach to seamless service continuity across heterogeneous wireless networks" ;
+<http://ceur-ws.org/Vol-208/#paper09> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-208/> ;
+    ns5:title "A transport and application-layer approach to seamless service continuity across heterogeneous wireless networks" ;
     ns3:author <http://ceur-ws.org/Vol-208/#CarlosiGarc%EF%BF%BDa-Rubio>,
         <http://ceur-ws.org/Vol-208/#CelesteiCampo> .
 
-<http://ceur-ws.org/Vol-208/#paper19> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-208/> ;
-    ns4:title "A Multi-Channeled Learning Materials Indexing & Enquiry System" ;
+<http://ceur-ws.org/Vol-208/#paper19> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-208/> ;
+    ns5:title "A Multi-Channeled Learning Materials Indexing & Enquiry System" ;
     ns3:author <http://ceur-ws.org/Vol-208/#K.O.iChow1>,
         <http://ceur-ws.org/Vol-208/#K.P.L.iCheung1> .
 
-<http://ceur-ws.org/Vol-208/#paper20> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-208/> ;
-    ns4:title "Trace learning path by mobile technologies as an Instructional Tool Using GPS and GIS in students' field trip to zoo" ;
+<http://ceur-ws.org/Vol-208/#paper20> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-208/> ;
+    ns5:title "Trace learning path by mobile technologies as an Instructional Tool Using GPS and GIS in students' field trip to zoo" ;
     ns3:author <http://ceur-ws.org/Vol-208/#Kuo-HungiHuang>,
         <http://ceur-ws.org/Vol-208/#Yen-LingiChang> .
 
-<http://ceur-ws.org/Vol-208/#paper21> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-208/> ;
-    ns4:title "DoNet" ;
+<http://ceur-ws.org/Vol-208/#paper21> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-208/> ;
+    ns5:title "DoNet" ;
     ns3:author <http://ceur-ws.org/Vol-208/#MalcolmiAttard>,
         <http://ceur-ws.org/Vol-208/#MatthewiMontebello> .
 
-<http://ceur-ws.org/Vol-208/#paper31> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-208/> ;
-    ns4:title "Secure printing of confidential documents for nomadic users" ;
+<http://ceur-ws.org/Vol-208/#paper31> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-208/> ;
+    ns5:title "Secure printing of confidential documents for nomadic users" ;
     ns3:author <http://ceur-ws.org/Vol-208/#LuisiBengochea>,
         <http://ceur-ws.org/Vol-208/#RamiroiCano> .
 
-<http://ceur-ws.org/Vol-208/#Jos%EF%BF%BDiJavieriMart%EF%BF%BDnez> a ns1:Person ;
-    ns3:affiliation "� A. Guti�rrez de Mesa",
-        "� M. Guti�rrez Mart�nez",
-        "� R. Hilera Gonz�lez" ;
-    ns2:sameAs <http://ceur-ws.org/persons/Jos%EF%BF%BDiJavieriMart%EF%BF%BDnez> ;
-    ns1:made <http://ceur-ws.org/Vol-208/#paper04>,
-        <http://ceur-ws.org/Vol-208/#paper17>,
-        <http://ceur-ws.org/Vol-208/#paper33> ;
-    ns1:name "Jos� Javier Mart�nez" .
-
-<http://ceur-ws.org/Vol-208/#paper13> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-208/> ;
-    ns4:title "A Design Model Applied to Development of AmI Systems" ;
+<http://ceur-ws.org/Vol-208/#paper13> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-208/> ;
+    ns5:title "A Design Model Applied to Development of AmI Systems" ;
     ns3:author <http://ceur-ws.org/Vol-208/#J.L.iGarrido>,
         <http://ceur-ws.org/Vol-208/#M.iGea1>,
         <http://ceur-ws.org/Vol-208/#R.F.iArroyo> .
 
-<http://ceur-ws.org/Vol-208/#paper14> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-208/> ;
-    ns4:title "Performance monitoring and analysis of wireless communication protocols for mobile devices" ;
+<http://ceur-ws.org/Vol-208/#paper14> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-208/> ;
+    ns5:title "Performance monitoring and analysis of wireless communication protocols for mobile devices" ;
     ns3:author <http://ceur-ws.org/Vol-208/#AlmudenaiD%EF%BF%BDaz>,
         <http://ceur-ws.org/Vol-208/#F.iJavieriRivas>,
         <http://ceur-ws.org/Vol-208/#PedroiMerino> .
 
-<http://ceur-ws.org/Vol-208/#paper18> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-208/> ;
-    ns4:title "On the Role of Mobile Scaffolding in Learning" ;
+<http://ceur-ws.org/Vol-208/#paper18> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-208/> ;
+    ns5:title "On the Role of Mobile Scaffolding in Learning" ;
     ns3:author <http://ceur-ws.org/Vol-208/#DietmariJanetzko>,
         <http://ceur-ws.org/Vol-208/#PauliHayes>,
         <http://ceur-ws.org/Vol-208/#TimiHall> .
 
-<http://ceur-ws.org/Vol-208/#paper24> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-208/> ;
-    ns4:title "Automatic Code Generation for Non-Funtional Aspects in the CORBA-LC Component Model" ;
+<http://ceur-ws.org/Vol-208/#paper24> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-208/> ;
+    ns5:title "Automatic Code Generation for Non-Funtional Aspects in the CORBA-LC Component Model" ;
     ns3:author <http://ceur-ws.org/Vol-208/#AntonioiG%EF%BF%BDmez>,
         <http://ceur-ws.org/Vol-208/#DiegoiSevilla>,
         <http://ceur-ws.org/Vol-208/#Jos%EF%BF%BDiM.iGarc%EF%BF%BDa> .
 
-<http://ceur-ws.org/Vol-208/#paper25> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-208/> ;
-    ns4:title "Transmitting Video Images in XML Web Service" ;
+<http://ceur-ws.org/Vol-208/#paper25> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-208/> ;
+    ns5:title "Transmitting Video Images in XML Web Service" ;
     ns3:author <http://ceur-ws.org/Vol-208/#AntonioiJ.iSierra>,
         <http://ceur-ws.org/Vol-208/#FranciscoiPrieto>,
         <http://ceur-ws.org/Vol-208/#Mar%EF%BF%BDaiCarri%EF%BF%BDniGarc%EF%BF%BDa> .
 
-<http://ceur-ws.org/Vol-208/#paper27> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-208/> ;
-    ns4:title "Integration of Ubiquitous Computing Technologies: a practical case" ;
+<http://ceur-ws.org/Vol-208/#paper27> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-208/> ;
+    ns5:title "Integration of Ubiquitous Computing Technologies: a practical case" ;
     ns3:author <http://ceur-ws.org/Vol-208/#AntonioiFuentes>,
         <http://ceur-ws.org/Vol-208/#EmilioiBol%EF%BF%BDvar>,
         <http://ceur-ws.org/Vol-208/#JavieriTagarro> .
 
-<http://ceur-ws.org/Vol-208/#paper28> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-208/> ;
-    ns4:title "Automated Purchase Negotiations in a Dynac Electronic Marketplace" ;
-    ns3:author <http://ceur-ws.org/Vol-208/#BernardoiAlarcos>,
+<http://ceur-ws.org/Vol-208/#paper28> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-208/> ;
+    ns5:title "Automated Purchase Negotiations in a Dynac Electronic Marketplace" ;
+    ns3:author <http://ceur-ws.org/Vol-208/#BernanrdoiAlarcos>,
         <http://ceur-ws.org/Vol-208/#Ju%EF%BF%BDniR.iVelasco>,
         <http://ceur-ws.org/Vol-208/#MigueliA.iL%EF%BF%BDpez-Carmona> .
 
-<http://ceur-ws.org/Vol-208/#paper29> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-208/> ;
-    ns4:title "A Self-Healing Mechanism for State Machine Based Components" ;
+<http://ceur-ws.org/Vol-208/#paper29> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-208/> ;
+    ns5:title "A Self-Healing Mechanism for State Machine Based Components" ;
     ns3:author <http://ceur-ws.org/Vol-208/#AlbertoiIzagirre>,
         <http://ceur-ws.org/Vol-208/#GoiuriaiSagardui>,
         <http://ceur-ws.org/Vol-208/#XabieriElkorobarrutia> .
 
-<http://ceur-ws.org/Vol-208/#paper37> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-208/> ;
-    ns4:title "Mobile Access to Patient Clinical Records and Related Medical Documentation" ;
+<http://ceur-ws.org/Vol-208/#paper37> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-208/> ;
+    ns5:title "Mobile Access to Patient Clinical Records and Related Medical Documentation" ;
     ns3:author <http://ceur-ws.org/Vol-208/#DiegoiGachet>,
         <http://ceur-ws.org/Vol-208/#EnriqueiPuertas>,
         <http://ceur-ws.org/Vol-208/#ManuelideiBuenaga> .
 
-<http://ceur-ws.org/Vol-208/#paper02> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-208/> ;
-    ns4:title "A Hierarchical, Agent-based Approach to Security in Smart Offices" ;
-    ns3:author <http://ceur-ws.org/Vol-208/#BernardoiAlarcos>,
+<http://ceur-ws.org/Vol-208/#paper02> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-208/> ;
+    ns5:title "A Hierarchical, Agent-based Approach to Security in Smart Offices" ;
+    ns3:author <http://ceur-ws.org/Vol-208/#BernanrdoiAlarcos>,
         <http://ceur-ws.org/Vol-208/#EnriqueideilaiHoz>,
-        <http://ceur-ws.org/Vol-208/#Iv%EF%BF%BDniMars%EF%BF%BD>,
+        <http://ceur-ws.org/Vol-208/#Iv%EF%BF%BDniMars%EF%BF%BD-Maestre>,
         <http://ceur-ws.org/Vol-208/#Ju%EF%BF%BDniR.iVelasco> .
 
-<http://ceur-ws.org/Vol-208/#paper06> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-208/> ;
-    ns4:title "�Where do we go? OnTheWay: A prediction system for spatial locations" ;
+<http://ceur-ws.org/Vol-208/#paper06> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-208/> ;
+    ns5:title "�Where do we go? OnTheWay: A prediction system for spatial locations" ;
     ns3:author <http://ceur-ws.org/Vol-208/#FranciscoiVelasco>,
         <http://ceur-ws.org/Vol-208/#JuaniAntonioi%EF%BF%BDlvarez>,
         <http://ceur-ws.org/Vol-208/#JuaniAntonioiOrtega>,
         <http://ceur-ws.org/Vol-208/#LuisiGonz%EF%BF%BDlez> .
 
-<http://ceur-ws.org/Vol-208/#paper07> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-208/> ;
-    ns4:title "A proposal for a hardware architecture for ubiquitous computing in smart home environments" ;
+<http://ceur-ws.org/Vol-208/#paper07> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-208/> ;
+    ns5:title "A proposal for a hardware architecture for ubiquitous computing in smart home environments" ;
     ns3:author <http://ceur-ws.org/Vol-208/#AlvaroiParicio>,
         <http://ceur-ws.org/Vol-208/#AntonioiJ.ideiVicente>,
-        <http://ceur-ws.org/Vol-208/#Iv%EF%BF%BDniMars%EF%BF%BD>,
+        <http://ceur-ws.org/Vol-208/#Iv%EF%BF%BDniMars%EF%BF%BD-Maestre>,
         <http://ceur-ws.org/Vol-208/#Ju%EF%BF%BDniR.iVelasco> .
 
-<http://ceur-ws.org/Vol-208/#paper10> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-208/> ;
-    ns4:title "New standards on mobile communications" ;
+<http://ceur-ws.org/Vol-208/#paper10> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-208/> ;
+    ns5:title "New standards on mobile communications" ;
     ns3:author <http://ceur-ws.org/Vol-208/#GonzaloiSolas>,
         <http://ceur-ws.org/Vol-208/#JuaniMel%EF%BF%BDndez>,
         <http://ceur-ws.org/Vol-208/#PabloiCabezas>,
         <http://ceur-ws.org/Vol-208/#PauliBustamante> .
 
-<http://ceur-ws.org/Vol-208/#paper11> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-208/> ;
-    ns4:title "A ubiquitous and adaptable services delivery platform for any kind of residential environment" ;
+<http://ceur-ws.org/Vol-208/#paper11> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-208/> ;
+    ns5:title "A ubiquitous and adaptable services delivery platform for any kind of residential environment" ;
     ns3:author <http://ceur-ws.org/Vol-208/#GonzaloiSolas>,
         <http://ceur-ws.org/Vol-208/#JoniLegarda>,
         <http://ceur-ws.org/Vol-208/#JonideliPortillo>,
         <http://ceur-ws.org/Vol-208/#PauliBustamante> .
 
-<http://ceur-ws.org/Vol-208/#paper12> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-208/> ;
-    ns4:title "Towards a communication agnostic middleware for Ambient Intelligence" ;
+<http://ceur-ws.org/Vol-208/#paper12> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-208/> ;
+    ns5:title "Towards a communication agnostic middleware for Ambient Intelligence" ;
     ns3:author <http://ceur-ws.org/Vol-208/#AitoriAlmeida>,
         <http://ceur-ws.org/Vol-208/#DavidiSainz>,
         <http://ceur-ws.org/Vol-208/#DiegoiLopezideiIpi%EF%BF%BDa>,
         <http://ceur-ws.org/Vol-208/#JoniVald%EF%BF%BDs> .
 
-<http://ceur-ws.org/Vol-208/#paper26> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-208/> ;
-    ns4:title "JPEG2000 Images Protection Sent to Mobile Devices" ;
-    ns3:author <http://ceur-ws.org/Vol-208/#BernardoiAlarcos>,
+<http://ceur-ws.org/Vol-208/#paper26> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-208/> ;
+    ns5:title "JPEG2000 Images Protection Sent to Mobile Devices" ;
+    ns3:author <http://ceur-ws.org/Vol-208/#BernanrdoiAlarcos>,
         <http://ceur-ws.org/Vol-208/#EnriqueideilaiHoz>,
-        <http://ceur-ws.org/Vol-208/#Iv%EF%BF%BDniMars%EF%BF%BD>,
+        <http://ceur-ws.org/Vol-208/#Iv%EF%BF%BDniMars%EF%BF%BD-Maestre>,
         <http://ceur-ws.org/Vol-208/#UkraniaiD%EF%BF%BDaz> .
 
-<http://ceur-ws.org/Vol-208/#paper33> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-208/> ;
-    ns4:title "Ubiquitous applications comparative: applications executed in server vs. applications in client" ;
+<http://ceur-ws.org/Vol-208/#paper33> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-208/> ;
+    ns5:title "Ubiquitous applications comparative: applications executed in server vs. applications in client" ;
     ns3:author <http://ceur-ws.org/Vol-208/#AlfonsoiL%EF%BF%BDpez>,
         <http://ceur-ws.org/Vol-208/#CarmeniPag%EF%BF%BDs>,
         <http://ceur-ws.org/Vol-208/#JavieriG%EF%BF%BDmez>,
         <http://ceur-ws.org/Vol-208/#Jos%EF%BF%BDiJavieriMart%EF%BF%BDnez> .
 
-<http://ceur-ws.org/Vol-208/#paper35> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-208/> ;
-    ns4:title "Extended sensations on interactive telecommunication" ;
+<http://ceur-ws.org/Vol-208/#paper35> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-208/> ;
+    ns5:title "Extended sensations on interactive telecommunication" ;
     ns3:author <http://ceur-ws.org/Vol-208/#AlejandroiFern%EF%BF%BDndez>,
         <http://ceur-ws.org/Vol-208/#JuaniAntonioi%EF%BF%BDlvarez>,
         <http://ceur-ws.org/Vol-208/#JuaniAntonioiOrtega>,
         <http://ceur-ws.org/Vol-208/#ManueliDavidiCruz> .
 
-<http://ceur-ws.org/Vol-208/#paper04> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-208/> ;
-    ns4:title "Implementing Learning Objects Repositories for Mobile Devices" ;
+<http://ceur-ws.org/Vol-208/#paper04> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-208/> ;
+    ns5:title "Implementing Learning Objects Repositories for Mobile Devices" ;
     ns3:author <http://ceur-ws.org/Vol-208/#CarmeniPag%EF%BF%BDs>,
         <http://ceur-ws.org/Vol-208/#Jos%EF%BF%BDiAntonioiGuti%EF%BF%BDrrez>,
         <http://ceur-ws.org/Vol-208/#Jos%EF%BF%BDiJavieriMart%EF%BF%BDnez>,
         <http://ceur-ws.org/Vol-208/#Jos%EF%BF%BDiR.iHilera>,
         <http://ceur-ws.org/Vol-208/#LuisideiMarcos> .
 
-<http://ceur-ws.org/Vol-208/#paper05> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-208/> ;
-    ns4:title "Ubiquitous and biometric applications on distance education. An alternative to the traditional examination" ;
+<http://ceur-ws.org/Vol-208/#paper05> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-208/> ;
+    ns5:title "Ubiquitous and biometric applications on distance education. An alternative to the traditional examination" ;
     ns3:author <http://ceur-ws.org/Vol-208/#AntonioiColmenar>,
         <http://ceur-ws.org/Vol-208/#JuaniPeire>,
         <http://ceur-ws.org/Vol-208/#ManueliA.iCastro>,
         <http://ceur-ws.org/Vol-208/#RosarioiGil>,
         <http://ceur-ws.org/Vol-208/#SergioiMart%EF%BF%BDn> .
 
-<http://ceur-ws.org/Vol-208/#paper30> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-208/> ;
-    ns4:title "A proposal of payment system for public transport based on ubiquitous paradigm" ;
+<http://ceur-ws.org/Vol-208/#paper30> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-208/> ;
+    ns5:title "A proposal of payment system for public transport based on ubiquitous paradigm" ;
     ns3:author <http://ceur-ws.org/Vol-208/#CarmeloiR.iGarc%EF%BF%BDa>,
         <http://ceur-ws.org/Vol-208/#FranciscoiAlay%EF%BF%BDn>,
         <http://ceur-ws.org/Vol-208/#GabinoiPadr%EF%BF%BDn>,
         <http://ceur-ws.org/Vol-208/#JoaquiniCaraballo>,
         <http://ceur-ws.org/Vol-208/#RicardoiP%EF%BF%BDrez> .
 
-<http://ceur-ws.org/Vol-208/#paper36> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-208/> ;
-    ns4:title "A review of ubiquitous applications and technologies oriented towards disabled and senior people" ;
+<http://ceur-ws.org/Vol-208/#paper36> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-208/> ;
+    ns5:title "A review of ubiquitous applications and technologies oriented towards disabled and senior people" ;
     ns3:author <http://ceur-ws.org/Vol-208/#D.iLozano-Garc%EF%BF%BDa>,
         <http://ceur-ws.org/Vol-208/#E.iEgea-L%EF%BF%BDpez>,
         <http://ceur-ws.org/Vol-208/#J.P.iMu%EF%BF%BDoz-Gea>,
         <http://ceur-ws.org/Vol-208/#J.iGarc%EF%BF%BDa-Haro>,
         <http://ceur-ws.org/Vol-208/#J.iVales-Alonso> .
 
-<http://ceur-ws.org/Vol-208/#paper17> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-208/> ;
-    ns4:title "An Example of Application in Mobile Learning Technologies" ;
+<http://ceur-ws.org/Vol-208/#paper17> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-208/> ;
+    ns5:title "An Example of Application in Mobile Learning Technologies" ;
     ns3:author <http://ceur-ws.org/Vol-208/#CarmeniPag%EF%BF%BDs>,
         <http://ceur-ws.org/Vol-208/#Jos%EF%BF%BDiAntonioiGuti%EF%BF%BDrrez>,
         <http://ceur-ws.org/Vol-208/#Jos%EF%BF%BDiJavieriMart%EF%BF%BDnez>,
@@ -765,8 +766,8 @@
         <http://ceur-ws.org/Vol-208/#RobertoiBarchino>,
         <http://ceur-ws.org/Vol-208/#SalvadoriOt%EF%BF%BDn> .
 
-<http://ceur-ws.org/Vol-208/> a ns5:Proceedings ;
-    ns5:hasPart <http://ceur-ws.org/Vol-208/#paper01>,
+<http://ceur-ws.org/Vol-208/> a ns4:Proceedings ;
+    ns4:hasPart <http://ceur-ws.org/Vol-208/#paper01>,
         <http://ceur-ws.org/Vol-208/#paper02>,
         <http://ceur-ws.org/Vol-208/#paper03>,
         <http://ceur-ws.org/Vol-208/#paper04>,
@@ -803,8 +804,8 @@
         <http://ceur-ws.org/Vol-208/#paper35>,
         <http://ceur-ws.org/Vol-208/#paper36>,
         <http://ceur-ws.org/Vol-208/#paper37> ;
-    ns8:issued "2006-10-31T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:presentedAt <http://ceur-ws.org/Vol-208/#event> ;
-    ns3:editor <http://ceur-ws.org/Vol-208/#Jos%EF%BF%BDiJavieriMart%EF%BF%BDnez>,
+    ns6:issued "2006-10-31T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:presentedAt <http://ceur-ws.org/Vol-208/#event> ;
+    ns3:editor <http://ceur-ws.org/Vol-208/#Jos%EF%BF%BDiM.iGarc%EF%BF%BDa>,
         <http://ceur-ws.org/Vol-208/#RobertoiBarchino> .
 

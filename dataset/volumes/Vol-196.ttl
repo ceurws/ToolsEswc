@@ -1,11 +1,12 @@
 @prefix ns1: <http://xmlns.com/foaf/0.1/> .
-@prefix ns2: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns3: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns4: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns2: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns3: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns4: <http://purl.org/dc/elements/1.1/#> .
 @prefix ns5: <http://www.w3.org/2002/07/owl#> .
 @prefix ns6: <http://purl.org/ontology/bibo/#> .
-@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns7: <http://purl.org/dc/elements/1.1/> .
 @prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns9: <http://purl.org/NET/c4dm/timeline.owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -27,7 +28,7 @@
     ns1:name "Alberto Martelli" .
 
 <http://ceur-ws.org/Vol-196/#AxeliPolleres> a ns1:Person ;
-    ns3:affiliation "Universidad Rey Juan Carlos, Madrid" ;
+    ns2:affiliation "Universidad Rey Juan Carlos, Madrid" ;
     ns5:sameAs <http://ceur-ws.org/persons/AxeliPolleres> ;
     ns1:name "Axel Polleres" .
 
@@ -172,7 +173,7 @@
     ns1:name "Srividya Kona" .
 
 <http://ceur-ws.org/Vol-196/#StefaniDecker> a ns1:Person ;
-    ns3:affiliation "DERI, National University of Ireland, Galway" ;
+    ns2:affiliation "DERI, National University of Ireland, Galway" ;
     ns5:sameAs <http://ceur-ws.org/persons/StefaniDecker> ;
     ns1:name "Stefan Decker" .
 
@@ -206,31 +207,33 @@
     ns1:made <http://ceur-ws.org/Vol-196/#alpsws2006-poster4> ;
     ns1:name "Zsolt Nagy" .
 
-<http://ceur-ws.org/Vol-196/#event> a ns4:WorkshopEvent ;
-    ns4:hasLocation <http://dbpedia.org/resource/United_States> ;
-    ns4:hasPart <http://ceur-ws.org/Vol-196/#part-ALPSWS> ;
-    ns4:isSubEventOf <http://ceur-ws.org/Vol-196/#conf> ;
-    ns7:beginsAtDatetime "2006-08-16T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:endsAtDatetime "2006-08-16T00:00:00+00:00"^^xsd:dateTime ;
-    ns2:license <http://choosealicense.com/licenses/no-license/> .
+<http://ceur-ws.org/Vol-196/#event> a ns3:WorkshopEvent ;
+    ns3:hasLocation <http://dbpedia.org/resource/United_States> ;
+    ns3:hasPart <http://ceur-ws.org/Vol-196/#part-ALPSWS>,
+        <http://ceur-ws.org/Vol-196/#part-ICLP>,
+        <http://ceur-ws.org/Vol-196/#part-WA> ;
+    ns3:isSubEventOf <http://ceur-ws.org/Vol-196/#conf> ;
+    ns9:beginsAtDatetime "2006-08-28T00:00:00+00:00"^^xsd:dateTime ;
+    ns9:endsAtDatetime "2006-08-28T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:license "http://choosealicense.com/licenses/no-license/" .
 
 <http://ceur-ws.org/Vol-196/#GopaliGupta> a ns1:Person ;
-    ns3:affiliation "University of Texas at Dallas" ;
+    ns2:affiliation "University of Texas at Dallas" ;
     ns5:sameAs <http://ceur-ws.org/persons/GopaliGupta> ;
     ns1:made <http://ceur-ws.org/Vol-196/#alpsws2006-paper6> ;
     ns1:name "Gopal Gupta" .
 
 <http://ceur-ws.org/Vol-196/#JosideiBruijn> a ns1:Person ;
-    ns3:affiliation "DERI, Leopold-Franzens Universitaet Innsbruck" ;
+    ns2:affiliation "DERI, Leopold-Franzens Universitaet Innsbruck" ;
     ns5:sameAs <http://ceur-ws.org/persons/JosideiBruijn> ;
     ns1:made <http://ceur-ws.org/Vol-196/#alpsws2006-paper4> ;
     ns1:name "Jos de Bruijn" .
 
-<http://ceur-ws.org/Vol-196/#alpsws2006-poster2> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-196/> ;
-    ns2:title "Modeling, verifying and reasoning about web services" ;
-    ns6:section <http%3A//ceur-ws.org/Vol-196/%23PosterAbstracts> ;
-    ns3:author <http://ceur-ws.org/Vol-196/#AlbertoiMartelli> .
+<http://ceur-ws.org/Vol-196/#alpsws2006-poster2> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-196/> ;
+    ns4:title "Modeling, verifying and reasoning about web services" ;
+    ns6:section <http://ceur-ws.org/Vol-196/#PosterAbstracts> ;
+    ns2:author <http://ceur-ws.org/Vol-196/#AlbertoiMartelli> .
 
 <http://ceur-ws.org/Vol-196/#GiovambattistaiIanni> a ns1:Person ;
     ns5:sameAs <http://ceur-ws.org/persons/GiovambattistaiIanni> ;
@@ -239,12 +242,12 @@
         <http://ceur-ws.org/Vol-196/#alpsws2006-poster3> ;
     ns1:name "Giovambattista Ianni" .
 
-<http://ceur-ws.org/Vol-196/#HansiTompits.> a ns1:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/HansiTompits.> ;
+<http://ceur-ws.org/Vol-196/#HansiTompits> a ns1:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/HansiTompits> ;
     ns1:made <http://ceur-ws.org/Vol-196/#alpsws2006-paper1>,
         <http://ceur-ws.org/Vol-196/#alpsws2006-paper3>,
         <http://ceur-ws.org/Vol-196/#alpsws2006-poster3> ;
-    ns1:name "Hans Tompits." .
+    ns1:name "Hans Tompits" .
 
 <http://ceur-ws.org/Vol-196/#RomaniSchindilauer> a ns1:Person ;
     ns5:sameAs <http://ceur-ws.org/persons/RomaniSchindilauer> ;
@@ -260,101 +263,101 @@
         <http://ceur-ws.org/Vol-196/#alpsws2006-poster3> ;
     ns1:name "Thomas Eiter" .
 
-<http://ceur-ws.org/Vol-196/#alpsws2006-paper5> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-196/> ;
-    ns2:title "Intelligent Agents that Reason about Web Services: A Logic Programming Approach" ;
-    ns6:section <http%3A//ceur-ws.org/Vol-196/%23LPandSemanticWebServices> ;
-    ns3:author <http://ceur-ws.org/Vol-196/#GiovanniiCasella.>,
+<http://ceur-ws.org/Vol-196/#alpsws2006-paper5> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-196/> ;
+    ns4:title "Intelligent Agents that Reason about Web Services: A Logic Programming Approach" ;
+    ns6:section <http://ceur-ws.org/Vol-196/#LPandSemanticWebServices> ;
+    ns2:author <http://ceur-ws.org/Vol-196/#GiovanniiCasella.>,
         <http://ceur-ws.org/Vol-196/#VivianaiMascardi> .
 
-<http%3A//ceur-ws.org/Vol-196/%23LPandSemanticWebServices> a ns4:SessionEvent ;
-    ns4:partOf <http://ceur-ws.org/Vol-196/> ;
-    ns2:title "LP and Semantic Web Services" .
+<http://ceur-ws.org/Vol-196/#LPandSemanticWebServices> a ns3:SessionEvent ;
+    ns3:partOf <http://ceur-ws.org/Vol-196/> ;
+    ns4:title "LP and Semantic Web Services" .
 
-<http://ceur-ws.org/Vol-196/#alpsws2006-paper2> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-196/> ;
-    ns2:title "Query Evaluation and Optimization in the Semantic Web" ;
-    ns6:section <http%3A//ceur-ws.org/Vol-196/%23LPandtheSemanticWeb%3A> ;
-    ns3:author <http://ceur-ws.org/Vol-196/#EdnaiRuckhaus>,
+<http://ceur-ws.org/Vol-196/#alpsws2006-paper2> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-196/> ;
+    ns4:title "Query Evaluation and Optimization in the Semantic Web" ;
+    ns6:section <http://ceur-ws.org/Vol-196/#LPandtheSemanticWeb> ;
+    ns2:author <http://ceur-ws.org/Vol-196/#EdnaiRuckhaus>,
         <http://ceur-ws.org/Vol-196/#EduardoiRuiz.>,
         <http://ceur-ws.org/Vol-196/#Maria-EstheriVidal> .
 
-<http://ceur-ws.org/Vol-196/#alpsws2006-poster1> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-196/> ;
-    ns2:title "Towards Automated Web Service Composition with the Abductive Event Calculus" ;
-    ns6:section <http%3A//ceur-ws.org/Vol-196/%23PosterAbstracts> ;
-    ns3:author <http://ceur-ws.org/Vol-196/#IlyasiCicekli>,
+<http://ceur-ws.org/Vol-196/#alpsws2006-poster1> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-196/> ;
+    ns4:title "Towards Automated Web Service Composition with the Abductive Event Calculus" ;
+    ns6:section <http://ceur-ws.org/Vol-196/#PosterAbstracts> ;
+    ns2:author <http://ceur-ws.org/Vol-196/#IlyasiCicekli>,
         <http://ceur-ws.org/Vol-196/#NihaniKesimiCicekli>,
         <http://ceur-ws.org/Vol-196/#OnuriAydin> .
 
-<http://ceur-ws.org/Vol-196/#alpsws2006-poster4> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-196/> ;
-    ns2:title "Prolog Execution Engines for Description Logic Reasoners" ;
-    ns6:section <http%3A//ceur-ws.org/Vol-196/%23PosterAbstracts> ;
-    ns3:author <http://ceur-ws.org/Vol-196/#GergelyiLukacsy>,
+<http://ceur-ws.org/Vol-196/#alpsws2006-poster4> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-196/> ;
+    ns4:title "Prolog Execution Engines for Description Logic Reasoners" ;
+    ns6:section <http://ceur-ws.org/Vol-196/#PosterAbstracts> ;
+    ns2:author <http://ceur-ws.org/Vol-196/#GergelyiLukacsy>,
         <http://ceur-ws.org/Vol-196/#PeteriSzeredi>,
         <http://ceur-ws.org/Vol-196/#ZsoltiNagy> .
 
-<http%3A//ceur-ws.org/Vol-196/%23LPandtheSemanticWeb%3A> a ns4:SessionEvent ;
-    ns4:partOf <http://ceur-ws.org/Vol-196/> ;
-    ns2:title "LP and the Semantic Web:" .
+<http://ceur-ws.org/Vol-196/#LPandtheSemanticWeb> a ns3:SessionEvent ;
+    ns3:partOf <http://ceur-ws.org/Vol-196/> ;
+    ns4:title "LP and the Semantic Web:" .
 
-<http://ceur-ws.org/Vol-196/#alpsws2006-paper3> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-196/> ;
-    ns2:title "dlvhex: A Tool for Semantic-Web Reasoning under the Answer-Set Semantics" ;
-    ns6:section <http%3A//ceur-ws.org/Vol-196/%23LPandtheSemanticWeb%3A> ;
-    ns3:author <http://ceur-ws.org/Vol-196/#GiovambattistaiIanni>,
-        <http://ceur-ws.org/Vol-196/#HansiTompits.>,
+<http://ceur-ws.org/Vol-196/#alpsws2006-paper3> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-196/> ;
+    ns4:title "dlvhex: A Tool for Semantic-Web Reasoning under the Answer-Set Semantics" ;
+    ns6:section <http://ceur-ws.org/Vol-196/#LPandtheSemanticWeb> ;
+    ns2:author <http://ceur-ws.org/Vol-196/#GiovambattistaiIanni>,
+        <http://ceur-ws.org/Vol-196/#HansiTompits>,
         <http://ceur-ws.org/Vol-196/#RomaniSchindilauer>,
         <http://ceur-ws.org/Vol-196/#ThomasiEiter> .
 
-<http://ceur-ws.org/Vol-196/#alpsws2006-paper6> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-196/> ;
-    ns2:title "Efficient Web Service Discovery and Composition using Constraint Logic Programming" ;
-    ns6:section <http%3A//ceur-ws.org/Vol-196/%23LPandSemanticWebServices> ;
-    ns3:author <http://ceur-ws.org/Vol-196/#AjayiBansal>,
+<http://ceur-ws.org/Vol-196/#alpsws2006-paper6> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-196/> ;
+    ns4:title "Efficient Web Service Discovery and Composition using Constraint Logic Programming" ;
+    ns6:section <http://ceur-ws.org/Vol-196/#LPandSemanticWebServices> ;
+    ns2:author <http://ceur-ws.org/Vol-196/#AjayiBansal>,
         <http://ceur-ws.org/Vol-196/#GopaliGupta>,
         <http://ceur-ws.org/Vol-196/#SrividyaiKona>,
         <http://ceur-ws.org/Vol-196/#ThomasiHite.> .
 
-<http://ceur-ws.org/Vol-196/#alpsws2006-poster3> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-196/> ;
-    ns2:title "A RuleML Syntax for Answer-Set Programming" ;
-    ns6:section <http%3A//ceur-ws.org/Vol-196/%23PosterAbstracts> ;
-    ns3:author <http://ceur-ws.org/Vol-196/#GiovambattistaiIanni>,
-        <http://ceur-ws.org/Vol-196/#HansiTompits.>,
+<http://ceur-ws.org/Vol-196/#alpsws2006-poster3> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-196/> ;
+    ns4:title "A RuleML Syntax for Answer-Set Programming" ;
+    ns6:section <http://ceur-ws.org/Vol-196/#PosterAbstracts> ;
+    ns2:author <http://ceur-ws.org/Vol-196/#GiovambattistaiIanni>,
+        <http://ceur-ws.org/Vol-196/#HansiTompits>,
         <http://ceur-ws.org/Vol-196/#RomaniSchindilauer>,
         <http://ceur-ws.org/Vol-196/#ThomasiEiter> .
 
-<http%3A//ceur-ws.org/Vol-196/%23PosterAbstracts> a ns4:SessionEvent ;
-    ns4:partOf <http://ceur-ws.org/Vol-196/> ;
-    ns2:title "Poster Abstracts" .
+<http://ceur-ws.org/Vol-196/#PosterAbstracts> a ns3:SessionEvent ;
+    ns3:partOf <http://ceur-ws.org/Vol-196/> ;
+    ns4:title "Poster Abstracts" .
 
-<http://ceur-ws.org/Vol-196/#alpsws2006-paper1> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-196/> ;
-    ns2:title "Forgetting in Managing Rules and Ontologies" ;
-    ns6:section <http%3A//ceur-ws.org/Vol-196/%23LPandtheSemanticWeb%3A> ;
-    ns3:author <http://ceur-ws.org/Vol-196/#GiovambattistaiIanni>,
-        <http://ceur-ws.org/Vol-196/#HansiTompits.>,
+<http://ceur-ws.org/Vol-196/#alpsws2006-paper1> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-196/> ;
+    ns4:title "Forgetting in Managing Rules and Ontologies" ;
+    ns6:section <http://ceur-ws.org/Vol-196/#LPandtheSemanticWeb> ;
+    ns2:author <http://ceur-ws.org/Vol-196/#GiovambattistaiIanni>,
+        <http://ceur-ws.org/Vol-196/#HansiTompits>,
         <http://ceur-ws.org/Vol-196/#KeweniWang.>,
         <http://ceur-ws.org/Vol-196/#RomaniSchindilauer>,
         <http://ceur-ws.org/Vol-196/#ThomasiEiter> .
 
-<http://ceur-ws.org/Vol-196/#alpsws2006-paper4> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-196/> ;
-    ns2:title "G-Hybrid Knowledge Bases" ;
-    ns6:section <http%3A//ceur-ws.org/Vol-196/%23LPandtheSemanticWeb%3A> ;
-    ns3:author <http://ceur-ws.org/Vol-196/#CristinaiFeier>,
+<http://ceur-ws.org/Vol-196/#alpsws2006-paper4> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-196/> ;
+    ns4:title "G-Hybrid Knowledge Bases" ;
+    ns6:section <http://ceur-ws.org/Vol-196/#LPandtheSemanticWeb> ;
+    ns2:author <http://ceur-ws.org/Vol-196/#CristinaiFeier>,
         <http://ceur-ws.org/Vol-196/#DavyivaniNieuwenborgh.>,
         <http://ceur-ws.org/Vol-196/#JosideiBruijn>,
         <http://ceur-ws.org/Vol-196/#LiviaiPredoiu>,
         <http://ceur-ws.org/Vol-196/#StijniHeymans> .
 
-<http://ceur-ws.org/Vol-196/#alpsws2006-paper7> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-196/> ;
-    ns2:title "Policy-based Reasoning for Smart Web Service Interaction" ;
-    ns6:section <http%3A//ceur-ws.org/Vol-196/%23LPandSemanticWebServices> ;
-    ns3:author <http://ceur-ws.org/Vol-196/#EvelinaiLamma>,
+<http://ceur-ws.org/Vol-196/#alpsws2006-paper7> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-196/> ;
+    ns4:title "Policy-based Reasoning for Smart Web Service Interaction" ;
+    ns6:section <http://ceur-ws.org/Vol-196/#LPandSemanticWebServices> ;
+    ns2:author <http://ceur-ws.org/Vol-196/#EvelinaiLamma>,
         <http://ceur-ws.org/Vol-196/#FedericoiChesani>,
         <http://ceur-ws.org/Vol-196/#MarcoiAlberti>,
         <http://ceur-ws.org/Vol-196/#MarcoiGavanelli>,
@@ -362,11 +365,11 @@
         <http://ceur-ws.org/Vol-196/#PaolaiMello>,
         <http://ceur-ws.org/Vol-196/#PaoloiTorroni.> .
 
-<http://ceur-ws.org/Vol-196/#alpsws2006-poster5> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-196/> ;
-    ns2:title "Applying Prolog to Semantic Web Ontologies and Rules: Moving Toward Description Logic Programs" ;
-    ns6:section <http%3A//ceur-ws.org/Vol-196/%23PosterAbstracts> ;
-    ns3:author <http://ceur-ws.org/Vol-196/#AdrianiJohnson>,
+<http://ceur-ws.org/Vol-196/#alpsws2006-poster5> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-196/> ;
+    ns4:title "Applying Prolog to Semantic Web Ontologies and Rules: Moving Toward Description Logic Programs" ;
+    ns6:section <http://ceur-ws.org/Vol-196/#PosterAbstracts> ;
+    ns2:author <http://ceur-ws.org/Vol-196/#AdrianiJohnson>,
         <http://ceur-ws.org/Vol-196/#DeborahiNichols>,
         <http://ceur-ws.org/Vol-196/#JasoniPeterson>,
         <http://ceur-ws.org/Vol-196/#KareniFox>,
@@ -377,8 +380,8 @@
         <http://ceur-ws.org/Vol-196/#SteveiLopez>,
         <http://ceur-ws.org/Vol-196/#SuzetteiStoutenberg> .
 
-<http://ceur-ws.org/Vol-196/> a ns4:Proceedings ;
-    ns4:hasPart <http://ceur-ws.org/Vol-196/#alpsws2006-paper1>,
+<http://ceur-ws.org/Vol-196/> a ns3:Proceedings ;
+    ns3:hasPart <http://ceur-ws.org/Vol-196/#alpsws2006-paper1>,
         <http://ceur-ws.org/Vol-196/#alpsws2006-paper2>,
         <http://ceur-ws.org/Vol-196/#alpsws2006-paper3>,
         <http://ceur-ws.org/Vol-196/#alpsws2006-paper4>,
@@ -390,12 +393,12 @@
         <http://ceur-ws.org/Vol-196/#alpsws2006-poster3>,
         <http://ceur-ws.org/Vol-196/#alpsws2006-poster4>,
         <http://ceur-ws.org/Vol-196/#alpsws2006-poster5> ;
-    ns4:hasSession <http%3A//ceur-ws.org/Vol-196/%23LPandSemanticWebServices>,
-        <http%3A//ceur-ws.org/Vol-196/%23LPandtheSemanticWeb%3A>,
-        <http%3A//ceur-ws.org/Vol-196/%23PosterAbstracts> ;
+    ns3:hasSession <http://ceur-ws.org/Vol-196/#LPandSemanticWebServices>,
+        <http://ceur-ws.org/Vol-196/#LPandtheSemanticWeb>,
+        <http://ceur-ws.org/Vol-196/#PosterAbstracts> ;
     ns8:issued "2006-08-28T00:00:00+00:00"^^xsd:dateTime ;
     ns6:presentedAt <http://ceur-ws.org/Vol-196/#event> ;
-    ns3:editor <http://ceur-ws.org/Vol-196/#AxeliPolleres>,
+    ns2:editor <http://ceur-ws.org/Vol-196/#AxeliPolleres>,
         <http://ceur-ws.org/Vol-196/#GopaliGupta>,
         <http://ceur-ws.org/Vol-196/#JosideiBruijn>,
         <http://ceur-ws.org/Vol-196/#StefaniDecker> .

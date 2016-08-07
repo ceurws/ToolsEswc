@@ -1,184 +1,45 @@
-@prefix ns1: <http://xmlns.com/foaf/0.1/> .
-@prefix ns2: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns3: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns4: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns5: <http://purl.org/ontology/bibo/#> .
-@prefix ns6: <http://www.w3.org/2002/07/owl#> .
-@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns1: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns2: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns3: <http://xmlns.com/foaf/0.1/> .
+@prefix ns4: <http://www.w3.org/2002/07/owl#> .
+@prefix ns5: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns6: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns7: <http://purl.org/dc/elements/1.1/> .
+@prefix ns8: <http://purl.org/ontology/bibo/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1082/#AdrieniCoulet> a ns1:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/AdrieniCoulet> ;
-    ns1:made <http://ceur-ws.org/Vol-1082/#paper5> ;
-    ns1:name "Adrien Coulet" .
-
-<http://ceur-ws.org/Vol-1082/#AmedeoiNapoli> a ns1:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/AmedeoiNapoli> ;
-    ns1:made <http://ceur-ws.org/Vol-1082/#paper5> ;
-    ns1:name "Amedeo Napoli" .
-
-<http://ceur-ws.org/Vol-1082/#AxeliSchulz> a ns1:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/AxeliSchulz> ;
-    ns1:made <http://ceur-ws.org/Vol-1082/#paper4> ;
-    ns1:name "Axel Schulz" .
-
-<http://ceur-ws.org/Vol-1082/#Claudiaid%27Amato> a ns1:Person ;
-    ns3:affiliation "" ;
-    ns6:sameAs <http://ceur-ws.org/persons/Claudiaid%27Amato> ;
-    ns1:name "Claudia d'Amato" .
-
-<http://ceur-ws.org/Vol-1082/#EneldoiLozaiMencia> a ns1:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/EneldoiLozaiMencia> ;
-    ns1:made <http://ceur-ws.org/Vol-1082/#paper4> ;
-    ns1:name "Eneldo Loza Mencia" .
-
-<http://ceur-ws.org/Vol-1082/#FrederikiJanssen> a ns1:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/FrederikiJanssen> ;
-    ns1:made <http://ceur-ws.org/Vol-1082/#paper4> ;
-    ns1:name "Frederik Janssen" .
-
-<http://ceur-ws.org/Vol-1082/#HeikoiPaulheim> a ns1:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/HeikoiPaulheim> ;
-    ns1:made <http://ceur-ws.org/Vol-1082/#invited> ;
-    ns1:name "Heiko Paulheim" .
-
-<http://ceur-ws.org/Vol-1082/#JindrichiMynarz> a ns1:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/JindrichiMynarz> ;
-    ns1:made <http://ceur-ws.org/Vol-1082/#paper6> ;
-    ns1:name "Jindrich Mynarz" .
-
-<http://ceur-ws.org/Vol-1082/#KrzysztofiWecel> a ns1:Person ;
-    ns3:affiliation "" ;
-    ns6:sameAs <http://ceur-ws.org/persons/KrzysztofiWecel> ;
-    ns1:name "Krzysztof Wecel" .
-
-<http://ceur-ws.org/Vol-1082/#MalikaiSmail-Tabbone> a ns1:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/MalikaiSmail-Tabbone> ;
-    ns1:made <http://ceur-ws.org/Vol-1082/#paper5> ;
-    ns1:name "Malika Smail-Tabbone" .
-
-<http://ceur-ws.org/Vol-1082/#MehwishiAlam> a ns1:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/MehwishiAlam> ;
-    ns1:made <http://ceur-ws.org/Vol-1082/#paper5> ;
-    ns1:name "Mehwish Alam" .
-
-<http://ceur-ws.org/Vol-1082/#MelisachewiWudageiChekol> a ns1:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/MelisachewiWudageiChekol> ;
-    ns1:made <http://ceur-ws.org/Vol-1082/#paper5> ;
-    ns1:name "Melisachew Wudage Chekol" .
-
-<http://ceur-ws.org/Vol-1082/#SimoniHolthausen> a ns1:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/SimoniHolthausen> ;
-    ns1:made <http://ceur-ws.org/Vol-1082/#paper4> ;
-    ns1:name "Simon Holthausen" .
-
-<http://ceur-ws.org/Vol-1082/#StevenideiRooij> a ns1:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/StevenideiRooij> ;
-    ns1:made <http://ceur-ws.org/Vol-1082/#paper2> ;
-    ns1:name "Steven de Rooij" .
-
-<http://ceur-ws.org/Vol-1082/#event> a ns2:WorkshopEvent ;
-    ns2:hasLocation <http://dbpedia.org/resource/Czech_Republic> ;
-    ns2:hasPart <http://ceur-ws.org/Vol-1082/#part-DMoLD> ;
-    ns2:isSubEventOf <http://ceur-ws.org/Vol-1082/#conf> ;
-    ns7:beginsAtDatetime "2013-09-23T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:endsAtDatetime "2013-09-23T00:00:00+00:00"^^xsd:dateTime ;
-    ns4:license <http://choosealicense.com/licenses/no-license/> .
-
-<http%3A//ceur-ws.org/Vol-1082/%23InvitedTalk> a ns2:SessionEvent ;
-    ns2:partOf <http://ceur-ws.org/Vol-1082/> ;
-    ns4:title "Invited Talk" .
-
-<http://ceur-ws.org/Vol-1082/#GerbeniKlaasiDirkideiVries> a ns1:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/GerbeniKlaasiDirkideiVries> ;
-    ns1:made <http://ceur-ws.org/Vol-1082/#paper2>,
-        <http://ceur-ws.org/Vol-1082/#paper3> ;
-    ns1:name "Gerben Klaas Dirk de Vries" .
-
-<http://ceur-ws.org/Vol-1082/#PetriBerka> a ns1:Person ;
-    ns3:affiliation "" ;
-    ns6:sameAs <http://ceur-ws.org/persons/PetriBerka> ;
-    ns1:made <http://ceur-ws.org/Vol-1082/#paper6> ;
-    ns1:name "Petr Berka" .
-
-<http://ceur-ws.org/Vol-1082/#VojtechiSv%C3%A1tek> a ns1:Person ;
-    ns3:affiliation "" ;
-    ns6:sameAs <http://ceur-ws.org/persons/VojtechiSv%C3%A1tek> ;
-    ns1:made <http://ceur-ws.org/Vol-1082/#paper6> ;
-    ns1:name "Vojtech Svátek" .
-
-<http://ceur-ws.org/Vol-1082/#invited> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1082/> ;
-    ns4:title "Exploiting Linked Open Data as Background Knowledge in Data Mining" ;
-    ns5:section <http%3A//ceur-ws.org/Vol-1082/%23InvitedTalk> ;
-    ns3:author <http://ceur-ws.org/Vol-1082/#HeikoiPaulheim> .
-
-<http://ceur-ws.org/Vol-1082/#paper3> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1082/> ;
-    ns4:title "Graph Kernels for Task 1 and 2 of the Linked Data Data Mining Challenge 2013" ;
-    ns5:section <http%3A//ceur-ws.org/Vol-1082/%23LinkedDataMiningChallengePapers> ;
-    ns3:author <http://ceur-ws.org/Vol-1082/#GerbeniKlaasiDirkideiVries> .
-
-<http%3A//ceur-ws.org/Vol-1082/%23OpenTrackResearchPapers> a ns2:SessionEvent ;
-    ns2:partOf <http://ceur-ws.org/Vol-1082/> ;
-    ns4:title "Open Track Research Papers" .
-
-<http://ceur-ws.org/Vol-1082/#paper2> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1082/> ;
-    ns4:title "A Fast and Simple Graph Kernel for RDF" ;
-    ns5:section <http%3A//ceur-ws.org/Vol-1082/%23OpenTrackResearchPapers> ;
-    ns3:author <http://ceur-ws.org/Vol-1082/#GerbeniKlaasiDirkideiVries>,
-        <http://ceur-ws.org/Vol-1082/#StevenideiRooij> .
-
-<http%3A//ceur-ws.org/Vol-1082/%23LinkedDataMiningChallengePapers> a ns2:SessionEvent ;
-    ns2:partOf <http://ceur-ws.org/Vol-1082/> ;
-    ns4:title "Linked Data Mining Challenge Papers" .
-
-<http://ceur-ws.org/Vol-1082/#paper6> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1082/> ;
-    ns4:title "Linked Data Mining Challenge (LDMC) 2013 Summary" ;
-    ns5:section <http%3A//ceur-ws.org/Vol-1082/%23LinkedDataMiningChallengePapers> ;
-    ns3:author <http://ceur-ws.org/Vol-1082/#JindrichiMynarz>,
-        <http://ceur-ws.org/Vol-1082/#PetriBerka>,
-        <http://ceur-ws.org/Vol-1082/#VojtechiSv%C3%A1tek> .
-
-<http://ceur-ws.org/Vol-1082/#paper4> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1082/> ;
-    ns4:title "Using Data Mining on Linked Open Data for Analyzing E-Procurement Information - A Machine Learning approach to the Linked Data Mining Challenge 2013" ;
-    ns5:section <http%3A//ceur-ws.org/Vol-1082/%23LinkedDataMiningChallengePapers> ;
-    ns3:author <http://ceur-ws.org/Vol-1082/#AxeliSchulz>,
-        <http://ceur-ws.org/Vol-1082/#EneldoiLozaiMencia>,
-        <http://ceur-ws.org/Vol-1082/#FrederikiJanssen>,
-        <http://ceur-ws.org/Vol-1082/#SimoniHolthausen> .
-
-<http://ceur-ws.org/Vol-1082/#paper5> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1082/> ;
-    ns4:title "Lattice Based Data Access (LBDA): An Approach for Organizing and Accessing Linked Open Data in Biology" ;
-    ns5:section <http%3A//ceur-ws.org/Vol-1082/%23OpenTrackResearchPapers> ;
-    ns3:author <http://ceur-ws.org/Vol-1082/#AdrieniCoulet>,
-        <http://ceur-ws.org/Vol-1082/#AmedeoiNapoli>,
-        <http://ceur-ws.org/Vol-1082/#MalikaiSmail-Tabbone>,
-        <http://ceur-ws.org/Vol-1082/#MehwishiAlam>,
-        <http://ceur-ws.org/Vol-1082/#MelisachewiWudageiChekol> .
-
-<http://ceur-ws.org/Vol-1082/> a ns2:Proceedings ;
-    ns2:hasPart <http://ceur-ws.org/Vol-1082/#invited>,
-        <http://ceur-ws.org/Vol-1082/#paper2>,
-        <http://ceur-ws.org/Vol-1082/#paper3>,
-        <http://ceur-ws.org/Vol-1082/#paper4>,
-        <http://ceur-ws.org/Vol-1082/#paper5>,
-        <http://ceur-ws.org/Vol-1082/#paper6> ;
-    ns2:hasSession <http%3A//ceur-ws.org/Vol-1082/%23InvitedTalk>,
-        <http%3A//ceur-ws.org/Vol-1082/%23LinkedDataMiningChallengePapers>,
-        <http%3A//ceur-ws.org/Vol-1082/%23OpenTrackResearchPapers> ;
-    ns8:issued "2013-11-15T00:00:00+00:00"^^xsd:dateTime ;
-    ns5:presentedAt <http://ceur-ws.org/Vol-1082/#event> ;
-    ns3:editor <http://ceur-ws.org/Vol-1082/#Claudiaid%27Amato>,
+<http://ceur-ws.org/Vol-1082/> a ns5:Proceedings ;
+    ns1:issued "2013-11-15T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:presentedAt <http://ceur-ws.org/Vol-1082/#event> ;
+    ns2:editor <http://ceur-ws.org/Vol-1082/#Claudiaid%27Amato>,
         <http://ceur-ws.org/Vol-1082/#KrzysztofiWecel>,
         <http://ceur-ws.org/Vol-1082/#PetriBerka>,
         <http://ceur-ws.org/Vol-1082/#VojtechiSv%C3%A1tek> .
+
+<http://ceur-ws.org/Vol-1082/#Claudiaid%27Amato> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/Claudiaid%27Amato> ;
+    ns3:name "Claudia d'Amato" .
+
+<http://ceur-ws.org/Vol-1082/#KrzysztofiWecel> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/KrzysztofiWecel> ;
+    ns3:name "Krzysztof Wecel" .
+
+<http://ceur-ws.org/Vol-1082/#PetriBerka> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/PetriBerka> ;
+    ns3:name "Petr Berka" .
+
+<http://ceur-ws.org/Vol-1082/#VojtechiSv%C3%A1tek> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/VojtechiSv%C3%A1tek> ;
+    ns3:name "Vojtech Svátek" .
+
+<http://ceur-ws.org/Vol-1082/#event> a ns5:WorkshopEvent ;
+    ns5:hasLocation <http://dbpedia.org/resource/Czech_Republic> ;
+    ns5:hasPart <http://ceur-ws.org/Vol-1082/#part-ws> ;
+    ns5:isSubEventOf <http://ceur-ws.org/Vol-1082/#conf> ;
+    ns6:beginsAtDatetime "2013-09-23T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:endsAtDatetime "2013-09-23T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:license "http://choosealicense.com/licenses/no-license/" .
 

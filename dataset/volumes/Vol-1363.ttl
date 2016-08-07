@@ -1,238 +1,53 @@
-@prefix ns1: <http://purl.org/ontology/bibo/#> .
+@prefix ns1: <http://swrc.ontoware.org/ontology/#> .
 @prefix ns2: <http://www.w3.org/2002/07/owl#> .
 @prefix ns3: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns4: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns5: <http://xmlns.com/foaf/0.1/> .
-@prefix ns6: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns4: <http://xmlns.com/foaf/0.1/> .
+@prefix ns5: <http://purl.org/dc/elements/1.1/> .
+@prefix ns6: <http://purl.org/NET/c4dm/timeline.owl#> .
 @prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns8: <http://purl.org/ontology/bibo/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1363/#AchimiRettinger> a ns5:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/AchimiRettinger> ;
-    ns5:made <http://ceur-ws.org/Vol-1363/#paper_3> ;
-    ns5:name "Achim Rettinger" .
+<http://ceur-ws.org/Vol-1363/> a ns3:Proceedings ;
+    ns7:issued "2015-05-18T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:presentedAt <http://ceur-ws.org/Vol-1363/#event> ;
+    ns1:editor <http://ceur-ws.org/Vol-1363/#DavidiA.iShamma>,
+        <http://ceur-ws.org/Vol-1363/#MarcoiRospocher>,
+        <http://ceur-ws.org/Vol-1363/#MariekeivaniErp>,
+        <http://ceur-ws.org/Vol-1363/#Rapha%C3%ABliTroncy>,
+        <http://ceur-ws.org/Vol-1363/#WillemiRobertivaniHage> .
 
-<http://ceur-ws.org/Vol-1363/#AlessioiPalmeroiAprosio> a ns5:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/AlessioiPalmeroiAprosio> ;
-    ns5:made <http://ceur-ws.org/Vol-1363/#paper_6> ;
-    ns5:name "Alessio Palmero Aprosio" .
-
-<http://ceur-ws.org/Vol-1363/#AnastasiaiKrithara> a ns5:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/AnastasiaiKrithara> ;
-    ns5:made <http://ceur-ws.org/Vol-1363/#paper_5> ;
-    ns5:name "Anastasia Krithara" .
-
-<http://ceur-ws.org/Vol-1363/#DavidiA.iShamma> a ns5:Person ;
-    ns4:affiliation "" ;
+<http://ceur-ws.org/Vol-1363/#DavidiA.iShamma> a ns4:Person ;
     ns2:sameAs <http://ceur-ws.org/persons/DavidiA.iShamma> ;
-    ns5:name "David A. Shamma" .
+    ns4:name "David A. Shamma" .
 
-<http://ceur-ws.org/Vol-1363/#ErikiMannens> a ns5:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/ErikiMannens> ;
-    ns5:made <http://ceur-ws.org/Vol-1363/#paper_2> ;
-    ns5:name "Erik Mannens" .
+<http://ceur-ws.org/Vol-1363/#MarcoiRospocher> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/MarcoiRospocher> ;
+    ns4:name "Marco Rospocher" .
 
-<http://ceur-ws.org/Vol-1363/#GeorgiosiPaliouras> a ns5:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/GeorgiosiPaliouras> ;
-    ns5:made <http://ceur-ws.org/Vol-1363/#paper_5> ;
-    ns5:name "Georgios Paliouras" .
-
-<http://ceur-ws.org/Vol-1363/#GerardideiMelo> a ns5:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/GerardideiMelo> ;
-    ns5:made <http://ceur-ws.org/Vol-1363/#paper_7> ;
-    ns5:name "Gerard de Melo" .
-
-<http://ceur-ws.org/Vol-1363/#GregoryiKatsios> a ns5:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/GregoryiKatsios> ;
-    ns5:made <http://ceur-ws.org/Vol-1363/#paper_5> ;
-    ns5:name "Gregory Katsios" .
-
-<http://ceur-ws.org/Vol-1363/#JacoboiRouces> a ns5:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/JacoboiRouces> ;
-    ns5:made <http://ceur-ws.org/Vol-1363/#paper_7> ;
-    ns5:name "Jacobo Rouces" .
-
-<http://ceur-ws.org/Vol-1363/#Jean-PauliCalbimonte> a ns5:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/Jean-PauliCalbimonte> ;
-    ns5:made <http://ceur-ws.org/Vol-1363/#paper_1> ;
-    ns5:name "Jean-Paul Calbimonte" .
-
-<http://ceur-ws.org/Vol-1363/#KarliAberer> a ns5:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/KarliAberer> ;
-    ns5:made <http://ceur-ws.org/Vol-1363/#paper_1> ;
-    ns5:name "Karl Aberer" .
-
-<http://ceur-ws.org/Vol-1363/#KatjaiHose> a ns5:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/KatjaiHose> ;
-    ns5:made <http://ceur-ws.org/Vol-1363/#paper_7> ;
-    ns5:name "Katja Hose" .
-
-<http://ceur-ws.org/Vol-1363/#LaurensiDeiVocht> a ns5:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/LaurensiDeiVocht> ;
-    ns5:made <http://ceur-ws.org/Vol-1363/#paper_2> ;
-    ns5:name "Laurens De Vocht" .
-
-<http://ceur-ws.org/Vol-1363/#LorisiBozzato> a ns5:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/LorisiBozzato> ;
-    ns5:made <http://ceur-ws.org/Vol-1363/#paper_6> ;
-    ns5:name "Loris Bozzato" .
-
-<http://ceur-ws.org/Vol-1363/#LucianoiSerafini> a ns5:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/LucianoiSerafini> ;
-    ns5:made <http://ceur-ws.org/Vol-1363/#paper_6> ;
-    ns5:name "Luciano Serafini" .
-
-<http://ceur-ws.org/Vol-1363/#MariekeivaniErp> a ns5:Person ;
-    ns4:affiliation "" ;
+<http://ceur-ws.org/Vol-1363/#MariekeivaniErp> a ns4:Person ;
     ns2:sameAs <http://ceur-ws.org/persons/MariekeivaniErp> ;
-    ns5:name "Marieke van Erp" .
+    ns4:name "Marieke van Erp" .
 
-<http://ceur-ws.org/Vol-1363/#MartiniEbner> a ns5:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/MartiniEbner> ;
-    ns5:made <http://ceur-ws.org/Vol-1363/#paper_2> ;
-    ns5:name "Martin Ebner" .
-
-<http://ceur-ws.org/Vol-1363/#MichaeliF%C3%A4rber> a ns5:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/MichaeliF%C3%A4rber> ;
-    ns5:made <http://ceur-ws.org/Vol-1363/#paper_3> ;
-    ns5:name "Michael Färber" .
-
-<http://ceur-ws.org/Vol-1363/#Rapha%C3%ABliTroncy> a ns5:Person ;
-    ns4:affiliation "" ;
+<http://ceur-ws.org/Vol-1363/#Rapha%C3%ABliTroncy> a ns4:Person ;
     ns2:sameAs <http://ceur-ws.org/persons/Rapha%C3%ABliTroncy> ;
-    ns5:name "Raphaël Troncy" .
+    ns4:name "Raphaël Troncy" .
 
-<http://ceur-ws.org/Vol-1363/#RikiVanideiWalle> a ns5:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/RikiVanideiWalle> ;
-    ns5:made <http://ceur-ws.org/Vol-1363/#paper_2> ;
-    ns5:name "Rik Van de Walle" .
-
-<http://ceur-ws.org/Vol-1363/#SelveriSoftic> a ns5:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/SelveriSoftic> ;
-    ns5:made <http://ceur-ws.org/Vol-1363/#paper_2> ;
-    ns5:name "Selver Softic" .
-
-<http://ceur-ws.org/Vol-1363/#StefanoiBorgo> a ns5:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/StefanoiBorgo> ;
-    ns5:made <http://ceur-ws.org/Vol-1363/#paper_6> ;
-    ns5:name "Stefano Borgo" .
-
-<http://ceur-ws.org/Vol-1363/#SvitlanaiVakulenko> a ns5:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/SvitlanaiVakulenko> ;
-    ns5:made <http://ceur-ws.org/Vol-1363/#paper_5> ;
-    ns5:name "Svitlana Vakulenko" .
-
-<http://ceur-ws.org/Vol-1363/#WillemiRobertivaniHage> a ns5:Person ;
-    ns4:affiliation "" ;
+<http://ceur-ws.org/Vol-1363/#WillemiRobertivaniHage> a ns4:Person ;
     ns2:sameAs <http://ceur-ws.org/persons/WillemiRobertivaniHage> ;
-    ns5:name "Willem Robert van Hage" .
+    ns4:name "Willem Robert van Hage" .
 
 <http://ceur-ws.org/Vol-1363/#event> a ns3:WorkshopEvent ;
     ns3:hasLocation <http://dbpedia.org/resource/Euro_gold_and_silver_commemorative_coins> ;
     ns3:hasPart <http://ceur-ws.org/Vol-1363/#part-DeRiVE> ;
     ns3:isSubEventOf <http://ceur-ws.org/Vol-1363/#conf> ;
-    ns8:beginsAtDatetime "2015-05-31T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:endsAtDatetime "2015-05-31T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:beginsAtDatetime "2015-05-31T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:endsAtDatetime "2015-05-31T00:00:00+00:00"^^xsd:dateTime ;
+    ns5:license "http://creativecommons.org/publicdomain/zero/1.0/" ;
     rdfs:seeAlso <http://ceur-ws.org/Vol-1123/#event>,
         <http://ceur-ws.org/Vol-779/#event>,
         <http://ceur-ws.org/Vol-902/#event> .
-
-<http://ceur-ws.org/Vol-1363/#MarcoiRospocher> a ns5:Person ;
-    ns4:affiliation "" ;
-    ns2:sameAs <http://ceur-ws.org/persons/MarcoiRospocher> ;
-    ns5:made <http://ceur-ws.org/Vol-1363/#paper_6> ;
-    ns5:name "Marco Rospocher" .
-
-<http://ceur-ws.org/Vol-1363/#paper_1> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1363/> ;
-    ns6:title "Reactive Processing of RDF Streams of Events" ;
-    ns1:endPage 11 ;
-    ns1:numPages 11 ;
-    ns1:section <http%3A//ceur-ws.org/Vol-1363/%23ResearchPapers> ;
-    ns1:startPage 1 ;
-    ns4:author <http://ceur-ws.org/Vol-1363/#Jean-PauliCalbimonte>,
-        <http://ceur-ws.org/Vol-1363/#KarliAberer> .
-
-<http://ceur-ws.org/Vol-1363/#paper_3> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1363/> ;
-    ns6:title "Toward Real Event Detection" ;
-    ns1:endPage 34 ;
-    ns1:numPages 11 ;
-    ns1:section <http%3A//ceur-ws.org/Vol-1363/%23ResearchPapers> ;
-    ns1:startPage 24 ;
-    ns4:author <http://ceur-ws.org/Vol-1363/#AchimiRettinger>,
-        <http://ceur-ws.org/Vol-1363/#MichaeliF%C3%A4rber> .
-
-<http://ceur-ws.org/Vol-1363/#paper_7> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1363/> ;
-    ns6:title "Representing Specialized Events with FrameBase" ;
-    ns1:endPage 69 ;
-    ns1:numPages 12 ;
-    ns1:section <http%3A//ceur-ws.org/Vol-1363/%23ResearchPapers> ;
-    ns1:startPage 58 ;
-    ns4:author <http://ceur-ws.org/Vol-1363/#GerardideiMelo>,
-        <http://ceur-ws.org/Vol-1363/#JacoboiRouces>,
-        <http://ceur-ws.org/Vol-1363/#KatjaiHose> .
-
-<http://ceur-ws.org/Vol-1363/#paper_5> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1363/> ;
-    ns6:title "Towards Open Domain Event Extraction from Twitter: REVEALing Entity Relations" ;
-    ns1:endPage 46 ;
-    ns1:numPages 12 ;
-    ns1:section <http%3A//ceur-ws.org/Vol-1363/%23ResearchPapers> ;
-    ns1:startPage 35 ;
-    ns4:author <http://ceur-ws.org/Vol-1363/#AnastasiaiKrithara>,
-        <http://ceur-ws.org/Vol-1363/#GeorgiosiPaliouras>,
-        <http://ceur-ws.org/Vol-1363/#GregoryiKatsios>,
-        <http://ceur-ws.org/Vol-1363/#SvitlanaiVakulenko> .
-
-<http://ceur-ws.org/Vol-1363/#paper_2> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1363/> ;
-    ns6:title "COLINDA: Modeling, Representing and Using Scientific Events in the Web of Data" ;
-    ns1:endPage 23 ;
-    ns1:numPages 12 ;
-    ns1:section <http%3A//ceur-ws.org/Vol-1363/%23ResearchPapers> ;
-    ns1:startPage 12 ;
-    ns4:author <http://ceur-ws.org/Vol-1363/#ErikiMannens>,
-        <http://ceur-ws.org/Vol-1363/#LaurensiDeiVocht>,
-        <http://ceur-ws.org/Vol-1363/#MartiniEbner>,
-        <http://ceur-ws.org/Vol-1363/#RikiVanideiWalle>,
-        <http://ceur-ws.org/Vol-1363/#SelveriSoftic> .
-
-<http://ceur-ws.org/Vol-1363/#paper_6> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1363/> ;
-    ns6:title "A Contextual Framework for Reasoning on Events" ;
-    ns1:endPage 57 ;
-    ns1:numPages 11 ;
-    ns1:section <http%3A//ceur-ws.org/Vol-1363/%23ResearchPapers> ;
-    ns1:startPage 47 ;
-    ns4:author <http://ceur-ws.org/Vol-1363/#AlessioiPalmeroiAprosio>,
-        <http://ceur-ws.org/Vol-1363/#LorisiBozzato>,
-        <http://ceur-ws.org/Vol-1363/#LucianoiSerafini>,
-        <http://ceur-ws.org/Vol-1363/#MarcoiRospocher>,
-        <http://ceur-ws.org/Vol-1363/#StefanoiBorgo> .
-
-<http%3A//ceur-ws.org/Vol-1363/%23ResearchPapers> a ns3:SessionEvent ;
-    ns3:partOf <http://ceur-ws.org/Vol-1363/> ;
-    ns6:title "Research Papers" .
-
-<http://ceur-ws.org/Vol-1363/> a ns3:Proceedings ;
-    ns3:hasPart <http://ceur-ws.org/Vol-1363/#paper_1>,
-        <http://ceur-ws.org/Vol-1363/#paper_2>,
-        <http://ceur-ws.org/Vol-1363/#paper_3>,
-        <http://ceur-ws.org/Vol-1363/#paper_5>,
-        <http://ceur-ws.org/Vol-1363/#paper_6>,
-        <http://ceur-ws.org/Vol-1363/#paper_7> ;
-    ns3:hasSession <http%3A//ceur-ws.org/Vol-1363/%23ResearchPapers> ;
-    ns7:issued "2015-05-18T00:00:00+00:00"^^xsd:dateTime ;
-    ns1:presentedAt <http://ceur-ws.org/Vol-1363/#event> ;
-    ns4:editor <http://ceur-ws.org/Vol-1363/#DavidiA.iShamma>,
-        <http://ceur-ws.org/Vol-1363/#MarcoiRospocher>,
-        <http://ceur-ws.org/Vol-1363/#MariekeivaniErp>,
-        <http://ceur-ws.org/Vol-1363/#Rapha%C3%ABliTroncy>,
-        <http://ceur-ws.org/Vol-1363/#WillemiRobertivaniHage> .
 

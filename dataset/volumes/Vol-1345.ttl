@@ -1,307 +1,45 @@
 @prefix ns1: <http://xmlns.com/foaf/0.1/> .
-@prefix ns2: <http://purl.org/ontology/bibo/#> .
-@prefix ns3: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns2: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns3: <http://purl.org/ontology/bibo/#> .
 @prefix ns4: <http://www.w3.org/2002/07/owl#> .
-@prefix ns5: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns6: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns5: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns6: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns8: <http://purl.org/dc/elements/1.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1345/#AliaksandriAutayeu> a ns1:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/AliaksandriAutayeu> ;
-    ns1:made <http://ceur-ws.org/Vol-1345/#gamifir15_3> ;
-    ns1:name "Aliaksandr Autayeu" .
-
-<http://ceur-ws.org/Vol-1345/#AncaiLiviaiRadu> a ns1:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/AncaiLiviaiRadu> ;
-    ns1:made <http://ceur-ws.org/Vol-1345/#gamifir15_3> ;
-    ns1:name "Anca Livia Radu" .
-
-<http://ceur-ws.org/Vol-1345/#Andr%C3%A1siL%C5%91rincz> a ns1:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/Andr%C3%A1siL%C5%91rincz> ;
-    ns1:made <http://ceur-ws.org/Vol-1345/#gamifir15_6> ;
-    ns1:name "András Lőrincz" .
-
-<http://ceur-ws.org/Vol-1345/#Andr%C3%A1siN%C3%A9meth> a ns1:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/Andr%C3%A1siN%C3%A9meth> ;
-    ns1:made <http://ceur-ws.org/Vol-1345/#gamifir15_6> ;
-    ns1:name "András Németh" .
-
-<http://ceur-ws.org/Vol-1345/#BogdaniIonescu> a ns1:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/BogdaniIonescu> ;
-    ns1:made <http://ceur-ws.org/Vol-1345/#gamifir15_3> ;
-    ns1:name "Bogdan Ionescu" .
-
-<http://ceur-ws.org/Vol-1345/#CarsteniEickhoff> a ns1:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/CarsteniEickhoff> ;
-    ns1:made <http://ceur-ws.org/Vol-1345/#keynote1> ;
-    ns1:name "Carsten Eickhoff" .
-
-<http://ceur-ws.org/Vol-1345/#CarsteniGriwodz> a ns1:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/CarsteniGriwodz> ;
-    ns1:made <http://ceur-ws.org/Vol-1345/#gamifir15_5> ;
-    ns1:name "Carsten Griwodz" .
-
-<http://ceur-ws.org/Vol-1345/#ChristiniSeifert> a ns1:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/ChristiniSeifert> ;
-    ns1:made <http://ceur-ws.org/Vol-1345/#gamifir15_2> ;
-    ns1:name "Christin Seifert" .
-
-<http://ceur-ws.org/Vol-1345/#FaustoiGiunchiglia> a ns1:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/FaustoiGiunchiglia> ;
-    ns1:made <http://ceur-ws.org/Vol-1345/#gamifir15_3> ;
-    ns1:name "Fausto Giunchiglia" .
+<http://ceur-ws.org/Vol-1345/> a ns5:Proceedings ;
+    ns6:issued "2015-03-29T00:00:00+00:00"^^xsd:dateTime ;
+    ns3:presentedAt <http://ceur-ws.org/Vol-1345/#event> ;
+    ns2:editor <http://ceur-ws.org/Vol-1345/#FrankiHopfgartner>,
+        <http://ceur-ws.org/Vol-1345/#GabriellaiKazai>,
+        <http://ceur-ws.org/Vol-1345/#MichaeliMeder>,
+        <http://ceur-ws.org/Vol-1345/#UdoiKruschwitz> .
 
 <http://ceur-ws.org/Vol-1345/#FrankiHopfgartner> a ns1:Person ;
-    ns3:affiliation "" ;
     ns4:sameAs <http://ceur-ws.org/persons/FrankiHopfgartner> ;
     ns1:name "Frank Hopfgartner" .
 
 <http://ceur-ws.org/Vol-1345/#GabriellaiKazai> a ns1:Person ;
-    ns3:affiliation "" ;
     ns4:sameAs <http://ceur-ws.org/persons/GabriellaiKazai> ;
     ns1:name "Gabriella Kazai" .
 
-<http://ceur-ws.org/Vol-1345/#J%C3%B6rgiSchl%C3%B6tterer> a ns1:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/J%C3%B6rgiSchl%C3%B6tterer> ;
-    ns1:made <http://ceur-ws.org/Vol-1345/#gamifir15_2> ;
-    ns1:name "Jörg Schlötterer" .
-
-<http://ceur-ws.org/Vol-1345/#JaniRybak> a ns1:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/JaniRybak> ;
-    ns1:made <http://ceur-ws.org/Vol-1345/#gamifir15_1> ;
-    ns1:name "Jan Rybak" .
-
-<http://ceur-ws.org/Vol-1345/#KingaiBettinaiFarag%C3%B3> a ns1:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/KingaiBettinaiFarag%C3%B3> ;
-    ns1:made <http://ceur-ws.org/Vol-1345/#gamifir15_6> ;
-    ns1:name "Kinga Bettina Faragó" .
-
-<http://ceur-ws.org/Vol-1345/#KjetiliN%C3%B8rv%C3%A5g> a ns1:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/KjetiliN%C3%B8rv%C3%A5g> ;
-    ns1:made <http://ceur-ws.org/Vol-1345/#gamifir15_1> ;
-    ns1:name "Kjetil Nørvåg" .
-
-<http://ceur-ws.org/Vol-1345/#KrisztianiBalog> a ns1:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/KrisztianiBalog> ;
-    ns1:made <http://ceur-ws.org/Vol-1345/#gamifir15_1> ;
-    ns1:name "Krisztian Balog" .
-
-<http://ceur-ws.org/Vol-1345/#LeifiAzzopardi> a ns1:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/LeifiAzzopardi> ;
-    ns1:made <http://ceur-ws.org/Vol-1345/#keynote2> ;
-    ns1:name "Leif Azzopardi" .
-
-<http://ceur-ws.org/Vol-1345/#LilianiCalvet> a ns1:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/LilianiCalvet> ;
-    ns1:made <http://ceur-ws.org/Vol-1345/#gamifir15_5> ;
-    ns1:name "Lilian Calvet" .
-
-<http://ceur-ws.org/Vol-1345/#LisaiWagner> a ns1:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/LisaiWagner> ;
-    ns1:made <http://ceur-ws.org/Vol-1345/#gamifir15_2> ;
-    ns1:name "Lisa Wagner" .
-
-<http://ceur-ws.org/Vol-1345/#MarekiMachnik> a ns1:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/MarekiMachnik> ;
-    ns1:made <http://ceur-ws.org/Vol-1345/#gamifir15_7> ;
-    ns1:name "Marek Machnik" .
-
-<http://ceur-ws.org/Vol-1345/#MariiNyg%C3%A5rd> a ns1:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/MariiNyg%C3%A5rd> ;
-    ns1:made <http://ceur-ws.org/Vol-1345/#gamifir15_4> ;
-    ns1:name "Mari Nygård" .
-
-<http://ceur-ws.org/Vol-1345/#MathiasiLux> a ns1:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/MathiasiLux> ;
-    ns1:made <http://ceur-ws.org/Vol-1345/#gamifir15_5> ;
-    ns1:name "Mathias Lux" .
-
-<http://ceur-ws.org/Vol-1345/#MichaeliGranitzer> a ns1:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/MichaeliGranitzer> ;
-    ns1:made <http://ceur-ws.org/Vol-1345/#gamifir15_2> ;
-    ns1:name "Michael Granitzer" .
-
 <http://ceur-ws.org/Vol-1345/#MichaeliMeder> a ns1:Person ;
-    ns3:affiliation "" ;
     ns4:sameAs <http://ceur-ws.org/persons/MichaeliMeder> ;
     ns1:name "Michael Meder" .
 
-<http://ceur-ws.org/Vol-1345/#P%C3%A5liHalvorsen> a ns1:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/P%C3%A5liHalvorsen> ;
-    ns1:made <http://ceur-ws.org/Vol-1345/#gamifir15_5> ;
-    ns1:name "Pål Halvorsen" .
-
-<http://ceur-ws.org/Vol-1345/#RagnhildiEg> a ns1:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/RagnhildiEg> ;
-    ns1:made <http://ceur-ws.org/Vol-1345/#gamifir15_5> ;
-    ns1:name "Ragnhild Eg" .
-
 <http://ceur-ws.org/Vol-1345/#UdoiKruschwitz> a ns1:Person ;
-    ns3:affiliation "" ;
     ns4:sameAs <http://ceur-ws.org/persons/UdoiKruschwitz> ;
     ns1:name "Udo Kruschwitz" .
 
-<http://ceur-ws.org/Vol-1345/#WaqasiMoazzam> a ns1:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/WaqasiMoazzam> ;
-    ns1:made <http://ceur-ws.org/Vol-1345/#gamifir15_4> ;
-    ns1:name "Waqas Moazzam" .
-
-<http://ceur-ws.org/Vol-1345/#Zolt%C3%A1ni%C3%81d%C3%A1miMilacski> a ns1:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/Zolt%C3%A1ni%C3%81d%C3%A1miMilacski> ;
-    ns1:made <http://ceur-ws.org/Vol-1345/#gamifir15_6> ;
-    ns1:name "Zoltán Ádám Milacski" .
-
-<http://ceur-ws.org/Vol-1345/#event> a ns6:WorkshopEvent ;
-    ns6:hasLocation <http://dbpedia.org/resource/Austria> ;
-    ns6:hasPart <http://ceur-ws.org/Vol-1345/#part-GamifIR> ;
-    ns6:isSubEventOf <http://ceur-ws.org/Vol-1345/#conf> ;
+<http://ceur-ws.org/Vol-1345/#event> a ns5:WorkshopEvent ;
+    ns5:hasLocation <http://dbpedia.org/resource/Austria> ;
+    ns5:hasPart <http://ceur-ws.org/Vol-1345/#part-ws> ;
+    ns5:isSubEventOf <http://ceur-ws.org/Vol-1345/#conf> ;
     ns7:beginsAtDatetime "2015-03-29T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:endsAtDatetime "2015-03-29T00:00:00+00:00"^^xsd:dateTime .
-
-<http://ceur-ws.org/Vol-1345/#SagariSen> a ns1:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/SagariSen> ;
-    ns1:made <http://ceur-ws.org/Vol-1345/#gamifir15_4>,
-        <http://ceur-ws.org/Vol-1345/#gamifir15_7> ;
-    ns1:name "Sagar Sen" .
-
-<http://ceur-ws.org/Vol-1345/#keynote1> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-1345/> ;
-    ns5:title "Human Intelligence in Search and Retrieval" ;
-    ns2:endPage 2 ;
-    ns2:numPages 2 ;
-    ns2:section <http%3A//ceur-ws.org/Vol-1345/%23InvitedPapers> ;
-    ns2:startPage 1 ;
-    ns3:author <http://ceur-ws.org/Vol-1345/#CarsteniEickhoff> .
-
-<http://ceur-ws.org/Vol-1345/#keynote2> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-1345/> ;
-    ns5:title "A Game of Search" ;
-    ns2:endPage 3 ;
-    ns2:numPages 1 ;
-    ns2:section <http%3A//ceur-ws.org/Vol-1345/%23InvitedPapers> ;
-    ns2:startPage 3 ;
-    ns3:author <http://ceur-ws.org/Vol-1345/#LeifiAzzopardi> .
-
-<http%3A//ceur-ws.org/Vol-1345/%23InvitedPapers> a ns6:SessionEvent ;
-    ns6:partOf <http://ceur-ws.org/Vol-1345/> ;
-    ns5:title "Invited Papers" .
-
-<http://ceur-ws.org/Vol-1345/#MichaeliRiegler> a ns1:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/MichaeliRiegler> ;
-    ns1:made <http://ceur-ws.org/Vol-1345/#gamifir15_4>,
-        <http://ceur-ws.org/Vol-1345/#gamifir15_5>,
-        <http://ceur-ws.org/Vol-1345/#gamifir15_7> ;
-    ns1:name "Michael Riegler" .
-
-<http://ceur-ws.org/Vol-1345/#gamifir15_1> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-1345/> ;
-    ns5:title "IR Game: How well do you Know Information Retrieval Papers?" ;
-    ns2:endPage 6 ;
-    ns2:numPages 3 ;
-    ns2:section <http%3A//ceur-ws.org/Vol-1345/%23ResearchPapers> ;
-    ns2:startPage 4 ;
-    ns3:author <http://ceur-ws.org/Vol-1345/#JaniRybak>,
-        <http://ceur-ws.org/Vol-1345/#KjetiliN%C3%B8rv%C3%A5g>,
-        <http://ceur-ws.org/Vol-1345/#KrisztianiBalog> .
-
-<http://ceur-ws.org/Vol-1345/#gamifir15_7> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-1345/> ;
-    ns5:title "Crowdpinion: Motivating People to Share their Momentary Opinion" ;
-    ns2:endPage 43 ;
-    ns2:numPages 3 ;
-    ns2:section <http%3A//ceur-ws.org/Vol-1345/%23ResearchPapers> ;
-    ns2:startPage 41 ;
-    ns3:author <http://ceur-ws.org/Vol-1345/#MarekiMachnik>,
-        <http://ceur-ws.org/Vol-1345/#MichaeliRiegler>,
-        <http://ceur-ws.org/Vol-1345/#SagariSen> .
-
-<http://ceur-ws.org/Vol-1345/#gamifir15_2> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-1345/> ;
-    ns5:title "A Game with a Purpose to Access Europe's Cultural Treasure" ;
-    ns2:endPage 12 ;
-    ns2:numPages 6 ;
-    ns2:section <http%3A//ceur-ws.org/Vol-1345/%23ResearchPapers> ;
-    ns2:startPage 7 ;
-    ns3:author <http://ceur-ws.org/Vol-1345/#ChristiniSeifert>,
-        <http://ceur-ws.org/Vol-1345/#J%C3%B6rgiSchl%C3%B6tterer>,
-        <http://ceur-ws.org/Vol-1345/#LisaiWagner>,
-        <http://ceur-ws.org/Vol-1345/#MichaeliGranitzer> .
-
-<http://ceur-ws.org/Vol-1345/#gamifir15_3> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-1345/> ;
-    ns5:title "High Quality Photo Collection via Gamification" ;
-    ns2:endPage 18 ;
-    ns2:numPages 6 ;
-    ns2:section <http%3A//ceur-ws.org/Vol-1345/%23ResearchPapers> ;
-    ns2:startPage 13 ;
-    ns3:author <http://ceur-ws.org/Vol-1345/#AliaksandriAutayeu>,
-        <http://ceur-ws.org/Vol-1345/#AncaiLiviaiRadu>,
-        <http://ceur-ws.org/Vol-1345/#BogdaniIonescu>,
-        <http://ceur-ws.org/Vol-1345/#FaustoiGiunchiglia> .
-
-<http://ceur-ws.org/Vol-1345/#gamifir15_4> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-1345/> ;
-    ns5:title "Scientific Hangman: Gamifying Scientific Evidence for General Public" ;
-    ns2:endPage 25 ;
-    ns2:numPages 7 ;
-    ns2:section <http%3A//ceur-ws.org/Vol-1345/%23ResearchPapers> ;
-    ns2:startPage 19 ;
-    ns3:author <http://ceur-ws.org/Vol-1345/#MariiNyg%C3%A5rd>,
-        <http://ceur-ws.org/Vol-1345/#MichaeliRiegler>,
-        <http://ceur-ws.org/Vol-1345/#SagariSen>,
-        <http://ceur-ws.org/Vol-1345/#WaqasiMoazzam> .
-
-<http://ceur-ws.org/Vol-1345/#gamifir15_6> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-1345/> ;
-    ns5:title "Enhancing Crowdsourced Applications via Incorporated Practice Sessions" ;
-    ns2:endPage 40 ;
-    ns2:numPages 7 ;
-    ns2:section <http%3A//ceur-ws.org/Vol-1345/%23ResearchPapers> ;
-    ns2:startPage 34 ;
-    ns3:author <http://ceur-ws.org/Vol-1345/#Andr%C3%A1siL%C5%91rincz>,
-        <http://ceur-ws.org/Vol-1345/#Andr%C3%A1siN%C3%A9meth>,
-        <http://ceur-ws.org/Vol-1345/#KingaiBettinaiFarag%C3%B3>,
-        <http://ceur-ws.org/Vol-1345/#Zolt%C3%A1ni%C3%81d%C3%A1miMilacski> .
-
-<http://ceur-ws.org/Vol-1345/#gamifir15_5> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-1345/> ;
-    ns5:title "Playing Around the Eye Tracker – A Serious Game Based Dataset" ;
-    ns2:endPage 33 ;
-    ns2:numPages 8 ;
-    ns2:section <http%3A//ceur-ws.org/Vol-1345/%23ResearchPapers> ;
-    ns2:startPage 26 ;
-    ns3:author <http://ceur-ws.org/Vol-1345/#CarsteniGriwodz>,
-        <http://ceur-ws.org/Vol-1345/#LilianiCalvet>,
-        <http://ceur-ws.org/Vol-1345/#MathiasiLux>,
-        <http://ceur-ws.org/Vol-1345/#MichaeliRiegler>,
-        <http://ceur-ws.org/Vol-1345/#P%C3%A5liHalvorsen>,
-        <http://ceur-ws.org/Vol-1345/#RagnhildiEg> .
-
-<http%3A//ceur-ws.org/Vol-1345/%23ResearchPapers> a ns6:SessionEvent ;
-    ns6:partOf <http://ceur-ws.org/Vol-1345/> ;
-    ns5:title "Research Papers" .
-
-<http://ceur-ws.org/Vol-1345/> a ns6:Proceedings ;
-    ns6:hasPart <http://ceur-ws.org/Vol-1345/#gamifir15_1>,
-        <http://ceur-ws.org/Vol-1345/#gamifir15_2>,
-        <http://ceur-ws.org/Vol-1345/#gamifir15_3>,
-        <http://ceur-ws.org/Vol-1345/#gamifir15_4>,
-        <http://ceur-ws.org/Vol-1345/#gamifir15_5>,
-        <http://ceur-ws.org/Vol-1345/#gamifir15_6>,
-        <http://ceur-ws.org/Vol-1345/#gamifir15_7>,
-        <http://ceur-ws.org/Vol-1345/#keynote1>,
-        <http://ceur-ws.org/Vol-1345/#keynote2> ;
-    ns6:hasSession <http%3A//ceur-ws.org/Vol-1345/%23InvitedPapers>,
-        <http%3A//ceur-ws.org/Vol-1345/%23ResearchPapers> ;
-    ns8:issued "2015-03-29T00:00:00+00:00"^^xsd:dateTime ;
-    ns2:presentedAt <http://ceur-ws.org/Vol-1345/#event> ;
-    ns3:editor <http://ceur-ws.org/Vol-1345/#FrankiHopfgartner>,
-        <http://ceur-ws.org/Vol-1345/#GabriellaiKazai>,
-        <http://ceur-ws.org/Vol-1345/#MichaeliMeder>,
-        <http://ceur-ws.org/Vol-1345/#UdoiKruschwitz> .
+    ns7:endsAtDatetime "2015-03-29T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:license "http://creativecommons.org/publicdomain/zero/1.0/" .
 

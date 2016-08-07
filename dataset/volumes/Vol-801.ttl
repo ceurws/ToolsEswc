@@ -1,458 +1,50 @@
-@prefix ns1: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns2: <http://purl.org/ontology/bibo/#> .
+@prefix ns1: <http://xmlns.com/foaf/0.1/> .
+@prefix ns2: <http://purl.org/dc/elements/1.1/> .
 @prefix ns3: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns4: <http://xmlns.com/foaf/0.1/> .
-@prefix ns5: <http://www.w3.org/2002/07/owl#> .
+@prefix ns4: <http://www.w3.org/2002/07/owl#> .
+@prefix ns5: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix ns6: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns7: <http://purl.org/ontology/bibo/#> .
 @prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-801/#AndreasiHarth> a ns4:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/AndreasiHarth> ;
-    ns4:made <http://ceur-ws.org/Vol-801/#paper4> ;
-    ns4:name "Andreas Harth" .
-
-<http://ceur-ws.org/Vol-801/#AndreasiN%C3%BCrnberger> a ns4:Person ;
-    ns3:affiliation "" ;
-    ns5:sameAs <http://ceur-ws.org/persons/AndreasiN%C3%BCrnberger> ;
-    ns4:name "Andreas Nürnberger" .
-
-<http://ceur-ws.org/Vol-801/#AntoineiIsaac> a ns4:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/AntoineiIsaac> ;
-    ns4:made <http://ceur-ws.org/Vol-801/#paper7> ;
-    ns4:name "Antoine Isaac" .
-
-<http://ceur-ws.org/Vol-801/#AxeliSchr%C3%B6der> a ns4:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/AxeliSchr%C3%B6der> ;
-    ns4:made <http://ceur-ws.org/Vol-801/#paper2> ;
-    ns4:name "Axel Schröder" .
-
-<http://ceur-ws.org/Vol-801/#BenjaminiZapilko> a ns4:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/BenjaminiZapilko> ;
-    ns4:made <http://ceur-ws.org/Vol-801/#paper4> ;
-    ns4:name "Benjamin Zapilko" .
-
-<http://ceur-ws.org/Vol-801/#ChristianiHachenberg> a ns4:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/ChristianiHachenberg> ;
-    ns4:made <http://ceur-ws.org/Vol-801/#paper4> ;
-    ns4:name "Christian Hachenberg" .
-
-<http://ceur-ws.org/Vol-801/#ChristianiKraetzer> a ns4:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/ChristianiKraetzer> ;
-    ns4:made <http://ceur-ws.org/Vol-801/#paper12> ;
-    ns4:name "Christian Kraetzer" .
-
-<http://ceur-ws.org/Vol-801/#ChristianiMorbidoni> a ns4:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/ChristianiMorbidoni> ;
-    ns4:made <http://ceur-ws.org/Vol-801/#paper9> ;
-    ns4:name "Christian Morbidoni" .
-
-<http://ceur-ws.org/Vol-801/#ClaudioiCortese> a ns4:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/ClaudioiCortese> ;
-    ns4:made <http://ceur-ws.org/Vol-801/#paper5> ;
-    ns4:name "Claudio Cortese" .
-
-<http://ceur-ws.org/Vol-801/#DanielideiOliveira> a ns4:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/DanielideiOliveira> ;
-    ns4:made <http://ceur-ws.org/Vol-801/#paper13> ;
-    ns4:name "Daniel de Oliveira" .
-
-<http://ceur-ws.org/Vol-801/#FelixiOstrowksi> a ns4:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/FelixiOstrowksi> ;
-    ns4:made <http://ceur-ws.org/Vol-801/#paper14> ;
-    ns4:name "Felix Ostrowksi" .
-
-<http://ceur-ws.org/Vol-801/#FrancescaiRicci> a ns4:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/FrancescaiRicci> ;
-    ns4:made <http://ceur-ws.org/Vol-801/#paper6> ;
-    ns4:name "Francesca Ricci" .
-
-<http://ceur-ws.org/Vol-801/#GiovanniiLedda> a ns4:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/GiovanniiLedda> ;
-    ns4:made <http://ceur-ws.org/Vol-801/#paper9> ;
-    ns4:name "Giovanni Ledda" .
-
-<http://ceur-ws.org/Vol-801/#GlaucoiMantegari> a ns4:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/GlaucoiMantegari> ;
-    ns4:made <http://ceur-ws.org/Vol-801/#paper5> ;
-    ns4:name "Glauco Mantegari" .
-
-<http://ceur-ws.org/Vol-801/#HolgeriBrocks> a ns4:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/HolgeriBrocks> ;
-    ns4:made <http://ceur-ws.org/Vol-801/#paper12> ;
-    ns4:name "Holger Brocks" .
-
-<http://ceur-ws.org/Vol-801/#J%C3%B6rgiBrunsmann> a ns4:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/J%C3%B6rgiBrunsmann> ;
-    ns4:made <http://ceur-ws.org/Vol-801/#paper3> ;
-    ns4:name "Jörg Brunsmann" .
-
-<http://ceur-ws.org/Vol-801/#JanaiDittmann> a ns4:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/JanaiDittmann> ;
-    ns4:made <http://ceur-ws.org/Vol-801/#paper12> ;
-    ns4:name "Jana Dittmann" .
-
-<http://ceur-ws.org/Vol-801/#JaniWielemaker> a ns4:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/JaniWielemaker> ;
-    ns4:made <http://ceur-ws.org/Vol-801/#paper7> ;
-    ns4:name "Jan Wielemaker" .
-
-<http://ceur-ws.org/Vol-801/#JensiPeters> a ns4:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/JensiPeters> ;
-    ns4:made <http://ceur-ws.org/Vol-801/#paper13> ;
-    ns4:name "Jens Peters" .
-
-<http://ceur-ws.org/Vol-801/#JohaniOomen> a ns4:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/JohaniOomen> ;
-    ns4:made <http://ceur-ws.org/Vol-801/#paper8> ;
-    ns4:name "Johan Oomen" .
-
-<http://ceur-ws.org/Vol-801/#KaiiEckert> a ns4:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/KaiiEckert> ;
-    ns4:made <http://ceur-ws.org/Vol-801/#paper11> ;
-    ns4:name "Kai Eckert" .
-
-<http://ceur-ws.org/Vol-801/#KlausiMei%C3%9Fner> a ns4:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/KlausiMei%C3%9Fner> ;
-    ns4:made <http://ceur-ws.org/Vol-801/#paper2> ;
-    ns4:name "Klaus Meißner" .
-
-<http://ceur-ws.org/Vol-801/#KuniQian> a ns4:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/KuniQian> ;
-    ns4:made <http://ceur-ws.org/Vol-801/#paper12> ;
-    ns4:name "Kun Qian" .
-
-<http://ceur-ws.org/Vol-801/#MaikiSchott> a ns4:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/MaikiSchott> ;
-    ns4:made <http://ceur-ws.org/Vol-801/#paper12> ;
-    ns4:name "Maik Schott" .
-
-<http://ceur-ws.org/Vol-801/#ManfrediThaller> a ns4:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/ManfrediThaller> ;
-    ns4:made <http://ceur-ws.org/Vol-801/#paper13> ;
-    ns4:name "Manfred Thaller" .
-
-<http://ceur-ws.org/Vol-801/#MarcoiGrassi> a ns4:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/MarcoiGrassi> ;
-    ns4:made <http://ceur-ws.org/Vol-801/#paper9> ;
-    ns4:name "Marco Grassi" .
-
-<http://ceur-ws.org/Vol-801/#MarliesiOlensky> a ns4:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/MarliesiOlensky> ;
-    ns4:made <http://ceur-ws.org/Vol-801/#paper7> ;
-    ns4:name "Marlies Olensky" .
-
-<http://ceur-ws.org/Vol-801/#MartiniFischer> a ns4:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/MartiniFischer> ;
-    ns4:made <http://ceur-ws.org/Vol-801/#paper13> ;
-    ns4:name "Martin Fischer" .
-
-<http://ceur-ws.org/Vol-801/#MatthiasiHemmje> a ns4:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/MatthiasiHemmje> ;
-    ns4:made <http://ceur-ws.org/Vol-801/#paper12> ;
-    ns4:name "Matthias Hemmje" .
-
-<http://ceur-ws.org/Vol-801/#MicheleiNucci> a ns4:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/MicheleiNucci> ;
-    ns4:made <http://ceur-ws.org/Vol-801/#paper9> ;
-    ns4:name "Michele Nucci" .
-
-<http://ceur-ws.org/Vol-801/#PeteriEklund> a ns4:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/PeteriEklund> ;
-    ns4:made <http://ceur-ws.org/Vol-801/#paper10> ;
-    ns4:name "Peter Eklund" .
-
-<http://ceur-ws.org/Vol-801/#RonnyiFritzsche> a ns4:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/RonnyiFritzsche> ;
-    ns4:made <http://ceur-ws.org/Vol-801/#paper2> ;
-    ns4:name "Ronny Fritzsche" .
-
-<http://ceur-ws.org/Vol-801/#SandroiSchmidt> a ns4:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/SandroiSchmidt> ;
-    ns4:made <http://ceur-ws.org/Vol-801/#paper2> ;
-    ns4:name "Sandro Schmidt" .
-
-<http://ceur-ws.org/Vol-801/#SeamusiRoss> a ns4:Person ;
-    ns3:affiliation "" ;
-    ns5:sameAs <http://ceur-ws.org/persons/SeamusiRoss> ;
-    ns4:name "Seamus Ross" .
-
-<http://ceur-ws.org/Vol-801/#SebastianiCuy> a ns4:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/SebastianiCuy> ;
-    ns4:made <http://ceur-ws.org/Vol-801/#paper13> ;
-    ns4:name "Sebastian Cuy" .
-
-<http://ceur-ws.org/Vol-801/#SilviaiMazzini> a ns4:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/SilviaiMazzini> ;
-    ns4:made <http://ceur-ws.org/Vol-801/#paper6> ;
-    ns4:name "Silvia Mazzini" .
-
-<http://ceur-ws.org/Vol-801/#SimoneiFonda> a ns4:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/SimoneiFonda> ;
-    ns4:made <http://ceur-ws.org/Vol-801/#paper9> ;
-    ns4:name "Simone Fonda" .
-
-<http://ceur-ws.org/Vol-801/#ThomasiGottron> a ns4:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/ThomasiGottron> ;
-    ns4:made <http://ceur-ws.org/Vol-801/#paper4> ;
-    ns4:name "Thomas Gottron" .
-
-<http://ceur-ws.org/Vol-801/#TimiWray> a ns4:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/TimiWray> ;
-    ns4:made <http://ceur-ws.org/Vol-801/#paper10> ;
-    ns4:name "Tim Wray" .
-
-<http://ceur-ws.org/Vol-801/#VassilisiTzouvaras> a ns4:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/VassilisiTzouvaras> ;
-    ns4:made <http://ceur-ws.org/Vol-801/#paper8> ;
-    ns4:name "Vassilis Tzouvaras" .
-
-<http://ceur-ws.org/Vol-801/#ViktorideiBoer> a ns4:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/ViktorideiBoer> ;
-    ns4:made <http://ceur-ws.org/Vol-801/#paper7> ;
-    ns4:name "Viktor de Boer" .
-
-<http://ceur-ws.org/Vol-801/#WinfriediBergmeyer> a ns4:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/WinfriediBergmeyer> ;
-    ns4:made <http://ceur-ws.org/Vol-801/#paper1> ;
-    ns4:name "Winfried Bergmeyer" .
-
-<http://ceur-ws.org/Vol-801/#event> a ns6:WorkshopEvent ;
-    ns6:hasLocation <http://dbpedia.org/resource/Germany> ;
-    ns6:hasPart <http://ceur-ws.org/Vol-801/#part-SDA> ;
-    ns6:isSubEventOf <http://ceur-ws.org/Vol-801/#conf> ;
-    ns8:beginsAtDatetime "2011-09-29T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:endsAtDatetime "2011-09-29T00:00:00+00:00"^^xsd:dateTime ;
-    ns1:license <http://choosealicense.com/licenses/no-license/> .
-
-<http%3A//ceur-ws.org/Vol-801/%23InvitedContribution> a ns6:SessionEvent ;
-    ns6:partOf <http://ceur-ws.org/Vol-801/> ;
-    ns1:title "Invited Contribution" .
-
-<http://ceur-ws.org/Vol-801/#AnnettiMitschick> a ns4:Person ;
-    ns3:affiliation "" ;
-    ns5:sameAs <http://ceur-ws.org/persons/AnnettiMitschick> ;
-    ns4:made <http://ceur-ws.org/Vol-801/#paper2> ;
-    ns4:name "Annett Mitschick" .
-
-<http://ceur-ws.org/Vol-801/#LiviaiPredoiu> a ns4:Person ;
-    ns3:affiliation "" ;
-    ns5:sameAs <http://ceur-ws.org/persons/LiviaiPredoiu> ;
-    ns4:made <http://ceur-ws.org/Vol-801/#paperX1> ;
-    ns4:name "Livia Predoiu" .
-
-<http://ceur-ws.org/Vol-801/#SteffeniHennicke> a ns4:Person ;
-    ns3:affiliation "" ;
-    ns5:sameAs <http://ceur-ws.org/persons/SteffeniHennicke> ;
-    ns4:made <http://ceur-ws.org/Vol-801/#paper7> ;
-    ns4:name "Steffen Hennicke" .
-
-<http://ceur-ws.org/Vol-801/#paper1> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-801/> ;
-    ns1:title "The Keep Emulation Framework" ;
-    ns2:endPage 22 ;
-    ns2:numPages 15 ;
-    ns2:section <http%3A//ceur-ws.org/Vol-801/%23InvitedContribution> ;
-    ns2:startPage 8 ;
-    ns3:author <http://ceur-ws.org/Vol-801/#WinfriediBergmeyer> .
-
-<http://ceur-ws.org/Vol-801/#paper11> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-801/> ;
-    ns1:title "LOHAI: Providing a Baseline for KOS based Automatic Indexing" ;
-    ns2:endPage 130 ;
-    ns2:numPages 10 ;
-    ns2:section <http%3A//ceur-ws.org/Vol-801/%23DigitalLibrariesandMuseums> ;
-    ns2:startPage 121 ;
-    ns3:author <http://ceur-ws.org/Vol-801/#KaiiEckert> .
-
-<http://ceur-ws.org/Vol-801/#paper14> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-801/> ;
-    ns1:title "RDFa as a Lightweight Metadata Interoperability Layer between Repository Software and LOCKSS" ;
-    ns2:endPage 156 ;
-    ns2:numPages 7 ;
-    ns2:section <http%3A//ceur-ws.org/Vol-801/%23ArchivingFrameworksandInfrastructures> ;
-    ns2:startPage 150 ;
-    ns3:author <http://ceur-ws.org/Vol-801/#FelixiOstrowksi> .
-
-<http://ceur-ws.org/Vol-801/#paper3> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-801/> ;
-    ns1:title "Semantic Exploration of Archived Product Lifecycle Metadata under Schema and Instance Evolution" ;
-    ns2:endPage 47 ;
-    ns2:numPages 11 ;
-    ns2:section <http%3A//ceur-ws.org/Vol-801/%23HardwareandProductLifecycleSupport> ;
-    ns2:startPage 37 ;
-    ns3:author <http://ceur-ws.org/Vol-801/#J%C3%B6rgiBrunsmann> .
-
-<http://ceur-ws.org/Vol-801/#paperX1> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-801/> ;
-    ns1:title "Please have a look at the" ;
-    ns2:section <http%3A//ceur-ws.org/Vol-801/%23ArchivingFrameworksandInfrastructures> ;
-    ns3:author <http://ceur-ws.org/Vol-801/#LiviaiPredoiu> .
-
-<http%3A//ceur-ws.org/Vol-801/%23HardwareandProductLifecycleSupport> a ns6:SessionEvent ;
-    ns6:partOf <http://ceur-ws.org/Vol-801/> ;
-    ns1:title "Hardware and Product Lifecycle Support" .
-
-<http://ceur-ws.org/Vol-801/#paper10> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-801/> ;
-    ns1:title "Concepts and Collections: A Case Study using Objects from the Brooklyn Museum" ;
-    ns2:endPage 120 ;
-    ns2:numPages 12 ;
-    ns2:section <http%3A//ceur-ws.org/Vol-801/%23DigitalLibrariesandMuseums> ;
-    ns2:startPage 109 ;
-    ns3:author <http://ceur-ws.org/Vol-801/#PeteriEklund>,
-        <http://ceur-ws.org/Vol-801/#TimiWray> .
-
-<http://ceur-ws.org/Vol-801/#paper5> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-801/> ;
-    ns1:title "Extending the Digital Archives of Italian Psychology with Semantic Data" ;
-    ns2:endPage 71 ;
-    ns2:numPages 12 ;
-    ns2:section <http%3A//ceur-ws.org/Vol-801/%23LinkedDataInfrastructuresandOntologies> ;
-    ns2:startPage 60 ;
-    ns3:author <http://ceur-ws.org/Vol-801/#ClaudioiCortese>,
-        <http://ceur-ws.org/Vol-801/#GlaucoiMantegari> .
-
-<http://ceur-ws.org/Vol-801/#paper6> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-801/> ;
-    ns1:title "EAC-CPF Ontology and Linked Archival Data" ;
-    ns2:endPage 81 ;
-    ns2:numPages 10 ;
-    ns2:section <http%3A//ceur-ws.org/Vol-801/%23LinkedDataInfrastructuresandOntologies> ;
-    ns2:startPage 72 ;
-    ns3:author <http://ceur-ws.org/Vol-801/#FrancescaiRicci>,
-        <http://ceur-ws.org/Vol-801/#SilviaiMazzini> .
-
-<http://ceur-ws.org/Vol-801/#paper8> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-801/> ;
-    ns1:title "Publishing Europe's Television Heritage on the Web" ;
-    ns2:endPage 96 ;
-    ns2:numPages 8 ;
-    ns2:section <http%3A//ceur-ws.org/Vol-801/%23LinkedDataInfrastructuresandOntologies> ;
-    ns2:startPage 89 ;
-    ns3:author <http://ceur-ws.org/Vol-801/#JohaniOomen>,
-        <http://ceur-ws.org/Vol-801/#VassilisiTzouvaras> .
-
-<http%3A//ceur-ws.org/Vol-801/%23DigitalLibrariesandMuseums> a ns6:SessionEvent ;
-    ns6:partOf <http://ceur-ws.org/Vol-801/> ;
-    ns1:title "Digital Libraries and Museums" .
-
-<http%3A//ceur-ws.org/Vol-801/%23ArchivingFrameworksandInfrastructures> a ns6:SessionEvent ;
-    ns6:partOf <http://ceur-ws.org/Vol-801/> ;
-    ns1:title "Archiving Frameworks and Infrastructures" .
-
-<http://ceur-ws.org/Vol-801/#paper4> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-801/> ;
-    ns1:title "Towards a Semantic Data Library for the Social Sciences" ;
-    ns2:endPage 59 ;
-    ns2:numPages 12 ;
-    ns2:section <http%3A//ceur-ws.org/Vol-801/%23LinkedDataInfrastructuresandOntologies> ;
-    ns2:startPage 48 ;
-    ns3:author <http://ceur-ws.org/Vol-801/#AndreasiHarth>,
-        <http://ceur-ws.org/Vol-801/#BenjaminiZapilko>,
-        <http://ceur-ws.org/Vol-801/#ChristianiHachenberg>,
-        <http://ceur-ws.org/Vol-801/#ThomasiGottron> .
-
-<http%3A//ceur-ws.org/Vol-801/%23LinkedDataInfrastructuresandOntologies> a ns6:SessionEvent ;
-    ns6:partOf <http://ceur-ws.org/Vol-801/> ;
-    ns1:title "Linked Data Infrastructures and Ontologies" .
-
-<http://ceur-ws.org/Vol-801/#paper13> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-801/> ;
-    ns1:title "DA-NRW: A Distributed Architecture for Long-Term Preservation" ;
-    ns2:endPage 149 ;
-    ns2:numPages 7 ;
-    ns2:section <http%3A//ceur-ws.org/Vol-801/%23ArchivingFrameworksandInfrastructures> ;
-    ns2:startPage 143 ;
-    ns3:author <http://ceur-ws.org/Vol-801/#DanielideiOliveira>,
-        <http://ceur-ws.org/Vol-801/#JensiPeters>,
-        <http://ceur-ws.org/Vol-801/#ManfrediThaller>,
-        <http://ceur-ws.org/Vol-801/#MartiniFischer>,
-        <http://ceur-ws.org/Vol-801/#SebastianiCuy> .
-
-<http://ceur-ws.org/Vol-801/#paper2> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-801/> ;
-    ns1:title "A Semantic Extension of a Hierarchical Storage Management System for Small and Medium-sized Enterprises" ;
-    ns2:endPage 36 ;
-    ns2:numPages 14 ;
-    ns2:section <http%3A//ceur-ws.org/Vol-801/%23HardwareandProductLifecycleSupport> ;
-    ns2:startPage 23 ;
-    ns3:author <http://ceur-ws.org/Vol-801/#AnnettiMitschick>,
-        <http://ceur-ws.org/Vol-801/#AxeliSchr%C3%B6der>,
-        <http://ceur-ws.org/Vol-801/#KlausiMei%C3%9Fner>,
-        <http://ceur-ws.org/Vol-801/#RonnyiFritzsche>,
-        <http://ceur-ws.org/Vol-801/#SandroiSchmidt> .
-
-<http://ceur-ws.org/Vol-801/#paper7> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-801/> ;
-    ns1:title "Conversion of EAD into EDM Linked Data" ;
-    ns2:endPage 88 ;
-    ns2:numPages 7 ;
-    ns2:section <http%3A//ceur-ws.org/Vol-801/%23LinkedDataInfrastructuresandOntologies> ;
-    ns2:startPage 82 ;
-    ns3:author <http://ceur-ws.org/Vol-801/#AntoineiIsaac>,
-        <http://ceur-ws.org/Vol-801/#JaniWielemaker>,
-        <http://ceur-ws.org/Vol-801/#MarliesiOlensky>,
-        <http://ceur-ws.org/Vol-801/#SteffeniHennicke>,
-        <http://ceur-ws.org/Vol-801/#ViktorideiBoer> .
-
-<http://ceur-ws.org/Vol-801/#paper9> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-801/> ;
-    ns1:title "Introducing the Semlib Project: Semantic Web Tools for Digital Libraries" ;
-    ns2:endPage 108 ;
-    ns2:numPages 12 ;
-    ns2:section <http%3A//ceur-ws.org/Vol-801/%23DigitalLibrariesandMuseums> ;
-    ns2:startPage 97 ;
-    ns3:author <http://ceur-ws.org/Vol-801/#ChristianiMorbidoni>,
-        <http://ceur-ws.org/Vol-801/#GiovanniiLedda>,
-        <http://ceur-ws.org/Vol-801/#MarcoiGrassi>,
-        <http://ceur-ws.org/Vol-801/#MicheleiNucci>,
-        <http://ceur-ws.org/Vol-801/#SimoneiFonda> .
-
-<http://ceur-ws.org/Vol-801/#paper12> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-801/> ;
-    ns1:title "A Security Contextualisation Framework for Digital Long-Term Preservation" ;
-    ns2:endPage 142 ;
-    ns2:numPages 12 ;
-    ns2:section <http%3A//ceur-ws.org/Vol-801/%23ArchivingFrameworksandInfrastructures> ;
-    ns2:startPage 131 ;
-    ns3:author <http://ceur-ws.org/Vol-801/#ChristianiKraetzer>,
-        <http://ceur-ws.org/Vol-801/#HolgeriBrocks>,
-        <http://ceur-ws.org/Vol-801/#JanaiDittmann>,
-        <http://ceur-ws.org/Vol-801/#KuniQian>,
-        <http://ceur-ws.org/Vol-801/#MaikiSchott>,
-        <http://ceur-ws.org/Vol-801/#MatthiasiHemmje> .
-
 <http://ceur-ws.org/Vol-801/> a ns6:Proceedings ;
-    ns6:hasPart <http://ceur-ws.org/Vol-801/#paper1>,
-        <http://ceur-ws.org/Vol-801/#paper10>,
-        <http://ceur-ws.org/Vol-801/#paper11>,
-        <http://ceur-ws.org/Vol-801/#paper12>,
-        <http://ceur-ws.org/Vol-801/#paper13>,
-        <http://ceur-ws.org/Vol-801/#paper14>,
-        <http://ceur-ws.org/Vol-801/#paper2>,
-        <http://ceur-ws.org/Vol-801/#paper3>,
-        <http://ceur-ws.org/Vol-801/#paper4>,
-        <http://ceur-ws.org/Vol-801/#paper5>,
-        <http://ceur-ws.org/Vol-801/#paper6>,
-        <http://ceur-ws.org/Vol-801/#paper7>,
-        <http://ceur-ws.org/Vol-801/#paper8>,
-        <http://ceur-ws.org/Vol-801/#paper9>,
-        <http://ceur-ws.org/Vol-801/#paperX1> ;
-    ns6:hasSession <http%3A//ceur-ws.org/Vol-801/%23ArchivingFrameworksandInfrastructures>,
-        <http%3A//ceur-ws.org/Vol-801/%23DigitalLibrariesandMuseums>,
-        <http%3A//ceur-ws.org/Vol-801/%23HardwareandProductLifecycleSupport>,
-        <http%3A//ceur-ws.org/Vol-801/%23InvitedContribution>,
-        <http%3A//ceur-ws.org/Vol-801/%23LinkedDataInfrastructuresandOntologies> ;
-    ns7:issued "2012-01-09T00:00:00+00:00"^^xsd:dateTime ;
-    ns2:presentedAt <http://ceur-ws.org/Vol-801/#event> ;
+    ns5:issued "2012-01-09T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:presentedAt <http://ceur-ws.org/Vol-801/#event> ;
     ns3:editor <http://ceur-ws.org/Vol-801/#AndreasiN%C3%BCrnberger>,
         <http://ceur-ws.org/Vol-801/#AnnettiMitschick>,
         <http://ceur-ws.org/Vol-801/#LiviaiPredoiu>,
         <http://ceur-ws.org/Vol-801/#SeamusiRoss>,
         <http://ceur-ws.org/Vol-801/#SteffeniHennicke> .
+
+<http://ceur-ws.org/Vol-801/#AndreasiN%C3%BCrnberger> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/AndreasiN%C3%BCrnberger> ;
+    ns1:name "Andreas Nürnberger" .
+
+<http://ceur-ws.org/Vol-801/#AnnettiMitschick> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/AnnettiMitschick> ;
+    ns1:name "Annett Mitschick" .
+
+<http://ceur-ws.org/Vol-801/#LiviaiPredoiu> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/LiviaiPredoiu> ;
+    ns1:name "Livia Predoiu" .
+
+<http://ceur-ws.org/Vol-801/#SeamusiRoss> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/SeamusiRoss> ;
+    ns1:name "Seamus Ross" .
+
+<http://ceur-ws.org/Vol-801/#SteffeniHennicke> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/SteffeniHennicke> ;
+    ns1:name "Steffen Hennicke" .
+
+<http://ceur-ws.org/Vol-801/#event> a ns6:WorkshopEvent ;
+    ns6:hasLocation <http://dbpedia.org/resource/Germany> ;
+    ns6:hasPart <http://ceur-ws.org/Vol-801/#part-CEUR-WS> ;
+    ns6:isSubEventOf <http://ceur-ws.org/Vol-801/#conf> ;
+    ns8:beginsAtDatetime "2011-09-29T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:endsAtDatetime "2011-09-29T00:00:00+00:00"^^xsd:dateTime ;
+    ns2:license "http://choosealicense.com/licenses/no-license/" .
 

@@ -1,219 +1,56 @@
-@prefix ns1: <http://xmlns.com/foaf/0.1/> .
-@prefix ns2: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns3: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns4: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns1: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns2: <http://www.w3.org/2002/07/owl#> .
+@prefix ns3: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns4: <http://purl.org/NET/c4dm/timeline.owl#> .
 @prefix ns5: <http://purl.org/ontology/bibo/#> .
-@prefix ns6: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns7: <http://www.w3.org/2002/07/owl#> .
-@prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns6: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns7: <http://xmlns.com/foaf/0.1/> .
+@prefix ns8: <http://purl.org/dc/elements/1.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-823/#BarryiSmyth> a ns1:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/BarryiSmyth> ;
-    ns1:made <http://ceur-ws.org/Vol-823/#dah2011_paper_1> ;
-    ns1:name "Barry Smyth" .
-
-<http://ceur-ws.org/Vol-823/#ChantaliReynaud> a ns1:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/ChantaliReynaud> ;
-    ns1:made <http://ceur-ws.org/Vol-823/#dah2011_paper_4> ;
-    ns1:name "Chantal Reynaud" .
-
-<http://ceur-ws.org/Vol-823/#DavidiSmits> a ns1:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/DavidiSmits> ;
-    ns1:made <http://ceur-ws.org/Vol-823/#dah2011_paper_6> ;
-    ns1:name "David Smits" .
-
-<http://ceur-ws.org/Vol-823/#HenkiSips> a ns1:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/HenkiSips> ;
-    ns1:made <http://ceur-ws.org/Vol-823/#dah2011_paper_3> ;
-    ns1:name "Henk Sips" .
-
-<http://ceur-ws.org/Vol-823/#IlknuriCelik> a ns1:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/IlknuriCelik> ;
-    ns1:made <http://ceur-ws.org/Vol-823/#dah2011_paper_2> ;
-    ns1:name "Ilknur Celik" .
-
-<http://ceur-ws.org/Vol-823/#JanusiA.iPouwelse> a ns1:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/JanusiA.iPouwelse> ;
-    ns1:made <http://ceur-ws.org/Vol-823/#dah2011_paper_3> ;
-    ns1:name "Janus A. Pouwelse" .
-
-<http://ceur-ws.org/Vol-823/#JohniHannon> a ns1:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/JohniHannon> ;
-    ns1:made <http://ceur-ws.org/Vol-823/#dah2011_paper_1> ;
-    ns1:name "John Hannon" .
-
-<http://ceur-ws.org/Vol-823/#KeviniMcCarthy> a ns1:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/KeviniMcCarthy> ;
-    ns1:made <http://ceur-ws.org/Vol-823/#dah2011_paper_1> ;
-    ns1:name "Kevin McCarthy" .
-
-<http://ceur-ws.org/Vol-823/#NadjetiZemirline> a ns1:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/NadjetiZemirline> ;
-    ns1:made <http://ceur-ws.org/Vol-823/#dah2011_paper_4> ;
-    ns1:name "Nadjet Zemirline" .
-
-<http://ceur-ws.org/Vol-823/#PatrickiSiehndel> a ns1:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/PatrickiSiehndel> ;
-    ns1:made <http://ceur-ws.org/Vol-823/#dah2011_paper_2> ;
-    ns1:name "Patrick Siehndel" .
-
-<http://ceur-ws.org/Vol-823/#VictoriGrishchenko> a ns1:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/VictoriGrishchenko> ;
-    ns1:made <http://ceur-ws.org/Vol-823/#dah2011_paper_3> ;
-    ns1:name "Victor Grishchenko" .
-
-<http://ceur-ws.org/Vol-823/#YolaineiBourda> a ns1:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/YolaineiBourda> ;
-    ns1:made <http://ceur-ws.org/Vol-823/#dah2011_paper_4> ;
-    ns1:name "Yolaine Bourda" .
-
-<http://ceur-ws.org/Vol-823/#event> a ns4:WorkshopEvent ;
-    ns4:hasLocation <http://dbpedia.org/resource/Netherlands> ;
-    ns4:hasPart <http://ceur-ws.org/Vol-823/#part-DAH> ;
-    ns4:isSubEventOf <http://ceur-ws.org/Vol-823/#conf> ;
-    ns8:beginsAtDatetime "2011-06-06T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:endsAtDatetime "2011-06-06T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:license <http://choosealicense.com/licenses/no-license/> ;
-    rdfs:seeAlso <http://ceur-ws.org/Vol-473/#event> .
-
-<http://ceur-ws.org/Vol-823/#EelcoiHerder> a ns1:Person ;
-    ns3:affiliation "" ;
-    ns7:sameAs <http://ceur-ws.org/persons/EelcoiHerder> ;
-    ns1:made <http://ceur-ws.org/Vol-823/#preface> ;
-    ns1:name "Eelco Herder" .
-
-<http://ceur-ws.org/Vol-823/#Geert-JaniHouben> a ns1:Person ;
-    ns3:affiliation "" ;
-    ns7:sameAs <http://ceur-ws.org/persons/Geert-JaniHouben> ;
-    ns1:made <http://ceur-ws.org/Vol-823/#preface> ;
-    ns1:name "Geert-Jan Houben" .
-
-<http://ceur-ws.org/Vol-823/#MichaeliYudelson> a ns1:Person ;
-    ns3:affiliation "" ;
-    ns7:sameAs <http://ceur-ws.org/persons/MichaeliYudelson> ;
-    ns1:made <http://ceur-ws.org/Vol-823/#preface> ;
-    ns1:name "Michael Yudelson" .
-
-<http://ceur-ws.org/Vol-823/#FabianiAbel> a ns1:Person ;
-    ns3:affiliation "" ;
-    ns7:sameAs <http://ceur-ws.org/persons/FabianiAbel> ;
-    ns1:made <http://ceur-ws.org/Vol-823/#dah2011_paper_2>,
-        <http://ceur-ws.org/Vol-823/#preface> ;
-    ns1:name "Fabian Abel" .
-
-<http://ceur-ws.org/Vol-823/#PauliDeiBra> a ns1:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/PauliDeiBra> ;
-    ns1:made <http://ceur-ws.org/Vol-823/#dah2011_paper_1>,
-        <http://ceur-ws.org/Vol-823/#dah2011_paper_5>,
-        <http://ceur-ws.org/Vol-823/#dah2011_paper_6> ;
-    ns1:name "Paul De Bra" .
-
-<http://ceur-ws.org/Vol-823/#dah2011_paper_6> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-823/> ;
-    ns6:title "Open Corpus Adaptation++ in GALE: Friend or Foe?" ;
-    ns5:endPage 52 ;
-    ns5:numPages 6 ;
-    ns5:startPage 47 ;
-    ns3:author <http://ceur-ws.org/Vol-823/#DavidiSmits>,
-        <http://ceur-ws.org/Vol-823/#PauliDeiBra> .
-
-<http://ceur-ws.org/Vol-823/#EvgenyiKnutov> a ns1:Person ;
-    ns3:affiliation "" ;
-    ns7:sameAs <http://ceur-ws.org/persons/EvgenyiKnutov> ;
-    ns1:made <http://ceur-ws.org/Vol-823/#dah2011_paper_1>,
-        <http://ceur-ws.org/Vol-823/#dah2011_paper_5>,
-        <http://ceur-ws.org/Vol-823/#preface> ;
-    ns1:name "Evgeny Knutov" .
-
-<http://ceur-ws.org/Vol-823/#MykolaiPechenizkiy> a ns1:Person ;
-    ns3:affiliation "" ;
-    ns7:sameAs <http://ceur-ws.org/persons/MykolaiPechenizkiy> ;
-    ns1:made <http://ceur-ws.org/Vol-823/#dah2011_paper_1>,
-        <http://ceur-ws.org/Vol-823/#dah2011_paper_5>,
-        <http://ceur-ws.org/Vol-823/#preface> ;
-    ns1:name "Mykola Pechenizkiy" .
-
-<http://ceur-ws.org/Vol-823/#dah2011_paper_2> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-823/> ;
-    ns6:title "Towards a Framework for Adaptive Faceted Search on Twitter" ;
-    ns5:endPage 22 ;
-    ns5:numPages 12 ;
-    ns5:startPage 11 ;
-    ns3:author <http://ceur-ws.org/Vol-823/#FabianiAbel>,
-        <http://ceur-ws.org/Vol-823/#IlknuriCelik>,
-        <http://ceur-ws.org/Vol-823/#PatrickiSiehndel> .
-
-<http://ceur-ws.org/Vol-823/#dah2011_paper_3> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-823/> ;
-    ns6:title "Referencing within Evolving Hypertext" ;
-    ns5:endPage 34 ;
-    ns5:numPages 12 ;
-    ns5:startPage 23 ;
-    ns3:author <http://ceur-ws.org/Vol-823/#HenkiSips>,
-        <http://ceur-ws.org/Vol-823/#JanusiA.iPouwelse>,
-        <http://ceur-ws.org/Vol-823/#VictoriGrishchenko> .
-
-<http://ceur-ws.org/Vol-823/#dah2011_paper_4> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-823/> ;
-    ns6:title "A Set of Adaptation Patterns for Expressing Adaptive Navigation in Adaptive Hypermedia" ;
-    ns5:endPage 40 ;
-    ns5:numPages 6 ;
-    ns5:startPage 35 ;
-    ns3:author <http://ceur-ws.org/Vol-823/#ChantaliReynaud>,
-        <http://ceur-ws.org/Vol-823/#NadjetiZemirline>,
-        <http://ceur-ws.org/Vol-823/#YolaineiBourda> .
-
-<http://ceur-ws.org/Vol-823/#dah2011_paper_5> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-823/> ;
-    ns6:title "Adaptive Hypermedia Systems Analysis Approach by Means of the GAF Framework" ;
-    ns5:endPage 46 ;
-    ns5:numPages 6 ;
-    ns5:startPage 41 ;
-    ns3:author <http://ceur-ws.org/Vol-823/#EvgenyiKnutov>,
-        <http://ceur-ws.org/Vol-823/#MykolaiPechenizkiy>,
-        <http://ceur-ws.org/Vol-823/#PauliDeiBra> .
-
-<http://ceur-ws.org/Vol-823/> a ns4:Proceedings ;
-    ns4:hasPart <http://ceur-ws.org/Vol-823/#dah2011_paper_1>,
-        <http://ceur-ws.org/Vol-823/#dah2011_paper_2>,
-        <http://ceur-ws.org/Vol-823/#dah2011_paper_3>,
-        <http://ceur-ws.org/Vol-823/#dah2011_paper_4>,
-        <http://ceur-ws.org/Vol-823/#dah2011_paper_5>,
-        <http://ceur-ws.org/Vol-823/#dah2011_paper_6>,
-        <http://ceur-ws.org/Vol-823/#preface> ;
-    ns2:issued "2012-01-03T00:00:00+00:00"^^xsd:dateTime ;
+<http://ceur-ws.org/Vol-823/> a ns3:Proceedings ;
+    ns6:issued "2012-01-03T00:00:00+00:00"^^xsd:dateTime ;
     ns5:presentedAt <http://ceur-ws.org/Vol-823/#event> ;
-    ns3:editor <http://ceur-ws.org/Vol-823/#EelcoiHerder>,
+    ns1:editor <http://ceur-ws.org/Vol-823/#EelcoiHerder>,
         <http://ceur-ws.org/Vol-823/#EvgenyiKnutov>,
         <http://ceur-ws.org/Vol-823/#FabianiAbel>,
         <http://ceur-ws.org/Vol-823/#Geert-JaniHouben>,
         <http://ceur-ws.org/Vol-823/#MichaeliYudelson>,
         <http://ceur-ws.org/Vol-823/#MykolaiPechenizkiy> .
 
-<http://ceur-ws.org/Vol-823/#dah2011_paper_1> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-823/> ;
-    ns6:title "Bridging Recommendation and Adaptation: Generic Adaptation Framework - Twittomender compliance case-study" ;
-    ns5:endPage 9 ;
-    ns5:numPages 9 ;
-    ns5:startPage 1 ;
-    ns3:author <http://ceur-ws.org/Vol-823/#BarryiSmyth>,
-        <http://ceur-ws.org/Vol-823/#EvgenyiKnutov>,
-        <http://ceur-ws.org/Vol-823/#JohniHannon>,
-        <http://ceur-ws.org/Vol-823/#KeviniMcCarthy>,
-        <http://ceur-ws.org/Vol-823/#MykolaiPechenizkiy>,
-        <http://ceur-ws.org/Vol-823/#PauliDeiBra> .
+<http://ceur-ws.org/Vol-823/#EelcoiHerder> a ns7:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/EelcoiHerder> ;
+    ns7:name "Eelco Herder" .
 
-<http://ceur-ws.org/Vol-823/#preface> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-823/> ;
-    ns6:title "Preface and Organization" ;
-    ns3:author <http://ceur-ws.org/Vol-823/#EelcoiHerder>,
-        <http://ceur-ws.org/Vol-823/#EvgenyiKnutov>,
-        <http://ceur-ws.org/Vol-823/#FabianiAbel>,
-        <http://ceur-ws.org/Vol-823/#Geert-JaniHouben>,
-        <http://ceur-ws.org/Vol-823/#MichaeliYudelson>,
-        <http://ceur-ws.org/Vol-823/#MykolaiPechenizkiy> .
+<http://ceur-ws.org/Vol-823/#EvgenyiKnutov> a ns7:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/EvgenyiKnutov> ;
+    ns7:name "Evgeny Knutov" .
+
+<http://ceur-ws.org/Vol-823/#FabianiAbel> a ns7:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/FabianiAbel> ;
+    ns7:name "Fabian Abel" .
+
+<http://ceur-ws.org/Vol-823/#Geert-JaniHouben> a ns7:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/Geert-JaniHouben> ;
+    ns7:name "Geert-Jan Houben" .
+
+<http://ceur-ws.org/Vol-823/#MichaeliYudelson> a ns7:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/MichaeliYudelson> ;
+    ns7:name "Michael Yudelson" .
+
+<http://ceur-ws.org/Vol-823/#MykolaiPechenizkiy> a ns7:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/MykolaiPechenizkiy> ;
+    ns7:name "Mykola Pechenizkiy" .
+
+<http://ceur-ws.org/Vol-823/#event> a ns3:WorkshopEvent ;
+    ns3:hasLocation <http://dbpedia.org/resource/Netherlands> ;
+    ns3:hasPart <http://ceur-ws.org/Vol-823/#part-CEUR-WS> ;
+    ns3:isSubEventOf <http://ceur-ws.org/Vol-823/#conf> ;
+    ns4:beginsAtDatetime "2011-06-06T00:00:00+00:00"^^xsd:dateTime ;
+    ns4:endsAtDatetime "2011-06-06T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:license "http://choosealicense.com/licenses/no-license/" ;
+    rdfs:seeAlso <http://ceur-ws.org/Vol-473/#event> .
 

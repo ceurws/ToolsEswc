@@ -1,11 +1,12 @@
 @prefix ns1: <http://xmlns.com/foaf/0.1/> .
 @prefix ns2: <http://purl.org/ontology/bibo/#> .
-@prefix ns3: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns3: <http://data.semanticweb.org/ns/swc/ontology/#> .
 @prefix ns4: <http://www.w3.org/2002/07/owl#> .
-@prefix ns5: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns6: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns5: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns6: <http://purl.org/dc/elements/1.1/> .
 @prefix ns7: <http://purl.org/dc/elements/1.1/#> .
 @prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns9: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -53,13 +54,13 @@
 
 <http://ceur-ws.org/Vol-249/#GiovanniiTummarello> a ns1:Person ;
     ns2:place <http://dbpedia.org/resource/Republic_of_Ireland> ;
-    ns3:affiliation "DERI" ;
+    ns5:affiliation "DERI" ;
     ns4:sameAs <http://ceur-ws.org/persons/GiovanniiTummarello> ;
     ns1:name "Giovanni Tummarello" .
 
 <http://ceur-ws.org/Vol-249/#HarryiHalpin> a ns1:Person ;
     ns2:place <http://dbpedia.org/resource/United_Kingdom> ;
-    ns3:affiliation "University of Edinburgh" ;
+    ns5:affiliation "University of Edinburgh" ;
     ns4:sameAs <http://ceur-ws.org/persons/HarryiHalpin> ;
     ns1:name "Harry Halpin" .
 
@@ -103,85 +104,85 @@
     ns1:made <http://ceur-ws.org/Vol-249/#submission_132> ;
     ns1:name "Wolfgang Mueller" .
 
-<http://ceur-ws.org/Vol-249/#event> a ns5:WorkshopEvent ;
-    ns5:hasLocation <http://dbpedia.org/resource/Canada> ;
-    ns5:hasPart <http://ceur-ws.org/Vol-249/#part-ws> ;
-    ns5:isSubEventOf <http://ceur-ws.org/Vol-249/#conf> ;
-    ns8:beginsAtDatetime "2007-05-08T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:endsAtDatetime "2007-05-08T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:license <http://choosealicense.com/licenses/no-license/> .
+<http://ceur-ws.org/Vol-249/#event> a ns3:WorkshopEvent ;
+    ns3:hasLocation <http://dbpedia.org/resource/Canada> ;
+    ns3:hasPart <http://ceur-ws.org/Vol-249/#part-CEUR-WS> ;
+    ns3:isSubEventOf <http://ceur-ws.org/Vol-249/#conf> ;
+    ns8:beginsAtDatetime "2007-05-14T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:endsAtDatetime "2007-05-14T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:license "http://choosealicense.com/licenses/no-license/" .
 
 <http://ceur-ws.org/Vol-249/#HeikoiStoermer> a ns1:Person ;
     ns2:place <http://dbpedia.org/resource/Italy> ;
-    ns3:affiliation "University of Trento" ;
+    ns5:affiliation "University of Trento" ;
     ns4:sameAs <http://ceur-ws.org/persons/HeikoiStoermer> ;
     ns1:made <http://ceur-ws.org/Vol-249/#submission_150> ;
     ns1:name "Heiko Stoermer" .
 
 <http://ceur-ws.org/Vol-249/#PaoloiBouquet> a ns1:Person ;
     ns2:place <http://dbpedia.org/resource/Italy> ;
-    ns3:affiliation "University of Trento" ;
+    ns5:affiliation "University of Trento" ;
     ns4:sameAs <http://ceur-ws.org/persons/PaoloiBouquet> ;
     ns1:made <http://ceur-ws.org/Vol-249/#submission_150> ;
     ns1:name "Paolo Bouquet" .
 
-<http://ceur-ws.org/Vol-249/#submission_105> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-249/> ;
+<http://ceur-ws.org/Vol-249/#submission_105> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-249/> ;
     ns7:title "Referent Tracking and its Applications" ;
-    ns3:author <http://ceur-ws.org/Vol-249/#BarryiSmith>,
+    ns5:author <http://ceur-ws.org/Vol-249/#BarryiSmith>,
         <http://ceur-ws.org/Vol-249/#WerneriCeusters> .
 
-<http://ceur-ws.org/Vol-249/#submission_134> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-249/> ;
+<http://ceur-ws.org/Vol-249/#submission_134> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-249/> ;
     ns7:title "Profiling Topics on the Web" ;
-    ns3:author <http://ceur-ws.org/Vol-249/#AdityaiSehgal>,
+    ns5:author <http://ceur-ws.org/Vol-249/#AdityaiSehgal>,
         <http://ceur-ws.org/Vol-249/#PadminiiSrinivasan> .
 
-<http://ceur-ws.org/Vol-249/#submission_71> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-249/> ;
+<http://ceur-ws.org/Vol-249/#submission_71> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-249/> ;
     ns7:title "A Grounded Ontology for Identity and Reference of Web Resources" ;
-    ns3:author <http://ceur-ws.org/Vol-249/#AldoiGangemi>,
+    ns5:author <http://ceur-ws.org/Vol-249/#AldoiGangemi>,
         <http://ceur-ws.org/Vol-249/#ValentinaiPresutti> .
 
-<http://ceur-ws.org/Vol-249/#submission_132> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-249/> ;
+<http://ceur-ws.org/Vol-249/#submission_132> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-249/> ;
     ns7:title "Towards Ontology-based Disambiguation of Geographical Identifiers" ;
-    ns3:author <http://ceur-ws.org/Vol-249/#JoachimiKleb>,
+    ns5:author <http://ceur-ws.org/Vol-249/#JoachimiKleb>,
         <http://ceur-ws.org/Vol-249/#RaphaeliVolz>,
         <http://ceur-ws.org/Vol-249/#WolfgangiMueller> .
 
-<http://ceur-ws.org/Vol-249/#submission_133> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-249/> ;
+<http://ceur-ws.org/Vol-249/#submission_133> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-249/> ;
     ns7:title "Identity: How to name it, How to find it" ;
-    ns3:author <http://ceur-ws.org/Vol-249/#ChristoiDichev>,
+    ns5:author <http://ceur-ws.org/Vol-249/#ChristoiDichev>,
         <http://ceur-ws.org/Vol-249/#DarinaiDicheva>,
         <http://ceur-ws.org/Vol-249/#JaniFischer> .
 
-<http://ceur-ws.org/Vol-249/#submission_135> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-249/> ;
+<http://ceur-ws.org/Vol-249/#submission_135> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-249/> ;
     ns7:title "Performing Object Consolidation on the Semantic Web Data Graph" ;
-    ns3:author <http://ceur-ws.org/Vol-249/#AidaniHogan>,
+    ns5:author <http://ceur-ws.org/Vol-249/#AidaniHogan>,
         <http://ceur-ws.org/Vol-249/#AndreasiHarth>,
         <http://ceur-ws.org/Vol-249/#StefaniDecker> .
 
-<http://ceur-ws.org/Vol-249/#submission_150> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-249/> ;
+<http://ceur-ws.org/Vol-249/#submission_150> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-249/> ;
     ns7:title "OKKAM: Enabling a Web of Entities" ;
-    ns3:author <http://ceur-ws.org/Vol-249/#DanieliGiacomuzzi>,
+    ns5:author <http://ceur-ws.org/Vol-249/#DanieliGiacomuzzi>,
         <http://ceur-ws.org/Vol-249/#HeikoiStoermer>,
         <http://ceur-ws.org/Vol-249/#PaoloiBouquet> .
 
-<http://ceur-ws.org/Vol-249/> a ns5:Proceedings ;
-    ns5:hasPart <http://ceur-ws.org/Vol-249/#submission_105>,
+<http://ceur-ws.org/Vol-249/> a ns3:Proceedings ;
+    ns3:hasPart <http://ceur-ws.org/Vol-249/#submission_105>,
         <http://ceur-ws.org/Vol-249/#submission_132>,
         <http://ceur-ws.org/Vol-249/#submission_133>,
         <http://ceur-ws.org/Vol-249/#submission_134>,
         <http://ceur-ws.org/Vol-249/#submission_135>,
         <http://ceur-ws.org/Vol-249/#submission_150>,
         <http://ceur-ws.org/Vol-249/#submission_71> ;
-    ns6:issued "2007-05-14T00:00:00+00:00"^^xsd:dateTime ;
+    ns9:issued "2007-05-14T00:00:00+00:00"^^xsd:dateTime ;
     ns2:presentedAt <http://ceur-ws.org/Vol-249/#event> ;
-    ns3:editor <http://ceur-ws.org/Vol-249/#GiovanniiTummarello>,
+    ns5:editor <http://ceur-ws.org/Vol-249/#GiovanniiTummarello>,
         <http://ceur-ws.org/Vol-249/#HarryiHalpin>,
         <http://ceur-ws.org/Vol-249/#HeikoiStoermer>,
         <http://ceur-ws.org/Vol-249/#PaoloiBouquet> .

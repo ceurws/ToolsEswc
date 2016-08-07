@@ -1,11 +1,12 @@
 @prefix ns1: <http://xmlns.com/foaf/0.1/> .
 @prefix ns2: <http://swrc.ontoware.org/ontology/#> .
 @prefix ns3: <http://www.w3.org/2002/07/owl#> .
-@prefix ns4: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns4: <http://purl.org/ontology/bibo/#> .
 @prefix ns5: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns6: <http://purl.org/ontology/bibo/#> .
-@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns6: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns8: <http://purl.org/dc/elements/1.1/> .
+@prefix ns9: <http://purl.org/NET/c4dm/timeline.owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -82,7 +83,7 @@
     ns1:name "Praphul Chandra" .
 
 <http://ceur-ws.org/Vol-664/#SergioiFern%C3%A1ndez> a ns1:Person ;
-    ns6:place <http://dbpedia.org/resource/Spain> ;
+    ns4:place <http://dbpedia.org/resource/Spain> ;
     ns2:affiliation "Fundación CTIC, Gijón, Asturias" ;
     ns3:sameAs <http://ceur-ws.org/persons/SergioiFern%C3%A1ndez> ;
     ns1:name "Sergio Fernández" .
@@ -103,64 +104,60 @@
     ns1:name "Tim Finin" .
 
 <http://ceur-ws.org/Vol-664/#UldisiBoj%C4%81rs> a ns1:Person ;
-    ns6:place <http://dbpedia.org/resource/Latvia> ;
+    ns4:place <http://dbpedia.org/resource/Latvia> ;
     ns2:affiliation "University of Latvia" ;
     ns3:sameAs <http://ceur-ws.org/persons/UldisiBoj%C4%81rs> ;
     ns1:name "Uldis Bojārs" .
 
 <http://ceur-ws.org/Vol-664/#event> a ns5:WorkshopEvent ;
     ns5:hasLocation <http://dbpedia.org/resource/China> ;
-    ns5:hasPart <http://ceur-ws.org/Vol-664/#part-SDoW> ;
+    ns5:hasPart <http://ceur-ws.org/Vol-664/#part-CEUR-WS> ;
     ns5:isSubEventOf <http://ceur-ws.org/Vol-664/#conf> ;
-    ns7:beginsAtDatetime "2010-11-08T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:endsAtDatetime "2010-11-08T00:00:00+00:00"^^xsd:dateTime ;
-    ns4:license <http://choosealicense.com/licenses/no-license/> ;
+    ns9:beginsAtDatetime "2011-01-12T00:00:00+00:00"^^xsd:dateTime ;
+    ns9:endsAtDatetime "2011-01-12T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:license "http://choosealicense.com/licenses/no-license/" ;
     rdfs:seeAlso <http://ceur-ws.org/Vol-405/#event>,
         <http://ceur-ws.org/Vol-520/#event> .
 
 <http://ceur-ws.org/Vol-664/#paper3> a ns5:Paper ;
     ns5:partOf <http://ceur-ws.org/Vol-664/> ;
-    ns4:title "Computing FOAF Co-reference Relations with Rules and Machine Learning" ;
-    ns6:section <http%3A//ceur-ws.org/Vol-664/%23Preface> ;
+    ns6:title "Computing FOAF Co-reference Relations with Rules and Machine Learning" ;
+    ns4:section <http://ceur-ws.org/Vol-664/#Preface> ;
     ns2:author <http://ceur-ws.org/Vol-664/#JenniferiSleeman>,
         <http://ceur-ws.org/Vol-664/#TimiFinin> .
 
 <http://ceur-ws.org/Vol-664/#paper2> a ns5:Paper ;
     ns5:partOf <http://ceur-ws.org/Vol-664/> ;
-    ns4:title "End-User Programming and the Advent of Sharable, Social Machines" ;
-    ns6:section <http%3A//ceur-ws.org/Vol-664/%23Preface> ;
+    ns6:title "End-User Programming and the Advent of Sharable, Social Machines" ;
+    ns4:section <http://ceur-ws.org/Vol-664/#Preface> ;
     ns2:author <http://ceur-ws.org/Vol-664/#DeborahiL.iMcGuinness>,
         <http://ceur-ws.org/Vol-664/#DominiciDifranzo>,
         <http://ceur-ws.org/Vol-664/#EvaniPatton> .
 
 <http://ceur-ws.org/Vol-664/#paper4> a ns5:Paper ;
     ns5:partOf <http://ceur-ws.org/Vol-664/> ;
-    ns4:title "Mapping Tweets to Conference Talks: A Goldmine for Semantics" ;
-    ns6:section <http%3A//ceur-ws.org/Vol-664/%23Preface> ;
+    ns6:title "Mapping Tweets to Conference Talks: A Goldmine for Semantics" ;
+    ns4:section <http://ceur-ws.org/Vol-664/#Preface> ;
     ns2:author <http://ceur-ws.org/Vol-664/#MatthewiRowe>,
         <http://ceur-ws.org/Vol-664/#MilaniStankovic>,
         <http://ceur-ws.org/Vol-664/#PhilippeiLaublet> .
 
 <http://ceur-ws.org/Vol-664/#paper5> a ns5:Paper ;
     ns5:partOf <http://ceur-ws.org/Vol-664/> ;
-    ns4:title "Extracting Semantic Relations for Mining of Social Data" ;
-    ns6:section <http%3A//ceur-ws.org/Vol-664/%23Preface> ;
+    ns6:title "Extracting Semantic Relations for Mining of Social Data" ;
+    ns4:section <http://ceur-ws.org/Vol-664/#Preface> ;
     ns2:author <http://ceur-ws.org/Vol-664/#MasumiiInaba>,
         <http://ceur-ws.org/Vol-664/#ShinichiiNagano>,
         <http://ceur-ws.org/Vol-664/#TakahiroiKawamura> .
 
 <http://ceur-ws.org/Vol-664/#paper1> a ns5:Paper ;
     ns5:partOf <http://ceur-ws.org/Vol-664/> ;
-    ns4:title "Do Not Feel The Trolls" ;
-    ns6:section <http%3A//ceur-ws.org/Vol-664/%23Preface> ;
+    ns6:title "Do Not Feel The Trolls" ;
+    ns4:section <http://ceur-ws.org/Vol-664/#Preface> ;
     ns2:author <http://ceur-ws.org/Vol-664/#AmiriHussain>,
         <http://ceur-ws.org/Vol-664/#AvinashiSharma>,
         <http://ceur-ws.org/Vol-664/#ErikiCambria>,
         <http://ceur-ws.org/Vol-664/#PraphuliChandra> .
-
-<http%3A//ceur-ws.org/Vol-664/%23Preface> a ns5:SessionEvent ;
-    ns5:partOf <http://ceur-ws.org/Vol-664/> ;
-    ns4:title "Preface" .
 
 <http://ceur-ws.org/Vol-664/> a ns5:Proceedings ;
     ns5:hasPart <http://ceur-ws.org/Vol-664/#paper1>,
@@ -168,11 +165,15 @@
         <http://ceur-ws.org/Vol-664/#paper3>,
         <http://ceur-ws.org/Vol-664/#paper4>,
         <http://ceur-ws.org/Vol-664/#paper5> ;
-    ns5:hasSession <http%3A//ceur-ws.org/Vol-664/%23Preface> ;
-    ns8:issued "2011-01-12T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:presentedAt <http://ceur-ws.org/Vol-664/#event> ;
+    ns5:hasSession <http://ceur-ws.org/Vol-664/#Preface> ;
+    ns7:issued "2011-01-12T00:00:00+00:00"^^xsd:dateTime ;
+    ns4:presentedAt <http://ceur-ws.org/Vol-664/#event> ;
     ns2:editor <http://ceur-ws.org/Vol-664/#AlexandreiPassant>,
         <http://ceur-ws.org/Vol-664/#JohniBreslin>,
         <http://ceur-ws.org/Vol-664/#SergioiFern%C3%A1ndez>,
         <http://ceur-ws.org/Vol-664/#UldisiBoj%C4%81rs> .
+
+<http://ceur-ws.org/Vol-664/#Preface> a ns5:SessionEvent ;
+    ns5:partOf <http://ceur-ws.org/Vol-664/> ;
+    ns6:title "Preface" .
 

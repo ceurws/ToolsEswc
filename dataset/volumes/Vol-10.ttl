@@ -1,11 +1,12 @@
 @prefix ns1: <http://xmlns.com/foaf/0.1/> .
 @prefix ns2: <http://swrc.ontoware.org/ontology/#> .
 @prefix ns3: <http://www.w3.org/2002/07/owl#> .
-@prefix ns4: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns5: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns6: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns7: <http://purl.org/ontology/bibo/#> .
-@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns4: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns5: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns6: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns7: <http://purl.org/dc/elements/1.1/> .
+@prefix ns8: <http://purl.org/ontology/bibo/#> .
+@prefix ns9: <http://purl.org/NET/c4dm/timeline.owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -167,7 +168,7 @@
     ns1:name "M. Ganesh" .
 
 <http://ceur-ws.org/Vol-10/#MartiniStaudt> a ns1:Person ;
-    ns7:place <http://dbpedia.org/resource/Switzerland> ;
+    ns8:place <http://dbpedia.org/resource/Switzerland> ;
     ns2:affiliation "Swiss Life, Information Systems Research, P.O.Box, 8022 Zurich, Switzerland, KRDB-98 is held in conjunction with the ACM SIGMOD International Conference on Management of Data (SIGMOD-98)., The workshop is co-sponsored by Air Force Research (Rome) Laboratory and Swiss Life." ;
     ns3:sameAs <http://ceur-ws.org/persons/MartiniStaudt> ;
     ns1:name "Martin Staudt" .
@@ -257,148 +258,148 @@
     ns1:made <http://ceur-ws.org/Vol-10/#paper5> ;
     ns1:name "Z. Bouriche-Boufaida" .
 
-<http://ceur-ws.org/Vol-10/#event> a ns5:WorkshopEvent ;
-    ns5:hasLocation <http://dbpedia.org/resource/United_States> ;
-    ns5:hasPart <http://ceur-ws.org/Vol-10/#part-KRDB>,
+<http://ceur-ws.org/Vol-10/#event> a ns4:WorkshopEvent ;
+    ns4:hasLocation <http://dbpedia.org/resource/United_States> ;
+    ns4:hasPart <http://ceur-ws.org/Vol-10/#part-KRDB>,
         <http://ceur-ws.org/Vol-10/#part-WA> ;
-    ns5:isSubEventOf <http://ceur-ws.org/Vol-10/#conf> ;
-    ns6:beginsAtDatetime "1998-05-31T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:endsAtDatetime "1998-05-31T00:00:00+00:00"^^xsd:dateTime ;
-    ns4:license <http://choosealicense.com/licenses/no-license/> .
+    ns4:isSubEventOf <http://ceur-ws.org/Vol-10/#conf> ;
+    ns9:beginsAtDatetime "1998-05-15T00:00:00+00:00"^^xsd:dateTime ;
+    ns9:endsAtDatetime "1998-05-15T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:license "http://choosealicense.com/licenses/no-license/" .
 
 <http://ceur-ws.org/Vol-10/#V.iChaudhri> a ns1:Person ;
-    ns7:place <http://dbpedia.org/resource/United_States> ;
+    ns8:place <http://dbpedia.org/resource/United_States> ;
     ns2:affiliation "SRI International, AI Center, 333 Ravenswood Ave. Menlo Park, CA 94025" ;
     ns3:sameAs <http://ceur-ws.org/persons/V.iChaudhri> ;
     ns1:made <http://ceur-ws.org/Vol-10/#paper18> ;
     ns1:name "V. Chaudhri" .
 
-<http://ceur-ws.org/Vol-10/#paper11> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-10/> ;
-    ns4:title "Practical Problems in Coupling Deductive Engines with Relational Databases" ;
+<http://ceur-ws.org/Vol-10/#paper11> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-10/> ;
+    ns6:title "Practical Problems in Coupling Deductive Engines with Relational Databases" ;
     ns2:author <http://ceur-ws.org/Vol-10/#J.iFreire> .
 
-<http://ceur-ws.org/Vol-10/#paper15> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-10/> ;
-    ns4:title "Deductive Data Mining: Uncertainty Measures for Banding the Search Space" ;
+<http://ceur-ws.org/Vol-10/#paper15> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-10/> ;
+    ns6:title "Deductive Data Mining: Uncertainty Measures for Banding the Search Space" ;
     ns2:author <http://ceur-ws.org/Vol-10/#L.iRussell> .
 
-<http://ceur-ws.org/Vol-10/#paper6> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-10/> ;
-    ns4:title "The Interactive Databases Approach to the User Interface Modeling" ;
+<http://ceur-ws.org/Vol-10/#paper6> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-10/> ;
+    ns6:title "The Interactive Databases Approach to the User Interface Modeling" ;
     ns2:author <http://ceur-ws.org/Vol-10/#E.iBugaenko> .
 
-<http://ceur-ws.org/Vol-10/#paper9> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-10/> ;
-    ns4:title "On Domain-Specific Declarative Knowledge Representationand Database Languages" ;
+<http://ceur-ws.org/Vol-10/#paper9> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-10/> ;
+    ns6:title "On Domain-Specific Declarative Knowledge Representationand Database Languages" ;
     ns2:author <http://ceur-ws.org/Vol-10/#S.iDecker> .
 
-<http://ceur-ws.org/Vol-10/#paper1> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-10/> ;
-    ns4:title "Sophia: Providing Basic Knowledge Services with a Common DBMS" ;
+<http://ceur-ws.org/Vol-10/#paper1> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-10/> ;
+    ns6:title "Sophia: Providing Basic Knowledge Services with a Common DBMS" ;
     ns2:author <http://ceur-ws.org/Vol-10/#N.F.iAbernethy>,
         <http://ceur-ws.org/Vol-10/#R.B.iAltman> .
 
-<http://ceur-ws.org/Vol-10/#paper14> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-10/> ;
-    ns4:title "Semantic Query Optimization and Rule Graphs" ;
+<http://ceur-ws.org/Vol-10/#paper14> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-10/> ;
+    ns6:title "Semantic Query Optimization and Rule Graphs" ;
     ns2:author <http://ceur-ws.org/Vol-10/#B.iLowden>,
         <http://ceur-ws.org/Vol-10/#J.iRobinson> .
 
-<http://ceur-ws.org/Vol-10/#paper17> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-10/> ;
-    ns4:title "Role-based Semantics for Conceptual-Level Queries" ;
+<http://ceur-ws.org/Vol-10/#paper17> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-10/> ;
+    ns6:title "Role-based Semantics for Conceptual-Level Queries" ;
     ns2:author <http://ceur-ws.org/Vol-10/#D.iSilberberg>,
         <http://ceur-ws.org/Vol-10/#R.D.iSemmel> .
 
-<http://ceur-ws.org/Vol-10/#paper4> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-10/> ;
-    ns4:title "Hypothetical database temporal reasoning with history encoding" ;
+<http://ceur-ws.org/Vol-10/#paper4> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-10/> ;
+    ns6:title "Hypothetical database temporal reasoning with history encoding" ;
     ns2:author <http://ceur-ws.org/Vol-10/#L.iBertossi>,
         <http://ceur-ws.org/Vol-10/#M.iArenas> .
 
-<http://ceur-ws.org/Vol-10/#paper5> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-10/> ;
-    ns4:title "On Extending a Semantic Data Model with Some Aspects" ;
+<http://ceur-ws.org/Vol-10/#paper5> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-10/> ;
+    ns6:title "On Extending a Semantic Data Model with Some Aspects" ;
     ns2:author <http://ceur-ws.org/Vol-10/#M.iBoufaida>,
         <http://ceur-ws.org/Vol-10/#Z.iBouriche-Boufaida> .
 
-<http://ceur-ws.org/Vol-10/#paper7> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-10/> ;
-    ns4:title "Bottom-up Integration of Ontologies in a Database Context" ;
+<http://ceur-ws.org/Vol-10/#paper7> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-10/> ;
+    ns6:title "Bottom-up Integration of Ontologies in a Database Context" ;
     ns2:author <http://ceur-ws.org/Vol-10/#J.-C.R.iPazzaglia>,
         <http://ceur-ws.org/Vol-10/#S.M.iErnbury> .
 
-<http://ceur-ws.org/Vol-10/#paper12> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-10/> ;
-    ns4:title "Organizing Knowledge of a Federated Database System to Support Multiple View Generation" ;
+<http://ceur-ws.org/Vol-10/#paper12> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-10/> ;
+    ns6:title "Organizing Knowledge of a Federated Database System to Support Multiple View Generation" ;
     ns2:author <http://ceur-ws.org/Vol-10/#D.D.iKarunaratna>,
         <http://ceur-ws.org/Vol-10/#N.J.iFiddian>,
         <http://ceur-ws.org/Vol-10/#W.A.iGray> .
 
-<http://ceur-ws.org/Vol-10/#paper13> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-10/> ;
-    ns4:title "A Metadata Repository API" ;
+<http://ceur-ws.org/Vol-10/#paper13> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-10/> ;
+    ns6:title "A Metadata Repository API" ;
     ns2:author <http://ceur-ws.org/Vol-10/#P.iMartin>,
         <http://ceur-ws.org/Vol-10/#P.iZion>,
         <http://ceur-ws.org/Vol-10/#W.iPowley> .
 
-<http://ceur-ws.org/Vol-10/#paper2> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-10/> ;
-    ns4:title "Knowledge Bus: Generating Application-focused Databases from Large Ontologies" ;
+<http://ceur-ws.org/Vol-10/#paper2> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-10/> ;
+    ns6:title "Knowledge Bus: Generating Application-focused Databases from Large Ontologies" ;
     ns2:author <http://ceur-ws.org/Vol-10/#B.iPeterson>,
         <http://ceur-ws.org/Vol-10/#J.iEngel>,
         <http://ceur-ws.org/Vol-10/#W.A.iAndersen> .
 
-<http://ceur-ws.org/Vol-10/#paper3> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-10/> ;
-    ns4:title "Intelligent Caching for Information Mediators: A KR Based Approach" ;
+<http://ceur-ws.org/Vol-10/#paper3> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-10/> ;
+    ns6:title "Intelligent Caching for Information Mediators: A KR Based Approach" ;
     ns2:author <http://ceur-ws.org/Vol-10/#C.A.iKnoblock>,
         <http://ceur-ws.org/Vol-10/#C.iShahabi>,
         <http://ceur-ws.org/Vol-10/#N.iAshish> .
 
-<http://ceur-ws.org/Vol-10/#paper8> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-10/> ;
-    ns4:title "Automatic Generation of a Warehouse Mediators Using an Ontology Engine" ;
+<http://ceur-ws.org/Vol-10/#paper8> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-10/> ;
+    ns6:title "Automatic Generation of a Warehouse Mediators Using an Ontology Engine" ;
     ns2:author <http://ceur-ws.org/Vol-10/#M.iGanesh>,
         <http://ceur-ws.org/Vol-10/#R.iMusick>,
         <http://ceur-ws.org/Vol-10/#T.iCritchlow> .
 
-<http://ceur-ws.org/Vol-10/#paper10> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-10/> ;
-    ns4:title "Reasoning About Web-Site Structure" ;
+<http://ceur-ws.org/Vol-10/#paper10> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-10/> ;
+    ns6:title "Reasoning About Web-Site Structure" ;
     ns2:author <http://ceur-ws.org/Vol-10/#A.iLevy>,
         <http://ceur-ws.org/Vol-10/#D.iFlorescu>,
         <http://ceur-ws.org/Vol-10/#D.iSuciu>,
         <http://ceur-ws.org/Vol-10/#M.iFernandez> .
 
-<http://ceur-ws.org/Vol-10/#paper16> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-10/> ;
-    ns4:title "Databases for Semistructured data: How Useful Are They?" ;
+<http://ceur-ws.org/Vol-10/#paper16> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-10/> ;
+    ns6:title "Databases for Semistructured data: How Useful Are They?" ;
     ns2:author <http://ceur-ws.org/Vol-10/#B.iGates>,
         <http://ceur-ws.org/Vol-10/#I.iMani>,
         <http://ceur-ws.org/Vol-10/#K.iSmith>,
         <http://ceur-ws.org/Vol-10/#L.iSeligman> .
 
-<http://ceur-ws.org/Vol-10/#paper18> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-10/> ;
-    ns4:title "Knowledge-Intensive Query Processing" ;
+<http://ceur-ws.org/Vol-10/#paper18> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-10/> ;
+    ns6:title "Knowledge-Intensive Query Processing" ;
     ns2:author <http://ceur-ws.org/Vol-10/#A.iFarquhar>,
         <http://ceur-ws.org/Vol-10/#B.iStarr>,
         <http://ceur-ws.org/Vol-10/#R.iWaldinger>,
         <http://ceur-ws.org/Vol-10/#V.iChaudhri> .
 
-<http://ceur-ws.org/Vol-10/#paper19> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-10/> ;
-    ns4:title "Evaluating Answer Quality/Efficiency Tradeoffs" ;
+<http://ceur-ws.org/Vol-10/#paper19> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-10/> ;
+    ns6:title "Evaluating Answer Quality/Efficiency Tradeoffs" ;
     ns2:author <http://ceur-ws.org/Vol-10/#B.T.iJonsson>,
         <http://ceur-ws.org/Vol-10/#C.L.iGiles>,
         <http://ceur-ws.org/Vol-10/#D.iSrivastava>,
         <http://ceur-ws.org/Vol-10/#M.J.iFranklin>,
         <http://ceur-ws.org/Vol-10/#U.iCetintemel> .
 
-<http://ceur-ws.org/Vol-10/> a ns5:Proceedings ;
-    ns5:hasPart <http://ceur-ws.org/Vol-10/#paper1>,
+<http://ceur-ws.org/Vol-10/> a ns4:Proceedings ;
+    ns4:hasPart <http://ceur-ws.org/Vol-10/#paper1>,
         <http://ceur-ws.org/Vol-10/#paper10>,
         <http://ceur-ws.org/Vol-10/#paper11>,
         <http://ceur-ws.org/Vol-10/#paper12>,
@@ -417,8 +418,8 @@
         <http://ceur-ws.org/Vol-10/#paper7>,
         <http://ceur-ws.org/Vol-10/#paper8>,
         <http://ceur-ws.org/Vol-10/#paper9> ;
-    ns8:issued "1998-05-19T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:presentedAt <http://ceur-ws.org/Vol-10/#event> ;
+    ns5:issued "1998-05-19T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:presentedAt <http://ceur-ws.org/Vol-10/#event> ;
     ns2:editor <http://ceur-ws.org/Vol-10/#AlexiBorgida>,
         <http://ceur-ws.org/Vol-10/#MartiniStaudt>,
         <http://ceur-ws.org/Vol-10/#V.iChaudhri> .

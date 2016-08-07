@@ -1,350 +1,72 @@
-@prefix ns1: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns2: <http://purl.org/ontology/bibo/#> .
-@prefix ns3: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns4: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns5: <http://www.w3.org/2002/07/owl#> .
-@prefix ns6: <http://xmlns.com/foaf/0.1/> .
-@prefix ns7: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns1: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns2: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns3: <http://www.w3.org/2002/07/owl#> .
+@prefix ns4: <http://xmlns.com/foaf/0.1/> .
+@prefix ns5: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns6: <http://purl.org/dc/elements/1.1/> .
+@prefix ns7: <http://purl.org/ontology/bibo/#> .
 @prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1329/#AdrianiPaschke> a ns6:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/AdrianiPaschke> ;
-    ns6:made <http://ceur-ws.org/Vol-1329/#paper1p> ;
-    ns6:name "Adrian Paschke" .
-
-<http://ceur-ws.org/Vol-1329/#AndreaiGiovanniiNuzzolese> a ns6:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/AndreaiGiovanniiNuzzolese> ;
-    ns6:made <http://ceur-ws.org/Vol-1329/#papersmile_2> ;
-    ns6:name "Andrea Giovanni Nuzzolese" .
-
-<http://ceur-ws.org/Vol-1329/#AndreaiNuzzolese> a ns6:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/AndreaiNuzzolese> ;
-    ns6:made <http://ceur-ws.org/Vol-1329/#paper2p> ;
-    ns6:name "Andrea Nuzzolese" .
-
-<http://ceur-ws.org/Vol-1329/#AndreasiThoni> a ns6:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/AndreasiThoni> ;
-    ns6:made <http://ceur-ws.org/Vol-1329/#papersmile_3> ;
-    ns6:name "Andreas Thoni" .
-
-<http://ceur-ws.org/Vol-1329/#DagmariMonett-Diaz> a ns6:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/DagmariMonett-Diaz> ;
-    ns6:made <http://ceur-ws.org/Vol-1329/#paper1p> ;
-    ns6:name "Dagmar Monett-Diaz" .
-
-<http://ceur-ws.org/Vol-1329/#ErikiCambria> a ns6:Person ;
-    ns3:affiliation "" ;
-    ns5:sameAs <http://ceur-ws.org/persons/ErikiCambria> ;
-    ns6:name "Erik Cambria" .
-
-<http://ceur-ws.org/Vol-1329/#ErikiVanideriGoot> a ns6:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/ErikiVanideriGoot> ;
-    ns6:made <http://ceur-ws.org/Vol-1329/#papersmile_4> ;
-    ns6:name "Erik Van der Goot" .
-
-<http://ceur-ws.org/Vol-1329/#FabioiCiravegna> a ns6:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/FabioiCiravegna> ;
-    ns6:made <http://ceur-ws.org/Vol-1329/#papersmile_5> ;
-    ns6:name "Fabio Ciravegna" .
-
-<http://ceur-ws.org/Vol-1329/#HeidelindeiHobel> a ns6:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/HeidelindeiHobel> ;
-    ns6:made <http://ceur-ws.org/Vol-1329/#papersmile_3> ;
-    ns6:name "Heidelinde Hobel" .
-
-<http://ceur-ws.org/Vol-1329/#HristoiTanev> a ns6:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/HristoiTanev> ;
-    ns6:made <http://ceur-ws.org/Vol-1329/#papersmile_4> ;
-    ns6:name "Hristo Tanev" .
-
-<http://ceur-ws.org/Vol-1329/#KiaiTeymourian> a ns6:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/KiaiTeymourian> ;
-    ns6:made <http://ceur-ws.org/Vol-1329/#paper1p> ;
-    ns6:name "Kia Teymourian" .
-
-<http://ceur-ws.org/Vol-1329/#LisaiMadlberger> a ns6:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/LisaiMadlberger> ;
-    ns6:made <http://ceur-ws.org/Vol-1329/#papersmile_3> ;
-    ns6:name "Lisa Madlberger" .
-
-<http://ceur-ws.org/Vol-1329/#MalvinaiNissim> a ns6:Person ;
-    ns3:affiliation "" ;
-    ns5:sameAs <http://ceur-ws.org/persons/MalvinaiNissim> ;
-    ns6:name "Malvina Nissim" .
-
-<http://ceur-ws.org/Vol-1329/#Marie-AudeiAufaure> a ns6:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/Marie-AudeiAufaure> ;
-    ns6:made <http://ceur-ws.org/Vol-1329/#paper2> ;
-    ns6:name "Marie-Aude Aufaure" .
-
-<http://ceur-ws.org/Vol-1329/#MarineiLeiGlouanec> a ns6:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/MarineiLeiGlouanec> ;
-    ns6:made <http://ceur-ws.org/Vol-1329/#paper2> ;
-    ns6:name "Marine Le Glouanec" .
-
-<http://ceur-ws.org/Vol-1329/#MarioiCataldi> a ns6:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/MarioiCataldi> ;
-    ns6:made <http://ceur-ws.org/Vol-1329/#paper2> ;
-    ns6:name "Mario Cataldi" .
-
-<http://ceur-ws.org/Vol-1329/#MirimiFernandez> a ns6:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/MirimiFernandez> ;
-    ns6:made <http://ceur-ws.org/Vol-1329/#paper1> ;
-    ns6:name "Mirim Fernandez" .
-
-<http://ceur-ws.org/Vol-1329/#MohammediAlmashraee> a ns6:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/MohammediAlmashraee> ;
-    ns6:made <http://ceur-ws.org/Vol-1329/#paper1p> ;
-    ns6:name "Mohammed Almashraee" .
-
-<http://ceur-ws.org/Vol-1329/#MyriamiLamolle> a ns6:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/MyriamiLamolle> ;
-    ns6:made <http://ceur-ws.org/Vol-1329/#paper2> ;
-    ns6:name "Myriam Lamolle" .
-
-<http://ceur-ws.org/Vol-1329/#NeiliIreson> a ns6:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/NeiliIreson> ;
-    ns6:made <http://ceur-ws.org/Vol-1329/#papersmile_5> ;
-    ns6:name "Neil Ireson" .
-
-<http://ceur-ws.org/Vol-1329/#RalfiSteinberger> a ns6:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/RalfiSteinberger> ;
-    ns6:made <http://ceur-ws.org/Vol-1329/#papersmile_4> ;
-    ns6:name "Ralf Steinberger" .
-
-<http://ceur-ws.org/Vol-1329/#SMILE> a ns6:Person ;
-    ns3:affiliation "2014 Chairs" ;
-    ns5:sameAs <http://ceur-ws.org/persons/SMILE> ;
-    ns6:name "SMILE" .
-
-<http://ceur-ws.org/Vol-1329/#SilvioiPeroni> a ns6:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/SilvioiPeroni> ;
-    ns6:made <http://ceur-ws.org/Vol-1329/#papersmile_2> ;
-    ns6:name "Silvio Peroni" .
-
-<http://ceur-ws.org/Vol-1329/#StefaniFenz> a ns6:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/StefaniFenz> ;
-    ns6:made <http://ceur-ws.org/Vol-1329/#papersmile_3> ;
-    ns6:name "Stefan Fenz" .
-
-<http://ceur-ws.org/Vol-1329/#SuvodeepiMazumdar> a ns6:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/SuvodeepiMazumdar> ;
-    ns6:made <http://ceur-ws.org/Vol-1329/#papersmile_5> ;
-    ns6:name "Suvodeep Mazumdar" .
-
-<http://ceur-ws.org/Vol-1329/#TomiiKauppinen> a ns6:Person ;
-    ns3:affiliation "" ;
-    ns5:sameAs <http://ceur-ws.org/persons/TomiiKauppinen> ;
-    ns6:name "Tomi Kauppinen" .
-
-<http://ceur-ws.org/Vol-1329/#VanniiZavarella> a ns6:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/VanniiZavarella> ;
-    ns6:made <http://ceur-ws.org/Vol-1329/#papersmile_4> ;
-    ns6:name "Vanni Zavarella" .
-
-<http://ceur-ws.org/Vol-1329/#YulaniHe> a ns6:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/YulaniHe> ;
-    ns6:made <http://ceur-ws.org/Vol-1329/#paper1> ;
-    ns6:name "Yulan He" .
-
-<http://ceur-ws.org/Vol-1329/#YvesiVanrompay> a ns6:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/YvesiVanrompay> ;
-    ns6:made <http://ceur-ws.org/Vol-1329/#paper2> ;
-    ns6:name "Yves Vanrompay" .
-
-<http://ceur-ws.org/Vol-1329/#event> a ns1:WorkshopEvent ;
-    ns1:hasLocation <http://dbpedia.org/resource/Greece> ;
-    ns1:hasPart <http://ceur-ws.org/Vol-1329/#part-SMILE>,
-        <http://ceur-ws.org/Vol-1329/#part-SSA> ;
-    ns1:isSubEventOf <http://ceur-ws.org/Vol-1329/#conf> ;
-    ns4:beginsAtDatetime "2014-05-25T00:00:00+00:00"^^xsd:dateTime ;
-    ns4:endsAtDatetime "2014-05-25T00:00:00+00:00"^^xsd:dateTime ;
-    rdfs:seeAlso <http://ceur-ws.org/Vol-1191/#event> .
-
-<http://ceur-ws.org/Vol-1329/#DariaiSpampinato> a ns6:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/DariaiSpampinato> ;
-    ns6:made <http://ceur-ws.org/Vol-1329/#paper2p>,
-        <http://ceur-ws.org/Vol-1329/#papersmile_2> ;
-    ns6:name "Daria Spampinato" .
-
-<http://ceur-ws.org/Vol-1329/#HarithiAlani> a ns6:Person ;
-    ns3:affiliation "" ;
-    ns5:sameAs <http://ceur-ws.org/persons/HarithiAlani> ;
-    ns6:made <http://ceur-ws.org/Vol-1329/#paper1> ;
-    ns6:name "Harith Alani" .
-
-<http://ceur-ws.org/Vol-1329/#HassaniSaif> a ns6:Person ;
-    ns3:affiliation "2014 Chairs" ;
-    ns5:sameAs <http://ceur-ws.org/persons/HassaniSaif> ;
-    ns6:made <http://ceur-ws.org/Vol-1329/#paper1> ;
-    ns6:name "Hassan Saif" .
-
-<http://ceur-ws.org/Vol-1329/#SergioiConsoli> a ns6:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/SergioiConsoli> ;
-    ns6:made <http://ceur-ws.org/Vol-1329/#paper2p>,
-        <http://ceur-ws.org/Vol-1329/#papersmile_2> ;
-    ns6:name "Sergio Consoli" .
-
-<http://ceur-ws.org/Vol-1329/#ValentinaiPresutti> a ns6:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/ValentinaiPresutti> ;
-    ns6:made <http://ceur-ws.org/Vol-1329/#paper2p>,
-        <http://ceur-ws.org/Vol-1329/#papersmile_2> ;
-    ns6:name "Valentina Presutti" .
-
-<http://ceur-ws.org/Vol-1329/#VitaveskaiLanfranchi> a ns6:Person ;
-    ns3:affiliation "" ;
-    ns5:sameAs <http://ceur-ws.org/persons/VitaveskaiLanfranchi> ;
-    ns6:made <http://ceur-ws.org/Vol-1329/#papersmile_5> ;
-    ns6:name "Vitaveska Lanfranchi" .
-
-<http://ceur-ws.org/Vol-1329/#AldoiGangemi> a ns6:Person ;
-    ns3:affiliation "" ;
-    ns5:sameAs <http://ceur-ws.org/persons/AldoiGangemi> ;
-    ns6:made <http://ceur-ws.org/Vol-1329/#paper2p>,
-        <http://ceur-ws.org/Vol-1329/#papersmile_2> ;
-    ns6:name "Aldo Gangemi" .
-
-<http://ceur-ws.org/Vol-1329/#DiegoiReforgiatoiRecupero> a ns6:Person ;
-    ns3:affiliation "13France Knowledge Media InstituteUK Università di BolognaItaly Nanyang Technological UniversitySingapore ISTC-CNRItaly" ;
-    ns5:sameAs <http://ceur-ws.org/persons/DiegoiReforgiatoiRecupero> ;
-    ns6:made <http://ceur-ws.org/Vol-1329/#paper2p>,
-        <http://ceur-ws.org/Vol-1329/#papersmile_2> ;
-    ns6:name "Diego Reforgiato Recupero" .
-
-<http%3A//ceur-ws.org/Vol-1329/%231thWorkshoponSemanticSentimentAnalysis%28SSA2014%29> a ns1:SessionEvent ;
-    ns1:partOf <http://ceur-ws.org/Vol-1329/> ;
-    ns7:title "1th Workshop on Semantic Sentiment Analysis (SSA2014)" .
-
-<http%3A//ceur-ws.org/Vol-1329/%23WorkshoponSocialMediaandLinkedDataforEmergencyResponse%28SMILE2014%29> a ns1:SessionEvent ;
-    ns1:partOf <http://ceur-ws.org/Vol-1329/> ;
-    ns7:title "Workshop on Social Media and Linked Data for Emergency Response (SMILE 2014)" .
-
-<http://ceur-ws.org/Vol-1329/#paper1> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-1329/> ;
-    ns7:title "Adapting Sentiment Lexicons using Contextual Semantics for Twitter Sentiment Analysis" ;
-    ns2:endPage 2 ;
-    ns2:numPages 2 ;
-    ns2:section <http%3A//ceur-ws.org/Vol-1329/%231thWorkshoponSemanticSentimentAnalysis%28SSA2014%29> ;
-    ns2:startPage 1 ;
-    ns3:author <http://ceur-ws.org/Vol-1329/#HarithiAlani>,
-        <http://ceur-ws.org/Vol-1329/#HassaniSaif>,
-        <http://ceur-ws.org/Vol-1329/#MirimiFernandez>,
-        <http://ceur-ws.org/Vol-1329/#YulaniHe> .
-
-<http://ceur-ws.org/Vol-1329/#paper1p> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-1329/> ;
-    ns7:title "Usage of Abstract Features in Semantic Sentiment Analysis" ;
-    ns2:endPage 12 ;
-    ns2:numPages 8 ;
-    ns2:section <http%3A//ceur-ws.org/Vol-1329/%231thWorkshoponSemanticSentimentAnalysis%28SSA2014%29> ;
-    ns2:startPage 5 ;
-    ns3:author <http://ceur-ws.org/Vol-1329/#AdrianiPaschke>,
-        <http://ceur-ws.org/Vol-1329/#DagmariMonett-Diaz>,
-        <http://ceur-ws.org/Vol-1329/#KiaiTeymourian>,
-        <http://ceur-ws.org/Vol-1329/#MohammediAlmashraee> .
-
-<http://ceur-ws.org/Vol-1329/#papersmile_3> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-1329/> ;
-    ns7:title "Visualisation of User-Generated Event Information: Towards Geospatial Situation Awareness Using Hierarchical Granularity Levels" ;
-    ns2:endPage 42 ;
-    ns2:numPages 12 ;
-    ns2:section <http%3A//ceur-ws.org/Vol-1329/%23WorkshoponSocialMediaandLinkedDataforEmergencyResponse%28SMILE2014%29> ;
-    ns2:startPage 31 ;
-    ns3:author <http://ceur-ws.org/Vol-1329/#AndreasiThoni>,
-        <http://ceur-ws.org/Vol-1329/#HeidelindeiHobel>,
-        <http://ceur-ws.org/Vol-1329/#LisaiMadlberger>,
-        <http://ceur-ws.org/Vol-1329/#StefaniFenz> .
-
-<http://ceur-ws.org/Vol-1329/#papersmile_4> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-1329/> ;
-    ns7:title "An Ontology-Based Approach to Social Media Mining for Crisis Management" ;
-    ns2:endPage 54 ;
-    ns2:numPages 12 ;
-    ns2:section <http%3A//ceur-ws.org/Vol-1329/%23WorkshoponSocialMediaandLinkedDataforEmergencyResponse%28SMILE2014%29> ;
-    ns2:startPage 43 ;
-    ns3:author <http://ceur-ws.org/Vol-1329/#ErikiVanideriGoot>,
-        <http://ceur-ws.org/Vol-1329/#HristoiTanev>,
-        <http://ceur-ws.org/Vol-1329/#RalfiSteinberger>,
-        <http://ceur-ws.org/Vol-1329/#VanniiZavarella> .
-
-<http://ceur-ws.org/Vol-1329/#papersmile_5> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-1329/> ;
-    ns7:title "Visual Analysis of Real-time Social Media for Emergency Response" ;
-    ns2:endPage 66 ;
-    ns2:numPages 12 ;
-    ns2:section <http%3A//ceur-ws.org/Vol-1329/%23WorkshoponSocialMediaandLinkedDataforEmergencyResponse%28SMILE2014%29> ;
-    ns2:startPage 55 ;
-    ns3:author <http://ceur-ws.org/Vol-1329/#FabioiCiravegna>,
-        <http://ceur-ws.org/Vol-1329/#NeiliIreson>,
-        <http://ceur-ws.org/Vol-1329/#SuvodeepiMazumdar>,
-        <http://ceur-ws.org/Vol-1329/#VitaveskaiLanfranchi> .
-
-<http://ceur-ws.org/Vol-1329/#paper2> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-1329/> ;
-    ns7:title "Sentiment Analysis for Dynamic User Preference Inference in Spoken Dialogue Systems" ;
-    ns2:endPage 16 ;
-    ns2:numPages 4 ;
-    ns2:section <http%3A//ceur-ws.org/Vol-1329/%231thWorkshoponSemanticSentimentAnalysis%28SSA2014%29> ;
-    ns2:startPage 13 ;
-    ns3:author <http://ceur-ws.org/Vol-1329/#Marie-AudeiAufaure>,
-        <http://ceur-ws.org/Vol-1329/#MarineiLeiGlouanec>,
-        <http://ceur-ws.org/Vol-1329/#MarioiCataldi>,
-        <http://ceur-ws.org/Vol-1329/#MyriamiLamolle>,
-        <http://ceur-ws.org/Vol-1329/#YvesiVanrompay> .
-
-<http://ceur-ws.org/Vol-1329/#paper2p> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-1329/> ;
-    ns7:title "Semantic Web-based Sentiment Analysis" ;
-    ns2:endPage 24 ;
-    ns2:numPages 8 ;
-    ns2:section <http%3A//ceur-ws.org/Vol-1329/%231thWorkshoponSemanticSentimentAnalysis%28SSA2014%29> ;
-    ns2:startPage 17 ;
-    ns3:author <http://ceur-ws.org/Vol-1329/#AldoiGangemi>,
-        <http://ceur-ws.org/Vol-1329/#AndreaiNuzzolese>,
-        <http://ceur-ws.org/Vol-1329/#DariaiSpampinato>,
-        <http://ceur-ws.org/Vol-1329/#DiegoiReforgiatoiRecupero>,
-        <http://ceur-ws.org/Vol-1329/#SergioiConsoli>,
-        <http://ceur-ws.org/Vol-1329/#ValentinaiPresutti> .
-
-<http://ceur-ws.org/Vol-1329/#papersmile_2> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-1329/> ;
-    ns7:title "Towards emergency vehicle routing using Geolinked Open Data: the case study of the Municipality of Catania" ;
-    ns2:endPage 28 ;
-    ns2:numPages 4 ;
-    ns2:section <http%3A//ceur-ws.org/Vol-1329/%23WorkshoponSocialMediaandLinkedDataforEmergencyResponse%28SMILE2014%29> ;
-    ns2:startPage 25 ;
-    ns3:author <http://ceur-ws.org/Vol-1329/#AldoiGangemi>,
-        <http://ceur-ws.org/Vol-1329/#AndreaiGiovanniiNuzzolese>,
-        <http://ceur-ws.org/Vol-1329/#DariaiSpampinato>,
-        <http://ceur-ws.org/Vol-1329/#DiegoiReforgiatoiRecupero>,
-        <http://ceur-ws.org/Vol-1329/#SergioiConsoli>,
-        <http://ceur-ws.org/Vol-1329/#SilvioiPeroni>,
-        <http://ceur-ws.org/Vol-1329/#ValentinaiPresutti> .
-
-<http://ceur-ws.org/Vol-1329/> a ns1:Proceedings ;
-    ns1:hasPart <http://ceur-ws.org/Vol-1329/#paper1>,
-        <http://ceur-ws.org/Vol-1329/#paper1p>,
-        <http://ceur-ws.org/Vol-1329/#paper2>,
-        <http://ceur-ws.org/Vol-1329/#paper2p>,
-        <http://ceur-ws.org/Vol-1329/#papersmile_2>,
-        <http://ceur-ws.org/Vol-1329/#papersmile_3>,
-        <http://ceur-ws.org/Vol-1329/#papersmile_4>,
-        <http://ceur-ws.org/Vol-1329/#papersmile_5> ;
-    ns1:hasSession <http%3A//ceur-ws.org/Vol-1329/%231thWorkshoponSemanticSentimentAnalysis%28SSA2014%29>,
-        <http%3A//ceur-ws.org/Vol-1329/%23WorkshoponSocialMediaandLinkedDataforEmergencyResponse%28SMILE2014%29> ;
+<http://ceur-ws.org/Vol-1329/> a ns5:Proceedings ;
     ns8:issued "2015-02-02T00:00:00+00:00"^^xsd:dateTime ;
-    ns2:presentedAt <http://ceur-ws.org/Vol-1329/#event> ;
-    ns3:editor <http://ceur-ws.org/Vol-1329/#AldoiGangemi>,
-        <http://ceur-ws.org/Vol-1329/#DiegoiReforgiatoiRecupero>,
+    ns7:presentedAt <http://ceur-ws.org/Vol-1329/#event> ;
+    ns2:editor <http://ceur-ws.org/Vol-1329/#AldoiGangemi>,
+        <http://ceur-ws.org/Vol-1329/#DiegoiReforgiatoiRecuperoiiUniversit%C3%A9iParis>,
         <http://ceur-ws.org/Vol-1329/#ErikiCambria>,
         <http://ceur-ws.org/Vol-1329/#HarithiAlani>,
-        <http://ceur-ws.org/Vol-1329/#HassaniSaif>,
         <http://ceur-ws.org/Vol-1329/#MalvinaiNissim>,
         <http://ceur-ws.org/Vol-1329/#SMILE>,
+        <http://ceur-ws.org/Vol-1329/#SSA>,
         <http://ceur-ws.org/Vol-1329/#TomiiKauppinen>,
         <http://ceur-ws.org/Vol-1329/#VitaveskaiLanfranchi> .
+
+<http://ceur-ws.org/Vol-1329/#AldoiGangemi> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/AldoiGangemi> ;
+    ns4:name "Aldo Gangemi" .
+
+<http://ceur-ws.org/Vol-1329/#DiegoiReforgiatoiRecuperoiiUniversit%C3%A9iParis> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/DiegoiReforgiatoiRecuperoiiUniversit%C3%A9iParis> ;
+    ns4:name "Diego Reforgiato Recupero  Université Paris" .
+
+<http://ceur-ws.org/Vol-1329/#ErikiCambria> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/ErikiCambria> ;
+    ns4:name "Erik Cambria" .
+
+<http://ceur-ws.org/Vol-1329/#HarithiAlani> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/HarithiAlani> ;
+    ns4:name "Harith Alani" .
+
+<http://ceur-ws.org/Vol-1329/#MalvinaiNissim> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/MalvinaiNissim> ;
+    ns4:name "Malvina Nissim" .
+
+<http://ceur-ws.org/Vol-1329/#SMILE> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/SMILE> ;
+    ns4:name "SMILE" .
+
+<http://ceur-ws.org/Vol-1329/#SSA> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/SSA> ;
+    ns4:name "SSA" .
+
+<http://ceur-ws.org/Vol-1329/#TomiiKauppinen> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/TomiiKauppinen> ;
+    ns4:name "Tomi Kauppinen" .
+
+<http://ceur-ws.org/Vol-1329/#VitaveskaiLanfranchi> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/VitaveskaiLanfranchi> ;
+    ns4:name "Vitaveska Lanfranchi" .
+
+<http://ceur-ws.org/Vol-1329/#event> a ns5:WorkshopEvent ;
+    ns5:hasLocation <http://dbpedia.org/resource/Greece> ;
+    ns5:hasPart <http://ceur-ws.org/Vol-1329/#part-SMILE>,
+        <http://ceur-ws.org/Vol-1329/#part-SSA> ;
+    ns5:isSubEventOf <http://ceur-ws.org/Vol-1329/#conf> ;
+    ns1:beginsAtDatetime "2014-05-25T00:00:00+00:00"^^xsd:dateTime ;
+    ns1:endsAtDatetime "2014-05-25T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:license "http://creativecommons.org/publicdomain/zero/1.0/" ;
+    rdfs:seeAlso <http://ceur-ws.org/Vol-1191/#event> .
 

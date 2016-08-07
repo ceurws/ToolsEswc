@@ -1,112 +1,35 @@
 @prefix ns1: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns2: <http://xmlns.com/foaf/0.1/> .
-@prefix ns3: <http://purl.org/ontology/bibo/#> .
+@prefix ns2: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns3: <http://purl.org/dc/elements/1.1/> .
 @prefix ns4: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns5: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns6: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns8: <http://www.w3.org/2002/07/owl#> .
+@prefix ns5: <http://www.w3.org/2002/07/owl#> .
+@prefix ns6: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns7: <http://xmlns.com/foaf/0.1/> .
+@prefix ns8: <http://purl.org/ontology/bibo/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1569/#C.iDavidiEmele> a ns2:Person ;
-    ns8:sameAs <http://ceur-ws.org/persons/C.iDavidiEmele> ;
-    ns2:made <http://ceur-ws.org/Vol-1569/#paper5> ;
-    ns2:name "C. David Emele" .
+<http://ceur-ws.org/Vol-1569/> a ns1:Proceedings ;
+    ns4:issued "2016-03-19T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:presentedAt <http://ceur-ws.org/Vol-1569/#event> ;
+    ns2:editor <http://ceur-ws.org/Vol-1569/#HenryiHexmoor>,
+        <http://ceur-ws.org/Vol-1569/#SaadiAlqithami> .
 
-<http://ceur-ws.org/Vol-1569/#HenryiHexmoor> a ns2:Person ;
-    ns6:affiliation "" ;
-    ns8:sameAs <http://ceur-ws.org/persons/HenryiHexmoor> ;
-    ns2:name "Henry Hexmoor" .
+<http://ceur-ws.org/Vol-1569/#HenryiHexmoor> a ns7:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/HenryiHexmoor> ;
+    ns7:name "Henry Hexmoor" .
 
-<http://ceur-ws.org/Vol-1569/#Mariuszi%C5%BBytniewski> a ns2:Person ;
-    ns8:sameAs <http://ceur-ws.org/persons/Mariuszi%C5%BBytniewski> ;
-    ns2:made <http://ceur-ws.org/Vol-1569/#paper2> ;
-    ns2:name "Mariusz Żytniewski" .
-
-<http://ceur-ws.org/Vol-1569/#NaderiHanna> a ns2:Person ;
-    ns8:sameAs <http://ceur-ws.org/persons/NaderiHanna> ;
-    ns2:made <http://ceur-ws.org/Vol-1569/#paper4> ;
-    ns2:name "Nader Hanna" .
-
-<http://ceur-ws.org/Vol-1569/#RinoiFalcone> a ns2:Person ;
-    ns8:sameAs <http://ceur-ws.org/persons/RinoiFalcone> ;
-    ns2:made <http://ceur-ws.org/Vol-1569/#paper3> ;
-    ns2:name "Rino Falcone" .
+<http://ceur-ws.org/Vol-1569/#SaadiAlqithami> a ns7:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/SaadiAlqithami> ;
+    ns7:name "Saad Alqithami" .
 
 <http://ceur-ws.org/Vol-1569/#event> a ns1:WorkshopEvent ;
     ns1:hasLocation <http://dbpedia.org/resource/Turkey> ;
-    ns1:hasPart <http://ceur-ws.org/Vol-1569/#part-COOS> ;
+    ns1:hasPart <http://ceur-ws.org/Vol-1569/#part-ws> ;
     ns1:isSubEventOf <http://ceur-ws.org/Vol-1569/#conf> ;
-    ns7:beginsAtDatetime "2015-05-04T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:endsAtDatetime "2015-05-04T00:00:00+00:00"^^xsd:dateTime .
-
-<http://ceur-ws.org/Vol-1569/#SaadiAlqithami> a ns2:Person ;
-    ns6:affiliation "" ;
-    ns8:sameAs <http://ceur-ws.org/persons/SaadiAlqithami> ;
-    ns2:made <http://ceur-ws.org/Vol-1569/#paper1> ;
-    ns2:name "Saad Alqithami" .
-
-<http://ceur-ws.org/Vol-1569/#paper1> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-1569/> ;
-    ns5:title "Network Organization Paradigm: Synergistic Effect on the Productivity of a Collaborative Organization" ;
-    ns3:endPage 9 ;
-    ns3:numPages 9 ;
-    ns3:section <http%3A//ceur-ws.org/Vol-1569/%23WorkshopPapers> ;
-    ns3:startPage 1 ;
-    ns6:author <http://ceur-ws.org/Vol-1569/#SaadiAlqithami> .
-
-<http://ceur-ws.org/Vol-1569/#paper2> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-1569/> ;
-    ns5:title "Integration of Knowledge Management Systems and Business Processes using Multi-Agent Systems" ;
-    ns3:endPage 18 ;
-    ns3:numPages 9 ;
-    ns3:section <http%3A//ceur-ws.org/Vol-1569/%23WorkshopPapers> ;
-    ns3:startPage 10 ;
-    ns6:author <http://ceur-ws.org/Vol-1569/#Mariuszi%C5%BBytniewski> .
-
-<http://ceur-ws.org/Vol-1569/#paper3> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-1569/> ;
-    ns5:title "Valorizing Prejudice in MAS: A Computational Model" ;
-    ns3:endPage 27 ;
-    ns3:numPages 9 ;
-    ns3:section <http%3A//ceur-ws.org/Vol-1569/%23WorkshopPapers> ;
-    ns3:startPage 19 ;
-    ns6:author <http://ceur-ws.org/Vol-1569/#RinoiFalcone> .
-
-<http://ceur-ws.org/Vol-1569/#paper4> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-1569/> ;
-    ns5:title "Do Birds of a Feather Work Better Together? The Impact of Virtual Agent Personality on a Shared Mental Model with Humans during Collaboration" ;
-    ns3:endPage 37 ;
-    ns3:numPages 10 ;
-    ns3:section <http%3A//ceur-ws.org/Vol-1569/%23WorkshopPapers> ;
-    ns3:startPage 28 ;
-    ns6:author <http://ceur-ws.org/Vol-1569/#NaderiHanna> .
-
-<http://ceur-ws.org/Vol-1569/#paper5> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-1569/> ;
-    ns5:title "ADOVA: Anomaly Detection in Online and Virtual spAces" ;
-    ns3:endPage 41 ;
-    ns3:numPages 4 ;
-    ns3:section <http%3A//ceur-ws.org/Vol-1569/%23WorkshopPapers> ;
-    ns3:startPage 38 ;
-    ns6:author <http://ceur-ws.org/Vol-1569/#C.iDavidiEmele> .
-
-<http%3A//ceur-ws.org/Vol-1569/%23WorkshopPapers> a ns1:SessionEvent ;
-    ns1:partOf <http://ceur-ws.org/Vol-1569/> ;
-    ns5:title "Workshop Papers" .
-
-<http://ceur-ws.org/Vol-1569/> a ns1:Proceedings ;
-    ns1:hasPart <http://ceur-ws.org/Vol-1569/#paper1>,
-        <http://ceur-ws.org/Vol-1569/#paper2>,
-        <http://ceur-ws.org/Vol-1569/#paper3>,
-        <http://ceur-ws.org/Vol-1569/#paper4>,
-        <http://ceur-ws.org/Vol-1569/#paper5> ;
-    ns1:hasSession <http%3A//ceur-ws.org/Vol-1569/%23WorkshopPapers> ;
-    ns4:issued "2016-03-19T00:00:00+00:00"^^xsd:dateTime ;
-    ns3:presentedAt <http://ceur-ws.org/Vol-1569/#event> ;
-    ns6:editor <http://ceur-ws.org/Vol-1569/#HenryiHexmoor>,
-        <http://ceur-ws.org/Vol-1569/#SaadiAlqithami> .
+    ns6:beginsAtDatetime "2015-05-04T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:endsAtDatetime "2015-05-04T00:00:00+00:00"^^xsd:dateTime ;
+    ns3:license "http://creativecommons.org/publicdomain/zero/1.0/" .
 

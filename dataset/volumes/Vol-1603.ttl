@@ -1,92 +1,57 @@
-@prefix ns1: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns1: <http://xmlns.com/foaf/0.1/> .
 @prefix ns2: <http://www.w3.org/2002/07/owl#> .
-@prefix ns3: <http://xmlns.com/foaf/0.1/> .
+@prefix ns3: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix ns4: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns5: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns6: <http://purl.org/ontology/bibo/#> .
-@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns5: <http://purl.org/dc/elements/1.1/> .
+@prefix ns6: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns7: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns8: <http://purl.org/ontology/bibo/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1603/#BarbaraiPernici> a ns3:Person ;
-    ns4:affiliation "" ;
+<http://ceur-ws.org/Vol-1603/> a ns7:Proceedings ;
+    ns3:issued "2016-06-04T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:presentedAt <http://ceur-ws.org/Vol-1603/#event> ;
+    ns4:editor <http://ceur-ws.org/Vol-1603/#BarbaraiPernici>,
+        <http://ceur-ws.org/Vol-1603/#HansiWeigand>,
+        <http://ceur-ws.org/Vol-1603/#OscariPastor>,
+        <http://ceur-ws.org/Vol-1603/#RoeliWieringaiiUniversitatiPolit%C3%A8cnicaideiVal%C3%A8nciaPROSiResearchiCenterCaminoideiVeraiS>,
+        <http://ceur-ws.org/Vol-1603/#SelminiNurcan>,
+        <http://ceur-ws.org/Vol-1603/#StefanieiRinderle-Ma> .
+
+<http://ceur-ws.org/Vol-1603/#BarbaraiPernici> a ns1:Person ;
     ns2:sameAs <http://ceur-ws.org/persons/BarbaraiPernici> ;
-    ns3:name "Barbara Pernici" .
+    ns1:name "Barbara Pernici" .
 
-<http://ceur-ws.org/Vol-1603/#ClemensiSauerwein> a ns3:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/ClemensiSauerwein> ;
-    ns3:made <http://ceur-ws.org/Vol-1603/#10000010> ;
-    ns3:name "Clemens Sauerwein" .
-
-<http://ceur-ws.org/Vol-1603/#DeepikaiPrakash> a ns3:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/DeepikaiPrakash> ;
-    ns3:made <http://ceur-ws.org/Vol-1603/#10000044> ;
-    ns3:name "Deepika Prakash" .
-
-<http://ceur-ws.org/Vol-1603/#Eva-MariaiSch%C3%B6n> a ns3:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/Eva-MariaiSch%C3%B6n> ;
-    ns3:made <http://ceur-ws.org/Vol-1603/#10000027> ;
-    ns3:name "Eva-Maria Schön" .
-
-<http://ceur-ws.org/Vol-1603/#HansiWeigand> a ns3:Person ;
-    ns4:affiliation "" ;
+<http://ceur-ws.org/Vol-1603/#HansiWeigand> a ns1:Person ;
     ns2:sameAs <http://ceur-ws.org/persons/HansiWeigand> ;
-    ns3:name "Hans Weigand" .
+    ns1:name "Hans Weigand" .
 
-<http://ceur-ws.org/Vol-1603/#IlyaiVerenich> a ns3:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/IlyaiVerenich> ;
-    ns3:made <http://ceur-ws.org/Vol-1603/#10000053> ;
-    ns3:name "Ilya Verenich" .
+<http://ceur-ws.org/Vol-1603/#OscariPastor> a ns1:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/OscariPastor> ;
+    ns1:name "Oscar Pastor" .
 
-<http://ceur-ws.org/Vol-1603/#Luc%C3%ADaiM%C3%A9ndez> a ns3:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/Luc%C3%ADaiM%C3%A9ndez> ;
-    ns3:made <http://ceur-ws.org/Vol-1603/#10000071> ;
-    ns3:name "Lucía Méndez" .
-
-<http://ceur-ws.org/Vol-1603/#MichaeliBrunner> a ns3:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/MichaeliBrunner> ;
-    ns3:made <http://ceur-ws.org/Vol-1603/#10000001> ;
-    ns3:name "Michael Brunner" .
-
-<http://ceur-ws.org/Vol-1603/#RoeliWieringaiiUniversitatiPolit%C3%A8cnicaideiVal%C3%A8nciaPROSiResearchiCenterCaminoideiVeraiS> a ns3:Person ;
-    ns4:affiliation "/NValenciaSpain Universität WienResearch Group Workflow Systems and Technology Währingerstraße 291090 WienAustria University of TwenteFaculty of EEMCSZilverling building Drienerlolaan 57522 NB EnschedeThe NetherlandsDoctoral Consortium Mentors" ;
+<http://ceur-ws.org/Vol-1603/#RoeliWieringaiiUniversitatiPolit%C3%A8cnicaideiVal%C3%A8nciaPROSiResearchiCenterCaminoideiVeraiS> a ns1:Person ;
     ns2:sameAs <http://ceur-ws.org/persons/RoeliWieringaiiUniversitatiPolit%C3%A8cnicaideiVal%C3%A8nciaPROSiResearchiCenterCaminoideiVeraiS> ;
-    ns3:name "Roel Wieringa  Universitat Politècnica de ValènciaPROS Research CenterCamino de Vera S" .
+    ns1:name "Roel Wieringa  Universitat Politècnica de ValènciaPROS Research CenterCamino de Vera S" .
 
-<http://ceur-ws.org/Vol-1603/#SelminiNurcan> a ns3:Person ;
-    ns4:affiliation "" ;
+<http://ceur-ws.org/Vol-1603/#SelminiNurcan> a ns1:Person ;
     ns2:sameAs <http://ceur-ws.org/persons/SelminiNurcan> ;
-    ns3:name "Selmin Nurcan" .
+    ns1:name "Selmin Nurcan" .
 
-<http://ceur-ws.org/Vol-1603/#StefanieiRinderle-Ma> a ns3:Person ;
-    ns4:affiliation "" ;
+<http://ceur-ws.org/Vol-1603/#StefanieiRinderle-Ma> a ns1:Person ;
     ns2:sameAs <http://ceur-ws.org/persons/StefanieiRinderle-Ma> ;
-    ns3:name "Stefanie Rinderle-Ma" .
+    ns1:name "Stefanie Rinderle-Ma" .
 
-<http://ceur-ws.org/Vol-1603/#VanessaiStricker> a ns3:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/VanessaiStricker> ;
-    ns3:made <http://ceur-ws.org/Vol-1603/#10000018> ;
-    ns3:name "Vanessa Stricker" .
-
-<http://ceur-ws.org/Vol-1603/#WeiiWang> a ns3:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/WeiiWang> ;
-    ns3:made <http://ceur-ws.org/Vol-1603/#10000062> ;
-    ns3:name "Wei Wang" .
-
-<http://ceur-ws.org/Vol-1603/#YotamiEvron> a ns3:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/YotamiEvron> ;
-    ns3:made <http://ceur-ws.org/Vol-1603/#10000035> ;
-    ns3:name "Yotam Evron" .
-
-<http://ceur-ws.org/Vol-1603/#event> a ns1:WorkshopEvent ;
-    ns1:hasLocation <http://dbpedia.org/resource/Euro_gold_and_silver_commemorative_coins> ;
-    ns1:hasPart <http://ceur-ws.org/Vol-1603/#part-CAiSE-DC> ;
-    ns1:isSubEventOf <http://ceur-ws.org/Vol-1603/#conf> ;
-    ns8:beginsAtDatetime "2016-06-13T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:endsAtDatetime "2016-06-17T00:00:00+00:00"^^xsd:dateTime ;
+<http://ceur-ws.org/Vol-1603/#event> a ns7:WorkshopEvent ;
+    ns7:hasLocation <http://dbpedia.org/resource/Euro_gold_and_silver_commemorative_coins> ;
+    ns7:hasPart <http://ceur-ws.org/Vol-1603/#part-ws> ;
+    ns7:isSubEventOf <http://ceur-ws.org/Vol-1603/#conf> ;
+    ns6:beginsAtDatetime "2016-06-13T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:endsAtDatetime "2016-06-17T00:00:00+00:00"^^xsd:dateTime ;
+    ns5:license "http://creativecommons.org/publicdomain/zero/1.0/" ;
     rdfs:seeAlso <http://ceur-ws.org/Vol-1001/#event>,
         <http://ceur-ws.org/Vol-1164/#event>,
         <http://ceur-ws.org/Vol-1415/#event>,
@@ -96,105 +61,4 @@
         <http://ceur-ws.org/Vol-593/#event>,
         <http://ceur-ws.org/Vol-731/#event>,
         <http://ceur-ws.org/Vol-863/#event> .
-
-<http://ceur-ws.org/Vol-1603/#10000001> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-1603/> ;
-    ns5:title "RiskFlows - Continuous Risk-driven Workflows and Decision Support in Information Security Management Systems" ;
-    ns6:section <http%3A//ceur-ws.org/Vol-1603/%23Session1> ;
-    ns4:author <http://ceur-ws.org/Vol-1603/#MichaeliBrunner> .
-
-<http://ceur-ws.org/Vol-1603/#10000010> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-1603/> ;
-    ns5:title "Integrating Shared Cyber Security Information into Information Security Risk Management" ;
-    ns6:section <http%3A//ceur-ws.org/Vol-1603/%23Session1> ;
-    ns4:author <http://ceur-ws.org/Vol-1603/#ClemensiSauerwein> .
-
-<http://ceur-ws.org/Vol-1603/#10000018> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-1603/> ;
-    ns5:title "Enabling Compositional Deadlock Checking of Component Compositions with Partial Bindings" ;
-    ns6:section <http%3A//ceur-ws.org/Vol-1603/%23Session1> ;
-    ns4:author <http://ceur-ws.org/Vol-1603/#VanessaiStricker> .
-
-<http://ceur-ws.org/Vol-1603/#10000027> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-1603/> ;
-    ns5:title "A Methodology for Agile Requirements Engineering based on a Pattern Approach" ;
-    ns6:section <http%3A//ceur-ws.org/Vol-1603/%23Session2> ;
-    ns4:author <http://ceur-ws.org/Vol-1603/#Eva-MariaiSch%C3%B6n> .
-
-<http://ceur-ws.org/Vol-1603/#10000035> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-1603/> ;
-    ns5:title "Data Inaccuracy-aware Design of Business Processes" ;
-    ns6:section <http%3A//ceur-ws.org/Vol-1603/%23Session2> ;
-    ns4:author <http://ceur-ws.org/Vol-1603/#YotamiEvron> .
-
-<http://ceur-ws.org/Vol-1603/#10000044> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-1603/> ;
-    ns5:title "Eliciting Information Requirements for DW Systems" ;
-    ns6:section <http%3A//ceur-ws.org/Vol-1603/%23Session2> ;
-    ns4:author <http://ceur-ws.org/Vol-1603/#DeepikaiPrakash> .
-
-<http://ceur-ws.org/Vol-1603/#10000053> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-1603/> ;
-    ns5:title "A General Framework for Predictive Business Process Monitoring" ;
-    ns6:section <http%3A//ceur-ws.org/Vol-1603/%23Session3> ;
-    ns4:author <http://ceur-ws.org/Vol-1603/#IlyaiVerenich> .
-
-<http://ceur-ws.org/Vol-1603/#10000062> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-1603/> ;
-    ns5:title "Business Process Model and Business Rule Integration - Towards a Decision Framework" ;
-    ns6:section <http%3A//ceur-ws.org/Vol-1603/%23Session3> ;
-    ns4:author <http://ceur-ws.org/Vol-1603/#WeiiWang> .
-
-<http://ceur-ws.org/Vol-1603/#10000071> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-1603/> ;
-    ns5:title "Towards a Reference Framework for Open Source Software Adoption" ;
-    ns6:section <http%3A//ceur-ws.org/Vol-1603/%23Session3> ;
-    ns4:author <http://ceur-ws.org/Vol-1603/#Luc%C3%ADaiM%C3%A9ndez> .
-
-<http://ceur-ws.org/Vol-1603/#OscariPastor> a ns3:Person ;
-    ns4:affiliation "" ;
-    ns2:sameAs <http://ceur-ws.org/persons/OscariPastor> ;
-    ns3:made <http://ceur-ws.org/Vol-1603/#Vol-1603.zip> ;
-    ns3:name "Oscar Pastor" .
-
-<http://ceur-ws.org/Vol-1603/#Vol-1603.zip> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-1603/> ;
-    ns5:title "Complete proceedings in one ZIP file" ;
-    ns6:section <http%3A//ceur-ws.org/Vol-1603/%23Session3> ;
-    ns4:author <http://ceur-ws.org/Vol-1603/#OscariPastor> .
-
-<http%3A//ceur-ws.org/Vol-1603/%23Session1> a ns1:SessionEvent ;
-    ns1:partOf <http://ceur-ws.org/Vol-1603/> ;
-    ns5:title "Session 1" .
-
-<http%3A//ceur-ws.org/Vol-1603/%23Session2> a ns1:SessionEvent ;
-    ns1:partOf <http://ceur-ws.org/Vol-1603/> ;
-    ns5:title "Session 2" .
-
-<http%3A//ceur-ws.org/Vol-1603/%23Session3> a ns1:SessionEvent ;
-    ns1:partOf <http://ceur-ws.org/Vol-1603/> ;
-    ns5:title "Session 3" .
-
-<http://ceur-ws.org/Vol-1603/> a ns1:Proceedings ;
-    ns1:hasPart <http://ceur-ws.org/Vol-1603/#10000001>,
-        <http://ceur-ws.org/Vol-1603/#10000010>,
-        <http://ceur-ws.org/Vol-1603/#10000018>,
-        <http://ceur-ws.org/Vol-1603/#10000027>,
-        <http://ceur-ws.org/Vol-1603/#10000035>,
-        <http://ceur-ws.org/Vol-1603/#10000044>,
-        <http://ceur-ws.org/Vol-1603/#10000053>,
-        <http://ceur-ws.org/Vol-1603/#10000062>,
-        <http://ceur-ws.org/Vol-1603/#10000071>,
-        <http://ceur-ws.org/Vol-1603/#Vol-1603.zip> ;
-    ns1:hasSession <http%3A//ceur-ws.org/Vol-1603/%23Session1>,
-        <http%3A//ceur-ws.org/Vol-1603/%23Session2>,
-        <http%3A//ceur-ws.org/Vol-1603/%23Session3> ;
-    ns7:issued "2016-06-04T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:presentedAt <http://ceur-ws.org/Vol-1603/#event> ;
-    ns4:editor <http://ceur-ws.org/Vol-1603/#BarbaraiPernici>,
-        <http://ceur-ws.org/Vol-1603/#HansiWeigand>,
-        <http://ceur-ws.org/Vol-1603/#OscariPastor>,
-        <http://ceur-ws.org/Vol-1603/#RoeliWieringaiiUniversitatiPolit%C3%A8cnicaideiVal%C3%A8nciaPROSiResearchiCenterCaminoideiVeraiS>,
-        <http://ceur-ws.org/Vol-1603/#SelminiNurcan>,
-        <http://ceur-ws.org/Vol-1603/#StefanieiRinderle-Ma> .
 

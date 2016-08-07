@@ -1,41 +1,45 @@
-@prefix ns1: <http://xmlns.com/foaf/0.1/> .
-@prefix ns2: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns3: <http://www.w3.org/2002/07/owl#> .
-@prefix ns4: <http://purl.org/ontology/bibo/#> .
+@prefix ns1: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns2: <http://www.w3.org/2002/07/owl#> .
+@prefix ns3: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns4: <http://xmlns.com/foaf/0.1/> .
 @prefix ns5: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns6: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns7: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns8: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns6: <http://purl.org/ontology/bibo/#> .
+@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns8: <http://purl.org/dc/elements/1.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-88/> a ns2:Proceedings ;
+<http://ceur-ws.org/Vol-88/> a ns1:Proceedings ;
     ns5:issued "2003-11-05T00:00:00+00:00"^^xsd:dateTime ;
-    ns4:presentedAt <http://ceur-ws.org/Vol-88/#event> ;
-    ns7:editor <http://ceur-ws.org/Vol-88/#Jos%C3%A9iJavieriDolado>,
+    ns6:presentedAt <http://ceur-ws.org/Vol-88/#event> ;
+    ns3:editor <http://ceur-ws.org/Vol-88/#Jos%C3%A9iJavieriDolado>,
         <http://ceur-ws.org/Vol-88/#JuaniJ.iCuadrado>,
         <http://ceur-ws.org/Vol-88/#MigueliAngeliSicilia> .
 
-<http://ceur-ws.org/Vol-88/#Jos%C3%A9iJavieriDolado> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/Jos%C3%A9iJavieriDolado> ;
-    ns1:name "José Javier Dolado" .
+<http://ceur-ws.org/Vol-88/#Jos%C3%A9iJavieriDolado> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/Jos%C3%A9iJavieriDolado> ;
+    ns4:name "José Javier Dolado" .
 
-<http://ceur-ws.org/Vol-88/#JuaniJ.iCuadrado> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/JuaniJ.iCuadrado> ;
-    ns1:name "Juan J. Cuadrado" .
+<http://ceur-ws.org/Vol-88/#JuaniJ.iCuadrado> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/JuaniJ.iCuadrado> ;
+    ns4:name "Juan J. Cuadrado" .
 
-<http://ceur-ws.org/Vol-88/#MigueliAngeliSicilia> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/MigueliAngeliSicilia> ;
-    ns1:name "Miguel Angel Sicilia" .
+<http://ceur-ws.org/Vol-88/#MigueliAngeliSicilia> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/MigueliAngeliSicilia> ;
+    ns4:name "Miguel Angel Sicilia" .
 
-<http://ceur-ws.org/Vol-88/#event> a ns2:WorkshopEvent ;
-    ns2:hasLocation <http://dbpedia.org/resource/Spain> ;
-    ns2:hasPart <http://ceur-ws.org/Vol-88/#part-ADIS> ;
-    ns2:isSubEventOf <http://ceur-ws.org/Vol-88/#conf> ;
-    ns6:beginsAtDatetime "2002-11-18T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:endsAtDatetime "2002-11-18T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:license <http://choosealicense.com/licenses/no-license/> ;
+<http://ceur-ws.org/Vol-88/#event> a ns1:WorkshopEvent ;
+    ns1:hasLocation <http://dbpedia.org/resource/Spain> ;
+    ns1:hasPart <http://ceur-ws.org/Vol-88/#part-ADIS>,
+        <http://ceur-ws.org/Vol-88/#part-CICYT>,
+        <http://ceur-ws.org/Vol-88/#part-III>,
+        <http://ceur-ws.org/Vol-88/#part-ISBN>,
+        <http://ceur-ws.org/Vol-88/#part-TIC> ;
+    ns1:isSubEventOf <http://ceur-ws.org/Vol-88/#conf> ;
+    ns7:beginsAtDatetime "2003-10-31T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:endsAtDatetime "2003-10-31T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:license "http://choosealicense.com/licenses/no-license/" ;
     rdfs:seeAlso <http://ceur-ws.org/Vol-84/#event> .
 

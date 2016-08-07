@@ -1,11 +1,12 @@
 @prefix ns1: <http://xmlns.com/foaf/0.1/> .
-@prefix ns2: <http://purl.org/ontology/bibo/#> .
+@prefix ns2: <http://swrc.ontoware.org/ontology/#> .
 @prefix ns3: <http://www.w3.org/2002/07/owl#> .
 @prefix ns4: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns5: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns6: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns7: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns5: <http://purl.org/ontology/bibo/#> .
+@prefix ns6: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns8: <http://purl.org/dc/elements/1.1/> .
+@prefix ns9: <http://purl.org/NET/c4dm/timeline.owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -92,7 +93,7 @@
     ns1:name "Justin Brody" .
 
 <http://ceur-ws.org/Vol-555/#KathryniLaskey> a ns1:Person ;
-    ns5:affiliation "" ;
+    ns2:affiliation "" ;
     ns3:sameAs <http://ceur-ws.org/persons/KathryniLaskey> ;
     ns1:name "Kathryn Laskey" .
 
@@ -102,8 +103,8 @@
     ns1:name "Lance A. Forbes" .
 
 <http://ceur-ws.org/Vol-555/#LeoiObrst> a ns1:Person ;
-    ns2:place <http://dbpedia.org/resource/United_States> ;
-    ns5:affiliation "MITRE Corporation, 7515 Colshire Drive, McLean, VA" ;
+    ns5:place <http://dbpedia.org/resource/United_States> ;
+    ns2:affiliation "MITRE Corporation, 7515 Colshire Drive, McLean, VA" ;
     ns3:sameAs <http://ceur-ws.org/persons/LeoiObrst> ;
     ns1:name "Leo Obrst" .
 
@@ -133,7 +134,7 @@
     ns1:name "Patrick Paulson" .
 
 <http://ceur-ws.org/Vol-555/#PauloiCosta> a ns1:Person ;
-    ns5:affiliation "" ;
+    ns2:affiliation "" ;
     ns3:sameAs <http://ceur-ws.org/persons/PauloiCosta> ;
     ns1:name "Paulo Costa" .
 
@@ -184,11 +185,11 @@
 
 <http://ceur-ws.org/Vol-555/#event> a ns4:WorkshopEvent ;
     ns4:hasLocation <http://dbpedia.org/resource/United_States> ;
-    ns4:hasPart <http://ceur-ws.org/Vol-555/#part-OIC> ;
+    ns4:hasPart <http://ceur-ws.org/Vol-555/#part-CEUR-WS> ;
     ns4:isSubEventOf <http://ceur-ws.org/Vol-555/#conf> ;
-    ns6:beginsAtDatetime "2009-10-21T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:endsAtDatetime "2009-10-22T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:license <http://choosealicense.com/licenses/no-license/> ;
+    ns9:beginsAtDatetime "2010-01-04T00:00:00+00:00"^^xsd:dateTime ;
+    ns9:endsAtDatetime "2010-01-04T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:license "http://choosealicense.com/licenses/no-license/" ;
     rdfs:seeAlso <http://ceur-ws.org/Vol-299/#event>,
         <http://ceur-ws.org/Vol-440/#event> .
 
@@ -200,62 +201,62 @@
 
 <http://ceur-ws.org/Vol-555/#paper9> a ns4:Paper ;
     ns4:partOf <http://ceur-ws.org/Vol-555/> ;
-    ns7:title "Higher Order Uncertainty and Evidential Ontologies" ;
-    ns2:section <http%3A//ceur-ws.org/Vol-555/%23Preface> ;
-    ns5:author <http://ceur-ws.org/Vol-555/#JustiniBrody> .
+    ns6:title "Higher Order Uncertainty and Evidential Ontologies" ;
+    ns5:section <http://ceur-ws.org/Vol-555/#Preface> ;
+    ns2:author <http://ceur-ws.org/Vol-555/#JustiniBrody> .
 
 <http://ceur-ws.org/Vol-555/#paper2> a ns4:Paper ;
     ns4:partOf <http://ceur-ws.org/Vol-555/> ;
-    ns7:title "Towards an Effective Methodology for Rapidly Developing Component-Based Domain Ontologies" ;
-    ns2:section <http%3A//ceur-ws.org/Vol-555/%23Preface> ;
-    ns5:author <http://ceur-ws.org/Vol-555/#DavidiKolas>,
+    ns6:title "Towards an Effective Methodology for Rapidly Developing Component-Based Domain Ontologies" ;
+    ns5:section <http://ceur-ws.org/Vol-555/#Preface> ;
+    ns2:author <http://ceur-ws.org/Vol-555/#DavidiKolas>,
         <http://ceur-ws.org/Vol-555/#TroyiSelf> .
 
 <http://ceur-ws.org/Vol-555/#paper7> a ns4:Paper ;
     ns4:partOf <http://ceur-ws.org/Vol-555/> ;
-    ns7:title "An Ontological Approach to Information Access Control and Provenance" ;
-    ns2:section <http%3A//ceur-ws.org/Vol-555/%23Preface> ;
-    ns5:author <http://ceur-ws.org/Vol-555/#BilliAndersen>,
+    ns6:title "An Ontological Approach to Information Access Control and Provenance" ;
+    ns5:section <http://ceur-ws.org/Vol-555/#Preface> ;
+    ns2:author <http://ceur-ws.org/Vol-555/#BilliAndersen>,
         <http://ceur-ws.org/Vol-555/#FabianiNeuhaus> .
 
 <http://ceur-ws.org/Vol-555/#paper5> a ns4:Paper ;
     ns4:partOf <http://ceur-ws.org/Vol-555/> ;
-    ns7:title "Universal Core Semantic Layer" ;
-    ns2:section <http%3A//ceur-ws.org/Vol-555/%23Preface> ;
-    ns5:author <http://ceur-ws.org/Vol-555/#BarryiSmith>,
+    ns6:title "Universal Core Semantic Layer" ;
+    ns5:section <http://ceur-ws.org/Vol-555/#Preface> ;
+    ns2:author <http://ceur-ws.org/Vol-555/#BarryiSmith>,
         <http://ceur-ws.org/Vol-555/#JamesiSchoening>,
         <http://ceur-ws.org/Vol-555/#LowelliVizenor> .
 
 <http://ceur-ws.org/Vol-555/#paper6> a ns4:Paper ;
     ns4:partOf <http://ceur-ws.org/Vol-555/> ;
-    ns7:title "Referent Tracking for Command and Control Messaging Systems" ;
-    ns2:section <http%3A//ceur-ws.org/Vol-555/%23Preface> ;
-    ns5:author <http://ceur-ws.org/Vol-555/#BarryiSmith>,
+    ns6:title "Referent Tracking for Command and Control Messaging Systems" ;
+    ns5:section <http://ceur-ws.org/Vol-555/#Preface> ;
+    ns2:author <http://ceur-ws.org/Vol-555/#BarryiSmith>,
         <http://ceur-ws.org/Vol-555/#ShahidiManzoor>,
         <http://ceur-ws.org/Vol-555/#WerneriCeusters> .
 
 <http://ceur-ws.org/Vol-555/#paper8> a ns4:Paper ;
     ns4:partOf <http://ceur-ws.org/Vol-555/> ;
-    ns7:title "Course of Action Planning Ontology" ;
-    ns2:section <http%3A//ceur-ws.org/Vol-555/%23Preface> ;
-    ns5:author <http://ceur-ws.org/Vol-555/#PerakathiBenjamin>,
+    ns6:title "Course of Action Planning Ontology" ;
+    ns5:section <http://ceur-ws.org/Vol-555/#Preface> ;
+    ns2:author <http://ceur-ws.org/Vol-555/#PerakathiBenjamin>,
         <http://ceur-ws.org/Vol-555/#RichardiMayer>,
         <http://ceur-ws.org/Vol-555/#TimothyiP.iDarr> .
 
 <http://ceur-ws.org/Vol-555/#paper1> a ns4:Paper ;
     ns4:partOf <http://ceur-ws.org/Vol-555/> ;
-    ns7:title "Substance-Blind Classification of Evidence for Intelligence Analysis" ;
-    ns2:section <http%3A//ceur-ws.org/Vol-555/%23Preface> ;
-    ns5:author <http://ceur-ws.org/Vol-555/#DavidiSchum>,
+    ns6:title "Substance-Blind Classification of Evidence for Intelligence Analysis" ;
+    ns5:section <http://ceur-ws.org/Vol-555/#Preface> ;
+    ns2:author <http://ceur-ws.org/Vol-555/#DavidiSchum>,
         <http://ceur-ws.org/Vol-555/#DoriniMarcu>,
         <http://ceur-ws.org/Vol-555/#GheorgheiTecuci>,
         <http://ceur-ws.org/Vol-555/#MihaiiBoicu> .
 
 <http://ceur-ws.org/Vol-555/#paper4> a ns4:Paper ;
     ns4:partOf <http://ceur-ws.org/Vol-555/> ;
-    ns7:title "Contributions to a Semantically Based Intelligence Analysis Enterprise Workflow System" ;
-    ns2:section <http%3A//ceur-ws.org/Vol-555/%23Preface> ;
-    ns5:author <http://ceur-ws.org/Vol-555/#ChrisiLong>,
+    ns6:title "Contributions to a Semantically Based Intelligence Analysis Enterprise Workflow System" ;
+    ns5:section <http://ceur-ws.org/Vol-555/#Preface> ;
+    ns2:author <http://ceur-ws.org/Vol-555/#ChrisiLong>,
         <http://ceur-ws.org/Vol-555/#EriciPeterson>,
         <http://ceur-ws.org/Vol-555/#JoniPastor>,
         <http://ceur-ws.org/Vol-555/#LanceiA.iForbes>,
@@ -265,9 +266,9 @@
 
 <http://ceur-ws.org/Vol-555/#paper3> a ns4:Paper ;
     ns4:partOf <http://ceur-ws.org/Vol-555/> ;
-    ns7:title "Supporting the Analytic Knowledge Manager: Formal Methods for Ontology Display and Management" ;
-    ns2:section <http%3A//ceur-ws.org/Vol-555/%23Preface> ;
-    ns5:author <http://ceur-ws.org/Vol-555/#AlaniChappell>,
+    ns6:title "Supporting the Analytic Knowledge Manager: Formal Methods for Ontology Display and Management" ;
+    ns5:section <http://ceur-ws.org/Vol-555/#Preface> ;
+    ns2:author <http://ceur-ws.org/Vol-555/#AlaniChappell>,
         <http://ceur-ws.org/Vol-555/#AmandaiWhite>,
         <http://ceur-ws.org/Vol-555/#AnthonyiBladek>,
         <http://ceur-ws.org/Vol-555/#CliffiJoslyn>,
@@ -275,10 +276,6 @@
         <http://ceur-ws.org/Vol-555/#LiamiMcGrath>,
         <http://ceur-ws.org/Vol-555/#PatrickiPaulson>,
         <http://ceur-ws.org/Vol-555/#SeaniStolberg> .
-
-<http%3A//ceur-ws.org/Vol-555/%23Preface> a ns4:SessionEvent ;
-    ns4:partOf <http://ceur-ws.org/Vol-555/> ;
-    ns7:title "Preface" .
 
 <http://ceur-ws.org/Vol-555/> a ns4:Proceedings ;
     ns4:hasPart <http://ceur-ws.org/Vol-555/#paper1>,
@@ -290,10 +287,14 @@
         <http://ceur-ws.org/Vol-555/#paper7>,
         <http://ceur-ws.org/Vol-555/#paper8>,
         <http://ceur-ws.org/Vol-555/#paper9> ;
-    ns4:hasSession <http%3A//ceur-ws.org/Vol-555/%23Preface> ;
-    ns8:issued "2010-01-04T00:00:00+00:00"^^xsd:dateTime ;
-    ns2:presentedAt <http://ceur-ws.org/Vol-555/#event> ;
-    ns5:editor <http://ceur-ws.org/Vol-555/#KathryniLaskey>,
+    ns4:hasSession <http://ceur-ws.org/Vol-555/#Preface> ;
+    ns7:issued "2010-01-04T00:00:00+00:00"^^xsd:dateTime ;
+    ns5:presentedAt <http://ceur-ws.org/Vol-555/#event> ;
+    ns2:editor <http://ceur-ws.org/Vol-555/#KathryniLaskey>,
         <http://ceur-ws.org/Vol-555/#LeoiObrst>,
         <http://ceur-ws.org/Vol-555/#PauloiCosta> .
+
+<http://ceur-ws.org/Vol-555/#Preface> a ns4:SessionEvent ;
+    ns4:partOf <http://ceur-ws.org/Vol-555/> ;
+    ns6:title "Preface" .
 

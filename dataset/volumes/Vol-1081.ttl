@@ -1,222 +1,49 @@
 @prefix ns1: <http://xmlns.com/foaf/0.1/> .
-@prefix ns2: <http://www.w3.org/2002/07/owl#> .
-@prefix ns3: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns4: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns5: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns6: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns7: <http://purl.org/ontology/bibo/#> .
+@prefix ns2: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns3: <http://www.w3.org/2002/07/owl#> .
+@prefix ns4: <http://purl.org/dc/elements/1.1/> .
+@prefix ns5: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns6: <http://purl.org/ontology/bibo/#> .
+@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
 @prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1081/#AdrianiPaschke> a ns1:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/AdrianiPaschke> ;
-    ns1:made <http://ceur-ws.org/Vol-1081/#shortpaper1> ;
-    ns1:name "Adrian Paschke" .
+<http://ceur-ws.org/Vol-1081/> a ns5:Proceedings ;
+    ns8:issued "2013-11-14T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:presentedAt <http://ceur-ws.org/Vol-1081/#event> ;
+    ns2:editor <http://ceur-ws.org/Vol-1081/#ChiaraiDeliVescovo>,
+        <http://ceur-ws.org/Vol-1081/#DavidiPearce>,
+        <http://ceur-ws.org/Vol-1081/#DirkiWalther>,
+        <http://ceur-ws.org/Vol-1081/#TorsteniHahmann> .
 
-<http://ceur-ws.org/Vol-1081/#AminiRezaeian> a ns1:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/AminiRezaeian> ;
-    ns1:made <http://ceur-ws.org/Vol-1081/#regularpaper1> ;
-    ns1:name "Amin Rezaeian" .
+<http://ceur-ws.org/Vol-1081/#ChiaraiDeliVescovo> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/ChiaraiDeliVescovo> ;
+    ns1:name "Chiara Del Vescovo" .
 
-<http://ceur-ws.org/Vol-1081/#BorisiKonev> a ns1:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/BorisiKonev> ;
-    ns1:made <http://ceur-ws.org/Vol-1081/#regularpaper3> ;
-    ns1:name "Boris Konev" .
+<http://ceur-ws.org/Vol-1081/#DavidiPearce> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/DavidiPearce> ;
+    ns1:name "David Pearce" .
 
-<http://ceur-ws.org/Vol-1081/#ChristophiLange> a ns1:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/ChristophiLange> ;
-    ns1:made <http://ceur-ws.org/Vol-1081/#invited1> ;
-    ns1:name "Christoph Lange" .
+<http://ceur-ws.org/Vol-1081/#DirkiWalther> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/DirkiWalther> ;
+    ns1:name "Dirk Walther" .
 
-<http://ceur-ws.org/Vol-1081/#FranciscoiMart%C3%ADn-Recuerda> a ns1:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/FranciscoiMart%C3%ADn-Recuerda> ;
-    ns1:made <http://ceur-ws.org/Vol-1081/#regularpaper4> ;
-    ns1:name "Francisco Martín-Recuerda" .
+<http://ceur-ws.org/Vol-1081/#TorsteniHahmann> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/TorsteniHahmann> ;
+    ns1:name "Torsten Hahmann" .
 
-<http://ceur-ws.org/Vol-1081/#FrankiWolter> a ns1:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/FrankiWolter> ;
-    ns1:made <http://ceur-ws.org/Vol-1081/#regularpaper3> ;
-    ns1:name "Frank Wolter" .
-
-<http://ceur-ws.org/Vol-1081/#GeorgeiA.iVouros> a ns1:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/GeorgeiA.iVouros> ;
-    ns1:made <http://ceur-ws.org/Vol-1081/#invited2> ;
-    ns1:name "George A. Vouros" .
-
-<http://ceur-ws.org/Vol-1081/#MahmoudiNaghibzadeh> a ns1:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/MahmoudiNaghibzadeh> ;
-    ns1:made <http://ceur-ws.org/Vol-1081/#regularpaper1> ;
-    ns1:name "Mahmoud Naghibzadeh" .
-
-<http://ceur-ws.org/Vol-1081/#MihaiiCodescu> a ns1:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/MihaiiCodescu> ;
-    ns1:made <http://ceur-ws.org/Vol-1081/#invited1> ;
-    ns1:name "Mihai Codescu" .
-
-<http://ceur-ws.org/Vol-1081/#OliveriKutz> a ns1:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/OliveriKutz> ;
-    ns1:made <http://ceur-ws.org/Vol-1081/#invited1> ;
-    ns1:name "Oliver Kutz" .
-
-<http://ceur-ws.org/Vol-1081/#PatrickiKoopmann> a ns1:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/PatrickiKoopmann> ;
-    ns1:made <http://ceur-ws.org/Vol-1081/#regularpaper2> ;
-    ns1:name "Patrick Koopmann" .
-
-<http://ceur-ws.org/Vol-1081/#RalphiSch%C3%A4fermeier> a ns1:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/RalphiSch%C3%A4fermeier> ;
-    ns1:made <http://ceur-ws.org/Vol-1081/#shortpaper1> ;
-    ns1:name "Ralph Schäfermeier" .
-
-<http://ceur-ws.org/Vol-1081/#RenateiA.iSchmidt> a ns1:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/RenateiA.iSchmidt> ;
-    ns1:made <http://ceur-ws.org/Vol-1081/#regularpaper2> ;
-    ns1:name "Renate A. Schmidt" .
-
-<http://ceur-ws.org/Vol-1081/#SoudabehiGhafourian> a ns1:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/SoudabehiGhafourian> ;
-    ns1:made <http://ceur-ws.org/Vol-1081/#regularpaper1> ;
-    ns1:name "Soudabeh Ghafourian" .
-
-<http://ceur-ws.org/Vol-1081/#TilliMossakowski> a ns1:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/TilliMossakowski> ;
-    ns1:made <http://ceur-ws.org/Vol-1081/#invited1> ;
-    ns1:name "Till Mossakowski" .
-
-<http://ceur-ws.org/Vol-1081/#WilliamiGatens> a ns1:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/WilliamiGatens> ;
-    ns1:made <http://ceur-ws.org/Vol-1081/#regularpaper3> ;
-    ns1:name "William Gatens" .
-
-<http://ceur-ws.org/Vol-1081/#event> a ns4:WorkshopEvent ;
-    ns4:hasLocation <http://dbpedia.org/resource/Spain> ;
-    ns4:hasPart <http://ceur-ws.org/Vol-1081/#part-WoMO> ;
-    ns4:isSubEventOf <http://ceur-ws.org/Vol-1081/#conf> ;
-    ns6:beginsAtDatetime "2013-09-15T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:endsAtDatetime "2013-09-15T00:00:00+00:00"^^xsd:dateTime ;
-    ns3:license <http://choosealicense.com/licenses/no-license/> ;
+<http://ceur-ws.org/Vol-1081/#event> a ns5:WorkshopEvent ;
+    ns5:hasLocation <http://dbpedia.org/resource/Spain> ;
+    ns5:hasPart <http://ceur-ws.org/Vol-1081/#part-ws> ;
+    ns5:isSubEventOf <http://ceur-ws.org/Vol-1081/#conf> ;
+    ns7:beginsAtDatetime "2013-09-15T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:endsAtDatetime "2013-09-15T00:00:00+00:00"^^xsd:dateTime ;
+    ns4:license "http://choosealicense.com/licenses/no-license/" ;
     rdfs:seeAlso <http://ceur-ws.org/Vol-232/#event>,
         <http://ceur-ws.org/Vol-315/#event>,
         <http://ceur-ws.org/Vol-348/#event>,
         <http://ceur-ws.org/Vol-875/#event> .
-
-<http://ceur-ws.org/Vol-1081/#ChiaraiDeliVescovo> a ns1:Person ;
-    ns5:affiliation "" ;
-    ns2:sameAs <http://ceur-ws.org/persons/ChiaraiDeliVescovo> ;
-    ns1:made <http://ceur-ws.org/Vol-1081/#proceedings> ;
-    ns1:name "Chiara Del Vescovo" .
-
-<http://ceur-ws.org/Vol-1081/#DavidiPearce> a ns1:Person ;
-    ns5:affiliation "" ;
-    ns2:sameAs <http://ceur-ws.org/persons/DavidiPearce> ;
-    ns1:made <http://ceur-ws.org/Vol-1081/#proceedings> ;
-    ns1:name "David Pearce" .
-
-<http://ceur-ws.org/Vol-1081/#TorsteniHahmann> a ns1:Person ;
-    ns5:affiliation "" ;
-    ns2:sameAs <http://ceur-ws.org/persons/TorsteniHahmann> ;
-    ns1:made <http://ceur-ws.org/Vol-1081/#proceedings> ;
-    ns1:name "Torsten Hahmann" .
-
-<http://ceur-ws.org/Vol-1081/#invited2> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1081/> ;
-    ns3:title "Combining ontologies in settings with multiple agents" ;
-    ns7:section <http%3A//ceur-ws.org/Vol-1081/%23InvitedPapers> ;
-    ns5:author <http://ceur-ws.org/Vol-1081/#GeorgeiA.iVouros> .
-
-<http%3A//ceur-ws.org/Vol-1081/%23InvitedPapers> a ns4:SessionEvent ;
-    ns4:partOf <http://ceur-ws.org/Vol-1081/> ;
-    ns3:title "Invited Papers" .
-
-<http%3A//ceur-ws.org/Vol-1081/%23ShortPaper> a ns4:SessionEvent ;
-    ns4:partOf <http://ceur-ws.org/Vol-1081/> ;
-    ns3:title "Short Paper" .
-
-<http://ceur-ws.org/Vol-1081/#DirkiWalther> a ns1:Person ;
-    ns5:affiliation "" ;
-    ns2:sameAs <http://ceur-ws.org/persons/DirkiWalther> ;
-    ns1:made <http://ceur-ws.org/Vol-1081/#proceedings>,
-        <http://ceur-ws.org/Vol-1081/#regularpaper4> ;
-    ns1:name "Dirk Walther" .
-
-<http://ceur-ws.org/Vol-1081/#regularpaper2> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1081/> ;
-    ns3:title "Implementation and Evaluation of Forgetting in ALC-Ontologies" ;
-    ns7:section <http%3A//ceur-ws.org/Vol-1081/%23RegularPapers> ;
-    ns5:author <http://ceur-ws.org/Vol-1081/#PatrickiKoopmann>,
-        <http://ceur-ws.org/Vol-1081/#RenateiA.iSchmidt> .
-
-<http://ceur-ws.org/Vol-1081/#regularpaper4> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1081/> ;
-    ns3:title "Towards Fast Atomic Decomposition using Axiom Dependency Hypergraphs" ;
-    ns7:section <http%3A//ceur-ws.org/Vol-1081/%23RegularPapers> ;
-    ns5:author <http://ceur-ws.org/Vol-1081/#DirkiWalther>,
-        <http://ceur-ws.org/Vol-1081/#FranciscoiMart%C3%ADn-Recuerda> .
-
-<http://ceur-ws.org/Vol-1081/#shortpaper1> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1081/> ;
-    ns3:title "Towards a Unified Approach to Modular Ontology Development Using the Aspect-Oriented Paradigm" ;
-    ns7:section <http%3A//ceur-ws.org/Vol-1081/%23ShortPaper> ;
-    ns5:author <http://ceur-ws.org/Vol-1081/#AdrianiPaschke>,
-        <http://ceur-ws.org/Vol-1081/#RalphiSch%C3%A4fermeier> .
-
-<http://ceur-ws.org/Vol-1081/#regularpaper1> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1081/> ;
-    ns3:title "Modularization of Graph-Structured Ontology with Semantic Similarity" ;
-    ns7:section <http%3A//ceur-ws.org/Vol-1081/%23RegularPapers> ;
-    ns5:author <http://ceur-ws.org/Vol-1081/#AminiRezaeian>,
-        <http://ceur-ws.org/Vol-1081/#MahmoudiNaghibzadeh>,
-        <http://ceur-ws.org/Vol-1081/#SoudabehiGhafourian> .
-
-<http://ceur-ws.org/Vol-1081/#regularpaper3> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1081/> ;
-    ns3:title "Module Extraction for Acyclic Ontologies" ;
-    ns7:section <http%3A//ceur-ws.org/Vol-1081/%23RegularPapers> ;
-    ns5:author <http://ceur-ws.org/Vol-1081/#BorisiKonev>,
-        <http://ceur-ws.org/Vol-1081/#FrankiWolter>,
-        <http://ceur-ws.org/Vol-1081/#WilliamiGatens> .
-
-<http%3A//ceur-ws.org/Vol-1081/%23RegularPapers> a ns4:SessionEvent ;
-    ns4:partOf <http://ceur-ws.org/Vol-1081/> ;
-    ns3:title "Regular Papers" .
-
-<http://ceur-ws.org/Vol-1081/#invited1> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1081/> ;
-    ns3:title "The Distributed Ontology, Modeling and Specification Language" ;
-    ns7:section <http%3A//ceur-ws.org/Vol-1081/%23InvitedPapers> ;
-    ns5:author <http://ceur-ws.org/Vol-1081/#ChristophiLange>,
-        <http://ceur-ws.org/Vol-1081/#MihaiiCodescu>,
-        <http://ceur-ws.org/Vol-1081/#OliveriKutz>,
-        <http://ceur-ws.org/Vol-1081/#TilliMossakowski> .
-
-<http://ceur-ws.org/Vol-1081/#proceedings> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1081/> ;
-    ns3:title "Proceedings of 7th International Workshop on Modular Ontologies" ;
-    ns7:section <http%3A//ceur-ws.org/Vol-1081/%23ShortPaper> ;
-    ns5:author <http://ceur-ws.org/Vol-1081/#ChiaraiDeliVescovo>,
-        <http://ceur-ws.org/Vol-1081/#DavidiPearce>,
-        <http://ceur-ws.org/Vol-1081/#DirkiWalther>,
-        <http://ceur-ws.org/Vol-1081/#TorsteniHahmann> .
-
-<http://ceur-ws.org/Vol-1081/> a ns4:Proceedings ;
-    ns4:hasPart <http://ceur-ws.org/Vol-1081/#invited1>,
-        <http://ceur-ws.org/Vol-1081/#invited2>,
-        <http://ceur-ws.org/Vol-1081/#proceedings>,
-        <http://ceur-ws.org/Vol-1081/#regularpaper1>,
-        <http://ceur-ws.org/Vol-1081/#regularpaper2>,
-        <http://ceur-ws.org/Vol-1081/#regularpaper3>,
-        <http://ceur-ws.org/Vol-1081/#regularpaper4>,
-        <http://ceur-ws.org/Vol-1081/#shortpaper1> ;
-    ns4:hasSession <http%3A//ceur-ws.org/Vol-1081/%23InvitedPapers>,
-        <http%3A//ceur-ws.org/Vol-1081/%23RegularPapers>,
-        <http%3A//ceur-ws.org/Vol-1081/%23ShortPaper> ;
-    ns8:issued "2013-11-14T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:presentedAt <http://ceur-ws.org/Vol-1081/#event> ;
-    ns5:editor <http://ceur-ws.org/Vol-1081/#ChiaraiDeliVescovo>,
-        <http://ceur-ws.org/Vol-1081/#DavidiPearce>,
-        <http://ceur-ws.org/Vol-1081/#DirkiWalther>,
-        <http://ceur-ws.org/Vol-1081/#TorsteniHahmann> .
 

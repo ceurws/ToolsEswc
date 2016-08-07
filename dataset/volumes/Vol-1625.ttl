@@ -1,0 +1,47 @@
+@prefix ns1: <http://xmlns.com/foaf/0.1/> .
+@prefix ns2: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns3: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns4: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns5: <http://www.w3.org/2002/07/owl#> .
+@prefix ns6: <http://purl.org/ontology/bibo/#> .
+@prefix ns7: <http://purl.org/dc/elements/1.1/> .
+@prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://ceur-ws.org/Vol-1625/> a ns2:Proceedings ;
+    ns4:issued "2016-07-25T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:presentedAt <http://ceur-ws.org/Vol-1625/#event> ;
+    ns3:editor <http://ceur-ws.org/Vol-1625/#AlexanderiPanchenko>,
+        <http://ceur-ws.org/Vol-1625/#DmitryiI.iIgnatov>,
+        <http://ceur-ws.org/Vol-1625/#DmitryiIlvovsky>,
+        <http://ceur-ws.org/Vol-1625/#JaumeiBaixeries> .
+
+<http://ceur-ws.org/Vol-1625/#AlexanderiPanchenko> a ns1:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/AlexanderiPanchenko> ;
+    ns1:name "Alexander Panchenko" .
+
+<http://ceur-ws.org/Vol-1625/#DmitryiI.iIgnatov> a ns1:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/DmitryiI.iIgnatov> ;
+    ns1:name "Dmitry I. Ignatov" .
+
+<http://ceur-ws.org/Vol-1625/#DmitryiIlvovsky> a ns1:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/DmitryiIlvovsky> ;
+    ns1:name "Dmitry Ilvovsky" .
+
+<http://ceur-ws.org/Vol-1625/#JaumeiBaixeries> a ns1:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/JaumeiBaixeries> ;
+    ns1:name "Jaume Baixeries" .
+
+<http://ceur-ws.org/Vol-1625/#event> a ns2:WorkshopEvent ;
+    ns2:hasLocation <http://dbpedia.org/resource/Russia> ;
+    ns2:hasPart <http://ceur-ws.org/Vol-1625/#part-ws> ;
+    ns2:isSubEventOf <http://ceur-ws.org/Vol-1625/#conf> ;
+    ns8:beginsAtDatetime "2016-07-18T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:endsAtDatetime "2016-07-18T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:license "http://creativecommons.org/publicdomain/zero/1.0/" ;
+    rdfs:seeAlso <http://ceur-ws.org/Vol-757/#event>,
+        <http://ceur-ws.org/Vol-871/#event> .
+

@@ -1,160 +1,29 @@
-@prefix ns1: <http://purl.org/ontology/bibo/#> .
+@prefix ns1: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix ns2: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns3: <http://xmlns.com/foaf/0.1/> .
-@prefix ns4: <http://www.w3.org/2002/07/owl#> .
-@prefix ns5: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns6: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns3: <http://www.w3.org/2002/07/owl#> .
+@prefix ns4: <http://purl.org/ontology/bibo/#> .
+@prefix ns5: <http://purl.org/dc/elements/1.1/> .
+@prefix ns6: <http://xmlns.com/foaf/0.1/> .
+@prefix ns7: <http://swrc.ontoware.org/ontology/#> .
 @prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1140/#AaroniKunde> a ns3:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/AaroniKunde> ;
-    ns3:made <http://ceur-ws.org/Vol-1140/#paper5> ;
-    ns3:name "Aaron Kunde" .
+<http://ceur-ws.org/Vol-1140/> a ns2:Proceedings ;
+    ns1:issued "2014-03-30T00:00:00+00:00"^^xsd:dateTime ;
+    ns4:presentedAt <http://ceur-ws.org/Vol-1140/#event> ;
+    ns7:editor <http://ceur-ws.org/Vol-1140/#MatthiasiKunze>,
+        <http://ceur-ws.org/Vol-1140/#NicoiHerzberg> .
 
-<http://ceur-ws.org/Vol-1140/#C.iTimurhaniSungur> a ns3:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/C.iTimurhaniSungur> ;
-    ns3:made <http://ceur-ws.org/Vol-1140/#paper8> ;
-    ns3:name "C. Timurhan Sungur" .
+<http://ceur-ws.org/Vol-1140/#MatthiasiKunze> a ns6:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/MatthiasiKunze> ;
+    ns6:name "Matthias Kunze" .
 
-<http://ceur-ws.org/Vol-1140/#CesareiPautasso> a ns3:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/CesareiPautasso> ;
-    ns3:made <http://ceur-ws.org/Vol-1140/#paper1> ;
-    ns3:name "Cesare Pautasso" .
-
-<http://ceur-ws.org/Vol-1140/#ChristianiR.iPrei%C3%9Finger> a ns3:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/ChristianiR.iPrei%C3%9Finger> ;
-    ns3:made <http://ceur-ws.org/Vol-1140/#paper9> ;
-    ns3:name "Christian R. Preißinger" .
-
-<http://ceur-ws.org/Vol-1140/#DanieliRitter> a ns3:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/DanieliRitter> ;
-    ns3:made <http://ceur-ws.org/Vol-1140/#paper12> ;
-    ns3:name "Daniel Ritter" .
-
-<http://ceur-ws.org/Vol-1140/#DavidiBimamisa> a ns3:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/DavidiBimamisa> ;
-    ns3:made <http://ceur-ws.org/Vol-1140/#paper9> ;
-    ns3:name "David Bimamisa" .
-
-<http://ceur-ws.org/Vol-1140/#DieteriRoller> a ns3:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/DieteriRoller> ;
-    ns3:made <http://ceur-ws.org/Vol-1140/#paper1> ;
-    ns3:name "Dieter Roller" .
-
-<http://ceur-ws.org/Vol-1140/#EkaterinaiBazhenova> a ns3:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/EkaterinaiBazhenova> ;
-    ns3:made <http://ceur-ws.org/Vol-1140/#paper4> ;
-    ns3:name "Ekaterina Bazhenova" .
-
-<http://ceur-ws.org/Vol-1140/#GregoriGrambow> a ns3:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/GregoriGrambow> ;
-    ns3:made <http://ceur-ws.org/Vol-1140/#paper13> ;
-    ns3:name "Gregor Grambow" .
-
-<http://ceur-ws.org/Vol-1140/#GuidoiWirtz> a ns3:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/GuidoiWirtz> ;
-    ns3:made <http://ceur-ws.org/Vol-1140/#paper9> ;
-    ns3:name "Guido Wirtz" .
-
-<http://ceur-ws.org/Vol-1140/#J%C3%B6rgiLenhard> a ns3:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/J%C3%B6rgiLenhard> ;
-    ns3:made <http://ceur-ws.org/Vol-1140/#paper6> ;
-    ns3:name "Jörg Lenhard" .
-
-<http://ceur-ws.org/Vol-1140/#JaniS%C3%BCrmeli> a ns3:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/JaniS%C3%BCrmeli> ;
-    ns3:made <http://ceur-ws.org/Vol-1140/#paper7> ;
-    ns3:name "Jan Sürmeli" .
-
-<http://ceur-ws.org/Vol-1140/#ManfrediReichert> a ns3:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/ManfrediReichert> ;
-    ns3:made <http://ceur-ws.org/Vol-1140/#paper13> ;
-    ns3:name "Manfred Reichert" .
-
-<http://ceur-ws.org/Vol-1140/#MarciniHewelt> a ns3:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/MarciniHewelt> ;
-    ns3:made <http://ceur-ws.org/Vol-1140/#paper5> ;
-    ns3:name "Marcin Hewelt" .
-
-<http://ceur-ws.org/Vol-1140/#MarigiannaiSkouradaki> a ns3:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/MarigiannaiSkouradaki> ;
-    ns3:made <http://ceur-ws.org/Vol-1140/#paper1> ;
-    ns3:name "Marigianna Skouradaki" .
-
-<http://ceur-ws.org/Vol-1140/#MatthiasiKunze> a ns3:Person ;
-    ns6:affiliation "" ;
-    ns4:sameAs <http://ceur-ws.org/persons/MatthiasiKunze> ;
-    ns3:name "Matthias Kunze" .
-
-<http://ceur-ws.org/Vol-1140/#NicoiHerzberg> a ns3:Person ;
-    ns6:affiliation "" ;
-    ns4:sameAs <http://ceur-ws.org/persons/NicoiHerzberg> ;
-    ns3:name "Nico Herzberg" .
-
-<http://ceur-ws.org/Vol-1140/#NicolasiMundbrod> a ns3:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/NicolasiMundbrod> ;
-    ns3:made <http://ceur-ws.org/Vol-1140/#paper13> ;
-    ns3:name "Nicolas Mundbrod" .
-
-<http://ceur-ws.org/Vol-1140/#NielsiLohmann> a ns3:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/NielsiLohmann> ;
-    ns3:made <http://ceur-ws.org/Vol-1140/#paper2> ;
-    ns3:name "Niels Lohmann" .
-
-<http://ceur-ws.org/Vol-1140/#PhilippiHoenisch> a ns3:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/PhilippiHoenisch> ;
-    ns3:made <http://ceur-ws.org/Vol-1140/#paper10> ;
-    ns3:name "Philipp Hoenisch" .
-
-<http://ceur-ws.org/Vol-1140/#RobertiPr%C3%BCfer> a ns3:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/RobertiPr%C3%BCfer> ;
-    ns3:made <http://ceur-ws.org/Vol-1140/#paper7> ;
-    ns3:name "Robert Prüfer" .
-
-<http://ceur-ws.org/Vol-1140/#SimoniHarrer> a ns3:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/SimoniHarrer> ;
-    ns3:made <http://ceur-ws.org/Vol-1140/#paper9> ;
-    ns3:name "Simon Harrer" .
-
-<http://ceur-ws.org/Vol-1140/#SimoniMoser> a ns3:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/SimoniMoser> ;
-    ns3:made <http://ceur-ws.org/Vol-1140/#paper3> ;
-    ns3:name "Simon Moser" .
-
-<http://ceur-ws.org/Vol-1140/#StephaniJ.iA.iSchuberth> a ns3:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/StephaniJ.iA.iSchuberth> ;
-    ns3:made <http://ceur-ws.org/Vol-1140/#paper9> ;
-    ns3:name "Stephan J. A. Schuberth" .
-
-<http://ceur-ws.org/Vol-1140/#ThomasiS.iHeinze> a ns3:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/ThomasiS.iHeinze> ;
-    ns3:made <http://ceur-ws.org/Vol-1140/#paper3> ;
-    ns3:name "Thomas S. Heinze" .
-
-<http://ceur-ws.org/Vol-1140/#TobiasiBinz> a ns3:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/TobiasiBinz> ;
-    ns3:made <http://ceur-ws.org/Vol-1140/#paper11> ;
-    ns3:name "Tobias Binz" .
-
-<http://ceur-ws.org/Vol-1140/#UweiBreitenb%C3%BCcher> a ns3:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/UweiBreitenb%C3%BCcher> ;
-    ns3:made <http://ceur-ws.org/Vol-1140/#paper11> ;
-    ns3:name "Uwe Breitenbücher" .
-
-<http://ceur-ws.org/Vol-1140/#VivianiSteller> a ns3:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/VivianiSteller> ;
-    ns3:made <http://ceur-ws.org/Vol-1140/#paper13> ;
-    ns3:name "Vivian Steller" .
-
-<http://ceur-ws.org/Vol-1140/#WolframiAmme> a ns3:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/WolframiAmme> ;
-    ns3:made <http://ceur-ws.org/Vol-1140/#paper3> ;
-    ns3:name "Wolfram Amme" .
+<http://ceur-ws.org/Vol-1140/#NicoiHerzberg> a ns6:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/NicoiHerzberg> ;
+    ns6:name "Nico Herzberg" .
 
 <http://ceur-ws.org/Vol-1140/#event> a ns2:WorkshopEvent ;
     ns2:hasLocation <http://dbpedia.org/resource/Germany> ;
@@ -162,203 +31,10 @@
     ns2:isSubEventOf <http://ceur-ws.org/Vol-1140/#conf> ;
     ns8:beginsAtDatetime "2014-02-20T00:00:00+00:00"^^xsd:dateTime ;
     ns8:endsAtDatetime "2014-02-21T00:00:00+00:00"^^xsd:dateTime ;
-    ns5:license <http://choosealicense.com/licenses/no-license/> ;
+    ns5:license "http://choosealicense.com/licenses/no-license/" ;
     rdfs:seeAlso <http://ceur-ws.org/Vol-1029/#event>,
         <http://ceur-ws.org/Vol-438/#event>,
         <http://ceur-ws.org/Vol-563/#event>,
         <http://ceur-ws.org/Vol-705/#event>,
         <http://ceur-ws.org/Vol-847/#event> .
-
-<http://ceur-ws.org/Vol-1140/#OliveriKopp> a ns3:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/OliveriKopp> ;
-    ns3:made <http://ceur-ws.org/Vol-1140/#paper11>,
-        <http://ceur-ws.org/Vol-1140/#paper8> ;
-    ns3:name "Oliver Kopp" .
-
-<http://ceur-ws.org/Vol-1140/#paper10> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1140/> ;
-    ns5:title "ViePEP – A BPMS for Elastic Processes" ;
-    ns1:endPage 68 ;
-    ns1:numPages 8 ;
-    ns1:section <http%3A//ceur-ws.org/Vol-1140/%23Session4%3AProcessExecution> ;
-    ns1:startPage 61 ;
-    ns6:author <http://ceur-ws.org/Vol-1140/#PhilippiHoenisch> .
-
-<http://ceur-ws.org/Vol-1140/#paper12> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1140/> ;
-    ns5:title "What About Database-centric Enterprise Application Integration?" ;
-    ns1:endPage 76 ;
-    ns1:numPages 4 ;
-    ns1:section <http%3A//ceur-ws.org/Vol-1140/%23Session5%3AProcessData> ;
-    ns1:startPage 73 ;
-    ns6:author <http://ceur-ws.org/Vol-1140/#DanieliRitter> .
-
-<http://ceur-ws.org/Vol-1140/#paper2> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1140/> ;
-    ns5:title "Where did I go wrong? – Explaining Errors in Business Process Models" ;
-    ns1:endPage 16 ;
-    ns1:numPages 9 ;
-    ns1:section <http%3A//ceur-ws.org/Vol-1140/%23Session1%3AProcessAnalysis> ;
-    ns1:startPage 8 ;
-    ns6:author <http://ceur-ws.org/Vol-1140/#NielsiLohmann> .
-
-<http://ceur-ws.org/Vol-1140/#paper4> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1140/> ;
-    ns5:title "Support of Decision Tasks in Business Process Improvement" ;
-    ns1:endPage 26 ;
-    ns1:numPages 6 ;
-    ns1:section <http%3A//ceur-ws.org/Vol-1140/%23Session2%3AProcessModelingandImprovement> ;
-    ns1:startPage 21 ;
-    ns6:author <http://ceur-ws.org/Vol-1140/#EkaterinaiBazhenova> .
-
-<http://ceur-ws.org/Vol-1140/#paper6> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1140/> ;
-    ns5:title "Towards Quantifying the Adaptability of Executable BPMN Processes" ;
-    ns1:endPage 41 ;
-    ns1:numPages 8 ;
-    ns1:section <http%3A//ceur-ws.org/Vol-1140/%23Session3%3AFlexibleProcesses> ;
-    ns1:startPage 34 ;
-    ns6:author <http://ceur-ws.org/Vol-1140/#J%C3%B6rgiLenhard> .
-
-<http%3A//ceur-ws.org/Vol-1140/%23Session2%3AProcessModelingandImprovement> a ns2:SessionEvent ;
-    ns2:partOf <http://ceur-ws.org/Vol-1140/> ;
-    ns5:title "Session 2: Process Modeling and Improvement" .
-
-<http%3A//ceur-ws.org/Vol-1140/%23Session5%3AProcessData> a ns2:SessionEvent ;
-    ns2:partOf <http://ceur-ws.org/Vol-1140/> ;
-    ns5:title "Session 5: Process Data" .
-
-<http://ceur-ws.org/Vol-1140/#FrankiLeymann> a ns3:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/FrankiLeymann> ;
-    ns3:made <http://ceur-ws.org/Vol-1140/#paper1>,
-        <http://ceur-ws.org/Vol-1140/#paper11>,
-        <http://ceur-ws.org/Vol-1140/#paper8> ;
-    ns3:name "Frank Leymann" .
-
-<http://ceur-ws.org/Vol-1140/#paper5> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1140/> ;
-    ns5:title "Integration of Documentation Task into Medical Treatment Processes in the Hospital" ;
-    ns1:endPage 33 ;
-    ns1:numPages 7 ;
-    ns1:section <http%3A//ceur-ws.org/Vol-1140/%23Session2%3AProcessModelingandImprovement> ;
-    ns1:startPage 27 ;
-    ns6:author <http://ceur-ws.org/Vol-1140/#AaroniKunde>,
-        <http://ceur-ws.org/Vol-1140/#MarciniHewelt> .
-
-<http://ceur-ws.org/Vol-1140/#paper7> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1140/> ;
-    ns5:title "Introducing Configurability into Scenario-Based Specification of Business Processes" ;
-    ns1:endPage 48 ;
-    ns1:numPages 7 ;
-    ns1:section <http%3A//ceur-ws.org/Vol-1140/%23Session3%3AFlexibleProcesses> ;
-    ns1:startPage 42 ;
-    ns6:author <http://ceur-ws.org/Vol-1140/#JaniS%C3%BCrmeli>,
-        <http://ceur-ws.org/Vol-1140/#RobertiPr%C3%BCfer> .
-
-<http%3A//ceur-ws.org/Vol-1140/%23Session1%3AProcessAnalysis> a ns2:SessionEvent ;
-    ns2:partOf <http://ceur-ws.org/Vol-1140/> ;
-    ns5:title "Session 1: Process Analysis" .
-
-<http%3A//ceur-ws.org/Vol-1140/%23Session3%3AFlexibleProcesses> a ns2:SessionEvent ;
-    ns2:partOf <http://ceur-ws.org/Vol-1140/> ;
-    ns5:title "Session 3: Flexible Processes" .
-
-<http%3A//ceur-ws.org/Vol-1140/%23Session4%3AProcessExecution> a ns2:SessionEvent ;
-    ns2:partOf <http://ceur-ws.org/Vol-1140/> ;
-    ns5:title "Session 4: Process Execution" .
-
-<http://ceur-ws.org/Vol-1140/#paper3> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1140/> ;
-    ns5:title "Message Assertions and Predicate-Based Control-Flow Unfolding Revisited" ;
-    ns1:endPage 20 ;
-    ns1:numPages 4 ;
-    ns1:section <http%3A//ceur-ws.org/Vol-1140/%23Session1%3AProcessAnalysis> ;
-    ns1:startPage 17 ;
-    ns6:author <http://ceur-ws.org/Vol-1140/#SimoniMoser>,
-        <http://ceur-ws.org/Vol-1140/#ThomasiS.iHeinze>,
-        <http://ceur-ws.org/Vol-1140/#WolframiAmme> .
-
-<http://ceur-ws.org/Vol-1140/#paper8> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1140/> ;
-    ns5:title "Supporting Informal Processes" ;
-    ns1:endPage 56 ;
-    ns1:numPages 8 ;
-    ns1:section <http%3A//ceur-ws.org/Vol-1140/%23Session3%3AFlexibleProcesses> ;
-    ns1:startPage 49 ;
-    ns6:author <http://ceur-ws.org/Vol-1140/#C.iTimurhaniSungur>,
-        <http://ceur-ws.org/Vol-1140/#FrankiLeymann>,
-        <http://ceur-ws.org/Vol-1140/#OliveriKopp> .
-
-<http://ceur-ws.org/Vol-1140/#paper1> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1140/> ;
-    ns5:title "“BPELanon”: Anonymizing BPEL Processes" ;
-    ns1:endPage 7 ;
-    ns1:numPages 7 ;
-    ns1:section <http%3A//ceur-ws.org/Vol-1140/%23Session1%3AProcessAnalysis> ;
-    ns1:startPage 1 ;
-    ns6:author <http://ceur-ws.org/Vol-1140/#CesareiPautasso>,
-        <http://ceur-ws.org/Vol-1140/#DieteriRoller>,
-        <http://ceur-ws.org/Vol-1140/#FrankiLeymann>,
-        <http://ceur-ws.org/Vol-1140/#MarigiannaiSkouradaki> .
-
-<http://ceur-ws.org/Vol-1140/#paper11> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1140/> ;
-    ns5:title "Vinothek – A Self-Service Portal for TOSCA" ;
-    ns1:endPage 72 ;
-    ns1:numPages 4 ;
-    ns1:section <http%3A//ceur-ws.org/Vol-1140/%23Session4%3AProcessExecution> ;
-    ns1:startPage 69 ;
-    ns6:author <http://ceur-ws.org/Vol-1140/#FrankiLeymann>,
-        <http://ceur-ws.org/Vol-1140/#OliveriKopp>,
-        <http://ceur-ws.org/Vol-1140/#TobiasiBinz>,
-        <http://ceur-ws.org/Vol-1140/#UweiBreitenb%C3%BCcher> .
-
-<http://ceur-ws.org/Vol-1140/#paper13> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1140/> ;
-    ns5:title "Towards Process-based Composition of Activities for Collecting Data in Supply Chains" ;
-    ns1:endPage 84 ;
-    ns1:numPages 8 ;
-    ns1:section <http%3A//ceur-ws.org/Vol-1140/%23Session5%3AProcessData> ;
-    ns1:startPage 77 ;
-    ns6:author <http://ceur-ws.org/Vol-1140/#GregoriGrambow>,
-        <http://ceur-ws.org/Vol-1140/#ManfrediReichert>,
-        <http://ceur-ws.org/Vol-1140/#NicolasiMundbrod>,
-        <http://ceur-ws.org/Vol-1140/#VivianiSteller> .
-
-<http://ceur-ws.org/Vol-1140/#paper9> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1140/> ;
-    ns5:title "Towards Standard Conformant BPEL Engines: The Case of Static Analysis" ;
-    ns1:endPage 60 ;
-    ns1:numPages 4 ;
-    ns1:section <http%3A//ceur-ws.org/Vol-1140/%23Session4%3AProcessExecution> ;
-    ns1:startPage 57 ;
-    ns6:author <http://ceur-ws.org/Vol-1140/#ChristianiR.iPrei%C3%9Finger>,
-        <http://ceur-ws.org/Vol-1140/#DavidiBimamisa>,
-        <http://ceur-ws.org/Vol-1140/#GuidoiWirtz>,
-        <http://ceur-ws.org/Vol-1140/#SimoniHarrer>,
-        <http://ceur-ws.org/Vol-1140/#StephaniJ.iA.iSchuberth> .
-
-<http://ceur-ws.org/Vol-1140/> a ns2:Proceedings ;
-    ns2:hasPart <http://ceur-ws.org/Vol-1140/#paper1>,
-        <http://ceur-ws.org/Vol-1140/#paper10>,
-        <http://ceur-ws.org/Vol-1140/#paper11>,
-        <http://ceur-ws.org/Vol-1140/#paper12>,
-        <http://ceur-ws.org/Vol-1140/#paper13>,
-        <http://ceur-ws.org/Vol-1140/#paper2>,
-        <http://ceur-ws.org/Vol-1140/#paper3>,
-        <http://ceur-ws.org/Vol-1140/#paper4>,
-        <http://ceur-ws.org/Vol-1140/#paper5>,
-        <http://ceur-ws.org/Vol-1140/#paper6>,
-        <http://ceur-ws.org/Vol-1140/#paper7>,
-        <http://ceur-ws.org/Vol-1140/#paper8>,
-        <http://ceur-ws.org/Vol-1140/#paper9> ;
-    ns2:hasSession <http%3A//ceur-ws.org/Vol-1140/%23Session1%3AProcessAnalysis>,
-        <http%3A//ceur-ws.org/Vol-1140/%23Session2%3AProcessModelingandImprovement>,
-        <http%3A//ceur-ws.org/Vol-1140/%23Session3%3AFlexibleProcesses>,
-        <http%3A//ceur-ws.org/Vol-1140/%23Session4%3AProcessExecution>,
-        <http%3A//ceur-ws.org/Vol-1140/%23Session5%3AProcessData> ;
-    ns7:issued "2014-03-30T00:00:00+00:00"^^xsd:dateTime ;
-    ns1:presentedAt <http://ceur-ws.org/Vol-1140/#event> ;
-    ns6:editor <http://ceur-ws.org/Vol-1140/#MatthiasiKunze>,
-        <http://ceur-ws.org/Vol-1140/#NicoiHerzberg> .
 

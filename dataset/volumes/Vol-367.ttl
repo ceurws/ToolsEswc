@@ -1,11 +1,12 @@
 @prefix ns1: <http://www.w3.org/2002/07/owl#> .
-@prefix ns2: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns2: <http://purl.org/dc/elements/1.1/#> .
 @prefix ns3: <http://xmlns.com/foaf/0.1/> .
-@prefix ns4: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns4: <http://data.semanticweb.org/ns/swc/ontology/#> .
 @prefix ns5: <http://swrc.ontoware.org/ontology/#> .
 @prefix ns6: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns8: <http://purl.org/ontology/bibo/#> .
+@prefix ns7: <http://purl.org/ontology/bibo/#> .
+@prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns9: <http://purl.org/dc/elements/1.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -296,37 +297,37 @@
     ns1:sameAs <http://ceur-ws.org/persons/YorkiSure> ;
     ns3:name "York Sure" .
 
-<http://ceur-ws.org/Vol-367/#event> a ns2:WorkshopEvent ;
-    ns2:hasLocation <http://dbpedia.org/resource/Spain> ;
-    ns2:hasPart <http://ceur-ws.org/Vol-367/#part-ESWC> ;
-    ns2:isSubEventOf <http://ceur-ws.org/Vol-367/#conf> ;
-    ns7:beginsAtDatetime "2008-06-01T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:endsAtDatetime "2008-06-05T00:00:00+00:00"^^xsd:dateTime ;
-    ns4:license <http://choosealicense.com/licenses/no-license/> .
+<http://ceur-ws.org/Vol-367/#event> a ns4:WorkshopEvent ;
+    ns4:hasLocation <http://dbpedia.org/resource/Spain> ;
+    ns4:hasPart <http://ceur-ws.org/Vol-367/#part-CEUR-WS> ;
+    ns4:isSubEventOf <http://ceur-ws.org/Vol-367/#conf> ;
+    ns8:beginsAtDatetime "2008-07-02T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:endsAtDatetime "2008-07-02T00:00:00+00:00"^^xsd:dateTime ;
+    ns9:license "http://choosealicense.com/licenses/no-license/" .
 
-<http://ceur-ws.org/Vol-367/#ESWC2008_Poster_Buerger> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-367/> ;
-    ns4:title "A Benefit Estimation Model for Ontologies" ;
+<http://ceur-ws.org/Vol-367/#ESWC2008_Poster_Buerger> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-367/> ;
+    ns2:title "A Benefit Estimation Model for Ontologies" ;
     ns5:author <http://ceur-ws.org/Vol-367/#TobiasiB%C3%BCrger> .
 
-<http://ceur-ws.org/Vol-367/#ESWC2008_Poster_Haller> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-367/> ;
-    ns4:title "QuiKey" ;
+<http://ceur-ws.org/Vol-367/#ESWC2008_Poster_Haller> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-367/> ;
+    ns2:title "QuiKey" ;
     ns5:author <http://ceur-ws.org/Vol-367/#HeikoiHaller> .
 
-<http://ceur-ws.org/Vol-367/#ESWC2008_Poster_Passant> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-367/> ;
-    ns4:title "MOAT: A Quadripartite Model for Tagging" ;
+<http://ceur-ws.org/Vol-367/#ESWC2008_Poster_Passant> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-367/> ;
+    ns2:title "MOAT: A Quadripartite Model for Tagging" ;
     ns5:author <http://ceur-ws.org/Vol-367/#AlexandreiPassant> .
 
-<http://ceur-ws.org/Vol-367/#ESWC2008_Poster_Rauch> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-367/> ;
-    ns4:title "Observational Calculi  Tool for Semantic Web" ;
+<http://ceur-ws.org/Vol-367/#ESWC2008_Poster_Rauch> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-367/> ;
+    ns2:title "Observational Calculi  Tool for Semantic Web" ;
     ns5:author <http://ceur-ws.org/Vol-367/#JaniRauch> .
 
-<http://ceur-ws.org/Vol-367/#ESWC2008_Poster_Weller> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-367/> ;
-    ns4:title "KOSO: A Metadata Ontology for Knowledge Organization Systems" ;
+<http://ceur-ws.org/Vol-367/#ESWC2008_Poster_Weller> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-367/> ;
+    ns2:title "KOSO: A Metadata Ontology for Knowledge Organization Systems" ;
     ns5:author <http://ceur-ws.org/Vol-367/#KatriniWeller> .
 
 <http://ceur-ws.org/Vol-367/#HughiGlaser> a ns3:Person ;
@@ -341,91 +342,91 @@
         <http://ceur-ws.org/Vol-367/#ESWC2008_Poster_BuergerAmmendola> ;
     ns3:name "Tobias Bürger" .
 
-<http://ceur-ws.org/Vol-367/#ESWC2008_Poster_BuergerAmmendola> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-367/> ;
-    ns4:title "A User Centered Annotation Methodology for Multimedia Content" ;
+<http://ceur-ws.org/Vol-367/#ESWC2008_Poster_BuergerAmmendola> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-367/> ;
+    ns2:title "A User Centered Annotation Methodology for Multimedia Content" ;
     ns5:author <http://ceur-ws.org/Vol-367/#ChristianiAmmendola>,
         <http://ceur-ws.org/Vol-367/#TobiasiB%C3%BCrger> .
 
-<http://ceur-ws.org/Vol-367/#ESWC2008_Poster_Dingli> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-367/> ;
-    ns4:title "PervasIve Nursing And docToral Assistant (PINATA)" ;
+<http://ceur-ws.org/Vol-367/#ESWC2008_Poster_Dingli> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-367/> ;
+    ns2:title "PervasIve Nursing And docToral Assistant (PINATA)" ;
     ns5:author <http://ceur-ws.org/Vol-367/#AlexieiiDingli>,
         <http://ceur-ws.org/Vol-367/#CharlieiAbela> .
 
-<http://ceur-ws.org/Vol-367/#ESWC2008_Poster_Hausenblas> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-367/> ;
-    ns4:title "Interlinking of Resources with Semantics" ;
+<http://ceur-ws.org/Vol-367/#ESWC2008_Poster_Hausenblas> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-367/> ;
+    ns2:title "Interlinking of Resources with Semantics" ;
     ns5:author <http://ceur-ws.org/Vol-367/#MichaeliHausenblas>,
         <http://ceur-ws.org/Vol-367/#WolfgangiHalb> .
 
-<http://ceur-ws.org/Vol-367/#ESWC2008_Poster_Rodriguez> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-367/> ;
-    ns4:title "Untangling Domain Concepts in Ontology Design Patterns" ;
+<http://ceur-ws.org/Vol-367/#ESWC2008_Poster_Rodriguez> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-367/> ;
+    ns2:title "Untangling Domain Concepts in Ontology Design Patterns" ;
     ns5:author <http://ceur-ws.org/Vol-367/#BenedictoiRodriguez-Castro>,
         <http://ceur-ws.org/Vol-367/#HughiGlaser> .
 
-<http://ceur-ws.org/Vol-367/#ESWC2008_Poster_Jaffri> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-367/> ;
-    ns4:title "An Infrastructure for Managing URI Synonymity on the Semantic Web" ;
+<http://ceur-ws.org/Vol-367/#ESWC2008_Poster_Jaffri> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-367/> ;
+    ns2:title "An Infrastructure for Managing URI Synonymity on the Semantic Web" ;
     ns5:author <http://ceur-ws.org/Vol-367/#AfraziJaffri>,
         <http://ceur-ws.org/Vol-367/#HughiGlaser>,
         <http://ceur-ws.org/Vol-367/#IaniMillard> .
 
-<http://ceur-ws.org/Vol-367/#ESWC2008_Poster_Jozefowska> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-367/> ;
-    ns4:title "Materialized views in mining ontology instances" ;
+<http://ceur-ws.org/Vol-367/#ESWC2008_Poster_Jozefowska> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-367/> ;
+    ns2:title "Materialized views in mining ontology instances" ;
     ns5:author <http://ceur-ws.org/Vol-367/#AgnieszkaiLawrynowicz>,
         <http://ceur-ws.org/Vol-367/#JoannaiJozefowska>,
         <http://ceur-ws.org/Vol-367/#TomasziLukaszewski> .
 
-<http://ceur-ws.org/Vol-367/#ESWC2008_Poster_Kozaki> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-367/> ;
-    ns4:title "Development of a Conceptual Map Generation Tool for Exploring Ontologies" ;
+<http://ceur-ws.org/Vol-367/#ESWC2008_Poster_Kozaki> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-367/> ;
+    ns2:title "Development of a Conceptual Map Generation Tool for Exploring Ontologies" ;
     ns5:author <http://ceur-ws.org/Vol-367/#KoujiiKozaki>,
         <http://ceur-ws.org/Vol-367/#RiichiroiMizoguchi>,
         <http://ceur-ws.org/Vol-367/#TakeruiHirota> .
 
-<http://ceur-ws.org/Vol-367/#ESWC2008_Poster_Kuester> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-367/> ;
-    ns4:title "OPOSSum - An Online Portal to Collect and Share Semantic Service Descriptions" ;
+<http://ceur-ws.org/Vol-367/#ESWC2008_Poster_Kuester> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-367/> ;
+    ns2:title "OPOSSum - An Online Portal to Collect and Share Semantic Service Descriptions" ;
     ns5:author <http://ceur-ws.org/Vol-367/#AndreasiKrug>,
         <http://ceur-ws.org/Vol-367/#BirgittaiK%C3%B6nig-Ries>,
         <http://ceur-ws.org/Vol-367/#UlrichiK%C3%BCster> .
 
-<http://ceur-ws.org/Vol-367/#ESWC2008_Poster_Langegger> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-367/> ;
-    ns4:title "A Semantic Web middleware for Virtual Data Integration on the Web" ;
+<http://ceur-ws.org/Vol-367/#ESWC2008_Poster_Langegger> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-367/> ;
+    ns2:title "A Semantic Web middleware for Virtual Data Integration on the Web" ;
     ns5:author <http://ceur-ws.org/Vol-367/#AndreasiLangegger>,
         <http://ceur-ws.org/Vol-367/#MartiniBl%C3%B6chl>,
         <http://ceur-ws.org/Vol-367/#WolframiW%C3%B6%C3%9F> .
 
-<http://ceur-ws.org/Vol-367/#ESWC2008_Poster_Oliveira> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-367/> ;
-    ns4:title "Automatic Tag Suggestion Based on Resource Contents" ;
+<http://ceur-ws.org/Vol-367/#ESWC2008_Poster_Oliveira> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-367/> ;
+    ns2:title "Automatic Tag Suggestion Based on Resource Contents" ;
     ns5:author <http://ceur-ws.org/Vol-367/#BrunoiOliveira>,
         <http://ceur-ws.org/Vol-367/#H.iSofiaiPinto>,
         <http://ceur-ws.org/Vol-367/#PaveliCalado> .
 
-<http://ceur-ws.org/Vol-367/#ESWC2008_Poster_Ruckhaus> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-367/> ;
-    ns4:title "A Cost-based Optimizer for SPARQL Queries" ;
+<http://ceur-ws.org/Vol-367/#ESWC2008_Poster_Ruckhaus> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-367/> ;
+    ns2:title "A Cost-based Optimizer for SPARQL Queries" ;
     ns5:author <http://ceur-ws.org/Vol-367/#EdnaiRuckhaus>,
         <http://ceur-ws.org/Vol-367/#EduardoiRuiz>,
         <http://ceur-ws.org/Vol-367/#JavieriSierra>,
         <http://ceur-ws.org/Vol-367/#MariaiEstheriVidal> .
 
-<http://ceur-ws.org/Vol-367/#ESWC2008_Poster_Schaffert> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-367/> ;
-    ns4:title "KiWi - Knowledge in a Wiki" ;
+<http://ceur-ws.org/Vol-367/#ESWC2008_Poster_Schaffert> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-367/> ;
+    ns2:title "KiWi - Knowledge in a Wiki" ;
     ns5:author <http://ceur-ws.org/Vol-367/#AndreasiBlumauer>,
         <http://ceur-ws.org/Vol-367/#JuliaiEder>,
         <http://ceur-ws.org/Vol-367/#MatthiasiSamwald>,
         <http://ceur-ws.org/Vol-367/#SebastianiSchaffert> .
 
-<http://ceur-ws.org/Vol-367/#ESWC2008_Poster_Bontcheva> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-367/> ;
-    ns4:title "Service-Finder:Web Scale Semantic Discovery" ;
+<http://ceur-ws.org/Vol-367/#ESWC2008_Poster_Bontcheva> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-367/> ;
+    ns2:title "Service-Finder:Web Scale Semantic Discovery" ;
     ns5:author <http://ceur-ws.org/Vol-367/#AndreaiTurati>,
         <http://ceur-ws.org/Vol-367/#EmanueleiDellaiValle>,
         <http://ceur-ws.org/Vol-367/#HolgeriLausen>,
@@ -433,9 +434,9 @@
         <http://ceur-ws.org/Vol-367/#MichaeliErdmann>,
         <http://ceur-ws.org/Vol-367/#NathalieiSteinmetz> .
 
-<http://ceur-ws.org/Vol-367/#ESWC2008_Poster_Denaux> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-367/> ;
-    ns4:title "ROO: A Tool to Assist Domain Experts with Ontology Construction" ;
+<http://ceur-ws.org/Vol-367/#ESWC2008_Poster_Denaux> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-367/> ;
+    ns2:title "ROO: A Tool to Assist Domain Experts with Ontology Construction" ;
     ns5:author <http://ceur-ws.org/Vol-367/#AnthonyiG.iCohn>,
         <http://ceur-ws.org/Vol-367/#CatherineiDolbear>,
         <http://ceur-ws.org/Vol-367/#IaniHolt>,
@@ -443,9 +444,9 @@
         <http://ceur-ws.org/Vol-367/#RonaldiDenaux>,
         <http://ceur-ws.org/Vol-367/#VaniaiDimitrova> .
 
-<http://ceur-ws.org/Vol-367/#ESWC2008_Poster_Hyvoenen> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-367/> ;
-    ns4:title "CultureSampo - Finnish Culture on the Semantic Web" ;
+<http://ceur-ws.org/Vol-367/#ESWC2008_Poster_Hyvoenen> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-367/> ;
+    ns2:title "CultureSampo - Finnish Culture on the Semantic Web" ;
     ns5:author <http://ceur-ws.org/Vol-367/#EeroiHyv%C3%B6nen>,
         <http://ceur-ws.org/Vol-367/#EetuiM%C3%A4kel%C3%A4>,
         <http://ceur-ws.org/Vol-367/#HeiniiKuittinen>,
@@ -456,8 +457,8 @@
         <http://ceur-ws.org/Vol-367/#TomiiKauppinen>,
         <http://ceur-ws.org/Vol-367/#TuukkaiRuotsalo> .
 
-<http://ceur-ws.org/Vol-367/> a ns2:Proceedings ;
-    ns2:hasPart <http://ceur-ws.org/Vol-367/#ESWC2008_Poster_Bontcheva>,
+<http://ceur-ws.org/Vol-367/> a ns4:Proceedings ;
+    ns4:hasPart <http://ceur-ws.org/Vol-367/#ESWC2008_Poster_Bontcheva>,
         <http://ceur-ws.org/Vol-367/#ESWC2008_Poster_Buerger>,
         <http://ceur-ws.org/Vol-367/#ESWC2008_Poster_BuergerAmmendola>,
         <http://ceur-ws.org/Vol-367/#ESWC2008_Poster_Denaux>,
@@ -478,6 +479,6 @@
         <http://ceur-ws.org/Vol-367/#ESWC2008_Poster_Schaffert>,
         <http://ceur-ws.org/Vol-367/#ESWC2008_Poster_Weller> ;
     ns6:issued "2008-07-02T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:presentedAt <http://ceur-ws.org/Vol-367/#event> ;
+    ns7:presentedAt <http://ceur-ws.org/Vol-367/#event> ;
     ns5:editor <http://ceur-ws.org/Vol-367/#YorkiSure> .
 

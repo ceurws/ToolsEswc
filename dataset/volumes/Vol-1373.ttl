@@ -1,182 +1,39 @@
-@prefix ns1: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns2: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns3: <http://xmlns.com/foaf/0.1/> .
-@prefix ns4: <http://www.w3.org/2002/07/owl#> .
-@prefix ns5: <http://purl.org/ontology/bibo/#> .
-@prefix ns6: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns1: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns2: <http://purl.org/dc/elements/1.1/> .
+@prefix ns3: <http://purl.org/ontology/bibo/#> .
+@prefix ns4: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns5: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns6: <http://www.w3.org/2002/07/owl#> .
 @prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns8: <http://xmlns.com/foaf/0.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1373/#AtsushiiMizuta> a ns3:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/AtsushiiMizuta> ;
-    ns3:made <http://ceur-ws.org/Vol-1373/#paper6> ;
-    ns3:name "Atsushi Mizuta" .
+<http://ceur-ws.org/Vol-1373/> a ns5:Proceedings ;
+    ns7:issued "2015-06-19T00:00:00+00:00"^^xsd:dateTime ;
+    ns3:presentedAt <http://ceur-ws.org/Vol-1373/#event> ;
+    ns4:editor <http://ceur-ws.org/Vol-1373/#AnnegretiK.iWagler>,
+        <http://ceur-ws.org/Vol-1373/#MonikaiHeiner> .
 
-<http://ceur-ws.org/Vol-1373/#ChristianiRohr> a ns3:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/ChristianiRohr> ;
-    ns3:made <http://ceur-ws.org/Vol-1373/#paper3> ;
-    ns3:name "Christian Rohr" .
+<http://ceur-ws.org/Vol-1373/#AnnegretiK.iWagler> a ns8:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/AnnegretiK.iWagler> ;
+    ns8:name "Annegret K. Wagler" .
 
-<http://ceur-ws.org/Vol-1373/#DanieleiBrigolin> a ns3:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/DanieleiBrigolin> ;
-    ns3:made <http://ceur-ws.org/Vol-1373/#paper2> ;
-    ns3:name "Daniele Brigolin" .
+<http://ceur-ws.org/Vol-1373/#MonikaiHeiner> a ns8:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/MonikaiHeiner> ;
+    ns8:name "Monika Heiner" .
 
-<http://ceur-ws.org/Vol-1373/#Diana-ElenaiGratie> a ns3:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/Diana-ElenaiGratie> ;
-    ns3:made <http://ceur-ws.org/Vol-1373/#paper5> ;
-    ns3:name "Diana-Elena Gratie" .
-
-<http://ceur-ws.org/Vol-1373/#HiroshiiMatsuno> a ns3:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/HiroshiiMatsuno> ;
-    ns3:made <http://ceur-ws.org/Vol-1373/#paper6> ;
-    ns3:name "Hiroshi Matsuno" .
-
-<http://ceur-ws.org/Vol-1373/#IoniPetre> a ns3:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/IoniPetre> ;
-    ns3:made <http://ceur-ws.org/Vol-1373/#paper5> ;
-    ns3:name "Ion Petre" .
-
-<http://ceur-ws.org/Vol-1373/#LuisiM.iTorres> a ns3:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/LuisiM.iTorres> ;
-    ns3:made <http://ceur-ws.org/Vol-1373/#paper1> ;
-    ns3:name "Luis M. Torres" .
-
-<http://ceur-ws.org/Vol-1373/#MartaiSimeoni> a ns3:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/MartaiSimeoni> ;
-    ns3:made <http://ceur-ws.org/Vol-1373/#paper2> ;
-    ns3:name "Marta Simeoni" .
-
-<http://ceur-ws.org/Vol-1373/#MartinaiBocci> a ns3:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/MartinaiBocci> ;
-    ns3:made <http://ceur-ws.org/Vol-1373/#paper2> ;
-    ns3:name "Martina Bocci" .
-
-<http://ceur-ws.org/Vol-1373/#MaryiAnniBl%C3%A4tke> a ns3:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/MaryiAnniBl%C3%A4tke> ;
-    ns3:made <http://ceur-ws.org/Vol-1373/#paper3> ;
-    ns3:name "Mary Ann Blätke" .
-
-<http://ceur-ws.org/Vol-1373/#MitsuruiNakata> a ns3:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/MitsuruiNakata> ;
-    ns3:made <http://ceur-ws.org/Vol-1373/#paper4> ;
-    ns3:name "Mitsuru Nakata" .
-
-<http://ceur-ws.org/Vol-1373/#MonikaiHeiner> a ns3:Person ;
-    ns1:affiliation "" ;
-    ns4:sameAs <http://ceur-ws.org/persons/MonikaiHeiner> ;
-    ns3:name "Monika Heiner" .
-
-<http://ceur-ws.org/Vol-1373/#NicolettaiCocco> a ns3:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/NicolettaiCocco> ;
-    ns3:made <http://ceur-ws.org/Vol-1373/#paper2> ;
-    ns3:name "Nicoletta Cocco" .
-
-<http://ceur-ws.org/Vol-1373/#PaoloiBaldan> a ns3:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/PaoloiBaldan> ;
-    ns3:made <http://ceur-ws.org/Vol-1373/#paper2> ;
-    ns3:name "Paolo Baldan" .
-
-<http://ceur-ws.org/Vol-1373/#ReniWu> a ns3:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/ReniWu> ;
-    ns3:made <http://ceur-ws.org/Vol-1373/#paper4> ;
-    ns3:name "Ren Wu" .
-
-<http://ceur-ws.org/Vol-1373/#event> a ns2:WorkshopEvent ;
-    ns2:hasLocation <http://dbpedia.org/resource/Euro_gold_and_silver_commemorative_coins> ;
-    ns2:hasPart <http://ceur-ws.org/Vol-1373/#part-BioPPN> ;
-    ns2:isSubEventOf <http://ceur-ws.org/Vol-1373/#conf> ;
-    ns8:beginsAtDatetime "2015-06-22T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:endsAtDatetime "2015-06-22T00:00:00+00:00"^^xsd:dateTime ;
+<http://ceur-ws.org/Vol-1373/#event> a ns5:WorkshopEvent ;
+    ns5:hasLocation <http://dbpedia.org/resource/Euro_gold_and_silver_commemorative_coins> ;
+    ns5:hasPart <http://ceur-ws.org/Vol-1373/#part-ws> ;
+    ns5:isSubEventOf <http://ceur-ws.org/Vol-1373/#conf> ;
+    ns1:beginsAtDatetime "2015-06-22T00:00:00+00:00"^^xsd:dateTime ;
+    ns1:endsAtDatetime "2015-06-22T00:00:00+00:00"^^xsd:dateTime ;
+    ns2:license "http://creativecommons.org/publicdomain/zero/1.0/" ;
     rdfs:seeAlso <http://ceur-ws.org/Vol-1159/#event>,
         <http://ceur-ws.org/Vol-724/#event>,
         <http://ceur-ws.org/Vol-852/#event>,
         <http://ceur-ws.org/Vol-988/#event> .
-
-<http://ceur-ws.org/Vol-1373/#AnnegretiK.iWagler> a ns3:Person ;
-    ns1:affiliation "" ;
-    ns4:sameAs <http://ceur-ws.org/persons/AnnegretiK.iWagler> ;
-    ns3:made <http://ceur-ws.org/Vol-1373/#paper1> ;
-    ns3:name "Annegret K. Wagler" .
-
-<http://ceur-ws.org/Vol-1373/#Qi-WeiiGe> a ns3:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/Qi-WeiiGe> ;
-    ns3:made <http://ceur-ws.org/Vol-1373/#paper4>,
-        <http://ceur-ws.org/Vol-1373/#paper6> ;
-    ns3:name "Qi-Wei Ge" .
-
-<http://ceur-ws.org/Vol-1373/#paper1> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1373/> ;
-    ns6:title "The dynamics of deterministic systems - A survey" ;
-    ns5:endPage 20 ;
-    ns5:numPages 20 ;
-    ns5:startPage 1 ;
-    ns1:author <http://ceur-ws.org/Vol-1373/#AnnegretiK.iWagler>,
-        <http://ceur-ws.org/Vol-1373/#LuisiM.iTorres> .
-
-<http://ceur-ws.org/Vol-1373/#paper3> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1373/> ;
-    ns6:title "A Colored Petri net approach for spatial Biomodel Engineering based on the modular model composition framework Biomodelkit" ;
-    ns5:endPage 54 ;
-    ns5:numPages 18 ;
-    ns5:startPage 37 ;
-    ns1:author <http://ceur-ws.org/Vol-1373/#ChristianiRohr>,
-        <http://ceur-ws.org/Vol-1373/#MaryiAnniBl%C3%A4tke> .
-
-<http://ceur-ws.org/Vol-1373/#paper5> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1373/> ;
-    ns6:title "Full structural model refinement as type refinement of colored Petri nets" ;
-    ns5:endPage 84 ;
-    ns5:numPages 15 ;
-    ns5:startPage 70 ;
-    ns1:author <http://ceur-ws.org/Vol-1373/#Diana-ElenaiGratie>,
-        <http://ceur-ws.org/Vol-1373/#IoniPetre> .
-
-<http://ceur-ws.org/Vol-1373/#paper4> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1373/> ;
-    ns6:title "On Modeling internal organs and meridian system based on traditional Chinese medicine" ;
-    ns5:endPage 69 ;
-    ns5:numPages 15 ;
-    ns5:startPage 55 ;
-    ns1:author <http://ceur-ws.org/Vol-1373/#MitsuruiNakata>,
-        <http://ceur-ws.org/Vol-1373/#Qi-WeiiGe>,
-        <http://ceur-ws.org/Vol-1373/#ReniWu> .
-
-<http://ceur-ws.org/Vol-1373/#paper6> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1373/> ;
-    ns6:title "Dependent shrink for Petri net models of signaling pathways" ;
-    ns5:endPage 99 ;
-    ns5:numPages 15 ;
-    ns5:startPage 85 ;
-    ns1:author <http://ceur-ws.org/Vol-1373/#AtsushiiMizuta>,
-        <http://ceur-ws.org/Vol-1373/#HiroshiiMatsuno>,
-        <http://ceur-ws.org/Vol-1373/#Qi-WeiiGe> .
-
-<http://ceur-ws.org/Vol-1373/> a ns2:Proceedings ;
-    ns2:hasPart <http://ceur-ws.org/Vol-1373/#paper1>,
-        <http://ceur-ws.org/Vol-1373/#paper2>,
-        <http://ceur-ws.org/Vol-1373/#paper3>,
-        <http://ceur-ws.org/Vol-1373/#paper4>,
-        <http://ceur-ws.org/Vol-1373/#paper5>,
-        <http://ceur-ws.org/Vol-1373/#paper6> ;
-    ns7:issued "2015-06-19T00:00:00+00:00"^^xsd:dateTime ;
-    ns5:presentedAt <http://ceur-ws.org/Vol-1373/#event> ;
-    ns1:editor <http://ceur-ws.org/Vol-1373/#AnnegretiK.iWagler>,
-        <http://ceur-ws.org/Vol-1373/#MonikaiHeiner> .
-
-<http://ceur-ws.org/Vol-1373/#paper2> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1373/> ;
-    ns6:title "Petri nets for modelling and analysing trophic networks" ;
-    ns5:endPage 36 ;
-    ns5:numPages 16 ;
-    ns5:startPage 21 ;
-    ns1:author <http://ceur-ws.org/Vol-1373/#DanieleiBrigolin>,
-        <http://ceur-ws.org/Vol-1373/#MartaiSimeoni>,
-        <http://ceur-ws.org/Vol-1373/#MartinaiBocci>,
-        <http://ceur-ws.org/Vol-1373/#NicolettaiCocco>,
-        <http://ceur-ws.org/Vol-1373/#PaoloiBaldan> .
 

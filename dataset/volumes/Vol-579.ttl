@@ -2,10 +2,11 @@
 @prefix ns2: <http://xmlns.com/foaf/0.1/> .
 @prefix ns3: <http://www.w3.org/2002/07/owl#> .
 @prefix ns4: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns5: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns6: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns7: <http://purl.org/ontology/bibo/#> .
-@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns5: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns6: <http://purl.org/ontology/bibo/#> .
+@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns8: <http://purl.org/dc/elements/1.1/> .
+@prefix ns9: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -68,11 +69,11 @@
 
 <http://ceur-ws.org/Vol-579/#event> a ns1:WorkshopEvent ;
     ns1:hasLocation <http://dbpedia.org/resource/France> ;
-    ns1:hasPart <http://ceur-ws.org/Vol-579/#part-TIAWS> ;
+    ns1:hasPart <http://ceur-ws.org/Vol-579/#part-TIA> ;
     ns1:isSubEventOf <http://ceur-ws.org/Vol-579/#conf> ;
-    ns5:beginsAtDatetime "2009-11-20T00:00:00+00:00"^^xsd:dateTime ;
-    ns5:endsAtDatetime "2009-11-20T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:license <http://choosealicense.com/licenses/no-license/> ;
+    ns7:beginsAtDatetime "2010-05-11T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:endsAtDatetime "2010-05-11T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:license "http://choosealicense.com/licenses/no-license/" ;
     rdfs:seeAlso <http://ceur-ws.org/Vol-578/#event> .
 
 <http://ceur-ws.org/Vol-579/#MoniqueiSlodzian> a ns2:Person ;
@@ -83,11 +84,11 @@
 
 <http://ceur-ws.org/Vol-579/#paper3> a ns1:Paper ;
     ns1:partOf <http://ceur-ws.org/Vol-579/> ;
-    ns6:title "Identifier des traces d'innovation : Proposition d'une approche outillée en corpus spécialisés" ;
+    ns5:title "Identifier des traces d'innovation : Proposition d'une approche outillée en corpus spécialisés" ;
     ns4:author <http://ceur-ws.org/Vol-579/#Aur%C3%A9lieiPicton> .
 
 <http://ceur-ws.org/Vol-579/#MathieuiValette> a ns2:Person ;
-    ns7:place <http://dbpedia.org/resource/France> ;
+    ns6:place <http://dbpedia.org/resource/France> ;
     ns4:affiliation "* CRIM, INALCO, Paris" ;
     ns3:sameAs <http://ceur-ws.org/persons/MathieuiValette> ;
     ns2:made <http://ceur-ws.org/Vol-579/#paper5>,
@@ -96,32 +97,32 @@
 
 <http://ceur-ws.org/Vol-579/#paper1> a ns1:Paper ;
     ns1:partOf <http://ceur-ws.org/Vol-579/> ;
-    ns6:title "Construction d'un corpus biomédical pour la recherche d'informations" ;
+    ns5:title "Construction d'un corpus biomédical pour la recherche d'informations" ;
     ns4:author <http://ceur-ws.org/Vol-579/#Marie-ChristineiJaulent>,
         <http://ceur-ws.org/Vol-579/#ValentinaiDragos> .
 
 <http://ceur-ws.org/Vol-579/#paper2> a ns1:Paper ;
     ns1:partOf <http://ceur-ws.org/Vol-579/> ;
-    ns6:title "Emergence de concepts et \"négociation lexicale\" entre acteurs : le champ de la finance islamique" ;
+    ns5:title "Emergence de concepts et \"négociation lexicale\" entre acteurs : le champ de la finance islamique" ;
     ns4:author <http://ceur-ws.org/Vol-579/#EvelyneiBourion>,
         <http://ceur-ws.org/Vol-579/#NadiaiMakouar> .
 
 <http://ceur-ws.org/Vol-579/#preface> a ns1:Paper ;
     ns1:partOf <http://ceur-ws.org/Vol-579/> ;
-    ns6:title "Introduction : Du thème au terme. Emergence et lexicalisation des connaissances" ;
+    ns5:title "Introduction : Du thème au terme. Emergence et lexicalisation des connaissances" ;
     ns4:author <http://ceur-ws.org/Vol-579/#MathieuiValette>,
         <http://ceur-ws.org/Vol-579/#MoniqueiSlodzian> .
 
 <http://ceur-ws.org/Vol-579/#paper4> a ns1:Paper ;
     ns1:partOf <http://ceur-ws.org/Vol-579/> ;
-    ns6:title "La malbouffe - Un cas de néologie et de glissement sémantique fulgurant" ;
+    ns5:title "La malbouffe - Un cas de néologie et de glissement sémantique fulgurant" ;
     ns4:author <http://ceur-ws.org/Vol-579/#ArmelleiBoussidan>,
         <http://ceur-ws.org/Vol-579/#SabineiPloux>,
         <http://ceur-ws.org/Vol-579/#SylvainiLupone> .
 
 <http://ceur-ws.org/Vol-579/#paper5> a ns1:Paper ;
     ns1:partOf <http://ceur-ws.org/Vol-579/> ;
-    ns6:title "Outreau en n sèmes, Outreau en cinq temps - Diachronie de la représentation sémique d'une unité lexicale" ;
+    ns5:title "Outreau en n sèmes, Outreau en cinq temps - Diachronie de la représentation sémique d'une unité lexicale" ;
     ns4:author <http://ceur-ws.org/Vol-579/#CoralieiReutenauer>,
         <http://ceur-ws.org/Vol-579/#EvelyneiJacquey>,
         <http://ceur-ws.org/Vol-579/#MathieuiValette>,
@@ -134,8 +135,8 @@
         <http://ceur-ws.org/Vol-579/#paper4>,
         <http://ceur-ws.org/Vol-579/#paper5>,
         <http://ceur-ws.org/Vol-579/#preface> ;
-    ns8:issued "2010-05-08T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:presentedAt <http://ceur-ws.org/Vol-579/#event> ;
+    ns9:issued "2010-05-08T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:presentedAt <http://ceur-ws.org/Vol-579/#event> ;
     ns4:editor <http://ceur-ws.org/Vol-579/#MathieuiValette>,
         <http://ceur-ws.org/Vol-579/#MoniqueiSlodzian> .
 

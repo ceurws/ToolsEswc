@@ -1,11 +1,12 @@
 @prefix ns1: <http://swrc.ontoware.org/ontology/#> .
 @prefix ns2: <http://www.w3.org/2002/07/owl#> .
-@prefix ns3: <http://purl.org/ontology/bibo/#> .
+@prefix ns3: <http://data.semanticweb.org/ns/swc/ontology/#> .
 @prefix ns4: <http://xmlns.com/foaf/0.1/> .
-@prefix ns5: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns5: <http://purl.org/ontology/bibo/#> .
 @prefix ns6: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns8: <http://purl.org/dc/elements/1.1/> .
+@prefix ns9: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -166,13 +167,13 @@
     ns4:made <http://ceur-ws.org/Vol-696/#paper1> ;
     ns4:name "Xiaoliang Fan" .
 
-<http://ceur-ws.org/Vol-696/#event> a ns5:WorkshopEvent ;
-    ns5:hasLocation <http://dbpedia.org/resource/Italy> ;
-    ns5:hasPart <http://ceur-ws.org/Vol-696/#part-HCP> ;
-    ns5:isSubEventOf <http://ceur-ws.org/Vol-696/#conf> ;
-    ns8:beginsAtDatetime "2011-02-10T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:endsAtDatetime "2011-02-11T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:license <http://choosealicense.com/licenses/no-license/> .
+<http://ceur-ws.org/Vol-696/#event> a ns3:WorkshopEvent ;
+    ns3:hasLocation <http://dbpedia.org/resource/Italy> ;
+    ns3:hasPart <http://ceur-ws.org/Vol-696/#part-CEUR-WS> ;
+    ns3:isSubEventOf <http://ceur-ws.org/Vol-696/#conf> ;
+    ns7:beginsAtDatetime "2011-02-04T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:endsAtDatetime "2011-02-04T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:license "http://choosealicense.com/licenses/no-license/" .
 
 <http://ceur-ws.org/Vol-696/#AlbertoiGreco> a ns4:Person ;
     ns1:affiliation "" ;
@@ -180,11 +181,11 @@
     ns4:made <http://ceur-ws.org/Vol-696/#paper9> ;
     ns4:name "Alberto Greco" .
 
-<http://ceur-ws.org/Vol-696/#MarcosiR.S.iBorges> a ns4:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/MarcosiR.S.iBorges> ;
+<http://ceur-ws.org/Vol-696/#MarcosiR.iS.iBorges> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/MarcosiR.iS.iBorges> ;
     ns4:made <http://ceur-ws.org/Vol-696/#paper4>,
         <http://ceur-ws.org/Vol-696/#paper8> ;
-    ns4:name "Marcos R.S. Borges" .
+    ns4:name "Marcos R. S. Borges" .
 
 <http://ceur-ws.org/Vol-696/#PatrickiBr%C3%A9zillon> a ns4:Person ;
     ns2:sameAs <http://ceur-ws.org/persons/PatrickiBr%C3%A9zillon> ;
@@ -192,110 +193,110 @@
         <http://ceur-ws.org/Vol-696/#paper3> ;
     ns4:name "Patrick Brézillon" .
 
-<http://ceur-ws.org/Vol-696/#paper6> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-696/> ;
+<http://ceur-ws.org/Vol-696/#paper6> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-696/> ;
     ns6:title "Human-centred design in aviation" ;
-    ns3:endPage 47 ;
-    ns3:numPages 5 ;
-    ns3:startPage 43 ;
+    ns5:endPage 47 ;
+    ns5:numPages 5 ;
+    ns5:startPage 43 ;
     ns1:author <http://ceur-ws.org/Vol-696/#AntonioiChialastri> .
 
-<http://ceur-ws.org/Vol-696/#paper10> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-696/> ;
+<http://ceur-ws.org/Vol-696/#paper10> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-696/> ;
     ns6:title "The effect of time pressure ad task completion on the occurrence of cognitive lockup" ;
-    ns3:endPage 74 ;
-    ns3:numPages 12 ;
-    ns3:startPage 63 ;
+    ns5:endPage 74 ;
+    ns5:numPages 12 ;
+    ns5:startPage 63 ;
     ns1:author <http://ceur-ws.org/Vol-696/#ErnestinaiJ.A.iSchreuder>,
         <http://ceur-ws.org/Vol-696/#TinaiMioch> .
 
-<http://ceur-ws.org/Vol-696/#paper11> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-696/> ;
+<http://ceur-ws.org/Vol-696/#paper11> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-696/> ;
     ns6:title "Representing concepts in artificial systems: a clash of requirements" ;
-    ns3:endPage 82 ;
-    ns3:numPages 8 ;
-    ns3:startPage 75 ;
+    ns5:endPage 82 ;
+    ns5:numPages 8 ;
+    ns5:startPage 75 ;
     ns1:author <http://ceur-ws.org/Vol-696/#AntonioiLieto>,
         <http://ceur-ws.org/Vol-696/#MarcelloiFrixione> .
 
-<http://ceur-ws.org/Vol-696/#paper3> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-696/> ;
+<http://ceur-ws.org/Vol-696/#paper3> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-696/> ;
     ns6:title "Improvement of database administration by procedure contextualization" ;
-    ns3:endPage 24 ;
-    ns3:numPages 8 ;
-    ns3:startPage 17 ;
+    ns5:endPage 24 ;
+    ns5:numPages 8 ;
+    ns5:startPage 17 ;
     ns1:author <http://ceur-ws.org/Vol-696/#HassaneiTahir>,
         <http://ceur-ws.org/Vol-696/#PatrickiBr%C3%A9zillon> .
 
-<http://ceur-ws.org/Vol-696/#paper2> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-696/> ;
+<http://ceur-ws.org/Vol-696/#paper2> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-696/> ;
     ns6:title "Integrated use of linear programming and multiple criteria methods in an engineering design process" ;
-    ns3:endPage 16 ;
-    ns3:numPages 7 ;
-    ns3:startPage 10 ;
+    ns5:endPage 16 ;
+    ns5:numPages 7 ;
+    ns5:startPage 10 ;
     ns1:author <http://ceur-ws.org/Vol-696/#ChiaraiNovello>,
         <http://ceur-ws.org/Vol-696/#ErsiliaiLiguigli>,
         <http://ceur-ws.org/Vol-696/#MariaiFrancaiNorese> .
 
-<http://ceur-ws.org/Vol-696/#paper4> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-696/> ;
+<http://ceur-ws.org/Vol-696/#paper4> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-696/> ;
     ns6:title "Human centered design for nuclear power plant control room modernization" ;
-    ns3:endPage 33 ;
-    ns3:numPages 9 ;
-    ns3:startPage 25 ;
+    ns5:endPage 33 ;
+    ns5:numPages 9 ;
+    ns5:startPage 25 ;
     ns1:author <http://ceur-ws.org/Vol-696/#JoseiO.iGomes>,
-        <http://ceur-ws.org/Vol-696/#MarcosiR.S.iBorges>,
+        <http://ceur-ws.org/Vol-696/#MarcosiR.iS.iBorges>,
         <http://ceur-ws.org/Vol-696/#PauloiV.R.iCarvalho> .
 
-<http://ceur-ws.org/Vol-696/#paper5> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-696/> ;
+<http://ceur-ws.org/Vol-696/#paper5> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-696/> ;
     ns6:title "The design of preventive safety systems: a cognitive engineering problem" ;
-    ns3:endPage 42 ;
-    ns3:numPages 9 ;
-    ns3:startPage 34 ;
+    ns5:endPage 42 ;
+    ns5:numPages 9 ;
+    ns5:startPage 34 ;
     ns1:author <http://ceur-ws.org/Vol-696/#CaterinaiCalefato>,
         <http://ceur-ws.org/Vol-696/#LucaiMinin>,
         <http://ceur-ws.org/Vol-696/#RobertoiMontanari> .
 
-<http://ceur-ws.org/Vol-696/#paper1> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-696/> ;
+<http://ceur-ws.org/Vol-696/#paper1> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-696/> ;
     ns6:title "Making context explicit towards decision support for a flexible scientific workflow system" ;
-    ns3:endPage 9 ;
-    ns3:numPages 7 ;
-    ns3:startPage 3 ;
+    ns5:endPage 9 ;
+    ns5:numPages 7 ;
+    ns5:startPage 3 ;
     ns1:author <http://ceur-ws.org/Vol-696/#LianiLi>,
         <http://ceur-ws.org/Vol-696/#PatrickiBr%C3%A9zillon>,
         <http://ceur-ws.org/Vol-696/#RuishengiZhang>,
         <http://ceur-ws.org/Vol-696/#XiaoliangiFan> .
 
-<http://ceur-ws.org/Vol-696/#paper7> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-696/> ;
+<http://ceur-ws.org/Vol-696/#paper7> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-696/> ;
     ns6:title "Resilience as individual adaptation: preliminary analysis of a hospital dispensary" ;
-    ns3:endPage 51 ;
-    ns3:numPages 4 ;
-    ns3:startPage 48 ;
+    ns5:endPage 51 ;
+    ns5:numPages 4 ;
+    ns5:startPage 48 ;
     ns1:author <http://ceur-ws.org/Vol-696/#CarloiValbonesi>,
         <http://ceur-ws.org/Vol-696/#CatherineiIngram>,
         <http://ceur-ws.org/Vol-696/#Mark-AlexanderiSujan>,
         <http://ceur-ws.org/Vol-696/#SimoneiPozzi> .
 
-<http://ceur-ws.org/Vol-696/#paper8> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-696/> ;
+<http://ceur-ws.org/Vol-696/#paper8> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-696/> ;
     ns6:title "A collaborative approach for supporting interaction among hearing impaired and listeners" ;
-    ns3:endPage 57 ;
-    ns3:numPages 6 ;
-    ns3:startPage 52 ;
+    ns5:endPage 57 ;
+    ns5:numPages 6 ;
+    ns5:startPage 52 ;
     ns1:author <http://ceur-ws.org/Vol-696/#AdrianaiVivacqua>,
         <http://ceur-ws.org/Vol-696/#LucianeiC.iJ.ideiDeus>,
-        <http://ceur-ws.org/Vol-696/#MarcosiR.S.iBorges>,
+        <http://ceur-ws.org/Vol-696/#MarcosiR.iS.iBorges>,
         <http://ceur-ws.org/Vol-696/#SamueliO.iApolonio> .
 
-<http://ceur-ws.org/Vol-696/#paper9> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-696/> ;
+<http://ceur-ws.org/Vol-696/#paper9> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-696/> ;
     ns6:title "Technological and cognitive roadmaps for ambient assisted living" ;
-    ns3:endPage 62 ;
-    ns3:numPages 5 ;
-    ns3:startPage 58 ;
+    ns5:endPage 62 ;
+    ns5:numPages 5 ;
+    ns5:startPage 58 ;
     ns1:author <http://ceur-ws.org/Vol-696/#AlbertoiGreco>,
         <http://ceur-ws.org/Vol-696/#FilippoiCavallo>,
         <http://ceur-ws.org/Vol-696/#GiuseppeiAnerdi>,
@@ -303,8 +304,8 @@
         <http://ceur-ws.org/Vol-696/#MichelaiAquilano>,
         <http://ceur-ws.org/Vol-696/#PaoloiDario> .
 
-<http://ceur-ws.org/Vol-696/> a ns5:Proceedings ;
-    ns5:hasPart <http://ceur-ws.org/Vol-696/#paper1>,
+<http://ceur-ws.org/Vol-696/> a ns3:Proceedings ;
+    ns3:hasPart <http://ceur-ws.org/Vol-696/#paper1>,
         <http://ceur-ws.org/Vol-696/#paper10>,
         <http://ceur-ws.org/Vol-696/#paper11>,
         <http://ceur-ws.org/Vol-696/#paper2>,
@@ -315,8 +316,8 @@
         <http://ceur-ws.org/Vol-696/#paper7>,
         <http://ceur-ws.org/Vol-696/#paper8>,
         <http://ceur-ws.org/Vol-696/#paper9> ;
-    ns7:issued "2011-02-04T00:00:00+00:00"^^xsd:dateTime ;
-    ns3:presentedAt <http://ceur-ws.org/Vol-696/#event> ;
+    ns9:issued "2011-02-04T00:00:00+00:00"^^xsd:dateTime ;
+    ns5:presentedAt <http://ceur-ws.org/Vol-696/#event> ;
     ns1:editor <http://ceur-ws.org/Vol-696/#AlbertoiGreco>,
         <http://ceur-ws.org/Vol-696/#CarloiPenco>,
         <http://ceur-ws.org/Vol-696/#ElenaiCarrea> .

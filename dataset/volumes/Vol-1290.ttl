@@ -1,248 +1,45 @@
 @prefix ns1: <http://swrc.ontoware.org/ontology/#> .
 @prefix ns2: <http://www.w3.org/2002/07/owl#> .
-@prefix ns3: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns4: <http://xmlns.com/foaf/0.1/> .
-@prefix ns5: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns6: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns3: <http://xmlns.com/foaf/0.1/> .
+@prefix ns4: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns5: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns6: <http://data.semanticweb.org/ns/swc/ontology/#> .
 @prefix ns7: <http://purl.org/ontology/bibo/#> .
-@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns8: <http://purl.org/dc/elements/1.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1290/#Andr%C3%A1siV%C3%B6r%C3%B6s> a ns4:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/Andr%C3%A1siV%C3%B6r%C3%B6s> ;
-    ns4:made <http://ceur-ws.org/Vol-1290/#paper3> ;
-    ns4:name "András Vörös" .
-
-<http://ceur-ws.org/Vol-1290/#BenedekiHorv%C3%A1th> a ns4:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/BenedekiHorv%C3%A1th> ;
-    ns4:made <http://ceur-ws.org/Vol-1290/#paper3> ;
-    ns4:name "Benedek Horváth" .
-
-<http://ceur-ws.org/Vol-1290/#BernhardiRumpe> a ns4:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/BernhardiRumpe> ;
-    ns4:made <http://ceur-ws.org/Vol-1290/#paper2> ;
-    ns4:name "Bernhard Rumpe" .
-
-<http://ceur-ws.org/Vol-1290/#BernhardiSch%C3%A4tz> a ns4:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/BernhardiSch%C3%A4tz> ;
-    ns4:made <http://ceur-ws.org/Vol-1290/#keynote> ;
-    ns4:name "Bernhard Schätz" .
-
-<http://ceur-ws.org/Vol-1290/#CarsteniKolassa> a ns4:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/CarsteniKolassa> ;
-    ns4:made <http://ceur-ws.org/Vol-1290/#paper2> ;
-    ns4:name "Carsten Kolassa" .
-
-<http://ceur-ws.org/Vol-1290/#D%C3%A1nieliVarr%C3%B3> a ns4:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/D%C3%A1nieliVarr%C3%B3> ;
-    ns4:made <http://ceur-ws.org/Vol-1290/#paper3> ;
-    ns4:name "Dániel Varró" .
-
-<http://ceur-ws.org/Vol-1290/#DimitrisiKolovos> a ns4:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/DimitrisiKolovos> ;
-    ns4:made <http://ceur-ws.org/Vol-1290/#paper5> ;
-    ns4:name "Dimitris Kolovos" .
-
-<http://ceur-ws.org/Vol-1290/#FrankiHilken> a ns4:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/FrankiHilken> ;
-    ns4:made <http://ceur-ws.org/Vol-1290/#paper4> ;
-    ns4:name "Frank Hilken" .
-
-<http://ceur-ws.org/Vol-1290/#HugoiBruneli%C3%A8re> a ns4:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/HugoiBruneli%C3%A8re> ;
-    ns4:made <http://ceur-ws.org/Vol-1290/#paper1> ;
-    ns4:name "Hugo Brunelière" .
-
-<http://ceur-ws.org/Vol-1290/#JamesiWilliams> a ns4:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/JamesiWilliams> ;
-    ns4:made <http://ceur-ws.org/Vol-1290/#paper5> ;
-    ns4:name "James Williams" .
-
-<http://ceur-ws.org/Vol-1290/#JordiiCabot> a ns4:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/JordiiCabot> ;
-    ns4:made <http://ceur-ws.org/Vol-1290/#paper1> ;
-    ns4:name "Jordi Cabot" .
-
-<http://ceur-ws.org/Vol-1290/#JuergeniDingel> a ns4:Person ;
-    ns1:affiliation "" ;
-    ns2:sameAs <http://ceur-ws.org/persons/JuergeniDingel> ;
-    ns4:name "Juergen Dingel" .
-
-<http://ceur-ws.org/Vol-1290/#LarsiHamann> a ns4:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/LarsiHamann> ;
-    ns4:made <http://ceur-ws.org/Vol-1290/#paper4> ;
-    ns4:name "Lars Hamann" .
-
-<http://ceur-ws.org/Vol-1290/#MartiniGogolla> a ns4:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/MartiniGogolla> ;
-    ns4:made <http://ceur-ws.org/Vol-1290/#paper4> ;
-    ns4:name "Martin Gogolla" .
-
-<http://ceur-ws.org/Vol-1290/#NicholasiMatragkas> a ns4:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/NicholasiMatragkas> ;
-    ns4:made <http://ceur-ws.org/Vol-1290/#paper5> ;
-    ns4:name "Nicholas Matragkas" .
-
-<http://ceur-ws.org/Vol-1290/#Oszk%C3%A1riSemer%C3%A1th> a ns4:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/Oszk%C3%A1riSemer%C3%A1th> ;
-    ns4:made <http://ceur-ws.org/Vol-1290/#paper3> ;
-    ns4:name "Oszkár Semeráth" .
-
-<http://ceur-ws.org/Vol-1290/#Raimund-AndreasiKonnerth> a ns4:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/Raimund-AndreasiKonnerth> ;
-    ns4:made <http://ceur-ws.org/Vol-1290/#paper3> ;
-    ns4:name "Raimund-Andreas Konnerth" .
-
-<http://ceur-ws.org/Vol-1290/#RichardiPaige> a ns4:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/RichardiPaige> ;
-    ns4:made <http://ceur-ws.org/Vol-1290/#paper5> ;
-    ns4:name "Richard Paige" .
-
-<http://ceur-ws.org/Vol-1290/#SebastianiVoss> a ns4:Person ;
-    ns1:affiliation "" ;
-    ns2:sameAs <http://ceur-ws.org/persons/SebastianiVoss> ;
-    ns4:name "Sebastian Voss" .
-
-<http://ceur-ws.org/Vol-1290/#SebastieniGerard> a ns4:Person ;
-    ns1:affiliation "" ;
-    ns2:sameAs <http://ceur-ws.org/persons/SebastieniGerard> ;
-    ns4:name "Sebastien Gerard" .
-
-<http://ceur-ws.org/Vol-1290/#SofiaiAnnaniadou> a ns4:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/SofiaiAnnaniadou> ;
-    ns4:made <http://ceur-ws.org/Vol-1290/#paper5> ;
-    ns4:name "Sofia Annaniadou" .
-
-<http://ceur-ws.org/Vol-1290/#YannisiKorkontzelos> a ns4:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/YannisiKorkontzelos> ;
-    ns4:made <http://ceur-ws.org/Vol-1290/#paper5> ;
-    ns4:name "Yannis Korkontzelos" .
-
-<http://ceur-ws.org/Vol-1290/#Zolt%C3%A1niMicskei> a ns4:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/Zolt%C3%A1niMicskei> ;
-    ns4:made <http://ceur-ws.org/Vol-1290/#paper3> ;
-    ns4:name "Zoltán Micskei" .
-
-<http://ceur-ws.org/Vol-1290/#event> a ns3:WorkshopEvent ;
-    ns3:hasLocation <http://dbpedia.org/resource/Spain> ;
-    ns3:hasPart <http://ceur-ws.org/Vol-1290/#part-OSS4MDE> ;
-    ns3:isSubEventOf <http://ceur-ws.org/Vol-1290/#conf> ;
-    ns6:beginsAtDatetime "2014-09-28T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:endsAtDatetime "2014-09-28T00:00:00+00:00"^^xsd:dateTime .
-
-<http%3A//ceur-ws.org/Vol-1290/%23InvitedPresentations%3A> a ns3:SessionEvent ;
-    ns3:partOf <http://ceur-ws.org/Vol-1290/> ;
-    ns5:title "Invited Presentations:" .
-
-<http%3A//ceur-ws.org/Vol-1290/%23Keynote> a ns3:SessionEvent ;
-    ns3:partOf <http://ceur-ws.org/Vol-1290/> ;
-    ns5:title "Keynote" .
-
-<http://ceur-ws.org/Vol-1290/#FrancisiBordelau> a ns4:Person ;
-    ns1:affiliation "" ;
-    ns2:sameAs <http://ceur-ws.org/persons/FrancisiBordelau> ;
-    ns4:made <http://ceur-ws.org/Vol-1290/#invitedTalk1> ;
-    ns4:name "Francis Bordelau" .
-
-<http://ceur-ws.org/Vol-1290/#invitedTalk1> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1290/> ;
-    ns5:title "Model-Based Engineering: A New Era Based on Papyrus and Open Source Tooling" ;
-    ns7:endPage 8 ;
-    ns7:numPages 7 ;
-    ns7:section <http%3A//ceur-ws.org/Vol-1290/%23InvitedPresentations%3A> ;
-    ns7:startPage 2 ;
-    ns1:author <http://ceur-ws.org/Vol-1290/#FrancisiBordelau> .
-
-<http://ceur-ws.org/Vol-1290/#keynote> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1290/> ;
-    ns5:title "Open Source: Innovation Platforms for MBSE?" ;
-    ns7:endPage 1 ;
-    ns7:numPages 1 ;
-    ns7:section <http%3A//ceur-ws.org/Vol-1290/%23Keynote> ;
-    ns7:startPage 1 ;
-    ns1:author <http://ceur-ws.org/Vol-1290/#BernhardiSch%C3%A4tz> .
-
-<http://ceur-ws.org/Vol-1290/#paper1> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1290/> ;
-    ns5:title "On Developing Open Source MDE Tools: Our Eclipse Stories and Lessons Learned" ;
-    ns7:endPage 19 ;
-    ns7:numPages 11 ;
-    ns7:section <http%3A//ceur-ws.org/Vol-1290/%23RegularPapers%3A> ;
-    ns7:startPage 9 ;
-    ns1:author <http://ceur-ws.org/Vol-1290/#HugoiBruneli%C3%A8re>,
-        <http://ceur-ws.org/Vol-1290/#JordiiCabot> .
-
-<http://ceur-ws.org/Vol-1290/#paper2> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1290/> ;
-    ns5:title "The Influence of the Generator's License on Generated Artifacts" ;
-    ns7:endPage 30 ;
-    ns7:numPages 11 ;
-    ns7:section <http%3A//ceur-ws.org/Vol-1290/%23RegularPapers%3A> ;
-    ns7:startPage 20 ;
-    ns1:author <http://ceur-ws.org/Vol-1290/#BernhardiRumpe>,
-        <http://ceur-ws.org/Vol-1290/#CarsteniKolassa> .
-
-<http://ceur-ws.org/Vol-1290/#paper4> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1290/> ;
-    ns5:title "Collected Experience and Thoughts on Long Term Development of an Open Source MDE Tool" ;
-    ns7:endPage 52 ;
-    ns7:numPages 11 ;
-    ns7:section <http%3A//ceur-ws.org/Vol-1290/%23RegularPapers%3A> ;
-    ns7:startPage 42 ;
-    ns1:author <http://ceur-ws.org/Vol-1290/#FrankiHilken>,
-        <http://ceur-ws.org/Vol-1290/#LarsiHamann>,
-        <http://ceur-ws.org/Vol-1290/#MartiniGogolla> .
-
-<http%3A//ceur-ws.org/Vol-1290/%23RegularPapers%3A> a ns3:SessionEvent ;
-    ns3:partOf <http://ceur-ws.org/Vol-1290/> ;
-    ns5:title "Regular Papers:" .
-
-<http://ceur-ws.org/Vol-1290/#paper3> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1290/> ;
-    ns5:title "On Open Source Tools for Behavioral Modeling and Analysis with fUML and Alf" ;
-    ns7:endPage 41 ;
-    ns7:numPages 11 ;
-    ns7:section <http%3A//ceur-ws.org/Vol-1290/%23RegularPapers%3A> ;
-    ns7:startPage 31 ;
-    ns1:author <http://ceur-ws.org/Vol-1290/#Andr%C3%A1siV%C3%B6r%C3%B6s>,
-        <http://ceur-ws.org/Vol-1290/#BenedekiHorv%C3%A1th>,
-        <http://ceur-ws.org/Vol-1290/#D%C3%A1nieliVarr%C3%B3>,
-        <http://ceur-ws.org/Vol-1290/#Oszk%C3%A1riSemer%C3%A1th>,
-        <http://ceur-ws.org/Vol-1290/#Raimund-AndreasiKonnerth>,
-        <http://ceur-ws.org/Vol-1290/#Zolt%C3%A1niMicskei> .
-
-<http://ceur-ws.org/Vol-1290/#paper5> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1290/> ;
-    ns5:title "Software Analytics for MDE Communities" ;
-    ns7:endPage 63 ;
-    ns7:numPages 11 ;
-    ns7:section <http%3A//ceur-ws.org/Vol-1290/%23RegularPapers%3A> ;
-    ns7:startPage 53 ;
-    ns1:author <http://ceur-ws.org/Vol-1290/#DimitrisiKolovos>,
-        <http://ceur-ws.org/Vol-1290/#JamesiWilliams>,
-        <http://ceur-ws.org/Vol-1290/#NicholasiMatragkas>,
-        <http://ceur-ws.org/Vol-1290/#RichardiPaige>,
-        <http://ceur-ws.org/Vol-1290/#SofiaiAnnaniadou>,
-        <http://ceur-ws.org/Vol-1290/#YannisiKorkontzelos> .
-
-<http://ceur-ws.org/Vol-1290/> a ns3:Proceedings ;
-    ns3:hasPart <http://ceur-ws.org/Vol-1290/#invitedTalk1>,
-        <http://ceur-ws.org/Vol-1290/#keynote>,
-        <http://ceur-ws.org/Vol-1290/#paper1>,
-        <http://ceur-ws.org/Vol-1290/#paper2>,
-        <http://ceur-ws.org/Vol-1290/#paper3>,
-        <http://ceur-ws.org/Vol-1290/#paper4>,
-        <http://ceur-ws.org/Vol-1290/#paper5> ;
-    ns3:hasSession <http%3A//ceur-ws.org/Vol-1290/%23InvitedPresentations%3A>,
-        <http%3A//ceur-ws.org/Vol-1290/%23Keynote>,
-        <http%3A//ceur-ws.org/Vol-1290/%23RegularPapers%3A> ;
-    ns8:issued "2014-11-11T00:00:00+00:00"^^xsd:dateTime ;
+<http://ceur-ws.org/Vol-1290/> a ns6:Proceedings ;
+    ns4:issued "2014-11-11T00:00:00+00:00"^^xsd:dateTime ;
     ns7:presentedAt <http://ceur-ws.org/Vol-1290/#event> ;
     ns1:editor <http://ceur-ws.org/Vol-1290/#FrancisiBordelau>,
         <http://ceur-ws.org/Vol-1290/#JuergeniDingel>,
         <http://ceur-ws.org/Vol-1290/#SebastianiVoss>,
         <http://ceur-ws.org/Vol-1290/#SebastieniGerard> .
+
+<http://ceur-ws.org/Vol-1290/#FrancisiBordelau> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/FrancisiBordelau> ;
+    ns3:name "Francis Bordelau" .
+
+<http://ceur-ws.org/Vol-1290/#JuergeniDingel> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/JuergeniDingel> ;
+    ns3:name "Juergen Dingel" .
+
+<http://ceur-ws.org/Vol-1290/#SebastianiVoss> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/SebastianiVoss> ;
+    ns3:name "Sebastian Voss" .
+
+<http://ceur-ws.org/Vol-1290/#SebastieniGerard> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/SebastieniGerard> ;
+    ns3:name "Sebastien Gerard" .
+
+<http://ceur-ws.org/Vol-1290/#event> a ns6:WorkshopEvent ;
+    ns6:hasLocation <http://dbpedia.org/resource/Spain> ;
+    ns6:hasPart <http://ceur-ws.org/Vol-1290/#part-ws> ;
+    ns6:isSubEventOf <http://ceur-ws.org/Vol-1290/#conf> ;
+    ns5:beginsAtDatetime "2014-09-28T00:00:00+00:00"^^xsd:dateTime ;
+    ns5:endsAtDatetime "2014-09-28T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:license "http://creativecommons.org/publicdomain/zero/1.0/" .
 

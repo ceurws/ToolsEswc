@@ -1,11 +1,12 @@
-@prefix ns1: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns1: <http://swrc.ontoware.org/ontology/#> .
 @prefix ns2: <http://xmlns.com/foaf/0.1/> .
 @prefix ns3: <http://www.w3.org/2002/07/owl#> .
-@prefix ns4: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns4: <http://data.semanticweb.org/ns/swc/ontology/#> .
 @prefix ns5: <http://purl.org/dc/elements/1.1/#> .
 @prefix ns6: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns8: <http://purl.org/ontology/bibo/#> .
+@prefix ns8: <http://purl.org/dc/elements/1.1/> .
+@prefix ns9: <http://purl.org/ontology/bibo/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -171,58 +172,58 @@
     ns2:made <http://ceur-ws.org/Vol-65/#13lautenbach> ;
     ns2:name "Stephan Philippi" .
 
-<http://ceur-ws.org/Vol-65/#event> a ns1:WorkshopEvent ;
-    ns1:hasLocation <http://dbpedia.org/resource/Germany> ;
-    ns1:hasPart <http://ceur-ws.org/Vol-65/#part-PROMISE> ;
-    ns1:isSubEventOf <http://ceur-ws.org/Vol-65/#conf> ;
-    ns7:beginsAtDatetime "2002-10-09T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:endsAtDatetime "2002-10-11T00:00:00+00:00"^^xsd:dateTime ;
-    ns5:license <http://choosealicense.com/licenses/no-license/> .
+<http://ceur-ws.org/Vol-65/#event> a ns4:WorkshopEvent ;
+    ns4:hasLocation <http://dbpedia.org/resource/Germany> ;
+    ns4:hasPart <http://ceur-ws.org/Vol-65/#part-EMISA> ;
+    ns4:isSubEventOf <http://ceur-ws.org/Vol-65/#conf> ;
+    ns7:beginsAtDatetime "2002-11-20T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:endsAtDatetime "2002-11-20T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:license "http://choosealicense.com/licenses/no-license/" .
 
-<http://ceur-ws.org/Vol-65/#01kindler> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-65/> ;
+<http://ceur-ws.org/Vol-65/#01kindler> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-65/> ;
     ns5:title "DAWN for component based systems - just a different perspective" ;
-    ns4:author <http://ceur-ws.org/Vol-65/#EkkartiKindler> .
+    ns1:author <http://ceur-ws.org/Vol-65/#EkkartiKindler> .
 
-<http://ceur-ws.org/Vol-65/#02stehno> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-65/> ;
+<http://ceur-ws.org/Vol-65/#02stehno> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-65/> ;
     ns5:title "Petri net markup language: implementation and application" ;
-    ns4:author <http://ceur-ws.org/Vol-65/#ChristianiStehno> .
+    ns1:author <http://ceur-ws.org/Vol-65/#ChristianiStehno> .
 
-<http://ceur-ws.org/Vol-65/#031Tutorial_Nuettgens> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-65/> ;
+<http://ceur-ws.org/Vol-65/#031Tutorial_Nuettgens> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-65/> ;
     ns5:title "Tutorium: Evaluierung von GPM-Modellierungswerkzeugen" ;
-    ns4:author <http://ceur-ws.org/Vol-65/#MarkusiN%EF%BF%BDttgens> .
+    ns1:author <http://ceur-ws.org/Vol-65/#MarkusiN%EF%BF%BDttgens> .
 
-<http://ceur-ws.org/Vol-65/#03kreische> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-65/> ;
+<http://ceur-ws.org/Vol-65/#03kreische> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-65/> ;
     ns5:title "Modellierung von Gesch�ftsprozessen in der Unified Modeling Language und ihre Transformation in Petrinetze" ;
-    ns4:author <http://ceur-ws.org/Vol-65/#DavidiKreische> .
+    ns1:author <http://ceur-ws.org/Vol-65/#DavidiKreische> .
 
-<http://ceur-ws.org/Vol-65/#061Tutorial_Desel> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-65/> ;
+<http://ceur-ws.org/Vol-65/#061Tutorial_Desel> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-65/> ;
     ns5:title "Tutorium: Validierung und Verifikation von Prozessmodellen" ;
-    ns4:author <http://ceur-ws.org/Vol-65/#J%EF%BF%BDrgiDesel> .
+    ns1:author <http://ceur-ws.org/Vol-65/#J%C3%B6rgiDesel> .
 
-<http://ceur-ws.org/Vol-65/#08schmidt> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-65/> ;
+<http://ceur-ws.org/Vol-65/#08schmidt> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-65/> ;
     ns5:title "Distributed verification with LoLA" ;
-    ns4:author <http://ceur-ws.org/Vol-65/#KarsteniSchmidt> .
+    ns1:author <http://ceur-ws.org/Vol-65/#KarsteniSchmidt> .
 
-<http://ceur-ws.org/Vol-65/#10veselov> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-65/> ;
+<http://ceur-ws.org/Vol-65/#10veselov> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-65/> ;
     ns5:title "D-extended Petri nets for simulating of digital devices" ;
-    ns4:author <http://ceur-ws.org/Vol-65/#AlexeiiArkadievichiVeselov> .
+    ns1:author <http://ceur-ws.org/Vol-65/#AlexeiiArkadievichiVeselov> .
 
-<http://ceur-ws.org/Vol-65/#11robak> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-65/> ;
+<http://ceur-ws.org/Vol-65/#11robak> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-65/> ;
     ns5:title "Developing software families" ;
-    ns4:author <http://ceur-ws.org/Vol-65/#SilvaiRobak> .
+    ns1:author <http://ceur-ws.org/Vol-65/#SilvaiRobak> .
 
-<http://ceur-ws.org/Vol-65/#121Tutorial_Vossen> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-65/> ;
+<http://ceur-ws.org/Vol-65/#121Tutorial_Vossen> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-65/> ;
     ns5:title "Tutorium: Web basiertes Lernen: Stand, Konzepte und Entwicklungen" ;
-    ns4:author <http://ceur-ws.org/Vol-65/#GottfriediVossen> .
+    ns1:author <http://ceur-ws.org/Vol-65/#GottfriediVossen> .
 
 <http://ceur-ws.org/Vol-65/#MarkusiN%EF%BF%BDttgens> a ns2:Person ;
     ns3:sameAs <http://ceur-ws.org/persons/MarkusiN%EF%BF%BDttgens> ;
@@ -230,96 +231,96 @@
         <http://ceur-ws.org/Vol-65/#06nuettgens> ;
     ns2:name "Markus N�ttgens" .
 
-<http://ceur-ws.org/Vol-65/#00PromiseVorwort> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-65/> ;
+<http://ceur-ws.org/Vol-65/#00PromiseVorwort> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-65/> ;
     ns5:title "Vorwort" ;
-    ns4:author <http://ceur-ws.org/Vol-65/#J%EF%BF%BDrgiDesel>,
+    ns1:author <http://ceur-ws.org/Vol-65/#J%C3%B6rgiDesel>,
         <http://ceur-ws.org/Vol-65/#MathiasiWeske> .
 
-<http://ceur-ws.org/Vol-65/#04lenz> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-65/> ;
+<http://ceur-ws.org/Vol-65/#04lenz> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-65/> ;
     ns5:title "Integrierte Dokumenten- und Ablaufmodellierung von E-Business-Prozessen" ;
-    ns4:author <http://ceur-ws.org/Vol-65/#AndreasiOberweis>,
+    ns1:author <http://ceur-ws.org/Vol-65/#AndreasiOberweis>,
         <http://ceur-ws.org/Vol-65/#KirsteniLenz> .
 
-<http://ceur-ws.org/Vol-65/#05schuschel> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-65/> ;
+<http://ceur-ws.org/Vol-65/#05schuschel> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-65/> ;
     ns5:title "Fallbehandlung: Ein Neuer Ansatz zur Unterst�tzung Prozessorientierter Informationssysteme" ;
-    ns4:author <http://ceur-ws.org/Vol-65/#HilmariSchuschel>,
+    ns1:author <http://ceur-ws.org/Vol-65/#HilmariSchuschel>,
         <http://ceur-ws.org/Vol-65/#MathiasiWeske> .
 
-<http://ceur-ws.org/Vol-65/#06nuettgens> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-65/> ;
+<http://ceur-ws.org/Vol-65/#06nuettgens> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-65/> ;
     ns5:title "Syntax und Semantik Ereignisgesteuerter Prozessketten (EPK)" ;
-    ns4:author <http://ceur-ws.org/Vol-65/#FrankiJ.iRump>,
+    ns1:author <http://ceur-ws.org/Vol-65/#FrankiJ.iRump>,
         <http://ceur-ws.org/Vol-65/#MarkusiN%EF%BF%BDttgens> .
 
-<http://ceur-ws.org/Vol-65/#07klischewski> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-65/> ;
+<http://ceur-ws.org/Vol-65/#07klischewski> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-65/> ;
     ns5:title "Vertragsbasiertes Prozessmanagement als Leitbild f�r die organisations�bergreifende Workflowunterst�tzung" ;
-    ns4:author <http://ceur-ws.org/Vol-65/#IngridiWetzel>,
+    ns1:author <http://ceur-ws.org/Vol-65/#IngridiWetzel>,
         <http://ceur-ws.org/Vol-65/#RalfiKlischewski> .
 
-<http://ceur-ws.org/Vol-65/#15zerguini> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-65/> ;
+<http://ceur-ws.org/Vol-65/#15zerguini> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-65/> ;
     ns5:title "A new reduction method for the analysis of large workflow models" ;
-    ns4:author <http://ceur-ws.org/Vol-65/#KeesiMaxivaniHee>,
+    ns1:author <http://ceur-ws.org/Vol-65/#KeesiMaxivaniHee>,
         <http://ceur-ws.org/Vol-65/#LoucifiZerguini> .
 
-<http://ceur-ws.org/Vol-65/#J%EF%BF%BDrgiDesel> a ns2:Person ;
-    ns8:place <http://dbpedia.org/resource/Germany> ;
-    ns4:affiliation "Katholische Universit�t Eichst�tt-Ingolstadt, 85071 Eichst�tt" ;
-    ns3:sameAs <http://ceur-ws.org/persons/J%EF%BF%BDrgiDesel> ;
+<http://ceur-ws.org/Vol-65/#J%C3%B6rgiDesel> a ns2:Person ;
+    ns9:place <http://dbpedia.org/resource/Germany> ;
+    ns1:affiliation "Katholische Universit�t Eichst�tt-Ingolstadt, 85071 Eichst�tt" ;
+    ns3:sameAs <http://ceur-ws.org/persons/J%C3%B6rgiDesel> ;
     ns2:made <http://ceur-ws.org/Vol-65/#00PromiseVorwort>,
         <http://ceur-ws.org/Vol-65/#061Tutorial_Desel> ;
-    ns2:name "J�rg Desel" .
+    ns2:name "Jörg Desel" .
 
 <http://ceur-ws.org/Vol-65/#MathiasiWeske> a ns2:Person ;
-    ns4:affiliation "" ;
+    ns1:affiliation "" ;
     ns3:sameAs <http://ceur-ws.org/persons/MathiasiWeske> ;
     ns2:made <http://ceur-ws.org/Vol-65/#00PromiseVorwort>,
         <http://ceur-ws.org/Vol-65/#05schuschel> ;
     ns2:name "Mathias Weske" .
 
-<http://ceur-ws.org/Vol-65/#101Maucher> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-65/> ;
+<http://ceur-ws.org/Vol-65/#101Maucher> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-65/> ;
     ns5:title "Bericht EMISA-AG: Modellierung in Soziotechnischen Systemen" ;
-    ns4:author <http://ceur-ws.org/Vol-65/#ChristianeiRudlof>,
+    ns1:author <http://ceur-ws.org/Vol-65/#ChristianeiRudlof>,
         <http://ceur-ws.org/Vol-65/#Hansj%EF%BF%BDrgeniPaul>,
         <http://ceur-ws.org/Vol-65/#IreneiMaucher> .
 
-<http://ceur-ws.org/Vol-65/#13lautenbach> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-65/> ;
+<http://ceur-ws.org/Vol-65/#13lautenbach> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-65/> ;
     ns5:title "Modellierung, Simulation und Analyse mit dem Petri-Netz-Tool POSEIDON" ;
-    ns4:author <http://ceur-ws.org/Vol-65/#J%EF%BF%BDrgiM%EF%BF%BDller>,
+    ns1:author <http://ceur-ws.org/Vol-65/#J%EF%BF%BDrgiM%EF%BF%BDller>,
         <http://ceur-ws.org/Vol-65/#KurtiLautenbach>,
         <http://ceur-ws.org/Vol-65/#StephaniPhilippi> .
 
-<http://ceur-ws.org/Vol-65/#14jablonski> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-65/> ;
+<http://ceur-ws.org/Vol-65/#14jablonski> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-65/> ;
     ns5:title "Ein konzeptionelles Architekturrahmenswerk f�r Web-Anwendungen" ;
-    ns4:author <http://ceur-ws.org/Vol-65/#ChristianiMeiler>,
+    ns1:author <http://ceur-ws.org/Vol-65/#ChristianiMeiler>,
         <http://ceur-ws.org/Vol-65/#IliaiPetrov>,
         <http://ceur-ws.org/Vol-65/#StefaniJablonski> .
 
-<http://ceur-ws.org/Vol-65/#09melinte> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-65/> ;
+<http://ceur-ws.org/Vol-65/#09melinte> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-65/> ;
     ns5:title "The home marking problem and some related concepts" ;
-    ns4:author <http://ceur-ws.org/Vol-65/#FerucioiLaurentiuiTiplea>,
+    ns1:author <http://ceur-ws.org/Vol-65/#FerucioiLaurentiuiTiplea>,
         <http://ceur-ws.org/Vol-65/#IoanaiOlga>,
         <http://ceur-ws.org/Vol-65/#OliviaiOanea>,
         <http://ceur-ws.org/Vol-65/#RoxanaiMelinte> .
 
-<http://ceur-ws.org/Vol-65/#12chen> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-65/> ;
+<http://ceur-ws.org/Vol-65/#12chen> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-65/> ;
     ns5:title "The biology Petri net markup language" ;
-    ns4:author <http://ceur-ws.org/Vol-65/#AlexanderiR%EF%BF%BDegg>,
+    ns1:author <http://ceur-ws.org/Vol-65/#AlexanderiR%EF%BF%BDegg>,
         <http://ceur-ws.org/Vol-65/#AndreasiFreier>,
         <http://ceur-ws.org/Vol-65/#JacobiK%EF%BF%BDhler>,
         <http://ceur-ws.org/Vol-65/#MingiChen> .
 
-<http://ceur-ws.org/Vol-65/> a ns1:Proceedings ;
-    ns1:hasPart <http://ceur-ws.org/Vol-65/#00PromiseVorwort>,
+<http://ceur-ws.org/Vol-65/> a ns4:Proceedings ;
+    ns4:hasPart <http://ceur-ws.org/Vol-65/#00PromiseVorwort>,
         <http://ceur-ws.org/Vol-65/#01kindler>,
         <http://ceur-ws.org/Vol-65/#02stehno>,
         <http://ceur-ws.org/Vol-65/#031Tutorial_Nuettgens>,
@@ -340,7 +341,7 @@
         <http://ceur-ws.org/Vol-65/#14jablonski>,
         <http://ceur-ws.org/Vol-65/#15zerguini> ;
     ns6:issued "2002-11-21T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:presentedAt <http://ceur-ws.org/Vol-65/#event> ;
-    ns4:editor <http://ceur-ws.org/Vol-65/#J%EF%BF%BDrgiDesel>,
+    ns9:presentedAt <http://ceur-ws.org/Vol-65/#event> ;
+    ns1:editor <http://ceur-ws.org/Vol-65/#J%C3%B6rgiDesel>,
         <http://ceur-ws.org/Vol-65/#MathiasiWeske> .
 
