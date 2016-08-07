@@ -1,40 +1,294 @@
-@prefix ns1: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns2: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns3: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns4: <http://purl.org/ontology/bibo/#> .
-@prefix ns5: <http://xmlns.com/foaf/0.1/> .
-@prefix ns6: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns7: <http://www.w3.org/2002/07/owl#> .
-@prefix ns8: <http://purl.org/dc/elements/1.1/> .
+@prefix ns1: <http://xmlns.com/foaf/0.1/> .
+@prefix ns2: <http://purl.org/ontology/bibo/#> .
+@prefix ns3: <http://www.w3.org/2002/07/owl#> .
+@prefix ns4: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns5: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns6: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns9: <http://purl.org/dc/elements/1.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1205/> a ns1:Proceedings ;
-    ns6:issued "2014-07-30T00:00:00+00:00"^^xsd:dateTime ;
-    ns4:presentedAt <http://ceur-ws.org/Vol-1205/#event> ;
-    ns3:editor <http://ceur-ws.org/Vol-1205/#Anni-YasminiTurhan>,
+<http://ceur-ws.org/Vol-1205/#AlaiDjeddai> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/AlaiDjeddai> ;
+    ns1:made <http://ceur-ws.org/Vol-1205/#paper8> ;
+    ns1:name "Ala Djeddai" .
+
+<http://ceur-ws.org/Vol-1205/#AndreasiEcke> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/AndreasiEcke> ;
+    ns1:made <http://ceur-ws.org/Vol-1205/#paper9> ;
+    ns1:name "Andreas Ecke" .
+
+<http://ceur-ws.org/Vol-1205/#Anni-YasminiTurhan> a ns1:Person ;
+    ns4:affiliation "" ;
+    ns3:sameAs <http://ceur-ws.org/persons/Anni-YasminiTurhan> ;
+    ns1:name "Anni-Yasmin Turhan" .
+
+<http://ceur-ws.org/Vol-1205/#ArinaiBritz> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/ArinaiBritz> ;
+    ns1:made <http://ceur-ws.org/Vol-1205/#paper6> ;
+    ns1:name "Arina Britz" .
+
+<http://ceur-ws.org/Vol-1205/#ChristianiMeilicke> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/ChristianiMeilicke> ;
+    ns1:made <http://ceur-ws.org/Vol-1205/#paper1> ;
+    ns1:name "Christian Meilicke" .
+
+<http://ceur-ws.org/Vol-1205/#ChristophiBeierle> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/ChristophiBeierle> ;
+    ns1:made <http://ceur-ws.org/Vol-1205/#paper4> ;
+    ns1:name "Christoph Beierle" .
+
+<http://ceur-ws.org/Vol-1205/#CristianiMolinaro> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/CristianiMolinaro> ;
+    ns1:made <http://ceur-ws.org/Vol-1205/#paper11> ;
+    ns1:name "Cristian Molinaro" .
+
+<http://ceur-ws.org/Vol-1205/#DavidiMitchell> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/DavidiMitchell> ;
+    ns1:made <http://ceur-ws.org/Vol-1205/#paper12> ;
+    ns1:name "David Mitchell" .
+
+<http://ceur-ws.org/Vol-1205/#ErmaniAcar> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/ErmaniAcar> ;
+    ns1:made <http://ceur-ws.org/Vol-1205/#paper1> ;
+    ns1:name "Erman Acar" .
+
+<http://ceur-ws.org/Vol-1205/#EvaiArmengol> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/EvaiArmengol> ;
+    ns1:made <http://ceur-ws.org/Vol-1205/#paper2> ;
+    ns1:name "Eva Armengol" .
+
+<http://ceur-ws.org/Vol-1205/#HassinaiSeridi> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/HassinaiSeridi> ;
+    ns1:made <http://ceur-ws.org/Vol-1205/#paper8> ;
+    ns1:name "Hassina Seridi" .
+
+<http://ceur-ws.org/Vol-1205/#IvaniVarzinczak> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/IvaniVarzinczak> ;
+    ns1:made <http://ceur-ws.org/Vol-1205/#paper6> ;
+    ns1:name "Ivan Varzinczak" .
+
+<http://ceur-ws.org/Vol-1205/#JoohyungiLee> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/JoohyungiLee> ;
+    ns1:made <http://ceur-ws.org/Vol-1205/#paper10> ;
+    ns1:name "Joohyung Lee" .
+
+<http://ceur-ws.org/Vol-1205/#LiboriBehounek> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/LiboriBehounek> ;
+    ns1:made <http://ceur-ws.org/Vol-1205/#paper3> ;
+    ns1:name "Libor Behounek" .
+
+<http://ceur-ws.org/Vol-1205/#LiviaiPredoiu> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/LiviaiPredoiu> ;
+    ns1:made <http://ceur-ws.org/Vol-1205/#paper11> ;
+    ns1:name "Livia Predoiu" .
+
+<http://ceur-ws.org/Vol-1205/#MarcoiCerami> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/MarcoiCerami> ;
+    ns1:made <http://ceur-ws.org/Vol-1205/#paper5> ;
+    ns1:name "Marco Cerami" .
+
+<http://ceur-ws.org/Vol-1205/#MarcusiMarto> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/MarcusiMarto> ;
+    ns1:made <http://ceur-ws.org/Vol-1205/#paper4> ;
+    ns1:name "Marcus Marto" .
+
+<http://ceur-ws.org/Vol-1205/#MarkusiH%C3%B6hnerbach> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/MarkusiH%C3%B6hnerbach> ;
+    ns1:made <http://ceur-ws.org/Vol-1205/#paper4> ;
+    ns1:name "Markus Höhnerbach" .
+
+<http://ceur-ws.org/Vol-1205/#OanaiTifrea-Marciuska> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/OanaiTifrea-Marciuska> ;
+    ns1:made <http://ceur-ws.org/Vol-1205/#paper7> ;
+    ns1:name "Oana Tifrea-Marciuska" .
+
+<http://ceur-ws.org/Vol-1205/#StefaniBorgwardt> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/StefaniBorgwardt> ;
+    ns1:made <http://ceur-ws.org/Vol-1205/#paper5> ;
+    ns1:name "Stefan Borgwardt" .
+
+<http://ceur-ws.org/Vol-1205/#TarekiKhadir> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/TarekiKhadir> ;
+    ns1:made <http://ceur-ws.org/Vol-1205/#paper8> ;
+    ns1:name "Tarek Khadir" .
+
+<http://ceur-ws.org/Vol-1205/#TommasoiDiiNoia> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/TommasoiDiiNoia> ;
+    ns1:made <http://ceur-ws.org/Vol-1205/#paper7> ;
+    ns1:name "Tommaso Di Noia" .
+
+<http://ceur-ws.org/Vol-1205/#YiiWang> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/YiiWang> ;
+    ns1:made <http://ceur-ws.org/Vol-1205/#paper10> ;
+    ns1:name "Yi Wang" .
+
+<http://ceur-ws.org/Vol-1205/#event> a ns5:WorkshopEvent ;
+    ns5:hasLocation <http://dbpedia.org/resource/Austria> ;
+    ns5:hasPart <http://ceur-ws.org/Vol-1205/#part-PRUV> ;
+    ns5:isSubEventOf <http://ceur-ws.org/Vol-1205/#conf> ;
+    ns7:beginsAtDatetime "2014-07-23T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:endsAtDatetime "2014-07-24T00:00:00+00:00"^^xsd:dateTime ;
+    ns9:license "http://choosealicense.com/licenses/no-license/" .
+
+<http://ceur-ws.org/Vol-1205/#GerardoiI.iSimari> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/GerardoiI.iSimari> ;
+    ns1:made <http://ceur-ws.org/Vol-1205/#paper11>,
+        <http://ceur-ws.org/Vol-1205/#paper7> ;
+    ns1:name "Gerardo I. Simari" .
+
+<http://ceur-ws.org/Vol-1205/#MariaiVaninaiMartinez> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/MariaiVaninaiMartinez> ;
+    ns1:made <http://ceur-ws.org/Vol-1205/#paper11>,
+        <http://ceur-ws.org/Vol-1205/#paper7> ;
+    ns1:name "Maria Vanina Martinez" .
+
+<http://ceur-ws.org/Vol-1205/#RafaeliPe%C3%B1aloza> a ns1:Person ;
+    ns4:affiliation "" ;
+    ns3:sameAs <http://ceur-ws.org/persons/RafaeliPe%C3%B1aloza> ;
+    ns1:made <http://ceur-ws.org/Vol-1205/#paper5> ;
+    ns1:name "Rafael Peñaloza" .
+
+<http://ceur-ws.org/Vol-1205/#paper12> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1205/> ;
+    ns6:title "Resolution and Clause Learning for Multi-Valued CNF Formulas" ;
+    ns2:endPage 154 ;
+    ns2:numPages 14 ;
+    ns2:startPage 141 ;
+    ns4:author <http://ceur-ws.org/Vol-1205/#DavidiMitchell> .
+
+<http://ceur-ws.org/Vol-1205/#paper2> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1205/> ;
+    ns6:title "Learning Preferences for Collaboration" ;
+    ns2:endPage 25 ;
+    ns2:numPages 11 ;
+    ns2:startPage 15 ;
+    ns4:author <http://ceur-ws.org/Vol-1205/#EvaiArmengol> .
+
+<http://ceur-ws.org/Vol-1205/#paper3> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1205/> ;
+    ns6:title "In Which Sense Is Fuzzy Logic a Logic for Vagueness?" ;
+    ns2:endPage 39 ;
+    ns2:numPages 14 ;
+    ns2:startPage 26 ;
+    ns4:author <http://ceur-ws.org/Vol-1205/#LiboriBehounek> .
+
+<http://ceur-ws.org/Vol-1205/#paper9> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1205/> ;
+    ns6:title "Similarity-based Relaxed Instance Queries in EL++" ;
+    ns2:endPage 113 ;
+    ns2:numPages 13 ;
+    ns2:startPage 101 ;
+    ns4:author <http://ceur-ws.org/Vol-1205/#AndreasiEcke> .
+
+<http://ceur-ws.org/Vol-1205/#ThomasiLukasiewicz> a ns1:Person ;
+    ns4:affiliation "" ;
+    ns3:sameAs <http://ceur-ws.org/persons/ThomasiLukasiewicz> ;
+    ns1:made <http://ceur-ws.org/Vol-1205/#paper11>,
+        <http://ceur-ws.org/Vol-1205/#paper7> ;
+    ns1:name "Thomas Lukasiewicz" .
+
+<http://ceur-ws.org/Vol-1205/#paper1> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1205/> ;
+    ns6:title "Multi-Attribute Decision Making using Weighted Description Logics" ;
+    ns2:endPage 14 ;
+    ns2:numPages 14 ;
+    ns2:startPage 1 ;
+    ns4:author <http://ceur-ws.org/Vol-1205/#ChristianiMeilicke>,
+        <http://ceur-ws.org/Vol-1205/#ErmaniAcar> .
+
+<http://ceur-ws.org/Vol-1205/#paper10> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1205/> ;
+    ns6:title "Stable Models of Fuzzy Propositional Formulas" ;
+    ns2:endPage 126 ;
+    ns2:numPages 13 ;
+    ns2:startPage 114 ;
+    ns4:author <http://ceur-ws.org/Vol-1205/#JoohyungiLee>,
+        <http://ceur-ws.org/Vol-1205/#YiiWang> .
+
+<http://ceur-ws.org/Vol-1205/#paper6> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1205/> ;
+    ns6:title "Towards a Logic of Dilation" ;
+    ns2:endPage 73 ;
+    ns2:numPages 15 ;
+    ns2:startPage 59 ;
+    ns4:author <http://ceur-ws.org/Vol-1205/#ArinaiBritz>,
+        <http://ceur-ws.org/Vol-1205/#IvaniVarzinczak> .
+
+<http://ceur-ws.org/Vol-1205/#paper4> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1205/> ;
+    ns6:title "Generation of Parametrically Uniform Knowledge Bases in a Relational Probabilistic Logic with Maximum Entropy Semantics" ;
+    ns2:endPage 51 ;
+    ns2:numPages 13 ;
+    ns2:startPage 39 ;
+    ns4:author <http://ceur-ws.org/Vol-1205/#ChristophiBeierle>,
+        <http://ceur-ws.org/Vol-1205/#MarcusiMarto>,
+        <http://ceur-ws.org/Vol-1205/#MarkusiH%C3%B6hnerbach> .
+
+<http://ceur-ws.org/Vol-1205/#paper5> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1205/> ;
+    ns6:title "Many-valued Horn Logic is Hard" ;
+    ns2:endPage 58 ;
+    ns2:numPages 7 ;
+    ns2:startPage 52 ;
+    ns4:author <http://ceur-ws.org/Vol-1205/#MarcoiCerami>,
         <http://ceur-ws.org/Vol-1205/#RafaeliPe%C3%B1aloza>,
+        <http://ceur-ws.org/Vol-1205/#StefaniBorgwardt> .
+
+<http://ceur-ws.org/Vol-1205/#paper8> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1205/> ;
+    ns6:title "A New DL-Lite N Bool Probabilistic Extension Using Belief" ;
+    ns2:endPage 100 ;
+    ns2:numPages 13 ;
+    ns2:startPage 88 ;
+    ns4:author <http://ceur-ws.org/Vol-1205/#AlaiDjeddai>,
+        <http://ceur-ws.org/Vol-1205/#HassinaiSeridi>,
+        <http://ceur-ws.org/Vol-1205/#TarekiKhadir> .
+
+<http://ceur-ws.org/Vol-1205/#paper11> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1205/> ;
+    ns6:title "Answering Ontological Ranking Queries Based on Subjective Reports" ;
+    ns2:endPage 140 ;
+    ns2:numPages 14 ;
+    ns2:startPage 127 ;
+    ns4:author <http://ceur-ws.org/Vol-1205/#CristianiMolinaro>,
+        <http://ceur-ws.org/Vol-1205/#GerardoiI.iSimari>,
+        <http://ceur-ws.org/Vol-1205/#LiviaiPredoiu>,
+        <http://ceur-ws.org/Vol-1205/#MariaiVaninaiMartinez>,
         <http://ceur-ws.org/Vol-1205/#ThomasiLukasiewicz> .
 
-<http://ceur-ws.org/Vol-1205/#Anni-YasminiTurhan> a ns5:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/Anni-YasminiTurhan> ;
-    ns5:name "Anni-Yasmin Turhan" .
+<http://ceur-ws.org/Vol-1205/#paper7> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1205/> ;
+    ns6:title "Computing k-Rank Answers with Ontological CP-Nets" ;
+    ns2:endPage 87 ;
+    ns2:numPages 14 ;
+    ns2:startPage 74 ;
+    ns4:author <http://ceur-ws.org/Vol-1205/#GerardoiI.iSimari>,
+        <http://ceur-ws.org/Vol-1205/#MariaiVaninaiMartinez>,
+        <http://ceur-ws.org/Vol-1205/#OanaiTifrea-Marciuska>,
+        <http://ceur-ws.org/Vol-1205/#ThomasiLukasiewicz>,
+        <http://ceur-ws.org/Vol-1205/#TommasoiDiiNoia> .
 
-<http://ceur-ws.org/Vol-1205/#RafaeliPe%C3%B1aloza> a ns5:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/RafaeliPe%C3%B1aloza> ;
-    ns5:name "Rafael Peñaloza" .
-
-<http://ceur-ws.org/Vol-1205/#ThomasiLukasiewicz> a ns5:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/ThomasiLukasiewicz> ;
-    ns5:name "Thomas Lukasiewicz" .
-
-<http://ceur-ws.org/Vol-1205/#event> a ns1:WorkshopEvent ;
-    ns1:hasLocation <http://dbpedia.org/resource/Austria> ;
-    ns1:hasPart <http://ceur-ws.org/Vol-1205/#part-ws> ;
-    ns1:isSubEventOf <http://ceur-ws.org/Vol-1205/#conf> ;
-    ns2:beginsAtDatetime "2014-07-23T00:00:00+00:00"^^xsd:dateTime ;
-    ns2:endsAtDatetime "2014-07-24T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:license "http://choosealicense.com/licenses/no-license/" .
+<http://ceur-ws.org/Vol-1205/> a ns5:Proceedings ;
+    ns5:hasPart <http://ceur-ws.org/Vol-1205/#paper1>,
+        <http://ceur-ws.org/Vol-1205/#paper10>,
+        <http://ceur-ws.org/Vol-1205/#paper11>,
+        <http://ceur-ws.org/Vol-1205/#paper12>,
+        <http://ceur-ws.org/Vol-1205/#paper2>,
+        <http://ceur-ws.org/Vol-1205/#paper3>,
+        <http://ceur-ws.org/Vol-1205/#paper4>,
+        <http://ceur-ws.org/Vol-1205/#paper5>,
+        <http://ceur-ws.org/Vol-1205/#paper6>,
+        <http://ceur-ws.org/Vol-1205/#paper7>,
+        <http://ceur-ws.org/Vol-1205/#paper8>,
+        <http://ceur-ws.org/Vol-1205/#paper9> ;
+    ns8:issued "2014-07-30T00:00:00+00:00"^^xsd:dateTime ;
+    ns2:presentedAt <http://ceur-ws.org/Vol-1205/#event> ;
+    ns4:editor <http://ceur-ws.org/Vol-1205/#Anni-YasminiTurhan>,
+        <http://ceur-ws.org/Vol-1205/#RafaeliPe%C3%B1aloza>,
+        <http://ceur-ws.org/Vol-1205/#ThomasiLukasiewicz> .
 

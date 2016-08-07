@@ -3,8 +3,9 @@ import requests
 import rdflib
 import urllib
 import dateparser
+import re
 from bs4 import BeautifulSoup
-from rdflib.namespace import FOAF, RDF, XSD
+from rdflib.namespace import FOAF, RDF, XSD, DC
 
 '''
 This tool can be used to process volume page in http://ceur-ws.org/, and build rdf data output
@@ -40,6 +41,9 @@ class CommonTools:
         """
         string = ' '.join(string.strip().replace('\n', '').split()).encode('utf8')
         return string
+    
+    def clean_string2(self, string):
+        return ''.join(e for e in string if e.isalnum())
 
 
 class IndexPage:
@@ -137,7 +141,7 @@ class BuildModel:
         :param filename: file name to serialize
         :return:
         """
-        g.serialize(destination=filename, format='turtle')
+        g.serialize(destination=filename, format='turtle', encoding='utf-8')
 
     def build_event(self, g, page, index_page):
         """build triples for event
@@ -173,7 +177,7 @@ class BuildModel:
         :return:
         """
         g.add((person_uri, RDF.type, FOAF.person))
-        g.add((person_uri, self.owl.sameAs, rdflib.URIRef(urllib.quote(('http://ceur-ws.org/persons/' + self.tools.clean_string(person_name))))))
+        #g.add((person_uri, self.owl.sameAs, rdflib.URIRef(urllib.quote(('http://ceur-ws.org/persons/' + self.tools.clean_string(person_name))))))
         g.add((person_uri, FOAF.made, paper_uri))
         g.add((person_uri, FOAF.name, rdflib.Literal(self.tools.clean_string(person_name))))
 
@@ -193,7 +197,8 @@ class BuildModel:
             g.add((paper_uri, self.swc.partOf, rdflib.URIRef(volume)))
             g.add((paper_uri, self.purl.title, rdflib.Literal(self.tools.clean_string(paper[1]))))
             for authors in paper[2: -1]:
-                author = rdflib.URIRef(urllib.quote(self.tools.clean_string(volume + authors)))
+                #author = rdflib.URIRef(urllib.quote(self.tools.clean_string(volume + authors)))
+                author = rdflib.URIRef(volume + self.tools.clean_string2(authors))
                 g.add((paper_uri, self.swrc.author, author))
                 self.build_person(g, author, authors, paper_uri)
             paper_list.append(paper_uri)
@@ -213,12 +218,13 @@ class BuildModel:
         # match editors and institutions
         for editor, institution in zip(editors, institutions):
             editor_name = self.tools.clean_string(editor[:-1])
-            editor_uri = rdflib.URIRef(urllib.quote((volume + editor_name)))
+            #editor_uri = rdflib.URIRef(urllib.quote((volume + editor_name)))
+            editor_uri = rdflib.URIRef(volume + self.tools.clean_string2(editor_name))
             editors_list.append(editor_uri)
             institution = self.tools.clean_string(institution[1:])
             g.add((editor_uri, RDF.type, FOAF.person))
             g.add((editor_uri, self.swrc.affiliation, rdflib.Literal(institution)))
-            g.add((editor_uri, self.owl.sameAs, rdflib.URIRef(urllib.quote('http://ceur-ws.org/persons/' + editor_name))))
+            #g.add((editor_uri, self.owl.sameAs, rdflib.URIRef(urllib.quote('http://ceur-ws.org/persons/' + editor_name))))
             g.add((editor_uri, FOAF.name, rdflib.Literal(editor_name)))
 
         return editors_list
@@ -333,6 +339,15 @@ class ProcessPage:
                     page_['issue_date'] = time.text
 
         return page_
+    
+    def grasp_license(self, item_url, g):
+        response = requests.get(item_url)
+        soup = BeautifulSoup(response.text, 'html.parser')
+        test = soup.findAll(text = re.compile('Creative Commons CC0'))
+        if test:
+            g.add((rdflib.URIRef(item_url), DC.license, rdflib.Literal('http://creativecommons.org/publicdomain/zero/1.0/')))
+        else:
+            g.add((rdflib.URIRef(item_url), DC.license, rdflib.Literal('http://choosealicense.com/licenses/no-license/')))
 
     def single_serialize(self, g, vol):
         """ serialize for single volume graph
@@ -371,3 +386,7 @@ pages = ['http://ceur-ws.org/Vol-1549/', 'http://ceur-ws.org/Vol-1550/', 'http:/
 pages_pre = [dict_.get(key) for key in pages]
 processor = ProcessPage(pages)
 processor.process_data(pages, pages_pre)
+#g = rdflib.Graph()
+#for keys in dict_:
+#    processor.grasp_license(keys, g)
+#processor.single_serialize(g, 'license')

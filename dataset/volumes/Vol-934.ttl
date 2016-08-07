@@ -1,36 +1,1226 @@
-@prefix ns1: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns2: <http://purl.org/ontology/bibo/#> .
-@prefix ns3: <http://www.w3.org/2002/07/owl#> .
-@prefix ns4: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns5: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns6: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns7: <http://xmlns.com/foaf/0.1/> .
-@prefix ns8: <http://purl.org/dc/elements/1.1/> .
+@prefix ns1: <http://purl.org/ontology/bibo/#> .
+@prefix ns2: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns3: <http://xmlns.com/foaf/0.1/> .
+@prefix ns4: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns5: <http://www.w3.org/2002/07/owl#> .
+@prefix ns6: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns9: <http://purl.org/dc/elements/1.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-934/> a ns1:Proceedings ;
-    ns4:issued "2012-11-01T00:00:00+00:00"^^xsd:dateTime ;
-    ns2:presentedAt <http://ceur-ws.org/Vol-934/#event> ;
-    ns6:editor <http://ceur-ws.org/Vol-934/#MikhailiKogalovsky>,
-        <http://ceur-ws.org/Vol-934/#SergeyiZnamenskij> .
+<http://ceur-ws.org/Vol-934/#AleksandriKirejtshuk> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/AleksandriKirejtshuk> ;
+    ns3:made <http://ceur-ws.org/Vol-934/#paper31> ;
+    ns3:name "Aleksandr Kirejtshuk" .
 
-<http://ceur-ws.org/Vol-934/#MikhailiKogalovsky> a ns7:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/MikhailiKogalovsky> ;
-    ns7:name "Mikhail Kogalovsky" .
+<http://ceur-ws.org/Vol-934/#AleksandriPolin> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/AleksandriPolin> ;
+    ns3:made <http://ceur-ws.org/Vol-934/#paper4> ;
+    ns3:name "Aleksandr Polin" .
 
-<http://ceur-ws.org/Vol-934/#SergeyiZnamenskij> a ns7:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/SergeyiZnamenskij> ;
-    ns7:name "Sergey Znamenskij" .
+<http://ceur-ws.org/Vol-934/#AlexanderiElizarov> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/AlexanderiElizarov> ;
+    ns3:made <http://ceur-ws.org/Vol-934/#paper47> ;
+    ns3:name "Alexander Elizarov" .
 
-<http://ceur-ws.org/Vol-934/#event> a ns1:WorkshopEvent ;
-    ns1:hasLocation <http://dbpedia.org/resource/Russia> ;
-    ns1:hasPart <http://ceur-ws.org/Vol-934/#part-CEUR-WS> ;
-    ns1:isSubEventOf <http://ceur-ws.org/Vol-934/#conf> ;
-    ns5:beginsAtDatetime "2012-10-15T00:00:00+00:00"^^xsd:dateTime ;
-    ns5:endsAtDatetime "2012-10-18T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:license "http://choosealicense.com/licenses/no-license/" ;
+<http://ceur-ws.org/Vol-934/#AlexanderiFazliev> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/AlexanderiFazliev> ;
+    ns3:made <http://ceur-ws.org/Vol-934/#paper33> ;
+    ns3:name "Alexander Fazliev" .
+
+<http://ceur-ws.org/Vol-934/#AlexanderiMarchuk> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/AlexanderiMarchuk> ;
+    ns3:made <http://ceur-ws.org/Vol-934/#paper42> ;
+    ns3:name "Alexander Marchuk" .
+
+<http://ceur-ws.org/Vol-934/#AlexanderiShkotin> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/AlexanderiShkotin> ;
+    ns3:made <http://ceur-ws.org/Vol-934/#paper17> ;
+    ns3:name "Alexander Shkotin" .
+
+<http://ceur-ws.org/Vol-934/#AlexandriGoroslavskiy> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/AlexandriGoroslavskiy> ;
+    ns3:made <http://ceur-ws.org/Vol-934/#paper18> ;
+    ns3:name "Alexandr Goroslavskiy" .
+
+<http://ceur-ws.org/Vol-934/#AlexeyiAkhlyostin> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/AlexeyiAkhlyostin> ;
+    ns3:made <http://ceur-ws.org/Vol-934/#paper33> ;
+    ns3:name "Alexey Akhlyostin" .
+
+<http://ceur-ws.org/Vol-934/#AlexeyiGolikov> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/AlexeyiGolikov> ;
+    ns3:made <http://ceur-ws.org/Vol-934/#paper31> ;
+    ns3:name "Alexey Golikov" .
+
+<http://ceur-ws.org/Vol-934/#AlexeyiKhoroshilov> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/AlexeyiKhoroshilov> ;
+    ns3:made <http://ceur-ws.org/Vol-934/#paper24> ;
+    ns3:name "Alexey Khoroshilov" .
+
+<http://ceur-ws.org/Vol-934/#AlexeyiPrivezentsev> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/AlexeyiPrivezentsev> ;
+    ns3:made <http://ceur-ws.org/Vol-934/#paper33> ;
+    ns3:name "Alexey Privezentsev" .
+
+<http://ceur-ws.org/Vol-934/#AlexeyiSeryj> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/AlexeyiSeryj> ;
+    ns3:made <http://ceur-ws.org/Vol-934/#paper26> ;
+    ns3:name "Alexey Seryj" .
+
+<http://ceur-ws.org/Vol-934/#AlexeyiVarlamov> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/AlexeyiVarlamov> ;
+    ns3:made <http://ceur-ws.org/Vol-934/#paper20> ;
+    ns3:name "Alexey Varlamov" .
+
+<http://ceur-ws.org/Vol-934/#AnatolyiShulenin> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/AnatolyiShulenin> ;
+    ns3:made <http://ceur-ws.org/Vol-934/#paper50> ;
+    ns3:name "Anatoly Shulenin" .
+
+<http://ceur-ws.org/Vol-934/#AndreasiRauber> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/AndreasiRauber> ;
+    ns3:made <http://ceur-ws.org/Vol-934/#paper1> ;
+    ns3:name "Andreas Rauber" .
+
+<http://ceur-ws.org/Vol-934/#AndreyiLobanov> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/AndreyiLobanov> ;
+    ns3:made <http://ceur-ws.org/Vol-934/#paper31> ;
+    ns3:name "Andrey Lobanov" .
+
+<http://ceur-ws.org/Vol-934/#AndreyiMatskevich> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/AndreyiMatskevich> ;
+    ns3:made <http://ceur-ws.org/Vol-934/#paper35> ;
+    ns3:name "Andrey Matskevich" .
+
+<http://ceur-ws.org/Vol-934/#AndreyiPivovarov> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/AndreyiPivovarov> ;
+    ns3:made <http://ceur-ws.org/Vol-934/#paper10> ;
+    ns3:name "Andrey Pivovarov" .
+
+<http://ceur-ws.org/Vol-934/#AndreyiTalbonen> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/AndreyiTalbonen> ;
+    ns3:made <http://ceur-ws.org/Vol-934/#paper49> ;
+    ns3:name "Andrey Talbonen" .
+
+<http://ceur-ws.org/Vol-934/#AnnaiKnyazeva> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/AnnaiKnyazeva> ;
+    ns3:made <http://ceur-ws.org/Vol-934/#paper46> ;
+    ns3:name "Anna Knyazeva" .
+
+<http://ceur-ws.org/Vol-934/#AntoniKolesov> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/AntoniKolesov> ;
+    ns3:made <http://ceur-ws.org/Vol-934/#paper51> ;
+    ns3:name "Anton Kolesov" .
+
+<http://ceur-ws.org/Vol-934/#AntoniSkorokhodov> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/AntoniSkorokhodov> ;
+    ns3:made <http://ceur-ws.org/Vol-934/#paper50> ;
+    ns3:name "Anton Skorokhodov" .
+
+<http://ceur-ws.org/Vol-934/#ArkadyiAndreev> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/ArkadyiAndreev> ;
+    ns3:made <http://ceur-ws.org/Vol-934/#paper16> ;
+    ns3:name "Arkady Andreev" .
+
+<http://ceur-ws.org/Vol-934/#ArkadyiAvramenko> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/ArkadyiAvramenko> ;
+    ns3:made <http://ceur-ws.org/Vol-934/#paper38> ;
+    ns3:name "Arkady Avramenko" .
+
+<http://ceur-ws.org/Vol-934/#ArtemiSkabin> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/ArtemiSkabin> ;
+    ns3:made <http://ceur-ws.org/Vol-934/#paper14> ;
+    ns3:name "Artem Skabin" .
+
+<http://ceur-ws.org/Vol-934/#DanaiKovaleva> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/DanaiKovaleva> ;
+    ns3:made <http://ceur-ws.org/Vol-934/#paper28> ;
+    ns3:name "Dana Kovaleva" .
+
+<http://ceur-ws.org/Vol-934/#DaniliSkachkov> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/DaniliSkachkov> ;
+    ns3:made <http://ceur-ws.org/Vol-934/#paper21> ;
+    ns3:name "Danil Skachkov" .
+
+<http://ceur-ws.org/Vol-934/#DenisiZuev> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/DenisiZuev> ;
+    ns3:made <http://ceur-ws.org/Vol-934/#paper47> ;
+    ns3:name "Denis Zuev" .
+
+<http://ceur-ws.org/Vol-934/#DmitryiBerezkin> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/DmitryiBerezkin> ;
+    ns3:made <http://ceur-ws.org/Vol-934/#paper16> ;
+    ns3:name "Dmitry Berezkin" .
+
+<http://ceur-ws.org/Vol-934/#DmitryiErmoshin> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/DmitryiErmoshin> ;
+    ns3:made <http://ceur-ws.org/Vol-934/#paper12> ;
+    ns3:name "Dmitry Ermoshin" .
+
+<http://ceur-ws.org/Vol-934/#DmitryiKotelnikov> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/DmitryiKotelnikov> ;
+    ns3:made <http://ceur-ws.org/Vol-934/#paper45> ;
+    ns3:name "Dmitry Kotelnikov" .
+
+<http://ceur-ws.org/Vol-934/#DmitryiLande> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/DmitryiLande> ;
+    ns3:made <http://ceur-ws.org/Vol-934/#paper25> ;
+    ns3:name "Dmitry Lande" .
+
+<http://ceur-ws.org/Vol-934/#DmitryiMalakhov> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/DmitryiMalakhov> ;
+    ns3:made <http://ceur-ws.org/Vol-934/#paper34> ;
+    ns3:name "Dmitry Malakhov" .
+
+<http://ceur-ws.org/Vol-934/#EkaterinaiKantemirova> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/EkaterinaiKantemirova> ;
+    ns3:made <http://ceur-ws.org/Vol-934/#paper50> ;
+    ns3:name "Ekaterina Kantemirova" .
+
+<http://ceur-ws.org/Vol-934/#ElenaiKozerenko> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/ElenaiKozerenko> ;
+    ns3:made <http://ceur-ws.org/Vol-934/#paper35> ;
+    ns3:name "Elena Kozerenko" .
+
+<http://ceur-ws.org/Vol-934/#ElenaiSidorova> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/ElenaiSidorova> ;
+    ns3:made <http://ceur-ws.org/Vol-934/#paper26> ;
+    ns3:name "Elena Sidorova" .
+
+<http://ceur-ws.org/Vol-934/#ElenaiVoronina> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/ElenaiVoronina> ;
+    ns3:made <http://ceur-ws.org/Vol-934/#paper31> ;
+    ns3:name "Elena Voronina" .
+
+<http://ceur-ws.org/Vol-934/#ElenaiYagunova> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/ElenaiYagunova> ;
+    ns3:made <http://ceur-ws.org/Vol-934/#paper25> ;
+    ns3:name "Elena Yagunova" .
+
+<http://ceur-ws.org/Vol-934/#EugeneiLipachev> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/EugeneiLipachev> ;
+    ns3:made <http://ceur-ws.org/Vol-934/#paper47> ;
+    ns3:name "Eugene Lipachev" .
+
+<http://ceur-ws.org/Vol-934/#EugenyiKotelnikov> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/EugenyiKotelnikov> ;
+    ns3:made <http://ceur-ws.org/Vol-934/#paper15> ;
+    ns3:name "Eugeny Kotelnikov" .
+
+<http://ceur-ws.org/Vol-934/#EvgeniyaiUstinova> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/EvgeniyaiUstinova> ;
+    ns3:made <http://ceur-ws.org/Vol-934/#paper34> ;
+    ns3:name "Evgeniya Ustinova" .
+
+<http://ceur-ws.org/Vol-934/#GalinaiProskudina> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/GalinaiProskudina> ;
+    ns3:made <http://ceur-ws.org/Vol-934/#paper5> ;
+    ns3:name "Galina Proskudina" .
+
+<http://ceur-ws.org/Vol-934/#GenisiMusulmanbekov> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/GenisiMusulmanbekov> ;
+    ns3:made <http://ceur-ws.org/Vol-934/#paper22> ;
+    ns3:name "Genis Musulmanbekov" .
+
+<http://ceur-ws.org/Vol-934/#GiuseppeiAmato> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/GiuseppeiAmato> ;
+    ns3:made <http://ceur-ws.org/Vol-934/#paper2> ;
+    ns3:name "Giuseppe Amato" .
+
+<http://ceur-ws.org/Vol-934/#IgoriKuznetsov> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/IgoriKuznetsov> ;
+    ns3:made <http://ceur-ws.org/Vol-934/#paper35> ;
+    ns3:name "Igor Kuznetsov" .
+
+<http://ceur-ws.org/Vol-934/#IgoriSmirnov> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/IgoriSmirnov> ;
+    ns3:made <http://ceur-ws.org/Vol-934/#paper31> ;
+    ns3:name "Igor Smirnov" .
+
+<http://ceur-ws.org/Vol-934/#IgoriTurchanovsky> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/IgoriTurchanovsky> ;
+    ns3:made <http://ceur-ws.org/Vol-934/#paper46> ;
+    ns3:name "Igor Turchanovsky" .
+
+<http://ceur-ws.org/Vol-934/#IlyaiKarpov> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/IlyaiKarpov> ;
+    ns3:made <http://ceur-ws.org/Vol-934/#paper18> ;
+    ns3:name "Ilya Karpov" .
+
+<http://ceur-ws.org/Vol-934/#IlyaiKozlov> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/IlyaiKozlov> ;
+    ns3:made <http://ceur-ws.org/Vol-934/#paper16> ;
+    ns3:name "Ilya Kozlov" .
+
+<http://ceur-ws.org/Vol-934/#IvaniShterkel> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/IvaniShterkel> ;
+    ns3:made <http://ceur-ws.org/Vol-934/#paper14> ;
+    ns3:name "Ivan Shterkel" .
+
+<http://ceur-ws.org/Vol-934/#IvaniSoloviev> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/IvaniSoloviev> ;
+    ns3:made <http://ceur-ws.org/Vol-934/#paper6> ;
+    ns3:name "Ivan Soloviev" .
+
+<http://ceur-ws.org/Vol-934/#IvaniSudos> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/IvaniSudos> ;
+    ns3:made <http://ceur-ws.org/Vol-934/#paper23> ;
+    ns3:name "Ivan Sudos" .
+
+<http://ceur-ws.org/Vol-934/#KirilliTeymurazov> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/KirilliTeymurazov> ;
+    ns3:made <http://ceur-ws.org/Vol-934/#paper34> ;
+    ns3:name "Kirill Teymurazov" .
+
+<http://ceur-ws.org/Vol-934/#KonstantiniKuznetcov> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/KonstantiniKuznetcov> ;
+    ns3:made <http://ceur-ws.org/Vol-934/#paper34> ;
+    ns3:name "Konstantin Kuznetcov" .
+
+<http://ceur-ws.org/Vol-934/#KonstantiniSimakov> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/KonstantiniSimakov> ;
+    ns3:made <http://ceur-ws.org/Vol-934/#paper16> ;
+    ns3:name "Konstantin Simakov" .
+
+<http://ceur-ws.org/Vol-934/#LeonidiKalinichenko> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/LeonidiKalinichenko> ;
+    ns3:made <http://ceur-ws.org/Vol-934/#paper9> ;
+    ns3:name "Leonid Kalinichenko" .
+
+<http://ceur-ws.org/Vol-934/#LeviShchur> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/LeviShchur> ;
+    ns3:made <http://ceur-ws.org/Vol-934/#paper30> ;
+    ns3:name "Lev Shchur" .
+
+<http://ceur-ws.org/Vol-934/#LiliaiSimaeva> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/LiliaiSimaeva> ;
+    ns3:made <http://ceur-ws.org/Vol-934/#paper50> ;
+    ns3:name "Lilia Simaeva" .
+
+<http://ceur-ws.org/Vol-934/#MariaiKlekovkina> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/MariaiKlekovkina> ;
+    ns3:made <http://ceur-ws.org/Vol-934/#paper15> ;
+    ns3:name "Maria Klekovkina" .
+
+<http://ceur-ws.org/Vol-934/#MaximiShashkov> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/MaximiShashkov> ;
+    ns3:made <http://ceur-ws.org/Vol-934/#paper40> ;
+    ns3:name "Maxim Shashkov" .
+
+<http://ceur-ws.org/Vol-934/#MaximiZaikin> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/MaximiZaikin> ;
+    ns3:made <http://ceur-ws.org/Vol-934/#paper6> ;
+    ns3:name "Maxim Zaikin" .
+
+<http://ceur-ws.org/Vol-934/#MichaeliMalakhaltsev> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/MichaeliMalakhaltsev> ;
+    ns3:made <http://ceur-ws.org/Vol-934/#paper47> ;
+    ns3:name "Michael Malakhaltsev" .
+
+<http://ceur-ws.org/Vol-934/#MikhailiCharnine> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/MikhailiCharnine> ;
+    ns3:made <http://ceur-ws.org/Vol-934/#paper35> ;
+    ns3:name "Mikhail Charnine" .
+
+<http://ceur-ws.org/Vol-934/#MikhailiDianov> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/MikhailiDianov> ;
+    ns3:made <http://ceur-ws.org/Vol-934/#paper31> ;
+    ns3:name "Mikhail Dianov" .
+
+<http://ceur-ws.org/Vol-934/#NataliaiLoukachevitch> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/NataliaiLoukachevitch> ;
+    ns3:made <http://ceur-ws.org/Vol-934/#paper45> ;
+    ns3:name "Natalia Loukachevitch" .
+
+<http://ceur-ws.org/Vol-934/#NataliaiMarkova> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/NataliaiMarkova> ;
+    ns3:made <http://ceur-ws.org/Vol-934/#paper36> ;
+    ns3:name "Natalia Markova" .
+
+<http://ceur-ws.org/Vol-934/#NataliaiVlasova> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/NataliaiVlasova> ;
+    ns3:made <http://ceur-ws.org/Vol-934/#paper48> ;
+    ns3:name "Natalia Vlasova" .
+
+<http://ceur-ws.org/Vol-934/#NikolayiSkvortsov> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/NikolayiSkvortsov> ;
+    ns3:made <http://ceur-ws.org/Vol-934/#paper8> ;
+    ns3:name "Nikolay Skvortsov" .
+
+<http://ceur-ws.org/Vol-934/#NikolayiSomin> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/NikolayiSomin> ;
+    ns3:made <http://ceur-ws.org/Vol-934/#paper35> ;
+    ns3:name "Nikolay Somin" .
+
+<http://ceur-ws.org/Vol-934/#NinaiAvdeeva> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/NinaiAvdeeva> ;
+    ns3:made <http://ceur-ws.org/Vol-934/#paper37> ;
+    ns3:name "Nina Avdeeva" .
+
+<http://ceur-ws.org/Vol-934/#OlegiKolobov> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/OlegiKolobov> ;
+    ns3:made <http://ceur-ws.org/Vol-934/#paper46> ;
+    ns3:name "Oleg Kolobov" .
+
+<http://ceur-ws.org/Vol-934/#OlegiMalkov> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/OlegiMalkov> ;
+    ns3:made <http://ceur-ws.org/Vol-934/#paper28> ;
+    ns3:name "Oleg Malkov" .
+
+<http://ceur-ws.org/Vol-934/#OlegiPugachev> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/OlegiPugachev> ;
+    ns3:made <http://ceur-ws.org/Vol-934/#paper31> ;
+    ns3:name "Oleg Pugachev" .
+
+<http://ceur-ws.org/Vol-934/#OlegiZhizhimov> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/OlegiZhizhimov> ;
+    ns3:made <http://ceur-ws.org/Vol-934/#paper21> ;
+    ns3:name "Oleg Zhizhimov" .
+
+<http://ceur-ws.org/Vol-934/#OlgaiGorchinskaja> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/OlgaiGorchinskaja> ;
+    ns3:made <http://ceur-ws.org/Vol-934/#paper11> ;
+    ns3:name "Olga Gorchinskaja" .
+
+<http://ceur-ws.org/Vol-934/#OlgaiKozhemyakina> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/OlgaiKozhemyakina> ;
+    ns3:made <http://ceur-ws.org/Vol-934/#paper27> ;
+    ns3:name "Olga Kozhemyakina" .
+
+<http://ceur-ws.org/Vol-934/#OlgaiObuhova> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/OlgaiObuhova> ;
+    ns3:made <http://ceur-ws.org/Vol-934/#paper6> ;
+    ns3:name "Olga Obuhova" .
+
+<http://ceur-ws.org/Vol-934/#OlgaiOvdii> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/OlgaiOvdii> ;
+    ns3:made <http://ceur-ws.org/Vol-934/#paper5> ;
+    ns3:name "Olga Ovdii" .
+
+<http://ceur-ws.org/Vol-934/#OlgaiZhelenkova> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/OlgaiZhelenkova> ;
+    ns3:made <http://ceur-ws.org/Vol-934/#paper29> ;
+    ns3:name "Olga Zhelenkova" .
+
+<http://ceur-ws.org/Vol-934/#PaveliKajgorodov> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/PaveliKajgorodov> ;
+    ns3:made <http://ceur-ws.org/Vol-934/#paper28> ;
+    ns3:name "Pavel Kajgorodov" .
+
+<http://ceur-ws.org/Vol-934/#PaveliKlemenkov> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/PaveliKlemenkov> ;
+    ns3:made <http://ceur-ws.org/Vol-934/#paper43> ;
+    ns3:name "Pavel Klemenkov" .
+
+<http://ceur-ws.org/Vol-934/#PaveliVinokurov> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/PaveliVinokurov> ;
+    ns3:made <http://ceur-ws.org/Vol-934/#paper33> ;
+    ns3:name "Pavel Vinokurov" .
+
+<http://ceur-ws.org/Vol-934/#PeteriMarchuk> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/PeteriMarchuk> ;
+    ns3:made <http://ceur-ws.org/Vol-934/#paper42> ;
+    ns3:name "Peter Marchuk" .
+
+<http://ceur-ws.org/Vol-934/#RomaniKhalikov> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/RomaniKhalikov> ;
+    ns3:made <http://ceur-ws.org/Vol-934/#paper31> ;
+    ns3:name "Roman Khalikov" .
+
+<http://ceur-ws.org/Vol-934/#RuslaniSharapov> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/RuslaniSharapov> ;
+    ns3:made <http://ceur-ws.org/Vol-934/#paper20> ;
+    ns3:name "Ruslan Sharapov" .
+
+<http://ceur-ws.org/Vol-934/#SergeyiAmelkin> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/SergeyiAmelkin> ;
+    ns3:made <http://ceur-ws.org/Vol-934/#paper44> ;
+    ns3:name "Sergey Amelkin" .
+
+<http://ceur-ws.org/Vol-934/#SergeyiKrashakov> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/SergeyiKrashakov> ;
+    ns3:made <http://ceur-ws.org/Vol-934/#paper30> ;
+    ns3:name "Sergey Krashakov" .
+
+<http://ceur-ws.org/Vol-934/#SergeyiStupnikov> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/SergeyiStupnikov> ;
+    ns3:made <http://ceur-ws.org/Vol-934/#paper7> ;
+    ns3:name "Sergey Stupnikov" .
+
+<http://ceur-ws.org/Vol-934/#SvatlanaiShikota> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/SvatlanaiShikota> ;
+    ns3:made <http://ceur-ws.org/Vol-934/#paper30> ;
+    ns3:name "Svatlana Shikota" .
+
+<http://ceur-ws.org/Vol-934/#TatyanaiPliaskina> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/TatyanaiPliaskina> ;
+    ns3:made <http://ceur-ws.org/Vol-934/#paper29> ;
+    ns3:name "Tatyana Pliaskina" .
+
+<http://ceur-ws.org/Vol-934/#TatyanaiZaikina> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/TatyanaiZaikina> ;
+    ns3:made <http://ceur-ws.org/Vol-934/#paper22> ;
+    ns3:name "Tatyana Zaikina" .
+
+<http://ceur-ws.org/Vol-934/#ValeriyiReznichenko> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/ValeriyiReznichenko> ;
+    ns3:made <http://ceur-ws.org/Vol-934/#paper5> ;
+    ns3:name "Valeriy Reznichenko" .
+
+<http://ceur-ws.org/Vol-934/#ViktoriKrivohatsky> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/ViktoriKrivohatsky> ;
+    ns3:made <http://ceur-ws.org/Vol-934/#paper31> ;
+    ns3:name "Viktor Krivohatsky" .
+
+<http://ceur-ws.org/Vol-934/#ViktoriLebedev> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/ViktoriLebedev> ;
+    ns3:made <http://ceur-ws.org/Vol-934/#paper19> ;
+    ns3:name "Viktor Lebedev" .
+
+<http://ceur-ws.org/Vol-934/#ViktoriZakharov> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/ViktoriZakharov> ;
+    ns3:made <http://ceur-ws.org/Vol-934/#paper24> ;
+    ns3:name "Viktor Zakharov" .
+
+<http://ceur-ws.org/Vol-934/#VladimiriBarakhnin> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/VladimiriBarakhnin> ;
+    ns3:made <http://ceur-ws.org/Vol-934/#paper27> ;
+    ns3:name "Vladimir Barakhnin" .
+
+<http://ceur-ws.org/Vol-934/#VladimiriCherenkov> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/VladimiriCherenkov> ;
+    ns3:made <http://ceur-ws.org/Vol-934/#paper29> ;
+    ns3:name "Vladimir Cherenkov" .
+
+<http://ceur-ws.org/Vol-934/#VladimiriDobrynin> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/VladimiriDobrynin> ;
+    ns3:made <http://ceur-ws.org/Vol-934/#paper39> ;
+    ns3:name "Vladimir Dobrynin" .
+
+<http://ceur-ws.org/Vol-934/#VladimiriKorenkov> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/VladimiriKorenkov> ;
+    ns3:made <http://ceur-ws.org/Vol-934/#paper13> ;
+    ns3:name "Vladimir Korenkov" .
+
+<http://ceur-ws.org/Vol-934/#VladimiriNikolaev> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/VladimiriNikolaev> ;
+    ns3:made <http://ceur-ws.org/Vol-934/#paper35> ;
+    ns3:name "Vladimir Nikolaev" .
+
+<http://ceur-ws.org/Vol-934/#VladimiriPochuev> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/VladimiriPochuev> ;
+    ns3:made <http://ceur-ws.org/Vol-934/#paper50> ;
+    ns3:name "Vladimir Pochuev" .
+
+<http://ceur-ws.org/Vol-934/#VladimiriSerebriakov> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/VladimiriSerebriakov> ;
+    ns3:made <http://ceur-ws.org/Vol-934/#paper34> ;
+    ns3:name "Vladimir Serebriakov" .
+
+<http://ceur-ws.org/Vol-934/#VladimiriShekotilov> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/VladimiriShekotilov> ;
+    ns3:made <http://ceur-ws.org/Vol-934/#paper32> ;
+    ns3:name "Vladimir Shekotilov" .
+
+<http://ceur-ws.org/Vol-934/#VladimiriShergin> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/VladimiriShergin> ;
+    ns3:made <http://ceur-ws.org/Vol-934/#paper29> ;
+    ns3:name "Vladimir Shergin" .
+
+<http://ceur-ws.org/Vol-934/#ZinaidaiApanovich> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/ZinaidaiApanovich> ;
+    ns3:made <http://ceur-ws.org/Vol-934/#paper33> ;
+    ns3:name "Zinaida Apanovich" .
+
+<http://ceur-ws.org/Vol-934/#event> a ns6:WorkshopEvent ;
+    ns6:hasLocation <http://dbpedia.org/resource/Russia> ;
+    ns6:hasPart <http://ceur-ws.org/Vol-934/#part-RCDL> ;
+    ns6:isSubEventOf <http://ceur-ws.org/Vol-934/#conf> ;
+    ns7:beginsAtDatetime "2012-10-15T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:endsAtDatetime "2012-10-18T00:00:00+00:00"^^xsd:dateTime ;
+    ns9:license "http://choosealicense.com/licenses/no-license/" ;
     rdfs:seeAlso <http://ceur-ws.org/Vol-803/#event> .
+
+<http://ceur-ws.org/Vol-934/#AleksandriRogov> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/AleksandriRogov> ;
+    ns3:made <http://ceur-ws.org/Vol-934/#paper14>,
+        <http://ceur-ws.org/Vol-934/#paper49> ;
+    ns3:name "Aleksandr Rogov" .
+
+<http://ceur-ws.org/Vol-934/#InvitedTalk> a ns6:SessionEvent ;
+    ns6:partOf <http://ceur-ws.org/Vol-934/> ;
+    ns2:title "Invited Talk" .
+
+<http://ceur-ws.org/Vol-934/#IrinaiFilozova> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/IrinaiFilozova> ;
+    ns3:made <http://ceur-ws.org/Vol-934/#paper22>,
+        <http://ceur-ws.org/Vol-934/#paper39> ;
+    ns3:name "Irina Filozova" .
+
+<http://ceur-ws.org/Vol-934/#MikhailiKogalovsky> a ns3:Person ;
+    ns4:affiliation "" ;
+    ns5:sameAs <http://ceur-ws.org/persons/MikhailiKogalovsky> ;
+    ns3:made <http://ceur-ws.org/Vol-934/#paper3> ;
+    ns3:name "Mikhail Kogalovsky" .
+
+<http://ceur-ws.org/Vol-934/#SergeyiZnamenskij> a ns3:Person ;
+    ns4:affiliation "" ;
+    ns5:sameAs <http://ceur-ws.org/persons/SergeyiZnamenskij> ;
+    ns3:made <http://ceur-ws.org/Vol-934/#paper41> ;
+    ns3:name "Sergey Znamenskij" .
+
+<http://ceur-ws.org/Vol-934/#Tutorial> a ns6:SessionEvent ;
+    ns6:partOf <http://ceur-ws.org/Vol-934/> ;
+    ns2:title "Tutorial" .
+
+<http://ceur-ws.org/Vol-934/#VladimiriVdovitsyn> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/VladimiriVdovitsyn> ;
+    ns3:made <http://ceur-ws.org/Vol-934/#paper19>,
+        <http://ceur-ws.org/Vol-934/#paper4> ;
+    ns3:name "Vladimir Vdovitsyn" .
+
+<http://ceur-ws.org/Vol-934/#paper1> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-934/> ;
+    ns2:title "Digital Curation as a Key Component in Research Infrastructures: From Data Preservation to Processes Preservation and Verification" ;
+    ns1:endPage 1 ;
+    ns1:numPages 1 ;
+    ns1:section <http://ceur-ws.org/Vol-934/#InvitedTalk> ;
+    ns1:startPage 1 ;
+    ns4:author <http://ceur-ws.org/Vol-934/#AndreasiRauber> .
+
+<http://ceur-ws.org/Vol-934/#paper10> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-934/> ;
+    ns2:title "Технологии Oracle для работы с Большими Данными (Oracle for Big Data)" ;
+    ns1:endPage 64 ;
+    ns1:numPages 1 ;
+    ns1:section <http://ceur-ws.org/Vol-934/#Sessions34BigDataTechnologiesInvitedTalks> ;
+    ns1:startPage 64 ;
+    ns4:author <http://ceur-ws.org/Vol-934/#AndreyiPivovarov> .
+
+<http://ceur-ws.org/Vol-934/#paper11> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-934/> ;
+    ns2:title "Oracle для анализа и исследования Больших Данных (Oracle Technologies for Analysis and Study of Big Data)" ;
+    ns1:endPage 66 ;
+    ns1:numPages 2 ;
+    ns1:section <http://ceur-ws.org/Vol-934/#Sessions34BigDataTechnologiesInvitedTalks> ;
+    ns1:startPage 65 ;
+    ns4:author <http://ceur-ws.org/Vol-934/#OlgaiGorchinskaja> .
+
+<http://ceur-ws.org/Vol-934/#paper12> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-934/> ;
+    ns2:title "Инструменты Oracle для создания частных облаков (Oracle Tools for Private Clouds)" ;
+    ns1:endPage 67 ;
+    ns1:numPages 1 ;
+    ns1:section <http://ceur-ws.org/Vol-934/#Sessions34BigDataTechnologiesInvitedTalks> ;
+    ns1:startPage 67 ;
+    ns4:author <http://ceur-ws.org/Vol-934/#DmitryiErmoshin> .
+
+<http://ceur-ws.org/Vol-934/#paper13> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-934/> ;
+    ns2:title "Использование грид-технологий для обработки и распределенного хранения сверхбольших объемов данных (сотни петабайт) (Using of Grid-Infrastructure for Distributed Processing and Storage of Enormous Amount of Data (Hundreds of Petabytes))" ;
+    ns1:endPage 73 ;
+    ns1:numPages 6 ;
+    ns1:section <http://ceur-ws.org/Vol-934/#Sessions34BigDataTechnologiesInvitedTalks> ;
+    ns1:startPage 68 ;
+    ns4:author <http://ceur-ws.org/Vol-934/#VladimiriKorenkov> .
+
+<http://ceur-ws.org/Vol-934/#paper17> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-934/> ;
+    ns2:title "Исследование графа категорий английской версии Wikipedia (Investigation of the English Version of the Wikipedia Categories Graph)" ;
+    ns1:endPage 101 ;
+    ns1:numPages 5 ;
+    ns1:section <http://ceur-ws.org/Vol-934/#Session5AnalysisandProcessingofTextualInformationandWebResources> ;
+    ns1:startPage 97 ;
+    ns4:author <http://ceur-ws.org/Vol-934/#AlexanderiShkotin> .
+
+<http://ceur-ws.org/Vol-934/#paper2> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-934/> ;
+    ns2:title "Content-based Retrieval on Very Large Visual Document Archives" ;
+    ns1:endPage 2 ;
+    ns1:numPages 1 ;
+    ns1:section <http://ceur-ws.org/Vol-934/#Tutorial> ;
+    ns1:startPage 2 ;
+    ns4:author <http://ceur-ws.org/Vol-934/#GiuseppeiAmato> .
+
+<http://ceur-ws.org/Vol-934/#paper23> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-934/> ;
+    ns2:title "Retrieval of Optimal Subspace Clusters Set for an Effective Similarity Search in a High-Dimensional Spaces" ;
+    ns1:endPage 142 ;
+    ns1:numPages 7 ;
+    ns1:section <http://ceur-ws.org/Vol-934/#Session6MethodsandTechnologiesofInformationRetrieval> ;
+    ns1:startPage 136 ;
+    ns4:author <http://ceur-ws.org/Vol-934/#IvaniSudos> .
+
+<http://ceur-ws.org/Vol-934/#paper3> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-934/> ;
+    ns2:title "Метаданные, их свойства, функции, классификация и средства представления (Metadata, their Properties, Functions and Classifications)" ;
+    ns1:endPage 14 ;
+    ns1:numPages 12 ;
+    ns1:section <http://ceur-ws.org/Vol-934/#Session1MetadataConceptualModelsOntologies> ;
+    ns1:startPage 3 ;
+    ns4:author <http://ceur-ws.org/Vol-934/#MikhailiKogalovsky> .
+
+<http://ceur-ws.org/Vol-934/#paper32> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-934/> ;
+    ns2:title "Создание автоматизированной интернет-коллекции по крупномасштабным топографическим межевым и военным архивным картам России XIX века (Creating an Automated Online Collection on Large-Scale Topographic and Military Archival Russian Land-Maps of the XIX Century)" ;
+    ns1:endPage 204 ;
+    ns1:numPages 7 ;
+    ns1:section <http://ceur-ws.org/Vol-934/#Session8ScientificDigitalLibrariesDevelopment> ;
+    ns1:startPage 198 ;
+    ns4:author <http://ceur-ws.org/Vol-934/#VladimiriShekotilov> .
+
+<http://ceur-ws.org/Vol-934/#paper36> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-934/> ;
+    ns2:title "Электронная коллекция биографических фактов (Digital Collection of Biographic Facts)" ;
+    ns1:endPage 238 ;
+    ns1:numPages 7 ;
+    ns1:section <http://ceur-ws.org/Vol-934/#Session10DigitalCollectionsofInformationResources> ;
+    ns1:startPage 232 ;
+    ns4:author <http://ceur-ws.org/Vol-934/#NataliaiMarkova> .
+
+<http://ceur-ws.org/Vol-934/#paper37> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-934/> ;
+    ns2:title "Опыт создания и поддержки полнотекстовых баз данных неопубликованных документов (Experience of Development and Support of Full-Text Databases of Unpublished Documents)" ;
+    ns1:endPage 244 ;
+    ns1:numPages 6 ;
+    ns1:section <http://ceur-ws.org/Vol-934/#Session10DigitalCollectionsofInformationResources> ;
+    ns1:startPage 239 ;
+    ns4:author <http://ceur-ws.org/Vol-934/#NinaiAvdeeva> .
+
+<http://ceur-ws.org/Vol-934/#paper38> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-934/> ;
+    ns2:title "Концептуальные модели данных в отождествлении физических свойств пульсаров на вековом масштабе (Conceptual Data Models in the Proper Attribution of Pulsars)" ;
+    ns1:endPage 251 ;
+    ns1:numPages 7 ;
+    ns1:section <http://ceur-ws.org/Vol-934/#Session10DigitalCollectionsofInformationResources> ;
+    ns1:startPage 245 ;
+    ns4:author <http://ceur-ws.org/Vol-934/#ArkadyiAvramenko> .
+
+<http://ceur-ws.org/Vol-934/#paper40> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-934/> ;
+    ns2:title "Информационная система поддержка мониторинга состояния крон деревьев международного экологического мониторинга ICP Forests на территории России (Information System for Crown Condition Monitoring Support for the ICP Forests International Ecological Monitoring in the Russian Federation)" ;
+    ns1:endPage 264 ;
+    ns1:numPages 7 ;
+    ns1:section <http://ceur-ws.org/Vol-934/#Session10DigitalCollectionsofInformationResources> ;
+    ns1:startPage 258 ;
+    ns4:author <http://ceur-ws.org/Vol-934/#MaximiShashkov> .
+
+<http://ceur-ws.org/Vol-934/#paper41> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-934/> ;
+    ns2:title "На пути к новой теории информационных систем (On the way to new information systems theory)" ;
+    ns1:endPage 273 ;
+    ns1:numPages 9 ;
+    ns1:section <http://ceur-ws.org/Vol-934/#Session11MethodologyandDesignToolsRecommenderSystems> ;
+    ns1:startPage 265 ;
+    ns4:author <http://ceur-ws.org/Vol-934/#SergeyiZnamenskij> .
+
+<http://ceur-ws.org/Vol-934/#paper43> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-934/> ;
+    ns2:title "NoSQL как подход к построению рекомендательных сервисов реального времени (Building Real-Time Recommender Services with NoSQL)" ;
+    ns1:endPage 287 ;
+    ns1:numPages 7 ;
+    ns1:section <http://ceur-ws.org/Vol-934/#Session11MethodologyandDesignToolsRecommenderSystems> ;
+    ns1:startPage 281 ;
+    ns4:author <http://ceur-ws.org/Vol-934/#PaveliKlemenkov> .
+
+<http://ceur-ws.org/Vol-934/#paper44> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-934/> ;
+    ns2:title "Оценка эффективности рекомендательных систем (Evaluation of Recommender Systems Efficiency)" ;
+    ns1:endPage 291 ;
+    ns1:numPages 4 ;
+    ns1:section <http://ceur-ws.org/Vol-934/#Session11MethodologyandDesignToolsRecommenderSystems> ;
+    ns1:startPage 288 ;
+    ns4:author <http://ceur-ws.org/Vol-934/#SergeyiAmelkin> .
+
+<http://ceur-ws.org/Vol-934/#paper48> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-934/> ;
+    ns2:title "Подход к автоматическому извлечению информации о назначениях и отставках лиц (на материале новостных сообщений) (An Approach to the Automatic Fact Extraction from New Texts on Appointments and Dismissals)" ;
+    ns1:endPage 317 ;
+    ns1:numPages 5 ;
+    ns1:section <http://ceur-ws.org/Vol-934/#Session12InformationExtractionfromText> ;
+    ns1:startPage 313 ;
+    ns4:author <http://ceur-ws.org/Vol-934/#NataliaiVlasova> .
+
+<http://ceur-ws.org/Vol-934/#paper51> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-934/> ;
+    ns2:title "Повышение качества классификации текстов путем модификации обучающего множества (Improvement of Text Classification Quality by Modifying the Training Set)" ;
+    ns1:endPage 339 ;
+    ns1:numPages 2 ;
+    ns1:section <http://ceur-ws.org/Vol-934/#Session13TaggingImagesDataSecurityEnsuring> ;
+    ns1:startPage 338 ;
+    ns4:author <http://ceur-ws.org/Vol-934/#AntoniKolesov> .
+
+<http://ceur-ws.org/Vol-934/#paper7> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-934/> ;
+    ns2:title "Унификация модели данных, основанной на многомерных массивах, при интеграции неоднородных информационных ресурсов (Unification of an Array Data Model for the Integration of Heterogeneous Information Resources)" ;
+    ns1:endPage 52 ;
+    ns1:numPages 11 ;
+    ns1:section <http://ceur-ws.org/Vol-934/#Session2DataModelsDataModelMapping> ;
+    ns1:startPage 42 ;
+    ns4:author <http://ceur-ws.org/Vol-934/#SergeyiStupnikov> .
+
+<http://ceur-ws.org/Vol-934/#paper8> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-934/> ;
+    ns2:title "Отображениe моделей данных NoSQL в объектные спецификации (Mapping of the NoSQL Data Models to Object Specifications)" ;
+    ns1:endPage 62 ;
+    ns1:numPages 10 ;
+    ns1:section <http://ceur-ws.org/Vol-934/#Session2DataModelsDataModelMapping> ;
+    ns1:startPage 53 ;
+    ns4:author <http://ceur-ws.org/Vol-934/#NikolayiSkvortsov> .
+
+<http://ceur-ws.org/Vol-934/#paper9> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-934/> ;
+    ns2:title "Инициатива Больших данных: программы, платформы, прогнозы (Big Data Initiative: Programs, Platforms and Forecasts)" ;
+    ns1:endPage 63 ;
+    ns1:numPages 1 ;
+    ns1:section <http://ceur-ws.org/Vol-934/#Sessions34BigDataTechnologiesInvitedTalks> ;
+    ns1:startPage 63 ;
+    ns4:author <http://ceur-ws.org/Vol-934/#LeonidiKalinichenko> .
+
+<http://ceur-ws.org/Vol-934/#Session2DataModelsDataModelMapping> a ns6:SessionEvent ;
+    ns6:partOf <http://ceur-ws.org/Vol-934/> ;
+    ns2:title "Session 2: Data Models, Data Model Mapping" .
+
+<http://ceur-ws.org/Vol-934/#paper15> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-934/> ;
+    ns2:title "Метод автоматической классификации текстов по тональности, основанный на словаре эмоциональной лексики (The Automatic Sentiment Text Classification Method Based on Emotional Vocabulary)" ;
+    ns1:endPage 86 ;
+    ns1:numPages 6 ;
+    ns1:section <http://ceur-ws.org/Vol-934/#Session5AnalysisandProcessingofTextualInformationandWebResources> ;
+    ns1:startPage 81 ;
+    ns4:author <http://ceur-ws.org/Vol-934/#EugenyiKotelnikov>,
+        <http://ceur-ws.org/Vol-934/#MariaiKlekovkina> .
+
+<http://ceur-ws.org/Vol-934/#paper18> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-934/> ;
+    ns2:title "Application of BIRCH to text clustering" ;
+    ns1:endPage 105 ;
+    ns1:numPages 4 ;
+    ns1:section <http://ceur-ws.org/Vol-934/#Session5AnalysisandProcessingofTextualInformationandWebResources> ;
+    ns1:startPage 102 ;
+    ns4:author <http://ceur-ws.org/Vol-934/#AlexandriGoroslavskiy>,
+        <http://ceur-ws.org/Vol-934/#IlyaiKarpov> .
+
+<http://ceur-ws.org/Vol-934/#paper19> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-934/> ;
+    ns2:title "Ранжирование документов в системе поиска, основанной на применении онтологии (Document Ranking in Ontology-Based Information Retrieval System)" ;
+    ns1:endPage 112 ;
+    ns1:numPages 7 ;
+    ns1:section <http://ceur-ws.org/Vol-934/#Session6MethodsandTechnologiesofInformationRetrieval> ;
+    ns1:startPage 106 ;
+    ns4:author <http://ceur-ws.org/Vol-934/#ViktoriLebedev>,
+        <http://ceur-ws.org/Vol-934/#VladimiriVdovitsyn> .
+
+<http://ceur-ws.org/Vol-934/#paper20> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-934/> ;
+    ns2:title "Поиск визуально подобных изображений на основе машинного обучения (Machine Learning of Visually Similar Images Search)" ;
+    ns1:endPage 120 ;
+    ns1:numPages 8 ;
+    ns1:section <http://ceur-ws.org/Vol-934/#Session6MethodsandTechnologiesofInformationRetrieval> ;
+    ns1:startPage 113 ;
+    ns4:author <http://ceur-ws.org/Vol-934/#AlexeyiVarlamov>,
+        <http://ceur-ws.org/Vol-934/#RuslaniSharapov> .
+
+<http://ceur-ws.org/Vol-934/#paper21> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-934/> ;
+    ns2:title "Географический поиск в информационных системах с использованием ретроспективного тезауруса (Geographical Search in Information Systems Using Retrospective Thesaurus)" ;
+    ns1:endPage 128 ;
+    ns1:numPages 8 ;
+    ns1:section <http://ceur-ws.org/Vol-934/#Session6MethodsandTechnologiesofInformationRetrieval> ;
+    ns1:startPage 121 ;
+    ns4:author <http://ceur-ws.org/Vol-934/#DaniliSkachkov>,
+        <http://ceur-ws.org/Vol-934/#OlegiZhizhimov> .
+
+<http://ceur-ws.org/Vol-934/#paper24> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-934/> ;
+    ns2:title "Автоматическая оценка подобия тематического содержания текстов на основе сравнения их формализованных смысловых описаний (Automatic Assessment of Similarity of the Texts' Thematic Content on the Base of Their Formalized Semantic Descriptions Comparison)" ;
+    ns1:endPage 149 ;
+    ns1:numPages 7 ;
+    ns1:section <http://ceur-ws.org/Vol-934/#Session7AnalysisandProcessingofTextualInformation> ;
+    ns1:startPage 143 ;
+    ns4:author <http://ceur-ws.org/Vol-934/#AlexeyiKhoroshilov>,
+        <http://ceur-ws.org/Vol-934/#ViktoriZakharov> .
+
+<http://ceur-ws.org/Vol-934/#paper25> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-934/> ;
+    ns2:title "Динамические частотные характеристики как основа для структурного описания разнородных лингвистических объектов (Dynamic Frequency Features as the Basis for the Structural Description of Diverse Linguistic Objects)" ;
+    ns1:endPage 159 ;
+    ns1:numPages 10 ;
+    ns1:section <http://ceur-ws.org/Vol-934/#Session7AnalysisandProcessingofTextualInformation> ;
+    ns1:startPage 150 ;
+    ns4:author <http://ceur-ws.org/Vol-934/#DmitryiLande>,
+        <http://ceur-ws.org/Vol-934/#ElenaiYagunova> .
+
+<http://ceur-ws.org/Vol-934/#paper26> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-934/> ;
+    ns2:title "Поиск референциальных отношений между информационными объектами в процессе автоматического анализа документов (Searching Referential Relationships between the Information Objects During the Automatic Document Processing)" ;
+    ns1:endPage 166 ;
+    ns1:numPages 7 ;
+    ns1:section <http://ceur-ws.org/Vol-934/#Session7AnalysisandProcessingofTextualInformation> ;
+    ns1:startPage 160 ;
+    ns4:author <http://ceur-ws.org/Vol-934/#AlexeyiSeryj>,
+        <http://ceur-ws.org/Vol-934/#ElenaiSidorova> .
+
+<http://ceur-ws.org/Vol-934/#paper27> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-934/> ;
+    ns2:title "Об автоматизации комплексного анализа русского поэтического текста (About the Automation of the Complex Analysis of Russian Poetic Text)" ;
+    ns1:endPage 171 ;
+    ns1:numPages 5 ;
+    ns1:section <http://ceur-ws.org/Vol-934/#Session7AnalysisandProcessingofTextualInformation> ;
+    ns1:startPage 167 ;
+    ns4:author <http://ceur-ws.org/Vol-934/#OlgaiKozhemyakina>,
+        <http://ceur-ws.org/Vol-934/#VladimiriBarakhnin> .
+
+<http://ceur-ws.org/Vol-934/#paper39> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-934/> ;
+    ns2:title "Структурно-функциональное обеспечение электронного семантического сборника образовательных ресурсов (Structural and Fuctional Support of the Semantic Digital Book)" ;
+    ns1:endPage 257 ;
+    ns1:numPages 6 ;
+    ns1:section <http://ceur-ws.org/Vol-934/#Session10DigitalCollectionsofInformationResources> ;
+    ns1:startPage 252 ;
+    ns4:author <http://ceur-ws.org/Vol-934/#IrinaiFilozova>,
+        <http://ceur-ws.org/Vol-934/#VladimiriDobrynin> .
+
+<http://ceur-ws.org/Vol-934/#paper4> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-934/> ;
+    ns2:title "Основанный на онтологии подход к интеграции геоинформационной системы с коллекциями электронных научных публикаций (Ontology-based Approach Towards Integration of Geographical Information System with Digital Collections of Scientific Publications)" ;
+    ns1:endPage 20 ;
+    ns1:numPages 6 ;
+    ns1:section <http://ceur-ws.org/Vol-934/#Session1MetadataConceptualModelsOntologies> ;
+    ns1:startPage 15 ;
+    ns4:author <http://ceur-ws.org/Vol-934/#AleksandriPolin>,
+        <http://ceur-ws.org/Vol-934/#VladimiriVdovitsyn> .
+
+<http://ceur-ws.org/Vol-934/#paper42> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-934/> ;
+    ns2:title "Платформа реализации электронных архивов данных и документов (Platform for Digital Data and Document Archives Implementation)" ;
+    ns1:endPage 280 ;
+    ns1:numPages 7 ;
+    ns1:section <http://ceur-ws.org/Vol-934/#Session11MethodologyandDesignToolsRecommenderSystems> ;
+    ns1:startPage 274 ;
+    ns4:author <http://ceur-ws.org/Vol-934/#AlexanderiMarchuk>,
+        <http://ceur-ws.org/Vol-934/#PeteriMarchuk> .
+
+<http://ceur-ws.org/Vol-934/#paper45> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-934/> ;
+    ns2:title "Итерационное извлечение шаблонов описания событий по новостным кластерам (Iterative Pattern Extraction Using News Clusters)" ;
+    ns1:endPage 298 ;
+    ns1:numPages 7 ;
+    ns1:section <http://ceur-ws.org/Vol-934/#Session12InformationExtractionfromText> ;
+    ns1:startPage 292 ;
+    ns4:author <http://ceur-ws.org/Vol-934/#DmitryiKotelnikov>,
+        <http://ceur-ws.org/Vol-934/#NataliaiLoukachevitch> .
+
+<http://ceur-ws.org/Vol-934/#paper49> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-934/> ;
+    ns2:title "Аннотирование изображений электронной коллекции исторических фотографий (Tagging of Digital Historical Images)" ;
+    ns1:endPage 326 ;
+    ns1:numPages 9 ;
+    ns1:section <http://ceur-ws.org/Vol-934/#Session13TaggingImagesDataSecurityEnsuring> ;
+    ns1:startPage 318 ;
+    ns4:author <http://ceur-ws.org/Vol-934/#AleksandriRogov>,
+        <http://ceur-ws.org/Vol-934/#AndreyiTalbonen> .
+
+<http://ceur-ws.org/Vol-934/#Session13TaggingImagesDataSecurityEnsuring> a ns6:SessionEvent ;
+    ns6:partOf <http://ceur-ws.org/Vol-934/> ;
+    ns2:title "Session 13: Tagging Images, Data Security Ensuring" .
+
+<http://ceur-ws.org/Vol-934/#Session9SemanticWebandLinkedOpenData> a ns6:SessionEvent ;
+    ns6:partOf <http://ceur-ws.org/Vol-934/> ;
+    ns2:title "Session 9: Semantic Web and Linked Open Data" .
+
+<http://ceur-ws.org/Vol-934/#paper14> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-934/> ;
+    ns2:title "О дешифровке рукописных исторических документов (About the Decoding of Handwritten Historical Documents)" ;
+    ns1:endPage 80 ;
+    ns1:numPages 7 ;
+    ns1:section <http://ceur-ws.org/Vol-934/#Session5AnalysisandProcessingofTextualInformationandWebResources> ;
+    ns1:startPage 74 ;
+    ns4:author <http://ceur-ws.org/Vol-934/#AleksandriRogov>,
+        <http://ceur-ws.org/Vol-934/#ArtemiSkabin>,
+        <http://ceur-ws.org/Vol-934/#IvaniShterkel> .
+
+<http://ceur-ws.org/Vol-934/#paper22> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-934/> ;
+    ns2:title "Визуализация поиска информации в репозитории ОИЯИ (Using Information Visualization at JINR Document Server)" ;
+    ns1:endPage 135 ;
+    ns1:numPages 7 ;
+    ns1:section <http://ceur-ws.org/Vol-934/#Session6MethodsandTechnologiesofInformationRetrieval> ;
+    ns1:startPage 129 ;
+    ns4:author <http://ceur-ws.org/Vol-934/#GenisiMusulmanbekov>,
+        <http://ceur-ws.org/Vol-934/#IrinaiFilozova>,
+        <http://ceur-ws.org/Vol-934/#TatyanaiZaikina> .
+
+<http://ceur-ws.org/Vol-934/#paper28> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-934/> ;
+    ns2:title "База данных двойных звезд (BDB) (Database of Binary Stars BDB)" ;
+    ns1:endPage 179 ;
+    ns1:numPages 8 ;
+    ns1:section <http://ceur-ws.org/Vol-934/#Session8ScientificDigitalLibrariesDevelopment> ;
+    ns1:startPage 172 ;
+    ns4:author <http://ceur-ws.org/Vol-934/#DanaiKovaleva>,
+        <http://ceur-ws.org/Vol-934/#OlegiMalkov>,
+        <http://ceur-ws.org/Vol-934/#PaveliKajgorodov> .
+
+<http://ceur-ws.org/Vol-934/#paper30> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-934/> ;
+    ns2:title "Единая электронная система библиотечных сервисов (Information System for Library Services)" ;
+    ns1:endPage 191 ;
+    ns1:numPages 5 ;
+    ns1:section <http://ceur-ws.org/Vol-934/#Session8ScientificDigitalLibrariesDevelopment> ;
+    ns1:startPage 187 ;
+    ns4:author <http://ceur-ws.org/Vol-934/#LeviShchur>,
+        <http://ceur-ws.org/Vol-934/#SergeyiKrashakov>,
+        <http://ceur-ws.org/Vol-934/#SvatlanaiShikota> .
+
+<http://ceur-ws.org/Vol-934/#paper46> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-934/> ;
+    ns2:title "Автоматическое связывание документов (Automatic Document Linking)" ;
+    ns1:endPage 308 ;
+    ns1:numPages 10 ;
+    ns1:section <http://ceur-ws.org/Vol-934/#Session12InformationExtractionfromText> ;
+    ns1:startPage 299 ;
+    ns4:author <http://ceur-ws.org/Vol-934/#AnnaiKnyazeva>,
+        <http://ceur-ws.org/Vol-934/#IgoriTurchanovsky>,
+        <http://ceur-ws.org/Vol-934/#OlegiKolobov> .
+
+<http://ceur-ws.org/Vol-934/#paper5> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-934/> ;
+    ns2:title "Концептуальная модель научной публикации (Conceptual Model of Research Publication)" ;
+    ns1:endPage 32 ;
+    ns1:numPages 12 ;
+    ns1:section <http://ceur-ws.org/Vol-934/#Session1MetadataConceptualModelsOntologies> ;
+    ns1:startPage 21 ;
+    ns4:author <http://ceur-ws.org/Vol-934/#GalinaiProskudina>,
+        <http://ceur-ws.org/Vol-934/#OlgaiOvdii>,
+        <http://ceur-ws.org/Vol-934/#ValeriyiReznichenko> .
+
+<http://ceur-ws.org/Vol-934/#paper6> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-934/> ;
+    ns2:title "Технология создания комплексированных индексов публикационной активности (The Technology of Aggregated Science Citation Indexes Formation)" ;
+    ns1:endPage 41 ;
+    ns1:numPages 9 ;
+    ns1:section <http://ceur-ws.org/Vol-934/#Session1MetadataConceptualModelsOntologies> ;
+    ns1:startPage 33 ;
+    ns4:author <http://ceur-ws.org/Vol-934/#IvaniSoloviev>,
+        <http://ceur-ws.org/Vol-934/#MaximiZaikin>,
+        <http://ceur-ws.org/Vol-934/#OlgaiObuhova> .
+
+<http://ceur-ws.org/Vol-934/#Session11MethodologyandDesignToolsRecommenderSystems> a ns6:SessionEvent ;
+    ns6:partOf <http://ceur-ws.org/Vol-934/> ;
+    ns2:title "Session 11: Methodology and Design Tools, Recommender Systems" .
+
+<http://ceur-ws.org/Vol-934/#Session12InformationExtractionfromText> a ns6:SessionEvent ;
+    ns6:partOf <http://ceur-ws.org/Vol-934/> ;
+    ns2:title "Session 12: Information Extraction from Text" .
+
+<http://ceur-ws.org/Vol-934/#Session1MetadataConceptualModelsOntologies> a ns6:SessionEvent ;
+    ns6:partOf <http://ceur-ws.org/Vol-934/> ;
+    ns2:title "Session 1: Metadata, Conceptual Models, Ontologies" .
+
+<http://ceur-ws.org/Vol-934/#Session7AnalysisandProcessingofTextualInformation> a ns6:SessionEvent ;
+    ns6:partOf <http://ceur-ws.org/Vol-934/> ;
+    ns2:title "Session 7: Analysis and Processing of Textual Information" .
+
+<http://ceur-ws.org/Vol-934/#paper16> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-934/> ;
+    ns2:title "Метод обнаружения изменений структуры веб-сайтов в системе сбора новостной информации (The Method of Detecting Structure Changes of News Websites)" ;
+    ns1:endPage 96 ;
+    ns1:numPages 10 ;
+    ns1:section <http://ceur-ws.org/Vol-934/#Session5AnalysisandProcessingofTextualInformationandWebResources> ;
+    ns1:startPage 87 ;
+    ns4:author <http://ceur-ws.org/Vol-934/#ArkadyiAndreev>,
+        <http://ceur-ws.org/Vol-934/#DmitryiBerezkin>,
+        <http://ceur-ws.org/Vol-934/#IlyaiKozlov>,
+        <http://ceur-ws.org/Vol-934/#KonstantiniSimakov> .
+
+<http://ceur-ws.org/Vol-934/#paper29> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-934/> ;
+    ns2:title "Интеграция программных систем поддержки астрофизических наблюдений (Integration of Software Systems for Astrophysical Observations Support)" ;
+    ns1:endPage 186 ;
+    ns1:numPages 7 ;
+    ns1:section <http://ceur-ws.org/Vol-934/#Session8ScientificDigitalLibrariesDevelopment> ;
+    ns1:startPage 180 ;
+    ns4:author <http://ceur-ws.org/Vol-934/#OlgaiZhelenkova>,
+        <http://ceur-ws.org/Vol-934/#TatyanaiPliaskina>,
+        <http://ceur-ws.org/Vol-934/#VladimiriCherenkov>,
+        <http://ceur-ws.org/Vol-934/#VladimiriShergin> .
+
+<http://ceur-ws.org/Vol-934/#paper47> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-934/> ;
+    ns2:title "Сервисы структурирования математического контента и интеграция электронных математических коллекций в научное информационное пространство (Services Structuring Mathematical Content and Integration of Digital Mathematical Collections into Scientific Information Space)" ;
+    ns1:endPage 312 ;
+    ns1:numPages 4 ;
+    ns1:section <http://ceur-ws.org/Vol-934/#Session12InformationExtractionfromText> ;
+    ns1:startPage 309 ;
+    ns4:author <http://ceur-ws.org/Vol-934/#AlexanderiElizarov>,
+        <http://ceur-ws.org/Vol-934/#DenisiZuev>,
+        <http://ceur-ws.org/Vol-934/#EugeneiLipachev>,
+        <http://ceur-ws.org/Vol-934/#MichaeliMalakhaltsev> .
+
+<http://ceur-ws.org/Vol-934/#Session10DigitalCollectionsofInformationResources> a ns6:SessionEvent ;
+    ns6:partOf <http://ceur-ws.org/Vol-934/> ;
+    ns2:title "Session 10: Digital Collections of Information Resources" .
+
+<http://ceur-ws.org/Vol-934/#Session5AnalysisandProcessingofTextualInformationandWebResources> a ns6:SessionEvent ;
+    ns6:partOf <http://ceur-ws.org/Vol-934/> ;
+    ns2:title "Session 5: Analysis and Processing of Textual Information and Web Resources" .
+
+<http://ceur-ws.org/Vol-934/#Session6MethodsandTechnologiesofInformationRetrieval> a ns6:SessionEvent ;
+    ns6:partOf <http://ceur-ws.org/Vol-934/> ;
+    ns2:title "Session 6: Methods and Technologies of Information Retrieval" .
+
+<http://ceur-ws.org/Vol-934/#Session8ScientificDigitalLibrariesDevelopment> a ns6:SessionEvent ;
+    ns6:partOf <http://ceur-ws.org/Vol-934/> ;
+    ns2:title "Session 8: Scientific Digital Libraries Development" .
+
+<http://ceur-ws.org/Vol-934/#Sessions34BigDataTechnologiesInvitedTalks> a ns6:SessionEvent ;
+    ns6:partOf <http://ceur-ws.org/Vol-934/> ;
+    ns2:title "Sessions 3-4: Big Data Technologies (Invited Talks)" .
+
+<http://ceur-ws.org/Vol-934/#paper33> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-934/> ;
+    ns2:title "Цифровая библиотека научных статей по количественной спектроскопии (Digital Scientific Library of Quantitative Spectroscopy Publications)" ;
+    ns1:endPage 214 ;
+    ns1:numPages 10 ;
+    ns1:section <http://ceur-ws.org/Vol-934/#Session9SemanticWebandLinkedOpenData> ;
+    ns1:startPage 205 ;
+    ns4:author <http://ceur-ws.org/Vol-934/#AlexanderiFazliev>,
+        <http://ceur-ws.org/Vol-934/#AlexeyiAkhlyostin>,
+        <http://ceur-ws.org/Vol-934/#AlexeyiPrivezentsev>,
+        <http://ceur-ws.org/Vol-934/#PaveliVinokurov>,
+        <http://ceur-ws.org/Vol-934/#ZinaidaiApanovich> .
+
+<http://ceur-ws.org/Vol-934/#paper34> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-934/> ;
+    ns2:title "Онтологическое моделирование и публикация данных об особо охраняемых природных территориях (Ontological Modeling and Publishing Data on Protected Natural Parks)" ;
+    ns1:endPage 221 ;
+    ns1:numPages 7 ;
+    ns1:section <http://ceur-ws.org/Vol-934/#Session9SemanticWebandLinkedOpenData> ;
+    ns1:startPage 215 ;
+    ns4:author <http://ceur-ws.org/Vol-934/#DmitryiMalakhov>,
+        <http://ceur-ws.org/Vol-934/#EvgeniyaiUstinova>,
+        <http://ceur-ws.org/Vol-934/#KirilliTeymurazov>,
+        <http://ceur-ws.org/Vol-934/#KonstantiniKuznetcov>,
+        <http://ceur-ws.org/Vol-934/#VladimiriSerebriakov> .
+
+<http://ceur-ws.org/Vol-934/#paper50> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-934/> ;
+    ns2:title "Безопасность хранения и передачи медицинских (персональных) данных при многостороннем обмене медицинской информацией по программе «Международная космическая станция» (Security Storage and Transmission of Medical (Personal) Data for the Multilateral Exchange of Medical Information in Frame of \"The International Space Station\" program)" ;
+    ns1:endPage 337 ;
+    ns1:numPages 11 ;
+    ns1:section <http://ceur-ws.org/Vol-934/#Session13TaggingImagesDataSecurityEnsuring> ;
+    ns1:startPage 327 ;
+    ns4:author <http://ceur-ws.org/Vol-934/#AnatolyiShulenin>,
+        <http://ceur-ws.org/Vol-934/#AntoniSkorokhodov>,
+        <http://ceur-ws.org/Vol-934/#EkaterinaiKantemirova>,
+        <http://ceur-ws.org/Vol-934/#LiliaiSimaeva>,
+        <http://ceur-ws.org/Vol-934/#VladimiriPochuev> .
+
+<http://ceur-ws.org/Vol-934/#paper35> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-934/> ;
+    ns2:title "Intelligent Tools for Semantic Web Navigator Design" ;
+    ns1:endPage 231 ;
+    ns1:numPages 10 ;
+    ns1:section <http://ceur-ws.org/Vol-934/#Session9SemanticWebandLinkedOpenData> ;
+    ns1:startPage 222 ;
+    ns4:author <http://ceur-ws.org/Vol-934/#AndreyiMatskevich>,
+        <http://ceur-ws.org/Vol-934/#ElenaiKozerenko>,
+        <http://ceur-ws.org/Vol-934/#IgoriKuznetsov>,
+        <http://ceur-ws.org/Vol-934/#MikhailiCharnine>,
+        <http://ceur-ws.org/Vol-934/#NikolayiSomin>,
+        <http://ceur-ws.org/Vol-934/#VladimiriNikolaev> .
+
+<http://ceur-ws.org/Vol-934/#paper31> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-934/> ;
+    ns2:title "От системы ЗООИНТ к системе ЗООДИВ (From the ZOOINT System to the ZOODIV System)" ;
+    ns1:endPage 197 ;
+    ns1:numPages 6 ;
+    ns1:section <http://ceur-ws.org/Vol-934/#Session8ScientificDigitalLibrariesDevelopment> ;
+    ns1:startPage 192 ;
+    ns4:author <http://ceur-ws.org/Vol-934/#AleksandriKirejtshuk>,
+        <http://ceur-ws.org/Vol-934/#AlexeyiGolikov>,
+        <http://ceur-ws.org/Vol-934/#AndreyiLobanov>,
+        <http://ceur-ws.org/Vol-934/#ElenaiVoronina>,
+        <http://ceur-ws.org/Vol-934/#IgoriSmirnov>,
+        <http://ceur-ws.org/Vol-934/#MikhailiDianov>,
+        <http://ceur-ws.org/Vol-934/#OlegiPugachev>,
+        <http://ceur-ws.org/Vol-934/#RomaniKhalikov>,
+        <http://ceur-ws.org/Vol-934/#ViktoriKrivohatsky> .
+
+<http://ceur-ws.org/Vol-934/> a ns6:Proceedings ;
+    ns6:hasPart <http://ceur-ws.org/Vol-934/#paper1>,
+        <http://ceur-ws.org/Vol-934/#paper10>,
+        <http://ceur-ws.org/Vol-934/#paper11>,
+        <http://ceur-ws.org/Vol-934/#paper12>,
+        <http://ceur-ws.org/Vol-934/#paper13>,
+        <http://ceur-ws.org/Vol-934/#paper14>,
+        <http://ceur-ws.org/Vol-934/#paper15>,
+        <http://ceur-ws.org/Vol-934/#paper16>,
+        <http://ceur-ws.org/Vol-934/#paper17>,
+        <http://ceur-ws.org/Vol-934/#paper18>,
+        <http://ceur-ws.org/Vol-934/#paper19>,
+        <http://ceur-ws.org/Vol-934/#paper2>,
+        <http://ceur-ws.org/Vol-934/#paper20>,
+        <http://ceur-ws.org/Vol-934/#paper21>,
+        <http://ceur-ws.org/Vol-934/#paper22>,
+        <http://ceur-ws.org/Vol-934/#paper23>,
+        <http://ceur-ws.org/Vol-934/#paper24>,
+        <http://ceur-ws.org/Vol-934/#paper25>,
+        <http://ceur-ws.org/Vol-934/#paper26>,
+        <http://ceur-ws.org/Vol-934/#paper27>,
+        <http://ceur-ws.org/Vol-934/#paper28>,
+        <http://ceur-ws.org/Vol-934/#paper29>,
+        <http://ceur-ws.org/Vol-934/#paper3>,
+        <http://ceur-ws.org/Vol-934/#paper30>,
+        <http://ceur-ws.org/Vol-934/#paper31>,
+        <http://ceur-ws.org/Vol-934/#paper32>,
+        <http://ceur-ws.org/Vol-934/#paper33>,
+        <http://ceur-ws.org/Vol-934/#paper34>,
+        <http://ceur-ws.org/Vol-934/#paper35>,
+        <http://ceur-ws.org/Vol-934/#paper36>,
+        <http://ceur-ws.org/Vol-934/#paper37>,
+        <http://ceur-ws.org/Vol-934/#paper38>,
+        <http://ceur-ws.org/Vol-934/#paper39>,
+        <http://ceur-ws.org/Vol-934/#paper4>,
+        <http://ceur-ws.org/Vol-934/#paper40>,
+        <http://ceur-ws.org/Vol-934/#paper41>,
+        <http://ceur-ws.org/Vol-934/#paper42>,
+        <http://ceur-ws.org/Vol-934/#paper43>,
+        <http://ceur-ws.org/Vol-934/#paper44>,
+        <http://ceur-ws.org/Vol-934/#paper45>,
+        <http://ceur-ws.org/Vol-934/#paper46>,
+        <http://ceur-ws.org/Vol-934/#paper47>,
+        <http://ceur-ws.org/Vol-934/#paper48>,
+        <http://ceur-ws.org/Vol-934/#paper49>,
+        <http://ceur-ws.org/Vol-934/#paper5>,
+        <http://ceur-ws.org/Vol-934/#paper50>,
+        <http://ceur-ws.org/Vol-934/#paper51>,
+        <http://ceur-ws.org/Vol-934/#paper6>,
+        <http://ceur-ws.org/Vol-934/#paper7>,
+        <http://ceur-ws.org/Vol-934/#paper8>,
+        <http://ceur-ws.org/Vol-934/#paper9> ;
+    ns6:hasSession <http://ceur-ws.org/Vol-934/#InvitedTalk>,
+        <http://ceur-ws.org/Vol-934/#Session10DigitalCollectionsofInformationResources>,
+        <http://ceur-ws.org/Vol-934/#Session11MethodologyandDesignToolsRecommenderSystems>,
+        <http://ceur-ws.org/Vol-934/#Session12InformationExtractionfromText>,
+        <http://ceur-ws.org/Vol-934/#Session13TaggingImagesDataSecurityEnsuring>,
+        <http://ceur-ws.org/Vol-934/#Session1MetadataConceptualModelsOntologies>,
+        <http://ceur-ws.org/Vol-934/#Session2DataModelsDataModelMapping>,
+        <http://ceur-ws.org/Vol-934/#Session5AnalysisandProcessingofTextualInformationandWebResources>,
+        <http://ceur-ws.org/Vol-934/#Session6MethodsandTechnologiesofInformationRetrieval>,
+        <http://ceur-ws.org/Vol-934/#Session7AnalysisandProcessingofTextualInformation>,
+        <http://ceur-ws.org/Vol-934/#Session8ScientificDigitalLibrariesDevelopment>,
+        <http://ceur-ws.org/Vol-934/#Session9SemanticWebandLinkedOpenData>,
+        <http://ceur-ws.org/Vol-934/#Sessions34BigDataTechnologiesInvitedTalks>,
+        <http://ceur-ws.org/Vol-934/#Tutorial> ;
+    ns8:issued "2012-11-01T00:00:00+00:00"^^xsd:dateTime ;
+    ns1:presentedAt <http://ceur-ws.org/Vol-934/#event> ;
+    ns4:editor <http://ceur-ws.org/Vol-934/#MikhailiKogalovsky>,
+        <http://ceur-ws.org/Vol-934/#SergeyiZnamenskij> .
 

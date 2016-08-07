@@ -1,41 +1,139 @@
-@prefix ns1: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns2: <http://xmlns.com/foaf/0.1/> .
-@prefix ns3: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns4: <http://www.w3.org/2002/07/owl#> .
-@prefix ns5: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns6: <http://purl.org/dc/elements/1.1/> .
-@prefix ns7: <http://purl.org/ontology/bibo/#> .
-@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns1: <http://xmlns.com/foaf/0.1/> .
+@prefix ns2: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns3: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns4: <http://purl.org/ontology/bibo/#> .
+@prefix ns5: <http://www.w3.org/2002/07/owl#> .
+@prefix ns6: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns7: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns8: <http://purl.org/dc/elements/1.1/> .
+@prefix ns9: <http://purl.org/NET/c4dm/timeline.owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1630/> a ns3:Proceedings ;
-    ns8:issued "2016-08-03T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:presentedAt <http://ceur-ws.org/Vol-1630/#event> ;
-    ns1:editor <http://ceur-ws.org/Vol-1630/#JohniBreslin>,
+<http://ceur-ws.org/Vol-1630/#AmitiSheth> a ns1:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/AmitiSheth> ;
+    ns1:made <http://ceur-ws.org/Vol-1630/#keynote2> ;
+    ns1:name "Amit Sheth" .
+
+<http://ceur-ws.org/Vol-1630/#HenriqueiSantos> a ns1:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/HenriqueiSantos> ;
+    ns1:made <http://ceur-ws.org/Vol-1630/#paper4> ;
+    ns1:name "Henrique Santos" .
+
+<http://ceur-ws.org/Vol-1630/#Jean-PauliCalbimonte> a ns1:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/Jean-PauliCalbimonte> ;
+    ns1:made <http://ceur-ws.org/Vol-1630/#paper1> ;
+    ns1:name "Jean-Paul Calbimonte" .
+
+<http://ceur-ws.org/Vol-1630/#JohniBreslin> a ns1:Person ;
+    ns6:affiliation "" ;
+    ns5:sameAs <http://ceur-ws.org/persons/JohniBreslin> ;
+    ns1:name "John Breslin" .
+
+<http://ceur-ws.org/Vol-1630/#MarkiS.iFoxii%28> a ns1:Person ;
+    ns1:made <http://ceur-ws.org/Vol-1630/#keynote1> ;
+    ns1:name "Mark S. Fox  (" .
+
+<http://ceur-ws.org/Vol-1630/#NathanieliChristen> a ns1:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/NathanieliChristen> ;
+    ns1:made <http://ceur-ws.org/Vol-1630/#paper3> ;
+    ns1:name "Nathaniel Christen" .
+
+<http://ceur-ws.org/Vol-1630/#OfeliaiCervantes> a ns1:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/OfeliaiCervantes> ;
+    ns1:made <http://ceur-ws.org/Vol-1630/#paper2> ;
+    ns1:name "Ofelia Cervantes" .
+
+<http://ceur-ws.org/Vol-1630/#PayamiBarnaghi> a ns1:Person ;
+    ns6:affiliation "" ;
+    ns5:sameAs <http://ceur-ws.org/persons/PayamiBarnaghi> ;
+    ns1:name "Payam Barnaghi" .
+
+<http://ceur-ws.org/Vol-1630/#TopeiOmitola> a ns1:Person ;
+    ns6:affiliation "" ;
+    ns5:sameAs <http://ceur-ws.org/persons/TopeiOmitola> ;
+    ns1:name "Tope Omitola" .
+
+<http://ceur-ws.org/Vol-1630/#event> a ns2:WorkshopEvent ;
+    ns2:hasLocation <http://dbpedia.org/resource/United_States> ;
+    ns2:hasPart <http://ceur-ws.org/Vol-1630/#part-S4SC> ;
+    ns2:isSubEventOf <http://ceur-ws.org/Vol-1630/#conf> ;
+    ns9:beginsAtDatetime "2015-10-11T00:00:00+00:00"^^xsd:dateTime ;
+    ns9:endsAtDatetime "2015-10-12T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:license "http://creativecommons.org/publicdomain/zero/1.0/" ;
+    rdfs:seeAlso <http://ceur-ws.org/Vol-1280/#event> .
+
+<http://ceur-ws.org/Vol-1630/#keynote1> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1630/> ;
+    ns7:title "PolisGnosis Project Enabling The Computational Analysis Of City Performance" ;
+    ns4:endPage 1 ;
+    ns4:numPages 1 ;
+    ns4:section <http://ceur-ws.org/Vol-1630/#WorkshopPublications> ;
+    ns4:startPage 1 ;
+    ns6:author <http://ceur-ws.org/Vol-1630/#MarkiS.iFoxii%28> .
+
+<http://ceur-ws.org/Vol-1630/#keynote2> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1630/> ;
+    ns7:title "Semantics-empowered Smart City Applications: Today And Tomorrow" ;
+    ns4:endPage 2 ;
+    ns4:numPages 1 ;
+    ns4:section <http://ceur-ws.org/Vol-1630/#WorkshopPublications> ;
+    ns4:startPage 2 ;
+    ns6:author <http://ceur-ws.org/Vol-1630/#AmitiSheth> .
+
+<http://ceur-ws.org/Vol-1630/#paper1> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1630/> ;
+    ns7:title "Semantic Data Layers In Air Quality Monitoring For Smarter Cities" ;
+    ns4:endPage 19 ;
+    ns4:numPages 17 ;
+    ns4:section <http://ceur-ws.org/Vol-1630/#WorkshopPublications> ;
+    ns4:startPage 3 ;
+    ns6:author <http://ceur-ws.org/Vol-1630/#Jean-PauliCalbimonte> .
+
+<http://ceur-ws.org/Vol-1630/#paper2> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1630/> ;
+    ns7:title "A Recommendation Engine Based On Social Metrics" ;
+    ns4:endPage 35 ;
+    ns4:numPages 16 ;
+    ns4:section <http://ceur-ws.org/Vol-1630/#WorkshopPublications> ;
+    ns4:startPage 20 ;
+    ns6:author <http://ceur-ws.org/Vol-1630/#OfeliaiCervantes> .
+
+<http://ceur-ws.org/Vol-1630/#paper3> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1630/> ;
+    ns7:title "A New Pluribus: Classification And Markup Topology For Civic Data" ;
+    ns4:endPage 52 ;
+    ns4:numPages 17 ;
+    ns4:section <http://ceur-ws.org/Vol-1630/#WorkshopPublications> ;
+    ns4:startPage 36 ;
+    ns6:author <http://ceur-ws.org/Vol-1630/#NathanieliChristen> .
+
+<http://ceur-ws.org/Vol-1630/#paper4> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1630/> ;
+    ns7:title "Contextual Data Collection For Smart Cities" ;
+    ns4:endPage 68 ;
+    ns4:numPages 16 ;
+    ns4:section <http://ceur-ws.org/Vol-1630/#WorkshopPublications> ;
+    ns4:startPage 53 ;
+    ns6:author <http://ceur-ws.org/Vol-1630/#HenriqueiSantos> .
+
+<http://ceur-ws.org/Vol-1630/> a ns2:Proceedings ;
+    ns2:hasPart <http://ceur-ws.org/Vol-1630/#keynote1>,
+        <http://ceur-ws.org/Vol-1630/#keynote2>,
+        <http://ceur-ws.org/Vol-1630/#paper1>,
+        <http://ceur-ws.org/Vol-1630/#paper2>,
+        <http://ceur-ws.org/Vol-1630/#paper3>,
+        <http://ceur-ws.org/Vol-1630/#paper4> ;
+    ns2:hasSession <http://ceur-ws.org/Vol-1630/#WorkshopPublications> ;
+    ns3:issued "2016-08-03T00:00:00+00:00"^^xsd:dateTime ;
+    ns4:presentedAt <http://ceur-ws.org/Vol-1630/#event> ;
+    ns6:editor <http://ceur-ws.org/Vol-1630/#JohniBreslin>,
         <http://ceur-ws.org/Vol-1630/#PayamiBarnaghi>,
         <http://ceur-ws.org/Vol-1630/#TopeiOmitola> .
 
-<http://ceur-ws.org/Vol-1630/#JohniBreslin> a ns2:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/JohniBreslin> ;
-    ns2:name "John Breslin" .
-
-<http://ceur-ws.org/Vol-1630/#PayamiBarnaghi> a ns2:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/PayamiBarnaghi> ;
-    ns2:name "Payam Barnaghi" .
-
-<http://ceur-ws.org/Vol-1630/#TopeiOmitola> a ns2:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/TopeiOmitola> ;
-    ns2:name "Tope Omitola" .
-
-<http://ceur-ws.org/Vol-1630/#event> a ns3:WorkshopEvent ;
-    ns3:hasLocation <http://dbpedia.org/resource/United_States> ;
-    ns3:hasPart <http://ceur-ws.org/Vol-1630/#part-ws> ;
-    ns3:isSubEventOf <http://ceur-ws.org/Vol-1630/#conf> ;
-    ns5:beginsAtDatetime "2015-10-11T00:00:00+00:00"^^xsd:dateTime ;
-    ns5:endsAtDatetime "2015-10-12T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:license "http://creativecommons.org/publicdomain/zero/1.0/" ;
-    rdfs:seeAlso <http://ceur-ws.org/Vol-1280/#event> .
+<http://ceur-ws.org/Vol-1630/#WorkshopPublications> a ns2:SessionEvent ;
+    ns2:partOf <http://ceur-ws.org/Vol-1630/> ;
+    ns7:title "Workshop Publications" .
 

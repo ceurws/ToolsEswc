@@ -1,50 +1,162 @@
-@prefix ns1: <http://www.w3.org/2002/07/owl#> .
-@prefix ns2: <http://xmlns.com/foaf/0.1/> .
-@prefix ns3: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns4: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns5: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns6: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns7: <http://purl.org/ontology/bibo/#> .
-@prefix ns8: <http://purl.org/dc/elements/1.1/> .
+@prefix ns1: <http://purl.org/dc/elements/1.1/> .
+@prefix ns2: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns3: <http://xmlns.com/foaf/0.1/> .
+@prefix ns4: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns5: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns6: <http://purl.org/ontology/bibo/#> .
+@prefix ns7: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns8: <http://www.w3.org/2002/07/owl#> .
+@prefix ns9: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1640/> a ns5:Proceedings ;
-    ns6:issued "2016-07-15T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:presentedAt <http://ceur-ws.org/Vol-1640/#event> ;
-    ns3:editor <http://ceur-ws.org/Vol-1640/#AliiGheitasy>,
+<http://ceur-ws.org/Vol-1640/#AliiGheitasy> a ns3:Person ;
+    ns5:affiliation "" ;
+    ns8:sameAs <http://ceur-ws.org/persons/AliiGheitasy> ;
+    ns3:name "Ali Gheitasy" .
+
+<http://ceur-ws.org/Vol-1640/#AndersiM%C3%B8rch> a ns3:Person ;
+    ns5:affiliation "" ;
+    ns8:sameAs <http://ceur-ws.org/persons/AndersiM%C3%B8rch> ;
+    ns3:name "Anders Mørch" .
+
+<http://ceur-ws.org/Vol-1640/#AngelaiLocoro> a ns3:Person ;
+    ns8:sameAs <http://ceur-ws.org/persons/AngelaiLocoro> ;
+    ns3:made <http://ceur-ws.org/Vol-1640/#paper7> ;
+    ns3:name "Angela Locoro" .
+
+<http://ceur-ws.org/Vol-1640/#AntonellaiDeiAngeli> a ns3:Person ;
+    ns8:sameAs <http://ceur-ws.org/persons/AntonellaiDeiAngeli> ;
+    ns3:made <http://ceur-ws.org/Vol-1640/#paper6> ;
+    ns3:name "Antonella De Angeli" .
+
+<http://ceur-ws.org/Vol-1640/#AntonioiPiccinno> a ns3:Person ;
+    ns5:affiliation "" ;
+    ns8:sameAs <http://ceur-ws.org/persons/AntonioiPiccinno> ;
+    ns3:name "Antonio Piccinno" .
+
+<http://ceur-ws.org/Vol-1640/#BarbaraiRitaiBarricelli> a ns3:Person ;
+    ns5:affiliation "" ;
+    ns8:sameAs <http://ceur-ws.org/persons/BarbaraiRitaiBarricelli> ;
+    ns3:name "Barbara Rita Barricelli" .
+
+<http://ceur-ws.org/Vol-1640/#BenjaminiSchmidt> a ns3:Person ;
+    ns8:sameAs <http://ceur-ws.org/persons/BenjaminiSchmidt> ;
+    ns3:made <http://ceur-ws.org/Vol-1640/#paper5> ;
+    ns3:name "Benjamin Schmidt" .
+
+<http://ceur-ws.org/Vol-1640/#DanieliTetteroo> a ns3:Person ;
+    ns8:sameAs <http://ceur-ws.org/persons/DanieliTetteroo> ;
+    ns3:made <http://ceur-ws.org/Vol-1640/#paper3> ;
+    ns3:name "Daniel Tetteroo" .
+
+<http://ceur-ws.org/Vol-1640/#GeoffreyiM%C3%A9lia> a ns3:Person ;
+    ns8:sameAs <http://ceur-ws.org/persons/GeoffreyiM%C3%A9lia> ;
+    ns3:made <http://ceur-ws.org/Vol-1640/#paper4> ;
+    ns3:name "Geoffrey Mélia" .
+
+<http://ceur-ws.org/Vol-1640/#StefanoiValtolina> a ns3:Person ;
+    ns5:affiliation "" ;
+    ns8:sameAs <http://ceur-ws.org/persons/StefanoiValtolina> ;
+    ns3:name "Stefano Valtolina" .
+
+<http://ceur-ws.org/Vol-1640/#event> a ns7:WorkshopEvent ;
+    ns7:hasLocation <http://dbpedia.org/resource/Italy> ;
+    ns7:hasPart <http://ceur-ws.org/Vol-1640/#part-CoPDA> ;
+    ns7:isSubEventOf <http://ceur-ws.org/Vol-1640/#conf> ;
+    ns2:beginsAtDatetime "2014-05-27T00:00:00+00:00"^^xsd:dateTime ;
+    ns2:endsAtDatetime "2014-05-27T00:00:00+00:00"^^xsd:dateTime ;
+    ns1:license "http://choosealicense.com/licenses/no-license/" .
+
+<http://ceur-ws.org/Vol-1640/#FedericoiCabitza> a ns3:Person ;
+    ns8:sameAs <http://ceur-ws.org/persons/FedericoiCabitza> ;
+    ns3:made <http://ceur-ws.org/Vol-1640/#paper1>,
+        <http://ceur-ws.org/Vol-1640/#paper2> ;
+    ns3:name "Federico Cabitza" .
+
+<http://ceur-ws.org/Vol-1640/#paper1> a ns7:Paper ;
+    ns7:partOf <http://ceur-ws.org/Vol-1640/> ;
+    ns4:title "Cultivating a Culture of Participation for the Co-Evolution of Users and Systems" ;
+    ns6:endPage 6 ;
+    ns6:numPages 6 ;
+    ns6:section <http://ceur-ws.org/Vol-1640/#Papers> ;
+    ns6:startPage 1 ;
+    ns5:author <http://ceur-ws.org/Vol-1640/#FedericoiCabitza> .
+
+<http://ceur-ws.org/Vol-1640/#paper2> a ns7:Paper ;
+    ns7:partOf <http://ceur-ws.org/Vol-1640/> ;
+    ns4:title "COProduction as Last Resort to Make IT Projects Less Doomed to Fail" ;
+    ns6:endPage 11 ;
+    ns6:numPages 5 ;
+    ns6:section <http://ceur-ws.org/Vol-1640/#Papers> ;
+    ns6:startPage 7 ;
+    ns5:author <http://ceur-ws.org/Vol-1640/#FedericoiCabitza> .
+
+<http://ceur-ws.org/Vol-1640/#paper3> a ns7:Paper ;
+    ns7:partOf <http://ceur-ws.org/Vol-1640/> ;
+    ns4:title "Cultures of Participation in Healthcare: A Healthy Idea?" ;
+    ns6:endPage 16 ;
+    ns6:numPages 5 ;
+    ns6:section <http://ceur-ws.org/Vol-1640/#Papers> ;
+    ns6:startPage 12 ;
+    ns5:author <http://ceur-ws.org/Vol-1640/#DanieliTetteroo> .
+
+<http://ceur-ws.org/Vol-1640/#paper4> a ns7:Paper ;
+    ns7:partOf <http://ceur-ws.org/Vol-1640/> ;
+    ns4:title "Is a Culture of Participation Possible for Serious Games in the Health Domain?" ;
+    ns6:endPage 22 ;
+    ns6:numPages 6 ;
+    ns6:section <http://ceur-ws.org/Vol-1640/#Papers> ;
+    ns6:startPage 17 ;
+    ns5:author <http://ceur-ws.org/Vol-1640/#GeoffreyiM%C3%A9lia> .
+
+<http://ceur-ws.org/Vol-1640/#paper5> a ns7:Paper ;
+    ns7:partOf <http://ceur-ws.org/Vol-1640/> ;
+    ns4:title "ParkPal: Towards Ad-Hoc Route Planning for Runners" ;
+    ns6:endPage 27 ;
+    ns6:numPages 5 ;
+    ns6:section <http://ceur-ws.org/Vol-1640/#Papers> ;
+    ns6:startPage 23 ;
+    ns5:author <http://ceur-ws.org/Vol-1640/#BenjaminiSchmidt> .
+
+<http://ceur-ws.org/Vol-1640/#paper6> a ns7:Paper ;
+    ns7:partOf <http://ceur-ws.org/Vol-1640/> ;
+    ns4:title "Reflections Over a Socio-technical Infrastructuring Effort" ;
+    ns6:endPage 32 ;
+    ns6:numPages 5 ;
+    ns6:section <http://ceur-ws.org/Vol-1640/#Papers> ;
+    ns6:startPage 28 ;
+    ns5:author <http://ceur-ws.org/Vol-1640/#AntonellaiDeiAngeli> .
+
+<http://ceur-ws.org/Vol-1640/#paper7> a ns7:Paper ;
+    ns7:partOf <http://ceur-ws.org/Vol-1640/> ;
+    ns4:title "Should the Culture of Participation inform a new Ethics of Design?" ;
+    ns6:endPage 38 ;
+    ns6:numPages 6 ;
+    ns6:section <http://ceur-ws.org/Vol-1640/#Papers> ;
+    ns6:startPage 33 ;
+    ns5:author <http://ceur-ws.org/Vol-1640/#AngelaiLocoro> .
+
+<http://ceur-ws.org/Vol-1640/> a ns7:Proceedings ;
+    ns7:hasPart <http://ceur-ws.org/Vol-1640/#paper1>,
+        <http://ceur-ws.org/Vol-1640/#paper2>,
+        <http://ceur-ws.org/Vol-1640/#paper3>,
+        <http://ceur-ws.org/Vol-1640/#paper4>,
+        <http://ceur-ws.org/Vol-1640/#paper5>,
+        <http://ceur-ws.org/Vol-1640/#paper6>,
+        <http://ceur-ws.org/Vol-1640/#paper7> ;
+    ns7:hasSession <http://ceur-ws.org/Vol-1640/#Papers> ;
+    ns9:issued "2016-07-15T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:presentedAt <http://ceur-ws.org/Vol-1640/#event> ;
+    ns5:editor <http://ceur-ws.org/Vol-1640/#AliiGheitasy>,
         <http://ceur-ws.org/Vol-1640/#AndersiM%C3%B8rch>,
         <http://ceur-ws.org/Vol-1640/#AntonioiPiccinno>,
         <http://ceur-ws.org/Vol-1640/#BarbaraiRitaiBarricelli>,
         <http://ceur-ws.org/Vol-1640/#StefanoiValtolina> .
 
-<http://ceur-ws.org/Vol-1640/#AliiGheitasy> a ns2:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/AliiGheitasy> ;
-    ns2:name "Ali Gheitasy" .
-
-<http://ceur-ws.org/Vol-1640/#AndersiM%C3%B8rch> a ns2:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/AndersiM%C3%B8rch> ;
-    ns2:name "Anders Mørch" .
-
-<http://ceur-ws.org/Vol-1640/#AntonioiPiccinno> a ns2:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/AntonioiPiccinno> ;
-    ns2:name "Antonio Piccinno" .
-
-<http://ceur-ws.org/Vol-1640/#BarbaraiRitaiBarricelli> a ns2:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/BarbaraiRitaiBarricelli> ;
-    ns2:name "Barbara Rita Barricelli" .
-
-<http://ceur-ws.org/Vol-1640/#StefanoiValtolina> a ns2:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/StefanoiValtolina> ;
-    ns2:name "Stefano Valtolina" .
-
-<http://ceur-ws.org/Vol-1640/#event> a ns5:WorkshopEvent ;
-    ns5:hasLocation <http://dbpedia.org/resource/Italy> ;
-    ns5:hasPart <http://ceur-ws.org/Vol-1640/#part-ws> ;
-    ns5:isSubEventOf <http://ceur-ws.org/Vol-1640/#conf> ;
-    ns4:beginsAtDatetime "2014-05-27T00:00:00+00:00"^^xsd:dateTime ;
-    ns4:endsAtDatetime "2014-05-27T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:license "http://choosealicense.com/licenses/no-license/" .
+<http://ceur-ws.org/Vol-1640/#Papers> a ns7:SessionEvent ;
+    ns7:partOf <http://ceur-ws.org/Vol-1640/> ;
+    ns4:title "Papers" .
 

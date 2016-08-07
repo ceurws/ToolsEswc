@@ -1,50 +1,238 @@
-@prefix ns1: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns2: <http://xmlns.com/foaf/0.1/> .
-@prefix ns3: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns4: <http://www.w3.org/2002/07/owl#> .
-@prefix ns5: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns1: <http://purl.org/ontology/bibo/#> .
+@prefix ns2: <http://www.w3.org/2002/07/owl#> .
+@prefix ns3: <http://xmlns.com/foaf/0.1/> .
+@prefix ns4: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns5: <http://data.semanticweb.org/ns/swc/ontology/#> .
 @prefix ns6: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns7: <http://purl.org/ontology/bibo/#> .
-@prefix ns8: <http://purl.org/dc/elements/1.1/> .
+@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns9: <http://purl.org/dc/elements/1.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1274/> a ns3:Proceedings ;
-    ns5:issued "2014-10-29T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:presentedAt <http://ceur-ws.org/Vol-1274/#event> ;
+<http://ceur-ws.org/Vol-1274/#AlexanderiGebharter> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/AlexanderiGebharter> ;
+    ns3:made <http://ceur-ws.org/Vol-1274/#paper1> ;
+    ns3:name "Alexander Gebharter" .
+
+<http://ceur-ws.org/Vol-1274/#AnttiiHyttinen> a ns3:Person ;
+    ns6:affiliation "" ;
+    ns2:sameAs <http://ceur-ws.org/persons/AnttiiHyttinen> ;
+    ns3:name "Antti Hyttinen" .
+
+<http://ceur-ws.org/Vol-1274/#BenitoivanideriZander> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/BenitoivanideriZander> ;
+    ns3:made <http://ceur-ws.org/Vol-1274/#paper3> ;
+    ns3:name "Benito van der Zander" .
+
+<http://ceur-ws.org/Vol-1274/#BernhardiSch%C3%B6lkopf> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/BernhardiSch%C3%B6lkopf> ;
+    ns3:made <http://ceur-ws.org/Vol-1274/#abstract303> ;
+    ns3:name "Bernhard Schölkopf" .
+
+<http://ceur-ws.org/Vol-1274/#ChristopheriMeek> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/ChristopheriMeek> ;
+    ns3:made <http://ceur-ws.org/Vol-1274/#paper8> ;
+    ns3:name "Christopher Meek" .
+
+<http://ceur-ws.org/Vol-1274/#DaniGarant> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/DaniGarant> ;
+    ns3:made <http://ceur-ws.org/Vol-1274/#paper5> ;
+    ns3:name "Dan Garant" .
+
+<http://ceur-ws.org/Vol-1274/#DavidiArbour> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/DavidiArbour> ;
+    ns3:made <http://ceur-ws.org/Vol-1274/#paper5> ;
+    ns3:name "David Arbour" .
+
+<http://ceur-ws.org/Vol-1274/#DavidiJensen> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/DavidiJensen> ;
+    ns3:made <http://ceur-ws.org/Vol-1274/#paper5> ;
+    ns3:name "David Jensen" .
+
+<http://ceur-ws.org/Vol-1274/#EliasiBareinboim> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/EliasiBareinboim> ;
+    ns3:made <http://ceur-ws.org/Vol-1274/#abstract2> ;
+    ns3:name "Elias Bareinboim" .
+
+<http://ceur-ws.org/Vol-1274/#GerhardiSchurz> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/GerhardiSchurz> ;
+    ns3:made <http://ceur-ws.org/Vol-1274/#paper1> ;
+    ns3:name "Gerhard Schurz" .
+
+<http://ceur-ws.org/Vol-1274/#JohannesiTextor> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/JohannesiTextor> ;
+    ns3:made <http://ceur-ws.org/Vol-1274/#paper3> ;
+    ns3:name "Johannes Textor" .
+
+<http://ceur-ws.org/Vol-1274/#JonasiPeters> a ns3:Person ;
+    ns6:affiliation "" ;
+    ns2:sameAs <http://ceur-ws.org/persons/JonasiPeters> ;
+    ns3:name "Jonas Peters" .
+
+<http://ceur-ws.org/Vol-1274/#KaterinaiMarazopoulou> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/KaterinaiMarazopoulou> ;
+    ns3:made <http://ceur-ws.org/Vol-1274/#paper5> ;
+    ns3:name "Katerina Marazopoulou" .
+
+<http://ceur-ws.org/Vol-1274/#MaciejiLi%26sacute> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/MaciejiLi%26sacute> ;
+    ns3:made <http://ceur-ws.org/Vol-1274/#paper3> ;
+    ns3:name "Maciej Li&sacute" .
+
+<http://ceur-ws.org/Vol-1274/#NicholasiCornia> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/NicholasiCornia> ;
+    ns3:made <http://ceur-ws.org/Vol-1274/#paper7> ;
+    ns3:name "Nicholas Cornia" .
+
+<http://ceur-ws.org/Vol-1274/#PhilippiGeiger> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/PhilippiGeiger> ;
+    ns3:made <http://ceur-ws.org/Vol-1274/#abstract303> ;
+    ns3:name "Philipp Geiger" .
+
+<http://ceur-ws.org/Vol-1274/#RobertiW.iSpekkens> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/RobertiW.iSpekkens> ;
+    ns3:made <http://ceur-ws.org/Vol-1274/#abstract1> ;
+    ns3:name "Robert W. Spekkens" .
+
+<http://ceur-ws.org/Vol-1274/#TomiClaassen> a ns3:Person ;
+    ns6:affiliation "" ;
+    ns2:sameAs <http://ceur-ws.org/persons/TomiClaassen> ;
+    ns3:name "Tom Claassen" .
+
+<http://ceur-ws.org/Vol-1274/#event> a ns5:WorkshopEvent ;
+    ns5:hasLocation <http://dbpedia.org/resource/Canada> ;
+    ns5:hasPart <http://ceur-ws.org/Vol-1274/#part-UAI2014CI> ;
+    ns5:isSubEventOf <http://ceur-ws.org/Vol-1274/#conf> ;
+    ns7:beginsAtDatetime "2014-07-27T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:endsAtDatetime "2014-07-27T00:00:00+00:00"^^xsd:dateTime ;
+    ns9:license "http://choosealicense.com/licenses/no-license/" .
+
+<http://ceur-ws.org/Vol-1274/#kiewicz> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/kiewicz> ;
+    ns3:made <http://ceur-ws.org/Vol-1274/#paper3> ;
+    ns3:name "kiewicz" .
+
+<http://ceur-ws.org/Vol-1274/#DominikiJanzing> a ns3:Person ;
+    ns6:affiliation "" ;
+    ns2:sameAs <http://ceur-ws.org/persons/DominikiJanzing> ;
+    ns3:made <http://ceur-ws.org/Vol-1274/#abstract303> ;
+    ns3:name "Dominik Janzing" .
+
+<http://ceur-ws.org/Vol-1274/#JorisiM.iMooij> a ns3:Person ;
+    ns6:affiliation "" ;
+    ns2:sameAs <http://ceur-ws.org/persons/JorisiM.iMooij> ;
+    ns3:made <http://ceur-ws.org/Vol-1274/#paper7> ;
+    ns3:name "Joris M. Mooij" .
+
+<http://ceur-ws.org/Vol-1274/#abstract1> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1274/> ;
+    ns4:title "On Causal Explanations of Quantum Correlations" ;
+    ns1:endPage 49 ;
+    ns1:numPages 1 ;
+    ns1:section <http://ceur-ws.org/Vol-1274/#Abstracts> ;
+    ns1:startPage 49 ;
+    ns6:author <http://ceur-ws.org/Vol-1274/#RobertiW.iSpekkens> .
+
+<http://ceur-ws.org/Vol-1274/#abstract2> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1274/> ;
+    ns4:title "Generalizability of Causal and Statistical Relations" ;
+    ns1:endPage 52 ;
+    ns1:numPages 2 ;
+    ns1:section <http://ceur-ws.org/Vol-1274/#Abstracts> ;
+    ns1:startPage 51 ;
+    ns6:author <http://ceur-ws.org/Vol-1274/#EliasiBareinboim> .
+
+<http://ceur-ws.org/Vol-1274/#paper8> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1274/> ;
+    ns4:title "Toward Learning Graphical and Causal Process Models" ;
+    ns1:endPage 48 ;
+    ns1:numPages 6 ;
+    ns1:section <http://ceur-ws.org/Vol-1274/#Fullpapers> ;
+    ns1:startPage 43 ;
+    ns6:author <http://ceur-ws.org/Vol-1274/#ChristopheriMeek> .
+
+<http://ceur-ws.org/Vol-1274/#paper1> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1274/> ;
+    ns4:title "How Occam's Razor Provides a Neat Definition of Direct Causation" ;
+    ns1:endPage 10 ;
+    ns1:numPages 10 ;
+    ns1:section <http://ceur-ws.org/Vol-1274/#Fullpapers> ;
+    ns1:startPage 1 ;
+    ns6:author <http://ceur-ws.org/Vol-1274/#AlexanderiGebharter>,
+        <http://ceur-ws.org/Vol-1274/#GerhardiSchurz> .
+
+<http://ceur-ws.org/Vol-1274/#paper7> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1274/> ;
+    ns4:title "Type-II Errors of Independence Tests Can Lead to Arbitrarily Large Errors in Estimated Causal Effects: An Illustrative Example" ;
+    ns1:endPage 42 ;
+    ns1:numPages 8 ;
+    ns1:section <http://ceur-ws.org/Vol-1274/#Fullpapers> ;
+    ns1:startPage 35 ;
+    ns6:author <http://ceur-ws.org/Vol-1274/#JorisiM.iMooij>,
+        <http://ceur-ws.org/Vol-1274/#NicholasiCornia> .
+
+<http://ceur-ws.org/Vol-1274/#Abstracts> a ns5:SessionEvent ;
+    ns5:partOf <http://ceur-ws.org/Vol-1274/> ;
+    ns4:title "Abstracts" .
+
+<http://ceur-ws.org/Vol-1274/#abstract303> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1274/> ;
+    ns4:title "Estimating Causal Effects by Bounding Confounding" ;
+    ns1:endPage 53 ;
+    ns1:numPages 1 ;
+    ns1:section <http://ceur-ws.org/Vol-1274/#Abstracts> ;
+    ns1:startPage 53 ;
+    ns6:author <http://ceur-ws.org/Vol-1274/#BernhardiSch%C3%B6lkopf>,
+        <http://ceur-ws.org/Vol-1274/#DominikiJanzing>,
+        <http://ceur-ws.org/Vol-1274/#PhilippiGeiger> .
+
+<http://ceur-ws.org/Vol-1274/#paper3> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1274/> ;
+    ns4:title "Constructing Separators and Adjustment Sets in Ancestral Graphs" ;
+    ns1:endPage 24 ;
+    ns1:numPages 14 ;
+    ns1:section <http://ceur-ws.org/Vol-1274/#Fullpapers> ;
+    ns1:startPage 11 ;
+    ns6:author <http://ceur-ws.org/Vol-1274/#BenitoivanideriZander>,
+        <http://ceur-ws.org/Vol-1274/#JohannesiTextor>,
+        <http://ceur-ws.org/Vol-1274/#MaciejiLi%26sacute>,
+        <http://ceur-ws.org/Vol-1274/#kiewicz> .
+
+<http://ceur-ws.org/Vol-1274/#paper5> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1274/> ;
+    ns4:title "Propensity Score Matching for Causal Inference with Relational Data" ;
+    ns1:endPage 34 ;
+    ns1:numPages 10 ;
+    ns1:section <http://ceur-ws.org/Vol-1274/#Fullpapers> ;
+    ns1:startPage 25 ;
+    ns6:author <http://ceur-ws.org/Vol-1274/#DaniGarant>,
+        <http://ceur-ws.org/Vol-1274/#DavidiArbour>,
+        <http://ceur-ws.org/Vol-1274/#DavidiJensen>,
+        <http://ceur-ws.org/Vol-1274/#KaterinaiMarazopoulou> .
+
+<http://ceur-ws.org/Vol-1274/#Fullpapers> a ns5:SessionEvent ;
+    ns5:partOf <http://ceur-ws.org/Vol-1274/> ;
+    ns4:title "Full papers" .
+
+<http://ceur-ws.org/Vol-1274/> a ns5:Proceedings ;
+    ns5:hasPart <http://ceur-ws.org/Vol-1274/#abstract1>,
+        <http://ceur-ws.org/Vol-1274/#abstract2>,
+        <http://ceur-ws.org/Vol-1274/#abstract303>,
+        <http://ceur-ws.org/Vol-1274/#paper1>,
+        <http://ceur-ws.org/Vol-1274/#paper3>,
+        <http://ceur-ws.org/Vol-1274/#paper5>,
+        <http://ceur-ws.org/Vol-1274/#paper7>,
+        <http://ceur-ws.org/Vol-1274/#paper8> ;
+    ns5:hasSession <http://ceur-ws.org/Vol-1274/#Abstracts>,
+        <http://ceur-ws.org/Vol-1274/#Fullpapers> ;
+    ns8:issued "2014-10-29T00:00:00+00:00"^^xsd:dateTime ;
+    ns1:presentedAt <http://ceur-ws.org/Vol-1274/#event> ;
     ns6:editor <http://ceur-ws.org/Vol-1274/#AnttiiHyttinen>,
         <http://ceur-ws.org/Vol-1274/#DominikiJanzing>,
         <http://ceur-ws.org/Vol-1274/#JonasiPeters>,
         <http://ceur-ws.org/Vol-1274/#JorisiM.iMooij>,
         <http://ceur-ws.org/Vol-1274/#TomiClaassen> .
-
-<http://ceur-ws.org/Vol-1274/#AnttiiHyttinen> a ns2:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/AnttiiHyttinen> ;
-    ns2:name "Antti Hyttinen" .
-
-<http://ceur-ws.org/Vol-1274/#DominikiJanzing> a ns2:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/DominikiJanzing> ;
-    ns2:name "Dominik Janzing" .
-
-<http://ceur-ws.org/Vol-1274/#JonasiPeters> a ns2:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/JonasiPeters> ;
-    ns2:name "Jonas Peters" .
-
-<http://ceur-ws.org/Vol-1274/#JorisiM.iMooij> a ns2:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/JorisiM.iMooij> ;
-    ns2:name "Joris M. Mooij" .
-
-<http://ceur-ws.org/Vol-1274/#TomiClaassen> a ns2:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/TomiClaassen> ;
-    ns2:name "Tom Claassen" .
-
-<http://ceur-ws.org/Vol-1274/#event> a ns3:WorkshopEvent ;
-    ns3:hasLocation <http://dbpedia.org/resource/Canada> ;
-    ns3:hasPart <http://ceur-ws.org/Vol-1274/#part-ws> ;
-    ns3:isSubEventOf <http://ceur-ws.org/Vol-1274/#conf> ;
-    ns1:beginsAtDatetime "2014-07-27T00:00:00+00:00"^^xsd:dateTime ;
-    ns1:endsAtDatetime "2014-07-27T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:license "http://choosealicense.com/licenses/no-license/" .
 

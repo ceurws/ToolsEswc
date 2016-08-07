@@ -1,40 +1,228 @@
-@prefix ns1: <http://www.w3.org/2002/07/owl#> .
-@prefix ns2: <http://purl.org/ontology/bibo/#> .
+@prefix ns1: <http://purl.org/ontology/bibo/#> .
+@prefix ns2: <http://swrc.ontoware.org/ontology/#> .
 @prefix ns3: <http://xmlns.com/foaf/0.1/> .
-@prefix ns4: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns5: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns6: <http://purl.org/dc/elements/1.1/> .
-@prefix ns7: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns4: <http://www.w3.org/2002/07/owl#> .
+@prefix ns5: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns6: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix ns8: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns9: <http://purl.org/dc/elements/1.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1145/> a ns8:Proceedings ;
-    ns5:issued "2014-04-15T00:00:00+00:00"^^xsd:dateTime ;
-    ns2:presentedAt <http://ceur-ws.org/Vol-1145/#event> ;
-    ns7:editor <http://ceur-ws.org/Vol-1145/#AndreyiMalikov>,
-        <http://ceur-ws.org/Vol-1145/#ChristophiWernhard>,
-        <http://ceur-ws.org/Vol-1145/#SteffeniH%C3%B6lldobler> .
+<http://ceur-ws.org/Vol-1145/#AlexeyiLiagin> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/AlexeyiLiagin> ;
+    ns3:made <http://ceur-ws.org/Vol-1145/#paper6> ;
+    ns3:name "Alexey Liagin" .
 
-<http://ceur-ws.org/Vol-1145/#AndreyiMalikov> a ns3:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/AndreyiMalikov> ;
-    ns3:name "Andrey Malikov" .
+<http://ceur-ws.org/Vol-1145/#AlinaiPetrova> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/AlinaiPetrova> ;
+    ns3:made <http://ceur-ws.org/Vol-1145/#paper5> ;
+    ns3:name "Alina Petrova" .
+
+<http://ceur-ws.org/Vol-1145/#AllaiPletukhina> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/AllaiPletukhina> ;
+    ns3:made <http://ceur-ws.org/Vol-1145/#paper6> ;
+    ns3:name "Alla Pletukhina" .
 
 <http://ceur-ws.org/Vol-1145/#ChristophiWernhard> a ns3:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/ChristophiWernhard> ;
+    ns2:affiliation "" ;
+    ns4:sameAs <http://ceur-ws.org/persons/ChristophiWernhard> ;
     ns3:name "Christoph Wernhard" .
 
-<http://ceur-ws.org/Vol-1145/#SteffeniH%C3%B6lldobler> a ns3:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/SteffeniH%C3%B6lldobler> ;
-    ns3:name "Steffen Hölldobler" .
+<http://ceur-ws.org/Vol-1145/#DenisiTananaev> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/DenisiTananaev> ;
+    ns3:made <http://ceur-ws.org/Vol-1145/#paper7> ;
+    ns3:name "Denis Tananaev" .
+
+<http://ceur-ws.org/Vol-1145/#ElenaiStepanova> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/ElenaiStepanova> ;
+    ns3:made <http://ceur-ws.org/Vol-1145/#paper6> ;
+    ns3:name "Elena Stepanova" .
+
+<http://ceur-ws.org/Vol-1145/#FerdianiJovan> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/FerdianiJovan> ;
+    ns3:made <http://ceur-ws.org/Vol-1145/#paper2> ;
+    ns3:name "Ferdian Jovan" .
+
+<http://ceur-ws.org/Vol-1145/#GalinaiShagrova> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/GalinaiShagrova> ;
+    ns3:made <http://ceur-ws.org/Vol-1145/#paper7> ;
+    ns3:name "Galina Shagrova" .
+
+<http://ceur-ws.org/Vol-1145/#LukasiSchweizer> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/LukasiSchweizer> ;
+    ns3:made <http://ceur-ws.org/Vol-1145/#tutorial1> ;
+    ns3:name "Lukas Schweizer" .
+
+<http://ceur-ws.org/Vol-1145/#NorbertiManthey> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/NorbertiManthey> ;
+    ns3:made <http://ceur-ws.org/Vol-1145/#paper3> ;
+    ns3:name "Norbert Manthey" .
+
+<http://ceur-ws.org/Vol-1145/#PeteriSteinke> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/PeteriSteinke> ;
+    ns3:made <http://ceur-ws.org/Vol-1145/#paper3> ;
+    ns3:name "Peter Steinke" .
+
+<http://ceur-ws.org/Vol-1145/#RomaniNemkov> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/RomaniNemkov> ;
+    ns3:made <http://ceur-ws.org/Vol-1145/#paper4> ;
+    ns3:name "Roman Nemkov" .
+
+<http://ceur-ws.org/Vol-1145/#SergeyiCherevko> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/SergeyiCherevko> ;
+    ns3:made <http://ceur-ws.org/Vol-1145/#paper1> ;
+    ns3:name "Sergey Cherevko" .
+
+<http://ceur-ws.org/Vol-1145/#TobiasiPhilipp> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/TobiasiPhilipp> ;
+    ns3:made <http://ceur-ws.org/Vol-1145/#paper3> ;
+    ns3:name "Tobias Philipp" .
+
+<http://ceur-ws.org/Vol-1145/#VictoriKozhevnikov> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/VictoriKozhevnikov> ;
+    ns3:made <http://ceur-ws.org/Vol-1145/#paper7> ;
+    ns3:name "Victor Kozhevnikov" .
+
+<http://ceur-ws.org/Vol-1145/#VladimiriVolonkin> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/VladimiriVolonkin> ;
+    ns3:made <http://ceur-ws.org/Vol-1145/#paper8> ;
+    ns3:name "Vladimir Volonkin" .
 
 <http://ceur-ws.org/Vol-1145/#event> a ns8:WorkshopEvent ;
     ns8:hasLocation <http://dbpedia.org/resource/Russia> ;
     ns8:hasPart <http://ceur-ws.org/Vol-1145/#part-YSIP> ;
     ns8:isSubEventOf <http://ceur-ws.org/Vol-1145/#conf> ;
-    ns4:beginsAtDatetime "2014-04-22T00:00:00+00:00"^^xsd:dateTime ;
-    ns4:endsAtDatetime "2014-04-25T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:license "http://choosealicense.com/licenses/no-license/" .
+    ns5:beginsAtDatetime "2014-04-22T00:00:00+00:00"^^xsd:dateTime ;
+    ns5:endsAtDatetime "2014-04-25T00:00:00+00:00"^^xsd:dateTime ;
+    ns9:license "http://choosealicense.com/licenses/no-license/" .
+
+<http://ceur-ws.org/Vol-1145/#AndreyiMalikov> a ns3:Person ;
+    ns2:affiliation "" ;
+    ns4:sameAs <http://ceur-ws.org/persons/AndreyiMalikov> ;
+    ns3:made <http://ceur-ws.org/Vol-1145/#paper1> ;
+    ns3:name "Andrey Malikov" .
+
+<http://ceur-ws.org/Vol-1145/#paper4> a ns8:Paper ;
+    ns8:partOf <http://ceur-ws.org/Vol-1145/> ;
+    ns6:title "Dynamical Change of the Perceiving Properties of Neural Networks as Training with Noise and Its Impact on Pattern Recognition" ;
+    ns1:endPage 40 ;
+    ns1:numPages 6 ;
+    ns1:section <http://ceur-ws.org/Vol-1145/#ResearchPapers> ;
+    ns1:startPage 35 ;
+    ns2:author <http://ceur-ws.org/Vol-1145/#RomaniNemkov> .
+
+<http://ceur-ws.org/Vol-1145/#paper5> a ns8:Paper ;
+    ns8:partOf <http://ceur-ws.org/Vol-1145/> ;
+    ns6:title "A Pipeline for Supervised Formal Definition Generation" ;
+    ns1:endPage 51 ;
+    ns1:numPages 11 ;
+    ns1:section <http://ceur-ws.org/Vol-1145/#ResearchPapers> ;
+    ns1:startPage 41 ;
+    ns2:author <http://ceur-ws.org/Vol-1145/#AlinaiPetrova> .
+
+<http://ceur-ws.org/Vol-1145/#paper8> a ns8:Paper ;
+    ns8:partOf <http://ceur-ws.org/Vol-1145/> ;
+    ns6:title "DBMS Index for Hierarchical Data Using Nested Intervals and Residue Classes" ;
+    ns1:endPage 76 ;
+    ns1:numPages 10 ;
+    ns1:section <http://ceur-ws.org/Vol-1145/#ResearchPapers> ;
+    ns1:startPage 67 ;
+    ns2:author <http://ceur-ws.org/Vol-1145/#VladimiriVolonkin> .
+
+<http://ceur-ws.org/Vol-1145/#paper1> a ns8:Paper ;
+    ns8:partOf <http://ceur-ws.org/Vol-1145/> ;
+    ns6:title "Review of Modern Techniques of Qualitative Data Clustering" ;
+    ns1:endPage 13 ;
+    ns1:numPages 7 ;
+    ns1:section <http://ceur-ws.org/Vol-1145/#ResearchPapers> ;
+    ns1:startPage 7 ;
+    ns2:author <http://ceur-ws.org/Vol-1145/#AndreyiMalikov>,
+        <http://ceur-ws.org/Vol-1145/#SergeyiCherevko> .
+
+<http://ceur-ws.org/Vol-1145/#paper2> a ns8:Paper ;
+    ns8:partOf <http://ceur-ws.org/Vol-1145/> ;
+    ns6:title "Advanced Petri Nets and the Fluent Calculus" ;
+    ns1:endPage 24 ;
+    ns1:numPages 10 ;
+    ns1:section <http://ceur-ws.org/Vol-1145/#ResearchPapers> ;
+    ns1:startPage 15 ;
+    ns2:author <http://ceur-ws.org/Vol-1145/#FerdianiJovan>,
+        <http://ceur-ws.org/Vol-1145/#SteffeniH%C3%B6lldobler> .
+
+<http://ceur-ws.org/Vol-1145/#tutorial1> a ns8:Paper ;
+    ns8:partOf <http://ceur-ws.org/Vol-1145/> ;
+    ns6:title "Answer Set Programming and CLASP – A Tutorial" ;
+    ns1:endPage 95 ;
+    ns1:numPages 19 ;
+    ns1:section <http://ceur-ws.org/Vol-1145/#ResearchPapers> ;
+    ns1:startPage 77 ;
+    ns2:author <http://ceur-ws.org/Vol-1145/#LukasiSchweizer>,
+        <http://ceur-ws.org/Vol-1145/#SteffeniH%C3%B6lldobler> .
+
+<http://ceur-ws.org/Vol-1145/#SteffeniH%C3%B6lldobler> a ns3:Person ;
+    ns2:affiliation "" ;
+    ns4:sameAs <http://ceur-ws.org/persons/SteffeniH%C3%B6lldobler> ;
+    ns3:made <http://ceur-ws.org/Vol-1145/#paper2>,
+        <http://ceur-ws.org/Vol-1145/#paper3>,
+        <http://ceur-ws.org/Vol-1145/#tutorial1> ;
+    ns3:name "Steffen Hölldobler" .
+
+<http://ceur-ws.org/Vol-1145/#paper6> a ns8:Paper ;
+    ns8:partOf <http://ceur-ws.org/Vol-1145/> ;
+    ns6:title "Properties of Majority Transformations under Random Processes Parameters Measurement" ;
+    ns1:endPage 56 ;
+    ns1:numPages 4 ;
+    ns1:section <http://ceur-ws.org/Vol-1145/#ResearchPapers> ;
+    ns1:startPage 53 ;
+    ns2:author <http://ceur-ws.org/Vol-1145/#AlexeyiLiagin>,
+        <http://ceur-ws.org/Vol-1145/#AllaiPletukhina>,
+        <http://ceur-ws.org/Vol-1145/#ElenaiStepanova> .
+
+<http://ceur-ws.org/Vol-1145/#paper7> a ns8:Paper ;
+    ns8:partOf <http://ceur-ws.org/Vol-1145/> ;
+    ns6:title "Identification of Exploitation Conditions of the Automobile Tire while Car Driving by Means of Hidden Markov Models" ;
+    ns1:endPage 66 ;
+    ns1:numPages 10 ;
+    ns1:section <http://ceur-ws.org/Vol-1145/#ResearchPapers> ;
+    ns1:startPage 57 ;
+    ns2:author <http://ceur-ws.org/Vol-1145/#DenisiTananaev>,
+        <http://ceur-ws.org/Vol-1145/#GalinaiShagrova>,
+        <http://ceur-ws.org/Vol-1145/#VictoriKozhevnikov> .
+
+<http://ceur-ws.org/Vol-1145/#paper3> a ns8:Paper ;
+    ns8:partOf <http://ceur-ws.org/Vol-1145/> ;
+    ns6:title "Generic CDCL – A Formalization of Modern Propositional Satisfiability Solvers" ;
+    ns1:endPage 34 ;
+    ns1:numPages 10 ;
+    ns1:section <http://ceur-ws.org/Vol-1145/#ResearchPapers> ;
+    ns1:startPage 25 ;
+    ns2:author <http://ceur-ws.org/Vol-1145/#NorbertiManthey>,
+        <http://ceur-ws.org/Vol-1145/#PeteriSteinke>,
+        <http://ceur-ws.org/Vol-1145/#SteffeniH%C3%B6lldobler>,
+        <http://ceur-ws.org/Vol-1145/#TobiasiPhilipp> .
+
+<http://ceur-ws.org/Vol-1145/> a ns8:Proceedings ;
+    ns8:hasPart <http://ceur-ws.org/Vol-1145/#paper1>,
+        <http://ceur-ws.org/Vol-1145/#paper2>,
+        <http://ceur-ws.org/Vol-1145/#paper3>,
+        <http://ceur-ws.org/Vol-1145/#paper4>,
+        <http://ceur-ws.org/Vol-1145/#paper5>,
+        <http://ceur-ws.org/Vol-1145/#paper6>,
+        <http://ceur-ws.org/Vol-1145/#paper7>,
+        <http://ceur-ws.org/Vol-1145/#paper8>,
+        <http://ceur-ws.org/Vol-1145/#tutorial1> ;
+    ns8:hasSession <http://ceur-ws.org/Vol-1145/#ResearchPapers> ;
+    ns7:issued "2014-04-15T00:00:00+00:00"^^xsd:dateTime ;
+    ns1:presentedAt <http://ceur-ws.org/Vol-1145/#event> ;
+    ns2:editor <http://ceur-ws.org/Vol-1145/#AndreyiMalikov>,
+        <http://ceur-ws.org/Vol-1145/#ChristophiWernhard>,
+        <http://ceur-ws.org/Vol-1145/#SteffeniH%C3%B6lldobler> .
+
+<http://ceur-ws.org/Vol-1145/#ResearchPapers> a ns8:SessionEvent ;
+    ns8:partOf <http://ceur-ws.org/Vol-1145/> ;
+    ns6:title "Research Papers" .
 

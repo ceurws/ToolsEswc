@@ -1,40 +1,139 @@
 @prefix ns1: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns2: <http://purl.org/dc/elements/1.1/> .
-@prefix ns3: <http://purl.org/ontology/bibo/#> .
-@prefix ns4: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns2: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns3: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns4: <http://xmlns.com/foaf/0.1/> .
 @prefix ns5: <http://www.w3.org/2002/07/owl#> .
-@prefix ns6: <http://xmlns.com/foaf/0.1/> .
+@prefix ns6: <http://purl.org/ontology/bibo/#> .
 @prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns8: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns8: <http://purl.org/dc/elements/1.1/> .
+@prefix ns9: <http://purl.org/NET/c4dm/timeline.owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1534/> a ns1:Proceedings ;
-    ns7:issued "2015-12-10T00:00:00+00:00"^^xsd:dateTime ;
-    ns3:presentedAt <http://ceur-ws.org/Vol-1534/#event> ;
-    ns8:editor <http://ceur-ws.org/Vol-1534/#RokiaiMissaoui>,
-        <http://ceur-ws.org/Vol-1534/#SergeiiO.iKuznetsov>,
-        <http://ceur-ws.org/Vol-1534/#SergeiiObiedkov> .
+<http://ceur-ws.org/Vol-1534/#AlexandraiBarysheva> a ns4:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/AlexandraiBarysheva> ;
+    ns4:made <http://ceur-ws.org/Vol-1534/#paper3> ;
+    ns4:name "Alexandra Barysheva" .
 
-<http://ceur-ws.org/Vol-1534/#RokiaiMissaoui> a ns6:Person ;
+<http://ceur-ws.org/Vol-1534/#AlexeyiNeznanov> a ns4:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/AlexeyiNeznanov> ;
+    ns4:made <http://ceur-ws.org/Vol-1534/#paper5> ;
+    ns4:name "Alexey Neznanov" .
+
+<http://ceur-ws.org/Vol-1534/#FrancescoiKriegel> a ns4:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/FrancescoiKriegel> ;
+    ns4:made <http://ceur-ws.org/Vol-1534/#paper4> ;
+    ns4:name "Francesco Kriegel" .
+
+<http://ceur-ws.org/Vol-1534/#FranciscoiJ.iValverde-Albacete> a ns4:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/FranciscoiJ.iValverde-Albacete> ;
+    ns4:made <http://ceur-ws.org/Vol-1534/#paper7> ;
+    ns4:name "Francisco J. Valverde-Albacete" .
+
+<http://ceur-ws.org/Vol-1534/#HenryiSoldano> a ns4:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/HenryiSoldano> ;
+    ns4:made <http://ceur-ws.org/Vol-1534/#paper6> ;
+    ns4:name "Henry Soldano" .
+
+<http://ceur-ws.org/Vol-1534/#MartiniAtzmueller> a ns4:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/MartiniAtzmueller> ;
+    ns4:made <http://ceur-ws.org/Vol-1534/#paper2> ;
+    ns4:name "Martin Atzmueller" .
+
+<http://ceur-ws.org/Vol-1534/#PeteriEklund> a ns4:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/PeteriEklund> ;
+    ns4:made <http://ceur-ws.org/Vol-1534/#paper1> ;
+    ns4:name "Peter Eklund" .
+
+<http://ceur-ws.org/Vol-1534/#RokiaiMissaoui> a ns4:Person ;
+    ns2:affiliation "" ;
     ns5:sameAs <http://ceur-ws.org/persons/RokiaiMissaoui> ;
-    ns6:name "Rokia Missaoui" .
+    ns4:name "Rokia Missaoui" .
 
-<http://ceur-ws.org/Vol-1534/#SergeiiO.iKuznetsov> a ns6:Person ;
+<http://ceur-ws.org/Vol-1534/#SergeiiO.iKuznetsov> a ns4:Person ;
+    ns2:affiliation "" ;
     ns5:sameAs <http://ceur-ws.org/persons/SergeiiO.iKuznetsov> ;
-    ns6:name "Sergei O. Kuznetsov" .
+    ns4:name "Sergei O. Kuznetsov" .
 
-<http://ceur-ws.org/Vol-1534/#SergeiiObiedkov> a ns6:Person ;
+<http://ceur-ws.org/Vol-1534/#SergeiiObiedkov> a ns4:Person ;
+    ns2:affiliation "" ;
     ns5:sameAs <http://ceur-ws.org/persons/SergeiiObiedkov> ;
-    ns6:name "Sergei Obiedkov" .
+    ns4:name "Sergei Obiedkov" .
+
+<http://ceur-ws.org/Vol-1534/#ThomasiTilley> a ns4:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/ThomasiTilley> ;
+    ns4:made <http://ceur-ws.org/Vol-1534/#paper1> ;
+    ns4:name "Thomas Tilley" .
 
 <http://ceur-ws.org/Vol-1534/#event> a ns1:WorkshopEvent ;
     ns1:hasLocation <http://dbpedia.org/resource/Spain> ;
-    ns1:hasPart <http://ceur-ws.org/Vol-1534/#part-ws> ;
+    ns1:hasPart <http://ceur-ws.org/Vol-1534/#part-SNAFCA> ;
     ns1:isSubEventOf <http://ceur-ws.org/Vol-1534/#conf> ;
-    ns4:beginsAtDatetime "2015-06-25T00:00:00+00:00"^^xsd:dateTime ;
-    ns4:endsAtDatetime "2015-06-25T00:00:00+00:00"^^xsd:dateTime ;
-    ns2:license "http://creativecommons.org/publicdomain/zero/1.0/" .
+    ns9:beginsAtDatetime "2015-06-25T00:00:00+00:00"^^xsd:dateTime ;
+    ns9:endsAtDatetime "2015-06-25T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:license "http://creativecommons.org/publicdomain/zero/1.0/" .
+
+<http://ceur-ws.org/Vol-1534/#paper2> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1534/> ;
+    ns3:title "Subgroup and Community Analytics on Attributed Graphs" ;
+    ns6:section <http://ceur-ws.org/Vol-1534/#Contents> ;
+    ns2:author <http://ceur-ws.org/Vol-1534/#MartiniAtzmueller> .
+
+<http://ceur-ws.org/Vol-1534/#paper3> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1534/> ;
+    ns3:title "Profiling Less Active Users in Online Communities" ;
+    ns6:section <http://ceur-ws.org/Vol-1534/#Contents> ;
+    ns2:author <http://ceur-ws.org/Vol-1534/#AlexandraiBarysheva> .
+
+<http://ceur-ws.org/Vol-1534/#paper4> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1534/> ;
+    ns3:title "Extracting ALEQR Self-Knowledge Bases from Graphs" ;
+    ns6:section <http://ceur-ws.org/Vol-1534/#Contents> ;
+    ns2:author <http://ceur-ws.org/Vol-1534/#FrancescoiKriegel> .
+
+<http://ceur-ws.org/Vol-1534/#paper5> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1534/> ;
+    ns3:title "Analyzing Social Networks Services Using Formal Concept Analysis Research Toolbox" ;
+    ns6:section <http://ceur-ws.org/Vol-1534/#Contents> ;
+    ns2:author <http://ceur-ws.org/Vol-1534/#AlexeyiNeznanov> .
+
+<http://ceur-ws.org/Vol-1534/#paper6> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1534/> ;
+    ns3:title "Abstract and Local Concepts in Attributed Networks" ;
+    ns6:section <http://ceur-ws.org/Vol-1534/#Contents> ;
+    ns2:author <http://ceur-ws.org/Vol-1534/#HenryiSoldano> .
+
+<http://ceur-ws.org/Vol-1534/#paper7> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1534/> ;
+    ns3:title "Extending the HITS Algorithm over Dioids" ;
+    ns6:section <http://ceur-ws.org/Vol-1534/#Contents> ;
+    ns2:author <http://ceur-ws.org/Vol-1534/#FranciscoiJ.iValverde-Albacete> .
+
+<http://ceur-ws.org/Vol-1534/#paper1> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1534/> ;
+    ns3:title "Social Network Analysis using Citations and Formal Concept Analysis" ;
+    ns6:section <http://ceur-ws.org/Vol-1534/#Contents> ;
+    ns2:author <http://ceur-ws.org/Vol-1534/#PeteriEklund>,
+        <http://ceur-ws.org/Vol-1534/#ThomasiTilley> .
+
+<http://ceur-ws.org/Vol-1534/> a ns1:Proceedings ;
+    ns1:hasPart <http://ceur-ws.org/Vol-1534/#paper1>,
+        <http://ceur-ws.org/Vol-1534/#paper2>,
+        <http://ceur-ws.org/Vol-1534/#paper3>,
+        <http://ceur-ws.org/Vol-1534/#paper4>,
+        <http://ceur-ws.org/Vol-1534/#paper5>,
+        <http://ceur-ws.org/Vol-1534/#paper6>,
+        <http://ceur-ws.org/Vol-1534/#paper7> ;
+    ns1:hasSession <http://ceur-ws.org/Vol-1534/#Contents> ;
+    ns7:issued "2015-12-10T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:presentedAt <http://ceur-ws.org/Vol-1534/#event> ;
+    ns2:editor <http://ceur-ws.org/Vol-1534/#RokiaiMissaoui>,
+        <http://ceur-ws.org/Vol-1534/#SergeiiO.iKuznetsov>,
+        <http://ceur-ws.org/Vol-1534/#SergeiiObiedkov> .
+
+<http://ceur-ws.org/Vol-1534/#Contents> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-1534/> ;
+    ns3:title "Contents" .
 

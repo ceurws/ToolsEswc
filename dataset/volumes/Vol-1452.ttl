@@ -1,56 +1,605 @@
-@prefix ns1: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns2: <http://www.w3.org/2002/07/owl#> .
-@prefix ns3: <http://xmlns.com/foaf/0.1/> .
-@prefix ns4: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns1: <http://purl.org/ontology/bibo/#> .
+@prefix ns2: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns3: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns4: <http://xmlns.com/foaf/0.1/> .
 @prefix ns5: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns6: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns7: <http://purl.org/dc/elements/1.1/> .
-@prefix ns8: <http://purl.org/ontology/bibo/#> .
+@prefix ns6: <http://www.w3.org/2002/07/owl#> .
+@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns9: <http://purl.org/dc/elements/1.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1452/> a ns5:Proceedings ;
-    ns6:issued "2015-10-15T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:presentedAt <http://ceur-ws.org/Vol-1452/#event> ;
-    ns1:editor <http://ceur-ws.org/Vol-1452/#AlexanderiPanchenko>,
-        <http://ceur-ws.org/Vol-1452/#MikhailiYu.iKhachay>,
-        <http://ceur-ws.org/Vol-1452/#NataliaiKonstantinova>,
-        <http://ceur-ws.org/Vol-1452/#NikitaiSpirin>,
-        <http://ceur-ws.org/Vol-1452/#RadhakrishnaniDelhibabu>,
-        <http://ceur-ws.org/Vol-1452/#ValeriiG.iLabunets> .
+<http://ceur-ws.org/Vol-1452/#AleksandriBakhshiev> a ns4:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/AleksandriBakhshiev> ;
+    ns4:made <http://ceur-ws.org/Vol-1452/#paper1> ;
+    ns4:name "Aleksandr Bakhshiev" .
 
-<http://ceur-ws.org/Vol-1452/#AlexanderiPanchenko> a ns3:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/AlexanderiPanchenko> ;
-    ns3:name "Alexander Panchenko" .
+<http://ceur-ws.org/Vol-1452/#AlekseiiZhukov> a ns4:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/AlekseiiZhukov> ;
+    ns4:made <http://ceur-ws.org/Vol-1452/#paper12> ;
+    ns4:name "Aleksei Zhukov" .
 
-<http://ceur-ws.org/Vol-1452/#MikhailiYu.iKhachay> a ns3:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/MikhailiYu.iKhachay> ;
-    ns3:name "Mikhail Yu. Khachay" .
+<http://ceur-ws.org/Vol-1452/#AlekseyiDemidov> a ns4:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/AlekseyiDemidov> ;
+    ns4:made <http://ceur-ws.org/Vol-1452/#paper25> ;
+    ns4:name "Aleksey Demidov" .
 
-<http://ceur-ws.org/Vol-1452/#NataliaiKonstantinova> a ns3:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/NataliaiKonstantinova> ;
-    ns3:name "Natalia Konstantinova" .
+<http://ceur-ws.org/Vol-1452/#AlekseyiKalmykov> a ns4:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/AlekseyiKalmykov> ;
+    ns4:made <http://ceur-ws.org/Vol-1452/#paper17> ;
+    ns4:name "Aleksey Kalmykov" .
 
-<http://ceur-ws.org/Vol-1452/#NikitaiSpirin> a ns3:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/NikitaiSpirin> ;
-    ns3:name "Nikita Spirin" .
+<http://ceur-ws.org/Vol-1452/#AlexanderiKozko> a ns4:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/AlexanderiKozko> ;
+    ns4:made <http://ceur-ws.org/Vol-1452/#paper6> ;
+    ns4:name "Alexander Kozko" .
 
-<http://ceur-ws.org/Vol-1452/#RadhakrishnaniDelhibabu> a ns3:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/RadhakrishnaniDelhibabu> ;
-    ns3:name "Radhakrishnan Delhibabu" .
+<http://ceur-ws.org/Vol-1452/#AlexanderiKupriyanov> a ns4:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/AlexanderiKupriyanov> ;
+    ns4:made <http://ceur-ws.org/Vol-1452/#paper5> ;
+    ns4:name "Alexander Kupriyanov" .
 
-<http://ceur-ws.org/Vol-1452/#ValeriiG.iLabunets> a ns3:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/ValeriiG.iLabunets> ;
-    ns3:name "Valeri G. Labunets" .
+<http://ceur-ws.org/Vol-1452/#AlexanderiPanchenko> a ns4:Person ;
+    ns2:affiliation "" ;
+    ns6:sameAs <http://ceur-ws.org/persons/AlexanderiPanchenko> ;
+    ns4:name "Alexander Panchenko" .
+
+<http://ceur-ws.org/Vol-1452/#AlexanderiPorshnev> a ns4:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/AlexanderiPorshnev> ;
+    ns4:made <http://ceur-ws.org/Vol-1452/#paper15> ;
+    ns4:name "Alexander Porshnev" .
+
+<http://ceur-ws.org/Vol-1452/#AlimiUliGias> a ns4:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/AlimiUliGias> ;
+    ns4:made <http://ceur-ws.org/Vol-1452/#paper4> ;
+    ns4:name "Alim Ul Gias" .
+
+<http://ceur-ws.org/Vol-1452/#AnastasiaiBobkova> a ns4:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/AnastasiaiBobkova> ;
+    ns4:made <http://ceur-ws.org/Vol-1452/#paper16> ;
+    ns4:name "Anastasia Bobkova" .
+
+<http://ceur-ws.org/Vol-1452/#AndreyiMukhtarov> a ns4:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/AndreyiMukhtarov> ;
+    ns4:made <http://ceur-ws.org/Vol-1452/#paper16> ;
+    ns4:name "Andrey Mukhtarov" .
+
+<http://ceur-ws.org/Vol-1452/#AndreyiMurashov> a ns4:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/AndreyiMurashov> ;
+    ns4:made <http://ceur-ws.org/Vol-1452/#paper10> ;
+    ns4:name "Andrey Murashov" .
+
+<http://ceur-ws.org/Vol-1452/#AndreyiSosnovsky> a ns4:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/AndreyiSosnovsky> ;
+    ns4:made <http://ceur-ws.org/Vol-1452/#paper20> ;
+    ns4:name "Andrey Sosnovsky" .
+
+<http://ceur-ws.org/Vol-1452/#DenisiA.iNikiforov> a ns4:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/DenisiA.iNikiforov> ;
+    ns4:made <http://ceur-ws.org/Vol-1452/#paper13> ;
+    ns4:name "Denis A. Nikiforov" .
+
+<http://ceur-ws.org/Vol-1452/#DmitriyiKirsh> a ns4:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/DmitriyiKirsh> ;
+    ns4:made <http://ceur-ws.org/Vol-1452/#paper5> ;
+    ns4:name "Dmitriy Kirsh" .
+
+<http://ceur-ws.org/Vol-1452/#DmitryiMouromtsev> a ns4:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/DmitryiMouromtsev> ;
+    ns4:made <http://ceur-ws.org/Vol-1452/#paper18> ;
+    ns4:name "Dmitry Mouromtsev" .
+
+<http://ceur-ws.org/Vol-1452/#DmitryiTarasov> a ns4:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/DmitryiTarasov> ;
+    ns4:made <http://ceur-ws.org/Vol-1452/#paper21> ;
+    ns4:name "Dmitry Tarasov" .
+
+<http://ceur-ws.org/Vol-1452/#ElenaiI.iZakharenko> a ns4:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/ElenaiI.iZakharenko> ;
+    ns4:made <http://ceur-ws.org/Vol-1452/#paper22> ;
+    ns4:name "Elena I. Zakharenko" .
+
+<http://ceur-ws.org/Vol-1452/#EvgeniyiA.iAltman> a ns4:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/EvgeniyiA.iAltman> ;
+    ns4:made <http://ceur-ws.org/Vol-1452/#paper22> ;
+    ns4:name "Evgeniy A. Altman" .
+
+<http://ceur-ws.org/Vol-1452/#EvgenyiMyasnikov> a ns4:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/EvgenyiMyasnikov> ;
+    ns4:made <http://ceur-ws.org/Vol-1452/#paper11> ;
+    ns4:name "Evgeny Myasnikov" .
+
+<http://ceur-ws.org/Vol-1452/#FilippiGundelakh> a ns4:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/FilippiGundelakh> ;
+    ns4:made <http://ceur-ws.org/Vol-1452/#paper1> ;
+    ns4:name "Filipp Gundelakh" .
+
+<http://ceur-ws.org/Vol-1452/#FilippiMyasnikov> a ns4:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/FilippiMyasnikov> ;
+    ns4:made <http://ceur-ws.org/Vol-1452/#paper8> ;
+    ns4:name "Filipp Myasnikov" .
+
+<http://ceur-ws.org/Vol-1452/#IgoriG.iLisikh> a ns4:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/IgoriG.iLisikh> ;
+    ns4:made <http://ceur-ws.org/Vol-1452/#paper13> ;
+    ns4:name "Igor G. Lisikh" .
+
+<http://ceur-ws.org/Vol-1452/#IlyaiMakarov> a ns4:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/IlyaiMakarov> ;
+    ns4:made <http://ceur-ws.org/Vol-1452/#paper9> ;
+    ns4:name "Ilya Makarov" .
+
+<http://ceur-ws.org/Vol-1452/#IlyaiSemerhanov> a ns4:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/IlyaiSemerhanov> ;
+    ns4:made <http://ceur-ws.org/Vol-1452/#paper18> ;
+    ns4:name "Ilya Semerhanov" .
+
+<http://ceur-ws.org/Vol-1452/#IrinaiBurova> a ns4:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/IrinaiBurova> ;
+    ns4:made <http://ceur-ws.org/Vol-1452/#paper2> ;
+    ns4:name "Irina Burova" .
+
+<http://ceur-ws.org/Vol-1452/#KaziiSakib> a ns4:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/KaziiSakib> ;
+    ns4:made <http://ceur-ws.org/Vol-1452/#paper4> ;
+    ns4:name "Kazi Sakib" .
+
+<http://ceur-ws.org/Vol-1452/#KirilliBreslavskiy> a ns4:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/KirilliBreslavskiy> ;
+    ns4:made <http://ceur-ws.org/Vol-1452/#paper14> ;
+    ns4:name "Kirill Breslavskiy" .
+
+<http://ceur-ws.org/Vol-1452/#LadaiTokmakova> a ns4:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/LadaiTokmakova> ;
+    ns4:made <http://ceur-ws.org/Vol-1452/#paper9> ;
+    ns4:name "Lada Tokmakova" .
+
+<http://ceur-ws.org/Vol-1452/#MargaritaiMymrina> a ns4:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/MargaritaiMymrina> ;
+    ns4:made <http://ceur-ws.org/Vol-1452/#paper23> ;
+    ns4:name "Margarita Mymrina" .
+
+<http://ceur-ws.org/Vol-1452/#MikhailiRonkin> a ns4:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/MikhailiRonkin> ;
+    ns4:made <http://ceur-ws.org/Vol-1452/#paper17> ;
+    ns4:name "Mikhail Ronkin" .
+
+<http://ceur-ws.org/Vol-1452/#MikhailiTokmakov> a ns4:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/MikhailiTokmakov> ;
+    ns4:made <http://ceur-ws.org/Vol-1452/#paper9> ;
+    ns4:name "Mikhail Tokmakov" .
+
+<http://ceur-ws.org/Vol-1452/#MikhailiYu.iKhachay> a ns4:Person ;
+    ns2:affiliation "" ;
+    ns6:sameAs <http://ceur-ws.org/persons/MikhailiYu.iKhachay> ;
+    ns4:name "Mikhail Yu. Khachay" .
+
+<http://ceur-ws.org/Vol-1452/#MohammadiErfan> a ns4:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/MohammadiErfan> ;
+    ns4:made <http://ceur-ws.org/Vol-1452/#paper4> ;
+    ns4:name "Mohammad Erfan" .
+
+<http://ceur-ws.org/Vol-1452/#NataliaiKonstantinova> a ns4:Person ;
+    ns2:affiliation "" ;
+    ns6:sameAs <http://ceur-ws.org/persons/NataliaiKonstantinova> ;
+    ns4:name "Natalia Konstantinova" .
+
+<http://ceur-ws.org/Vol-1452/#NataliaiPapulovskaya> a ns4:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/NataliaiPapulovskaya> ;
+    ns4:made <http://ceur-ws.org/Vol-1452/#paper14> ;
+    ns4:name "Natalia Papulovskaya" .
+
+<http://ceur-ws.org/Vol-1452/#NikitaiSpirin> a ns4:Person ;
+    ns2:affiliation "" ;
+    ns6:sameAs <http://ceur-ws.org/persons/NikitaiSpirin> ;
+    ns4:name "Nikita Spirin" .
+
+<http://ceur-ws.org/Vol-1452/#OlegiShmelev> a ns4:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/OlegiShmelev> ;
+    ns4:made <http://ceur-ws.org/Vol-1452/#paper10> ;
+    ns4:name "Oleg Shmelev" .
+
+<http://ceur-ws.org/Vol-1452/#OlgaiBezrukavaya> a ns4:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/OlgaiBezrukavaya> ;
+    ns4:made <http://ceur-ws.org/Vol-1452/#paper2> ;
+    ns4:name "Olga Bezrukavaya" .
+
+<http://ceur-ws.org/Vol-1452/#PaveliDruzhkov> a ns4:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/PaveliDruzhkov> ;
+    ns4:made <http://ceur-ws.org/Vol-1452/#paper7> ;
+    ns4:name "Pavel Druzhkov" .
+
+<http://ceur-ws.org/Vol-1452/#PaveliShashkin> a ns4:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/PaveliShashkin> ;
+    ns4:made <http://ceur-ws.org/Vol-1452/#paper15> ;
+    ns4:name "Pavel Shashkin" .
+
+<http://ceur-ws.org/Vol-1452/#RadhakrishnaniDelhibabu> a ns4:Person ;
+    ns2:affiliation "" ;
+    ns6:sameAs <http://ceur-ws.org/persons/RadhakrishnaniDelhibabu> ;
+    ns4:name "Radhakrishnan Delhibabu" .
+
+<http://ceur-ws.org/Vol-1452/#RuslaniL.iSivakov> a ns4:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/RuslaniL.iSivakov> ;
+    ns4:made <http://ceur-ws.org/Vol-1452/#paper13> ;
+    ns4:name "Ruslan L. Sivakov" .
+
+<http://ceur-ws.org/Vol-1452/#SergeyiPorshnev> a ns4:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/SergeyiPorshnev> ;
+    ns4:made <http://ceur-ws.org/Vol-1452/#paper16> ;
+    ns4:name "Sergey Porshnev" .
+
+<http://ceur-ws.org/Vol-1452/#SergeyiZraenko> a ns4:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/SergeyiZraenko> ;
+    ns4:made <http://ceur-ws.org/Vol-1452/#paper23> ;
+    ns4:name "Sergey Zraenko" .
+
+<http://ceur-ws.org/Vol-1452/#SheikhiMuhammadiSarwar> a ns4:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/SheikhiMuhammadiSarwar> ;
+    ns4:made <http://ceur-ws.org/Vol-1452/#paper4> ;
+    ns4:name "Sheikh Muhammad Sarwar" .
+
+<http://ceur-ws.org/Vol-1452/#StepaniMartyugin> a ns4:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/StepaniMartyugin> ;
+    ns4:made <http://ceur-ws.org/Vol-1452/#paper3> ;
+    ns4:name "Stepan Martyugin" .
+
+<http://ceur-ws.org/Vol-1452/#TatyanaiSerezhnikova> a ns4:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/TatyanaiSerezhnikova> ;
+    ns4:made <http://ceur-ws.org/Vol-1452/#paper19> ;
+    ns4:name "Tatyana Serezhnikova" .
+
+<http://ceur-ws.org/Vol-1452/#TheiLongiNguyen> a ns4:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/TheiLongiNguyen> ;
+    ns4:made <http://ceur-ws.org/Vol-1452/#paper12> ;
+    ns4:name "The Long Nguyen" .
+
+<http://ceur-ws.org/Vol-1452/#ThuiHuongiNguyen> a ns4:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/ThuiHuongiNguyen> ;
+    ns4:made <http://ceur-ws.org/Vol-1452/#paper12> ;
+    ns4:name "Thu Huong Nguyen" .
+
+<http://ceur-ws.org/Vol-1452/#ValentinaiKustikova> a ns4:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/ValentinaiKustikova> ;
+    ns4:made <http://ceur-ws.org/Vol-1452/#paper7> ;
+    ns4:name "Valentina Kustikova" .
+
+<http://ceur-ws.org/Vol-1452/#ValentiniKashitsin> a ns4:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/ValentiniKashitsin> ;
+    ns4:made <http://ceur-ws.org/Vol-1452/#paper14> ;
+    ns4:name "Valentin Kashitsin" .
+
+<http://ceur-ws.org/Vol-1452/#ValeriiG.iLabunets> a ns4:Person ;
+    ns2:affiliation "" ;
+    ns6:sameAs <http://ceur-ws.org/persons/ValeriiG.iLabunets> ;
+    ns4:name "Valeri G. Labunets" .
+
+<http://ceur-ws.org/Vol-1452/#VasiliyiZyuzin> a ns4:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/VasiliyiZyuzin> ;
+    ns4:made <http://ceur-ws.org/Vol-1452/#paper16> ;
+    ns4:name "Vasiliy Zyuzin" .
+
+<http://ceur-ws.org/Vol-1452/#VictoriKobernichenko> a ns4:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/VictoriKobernichenko> ;
+    ns4:made <http://ceur-ws.org/Vol-1452/#paper20> ;
+    ns4:name "Victor Kobernichenko" .
+
+<http://ceur-ws.org/Vol-1452/#ViktoriFilimonov> a ns4:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/ViktoriFilimonov> ;
+    ns4:made <http://ceur-ws.org/Vol-1452/#paper24> ;
+    ns4:name "Viktor Filimonov" .
+
+<http://ceur-ws.org/Vol-1452/#ViktoriyaiSlavnykh> a ns4:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/ViktoriyaiSlavnykh> ;
+    ns4:made <http://ceur-ws.org/Vol-1452/#paper24> ;
+    ns4:name "Viktoriya Slavnykh" .
+
+<http://ceur-ws.org/Vol-1452/#VladimiriBobkov> a ns4:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/VladimiriBobkov> ;
+    ns4:made <http://ceur-ws.org/Vol-1452/#paper16> ;
+    ns4:name "Vladimir Bobkov" .
+
+<http://ceur-ws.org/Vol-1452/#VladislaviGanzha> a ns4:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/VladislaviGanzha> ;
+    ns4:made <http://ceur-ws.org/Vol-1452/#paper23> ;
+    ns4:name "Vladislav Ganzha" .
 
 <http://ceur-ws.org/Vol-1452/#event> a ns5:WorkshopEvent ;
     ns5:hasLocation <http://dbpedia.org/resource/Russia> ;
     ns5:hasPart <http://ceur-ws.org/Vol-1452/#part-AIST> ;
     ns5:isSubEventOf <http://ceur-ws.org/Vol-1452/#conf> ;
-    ns4:beginsAtDatetime "2015-04-09T00:00:00+00:00"^^xsd:dateTime ;
-    ns4:endsAtDatetime "2015-04-11T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:license "http://creativecommons.org/publicdomain/zero/1.0/" ;
+    ns8:beginsAtDatetime "2015-04-09T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:endsAtDatetime "2015-04-11T00:00:00+00:00"^^xsd:dateTime ;
+    ns9:license "http://creativecommons.org/publicdomain/zero/1.0/" ;
     rdfs:seeAlso <http://ceur-ws.org/Vol-1197/#event> .
+
+<http://ceur-ws.org/Vol-1452/#AlexanderiSergeev> a ns4:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/AlexanderiSergeev> ;
+    ns4:made <http://ceur-ws.org/Vol-1452/#paper21>,
+        <http://ceur-ws.org/Vol-1452/#paper24> ;
+    ns4:name "Alexander Sergeev" .
+
+<http://ceur-ws.org/Vol-1452/#EkaterinaiOstheimer> a ns4:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/EkaterinaiOstheimer> ;
+    ns4:made <http://ceur-ws.org/Vol-1452/#paper3>,
+        <http://ceur-ws.org/Vol-1452/#paper8> ;
+    ns4:name "Ekaterina Ostheimer" .
+
+<http://ceur-ws.org/Vol-1452/#ValeriyiLabunets> a ns4:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/ValeriyiLabunets> ;
+    ns4:made <http://ceur-ws.org/Vol-1452/#paper3>,
+        <http://ceur-ws.org/Vol-1452/#paper8> ;
+    ns4:name "Valeriy Labunets" .
+
+<http://ceur-ws.org/Vol-1452/#paper11> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1452/> ;
+    ns3:title "A Nonlinear Dimensionality Reduction Using Combined Approach to Feature Space Decomposition" ;
+    ns1:endPage 95 ;
+    ns1:numPages 11 ;
+    ns1:startPage 85 ;
+    ns2:author <http://ceur-ws.org/Vol-1452/#EvgenyiMyasnikov> .
+
+<http://ceur-ws.org/Vol-1452/#paper19> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1452/> ;
+    ns3:title "Adaptive Regularization Algorithm Paired with Image Segmentation" ;
+    ns1:endPage 171 ;
+    ns1:numPages 6 ;
+    ns1:startPage 166 ;
+    ns2:author <http://ceur-ws.org/Vol-1452/#TatyanaiSerezhnikova> .
+
+<http://ceur-ws.org/Vol-1452/#paper25> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1452/> ;
+    ns3:title "Эволюционирующие онтологии в аспекте управления темпоральными или изменяющимися фактами (Evolving Ontologies in the Aspect of Handling Temporal or Changeable Artifacts)" ;
+    ns1:endPage 214 ;
+    ns1:numPages 12 ;
+    ns1:startPage 203 ;
+    ns2:author <http://ceur-ws.org/Vol-1452/#AlekseyiDemidov> .
+
+<http://ceur-ws.org/Vol-1452/#paper6> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1452/> ;
+    ns3:title "Construction of Adaptive Educational Forums Based on Intellectual Analysis of Structural and Semantics Features of Messages" ;
+    ns1:endPage 51 ;
+    ns1:numPages 6 ;
+    ns1:startPage 46 ;
+    ns2:author <http://ceur-ws.org/Vol-1452/#AlexanderiKozko> .
+
+<http://ceur-ws.org/Vol-1452/#paper1> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1452/> ;
+    ns3:title "Mathematical Model of the Impulses Transformation Processes in Natural Neurons for Biologically Inspired Control Systems Development" ;
+    ns1:endPage 12 ;
+    ns1:numPages 12 ;
+    ns1:startPage 1 ;
+    ns2:author <http://ceur-ws.org/Vol-1452/#AleksandriBakhshiev>,
+        <http://ceur-ws.org/Vol-1452/#FilippiGundelakh> .
+
+<http://ceur-ws.org/Vol-1452/#paper10> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1452/> ;
+    ns3:title "The Text Network Analysis: What Does Strategic Documentation Tell Us About Regional Integration?" ;
+    ns1:endPage 84 ;
+    ns1:numPages 7 ;
+    ns1:startPage 78 ;
+    ns2:author <http://ceur-ws.org/Vol-1452/#AndreyiMurashov>,
+        <http://ceur-ws.org/Vol-1452/#OlegiShmelev> .
+
+<http://ceur-ws.org/Vol-1452/#paper15> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1452/> ;
+    ns3:title "Am I Really Happy When I Write \"Happy\" in My Post?" ;
+    ns1:endPage 136 ;
+    ns1:numPages 11 ;
+    ns1:startPage 126 ;
+    ns2:author <http://ceur-ws.org/Vol-1452/#AlexanderiPorshnev>,
+        <http://ceur-ws.org/Vol-1452/#PaveliShashkin> .
+
+<http://ceur-ws.org/Vol-1452/#paper17> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1452/> ;
+    ns3:title "Accuracy Analysis of Estimation of 2-D Flow Profile in Conduits by Results of Multipath Flow Measurements" ;
+    ns1:endPage 153 ;
+    ns1:numPages 11 ;
+    ns1:startPage 143 ;
+    ns2:author <http://ceur-ws.org/Vol-1452/#AlekseyiKalmykov>,
+        <http://ceur-ws.org/Vol-1452/#MikhailiRonkin> .
+
+<http://ceur-ws.org/Vol-1452/#paper18> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1452/> ;
+    ns3:title "Semi-Automated Integration of Legacy Systems Using Linked Data" ;
+    ns1:endPage 165 ;
+    ns1:numPages 12 ;
+    ns1:startPage 154 ;
+    ns2:author <http://ceur-ws.org/Vol-1452/#DmitryiMouromtsev>,
+        <http://ceur-ws.org/Vol-1452/#IlyaiSemerhanov> .
+
+<http://ceur-ws.org/Vol-1452/#paper2> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1452/> ;
+    ns3:title "Construction of Images Using Minimal Splines" ;
+    ns1:endPage 18 ;
+    ns1:numPages 6 ;
+    ns1:startPage 13 ;
+    ns2:author <http://ceur-ws.org/Vol-1452/#IrinaiBurova>,
+        <http://ceur-ws.org/Vol-1452/#OlgaiBezrukavaya> .
+
+<http://ceur-ws.org/Vol-1452/#paper20> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1452/> ;
+    ns3:title "Algorithm of Interferometric Coherence Estimation for Synthetic Aperture Radar Image Pair" ;
+    ns1:endPage 176 ;
+    ns1:numPages 5 ;
+    ns1:startPage 172 ;
+    ns2:author <http://ceur-ws.org/Vol-1452/#AndreyiSosnovsky>,
+        <http://ceur-ws.org/Vol-1452/#VictoriKobernichenko> .
+
+<http://ceur-ws.org/Vol-1452/#paper21> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1452/> ;
+    ns3:title "Irregularity as a Quantitative Assessment of Font Drawing and Its Effect on the Reading Speed" ;
+    ns1:endPage 182 ;
+    ns1:numPages 6 ;
+    ns1:startPage 177 ;
+    ns2:author <http://ceur-ws.org/Vol-1452/#AlexanderiSergeev>,
+        <http://ceur-ws.org/Vol-1452/#DmitryiTarasov> .
+
+<http://ceur-ws.org/Vol-1452/#paper22> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1452/> ;
+    ns3:title "Fast Full-Search Motion Estimation Method Based On Fast Fourier Transform Algorithm" ;
+    ns1:endPage 186 ;
+    ns1:numPages 4 ;
+    ns1:startPage 183 ;
+    ns2:author <http://ceur-ws.org/Vol-1452/#ElenaiI.iZakharenko>,
+        <http://ceur-ws.org/Vol-1452/#EvgeniyiA.iAltman> .
+
+<http://ceur-ws.org/Vol-1452/#paper5> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1452/> ;
+    ns3:title "Identification of Three-Dimensional Crystal Lattices by Estimation of Their Unit Cell Parameters" ;
+    ns1:endPage 45 ;
+    ns1:numPages 6 ;
+    ns1:startPage 40 ;
+    ns2:author <http://ceur-ws.org/Vol-1452/#AlexanderiKupriyanov>,
+        <http://ceur-ws.org/Vol-1452/#DmitriyiKirsh> .
+
+<http://ceur-ws.org/Vol-1452/#paper7> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1452/> ;
+    ns3:title "The Investigation of Deep Data Representations Based on Decision Tree Ensembles for Classification Problems" ;
+    ns1:endPage 55 ;
+    ns1:numPages 4 ;
+    ns1:startPage 52 ;
+    ns2:author <http://ceur-ws.org/Vol-1452/#PaveliDruzhkov>,
+        <http://ceur-ws.org/Vol-1452/#ValentinaiKustikova> .
+
+<http://ceur-ws.org/Vol-1452/#paper12> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1452/> ;
+    ns3:title "Studies of Anthropometrical Features using Machine Learning Approach" ;
+    ns1:endPage 105 ;
+    ns1:numPages 10 ;
+    ns1:startPage 96 ;
+    ns2:author <http://ceur-ws.org/Vol-1452/#AlekseiiZhukov>,
+        <http://ceur-ws.org/Vol-1452/#TheiLongiNguyen>,
+        <http://ceur-ws.org/Vol-1452/#ThuiHuongiNguyen> .
+
+<http://ceur-ws.org/Vol-1452/#paper13> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1452/> ;
+    ns3:title "An Approach to Multi-Domain Data Model Development Based on the Model-Driven Architecture and Ontologies" ;
+    ns1:endPage 117 ;
+    ns1:numPages 12 ;
+    ns1:startPage 106 ;
+    ns2:author <http://ceur-ws.org/Vol-1452/#DenisiA.iNikiforov>,
+        <http://ceur-ws.org/Vol-1452/#IgoriG.iLisikh>,
+        <http://ceur-ws.org/Vol-1452/#RuslaniL.iSivakov> .
+
+<http://ceur-ws.org/Vol-1452/#paper14> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1452/> ;
+    ns3:title "Implementation of Image Processing Algorithms on the Graphics Processing Units" ;
+    ns1:endPage 125 ;
+    ns1:numPages 8 ;
+    ns1:startPage 118 ;
+    ns2:author <http://ceur-ws.org/Vol-1452/#KirilliBreslavskiy>,
+        <http://ceur-ws.org/Vol-1452/#NataliaiPapulovskaya>,
+        <http://ceur-ws.org/Vol-1452/#ValentiniKashitsin> .
+
+<http://ceur-ws.org/Vol-1452/#paper23> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1452/> ;
+    ns3:title "Development of Trained Algorithm Detection of Fires for Multispectral Systems Remote Monitoring" ;
+    ns1:endPage 195 ;
+    ns1:numPages 9 ;
+    ns1:startPage 187 ;
+    ns2:author <http://ceur-ws.org/Vol-1452/#MargaritaiMymrina>,
+        <http://ceur-ws.org/Vol-1452/#SergeyiZraenko>,
+        <http://ceur-ws.org/Vol-1452/#VladislaviGanzha> .
+
+<http://ceur-ws.org/Vol-1452/#paper24> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1452/> ;
+    ns3:title "О методах исследования цифровых копий художественных произведений для определения их индивидуальных особенностей (About The Methods of Research Digital Copies Works of Art to Determine their Specific Features)" ;
+    ns1:endPage 202 ;
+    ns1:numPages 7 ;
+    ns1:startPage 196 ;
+    ns2:author <http://ceur-ws.org/Vol-1452/#AlexanderiSergeev>,
+        <http://ceur-ws.org/Vol-1452/#ViktoriFilimonov>,
+        <http://ceur-ws.org/Vol-1452/#ViktoriyaiSlavnykh> .
+
+<http://ceur-ws.org/Vol-1452/#paper3> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1452/> ;
+    ns3:title "Fast Infinitesimal Fourier Transform for Signal and Image Processing via Multiparametric and Fractional Fourier Transforms" ;
+    ns1:endPage 27 ;
+    ns1:numPages 9 ;
+    ns1:startPage 19 ;
+    ns2:author <http://ceur-ws.org/Vol-1452/#EkaterinaiOstheimer>,
+        <http://ceur-ws.org/Vol-1452/#StepaniMartyugin>,
+        <http://ceur-ws.org/Vol-1452/#ValeriyiLabunets> .
+
+<http://ceur-ws.org/Vol-1452/#paper8> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1452/> ;
+    ns3:title "Families of Heron Digital Filters for Images Filtering" ;
+    ns1:endPage 63 ;
+    ns1:numPages 8 ;
+    ns1:startPage 56 ;
+    ns2:author <http://ceur-ws.org/Vol-1452/#EkaterinaiOstheimer>,
+        <http://ceur-ws.org/Vol-1452/#FilippiMyasnikov>,
+        <http://ceur-ws.org/Vol-1452/#ValeriyiLabunets> .
+
+<http://ceur-ws.org/Vol-1452/#paper9> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1452/> ;
+    ns3:title "Imitation of Human Behavior in 3D-Shooter game" ;
+    ns1:endPage 77 ;
+    ns1:numPages 14 ;
+    ns1:startPage 64 ;
+    ns2:author <http://ceur-ws.org/Vol-1452/#IlyaiMakarov>,
+        <http://ceur-ws.org/Vol-1452/#LadaiTokmakova>,
+        <http://ceur-ws.org/Vol-1452/#MikhailiTokmakov> .
+
+<http://ceur-ws.org/Vol-1452/#paper4> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1452/> ;
+    ns3:title "Approximating Social Ties Based on Call Logs: Whom Should We Prioritize?" ;
+    ns1:endPage 39 ;
+    ns1:numPages 12 ;
+    ns1:startPage 28 ;
+    ns2:author <http://ceur-ws.org/Vol-1452/#AlimiUliGias>,
+        <http://ceur-ws.org/Vol-1452/#KaziiSakib>,
+        <http://ceur-ws.org/Vol-1452/#MohammadiErfan>,
+        <http://ceur-ws.org/Vol-1452/#SheikhiMuhammadiSarwar> .
+
+<http://ceur-ws.org/Vol-1452/#paper16> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1452/> ;
+    ns3:title "Study of the Mass Center Motion of the Left Ventricle Area in Echocardiographic Videos" ;
+    ns1:endPage 142 ;
+    ns1:numPages 6 ;
+    ns1:startPage 137 ;
+    ns2:author <http://ceur-ws.org/Vol-1452/#AnastasiaiBobkova>,
+        <http://ceur-ws.org/Vol-1452/#AndreyiMukhtarov>,
+        <http://ceur-ws.org/Vol-1452/#SergeyiPorshnev>,
+        <http://ceur-ws.org/Vol-1452/#VasiliyiZyuzin>,
+        <http://ceur-ws.org/Vol-1452/#VladimiriBobkov> .
+
+<http://ceur-ws.org/Vol-1452/> a ns5:Proceedings ;
+    ns5:hasPart <http://ceur-ws.org/Vol-1452/#paper1>,
+        <http://ceur-ws.org/Vol-1452/#paper10>,
+        <http://ceur-ws.org/Vol-1452/#paper11>,
+        <http://ceur-ws.org/Vol-1452/#paper12>,
+        <http://ceur-ws.org/Vol-1452/#paper13>,
+        <http://ceur-ws.org/Vol-1452/#paper14>,
+        <http://ceur-ws.org/Vol-1452/#paper15>,
+        <http://ceur-ws.org/Vol-1452/#paper16>,
+        <http://ceur-ws.org/Vol-1452/#paper17>,
+        <http://ceur-ws.org/Vol-1452/#paper18>,
+        <http://ceur-ws.org/Vol-1452/#paper19>,
+        <http://ceur-ws.org/Vol-1452/#paper2>,
+        <http://ceur-ws.org/Vol-1452/#paper20>,
+        <http://ceur-ws.org/Vol-1452/#paper21>,
+        <http://ceur-ws.org/Vol-1452/#paper22>,
+        <http://ceur-ws.org/Vol-1452/#paper23>,
+        <http://ceur-ws.org/Vol-1452/#paper24>,
+        <http://ceur-ws.org/Vol-1452/#paper25>,
+        <http://ceur-ws.org/Vol-1452/#paper3>,
+        <http://ceur-ws.org/Vol-1452/#paper4>,
+        <http://ceur-ws.org/Vol-1452/#paper5>,
+        <http://ceur-ws.org/Vol-1452/#paper6>,
+        <http://ceur-ws.org/Vol-1452/#paper7>,
+        <http://ceur-ws.org/Vol-1452/#paper8>,
+        <http://ceur-ws.org/Vol-1452/#paper9> ;
+    ns7:issued "2015-10-15T00:00:00+00:00"^^xsd:dateTime ;
+    ns1:presentedAt <http://ceur-ws.org/Vol-1452/#event> ;
+    ns2:editor <http://ceur-ws.org/Vol-1452/#AlexanderiPanchenko>,
+        <http://ceur-ws.org/Vol-1452/#MikhailiYu.iKhachay>,
+        <http://ceur-ws.org/Vol-1452/#NataliaiKonstantinova>,
+        <http://ceur-ws.org/Vol-1452/#NikitaiSpirin>,
+        <http://ceur-ws.org/Vol-1452/#RadhakrishnaniDelhibabu>,
+        <http://ceur-ws.org/Vol-1452/#ValeriiG.iLabunets> .
 

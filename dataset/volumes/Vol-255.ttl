@@ -1,12 +1,12 @@
-@prefix ns1: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns2: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns1: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns2: <http://purl.org/NET/c4dm/timeline.owl#> .
 @prefix ns3: <http://xmlns.com/foaf/0.1/> .
-@prefix ns4: <http://purl.org/ontology/bibo/#> .
+@prefix ns4: <http://swrc.ontoware.org/ontology/#> .
 @prefix ns5: <http://www.w3.org/2002/07/owl#> .
-@prefix ns6: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns6: <http://purl.org/ontology/bibo/#> .
+@prefix ns7: <http://purl.org/dc/elements/1.1/#> .
 @prefix ns8: <http://purl.org/dc/elements/1.1/> .
-@prefix ns9: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns9: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -23,7 +23,7 @@
     ns3:name "Adam Kožaný" .
 
 <http://ceur-ws.org/Vol-255/#DusaniKol%C3%A1%C5%99> a ns3:Person ;
-    ns2:affiliation "" ;
+    ns4:affiliation "" ;
     ns5:sameAs <http://ceur-ws.org/persons/DusaniKol%C3%A1%C5%99> ;
     ns3:name "Dusan Kolář" .
 
@@ -72,18 +72,18 @@
     ns3:made <http://ceur-ws.org/Vol-255/#paper07> ;
     ns3:name "Tomáš Masopust" .
 
-<http://ceur-ws.org/Vol-255/#event> a ns6:WorkshopEvent ;
-    ns6:hasLocation <http://dbpedia.org/resource/Czech_Republic> ;
-    ns6:hasPart <http://ceur-ws.org/Vol-255/#part-CEUR-WS> ;
-    ns6:isSubEventOf <http://ceur-ws.org/Vol-255/#conf> ;
-    ns9:beginsAtDatetime "2007-06-20T00:00:00+00:00"^^xsd:dateTime ;
-    ns9:endsAtDatetime "2007-06-20T00:00:00+00:00"^^xsd:dateTime ;
+<http://ceur-ws.org/Vol-255/#event> a ns1:WorkshopEvent ;
+    ns1:hasLocation <http://dbpedia.org/resource/Czech_Republic> ;
+    ns1:hasPart <http://ceur-ws.org/Vol-255/#part-WFM> ;
+    ns1:isSubEventOf <http://ceur-ws.org/Vol-255/#conf> ;
+    ns2:beginsAtDatetime "2007-04-23T00:00:00+00:00"^^xsd:dateTime ;
+    ns2:endsAtDatetime "2007-04-25T00:00:00+00:00"^^xsd:dateTime ;
     ns8:license "http://choosealicense.com/licenses/no-license/" ;
     rdfs:seeAlso <http://ceur-ws.org/Vol-182/#event> .
 
-<http://ceur-ws.org/Vol-255/#Invitedpaper> a ns6:SessionEvent ;
-    ns6:partOf <http://ceur-ws.org/Vol-255/> ;
-    ns1:title "Invited paper" .
+<http://ceur-ws.org/Vol-255/#Invitedpaper> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-255/> ;
+    ns7:title "Invited paper" .
 
 <http://ceur-ws.org/Vol-255/#Zbyn%C4%9BkiK%C5%99ivka> a ns3:Person ;
     ns5:sameAs <http://ceur-ws.org/persons/Zbyn%C4%9BkiK%C5%99ivka> ;
@@ -91,95 +91,95 @@
         <http://ceur-ws.org/Vol-255/#paper11> ;
     ns3:name "Zbyněk Křivka" .
 
-<http://ceur-ws.org/Vol-255/#paper01> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-255/> ;
-    ns1:title "Colonies - the Simplest Grammar Systems" ;
-    ns4:section <http://ceur-ws.org/Vol-255/#Invitedpaper> ;
-    ns2:author <http://ceur-ws.org/Vol-255/#AlicaiKelemenov%C3%A1> .
+<http://ceur-ws.org/Vol-255/#paper01> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-255/> ;
+    ns7:title "Colonies - the Simplest Grammar Systems" ;
+    ns6:section <http://ceur-ws.org/Vol-255/#Invitedpaper> ;
+    ns4:author <http://ceur-ws.org/Vol-255/#AlicaiKelemenov%C3%A1> .
 
-<http://ceur-ws.org/Vol-255/#paper07> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-255/> ;
-    ns1:title "A Note on the Descriptional Complexity of Semi-Conditional Grammars" ;
-    ns4:section <http://ceur-ws.org/Vol-255/#ResearchPapers> ;
-    ns2:author <http://ceur-ws.org/Vol-255/#Tom%C3%A1%C5%A1iMasopust> .
+<http://ceur-ws.org/Vol-255/#paper07> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-255/> ;
+    ns7:title "A Note on the Descriptional Complexity of Semi-Conditional Grammars" ;
+    ns6:section <http://ceur-ws.org/Vol-255/#ResearchPapers> ;
+    ns4:author <http://ceur-ws.org/Vol-255/#Tom%C3%A1%C5%A1iMasopust> .
 
-<http://ceur-ws.org/Vol-255/#paper08> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-255/> ;
-    ns1:title "Parsing of Context-Sensitive Languages" ;
-    ns4:section <http://ceur-ws.org/Vol-255/#ResearchPapers> ;
-    ns2:author <http://ceur-ws.org/Vol-255/#Luk%C3%A1%C5%A1iRychnovsk%C3%BD> .
+<http://ceur-ws.org/Vol-255/#paper08> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-255/> ;
+    ns7:title "Parsing of Context-Sensitive Languages" ;
+    ns6:section <http://ceur-ws.org/Vol-255/#ResearchPapers> ;
+    ns4:author <http://ceur-ws.org/Vol-255/#Luk%C3%A1%C5%A1iRychnovsk%C3%BD> .
 
-<http://ceur-ws.org/Vol-255/#paper10> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-255/> ;
-    ns1:title "Properties of Eco-Colonies" ;
-    ns4:section <http://ceur-ws.org/Vol-255/#ResearchPapers> ;
-    ns2:author <http://ceur-ws.org/Vol-255/#%C5%A0%C3%A1rkaiVavre%C4%8Dkov%C3%A1> .
+<http://ceur-ws.org/Vol-255/#paper10> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-255/> ;
+    ns7:title "Properties of Eco-Colonies" ;
+    ns6:section <http://ceur-ws.org/Vol-255/#ResearchPapers> ;
+    ns4:author <http://ceur-ws.org/Vol-255/#%C5%A0%C3%A1rkaiVavre%C4%8Dkov%C3%A1> .
 
 <http://ceur-ws.org/Vol-255/#AlicaiKelemenov%C3%A1> a ns3:Person ;
-    ns2:affiliation "" ;
+    ns4:affiliation "" ;
     ns5:sameAs <http://ceur-ws.org/persons/AlicaiKelemenov%C3%A1> ;
     ns3:made <http://ceur-ws.org/Vol-255/#paper01>,
         <http://ceur-ws.org/Vol-255/#paper04> ;
     ns3:name "Alica Kelemenová" .
 
-<http://ceur-ws.org/Vol-255/#paper03> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-255/> ;
-    ns1:title "Notes on Restricted P Colonies" ;
-    ns4:section <http://ceur-ws.org/Vol-255/#ResearchPapers> ;
-    ns2:author <http://ceur-ws.org/Vol-255/#LucieiCiencialov%C3%A1>,
+<http://ceur-ws.org/Vol-255/#paper03> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-255/> ;
+    ns7:title "Notes on Restricted P Colonies" ;
+    ns6:section <http://ceur-ws.org/Vol-255/#ResearchPapers> ;
+    ns4:author <http://ceur-ws.org/Vol-255/#LucieiCiencialov%C3%A1>,
         <http://ceur-ws.org/Vol-255/#Lud%C4%9BkiCienciala> .
 
-<http://ceur-ws.org/Vol-255/#paper04> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-255/> ;
-    ns1:title "Structures of the Environment in Colonies" ;
-    ns4:section <http://ceur-ws.org/Vol-255/#ResearchPapers> ;
-    ns2:author <http://ceur-ws.org/Vol-255/#AdamiKo%C5%BEan%C3%BD>,
+<http://ceur-ws.org/Vol-255/#paper04> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-255/> ;
+    ns7:title "Structures of the Environment in Colonies" ;
+    ns6:section <http://ceur-ws.org/Vol-255/#ResearchPapers> ;
+    ns4:author <http://ceur-ws.org/Vol-255/#AdamiKo%C5%BEan%C3%BD>,
         <http://ceur-ws.org/Vol-255/#AlicaiKelemenov%C3%A1> .
 
-<http://ceur-ws.org/Vol-255/#paper05> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-255/> ;
-    ns1:title "Generalized #-Rewriting Systems of Finite Index" ;
-    ns4:section <http://ceur-ws.org/Vol-255/#ResearchPapers> ;
-    ns2:author <http://ceur-ws.org/Vol-255/#AlexanderiMeduna>,
+<http://ceur-ws.org/Vol-255/#paper05> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-255/> ;
+    ns7:title "Generalized #-Rewriting Systems of Finite Index" ;
+    ns6:section <http://ceur-ws.org/Vol-255/#ResearchPapers> ;
+    ns4:author <http://ceur-ws.org/Vol-255/#AlexanderiMeduna>,
         <http://ceur-ws.org/Vol-255/#Zbyn%C4%9BkiK%C5%99ivka> .
 
-<http://ceur-ws.org/Vol-255/#paper06> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-255/> ;
-    ns1:title "General Multigenerative Grammar Systems" ;
-    ns4:section <http://ceur-ws.org/Vol-255/#ResearchPapers> ;
-    ns2:author <http://ceur-ws.org/Vol-255/#AlexanderiMeduna>,
+<http://ceur-ws.org/Vol-255/#paper06> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-255/> ;
+    ns7:title "General Multigenerative Grammar Systems" ;
+    ns6:section <http://ceur-ws.org/Vol-255/#ResearchPapers> ;
+    ns4:author <http://ceur-ws.org/Vol-255/#AlexanderiMeduna>,
         <http://ceur-ws.org/Vol-255/#RomaniLuk%C3%A1%C5%A1> .
 
 <http://ceur-ws.org/Vol-255/#AlexanderiMeduna> a ns3:Person ;
-    ns2:affiliation "" ;
+    ns4:affiliation "" ;
     ns5:sameAs <http://ceur-ws.org/persons/AlexanderiMeduna> ;
     ns3:made <http://ceur-ws.org/Vol-255/#paper02>,
         <http://ceur-ws.org/Vol-255/#paper05>,
         <http://ceur-ws.org/Vol-255/#paper06> ;
     ns3:name "Alexander Meduna" .
 
-<http://ceur-ws.org/Vol-255/#paper02> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-255/> ;
-    ns1:title "On Vertical Grammatical Restrictions that Produce an Infinite Language Hierarchy" ;
-    ns4:section <http://ceur-ws.org/Vol-255/#ResearchPapers> ;
-    ns2:author <http://ceur-ws.org/Vol-255/#AlexanderiMeduna>,
+<http://ceur-ws.org/Vol-255/#paper02> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-255/> ;
+    ns7:title "On Vertical Grammatical Restrictions that Produce an Infinite Language Hierarchy" ;
+    ns6:section <http://ceur-ws.org/Vol-255/#ResearchPapers> ;
+    ns4:author <http://ceur-ws.org/Vol-255/#AlexanderiMeduna>,
         <http://ceur-ws.org/Vol-255/#PetriBlatn%C3%BD>,
         <http://ceur-ws.org/Vol-255/#RadekiBidlo> .
 
-<http://ceur-ws.org/Vol-255/#paper11> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-255/> ;
-    ns1:title "A Note on the Parsing of Complete VHDL-2002" ;
-    ns4:section <http://ceur-ws.org/Vol-255/#ResearchPapers> ;
-    ns2:author <http://ceur-ws.org/Vol-255/#Lubo%C5%A1iLorenc>,
+<http://ceur-ws.org/Vol-255/#paper11> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-255/> ;
+    ns7:title "A Note on the Parsing of Complete VHDL-2002" ;
+    ns6:section <http://ceur-ws.org/Vol-255/#ResearchPapers> ;
+    ns4:author <http://ceur-ws.org/Vol-255/#Lubo%C5%A1iLorenc>,
         <http://ceur-ws.org/Vol-255/#RudolfiSch%C3%B6necker>,
         <http://ceur-ws.org/Vol-255/#Zbyn%C4%9BkiK%C5%99ivka> .
 
-<http://ceur-ws.org/Vol-255/#ResearchPapers> a ns6:SessionEvent ;
-    ns6:partOf <http://ceur-ws.org/Vol-255/> ;
-    ns1:title "Research Papers" .
+<http://ceur-ws.org/Vol-255/#ResearchPapers> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-255/> ;
+    ns7:title "Research Papers" .
 
-<http://ceur-ws.org/Vol-255/> a ns6:Proceedings ;
-    ns6:hasPart <http://ceur-ws.org/Vol-255/#paper01>,
+<http://ceur-ws.org/Vol-255/> a ns1:Proceedings ;
+    ns1:hasPart <http://ceur-ws.org/Vol-255/#paper01>,
         <http://ceur-ws.org/Vol-255/#paper02>,
         <http://ceur-ws.org/Vol-255/#paper03>,
         <http://ceur-ws.org/Vol-255/#paper04>,
@@ -189,11 +189,11 @@
         <http://ceur-ws.org/Vol-255/#paper08>,
         <http://ceur-ws.org/Vol-255/#paper10>,
         <http://ceur-ws.org/Vol-255/#paper11> ;
-    ns6:hasSession <http://ceur-ws.org/Vol-255/#Invitedpaper>,
+    ns1:hasSession <http://ceur-ws.org/Vol-255/#Invitedpaper>,
         <http://ceur-ws.org/Vol-255/#ResearchPapers> ;
-    ns7:issued "2007-06-20T00:00:00+00:00"^^xsd:dateTime ;
-    ns4:presentedAt <http://ceur-ws.org/Vol-255/#event> ;
-    ns2:editor <http://ceur-ws.org/Vol-255/#AlexanderiMeduna>,
+    ns9:issued "2007-06-20T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:presentedAt <http://ceur-ws.org/Vol-255/#event> ;
+    ns4:editor <http://ceur-ws.org/Vol-255/#AlexanderiMeduna>,
         <http://ceur-ws.org/Vol-255/#AlicaiKelemenov%C3%A1>,
         <http://ceur-ws.org/Vol-255/#DusaniKol%C3%A1%C5%99> .
 

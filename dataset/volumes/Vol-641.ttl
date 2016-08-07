@@ -1,12 +1,12 @@
-@prefix ns1: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns1: <http://data.semanticweb.org/ns/swc/ontology/#> .
 @prefix ns2: <http://xmlns.com/foaf/0.1/> .
 @prefix ns3: <http://www.w3.org/2002/07/owl#> .
-@prefix ns4: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns5: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns6: <http://purl.org/ontology/bibo/#> .
-@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns8: <http://purl.org/dc/elements/1.1/> .
-@prefix ns9: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns4: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns5: <http://purl.org/ontology/bibo/#> .
+@prefix ns6: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns9: <http://purl.org/dc/elements/1.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -28,8 +28,8 @@
     ns2:name "Andreas Seibel" .
 
 <http://ceur-ws.org/Vol-641/#C%C3%A9driciJeanneret> a ns2:Person ;
-    ns6:place <http://dbpedia.org/resource/Switzerland> ;
-    ns1:affiliation "University of Zurich" ;
+    ns5:place <http://dbpedia.org/resource/Switzerland> ;
+    ns4:affiliation "University of Zurich" ;
     ns3:sameAs <http://ceur-ws.org/persons/C%C3%A9driciJeanneret> ;
     ns2:name "Cédric Jeanneret" .
 
@@ -44,8 +44,8 @@
     ns2:name "Franck Chauvel" .
 
 <http://ceur-ws.org/Vol-641/#FranckiFleurey> a ns2:Person ;
-    ns6:place <http://dbpedia.org/resource/Norway> ;
-    ns1:affiliation "SINTEF" ;
+    ns5:place <http://dbpedia.org/resource/Norway> ;
+    ns4:affiliation "SINTEF" ;
     ns3:sameAs <http://ceur-ws.org/persons/FranckiFleurey> ;
     ns2:name "Franck Fleurey" .
 
@@ -55,8 +55,8 @@
     ns2:name "Gang Huang" .
 
 <http://ceur-ws.org/Vol-641/#GordoniBlair> a ns2:Person ;
-    ns6:place <http://dbpedia.org/resource/United_Kingdom> ;
-    ns1:affiliation "Lancaster University" ;
+    ns5:place <http://dbpedia.org/resource/United_Kingdom> ;
+    ns4:affiliation "Lancaster University" ;
     ns3:sameAs <http://ceur-ws.org/persons/GordoniBlair> ;
     ns2:name "Gordon Blair" .
 
@@ -136,8 +136,8 @@
     ns2:name "Munir Merdan" .
 
 <http://ceur-ws.org/Vol-641/#NellyiBencomo> a ns2:Person ;
-    ns6:place <http://dbpedia.org/resource/United_Kingdom> ;
-    ns1:affiliation "Lancaster University" ;
+    ns5:place <http://dbpedia.org/resource/United_Kingdom> ;
+    ns4:affiliation "Lancaster University" ;
     ns3:sameAs <http://ceur-ws.org/persons/NellyiBencomo> ;
     ns2:name "Nelly Bencomo" .
 
@@ -176,13 +176,13 @@
     ns2:made <http://ceur-ws.org/Vol-641/#paper_02> ;
     ns2:name "Yanchun Sun" .
 
-<http://ceur-ws.org/Vol-641/#event> a ns4:WorkshopEvent ;
-    ns4:hasLocation <http://dbpedia.org/resource/Norway> ;
-    ns4:hasPart <http://ceur-ws.org/Vol-641/#part-CEUR-WS> ;
-    ns4:isSubEventOf <http://ceur-ws.org/Vol-641/#conf> ;
-    ns9:beginsAtDatetime "2010-09-28T00:00:00+00:00"^^xsd:dateTime ;
-    ns9:endsAtDatetime "2010-09-28T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:license "http://choosealicense.com/licenses/no-license/" ;
+<http://ceur-ws.org/Vol-641/#event> a ns1:WorkshopEvent ;
+    ns1:hasLocation <http://dbpedia.org/resource/Norway> ;
+    ns1:hasPart <http://ceur-ws.org/Vol-641/#part-MRT> ;
+    ns1:isSubEventOf <http://ceur-ws.org/Vol-641/#conf> ;
+    ns7:beginsAtDatetime "2010-10-05T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:endsAtDatetime "2010-10-05T00:00:00+00:00"^^xsd:dateTime ;
+    ns9:license "http://choosealicense.com/licenses/no-license/" ;
     rdfs:seeAlso <http://ceur-ws.org/Vol-509/#event> .
 
 <http://ceur-ws.org/Vol-641/#FrankiTrollman> a ns2:Person ;
@@ -209,136 +209,136 @@
         <http://ceur-ws.org/Vol-641/#paper_12> ;
     ns2:name "Thomas Moser" .
 
-<http://ceur-ws.org/Vol-641/#Session1FundamentalConcepts> a ns4:SessionEvent ;
-    ns4:partOf <http://ceur-ws.org/Vol-641/> ;
-    ns5:title "Session 1: Fundamental Concepts" .
+<http://ceur-ws.org/Vol-641/#Session1FundamentalConcepts> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-641/> ;
+    ns6:title "Session 1: Fundamental Concepts" .
 
-<http://ceur-ws.org/Vol-641/#Session2EvaluationandExperimentation> a ns4:SessionEvent ;
-    ns4:partOf <http://ceur-ws.org/Vol-641/> ;
-    ns5:title "Session 2: Evaluation and Experimentation" .
+<http://ceur-ws.org/Vol-641/#Session2EvaluationandExperimentation> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-641/> ;
+    ns6:title "Session 2: Evaluation and Experimentation" .
 
-<http://ceur-ws.org/Vol-641/#paper_01> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-641/> ;
-    ns5:title "Monitoring Model Specifications in Program Code Patterns" ;
-    ns6:endPage 71 ;
-    ns6:numPages 12 ;
-    ns6:section <http://ceur-ws.org/Vol-641/#PosterSessionApplications> ;
-    ns6:startPage 60 ;
-    ns1:author <http://ceur-ws.org/Vol-641/#MichaeliGoedicke>,
+<http://ceur-ws.org/Vol-641/#paper_01> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-641/> ;
+    ns6:title "Monitoring Model Specifications in Program Code Patterns" ;
+    ns5:endPage 71 ;
+    ns5:numPages 12 ;
+    ns5:section <http://ceur-ws.org/Vol-641/#PosterSessionApplications> ;
+    ns5:startPage 60 ;
+    ns4:author <http://ceur-ws.org/Vol-641/#MichaeliGoedicke>,
         <http://ceur-ws.org/Vol-641/#MichaeliStriewe>,
         <http://ceur-ws.org/Vol-641/#MoritziBalz> .
 
-<http://ceur-ws.org/Vol-641/#paper_05> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-641/> ;
-    ns5:title "Separating Local and Global Aspects of Runtime Model Reconfiguration" ;
-    ns6:endPage 83 ;
-    ns6:numPages 12 ;
-    ns6:section <http://ceur-ws.org/Vol-641/#PosterSessionApplications> ;
-    ns6:startPage 72 ;
-    ns1:author <http://ceur-ws.org/Vol-641/#FrankiTrollman>,
+<http://ceur-ws.org/Vol-641/#paper_05> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-641/> ;
+    ns6:title "Separating Local and Global Aspects of Runtime Model Reconfiguration" ;
+    ns5:endPage 83 ;
+    ns5:numPages 12 ;
+    ns5:section <http://ceur-ws.org/Vol-641/#PosterSessionApplications> ;
+    ns5:startPage 72 ;
+    ns4:author <http://ceur-ws.org/Vol-641/#FrankiTrollman>,
         <http://ceur-ws.org/Vol-641/#GrzegorziLehmann>,
         <http://ceur-ws.org/Vol-641/#SahiniAlbayrak> .
 
-<http://ceur-ws.org/Vol-641/#paper_08> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-641/> ;
-    ns5:title "Monitoring Executions on Reconfigurable Hardware at Model Level" ;
-    ns6:endPage 107 ;
-    ns6:numPages 12 ;
-    ns6:section <http://ceur-ws.org/Vol-641/#PosterSessionApplications> ;
-    ns6:startPage 96 ;
-    ns1:author <http://ceur-ws.org/Vol-641/#GrafiPhilipp>,
+<http://ceur-ws.org/Vol-641/#paper_08> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-641/> ;
+    ns6:title "Monitoring Executions on Reconfigurable Hardware at Model Level" ;
+    ns5:endPage 107 ;
+    ns5:numPages 12 ;
+    ns5:section <http://ceur-ws.org/Vol-641/#PosterSessionApplications> ;
+    ns5:startPage 96 ;
+    ns4:author <http://ceur-ws.org/Vol-641/#GrafiPhilipp>,
         <http://ceur-ws.org/Vol-641/#KlausiD.iM%C3%BCller-Glase>,
         <http://ceur-ws.org/Vol-641/#TobiasiSchwalb> .
 
-<http://ceur-ws.org/Vol-641/#paper_12> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-641/> ;
-    ns5:title "Using Models at Runtime For Monitoring and Adaptation of Networked Physical Devices: Example of a Flexible Manufacturing System" ;
-    ns6:endPage 95 ;
-    ns6:numPages 12 ;
-    ns6:section <http://ceur-ws.org/Vol-641/#PosterSessionApplications> ;
-    ns6:startPage 84 ;
-    ns1:author <http://ceur-ws.org/Vol-641/#MathieuiVallee>,
+<http://ceur-ws.org/Vol-641/#paper_12> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-641/> ;
+    ns6:title "Using Models at Runtime For Monitoring and Adaptation of Networked Physical Devices: Example of a Flexible Manufacturing System" ;
+    ns5:endPage 95 ;
+    ns5:numPages 12 ;
+    ns5:section <http://ceur-ws.org/Vol-641/#PosterSessionApplications> ;
+    ns5:startPage 84 ;
+    ns4:author <http://ceur-ws.org/Vol-641/#MathieuiVallee>,
         <http://ceur-ws.org/Vol-641/#MuniriMerdan>,
         <http://ceur-ws.org/Vol-641/#ThomasiMoser> .
 
-<http://ceur-ws.org/Vol-641/#paper_14> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-641/> ;
-    ns5:title "Toward Megamodels at Runtime" ;
-    ns6:endPage 24 ;
-    ns6:numPages 12 ;
-    ns6:section <http://ceur-ws.org/Vol-641/#Session1FundamentalConcepts> ;
-    ns6:startPage 13 ;
-    ns1:author <http://ceur-ws.org/Vol-641/#AndreasiSeibel>,
+<http://ceur-ws.org/Vol-641/#paper_14> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-641/> ;
+    ns6:title "Toward Megamodels at Runtime" ;
+    ns5:endPage 24 ;
+    ns5:numPages 12 ;
+    ns5:section <http://ceur-ws.org/Vol-641/#Session1FundamentalConcepts> ;
+    ns5:startPage 13 ;
+    ns4:author <http://ceur-ws.org/Vol-641/#AndreasiSeibel>,
         <http://ceur-ws.org/Vol-641/#HolgeriGiese>,
         <http://ceur-ws.org/Vol-641/#ThomasiVogel> .
 
-<http://ceur-ws.org/Vol-641/#paper_02> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-641/> ;
-    ns5:title "Applying MDE Tools at Runtime: Experiments upon Runtime Models" ;
-    ns6:endPage 36 ;
-    ns6:numPages 12 ;
-    ns6:section <http://ceur-ws.org/Vol-641/#Session2EvaluationandExperimentation> ;
-    ns6:startPage 25 ;
-    ns1:author <http://ceur-ws.org/Vol-641/#FranckiChauvel>,
+<http://ceur-ws.org/Vol-641/#paper_02> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-641/> ;
+    ns6:title "Applying MDE Tools at Runtime: Experiments upon Runtime Models" ;
+    ns5:endPage 36 ;
+    ns5:numPages 12 ;
+    ns5:section <http://ceur-ws.org/Vol-641/#Session2EvaluationandExperimentation> ;
+    ns5:startPage 25 ;
+    ns4:author <http://ceur-ws.org/Vol-641/#FranckiChauvel>,
         <http://ceur-ws.org/Vol-641/#GangiHuang>,
         <http://ceur-ws.org/Vol-641/#HuiiSong>,
         <http://ceur-ws.org/Vol-641/#YanchuniSun> .
 
-<http://ceur-ws.org/Vol-641/#paper_11> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-641/> ;
-    ns5:title "Run-Time Evolution through Explicit Meta-Objects" ;
-    ns6:endPage 48 ;
-    ns6:numPages 12 ;
-    ns6:section <http://ceur-ws.org/Vol-641/#Session2EvaluationandExperimentation> ;
-    ns6:startPage 37 ;
-    ns1:author <http://ceur-ws.org/Vol-641/#JorgeiRessia>,
+<http://ceur-ws.org/Vol-641/#paper_11> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-641/> ;
+    ns6:title "Run-Time Evolution through Explicit Meta-Objects" ;
+    ns5:endPage 48 ;
+    ns5:numPages 12 ;
+    ns5:section <http://ceur-ws.org/Vol-641/#Session2EvaluationandExperimentation> ;
+    ns5:startPage 37 ;
+    ns4:author <http://ceur-ws.org/Vol-641/#JorgeiRessia>,
         <http://ceur-ws.org/Vol-641/#LukasiRenggli>,
         <http://ceur-ws.org/Vol-641/#OscariNierstrasz>,
         <http://ceur-ws.org/Vol-641/#TudoriGirba> .
 
-<http://ceur-ws.org/Vol-641/#paper_13> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-641/> ;
-    ns5:title "Meta-Modeling Runtime Models" ;
-    ns6:endPage 12 ;
-    ns6:numPages 12 ;
-    ns6:section <http://ceur-ws.org/Vol-641/#Session1FundamentalConcepts> ;
-    ns6:startPage 1 ;
-    ns1:author <http://ceur-ws.org/Vol-641/#FrankiTrollman>,
+<http://ceur-ws.org/Vol-641/#paper_13> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-641/> ;
+    ns6:title "Meta-Modeling Runtime Models" ;
+    ns5:endPage 12 ;
+    ns5:numPages 12 ;
+    ns5:section <http://ceur-ws.org/Vol-641/#Session1FundamentalConcepts> ;
+    ns5:startPage 1 ;
+    ns4:author <http://ceur-ws.org/Vol-641/#FrankiTrollman>,
         <http://ceur-ws.org/Vol-641/#GrzegorziLehmann>,
         <http://ceur-ws.org/Vol-641/#MarcoiBlumendorf>,
         <http://ceur-ws.org/Vol-641/#SahiniAlbayrak> .
 
-<http://ceur-ws.org/Vol-641/#paper_15> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-641/> ;
-    ns5:title "A Model-Driven Approach to Graphical User Interface Runtime Adaptation" ;
-    ns6:endPage 59 ;
-    ns6:numPages 11 ;
-    ns6:section <http://ceur-ws.org/Vol-641/#PosterSessionApplications> ;
-    ns6:startPage 49 ;
-    ns1:author <http://ceur-ws.org/Vol-641/#CristinaiVicente-Chicote>,
+<http://ceur-ws.org/Vol-641/#paper_15> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-641/> ;
+    ns6:title "A Model-Driven Approach to Graphical User Interface Runtime Adaptation" ;
+    ns5:endPage 59 ;
+    ns5:numPages 11 ;
+    ns5:section <http://ceur-ws.org/Vol-641/#PosterSessionApplications> ;
+    ns5:startPage 49 ;
+    ns4:author <http://ceur-ws.org/Vol-641/#CristinaiVicente-Chicote>,
         <http://ceur-ws.org/Vol-641/#JavieriCriado>,
         <http://ceur-ws.org/Vol-641/#LuisiIribarne>,
         <http://ceur-ws.org/Vol-641/#Nicol%C3%A1siPadilla> .
 
-<http://ceur-ws.org/Vol-641/#paper_06> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-641/> ;
-    ns5:title "Knowledge-based Runtime Failure Detection for Industrial Automation Systems" ;
-    ns6:endPage 119 ;
-    ns6:numPages 12 ;
-    ns6:section <http://ceur-ws.org/Vol-641/#PosterSessionApplications> ;
-    ns6:startPage 108 ;
-    ns1:author <http://ceur-ws.org/Vol-641/#AlexanderiSchatten>,
+<http://ceur-ws.org/Vol-641/#paper_06> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-641/> ;
+    ns6:title "Knowledge-based Runtime Failure Detection for Industrial Automation Systems" ;
+    ns5:endPage 119 ;
+    ns5:numPages 12 ;
+    ns5:section <http://ceur-ws.org/Vol-641/#PosterSessionApplications> ;
+    ns5:startPage 108 ;
+    ns4:author <http://ceur-ws.org/Vol-641/#AlexanderiSchatten>,
         <http://ceur-ws.org/Vol-641/#AloisiZoitl>,
         <http://ceur-ws.org/Vol-641/#MartiniMelik-Merkumians>,
         <http://ceur-ws.org/Vol-641/#StefaniBiffl>,
         <http://ceur-ws.org/Vol-641/#ThomasiMoser> .
 
-<http://ceur-ws.org/Vol-641/#PosterSessionApplications> a ns4:SessionEvent ;
-    ns4:partOf <http://ceur-ws.org/Vol-641/> ;
-    ns5:title "Poster Session: Applications" .
+<http://ceur-ws.org/Vol-641/#PosterSessionApplications> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-641/> ;
+    ns6:title "Poster Session: Applications" .
 
-<http://ceur-ws.org/Vol-641/> a ns4:Proceedings ;
-    ns4:hasPart <http://ceur-ws.org/Vol-641/#paper_01>,
+<http://ceur-ws.org/Vol-641/> a ns1:Proceedings ;
+    ns1:hasPart <http://ceur-ws.org/Vol-641/#paper_01>,
         <http://ceur-ws.org/Vol-641/#paper_02>,
         <http://ceur-ws.org/Vol-641/#paper_05>,
         <http://ceur-ws.org/Vol-641/#paper_06>,
@@ -348,12 +348,12 @@
         <http://ceur-ws.org/Vol-641/#paper_13>,
         <http://ceur-ws.org/Vol-641/#paper_14>,
         <http://ceur-ws.org/Vol-641/#paper_15> ;
-    ns4:hasSession <http://ceur-ws.org/Vol-641/#PosterSessionApplications>,
+    ns1:hasSession <http://ceur-ws.org/Vol-641/#PosterSessionApplications>,
         <http://ceur-ws.org/Vol-641/#Session1FundamentalConcepts>,
         <http://ceur-ws.org/Vol-641/#Session2EvaluationandExperimentation> ;
-    ns7:issued "2010-09-28T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:presentedAt <http://ceur-ws.org/Vol-641/#event> ;
-    ns1:editor <http://ceur-ws.org/Vol-641/#C%C3%A9driciJeanneret>,
+    ns8:issued "2010-09-28T00:00:00+00:00"^^xsd:dateTime ;
+    ns5:presentedAt <http://ceur-ws.org/Vol-641/#event> ;
+    ns4:editor <http://ceur-ws.org/Vol-641/#C%C3%A9driciJeanneret>,
         <http://ceur-ws.org/Vol-641/#FranckiFleurey>,
         <http://ceur-ws.org/Vol-641/#GordoniBlair>,
         <http://ceur-ws.org/Vol-641/#NellyiBencomo> .

@@ -1,47 +1,650 @@
-@prefix ns1: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns1: <http://purl.org/ontology/bibo/#> .
 @prefix ns2: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns3: <http://www.w3.org/2002/07/owl#> .
-@prefix ns4: <http://purl.org/ontology/bibo/#> .
-@prefix ns5: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns6: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns7: <http://xmlns.com/foaf/0.1/> .
-@prefix ns8: <http://purl.org/dc/elements/1.1/> .
+@prefix ns3: <http://xmlns.com/foaf/0.1/> .
+@prefix ns4: <http://www.w3.org/2002/07/owl#> .
+@prefix ns5: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns6: <http://purl.org/dc/elements/1.1/> .
+@prefix ns7: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns9: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-989/> a ns1:Proceedings ;
-    ns6:issued "2013-08-06T00:00:00+00:00"^^xsd:dateTime ;
-    ns4:presentedAt <http://ceur-ws.org/Vol-989/#event> ;
+<http://ceur-ws.org/Vol-989/#%C5%81ukasziFronc> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/%C5%81ukasziFronc> ;
+    ns3:made <http://ceur-ws.org/Vol-989/#paper01> ;
+    ns3:name "Łukasz Fronc" .
+
+<http://ceur-ws.org/Vol-989/#AlfrediSanogo> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/AlfrediSanogo> ;
+    ns3:made <http://ceur-ws.org/Vol-989/#paper11> ;
+    ns3:name "Alfred Sanogo" .
+
+<http://ceur-ws.org/Vol-989/#AndreaiOmicini> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/AndreaiOmicini> ;
+    ns3:made <http://ceur-ws.org/Vol-989/#paper00> ;
+    ns3:name "Andrea Omicini" .
+
+<http://ceur-ws.org/Vol-989/#BelhasseniMazigh> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/BelhasseniMazigh> ;
+    ns3:made <http://ceur-ws.org/Vol-989/#paper08> ;
+    ns3:name "Belhassen Mazigh" .
+
+<http://ceur-ws.org/Vol-989/#ChristineiChoppy> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/ChristineiChoppy> ;
+    ns3:made <http://ceur-ws.org/Vol-989/#paper11> ;
+    ns3:name "Christine Choppy" .
+
+<http://ceur-ws.org/Vol-989/#DanielaiMicucci> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/DanielaiMicucci> ;
+    ns3:made <http://ceur-ws.org/Vol-989/#paper14> ;
+    ns3:name "Daniela Micucci" .
+
+<http://ceur-ws.org/Vol-989/#DanieliMoldtiiUniversityiofiHamburgDepartmentiofiInformatics> a ns3:Person ;
+    ns2:affiliation "22527 HamburgGermany" ;
+    ns4:sameAs <http://ceur-ws.org/persons/DanieliMoldtiiUniversityiofiHamburgDepartmentiofiInformatics> ;
+    ns3:name "Daniel Moldt  University of HamburgDepartment of Informatics" .
+
+<http://ceur-ws.org/Vol-989/#DavidiMosteller> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/DavidiMosteller> ;
+    ns3:made <http://ceur-ws.org/Vol-989/#paper05b> ;
+    ns3:name "David Mosteller" .
+
+<http://ceur-ws.org/Vol-989/#DennisiSchunselaar> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/DennisiSchunselaar> ;
+    ns3:made <http://ceur-ws.org/Vol-989/#paper06> ;
+    ns3:name "Dennis Schunselaar" .
+
+<http://ceur-ws.org/Vol-989/#ElisabettaiMangioni> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/ElisabettaiMangioni> ;
+    ns3:made <http://ceur-ws.org/Vol-989/#paper15> ;
+    ns3:name "Elisabetta Mangioni" .
+
+<http://ceur-ws.org/Vol-989/#ErnestoiDamiani> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/ErnestoiDamiani> ;
+    ns3:made <http://ceur-ws.org/Vol-989/#paper00b> ;
+    ns3:name "Ernesto Damiani" .
+
+<http://ceur-ws.org/Vol-989/#FrancescoiFiamberti> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/FrancescoiFiamberti> ;
+    ns3:made <http://ceur-ws.org/Vol-989/#paper14> ;
+    ns3:name "Francesco Fiamberti" .
+
+<http://ceur-ws.org/Vol-989/#FrancescoiTisato> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/FrancescoiTisato> ;
+    ns3:made <http://ceur-ws.org/Vol-989/#paper14> ;
+    ns3:name "Francesco Tisato" .
+
+<http://ceur-ws.org/Vol-989/#FranckiPommereau> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/FranckiPommereau> ;
+    ns3:made <http://ceur-ws.org/Vol-989/#paper01> ;
+    ns3:name "Franck Pommereau" .
+
+<http://ceur-ws.org/Vol-989/#GianfrancoiCiardo> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/GianfrancoiCiardo> ;
+    ns3:made <http://ceur-ws.org/Vol-989/#paper17> ;
+    ns3:name "Gianfranco Ciardo" .
+
+<http://ceur-ws.org/Vol-989/#GorkemiKilinc> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/GorkemiKilinc> ;
+    ns3:made <http://ceur-ws.org/Vol-989/#paper15> ;
+    ns3:name "Gorkem Kilinc" .
+
+<http://ceur-ws.org/Vol-989/#HajoiA.iReijers> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/HajoiA.iReijers> ;
+    ns3:made <http://ceur-ws.org/Vol-989/#paper06> ;
+    ns3:name "Hajo A. Reijers" .
+
+<http://ceur-ws.org/Vol-989/#HanifaiBoucheneb> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/HanifaiBoucheneb> ;
+    ns3:made <http://ceur-ws.org/Vol-989/#paper22> ;
+    ns3:name "Hanifa Boucheneb" .
+
+<http://ceur-ws.org/Vol-989/#HiroyukiiOimura> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/HiroyukiiOimura> ;
+    ns3:made <http://ceur-ws.org/Vol-989/#paper24> ;
+    ns3:name "Hiroyuki Oimura" .
+
+<http://ceur-ws.org/Vol-989/#InternationaliWorkshopioniPetriiNets> a ns3:Person ;
+    ns2:affiliation "PNSE'13" ;
+    ns4:sameAs <http://ceur-ws.org/persons/InternationaliWorkshopioniPetriiNets> ;
+    ns3:name "International Workshop on Petri Nets" .
+
+<http://ceur-ws.org/Vol-989/#IrinaiA.iLomazova> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/IrinaiA.iLomazova> ;
+    ns3:made <http://ceur-ws.org/Vol-989/#paper02> ;
+    ns3:name "Irina A. Lomazova" .
+
+<http://ceur-ws.org/Vol-989/#JaniMartijnivanideriWerf> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/JaniMartijnivanideriWerf> ;
+    ns3:made <http://ceur-ws.org/Vol-989/#paper04b> ;
+    ns3:name "Jan Martijn van der Werf" .
+
+<http://ceur-ws.org/Vol-989/#KaisiBeniFadhel> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/KaisiBeniFadhel> ;
+    ns3:made <http://ceur-ws.org/Vol-989/#paper08> ;
+    ns3:name "Kais Ben Fadhel" .
+
+<http://ceur-ws.org/Vol-989/#KhodakaramiSalimifard> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/KhodakaramiSalimifard> ;
+    ns3:made <http://ceur-ws.org/Vol-989/#paper02b> ;
+    ns3:name "Khodakaram Salimifard" .
+
+<http://ceur-ws.org/Vol-989/#LarsiMichaeliKristensen> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/LarsiMichaeliKristensen> ;
+    ns3:made <http://ceur-ws.org/Vol-989/#paper25> ;
+    ns3:name "Lars Michael Kristensen" .
+
+<http://ceur-ws.org/Vol-989/#LaureiPetrucci> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/LaureiPetrucci> ;
+    ns3:made <http://ceur-ws.org/Vol-989/#paper11> ;
+    ns3:name "Laure Petrucci" .
+
+<http://ceur-ws.org/Vol-989/#LucaiBernardinello> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/LucaiBernardinello> ;
+    ns3:made <http://ceur-ws.org/Vol-989/#paper15> ;
+    ns3:name "Luca Bernardinello" .
+
+<http://ceur-ws.org/Vol-989/#LuciaiPomello> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/LuciaiPomello> ;
+    ns3:made <http://ceur-ws.org/Vol-989/#paper15> ;
+    ns3:name "Lucia Pomello" .
+
+<http://ceur-ws.org/Vol-989/#MatteoiRisoldi> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/MatteoiRisoldi> ;
+    ns3:made <http://ceur-ws.org/Vol-989/#paper01b> ;
+    ns3:name "Matteo Risoldi" .
+
+<http://ceur-ws.org/Vol-989/#MichaeliDuvigneau> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/MichaeliDuvigneau> ;
+    ns3:made <http://ceur-ws.org/Vol-989/#paper20> ;
+    ns3:name "Michael Duvigneau" .
+
+<http://ceur-ws.org/Vol-989/#MichaeliSimon> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/MichaeliSimon> ;
+    ns3:made <http://ceur-ws.org/Vol-989/#paper23> ;
+    ns3:name "Michael Simon" .
+
+<http://ceur-ws.org/Vol-989/#MohammadiSadeghiMoradi> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/MohammadiSadeghiMoradi> ;
+    ns3:made <http://ceur-ws.org/Vol-989/#paper02b> ;
+    ns3:name "Mohammad Sadegh Moradi" .
+
+<http://ceur-ws.org/Vol-989/#PaoloiCeravolo> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/PaoloiCeravolo> ;
+    ns3:made <http://ceur-ws.org/Vol-989/#paper00b> ;
+    ns3:name "Paolo Ceravolo" .
+
+<http://ceur-ws.org/Vol-989/#RachidiHadjidj> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/RachidiHadjidj> ;
+    ns3:made <http://ceur-ws.org/Vol-989/#paper22> ;
+    ns3:name "Rachid Hadjidj" .
+
+<http://ceur-ws.org/Vol-989/#RadekiKoc%C3%AD> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/RadekiKoc%C3%AD> ;
+    ns3:made <http://ceur-ws.org/Vol-989/#paper10> ;
+    ns3:name "Radek Kocí" .
+
+<http://ceur-ws.org/Vol-989/#RonnyiMans> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/RonnyiMans> ;
+    ns3:made <http://ceur-ws.org/Vol-989/#paper04b> ;
+    ns3:name "Ronny Mans" .
+
+<http://ceur-ws.org/Vol-989/#SeyediYaghoubiHosseini> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/SeyediYaghoubiHosseini> ;
+    ns3:made <http://ceur-ws.org/Vol-989/#paper02b> ;
+    ns3:name "Seyed Yaghoub Hosseini" .
+
+<http://ceur-ws.org/Vol-989/#SofianeiBendoukha> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/SofianeiBendoukha> ;
+    ns3:made <http://ceur-ws.org/Vol-989/#paper07b> ;
+    ns3:name "Sofiane Bendoukha" .
+
+<http://ceur-ws.org/Vol-989/#SoftwareiEngineering> a ns3:Person ;
+    ns2:affiliation "PNSE'13" ;
+    ns4:sameAs <http://ceur-ws.org/persons/SoftwareiEngineering> ;
+    ns3:name "Software Engineering" .
+
+<http://ceur-ws.org/Vol-989/#StefaniHaar> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/StefaniHaar> ;
+    ns3:made <http://ceur-ws.org/Vol-989/#paper03> ;
+    ns3:name "Stefan Haar" .
+
+<http://ceur-ws.org/Vol-989/#StefanoiMariani> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/StefanoiMariani> ;
+    ns3:made <http://ceur-ws.org/Vol-989/#paper00> ;
+    ns3:name "Stefano Mariani" .
+
+<http://ceur-ws.org/Vol-989/#ThomasiChatain> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/ThomasiChatain> ;
+    ns3:made <http://ceur-ws.org/Vol-989/#paper03> ;
+    ns3:name "Thomas Chatain" .
+
+<http://ceur-ws.org/Vol-989/#TobiasiBetz> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/TobiasiBetz> ;
+    ns3:made <http://ceur-ws.org/Vol-989/#paper20> ;
+    ns3:name "Tobias Betz" .
+
+<http://ceur-ws.org/Vol-989/#Tom%C3%A1%C5%A1iRichta> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/Tom%C3%A1%C5%A1iRichta> ;
+    ns3:made <http://ceur-ws.org/Vol-989/#paper10> ;
+    ns3:name "Tomáš Richta" .
+
+<http://ceur-ws.org/Vol-989/#ToshiyukiiMiyamoto> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/ToshiyukiiMiyamoto> ;
+    ns3:made <http://ceur-ws.org/Vol-989/#paper24> ;
+    ns3:name "Toshiyuki Miyamoto" .
+
+<http://ceur-ws.org/Vol-989/#VegardiVeiset> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/VegardiVeiset> ;
+    ns3:made <http://ceur-ws.org/Vol-989/#paper25> ;
+    ns3:name "Vegard Veiset" .
+
+<http://ceur-ws.org/Vol-989/#Vladim%C3%ADriJanou%C5%A1ek> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/Vladim%C3%ADriJanou%C5%A1ek> ;
+    ns3:made <http://ceur-ws.org/Vol-989/#paper10> ;
+    ns3:name "Vladimír Janoušek" .
+
+<http://ceur-ws.org/Vol-989/#VladimiriA.iBashkin> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/VladimiriA.iBashkin> ;
+    ns3:made <http://ceur-ws.org/Vol-989/#paper02> ;
+    ns3:name "Vladimir A. Bashkin" .
+
+<http://ceur-ws.org/Vol-989/#WorkshopiChairs> a ns3:Person ;
+    ns2:affiliation ":Daniel Moldt (PNSE'13) + (ModBE'13) Heiko Rölke (PNSE'13)  University of HamburgDepartment of Informatics22527 HamburgGermany DIPF (German Institute for International Educational Research)GermanyJoint proceedings of PNSE'13 and ModBE'13 as a single joint volume.Proceedings of PNSE'13 as a single sub-volume.Proceedings of ModBE'13 as a single sub-volume.BibTeX for the PNSE'13 and ModBE'13 proceedings.Joint Proceedings Table of ContentsJoint Frontmatter1-5" ;
+    ns4:sameAs <http://ceur-ws.org/persons/WorkshopiChairs> ;
+    ns3:name "Workshop Chairs" .
+
+<http://ceur-ws.org/Vol-989/#XiaoqingiJin> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/XiaoqingiJin> ;
+    ns3:made <http://ceur-ws.org/Vol-989/#paper17> ;
+    ns3:name "Xiaoqing Jin" .
+
+<http://ceur-ws.org/Vol-989/#YasiriImtiaziKhan> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/YasiriImtiaziKhan> ;
+    ns3:made <http://ceur-ws.org/Vol-989/#paper01b> ;
+    ns3:name "Yasir Imtiaz Khan" .
+
+<http://ceur-ws.org/Vol-989/#YousraiLembachar> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/YousraiLembachar> ;
+    ns3:made <http://ceur-ws.org/Vol-989/#paper17> ;
+    ns3:name "Yousra Lembachar" .
+
+<http://ceur-ws.org/Vol-989/#event> a ns5:WorkshopEvent ;
+    ns5:hasLocation <http://dbpedia.org/resource/Italy> ;
+    ns5:hasPart <http://ceur-ws.org/Vol-989/#part-ModBE>,
+        <http://ceur-ws.org/Vol-989/#part-PNSE> ;
+    ns5:isSubEventOf <http://ceur-ws.org/Vol-989/#conf> ;
+    ns8:beginsAtDatetime "2013-06-24T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:endsAtDatetime "2013-06-25T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:license "http://choosealicense.com/licenses/no-license/" ;
+    rdfs:seeAlso <http://ceur-ws.org/Vol-723/#event>,
+        <http://ceur-ws.org/Vol-851/#event> .
+
+<http://ceur-ws.org/Vol-989/#EriciVerbeek> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/EriciVerbeek> ;
+    ns3:made <http://ceur-ws.org/Vol-989/#paper06>,
+        <http://ceur-ws.org/Vol-989/#paper07> ;
+    ns3:name "Eric Verbeek" .
+
+<http://ceur-ws.org/Vol-989/#InvitedTalksModBE13> a ns5:SessionEvent ;
+    ns5:partOf <http://ceur-ws.org/Vol-989/> ;
+    ns7:title "Invited Talks (ModBE'13)" .
+
+<http://ceur-ws.org/Vol-989/#InvitedTalksPNSE13> a ns5:SessionEvent ;
+    ns5:partOf <http://ceur-ws.org/Vol-989/> ;
+    ns7:title "Invited Talks (PNSE'13)" .
+
+<http://ceur-ws.org/Vol-989/#MatthiasiWester-Ebbinghaus> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/MatthiasiWester-Ebbinghaus> ;
+    ns3:made <http://ceur-ws.org/Vol-989/#paper05b>,
+        <http://ceur-ws.org/Vol-989/#paper20> ;
+    ns3:name "Matthias Wester-Ebbinghaus" .
+
+<http://ceur-ws.org/Vol-989/#ShortPresentationModBE13> a ns5:SessionEvent ;
+    ns5:partOf <http://ceur-ws.org/Vol-989/> ;
+    ns7:title "Short Presentation (ModBE'13)" .
+
+<http://ceur-ws.org/Vol-989/#ThomasiWagner> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/ThomasiWagner> ;
+    ns3:made <http://ceur-ws.org/Vol-989/#paper06b>,
+        <http://ceur-ws.org/Vol-989/#paper20> ;
+    ns3:name "Thomas Wagner" .
+
+<http://ceur-ws.org/Vol-989/#PosterAbstractsModBE13> a ns5:SessionEvent ;
+    ns5:partOf <http://ceur-ws.org/Vol-989/> ;
+    ns7:title "Poster Abstracts (ModBE'13)" .
+
+<http://ceur-ws.org/Vol-989/#PosterAbstractsPNSE13> a ns5:SessionEvent ;
+    ns5:partOf <http://ceur-ws.org/Vol-989/> ;
+    ns7:title "Poster Abstracts (PNSE'13)" .
+
+<http://ceur-ws.org/Vol-989/#ShortPapersPNSE13> a ns5:SessionEvent ;
+    ns5:partOf <http://ceur-ws.org/Vol-989/> ;
+    ns7:title "Short Papers (PNSE'13)" .
+
+<http://ceur-ws.org/Vol-989/#WilivanideriAalst> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/WilivanideriAalst> ;
+    ns3:made <http://ceur-ws.org/Vol-989/#paper04b>,
+        <http://ceur-ws.org/Vol-989/#paper06>,
+        <http://ceur-ws.org/Vol-989/#paper07> ;
+    ns3:name "Wil van der Aalst" .
+
+<http://ceur-ws.org/Vol-989/#paper00> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-989/> ;
+    ns7:title "Coordination for Situated MAS: Towards an Event-driven Architecture" ;
+    ns1:endPage 22 ;
+    ns1:numPages 6 ;
+    ns1:section <http://ceur-ws.org/Vol-989/#InvitedTalksPNSE13> ;
+    ns1:startPage 17 ;
+    ns2:author <http://ceur-ws.org/Vol-989/#AndreaiOmicini>,
+        <http://ceur-ws.org/Vol-989/#StefanoiMariani> .
+
+<http://ceur-ws.org/Vol-989/#paper00b> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-989/> ;
+    ns7:title "Knowledge and Business Intelligence Technologies in Cross-Enterprise Environments for Italian Advanced Mechanical Industry" ;
+    ns1:endPage 267 ;
+    ns1:numPages 5 ;
+    ns1:section <http://ceur-ws.org/Vol-989/#InvitedTalksModBE13> ;
+    ns1:startPage 263 ;
+    ns2:author <http://ceur-ws.org/Vol-989/#ErnestoiDamiani>,
+        <http://ceur-ws.org/Vol-989/#PaoloiCeravolo> .
+
+<http://ceur-ws.org/Vol-989/#paper01> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-989/> ;
+    ns7:title "Building Petri Nets Tools around Neco Compiler" ;
+    ns1:endPage 245 ;
+    ns1:numPages 7 ;
+    ns1:section <http://ceur-ws.org/Vol-989/#ShortPapersPNSE13> ;
+    ns1:startPage 239 ;
+    ns2:author <http://ceur-ws.org/Vol-989/#%C5%81ukasziFronc>,
+        <http://ceur-ws.org/Vol-989/#FranckiPommereau> .
+
+<http://ceur-ws.org/Vol-989/#paper01b> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-989/> ;
+    ns7:title "Optimizing Algebraic Petri Net Model Checking by Slicing" ;
+    ns1:endPage 271 ;
+    ns1:numPages 1 ;
+    ns1:section <http://ceur-ws.org/Vol-989/#LongPresentationsModBE13> ;
+    ns1:startPage 271 ;
+    ns2:author <http://ceur-ws.org/Vol-989/#MatteoiRisoldi>,
+        <http://ceur-ws.org/Vol-989/#YasiriImtiaziKhan> .
+
+<http://ceur-ws.org/Vol-989/#paper02> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-989/> ;
+    ns7:title "Soundness of Workflow Nets with an Unbounded Resource is Decidable" ;
+    ns1:endPage 75 ;
+    ns1:numPages 15 ;
+    ns1:section <http://ceur-ws.org/Vol-989/#LongPresentationsPNSE13> ;
+    ns1:startPage 61 ;
+    ns2:author <http://ceur-ws.org/Vol-989/#IrinaiA.iLomazova>,
+        <http://ceur-ws.org/Vol-989/#VladimiriA.iBashkin> .
+
+<http://ceur-ws.org/Vol-989/#paper03> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-989/> ;
+    ns7:title "A Canonical Contraction for Safe Petri Nets" ;
+    ns1:endPage 39 ;
+    ns1:numPages 15 ;
+    ns1:section <http://ceur-ws.org/Vol-989/#LongPresentationsPNSE13> ;
+    ns1:startPage 25 ;
+    ns2:author <http://ceur-ws.org/Vol-989/#StefaniHaar>,
+        <http://ceur-ws.org/Vol-989/#ThomasiChatain> .
+
+<http://ceur-ws.org/Vol-989/#paper06b> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-989/> ;
+    ns7:title "Advantages of a Full Integration between Agents and Workflows" ;
+    ns1:endPage 349 ;
+    ns1:numPages 15 ;
+    ns1:section <http://ceur-ws.org/Vol-989/#PosterAbstractsModBE13> ;
+    ns1:startPage 335 ;
+    ns2:author <http://ceur-ws.org/Vol-989/#LawrenceiCabac>,
+        <http://ceur-ws.org/Vol-989/#ThomasiWagner> .
+
+<http://ceur-ws.org/Vol-989/#paper07> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-989/> ;
+    ns7:title "Decomposing Replay Problems: A Case Study" ;
+    ns1:endPage 235 ;
+    ns1:numPages 17 ;
+    ns1:section <http://ceur-ws.org/Vol-989/#ShortPresentationsPNSE13> ;
+    ns1:startPage 219 ;
+    ns2:author <http://ceur-ws.org/Vol-989/#EriciVerbeek>,
+        <http://ceur-ws.org/Vol-989/#WilivanideriAalst> .
+
+<http://ceur-ws.org/Vol-989/#paper07b> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-989/> ;
+    ns7:title "Cloud Transition for QoS Modeling of Inter-Organizational Workflows" ;
+    ns1:endPage 354 ;
+    ns1:numPages 2 ;
+    ns1:section <http://ceur-ws.org/Vol-989/#PosterAbstractsModBE13> ;
+    ns1:startPage 353 ;
+    ns2:author <http://ceur-ws.org/Vol-989/#LawrenceiCabac>,
+        <http://ceur-ws.org/Vol-989/#SofianeiBendoukha> .
+
+<http://ceur-ws.org/Vol-989/#paper08> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-989/> ;
+    ns7:title "A System Performance in Presence of Faults Modeling Framework Using AADL and GSPNs" ;
+    ns1:endPage 186 ;
+    ns1:numPages 18 ;
+    ns1:section <http://ceur-ws.org/Vol-989/#ShortPresentationsPNSE13> ;
+    ns1:startPage 169 ;
+    ns2:author <http://ceur-ws.org/Vol-989/#BelhasseniMazigh>,
+        <http://ceur-ws.org/Vol-989/#KaisiBeniFadhel> .
+
+<http://ceur-ws.org/Vol-989/#paper22> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-989/> ;
+    ns7:title "RT-Studio: A Tool for Modular Design and Analysis of Realtime Systems Using Interpreted Time Petri Nets" ;
+    ns1:endPage 254 ;
+    ns1:numPages 8 ;
+    ns1:section <http://ceur-ws.org/Vol-989/#ShortPapersPNSE13> ;
+    ns1:startPage 247 ;
+    ns2:author <http://ceur-ws.org/Vol-989/#HanifaiBoucheneb>,
+        <http://ceur-ws.org/Vol-989/#RachidiHadjidj> .
+
+<http://ceur-ws.org/Vol-989/#paper23> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-989/> ;
+    ns7:title "Introducing Catch Arcs to Java Reference Nets" ;
+    ns1:endPage 168 ;
+    ns1:numPages 14 ;
+    ns1:section <http://ceur-ws.org/Vol-989/#ShortPresentationsPNSE13> ;
+    ns1:startPage 155 ;
+    ns2:author <http://ceur-ws.org/Vol-989/#LawrenceiCabac>,
+        <http://ceur-ws.org/Vol-989/#MichaeliSimon> .
+
+<http://ceur-ws.org/Vol-989/#paper24> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-989/> ;
+    ns7:title "A Tool to Synthesize Intelligible State Machine Models from Choreography using Petri Nets" ;
+    ns1:endPage 258 ;
+    ns1:numPages 2 ;
+    ns1:section <http://ceur-ws.org/Vol-989/#PosterAbstractsPNSE13> ;
+    ns1:startPage 257 ;
+    ns2:author <http://ceur-ws.org/Vol-989/#HiroyukiiOimura>,
+        <http://ceur-ws.org/Vol-989/#ToshiyukiiMiyamoto> .
+
+<http://ceur-ws.org/Vol-989/#paper25> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-989/> ;
+    ns7:title "Transforming Platform Independent CPN Models into Code for the TinyOS Platform: A Case Study of the RPL Protocol" ;
+    ns1:endPage 260 ;
+    ns1:numPages 2 ;
+    ns1:section <http://ceur-ws.org/Vol-989/#PosterAbstractsPNSE13> ;
+    ns1:startPage 259 ;
+    ns2:author <http://ceur-ws.org/Vol-989/#LarsiMichaeliKristensen>,
+        <http://ceur-ws.org/Vol-989/#VegardiVeiset> .
+
+<http://ceur-ws.org/Vol-989/#LongPresentationsModBE13> a ns5:SessionEvent ;
+    ns5:partOf <http://ceur-ws.org/Vol-989/> ;
+    ns7:title "Long Presentations (ModBE'13)" .
+
+<http://ceur-ws.org/Vol-989/#paper02b> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-989/> ;
+    ns7:title "Improving Emergency Department Processes Using Coloured Petri Nets" ;
+    ns1:endPage 331 ;
+    ns1:numPages 19 ;
+    ns1:section <http://ceur-ws.org/Vol-989/#ShortPresentationModBE13> ;
+    ns1:startPage 313 ;
+    ns2:author <http://ceur-ws.org/Vol-989/#KhodakaramiSalimifard>,
+        <http://ceur-ws.org/Vol-989/#MohammadiSadeghiMoradi>,
+        <http://ceur-ws.org/Vol-989/#SeyediYaghoubiHosseini> .
+
+<http://ceur-ws.org/Vol-989/#paper04b> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-989/> ;
+    ns7:title "Mining Declarative Models Using Time Intervals" ;
+    ns1:endPage 312 ;
+    ns1:numPages 18 ;
+    ns1:section <http://ceur-ws.org/Vol-989/#LongPresentationsModBE13> ;
+    ns1:startPage 295 ;
+    ns2:author <http://ceur-ws.org/Vol-989/#JaniMartijnivanideriWerf>,
+        <http://ceur-ws.org/Vol-989/#RonnyiMans>,
+        <http://ceur-ws.org/Vol-989/#WilivanideriAalst> .
+
+<http://ceur-ws.org/Vol-989/#paper05b> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-989/> ;
+    ns7:title "A Proposal for the Modeling of Organizational Structures and Agent Knowledge in MAS" ;
+    ns1:endPage 294 ;
+    ns1:numPages 20 ;
+    ns1:section <http://ceur-ws.org/Vol-989/#LongPresentationsModBE13> ;
+    ns1:startPage 275 ;
+    ns2:author <http://ceur-ws.org/Vol-989/#DavidiMosteller>,
+        <http://ceur-ws.org/Vol-989/#LawrenceiCabac>,
+        <http://ceur-ws.org/Vol-989/#MatthiasiWester-Ebbinghaus> .
+
+<http://ceur-ws.org/Vol-989/#paper10> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-989/> ;
+    ns7:title "Petri Nets-Based Development of Dynamically Reconfigurable Embedded Systems" ;
+    ns1:endPage 217 ;
+    ns1:numPages 15 ;
+    ns1:section <http://ceur-ws.org/Vol-989/#ShortPresentationsPNSE13> ;
+    ns1:startPage 203 ;
+    ns2:author <http://ceur-ws.org/Vol-989/#RadekiKoc%C3%AD>,
+        <http://ceur-ws.org/Vol-989/#Tom%C3%A1%C5%A1iRichta>,
+        <http://ceur-ws.org/Vol-989/#Vladim%C3%ADriJanou%C5%A1ek> .
+
+<http://ceur-ws.org/Vol-989/#paper11> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-989/> ;
+    ns7:title "Coloured Petri Nets Refinements" ;
+    ns1:endPage 201 ;
+    ns1:numPages 15 ;
+    ns1:section <http://ceur-ws.org/Vol-989/#ShortPresentationsPNSE13> ;
+    ns1:startPage 187 ;
+    ns2:author <http://ceur-ws.org/Vol-989/#AlfrediSanogo>,
+        <http://ceur-ws.org/Vol-989/#ChristineiChoppy>,
+        <http://ceur-ws.org/Vol-989/#LaureiPetrucci> .
+
+<http://ceur-ws.org/Vol-989/#paper14> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-989/> ;
+    ns7:title "Petri Nets as a Means to Validate an Architecture for Time Aware Systems" ;
+    ns1:endPage 131 ;
+    ns1:numPages 15 ;
+    ns1:section <http://ceur-ws.org/Vol-989/#LongPresentationsPNSE13> ;
+    ns1:startPage 117 ;
+    ns2:author <http://ceur-ws.org/Vol-989/#DanielaiMicucci>,
+        <http://ceur-ws.org/Vol-989/#FrancescoiFiamberti>,
+        <http://ceur-ws.org/Vol-989/#FrancescoiTisato> .
+
+<http://ceur-ws.org/Vol-989/#paper17> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-989/> ;
+    ns7:title "Symbolic verification of ECA rules" ;
+    ns1:endPage 59 ;
+    ns1:numPages 19 ;
+    ns1:section <http://ceur-ws.org/Vol-989/#LongPresentationsPNSE13> ;
+    ns1:startPage 41 ;
+    ns2:author <http://ceur-ws.org/Vol-989/#GianfrancoiCiardo>,
+        <http://ceur-ws.org/Vol-989/#XiaoqingiJin>,
+        <http://ceur-ws.org/Vol-989/#YousraiLembachar> .
+
+<http://ceur-ws.org/Vol-989/#LawrenceiCabac> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/LawrenceiCabac> ;
+    ns3:made <http://ceur-ws.org/Vol-989/#paper05b>,
+        <http://ceur-ws.org/Vol-989/#paper06b>,
+        <http://ceur-ws.org/Vol-989/#paper07b>,
+        <http://ceur-ws.org/Vol-989/#paper20>,
+        <http://ceur-ws.org/Vol-989/#paper23> ;
+    ns3:name "Lawrence Cabac" .
+
+<http://ceur-ws.org/Vol-989/#paper06> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-989/> ;
+    ns7:title "A Framework for Efficiently Deciding Language Inclusion for Sound Unlabelled WF-Nets" ;
+    ns1:endPage 154 ;
+    ns1:numPages 20 ;
+    ns1:section <http://ceur-ws.org/Vol-989/#ShortPresentationsPNSE13> ;
+    ns1:startPage 135 ;
+    ns2:author <http://ceur-ws.org/Vol-989/#DennisiSchunselaar>,
+        <http://ceur-ws.org/Vol-989/#EriciVerbeek>,
+        <http://ceur-ws.org/Vol-989/#HajoiA.iReijers>,
+        <http://ceur-ws.org/Vol-989/#WilivanideriAalst> .
+
+<http://ceur-ws.org/Vol-989/#paper15> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-989/> ;
+    ns7:title "Modeling Distributed Private Key Generation by Composing Petri Nets" ;
+    ns1:endPage 96 ;
+    ns1:numPages 20 ;
+    ns1:section <http://ceur-ws.org/Vol-989/#LongPresentationsPNSE13> ;
+    ns1:startPage 77 ;
+    ns2:author <http://ceur-ws.org/Vol-989/#ElisabettaiMangioni>,
+        <http://ceur-ws.org/Vol-989/#GorkemiKilinc>,
+        <http://ceur-ws.org/Vol-989/#LucaiBernardinello>,
+        <http://ceur-ws.org/Vol-989/#LuciaiPomello> .
+
+<http://ceur-ws.org/Vol-989/#paper20> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-989/> ;
+    ns7:title "Integrating Web Services in Petri Net-based Agent Applications" ;
+    ns1:endPage 116 ;
+    ns1:numPages 20 ;
+    ns1:section <http://ceur-ws.org/Vol-989/#LongPresentationsPNSE13> ;
+    ns1:startPage 97 ;
+    ns2:author <http://ceur-ws.org/Vol-989/#LawrenceiCabac>,
+        <http://ceur-ws.org/Vol-989/#MatthiasiWester-Ebbinghaus>,
+        <http://ceur-ws.org/Vol-989/#MichaeliDuvigneau>,
+        <http://ceur-ws.org/Vol-989/#ThomasiWagner>,
+        <http://ceur-ws.org/Vol-989/#TobiasiBetz> .
+
+<http://ceur-ws.org/Vol-989/#LongPresentationsPNSE13> a ns5:SessionEvent ;
+    ns5:partOf <http://ceur-ws.org/Vol-989/> ;
+    ns7:title "Long Presentations (PNSE'13)" .
+
+<http://ceur-ws.org/Vol-989/#ShortPresentationsPNSE13> a ns5:SessionEvent ;
+    ns5:partOf <http://ceur-ws.org/Vol-989/> ;
+    ns7:title "Short Presentations (PNSE'13)" .
+
+<http://ceur-ws.org/Vol-989/> a ns5:Proceedings ;
+    ns5:hasPart <http://ceur-ws.org/Vol-989/#paper00>,
+        <http://ceur-ws.org/Vol-989/#paper00b>,
+        <http://ceur-ws.org/Vol-989/#paper01>,
+        <http://ceur-ws.org/Vol-989/#paper01b>,
+        <http://ceur-ws.org/Vol-989/#paper02>,
+        <http://ceur-ws.org/Vol-989/#paper02b>,
+        <http://ceur-ws.org/Vol-989/#paper03>,
+        <http://ceur-ws.org/Vol-989/#paper04b>,
+        <http://ceur-ws.org/Vol-989/#paper05b>,
+        <http://ceur-ws.org/Vol-989/#paper06>,
+        <http://ceur-ws.org/Vol-989/#paper06b>,
+        <http://ceur-ws.org/Vol-989/#paper07>,
+        <http://ceur-ws.org/Vol-989/#paper07b>,
+        <http://ceur-ws.org/Vol-989/#paper08>,
+        <http://ceur-ws.org/Vol-989/#paper10>,
+        <http://ceur-ws.org/Vol-989/#paper11>,
+        <http://ceur-ws.org/Vol-989/#paper14>,
+        <http://ceur-ws.org/Vol-989/#paper15>,
+        <http://ceur-ws.org/Vol-989/#paper17>,
+        <http://ceur-ws.org/Vol-989/#paper20>,
+        <http://ceur-ws.org/Vol-989/#paper22>,
+        <http://ceur-ws.org/Vol-989/#paper23>,
+        <http://ceur-ws.org/Vol-989/#paper24>,
+        <http://ceur-ws.org/Vol-989/#paper25> ;
+    ns5:hasSession <http://ceur-ws.org/Vol-989/#InvitedTalksModBE13>,
+        <http://ceur-ws.org/Vol-989/#InvitedTalksPNSE13>,
+        <http://ceur-ws.org/Vol-989/#LongPresentationsModBE13>,
+        <http://ceur-ws.org/Vol-989/#LongPresentationsPNSE13>,
+        <http://ceur-ws.org/Vol-989/#PosterAbstractsModBE13>,
+        <http://ceur-ws.org/Vol-989/#PosterAbstractsPNSE13>,
+        <http://ceur-ws.org/Vol-989/#ShortPapersPNSE13>,
+        <http://ceur-ws.org/Vol-989/#ShortPresentationModBE13>,
+        <http://ceur-ws.org/Vol-989/#ShortPresentationsPNSE13> ;
+    ns9:issued "2013-08-06T00:00:00+00:00"^^xsd:dateTime ;
+    ns1:presentedAt <http://ceur-ws.org/Vol-989/#event> ;
     ns2:editor <http://ceur-ws.org/Vol-989/#DanieliMoldtiiUniversityiofiHamburgDepartmentiofiInformatics>,
         <http://ceur-ws.org/Vol-989/#InternationaliWorkshopioniPetriiNets>,
         <http://ceur-ws.org/Vol-989/#SoftwareiEngineering>,
         <http://ceur-ws.org/Vol-989/#WorkshopiChairs> .
-
-<http://ceur-ws.org/Vol-989/#DanieliMoldtiiUniversityiofiHamburgDepartmentiofiInformatics> a ns7:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/DanieliMoldtiiUniversityiofiHamburgDepartmentiofiInformatics> ;
-    ns7:name "Daniel Moldt  University of HamburgDepartment of Informatics" .
-
-<http://ceur-ws.org/Vol-989/#InternationaliWorkshopioniPetriiNets> a ns7:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/InternationaliWorkshopioniPetriiNets> ;
-    ns7:name "International Workshop on Petri Nets" .
-
-<http://ceur-ws.org/Vol-989/#SoftwareiEngineering> a ns7:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/SoftwareiEngineering> ;
-    ns7:name "Software Engineering" .
-
-<http://ceur-ws.org/Vol-989/#WorkshopiChairs> a ns7:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/WorkshopiChairs> ;
-    ns7:name "Workshop Chairs" .
-
-<http://ceur-ws.org/Vol-989/#event> a ns1:WorkshopEvent ;
-    ns1:hasLocation <http://dbpedia.org/resource/Italy> ;
-    ns1:hasPart <http://ceur-ws.org/Vol-989/#part-CEUR-WS> ;
-    ns1:isSubEventOf <http://ceur-ws.org/Vol-989/#conf> ;
-    ns5:beginsAtDatetime "2013-06-24T00:00:00+00:00"^^xsd:dateTime ;
-    ns5:endsAtDatetime "2013-06-25T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:license "http://choosealicense.com/licenses/no-license/" ;
-    rdfs:seeAlso <http://ceur-ws.org/Vol-723/#event>,
-        <http://ceur-ws.org/Vol-851/#event> .
 

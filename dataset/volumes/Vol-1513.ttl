@@ -1,40 +1,231 @@
-@prefix ns1: <http://www.w3.org/2002/07/owl#> .
-@prefix ns2: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns3: <http://xmlns.com/foaf/0.1/> .
-@prefix ns4: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns5: <http://purl.org/ontology/bibo/#> .
-@prefix ns6: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns7: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns8: <http://purl.org/dc/elements/1.1/> .
+@prefix ns1: <http://xmlns.com/foaf/0.1/> .
+@prefix ns2: <http://purl.org/ontology/bibo/#> .
+@prefix ns3: <http://www.w3.org/2002/07/owl#> .
+@prefix ns4: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns5: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns6: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns9: <http://purl.org/dc/elements/1.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1513/> a ns7:Proceedings ;
-    ns2:issued "2015-12-03T00:00:00+00:00"^^xsd:dateTime ;
-    ns5:presentedAt <http://ceur-ws.org/Vol-1513/#event> ;
-    ns4:editor <http://ceur-ws.org/Vol-1513/#AndreyiSozykin>,
+<http://ceur-ws.org/Vol-1513/#AlexanderiTsidaev> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/AlexanderiTsidaev> ;
+    ns1:made <http://ceur-ws.org/Vol-1513/#paper-06> ;
+    ns1:name "Alexander Tsidaev" .
+
+<http://ceur-ws.org/Vol-1513/#DmitryiSavchenko> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/DmitryiSavchenko> ;
+    ns1:made <http://ceur-ws.org/Vol-1513/#paper-03> ;
+    ns1:name "Dmitry Savchenko" .
+
+<http://ceur-ws.org/Vol-1513/#DmitryiUstalov> a ns1:Person ;
+    ns2:place <http://dbpedia.org/resource/Russia> ;
+    ns6:affiliation "Ural Federal University" ;
+    ns3:sameAs <http://ceur-ws.org/persons/DmitryiUstalov> ;
+    ns1:name "Dmitry Ustalov" .
+
+<http://ceur-ws.org/Vol-1513/#ElenaiV.iIvanova> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/ElenaiV.iIvanova> ;
+    ns1:made <http://ceur-ws.org/Vol-1513/#paper-01> ;
+    ns1:name "Elena V. Ivanova" .
+
+<http://ceur-ws.org/Vol-1513/#EvgeniyiKozinov> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/EvgeniyiKozinov> ;
+    ns1:made <http://ceur-ws.org/Vol-1513/#paper-02> ;
+    ns1:name "Evgeniy Kozinov" .
+
+<http://ceur-ws.org/Vol-1513/#IlyaiStarodumov> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/IlyaiStarodumov> ;
+    ns1:made <http://ceur-ws.org/Vol-1513/#paper-11> ;
+    ns1:name "Ilya Starodumov" .
+
+<http://ceur-ws.org/Vol-1513/#KonstantiniUshenin> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/KonstantiniUshenin> ;
+    ns1:made <http://ceur-ws.org/Vol-1513/#paper-08> ;
+    ns1:name "Konstantin Ushenin" .
+
+<http://ceur-ws.org/Vol-1513/#NataliiaiVaganova> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/NataliiaiVaganova> ;
+    ns1:made <http://ceur-ws.org/Vol-1513/#paper-05> ;
+    ns1:name "Nataliia Vaganova" .
+
+<http://ceur-ws.org/Vol-1513/#SvyatoslaviI.iSolodushkin> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/SvyatoslaviI.iSolodushkin> ;
+    ns1:made <http://ceur-ws.org/Vol-1513/#paper-07> ;
+    ns1:name "Svyatoslav I. Solodushkin" .
+
+<http://ceur-ws.org/Vol-1513/#TimofeyiV.iRechkalov> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/TimofeyiV.iRechkalov> ;
+    ns1:made <http://ceur-ws.org/Vol-1513/#paper-04> ;
+    ns1:name "Timofey V. Rechkalov" .
+
+<http://ceur-ws.org/Vol-1513/#VladimiriGrishagin> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/VladimiriGrishagin> ;
+    ns1:made <http://ceur-ws.org/Vol-1513/#paper-09> ;
+    ns1:name "Vladimir Grishagin" .
+
+<http://ceur-ws.org/Vol-1513/#YaroslaviSalii> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/YaroslaviSalii> ;
+    ns1:made <http://ceur-ws.org/Vol-1513/#paper-10> ;
+    ns1:name "Yaroslav Salii" .
+
+<http://ceur-ws.org/Vol-1513/#event> a ns5:WorkshopEvent ;
+    ns5:hasLocation <http://dbpedia.org/resource/Russia> ;
+    ns5:hasPart <http://ceur-ws.org/Vol-1513/#part-Ural-PDC> ;
+    ns5:isSubEventOf <http://ceur-ws.org/Vol-1513/#conf> ;
+    ns7:beginsAtDatetime "2015-11-17T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:endsAtDatetime "2015-11-17T00:00:00+00:00"^^xsd:dateTime ;
+    ns9:license "http://creativecommons.org/publicdomain/zero/1.0/" .
+
+<http://ceur-ws.org/Vol-1513/#AndreyiSozykin> a ns1:Person ;
+    ns2:place <http://dbpedia.org/resource/Russia> ;
+    ns6:affiliation "N.N. Krasovskii Institute of Mathematics and Mechanics, Ural Branch of the RAS" ;
+    ns3:sameAs <http://ceur-ws.org/persons/AndreyiSozykin> ;
+    ns1:made <http://ceur-ws.org/Vol-1513/#paper-14> ;
+    ns1:name "Andrey Sozykin" .
+
+<http://ceur-ws.org/Vol-1513/#paper-01> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1513/> ;
+    ns4:title "Join Execution Using Fragmented Columnar Indices on GPU and MIC" ;
+    ns2:endPage 10 ;
+    ns2:numPages 10 ;
+    ns2:startPage 1 ;
+    ns6:author <http://ceur-ws.org/Vol-1513/#ElenaiV.iIvanova> .
+
+<http://ceur-ws.org/Vol-1513/#paper-02> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1513/> ;
+    ns4:title "Learning Parallel Computations with ParaLab" ;
+    ns2:endPage 20 ;
+    ns2:numPages 10 ;
+    ns2:startPage 11 ;
+    ns6:author <http://ceur-ws.org/Vol-1513/#EvgeniyiKozinov> .
+
+<http://ceur-ws.org/Vol-1513/#paper-03> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1513/> ;
+    ns4:title "Microservices Validation: Methodology and Implementation" ;
+    ns2:endPage 28 ;
+    ns2:numPages 8 ;
+    ns2:startPage 21 ;
+    ns6:author <http://ceur-ws.org/Vol-1513/#DmitryiSavchenko> .
+
+<http://ceur-ws.org/Vol-1513/#paper-04> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1513/> ;
+    ns4:title "Partition Around Medoids Clustering on the Intel Xeon Phi Many-core Coprocessor" ;
+    ns2:endPage 41 ;
+    ns2:numPages 13 ;
+    ns2:startPage 29 ;
+    ns6:author <http://ceur-ws.org/Vol-1513/#TimofeyiV.iRechkalov> .
+
+<http://ceur-ws.org/Vol-1513/#paper-05> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1513/> ;
+    ns4:title "Parallel Splitting and Decomposition Method for Computations of Heat Distribution in Permafrost" ;
+    ns2:endPage 49 ;
+    ns2:numPages 8 ;
+    ns2:startPage 42 ;
+    ns6:author <http://ceur-ws.org/Vol-1513/#NataliiaiVaganova> .
+
+<http://ceur-ws.org/Vol-1513/#paper-06> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1513/> ;
+    ns4:title "CUDA Parallel Algorithms for Forward and Inverse Structural Gravity Problems" ;
+    ns2:endPage 56 ;
+    ns2:numPages 7 ;
+    ns2:startPage 50 ;
+    ns6:author <http://ceur-ws.org/Vol-1513/#AlexanderiTsidaev> .
+
+<http://ceur-ws.org/Vol-1513/#paper-07> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1513/> ;
+    ns4:title "A Parallel Algorithm for Solving the Advection Equation with a Retarded Argument" ;
+    ns2:endPage 66 ;
+    ns2:numPages 10 ;
+    ns2:startPage 57 ;
+    ns6:author <http://ceur-ws.org/Vol-1513/#SvyatoslaviI.iSolodushkin> .
+
+<http://ceur-ws.org/Vol-1513/#paper-08> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1513/> ;
+    ns4:title "An HPC-Based Approach to Study Living System Computational Model Parameter Dependency" ;
+    ns2:endPage 74 ;
+    ns2:numPages 8 ;
+    ns2:startPage 67 ;
+    ns6:author <http://ceur-ws.org/Vol-1513/#KonstantiniUshenin> .
+
+<http://ceur-ws.org/Vol-1513/#paper-09> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1513/> ;
+    ns4:title "Multidimensional Constrained Global Optimization in Domains with Computable Boundaries" ;
+    ns2:endPage 84 ;
+    ns2:numPages 10 ;
+    ns2:startPage 75 ;
+    ns6:author <http://ceur-ws.org/Vol-1513/#VladimiriGrishagin> .
+
+<http://ceur-ws.org/Vol-1513/#paper-10> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1513/> ;
+    ns4:title "Restricted Dynamic Programming Heuristic for Precedence Constrained Bottleneck Generalized TSP" ;
+    ns2:endPage 108 ;
+    ns2:numPages 24 ;
+    ns2:startPage 85 ;
+    ns6:author <http://ceur-ws.org/Vol-1513/#YaroslaviSalii> .
+
+<http://ceur-ws.org/Vol-1513/#paper-11> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1513/> ;
+    ns4:title "Analysis of the Efficiency PETSc and PETIGA Libraries in Solving the Problem of Crystal Growth" ;
+    ns2:endPage 122 ;
+    ns2:numPages 14 ;
+    ns2:startPage 109 ;
+    ns6:author <http://ceur-ws.org/Vol-1513/#IlyaiStarodumov> .
+
+<http://ceur-ws.org/Vol-1513/#paper-12> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1513/> ;
+    ns4:title "Specialized Web Portal for Solving Problems on Multiprocessor Computing Systems" ;
+    ns2:endPage 129 ;
+    ns2:numPages 7 ;
+    ns2:startPage 123 ;
+    ns6:author <http://ceur-ws.org/Vol-1513/#ElenaiN.iAkimova> .
+
+<http://ceur-ws.org/Vol-1513/#paper-13> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1513/> ;
+    ns4:title "The Problem of Scheduling for the Linear Section of a Single-Track Railway with Independent Edges Orientations" ;
+    ns2:endPage 136 ;
+    ns2:numPages 7 ;
+    ns2:startPage 130 ;
+    ns6:author <http://ceur-ws.org/Vol-1513/#ElenaiN.iAkimova> .
+
+<http://ceur-ws.org/Vol-1513/#paper-14> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1513/> ;
+    ns4:title "Processing Large Amounts of Images on Hadoop with OpenCV" ;
+    ns2:endPage 143 ;
+    ns2:numPages 7 ;
+    ns2:startPage 137 ;
+    ns6:author <http://ceur-ws.org/Vol-1513/#AndreyiSozykin> .
+
+<http://ceur-ws.org/Vol-1513/#ElenaiN.iAkimova> a ns1:Person ;
+    ns2:place <http://dbpedia.org/resource/Russia> ;
+    ns6:affiliation "N.N. Krasovskii Institute of Mathematics and Mechanics, Ural Branch of the RAS" ;
+    ns3:sameAs <http://ceur-ws.org/persons/ElenaiN.iAkimova> ;
+    ns1:made <http://ceur-ws.org/Vol-1513/#paper-12>,
+        <http://ceur-ws.org/Vol-1513/#paper-13> ;
+    ns1:name "Elena N. Akimova" .
+
+<http://ceur-ws.org/Vol-1513/> a ns5:Proceedings ;
+    ns5:hasPart <http://ceur-ws.org/Vol-1513/#paper-01>,
+        <http://ceur-ws.org/Vol-1513/#paper-02>,
+        <http://ceur-ws.org/Vol-1513/#paper-03>,
+        <http://ceur-ws.org/Vol-1513/#paper-04>,
+        <http://ceur-ws.org/Vol-1513/#paper-05>,
+        <http://ceur-ws.org/Vol-1513/#paper-06>,
+        <http://ceur-ws.org/Vol-1513/#paper-07>,
+        <http://ceur-ws.org/Vol-1513/#paper-08>,
+        <http://ceur-ws.org/Vol-1513/#paper-09>,
+        <http://ceur-ws.org/Vol-1513/#paper-10>,
+        <http://ceur-ws.org/Vol-1513/#paper-11>,
+        <http://ceur-ws.org/Vol-1513/#paper-12>,
+        <http://ceur-ws.org/Vol-1513/#paper-13>,
+        <http://ceur-ws.org/Vol-1513/#paper-14> ;
+    ns8:issued "2015-12-03T00:00:00+00:00"^^xsd:dateTime ;
+    ns2:presentedAt <http://ceur-ws.org/Vol-1513/#event> ;
+    ns6:editor <http://ceur-ws.org/Vol-1513/#AndreyiSozykin>,
         <http://ceur-ws.org/Vol-1513/#DmitryiUstalov>,
-        <http://ceur-ws.org/Vol-1513/#ElenaiAkimova> .
-
-<http://ceur-ws.org/Vol-1513/#AndreyiSozykin> a ns3:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/AndreyiSozykin> ;
-    ns3:name "Andrey Sozykin" .
-
-<http://ceur-ws.org/Vol-1513/#DmitryiUstalov> a ns3:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/DmitryiUstalov> ;
-    ns3:name "Dmitry Ustalov" .
-
-<http://ceur-ws.org/Vol-1513/#ElenaiAkimova> a ns3:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/ElenaiAkimova> ;
-    ns3:name "Elena Akimova" .
-
-<http://ceur-ws.org/Vol-1513/#event> a ns7:WorkshopEvent ;
-    ns7:hasLocation <http://dbpedia.org/resource/Russia> ;
-    ns7:hasPart <http://ceur-ws.org/Vol-1513/#part-ws> ;
-    ns7:isSubEventOf <http://ceur-ws.org/Vol-1513/#conf> ;
-    ns6:beginsAtDatetime "2015-11-17T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:endsAtDatetime "2015-11-17T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:license "http://creativecommons.org/publicdomain/zero/1.0/" .
+        <http://ceur-ws.org/Vol-1513/#ElenaiN.iAkimova> .
 

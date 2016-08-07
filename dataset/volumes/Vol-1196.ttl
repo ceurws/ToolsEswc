@@ -1,40 +1,682 @@
-@prefix ns1: <http://xmlns.com/foaf/0.1/> .
-@prefix ns2: <http://purl.org/dc/elements/1.1/> .
-@prefix ns3: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns4: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns5: <http://www.w3.org/2002/07/owl#> .
-@prefix ns6: <http://purl.org/ontology/bibo/#> .
-@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns1: <http://www.w3.org/2002/07/owl#> .
+@prefix ns2: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns3: <http://purl.org/ontology/bibo/#> .
+@prefix ns4: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns5: <http://xmlns.com/foaf/0.1/> .
+@prefix ns6: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns7: <http://purl.org/dc/elements/1.1/> .
 @prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns9: <http://purl.org/NET/c4dm/timeline.owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1196/> a ns4:Proceedings ;
-    ns8:issued "2014-07-25T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:presentedAt <http://ceur-ws.org/Vol-1196/#event> ;
-    ns3:editor <http://ceur-ws.org/Vol-1196/#DavidiCamacho>,
-        <http://ceur-ws.org/Vol-1196/#MarcoiAntonioiG%C3%B3meziMart%C3%ADn>,
+<http://ceur-ws.org/Vol-1196/#AlejandroiCatala> a ns5:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/AlejandroiCatala> ;
+    ns5:made <http://ceur-ws.org/Vol-1196/#paper21> ;
+    ns5:name "Alejandro Catala" .
+
+<http://ceur-ws.org/Vol-1196/#AlejandroiGutierreziAlcoba> a ns5:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/AlejandroiGutierreziAlcoba> ;
+    ns5:made <http://ceur-ws.org/Vol-1196/#paper20> ;
+    ns5:name "Alejandro Gutierrez Alcoba" .
+
+<http://ceur-ws.org/Vol-1196/#AlejandroiRosa-Pujaz%C3%B3n> a ns5:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/AlejandroiRosa-Pujaz%C3%B3n> ;
+    ns5:made <http://ceur-ws.org/Vol-1196/#paper1> ;
+    ns5:name "Alejandro Rosa-Pujazón" .
+
+<http://ceur-ws.org/Vol-1196/#AnaiIllanas> a ns5:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/AnaiIllanas> ;
+    ns5:made <http://ceur-ws.org/Vol-1196/#paper2> ;
+    ns5:name "Ana Illanas" .
+
+<http://ceur-ws.org/Vol-1196/#AnaiM.iBarbancho> a ns5:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/AnaiM.iBarbancho> ;
+    ns5:made <http://ceur-ws.org/Vol-1196/#paper1> ;
+    ns5:name "Ana M. Barbancho" .
+
+<http://ceur-ws.org/Vol-1196/#Andr%C3%A9siRobertoiG%C3%B3meziVargas> a ns5:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/Andr%C3%A9siRobertoiG%C3%B3meziVargas> ;
+    ns5:made <http://ceur-ws.org/Vol-1196/#paper13> ;
+    ns5:name "Andrés Roberto Gómez Vargas" .
+
+<http://ceur-ws.org/Vol-1196/#AntonioiFern%C3%A1ndeziAres> a ns5:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/AntonioiFern%C3%A1ndeziAres> ;
+    ns5:made <http://ceur-ws.org/Vol-1196/#paper17> ;
+    ns5:name "Antonio Fernández Ares" .
+
+<http://ceur-ws.org/Vol-1196/#AntonioiGonzalez-Pardo> a ns5:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/AntonioiGonzalez-Pardo> ;
+    ns5:made <http://ceur-ws.org/Vol-1196/#paper7> ;
+    ns5:name "Antonio Gonzalez-Pardo" .
+
+<http://ceur-ws.org/Vol-1196/#AntonioiRodr%C3%ADguez-Ben%C3%ADtez> a ns5:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/AntonioiRodr%C3%ADguez-Ben%C3%ADtez> ;
+    ns5:made <http://ceur-ws.org/Vol-1196/#paper10> ;
+    ns5:name "Antonio Rodríguez-Benítez" .
+
+<http://ceur-ws.org/Vol-1196/#CarlosiCottaiPorras> a ns5:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/CarlosiCottaiPorras> ;
+    ns5:made <http://ceur-ws.org/Vol-1196/#paper18> ;
+    ns5:name "Carlos Cotta Porras" .
+
+<http://ceur-ws.org/Vol-1196/#CarlosiVillagra> a ns5:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/CarlosiVillagra> ;
+    ns5:made <http://ceur-ws.org/Vol-1196/#paper2> ;
+    ns5:name "Carlos Villagra" .
+
+<http://ceur-ws.org/Vol-1196/#CarmeiMangiron> a ns5:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/CarmeiMangiron> ;
+    ns5:made <http://ceur-ws.org/Vol-1196/#paper22> ;
+    ns5:name "Carme Mangiron" .
+
+<http://ceur-ws.org/Vol-1196/#CristinaiBotella> a ns5:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/CristinaiBotella> ;
+    ns5:made <http://ceur-ws.org/Vol-1196/#paper23> ;
+    ns5:name "Cristina Botella" .
+
+<http://ceur-ws.org/Vol-1196/#DianaiCastilla> a ns5:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/DianaiCastilla> ;
+    ns5:made <http://ceur-ws.org/Vol-1196/#paper23> ;
+    ns5:name "Diana Castilla" .
+
+<http://ceur-ws.org/Vol-1196/#ElenaiPerez> a ns5:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/ElenaiPerez> ;
+    ns5:made <http://ceur-ws.org/Vol-1196/#paper25> ;
+    ns5:name "Elena Perez" .
+
+<http://ceur-ws.org/Vol-1196/#EncarnaiSoto> a ns5:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/EncarnaiSoto> ;
+    ns5:made <http://ceur-ws.org/Vol-1196/#paper10> ;
+    ns5:name "Encarna Soto" .
+
+<http://ceur-ws.org/Vol-1196/#Fara%C3%B3niLlorens> a ns5:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/Fara%C3%B3niLlorens> ;
+    ns5:made <http://ceur-ws.org/Vol-1196/#paper2> ;
+    ns5:name "Faraón Llorens" .
+
+<http://ceur-ws.org/Vol-1196/#FedericoiLiberatore> a ns5:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/FedericoiLiberatore> ;
+    ns5:made <http://ceur-ws.org/Vol-1196/#paper12> ;
+    ns5:name "Federico Liberatore" .
+
+<http://ceur-ws.org/Vol-1196/#FernandoiGarcia-Sanjuan> a ns5:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/FernandoiGarcia-Sanjuan> ;
+    ns5:made <http://ceur-ws.org/Vol-1196/#paper21> ;
+    ns5:name "Fernando Garcia-Sanjuan" .
+
+<http://ceur-ws.org/Vol-1196/#FernandoiPalero> a ns5:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/FernandoiPalero> ;
+    ns5:made <http://ceur-ws.org/Vol-1196/#paper7> ;
+    ns5:name "Fernando Palero" .
+
+<http://ceur-ws.org/Vol-1196/#FranciscoiGallego> a ns5:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/FranciscoiGallego> ;
+    ns5:made <http://ceur-ws.org/Vol-1196/#paper2> ;
+    ns5:name "Francisco Gallego" .
+
+<http://ceur-ws.org/Vol-1196/#GonzaloiMilla-Mill%C3%A1n> a ns5:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/GonzaloiMilla-Mill%C3%A1n> ;
+    ns5:made <http://ceur-ws.org/Vol-1196/#paper11> ;
+    ns5:name "Gonzalo Milla-Millán" .
+
+<http://ceur-ws.org/Vol-1196/#H%C3%A9ctoriMen%C3%A9ndez> a ns5:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/H%C3%A9ctoriMen%C3%A9ndez> ;
+    ns5:made <http://ceur-ws.org/Vol-1196/#paper4> ;
+    ns5:name "Héctor Menéndez" .
+
+<http://ceur-ws.org/Vol-1196/#HelmutiPrendinger> a ns5:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/HelmutiPrendinger> ;
+    ns5:made <http://ceur-ws.org/Vol-1196/#paper5> ;
+    ns5:name "Helmut Prendinger" .
+
+<http://ceur-ws.org/Vol-1196/#IgnacioiMiralles> a ns5:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/IgnacioiMiralles> ;
+    ns5:made <http://ceur-ws.org/Vol-1196/#paper23> ;
+    ns5:name "Ignacio Miralles" .
+
+<http://ceur-ws.org/Vol-1196/#ImmaiBoada> a ns5:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/ImmaiBoada> ;
+    ns5:made <http://ceur-ws.org/Vol-1196/#paper10> ;
+    ns5:name "Imma Boada" .
+
+<http://ceur-ws.org/Vol-1196/#IsmaeliSagredo-Olivenza> a ns5:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/IsmaeliSagredo-Olivenza> ;
+    ns5:made <http://ceur-ws.org/Vol-1196/#paper19> ;
+    ns5:name "Ismael Sagredo-Olivenza" .
+
+<http://ceur-ws.org/Vol-1196/#JaimeiMunarriziOrtiz> a ns5:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/JaimeiMunarriziOrtiz> ;
+    ns5:made <http://ceur-ws.org/Vol-1196/#paper24> ;
+    ns5:name "Jaime Munarriz Ortiz" .
+
+<http://ceur-ws.org/Vol-1196/#JavieriJaen> a ns5:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/JavieriJaen> ;
+    ns5:made <http://ceur-ws.org/Vol-1196/#paper21> ;
+    ns5:name "Javier Jaen" .
+
+<http://ceur-ws.org/Vol-1196/#JoniArrambarri> a ns5:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/JoniArrambarri> ;
+    ns5:made <http://ceur-ws.org/Vol-1196/#paper8> ;
+    ns5:name "Jon Arrambarri" .
+
+<http://ceur-ws.org/Vol-1196/#JoseiLuisiGonzaleziSanchez> a ns5:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/JoseiLuisiGonzaleziSanchez> ;
+    ns5:made <http://ceur-ws.org/Vol-1196/#paper16> ;
+    ns5:name "Jose Luis Gonzalez Sanchez" .
+
+<http://ceur-ws.org/Vol-1196/#JuaniFdez-Olivares> a ns5:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/JuaniFdez-Olivares> ;
+    ns5:made <http://ceur-ws.org/Vol-1196/#paper11> ;
+    ns5:name "Juan Fdez-Olivares" .
+
+<http://ceur-ws.org/Vol-1196/#JuaniManueliGarc%C3%ADa-Gonz%C3%A1lez> a ns5:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/JuaniManueliGarc%C3%ADa-Gonz%C3%A1lez> ;
+    ns5:made <http://ceur-ws.org/Vol-1196/#paper10> ;
+    ns5:name "Juan Manuel García-González" .
+
+<http://ceur-ws.org/Vol-1196/#JuaniVargas> a ns5:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/JuaniVargas> ;
+    ns5:made <http://ceur-ws.org/Vol-1196/#paper6> ;
+    ns5:name "Juan Vargas" .
+
+<http://ceur-ws.org/Vol-1196/#LaraiS%C3%A1ncheziCoter%C3%B3n> a ns5:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/LaraiS%C3%A1ncheziCoter%C3%B3n> ;
+    ns5:made <http://ceur-ws.org/Vol-1196/#paper3> ;
+    ns5:name "Lara Sánchez Coterón" .
+
+<http://ceur-ws.org/Vol-1196/#LiliaiGarcia> a ns5:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/LiliaiGarcia> ;
+    ns5:made <http://ceur-ws.org/Vol-1196/#paper6> ;
+    ns5:name "Lilia Garcia" .
+
+<http://ceur-ws.org/Vol-1196/#LorenzoiJ.iTardon> a ns5:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/LorenzoiJ.iTardon> ;
+    ns5:made <http://ceur-ws.org/Vol-1196/#paper1> ;
+    ns5:name "Lorenzo J. Tardon" .
+
+<http://ceur-ws.org/Vol-1196/#LorenzoiJoseiTardoniGarcia> a ns5:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/LorenzoiJoseiTardoniGarcia> ;
+    ns5:made <http://ceur-ws.org/Vol-1196/#paper8> ;
+    ns5:name "Lorenzo Jose Tardon Garcia" .
+
+<http://ceur-ws.org/Vol-1196/#MarcelaiGenero> a ns5:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/MarcelaiGenero> ;
+    ns5:made <http://ceur-ws.org/Vol-1196/#paper6> ;
+    ns5:name "Marcela Genero" .
+
+<http://ceur-ws.org/Vol-1196/#MarielaiNogueira-Collazo> a ns5:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/MarielaiNogueira-Collazo> ;
+    ns5:made <http://ceur-ws.org/Vol-1196/#paper18> ;
+    ns5:name "Mariela Nogueira-Collazo" .
+
+<http://ceur-ws.org/Vol-1196/#MarioiPiattini> a ns5:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/MarioiPiattini> ;
+    ns5:made <http://ceur-ws.org/Vol-1196/#paper6> ;
+    ns5:name "Mario Piattini" .
+
+<http://ceur-ws.org/Vol-1196/#MilaniMagdics> a ns5:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/MilaniMagdics> ;
+    ns5:made <http://ceur-ws.org/Vol-1196/#paper8> ;
+    ns5:name "Milan Magdics" .
+
+<http://ceur-ws.org/Vol-1196/#NahumiAlvarez> a ns5:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/NahumiAlvarez> ;
+    ns5:made <http://ceur-ws.org/Vol-1196/#paper5> ;
+    ns5:name "Nahum Alvarez" .
+
+<http://ceur-ws.org/Vol-1196/#NuriaiMedinaiMedina> a ns5:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/NuriaiMedinaiMedina> ;
+    ns5:made <http://ceur-ws.org/Vol-1196/#paper9> ;
+    ns5:name "Nuria Medina Medina" .
+
+<http://ceur-ws.org/Vol-1196/#PabloiAlejandroiFigueroaiForero> a ns5:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/PabloiAlejandroiFigueroaiForero> ;
+    ns5:made <http://ceur-ws.org/Vol-1196/#paper13> ;
+    ns5:name "Pablo Alejandro Figueroa Forero" .
+
+<http://ceur-ws.org/Vol-1196/#PabloiDelatorre> a ns5:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/PabloiDelatorre> ;
+    ns5:made <http://ceur-ws.org/Vol-1196/#paper15> ;
+    ns5:name "Pablo Delatorre" .
+
+<http://ceur-ws.org/Vol-1196/#PabloiGarc%C3%ADaiS%C3%A1nchez> a ns5:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/PabloiGarc%C3%ADaiS%C3%A1nchez> ;
+    ns5:made <http://ceur-ws.org/Vol-1196/#paper17> ;
+    ns5:name "Pablo García Sánchez" .
+
+<http://ceur-ws.org/Vol-1196/#PabloiGerv%C3%A1s> a ns5:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/PabloiGerv%C3%A1s> ;
+    ns5:made <http://ceur-ws.org/Vol-1196/#paper15> ;
+    ns5:name "Pablo Gervás" .
+
+<http://ceur-ws.org/Vol-1196/#PabloiMu%C3%B1oz> a ns5:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/PabloiMu%C3%B1oz> ;
+    ns5:made <http://ceur-ws.org/Vol-1196/#paper22> ;
+    ns5:name "Pablo Muñoz" .
+
+<http://ceur-ws.org/Vol-1196/#PatriciaiCompa%C3%B1> a ns5:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/PatriciaiCompa%C3%B1> ;
+    ns5:made <http://ceur-ws.org/Vol-1196/#paper2> ;
+    ns5:name "Patricia Compañ" .
+
+<http://ceur-ws.org/Vol-1196/#PilariOrero> a ns5:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/PilariOrero> ;
+    ns5:made <http://ceur-ws.org/Vol-1196/#paper22> ;
+    ns5:name "Pilar Orero" .
+
+<http://ceur-ws.org/Vol-1196/#RafaeliMolina> a ns5:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/RafaeliMolina> ;
+    ns5:made <http://ceur-ws.org/Vol-1196/#paper2> ;
+    ns5:name "Rafael Molina" .
+
+<http://ceur-ws.org/Vol-1196/#RafaeliVindel> a ns5:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/RafaeliVindel> ;
+    ns5:made <http://ceur-ws.org/Vol-1196/#paper4> ;
+    ns5:name "Rafael Vindel" .
+
+<http://ceur-ws.org/Vol-1196/#RauliLaraiCabrera> a ns5:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/RauliLaraiCabrera> ;
+    ns5:made <http://ceur-ws.org/Vol-1196/#paper20> ;
+    ns5:name "Raul Lara Cabrera" .
+
+<http://ceur-ws.org/Vol-1196/#RosanaiSatorre> a ns5:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/RosanaiSatorre> ;
+    ns5:made <http://ceur-ws.org/Vol-1196/#paper2> ;
+    ns5:name "Rosana Satorre" .
+
+<http://ceur-ws.org/Vol-1196/#RubeniJesusiGarciaiHernandez> a ns5:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/RubeniJesusiGarciaiHernandez> ;
+    ns5:made <http://ceur-ws.org/Vol-1196/#paper8> ;
+    ns5:name "Ruben Jesus Garcia Hernandez" .
+
+<http://ceur-ws.org/Vol-1196/#Sebasti%C3%A1niGiliParga> a ns5:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/Sebasti%C3%A1niGiliParga> ;
+    ns5:made <http://ceur-ws.org/Vol-1196/#paper13> ;
+    ns5:name "Sebastián Gil Parga" .
+
+<http://ceur-ws.org/Vol-1196/#VoravikaiWattanasoontorn> a ns5:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/VoravikaiWattanasoontorn> ;
+    ns5:made <http://ceur-ws.org/Vol-1196/#paper10> ;
+    ns5:name "Voravika Wattanasoontorn" .
+
+<http://ceur-ws.org/Vol-1196/#event> a ns2:WorkshopEvent ;
+    ns2:hasLocation <http://dbpedia.org/resource/Spain> ;
+    ns2:hasPart <http://ceur-ws.org/Vol-1196/#part-CoSECivi> ;
+    ns2:isSubEventOf <http://ceur-ws.org/Vol-1196/#conf> ;
+    ns9:beginsAtDatetime "2014-06-24T00:00:00+00:00"^^xsd:dateTime ;
+    ns9:endsAtDatetime "2014-06-24T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:license "http://choosealicense.com/licenses/no-license/" .
+
+<http://ceur-ws.org/Vol-1196/#AntonioiJ.iFern%C3%A1ndez-Leiva> a ns5:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/AntonioiJ.iFern%C3%A1ndez-Leiva> ;
+    ns5:made <http://ceur-ws.org/Vol-1196/#paper18>,
+        <http://ceur-ws.org/Vol-1196/#paper20> ;
+    ns5:name "Antonio J. Fernández-Leiva" .
+
+<http://ceur-ws.org/Vol-1196/#AntonioiMora> a ns5:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/AntonioiMora> ;
+    ns5:made <http://ceur-ws.org/Vol-1196/#paper12>,
+        <http://ceur-ws.org/Vol-1196/#paper17> ;
+    ns5:name "Antonio Mora" .
+
+<http://ceur-ws.org/Vol-1196/#IsabeliBarbancho> a ns5:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/IsabeliBarbancho> ;
+    ns5:made <http://ceur-ws.org/Vol-1196/#paper1>,
+        <http://ceur-ws.org/Vol-1196/#paper8> ;
+    ns5:name "Isabel Barbancho" .
+
+<http://ceur-ws.org/Vol-1196/#Jos%C3%A9iRafaeliL%C3%B3pez-Arcos> a ns5:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/Jos%C3%A9iRafaeliL%C3%B3pez-Arcos> ;
+    ns5:made <http://ceur-ws.org/Vol-1196/#paper14>,
+        <http://ceur-ws.org/Vol-1196/#paper9> ;
+    ns5:name "José Rafael López-Arcos" .
+
+<http://ceur-ws.org/Vol-1196/#JuaniJ.iMerelo> a ns5:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/JuaniJ.iMerelo> ;
+    ns5:made <http://ceur-ws.org/Vol-1196/#paper12>,
+        <http://ceur-ws.org/Vol-1196/#paper17> ;
+    ns5:name "Juan J. Merelo" .
+
+<http://ceur-ws.org/Vol-1196/#MarcoiAntonioiGomez-Mart%C3%ADn> a ns5:Person ;
+    ns4:affiliation "" ;
+    ns1:sameAs <http://ceur-ws.org/persons/MarcoiAntonioiGomez-Mart%C3%ADn> ;
+    ns5:made <http://ceur-ws.org/Vol-1196/#paper19> ;
+    ns5:name "Marco Antonio Gomez-Martín" .
+
+<http://ceur-ws.org/Vol-1196/#MateuiSbert> a ns5:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/MateuiSbert> ;
+    ns5:made <http://ceur-ws.org/Vol-1196/#paper10>,
+        <http://ceur-ws.org/Vol-1196/#paper8> ;
+    ns5:name "Mateu Sbert" .
+
+<http://ceur-ws.org/Vol-1196/#NataliaiPadilla-Zea> a ns5:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/NataliaiPadilla-Zea> ;
+    ns5:made <http://ceur-ws.org/Vol-1196/#paper14>,
+        <http://ceur-ws.org/Vol-1196/#paper9> ;
+    ns5:name "Natalia Padilla-Zea" .
+
+<http://ceur-ws.org/Vol-1196/#PatriciaiPaderewski> a ns5:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/PatriciaiPaderewski> ;
+    ns5:made <http://ceur-ws.org/Vol-1196/#paper14>,
+        <http://ceur-ws.org/Vol-1196/#paper9> ;
+    ns5:name "Patricia Paderewski" .
+
+<http://ceur-ws.org/Vol-1196/#PedroiAntonioiGonz%C3%A1leziCalero> a ns5:Person ;
+    ns4:affiliation "" ;
+    ns1:sameAs <http://ceur-ws.org/persons/PedroiAntonioiGonz%C3%A1leziCalero> ;
+    ns5:made <http://ceur-ws.org/Vol-1196/#paper19> ;
+    ns5:name "Pedro Antonio González Calero" .
+
+<http://ceur-ws.org/Vol-1196/#PedroiCastillo> a ns5:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/PedroiCastillo> ;
+    ns5:made <http://ceur-ws.org/Vol-1196/#paper12>,
+        <http://ceur-ws.org/Vol-1196/#paper17> ;
+    ns5:name "Pedro Castillo" .
+
+<http://ceur-ws.org/Vol-1196/#paper24> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1196/> ;
+    ns6:title "Las plataformas de desarrollo de videojuegos como nuevo modelo de espacio virtual" ;
+    ns3:endPage 248 ;
+    ns3:numPages 10 ;
+    ns3:startPage 239 ;
+    ns4:author <http://ceur-ws.org/Vol-1196/#JaimeiMunarriziOrtiz> .
+
+<http://ceur-ws.org/Vol-1196/#paper25> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1196/> ;
+    ns6:title "Gamification and performance: design challenges when using games to enable alternative ways of engaging with theatre" ;
+    ns3:endPage 257 ;
+    ns3:numPages 9 ;
+    ns3:startPage 249 ;
+    ns4:author <http://ceur-ws.org/Vol-1196/#ElenaiPerez> .
+
+<http://ceur-ws.org/Vol-1196/#paper3> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1196/> ;
+    ns6:title "El jugador como co-creador de experiencias: el caso de They Are." ;
+    ns3:endPage 33 ;
+    ns3:numPages 11 ;
+    ns3:startPage 23 ;
+    ns4:author <http://ceur-ws.org/Vol-1196/#LaraiS%C3%A1ncheziCoter%C3%B3n> .
+
+<http://ceur-ws.org/Vol-1196/#DavidiCamacho> a ns5:Person ;
+    ns4:affiliation "" ;
+    ns1:sameAs <http://ceur-ws.org/persons/DavidiCamacho> ;
+    ns5:made <http://ceur-ws.org/Vol-1196/#paper4>,
+        <http://ceur-ws.org/Vol-1196/#paper7> ;
+    ns5:name "David Camacho" .
+
+<http://ceur-ws.org/Vol-1196/#FranciscoiLuisiGuti%C3%A9rreziVela> a ns5:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/FranciscoiLuisiGuti%C3%A9rreziVela> ;
+    ns5:made <http://ceur-ws.org/Vol-1196/#paper14>,
+        <http://ceur-ws.org/Vol-1196/#paper16>,
+        <http://ceur-ws.org/Vol-1196/#paper9> ;
+    ns5:name "Francisco Luis Gutiérrez Vela" .
+
+<http://ceur-ws.org/Vol-1196/#paper11> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1196/> ;
+    ns6:title "Separating the autonomous behaviors and coordination regimes of non-player characters" ;
+    ns3:endPage 110 ;
+    ns3:numPages 10 ;
+    ns3:startPage 101 ;
+    ns4:author <http://ceur-ws.org/Vol-1196/#GonzaloiMilla-Mill%C3%A1n>,
+        <http://ceur-ws.org/Vol-1196/#JuaniFdez-Olivares> .
+
+<http://ceur-ws.org/Vol-1196/#paper15> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1196/> ;
+    ns6:title "Un modelo para la evaluacion de la narrativa basada en partidas de ajedrez" ;
+    ns3:endPage 146 ;
+    ns3:numPages 10 ;
+    ns3:startPage 137 ;
+    ns4:author <http://ceur-ws.org/Vol-1196/#PabloiDelatorre>,
+        <http://ceur-ws.org/Vol-1196/#PabloiGerv%C3%A1s> .
+
+<http://ceur-ws.org/Vol-1196/#paper16> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1196/> ;
+    ns6:title "Jugabilidad como medida de calidad en el desarrollo de videojuegos" ;
+    ns3:endPage 158 ;
+    ns3:numPages 12 ;
+    ns3:startPage 147 ;
+    ns4:author <http://ceur-ws.org/Vol-1196/#FranciscoiLuisiGuti%C3%A9rreziVela>,
+        <http://ceur-ws.org/Vol-1196/#JoseiLuisiGonzaleziSanchez> .
+
+<http://ceur-ws.org/Vol-1196/#paper5> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1196/> ;
+    ns6:title "An authoring tool for modeling the narrative flow in a virtual training application" ;
+    ns3:endPage 51 ;
+    ns3:numPages 12 ;
+    ns3:startPage 40 ;
+    ns4:author <http://ceur-ws.org/Vol-1196/#HelmutiPrendinger>,
+        <http://ceur-ws.org/Vol-1196/#NahumiAlvarez> .
+
+<http://ceur-ws.org/Vol-1196/#paper13> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1196/> ;
+    ns6:title "DE.Vi.C.E: Un evento de aprendizaje y desarrollo colaborativo de videojuegos" ;
+    ns3:endPage 126 ;
+    ns3:numPages 10 ;
+    ns3:startPage 117 ;
+    ns4:author <http://ceur-ws.org/Vol-1196/#Andr%C3%A9siRobertoiG%C3%B3meziVargas>,
+        <http://ceur-ws.org/Vol-1196/#PabloiAlejandroiFigueroaiForero>,
+        <http://ceur-ws.org/Vol-1196/#Sebasti%C3%A1niGiliParga> .
+
+<http://ceur-ws.org/Vol-1196/#paper18> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1196/> ;
+    ns6:title "Eryna: una herramienta de apoyo a la revolución de los videojuegos" ;
+    ns3:endPage 184 ;
+    ns3:numPages 12 ;
+    ns3:startPage 173 ;
+    ns4:author <http://ceur-ws.org/Vol-1196/#AntonioiJ.iFern%C3%A1ndez-Leiva>,
+        <http://ceur-ws.org/Vol-1196/#CarlosiCottaiPorras>,
+        <http://ceur-ws.org/Vol-1196/#MarielaiNogueira-Collazo> .
+
+<http://ceur-ws.org/Vol-1196/#paper19> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1196/> ;
+    ns6:title "Un modelo integrador de maquinas de estados y arboles de comportamiento para videojuegos" ;
+    ns3:endPage 198 ;
+    ns3:numPages 14 ;
+    ns3:startPage 185 ;
+    ns4:author <http://ceur-ws.org/Vol-1196/#IsmaeliSagredo-Olivenza>,
+        <http://ceur-ws.org/Vol-1196/#MarcoiAntonioiGomez-Mart%C3%ADn>,
         <http://ceur-ws.org/Vol-1196/#PedroiAntonioiGonz%C3%A1leziCalero> .
 
-<http://ceur-ws.org/Vol-1196/#DavidiCamacho> a ns1:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/DavidiCamacho> ;
-    ns1:name "David Camacho" .
+<http://ceur-ws.org/Vol-1196/#paper20> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1196/> ;
+    ns6:title "Generación automática de contenido para un nuevo juego basado en el problema de los tres cuerpos" ;
+    ns3:endPage 210 ;
+    ns3:numPages 12 ;
+    ns3:startPage 199 ;
+    ns4:author <http://ceur-ws.org/Vol-1196/#AlejandroiGutierreziAlcoba>,
+        <http://ceur-ws.org/Vol-1196/#AntonioiJ.iFern%C3%A1ndez-Leiva>,
+        <http://ceur-ws.org/Vol-1196/#RauliLaraiCabrera> .
 
-<http://ceur-ws.org/Vol-1196/#MarcoiAntonioiG%C3%B3meziMart%C3%ADn> a ns1:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/MarcoiAntonioiG%C3%B3meziMart%C3%ADn> ;
-    ns1:name "Marco Antonio Gómez Martín" .
+<http://ceur-ws.org/Vol-1196/#paper21> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1196/> ;
+    ns6:title "WeTab: hacia la construcción de entornos multi-superficie para juegos de sobremesa basados en tabletas" ;
+    ns3:endPage 220 ;
+    ns3:numPages 10 ;
+    ns3:startPage 211 ;
+    ns4:author <http://ceur-ws.org/Vol-1196/#AlejandroiCatala>,
+        <http://ceur-ws.org/Vol-1196/#FernandoiGarcia-Sanjuan>,
+        <http://ceur-ws.org/Vol-1196/#JavieriJaen> .
 
-<http://ceur-ws.org/Vol-1196/#PedroiAntonioiGonz%C3%A1leziCalero> a ns1:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/PedroiAntonioiGonz%C3%A1leziCalero> ;
-    ns1:name "Pedro Antonio González Calero" .
+<http://ceur-ws.org/Vol-1196/#paper22> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1196/> ;
+    ns6:title "La trayectoria de TransMedia Catalonia en el ámbito de los videojuegos: formación, investigación y transferencia" ;
+    ns3:endPage 229 ;
+    ns3:numPages 9 ;
+    ns3:startPage 221 ;
+    ns4:author <http://ceur-ws.org/Vol-1196/#CarmeiMangiron>,
+        <http://ceur-ws.org/Vol-1196/#PabloiMu%C3%B1oz>,
+        <http://ceur-ws.org/Vol-1196/#PilariOrero> .
 
-<http://ceur-ws.org/Vol-1196/#event> a ns4:WorkshopEvent ;
-    ns4:hasLocation <http://dbpedia.org/resource/Spain> ;
-    ns4:hasPart <http://ceur-ws.org/Vol-1196/#part-ws> ;
-    ns4:isSubEventOf <http://ceur-ws.org/Vol-1196/#conf> ;
-    ns7:beginsAtDatetime "2014-06-24T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:endsAtDatetime "2014-06-24T00:00:00+00:00"^^xsd:dateTime ;
-    ns2:license "http://choosealicense.com/licenses/no-license/" .
+<http://ceur-ws.org/Vol-1196/#paper23> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1196/> ;
+    ns6:title "Desarrollo de un entorno virtual para la inducción emocional" ;
+    ns3:endPage 238 ;
+    ns3:numPages 9 ;
+    ns3:startPage 230 ;
+    ns4:author <http://ceur-ws.org/Vol-1196/#CristinaiBotella>,
+        <http://ceur-ws.org/Vol-1196/#DianaiCastilla>,
+        <http://ceur-ws.org/Vol-1196/#IgnacioiMiralles> .
+
+<http://ceur-ws.org/Vol-1196/#paper4> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1196/> ;
+    ns6:title "Combinando series temporales y clustering para extraer perfiles evolutivos de jugadores" ;
+    ns3:endPage 39 ;
+    ns3:numPages 6 ;
+    ns3:startPage 34 ;
+    ns4:author <http://ceur-ws.org/Vol-1196/#DavidiCamacho>,
+        <http://ceur-ws.org/Vol-1196/#H%C3%A9ctoriMen%C3%A9ndez>,
+        <http://ceur-ws.org/Vol-1196/#RafaeliVindel> .
+
+<http://ceur-ws.org/Vol-1196/#paper7> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1196/> ;
+    ns6:title "Evaluación de modelos de jugadores mediante técnicas de clustering" ;
+    ns3:endPage 65 ;
+    ns3:numPages 8 ;
+    ns3:startPage 58 ;
+    ns4:author <http://ceur-ws.org/Vol-1196/#AntonioiGonzalez-Pardo>,
+        <http://ceur-ws.org/Vol-1196/#DavidiCamacho>,
+        <http://ceur-ws.org/Vol-1196/#FernandoiPalero> .
+
+<http://ceur-ws.org/Vol-1196/#paper1> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1196/> ;
+    ns6:title "Low-cost step aerobics system with virtual aerobics trainer" ;
+    ns3:endPage 10 ;
+    ns3:numPages 1 ;
+    ns3:startPage 10 ;
+    ns4:author <http://ceur-ws.org/Vol-1196/#AlejandroiRosa-Pujaz%C3%B3n>,
+        <http://ceur-ws.org/Vol-1196/#AnaiM.iBarbancho>,
+        <http://ceur-ws.org/Vol-1196/#IsabeliBarbancho>,
+        <http://ceur-ws.org/Vol-1196/#LorenzoiJ.iTardon> .
+
+<http://ceur-ws.org/Vol-1196/#paper12> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1196/> ;
+    ns6:title "Evolving Evil: optimizing flocking strategies through genetic algorithms for the ghost team in the game of Ms. Pac-Man" ;
+    ns3:endPage 116 ;
+    ns3:numPages 6 ;
+    ns3:startPage 111 ;
+    ns4:author <http://ceur-ws.org/Vol-1196/#AntonioiMora>,
+        <http://ceur-ws.org/Vol-1196/#FedericoiLiberatore>,
+        <http://ceur-ws.org/Vol-1196/#JuaniJ.iMerelo>,
+        <http://ceur-ws.org/Vol-1196/#PedroiCastillo> .
+
+<http://ceur-ws.org/Vol-1196/#paper14> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1196/> ;
+    ns6:title "Diseñando y analizando historias interactivas en el marco de los videojuegos educativos" ;
+    ns3:endPage 136 ;
+    ns3:numPages 10 ;
+    ns3:startPage 127 ;
+    ns4:author <http://ceur-ws.org/Vol-1196/#FranciscoiLuisiGuti%C3%A9rreziVela>,
+        <http://ceur-ws.org/Vol-1196/#Jos%C3%A9iRafaeliL%C3%B3pez-Arcos>,
+        <http://ceur-ws.org/Vol-1196/#NataliaiPadilla-Zea>,
+        <http://ceur-ws.org/Vol-1196/#PatriciaiPaderewski> .
+
+<http://ceur-ws.org/Vol-1196/#paper6> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1196/> ;
+    ns6:title "A systematic mapping study on serious game quality" ;
+    ns3:endPage 57 ;
+    ns3:numPages 6 ;
+    ns3:startPage 52 ;
+    ns4:author <http://ceur-ws.org/Vol-1196/#JuaniVargas>,
+        <http://ceur-ws.org/Vol-1196/#LiliaiGarcia>,
+        <http://ceur-ws.org/Vol-1196/#MarcelaiGenero>,
+        <http://ceur-ws.org/Vol-1196/#MarioiPiattini> .
+
+<http://ceur-ws.org/Vol-1196/#paper17> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1196/> ;
+    ns6:title "Designing competitive bots for a real time strategy game using genetic programming" ;
+    ns3:endPage 172 ;
+    ns3:numPages 14 ;
+    ns3:startPage 159 ;
+    ns4:author <http://ceur-ws.org/Vol-1196/#AntonioiFern%C3%A1ndeziAres>,
+        <http://ceur-ws.org/Vol-1196/#AntonioiMora>,
+        <http://ceur-ws.org/Vol-1196/#JuaniJ.iMerelo>,
+        <http://ceur-ws.org/Vol-1196/#PabloiGarc%C3%ADaiS%C3%A1nchez>,
+        <http://ceur-ws.org/Vol-1196/#PedroiCastillo> .
+
+<http://ceur-ws.org/Vol-1196/#paper9> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1196/> ;
+    ns6:title "Diseñando videojuegos para aprender de forma divertida: en busca del equilibrio perdido" ;
+    ns3:endPage 90 ;
+    ns3:numPages 13 ;
+    ns3:startPage 78 ;
+    ns4:author <http://ceur-ws.org/Vol-1196/#FranciscoiLuisiGuti%C3%A9rreziVela>,
+        <http://ceur-ws.org/Vol-1196/#Jos%C3%A9iRafaeliL%C3%B3pez-Arcos>,
+        <http://ceur-ws.org/Vol-1196/#NataliaiPadilla-Zea>,
+        <http://ceur-ws.org/Vol-1196/#NuriaiMedinaiMedina>,
+        <http://ceur-ws.org/Vol-1196/#PatriciaiPaderewski> .
+
+<http://ceur-ws.org/Vol-1196/#paper10> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1196/> ;
+    ns6:title "A game to relive Don Quixote's adventures" ;
+    ns3:endPage 100 ;
+    ns3:numPages 10 ;
+    ns3:startPage 91 ;
+    ns4:author <http://ceur-ws.org/Vol-1196/#AntonioiRodr%C3%ADguez-Ben%C3%ADtez>,
+        <http://ceur-ws.org/Vol-1196/#EncarnaiSoto>,
+        <http://ceur-ws.org/Vol-1196/#ImmaiBoada>,
+        <http://ceur-ws.org/Vol-1196/#JuaniManueliGarc%C3%ADa-Gonz%C3%A1lez>,
+        <http://ceur-ws.org/Vol-1196/#MateuiSbert>,
+        <http://ceur-ws.org/Vol-1196/#VoravikaiWattanasoontorn> .
+
+<http://ceur-ws.org/Vol-1196/#paper8> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1196/> ;
+    ns6:title "E-cecilia: implementation of a music game" ;
+    ns3:endPage 77 ;
+    ns3:numPages 12 ;
+    ns3:startPage 66 ;
+    ns4:author <http://ceur-ws.org/Vol-1196/#IsabeliBarbancho>,
+        <http://ceur-ws.org/Vol-1196/#JoniArrambarri>,
+        <http://ceur-ws.org/Vol-1196/#LorenzoiJoseiTardoniGarcia>,
+        <http://ceur-ws.org/Vol-1196/#MateuiSbert>,
+        <http://ceur-ws.org/Vol-1196/#MilaniMagdics>,
+        <http://ceur-ws.org/Vol-1196/#RubeniJesusiGarciaiHernandez> .
+
+<http://ceur-ws.org/Vol-1196/#paper2> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1196/> ;
+    ns6:title "�Puede un videojuego ayudarnos a predecir los resultados de aprendizaje?" ;
+    ns3:endPage 22 ;
+    ns3:numPages 12 ;
+    ns3:startPage 11 ;
+    ns4:author <http://ceur-ws.org/Vol-1196/#AnaiIllanas>,
+        <http://ceur-ws.org/Vol-1196/#CarlosiVillagra>,
+        <http://ceur-ws.org/Vol-1196/#Fara%C3%B3niLlorens>,
+        <http://ceur-ws.org/Vol-1196/#FranciscoiGallego>,
+        <http://ceur-ws.org/Vol-1196/#PatriciaiCompa%C3%B1>,
+        <http://ceur-ws.org/Vol-1196/#RafaeliMolina>,
+        <http://ceur-ws.org/Vol-1196/#RosanaiSatorre> .
+
+<http://ceur-ws.org/Vol-1196/> a ns2:Proceedings ;
+    ns2:hasPart <http://ceur-ws.org/Vol-1196/#paper1>,
+        <http://ceur-ws.org/Vol-1196/#paper10>,
+        <http://ceur-ws.org/Vol-1196/#paper11>,
+        <http://ceur-ws.org/Vol-1196/#paper12>,
+        <http://ceur-ws.org/Vol-1196/#paper13>,
+        <http://ceur-ws.org/Vol-1196/#paper14>,
+        <http://ceur-ws.org/Vol-1196/#paper15>,
+        <http://ceur-ws.org/Vol-1196/#paper16>,
+        <http://ceur-ws.org/Vol-1196/#paper17>,
+        <http://ceur-ws.org/Vol-1196/#paper18>,
+        <http://ceur-ws.org/Vol-1196/#paper19>,
+        <http://ceur-ws.org/Vol-1196/#paper2>,
+        <http://ceur-ws.org/Vol-1196/#paper20>,
+        <http://ceur-ws.org/Vol-1196/#paper21>,
+        <http://ceur-ws.org/Vol-1196/#paper22>,
+        <http://ceur-ws.org/Vol-1196/#paper23>,
+        <http://ceur-ws.org/Vol-1196/#paper24>,
+        <http://ceur-ws.org/Vol-1196/#paper25>,
+        <http://ceur-ws.org/Vol-1196/#paper3>,
+        <http://ceur-ws.org/Vol-1196/#paper4>,
+        <http://ceur-ws.org/Vol-1196/#paper5>,
+        <http://ceur-ws.org/Vol-1196/#paper6>,
+        <http://ceur-ws.org/Vol-1196/#paper7>,
+        <http://ceur-ws.org/Vol-1196/#paper8>,
+        <http://ceur-ws.org/Vol-1196/#paper9> ;
+    ns8:issued "2014-07-25T00:00:00+00:00"^^xsd:dateTime ;
+    ns3:presentedAt <http://ceur-ws.org/Vol-1196/#event> ;
+    ns4:editor <http://ceur-ws.org/Vol-1196/#DavidiCamacho>,
+        <http://ceur-ws.org/Vol-1196/#MarcoiAntonioiGomez-Mart%C3%ADn>,
+        <http://ceur-ws.org/Vol-1196/#PedroiAntonioiGonz%C3%A1leziCalero> .
 

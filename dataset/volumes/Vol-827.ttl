@@ -1,47 +1,47 @@
-@prefix ns1: <http://purl.org/ontology/bibo/#> .
-@prefix ns2: <http://xmlns.com/foaf/0.1/> .
-@prefix ns3: <http://purl.org/dc/elements/1.1/> .
-@prefix ns4: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns5: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns1: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns2: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns3: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns4: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns5: <http://xmlns.com/foaf/0.1/> .
 @prefix ns6: <http://www.w3.org/2002/07/owl#> .
-@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns7: <http://purl.org/dc/elements/1.1/> .
+@prefix ns8: <http://purl.org/ontology/bibo/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-827/> a ns4:Proceedings ;
-    ns8:issued "2012-01-26T00:00:00+00:00"^^xsd:dateTime ;
-    ns1:presentedAt <http://ceur-ws.org/Vol-827/#event> ;
-    ns5:editor <http://ceur-ws.org/Vol-827/#JettyiKleijn>,
+<http://ceur-ws.org/Vol-827/> a ns1:Proceedings ;
+    ns3:issued "2012-01-26T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:presentedAt <http://ceur-ws.org/Vol-827/#event> ;
+    ns4:editor <http://ceur-ws.org/Vol-827/#JettyiKleijn>,
         <http://ceur-ws.org/Vol-827/#Jo%C3%A3oiM.iFernandes>,
         <http://ceur-ws.org/Vol-827/#RicardoiJ.iMachado>,
         <http://ceur-ws.org/Vol-827/#SusannaiDonatelli> .
 
-<http://ceur-ws.org/Vol-827/#JettyiKleijn> a ns2:Person ;
+<http://ceur-ws.org/Vol-827/#JettyiKleijn> a ns5:Person ;
     ns6:sameAs <http://ceur-ws.org/persons/JettyiKleijn> ;
-    ns2:name "Jetty Kleijn" .
+    ns5:name "Jetty Kleijn" .
 
-<http://ceur-ws.org/Vol-827/#Jo%C3%A3oiM.iFernandes> a ns2:Person ;
+<http://ceur-ws.org/Vol-827/#Jo%C3%A3oiM.iFernandes> a ns5:Person ;
     ns6:sameAs <http://ceur-ws.org/persons/Jo%C3%A3oiM.iFernandes> ;
-    ns2:name "João M. Fernandes" .
+    ns5:name "João M. Fernandes" .
 
-<http://ceur-ws.org/Vol-827/#RicardoiJ.iMachado> a ns2:Person ;
+<http://ceur-ws.org/Vol-827/#RicardoiJ.iMachado> a ns5:Person ;
     ns6:sameAs <http://ceur-ws.org/persons/RicardoiJ.iMachado> ;
-    ns2:name "Ricardo J. Machado" .
+    ns5:name "Ricardo J. Machado" .
 
-<http://ceur-ws.org/Vol-827/#SusannaiDonatelli> a ns2:Person ;
+<http://ceur-ws.org/Vol-827/#SusannaiDonatelli> a ns5:Person ;
     ns6:sameAs <http://ceur-ws.org/persons/SusannaiDonatelli> ;
-    ns2:name "Susanna Donatelli" .
+    ns5:name "Susanna Donatelli" .
 
-<http://ceur-ws.org/Vol-827/#event> a ns4:WorkshopEvent ;
-    ns4:hasLocation <http://dbpedia.org/resource/Portugal> ;
-    ns4:hasPart <http://ceur-ws.org/Vol-827/#part-ACSD>,
+<http://ceur-ws.org/Vol-827/#event> a ns1:WorkshopEvent ;
+    ns1:hasLocation <http://dbpedia.org/resource/Portugal> ;
+    ns1:hasPart <http://ceur-ws.org/Vol-827/#part-ACSD>,
         <http://ceur-ws.org/Vol-827/#part-NETS>,
         <http://ceur-ws.org/Vol-827/#part-PETRI> ;
-    ns4:isSubEventOf <http://ceur-ws.org/Vol-827/#conf> ;
-    ns7:beginsAtDatetime "2010-06-01T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:endsAtDatetime "2010-06-01T00:00:00+00:00"^^xsd:dateTime ;
-    ns3:license "http://choosealicense.com/licenses/no-license/" .
+    ns1:isSubEventOf <http://ceur-ws.org/Vol-827/#conf> ;
+    ns2:beginsAtDatetime "2010-06-01T00:00:00+00:00"^^xsd:dateTime ;
+    ns2:endsAtDatetime "2010-06-01T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:license "http://choosealicense.com/licenses/no-license/" .
 

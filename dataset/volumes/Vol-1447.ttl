@@ -1,35 +1,192 @@
-@prefix ns1: <http://purl.org/ontology/bibo/#> .
-@prefix ns2: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns3: <http://www.w3.org/2002/07/owl#> .
-@prefix ns4: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns5: <http://purl.org/dc/elements/1.1/> .
-@prefix ns6: <http://xmlns.com/foaf/0.1/> .
-@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns8: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns1: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns2: <http://purl.org/ontology/bibo/#> .
+@prefix ns3: <http://xmlns.com/foaf/0.1/> .
+@prefix ns4: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns5: <http://www.w3.org/2002/07/owl#> .
+@prefix ns6: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns8: <http://purl.org/dc/elements/1.1/> .
+@prefix ns9: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1447/> a ns8:Proceedings ;
-    ns7:issued "2015-09-14T00:00:00+00:00"^^xsd:dateTime ;
-    ns1:presentedAt <http://ceur-ws.org/Vol-1447/#event> ;
-    ns4:editor <http://ceur-ws.org/Vol-1447/#%C3%96zg%C3%BCriL%C3%BCtf%C3%BCi%C3%96z%C3%A7ep>,
+<http://ceur-ws.org/Vol-1447/#AnahitaiNafissi> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/AnahitaiNafissi> ;
+    ns3:made <http://ceur-ws.org/Vol-1447/#paper3> ;
+    ns3:name "Anahita Nafissi" .
+
+<http://ceur-ws.org/Vol-1447/#Anni-YasminiTurhan> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/Anni-YasminiTurhan> ;
+    ns3:made <http://ceur-ws.org/Vol-1447/#paper5> ;
+    ns3:name "Anni-Yasmin Turhan" .
+
+<http://ceur-ws.org/Vol-1447/#DanhiLe-Phuoc> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/DanhiLe-Phuoc> ;
+    ns3:made <http://ceur-ws.org/Vol-1447/#paper1> ;
+    ns3:name "Danh Le-Phuoc" .
+
+<http://ceur-ws.org/Vol-1447/#DanielaiNicklas> a ns3:Person ;
+    ns1:affiliation "" ;
+    ns5:sameAs <http://ceur-ws.org/persons/DanielaiNicklas> ;
+    ns3:name "Daniela Nicklas" .
+
+<http://ceur-ws.org/Vol-1447/#ErikiZenker> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/ErikiZenker> ;
+    ns3:made <http://ceur-ws.org/Vol-1447/#paper5> ;
+    ns3:name "Erik Zenker" .
+
+<http://ceur-ws.org/Vol-1447/#HaraldiBeck> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/HaraldiBeck> ;
+    ns3:made <http://ceur-ws.org/Vol-1447/#paper2> ;
+    ns3:name "Harald Beck" .
+
+<http://ceur-ws.org/Vol-1447/#KamiliSokolski> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/KamiliSokolski> ;
+    ns3:made <http://ceur-ws.org/Vol-1447/#paper3> ;
+    ns3:name "Kamil Sokolski" .
+
+<http://ceur-ws.org/Vol-1447/#MauriceiRosenfeld> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/MauriceiRosenfeld> ;
+    ns3:made <http://ceur-ws.org/Vol-1447/#paper3> ;
+    ns3:name "Maurice Rosenfeld" .
+
+<http://ceur-ws.org/Vol-1447/#OliveriGries> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/OliveriGries> ;
+    ns3:made <http://ceur-ws.org/Vol-1447/#paper3> ;
+    ns3:name "Oliver Gries" .
+
+<http://ceur-ws.org/Vol-1447/#SebastianiWandelt> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/SebastianiWandelt> ;
+    ns3:made <http://ceur-ws.org/Vol-1447/#paper3> ;
+    ns3:name "Sebastian Wandelt" .
+
+<http://ceur-ws.org/Vol-1447/#ThomasiEiter> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/ThomasiEiter> ;
+    ns3:made <http://ceur-ws.org/Vol-1447/#paper2> ;
+    ns3:name "Thomas Eiter" .
+
+<http://ceur-ws.org/Vol-1447/#event> a ns4:WorkshopEvent ;
+    ns4:hasLocation <http://dbpedia.org/resource/Germany> ;
+    ns4:hasPart <http://ceur-ws.org/Vol-1447/#part-High-Level> ;
+    ns4:isSubEventOf <http://ceur-ws.org/Vol-1447/#conf> ;
+    ns7:beginsAtDatetime "2015-09-22T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:endsAtDatetime "2015-09-22T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:license "http://creativecommons.org/publicdomain/zero/1.0/" .
+
+<http://ceur-ws.org/Vol-1447/#ChristianiNeuenstadt> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/ChristianiNeuenstadt> ;
+    ns3:made <http://ceur-ws.org/Vol-1447/#paper4>,
+        <http://ceur-ws.org/Vol-1447/#paper6> ;
+    ns3:name "Christian Neuenstadt" .
+
+<http://ceur-ws.org/Vol-1447/#MinhiDao-Tran> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/MinhiDao-Tran> ;
+    ns3:made <http://ceur-ws.org/Vol-1447/#paper1>,
+        <http://ceur-ws.org/Vol-1447/#paper2> ;
+    ns3:name "Minh Dao-Tran" .
+
+<http://ceur-ws.org/Vol-1447/#ShortPapers> a ns4:SessionEvent ;
+    ns4:partOf <http://ceur-ws.org/Vol-1447/> ;
+    ns6:title "Short Papers" .
+
+<http://ceur-ws.org/Vol-1447/#%C3%96zg%C3%BCriL%C3%BCtf%C3%BCi%C3%96z%C3%A7ep> a ns3:Person ;
+    ns1:affiliation "" ;
+    ns5:sameAs <http://ceur-ws.org/persons/%C3%96zg%C3%BCriL%C3%BCtf%C3%BCi%C3%96z%C3%A7ep> ;
+    ns3:made <http://ceur-ws.org/Vol-1447/#paper4>,
+        <http://ceur-ws.org/Vol-1447/#paper6> ;
+    ns3:name "Özgür Lütfü Özçep" .
+
+<http://ceur-ws.org/Vol-1447/#RalfiM%C3%B6ller> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/RalfiM%C3%B6ller> ;
+    ns3:made <http://ceur-ws.org/Vol-1447/#paper3>,
+        <http://ceur-ws.org/Vol-1447/#paper4>,
+        <http://ceur-ws.org/Vol-1447/#paper6> ;
+    ns3:name "Ralf Möller" .
+
+<http://ceur-ws.org/Vol-1447/#paper1> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1447/> ;
+    ns6:title "Towards Enriching CQELS with Complex Event Processing and Path Navigation" ;
+    ns2:endPage 1 ;
+    ns2:numPages 1 ;
+    ns2:section <http://ceur-ws.org/Vol-1447/#LongPapers> ;
+    ns2:startPage 1 ;
+    ns1:author <http://ceur-ws.org/Vol-1447/#DanhiLe-Phuoc>,
+        <http://ceur-ws.org/Vol-1447/#MinhiDao-Tran> .
+
+<http://ceur-ws.org/Vol-1447/#paper5> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1447/> ;
+    ns6:title "Towards Temporal Fuzzy Query Answering on Stream-based Data" ;
+    ns2:endPage 55 ;
+    ns2:numPages 14 ;
+    ns2:section <http://ceur-ws.org/Vol-1447/#LongPapers> ;
+    ns2:startPage 42 ;
+    ns1:author <http://ceur-ws.org/Vol-1447/#Anni-YasminiTurhan>,
+        <http://ceur-ws.org/Vol-1447/#ErikiZenker> .
+
+<http://ceur-ws.org/Vol-1447/#paper2> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1447/> ;
+    ns6:title "Towards Comparing RDF Stream Processing Semantics" ;
+    ns2:endPage 14 ;
+    ns2:numPages 13 ;
+    ns2:section <http://ceur-ws.org/Vol-1447/#LongPapers> ;
+    ns2:startPage 2 ;
+    ns1:author <http://ceur-ws.org/Vol-1447/#HaraldiBeck>,
+        <http://ceur-ws.org/Vol-1447/#MinhiDao-Tran>,
+        <http://ceur-ws.org/Vol-1447/#ThomasiEiter> .
+
+<http://ceur-ws.org/Vol-1447/#paper4> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1447/> ;
+    ns6:title "Stream-temporal Querying with Ontologies" ;
+    ns2:endPage 41 ;
+    ns2:numPages 14 ;
+    ns2:section <http://ceur-ws.org/Vol-1447/#LongPapers> ;
+    ns2:startPage 28 ;
+    ns1:author <http://ceur-ws.org/Vol-1447/#%C3%96zg%C3%BCriL%C3%BCtf%C3%BCi%C3%96z%C3%A7ep>,
+        <http://ceur-ws.org/Vol-1447/#ChristianiNeuenstadt>,
+        <http://ceur-ws.org/Vol-1447/#RalfiM%C3%B6ller> .
+
+<http://ceur-ws.org/Vol-1447/#paper6> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1447/> ;
+    ns6:title "OBDA for Temporal Querying and Streams" ;
+    ns2:endPage 69 ;
+    ns2:numPages 14 ;
+    ns2:section <http://ceur-ws.org/Vol-1447/#ShortPapers> ;
+    ns2:startPage 56 ;
+    ns1:author <http://ceur-ws.org/Vol-1447/#%C3%96zg%C3%BCriL%C3%BCtf%C3%BCi%C3%96z%C3%A7ep>,
+        <http://ceur-ws.org/Vol-1447/#ChristianiNeuenstadt>,
+        <http://ceur-ws.org/Vol-1447/#RalfiM%C3%B6ller> .
+
+<http://ceur-ws.org/Vol-1447/#LongPapers> a ns4:SessionEvent ;
+    ns4:partOf <http://ceur-ws.org/Vol-1447/> ;
+    ns6:title "Long Papers" .
+
+<http://ceur-ws.org/Vol-1447/#paper3> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1447/> ;
+    ns6:title "Dealing Efficiently with Ontology-Enhanced Linked Data for Multimedia" ;
+    ns2:endPage 27 ;
+    ns2:numPages 13 ;
+    ns2:section <http://ceur-ws.org/Vol-1447/#LongPapers> ;
+    ns2:startPage 15 ;
+    ns1:author <http://ceur-ws.org/Vol-1447/#AnahitaiNafissi>,
+        <http://ceur-ws.org/Vol-1447/#KamiliSokolski>,
+        <http://ceur-ws.org/Vol-1447/#MauriceiRosenfeld>,
+        <http://ceur-ws.org/Vol-1447/#OliveriGries>,
+        <http://ceur-ws.org/Vol-1447/#RalfiM%C3%B6ller>,
+        <http://ceur-ws.org/Vol-1447/#SebastianiWandelt> .
+
+<http://ceur-ws.org/Vol-1447/> a ns4:Proceedings ;
+    ns4:hasPart <http://ceur-ws.org/Vol-1447/#paper1>,
+        <http://ceur-ws.org/Vol-1447/#paper2>,
+        <http://ceur-ws.org/Vol-1447/#paper3>,
+        <http://ceur-ws.org/Vol-1447/#paper4>,
+        <http://ceur-ws.org/Vol-1447/#paper5>,
+        <http://ceur-ws.org/Vol-1447/#paper6> ;
+    ns4:hasSession <http://ceur-ws.org/Vol-1447/#LongPapers>,
+        <http://ceur-ws.org/Vol-1447/#ShortPapers> ;
+    ns9:issued "2015-09-14T00:00:00+00:00"^^xsd:dateTime ;
+    ns2:presentedAt <http://ceur-ws.org/Vol-1447/#event> ;
+    ns1:editor <http://ceur-ws.org/Vol-1447/#%C3%96zg%C3%BCriL%C3%BCtf%C3%BCi%C3%96z%C3%A7ep>,
         <http://ceur-ws.org/Vol-1447/#DanielaiNicklas> .
-
-<http://ceur-ws.org/Vol-1447/#%C3%96zg%C3%BCriL%C3%BCtf%C3%BCi%C3%96z%C3%A7ep> a ns6:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/%C3%96zg%C3%BCriL%C3%BCtf%C3%BCi%C3%96z%C3%A7ep> ;
-    ns6:name "Özgür Lütfü Özçep" .
-
-<http://ceur-ws.org/Vol-1447/#DanielaiNicklas> a ns6:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/DanielaiNicklas> ;
-    ns6:name "Daniela Nicklas" .
-
-<http://ceur-ws.org/Vol-1447/#event> a ns8:WorkshopEvent ;
-    ns8:hasLocation <http://dbpedia.org/resource/Germany> ;
-    ns8:hasPart <http://ceur-ws.org/Vol-1447/#part-High-Level> ;
-    ns8:isSubEventOf <http://ceur-ws.org/Vol-1447/#conf> ;
-    ns2:beginsAtDatetime "2015-09-22T00:00:00+00:00"^^xsd:dateTime ;
-    ns2:endsAtDatetime "2015-09-22T00:00:00+00:00"^^xsd:dateTime ;
-    ns5:license "http://creativecommons.org/publicdomain/zero/1.0/" .
 

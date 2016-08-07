@@ -1,35 +1,199 @@
-@prefix ns1: <http://purl.org/ontology/bibo/#> .
-@prefix ns2: <http://www.w3.org/2002/07/owl#> .
-@prefix ns3: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns4: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns1: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns2: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns3: <http://purl.org/ontology/bibo/#> .
+@prefix ns4: <http://www.w3.org/2002/07/owl#> .
 @prefix ns5: <http://xmlns.com/foaf/0.1/> .
-@prefix ns6: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns7: <http://purl.org/dc/elements/1.1/> .
-@prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns6: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns9: <http://purl.org/dc/elements/1.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1158/> a ns4:Proceedings ;
-    ns3:issued "2014-06-24T00:00:00+00:00"^^xsd:dateTime ;
-    ns1:presentedAt <http://ceur-ws.org/Vol-1158/#event> ;
-    ns6:editor <http://ceur-ws.org/Vol-1158/#RiadhiRobbana>,
-        <http://ceur-ws.org/Vol-1158/#V%C3%A9roniqueiCortier> .
+<http://ceur-ws.org/Vol-1158/#AkramiIdani> a ns5:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/AkramiIdani> ;
+    ns5:made <http://ceur-ws.org/Vol-1158/#paper1> ;
+    ns5:name "Akram Idani" .
+
+<http://ceur-ws.org/Vol-1158/#AmiraiRadhouani> a ns5:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/AmiraiRadhouani> ;
+    ns5:made <http://ceur-ws.org/Vol-1158/#paper1> ;
+    ns5:name "Amira Radhouani" .
+
+<http://ceur-ws.org/Vol-1158/#AssiaiBeniShil> a ns5:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/AssiaiBeniShil> ;
+    ns5:made <http://ceur-ws.org/Vol-1158/#paper5> ;
+    ns5:name "Assia Ben Shil" .
+
+<http://ceur-ws.org/Vol-1158/#GurchetaniGrewal> a ns5:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/GurchetaniGrewal> ;
+    ns5:made <http://ceur-ws.org/Vol-1158/#invited> ;
+    ns5:name "Gurchetan Grewal" .
+
+<http://ceur-ws.org/Vol-1158/#HananeiHoumani> a ns5:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/HananeiHoumani> ;
+    ns5:made <http://ceur-ws.org/Vol-1158/#paper3> ;
+    ns5:name "Hanane Houmani" .
+
+<http://ceur-ws.org/Vol-1158/#JaouhariFattahi> a ns5:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/JaouhariFattahi> ;
+    ns5:made <http://ceur-ws.org/Vol-1158/#paper3> ;
+    ns5:name "Jaouhar Fattahi" .
+
+<http://ceur-ws.org/Vol-1158/#KaoutheriBlibech> a ns5:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/KaoutheriBlibech> ;
+    ns5:made <http://ceur-ws.org/Vol-1158/#paper5> ;
+    ns5:name "Kaouther Blibech" .
+
+<http://ceur-ws.org/Vol-1158/#KarimiDahmani> a ns5:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/KarimiDahmani> ;
+    ns5:made <http://ceur-ws.org/Vol-1158/#paper4> ;
+    ns5:name "Karim Dahmani" .
+
+<http://ceur-ws.org/Vol-1158/#LiquniChen> a ns5:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/LiquniChen> ;
+    ns5:made <http://ceur-ws.org/Vol-1158/#invited> ;
+    ns5:name "Liqun Chen" .
+
+<http://ceur-ws.org/Vol-1158/#MarkiRyan> a ns5:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/MarkiRyan> ;
+    ns5:made <http://ceur-ws.org/Vol-1158/#invited> ;
+    ns5:name "Mark Ryan" .
+
+<http://ceur-ws.org/Vol-1158/#MohamediMejri> a ns5:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/MohamediMejri> ;
+    ns5:made <http://ceur-ws.org/Vol-1158/#paper3> ;
+    ns5:name "Mohamed Mejri" .
+
+<http://ceur-ws.org/Vol-1158/#NarjesiBeniRajeb> a ns5:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/NarjesiBeniRajeb> ;
+    ns5:made <http://ceur-ws.org/Vol-1158/#paper1> ;
+    ns5:name "Narjes Ben Rajeb" .
 
 <http://ceur-ws.org/Vol-1158/#RiadhiRobbana> a ns5:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/RiadhiRobbana> ;
+    ns2:affiliation "" ;
+    ns4:sameAs <http://ceur-ws.org/persons/RiadhiRobbana> ;
     ns5:name "Riadh Robbana" .
 
+<http://ceur-ws.org/Vol-1158/#SamiiZhioua> a ns5:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/SamiiZhioua> ;
+    ns5:made <http://ceur-ws.org/Vol-1158/#paper2> ;
+    ns5:name "Sami Zhioua" .
+
 <http://ceur-ws.org/Vol-1158/#V%C3%A9roniqueiCortier> a ns5:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/V%C3%A9roniqueiCortier> ;
+    ns2:affiliation "" ;
+    ns4:sameAs <http://ceur-ws.org/persons/V%C3%A9roniqueiCortier> ;
     ns5:name "Véronique Cortier" .
 
-<http://ceur-ws.org/Vol-1158/#event> a ns4:WorkshopEvent ;
-    ns4:hasLocation <http://dbpedia.org/resource/Tunisia> ;
-    ns4:hasPart <http://ceur-ws.org/Vol-1158/#part-ws> ;
-    ns4:isSubEventOf <http://ceur-ws.org/Vol-1158/#conf> ;
-    ns8:beginsAtDatetime "2014-06-23T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:endsAtDatetime "2014-06-23T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:license "http://choosealicense.com/licenses/no-license/" .
+<http://ceur-ws.org/Vol-1158/#YvesiLedru> a ns5:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/YvesiLedru> ;
+    ns5:made <http://ceur-ws.org/Vol-1158/#paper1> ;
+    ns5:name "Yves Ledru" .
+
+<http://ceur-ws.org/Vol-1158/#event> a ns1:WorkshopEvent ;
+    ns1:hasLocation <http://dbpedia.org/resource/Tunisia> ;
+    ns1:hasPart <http://ceur-ws.org/Vol-1158/#part-FMS> ;
+    ns1:isSubEventOf <http://ceur-ws.org/Vol-1158/#conf> ;
+    ns7:beginsAtDatetime "2014-06-23T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:endsAtDatetime "2014-06-23T00:00:00+00:00"^^xsd:dateTime ;
+    ns9:license "http://choosealicense.com/licenses/no-license/" .
+
+<http://ceur-ws.org/Vol-1158/#MahjoubiLangar> a ns5:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/MahjoubiLangar> ;
+    ns5:made <http://ceur-ws.org/Vol-1158/#paper2>,
+        <http://ceur-ws.org/Vol-1158/#paper4> ;
+    ns5:name "Mahjoub Langar" .
+
+<http://ceur-ws.org/Vol-1158/#Session1ElectronicVoting> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-1158/> ;
+    ns6:title "Session 1: Electronic Voting" .
+
+<http://ceur-ws.org/Vol-1158/#Session2InformationSystemsSecurity> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-1158/> ;
+    ns6:title "Session 2: Information Systems Security" .
+
+<http://ceur-ws.org/Vol-1158/#paper2> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1158/> ;
+    ns6:title "Traffic Analysis of Web Browsers" ;
+    ns3:endPage 33 ;
+    ns3:numPages 14 ;
+    ns3:section <http://ceur-ws.org/Vol-1158/#Session2InformationSystemsSecurity> ;
+    ns3:startPage 20 ;
+    ns2:author <http://ceur-ws.org/Vol-1158/#MahjoubiLangar>,
+        <http://ceur-ws.org/Vol-1158/#SamiiZhioua> .
+
+<http://ceur-ws.org/Vol-1158/#paper4> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1158/> ;
+    ns6:title "Formal Enforcement of Security Policies on Choreographed Services" ;
+    ns3:endPage 67 ;
+    ns3:numPages 15 ;
+    ns3:section <http://ceur-ws.org/Vol-1158/#Session3SecurityProtocol> ;
+    ns3:startPage 53 ;
+    ns2:author <http://ceur-ws.org/Vol-1158/#KarimiDahmani>,
+        <http://ceur-ws.org/Vol-1158/#MahjoubiLangar> .
+
+<http://ceur-ws.org/Vol-1158/#paper5> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1158/> ;
+    ns6:title "A Timestamping Scheme with Eternal Security in the Bounded Storage Model" ;
+    ns3:endPage 79 ;
+    ns3:numPages 12 ;
+    ns3:section <http://ceur-ws.org/Vol-1158/#Session3SecurityProtocol> ;
+    ns3:startPage 68 ;
+    ns2:author <http://ceur-ws.org/Vol-1158/#AssiaiBeniShil>,
+        <http://ceur-ws.org/Vol-1158/#KaoutheriBlibech> .
+
+<http://ceur-ws.org/Vol-1158/#Session3SecurityProtocol> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-1158/> ;
+    ns6:title "Session 3: Security Protocol" .
+
+<http://ceur-ws.org/Vol-1158/#invited> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1158/> ;
+    ns6:title "Du-Vote: Remote Electronic Voting with Untrusted Computers" ;
+    ns3:endPage 4 ;
+    ns3:numPages 1 ;
+    ns3:section <http://ceur-ws.org/Vol-1158/#Session1ElectronicVoting> ;
+    ns3:startPage 4 ;
+    ns2:author <http://ceur-ws.org/Vol-1158/#GurchetaniGrewal>,
+        <http://ceur-ws.org/Vol-1158/#LiquniChen>,
+        <http://ceur-ws.org/Vol-1158/#MarkiRyan> .
+
+<http://ceur-ws.org/Vol-1158/#paper3> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1158/> ;
+    ns6:title "Secrecy by Witness Functions" ;
+    ns3:endPage 52 ;
+    ns3:numPages 19 ;
+    ns3:section <http://ceur-ws.org/Vol-1158/#Session3SecurityProtocol> ;
+    ns3:startPage 34 ;
+    ns2:author <http://ceur-ws.org/Vol-1158/#HananeiHoumani>,
+        <http://ceur-ws.org/Vol-1158/#JaouhariFattahi>,
+        <http://ceur-ws.org/Vol-1158/#MohamediMejri> .
+
+<http://ceur-ws.org/Vol-1158/#paper1> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1158/> ;
+    ns6:title "Extraction of Insider Attack Scenarios from a Formal Information System Modeling" ;
+    ns3:endPage 19 ;
+    ns3:numPages 15 ;
+    ns3:section <http://ceur-ws.org/Vol-1158/#Session2InformationSystemsSecurity> ;
+    ns3:startPage 5 ;
+    ns2:author <http://ceur-ws.org/Vol-1158/#AkramiIdani>,
+        <http://ceur-ws.org/Vol-1158/#AmiraiRadhouani>,
+        <http://ceur-ws.org/Vol-1158/#NarjesiBeniRajeb>,
+        <http://ceur-ws.org/Vol-1158/#YvesiLedru> .
+
+<http://ceur-ws.org/Vol-1158/> a ns1:Proceedings ;
+    ns1:hasPart <http://ceur-ws.org/Vol-1158/#invited>,
+        <http://ceur-ws.org/Vol-1158/#paper1>,
+        <http://ceur-ws.org/Vol-1158/#paper2>,
+        <http://ceur-ws.org/Vol-1158/#paper3>,
+        <http://ceur-ws.org/Vol-1158/#paper4>,
+        <http://ceur-ws.org/Vol-1158/#paper5> ;
+    ns1:hasSession <http://ceur-ws.org/Vol-1158/#Session1ElectronicVoting>,
+        <http://ceur-ws.org/Vol-1158/#Session2InformationSystemsSecurity>,
+        <http://ceur-ws.org/Vol-1158/#Session3SecurityProtocol> ;
+    ns8:issued "2014-06-24T00:00:00+00:00"^^xsd:dateTime ;
+    ns3:presentedAt <http://ceur-ws.org/Vol-1158/#event> ;
+    ns2:editor <http://ceur-ws.org/Vol-1158/#RiadhiRobbana>,
+        <http://ceur-ws.org/Vol-1158/#V%C3%A9roniqueiCortier> .
 

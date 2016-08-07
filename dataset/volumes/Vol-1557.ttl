@@ -1,40 +1,161 @@
-@prefix ns1: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns2: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns3: <http://xmlns.com/foaf/0.1/> .
-@prefix ns4: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns5: <http://www.w3.org/2002/07/owl#> .
-@prefix ns6: <http://purl.org/dc/elements/1.1/> .
-@prefix ns7: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns8: <http://purl.org/ontology/bibo/#> .
+@prefix ns1: <http://www.w3.org/2002/07/owl#> .
+@prefix ns2: <http://purl.org/ontology/bibo/#> .
+@prefix ns3: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns4: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns5: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns6: <http://xmlns.com/foaf/0.1/> .
+@prefix ns7: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns9: <http://purl.org/dc/elements/1.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1557/> a ns4:Proceedings ;
-    ns2:issued "2016-02-10T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:presentedAt <http://ceur-ws.org/Vol-1557/#event> ;
-    ns7:editor <http://ceur-ws.org/Vol-1557/#HeatheriBurte>,
-        <http://ceur-ws.org/Vol-1557/#MaryiHegarty>,
-        <http://ceur-ws.org/Vol-1557/#TomiiKauppinen> .
+<http://ceur-ws.org/Vol-1557/#AndreaiBallatore> a ns6:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/AndreaiBallatore> ;
+    ns6:made <http://ceur-ws.org/Vol-1557/#paper6> ;
+    ns6:name "Andrea Ballatore" .
 
-<http://ceur-ws.org/Vol-1557/#HeatheriBurte> a ns3:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/HeatheriBurte> ;
-    ns3:name "Heather Burte" .
+<http://ceur-ws.org/Vol-1557/#DianaiS.iSinton> a ns6:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/DianaiS.iSinton> ;
+    ns6:made <http://ceur-ws.org/Vol-1557/#paper7> ;
+    ns6:name "Diana S. Sinton" .
 
-<http://ceur-ws.org/Vol-1557/#MaryiHegarty> a ns3:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/MaryiHegarty> ;
-    ns3:name "Mary Hegarty" .
+<http://ceur-ws.org/Vol-1557/#FeliciaiCleper-Borkovi> a ns6:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/FeliciaiCleper-Borkovi> ;
+    ns6:made <http://ceur-ws.org/Vol-1557/#paper4> ;
+    ns6:name "Felicia Cleper-Borkovi" .
 
-<http://ceur-ws.org/Vol-1557/#TomiiKauppinen> a ns3:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/TomiiKauppinen> ;
-    ns3:name "Tomi Kauppinen" .
+<http://ceur-ws.org/Vol-1557/#MarinosiKavouras> a ns6:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/MarinosiKavouras> ;
+    ns6:made <http://ceur-ws.org/Vol-1557/#paper2> ;
+    ns6:name "Marinos Kavouras" .
 
-<http://ceur-ws.org/Vol-1557/#event> a ns4:WorkshopEvent ;
-    ns4:hasLocation <http://dbpedia.org/resource/United_States> ;
-    ns4:hasPart <http://ceur-ws.org/Vol-1557/#part-ws> ;
-    ns4:isSubEventOf <http://ceur-ws.org/Vol-1557/#conf> ;
-    ns1:beginsAtDatetime "2015-10-12T00:00:00+00:00"^^xsd:dateTime ;
-    ns1:endsAtDatetime "2015-10-12T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:license "http://creativecommons.org/publicdomain/zero/1.0/" .
+<http://ceur-ws.org/Vol-1557/#MichaeliN.iDeMers> a ns6:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/MichaeliN.iDeMers> ;
+    ns6:made <http://ceur-ws.org/Vol-1557/#paper5> ;
+    ns6:name "Michael N. DeMers" .
+
+<http://ceur-ws.org/Vol-1557/#ZoeiFalomir> a ns6:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/ZoeiFalomir> ;
+    ns6:made <http://ceur-ws.org/Vol-1557/#paper3> ;
+    ns6:name "Zoe Falomir" .
+
+<http://ceur-ws.org/Vol-1557/#event> a ns5:WorkshopEvent ;
+    ns5:hasLocation <http://dbpedia.org/resource/United_States> ;
+    ns5:hasPart <http://ceur-ws.org/Vol-1557/#part-TSTIP> ;
+    ns5:isSubEventOf <http://ceur-ws.org/Vol-1557/#conf> ;
+    ns4:beginsAtDatetime "2015-10-12T00:00:00+00:00"^^xsd:dateTime ;
+    ns4:endsAtDatetime "2015-10-12T00:00:00+00:00"^^xsd:dateTime ;
+    ns9:license "http://creativecommons.org/publicdomain/zero/1.0/" .
+
+<http://ceur-ws.org/Vol-1557/#metadataiincl.ibibliographicidataipublishediunder> a ns6:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/metadataiincl.ibibliographicidataipublishediunder> ;
+    ns6:made <http://ceur-ws.org/Vol-1557/#Vol-1557.zip> ;
+    ns6:name "metadata incl. bibliographic data published under" .
+
+<http://ceur-ws.org/Vol-1557/#2016-02-10%3AisubmittedibyiTomiiKauppinen> a ns6:Person ;
+    ns3:affiliation "" ;
+    ns1:sameAs <http://ceur-ws.org/persons/2016-02-10%3AisubmittedibyiTomiiKauppinen> ;
+    ns6:made <http://ceur-ws.org/Vol-1557/#Vol-1557.zip> ;
+    ns6:name "2016-02-10: submitted by Tomi Kauppinen" .
+
+<http://ceur-ws.org/Vol-1557/#HeatheriBurte> a ns6:Person ;
+    ns3:affiliation "" ;
+    ns1:sameAs <http://ceur-ws.org/persons/HeatheriBurte> ;
+    ns6:made <http://ceur-ws.org/Vol-1557/#paper1> ;
+    ns6:name "Heather Burte" .
+
+<http://ceur-ws.org/Vol-1557/#MaryiHegarty> a ns6:Person ;
+    ns3:affiliation "" ;
+    ns1:sameAs <http://ceur-ws.org/persons/MaryiHegarty> ;
+    ns6:made <http://ceur-ws.org/Vol-1557/#paper8> ;
+    ns6:name "Mary Hegarty" .
+
+<http://ceur-ws.org/Vol-1557/#paper1> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1557/> ;
+    ns7:title "Teaching Spatial Thinking from Interdisciplinary Perspective Workshop" ;
+    ns2:endPage 5 ;
+    ns2:numPages 5 ;
+    ns2:startPage 1 ;
+    ns3:author <http://ceur-ws.org/Vol-1557/#HeatheriBurte> .
+
+<http://ceur-ws.org/Vol-1557/#paper2> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1557/> ;
+    ns7:title "Crowdsourcing Spatial Thinking Resources across Disciplines and Educational Contexts" ;
+    ns2:endPage 10 ;
+    ns2:numPages 5 ;
+    ns2:startPage 6 ;
+    ns3:author <http://ceur-ws.org/Vol-1557/#MarinosiKavouras> .
+
+<http://ceur-ws.org/Vol-1557/#paper3> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1557/> ;
+    ns7:title "Teaching Spatial Thinking, Computer Vision, and Qualitative Reasoning Methods" ;
+    ns2:endPage 15 ;
+    ns2:numPages 5 ;
+    ns2:startPage 11 ;
+    ns3:author <http://ceur-ws.org/Vol-1557/#ZoeiFalomir> .
+
+<http://ceur-ws.org/Vol-1557/#paper4> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1557/> ;
+    ns7:title "Exploration of \"What-If\" Scenarios: A Prototype for Research Buildings at Stanford's School of Medicine" ;
+    ns2:endPage 20 ;
+    ns2:numPages 5 ;
+    ns2:startPage 16 ;
+    ns3:author <http://ceur-ws.org/Vol-1557/#FeliciaiCleper-Borkovi> .
+
+<http://ceur-ws.org/Vol-1557/#paper5> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1557/> ;
+    ns7:title "Teaching the Complexities of Map Boundaries" ;
+    ns2:endPage 24 ;
+    ns2:numPages 4 ;
+    ns2:startPage 21 ;
+    ns3:author <http://ceur-ws.org/Vol-1557/#MichaeliN.iDeMers> .
+
+<http://ceur-ws.org/Vol-1557/#paper6> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1557/> ;
+    ns7:title "Thinking about Spatial Computing" ;
+    ns2:endPage 28 ;
+    ns2:numPages 4 ;
+    ns2:startPage 25 ;
+    ns3:author <http://ceur-ws.org/Vol-1557/#AndreaiBallatore> .
+
+<http://ceur-ws.org/Vol-1557/#paper7> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1557/> ;
+    ns7:title "Spatial Thinking and GIS" ;
+    ns2:endPage 35 ;
+    ns2:numPages 7 ;
+    ns2:startPage 29 ;
+    ns3:author <http://ceur-ws.org/Vol-1557/#DianaiS.iSinton> .
+
+<http://ceur-ws.org/Vol-1557/#paper8> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1557/> ;
+    ns7:title "Teaching Spatial Thinking: Perspectives from Cognitive Psychology" ;
+    ns2:endPage 44 ;
+    ns2:numPages 9 ;
+    ns2:startPage 36 ;
+    ns3:author <http://ceur-ws.org/Vol-1557/#MaryiHegarty> .
+
+<http://ceur-ws.org/Vol-1557/#Vol-1557.zip> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1557/> ;
+    ns7:title "Complete proceedings in one ZIP file" ;
+    ns3:author <http://ceur-ws.org/Vol-1557/#2016-02-10%3AisubmittedibyiTomiiKauppinen>,
+        <http://ceur-ws.org/Vol-1557/#metadataiincl.ibibliographicidataipublishediunder> .
+
+<http://ceur-ws.org/Vol-1557/> a ns5:Proceedings ;
+    ns5:hasPart <http://ceur-ws.org/Vol-1557/#Vol-1557.zip>,
+        <http://ceur-ws.org/Vol-1557/#paper1>,
+        <http://ceur-ws.org/Vol-1557/#paper2>,
+        <http://ceur-ws.org/Vol-1557/#paper3>,
+        <http://ceur-ws.org/Vol-1557/#paper4>,
+        <http://ceur-ws.org/Vol-1557/#paper5>,
+        <http://ceur-ws.org/Vol-1557/#paper6>,
+        <http://ceur-ws.org/Vol-1557/#paper7>,
+        <http://ceur-ws.org/Vol-1557/#paper8> ;
+    ns8:issued "2016-02-10T00:00:00+00:00"^^xsd:dateTime ;
+    ns2:presentedAt <http://ceur-ws.org/Vol-1557/#event> ;
+    ns3:editor <http://ceur-ws.org/Vol-1557/#2016-02-10%3AisubmittedibyiTomiiKauppinen>,
+        <http://ceur-ws.org/Vol-1557/#HeatheriBurte>,
+        <http://ceur-ws.org/Vol-1557/#MaryiHegarty> .
 

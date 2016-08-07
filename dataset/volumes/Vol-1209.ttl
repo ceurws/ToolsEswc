@@ -1,40 +1,314 @@
-@prefix ns1: <http://xmlns.com/foaf/0.1/> .
-@prefix ns2: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns3: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns4: <http://purl.org/dc/elements/1.1/> .
-@prefix ns5: <http://www.w3.org/2002/07/owl#> .
-@prefix ns6: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns7: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns8: <http://purl.org/ontology/bibo/#> .
+@prefix ns1: <http://purl.org/ontology/bibo/#> .
+@prefix ns2: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns3: <http://xmlns.com/foaf/0.1/> .
+@prefix ns4: <http://www.w3.org/2002/07/owl#> .
+@prefix ns5: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns6: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns7: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns9: <http://purl.org/dc/elements/1.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1209/> a ns7:Proceedings ;
-    ns6:issued "2014-08-06T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:presentedAt <http://ceur-ws.org/Vol-1209/#event> ;
-    ns3:editor <http://ceur-ws.org/Vol-1209/#FelienneiHermans>,
-        <http://ceur-ws.org/Vol-1209/#PeteriSestof>,
+<http://ceur-ws.org/Vol-1209/#BasiJansen> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/BasiJansen> ;
+    ns3:made <http://ceur-ws.org/Vol-1209/#paper15> ;
+    ns3:name "Bas Jansen" .
+
+<http://ceur-ws.org/Vol-1209/#DanieliKulesz> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/DanieliKulesz> ;
+    ns3:made <http://ceur-ws.org/Vol-1209/#paper6> ;
+    ns3:name "Daniel Kulesz" .
+
+<http://ceur-ws.org/Vol-1209/#DimitrisiKolovos> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/DimitrisiKolovos> ;
+    ns3:made <http://ceur-ws.org/Vol-1209/#paper4> ;
+    ns3:name "Dimitris Kolovos" .
+
+<http://ceur-ws.org/Vol-1209/#J%C3%A1comeiCunha> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/J%C3%A1comeiCunha> ;
+    ns3:made <http://ceur-ws.org/Vol-1209/#paper10> ;
+    ns3:name "Jácome Cunha" .
+
+<http://ceur-ws.org/Vol-1209/#Jo%C3%A3oiSaraiva> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/Jo%C3%A3oiSaraiva> ;
+    ns3:made <http://ceur-ws.org/Vol-1209/#paper10> ;
+    ns3:name "João Saraiva" .
+
+<http://ceur-ws.org/Vol-1209/#JoaoiFernandes> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/JoaoiFernandes> ;
+    ns3:made <http://ceur-ws.org/Vol-1209/#paper10> ;
+    ns3:name "Joao Fernandes" .
+
+<http://ceur-ws.org/Vol-1209/#JoeriivaniVeen> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/JoeriivaniVeen> ;
+    ns3:made <http://ceur-ws.org/Vol-1209/#paper14> ;
+    ns3:name "Joeri van Veen" .
+
+<http://ceur-ws.org/Vol-1209/#JonasiDruedahliRask> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/JonasiDruedahliRask> ;
+    ns3:made <http://ceur-ws.org/Vol-1209/#paper8> ;
+    ns3:name "Jonas Druedahl Rask" .
+
+<http://ceur-ws.org/Vol-1209/#JorgeiMendes> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/JorgeiMendes> ;
+    ns3:made <http://ceur-ws.org/Vol-1209/#paper10> ;
+    ns3:name "Jorge Mendes" .
+
+<http://ceur-ws.org/Vol-1209/#NikosiMatragkas> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/NikosiMatragkas> ;
+    ns3:made <http://ceur-ws.org/Vol-1209/#paper4> ;
+    ns3:name "Nikos Matragkas" .
+
+<http://ceur-ws.org/Vol-1209/#PabloiPalma> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/PabloiPalma> ;
+    ns3:made <http://ceur-ws.org/Vol-1209/#paper7> ;
+    ns3:name "Pablo Palma" .
+
+<http://ceur-ws.org/Vol-1209/#RuiiPereira> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/RuiiPereira> ;
+    ns3:made <http://ceur-ws.org/Vol-1209/#paper10> ;
+    ns3:name "Rui Pereira" .
+
+<http://ceur-ws.org/Vol-1209/#SimoniEikelandiTimmermann> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/SimoniEikelandiTimmermann> ;
+    ns3:made <http://ceur-ws.org/Vol-1209/#paper8> ;
+    ns3:name "Simon Eikeland Timmermann" .
+
+<http://ceur-ws.org/Vol-1209/#SohoniRoy> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/SohoniRoy> ;
+    ns3:made <http://ceur-ws.org/Vol-1209/#paper9> ;
+    ns3:name "Sohon Roy" .
+
+<http://ceur-ws.org/Vol-1209/#event> a ns2:WorkshopEvent ;
+    ns2:hasLocation <http://dbpedia.org/resource/Netherlands> ;
+    ns2:hasPart <http://ceur-ws.org/Vol-1209/#part-SEMS> ;
+    ns2:isSubEventOf <http://ceur-ws.org/Vol-1209/#conf> ;
+    ns8:beginsAtDatetime "2014-07-02T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:endsAtDatetime "2014-07-02T00:00:00+00:00"^^xsd:dateTime ;
+    ns9:license "http://choosealicense.com/licenses/no-license/" .
+
+<http://ceur-ws.org/Vol-1209/#BirgitiHofer> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/BirgitiHofer> ;
+    ns3:made <http://ceur-ws.org/Vol-1209/#paper1>,
+        <http://ceur-ws.org/Vol-1209/#paper5> ;
+    ns3:name "Birgit Hofer" .
+
+<http://ceur-ws.org/Vol-1209/#DietmariJannach> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/DietmariJannach> ;
+    ns3:made <http://ceur-ws.org/Vol-1209/#paper1>,
+        <http://ceur-ws.org/Vol-1209/#paper2> ;
+    ns3:name "Dietmar Jannach" .
+
+<http://ceur-ws.org/Vol-1209/#FranziWotawa> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/FranziWotawa> ;
+    ns3:made <http://ceur-ws.org/Vol-1209/#paper1>,
+        <http://ceur-ws.org/Vol-1209/#paper5> ;
+    ns3:name "Franz Wotawa" .
+
+<http://ceur-ws.org/Vol-1209/#KostyantyniShchekotykhin> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/KostyantyniShchekotykhin> ;
+    ns3:made <http://ceur-ws.org/Vol-1209/#paper1>,
+        <http://ceur-ws.org/Vol-1209/#paper2> ;
+    ns3:name "Kostyantyn Shchekotykhin" .
+
+<http://ceur-ws.org/Vol-1209/#PeteriSestoft> a ns3:Person ;
+    ns6:affiliation "" ;
+    ns4:sameAs <http://ceur-ws.org/persons/PeteriSestoft> ;
+    ns3:made <http://ceur-ws.org/Vol-1209/#paper8> ;
+    ns3:name "Peter Sestoft" .
+
+<http://ceur-ws.org/Vol-1209/#RaymondiPanko> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/RaymondiPanko> ;
+    ns3:made <http://ceur-ws.org/Vol-1209/#paper13>,
+        <http://ceur-ws.org/Vol-1209/#paper3> ;
+    ns3:name "Raymond Panko" .
+
+<http://ceur-ws.org/Vol-1209/#RichardiF.iPaige> a ns3:Person ;
+    ns6:affiliation "" ;
+    ns4:sameAs <http://ceur-ws.org/persons/RichardiF.iPaige> ;
+    ns3:made <http://ceur-ws.org/Vol-1209/#paper4> ;
+    ns3:name "Richard F. Paige" .
+
+<http://ceur-ws.org/Vol-1209/#ThomasiLevine> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/ThomasiLevine> ;
+    ns3:made <http://ceur-ws.org/Vol-1209/#paper11>,
+        <http://ceur-ws.org/Vol-1209/#paper12> ;
+    ns3:name "Thomas Levine" .
+
+<http://ceur-ws.org/Vol-1209/#ThomasiSchmitz> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/ThomasiSchmitz> ;
+    ns3:made <http://ceur-ws.org/Vol-1209/#paper1>,
+        <http://ceur-ws.org/Vol-1209/#paper2> ;
+    ns3:name "Thomas Schmitz" .
+
+<http://ceur-ws.org/Vol-1209/#paper11> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1209/> ;
+    ns7:title "How Can We Figure Out What is Inside Thousands of Spreadsheets?" ;
+    ns1:endPage 38 ;
+    ns1:numPages 5 ;
+    ns1:startPage 34 ;
+    ns6:author <http://ceur-ws.org/Vol-1209/#ThomasiLevine> .
+
+<http://ceur-ws.org/Vol-1209/#paper12> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1209/> ;
+    ns7:title "Sheetmusic: Making Music From Spreadsheets" ;
+    ns1:endPage 42 ;
+    ns1:numPages 4 ;
+    ns1:startPage 39 ;
+    ns6:author <http://ceur-ws.org/Vol-1209/#ThomasiLevine> .
+
+<http://ceur-ws.org/Vol-1209/#paper13> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1209/> ;
+    ns7:title "Are We Overconfident in Our Understanding of Overconfidence?" ;
+    ns1:endPage 44 ;
+    ns1:numPages 2 ;
+    ns1:startPage 43 ;
+    ns6:author <http://ceur-ws.org/Vol-1209/#RaymondiPanko> .
+
+<http://ceur-ws.org/Vol-1209/#paper3> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1209/> ;
+    ns7:title "Improving Methodology in Spreadsheet Error Research" ;
+    ns1:endPage 8 ;
+    ns1:numPages 2 ;
+    ns1:startPage 7 ;
+    ns6:author <http://ceur-ws.org/Vol-1209/#RaymondiPanko> .
+
+<http://ceur-ws.org/Vol-1209/#paper6> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1209/> ;
+    ns7:title "A Spreadsheet Cell-Meaning Model for Testing" ;
+    ns1:endPage 17 ;
+    ns1:numPages 3 ;
+    ns1:startPage 15 ;
+    ns6:author <http://ceur-ws.org/Vol-1209/#DanieliKulesz> .
+
+<http://ceur-ws.org/Vol-1209/#paper7> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1209/> ;
+    ns7:title "SBBRENG: Spreadsheet Based Business Rule Engine" ;
+    ns1:endPage 22 ;
+    ns1:numPages 5 ;
+    ns1:startPage 18 ;
+    ns6:author <http://ceur-ws.org/Vol-1209/#PabloiPalma> .
+
+<http://ceur-ws.org/Vol-1209/#paper14> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1209/> ;
+    ns7:title "Anonymizing Spreadsheet Data and Metadata with AnonymousXL" ;
+    ns1:endPage 47 ;
+    ns1:numPages 3 ;
+    ns1:startPage 45 ;
+    ns6:author <http://ceur-ws.org/Vol-1209/#FelienneiHermans>,
+        <http://ceur-ws.org/Vol-1209/#JoeriivaniVeen> .
+
+<http://ceur-ws.org/Vol-1209/#paper15> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1209/> ;
+    ns7:title "Using a Visual Language to Create Better Spreadsheets" ;
+    ns1:endPage 51 ;
+    ns1:numPages 4 ;
+    ns1:startPage 48 ;
+    ns6:author <http://ceur-ws.org/Vol-1209/#BasiJansen>,
+        <http://ceur-ws.org/Vol-1209/#FelienneiHermans> .
+
+<http://ceur-ws.org/Vol-1209/#paper5> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1209/> ;
+    ns7:title "On the Usage of Dependency-based Models for Spreadsheet Debugging" ;
+    ns1:endPage 14 ;
+    ns1:numPages 4 ;
+    ns1:startPage 11 ;
+    ns6:author <http://ceur-ws.org/Vol-1209/#BirgitiHofer>,
+        <http://ceur-ws.org/Vol-1209/#FranziWotawa> .
+
+<http://ceur-ws.org/Vol-1209/#paper9> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1209/> ;
+    ns7:title "Dependence Tracing Techniques for Spreadsheets: An Investigation" ;
+    ns1:endPage 30 ;
+    ns1:numPages 4 ;
+    ns1:startPage 27 ;
+    ns6:author <http://ceur-ws.org/Vol-1209/#FelienneiHermans>,
+        <http://ceur-ws.org/Vol-1209/#SohoniRoy> .
+
+<http://ceur-ws.org/Vol-1209/#FelienneiHermans> a ns3:Person ;
+    ns6:affiliation "" ;
+    ns4:sameAs <http://ceur-ws.org/persons/FelienneiHermans> ;
+    ns3:made <http://ceur-ws.org/Vol-1209/#paper14>,
+        <http://ceur-ws.org/Vol-1209/#paper15>,
+        <http://ceur-ws.org/Vol-1209/#paper9> ;
+    ns3:name "Felienne Hermans" .
+
+<http://ceur-ws.org/Vol-1209/#paper2> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1209/> ;
+    ns7:title "Toward Interactive Spreadsheet Debugging" ;
+    ns1:endPage 6 ;
+    ns1:numPages 4 ;
+    ns1:startPage 3 ;
+    ns6:author <http://ceur-ws.org/Vol-1209/#DietmariJannach>,
+        <http://ceur-ws.org/Vol-1209/#KostyantyniShchekotykhin>,
+        <http://ceur-ws.org/Vol-1209/#ThomasiSchmitz> .
+
+<http://ceur-ws.org/Vol-1209/#paper4> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1209/> ;
+    ns7:title "Spreadsheets are Models Too" ;
+    ns1:endPage 10 ;
+    ns1:numPages 2 ;
+    ns1:startPage 9 ;
+    ns6:author <http://ceur-ws.org/Vol-1209/#DimitrisiKolovos>,
+        <http://ceur-ws.org/Vol-1209/#NikosiMatragkas>,
         <http://ceur-ws.org/Vol-1209/#RichardiF.iPaige> .
 
-<http://ceur-ws.org/Vol-1209/#FelienneiHermans> a ns1:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/FelienneiHermans> ;
-    ns1:name "Felienne Hermans" .
+<http://ceur-ws.org/Vol-1209/#paper8> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1209/> ;
+    ns7:title "End-user Development via Sheet-defined Functions" ;
+    ns1:endPage 26 ;
+    ns1:numPages 4 ;
+    ns1:startPage 23 ;
+    ns6:author <http://ceur-ws.org/Vol-1209/#JonasiDruedahliRask>,
+        <http://ceur-ws.org/Vol-1209/#PeteriSestoft>,
+        <http://ceur-ws.org/Vol-1209/#SimoniEikelandiTimmermann> .
 
-<http://ceur-ws.org/Vol-1209/#PeteriSestof> a ns1:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/PeteriSestof> ;
-    ns1:name "Peter Sestof" .
+<http://ceur-ws.org/Vol-1209/#paper1> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1209/> ;
+    ns7:title "Tool-supported Fault Localization in Spreadsheets: Limitations of Current Research Practice" ;
+    ns1:endPage 2 ;
+    ns1:numPages 2 ;
+    ns1:startPage 1 ;
+    ns6:author <http://ceur-ws.org/Vol-1209/#BirgitiHofer>,
+        <http://ceur-ws.org/Vol-1209/#DietmariJannach>,
+        <http://ceur-ws.org/Vol-1209/#FranziWotawa>,
+        <http://ceur-ws.org/Vol-1209/#KostyantyniShchekotykhin>,
+        <http://ceur-ws.org/Vol-1209/#ThomasiSchmitz> .
 
-<http://ceur-ws.org/Vol-1209/#RichardiF.iPaige> a ns1:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/RichardiF.iPaige> ;
-    ns1:name "Richard F. Paige" .
+<http://ceur-ws.org/Vol-1209/#paper10> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1209/> ;
+    ns7:title "MDSheet: Model-Driven Spreadsheets" ;
+    ns1:endPage 33 ;
+    ns1:numPages 3 ;
+    ns1:startPage 31 ;
+    ns6:author <http://ceur-ws.org/Vol-1209/#J%C3%A1comeiCunha>,
+        <http://ceur-ws.org/Vol-1209/#Jo%C3%A3oiSaraiva>,
+        <http://ceur-ws.org/Vol-1209/#JoaoiFernandes>,
+        <http://ceur-ws.org/Vol-1209/#JorgeiMendes>,
+        <http://ceur-ws.org/Vol-1209/#RuiiPereira> .
 
-<http://ceur-ws.org/Vol-1209/#event> a ns7:WorkshopEvent ;
-    ns7:hasLocation <http://dbpedia.org/resource/Netherlands> ;
-    ns7:hasPart <http://ceur-ws.org/Vol-1209/#part-ws> ;
-    ns7:isSubEventOf <http://ceur-ws.org/Vol-1209/#conf> ;
-    ns2:beginsAtDatetime "2014-07-02T00:00:00+00:00"^^xsd:dateTime ;
-    ns2:endsAtDatetime "2014-07-02T00:00:00+00:00"^^xsd:dateTime ;
-    ns4:license "http://choosealicense.com/licenses/no-license/" .
+<http://ceur-ws.org/Vol-1209/> a ns2:Proceedings ;
+    ns2:hasPart <http://ceur-ws.org/Vol-1209/#paper1>,
+        <http://ceur-ws.org/Vol-1209/#paper10>,
+        <http://ceur-ws.org/Vol-1209/#paper11>,
+        <http://ceur-ws.org/Vol-1209/#paper12>,
+        <http://ceur-ws.org/Vol-1209/#paper13>,
+        <http://ceur-ws.org/Vol-1209/#paper14>,
+        <http://ceur-ws.org/Vol-1209/#paper15>,
+        <http://ceur-ws.org/Vol-1209/#paper2>,
+        <http://ceur-ws.org/Vol-1209/#paper3>,
+        <http://ceur-ws.org/Vol-1209/#paper4>,
+        <http://ceur-ws.org/Vol-1209/#paper5>,
+        <http://ceur-ws.org/Vol-1209/#paper6>,
+        <http://ceur-ws.org/Vol-1209/#paper7>,
+        <http://ceur-ws.org/Vol-1209/#paper8>,
+        <http://ceur-ws.org/Vol-1209/#paper9> ;
+    ns5:issued "2014-08-06T00:00:00+00:00"^^xsd:dateTime ;
+    ns1:presentedAt <http://ceur-ws.org/Vol-1209/#event> ;
+    ns6:editor <http://ceur-ws.org/Vol-1209/#FelienneiHermans>,
+        <http://ceur-ws.org/Vol-1209/#PeteriSestoft>,
+        <http://ceur-ws.org/Vol-1209/#RichardiF.iPaige> .
 

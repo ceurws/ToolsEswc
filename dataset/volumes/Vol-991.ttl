@@ -1,35 +1,183 @@
-@prefix ns1: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns2: <http://www.w3.org/2002/07/owl#> .
+@prefix ns1: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns2: <http://data.semanticweb.org/ns/swc/ontology/#> .
 @prefix ns3: <http://purl.org/ontology/bibo/#> .
-@prefix ns4: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns4: <http://xmlns.com/foaf/0.1/> .
 @prefix ns5: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns6: <http://xmlns.com/foaf/0.1/> .
-@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns6: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns7: <http://purl.org/dc/elements/1.1/#> .
 @prefix ns8: <http://purl.org/dc/elements/1.1/> .
+@prefix ns9: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-991/> a ns1:Proceedings ;
-    ns7:issued "2013-05-31T00:00:00+00:00"^^xsd:dateTime ;
-    ns3:presentedAt <http://ceur-ws.org/Vol-991/#event> ;
-    ns4:editor <http://ceur-ws.org/Vol-991/#MalinkaiIvanova>,
-        <http://ceur-ws.org/Vol-991/#MinoruiNakayama> .
+<http://ceur-ws.org/Vol-991/#ArturiLugmayr> a ns4:Person ;
+    ns9:sameAs <http://ceur-ws.org/persons/ArturiLugmayr> ;
+    ns4:made <http://ceur-ws.org/Vol-991/#paper1> ;
+    ns4:name "Artur Lugmayr" .
 
-<http://ceur-ws.org/Vol-991/#MalinkaiIvanova> a ns6:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/MalinkaiIvanova> ;
-    ns6:name "Malinka Ivanova" .
+<http://ceur-ws.org/Vol-991/#BelmabroukiKarima> a ns4:Person ;
+    ns9:sameAs <http://ceur-ws.org/persons/BelmabroukiKarima> ;
+    ns4:made <http://ceur-ws.org/Vol-991/#paper4> ;
+    ns4:name "Belmabrouk Karima" .
 
-<http://ceur-ws.org/Vol-991/#MinoruiNakayama> a ns6:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/MinoruiNakayama> ;
-    ns6:name "Minoru Nakayama" .
+<http://ceur-ws.org/Vol-991/#BendellaiFatima> a ns4:Person ;
+    ns9:sameAs <http://ceur-ws.org/persons/BendellaiFatima> ;
+    ns4:made <http://ceur-ws.org/Vol-991/#paper4> ;
+    ns4:name "Bendella Fatima" .
 
-<http://ceur-ws.org/Vol-991/#event> a ns1:WorkshopEvent ;
-    ns1:hasLocation <http://dbpedia.org/resource/Netherlands> ;
-    ns1:hasPart <http://ceur-ws.org/Vol-991/#part-CEUR-WS> ;
-    ns1:isSubEventOf <http://ceur-ws.org/Vol-991/#conf> ;
+<http://ceur-ws.org/Vol-991/#ChadliiAbdelhafid> a ns4:Person ;
+    ns9:sameAs <http://ceur-ws.org/persons/ChadliiAbdelhafid> ;
+    ns4:made <http://ceur-ws.org/Vol-991/#paper4> ;
+    ns4:name "Chadli Abdelhafid" .
+
+<http://ceur-ws.org/Vol-991/#FredrikiPaulsson> a ns4:Person ;
+    ns9:sameAs <http://ceur-ws.org/persons/FredrikiPaulsson> ;
+    ns4:made <http://ceur-ws.org/Vol-991/#paper5> ;
+    ns4:name "Fredrik Paulsson" .
+
+<http://ceur-ws.org/Vol-991/#MilenaiHead> a ns4:Person ;
+    ns9:sameAs <http://ceur-ws.org/persons/MilenaiHead> ;
+    ns4:made <http://ceur-ws.org/Vol-991/#paper0> ;
+    ns4:name "Milena Head" .
+
+<http://ceur-ws.org/Vol-991/#TakuyaiKatase> a ns4:Person ;
+    ns9:sameAs <http://ceur-ws.org/persons/TakuyaiKatase> ;
+    ns4:made <http://ceur-ws.org/Vol-991/#paper3> ;
+    ns4:name "Takuya Katase" .
+
+<http://ceur-ws.org/Vol-991/#YoshikiiSakurai> a ns4:Person ;
+    ns9:sameAs <http://ceur-ws.org/persons/YoshikiiSakurai> ;
+    ns4:made <http://ceur-ws.org/Vol-991/#paper3> ;
+    ns4:name "Yoshiki Sakurai" .
+
+<http://ceur-ws.org/Vol-991/#event> a ns2:WorkshopEvent ;
+    ns2:hasLocation <http://dbpedia.org/resource/Netherlands> ;
+    ns2:hasPart <http://ceur-ws.org/Vol-991/#part-IEETeL> ;
+    ns2:isSubEventOf <http://ceur-ws.org/Vol-991/#conf> ;
     ns5:beginsAtDatetime "2013-06-04T00:00:00+00:00"^^xsd:dateTime ;
     ns5:endsAtDatetime "2013-06-04T00:00:00+00:00"^^xsd:dateTime ;
     ns8:license "http://choosealicense.com/licenses/no-license/" .
+
+<http://ceur-ws.org/Vol-991/#HirohiYamamoto> a ns4:Person ;
+    ns9:sameAs <http://ceur-ws.org/persons/HirohiYamamoto> ;
+    ns4:made <http://ceur-ws.org/Vol-991/#paper2>,
+        <http://ceur-ws.org/Vol-991/#paper3> ;
+    ns4:name "Hiroh Yamamoto" .
+
+<http://ceur-ws.org/Vol-991/#KeynoteAddress> a ns2:SessionEvent ;
+    ns2:partOf <http://ceur-ws.org/Vol-991/> ;
+    ns7:title "Keynote Address" .
+
+<http://ceur-ws.org/Vol-991/#KouichiiMutsuura> a ns4:Person ;
+    ns9:sameAs <http://ceur-ws.org/persons/KouichiiMutsuura> ;
+    ns4:made <http://ceur-ws.org/Vol-991/#paper2>,
+        <http://ceur-ws.org/Vol-991/#paper3> ;
+    ns4:name "Kouichi Mutsuura" .
+
+<http://ceur-ws.org/Vol-991/#MalinkaiIvanova> a ns4:Person ;
+    ns3:place <http://dbpedia.org/resource/Commemorative_coins_of_Bulgaria> ;
+    ns1:affiliation "Technical University of Sofia" ;
+    ns9:sameAs <http://ceur-ws.org/persons/MalinkaiIvanova> ;
+    ns4:made <http://ceur-ws.org/Vol-991/#paper6> ;
+    ns4:name "Malinka Ivanova" .
+
+<http://ceur-ws.org/Vol-991/#paper0> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-991/> ;
+    ns7:title "Understanding the Impacts of Design on the User Experience: Lessons from Online Shoppers Applied to eLearners" ;
+    ns3:endPage 4 ;
+    ns3:numPages 1 ;
+    ns3:section <http://ceur-ws.org/Vol-991/#KeynoteAddress> ;
+    ns3:startPage 4 ;
+    ns1:author <http://ceur-ws.org/Vol-991/#MilenaiHead> .
+
+<http://ceur-ws.org/Vol-991/#paper1> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-991/> ;
+    ns7:title "E-Learning Environments as Niche Strategy to Match the 'DNA' of a Particular University" ;
+    ns3:endPage 12 ;
+    ns3:numPages 8 ;
+    ns3:section <http://ceur-ws.org/Vol-991/#ResearchPapers> ;
+    ns3:startPage 5 ;
+    ns1:author <http://ceur-ws.org/Vol-991/#ArturiLugmayr> .
+
+<http://ceur-ws.org/Vol-991/#paper5> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-991/> ;
+    ns7:title "From Silos to Mashups Conformance through Widget-based Mashup Approaches to Learning Environments" ;
+    ns3:endPage 57 ;
+    ns3:numPages 12 ;
+    ns3:section <http://ceur-ws.org/Vol-991/#ResearchPapers> ;
+    ns3:startPage 46 ;
+    ns1:author <http://ceur-ws.org/Vol-991/#FredrikiPaulsson> .
+
+<http://ceur-ws.org/Vol-991/#paper6> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-991/> ;
+    ns7:title "Intelligent Tutoring in Informal Settings: Empirical Study" ;
+    ns3:endPage 66 ;
+    ns3:numPages 9 ;
+    ns3:section <http://ceur-ws.org/Vol-991/#ResearchPapers> ;
+    ns3:startPage 58 ;
+    ns1:author <http://ceur-ws.org/Vol-991/#MalinkaiIvanova> .
+
+<http://ceur-ws.org/Vol-991/#MinoruiNakayama> a ns4:Person ;
+    ns3:place <http://dbpedia.org/resource/Japan> ;
+    ns1:affiliation "Tokyo Institute of Technology" ;
+    ns9:sameAs <http://ceur-ws.org/persons/MinoruiNakayama> ;
+    ns4:made <http://ceur-ws.org/Vol-991/#paper2>,
+        <http://ceur-ws.org/Vol-991/#paper3> ;
+    ns4:name "Minoru Nakayama" .
+
+<http://ceur-ws.org/Vol-991/#paper2> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-991/> ;
+    ns7:title "Effectiveness of Note-Taking Skills and Student's Characteristics on Learning Performance in Online Courses" ;
+    ns3:endPage 21 ;
+    ns3:numPages 9 ;
+    ns3:section <http://ceur-ws.org/Vol-991/#ResearchPapers> ;
+    ns3:startPage 13 ;
+    ns1:author <http://ceur-ws.org/Vol-991/#HirohiYamamoto>,
+        <http://ceur-ws.org/Vol-991/#KouichiiMutsuura>,
+        <http://ceur-ws.org/Vol-991/#MinoruiNakayama> .
+
+<http://ceur-ws.org/Vol-991/#paper4> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-991/> ;
+    ns7:title "Computer-assisted Problem-based Learning for Word-based Mathematical Problem Solving" ;
+    ns3:endPage 45 ;
+    ns3:numPages 14 ;
+    ns3:section <http://ceur-ws.org/Vol-991/#ResearchPapers> ;
+    ns3:startPage 32 ;
+    ns1:author <http://ceur-ws.org/Vol-991/#BelmabroukiKarima>,
+        <http://ceur-ws.org/Vol-991/#BendellaiFatima>,
+        <http://ceur-ws.org/Vol-991/#ChadliiAbdelhafid> .
+
+<http://ceur-ws.org/Vol-991/#paper3> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-991/> ;
+    ns7:title "Simple Measures to Encourage More Note-Taking in the Era of Electronic Notebooks and Their Evaluations" ;
+    ns3:endPage 31 ;
+    ns3:numPages 10 ;
+    ns3:section <http://ceur-ws.org/Vol-991/#ResearchPapers> ;
+    ns3:startPage 22 ;
+    ns1:author <http://ceur-ws.org/Vol-991/#HirohiYamamoto>,
+        <http://ceur-ws.org/Vol-991/#KouichiiMutsuura>,
+        <http://ceur-ws.org/Vol-991/#MinoruiNakayama>,
+        <http://ceur-ws.org/Vol-991/#TakuyaiKatase>,
+        <http://ceur-ws.org/Vol-991/#YoshikiiSakurai> .
+
+<http://ceur-ws.org/Vol-991/#ResearchPapers> a ns2:SessionEvent ;
+    ns2:partOf <http://ceur-ws.org/Vol-991/> ;
+    ns7:title "Research Papers" .
+
+<http://ceur-ws.org/Vol-991/> a ns2:Proceedings ;
+    ns2:hasPart <http://ceur-ws.org/Vol-991/#paper0>,
+        <http://ceur-ws.org/Vol-991/#paper1>,
+        <http://ceur-ws.org/Vol-991/#paper2>,
+        <http://ceur-ws.org/Vol-991/#paper3>,
+        <http://ceur-ws.org/Vol-991/#paper4>,
+        <http://ceur-ws.org/Vol-991/#paper5>,
+        <http://ceur-ws.org/Vol-991/#paper6> ;
+    ns2:hasSession <http://ceur-ws.org/Vol-991/#KeynoteAddress>,
+        <http://ceur-ws.org/Vol-991/#ResearchPapers> ;
+    ns6:issued "2013-05-31T00:00:00+00:00"^^xsd:dateTime ;
+    ns3:presentedAt <http://ceur-ws.org/Vol-991/#event> ;
+    ns1:editor <http://ceur-ws.org/Vol-991/#MalinkaiIvanova>,
+        <http://ceur-ws.org/Vol-991/#MinoruiNakayama> .
 

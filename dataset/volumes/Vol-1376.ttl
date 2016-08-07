@@ -1,46 +1,212 @@
-@prefix ns1: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns2: <http://purl.org/dc/elements/1.1/> .
-@prefix ns3: <http://xmlns.com/foaf/0.1/> .
-@prefix ns4: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns5: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns6: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns7: <http://www.w3.org/2002/07/owl#> .
-@prefix ns8: <http://purl.org/ontology/bibo/#> .
+@prefix ns1: <http://xmlns.com/foaf/0.1/> .
+@prefix ns2: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns3: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns4: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns5: <http://www.w3.org/2002/07/owl#> .
+@prefix ns6: <http://purl.org/ontology/bibo/#> .
+@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns9: <http://purl.org/dc/elements/1.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1376/> a ns1:Proceedings ;
-    ns6:issued "2015-06-19T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:presentedAt <http://ceur-ws.org/Vol-1376/#event> ;
-    ns4:editor <http://ceur-ws.org/Vol-1376/#AmrapaliiZaveri>,
+<http://ceur-ws.org/Vol-1376/#AhmadiAssaf> a ns1:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/AhmadiAssaf> ;
+    ns1:made <http://ceur-ws.org/Vol-1376/#paper07> ;
+    ns1:name "Ahmad Assaf" .
+
+<http://ceur-ws.org/Vol-1376/#AlineiSenart> a ns1:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/AlineiSenart> ;
+    ns1:made <http://ceur-ws.org/Vol-1376/#paper07> ;
+    ns1:name "Aline Senart" .
+
+<http://ceur-ws.org/Vol-1376/#AmrapaliiZaveri> a ns1:Person ;
+    ns2:affiliation "" ;
+    ns5:sameAs <http://ceur-ws.org/persons/AmrapaliiZaveri> ;
+    ns1:name "Amrapali Zaveri" .
+
+<http://ceur-ws.org/Vol-1376/#AnisaiRula> a ns1:Person ;
+    ns2:affiliation "" ;
+    ns5:sameAs <http://ceur-ws.org/persons/AnisaiRula> ;
+    ns1:name "Anisa Rula" .
+
+<http://ceur-ws.org/Vol-1376/#CecileiGermain> a ns1:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/CecileiGermain> ;
+    ns1:made <http://ceur-ws.org/Vol-1376/#paper02> ;
+    ns1:name "Cecile Germain" .
+
+<http://ceur-ws.org/Vol-1376/#ClaudiusiHauptmann> a ns1:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/ClaudiusiHauptmann> ;
+    ns1:made <http://ceur-ws.org/Vol-1376/#paper06> ;
+    ns1:name "Claudius Hauptmann" .
+
+<http://ceur-ws.org/Vol-1376/#DimitrisiKontokostas> a ns1:Person ;
+    ns2:affiliation "" ;
+    ns5:sameAs <http://ceur-ws.org/persons/DimitrisiKontokostas> ;
+    ns1:name "Dimitris Kontokostas" .
+
+<http://ceur-ws.org/Vol-1376/#EnricoiMotta> a ns1:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/EnricoiMotta> ;
+    ns1:made <http://ceur-ws.org/Vol-1376/#paper04> ;
+    ns1:name "Enrico Motta" .
+
+<http://ceur-ws.org/Vol-1376/#GaviniMendel-Gleason> a ns1:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/GaviniMendel-Gleason> ;
+    ns1:made <http://ceur-ws.org/Vol-1376/#paper03> ;
+    ns1:name "Gavin Mendel-Gleason" .
+
+<http://ceur-ws.org/Vol-1376/#Jean-Fran%C3%A7oisiCondotta> a ns1:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/Jean-Fran%C3%A7oisiCondotta> ;
+    ns1:made <http://ceur-ws.org/Vol-1376/#paper05> ;
+    ns1:name "Jean-François Condotta" .
+
+<http://ceur-ws.org/Vol-1376/#JulieniNauroy> a ns1:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/JulieniNauroy> ;
+    ns1:made <http://ceur-ws.org/Vol-1376/#paper02> ;
+    ns1:name "Julien Nauroy" .
+
+<http://ceur-ws.org/Vol-1376/#KarimaiRafes> a ns1:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/KarimaiRafes> ;
+    ns1:made <http://ceur-ws.org/Vol-1376/#paper02> ;
+    ns1:name "Karima Rafes" .
+
+<http://ceur-ws.org/Vol-1376/#KeviniFeeney> a ns1:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/KeviniFeeney> ;
+    ns1:made <http://ceur-ws.org/Vol-1376/#paper03> ;
+    ns1:name "Kevin Feeney" .
+
+<http://ceur-ws.org/Vol-1376/#MagnusiKnuth> a ns1:Person ;
+    ns2:affiliation "" ;
+    ns5:sameAs <http://ceur-ws.org/persons/MagnusiKnuth> ;
+    ns1:name "Magnus Knuth" .
+
+<http://ceur-ws.org/Vol-1376/#Mathieuid%27Aquin> a ns1:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/Mathieuid%27Aquin> ;
+    ns1:made <http://ceur-ws.org/Vol-1376/#paper04> ;
+    ns1:name "Mathieu d'Aquin" .
+
+<http://ceur-ws.org/Vol-1376/#MichaeliSioutis> a ns1:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/MichaeliSioutis> ;
+    ns1:made <http://ceur-ws.org/Vol-1376/#paper05> ;
+    ns1:name "Michael Sioutis" .
+
+<http://ceur-ws.org/Vol-1376/#MicheleiBrocco> a ns1:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/MicheleiBrocco> ;
+    ns1:made <http://ceur-ws.org/Vol-1376/#paper06> ;
+    ns1:name "Michele Brocco" .
+
+<http://ceur-ws.org/Vol-1376/#MonicaiDeiMartino> a ns1:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/MonicaiDeiMartino> ;
+    ns1:made <http://ceur-ws.org/Vol-1376/#paper01> ;
+    ns1:name "Monica De Martino" .
+
+<http://ceur-ws.org/Vol-1376/#PaolaiPodest%C3%A0> a ns1:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/PaolaiPodest%C3%A0> ;
+    ns1:made <http://ceur-ws.org/Vol-1376/#paper01> ;
+    ns1:name "Paola Podestà" .
+
+<http://ceur-ws.org/Vol-1376/#Rapha%C3%ABliTroncy> a ns1:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/Rapha%C3%ABliTroncy> ;
+    ns1:made <http://ceur-ws.org/Vol-1376/#paper07> ;
+    ns1:name "Raphaël Troncy" .
+
+<http://ceur-ws.org/Vol-1376/#RiccardoiAlbertoni> a ns1:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/RiccardoiAlbertoni> ;
+    ns1:made <http://ceur-ws.org/Vol-1376/#paper01> ;
+    ns1:name "Riccardo Albertoni" .
+
+<http://ceur-ws.org/Vol-1376/#RobiBrennan> a ns1:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/RobiBrennan> ;
+    ns1:made <http://ceur-ws.org/Vol-1376/#paper03> ;
+    ns1:name "Rob Brennan" .
+
+<http://ceur-ws.org/Vol-1376/#SanjiangiLi> a ns1:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/SanjiangiLi> ;
+    ns1:made <http://ceur-ws.org/Vol-1376/#paper05> ;
+    ns1:name "Sanjiang Li" .
+
+<http://ceur-ws.org/Vol-1376/#ShuangyaniLiu> a ns1:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/ShuangyaniLiu> ;
+    ns1:made <http://ceur-ws.org/Vol-1376/#paper04> ;
+    ns1:name "Shuangyan Liu" .
+
+<http://ceur-ws.org/Vol-1376/#WolfgangiW%C3%B6rndl> a ns1:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/WolfgangiW%C3%B6rndl> ;
+    ns1:made <http://ceur-ws.org/Vol-1376/#paper06> ;
+    ns1:name "Wolfgang Wörndl" .
+
+<http://ceur-ws.org/Vol-1376/#event> a ns3:WorkshopEvent ;
+    ns3:hasLocation <http://dbpedia.org/resource/Euro_gold_and_silver_commemorative_coins> ;
+    ns3:hasPart <http://ceur-ws.org/Vol-1376/#part-LDQ> ;
+    ns3:isSubEventOf <http://ceur-ws.org/Vol-1376/#conf> ;
+    ns8:beginsAtDatetime "2015-06-01T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:endsAtDatetime "2015-06-01T00:00:00+00:00"^^xsd:dateTime ;
+    ns9:license "http://creativecommons.org/publicdomain/zero/1.0/" ;
+    rdfs:seeAlso <http://ceur-ws.org/Vol-1215/#event> .
+
+<http://ceur-ws.org/Vol-1376/#paper01> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1376/> ;
+    ns4:title "A Linkset Quality Metric Measuring Multilingual Gain in SKOS Thesauri" ;
+    ns2:author <http://ceur-ws.org/Vol-1376/#MonicaiDeiMartino>,
+        <http://ceur-ws.org/Vol-1376/#PaolaiPodest%C3%A0>,
+        <http://ceur-ws.org/Vol-1376/#RiccardoiAlbertoni> .
+
+<http://ceur-ws.org/Vol-1376/#paper02> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1376/> ;
+    ns4:title "Certifying the Interoperability of RDF Database Systems" ;
+    ns2:author <http://ceur-ws.org/Vol-1376/#CecileiGermain>,
+        <http://ceur-ws.org/Vol-1376/#JulieniNauroy>,
+        <http://ceur-ws.org/Vol-1376/#KarimaiRafes> .
+
+<http://ceur-ws.org/Vol-1376/#paper03> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1376/> ;
+    ns4:title "Ontology Consistency and Instance Checking for Real World Linked Data" ;
+    ns2:author <http://ceur-ws.org/Vol-1376/#GaviniMendel-Gleason>,
+        <http://ceur-ws.org/Vol-1376/#KeviniFeeney>,
+        <http://ceur-ws.org/Vol-1376/#RobiBrennan> .
+
+<http://ceur-ws.org/Vol-1376/#paper04> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1376/> ;
+    ns4:title "Towards Linked Data Fact Validation through Measuring Consensus" ;
+    ns2:author <http://ceur-ws.org/Vol-1376/#EnricoiMotta>,
+        <http://ceur-ws.org/Vol-1376/#Mathieuid%27Aquin>,
+        <http://ceur-ws.org/Vol-1376/#ShuangyaniLiu> .
+
+<http://ceur-ws.org/Vol-1376/#paper05> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1376/> ;
+    ns4:title "On Redundancy in Linked Geospatial Data" ;
+    ns2:author <http://ceur-ws.org/Vol-1376/#Jean-Fran%C3%A7oisiCondotta>,
+        <http://ceur-ws.org/Vol-1376/#MichaeliSioutis>,
+        <http://ceur-ws.org/Vol-1376/#SanjiangiLi> .
+
+<http://ceur-ws.org/Vol-1376/#paper06> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1376/> ;
+    ns4:title "Scalable Semantic Version Control for Linked Data Management" ;
+    ns2:author <http://ceur-ws.org/Vol-1376/#ClaudiusiHauptmann>,
+        <http://ceur-ws.org/Vol-1376/#MicheleiBrocco>,
+        <http://ceur-ws.org/Vol-1376/#WolfgangiW%C3%B6rndl> .
+
+<http://ceur-ws.org/Vol-1376/#paper07> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1376/> ;
+    ns4:title "What's up LOD Cloud? Observing The State of Linked Open Data Cloud Metadata" ;
+    ns2:author <http://ceur-ws.org/Vol-1376/#AhmadiAssaf>,
+        <http://ceur-ws.org/Vol-1376/#AlineiSenart>,
+        <http://ceur-ws.org/Vol-1376/#Rapha%C3%ABliTroncy> .
+
+<http://ceur-ws.org/Vol-1376/> a ns3:Proceedings ;
+    ns3:hasPart <http://ceur-ws.org/Vol-1376/#paper01>,
+        <http://ceur-ws.org/Vol-1376/#paper02>,
+        <http://ceur-ws.org/Vol-1376/#paper03>,
+        <http://ceur-ws.org/Vol-1376/#paper04>,
+        <http://ceur-ws.org/Vol-1376/#paper05>,
+        <http://ceur-ws.org/Vol-1376/#paper06>,
+        <http://ceur-ws.org/Vol-1376/#paper07> ;
+    ns7:issued "2015-06-19T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:presentedAt <http://ceur-ws.org/Vol-1376/#event> ;
+    ns2:editor <http://ceur-ws.org/Vol-1376/#AmrapaliiZaveri>,
         <http://ceur-ws.org/Vol-1376/#AnisaiRula>,
         <http://ceur-ws.org/Vol-1376/#DimitrisiKontokostas>,
         <http://ceur-ws.org/Vol-1376/#MagnusiKnuth> .
-
-<http://ceur-ws.org/Vol-1376/#AmrapaliiZaveri> a ns3:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/AmrapaliiZaveri> ;
-    ns3:name "Amrapali Zaveri" .
-
-<http://ceur-ws.org/Vol-1376/#AnisaiRula> a ns3:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/AnisaiRula> ;
-    ns3:name "Anisa Rula" .
-
-<http://ceur-ws.org/Vol-1376/#DimitrisiKontokostas> a ns3:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/DimitrisiKontokostas> ;
-    ns3:name "Dimitris Kontokostas" .
-
-<http://ceur-ws.org/Vol-1376/#MagnusiKnuth> a ns3:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/MagnusiKnuth> ;
-    ns3:name "Magnus Knuth" .
-
-<http://ceur-ws.org/Vol-1376/#event> a ns1:WorkshopEvent ;
-    ns1:hasLocation <http://dbpedia.org/resource/Euro_gold_and_silver_commemorative_coins> ;
-    ns1:hasPart <http://ceur-ws.org/Vol-1376/#part-ws> ;
-    ns1:isSubEventOf <http://ceur-ws.org/Vol-1376/#conf> ;
-    ns5:beginsAtDatetime "2015-06-01T00:00:00+00:00"^^xsd:dateTime ;
-    ns5:endsAtDatetime "2015-06-01T00:00:00+00:00"^^xsd:dateTime ;
-    ns2:license "http://creativecommons.org/publicdomain/zero/1.0/" ;
-    rdfs:seeAlso <http://ceur-ws.org/Vol-1215/#event> .
 

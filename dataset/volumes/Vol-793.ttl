@@ -1,51 +1,257 @@
-@prefix ns1: <http://purl.org/dc/elements/1.1/> .
+@prefix ns1: <http://purl.org/ontology/bibo/#> .
 @prefix ns2: <http://www.w3.org/2002/07/owl#> .
-@prefix ns3: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns3: <http://data.semanticweb.org/ns/swc/ontology/#> .
 @prefix ns4: <http://xmlns.com/foaf/0.1/> .
-@prefix ns5: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns6: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns8: <http://purl.org/ontology/bibo/#> .
+@prefix ns5: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns6: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns7: <http://purl.org/dc/elements/1.1/> .
+@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns9: <http://purl.org/NET/c4dm/timeline.owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-793/> a ns5:Proceedings ;
-    ns7:issued "2011-10-19T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:presentedAt <http://ceur-ws.org/Vol-793/#event> ;
-    ns6:editor <http://ceur-ws.org/Vol-793/#%C3%92scariCelma>,
-        <http://ceur-ws.org/Vol-793/#Am%C3%A9lieiAnglade>,
-        <http://ceur-ws.org/Vol-793/#BeniFields>,
-        <http://ceur-ws.org/Vol-793/#BrianiMcFee>,
-        <http://ceur-ws.org/Vol-793/#PauliLamere> .
-
 <http://ceur-ws.org/Vol-793/#%C3%92scariCelma> a ns4:Person ;
+    ns5:affiliation "" ;
     ns2:sameAs <http://ceur-ws.org/persons/%C3%92scariCelma> ;
     ns4:name "Òscar Celma" .
 
-<http://ceur-ws.org/Vol-793/#Am%C3%A9lieiAnglade> a ns4:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/Am%C3%A9lieiAnglade> ;
-    ns4:name "Amélie Anglade" .
+<http://ceur-ws.org/Vol-793/#%C4%B0pekiTatl%C4%B1> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/%C4%B0pekiTatl%C4%B1> ;
+    ns4:made <http://ceur-ws.org/Vol-793/#womrad2011_paper3> ;
+    ns4:name "İpek Tatlı" .
+
+<http://ceur-ws.org/Vol-793/#AsmaiRafiq> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/AsmaiRafiq> ;
+    ns4:made <http://ceur-ws.org/Vol-793/#womrad2011_paper1> ;
+    ns4:name "Asma Rafiq" .
+
+<http://ceur-ws.org/Vol-793/#Ay%C5%9FenuriBirt%C3%BCrk> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/Ay%C5%9FenuriBirt%C3%BCrk> ;
+    ns4:made <http://ceur-ws.org/Vol-793/#womrad2011_paper3> ;
+    ns4:name "Ayşenur Birtürk" .
 
 <http://ceur-ws.org/Vol-793/#BeniFields> a ns4:Person ;
+    ns5:affiliation "" ;
     ns2:sameAs <http://ceur-ws.org/persons/BeniFields> ;
     ns4:name "Ben Fields" .
 
 <http://ceur-ws.org/Vol-793/#BrianiMcFee> a ns4:Person ;
+    ns5:affiliation "" ;
     ns2:sameAs <http://ceur-ws.org/persons/BrianiMcFee> ;
     ns4:name "Brian McFee" .
 
+<http://ceur-ws.org/Vol-793/#C%C3%A9driciMesnage> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/C%C3%A9driciMesnage> ;
+    ns4:made <http://ceur-ws.org/Vol-793/#womrad2011_paper1> ;
+    ns4:name "Cédric Mesnage" .
+
+<http://ceur-ws.org/Vol-793/#DouglasiEck> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/DouglasiEck> ;
+    ns4:made <http://ceur-ws.org/Vol-793/#womrad2011_keynote> ;
+    ns4:name "Douglas Eck" .
+
+<http://ceur-ws.org/Vol-793/#GeorgeiPopescu> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/GeorgeiPopescu> ;
+    ns4:made <http://ceur-ws.org/Vol-793/#womrad2011_paper6> ;
+    ns4:name "George Popescu" .
+
+<http://ceur-ws.org/Vol-793/#Google> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/Google> ;
+    ns4:made <http://ceur-ws.org/Vol-793/#womrad2011_keynote> ;
+    ns4:name "Google" .
+
+<http://ceur-ws.org/Vol-793/#GyorgyiFazekas> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/GyorgyiFazekas> ;
+    ns4:made <http://ceur-ws.org/Vol-793/#womrad2011_paper2> ;
+    ns4:name "Gyorgy Fazekas" .
+
+<http://ceur-ws.org/Vol-793/#IaniKnopke> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/IaniKnopke> ;
+    ns4:made <http://ceur-ws.org/Vol-793/#womrad2011_paper5> ;
+    ns4:name "Ian Knopke" .
+
+<http://ceur-ws.org/Vol-793/#MarkusiSchedl> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/MarkusiSchedl> ;
+    ns4:made <http://ceur-ws.org/Vol-793/#womrad2011_paper4> ;
+    ns4:name "Markus Schedl" .
+
+<http://ceur-ws.org/Vol-793/#MathieuiBarthet> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/MathieuiBarthet> ;
+    ns4:made <http://ceur-ws.org/Vol-793/#womrad2011_paper2> ;
+    ns4:name "Mathieu Barthet" .
+
 <http://ceur-ws.org/Vol-793/#PauliLamere> a ns4:Person ;
+    ns5:affiliation "" ;
     ns2:sameAs <http://ceur-ws.org/persons/PauliLamere> ;
     ns4:name "Paul Lamere" .
 
-<http://ceur-ws.org/Vol-793/#event> a ns5:WorkshopEvent ;
-    ns5:hasLocation <http://dbpedia.org/resource/United_States> ;
-    ns5:hasPart <http://ceur-ws.org/Vol-793/#part-CEUR-WS> ;
-    ns5:isSubEventOf <http://ceur-ws.org/Vol-793/#conf> ;
-    ns3:beginsAtDatetime "2011-10-23T00:00:00+00:00"^^xsd:dateTime ;
-    ns3:endsAtDatetime "2011-10-23T00:00:00+00:00"^^xsd:dateTime ;
-    ns1:license "http://choosealicense.com/licenses/no-license/" ;
+<http://ceur-ws.org/Vol-793/#PearliPu> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/PearliPu> ;
+    ns4:made <http://ceur-ws.org/Vol-793/#womrad2011_paper6> ;
+    ns4:name "Pearl Pu" .
+
+<http://ceur-ws.org/Vol-793/#PeteriKnees> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/PeteriKnees> ;
+    ns4:made <http://ceur-ws.org/Vol-793/#womrad2011_paper4> ;
+    ns4:name "Peter Knees" .
+
+<http://ceur-ws.org/Vol-793/#ResearchiScientist> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/ResearchiScientist> ;
+    ns4:made <http://ceur-ws.org/Vol-793/#womrad2011_keynote> ;
+    ns4:name "Research Scientist" .
+
+<http://ceur-ws.org/Vol-793/#RobertiMacrae> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/RobertiMacrae> ;
+    ns4:made <http://ceur-ws.org/Vol-793/#womrad2011_paper2> ;
+    ns4:name "Robert Macrae" .
+
+<http://ceur-ws.org/Vol-793/#RomainiBrixtel> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/RomainiBrixtel> ;
+    ns4:made <http://ceur-ws.org/Vol-793/#womrad2011_paper1> ;
+    ns4:name "Romain Brixtel" .
+
+<http://ceur-ws.org/Vol-793/#SefkiiKolozali> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/SefkiiKolozali> ;
+    ns4:made <http://ceur-ws.org/Vol-793/#womrad2011_paper2> ;
+    ns4:name "Sefki Kolozali" .
+
+<http://ceur-ws.org/Vol-793/#SimoniDixon> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/SimoniDixon> ;
+    ns4:made <http://ceur-ws.org/Vol-793/#womrad2011_paper1> ;
+    ns4:name "Simon Dixon" .
+
+<http://ceur-ws.org/Vol-793/#TomiO%27Hara> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/TomiO%27Hara> ;
+    ns4:made <http://ceur-ws.org/Vol-793/#womrad2011_paper7> ;
+    ns4:name "Tom O'Hara" .
+
+<http://ceur-ws.org/Vol-793/#event> a ns3:WorkshopEvent ;
+    ns3:hasLocation <http://dbpedia.org/resource/United_States> ;
+    ns3:hasPart <http://ceur-ws.org/Vol-793/#part-WOMRAD> ;
+    ns3:isSubEventOf <http://ceur-ws.org/Vol-793/#conf> ;
+    ns9:beginsAtDatetime "2011-10-23T00:00:00+00:00"^^xsd:dateTime ;
+    ns9:endsAtDatetime "2011-10-23T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:license "http://choosealicense.com/licenses/no-license/" ;
     rdfs:seeAlso <http://ceur-ws.org/Vol-633/#event> .
+
+<http://ceur-ws.org/Vol-793/#Am%C3%A9lieiAnglade> a ns4:Person ;
+    ns5:affiliation "" ;
+    ns2:sameAs <http://ceur-ws.org/persons/Am%C3%A9lieiAnglade> ;
+    ns4:made <http://ceur-ws.org/Vol-793/#womrad2011_paper2> ;
+    ns4:name "Amélie Anglade" .
+
+<http://ceur-ws.org/Vol-793/#Keynote> a ns3:SessionEvent ;
+    ns3:partOf <http://ceur-ws.org/Vol-793/> ;
+    ns6:title "Keynote" .
+
+<http://ceur-ws.org/Vol-793/#womrad2011_paper5> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-793/> ;
+    ns6:title "The Importance of Service and Genre in Recommendations for Online Radio and Television Programmes" ;
+    ns1:endPage 29 ;
+    ns1:numPages 4 ;
+    ns1:section <http://ceur-ws.org/Vol-793/#GroupRecommendationandLearning> ;
+    ns1:startPage 26 ;
+    ns5:author <http://ceur-ws.org/Vol-793/#IaniKnopke> .
+
+<http://ceur-ws.org/Vol-793/#womrad2011_paper7> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-793/> ;
+    ns6:title "Inferring Meaning of Chord Sequences via Lyrics" ;
+    ns1:endPage 37 ;
+    ns1:numPages 4 ;
+    ns1:section <http://ceur-ws.org/Vol-793/#GroupRecommendationandLearning> ;
+    ns1:startPage 34 ;
+    ns5:author <http://ceur-ws.org/Vol-793/#TomiO%27Hara> .
+
+<http://ceur-ws.org/Vol-793/#womrad2011_paper3> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-793/> ;
+    ns6:title "Using Semantic Relations in Context-based Music Recommendations" ;
+    ns1:endPage 17 ;
+    ns1:numPages 4 ;
+    ns1:section <http://ceur-ws.org/Vol-793/#SemanticsandtheSocialWeb> ;
+    ns1:startPage 14 ;
+    ns5:author <http://ceur-ws.org/Vol-793/#%C4%B0pekiTatl%C4%B1>,
+        <http://ceur-ws.org/Vol-793/#Ay%C5%9FenuriBirt%C3%BCrk> .
+
+<http://ceur-ws.org/Vol-793/#womrad2011_paper4> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-793/> ;
+    ns6:title "Towards Semantic Music Information Extraction from the Web Using Rule Patterns and Supervised Learning" ;
+    ns1:endPage 25 ;
+    ns1:numPages 8 ;
+    ns1:section <http://ceur-ws.org/Vol-793/#SemanticsandtheSocialWeb> ;
+    ns1:startPage 18 ;
+    ns5:author <http://ceur-ws.org/Vol-793/#MarkusiSchedl>,
+        <http://ceur-ws.org/Vol-793/#PeteriKnees> .
+
+<http://ceur-ws.org/Vol-793/#womrad2011_paper6> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-793/> ;
+    ns6:title "Probabilistic Game Theoretic Algorithms for Group Recommender Systems" ;
+    ns1:endPage 33 ;
+    ns1:numPages 4 ;
+    ns1:section <http://ceur-ws.org/Vol-793/#GroupRecommendationandLearning> ;
+    ns1:startPage 30 ;
+    ns5:author <http://ceur-ws.org/Vol-793/#GeorgeiPopescu>,
+        <http://ceur-ws.org/Vol-793/#PearliPu> .
+
+<http://ceur-ws.org/Vol-793/#GroupRecommendationandLearning> a ns3:SessionEvent ;
+    ns3:partOf <http://ceur-ws.org/Vol-793/> ;
+    ns6:title "Group Recommendation and Learning" .
+
+<http://ceur-ws.org/Vol-793/#womrad2011_keynote> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-793/> ;
+    ns6:title "Building a Scalable Music Recommender" ;
+    ns1:section <http://ceur-ws.org/Vol-793/#Keynote> ;
+    ns5:author <http://ceur-ws.org/Vol-793/#DouglasiEck>,
+        <http://ceur-ws.org/Vol-793/#Google>,
+        <http://ceur-ws.org/Vol-793/#ResearchiScientist> .
+
+<http://ceur-ws.org/Vol-793/#SemanticsandtheSocialWeb> a ns3:SessionEvent ;
+    ns3:partOf <http://ceur-ws.org/Vol-793/> ;
+    ns6:title "Semantics and the Social Web" .
+
+<http://ceur-ws.org/Vol-793/#womrad2011_paper1> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-793/> ;
+    ns6:title "Music Discovery with Social Networks" ;
+    ns1:endPage 6 ;
+    ns1:numPages 6 ;
+    ns1:section <http://ceur-ws.org/Vol-793/#SemanticsandtheSocialWeb> ;
+    ns1:startPage 1 ;
+    ns5:author <http://ceur-ws.org/Vol-793/#AsmaiRafiq>,
+        <http://ceur-ws.org/Vol-793/#C%C3%A9driciMesnage>,
+        <http://ceur-ws.org/Vol-793/#RomainiBrixtel>,
+        <http://ceur-ws.org/Vol-793/#SimoniDixon> .
+
+<http://ceur-ws.org/Vol-793/#womrad2011_paper2> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-793/> ;
+    ns6:title "Music Recommendation for Music Learning: Hotttabs, a Multimedia Guitar Tutor" ;
+    ns1:endPage 13 ;
+    ns1:numPages 7 ;
+    ns1:section <http://ceur-ws.org/Vol-793/#SemanticsandtheSocialWeb> ;
+    ns1:startPage 7 ;
+    ns5:author <http://ceur-ws.org/Vol-793/#Am%C3%A9lieiAnglade>,
+        <http://ceur-ws.org/Vol-793/#GyorgyiFazekas>,
+        <http://ceur-ws.org/Vol-793/#MathieuiBarthet>,
+        <http://ceur-ws.org/Vol-793/#RobertiMacrae>,
+        <http://ceur-ws.org/Vol-793/#SefkiiKolozali> .
+
+<http://ceur-ws.org/Vol-793/> a ns3:Proceedings ;
+    ns3:hasPart <http://ceur-ws.org/Vol-793/#womrad2011_keynote>,
+        <http://ceur-ws.org/Vol-793/#womrad2011_paper1>,
+        <http://ceur-ws.org/Vol-793/#womrad2011_paper2>,
+        <http://ceur-ws.org/Vol-793/#womrad2011_paper3>,
+        <http://ceur-ws.org/Vol-793/#womrad2011_paper4>,
+        <http://ceur-ws.org/Vol-793/#womrad2011_paper5>,
+        <http://ceur-ws.org/Vol-793/#womrad2011_paper6>,
+        <http://ceur-ws.org/Vol-793/#womrad2011_paper7> ;
+    ns3:hasSession <http://ceur-ws.org/Vol-793/#GroupRecommendationandLearning>,
+        <http://ceur-ws.org/Vol-793/#Keynote>,
+        <http://ceur-ws.org/Vol-793/#SemanticsandtheSocialWeb> ;
+    ns8:issued "2011-10-19T00:00:00+00:00"^^xsd:dateTime ;
+    ns1:presentedAt <http://ceur-ws.org/Vol-793/#event> ;
+    ns5:editor <http://ceur-ws.org/Vol-793/#%C3%92scariCelma>,
+        <http://ceur-ws.org/Vol-793/#Am%C3%A9lieiAnglade>,
+        <http://ceur-ws.org/Vol-793/#BeniFields>,
+        <http://ceur-ws.org/Vol-793/#BrianiMcFee>,
+        <http://ceur-ws.org/Vol-793/#PauliLamere> .
 

@@ -1,11 +1,11 @@
 @prefix ns1: <http://xmlns.com/foaf/0.1/> .
 @prefix ns2: <http://www.w3.org/2002/07/owl#> .
-@prefix ns3: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns4: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns3: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns4: <http://data.semanticweb.org/ns/swc/ontology/#> .
 @prefix ns5: <http://swrc.ontoware.org/ontology/#> .
 @prefix ns6: <http://purl.org/ontology/bibo/#> .
-@prefix ns7: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix ns9: <http://purl.org/dc/elements/1.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -177,12 +177,12 @@
     ns1:made <http://ceur-ws.org/Vol-289/#po01> ;
     ns1:name "Yuval Krymolowski" .
 
-<http://ceur-ws.org/Vol-289/#event> a ns3:WorkshopEvent ;
-    ns3:hasLocation <http://dbpedia.org/resource/Canada> ;
-    ns3:hasPart <http://ceur-ws.org/Vol-289/#part-CEUR-WS> ;
-    ns3:isSubEventOf <http://ceur-ws.org/Vol-289/#conf> ;
-    ns8:beginsAtDatetime "2007-10-29T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:endsAtDatetime "2007-10-29T00:00:00+00:00"^^xsd:dateTime ;
+<http://ceur-ws.org/Vol-289/#event> a ns4:WorkshopEvent ;
+    ns4:hasLocation <http://dbpedia.org/resource/Canada> ;
+    ns4:hasPart <http://ceur-ws.org/Vol-289/#part-SAAKM> ;
+    ns4:isSubEventOf <http://ceur-ws.org/Vol-289/#conf> ;
+    ns7:beginsAtDatetime "2007-10-28T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:endsAtDatetime "2007-10-31T00:00:00+00:00"^^xsd:dateTime ;
     ns9:license "http://choosealicense.com/licenses/no-license/" .
 
 <http://ceur-ws.org/Vol-289/#NigeliCollier> a ns1:Person ;
@@ -192,94 +192,94 @@
     ns1:made <http://ceur-ws.org/Vol-289/#po01> ;
     ns1:name "Nigel Collier" .
 
-<http://ceur-ws.org/Vol-289/#Posters> a ns3:SessionEvent ;
-    ns3:partOf <http://ceur-ws.org/Vol-289/> ;
-    ns7:title "Posters" .
+<http://ceur-ws.org/Vol-289/#Posters> a ns4:SessionEvent ;
+    ns4:partOf <http://ceur-ws.org/Vol-289/> ;
+    ns3:title "Posters" .
 
-<http://ceur-ws.org/Vol-289/#p02> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-289/> ;
-    ns7:title "Semantic Annotation of Mobile Data for Language Access" ;
+<http://ceur-ws.org/Vol-289/#p02> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-289/> ;
+    ns3:title "Semantic Annotation of Mobile Data for Language Access" ;
     ns6:section <http://ceur-ws.org/Vol-289/#FullPapers> ;
     ns5:author <http://ceur-ws.org/Vol-289/#AlexanderiRan>,
         <http://ceur-ws.org/Vol-289/#RaimondasiLencevicius> .
 
-<http://ceur-ws.org/Vol-289/#p04> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-289/> ;
-    ns7:title "Why Real-World Multimedia Assets Fail to Enter the Semantic Web" ;
+<http://ceur-ws.org/Vol-289/#p04> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-289/> ;
+    ns3:title "Why Real-World Multimedia Assets Fail to Enter the Semantic Web" ;
     ns6:section <http://ceur-ws.org/Vol-289/#FullPapers> ;
     ns5:author <http://ceur-ws.org/Vol-289/#MichaeliHausenblas>,
         <http://ceur-ws.org/Vol-289/#TobiasiB%C3%BCrger> .
 
-<http://ceur-ws.org/Vol-289/#p07> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-289/> ;
-    ns7:title "Learning Term to Concept Mapping Through Verbs: A Case Study" ;
+<http://ceur-ws.org/Vol-289/#p07> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-289/> ;
+    ns3:title "Learning Term to Concept Mapping Through Verbs: A Case Study" ;
     ns6:section <http://ceur-ws.org/Vol-289/#FullPapers> ;
     ns5:author <http://ceur-ws.org/Vol-289/#SylvieiDespr%C3%A8s>,
         <http://ceur-ws.org/Vol-289/#ValentinaiCeausu> .
 
-<http://ceur-ws.org/Vol-289/#po02> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-289/> ;
-    ns7:title "Syntactic Disambiguation for the Semantic Web" ;
+<http://ceur-ws.org/Vol-289/#po02> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-289/> ;
+    ns3:title "Syntactic Disambiguation for the Semantic Web" ;
     ns6:section <http://ceur-ws.org/Vol-289/#Posters> ;
     ns5:author <http://ceur-ws.org/Vol-289/#JonathaniPool>,
         <http://ceur-ws.org/Vol-289/#SusaniM.iColowick> .
 
-<http://ceur-ws.org/Vol-289/#p01> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-289/> ;
-    ns7:title "Markups for Knowledge Wikis" ;
+<http://ceur-ws.org/Vol-289/#p01> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-289/> ;
+    ns3:title "Markups for Knowledge Wikis" ;
     ns6:section <http://ceur-ws.org/Vol-289/#FullPapers> ;
     ns5:author <http://ceur-ws.org/Vol-289/#FrankiPuppe>,
         <http://ceur-ws.org/Vol-289/#JoachimiBaumeister>,
         <http://ceur-ws.org/Vol-289/#JocheniReutelshoefer> .
 
-<http://ceur-ws.org/Vol-289/#p03> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-289/> ;
-    ns7:title "Knowledge Capturing Tools for Domain Experts" ;
+<http://ceur-ws.org/Vol-289/#p03> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-289/> ;
+    ns3:title "Knowledge Capturing Tools for Domain Experts" ;
     ns6:section <http://ceur-ws.org/Vol-289/#FullPapers> ;
     ns5:author <http://ceur-ws.org/Vol-289/#AndreasiWagner>,
         <http://ceur-ws.org/Vol-289/#LarsiBr%C3%B6cker>,
         <http://ceur-ws.org/Vol-289/#MarciR%C3%B6ssler> .
 
-<http://ceur-ws.org/Vol-289/#p05> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-289/> ;
-    ns7:title "Semantic Excavation of the City of Books" ;
+<http://ceur-ws.org/Vol-289/#p05> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-289/> ;
+    ns3:title "Semantic Excavation of the City of Books" ;
     ns6:section <http://ceur-ws.org/Vol-289/#FullPapers> ;
     ns5:author <http://ceur-ws.org/Vol-289/#AnnaiTordai>,
         <http://ceur-ws.org/Vol-289/#BorysiOmelayenko>,
         <http://ceur-ws.org/Vol-289/#GuusiSchreiber> .
 
-<http://ceur-ws.org/Vol-289/#po01> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-289/> ;
-    ns7:title "Towards a methodology for entity error analysis in annotated corpora" ;
+<http://ceur-ws.org/Vol-289/#po01> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-289/> ;
+    ns3:title "Towards a methodology for entity error analysis in annotated corpora" ;
     ns6:section <http://ceur-ws.org/Vol-289/#Posters> ;
     ns5:author <http://ceur-ws.org/Vol-289/#NigeliCollier>,
         <http://ceur-ws.org/Vol-289/#QiiWei>,
         <http://ceur-ws.org/Vol-289/#YuvaliKrymolowski> .
 
-<http://ceur-ws.org/Vol-289/#p06> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-289/> ;
-    ns7:title "OntoBlog: Linking Ontology and Blogs" ;
+<http://ceur-ws.org/Vol-289/#p06> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-289/> ;
+    ns3:title "OntoBlog: Linking Ontology and Blogs" ;
     ns6:section <http://ceur-ws.org/Vol-289/#FullPapers> ;
     ns5:author <http://ceur-ws.org/Vol-289/#AmaniShakya>,
         <http://ceur-ws.org/Vol-289/#HideakiiTakeda>,
         <http://ceur-ws.org/Vol-289/#IkkiiOhmukai>,
         <http://ceur-ws.org/Vol-289/#VilasiWuwongse> .
 
-<http://ceur-ws.org/Vol-289/#p08> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-289/> ;
-    ns7:title "Ontology of Folksonomy: A New Modelling Method" ;
+<http://ceur-ws.org/Vol-289/#p08> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-289/> ;
+    ns3:title "Ontology of Folksonomy: A New Modelling Method" ;
     ns6:section <http://ceur-ws.org/Vol-289/#FullPapers> ;
     ns5:author <http://ceur-ws.org/Vol-289/#AlbertoiCordoba>,
         <http://ceur-ws.org/Vol-289/#FranciscoiEcharte>,
         <http://ceur-ws.org/Vol-289/#Jes%C3%BAsiVilladangos>,
         <http://ceur-ws.org/Vol-289/#Jos%C3%A9iJavieriAstrain> .
 
-<http://ceur-ws.org/Vol-289/#FullPapers> a ns3:SessionEvent ;
-    ns3:partOf <http://ceur-ws.org/Vol-289/> ;
-    ns7:title "Full Papers" .
+<http://ceur-ws.org/Vol-289/#FullPapers> a ns4:SessionEvent ;
+    ns4:partOf <http://ceur-ws.org/Vol-289/> ;
+    ns3:title "Full Papers" .
 
-<http://ceur-ws.org/Vol-289/> a ns3:Proceedings ;
-    ns3:hasPart <http://ceur-ws.org/Vol-289/#p01>,
+<http://ceur-ws.org/Vol-289/> a ns4:Proceedings ;
+    ns4:hasPart <http://ceur-ws.org/Vol-289/#p01>,
         <http://ceur-ws.org/Vol-289/#p02>,
         <http://ceur-ws.org/Vol-289/#p03>,
         <http://ceur-ws.org/Vol-289/#p04>,
@@ -289,9 +289,9 @@
         <http://ceur-ws.org/Vol-289/#p08>,
         <http://ceur-ws.org/Vol-289/#po01>,
         <http://ceur-ws.org/Vol-289/#po02> ;
-    ns3:hasSession <http://ceur-ws.org/Vol-289/#FullPapers>,
+    ns4:hasSession <http://ceur-ws.org/Vol-289/#FullPapers>,
         <http://ceur-ws.org/Vol-289/#Posters> ;
-    ns4:issued "2007-10-29T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:issued "2007-10-29T00:00:00+00:00"^^xsd:dateTime ;
     ns6:presentedAt <http://ceur-ws.org/Vol-289/#event> ;
     ns5:editor <http://ceur-ws.org/Vol-289/#AnitaideiWaard>,
         <http://ceur-ws.org/Vol-289/#MichaeliSintek>,

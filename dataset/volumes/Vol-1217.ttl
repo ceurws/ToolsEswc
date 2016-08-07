@@ -1,40 +1,172 @@
-@prefix ns1: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns2: <http://purl.org/dc/elements/1.1/> .
-@prefix ns3: <http://purl.org/ontology/bibo/#> .
-@prefix ns4: <http://xmlns.com/foaf/0.1/> .
-@prefix ns5: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns6: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns7: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns8: <http://www.w3.org/2002/07/owl#> .
+@prefix ns1: <http://purl.org/ontology/bibo/#> .
+@prefix ns2: <http://xmlns.com/foaf/0.1/> .
+@prefix ns3: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns4: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns5: <http://www.w3.org/2002/07/owl#> .
+@prefix ns6: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns9: <http://purl.org/dc/elements/1.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1217/> a ns7:Proceedings ;
-    ns6:issued "2014-08-15T00:00:00+00:00"^^xsd:dateTime ;
-    ns3:presentedAt <http://ceur-ws.org/Vol-1217/#event> ;
-    ns5:editor <http://ceur-ws.org/Vol-1217/#BirgitiPenzenstadler>,
+<http://ceur-ws.org/Vol-1217/#AllisoniCook> a ns2:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/AllisoniCook> ;
+    ns2:made <http://ceur-ws.org/Vol-1217/#paper1> ;
+    ns2:name "Allison Cook" .
+
+<http://ceur-ws.org/Vol-1217/#AndreaiHerrmann> a ns2:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/AndreaiHerrmann> ;
+    ns2:made <http://ceur-ws.org/Vol-1217/#paper5> ;
+    ns2:name "Andrea Herrmann" .
+
+<http://ceur-ws.org/Vol-1217/#BethiKarlin> a ns2:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/BethiKarlin> ;
+    ns2:made <http://ceur-ws.org/Vol-1217/#paper1> ;
+    ns2:name "Beth Karlin" .
+
+<http://ceur-ws.org/Vol-1217/#DavidiCallele> a ns2:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/DavidiCallele> ;
+    ns2:made <http://ceur-ws.org/Vol-1217/#paper1> ;
+    ns2:name "David Callele" .
+
+<http://ceur-ws.org/Vol-1217/#DebraiRichardson> a ns2:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/DebraiRichardson> ;
+    ns2:made <http://ceur-ws.org/Vol-1217/#paper1> ;
+    ns2:name "Debra Richardson" .
+
+<http://ceur-ws.org/Vol-1217/#GayaneiSedrakyan> a ns2:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/GayaneiSedrakyan> ;
+    ns2:made <http://ceur-ws.org/Vol-1217/#paper6> ;
+    ns2:name "Gayane Sedrakyan" .
+
+<http://ceur-ws.org/Vol-1217/#KrzysztofiWnuk> a ns2:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/KrzysztofiWnuk> ;
+    ns2:made <http://ceur-ws.org/Vol-1217/#paper1> ;
+    ns2:name "Krzysztof Wnuk" .
+
+<http://ceur-ws.org/Vol-1217/#LuisaiMich> a ns2:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/LuisaiMich> ;
+    ns2:made <http://ceur-ws.org/Vol-1217/#paper3> ;
+    ns2:name "Luisa Mich" .
+
+<http://ceur-ws.org/Vol-1217/#MoniqueiSnoeck> a ns2:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/MoniqueiSnoeck> ;
+    ns2:made <http://ceur-ws.org/Vol-1217/#paper6> ;
+    ns2:name "Monique Snoeck" .
+
+<http://ceur-ws.org/Vol-1217/#SarahiGregory> a ns2:Person ;
+    ns3:affiliation "" ;
+    ns5:sameAs <http://ceur-ws.org/persons/SarahiGregory> ;
+    ns2:name "Sarah Gregory" .
+
+<http://ceur-ws.org/Vol-1217/#YvonneiSedelmaier> a ns2:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/YvonneiSedelmaier> ;
+    ns2:made <http://ceur-ws.org/Vol-1217/#paper4> ;
+    ns2:name "Yvonne Sedelmaier" .
+
+<http://ceur-ws.org/Vol-1217/#event> a ns4:WorkshopEvent ;
+    ns4:hasLocation <http://dbpedia.org/resource/Sweden> ;
+    ns4:hasPart <http://ceur-ws.org/Vol-1217/#part-REET> ;
+    ns4:isSubEventOf <http://ceur-ws.org/Vol-1217/#conf> ;
+    ns7:beginsAtDatetime "2014-08-25T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:endsAtDatetime "2014-08-25T00:00:00+00:00"^^xsd:dateTime ;
+    ns9:license "http://choosealicense.com/licenses/no-license/" .
+
+<http://ceur-ws.org/Vol-1217/#AnneiHoffmann> a ns2:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/AnneiHoffmann> ;
+    ns2:made <http://ceur-ws.org/Vol-1217/#paper2>,
+        <http://ceur-ws.org/Vol-1217/#paper5> ;
+    ns2:name "Anne Hoffmann" .
+
+<http://ceur-ws.org/Vol-1217/#BirgitiPenzenstadler> a ns2:Person ;
+    ns3:affiliation "" ;
+    ns5:sameAs <http://ceur-ws.org/persons/BirgitiPenzenstadler> ;
+    ns2:made <http://ceur-ws.org/Vol-1217/#paper1> ;
+    ns2:name "Birgit Penzenstadler" .
+
+<http://ceur-ws.org/Vol-1217/#DieteriLandes> a ns2:Person ;
+    ns3:affiliation "" ;
+    ns5:sameAs <http://ceur-ws.org/persons/DieteriLandes> ;
+    ns2:made <http://ceur-ws.org/Vol-1217/#paper4> ;
+    ns2:name "Dieter Landes" .
+
+<http://ceur-ws.org/Vol-1217/#R%C3%BCdigeriWei%C3%9Fbach> a ns2:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/R%C3%BCdigeriWei%C3%9Fbach> ;
+    ns2:made <http://ceur-ws.org/Vol-1217/#paper2>,
+        <http://ceur-ws.org/Vol-1217/#paper5> ;
+    ns2:name "Rüdiger Weißbach" .
+
+<http://ceur-ws.org/Vol-1217/#paper3> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1217/> ;
+    ns6:title "Teaching Requirements Analysis: A Student Project Framework to Bridge the Gap between Business Analysis and Software Engineering" ;
+    ns1:endPage 25 ;
+    ns1:numPages 6 ;
+    ns1:startPage 20 ;
+    ns3:author <http://ceur-ws.org/Vol-1217/#LuisaiMich> .
+
+<http://ceur-ws.org/Vol-1217/#paper2> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1217/> ;
+    ns6:title "ImProject: Improving RE Trainings by Combining them with Improvisation Theatre Sessions A Research Proposal" ;
+    ns1:endPage 19 ;
+    ns1:numPages 9 ;
+    ns1:startPage 11 ;
+    ns3:author <http://ceur-ws.org/Vol-1217/#AnneiHoffmann>,
+        <http://ceur-ws.org/Vol-1217/#R%C3%BCdigeriWei%C3%9Fbach> .
+
+<http://ceur-ws.org/Vol-1217/#paper4> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1217/> ;
+    ns6:title "A Multi-Level Didactical Approach to Build up Competencies in Requirements Engineering" ;
+    ns1:endPage 34 ;
+    ns1:numPages 9 ;
+    ns1:startPage 26 ;
+    ns3:author <http://ceur-ws.org/Vol-1217/#DieteriLandes>,
+        <http://ceur-ws.org/Vol-1217/#YvonneiSedelmaier> .
+
+<http://ceur-ws.org/Vol-1217/#paper6> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1217/> ;
+    ns6:title "Do We Need to Teach Testing Skills in the Courses for Requirements Engineering?" ;
+    ns1:endPage 44 ;
+    ns1:numPages 5 ;
+    ns1:startPage 40 ;
+    ns3:author <http://ceur-ws.org/Vol-1217/#GayaneiSedrakyan>,
+        <http://ceur-ws.org/Vol-1217/#MoniqueiSnoeck> .
+
+<http://ceur-ws.org/Vol-1217/#paper5> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1217/> ;
+    ns6:title "Research on Intercultural Teaching for RE - Proposal for a Multi Case Study" ;
+    ns1:endPage 39 ;
+    ns1:numPages 5 ;
+    ns1:startPage 35 ;
+    ns3:author <http://ceur-ws.org/Vol-1217/#AndreaiHerrmann>,
+        <http://ceur-ws.org/Vol-1217/#AnneiHoffmann>,
+        <http://ceur-ws.org/Vol-1217/#R%C3%BCdigeriWei%C3%9Fbach> .
+
+<http://ceur-ws.org/Vol-1217/> a ns4:Proceedings ;
+    ns4:hasPart <http://ceur-ws.org/Vol-1217/#paper1>,
+        <http://ceur-ws.org/Vol-1217/#paper2>,
+        <http://ceur-ws.org/Vol-1217/#paper3>,
+        <http://ceur-ws.org/Vol-1217/#paper4>,
+        <http://ceur-ws.org/Vol-1217/#paper5>,
+        <http://ceur-ws.org/Vol-1217/#paper6> ;
+    ns8:issued "2014-08-15T00:00:00+00:00"^^xsd:dateTime ;
+    ns1:presentedAt <http://ceur-ws.org/Vol-1217/#event> ;
+    ns3:editor <http://ceur-ws.org/Vol-1217/#BirgitiPenzenstadler>,
         <http://ceur-ws.org/Vol-1217/#DieteriLandes>,
         <http://ceur-ws.org/Vol-1217/#SarahiGregory> .
 
-<http://ceur-ws.org/Vol-1217/#BirgitiPenzenstadler> a ns4:Person ;
-    ns8:sameAs <http://ceur-ws.org/persons/BirgitiPenzenstadler> ;
-    ns4:name "Birgit Penzenstadler" .
-
-<http://ceur-ws.org/Vol-1217/#DieteriLandes> a ns4:Person ;
-    ns8:sameAs <http://ceur-ws.org/persons/DieteriLandes> ;
-    ns4:name "Dieter Landes" .
-
-<http://ceur-ws.org/Vol-1217/#SarahiGregory> a ns4:Person ;
-    ns8:sameAs <http://ceur-ws.org/persons/SarahiGregory> ;
-    ns4:name "Sarah Gregory" .
-
-<http://ceur-ws.org/Vol-1217/#event> a ns7:WorkshopEvent ;
-    ns7:hasLocation <http://dbpedia.org/resource/Sweden> ;
-    ns7:hasPart <http://ceur-ws.org/Vol-1217/#part-ws> ;
-    ns7:isSubEventOf <http://ceur-ws.org/Vol-1217/#conf> ;
-    ns1:beginsAtDatetime "2014-08-25T00:00:00+00:00"^^xsd:dateTime ;
-    ns1:endsAtDatetime "2014-08-25T00:00:00+00:00"^^xsd:dateTime ;
-    ns2:license "http://choosealicense.com/licenses/no-license/" .
+<http://ceur-ws.org/Vol-1217/#paper1> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1217/> ;
+    ns6:title "Using Non-Profit Partners to Engage Students in RE" ;
+    ns1:endPage 10 ;
+    ns1:numPages 10 ;
+    ns1:startPage 1 ;
+    ns3:author <http://ceur-ws.org/Vol-1217/#AllisoniCook>,
+        <http://ceur-ws.org/Vol-1217/#BethiKarlin>,
+        <http://ceur-ws.org/Vol-1217/#BirgitiPenzenstadler>,
+        <http://ceur-ws.org/Vol-1217/#DavidiCallele>,
+        <http://ceur-ws.org/Vol-1217/#DebraiRichardson>,
+        <http://ceur-ws.org/Vol-1217/#KrzysztofiWnuk> .
 

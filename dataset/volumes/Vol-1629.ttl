@@ -1,43 +1,124 @@
-@prefix ns1: <http://xmlns.com/foaf/0.1/> .
-@prefix ns2: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns3: <http://www.w3.org/2002/07/owl#> .
-@prefix ns4: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns5: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns6: <http://purl.org/dc/elements/1.1/> .
-@prefix ns7: <http://purl.org/ontology/bibo/#> .
-@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns1: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns2: <http://www.w3.org/2002/07/owl#> .
+@prefix ns3: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns4: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns5: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns6: <http://xmlns.com/foaf/0.1/> .
+@prefix ns7: <http://purl.org/dc/elements/1.1/> .
+@prefix ns8: <http://purl.org/ontology/bibo/#> .
+@prefix ns9: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1629/> a ns5:Proceedings ;
-    ns8:issued "2016-07-09T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:presentedAt <http://ceur-ws.org/Vol-1629/#event> ;
-    ns4:editor <http://ceur-ws.org/Vol-1629/#FelixiLeifiKeppmann>,
-        <http://ceur-ws.org/Vol-1629/#MariaiMaleshkova>,
-        <http://ceur-ws.org/Vol-1629/#RubeniVerborgh> .
+<http://ceur-ws.org/Vol-1629/#AadiVersteden> a ns6:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/AadiVersteden> ;
+    ns6:made <http://ceur-ws.org/Vol-1629/#paper4> ;
+    ns6:name "Aad Versteden" .
 
-<http://ceur-ws.org/Vol-1629/#FelixiLeifiKeppmann> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/FelixiLeifiKeppmann> ;
-    ns1:name "Felix Leif Keppmann" .
+<http://ceur-ws.org/Vol-1629/#AlbertiMero%C3%B1o-Pe%C3%B1uela> a ns6:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/AlbertiMero%C3%B1o-Pe%C3%B1uela> ;
+    ns6:made <http://ceur-ws.org/Vol-1629/#paper7> ;
+    ns6:name "Albert Meroño-Peñuela" .
 
-<http://ceur-ws.org/Vol-1629/#MariaiMaleshkova> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/MariaiMaleshkova> ;
-    ns1:name "Maria Maleshkova" .
+<http://ceur-ws.org/Vol-1629/#FelixiLeifiKeppmann> a ns6:Person ;
+    ns3:affiliation "" ;
+    ns2:sameAs <http://ceur-ws.org/persons/FelixiLeifiKeppmann> ;
+    ns6:name "Felix Leif Keppmann" .
 
-<http://ceur-ws.org/Vol-1629/#RubeniVerborgh> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/RubeniVerborgh> ;
-    ns1:name "Ruben Verborgh" .
+<http://ceur-ws.org/Vol-1629/#MariaiMaleshkova> a ns6:Person ;
+    ns3:affiliation "" ;
+    ns2:sameAs <http://ceur-ws.org/persons/MariaiMaleshkova> ;
+    ns6:name "Maria Maleshkova" .
 
-<http://ceur-ws.org/Vol-1629/#event> a ns5:WorkshopEvent ;
-    ns5:hasLocation <http://dbpedia.org/resource/Greece> ;
-    ns5:hasPart <http://ceur-ws.org/Vol-1629/#part-APIs> ;
-    ns5:isSubEventOf <http://ceur-ws.org/Vol-1629/#conf> ;
-    ns2:beginsAtDatetime "2016-05-29T00:00:00+00:00"^^xsd:dateTime ;
-    ns2:endsAtDatetime "2016-05-29T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:license "http://creativecommons.org/publicdomain/zero/1.0/" ;
+<http://ceur-ws.org/Vol-1629/#MatthiasiFrank> a ns6:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/MatthiasiFrank> ;
+    ns6:made <http://ceur-ws.org/Vol-1629/#paper3> ;
+    ns6:name "Matthias Frank" .
+
+<http://ceur-ws.org/Vol-1629/#PierreiDeiVettor> a ns6:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/PierreiDeiVettor> ;
+    ns6:made <http://ceur-ws.org/Vol-1629/#paper1> ;
+    ns6:name "Pierre De Vettor" .
+
+<http://ceur-ws.org/Vol-1629/#RubeniVerborgh> a ns6:Person ;
+    ns3:affiliation "" ;
+    ns2:sameAs <http://ceur-ws.org/persons/RubeniVerborgh> ;
+    ns6:name "Ruben Verborgh" .
+
+<http://ceur-ws.org/Vol-1629/#SvetlanaiOmelkova> a ns6:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/SvetlanaiOmelkova> ;
+    ns6:made <http://ceur-ws.org/Vol-1629/#paper6> ;
+    ns6:name "Svetlana Omelkova" .
+
+<http://ceur-ws.org/Vol-1629/#TobiasiWeller> a ns6:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/TobiasiWeller> ;
+    ns6:made <http://ceur-ws.org/Vol-1629/#paper5> ;
+    ns6:name "Tobias Weller" .
+
+<http://ceur-ws.org/Vol-1629/#WenbiniLi> a ns6:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/WenbiniLi> ;
+    ns6:made <http://ceur-ws.org/Vol-1629/#paper2> ;
+    ns6:name "Wenbin Li" .
+
+<http://ceur-ws.org/Vol-1629/#event> a ns1:WorkshopEvent ;
+    ns1:hasLocation <http://dbpedia.org/resource/Greece> ;
+    ns1:hasPart <http://ceur-ws.org/Vol-1629/#part-APIs> ;
+    ns1:isSubEventOf <http://ceur-ws.org/Vol-1629/#conf> ;
+    ns4:beginsAtDatetime "2016-05-29T00:00:00+00:00"^^xsd:dateTime ;
+    ns4:endsAtDatetime "2016-05-29T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:license "http://creativecommons.org/publicdomain/zero/1.0/" ;
     rdfs:seeAlso <http://ceur-ws.org/Vol-1056/#event>,
         <http://ceur-ws.org/Vol-1165/#event>,
         <http://ceur-ws.org/Vol-1359/#event> .
+
+<http://ceur-ws.org/Vol-1629/#paper1> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1629/> ;
+    ns5:title "Towards Definition and Composition of Uncertain RESTful Resources" ;
+    ns3:author <http://ceur-ws.org/Vol-1629/#PierreiDeiVettor> .
+
+<http://ceur-ws.org/Vol-1629/#paper2> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1629/> ;
+    ns5:title "Cross-Fertilizing Data through Web of Things APIs with JSON-LD" ;
+    ns3:author <http://ceur-ws.org/Vol-1629/#WenbiniLi> .
+
+<http://ceur-ws.org/Vol-1629/#paper3> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1629/> ;
+    ns5:title "Smart Web Services for Big Spatio-Temporal Data in Geographical Information Systems" ;
+    ns3:author <http://ceur-ws.org/Vol-1629/#MatthiasiFrank> .
+
+<http://ceur-ws.org/Vol-1629/#paper4> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1629/> ;
+    ns5:title "State-of-the-art Web Applications using Microservices and Linked Data" ;
+    ns3:author <http://ceur-ws.org/Vol-1629/#AadiVersteden> .
+
+<http://ceur-ws.org/Vol-1629/#paper5> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1629/> ;
+    ns5:title "Cognitive Process Designer – An Open-Source Tool to Capture Processes according to the Linked Data Principles" ;
+    ns3:author <http://ceur-ws.org/Vol-1629/#TobiasiWeller> .
+
+<http://ceur-ws.org/Vol-1629/#paper6> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1629/> ;
+    ns5:title "Personal Web API Recommendation Using Network-based Inference" ;
+    ns3:author <http://ceur-ws.org/Vol-1629/#SvetlanaiOmelkova> .
+
+<http://ceur-ws.org/Vol-1629/#paper7> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1629/> ;
+    ns5:title "grlc Makes GitHub Taste Like Linked Data APIs" ;
+    ns3:author <http://ceur-ws.org/Vol-1629/#AlbertiMero%C3%B1o-Pe%C3%B1uela> .
+
+<http://ceur-ws.org/Vol-1629/> a ns1:Proceedings ;
+    ns1:hasPart <http://ceur-ws.org/Vol-1629/#paper1>,
+        <http://ceur-ws.org/Vol-1629/#paper2>,
+        <http://ceur-ws.org/Vol-1629/#paper3>,
+        <http://ceur-ws.org/Vol-1629/#paper4>,
+        <http://ceur-ws.org/Vol-1629/#paper5>,
+        <http://ceur-ws.org/Vol-1629/#paper6>,
+        <http://ceur-ws.org/Vol-1629/#paper7> ;
+    ns9:issued "2016-07-09T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:presentedAt <http://ceur-ws.org/Vol-1629/#event> ;
+    ns3:editor <http://ceur-ws.org/Vol-1629/#FelixiLeifiKeppmann>,
+        <http://ceur-ws.org/Vol-1629/#MariaiMaleshkova>,
+        <http://ceur-ws.org/Vol-1629/#RubeniVerborgh> .
 

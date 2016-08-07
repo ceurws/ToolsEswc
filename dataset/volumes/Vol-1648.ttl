@@ -1,40 +1,188 @@
-@prefix ns1: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns2: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns1: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns2: <http://purl.org/ontology/bibo/#> .
 @prefix ns3: <http://xmlns.com/foaf/0.1/> .
-@prefix ns4: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns5: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns4: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns5: <http://purl.org/dc/elements/1.1/#> .
 @prefix ns6: <http://www.w3.org/2002/07/owl#> .
-@prefix ns7: <http://purl.org/dc/elements/1.1/> .
-@prefix ns8: <http://purl.org/ontology/bibo/#> .
+@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns9: <http://purl.org/dc/elements/1.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1648/> a ns4:Proceedings ;
-    ns5:issued "2016-07-25T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:presentedAt <http://ceur-ws.org/Vol-1648/#event> ;
-    ns1:editor <http://ceur-ws.org/Vol-1648/#EnricoiPontelli>,
-        <http://ceur-ws.org/Vol-1648/#RomaniBartak>,
-        <http://ceur-ws.org/Vol-1648/#ThomasiLeoiMcCluskey> .
+<http://ceur-ws.org/Vol-1648/#BrentiMombourquette> a ns3:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/BrentiMombourquette> ;
+    ns3:made <http://ceur-ws.org/Vol-1648/#paper8> ;
+    ns3:name "Brent Mombourquette" .
 
 <http://ceur-ws.org/Vol-1648/#EnricoiPontelli> a ns3:Person ;
+    ns4:affiliation "" ;
     ns6:sameAs <http://ceur-ws.org/persons/EnricoiPontelli> ;
     ns3:name "Enrico Pontelli" .
 
-<http://ceur-ws.org/Vol-1648/#RomaniBartak> a ns3:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/RomaniBartak> ;
-    ns3:name "Roman Bartak" .
+<http://ceur-ws.org/Vol-1648/#IfeiAdebara> a ns3:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/IfeiAdebara> ;
+    ns3:made <http://ceur-ws.org/Vol-1648/#paper6> ;
+    ns3:name "Ife Adebara" .
+
+<http://ceur-ws.org/Vol-1648/#LeoniIllanes> a ns3:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/LeoniIllanes> ;
+    ns3:made <http://ceur-ws.org/Vol-1648/#paper9> ;
+    ns3:name "Leon Illanes" .
+
+<http://ceur-ws.org/Vol-1648/#MohaniSridharan> a ns3:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/MohaniSridharan> ;
+    ns3:made <http://ceur-ws.org/Vol-1648/#paper12> ;
+    ns3:name "Mohan Sridharan" .
+
+<http://ceur-ws.org/Vol-1648/#PamelaiCalvo> a ns3:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/PamelaiCalvo> ;
+    ns3:made <http://ceur-ws.org/Vol-1648/#paper7> ;
+    ns3:name "Pamela Calvo" .
+
+<http://ceur-ws.org/Vol-1648/#RacheliBen-Eliyahu-Zohary> a ns3:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/RacheliBen-Eliyahu-Zohary> ;
+    ns3:made <http://ceur-ws.org/Vol-1648/#paper1> ;
+    ns3:name "Rachel Ben-Eliyahu-Zohary" .
+
+<http://ceur-ws.org/Vol-1648/#RoxaneiKoitz> a ns3:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/RoxaneiKoitz> ;
+    ns3:made <http://ceur-ws.org/Vol-1648/#paper2> ;
+    ns3:name "Roxane Koitz" .
 
 <http://ceur-ws.org/Vol-1648/#ThomasiLeoiMcCluskey> a ns3:Person ;
+    ns4:affiliation "" ;
     ns6:sameAs <http://ceur-ws.org/persons/ThomasiLeoiMcCluskey> ;
     ns3:name "Thomas Leo McCluskey" .
 
-<http://ceur-ws.org/Vol-1648/#event> a ns4:WorkshopEvent ;
-    ns4:hasLocation <http://dbpedia.org/resource/United_States> ;
-    ns4:hasPart <http://ceur-ws.org/Vol-1648/#part-ws> ;
-    ns4:isSubEventOf <http://ceur-ws.org/Vol-1648/#conf> ;
-    ns2:beginsAtDatetime "2016-07-10T00:00:00+00:00"^^xsd:dateTime ;
-    ns2:endsAtDatetime "2016-07-10T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:license "http://creativecommons.org/publicdomain/zero/1.0/" .
+<http://ceur-ws.org/Vol-1648/#VeronicaiDahl> a ns3:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/VeronicaiDahl> ;
+    ns3:made <http://ceur-ws.org/Vol-1648/#invitedpaper1> ;
+    ns3:name "Veronica Dahl" .
+
+<http://ceur-ws.org/Vol-1648/#event> a ns1:WorkshopEvent ;
+    ns1:hasLocation <http://dbpedia.org/resource/United_States> ;
+    ns1:hasPart <http://ceur-ws.org/Vol-1648/#part-KnowProS> ;
+    ns1:isSubEventOf <http://ceur-ws.org/Vol-1648/#conf> ;
+    ns8:beginsAtDatetime "2016-07-10T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:endsAtDatetime "2016-07-10T00:00:00+00:00"^^xsd:dateTime ;
+    ns9:license "http://creativecommons.org/publicdomain/zero/1.0/" .
+
+<http://ceur-ws.org/Vol-1648/#AlbertoiCamacho> a ns3:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/AlbertoiCamacho> ;
+    ns3:made <http://ceur-ws.org/Vol-1648/#paper10>,
+        <http://ceur-ws.org/Vol-1648/#paper11> ;
+    ns3:name "Alberto Camacho" .
+
+<http://ceur-ws.org/Vol-1648/#KeynotePresentation> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-1648/> ;
+    ns5:title "Keynote Presentation" .
+
+<http://ceur-ws.org/Vol-1648/#RomaniBartak> a ns3:Person ;
+    ns4:affiliation "" ;
+    ns6:sameAs <http://ceur-ws.org/persons/RomaniBartak> ;
+    ns3:made <http://ceur-ws.org/Vol-1648/#paper4> ;
+    ns3:name "Roman Bartak" .
+
+<http://ceur-ws.org/Vol-1648/#invitedpaper1> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1648/> ;
+    ns5:title "The Modelling Beauty of Constraint Solving" ;
+    ns2:section <http://ceur-ws.org/Vol-1648/#KeynotePresentation> ;
+    ns4:author <http://ceur-ws.org/Vol-1648/#VeronicaiDahl> .
+
+<http://ceur-ws.org/Vol-1648/#paper1> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1648/> ;
+    ns5:title "Decomposing Minimal Models" ;
+    ns2:section <http://ceur-ws.org/Vol-1648/#Session2> ;
+    ns4:author <http://ceur-ws.org/Vol-1648/#RacheliBen-Eliyahu-Zohary> .
+
+<http://ceur-ws.org/Vol-1648/#paper10> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1648/> ;
+    ns5:title "Non-Deterministic Planning with Temporally Extended Goals: Completing the Story for Finite and Infinite LTL (Amended Version)" ;
+    ns2:section <http://ceur-ws.org/Vol-1648/#Session3> ;
+    ns4:author <http://ceur-ws.org/Vol-1648/#AlbertoiCamacho> .
+
+<http://ceur-ws.org/Vol-1648/#paper11> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1648/> ;
+    ns5:title "Strong-Cyclic Planning when Fairness is Not a Valid Assumption" ;
+    ns2:section <http://ceur-ws.org/Vol-1648/#Session3> ;
+    ns4:author <http://ceur-ws.org/Vol-1648/#AlbertoiCamacho> .
+
+<http://ceur-ws.org/Vol-1648/#paper12> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1648/> ;
+    ns5:title "Using Knowledge Representation and Reasoning Tools in the Design of Robots" ;
+    ns2:section <http://ceur-ws.org/Vol-1648/#Session2> ;
+    ns4:author <http://ceur-ws.org/Vol-1648/#MohaniSridharan> .
+
+<http://ceur-ws.org/Vol-1648/#paper2> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1648/> ;
+    ns5:title "On Structural Properties to Improve FMEA-Based Abductive Diagnosis" ;
+    ns2:section <http://ceur-ws.org/Vol-1648/#Session1> ;
+    ns4:author <http://ceur-ws.org/Vol-1648/#RoxaneiKoitz> .
+
+<http://ceur-ws.org/Vol-1648/#paper4> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1648/> ;
+    ns5:title "Multiple-Origin-Multiple-Destination Path Finding with Minimal Arc Usage: Complexity and Models" ;
+    ns2:section <http://ceur-ws.org/Vol-1648/#Session1> ;
+    ns4:author <http://ceur-ws.org/Vol-1648/#RomaniBartak> .
+
+<http://ceur-ws.org/Vol-1648/#paper6> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1648/> ;
+    ns5:title "Grammar Induction as Automated Transformation between Constraint Solving Models of Language" ;
+    ns2:section <http://ceur-ws.org/Vol-1648/#Session1> ;
+    ns4:author <http://ceur-ws.org/Vol-1648/#IfeiAdebara> .
+
+<http://ceur-ws.org/Vol-1648/#paper7> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1648/> ;
+    ns5:title "Assumption-Based Planning with Sensing via Contingent Planning" ;
+    ns2:section <http://ceur-ws.org/Vol-1648/#Session3> ;
+    ns4:author <http://ceur-ws.org/Vol-1648/#PamelaiCalvo> .
+
+<http://ceur-ws.org/Vol-1648/#paper8> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1648/> ;
+    ns5:title "Belief State Estimation for Planning via Approximate Logical Filtering and Smoothing" ;
+    ns2:section <http://ceur-ws.org/Vol-1648/#Session2> ;
+    ns4:author <http://ceur-ws.org/Vol-1648/#BrentiMombourquette> .
+
+<http://ceur-ws.org/Vol-1648/#paper9> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1648/> ;
+    ns5:title "Numeric Planning via Search Space Abstraction" ;
+    ns2:section <http://ceur-ws.org/Vol-1648/#Session3> ;
+    ns4:author <http://ceur-ws.org/Vol-1648/#LeoniIllanes> .
+
+<http://ceur-ws.org/Vol-1648/#Session1> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-1648/> ;
+    ns5:title "Session 1:" .
+
+<http://ceur-ws.org/Vol-1648/#Session2> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-1648/> ;
+    ns5:title "Session 2:" .
+
+<http://ceur-ws.org/Vol-1648/#Session3> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-1648/> ;
+    ns5:title "Session 3:" .
+
+<http://ceur-ws.org/Vol-1648/> a ns1:Proceedings ;
+    ns1:hasPart <http://ceur-ws.org/Vol-1648/#invitedpaper1>,
+        <http://ceur-ws.org/Vol-1648/#paper1>,
+        <http://ceur-ws.org/Vol-1648/#paper10>,
+        <http://ceur-ws.org/Vol-1648/#paper11>,
+        <http://ceur-ws.org/Vol-1648/#paper12>,
+        <http://ceur-ws.org/Vol-1648/#paper2>,
+        <http://ceur-ws.org/Vol-1648/#paper4>,
+        <http://ceur-ws.org/Vol-1648/#paper6>,
+        <http://ceur-ws.org/Vol-1648/#paper7>,
+        <http://ceur-ws.org/Vol-1648/#paper8>,
+        <http://ceur-ws.org/Vol-1648/#paper9> ;
+    ns1:hasSession <http://ceur-ws.org/Vol-1648/#KeynotePresentation>,
+        <http://ceur-ws.org/Vol-1648/#Session1>,
+        <http://ceur-ws.org/Vol-1648/#Session2>,
+        <http://ceur-ws.org/Vol-1648/#Session3> ;
+    ns7:issued "2016-07-25T00:00:00+00:00"^^xsd:dateTime ;
+    ns2:presentedAt <http://ceur-ws.org/Vol-1648/#event> ;
+    ns4:editor <http://ceur-ws.org/Vol-1648/#EnricoiPontelli>,
+        <http://ceur-ws.org/Vol-1648/#RomaniBartak>,
+        <http://ceur-ws.org/Vol-1648/#ThomasiLeoiMcCluskey> .
 

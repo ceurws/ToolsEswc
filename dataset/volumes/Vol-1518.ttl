@@ -1,55 +1,285 @@
-@prefix ns1: <http://xmlns.com/foaf/0.1/> .
-@prefix ns2: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns3: <http://www.w3.org/2002/07/owl#> .
-@prefix ns4: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns5: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns6: <http://purl.org/ontology/bibo/#> .
-@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns1: <http://purl.org/ontology/bibo/#> .
+@prefix ns2: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns3: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns4: <http://www.w3.org/2002/07/owl#> .
+@prefix ns5: <http://xmlns.com/foaf/0.1/> .
+@prefix ns6: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
 @prefix ns8: <http://purl.org/dc/elements/1.1/> .
+@prefix ns9: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1518/> a ns2:Proceedings ;
-    ns7:issued "2015-11-24T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:presentedAt <http://ceur-ws.org/Vol-1518/#event> ;
-    ns4:editor <http://ceur-ws.org/Vol-1518/#AbelardoiPardo>,
+<http://ceur-ws.org/Vol-1518/#AbelardoiPardo> a ns5:Person ;
+    ns2:affiliation "" ;
+    ns4:sameAs <http://ceur-ws.org/persons/AbelardoiPardo> ;
+    ns5:name "Abelardo Pardo" .
+
+<http://ceur-ws.org/Vol-1518/#AndyiNguyen> a ns5:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/AndyiNguyen> ;
+    ns5:made <http://ceur-ws.org/Vol-1518/#paper8> ;
+    ns5:name "Andy Nguyen" .
+
+<http://ceur-ws.org/Vol-1518/#AneeshaiBakharia> a ns5:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/AneeshaiBakharia> ;
+    ns5:made <http://ceur-ws.org/Vol-1518/#paper2> ;
+    ns5:name "Aneesha Bakharia" .
+
+<http://ceur-ws.org/Vol-1518/#ChristinaiM.iSteiner> a ns5:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/ChristinaiM.iSteiner> ;
+    ns5:made <http://ceur-ws.org/Vol-1518/#paper7> ;
+    ns5:name "Christina M. Steiner" .
+
+<http://ceur-ws.org/Vol-1518/#DenisiParra> a ns5:Person ;
+    ns2:affiliation "" ;
+    ns4:sameAs <http://ceur-ws.org/persons/DenisiParra> ;
+    ns5:name "Denis Parra" .
+
+<http://ceur-ws.org/Vol-1518/#DietrichiAlbert> a ns5:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/DietrichiAlbert> ;
+    ns5:made <http://ceur-ws.org/Vol-1518/#paper7> ;
+    ns5:name "Dietrich Albert" .
+
+<http://ceur-ws.org/Vol-1518/#G%C3%A1boriKismih%C3%B3k> a ns5:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/G%C3%A1boriKismih%C3%B3k> ;
+    ns5:made <http://ceur-ws.org/Vol-1518/#paper9> ;
+    ns5:name "Gábor Kismihók" .
+
+<http://ceur-ws.org/Vol-1518/#H.iUlrichiHoppe> a ns5:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/H.iUlrichiHoppe> ;
+    ns5:made <http://ceur-ws.org/Vol-1518/#paper4> ;
+    ns5:name "H. Ulrich Hoppe" .
+
+<http://ceur-ws.org/Vol-1518/#HendrikiDrachsler> a ns5:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/HendrikiDrachsler> ;
+    ns5:made <http://ceur-ws.org/Vol-1518/#paper3> ;
+    ns5:name "Hendrik Drachsler" .
+
+<http://ceur-ws.org/Vol-1518/#I-HaniHsiao> a ns5:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/I-HaniHsiao> ;
+    ns5:made <http://ceur-ws.org/Vol-1518/#paper5> ;
+    ns5:name "I-Han Hsiao" .
+
+<http://ceur-ws.org/Vol-1518/#KatjaiNiemann> a ns5:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/KatjaiNiemann> ;
+    ns5:made <http://ceur-ws.org/Vol-1518/#paper3> ;
+    ns5:name "Katja Niemann" .
+
+<http://ceur-ws.org/Vol-1518/#MarcusiSpecht> a ns5:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/MarcusiSpecht> ;
+    ns5:made <http://ceur-ws.org/Vol-1518/#paper3> ;
+    ns5:name "Marcus Specht" .
+
+<http://ceur-ws.org/Vol-1518/#MareniScheffel> a ns5:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/MareniScheffel> ;
+    ns5:made <http://ceur-ws.org/Vol-1518/#paper3> ;
+    ns5:name "Maren Scheffel" .
+
+<http://ceur-ws.org/Vol-1518/#MichaeliKickmeier-Rust> a ns5:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/MichaeliKickmeier-Rust> ;
+    ns5:made <http://ceur-ws.org/Vol-1518/#paper7> ;
+    ns5:name "Michael Kickmeier-Rust" .
+
+<http://ceur-ws.org/Vol-1518/#MikeiSharkey> a ns5:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/MikeiSharkey> ;
+    ns5:made <http://ceur-ws.org/Vol-1518/#paper8> ;
+    ns5:name "Mike Sharkey" .
+
+<http://ceur-ws.org/Vol-1518/#MohammediAnsari> a ns5:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/MohammediAnsari> ;
+    ns5:made <http://ceur-ws.org/Vol-1518/#paper8> ;
+    ns5:name "Mohammed Ansari" .
+
+<http://ceur-ws.org/Vol-1518/#PiyushiAwasthi> a ns5:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/PiyushiAwasthi> ;
+    ns5:made <http://ceur-ws.org/Vol-1518/#paper5> ;
+    ns5:name "Piyush Awasthi" .
+
+<http://ceur-ws.org/Vol-1518/#SarahiLe%C3%B3niRojas> a ns5:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/SarahiLe%C3%B3niRojas> ;
+    ns5:made <http://ceur-ws.org/Vol-1518/#paper3> ;
+    ns5:name "Sarah León Rojas" .
+
+<http://ceur-ws.org/Vol-1518/#ShaneiDawson> a ns5:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/ShaneiDawson> ;
+    ns5:made <http://ceur-ws.org/Vol-1518/#paper2> ;
+    ns5:name "Shane Dawson" .
+
+<http://ceur-ws.org/Vol-1518/#StefaniMol> a ns5:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/StefaniMol> ;
+    ns5:made <http://ceur-ws.org/Vol-1518/#paper9> ;
+    ns5:name "Stefan Mol" .
+
+<http://ceur-ws.org/Vol-1518/#SteniGovaertsDenisiGillet> a ns5:Person ;
+    ns2:affiliation "" ;
+    ns4:sameAs <http://ceur-ws.org/persons/SteniGovaertsDenisiGillet> ;
+    ns5:name "Sten GovaertsDenis Gillet" .
+
+<http://ceur-ws.org/Vol-1518/#SveniCharleer> a ns5:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/SveniCharleer> ;
+    ns5:made <http://ceur-ws.org/Vol-1518/#paper6> ;
+    ns5:name "Sven Charleer" .
+
+<http://ceur-ws.org/Vol-1518/#TobiasiHecking> a ns5:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/TobiasiHecking> ;
+    ns5:made <http://ceur-ws.org/Vol-1518/#paper4> ;
+    ns5:name "Tobias Hecking" .
+
+<http://ceur-ws.org/Vol-1518/#VladimeriKobayashi> a ns5:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/VladimeriKobayashi> ;
+    ns5:made <http://ceur-ws.org/Vol-1518/#paper9> ;
+    ns5:name "Vladimer Kobayashi" .
+
+<http://ceur-ws.org/Vol-1518/#event> a ns3:WorkshopEvent ;
+    ns3:hasLocation <http://dbpedia.org/resource/United_States> ;
+    ns3:hasPart <http://ceur-ws.org/Vol-1518/#part-VISLA> ;
+    ns3:isSubEventOf <http://ceur-ws.org/Vol-1518/#conf> ;
+    ns7:beginsAtDatetime "2015-03-16T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:endsAtDatetime "2015-03-20T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:license "http://creativecommons.org/publicdomain/zero/1.0/" .
+
+<http://ceur-ws.org/Vol-1518/#ErikiDuvalKatrieniVerbertJorisiKlerkx> a ns5:Person ;
+    ns2:affiliation "" ;
+    ns4:sameAs <http://ceur-ws.org/persons/ErikiDuvalKatrieniVerbertJorisiKlerkx> ;
+    ns5:made <http://ceur-ws.org/Vol-1518/#paper6> ;
+    ns5:name "Erik DuvalKatrien VerbertJoris Klerkx" .
+
+<http://ceur-ws.org/Vol-1518/#MartiniWolpers> a ns5:Person ;
+    ns2:affiliation "" ;
+    ns4:sameAs <http://ceur-ws.org/persons/MartiniWolpers> ;
+    ns5:made <http://ceur-ws.org/Vol-1518/#paper3> ;
+    ns5:name "Martin Wolpers" .
+
+<http://ceur-ws.org/Vol-1518/#XavieriOchoa> a ns5:Person ;
+    ns2:affiliation "" ;
+    ns4:sameAs <http://ceur-ws.org/persons/XavieriOchoa> ;
+    ns5:made <http://ceur-ws.org/Vol-1518/#paper1> ;
+    ns5:name "Xavier Ochoa" .
+
+<http://ceur-ws.org/Vol-1518/#paper1> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1518/> ;
+    ns6:title "Visualizing Uncertainty in the Prediction of Academic Risk" ;
+    ns1:endPage 10 ;
+    ns1:numPages 7 ;
+    ns1:section <http://ceur-ws.org/Vol-1518/#Session1VISLApapers> ;
+    ns1:startPage 4 ;
+    ns2:author <http://ceur-ws.org/Vol-1518/#XavieriOchoa> .
+
+<http://ceur-ws.org/Vol-1518/#Session2LAKDataChallenge> a ns3:SessionEvent ;
+    ns3:partOf <http://ceur-ws.org/Vol-1518/> ;
+    ns6:title "Session 2: LAK Data Challenge" .
+
+<http://ceur-ws.org/Vol-1518/#paper2> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1518/> ;
+    ns6:title "Using Sentence Compression to Develop Visual Analytics for Student Responses to Short Answer Questions" ;
+    ns1:endPage 13 ;
+    ns1:numPages 3 ;
+    ns1:section <http://ceur-ws.org/Vol-1518/#Session1VISLApapers> ;
+    ns1:startPage 11 ;
+    ns2:author <http://ceur-ws.org/Vol-1518/#AneeshaiBakharia>,
+        <http://ceur-ws.org/Vol-1518/#ShaneiDawson> .
+
+<http://ceur-ws.org/Vol-1518/#paper4> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1518/> ;
+    ns6:title "A Network Based Approach for the Visualization and Analysis of Collaboratively Edited Texts" ;
+    ns1:endPage 23 ;
+    ns1:numPages 5 ;
+    ns1:section <http://ceur-ws.org/Vol-1518/#Session1VISLApapers> ;
+    ns1:startPage 19 ;
+    ns2:author <http://ceur-ws.org/Vol-1518/#H.iUlrichiHoppe>,
+        <http://ceur-ws.org/Vol-1518/#TobiasiHecking> .
+
+<http://ceur-ws.org/Vol-1518/#paper5> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1518/> ;
+    ns6:title "INSIGHT: a Semantic Visual Analytics for Programming Discussion Forums" ;
+    ns1:endPage 31 ;
+    ns1:numPages 8 ;
+    ns1:section <http://ceur-ws.org/Vol-1518/#Session1VISLApapers> ;
+    ns1:startPage 24 ;
+    ns2:author <http://ceur-ws.org/Vol-1518/#I-HaniHsiao>,
+        <http://ceur-ws.org/Vol-1518/#PiyushiAwasthi> .
+
+<http://ceur-ws.org/Vol-1518/#paper6> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1518/> ;
+    ns6:title "Exploring Inquiry-Based Learning Analytics through Interactive Surfaces" ;
+    ns1:endPage 35 ;
+    ns1:numPages 4 ;
+    ns1:section <http://ceur-ws.org/Vol-1518/#Session1VISLApapers> ;
+    ns1:startPage 32 ;
+    ns2:author <http://ceur-ws.org/Vol-1518/#ErikiDuvalKatrieniVerbertJorisiKlerkx>,
+        <http://ceur-ws.org/Vol-1518/#SveniCharleer> .
+
+<http://ceur-ws.org/Vol-1518/#paper7> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1518/> ;
+    ns6:title "Uncovering Learning Processes Using Competence-based Knowledge Structuring and Hasse Diagrams" ;
+    ns1:endPage 40 ;
+    ns1:numPages 5 ;
+    ns1:section <http://ceur-ws.org/Vol-1518/#Session1VISLApapers> ;
+    ns1:startPage 36 ;
+    ns2:author <http://ceur-ws.org/Vol-1518/#ChristinaiM.iSteiner>,
+        <http://ceur-ws.org/Vol-1518/#DietrichiAlbert>,
+        <http://ceur-ws.org/Vol-1518/#MichaeliKickmeier-Rust> .
+
+<http://ceur-ws.org/Vol-1518/#paper8> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1518/> ;
+    ns6:title "LAK Explorer – A Fusion of Search Tools" ;
+    ns1:endPage 44 ;
+    ns1:numPages 4 ;
+    ns1:section <http://ceur-ws.org/Vol-1518/#Session2LAKDataChallenge> ;
+    ns1:startPage 41 ;
+    ns2:author <http://ceur-ws.org/Vol-1518/#AndyiNguyen>,
+        <http://ceur-ws.org/Vol-1518/#MikeiSharkey>,
+        <http://ceur-ws.org/Vol-1518/#MohammediAnsari> .
+
+<http://ceur-ws.org/Vol-1518/#paper9> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1518/> ;
+    ns6:title "Discovering Learning Antecedents in Learning Analytics Literature" ;
+    ns1:endPage 48 ;
+    ns1:numPages 4 ;
+    ns1:section <http://ceur-ws.org/Vol-1518/#Session2LAKDataChallenge> ;
+    ns1:startPage 45 ;
+    ns2:author <http://ceur-ws.org/Vol-1518/#G%C3%A1boriKismih%C3%B3k>,
+        <http://ceur-ws.org/Vol-1518/#StefaniMol>,
+        <http://ceur-ws.org/Vol-1518/#VladimeriKobayashi> .
+
+<http://ceur-ws.org/Vol-1518/#paper3> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1518/> ;
+    ns6:title "Getting a Grasp on Tag Collections by Visualising Tag Clusters Based on Higher-order Co-occurrences" ;
+    ns1:endPage 18 ;
+    ns1:numPages 5 ;
+    ns1:section <http://ceur-ws.org/Vol-1518/#Session1VISLApapers> ;
+    ns1:startPage 14 ;
+    ns2:author <http://ceur-ws.org/Vol-1518/#HendrikiDrachsler>,
+        <http://ceur-ws.org/Vol-1518/#KatjaiNiemann>,
+        <http://ceur-ws.org/Vol-1518/#MarcusiSpecht>,
+        <http://ceur-ws.org/Vol-1518/#MareniScheffel>,
+        <http://ceur-ws.org/Vol-1518/#MartiniWolpers>,
+        <http://ceur-ws.org/Vol-1518/#SarahiLe%C3%B3niRojas> .
+
+<http://ceur-ws.org/Vol-1518/#Session1VISLApapers> a ns3:SessionEvent ;
+    ns3:partOf <http://ceur-ws.org/Vol-1518/> ;
+    ns6:title "Session 1: VISLA papers" .
+
+<http://ceur-ws.org/Vol-1518/> a ns3:Proceedings ;
+    ns3:hasPart <http://ceur-ws.org/Vol-1518/#paper1>,
+        <http://ceur-ws.org/Vol-1518/#paper2>,
+        <http://ceur-ws.org/Vol-1518/#paper3>,
+        <http://ceur-ws.org/Vol-1518/#paper4>,
+        <http://ceur-ws.org/Vol-1518/#paper5>,
+        <http://ceur-ws.org/Vol-1518/#paper6>,
+        <http://ceur-ws.org/Vol-1518/#paper7>,
+        <http://ceur-ws.org/Vol-1518/#paper8>,
+        <http://ceur-ws.org/Vol-1518/#paper9> ;
+    ns3:hasSession <http://ceur-ws.org/Vol-1518/#Session1VISLApapers>,
+        <http://ceur-ws.org/Vol-1518/#Session2LAKDataChallenge> ;
+    ns9:issued "2015-11-24T00:00:00+00:00"^^xsd:dateTime ;
+    ns1:presentedAt <http://ceur-ws.org/Vol-1518/#event> ;
+    ns2:editor <http://ceur-ws.org/Vol-1518/#AbelardoiPardo>,
         <http://ceur-ws.org/Vol-1518/#DenisiParra>,
         <http://ceur-ws.org/Vol-1518/#ErikiDuvalKatrieniVerbertJorisiKlerkx>,
         <http://ceur-ws.org/Vol-1518/#MartiniWolpers>,
         <http://ceur-ws.org/Vol-1518/#SteniGovaertsDenisiGillet>,
         <http://ceur-ws.org/Vol-1518/#XavieriOchoa> .
-
-<http://ceur-ws.org/Vol-1518/#AbelardoiPardo> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/AbelardoiPardo> ;
-    ns1:name "Abelardo Pardo" .
-
-<http://ceur-ws.org/Vol-1518/#DenisiParra> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/DenisiParra> ;
-    ns1:name "Denis Parra" .
-
-<http://ceur-ws.org/Vol-1518/#ErikiDuvalKatrieniVerbertJorisiKlerkx> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/ErikiDuvalKatrieniVerbertJorisiKlerkx> ;
-    ns1:name "Erik DuvalKatrien VerbertJoris Klerkx" .
-
-<http://ceur-ws.org/Vol-1518/#MartiniWolpers> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/MartiniWolpers> ;
-    ns1:name "Martin Wolpers" .
-
-<http://ceur-ws.org/Vol-1518/#SteniGovaertsDenisiGillet> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/SteniGovaertsDenisiGillet> ;
-    ns1:name "Sten GovaertsDenis Gillet" .
-
-<http://ceur-ws.org/Vol-1518/#XavieriOchoa> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/XavieriOchoa> ;
-    ns1:name "Xavier Ochoa" .
-
-<http://ceur-ws.org/Vol-1518/#event> a ns2:WorkshopEvent ;
-    ns2:hasLocation <http://dbpedia.org/resource/United_States> ;
-    ns2:hasPart <http://ceur-ws.org/Vol-1518/#part-ws> ;
-    ns2:isSubEventOf <http://ceur-ws.org/Vol-1518/#conf> ;
-    ns5:beginsAtDatetime "2015-03-16T00:00:00+00:00"^^xsd:dateTime ;
-    ns5:endsAtDatetime "2015-03-20T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:license "http://creativecommons.org/publicdomain/zero/1.0/" .
 

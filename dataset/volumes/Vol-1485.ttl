@@ -1,33 +1,240 @@
-@prefix ns1: <http://www.w3.org/2002/07/owl#> .
-@prefix ns2: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns3: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns4: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns5: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns6: <http://xmlns.com/foaf/0.1/> .
-@prefix ns7: <http://purl.org/ontology/bibo/#> .
+@prefix ns1: <http://xmlns.com/foaf/0.1/> .
+@prefix ns2: <http://purl.org/ontology/bibo/#> .
+@prefix ns3: <http://www.w3.org/2002/07/owl#> .
+@prefix ns4: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns5: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns6: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1485/> a ns5:Proceedings ;
-    ns2:issued "2015-10-23T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:presentedAt <http://ceur-ws.org/Vol-1485/#event> ;
-    ns4:editor <http://ceur-ws.org/Vol-1485/#AlessioiBonfietti>,
+<http://ceur-ws.org/Vol-1485/#AlessioiBonfietti> a ns1:Person ;
+    ns5:affiliation "" ;
+    ns3:sameAs <http://ceur-ws.org/persons/AlessioiBonfietti> ;
+    ns1:name "Alessio Bonfietti" .
+
+<http://ceur-ws.org/Vol-1485/#AndreaiBartolini> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/AndreaiBartolini> ;
+    ns1:made <http://ceur-ws.org/Vol-1485/#paper7> ;
+    ns1:name "Andrea Bartolini" .
+
+<http://ceur-ws.org/Vol-1485/#AndreaiOmicini> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/AndreaiOmicini> ;
+    ns1:made <http://ceur-ws.org/Vol-1485/#paper5> ;
+    ns1:name "Andrea Omicini" .
+
+<http://ceur-ws.org/Vol-1485/#AssuntaiMatassa> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/AssuntaiMatassa> ;
+    ns1:made <http://ceur-ws.org/Vol-1485/#paper9> ;
+    ns1:name "Assunta Matassa" .
+
+<http://ceur-ws.org/Vol-1485/#EnricoiDenti> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/EnricoiDenti> ;
+    ns1:made <http://ceur-ws.org/Vol-1485/#paper5> ;
+    ns1:name "Enrico Denti" .
+
+<http://ceur-ws.org/Vol-1485/#GiuseppeiCota> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/GiuseppeiCota> ;
+    ns1:made <http://ceur-ws.org/Vol-1485/#paper2> ;
+    ns1:name "Giuseppe Cota" .
+
+<http://ceur-ws.org/Vol-1485/#IvaniDonadello> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/IvaniDonadello> ;
+    ns1:made <http://ceur-ws.org/Vol-1485/#paper4> ;
+    ns1:name "Ivan Donadello" .
+
+<http://ceur-ws.org/Vol-1485/#LauraiPandolfo> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/LauraiPandolfo> ;
+    ns1:made <http://ceur-ws.org/Vol-1485/#paper3> ;
+    ns1:name "Laura Pandolfo" .
+
+<http://ceur-ws.org/Vol-1485/#LucaiBenini> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/LucaiBenini> ;
+    ns1:made <http://ceur-ws.org/Vol-1485/#paper7> ;
+    ns1:name "Luca Benini" .
+
+<http://ceur-ws.org/Vol-1485/#MarcoiPolignano> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/MarcoiPolignano> ;
+    ns1:made <http://ceur-ws.org/Vol-1485/#paper8> ;
+    ns1:name "Marco Polignano" .
+
+<http://ceur-ws.org/Vol-1485/#MarcoideiGemmis> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/MarcoideiGemmis> ;
+    ns1:made <http://ceur-ws.org/Vol-1485/#paper8> ;
+    ns1:name "Marco de Gemmis" .
+
+<http://ceur-ws.org/Vol-1485/#MichelaiMilano> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/MichelaiMilano> ;
+    ns1:made <http://ceur-ws.org/Vol-1485/#paper7> ;
+    ns1:name "Michela Milano" .
+
+<http://ceur-ws.org/Vol-1485/#MicheleiLombardi> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/MicheleiLombardi> ;
+    ns1:made <http://ceur-ws.org/Vol-1485/#paper7> ;
+    ns1:name "Michele Lombardi" .
+
+<http://ceur-ws.org/Vol-1485/#RabiaiJilani> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/RabiaiJilani> ;
+    ns1:made <http://ceur-ws.org/Vol-1485/#paper6> ;
+    ns1:name "Rabia Jilani" .
+
+<http://ceur-ws.org/Vol-1485/#RobertaiCalegari> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/RobertaiCalegari> ;
+    ns1:made <http://ceur-ws.org/Vol-1485/#paper5> ;
+    ns1:name "Roberta Calegari" .
+
+<http://ceur-ws.org/Vol-1485/#ThomasiBridi> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/ThomasiBridi> ;
+    ns1:made <http://ceur-ws.org/Vol-1485/#paper7> ;
+    ns1:name "Thomas Bridi" .
+
+<http://ceur-ws.org/Vol-1485/#event> a ns4:WorkshopEvent ;
+    ns4:hasLocation <http://dbpedia.org/resource/Italy> ;
+    ns4:hasPart <http://ceur-ws.org/Vol-1485/#part-DC> ;
+    ns4:isSubEventOf <http://ceur-ws.org/Vol-1485/#conf> ;
+    ns8:beginsAtDatetime "2015-09-23T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:endsAtDatetime "2015-09-24T00:00:00+00:00"^^xsd:dateTime .
+
+<http://ceur-ws.org/Vol-1485/#EvelinaiLamma> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/EvelinaiLamma> ;
+    ns1:made <http://ceur-ws.org/Vol-1485/#paper1>,
+        <http://ceur-ws.org/Vol-1485/#paper2> ;
+    ns1:name "Evelina Lamma" .
+
+<http://ceur-ws.org/Vol-1485/#FabrizioiRiguzzi> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/FabrizioiRiguzzi> ;
+    ns1:made <http://ceur-ws.org/Vol-1485/#paper1>,
+        <http://ceur-ws.org/Vol-1485/#paper2> ;
+    ns1:name "Fabrizio Riguzzi" .
+
+<http://ceur-ws.org/Vol-1485/#RiccardoiZese> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/RiccardoiZese> ;
+    ns1:made <http://ceur-ws.org/Vol-1485/#paper1>,
+        <http://ceur-ws.org/Vol-1485/#paper2> ;
+    ns1:name "Riccardo Zese" .
+
+<http://ceur-ws.org/Vol-1485/#paper3> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1485/> ;
+    ns6:title "STOLE: A Reference Ontology for Historical Research Documents" ;
+    ns2:endPage 18 ;
+    ns2:numPages 6 ;
+    ns2:section <http://ceur-ws.org/Vol-1485/#Submissions> ;
+    ns2:startPage 13 ;
+    ns5:author <http://ceur-ws.org/Vol-1485/#LauraiPandolfo> .
+
+<http://ceur-ws.org/Vol-1485/#paper4> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1485/> ;
+    ns6:title "Ontology Based Semantic Image Interpretation" ;
+    ns2:endPage 24 ;
+    ns2:numPages 6 ;
+    ns2:section <http://ceur-ws.org/Vol-1485/#Submissions> ;
+    ns2:startPage 19 ;
+    ns5:author <http://ceur-ws.org/Vol-1485/#IvaniDonadello> .
+
+<http://ceur-ws.org/Vol-1485/#paper6> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1485/> ;
+    ns6:title "Learning Static Constraints for Domain Modeling from Training Plans" ;
+    ns2:endPage 36 ;
+    ns2:numPages 6 ;
+    ns2:section <http://ceur-ws.org/Vol-1485/#Submissions> ;
+    ns2:startPage 31 ;
+    ns5:author <http://ceur-ws.org/Vol-1485/#RabiaiJilani> .
+
+<http://ceur-ws.org/Vol-1485/#paper9> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1485/> ;
+    ns6:title "Interaction with a Personalised Smart Space for Enhancing Everyday Life" ;
+    ns2:endPage 54 ;
+    ns2:numPages 6 ;
+    ns2:section <http://ceur-ws.org/Vol-1485/#Submissions> ;
+    ns2:startPage 49 ;
+    ns5:author <http://ceur-ws.org/Vol-1485/#AssuntaiMatassa> .
+
+<http://ceur-ws.org/Vol-1485/#ElenaiBellodi> a ns1:Person ;
+    ns5:affiliation "" ;
+    ns3:sameAs <http://ceur-ws.org/persons/ElenaiBellodi> ;
+    ns1:made <http://ceur-ws.org/Vol-1485/#paper1>,
+        <http://ceur-ws.org/Vol-1485/#paper2> ;
+    ns1:name "Elena Bellodi" .
+
+<http://ceur-ws.org/Vol-1485/#paper8> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1485/> ;
+    ns6:title "Recommender Systems supporting Decision Making through Analysis of User Emotions and Personality" ;
+    ns2:endPage 48 ;
+    ns2:numPages 6 ;
+    ns2:section <http://ceur-ws.org/Vol-1485/#Submissions> ;
+    ns2:startPage 43 ;
+    ns5:author <http://ceur-ws.org/Vol-1485/#MarcoiPolignano>,
+        <http://ceur-ws.org/Vol-1485/#MarcoideiGemmis> .
+
+<http://ceur-ws.org/Vol-1485/#paper5> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1485/> ;
+    ns6:title "Labelled Variables in Logic Programming: A First Prototype in tuProlog" ;
+    ns2:endPage 30 ;
+    ns2:numPages 6 ;
+    ns2:section <http://ceur-ws.org/Vol-1485/#Submissions> ;
+    ns2:startPage 25 ;
+    ns5:author <http://ceur-ws.org/Vol-1485/#AndreaiOmicini>,
+        <http://ceur-ws.org/Vol-1485/#EnricoiDenti>,
+        <http://ceur-ws.org/Vol-1485/#RobertaiCalegari> .
+
+<http://ceur-ws.org/Vol-1485/#paper1> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1485/> ;
+    ns6:title "Tableau Reasoners for Probabilistic Ontologies Exploiting Logic Programming Techniques" ;
+    ns2:endPage 6 ;
+    ns2:numPages 6 ;
+    ns2:section <http://ceur-ws.org/Vol-1485/#Submissions> ;
+    ns2:startPage 1 ;
+    ns5:author <http://ceur-ws.org/Vol-1485/#ElenaiBellodi>,
+        <http://ceur-ws.org/Vol-1485/#EvelinaiLamma>,
+        <http://ceur-ws.org/Vol-1485/#FabrizioiRiguzzi>,
+        <http://ceur-ws.org/Vol-1485/#RiccardoiZese> .
+
+<http://ceur-ws.org/Vol-1485/#paper2> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1485/> ;
+    ns6:title "Learning Probabilistic Ontologies with Distributed Parameter Learning" ;
+    ns2:endPage 12 ;
+    ns2:numPages 6 ;
+    ns2:section <http://ceur-ws.org/Vol-1485/#Submissions> ;
+    ns2:startPage 7 ;
+    ns5:author <http://ceur-ws.org/Vol-1485/#ElenaiBellodi>,
+        <http://ceur-ws.org/Vol-1485/#EvelinaiLamma>,
+        <http://ceur-ws.org/Vol-1485/#FabrizioiRiguzzi>,
+        <http://ceur-ws.org/Vol-1485/#GiuseppeiCota>,
+        <http://ceur-ws.org/Vol-1485/#RiccardoiZese> .
+
+<http://ceur-ws.org/Vol-1485/#paper7> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1485/> ;
+    ns6:title "A CP Scheduler for High-Performance Computers" ;
+    ns2:endPage 42 ;
+    ns2:numPages 6 ;
+    ns2:section <http://ceur-ws.org/Vol-1485/#Submissions> ;
+    ns2:startPage 37 ;
+    ns5:author <http://ceur-ws.org/Vol-1485/#AndreaiBartolini>,
+        <http://ceur-ws.org/Vol-1485/#LucaiBenini>,
+        <http://ceur-ws.org/Vol-1485/#MichelaiMilano>,
+        <http://ceur-ws.org/Vol-1485/#MicheleiLombardi>,
+        <http://ceur-ws.org/Vol-1485/#ThomasiBridi> .
+
+<http://ceur-ws.org/Vol-1485/> a ns4:Proceedings ;
+    ns4:hasPart <http://ceur-ws.org/Vol-1485/#paper1>,
+        <http://ceur-ws.org/Vol-1485/#paper2>,
+        <http://ceur-ws.org/Vol-1485/#paper3>,
+        <http://ceur-ws.org/Vol-1485/#paper4>,
+        <http://ceur-ws.org/Vol-1485/#paper5>,
+        <http://ceur-ws.org/Vol-1485/#paper6>,
+        <http://ceur-ws.org/Vol-1485/#paper7>,
+        <http://ceur-ws.org/Vol-1485/#paper8>,
+        <http://ceur-ws.org/Vol-1485/#paper9> ;
+    ns4:hasSession <http://ceur-ws.org/Vol-1485/#Submissions> ;
+    ns7:issued "2015-10-23T00:00:00+00:00"^^xsd:dateTime ;
+    ns2:presentedAt <http://ceur-ws.org/Vol-1485/#event> ;
+    ns5:editor <http://ceur-ws.org/Vol-1485/#AlessioiBonfietti>,
         <http://ceur-ws.org/Vol-1485/#ElenaiBellodi> .
 
-<http://ceur-ws.org/Vol-1485/#AlessioiBonfietti> a ns6:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/AlessioiBonfietti> ;
-    ns6:name "Alessio Bonfietti" .
-
-<http://ceur-ws.org/Vol-1485/#ElenaiBellodi> a ns6:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/ElenaiBellodi> ;
-    ns6:name "Elena Bellodi" .
-
-<http://ceur-ws.org/Vol-1485/#event> a ns5:WorkshopEvent ;
-    ns5:hasLocation <http://dbpedia.org/resource/Italy> ;
-    ns5:hasPart <http://ceur-ws.org/Vol-1485/#part-DC> ;
-    ns5:isSubEventOf <http://ceur-ws.org/Vol-1485/#conf> ;
-    ns3:beginsAtDatetime "2015-09-23T00:00:00+00:00"^^xsd:dateTime ;
-    ns3:endsAtDatetime "2015-09-24T00:00:00+00:00"^^xsd:dateTime .
+<http://ceur-ws.org/Vol-1485/#Submissions> a ns4:SessionEvent ;
+    ns4:partOf <http://ceur-ws.org/Vol-1485/> ;
+    ns6:title "Submissions" .
 

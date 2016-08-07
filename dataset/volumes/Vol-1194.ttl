@@ -1,30 +1,169 @@
-@prefix ns1: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns2: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns3: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns4: <http://purl.org/dc/elements/1.1/> .
-@prefix ns5: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns1: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns2: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns3: <http://www.w3.org/2002/07/owl#> .
+@prefix ns4: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns5: <http://xmlns.com/foaf/0.1/> .
 @prefix ns6: <http://purl.org/ontology/bibo/#> .
-@prefix ns7: <http://xmlns.com/foaf/0.1/> .
-@prefix ns8: <http://www.w3.org/2002/07/owl#> .
+@prefix ns7: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns9: <http://purl.org/dc/elements/1.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1194/> a ns5:Proceedings ;
-    ns1:issued "2014-07-16T00:00:00+00:00"^^xsd:dateTime ;
+<http://ceur-ws.org/Vol-1194/#%28invitedipaper%29> a ns5:Person ;
+    ns5:made <http://ceur-ws.org/Vol-1194/#visceralISBI14-0> ;
+    ns5:name "(invited paper)" .
+
+<http://ceur-ws.org/Vol-1194/#%C3%96rjaniSmedby> a ns5:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/%C3%96rjaniSmedby> ;
+    ns5:made <http://ceur-ws.org/Vol-1194/#visceralISBI14-3> ;
+    ns5:name "Örjan Smedby" .
+
+<http://ceur-ws.org/Vol-1194/#AssafiB.iSpanier> a ns5:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/AssafiB.iSpanier> ;
+    ns5:made <http://ceur-ws.org/Vol-1194/#visceralISBI14-1> ;
+    ns5:name "Assaf B. Spanier" .
+
+<http://ceur-ws.org/Vol-1194/#ChengiHuang> a ns5:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/ChengiHuang> ;
+    ns5:made <http://ceur-ws.org/Vol-1194/#visceralISBI14-2> ;
+    ns5:name "Cheng Huang" .
+
+<http://ceur-ws.org/Vol-1194/#ChunliangiWang> a ns5:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/ChunliangiWang> ;
+    ns5:made <http://ceur-ws.org/Vol-1194/#visceralISBI14-3> ;
+    ns5:name "Chunliang Wang" .
+
+<http://ceur-ws.org/Vol-1194/#FucangiJia> a ns5:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/FucangiJia> ;
+    ns5:made <http://ceur-ws.org/Vol-1194/#visceralISBI14-2> ;
+    ns5:name "Fucang Jia" .
+
+<http://ceur-ws.org/Vol-1194/#GaboriSzekely> a ns5:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/GaboriSzekely> ;
+    ns5:made <http://ceur-ws.org/Vol-1194/#visceralISBI14-5> ;
+    ns5:name "Gabor Szekely" .
+
+<http://ceur-ws.org/Vol-1194/#HenningiM%C3%BCller> a ns5:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/HenningiM%C3%BCller> ;
+    ns5:made <http://ceur-ws.org/Vol-1194/#visceralISBI14-4> ;
+    ns5:name "Henning Müller" .
+
+<http://ceur-ws.org/Vol-1194/#LeoiJoskowicz> a ns5:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/LeoiJoskowicz> ;
+    ns5:made <http://ceur-ws.org/Vol-1194/#visceralISBI14-1> ;
+    ns5:name "Leo Joskowicz" .
+
+<http://ceur-ws.org/Vol-1194/#OscariAlfonsoiJim%C3%A9nezideliToro> a ns5:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/OscariAlfonsoiJim%C3%A9nezideliToro> ;
+    ns5:made <http://ceur-ws.org/Vol-1194/#visceralISBI14-4> ;
+    ns5:name "Oscar Alfonso Jiménez del Toro" .
+
+<http://ceur-ws.org/Vol-1194/#TobiasiGass> a ns5:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/TobiasiGass> ;
+    ns5:made <http://ceur-ws.org/Vol-1194/#visceralISBI14-5> ;
+    ns5:name "Tobias Gass" .
+
+<http://ceur-ws.org/Vol-1194/#XuhuiiLi> a ns5:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/XuhuiiLi> ;
+    ns5:made <http://ceur-ws.org/Vol-1194/#visceralISBI14-2> ;
+    ns5:name "Xuhui Li" .
+
+<http://ceur-ws.org/Vol-1194/#event> a ns1:WorkshopEvent ;
+    ns1:hasLocation <http://dbpedia.org/resource/China> ;
+    ns1:hasPart <http://ceur-ws.org/Vol-1194/#part-VISCERAL> ;
+    ns1:isSubEventOf <http://ceur-ws.org/Vol-1194/#conf> ;
+    ns2:beginsAtDatetime "2014-05-01T00:00:00+00:00"^^xsd:dateTime ;
+    ns2:endsAtDatetime "2014-05-01T00:00:00+00:00"^^xsd:dateTime ;
+    ns9:license "http://choosealicense.com/licenses/no-license/" .
+
+<http://ceur-ws.org/Vol-1194/#OrcuniGoksel> a ns5:Person ;
+    ns4:affiliation "" ;
+    ns3:sameAs <http://ceur-ws.org/persons/OrcuniGoksel> ;
+    ns5:made <http://ceur-ws.org/Vol-1194/#visceralISBI14-5> ;
+    ns5:name "Orcun Goksel" .
+
+<http://ceur-ws.org/Vol-1194/#PARTIOrganizationandEvaluation> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-1194/> ;
+    ns7:title "PART I: Organization and Evaluation" .
+
+<http://ceur-ws.org/Vol-1194/#visceralISBI14-0> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1194/> ;
+    ns7:title "VISCERAL - VISual Concept Extraction challenge in RAdioLogy: ISBI 2014 Challenge Organization" ;
+    ns6:endPage 15 ;
+    ns6:numPages 10 ;
+    ns6:section <http://ceur-ws.org/Vol-1194/#PARTIOrganizationandEvaluation> ;
+    ns6:startPage 6 ;
+    ns4:author <http://ceur-ws.org/Vol-1194/#%28invitedipaper%29> .
+
+<http://ceur-ws.org/Vol-1194/#visceralISBI14-1> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1194/> ;
+    ns7:title "Rule-Based Ventral Cavity Multi-Organ Automatic Segmentation in CT Scans" ;
+    ns6:endPage 21 ;
+    ns6:numPages 6 ;
+    ns6:section <http://ceur-ws.org/Vol-1194/#PARTIIParticipantSubmissions> ;
+    ns6:startPage 16 ;
+    ns4:author <http://ceur-ws.org/Vol-1194/#AssafiB.iSpanier>,
+        <http://ceur-ws.org/Vol-1194/#LeoiJoskowicz> .
+
+<http://ceur-ws.org/Vol-1194/#visceralISBI14-3> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1194/> ;
+    ns7:title "Automatic Multi-Organ Segmentation Using Fast Model Based Level Set Method and Hierarchical Shape Priors" ;
+    ns6:endPage 31 ;
+    ns6:numPages 7 ;
+    ns6:section <http://ceur-ws.org/Vol-1194/#PARTIIParticipantSubmissions> ;
+    ns6:startPage 25 ;
+    ns4:author <http://ceur-ws.org/Vol-1194/#%C3%96rjaniSmedby>,
+        <http://ceur-ws.org/Vol-1194/#ChunliangiWang> .
+
+<http://ceur-ws.org/Vol-1194/#visceralISBI14-4> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1194/> ;
+    ns7:title "Hierarchical Multi-structure Segmentation Guided by Anatomical Correlations" ;
+    ns6:endPage 36 ;
+    ns6:numPages 5 ;
+    ns6:section <http://ceur-ws.org/Vol-1194/#PARTIIParticipantSubmissions> ;
+    ns6:startPage 32 ;
+    ns4:author <http://ceur-ws.org/Vol-1194/#HenningiM%C3%BCller>,
+        <http://ceur-ws.org/Vol-1194/#OscariAlfonsoiJim%C3%A9nezideliToro> .
+
+<http://ceur-ws.org/Vol-1194/#visceralISBI14-2> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1194/> ;
+    ns7:title "Automatic Liver Segmentation Using Multiple Prior Knowledge Models and Free-Form Deformation" ;
+    ns6:endPage 24 ;
+    ns6:numPages 3 ;
+    ns6:section <http://ceur-ws.org/Vol-1194/#PARTIIParticipantSubmissions> ;
+    ns6:startPage 22 ;
+    ns4:author <http://ceur-ws.org/Vol-1194/#ChengiHuang>,
+        <http://ceur-ws.org/Vol-1194/#FucangiJia>,
+        <http://ceur-ws.org/Vol-1194/#XuhuiiLi> .
+
+<http://ceur-ws.org/Vol-1194/#visceralISBI14-5> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1194/> ;
+    ns7:title "Segmentation and Landmark Localization Based on Multiple Atlases" ;
+    ns6:endPage 43 ;
+    ns6:numPages 7 ;
+    ns6:section <http://ceur-ws.org/Vol-1194/#PARTIIParticipantSubmissions> ;
+    ns6:startPage 37 ;
+    ns4:author <http://ceur-ws.org/Vol-1194/#GaboriSzekely>,
+        <http://ceur-ws.org/Vol-1194/#OrcuniGoksel>,
+        <http://ceur-ws.org/Vol-1194/#TobiasiGass> .
+
+<http://ceur-ws.org/Vol-1194/#PARTIIParticipantSubmissions> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-1194/> ;
+    ns7:title "PART II: Participant Submissions" .
+
+<http://ceur-ws.org/Vol-1194/> a ns1:Proceedings ;
+    ns1:hasPart <http://ceur-ws.org/Vol-1194/#visceralISBI14-0>,
+        <http://ceur-ws.org/Vol-1194/#visceralISBI14-1>,
+        <http://ceur-ws.org/Vol-1194/#visceralISBI14-2>,
+        <http://ceur-ws.org/Vol-1194/#visceralISBI14-3>,
+        <http://ceur-ws.org/Vol-1194/#visceralISBI14-4>,
+        <http://ceur-ws.org/Vol-1194/#visceralISBI14-5> ;
+    ns1:hasSession <http://ceur-ws.org/Vol-1194/#PARTIIParticipantSubmissions>,
+        <http://ceur-ws.org/Vol-1194/#PARTIOrganizationandEvaluation> ;
+    ns8:issued "2014-07-16T00:00:00+00:00"^^xsd:dateTime ;
     ns6:presentedAt <http://ceur-ws.org/Vol-1194/#event> ;
-    ns2:editor <http://ceur-ws.org/Vol-1194/#OrcuniGoksel> .
-
-<http://ceur-ws.org/Vol-1194/#OrcuniGoksel> a ns7:Person ;
-    ns8:sameAs <http://ceur-ws.org/persons/OrcuniGoksel> ;
-    ns7:name "Orcun Goksel" .
-
-<http://ceur-ws.org/Vol-1194/#event> a ns5:WorkshopEvent ;
-    ns5:hasLocation <http://dbpedia.org/resource/China> ;
-    ns5:hasPart <http://ceur-ws.org/Vol-1194/#part-VISCERAL> ;
-    ns5:isSubEventOf <http://ceur-ws.org/Vol-1194/#conf> ;
-    ns3:beginsAtDatetime "2014-05-01T00:00:00+00:00"^^xsd:dateTime ;
-    ns3:endsAtDatetime "2014-05-01T00:00:00+00:00"^^xsd:dateTime ;
-    ns4:license "http://choosealicense.com/licenses/no-license/" .
+    ns4:editor <http://ceur-ws.org/Vol-1194/#OrcuniGoksel> .
 

@@ -1,34 +1,218 @@
-@prefix ns1: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns1: <http://xmlns.com/foaf/0.1/> .
 @prefix ns2: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns3: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns4: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns5: <http://xmlns.com/foaf/0.1/> .
+@prefix ns3: <http://purl.org/ontology/bibo/#> .
+@prefix ns4: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns5: <http://swrc.ontoware.org/ontology/#> .
 @prefix ns6: <http://www.w3.org/2002/07/owl#> .
-@prefix ns7: <http://purl.org/ontology/bibo/#> .
+@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1473/> a ns2:Proceedings ;
-    ns3:issued "2015-10-13T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:presentedAt <http://ceur-ws.org/Vol-1473/#event> ;
-    ns4:editor <http://ceur-ws.org/Vol-1473/#FrancescaiAlessandraiLisi>,
-        <http://ceur-ws.org/Vol-1473/#StefanoiBorgo> .
+<http://ceur-ws.org/Vol-1473/#AndreaiPeano> a ns1:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/AndreaiPeano> ;
+    ns1:made <http://ceur-ws.org/Vol-1473/#paper3> ;
+    ns1:name "Andrea Peano" .
 
-<http://ceur-ws.org/Vol-1473/#FrancescaiAlessandraiLisi> a ns5:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/FrancescaiAlessandraiLisi> ;
-    ns5:name "Francesca Alessandra Lisi" .
+<http://ceur-ws.org/Vol-1473/#CarloiPoloni> a ns1:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/CarloiPoloni> ;
+    ns1:made <http://ceur-ws.org/Vol-1473/#intro1> ;
+    ns1:name "Carlo Poloni" .
 
-<http://ceur-ws.org/Vol-1473/#StefanoiBorgo> a ns5:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/StefanoiBorgo> ;
-    ns5:name "Stefano Borgo" .
+<http://ceur-ws.org/Vol-1473/#ClaudioiMasolo> a ns1:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/ClaudioiMasolo> ;
+    ns1:made <http://ceur-ws.org/Vol-1473/#paper6> ;
+    ns1:name "Claudio Masolo" .
+
+<http://ceur-ws.org/Vol-1473/#DanieleiBaratta> a ns1:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/DanieleiBaratta> ;
+    ns1:made <http://ceur-ws.org/Vol-1473/#paper1> ;
+    ns1:name "Daniele Baratta" .
+
+<http://ceur-ws.org/Vol-1473/#DanieleiPorello> a ns1:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/DanieleiPorello> ;
+    ns1:made <http://ceur-ws.org/Vol-1473/#paper6> ;
+    ns1:name "Daniele Porello" .
+
+<http://ceur-ws.org/Vol-1473/#EmilioiM.iSanfilippo> a ns1:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/EmilioiM.iSanfilippo> ;
+    ns1:made <http://ceur-ws.org/Vol-1473/#paper6> ;
+    ns1:name "Emilio M. Sanfilippo" .
+
+<http://ceur-ws.org/Vol-1473/#MaddalenaiNonato> a ns1:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/MaddalenaiNonato> ;
+    ns1:made <http://ceur-ws.org/Vol-1473/#paper3> ;
+    ns1:name "Maddalena Nonato" .
+
+<http://ceur-ws.org/Vol-1473/#MarcoiGavanelli> a ns1:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/MarcoiGavanelli> ;
+    ns1:made <http://ceur-ws.org/Vol-1473/#paper3> ;
+    ns1:name "Marco Gavanelli" .
+
+<http://ceur-ws.org/Vol-1473/#MariaiRosariaiStufanoiMelone> a ns1:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/MariaiRosariaiStufanoiMelone> ;
+    ns1:made <http://ceur-ws.org/Vol-1473/#paper4> ;
+    ns1:name "Maria Rosaria Stufano Melone" .
+
+<http://ceur-ws.org/Vol-1473/#MassimilianoiCarrara> a ns1:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/MassimilianoiCarrara> ;
+    ns1:made <http://ceur-ws.org/Vol-1473/#paper2> ;
+    ns1:name "Massimiliano Carrara" .
+
+<http://ceur-ws.org/Vol-1473/#NicolaiGuarino> a ns1:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/NicolaiGuarino> ;
+    ns1:made <http://ceur-ws.org/Vol-1473/#paper4> ;
+    ns1:name "Nicola Guarino" .
+
+<http://ceur-ws.org/Vol-1473/#NikolaosiVlavianos> a ns1:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/NikolaosiVlavianos> ;
+    ns1:made <http://ceur-ws.org/Vol-1473/#paper7> ;
+    ns1:name "Nikolaos Vlavianos" .
+
+<http://ceur-ws.org/Vol-1473/#PaweliGarbacz> a ns1:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/PaweliGarbacz> ;
+    ns1:made <http://ceur-ws.org/Vol-1473/#paper2> ;
+    ns1:name "Pawel Garbacz" .
+
+<http://ceur-ws.org/Vol-1473/#PieteriE.iVermaas> a ns1:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/PieteriE.iVermaas> ;
+    ns1:made <http://ceur-ws.org/Vol-1473/#paper2> ;
+    ns1:name "Pieter E. Vermaas" .
+
+<http://ceur-ws.org/Vol-1473/#StavrosiVassos> a ns1:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/StavrosiVassos> ;
+    ns1:made <http://ceur-ws.org/Vol-1473/#paper7> ;
+    ns1:name "Stavros Vassos" .
+
+<http://ceur-ws.org/Vol-1473/#TakehikoiNagakura> a ns1:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/TakehikoiNagakura> ;
+    ns1:made <http://ceur-ws.org/Vol-1473/#paper7> ;
+    ns1:name "Takehiko Nagakura" .
 
 <http://ceur-ws.org/Vol-1473/#event> a ns2:WorkshopEvent ;
     ns2:hasLocation <http://dbpedia.org/resource/Italy> ;
-    ns2:hasPart <http://ceur-ws.org/Vol-1473/#part-IA>,
-        <http://ceur-ws.org/Vol-1473/#part-XIV> ;
+    ns2:hasPart <http://ceur-ws.org/Vol-1473/#part-AIDE> ;
     ns2:isSubEventOf <http://ceur-ws.org/Vol-1473/#conf> ;
-    ns1:beginsAtDatetime "2015-09-22T00:00:00+00:00"^^xsd:dateTime ;
-    ns1:endsAtDatetime "2015-09-22T00:00:00+00:00"^^xsd:dateTime .
+    ns7:beginsAtDatetime "2015-09-22T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:endsAtDatetime "2015-09-22T00:00:00+00:00"^^xsd:dateTime .
+
+<http://ceur-ws.org/Vol-1473/#AbstractofInvitedTalk> a ns2:SessionEvent ;
+    ns2:partOf <http://ceur-ws.org/Vol-1473/> ;
+    ns4:title "Abstract of Invited Talk" .
+
+<http://ceur-ws.org/Vol-1473/#FrancescaiAlessandraiLisi> a ns1:Person ;
+    ns5:affiliation "" ;
+    ns6:sameAs <http://ceur-ws.org/persons/FrancescaiAlessandraiLisi> ;
+    ns1:made <http://ceur-ws.org/Vol-1473/#paper5> ;
+    ns1:name "Francesca Alessandra Lisi" .
+
+<http://ceur-ws.org/Vol-1473/#StefanoiBorgo> a ns1:Person ;
+    ns5:affiliation "" ;
+    ns6:sameAs <http://ceur-ws.org/persons/StefanoiBorgo> ;
+    ns1:made <http://ceur-ws.org/Vol-1473/#paper2> ;
+    ns1:name "Stefano Borgo" .
+
+<http://ceur-ws.org/Vol-1473/#intro1> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1473/> ;
+    ns4:title "AI Tools in the Design Process of Industrial Products" ;
+    ns3:endPage 1 ;
+    ns3:numPages 1 ;
+    ns3:section <http://ceur-ws.org/Vol-1473/#AbstractofInvitedTalk> ;
+    ns3:startPage 1 ;
+    ns5:author <http://ceur-ws.org/Vol-1473/#CarloiPoloni> .
+
+<http://ceur-ws.org/Vol-1473/#paper1> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1473/> ;
+    ns4:title "Industrial Collaborative Robot Design: a Guideline for Future Design Activity" ;
+    ns3:endPage 8 ;
+    ns3:numPages 7 ;
+    ns3:section <http://ceur-ws.org/Vol-1473/#ResearchContributions> ;
+    ns3:startPage 2 ;
+    ns5:author <http://ceur-ws.org/Vol-1473/#DanieleiBaratta> .
+
+<http://ceur-ws.org/Vol-1473/#paper5> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1473/> ;
+    ns4:title "Will AI ever Support Design Thinking?" ;
+    ns3:endPage 40 ;
+    ns3:numPages 8 ;
+    ns3:section <http://ceur-ws.org/Vol-1473/#ResearchContributions> ;
+    ns3:startPage 33 ;
+    ns5:author <http://ceur-ws.org/Vol-1473/#FrancescaiAlessandraiLisi> .
+
+<http://ceur-ws.org/Vol-1473/#paper4> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1473/> ;
+    ns4:title "On the Ontological Status of Design Objects" ;
+    ns3:endPage 32 ;
+    ns3:numPages 6 ;
+    ns3:section <http://ceur-ws.org/Vol-1473/#ResearchContributions> ;
+    ns3:startPage 27 ;
+    ns5:author <http://ceur-ws.org/Vol-1473/#MariaiRosariaiStufanoiMelone>,
+        <http://ceur-ws.org/Vol-1473/#NicolaiGuarino> .
+
+<http://ceur-ws.org/Vol-1473/#paper3> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1473/> ;
+    ns4:title "The Isolation System Design in Hydraulic Networks" ;
+    ns3:endPage 26 ;
+    ns3:numPages 6 ;
+    ns3:section <http://ceur-ws.org/Vol-1473/#ResearchContributions> ;
+    ns3:startPage 21 ;
+    ns5:author <http://ceur-ws.org/Vol-1473/#AndreaiPeano>,
+        <http://ceur-ws.org/Vol-1473/#MaddalenaiNonato>,
+        <http://ceur-ws.org/Vol-1473/#MarcoiGavanelli> .
+
+<http://ceur-ws.org/Vol-1473/#paper6> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1473/> ;
+    ns4:title "Design Knowledge Representation: An Ontological Perspective" ;
+    ns3:endPage 54 ;
+    ns3:numPages 14 ;
+    ns3:section <http://ceur-ws.org/Vol-1473/#ResearchContributions> ;
+    ns3:startPage 41 ;
+    ns5:author <http://ceur-ws.org/Vol-1473/#ClaudioiMasolo>,
+        <http://ceur-ws.org/Vol-1473/#DanieleiPorello>,
+        <http://ceur-ws.org/Vol-1473/#EmilioiM.iSanfilippo> .
+
+<http://ceur-ws.org/Vol-1473/#paper7> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1473/> ;
+    ns4:title "Towards a Novel Method for Architectural Design through μ-Concepts and Computational Intelligence" ;
+    ns3:endPage 60 ;
+    ns3:numPages 6 ;
+    ns3:section <http://ceur-ws.org/Vol-1473/#ResearchContributions> ;
+    ns3:startPage 55 ;
+    ns5:author <http://ceur-ws.org/Vol-1473/#NikolaosiVlavianos>,
+        <http://ceur-ws.org/Vol-1473/#StavrosiVassos>,
+        <http://ceur-ws.org/Vol-1473/#TakehikoiNagakura> .
+
+<http://ceur-ws.org/Vol-1473/#paper2> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1473/> ;
+    ns4:title "A Formalization of Ashok Goel's SBF Concept of Function" ;
+    ns3:endPage 20 ;
+    ns3:numPages 12 ;
+    ns3:section <http://ceur-ws.org/Vol-1473/#ResearchContributions> ;
+    ns3:startPage 9 ;
+    ns5:author <http://ceur-ws.org/Vol-1473/#MassimilianoiCarrara>,
+        <http://ceur-ws.org/Vol-1473/#PaweliGarbacz>,
+        <http://ceur-ws.org/Vol-1473/#PieteriE.iVermaas>,
+        <http://ceur-ws.org/Vol-1473/#StefanoiBorgo> .
+
+<http://ceur-ws.org/Vol-1473/#ResearchContributions> a ns2:SessionEvent ;
+    ns2:partOf <http://ceur-ws.org/Vol-1473/> ;
+    ns4:title "Research Contributions" .
+
+<http://ceur-ws.org/Vol-1473/> a ns2:Proceedings ;
+    ns2:hasPart <http://ceur-ws.org/Vol-1473/#intro1>,
+        <http://ceur-ws.org/Vol-1473/#paper1>,
+        <http://ceur-ws.org/Vol-1473/#paper2>,
+        <http://ceur-ws.org/Vol-1473/#paper3>,
+        <http://ceur-ws.org/Vol-1473/#paper4>,
+        <http://ceur-ws.org/Vol-1473/#paper5>,
+        <http://ceur-ws.org/Vol-1473/#paper6>,
+        <http://ceur-ws.org/Vol-1473/#paper7> ;
+    ns2:hasSession <http://ceur-ws.org/Vol-1473/#AbstractofInvitedTalk>,
+        <http://ceur-ws.org/Vol-1473/#ResearchContributions> ;
+    ns8:issued "2015-10-13T00:00:00+00:00"^^xsd:dateTime ;
+    ns3:presentedAt <http://ceur-ws.org/Vol-1473/#event> ;
+    ns5:editor <http://ceur-ws.org/Vol-1473/#FrancescaiAlessandraiLisi>,
+        <http://ceur-ws.org/Vol-1473/#StefanoiBorgo> .
 

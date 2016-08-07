@@ -1,44 +1,421 @@
-@prefix ns1: <http://xmlns.com/foaf/0.1/> .
-@prefix ns2: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns3: <http://www.w3.org/2002/07/owl#> .
-@prefix ns4: <http://purl.org/ontology/bibo/#> .
-@prefix ns5: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns6: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns1: <http://www.w3.org/2002/07/owl#> .
+@prefix ns2: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns3: <http://xmlns.com/foaf/0.1/> .
+@prefix ns4: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns5: <http://purl.org/ontology/bibo/#> .
+@prefix ns6: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns7: <http://purl.org/dc/elements/1.1/#> .
 @prefix ns8: <http://purl.org/dc/elements/1.1/> .
+@prefix ns9: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1127/> a ns6:Proceedings ;
-    ns5:issued "2014-02-14T00:00:00+00:00"^^xsd:dateTime ;
-    ns4:presentedAt <http://ceur-ws.org/Vol-1127/#event> ;
-    ns2:editor <http://ceur-ws.org/Vol-1127/#FabioiCrestani>,
-        <http://ceur-ws.org/Vol-1127/#MarcoiPennacchiotti>,
-        <http://ceur-ws.org/Vol-1127/#RobertoiBasili> .
+<http://ceur-ws.org/Vol-1127/#AndreaiCiapetti> a ns3:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/AndreaiCiapetti> ;
+    ns3:made <http://ceur-ws.org/Vol-1127/#paper8> ;
+    ns3:name "Andrea Ciapetti" .
 
-<http://ceur-ws.org/Vol-1127/#FabioiCrestani> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/FabioiCrestani> ;
-    ns1:name "Fabio Crestani" .
+<http://ceur-ws.org/Vol-1127/#ArjumandiYounus> a ns3:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/ArjumandiYounus> ;
+    ns3:made <http://ceur-ws.org/Vol-1127/#paper11> ;
+    ns3:name "Arjumand Younus" .
 
-<http://ceur-ws.org/Vol-1127/#MarcoiPennacchiotti> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/MarcoiPennacchiotti> ;
-    ns1:name "Marco Pennacchiotti" .
+<http://ceur-ws.org/Vol-1127/#CataldoiMusto> a ns3:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/CataldoiMusto> ;
+    ns3:made <http://ceur-ws.org/Vol-1127/#paper6> ;
+    ns3:name "Cataldo Musto" .
 
-<http://ceur-ws.org/Vol-1127/#RobertoiBasili> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/RobertoiBasili> ;
-    ns1:name "Roberto Basili" .
+<http://ceur-ws.org/Vol-1127/#ClaudiaiMeloni> a ns3:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/ClaudiaiMeloni> ;
+    ns3:made <http://ceur-ws.org/Vol-1127/#paper6> ;
+    ns3:name "Claudia Meloni" .
 
-<http://ceur-ws.org/Vol-1127/#event> a ns6:WorkshopEvent ;
-    ns6:hasLocation <http://dbpedia.org/resource/Italy> ;
-    ns6:hasPart <http://ceur-ws.org/Vol-1127/#part-ws> ;
-    ns6:isSubEventOf <http://ceur-ws.org/Vol-1127/#conf> ;
-    ns7:beginsAtDatetime "2014-01-20T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:endsAtDatetime "2014-01-21T00:00:00+00:00"^^xsd:dateTime ;
+<http://ceur-ws.org/Vol-1127/#CristinaiIoanaiMuntean> a ns3:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/CristinaiIoanaiMuntean> ;
+    ns3:made <http://ceur-ws.org/Vol-1127/#paper10> ;
+    ns3:name "Cristina Ioana Muntean" .
+
+<http://ceur-ws.org/Vol-1127/#DaniloiCroce> a ns3:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/DaniloiCroce> ;
+    ns3:made <http://ceur-ws.org/Vol-1127/#paper8> ;
+    ns3:name "Danilo Croce" .
+
+<http://ceur-ws.org/Vol-1127/#EddyiMaddalena> a ns3:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/EddyiMaddalena> ;
+    ns3:made <http://ceur-ws.org/Vol-1127/#paper2> ;
+    ns3:name "Eddy Maddalena" .
+
+<http://ceur-ws.org/Vol-1127/#EmanueleiDiiBuccio> a ns3:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/EmanueleiDiiBuccio> ;
+    ns3:made <http://ceur-ws.org/Vol-1127/#paper1> ;
+    ns3:name "Emanuele Di Buccio" .
+
+<http://ceur-ws.org/Vol-1127/#EugenioiDiiSciascio> a ns3:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/EugenioiDiiSciascio> ;
+    ns3:made <http://ceur-ws.org/Vol-1127/#paper4> ;
+    ns3:name "Eugenio Di Sciascio" .
+
+<http://ceur-ws.org/Vol-1127/#FabianaiZollo> a ns3:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/FabianaiZollo> ;
+    ns3:made <http://ceur-ws.org/Vol-1127/#paper3> ;
+    ns3:name "Fabiana Zollo" .
+
+<http://ceur-ws.org/Vol-1127/#FabioiCrestani> a ns3:Person ;
+    ns5:place <http://dbpedia.org/resource/Switzerland> ;
+    ns4:affiliation "University of Lugano (USI)" ;
+    ns1:sameAs <http://ceur-ws.org/persons/FabioiCrestani> ;
+    ns3:name "Fabio Crestani" .
+
+<http://ceur-ws.org/Vol-1127/#FabrizioiSilvestri> a ns3:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/FabrizioiSilvestri> ;
+    ns3:made <http://ceur-ws.org/Vol-1127/#paper10> ;
+    ns3:name "Fabrizio Silvestri" .
+
+<http://ceur-ws.org/Vol-1127/#FedelucioiNarducci> a ns3:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/FedelucioiNarducci> ;
+    ns3:made <http://ceur-ws.org/Vol-1127/#paper6> ;
+    ns3:name "Fedelucio Narducci" .
+
+<http://ceur-ws.org/Vol-1127/#FrancoiF.iOrsucci> a ns3:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/FrancoiF.iOrsucci> ;
+    ns3:made <http://ceur-ws.org/Vol-1127/#paper6> ;
+    ns3:name "Franco F. Orsucci" .
+
+<http://ceur-ws.org/Vol-1127/#FrancoiMariaiNardini> a ns3:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/FrancoiMariaiNardini> ;
+    ns3:made <http://ceur-ws.org/Vol-1127/#paper10> ;
+    ns3:name "Franco Maria Nardini" .
+
+<http://ceur-ws.org/Vol-1127/#GiambattistaiAmati> a ns3:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/GiambattistaiAmati> ;
+    ns3:made <http://ceur-ws.org/Vol-1127/#paper7> ;
+    ns3:name "Giambattista Amati" .
+
+<http://ceur-ws.org/Vol-1127/#GiovanniiSemeraro> a ns3:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/GiovanniiSemeraro> ;
+    ns3:made <http://ceur-ws.org/Vol-1127/#paper6> ;
+    ns3:name "Giovanni Semeraro" .
+
+<http://ceur-ws.org/Vol-1127/#GiuliaiPaoloni> a ns3:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/GiuliaiPaoloni> ;
+    ns3:made <http://ceur-ws.org/Vol-1127/#paper6> ;
+    ns3:name "Giulia Paoloni" .
+
+<http://ceur-ws.org/Vol-1127/#GiuseppeiMarcone> a ns3:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/GiuseppeiMarcone> ;
+    ns3:made <http://ceur-ws.org/Vol-1127/#paper7> ;
+    ns3:name "Giuseppe Marcone" .
+
+<http://ceur-ws.org/Vol-1127/#IvanoiMasiero> a ns3:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/IvanoiMasiero> ;
+    ns3:made <http://ceur-ws.org/Vol-1127/#paper1> ;
+    ns3:name "Ivano Masiero" .
+
+<http://ceur-ws.org/Vol-1127/#LucianaiBordoni> a ns3:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/LucianaiBordoni> ;
+    ns3:made <http://ceur-ws.org/Vol-1127/#paper6> ;
+    ns3:name "Luciana Bordoni" .
+
+<http://ceur-ws.org/Vol-1127/#MarcoiBianchi> a ns3:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/MarcoiBianchi> ;
+    ns3:made <http://ceur-ws.org/Vol-1127/#paper7> ;
+    ns3:name "Marco Bianchi" .
+
+<http://ceur-ws.org/Vol-1127/#MarcoiPennacchiotti> a ns3:Person ;
+    ns5:place <http://dbpedia.org/resource/United_States> ;
+    ns4:affiliation "eBay Inc." ;
+    ns1:sameAs <http://ceur-ws.org/persons/MarcoiPennacchiotti> ;
+    ns3:name "Marco Pennacchiotti" .
+
+<http://ceur-ws.org/Vol-1127/#MarcoideiGemmis> a ns3:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/MarcoideiGemmis> ;
+    ns3:made <http://ceur-ws.org/Vol-1127/#paper6> ;
+    ns3:name "Marco de Gemmis" .
+
+<http://ceur-ws.org/Vol-1127/#MassimoiMelucci> a ns3:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/MassimoiMelucci> ;
+    ns3:made <http://ceur-ws.org/Vol-1127/#paper1> ;
+    ns3:name "Massimo Melucci" .
+
+<http://ceur-ws.org/Vol-1127/#MauroiAnnunziato> a ns3:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/MauroiAnnunziato> ;
+    ns3:made <http://ceur-ws.org/Vol-1127/#paper6> ;
+    ns3:name "Mauro Annunziato" .
+
+<http://ceur-ws.org/Vol-1127/#MichelangeloiRubino> a ns3:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/MichelangeloiRubino> ;
+    ns3:made <http://ceur-ws.org/Vol-1127/#paper5> ;
+    ns3:name "Michelangelo Rubino" .
+
+<http://ceur-ws.org/Vol-1127/#MuhammadiAtifiQureshi> a ns3:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/MuhammadiAtifiQureshi> ;
+    ns3:made <http://ceur-ws.org/Vol-1127/#paper9> ;
+    ns3:name "Muhammad Atif Qureshi" .
+
+<http://ceur-ws.org/Vol-1127/#PaoloiSalvatore> a ns3:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/PaoloiSalvatore> ;
+    ns3:made <http://ceur-ws.org/Vol-1127/#paper8> ;
+    ns3:name "Paolo Salvatore" .
+
+<http://ceur-ws.org/Vol-1127/#PasqualeiLops> a ns3:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/PasqualeiLops> ;
+    ns3:made <http://ceur-ws.org/Vol-1127/#paper6> ;
+    ns3:name "Pasquale Lops" .
+
+<http://ceur-ws.org/Vol-1127/#RanieriiBaraglia> a ns3:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/RanieriiBaraglia> ;
+    ns3:made <http://ceur-ws.org/Vol-1127/#paper10> ;
+    ns3:name "Ranieri Baraglia" .
+
+<http://ceur-ws.org/Vol-1127/#RobertoiMirizzi> a ns3:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/RobertoiMirizzi> ;
+    ns3:made <http://ceur-ws.org/Vol-1127/#paper4> ;
+    ns3:name "Roberto Mirizzi" .
+
+<http://ceur-ws.org/Vol-1127/#StefanoiMizzaro> a ns3:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/StefanoiMizzaro> ;
+    ns3:made <http://ceur-ws.org/Vol-1127/#paper2> ;
+    ns3:name "Stefano Mizzaro" .
+
+<http://ceur-ws.org/Vol-1127/#TommasoiDiiNoia> a ns3:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/TommasoiDiiNoia> ;
+    ns3:made <http://ceur-ws.org/Vol-1127/#paper4> ;
+    ns3:name "Tommaso Di Noia" .
+
+<http://ceur-ws.org/Vol-1127/#ValentinaiFranzoni> a ns3:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/ValentinaiFranzoni> ;
+    ns3:made <http://ceur-ws.org/Vol-1127/#paper3> ;
+    ns3:name "Valentina Franzoni" .
+
+<http://ceur-ws.org/Vol-1127/#ValentinaiPoggioni> a ns3:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/ValentinaiPoggioni> ;
+    ns3:made <http://ceur-ws.org/Vol-1127/#paper3> ;
+    ns3:name "Valentina Poggioni" .
+
+<http://ceur-ws.org/Vol-1127/#ValeriaiMarino> a ns3:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/ValeriaiMarino> ;
+    ns3:made <http://ceur-ws.org/Vol-1127/#paper8> ;
+    ns3:name "Valeria Marino" .
+
+<http://ceur-ws.org/Vol-1127/#ValerioiStorch> a ns3:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/ValerioiStorch> ;
+    ns3:made <http://ceur-ws.org/Vol-1127/#paper8> ;
+    ns3:name "Valerio Storch" .
+
+<http://ceur-ws.org/Vol-1127/#VitoiClaudioiOstuni> a ns3:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/VitoiClaudioiOstuni> ;
+    ns3:made <http://ceur-ws.org/Vol-1127/#paper4> ;
+    ns3:name "Vito Claudio Ostuni" .
+
+<http://ceur-ws.org/Vol-1127/#VittoriaiCozza> a ns3:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/VittoriaiCozza> ;
+    ns3:made <http://ceur-ws.org/Vol-1127/#paper5> ;
+    ns3:name "Vittoria Cozza" .
+
+<http://ceur-ws.org/Vol-1127/#event> a ns2:WorkshopEvent ;
+    ns2:hasLocation <http://dbpedia.org/resource/Italy> ;
+    ns2:hasPart <http://ceur-ws.org/Vol-1127/#part-IIR> ;
+    ns2:isSubEventOf <http://ceur-ws.org/Vol-1127/#conf> ;
+    ns6:beginsAtDatetime "2014-01-20T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:endsAtDatetime "2014-01-21T00:00:00+00:00"^^xsd:dateTime ;
     ns8:license "http://choosealicense.com/licenses/no-license/" ;
     rdfs:seeAlso <http://ceur-ws.org/Vol-560/#event>,
         <http://ceur-ws.org/Vol-704/#event>,
         <http://ceur-ws.org/Vol-835/#event>,
         <http://ceur-ws.org/Vol-964/#event> .
+
+<http://ceur-ws.org/Vol-1127/#ColmiO%E2%80%99Riordan> a ns3:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/ColmiO%E2%80%99Riordan> ;
+    ns3:made <http://ceur-ws.org/Vol-1127/#paper11>,
+        <http://ceur-ws.org/Vol-1127/#paper9> ;
+    ns3:name "Colm O’Riordan" .
+
+<http://ceur-ws.org/Vol-1127/#GabriellaiPasi> a ns3:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/GabriellaiPasi> ;
+    ns3:made <http://ceur-ws.org/Vol-1127/#paper11>,
+        <http://ceur-ws.org/Vol-1127/#paper9> ;
+    ns3:name "Gabriella Pasi" .
+
+<http://ceur-ws.org/Vol-1127/#RobertoiBasili> a ns3:Person ;
+    ns5:place <http://dbpedia.org/resource/Italy> ;
+    ns4:affiliation "University of Roma, Tor Vergata" ;
+    ns1:sameAs <http://ceur-ws.org/persons/RobertoiBasili> ;
+    ns3:made <http://ceur-ws.org/Vol-1127/#paper8> ;
+    ns3:name "Roberto Basili" .
+
+<http://ceur-ws.org/Vol-1127/#Session1Theory> a ns2:SessionEvent ;
+    ns2:partOf <http://ceur-ws.org/Vol-1127/> ;
+    ns7:title "Session 1: Theory" .
+
+<http://ceur-ws.org/Vol-1127/#Session2ClassificationandRecommendation> a ns2:SessionEvent ;
+    ns2:partOf <http://ceur-ws.org/Vol-1127/> ;
+    ns7:title "Session 2: Classification and Recommendation" .
+
+<http://ceur-ws.org/Vol-1127/#Session3Semantics> a ns2:SessionEvent ;
+    ns2:partOf <http://ceur-ws.org/Vol-1127/> ;
+    ns7:title "Session 3: Semantics" .
+
+<http://ceur-ws.org/Vol-1127/#Session5Applications> a ns2:SessionEvent ;
+    ns2:partOf <http://ceur-ws.org/Vol-1127/> ;
+    ns7:title "Session 5: Applications" .
+
+<http://ceur-ws.org/Vol-1127/#paper2> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1127/> ;
+    ns7:title "The Axiometrics Project" ;
+    ns5:endPage 15 ;
+    ns5:numPages 5 ;
+    ns5:section <http://ceur-ws.org/Vol-1127/#Session1Theory> ;
+    ns5:startPage 11 ;
+    ns4:author <http://ceur-ws.org/Vol-1127/#EddyiMaddalena>,
+        <http://ceur-ws.org/Vol-1127/#StefanoiMizzaro> .
+
+<http://ceur-ws.org/Vol-1127/#paper5> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1127/> ;
+    ns7:title "Detection of Similar Terrorist Events" ;
+    ns5:endPage 33 ;
+    ns5:numPages 6 ;
+    ns5:section <http://ceur-ws.org/Vol-1127/#Session3Semantics> ;
+    ns5:startPage 28 ;
+    ns4:author <http://ceur-ws.org/Vol-1127/#MichelangeloiRubino>,
+        <http://ceur-ws.org/Vol-1127/#VittoriaiCozza> .
+
+<http://ceur-ws.org/Vol-1127/#Session4NaturalLanguageProcessing> a ns2:SessionEvent ;
+    ns2:partOf <http://ceur-ws.org/Vol-1127/> ;
+    ns7:title "Session 4: Natural Language Processing" .
+
+<http://ceur-ws.org/Vol-1127/#paper1> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1127/> ;
+    ns7:title "Evaluation of a Recursive Weighting Scheme for Federated Web Search" ;
+    ns5:endPage 10 ;
+    ns5:numPages 10 ;
+    ns5:section <http://ceur-ws.org/Vol-1127/#Session1Theory> ;
+    ns5:startPage 1 ;
+    ns4:author <http://ceur-ws.org/Vol-1127/#EmanueleiDiiBuccio>,
+        <http://ceur-ws.org/Vol-1127/#IvanoiMasiero>,
+        <http://ceur-ws.org/Vol-1127/#MassimoiMelucci> .
+
+<http://ceur-ws.org/Vol-1127/#paper11> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1127/> ;
+    ns7:title "An Investigation into the Correlation between Willingness for Web Search Personalization and SNS Usage Patterns" ;
+    ns5:endPage 84 ;
+    ns5:numPages 5 ;
+    ns5:section <http://ceur-ws.org/Vol-1127/#Session5Applications> ;
+    ns5:startPage 80 ;
+    ns4:author <http://ceur-ws.org/Vol-1127/#ArjumandiYounus>,
+        <http://ceur-ws.org/Vol-1127/#ColmiO%E2%80%99Riordan>,
+        <http://ceur-ws.org/Vol-1127/#GabriellaiPasi> .
+
+<http://ceur-ws.org/Vol-1127/#paper3> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1127/> ;
+    ns7:title "Can We Infer Book Classification by Blurbs?" ;
+    ns5:endPage 19 ;
+    ns5:numPages 4 ;
+    ns5:section <http://ceur-ws.org/Vol-1127/#Session2ClassificationandRecommendation> ;
+    ns5:startPage 16 ;
+    ns4:author <http://ceur-ws.org/Vol-1127/#FabianaiZollo>,
+        <http://ceur-ws.org/Vol-1127/#ValentinaiFranzoni>,
+        <http://ceur-ws.org/Vol-1127/#ValentinaiPoggioni> .
+
+<http://ceur-ws.org/Vol-1127/#paper7> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1127/> ;
+    ns7:title "Sentiment Estimation on Twitter" ;
+    ns5:endPage 50 ;
+    ns5:numPages 12 ;
+    ns5:section <http://ceur-ws.org/Vol-1127/#Session4NaturalLanguageProcessing> ;
+    ns5:startPage 39 ;
+    ns4:author <http://ceur-ws.org/Vol-1127/#GiambattistaiAmati>,
+        <http://ceur-ws.org/Vol-1127/#GiuseppeiMarcone>,
+        <http://ceur-ws.org/Vol-1127/#MarcoiBianchi> .
+
+<http://ceur-ws.org/Vol-1127/#paper9> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1127/> ;
+    ns7:title "Exploiting Wikipedia to Identify Domain-Specific Key Terms/Phrases from a Short-Text Collection" ;
+    ns5:endPage 74 ;
+    ns5:numPages 12 ;
+    ns5:section <http://ceur-ws.org/Vol-1127/#Session4NaturalLanguageProcessing> ;
+    ns5:startPage 63 ;
+    ns4:author <http://ceur-ws.org/Vol-1127/#ColmiO%E2%80%99Riordan>,
+        <http://ceur-ws.org/Vol-1127/#GabriellaiPasi>,
+        <http://ceur-ws.org/Vol-1127/#MuhammadiAtifiQureshi> .
+
+<http://ceur-ws.org/Vol-1127/#paper10> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1127/> ;
+    ns7:title "LearNext: Learning to Predict Tourists Movements" ;
+    ns5:endPage 79 ;
+    ns5:numPages 5 ;
+    ns5:section <http://ceur-ws.org/Vol-1127/#Session5Applications> ;
+    ns5:startPage 75 ;
+    ns4:author <http://ceur-ws.org/Vol-1127/#CristinaiIoanaiMuntean>,
+        <http://ceur-ws.org/Vol-1127/#FabrizioiSilvestri>,
+        <http://ceur-ws.org/Vol-1127/#FrancoiMariaiNardini>,
+        <http://ceur-ws.org/Vol-1127/#RanieriiBaraglia> .
+
+<http://ceur-ws.org/Vol-1127/#paper4> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1127/> ;
+    ns7:title "Top-N Recommendations from Implicit Feedback Leveraging Linked Open Data" ;
+    ns5:endPage 27 ;
+    ns5:numPages 8 ;
+    ns5:section <http://ceur-ws.org/Vol-1127/#Session2ClassificationandRecommendation> ;
+    ns5:startPage 20 ;
+    ns4:author <http://ceur-ws.org/Vol-1127/#EugenioiDiiSciascio>,
+        <http://ceur-ws.org/Vol-1127/#RobertoiMirizzi>,
+        <http://ceur-ws.org/Vol-1127/#TommasoiDiiNoia>,
+        <http://ceur-ws.org/Vol-1127/#VitoiClaudioiOstuni> .
+
+<http://ceur-ws.org/Vol-1127/#paper8> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1127/> ;
+    ns7:title "Enabling Enterprise Semantic Search through Language Technologies: the ProgressIt Experience" ;
+    ns5:endPage 62 ;
+    ns5:numPages 12 ;
+    ns5:section <http://ceur-ws.org/Vol-1127/#Session4NaturalLanguageProcessing> ;
+    ns5:startPage 51 ;
+    ns4:author <http://ceur-ws.org/Vol-1127/#AndreaiCiapetti>,
+        <http://ceur-ws.org/Vol-1127/#DaniloiCroce>,
+        <http://ceur-ws.org/Vol-1127/#PaoloiSalvatore>,
+        <http://ceur-ws.org/Vol-1127/#RobertoiBasili>,
+        <http://ceur-ws.org/Vol-1127/#ValeriaiMarino>,
+        <http://ceur-ws.org/Vol-1127/#ValerioiStorch> .
+
+<http://ceur-ws.org/Vol-1127/#paper6> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1127/> ;
+    ns7:title "Developing a Semantic Content Analyzer for L'Aquila Social Urban Network" ;
+    ns5:endPage 38 ;
+    ns5:numPages 5 ;
+    ns5:section <http://ceur-ws.org/Vol-1127/#Session3Semantics> ;
+    ns5:startPage 34 ;
+    ns4:author <http://ceur-ws.org/Vol-1127/#CataldoiMusto>,
+        <http://ceur-ws.org/Vol-1127/#ClaudiaiMeloni>,
+        <http://ceur-ws.org/Vol-1127/#FedelucioiNarducci>,
+        <http://ceur-ws.org/Vol-1127/#FrancoiF.iOrsucci>,
+        <http://ceur-ws.org/Vol-1127/#GiovanniiSemeraro>,
+        <http://ceur-ws.org/Vol-1127/#GiuliaiPaoloni>,
+        <http://ceur-ws.org/Vol-1127/#LucianaiBordoni>,
+        <http://ceur-ws.org/Vol-1127/#MarcoideiGemmis>,
+        <http://ceur-ws.org/Vol-1127/#MauroiAnnunziato>,
+        <http://ceur-ws.org/Vol-1127/#PasqualeiLops> .
+
+<http://ceur-ws.org/Vol-1127/> a ns2:Proceedings ;
+    ns2:hasPart <http://ceur-ws.org/Vol-1127/#paper1>,
+        <http://ceur-ws.org/Vol-1127/#paper10>,
+        <http://ceur-ws.org/Vol-1127/#paper11>,
+        <http://ceur-ws.org/Vol-1127/#paper2>,
+        <http://ceur-ws.org/Vol-1127/#paper3>,
+        <http://ceur-ws.org/Vol-1127/#paper4>,
+        <http://ceur-ws.org/Vol-1127/#paper5>,
+        <http://ceur-ws.org/Vol-1127/#paper6>,
+        <http://ceur-ws.org/Vol-1127/#paper7>,
+        <http://ceur-ws.org/Vol-1127/#paper8>,
+        <http://ceur-ws.org/Vol-1127/#paper9> ;
+    ns2:hasSession <http://ceur-ws.org/Vol-1127/#Session1Theory>,
+        <http://ceur-ws.org/Vol-1127/#Session2ClassificationandRecommendation>,
+        <http://ceur-ws.org/Vol-1127/#Session3Semantics>,
+        <http://ceur-ws.org/Vol-1127/#Session4NaturalLanguageProcessing>,
+        <http://ceur-ws.org/Vol-1127/#Session5Applications> ;
+    ns9:issued "2014-02-14T00:00:00+00:00"^^xsd:dateTime ;
+    ns5:presentedAt <http://ceur-ws.org/Vol-1127/#event> ;
+    ns4:editor <http://ceur-ws.org/Vol-1127/#FabioiCrestani>,
+        <http://ceur-ws.org/Vol-1127/#MarcoiPennacchiotti>,
+        <http://ceur-ws.org/Vol-1127/#RobertoiBasili> .
 

@@ -1,45 +1,289 @@
-@prefix ns1: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns2: <http://www.w3.org/2002/07/owl#> .
+@prefix ns1: <http://purl.org/ontology/bibo/#> .
+@prefix ns2: <http://xmlns.com/foaf/0.1/> .
 @prefix ns3: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns4: <http://purl.org/ontology/bibo/#> .
-@prefix ns5: <http://xmlns.com/foaf/0.1/> .
-@prefix ns6: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns7: <http://purl.org/dc/elements/1.1/> .
-@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns4: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns5: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns6: <http://www.w3.org/2002/07/owl#> .
+@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns8: <http://purl.org/dc/elements/1.1/> .
+@prefix ns9: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-999/> a ns1:Proceedings ;
-    ns8:issued "2013-06-12T00:00:00+00:00"^^xsd:dateTime ;
-    ns4:presentedAt <http://ceur-ws.org/Vol-999/#event> ;
+<http://ceur-ws.org/Vol-999/#AhmetiSoylu> a ns2:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/AhmetiSoylu> ;
+    ns2:made <http://ceur-ws.org/Vol-999/#paper2> ;
+    ns2:name "Ahmet Soylu" .
+
+<http://ceur-ws.org/Vol-999/#AlessandroiSolimando> a ns2:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/AlessandroiSolimando> ;
+    ns2:made <http://ceur-ws.org/Vol-999/#paper5> ;
+    ns2:name "Alessandro Solimando" .
+
+<http://ceur-ws.org/Vol-999/#CatherineiRoussey> a ns2:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/CatherineiRoussey> ;
+    ns2:made <http://ceur-ws.org/Vol-999/#paper4> ;
+    ns2:name "Catherine Roussey" .
+
+<http://ceur-ws.org/Vol-999/#ChristophiPinkel> a ns2:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/ChristophiPinkel> ;
+    ns2:made <http://ceur-ws.org/Vol-999/#paper2> ;
+    ns2:name "Christoph Pinkel" .
+
+<http://ceur-ws.org/Vol-999/#DagiHovland> a ns2:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/DagiHovland> ;
+    ns2:made <http://ceur-ws.org/Vol-999/#paper2> ;
+    ns2:name "Dag Hovland" .
+
+<http://ceur-ws.org/Vol-999/#DmitriyiZheleznyakov> a ns2:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/DmitriyiZheleznyakov> ;
+    ns2:made <http://ceur-ws.org/Vol-999/#paper2> ;
+    ns2:name "Dmitriy Zheleznyakov" .
+
+<http://ceur-ws.org/Vol-999/#ErnestoiJimenez-Ruiz> a ns2:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/ErnestoiJimenez-Ruiz> ;
+    ns2:made <http://ceur-ws.org/Vol-999/#paper2> ;
+    ns2:name "Ernesto Jimenez-Ruiz" .
+
+<http://ceur-ws.org/Vol-999/#EvgenyiKharlamov> a ns2:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/EvgenyiKharlamov> ;
+    ns2:made <http://ceur-ws.org/Vol-999/#paper2> ;
+    ns2:name "Evgeny Kharlamov" .
+
+<http://ceur-ws.org/Vol-999/#FangiWei-Kleiner> a ns2:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/FangiWei-Kleiner> ;
+    ns2:made <http://ceur-ws.org/Vol-999/#paper3> ;
+    ns2:name "Fang Wei-Kleiner" .
+
+<http://ceur-ws.org/Vol-999/#GiovannaiGuerrini> a ns2:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/GiovannaiGuerrini> ;
+    ns2:made <http://ceur-ws.org/Vol-999/#paper5> ;
+    ns2:name "Giovanna Guerrini" .
+
+<http://ceur-ws.org/Vol-999/#GuiliniQi> a ns2:Person ;
+    ns1:place <http://dbpedia.org/resource/China> ;
+    ns3:affiliation "Southeast University" ;
+    ns6:sameAs <http://ceur-ws.org/persons/GuiliniQi> ;
+    ns2:name "Guilin Qi" .
+
+<http://ceur-ws.org/Vol-999/#HeineriStuckenschmidt> a ns2:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/HeineriStuckenschmidt> ;
+    ns2:made <http://ceur-ws.org/Vol-999/#invited> ;
+    ns2:name "Heiner Stuckenschmidt" .
+
+<http://ceur-ws.org/Vol-999/#IaniHorrocks> a ns2:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/IaniHorrocks> ;
+    ns2:made <http://ceur-ws.org/Vol-999/#paper2> ;
+    ns2:name "Ian Horrocks" .
+
+<http://ceur-ws.org/Vol-999/#JohaniKluwer> a ns2:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/JohaniKluwer> ;
+    ns2:made <http://ceur-ws.org/Vol-999/#paper2> ;
+    ns2:name "Johan Kluwer" .
+
+<http://ceur-ws.org/Vol-999/#LorenziBuhmann> a ns2:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/LorenziBuhmann> ;
+    ns2:made <http://ceur-ws.org/Vol-999/#paper6> ;
+    ns2:name "Lorenz Buhmann" .
+
+<http://ceur-ws.org/Vol-999/#MariaiCopeland> a ns2:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/MariaiCopeland> ;
+    ns2:made <http://ceur-ws.org/Vol-999/#paper1> ;
+    ns2:name "Maria Copeland" .
+
+<http://ceur-ws.org/Vol-999/#MatthewiHorridge> a ns2:Person ;
+    ns1:place <http://dbpedia.org/resource/United_States> ;
+    ns3:affiliation "Stanford University" ;
+    ns6:sameAs <http://ceur-ws.org/persons/MatthewiHorridge> ;
+    ns2:name "Matthew Horridge" .
+
+<http://ceur-ws.org/Vol-999/#PeteriHaase> a ns2:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/PeteriHaase> ;
+    ns2:made <http://ceur-ws.org/Vol-999/#paper2> ;
+    ns2:name "Peter Haase" .
+
+<http://ceur-ws.org/Vol-999/#RafaeliS.iGoncalves> a ns2:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/RafaeliS.iGoncalves> ;
+    ns2:made <http://ceur-ws.org/Vol-999/#paper1> ;
+    ns2:name "Rafael S. Goncalves" .
+
+<http://ceur-ws.org/Vol-999/#RiccardoiRosati> a ns2:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/RiccardoiRosati> ;
+    ns2:made <http://ceur-ws.org/Vol-999/#paper2> ;
+    ns2:name "Riccardo Rosati" .
+
+<http://ceur-ws.org/Vol-999/#RobertiStevens> a ns2:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/RobertiStevens> ;
+    ns2:made <http://ceur-ws.org/Vol-999/#paper1> ;
+    ns2:name "Robert Stevens" .
+
+<http://ceur-ws.org/Vol-999/#ThomasiHubauer> a ns2:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/ThomasiHubauer> ;
+    ns2:made <http://ceur-ws.org/Vol-999/#paper2> ;
+    ns2:name "Thomas Hubauer" .
+
+<http://ceur-ws.org/Vol-999/#UliiSattler> a ns2:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/UliiSattler> ;
+    ns2:made <http://ceur-ws.org/Vol-999/#paper1> ;
+    ns2:name "Uli Sattler" .
+
+<http://ceur-ws.org/Vol-999/#ValentinaiIvanova> a ns2:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/ValentinaiIvanova> ;
+    ns2:made <http://ceur-ws.org/Vol-999/#paper3> ;
+    ns2:name "Valentina Ivanova" .
+
+<http://ceur-ws.org/Vol-999/#ValerioiSantarelli> a ns2:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/ValerioiSantarelli> ;
+    ns2:made <http://ceur-ws.org/Vol-999/#paper2> ;
+    ns2:name "Valerio Santarelli" .
+
+<http://ceur-ws.org/Vol-999/#VojtechiSvatek> a ns2:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/VojtechiSvatek> ;
+    ns2:made <http://ceur-ws.org/Vol-999/#paper6> ;
+    ns2:name "Vojtech Svatek" .
+
+<http://ceur-ws.org/Vol-999/#ZlataniDragisic> a ns2:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/ZlataniDragisic> ;
+    ns2:made <http://ceur-ws.org/Vol-999/#paper3> ;
+    ns2:name "Zlatan Dragisic" .
+
+<http://ceur-ws.org/Vol-999/#event> a ns5:WorkshopEvent ;
+    ns5:hasLocation <http://dbpedia.org/resource/France> ;
+    ns5:hasPart <http://ceur-ws.org/Vol-999/#part-WoDOOM> ;
+    ns5:isSubEventOf <http://ceur-ws.org/Vol-999/#conf> ;
+    ns7:beginsAtDatetime "2013-05-27T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:endsAtDatetime "2013-05-27T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:license "http://choosealicense.com/licenses/no-license/" .
+
+<http://ceur-ws.org/Vol-999/#BijaniParsia> a ns2:Person ;
+    ns1:place <http://dbpedia.org/resource/United_Kingdom> ;
+    ns3:affiliation "University of Manchester" ;
+    ns6:sameAs <http://ceur-ws.org/persons/BijaniParsia> ;
+    ns2:made <http://ceur-ws.org/Vol-999/#paper1> ;
+    ns2:name "Bijan Parsia" .
+
+<http://ceur-ws.org/Vol-999/#Invitedtalk> a ns5:SessionEvent ;
+    ns5:partOf <http://ceur-ws.org/Vol-999/> ;
+    ns4:title "Invited talk" .
+
+<http://ceur-ws.org/Vol-999/#OndrejiZamazal> a ns2:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/OndrejiZamazal> ;
+    ns2:made <http://ceur-ws.org/Vol-999/#paper4>,
+        <http://ceur-ws.org/Vol-999/#paper6> ;
+    ns2:name "Ondrej Zamazal" .
+
+<http://ceur-ws.org/Vol-999/#PatrickiLambrix> a ns2:Person ;
+    ns1:place <http://dbpedia.org/resource/Sweden> ;
+    ns3:affiliation "Linköping University" ;
+    ns6:sameAs <http://ceur-ws.org/persons/PatrickiLambrix> ;
+    ns2:made <http://ceur-ws.org/Vol-999/#paper3> ;
+    ns2:name "Patrick Lambrix" .
+
+<http://ceur-ws.org/Vol-999/#invited> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-999/> ;
+    ns4:title "Debugging weighted ontologies" ;
+    ns1:endPage 8 ;
+    ns1:numPages 8 ;
+    ns1:section <http://ceur-ws.org/Vol-999/#Invitedtalk> ;
+    ns1:startPage 1 ;
+    ns3:author <http://ceur-ws.org/Vol-999/#HeineriStuckenschmidt> .
+
+<http://ceur-ws.org/Vol-999/#paper4> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-999/> ;
+    ns4:title "Antipattern detection: how to debug an ontology without a reasoner" ;
+    ns1:endPage 56 ;
+    ns1:numPages 12 ;
+    ns1:section <http://ceur-ws.org/Vol-999/#Fullpapers> ;
+    ns1:startPage 45 ;
+    ns3:author <http://ceur-ws.org/Vol-999/#CatherineiRoussey>,
+        <http://ceur-ws.org/Vol-999/#OndrejiZamazal> .
+
+<http://ceur-ws.org/Vol-999/#paper5> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-999/> ;
+    ns4:title "Ontology adaptation upon updates" ;
+    ns1:endPage 68 ;
+    ns1:numPages 12 ;
+    ns1:section <http://ceur-ws.org/Vol-999/#Fullpapers> ;
+    ns1:startPage 57 ;
+    ns3:author <http://ceur-ws.org/Vol-999/#AlessandroiSolimando>,
+        <http://ceur-ws.org/Vol-999/#GiovannaiGuerrini> .
+
+<http://ceur-ws.org/Vol-999/#paper6> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-999/> ;
+    ns4:title "Checking and repairing ontological naming patterns using ORE and PatOMat" ;
+    ns1:endPage 76 ;
+    ns1:numPages 8 ;
+    ns1:section <http://ceur-ws.org/Vol-999/#Fullpapers> ;
+    ns1:startPage 69 ;
+    ns3:author <http://ceur-ws.org/Vol-999/#LorenziBuhmann>,
+        <http://ceur-ws.org/Vol-999/#OndrejiZamazal>,
+        <http://ceur-ws.org/Vol-999/#VojtechiSvatek> .
+
+<http://ceur-ws.org/Vol-999/#paper3> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-999/> ;
+    ns4:title "Repairing missing is-a structure in ontologies is an abductive reasoning problem" ;
+    ns1:endPage 44 ;
+    ns1:numPages 12 ;
+    ns1:section <http://ceur-ws.org/Vol-999/#Fullpapers> ;
+    ns1:startPage 33 ;
+    ns3:author <http://ceur-ws.org/Vol-999/#FangiWei-Kleiner>,
+        <http://ceur-ws.org/Vol-999/#PatrickiLambrix>,
+        <http://ceur-ws.org/Vol-999/#ValentinaiIvanova>,
+        <http://ceur-ws.org/Vol-999/#ZlataniDragisic> .
+
+<http://ceur-ws.org/Vol-999/#paper1> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-999/> ;
+    ns4:title "Finding fault: detecting issues in a versioned ontology" ;
+    ns1:endPage 20 ;
+    ns1:numPages 12 ;
+    ns1:section <http://ceur-ws.org/Vol-999/#Fullpapers> ;
+    ns1:startPage 9 ;
+    ns3:author <http://ceur-ws.org/Vol-999/#BijaniParsia>,
+        <http://ceur-ws.org/Vol-999/#MariaiCopeland>,
+        <http://ceur-ws.org/Vol-999/#RafaeliS.iGoncalves>,
+        <http://ceur-ws.org/Vol-999/#RobertiStevens>,
+        <http://ceur-ws.org/Vol-999/#UliiSattler> .
+
+<http://ceur-ws.org/Vol-999/#Fullpapers> a ns5:SessionEvent ;
+    ns5:partOf <http://ceur-ws.org/Vol-999/> ;
+    ns4:title "Full papers" .
+
+<http://ceur-ws.org/Vol-999/> a ns5:Proceedings ;
+    ns5:hasPart <http://ceur-ws.org/Vol-999/#invited>,
+        <http://ceur-ws.org/Vol-999/#paper1>,
+        <http://ceur-ws.org/Vol-999/#paper2>,
+        <http://ceur-ws.org/Vol-999/#paper3>,
+        <http://ceur-ws.org/Vol-999/#paper4>,
+        <http://ceur-ws.org/Vol-999/#paper5>,
+        <http://ceur-ws.org/Vol-999/#paper6> ;
+    ns5:hasSession <http://ceur-ws.org/Vol-999/#Fullpapers>,
+        <http://ceur-ws.org/Vol-999/#Invitedtalk> ;
+    ns9:issued "2013-06-12T00:00:00+00:00"^^xsd:dateTime ;
+    ns1:presentedAt <http://ceur-ws.org/Vol-999/#event> ;
     ns3:editor <http://ceur-ws.org/Vol-999/#BijaniParsia>,
         <http://ceur-ws.org/Vol-999/#GuiliniQi>,
         <http://ceur-ws.org/Vol-999/#MatthewiHorridge>,
         <http://ceur-ws.org/Vol-999/#PatrickiLambrix> .
 
-<http://ceur-ws.org/Vol-999/#BijaniParsia> a ns5:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/BijaniParsia> ;
-    ns5:name "Bijan Parsia" .
-
-<http://ceur-ws.org/Vol-999/#GuiliniQi> a ns5:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/GuiliniQi> ;
-    ns5:name "Guilin Qi" .
-
-<http://ceur-ws.org/Vol-999/#MatthewiHorridge> a ns5:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/MatthewiHorridge> ;
-    ns5:name "Matthew Horridge" .
-
-<http://ceur-ws.org/Vol-999/#PatrickiLambrix> a ns5:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/PatrickiLambrix> ;
-    ns5:name "Patrick Lambrix" .
-
-<http://ceur-ws.org/Vol-999/#event> a ns1:WorkshopEvent ;
-    ns1:hasLocation <http://dbpedia.org/resource/France> ;
-    ns1:hasPart <http://ceur-ws.org/Vol-999/#part-CEUR-WS> ;
-    ns1:isSubEventOf <http://ceur-ws.org/Vol-999/#conf> ;
-    ns6:beginsAtDatetime "2013-05-27T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:endsAtDatetime "2013-05-27T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:license "http://choosealicense.com/licenses/no-license/" .
+<http://ceur-ws.org/Vol-999/#paper2> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-999/> ;
+    ns4:title "Optique System: towards ontology and mapping management in OBDA solutions" ;
+    ns1:endPage 32 ;
+    ns1:numPages 12 ;
+    ns1:section <http://ceur-ws.org/Vol-999/#Fullpapers> ;
+    ns1:startPage 21 ;
+    ns3:author <http://ceur-ws.org/Vol-999/#AhmetiSoylu>,
+        <http://ceur-ws.org/Vol-999/#ChristophiPinkel>,
+        <http://ceur-ws.org/Vol-999/#DagiHovland>,
+        <http://ceur-ws.org/Vol-999/#DmitriyiZheleznyakov>,
+        <http://ceur-ws.org/Vol-999/#ErnestoiJimenez-Ruiz>,
+        <http://ceur-ws.org/Vol-999/#EvgenyiKharlamov>,
+        <http://ceur-ws.org/Vol-999/#IaniHorrocks>,
+        <http://ceur-ws.org/Vol-999/#JohaniKluwer>,
+        <http://ceur-ws.org/Vol-999/#PeteriHaase>,
+        <http://ceur-ws.org/Vol-999/#RiccardoiRosati>,
+        <http://ceur-ws.org/Vol-999/#ThomasiHubauer>,
+        <http://ceur-ws.org/Vol-999/#ValerioiSantarelli> .
 

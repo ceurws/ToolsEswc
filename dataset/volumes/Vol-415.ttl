@@ -1,10 +1,10 @@
 @prefix ns1: <http://xmlns.com/foaf/0.1/> .
-@prefix ns2: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns3: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns2: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns3: <http://data.semanticweb.org/ns/swc/ontology/#> .
 @prefix ns4: <http://www.w3.org/2002/07/owl#> .
-@prefix ns5: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns6: <http://purl.org/ontology/bibo/#> .
-@prefix ns7: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns5: <http://purl.org/ontology/bibo/#> .
+@prefix ns6: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
 @prefix ns9: <http://purl.org/dc/elements/1.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -208,7 +208,7 @@
     ns1:name "Lorenzo Mosca" .
 
 <http://ceur-ws.org/Vol-415/#MarioniHersh> a ns1:Person ;
-    ns3:affiliation "" ;
+    ns2:affiliation "" ;
     ns4:sameAs <http://ceur-ws.org/persons/MarioniHersh> ;
     ns1:name "Marion Hersh" .
 
@@ -317,12 +317,12 @@
     ns1:made <http://ceur-ws.org/Vol-415/#paper5> ;
     ns1:name "Zoltan Puklus" .
 
-<http://ceur-ws.org/Vol-415/#event> a ns5:WorkshopEvent ;
-    ns5:hasLocation <http://dbpedia.org/resource/Spain> ;
-    ns5:hasPart <http://ceur-ws.org/Vol-415/#part-CEUR-WS> ;
-    ns5:isSubEventOf <http://ceur-ws.org/Vol-415/#conf> ;
-    ns8:beginsAtDatetime "2008-11-11T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:endsAtDatetime "2008-11-11T00:00:00+00:00"^^xsd:dateTime ;
+<http://ceur-ws.org/Vol-415/#event> a ns3:WorkshopEvent ;
+    ns3:hasLocation <http://dbpedia.org/resource/Spain> ;
+    ns3:hasPart <http://ceur-ws.org/Vol-415/#part-CVHI> ;
+    ns3:isSubEventOf <http://ceur-ws.org/Vol-415/#conf> ;
+    ns8:beginsAtDatetime "2007-08-28T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:endsAtDatetime "2007-08-01T00:00:00+00:00"^^xsd:dateTime ;
     ns9:license "http://choosealicense.com/licenses/no-license/" .
 
 <http://ceur-ws.org/Vol-415/#AdinaiIonescu> a ns1:Person ;
@@ -379,283 +379,283 @@
         <http://ceur-ws.org/Vol-415/#paper9> ;
     ns1:name "T. Grechenig" .
 
-<http://ceur-ws.org/Vol-415/#Workshop> a ns5:SessionEvent ;
-    ns5:partOf <http://ceur-ws.org/Vol-415/> ;
-    ns7:title "Workshop" .
+<http://ceur-ws.org/Vol-415/#Workshop> a ns3:SessionEvent ;
+    ns3:partOf <http://ceur-ws.org/Vol-415/> ;
+    ns6:title "Workshop" .
 
-<http://ceur-ws.org/Vol-415/#panelpaper1> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-415/> ;
-    ns7:title "Taking into account cultural and linguistic factors: the Tunisian experience" ;
-    ns6:section <http://ceur-ws.org/Vol-415/#PanelDiscussionAssistiveTechnologyandSocialInclusionforDeafandHearingImpairedPeoplefromEthnicandOtherMinorityGroups> ;
-    ns3:author <http://ceur-ws.org/Vol-415/#MohammediJemni> .
+<http://ceur-ws.org/Vol-415/#panelpaper1> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-415/> ;
+    ns6:title "Taking into account cultural and linguistic factors: the Tunisian experience" ;
+    ns5:section <http://ceur-ws.org/Vol-415/#PanelDiscussionAssistiveTechnologyandSocialInclusionforDeafandHearingImpairedPeoplefromEthnicandOtherMinorityGroups> ;
+    ns2:author <http://ceur-ws.org/Vol-415/#MohammediJemni> .
 
-<http://ceur-ws.org/Vol-415/#panelpaper2> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-415/> ;
-    ns7:title "The ethnic minority end-user perspective" ;
-    ns6:section <http://ceur-ws.org/Vol-415/#PanelDiscussionAssistiveTechnologyandSocialInclusionforDeafandHearingImpairedPeoplefromEthnicandOtherMinorityGroups> ;
-    ns3:author <http://ceur-ws.org/Vol-415/#SadaqatiAli> .
+<http://ceur-ws.org/Vol-415/#panelpaper2> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-415/> ;
+    ns6:title "The ethnic minority end-user perspective" ;
+    ns5:section <http://ceur-ws.org/Vol-415/#PanelDiscussionAssistiveTechnologyandSocialInclusionforDeafandHearingImpairedPeoplefromEthnicandOtherMinorityGroups> ;
+    ns2:author <http://ceur-ws.org/Vol-415/#SadaqatiAli> .
 
-<http://ceur-ws.org/Vol-415/#panelpaper3> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-415/> ;
-    ns7:title "Adaptive, inclusive software design for People with Vision and Hearing Impairments" ;
-    ns6:section <http://ceur-ws.org/Vol-415/#PanelDiscussionAssistiveTechnologyandSocialInclusionforDeafandHearingImpairedPeoplefromEthnicandOtherMinorityGroups> ;
-    ns3:author <http://ceur-ws.org/Vol-415/#JamesiOhene-Djan> .
+<http://ceur-ws.org/Vol-415/#panelpaper3> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-415/> ;
+    ns6:title "Adaptive, inclusive software design for People with Vision and Hearing Impairments" ;
+    ns5:section <http://ceur-ws.org/Vol-415/#PanelDiscussionAssistiveTechnologyandSocialInclusionforDeafandHearingImpairedPeoplefromEthnicandOtherMinorityGroups> ;
+    ns2:author <http://ceur-ws.org/Vol-415/#JamesiOhene-Djan> .
 
-<http://ceur-ws.org/Vol-415/#paper15> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-415/> ;
-    ns7:title "Speech and Braille tools to improve access to university scientific courses" ;
-    ns6:section <http://ceur-ws.org/Vol-415/#Session4ImprovingtheAccessibilityofComplexContent> ;
-    ns3:author <http://ceur-ws.org/Vol-415/#CristianiBernareggi> .
+<http://ceur-ws.org/Vol-415/#paper15> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-415/> ;
+    ns6:title "Speech and Braille tools to improve access to university scientific courses" ;
+    ns5:section <http://ceur-ws.org/Vol-415/#Session4ImprovingtheAccessibilityofComplexContent> ;
+    ns2:author <http://ceur-ws.org/Vol-415/#CristianiBernareggi> .
 
-<http://ceur-ws.org/Vol-415/#paper16> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-415/> ;
-    ns7:title "E-learning platform for interactive access to multimedia materials in Daisy format" ;
-    ns6:section <http://ceur-ws.org/Vol-415/#Session4ImprovingtheAccessibilityofComplexContent> ;
-    ns3:author <http://ceur-ws.org/Vol-415/#PiotriBrzoza> .
+<http://ceur-ws.org/Vol-415/#paper16> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-415/> ;
+    ns6:title "E-learning platform for interactive access to multimedia materials in Daisy format" ;
+    ns5:section <http://ceur-ws.org/Vol-415/#Session4ImprovingtheAccessibilityofComplexContent> ;
+    ns2:author <http://ceur-ws.org/Vol-415/#PiotriBrzoza> .
 
-<http://ceur-ws.org/Vol-415/#paper22> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-415/> ;
-    ns7:title "End-user involvement in assistive technology design for the deaf - are artificial forms of sign language meeting the needs of the target audience?" ;
-    ns6:section <http://ceur-ws.org/Vol-415/#Session6SignLanguageandAccesstoInformationforDeafPeople> ;
-    ns3:author <http://ceur-ws.org/Vol-415/#SadufiNaqvi> .
+<http://ceur-ws.org/Vol-415/#paper22> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-415/> ;
+    ns6:title "End-user involvement in assistive technology design for the deaf - are artificial forms of sign language meeting the needs of the target audience?" ;
+    ns5:section <http://ceur-ws.org/Vol-415/#Session6SignLanguageandAccesstoInformationforDeafPeople> ;
+    ns2:author <http://ceur-ws.org/Vol-415/#SadufiNaqvi> .
 
-<http://ceur-ws.org/Vol-415/#paper26> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-415/> ;
-    ns7:title "Telephone and Hearing Impaired - New Approaches for Increasing the Telephone Speech Quality for Hearing Impaired Users" ;
-    ns6:section <http://ceur-ws.org/Vol-415/#Session7TelephonyandOtherServicesforHearingImpairedPeople> ;
-    ns3:author <http://ceur-ws.org/Vol-415/#JaniKrebber> .
+<http://ceur-ws.org/Vol-415/#paper26> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-415/> ;
+    ns6:title "Telephone and Hearing Impaired - New Approaches for Increasing the Telephone Speech Quality for Hearing Impaired Users" ;
+    ns5:section <http://ceur-ws.org/Vol-415/#Session7TelephonyandOtherServicesforHearingImpairedPeople> ;
+    ns2:author <http://ceur-ws.org/Vol-415/#JaniKrebber> .
 
 <http://ceur-ws.org/Vol-415/#JamesiOhene-Djan> a ns1:Person ;
-    ns3:affiliation "Web Editor" ;
+    ns2:affiliation "Web Editor" ;
     ns4:sameAs <http://ceur-ws.org/persons/JamesiOhene-Djan> ;
     ns1:made <http://ceur-ws.org/Vol-415/#panelpaper3>,
         <http://ceur-ws.org/Vol-415/#paper19> ;
     ns1:name "James Ohene-Djan" .
 
-<http://ceur-ws.org/Vol-415/#paper1> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-415/> ;
-    ns7:title "Terrain analysis for blind wheelchair users: computer vision algorithms for finding curbs and other negative obstacles." ;
-    ns6:section <http://ceur-ws.org/Vol-415/#DanaMarloweSession1OrientationandMobilitySystemsforVisuallyImpairedPeople> ;
-    ns3:author <http://ceur-ws.org/Vol-415/#HuiyingiShen>,
+<http://ceur-ws.org/Vol-415/#paper1> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-415/> ;
+    ns6:title "Terrain analysis for blind wheelchair users: computer vision algorithms for finding curbs and other negative obstacles." ;
+    ns5:section <http://ceur-ws.org/Vol-415/#DanaMarloweSession1OrientationandMobilitySystemsforVisuallyImpairedPeople> ;
+    ns2:author <http://ceur-ws.org/Vol-415/#HuiyingiShen>,
         <http://ceur-ws.org/Vol-415/#JamesiCoughlan> .
 
-<http://ceur-ws.org/Vol-415/#paper10> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-415/> ;
-    ns7:title "E-voting � a key to independence for all" ;
-    ns6:section <http://ceur-ws.org/Vol-415/#Session3AssistiveTechnologyforIndependence> ;
-    ns3:author <http://ceur-ws.org/Vol-415/#%EF%BF%BDlleiLepp>,
+<http://ceur-ws.org/Vol-415/#paper10> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-415/> ;
+    ns6:title "E-voting � a key to independence for all" ;
+    ns5:section <http://ceur-ws.org/Vol-415/#Session3AssistiveTechnologyforIndependence> ;
+    ns2:author <http://ceur-ws.org/Vol-415/#%EF%BF%BDlleiLepp>,
         <http://ceur-ws.org/Vol-415/#ErikiLoide> .
 
-<http://ceur-ws.org/Vol-415/#paper17> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-415/> ;
-    ns7:title "SUBPAL: A device for reading aloud subtitles from television and cinema" ;
-    ns6:section <http://ceur-ws.org/Vol-415/#Session5AccesstoMultiMediaforHearingImpairedPeople> ;
-    ns3:author <http://ceur-ws.org/Vol-415/#Hans-HeinrichiBothe>,
+<http://ceur-ws.org/Vol-415/#paper17> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-415/> ;
+    ns6:title "SUBPAL: A device for reading aloud subtitles from television and cinema" ;
+    ns5:section <http://ceur-ws.org/Vol-415/#Session5AccesstoMultiMediaforHearingImpairedPeople> ;
+    ns2:author <http://ceur-ws.org/Vol-415/#Hans-HeinrichiBothe>,
         <http://ceur-ws.org/Vol-415/#SimoniNielsen> .
 
-<http://ceur-ws.org/Vol-415/#paper18> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-415/> ;
-    ns7:title "OCR-algorithm for detection of subtitles in television and cinema" ;
-    ns6:section <http://ceur-ws.org/Vol-415/#Session5AccesstoMultiMediaforHearingImpairedPeople> ;
-    ns3:author <http://ceur-ws.org/Vol-415/#Hans-HeinrichiBothe>,
+<http://ceur-ws.org/Vol-415/#paper18> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-415/> ;
+    ns6:title "OCR-algorithm for detection of subtitles in television and cinema" ;
+    ns5:section <http://ceur-ws.org/Vol-415/#Session5AccesstoMultiMediaforHearingImpairedPeople> ;
+    ns2:author <http://ceur-ws.org/Vol-415/#Hans-HeinrichiBothe>,
         <http://ceur-ws.org/Vol-415/#MorteniJ%EF%BF%BDnsson> .
 
-<http://ceur-ws.org/Vol-415/#paper2> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-415/> ;
-    ns7:title "Texture based Text Detection in Natural Scene Images � A Help to Blind and Visually Impaired Persons" ;
-    ns6:section <http://ceur-ws.org/Vol-415/#DanaMarloweSession1OrientationandMobilitySystemsforVisuallyImpairedPeople> ;
-    ns3:author <http://ceur-ws.org/Vol-415/#LioneliPrevost>,
+<http://ceur-ws.org/Vol-415/#paper2> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-415/> ;
+    ns6:title "Texture based Text Detection in Natural Scene Images � A Help to Blind and Visually Impaired Persons" ;
+    ns5:section <http://ceur-ws.org/Vol-415/#DanaMarloweSession1OrientationandMobilitySystemsforVisuallyImpairedPeople> ;
+    ns2:author <http://ceur-ws.org/Vol-415/#LioneliPrevost>,
         <http://ceur-ws.org/Vol-415/#ShehzadiMuhammadiHanif> .
 
-<http://ceur-ws.org/Vol-415/#paper20> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-415/> ;
-    ns7:title "A system for control of hearing instrument selection and adjustment based on evaluation of correct transmission of speech elements and features" ;
-    ns6:section <http://ceur-ws.org/Vol-415/#Session5AccesstoMultiMediaforHearingImpairedPeople> ;
-    ns3:author <http://ceur-ws.org/Vol-415/#AxeliPlinge>,
+<http://ceur-ws.org/Vol-415/#paper20> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-415/> ;
+    ns6:title "A system for control of hearing instrument selection and adjustment based on evaluation of correct transmission of speech elements and features" ;
+    ns5:section <http://ceur-ws.org/Vol-415/#Session5AccesstoMultiMediaforHearingImpairedPeople> ;
+    ns2:author <http://ceur-ws.org/Vol-415/#AxeliPlinge>,
         <http://ceur-ws.org/Vol-415/#DieteriBauer> .
 
-<http://ceur-ws.org/Vol-415/#paper23> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-415/> ;
-    ns7:title "Joining Hands: Developing A Sign Language Machine Translation System with and for the Deaf Community" ;
-    ns6:section <http://ceur-ws.org/Vol-415/#Session6SignLanguageandAccesstoInformationforDeafPeople> ;
-    ns3:author <http://ceur-ws.org/Vol-415/#AndyiWay>,
+<http://ceur-ws.org/Vol-415/#paper23> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-415/> ;
+    ns6:title "Joining Hands: Developing A Sign Language Machine Translation System with and for the Deaf Community" ;
+    ns5:section <http://ceur-ws.org/Vol-415/#Session6SignLanguageandAccesstoInformationforDeafPeople> ;
+    ns2:author <http://ceur-ws.org/Vol-415/#AndyiWay>,
         <http://ceur-ws.org/Vol-415/#SaraiMorrissey> .
 
-<http://ceur-ws.org/Vol-415/#paper24> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-415/> ;
-    ns7:title "Design Implications for a Ubiquitous Ambient Sound Display for the Deaf" ;
-    ns6:section <http://ceur-ws.org/Vol-415/#Session6SignLanguageandAccesstoInformationforDeafPeople> ;
-    ns3:author <http://ceur-ws.org/Vol-415/#MartiniTomitsch>,
+<http://ceur-ws.org/Vol-415/#paper24> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-415/> ;
+    ns6:title "Design Implications for a Ubiquitous Ambient Sound Display for the Deaf" ;
+    ns5:section <http://ceur-ws.org/Vol-415/#Session6SignLanguageandAccesstoInformationforDeafPeople> ;
+    ns2:author <http://ceur-ws.org/Vol-415/#MartiniTomitsch>,
         <http://ceur-ws.org/Vol-415/#T.iGrechenig> .
 
-<http://ceur-ws.org/Vol-415/#PanelDiscussionAssistiveTechnologyandSocialInclusionforDeafandHearingImpairedPeoplefromEthnicandOtherMinorityGroups> a ns5:SessionEvent ;
-    ns5:partOf <http://ceur-ws.org/Vol-415/> ;
-    ns7:title "Panel Discussion Assistive Technology and Social Inclusion for Deaf and Hearing Impaired People from Ethnic and Other Minority Groups" .
+<http://ceur-ws.org/Vol-415/#PanelDiscussionAssistiveTechnologyandSocialInclusionforDeafandHearingImpairedPeoplefromEthnicandOtherMinorityGroups> a ns3:SessionEvent ;
+    ns3:partOf <http://ceur-ws.org/Vol-415/> ;
+    ns6:title "Panel Discussion Assistive Technology and Social Inclusion for Deaf and Hearing Impaired People from Ethnic and Other Minority Groups" .
 
-<http://ceur-ws.org/Vol-415/#Session7TelephonyandOtherServicesforHearingImpairedPeople> a ns5:SessionEvent ;
-    ns5:partOf <http://ceur-ws.org/Vol-415/> ;
-    ns7:title "Session 7: Telephony and Other Services for Hearing Impaired People" .
+<http://ceur-ws.org/Vol-415/#Session7TelephonyandOtherServicesforHearingImpairedPeople> a ns3:SessionEvent ;
+    ns3:partOf <http://ceur-ws.org/Vol-415/> ;
+    ns6:title "Session 7: Telephony and Other Services for Hearing Impaired People" .
 
-<http://ceur-ws.org/Vol-415/#paper13> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-415/> ;
-    ns7:title "An accessible and usable E-Book as an educational tool: how to get it?",
+<http://ceur-ws.org/Vol-415/#paper13> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-415/> ;
+    ns6:title "An accessible and usable E-Book as an educational tool: how to get it?",
         "Multimodal access to mathematics: the LAMBDA system" ;
-    ns6:section <http://ceur-ws.org/Vol-415/#Session4ImprovingtheAccessibilityofComplexContent>,
+    ns5:section <http://ceur-ws.org/Vol-415/#Session4ImprovingtheAccessibilityofComplexContent>,
         <http://ceur-ws.org/Vol-415/#Workshop> ;
-    ns3:author <http://ceur-ws.org/Vol-415/#BarbaraiLeporini>,
+    ns2:author <http://ceur-ws.org/Vol-415/#BarbaraiLeporini>,
         <http://ceur-ws.org/Vol-415/#CristianiBernareggi>,
         <http://ceur-ws.org/Vol-415/#SauroiCesaretti> .
 
-<http://ceur-ws.org/Vol-415/#paper14> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-415/> ;
-    ns7:title "Haptic and aural graphs exploration for visually impaired users" ;
-    ns6:section <http://ceur-ws.org/Vol-415/#Session4ImprovingtheAccessibilityofComplexContent> ;
-    ns3:author <http://ceur-ws.org/Vol-415/#LiciaiSbattella>,
+<http://ceur-ws.org/Vol-415/#paper14> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-415/> ;
+    ns6:title "Haptic and aural graphs exploration for visually impaired users" ;
+    ns5:section <http://ceur-ws.org/Vol-415/#Session4ImprovingtheAccessibilityofComplexContent> ;
+    ns2:author <http://ceur-ws.org/Vol-415/#LiciaiSbattella>,
         <http://ceur-ws.org/Vol-415/#LorenzoiMosca>,
         <http://ceur-ws.org/Vol-415/#ThimotyiBarbieri> .
 
-<http://ceur-ws.org/Vol-415/#paper19> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-415/> ;
-    ns7:title "Emotional subtitles: A system and potential applications for deaf and hearing impaired people" ;
-    ns6:section <http://ceur-ws.org/Vol-415/#Session5AccesstoMultiMediaforHearingImpairedPeople> ;
-    ns3:author <http://ceur-ws.org/Vol-415/#JamesiOhene-Djan>,
+<http://ceur-ws.org/Vol-415/#paper19> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-415/> ;
+    ns6:title "Emotional subtitles: A system and potential applications for deaf and hearing impaired people" ;
+    ns5:section <http://ceur-ws.org/Vol-415/#Session5AccesstoMultiMediaforHearingImpairedPeople> ;
+    ns2:author <http://ceur-ws.org/Vol-415/#JamesiOhene-Djan>,
         <http://ceur-ws.org/Vol-415/#JennyiWright>,
         <http://ceur-ws.org/Vol-415/#KirstyiCombie-Smith> .
 
-<http://ceur-ws.org/Vol-415/#paper21> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-415/> ;
-    ns7:title "The need to develop deaf friendly materials for young Black Minority Ethnic Deaf experiencing identity issues" ;
-    ns6:section <http://ceur-ws.org/Vol-415/#Session6SignLanguageandAccesstoInformationforDeafPeople> ;
-    ns3:author <http://ceur-ws.org/Vol-415/#KeniCarter>,
+<http://ceur-ws.org/Vol-415/#paper21> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-415/> ;
+    ns6:title "The need to develop deaf friendly materials for young Black Minority Ethnic Deaf experiencing identity issues" ;
+    ns5:section <http://ceur-ws.org/Vol-415/#Session6SignLanguageandAccesstoInformationforDeafPeople> ;
+    ns2:author <http://ceur-ws.org/Vol-415/#KeniCarter>,
         <http://ceur-ws.org/Vol-415/#SadaqatiAli>,
         <http://ceur-ws.org/Vol-415/#SadufiNaqvi> .
 
-<http://ceur-ws.org/Vol-415/#paper3> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-415/> ;
-    ns7:title "Experiments of virtual navigation as a step in the development of a navigation tool for blind people" ;
-    ns6:section <http://ceur-ws.org/Vol-415/#DanaMarloweSession1OrientationandMobilitySystemsforVisuallyImpairedPeople> ;
-    ns3:author <http://ceur-ws.org/Vol-415/#EdwigeiPissaloux>,
+<http://ceur-ws.org/Vol-415/#paper3> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-415/> ;
+    ns6:title "Experiments of virtual navigation as a step in the development of a navigation tool for blind people" ;
+    ns5:section <http://ceur-ws.org/Vol-415/#DanaMarloweSession1OrientationandMobilitySystemsforVisuallyImpairedPeople> ;
+    ns2:author <http://ceur-ws.org/Vol-415/#EdwigeiPissaloux>,
         <http://ceur-ws.org/Vol-415/#EleanoriFontaine>,
         <http://ceur-ws.org/Vol-415/#GuillaumeiTatur> .
 
-<http://ceur-ws.org/Vol-415/#paper8> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-415/> ;
-    ns7:title "Incorporating accessibility within pedagogical environments" ;
-    ns6:section <http://ceur-ws.org/Vol-415/#Session2AccesstoEducationandInformation> ;
-    ns3:author <http://ceur-ws.org/Vol-415/#BenjieiMarwickiJohnstone>,
+<http://ceur-ws.org/Vol-415/#paper8> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-415/> ;
+    ns6:title "Incorporating accessibility within pedagogical environments" ;
+    ns5:section <http://ceur-ws.org/Vol-415/#Session2AccesstoEducationandInformation> ;
+    ns2:author <http://ceur-ws.org/Vol-415/#BenjieiMarwickiJohnstone>,
         <http://ceur-ws.org/Vol-415/#DavidiCrombie>,
         <http://ceur-ws.org/Vol-415/#NeiliMcKenzie> .
 
-<http://ceur-ws.org/Vol-415/#DanaMarloweSession1OrientationandMobilitySystemsforVisuallyImpairedPeople> a ns5:SessionEvent ;
-    ns5:partOf <http://ceur-ws.org/Vol-415/> ;
-    ns7:title "Dana Marlowe Session 1: Orientation and Mobility Systems for Visually Impaired People" .
+<http://ceur-ws.org/Vol-415/#DanaMarloweSession1OrientationandMobilitySystemsforVisuallyImpairedPeople> a ns3:SessionEvent ;
+    ns3:partOf <http://ceur-ws.org/Vol-415/> ;
+    ns6:title "Dana Marlowe Session 1: Orientation and Mobility Systems for Visually Impaired People" .
 
-<http://ceur-ws.org/Vol-415/#Session2AccesstoEducationandInformation> a ns5:SessionEvent ;
-    ns5:partOf <http://ceur-ws.org/Vol-415/> ;
-    ns7:title "Session 2: Access to Education and Information" .
+<http://ceur-ws.org/Vol-415/#Session2AccesstoEducationandInformation> a ns3:SessionEvent ;
+    ns3:partOf <http://ceur-ws.org/Vol-415/> ;
+    ns6:title "Session 2: Access to Education and Information" .
 
-<http://ceur-ws.org/Vol-415/#Session3AssistiveTechnologyforIndependence> a ns5:SessionEvent ;
-    ns5:partOf <http://ceur-ws.org/Vol-415/> ;
-    ns7:title "Session 3: Assistive Technology for Independence" .
+<http://ceur-ws.org/Vol-415/#Session3AssistiveTechnologyforIndependence> a ns3:SessionEvent ;
+    ns3:partOf <http://ceur-ws.org/Vol-415/> ;
+    ns6:title "Session 3: Assistive Technology for Independence" .
 
-<http://ceur-ws.org/Vol-415/#Session4ImprovingtheAccessibilityofComplexContent> a ns5:SessionEvent ;
-    ns5:partOf <http://ceur-ws.org/Vol-415/> ;
-    ns7:title "Session 4: Improving the Accessibility of Complex Content" .
+<http://ceur-ws.org/Vol-415/#Session4ImprovingtheAccessibilityofComplexContent> a ns3:SessionEvent ;
+    ns3:partOf <http://ceur-ws.org/Vol-415/> ;
+    ns6:title "Session 4: Improving the Accessibility of Complex Content" .
 
-<http://ceur-ws.org/Vol-415/#Session5AccesstoMultiMediaforHearingImpairedPeople> a ns5:SessionEvent ;
-    ns5:partOf <http://ceur-ws.org/Vol-415/> ;
-    ns7:title "Session 5: Access to Multi-Media for Hearing Impaired People" .
+<http://ceur-ws.org/Vol-415/#Session5AccesstoMultiMediaforHearingImpairedPeople> a ns3:SessionEvent ;
+    ns3:partOf <http://ceur-ws.org/Vol-415/> ;
+    ns6:title "Session 5: Access to Multi-Media for Hearing Impaired People" .
 
-<http://ceur-ws.org/Vol-415/#Session6SignLanguageandAccesstoInformationforDeafPeople> a ns5:SessionEvent ;
-    ns5:partOf <http://ceur-ws.org/Vol-415/> ;
-    ns7:title "Session 6: Sign Language and Access to Information for Deaf People" .
+<http://ceur-ws.org/Vol-415/#Session6SignLanguageandAccesstoInformationforDeafPeople> a ns3:SessionEvent ;
+    ns3:partOf <http://ceur-ws.org/Vol-415/> ;
+    ns6:title "Session 6: Sign Language and Access to Information for Deaf People" .
 
-<http://ceur-ws.org/Vol-415/#paper11> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-415/> ;
-    ns7:title "The Ambient Intelligence and the Assistive Technologies for Elderly, Visually and Hearing Impaired Users in Slovakia" ;
-    ns6:section <http://ceur-ws.org/Vol-415/#Session3AssistiveTechnologyforIndependence> ;
-    ns3:author <http://ceur-ws.org/Vol-415/#AlenaiGalajdov%EF%BF%BD>,
+<http://ceur-ws.org/Vol-415/#paper11> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-415/> ;
+    ns6:title "The Ambient Intelligence and the Assistive Technologies for Elderly, Visually and Hearing Impaired Users in Slovakia" ;
+    ns5:section <http://ceur-ws.org/Vol-415/#Session3AssistiveTechnologyforIndependence> ;
+    ns2:author <http://ceur-ws.org/Vol-415/#AlenaiGalajdov%EF%BF%BD>,
         <http://ceur-ws.org/Vol-415/#Du%EF%BF%BDani%EF%BF%BDim%EF%BF%BD%EF%BF%BDk>,
         <http://ceur-ws.org/Vol-415/#JanaiAndrejkov%EF%BF%BD>,
         <http://ceur-ws.org/Vol-415/#ZlaticaiDoln%EF%BF%BD> .
 
-<http://ceur-ws.org/Vol-415/#paper25> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-415/> ;
-    ns7:title "Sign language MMS to make cell phones accessible to the deaf and hard-of-hearing community" ;
-    ns6:section <http://ceur-ws.org/Vol-415/#Session7TelephonyandOtherServicesforHearingImpairedPeople> ;
-    ns3:author <http://ceur-ws.org/Vol-415/#MehreziBoulares>,
+<http://ceur-ws.org/Vol-415/#paper25> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-415/> ;
+    ns6:title "Sign language MMS to make cell phones accessible to the deaf and hard-of-hearing community" ;
+    ns5:section <http://ceur-ws.org/Vol-415/#Session7TelephonyandOtherServicesforHearingImpairedPeople> ;
+    ns2:author <http://ceur-ws.org/Vol-415/#MehreziBoulares>,
         <http://ceur-ws.org/Vol-415/#MohammediJemni>,
         <http://ceur-ws.org/Vol-415/#NouriBeniYahia>,
         <http://ceur-ws.org/Vol-415/#OussamaiEliGhoul> .
 
-<http://ceur-ws.org/Vol-415/#paper27> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-415/> ;
-    ns7:title "Household sound identification for people with hearing disabilities" ;
-    ns6:section <http://ceur-ws.org/Vol-415/#Session7TelephonyandOtherServicesforHearingImpairedPeople> ;
-    ns3:author <http://ceur-ws.org/Vol-415/#H%EF%BF%BDctoriLozanoiPeiteado>,
+<http://ceur-ws.org/Vol-415/#paper27> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-415/> ;
+    ns6:title "Household sound identification for people with hearing disabilities" ;
+    ns5:section <http://ceur-ws.org/Vol-415/#Session7TelephonyandOtherServicesforHearingImpairedPeople> ;
+    ns2:author <http://ceur-ws.org/Vol-415/#H%EF%BF%BDctoriLozanoiPeiteado>,
         <http://ceur-ws.org/Vol-415/#I.iHernaez>,
         <http://ceur-ws.org/Vol-415/#I.iIdigoras>,
         <http://ceur-ws.org/Vol-415/#J.iGonz%EF%BF%BDlez> .
 
-<http://ceur-ws.org/Vol-415/#paper5> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-415/> ;
-    ns7:title "Improving social life and communication of people with disabilities by using Internet facilities" ;
-    ns6:section <http://ceur-ws.org/Vol-415/#Session2AccesstoEducationandInformation> ;
-    ns3:author <http://ceur-ws.org/Vol-415/#AdinaiIonescu>,
+<http://ceur-ws.org/Vol-415/#paper5> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-415/> ;
+    ns6:title "Improving social life and communication of people with disabilities by using Internet facilities" ;
+    ns5:section <http://ceur-ws.org/Vol-415/#Session2AccesstoEducationandInformation> ;
+    ns2:author <http://ceur-ws.org/Vol-415/#AdinaiIonescu>,
         <http://ceur-ws.org/Vol-415/#AttilaiK%EF%BF%BDrt%EF%BF%BDsi>,
         <http://ceur-ws.org/Vol-415/#IleanaiHamburg>,
         <http://ceur-ws.org/Vol-415/#ZoltaniPuklus> .
 
-<http://ceur-ws.org/Vol-415/#paper6> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-415/> ;
-    ns7:title "Towards a methodology for educating students with special needs" ;
-    ns6:section <http://ceur-ws.org/Vol-415/#Session2AccesstoEducationandInformation> ;
-    ns3:author <http://ceur-ws.org/Vol-415/#AngeliLucasiGonz%EF%BF%BDlez>,
+<http://ceur-ws.org/Vol-415/#paper6> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-415/> ;
+    ns6:title "Towards a methodology for educating students with special needs" ;
+    ns5:section <http://ceur-ws.org/Vol-415/#Session2AccesstoEducationandInformation> ;
+    ns2:author <http://ceur-ws.org/Vol-415/#AngeliLucasiGonz%EF%BF%BDlez>,
         <http://ceur-ws.org/Vol-415/#CarlosiRuiz>,
         <http://ceur-ws.org/Vol-415/#GonzaloiMariscal>,
         <http://ceur-ws.org/Vol-415/#PalomaiCant%EF%BF%BDn> .
 
-<http://ceur-ws.org/Vol-415/#paper7> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-415/> ;
-    ns7:title "Socially inclusive e-learning models in companies" ;
-    ns6:section <http://ceur-ws.org/Vol-415/#Session2AccesstoEducationandInformation> ;
-    ns3:author <http://ceur-ws.org/Vol-415/#AdinaiIonescu>,
+<http://ceur-ws.org/Vol-415/#paper7> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-415/> ;
+    ns6:title "Socially inclusive e-learning models in companies" ;
+    ns5:section <http://ceur-ws.org/Vol-415/#Session2AccesstoEducationandInformation> ;
+    ns2:author <http://ceur-ws.org/Vol-415/#AdinaiIonescu>,
         <http://ceur-ws.org/Vol-415/#AndreeaiPeca>,
         <http://ceur-ws.org/Vol-415/#IleanaiHamburg>,
         <http://ceur-ws.org/Vol-415/#ThorsteniBusse> .
 
-<http://ceur-ws.org/Vol-415/#paper12> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-415/> ;
-    ns7:title "Biomimetic Space-Variant Sampling in a Vision Prosthesis Improves the User�s Skill in a Localization Task" ;
-    ns6:section <http://ceur-ws.org/Vol-415/#Session3AssistiveTechnologyforIndependence> ;
-    ns3:author <http://ceur-ws.org/Vol-415/#Barth%EF%BF%BDl%EF%BF%BDmyiDurette>,
+<http://ceur-ws.org/Vol-415/#paper12> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-415/> ;
+    ns6:title "Biomimetic Space-Variant Sampling in a Vision Prosthesis Improves the User�s Skill in a Localization Task" ;
+    ns5:section <http://ceur-ws.org/Vol-415/#Session3AssistiveTechnologyforIndependence> ;
+    ns2:author <http://ceur-ws.org/Vol-415/#Barth%EF%BF%BDl%EF%BF%BDmyiDurette>,
         <http://ceur-ws.org/Vol-415/#D.iAlleysson>,
         <http://ceur-ws.org/Vol-415/#J.iH%EF%BF%BDrault>,
         <http://ceur-ws.org/Vol-415/#L.iGamond>,
         <http://ceur-ws.org/Vol-415/#S.iHanneton> .
 
-<http://ceur-ws.org/Vol-415/#paper4> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-415/> ;
-    ns7:title "Body mounted vision system for visually impaired outdoor and indoor wayfinding assistance" ;
-    ns6:section <http://ceur-ws.org/Vol-415/#DanaMarloweSession1OrientationandMobilitySystemsforVisuallyImpairedPeople> ;
-    ns3:author <http://ceur-ws.org/Vol-415/#EriciRoyer>,
+<http://ceur-ws.org/Vol-415/#paper4> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-415/> ;
+    ns6:title "Body mounted vision system for visually impaired outdoor and indoor wayfinding assistance" ;
+    ns5:section <http://ceur-ws.org/Vol-415/#DanaMarloweSession1OrientationandMobilitySystemsforVisuallyImpairedPeople> ;
+    ns2:author <http://ceur-ws.org/Vol-415/#EriciRoyer>,
         <http://ceur-ws.org/Vol-415/#Jean-MarciLavest>,
         <http://ceur-ws.org/Vol-415/#MicheliDhome>,
         <http://ceur-ws.org/Vol-415/#SylvieiTreuillet>,
         <http://ceur-ws.org/Vol-415/#ThierryiChateau> .
 
-<http://ceur-ws.org/Vol-415/#paper9> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-415/> ;
-    ns7:title "Designing Tangible table-top interfaces for Patients in Rehabilitation" ;
-    ns6:section <http://ceur-ws.org/Vol-415/#Session3AssistiveTechnologyforIndependence> ;
-    ns3:author <http://ceur-ws.org/Vol-415/#K.iKappel>,
+<http://ceur-ws.org/Vol-415/#paper9> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-415/> ;
+    ns6:title "Designing Tangible table-top interfaces for Patients in Rehabilitation" ;
+    ns5:section <http://ceur-ws.org/Vol-415/#Session3AssistiveTechnologyforIndependence> ;
+    ns2:author <http://ceur-ws.org/Vol-415/#K.iKappel>,
         <http://ceur-ws.org/Vol-415/#MartiniTomitsch>,
         <http://ceur-ws.org/Vol-415/#MichaeliLeitner>,
         <http://ceur-ws.org/Vol-415/#T.iGrechenig>,
         <http://ceur-ws.org/Vol-415/#T.iK%EF%BF%BDltringer> .
 
-<http://ceur-ws.org/Vol-415/> a ns5:Proceedings ;
-    ns5:hasPart <http://ceur-ws.org/Vol-415/#panelpaper1>,
+<http://ceur-ws.org/Vol-415/> a ns3:Proceedings ;
+    ns3:hasPart <http://ceur-ws.org/Vol-415/#panelpaper1>,
         <http://ceur-ws.org/Vol-415/#panelpaper2>,
         <http://ceur-ws.org/Vol-415/#panelpaper3>,
         <http://ceur-ws.org/Vol-415/#paper1>,
@@ -685,7 +685,7 @@
         <http://ceur-ws.org/Vol-415/#paper7>,
         <http://ceur-ws.org/Vol-415/#paper8>,
         <http://ceur-ws.org/Vol-415/#paper9> ;
-    ns5:hasSession <http://ceur-ws.org/Vol-415/#DanaMarloweSession1OrientationandMobilitySystemsforVisuallyImpairedPeople>,
+    ns3:hasSession <http://ceur-ws.org/Vol-415/#DanaMarloweSession1OrientationandMobilitySystemsforVisuallyImpairedPeople>,
         <http://ceur-ws.org/Vol-415/#PanelDiscussionAssistiveTechnologyandSocialInclusionforDeafandHearingImpairedPeoplefromEthnicandOtherMinorityGroups>,
         <http://ceur-ws.org/Vol-415/#Session2AccesstoEducationandInformation>,
         <http://ceur-ws.org/Vol-415/#Session3AssistiveTechnologyforIndependence>,
@@ -694,8 +694,8 @@
         <http://ceur-ws.org/Vol-415/#Session6SignLanguageandAccesstoInformationforDeafPeople>,
         <http://ceur-ws.org/Vol-415/#Session7TelephonyandOtherServicesforHearingImpairedPeople>,
         <http://ceur-ws.org/Vol-415/#Workshop> ;
-    ns2:issued "2008-11-11T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:presentedAt <http://ceur-ws.org/Vol-415/#event> ;
-    ns3:editor <http://ceur-ws.org/Vol-415/#JamesiOhene-Djan>,
+    ns7:issued "2008-11-11T00:00:00+00:00"^^xsd:dateTime ;
+    ns5:presentedAt <http://ceur-ws.org/Vol-415/#event> ;
+    ns2:editor <http://ceur-ws.org/Vol-415/#JamesiOhene-Djan>,
         <http://ceur-ws.org/Vol-415/#MarioniHersh> .
 

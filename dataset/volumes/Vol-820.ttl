@@ -1,37 +1,225 @@
-@prefix ns1: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns2: <http://www.w3.org/2002/07/owl#> .
-@prefix ns3: <http://xmlns.com/foaf/0.1/> .
+@prefix ns1: <http://www.w3.org/2002/07/owl#> .
+@prefix ns2: <http://xmlns.com/foaf/0.1/> .
+@prefix ns3: <http://swrc.ontoware.org/ontology/#> .
 @prefix ns4: <http://purl.org/ontology/bibo/#> .
-@prefix ns5: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns5: <http://data.semanticweb.org/ns/swc/ontology/#> .
 @prefix ns6: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns7: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns8: <http://purl.org/dc/elements/1.1/> .
+@prefix ns7: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns9: <http://purl.org/dc/elements/1.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-820/> a ns1:Proceedings ;
-    ns5:issued "2012-01-20T00:00:00+00:00"^^xsd:dateTime ;
-    ns4:presentedAt <http://ceur-ws.org/Vol-820/#event> ;
-    ns7:editor <http://ceur-ws.org/Vol-820/#HajoiReijers>,
-        <http://ceur-ws.org/Vol-820/#HeikoiLudwig> .
+<http://ceur-ws.org/Vol-820/#AhmediAwad> a ns2:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/AhmediAwad> ;
+    ns2:made <http://ceur-ws.org/Vol-820/#Demo2> ;
+    ns2:name "Ahmed Awad" .
 
-<http://ceur-ws.org/Vol-820/#HajoiReijers> a ns3:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/HajoiReijers> ;
-    ns3:name "Hajo Reijers" .
+<http://ceur-ws.org/Vol-820/#AlessandroiRusso> a ns2:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/AlessandroiRusso> ;
+    ns2:made <http://ceur-ws.org/Vol-820/#Demo6> ;
+    ns2:name "Alessandro Russo" .
 
-<http://ceur-ws.org/Vol-820/#HeikoiLudwig> a ns3:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/HeikoiLudwig> ;
-    ns3:name "Heiko Ludwig" .
+<http://ceur-ws.org/Vol-820/#AndreaiMarrella> a ns2:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/AndreaiMarrella> ;
+    ns2:made <http://ceur-ws.org/Vol-820/#Demo6> ;
+    ns2:name "Andrea Marrella" .
 
-<http://ceur-ws.org/Vol-820/#event> a ns1:WorkshopEvent ;
-    ns1:hasLocation <http://dbpedia.org/resource/France> ;
-    ns1:hasPart <http://ceur-ws.org/Vol-820/#part-CEUR-WS> ;
-    ns1:isSubEventOf <http://ceur-ws.org/Vol-820/#conf> ;
+<http://ceur-ws.org/Vol-820/#ArnoldiJ.iMoleman> a ns2:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/ArnoldiJ.iMoleman> ;
+    ns2:made <http://ceur-ws.org/Vol-820/#Demo4> ;
+    ns2:name "Arnold J. Moleman" .
+
+<http://ceur-ws.org/Vol-820/#ArthuriH.M.iteriHofstede> a ns2:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/ArthuriH.M.iteriHofstede> ;
+    ns2:made <http://ceur-ws.org/Vol-820/#Demo6> ;
+    ns2:name "Arthur H.M. ter Hofstede" .
+
+<http://ceur-ws.org/Vol-820/#DanieliJohnson> a ns2:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/DanieliJohnson> ;
+    ns2:made <http://ceur-ws.org/Vol-820/#Demo5> ;
+    ns2:name "Daniel Johnson" .
+
+<http://ceur-ws.org/Vol-820/#EmilianiPascalau> a ns2:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/EmilianiPascalau> ;
+    ns2:made <http://ceur-ws.org/Vol-820/#Demo2> ;
+    ns2:name "Emilian Pascalau" .
+
+<http://ceur-ws.org/Vol-820/#ErikiPoppe> a ns2:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/ErikiPoppe> ;
+    ns2:made <http://ceur-ws.org/Vol-820/#Demo5> ;
+    ns2:name "Erik Poppe" .
+
+<http://ceur-ws.org/Vol-820/#FabrizioiM.iMaggi> a ns2:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/FabrizioiM.iMaggi> ;
+    ns2:made <http://ceur-ws.org/Vol-820/#Demo3> ;
+    ns2:name "Fabrizio M. Maggi" .
+
+<http://ceur-ws.org/Vol-820/#HajoiReijers> a ns2:Person ;
+    ns4:place <http://dbpedia.org/resource/United_States> ;
+    ns3:affiliation "* IBM Almaden Research Center, San Jose, CA" ;
+    ns1:sameAs <http://ceur-ws.org/persons/HajoiReijers> ;
+    ns2:name "Hajo Reijers" .
+
+<http://ceur-ws.org/Vol-820/#HeikoiLudwig> a ns2:Person ;
+    ns3:affiliation "" ;
+    ns1:sameAs <http://ceur-ws.org/persons/HeikoiLudwig> ;
+    ns2:name "Heiko Ludwig" .
+
+<http://ceur-ws.org/Vol-820/#JaniRecker> a ns2:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/JaniRecker> ;
+    ns2:made <http://ceur-ws.org/Vol-820/#Demo5> ;
+    ns2:name "Jan Recker" .
+
+<http://ceur-ws.org/Vol-820/#JianminiWang> a ns2:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/JianminiWang> ;
+    ns2:made <http://ceur-ws.org/Vol-820/#Demo1> ;
+    ns2:name "Jianmin Wang" .
+
+<http://ceur-ws.org/Vol-820/#LijieiWen> a ns2:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/LijieiWen> ;
+    ns2:made <http://ceur-ws.org/Vol-820/#Demo1> ;
+    ns2:name "Lijie Wen" .
+
+<http://ceur-ws.org/Vol-820/#MassimoiMecella> a ns2:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/MassimoiMecella> ;
+    ns2:made <http://ceur-ws.org/Vol-820/#Demo6> ;
+    ns2:name "Massimo Mecella" .
+
+<http://ceur-ws.org/Vol-820/#MathiasiWeske> a ns2:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/MathiasiWeske> ;
+    ns2:made <http://ceur-ws.org/Vol-820/#Demo2> ;
+    ns2:name "Mathias Weske" .
+
+<http://ceur-ws.org/Vol-820/#MichaeliWestergaard> a ns2:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/MichaeliWestergaard> ;
+    ns2:made <http://ceur-ws.org/Vol-820/#Demo3> ;
+    ns2:name "Michael Westergaard" .
+
+<http://ceur-ws.org/Vol-820/#NickiC.iRussell> a ns2:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/NickiC.iRussell> ;
+    ns2:made <http://ceur-ws.org/Vol-820/#Demo4> ;
+    ns2:name "Nick C. Russell" .
+
+<http://ceur-ws.org/Vol-820/#PietiJ.M.iBakker> a ns2:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/PietiJ.M.iBakker> ;
+    ns2:made <http://ceur-ws.org/Vol-820/#Demo4> ;
+    ns2:name "Piet J.M. Bakker" .
+
+<http://ceur-ws.org/Vol-820/#RonnyiS.iMans> a ns2:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/RonnyiS.iMans> ;
+    ns2:made <http://ceur-ws.org/Vol-820/#Demo4> ;
+    ns2:name "Ronny S. Mans" .
+
+<http://ceur-ws.org/Vol-820/#RossiBrown> a ns2:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/RossiBrown> ;
+    ns2:made <http://ceur-ws.org/Vol-820/#Demo5> ;
+    ns2:name "Ross Brown" .
+
+<http://ceur-ws.org/Vol-820/#SebastianiSardina> a ns2:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/SebastianiSardina> ;
+    ns2:made <http://ceur-ws.org/Vol-820/#Demo6> ;
+    ns2:name "Sebastian Sardina" .
+
+<http://ceur-ws.org/Vol-820/#SherifiSakr> a ns2:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/SherifiSakr> ;
+    ns2:made <http://ceur-ws.org/Vol-820/#Demo2> ;
+    ns2:name "Sherif Sakr" .
+
+<http://ceur-ws.org/Vol-820/#TaoiJin> a ns2:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/TaoiJin> ;
+    ns2:made <http://ceur-ws.org/Vol-820/#Demo1> ;
+    ns2:name "Tao Jin" .
+
+<http://ceur-ws.org/Vol-820/#WiliM.P.ivanideriAalst> a ns2:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/WiliM.P.ivanideriAalst> ;
+    ns2:made <http://ceur-ws.org/Vol-820/#Demo4> ;
+    ns2:name "Wil M.P. van der Aalst" .
+
+<http://ceur-ws.org/Vol-820/#event> a ns5:WorkshopEvent ;
+    ns5:hasLocation <http://dbpedia.org/resource/France> ;
+    ns5:hasPart <http://ceur-ws.org/Vol-820/#part-BPM> ;
+    ns5:isSubEventOf <http://ceur-ws.org/Vol-820/#conf> ;
     ns6:beginsAtDatetime "2011-08-31T00:00:00+00:00"^^xsd:dateTime ;
     ns6:endsAtDatetime "2011-08-31T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:license "http://choosealicense.com/licenses/no-license/" ;
+    ns9:license "http://choosealicense.com/licenses/no-license/" ;
     rdfs:seeAlso <http://ceur-ws.org/Vol-489/#event>,
         <http://ceur-ws.org/Vol-615/#event> .
+
+<http://ceur-ws.org/Vol-820/#Demo3> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-820/> ;
+    ns7:title "Declare: A Tool Suite for Declarative Workflow Modeling and Enactment" ;
+    ns4:section <http://ceur-ws.org/Vol-820/#Session1> ;
+    ns3:author <http://ceur-ws.org/Vol-820/#FabrizioiM.iMaggi>,
+        <http://ceur-ws.org/Vol-820/#MichaeliWestergaard> .
+
+<http://ceur-ws.org/Vol-820/#Demo1> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-820/> ;
+    ns7:title "Efficiently Querying Business Process Models with BeehiveZ" ;
+    ns4:section <http://ceur-ws.org/Vol-820/#Session1> ;
+    ns3:author <http://ceur-ws.org/Vol-820/#JianminiWang>,
+        <http://ceur-ws.org/Vol-820/#LijieiWen>,
+        <http://ceur-ws.org/Vol-820/#TaoiJin> .
+
+<http://ceur-ws.org/Vol-820/#Session1> a ns5:SessionEvent ;
+    ns5:partOf <http://ceur-ws.org/Vol-820/> ;
+    ns7:title "Session 1" .
+
+<http://ceur-ws.org/Vol-820/#Session2> a ns5:SessionEvent ;
+    ns5:partOf <http://ceur-ws.org/Vol-820/> ;
+    ns7:title "Session 2" .
+
+<http://ceur-ws.org/Vol-820/#Demo2> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-820/> ;
+    ns7:title "BPModelMasher: Manage Your Process Variants Effectively" ;
+    ns4:section <http://ceur-ws.org/Vol-820/#Session1> ;
+    ns3:author <http://ceur-ws.org/Vol-820/#AhmediAwad>,
+        <http://ceur-ws.org/Vol-820/#EmilianiPascalau>,
+        <http://ceur-ws.org/Vol-820/#MathiasiWeske>,
+        <http://ceur-ws.org/Vol-820/#SherifiSakr> .
+
+<http://ceur-ws.org/Vol-820/#Demo5> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-820/> ;
+    ns7:title "A Prototype Augmented Reality Collaborative Process Modelling Tool" ;
+    ns4:section <http://ceur-ws.org/Vol-820/#Session2> ;
+    ns3:author <http://ceur-ws.org/Vol-820/#DanieliJohnson>,
+        <http://ceur-ws.org/Vol-820/#ErikiPoppe>,
+        <http://ceur-ws.org/Vol-820/#JaniRecker>,
+        <http://ceur-ws.org/Vol-820/#RossiBrown> .
+
+<http://ceur-ws.org/Vol-820/#Demo4> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-820/> ;
+    ns7:title "Supporting Healthcare Processes with YAWL4Healthcare" ;
+    ns4:section <http://ceur-ws.org/Vol-820/#Session2> ;
+    ns3:author <http://ceur-ws.org/Vol-820/#ArnoldiJ.iMoleman>,
+        <http://ceur-ws.org/Vol-820/#NickiC.iRussell>,
+        <http://ceur-ws.org/Vol-820/#PietiJ.M.iBakker>,
+        <http://ceur-ws.org/Vol-820/#RonnyiS.iMans>,
+        <http://ceur-ws.org/Vol-820/#WiliM.P.ivanideriAalst> .
+
+<http://ceur-ws.org/Vol-820/#Demo6> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-820/> ;
+    ns7:title "Making YAWL and SmartPM Interoperate: Managing Highly Dynamic Processes by Exploiting Automatic Adaptation Features" ;
+    ns4:section <http://ceur-ws.org/Vol-820/#Session2> ;
+    ns3:author <http://ceur-ws.org/Vol-820/#AlessandroiRusso>,
+        <http://ceur-ws.org/Vol-820/#AndreaiMarrella>,
+        <http://ceur-ws.org/Vol-820/#ArthuriH.M.iteriHofstede>,
+        <http://ceur-ws.org/Vol-820/#MassimoiMecella>,
+        <http://ceur-ws.org/Vol-820/#SebastianiSardina> .
+
+<http://ceur-ws.org/Vol-820/> a ns5:Proceedings ;
+    ns5:hasPart <http://ceur-ws.org/Vol-820/#Demo1>,
+        <http://ceur-ws.org/Vol-820/#Demo2>,
+        <http://ceur-ws.org/Vol-820/#Demo3>,
+        <http://ceur-ws.org/Vol-820/#Demo4>,
+        <http://ceur-ws.org/Vol-820/#Demo5>,
+        <http://ceur-ws.org/Vol-820/#Demo6> ;
+    ns5:hasSession <http://ceur-ws.org/Vol-820/#Session1>,
+        <http://ceur-ws.org/Vol-820/#Session2> ;
+    ns8:issued "2012-01-20T00:00:00+00:00"^^xsd:dateTime ;
+    ns4:presentedAt <http://ceur-ws.org/Vol-820/#event> ;
+    ns3:editor <http://ceur-ws.org/Vol-820/#HajoiReijers>,
+        <http://ceur-ws.org/Vol-820/#HeikoiLudwig> .
 

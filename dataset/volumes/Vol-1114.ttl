@@ -1,54 +1,991 @@
-@prefix ns1: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns2: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns3: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns4: <http://www.w3.org/2002/07/owl#> .
-@prefix ns5: <http://xmlns.com/foaf/0.1/> .
-@prefix ns6: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns7: <http://purl.org/ontology/bibo/#> .
-@prefix ns8: <http://purl.org/dc/elements/1.1/> .
+@prefix ns1: <http://www.w3.org/2002/07/owl#> .
+@prefix ns2: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns3: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns4: <http://xmlns.com/foaf/0.1/> .
+@prefix ns5: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns6: <http://purl.org/ontology/bibo/#> .
+@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns9: <http://purl.org/dc/elements/1.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1114/> a ns2:Proceedings ;
-    ns6:issued "2014-01-07T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:presentedAt <http://ceur-ws.org/Vol-1114/#event> ;
-    ns1:editor <http://ceur-ws.org/Vol-1114/#AdrianiPaschke>,
-        <http://ceur-ws.org/Vol-1114/#AlbertiBurger>,
-        <http://ceur-ws.org/Vol-1114/#AndreaiSplendiani>,
-        <http://ceur-ws.org/Vol-1114/#M.iScottiMarshall>,
-        <http://ceur-ws.org/Vol-1114/#PaoloiRomano> .
+<http://ceur-ws.org/Vol-1114/#%C3%96zg%C3%BCriG%C3%BCm%C3%BCs> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/%C3%96zg%C3%BCriG%C3%BCm%C3%BCs> ;
+    ns4:made <http://ceur-ws.org/Vol-1114/#Poster_Celebi> ;
+    ns4:name "Özgür Gümüs" .
 
-<http://ceur-ws.org/Vol-1114/#AdrianiPaschke> a ns5:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/AdrianiPaschke> ;
-    ns5:name "Adrian Paschke" .
+<http://ceur-ws.org/Vol-1114/#AjitiKumar> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/AjitiKumar> ;
+    ns4:made <http://ceur-ws.org/Vol-1114/#Session2_Kumar> ;
+    ns4:name "Ajit Kumar" .
 
-<http://ceur-ws.org/Vol-1114/#AlbertiBurger> a ns5:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/AlbertiBurger> ;
-    ns5:name "Albert Burger" .
+<http://ceur-ws.org/Vol-1114/#AkihiroiMatsushima> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/AkihiroiMatsushima> ;
+    ns4:made <http://ceur-ws.org/Vol-1114/#Poster_Kobayashi> ;
+    ns4:name "Akihiro Matsushima" .
 
-<http://ceur-ws.org/Vol-1114/#AndreaiSplendiani> a ns5:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/AndreaiSplendiani> ;
-    ns5:name "Andrea Splendiani" .
+<http://ceur-ws.org/Vol-1114/#AlbertiBurger> a ns4:Person ;
+    ns2:affiliation "" ;
+    ns1:sameAs <http://ceur-ws.org/persons/AlbertiBurger> ;
+    ns4:name "Albert Burger" .
 
-<http://ceur-ws.org/Vol-1114/#M.iScottiMarshall> a ns5:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/M.iScottiMarshall> ;
-    ns5:name "M. Scott Marshall" .
+<http://ceur-ws.org/Vol-1114/#AmaliKammoun> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/AmaliKammoun> ;
+    ns4:made <http://ceur-ws.org/Vol-1114/#Poster_Diallo> ;
+    ns4:name "Amal Kammoun" .
 
-<http://ceur-ws.org/Vol-1114/#PaoloiRomano> a ns5:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/PaoloiRomano> ;
-    ns5:name "Paolo Romano" .
+<http://ceur-ws.org/Vol-1114/#AndreaiMarrella> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/AndreaiMarrella> ;
+    ns4:made <http://ceur-ws.org/Vol-1114/#Session2_Masoumi> ;
+    ns4:name "Andrea Marrella" .
 
-<http://ceur-ws.org/Vol-1114/#event> a ns2:WorkshopEvent ;
-    ns2:hasLocation <http://dbpedia.org/resource/United_Kingdom> ;
-    ns2:hasPart <http://ceur-ws.org/Vol-1114/#part-ws> ;
-    ns2:isSubEventOf <http://ceur-ws.org/Vol-1114/#conf> ;
-    ns3:beginsAtDatetime "2013-12-10T00:00:00+00:00"^^xsd:dateTime ;
-    ns3:endsAtDatetime "2013-12-10T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:license "http://choosealicense.com/licenses/no-license/" ;
+<http://ceur-ws.org/Vol-1114/#AndreaiSplendiani> a ns4:Person ;
+    ns2:affiliation "" ;
+    ns1:sameAs <http://ceur-ws.org/persons/AndreaiSplendiani> ;
+    ns4:name "Andrea Splendiani" .
+
+<http://ceur-ws.org/Vol-1114/#AnniAckaert> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/AnniAckaert> ;
+    ns4:made <http://ceur-ws.org/Vol-1114/#Poster_Backere> ;
+    ns4:name "Ann Ackaert" .
+
+<http://ceur-ws.org/Vol-1114/#ArmaniMasoumi> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/ArmaniMasoumi> ;
+    ns4:made <http://ceur-ws.org/Vol-1114/#Session2_Masoumi> ;
+    ns4:name "Arman Masoumi" .
+
+<http://ceur-ws.org/Vol-1114/#AtakaniKaya> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/AtakaniKaya> ;
+    ns4:made <http://ceur-ws.org/Vol-1114/#Demo_Sinaci> ;
+    ns4:name "Atakan Kaya" .
+
+<http://ceur-ws.org/Vol-1114/#AthanasiosiKleontas> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/AthanasiosiKleontas> ;
+    ns4:made <http://ceur-ws.org/Vol-1114/#Poster_Doulaverakis> ;
+    ns4:name "Athanasios Kleontas" .
+
+<http://ceur-ws.org/Vol-1114/#BorisiDeiVloed> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/BorisiDeiVloed> ;
+    ns4:made <http://ceur-ws.org/Vol-1114/#Poster_Sun> ;
+    ns4:name "Boris De Vloed" .
+
+<http://ceur-ws.org/Vol-1114/#CharalamposiDoulaverakis> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/CharalamposiDoulaverakis> ;
+    ns4:made <http://ceur-ws.org/Vol-1114/#Poster_Doulaverakis> ;
+    ns4:name "Charalampos Doulaverakis" .
+
+<http://ceur-ws.org/Vol-1114/#ChristianiY.iA.iBrenninkmeijer> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/ChristianiY.iA.iBrenninkmeijer> ;
+    ns4:made <http://ceur-ws.org/Vol-1114/#Session4_Brenninkmeijer> ;
+    ns4:name "Christian Y. A. Brenninkmeijer" .
+
+<http://ceur-ws.org/Vol-1114/#ChristophiSteinbeck> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/ChristophiSteinbeck> ;
+    ns4:made <http://ceur-ws.org/Vol-1114/#Session3_Herrero-Zazo> ;
+    ns4:name "Christoph Steinbeck" .
+
+<http://ceur-ws.org/Vol-1114/#CorneliaiHedeler> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/CorneliaiHedeler> ;
+    ns4:made <http://ceur-ws.org/Vol-1114/#Session3_Hedeler> ;
+    ns4:name "Cornelia Hedeler" .
+
+<http://ceur-ws.org/Vol-1114/#CoryiEndle> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/CoryiEndle> ;
+    ns4:made <http://ceur-ws.org/Vol-1114/#Session1_Jiang> ;
+    ns4:name "Cory Endle" .
+
+<http://ceur-ws.org/Vol-1114/#CuiiTao> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/CuiiTao> ;
+    ns4:made <http://ceur-ws.org/Vol-1114/#Session3_Clark> ;
+    ns4:name "Cui Tao" .
+
+<http://ceur-ws.org/Vol-1114/#DanieliS%C3%A1nchez-Cisneros> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/DanieliS%C3%A1nchez-Cisneros> ;
+    ns4:made <http://ceur-ws.org/Vol-1114/#Demo_Sanchez-Cisneros> ;
+    ns4:name "Daniel Sánchez-Cisneros" .
+
+<http://ceur-ws.org/Vol-1114/#DavidiGifford> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/DavidiGifford> ;
+    ns4:made <http://ceur-ws.org/Vol-1114/#Poster_Kobayashi> ;
+    ns4:name "David Gifford" .
+
+<http://ceur-ws.org/Vol-1114/#DeepakiSharma> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/DeepakiSharma> ;
+    ns4:made <http://ceur-ws.org/Vol-1114/#Session3_Clark> ;
+    ns4:name "Deepak Sharma" .
+
+<http://ceur-ws.org/Vol-1114/#DirkiColaert> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/DirkiColaert> ;
+    ns4:made <http://ceur-ws.org/Vol-1114/#Poster_Sun> ;
+    ns4:name "Dirk Colaert" .
+
+<http://ceur-ws.org/Vol-1114/#EelkeivanideriHorst> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/EelkeivanideriHorst> ;
+    ns4:made <http://ceur-ws.org/Vol-1114/#Poster_van_der_Horst> ;
+    ns4:name "Eelke van der Horst" .
+
+<http://ceur-ws.org/Vol-1114/#EleniiMina> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/EleniiMina> ;
+    ns4:made <http://ceur-ws.org/Vol-1114/#Session2_Mina> ;
+    ns4:name "Eleni Mina" .
+
+<http://ceur-ws.org/Vol-1114/#ErikiSchultes> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/ErikiSchultes> ;
+    ns4:made <http://ceur-ws.org/Vol-1114/#Session2_Mina> ;
+    ns4:name "Erik Schultes" .
+
+<http://ceur-ws.org/Vol-1114/#FemkeiDeiBackere> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/FemkeiDeiBackere> ;
+    ns4:made <http://ceur-ws.org/Vol-1114/#Poster_Backere> ;
+    ns4:name "Femke De Backere" .
+
+<http://ceur-ws.org/Vol-1114/#FemkeiOngenae> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/FemkeiOngenae> ;
+    ns4:made <http://ceur-ws.org/Vol-1114/#Poster_Backere> ;
+    ns4:name "Femke Ongenae" .
+
+<http://ceur-ws.org/Vol-1114/#FilipiDeiTurck> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/FilipiDeiTurck> ;
+    ns4:made <http://ceur-ws.org/Vol-1114/#Poster_Backere> ;
+    ns4:name "Filip De Turck" .
+
+<http://ceur-ws.org/Vol-1114/#FlorisiVanideniAbeele> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/FlorisiVanideniAbeele> ;
+    ns4:made <http://ceur-ws.org/Vol-1114/#Poster_Backere> ;
+    ns4:name "Floris Van den Abeele" .
+
+<http://ceur-ws.org/Vol-1114/#GayoiDiallo> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/GayoiDiallo> ;
+    ns4:made <http://ceur-ws.org/Vol-1114/#Poster_Diallo> ;
+    ns4:name "Gayo Diallo" .
+
+<http://ceur-ws.org/Vol-1114/#GeorgeiNikolaidis> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/GeorgeiNikolaidis> ;
+    ns4:made <http://ceur-ws.org/Vol-1114/#Poster_Doulaverakis> ;
+    ns4:name "George Nikolaidis" .
+
+<http://ceur-ws.org/Vol-1114/#GiovanniiMels> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/GiovanniiMels> ;
+    ns4:made <http://ceur-ws.org/Vol-1114/#Poster_Sun> ;
+    ns4:name "Giovanni Mels" .
+
+<http://ceur-ws.org/Vol-1114/#GuoqianiJiang> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/GuoqianiJiang> ;
+    ns4:made <http://ceur-ws.org/Vol-1114/#Session1_Jiang> ;
+    ns4:name "Guoqian Jiang" .
+
+<http://ceur-ws.org/Vol-1114/#H.iAlperiCinar> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/H.iAlperiCinar> ;
+    ns4:made <http://ceur-ws.org/Vol-1114/#Demo_Sinaci> ;
+    ns4:name "H. Alper Cinar" .
+
+<http://ceur-ws.org/Vol-1114/#HaroldiSolbrig> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/HaroldiSolbrig> ;
+    ns4:made <http://ceur-ws.org/Vol-1114/#Session1_Jiang> ;
+    ns4:name "Harold Solbrig" .
+
+<http://ceur-ws.org/Vol-1114/#HenriiMaurer> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/HenriiMaurer> ;
+    ns4:made <http://ceur-ws.org/Vol-1114/#Session1_Cure> ;
+    ns4:name "Henri Maurer" .
+
+<http://ceur-ws.org/Vol-1114/#HiroshiiMasuya> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/HiroshiiMasuya> ;
+    ns4:made <http://ceur-ws.org/Vol-1114/#Poster_Kobayashi> ;
+    ns4:name "Hiroshi Masuya" .
+
+<http://ceur-ws.org/Vol-1114/#HongiSun> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/HongiSun> ;
+    ns4:made <http://ceur-ws.org/Vol-1114/#Poster_Sun> ;
+    ns4:name "Hong Sun" .
+
+<http://ceur-ws.org/Vol-1114/#I-JeniChiang> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/I-JeniChiang> ;
+    ns4:made <http://ceur-ws.org/Vol-1114/#Session2_Kumar> ;
+    ns4:name "I-Jen Chiang" .
+
+<http://ceur-ws.org/Vol-1114/#IoannisiKompatsiaris> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/IoannisiKompatsiaris> ;
+    ns4:made <http://ceur-ws.org/Vol-1114/#Poster_Doulaverakis> ;
+    ns4:name "Ioannis Kompatsiaris" .
+
+<http://ceur-ws.org/Vol-1114/#JakubiKl%C3%ADmek> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/JakubiKl%C3%ADmek> ;
+    ns4:made <http://ceur-ws.org/Vol-1114/#Session2_Kozak> ;
+    ns4:name "Jakub Klímek" .
+
+<http://ceur-ws.org/Vol-1114/#JakubiKoz%C3%A1k> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/JakubiKoz%C3%A1k> ;
+    ns4:made <http://ceur-ws.org/Vol-1114/#Session2_Kozak> ;
+    ns4:name "Jakub Kozák" .
+
+<http://ceur-ws.org/Vol-1114/#JamesiEales> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/JamesiEales> ;
+    ns4:made <http://ceur-ws.org/Vol-1114/#Demo_Dunlop> ;
+    ns4:name "James Eales" .
+
+<http://ceur-ws.org/Vol-1114/#JaniDedek> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/JaniDedek> ;
+    ns4:made <http://ceur-ws.org/Vol-1114/#Session2_Kozak> ;
+    ns4:name "Jan Dedek" .
+
+<http://ceur-ws.org/Vol-1114/#JaniVelterop> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/JaniVelterop> ;
+    ns4:made <http://ceur-ws.org/Vol-1114/#Demo_Dunlop> ;
+    ns4:name "Jan Velterop" .
+
+<http://ceur-ws.org/Vol-1114/#JannaiHastings> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/JannaiHastings> ;
+    ns4:made <http://ceur-ws.org/Vol-1114/#Session3_Herrero-Zazo> ;
+    ns4:name "Janna Hastings" .
+
+<http://ceur-ws.org/Vol-1114/#JaroslaviPokorn%C3%BD> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/JaroslaviPokorn%C3%BD> ;
+    ns4:made <http://ceur-ws.org/Vol-1114/#Session2_Kozak> ;
+    ns4:name "Jaroslav Pokorný" .
+
+<http://ceur-ws.org/Vol-1114/#Jau-MiniWong> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/Jau-MiniWong> ;
+    ns4:made <http://ceur-ws.org/Vol-1114/#Session2_Kumar> ;
+    ns4:name "Jau-Min Wong" .
+
+<http://ceur-ws.org/Vol-1114/#JenniferiWarrender> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/JenniferiWarrender> ;
+    ns4:made <http://ceur-ws.org/Vol-1114/#Session3_Warrender> ;
+    ns4:name "Jennifer Warrender" .
+
+<http://ceur-ws.org/Vol-1114/#JeroeniHoebeke> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/JeroeniHoebeke> ;
+    ns4:made <http://ceur-ws.org/Vol-1114/#Poster_Backere> ;
+    ns4:name "Jeroen Hoebeke" .
+
+<http://ceur-ws.org/Vol-1114/#JulieiEvans> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/JulieiEvans> ;
+    ns4:made <http://ceur-ws.org/Vol-1114/#Session1_Jiang> ;
+    ns4:name "Julie Evans" .
+
+<http://ceur-ws.org/Vol-1114/#JuniZhao> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/JuniZhao> ;
+    ns4:made <http://ceur-ws.org/Vol-1114/#Session2_Mina> ;
+    ns4:name "Jun Zhao" .
+
+<http://ceur-ws.org/Vol-1114/#KimberlyiClark> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/KimberlyiClark> ;
+    ns4:made <http://ceur-ws.org/Vol-1114/#Session3_Clark> ;
+    ns4:name "Kimberly Clark" .
+
+<http://ceur-ws.org/Vol-1114/#KojiiDoi> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/KojiiDoi> ;
+    ns4:made <http://ceur-ws.org/Vol-1114/#Poster_Kobayashi> ;
+    ns4:name "Koji Doi" .
+
+<http://ceur-ws.org/Vol-1114/#KoroiNishikata> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/KoroiNishikata> ;
+    ns4:made <http://ceur-ws.org/Vol-1114/#Poster_Kobayashi> ;
+    ns4:name "Koro Nishikata" .
+
+<http://ceur-ws.org/Vol-1114/#LauraiI.iFurlong> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/LauraiI.iFurlong> ;
+    ns4:made <http://ceur-ws.org/Vol-1114/#Poster_Queralt-Rosinach> ;
+    ns4:name "Laura I. Furlong" .
+
+<http://ceur-ws.org/Vol-1114/#LeonardoiCampillosiLlanos> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/LeonardoiCampillosiLlanos> ;
+    ns4:made <http://ceur-ws.org/Vol-1114/#Demo_Sanchez-Cisneros> ;
+    ns4:name "Leonardo Campillos Llanos" .
+
+<http://ceur-ws.org/Vol-1114/#LiziReynolds> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/LiziReynolds> ;
+    ns4:made <http://ceur-ws.org/Vol-1114/#Demo_Iersel> ;
+    ns4:name "Liz Reynolds" .
+
+<http://ceur-ws.org/Vol-1114/#M.iScottiMarshall> a ns4:Person ;
+    ns2:affiliation "" ;
+    ns1:sameAs <http://ceur-ws.org/persons/M.iScottiMarshall> ;
+    ns4:name "M. Scott Marshall" .
+
+<http://ceur-ws.org/Vol-1114/#ManabuiIshii> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/ManabuiIshii> ;
+    ns4:made <http://ceur-ws.org/Vol-1114/#Poster_Kobayashi> ;
+    ns4:name "Manabu Ishii" .
+
+<http://ceur-ws.org/Vol-1114/#MarciTwagirumukiza> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/MarciTwagirumukiza> ;
+    ns4:made <http://ceur-ws.org/Vol-1114/#Poster_Sun> ;
+    ns4:name "Marc Twagirumukiza" .
+
+<http://ceur-ws.org/Vol-1114/#MariaiHerrero-Zazo> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/MariaiHerrero-Zazo> ;
+    ns4:made <http://ceur-ws.org/Vol-1114/#Session3_Herrero-Zazo> ;
+    ns4:name "Maria Herrero-Zazo" .
+
+<http://ceur-ws.org/Vol-1114/#MarkiThompson> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/MarkiThompson> ;
+    ns4:made <http://ceur-ws.org/Vol-1114/#Session2_Mina> ;
+    ns4:name "Mark Thompson" .
+
+<http://ceur-ws.org/Vol-1114/#MartijnivaniIersel> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/MartijnivaniIersel> ;
+    ns4:made <http://ceur-ws.org/Vol-1114/#Demo_Iersel> ;
+    ns4:name "Martijn van Iersel" .
+
+<http://ceur-ws.org/Vol-1114/#MartiniNecask%C3%BD> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/MartiniNecask%C3%BD> ;
+    ns4:made <http://ceur-ws.org/Vol-1114/#Session2_Kozak> ;
+    ns4:name "Martin Necaský" .
+
+<http://ceur-ws.org/Vol-1114/#MasatakaiKikuchi> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/MasatakaiKikuchi> ;
+    ns4:made <http://ceur-ws.org/Vol-1114/#Poster_Katayama> ;
+    ns4:name "Masataka Kikuchi" .
+
+<http://ceur-ws.org/Vol-1114/#MercedesiArguelloiCasteleiro> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/MercedesiArguelloiCasteleiro> ;
+    ns4:made <http://ceur-ws.org/Vol-1114/#Session1_Casteleiro> ;
+    ns4:name "Mercedes Arguello Casteleiro" .
+
+<http://ceur-ws.org/Vol-1114/#MikhailiSoutchanski> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/MikhailiSoutchanski> ;
+    ns4:made <http://ceur-ws.org/Vol-1114/#Session2_Masoumi> ;
+    ns4:name "Mikhail Soutchanski" .
+
+<http://ceur-ws.org/Vol-1114/#MirekiSopek> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/MirekiSopek> ;
+    ns4:made <http://ceur-ws.org/Vol-1114/#Poster_Ostlund> ;
+    ns4:name "Mirek Sopek" .
+
+<http://ceur-ws.org/Vol-1114/#MustafaiYuksel> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/MustafaiYuksel> ;
+    ns4:made <http://ceur-ws.org/Vol-1114/#Demo_Yuksel> ;
+    ns4:name "Mustafa Yuksel" .
+
+<http://ceur-ws.org/Vol-1114/#N%C3%BAriaiQueralt-Rosinach> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/N%C3%BAriaiQueralt-Rosinach> ;
+    ns4:made <http://ceur-ws.org/Vol-1114/#Poster_Queralt-Rosinach> ;
+    ns4:name "Núria Queralt-Rosinach" .
+
+<http://ceur-ws.org/Vol-1114/#NadiaiAnwar> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/NadiaiAnwar> ;
+    ns4:made <http://ceur-ws.org/Vol-1114/#Demo_Iersel> ;
+    ns4:name "Nadia Anwar" .
+
+<http://ceur-ws.org/Vol-1114/#NeiliOstlund> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/NeiliOstlund> ;
+    ns4:made <http://ceur-ws.org/Vol-1114/#Poster_Ostlund> ;
+    ns4:name "Neil Ostlund" .
+
+<http://ceur-ws.org/Vol-1114/#NicolasiMatentzoglu> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/NicolasiMatentzoglu> ;
+    ns4:made <http://ceur-ws.org/Vol-1114/#Session1_Casteleiro> ;
+    ns4:name "Nicolas Matentzoglu" .
+
+<http://ceur-ws.org/Vol-1114/#NigamiShah> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/NigamiShah> ;
+    ns4:made <http://ceur-ws.org/Vol-1114/#Session1_Cure> ;
+    ns4:name "Nigam Shah" .
+
+<http://ceur-ws.org/Vol-1114/#NorioiKobayashi> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/NorioiKobayashi> ;
+    ns4:made <http://ceur-ws.org/Vol-1114/#Poster_Kobayashi> ;
+    ns4:name "Norio Kobayashi" .
+
+<http://ceur-ws.org/Vol-1114/#PaeaiLependu> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/PaeaiLependu> ;
+    ns4:made <http://ceur-ws.org/Vol-1114/#Session1_Cure> ;
+    ns4:name "Paea Lependu" .
+
+<http://ceur-ws.org/Vol-1114/#PalomaiMart%C3%ADneziFern%C3%A1ndez> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/PalomaiMart%C3%ADneziFern%C3%A1ndez> ;
+    ns4:made <http://ceur-ws.org/Vol-1114/#Demo_Sanchez-Cisneros> ;
+    ns4:name "Paloma Martínez Fernández" .
+
+<http://ceur-ws.org/Vol-1114/#PalomaiMartinez> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/PalomaiMartinez> ;
+    ns4:made <http://ceur-ws.org/Vol-1114/#Session3_Herrero-Zazo> ;
+    ns4:name "Paloma Martinez" .
+
+<http://ceur-ws.org/Vol-1114/#PaoloiRomano> a ns4:Person ;
+    ns2:affiliation "" ;
+    ns1:sameAs <http://ceur-ws.org/persons/PaoloiRomano> ;
+    ns4:name "Paolo Romano" .
+
+<http://ceur-ws.org/Vol-1114/#PedroiSernadela> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/PedroiSernadela> ;
+    ns4:made <http://ceur-ws.org/Vol-1114/#Poster_Lopes> ;
+    ns4:name "Pedro Sernadela" .
+
+<http://ceur-ws.org/Vol-1114/#PhillipiLord> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/PhillipiLord> ;
+    ns4:made <http://ceur-ws.org/Vol-1114/#Session3_Warrender> ;
+    ns4:name "Phillip Lord" .
+
+<http://ceur-ws.org/Vol-1114/#RajaramiKaliyaperumal> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/RajaramiKaliyaperumal> ;
+    ns4:made <http://ceur-ws.org/Vol-1114/#Session2_Mina> ;
+    ns4:name "Rajaram Kaliyaperumal" .
+
+<http://ceur-ws.org/Vol-1114/#Remzii%C3%87elebi> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/Remzii%C3%87elebi> ;
+    ns4:made <http://ceur-ws.org/Vol-1114/#Poster_Celebi> ;
+    ns4:name "Remzi Çelebi" .
+
+<http://ceur-ws.org/Vol-1114/#RishiiRamgolam> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/RishiiRamgolam> ;
+    ns4:made <http://ceur-ws.org/Vol-1114/#Demo_Dunlop> ;
+    ns4:name "Rishi Ramgolam" .
+
+<http://ceur-ws.org/Vol-1114/#RobertiStevens> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/RobertiStevens> ;
+    ns4:made <http://ceur-ws.org/Vol-1114/#Session4_Brenninkmeijer> ;
+    ns4:name "Robert Stevens" .
+
+<http://ceur-ws.org/Vol-1114/#RuiiQin> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/RuiiQin> ;
+    ns4:made <http://ceur-ws.org/Vol-1114/#Session3_Clark> ;
+    ns4:name "Rui Qin" .
+
+<http://ceur-ws.org/Vol-1114/#SamueliCroset> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/SamueliCroset> ;
+    ns4:made <http://ceur-ws.org/Vol-1114/#Session3_Herrero-Zazo> ;
+    ns4:name "Samuel Croset" .
+
+<http://ceur-ws.org/Vol-1114/#SanjeeviMaskara> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/SanjeeviMaskara> ;
+    ns4:made <http://ceur-ws.org/Vol-1114/#Session2_Kumar> ;
+    ns4:name "Sanjeev Maskara" .
+
+<http://ceur-ws.org/Vol-1114/#SaraiLana-Serrano> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/SaraiLana-Serrano> ;
+    ns4:made <http://ceur-ws.org/Vol-1114/#Demo_Sanchez-Cisneros> ;
+    ns4:name "Sara Lana-Serrano" .
+
+<http://ceur-ws.org/Vol-1114/#SoichiiOgishima> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/SoichiiOgishima> ;
+    ns4:made <http://ceur-ws.org/Vol-1114/#Poster_Katayama> ;
+    ns4:name "Soichi Ogishima" .
+
+<http://ceur-ws.org/Vol-1114/#StijniVerstichel> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/StijniVerstichel> ;
+    ns4:made <http://ceur-ws.org/Vol-1114/#Poster_Backere> ;
+    ns4:name "Stijn Verstichel" .
+
+<http://ceur-ws.org/Vol-1114/#TerueiTakatsuki> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/TerueiTakatsuki> ;
+    ns4:made <http://ceur-ws.org/Vol-1114/#Poster_Kobayashi> ;
+    ns4:name "Terue Takatsuki" .
+
+<http://ceur-ws.org/Vol-1114/#TetsuroiToyoda> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/TetsuroiToyoda> ;
+    ns4:made <http://ceur-ws.org/Vol-1114/#Poster_Kobayashi> ;
+    ns4:name "Tetsuro Toyoda" .
+
+<http://ceur-ws.org/Vol-1114/#TomasiBergvall> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/TomasiBergvall> ;
+    ns4:made <http://ceur-ws.org/Vol-1114/#Demo_Yuksel> ;
+    ns4:name "Tomas Bergvall" .
+
+<http://ceur-ws.org/Vol-1114/#ToshiakiiKatayama> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/ToshiakiiKatayama> ;
+    ns4:made <http://ceur-ws.org/Vol-1114/#Poster_Katayama> ;
+    ns4:name "Toshiaki Katayama" .
+
+<http://ceur-ws.org/Vol-1114/#YedimiAysiniSon> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/YedimiAysiniSon> ;
+    ns4:made <http://ceur-ws.org/Vol-1114/#Poster_Celebi> ;
+    ns4:name "Yedim Aysin Son" .
+
+<http://ceur-ws.org/Vol-1114/#YoshikiiMochizuki> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/YoshikiiMochizuki> ;
+    ns4:made <http://ceur-ws.org/Vol-1114/#Poster_Kobayashi> ;
+    ns4:name "Yoshiki Mochizuki" .
+
+<http://ceur-ws.org/Vol-1114/#YukoiMakita> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/YukoiMakita> ;
+    ns4:made <http://ceur-ws.org/Vol-1114/#Poster_Kobayashi> ;
+    ns4:name "Yuko Makita" .
+
+<http://ceur-ws.org/Vol-1114/#ZhiliiZhao> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/ZhiliiZhao> ;
+    ns4:made <http://ceur-ws.org/Vol-1114/#Session2_Zhao> ;
+    ns4:name "Zhili Zhao" .
+
+<http://ceur-ws.org/Vol-1114/#event> a ns3:WorkshopEvent ;
+    ns3:hasLocation <http://dbpedia.org/resource/United_Kingdom> ;
+    ns3:hasPart <http://ceur-ws.org/Vol-1114/#part-SWAT4LS> ;
+    ns3:isSubEventOf <http://ceur-ws.org/Vol-1114/#conf> ;
+    ns8:beginsAtDatetime "2013-12-10T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:endsAtDatetime "2013-12-10T00:00:00+00:00"^^xsd:dateTime ;
+    ns9:license "http://choosealicense.com/licenses/no-license/" ;
     rdfs:seeAlso <http://ceur-ws.org/Vol-435/#event>,
         <http://ceur-ws.org/Vol-559/#event>,
         <http://ceur-ws.org/Vol-698/#event>,
         <http://ceur-ws.org/Vol-952/#event> .
+
+<http://ceur-ws.org/Vol-1114/#A.iAniliSinaci> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/A.iAniliSinaci> ;
+    ns4:made <http://ceur-ws.org/Vol-1114/#Demo_Sinaci>,
+        <http://ceur-ws.org/Vol-1114/#Demo_Yuksel> ;
+    ns4:name "A. Anil Sinaci" .
+
+<http://ceur-ws.org/Vol-1114/#AlasdairiGray> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/AlasdairiGray> ;
+    ns4:made <http://ceur-ws.org/Vol-1114/#Demo_Dunlop>,
+        <http://ceur-ws.org/Vol-1114/#Session4_Brenninkmeijer> ;
+    ns4:name "Alasdair Gray" .
+
+<http://ceur-ws.org/Vol-1114/#BijaniParsia> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/BijaniParsia> ;
+    ns4:made <http://ceur-ws.org/Vol-1114/#Session1_Casteleiro>,
+        <http://ceur-ws.org/Vol-1114/#Session3_Hedeler> ;
+    ns4:name "Bijan Parsia" .
+
+<http://ceur-ws.org/Vol-1114/#CaroleiGoble> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/CaroleiGoble> ;
+    ns4:made <http://ceur-ws.org/Vol-1114/#Demo_Dunlop>,
+        <http://ceur-ws.org/Vol-1114/#Session4_Brenninkmeijer> ;
+    ns4:name "Carole Goble" .
+
+<http://ceur-ws.org/Vol-1114/#ChristopheriChute> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/ChristopheriChute> ;
+    ns4:made <http://ceur-ws.org/Vol-1114/#Session1_Jiang>,
+        <http://ceur-ws.org/Vol-1114/#Session3_Clark> ;
+    ns4:name "Christopher Chute" .
+
+<http://ceur-ws.org/Vol-1114/#Demo_Paschke> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1114/> ;
+    ns5:title "OntoMaven API4KB - A Maven-based API for Knowledge Bases" ;
+    ns6:section <http://ceur-ws.org/Vol-1114/#PostersandDemos> ;
+    ns2:author <http://ceur-ws.org/Vol-1114/#AdrianiPaschke> .
+
+<http://ceur-ws.org/Vol-1114/#GokceiBanuiLaleciiErturkmen> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/GokceiBanuiLaleciiErturkmen> ;
+    ns4:made <http://ceur-ws.org/Vol-1114/#Demo_Sinaci>,
+        <http://ceur-ws.org/Vol-1114/#Demo_Yuksel> ;
+    ns4:name "Gokce Banu Laleci Erturkmen" .
+
+<http://ceur-ws.org/Vol-1114/#IaniDunlop> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/IaniDunlop> ;
+    ns4:made <http://ceur-ws.org/Vol-1114/#Demo_Dunlop>,
+        <http://ceur-ws.org/Vol-1114/#Session4_Brenninkmeijer> ;
+    ns4:name "Ian Dunlop" .
+
+<http://ceur-ws.org/Vol-1114/#IsabeliSeguraiBedmar> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/IsabeliSeguraiBedmar> ;
+    ns4:made <http://ceur-ws.org/Vol-1114/#Demo_Sanchez-Cisneros>,
+        <http://ceur-ws.org/Vol-1114/#Session3_Herrero-Zazo> ;
+    ns4:name "Isabel Segura Bedmar" .
+
+<http://ceur-ws.org/Vol-1114/#Jos%C3%A9iLuisiOliveira> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/Jos%C3%A9iLuisiOliveira> ;
+    ns4:made <http://ceur-ws.org/Vol-1114/#Poster_Lopes>,
+        <http://ceur-ws.org/Vol-1114/#Poster_Lopes2> ;
+    ns4:name "José Luis Oliveira" .
+
+<http://ceur-ws.org/Vol-1114/#JosiDeiRoo> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/JosiDeiRoo> ;
+    ns4:made <http://ceur-ws.org/Vol-1114/#Demo_Yuksel>,
+        <http://ceur-ws.org/Vol-1114/#Poster_Sun> ;
+    ns4:name "Jos De Roo" .
+
+<http://ceur-ws.org/Vol-1114/#KristinaiHettne> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/KristinaiHettne> ;
+    ns4:made <http://ceur-ws.org/Vol-1114/#Poster_van_der_Horst>,
+        <http://ceur-ws.org/Vol-1114/#Session2_Mina> ;
+    ns4:name "Kristina Hettne" .
+
+<http://ceur-ws.org/Vol-1114/#KristofiDepraetere> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/KristofiDepraetere> ;
+    ns4:made <http://ceur-ws.org/Vol-1114/#Demo_Yuksel>,
+        <http://ceur-ws.org/Vol-1114/#Poster_Sun> ;
+    ns4:name "Kristof Depraetere" .
+
+<http://ceur-ws.org/Vol-1114/#MarcoiRoos> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/MarcoiRoos> ;
+    ns4:made <http://ceur-ws.org/Vol-1114/#Poster_van_der_Horst>,
+        <http://ceur-ws.org/Vol-1114/#Session2_Mina> ;
+    ns4:name "Marco Roos" .
+
+<http://ceur-ws.org/Vol-1114/#OlivieriCur%C3%A9> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/OlivieriCur%C3%A9> ;
+    ns4:made <http://ceur-ws.org/Vol-1114/#Session1_Cure>,
+        <http://ceur-ws.org/Vol-1114/#Session1_PossitionPaper_Cure> ;
+    ns4:name "Olivier Curé" .
+
+<http://ceur-ws.org/Vol-1114/#PedroiLopes> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/PedroiLopes> ;
+    ns4:made <http://ceur-ws.org/Vol-1114/#Poster_Lopes>,
+        <http://ceur-ws.org/Vol-1114/#Poster_Lopes2> ;
+    ns4:name "Pedro Lopes" .
+
+<http://ceur-ws.org/Vol-1114/#PositionPapers> a ns3:SessionEvent ;
+    ns3:partOf <http://ceur-ws.org/Vol-1114/> ;
+    ns5:title "Position Papers" .
+
+<http://ceur-ws.org/Vol-1114/#SebastianiBrandt> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/SebastianiBrandt> ;
+    ns4:made <http://ceur-ws.org/Vol-1114/#Session1_Casteleiro>,
+        <http://ceur-ws.org/Vol-1114/#Session3_Hedeler> ;
+    ns4:name "Sebastian Brandt" .
+
+<http://ceur-ws.org/Vol-1114/#Session1_PossitionPaper_Cure> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1114/> ;
+    ns5:title "On the Annotation of Drug Databases with the Anatomical Therapeutic Chemical Classification System" ;
+    ns6:section <http://ceur-ws.org/Vol-1114/#PositionPapers> ;
+    ns2:author <http://ceur-ws.org/Vol-1114/#OlivieriCur%C3%A9> .
+
+<http://ceur-ws.org/Vol-1114/#SteveiPettifer> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/SteveiPettifer> ;
+    ns4:made <http://ceur-ws.org/Vol-1114/#Demo_Dunlop>,
+        <http://ceur-ws.org/Vol-1114/#Session4_Brenninkmeijer> ;
+    ns4:name "Steve Pettifer" .
+
+<http://ceur-ws.org/Vol-1114/#SuatiGonul> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/SuatiGonul> ;
+    ns4:made <http://ceur-ws.org/Vol-1114/#Demo_Sinaci>,
+        <http://ceur-ws.org/Vol-1114/#Demo_Yuksel> ;
+    ns4:name "Suat Gonul" .
+
+<http://ceur-ws.org/Vol-1114/#AdrianiPaschke> a ns4:Person ;
+    ns2:affiliation "" ;
+    ns1:sameAs <http://ceur-ws.org/persons/AdrianiPaschke> ;
+    ns4:made <http://ceur-ws.org/Vol-1114/#Demo_Paschke>,
+        <http://ceur-ws.org/Vol-1114/#Session2_Zhao> ;
+    ns4:name "Adrian Paschke" .
+
+<http://ceur-ws.org/Vol-1114/#Poster_Diallo> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1114/> ;
+    ns5:title "Towards Learning Based Strategy for Improving the Recall of the ServOMap Matching System" ;
+    ns6:section <http://ceur-ws.org/Vol-1114/#PostersandDemos> ;
+    ns2:author <http://ceur-ws.org/Vol-1114/#AmaliKammoun>,
+        <http://ceur-ws.org/Vol-1114/#GayoiDiallo> .
+
+<http://ceur-ws.org/Vol-1114/#Poster_Lopes2> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1114/> ;
+    ns5:title "Semantic Rule Processing for Real-time Data Integration" ;
+    ns6:section <http://ceur-ws.org/Vol-1114/#PostersandDemos> ;
+    ns2:author <http://ceur-ws.org/Vol-1114/#Jos%C3%A9iLuisiOliveira>,
+        <http://ceur-ws.org/Vol-1114/#PedroiLopes> .
+
+<http://ceur-ws.org/Vol-1114/#Poster_Ostlund> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1114/> ;
+    ns5:title "Applying the Semantic Web to Computational Chemistry" ;
+    ns6:section <http://ceur-ws.org/Vol-1114/#PostersandDemos> ;
+    ns2:author <http://ceur-ws.org/Vol-1114/#MirekiSopek>,
+        <http://ceur-ws.org/Vol-1114/#NeiliOstlund> .
+
+<http://ceur-ws.org/Vol-1114/#Poster_Queralt-Rosinach> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1114/> ;
+    ns5:title "DisGeNET RDF: A Gene-Disease Association Linked Open Data Resource" ;
+    ns6:section <http://ceur-ws.org/Vol-1114/#PostersandDemos> ;
+    ns2:author <http://ceur-ws.org/Vol-1114/#LauraiI.iFurlong>,
+        <http://ceur-ws.org/Vol-1114/#N%C3%BAriaiQueralt-Rosinach> .
+
+<http://ceur-ws.org/Vol-1114/#Session2_Zhao> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1114/> ;
+    ns5:title "A Formal Model for Weakly-structured Scientific Workflows" ;
+    ns6:section <http://ceur-ws.org/Vol-1114/#FullPapers> ;
+    ns2:author <http://ceur-ws.org/Vol-1114/#AdrianiPaschke>,
+        <http://ceur-ws.org/Vol-1114/#ZhiliiZhao> .
+
+<http://ceur-ws.org/Vol-1114/#Session3_Warrender> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1114/> ;
+    ns5:title "A Pattern-driven Approach to Biomedical Ontology Engineering" ;
+    ns6:section <http://ceur-ws.org/Vol-1114/#FullPapers> ;
+    ns2:author <http://ceur-ws.org/Vol-1114/#JenniferiWarrender>,
+        <http://ceur-ws.org/Vol-1114/#PhillipiLord> .
+
+<http://ceur-ws.org/Vol-1114/#Demo_Iersel> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1114/> ;
+    ns5:title "Linked Data Services for Scientists Exemplified Using Drosophila Melanogaster Datasets" ;
+    ns6:section <http://ceur-ws.org/Vol-1114/#PostersandDemos> ;
+    ns2:author <http://ceur-ws.org/Vol-1114/#LiziReynolds>,
+        <http://ceur-ws.org/Vol-1114/#MartijnivaniIersel>,
+        <http://ceur-ws.org/Vol-1114/#NadiaiAnwar> .
+
+<http://ceur-ws.org/Vol-1114/#Poster_Celebi> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1114/> ;
+    ns5:title "Weighting Indirect Relations to Elucidate the Direct Association of SNP-Disease by Use of SPARQL Queries" ;
+    ns6:section <http://ceur-ws.org/Vol-1114/#PostersandDemos> ;
+    ns2:author <http://ceur-ws.org/Vol-1114/#%C3%96zg%C3%BCriG%C3%BCm%C3%BCs>,
+        <http://ceur-ws.org/Vol-1114/#Remzii%C3%87elebi>,
+        <http://ceur-ws.org/Vol-1114/#YedimiAysiniSon> .
+
+<http://ceur-ws.org/Vol-1114/#Poster_Katayama> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1114/> ;
+    ns5:title "Interactive Platform for Semantic Gene Expression Analysis of Alzheimer's Disease" ;
+    ns6:section <http://ceur-ws.org/Vol-1114/#PostersandDemos> ;
+    ns2:author <http://ceur-ws.org/Vol-1114/#MasatakaiKikuchi>,
+        <http://ceur-ws.org/Vol-1114/#SoichiiOgishima>,
+        <http://ceur-ws.org/Vol-1114/#ToshiakiiKatayama> .
+
+<http://ceur-ws.org/Vol-1114/#Poster_Lopes> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1114/> ;
+    ns5:title "Exploring Nanopublishing with COEUS" ;
+    ns6:section <http://ceur-ws.org/Vol-1114/#PostersandDemos> ;
+    ns2:author <http://ceur-ws.org/Vol-1114/#Jos%C3%A9iLuisiOliveira>,
+        <http://ceur-ws.org/Vol-1114/#PedroiLopes>,
+        <http://ceur-ws.org/Vol-1114/#PedroiSernadela> .
+
+<http://ceur-ws.org/Vol-1114/#Poster_van_der_Horst> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1114/> ;
+    ns5:title "Workflows and Services for Concept Profile Generation" ;
+    ns6:section <http://ceur-ws.org/Vol-1114/#PostersandDemos> ;
+    ns2:author <http://ceur-ws.org/Vol-1114/#EelkeivanideriHorst>,
+        <http://ceur-ws.org/Vol-1114/#KristinaiHettne>,
+        <http://ceur-ws.org/Vol-1114/#MarcoiRoos> .
+
+<http://ceur-ws.org/Vol-1114/#Session2_Masoumi> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1114/> ;
+    ns5:title "Organic Synthesis as Artificial Intelligence Planning" ;
+    ns6:section <http://ceur-ws.org/Vol-1114/#FullPapers> ;
+    ns2:author <http://ceur-ws.org/Vol-1114/#AndreaiMarrella>,
+        <http://ceur-ws.org/Vol-1114/#ArmaniMasoumi>,
+        <http://ceur-ws.org/Vol-1114/#MikhailiSoutchanski> .
+
+<http://ceur-ws.org/Vol-1114/#Session3_Hedeler> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1114/> ;
+    ns5:title "Estimating Coordination in Medical Terminologies" ;
+    ns6:section <http://ceur-ws.org/Vol-1114/#FullPapers> ;
+    ns2:author <http://ceur-ws.org/Vol-1114/#BijaniParsia>,
+        <http://ceur-ws.org/Vol-1114/#CorneliaiHedeler>,
+        <http://ceur-ws.org/Vol-1114/#SebastianiBrandt> .
+
+<http://ceur-ws.org/Vol-1114/#Poster_Doulaverakis> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1114/> ;
+    ns5:title "A Semantic-enabled Framework for Drug Recommendations" ;
+    ns6:section <http://ceur-ws.org/Vol-1114/#PostersandDemos> ;
+    ns2:author <http://ceur-ws.org/Vol-1114/#AthanasiosiKleontas>,
+        <http://ceur-ws.org/Vol-1114/#CharalamposiDoulaverakis>,
+        <http://ceur-ws.org/Vol-1114/#GeorgeiNikolaidis>,
+        <http://ceur-ws.org/Vol-1114/#IoannisiKompatsiaris> .
+
+<http://ceur-ws.org/Vol-1114/#Session1_Casteleiro> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1114/> ;
+    ns5:title "Computable Declarative Representation of Clinical Assessment Scales in EHRs" ;
+    ns6:section <http://ceur-ws.org/Vol-1114/#FullPapers> ;
+    ns2:author <http://ceur-ws.org/Vol-1114/#BijaniParsia>,
+        <http://ceur-ws.org/Vol-1114/#MercedesiArguelloiCasteleiro>,
+        <http://ceur-ws.org/Vol-1114/#NicolasiMatentzoglu>,
+        <http://ceur-ws.org/Vol-1114/#SebastianiBrandt> .
+
+<http://ceur-ws.org/Vol-1114/#Session1_Cure> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1114/> ;
+    ns5:title "Refining Health Outcomes of Interest using Formal Concept Analysis and Semantic Query Expansion" ;
+    ns6:section <http://ceur-ws.org/Vol-1114/#FullPapers> ;
+    ns2:author <http://ceur-ws.org/Vol-1114/#HenriiMaurer>,
+        <http://ceur-ws.org/Vol-1114/#NigamiShah>,
+        <http://ceur-ws.org/Vol-1114/#OlivieriCur%C3%A9>,
+        <http://ceur-ws.org/Vol-1114/#PaeaiLependu> .
+
+<http://ceur-ws.org/Vol-1114/#Session2_Kumar> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1114/> ;
+    ns5:title "Identifying Latent Semantics in High-Dimensional Web Data" ;
+    ns6:section <http://ceur-ws.org/Vol-1114/#FullPapers> ;
+    ns2:author <http://ceur-ws.org/Vol-1114/#AjitiKumar>,
+        <http://ceur-ws.org/Vol-1114/#I-JeniChiang>,
+        <http://ceur-ws.org/Vol-1114/#Jau-MiniWong>,
+        <http://ceur-ws.org/Vol-1114/#SanjeeviMaskara> .
+
+<http://ceur-ws.org/Vol-1114/#Demo_Sanchez-Cisneros> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1114/> ;
+    ns5:title "A Web Prototype for Detecting Chemical Compounds and Drugs" ;
+    ns6:section <http://ceur-ws.org/Vol-1114/#PostersandDemos> ;
+    ns2:author <http://ceur-ws.org/Vol-1114/#DanieliS%C3%A1nchez-Cisneros>,
+        <http://ceur-ws.org/Vol-1114/#IsabeliSeguraiBedmar>,
+        <http://ceur-ws.org/Vol-1114/#LeonardoiCampillosiLlanos>,
+        <http://ceur-ws.org/Vol-1114/#PalomaiMart%C3%ADneziFern%C3%A1ndez>,
+        <http://ceur-ws.org/Vol-1114/#SaraiLana-Serrano> .
+
+<http://ceur-ws.org/Vol-1114/#Demo_Sinaci> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1114/> ;
+    ns5:title "Patient History Navigation with the Use of Common Data Elements" ;
+    ns6:section <http://ceur-ws.org/Vol-1114/#PostersandDemos> ;
+    ns2:author <http://ceur-ws.org/Vol-1114/#A.iAniliSinaci>,
+        <http://ceur-ws.org/Vol-1114/#AtakaniKaya>,
+        <http://ceur-ws.org/Vol-1114/#GokceiBanuiLaleciiErturkmen>,
+        <http://ceur-ws.org/Vol-1114/#H.iAlperiCinar>,
+        <http://ceur-ws.org/Vol-1114/#SuatiGonul> .
+
+<http://ceur-ws.org/Vol-1114/#Session1_Jiang> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1114/> ;
+    ns5:title "Using Semantic Web Techologies for the Generation of Domain Templates to Support Clinical Study Meta-Data" ;
+    ns6:section <http://ceur-ws.org/Vol-1114/#FullPapers> ;
+    ns2:author <http://ceur-ws.org/Vol-1114/#ChristopheriChute>,
+        <http://ceur-ws.org/Vol-1114/#CoryiEndle>,
+        <http://ceur-ws.org/Vol-1114/#GuoqianiJiang>,
+        <http://ceur-ws.org/Vol-1114/#HaroldiSolbrig>,
+        <http://ceur-ws.org/Vol-1114/#JulieiEvans> .
+
+<http://ceur-ws.org/Vol-1114/#Session2_Kozak> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1114/> ;
+    ns5:title "Using Linked Data for Better Navigation in Summaries of Product Characteristics" ;
+    ns6:section <http://ceur-ws.org/Vol-1114/#FullPapers> ;
+    ns2:author <http://ceur-ws.org/Vol-1114/#JakubiKl%C3%ADmek>,
+        <http://ceur-ws.org/Vol-1114/#JakubiKoz%C3%A1k>,
+        <http://ceur-ws.org/Vol-1114/#JaniDedek>,
+        <http://ceur-ws.org/Vol-1114/#JaroslaviPokorn%C3%BD>,
+        <http://ceur-ws.org/Vol-1114/#MartiniNecask%C3%BD> .
+
+<http://ceur-ws.org/Vol-1114/#Session3_Clark> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1114/> ;
+    ns5:title "Ontology-based Temporal Analysis for Medical Device Adverse Event - A Use Case Study on Late Stent Thrombosis" ;
+    ns6:section <http://ceur-ws.org/Vol-1114/#FullPapers> ;
+    ns2:author <http://ceur-ws.org/Vol-1114/#ChristopheriChute>,
+        <http://ceur-ws.org/Vol-1114/#CuiiTao>,
+        <http://ceur-ws.org/Vol-1114/#DeepakiSharma>,
+        <http://ceur-ws.org/Vol-1114/#KimberlyiClark>,
+        <http://ceur-ws.org/Vol-1114/#RuiiQin> .
+
+<http://ceur-ws.org/Vol-1114/#Session3_Herrero-Zazo> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1114/> ;
+    ns5:title "An Ontology for Drug-drug Interactions" ;
+    ns6:section <http://ceur-ws.org/Vol-1114/#FullPapers> ;
+    ns2:author <http://ceur-ws.org/Vol-1114/#ChristophiSteinbeck>,
+        <http://ceur-ws.org/Vol-1114/#IsabeliSeguraiBedmar>,
+        <http://ceur-ws.org/Vol-1114/#JannaiHastings>,
+        <http://ceur-ws.org/Vol-1114/#MariaiHerrero-Zazo>,
+        <http://ceur-ws.org/Vol-1114/#PalomaiMartinez>,
+        <http://ceur-ws.org/Vol-1114/#SamueliCroset> .
+
+<http://ceur-ws.org/Vol-1114/#Session4_Brenninkmeijer> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1114/> ;
+    ns5:title "Computing Identity Co-Reference Across Drug Discovery Datasets" ;
+    ns6:section <http://ceur-ws.org/Vol-1114/#FullPapers> ;
+    ns2:author <http://ceur-ws.org/Vol-1114/#AlasdairiGray>,
+        <http://ceur-ws.org/Vol-1114/#CaroleiGoble>,
+        <http://ceur-ws.org/Vol-1114/#ChristianiY.iA.iBrenninkmeijer>,
+        <http://ceur-ws.org/Vol-1114/#IaniDunlop>,
+        <http://ceur-ws.org/Vol-1114/#RobertiStevens>,
+        <http://ceur-ws.org/Vol-1114/#SteveiPettifer> .
+
+<http://ceur-ws.org/Vol-1114/#Demo_Dunlop> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1114/> ;
+    ns5:title "OpenPHACTS Explorer 2: Bringing the Web to the Semantic Web" ;
+    ns6:section <http://ceur-ws.org/Vol-1114/#PostersandDemos> ;
+    ns2:author <http://ceur-ws.org/Vol-1114/#AlasdairiGray>,
+        <http://ceur-ws.org/Vol-1114/#CaroleiGoble>,
+        <http://ceur-ws.org/Vol-1114/#IaniDunlop>,
+        <http://ceur-ws.org/Vol-1114/#JamesiEales>,
+        <http://ceur-ws.org/Vol-1114/#JaniVelterop>,
+        <http://ceur-ws.org/Vol-1114/#RishiiRamgolam>,
+        <http://ceur-ws.org/Vol-1114/#SteveiPettifer> .
+
+<http://ceur-ws.org/Vol-1114/#Demo_Yuksel> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1114/> ;
+    ns5:title "Demonstration of the SALUS Semantic Interoperability Framework for Case Series Characterization Studies" ;
+    ns6:section <http://ceur-ws.org/Vol-1114/#PostersandDemos> ;
+    ns2:author <http://ceur-ws.org/Vol-1114/#A.iAniliSinaci>,
+        <http://ceur-ws.org/Vol-1114/#GokceiBanuiLaleciiErturkmen>,
+        <http://ceur-ws.org/Vol-1114/#JosiDeiRoo>,
+        <http://ceur-ws.org/Vol-1114/#KristofiDepraetere>,
+        <http://ceur-ws.org/Vol-1114/#MustafaiYuksel>,
+        <http://ceur-ws.org/Vol-1114/#SuatiGonul>,
+        <http://ceur-ws.org/Vol-1114/#TomasiBergvall> .
+
+<http://ceur-ws.org/Vol-1114/#Poster_Backere> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1114/> ;
+    ns5:title "Social-aware and Context-aware Multi-sensor Fall Detection Platform" ;
+    ns6:section <http://ceur-ws.org/Vol-1114/#PostersandDemos> ;
+    ns2:author <http://ceur-ws.org/Vol-1114/#AnniAckaert>,
+        <http://ceur-ws.org/Vol-1114/#FemkeiDeiBackere>,
+        <http://ceur-ws.org/Vol-1114/#FemkeiOngenae>,
+        <http://ceur-ws.org/Vol-1114/#FilipiDeiTurck>,
+        <http://ceur-ws.org/Vol-1114/#FlorisiVanideniAbeele>,
+        <http://ceur-ws.org/Vol-1114/#JeroeniHoebeke>,
+        <http://ceur-ws.org/Vol-1114/#StijniVerstichel> .
+
+<http://ceur-ws.org/Vol-1114/#Poster_Sun> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1114/> ;
+    ns5:title "Assessing and Improving SKOS Mapping Quality" ;
+    ns6:section <http://ceur-ws.org/Vol-1114/#PostersandDemos> ;
+    ns2:author <http://ceur-ws.org/Vol-1114/#BorisiDeiVloed>,
+        <http://ceur-ws.org/Vol-1114/#DirkiColaert>,
+        <http://ceur-ws.org/Vol-1114/#GiovanniiMels>,
+        <http://ceur-ws.org/Vol-1114/#HongiSun>,
+        <http://ceur-ws.org/Vol-1114/#JosiDeiRoo>,
+        <http://ceur-ws.org/Vol-1114/#KristofiDepraetere>,
+        <http://ceur-ws.org/Vol-1114/#MarciTwagirumukiza> .
+
+<http://ceur-ws.org/Vol-1114/#Session2_Mina> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1114/> ;
+    ns5:title "Nanopublications for Exposing Experimental Data in the Life-sciences: A Huntington's Disease Case Study" ;
+    ns6:section <http://ceur-ws.org/Vol-1114/#FullPapers> ;
+    ns2:author <http://ceur-ws.org/Vol-1114/#EleniiMina>,
+        <http://ceur-ws.org/Vol-1114/#ErikiSchultes>,
+        <http://ceur-ws.org/Vol-1114/#JuniZhao>,
+        <http://ceur-ws.org/Vol-1114/#KristinaiHettne>,
+        <http://ceur-ws.org/Vol-1114/#MarcoiRoos>,
+        <http://ceur-ws.org/Vol-1114/#MarkiThompson>,
+        <http://ceur-ws.org/Vol-1114/#RajaramiKaliyaperumal> .
+
+<http://ceur-ws.org/Vol-1114/#Poster_Kobayashi> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1114/> ;
+    ns5:title "PosMed: A Biomedical Entity Prioritisation Tool Based on Statistical Inference over Literature and the Semantic Web" ;
+    ns6:section <http://ceur-ws.org/Vol-1114/#PostersandDemos> ;
+    ns2:author <http://ceur-ws.org/Vol-1114/#AkihiroiMatsushima>,
+        <http://ceur-ws.org/Vol-1114/#DavidiGifford>,
+        <http://ceur-ws.org/Vol-1114/#HiroshiiMasuya>,
+        <http://ceur-ws.org/Vol-1114/#KojiiDoi>,
+        <http://ceur-ws.org/Vol-1114/#KoroiNishikata>,
+        <http://ceur-ws.org/Vol-1114/#ManabuiIshii>,
+        <http://ceur-ws.org/Vol-1114/#NorioiKobayashi>,
+        <http://ceur-ws.org/Vol-1114/#TerueiTakatsuki>,
+        <http://ceur-ws.org/Vol-1114/#TetsuroiToyoda>,
+        <http://ceur-ws.org/Vol-1114/#YoshikiiMochizuki>,
+        <http://ceur-ws.org/Vol-1114/#YukoiMakita> .
+
+<http://ceur-ws.org/Vol-1114/#FullPapers> a ns3:SessionEvent ;
+    ns3:partOf <http://ceur-ws.org/Vol-1114/> ;
+    ns5:title "Full Papers" .
+
+<http://ceur-ws.org/Vol-1114/#PostersandDemos> a ns3:SessionEvent ;
+    ns3:partOf <http://ceur-ws.org/Vol-1114/> ;
+    ns5:title "Posters and Demos" .
+
+<http://ceur-ws.org/Vol-1114/> a ns3:Proceedings ;
+    ns3:hasPart <http://ceur-ws.org/Vol-1114/#Demo_Dunlop>,
+        <http://ceur-ws.org/Vol-1114/#Demo_Iersel>,
+        <http://ceur-ws.org/Vol-1114/#Demo_Paschke>,
+        <http://ceur-ws.org/Vol-1114/#Demo_Sanchez-Cisneros>,
+        <http://ceur-ws.org/Vol-1114/#Demo_Sinaci>,
+        <http://ceur-ws.org/Vol-1114/#Demo_Yuksel>,
+        <http://ceur-ws.org/Vol-1114/#Poster_Backere>,
+        <http://ceur-ws.org/Vol-1114/#Poster_Celebi>,
+        <http://ceur-ws.org/Vol-1114/#Poster_Diallo>,
+        <http://ceur-ws.org/Vol-1114/#Poster_Doulaverakis>,
+        <http://ceur-ws.org/Vol-1114/#Poster_Katayama>,
+        <http://ceur-ws.org/Vol-1114/#Poster_Kobayashi>,
+        <http://ceur-ws.org/Vol-1114/#Poster_Lopes>,
+        <http://ceur-ws.org/Vol-1114/#Poster_Lopes2>,
+        <http://ceur-ws.org/Vol-1114/#Poster_Ostlund>,
+        <http://ceur-ws.org/Vol-1114/#Poster_Queralt-Rosinach>,
+        <http://ceur-ws.org/Vol-1114/#Poster_Sun>,
+        <http://ceur-ws.org/Vol-1114/#Poster_van_der_Horst>,
+        <http://ceur-ws.org/Vol-1114/#Session1_Casteleiro>,
+        <http://ceur-ws.org/Vol-1114/#Session1_Cure>,
+        <http://ceur-ws.org/Vol-1114/#Session1_Jiang>,
+        <http://ceur-ws.org/Vol-1114/#Session1_PossitionPaper_Cure>,
+        <http://ceur-ws.org/Vol-1114/#Session2_Kozak>,
+        <http://ceur-ws.org/Vol-1114/#Session2_Kumar>,
+        <http://ceur-ws.org/Vol-1114/#Session2_Masoumi>,
+        <http://ceur-ws.org/Vol-1114/#Session2_Mina>,
+        <http://ceur-ws.org/Vol-1114/#Session2_Zhao>,
+        <http://ceur-ws.org/Vol-1114/#Session3_Clark>,
+        <http://ceur-ws.org/Vol-1114/#Session3_Hedeler>,
+        <http://ceur-ws.org/Vol-1114/#Session3_Herrero-Zazo>,
+        <http://ceur-ws.org/Vol-1114/#Session3_Warrender>,
+        <http://ceur-ws.org/Vol-1114/#Session4_Brenninkmeijer> ;
+    ns3:hasSession <http://ceur-ws.org/Vol-1114/#FullPapers>,
+        <http://ceur-ws.org/Vol-1114/#PositionPapers>,
+        <http://ceur-ws.org/Vol-1114/#PostersandDemos> ;
+    ns7:issued "2014-01-07T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:presentedAt <http://ceur-ws.org/Vol-1114/#event> ;
+    ns2:editor <http://ceur-ws.org/Vol-1114/#AdrianiPaschke>,
+        <http://ceur-ws.org/Vol-1114/#AlbertiBurger>,
+        <http://ceur-ws.org/Vol-1114/#AndreaiSplendiani>,
+        <http://ceur-ws.org/Vol-1114/#M.iScottiMarshall>,
+        <http://ceur-ws.org/Vol-1114/#PaoloiRomano> .
 

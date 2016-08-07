@@ -1,55 +1,190 @@
-@prefix ns1: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns2: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns3: <http://www.w3.org/2002/07/owl#> .
-@prefix ns4: <http://xmlns.com/foaf/0.1/> .
-@prefix ns5: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns6: <http://purl.org/dc/elements/1.1/> .
-@prefix ns7: <http://purl.org/ontology/bibo/#> .
+@prefix ns1: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns2: <http://purl.org/ontology/bibo/#> .
+@prefix ns3: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns4: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns5: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns6: <http://xmlns.com/foaf/0.1/> .
+@prefix ns7: <http://www.w3.org/2002/07/owl#> .
 @prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns9: <http://purl.org/dc/elements/1.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1643/> a ns5:Proceedings ;
+<http://ceur-ws.org/Vol-1643/#AhmetiErdem> a ns6:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/AhmetiErdem> ;
+    ns6:made <http://ceur-ws.org/Vol-1643/#paper-08> ;
+    ns6:name "Ahmet Erdem" .
+
+<http://ceur-ws.org/Vol-1643/#AndreasiEttner> a ns6:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/AndreasiEttner> ;
+    ns6:made <http://ceur-ws.org/Vol-1643/#paper-04> ;
+    ns6:name "Andreas Ettner" .
+
+<http://ceur-ws.org/Vol-1643/#CristinaiSilvano> a ns6:Person ;
+    ns2:place <http://dbpedia.org/resource/Italy> ;
+    ns4:affiliation "Politecnico di Milano" ;
+    ns7:sameAs <http://ceur-ws.org/persons/CristinaiSilvano> ;
+    ns6:name "Cristina Silvano" .
+
+<http://ceur-ws.org/Vol-1643/#DavideiGadioli> a ns6:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/DavideiGadioli> ;
+    ns6:made <http://ceur-ws.org/Vol-1643/#paper-09> ;
+    ns6:name "Davide Gadioli" .
+
+<http://ceur-ws.org/Vol-1643/#GiuseppeiMassari> a ns6:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/GiuseppeiMassari> ;
+    ns6:made <http://ceur-ws.org/Vol-1643/#paper-01> ;
+    ns6:name "Giuseppe Massari" .
+
+<http://ceur-ws.org/Vol-1643/#IhseniAlouani> a ns6:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/IhseniAlouani> ;
+    ns6:made <http://ceur-ws.org/Vol-1643/#paper-07> ;
+    ns6:name "Ihsen Alouani" .
+
+<http://ceur-ws.org/Vol-1643/#JeronimoiCastrillion> a ns6:Person ;
+    ns2:place <http://dbpedia.org/resource/Germany> ;
+    ns4:affiliation "TU Dresden" ;
+    ns7:sameAs <http://ceur-ws.org/persons/JeronimoiCastrillion> ;
+    ns6:name "Jeronimo Castrillion" .
+
+<http://ceur-ws.org/Vol-1643/#JohannesiMey> a ns6:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/JohannesiMey> ;
+    ns6:made <http://ceur-ws.org/Vol-1643/#paper-03> ;
+    ns6:name "Johannes Mey" .
+
+<http://ceur-ws.org/Vol-1643/#MatthewiM.iZiegler> a ns6:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/MatthewiM.iZiegler> ;
+    ns6:made <http://ceur-ws.org/Vol-1643/#paper-02> ;
+    ns6:name "Matthew M. Ziegler" .
+
+<http://ceur-ws.org/Vol-1643/#MichaeliH%C3%BCbner> a ns6:Person ;
+    ns2:place <http://dbpedia.org/resource/Germany> ;
+    ns4:affiliation "Ruhr-Universitat Bochumy" ;
+    ns7:sameAs <http://ceur-ws.org/persons/MichaeliH%C3%BCbner> ;
+    ns6:name "Michael Hübner" .
+
+<http://ceur-ws.org/Vol-1643/#RichardiMcWilliam> a ns6:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/RichardiMcWilliam> ;
+    ns6:made <http://ceur-ws.org/Vol-1643/#paper-06> ;
+    ns6:name "Richard McWilliam" .
+
+<http://ceur-ws.org/Vol-1643/#StephaniWong> a ns6:Person ;
+    ns2:place <http://dbpedia.org/resource/Kingdom_of_the_Netherlands> ;
+    ns4:affiliation "TU Delft" ;
+    ns7:sameAs <http://ceur-ws.org/persons/StephaniWong> ;
+    ns6:name "Stephan Wong" .
+
+<http://ceur-ws.org/Vol-1643/#WalteriStechele> a ns6:Person ;
+    ns2:place <http://dbpedia.org/resource/Germany> ;
+    ns4:affiliation "TU Munich" ;
+    ns7:sameAs <http://ceur-ws.org/persons/WalteriStechele> ;
+    ns6:name "Walter Stechele" .
+
+<http://ceur-ws.org/Vol-1643/#event> a ns1:WorkshopEvent ;
+    ns1:hasLocation <http://dbpedia.org/resource/Germany> ;
+    ns1:hasPart <http://ceur-ws.org/Vol-1643/#part-RESource> ;
+    ns1:isSubEventOf <http://ceur-ws.org/Vol-1643/#conf> ;
+    ns5:beginsAtDatetime "2016-03-18T00:00:00+00:00"^^xsd:dateTime ;
+    ns5:endsAtDatetime "2016-03-18T00:00:00+00:00"^^xsd:dateTime ;
+    ns9:license "http://creativecommons.org/publicdomain/zero/1.0/" .
+
+<http://ceur-ws.org/Vol-1643/#AmiriHosseiniAshouri> a ns6:Person ;
+    ns2:place <http://dbpedia.org/resource/Italy> ;
+    ns4:affiliation "Politecnico di Milano" ;
+    ns7:sameAs <http://ceur-ws.org/persons/AmiriHosseiniAshouri> ;
+    ns6:made <http://ceur-ws.org/Vol-1643/#paper-05> ;
+    ns6:name "Amir Hossein Ashouri" .
+
+<http://ceur-ws.org/Vol-1643/#paper-01> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1643/> ;
+    ns3:title "Resource-Aware Application Execution Exploiting the BarbequeRTRM" ;
+    ns2:endPage 7 ;
+    ns2:numPages 5 ;
+    ns2:startPage 3 ;
+    ns4:author <http://ceur-ws.org/Vol-1643/#GiuseppeiMassari> .
+
+<http://ceur-ws.org/Vol-1643/#paper-02> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1643/> ;
+    ns3:title "A Scalable Black-Box Optimization System for Auto-Tuning VLSI Synthesis Programs" ;
+    ns2:endPage 12 ;
+    ns2:numPages 5 ;
+    ns2:startPage 8 ;
+    ns4:author <http://ceur-ws.org/Vol-1643/#MatthewiM.iZiegler> .
+
+<http://ceur-ws.org/Vol-1643/#paper-03> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1643/> ;
+    ns3:title "Using Reference Attribute Grammar-Controlled Rewriting for Runtime Resource Management" ;
+    ns2:endPage 17 ;
+    ns2:numPages 5 ;
+    ns2:startPage 13 ;
+    ns4:author <http://ceur-ws.org/Vol-1643/#JohannesiMey> .
+
+<http://ceur-ws.org/Vol-1643/#paper-04> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1643/> ;
+    ns3:title "Search Space Reduction for E/E-Architecture Partitioning" ;
+    ns2:endPage 22 ;
+    ns2:numPages 5 ;
+    ns2:startPage 18 ;
+    ns4:author <http://ceur-ws.org/Vol-1643/#AndreasiEttner> .
+
+<http://ceur-ws.org/Vol-1643/#paper-05> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1643/> ;
+    ns3:title "An Evaluation of Autotuning Techniques for the Compiler Optimization Problems" ;
+    ns2:endPage 27 ;
+    ns2:numPages 5 ;
+    ns2:startPage 23 ;
+    ns4:author <http://ceur-ws.org/Vol-1643/#AmiriHosseiniAshouri> .
+
+<http://ceur-ws.org/Vol-1643/#paper-06> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1643/> ;
+    ns3:title "A Combined Fault Detection and Discrimination Strategy for Resource-Sensitive Platforms" ;
+    ns2:endPage 32 ;
+    ns2:numPages 5 ;
+    ns2:startPage 28 ;
+    ns4:author <http://ceur-ws.org/Vol-1643/#RichardiMcWilliam> .
+
+<http://ceur-ws.org/Vol-1643/#paper-07> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1643/> ;
+    ns3:title "Auto-tuning Fault Tolerance Technique for DSP-Based Circuits in Transportation Systems" ;
+    ns2:endPage 37 ;
+    ns2:numPages 5 ;
+    ns2:startPage 33 ;
+    ns4:author <http://ceur-ws.org/Vol-1643/#IhseniAlouani> .
+
+<http://ceur-ws.org/Vol-1643/#paper-08> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1643/> ;
+    ns3:title "Automatic Pruning of Autotuning Parameter Space for OpenCL Applications" ;
+    ns2:endPage 42 ;
+    ns2:numPages 5 ;
+    ns2:startPage 38 ;
+    ns4:author <http://ceur-ws.org/Vol-1643/#AhmetiErdem> .
+
+<http://ceur-ws.org/Vol-1643/#paper-09> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1643/> ;
+    ns3:title "Application Adaptation at Runtime through Dynamic Knobs Autotuning" ;
+    ns2:endPage 47 ;
+    ns2:numPages 5 ;
+    ns2:startPage 43 ;
+    ns4:author <http://ceur-ws.org/Vol-1643/#DavideiGadioli> .
+
+<http://ceur-ws.org/Vol-1643/> a ns1:Proceedings ;
+    ns1:hasPart <http://ceur-ws.org/Vol-1643/#paper-01>,
+        <http://ceur-ws.org/Vol-1643/#paper-02>,
+        <http://ceur-ws.org/Vol-1643/#paper-03>,
+        <http://ceur-ws.org/Vol-1643/#paper-04>,
+        <http://ceur-ws.org/Vol-1643/#paper-05>,
+        <http://ceur-ws.org/Vol-1643/#paper-06>,
+        <http://ceur-ws.org/Vol-1643/#paper-07>,
+        <http://ceur-ws.org/Vol-1643/#paper-08>,
+        <http://ceur-ws.org/Vol-1643/#paper-09> ;
     ns8:issued "2016-07-16T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:presentedAt <http://ceur-ws.org/Vol-1643/#event> ;
-    ns2:editor <http://ceur-ws.org/Vol-1643/#AmiriHosseiniAshouri>,
+    ns2:presentedAt <http://ceur-ws.org/Vol-1643/#event> ;
+    ns4:editor <http://ceur-ws.org/Vol-1643/#AmiriHosseiniAshouri>,
         <http://ceur-ws.org/Vol-1643/#CristinaiSilvano>,
         <http://ceur-ws.org/Vol-1643/#JeronimoiCastrillion>,
         <http://ceur-ws.org/Vol-1643/#MichaeliH%C3%BCbner>,
         <http://ceur-ws.org/Vol-1643/#StephaniWong>,
         <http://ceur-ws.org/Vol-1643/#WalteriStechele> .
-
-<http://ceur-ws.org/Vol-1643/#AmiriHosseiniAshouri> a ns4:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/AmiriHosseiniAshouri> ;
-    ns4:name "Amir Hossein Ashouri" .
-
-<http://ceur-ws.org/Vol-1643/#CristinaiSilvano> a ns4:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/CristinaiSilvano> ;
-    ns4:name "Cristina Silvano" .
-
-<http://ceur-ws.org/Vol-1643/#JeronimoiCastrillion> a ns4:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/JeronimoiCastrillion> ;
-    ns4:name "Jeronimo Castrillion" .
-
-<http://ceur-ws.org/Vol-1643/#MichaeliH%C3%BCbner> a ns4:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/MichaeliH%C3%BCbner> ;
-    ns4:name "Michael Hübner" .
-
-<http://ceur-ws.org/Vol-1643/#StephaniWong> a ns4:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/StephaniWong> ;
-    ns4:name "Stephan Wong" .
-
-<http://ceur-ws.org/Vol-1643/#WalteriStechele> a ns4:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/WalteriStechele> ;
-    ns4:name "Walter Stechele" .
-
-<http://ceur-ws.org/Vol-1643/#event> a ns5:WorkshopEvent ;
-    ns5:hasLocation <http://dbpedia.org/resource/Germany> ;
-    ns5:hasPart <http://ceur-ws.org/Vol-1643/#part-RESource> ;
-    ns5:isSubEventOf <http://ceur-ws.org/Vol-1643/#conf> ;
-    ns1:beginsAtDatetime "2016-03-18T00:00:00+00:00"^^xsd:dateTime ;
-    ns1:endsAtDatetime "2016-03-18T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:license "http://creativecommons.org/publicdomain/zero/1.0/" .
 

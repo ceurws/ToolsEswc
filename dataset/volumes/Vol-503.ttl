@@ -1,12 +1,12 @@
 @prefix ns1: <http://xmlns.com/foaf/0.1/> .
-@prefix ns2: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns2: <http://swrc.ontoware.org/ontology/#> .
 @prefix ns3: <http://purl.org/ontology/bibo/#> .
 @prefix ns4: <http://www.w3.org/2002/07/owl#> .
-@prefix ns5: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns5: <http://data.semanticweb.org/ns/swc/ontology/#> .
 @prefix ns6: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns7: <http://purl.org/dc/elements/1.1/> .
-@prefix ns8: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns9: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns7: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns9: <http://purl.org/dc/elements/1.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -68,7 +68,7 @@
     ns1:name "Harmon Nine" .
 
 <http://ceur-ws.org/Vol-503/#IulianiOber> a ns1:Person ;
-    ns5:affiliation "" ;
+    ns2:affiliation "" ;
     ns4:sameAs <http://ceur-ws.org/persons/IulianiOber> ;
     ns1:name "Iulian Ober" .
 
@@ -103,7 +103,7 @@
     ns1:name "Joseph Sifakis" .
 
 <http://ceur-ws.org/Vol-503/#MamouniFilali> a ns1:Person ;
-    ns5:affiliation "" ;
+    ns2:affiliation "" ;
     ns4:sameAs <http://ceur-ws.org/persons/MamouniFilali> ;
     ns1:name "Mamoun Filali" .
 
@@ -158,7 +158,7 @@
     ns1:name "Ryan Thibodeaux" .
 
 <http://ceur-ws.org/Vol-503/#S%C3%A9bastieniG%C3%A9rard> a ns1:Person ;
-    ns5:affiliation "" ;
+    ns2:affiliation "" ;
     ns4:sameAs <http://ceur-ws.org/persons/S%C3%A9bastieniG%C3%A9rard> ;
     ns1:name "Sébastien Gérard" .
 
@@ -173,12 +173,12 @@
     ns1:name "Sergio Yovine" .
 
 <http://ceur-ws.org/Vol-503/#StefaniVaniBaelen> a ns1:Person ;
-    ns5:affiliation "" ;
+    ns2:affiliation "" ;
     ns4:sameAs <http://ceur-ws.org/persons/StefaniVaniBaelen> ;
     ns1:name "Stefan Van Baelen" .
 
 <http://ceur-ws.org/Vol-503/#SusanneiGraf> a ns1:Person ;
-    ns5:affiliation "" ;
+    ns2:affiliation "" ;
     ns4:sameAs <http://ceur-ws.org/persons/SusanneiGraf> ;
     ns1:name "Susanne Graf" .
 
@@ -188,7 +188,7 @@
     ns1:name "Thomas Huining Feng" .
 
 <http://ceur-ws.org/Vol-503/#ThomasiWeigert> a ns1:Person ;
-    ns5:affiliation "" ;
+    ns2:affiliation "" ;
     ns4:sameAs <http://ceur-ws.org/persons/ThomasiWeigert> ;
     ns1:name "Thomas Weigert" .
 
@@ -212,102 +212,102 @@
     ns1:made <http://ceur-ws.org/Vol-503/#paper09> ;
     ns1:name "Yves Sorel" .
 
-<http://ceur-ws.org/Vol-503/#event> a ns2:WorkshopEvent ;
-    ns2:hasLocation <http://dbpedia.org/resource/France> ;
-    ns2:hasPart <http://ceur-ws.org/Vol-503/#part-CEUR-WS> ;
-    ns2:isSubEventOf <http://ceur-ws.org/Vol-503/#conf> ;
-    ns6:beginsAtDatetime "2009-09-18T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:endsAtDatetime "2009-09-18T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:license "http://choosealicense.com/licenses/no-license/" .
+<http://ceur-ws.org/Vol-503/#event> a ns5:WorkshopEvent ;
+    ns5:hasLocation <http://dbpedia.org/resource/France> ;
+    ns5:hasPart <http://ceur-ws.org/Vol-503/#part-ACES-MB> ;
+    ns5:isSubEventOf <http://ceur-ws.org/Vol-503/#conf> ;
+    ns6:beginsAtDatetime "2008-09-29T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:endsAtDatetime "2008-09-29T00:00:00+00:00"^^xsd:dateTime ;
+    ns9:license "http://choosealicense.com/licenses/no-license/" .
 
-<http://ceur-ws.org/Vol-503/#paper04> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-503/> ;
-    ns8:title "Deriving component designs from global requirements" ;
+<http://ceur-ws.org/Vol-503/#paper04> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-503/> ;
+    ns7:title "Deriving component designs from global requirements" ;
     ns3:section <http://ceur-ws.org/Vol-503/#TransformationandSynthesis> ;
-    ns5:author <http://ceur-ws.org/Vol-503/#Gregoriv.iBochmann> .
+    ns2:author <http://ceur-ws.org/Vol-503/#Gregoriv.iBochmann> .
 
-<http://ceur-ws.org/Vol-503/#paper05> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-503/> ;
-    ns8:title "Scalable Models Using Model Transformation" ;
+<http://ceur-ws.org/Vol-503/#paper05> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-503/> ;
+    ns7:title "Scalable Models Using Model Transformation" ;
     ns3:section <http://ceur-ws.org/Vol-503/#TransformationandSynthesis> ;
-    ns5:author <http://ceur-ws.org/Vol-503/#EdwardiA.iLee>,
+    ns2:author <http://ceur-ws.org/Vol-503/#EdwardiA.iLee>,
         <http://ceur-ws.org/Vol-503/#ThomasiHuiningiFeng> .
 
-<http://ceur-ws.org/Vol-503/#paper06> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-503/> ;
-    ns8:title "ISE language: the ADL for Efficient Development of Cross Toolkits" ;
+<http://ceur-ws.org/Vol-503/#paper06> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-503/> ;
+    ns7:title "ISE language: the ADL for Efficient Development of Cross Toolkits" ;
     ns3:section <http://ceur-ws.org/Vol-503/#TransformationandSynthesis> ;
-    ns5:author <http://ceur-ws.org/Vol-503/#NikolayiPakulin>,
+    ns2:author <http://ceur-ws.org/Vol-503/#NikolayiPakulin>,
         <http://ceur-ws.org/Vol-503/#VladimiriRubanov> .
 
-<http://ceur-ws.org/Vol-503/#paper09> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-503/> ;
-    ns8:title "From high-level modelling of time in MARTE to real-time scheduling analysis" ;
+<http://ceur-ws.org/Vol-503/#paper09> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-503/> ;
+    ns7:title "From high-level modelling of time in MARTE to real-time scheduling analysis" ;
     ns3:section <http://ceur-ws.org/Vol-503/#ToolsApplicationsPatterns> ;
-    ns5:author <http://ceur-ws.org/Vol-503/#Marie-AgnesiPeraldi-Frati>,
+    ns2:author <http://ceur-ws.org/Vol-503/#Marie-AgnesiPeraldi-Frati>,
         <http://ceur-ws.org/Vol-503/#YvesiSorel> .
 
-<http://ceur-ws.org/Vol-503/#AADLbasedAnalysis> a ns2:SessionEvent ;
-    ns2:partOf <http://ceur-ws.org/Vol-503/> ;
-    ns8:title "AADL based Analysis" .
+<http://ceur-ws.org/Vol-503/#AADLbasedAnalysis> a ns5:SessionEvent ;
+    ns5:partOf <http://ceur-ws.org/Vol-503/> ;
+    ns7:title "AADL based Analysis" .
 
-<http://ceur-ws.org/Vol-503/#TransformationandSynthesis> a ns2:SessionEvent ;
-    ns2:partOf <http://ceur-ws.org/Vol-503/> ;
-    ns8:title "Transformation and Synthesis" .
+<http://ceur-ws.org/Vol-503/#TransformationandSynthesis> a ns5:SessionEvent ;
+    ns5:partOf <http://ceur-ws.org/Vol-503/> ;
+    ns7:title "Transformation and Synthesis" .
 
-<http://ceur-ws.org/Vol-503/#paper01> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-503/> ;
-    ns8:title "Multi-Level power consumption modelling in the AADL design flow for DSP, GPP, and FPGA" ;
+<http://ceur-ws.org/Vol-503/#paper01> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-503/> ;
+    ns7:title "Multi-Level power consumption modelling in the AADL design flow for DSP, GPP, and FPGA" ;
     ns3:section <http://ceur-ws.org/Vol-503/#AADLbasedAnalysis> ;
-    ns5:author <http://ceur-ws.org/Vol-503/#EriciSenn>,
+    ns2:author <http://ceur-ws.org/Vol-503/#EriciSenn>,
         <http://ceur-ws.org/Vol-503/#Jean-PhilippeiDiguet>,
         <http://ceur-ws.org/Vol-503/#JohanniLaurent> .
 
-<http://ceur-ws.org/Vol-503/#ToolsApplicationsPatterns> a ns2:SessionEvent ;
-    ns2:partOf <http://ceur-ws.org/Vol-503/> ;
-    ns8:title "Tools, Applications, Patterns" .
+<http://ceur-ws.org/Vol-503/#ToolsApplicationsPatterns> a ns5:SessionEvent ;
+    ns5:partOf <http://ceur-ws.org/Vol-503/> ;
+    ns7:title "Tools, Applications, Patterns" .
 
-<http://ceur-ws.org/Vol-503/#paper02> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-503/> ;
-    ns8:title "VTS-based Specification and Verification of Behavioral Properties of AADL Models" ;
+<http://ceur-ws.org/Vol-503/#paper02> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-503/> ;
+    ns7:title "VTS-based Specification and Verification of Behavioral Properties of AADL Models" ;
     ns3:section <http://ceur-ws.org/Vol-503/#AADLbasedAnalysis> ;
-    ns5:author <http://ceur-ws.org/Vol-503/#AlfredoiOlivero>,
+    ns2:author <http://ceur-ws.org/Vol-503/#AlfredoiOlivero>,
         <http://ceur-ws.org/Vol-503/#DanieliMonteverde>,
         <http://ceur-ws.org/Vol-503/#SergioiYovine>,
         <http://ceur-ws.org/Vol-503/#VictoriBraberman> .
 
-<http://ceur-ws.org/Vol-503/#paper03> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-503/> ;
-    ns8:title "Translating AADL into BIP - Application to the Verification of Real-time Systems" ;
+<http://ceur-ws.org/Vol-503/#paper03> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-503/> ;
+    ns7:title "Translating AADL into BIP - Application to the Verification of Real-time Systems" ;
     ns3:section <http://ceur-ws.org/Vol-503/#AADLbasedAnalysis> ;
-    ns5:author <http://ceur-ws.org/Vol-503/#AnneiRobert>,
+    ns2:author <http://ceur-ws.org/Vol-503/#AnneiRobert>,
         <http://ceur-ws.org/Vol-503/#JosephiSifakis>,
         <http://ceur-ws.org/Vol-503/#MariusiBozga>,
         <http://ceur-ws.org/Vol-503/#MohamediYassiniChkouri> .
 
-<http://ceur-ws.org/Vol-503/#paper08> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-503/> ;
-    ns8:title "Modeling Radio-Frequency Front-Ends Using SysML: A Case Study of a UMTS Transceiver" ;
+<http://ceur-ws.org/Vol-503/#paper08> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-503/> ;
+    ns7:title "Modeling Radio-Frequency Front-Ends Using SysML: A Case Study of a UMTS Transceiver" ;
     ns3:section <http://ceur-ws.org/Vol-503/#ToolsApplicationsPatterns> ;
-    ns5:author <http://ceur-ws.org/Vol-503/#AmmariKouki>,
+    ns2:author <http://ceur-ws.org/Vol-503/#AmmariKouki>,
         <http://ceur-ws.org/Vol-503/#JeaniBelzile>,
         <http://ceur-ws.org/Vol-503/#RogeriChampagne>,
         <http://ceur-ws.org/Vol-503/#SabeuriLafi> .
 
-<http://ceur-ws.org/Vol-503/#paper10> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-503/> ;
-    ns8:title "A Reinterpretation of Patterns to Increase the Expressive Power of Model-Driven Engineering Approaches" ;
+<http://ceur-ws.org/Vol-503/#paper10> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-503/> ;
+    ns7:title "A Reinterpretation of Patterns to Increase the Expressive Power of Model-Driven Engineering Approaches" ;
     ns3:section <http://ceur-ws.org/Vol-503/#ToolsApplicationsPatterns> ;
-    ns5:author <http://ceur-ws.org/Vol-503/#CarloiSantamaria>,
+    ns2:author <http://ceur-ws.org/Vol-503/#CarloiSantamaria>,
         <http://ceur-ws.org/Vol-503/#MarcoiPanunzio>,
         <http://ceur-ws.org/Vol-503/#MatteoiBordin>,
         <http://ceur-ws.org/Vol-503/#TullioiVardanega> .
 
-<http://ceur-ws.org/Vol-503/#paper07> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-503/> ;
-    ns8:title "Towards Model-Based Integration of Tools and Techniques for Embedded Control System Design, Verification, and Implementation" ;
+<http://ceur-ws.org/Vol-503/#paper07> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-503/> ;
+    ns7:title "Towards Model-Based Integration of Tools and Techniques for Embedded Control System Design, Verification, and Implementation" ;
     ns3:section <http://ceur-ws.org/Vol-503/#ToolsApplicationsPatterns> ;
-    ns5:author <http://ceur-ws.org/Vol-503/#GaboriKarsai>,
+    ns2:author <http://ceur-ws.org/Vol-503/#GaboriKarsai>,
         <http://ceur-ws.org/Vol-503/#GrahamiHemingway>,
         <http://ceur-ws.org/Vol-503/#HarmoniNine>,
         <http://ceur-ws.org/Vol-503/#JanosiSztipanovits>,
@@ -316,8 +316,8 @@
         <http://ceur-ws.org/Vol-503/#PeteriVolgyesi>,
         <http://ceur-ws.org/Vol-503/#RyaniThibodeaux> .
 
-<http://ceur-ws.org/Vol-503/> a ns2:Proceedings ;
-    ns2:hasPart <http://ceur-ws.org/Vol-503/#paper01>,
+<http://ceur-ws.org/Vol-503/> a ns5:Proceedings ;
+    ns5:hasPart <http://ceur-ws.org/Vol-503/#paper01>,
         <http://ceur-ws.org/Vol-503/#paper02>,
         <http://ceur-ws.org/Vol-503/#paper03>,
         <http://ceur-ws.org/Vol-503/#paper04>,
@@ -327,12 +327,12 @@
         <http://ceur-ws.org/Vol-503/#paper08>,
         <http://ceur-ws.org/Vol-503/#paper09>,
         <http://ceur-ws.org/Vol-503/#paper10> ;
-    ns2:hasSession <http://ceur-ws.org/Vol-503/#AADLbasedAnalysis>,
+    ns5:hasSession <http://ceur-ws.org/Vol-503/#AADLbasedAnalysis>,
         <http://ceur-ws.org/Vol-503/#ToolsApplicationsPatterns>,
         <http://ceur-ws.org/Vol-503/#TransformationandSynthesis> ;
-    ns9:issued "2009-09-18T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:issued "2009-09-18T00:00:00+00:00"^^xsd:dateTime ;
     ns3:presentedAt <http://ceur-ws.org/Vol-503/#event> ;
-    ns5:editor <http://ceur-ws.org/Vol-503/#IulianiOber>,
+    ns2:editor <http://ceur-ws.org/Vol-503/#IulianiOber>,
         <http://ceur-ws.org/Vol-503/#MamouniFilali>,
         <http://ceur-ws.org/Vol-503/#S%C3%A9bastieniG%C3%A9rard>,
         <http://ceur-ws.org/Vol-503/#StefaniVaniBaelen>,

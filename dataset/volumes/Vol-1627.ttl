@@ -1,46 +1,256 @@
-@prefix ns1: <http://www.w3.org/2002/07/owl#> .
-@prefix ns2: <http://xmlns.com/foaf/0.1/> .
-@prefix ns3: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns4: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns5: <http://purl.org/ontology/bibo/#> .
-@prefix ns6: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns8: <http://purl.org/dc/elements/1.1/> .
+@prefix ns1: <http://xmlns.com/foaf/0.1/> .
+@prefix ns2: <http://purl.org/ontology/bibo/#> .
+@prefix ns3: <http://www.w3.org/2002/07/owl#> .
+@prefix ns4: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns5: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns6: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns9: <http://purl.org/dc/elements/1.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1627/> a ns3:Proceedings ;
-    ns7:issued "2016-07-25T00:00:00+00:00"^^xsd:dateTime ;
-    ns5:presentedAt <http://ceur-ws.org/Vol-1627/#event> ;
-    ns4:editor <http://ceur-ws.org/Vol-1627/#AndreasiHilbert>,
+<http://ceur-ws.org/Vol-1627/#AlexanderiPorshnev> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/AlexanderiPorshnev> ;
+    ns1:made <http://ceur-ws.org/Vol-1627/#paper5> ;
+    ns1:name "Alexander Porshnev" .
+
+<http://ceur-ws.org/Vol-1627/#AndreasiHilbert> a ns1:Person ;
+    ns5:affiliation "" ;
+    ns3:sameAs <http://ceur-ws.org/persons/AndreasiHilbert> ;
+    ns1:name "Andreas Hilbert" .
+
+<http://ceur-ws.org/Vol-1627/#CharlotteiReypens> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/CharlotteiReypens> ;
+    ns1:made <http://ceur-ws.org/Vol-1627/#abs1> ;
+    ns1:name "Charlotte Reypens" .
+
+<http://ceur-ws.org/Vol-1627/#EkaterinaiMitrofanova> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/EkaterinaiMitrofanova> ;
+    ns1:made <http://ceur-ws.org/Vol-1627/#paper3> ;
+    ns1:name "Ekaterina Mitrofanova" .
+
+<http://ceur-ws.org/Vol-1627/#ElenaiNenova> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/ElenaiNenova> ;
+    ns1:made <http://ceur-ws.org/Vol-1627/#inv1> ;
+    ns1:name "Elena Nenova" .
+
+<http://ceur-ws.org/Vol-1627/#ElizavetaiBespalova> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/ElizavetaiBespalova> ;
+    ns1:made <http://ceur-ws.org/Vol-1627/#paper6> ;
+    ns1:name "Elizaveta Bespalova" .
+
+<http://ceur-ws.org/Vol-1627/#EvgeniiiTsymbalov> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/EvgeniiiTsymbalov> ;
+    ns1:made <http://ceur-ws.org/Vol-1627/#paper8> ;
+    ns1:name "Evgenii Tsymbalov" .
+
+<http://ceur-ws.org/Vol-1627/#HenryiPenikas> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/HenryiPenikas> ;
+    ns1:made <http://ceur-ws.org/Vol-1627/#paper4> ;
+    ns1:name "Henry Penikas" .
+
+<http://ceur-ws.org/Vol-1627/#IlyaiMakarov> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/IlyaiMakarov> ;
+    ns1:made <http://ceur-ws.org/Vol-1627/#paper2> ;
+    ns1:name "Ilya Makarov" .
+
+<http://ceur-ws.org/Vol-1627/#NatalyiZhukova> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/NatalyiZhukova> ;
+    ns1:made <http://ceur-ws.org/Vol-1627/#project1> ;
+    ns1:name "Nataly Zhukova" .
+
+<http://ceur-ws.org/Vol-1627/#NikitaiNikitinsky> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/NikitaiNikitinsky> ;
+    ns1:made <http://ceur-ws.org/Vol-1627/#project2> ;
+    ns1:name "Nikita Nikitinsky" .
+
+<http://ceur-ws.org/Vol-1627/#RadhakrishnaniDelhibabu> a ns1:Person ;
+    ns5:affiliation "" ;
+    ns3:sameAs <http://ceur-ws.org/persons/RadhakrishnaniDelhibabu> ;
+    ns1:name "Radhakrishnan Delhibabu" .
+
+<http://ceur-ws.org/Vol-1627/#SheeniS.iLevine> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/SheeniS.iLevine> ;
+    ns1:made <http://ceur-ws.org/Vol-1627/#abs1> ;
+    ns1:name "Sheen S. Levine" .
+
+<http://ceur-ws.org/Vol-1627/#TatianaiBabkina> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/TatianaiBabkina> ;
+    ns1:made <http://ceur-ws.org/Vol-1627/#paper1> ;
+    ns1:name "Tatiana Babkina" .
+
+<http://ceur-ws.org/Vol-1627/#VladimiriBobrikov> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/VladimiriBobrikov> ;
+    ns1:made <http://ceur-ws.org/Vol-1627/#inv1> ;
+    ns1:name "Vladimir Bobrikov" .
+
+<http://ceur-ws.org/Vol-1627/#event> a ns6:WorkshopEvent ;
+    ns6:hasLocation <http://dbpedia.org/resource/Russia> ;
+    ns6:hasPart <http://ceur-ws.org/Vol-1627/#part-EEML> ;
+    ns6:isSubEventOf <http://ceur-ws.org/Vol-1627/#conf> ;
+    ns7:beginsAtDatetime "2016-07-18T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:endsAtDatetime "2016-07-18T00:00:00+00:00"^^xsd:dateTime ;
+    ns9:license "http://creativecommons.org/publicdomain/zero/1.0/" ;
+    rdfs:seeAlso <http://ceur-ws.org/Vol-870/#event> .
+
+<http://ceur-ws.org/Vol-1627/#DmitryiI.iIgnatov> a ns1:Person ;
+    ns5:affiliation "" ;
+    ns3:sameAs <http://ceur-ws.org/persons/DmitryiI.iIgnatov> ;
+    ns1:made <http://ceur-ws.org/Vol-1627/#inv1> ;
+    ns1:name "Dmitry I. Ignatov" .
+
+<http://ceur-ws.org/Vol-1627/#KeynoteTalk> a ns6:SessionEvent ;
+    ns6:partOf <http://ceur-ws.org/Vol-1627/> ;
+    ns4:title "Keynote Talk" .
+
+<http://ceur-ws.org/Vol-1627/#RustamiTagiew> a ns1:Person ;
+    ns5:affiliation "" ;
+    ns3:sameAs <http://ceur-ws.org/persons/RustamiTagiew> ;
+    ns1:made <http://ceur-ws.org/Vol-1627/#paper7> ;
+    ns1:name "Rustam Tagiew" .
+
+<http://ceur-ws.org/Vol-1627/#paper1> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1627/> ;
+    ns4:title "Choice of the Group Increases Intra-Cooperation" ;
+    ns2:endPage 23 ;
+    ns2:numPages 11 ;
+    ns2:section <http://ceur-ws.org/Vol-1627/#RegularPapers> ;
+    ns2:startPage 13 ;
+    ns5:author <http://ceur-ws.org/Vol-1627/#TatianaiBabkina> .
+
+<http://ceur-ws.org/Vol-1627/#paper2> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1627/> ;
+    ns4:title "Modelling Human-like Behavior through Reward-based Approach in a First-Person Shooter Game" ;
+    ns2:endPage 33 ;
+    ns2:numPages 10 ;
+    ns2:section <http://ceur-ws.org/Vol-1627/#RegularPapers> ;
+    ns2:startPage 24 ;
+    ns5:author <http://ceur-ws.org/Vol-1627/#IlyaiMakarov> .
+
+<http://ceur-ws.org/Vol-1627/#paper3> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1627/> ;
+    ns4:title "Studying of the Family Formation Trajectories Deinstitutionalization in Russia Using Sequence Analysis" ;
+    ns2:endPage 47 ;
+    ns2:numPages 14 ;
+    ns2:section <http://ceur-ws.org/Vol-1627/#RegularPapers> ;
+    ns2:startPage 34 ;
+    ns5:author <http://ceur-ws.org/Vol-1627/#EkaterinaiMitrofanova> .
+
+<http://ceur-ws.org/Vol-1627/#paper4> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1627/> ;
+    ns4:title "QAIDS Model Based On Russian Pseudo-panel Data: Impact of 1998 and 2008 Crises" ;
+    ns2:endPage 60 ;
+    ns2:numPages 13 ;
+    ns2:section <http://ceur-ws.org/Vol-1627/#RegularPapers> ;
+    ns2:startPage 48 ;
+    ns5:author <http://ceur-ws.org/Vol-1627/#HenryiPenikas> .
+
+<http://ceur-ws.org/Vol-1627/#paper5> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1627/> ;
+    ns4:title "Using Emotional Markers' Frequencies in Stock Market ARMAX-GARCH Model" ;
+    ns2:endPage 72 ;
+    ns2:numPages 12 ;
+    ns2:section <http://ceur-ws.org/Vol-1627/#RegularPapers> ;
+    ns2:startPage 61 ;
+    ns5:author <http://ceur-ws.org/Vol-1627/#AlexanderiPorshnev> .
+
+<http://ceur-ws.org/Vol-1627/#paper6> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1627/> ;
+    ns4:title "Finding the Sweet Spot in the City: a Monopolistic Competition Approach" ;
+    ns2:endPage 81 ;
+    ns2:numPages 9 ;
+    ns2:section <http://ceur-ws.org/Vol-1627/#RegularPapers> ;
+    ns2:startPage 73 ;
+    ns5:author <http://ceur-ws.org/Vol-1627/#ElizavetaiBespalova> .
+
+<http://ceur-ws.org/Vol-1627/#paper7> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1627/> ;
+    ns4:title "Gift Ratios in Laboratory Experiments" ;
+    ns2:endPage 93 ;
+    ns2:numPages 12 ;
+    ns2:section <http://ceur-ws.org/Vol-1627/#RegularPapers> ;
+    ns2:startPage 82 ;
+    ns5:author <http://ceur-ws.org/Vol-1627/#RustamiTagiew> .
+
+<http://ceur-ws.org/Vol-1627/#paper8> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1627/> ;
+    ns4:title "Churn Prediction for Game Industry Based on Cohort Classification Ensemble" ;
+    ns2:endPage 100 ;
+    ns2:numPages 7 ;
+    ns2:section <http://ceur-ws.org/Vol-1627/#RegularPapers> ;
+    ns2:startPage 94 ;
+    ns5:author <http://ceur-ws.org/Vol-1627/#EvgeniiiTsymbalov> .
+
+<http://ceur-ws.org/Vol-1627/#project1> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1627/> ;
+    ns4:title "Scientific Portal of University Department -- Shaping User's Research Area through their Behavior" ;
+    ns2:endPage 110 ;
+    ns2:numPages 10 ;
+    ns2:section <http://ceur-ws.org/Vol-1627/#Projectproposals> ;
+    ns2:startPage 101 ;
+    ns5:author <http://ceur-ws.org/Vol-1627/#NatalyiZhukova> .
+
+<http://ceur-ws.org/Vol-1627/#project2> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1627/> ;
+    ns4:title "Big Data and Machine Learning in E-government: Automatic Expert Evaluation Case" ;
+    ns2:endPage 122 ;
+    ns2:numPages 12 ;
+    ns2:section <http://ceur-ws.org/Vol-1627/#Projectproposals> ;
+    ns2:startPage 111 ;
+    ns5:author <http://ceur-ws.org/Vol-1627/#NikitaiNikitinsky> .
+
+<http://ceur-ws.org/Vol-1627/#abs1> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1627/> ;
+    ns4:title "Small Differences in Experience Bring Large Differences in Performance" ;
+    ns2:endPage 125 ;
+    ns2:numPages 3 ;
+    ns2:section <http://ceur-ws.org/Vol-1627/#Projectproposals> ;
+    ns2:startPage 123 ;
+    ns5:author <http://ceur-ws.org/Vol-1627/#CharlotteiReypens>,
+        <http://ceur-ws.org/Vol-1627/#SheeniS.iLevine> .
+
+<http://ceur-ws.org/Vol-1627/#Projectproposals> a ns6:SessionEvent ;
+    ns6:partOf <http://ceur-ws.org/Vol-1627/> ;
+    ns4:title "Project proposals" .
+
+<http://ceur-ws.org/Vol-1627/#inv1> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1627/> ;
+    ns4:title "What is a Fair Value of Your Recommendation List?" ;
+    ns2:endPage 12 ;
+    ns2:numPages 12 ;
+    ns2:section <http://ceur-ws.org/Vol-1627/#KeynoteTalk> ;
+    ns2:startPage 1 ;
+    ns5:author <http://ceur-ws.org/Vol-1627/#DmitryiI.iIgnatov>,
+        <http://ceur-ws.org/Vol-1627/#ElenaiNenova>,
+        <http://ceur-ws.org/Vol-1627/#VladimiriBobrikov> .
+
+<http://ceur-ws.org/Vol-1627/#RegularPapers> a ns6:SessionEvent ;
+    ns6:partOf <http://ceur-ws.org/Vol-1627/> ;
+    ns4:title "Regular Papers" .
+
+<http://ceur-ws.org/Vol-1627/> a ns6:Proceedings ;
+    ns6:hasPart <http://ceur-ws.org/Vol-1627/#abs1>,
+        <http://ceur-ws.org/Vol-1627/#inv1>,
+        <http://ceur-ws.org/Vol-1627/#paper1>,
+        <http://ceur-ws.org/Vol-1627/#paper2>,
+        <http://ceur-ws.org/Vol-1627/#paper3>,
+        <http://ceur-ws.org/Vol-1627/#paper4>,
+        <http://ceur-ws.org/Vol-1627/#paper5>,
+        <http://ceur-ws.org/Vol-1627/#paper6>,
+        <http://ceur-ws.org/Vol-1627/#paper7>,
+        <http://ceur-ws.org/Vol-1627/#paper8>,
+        <http://ceur-ws.org/Vol-1627/#project1>,
+        <http://ceur-ws.org/Vol-1627/#project2> ;
+    ns6:hasSession <http://ceur-ws.org/Vol-1627/#KeynoteTalk>,
+        <http://ceur-ws.org/Vol-1627/#Projectproposals>,
+        <http://ceur-ws.org/Vol-1627/#RegularPapers> ;
+    ns8:issued "2016-07-25T00:00:00+00:00"^^xsd:dateTime ;
+    ns2:presentedAt <http://ceur-ws.org/Vol-1627/#event> ;
+    ns5:editor <http://ceur-ws.org/Vol-1627/#AndreasiHilbert>,
         <http://ceur-ws.org/Vol-1627/#DmitryiI.iIgnatov>,
         <http://ceur-ws.org/Vol-1627/#RadhakrishnaniDelhibabu>,
         <http://ceur-ws.org/Vol-1627/#RustamiTagiew> .
-
-<http://ceur-ws.org/Vol-1627/#AndreasiHilbert> a ns2:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/AndreasiHilbert> ;
-    ns2:name "Andreas Hilbert" .
-
-<http://ceur-ws.org/Vol-1627/#DmitryiI.iIgnatov> a ns2:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/DmitryiI.iIgnatov> ;
-    ns2:name "Dmitry I. Ignatov" .
-
-<http://ceur-ws.org/Vol-1627/#RadhakrishnaniDelhibabu> a ns2:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/RadhakrishnaniDelhibabu> ;
-    ns2:name "Radhakrishnan Delhibabu" .
-
-<http://ceur-ws.org/Vol-1627/#RustamiTagiew> a ns2:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/RustamiTagiew> ;
-    ns2:name "Rustam Tagiew" .
-
-<http://ceur-ws.org/Vol-1627/#event> a ns3:WorkshopEvent ;
-    ns3:hasLocation <http://dbpedia.org/resource/Russia> ;
-    ns3:hasPart <http://ceur-ws.org/Vol-1627/#part-ws> ;
-    ns3:isSubEventOf <http://ceur-ws.org/Vol-1627/#conf> ;
-    ns6:beginsAtDatetime "2016-07-18T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:endsAtDatetime "2016-07-18T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:license "http://creativecommons.org/publicdomain/zero/1.0/" ;
-    rdfs:seeAlso <http://ceur-ws.org/Vol-870/#event> .
 

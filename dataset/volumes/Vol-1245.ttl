@@ -1,40 +1,301 @@
-@prefix ns1: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns2: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns3: <http://xmlns.com/foaf/0.1/> .
-@prefix ns4: <http://purl.org/ontology/bibo/#> .
-@prefix ns5: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns6: <http://purl.org/dc/elements/1.1/> .
-@prefix ns7: <http://www.w3.org/2002/07/owl#> .
-@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns1: <http://purl.org/ontology/bibo/#> .
+@prefix ns2: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns3: <http://www.w3.org/2002/07/owl#> .
+@prefix ns4: <http://xmlns.com/foaf/0.1/> .
+@prefix ns5: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns6: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns7: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns8: <http://purl.org/dc/elements/1.1/> .
+@prefix ns9: <http://purl.org/NET/c4dm/timeline.owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1245/> a ns2:Proceedings ;
-    ns8:issued "2014-09-17T00:00:00+00:00"^^xsd:dateTime ;
-    ns4:presentedAt <http://ceur-ws.org/Vol-1245/#event> ;
-    ns5:editor <http://ceur-ws.org/Vol-1245/#Iv%C3%A1niCantador>,
+<http://ceur-ws.org/Vol-1245/#AlexanderiTuzhilin> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/AlexanderiTuzhilin> ;
+    ns4:made <http://ceur-ws.org/Vol-1245/#paper1> ;
+    ns4:name "Alexander Tuzhilin" .
+
+<http://ceur-ws.org/Vol-1245/#AnthonyiChow> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/AnthonyiChow> ;
+    ns4:made <http://ceur-ws.org/Vol-1245/#paper2> ;
+    ns4:name "Anthony Chow" .
+
+<http://ceur-ws.org/Vol-1245/#CataldoiMusto> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/CataldoiMusto> ;
+    ns4:made <http://ceur-ws.org/Vol-1245/#paper8> ;
+    ns4:name "Cataldo Musto" .
+
+<http://ceur-ws.org/Vol-1245/#DanieliHerzog> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/DanieliHerzog> ;
+    ns4:made <http://ceur-ws.org/Vol-1245/#paper7> ;
+    ns4:name "Daniel Herzog" .
+
+<http://ceur-ws.org/Vol-1245/#GiovanniiSemeraro> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/GiovanniiSemeraro> ;
+    ns4:made <http://ceur-ws.org/Vol-1245/#paper8> ;
+    ns4:name "Giovanni Semeraro" .
+
+<http://ceur-ws.org/Vol-1245/#GiuseppeiManai> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/GiuseppeiManai> ;
+    ns4:made <http://ceur-ws.org/Vol-1245/#paper2> ;
+    ns4:name "Giuseppe Manai" .
+
+<http://ceur-ws.org/Vol-1245/#IgnacioiFern%C3%A1ndez-Tob%C3%ADas> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/IgnacioiFern%C3%A1ndez-Tob%C3%ADas> ;
+    ns4:made <http://ceur-ws.org/Vol-1245/#paper6> ;
+    ns4:name "Ignacio Fernández-Tobías" .
+
+<http://ceur-ws.org/Vol-1245/#KonstantiniBauman> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/KonstantiniBauman> ;
+    ns4:made <http://ceur-ws.org/Vol-1245/#paper1> ;
+    ns4:name "Konstantin Bauman" .
+
+<http://ceur-ws.org/Vol-1245/#KrisiVanhecke> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/KrisiVanhecke> ;
+    ns4:made <http://ceur-ws.org/Vol-1245/#paper4> ;
+    ns4:name "Kris Vanhecke" .
+
+<http://ceur-ws.org/Vol-1245/#LuciMartens> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/LuciMartens> ;
+    ns4:made <http://ceur-ws.org/Vol-1245/#paper4> ;
+    ns4:name "Luc Martens" .
+
+<http://ceur-ws.org/Vol-1245/#ManueliJ.iFonseca> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/ManueliJ.iFonseca> ;
+    ns4:made <http://ceur-ws.org/Vol-1245/#paper5> ;
+    ns4:name "Manuel J. Fonseca" .
+
+<http://ceur-ws.org/Vol-1245/#MarcoiDeiGemmis> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/MarcoiDeiGemmis> ;
+    ns4:made <http://ceur-ws.org/Vol-1245/#paper8> ;
+    ns4:name "Marco De Gemmis" .
+
+<http://ceur-ws.org/Vol-1245/#MarijniKoolen> a ns4:Person ;
+    ns1:place <http://dbpedia.org/resource/Kingdom_of_the_Netherlands> ;
+    ns2:affiliation "Institute of Logic, Language and Computation, University of Amsterdam" ;
+    ns3:sameAs <http://ceur-ws.org/persons/MarijniKoolen> ;
+    ns4:name "Marijn Koolen" .
+
+<http://ceur-ws.org/Vol-1245/#MichaeliSchuhmacher> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/MichaeliSchuhmacher> ;
+    ns4:made <http://ceur-ws.org/Vol-1245/#paper3> ;
+    ns4:name "Michael Schuhmacher" .
+
+<http://ceur-ws.org/Vol-1245/#Min-HuiiNicoleiFoo> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/Min-HuiiNicoleiFoo> ;
+    ns4:made <http://ceur-ws.org/Vol-1245/#paper2> ;
+    ns4:name "Min-Hui Nicole Foo" .
+
+<http://ceur-ws.org/Vol-1245/#MoumitaiSinha> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/MoumitaiSinha> ;
+    ns4:made <http://ceur-ws.org/Vol-1245/#paper10> ;
+    ns4:name "Moumita Sinha" .
+
+<http://ceur-ws.org/Vol-1245/#Orph%C3%A9eiDeiClercq> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/Orph%C3%A9eiDeiClercq> ;
+    ns4:made <http://ceur-ws.org/Vol-1245/#paper3> ;
+    ns4:name "Orphée De Clercq" .
+
+<http://ceur-ws.org/Vol-1245/#PierpaoloiBasile> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/PierpaoloiBasile> ;
+    ns4:made <http://ceur-ws.org/Vol-1245/#paper8> ;
+    ns4:name "Pierpaolo Basile" .
+
+<http://ceur-ws.org/Vol-1245/#RicardoiCunha> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/RicardoiCunha> ;
+    ns4:made <http://ceur-ws.org/Vol-1245/#paper5> ;
+    ns4:name "Ricardo Cunha" .
+
+<http://ceur-ws.org/Vol-1245/#RicardoiDias> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/RicardoiDias> ;
+    ns4:made <http://ceur-ws.org/Vol-1245/#paper5> ;
+    ns4:name "Ricardo Dias" .
+
+<http://ceur-ws.org/Vol-1245/#RishirajiSahaiRoy> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/RishirajiSahaiRoy> ;
+    ns4:made <http://ceur-ws.org/Vol-1245/#paper10> ;
+    ns4:name "Rishiraj Saha Roy" .
+
+<http://ceur-ws.org/Vol-1245/#ShaghayeghiSahebi> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/ShaghayeghiSahebi> ;
+    ns4:made <http://ceur-ws.org/Vol-1245/#paper9> ;
+    ns4:name "Shaghayegh Sahebi" .
+
+<http://ceur-ws.org/Vol-1245/#SimoneiPaoloiPonzetto> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/SimoneiPaoloiPonzetto> ;
+    ns4:made <http://ceur-ws.org/Vol-1245/#paper3> ;
+    ns4:name "Simone Paolo Ponzetto" .
+
+<http://ceur-ws.org/Vol-1245/#ToineiBogers> a ns4:Person ;
+    ns1:place <http://dbpedia.org/resource/Denmark> ;
+    ns2:affiliation "Department of Communication and Psychology, Aalborg University Copenhagen" ;
+    ns3:sameAs <http://ceur-ws.org/persons/ToineiBogers> ;
+    ns4:name "Toine Bogers" .
+
+<http://ceur-ws.org/Vol-1245/#TooniDeiPessemier> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/TooniDeiPessemier> ;
+    ns4:made <http://ceur-ws.org/Vol-1245/#paper4> ;
+    ns4:name "Toon De Pessemier" .
+
+<http://ceur-ws.org/Vol-1245/#TrevoriWalker> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/TrevoriWalker> ;
+    ns4:made <http://ceur-ws.org/Vol-1245/#paper9> ;
+    ns4:name "Trevor Walker" .
+
+<http://ceur-ws.org/Vol-1245/#VeroniqueiHoste> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/VeroniqueiHoste> ;
+    ns4:made <http://ceur-ws.org/Vol-1245/#paper3> ;
+    ns4:name "Veronique Hoste" .
+
+<http://ceur-ws.org/Vol-1245/#WolfgangiW%C3%B6rndl> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/WolfgangiW%C3%B6rndl> ;
+    ns4:made <http://ceur-ws.org/Vol-1245/#paper7> ;
+    ns4:name "Wolfgang Wörndl" .
+
+<http://ceur-ws.org/Vol-1245/#event> a ns5:WorkshopEvent ;
+    ns5:hasLocation <http://dbpedia.org/resource/United_States> ;
+    ns5:hasPart <http://ceur-ws.org/Vol-1245/#part-CBRecSys> ;
+    ns5:isSubEventOf <http://ceur-ws.org/Vol-1245/#conf> ;
+    ns9:beginsAtDatetime "2014-10-06T00:00:00+00:00"^^xsd:dateTime ;
+    ns9:endsAtDatetime "2014-10-06T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:license "http://choosealicense.com/licenses/no-license/" .
+
+<http://ceur-ws.org/Vol-1245/#Iv%C3%A1niCantador> a ns4:Person ;
+    ns1:place <http://dbpedia.org/resource/Spain> ;
+    ns2:affiliation "High Polytechnic School, Universidad Autónoma de Madrid" ;
+    ns3:sameAs <http://ceur-ws.org/persons/Iv%C3%A1niCantador> ;
+    ns4:made <http://ceur-ws.org/Vol-1245/#paper6> ;
+    ns4:name "Iván Cantador" .
+
+<http://ceur-ws.org/Vol-1245/#PasqualeiLops> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/PasqualeiLops> ;
+    ns4:made <http://ceur-ws.org/Vol-1245/#paper0>,
+        <http://ceur-ws.org/Vol-1245/#paper8> ;
+    ns4:name "Pasquale Lops" .
+
+<http://ceur-ws.org/Vol-1245/#paper0> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1245/> ;
+    ns7:title "Semantics-aware Content-based Recommender Systems" ;
+    ns1:endPage 1 ;
+    ns1:numPages 1 ;
+    ns1:startPage 1 ;
+    ns2:author <http://ceur-ws.org/Vol-1245/#PasqualeiLops> .
+
+<http://ceur-ws.org/Vol-1245/#paper1> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1245/> ;
+    ns7:title "Discovering Contextual Information from User Reviews for Recommendation Purposes" ;
+    ns1:endPage 9 ;
+    ns1:numPages 8 ;
+    ns1:startPage 2 ;
+    ns2:author <http://ceur-ws.org/Vol-1245/#AlexanderiTuzhilin>,
+        <http://ceur-ws.org/Vol-1245/#KonstantiniBauman> .
+
+<http://ceur-ws.org/Vol-1245/#paper10> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1245/> ;
+    ns7:title "Preference Mapping for Automated Recommendation of Product Attributes for Designing Marketing Content" ;
+    ns1:endPage 68 ;
+    ns1:numPages 4 ;
+    ns1:startPage 65 ;
+    ns2:author <http://ceur-ws.org/Vol-1245/#MoumitaiSinha>,
+        <http://ceur-ws.org/Vol-1245/#RishirajiSahaiRoy> .
+
+<http://ceur-ws.org/Vol-1245/#paper6> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1245/> ;
+    ns7:title "Exploiting Social Tags in Matrix Factorization Models for Cross-domain Collaborative Filtering" ;
+    ns1:endPage 41 ;
+    ns1:numPages 8 ;
+    ns1:startPage 34 ;
+    ns2:author <http://ceur-ws.org/Vol-1245/#IgnacioiFern%C3%A1ndez-Tob%C3%ADas>,
+        <http://ceur-ws.org/Vol-1245/#Iv%C3%A1niCantador> .
+
+<http://ceur-ws.org/Vol-1245/#paper7> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1245/> ;
+    ns7:title "A Travel Recommender System for Combining Multiple Travel Regions to a Composite Trip" ;
+    ns1:endPage 48 ;
+    ns1:numPages 7 ;
+    ns1:startPage 42 ;
+    ns2:author <http://ceur-ws.org/Vol-1245/#DanieliHerzog>,
+        <http://ceur-ws.org/Vol-1245/#WolfgangiW%C3%B6rndl> .
+
+<http://ceur-ws.org/Vol-1245/#paper9> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1245/> ;
+    ns7:title "Content-Based Cross-Domain Recommendations Using Segmented Models" ;
+    ns1:endPage 64 ;
+    ns1:numPages 8 ;
+    ns1:startPage 57 ;
+    ns2:author <http://ceur-ws.org/Vol-1245/#ShaghayeghiSahebi>,
+        <http://ceur-ws.org/Vol-1245/#TrevoriWalker> .
+
+<http://ceur-ws.org/Vol-1245/#paper2> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1245/> ;
+    ns7:title "HybridRank: A Hybrid Content-Based Approach To Mobile Game Recommendations" ;
+    ns1:endPage 13 ;
+    ns1:numPages 4 ;
+    ns1:startPage 10 ;
+    ns2:author <http://ceur-ws.org/Vol-1245/#AnthonyiChow>,
+        <http://ceur-ws.org/Vol-1245/#GiuseppeiManai>,
+        <http://ceur-ws.org/Vol-1245/#Min-HuiiNicoleiFoo> .
+
+<http://ceur-ws.org/Vol-1245/#paper4> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1245/> ;
+    ns7:title "A Hybrid Strategy for Privacy-Preserving Recommendations for Mobile Shopping" ;
+    ns1:endPage 25 ;
+    ns1:numPages 4 ;
+    ns1:startPage 22 ;
+    ns2:author <http://ceur-ws.org/Vol-1245/#KrisiVanhecke>,
+        <http://ceur-ws.org/Vol-1245/#LuciMartens>,
+        <http://ceur-ws.org/Vol-1245/#TooniDeiPessemier> .
+
+<http://ceur-ws.org/Vol-1245/#paper5> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1245/> ;
+    ns7:title "A User-centered Music Recommendation Approach for Daily Activities" ;
+    ns1:endPage 33 ;
+    ns1:numPages 8 ;
+    ns1:startPage 26 ;
+    ns2:author <http://ceur-ws.org/Vol-1245/#ManueliJ.iFonseca>,
+        <http://ceur-ws.org/Vol-1245/#RicardoiCunha>,
+        <http://ceur-ws.org/Vol-1245/#RicardoiDias> .
+
+<http://ceur-ws.org/Vol-1245/#paper3> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1245/> ;
+    ns7:title "Exploiting FrameNet for Content-Based Book Recommendation" ;
+    ns1:endPage 21 ;
+    ns1:numPages 8 ;
+    ns1:startPage 14 ;
+    ns2:author <http://ceur-ws.org/Vol-1245/#MichaeliSchuhmacher>,
+        <http://ceur-ws.org/Vol-1245/#Orph%C3%A9eiDeiClercq>,
+        <http://ceur-ws.org/Vol-1245/#SimoneiPaoloiPonzetto>,
+        <http://ceur-ws.org/Vol-1245/#VeroniqueiHoste> .
+
+<http://ceur-ws.org/Vol-1245/#paper8> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1245/> ;
+    ns7:title "Linked Open Data-enabled Strategies for Top-N Recommendations" ;
+    ns1:endPage 56 ;
+    ns1:numPages 8 ;
+    ns1:startPage 49 ;
+    ns2:author <http://ceur-ws.org/Vol-1245/#CataldoiMusto>,
+        <http://ceur-ws.org/Vol-1245/#GiovanniiSemeraro>,
+        <http://ceur-ws.org/Vol-1245/#MarcoiDeiGemmis>,
+        <http://ceur-ws.org/Vol-1245/#PasqualeiLops>,
+        <http://ceur-ws.org/Vol-1245/#PierpaoloiBasile> .
+
+<http://ceur-ws.org/Vol-1245/> a ns5:Proceedings ;
+    ns5:hasPart <http://ceur-ws.org/Vol-1245/#paper0>,
+        <http://ceur-ws.org/Vol-1245/#paper1>,
+        <http://ceur-ws.org/Vol-1245/#paper10>,
+        <http://ceur-ws.org/Vol-1245/#paper2>,
+        <http://ceur-ws.org/Vol-1245/#paper3>,
+        <http://ceur-ws.org/Vol-1245/#paper4>,
+        <http://ceur-ws.org/Vol-1245/#paper5>,
+        <http://ceur-ws.org/Vol-1245/#paper6>,
+        <http://ceur-ws.org/Vol-1245/#paper7>,
+        <http://ceur-ws.org/Vol-1245/#paper8>,
+        <http://ceur-ws.org/Vol-1245/#paper9> ;
+    ns6:issued "2014-09-17T00:00:00+00:00"^^xsd:dateTime ;
+    ns1:presentedAt <http://ceur-ws.org/Vol-1245/#event> ;
+    ns2:editor <http://ceur-ws.org/Vol-1245/#Iv%C3%A1niCantador>,
         <http://ceur-ws.org/Vol-1245/#MarijniKoolen>,
         <http://ceur-ws.org/Vol-1245/#ToineiBogers> .
-
-<http://ceur-ws.org/Vol-1245/#Iv%C3%A1niCantador> a ns3:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/Iv%C3%A1niCantador> ;
-    ns3:name "Iván Cantador" .
-
-<http://ceur-ws.org/Vol-1245/#MarijniKoolen> a ns3:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/MarijniKoolen> ;
-    ns3:name "Marijn Koolen" .
-
-<http://ceur-ws.org/Vol-1245/#ToineiBogers> a ns3:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/ToineiBogers> ;
-    ns3:name "Toine Bogers" .
-
-<http://ceur-ws.org/Vol-1245/#event> a ns2:WorkshopEvent ;
-    ns2:hasLocation <http://dbpedia.org/resource/United_States> ;
-    ns2:hasPart <http://ceur-ws.org/Vol-1245/#part-ws> ;
-    ns2:isSubEventOf <http://ceur-ws.org/Vol-1245/#conf> ;
-    ns1:beginsAtDatetime "2014-10-06T00:00:00+00:00"^^xsd:dateTime ;
-    ns1:endsAtDatetime "2014-10-06T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:license "http://choosealicense.com/licenses/no-license/" .
 

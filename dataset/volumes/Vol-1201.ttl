@@ -1,45 +1,389 @@
-@prefix ns1: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns2: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns3: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns4: <http://purl.org/ontology/bibo/#> .
-@prefix ns5: <http://xmlns.com/foaf/0.1/> .
-@prefix ns6: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns7: <http://www.w3.org/2002/07/owl#> .
-@prefix ns8: <http://purl.org/dc/elements/1.1/> .
+@prefix ns1: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns2: <http://www.w3.org/2002/07/owl#> .
+@prefix ns3: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns4: <http://xmlns.com/foaf/0.1/> .
+@prefix ns5: <http://purl.org/ontology/bibo/#> .
+@prefix ns6: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns7: <http://purl.org/dc/elements/1.1/> .
+@prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns9: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1201/> a ns1:Proceedings ;
-    ns2:issued "2014-08-03T00:00:00+00:00"^^xsd:dateTime ;
-    ns4:presentedAt <http://ceur-ws.org/Vol-1201/#event> ;
-    ns6:editor <http://ceur-ws.org/Vol-1201/#CarlosiSoares>,
+<http://ceur-ws.org/Vol-1201/#AndrewiWhite> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/AndrewiWhite> ;
+    ns4:made <http://ceur-ws.org/Vol-1201/#paper-10> ;
+    ns4:name "Andrew White" .
+
+<http://ceur-ws.org/Vol-1201/#BernhardiPfahringer> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/BernhardiPfahringer> ;
+    ns4:made <http://ceur-ws.org/Vol-1201/#paper-08> ;
+    ns4:name "Bernhard Pfahringer" .
+
+<http://ceur-ws.org/Vol-1201/#CarlosiEduardoiCastorideiMelo> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/CarlosiEduardoiCastorideiMelo> ;
+    ns4:made <http://ceur-ws.org/Vol-1201/#paper-04> ;
+    ns4:name "Carlos Eduardo Castor de Melo" .
+
+<http://ceur-ws.org/Vol-1201/#DavidiKofoediWind> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/DavidiKofoediWind> ;
+    ns4:made <http://ceur-ws.org/Vol-1201/#paper-14> ;
+    ns4:name "David Kofoed Wind" .
+
+<http://ceur-ws.org/Vol-1201/#FabioiPinto> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/FabioiPinto> ;
+    ns4:made <http://ceur-ws.org/Vol-1201/#paper-07> ;
+    ns4:name "Fabio Pinto" .
+
+<http://ceur-ws.org/Vol-1201/#GeoffreyiHolmes> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/GeoffreyiHolmes> ;
+    ns4:made <http://ceur-ws.org/Vol-1201/#paper-08> ;
+    ns4:name "Geoffrey Holmes" .
+
+<http://ceur-ws.org/Vol-1201/#HolgeriHoos> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/HolgeriHoos> ;
+    ns4:made <http://ceur-ws.org/Vol-1201/#paper-06> ;
+    ns4:name "Holger Hoos" .
+
+<http://ceur-ws.org/Vol-1201/#JakubiSmid> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/JakubiSmid> ;
+    ns4:made <http://ceur-ws.org/Vol-1201/#paper-13> ;
+    ns4:name "Jakub Smid" .
+
+<http://ceur-ws.org/Vol-1201/#JanivaniRijn> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/JanivaniRijn> ;
+    ns4:made <http://ceur-ws.org/Vol-1201/#paper-08> ;
+    ns4:name "Jan van Rijn" .
+
+<http://ceur-ws.org/Vol-1201/#JoaoiMendes-Moreira> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/JoaoiMendes-Moreira> ;
+    ns4:made <http://ceur-ws.org/Vol-1201/#paper-07> ;
+    ns4:name "Joao Mendes-Moreira" .
+
+<http://ceur-ws.org/Vol-1201/#KatharinaiEggensperger> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/KatharinaiEggensperger> ;
+    ns4:made <http://ceur-ws.org/Vol-1201/#paper-06> ;
+    ns4:name "Katharina Eggensperger" .
+
+<http://ceur-ws.org/Vol-1201/#KeviniLeyton-Brown> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/KeviniLeyton-Brown> ;
+    ns4:made <http://ceur-ws.org/Vol-1201/#paper-06> ;
+    ns4:name "Kevin Leyton-Brown" .
+
+<http://ceur-ws.org/Vol-1201/#KlaraiPeskova> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/KlaraiPeskova> ;
+    ns4:made <http://ceur-ws.org/Vol-1201/#paper-13> ;
+    ns4:name "Klara Peskova" .
+
+<http://ceur-ws.org/Vol-1201/#LoganiMitchell> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/LoganiMitchell> ;
+    ns4:made <http://ceur-ws.org/Vol-1201/#paper-09> ;
+    ns4:name "Logan Mitchell" .
+
+<http://ceur-ws.org/Vol-1201/#MartiniPilat> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/MartiniPilat> ;
+    ns4:made <http://ceur-ws.org/Vol-1201/#paper-13> ;
+    ns4:name "Martin Pilat" .
+
+<http://ceur-ws.org/Vol-1201/#MatthiasiFeurer> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/MatthiasiFeurer> ;
+    ns4:made <http://ceur-ws.org/Vol-1201/#paper-03> ;
+    ns4:name "Matthias Feurer" .
+
+<http://ceur-ws.org/Vol-1201/#OleiWinther> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/OleiWinther> ;
+    ns4:made <http://ceur-ws.org/Vol-1201/#paper-14> ;
+    ns4:name "Ole Winther" .
+
+<http://ceur-ws.org/Vol-1201/#OndrejiKazik> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/OndrejiKazik> ;
+    ns4:made <http://ceur-ws.org/Vol-1201/#paper-13> ;
+    ns4:name "Ondrej Kazik" .
+
+<http://ceur-ws.org/Vol-1201/#OtakariTrunda> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/OtakariTrunda> ;
+    ns4:made <http://ceur-ws.org/Vol-1201/#paper-12> ;
+    ns4:name "Otakar Trunda" .
+
+<http://ceur-ws.org/Vol-1201/#ParkeriRidd> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/ParkeriRidd> ;
+    ns4:made <http://ceur-ws.org/Vol-1201/#paper-05> ;
+    ns4:name "Parker Ridd" .
+
+<http://ceur-ws.org/Vol-1201/#RicardoiPrud%C3%AAncio> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/RicardoiPrud%C3%AAncio> ;
+    ns4:made <http://ceur-ws.org/Vol-1201/#paper-04> ;
+    ns4:name "Ricardo Prudêncio" .
+
+<http://ceur-ws.org/Vol-1201/#RomaniBartak> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/RomaniBartak> ;
+    ns4:made <http://ceur-ws.org/Vol-1201/#paper-12> ;
+    ns4:name "Roman Bartak" .
+
+<http://ceur-ws.org/Vol-1201/#RomaniNeruda> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/RomaniNeruda> ;
+    ns4:made <http://ceur-ws.org/Vol-1201/#paper-13> ;
+    ns4:name "Roman Neruda" .
+
+<http://ceur-ws.org/Vol-1201/#SalisuiAbdulrahman> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/SalisuiAbdulrahman> ;
+    ns4:made <http://ceur-ws.org/Vol-1201/#paper-11> ;
+    ns4:name "Salisu Abdulrahman" .
+
+<http://ceur-ws.org/Vol-1201/#TobiasiSpringenberg> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/TobiasiSpringenberg> ;
+    ns4:made <http://ceur-ws.org/Vol-1201/#paper-03> ;
+    ns4:name "Tobias Springenberg" .
+
+<http://ceur-ws.org/Vol-1201/#event> a ns6:WorkshopEvent ;
+    ns6:hasLocation <http://dbpedia.org/resource/Czech_Republic> ;
+    ns6:hasPart <http://ceur-ws.org/Vol-1201/#part-MetaSel> ;
+    ns6:isSubEventOf <http://ceur-ws.org/Vol-1201/#conf> ;
+    ns8:beginsAtDatetime "2014-08-19T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:endsAtDatetime "2014-08-19T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:license "http://choosealicense.com/licenses/no-license/" .
+
+<http://ceur-ws.org/Vol-1201/#CarlosiSoares> a ns4:Person ;
+    ns5:place <http://dbpedia.org/resource/Portugal> ;
+    ns1:affiliation "University of Porto" ;
+    ns2:sameAs <http://ceur-ws.org/persons/CarlosiSoares> ;
+    ns4:made <http://ceur-ws.org/Vol-1201/#paper-07> ;
+    ns4:name "Carlos Soares" .
+
+<http://ceur-ws.org/Vol-1201/#JoaquiniVanschoren> a ns4:Person ;
+    ns5:place <http://dbpedia.org/resource/Kingdom_of_the_Netherlands> ;
+    ns1:affiliation "Eindhoven University of Technology" ;
+    ns2:sameAs <http://ceur-ws.org/persons/JoaquiniVanschoren> ;
+    ns4:made <http://ceur-ws.org/Vol-1201/#paper-08> ;
+    ns4:name "Joaquin Vanschoren" .
+
+<http://ceur-ws.org/Vol-1201/#LarsiKotthoff> a ns4:Person ;
+    ns5:place <http://dbpedia.org/resource/Republic_of_Ireland> ;
+    ns1:affiliation "University College Cork" ;
+    ns2:sameAs <http://ceur-ws.org/persons/LarsiKotthoff> ;
+    ns4:made <http://ceur-ws.org/Vol-1201/#paper-01> ;
+    ns4:name "Lars Kotthoff" .
+
+<http://ceur-ws.org/Vol-1201/#MichaeliSmith> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/MichaeliSmith> ;
+    ns4:made <http://ceur-ws.org/Vol-1201/#paper-09>,
+        <http://ceur-ws.org/Vol-1201/#paper-10> ;
+    ns4:name "Michael Smith" .
+
+<http://ceur-ws.org/Vol-1201/#PaveliBrazdil> a ns4:Person ;
+    ns5:place <http://dbpedia.org/resource/Portugal> ;
+    ns1:affiliation "University of Porto" ;
+    ns2:sameAs <http://ceur-ws.org/persons/PaveliBrazdil> ;
+    ns4:made <http://ceur-ws.org/Vol-1201/#paper-11> ;
+    ns4:name "Pavel Brazdil" .
+
+<http://ceur-ws.org/Vol-1201/#TonyiMartinez> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/TonyiMartinez> ;
+    ns4:made <http://ceur-ws.org/Vol-1201/#paper-09>,
+        <http://ceur-ws.org/Vol-1201/#paper-10> ;
+    ns4:name "Tony Martinez" .
+
+<http://ceur-ws.org/Vol-1201/#paper-01> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1201/> ;
+    ns3:title "Towards an Algorithm Selection Standard: Data Format and Tools" ;
+    ns5:endPage 1 ;
+    ns5:numPages 1 ;
+    ns5:section <http://ceur-ws.org/Vol-1201/#InvitedTalkAbstracts> ;
+    ns5:startPage 1 ;
+    ns1:author <http://ceur-ws.org/Vol-1201/#LarsiKotthoff> .
+
+<http://ceur-ws.org/Vol-1201/#paper-02> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1201/> ;
+    ns3:title "Bayesian Optimization for More Automatic Machine Learning" ;
+    ns5:endPage 2 ;
+    ns5:numPages 1 ;
+    ns5:section <http://ceur-ws.org/Vol-1201/#InvitedTalkAbstracts> ;
+    ns5:startPage 2 ;
+    ns1:author <http://ceur-ws.org/Vol-1201/#FrankiHutter> .
+
+<http://ceur-ws.org/Vol-1201/#ChristopheiGiraud-Carrier> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/ChristopheiGiraud-Carrier> ;
+    ns4:made <http://ceur-ws.org/Vol-1201/#paper-05>,
+        <http://ceur-ws.org/Vol-1201/#paper-09>,
+        <http://ceur-ws.org/Vol-1201/#paper-10> ;
+    ns4:name "Christophe Giraud-Carrier" .
+
+<http://ceur-ws.org/Vol-1201/#FrankiHutter> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/FrankiHutter> ;
+    ns4:made <http://ceur-ws.org/Vol-1201/#paper-02>,
+        <http://ceur-ws.org/Vol-1201/#paper-03>,
+        <http://ceur-ws.org/Vol-1201/#paper-06> ;
+    ns4:name "Frank Hutter" .
+
+<http://ceur-ws.org/Vol-1201/#InvitedTalkAbstracts> a ns6:SessionEvent ;
+    ns6:partOf <http://ceur-ws.org/Vol-1201/> ;
+    ns3:title "Invited Talk Abstracts" .
+
+<http://ceur-ws.org/Vol-1201/#paper-04> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1201/> ;
+    ns3:title "Similarity Measures of Algorithm Performance for Cost-Sensitive Scenarios" ;
+    ns5:endPage 17 ;
+    ns5:numPages 7 ;
+    ns5:section <http://ceur-ws.org/Vol-1201/#TechnicalPapers> ;
+    ns5:startPage 11 ;
+    ns1:author <http://ceur-ws.org/Vol-1201/#CarlosiEduardoiCastorideiMelo>,
+        <http://ceur-ws.org/Vol-1201/#RicardoiPrud%C3%AAncio> .
+
+<http://ceur-ws.org/Vol-1201/#paper-05> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1201/> ;
+    ns3:title "Using Metalearning to Predict When Parameter Optimization Is Likely to Improve Classification Accuracy" ;
+    ns5:endPage 23 ;
+    ns5:numPages 6 ;
+    ns5:section <http://ceur-ws.org/Vol-1201/#TechnicalPapers> ;
+    ns5:startPage 18 ;
+    ns1:author <http://ceur-ws.org/Vol-1201/#ChristopheiGiraud-Carrier>,
+        <http://ceur-ws.org/Vol-1201/#ParkeriRidd> .
+
+<http://ceur-ws.org/Vol-1201/#paper-11> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1201/> ;
+    ns3:title "Measures for Combining Accuracy and Time for Meta-learning" ;
+    ns5:endPage 50 ;
+    ns5:numPages 2 ;
+    ns5:section <http://ceur-ws.org/Vol-1201/#TechnicalPapers> ;
+    ns5:startPage 49 ;
+    ns1:author <http://ceur-ws.org/Vol-1201/#PaveliBrazdil>,
+        <http://ceur-ws.org/Vol-1201/#SalisuiAbdulrahman> .
+
+<http://ceur-ws.org/Vol-1201/#paper-12> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1201/> ;
+    ns3:title "Determining a Proper Initial Configuration of Red-Black Planning by Machine Learning" ;
+    ns5:endPage 52 ;
+    ns5:numPages 2 ;
+    ns5:section <http://ceur-ws.org/Vol-1201/#Abstracts> ;
+    ns5:startPage 51 ;
+    ns1:author <http://ceur-ws.org/Vol-1201/#OtakariTrunda>,
+        <http://ceur-ws.org/Vol-1201/#RomaniBartak> .
+
+<http://ceur-ws.org/Vol-1201/#paper-14> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1201/> ;
+    ns3:title "Model Selection in Data Analysis Competitions" ;
+    ns5:endPage 60 ;
+    ns5:numPages 6 ;
+    ns5:section <http://ceur-ws.org/Vol-1201/#Abstracts> ;
+    ns5:startPage 55 ;
+    ns1:author <http://ceur-ws.org/Vol-1201/#DavidiKofoediWind>,
+        <http://ceur-ws.org/Vol-1201/#OleiWinther> .
+
+<http://ceur-ws.org/Vol-1201/#Abstracts> a ns6:SessionEvent ;
+    ns6:partOf <http://ceur-ws.org/Vol-1201/> ;
+    ns3:title "Abstracts" .
+
+<http://ceur-ws.org/Vol-1201/#paper-03> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1201/> ;
+    ns3:title "Using Meta-Learning to Initialize Bayesian Optimization of Hyperparameters" ;
+    ns5:endPage 10 ;
+    ns5:numPages 8 ;
+    ns5:section <http://ceur-ws.org/Vol-1201/#TechnicalPapers> ;
+    ns5:startPage 3 ;
+    ns1:author <http://ceur-ws.org/Vol-1201/#FrankiHutter>,
+        <http://ceur-ws.org/Vol-1201/#MatthiasiFeurer>,
+        <http://ceur-ws.org/Vol-1201/#TobiasiSpringenberg> .
+
+<http://ceur-ws.org/Vol-1201/#paper-07> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1201/> ;
+    ns3:title "A Framework To Decompose And Develop Metafeatures" ;
+    ns5:endPage 36 ;
+    ns5:numPages 5 ;
+    ns5:section <http://ceur-ws.org/Vol-1201/#TechnicalPapers> ;
+    ns5:startPage 32 ;
+    ns1:author <http://ceur-ws.org/Vol-1201/#CarlosiSoares>,
+        <http://ceur-ws.org/Vol-1201/#FabioiPinto>,
+        <http://ceur-ws.org/Vol-1201/#JoaoiMendes-Moreira> .
+
+<http://ceur-ws.org/Vol-1201/#paper-06> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1201/> ;
+    ns3:title "Surrogate Benchmarks for Hyperparameter Optimization" ;
+    ns5:endPage 31 ;
+    ns5:numPages 8 ;
+    ns5:section <http://ceur-ws.org/Vol-1201/#TechnicalPapers> ;
+    ns5:startPage 24 ;
+    ns1:author <http://ceur-ws.org/Vol-1201/#FrankiHutter>,
+        <http://ceur-ws.org/Vol-1201/#HolgeriHoos>,
+        <http://ceur-ws.org/Vol-1201/#KatharinaiEggensperger>,
+        <http://ceur-ws.org/Vol-1201/#KeviniLeyton-Brown> .
+
+<http://ceur-ws.org/Vol-1201/#paper-08> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1201/> ;
+    ns3:title "Towards Meta-learning over Data Streams" ;
+    ns5:endPage 38 ;
+    ns5:numPages 2 ;
+    ns5:section <http://ceur-ws.org/Vol-1201/#TechnicalPapers> ;
+    ns5:startPage 37 ;
+    ns1:author <http://ceur-ws.org/Vol-1201/#BernhardiPfahringer>,
+        <http://ceur-ws.org/Vol-1201/#GeoffreyiHolmes>,
+        <http://ceur-ws.org/Vol-1201/#JanivaniRijn>,
+        <http://ceur-ws.org/Vol-1201/#JoaquiniVanschoren> .
+
+<http://ceur-ws.org/Vol-1201/#paper-09> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1201/> ;
+    ns3:title "Recommending Learning Algorithms and Their Associated Hyperparameters" ;
+    ns5:endPage 40 ;
+    ns5:numPages 2 ;
+    ns5:section <http://ceur-ws.org/Vol-1201/#TechnicalPapers> ;
+    ns5:startPage 39 ;
+    ns1:author <http://ceur-ws.org/Vol-1201/#ChristopheiGiraud-Carrier>,
+        <http://ceur-ws.org/Vol-1201/#LoganiMitchell>,
+        <http://ceur-ws.org/Vol-1201/#MichaeliSmith>,
+        <http://ceur-ws.org/Vol-1201/#TonyiMartinez> .
+
+<http://ceur-ws.org/Vol-1201/#paper-10> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1201/> ;
+    ns3:title "An Easy to Use Repository for Comparing and Improving Machine Learning Algorithm Usage" ;
+    ns5:endPage 48 ;
+    ns5:numPages 8 ;
+    ns5:section <http://ceur-ws.org/Vol-1201/#TechnicalPapers> ;
+    ns5:startPage 41 ;
+    ns1:author <http://ceur-ws.org/Vol-1201/#AndrewiWhite>,
+        <http://ceur-ws.org/Vol-1201/#ChristopheiGiraud-Carrier>,
+        <http://ceur-ws.org/Vol-1201/#MichaeliSmith>,
+        <http://ceur-ws.org/Vol-1201/#TonyiMartinez> .
+
+<http://ceur-ws.org/Vol-1201/#paper-13> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1201/> ;
+    ns3:title "Hybrid Multi-Agent System for Metalearning in Data Mining" ;
+    ns5:endPage 54 ;
+    ns5:numPages 2 ;
+    ns5:section <http://ceur-ws.org/Vol-1201/#Abstracts> ;
+    ns5:startPage 53 ;
+    ns1:author <http://ceur-ws.org/Vol-1201/#JakubiSmid>,
+        <http://ceur-ws.org/Vol-1201/#KlaraiPeskova>,
+        <http://ceur-ws.org/Vol-1201/#MartiniPilat>,
+        <http://ceur-ws.org/Vol-1201/#OndrejiKazik>,
+        <http://ceur-ws.org/Vol-1201/#RomaniNeruda> .
+
+<http://ceur-ws.org/Vol-1201/#TechnicalPapers> a ns6:SessionEvent ;
+    ns6:partOf <http://ceur-ws.org/Vol-1201/> ;
+    ns3:title "Technical Papers" .
+
+<http://ceur-ws.org/Vol-1201/> a ns6:Proceedings ;
+    ns6:hasPart <http://ceur-ws.org/Vol-1201/#paper-01>,
+        <http://ceur-ws.org/Vol-1201/#paper-02>,
+        <http://ceur-ws.org/Vol-1201/#paper-03>,
+        <http://ceur-ws.org/Vol-1201/#paper-04>,
+        <http://ceur-ws.org/Vol-1201/#paper-05>,
+        <http://ceur-ws.org/Vol-1201/#paper-06>,
+        <http://ceur-ws.org/Vol-1201/#paper-07>,
+        <http://ceur-ws.org/Vol-1201/#paper-08>,
+        <http://ceur-ws.org/Vol-1201/#paper-09>,
+        <http://ceur-ws.org/Vol-1201/#paper-10>,
+        <http://ceur-ws.org/Vol-1201/#paper-11>,
+        <http://ceur-ws.org/Vol-1201/#paper-12>,
+        <http://ceur-ws.org/Vol-1201/#paper-13>,
+        <http://ceur-ws.org/Vol-1201/#paper-14> ;
+    ns6:hasSession <http://ceur-ws.org/Vol-1201/#Abstracts>,
+        <http://ceur-ws.org/Vol-1201/#InvitedTalkAbstracts>,
+        <http://ceur-ws.org/Vol-1201/#TechnicalPapers> ;
+    ns9:issued "2014-08-03T00:00:00+00:00"^^xsd:dateTime ;
+    ns5:presentedAt <http://ceur-ws.org/Vol-1201/#event> ;
+    ns1:editor <http://ceur-ws.org/Vol-1201/#CarlosiSoares>,
         <http://ceur-ws.org/Vol-1201/#JoaquiniVanschoren>,
         <http://ceur-ws.org/Vol-1201/#LarsiKotthoff>,
         <http://ceur-ws.org/Vol-1201/#PaveliBrazdil> .
-
-<http://ceur-ws.org/Vol-1201/#CarlosiSoares> a ns5:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/CarlosiSoares> ;
-    ns5:name "Carlos Soares" .
-
-<http://ceur-ws.org/Vol-1201/#JoaquiniVanschoren> a ns5:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/JoaquiniVanschoren> ;
-    ns5:name "Joaquin Vanschoren" .
-
-<http://ceur-ws.org/Vol-1201/#LarsiKotthoff> a ns5:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/LarsiKotthoff> ;
-    ns5:name "Lars Kotthoff" .
-
-<http://ceur-ws.org/Vol-1201/#PaveliBrazdil> a ns5:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/PaveliBrazdil> ;
-    ns5:name "Pavel Brazdil" .
-
-<http://ceur-ws.org/Vol-1201/#event> a ns1:WorkshopEvent ;
-    ns1:hasLocation <http://dbpedia.org/resource/Czech_Republic> ;
-    ns1:hasPart <http://ceur-ws.org/Vol-1201/#part-ws> ;
-    ns1:isSubEventOf <http://ceur-ws.org/Vol-1201/#conf> ;
-    ns3:beginsAtDatetime "2014-08-19T00:00:00+00:00"^^xsd:dateTime ;
-    ns3:endsAtDatetime "2014-08-19T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:license "http://choosealicense.com/licenses/no-license/" .
 

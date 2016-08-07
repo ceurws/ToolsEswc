@@ -1,35 +1,259 @@
-@prefix ns1: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns2: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns3: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns4: <http://xmlns.com/foaf/0.1/> .
-@prefix ns5: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns6: <http://www.w3.org/2002/07/owl#> .
-@prefix ns7: <http://purl.org/dc/elements/1.1/> .
-@prefix ns8: <http://purl.org/ontology/bibo/#> .
+@prefix ns1: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns2: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns3: <http://xmlns.com/foaf/0.1/> .
+@prefix ns4: <http://purl.org/ontology/bibo/#> .
+@prefix ns5: <http://www.w3.org/2002/07/owl#> .
+@prefix ns6: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns9: <http://purl.org/dc/elements/1.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-878/> a ns2:Proceedings ;
-    ns3:issued "2012-07-30T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:presentedAt <http://ceur-ws.org/Vol-878/#event> ;
-    ns5:editor <http://ceur-ws.org/Vol-878/#DavidiPichardie>,
-        <http://ceur-ws.org/Vol-878/#TjarkiWeber> .
+<http://ceur-ws.org/Vol-878/#AaroniStump> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/AaroniStump> ;
+    ns3:made <http://ceur-ws.org/Vol-878/#paper1> ;
+    ns3:name "Aaron Stump" .
 
-<http://ceur-ws.org/Vol-878/#DavidiPichardie> a ns4:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/DavidiPichardie> ;
-    ns4:name "David Pichardie" .
+<http://ceur-ws.org/Vol-878/#AlexanderiLeitsch> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/AlexanderiLeitsch> ;
+    ns3:made <http://ceur-ws.org/Vol-878/#paper4> ;
+    ns3:name "Alexander Leitsch" .
 
-<http://ceur-ws.org/Vol-878/#TjarkiWeber> a ns4:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/TjarkiWeber> ;
-    ns4:name "Tjark Weber" .
+<http://ceur-ws.org/Vol-878/#AndrewiReynolds> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/AndrewiReynolds> ;
+    ns3:made <http://ceur-ws.org/Vol-878/#paper1> ;
+    ns3:name "Andrew Reynolds" .
 
-<http://ceur-ws.org/Vol-878/#event> a ns2:WorkshopEvent ;
-    ns2:hasLocation <http://dbpedia.org/resource/United_Kingdom> ;
-    ns2:hasPart <http://ceur-ws.org/Vol-878/#part-CEUR-WS> ;
-    ns2:isSubEventOf <http://ceur-ws.org/Vol-878/#conf> ;
-    ns1:beginsAtDatetime "2012-06-30T00:00:00+00:00"^^xsd:dateTime ;
-    ns1:endsAtDatetime "2012-06-30T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:license "http://choosealicense.com/licenses/no-license/" .
+<http://ceur-ws.org/Vol-878/#AustiniLaugesen> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/AustiniLaugesen> ;
+    ns3:made <http://ceur-ws.org/Vol-878/#paper1> ;
+    ns3:name "Austin Laugesen" .
+
+<http://ceur-ws.org/Vol-878/#BrunoiWoltzenlogel-Paleo> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/BrunoiWoltzenlogel-Paleo> ;
+    ns3:made <http://ceur-ws.org/Vol-878/#paper4> ;
+    ns3:name "Bruno Woltzenlogel-Paleo" .
+
+<http://ceur-ws.org/Vol-878/#CesareiTinelli> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/CesareiTinelli> ;
+    ns3:made <http://ceur-ws.org/Vol-878/#paper1> ;
+    ns3:name "Cesare Tinelli" .
+
+<http://ceur-ws.org/Vol-878/#CoreyiOliver> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/CoreyiOliver> ;
+    ns3:made <http://ceur-ws.org/Vol-878/#paper1> ;
+    ns3:name "Corey Oliver" .
+
+<http://ceur-ws.org/Vol-878/#CvetaniDunchev> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/CvetaniDunchev> ;
+    ns3:made <http://ceur-ws.org/Vol-878/#paper4> ;
+    ns3:name "Cvetan Dunchev" .
+
+<http://ceur-ws.org/Vol-878/#DanieliWeller> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/DanieliWeller> ;
+    ns3:made <http://ceur-ws.org/Vol-878/#paper4> ;
+    ns3:name "Daniel Weller" .
+
+<http://ceur-ws.org/Vol-878/#DavidiPichardie> a ns3:Person ;
+    ns2:affiliation "" ;
+    ns5:sameAs <http://ceur-ws.org/persons/DavidiPichardie> ;
+    ns3:name "David Pichardie" .
+
+<http://ceur-ws.org/Vol-878/#Fr%C3%A9d%C3%A9riciBesson> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/Fr%C3%A9d%C3%A9riciBesson> ;
+    ns3:made <http://ceur-ws.org/Vol-878/#paper5> ;
+    ns3:name "Frédéric Besson" .
+
+<http://ceur-ws.org/Vol-878/#GuillaumeiBurel> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/GuillaumeiBurel> ;
+    ns3:made <http://ceur-ws.org/Vol-878/#paper3> ;
+    ns3:name "Guillaume Burel" .
+
+<http://ceur-ws.org/Vol-878/#HarleyiEades> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/HarleyiEades> ;
+    ns3:made <http://ceur-ws.org/Vol-878/#paper1> ;
+    ns3:name "Harley Eades" .
+
+<http://ceur-ws.org/Vol-878/#MartiniRiener> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/MartiniRiener> ;
+    ns3:made <http://ceur-ws.org/Vol-878/#paper4> ;
+    ns3:name "Martin Riener" .
+
+<http://ceur-ws.org/Vol-878/#MikheiliRukhaia> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/MikheiliRukhaia> ;
+    ns3:made <http://ceur-ws.org/Vol-878/#paper4> ;
+    ns3:name "Mikheil Rukhaia" .
+
+<http://ceur-ws.org/Vol-878/#OlivieriHermant> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/OlivieriHermant> ;
+    ns3:made <http://ceur-ws.org/Vol-878/#paper2> ;
+    ns3:name "Olivier Hermant" .
+
+<http://ceur-ws.org/Vol-878/#Pierre-EmmanueliCornilleau> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/Pierre-EmmanueliCornilleau> ;
+    ns3:made <http://ceur-ws.org/Vol-878/#paper5> ;
+    ns3:name "Pierre-Emmanuel Cornilleau" .
+
+<http://ceur-ws.org/Vol-878/#QuentiniCarbonneaux> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/QuentiniCarbonneaux> ;
+    ns3:made <http://ceur-ws.org/Vol-878/#paper2> ;
+    ns3:name "Quentin Carbonneaux" .
+
+<http://ceur-ws.org/Vol-878/#RobertiL.iConstable> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/RobertiL.iConstable> ;
+    ns3:made <http://ceur-ws.org/Vol-878/#invited1> ;
+    ns3:name "Robert L. Constable" .
+
+<http://ceur-ws.org/Vol-878/#RonaniSaillard> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/RonaniSaillard> ;
+    ns3:made <http://ceur-ws.org/Vol-878/#paper5> ;
+    ns3:name "Ronan Saillard" .
+
+<http://ceur-ws.org/Vol-878/#RuoyuiZhang> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/RuoyuiZhang> ;
+    ns3:made <http://ceur-ws.org/Vol-878/#paper1> ;
+    ns3:name "Ruoyu Zhang" .
+
+<http://ceur-ws.org/Vol-878/#StephaniMerz> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/StephaniMerz> ;
+    ns3:made <http://ceur-ws.org/Vol-878/#invited2> ;
+    ns3:name "Stephan Merz" .
+
+<http://ceur-ws.org/Vol-878/#TomeriLibal> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/TomeriLibal> ;
+    ns3:made <http://ceur-ws.org/Vol-878/#paper4> ;
+    ns3:name "Tomer Libal" .
+
+<http://ceur-ws.org/Vol-878/#event> a ns1:WorkshopEvent ;
+    ns1:hasLocation <http://dbpedia.org/resource/United_Kingdom> ;
+    ns1:hasPart <http://ceur-ws.org/Vol-878/#part-PxTP> ;
+    ns1:isSubEventOf <http://ceur-ws.org/Vol-878/#conf> ;
+    ns8:beginsAtDatetime "2012-06-30T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:endsAtDatetime "2012-06-30T00:00:00+00:00"^^xsd:dateTime ;
+    ns9:license "http://choosealicense.com/licenses/no-license/" .
+
+<http://ceur-ws.org/Vol-878/#30-Jul-2012%3AisubmittedibyiTjarkiWeber> a ns3:Person ;
+    ns2:affiliation "" ;
+    ns5:sameAs <http://ceur-ws.org/persons/30-Jul-2012%3AisubmittedibyiTjarkiWeber> ;
+    ns3:made <http://ceur-ws.org/Vol-878/#paperX1> ;
+    ns3:name "30-Jul-2012: submitted by Tjark Weber" .
+
+<http://ceur-ws.org/Vol-878/#MathieuiBoespflug> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/MathieuiBoespflug> ;
+    ns3:made <http://ceur-ws.org/Vol-878/#paper2>,
+        <http://ceur-ws.org/Vol-878/#paper3> ;
+    ns3:name "Mathieu Boespflug" .
+
+<http://ceur-ws.org/Vol-878/#invited1> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-878/> ;
+    ns6:title "Proof Assistants and the Dynamic Nature of Formal Theories" ;
+    ns4:section <http://ceur-ws.org/Vol-878/#InvitedTalks> ;
+    ns2:author <http://ceur-ws.org/Vol-878/#RobertiL.iConstable> .
+
+<http://ceur-ws.org/Vol-878/#invited2> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-878/> ;
+    ns6:title "Proofs and Proof Certification in the TLA" ;
+    ns4:endPage 15 ;
+    ns4:numPages 15 ;
+    ns4:section <http://ceur-ws.org/Vol-878/#InvitedTalks> ;
+    ns4:startPage 1 ;
+    ns2:author <http://ceur-ws.org/Vol-878/#StephaniMerz> .
+
+<http://ceur-ws.org/Vol-878/#paperX1> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-878/> ;
+    ns6:title "The whole proceedings can also be downloaded as a single file (" ;
+    ns4:endPage 64 ;
+    ns4:numPages 7 ;
+    ns4:section <http://ceur-ws.org/Vol-878/#ContributedPapers> ;
+    ns4:startPage 58 ;
+    ns2:author <http://ceur-ws.org/Vol-878/#30-Jul-2012%3AisubmittedibyiTjarkiWeber> .
+
+<http://ceur-ws.org/Vol-878/#InvitedTalks> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-878/> ;
+    ns6:title "Invited Talks" .
+
+<http://ceur-ws.org/Vol-878/#paper3> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-878/> ;
+    ns6:title "CoqInE: Translating the Calculus of Inductive Constructions into the λΠ-calculus Modulo" ;
+    ns4:endPage 43 ;
+    ns4:numPages 16 ;
+    ns4:section <http://ceur-ws.org/Vol-878/#ContributedPapers> ;
+    ns4:startPage 28 ;
+    ns2:author <http://ceur-ws.org/Vol-878/#GuillaumeiBurel>,
+        <http://ceur-ws.org/Vol-878/#MathieuiBoespflug> .
+
+<http://ceur-ws.org/Vol-878/#paper2> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-878/> ;
+    ns6:title "The λΠ-calculus Modulo as a Universal Proof Language" ;
+    ns4:endPage 27 ;
+    ns4:numPages 7 ;
+    ns4:section <http://ceur-ws.org/Vol-878/#ContributedPapers> ;
+    ns4:startPage 21 ;
+    ns2:author <http://ceur-ws.org/Vol-878/#MathieuiBoespflug>,
+        <http://ceur-ws.org/Vol-878/#OlivieriHermant>,
+        <http://ceur-ws.org/Vol-878/#QuentiniCarbonneaux> .
+
+<http://ceur-ws.org/Vol-878/#paper5> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-878/> ;
+    ns6:title "Walking through the Forest: Fast EUF Proof-Checking Algorithms" ;
+    ns4:endPage 57 ;
+    ns4:numPages 7 ;
+    ns4:section <http://ceur-ws.org/Vol-878/#ContributedPapers> ;
+    ns4:startPage 51 ;
+    ns2:author <http://ceur-ws.org/Vol-878/#Fr%C3%A9d%C3%A9riciBesson>,
+        <http://ceur-ws.org/Vol-878/#Pierre-EmmanueliCornilleau>,
+        <http://ceur-ws.org/Vol-878/#RonaniSaillard> .
+
+<http://ceur-ws.org/Vol-878/#ContributedPapers> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-878/> ;
+    ns6:title "Contributed Papers" .
+
+<http://ceur-ws.org/Vol-878/#paper1> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-878/> ;
+    ns6:title "LFSC for SMT Proofs: Work in Progress" ;
+    ns4:endPage 20 ;
+    ns4:numPages 5 ;
+    ns4:section <http://ceur-ws.org/Vol-878/#ContributedPapers> ;
+    ns4:startPage 16 ;
+    ns2:author <http://ceur-ws.org/Vol-878/#AaroniStump>,
+        <http://ceur-ws.org/Vol-878/#AndrewiReynolds>,
+        <http://ceur-ws.org/Vol-878/#AustiniLaugesen>,
+        <http://ceur-ws.org/Vol-878/#CesareiTinelli>,
+        <http://ceur-ws.org/Vol-878/#CoreyiOliver>,
+        <http://ceur-ws.org/Vol-878/#HarleyiEades>,
+        <http://ceur-ws.org/Vol-878/#RuoyuiZhang> .
+
+<http://ceur-ws.org/Vol-878/#paper4> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-878/> ;
+    ns6:title "System Feature Description: Importing Refutations into the GAPT Framework" ;
+    ns4:endPage 50 ;
+    ns4:numPages 7 ;
+    ns4:section <http://ceur-ws.org/Vol-878/#ContributedPapers> ;
+    ns4:startPage 44 ;
+    ns2:author <http://ceur-ws.org/Vol-878/#AlexanderiLeitsch>,
+        <http://ceur-ws.org/Vol-878/#BrunoiWoltzenlogel-Paleo>,
+        <http://ceur-ws.org/Vol-878/#CvetaniDunchev>,
+        <http://ceur-ws.org/Vol-878/#DanieliWeller>,
+        <http://ceur-ws.org/Vol-878/#MartiniRiener>,
+        <http://ceur-ws.org/Vol-878/#MikheiliRukhaia>,
+        <http://ceur-ws.org/Vol-878/#TomeriLibal> .
+
+<http://ceur-ws.org/Vol-878/> a ns1:Proceedings ;
+    ns1:hasPart <http://ceur-ws.org/Vol-878/#invited1>,
+        <http://ceur-ws.org/Vol-878/#invited2>,
+        <http://ceur-ws.org/Vol-878/#paper1>,
+        <http://ceur-ws.org/Vol-878/#paper2>,
+        <http://ceur-ws.org/Vol-878/#paper3>,
+        <http://ceur-ws.org/Vol-878/#paper4>,
+        <http://ceur-ws.org/Vol-878/#paper5>,
+        <http://ceur-ws.org/Vol-878/#paperX1> ;
+    ns1:hasSession <http://ceur-ws.org/Vol-878/#ContributedPapers>,
+        <http://ceur-ws.org/Vol-878/#InvitedTalks> ;
+    ns7:issued "2012-07-30T00:00:00+00:00"^^xsd:dateTime ;
+    ns4:presentedAt <http://ceur-ws.org/Vol-878/#event> ;
+    ns2:editor <http://ceur-ws.org/Vol-878/#30-Jul-2012%3AisubmittedibyiTjarkiWeber>,
+        <http://ceur-ws.org/Vol-878/#DavidiPichardie> .
 

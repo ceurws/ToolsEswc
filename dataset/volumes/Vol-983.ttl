@@ -1,50 +1,232 @@
-@prefix ns1: <http://www.w3.org/2002/07/owl#> .
-@prefix ns2: <http://xmlns.com/foaf/0.1/> .
-@prefix ns3: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns4: <http://purl.org/dc/elements/1.1/> .
-@prefix ns5: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns6: <http://purl.org/ontology/bibo/#> .
-@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns1: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns2: <http://www.w3.org/2002/07/owl#> .
+@prefix ns3: <http://xmlns.com/foaf/0.1/> .
+@prefix ns4: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns5: <http://purl.org/ontology/bibo/#> .
+@prefix ns6: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns8: <http://purl.org/dc/elements/1.1/> .
+@prefix ns9: <http://purl.org/NET/c4dm/timeline.owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-983/> a ns5:Proceedings ;
-    ns8:issued "2013-05-31T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:presentedAt <http://ceur-ws.org/Vol-983/#event> ;
-    ns3:editor <http://ceur-ws.org/Vol-983/#KonstantinosiChorianopoulos>,
+<http://ceur-ws.org/Vol-983/#CaioiC.iViel> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/CaioiC.iViel> ;
+    ns3:made <http://ceur-ws.org/Vol-983/#paper8> ;
+    ns3:name "Caio C. Viel" .
+
+<http://ceur-ws.org/Vol-983/#CarloiFonda> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/CarloiFonda> ;
+    ns3:made <http://ceur-ws.org/Vol-983/#paper7> ;
+    ns3:name "Carlo Fonda" .
+
+<http://ceur-ws.org/Vol-983/#CesariA.iC.iTeixeira> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/CesariA.iC.iTeixeira> ;
+    ns3:made <http://ceur-ws.org/Vol-983/#paper8> ;
+    ns3:name "Cesar A. C. Teixeira" .
+
+<http://ceur-ws.org/Vol-983/#ChristinaiIlioudi> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/ChristinaiIlioudi> ;
+    ns3:made <http://ceur-ws.org/Vol-983/#paper5> ;
+    ns3:name "Christina Ilioudi" .
+
+<http://ceur-ws.org/Vol-983/#ChristopheriBrooks> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/ChristopheriBrooks> ;
+    ns3:made <http://ceur-ws.org/Vol-983/#paper3> ;
+    ns3:name "Christopher Brooks" .
+
+<http://ceur-ws.org/Vol-983/#CraigiThompson> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/CraigiThompson> ;
+    ns3:made <http://ceur-ws.org/Vol-983/#paper3> ;
+    ns3:name "Craig Thompson" .
+
+<http://ceur-ws.org/Vol-983/#DavidiGeerts> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/DavidiGeerts> ;
+    ns3:made <http://ceur-ws.org/Vol-983/#paper6> ;
+    ns3:name "David Geerts" .
+
+<http://ceur-ws.org/Vol-983/#EnriqueiCanessa> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/EnriqueiCanessa> ;
+    ns3:made <http://ceur-ws.org/Vol-983/#paper7> ;
+    ns3:name "Enrique Canessa" .
+
+<http://ceur-ws.org/Vol-983/#ErickiL.iMelo> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/ErickiL.iMelo> ;
+    ns3:made <http://ceur-ws.org/Vol-983/#paper8> ;
+    ns3:name "Erick L. Melo" .
+
+<http://ceur-ws.org/Vol-983/#GeorgeiSiemens> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/GeorgeiSiemens> ;
+    ns3:made <http://ceur-ws.org/Vol-983/#paper2> ;
+    ns3:name "George Siemens" .
+
+<http://ceur-ws.org/Vol-983/#JimiGreer> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/JimiGreer> ;
+    ns3:made <http://ceur-ws.org/Vol-983/#paper3> ;
+    ns3:name "Jim Greer" .
+
+<http://ceur-ws.org/Vol-983/#LivioiTenze> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/LivioiTenze> ;
+    ns3:made <http://ceur-ws.org/Vol-983/#paper7> ;
+    ns3:name "Livio Tenze" .
+
+<http://ceur-ws.org/Vol-983/#MarcoiZennaro> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/MarcoiZennaro> ;
+    ns3:made <http://ceur-ws.org/Vol-983/#paper7> ;
+    ns3:name "Marco Zennaro" .
+
+<http://ceur-ws.org/Vol-983/#MariaiG.iPimentel> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/MariaiG.iPimentel> ;
+    ns3:made <http://ceur-ws.org/Vol-983/#paper8> ;
+    ns3:name "Maria G. Pimentel" .
+
+<http://ceur-ws.org/Vol-983/#event> a ns6:WorkshopEvent ;
+    ns6:hasLocation <http://dbpedia.org/resource/Euro_gold_and_silver_commemorative_coins> ;
+    ns6:hasPart <http://ceur-ws.org/Vol-983/#part-WAVe> ;
+    ns6:isSubEventOf <http://ceur-ws.org/Vol-983/#conf> ;
+    ns9:beginsAtDatetime "2013-04-08T00:00:00+00:00"^^xsd:dateTime ;
+    ns9:endsAtDatetime "2013-04-08T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:license "http://choosealicense.com/licenses/no-license/" .
+
+<http://ceur-ws.org/Vol-983/#PeteriSzegedi> a ns3:Person ;
+    ns1:affiliation "" ;
+    ns2:sameAs <http://ceur-ws.org/persons/PeteriSzegedi> ;
+    ns3:made <http://ceur-ws.org/Vol-983/#paper1> ;
+    ns3:name "Peter Szegedi" .
+
+<http://ceur-ws.org/Vol-983/#StephanieiTeasley> a ns3:Person ;
+    ns1:affiliation "" ;
+    ns2:sameAs <http://ceur-ws.org/persons/StephanieiTeasley> ;
+    ns3:made <http://ceur-ws.org/Vol-983/#paper1> ;
+    ns3:name "Stephanie Teasley" .
+
+<http://ceur-ws.org/Vol-983/#paper2> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-983/> ;
+    ns4:title "Learning Analytics: Sensemaking as a Foundation for the Field" ;
+    ns5:endPage 8 ;
+    ns5:numPages 2 ;
+    ns5:startPage 7 ;
+    ns1:author <http://ceur-ws.org/Vol-983/#GeorgeiSiemens> .
+
+<http://ceur-ws.org/Vol-983/#paper4> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-983/> ;
+    ns4:title "Videolectures Ingredients that can Make Analytics Effective" ;
+    ns5:endPage 20 ;
+    ns5:numPages 6 ;
+    ns5:startPage 15 ;
+    ns1:author <http://ceur-ws.org/Vol-983/#MarcoiRonchetti> .
+
+<http://ceur-ws.org/Vol-983/#paper6> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-983/> ;
+    ns4:title "Social Interaction Design for Online Video" ;
+    ns5:endPage 28 ;
+    ns5:numPages 2 ;
+    ns5:startPage 27 ;
+    ns1:author <http://ceur-ws.org/Vol-983/#DavidiGeerts> .
+
+<http://ceur-ws.org/Vol-983/#MarcoiRonchetti> a ns3:Person ;
+    ns1:affiliation "" ;
+    ns2:sameAs <http://ceur-ws.org/persons/MarcoiRonchetti> ;
+    ns3:made <http://ceur-ws.org/Vol-983/#paper1>,
+        <http://ceur-ws.org/Vol-983/#paper4> ;
+    ns3:name "Marco Ronchetti" .
+
+<http://ceur-ws.org/Vol-983/#paper9> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-983/> ;
+    ns4:title "Merging Learner Performance with Browsing Behavior in Video Lectures" ;
+    ns5:endPage 42 ;
+    ns5:numPages 5 ;
+    ns5:startPage 38 ;
+    ns1:author <http://ceur-ws.org/Vol-983/#KonstantinosiChorianopoulos>,
+        <http://ceur-ws.org/Vol-983/#MichailiN.iGiannakos> .
+
+<http://ceur-ws.org/Vol-983/#KonstantinosiChorianopoulos> a ns3:Person ;
+    ns1:affiliation "" ;
+    ns2:sameAs <http://ceur-ws.org/persons/KonstantinosiChorianopoulos> ;
+    ns3:made <http://ceur-ws.org/Vol-983/#paper1>,
+        <http://ceur-ws.org/Vol-983/#paper5>,
+        <http://ceur-ws.org/Vol-983/#paper9> ;
+    ns3:name "Konstantinos Chorianopoulos" .
+
+<http://ceur-ws.org/Vol-983/#MichailiN.iGiannakos> a ns3:Person ;
+    ns1:affiliation "" ;
+    ns2:sameAs <http://ceur-ws.org/persons/MichailiN.iGiannakos> ;
+    ns3:made <http://ceur-ws.org/Vol-983/#paper1>,
+        <http://ceur-ws.org/Vol-983/#paper5>,
+        <http://ceur-ws.org/Vol-983/#paper9> ;
+    ns3:name "Michail N. Giannakos" .
+
+<http://ceur-ws.org/Vol-983/#paper3> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-983/> ;
+    ns4:title "Visualizing Lecture Capture Usage: A Learning Analytics Case Study" ;
+    ns5:endPage 14 ;
+    ns5:numPages 6 ;
+    ns5:startPage 9 ;
+    ns1:author <http://ceur-ws.org/Vol-983/#ChristopheriBrooks>,
+        <http://ceur-ws.org/Vol-983/#CraigiThompson>,
+        <http://ceur-ws.org/Vol-983/#JimiGreer> .
+
+<http://ceur-ws.org/Vol-983/#paper5> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-983/> ;
+    ns4:title "Investigating Differences Among the Common Used Video Lecture Types" ;
+    ns5:endPage 26 ;
+    ns5:numPages 6 ;
+    ns5:startPage 21 ;
+    ns1:author <http://ceur-ws.org/Vol-983/#ChristinaiIlioudi>,
+        <http://ceur-ws.org/Vol-983/#KonstantinosiChorianopoulos>,
+        <http://ceur-ws.org/Vol-983/#MichailiN.iGiannakos> .
+
+<http://ceur-ws.org/Vol-983/#paper7> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-983/> ;
+    ns4:title "Apps for Synchronized Photo-Audio Recordings to Support Students" ;
+    ns5:endPage 33 ;
+    ns5:numPages 5 ;
+    ns5:startPage 29 ;
+    ns1:author <http://ceur-ws.org/Vol-983/#CarloiFonda>,
+        <http://ceur-ws.org/Vol-983/#EnriqueiCanessa>,
+        <http://ceur-ws.org/Vol-983/#LivioiTenze>,
+        <http://ceur-ws.org/Vol-983/#MarcoiZennaro> .
+
+<http://ceur-ws.org/Vol-983/#paper8> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-983/> ;
+    ns4:title "Presentations Preserved as Interactive Multi-video Objects" ;
+    ns5:endPage 37 ;
+    ns5:numPages 4 ;
+    ns5:startPage 34 ;
+    ns1:author <http://ceur-ws.org/Vol-983/#CaioiC.iViel>,
+        <http://ceur-ws.org/Vol-983/#CesariA.iC.iTeixeira>,
+        <http://ceur-ws.org/Vol-983/#ErickiL.iMelo>,
+        <http://ceur-ws.org/Vol-983/#MariaiG.iPimentel> .
+
+<http://ceur-ws.org/Vol-983/#paper1> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-983/> ;
+    ns4:title "Expanding Horizons and Envisioning the Future of Analytics on Video-Based Learning" ;
+    ns5:endPage 6 ;
+    ns5:numPages 6 ;
+    ns5:startPage 1 ;
+    ns1:author <http://ceur-ws.org/Vol-983/#KonstantinosiChorianopoulos>,
         <http://ceur-ws.org/Vol-983/#MarcoiRonchetti>,
         <http://ceur-ws.org/Vol-983/#MichailiN.iGiannakos>,
         <http://ceur-ws.org/Vol-983/#PeteriSzegedi>,
         <http://ceur-ws.org/Vol-983/#StephanieiTeasley> .
 
-<http://ceur-ws.org/Vol-983/#KonstantinosiChorianopoulos> a ns2:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/KonstantinosiChorianopoulos> ;
-    ns2:name "Konstantinos Chorianopoulos" .
-
-<http://ceur-ws.org/Vol-983/#MarcoiRonchetti> a ns2:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/MarcoiRonchetti> ;
-    ns2:name "Marco Ronchetti" .
-
-<http://ceur-ws.org/Vol-983/#MichailiN.iGiannakos> a ns2:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/MichailiN.iGiannakos> ;
-    ns2:name "Michail N. Giannakos" .
-
-<http://ceur-ws.org/Vol-983/#PeteriSzegedi> a ns2:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/PeteriSzegedi> ;
-    ns2:name "Peter Szegedi" .
-
-<http://ceur-ws.org/Vol-983/#StephanieiTeasley> a ns2:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/StephanieiTeasley> ;
-    ns2:name "Stephanie Teasley" .
-
-<http://ceur-ws.org/Vol-983/#event> a ns5:WorkshopEvent ;
-    ns5:hasLocation <http://dbpedia.org/resource/Euro_gold_and_silver_commemorative_coins> ;
-    ns5:hasPart <http://ceur-ws.org/Vol-983/#part-CEUR-WS> ;
-    ns5:isSubEventOf <http://ceur-ws.org/Vol-983/#conf> ;
-    ns7:beginsAtDatetime "2013-04-08T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:endsAtDatetime "2013-04-08T00:00:00+00:00"^^xsd:dateTime ;
-    ns4:license "http://choosealicense.com/licenses/no-license/" .
+<http://ceur-ws.org/Vol-983/> a ns6:Proceedings ;
+    ns6:hasPart <http://ceur-ws.org/Vol-983/#paper1>,
+        <http://ceur-ws.org/Vol-983/#paper2>,
+        <http://ceur-ws.org/Vol-983/#paper3>,
+        <http://ceur-ws.org/Vol-983/#paper4>,
+        <http://ceur-ws.org/Vol-983/#paper5>,
+        <http://ceur-ws.org/Vol-983/#paper6>,
+        <http://ceur-ws.org/Vol-983/#paper7>,
+        <http://ceur-ws.org/Vol-983/#paper8>,
+        <http://ceur-ws.org/Vol-983/#paper9> ;
+    ns7:issued "2013-05-31T00:00:00+00:00"^^xsd:dateTime ;
+    ns5:presentedAt <http://ceur-ws.org/Vol-983/#event> ;
+    ns1:editor <http://ceur-ws.org/Vol-983/#KonstantinosiChorianopoulos>,
+        <http://ceur-ws.org/Vol-983/#MarcoiRonchetti>,
+        <http://ceur-ws.org/Vol-983/#MichailiN.iGiannakos>,
+        <http://ceur-ws.org/Vol-983/#PeteriSzegedi>,
+        <http://ceur-ws.org/Vol-983/#StephanieiTeasley> .
 

@@ -1,35 +1,267 @@
 @prefix ns1: <http://xmlns.com/foaf/0.1/> .
-@prefix ns2: <http://purl.org/dc/elements/1.1/> .
+@prefix ns2: <http://purl.org/ontology/bibo/#> .
 @prefix ns3: <http://www.w3.org/2002/07/owl#> .
-@prefix ns4: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns5: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns6: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns7: <http://purl.org/ontology/bibo/#> .
-@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns4: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns5: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns6: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns7: <http://purl.org/dc/elements/1.1/> .
+@prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns9: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-854/> a ns5:Proceedings ;
-    ns8:issued "2012-06-18T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:presentedAt <http://ceur-ws.org/Vol-854/#event> ;
-    ns4:editor <http://ceur-ws.org/Vol-854/#LuanaiMicallef>,
-        <http://ceur-ws.org/Vol-854/#PeteriChapman> .
+<http://ceur-ws.org/Vol-854/#DavidiDailey> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/DavidiDailey> ;
+    ns1:made <http://ceur-ws.org/Vol-854/#paper6> ;
+    ns1:name "David Dailey" .
+
+<http://ceur-ws.org/Vol-854/#JeaniFlower> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/JeaniFlower> ;
+    ns1:made <http://ceur-ws.org/Vol-854/#paper7> ;
+    ns1:name "Jean Flower" .
+
+<http://ceur-ws.org/Vol-854/#JohniHowse> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/JohniHowse> ;
+    ns1:made <http://ceur-ws.org/Vol-854/#paper1> ;
+    ns1:name "John Howse" .
+
+<http://ceur-ws.org/Vol-854/#KojiiMineshima> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/KojiiMineshima> ;
+    ns1:made <http://ceur-ws.org/Vol-854/#paper2> ;
+    ns1:name "Koji Mineshima" .
 
 <http://ceur-ws.org/Vol-854/#LuanaiMicallef> a ns1:Person ;
+    ns2:place <http://dbpedia.org/resource/United_Kingdom> ;
+    ns5:affiliation "School of Computing, University of Kent, Canterbury, UK, Complete Proceedings (143 pages)" ;
     ns3:sameAs <http://ceur-ws.org/persons/LuanaiMicallef> ;
     ns1:name "Luana Micallef" .
 
+<http://ceur-ws.org/Vol-854/#MitsuhiroiOkada> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/MitsuhiroiOkada> ;
+    ns1:made <http://ceur-ws.org/Vol-854/#paper2> ;
+    ns1:name "Mitsuhiro Okada" .
+
+<http://ceur-ws.org/Vol-854/#PeteriC.-H.iCheng> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/PeteriC.-H.iCheng> ;
+    ns1:made <http://ceur-ws.org/Vol-854/#paper3> ;
+    ns1:name "Peter C.-H. Cheng" .
+
 <http://ceur-ws.org/Vol-854/#PeteriChapman> a ns1:Person ;
+    ns5:affiliation "" ;
     ns3:sameAs <http://ceur-ws.org/persons/PeteriChapman> ;
     ns1:name "Peter Chapman" .
 
-<http://ceur-ws.org/Vol-854/#event> a ns5:WorkshopEvent ;
-    ns5:hasLocation <http://dbpedia.org/resource/United_Kingdom> ;
-    ns5:hasPart <http://ceur-ws.org/Vol-854/#part-CEUR-WS> ;
-    ns5:isSubEventOf <http://ceur-ws.org/Vol-854/#conf> ;
-    ns6:beginsAtDatetime "2012-07-02T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:endsAtDatetime "2012-07-02T00:00:00+00:00"^^xsd:dateTime ;
-    ns2:license "http://choosealicense.com/licenses/no-license/" .
+<http://ceur-ws.org/Vol-854/#PeteriCoppin> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/PeteriCoppin> ;
+    ns1:made <http://ceur-ws.org/Vol-854/#paper4> ;
+    ns1:name "Peter Coppin" .
+
+<http://ceur-ws.org/Vol-854/#PeteriRodgers> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/PeteriRodgers> ;
+    ns1:made <http://ceur-ws.org/Vol-854/#paper7> ;
+    ns1:name "Peter Rodgers" .
+
+<http://ceur-ws.org/Vol-854/#RichardiBrath> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/RichardiBrath> ;
+    ns1:made <http://ceur-ws.org/Vol-854/#paper9> ;
+    ns1:name "Richard Brath" .
+
+<http://ceur-ws.org/Vol-854/#RyoiTakemura> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/RyoiTakemura> ;
+    ns1:made <http://ceur-ws.org/Vol-854/#paper2> ;
+    ns1:name "Ryo Takemura" .
+
+<http://ceur-ws.org/Vol-854/#TimiDwyer> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/TimiDwyer> ;
+    ns1:made <http://ceur-ws.org/Vol-854/#keynote> ;
+    ns1:name "Tim Dwyer" .
+
+<http://ceur-ws.org/Vol-854/#VittorioiScarano> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/VittorioiScarano> ;
+    ns1:made <http://ceur-ws.org/Vol-854/#paper8> ;
+    ns1:name "Vittorio Scarano" .
+
+<http://ceur-ws.org/Vol-854/#YuriiSato> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/YuriiSato> ;
+    ns1:made <http://ceur-ws.org/Vol-854/#paper2> ;
+    ns1:name "Yuri Sato" .
+
+<http://ceur-ws.org/Vol-854/#event> a ns6:WorkshopEvent ;
+    ns6:hasLocation <http://dbpedia.org/resource/United_Kingdom> ;
+    ns6:hasPart <http://ceur-ws.org/Vol-854/#part-ws> ;
+    ns6:isSubEventOf <http://ceur-ws.org/Vol-854/#conf> ;
+    ns8:beginsAtDatetime "2012-07-02T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:endsAtDatetime "2012-07-02T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:license "http://choosealicense.com/licenses/no-license/" .
+
+<http://ceur-ws.org/Vol-854/#AndrewiFish> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/AndrewiFish> ;
+    ns1:made <http://ceur-ws.org/Vol-854/#paper5>,
+        <http://ceur-ws.org/Vol-854/#paper8> ;
+    ns1:name "Andrew Fish" .
+
+<http://ceur-ws.org/Vol-854/#GemiStapleton> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/GemiStapleton> ;
+    ns1:made <http://ceur-ws.org/Vol-854/#paper1>,
+        <http://ceur-ws.org/Vol-854/#paper7> ;
+    ns1:name "Gem Stapleton" .
+
+<http://ceur-ws.org/Vol-854/#GennaroiCordasco> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/GennaroiCordasco> ;
+    ns1:made <http://ceur-ws.org/Vol-854/#paper5>,
+        <http://ceur-ws.org/Vol-854/#paper8> ;
+    ns1:name "Gennaro Cordasco" .
+
+<http://ceur-ws.org/Vol-854/#JimiBurton> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/JimiBurton> ;
+    ns1:made <http://ceur-ws.org/Vol-854/#paper1>,
+        <http://ceur-ws.org/Vol-854/#paper4> ;
+    ns1:name "Jim Burton" .
+
+<http://ceur-ws.org/Vol-854/#Keynote> a ns6:SessionEvent ;
+    ns6:partOf <http://ceur-ws.org/Vol-854/> ;
+    ns4:title "Keynote" .
+
+<http://ceur-ws.org/Vol-854/#RosarioiDeiChiara> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/RosarioiDeiChiara> ;
+    ns1:made <http://ceur-ws.org/Vol-854/#paper5>,
+        <http://ceur-ws.org/Vol-854/#paper8> ;
+    ns1:name "Rosario De Chiara" .
+
+<http://ceur-ws.org/Vol-854/#keynote> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-854/> ;
+    ns4:title "Developing a Visual Code-dependency Analysis Tool for the Visual Studio IDE: Research Meets Practice in Showing Containment in an Interactive Diagramming Tool" ;
+    ns2:endPage 1 ;
+    ns2:numPages 1 ;
+    ns2:section <http://ceur-ws.org/Vol-854/#Keynote> ;
+    ns2:startPage 1 ;
+    ns5:author <http://ceur-ws.org/Vol-854/#TimiDwyer> .
+
+<http://ceur-ws.org/Vol-854/#paper3> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-854/> ;
+    ns4:title "Visualizing Syllogisms: Category Pattern Diagrams versus Venn Diagrams" ;
+    ns2:endPage 46 ;
+    ns2:numPages 15 ;
+    ns2:section <http://ceur-ws.org/Vol-854/#LogicandReasoning> ;
+    ns2:startPage 32 ;
+    ns5:author <http://ceur-ws.org/Vol-854/#PeteriC.-H.iCheng> .
+
+<http://ceur-ws.org/Vol-854/#paper6> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-854/> ;
+    ns4:title "Aesthetic and Practical Concerns in the Drawing of Euler and Venn Diagrams: Case Studies using SVG" ;
+    ns2:endPage 91 ;
+    ns2:numPages 15 ;
+    ns2:section <http://ceur-ws.org/Vol-854/#AbstractionsAestheticsandConstructions> ;
+    ns2:startPage 77 ;
+    ns5:author <http://ceur-ws.org/Vol-854/#DavidiDailey> .
+
+<http://ceur-ws.org/Vol-854/#paper9> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-854/> ;
+    ns4:title "Multi-Attribute Glyphs on Venn Diagrams to Represent Quantities and Aid Visual Decoding" ;
+    ns2:endPage 129 ;
+    ns2:numPages 8 ;
+    ns2:section <http://ceur-ws.org/Vol-854/#Application> ;
+    ns2:startPage 122 ;
+    ns5:author <http://ceur-ws.org/Vol-854/#RichardiBrath> .
+
+<http://ceur-ws.org/Vol-854/#Application> a ns6:SessionEvent ;
+    ns6:partOf <http://ceur-ws.org/Vol-854/> ;
+    ns4:title "Application" .
+
+<http://ceur-ws.org/Vol-854/#paper4> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-854/> ;
+    ns4:title "Understanding and Predicting the Affordances of Visual Logics" ;
+    ns2:endPage 61 ;
+    ns2:numPages 15 ;
+    ns2:section <http://ceur-ws.org/Vol-854/#LogicandReasoning> ;
+    ns2:startPage 47 ;
+    ns5:author <http://ceur-ws.org/Vol-854/#JimiBurton>,
+        <http://ceur-ws.org/Vol-854/#PeteriCoppin> .
+
+<http://ceur-ws.org/Vol-854/#AbstractionsAestheticsandConstructions> a ns6:SessionEvent ;
+    ns6:partOf <http://ceur-ws.org/Vol-854/> ;
+    ns4:title "Abstractions, Aesthetics, and Constructions" .
+
+<http://ceur-ws.org/Vol-854/#paper1> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-854/> ;
+    ns4:title "Completeness Proof Strategies for Euler Diagram Logics" ;
+    ns2:endPage 16 ;
+    ns2:numPages 15 ;
+    ns2:section <http://ceur-ws.org/Vol-854/#LogicandReasoning> ;
+    ns2:startPage 2 ;
+    ns5:author <http://ceur-ws.org/Vol-854/#GemiStapleton>,
+        <http://ceur-ws.org/Vol-854/#JimiBurton>,
+        <http://ceur-ws.org/Vol-854/#JohniHowse> .
+
+<http://ceur-ws.org/Vol-854/#paper5> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-854/> ;
+    ns4:title "The Online Abstraction Problem for Euler Diagrams" ;
+    ns2:endPage 76 ;
+    ns2:numPages 15 ;
+    ns2:section <http://ceur-ws.org/Vol-854/#AbstractionsAestheticsandConstructions> ;
+    ns2:startPage 62 ;
+    ns5:author <http://ceur-ws.org/Vol-854/#AndrewiFish>,
+        <http://ceur-ws.org/Vol-854/#GennaroiCordasco>,
+        <http://ceur-ws.org/Vol-854/#RosarioiDeiChiara> .
+
+<http://ceur-ws.org/Vol-854/#paper7> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-854/> ;
+    ns4:title "Introducing 3D Venn and Euler Diagrams" ;
+    ns2:endPage 106 ;
+    ns2:numPages 15 ;
+    ns2:section <http://ceur-ws.org/Vol-854/#AbstractionsAestheticsandConstructions> ;
+    ns2:startPage 92 ;
+    ns5:author <http://ceur-ws.org/Vol-854/#GemiStapleton>,
+        <http://ceur-ws.org/Vol-854/#JeaniFlower>,
+        <http://ceur-ws.org/Vol-854/#PeteriRodgers> .
+
+<http://ceur-ws.org/Vol-854/#LogicandReasoning> a ns6:SessionEvent ;
+    ns6:partOf <http://ceur-ws.org/Vol-854/> ;
+    ns4:title "Logic and Reasoning" .
+
+<http://ceur-ws.org/Vol-854/#paper2> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-854/> ;
+    ns4:title "On the Cognitive Efficacy of Euler Diagrams in Syllogistic Reasoning: A Relational Perspective" ;
+    ns2:endPage 31 ;
+    ns2:numPages 15 ;
+    ns2:section <http://ceur-ws.org/Vol-854/#LogicandReasoning> ;
+    ns2:startPage 17 ;
+    ns5:author <http://ceur-ws.org/Vol-854/#KojiiMineshima>,
+        <http://ceur-ws.org/Vol-854/#MitsuhiroiOkada>,
+        <http://ceur-ws.org/Vol-854/#RyoiTakemura>,
+        <http://ceur-ws.org/Vol-854/#YuriiSato> .
+
+<http://ceur-ws.org/Vol-854/#paper8> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-854/> ;
+    ns4:title "FunEuler: an Euler Diagram based Interface Enhanced with Region-based Functionalities" ;
+    ns2:endPage 121 ;
+    ns2:numPages 15 ;
+    ns2:section <http://ceur-ws.org/Vol-854/#Application> ;
+    ns2:startPage 107 ;
+    ns5:author <http://ceur-ws.org/Vol-854/#AndrewiFish>,
+        <http://ceur-ws.org/Vol-854/#GennaroiCordasco>,
+        <http://ceur-ws.org/Vol-854/#RosarioiDeiChiara>,
+        <http://ceur-ws.org/Vol-854/#VittorioiScarano> .
+
+<http://ceur-ws.org/Vol-854/> a ns6:Proceedings ;
+    ns6:hasPart <http://ceur-ws.org/Vol-854/#keynote>,
+        <http://ceur-ws.org/Vol-854/#paper1>,
+        <http://ceur-ws.org/Vol-854/#paper2>,
+        <http://ceur-ws.org/Vol-854/#paper3>,
+        <http://ceur-ws.org/Vol-854/#paper4>,
+        <http://ceur-ws.org/Vol-854/#paper5>,
+        <http://ceur-ws.org/Vol-854/#paper6>,
+        <http://ceur-ws.org/Vol-854/#paper7>,
+        <http://ceur-ws.org/Vol-854/#paper8>,
+        <http://ceur-ws.org/Vol-854/#paper9> ;
+    ns6:hasSession <http://ceur-ws.org/Vol-854/#AbstractionsAestheticsandConstructions>,
+        <http://ceur-ws.org/Vol-854/#Application>,
+        <http://ceur-ws.org/Vol-854/#Keynote>,
+        <http://ceur-ws.org/Vol-854/#LogicandReasoning> ;
+    ns9:issued "2012-06-18T00:00:00+00:00"^^xsd:dateTime ;
+    ns2:presentedAt <http://ceur-ws.org/Vol-854/#event> ;
+    ns5:editor <http://ceur-ws.org/Vol-854/#LuanaiMicallef>,
+        <http://ceur-ws.org/Vol-854/#PeteriChapman> .
 

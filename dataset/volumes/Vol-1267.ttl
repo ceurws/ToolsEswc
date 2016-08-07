@@ -1,46 +1,244 @@
-@prefix ns1: <http://xmlns.com/foaf/0.1/> .
-@prefix ns2: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns1: <http://purl.org/ontology/bibo/#> .
+@prefix ns2: <http://xmlns.com/foaf/0.1/> .
 @prefix ns3: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns4: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns5: <http://purl.org/dc/elements/1.1/> .
-@prefix ns6: <http://purl.org/ontology/bibo/#> .
-@prefix ns7: <http://www.w3.org/2002/07/owl#> .
-@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns4: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns5: <http://www.w3.org/2002/07/owl#> .
+@prefix ns6: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns7: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns9: <http://purl.org/dc/elements/1.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1267/> a ns3:Proceedings ;
-    ns8:issued "2014-10-15T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:presentedAt <http://ceur-ws.org/Vol-1267/#event> ;
-    ns2:editor <http://ceur-ws.org/Vol-1267/#AnnaiLisaiGentile>,
-        <http://ceur-ws.org/Vol-1267/#Claudiaid%27Amato>,
-        <http://ceur-ws.org/Vol-1267/#HeikoiPaulheim>,
-        <http://ceur-ws.org/Vol-1267/#ZiqiiZhang> .
+<http://ceur-ws.org/Vol-1267/#AnnaiLisaiGentile> a ns2:Person ;
+    ns6:affiliation "" ;
+    ns5:sameAs <http://ceur-ws.org/persons/AnnaiLisaiGentile> ;
+    ns2:name "Anna Lisa Gentile" .
 
-<http://ceur-ws.org/Vol-1267/#AnnaiLisaiGentile> a ns1:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/AnnaiLisaiGentile> ;
-    ns1:name "Anna Lisa Gentile" .
+<http://ceur-ws.org/Vol-1267/#Axel-CyrilleiNgongaiNgomo> a ns2:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/Axel-CyrilleiNgongaiNgomo> ;
+    ns2:made <http://ceur-ws.org/Vol-1267/#NgongaNgomo> ;
+    ns2:name "Axel-Cyrille Ngonga Ngomo" .
 
-<http://ceur-ws.org/Vol-1267/#Claudiaid%27Amato> a ns1:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/Claudiaid%27Amato> ;
-    ns1:name "Claudia d'Amato" .
+<http://ceur-ws.org/Vol-1267/#ChristianiBizer> a ns2:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/ChristianiBizer> ;
+    ns2:made <http://ceur-ws.org/Vol-1267/#Petrovski> ;
+    ns2:name "Christian Bizer" .
 
-<http://ceur-ws.org/Vol-1267/#HeikoiPaulheim> a ns1:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/HeikoiPaulheim> ;
-    ns1:name "Heiko Paulheim" .
+<http://ceur-ws.org/Vol-1267/#Claudiaid%27Amato> a ns2:Person ;
+    ns6:affiliation "" ;
+    ns5:sameAs <http://ceur-ws.org/persons/Claudiaid%27Amato> ;
+    ns2:name "Claudia d'Amato" .
 
-<http://ceur-ws.org/Vol-1267/#ZiqiiZhang> a ns1:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/ZiqiiZhang> ;
-    ns1:name "Ziqi Zhang" .
+<http://ceur-ws.org/Vol-1267/#FabioiBenedetti> a ns2:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/FabioiBenedetti> ;
+    ns2:made <http://ceur-ws.org/Vol-1267/#Benedetti> ;
+    ns2:name "Fabio Benedetti" .
+
+<http://ceur-ws.org/Vol-1267/#GiuseppeiRizzo> a ns2:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/GiuseppeiRizzo> ;
+    ns2:made <http://ceur-ws.org/Vol-1267/#Rizzo> ;
+    ns2:name "Giuseppe Rizzo" .
+
+<http://ceur-ws.org/Vol-1267/#LauraiPo> a ns2:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/LauraiPo> ;
+    ns2:made <http://ceur-ws.org/Vol-1267/#Benedetti> ;
+    ns2:name "Laura Po" .
+
+<http://ceur-ws.org/Vol-1267/#LucaiCostabello> a ns2:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/LucaiCostabello> ;
+    ns2:made <http://ceur-ws.org/Vol-1267/#IEchallenge_Munos> ;
+    ns2:name "Luca Costabello" .
+
+<http://ceur-ws.org/Vol-1267/#MariekeiVaniErp> a ns2:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/MariekeiVaniErp> ;
+    ns2:made <http://ceur-ws.org/Vol-1267/#Rizzo> ;
+    ns2:name "Marieke Van Erp" .
+
+<http://ceur-ws.org/Vol-1267/#MichaeliR%C3%B6der> a ns2:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/MichaeliR%C3%B6der> ;
+    ns2:made <http://ceur-ws.org/Vol-1267/#NgongaNgomo> ;
+    ns2:name "Michael Röder" .
+
+<http://ceur-ws.org/Vol-1267/#PabloiMendes> a ns2:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/PabloiMendes> ;
+    ns2:made <http://ceur-ws.org/Vol-1267/#invited> ;
+    ns2:name "Pablo Mendes" .
+
+<http://ceur-ws.org/Vol-1267/#PetariPetrovski> a ns2:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/PetariPetrovski> ;
+    ns2:made <http://ceur-ws.org/Vol-1267/#Petrovski> ;
+    ns2:name "Petar Petrovski" .
+
+<http://ceur-ws.org/Vol-1267/#Pierre-YvesiVandenbussche> a ns2:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/Pierre-YvesiVandenbussche> ;
+    ns2:made <http://ceur-ws.org/Vol-1267/#IEchallenge_Munos> ;
+    ns2:name "Pierre-Yves Vandenbussche" .
+
+<http://ceur-ws.org/Vol-1267/#Rapha%C3%ABliTroncy> a ns2:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/Rapha%C3%ABliTroncy> ;
+    ns2:made <http://ceur-ws.org/Vol-1267/#Rizzo> ;
+    ns2:name "Raphaël Troncy" .
+
+<http://ceur-ws.org/Vol-1267/#RicardoiUsbeck> a ns2:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/RicardoiUsbeck> ;
+    ns2:made <http://ceur-ws.org/Vol-1267/#NgongaNgomo> ;
+    ns2:name "Ricardo Usbeck" .
+
+<http://ceur-ws.org/Vol-1267/#RobertiMeusel> a ns2:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/RobertiMeusel> ;
+    ns2:made <http://ceur-ws.org/Vol-1267/#IEchallenge_Overview> ;
+    ns2:name "Robert Meusel" .
+
+<http://ceur-ws.org/Vol-1267/#SoniaiBergamaschi> a ns2:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/SoniaiBergamaschi> ;
+    ns2:made <http://ceur-ws.org/Vol-1267/#Benedetti> ;
+    ns2:name "Sonia Bergamaschi" .
+
+<http://ceur-ws.org/Vol-1267/#VolhaiBryl> a ns2:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/VolhaiBryl> ;
+    ns2:made <http://ceur-ws.org/Vol-1267/#Petrovski> ;
+    ns2:name "Volha Bryl" .
+
+<http://ceur-ws.org/Vol-1267/#ZiqiiZhang> a ns2:Person ;
+    ns6:affiliation "" ;
+    ns5:sameAs <http://ceur-ws.org/persons/ZiqiiZhang> ;
+    ns2:name "Ziqi Zhang" .
 
 <http://ceur-ws.org/Vol-1267/#event> a ns3:WorkshopEvent ;
     ns3:hasLocation <http://dbpedia.org/resource/Italy> ;
     ns3:hasPart <http://ceur-ws.org/Vol-1267/#part-LD4IE> ;
     ns3:isSubEventOf <http://ceur-ws.org/Vol-1267/#conf> ;
-    ns4:beginsAtDatetime "2014-10-20T00:00:00+00:00"^^xsd:dateTime ;
-    ns4:endsAtDatetime "2014-10-20T00:00:00+00:00"^^xsd:dateTime ;
-    ns5:license "http://creativecommons.org/publicdomain/zero/1.0/" ;
+    ns8:beginsAtDatetime "2014-10-20T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:endsAtDatetime "2014-10-20T00:00:00+00:00"^^xsd:dateTime ;
+    ns9:license "http://creativecommons.org/publicdomain/zero/1.0/" ;
     rdfs:seeAlso <http://ceur-ws.org/Vol-1057/#event> .
+
+<http://ceur-ws.org/Vol-1267/#EmiriMu%C3%B1oz> a ns2:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/EmiriMu%C3%B1oz> ;
+    ns2:made <http://ceur-ws.org/Vol-1267/#IEchallenge_Munos>,
+        <http://ceur-ws.org/Vol-1267/#Munos> ;
+    ns2:name "Emir Muñoz" .
+
+<http://ceur-ws.org/Vol-1267/#HeikoiPaulheim> a ns2:Person ;
+    ns6:affiliation "" ;
+    ns5:sameAs <http://ceur-ws.org/persons/HeikoiPaulheim> ;
+    ns2:made <http://ceur-ws.org/Vol-1267/#IEchallenge_Overview> ;
+    ns2:name "Heiko Paulheim" .
+
+<http://ceur-ws.org/Vol-1267/#InformationExtractionchallengeoverview> a ns3:SessionEvent ;
+    ns3:partOf <http://ceur-ws.org/Vol-1267/> ;
+    ns7:title "Information Extraction challenge overview" .
+
+<http://ceur-ws.org/Vol-1267/#Invitedtalk> a ns3:SessionEvent ;
+    ns3:partOf <http://ceur-ws.org/Vol-1267/> ;
+    ns7:title "Invited talk" .
+
+<http://ceur-ws.org/Vol-1267/#Munos> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1267/> ;
+    ns7:title "Learning Content Patterns from Linked Data" ;
+    ns1:endPage 32 ;
+    ns1:numPages 12 ;
+    ns1:section <http://ceur-ws.org/Vol-1267/#FullResearchPapers> ;
+    ns1:startPage 21 ;
+    ns6:author <http://ceur-ws.org/Vol-1267/#EmiriMu%C3%B1oz> .
+
+<http://ceur-ws.org/Vol-1267/#invited> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1267/> ;
+    ns7:title "Where is the Semantics and Where Do We Want it to Be? Let the Flaming Begin!" ;
+    ns1:endPage 2 ;
+    ns1:numPages 2 ;
+    ns1:section <http://ceur-ws.org/Vol-1267/#Invitedtalk> ;
+    ns1:startPage 1 ;
+    ns6:author <http://ceur-ws.org/Vol-1267/#PabloiMendes> .
+
+<http://ceur-ws.org/Vol-1267/#IEchallenge_Overview> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1267/> ;
+    ns7:title "Linked Data for Information Extraction Challenge 2014: Tasks and Results" ;
+    ns1:endPage 8 ;
+    ns1:numPages 6 ;
+    ns1:section <http://ceur-ws.org/Vol-1267/#InformationExtractionchallengeoverview> ;
+    ns1:startPage 3 ;
+    ns6:author <http://ceur-ws.org/Vol-1267/#HeikoiPaulheim>,
+        <http://ceur-ws.org/Vol-1267/#RobertiMeusel> .
+
+<http://ceur-ws.org/Vol-1267/#Benedetti> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1267/> ;
+    ns7:title "Online Index Extraction from Linked Open Data Sources" ;
+    ns1:endPage 20 ;
+    ns1:numPages 12 ;
+    ns1:section <http://ceur-ws.org/Vol-1267/#FullResearchPapers> ;
+    ns1:startPage 9 ;
+    ns6:author <http://ceur-ws.org/Vol-1267/#FabioiBenedetti>,
+        <http://ceur-ws.org/Vol-1267/#LauraiPo>,
+        <http://ceur-ws.org/Vol-1267/#SoniaiBergamaschi> .
+
+<http://ceur-ws.org/Vol-1267/#IEchallenge_Munos> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1267/> ;
+    ns7:title "µRaptor: A DOM-based System with Appetite for hCard Elements" ;
+    ns1:endPage 71 ;
+    ns1:numPages 5 ;
+    ns1:section <http://ceur-ws.org/Vol-1267/#FullResearchPapers> ;
+    ns1:startPage 67 ;
+    ns6:author <http://ceur-ws.org/Vol-1267/#EmiriMu%C3%B1oz>,
+        <http://ceur-ws.org/Vol-1267/#LucaiCostabello>,
+        <http://ceur-ws.org/Vol-1267/#Pierre-YvesiVandenbussche> .
+
+<http://ceur-ws.org/Vol-1267/#NgongaNgomo> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1267/> ;
+    ns7:title "Cross-Document Coreference Resolution Using Latent Features" ;
+    ns1:endPage 44 ;
+    ns1:numPages 12 ;
+    ns1:section <http://ceur-ws.org/Vol-1267/#FullResearchPapers> ;
+    ns1:startPage 33 ;
+    ns6:author <http://ceur-ws.org/Vol-1267/#Axel-CyrilleiNgongaiNgomo>,
+        <http://ceur-ws.org/Vol-1267/#MichaeliR%C3%B6der>,
+        <http://ceur-ws.org/Vol-1267/#RicardoiUsbeck> .
+
+<http://ceur-ws.org/Vol-1267/#Petrovski> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1267/> ;
+    ns7:title "Learning Regular Expressions for the Extraction of Product Attributes from E-commerce Microdata" ;
+    ns1:endPage 54 ;
+    ns1:numPages 12 ;
+    ns1:section <http://ceur-ws.org/Vol-1267/#FullResearchPapers> ;
+    ns1:startPage 43 ;
+    ns6:author <http://ceur-ws.org/Vol-1267/#ChristianiBizer>,
+        <http://ceur-ws.org/Vol-1267/#PetariPetrovski>,
+        <http://ceur-ws.org/Vol-1267/#VolhaiBryl> .
+
+<http://ceur-ws.org/Vol-1267/#Rizzo> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1267/> ;
+    ns7:title "Inductive Entity Typing Alignment" ;
+    ns1:endPage 66 ;
+    ns1:numPages 12 ;
+    ns1:section <http://ceur-ws.org/Vol-1267/#FullResearchPapers> ;
+    ns1:startPage 55 ;
+    ns6:author <http://ceur-ws.org/Vol-1267/#GiuseppeiRizzo>,
+        <http://ceur-ws.org/Vol-1267/#MariekeiVaniErp>,
+        <http://ceur-ws.org/Vol-1267/#Rapha%C3%ABliTroncy> .
+
+<http://ceur-ws.org/Vol-1267/#FullResearchPapers> a ns3:SessionEvent ;
+    ns3:partOf <http://ceur-ws.org/Vol-1267/> ;
+    ns7:title "Full Research Papers" .
+
+<http://ceur-ws.org/Vol-1267/> a ns3:Proceedings ;
+    ns3:hasPart <http://ceur-ws.org/Vol-1267/#Benedetti>,
+        <http://ceur-ws.org/Vol-1267/#IEchallenge_Munos>,
+        <http://ceur-ws.org/Vol-1267/#IEchallenge_Overview>,
+        <http://ceur-ws.org/Vol-1267/#Munos>,
+        <http://ceur-ws.org/Vol-1267/#NgongaNgomo>,
+        <http://ceur-ws.org/Vol-1267/#Petrovski>,
+        <http://ceur-ws.org/Vol-1267/#Rizzo>,
+        <http://ceur-ws.org/Vol-1267/#invited> ;
+    ns3:hasSession <http://ceur-ws.org/Vol-1267/#FullResearchPapers>,
+        <http://ceur-ws.org/Vol-1267/#InformationExtractionchallengeoverview>,
+        <http://ceur-ws.org/Vol-1267/#Invitedtalk> ;
+    ns4:issued "2014-10-15T00:00:00+00:00"^^xsd:dateTime ;
+    ns1:presentedAt <http://ceur-ws.org/Vol-1267/#event> ;
+    ns6:editor <http://ceur-ws.org/Vol-1267/#AnnaiLisaiGentile>,
+        <http://ceur-ws.org/Vol-1267/#Claudiaid%27Amato>,
+        <http://ceur-ws.org/Vol-1267/#HeikoiPaulheim>,
+        <http://ceur-ws.org/Vol-1267/#ZiqiiZhang> .
 

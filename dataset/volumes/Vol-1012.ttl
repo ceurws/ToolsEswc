@@ -1,35 +1,821 @@
-@prefix ns1: <http://purl.org/ontology/bibo/#> .
-@prefix ns2: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns3: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns4: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns5: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns6: <http://purl.org/dc/elements/1.1/> .
-@prefix ns7: <http://xmlns.com/foaf/0.1/> .
-@prefix ns8: <http://www.w3.org/2002/07/owl#> .
+@prefix ns1: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns2: <http://xmlns.com/foaf/0.1/> .
+@prefix ns3: <http://www.w3.org/2002/07/owl#> .
+@prefix ns4: <http://purl.org/ontology/bibo/#> .
+@prefix ns5: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns6: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns8: <http://purl.org/dc/elements/1.1/> .
+@prefix ns9: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1012/> a ns2:Proceedings ;
-    ns4:issued "2013-08-06T00:00:00+00:00"^^xsd:dateTime ;
-    ns1:presentedAt <http://ceur-ws.org/Vol-1012/#event> ;
-    ns5:editor <http://ceur-ws.org/Vol-1012/#Fr%C3%A9d%C3%A9riciB%C3%A9chet>,
+<http://ceur-ws.org/Vol-1012/#AbhigyaniSingh> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/AbhigyaniSingh> ;
+    ns2:made <http://ceur-ws.org/Vol-1012/#paper-16> ;
+    ns2:name "Abhigyan Singh" .
+
+<http://ceur-ws.org/Vol-1012/#AchintyaiSarkar> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/AchintyaiSarkar> ;
+    ns2:made <http://ceur-ws.org/Vol-1012/#paper-09> ;
+    ns2:name "Achintya Sarkar" .
+
+<http://ceur-ws.org/Vol-1012/#AlexandreiDelteil> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/AlexandreiDelteil> ;
+    ns2:made <http://ceur-ws.org/Vol-1012/#paper-10> ;
+    ns2:name "Alexandre Delteil" .
+
+<http://ceur-ws.org/Vol-1012/#AlexiWaibel> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/AlexiWaibel> ;
+    ns2:made <http://ceur-ws.org/Vol-1012/#paper-06> ;
+    ns2:name "Alex Waibel" .
+
+<http://ceur-ws.org/Vol-1012/#AlexisiMignon> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/AlexisiMignon> ;
+    ns2:made <http://ceur-ws.org/Vol-1012/#paper-09> ;
+    ns2:name "Alexis Mignon" .
+
+<http://ceur-ws.org/Vol-1012/#AlfonsoiOrtega> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/AlfonsoiOrtega> ;
+    ns2:made <http://ceur-ws.org/Vol-1012/#paper-04> ;
+    ns2:name "Alfonso Ortega" .
+
+<http://ceur-ws.org/Vol-1012/#AndreiiPopescu-Belis> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/AndreiiPopescu-Belis> ;
+    ns2:made <http://ceur-ws.org/Vol-1012/#paper-01> ;
+    ns2:name "Andrei Popescu-Belis" .
+
+<http://ceur-ws.org/Vol-1012/#AnindyaiRoy> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/AnindyaiRoy> ;
+    ns2:made <http://ceur-ws.org/Vol-1012/#paper-09> ;
+    ns2:name "Anindya Roy" .
+
+<http://ceur-ws.org/Vol-1012/#AntonioiMiguel> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/AntonioiMiguel> ;
+    ns2:made <http://ceur-ws.org/Vol-1012/#paper-04> ;
+    ns2:name "Antonio Miguel" .
+
+<http://ceur-ws.org/Vol-1012/#AshleyiFidler> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/AshleyiFidler> ;
+    ns2:made <http://ceur-ws.org/Vol-1012/#paper-17> ;
+    ns2:name "Ashley Fidler" .
+
+<http://ceur-ws.org/Vol-1012/#BenjaminiElizalde> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/BenjaminiElizalde> ;
+    ns2:made <http://ceur-ws.org/Vol-1012/#paper-02> ;
+    ns2:name "Benjamin Elizalde" .
+
+<http://ceur-ws.org/Vol-1012/#BenoitiFavre> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/BenoitiFavre> ;
+    ns2:made <http://ceur-ws.org/Vol-1012/#paper-10> ;
+    ns2:name "Benoit Favre" .
+
+<http://ceur-ws.org/Vol-1012/#CaroleiLailler> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/CaroleiLailler> ;
+    ns2:made <http://ceur-ws.org/Vol-1012/#paper-14> ;
+    ns2:name "Carole Lailler" .
+
+<http://ceur-ws.org/Vol-1012/#ChristianiMohr> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/ChristianiMohr> ;
+    ns2:made <http://ceur-ws.org/Vol-1012/#paper-06> ;
+    ns2:name "Christian Mohr" .
+
+<http://ceur-ws.org/Vol-1012/#ChristianiSaam> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/ChristianiSaam> ;
+    ns2:made <http://ceur-ws.org/Vol-1012/#paper-06> ;
+    ns2:name "Christian Saam" .
+
+<http://ceur-ws.org/Vol-1012/#ChristineiJacquin> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/ChristineiJacquin> ;
+    ns2:made <http://ceur-ws.org/Vol-1012/#paper-11> ;
+    ns2:name "Christine Jacquin" .
+
+<http://ceur-ws.org/Vol-1012/#DavidiDean> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/DavidiDean> ;
+    ns2:made <http://ceur-ws.org/Vol-1012/#paper-13> ;
+    ns2:name "David Dean" .
+
+<http://ceur-ws.org/Vol-1012/#DilekiHakkani-Tur> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/DilekiHakkani-Tur> ;
+    ns2:made <http://ceur-ws.org/Vol-1012/#paper-17> ;
+    ns2:name "Dilek Hakkani-Tur" .
+
+<http://ceur-ws.org/Vol-1012/#EduardoiLleida> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/EduardoiLleida> ;
+    ns2:made <http://ceur-ws.org/Vol-1012/#paper-04> ;
+    ns2:name "Eduardo Lleida" .
+
+<http://ceur-ws.org/Vol-1012/#ElizabethiShriberg> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/ElizabethiShriberg> ;
+    ns2:made <http://ceur-ws.org/Vol-1012/#paper-17> ;
+    ns2:name "Elizabeth Shriberg" .
+
+<http://ceur-ws.org/Vol-1012/#ElmariN%C3%B6th> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/ElmariN%C3%B6th> ;
+    ns2:made <http://ceur-ws.org/Vol-1012/#paper-18> ;
+    ns2:name "Elmar Nöth" .
+
+<http://ceur-ws.org/Vol-1012/#EmmanueliMorin> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/EmmanueliMorin> ;
+    ns2:made <http://ceur-ws.org/Vol-1012/#paper-11> ;
+    ns2:name "Emmanuel Morin" .
+
+<http://ceur-ws.org/Vol-1012/#FergusiMcInnes> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/FergusiMcInnes> ;
+    ns2:made <http://ceur-ws.org/Vol-1012/#paper-01> ;
+    ns2:name "Fergus McInnes" .
+
+<http://ceur-ws.org/Vol-1012/#FlorianiH%C3%B6nig> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/FlorianiH%C3%B6nig> ;
+    ns2:made <http://ceur-ws.org/Vol-1012/#paper-18> ;
+    ns2:name "Florian Hönig" .
+
+<http://ceur-ws.org/Vol-1012/#Fr%C3%A9d%C3%A9riciB%C3%A9chet> a ns2:Person ;
+    ns1:affiliation "Aix-Marseille Université, LIF-CNRS, Marseille, FR" ;
+    ns3:sameAs <http://ceur-ws.org/persons/Fr%C3%A9d%C3%A9riciB%C3%A9chet> ;
+    ns2:name "Frédéric Béchet" .
+
+<http://ceur-ws.org/Vol-1012/#FredericiBechet> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/FredericiBechet> ;
+    ns2:made <http://ceur-ws.org/Vol-1012/#paper-10> ;
+    ns2:name "Frederic Bechet" .
+
+<http://ceur-ws.org/Vol-1012/#G%C3%A9raldineiDamnati> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/G%C3%A9raldineiDamnati> ;
+    ns2:made <http://ceur-ws.org/Vol-1012/#paper-10> ;
+    ns2:name "Géraldine Damnati" .
+
+<http://ceur-ws.org/Vol-1012/#GeorgesiLinar%C3%A8s> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/GeorgesiLinar%C3%A8s> ;
+    ns2:made <http://ceur-ws.org/Vol-1012/#paper-10> ;
+    ns2:name "Georges Linarès" .
+
+<http://ceur-ws.org/Vol-1012/#GeraldiFriedland> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/GeraldiFriedland> ;
+    ns2:made <http://ceur-ws.org/Vol-1012/#paper-02> ;
+    ns2:name "Gerald Friedland" .
+
+<http://ceur-ws.org/Vol-1012/#GokhaniTur> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/GokhaniTur> ;
+    ns2:made <http://ceur-ws.org/Vol-1012/#paper-17> ;
+    ns2:name "Gokhan Tur" .
+
+<http://ceur-ws.org/Vol-1012/#Gr%C3%A9goriDupuy> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/Gr%C3%A9goriDupuy> ;
+    ns2:made <http://ceur-ws.org/Vol-1012/#paper-14> ;
+    ns2:name "Grégor Dupuy" .
+
+<http://ceur-ws.org/Vol-1012/#GregoryiSenay> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/GregoryiSenay> ;
+    ns2:made <http://ceur-ws.org/Vol-1012/#paper-10> ;
+    ns2:name "Gregory Senay" .
+
+<http://ceur-ws.org/Vol-1012/#GuillaumeiFortier> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/GuillaumeiFortier> ;
+    ns2:made <http://ceur-ws.org/Vol-1012/#paper-09> ;
+    ns2:name "Guillaume Fortier" .
+
+<http://ceur-ws.org/Vol-1012/#HazimiKemaliEkenel> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/HazimiKemaliEkenel> ;
+    ns2:made <http://ceur-ws.org/Vol-1012/#paper-09> ;
+    ns2:name "Hazim Kemal Ekenel" .
+
+<http://ceur-ws.org/Vol-1012/#Herv%C3%A9iBourlard> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/Herv%C3%A9iBourlard> ;
+    ns2:made <http://ceur-ws.org/Vol-1012/#paper-01> ;
+    ns2:name "Hervé Bourlard" .
+
+<http://ceur-ws.org/Vol-1012/#HoumaniGhaemmaghami> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/HoumaniGhaemmaghami> ;
+    ns2:made <http://ceur-ws.org/Vol-1012/#paper-13> ;
+    ns2:name "Houman Ghaemmaghami" .
+
+<http://ceur-ws.org/Vol-1012/#HuaiGao> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/HuaiGao> ;
+    ns2:made <http://ceur-ws.org/Vol-1012/#paper-09> ;
+    ns2:name "Hua Gao" .
+
+<http://ceur-ws.org/Vol-1012/#JakobiVerbeek> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/JakobiVerbeek> ;
+    ns2:made <http://ceur-ws.org/Vol-1012/#paper-09> ;
+    ns2:name "Jakob Verbeek" .
+
+<http://ceur-ws.org/Vol-1012/#JeaniMartinet> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/JeaniMartinet> ;
+    ns2:made <http://ceur-ws.org/Vol-1012/#paper-10> ;
+    ns2:name "Jean Martinet" .
+
+<http://ceur-ws.org/Vol-1012/#JenniferiQuinnell> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/JenniferiQuinnell> ;
+    ns2:made <http://ceur-ws.org/Vol-1012/#paper-05> ;
+    ns2:name "Jennifer Quinnell" .
+
+<http://ceur-ws.org/Vol-1012/#JonasiGehring> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/JonasiGehring> ;
+    ns2:made <http://ceur-ws.org/Vol-1012/#paper-06> ;
+    ns2:name "Jonas Gehring" .
+
+<http://ceur-ws.org/Vol-1012/#JulietteiKahn> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/JulietteiKahn> ;
+    ns2:made <http://ceur-ws.org/Vol-1012/#paper-08> ;
+    ns2:name "Juliette Kahn" .
+
+<http://ceur-ws.org/Vol-1012/#KeviniKilgour> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/KeviniKilgour> ;
+    ns2:made <http://ceur-ws.org/Vol-1012/#paper-06> ;
+    ns2:name "Kevin Kilgour" .
+
+<http://ceur-ws.org/Vol-1012/#KorbinianiRiedhammer> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/KorbinianiRiedhammer> ;
+    ns2:made <http://ceur-ws.org/Vol-1012/#paper-18> ;
+    ns2:name "Korbinian Riedhammer" .
+
+<http://ceur-ws.org/Vol-1012/#LarryiHeck> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/LarryiHeck> ;
+    ns2:made <http://ceur-ws.org/Vol-1012/#paper-17> ;
+    ns2:name "Larry Heck" .
+
+<http://ceur-ws.org/Vol-1012/#LisaiStifelman> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/LisaiStifelman> ;
+    ns2:made <http://ceur-ws.org/Vol-1012/#paper-17> ;
+    ns2:name "Lisa Stifelman" .
+
+<http://ceur-ws.org/Vol-1012/#MadhuiChinthakunta> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/MadhuiChinthakunta> ;
+    ns2:made <http://ceur-ws.org/Vol-1012/#paper-17> ;
+    ns2:name "Madhu Chinthakunta" .
+
+<http://ceur-ws.org/Vol-1012/#MaeliGuillemot> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/MaeliGuillemot> ;
+    ns2:made <http://ceur-ws.org/Vol-1012/#paper-01> ;
+    ns2:name "Mael Guillemot" .
+
+<http://ceur-ws.org/Vol-1012/#MakarandiTapaswi> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/MakarandiTapaswi> ;
+    ns2:made <http://ceur-ws.org/Vol-1012/#paper-09> ;
+    ns2:name "Makarand Tapaswi" .
+
+<http://ceur-ws.org/Vol-1012/#MarciFerr%C3%A0s> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/MarciFerr%C3%A0s> ;
+    ns2:made <http://ceur-ws.org/Vol-1012/#paper-01> ;
+    ns2:name "Marc Ferràs" .
+
+<http://ceur-ws.org/Vol-1012/#MarkiGales> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/MarkiGales> ;
+    ns2:made <http://ceur-ws.org/Vol-1012/#paper-05> ;
+    ns2:name "Mark Gales" .
+
+<http://ceur-ws.org/Vol-1012/#MarthaiLarson> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/MarthaiLarson> ;
+    ns2:made <http://ceur-ws.org/Vol-1012/#paper-16> ;
+    ns2:name "Martha Larson" .
+
+<http://ceur-ws.org/Vol-1012/#MartiniGropp> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/MartiniGropp> ;
+    ns2:made <http://ceur-ws.org/Vol-1012/#paper-18> ;
+    ns2:name "Martin Gropp" .
+
+<http://ceur-ws.org/Vol-1012/#MattiSeigel> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/MattiSeigel> ;
+    ns2:made <http://ceur-ws.org/Vol-1012/#paper-05> ;
+    ns2:name "Matt Seigel" .
+
+<http://ceur-ws.org/Vol-1012/#MeriemiBendris> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/MeriemiBendris> ;
+    ns2:made <http://ceur-ws.org/Vol-1012/#paper-10> ;
+    ns2:name "Meriem Bendris" .
+
+<http://ceur-ws.org/Vol-1012/#MickaeliRouvier> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/MickaeliRouvier> ;
+    ns2:made <http://ceur-ws.org/Vol-1012/#paper-14> ;
+    ns2:name "Mickael Rouvier" .
+
+<http://ceur-ws.org/Vol-1012/#MircoiRavanelli> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/MircoiRavanelli> ;
+    ns2:made <http://ceur-ws.org/Vol-1012/#paper-02> ;
+    ns2:name "Mirco Ravanelli" .
+
+<http://ceur-ws.org/Vol-1012/#MohamediHatmi> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/MohamediHatmi> ;
+    ns2:made <http://ceur-ws.org/Vol-1012/#paper-11> ;
+    ns2:name "Mohamed Hatmi" .
+
+<http://ceur-ws.org/Vol-1012/#MuratiAkbacak> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/MuratiAkbacak> ;
+    ns2:made <http://ceur-ws.org/Vol-1012/#paper-03> ;
+    ns2:name "Murat Akbacak" .
+
+<http://ceur-ws.org/Vol-1012/#NikolaosiPappas> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/NikolaosiPappas> ;
+    ns2:made <http://ceur-ws.org/Vol-1012/#paper-01> ;
+    ns2:name "Nikolaos Pappas" .
+
+<http://ceur-ws.org/Vol-1012/#OlivieriGalibert> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/OlivieriGalibert> ;
+    ns2:made <http://ceur-ws.org/Vol-1012/#paper-08> ;
+    ns2:name "Olivier Galibert" .
+
+<http://ceur-ws.org/Vol-1012/#OscariSaz> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/OscariSaz> ;
+    ns2:made <http://ceur-ws.org/Vol-1012/#paper-05> ;
+    ns2:name "Oscar Saz" .
+
+<http://ceur-ws.org/Vol-1012/#ParthaiParthasarathy> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/ParthaiParthasarathy> ;
+    ns2:made <http://ceur-ws.org/Vol-1012/#paper-17> ;
+    ns2:name "Partha Parthasarathy" .
+
+<http://ceur-ws.org/Vol-1012/#PaweliSwietojanski> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/PaweliSwietojanski> ;
+    ns2:made <http://ceur-ws.org/Vol-1012/#paper-05> ;
+    ns2:name "Pawel Swietojanski" .
+
+<http://ceur-ws.org/Vol-1012/#PhiliWoodland> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/PhiliWoodland> ;
+    ns2:made <http://ceur-ws.org/Vol-1012/#paper-05> ;
+    ns2:name "Phil Woodland" .
+
+<http://ceur-ws.org/Vol-1012/#PierreiLanchantin> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/PierreiLanchantin> ;
+    ns2:made <http://ceur-ws.org/Vol-1012/#paper-05> ;
+    ns2:name "Pierre Lanchantin" .
+
+<http://ceur-ws.org/Vol-1012/#PierreiTirilly> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/PierreiTirilly> ;
+    ns2:made <http://ceur-ws.org/Vol-1012/#paper-10> ;
+    ns2:name "Pierre Tirilly" .
+
+<http://ceur-ws.org/Vol-1012/#QianiYang> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/QianiYang> ;
+    ns2:made <http://ceur-ws.org/Vol-1012/#paper-09> ;
+    ns2:name "Qian Yang" .
+
+<http://ceur-ws.org/Vol-1012/#R%C3%A9miiAuguste> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/R%C3%A9miiAuguste> ;
+    ns2:made <http://ceur-ws.org/Vol-1012/#paper-10> ;
+    ns2:name "Rémi Auguste" .
+
+<http://ceur-ws.org/Vol-1012/#Rainer> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/Rainer> ;
+    ns2:made <http://ceur-ws.org/Vol-1012/#paper-09> ;
+    ns2:name "Rainer" .
+
+<http://ceur-ws.org/Vol-1012/#RichardiDufour> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/RichardiDufour> ;
+    ns2:made <http://ceur-ws.org/Vol-1012/#paper-10> ;
+    ns2:name "Richard Dufour" .
+
+<http://ceur-ws.org/Vol-1012/#RukminiiIyer> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/RukminiiIyer> ;
+    ns2:made <http://ceur-ws.org/Vol-1012/#paper-17> ;
+    ns2:name "Rukmini Iyer" .
+
+<http://ceur-ws.org/Vol-1012/#SandyiIngram> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/SandyiIngram> ;
+    ns2:made <http://ceur-ws.org/Vol-1012/#paper-01> ;
+    ns2:name "Sandy Ingram" .
+
+<http://ceur-ws.org/Vol-1012/#SebastianiSt%C3%BCker> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/SebastianiSt%C3%BCker> ;
+    ns2:made <http://ceur-ws.org/Vol-1012/#paper-06> ;
+    ns2:name "Sebastian Stüker" .
+
+<http://ceur-ws.org/Vol-1012/#SophieiRosset> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/SophieiRosset> ;
+    ns2:made <http://ceur-ws.org/Vol-1012/#paper-09> ;
+    ns2:name "Sophie Rosset" .
+
+<http://ceur-ws.org/Vol-1012/#SridhaiSridharan> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/SridhaiSridharan> ;
+    ns2:made <http://ceur-ws.org/Vol-1012/#paper-13> ;
+    ns2:name "Sridha Sridharan" .
+
+<http://ceur-ws.org/Vol-1012/#St%C3%A9phaneiAyache> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/St%C3%A9phaneiAyache> ;
+    ns2:made <http://ceur-ws.org/Vol-1012/#paper-10> ;
+    ns2:name "Stéphane Ayache" .
+
+<http://ceur-ws.org/Vol-1012/#StefaniSteidl> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/StefaniSteidl> ;
+    ns2:made <http://ceur-ws.org/Vol-1012/#paper-18> ;
+    ns2:name "Stefan Steidl" .
+
+<http://ceur-ws.org/Vol-1012/#StefaniZiegler> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/StefaniZiegler> ;
+    ns2:made <http://ceur-ws.org/Vol-1012/#paper-07> ;
+    ns2:name "Stefan Ziegler" .
+
+<http://ceur-ws.org/Vol-1012/#ThomasiHain> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/ThomasiHain> ;
+    ns2:made <http://ceur-ws.org/Vol-1012/#paper-05> ;
+    ns2:name "Thomas Hain" .
+
+<http://ceur-ws.org/Vol-1012/#TobiasiBocklet> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/TobiasiBocklet> ;
+    ns2:made <http://ceur-ws.org/Vol-1012/#paper-18> ;
+    ns2:name "Tobias Bocklet" .
+
+<http://ceur-ws.org/Vol-1012/#Viet-BaciLe> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/Viet-BaciLe> ;
+    ns2:made <http://ceur-ws.org/Vol-1012/#paper-09> ;
+    ns2:name "Viet-Bac Le" .
+
+<http://ceur-ws.org/Vol-1012/#XunyingiLiu> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/XunyingiLiu> ;
+    ns2:made <http://ceur-ws.org/Vol-1012/#paper-05> ;
+    ns2:name "Xunying Liu" .
+
+<http://ceur-ws.org/Vol-1012/#YanhuaiLong> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/YanhuaiLong> ;
+    ns2:made <http://ceur-ws.org/Vol-1012/#paper-05> ;
+    ns2:name "Yanhua Long" .
+
+<http://ceur-ws.org/Vol-1012/#event> a ns6:WorkshopEvent ;
+    ns6:hasLocation <http://dbpedia.org/resource/France> ;
+    ns6:hasPart <http://ceur-ws.org/Vol-1012/#part-SLAM> ;
+    ns6:isSubEventOf <http://ceur-ws.org/Vol-1012/#conf> ;
+    ns7:beginsAtDatetime "2013-08-22T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:endsAtDatetime "2013-08-23T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:license "http://choosealicense.com/licenses/no-license/" .
+
+<http://ceur-ws.org/Vol-1012/#BenjaminiBigot> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/BenjaminiBigot> ;
+    ns2:made <http://ceur-ws.org/Vol-1012/#paper-10>,
+        <http://ceur-ws.org/Vol-1012/#paper-12> ;
+    ns2:name "Benjamin Bigot" .
+
+<http://ceur-ws.org/Vol-1012/#ClaudeiBarras> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/ClaudeiBarras> ;
+    ns2:made <http://ceur-ws.org/Vol-1012/#paper-09>,
+        <http://ceur-ws.org/Vol-1012/#paper-15> ;
+    ns2:name "Claude Barras" .
+
+<http://ceur-ws.org/Vol-1012/#CorinneiFredouille> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/CorinneiFredouille> ;
+    ns2:made <http://ceur-ws.org/Vol-1012/#paper-10>,
+        <http://ceur-ws.org/Vol-1012/#paper-12> ;
+    ns2:name "Corinne Fredouille" .
+
+<http://ceur-ws.org/Vol-1012/#DelphineiCharlet> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/DelphineiCharlet> ;
+    ns2:made <http://ceur-ws.org/Vol-1012/#paper-10>,
+        <http://ceur-ws.org/Vol-1012/#paper-12> ;
+    ns2:name "Delphine Charlet" .
+
+<http://ceur-ws.org/Vol-1012/#DiegoiCast%C3%A1n> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/DiegoiCast%C3%A1n> ;
+    ns2:made <http://ceur-ws.org/Vol-1012/#paper-03>,
+        <http://ceur-ws.org/Vol-1012/#paper-04> ;
+    ns2:name "Diego Castán" .
+
+<http://ceur-ws.org/Vol-1012/#GeorgesiQu%C3%A9not> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/GeorgesiQu%C3%A9not> ;
+    ns2:made <http://ceur-ws.org/Vol-1012/#paper-09>,
+        <http://ceur-ws.org/Vol-1012/#paper-15> ;
+    ns2:name "Georges Quénot" .
+
+<http://ceur-ws.org/Vol-1012/#GuillaumeiGravier> a ns2:Person ;
+    ns1:affiliation "IRISA, Rennes, FR" ;
+    ns3:sameAs <http://ceur-ws.org/persons/GuillaumeiGravier> ;
+    ns2:made <http://ceur-ws.org/Vol-1012/#paper-07> ;
+    ns2:name "Guillaume Gravier" .
+
+<http://ceur-ws.org/Vol-1012/#Herv%C3%A9iBredin> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/Herv%C3%A9iBredin> ;
+    ns2:made <http://ceur-ws.org/Vol-1012/#paper-09>,
+        <http://ceur-ws.org/Vol-1012/#paper-15> ;
+    ns2:name "Hervé Bredin" .
+
+<http://ceur-ws.org/Vol-1012/#JohanniPoignant> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/JohanniPoignant> ;
+    ns2:made <http://ceur-ws.org/Vol-1012/#paper-09>,
+        <http://ceur-ws.org/Vol-1012/#paper-15> ;
+    ns2:name "Johann Poignant" .
+
+<http://ceur-ws.org/Vol-1012/#LaurentiBesacier> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/LaurentiBesacier> ;
+    ns2:made <http://ceur-ws.org/Vol-1012/#paper-09>,
+        <http://ceur-ws.org/Vol-1012/#paper-15> ;
+    ns2:name "Laurent Besacier" .
+
+<http://ceur-ws.org/Vol-1012/#PeteriBell> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/PeteriBell> ;
+    ns2:made <http://ceur-ws.org/Vol-1012/#paper-01>,
+        <http://ceur-ws.org/Vol-1012/#paper-05> ;
+    ns2:name "Peter Bell" .
+
+<http://ceur-ws.org/Vol-1012/#SteveiRenals> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/SteveiRenals> ;
+    ns2:made <http://ceur-ws.org/Vol-1012/#paper-01>,
+        <http://ceur-ws.org/Vol-1012/#paper-05> ;
+    ns2:name "Steve Renals" .
+
+<http://ceur-ws.org/Vol-1012/#SylvainiMeignier> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/SylvainiMeignier> ;
+    ns2:made <http://ceur-ws.org/Vol-1012/#paper-11>,
+        <http://ceur-ws.org/Vol-1012/#paper-14> ;
+    ns2:name "Sylvain Meignier" .
+
+<http://ceur-ws.org/Vol-1012/#paper-03> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1012/> ;
+    ns5:title "Segmental-GMM Approach based on Acoustic Concept Segmentation" ;
+    ns4:endPage 19 ;
+    ns4:numPages 5 ;
+    ns4:section <http://ceur-ws.org/Vol-1012/#Session1AudioVideoeventdetectionandsegmentation> ;
+    ns4:startPage 15 ;
+    ns1:author <http://ceur-ws.org/Vol-1012/#DiegoiCast%C3%A1n>,
+        <http://ceur-ws.org/Vol-1012/#MuratiAkbacak> .
+
+<http://ceur-ws.org/Vol-1012/#paper-07> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1012/> ;
+    ns5:title "A Framework for Integrating Heterogeneous Sporadic Knowledge Sources into Automatic Speech Recognition" ;
+    ns4:endPage 42 ;
+    ns4:numPages 6 ;
+    ns4:section <http://ceur-ws.org/Vol-1012/#Session2ASRinMultimediadocuments> ;
+    ns4:startPage 37 ;
+    ns1:author <http://ceur-ws.org/Vol-1012/#GuillaumeiGravier>,
+        <http://ceur-ws.org/Vol-1012/#StefaniZiegler> .
+
+<http://ceur-ws.org/Vol-1012/#paper-08> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1012/> ;
+    ns5:title "The First Official REPERE Evaluation" ;
+    ns4:endPage 48 ;
+    ns4:numPages 6 ;
+    ns4:section <http://ceur-ws.org/Vol-1012/#Session3Multimediapersonrecognition> ;
+    ns4:startPage 43 ;
+    ns1:author <http://ceur-ws.org/Vol-1012/#JulietteiKahn>,
+        <http://ceur-ws.org/Vol-1012/#OlivieriGalibert> .
+
+<http://ceur-ws.org/Vol-1012/#paper-16> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1012/> ;
+    ns5:title "Narrative-driven Multimedia Tagging and Retrieval: Investigating Design and Practice for Speech-based Mobile Applications" ;
+    ns4:endPage 95 ;
+    ns4:numPages 6 ;
+    ns4:section <http://ceur-ws.org/Vol-1012/#Session5Multimediaapplicationsandcorpus> ;
+    ns4:startPage 90 ;
+    ns1:author <http://ceur-ws.org/Vol-1012/#AbhigyaniSingh>,
+        <http://ceur-ws.org/Vol-1012/#MarthaiLarson> .
+
+<http://ceur-ws.org/Vol-1012/#Session2ASRinMultimediadocuments> a ns6:SessionEvent ;
+    ns6:partOf <http://ceur-ws.org/Vol-1012/> ;
+    ns5:title "Session 2 : ASR in Multimedia documents" .
+
+<http://ceur-ws.org/Vol-1012/#Session5Multimediaapplicationsandcorpus> a ns6:SessionEvent ;
+    ns6:partOf <http://ceur-ws.org/Vol-1012/> ;
+    ns5:title "Session 5 : Multimedia applications and corpus" .
+
+<http://ceur-ws.org/Vol-1012/#paper-02> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1012/> ;
+    ns5:title "Audio Concept Ranking for Video Event Detection on User-Generated Content" ;
+    ns4:endPage 14 ;
+    ns4:numPages 6 ;
+    ns4:section <http://ceur-ws.org/Vol-1012/#Session1AudioVideoeventdetectionandsegmentation> ;
+    ns4:startPage 9 ;
+    ns1:author <http://ceur-ws.org/Vol-1012/#BenjaminiElizalde>,
+        <http://ceur-ws.org/Vol-1012/#GeraldiFriedland>,
+        <http://ceur-ws.org/Vol-1012/#MircoiRavanelli> .
+
+<http://ceur-ws.org/Vol-1012/#paper-12> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1012/> ;
+    ns5:title "Speaker Role Recognition on TV Broadcast Documents" ;
+    ns4:endPage 71 ;
+    ns4:numPages 6 ;
+    ns4:section <http://ceur-ws.org/Vol-1012/#Session4SpeakerSpeakerrolesrecognition> ;
+    ns4:startPage 66 ;
+    ns1:author <http://ceur-ws.org/Vol-1012/#BenjaminiBigot>,
+        <http://ceur-ws.org/Vol-1012/#CorinneiFredouille>,
+        <http://ceur-ws.org/Vol-1012/#DelphineiCharlet> .
+
+<http://ceur-ws.org/Vol-1012/#paper-13> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1012/> ;
+    ns5:title "Speaker Attribution of Australian Broadcast News Data" ;
+    ns4:endPage 77 ;
+    ns4:numPages 6 ;
+    ns4:section <http://ceur-ws.org/Vol-1012/#Session4SpeakerSpeakerrolesrecognition> ;
+    ns4:startPage 72 ;
+    ns1:author <http://ceur-ws.org/Vol-1012/#DavidiDean>,
+        <http://ceur-ws.org/Vol-1012/#HoumaniGhaemmaghami>,
+        <http://ceur-ws.org/Vol-1012/#SridhaiSridharan> .
+
+<http://ceur-ws.org/Vol-1012/#Session1AudioVideoeventdetectionandsegmentation> a ns6:SessionEvent ;
+    ns6:partOf <http://ceur-ws.org/Vol-1012/> ;
+    ns5:title "Session 1 : Audio & Video event detection and segmentation" .
+
+<http://ceur-ws.org/Vol-1012/#Session3Multimediapersonrecognition> a ns6:SessionEvent ;
+    ns6:partOf <http://ceur-ws.org/Vol-1012/> ;
+    ns5:title "Session 3 : Multimedia person recognition" .
+
+<http://ceur-ws.org/Vol-1012/#Session4SpeakerSpeakerrolesrecognition> a ns6:SessionEvent ;
+    ns6:partOf <http://ceur-ws.org/Vol-1012/> ;
+    ns5:title "Session 4 : Speaker & Speaker roles recognition" .
+
+<http://ceur-ws.org/Vol-1012/#paper-04> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1012/> ;
+    ns5:title "Broadcast News Segmentation with Factor Analysis System" ;
+    ns4:endPage 25 ;
+    ns4:numPages 6 ;
+    ns4:section <http://ceur-ws.org/Vol-1012/#Session1AudioVideoeventdetectionandsegmentation> ;
+    ns4:startPage 20 ;
+    ns1:author <http://ceur-ws.org/Vol-1012/#AlfonsoiOrtega>,
+        <http://ceur-ws.org/Vol-1012/#AntonioiMiguel>,
+        <http://ceur-ws.org/Vol-1012/#DiegoiCast%C3%A1n>,
+        <http://ceur-ws.org/Vol-1012/#EduardoiLleida> .
+
+<http://ceur-ws.org/Vol-1012/#paper-11> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1012/> ;
+    ns5:title "Named Entity Recognition in Speech Transcripts following an Extended Taxonomy" ;
+    ns4:endPage 65 ;
+    ns4:numPages 5 ;
+    ns4:section <http://ceur-ws.org/Vol-1012/#Session3Multimediapersonrecognition> ;
+    ns4:startPage 61 ;
+    ns1:author <http://ceur-ws.org/Vol-1012/#ChristineiJacquin>,
+        <http://ceur-ws.org/Vol-1012/#EmmanueliMorin>,
+        <http://ceur-ws.org/Vol-1012/#MohamediHatmi>,
+        <http://ceur-ws.org/Vol-1012/#SylvainiMeignier> .
+
+<http://ceur-ws.org/Vol-1012/#paper-14> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1012/> ;
+    ns5:title "Semi-Supervised and Unsupervised Data Extraction Targeting Speakers: From Speaker Roles to Fame?" ;
+    ns4:endPage 83 ;
+    ns4:numPages 6 ;
+    ns4:section <http://ceur-ws.org/Vol-1012/#Session4SpeakerSpeakerrolesrecognition> ;
+    ns4:startPage 78 ;
+    ns1:author <http://ceur-ws.org/Vol-1012/#CaroleiLailler>,
+        <http://ceur-ws.org/Vol-1012/#Gr%C3%A9goriDupuy>,
+        <http://ceur-ws.org/Vol-1012/#MickaeliRouvier>,
+        <http://ceur-ws.org/Vol-1012/#SylvainiMeignier> .
+
+<http://ceur-ws.org/Vol-1012/#paper-15> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1012/> ;
+    ns5:title "Towards a Better Integration of Written Names for Unsupervised Speakers Identification in Videos" ;
+    ns4:endPage 89 ;
+    ns4:numPages 6 ;
+    ns4:section <http://ceur-ws.org/Vol-1012/#Session4SpeakerSpeakerrolesrecognition> ;
+    ns4:startPage 84 ;
+    ns1:author <http://ceur-ws.org/Vol-1012/#ClaudeiBarras>,
+        <http://ceur-ws.org/Vol-1012/#GeorgesiQu%C3%A9not>,
+        <http://ceur-ws.org/Vol-1012/#Herv%C3%A9iBredin>,
+        <http://ceur-ws.org/Vol-1012/#JohanniPoignant>,
+        <http://ceur-ws.org/Vol-1012/#LaurentiBesacier> .
+
+<http://ceur-ws.org/Vol-1012/#paper-06> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1012/> ;
+    ns5:title "Slightly Supervised Adaptation of Acoustic Models on Captioned BBC Weather Forecasts" ;
+    ns4:endPage 36 ;
+    ns4:numPages 5 ;
+    ns4:section <http://ceur-ws.org/Vol-1012/#Session2ASRinMultimediadocuments> ;
+    ns4:startPage 32 ;
+    ns1:author <http://ceur-ws.org/Vol-1012/#AlexiWaibel>,
+        <http://ceur-ws.org/Vol-1012/#ChristianiMohr>,
+        <http://ceur-ws.org/Vol-1012/#ChristianiSaam>,
+        <http://ceur-ws.org/Vol-1012/#JonasiGehring>,
+        <http://ceur-ws.org/Vol-1012/#KeviniKilgour>,
+        <http://ceur-ws.org/Vol-1012/#SebastianiSt%C3%BCker> .
+
+<http://ceur-ws.org/Vol-1012/#paper-18> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1012/> ;
+    ns5:title "LMELECTURES: A Multimedia Corpus of Academic Spoken English" ;
+    ns4:endPage 107 ;
+    ns4:numPages 6 ;
+    ns4:section <http://ceur-ws.org/Vol-1012/#Session5Multimediaapplicationsandcorpus> ;
+    ns4:startPage 102 ;
+    ns1:author <http://ceur-ws.org/Vol-1012/#ElmariN%C3%B6th>,
+        <http://ceur-ws.org/Vol-1012/#FlorianiH%C3%B6nig>,
+        <http://ceur-ws.org/Vol-1012/#KorbinianiRiedhammer>,
+        <http://ceur-ws.org/Vol-1012/#MartiniGropp>,
+        <http://ceur-ws.org/Vol-1012/#StefaniSteidl>,
+        <http://ceur-ws.org/Vol-1012/#TobiasiBocklet> .
+
+<http://ceur-ws.org/Vol-1012/#paper-01> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1012/> ;
+    ns5:title "Processing and Linking Audio Events in Large Multimedia Archives: The EU inEvent Project" ;
+    ns4:endPage 8 ;
+    ns4:numPages 6 ;
+    ns4:section <http://ceur-ws.org/Vol-1012/#Session1AudioVideoeventdetectionandsegmentation> ;
+    ns4:startPage 3 ;
+    ns1:author <http://ceur-ws.org/Vol-1012/#AndreiiPopescu-Belis>,
+        <http://ceur-ws.org/Vol-1012/#FergusiMcInnes>,
+        <http://ceur-ws.org/Vol-1012/#Herv%C3%A9iBourlard>,
+        <http://ceur-ws.org/Vol-1012/#MaeliGuillemot>,
+        <http://ceur-ws.org/Vol-1012/#MarciFerr%C3%A0s>,
+        <http://ceur-ws.org/Vol-1012/#NikolaosiPappas>,
+        <http://ceur-ws.org/Vol-1012/#PeteriBell>,
+        <http://ceur-ws.org/Vol-1012/#SandyiIngram>,
+        <http://ceur-ws.org/Vol-1012/#SteveiRenals> .
+
+<http://ceur-ws.org/Vol-1012/#paper-17> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1012/> ;
+    ns5:title "Multi-Modal Conversational Search and Browse" ;
+    ns4:endPage 101 ;
+    ns4:numPages 6 ;
+    ns4:section <http://ceur-ws.org/Vol-1012/#Session5Multimediaapplicationsandcorpus> ;
+    ns4:startPage 96 ;
+    ns1:author <http://ceur-ws.org/Vol-1012/#AshleyiFidler>,
+        <http://ceur-ws.org/Vol-1012/#DilekiHakkani-Tur>,
+        <http://ceur-ws.org/Vol-1012/#ElizabethiShriberg>,
+        <http://ceur-ws.org/Vol-1012/#GokhaniTur>,
+        <http://ceur-ws.org/Vol-1012/#LarryiHeck>,
+        <http://ceur-ws.org/Vol-1012/#LisaiStifelman>,
+        <http://ceur-ws.org/Vol-1012/#MadhuiChinthakunta>,
+        <http://ceur-ws.org/Vol-1012/#ParthaiParthasarathy>,
+        <http://ceur-ws.org/Vol-1012/#RukminiiIyer> .
+
+<http://ceur-ws.org/Vol-1012/#paper-05> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1012/> ;
+    ns5:title "Automatic Transcription of Multi-genre Media Archives" ;
+    ns4:endPage 31 ;
+    ns4:numPages 6 ;
+    ns4:section <http://ceur-ws.org/Vol-1012/#Session2ASRinMultimediadocuments> ;
+    ns4:startPage 26 ;
+    ns1:author <http://ceur-ws.org/Vol-1012/#JenniferiQuinnell>,
+        <http://ceur-ws.org/Vol-1012/#MarkiGales>,
+        <http://ceur-ws.org/Vol-1012/#MattiSeigel>,
+        <http://ceur-ws.org/Vol-1012/#OscariSaz>,
+        <http://ceur-ws.org/Vol-1012/#PaweliSwietojanski>,
+        <http://ceur-ws.org/Vol-1012/#PeteriBell>,
+        <http://ceur-ws.org/Vol-1012/#PhiliWoodland>,
+        <http://ceur-ws.org/Vol-1012/#PierreiLanchantin>,
+        <http://ceur-ws.org/Vol-1012/#SteveiRenals>,
+        <http://ceur-ws.org/Vol-1012/#ThomasiHain>,
+        <http://ceur-ws.org/Vol-1012/#XunyingiLiu>,
+        <http://ceur-ws.org/Vol-1012/#YanhuaiLong> .
+
+<http://ceur-ws.org/Vol-1012/#paper-10> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1012/> ;
+    ns5:title "PERCOLI: A Person Identification System for the 2013 REPERE Challenge" ;
+    ns4:endPage 60 ;
+    ns4:numPages 6 ;
+    ns4:section <http://ceur-ws.org/Vol-1012/#Session3Multimediapersonrecognition> ;
+    ns4:startPage 55 ;
+    ns1:author <http://ceur-ws.org/Vol-1012/#AlexandreiDelteil>,
+        <http://ceur-ws.org/Vol-1012/#BenjaminiBigot>,
+        <http://ceur-ws.org/Vol-1012/#BenoitiFavre>,
+        <http://ceur-ws.org/Vol-1012/#CorinneiFredouille>,
+        <http://ceur-ws.org/Vol-1012/#DelphineiCharlet>,
+        <http://ceur-ws.org/Vol-1012/#FredericiBechet>,
+        <http://ceur-ws.org/Vol-1012/#G%C3%A9raldineiDamnati>,
+        <http://ceur-ws.org/Vol-1012/#GeorgesiLinar%C3%A8s>,
+        <http://ceur-ws.org/Vol-1012/#GregoryiSenay>,
+        <http://ceur-ws.org/Vol-1012/#JeaniMartinet>,
+        <http://ceur-ws.org/Vol-1012/#MeriemiBendris>,
+        <http://ceur-ws.org/Vol-1012/#PierreiTirilly>,
+        <http://ceur-ws.org/Vol-1012/#R%C3%A9miiAuguste>,
+        <http://ceur-ws.org/Vol-1012/#RichardiDufour>,
+        <http://ceur-ws.org/Vol-1012/#St%C3%A9phaneiAyache> .
+
+<http://ceur-ws.org/Vol-1012/#paper-09> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1012/> ;
+    ns5:title "QCompere @ REPERE 2013" ;
+    ns4:endPage 54 ;
+    ns4:numPages 6 ;
+    ns4:section <http://ceur-ws.org/Vol-1012/#Session3Multimediapersonrecognition> ;
+    ns4:startPage 49 ;
+    ns1:author <http://ceur-ws.org/Vol-1012/#AchintyaiSarkar>,
+        <http://ceur-ws.org/Vol-1012/#AlexisiMignon>,
+        <http://ceur-ws.org/Vol-1012/#AnindyaiRoy>,
+        <http://ceur-ws.org/Vol-1012/#ClaudeiBarras>,
+        <http://ceur-ws.org/Vol-1012/#GeorgesiQu%C3%A9not>,
+        <http://ceur-ws.org/Vol-1012/#GuillaumeiFortier>,
+        <http://ceur-ws.org/Vol-1012/#HazimiKemaliEkenel>,
+        <http://ceur-ws.org/Vol-1012/#Herv%C3%A9iBredin>,
+        <http://ceur-ws.org/Vol-1012/#HuaiGao>,
+        <http://ceur-ws.org/Vol-1012/#JakobiVerbeek>,
+        <http://ceur-ws.org/Vol-1012/#JohanniPoignant>,
+        <http://ceur-ws.org/Vol-1012/#LaurentiBesacier>,
+        <http://ceur-ws.org/Vol-1012/#MakarandiTapaswi>,
+        <http://ceur-ws.org/Vol-1012/#QianiYang>,
+        <http://ceur-ws.org/Vol-1012/#Rainer>,
+        <http://ceur-ws.org/Vol-1012/#SophieiRosset>,
+        <http://ceur-ws.org/Vol-1012/#Viet-BaciLe> .
+
+<http://ceur-ws.org/Vol-1012/> a ns6:Proceedings ;
+    ns6:hasPart <http://ceur-ws.org/Vol-1012/#paper-01>,
+        <http://ceur-ws.org/Vol-1012/#paper-02>,
+        <http://ceur-ws.org/Vol-1012/#paper-03>,
+        <http://ceur-ws.org/Vol-1012/#paper-04>,
+        <http://ceur-ws.org/Vol-1012/#paper-05>,
+        <http://ceur-ws.org/Vol-1012/#paper-06>,
+        <http://ceur-ws.org/Vol-1012/#paper-07>,
+        <http://ceur-ws.org/Vol-1012/#paper-08>,
+        <http://ceur-ws.org/Vol-1012/#paper-09>,
+        <http://ceur-ws.org/Vol-1012/#paper-10>,
+        <http://ceur-ws.org/Vol-1012/#paper-11>,
+        <http://ceur-ws.org/Vol-1012/#paper-12>,
+        <http://ceur-ws.org/Vol-1012/#paper-13>,
+        <http://ceur-ws.org/Vol-1012/#paper-14>,
+        <http://ceur-ws.org/Vol-1012/#paper-15>,
+        <http://ceur-ws.org/Vol-1012/#paper-16>,
+        <http://ceur-ws.org/Vol-1012/#paper-17>,
+        <http://ceur-ws.org/Vol-1012/#paper-18> ;
+    ns6:hasSession <http://ceur-ws.org/Vol-1012/#Session1AudioVideoeventdetectionandsegmentation>,
+        <http://ceur-ws.org/Vol-1012/#Session2ASRinMultimediadocuments>,
+        <http://ceur-ws.org/Vol-1012/#Session3Multimediapersonrecognition>,
+        <http://ceur-ws.org/Vol-1012/#Session4SpeakerSpeakerrolesrecognition>,
+        <http://ceur-ws.org/Vol-1012/#Session5Multimediaapplicationsandcorpus> ;
+    ns9:issued "2013-08-06T00:00:00+00:00"^^xsd:dateTime ;
+    ns4:presentedAt <http://ceur-ws.org/Vol-1012/#event> ;
+    ns1:editor <http://ceur-ws.org/Vol-1012/#Fr%C3%A9d%C3%A9riciB%C3%A9chet>,
         <http://ceur-ws.org/Vol-1012/#GuillaumeiGravier> .
-
-<http://ceur-ws.org/Vol-1012/#Fr%C3%A9d%C3%A9riciB%C3%A9chet> a ns7:Person ;
-    ns8:sameAs <http://ceur-ws.org/persons/Fr%C3%A9d%C3%A9riciB%C3%A9chet> ;
-    ns7:name "Frédéric Béchet" .
-
-<http://ceur-ws.org/Vol-1012/#GuillaumeiGravier> a ns7:Person ;
-    ns8:sameAs <http://ceur-ws.org/persons/GuillaumeiGravier> ;
-    ns7:name "Guillaume Gravier" .
-
-<http://ceur-ws.org/Vol-1012/#event> a ns2:WorkshopEvent ;
-    ns2:hasLocation <http://dbpedia.org/resource/France> ;
-    ns2:hasPart <http://ceur-ws.org/Vol-1012/#part-CEUR-WS> ;
-    ns2:isSubEventOf <http://ceur-ws.org/Vol-1012/#conf> ;
-    ns3:beginsAtDatetime "2013-08-22T00:00:00+00:00"^^xsd:dateTime ;
-    ns3:endsAtDatetime "2013-08-23T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:license "http://choosealicense.com/licenses/no-license/" .
 

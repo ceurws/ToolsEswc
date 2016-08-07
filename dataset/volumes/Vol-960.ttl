@@ -1,50 +1,460 @@
-@prefix ns1: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns2: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns3: <http://purl.org/ontology/bibo/#> .
-@prefix ns4: <http://www.w3.org/2002/07/owl#> .
-@prefix ns5: <http://purl.org/dc/elements/1.1/> .
-@prefix ns6: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns1: <http://www.w3.org/2002/07/owl#> .
+@prefix ns2: <http://purl.org/ontology/bibo/#> .
+@prefix ns3: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns4: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns5: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns6: <http://purl.org/dc/elements/1.1/#> .
 @prefix ns7: <http://xmlns.com/foaf/0.1/> .
-@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns9: <http://purl.org/dc/elements/1.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-960/> a ns1:Proceedings ;
-    ns8:issued "2013-02-07T00:00:00+00:00"^^xsd:dateTime ;
-    ns3:presentedAt <http://ceur-ws.org/Vol-960/#event> ;
-    ns2:editor <http://ceur-ws.org/Vol-960/#Jo%C3%A3oiGama>,
-        <http://ceur-ws.org/Vol-960/#ManueliSantos>,
-        <http://ceur-ws.org/Vol-960/#NunoiMarques>,
-        <http://ceur-ws.org/Vol-960/#PauloiCortez>,
-        <http://ceur-ws.org/Vol-960/#PedroiRodrigues> .
+<http://ceur-ws.org/Vol-960/#AlexandreiLopes> a ns7:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/AlexandreiLopes> ;
+    ns7:made <http://ceur-ws.org/Vol-960/#paper8> ;
+    ns7:name "Alexandre Lopes" .
 
-<http://ceur-ws.org/Vol-960/#Jo%C3%A3oiGama> a ns7:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/Jo%C3%A3oiGama> ;
-    ns7:name "João Gama" .
+<http://ceur-ws.org/Vol-960/#AuduniBotterud> a ns7:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/AuduniBotterud> ;
+    ns7:made <http://ceur-ws.org/Vol-960/#paper6> ;
+    ns7:name "Audun Botterud" .
+
+<http://ceur-ws.org/Vol-960/#BrunoiSilva> a ns7:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/BrunoiSilva> ;
+    ns7:made <http://ceur-ws.org/Vol-960/#paper9> ;
+    ns7:name "Bruno Silva" .
+
+<http://ceur-ws.org/Vol-960/#ChristineiKorner> a ns7:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/ChristineiKorner> ;
+    ns7:made <http://ceur-ws.org/Vol-960/#paper5> ;
+    ns7:name "Christine Korner" .
+
+<http://ceur-ws.org/Vol-960/#FarekiLazhar> a ns7:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/FarekiLazhar> ;
+    ns7:made <http://ceur-ws.org/Vol-960/#poster4> ;
+    ns7:name "Farek Lazhar" .
+
+<http://ceur-ws.org/Vol-960/#FelipiMiralles> a ns7:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/FelipiMiralles> ;
+    ns7:made <http://ceur-ws.org/Vol-960/#poster2> ;
+    ns7:name "Felip Miralles" .
+
+<http://ceur-ws.org/Vol-960/#GiaiNguyen> a ns7:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/GiaiNguyen> ;
+    ns7:made <http://ceur-ws.org/Vol-960/#paper7> ;
+    ns7:name "Gia Nguyen" .
+
+<http://ceur-ws.org/Vol-960/#GiangiNguyeniDoaniMinh> a ns7:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/GiangiNguyeniDoaniMinh> ;
+    ns7:made <http://ceur-ws.org/Vol-960/#paper7> ;
+    ns7:name "Giang Nguyen Doan Minh" .
+
+<http://ceur-ws.org/Vol-960/#GiseleiPanosso> a ns7:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/GiseleiPanosso> ;
+    ns7:made <http://ceur-ws.org/Vol-960/#paper9> ;
+    ns7:name "Gisele Panosso" .
+
+<http://ceur-ws.org/Vol-960/#GuillaumeiLemaitre> a ns7:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/GuillaumeiLemaitre> ;
+    ns7:made <http://ceur-ws.org/Vol-960/#poster2> ;
+    ns7:name "Guillaume Lemaitre" .
+
+<http://ceur-ws.org/Vol-960/#HideyukiiTokuda> a ns7:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/HideyukiiTokuda> ;
+    ns7:made <http://ceur-ws.org/Vol-960/#paper7> ;
+    ns7:name "Hideyuki Tokuda" .
+
+<http://ceur-ws.org/Vol-960/#JelenaiFiosina> a ns7:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/JelenaiFiosina> ;
+    ns7:made <http://ceur-ws.org/Vol-960/#paper1> ;
+    ns7:name "Jelena Fiosina" .
+
+<http://ceur-ws.org/Vol-960/#JiniNakazawa> a ns7:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/JiniNakazawa> ;
+    ns7:made <http://ceur-ws.org/Vol-960/#paper7> ;
+    ns7:name "Jin Nakazawa" .
+
+<http://ceur-ws.org/Vol-960/#JorgeiFreireideiSousa> a ns7:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/JorgeiFreireideiSousa> ;
+    ns7:made <http://ceur-ws.org/Vol-960/#paper3> ;
+    ns7:name "Jorge Freire de Sousa" .
+
+<http://ceur-ws.org/Vol-960/#KazunoriiTakashio> a ns7:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/KazunoriiTakashio> ;
+    ns7:made <http://ceur-ws.org/Vol-960/#paper7> ;
+    ns7:name "Kazunori Takashio" .
+
+<http://ceur-ws.org/Vol-960/#LuisiMoreira-Matias> a ns7:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/LuisiMoreira-Matias> ;
+    ns7:made <http://ceur-ws.org/Vol-960/#paper3> ;
+    ns7:name "Luis Moreira-Matias" .
+
+<http://ceur-ws.org/Vol-960/#M%C3%A1rciaiOliveira> a ns7:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/M%C3%A1rciaiOliveira> ;
+    ns7:made <http://ceur-ws.org/Vol-960/#paper2> ;
+    ns7:name "Márcia Oliveira" .
+
+<http://ceur-ws.org/Vol-960/#MaksimsiFiosins> a ns7:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/MaksimsiFiosins> ;
+    ns7:made <http://ceur-ws.org/Vol-960/#paper1> ;
+    ns7:name "Maksims Fiosins" .
 
 <http://ceur-ws.org/Vol-960/#ManueliSantos> a ns7:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/ManueliSantos> ;
+    ns3:affiliation "" ;
+    ns1:sameAs <http://ceur-ws.org/persons/ManueliSantos> ;
     ns7:name "Manuel Santos" .
 
-<http://ceur-ws.org/Vol-960/#NunoiMarques> a ns7:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/NunoiMarques> ;
-    ns7:name "Nuno Marques" .
+<http://ceur-ws.org/Vol-960/#MarleyiVellasco> a ns7:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/MarleyiVellasco> ;
+    ns7:made <http://ceur-ws.org/Vol-960/#poster1> ;
+    ns7:name "Marley Vellasco" .
+
+<http://ceur-ws.org/Vol-960/#MichaeliMock> a ns7:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/MichaeliMock> ;
+    ns7:made <http://ceur-ws.org/Vol-960/#paper5> ;
+    ns7:name "Michael Mock" .
+
+<http://ceur-ws.org/Vol-960/#MojdehiRastgooiDastjerdi> a ns7:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/MojdehiRastgooiDastjerdi> ;
+    ns7:made <http://ceur-ws.org/Vol-960/#poster2> ;
+    ns7:name "Mojdeh Rastgoo Dastjerdi" .
+
+<http://ceur-ws.org/Vol-960/#PascaliPoncelet> a ns7:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/PascaliPoncelet> ;
+    ns7:made <http://ceur-ws.org/Vol-960/#invited2> ;
+    ns7:name "Pascal Poncelet" .
 
 <http://ceur-ws.org/Vol-960/#PauloiCortez> a ns7:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/PauloiCortez> ;
+    ns3:affiliation "" ;
+    ns1:sameAs <http://ceur-ws.org/persons/PauloiCortez> ;
     ns7:name "Paulo Cortez" .
 
+<http://ceur-ws.org/Vol-960/#PedroiPereiraiRodrigues> a ns7:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/PedroiPereiraiRodrigues> ;
+    ns7:made <http://ceur-ws.org/Vol-960/#paper4> ;
+    ns7:name "Pedro Pereira Rodrigues" .
+
 <http://ceur-ws.org/Vol-960/#PedroiRodrigues> a ns7:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/PedroiRodrigues> ;
+    ns3:affiliation "" ;
+    ns1:sameAs <http://ceur-ws.org/persons/PedroiRodrigues> ;
     ns7:name "Pedro Rodrigues" .
 
-<http://ceur-ws.org/Vol-960/#event> a ns1:WorkshopEvent ;
-    ns1:hasLocation <http://dbpedia.org/resource/France> ;
-    ns1:hasPart <http://ceur-ws.org/Vol-960/#part-CEUR-WS> ;
-    ns1:isSubEventOf <http://ceur-ws.org/Vol-960/#conf> ;
-    ns6:beginsAtDatetime "2012-08-27T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:endsAtDatetime "2012-08-27T00:00:00+00:00"^^xsd:dateTime ;
-    ns5:license "http://choosealicense.com/licenses/no-license/" .
+<http://ceur-ws.org/Vol-960/#PierluigiiCasale> a ns7:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/PierluigiiCasale> ;
+    ns7:made <http://ceur-ws.org/Vol-960/#poster2> ;
+    ns7:name "Pierluigi Casale" .
+
+<http://ceur-ws.org/Vol-960/#RicardoiMorla> a ns7:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/RicardoiMorla> ;
+    ns7:made <http://ceur-ws.org/Vol-960/#paper2> ;
+    ns7:name "Ricardo Morla" .
+
+<http://ceur-ws.org/Vol-960/#RubensiMelo> a ns7:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/RubensiMelo> ;
+    ns7:made <http://ceur-ws.org/Vol-960/#poster1> ;
+    ns7:name "Rubens Melo" .
+
+<http://ceur-ws.org/Vol-960/#Simona-ClaudiaiFlorescu> a ns7:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/Simona-ClaudiaiFlorescu> ;
+    ns7:made <http://ceur-ws.org/Vol-960/#paper5> ;
+    ns7:name "Simona-Claudia Florescu" .
+
+<http://ceur-ws.org/Vol-960/#SimoniMalinowski> a ns7:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/SimoniMalinowski> ;
+    ns7:made <http://ceur-ws.org/Vol-960/#paper2> ;
+    ns7:name "Simon Malinowski" .
+
+<http://ceur-ws.org/Vol-960/#TakuyaiTakimoto> a ns7:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/TakuyaiTakimoto> ;
+    ns7:made <http://ceur-ws.org/Vol-960/#paper7> ;
+    ns7:name "Takuya Takimoto" .
+
+<http://ceur-ws.org/Vol-960/#TarsilaiTavares> a ns7:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/TarsilaiTavares> ;
+    ns7:made <http://ceur-ws.org/Vol-960/#poster1> ;
+    ns7:name "Tarsila Tavares" .
+
+<http://ceur-ws.org/Vol-960/#TatianaiEscovedo> a ns7:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/TatianaiEscovedo> ;
+    ns7:made <http://ceur-ws.org/Vol-960/#poster1> ;
+    ns7:name "Tatiana Escovedo" .
+
+<http://ceur-ws.org/Vol-960/#Tlili-GuiassaiYamina> a ns7:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/Tlili-GuiassaiYamina> ;
+    ns7:made <http://ceur-ws.org/Vol-960/#poster4> ;
+    ns7:name "Tlili-Guiassa Yamina" .
+
+<http://ceur-ws.org/Vol-960/#V%C3%ADtoriSantosiCosta> a ns7:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/V%C3%ADtoriSantosiCosta> ;
+    ns7:made <http://ceur-ws.org/Vol-960/#paper6> ;
+    ns7:name "Vítor Santos Costa" .
+
+<http://ceur-ws.org/Vol-960/#VladimiroiMiranda> a ns7:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/VladimiroiMiranda> ;
+    ns7:made <http://ceur-ws.org/Vol-960/#paper6> ;
+    ns7:name "Vladimiro Miranda" .
+
+<http://ceur-ws.org/Vol-960/#XaviiRafael-Palou> a ns7:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/XaviiRafael-Palou> ;
+    ns7:made <http://ceur-ws.org/Vol-960/#poster2> ;
+    ns7:name "Xavi Rafael-Palou" .
+
+<http://ceur-ws.org/Vol-960/#event> a ns4:WorkshopEvent ;
+    ns4:hasLocation <http://dbpedia.org/resource/France> ;
+    ns4:hasPart <http://ceur-ws.org/Vol-960/#part-UDM> ;
+    ns4:isSubEventOf <http://ceur-ws.org/Vol-960/#conf> ;
+    ns8:beginsAtDatetime "2012-08-27T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:endsAtDatetime "2012-08-27T00:00:00+00:00"^^xsd:dateTime ;
+    ns9:license "http://choosealicense.com/licenses/no-license/" .
+
+<http://ceur-ws.org/Vol-960/#CarlosiAbreuiFerreira> a ns7:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/CarlosiAbreuiFerreira> ;
+    ns7:made <http://ceur-ws.org/Vol-960/#paper3>,
+        <http://ceur-ws.org/Vol-960/#paper6> ;
+    ns7:name "Carlos Abreu Ferreira" .
+
+<http://ceur-ws.org/Vol-960/#HadiiFanaeeiTork> a ns7:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/HadiiFanaeeiTork> ;
+    ns7:made <http://ceur-ws.org/Vol-960/#paper2>,
+        <http://ceur-ws.org/Vol-960/#poster3> ;
+    ns7:name "Hadi Fanaee Tork" .
+
+<http://ceur-ws.org/Vol-960/#Jo%C3%A3oiMendes-Moreira> a ns7:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/Jo%C3%A3oiMendes-Moreira> ;
+    ns7:made <http://ceur-ws.org/Vol-960/#paper3>,
+        <http://ceur-ws.org/Vol-960/#paper8> ;
+    ns7:name "João Mendes-Moreira" .
+
+<http://ceur-ws.org/Vol-960/#MichaeliMay> a ns7:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/MichaeliMay> ;
+    ns7:made <http://ceur-ws.org/Vol-960/#invited1>,
+        <http://ceur-ws.org/Vol-960/#paper5> ;
+    ns7:name "Michael May" .
+
+<http://ceur-ws.org/Vol-960/#NunoiC.iMarques> a ns7:Person ;
+    ns3:affiliation "" ;
+    ns1:sameAs <http://ceur-ws.org/persons/NunoiC.iMarques> ;
+    ns7:made <http://ceur-ws.org/Vol-960/#paper9> ;
+    ns7:name "Nuno C. Marques" .
+
+<http://ceur-ws.org/Vol-960/#invited1> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-960/> ;
+    ns6:title "LIFT - Local Inference in Massively Distributed Systems" ;
+    ns2:endPage 1 ;
+    ns2:numPages 1 ;
+    ns2:section <http://ceur-ws.org/Vol-960/#InvitedTalks> ;
+    ns2:startPage 1 ;
+    ns3:author <http://ceur-ws.org/Vol-960/#MichaeliMay> .
+
+<http://ceur-ws.org/Vol-960/#invited2> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-960/> ;
+    ns6:title "An Efficient Spatio-Temporal Mining Approach to Really Know Who Travels with Whom!" ;
+    ns2:endPage 2 ;
+    ns2:numPages 1 ;
+    ns2:section <http://ceur-ws.org/Vol-960/#InvitedTalks> ;
+    ns2:startPage 2 ;
+    ns3:author <http://ceur-ws.org/Vol-960/#PascaliPoncelet> .
+
+<http://ceur-ws.org/Vol-960/#poster3> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-960/> ;
+    ns6:title "Finding the Best Ranking Model for Spatial Objects" ;
+    ns2:endPage 60 ;
+    ns2:numPages 3 ;
+    ns2:section <http://ceur-ws.org/Vol-960/#Posters> ;
+    ns2:startPage 58 ;
+    ns3:author <http://ceur-ws.org/Vol-960/#HadiiFanaeeiTork> .
+
+<http://ceur-ws.org/Vol-960/#InvitedTalks> a ns4:SessionEvent ;
+    ns4:partOf <http://ceur-ws.org/Vol-960/> ;
+    ns6:title "Invited Talks" .
+
+<http://ceur-ws.org/Vol-960/#paper1> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-960/> ;
+    ns6:title "Cooperative Kernel-Based Forecasting in Decentralized Multi-Agent Systems for Urban Traffic Networks" ;
+    ns2:endPage 7 ;
+    ns2:numPages 5 ;
+    ns2:section <http://ceur-ws.org/Vol-960/#Papers> ;
+    ns2:startPage 3 ;
+    ns3:author <http://ceur-ws.org/Vol-960/#JelenaiFiosina>,
+        <http://ceur-ws.org/Vol-960/#MaksimsiFiosins> .
+
+<http://ceur-ws.org/Vol-960/#paper4> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-960/> ;
+    ns6:title "Holistic Distributed Stream Clustering for Smart Grids" ;
+    ns2:endPage 22 ;
+    ns2:numPages 5 ;
+    ns2:section <http://ceur-ws.org/Vol-960/#Papers> ;
+    ns2:startPage 18 ;
+    ns3:author <http://ceur-ws.org/Vol-960/#Jo%C3%A3oiGama>,
+        <http://ceur-ws.org/Vol-960/#PedroiPereiraiRodrigues> .
+
+<http://ceur-ws.org/Vol-960/#poster4> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-960/> ;
+    ns6:title "Identification of Opinions in Arabic Texts using Ontologies" ;
+    ns2:endPage 64 ;
+    ns2:numPages 4 ;
+    ns2:section <http://ceur-ws.org/Vol-960/#Posters> ;
+    ns2:startPage 61 ;
+    ns3:author <http://ceur-ws.org/Vol-960/#FarekiLazhar>,
+        <http://ceur-ws.org/Vol-960/#Tlili-GuiassaiYamina> .
+
+<http://ceur-ws.org/Vol-960/#paper8> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-960/> ;
+    ns6:title "Semi-supervised Learning: Predicting Activities in Android Environment" ;
+    ns2:endPage 42 ;
+    ns2:numPages 5 ;
+    ns2:section <http://ceur-ws.org/Vol-960/#Papers> ;
+    ns2:startPage 38 ;
+    ns3:author <http://ceur-ws.org/Vol-960/#AlexandreiLopes>,
+        <http://ceur-ws.org/Vol-960/#Jo%C3%A3oiGama>,
+        <http://ceur-ws.org/Vol-960/#Jo%C3%A3oiMendes-Moreira> .
+
+<http://ceur-ws.org/Vol-960/#paper9> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-960/> ;
+    ns6:title "Applying Neural Networks for Concept Drift Detection in Financial Markets" ;
+    ns2:endPage 47 ;
+    ns2:numPages 5 ;
+    ns2:section <http://ceur-ws.org/Vol-960/#Papers> ;
+    ns2:startPage 43 ;
+    ns3:author <http://ceur-ws.org/Vol-960/#BrunoiSilva>,
+        <http://ceur-ws.org/Vol-960/#GiseleiPanosso>,
+        <http://ceur-ws.org/Vol-960/#NunoiC.iMarques> .
+
+<http://ceur-ws.org/Vol-960/#Posters> a ns4:SessionEvent ;
+    ns4:partOf <http://ceur-ws.org/Vol-960/> ;
+    ns6:title "Posters" .
+
+<http://ceur-ws.org/Vol-960/#paper5> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-960/> ;
+    ns6:title "Efficient Mobility Pattern Stream Matching on Mobile Devices" ;
+    ns2:endPage 27 ;
+    ns2:numPages 5 ;
+    ns2:section <http://ceur-ws.org/Vol-960/#Papers> ;
+    ns2:startPage 23 ;
+    ns3:author <http://ceur-ws.org/Vol-960/#ChristineiKorner>,
+        <http://ceur-ws.org/Vol-960/#MichaeliMay>,
+        <http://ceur-ws.org/Vol-960/#MichaeliMock>,
+        <http://ceur-ws.org/Vol-960/#Simona-ClaudiaiFlorescu> .
+
+<http://ceur-ws.org/Vol-960/#poster1> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-960/> ;
+    ns6:title "MLP Networks Applied to the Problem of Prediction of Runtime of SAP BW Queries" ;
+    ns2:endPage 52 ;
+    ns2:numPages 5 ;
+    ns2:section <http://ceur-ws.org/Vol-960/#Posters> ;
+    ns2:startPage 48 ;
+    ns3:author <http://ceur-ws.org/Vol-960/#MarleyiVellasco>,
+        <http://ceur-ws.org/Vol-960/#RubensiMelo>,
+        <http://ceur-ws.org/Vol-960/#TarsilaiTavares>,
+        <http://ceur-ws.org/Vol-960/#TatianaiEscovedo> .
+
+<http://ceur-ws.org/Vol-960/#Jo%C3%A3oiGama> a ns7:Person ;
+    ns3:affiliation "" ;
+    ns1:sameAs <http://ceur-ws.org/persons/Jo%C3%A3oiGama> ;
+    ns7:made <http://ceur-ws.org/Vol-960/#paper2>,
+        <http://ceur-ws.org/Vol-960/#paper3>,
+        <http://ceur-ws.org/Vol-960/#paper4>,
+        <http://ceur-ws.org/Vol-960/#paper6>,
+        <http://ceur-ws.org/Vol-960/#paper8> ;
+    ns7:name "João Gama" .
+
+<http://ceur-ws.org/Vol-960/#paper2> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-960/> ;
+    ns6:title "Event and Anomaly Detection using Tucker3 Decomposition" ;
+    ns2:endPage 12 ;
+    ns2:numPages 5 ;
+    ns2:section <http://ceur-ws.org/Vol-960/#Papers> ;
+    ns2:startPage 8 ;
+    ns3:author <http://ceur-ws.org/Vol-960/#HadiiFanaeeiTork>,
+        <http://ceur-ws.org/Vol-960/#Jo%C3%A3oiGama>,
+        <http://ceur-ws.org/Vol-960/#M%C3%A1rciaiOliveira>,
+        <http://ceur-ws.org/Vol-960/#RicardoiMorla>,
+        <http://ceur-ws.org/Vol-960/#SimoniMalinowski> .
+
+<http://ceur-ws.org/Vol-960/#paper3> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-960/> ;
+    ns6:title "Bus Bunching Detection: A Sequence Mining Approach" ;
+    ns2:endPage 17 ;
+    ns2:numPages 5 ;
+    ns2:section <http://ceur-ws.org/Vol-960/#Papers> ;
+    ns2:startPage 13 ;
+    ns3:author <http://ceur-ws.org/Vol-960/#CarlosiAbreuiFerreira>,
+        <http://ceur-ws.org/Vol-960/#Jo%C3%A3oiGama>,
+        <http://ceur-ws.org/Vol-960/#Jo%C3%A3oiMendes-Moreira>,
+        <http://ceur-ws.org/Vol-960/#JorgeiFreireideiSousa>,
+        <http://ceur-ws.org/Vol-960/#LuisiMoreira-Matias> .
+
+<http://ceur-ws.org/Vol-960/#paper6> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-960/> ;
+    ns6:title "Predicting Ramp Events with a Stream-based HMM framework" ;
+    ns2:endPage 32 ;
+    ns2:numPages 5 ;
+    ns2:section <http://ceur-ws.org/Vol-960/#Papers> ;
+    ns2:startPage 28 ;
+    ns3:author <http://ceur-ws.org/Vol-960/#AuduniBotterud>,
+        <http://ceur-ws.org/Vol-960/#CarlosiAbreuiFerreira>,
+        <http://ceur-ws.org/Vol-960/#Jo%C3%A3oiGama>,
+        <http://ceur-ws.org/Vol-960/#V%C3%ADtoriSantosiCosta>,
+        <http://ceur-ws.org/Vol-960/#VladimiroiMiranda> .
+
+<http://ceur-ws.org/Vol-960/#poster2> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-960/> ;
+    ns6:title "Pruning AdaBoost for Continuous Sensors Mining Applications" ;
+    ns2:endPage 57 ;
+    ns2:numPages 5 ;
+    ns2:section <http://ceur-ws.org/Vol-960/#Posters> ;
+    ns2:startPage 53 ;
+    ns3:author <http://ceur-ws.org/Vol-960/#FelipiMiralles>,
+        <http://ceur-ws.org/Vol-960/#GuillaumeiLemaitre>,
+        <http://ceur-ws.org/Vol-960/#MojdehiRastgooiDastjerdi>,
+        <http://ceur-ws.org/Vol-960/#PierluigiiCasale>,
+        <http://ceur-ws.org/Vol-960/#XaviiRafael-Palou> .
+
+<http://ceur-ws.org/Vol-960/#paper7> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-960/> ;
+    ns6:title "People Identification Based on Sitting Patterns" ;
+    ns2:endPage 37 ;
+    ns2:numPages 5 ;
+    ns2:section <http://ceur-ws.org/Vol-960/#Papers> ;
+    ns2:startPage 33 ;
+    ns3:author <http://ceur-ws.org/Vol-960/#GiaiNguyen>,
+        <http://ceur-ws.org/Vol-960/#GiangiNguyeniDoaniMinh>,
+        <http://ceur-ws.org/Vol-960/#HideyukiiTokuda>,
+        <http://ceur-ws.org/Vol-960/#JiniNakazawa>,
+        <http://ceur-ws.org/Vol-960/#KazunoriiTakashio>,
+        <http://ceur-ws.org/Vol-960/#TakuyaiTakimoto> .
+
+<http://ceur-ws.org/Vol-960/#Papers> a ns4:SessionEvent ;
+    ns4:partOf <http://ceur-ws.org/Vol-960/> ;
+    ns6:title "Papers" .
+
+<http://ceur-ws.org/Vol-960/> a ns4:Proceedings ;
+    ns4:hasPart <http://ceur-ws.org/Vol-960/#invited1>,
+        <http://ceur-ws.org/Vol-960/#invited2>,
+        <http://ceur-ws.org/Vol-960/#paper1>,
+        <http://ceur-ws.org/Vol-960/#paper2>,
+        <http://ceur-ws.org/Vol-960/#paper3>,
+        <http://ceur-ws.org/Vol-960/#paper4>,
+        <http://ceur-ws.org/Vol-960/#paper5>,
+        <http://ceur-ws.org/Vol-960/#paper6>,
+        <http://ceur-ws.org/Vol-960/#paper7>,
+        <http://ceur-ws.org/Vol-960/#paper8>,
+        <http://ceur-ws.org/Vol-960/#paper9>,
+        <http://ceur-ws.org/Vol-960/#poster1>,
+        <http://ceur-ws.org/Vol-960/#poster2>,
+        <http://ceur-ws.org/Vol-960/#poster3>,
+        <http://ceur-ws.org/Vol-960/#poster4> ;
+    ns4:hasSession <http://ceur-ws.org/Vol-960/#InvitedTalks>,
+        <http://ceur-ws.org/Vol-960/#Papers>,
+        <http://ceur-ws.org/Vol-960/#Posters> ;
+    ns5:issued "2013-02-07T00:00:00+00:00"^^xsd:dateTime ;
+    ns2:presentedAt <http://ceur-ws.org/Vol-960/#event> ;
+    ns3:editor <http://ceur-ws.org/Vol-960/#Jo%C3%A3oiGama>,
+        <http://ceur-ws.org/Vol-960/#ManueliSantos>,
+        <http://ceur-ws.org/Vol-960/#NunoiC.iMarques>,
+        <http://ceur-ws.org/Vol-960/#PauloiCortez>,
+        <http://ceur-ws.org/Vol-960/#PedroiRodrigues> .
 

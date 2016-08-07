@@ -1,46 +1,197 @@
-@prefix ns1: <http://purl.org/dc/elements/1.1/> .
-@prefix ns2: <http://xmlns.com/foaf/0.1/> .
-@prefix ns3: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns4: <http://www.w3.org/2002/07/owl#> .
-@prefix ns5: <http://purl.org/ontology/bibo/#> .
-@prefix ns6: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns1: <http://purl.org/ontology/bibo/#> .
+@prefix ns2: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns3: <http://xmlns.com/foaf/0.1/> .
+@prefix ns4: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns5: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns6: <http://www.w3.org/2002/07/owl#> .
 @prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
 @prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns9: <http://purl.org/dc/elements/1.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1622/> a ns3:Proceedings ;
+<http://ceur-ws.org/Vol-1622/#ArieliMonteserin> a ns3:Person ;
+    ns2:affiliation "" ;
+    ns6:sameAs <http://ceur-ws.org/persons/ArieliMonteserin> ;
+    ns3:name "Ariel Monteserin" .
+
+<http://ceur-ws.org/Vol-1622/#BeiiShi> a ns3:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/BeiiShi> ;
+    ns3:made <http://ceur-ws.org/Vol-1622/#SocInf2016_InvPaper1> ;
+    ns3:name "Bei Shi" .
+
+<http://ceur-ws.org/Vol-1622/#JaniHauffa> a ns3:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/JaniHauffa> ;
+    ns3:made <http://ceur-ws.org/Vol-1622/#SocInf2016_Paper1> ;
+    ns3:name "Jan Hauffa" .
+
+<http://ceur-ws.org/Vol-1622/#JustiniCheng> a ns3:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/JustiniCheng> ;
+    ns3:made <http://ceur-ws.org/Vol-1622/#SocInf2016_InvitedTalk2> ;
+    ns3:name "Justin Cheng" .
+
+<http://ceur-ws.org/Vol-1622/#KeiHu> a ns3:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/KeiHu> ;
+    ns3:made <http://ceur-ws.org/Vol-1622/#SocInf2016_InvPaper3> ;
+    ns3:name "Ke Hu" .
+
+<http://ceur-ws.org/Vol-1622/#MarceloiG.iArmentano> a ns3:Person ;
+    ns2:affiliation "" ;
+    ns6:sameAs <http://ceur-ws.org/persons/MarceloiG.iArmentano> ;
+    ns3:name "Marcelo G. Armentano" .
+
+<http://ceur-ws.org/Vol-1622/#PanagiotisiLiakos> a ns3:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/PanagiotisiLiakos> ;
+    ns3:made <http://ceur-ws.org/Vol-1622/#SocInf2016_Paper3> ;
+    ns3:name "Panagiotis Liakos" .
+
+<http://ceur-ws.org/Vol-1622/#PankajiMishra> a ns3:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/PankajiMishra> ;
+    ns3:made <http://ceur-ws.org/Vol-1622/#SocInf2016_Paper2> ;
+    ns3:name "Pankaj Mishra" .
+
+<http://ceur-ws.org/Vol-1622/#VaruniGangal> a ns3:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/VaruniGangal> ;
+    ns3:made <http://ceur-ws.org/Vol-1622/#SocInf2016_Paper4> ;
+    ns3:name "Varun Gangal" .
+
+<http://ceur-ws.org/Vol-1622/#VirginiaiYannibelli> a ns3:Person ;
+    ns2:affiliation "" ;
+    ns6:sameAs <http://ceur-ws.org/persons/VirginiaiYannibelli> ;
+    ns3:name "Virginia Yannibelli" .
+
+<http://ceur-ws.org/Vol-1622/#YicheniYao> a ns3:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/YicheniYao> ;
+    ns3:made <http://ceur-ws.org/Vol-1622/#SocInf2016_InvPaper2> ;
+    ns3:name "Yichen Yao" .
+
+<http://ceur-ws.org/Vol-1622/#event> a ns4:WorkshopEvent ;
+    ns4:hasLocation <http://dbpedia.org/resource/United_States> ;
+    ns4:hasPart <http://ceur-ws.org/Vol-1622/#part-SocInf> ;
+    ns4:isSubEventOf <http://ceur-ws.org/Vol-1622/#conf> ;
+    ns7:beginsAtDatetime "2016-07-09T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:endsAtDatetime "2016-07-09T00:00:00+00:00"^^xsd:dateTime ;
+    ns9:license "http://creativecommons.org/publicdomain/zero/1.0/" ;
+    rdfs:seeAlso <http://ceur-ws.org/Vol-1398/#event> .
+
+<http://ceur-ws.org/Vol-1622/#JieiTang> a ns3:Person ;
+    ns2:affiliation "" ;
+    ns6:sameAs <http://ceur-ws.org/persons/JieiTang> ;
+    ns3:made <http://ceur-ws.org/Vol-1622/#SocInf2016_InvitedTalk1> ;
+    ns3:name "Jie Tang" .
+
+<http://ceur-ws.org/Vol-1622/#SocInf2016_InvPaper1> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1622/> ;
+    ns5:title "Location Based Services Recommendation with Budget Constraints" ;
+    ns1:endPage 56 ;
+    ns1:numPages 9 ;
+    ns1:section <http://ceur-ws.org/Vol-1622/#BrickandMortarStoreRecommendationContestTop3solutions> ;
+    ns1:startPage 48 ;
+    ns2:author <http://ceur-ws.org/Vol-1622/#BeiiShi> .
+
+<http://ceur-ws.org/Vol-1622/#SocInf2016_InvPaper2> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1622/> ;
+    ns5:title "Cold-Start Solution for Entity Shop Recommender Systems using Online Sales Records" ;
+    ns1:endPage 67 ;
+    ns1:numPages 11 ;
+    ns1:section <http://ceur-ws.org/Vol-1622/#BrickandMortarStoreRecommendationContestTop3solutions> ;
+    ns1:startPage 57 ;
+    ns2:author <http://ceur-ws.org/Vol-1622/#YicheniYao> .
+
+<http://ceur-ws.org/Vol-1622/#SocInf2016_InvPaper3> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1622/> ;
+    ns5:title "Cold Start Purchase Prediction with Budgets Constraints" ;
+    ns1:endPage 80 ;
+    ns1:numPages 13 ;
+    ns1:section <http://ceur-ws.org/Vol-1622/#BrickandMortarStoreRecommendationContestTop3solutions> ;
+    ns1:startPage 68 ;
+    ns2:author <http://ceur-ws.org/Vol-1622/#KeiHu> .
+
+<http://ceur-ws.org/Vol-1622/#SocInf2016_InvitedTalk1> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1622/> ;
+    ns5:title "Big Network Analysis: Algorithms and Applications" ;
+    ns1:endPage 1 ;
+    ns1:numPages 1 ;
+    ns1:section <http://ceur-ws.org/Vol-1622/#Invitedtalks> ;
+    ns1:startPage 1 ;
+    ns2:author <http://ceur-ws.org/Vol-1622/#JieiTang> .
+
+<http://ceur-ws.org/Vol-1622/#SocInf2016_InvitedTalk2> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1622/> ;
+    ns5:title "Negative Social Influence in Online Discussions" ;
+    ns1:endPage 2 ;
+    ns1:numPages 1 ;
+    ns1:section <http://ceur-ws.org/Vol-1622/#Invitedtalks> ;
+    ns1:startPage 2 ;
+    ns2:author <http://ceur-ws.org/Vol-1622/#JustiniCheng> .
+
+<http://ceur-ws.org/Vol-1622/#SocInf2016_Paper1> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1622/> ;
+    ns5:title "Mining Twitter for an Explanatory Model of Social Influence" ;
+    ns1:endPage 14 ;
+    ns1:numPages 12 ;
+    ns1:section <http://ceur-ws.org/Vol-1622/#Peerreviewedpapers> ;
+    ns1:startPage 3 ;
+    ns2:author <http://ceur-ws.org/Vol-1622/#JaniHauffa> .
+
+<http://ceur-ws.org/Vol-1622/#SocInf2016_Paper2> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1622/> ;
+    ns5:title "Social Influence Analysis based on Facial Emotions" ;
+    ns1:endPage 25 ;
+    ns1:numPages 11 ;
+    ns1:section <http://ceur-ws.org/Vol-1622/#Peerreviewedpapers> ;
+    ns1:startPage 15 ;
+    ns2:author <http://ceur-ws.org/Vol-1622/#PankajiMishra> .
+
+<http://ceur-ws.org/Vol-1622/#SocInf2016_Paper3> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1622/> ;
+    ns5:title "Pinpointing Influence in Pinterest" ;
+    ns1:endPage 37 ;
+    ns1:numPages 12 ;
+    ns1:section <http://ceur-ws.org/Vol-1622/#Peerreviewedpapers> ;
+    ns1:startPage 26 ;
+    ns2:author <http://ceur-ws.org/Vol-1622/#PanagiotisiLiakos> .
+
+<http://ceur-ws.org/Vol-1622/#SocInf2016_Paper4> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1622/> ;
+    ns5:title "HEMI: Hyperedge Majority Influence Maximization" ;
+    ns1:endPage 47 ;
+    ns1:numPages 10 ;
+    ns1:section <http://ceur-ws.org/Vol-1622/#Peerreviewedpapers> ;
+    ns1:startPage 38 ;
+    ns2:author <http://ceur-ws.org/Vol-1622/#VaruniGangal> .
+
+<http://ceur-ws.org/Vol-1622/#Invitedtalks> a ns4:SessionEvent ;
+    ns4:partOf <http://ceur-ws.org/Vol-1622/> ;
+    ns5:title "Invited talks" .
+
+<http://ceur-ws.org/Vol-1622/#BrickandMortarStoreRecommendationContestTop3solutions> a ns4:SessionEvent ;
+    ns4:partOf <http://ceur-ws.org/Vol-1622/> ;
+    ns5:title "Brick-and-Mortar Store Recommendation Contest Top-3 solutions" .
+
+<http://ceur-ws.org/Vol-1622/#Peerreviewedpapers> a ns4:SessionEvent ;
+    ns4:partOf <http://ceur-ws.org/Vol-1622/> ;
+    ns5:title "Peer-reviewed papers" .
+
+<http://ceur-ws.org/Vol-1622/> a ns4:Proceedings ;
+    ns4:hasPart <http://ceur-ws.org/Vol-1622/#SocInf2016_InvPaper1>,
+        <http://ceur-ws.org/Vol-1622/#SocInf2016_InvPaper2>,
+        <http://ceur-ws.org/Vol-1622/#SocInf2016_InvPaper3>,
+        <http://ceur-ws.org/Vol-1622/#SocInf2016_InvitedTalk1>,
+        <http://ceur-ws.org/Vol-1622/#SocInf2016_InvitedTalk2>,
+        <http://ceur-ws.org/Vol-1622/#SocInf2016_Paper1>,
+        <http://ceur-ws.org/Vol-1622/#SocInf2016_Paper2>,
+        <http://ceur-ws.org/Vol-1622/#SocInf2016_Paper3>,
+        <http://ceur-ws.org/Vol-1622/#SocInf2016_Paper4> ;
+    ns4:hasSession <http://ceur-ws.org/Vol-1622/#BrickandMortarStoreRecommendationContestTop3solutions>,
+        <http://ceur-ws.org/Vol-1622/#Invitedtalks>,
+        <http://ceur-ws.org/Vol-1622/#Peerreviewedpapers> ;
     ns8:issued "2016-07-07T00:00:00+00:00"^^xsd:dateTime ;
-    ns5:presentedAt <http://ceur-ws.org/Vol-1622/#event> ;
-    ns6:editor <http://ceur-ws.org/Vol-1622/#ArieliMonteserin>,
+    ns1:presentedAt <http://ceur-ws.org/Vol-1622/#event> ;
+    ns2:editor <http://ceur-ws.org/Vol-1622/#ArieliMonteserin>,
         <http://ceur-ws.org/Vol-1622/#JieiTang>,
         <http://ceur-ws.org/Vol-1622/#MarceloiG.iArmentano>,
         <http://ceur-ws.org/Vol-1622/#VirginiaiYannibelli> .
-
-<http://ceur-ws.org/Vol-1622/#ArieliMonteserin> a ns2:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/ArieliMonteserin> ;
-    ns2:name "Ariel Monteserin" .
-
-<http://ceur-ws.org/Vol-1622/#JieiTang> a ns2:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/JieiTang> ;
-    ns2:name "Jie Tang" .
-
-<http://ceur-ws.org/Vol-1622/#MarceloiG.iArmentano> a ns2:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/MarceloiG.iArmentano> ;
-    ns2:name "Marcelo G. Armentano" .
-
-<http://ceur-ws.org/Vol-1622/#VirginiaiYannibelli> a ns2:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/VirginiaiYannibelli> ;
-    ns2:name "Virginia Yannibelli" .
-
-<http://ceur-ws.org/Vol-1622/#event> a ns3:WorkshopEvent ;
-    ns3:hasLocation <http://dbpedia.org/resource/United_States> ;
-    ns3:hasPart <http://ceur-ws.org/Vol-1622/#part-ws> ;
-    ns3:isSubEventOf <http://ceur-ws.org/Vol-1622/#conf> ;
-    ns7:beginsAtDatetime "2016-07-09T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:endsAtDatetime "2016-07-09T00:00:00+00:00"^^xsd:dateTime ;
-    ns1:license "http://creativecommons.org/publicdomain/zero/1.0/" ;
-    rdfs:seeAlso <http://ceur-ws.org/Vol-1398/#event> .
 

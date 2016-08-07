@@ -1,191 +1,45 @@
-@prefix ns1: <http://www.w3.org/2002/07/owl#> .
+@prefix ns1: <http://purl.org/NET/c4dm/timeline.owl#> .
 @prefix ns2: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns3: <http://xmlns.com/foaf/0.1/> .
-@prefix ns4: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns5: <http://purl.org/dc/elements/1.1/> .
-@prefix ns6: <http://purl.org/ontology/bibo/#> .
-@prefix ns7: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns9: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns3: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns4: <http://www.w3.org/2002/07/owl#> .
+@prefix ns5: <http://xmlns.com/foaf/0.1/> .
+@prefix ns6: <http://purl.org/dc/elements/1.1/> .
+@prefix ns7: <http://purl.org/ontology/bibo/#> .
+@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-414/#Bo%C5%99ivojiMelichar> a ns3:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/Bo%C5%99ivojiMelichar> ;
-    ns3:made <http://ceur-ws.org/Vol-414/#paper4> ;
-    ns3:name "Bořivoj Melichar" .
+<http://ceur-ws.org/Vol-414/> a ns2:Proceedings ;
+    ns8:issued "2008-11-04T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:presentedAt <http://ceur-ws.org/Vol-414/#event> ;
+    ns3:editor <http://ceur-ws.org/Vol-414/#FacultyiofiMathematics>,
+        <http://ceur-ws.org/Vol-414/#Instituteioficomputeriscience>,
+        <http://ceur-ws.org/Vol-414/#Physics>,
+        <http://ceur-ws.org/Vol-414/#SlovakiArtificialiIntelligenceiSociety> .
 
-<http://ceur-ws.org/Vol-414/#DanaiPardubsk%C3%A1> a ns3:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/DanaiPardubsk%C3%A1> ;
-    ns3:made <http://ceur-ws.org/Vol-414/#paper7> ;
-    ns3:name "Dana Pardubská" .
+<http://ceur-ws.org/Vol-414/#FacultyiofiMathematics> a ns5:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/FacultyiofiMathematics> ;
+    ns5:name "Faculty of Mathematics" .
 
-<http://ceur-ws.org/Vol-414/#DavidiBedn%C3%A1rek> a ns3:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/DavidiBedn%C3%A1rek> ;
-    ns3:made <http://ceur-ws.org/Vol-414/#paper1> ;
-    ns3:name "David Bednárek" .
+<http://ceur-ws.org/Vol-414/#Instituteioficomputeriscience> a ns5:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/Instituteioficomputeriscience> ;
+    ns5:name "Institute of computer science" .
 
-<http://ceur-ws.org/Vol-414/#FacultyiofiMathematics> a ns3:Person ;
-    ns6:place <http://dbpedia.org/resource/Czech_Republic> ;
-    ns4:affiliation "Charles University in Prague" ;
-    ns1:sameAs <http://ceur-ws.org/persons/FacultyiofiMathematics> ;
-    ns3:name "Faculty of Mathematics" .
+<http://ceur-ws.org/Vol-414/#Physics> a ns5:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/Physics> ;
+    ns5:name "Physics" .
 
-<http://ceur-ws.org/Vol-414/#FilipiZavoral> a ns3:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/FilipiZavoral> ;
-    ns3:made <http://ceur-ws.org/Vol-414/#paper2> ;
-    ns3:name "Filip Zavoral" .
-
-<http://ceur-ws.org/Vol-414/#FriedrichiOtto> a ns3:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/FriedrichiOtto> ;
-    ns3:made <http://ceur-ws.org/Vol-414/#paper7> ;
-    ns3:name "Friedrich Otto" .
-
-<http://ceur-ws.org/Vol-414/#InstituteiofiComputeriScience> a ns3:Person ;
-    ns6:place <http://dbpedia.org/resource/Czech_Republic>,
-        <http://dbpedia.org/resource/Euro_gold_and_silver_commemorative_coins_(Slovakia)> ;
-    ns4:affiliation "Academy of Sciences of the Czech Republic",
-        "Faculty of science, P. J. Šafárik university, Košice" ;
-    ns1:sameAs <http://ceur-ws.org/persons/InstituteiofiComputeriScience> ;
-    ns3:name "Institute of Computer Science" .
-
-<http://ceur-ws.org/Vol-414/#JanaiDvo%C5%99%C3%A1kov%C3%A1> a ns3:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/JanaiDvo%C5%99%C3%A1kov%C3%A1> ;
-    ns3:made <http://ceur-ws.org/Vol-414/#paper2> ;
-    ns3:name "Jana Dvořáková" .
-
-<http://ceur-ws.org/Vol-414/#JozefiGajdo%C5%A1> a ns3:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/JozefiGajdo%C5%A1> ;
-    ns3:made <http://ceur-ws.org/Vol-414/#paper3> ;
-    ns3:name "Jozef Gajdoš" .
-
-<http://ceur-ws.org/Vol-414/#MartiniHole%C5%88a> a ns3:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/MartiniHole%C5%88a> ;
-    ns3:made <http://ceur-ws.org/Vol-414/#paper5> ;
-    ns3:name "Martin Holeňa" .
-
-<http://ceur-ws.org/Vol-414/#MartiniPl%C3%A1tek> a ns3:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/MartiniPl%C3%A1tek> ;
-    ns3:made <http://ceur-ws.org/Vol-414/#paper7> ;
-    ns3:name "Martin Plátek" .
-
-<http://ceur-ws.org/Vol-414/#MiroslaviBal%C3%ADk> a ns3:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/MiroslaviBal%C3%ADk> ;
-    ns3:made <http://ceur-ws.org/Vol-414/#paper4> ;
-    ns3:name "Miroslav Balík" .
-
-<http://ceur-ws.org/Vol-414/#Ond%C5%99ejiGuth> a ns3:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/Ond%C5%99ejiGuth> ;
-    ns3:made <http://ceur-ws.org/Vol-414/#paper4> ;
-    ns3:name "Ondřej Guth" .
-
-<http://ceur-ws.org/Vol-414/#PetraiVidnerov%C3%A1> a ns3:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/PetraiVidnerov%C3%A1> ;
-    ns3:made <http://ceur-ws.org/Vol-414/#paper8> ;
-    ns3:name "Petra Vidnerová" .
-
-<http://ceur-ws.org/Vol-414/#Physics> a ns3:Person ;
-    ns6:place <http://dbpedia.org/resource/Czech_Republic> ;
-    ns4:affiliation "Charles University in Prague" ;
-    ns1:sameAs <http://ceur-ws.org/persons/Physics> ;
-    ns3:name "Physics" .
-
-<http://ceur-ws.org/Vol-414/#RichardiOstert%C3%A1g> a ns3:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/RichardiOstert%C3%A1g> ;
-    ns3:made <http://ceur-ws.org/Vol-414/#paper6> ;
-    ns3:name "Richard Ostertág" .
-
-<http://ceur-ws.org/Vol-414/#RomaniNeruda> a ns3:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/RomaniNeruda> ;
-    ns3:made <http://ceur-ws.org/Vol-414/#paper8> ;
-    ns3:name "Roman Neruda" .
-
-<http://ceur-ws.org/Vol-414/#SlovakiArtificialiIntelligenceiSociety> a ns3:Person ;
-    ns4:affiliation "" ;
-    ns1:sameAs <http://ceur-ws.org/persons/SlovakiArtificialiIntelligenceiSociety> ;
-    ns3:name "Slovak Artificial Intelligence Society" .
-
-<http://ceur-ws.org/Vol-414/#StanislaviSlu%C5%A1n%C3%BD> a ns3:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/StanislaviSlu%C5%A1n%C3%BD> ;
-    ns3:made <http://ceur-ws.org/Vol-414/#paper8> ;
-    ns3:name "Stanislav Slušný" .
-
-<http://ceur-ws.org/Vol-414/#ViliamiGeffert> a ns3:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/ViliamiGeffert> ;
-    ns3:made <http://ceur-ws.org/Vol-414/#paper3> ;
-    ns3:name "Viliam Geffert" .
+<http://ceur-ws.org/Vol-414/#SlovakiArtificialiIntelligenceiSociety> a ns5:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/SlovakiArtificialiIntelligenceiSociety> ;
+    ns5:name "Slovak Artificial Intelligence Society" .
 
 <http://ceur-ws.org/Vol-414/#event> a ns2:WorkshopEvent ;
     ns2:hasLocation <http://dbpedia.org/resource/Euro_gold_and_silver_commemorative_coins_(Slovakia)> ;
-    ns2:hasPart <http://ceur-ws.org/Vol-414/#part-CEUR-WS> ;
+    ns2:hasPart <http://ceur-ws.org/Vol-414/#part-ITAT> ;
     ns2:isSubEventOf <http://ceur-ws.org/Vol-414/#conf> ;
-    ns8:beginsAtDatetime "2008-11-04T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:endsAtDatetime "2008-11-04T00:00:00+00:00"^^xsd:dateTime ;
-    ns5:license "http://choosealicense.com/licenses/no-license/" .
-
-<http://ceur-ws.org/Vol-414/#paper1> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-414/> ;
-    ns7:title "Extending Datalog to cover XQuery" ;
-    ns4:author <http://ceur-ws.org/Vol-414/#DavidiBedn%C3%A1rek> .
-
-<http://ceur-ws.org/Vol-414/#paper5> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-414/> ;
-    ns7:title "Measures of quality of rulesets extracted from data" ;
-    ns4:author <http://ceur-ws.org/Vol-414/#MartiniHole%C5%88a> .
-
-<http://ceur-ws.org/Vol-414/#paper6> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-414/> ;
-    ns7:title "The coin flipping selector for selective encryption" ;
-    ns4:author <http://ceur-ws.org/Vol-414/#RichardiOstert%C3%A1g> .
-
-<http://ceur-ws.org/Vol-414/#paper2> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-414/> ;
-    ns7:title "Determining XSLT streamability using new hierarchical XSD model" ;
-    ns4:author <http://ceur-ws.org/Vol-414/#FilipiZavoral>,
-        <http://ceur-ws.org/Vol-414/#JanaiDvo%C5%99%C3%A1kov%C3%A1> .
-
-<http://ceur-ws.org/Vol-414/#paper3> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-414/> ;
-    ns7:title "Multiway blockwise in-place merging" ;
-    ns4:author <http://ceur-ws.org/Vol-414/#JozefiGajdo%C5%A1>,
-        <http://ceur-ws.org/Vol-414/#ViliamiGeffert> .
-
-<http://ceur-ws.org/Vol-414/#paper4> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-414/> ;
-    ns7:title "Searching all approximate covers and their distance using finite automata" ;
-    ns4:author <http://ceur-ws.org/Vol-414/#Bo%C5%99ivojiMelichar>,
-        <http://ceur-ws.org/Vol-414/#MiroslaviBal%C3%ADk>,
-        <http://ceur-ws.org/Vol-414/#Ond%C5%99ejiGuth> .
-
-<http://ceur-ws.org/Vol-414/#paper7> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-414/> ;
-    ns7:title "On PCGS and FRR-automata" ;
-    ns4:author <http://ceur-ws.org/Vol-414/#DanaiPardubsk%C3%A1>,
-        <http://ceur-ws.org/Vol-414/#FriedrichiOtto>,
-        <http://ceur-ws.org/Vol-414/#MartiniPl%C3%A1tek> .
-
-<http://ceur-ws.org/Vol-414/#paper8> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-414/> ;
-    ns7:title "Learning algorithms for small mobile robots: case study on maze exploration" ;
-    ns4:author <http://ceur-ws.org/Vol-414/#PetraiVidnerov%C3%A1>,
-        <http://ceur-ws.org/Vol-414/#RomaniNeruda>,
-        <http://ceur-ws.org/Vol-414/#StanislaviSlu%C5%A1n%C3%BD> .
-
-<http://ceur-ws.org/Vol-414/> a ns2:Proceedings ;
-    ns2:hasPart <http://ceur-ws.org/Vol-414/#paper1>,
-        <http://ceur-ws.org/Vol-414/#paper2>,
-        <http://ceur-ws.org/Vol-414/#paper3>,
-        <http://ceur-ws.org/Vol-414/#paper4>,
-        <http://ceur-ws.org/Vol-414/#paper5>,
-        <http://ceur-ws.org/Vol-414/#paper6>,
-        <http://ceur-ws.org/Vol-414/#paper7>,
-        <http://ceur-ws.org/Vol-414/#paper8> ;
-    ns9:issued "2008-11-04T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:presentedAt <http://ceur-ws.org/Vol-414/#event> ;
-    ns4:editor <http://ceur-ws.org/Vol-414/#FacultyiofiMathematics>,
-        <http://ceur-ws.org/Vol-414/#InstituteiofiComputeriScience>,
-        <http://ceur-ws.org/Vol-414/#Physics>,
-        <http://ceur-ws.org/Vol-414/#SlovakiArtificialiIntelligenceiSociety> .
+    ns1:beginsAtDatetime "2008-09-22T00:00:00+00:00"^^xsd:dateTime ;
+    ns1:endsAtDatetime "2008-09-26T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:license "http://choosealicense.com/licenses/no-license/" .
 

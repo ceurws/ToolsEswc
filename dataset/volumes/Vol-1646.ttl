@@ -1,57 +1,165 @@
-@prefix ns1: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns2: <http://www.w3.org/2002/07/owl#> .
-@prefix ns3: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns4: <http://purl.org/ontology/bibo/#> .
-@prefix ns5: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns6: <http://xmlns.com/foaf/0.1/> .
-@prefix ns7: <http://purl.org/dc/elements/1.1/> .
+@prefix ns1: <http://xmlns.com/foaf/0.1/> .
+@prefix ns2: <http://purl.org/ontology/bibo/#> .
+@prefix ns3: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns4: <http://www.w3.org/2002/07/owl#> .
+@prefix ns5: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns6: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns9: <http://purl.org/dc/elements/1.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1646/> a ns3:Proceedings ;
-    ns5:issued "2016-07-28T00:00:00+00:00"^^xsd:dateTime ;
-    ns4:presentedAt <http://ceur-ws.org/Vol-1646/#event> ;
-    ns1:editor <http://ceur-ws.org/Vol-1646/#DepartmentiofiComputeriScience>,
+<http://ceur-ws.org/Vol-1646/#AlbiniZehe> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/AlbiniZehe> ;
+    ns1:made <http://ceur-ws.org/Vol-1646/#paper2> ;
+    ns1:name "Albin Zehe" .
+
+<http://ceur-ws.org/Vol-1646/#AlexanderiDlikman> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/AlexanderiDlikman> ;
+    ns1:made <http://ceur-ws.org/Vol-1646/#paper1> ;
+    ns1:name "Alexander Dlikman" .
+
+<http://ceur-ws.org/Vol-1646/#ChristianiP%C3%B6litz> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/ChristianiP%C3%B6litz> ;
+    ns1:made <http://ceur-ws.org/Vol-1646/#paper5> ;
+    ns1:name "Christian Pölitz" .
+
+<http://ceur-ws.org/Vol-1646/#DepartmentiofiComputeriScience> a ns1:Person ;
+    ns2:place <http://dbpedia.org/resource/Euro_gold_and_silver_commemorative_coins> ;
+    ns5:affiliation "KU Leuven, Celestijnenlaan 200A, B-3001 Heverlee, Belgium. E-mail: sien.moens@cs.kuleuven.be(6)" ;
+    ns4:sameAs <http://ceur-ws.org/persons/DepartmentiofiComputeriScience> ;
+    ns1:name "Department of Computer Science" .
+
+<http://ceur-ws.org/Vol-1646/#FacultyiofiComputeriScience> a ns1:Person ;
+    ns2:place <http://dbpedia.org/resource/Canada> ;
+    ns5:affiliation "Dalhousie University, 6050 University Ave., P.O. Box 15000, Halifax Nova Scotia, B3H 4R2 Canada. E-mail: stan@cs.dal.ca(5)" ;
+    ns4:sameAs <http://ceur-ws.org/persons/FacultyiofiComputeriScience> ;
+    ns1:name "Faculty of Computer Science" .
+
+<http://ceur-ws.org/Vol-1646/#FuiXianghua> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/FuiXianghua> ;
+    ns1:made <http://ceur-ws.org/Vol-1646/#paper6> ;
+    ns1:name "Fu Xianghua" .
+
+<http://ceur-ws.org/Vol-1646/#INRIAiNancyiGrand-Est> a ns1:Person ;
+    ns2:place <http://dbpedia.org/resource/France> ;
+    ns5:affiliation "LORIA, 615 Rue du Jardin Botanique, 54600 Villers-lès-Nancy, France. E-mail: Yannick.Toussaint@loria.fr" ;
+    ns4:sameAs <http://ceur-ws.org/persons/INRIAiNancyiGrand-Est> ;
+    ns1:name "INRIA Nancy Grand-Est" .
+
+<http://ceur-ws.org/Vol-1646/#INSAiRennes> a ns1:Person ;
+    ns2:place <http://dbpedia.org/resource/France> ;
+    ns5:affiliation "IRISA, Campus Beaulieu, 35042 Rennes cedex, France. E-mail: peggy.cellier@irisa.fr(2)" ;
+    ns4:sameAs <http://ceur-ws.org/persons/INSAiRennes> ;
+    ns1:name "INSA Rennes" .
+
+<http://ceur-ws.org/Vol-1646/#JulieniAh-Pine> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/JulieniAh-Pine> ;
+    ns1:made <http://ceur-ws.org/Vol-1646/#paper3> ;
+    ns1:name "Julien Ah-Pine" .
+
+<http://ceur-ws.org/Vol-1646/#JulieniVelcin> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/JulieniVelcin> ;
+    ns1:made <http://ceur-ws.org/Vol-1646/#paper4> ;
+    ns1:name "Julien Velcin" .
+
+<http://ceur-ws.org/Vol-1646/#Universit%C3%A9iParis> a ns1:Person ;
+    ns2:place <http://dbpedia.org/resource/France> ;
+    ns5:affiliation "13 Sorbonne Paris Cité, LIPN CNRS, Av J.B. Clément, 93430 Villetaneuse, France. Thierry.Charnois@lipn.univ-paris13.fr(3)" ;
+    ns4:sameAs <http://ceur-ws.org/persons/Universit%C3%A9iParis> ;
+    ns1:name "Université Paris" .
+
+<http://ceur-ws.org/Vol-1646/#UniversityiofiW%C3%BCrzburg> a ns1:Person ;
+    ns2:place <http://dbpedia.org/resource/Germany> ;
+    ns5:affiliation "Am Hubland, 97074 Würzburg, Germany. E-mail: hotho@informatik.uni-wuerzburg.de(4)" ;
+    ns4:sameAs <http://ceur-ws.org/persons/UniversityiofiW%C3%BCrzburg> ;
+    ns1:name "University of Würzburg" .
+
+<http://ceur-ws.org/Vol-1646/#event> a ns6:WorkshopEvent ;
+    ns6:hasLocation <http://dbpedia.org/resource/Italy> ;
+    ns6:hasPart <http://ceur-ws.org/Vol-1646/#part-DMNLP> ;
+    ns6:isSubEventOf <http://ceur-ws.org/Vol-1646/#conf> ;
+    ns8:beginsAtDatetime "2016-09-23T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:endsAtDatetime "2016-09-23T00:00:00+00:00"^^xsd:dateTime ;
+    ns9:license "http://creativecommons.org/publicdomain/zero/1.0/" ;
+    rdfs:seeAlso <http://ceur-ws.org/Vol-1202/#event>,
+        <http://ceur-ws.org/Vol-1410/#event> .
+
+<http://ceur-ws.org/Vol-1646/#paper1> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1646/> ;
+    ns3:title "Using Machine Learning Methods and Linguistic Features in Single-Document Extractive Summarization" ;
+    ns2:endPage 8 ;
+    ns2:numPages 8 ;
+    ns2:section <http://ceur-ws.org/Vol-1646/#Papers> ;
+    ns2:startPage 1 ;
+    ns5:author <http://ceur-ws.org/Vol-1646/#AlexanderiDlikman> .
+
+<http://ceur-ws.org/Vol-1646/#paper2> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1646/> ;
+    ns3:title "Prediction of Happy Endings in German Novels" ;
+    ns2:endPage 16 ;
+    ns2:numPages 8 ;
+    ns2:section <http://ceur-ws.org/Vol-1646/#Papers> ;
+    ns2:startPage 9 ;
+    ns5:author <http://ceur-ws.org/Vol-1646/#AlbiniZehe> .
+
+<http://ceur-ws.org/Vol-1646/#paper3> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1646/> ;
+    ns3:title "A Study of Synthetic Oversampling for Twitter Imbalanced Sentiment Analysis" ;
+    ns2:endPage 24 ;
+    ns2:numPages 8 ;
+    ns2:section <http://ceur-ws.org/Vol-1646/#Papers> ;
+    ns2:startPage 17 ;
+    ns5:author <http://ceur-ws.org/Vol-1646/#JulieniAh-Pine> .
+
+<http://ceur-ws.org/Vol-1646/#paper4> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1646/> ;
+    ns3:title "Shallow Text Clustering Does Not Mean Weak Topics: How Topic Identification Can Leverage Bigram Features" ;
+    ns2:endPage 32 ;
+    ns2:numPages 8 ;
+    ns2:section <http://ceur-ws.org/Vol-1646/#Papers> ;
+    ns2:startPage 25 ;
+    ns5:author <http://ceur-ws.org/Vol-1646/#JulieniVelcin> .
+
+<http://ceur-ws.org/Vol-1646/#paper5> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1646/> ;
+    ns3:title "Topic Models with Sparse and Group-Sparsity Inducing Priors" ;
+    ns2:endPage 40 ;
+    ns2:numPages 8 ;
+    ns2:section <http://ceur-ws.org/Vol-1646/#Papers> ;
+    ns2:startPage 33 ;
+    ns5:author <http://ceur-ws.org/Vol-1646/#ChristianiP%C3%B6litz> .
+
+<http://ceur-ws.org/Vol-1646/#paper6> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1646/> ;
+    ns3:title "Topic Sentiment Joint Model with Word Embeddings" ;
+    ns2:endPage 48 ;
+    ns2:numPages 8 ;
+    ns2:section <http://ceur-ws.org/Vol-1646/#Papers> ;
+    ns2:startPage 41 ;
+    ns5:author <http://ceur-ws.org/Vol-1646/#FuiXianghua> .
+
+<http://ceur-ws.org/Vol-1646/> a ns6:Proceedings ;
+    ns6:hasPart <http://ceur-ws.org/Vol-1646/#paper1>,
+        <http://ceur-ws.org/Vol-1646/#paper2>,
+        <http://ceur-ws.org/Vol-1646/#paper3>,
+        <http://ceur-ws.org/Vol-1646/#paper4>,
+        <http://ceur-ws.org/Vol-1646/#paper5>,
+        <http://ceur-ws.org/Vol-1646/#paper6> ;
+    ns6:hasSession <http://ceur-ws.org/Vol-1646/#Papers> ;
+    ns7:issued "2016-07-28T00:00:00+00:00"^^xsd:dateTime ;
+    ns2:presentedAt <http://ceur-ws.org/Vol-1646/#event> ;
+    ns5:editor <http://ceur-ws.org/Vol-1646/#DepartmentiofiComputeriScience>,
         <http://ceur-ws.org/Vol-1646/#FacultyiofiComputeriScience>,
         <http://ceur-ws.org/Vol-1646/#INRIAiNancyiGrand-Est>,
         <http://ceur-ws.org/Vol-1646/#INSAiRennes>,
         <http://ceur-ws.org/Vol-1646/#Universit%C3%A9iParis>,
         <http://ceur-ws.org/Vol-1646/#UniversityiofiW%C3%BCrzburg> .
 
-<http://ceur-ws.org/Vol-1646/#DepartmentiofiComputeriScience> a ns6:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/DepartmentiofiComputeriScience> ;
-    ns6:name "Department of Computer Science" .
-
-<http://ceur-ws.org/Vol-1646/#FacultyiofiComputeriScience> a ns6:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/FacultyiofiComputeriScience> ;
-    ns6:name "Faculty of Computer Science" .
-
-<http://ceur-ws.org/Vol-1646/#INRIAiNancyiGrand-Est> a ns6:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/INRIAiNancyiGrand-Est> ;
-    ns6:name "INRIA Nancy Grand-Est" .
-
-<http://ceur-ws.org/Vol-1646/#INSAiRennes> a ns6:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/INSAiRennes> ;
-    ns6:name "INSA Rennes" .
-
-<http://ceur-ws.org/Vol-1646/#Universit%C3%A9iParis> a ns6:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/Universit%C3%A9iParis> ;
-    ns6:name "Université Paris" .
-
-<http://ceur-ws.org/Vol-1646/#UniversityiofiW%C3%BCrzburg> a ns6:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/UniversityiofiW%C3%BCrzburg> ;
-    ns6:name "University of Würzburg" .
-
-<http://ceur-ws.org/Vol-1646/#event> a ns3:WorkshopEvent ;
-    ns3:hasLocation <http://dbpedia.org/resource/Italy> ;
-    ns3:hasPart <http://ceur-ws.org/Vol-1646/#part-ws> ;
-    ns3:isSubEventOf <http://ceur-ws.org/Vol-1646/#conf> ;
-    ns8:beginsAtDatetime "2016-09-23T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:endsAtDatetime "2016-09-23T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:license "http://creativecommons.org/publicdomain/zero/1.0/" ;
-    rdfs:seeAlso <http://ceur-ws.org/Vol-1202/#event>,
-        <http://ceur-ws.org/Vol-1410/#event> .
+<http://ceur-ws.org/Vol-1646/#Papers> a ns6:SessionEvent ;
+    ns6:partOf <http://ceur-ws.org/Vol-1646/> ;
+    ns3:title "Papers" .
 

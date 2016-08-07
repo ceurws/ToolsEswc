@@ -1,35 +1,132 @@
-@prefix ns1: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns2: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns3: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns4: <http://purl.org/ontology/bibo/#> .
-@prefix ns5: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns6: <http://purl.org/dc/elements/1.1/> .
-@prefix ns7: <http://xmlns.com/foaf/0.1/> .
-@prefix ns8: <http://www.w3.org/2002/07/owl#> .
+@prefix ns1: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns2: <http://www.w3.org/2002/07/owl#> .
+@prefix ns3: <http://purl.org/ontology/bibo/#> .
+@prefix ns4: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns5: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns6: <http://xmlns.com/foaf/0.1/> .
+@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns9: <http://purl.org/dc/elements/1.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1552/> a ns1:Proceedings ;
-    ns3:issued "2016-03-02T00:00:00+00:00"^^xsd:dateTime ;
-    ns4:presentedAt <http://ceur-ws.org/Vol-1552/#event> ;
-    ns2:editor <http://ceur-ws.org/Vol-1552/#BruceiW.iWatson>,
+<http://ceur-ws.org/Vol-1552/#BruceiW.iWatson> a ns6:Person ;
+    ns1:affiliation "" ;
+    ns2:sameAs <http://ceur-ws.org/persons/BruceiW.iWatson> ;
+    ns6:name "Bruce W. Watson" .
+
+<http://ceur-ws.org/Vol-1552/#DmitryiI.iIgnatov> a ns6:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/DmitryiI.iIgnatov> ;
+    ns6:made <http://ceur-ws.org/Vol-1552/#paper3> ;
+    ns6:name "Dmitry I. Ignatov" .
+
+<http://ceur-ws.org/Vol-1552/#DmitryiIlvovsky> a ns6:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/DmitryiIlvovsky> ;
+    ns6:made <http://ceur-ws.org/Vol-1552/#paper1> ;
+    ns6:name "Dmitry Ilvovsky" .
+
+<http://ceur-ws.org/Vol-1552/#GillianiJ.iGreene> a ns6:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/GillianiJ.iGreene> ;
+    ns6:made <http://ceur-ws.org/Vol-1552/#paper2> ;
+    ns6:name "Gillian J. Greene" .
+
+<http://ceur-ws.org/Vol-1552/#MadodaiNxumalo> a ns6:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/MadodaiNxumalo> ;
+    ns6:made <http://ceur-ws.org/Vol-1552/#paper5> ;
+    ns6:name "Madoda Nxumalo" .
+
+<http://ceur-ws.org/Vol-1552/#SergeiiO.iKuznetsov> a ns6:Person ;
+    ns1:affiliation "" ;
+    ns2:sameAs <http://ceur-ws.org/persons/SergeiiO.iKuznetsov> ;
+    ns6:name "Sergei O. Kuznetsov" .
+
+<http://ceur-ws.org/Vol-1552/#SergeiiObiedkov> a ns6:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/SergeiiObiedkov> ;
+    ns6:made <http://ceur-ws.org/Vol-1552/#paper6> ;
+    ns6:name "Sergei Obiedkov" .
+
+<http://ceur-ws.org/Vol-1552/#event> a ns5:WorkshopEvent ;
+    ns5:hasLocation <http://dbpedia.org/resource/South_Africa> ;
+    ns5:hasPart <http://ceur-ws.org/Vol-1552/#part-RuZA> ;
+    ns5:isSubEventOf <http://ceur-ws.org/Vol-1552/#conf> ;
+    ns7:beginsAtDatetime "2016-11-30T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:endsAtDatetime "2016-11-30T00:00:00+00:00"^^xsd:dateTime ;
+    ns9:license "http://creativecommons.org/publicdomain/zero/1.0/" .
+
+<http://ceur-ws.org/Vol-1552/#AlexeyiNeznanov> a ns6:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/AlexeyiNeznanov> ;
+    ns6:made <http://ceur-ws.org/Vol-1552/#paper4>,
+        <http://ceur-ws.org/Vol-1552/#paper7> ;
+    ns6:name "Alexey Neznanov" .
+
+<http://ceur-ws.org/Vol-1552/#paper1> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1552/> ;
+    ns4:title "Visualisation of Russian Newspaper Corpus by Means of Reference Graphs" ;
+    ns3:endPage 9 ;
+    ns3:numPages 9 ;
+    ns3:startPage 1 ;
+    ns1:author <http://ceur-ws.org/Vol-1552/#DmitryiIlvovsky> .
+
+<http://ceur-ws.org/Vol-1552/#paper2> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1552/> ;
+    ns4:title "Browsing Publication Data using Tag Clouds over Concept Lattices Constructed by Key-Phrase Extraction" ;
+    ns3:endPage 22 ;
+    ns3:numPages 13 ;
+    ns3:startPage 10 ;
+    ns1:author <http://ceur-ws.org/Vol-1552/#GillianiJ.iGreene> .
+
+<http://ceur-ws.org/Vol-1552/#paper3> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1552/> ;
+    ns4:title "Towards a Unified Taxonomy of Biclustering Methods" ;
+    ns3:endPage 39 ;
+    ns3:numPages 17 ;
+    ns3:startPage 23 ;
+    ns1:author <http://ceur-ws.org/Vol-1552/#DmitryiI.iIgnatov> .
+
+<http://ceur-ws.org/Vol-1552/#paper4> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1552/> ;
+    ns4:title "Formal Concept Analysis Research Toolbox and Failure Deterministic Finite Automata" ;
+    ns3:endPage 46 ;
+    ns3:numPages 7 ;
+    ns3:startPage 40 ;
+    ns1:author <http://ceur-ws.org/Vol-1552/#AlexeyiNeznanov> .
+
+<http://ceur-ws.org/Vol-1552/#paper5> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1552/> ;
+    ns4:title "On Generating a Random Deterministic Finite Automaton as well as its Failure Equivalent" ;
+    ns3:endPage 57 ;
+    ns3:numPages 11 ;
+    ns3:startPage 47 ;
+    ns1:author <http://ceur-ws.org/Vol-1552/#MadodaiNxumalo> .
+
+<http://ceur-ws.org/Vol-1552/#paper6> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1552/> ;
+    ns4:title "Collaborative Conceptual Exploration as a Tool for Crowdsourcing Domain Ontologies" ;
+    ns3:endPage 70 ;
+    ns3:numPages 13 ;
+    ns3:startPage 58 ;
+    ns1:author <http://ceur-ws.org/Vol-1552/#SergeiiObiedkov> .
+
+<http://ceur-ws.org/Vol-1552/#paper7> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1552/> ;
+    ns4:title "Full-text Search in Intermediate Data Storage of FCART" ;
+    ns3:endPage 77 ;
+    ns3:numPages 7 ;
+    ns3:startPage 71 ;
+    ns1:author <http://ceur-ws.org/Vol-1552/#AlexeyiNeznanov> .
+
+<http://ceur-ws.org/Vol-1552/> a ns5:Proceedings ;
+    ns5:hasPart <http://ceur-ws.org/Vol-1552/#paper1>,
+        <http://ceur-ws.org/Vol-1552/#paper2>,
+        <http://ceur-ws.org/Vol-1552/#paper3>,
+        <http://ceur-ws.org/Vol-1552/#paper4>,
+        <http://ceur-ws.org/Vol-1552/#paper5>,
+        <http://ceur-ws.org/Vol-1552/#paper6>,
+        <http://ceur-ws.org/Vol-1552/#paper7> ;
+    ns8:issued "2016-03-02T00:00:00+00:00"^^xsd:dateTime ;
+    ns3:presentedAt <http://ceur-ws.org/Vol-1552/#event> ;
+    ns1:editor <http://ceur-ws.org/Vol-1552/#BruceiW.iWatson>,
         <http://ceur-ws.org/Vol-1552/#SergeiiO.iKuznetsov> .
-
-<http://ceur-ws.org/Vol-1552/#BruceiW.iWatson> a ns7:Person ;
-    ns8:sameAs <http://ceur-ws.org/persons/BruceiW.iWatson> ;
-    ns7:name "Bruce W. Watson" .
-
-<http://ceur-ws.org/Vol-1552/#SergeiiO.iKuznetsov> a ns7:Person ;
-    ns8:sameAs <http://ceur-ws.org/persons/SergeiiO.iKuznetsov> ;
-    ns7:name "Sergei O. Kuznetsov" .
-
-<http://ceur-ws.org/Vol-1552/#event> a ns1:WorkshopEvent ;
-    ns1:hasLocation <http://dbpedia.org/resource/South_Africa> ;
-    ns1:hasPart <http://ceur-ws.org/Vol-1552/#part-RuZA> ;
-    ns1:isSubEventOf <http://ceur-ws.org/Vol-1552/#conf> ;
-    ns5:beginsAtDatetime "2016-11-30T00:00:00+00:00"^^xsd:dateTime ;
-    ns5:endsAtDatetime "2016-11-30T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:license "http://creativecommons.org/publicdomain/zero/1.0/" .
 

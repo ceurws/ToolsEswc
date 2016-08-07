@@ -1,45 +1,226 @@
-@prefix ns1: <http://www.w3.org/2002/07/owl#> .
-@prefix ns2: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns3: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns4: <http://purl.org/dc/elements/1.1/> .
-@prefix ns5: <http://xmlns.com/foaf/0.1/> .
-@prefix ns6: <http://purl.org/ontology/bibo/#> .
-@prefix ns7: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns1: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns2: <http://www.w3.org/2002/07/owl#> .
+@prefix ns3: <http://purl.org/ontology/bibo/#> .
+@prefix ns4: <http://xmlns.com/foaf/0.1/> .
+@prefix ns5: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns6: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
 @prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns9: <http://purl.org/dc/elements/1.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1421/> a ns2:Proceedings ;
-    ns8:issued "2015-08-20T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:presentedAt <http://ceur-ws.org/Vol-1421/#event> ;
-    ns7:editor <http://ceur-ws.org/Vol-1421/#ChristophiTrattner>,
+<http://ceur-ws.org/Vol-1421/#AlejandroiBellog%C3%ADn> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/AlejandroiBellog%C3%ADn> ;
+    ns4:made <http://ceur-ws.org/Vol-1421/#paper1> ;
+    ns4:name "Alejandro Bellogín" .
+
+<http://ceur-ws.org/Vol-1421/#AlessandroiMicarelli> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/AlessandroiMicarelli> ;
+    ns4:made <http://ceur-ws.org/Vol-1421/#paper3> ;
+    ns4:name "Alessandro Micarelli" .
+
+<http://ceur-ws.org/Vol-1421/#ArjenideiVries> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/ArjenideiVries> ;
+    ns4:made <http://ceur-ws.org/Vol-1421/#paper1> ;
+    ns4:name "Arjen de Vries" .
+
+<http://ceur-ws.org/Vol-1421/#BarbaraiPoblete> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/BarbaraiPoblete> ;
+    ns4:made <http://ceur-ws.org/Vol-1421/#paper4> ;
+    ns4:name "Barbara Poblete" .
+
+<http://ceur-ws.org/Vol-1421/#DavideiFeltoniiGurini> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/DavideiFeltoniiGurini> ;
+    ns4:made <http://ceur-ws.org/Vol-1421/#paper3> ;
+    ns4:name "Davide Feltoni Gurini" .
+
+<http://ceur-ws.org/Vol-1421/#EduardoiGraells-Garrido> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/EduardoiGraells-Garrido> ;
+    ns4:made <http://ceur-ws.org/Vol-1421/#paper2> ;
+    ns4:name "Eduardo Graells-Garrido" .
+
+<http://ceur-ws.org/Vol-1421/#EmreiKiciman> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/EmreiKiciman> ;
+    ns4:made <http://ceur-ws.org/Vol-1421/#paper5> ;
+    ns4:name "Emre Kiciman" .
+
+<http://ceur-ws.org/Vol-1421/#FabioiGasparetti> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/FabioiGasparetti> ;
+    ns4:made <http://ceur-ws.org/Vol-1421/#paper3> ;
+    ns4:name "Fabio Gasparetti" .
+
+<http://ceur-ws.org/Vol-1421/#GiuseppeiSansonetti> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/GiuseppeiSansonetti> ;
+    ns4:made <http://ceur-ws.org/Vol-1421/#paper3> ;
+    ns4:name "Giuseppe Sansonetti" .
+
+<http://ceur-ws.org/Vol-1421/#JoseiMigueliHerrera> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/JoseiMigueliHerrera> ;
+    ns4:made <http://ceur-ws.org/Vol-1421/#paper4> ;
+    ns4:name "Jose Miguel Herrera" .
+
+<http://ceur-ws.org/Vol-1421/#MouniaiLalmas> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/MouniaiLalmas> ;
+    ns4:made <http://ceur-ws.org/Vol-1421/#paper2> ;
+    ns4:name "Mounia Lalmas" .
+
+<http://ceur-ws.org/Vol-1421/#ThaeriSamar> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/ThaeriSamar> ;
+    ns4:made <http://ceur-ws.org/Vol-1421/#paper1> ;
+    ns4:name "Thaer Samar" .
+
+<http://ceur-ws.org/Vol-1421/#event> a ns5:WorkshopEvent ;
+    ns5:hasLocation <http://dbpedia.org/resource/Chile> ;
+    ns5:hasPart <http://ceur-ws.org/Vol-1421/#part-SPS> ;
+    ns5:isSubEventOf <http://ceur-ws.org/Vol-1421/#conf> ;
+    ns7:beginsAtDatetime "2016-08-09T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:endsAtDatetime "2016-08-09T00:00:00+00:00"^^xsd:dateTime ;
+    ns9:license "http://creativecommons.org/publicdomain/zero/1.0/" .
+
+<http://ceur-ws.org/Vol-1421/#ChristophiTrattner> a ns4:Person ;
+    ns1:affiliation "" ;
+    ns2:sameAs <http://ceur-ws.org/persons/ChristophiTrattner> ;
+    ns4:made <http://ceur-ws.org/Vol-1421/#preface> ;
+    ns4:name "Christoph Trattner" .
+
+<http://ceur-ws.org/Vol-1421/#LeandroiBalbyiMarinho> a ns4:Person ;
+    ns1:affiliation "" ;
+    ns2:sameAs <http://ceur-ws.org/persons/LeandroiBalbyiMarinho> ;
+    ns4:made <http://ceur-ws.org/Vol-1421/#preface> ;
+    ns4:name "Leandro Balby Marinho" .
+
+<http://ceur-ws.org/Vol-1421/#PauliBennett> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/PauliBennett> ;
+    ns4:made <http://ceur-ws.org/Vol-1421/#intro2>,
+        <http://ceur-ws.org/Vol-1421/#paper5> ;
+    ns4:name "Paul Bennett" .
+
+<http://ceur-ws.org/Vol-1421/#PeteriBrusilovsky> a ns4:Person ;
+    ns1:affiliation "" ;
+    ns2:sameAs <http://ceur-ws.org/persons/PeteriBrusilovsky> ;
+    ns4:made <http://ceur-ws.org/Vol-1421/#preface> ;
+    ns4:name "Peter Brusilovsky" .
+
+<http://ceur-ws.org/Vol-1421/#RicardoiBaeza-Yates> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/RicardoiBaeza-Yates> ;
+    ns4:made <http://ceur-ws.org/Vol-1421/#intro1>,
+        <http://ceur-ws.org/Vol-1421/#paper2> ;
+    ns4:name "Ricardo Baeza-Yates" .
+
+<http://ceur-ws.org/Vol-1421/#intro1> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1421/> ;
+    ns6:title "Wisdom of Crowds or Wisdom of a Few?" ;
+    ns3:endPage 1 ;
+    ns3:numPages 1 ;
+    ns3:section <http://ceur-ws.org/Vol-1421/#InvitedTalks> ;
+    ns3:startPage 1 ;
+    ns1:author <http://ceur-ws.org/Vol-1421/#RicardoiBaeza-Yates> .
+
+<http://ceur-ws.org/Vol-1421/#intro2> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1421/> ;
+    ns6:title "Search from Personal to Social Context: Progress and Challenges" ;
+    ns3:endPage 2 ;
+    ns3:numPages 1 ;
+    ns3:section <http://ceur-ws.org/Vol-1421/#InvitedTalks> ;
+    ns3:startPage 2 ;
+    ns1:author <http://ceur-ws.org/Vol-1421/#PauliBennett> .
+
+<http://ceur-ws.org/Vol-1421/#DenisiParra> a ns4:Person ;
+    ns1:affiliation "" ;
+    ns2:sameAs <http://ceur-ws.org/persons/DenisiParra> ;
+    ns4:made <http://ceur-ws.org/Vol-1421/#paper4>,
+        <http://ceur-ws.org/Vol-1421/#preface> ;
+    ns4:name "Denis Parra" .
+
+<http://ceur-ws.org/Vol-1421/#InvitedTalks> a ns5:SessionEvent ;
+    ns5:partOf <http://ceur-ws.org/Vol-1421/> ;
+    ns6:title "Invited Talks" .
+
+<http://ceur-ws.org/Vol-1421/#paper5> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1421/> ;
+    ns6:title "Persona-ization: Searching on Behalf of Others" ;
+    ns3:endPage 32 ;
+    ns3:numPages 7 ;
+    ns3:section <http://ceur-ws.org/Vol-1421/#Presentations> ;
+    ns3:startPage 26 ;
+    ns1:author <http://ceur-ws.org/Vol-1421/#EmreiKiciman>,
+        <http://ceur-ws.org/Vol-1421/#PauliBennett> .
+
+<http://ceur-ws.org/Vol-1421/#paper1> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1421/> ;
+    ns6:title "Improving Contextual Suggestions using Open Web Domain Knowledge" ;
+    ns3:endPage 9 ;
+    ns3:numPages 7 ;
+    ns3:section <http://ceur-ws.org/Vol-1421/#Presentations> ;
+    ns3:startPage 3 ;
+    ns1:author <http://ceur-ws.org/Vol-1421/#AlejandroiBellog%C3%ADn>,
+        <http://ceur-ws.org/Vol-1421/#ArjenideiVries>,
+        <http://ceur-ws.org/Vol-1421/#ThaeriSamar> .
+
+<http://ceur-ws.org/Vol-1421/#paper2> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1421/> ;
+    ns6:title "Finding Intermediary Topics Between People of Opposing Views: A Case Study" ;
+    ns3:endPage 16 ;
+    ns3:numPages 7 ;
+    ns3:section <http://ceur-ws.org/Vol-1421/#Presentations> ;
+    ns3:startPage 10 ;
+    ns1:author <http://ceur-ws.org/Vol-1421/#EduardoiGraells-Garrido>,
+        <http://ceur-ws.org/Vol-1421/#MouniaiLalmas>,
+        <http://ceur-ws.org/Vol-1421/#RicardoiBaeza-Yates> .
+
+<http://ceur-ws.org/Vol-1421/#paper4> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1421/> ;
+    ns6:title "Retrieving Relevant Conversations for Q&A on Twitter" ;
+    ns3:endPage 25 ;
+    ns3:numPages 5 ;
+    ns3:section <http://ceur-ws.org/Vol-1421/#Presentations> ;
+    ns3:startPage 21 ;
+    ns1:author <http://ceur-ws.org/Vol-1421/#BarbaraiPoblete>,
+        <http://ceur-ws.org/Vol-1421/#DenisiParra>,
+        <http://ceur-ws.org/Vol-1421/#JoseiMigueliHerrera> .
+
+<http://ceur-ws.org/Vol-1421/#paper3> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1421/> ;
+    ns6:title "Analysis of Sentiment Communities in Online Networks" ;
+    ns3:endPage 20 ;
+    ns3:numPages 4 ;
+    ns3:section <http://ceur-ws.org/Vol-1421/#Presentations> ;
+    ns3:startPage 17 ;
+    ns1:author <http://ceur-ws.org/Vol-1421/#AlessandroiMicarelli>,
+        <http://ceur-ws.org/Vol-1421/#DavideiFeltoniiGurini>,
+        <http://ceur-ws.org/Vol-1421/#FabioiGasparetti>,
+        <http://ceur-ws.org/Vol-1421/#GiuseppeiSansonetti> .
+
+<http://ceur-ws.org/Vol-1421/#preface> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1421/> ;
+    ns6:title "Preface" ;
+    ns1:author <http://ceur-ws.org/Vol-1421/#ChristophiTrattner>,
         <http://ceur-ws.org/Vol-1421/#DenisiParra>,
         <http://ceur-ws.org/Vol-1421/#LeandroiBalbyiMarinho>,
         <http://ceur-ws.org/Vol-1421/#PeteriBrusilovsky> .
 
-<http://ceur-ws.org/Vol-1421/#ChristophiTrattner> a ns5:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/ChristophiTrattner> ;
-    ns5:name "Christoph Trattner" .
+<http://ceur-ws.org/Vol-1421/#Presentations> a ns5:SessionEvent ;
+    ns5:partOf <http://ceur-ws.org/Vol-1421/> ;
+    ns6:title "Presentations" .
 
-<http://ceur-ws.org/Vol-1421/#DenisiParra> a ns5:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/DenisiParra> ;
-    ns5:name "Denis Parra" .
-
-<http://ceur-ws.org/Vol-1421/#LeandroiBalbyiMarinho> a ns5:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/LeandroiBalbyiMarinho> ;
-    ns5:name "Leandro Balby Marinho" .
-
-<http://ceur-ws.org/Vol-1421/#PeteriBrusilovsky> a ns5:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/PeteriBrusilovsky> ;
-    ns5:name "Peter Brusilovsky" .
-
-<http://ceur-ws.org/Vol-1421/#event> a ns2:WorkshopEvent ;
-    ns2:hasLocation <http://dbpedia.org/resource/Chile> ;
-    ns2:hasPart <http://ceur-ws.org/Vol-1421/#part-ws> ;
-    ns2:isSubEventOf <http://ceur-ws.org/Vol-1421/#conf> ;
-    ns3:beginsAtDatetime "2016-08-09T00:00:00+00:00"^^xsd:dateTime ;
-    ns3:endsAtDatetime "2016-08-09T00:00:00+00:00"^^xsd:dateTime ;
-    ns4:license "http://creativecommons.org/publicdomain/zero/1.0/" .
+<http://ceur-ws.org/Vol-1421/> a ns5:Proceedings ;
+    ns5:hasPart <http://ceur-ws.org/Vol-1421/#intro1>,
+        <http://ceur-ws.org/Vol-1421/#intro2>,
+        <http://ceur-ws.org/Vol-1421/#paper1>,
+        <http://ceur-ws.org/Vol-1421/#paper2>,
+        <http://ceur-ws.org/Vol-1421/#paper3>,
+        <http://ceur-ws.org/Vol-1421/#paper4>,
+        <http://ceur-ws.org/Vol-1421/#paper5>,
+        <http://ceur-ws.org/Vol-1421/#preface> ;
+    ns5:hasSession <http://ceur-ws.org/Vol-1421/#InvitedTalks>,
+        <http://ceur-ws.org/Vol-1421/#Presentations> ;
+    ns8:issued "2015-08-20T00:00:00+00:00"^^xsd:dateTime ;
+    ns3:presentedAt <http://ceur-ws.org/Vol-1421/#event> ;
+    ns1:editor <http://ceur-ws.org/Vol-1421/#ChristophiTrattner>,
+        <http://ceur-ws.org/Vol-1421/#DenisiParra>,
+        <http://ceur-ws.org/Vol-1421/#LeandroiBalbyiMarinho>,
+        <http://ceur-ws.org/Vol-1421/#PeteriBrusilovsky> .
 

@@ -1,55 +1,192 @@
-@prefix ns1: <http://purl.org/dc/elements/1.1/> .
-@prefix ns2: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns3: <http://xmlns.com/foaf/0.1/> .
-@prefix ns4: <http://www.w3.org/2002/07/owl#> .
-@prefix ns5: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns6: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns7: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns8: <http://purl.org/ontology/bibo/#> .
+@prefix ns1: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns2: <http://purl.org/ontology/bibo/#> .
+@prefix ns3: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns4: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns5: <http://xmlns.com/foaf/0.1/> .
+@prefix ns6: <http://www.w3.org/2002/07/owl#> .
+@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns8: <http://purl.org/dc/elements/1.1/> .
+@prefix ns9: <http://purl.org/NET/c4dm/timeline.owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1076/> a ns5:Proceedings ;
-    ns6:issued "2013-11-05T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:presentedAt <http://ceur-ws.org/Vol-1076/#event> ;
-    ns7:editor <http://ceur-ws.org/Vol-1076/#AnaiMoreira>,
+<http://ceur-ws.org/Vol-1076/#AnaiMoreira> a ns5:Person ;
+    ns3:affiliation "" ;
+    ns6:sameAs <http://ceur-ws.org/persons/AnaiMoreira> ;
+    ns5:name "Ana Moreira" .
+
+<http://ceur-ws.org/Vol-1076/#BrahimiHamid> a ns5:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/BrahimiHamid> ;
+    ns5:made <http://ceur-ws.org/Vol-1076/#paper7> ;
+    ns5:name "Brahim Hamid" .
+
+<http://ceur-ws.org/Vol-1076/#Fr%C3%A9d%C3%A9riciMayart> a ns5:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/Fr%C3%A9d%C3%A9riciMayart> ;
+    ns5:made <http://ceur-ws.org/Vol-1076/#paper7> ;
+    ns5:name "Frédéric Mayart" .
+
+<http://ceur-ws.org/Vol-1076/#GeriiGeorg> a ns5:Person ;
+    ns3:affiliation "" ;
+    ns6:sameAs <http://ceur-ws.org/persons/GeriiGeorg> ;
+    ns5:name "Geri Georg" .
+
+<http://ceur-ws.org/Vol-1076/#GongiZhang> a ns5:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/GongiZhang> ;
+    ns5:made <http://ceur-ws.org/Vol-1076/#paper2> ;
+    ns5:name "Gong Zhang" .
+
+<http://ceur-ws.org/Vol-1076/#GunteriMussbacher> a ns5:Person ;
+    ns3:affiliation "" ;
+    ns6:sameAs <http://ceur-ws.org/persons/GunteriMussbacher> ;
+    ns5:name "Gunter Mussbacher" .
+
+<http://ceur-ws.org/Vol-1076/#Jean-MicheliBruel> a ns5:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/Jean-MicheliBruel> ;
+    ns5:made <http://ceur-ws.org/Vol-1076/#paper7> ;
+    ns5:name "Jean-Michel Bruel" .
+
+<http://ceur-ws.org/Vol-1076/#MatthiasiSch%C3%B6ttle> a ns5:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/MatthiasiSch%C3%B6ttle> ;
+    ns5:made <http://ceur-ws.org/Vol-1076/#paper6> ;
+    ns5:name "Matthias Schöttle" .
+
+<http://ceur-ws.org/Vol-1076/#OmariAlam> a ns5:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/OmariAlam> ;
+    ns5:made <http://ceur-ws.org/Vol-1076/#paper6> ;
+    ns5:name "Omar Alam" .
+
+<http://ceur-ws.org/Vol-1076/#PhilippeiCollet> a ns5:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/PhilippeiCollet> ;
+    ns5:made <http://ceur-ws.org/Vol-1076/#paper5> ;
+    ns5:name "Philippe Collet" .
+
+<http://ceur-ws.org/Vol-1076/#PhilippeiLahire> a ns5:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/PhilippeiLahire> ;
+    ns5:made <http://ceur-ws.org/Vol-1076/#paper5> ;
+    ns5:name "Philippe Lahire" .
+
+<http://ceur-ws.org/Vol-1076/#RobertiFrance> a ns5:Person ;
+    ns3:affiliation "" ;
+    ns6:sameAs <http://ceur-ws.org/persons/RobertiFrance> ;
+    ns5:name "Robert France" .
+
+<http://ceur-ws.org/Vol-1076/#RolviBr%C3%A6k> a ns5:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/RolviBr%C3%A6k> ;
+    ns5:made <http://ceur-ws.org/Vol-1076/#paper4> ;
+    ns5:name "Rolv Bræk" .
+
+<http://ceur-ws.org/Vol-1076/#ShuaiiWang> a ns5:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/ShuaiiWang> ;
+    ns5:made <http://ceur-ws.org/Vol-1076/#paper1> ;
+    ns5:name "Shuai Wang" .
+
+<http://ceur-ws.org/Vol-1076/#TaoiYue> a ns5:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/TaoiYue> ;
+    ns5:made <http://ceur-ws.org/Vol-1076/#paper2> ;
+    ns5:name "Tao Yue" .
+
+<http://ceur-ws.org/Vol-1076/#TimothyiC.iLethbridge> a ns5:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/TimothyiC.iLethbridge> ;
+    ns5:made <http://ceur-ws.org/Vol-1076/#paper3> ;
+    ns5:name "Timothy C. Lethbridge" .
+
+<http://ceur-ws.org/Vol-1076/#event> a ns4:WorkshopEvent ;
+    ns4:hasLocation <http://dbpedia.org/resource/United_States> ;
+    ns4:hasPart <http://ceur-ws.org/Vol-1076/#part-CMA> ;
+    ns4:isSubEventOf <http://ceur-ws.org/Vol-1076/#conf> ;
+    ns9:beginsAtDatetime "2013-10-01T00:00:00+00:00"^^xsd:dateTime ;
+    ns9:endsAtDatetime "2013-10-01T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:license "http://choosealicense.com/licenses/no-license/" .
+
+<http://ceur-ws.org/Vol-1076/#J%C3%B6rgiKienzle> a ns5:Person ;
+    ns3:affiliation "" ;
+    ns6:sameAs <http://ceur-ws.org/persons/J%C3%B6rgiKienzle> ;
+    ns5:made <http://ceur-ws.org/Vol-1076/#paper6> ;
+    ns5:name "Jörg Kienzle" .
+
+<http://ceur-ws.org/Vol-1076/#paper3> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1076/> ;
+    ns1:title "Key Properties for Comparing Modeling Languages and Tools: Usability, Completeness and Scalability" ;
+    ns2:section <http://ceur-ws.org/Vol-1076/#ComparisonCriteria> ;
+    ns3:author <http://ceur-ws.org/Vol-1076/#TimothyiC.iLethbridge> .
+
+<http://ceur-ws.org/Vol-1076/#paper4> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1076/> ;
+    ns1:title "On Properties of Modeling Approaches" ;
+    ns2:section <http://ceur-ws.org/Vol-1076/#ComparisonCriteria> ;
+    ns3:author <http://ceur-ws.org/Vol-1076/#RolviBr%C3%A6k> .
+
+<http://ceur-ws.org/Vol-1076/#ModelsofthebCMSCaseStudy> a ns4:SessionEvent ;
+    ns4:partOf <http://ceur-ws.org/Vol-1076/> ;
+    ns1:title "Models of the bCMS Case Study" .
+
+<http://ceur-ws.org/Vol-1076/#ShaukatiAli> a ns5:Person ;
+    ns3:affiliation "" ;
+    ns6:sameAs <http://ceur-ws.org/persons/ShaukatiAli> ;
+    ns5:made <http://ceur-ws.org/Vol-1076/#paper1>,
+        <http://ceur-ws.org/Vol-1076/#paper2> ;
+    ns5:name "Shaukat Ali" .
+
+<http://ceur-ws.org/Vol-1076/#paper1> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1076/> ;
+    ns1:title "Modeling bCMS Product Line Using Feature Model, Component Family Model and UML" ;
+    ns2:section <http://ceur-ws.org/Vol-1076/#ModelsofthebCMSCaseStudy> ;
+    ns3:author <http://ceur-ws.org/Vol-1076/#ShaukatiAli>,
+        <http://ceur-ws.org/Vol-1076/#ShuaiiWang> .
+
+<http://ceur-ws.org/Vol-1076/#paper5> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1076/> ;
+    ns1:title "On the Scalability Criterion for Comparing Modeling Approaches" ;
+    ns2:section <http://ceur-ws.org/Vol-1076/#ComparisonCriteria> ;
+    ns3:author <http://ceur-ws.org/Vol-1076/#PhilippeiCollet>,
+        <http://ceur-ws.org/Vol-1076/#PhilippeiLahire> .
+
+<http://ceur-ws.org/Vol-1076/#paper2> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1076/> ;
+    ns1:title "Modeling Crisis Management System With the Restricted Use Case Modeling Approach" ;
+    ns2:section <http://ceur-ws.org/Vol-1076/#ModelsofthebCMSCaseStudy> ;
+    ns3:author <http://ceur-ws.org/Vol-1076/#GongiZhang>,
+        <http://ceur-ws.org/Vol-1076/#ShaukatiAli>,
+        <http://ceur-ws.org/Vol-1076/#TaoiYue> .
+
+<http://ceur-ws.org/Vol-1076/#paper6> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1076/> ;
+    ns1:title "Revising the Comparison Criteria for Composition" ;
+    ns2:section <http://ceur-ws.org/Vol-1076/#ComparisonCriteria> ;
+    ns3:author <http://ceur-ws.org/Vol-1076/#J%C3%B6rgiKienzle>,
+        <http://ceur-ws.org/Vol-1076/#MatthiasiSch%C3%B6ttle>,
+        <http://ceur-ws.org/Vol-1076/#OmariAlam> .
+
+<http://ceur-ws.org/Vol-1076/#paper7> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1076/> ;
+    ns1:title "How to Analyze Modeling Approach Comparison Criteria" ;
+    ns2:section <http://ceur-ws.org/Vol-1076/#ComparisonCriteria> ;
+    ns3:author <http://ceur-ws.org/Vol-1076/#BrahimiHamid>,
+        <http://ceur-ws.org/Vol-1076/#Fr%C3%A9d%C3%A9riciMayart>,
+        <http://ceur-ws.org/Vol-1076/#Jean-MicheliBruel> .
+
+<http://ceur-ws.org/Vol-1076/#ComparisonCriteria> a ns4:SessionEvent ;
+    ns4:partOf <http://ceur-ws.org/Vol-1076/> ;
+    ns1:title "Comparison Criteria" .
+
+<http://ceur-ws.org/Vol-1076/> a ns4:Proceedings ;
+    ns4:hasPart <http://ceur-ws.org/Vol-1076/#paper1>,
+        <http://ceur-ws.org/Vol-1076/#paper2>,
+        <http://ceur-ws.org/Vol-1076/#paper3>,
+        <http://ceur-ws.org/Vol-1076/#paper4>,
+        <http://ceur-ws.org/Vol-1076/#paper5>,
+        <http://ceur-ws.org/Vol-1076/#paper6>,
+        <http://ceur-ws.org/Vol-1076/#paper7> ;
+    ns4:hasSession <http://ceur-ws.org/Vol-1076/#ComparisonCriteria>,
+        <http://ceur-ws.org/Vol-1076/#ModelsofthebCMSCaseStudy> ;
+    ns7:issued "2013-11-05T00:00:00+00:00"^^xsd:dateTime ;
+    ns2:presentedAt <http://ceur-ws.org/Vol-1076/#event> ;
+    ns3:editor <http://ceur-ws.org/Vol-1076/#AnaiMoreira>,
         <http://ceur-ws.org/Vol-1076/#GeriiGeorg>,
         <http://ceur-ws.org/Vol-1076/#GunteriMussbacher>,
         <http://ceur-ws.org/Vol-1076/#J%C3%B6rgiKienzle>,
         <http://ceur-ws.org/Vol-1076/#RobertiFrance>,
         <http://ceur-ws.org/Vol-1076/#ShaukatiAli> .
-
-<http://ceur-ws.org/Vol-1076/#AnaiMoreira> a ns3:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/AnaiMoreira> ;
-    ns3:name "Ana Moreira" .
-
-<http://ceur-ws.org/Vol-1076/#GeriiGeorg> a ns3:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/GeriiGeorg> ;
-    ns3:name "Geri Georg" .
-
-<http://ceur-ws.org/Vol-1076/#GunteriMussbacher> a ns3:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/GunteriMussbacher> ;
-    ns3:name "Gunter Mussbacher" .
-
-<http://ceur-ws.org/Vol-1076/#J%C3%B6rgiKienzle> a ns3:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/J%C3%B6rgiKienzle> ;
-    ns3:name "Jörg Kienzle" .
-
-<http://ceur-ws.org/Vol-1076/#RobertiFrance> a ns3:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/RobertiFrance> ;
-    ns3:name "Robert France" .
-
-<http://ceur-ws.org/Vol-1076/#ShaukatiAli> a ns3:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/ShaukatiAli> ;
-    ns3:name "Shaukat Ali" .
-
-<http://ceur-ws.org/Vol-1076/#event> a ns5:WorkshopEvent ;
-    ns5:hasLocation <http://dbpedia.org/resource/United_States> ;
-    ns5:hasPart <http://ceur-ws.org/Vol-1076/#part-ws> ;
-    ns5:isSubEventOf <http://ceur-ws.org/Vol-1076/#conf> ;
-    ns2:beginsAtDatetime "2013-10-01T00:00:00+00:00"^^xsd:dateTime ;
-    ns2:endsAtDatetime "2013-10-01T00:00:00+00:00"^^xsd:dateTime ;
-    ns1:license "http://choosealicense.com/licenses/no-license/" .
 

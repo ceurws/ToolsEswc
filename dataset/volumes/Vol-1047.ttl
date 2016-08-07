@@ -1,50 +1,350 @@
 @prefix ns1: <http://www.w3.org/2002/07/owl#> .
-@prefix ns2: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns3: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns4: <http://xmlns.com/foaf/0.1/> .
-@prefix ns5: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns6: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns7: <http://purl.org/dc/elements/1.1/> .
-@prefix ns8: <http://purl.org/ontology/bibo/#> .
+@prefix ns2: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns3: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns4: <http://purl.org/ontology/bibo/#> .
+@prefix ns5: <http://xmlns.com/foaf/0.1/> .
+@prefix ns6: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns8: <http://purl.org/dc/elements/1.1/> .
+@prefix ns9: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1047/> a ns2:Proceedings ;
-    ns5:issued "2013-09-26T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:presentedAt <http://ceur-ws.org/Vol-1047/#event> ;
-    ns3:editor <http://ceur-ws.org/Vol-1047/#MichaeliPrilla>,
+<http://ceur-ws.org/Vol-1047/#AndreaiKienle> a ns5:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/AndreaiKienle> ;
+    ns5:made <http://ceur-ws.org/Vol-1047/#paper10> ;
+    ns5:name "Andrea Kienle" .
+
+<http://ceur-ws.org/Vol-1047/#AndreasiSchmidt> a ns5:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/AndreasiSchmidt> ;
+    ns5:made <http://ceur-ws.org/Vol-1047/#paper1> ;
+    ns5:name "Andreas Schmidt" .
+
+<http://ceur-ws.org/Vol-1047/#BirgitiKrogstie> a ns5:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/BirgitiKrogstie> ;
+    ns5:made <http://ceur-ws.org/Vol-1047/#paper8> ;
+    ns5:name "Birgit Krogstie" .
+
+<http://ceur-ws.org/Vol-1047/#ChristophiRensing> a ns5:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/ChristophiRensing> ;
+    ns5:made <http://ceur-ws.org/Vol-1047/#paper6> ;
+    ns5:name "Christoph Rensing" .
+
+<http://ceur-ws.org/Vol-1047/#ChristosiSintoris> a ns5:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/ChristosiSintoris> ;
+    ns5:made <http://ceur-ws.org/Vol-1047/#paper3> ;
+    ns5:name "Christos Sintoris" .
+
+<http://ceur-ws.org/Vol-1047/#FlorianiJomrich> a ns5:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/FlorianiJomrich> ;
+    ns5:made <http://ceur-ws.org/Vol-1047/#paper6> ;
+    ns5:name "Florian Jomrich" .
+
+<http://ceur-ws.org/Vol-1047/#InesiDiiLoreto> a ns5:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/InesiDiiLoreto> ;
+    ns5:made <http://ceur-ws.org/Vol-1047/#paper5> ;
+    ns5:name "Ines Di Loreto" .
+
+<http://ceur-ws.org/Vol-1047/#IngaiSaatz> a ns5:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/IngaiSaatz> ;
+    ns5:made <http://ceur-ws.org/Vol-1047/#paper10> ;
+    ns5:name "Inga Saatz" .
+
+<http://ceur-ws.org/Vol-1047/#Irene-AngelicaiChounta> a ns5:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/Irene-AngelicaiChounta> ;
+    ns5:made <http://ceur-ws.org/Vol-1047/#paper3> ;
+    ns5:name "Irene-Angelica Chounta" .
+
+<http://ceur-ws.org/Vol-1047/#IsaiJahnke> a ns5:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/IsaiJahnke> ;
+    ns5:made <http://ceur-ws.org/Vol-1047/#paper7> ;
+    ns5:name "Isa Jahnke" .
+
+<http://ceur-ws.org/Vol-1047/#IvaniSrba> a ns5:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/IvaniSrba> ;
+    ns5:made <http://ceur-ws.org/Vol-1047/#paper11> ;
+    ns5:name "Ivan Srba" .
+
+<http://ceur-ws.org/Vol-1047/#JasminkoiNovak> a ns5:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/JasminkoiNovak> ;
+    ns5:made <http://ceur-ws.org/Vol-1047/#paper2> ;
+    ns5:name "Jasminko Novak" .
+
+<http://ceur-ws.org/Vol-1047/#JoiColley> a ns5:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/JoiColley> ;
+    ns5:made <http://ceur-ws.org/Vol-1047/#paper1> ;
+    ns5:name "Jo Colley" .
+
+<http://ceur-ws.org/Vol-1047/#KatjaiSch%C3%BCler> a ns5:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/KatjaiSch%C3%BCler> ;
+    ns5:made <http://ceur-ws.org/Vol-1047/#paper6> ;
+    ns5:name "Katja Schüler" .
+
+<http://ceur-ws.org/Vol-1047/#MariaiBielikova> a ns5:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/MariaiBielikova> ;
+    ns5:made <http://ceur-ws.org/Vol-1047/#paper11> ;
+    ns5:name "Maria Bielikova" .
+
+<http://ceur-ws.org/Vol-1047/#MartiniB%C3%B6ckle> a ns5:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/MartiniB%C3%B6ckle> ;
+    ns5:made <http://ceur-ws.org/Vol-1047/#paper2> ;
+    ns5:name "Martin Böckle" .
+
+<http://ceur-ws.org/Vol-1047/#MelpomeniiMasoura> a ns5:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/MelpomeniiMasoura> ;
+    ns5:made <http://ceur-ws.org/Vol-1047/#paper3> ;
+    ns5:name "Melpomeni Masoura" .
+
+<http://ceur-ws.org/Vol-1047/#MerjaiBauters> a ns5:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/MerjaiBauters> ;
+    ns5:made <http://ceur-ws.org/Vol-1047/#paper1> ;
+    ns5:name "Merja Bauters" .
+
+<http://ceur-ws.org/Vol-1047/#MohammadiAliSmadi> a ns5:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/MohammadiAliSmadi> ;
+    ns5:made <http://ceur-ws.org/Vol-1047/#paper12> ;
+    ns5:name "Mohammad Al Smadi" .
+
+<http://ceur-ws.org/Vol-1047/#MojisolaiErdt> a ns5:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/MojisolaiErdt> ;
+    ns5:made <http://ceur-ws.org/Vol-1047/#paper6> ;
+    ns5:name "Mojisola Erdt" .
+
+<http://ceur-ws.org/Vol-1047/#NikolaosiAvouris> a ns5:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/NikolaosiAvouris> ;
+    ns5:made <http://ceur-ws.org/Vol-1047/#paper3> ;
+    ns5:name "Nikolaos Avouris" .
+
+<http://ceur-ws.org/Vol-1047/#NikoletaiYiannoutsou> a ns5:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/NikoletaiYiannoutsou> ;
+    ns5:made <http://ceur-ws.org/Vol-1047/#paper3> ;
+    ns5:name "Nikoleta Yiannoutsou" .
+
+<http://ceur-ws.org/Vol-1047/#PatriciaiSantos> a ns5:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/PatriciaiSantos> ;
+    ns5:made <http://ceur-ws.org/Vol-1047/#paper4> ;
+    ns5:name "Patricia Santos" .
+
+<http://ceur-ws.org/Vol-1047/#SeaniP.iGoggins> a ns5:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/SeaniP.iGoggins> ;
+    ns5:made <http://ceur-ws.org/Vol-1047/#paper7> ;
+    ns5:name "Sean P. Goggins" .
+
+<http://ceur-ws.org/Vol-1047/#StefanieiLindstaedt> a ns5:Person ;
+    ns2:affiliation "" ;
+    ns1:sameAs <http://ceur-ws.org/persons/StefanieiLindstaedt> ;
+    ns5:name "Stefanie Lindstaedt" .
+
+<http://ceur-ws.org/Vol-1047/#SvenjaiSchr%C3%B6der> a ns5:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/SvenjaiSchr%C3%B6der> ;
+    ns5:made <http://ceur-ws.org/Vol-1047/#paper2> ;
+    ns5:name "Svenja Schröder" .
+
+<http://ceur-ws.org/Vol-1047/#TamsiniTreasure-Jones> a ns5:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/TamsiniTreasure-Jones> ;
+    ns5:made <http://ceur-ws.org/Vol-1047/#paper12> ;
+    ns5:name "Tamsin Treasure-Jones" .
+
+<http://ceur-ws.org/Vol-1047/#TeemuiLeinonen> a ns5:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/TeemuiLeinonen> ;
+    ns5:made <http://ceur-ws.org/Vol-1047/#paper1> ;
+    ns5:name "Teemu Leinonen" .
+
+<http://ceur-ws.org/Vol-1047/#ThomasiHerrmann> a ns5:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/ThomasiHerrmann> ;
+    ns5:made <http://ceur-ws.org/Vol-1047/#paper9> ;
+    ns5:name "Thomas Herrmann" .
+
+<http://ceur-ws.org/Vol-1047/#ViktoriaiPammer> a ns5:Person ;
+    ns2:affiliation "" ;
+    ns1:sameAs <http://ceur-ws.org/persons/ViktoriaiPammer> ;
+    ns5:name "Viktoria Pammer" .
+
+<http://ceur-ws.org/Vol-1047/#VladimiriTomberg> a ns5:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/VladimiriTomberg> ;
+    ns5:made <http://ceur-ws.org/Vol-1047/#paper12> ;
+    ns5:name "Vladimir Tomberg" .
+
+<http://ceur-ws.org/Vol-1047/#event> a ns6:WorkshopEvent ;
+    ns6:hasLocation <http://dbpedia.org/resource/Euro_gold_and_silver_commemorative_coins> ;
+    ns6:hasPart <http://ceur-ws.org/Vol-1047/#part-ECSCW> ;
+    ns6:isSubEventOf <http://ceur-ws.org/Vol-1047/#conf> ;
+    ns7:beginsAtDatetime "2013-09-21T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:endsAtDatetime "2013-09-21T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:license "http://choosealicense.com/licenses/no-license/" .
+
+<http://ceur-ws.org/Vol-1047/#BrendaiBannan> a ns5:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/BrendaiBannan> ;
+    ns5:made <http://ceur-ws.org/Vol-1047/#paper1>,
+        <http://ceur-ws.org/Vol-1047/#paper4> ;
+    ns5:name "Brenda Bannan" .
+
+<http://ceur-ws.org/Vol-1047/#JohniCook> a ns5:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/JohniCook> ;
+    ns5:made <http://ceur-ws.org/Vol-1047/#paper1>,
+        <http://ceur-ws.org/Vol-1047/#paper4> ;
+    ns5:name "John Cook" .
+
+<http://ceur-ws.org/Vol-1047/#MichaeliPrilla> a ns5:Person ;
+    ns2:affiliation "" ;
+    ns1:sameAs <http://ceur-ws.org/persons/MichaeliPrilla> ;
+    ns5:made <http://ceur-ws.org/Vol-1047/#paper9> ;
+    ns5:name "Michael Prilla" .
+
+<http://ceur-ws.org/Vol-1047/#TobiasiLey> a ns5:Person ;
+    ns2:affiliation "" ;
+    ns1:sameAs <http://ceur-ws.org/persons/TobiasiLey> ;
+    ns5:made <http://ceur-ws.org/Vol-1047/#paper12> ;
+    ns5:name "Tobias Ley" .
+
+<http://ceur-ws.org/Vol-1047/#MonicaiDivitini> a ns5:Person ;
+    ns2:affiliation "" ;
+    ns1:sameAs <http://ceur-ws.org/persons/MonicaiDivitini> ;
+    ns5:made <http://ceur-ws.org/Vol-1047/#paper5>,
+        <http://ceur-ws.org/Vol-1047/#paper8> ;
+    ns5:name "Monica Divitini" .
+
+<http://ceur-ws.org/Vol-1047/#paper10> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1047/> ;
+    ns3:title "Mobile Support for Ad-hoc Learning Communities" ;
+    ns4:endPage 48 ;
+    ns4:numPages 5 ;
+    ns4:startPage 44 ;
+    ns2:author <http://ceur-ws.org/Vol-1047/#AndreaiKienle>,
+        <http://ceur-ws.org/Vol-1047/#IngaiSaatz> .
+
+<http://ceur-ws.org/Vol-1047/#paper11> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1047/> ;
+    ns3:title "Designing Learning Environments Based on Collaborative Content Creation" ;
+    ns4:endPage 53 ;
+    ns4:numPages 5 ;
+    ns4:startPage 49 ;
+    ns2:author <http://ceur-ws.org/Vol-1047/#IvaniSrba>,
+        <http://ceur-ws.org/Vol-1047/#MariaiBielikova> .
+
+<http://ceur-ws.org/Vol-1047/#paper5> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1047/> ;
+    ns3:title "Games for Learning Cooperation at Work: the Case of Crisis Preparedness" ;
+    ns4:endPage 24 ;
+    ns4:numPages 5 ;
+    ns4:startPage 20 ;
+    ns2:author <http://ceur-ws.org/Vol-1047/#InesiDiiLoreto>,
+        <http://ceur-ws.org/Vol-1047/#MonicaiDivitini> .
+
+<http://ceur-ws.org/Vol-1047/#paper7> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1047/> ;
+    ns3:title "Computer-Supported Collaborative Learning at Work: CSCL@Work goes TEL@Work" ;
+    ns4:endPage 34 ;
+    ns4:numPages 5 ;
+    ns4:startPage 30 ;
+    ns2:author <http://ceur-ws.org/Vol-1047/#IsaiJahnke>,
+        <http://ceur-ws.org/Vol-1047/#SeaniP.iGoggins> .
+
+<http://ceur-ws.org/Vol-1047/#paper8> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1047/> ;
+    ns3:title "Reflecting on Emotion: Design Challenges for Cooperation Technology" ;
+    ns4:endPage 39 ;
+    ns4:numPages 5 ;
+    ns4:startPage 35 ;
+    ns2:author <http://ceur-ws.org/Vol-1047/#BirgitiKrogstie>,
+        <http://ceur-ws.org/Vol-1047/#MonicaiDivitini> .
+
+<http://ceur-ws.org/Vol-1047/#paper9> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1047/> ;
+    ns3:title "Guiding Articulation for Learning at Work: A Case of Reflection" ;
+    ns4:endPage 43 ;
+    ns4:numPages 4 ;
+    ns4:startPage 40 ;
+    ns2:author <http://ceur-ws.org/Vol-1047/#MichaeliPrilla>,
+        <http://ceur-ws.org/Vol-1047/#ThomasiHerrmann> .
+
+<http://ceur-ws.org/Vol-1047/#paper2> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1047/> ;
+    ns3:title "Collaborative Visual Annotations For Knowledge Exchange in Practical Medical Training" ;
+    ns4:endPage 9 ;
+    ns4:numPages 4 ;
+    ns4:startPage 6 ;
+    ns2:author <http://ceur-ws.org/Vol-1047/#JasminkoiNovak>,
+        <http://ceur-ws.org/Vol-1047/#MartiniB%C3%B6ckle>,
+        <http://ceur-ws.org/Vol-1047/#SvenjaiSchr%C3%B6der> .
+
+<http://ceur-ws.org/Vol-1047/#paper4> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1047/> ;
+    ns3:title "Seeking and Scaling Model for Designing Technology that Supports Personal and Professional Learning Networks" ;
+    ns4:endPage 19 ;
+    ns4:numPages 5 ;
+    ns4:startPage 15 ;
+    ns2:author <http://ceur-ws.org/Vol-1047/#BrendaiBannan>,
+        <http://ceur-ws.org/Vol-1047/#JohniCook>,
+        <http://ceur-ws.org/Vol-1047/#PatriciaiSantos> .
+
+<http://ceur-ws.org/Vol-1047/#paper12> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1047/> ;
+    ns3:title "A Sensemaking Interface for Supporting Doctor's Learning at the Workplace - A Paper Prototype Study" ;
+    ns4:endPage 58 ;
+    ns4:numPages 5 ;
+    ns4:startPage 54 ;
+    ns2:author <http://ceur-ws.org/Vol-1047/#MohammadiAliSmadi>,
+        <http://ceur-ws.org/Vol-1047/#TamsiniTreasure-Jones>,
+        <http://ceur-ws.org/Vol-1047/#TobiasiLey>,
+        <http://ceur-ws.org/Vol-1047/#VladimiriTomberg> .
+
+<http://ceur-ws.org/Vol-1047/#paper6> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1047/> ;
+    ns3:title "Investigating Crowdsourcing as an Evaluation Method for TEL Recommenders" ;
+    ns4:endPage 29 ;
+    ns4:numPages 5 ;
+    ns4:startPage 25 ;
+    ns2:author <http://ceur-ws.org/Vol-1047/#ChristophiRensing>,
+        <http://ceur-ws.org/Vol-1047/#FlorianiJomrich>,
+        <http://ceur-ws.org/Vol-1047/#KatjaiSch%C3%BCler>,
+        <http://ceur-ws.org/Vol-1047/#MojisolaiErdt> .
+
+<http://ceur-ws.org/Vol-1047/#paper3> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1047/> ;
+    ns3:title "The Good, the Bad and the Neutral: An Analysis of Team-Gaming Activity" ;
+    ns4:endPage 14 ;
+    ns4:numPages 5 ;
+    ns4:startPage 10 ;
+    ns2:author <http://ceur-ws.org/Vol-1047/#ChristosiSintoris>,
+        <http://ceur-ws.org/Vol-1047/#Irene-AngelicaiChounta>,
+        <http://ceur-ws.org/Vol-1047/#MelpomeniiMasoura>,
+        <http://ceur-ws.org/Vol-1047/#NikolaosiAvouris>,
+        <http://ceur-ws.org/Vol-1047/#NikoletaiYiannoutsou> .
+
+<http://ceur-ws.org/Vol-1047/#paper1> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1047/> ;
+    ns3:title "Towards a Design Research Framework for Designing Support Informal Work-Based Learning" ;
+    ns4:endPage 5 ;
+    ns4:numPages 5 ;
+    ns4:startPage 1 ;
+    ns2:author <http://ceur-ws.org/Vol-1047/#AndreasiSchmidt>,
+        <http://ceur-ws.org/Vol-1047/#BrendaiBannan>,
+        <http://ceur-ws.org/Vol-1047/#JohniCook>,
+        <http://ceur-ws.org/Vol-1047/#JoiColley>,
+        <http://ceur-ws.org/Vol-1047/#MerjaiBauters>,
+        <http://ceur-ws.org/Vol-1047/#TeemuiLeinonen> .
+
+<http://ceur-ws.org/Vol-1047/> a ns6:Proceedings ;
+    ns6:hasPart <http://ceur-ws.org/Vol-1047/#paper1>,
+        <http://ceur-ws.org/Vol-1047/#paper10>,
+        <http://ceur-ws.org/Vol-1047/#paper11>,
+        <http://ceur-ws.org/Vol-1047/#paper12>,
+        <http://ceur-ws.org/Vol-1047/#paper2>,
+        <http://ceur-ws.org/Vol-1047/#paper3>,
+        <http://ceur-ws.org/Vol-1047/#paper4>,
+        <http://ceur-ws.org/Vol-1047/#paper5>,
+        <http://ceur-ws.org/Vol-1047/#paper6>,
+        <http://ceur-ws.org/Vol-1047/#paper7>,
+        <http://ceur-ws.org/Vol-1047/#paper8>,
+        <http://ceur-ws.org/Vol-1047/#paper9> ;
+    ns9:issued "2013-09-26T00:00:00+00:00"^^xsd:dateTime ;
+    ns4:presentedAt <http://ceur-ws.org/Vol-1047/#event> ;
+    ns2:editor <http://ceur-ws.org/Vol-1047/#MichaeliPrilla>,
         <http://ceur-ws.org/Vol-1047/#MonicaiDivitini>,
         <http://ceur-ws.org/Vol-1047/#StefanieiLindstaedt>,
         <http://ceur-ws.org/Vol-1047/#TobiasiLey>,
         <http://ceur-ws.org/Vol-1047/#ViktoriaiPammer> .
-
-<http://ceur-ws.org/Vol-1047/#MichaeliPrilla> a ns4:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/MichaeliPrilla> ;
-    ns4:name "Michael Prilla" .
-
-<http://ceur-ws.org/Vol-1047/#MonicaiDivitini> a ns4:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/MonicaiDivitini> ;
-    ns4:name "Monica Divitini" .
-
-<http://ceur-ws.org/Vol-1047/#StefanieiLindstaedt> a ns4:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/StefanieiLindstaedt> ;
-    ns4:name "Stefanie Lindstaedt" .
-
-<http://ceur-ws.org/Vol-1047/#TobiasiLey> a ns4:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/TobiasiLey> ;
-    ns4:name "Tobias Ley" .
-
-<http://ceur-ws.org/Vol-1047/#ViktoriaiPammer> a ns4:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/ViktoriaiPammer> ;
-    ns4:name "Viktoria Pammer" .
-
-<http://ceur-ws.org/Vol-1047/#event> a ns2:WorkshopEvent ;
-    ns2:hasLocation <http://dbpedia.org/resource/Euro_gold_and_silver_commemorative_coins> ;
-    ns2:hasPart <http://ceur-ws.org/Vol-1047/#part-CEUR-WS> ;
-    ns2:isSubEventOf <http://ceur-ws.org/Vol-1047/#conf> ;
-    ns6:beginsAtDatetime "2013-09-21T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:endsAtDatetime "2013-09-21T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:license "http://choosealicense.com/licenses/no-license/" .
 

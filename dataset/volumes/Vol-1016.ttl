@@ -1,45 +1,587 @@
-@prefix ns1: <http://purl.org/dc/elements/1.1/> .
-@prefix ns2: <http://www.w3.org/2002/07/owl#> .
-@prefix ns3: <http://xmlns.com/foaf/0.1/> .
-@prefix ns4: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns5: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns6: <http://purl.org/ontology/bibo/#> .
-@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns8: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns1: <http://xmlns.com/foaf/0.1/> .
+@prefix ns2: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns3: <http://purl.org/ontology/bibo/#> .
+@prefix ns4: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns5: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns6: <http://www.w3.org/2002/07/owl#> .
+@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns8: <http://purl.org/dc/elements/1.1/> .
+@prefix ns9: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1016/> a ns8:Proceedings ;
-    ns7:issued "2013-08-02T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:presentedAt <http://ceur-ws.org/Vol-1016/#event> ;
-    ns5:editor <http://ceur-ws.org/Vol-1016/#ChiaraiCirinn%C3%A0>,
+<http://ceur-ws.org/Vol-1016/#AchimiOsswald> a ns1:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/AchimiOsswald> ;
+    ns1:made <http://ceur-ws.org/Vol-1016/#paper05> ;
+    ns1:name "Achim Osswald" .
+
+<http://ceur-ws.org/Vol-1016/#AnnaiMariaiTammaro> a ns1:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/AnnaiMariaiTammaro> ;
+    ns1:made <http://ceur-ws.org/Vol-1016/#paper20> ;
+    ns1:name "Anna Maria Tammaro" .
+
+<http://ceur-ws.org/Vol-1016/#AnniWeeks> a ns1:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/AnniWeeks> ;
+    ns1:made <http://ceur-ws.org/Vol-1016/#paper24> ;
+    ns1:name "Ann Weeks" .
+
+<http://ceur-ws.org/Vol-1016/#BruceiAmbacher> a ns1:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/BruceiAmbacher> ;
+    ns1:made <http://ceur-ws.org/Vol-1016/#paper24> ;
+    ns1:name "Bruce Ambacher" .
+
+<http://ceur-ws.org/Vol-1016/#ClaudiaiEngelhardt> a ns1:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/ClaudiaiEngelhardt> ;
+    ns1:made <http://ceur-ws.org/Vol-1016/#paper10> ;
+    ns1:name "Claudia Engelhardt" .
+
+<http://ceur-ws.org/Vol-1016/#DiScottiBrandt> a ns1:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/DiScottiBrandt> ;
+    ns1:made <http://ceur-ws.org/Vol-1016/#paper21> ;
+    ns1:name "D Scott Brandt" .
+
+<http://ceur-ws.org/Vol-1016/#DouglasiOard> a ns1:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/DouglasiOard> ;
+    ns1:made <http://ceur-ws.org/Vol-1016/#paper24> ;
+    ns1:name "Douglas Oard" .
+
+<http://ceur-ws.org/Vol-1016/#ElleniVerbakel> a ns1:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/ElleniVerbakel> ;
+    ns1:made <http://ceur-ws.org/Vol-1016/#paper13> ;
+    ns1:name "Ellen Verbakel" .
+
+<http://ceur-ws.org/Vol-1016/#ErikiMitchell> a ns1:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/ErikiMitchell> ;
+    ns1:made <http://ceur-ws.org/Vol-1016/#paper24> ;
+    ns1:name "Erik Mitchell" .
+
+<http://ceur-ws.org/Vol-1016/#FedericoiValacchi> a ns1:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/FedericoiValacchi> ;
+    ns1:made <http://ceur-ws.org/Vol-1016/#paper22> ;
+    ns1:name "Federico Valacchi" .
+
+<http://ceur-ws.org/Vol-1016/#FiorellaiFoscarini> a ns1:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/FiorellaiFoscarini> ;
+    ns1:made <http://ceur-ws.org/Vol-1016/#paper17> ;
+    ns1:name "Fiorella Foscarini" .
+
+<http://ceur-ws.org/Vol-1016/#HeleniTibbo> a ns1:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/HeleniTibbo> ;
+    ns1:made <http://ceur-ws.org/Vol-1016/#paper02> ;
+    ns1:name "Helen Tibbo" .
+
+<http://ceur-ws.org/Vol-1016/#IaniAnderson> a ns1:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/IaniAnderson> ;
+    ns1:made <http://ceur-ws.org/Vol-1016/#paper16> ;
+    ns1:name "Ian Anderson" .
+
+<http://ceur-ws.org/Vol-1016/#JacobiCarlson> a ns1:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/JacobiCarlson> ;
+    ns1:made <http://ceur-ws.org/Vol-1016/#paper14> ;
+    ns1:name "Jacob Carlson" .
+
+<http://ceur-ws.org/Vol-1016/#JamesiA.iJ.iWilson> a ns1:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/JamesiA.iJ.iWilson> ;
+    ns1:made <http://ceur-ws.org/Vol-1016/#paper18> ;
+    ns1:name "James A. J. Wilson" .
+
+<http://ceur-ws.org/Vol-1016/#JarediLyle> a ns1:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/JarediLyle> ;
+    ns1:made <http://ceur-ws.org/Vol-1016/#paper14> ;
+    ns1:name "Jared Lyle" .
+
+<http://ceur-ws.org/Vol-1016/#JennyiBunn> a ns1:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/JennyiBunn> ;
+    ns1:made <http://ceur-ws.org/Vol-1016/#paper23> ;
+    ns1:name "Jenny Bunn" .
+
+<http://ceur-ws.org/Vol-1016/#JoaniE.iBeaudoin> a ns1:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/JoaniE.iBeaudoin> ;
+    ns1:made <http://ceur-ws.org/Vol-1016/#paper26> ;
+    ns1:name "Joan E. Beaudoin" .
+
+<http://ceur-ws.org/Vol-1016/#JurateiKupriene> a ns1:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/JurateiKupriene> ;
+    ns1:made <http://ceur-ws.org/Vol-1016/#paper09> ;
+    ns1:name "Jurate Kupriene" .
+
+<http://ceur-ws.org/Vol-1016/#KarolinaiBadzmierowska> a ns1:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/KarolinaiBadzmierowska> ;
+    ns1:made <http://ceur-ws.org/Vol-1016/#paper12> ;
+    ns1:name "Karolina Badzmierowska" .
+
+<http://ceur-ws.org/Vol-1016/#KatieiShilton> a ns1:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/KatieiShilton> ;
+    ns1:made <http://ceur-ws.org/Vol-1016/#paper24> ;
+    ns1:name "Katie Shilton" .
+
+<http://ceur-ws.org/Vol-1016/#LeoiKonstantelos> a ns1:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/LeoiKonstantelos> ;
+    ns1:made <http://ceur-ws.org/Vol-1016/#paper11> ;
+    ns1:name "Leo Konstantelos" .
+
+<http://ceur-ws.org/Vol-1016/#MadeleineideiSmaele> a ns1:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/MadeleineideiSmaele> ;
+    ns1:made <http://ceur-ws.org/Vol-1016/#paper13> ;
+    ns1:name "Madeleine de Smaele" .
+
+<http://ceur-ws.org/Vol-1016/#MariaiCassella> a ns1:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/MariaiCassella> ;
+    ns1:made <http://ceur-ws.org/Vol-1016/#paper22> ;
+    ns1:name "Maria Cassella" .
+
+<http://ceur-ws.org/Vol-1016/#MarthaiMahard> a ns1:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/MarthaiMahard> ;
+    ns1:made <http://ceur-ws.org/Vol-1016/#paper19> ;
+    ns1:name "Martha Mahard" .
+
+<http://ceur-ws.org/Vol-1016/#MaryiMolinaro> a ns1:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/MaryiMolinaro> ;
+    ns1:made <http://ceur-ws.org/Vol-1016/#paper04> ;
+    ns1:name "Mary Molinaro" .
+
+<http://ceur-ws.org/Vol-1016/#MaryiVardigan> a ns1:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/MaryiVardigan> ;
+    ns1:made <http://ceur-ws.org/Vol-1016/#paper14> ;
+    ns1:name "Mary Vardigan" .
+
+<http://ceur-ws.org/Vol-1016/#MaurizioiVivarelli> a ns1:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/MaurizioiVivarelli> ;
+    ns1:made <http://ceur-ws.org/Vol-1016/#paper22> ;
+    ns1:name "Maurizio Vivarelli" .
+
+<http://ceur-ws.org/Vol-1016/#MerieliPatrick> a ns1:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/MerieliPatrick> ;
+    ns1:made <http://ceur-ws.org/Vol-1016/#paper18> ;
+    ns1:name "Meriel Patrick" .
+
+<http://ceur-ws.org/Vol-1016/#MichaeliKurtz> a ns1:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/MichaeliKurtz> ;
+    ns1:made <http://ceur-ws.org/Vol-1016/#paper24> ;
+    ns1:name "Michael Kurtz" .
+
+<http://ceur-ws.org/Vol-1016/#MilenaiDobreva> a ns1:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/MilenaiDobreva> ;
+    ns1:made <http://ceur-ws.org/Vol-1016/#paper15> ;
+    ns1:name "Milena Dobreva" .
+
+<http://ceur-ws.org/Vol-1016/#NathaniMoles> a ns1:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/NathaniMoles> ;
+    ns1:made <http://ceur-ws.org/Vol-1016/#paper07> ;
+    ns1:name "Nathan Moles" .
+
+<http://ceur-ws.org/Vol-1016/#NeiliGrindley> a ns1:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/NeiliGrindley> ;
+    ns1:made <http://ceur-ws.org/Vol-1016/#paper03> ;
+    ns1:name "Neil Grindley" .
+
+<http://ceur-ws.org/Vol-1016/#NicoleiPotters> a ns1:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/NicoleiPotters> ;
+    ns1:made <http://ceur-ws.org/Vol-1016/#paper13> ;
+    ns1:name "Nicole Potters" .
+
+<http://ceur-ws.org/Vol-1016/#NoordegraafiMarina> a ns1:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/NoordegraafiMarina> ;
+    ns1:made <http://ceur-ws.org/Vol-1016/#paper13> ;
+    ns1:name "Noordegraaf Marina" .
+
+<http://ceur-ws.org/Vol-1016/#PatriciaiC.iFranks> a ns1:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/PatriciaiC.iFranks> ;
+    ns1:made <http://ceur-ws.org/Vol-1016/#paper25> ;
+    ns1:name "Patricia C. Franks" .
+
+<http://ceur-ws.org/Vol-1016/#RobiniRice> a ns1:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/RobiniRice> ;
+    ns1:made <http://ceur-ws.org/Vol-1016/#paper27> ;
+    ns1:name "Robin Rice" .
+
+<http://ceur-ws.org/Vol-1016/#RoniNakao> a ns1:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/RoniNakao> ;
+    ns1:made <http://ceur-ws.org/Vol-1016/#paper14> ;
+    ns1:name "Ron Nakao" .
+
+<http://ceur-ws.org/Vol-1016/#RossiHarvey> a ns1:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/RossiHarvey> ;
+    ns1:made <http://ceur-ws.org/Vol-1016/#paper19> ;
+    ns1:name "Ross Harvey" .
+
+<http://ceur-ws.org/Vol-1016/#RuggeroiLancia> a ns1:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/RuggeroiLancia> ;
+    ns1:made <http://ceur-ws.org/Vol-1016/#paper16> ;
+    ns1:name "Ruggero Lancia" .
+
+<http://ceur-ws.org/Vol-1016/#SarahiHiggins> a ns1:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/SarahiHiggins> ;
+    ns1:made <http://ceur-ws.org/Vol-1016/#paper23> ;
+    ns1:name "Sarah Higgins" .
+
+<http://ceur-ws.org/Vol-1016/#SeamusiRoss> a ns1:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/SeamusiRoss> ;
+    ns1:made <http://ceur-ws.org/Vol-1016/#paper07> ;
+    ns1:name "Seamus Ross" .
+
+<http://ceur-ws.org/Vol-1016/#StuartiMacdonald> a ns1:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/StuartiMacdonald> ;
+    ns1:made <http://ceur-ws.org/Vol-1016/#paper27> ;
+    ns1:name "Stuart Macdonald" .
+
+<http://ceur-ws.org/Vol-1016/#SusaniSchreibman> a ns1:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/SusaniSchreibman> ;
+    ns1:made <http://ceur-ws.org/Vol-1016/#paper12> ;
+    ns1:name "Susan Schreibman" .
+
+<http://ceur-ws.org/Vol-1016/#VickyiGarnett> a ns1:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/VickyiGarnett> ;
+    ns1:made <http://ceur-ws.org/Vol-1016/#paper12> ;
+    ns1:name "Vicky Garnett" .
+
+<http://ceur-ws.org/Vol-1016/#WilliamiKilbride> a ns1:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/WilliamiKilbride> ;
+    ns1:made <http://ceur-ws.org/Vol-1016/#paper01> ;
+    ns1:name "William Kilbride" .
+
+<http://ceur-ws.org/Vol-1016/#event> a ns4:WorkshopEvent ;
+    ns4:hasLocation <http://dbpedia.org/resource/Italy> ;
+    ns4:hasPart <http://ceur-ws.org/Vol-1016/#part-DigCurV> ;
+    ns4:isSubEventOf <http://ceur-ws.org/Vol-1016/#conf> ;
+    ns7:beginsAtDatetime "2013-05-06T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:endsAtDatetime "2013-05-07T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:license "http://choosealicense.com/licenses/no-license/" .
+
+<http://ceur-ws.org/Vol-1016/#ChiaraiCirinn%C3%A0> a ns1:Person ;
+    ns2:affiliation "" ;
+    ns6:sameAs <http://ceur-ws.org/persons/ChiaraiCirinn%C3%A0> ;
+    ns1:made <http://ceur-ws.org/Vol-1016/#paper28> ;
+    ns1:name "Chiara Cirinnà" .
+
+<http://ceur-ws.org/Vol-1016/#ContributedPaperSessions> a ns4:SessionEvent ;
+    ns4:partOf <http://ceur-ws.org/Vol-1016/> ;
+    ns5:title "Contributed Paper Sessions" .
+
+<http://ceur-ws.org/Vol-1016/#GillianiOliver> a ns1:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/GillianiOliver> ;
+    ns1:made <http://ceur-ws.org/Vol-1016/#paper15>,
+        <http://ceur-ws.org/Vol-1016/#paper17> ;
+    ns1:name "Gillian Oliver" .
+
+<http://ceur-ws.org/Vol-1016/#IntroCFP> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1016/> ;
+    ns5:title "Introduction to the Sessions" ;
+    ns3:section <http://ceur-ws.org/Vol-1016/#ContributedPaperSessions> ;
+    ns2:author <http://ceur-ws.org/Vol-1016/#VittoreiCasarosa> .
+
+<http://ceur-ws.org/Vol-1016/#IntroDigCurV> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1016/> ;
+    ns5:title "Introduction to the DigCurV Project" ;
+    ns2:author <http://ceur-ws.org/Vol-1016/#KateiFernie> .
+
+<http://ceur-ws.org/Vol-1016/#LauraiMolloy> a ns1:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/LauraiMolloy> ;
+    ns1:made <http://ceur-ws.org/Vol-1016/#paper08>,
+        <http://ceur-ws.org/Vol-1016/#paper11> ;
+    ns1:name "Laura Molloy" .
+
+<http://ceur-ws.org/Vol-1016/#VittoreiCasarosa> a ns1:Person ;
+    ns2:affiliation "" ;
+    ns6:sameAs <http://ceur-ws.org/persons/VittoreiCasarosa> ;
+    ns1:made <http://ceur-ws.org/Vol-1016/#IntroCFP> ;
+    ns1:name "Vittore Casarosa" .
+
+<http://ceur-ws.org/Vol-1016/#paper01> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1016/> ;
+    ns5:title "A Future with No History Meets a History with No Future: How Much Do We Need to Know About Digital Preservation" ;
+    ns3:section <http://ceur-ws.org/Vol-1016/#Session1LifelongLearningaKeytoProfessionalandPersonalDevelopmentTowardsQualificationandEmployment> ;
+    ns2:author <http://ceur-ws.org/Vol-1016/#WilliamiKilbride> .
+
+<http://ceur-ws.org/Vol-1016/#paper02> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1016/> ;
+    ns5:title "View From Across the Pond: Opportunities, Gaps, and Challenges in Digital Curation Lifelong Learning" ;
+    ns3:section <http://ceur-ws.org/Vol-1016/#Session1LifelongLearningaKeytoProfessionalandPersonalDevelopmentTowardsQualificationandEmployment> ;
+    ns2:author <http://ceur-ws.org/Vol-1016/#HeleniTibbo> .
+
+<http://ceur-ws.org/Vol-1016/#paper03> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1016/> ;
+    ns5:title "Balancing the Books. The Economics of Digital Curation Training & Education" ;
+    ns3:section <http://ceur-ws.org/Vol-1016/#Session1LifelongLearningaKeytoProfessionalandPersonalDevelopmentTowardsQualificationandEmployment> ;
+    ns2:author <http://ceur-ws.org/Vol-1016/#NeiliGrindley> .
+
+<http://ceur-ws.org/Vol-1016/#paper04> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1016/> ;
+    ns5:title "Extending the Reach of Digital Preservation Practice: a Program to Teach Practitioners in Small Institutions" ;
+    ns3:section <http://ceur-ws.org/Vol-1016/#Session1LifelongLearningaKeytoProfessionalandPersonalDevelopmentTowardsQualificationandEmployment> ;
+    ns2:author <http://ceur-ws.org/Vol-1016/#MaryiMolinaro> .
+
+<http://ceur-ws.org/Vol-1016/#paper05> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1016/> ;
+    ns5:title "Skills for the Future: Educational Opportunities for Digital Curation Professionals" ;
+    ns3:section <http://ceur-ws.org/Vol-1016/#Session2SkillsfortheFuture> ;
+    ns2:author <http://ceur-ws.org/Vol-1016/#AchimiOsswald> .
+
+<http://ceur-ws.org/Vol-1016/#paper09> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1016/> ;
+    ns5:title "A Survey Based Analysis on Training Opportunities" ;
+    ns3:section <http://ceur-ws.org/Vol-1016/#ACurriculumFrameworkforDigitalCuratorsPresentationofDigCurVResults> ;
+    ns2:author <http://ceur-ws.org/Vol-1016/#JurateiKupriene> .
+
+<http://ceur-ws.org/Vol-1016/#paper10> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1016/> ;
+    ns5:title "The DigCurV Review of Training Needs in the Field of Digital Preservation and Curation. An Overview of the Main Findings" ;
+    ns3:section <http://ceur-ws.org/Vol-1016/#ACurriculumFrameworkforDigitalCuratorsPresentationofDigCurVResults> ;
+    ns2:author <http://ceur-ws.org/Vol-1016/#ClaudiaiEngelhardt> .
+
+<http://ceur-ws.org/Vol-1016/#paper20> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1016/> ;
+    ns5:title "Integrating Digital Curation in a Digital Library Curriculum: the International Master DILL Case Study" ;
+    ns3:section <http://ceur-ws.org/Vol-1016/#Session3MainstreamingDigitalCurationEducation> ;
+    ns2:author <http://ceur-ws.org/Vol-1016/#AnnaiMariaiTammaro> .
+
+<http://ceur-ws.org/Vol-1016/#paper21> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1016/> ;
+    ns5:title "Learning Hands-on and by Trial & Error with Data Curation Profiles" ;
+    ns3:section <http://ceur-ws.org/Vol-1016/#Session3MainstreamingDigitalCurationEducation> ;
+    ns2:author <http://ceur-ws.org/Vol-1016/#DiScottiBrandt> .
+
+<http://ceur-ws.org/Vol-1016/#paper25> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1016/> ;
+    ns5:title "Infusing Digital Curation Competencies into the SLIS Curriculum" ;
+    ns3:section <http://ceur-ws.org/Vol-1016/#Session4Developing21stCenturyProfessionals> ;
+    ns2:author <http://ceur-ws.org/Vol-1016/#PatriciaiC.iFranks> .
+
+<http://ceur-ws.org/Vol-1016/#paper26> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1016/> ;
+    ns5:title "The Digital Content Management Curriculum: A Case Study at Wayne State University&#39s School of Library & Information Science" ;
+    ns3:section <http://ceur-ws.org/Vol-1016/#Session4Developing21stCenturyProfessionals> ;
+    ns2:author <http://ceur-ws.org/Vol-1016/#JoaniE.iBeaudoin> .
+
+<http://ceur-ws.org/Vol-1016/#AnniGow> a ns1:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/AnniGow> ;
+    ns1:made <http://ceur-ws.org/Vol-1016/#paper06>,
+        <http://ceur-ws.org/Vol-1016/#paper08>,
+        <http://ceur-ws.org/Vol-1016/#paper11> ;
+    ns1:name "Ann Gow" .
+
+<http://ceur-ws.org/Vol-1016/#MaurizioiLunghi> a ns1:Person ;
+    ns2:affiliation "" ;
+    ns6:sameAs <http://ceur-ws.org/persons/MaurizioiLunghi> ;
+    ns1:made <http://ceur-ws.org/Vol-1016/#paper06>,
+        <http://ceur-ws.org/Vol-1016/#paper28> ;
+    ns1:name "Maurizio Lunghi" .
+
+<http://ceur-ws.org/Vol-1016/#paper07> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1016/> ;
+    ns5:title "Report on the Context of the DigCurV Curriculum Framework" ;
+    ns3:section <http://ceur-ws.org/Vol-1016/#Session2SkillsfortheFuture> ;
+    ns2:author <http://ceur-ws.org/Vol-1016/#NathaniMoles>,
+        <http://ceur-ws.org/Vol-1016/#SeamusiRoss> .
+
+<http://ceur-ws.org/Vol-1016/#paper15> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1016/> ;
+    ns5:title "A Tale of Two Countries. Digital Curation Education in Malta and New Zealand" ;
+    ns3:section <http://ceur-ws.org/Vol-1016/#Session1DigitalCurationEducation> ;
+    ns2:author <http://ceur-ws.org/Vol-1016/#GillianiOliver>,
+        <http://ceur-ws.org/Vol-1016/#MilenaiDobreva> .
+
+<http://ceur-ws.org/Vol-1016/#paper16> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1016/> ;
+    ns5:title "Digital Curation in Architecture Curricula and Vocational Training for Architects. The DEDICATE Framework in Architectural CAD Courses Design" ;
+    ns3:section <http://ceur-ws.org/Vol-1016/#Session2FrameworksandLessonsLearnt> ;
+    ns2:author <http://ceur-ws.org/Vol-1016/#IaniAnderson>,
+        <http://ceur-ws.org/Vol-1016/#RuggeroiLancia> .
+
+<http://ceur-ws.org/Vol-1016/#paper17> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1016/> ;
+    ns5:title "Introducing the Information Culture Framework as a Component of the Digital Curator&#39s Toolkit" ;
+    ns3:section <http://ceur-ws.org/Vol-1016/#Session2FrameworksandLessonsLearnt> ;
+    ns2:author <http://ceur-ws.org/Vol-1016/#FiorellaiFoscarini>,
+        <http://ceur-ws.org/Vol-1016/#GillianiOliver> .
+
+<http://ceur-ws.org/Vol-1016/#paper18> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1016/> ;
+    ns5:title "Getting Data Creators On Board with the Digital Curation Agenda. Lessons Learned in Developing Training for Researchers" ;
+    ns3:section <http://ceur-ws.org/Vol-1016/#Session2FrameworksandLessonsLearnt> ;
+    ns2:author <http://ceur-ws.org/Vol-1016/#JamesiA.iJ.iWilson>,
+        <http://ceur-ws.org/Vol-1016/#MerieliPatrick> .
+
+<http://ceur-ws.org/Vol-1016/#paper19> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1016/> ;
+    ns5:title "Digital Stewardship Education at the Graduate School of Library & Information Science, Simmons College" ;
+    ns3:section <http://ceur-ws.org/Vol-1016/#Session3MainstreamingDigitalCurationEducation> ;
+    ns2:author <http://ceur-ws.org/Vol-1016/#MarthaiMahard>,
+        <http://ceur-ws.org/Vol-1016/#RossiHarvey> .
+
+<http://ceur-ws.org/Vol-1016/#paper23> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1016/> ;
+    ns5:title "Mainstreaming Digital Curation. An Overview of Activity in the UK Archives and Records Management Profession" ;
+    ns3:section <http://ceur-ws.org/Vol-1016/#Session3MainstreamingDigitalCurationEducation> ;
+    ns2:author <http://ceur-ws.org/Vol-1016/#JennyiBunn>,
+        <http://ceur-ws.org/Vol-1016/#SarahiHiggins> .
+
+<http://ceur-ws.org/Vol-1016/#paper27> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1016/> ;
+    ns5:title "&#39DIY' Research Data Management Training Kit for Librarians" ;
+    ns3:section <http://ceur-ws.org/Vol-1016/#Session4Developing21stCenturyProfessionals> ;
+    ns2:author <http://ceur-ws.org/Vol-1016/#RobiniRice>,
+        <http://ceur-ws.org/Vol-1016/#StuartiMacdonald> .
+
+<http://ceur-ws.org/Vol-1016/#Session1DigitalCurationEducation> a ns4:SessionEvent ;
+    ns4:partOf <http://ceur-ws.org/Vol-1016/> ;
+    ns5:title "Session 1: Digital Curation Education" .
+
+<http://ceur-ws.org/Vol-1016/#Session2FrameworksandLessonsLearnt> a ns4:SessionEvent ;
+    ns4:partOf <http://ceur-ws.org/Vol-1016/> ;
+    ns5:title "Session 2: Frameworks and Lessons Learnt" .
+
+<http://ceur-ws.org/Vol-1016/#Session2SkillsfortheFuture> a ns4:SessionEvent ;
+    ns4:partOf <http://ceur-ws.org/Vol-1016/> ;
+    ns5:title "Session 2: Skills for the Future" .
+
+<http://ceur-ws.org/Vol-1016/#paper06> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1016/> ;
+    ns5:title "DigCurV: Next Steps" ;
+    ns3:section <http://ceur-ws.org/Vol-1016/#Session2SkillsfortheFuture> ;
+    ns2:author <http://ceur-ws.org/Vol-1016/#AnniGow>,
         <http://ceur-ws.org/Vol-1016/#KateiFernie>,
-        <http://ceur-ws.org/Vol-1016/#MaurizioiLunghiiGuestieditor>,
+        <http://ceur-ws.org/Vol-1016/#MaurizioiLunghi> .
+
+<http://ceur-ws.org/Vol-1016/#paper08> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1016/> ;
+    ns5:title "Digital Curator Vocational Education Europe: Overview of the DigCurV Project" ;
+    ns3:section <http://ceur-ws.org/Vol-1016/#ACurriculumFrameworkforDigitalCuratorsPresentationofDigCurVResults> ;
+    ns2:author <http://ceur-ws.org/Vol-1016/#AnniGow>,
+        <http://ceur-ws.org/Vol-1016/#KateiFernie>,
+        <http://ceur-ws.org/Vol-1016/#LauraiMolloy> .
+
+<http://ceur-ws.org/Vol-1016/#paper11> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1016/> ;
+    ns5:title "The DigCurV Curriculum Framework. Structure, Context and Approach" ;
+    ns3:section <http://ceur-ws.org/Vol-1016/#ACurriculumFrameworkforDigitalCuratorsPresentationofDigCurVResults> ;
+    ns2:author <http://ceur-ws.org/Vol-1016/#AnniGow>,
+        <http://ceur-ws.org/Vol-1016/#LauraiMolloy>,
+        <http://ceur-ws.org/Vol-1016/#LeoiKonstantelos> .
+
+<http://ceur-ws.org/Vol-1016/#paper12> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1016/> ;
+    ns5:title "The CURATE! Game. Its Development, Evaluation and Use" ;
+    ns3:section <http://ceur-ws.org/Vol-1016/#ACurriculumFrameworkforDigitalCuratorsPresentationofDigCurVResults> ;
+    ns2:author <http://ceur-ws.org/Vol-1016/#KarolinaiBadzmierowska>,
+        <http://ceur-ws.org/Vol-1016/#SusaniSchreibman>,
+        <http://ceur-ws.org/Vol-1016/#VickyiGarnett> .
+
+<http://ceur-ws.org/Vol-1016/#paper22> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1016/> ;
+    ns5:title "The Digital Curator Between Continuity and Change: Developing a Training Course at the University of Turin" ;
+    ns3:section <http://ceur-ws.org/Vol-1016/#Session3MainstreamingDigitalCurationEducation> ;
+    ns2:author <http://ceur-ws.org/Vol-1016/#FedericoiValacchi>,
+        <http://ceur-ws.org/Vol-1016/#MariaiCassella>,
+        <http://ceur-ws.org/Vol-1016/#MaurizioiVivarelli> .
+
+<http://ceur-ws.org/Vol-1016/#paper28> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1016/> ;
+    ns5:title "Creating a Common Vision for Digital Curation Education: Building Alliances" ;
+    ns3:section <http://ceur-ws.org/Vol-1016/#Session4Developing21stCenturyProfessionals> ;
+    ns2:author <http://ceur-ws.org/Vol-1016/#ChiaraiCirinn%C3%A0>,
+        <http://ceur-ws.org/Vol-1016/#KateiFernie>,
+        <http://ceur-ws.org/Vol-1016/#MaurizioiLunghi> .
+
+<http://ceur-ws.org/Vol-1016/#KateiFernie> a ns1:Person ;
+    ns2:affiliation "" ;
+    ns6:sameAs <http://ceur-ws.org/persons/KateiFernie> ;
+    ns1:made <http://ceur-ws.org/Vol-1016/#IntroDigCurV>,
+        <http://ceur-ws.org/Vol-1016/#paper06>,
+        <http://ceur-ws.org/Vol-1016/#paper08>,
+        <http://ceur-ws.org/Vol-1016/#paper28> ;
+    ns1:name "Kate Fernie" .
+
+<http://ceur-ws.org/Vol-1016/#Session1LifelongLearningaKeytoProfessionalandPersonalDevelopmentTowardsQualificationandEmployment> a ns4:SessionEvent ;
+    ns4:partOf <http://ceur-ws.org/Vol-1016/> ;
+    ns5:title "Session 1: Lifelong Learning: a Key to Professional and Personal Development Towards Qualification and Employment" .
+
+<http://ceur-ws.org/Vol-1016/#Session4Developing21stCenturyProfessionals> a ns4:SessionEvent ;
+    ns4:partOf <http://ceur-ws.org/Vol-1016/> ;
+    ns5:title "Session 4: Developing 21st Century Professionals" .
+
+<http://ceur-ws.org/Vol-1016/#paper13> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1016/> ;
+    ns5:title "Data-Intelligence Training for Library Staff" ;
+    ns3:section <http://ceur-ws.org/Vol-1016/#Session1DigitalCurationEducation> ;
+    ns2:author <http://ceur-ws.org/Vol-1016/#ElleniVerbakel>,
+        <http://ceur-ws.org/Vol-1016/#MadeleineideiSmaele>,
+        <http://ceur-ws.org/Vol-1016/#NicoleiPotters>,
+        <http://ceur-ws.org/Vol-1016/#NoordegraafiMarina> .
+
+<http://ceur-ws.org/Vol-1016/#paper14> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1016/> ;
+    ns5:title "An Applied Approach to Data Curation Training at the Inter-university Consortium for Political and Social Research &#40ICPSR)" ;
+    ns3:section <http://ceur-ws.org/Vol-1016/#Session1DigitalCurationEducation> ;
+    ns2:author <http://ceur-ws.org/Vol-1016/#JacobiCarlson>,
+        <http://ceur-ws.org/Vol-1016/#JarediLyle>,
+        <http://ceur-ws.org/Vol-1016/#MaryiVardigan>,
+        <http://ceur-ws.org/Vol-1016/#RoniNakao> .
+
+<http://ceur-ws.org/Vol-1016/#ACurriculumFrameworkforDigitalCuratorsPresentationofDigCurVResults> a ns4:SessionEvent ;
+    ns4:partOf <http://ceur-ws.org/Vol-1016/> ;
+    ns5:title "A Curriculum Framework for Digital Curators: Presentation of DigCurV Results" .
+
+<http://ceur-ws.org/Vol-1016/#Session3MainstreamingDigitalCurationEducation> a ns4:SessionEvent ;
+    ns4:partOf <http://ceur-ws.org/Vol-1016/> ;
+    ns5:title "Session 3: Mainstreaming Digital Curation Education" .
+
+<http://ceur-ws.org/Vol-1016/#paper24> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1016/> ;
+    ns5:title "Bridging by Design: the Curation and Management of Digital Assets Specialization at the University of Maryland" ;
+    ns3:section <http://ceur-ws.org/Vol-1016/#Session3MainstreamingDigitalCurationEducation> ;
+    ns2:author <http://ceur-ws.org/Vol-1016/#AnniWeeks>,
+        <http://ceur-ws.org/Vol-1016/#BruceiAmbacher>,
+        <http://ceur-ws.org/Vol-1016/#DouglasiOard>,
+        <http://ceur-ws.org/Vol-1016/#ErikiMitchell>,
+        <http://ceur-ws.org/Vol-1016/#KatieiShilton>,
+        <http://ceur-ws.org/Vol-1016/#MichaeliKurtz> .
+
+<http://ceur-ws.org/Vol-1016/> a ns4:Proceedings ;
+    ns4:hasPart <http://ceur-ws.org/Vol-1016/#IntroCFP>,
+        <http://ceur-ws.org/Vol-1016/#IntroDigCurV>,
+        <http://ceur-ws.org/Vol-1016/#paper01>,
+        <http://ceur-ws.org/Vol-1016/#paper02>,
+        <http://ceur-ws.org/Vol-1016/#paper03>,
+        <http://ceur-ws.org/Vol-1016/#paper04>,
+        <http://ceur-ws.org/Vol-1016/#paper05>,
+        <http://ceur-ws.org/Vol-1016/#paper06>,
+        <http://ceur-ws.org/Vol-1016/#paper07>,
+        <http://ceur-ws.org/Vol-1016/#paper08>,
+        <http://ceur-ws.org/Vol-1016/#paper09>,
+        <http://ceur-ws.org/Vol-1016/#paper10>,
+        <http://ceur-ws.org/Vol-1016/#paper11>,
+        <http://ceur-ws.org/Vol-1016/#paper12>,
+        <http://ceur-ws.org/Vol-1016/#paper13>,
+        <http://ceur-ws.org/Vol-1016/#paper14>,
+        <http://ceur-ws.org/Vol-1016/#paper15>,
+        <http://ceur-ws.org/Vol-1016/#paper16>,
+        <http://ceur-ws.org/Vol-1016/#paper17>,
+        <http://ceur-ws.org/Vol-1016/#paper18>,
+        <http://ceur-ws.org/Vol-1016/#paper19>,
+        <http://ceur-ws.org/Vol-1016/#paper20>,
+        <http://ceur-ws.org/Vol-1016/#paper21>,
+        <http://ceur-ws.org/Vol-1016/#paper22>,
+        <http://ceur-ws.org/Vol-1016/#paper23>,
+        <http://ceur-ws.org/Vol-1016/#paper24>,
+        <http://ceur-ws.org/Vol-1016/#paper25>,
+        <http://ceur-ws.org/Vol-1016/#paper26>,
+        <http://ceur-ws.org/Vol-1016/#paper27>,
+        <http://ceur-ws.org/Vol-1016/#paper28> ;
+    ns4:hasSession <http://ceur-ws.org/Vol-1016/#ACurriculumFrameworkforDigitalCuratorsPresentationofDigCurVResults>,
+        <http://ceur-ws.org/Vol-1016/#ContributedPaperSessions>,
+        <http://ceur-ws.org/Vol-1016/#Session1DigitalCurationEducation>,
+        <http://ceur-ws.org/Vol-1016/#Session1LifelongLearningaKeytoProfessionalandPersonalDevelopmentTowardsQualificationandEmployment>,
+        <http://ceur-ws.org/Vol-1016/#Session2FrameworksandLessonsLearnt>,
+        <http://ceur-ws.org/Vol-1016/#Session2SkillsfortheFuture>,
+        <http://ceur-ws.org/Vol-1016/#Session3MainstreamingDigitalCurationEducation>,
+        <http://ceur-ws.org/Vol-1016/#Session4Developing21stCenturyProfessionals> ;
+    ns9:issued "2013-08-02T00:00:00+00:00"^^xsd:dateTime ;
+    ns3:presentedAt <http://ceur-ws.org/Vol-1016/#event> ;
+    ns2:editor <http://ceur-ws.org/Vol-1016/#ChiaraiCirinn%C3%A0>,
+        <http://ceur-ws.org/Vol-1016/#KateiFernie>,
+        <http://ceur-ws.org/Vol-1016/#MaurizioiLunghi>,
         <http://ceur-ws.org/Vol-1016/#VittoreiCasarosa> .
-
-<http://ceur-ws.org/Vol-1016/#ChiaraiCirinn%C3%A0> a ns3:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/ChiaraiCirinn%C3%A0> ;
-    ns3:name "Chiara Cirinnà" .
-
-<http://ceur-ws.org/Vol-1016/#KateiFernie> a ns3:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/KateiFernie> ;
-    ns3:name "Kate Fernie" .
-
-<http://ceur-ws.org/Vol-1016/#MaurizioiLunghiiGuestieditor> a ns3:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/MaurizioiLunghiiGuestieditor> ;
-    ns3:name "Maurizio Lunghi Guest editor" .
-
-<http://ceur-ws.org/Vol-1016/#VittoreiCasarosa> a ns3:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/VittoreiCasarosa> ;
-    ns3:name "Vittore Casarosa" .
-
-<http://ceur-ws.org/Vol-1016/#event> a ns8:WorkshopEvent ;
-    ns8:hasLocation <http://dbpedia.org/resource/Italy> ;
-    ns8:hasPart <http://ceur-ws.org/Vol-1016/#part-CEUR-WS> ;
-    ns8:isSubEventOf <http://ceur-ws.org/Vol-1016/#conf> ;
-    ns4:beginsAtDatetime "2013-05-06T00:00:00+00:00"^^xsd:dateTime ;
-    ns4:endsAtDatetime "2013-05-07T00:00:00+00:00"^^xsd:dateTime ;
-    ns1:license "http://choosealicense.com/licenses/no-license/" .
 

@@ -1,36 +1,289 @@
-@prefix ns1: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns2: <http://xmlns.com/foaf/0.1/> .
-@prefix ns3: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns4: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns5: <http://www.w3.org/2002/07/owl#> .
+@prefix ns1: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns2: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns3: <http://xmlns.com/foaf/0.1/> .
+@prefix ns4: <http://www.w3.org/2002/07/owl#> .
+@prefix ns5: <http://swrc.ontoware.org/ontology/#> .
 @prefix ns6: <http://purl.org/ontology/bibo/#> .
-@prefix ns7: <http://purl.org/dc/elements/1.1/> .
-@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns8: <http://purl.org/dc/elements/1.1/> .
+@prefix ns9: <http://purl.org/NET/c4dm/timeline.owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1496/> a ns3:Proceedings ;
-    ns8:issued "2015-10-31T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:presentedAt <http://ceur-ws.org/Vol-1496/#event> ;
-    ns1:editor <http://ceur-ws.org/Vol-1496/#MichaeliStriewe>,
-        <http://ceur-ws.org/Vol-1496/#UtaiPriss> .
+<http://ceur-ws.org/Vol-1496/#AlexanderiDallmann> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/AlexanderiDallmann> ;
+    ns3:made <http://ceur-ws.org/Vol-1496/#paper5> ;
+    ns3:name "Alexander Dallmann" .
 
-<http://ceur-ws.org/Vol-1496/#MichaeliStriewe> a ns2:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/MichaeliStriewe> ;
-    ns2:name "Michael Striewe" .
+<http://ceur-ws.org/Vol-1496/#BastianiSchulten> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/BastianiSchulten> ;
+    ns3:made <http://ceur-ws.org/Vol-1496/#paper7> ;
+    ns3:name "Bastian Schulten" .
 
-<http://ceur-ws.org/Vol-1496/#UtaiPriss> a ns2:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/UtaiPriss> ;
-    ns2:name "Uta Priss" .
+<http://ceur-ws.org/Vol-1496/#BrittaiHerres> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/BrittaiHerres> ;
+    ns3:made <http://ceur-ws.org/Vol-1496/#paper3> ;
+    ns3:name "Britta Herres" .
 
-<http://ceur-ws.org/Vol-1496/#event> a ns3:WorkshopEvent ;
-    ns3:hasLocation <http://dbpedia.org/resource/Germany> ;
-    ns3:hasPart <http://ceur-ws.org/Vol-1496/#part-ws> ;
-    ns3:isSubEventOf <http://ceur-ws.org/Vol-1496/#conf> ;
-    ns4:beginsAtDatetime "2015-11-06T00:00:00+00:00"^^xsd:dateTime ;
-    ns4:endsAtDatetime "2015-11-06T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:license "http://creativecommons.org/publicdomain/zero/1.0/" ;
+<http://ceur-ws.org/Vol-1496/#CarsteniKleiner> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/CarsteniKleiner> ;
+    ns3:made <http://ceur-ws.org/Vol-1496/#paper9> ;
+    ns3:name "Carsten Kleiner" .
+
+<http://ceur-ws.org/Vol-1496/#ChristianiSchmal> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/ChristianiSchmal> ;
+    ns3:made <http://ceur-ws.org/Vol-1496/#paper3> ;
+    ns3:name "Christian Schmal" .
+
+<http://ceur-ws.org/Vol-1496/#EnnoiLohmann> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/EnnoiLohmann> ;
+    ns3:made <http://ceur-ws.org/Vol-1496/#paper2> ;
+    ns3:name "Enno Lohmann" .
+
+<http://ceur-ws.org/Vol-1496/#FelixiHeine> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/FelixiHeine> ;
+    ns3:made <http://ceur-ws.org/Vol-1496/#paper9> ;
+    ns3:name "Felix Heine" .
+
+<http://ceur-ws.org/Vol-1496/#FrankiH%C3%B6ppner> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/FrankiH%C3%B6ppner> ;
+    ns3:made <http://ceur-ws.org/Vol-1496/#paper7> ;
+    ns3:name "Frank Höppner" .
+
+<http://ceur-ws.org/Vol-1496/#FrankiPuppe> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/FrankiPuppe> ;
+    ns3:made <http://ceur-ws.org/Vol-1496/#paper4> ;
+    ns3:name "Frank Puppe" .
+
+<http://ceur-ws.org/Vol-1496/#ImmanueliDeiVereiPeratoner> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/ImmanueliDeiVereiPeratoner> ;
+    ns3:made <http://ceur-ws.org/Vol-1496/#paper9> ;
+    ns3:name "Immanuel De Vere Peratoner" .
+
+<http://ceur-ws.org/Vol-1496/#LukasiIffl%C3%A4nder> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/LukasiIffl%C3%A4nder> ;
+    ns3:made <http://ceur-ws.org/Vol-1496/#paper5> ;
+    ns3:name "Lukas Iffländer" .
+
+<http://ceur-ws.org/Vol-1496/#MarioiD%27Amico> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/MarioiD%27Amico> ;
+    ns3:made <http://ceur-ws.org/Vol-1496/#paper1> ;
+    ns3:name "Mario D'Amico" .
+
+<http://ceur-ws.org/Vol-1496/#MathisiHeimann> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/MathisiHeimann> ;
+    ns3:made <http://ceur-ws.org/Vol-1496/#paper3> ;
+    ns3:name "Mathis Heimann" .
+
+<http://ceur-ws.org/Vol-1496/#MichaeliStriewe> a ns3:Person ;
+    ns5:affiliation "" ;
+    ns4:sameAs <http://ceur-ws.org/persons/MichaeliStriewe> ;
+    ns3:name "Michael Striewe" .
+
+<http://ceur-ws.org/Vol-1496/#NielsiPinkwart> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/NielsiPinkwart> ;
+    ns3:made <http://ceur-ws.org/Vol-1496/#keynote> ;
+    ns3:name "Niels Pinkwart" .
+
+<http://ceur-ws.org/Vol-1496/#OliveriBott> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/OliveriBott> ;
+    ns3:made <http://ceur-ws.org/Vol-1496/#paper9> ;
+    ns3:name "Oliver Bott" .
+
+<http://ceur-ws.org/Vol-1496/#OliveriRod> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/OliveriRod> ;
+    ns3:made <http://ceur-ws.org/Vol-1496/#paper10> ;
+    ns3:name "Oliver Rod" .
+
+<http://ceur-ws.org/Vol-1496/#PatrickiFries> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/PatrickiFries> ;
+    ns3:made <http://ceur-ws.org/Vol-1496/#paper3> ;
+    ns3:name "Patrick Fries" .
+
+<http://ceur-ws.org/Vol-1496/#PauliReiser> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/PauliReiser> ;
+    ns3:made <http://ceur-ws.org/Vol-1496/#paper9> ;
+    ns3:name "Paul Reiser" .
+
+<http://ceur-ws.org/Vol-1496/#PeteriFricke> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/PeteriFricke> ;
+    ns3:made <http://ceur-ws.org/Vol-1496/#paper9> ;
+    ns3:name "Peter Fricke" .
+
+<http://ceur-ws.org/Vol-1496/#PeteriW%C3%BCbbelt> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/PeteriW%C3%BCbbelt> ;
+    ns3:made <http://ceur-ws.org/Vol-1496/#paper9> ;
+    ns3:name "Peter Wübbelt" .
+
+<http://ceur-ws.org/Vol-1496/#RaineriOechsle> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/RaineriOechsle> ;
+    ns3:made <http://ceur-ws.org/Vol-1496/#paper3> ;
+    ns3:name "Rainer Oechsle" .
+
+<http://ceur-ws.org/Vol-1496/#S%C3%B6reniGrzanna> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/S%C3%B6reniGrzanna> ;
+    ns3:made <http://ceur-ws.org/Vol-1496/#paper9> ;
+    ns3:name "Sören Grzanna" .
+
+<http://ceur-ws.org/Vol-1496/#SebastianiMaier> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/SebastianiMaier> ;
+    ns3:made <http://ceur-ws.org/Vol-1496/#paper10> ;
+    ns3:name "Sebastian Maier" .
+
+<http://ceur-ws.org/Vol-1496/#ThomasiMahlmeister> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/ThomasiMahlmeister> ;
+    ns3:made <http://ceur-ws.org/Vol-1496/#paper4> ;
+    ns3:name "Thomas Mahlmeister" .
+
+<http://ceur-ws.org/Vol-1496/#ThomasiRichter> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/ThomasiRichter> ;
+    ns3:made <http://ceur-ws.org/Vol-1496/#paper6> ;
+    ns3:name "Thomas Richter" .
+
+<http://ceur-ws.org/Vol-1496/#UtaiPriss> a ns3:Person ;
+    ns5:affiliation "" ;
+    ns4:sameAs <http://ceur-ws.org/persons/UtaiPriss> ;
+    ns3:name "Uta Priss" .
+
+<http://ceur-ws.org/Vol-1496/#event> a ns2:WorkshopEvent ;
+    ns2:hasLocation <http://dbpedia.org/resource/Germany> ;
+    ns2:hasPart <http://ceur-ws.org/Vol-1496/#part-ABP> ;
+    ns2:isSubEventOf <http://ceur-ws.org/Vol-1496/#conf> ;
+    ns9:beginsAtDatetime "2015-11-06T00:00:00+00:00"^^xsd:dateTime ;
+    ns9:endsAtDatetime "2015-11-06T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:license "http://creativecommons.org/publicdomain/zero/1.0/" ;
     rdfs:seeAlso <http://ceur-ws.org/Vol-1067/#event> .
+
+<http://ceur-ws.org/Vol-1496/#KeynoteLecture> a ns2:SessionEvent ;
+    ns2:partOf <http://ceur-ws.org/Vol-1496/> ;
+    ns1:title "Keynote Lecture" .
+
+<http://ceur-ws.org/Vol-1496/#MarianusiIfland> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/MarianusiIfland> ;
+    ns3:made <http://ceur-ws.org/Vol-1496/#paper4>,
+        <http://ceur-ws.org/Vol-1496/#paper5> ;
+    ns3:name "Marianus Ifland" .
+
+<http://ceur-ws.org/Vol-1496/#PhilipiDaniel-Beck> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/PhilipiDaniel-Beck> ;
+    ns3:made <http://ceur-ws.org/Vol-1496/#paper4>,
+        <http://ceur-ws.org/Vol-1496/#paper5> ;
+    ns3:name "Philip Daniel-Beck" .
+
+<http://ceur-ws.org/Vol-1496/#RobertiGarmann> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/RobertiGarmann> ;
+    ns3:made <http://ceur-ws.org/Vol-1496/#paper8>,
+        <http://ceur-ws.org/Vol-1496/#paper9> ;
+    ns3:name "Robert Garmann" .
+
+<http://ceur-ws.org/Vol-1496/#keynote> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1496/> ;
+    ns1:title "Automatisches Feedback zu Programmieraufgaben" ;
+    ns6:section <http://ceur-ws.org/Vol-1496/#KeynoteLecture> ;
+    ns5:author <http://ceur-ws.org/Vol-1496/#NielsiPinkwart> .
+
+<http://ceur-ws.org/Vol-1496/#paper1> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1496/> ;
+    ns1:title "Konzeption universeller .NET-Prüfkomponenten für das E-Assessment-System JACK" ;
+    ns6:section <http://ceur-ws.org/Vol-1496/#ContributedPapers> ;
+    ns5:author <http://ceur-ws.org/Vol-1496/#MarioiD%27Amico> .
+
+<http://ceur-ws.org/Vol-1496/#paper2> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1496/> ;
+    ns1:title "Erweiterung eines E-Assessment-Systems um eine Prüfkomponente für die Programmiersprache Python" ;
+    ns6:section <http://ceur-ws.org/Vol-1496/#ContributedPapers> ;
+    ns5:author <http://ceur-ws.org/Vol-1496/#EnnoiLohmann> .
+
+<http://ceur-ws.org/Vol-1496/#paper6> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1496/> ;
+    ns1:title "Automatische Aufgabenkorrektur mit VIPLab" ;
+    ns6:section <http://ceur-ws.org/Vol-1496/#ContributedPapers> ;
+    ns5:author <http://ceur-ws.org/Vol-1496/#ThomasiRichter> .
+
+<http://ceur-ws.org/Vol-1496/#paper8> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1496/> ;
+    ns1:title "E-Assessment mit Graja - ein Vergleich zu Anforderungen an Softwaretestwerkzeuge" ;
+    ns6:section <http://ceur-ws.org/Vol-1496/#ContributedPapers> ;
+    ns5:author <http://ceur-ws.org/Vol-1496/#RobertiGarmann> .
+
+<http://ceur-ws.org/Vol-1496/#paper10> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1496/> ;
+    ns1:title "Umsetzung eines Laborversuches auf LON-CAPA mit automatischer Bewertung von ABEL-Programmieraufgaben" ;
+    ns6:section <http://ceur-ws.org/Vol-1496/#ContributedPapers> ;
+    ns5:author <http://ceur-ws.org/Vol-1496/#OliveriRod>,
+        <http://ceur-ws.org/Vol-1496/#SebastianiMaier> .
+
+<http://ceur-ws.org/Vol-1496/#paper7> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1496/> ;
+    ns1:title "Zur Einschätzung von Programmierfähigkeiten - Jedem Programmieranfänger über die Schultern schauen" ;
+    ns6:section <http://ceur-ws.org/Vol-1496/#ContributedPapers> ;
+    ns5:author <http://ceur-ws.org/Vol-1496/#BastianiSchulten>,
+        <http://ceur-ws.org/Vol-1496/#FrankiH%C3%B6ppner> .
+
+<http://ceur-ws.org/Vol-1496/#paper4> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1496/> ;
+    ns1:title "COCLAC - Feedback Generation for Combined UML Class and Activity Diagram Modeling Tasks" ;
+    ns6:section <http://ceur-ws.org/Vol-1496/#ContributedPapers> ;
+    ns5:author <http://ceur-ws.org/Vol-1496/#FrankiPuppe>,
+        <http://ceur-ws.org/Vol-1496/#MarianusiIfland>,
+        <http://ceur-ws.org/Vol-1496/#PhilipiDaniel-Beck>,
+        <http://ceur-ws.org/Vol-1496/#ThomasiMahlmeister> .
+
+<http://ceur-ws.org/Vol-1496/#paper5> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1496/> ;
+    ns1:title "PABS - a Programming Assignment Feedback System" ;
+    ns6:section <http://ceur-ws.org/Vol-1496/#ContributedPapers> ;
+    ns5:author <http://ceur-ws.org/Vol-1496/#AlexanderiDallmann>,
+        <http://ceur-ws.org/Vol-1496/#LukasiIffl%C3%A4nder>,
+        <http://ceur-ws.org/Vol-1496/#MarianusiIfland>,
+        <http://ceur-ws.org/Vol-1496/#PhilipiDaniel-Beck> .
+
+<http://ceur-ws.org/Vol-1496/#paper3> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1496/> ;
+    ns1:title "Automatische Bewertung von Android-Apps" ;
+    ns6:section <http://ceur-ws.org/Vol-1496/#ContributedPapers> ;
+    ns5:author <http://ceur-ws.org/Vol-1496/#BrittaiHerres>,
+        <http://ceur-ws.org/Vol-1496/#ChristianiSchmal>,
+        <http://ceur-ws.org/Vol-1496/#MathisiHeimann>,
+        <http://ceur-ws.org/Vol-1496/#PatrickiFries>,
+        <http://ceur-ws.org/Vol-1496/#RaineriOechsle> .
+
+<http://ceur-ws.org/Vol-1496/#paper9> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1496/> ;
+    ns1:title "Grading mit Grappa - Ein Werkstattbericht" ;
+    ns6:section <http://ceur-ws.org/Vol-1496/#ContributedPapers> ;
+    ns5:author <http://ceur-ws.org/Vol-1496/#CarsteniKleiner>,
+        <http://ceur-ws.org/Vol-1496/#FelixiHeine>,
+        <http://ceur-ws.org/Vol-1496/#ImmanueliDeiVereiPeratoner>,
+        <http://ceur-ws.org/Vol-1496/#OliveriBott>,
+        <http://ceur-ws.org/Vol-1496/#PauliReiser>,
+        <http://ceur-ws.org/Vol-1496/#PeteriFricke>,
+        <http://ceur-ws.org/Vol-1496/#PeteriW%C3%BCbbelt>,
+        <http://ceur-ws.org/Vol-1496/#RobertiGarmann>,
+        <http://ceur-ws.org/Vol-1496/#S%C3%B6reniGrzanna> .
+
+<http://ceur-ws.org/Vol-1496/#ContributedPapers> a ns2:SessionEvent ;
+    ns2:partOf <http://ceur-ws.org/Vol-1496/> ;
+    ns1:title "Contributed Papers" .
+
+<http://ceur-ws.org/Vol-1496/> a ns2:Proceedings ;
+    ns2:hasPart <http://ceur-ws.org/Vol-1496/#keynote>,
+        <http://ceur-ws.org/Vol-1496/#paper1>,
+        <http://ceur-ws.org/Vol-1496/#paper10>,
+        <http://ceur-ws.org/Vol-1496/#paper2>,
+        <http://ceur-ws.org/Vol-1496/#paper3>,
+        <http://ceur-ws.org/Vol-1496/#paper4>,
+        <http://ceur-ws.org/Vol-1496/#paper5>,
+        <http://ceur-ws.org/Vol-1496/#paper6>,
+        <http://ceur-ws.org/Vol-1496/#paper7>,
+        <http://ceur-ws.org/Vol-1496/#paper8>,
+        <http://ceur-ws.org/Vol-1496/#paper9> ;
+    ns2:hasSession <http://ceur-ws.org/Vol-1496/#ContributedPapers>,
+        <http://ceur-ws.org/Vol-1496/#KeynoteLecture> ;
+    ns7:issued "2015-10-31T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:presentedAt <http://ceur-ws.org/Vol-1496/#event> ;
+    ns5:editor <http://ceur-ws.org/Vol-1496/#MichaeliStriewe>,
+        <http://ceur-ws.org/Vol-1496/#UtaiPriss> .
 

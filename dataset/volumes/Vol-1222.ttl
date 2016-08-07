@@ -1,45 +1,383 @@
-@prefix ns1: <http://www.w3.org/2002/07/owl#> .
-@prefix ns2: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns3: <http://xmlns.com/foaf/0.1/> .
-@prefix ns4: <http://purl.org/ontology/bibo/#> .
-@prefix ns5: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns6: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns7: <http://purl.org/dc/elements/1.1/> .
+@prefix ns1: <http://xmlns.com/foaf/0.1/> .
+@prefix ns2: <http://purl.org/ontology/bibo/#> .
+@prefix ns3: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns4: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns5: <http://www.w3.org/2002/07/owl#> .
+@prefix ns6: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns7: <http://purl.org/dc/elements/1.1/#> .
 @prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns9: <http://purl.org/dc/elements/1.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1222/> a ns6:Proceedings ;
-    ns8:issued "2014-09-04T00:00:00+00:00"^^xsd:dateTime ;
-    ns4:presentedAt <http://ceur-ws.org/Vol-1222/#event> ;
-    ns5:editor <http://ceur-ws.org/Vol-1222/#AlexisiJoly>,
+<http://ceur-ws.org/Vol-1222/#AnastasiaiMoumtzidou> a ns1:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/AnastasiaiMoumtzidou> ;
+    ns1:made <http://ceur-ws.org/Vol-1222/#paper9> ;
+    ns1:name "Anastasia Moumtzidou" .
+
+<http://ceur-ws.org/Vol-1222/#AndreaiMattos> a ns1:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/AndreaiMattos> ;
+    ns1:made <http://ceur-ws.org/Vol-1222/#paper7> ;
+    ns1:name "Andrea Mattos" .
+
+<http://ceur-ws.org/Vol-1222/#AndreasiRauber> a ns1:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/AndreasiRauber> ;
+    ns1:made <http://ceur-ws.org/Vol-1222/#paper2> ;
+    ns1:name "Andreas Rauber" .
+
+<http://ceur-ws.org/Vol-1222/#BasilioiSierra> a ns1:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/BasilioiSierra> ;
+    ns1:made <http://ceur-ws.org/Vol-1222/#paper6> ;
+    ns1:name "Basilio Sierra" .
+
+<http://ceur-ws.org/Vol-1222/#BobiFisher> a ns1:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/BobiFisher> ;
+    ns1:made <http://ceur-ws.org/Vol-1222/#paper2> ;
+    ns1:name "Bob Fisher" .
+
+<http://ceur-ws.org/Vol-1222/#ConcettoiSpampinato> a ns1:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/ConcettoiSpampinato> ;
+    ns1:made <http://ceur-ws.org/Vol-1222/#paper2> ;
+    ns1:name "Concetto Spampinato" .
+
+<http://ceur-ws.org/Vol-1222/#DesireeiHilbring> a ns1:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/DesireeiHilbring> ;
+    ns1:made <http://ceur-ws.org/Vol-1222/#paper1> ;
+    ns1:name "Desiree Hilbring" .
+
+<http://ceur-ws.org/Vol-1222/#DevisiTuia> a ns1:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/DevisiTuia> ;
+    ns1:made <http://ceur-ws.org/Vol-1222/#paper4> ;
+    ns1:name "Devis Tuia" .
+
+<http://ceur-ws.org/Vol-1222/#EzzeddineiZagrouba> a ns1:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/EzzeddineiZagrouba> ;
+    ns1:made <http://ceur-ws.org/Vol-1222/#paper8> ;
+    ns1:name "Ezzeddine Zagrouba" .
+
+<http://ceur-ws.org/Vol-1222/#FrancoisiGolay> a ns1:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/FrancoisiGolay> ;
+    ns1:made <http://ceur-ws.org/Vol-1222/#paper4> ;
+    ns1:name "Francois Golay" .
+
+<http://ceur-ws.org/Vol-1222/#FrankiDeiMorsier> a ns1:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/FrankiDeiMorsier> ;
+    ns1:made <http://ceur-ws.org/Vol-1222/#paper4> ;
+    ns1:name "Frank De Morsier" .
+
+<http://ceur-ws.org/Vol-1222/#FredericiFoliLeymarie> a ns1:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/FredericiFoliLeymarie> ;
+    ns1:made <http://ceur-ws.org/Vol-1222/#paper3> ;
+    ns1:name "Frederic Fol Leymarie" .
+
+<http://ceur-ws.org/Vol-1222/#HenningiMuller> a ns1:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/HenningiMuller> ;
+    ns1:made <http://ceur-ws.org/Vol-1222/#paper2> ;
+    ns1:name "Henning Muller" .
+
+<http://ceur-ws.org/Vol-1222/#HerveiGlotin> a ns1:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/HerveiGlotin> ;
+    ns1:made <http://ceur-ws.org/Vol-1222/#paper2> ;
+    ns1:name "Herve Glotin" .
+
+<http://ceur-ws.org/Vol-1222/#HerveiGoeau> a ns1:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/HerveiGoeau> ;
+    ns1:made <http://ceur-ws.org/Vol-1222/#paper2> ;
+    ns1:name "Herve Goeau" .
+
+<http://ceur-ws.org/Vol-1222/#IgoriG.iOlaizola> a ns1:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/IgoriG.iOlaizola> ;
+    ns1:made <http://ceur-ws.org/Vol-1222/#paper6> ;
+    ns1:name "Igor G. Olaizola" .
+
+<http://ceur-ws.org/Vol-1222/#ItheriiYahiaoui> a ns1:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/ItheriiYahiaoui> ;
+    ns1:made <http://ceur-ws.org/Vol-1222/#paper8> ;
+    ns1:name "Itheri Yahiaoui" .
+
+<http://ceur-ws.org/Vol-1222/#JaakkoiKukkonen> a ns1:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/JaakkoiKukkonen> ;
+    ns1:made <http://ceur-ws.org/Vol-1222/#paper5> ;
+    ns1:name "Jaakko Kukkonen" .
+
+<http://ceur-ws.org/Vol-1222/#JavieriLozano> a ns1:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/JavieriLozano> ;
+    ns1:made <http://ceur-ws.org/Vol-1222/#paper6> ;
+    ns1:name "Javier Lozano" .
+
+<http://ceur-ws.org/Vol-1222/#JuergeniMossgraber> a ns1:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/JuergeniMossgraber> ;
+    ns1:made <http://ceur-ws.org/Vol-1222/#paper1> ;
+    ns1:name "Juergen Mossgraber" .
+
+<http://ceur-ws.org/Vol-1222/#KellyiKiyumiiShigeno> a ns1:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/KellyiKiyumiiShigeno> ;
+    ns1:made <http://ceur-ws.org/Vol-1222/#paper7> ;
+    ns1:name "Kelly Kiyumi Shigeno" .
+
+<http://ceur-ws.org/Vol-1222/#LasseiJohansson> a ns1:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/LasseiJohansson> ;
+    ns1:made <http://ceur-ws.org/Vol-1222/#paper5> ;
+    ns1:name "Lasse Johansson" .
+
+<http://ceur-ws.org/Vol-1222/#LeoiWanner> a ns1:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/LeoiWanner> ;
+    ns1:made <http://ceur-ws.org/Vol-1222/#paper5> ;
+    ns1:name "Leo Wanner" .
+
+<http://ceur-ws.org/Vol-1222/#MarcoiQuartulli> a ns1:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/MarcoiQuartulli> ;
+    ns1:made <http://ceur-ws.org/Vol-1222/#paper6> ;
+    ns1:name "Marco Quartulli" .
+
+<http://ceur-ws.org/Vol-1222/#NaiaraiAginako> a ns1:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/NaiaraiAginako> ;
+    ns1:made <http://ceur-ws.org/Vol-1222/#paper6> ;
+    ns1:name "Naiara Aginako" .
+
+<http://ceur-ws.org/Vol-1222/#NozhaiBoujemaa> a ns1:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/NozhaiBoujemaa> ;
+    ns1:made <http://ceur-ws.org/Vol-1222/#paper8> ;
+    ns1:name "Nozha Boujemaa" .
+
+<http://ceur-ws.org/Vol-1222/#OlfaiMzoughi> a ns1:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/OlfaiMzoughi> ;
+    ns1:made <http://ceur-ws.org/Vol-1222/#paper8> ;
+    ns1:name "Olfa Mzoughi" .
+
+<http://ceur-ws.org/Vol-1222/#PierreiBonnet> a ns1:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/PierreiBonnet> ;
+    ns1:made <http://ceur-ws.org/Vol-1222/#paper2> ;
+    ns1:name "Pierre Bonnet" .
+
+<http://ceur-ws.org/Vol-1222/#PrashantiAparajeya> a ns1:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/PrashantiAparajeya> ;
+    ns1:made <http://ceur-ws.org/Vol-1222/#paper3> ;
+    ns1:name "Prashant Aparajeya" .
+
+<http://ceur-ws.org/Vol-1222/#RicardoiHerrmann> a ns1:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/RicardoiHerrmann> ;
+    ns1:made <http://ceur-ws.org/Vol-1222/#paper7> ;
+    ns1:name "Ricardo Herrmann" .
+
+<http://ceur-ws.org/Vol-1222/#RobertiPlanque> a ns1:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/RobertiPlanque> ;
+    ns1:made <http://ceur-ws.org/Vol-1222/#paper2> ;
+    ns1:name "Robert Planque" .
+
+<http://ceur-ws.org/Vol-1222/#RogerioiFeris> a ns1:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/RogerioiFeris> ;
+    ns1:made <http://ceur-ws.org/Vol-1222/#paper7> ;
+    ns1:name "Rogerio Feris" .
+
+<http://ceur-ws.org/Vol-1222/#TheodoraiTsikrika> a ns1:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/TheodoraiTsikrika> ;
+    ns1:made <http://ceur-ws.org/Vol-1222/#paper9> ;
+    ns1:name "Theodora Tsikrika" .
+
+<http://ceur-ws.org/Vol-1222/#TimotheeiProduit> a ns1:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/TimotheeiProduit> ;
+    ns1:made <http://ceur-ws.org/Vol-1222/#paper4> ;
+    ns1:name "Timothee Produit" .
+
+<http://ceur-ws.org/Vol-1222/#VictoriEpitropou> a ns1:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/VictoriEpitropou> ;
+    ns1:made <http://ceur-ws.org/Vol-1222/#paper5> ;
+    ns1:name "Victor Epitropou" .
+
+<http://ceur-ws.org/Vol-1222/#Willem-PieriVellinga> a ns1:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/Willem-PieriVellinga> ;
+    ns1:made <http://ceur-ws.org/Vol-1222/#paper2> ;
+    ns1:name "Willem-Pier Vellinga" .
+
+<http://ceur-ws.org/Vol-1222/#event> a ns3:WorkshopEvent ;
+    ns3:hasLocation <http://dbpedia.org/resource/United_Kingdom> ;
+    ns3:hasPart <http://ceur-ws.org/Vol-1222/#part-EMR> ;
+    ns3:isSubEventOf <http://ceur-ws.org/Vol-1222/#conf> ;
+    ns6:beginsAtDatetime "2014-04-01T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:endsAtDatetime "2014-04-01T00:00:00+00:00"^^xsd:dateTime ;
+    ns9:license "http://choosealicense.com/licenses/no-license/" .
+
+<http://ceur-ws.org/Vol-1222/#IoannisiKompatsiaris> a ns1:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/IoannisiKompatsiaris> ;
+    ns1:made <http://ceur-ws.org/Vol-1222/#paper5>,
+        <http://ceur-ws.org/Vol-1222/#paper9> ;
+    ns1:name "Ioannis Kompatsiaris" .
+
+<http://ceur-ws.org/Vol-1222/#AlexisiJoly> a ns1:Person ;
+    ns4:affiliation "" ;
+    ns5:sameAs <http://ceur-ws.org/persons/AlexisiJoly> ;
+    ns1:made <http://ceur-ws.org/Vol-1222/#paper2>,
+        <http://ceur-ws.org/Vol-1222/#preface> ;
+    ns1:name "Alexis Joly" .
+
+<http://ceur-ws.org/Vol-1222/#AriiKarppinen> a ns1:Person ;
+    ns4:affiliation "" ;
+    ns5:sameAs <http://ceur-ws.org/persons/AriiKarppinen> ;
+    ns1:made <http://ceur-ws.org/Vol-1222/#paper5>,
+        <http://ceur-ws.org/Vol-1222/#preface> ;
+    ns1:name "Ari Karppinen" .
+
+<http://ceur-ws.org/Vol-1222/#KostasiKaratzas> a ns1:Person ;
+    ns4:affiliation "" ;
+    ns5:sameAs <http://ceur-ws.org/persons/KostasiKaratzas> ;
+    ns1:made <http://ceur-ws.org/Vol-1222/#paper5>,
+        <http://ceur-ws.org/Vol-1222/#preface> ;
+    ns1:name "Kostas Karatzas" .
+
+<http://ceur-ws.org/Vol-1222/#paper1> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1222/> ;
+    ns7:title "Automating the web publishing process of environmental data by using semantic annotations" ;
+    ns2:endPage 6 ;
+    ns2:numPages 6 ;
+    ns2:section <http://ceur-ws.org/Vol-1222/#FullPapers> ;
+    ns2:startPage 1 ;
+    ns4:author <http://ceur-ws.org/Vol-1222/#DesireeiHilbring>,
+        <http://ceur-ws.org/Vol-1222/#JuergeniMossgraber> .
+
+<http://ceur-ws.org/Vol-1222/#paper3> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1222/> ;
+    ns7:title "Point-based medialness for animal and plant identification" ;
+    ns2:endPage 21 ;
+    ns2:numPages 8 ;
+    ns2:section <http://ceur-ws.org/Vol-1222/#FullPapers> ;
+    ns2:startPage 14 ;
+    ns4:author <http://ceur-ws.org/Vol-1222/#FredericiFoliLeymarie>,
+        <http://ceur-ws.org/Vol-1222/#PrashantiAparajeya> .
+
+<http://ceur-ws.org/Vol-1222/#StefanosiVrochidis> a ns1:Person ;
+    ns4:affiliation "" ;
+    ns5:sameAs <http://ceur-ws.org/persons/StefanosiVrochidis> ;
+    ns1:made <http://ceur-ws.org/Vol-1222/#paper5>,
+        <http://ceur-ws.org/Vol-1222/#paper9>,
+        <http://ceur-ws.org/Vol-1222/#preface> ;
+    ns1:name "Stefanos Vrochidis" .
+
+<http://ceur-ws.org/Vol-1222/#paper4> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1222/> ;
+    ns7:title "Do geographic features impact pictures location shared on the Web? Modeling photographic suitability in the Swiss Alps." ;
+    ns2:endPage 29 ;
+    ns2:numPages 8 ;
+    ns2:section <http://ceur-ws.org/Vol-1222/#FullPapers> ;
+    ns2:startPage 22 ;
+    ns4:author <http://ceur-ws.org/Vol-1222/#DevisiTuia>,
+        <http://ceur-ws.org/Vol-1222/#FrancoisiGolay>,
+        <http://ceur-ws.org/Vol-1222/#FrankiDeiMorsier>,
+        <http://ceur-ws.org/Vol-1222/#TimotheeiProduit> .
+
+<http://ceur-ws.org/Vol-1222/#paper7> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1222/> ;
+    ns7:title "A mission-oriented citizen science platform for efficient flower classification based on combination of feature descriptors" ;
+    ns2:endPage 52 ;
+    ns2:numPages 8 ;
+    ns2:section <http://ceur-ws.org/Vol-1222/#FullPapers> ;
+    ns2:startPage 45 ;
+    ns4:author <http://ceur-ws.org/Vol-1222/#AndreaiMattos>,
+        <http://ceur-ws.org/Vol-1222/#KellyiKiyumiiShigeno>,
+        <http://ceur-ws.org/Vol-1222/#RicardoiHerrmann>,
+        <http://ceur-ws.org/Vol-1222/#RogerioiFeris> .
+
+<http://ceur-ws.org/Vol-1222/#paper8> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1222/> ;
+    ns7:title "Multiple leaflets-based identification approach for compound leaf species" ;
+    ns2:endPage 60 ;
+    ns2:numPages 8 ;
+    ns2:section <http://ceur-ws.org/Vol-1222/#FullPapers> ;
+    ns2:startPage 53 ;
+    ns4:author <http://ceur-ws.org/Vol-1222/#EzzeddineiZagrouba>,
+        <http://ceur-ws.org/Vol-1222/#ItheriiYahiaoui>,
+        <http://ceur-ws.org/Vol-1222/#NozhaiBoujemaa>,
+        <http://ceur-ws.org/Vol-1222/#OlfaiMzoughi> .
+
+<http://ceur-ws.org/Vol-1222/#paper9> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1222/> ;
+    ns7:title "Focussed crawling of environmental web resources: A pilot study on the combination of multimedia evidence" ;
+    ns2:endPage 68 ;
+    ns2:numPages 8 ;
+    ns2:section <http://ceur-ws.org/Vol-1222/#FullPapers> ;
+    ns2:startPage 61 ;
+    ns4:author <http://ceur-ws.org/Vol-1222/#AnastasiaiMoumtzidou>,
+        <http://ceur-ws.org/Vol-1222/#IoannisiKompatsiaris>,
+        <http://ceur-ws.org/Vol-1222/#StefanosiVrochidis>,
+        <http://ceur-ws.org/Vol-1222/#TheodoraiTsikrika> .
+
+<http://ceur-ws.org/Vol-1222/#preface> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1222/> ;
+    ns7:title "Introduction to EMR 2014" ;
+    ns4:author <http://ceur-ws.org/Vol-1222/#AlexisiJoly>,
         <http://ceur-ws.org/Vol-1222/#AriiKarppinen>,
         <http://ceur-ws.org/Vol-1222/#KostasiKaratzas>,
         <http://ceur-ws.org/Vol-1222/#StefanosiVrochidis> .
 
-<http://ceur-ws.org/Vol-1222/#AlexisiJoly> a ns3:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/AlexisiJoly> ;
-    ns3:name "Alexis Joly" .
+<http://ceur-ws.org/Vol-1222/#paper6> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1222/> ;
+    ns7:title "Identification of plant species on large botanical image datasets" ;
+    ns2:endPage 44 ;
+    ns2:numPages 7 ;
+    ns2:section <http://ceur-ws.org/Vol-1222/#FullPapers> ;
+    ns2:startPage 38 ;
+    ns4:author <http://ceur-ws.org/Vol-1222/#BasilioiSierra>,
+        <http://ceur-ws.org/Vol-1222/#IgoriG.iOlaizola>,
+        <http://ceur-ws.org/Vol-1222/#JavieriLozano>,
+        <http://ceur-ws.org/Vol-1222/#MarcoiQuartulli>,
+        <http://ceur-ws.org/Vol-1222/#NaiaraiAginako> .
 
-<http://ceur-ws.org/Vol-1222/#AriiKarppinen> a ns3:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/AriiKarppinen> ;
-    ns3:name "Ari Karppinen" .
+<http://ceur-ws.org/Vol-1222/#paper5> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1222/> ;
+    ns7:title "The extraction and fusion of meteorological and air quality information for orchestrated services" ;
+    ns2:endPage 37 ;
+    ns2:numPages 8 ;
+    ns2:section <http://ceur-ws.org/Vol-1222/#FullPapers> ;
+    ns2:startPage 30 ;
+    ns4:author <http://ceur-ws.org/Vol-1222/#AriiKarppinen>,
+        <http://ceur-ws.org/Vol-1222/#IoannisiKompatsiaris>,
+        <http://ceur-ws.org/Vol-1222/#JaakkoiKukkonen>,
+        <http://ceur-ws.org/Vol-1222/#KostasiKaratzas>,
+        <http://ceur-ws.org/Vol-1222/#LasseiJohansson>,
+        <http://ceur-ws.org/Vol-1222/#LeoiWanner>,
+        <http://ceur-ws.org/Vol-1222/#StefanosiVrochidis>,
+        <http://ceur-ws.org/Vol-1222/#VictoriEpitropou> .
 
-<http://ceur-ws.org/Vol-1222/#KostasiKaratzas> a ns3:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/KostasiKaratzas> ;
-    ns3:name "Kostas Karatzas" .
+<http://ceur-ws.org/Vol-1222/#FullPapers> a ns3:SessionEvent ;
+    ns3:partOf <http://ceur-ws.org/Vol-1222/> ;
+    ns7:title "Full Papers" .
 
-<http://ceur-ws.org/Vol-1222/#StefanosiVrochidis> a ns3:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/StefanosiVrochidis> ;
-    ns3:name "Stefanos Vrochidis" .
+<http://ceur-ws.org/Vol-1222/> a ns3:Proceedings ;
+    ns3:hasPart <http://ceur-ws.org/Vol-1222/#paper1>,
+        <http://ceur-ws.org/Vol-1222/#paper2>,
+        <http://ceur-ws.org/Vol-1222/#paper3>,
+        <http://ceur-ws.org/Vol-1222/#paper4>,
+        <http://ceur-ws.org/Vol-1222/#paper5>,
+        <http://ceur-ws.org/Vol-1222/#paper6>,
+        <http://ceur-ws.org/Vol-1222/#paper7>,
+        <http://ceur-ws.org/Vol-1222/#paper8>,
+        <http://ceur-ws.org/Vol-1222/#paper9>,
+        <http://ceur-ws.org/Vol-1222/#preface> ;
+    ns3:hasSession <http://ceur-ws.org/Vol-1222/#FullPapers> ;
+    ns8:issued "2014-09-04T00:00:00+00:00"^^xsd:dateTime ;
+    ns2:presentedAt <http://ceur-ws.org/Vol-1222/#event> ;
+    ns4:editor <http://ceur-ws.org/Vol-1222/#AlexisiJoly>,
+        <http://ceur-ws.org/Vol-1222/#AriiKarppinen>,
+        <http://ceur-ws.org/Vol-1222/#KostasiKaratzas>,
+        <http://ceur-ws.org/Vol-1222/#StefanosiVrochidis> .
 
-<http://ceur-ws.org/Vol-1222/#event> a ns6:WorkshopEvent ;
-    ns6:hasLocation <http://dbpedia.org/resource/United_Kingdom> ;
-    ns6:hasPart <http://ceur-ws.org/Vol-1222/#part-ws> ;
-    ns6:isSubEventOf <http://ceur-ws.org/Vol-1222/#conf> ;
-    ns2:beginsAtDatetime "2014-04-01T00:00:00+00:00"^^xsd:dateTime ;
-    ns2:endsAtDatetime "2014-04-01T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:license "http://choosealicense.com/licenses/no-license/" .
+<http://ceur-ws.org/Vol-1222/#paper2> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1222/> ;
+    ns7:title "LifeCLEF: Multimedia life species identification" ;
+    ns2:endPage 13 ;
+    ns2:numPages 7 ;
+    ns2:section <http://ceur-ws.org/Vol-1222/#FullPapers> ;
+    ns2:startPage 7 ;
+    ns4:author <http://ceur-ws.org/Vol-1222/#AlexisiJoly>,
+        <http://ceur-ws.org/Vol-1222/#AndreasiRauber>,
+        <http://ceur-ws.org/Vol-1222/#BobiFisher>,
+        <http://ceur-ws.org/Vol-1222/#ConcettoiSpampinato>,
+        <http://ceur-ws.org/Vol-1222/#HenningiMuller>,
+        <http://ceur-ws.org/Vol-1222/#HerveiGlotin>,
+        <http://ceur-ws.org/Vol-1222/#HerveiGoeau>,
+        <http://ceur-ws.org/Vol-1222/#PierreiBonnet>,
+        <http://ceur-ws.org/Vol-1222/#RobertiPlanque>,
+        <http://ceur-ws.org/Vol-1222/#Willem-PieriVellinga> .
 

@@ -1,10 +1,10 @@
 @prefix ns1: <http://xmlns.com/foaf/0.1/> .
-@prefix ns2: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns2: <http://swrc.ontoware.org/ontology/#> .
 @prefix ns3: <http://www.w3.org/2002/07/owl#> .
-@prefix ns4: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns5: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns6: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns7: <http://purl.org/ontology/bibo/#> .
+@prefix ns4: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns5: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns6: <http://purl.org/ontology/bibo/#> .
+@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
 @prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix ns9: <http://purl.org/dc/elements/1.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -53,8 +53,8 @@
     ns1:name "Gregory Todd Williams" .
 
 <http://ceur-ws.org/Vol-736/#JacopoiUrbani> a ns1:Person ;
-    ns7:place <http://dbpedia.org/resource/Kingdom_of_the_Netherlands> ;
-    ns4:affiliation "Vrije Universiteit Amsterdam, Amsterdam" ;
+    ns6:place <http://dbpedia.org/resource/Kingdom_of_the_Netherlands> ;
+    ns2:affiliation "Vrije Universiteit Amsterdam, Amsterdam" ;
     ns3:sameAs <http://ceur-ws.org/persons/JacopoiUrbani> ;
     ns1:name "Jacopo Urbani" .
 
@@ -84,8 +84,8 @@
     ns1:name "Paea LePendu" .
 
 <http://ceur-ws.org/Vol-736/#SpyrosiKotoulas> a ns1:Person ;
-    ns7:place <http://dbpedia.org/resource/Kingdom_of_the_Netherlands> ;
-    ns4:affiliation "Vrije Universiteit Amsterdam, Amsterdam" ;
+    ns6:place <http://dbpedia.org/resource/Kingdom_of_the_Netherlands> ;
+    ns2:affiliation "Vrije Universiteit Amsterdam, Amsterdam" ;
     ns3:sameAs <http://ceur-ws.org/persons/SpyrosiKotoulas> ;
     ns1:name "Spyros Kotoulas" .
 
@@ -99,12 +99,12 @@
     ns1:made <http://ceur-ws.org/Vol-736/#paper2> ;
     ns1:name "Tomasz Wiktor Wlodarczyk" .
 
-<http://ceur-ws.org/Vol-736/#event> a ns5:WorkshopEvent ;
-    ns5:hasLocation <http://dbpedia.org/resource/Greece> ;
-    ns5:hasPart <http://ceur-ws.org/Vol-736/#part-CEUR-WS> ;
-    ns5:isSubEventOf <http://ceur-ws.org/Vol-736/#conf> ;
-    ns6:beginsAtDatetime "2011-06-17T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:endsAtDatetime "2011-06-17T00:00:00+00:00"^^xsd:dateTime ;
+<http://ceur-ws.org/Vol-736/#event> a ns4:WorkshopEvent ;
+    ns4:hasLocation <http://dbpedia.org/resource/Greece> ;
+    ns4:hasPart <http://ceur-ws.org/Vol-736/#part-HPCSW> ;
+    ns4:isSubEventOf <http://ceur-ws.org/Vol-736/#conf> ;
+    ns7:beginsAtDatetime "2011-05-29T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:endsAtDatetime "2011-05-29T00:00:00+00:00"^^xsd:dateTime ;
     ns9:license "http://choosealicense.com/licenses/no-license/" .
 
 <http://ceur-ws.org/Vol-736/#BobiAdolf> a ns1:Person ;
@@ -126,21 +126,21 @@
     ns1:name "David Haglin" .
 
 <http://ceur-ws.org/Vol-736/#DavidiMizell> a ns1:Person ;
-    ns7:place <http://dbpedia.org/resource/United_States> ;
-    ns4:affiliation "Cray Inc., Seattle, WA" ;
+    ns6:place <http://dbpedia.org/resource/United_States> ;
+    ns2:affiliation "Cray Inc., Seattle, WA" ;
     ns3:sameAs <http://ceur-ws.org/persons/DavidiMizell> ;
     ns1:made <http://ceur-ws.org/Vol-736/#paper6> ;
     ns1:name "David Mizell" .
 
 <http://ceur-ws.org/Vol-736/#EriciGoodman> a ns1:Person ;
-    ns7:place <http://dbpedia.org/resource/United_States> ;
-    ns4:affiliation "Sandia National Laboratories, Albuquerque, NM" ;
+    ns6:place <http://dbpedia.org/resource/United_States> ;
+    ns2:affiliation "Sandia National Laboratories, Albuquerque, NM" ;
     ns3:sameAs <http://ceur-ws.org/persons/EriciGoodman> ;
     ns1:made <http://ceur-ws.org/Vol-736/#paper6> ;
     ns1:name "Eric Goodman" .
 
 <http://ceur-ws.org/Vol-736/#JesseiWeaver> a ns1:Person ;
-    ns4:affiliation "" ;
+    ns2:affiliation "" ;
     ns3:sameAs <http://ceur-ws.org/persons/JesseiWeaver> ;
     ns1:made <http://ceur-ws.org/Vol-736/#paper4> ;
     ns1:name "Jesse Weaver" .
@@ -157,65 +157,65 @@
         <http://ceur-ws.org/Vol-736/#paper6> ;
     ns1:name "Sinan al-Saffar" .
 
-<http://ceur-ws.org/Vol-736/#paper4> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-736/> ;
-    ns2:title "Reducing I/O Load in Parallel RDF Systems via Data Compression" ;
-    ns4:author <http://ceur-ws.org/Vol-736/#GregoryiToddiWilliams>,
+<http://ceur-ws.org/Vol-736/#paper4> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-736/> ;
+    ns5:title "Reducing I/O Load in Parallel RDF Systems via Data Compression" ;
+    ns2:author <http://ceur-ws.org/Vol-736/#GregoryiToddiWilliams>,
         <http://ceur-ws.org/Vol-736/#JesseiWeaver> .
 
-<http://ceur-ws.org/Vol-736/#paper2> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-736/> ;
-    ns2:title "Position Paper: Scaling-out the NCBO Resource Index Processing and Maintenance" ;
-    ns4:author <http://ceur-ws.org/Vol-736/#ChunmingiRong>,
+<http://ceur-ws.org/Vol-736/#paper2> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-736/> ;
+    ns5:title "Position Paper: Scaling-out the NCBO Resource Index Processing and Maintenance" ;
+    ns2:author <http://ceur-ws.org/Vol-736/#ChunmingiRong>,
         <http://ceur-ws.org/Vol-736/#NigamiShah>,
         <http://ceur-ws.org/Vol-736/#PaeaiLePendu>,
         <http://ceur-ws.org/Vol-736/#TomasziWiktoriWlodarczyk> .
 
-<http://ceur-ws.org/Vol-736/#paper3> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-736/> ;
-    ns2:title "RDFPath: Path Query Processing on Large RDF Graphs with MapReduce" ;
-    ns4:author <http://ceur-ws.org/Vol-736/#AlexanderiSch%C3%A4tzle>,
+<http://ceur-ws.org/Vol-736/#paper3> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-736/> ;
+    ns5:title "RDFPath: Path Query Processing on Large RDF Graphs with MapReduce" ;
+    ns2:author <http://ceur-ws.org/Vol-736/#AlexanderiSch%C3%A4tzle>,
         <http://ceur-ws.org/Vol-736/#GeorgiLausen>,
         <http://ceur-ws.org/Vol-736/#MartiniPrzyjaciel-Zablocki>,
         <http://ceur-ws.org/Vol-736/#ThomasiHornung> .
 
-<http://ceur-ws.org/Vol-736/> a ns5:Proceedings ;
-    ns5:hasPart <http://ceur-ws.org/Vol-736/#paper1>,
+<http://ceur-ws.org/Vol-736/> a ns4:Proceedings ;
+    ns4:hasPart <http://ceur-ws.org/Vol-736/#paper1>,
         <http://ceur-ws.org/Vol-736/#paper2>,
         <http://ceur-ws.org/Vol-736/#paper3>,
         <http://ceur-ws.org/Vol-736/#paper4>,
         <http://ceur-ws.org/Vol-736/#paper5>,
         <http://ceur-ws.org/Vol-736/#paper6> ;
     ns8:issued "2011-06-17T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:presentedAt <http://ceur-ws.org/Vol-736/#event> ;
-    ns4:editor <http://ceur-ws.org/Vol-736/#DavidiMizell>,
+    ns6:presentedAt <http://ceur-ws.org/Vol-736/#event> ;
+    ns2:editor <http://ceur-ws.org/Vol-736/#DavidiMizell>,
         <http://ceur-ws.org/Vol-736/#EriciGoodman>,
         <http://ceur-ws.org/Vol-736/#JacopoiUrbani>,
         <http://ceur-ws.org/Vol-736/#JesseiWeaver>,
         <http://ceur-ws.org/Vol-736/#SpyrosiKotoulas> .
 
-<http://ceur-ws.org/Vol-736/#paper1> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-736/> ;
-    ns2:title "Report on April, 2011, Workshop on Semantic Graph Database Search Patterns" ;
-    ns4:author <http://ceur-ws.org/Vol-736/#BobiAdolf>,
+<http://ceur-ws.org/Vol-736/#paper1> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-736/> ;
+    ns5:title "Report on April, 2011, Workshop on Semantic Graph Database Search Patterns" ;
+    ns2:author <http://ceur-ws.org/Vol-736/#BobiAdolf>,
         <http://ceur-ws.org/Vol-736/#CliffiJoslyn>,
         <http://ceur-ws.org/Vol-736/#DavidiHaglin>,
         <http://ceur-ws.org/Vol-736/#JohniFeo>,
         <http://ceur-ws.org/Vol-736/#Sinanial-Saffar> .
 
-<http://ceur-ws.org/Vol-736/#paper5> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-736/> ;
-    ns2:title "MPI Realization of High Performance Search for Querying Large RDF Graphs using Statistical Semantics" ;
-    ns4:author <http://ceur-ws.org/Vol-736/#AlexeyiCheptsov>,
+<http://ceur-ws.org/Vol-736/#paper5> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-736/> ;
+    ns5:title "MPI Realization of High Performance Search for Querying Large RDF Graphs using Statistical Semantics" ;
+    ns2:author <http://ceur-ws.org/Vol-736/#AlexeyiCheptsov>,
         <http://ceur-ws.org/Vol-736/#BlasiusiCzink>,
         <http://ceur-ws.org/Vol-736/#DanicaiDamljanovic>,
         <http://ceur-ws.org/Vol-736/#JoseiQuesada>,
         <http://ceur-ws.org/Vol-736/#MatthiasiAssel> .
 
-<http://ceur-ws.org/Vol-736/#paper6> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-736/> ;
-    ns2:title "High Performance Descriptive Semantic Analysis of Semantic Graph Databases" ;
-    ns4:author <http://ceur-ws.org/Vol-736/#BobiAdolf>,
+<http://ceur-ws.org/Vol-736/#paper6> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-736/> ;
+    ns5:title "High Performance Descriptive Semantic Analysis of Semantic Graph Databases" ;
+    ns2:author <http://ceur-ws.org/Vol-736/#BobiAdolf>,
         <http://ceur-ws.org/Vol-736/#CliffiJoslyn>,
         <http://ceur-ws.org/Vol-736/#DavidiHaglin>,
         <http://ceur-ws.org/Vol-736/#DavidiMizell>,

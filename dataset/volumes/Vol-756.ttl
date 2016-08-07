@@ -1,9 +1,9 @@
 @prefix ns1: <http://xmlns.com/foaf/0.1/> .
 @prefix ns2: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns3: <http://purl.org/ontology/bibo/#> .
+@prefix ns3: <http://purl.org/dc/elements/1.1/#> .
 @prefix ns4: <http://www.w3.org/2002/07/owl#> .
 @prefix ns5: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns6: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns6: <http://purl.org/ontology/bibo/#> .
 @prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
 @prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix ns9: <http://purl.org/dc/elements/1.1/> .
@@ -18,7 +18,7 @@
     ns1:name "Alan Said" .
 
 <http://ceur-ws.org/Vol-756/#AlfrediKobsa> a ns1:Person ;
-    ns3:place <http://dbpedia.org/resource/United_States> ;
+    ns6:place <http://dbpedia.org/resource/United_States> ;
     ns2:affiliation "University of California" ;
     ns4:sameAs <http://ceur-ws.org/persons/AlfrediKobsa> ;
     ns1:name "Alfred Kobsa" .
@@ -144,7 +144,7 @@
     ns1:name "Sandra Zilles" .
 
 <http://ceur-ws.org/Vol-756/#SarabjotiSinghiAnand> a ns1:Person ;
-    ns3:place <http://dbpedia.org/resource/United_Kingdom> ;
+    ns6:place <http://dbpedia.org/resource/United_Kingdom> ;
     ns2:affiliation "Department of Computer Science, University of Warwick" ;
     ns4:sameAs <http://ceur-ws.org/persons/SarabjotiSinghiAnand> ;
     ns1:name "Sarabjot Singh Anand" .
@@ -176,23 +176,23 @@
 
 <http://ceur-ws.org/Vol-756/#event> a ns5:WorkshopEvent ;
     ns5:hasLocation <http://dbpedia.org/resource/Spain> ;
-    ns5:hasPart <http://ceur-ws.org/Vol-756/#part-CEUR-WS> ;
+    ns5:hasPart <http://ceur-ws.org/Vol-756/#part-ITWP> ;
     ns5:isSubEventOf <http://ceur-ws.org/Vol-756/#conf> ;
-    ns7:beginsAtDatetime "2011-07-24T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:endsAtDatetime "2011-07-24T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:beginsAtDatetime "2011-07-16T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:endsAtDatetime "2011-07-16T00:00:00+00:00"^^xsd:dateTime ;
     ns9:license "http://choosealicense.com/licenses/no-license/" ;
     rdfs:seeAlso <http://ceur-ws.org/Vol-528/#event>,
         <http://ceur-ws.org/Vol-606/#event> .
 
 <http://ceur-ws.org/Vol-756/#BamshadiMobasher> a ns1:Person ;
-    ns3:place <http://dbpedia.org/resource/United_States> ;
+    ns6:place <http://dbpedia.org/resource/United_States> ;
     ns2:affiliation "School of Computing, DePaul University" ;
     ns4:sameAs <http://ceur-ws.org/persons/BamshadiMobasher> ;
     ns1:made <http://ceur-ws.org/Vol-756/#paper04> ;
     ns1:name "Bamshad Mobasher" .
 
 <http://ceur-ws.org/Vol-756/#DietmariJannach> a ns1:Person ;
-    ns3:place <http://dbpedia.org/resource/Germany> ;
+    ns6:place <http://dbpedia.org/resource/Germany> ;
     ns2:affiliation "Department of Computer Science, TU Dortmund" ;
     ns4:sameAs <http://ceur-ws.org/persons/DietmariJannach> ;
     ns1:made <http://ceur-ws.org/Vol-756/#paper09> ;
@@ -200,40 +200,40 @@
 
 <http://ceur-ws.org/Vol-756/#paper01> a ns5:Paper ;
     ns5:partOf <http://ceur-ws.org/Vol-756/> ;
-    ns6:title "Measuring Semantic Similarity using a Multi-Tree Model" ;
+    ns3:title "Measuring Semantic Similarity using a Multi-Tree Model" ;
     ns2:author <http://ceur-ws.org/Vol-756/#BehnamiHajian>,
         <http://ceur-ws.org/Vol-756/#TonyiWhite> .
 
 <http://ceur-ws.org/Vol-756/#paper08> a ns5:Paper ;
     ns5:partOf <http://ceur-ws.org/Vol-756/> ;
-    ns6:title "IntWEB: An AI-Based Approach for Adaptive Web" ;
+    ns3:title "IntWEB: An AI-Based Approach for Adaptive Web" ;
     ns2:author <http://ceur-ws.org/Vol-756/#OznuriKirmemisiAlkan>,
         <http://ceur-ws.org/Vol-756/#PinariSenkul> .
 
 <http://ceur-ws.org/Vol-756/#paper03> a ns5:Paper ;
     ns5:partOf <http://ceur-ws.org/Vol-756/> ;
-    ns6:title "A Topology-Based Approach for Followees Recommendation in Twitter" ;
+    ns3:title "A Topology-Based Approach for Followees Recommendation in Twitter" ;
     ns2:author <http://ceur-ws.org/Vol-756/#Anal%C3%ADaiA.iAmandi>,
         <http://ceur-ws.org/Vol-756/#DanielaiL.iGodoy>,
         <http://ceur-ws.org/Vol-756/#MarceloiG.iArmentano> .
 
 <http://ceur-ws.org/Vol-756/#paper06> a ns5:Paper ;
     ns5:partOf <http://ceur-ws.org/Vol-756/> ;
-    ns6:title "Using Social and Pseudo Social Networks for Improved Recommendation Quality" ;
+    ns3:title "Using Social and Pseudo Social Networks for Improved Recommendation Quality" ;
     ns2:author <http://ceur-ws.org/Vol-756/#AlaniSaid>,
         <http://ceur-ws.org/Vol-756/#ErnestoiW.iDeiLuca>,
         <http://ceur-ws.org/Vol-756/#SahiniAlbayrak> .
 
 <http://ceur-ws.org/Vol-756/#paper09> a ns5:Paper ;
     ns5:partOf <http://ceur-ws.org/Vol-756/> ;
-    ns6:title "Placing High-Diversity Items in Top-N Recommendation Lists" ;
+    ns3:title "Placing High-Diversity Items in Top-N Recommendation Lists" ;
     ns2:author <http://ceur-ws.org/Vol-756/#DietmariJannach>,
         <http://ceur-ws.org/Vol-756/#FatihiGedikli>,
         <http://ceur-ws.org/Vol-756/#MouzhiiGe> .
 
 <http://ceur-ws.org/Vol-756/#paper04> a ns5:Paper ;
     ns5:partOf <http://ceur-ws.org/Vol-756/> ;
-    ns6:title "Context-Aware Recommendation Based On Review Mining" ;
+    ns3:title "Context-Aware Recommendation Based On Review Mining" ;
     ns2:author <http://ceur-ws.org/Vol-756/#BamshadiMobasher>,
         <http://ceur-ws.org/Vol-756/#NegariHariri>,
         <http://ceur-ws.org/Vol-756/#RobiniBurke>,
@@ -241,7 +241,7 @@
 
 <http://ceur-ws.org/Vol-756/#paper05> a ns5:Paper ;
     ns5:partOf <http://ceur-ws.org/Vol-756/> ;
-    ns6:title "A Bayesian Concept Learning Approach to Crowdsourcing" ;
+    ns3:title "A Bayesian Concept Learning Approach to Crowdsourcing" ;
     ns2:author <http://ceur-ws.org/Vol-756/#CraigiBoutilier>,
         <http://ceur-ws.org/Vol-756/#HowardiJ.iHamilton>,
         <http://ceur-ws.org/Vol-756/#PaoloiViappiani>,
@@ -249,7 +249,7 @@
 
 <http://ceur-ws.org/Vol-756/#paper07> a ns5:Paper ;
     ns5:partOf <http://ceur-ws.org/Vol-756/> ;
-    ns6:title "Modelling and Predicting Movements of Museum Visitors: A Simulation Framework for Assessing the Impact of Sensor Noise on Model Performance" ;
+    ns3:title "Modelling and Predicting Movements of Museum Visitors: A Simulation Framework for Assessing the Impact of Sensor Noise on Model Performance" ;
     ns2:author <http://ceur-ws.org/Vol-756/#DavidiW.iAlbrecht>,
         <http://ceur-ws.org/Vol-756/#FabianiBohnert>,
         <http://ceur-ws.org/Vol-756/#IngridiZukerman>,
@@ -257,7 +257,7 @@
 
 <http://ceur-ws.org/Vol-756/#paper02> a ns5:Paper ;
     ns5:partOf <http://ceur-ws.org/Vol-756/> ;
-    ns6:title "Keyword-Based TV Program Recommendation" ;
+    ns3:title "Keyword-Based TV Program Recommendation" ;
     ns2:author <http://ceur-ws.org/Vol-756/#ChrisiNewell>,
         <http://ceur-ws.org/Vol-756/#ChristianiWartena>,
         <http://ceur-ws.org/Vol-756/#ChristophiFreudenthaler>,
@@ -277,7 +277,7 @@
         <http://ceur-ws.org/Vol-756/#paper08>,
         <http://ceur-ws.org/Vol-756/#paper09> ;
     ns8:issued "2011-07-24T00:00:00+00:00"^^xsd:dateTime ;
-    ns3:presentedAt <http://ceur-ws.org/Vol-756/#event> ;
+    ns6:presentedAt <http://ceur-ws.org/Vol-756/#event> ;
     ns2:editor <http://ceur-ws.org/Vol-756/#AlfrediKobsa>,
         <http://ceur-ws.org/Vol-756/#BamshadiMobasher>,
         <http://ceur-ws.org/Vol-756/#DietmariJannach>,

@@ -1,45 +1,181 @@
-@prefix ns1: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns1: <http://purl.org/dc/elements/1.1/#> .
 @prefix ns2: <http://www.w3.org/2002/07/owl#> .
-@prefix ns3: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns4: <http://xmlns.com/foaf/0.1/> .
-@prefix ns5: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns6: <http://purl.org/dc/elements/1.1/> .
+@prefix ns3: <http://purl.org/ontology/bibo/#> .
+@prefix ns4: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns5: <http://xmlns.com/foaf/0.1/> .
+@prefix ns6: <http://data.semanticweb.org/ns/swc/ontology/#> .
 @prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns8: <http://purl.org/ontology/bibo/#> .
+@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns9: <http://purl.org/dc/elements/1.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1250/> a ns1:Proceedings ;
-    ns5:issued "2014-09-20T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:presentedAt <http://ceur-ws.org/Vol-1250/#event> ;
-    ns3:editor <http://ceur-ws.org/Vol-1250/#FlorianiNoyrit>,
-        <http://ceur-ws.org/Vol-1250/#IuliaiDragomir>,
-        <http://ceur-ws.org/Vol-1250/#SusanneiGraf> .
+<http://ceur-ws.org/Vol-1250/#BettinaiH%C3%BCnnemeyer> a ns5:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/BettinaiH%C3%BCnnemeyer> ;
+    ns5:made <http://ceur-ws.org/Vol-1250/#paper6> ;
+    ns5:name "Bettina Hünnemeyer" .
 
-<http://ceur-ws.org/Vol-1250/#FlorianiNoyrit> a ns4:Person ;
+<http://ceur-ws.org/Vol-1250/#FlorianiNoyrit> a ns5:Person ;
+    ns4:affiliation "" ;
     ns2:sameAs <http://ceur-ws.org/persons/FlorianiNoyrit> ;
-    ns4:name "Florian Noyrit" .
+    ns5:name "Florian Noyrit" .
 
-<http://ceur-ws.org/Vol-1250/#IuliaiDragomir> a ns4:Person ;
+<http://ceur-ws.org/Vol-1250/#HassnaiLouadah> a ns5:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/HassnaiLouadah> ;
+    ns5:made <http://ceur-ws.org/Vol-1250/#paper4> ;
+    ns5:name "Hassna Louadah" .
+
+<http://ceur-ws.org/Vol-1250/#IuliaiDragomir> a ns5:Person ;
+    ns4:affiliation "" ;
     ns2:sameAs <http://ceur-ws.org/persons/IuliaiDragomir> ;
-    ns4:name "Iulia Dragomir" .
+    ns5:name "Iulia Dragomir" .
 
-<http://ceur-ws.org/Vol-1250/#SusanneiGraf> a ns4:Person ;
+<http://ceur-ws.org/Vol-1250/#JacquesiFlorence> a ns5:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/JacquesiFlorence> ;
+    ns5:made <http://ceur-ws.org/Vol-1250/#paper2> ;
+    ns5:name "Jacques Florence" .
+
+<http://ceur-ws.org/Vol-1250/#JulieniDeAntoni> a ns5:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/JulieniDeAntoni> ;
+    ns5:made <http://ceur-ws.org/Vol-1250/#pape1> ;
+    ns5:name "Julien DeAntoni" .
+
+<http://ceur-ws.org/Vol-1250/#LucaiBerardinelli> a ns5:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/LucaiBerardinelli> ;
+    ns5:made <http://ceur-ws.org/Vol-1250/#paper5> ;
+    ns5:name "Luca Berardinelli" .
+
+<http://ceur-ws.org/Vol-1250/#MarilyniWolf> a ns5:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/MarilyniWolf> ;
+    ns5:made <http://ceur-ws.org/Vol-1250/#paper2> ;
+    ns5:name "Marilyn Wolf" .
+
+<http://ceur-ws.org/Vol-1250/#MarkusiOertel> a ns5:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/MarkusiOertel> ;
+    ns5:made <http://ceur-ws.org/Vol-1250/#paper3> ;
+    ns5:name "Markus Oertel" .
+
+<http://ceur-ws.org/Vol-1250/#MichaeliSchulze> a ns5:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/MichaeliSchulze> ;
+    ns5:made <http://ceur-ws.org/Vol-1250/#paper3> ;
+    ns5:name "Michael Schulze" .
+
+<http://ceur-ws.org/Vol-1250/#MuhammadiUmeriTariq> a ns5:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/MuhammadiUmeriTariq> ;
+    ns5:made <http://ceur-ws.org/Vol-1250/#paper2> ;
+    ns5:name "Muhammad Umer Tariq" .
+
+<http://ceur-ws.org/Vol-1250/#PaulaiHerber> a ns5:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/PaulaiHerber> ;
+    ns5:made <http://ceur-ws.org/Vol-1250/#paper6> ;
+    ns5:name "Paula Herber" .
+
+<http://ceur-ws.org/Vol-1250/#RogeriChampagne> a ns5:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/RogeriChampagne> ;
+    ns5:made <http://ceur-ws.org/Vol-1250/#paper4> ;
+    ns5:name "Roger Champagne" .
+
+<http://ceur-ws.org/Vol-1250/#SusanneiGraf> a ns5:Person ;
+    ns4:affiliation "" ;
     ns2:sameAs <http://ceur-ws.org/persons/SusanneiGraf> ;
-    ns4:name "Susanne Graf" .
+    ns5:name "Susanne Graf" .
 
-<http://ceur-ws.org/Vol-1250/#event> a ns1:WorkshopEvent ;
-    ns1:hasLocation <http://dbpedia.org/resource/Spain> ;
-    ns1:hasPart <http://ceur-ws.org/Vol-1250/#part-ws> ;
-    ns1:isSubEventOf <http://ceur-ws.org/Vol-1250/#conf> ;
+<http://ceur-ws.org/Vol-1250/#ThomasiPeikenkamp> a ns5:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/ThomasiPeikenkamp> ;
+    ns5:made <http://ceur-ws.org/Vol-1250/#paper3> ;
+    ns5:name "Thomas Peikenkamp" .
+
+<http://ceur-ws.org/Vol-1250/#VittorioiCortellessa> a ns5:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/VittorioiCortellessa> ;
+    ns5:made <http://ceur-ws.org/Vol-1250/#paper5> ;
+    ns5:name "Vittorio Cortellessa" .
+
+<http://ceur-ws.org/Vol-1250/#YvaniLabiche> a ns5:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/YvaniLabiche> ;
+    ns5:made <http://ceur-ws.org/Vol-1250/#paper4> ;
+    ns5:name "Yvan Labiche" .
+
+<http://ceur-ws.org/Vol-1250/#event> a ns6:WorkshopEvent ;
+    ns6:hasLocation <http://dbpedia.org/resource/Spain> ;
+    ns6:hasPart <http://ceur-ws.org/Vol-1250/#part-ACES-MB> ;
+    ns6:isSubEventOf <http://ceur-ws.org/Vol-1250/#conf> ;
     ns7:beginsAtDatetime "2014-09-30T00:00:00+00:00"^^xsd:dateTime ;
     ns7:endsAtDatetime "2014-09-30T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:license "http://choosealicense.com/licenses/no-license/" ;
+    ns9:license "http://choosealicense.com/licenses/no-license/" ;
     rdfs:seeAlso <http://ceur-ws.org/Vol-1084/#event>,
         <http://ceur-ws.org/Vol-503/#event>,
         <http://ceur-ws.org/Vol-507/#event>,
         <http://ceur-ws.org/Vol-644/#event>,
         <http://ceur-ws.org/Vol-795/#event> .
+
+<http://ceur-ws.org/Vol-1250/#pape1> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1250/> ;
+    ns1:title "Towards Formal Model Driven Engineering" ;
+    ns3:endPage 5 ;
+    ns3:numPages 1 ;
+    ns3:startPage 5 ;
+    ns4:author <http://ceur-ws.org/Vol-1250/#JulieniDeAntoni> .
+
+<http://ceur-ws.org/Vol-1250/#paper5> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1250/> ;
+    ns1:title "fUML-Driven Performance Analysis through the MOSES Model Library" ;
+    ns3:endPage 43 ;
+    ns3:numPages 10 ;
+    ns3:startPage 34 ;
+    ns4:author <http://ceur-ws.org/Vol-1250/#LucaiBerardinelli>,
+        <http://ceur-ws.org/Vol-1250/#VittorioiCortellessa> .
+
+<http://ceur-ws.org/Vol-1250/#paper6> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1250/> ;
+    ns1:title "Formal Verification of SystemC Designs using the BLAST Software Model Checker" ;
+    ns3:endPage 53 ;
+    ns3:numPages 10 ;
+    ns3:startPage 44 ;
+    ns4:author <http://ceur-ws.org/Vol-1250/#BettinaiH%C3%BCnnemeyer>,
+        <http://ceur-ws.org/Vol-1250/#PaulaiHerber> .
+
+<http://ceur-ws.org/Vol-1250/#paper2> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1250/> ;
+    ns1:title "Design Specification of Cyber-Physical Systems: Towards a Domain-Specific Modeling Language based on Simulink, Eclipse Modeling Framework, and Giotto" ;
+    ns3:endPage 15 ;
+    ns3:numPages 10 ;
+    ns3:startPage 6 ;
+    ns4:author <http://ceur-ws.org/Vol-1250/#JacquesiFlorence>,
+        <http://ceur-ws.org/Vol-1250/#MarilyniWolf>,
+        <http://ceur-ws.org/Vol-1250/#MuhammadiUmeriTariq> .
+
+<http://ceur-ws.org/Vol-1250/#paper3> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1250/> ;
+    ns1:title "Reusing a Functional Safety Concept in Variable System Architectures" ;
+    ns3:endPage 25 ;
+    ns3:numPages 10 ;
+    ns3:startPage 16 ;
+    ns4:author <http://ceur-ws.org/Vol-1250/#MarkusiOertel>,
+        <http://ceur-ws.org/Vol-1250/#MichaeliSchulze>,
+        <http://ceur-ws.org/Vol-1250/#ThomasiPeikenkamp> .
+
+<http://ceur-ws.org/Vol-1250/#paper4> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1250/> ;
+    ns1:title "Towards Automating Interface Control Documents Elaboration and Management" ;
+    ns3:endPage 33 ;
+    ns3:numPages 8 ;
+    ns3:startPage 26 ;
+    ns4:author <http://ceur-ws.org/Vol-1250/#HassnaiLouadah>,
+        <http://ceur-ws.org/Vol-1250/#RogeriChampagne>,
+        <http://ceur-ws.org/Vol-1250/#YvaniLabiche> .
+
+<http://ceur-ws.org/Vol-1250/> a ns6:Proceedings ;
+    ns6:hasPart <http://ceur-ws.org/Vol-1250/#pape1>,
+        <http://ceur-ws.org/Vol-1250/#paper2>,
+        <http://ceur-ws.org/Vol-1250/#paper3>,
+        <http://ceur-ws.org/Vol-1250/#paper4>,
+        <http://ceur-ws.org/Vol-1250/#paper5>,
+        <http://ceur-ws.org/Vol-1250/#paper6> ;
+    ns8:issued "2014-09-20T00:00:00+00:00"^^xsd:dateTime ;
+    ns3:presentedAt <http://ceur-ws.org/Vol-1250/#event> ;
+    ns4:editor <http://ceur-ws.org/Vol-1250/#FlorianiNoyrit>,
+        <http://ceur-ws.org/Vol-1250/#IuliaiDragomir>,
+        <http://ceur-ws.org/Vol-1250/#SusanneiGraf> .
 

@@ -1,50 +1,271 @@
-@prefix ns1: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns2: <http://www.w3.org/2002/07/owl#> .
+@prefix ns1: <http://purl.org/ontology/bibo/#> .
+@prefix ns2: <http://data.semanticweb.org/ns/swc/ontology/#> .
 @prefix ns3: <http://xmlns.com/foaf/0.1/> .
-@prefix ns4: <http://purl.org/ontology/bibo/#> .
+@prefix ns4: <http://purl.org/dc/elements/1.1/#> .
 @prefix ns5: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns6: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns8: <http://purl.org/dc/elements/1.1/> .
+@prefix ns6: <http://purl.org/dc/elements/1.1/> .
+@prefix ns7: <http://www.w3.org/2002/07/owl#> .
+@prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns9: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1276/> a ns1:Proceedings ;
-    ns6:issued "2014-10-31T00:00:00+00:00"^^xsd:dateTime ;
-    ns4:presentedAt <http://ceur-ws.org/Vol-1276/#event> ;
-    ns5:editor <http://ceur-ws.org/Vol-1276/#GarethiJ.iF.iJones>,
+<http://ceur-ws.org/Vol-1276/#DimitriosiMarkonis> a ns3:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/DimitriosiMarkonis> ;
+    ns3:made <http://ceur-ws.org/Vol-1276/#MedIR-SIGIR2014-05> ;
+    ns3:name "Dimitrios Markonis" .
+
+<http://ceur-ws.org/Vol-1276/#JoniPearce> a ns3:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/JoniPearce> ;
+    ns3:made <http://ceur-ws.org/Vol-1276/#MedIR-SIGIR2014-01> ;
+    ns3:name "Jon Pearce" .
+
+<http://ceur-ws.org/Vol-1276/#KerstiniDenecke> a ns3:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/KerstiniDenecke> ;
+    ns3:made <http://ceur-ws.org/Vol-1276/#MedIR-SIGIR2014-03> ;
+    ns3:name "Kerstin Denecke" .
+
+<http://ceur-ws.org/Vol-1276/#LiqiangiNie> a ns3:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/LiqiangiNie> ;
+    ns3:made <http://ceur-ws.org/Vol-1276/#MedIR-SIGIR2014-06> ;
+    ns3:name "Liqiang Nie" .
+
+<http://ceur-ws.org/Vol-1276/#MatthaeusiStoehr> a ns3:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/MatthaeusiStoehr> ;
+    ns3:made <http://ceur-ws.org/Vol-1276/#MedIR-SIGIR2014-03> ;
+    ns3:name "Matthaeus Stoehr" .
+
+<http://ceur-ws.org/Vol-1276/#MijiiChoi> a ns3:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/MijiiChoi> ;
+    ns3:made <http://ceur-ws.org/Vol-1276/#MedIR-SIGIR2014-02> ;
+    ns3:name "Miji Choi" .
+
+<http://ceur-ws.org/Vol-1276/#MohammadiAkbari> a ns3:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/MohammadiAkbari> ;
+    ns3:made <http://ceur-ws.org/Vol-1276/#MedIR-SIGIR2014-06> ;
+    ns3:name "Mohammad Akbari" .
+
+<http://ceur-ws.org/Vol-1276/#PatrickiCheong-IaoiPang> a ns3:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/PatrickiCheong-IaoiPang> ;
+    ns3:made <http://ceur-ws.org/Vol-1276/#MedIR-SIGIR2014-01> ;
+    ns3:name "Patrick Cheong-Iao Pang" .
+
+<http://ceur-ws.org/Vol-1276/#PhilipiO%27Reilly> a ns3:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/PhilipiO%27Reilly> ;
+    ns3:made <http://ceur-ws.org/Vol-1276/#MedIR-SIGIR2014-07> ;
+    ns3:name "Philip O'Reilly" .
+
+<http://ceur-ws.org/Vol-1276/#RajendraiPrasath> a ns3:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/RajendraiPrasath> ;
+    ns3:made <http://ceur-ws.org/Vol-1276/#MedIR-SIGIR2014-07> ;
+    ns3:name "Rajendra Prasath" .
+
+<http://ceur-ws.org/Vol-1276/#RogeriSchaer> a ns3:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/RogeriSchaer> ;
+    ns3:made <http://ceur-ws.org/Vol-1276/#MedIR-SIGIR2014-05> ;
+    ns3:name "Roger Schaer" .
+
+<http://ceur-ws.org/Vol-1276/#ShantoniChang> a ns3:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/ShantoniChang> ;
+    ns3:made <http://ceur-ws.org/Vol-1276/#MedIR-SIGIR2014-01> ;
+    ns3:name "Shanton Chang" .
+
+<http://ceur-ws.org/Vol-1276/#TaoiLi> a ns3:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/TaoiLi> ;
+    ns3:made <http://ceur-ws.org/Vol-1276/#MedIR-SIGIR2014-06> ;
+    ns3:name "Tao Li" .
+
+<http://ceur-ws.org/Vol-1276/#Tat-SengiChua> a ns3:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/Tat-SengiChua> ;
+    ns3:made <http://ceur-ws.org/Vol-1276/#MedIR-SIGIR2014-06> ;
+    ns3:name "Tat-Seng Chua" .
+
+<http://ceur-ws.org/Vol-1276/#YihaniDeng> a ns3:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/YihaniDeng> ;
+    ns3:made <http://ceur-ws.org/Vol-1276/#MedIR-SIGIR2014-03> ;
+    ns3:name "Yihan Deng" .
+
+<http://ceur-ws.org/Vol-1276/#event> a ns2:WorkshopEvent ;
+    ns2:hasLocation <http://dbpedia.org/resource/Australia> ;
+    ns2:hasPart <http://ceur-ws.org/Vol-1276/#part-MedIR> ;
+    ns2:isSubEventOf <http://ceur-ws.org/Vol-1276/#conf> ;
+    ns8:beginsAtDatetime "2014-07-11T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:endsAtDatetime "2014-07-11T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:license "http://choosealicense.com/licenses/no-license/" .
+
+<http://ceur-ws.org/Vol-1276/#BevaniKoopman> a ns3:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/BevaniKoopman> ;
+    ns3:made <http://ceur-ws.org/Vol-1276/#MedIR-SIGIR2014-04>,
+        <http://ceur-ws.org/Vol-1276/#MedIR-SIGIR2014-08> ;
+    ns3:name "Bevan Koopman" .
+
+<http://ceur-ws.org/Vol-1276/#GarethiJ.F.iJones> a ns3:Person ;
+    ns1:place <http://dbpedia.org/resource/Republic_of_Ireland> ;
+    ns5:affiliation "Dublin City University" ;
+    ns7:sameAs <http://ceur-ws.org/persons/GarethiJ.F.iJones> ;
+    ns3:made <http://ceur-ws.org/Vol-1276/#MedIR-SIGIR2014-overview> ;
+    ns3:name "Gareth J.F. Jones" .
+
+<http://ceur-ws.org/Vol-1276/#GuidoiZuccon> a ns3:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/GuidoiZuccon> ;
+    ns3:made <http://ceur-ws.org/Vol-1276/#MedIR-SIGIR2014-04>,
+        <http://ceur-ws.org/Vol-1276/#MedIR-SIGIR2014-08> ;
+    ns3:name "Guido Zuccon" .
+
+<http://ceur-ws.org/Vol-1276/#LiadhiKelly> a ns3:Person ;
+    ns1:place <http://dbpedia.org/resource/Republic_of_Ireland> ;
+    ns5:affiliation "Dublin City University" ;
+    ns7:sameAs <http://ceur-ws.org/persons/LiadhiKelly> ;
+    ns3:made <http://ceur-ws.org/Vol-1276/#MedIR-SIGIR2014-overview> ;
+    ns3:name "Liadh Kelly" .
+
+<http://ceur-ws.org/Vol-1276/#LorraineiGoeuriot> a ns3:Person ;
+    ns1:place <http://dbpedia.org/resource/Republic_of_Ireland> ;
+    ns5:affiliation "Dublin City University" ;
+    ns7:sameAs <http://ceur-ws.org/persons/LorraineiGoeuriot> ;
+    ns3:made <http://ceur-ws.org/Vol-1276/#MedIR-SIGIR2014-overview> ;
+    ns3:name "Lorraine Goeuriot" .
+
+<http://ceur-ws.org/Vol-1276/#MedIR-SIGIR2014-keynote> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1276/> ;
+    ns4:title "Practice-based Evidence in Medicine: Where Information Retrieval Meets Data Mining" ;
+    ns1:endPage 4 ;
+    ns1:numPages 1 ;
+    ns1:startPage 4 ;
+    ns5:author <http://ceur-ws.org/Vol-1276/#KariniVerspoor> .
+
+<http://ceur-ws.org/Vol-1276/#HenningiM%C3%BCller> a ns3:Person ;
+    ns1:place <http://dbpedia.org/resource/Switzerland> ;
+    ns5:affiliation "University of Applied Sciences and Arts Western Switzerland" ;
+    ns7:sameAs <http://ceur-ws.org/persons/HenningiM%C3%BCller> ;
+    ns3:made <http://ceur-ws.org/Vol-1276/#MedIR-SIGIR2014-05>,
+        <http://ceur-ws.org/Vol-1276/#MedIR-SIGIR2014-overview> ;
+    ns3:name "Henning Müller" .
+
+<http://ceur-ws.org/Vol-1276/#JustiniZobel> a ns3:Person ;
+    ns1:place <http://dbpedia.org/resource/Australia> ;
+    ns5:affiliation "University of Melbourne" ;
+    ns7:sameAs <http://ceur-ws.org/persons/JustiniZobel> ;
+    ns3:made <http://ceur-ws.org/Vol-1276/#MedIR-SIGIR2014-02>,
+        <http://ceur-ws.org/Vol-1276/#MedIR-SIGIR2014-overview> ;
+    ns3:name "Justin Zobel" .
+
+<http://ceur-ws.org/Vol-1276/#KariniVerspoor> a ns3:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/KariniVerspoor> ;
+    ns3:made <http://ceur-ws.org/Vol-1276/#MedIR-SIGIR2014-01>,
+        <http://ceur-ws.org/Vol-1276/#MedIR-SIGIR2014-02>,
+        <http://ceur-ws.org/Vol-1276/#MedIR-SIGIR2014-keynote> ;
+    ns3:name "Karin Verspoor" .
+
+<http://ceur-ws.org/Vol-1276/#MedIR-SIGIR2014-04> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1276/> ;
+    ns4:title "Why Assessing Relevance in Medical IR is Demanding" ;
+    ns1:endPage 19 ;
+    ns1:numPages 4 ;
+    ns1:startPage 16 ;
+    ns5:author <http://ceur-ws.org/Vol-1276/#BevaniKoopman>,
+        <http://ceur-ws.org/Vol-1276/#GuidoiZuccon> .
+
+<http://ceur-ws.org/Vol-1276/#MedIR-SIGIR2014-07> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1276/> ;
+    ns4:title "Exploring Clustering Based Knowledge Discovery towards Improved Medical Diagnosis" ;
+    ns1:endPage 31 ;
+    ns1:numPages 4 ;
+    ns1:startPage 28 ;
+    ns5:author <http://ceur-ws.org/Vol-1276/#PhilipiO%27Reilly>,
+        <http://ceur-ws.org/Vol-1276/#RajendraiPrasath> .
+
+<http://ceur-ws.org/Vol-1276/#MedIR-SIGIR2014-08> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1276/> ;
+    ns4:title "Integrating Understandability in the Evaluation of Consumer Health Search Engines" ;
+    ns1:endPage 35 ;
+    ns1:numPages 4 ;
+    ns1:startPage 32 ;
+    ns5:author <http://ceur-ws.org/Vol-1276/#BevaniKoopman>,
+        <http://ceur-ws.org/Vol-1276/#GuidoiZuccon> .
+
+<http://ceur-ws.org/Vol-1276/#MedIR-SIGIR2014-02> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1276/> ;
+    ns4:title "Evaluation of Coreference Resolution for Biomedical Text" ;
+    ns1:endPage 11 ;
+    ns1:numPages 3 ;
+    ns1:startPage 9 ;
+    ns5:author <http://ceur-ws.org/Vol-1276/#JustiniZobel>,
+        <http://ceur-ws.org/Vol-1276/#KariniVerspoor>,
+        <http://ceur-ws.org/Vol-1276/#MijiiChoi> .
+
+<http://ceur-ws.org/Vol-1276/#MedIR-SIGIR2014-03> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1276/> ;
+    ns4:title "Retrieving Attitudes: Sentiment Analysis from Clinical Narratives" ;
+    ns1:endPage 15 ;
+    ns1:numPages 4 ;
+    ns1:startPage 12 ;
+    ns5:author <http://ceur-ws.org/Vol-1276/#KerstiniDenecke>,
+        <http://ceur-ws.org/Vol-1276/#MatthaeusiStoehr>,
+        <http://ceur-ws.org/Vol-1276/#YihaniDeng> .
+
+<http://ceur-ws.org/Vol-1276/#MedIR-SIGIR2014-05> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1276/> ;
+    ns4:title "Multi-modal Relevance Feedback for Medical Image Retrieval" ;
+    ns1:endPage 23 ;
+    ns1:numPages 4 ;
+    ns1:startPage 20 ;
+    ns5:author <http://ceur-ws.org/Vol-1276/#DimitriosiMarkonis>,
+        <http://ceur-ws.org/Vol-1276/#HenningiM%C3%BCller>,
+        <http://ceur-ws.org/Vol-1276/#RogeriSchaer> .
+
+<http://ceur-ws.org/Vol-1276/#MedIR-SIGIR2014-01> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1276/> ;
+    ns4:title "Designing for Health Exploratory Seeking Behaviour" ;
+    ns1:endPage 8 ;
+    ns1:numPages 4 ;
+    ns1:startPage 5 ;
+    ns5:author <http://ceur-ws.org/Vol-1276/#JoniPearce>,
+        <http://ceur-ws.org/Vol-1276/#KariniVerspoor>,
+        <http://ceur-ws.org/Vol-1276/#PatrickiCheong-IaoiPang>,
+        <http://ceur-ws.org/Vol-1276/#ShantoniChang> .
+
+<http://ceur-ws.org/Vol-1276/#MedIR-SIGIR2014-06> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1276/> ;
+    ns4:title "A Joint Local-Global Approach for Medical Terminology Assignment" ;
+    ns1:endPage 27 ;
+    ns1:numPages 4 ;
+    ns1:startPage 24 ;
+    ns5:author <http://ceur-ws.org/Vol-1276/#LiqiangiNie>,
+        <http://ceur-ws.org/Vol-1276/#MohammadiAkbari>,
+        <http://ceur-ws.org/Vol-1276/#TaoiLi>,
+        <http://ceur-ws.org/Vol-1276/#Tat-SengiChua> .
+
+<http://ceur-ws.org/Vol-1276/#MedIR-SIGIR2014-overview> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1276/> ;
+    ns4:title "Report on the SIGIR 2014 Workshop on Medical Information Retrieval (MedIR)" ;
+    ns1:endPage 3 ;
+    ns1:numPages 3 ;
+    ns1:startPage 1 ;
+    ns5:author <http://ceur-ws.org/Vol-1276/#GarethiJ.F.iJones>,
         <http://ceur-ws.org/Vol-1276/#HenningiM%C3%BCller>,
         <http://ceur-ws.org/Vol-1276/#JustiniZobel>,
         <http://ceur-ws.org/Vol-1276/#LiadhiKelly>,
         <http://ceur-ws.org/Vol-1276/#LorraineiGoeuriot> .
 
-<http://ceur-ws.org/Vol-1276/#GarethiJ.iF.iJones> a ns3:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/GarethiJ.iF.iJones> ;
-    ns3:name "Gareth J. F. Jones" .
-
-<http://ceur-ws.org/Vol-1276/#HenningiM%C3%BCller> a ns3:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/HenningiM%C3%BCller> ;
-    ns3:name "Henning Müller" .
-
-<http://ceur-ws.org/Vol-1276/#JustiniZobel> a ns3:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/JustiniZobel> ;
-    ns3:name "Justin Zobel" .
-
-<http://ceur-ws.org/Vol-1276/#LiadhiKelly> a ns3:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/LiadhiKelly> ;
-    ns3:name "Liadh Kelly" .
-
-<http://ceur-ws.org/Vol-1276/#LorraineiGoeuriot> a ns3:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/LorraineiGoeuriot> ;
-    ns3:name "Lorraine Goeuriot" .
-
-<http://ceur-ws.org/Vol-1276/#event> a ns1:WorkshopEvent ;
-    ns1:hasLocation <http://dbpedia.org/resource/Australia> ;
-    ns1:hasPart <http://ceur-ws.org/Vol-1276/#part-ws> ;
-    ns1:isSubEventOf <http://ceur-ws.org/Vol-1276/#conf> ;
-    ns7:beginsAtDatetime "2014-07-11T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:endsAtDatetime "2014-07-11T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:license "http://choosealicense.com/licenses/no-license/" .
+<http://ceur-ws.org/Vol-1276/> a ns2:Proceedings ;
+    ns2:hasPart <http://ceur-ws.org/Vol-1276/#MedIR-SIGIR2014-01>,
+        <http://ceur-ws.org/Vol-1276/#MedIR-SIGIR2014-02>,
+        <http://ceur-ws.org/Vol-1276/#MedIR-SIGIR2014-03>,
+        <http://ceur-ws.org/Vol-1276/#MedIR-SIGIR2014-04>,
+        <http://ceur-ws.org/Vol-1276/#MedIR-SIGIR2014-05>,
+        <http://ceur-ws.org/Vol-1276/#MedIR-SIGIR2014-06>,
+        <http://ceur-ws.org/Vol-1276/#MedIR-SIGIR2014-07>,
+        <http://ceur-ws.org/Vol-1276/#MedIR-SIGIR2014-08>,
+        <http://ceur-ws.org/Vol-1276/#MedIR-SIGIR2014-keynote>,
+        <http://ceur-ws.org/Vol-1276/#MedIR-SIGIR2014-overview> ;
+    ns9:issued "2014-10-31T00:00:00+00:00"^^xsd:dateTime ;
+    ns1:presentedAt <http://ceur-ws.org/Vol-1276/#event> ;
+    ns5:editor <http://ceur-ws.org/Vol-1276/#GarethiJ.F.iJones>,
+        <http://ceur-ws.org/Vol-1276/#HenningiM%C3%BCller>,
+        <http://ceur-ws.org/Vol-1276/#JustiniZobel>,
+        <http://ceur-ws.org/Vol-1276/#LiadhiKelly>,
+        <http://ceur-ws.org/Vol-1276/#LorraineiGoeuriot> .
 

@@ -1,47 +1,244 @@
-@prefix ns1: <http://xmlns.com/foaf/0.1/> .
-@prefix ns2: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns3: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns4: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns5: <http://www.w3.org/2002/07/owl#> .
-@prefix ns6: <http://purl.org/ontology/bibo/#> .
-@prefix ns7: <http://purl.org/dc/elements/1.1/> .
-@prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns1: <http://purl.org/ontology/bibo/#> .
+@prefix ns2: <http://xmlns.com/foaf/0.1/> .
+@prefix ns3: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns4: <http://www.w3.org/2002/07/owl#> .
+@prefix ns5: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns6: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns8: <http://purl.org/dc/elements/1.1/> .
+@prefix ns9: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1625/> a ns2:Proceedings ;
-    ns4:issued "2016-07-25T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:presentedAt <http://ceur-ws.org/Vol-1625/#event> ;
-    ns3:editor <http://ceur-ws.org/Vol-1625/#AlexanderiPanchenko>,
+<http://ceur-ws.org/Vol-1625/#AbdusiSatter> a ns2:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/AbdusiSatter> ;
+    ns2:made <http://ceur-ws.org/Vol-1625/#paper7> ;
+    ns2:name "Abdus Satter" .
+
+<http://ceur-ws.org/Vol-1625/#AlexanderiPanchenko> a ns2:Person ;
+    ns5:affiliation "" ;
+    ns4:sameAs <http://ceur-ws.org/persons/AlexanderiPanchenko> ;
+    ns2:name "Alexander Panchenko" .
+
+<http://ceur-ws.org/Vol-1625/#BatoiMerdygeev> a ns2:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/BatoiMerdygeev> ;
+    ns2:made <http://ceur-ws.org/Vol-1625/#proposal1> ;
+    ns2:name "Bato Merdygeev" .
+
+<http://ceur-ws.org/Vol-1625/#DmitryiI.iIgnatov> a ns2:Person ;
+    ns5:affiliation "" ;
+    ns4:sameAs <http://ceur-ws.org/persons/DmitryiI.iIgnatov> ;
+    ns2:name "Dmitry I. Ignatov" .
+
+<http://ceur-ws.org/Vol-1625/#DmitryiIlvovsky> a ns2:Person ;
+    ns5:affiliation "" ;
+    ns4:sameAs <http://ceur-ws.org/persons/DmitryiIlvovsky> ;
+    ns2:name "Dmitry Ilvovsky" .
+
+<http://ceur-ws.org/Vol-1625/#EkaterinaiChernyak> a ns2:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/EkaterinaiChernyak> ;
+    ns2:made <http://ceur-ws.org/Vol-1625/#paper3> ;
+    ns2:name "Ekaterina Chernyak" .
+
+<http://ceur-ws.org/Vol-1625/#ElenaiM.iKreines> a ns2:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/ElenaiM.iKreines> ;
+    ns2:made <http://ceur-ws.org/Vol-1625/#abs2> ;
+    ns2:name "Elena M. Kreines" .
+
+<http://ceur-ws.org/Vol-1625/#GillianiJ.iGreene> a ns2:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/GillianiJ.iGreene> ;
+    ns2:made <http://ceur-ws.org/Vol-1625/#paper4> ;
+    ns2:name "Gillian J. Greene" .
+
+<http://ceur-ws.org/Vol-1625/#JaumeiBaixeries> a ns2:Person ;
+    ns5:affiliation "" ;
+    ns4:sameAs <http://ceur-ws.org/persons/JaumeiBaixeries> ;
+    ns2:name "Jaume Baixeries" .
+
+<http://ceur-ws.org/Vol-1625/#MikhailiBogatyrev> a ns2:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/MikhailiBogatyrev> ;
+    ns2:made <http://ceur-ws.org/Vol-1625/#paper2> ;
+    ns2:name "Mikhail Bogatyrev" .
+
+<http://ceur-ws.org/Vol-1625/#MikhailiG.iKreines> a ns2:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/MikhailiG.iKreines> ;
+    ns2:made <http://ceur-ws.org/Vol-1625/#abs2> ;
+    ns2:name "Mikhail G. Kreines" .
+
+<http://ceur-ws.org/Vol-1625/#NatalyaiLoukashevitch> a ns2:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/NatalyaiLoukashevitch> ;
+    ns2:made <http://ceur-ws.org/Vol-1625/#inv1> ;
+    ns2:name "Natalya Loukashevitch" .
+
+<http://ceur-ws.org/Vol-1625/#OksanaiDereza> a ns2:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/OksanaiDereza> ;
+    ns2:made <http://ceur-ws.org/Vol-1625/#abs1> ;
+    ns2:name "Oksana Dereza" .
+
+<http://ceur-ws.org/Vol-1625/#TatianaiLitvinova> a ns2:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/TatianaiLitvinova> ;
+    ns2:made <http://ceur-ws.org/Vol-1625/#paper5> ;
+    ns2:name "Tatiana Litvinova" .
+
+<http://ceur-ws.org/Vol-1625/#UmmeiHafsaiBillah> a ns2:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/UmmeiHafsaiBillah> ;
+    ns2:made <http://ceur-ws.org/Vol-1625/#paper1> ;
+    ns2:name "Umme Hafsa Billah" .
+
+<http://ceur-ws.org/Vol-1625/#ValentiniMalykh> a ns2:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/ValentiniMalykh> ;
+    ns2:made <http://ceur-ws.org/Vol-1625/#paper6> ;
+    ns2:name "Valentin Malykh" .
+
+<http://ceur-ws.org/Vol-1625/#VladislaviTushkanov> a ns2:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/VladislaviTushkanov> ;
+    ns2:made <http://ceur-ws.org/Vol-1625/#abs1> ;
+    ns2:name "Vladislav Tushkanov" .
+
+<http://ceur-ws.org/Vol-1625/#event> a ns6:WorkshopEvent ;
+    ns6:hasLocation <http://dbpedia.org/resource/Russia> ;
+    ns6:hasPart <http://ceur-ws.org/Vol-1625/#part-CDUD> ;
+    ns6:isSubEventOf <http://ceur-ws.org/Vol-1625/#conf> ;
+    ns7:beginsAtDatetime "2016-07-18T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:endsAtDatetime "2016-07-18T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:license "http://creativecommons.org/publicdomain/zero/1.0/" ;
+    rdfs:seeAlso <http://ceur-ws.org/Vol-757/#event>,
+        <http://ceur-ws.org/Vol-871/#event> .
+
+<http://ceur-ws.org/Vol-1625/#InvitedTalk> a ns6:SessionEvent ;
+    ns6:partOf <http://ceur-ws.org/Vol-1625/> ;
+    ns3:title "Invited Talk" .
+
+<http://ceur-ws.org/Vol-1625/#inv1> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1625/> ;
+    ns3:title "Sentiment Analysis of Twitter Messages: Tasks, Approaches and Results" ;
+    ns1:endPage 1 ;
+    ns1:numPages 1 ;
+    ns1:section <http://ceur-ws.org/Vol-1625/#InvitedTalk> ;
+    ns1:startPage 1 ;
+    ns5:author <http://ceur-ws.org/Vol-1625/#NatalyaiLoukashevitch> .
+
+<http://ceur-ws.org/Vol-1625/#paper1> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1625/> ;
+    ns3:title "Personalized Language Models for Computer-mediated Communication" ;
+    ns1:endPage 12 ;
+    ns1:numPages 11 ;
+    ns1:section <http://ceur-ws.org/Vol-1625/#RegularPapers> ;
+    ns1:startPage 2 ;
+    ns5:author <http://ceur-ws.org/Vol-1625/#UmmeiHafsaiBillah> .
+
+<http://ceur-ws.org/Vol-1625/#paper2> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1625/> ;
+    ns3:title "Framework for Conceptual Modeling on Natural Language Texts" ;
+    ns1:endPage 24 ;
+    ns1:numPages 12 ;
+    ns1:section <http://ceur-ws.org/Vol-1625/#RegularPapers> ;
+    ns1:startPage 13 ;
+    ns5:author <http://ceur-ws.org/Vol-1625/#MikhailiBogatyrev> .
+
+<http://ceur-ws.org/Vol-1625/#paper3> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1625/> ;
+    ns3:title "Annotated Suffix Trees for Text Clustering" ;
+    ns1:endPage 31 ;
+    ns1:numPages 7 ;
+    ns1:section <http://ceur-ws.org/Vol-1625/#RegularPapers> ;
+    ns1:startPage 25 ;
+    ns5:author <http://ceur-ws.org/Vol-1625/#EkaterinaiChernyak> .
+
+<http://ceur-ws.org/Vol-1625/#paper4> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1625/> ;
+    ns3:title "Single-Focus Broadening Navigation in Concept Lattices" ;
+    ns1:endPage 43 ;
+    ns1:numPages 12 ;
+    ns1:section <http://ceur-ws.org/Vol-1625/#RegularPapers> ;
+    ns1:startPage 32 ;
+    ns5:author <http://ceur-ws.org/Vol-1625/#GillianiJ.iGreene> .
+
+<http://ceur-ws.org/Vol-1625/#paper5> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1625/> ;
+    ns3:title "Gender Prediction for Authors of Russian Texts Using Regression And Classification Techniques" ;
+    ns1:endPage 53 ;
+    ns1:numPages 10 ;
+    ns1:section <http://ceur-ws.org/Vol-1625/#RegularPapers> ;
+    ns1:startPage 44 ;
+    ns5:author <http://ceur-ws.org/Vol-1625/#TatianaiLitvinova> .
+
+<http://ceur-ws.org/Vol-1625/#paper6> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1625/> ;
+    ns3:title "Reproducing Russian NER Baseline Quality without Additional Data" ;
+    ns1:endPage 59 ;
+    ns1:numPages 6 ;
+    ns1:section <http://ceur-ws.org/Vol-1625/#RegularPapers> ;
+    ns1:startPage 54 ;
+    ns5:author <http://ceur-ws.org/Vol-1625/#ValentiniMalykh> .
+
+<http://ceur-ws.org/Vol-1625/#paper7> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1625/> ;
+    ns3:title "A Static Code Search Technique to Identify Dead Fields by Analyzing Usage of Setup Fields and Field Dependency in Test Code" ;
+    ns1:endPage 71 ;
+    ns1:numPages 12 ;
+    ns1:section <http://ceur-ws.org/Vol-1625/#RegularPapers> ;
+    ns1:startPage 60 ;
+    ns5:author <http://ceur-ws.org/Vol-1625/#AbdusiSatter> .
+
+<http://ceur-ws.org/Vol-1625/#proposal1> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1625/> ;
+    ns3:title "Evaluation of Ontology Quality based on Analysis of Relations in Concept Lattices" ;
+    ns1:endPage 86 ;
+    ns1:numPages 13 ;
+    ns1:section <http://ceur-ws.org/Vol-1625/#Abstracts> ;
+    ns1:startPage 74 ;
+    ns5:author <http://ceur-ws.org/Vol-1625/#BatoiMerdygeev> .
+
+<http://ceur-ws.org/Vol-1625/#abs1> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1625/> ;
+    ns3:title "Verb-Noun Collocation and Government Model Extraction from Large Corpora" ;
+    ns1:endPage 72 ;
+    ns1:numPages 1 ;
+    ns1:section <http://ceur-ws.org/Vol-1625/#Abstracts> ;
+    ns1:startPage 72 ;
+    ns5:author <http://ceur-ws.org/Vol-1625/#OksanaiDereza>,
+        <http://ceur-ws.org/Vol-1625/#VladislaviTushkanov> .
+
+<http://ceur-ws.org/Vol-1625/#abs2> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1625/> ;
+    ns3:title "Topic Modeling without Generative Probabilistic Model: An Approach and its Validation" ;
+    ns1:endPage 73 ;
+    ns1:numPages 1 ;
+    ns1:section <http://ceur-ws.org/Vol-1625/#Abstracts> ;
+    ns1:startPage 73 ;
+    ns5:author <http://ceur-ws.org/Vol-1625/#ElenaiM.iKreines>,
+        <http://ceur-ws.org/Vol-1625/#MikhailiG.iKreines> .
+
+<http://ceur-ws.org/Vol-1625/#Abstracts> a ns6:SessionEvent ;
+    ns6:partOf <http://ceur-ws.org/Vol-1625/> ;
+    ns3:title "Abstracts" .
+
+<http://ceur-ws.org/Vol-1625/#RegularPapers> a ns6:SessionEvent ;
+    ns6:partOf <http://ceur-ws.org/Vol-1625/> ;
+    ns3:title "Regular Papers" .
+
+<http://ceur-ws.org/Vol-1625/> a ns6:Proceedings ;
+    ns6:hasPart <http://ceur-ws.org/Vol-1625/#abs1>,
+        <http://ceur-ws.org/Vol-1625/#abs2>,
+        <http://ceur-ws.org/Vol-1625/#inv1>,
+        <http://ceur-ws.org/Vol-1625/#paper1>,
+        <http://ceur-ws.org/Vol-1625/#paper2>,
+        <http://ceur-ws.org/Vol-1625/#paper3>,
+        <http://ceur-ws.org/Vol-1625/#paper4>,
+        <http://ceur-ws.org/Vol-1625/#paper5>,
+        <http://ceur-ws.org/Vol-1625/#paper6>,
+        <http://ceur-ws.org/Vol-1625/#paper7>,
+        <http://ceur-ws.org/Vol-1625/#proposal1> ;
+    ns6:hasSession <http://ceur-ws.org/Vol-1625/#Abstracts>,
+        <http://ceur-ws.org/Vol-1625/#InvitedTalk>,
+        <http://ceur-ws.org/Vol-1625/#RegularPapers> ;
+    ns9:issued "2016-07-25T00:00:00+00:00"^^xsd:dateTime ;
+    ns1:presentedAt <http://ceur-ws.org/Vol-1625/#event> ;
+    ns5:editor <http://ceur-ws.org/Vol-1625/#AlexanderiPanchenko>,
         <http://ceur-ws.org/Vol-1625/#DmitryiI.iIgnatov>,
         <http://ceur-ws.org/Vol-1625/#DmitryiIlvovsky>,
         <http://ceur-ws.org/Vol-1625/#JaumeiBaixeries> .
-
-<http://ceur-ws.org/Vol-1625/#AlexanderiPanchenko> a ns1:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/AlexanderiPanchenko> ;
-    ns1:name "Alexander Panchenko" .
-
-<http://ceur-ws.org/Vol-1625/#DmitryiI.iIgnatov> a ns1:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/DmitryiI.iIgnatov> ;
-    ns1:name "Dmitry I. Ignatov" .
-
-<http://ceur-ws.org/Vol-1625/#DmitryiIlvovsky> a ns1:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/DmitryiIlvovsky> ;
-    ns1:name "Dmitry Ilvovsky" .
-
-<http://ceur-ws.org/Vol-1625/#JaumeiBaixeries> a ns1:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/JaumeiBaixeries> ;
-    ns1:name "Jaume Baixeries" .
-
-<http://ceur-ws.org/Vol-1625/#event> a ns2:WorkshopEvent ;
-    ns2:hasLocation <http://dbpedia.org/resource/Russia> ;
-    ns2:hasPart <http://ceur-ws.org/Vol-1625/#part-ws> ;
-    ns2:isSubEventOf <http://ceur-ws.org/Vol-1625/#conf> ;
-    ns8:beginsAtDatetime "2016-07-18T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:endsAtDatetime "2016-07-18T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:license "http://creativecommons.org/publicdomain/zero/1.0/" ;
-    rdfs:seeAlso <http://ceur-ws.org/Vol-757/#event>,
-        <http://ceur-ws.org/Vol-871/#event> .
 

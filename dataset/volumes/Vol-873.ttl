@@ -1,45 +1,274 @@
-@prefix ns1: <http://www.w3.org/2002/07/owl#> .
-@prefix ns2: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns3: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns4: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns5: <http://xmlns.com/foaf/0.1/> .
-@prefix ns6: <http://purl.org/dc/elements/1.1/> .
-@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns8: <http://purl.org/ontology/bibo/#> .
+@prefix ns1: <http://xmlns.com/foaf/0.1/> .
+@prefix ns2: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns3: <http://purl.org/ontology/bibo/#> .
+@prefix ns4: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns5: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns6: <http://www.w3.org/2002/07/owl#> .
+@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns9: <http://purl.org/dc/elements/1.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-873/> a ns3:Proceedings ;
-    ns4:issued "2012-07-31T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:presentedAt <http://ceur-ws.org/Vol-873/#event> ;
-    ns2:editor <http://ceur-ws.org/Vol-873/#ArminiBiere>,
+<http://ceur-ws.org/Vol-873/#AlbertoiGriggio> a ns1:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/AlbertoiGriggio> ;
+    ns1:made <http://ceur-ws.org/Vol-873/#paper_7> ;
+    ns1:name "Alberto Griggio" .
+
+<http://ceur-ws.org/Vol-873/#AndreiiPaskevich> a ns1:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/AndreiiPaskevich> ;
+    ns1:made <http://ceur-ws.org/Vol-873/#paper_6> ;
+    ns1:name "Andrei Paskevich" .
+
+<http://ceur-ws.org/Vol-873/#ArminiBiere> a ns1:Person ;
+    ns5:affiliation "" ;
+    ns6:sameAs <http://ceur-ws.org/persons/ArminiBiere> ;
+    ns1:name "Armin Biere" .
+
+<http://ceur-ws.org/Vol-873/#BorisiYakobowski> a ns1:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/BorisiYakobowski> ;
+    ns1:made <http://ceur-ws.org/Vol-873/#paper_5> ;
+    ns1:name "Boris Yakobowski" .
+
+<http://ceur-ws.org/Vol-873/#CarsteniSinz> a ns1:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/CarsteniSinz> ;
+    ns1:made <http://ceur-ws.org/Vol-873/#paper_3> ;
+    ns1:name "Carsten Sinz" .
+
+<http://ceur-ws.org/Vol-873/#CesareiTinelli> a ns1:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/CesareiTinelli> ;
+    ns1:made <http://ceur-ws.org/Vol-873/#inv_1> ;
+    ns1:name "Cesare Tinelli" .
+
+<http://ceur-ws.org/Vol-873/#FlorentiKirchner> a ns1:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/FlorentiKirchner> ;
+    ns1:made <http://ceur-ws.org/Vol-873/#paper_5> ;
+    ns1:name "Florent Kirchner" .
+
+<http://ceur-ws.org/Vol-873/#FlorianiMerz> a ns1:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/FlorianiMerz> ;
+    ns1:made <http://ceur-ws.org/Vol-873/#paper_3> ;
+    ns1:name "Florian Merz" .
+
+<http://ceur-ws.org/Vol-873/#JamesiPower> a ns1:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/JamesiPower> ;
+    ns1:made <http://ceur-ws.org/Vol-873/#paper_8> ;
+    ns1:name "James Power" .
+
+<http://ceur-ws.org/Vol-873/#Jean-ChristopheiFilli%C3%A2tre> a ns1:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/Jean-ChristopheiFilli%C3%A2tre> ;
+    ns1:made <http://ceur-ws.org/Vol-873/#paper_6> ;
+    ns1:name "Jean-Christophe Filliâtre" .
+
+<http://ceur-ws.org/Vol-873/#LeonardoideiMoura> a ns1:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/LeonardoideiMoura> ;
+    ns1:made <http://ceur-ws.org/Vol-873/#inv2> ;
+    ns1:name "Leonardo de Moura" .
+
+<http://ceur-ws.org/Vol-873/#MariekeiHuisman> a ns1:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/MariekeiHuisman> ;
+    ns1:made <http://ceur-ws.org/Vol-873/#paper_2> ;
+    ns1:name "Marieke Huisman" .
+
+<http://ceur-ws.org/Vol-873/#OlivieriRoussel> a ns1:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/OlivieriRoussel> ;
+    ns1:made <http://ceur-ws.org/Vol-873/#paper_10> ;
+    ns1:name "Olivier Roussel" .
+
+<http://ceur-ws.org/Vol-873/#PascaliCuoq> a ns1:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/PascaliCuoq> ;
+    ns1:made <http://ceur-ws.org/Vol-873/#paper_5> ;
+    ns1:name "Pascal Cuoq" .
+
+<http://ceur-ws.org/Vol-873/#RobertoiBruttomesso> a ns1:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/RobertoiBruttomesso> ;
+    ns1:made <http://ceur-ws.org/Vol-873/#paper_7> ;
+    ns1:name "Roberto Bruttomesso" .
+
+<http://ceur-ws.org/Vol-873/#SarahiGrebing> a ns1:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/SarahiGrebing> ;
+    ns1:made <http://ceur-ws.org/Vol-873/#paper_4> ;
+    ns1:name "Sarah Grebing" .
+
+<http://ceur-ws.org/Vol-873/#StephaniFalke> a ns1:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/StephaniFalke> ;
+    ns1:made <http://ceur-ws.org/Vol-873/#paper_3> ;
+    ns1:name "Stephan Falke" .
+
+<http://ceur-ws.org/Vol-873/#ZhengiCheng> a ns1:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/ZhengiCheng> ;
+    ns1:made <http://ceur-ws.org/Vol-873/#paper_8> ;
+    ns1:name "Zheng Cheng" .
+
+<http://ceur-ws.org/Vol-873/#event> a ns2:WorkshopEvent ;
+    ns2:hasLocation <http://dbpedia.org/resource/United_Kingdom> ;
+    ns2:hasPart <http://ceur-ws.org/Vol-873/#part-COMPARE> ;
+    ns2:isSubEventOf <http://ceur-ws.org/Vol-873/#conf> ;
+    ns8:beginsAtDatetime "2012-06-30T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:endsAtDatetime "2012-06-30T00:00:00+00:00"^^xsd:dateTime ;
+    ns9:license "http://choosealicense.com/licenses/no-license/" .
+
+<http://ceur-ws.org/Vol-873/#AaroniStump> a ns1:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/AaroniStump> ;
+    ns1:made <http://ceur-ws.org/Vol-873/#inv_1>,
+        <http://ceur-ws.org/Vol-873/#paper_6> ;
+    ns1:name "Aaron Stump" .
+
+<http://ceur-ws.org/Vol-873/#BernhardiBeckert> a ns1:Person ;
+    ns5:affiliation "" ;
+    ns6:sameAs <http://ceur-ws.org/persons/BernhardiBeckert> ;
+    ns1:made <http://ceur-ws.org/Vol-873/#paper_4> ;
+    ns1:name "Bernhard Beckert" .
+
+<http://ceur-ws.org/Vol-873/#GeoffiSutcliffe> a ns1:Person ;
+    ns5:affiliation "" ;
+    ns6:sameAs <http://ceur-ws.org/persons/GeoffiSutcliffe> ;
+    ns1:made <http://ceur-ws.org/Vol-873/#inv_1> ;
+    ns1:name "Geoff Sutcliffe" .
+
+<http://ceur-ws.org/Vol-873/#RosemaryiMonahan> a ns1:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/RosemaryiMonahan> ;
+    ns1:made <http://ceur-ws.org/Vol-873/#paper_2>,
+        <http://ceur-ws.org/Vol-873/#paper_8> ;
+    ns1:name "Rosemary Monahan" .
+
+<http://ceur-ws.org/Vol-873/#VladimiriKlebanov> a ns1:Person ;
+    ns5:affiliation "" ;
+    ns6:sameAs <http://ceur-ws.org/persons/VladimiriKlebanov> ;
+    ns1:made <http://ceur-ws.org/Vol-873/#paper_2> ;
+    ns1:name "Vladimir Klebanov" .
+
+<http://ceur-ws.org/Vol-873/#inv2> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-873/> ;
+    ns4:title "Regression Tests and the Inventor's Dilemma" ;
+    ns3:endPage 1 ;
+    ns3:numPages 1 ;
+    ns3:section <http://ceur-ws.org/Vol-873/#AbstractsofInvitedTalks> ;
+    ns3:startPage 1 ;
+    ns5:author <http://ceur-ws.org/Vol-873/#LeonardoideiMoura> .
+
+<http://ceur-ws.org/Vol-873/#paper_10> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-873/> ;
+    ns4:title "Behind the Scene of Solvers Competitions: the \"evaluation\" Experience" ;
+    ns3:endPage 77 ;
+    ns3:numPages 12 ;
+    ns3:section <http://ceur-ws.org/Vol-873/#ContributedPapers> ;
+    ns3:startPage 66 ;
+    ns5:author <http://ceur-ws.org/Vol-873/#OlivieriRoussel> .
+
+<http://ceur-ws.org/Vol-873/#AbstractsofInvitedTalks> a ns2:SessionEvent ;
+    ns2:partOf <http://ceur-ws.org/Vol-873/> ;
+    ns4:title "Abstracts of Invited Talks" .
+
+<http://ceur-ws.org/Vol-873/#paper_4> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-873/> ;
+    ns4:title "Evaluating the Usability of Interactive Verification Systems" ;
+    ns3:endPage 17 ;
+    ns3:numPages 15 ;
+    ns3:section <http://ceur-ws.org/Vol-873/#ContributedPapers> ;
+    ns3:startPage 3 ;
+    ns5:author <http://ceur-ws.org/Vol-873/#BernhardiBeckert>,
+        <http://ceur-ws.org/Vol-873/#SarahiGrebing> .
+
+<http://ceur-ws.org/Vol-873/#paper_7> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-873/> ;
+    ns4:title "Broadening the Scope of SMT-COMP: the Application Track" ;
+    ns3:endPage 27 ;
+    ns3:numPages 10 ;
+    ns3:section <http://ceur-ws.org/Vol-873/#ContributedPapers> ;
+    ns3:startPage 18 ;
+    ns5:author <http://ceur-ws.org/Vol-873/#AlbertoiGriggio>,
+        <http://ceur-ws.org/Vol-873/#RobertoiBruttomesso> .
+
+<http://ceur-ws.org/Vol-873/#inv_1> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-873/> ;
+    ns4:title "Introducing StarExec: a Cross-Community Infrastructure for Logic Solving" ;
+    ns3:endPage 2 ;
+    ns3:numPages 1 ;
+    ns3:section <http://ceur-ws.org/Vol-873/#AbstractsofInvitedTalks> ;
+    ns3:startPage 2 ;
+    ns5:author <http://ceur-ws.org/Vol-873/#AaroniStump>,
+        <http://ceur-ws.org/Vol-873/#CesareiTinelli>,
+        <http://ceur-ws.org/Vol-873/#GeoffiSutcliffe> .
+
+<http://ceur-ws.org/Vol-873/#paper_2> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-873/> ;
+    ns4:title "On the Organisation of Program Verification Competitions" ;
+    ns3:endPage 59 ;
+    ns3:numPages 10 ;
+    ns3:section <http://ceur-ws.org/Vol-873/#ContributedPapers> ;
+    ns3:startPage 50 ;
+    ns5:author <http://ceur-ws.org/Vol-873/#MariekeiHuisman>,
+        <http://ceur-ws.org/Vol-873/#RosemaryiMonahan>,
+        <http://ceur-ws.org/Vol-873/#VladimiriKlebanov> .
+
+<http://ceur-ws.org/Vol-873/#paper_3> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-873/> ;
+    ns4:title "Challenges in Comparing Software Verification Tools for C" ;
+    ns3:endPage 65 ;
+    ns3:numPages 6 ;
+    ns3:section <http://ceur-ws.org/Vol-873/#ContributedPapers> ;
+    ns3:startPage 60 ;
+    ns5:author <http://ceur-ws.org/Vol-873/#CarsteniSinz>,
+        <http://ceur-ws.org/Vol-873/#FlorianiMerz>,
+        <http://ceur-ws.org/Vol-873/#StephaniFalke> .
+
+<http://ceur-ws.org/Vol-873/#paper_5> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-873/> ;
+    ns4:title "Benchmarking Static Analyzers" ;
+    ns3:endPage 35 ;
+    ns3:numPages 4 ;
+    ns3:section <http://ceur-ws.org/Vol-873/#ContributedPapers> ;
+    ns3:startPage 32 ;
+    ns5:author <http://ceur-ws.org/Vol-873/#BorisiYakobowski>,
+        <http://ceur-ws.org/Vol-873/#FlorentiKirchner>,
+        <http://ceur-ws.org/Vol-873/#PascaliCuoq> .
+
+<http://ceur-ws.org/Vol-873/#paper_6> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-873/> ;
+    ns4:title "The 2nd Verified Software Competition: Experience Report" ;
+    ns3:endPage 49 ;
+    ns3:numPages 14 ;
+    ns3:section <http://ceur-ws.org/Vol-873/#ContributedPapers> ;
+    ns3:startPage 36 ;
+    ns5:author <http://ceur-ws.org/Vol-873/#AaroniStump>,
+        <http://ceur-ws.org/Vol-873/#AndreiiPaskevich>,
+        <http://ceur-ws.org/Vol-873/#Jean-ChristopheiFilli%C3%A2tre> .
+
+<http://ceur-ws.org/Vol-873/#paper_8> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-873/> ;
+    ns4:title "A Simple Complexity Measurement for Software Verification and Software Testing" ;
+    ns3:endPage 31 ;
+    ns3:numPages 4 ;
+    ns3:section <http://ceur-ws.org/Vol-873/#ContributedPapers> ;
+    ns3:startPage 28 ;
+    ns5:author <http://ceur-ws.org/Vol-873/#JamesiPower>,
+        <http://ceur-ws.org/Vol-873/#RosemaryiMonahan>,
+        <http://ceur-ws.org/Vol-873/#ZhengiCheng> .
+
+<http://ceur-ws.org/Vol-873/#ContributedPapers> a ns2:SessionEvent ;
+    ns2:partOf <http://ceur-ws.org/Vol-873/> ;
+    ns4:title "Contributed Papers" .
+
+<http://ceur-ws.org/Vol-873/> a ns2:Proceedings ;
+    ns2:hasPart <http://ceur-ws.org/Vol-873/#inv2>,
+        <http://ceur-ws.org/Vol-873/#inv_1>,
+        <http://ceur-ws.org/Vol-873/#paper_10>,
+        <http://ceur-ws.org/Vol-873/#paper_2>,
+        <http://ceur-ws.org/Vol-873/#paper_3>,
+        <http://ceur-ws.org/Vol-873/#paper_4>,
+        <http://ceur-ws.org/Vol-873/#paper_5>,
+        <http://ceur-ws.org/Vol-873/#paper_6>,
+        <http://ceur-ws.org/Vol-873/#paper_7>,
+        <http://ceur-ws.org/Vol-873/#paper_8> ;
+    ns2:hasSession <http://ceur-ws.org/Vol-873/#AbstractsofInvitedTalks>,
+        <http://ceur-ws.org/Vol-873/#ContributedPapers> ;
+    ns7:issued "2012-07-31T00:00:00+00:00"^^xsd:dateTime ;
+    ns3:presentedAt <http://ceur-ws.org/Vol-873/#event> ;
+    ns5:editor <http://ceur-ws.org/Vol-873/#ArminiBiere>,
         <http://ceur-ws.org/Vol-873/#BernhardiBeckert>,
         <http://ceur-ws.org/Vol-873/#GeoffiSutcliffe>,
         <http://ceur-ws.org/Vol-873/#VladimiriKlebanov> .
-
-<http://ceur-ws.org/Vol-873/#ArminiBiere> a ns5:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/ArminiBiere> ;
-    ns5:name "Armin Biere" .
-
-<http://ceur-ws.org/Vol-873/#BernhardiBeckert> a ns5:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/BernhardiBeckert> ;
-    ns5:name "Bernhard Beckert" .
-
-<http://ceur-ws.org/Vol-873/#GeoffiSutcliffe> a ns5:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/GeoffiSutcliffe> ;
-    ns5:name "Geoff Sutcliffe" .
-
-<http://ceur-ws.org/Vol-873/#VladimiriKlebanov> a ns5:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/VladimiriKlebanov> ;
-    ns5:name "Vladimir Klebanov" .
-
-<http://ceur-ws.org/Vol-873/#event> a ns3:WorkshopEvent ;
-    ns3:hasLocation <http://dbpedia.org/resource/United_Kingdom> ;
-    ns3:hasPart <http://ceur-ws.org/Vol-873/#part-CEUR-WS> ;
-    ns3:isSubEventOf <http://ceur-ws.org/Vol-873/#conf> ;
-    ns7:beginsAtDatetime "2012-06-30T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:endsAtDatetime "2012-06-30T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:license "http://choosealicense.com/licenses/no-license/" .
 

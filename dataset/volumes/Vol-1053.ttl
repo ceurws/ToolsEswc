@@ -1,30 +1,326 @@
-@prefix ns1: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns2: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns3: <http://www.w3.org/2002/07/owl#> .
-@prefix ns4: <http://xmlns.com/foaf/0.1/> .
-@prefix ns5: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns6: <http://purl.org/ontology/bibo/#> .
-@prefix ns7: <http://purl.org/dc/elements/1.1/> .
-@prefix ns8: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns1: <http://xmlns.com/foaf/0.1/> .
+@prefix ns2: <http://www.w3.org/2002/07/owl#> .
+@prefix ns3: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns4: <http://purl.org/ontology/bibo/#> .
+@prefix ns5: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns6: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns8: <http://purl.org/dc/elements/1.1/> .
+@prefix ns9: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1053/> a ns5:Proceedings ;
-    ns1:issued "2013-10-01T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:presentedAt <http://ceur-ws.org/Vol-1053/#event> ;
-    ns8:editor <http://ceur-ws.org/Vol-1053/#ZoraniBudimac> .
+<http://ceur-ws.org/Vol-1053/#> a ns1:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/> ;
+    ns1:made <http://ceur-ws.org/Vol-1053/#sqamia2013paper6> ;
+    ns1:name "" .
 
-<http://ceur-ws.org/Vol-1053/#ZoraniBudimac> a ns4:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/ZoraniBudimac> ;
-    ns4:name "Zoran Budimac" .
+<http://ceur-ws.org/Vol-1053/#AnastasiMishev> a ns1:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/AnastasiMishev> ;
+    ns1:made <http://ceur-ws.org/Vol-1053/#sqamia2013paper7> ;
+    ns1:name "Anastas Mishev" .
 
-<http://ceur-ws.org/Vol-1053/#event> a ns5:WorkshopEvent ;
-    ns5:hasLocation <http://dbpedia.org/resource/Serbia> ;
-    ns5:hasPart <http://ceur-ws.org/Vol-1053/#part-CEUR-WS> ;
-    ns5:isSubEventOf <http://ceur-ws.org/Vol-1053/#conf> ;
-    ns2:beginsAtDatetime "2013-09-15T00:00:00+00:00"^^xsd:dateTime ;
-    ns2:endsAtDatetime "2013-09-17T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:license "http://choosealicense.com/licenses/no-license/" .
+<http://ceur-ws.org/Vol-1053/#Bo%C5%A1tjani%C5%A0umak> a ns1:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/Bo%C5%A1tjani%C5%A0umak> ;
+    ns1:made <http://ceur-ws.org/Vol-1053/#sqamia2013paper11> ;
+    ns1:name "Boštjan Šumak" .
+
+<http://ceur-ws.org/Vol-1053/#Bo%C5%A1tjaniArzen%C5%A1ek> a ns1:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/Bo%C5%A1tjaniArzen%C5%A1ek> ;
+    ns1:made <http://ceur-ws.org/Vol-1053/#sqamia2013paper6> ;
+    ns1:name "Boštjan Arzenšek" .
+
+<http://ceur-ws.org/Vol-1053/#BojanaiDalbelo-Ba%C5%A1i%C4%87> a ns1:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/BojanaiDalbelo-Ba%C5%A1i%C4%87> ;
+    ns1:made <http://ceur-ws.org/Vol-1053/#sqamia2013paper1> ;
+    ns1:name "Bojana Dalbelo-Bašić" .
+
+<http://ceur-ws.org/Vol-1053/#BojanaiKoteska> a ns1:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/BojanaiKoteska> ;
+    ns1:made <http://ceur-ws.org/Vol-1053/#sqamia2013paper7> ;
+    ns1:name "Bojana Koteska" .
+
+<http://ceur-ws.org/Vol-1053/#DoniiPracner> a ns1:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/DoniiPracner> ;
+    ns1:made <http://ceur-ws.org/Vol-1053/#sqamia2013paper9> ;
+    ns1:name "Doni Pracner" .
+
+<http://ceur-ws.org/Vol-1053/#FilipiPrentovi%C4%87> a ns1:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/FilipiPrentovi%C4%87> ;
+    ns1:made <http://ceur-ws.org/Vol-1053/#sqamia2013paper10> ;
+    ns1:name "Filip Prentović" .
+
+<http://ceur-ws.org/Vol-1053/#GoraniMau%C5%A1a> a ns1:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/GoraniMau%C5%A1a> ;
+    ns1:made <http://ceur-ws.org/Vol-1053/#sqamia2013paper1> ;
+    ns1:name "Goran Mauša" .
+
+<http://ceur-ws.org/Vol-1053/#GregoriJo%C5%A1t> a ns1:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/GregoriJo%C5%A1t> ;
+    ns1:made <http://ceur-ws.org/Vol-1053/#sqamia2013paper3> ;
+    ns1:name "Gregor Jošt" .
+
+<http://ceur-ws.org/Vol-1053/#JernejiHuber> a ns1:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/JernejiHuber> ;
+    ns1:made <http://ceur-ws.org/Vol-1053/#sqamia2013paper3> ;
+    ns1:name "Jernej Huber" .
+
+<http://ceur-ws.org/Vol-1053/#KristijaniKo%C5%A1i%26ccaron> a ns1:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/KristijaniKo%C5%A1i%26ccaron> ;
+    ns1:made <http://ceur-ws.org/Vol-1053/#sqamia2013paper6> ;
+    ns1:name "Kristijan Koši&ccaron" .
+
+<http://ceur-ws.org/Vol-1053/#LjupcoiPejov> a ns1:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/LjupcoiPejov> ;
+    ns1:made <http://ceur-ws.org/Vol-1053/#sqamia2013paper7> ;
+    ns1:name "Ljupco Pejov" .
+
+<http://ceur-ws.org/Vol-1053/#MajaiPu%C5%A1nik> a ns1:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/MajaiPu%C5%A1nik> ;
+    ns1:made <http://ceur-ws.org/Vol-1053/#sqamia2013paper11> ;
+    ns1:name "Maja Pušnik" .
+
+<http://ceur-ws.org/Vol-1053/#MatejaiKocbek> a ns1:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/MatejaiKocbek> ;
+    ns1:made <http://ceur-ws.org/Vol-1053/#sqamia2013paper4> ;
+    ns1:name "Mateja Kocbek" .
+
+<http://ceur-ws.org/Vol-1053/#MatejiVogrin%26ccaron> a ns1:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/MatejiVogrin%26ccaron> ;
+    ns1:made <http://ceur-ws.org/Vol-1053/#sqamia2013paper6> ;
+    ns1:name "Matej Vogrin&ccaron" .
+
+<http://ceur-ws.org/Vol-1053/#Sa%C5%A1aiKuhar> a ns1:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/Sa%C5%A1aiKuhar> ;
+    ns1:made <http://ceur-ws.org/Vol-1053/#sqamia2013paper6> ;
+    ns1:name "Saša Kuhar" .
+
+<http://ceur-ws.org/Vol-1053/#SteliosiXinogalos> a ns1:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/SteliosiXinogalos> ;
+    ns1:made <http://ceur-ws.org/Vol-1053/#sqamia2013paper2> ;
+    ns1:name "Stelios Xinogalos" .
+
+<http://ceur-ws.org/Vol-1053/#TihanaiGalinaciGrbac> a ns1:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/TihanaiGalinaciGrbac> ;
+    ns1:made <http://ceur-ws.org/Vol-1053/#sqamia2013paper1> ;
+    ns1:name "Tihana Galinac Grbac" .
+
+<http://ceur-ws.org/Vol-1053/#TinaiSchweighofer> a ns1:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/TinaiSchweighofer> ;
+    ns1:made <http://ceur-ws.org/Vol-1053/#sqamia2013paper13> ;
+    ns1:name "Tina Schweighofer" .
+
+<http://ceur-ws.org/Vol-1053/#event> a ns6:WorkshopEvent ;
+    ns6:hasLocation <http://dbpedia.org/resource/Serbia> ;
+    ns6:hasPart <http://ceur-ws.org/Vol-1053/#part-SQAMIA> ;
+    ns6:isSubEventOf <http://ceur-ws.org/Vol-1053/#conf> ;
+    ns7:beginsAtDatetime "2013-09-15T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:endsAtDatetime "2013-09-17T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:license "http://choosealicense.com/licenses/no-license/" .
+
+<http://ceur-ws.org/Vol-1053/#GordanaiRaki%C4%87> a ns1:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/GordanaiRaki%C4%87> ;
+    ns1:made <http://ceur-ws.org/Vol-1053/#sqamia2013paper12>,
+        <http://ceur-ws.org/Vol-1053/#sqamia2013paper5> ;
+    ns1:name "Gordana Rakić" .
+
+<http://ceur-ws.org/Vol-1053/#LukaiPavli%26ccaron> a ns1:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/LukaiPavli%26ccaron> ;
+    ns1:made <http://ceur-ws.org/Vol-1053/#sqamia2013paper6>,
+        <http://ceur-ws.org/Vol-1053/#sqamia2013paper8> ;
+    ns1:name "Luka Pavli&ccaron" .
+
+<http://ceur-ws.org/Vol-1053/#Milo%C5%A1iSavi%C4%87> a ns1:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/Milo%C5%A1iSavi%C4%87> ;
+    ns1:made <http://ceur-ws.org/Vol-1053/#sqamia2013paper12>,
+        <http://ceur-ws.org/Vol-1053/#sqamia2013paper5> ;
+    ns1:name "Miloš Savić" .
+
+<http://ceur-ws.org/Vol-1053/#MirjanaiIvanovi%C4%87> a ns1:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/MirjanaiIvanovi%C4%87> ;
+    ns1:made <http://ceur-ws.org/Vol-1053/#sqamia2013paper12>,
+        <http://ceur-ws.org/Vol-1053/#sqamia2013paper2> ;
+    ns1:name "Mirjana Ivanović" .
+
+<http://ceur-ws.org/Vol-1053/#sqamia2013paper8> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1053/> ;
+    ns5:title "The Mobile Product Line" ;
+    ns4:endPage 69 ;
+    ns4:numPages 7 ;
+    ns4:startPage 63 ;
+    ns3:author <http://ceur-ws.org/Vol-1053/#LukaiPavli%26ccaron> .
+
+<http://ceur-ws.org/Vol-1053/#sqamia2013paper10> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1053/> ;
+    ns5:title "Documenting Software Architectures using UML" ;
+    ns4:endPage 85 ;
+    ns4:numPages 7 ;
+    ns4:startPage 79 ;
+    ns3:author <http://ceur-ws.org/Vol-1053/#FilipiPrentovi%C4%87>,
+        <http://ceur-ws.org/Vol-1053/#ZoraniBudimac> .
+
+<http://ceur-ws.org/Vol-1053/#sqamia2013paper2> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1053/> ;
+    ns5:title "Enhancing Software Quality in Students' Programs" ;
+    ns4:endPage 16 ;
+    ns4:numPages 6 ;
+    ns4:startPage 11 ;
+    ns3:author <http://ceur-ws.org/Vol-1053/#MirjanaiIvanovi%C4%87>,
+        <http://ceur-ws.org/Vol-1053/#SteliosiXinogalos> .
+
+<http://ceur-ws.org/Vol-1053/#sqamia2013paper9> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1053/> ;
+    ns5:title "Transforming Low-level Languages Using FermaT and WSL" ;
+    ns4:endPage 78 ;
+    ns4:numPages 8 ;
+    ns4:startPage 71 ;
+    ns3:author <http://ceur-ws.org/Vol-1053/#DoniiPracner>,
+        <http://ceur-ws.org/Vol-1053/#ZoraniBudimac> .
+
+<http://ceur-ws.org/Vol-1053/#sqamia2013paper1> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1053/> ;
+    ns5:title "Stability of Software Defect Prediction in Relation to Levels of Data Imbalance" ;
+    ns4:endPage 10 ;
+    ns4:numPages 10 ;
+    ns4:startPage 1 ;
+    ns3:author <http://ceur-ws.org/Vol-1053/#BojanaiDalbelo-Ba%C5%A1i%C4%87>,
+        <http://ceur-ws.org/Vol-1053/#GoraniMau%C5%A1a>,
+        <http://ceur-ws.org/Vol-1053/#TihanaiGalinaciGrbac> .
+
+<http://ceur-ws.org/Vol-1053/#sqamia2013paper13> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1053/> ;
+    ns5:title "Mobile Device and Technology Characteristics' Impact on Mobile Application Testing" ;
+    ns4:endPage 108 ;
+    ns4:numPages 6 ;
+    ns4:startPage 103 ;
+    ns3:author <http://ceur-ws.org/Vol-1053/#JozefiKolek>,
+        <http://ceur-ws.org/Vol-1053/#MarjaniHeri%26ccaron>,
+        <http://ceur-ws.org/Vol-1053/#TinaiSchweighofer> .
+
+<http://ceur-ws.org/Vol-1053/#sqamia2013paper4> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1053/> ;
+    ns5:title "Beta Testing of a Mobile Application: A Case Study" ;
+    ns4:endPage 34 ;
+    ns4:numPages 6 ;
+    ns4:startPage 29 ;
+    ns3:author <http://ceur-ws.org/Vol-1053/#JozefiKolek>,
+        <http://ceur-ws.org/Vol-1053/#MarjaniHeri%26ccaron>,
+        <http://ceur-ws.org/Vol-1053/#MatejaiKocbek> .
+
+<http://ceur-ws.org/Vol-1053/#sqamia2013paper5> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1053/> ;
+    ns5:title "Two-dimensional Extensibility of SSQSA Framework" ;
+    ns4:endPage 43 ;
+    ns4:numPages 9 ;
+    ns4:startPage 35 ;
+    ns3:author <http://ceur-ws.org/Vol-1053/#GordanaiRaki%C4%87>,
+        <http://ceur-ws.org/Vol-1053/#JozefiKolek>,
+        <http://ceur-ws.org/Vol-1053/#Milo%C5%A1iSavi%C4%87> .
+
+<http://ceur-ws.org/Vol-1053/#sqamia2013paper7> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1053/> ;
+    ns5:title "Software Engineering Solutions for Improving the Regression Testing Methods in Scientific Applications Development" ;
+    ns4:endPage 61 ;
+    ns4:numPages 9 ;
+    ns4:startPage 53 ;
+    ns3:author <http://ceur-ws.org/Vol-1053/#AnastasiMishev>,
+        <http://ceur-ws.org/Vol-1053/#BojanaiKoteska>,
+        <http://ceur-ws.org/Vol-1053/#LjupcoiPejov> .
+
+<http://ceur-ws.org/Vol-1053/#MarjaniHeri%26ccaron> a ns1:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/MarjaniHeri%26ccaron> ;
+    ns1:made <http://ceur-ws.org/Vol-1053/#sqamia2013paper11>,
+        <http://ceur-ws.org/Vol-1053/#sqamia2013paper12>,
+        <http://ceur-ws.org/Vol-1053/#sqamia2013paper13>,
+        <http://ceur-ws.org/Vol-1053/#sqamia2013paper3>,
+        <http://ceur-ws.org/Vol-1053/#sqamia2013paper4> ;
+    ns1:name "Marjan Heri&ccaron" .
+
+<http://ceur-ws.org/Vol-1053/#ZoraniBudimac> a ns1:Person ;
+    ns3:affiliation "" ;
+    ns2:sameAs <http://ceur-ws.org/persons/ZoraniBudimac> ;
+    ns1:made <http://ceur-ws.org/Vol-1053/#sqamia2013paper10>,
+        <http://ceur-ws.org/Vol-1053/#sqamia2013paper11>,
+        <http://ceur-ws.org/Vol-1053/#sqamia2013paper12>,
+        <http://ceur-ws.org/Vol-1053/#sqamia2013paper9> ;
+    ns1:name "Zoran Budimac" .
+
+<http://ceur-ws.org/Vol-1053/#sqamia2013paper3> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1053/> ;
+    ns5:title "Using Object Oriented Software Metrics for Mobile Application Development" ;
+    ns4:endPage 27 ;
+    ns4:numPages 11 ;
+    ns4:startPage 17 ;
+    ns3:author <http://ceur-ws.org/Vol-1053/#GregoriJo%C5%A1t>,
+        <http://ceur-ws.org/Vol-1053/#JernejiHuber>,
+        <http://ceur-ws.org/Vol-1053/#JozefiKolek>,
+        <http://ceur-ws.org/Vol-1053/#MarjaniHeri%26ccaron> .
+
+<http://ceur-ws.org/Vol-1053/#JozefiKolek> a ns1:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/JozefiKolek> ;
+    ns1:made <http://ceur-ws.org/Vol-1053/#sqamia2013paper11>,
+        <http://ceur-ws.org/Vol-1053/#sqamia2013paper12>,
+        <http://ceur-ws.org/Vol-1053/#sqamia2013paper13>,
+        <http://ceur-ws.org/Vol-1053/#sqamia2013paper3>,
+        <http://ceur-ws.org/Vol-1053/#sqamia2013paper4>,
+        <http://ceur-ws.org/Vol-1053/#sqamia2013paper5> ;
+    ns1:name "Jozef Kolek" .
+
+<http://ceur-ws.org/Vol-1053/#sqamia2013paper11> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1053/> ;
+    ns5:title "Redefining Software Quality Metrics to XML Schema Needs" ;
+    ns4:endPage 93 ;
+    ns4:numPages 7 ;
+    ns4:startPage 87 ;
+    ns3:author <http://ceur-ws.org/Vol-1053/#Bo%C5%A1tjani%C5%A0umak>,
+        <http://ceur-ws.org/Vol-1053/#JozefiKolek>,
+        <http://ceur-ws.org/Vol-1053/#MajaiPu%C5%A1nik>,
+        <http://ceur-ws.org/Vol-1053/#MarjaniHeri%26ccaron>,
+        <http://ceur-ws.org/Vol-1053/#ZoraniBudimac> .
+
+<http://ceur-ws.org/Vol-1053/#sqamia2013paper12> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1053/> ;
+    ns5:title "SSQSA Ontology Metrics Front-End" ;
+    ns4:endPage 101 ;
+    ns4:numPages 7 ;
+    ns4:startPage 95 ;
+    ns3:author <http://ceur-ws.org/Vol-1053/#GordanaiRaki%C4%87>,
+        <http://ceur-ws.org/Vol-1053/#JozefiKolek>,
+        <http://ceur-ws.org/Vol-1053/#MarjaniHeri%26ccaron>,
+        <http://ceur-ws.org/Vol-1053/#Milo%C5%A1iSavi%C4%87>,
+        <http://ceur-ws.org/Vol-1053/#MirjanaiIvanovi%C4%87>,
+        <http://ceur-ws.org/Vol-1053/#ZoraniBudimac> .
+
+<http://ceur-ws.org/Vol-1053/#sqamia2013paper6> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1053/> ;
+    ns5:title "Towards New User Interfaces Based on Gesture and Sound Identification" ;
+    ns4:endPage 52 ;
+    ns4:numPages 8 ;
+    ns4:startPage 45 ;
+    ns3:author <http://ceur-ws.org/Vol-1053/#>,
+        <http://ceur-ws.org/Vol-1053/#Bo%C5%A1tjaniArzen%C5%A1ek>,
+        <http://ceur-ws.org/Vol-1053/#KristijaniKo%C5%A1i%26ccaron>,
+        <http://ceur-ws.org/Vol-1053/#LukaiPavli%26ccaron>,
+        <http://ceur-ws.org/Vol-1053/#MatejiVogrin%26ccaron>,
+        <http://ceur-ws.org/Vol-1053/#Sa%C5%A1aiKuhar> .
+
+<http://ceur-ws.org/Vol-1053/> a ns6:Proceedings ;
+    ns6:hasPart <http://ceur-ws.org/Vol-1053/#sqamia2013paper1>,
+        <http://ceur-ws.org/Vol-1053/#sqamia2013paper10>,
+        <http://ceur-ws.org/Vol-1053/#sqamia2013paper11>,
+        <http://ceur-ws.org/Vol-1053/#sqamia2013paper12>,
+        <http://ceur-ws.org/Vol-1053/#sqamia2013paper13>,
+        <http://ceur-ws.org/Vol-1053/#sqamia2013paper2>,
+        <http://ceur-ws.org/Vol-1053/#sqamia2013paper3>,
+        <http://ceur-ws.org/Vol-1053/#sqamia2013paper4>,
+        <http://ceur-ws.org/Vol-1053/#sqamia2013paper5>,
+        <http://ceur-ws.org/Vol-1053/#sqamia2013paper6>,
+        <http://ceur-ws.org/Vol-1053/#sqamia2013paper7>,
+        <http://ceur-ws.org/Vol-1053/#sqamia2013paper8>,
+        <http://ceur-ws.org/Vol-1053/#sqamia2013paper9> ;
+    ns9:issued "2013-10-01T00:00:00+00:00"^^xsd:dateTime ;
+    ns4:presentedAt <http://ceur-ws.org/Vol-1053/#event> ;
+    ns3:editor <http://ceur-ws.org/Vol-1053/#ZoraniBudimac> .
 

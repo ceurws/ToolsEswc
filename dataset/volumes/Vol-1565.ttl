@@ -1,41 +1,227 @@
-@prefix ns1: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns1: <http://data.semanticweb.org/ns/swc/ontology/#> .
 @prefix ns2: <http://xmlns.com/foaf/0.1/> .
 @prefix ns3: <http://www.w3.org/2002/07/owl#> .
 @prefix ns4: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns5: <http://purl.org/dc/elements/1.1/> .
-@prefix ns6: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns8: <http://purl.org/ontology/bibo/#> .
+@prefix ns5: <http://purl.org/ontology/bibo/#> .
+@prefix ns6: <http://purl.org/dc/elements/1.1/> .
+@prefix ns7: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns9: <http://purl.org/NET/c4dm/timeline.owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1565/> a ns6:Proceedings ;
-    ns7:issued "2016-03-13T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:presentedAt <http://ceur-ws.org/Vol-1565/#event> ;
-    ns4:editor <http://ceur-ws.org/Vol-1565/#JohniMarkiAgosta>,
-        <http://ceur-ws.org/Vol-1565/#RommeliNovaesiCarvalho> .
+<http://ceur-ws.org/Vol-1565/#AnniNicholson> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/AnniNicholson> ;
+    ns2:made <http://ceur-ws.org/Vol-1565/#bmaw2015_paper3> ;
+    ns2:name "Ann Nicholson" .
+
+<http://ceur-ws.org/Vol-1565/#AnthonyiConstantinou> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/AnthonyiConstantinou> ;
+    ns2:made <http://ceur-ws.org/Vol-1565/#bmaw2015_paper1> ;
+    ns2:name "Anthony Constantinou" .
+
+<http://ceur-ws.org/Vol-1565/#BarbarosiYet> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/BarbarosiYet> ;
+    ns2:made <http://ceur-ws.org/Vol-1565/#bmaw2015_paper1> ;
+    ns2:name "Barbaros Yet" .
+
+<http://ceur-ws.org/Vol-1565/#EikeiLuedeling> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/EikeiLuedeling> ;
+    ns2:made <http://ceur-ws.org/Vol-1565/#bmaw2015_paper1> ;
+    ns2:name "Eike Luedeling" .
 
 <http://ceur-ws.org/Vol-1565/#JohniMarkiAgosta> a ns2:Person ;
+    ns4:affiliation "" ;
     ns3:sameAs <http://ceur-ws.org/persons/JohniMarkiAgosta> ;
     ns2:name "John Mark Agosta" .
 
+<http://ceur-ws.org/Vol-1565/#KeithiShepherd> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/KeithiShepherd> ;
+    ns2:made <http://ceur-ws.org/Vol-1565/#bmaw2015_paper1> ;
+    ns2:name "Keith Shepherd" .
+
+<http://ceur-ws.org/Vol-1565/#KeviniKorb> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/KeviniKorb> ;
+    ns2:made <http://ceur-ws.org/Vol-1565/#bmaw2015_paper3> ;
+    ns2:name "Kevin Korb" .
+
+<http://ceur-ws.org/Vol-1565/#MarcusiBendtsen> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/MarcusiBendtsen> ;
+    ns2:made <http://ceur-ws.org/Vol-1565/#bmaw2015_paper2> ;
+    ns2:name "Marcus Bendtsen" .
+
+<http://ceur-ws.org/Vol-1565/#MartiniNeil> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/MartiniNeil> ;
+    ns2:made <http://ceur-ws.org/Vol-1565/#bmaw2015_paper1> ;
+    ns2:name "Martin Neil" .
+
+<http://ceur-ws.org/Vol-1565/#MartiniPlajner> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/MartiniPlajner> ;
+    ns2:made <http://ceur-ws.org/Vol-1565/#bmaw2015_paper5> ;
+    ns2:name "Martin Plajner" .
+
+<http://ceur-ws.org/Vol-1565/#NormaniFenton> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/NormaniFenton> ;
+    ns2:made <http://ceur-ws.org/Vol-1565/#bmaw2015_paper1> ;
+    ns2:name "Norman Fenton" .
+
 <http://ceur-ws.org/Vol-1565/#RommeliNovaesiCarvalho> a ns2:Person ;
+    ns4:affiliation "" ;
     ns3:sameAs <http://ceur-ws.org/persons/RommeliNovaesiCarvalho> ;
     ns2:name "Rommel Novaes Carvalho" .
 
-<http://ceur-ws.org/Vol-1565/#event> a ns6:WorkshopEvent ;
-    ns6:hasLocation <http://dbpedia.org/resource/Netherlands> ;
-    ns6:hasPart <http://ceur-ws.org/Vol-1565/#part-BMAW> ;
-    ns6:isSubEventOf <http://ceur-ws.org/Vol-1565/#conf> ;
-    ns1:beginsAtDatetime "2015-07-16T00:00:00+00:00"^^xsd:dateTime ;
-    ns1:endsAtDatetime "2015-07-16T00:00:00+00:00"^^xsd:dateTime ;
-    ns5:license "http://creativecommons.org/publicdomain/zero/1.0/" ;
+<http://ceur-ws.org/Vol-1565/#RusselliAlmond> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/RusselliAlmond> ;
+    ns2:made <http://ceur-ws.org/Vol-1565/#bmaw2015_paper4> ;
+    ns2:name "Russell Almond" .
+
+<http://ceur-ws.org/Vol-1565/#SumingiChen> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/SumingiChen> ;
+    ns2:made <http://ceur-ws.org/Vol-1565/#bmaw2015_paper6> ;
+    ns2:name "Suming Chen" .
+
+<http://ceur-ws.org/Vol-1565/#TaliBoneh> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/TaliBoneh> ;
+    ns2:made <http://ceur-ws.org/Vol-1565/#bmaw2015_paper3> ;
+    ns2:name "Tal Boneh" .
+
+<http://ceur-ws.org/Vol-1565/#V%C3%A1claviKratochv%C3%ADl> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/V%C3%A1claviKratochv%C3%ADl> ;
+    ns2:made <http://ceur-ws.org/Vol-1565/#bmaw2015_paper7> ;
+    ns2:name "Václav Kratochvíl" .
+
+<http://ceur-ws.org/Vol-1565/#VitalyiSchetinin> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/VitalyiSchetinin> ;
+    ns2:made <http://ceur-ws.org/Vol-1565/#bmaw2015_paper8> ;
+    ns2:name "Vitaly Schetinin" .
+
+<http://ceur-ws.org/Vol-1565/#XuhuiiZhang> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/XuhuiiZhang> ;
+    ns2:made <http://ceur-ws.org/Vol-1565/#bmaw2015_paper3> ;
+    ns2:name "Xuhui Zhang" .
+
+<http://ceur-ws.org/Vol-1565/#event> a ns1:WorkshopEvent ;
+    ns1:hasLocation <http://dbpedia.org/resource/Netherlands> ;
+    ns1:hasPart <http://ceur-ws.org/Vol-1565/#part-BMAW> ;
+    ns1:isSubEventOf <http://ceur-ws.org/Vol-1565/#conf> ;
+    ns9:beginsAtDatetime "2015-07-16T00:00:00+00:00"^^xsd:dateTime ;
+    ns9:endsAtDatetime "2015-07-16T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:license "http://creativecommons.org/publicdomain/zero/1.0/" ;
     rdfs:seeAlso <http://ceur-ws.org/Vol-1024/#event>,
         <http://ceur-ws.org/Vol-1218/#event>,
         <http://ceur-ws.org/Vol-268/#event>,
         <http://ceur-ws.org/Vol-406/#event>,
         <http://ceur-ws.org/Vol-818/#event>,
         <http://ceur-ws.org/Vol-962/#event> .
+
+<http://ceur-ws.org/Vol-1565/#bmaw2015_paper2> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1565/> ;
+    ns7:title "Bayesian Optimisation of Gated Bayesian Networks for Algorithmic Trading" ;
+    ns5:endPage 11 ;
+    ns5:numPages 10 ;
+    ns5:section <http://ceur-ws.org/Vol-1565/#Session1RiskIvestmentandTool> ;
+    ns5:startPage 2 ;
+    ns4:author <http://ceur-ws.org/Vol-1565/#MarcusiBendtsen> .
+
+<http://ceur-ws.org/Vol-1565/#bmaw2015_paper4> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1565/> ;
+    ns7:title "An IRT-based Parameterization for Conditional Probability Tables" ;
+    ns5:endPage 23 ;
+    ns5:numPages 10 ;
+    ns5:section <http://ceur-ws.org/Vol-1565/#Session2Education> ;
+    ns5:startPage 14 ;
+    ns4:author <http://ceur-ws.org/Vol-1565/#RusselliAlmond> .
+
+<http://ceur-ws.org/Vol-1565/#bmaw2015_paper5> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1565/> ;
+    ns7:title "Bayesian Network Models for Adaptive Testing" ;
+    ns5:endPage 33 ;
+    ns5:numPages 10 ;
+    ns5:section <http://ceur-ws.org/Vol-1565/#Session2Education> ;
+    ns5:startPage 24 ;
+    ns4:author <http://ceur-ws.org/Vol-1565/#MartiniPlajner> .
+
+<http://ceur-ws.org/Vol-1565/#bmaw2015_paper6> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1565/> ;
+    ns7:title "Computer Adaptive Testing Using the Same-Decision Probability" ;
+    ns5:endPage 43 ;
+    ns5:numPages 10 ;
+    ns5:section <http://ceur-ws.org/Vol-1565/#Session2Education> ;
+    ns5:startPage 34 ;
+    ns4:author <http://ceur-ws.org/Vol-1565/#SumingiChen> .
+
+<http://ceur-ws.org/Vol-1565/#bmaw2015_paper7> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1565/> ;
+    ns7:title "Influence Diagrams for the Optimization of a Vehicle Speed Profile" ;
+    ns5:endPage 53 ;
+    ns5:numPages 10 ;
+    ns5:section <http://ceur-ws.org/Vol-1565/#Session3VehicleandAircraftApplications> ;
+    ns5:startPage 44 ;
+    ns4:author <http://ceur-ws.org/Vol-1565/#V%C3%A1claviKratochv%C3%ADl> .
+
+<http://ceur-ws.org/Vol-1565/#bmaw2015_paper8> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1565/> ;
+    ns7:title "Bayesian Predictive Modelling: Application to Aircraft Short-Term Conflict Alert System" ;
+    ns5:endPage 61 ;
+    ns5:numPages 8 ;
+    ns5:section <http://ceur-ws.org/Vol-1565/#Session3VehicleandAircraftApplications> ;
+    ns5:startPage 54 ;
+    ns4:author <http://ceur-ws.org/Vol-1565/#VitalyiSchetinin> .
+
+<http://ceur-ws.org/Vol-1565/#Session3VehicleandAircraftApplications> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-1565/> ;
+    ns7:title "Session 3: Vehicle and Aircraft Applications" .
+
+<http://ceur-ws.org/Vol-1565/#Session1RiskIvestmentandTool> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-1565/> ;
+    ns7:title "Session 1: Risk, Ivestment, and Tool" .
+
+<http://ceur-ws.org/Vol-1565/#Session2Education> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-1565/> ;
+    ns7:title "Session 2: Education" .
+
+<http://ceur-ws.org/Vol-1565/#bmaw2015_paper3> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1565/> ;
+    ns7:title "A Tool for Visualising the Output of a DBN for Fog Forecasting" ;
+    ns5:endPage 13 ;
+    ns5:numPages 2 ;
+    ns5:section <http://ceur-ws.org/Vol-1565/#Session1RiskIvestmentandTool> ;
+    ns5:startPage 12 ;
+    ns4:author <http://ceur-ws.org/Vol-1565/#AnniNicholson>,
+        <http://ceur-ws.org/Vol-1565/#KeviniKorb>,
+        <http://ceur-ws.org/Vol-1565/#TaliBoneh>,
+        <http://ceur-ws.org/Vol-1565/#XuhuiiZhang> .
+
+<http://ceur-ws.org/Vol-1565/#bmaw2015_paper1> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1565/> ;
+    ns7:title "Project Cost, Benefit and Risk Analysis using Bayesian Networks" ;
+    ns5:endPage 1 ;
+    ns5:numPages 1 ;
+    ns5:section <http://ceur-ws.org/Vol-1565/#Session1RiskIvestmentandTool> ;
+    ns5:startPage 1 ;
+    ns4:author <http://ceur-ws.org/Vol-1565/#AnthonyiConstantinou>,
+        <http://ceur-ws.org/Vol-1565/#BarbarosiYet>,
+        <http://ceur-ws.org/Vol-1565/#EikeiLuedeling>,
+        <http://ceur-ws.org/Vol-1565/#KeithiShepherd>,
+        <http://ceur-ws.org/Vol-1565/#MartiniNeil>,
+        <http://ceur-ws.org/Vol-1565/#NormaniFenton> .
+
+<http://ceur-ws.org/Vol-1565/> a ns1:Proceedings ;
+    ns1:hasPart <http://ceur-ws.org/Vol-1565/#bmaw2015_paper1>,
+        <http://ceur-ws.org/Vol-1565/#bmaw2015_paper2>,
+        <http://ceur-ws.org/Vol-1565/#bmaw2015_paper3>,
+        <http://ceur-ws.org/Vol-1565/#bmaw2015_paper4>,
+        <http://ceur-ws.org/Vol-1565/#bmaw2015_paper5>,
+        <http://ceur-ws.org/Vol-1565/#bmaw2015_paper6>,
+        <http://ceur-ws.org/Vol-1565/#bmaw2015_paper7>,
+        <http://ceur-ws.org/Vol-1565/#bmaw2015_paper8> ;
+    ns1:hasSession <http://ceur-ws.org/Vol-1565/#Session1RiskIvestmentandTool>,
+        <http://ceur-ws.org/Vol-1565/#Session2Education>,
+        <http://ceur-ws.org/Vol-1565/#Session3VehicleandAircraftApplications> ;
+    ns8:issued "2016-03-13T00:00:00+00:00"^^xsd:dateTime ;
+    ns5:presentedAt <http://ceur-ws.org/Vol-1565/#event> ;
+    ns4:editor <http://ceur-ws.org/Vol-1565/#JohniMarkiAgosta>,
+        <http://ceur-ws.org/Vol-1565/#RommeliNovaesiCarvalho> .
 

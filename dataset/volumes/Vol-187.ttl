@@ -1,12 +1,12 @@
 @prefix ns1: <http://www.w3.org/2002/07/owl#> .
 @prefix ns2: <http://xmlns.com/foaf/0.1/> .
-@prefix ns3: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns4: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns5: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns6: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns7: <http://purl.org/dc/elements/1.1/> .
+@prefix ns3: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns4: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns5: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns6: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix ns8: <http://purl.org/ontology/bibo/#> .
-@prefix ns9: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns9: <http://purl.org/dc/elements/1.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -33,7 +33,7 @@
     ns2:name "Christine J. Sandom" .
 
 <http://ceur-ws.org/Vol-187/#Editediby> a ns2:Person ;
-    ns3:affiliation "" ;
+    ns4:affiliation "" ;
     ns1:sameAs <http://ceur-ws.org/persons/Editediby> ;
     ns2:name "Edited by" .
 
@@ -63,7 +63,7 @@
     ns2:name "Harald Sack" .
 
 <http://ceur-ws.org/Vol-187/#HeikoiStoermer> a ns2:Person ;
-    ns3:affiliation "" ;
+    ns4:affiliation "" ;
     ns1:sameAs <http://ceur-ws.org/persons/HeikoiStoermer> ;
     ns2:name "Heiko Stoermer" .
 
@@ -73,7 +73,7 @@
     ns2:name "Jörg Waitelonis" .
 
 <http://ceur-ws.org/Vol-187/#Jean-PierreiChanod> a ns2:Person ;
-    ns3:affiliation "" ;
+    ns4:affiliation "" ;
     ns1:sameAs <http://ceur-ws.org/persons/Jean-PierreiChanod> ;
     ns2:name "Jean-Pierre Chanod" .
 
@@ -207,111 +207,111 @@
     ns2:made <http://ceur-ws.org/Vol-187/#20> ;
     ns2:name "Xavier Serra" .
 
-<http://ceur-ws.org/Vol-187/#event> a ns4:WorkshopEvent ;
-    ns4:hasLocation <http://dbpedia.org/resource/Montenegro> ;
-    ns4:hasPart <http://ceur-ws.org/Vol-187/#part-ws> ;
-    ns4:isSubEventOf <http://ceur-ws.org/Vol-187/#conf> ;
-    ns6:beginsAtDatetime "2006-06-28T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:endsAtDatetime "2006-06-28T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:license "http://choosealicense.com/licenses/no-license/" .
+<http://ceur-ws.org/Vol-187/#event> a ns3:WorkshopEvent ;
+    ns3:hasLocation <http://dbpedia.org/resource/Montenegro> ;
+    ns3:hasPart <http://ceur-ws.org/Vol-187/#part-MTG> ;
+    ns3:isSubEventOf <http://ceur-ws.org/Vol-187/#conf> ;
+    ns5:beginsAtDatetime "2016-06-11T00:00:00+00:00"^^xsd:dateTime ;
+    ns5:endsAtDatetime "2016-06-11T00:00:00+00:00"^^xsd:dateTime ;
+    ns9:license "http://choosealicense.com/licenses/no-license/" .
 
-<http://ceur-ws.org/Vol-187/#11> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-187/> ;
-    ns5:title "OntoPop or how to annotate documents and populate ontologies from texts" ;
-    ns3:author <http://ceur-ws.org/Vol-187/#FlorenceiAmardeilh> .
+<http://ceur-ws.org/Vol-187/#11> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-187/> ;
+    ns6:title "OntoPop or how to annotate documents and populate ontologies from texts" ;
+    ns4:author <http://ceur-ws.org/Vol-187/#FlorenceiAmardeilh> .
 
-<http://ceur-ws.org/Vol-187/#23> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-187/> ;
-    ns5:title "Automating the Semantic Annotation of Geodata" ;
-    ns3:author <http://ceur-ws.org/Vol-187/#EvaiMarieiKlien> .
+<http://ceur-ws.org/Vol-187/#23> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-187/> ;
+    ns6:title "Automating the Semantic Annotation of Geodata" ;
+    ns4:author <http://ceur-ws.org/Vol-187/#EvaiMarieiKlien> .
 
 <http://ceur-ws.org/Vol-187/#ClaudiaiNieder%C3%A9e> a ns2:Person ;
-    ns3:affiliation "" ;
+    ns4:affiliation "" ;
     ns1:sameAs <http://ceur-ws.org/persons/ClaudiaiNieder%C3%A9e> ;
     ns2:made <http://ceur-ws.org/Vol-187/#16> ;
     ns2:name "Claudia Niederée" .
 
 <http://ceur-ws.org/Vol-187/#PaoloiBouquet> a ns2:Person ;
-    ns3:affiliation "" ;
+    ns4:affiliation "" ;
     ns1:sameAs <http://ceur-ws.org/persons/PaoloiBouquet> ;
     ns2:made <http://ceur-ws.org/Vol-187/#16> ;
     ns2:name "Paolo Bouquet" .
 
 <http://ceur-ws.org/Vol-187/#RobertoiBrunelli> a ns2:Person ;
-    ns3:affiliation "" ;
+    ns4:affiliation "" ;
     ns1:sameAs <http://ceur-ws.org/persons/RobertoiBrunelli> ;
     ns2:made <http://ceur-ws.org/Vol-187/#16> ;
     ns2:name "Roberto Brunelli" .
 
-<http://ceur-ws.org/Vol-187/#08> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-187/> ;
-    ns5:title "Automated Annotation of Synchronized Multimedia Presentations" ;
-    ns3:author <http://ceur-ws.org/Vol-187/#HaraldiSack>,
+<http://ceur-ws.org/Vol-187/#08> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-187/> ;
+    ns6:title "Automated Annotation of Synchronized Multimedia Presentations" ;
+    ns4:author <http://ceur-ws.org/Vol-187/#HaraldiSack>,
         <http://ceur-ws.org/Vol-187/#J%C3%B6rgiWaitelonis> .
 
-<http://ceur-ws.org/Vol-187/#09> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-187/> ;
-    ns5:title "Learning term to concept mapping: an ontology based approach" ;
-    ns3:author <http://ceur-ws.org/Vol-187/#SylvieiDespr%C3%A8s>,
+<http://ceur-ws.org/Vol-187/#09> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-187/> ;
+    ns6:title "Learning term to concept mapping: an ontology based approach" ;
+    ns4:author <http://ceur-ws.org/Vol-187/#SylvieiDespr%C3%A8s>,
         <http://ceur-ws.org/Vol-187/#ValentinaiCeausu> .
 
-<http://ceur-ws.org/Vol-187/#25> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-187/> ;
-    ns5:title "Utilize Probabilistic Topic Models to Enrich Knowledge Base" ;
-    ns3:author <http://ceur-ws.org/Vol-187/#Avar%C3%A9iStewart>,
+<http://ceur-ws.org/Vol-187/#25> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-187/> ;
+    ns6:title "Utilize Probabilistic Topic Models to Enrich Knowledge Base" ;
+    ns4:author <http://ceur-ws.org/Vol-187/#Avar%C3%A9iStewart>,
         <http://ceur-ws.org/Vol-187/#LauraiDietz> .
 
-<http://ceur-ws.org/Vol-187/#26> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-187/> ;
-    ns5:title "On the Design and Exploitation of Presentation Ontologies for Information Extraction" ;
-    ns3:author <http://ceur-ws.org/Vol-187/#MartiniLabsk%C3%BD>,
+<http://ceur-ws.org/Vol-187/#26> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-187/> ;
+    ns6:title "On the Design and Exploitation of Presentation Ontologies for Information Extraction" ;
+    ns4:author <http://ceur-ws.org/Vol-187/#MartiniLabsk%C3%BD>,
         <http://ceur-ws.org/Vol-187/#VojtechiSv%C3%A1tek> .
 
-<http://ceur-ws.org/Vol-187/#07> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-187/> ;
-    ns5:title "Extracting Art Style Periods from the Web" ;
-    ns3:author <http://ceur-ws.org/Vol-187/#BobiJ.iWielinga>,
+<http://ceur-ws.org/Vol-187/#07> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-187/> ;
+    ns6:title "Extracting Art Style Periods from the Web" ;
+    ns4:author <http://ceur-ws.org/Vol-187/#BobiJ.iWielinga>,
         <http://ceur-ws.org/Vol-187/#MaartenivaniSomeren>,
         <http://ceur-ws.org/Vol-187/#ViktorideiBoer> .
 
-<http://ceur-ws.org/Vol-187/#20> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-187/> ;
-    ns5:title "Bridging the Music Semantic Gap" ;
-    ns3:author <http://ceur-ws.org/Vol-187/#%C3%92scariCelma>,
+<http://ceur-ws.org/Vol-187/#20> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-187/> ;
+    ns6:title "Bridging the Music Semantic Gap" ;
+    ns4:author <http://ceur-ws.org/Vol-187/#%C3%92scariCelma>,
         <http://ceur-ws.org/Vol-187/#PerfectoiHerrera>,
         <http://ceur-ws.org/Vol-187/#XavieriSerra> .
 
-<http://ceur-ws.org/Vol-187/#19> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-187/> ;
-    ns5:title "The Conference Participant Advisor Service in a Virtual Information and Knowledge Environment Framework" ;
-    ns3:author <http://ceur-ws.org/Vol-187/#G.iSemeraro>,
+<http://ceur-ws.org/Vol-187/#19> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-187/> ;
+    ns6:title "The Conference Participant Advisor Service in a Virtual Information and Knowledge Environment Framework" ;
+    ns4:author <http://ceur-ws.org/Vol-187/#G.iSemeraro>,
         <http://ceur-ws.org/Vol-187/#M.iDegemmis>,
         <http://ceur-ws.org/Vol-187/#P.iBasile>,
         <http://ceur-ws.org/Vol-187/#P.iLops> .
 
-<http://ceur-ws.org/Vol-187/#04> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-187/> ;
-    ns5:title "Semantic Information Elicitation from Unstructured Medical Records" ;
-    ns3:author <http://ceur-ws.org/Vol-187/#LorenzoiGallucci>,
+<http://ceur-ws.org/Vol-187/#04> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-187/> ;
+    ns6:title "Semantic Information Elicitation from Unstructured Medical Records" ;
+    ns4:author <http://ceur-ws.org/Vol-187/#LorenzoiGallucci>,
         <http://ceur-ws.org/Vol-187/#MarcoiManna>,
         <http://ceur-ws.org/Vol-187/#MariaritaiPizzonia>,
         <http://ceur-ws.org/Vol-187/#MassimoiRuffolo>,
         <http://ceur-ws.org/Vol-187/#VittoriaiCozza> .
 
-<http://ceur-ws.org/Vol-187/#10> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-187/> ;
-    ns5:title "Bridging the Semantic Gap in Multimedia Information Retrieval - Top-down and Bottom-up Approaches" ;
-    ns3:author <http://ceur-ws.org/Vol-187/#ChristineiJ.iSandom>,
+<http://ceur-ws.org/Vol-187/#10> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-187/> ;
+    ns6:title "Bridging the Semantic Gap in Multimedia Information Retrieval - Top-down and Bottom-up Approaches" ;
+    ns4:author <http://ceur-ws.org/Vol-187/#ChristineiJ.iSandom>,
         <http://ceur-ws.org/Vol-187/#JonathoniS.iHare>,
         <http://ceur-ws.org/Vol-187/#KirkiMartinez>,
         <http://ceur-ws.org/Vol-187/#PatrickiA.S.iSinclair>,
         <http://ceur-ws.org/Vol-187/#PauliH.iLewis>,
         <http://ceur-ws.org/Vol-187/#PeteriG.iB.iEnser> .
 
-<http://ceur-ws.org/Vol-187/#16> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-187/> ;
-    ns5:title "Enabling a Knowledge Supply Chain: FromContent Resources toOntologies" ;
-    ns3:author <http://ceur-ws.org/Vol-187/#ClaudiaiNieder%C3%A9e>,
+<http://ceur-ws.org/Vol-187/#16> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-187/> ;
+    ns6:title "Enabling a Knowledge Supply Chain: FromContent Resources toOntologies" ;
+    ns4:author <http://ceur-ws.org/Vol-187/#ClaudiaiNieder%C3%A9e>,
         <http://ceur-ws.org/Vol-187/#GeorgeiDemetriou>,
         <http://ceur-ws.org/Vol-187/#PaoloiBouquet>,
         <http://ceur-ws.org/Vol-187/#RobertoiBrunelli>,
@@ -320,8 +320,8 @@
         <http://ceur-ws.org/Vol-187/#SimonettaiMontemagni>,
         <http://ceur-ws.org/Vol-187/#ThierryiJacquin> .
 
-<http://ceur-ws.org/Vol-187/> a ns4:Proceedings ;
-    ns4:hasPart <http://ceur-ws.org/Vol-187/#04>,
+<http://ceur-ws.org/Vol-187/> a ns3:Proceedings ;
+    ns3:hasPart <http://ceur-ws.org/Vol-187/#04>,
         <http://ceur-ws.org/Vol-187/#07>,
         <http://ceur-ws.org/Vol-187/#08>,
         <http://ceur-ws.org/Vol-187/#09>,
@@ -333,9 +333,9 @@
         <http://ceur-ws.org/Vol-187/#23>,
         <http://ceur-ws.org/Vol-187/#25>,
         <http://ceur-ws.org/Vol-187/#26> ;
-    ns9:issued "2006-06-26T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:issued "2006-06-26T00:00:00+00:00"^^xsd:dateTime ;
     ns8:presentedAt <http://ceur-ws.org/Vol-187/#event> ;
-    ns3:editor <http://ceur-ws.org/Vol-187/#ClaudiaiNieder%C3%A9e>,
+    ns4:editor <http://ceur-ws.org/Vol-187/#ClaudiaiNieder%C3%A9e>,
         <http://ceur-ws.org/Vol-187/#Editediby>,
         <http://ceur-ws.org/Vol-187/#HeikoiStoermer>,
         <http://ceur-ws.org/Vol-187/#Jean-PierreiChanod>,

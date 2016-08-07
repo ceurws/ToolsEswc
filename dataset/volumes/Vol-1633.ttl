@@ -1,36 +1,363 @@
-@prefix ns1: <http://xmlns.com/foaf/0.1/> .
-@prefix ns2: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns3: <http://www.w3.org/2002/07/owl#> .
-@prefix ns4: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns5: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns1: <http://www.w3.org/2002/07/owl#> .
+@prefix ns2: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns3: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns4: <http://xmlns.com/foaf/0.1/> .
+@prefix ns5: <http://data.semanticweb.org/ns/swc/ontology/#> .
 @prefix ns6: <http://purl.org/ontology/bibo/#> .
 @prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
 @prefix ns8: <http://purl.org/dc/elements/1.1/> .
+@prefix ns9: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1633/> a ns4:Proceedings ;
-    ns2:issued "2016-07-29T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:presentedAt <http://ceur-ws.org/Vol-1633/#event> ;
-    ns5:editor <http://ceur-ws.org/Vol-1633/#EricaiSnow>,
-        <http://ceur-ws.org/Vol-1633/#JonathaniP.iRowe> .
+<http://ceur-ws.org/Vol-1633/#AlexiRudniy> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/AlexiRudniy> ;
+    ns4:made <http://ceur-ws.org/Vol-1633/#ws2-paper2> ;
+    ns4:name "Alex Rudniy" .
 
-<http://ceur-ws.org/Vol-1633/#EricaiSnow> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/EricaiSnow> ;
-    ns1:name "Erica Snow" .
+<http://ceur-ws.org/Vol-1633/#AlokiBaikadi> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/AlokiBaikadi> ;
+    ns4:made <http://ceur-ws.org/Vol-1633/#ws1-paper7> ;
+    ns4:name "Alok Baikadi" .
 
-<http://ceur-ws.org/Vol-1633/#JonathaniP.iRowe> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/JonathaniP.iRowe> ;
-    ns1:name "Jonathan P. Rowe" .
+<http://ceur-ws.org/Vol-1633/#AndreiDeiWaal> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/AndreiDeiWaal> ;
+    ns4:made <http://ceur-ws.org/Vol-1633/#tu1-intro> ;
+    ns4:name "Andre De Waal" .
 
-<http://ceur-ws.org/Vol-1633/#event> a ns4:WorkshopEvent ;
-    ns4:hasLocation <http://dbpedia.org/resource/United_States> ;
-    ns4:hasPart <http://ceur-ws.org/Vol-1633/#part-ws> ;
-    ns4:isSubEventOf <http://ceur-ws.org/Vol-1633/#conf> ;
+<http://ceur-ws.org/Vol-1633/#ChrisiHolcomb> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/ChrisiHolcomb> ;
+    ns4:made <http://ceur-ws.org/Vol-1633/#ws2-paper5> ;
+    ns4:name "Chris Holcomb" .
+
+<http://ceur-ws.org/Vol-1633/#ChristopheriJ.iMacLellan> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/ChristopheriJ.iMacLellan> ;
+    ns4:made <http://ceur-ws.org/Vol-1633/#ws3-paper1> ;
+    ns4:name "Christopher J. MacLellan" .
+
+<http://ceur-ws.org/Vol-1633/#DaiYoungiLee> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/DaiYoungiLee> ;
+    ns4:made <http://ceur-ws.org/Vol-1633/#ws1-paper5> ;
+    ns4:name "Da Young Lee" .
+
+<http://ceur-ws.org/Vol-1633/#DavidiKaufer> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/DavidiKaufer> ;
+    ns4:made <http://ceur-ws.org/Vol-1633/#ws2-paper3> ;
+    ns4:name "David Kaufer" .
+
+<http://ceur-ws.org/Vol-1633/#DeniseiComer> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/DeniseiComer> ;
+    ns4:made <http://ceur-ws.org/Vol-1633/#ws2-paper6> ;
+    ns4:name "Denise Comer" .
+
+<http://ceur-ws.org/Vol-1633/#DmytroiBabik> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/DmytroiBabik> ;
+    ns4:made <http://ceur-ws.org/Vol-1633/#ws1-paper1> ;
+    ns4:name "Dmytro Babik" .
+
+<http://ceur-ws.org/Vol-1633/#EricaiSnow> a ns4:Person ;
+    ns3:affiliation "" ;
+    ns1:sameAs <http://ceur-ws.org/persons/EricaiSnow> ;
+    ns4:name "Erica Snow" .
+
+<http://ceur-ws.org/Vol-1633/#JenniferiSabourin> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/JenniferiSabourin> ;
+    ns4:made <http://ceur-ws.org/Vol-1633/#tu1-intro> ;
+    ns4:name "Jennifer Sabourin" .
+
+<http://ceur-ws.org/Vol-1633/#JoeiMoxley> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/JoeiMoxley> ;
+    ns4:made <http://ceur-ws.org/Vol-1633/#ws2-paper1> ;
+    ns4:name "Joe Moxley" .
+
+<http://ceur-ws.org/Vol-1633/#JonathaniP.iRowe> a ns4:Person ;
+    ns3:affiliation "" ;
+    ns1:sameAs <http://ceur-ws.org/persons/JonathaniP.iRowe> ;
+    ns4:name "Jonathan P. Rowe" .
+
+<http://ceur-ws.org/Vol-1633/#JuliaiMorris> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/JuliaiMorris> ;
+    ns4:made <http://ceur-ws.org/Vol-1633/#ws1-paper4> ;
+    ns4:name "Julia Morris" .
+
+<http://ceur-ws.org/Vol-1633/#MelissaiPatchan> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/MelissaiPatchan> ;
+    ns4:made <http://ceur-ws.org/Vol-1633/#ws1-paper8> ;
+    ns4:name "Melissa Patchan" .
+
+<http://ceur-ws.org/Vol-1633/#MichaeliYudelson> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/MichaeliYudelson> ;
+    ns4:made <http://ceur-ws.org/Vol-1633/#ws3-paper2> ;
+    ns4:name "Michael Yudelson" .
+
+<http://ceur-ws.org/Vol-1633/#RaviiYadav> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/RaviiYadav> ;
+    ns4:made <http://ceur-ws.org/Vol-1633/#ws1-paper9> ;
+    ns4:name "Ravi Yadav" .
+
+<http://ceur-ws.org/Vol-1633/#ScottiMcQuiggan> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/ScottiMcQuiggan> ;
+    ns4:made <http://ceur-ws.org/Vol-1633/#tu1-intro> ;
+    ns4:name "Scott McQuiggan" .
+
+<http://ceur-ws.org/Vol-1633/#ShangiWang> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/ShangiWang> ;
+    ns4:made <http://ceur-ws.org/Vol-1633/#ws3-paper4> ;
+    ns4:name "Shang Wang" .
+
+<http://ceur-ws.org/Vol-1633/#ShayaniDoroudi> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/ShayaniDoroudi> ;
+    ns4:made <http://ceur-ws.org/Vol-1633/#ws3-paper5> ;
+    ns4:name "Shayan Doroudi" .
+
+<http://ceur-ws.org/Vol-1633/#StepheniE.iFancsali> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/StepheniE.iFancsali> ;
+    ns4:made <http://ceur-ws.org/Vol-1633/#ws3-paper3> ;
+    ns4:name "Stephen E. Fancsali" .
+
+<http://ceur-ws.org/Vol-1633/#TristaniNixon> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/TristaniNixon> ;
+    ns4:made <http://ceur-ws.org/Vol-1633/#tu2-intro> ;
+    ns4:name "Tristan Nixon" .
+
+<http://ceur-ws.org/Vol-1633/#ValerieiRoss> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/ValerieiRoss> ;
+    ns4:made <http://ceur-ws.org/Vol-1633/#ws2-paper4> ;
+    ns4:name "Valerie Ross" .
+
+<http://ceur-ws.org/Vol-1633/#YanqingiWang> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/YanqingiWang> ;
+    ns4:made <http://ceur-ws.org/Vol-1633/#ws1-paper11> ;
+    ns4:name "Yanqing Wang" .
+
+<http://ceur-ws.org/Vol-1633/#ZheweiiHu> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/ZheweiiHu> ;
+    ns4:made <http://ceur-ws.org/Vol-1633/#ws1-paper2> ;
+    ns4:name "Zhewei Hu" .
+
+<http://ceur-ws.org/Vol-1633/#event> a ns5:WorkshopEvent ;
+    ns5:hasLocation <http://dbpedia.org/resource/United_States> ;
+    ns5:hasPart <http://ceur-ws.org/Vol-1633/#part-WT-EDM> ;
+    ns5:isSubEventOf <http://ceur-ws.org/Vol-1633/#conf> ;
     ns7:beginsAtDatetime "2016-06-29T00:00:00+00:00"^^xsd:dateTime ;
     ns7:endsAtDatetime "2016-06-29T00:00:00+00:00"^^xsd:dateTime ;
     ns8:license "http://creativecommons.org/publicdomain/zero/1.0/" ;
     rdfs:seeAlso <http://ceur-ws.org/Vol-1446/#event> .
+
+<http://ceur-ws.org/Vol-1633/#FerryiPramudianto> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/FerryiPramudianto> ;
+    ns4:made <http://ceur-ws.org/Vol-1633/#ws1-paper12>,
+        <http://ceur-ws.org/Vol-1633/#ws1-paper6> ;
+    ns4:name "Ferry Pramudianto" .
+
+<http://ceur-ws.org/Vol-1633/#YangiSong> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/YangiSong> ;
+    ns4:made <http://ceur-ws.org/Vol-1633/#ws1-paper10>,
+        <http://ceur-ws.org/Vol-1633/#ws1-paper3> ;
+    ns4:name "Yang Song" .
+
+<http://ceur-ws.org/Vol-1633/#tu2-intro> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1633/> ;
+    ns2:title "Tutorial Summary - Massively Scalable EDM with Spark" ;
+    ns6:section <http://ceur-ws.org/Vol-1633/#organizedbyJenniferSabourinScottMcQuigganAndreDeWaal> ;
+    ns3:author <http://ceur-ws.org/Vol-1633/#TristaniNixon> .
+
+<http://ceur-ws.org/Vol-1633/#ws1-paper1> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1633/> ;
+    ns2:title "Probing the Landscape: Toward a Systematic Taxonomy of Online Peer Assessment Systems in Education" ;
+    ns6:section <http://ceur-ws.org/Vol-1633/#organizedbyEdwardGehringerFerryPramudiantoYangSong> ;
+    ns3:author <http://ceur-ws.org/Vol-1633/#DmytroiBabik> .
+
+<http://ceur-ws.org/Vol-1633/#ws1-paper10> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1633/> ;
+    ns2:title "Toward Better Training in Peer Assessment: Does Calibration Help?" ;
+    ns6:section <http://ceur-ws.org/Vol-1633/#organizedbyEdwardGehringerFerryPramudiantoYangSong> ;
+    ns3:author <http://ceur-ws.org/Vol-1633/#YangiSong> .
+
+<http://ceur-ws.org/Vol-1633/#ws1-paper11> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1633/> ;
+    ns2:title "Choosing a Better Moment to Assign Reviewers in Peer Assessment: The Earlier the Better, or the Later the Better?" ;
+    ns6:section <http://ceur-ws.org/Vol-1633/#organizedbyEdwardGehringerFerryPramudiantoYangSong> ;
+    ns3:author <http://ceur-ws.org/Vol-1633/#YanqingiWang> .
+
+<http://ceur-ws.org/Vol-1633/#ws1-paper12> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1633/> ;
+    ns2:title "Assessing the Quality of Automatic Summarization for Peer Review in Education" ;
+    ns6:section <http://ceur-ws.org/Vol-1633/#organizedbyEdwardGehringerFerryPramudiantoYangSong> ;
+    ns3:author <http://ceur-ws.org/Vol-1633/#FerryiPramudianto> .
+
+<http://ceur-ws.org/Vol-1633/#ws1-paper2> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1633/> ;
+    ns2:title "The Role of Initial Input in Reputation Systems to Generate Accurate Aggregated Grades from Peer Assessment" ;
+    ns6:section <http://ceur-ws.org/Vol-1633/#organizedbyEdwardGehringerFerryPramudiantoYangSong> ;
+    ns3:author <http://ceur-ws.org/Vol-1633/#ZheweiiHu> .
+
+<http://ceur-ws.org/Vol-1633/#ws1-paper3> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1633/> ;
+    ns2:title "Who Took Peer Review Seriously: Another Perspective on Student-Generated Quizzes" ;
+    ns6:section <http://ceur-ws.org/Vol-1633/#organizedbyEdwardGehringerFerryPramudiantoYangSong> ;
+    ns3:author <http://ceur-ws.org/Vol-1633/#YangiSong> .
+
+<http://ceur-ws.org/Vol-1633/#ws1-paper4> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1633/> ;
+    ns2:title "Teaching Students to Give and To Receive: Improving Disciplinary Writing Through Peer Review" ;
+    ns6:section <http://ceur-ws.org/Vol-1633/#organizedbyEdwardGehringerFerryPramudiantoYangSong> ;
+    ns3:author <http://ceur-ws.org/Vol-1633/#JuliaiMorris> .
+
+<http://ceur-ws.org/Vol-1633/#ws1-paper5> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1633/> ;
+    ns2:title "Prediction of Grades for Reviewing with Automated Peer-review and Reputation Metrics" ;
+    ns6:section <http://ceur-ws.org/Vol-1633/#organizedbyEdwardGehringerFerryPramudiantoYangSong> ;
+    ns3:author <http://ceur-ws.org/Vol-1633/#DaiYoungiLee> .
+
+<http://ceur-ws.org/Vol-1633/#ws1-paper6> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1633/> ;
+    ns2:title "Peer Review Data Warehouse: Insights From Different Systems" ;
+    ns6:section <http://ceur-ws.org/Vol-1633/#organizedbyEdwardGehringerFerryPramudiantoYangSong> ;
+    ns3:author <http://ceur-ws.org/Vol-1633/#FerryiPramudianto> .
+
+<http://ceur-ws.org/Vol-1633/#ws1-paper7> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1633/> ;
+    ns2:title "Impact of Revision Planning on Peer-Reviewed Writing" ;
+    ns6:section <http://ceur-ws.org/Vol-1633/#organizedbyEdwardGehringerFerryPramudiantoYangSong> ;
+    ns3:author <http://ceur-ws.org/Vol-1633/#AlokiBaikadi> .
+
+<http://ceur-ws.org/Vol-1633/#ws1-paper8> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1633/> ;
+    ns2:title "When Trying to Be Helpful, Peer Reviews Are Also More Accurate" ;
+    ns6:section <http://ceur-ws.org/Vol-1633/#organizedbyEdwardGehringerFerryPramudiantoYangSong> ;
+    ns3:author <http://ceur-ws.org/Vol-1633/#MelissaiPatchan> .
+
+<http://ceur-ws.org/Vol-1633/#ws1-paper9> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1633/> ;
+    ns2:title "Automated Metareviewing: A Classifier Approach to Assess the Quality of Reviews" ;
+    ns6:section <http://ceur-ws.org/Vol-1633/#organizedbyEdwardGehringerFerryPramudiantoYangSong> ;
+    ns3:author <http://ceur-ws.org/Vol-1633/#RaviiYadav> .
+
+<http://ceur-ws.org/Vol-1633/#ws2-paper1> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1633/> ;
+    ns2:title "Mapping Writing Analytics" ;
+    ns6:section <http://ceur-ws.org/Vol-1633/#organizedbyValRossAlexRudniyJoeMoxleyDavidEubanks> ;
+    ns3:author <http://ceur-ws.org/Vol-1633/#JoeiMoxley> .
+
+<http://ceur-ws.org/Vol-1633/#ws2-paper2> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1633/> ;
+    ns2:title "Collaborative Review in Writing Analytics: N-Gram Analysis of Instructor and Student Comments" ;
+    ns6:section <http://ceur-ws.org/Vol-1633/#organizedbyValRossAlexRudniyJoeMoxleyDavidEubanks> ;
+    ns3:author <http://ceur-ws.org/Vol-1633/#AlexiRudniy> .
+
+<http://ceur-ws.org/Vol-1633/#ws2-paper3> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1633/> ;
+    ns2:title "Corpus Methods and Textual Visualization to Enhance Learning in Core Writing Courses" ;
+    ns6:section <http://ceur-ws.org/Vol-1633/#organizedbyValRossAlexRudniyJoeMoxleyDavidEubanks> ;
+    ns3:author <http://ceur-ws.org/Vol-1633/#DavidiKaufer> .
+
+<http://ceur-ws.org/Vol-1633/#ws2-paper4> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1633/> ;
+    ns2:title "Weighted Log-odds-ratio, Informative Dirichlet Prior Method to Enhance Peer Review Feedback for Low- and High-scoring College Students in a Required First-year Writing Program" ;
+    ns6:section <http://ceur-ws.org/Vol-1633/#organizedbyValRossAlexRudniyJoeMoxleyDavidEubanks> ;
+    ns3:author <http://ceur-ws.org/Vol-1633/#ValerieiRoss> .
+
+<http://ceur-ws.org/Vol-1633/#ws2-paper5> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1633/> ;
+    ns2:title "First-Year Composition as \"Big Data\": Examining Student Revisions at Scale" ;
+    ns6:section <http://ceur-ws.org/Vol-1633/#organizedbyValRossAlexRudniyJoeMoxleyDavidEubanks> ;
+    ns3:author <http://ceur-ws.org/Vol-1633/#ChrisiHolcomb> .
+
+<http://ceur-ws.org/Vol-1633/#ws2-paper6> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1633/> ;
+    ns2:title "Writing Transfer as a Framework for Big Data and Writing Analytics Research" ;
+    ns6:section <http://ceur-ws.org/Vol-1633/#organizedbyValRossAlexRudniyJoeMoxleyDavidEubanks> ;
+    ns3:author <http://ceur-ws.org/Vol-1633/#DeniseiComer> .
+
+<http://ceur-ws.org/Vol-1633/#ws3-paper1> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1633/> ;
+    ns2:title "Investigating the Impact of Slipping Parameters on Additive Factors Model Parameter Estimates" ;
+    ns6:section <http://ceur-ws.org/Vol-1633/#organizedbyJohnStamperKennethKoedingerPhilipPavlikCarolynRoseRanLiuMichaelEagleMichaelYudelsonKalyanVeeramachaneni> ;
+    ns3:author <http://ceur-ws.org/Vol-1633/#ChristopheriJ.iMacLellan> .
+
+<http://ceur-ws.org/Vol-1633/#ws3-paper2> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1633/> ;
+    ns2:title "Regularizing Student Parameters of Individualized Bayesian Knowledge Tracing Model" ;
+    ns6:section <http://ceur-ws.org/Vol-1633/#organizedbyJohnStamperKennethKoedingerPhilipPavlikCarolynRoseRanLiuMichaelEagleMichaelYudelsonKalyanVeeramachaneni> ;
+    ns3:author <http://ceur-ws.org/Vol-1633/#MichaeliYudelson> .
+
+<http://ceur-ws.org/Vol-1633/#ws3-paper3> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1633/> ;
+    ns2:title "Toward Integrating Cognitive Tutor Interaction Data with Human Tutoring Text Dialogue Data in LearnSphere" ;
+    ns6:section <http://ceur-ws.org/Vol-1633/#organizedbyJohnStamperKennethKoedingerPhilipPavlikCarolynRoseRanLiuMichaelEagleMichaelYudelsonKalyanVeeramachaneni> ;
+    ns3:author <http://ceur-ws.org/Vol-1633/#StepheniE.iFancsali> .
+
+<http://ceur-ws.org/Vol-1633/#ws3-paper4> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1633/> ;
+    ns2:title "Analyzing Frequent Sequential Patterns of Learning Behaviors in Concept Mapping" ;
+    ns6:section <http://ceur-ws.org/Vol-1633/#organizedbyJohnStamperKennethKoedingerPhilipPavlikCarolynRoseRanLiuMichaelEagleMichaelYudelsonKalyanVeeramachaneni> ;
+    ns3:author <http://ceur-ws.org/Vol-1633/#ShangiWang> .
+
+<http://ceur-ws.org/Vol-1633/#ws3-paper5> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1633/> ;
+    ns2:title "Sequence Matters, But How Do I Discover How? Towards a Workflow for Evaluating Activity Sequences from Data" ;
+    ns6:section <http://ceur-ws.org/Vol-1633/#organizedbyJohnStamperKennethKoedingerPhilipPavlikCarolynRoseRanLiuMichaelEagleMichaelYudelsonKalyanVeeramachaneni> ;
+    ns3:author <http://ceur-ws.org/Vol-1633/#ShayaniDoroudi> .
+
+<http://ceur-ws.org/Vol-1633/#organizedbyJenniferSabourinScottMcQuigganAndreDeWaal> a ns5:SessionEvent ;
+    ns5:partOf <http://ceur-ws.org/Vol-1633/> ;
+    ns2:title "organized by Jennifer Sabourin, Scott McQuiggan, Andre De Waal" .
+
+<http://ceur-ws.org/Vol-1633/#tu1-intro> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1633/> ;
+    ns2:title "Tutorial Summary - SAS Tools for Educational Data Mining" ;
+    ns6:section <http://ceur-ws.org/Vol-1633/#organizedbyJenniferSabourinScottMcQuigganAndreDeWaal> ;
+    ns3:author <http://ceur-ws.org/Vol-1633/#AndreiDeiWaal>,
+        <http://ceur-ws.org/Vol-1633/#JenniferiSabourin>,
+        <http://ceur-ws.org/Vol-1633/#ScottiMcQuiggan> .
+
+<http://ceur-ws.org/Vol-1633/#organizedbyJohnStamperKennethKoedingerPhilipPavlikCarolynRoseRanLiuMichaelEagleMichaelYudelsonKalyanVeeramachaneni> a ns5:SessionEvent ;
+    ns5:partOf <http://ceur-ws.org/Vol-1633/> ;
+    ns2:title "organized by John Stamper, Kenneth Koedinger, Philip Pavlik, Carolyn Rose, Ran Liu, Michael Eagle, Michael Yudelson, Kalyan Veeramachaneni" .
+
+<http://ceur-ws.org/Vol-1633/#organizedbyValRossAlexRudniyJoeMoxleyDavidEubanks> a ns5:SessionEvent ;
+    ns5:partOf <http://ceur-ws.org/Vol-1633/> ;
+    ns2:title "organized by Val Ross, Alex Rudniy, Joe Moxley, David Eubanks" .
+
+<http://ceur-ws.org/Vol-1633/#organizedbyEdwardGehringerFerryPramudiantoYangSong> a ns5:SessionEvent ;
+    ns5:partOf <http://ceur-ws.org/Vol-1633/> ;
+    ns2:title "organized by Edward Gehringer, Ferry Pramudianto, Yang Song" .
+
+<http://ceur-ws.org/Vol-1633/> a ns5:Proceedings ;
+    ns5:hasPart <http://ceur-ws.org/Vol-1633/#tu1-intro>,
+        <http://ceur-ws.org/Vol-1633/#tu2-intro>,
+        <http://ceur-ws.org/Vol-1633/#ws1-paper1>,
+        <http://ceur-ws.org/Vol-1633/#ws1-paper10>,
+        <http://ceur-ws.org/Vol-1633/#ws1-paper11>,
+        <http://ceur-ws.org/Vol-1633/#ws1-paper12>,
+        <http://ceur-ws.org/Vol-1633/#ws1-paper2>,
+        <http://ceur-ws.org/Vol-1633/#ws1-paper3>,
+        <http://ceur-ws.org/Vol-1633/#ws1-paper4>,
+        <http://ceur-ws.org/Vol-1633/#ws1-paper5>,
+        <http://ceur-ws.org/Vol-1633/#ws1-paper6>,
+        <http://ceur-ws.org/Vol-1633/#ws1-paper7>,
+        <http://ceur-ws.org/Vol-1633/#ws1-paper8>,
+        <http://ceur-ws.org/Vol-1633/#ws1-paper9>,
+        <http://ceur-ws.org/Vol-1633/#ws2-paper1>,
+        <http://ceur-ws.org/Vol-1633/#ws2-paper2>,
+        <http://ceur-ws.org/Vol-1633/#ws2-paper3>,
+        <http://ceur-ws.org/Vol-1633/#ws2-paper4>,
+        <http://ceur-ws.org/Vol-1633/#ws2-paper5>,
+        <http://ceur-ws.org/Vol-1633/#ws2-paper6>,
+        <http://ceur-ws.org/Vol-1633/#ws3-paper1>,
+        <http://ceur-ws.org/Vol-1633/#ws3-paper2>,
+        <http://ceur-ws.org/Vol-1633/#ws3-paper3>,
+        <http://ceur-ws.org/Vol-1633/#ws3-paper4>,
+        <http://ceur-ws.org/Vol-1633/#ws3-paper5> ;
+    ns5:hasSession <http://ceur-ws.org/Vol-1633/#organizedbyEdwardGehringerFerryPramudiantoYangSong>,
+        <http://ceur-ws.org/Vol-1633/#organizedbyJenniferSabourinScottMcQuigganAndreDeWaal>,
+        <http://ceur-ws.org/Vol-1633/#organizedbyJohnStamperKennethKoedingerPhilipPavlikCarolynRoseRanLiuMichaelEagleMichaelYudelsonKalyanVeeramachaneni>,
+        <http://ceur-ws.org/Vol-1633/#organizedbyValRossAlexRudniyJoeMoxleyDavidEubanks> ;
+    ns9:issued "2016-07-29T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:presentedAt <http://ceur-ws.org/Vol-1633/#event> ;
+    ns3:editor <http://ceur-ws.org/Vol-1633/#EricaiSnow>,
+        <http://ceur-ws.org/Vol-1633/#JonathaniP.iRowe> .
 

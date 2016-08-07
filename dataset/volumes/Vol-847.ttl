@@ -1,43 +1,499 @@
-@prefix ns1: <http://www.w3.org/2002/07/owl#> .
-@prefix ns2: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns3: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns4: <http://xmlns.com/foaf/0.1/> .
-@prefix ns5: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns6: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns7: <http://purl.org/ontology/bibo/#> .
-@prefix ns8: <http://purl.org/dc/elements/1.1/> .
+@prefix ns1: <http://purl.org/ontology/bibo/#> .
+@prefix ns2: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns3: <http://xmlns.com/foaf/0.1/> .
+@prefix ns4: <http://www.w3.org/2002/07/owl#> .
+@prefix ns5: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns6: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns7: <http://purl.org/dc/elements/1.1/> .
+@prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns9: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-847/> a ns2:Proceedings ;
-    ns6:issued "2012-05-22T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:presentedAt <http://ceur-ws.org/Vol-847/#event> ;
-    ns5:editor <http://ceur-ws.org/Vol-847/#AndreasiSch%C3%B6nberger>,
-        <http://ceur-ws.org/Vol-847/#NielsiLohmann>,
-        <http://ceur-ws.org/Vol-847/#OliveriKopp> .
+<http://ceur-ws.org/Vol-847/#AgataiPolrola> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/AgataiPolrola> ;
+    ns3:made <http://ceur-ws.org/Vol-847/#paper4> ;
+    ns3:name "Agata Polrola" .
 
-<http://ceur-ws.org/Vol-847/#AndreasiSch%C3%B6nberger> a ns4:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/AndreasiSch%C3%B6nberger> ;
-    ns4:name "Andreas Schönberger" .
+<http://ceur-ws.org/Vol-847/#AndreasiLehmann> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/AndreasiLehmann> ;
+    ns3:made <http://ceur-ws.org/Vol-847/#paper18> ;
+    ns3:name "Andreas Lehmann" .
 
-<http://ceur-ws.org/Vol-847/#NielsiLohmann> a ns4:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/NielsiLohmann> ;
-    ns4:name "Niels Lohmann" .
+<http://ceur-ws.org/Vol-847/#AndreasiMeyer> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/AndreasiMeyer> ;
+    ns3:made <http://ceur-ws.org/Vol-847/#paper10> ;
+    ns3:name "Andreas Meyer" .
 
-<http://ceur-ws.org/Vol-847/#OliveriKopp> a ns4:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/OliveriKopp> ;
-    ns4:name "Oliver Kopp" .
+<http://ceur-ws.org/Vol-847/#AndreasiRogge-Solti> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/AndreasiRogge-Solti> ;
+    ns3:made <http://ceur-ws.org/Vol-847/#paper13> ;
+    ns3:name "Andreas Rogge-Solti" .
 
-<http://ceur-ws.org/Vol-847/#event> a ns2:WorkshopEvent ;
-    ns2:hasLocation <http://dbpedia.org/resource/Germany> ;
-    ns2:hasPart <http://ceur-ws.org/Vol-847/#part-CEUR-WS> ;
-    ns2:isSubEventOf <http://ceur-ws.org/Vol-847/#conf> ;
-    ns3:beginsAtDatetime "2012-02-23T00:00:00+00:00"^^xsd:dateTime ;
-    ns3:endsAtDatetime "2012-02-24T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:license "http://choosealicense.com/licenses/no-license/" ;
+<http://ceur-ws.org/Vol-847/#AndreasiSch%C3%B6nberger> a ns3:Person ;
+    ns2:affiliation "" ;
+    ns4:sameAs <http://ceur-ws.org/persons/AndreasiSch%C3%B6nberger> ;
+    ns3:name "Andreas Schönberger" .
+
+<http://ceur-ws.org/Vol-847/#ArioiSantoso> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/ArioiSantoso> ;
+    ns3:made <http://ceur-ws.org/Vol-847/#paper6> ;
+    ns3:name "Ario Santoso" .
+
+<http://ceur-ws.org/Vol-847/#ArtemiPolyvyanyy> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/ArtemiPolyvyanyy> ;
+    ns3:made <http://ceur-ws.org/Vol-847/#paper10> ;
+    ns3:name "Artem Polyvyanyy" .
+
+<http://ceur-ws.org/Vol-847/#ArturiNiewiadomski> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/ArturiNiewiadomski> ;
+    ns3:made <http://ceur-ws.org/Vol-847/#paper4> ;
+    ns3:name "Artur Niewiadomski" .
+
+<http://ceur-ws.org/Vol-847/#ChristianiGierds> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/ChristianiGierds> ;
+    ns3:made <http://ceur-ws.org/Vol-847/#paper1> ;
+    ns3:name "Christian Gierds" .
+
+<http://ceur-ws.org/Vol-847/#ChristophiWagner> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/ChristophiWagner> ;
+    ns3:made <http://ceur-ws.org/Vol-847/#paper3> ;
+    ns3:name "Christoph Wagner" .
+
+<http://ceur-ws.org/Vol-847/#ClemensiBeckstein> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/ClemensiBeckstein> ;
+    ns3:made <http://ceur-ws.org/Vol-847/#paper15> ;
+    ns3:name "Clemens Beckstein" .
+
+<http://ceur-ws.org/Vol-847/#DanieliSchulte> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/DanieliSchulte> ;
+    ns3:made <http://ceur-ws.org/Vol-847/#paper14> ;
+    ns3:name "Daniel Schulte" .
+
+<http://ceur-ws.org/Vol-847/#DanieliSt%C3%B6hr> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/DanieliSt%C3%B6hr> ;
+    ns3:made <http://ceur-ws.org/Vol-847/#paper5> ;
+    ns3:name "Daniel Stöhr" .
+
+<http://ceur-ws.org/Vol-847/#DariusziDoliwa> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/DariusziDoliwa> ;
+    ns3:made <http://ceur-ws.org/Vol-847/#paper4> ;
+    ns3:name "Dariusz Doliwa" .
+
+<http://ceur-ws.org/Vol-847/#DiegoiCalvanese> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/DiegoiCalvanese> ;
+    ns3:made <http://ceur-ws.org/Vol-847/#paper6> ;
+    ns3:name "Diego Calvanese" .
+
+<http://ceur-ws.org/Vol-847/#DieteriRoller> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/DieteriRoller> ;
+    ns3:made <http://ceur-ws.org/Vol-847/#paper16> ;
+    ns3:name "Dieter Roller" .
+
+<http://ceur-ws.org/Vol-847/#DominiqueiRieu> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/DominiqueiRieu> ;
+    ns3:made <http://ceur-ws.org/Vol-847/#paper7> ;
+    ns3:name "Dominique Rieu" .
+
+<http://ceur-ws.org/Vol-847/#GuidoiWirtz> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/GuidoiWirtz> ;
+    ns3:made <http://ceur-ws.org/Vol-847/#paper8> ;
+    ns3:name "Guido Wirtz" .
+
+<http://ceur-ws.org/Vol-847/#J%C3%B6rgiLenhard> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/J%C3%B6rgiLenhard> ;
+    ns3:made <http://ceur-ws.org/Vol-847/#paper8> ;
+    ns3:name "Jörg Lenhard" .
+
+<http://ceur-ws.org/Vol-847/#JaniS%C3%BCrmeli> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/JaniS%C3%BCrmeli> ;
+    ns3:made <http://ceur-ws.org/Vol-847/#paper2> ;
+    ns3:name "Jan Sürmeli" .
+
+<http://ceur-ws.org/Vol-847/#JaroslawiSkaruz> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/JaroslawiSkaruz> ;
+    ns3:made <http://ceur-ws.org/Vol-847/#paper4> ;
+    ns3:name "Jaroslaw Skaruz" .
+
+<http://ceur-ws.org/Vol-847/#JohannesiKretzschmar> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/JohannesiKretzschmar> ;
+    ns3:made <http://ceur-ws.org/Vol-847/#paper15> ;
+    ns3:name "Johannes Kretzschmar" .
+
+<http://ceur-ws.org/Vol-847/#KaiiGebhardt> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/KaiiGebhardt> ;
+    ns3:made <http://ceur-ws.org/Vol-847/#paper17> ;
+    ns3:name "Kai Gebhardt" .
+
+<http://ceur-ws.org/Vol-847/#KristianiDuske> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/KristianiDuske> ;
+    ns3:made <http://ceur-ws.org/Vol-847/#paper9> ;
+    ns3:name "Kristian Duske" .
+
+<http://ceur-ws.org/Vol-847/#MarioiCortes-Cornax> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/MarioiCortes-Cornax> ;
+    ns3:made <http://ceur-ws.org/Vol-847/#paper7> ;
+    ns3:name "Mario Cortes-Cornax" .
+
+<http://ceur-ws.org/Vol-847/#MariusziJarocki> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/MariusziJarocki> ;
+    ns3:made <http://ceur-ws.org/Vol-847/#paper4> ;
+    ns3:name "Mariusz Jarocki" .
+
+<http://ceur-ws.org/Vol-847/#MathiasiWeske> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/MathiasiWeske> ;
+    ns3:made <http://ceur-ws.org/Vol-847/#paper10> ;
+    ns3:name "Mathias Weske" .
+
+<http://ceur-ws.org/Vol-847/#MatthiasiKunze> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/MatthiasiKunze> ;
+    ns3:made <http://ceur-ws.org/Vol-847/#paper13> ;
+    ns3:name "Matthias Kunze" .
+
+<http://ceur-ws.org/Vol-847/#MichaeliReiter> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/MichaeliReiter> ;
+    ns3:made <http://ceur-ws.org/Vol-847/#paper16> ;
+    ns3:name "Michael Reiter" .
+
+<http://ceur-ws.org/Vol-847/#NicoiHerzberg> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/NicoiHerzberg> ;
+    ns3:made <http://ceur-ws.org/Vol-847/#paper13> ;
+    ns3:name "Nico Herzberg" .
+
+<http://ceur-ws.org/Vol-847/#Rami-HabibiEid-Sabbagh> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/Rami-HabibiEid-Sabbagh> ;
+    ns3:made <http://ceur-ws.org/Vol-847/#paper12> ;
+    ns3:name "Rami-Habib Eid-Sabbagh" .
+
+<http://ceur-ws.org/Vol-847/#RichardiM%C3%BCller> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/RichardiM%C3%BCller> ;
+    ns3:made <http://ceur-ws.org/Vol-847/#paper9> ;
+    ns3:name "Richard Müller" .
+
+<http://ceur-ws.org/Vol-847/#SabineiGlesner> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/SabineiGlesner> ;
+    ns3:made <http://ceur-ws.org/Vol-847/#paper5> ;
+    ns3:name "Sabine Glesner" .
+
+<http://ceur-ws.org/Vol-847/#SebastianiWagner> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/SebastianiWagner> ;
+    ns3:made <http://ceur-ws.org/Vol-847/#paper11> ;
+    ns3:name "Sebastian Wagner" .
+
+<http://ceur-ws.org/Vol-847/#SimoniMoser> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/SimoniMoser> ;
+    ns3:made <http://ceur-ws.org/Vol-847/#paper17> ;
+    ns3:name "Simon Moser" .
+
+<http://ceur-ws.org/Vol-847/#SophieiDupuy-Chessa> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/SophieiDupuy-Chessa> ;
+    ns3:made <http://ceur-ws.org/Vol-847/#paper7> ;
+    ns3:name "Sophie Dupuy-Chessa" .
+
+<http://ceur-ws.org/Vol-847/#ThomasiHeinze> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/ThomasiHeinze> ;
+    ns3:made <http://ceur-ws.org/Vol-847/#paper17> ;
+    ns3:name "Thomas Heinze" .
+
+<http://ceur-ws.org/Vol-847/#TobiasiUnger> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/TobiasiUnger> ;
+    ns3:made <http://ceur-ws.org/Vol-847/#paper16> ;
+    ns3:name "Tobias Unger" .
+
+<http://ceur-ws.org/Vol-847/#UweiBreitenb%C3%BCcher> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/UweiBreitenb%C3%BCcher> ;
+    ns3:made <http://ceur-ws.org/Vol-847/#paper16> ;
+    ns3:name "Uwe Breitenbücher" .
+
+<http://ceur-ws.org/Vol-847/#WojciechiHorzelski> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/WojciechiHorzelski> ;
+    ns3:made <http://ceur-ws.org/Vol-847/#paper4> ;
+    ns3:name "Wojciech Horzelski" .
+
+<http://ceur-ws.org/Vol-847/#WojciechiPenczek> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/WojciechiPenczek> ;
+    ns3:made <http://ceur-ws.org/Vol-847/#paper4> ;
+    ns3:name "Wojciech Penczek" .
+
+<http://ceur-ws.org/Vol-847/#WolframiAmme> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/WolframiAmme> ;
+    ns3:made <http://ceur-ws.org/Vol-847/#paper17> ;
+    ns3:name "Wolfram Amme" .
+
+<http://ceur-ws.org/Vol-847/#event> a ns5:WorkshopEvent ;
+    ns5:hasLocation <http://dbpedia.org/resource/Germany> ;
+    ns5:hasPart <http://ceur-ws.org/Vol-847/#part-ZEUS> ;
+    ns5:isSubEventOf <http://ceur-ws.org/Vol-847/#conf> ;
+    ns8:beginsAtDatetime "2012-02-23T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:endsAtDatetime "2012-02-24T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:license "http://choosealicense.com/licenses/no-license/" ;
     rdfs:seeAlso <http://ceur-ws.org/Vol-438/#event>,
         <http://ceur-ws.org/Vol-563/#event>,
         <http://ceur-ws.org/Vol-705/#event> .
+
+<http://ceur-ws.org/Vol-847/#FrankiLeymann> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/FrankiLeymann> ;
+    ns3:made <http://ceur-ws.org/Vol-847/#paper11>,
+        <http://ceur-ws.org/Vol-847/#paper16> ;
+    ns3:name "Frank Leymann" .
+
+<http://ceur-ws.org/Vol-847/#NielsiLohmann> a ns3:Person ;
+    ns2:affiliation "" ;
+    ns4:sameAs <http://ceur-ws.org/persons/NielsiLohmann> ;
+    ns3:made <http://ceur-ws.org/Vol-847/#paper18> ;
+    ns3:name "Niels Lohmann" .
+
+<http://ceur-ws.org/Vol-847/#paper1> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-847/> ;
+    ns6:title "Toward Deciding the Existence of Adaptable Services" ;
+    ns1:endPage 8 ;
+    ns1:numPages 8 ;
+    ns1:section <http://ceur-ws.org/Vol-847/#ServiceAdaptationandSynthesis> ;
+    ns1:startPage 1 ;
+    ns2:author <http://ceur-ws.org/Vol-847/#ChristianiGierds> .
+
+<http://ceur-ws.org/Vol-847/#paper12> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-847/> ;
+    ns6:title "Towards Automatic Generation of Process Architectures for Process Collections" ;
+    ns1:endPage 96 ;
+    ns1:numPages 8 ;
+    ns1:section <http://ceur-ws.org/Vol-847/#ProcessAnalysis> ;
+    ns1:startPage 89 ;
+    ns2:author <http://ceur-ws.org/Vol-847/#Rami-HabibiEid-Sabbagh> .
+
+<http://ceur-ws.org/Vol-847/#paper14> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-847/> ;
+    ns6:title "Towards a Human Task Management Reference Model" ;
+    ns1:endPage 111 ;
+    ns1:numPages 8 ;
+    ns1:section <http://ceur-ws.org/Vol-847/#WorkflowManagement> ;
+    ns1:startPage 104 ;
+    ns2:author <http://ceur-ws.org/Vol-847/#DanieliSchulte> .
+
+<http://ceur-ws.org/Vol-847/#paper2> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-847/> ;
+    ns6:title "Cost-minimal Adapters for Services" ;
+    ns1:endPage 16 ;
+    ns1:numPages 8 ;
+    ns1:section <http://ceur-ws.org/Vol-847/#ServiceAdaptationandSynthesis> ;
+    ns1:startPage 9 ;
+    ns2:author <http://ceur-ws.org/Vol-847/#JaniS%C3%BCrmeli> .
+
+<http://ceur-ws.org/Vol-847/#paper3> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-847/> ;
+    ns6:title "Partner Synthesis for Data-Dependent Services" ;
+    ns1:endPage 24 ;
+    ns1:numPages 8 ;
+    ns1:section <http://ceur-ws.org/Vol-847/#ServiceAdaptationandSynthesis> ;
+    ns1:startPage 17 ;
+    ns2:author <http://ceur-ws.org/Vol-847/#ChristophiWagner> .
+
+<http://ceur-ws.org/Vol-847/#OliveriKopp> a ns3:Person ;
+    ns2:affiliation "" ;
+    ns4:sameAs <http://ceur-ws.org/persons/OliveriKopp> ;
+    ns3:made <http://ceur-ws.org/Vol-847/#paper11>,
+        <http://ceur-ws.org/Vol-847/#paper16> ;
+    ns3:name "Oliver Kopp" .
+
+<http://ceur-ws.org/Vol-847/#paper15> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-847/> ;
+    ns6:title "Contextsensitive Online Adaption of Workflows" ;
+    ns1:endPage 119 ;
+    ns1:numPages 8 ;
+    ns1:section <http://ceur-ws.org/Vol-847/#WorkflowManagement> ;
+    ns1:startPage 112 ;
+    ns2:author <http://ceur-ws.org/Vol-847/#ClemensiBeckstein>,
+        <http://ceur-ws.org/Vol-847/#JohannesiKretzschmar> .
+
+<http://ceur-ws.org/Vol-847/#paper18> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-847/> ;
+    ns6:title "Model Support for Confidential Service-Oriented Business Processes" ;
+    ns1:endPage 143 ;
+    ns1:numPages 8 ;
+    ns1:section <http://ceur-ws.org/Vol-847/#ServiceDesign> ;
+    ns1:startPage 136 ;
+    ns2:author <http://ceur-ws.org/Vol-847/#AndreasiLehmann>,
+        <http://ceur-ws.org/Vol-847/#NielsiLohmann> .
+
+<http://ceur-ws.org/Vol-847/#paper5> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-847/> ;
+    ns6:title "Automated Composition of Timed Services by Planning as Model Checking" ;
+    ns1:endPage 41 ;
+    ns1:numPages 8 ;
+    ns1:section <http://ceur-ws.org/Vol-847/#ServiceComposition> ;
+    ns1:startPage 34 ;
+    ns2:author <http://ceur-ws.org/Vol-847/#DanieliSt%C3%B6hr>,
+        <http://ceur-ws.org/Vol-847/#SabineiGlesner> .
+
+<http://ceur-ws.org/Vol-847/#paper6> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-847/> ;
+    ns6:title "Best Service Synthesis in the Weighted Roman Model" ;
+    ns1:endPage 49 ;
+    ns1:numPages 8 ;
+    ns1:section <http://ceur-ws.org/Vol-847/#ServiceComposition> ;
+    ns1:startPage 42 ;
+    ns2:author <http://ceur-ws.org/Vol-847/#ArioiSantoso>,
+        <http://ceur-ws.org/Vol-847/#DiegoiCalvanese> .
+
+<http://ceur-ws.org/Vol-847/#paper8> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-847/> ;
+    ns6:title "Building Orchestrations in B2Bi - The Case of BPEL 2.0 and BPMN 2.0" ;
+    ns1:endPage 65 ;
+    ns1:numPages 8 ;
+    ns1:section <http://ceur-ws.org/Vol-847/#ServiceLanguageCharacteristics> ;
+    ns1:startPage 58 ;
+    ns2:author <http://ceur-ws.org/Vol-847/#GuidoiWirtz>,
+        <http://ceur-ws.org/Vol-847/#J%C3%B6rgiLenhard> .
+
+<http://ceur-ws.org/Vol-847/#paper9> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-847/> ;
+    ns6:title "A Survey on Approaches for Timed Services" ;
+    ns1:endPage 73 ;
+    ns1:numPages 8 ;
+    ns1:section <http://ceur-ws.org/Vol-847/#ServiceLanguageCharacteristics> ;
+    ns1:startPage 66 ;
+    ns2:author <http://ceur-ws.org/Vol-847/#KristianiDuske>,
+        <http://ceur-ws.org/Vol-847/#RichardiM%C3%BCller> .
+
+<http://ceur-ws.org/Vol-847/#ProcessAnalysis> a ns5:SessionEvent ;
+    ns5:partOf <http://ceur-ws.org/Vol-847/> ;
+    ns6:title "Process Analysis" .
+
+<http://ceur-ws.org/Vol-847/#ServiceAdaptationandSynthesis> a ns5:SessionEvent ;
+    ns5:partOf <http://ceur-ws.org/Vol-847/> ;
+    ns6:title "Service Adaptation and Synthesis" .
+
+<http://ceur-ws.org/Vol-847/#ServiceComposition> a ns5:SessionEvent ;
+    ns5:partOf <http://ceur-ws.org/Vol-847/> ;
+    ns6:title "Service Composition" .
+
+<http://ceur-ws.org/Vol-847/#ServiceDesign> a ns5:SessionEvent ;
+    ns5:partOf <http://ceur-ws.org/Vol-847/> ;
+    ns6:title "Service Design" .
+
+<http://ceur-ws.org/Vol-847/#ServiceLanguageCharacteristics> a ns5:SessionEvent ;
+    ns5:partOf <http://ceur-ws.org/Vol-847/> ;
+    ns6:title "Service Language Characteristics" .
+
+<http://ceur-ws.org/Vol-847/#WorkflowManagement> a ns5:SessionEvent ;
+    ns5:partOf <http://ceur-ws.org/Vol-847/> ;
+    ns6:title "Workflow Management" .
+
+<http://ceur-ws.org/Vol-847/#paper10> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-847/> ;
+    ns6:title "Weak Conformance of Process Models with respect to Data Objects" ;
+    ns1:endPage 80 ;
+    ns1:numPages 7 ;
+    ns1:section <http://ceur-ws.org/Vol-847/#ProcessAnalysis> ;
+    ns1:startPage 74 ;
+    ns2:author <http://ceur-ws.org/Vol-847/#AndreasiMeyer>,
+        <http://ceur-ws.org/Vol-847/#ArtemiPolyvyanyy>,
+        <http://ceur-ws.org/Vol-847/#MathiasiWeske> .
+
+<http://ceur-ws.org/Vol-847/#paper11> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-847/> ;
+    ns6:title "Towards Verification of Process Merge Patterns with Allen's Interval Algebra" ;
+    ns1:endPage 88 ;
+    ns1:numPages 8 ;
+    ns1:section <http://ceur-ws.org/Vol-847/#ProcessAnalysis> ;
+    ns1:startPage 81 ;
+    ns2:author <http://ceur-ws.org/Vol-847/#FrankiLeymann>,
+        <http://ceur-ws.org/Vol-847/#OliveriKopp>,
+        <http://ceur-ws.org/Vol-847/#SebastianiWagner> .
+
+<http://ceur-ws.org/Vol-847/#paper13> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-847/> ;
+    ns6:title "Towards Process Evaluation in Non-Automated Process Execution Environments" ;
+    ns1:endPage 103 ;
+    ns1:numPages 7 ;
+    ns1:section <http://ceur-ws.org/Vol-847/#WorkflowManagement> ;
+    ns1:startPage 97 ;
+    ns2:author <http://ceur-ws.org/Vol-847/#AndreasiRogge-Solti>,
+        <http://ceur-ws.org/Vol-847/#MatthiasiKunze>,
+        <http://ceur-ws.org/Vol-847/#NicoiHerzberg> .
+
+<http://ceur-ws.org/Vol-847/#paper7> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-847/> ;
+    ns6:title "Choreographies in BPMN 2.0: New Challenges and Open Questions" ;
+    ns1:endPage 57 ;
+    ns1:numPages 8 ;
+    ns1:section <http://ceur-ws.org/Vol-847/#ServiceLanguageCharacteristics> ;
+    ns1:startPage 50 ;
+    ns2:author <http://ceur-ws.org/Vol-847/#DominiqueiRieu>,
+        <http://ceur-ws.org/Vol-847/#MarioiCortes-Cornax>,
+        <http://ceur-ws.org/Vol-847/#SophieiDupuy-Chessa> .
+
+<http://ceur-ws.org/Vol-847/#paper17> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-847/> ;
+    ns6:title "Guided Control Flow Unfolding for Workflow Graphs Using Value Range Information" ;
+    ns1:endPage 135 ;
+    ns1:numPages 8 ;
+    ns1:section <http://ceur-ws.org/Vol-847/#ServiceDesign> ;
+    ns1:startPage 128 ;
+    ns2:author <http://ceur-ws.org/Vol-847/#KaiiGebhardt>,
+        <http://ceur-ws.org/Vol-847/#SimoniMoser>,
+        <http://ceur-ws.org/Vol-847/#ThomasiHeinze>,
+        <http://ceur-ws.org/Vol-847/#WolframiAmme> .
+
+<http://ceur-ws.org/Vol-847/#paper16> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-847/> ;
+    ns6:title "Six Strategies for Building High Performance SOA Applications" ;
+    ns1:endPage 127 ;
+    ns1:numPages 8 ;
+    ns1:section <http://ceur-ws.org/Vol-847/#ServiceDesign> ;
+    ns1:startPage 120 ;
+    ns2:author <http://ceur-ws.org/Vol-847/#DieteriRoller>,
+        <http://ceur-ws.org/Vol-847/#FrankiLeymann>,
+        <http://ceur-ws.org/Vol-847/#MichaeliReiter>,
+        <http://ceur-ws.org/Vol-847/#OliveriKopp>,
+        <http://ceur-ws.org/Vol-847/#TobiasiUnger>,
+        <http://ceur-ws.org/Vol-847/#UweiBreitenb%C3%BCcher> .
+
+<http://ceur-ws.org/Vol-847/#paper4> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-847/> ;
+    ns6:title "HarmonICS - a Tool for Composing Medical Services" ;
+    ns1:endPage 33 ;
+    ns1:numPages 9 ;
+    ns1:section <http://ceur-ws.org/Vol-847/#ServiceComposition> ;
+    ns1:startPage 25 ;
+    ns2:author <http://ceur-ws.org/Vol-847/#AgataiPolrola>,
+        <http://ceur-ws.org/Vol-847/#ArturiNiewiadomski>,
+        <http://ceur-ws.org/Vol-847/#DariusziDoliwa>,
+        <http://ceur-ws.org/Vol-847/#JaroslawiSkaruz>,
+        <http://ceur-ws.org/Vol-847/#MariusziJarocki>,
+        <http://ceur-ws.org/Vol-847/#WojciechiHorzelski>,
+        <http://ceur-ws.org/Vol-847/#WojciechiPenczek> .
+
+<http://ceur-ws.org/Vol-847/> a ns5:Proceedings ;
+    ns5:hasPart <http://ceur-ws.org/Vol-847/#paper1>,
+        <http://ceur-ws.org/Vol-847/#paper10>,
+        <http://ceur-ws.org/Vol-847/#paper11>,
+        <http://ceur-ws.org/Vol-847/#paper12>,
+        <http://ceur-ws.org/Vol-847/#paper13>,
+        <http://ceur-ws.org/Vol-847/#paper14>,
+        <http://ceur-ws.org/Vol-847/#paper15>,
+        <http://ceur-ws.org/Vol-847/#paper16>,
+        <http://ceur-ws.org/Vol-847/#paper17>,
+        <http://ceur-ws.org/Vol-847/#paper18>,
+        <http://ceur-ws.org/Vol-847/#paper2>,
+        <http://ceur-ws.org/Vol-847/#paper3>,
+        <http://ceur-ws.org/Vol-847/#paper4>,
+        <http://ceur-ws.org/Vol-847/#paper5>,
+        <http://ceur-ws.org/Vol-847/#paper6>,
+        <http://ceur-ws.org/Vol-847/#paper7>,
+        <http://ceur-ws.org/Vol-847/#paper8>,
+        <http://ceur-ws.org/Vol-847/#paper9> ;
+    ns5:hasSession <http://ceur-ws.org/Vol-847/#ProcessAnalysis>,
+        <http://ceur-ws.org/Vol-847/#ServiceAdaptationandSynthesis>,
+        <http://ceur-ws.org/Vol-847/#ServiceComposition>,
+        <http://ceur-ws.org/Vol-847/#ServiceDesign>,
+        <http://ceur-ws.org/Vol-847/#ServiceLanguageCharacteristics>,
+        <http://ceur-ws.org/Vol-847/#WorkflowManagement> ;
+    ns9:issued "2012-05-22T00:00:00+00:00"^^xsd:dateTime ;
+    ns1:presentedAt <http://ceur-ws.org/Vol-847/#event> ;
+    ns2:editor <http://ceur-ws.org/Vol-847/#AndreasiSch%C3%B6nberger>,
+        <http://ceur-ws.org/Vol-847/#NielsiLohmann>,
+        <http://ceur-ws.org/Vol-847/#OliveriKopp> .
 

@@ -1,37 +1,210 @@
-@prefix ns1: <http://www.w3.org/2002/07/owl#> .
-@prefix ns2: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns3: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns4: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns5: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns6: <http://purl.org/ontology/bibo/#> .
-@prefix ns7: <http://xmlns.com/foaf/0.1/> .
+@prefix ns1: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns2: <http://www.w3.org/2002/07/owl#> .
+@prefix ns3: <http://purl.org/ontology/bibo/#> .
+@prefix ns4: <http://xmlns.com/foaf/0.1/> .
+@prefix ns5: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns6: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix ns8: <http://purl.org/dc/elements/1.1/> .
+@prefix ns9: <http://purl.org/NET/c4dm/timeline.owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1555/> a ns2:Proceedings ;
-    ns3:issued "2016-02-04T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:presentedAt <http://ceur-ws.org/Vol-1555/#event> ;
-    ns5:editor <http://ceur-ws.org/Vol-1555/#ArnoniSturm>,
-        <http://ceur-ws.org/Vol-1555/#TonyiClark> .
+<http://ceur-ws.org/Vol-1555/#BettyiCheng> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/BettyiCheng> ;
+    ns4:made <http://ceur-ws.org/Vol-1555/#panel> ;
+    ns4:name "Betty Cheng" .
 
-<http://ceur-ws.org/Vol-1555/#ArnoniSturm> a ns7:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/ArnoniSturm> ;
-    ns7:name "Arnon Sturm" .
+<http://ceur-ws.org/Vol-1555/#BilaliKarasneh> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/BilaliKarasneh> ;
+    ns4:made <http://ceur-ws.org/Vol-1555/#paper5> ;
+    ns4:name "Bilal Karasneh" .
 
-<http://ceur-ws.org/Vol-1555/#TonyiClark> a ns7:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/TonyiClark> ;
-    ns7:name "Tony Clark" .
+<http://ceur-ws.org/Vol-1555/#DaniChiorean> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/DaniChiorean> ;
+    ns4:made <http://ceur-ws.org/Vol-1555/#panel> ;
+    ns4:name "Dan Chiorean" .
 
-<http://ceur-ws.org/Vol-1555/#event> a ns2:WorkshopEvent ;
-    ns2:hasLocation <http://dbpedia.org/resource/Canada> ;
-    ns2:hasPart <http://ceur-ws.org/Vol-1555/#part-ws> ;
-    ns2:isSubEventOf <http://ceur-ws.org/Vol-1555/#conf> ;
-    ns4:beginsAtDatetime "2015-09-29T00:00:00+00:00"^^xsd:dateTime ;
-    ns4:endsAtDatetime "2015-09-29T00:00:00+00:00"^^xsd:dateTime ;
+<http://ceur-ws.org/Vol-1555/#EmilioiPelozo> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/EmilioiPelozo> ;
+    ns4:made <http://ceur-ws.org/Vol-1555/#panel> ;
+    ns4:name "Emilio Pelozo" .
+
+<http://ceur-ws.org/Vol-1555/#GeriiGeorg> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/GeriiGeorg> ;
+    ns4:made <http://ceur-ws.org/Vol-1555/#panel> ;
+    ns4:name "Geri Georg" .
+
+<http://ceur-ws.org/Vol-1555/#GrischaiLiebel> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/GrischaiLiebel> ;
+    ns4:made <http://ceur-ws.org/Vol-1555/#panel> ;
+    ns4:name "Grischa Liebel" .
+
+<http://ceur-ws.org/Vol-1555/#GunteriMussbacher> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/GunteriMussbacher> ;
+    ns4:made <http://ceur-ws.org/Vol-1555/#panel> ;
+    ns4:name "Gunter Mussbacher" .
+
+<http://ceur-ws.org/Vol-1555/#KeviniLano> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/KeviniLano> ;
+    ns4:made <http://ceur-ws.org/Vol-1555/#paper4> ;
+    ns4:name "Kevin Lano" .
+
+<http://ceur-ws.org/Vol-1555/#MartinaiSeidl> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/MartinaiSeidl> ;
+    ns4:made <http://ceur-ws.org/Vol-1555/#keynote> ;
+    ns4:name "Martina Seidl" .
+
+<http://ceur-ws.org/Vol-1555/#MartiniGogolla> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/MartiniGogolla> ;
+    ns4:made <http://ceur-ws.org/Vol-1555/#paper1> ;
+    ns4:name "Martin Gogolla" .
+
+<http://ceur-ws.org/Vol-1555/#MiraiBalaban> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/MiraiBalaban> ;
+    ns4:made <http://ceur-ws.org/Vol-1555/#panel> ;
+    ns4:name "Mira Balaban" .
+
+<http://ceur-ws.org/Vol-1555/#OmariBadreddin> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/OmariBadreddin> ;
+    ns4:made <http://ceur-ws.org/Vol-1555/#panel> ;
+    ns4:name "Omar Badreddin" .
+
+<http://ceur-ws.org/Vol-1555/#PeteriClarke> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/PeteriClarke> ;
+    ns4:made <http://ceur-ws.org/Vol-1555/#panel> ;
+    ns4:name "Peter Clarke" .
+
+<http://ceur-ws.org/Vol-1555/#RichardiF.iPaige> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/RichardiF.iPaige> ;
+    ns4:made <http://ceur-ws.org/Vol-1555/#paper6> ;
+    ns4:name "Richard F. Paige" .
+
+<http://ceur-ws.org/Vol-1555/#TimiLethbridge> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/TimiLethbridge> ;
+    ns4:made <http://ceur-ws.org/Vol-1555/#panel> ;
+    ns4:name "Tim Lethbridge" .
+
+<http://ceur-ws.org/Vol-1555/#TonyiClark> a ns4:Person ;
+    ns1:affiliation "" ;
+    ns2:sameAs <http://ceur-ws.org/persons/TonyiClark> ;
+    ns4:name "Tony Clark" .
+
+<http://ceur-ws.org/Vol-1555/#VadimiZaytsev> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/VadimiZaytsev> ;
+    ns4:made <http://ceur-ws.org/Vol-1555/#paper2> ;
+    ns4:name "Vadim Zaytsev" .
+
+<http://ceur-ws.org/Vol-1555/#event> a ns5:WorkshopEvent ;
+    ns5:hasLocation <http://dbpedia.org/resource/Canada> ;
+    ns5:hasPart <http://ceur-ws.org/Vol-1555/#part-EduSymp> ;
+    ns5:isSubEventOf <http://ceur-ws.org/Vol-1555/#conf> ;
+    ns9:beginsAtDatetime "2015-09-29T00:00:00+00:00"^^xsd:dateTime ;
+    ns9:endsAtDatetime "2015-09-29T00:00:00+00:00"^^xsd:dateTime ;
     ns8:license "http://creativecommons.org/publicdomain/zero/1.0/" ;
     rdfs:seeAlso <http://ceur-ws.org/Vol-1134/#event>,
         <http://ceur-ws.org/Vol-1346/#event> .
+
+<http://ceur-ws.org/Vol-1555/#ArnoniSturm> a ns4:Person ;
+    ns1:affiliation "" ;
+    ns2:sameAs <http://ceur-ws.org/persons/ArnoniSturm> ;
+    ns4:made <http://ceur-ws.org/Vol-1555/#panel> ;
+    ns4:name "Arnon Sturm" .
+
+<http://ceur-ws.org/Vol-1555/#DaveiR.iStikkolorum> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/DaveiR.iStikkolorum> ;
+    ns4:made <http://ceur-ws.org/Vol-1555/#panel>,
+        <http://ceur-ws.org/Vol-1555/#paper3> ;
+    ns4:name "Dave R. Stikkolorum" .
+
+<http://ceur-ws.org/Vol-1555/#keynote> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1555/> ;
+    ns6:title "UML@Classroom: An Introduction to Object-Oriented Modeling" ;
+    ns3:endPage 3 ;
+    ns3:numPages 3 ;
+    ns3:startPage 1 ;
+    ns1:author <http://ceur-ws.org/Vol-1555/#MartinaiSeidl> .
+
+<http://ceur-ws.org/Vol-1555/#paper1> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1555/> ;
+    ns6:title "An Approach to Employ Modeling in a Traditional Computer Science Curriculum or: Why Posing Essentials of the Object Constraint Language without Objects and Constraints?" ;
+    ns3:endPage 5 ;
+    ns3:numPages 2 ;
+    ns3:startPage 4 ;
+    ns1:author <http://ceur-ws.org/Vol-1555/#MartiniGogolla> .
+
+<http://ceur-ws.org/Vol-1555/#paper2> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1555/> ;
+    ns6:title "Flipped Top-Down is Systematic Bottom-Up" ;
+    ns3:endPage 16 ;
+    ns3:numPages 11 ;
+    ns3:startPage 6 ;
+    ns1:author <http://ceur-ws.org/Vol-1555/#VadimiZaytsev> .
+
+<http://ceur-ws.org/Vol-1555/#paper3> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1555/> ;
+    ns6:title "Uncovering Students' Common Difficulties and Strategies During a Class Diagram Design Process: an Online Experiment" ;
+    ns3:endPage 28 ;
+    ns3:numPages 12 ;
+    ns3:startPage 17 ;
+    ns1:author <http://ceur-ws.org/Vol-1555/#DaveiR.iStikkolorum> .
+
+<http://ceur-ws.org/Vol-1555/#paper4> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1555/> ;
+    ns6:title "Experiences of Teaching Model-based Development" ;
+    ns3:endPage 42 ;
+    ns3:numPages 14 ;
+    ns3:startPage 29 ;
+    ns1:author <http://ceur-ws.org/Vol-1555/#KeviniLano> .
+
+<http://ceur-ws.org/Vol-1555/#paper5> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1555/> ;
+    ns6:title "Quality Assessment of UML Class Diagrams - A Study Comparing Experts and Students" ;
+    ns3:endPage 54 ;
+    ns3:numPages 12 ;
+    ns3:startPage 43 ;
+    ns1:author <http://ceur-ws.org/Vol-1555/#BilaliKarasneh> .
+
+<http://ceur-ws.org/Vol-1555/#paper6> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1555/> ;
+    ns6:title "Evaluating Student Work in Modelling Courses" ;
+    ns3:endPage 67 ;
+    ns3:numPages 13 ;
+    ns3:startPage 55 ;
+    ns1:author <http://ceur-ws.org/Vol-1555/#RichardiF.iPaige> .
+
+<http://ceur-ws.org/Vol-1555/> a ns5:Proceedings ;
+    ns5:hasPart <http://ceur-ws.org/Vol-1555/#keynote>,
+        <http://ceur-ws.org/Vol-1555/#panel>,
+        <http://ceur-ws.org/Vol-1555/#paper1>,
+        <http://ceur-ws.org/Vol-1555/#paper2>,
+        <http://ceur-ws.org/Vol-1555/#paper3>,
+        <http://ceur-ws.org/Vol-1555/#paper4>,
+        <http://ceur-ws.org/Vol-1555/#paper5>,
+        <http://ceur-ws.org/Vol-1555/#paper6> ;
+    ns7:issued "2016-02-04T00:00:00+00:00"^^xsd:dateTime ;
+    ns3:presentedAt <http://ceur-ws.org/Vol-1555/#event> ;
+    ns1:editor <http://ceur-ws.org/Vol-1555/#ArnoniSturm>,
+        <http://ceur-ws.org/Vol-1555/#TonyiClark> .
+
+<http://ceur-ws.org/Vol-1555/#panel> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1555/> ;
+    ns6:title "Software Models in Practice in Student Projects - Panel Summary" ;
+    ns3:endPage 76 ;
+    ns3:numPages 9 ;
+    ns3:startPage 68 ;
+    ns1:author <http://ceur-ws.org/Vol-1555/#ArnoniSturm>,
+        <http://ceur-ws.org/Vol-1555/#BettyiCheng>,
+        <http://ceur-ws.org/Vol-1555/#DaniChiorean>,
+        <http://ceur-ws.org/Vol-1555/#DaveiR.iStikkolorum>,
+        <http://ceur-ws.org/Vol-1555/#EmilioiPelozo>,
+        <http://ceur-ws.org/Vol-1555/#GeriiGeorg>,
+        <http://ceur-ws.org/Vol-1555/#GrischaiLiebel>,
+        <http://ceur-ws.org/Vol-1555/#GunteriMussbacher>,
+        <http://ceur-ws.org/Vol-1555/#MiraiBalaban>,
+        <http://ceur-ws.org/Vol-1555/#OmariBadreddin>,
+        <http://ceur-ws.org/Vol-1555/#PeteriClarke>,
+        <http://ceur-ws.org/Vol-1555/#TimiLethbridge> .
 

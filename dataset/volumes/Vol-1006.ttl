@@ -1,46 +1,205 @@
 @prefix ns1: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns2: <http://www.w3.org/2002/07/owl#> .
+@prefix ns2: <http://purl.org/ontology/bibo/#> .
 @prefix ns3: <http://xmlns.com/foaf/0.1/> .
-@prefix ns4: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns4: <http://www.w3.org/2002/07/owl#> .
 @prefix ns5: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns6: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns7: <http://purl.org/ontology/bibo/#> .
+@prefix ns6: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns7: <http://purl.org/dc/elements/1.1/#> .
 @prefix ns8: <http://purl.org/dc/elements/1.1/> .
+@prefix ns9: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1006/> a ns4:Proceedings ;
-    ns6:issued "2013-06-25T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:presentedAt <http://ceur-ws.org/Vol-1006/#event> ;
-    ns1:editor <http://ceur-ws.org/Vol-1006/#FabrizioiSmith>,
-        <http://ceur-ws.org/Vol-1006/#GashiBhullar>,
-        <http://ceur-ws.org/Vol-1006/#MicheleiMissikoff>,
-        <http://ceur-ws.org/Vol-1006/#NeiliMaiden> .
+<http://ceur-ws.org/Vol-1006/#AnnaiFormica> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/AnnaiFormica> ;
+    ns3:made <http://ceur-ws.org/Vol-1006/#paper6> ;
+    ns3:name "Anna Formica" .
 
-<http://ceur-ws.org/Vol-1006/#FabrizioiSmith> a ns3:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/FabrizioiSmith> ;
-    ns3:name "Fabrizio Smith" .
+<http://ceur-ws.org/Vol-1006/#Arne.iJ.iBerre> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/Arne.iJ.iBerre> ;
+    ns3:made <http://ceur-ws.org/Vol-1006/#paper5> ;
+    ns3:name "Arne. J. Berre" .
+
+<http://ceur-ws.org/Vol-1006/#BenjaminiKnoke> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/BenjaminiKnoke> ;
+    ns3:made <http://ceur-ws.org/Vol-1006/#paper2> ;
+    ns3:name "Benjamin Knoke" .
+
+<http://ceur-ws.org/Vol-1006/#CarmeniPereaiEscribano> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/CarmeniPereaiEscribano> ;
+    ns3:made <http://ceur-ws.org/Vol-1006/#paper4> ;
+    ns3:name "Carmen Perea Escribano" .
+
+<http://ceur-ws.org/Vol-1006/#ElahehiPourabbas> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/ElahehiPourabbas> ;
+    ns3:made <http://ceur-ws.org/Vol-1006/#paper6> ;
+    ns3:name "Elaheh Pourabbas" .
+
+<http://ceur-ws.org/Vol-1006/#FernandoiGiganteiValencia> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/FernandoiGiganteiValencia> ;
+    ns3:made <http://ceur-ws.org/Vol-1006/#paper1> ;
+    ns3:name "Fernando Gigante Valencia" .
+
+<http://ceur-ws.org/Vol-1006/#FranciscoiCalleiMoreno> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/FranciscoiCalleiMoreno> ;
+    ns3:made <http://ceur-ws.org/Vol-1006/#paper4> ;
+    ns3:name "Francisco Calle Moreno" .
 
 <http://ceur-ws.org/Vol-1006/#GashiBhullar> a ns3:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/GashiBhullar> ;
+    ns2:place <http://dbpedia.org/resource/United_Kingdom> ;
+    ns1:affiliation "Technology Application Network Limited" ;
+    ns4:sameAs <http://ceur-ws.org/persons/GashiBhullar> ;
     ns3:name "Gash Bhullar" .
 
-<http://ceur-ws.org/Vol-1006/#MicheleiMissikoff> a ns3:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/MicheleiMissikoff> ;
-    ns3:name "Michele Missikoff" .
+<http://ceur-ws.org/Vol-1006/#HenkideiMan> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/HenkideiMan> ;
+    ns3:made <http://ceur-ws.org/Vol-1006/#paper5> ;
+    ns3:name "Henk de Man" .
 
 <http://ceur-ws.org/Vol-1006/#NeiliMaiden> a ns3:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/NeiliMaiden> ;
+    ns2:place <http://dbpedia.org/resource/United_Kingdom> ;
+    ns1:affiliation "City University of London, Centre for Human Computer Interaction Design" ;
+    ns4:sameAs <http://ceur-ws.org/persons/NeiliMaiden> ;
     ns3:name "Neil Maiden" .
 
-<http://ceur-ws.org/Vol-1006/#event> a ns4:WorkshopEvent ;
-    ns4:hasLocation <http://dbpedia.org/resource/Spain> ;
-    ns4:hasPart <http://ceur-ws.org/Vol-1006/#part-CEUR-WS> ;
-    ns4:isSubEventOf <http://ceur-ws.org/Vol-1006/#conf> ;
+<http://ceur-ws.org/Vol-1006/#PauiCresp%C3%AD> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/PauiCresp%C3%AD> ;
+    ns3:made <http://ceur-ws.org/Vol-1006/#paper1> ;
+    ns3:name "Pau Crespí" .
+
+<http://ceur-ws.org/Vol-1006/#PeteriLindgren> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/PeteriLindgren> ;
+    ns3:made <http://ceur-ws.org/Vol-1006/#paper5> ;
+    ns3:name "Peter Lindgren" .
+
+<http://ceur-ws.org/Vol-1006/#PierluigiiAssogna> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/PierluigiiAssogna> ;
+    ns3:made <http://ceur-ws.org/Vol-1006/#paper3> ;
+    ns3:name "Pierluigi Assogna" .
+
+<http://ceur-ws.org/Vol-1006/#event> a ns6:WorkshopEvent ;
+    ns6:hasLocation <http://dbpedia.org/resource/Spain> ;
+    ns6:hasPart <http://ceur-ws.org/Vol-1006/#part-NGEBIS> ;
+    ns6:isSubEventOf <http://ceur-ws.org/Vol-1006/#conf> ;
     ns5:beginsAtDatetime "2013-06-18T00:00:00+00:00"^^xsd:dateTime ;
     ns5:endsAtDatetime "2013-06-18T00:00:00+00:00"^^xsd:dateTime ;
     ns8:license "http://choosealicense.com/licenses/no-license/" ;
     rdfs:seeAlso <http://ceur-ws.org/Vol-864/#event> .
+
+<http://ceur-ws.org/Vol-1006/#AliiAniliSinaci> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/AliiAniliSinaci> ;
+    ns3:made <http://ceur-ws.org/Vol-1006/#paper1>,
+        <http://ceur-ws.org/Vol-1006/#paper7> ;
+    ns3:name "Ali Anil Sinaci" .
+
+<http://ceur-ws.org/Vol-1006/#FabrizioiSmith> a ns3:Person ;
+    ns2:place <http://dbpedia.org/resource/Italy> ;
+    ns1:affiliation "National Research Council, Institute for System Analysis and Computer Science \"Antonio Ruberti\"" ;
+    ns4:sameAs <http://ceur-ws.org/persons/FabrizioiSmith> ;
+    ns3:made <http://ceur-ws.org/Vol-1006/#paper7> ;
+    ns3:name "Fabrizio Smith" .
+
+<http://ceur-ws.org/Vol-1006/#FrancescoiTaglino> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/FrancescoiTaglino> ;
+    ns3:made <http://ceur-ws.org/Vol-1006/#paper6>,
+        <http://ceur-ws.org/Vol-1006/#paper7> ;
+    ns3:name "Francesco Taglino" .
+
+<http://ceur-ws.org/Vol-1006/#MicheleiMissikoff> a ns3:Person ;
+    ns2:place <http://dbpedia.org/resource/Italy> ;
+    ns1:affiliation "Università Politecnica delle Marche, Department of Information Engineering" ;
+    ns4:sameAs <http://ceur-ws.org/persons/MicheleiMissikoff> ;
+    ns3:made <http://ceur-ws.org/Vol-1006/#paper6> ;
+    ns3:name "Michele Missikoff" .
+
+<http://ceur-ws.org/Vol-1006/#R.iVolkaniBasar> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/R.iVolkaniBasar> ;
+    ns3:made <http://ceur-ws.org/Vol-1006/#paper1>,
+        <http://ceur-ws.org/Vol-1006/#paper7> ;
+    ns3:name "R. Volkan Basar" .
+
+<http://ceur-ws.org/Vol-1006/#paper2> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1006/> ;
+    ns7:title "A Short Paper on Innovation Capability Maturity within Collaborations" ;
+    ns2:endPage 11 ;
+    ns2:numPages 5 ;
+    ns2:startPage 7 ;
+    ns1:author <http://ceur-ws.org/Vol-1006/#BenjaminiKnoke> .
+
+<http://ceur-ws.org/Vol-1006/#paper3> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1006/> ;
+    ns7:title "Innovation through Cross-fertilization" ;
+    ns2:endPage 17 ;
+    ns2:numPages 6 ;
+    ns2:startPage 12 ;
+    ns1:author <http://ceur-ws.org/Vol-1006/#PierluigiiAssogna> .
+
+<http://ceur-ws.org/Vol-1006/#paper4> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1006/> ;
+    ns7:title "BIVEE Virtual Innovation Factory" ;
+    ns2:endPage 23 ;
+    ns2:numPages 6 ;
+    ns2:startPage 18 ;
+    ns1:author <http://ceur-ws.org/Vol-1006/#CarmeniPereaiEscribano>,
+        <http://ceur-ws.org/Vol-1006/#FranciscoiCalleiMoreno> .
+
+<http://ceur-ws.org/Vol-1006/#paper5> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1006/> ;
+    ns7:title "Open Business Model Innovation with the NEFFICS platform and VDML" ;
+    ns2:endPage 30 ;
+    ns2:numPages 7 ;
+    ns2:startPage 24 ;
+    ns1:author <http://ceur-ws.org/Vol-1006/#Arne.iJ.iBerre>,
+        <http://ceur-ws.org/Vol-1006/#HenkideiMan>,
+        <http://ceur-ws.org/Vol-1006/#PeteriLindgren> .
+
+<http://ceur-ws.org/Vol-1006/#paper1> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1006/> ;
+    ns7:title "Analysis of the Information Resources for the Furniture Industry in BIVEE" ;
+    ns2:endPage 6 ;
+    ns2:numPages 6 ;
+    ns2:startPage 1 ;
+    ns1:author <http://ceur-ws.org/Vol-1006/#AliiAniliSinaci>,
+        <http://ceur-ws.org/Vol-1006/#FernandoiGiganteiValencia>,
+        <http://ceur-ws.org/Vol-1006/#PauiCresp%C3%AD>,
+        <http://ceur-ws.org/Vol-1006/#R.iVolkaniBasar> .
+
+<http://ceur-ws.org/Vol-1006/#paper6> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1006/> ;
+    ns7:title "A Linked Data Based Approach to Similarity Reasoning" ;
+    ns2:endPage 38 ;
+    ns2:numPages 8 ;
+    ns2:startPage 31 ;
+    ns1:author <http://ceur-ws.org/Vol-1006/#AnnaiFormica>,
+        <http://ceur-ws.org/Vol-1006/#ElahehiPourabbas>,
+        <http://ceur-ws.org/Vol-1006/#FrancescoiTaglino>,
+        <http://ceur-ws.org/Vol-1006/#MicheleiMissikoff> .
+
+<http://ceur-ws.org/Vol-1006/#paper7> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1006/> ;
+    ns7:title "Semantic UBL-like documents for innovation" ;
+    ns2:endPage 44 ;
+    ns2:numPages 6 ;
+    ns2:startPage 39 ;
+    ns1:author <http://ceur-ws.org/Vol-1006/#AliiAniliSinaci>,
+        <http://ceur-ws.org/Vol-1006/#FabrizioiSmith>,
+        <http://ceur-ws.org/Vol-1006/#FrancescoiTaglino>,
+        <http://ceur-ws.org/Vol-1006/#R.iVolkaniBasar> .
+
+<http://ceur-ws.org/Vol-1006/> a ns6:Proceedings ;
+    ns6:hasPart <http://ceur-ws.org/Vol-1006/#paper1>,
+        <http://ceur-ws.org/Vol-1006/#paper2>,
+        <http://ceur-ws.org/Vol-1006/#paper3>,
+        <http://ceur-ws.org/Vol-1006/#paper4>,
+        <http://ceur-ws.org/Vol-1006/#paper5>,
+        <http://ceur-ws.org/Vol-1006/#paper6>,
+        <http://ceur-ws.org/Vol-1006/#paper7> ;
+    ns9:issued "2013-06-25T00:00:00+00:00"^^xsd:dateTime ;
+    ns2:presentedAt <http://ceur-ws.org/Vol-1006/#event> ;
+    ns1:editor <http://ceur-ws.org/Vol-1006/#FabrizioiSmith>,
+        <http://ceur-ws.org/Vol-1006/#GashiBhullar>,
+        <http://ceur-ws.org/Vol-1006/#MicheleiMissikoff>,
+        <http://ceur-ws.org/Vol-1006/#NeiliMaiden> .
 

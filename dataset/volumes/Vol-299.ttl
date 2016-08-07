@@ -1,21 +1,16 @@
-@prefix ns1: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns1: <http://data.semanticweb.org/ns/swc/ontology/#> .
 @prefix ns2: <http://xmlns.com/foaf/0.1/> .
-@prefix ns3: <http://purl.org/ontology/bibo/#> .
-@prefix ns4: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns3: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns4: <http://purl.org/ontology/bibo/#> .
 @prefix ns5: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns6: <http://purl.org/dc/elements/1.1/> .
+@prefix ns6: <http://purl.org/NET/c4dm/timeline.owl#> .
 @prefix ns7: <http://www.w3.org/2002/07/owl#> .
-@prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns9: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns9: <http://purl.org/dc/elements/1.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-
-<http://ceur-ws.org/Vol-299/#%C2%A010.> a ns2:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/%C2%A010.> ;
-    ns2:made <http://ceur-ws.org/Vol-299/#17> ;
-    ns2:name " 10." .
 
 <http://ceur-ws.org/Vol-299/#%C2%A02.%C2%A0i%C2%A0> a ns2:Person ;
     ns7:sameAs <http://ceur-ws.org/persons/%C2%A02.%C2%A0i%C2%A0> ;
@@ -58,100 +53,101 @@
     ns2:name "3.   " .
 
 <http://ceur-ws.org/Vol-299/#Editediby> a ns2:Person ;
-    ns1:affiliation "" ;
+    ns3:affiliation "" ;
     ns7:sameAs <http://ceur-ws.org/persons/Editediby> ;
     ns2:name "Edited by" .
 
 <http://ceur-ws.org/Vol-299/#KathleeniStewartiHornsby> a ns2:Person ;
-    ns3:place <http://dbpedia.org/resource/United_States> ;
-    ns1:affiliation "University of Iowa" ;
+    ns4:place <http://dbpedia.org/resource/United_States> ;
+    ns3:affiliation "University of Iowa" ;
     ns7:sameAs <http://ceur-ws.org/persons/KathleeniStewartiHornsby> ;
     ns2:name "Kathleen Stewart Hornsby" .
 
-<http://ceur-ws.org/Vol-299/#event> a ns4:WorkshopEvent ;
-    ns4:hasLocation <http://dbpedia.org/resource/United_States> ;
-    ns4:hasPart <http://ceur-ws.org/Vol-299/#part-MD>,
-        <http://ceur-ws.org/Vol-299/#part-OIC> ;
-    ns4:isSubEventOf <http://ceur-ws.org/Vol-299/#conf> ;
-    ns8:beginsAtDatetime "2008-01-07T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:endsAtDatetime "2008-01-07T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:license "http://choosealicense.com/licenses/no-license/" .
+<http://ceur-ws.org/Vol-299/#event> a ns1:WorkshopEvent ;
+    ns1:hasLocation <http://dbpedia.org/resource/Organisation_of_Islamic_Cooperation>,
+        <http://dbpedia.org/resource/United_States> ;
+    ns1:hasPart <http://ceur-ws.org/Vol-299/#part-OIC> ;
+    ns1:isSubEventOf <http://ceur-ws.org/Vol-299/#conf> ;
+    ns6:beginsAtDatetime "2007-11-28T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:endsAtDatetime "2007-11-29T00:00:00+00:00"^^xsd:dateTime ;
+    ns9:license "http://choosealicense.com/licenses/no-license/" .
 
-<http://ceur-ws.org/Vol-299/#%C2%A011.%C2%A0> a ns2:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/%C2%A011.%C2%A0> ;
-    ns2:made <http://ceur-ws.org/Vol-299/#1>,
-        <http://ceur-ws.org/Vol-299/#9> ;
-    ns2:name " 11. " .
-
-<http://ceur-ws.org/Vol-299/#1> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-299/> ;
+<http://ceur-ws.org/Vol-299/#1> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-299/> ;
     ns5:title "Achieving Ontology-Assisted Query of Graph Databases" ;
-    ns3:section <http://ceur-ws.org/Vol-299/#ElisaFKendallJayJacobsDeborahLMcGuinnessStephenSchwab> ;
-    ns1:author <http://ceur-ws.org/Vol-299/#%C2%A011.%C2%A0> .
+    ns4:section <http://ceur-ws.org/Vol-299/#ElisaFKendallJayJacobsDeborahLMcGuinnessStephenSchwab> ;
+    ns3:author <http://ceur-ws.org/Vol-299/#1.%C2%A0i%C2%A0> .
 
-<http://ceur-ws.org/Vol-299/#17> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-299/> ;
+<http://ceur-ws.org/Vol-299/#17> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-299/> ;
     ns5:title "Ontological Support for Bayesian Evidence Management" ;
-    ns3:section <http://ceur-ws.org/Vol-299/#ElisaFKendallJayJacobsDeborahLMcGuinnessStephenSchwab> ;
-    ns1:author <http://ceur-ws.org/Vol-299/#%C2%A010.> .
+    ns4:section <http://ceur-ws.org/Vol-299/#ElisaFKendallJayJacobsDeborahLMcGuinnessStephenSchwab> ;
+    ns3:author <http://ceur-ws.org/Vol-299/#1.%C2%A0i%C2%A0> .
 
-<http://ceur-ws.org/Vol-299/#18> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-299/> ;
+<http://ceur-ws.org/Vol-299/#18> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-299/> ;
     ns5:title "Ontologies for Rapid Integration of Heterogeneous Data for Command, Control, & Intelligence" ;
-    ns3:section <http://ceur-ws.org/Vol-299/#ElisaFKendallJayJacobsDeborahLMcGuinnessStephenSchwab> ;
-    ns1:author <http://ceur-ws.org/Vol-299/#%C2%A08.%C2%A0i%C2%A0> .
+    ns4:section <http://ceur-ws.org/Vol-299/#ElisaFKendallJayJacobsDeborahLMcGuinnessStephenSchwab> ;
+    ns3:author <http://ceur-ws.org/Vol-299/#%C2%A08.%C2%A0i%C2%A0> .
 
-<http://ceur-ws.org/Vol-299/#19> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-299/> ;
+<http://ceur-ws.org/Vol-299/#19> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-299/> ;
     ns5:title "Ontology-Driven Imagery Analysis" ;
-    ns3:section <http://ceur-ws.org/Vol-299/#ElisaFKendallJayJacobsDeborahLMcGuinnessStephenSchwab> ;
-    ns1:author <http://ceur-ws.org/Vol-299/#%C2%A09.%C2%A0i%C2%A0> .
+    ns4:section <http://ceur-ws.org/Vol-299/#ElisaFKendallJayJacobsDeborahLMcGuinnessStephenSchwab> ;
+    ns3:author <http://ceur-ws.org/Vol-299/#%C2%A09.%C2%A0i%C2%A0> .
 
-<http://ceur-ws.org/Vol-299/#20> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-299/> ;
+<http://ceur-ws.org/Vol-299/#20> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-299/> ;
     ns5:title "Policies for Public Domain Ontologies for the Intelligence Community" ;
-    ns1:author <http://ceur-ws.org/Vol-299/#3.%C2%A0i%C2%A0> .
+    ns3:author <http://ceur-ws.org/Vol-299/#3.%C2%A0i%C2%A0> .
 
-<http://ceur-ws.org/Vol-299/#25> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-299/> ;
+<http://ceur-ws.org/Vol-299/#25> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-299/> ;
     ns5:title "The Use of Ontologies to Support Intelligence Analysis" ;
-    ns3:section <http://ceur-ws.org/Vol-299/#ElisaFKendallJayJacobsDeborahLMcGuinnessStephenSchwab> ;
-    ns1:author <http://ceur-ws.org/Vol-299/#%C2%A04.%C2%A0i%C2%A0> .
+    ns4:section <http://ceur-ws.org/Vol-299/#ElisaFKendallJayJacobsDeborahLMcGuinnessStephenSchwab> ;
+    ns3:author <http://ceur-ws.org/Vol-299/#%C2%A04.%C2%A0i%C2%A0> .
 
-<http://ceur-ws.org/Vol-299/#26> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-299/> ;
+<http://ceur-ws.org/Vol-299/#26> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-299/> ;
     ns5:title "Uses of Ontologies in Open-Source Blog Mining" ;
-    ns1:author <http://ceur-ws.org/Vol-299/#%C2%A02.%C2%A0i%C2%A0> .
+    ns3:author <http://ceur-ws.org/Vol-299/#%C2%A02.%C2%A0i%C2%A0> .
 
-<http://ceur-ws.org/Vol-299/#29> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-299/> ;
+<http://ceur-ws.org/Vol-299/#29> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-299/> ;
     ns5:title "Ontologies and Probabilities: Working Together for Effective Multi-INT Fusion" ;
-    ns3:section <http://ceur-ws.org/Vol-299/#ElisaFKendallJayJacobsDeborahLMcGuinnessStephenSchwab> ;
-    ns1:author <http://ceur-ws.org/Vol-299/#%C2%A07.%C2%A0i%C2%A0> .
+    ns4:section <http://ceur-ws.org/Vol-299/#ElisaFKendallJayJacobsDeborahLMcGuinnessStephenSchwab> ;
+    ns3:author <http://ceur-ws.org/Vol-299/#%C2%A07.%C2%A0i%C2%A0> .
 
-<http://ceur-ws.org/Vol-299/#30> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-299/> ;
+<http://ceur-ws.org/Vol-299/#30> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-299/> ;
     ns5:title "A Multi-INT Semantic Reasoning Framework for Intelligence Analysis Support" ;
-    ns3:section <http://ceur-ws.org/Vol-299/#ElisaFKendallJayJacobsDeborahLMcGuinnessStephenSchwab> ;
-    ns1:author <http://ceur-ws.org/Vol-299/#%C2%A06.%C2%A0i%C2%A0> .
+    ns4:section <http://ceur-ws.org/Vol-299/#ElisaFKendallJayJacobsDeborahLMcGuinnessStephenSchwab> ;
+    ns3:author <http://ceur-ws.org/Vol-299/#%C2%A06.%C2%A0i%C2%A0> .
 
-<http://ceur-ws.org/Vol-299/#8> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-299/> ;
+<http://ceur-ws.org/Vol-299/#8> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-299/> ;
     ns5:title "Creating a Geospatial and Visual Information Ontology for Analysts" ;
-    ns3:section <http://ceur-ws.org/Vol-299/#ElisaFKendallJayJacobsDeborahLMcGuinnessStephenSchwab> ;
-    ns1:author <http://ceur-ws.org/Vol-299/#%C2%A05.%C2%A0i%C2%A0> .
+    ns4:section <http://ceur-ws.org/Vol-299/#ElisaFKendallJayJacobsDeborahLMcGuinnessStephenSchwab> ;
+    ns3:author <http://ceur-ws.org/Vol-299/#%C2%A05.%C2%A0i%C2%A0> .
 
-<http://ceur-ws.org/Vol-299/#9> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-299/> ;
+<http://ceur-ws.org/Vol-299/#9> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-299/> ;
     ns5:title "Dealing with Mistakes in a Referent Tracking System  " ;
-    ns1:author <http://ceur-ws.org/Vol-299/#%C2%A011.%C2%A0> .
+    ns3:author <http://ceur-ws.org/Vol-299/#1.%C2%A0i%C2%A0> .
 
-<http://ceur-ws.org/Vol-299/#ElisaFKendallJayJacobsDeborahLMcGuinnessStephenSchwab> a ns4:SessionEvent ;
-    ns4:partOf <http://ceur-ws.org/Vol-299/> ;
+<http://ceur-ws.org/Vol-299/#1.%C2%A0i%C2%A0> a ns2:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/1.%C2%A0i%C2%A0> ;
+    ns2:made <http://ceur-ws.org/Vol-299/#1>,
+        <http://ceur-ws.org/Vol-299/#17>,
+        <http://ceur-ws.org/Vol-299/#9> ;
+    ns2:name "1.   " .
+
+<http://ceur-ws.org/Vol-299/#ElisaFKendallJayJacobsDeborahLMcGuinnessStephenSchwab> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-299/> ;
     ns5:title "        Elisa F. Kendall, Jay Jacobs, Deborah L. McGuinness, Stephen Schwab" .
 
-<http://ceur-ws.org/Vol-299/> a ns4:Proceedings ;
-    ns4:hasPart <http://ceur-ws.org/Vol-299/#1>,
+<http://ceur-ws.org/Vol-299/> a ns1:Proceedings ;
+    ns1:hasPart <http://ceur-ws.org/Vol-299/#1>,
         <http://ceur-ws.org/Vol-299/#17>,
         <http://ceur-ws.org/Vol-299/#18>,
         <http://ceur-ws.org/Vol-299/#19>,
@@ -162,9 +158,9 @@
         <http://ceur-ws.org/Vol-299/#30>,
         <http://ceur-ws.org/Vol-299/#8>,
         <http://ceur-ws.org/Vol-299/#9> ;
-    ns4:hasSession <http://ceur-ws.org/Vol-299/#ElisaFKendallJayJacobsDeborahLMcGuinnessStephenSchwab> ;
-    ns9:issued "2007-11-27T00:00:00+00:00"^^xsd:dateTime ;
-    ns3:presentedAt <http://ceur-ws.org/Vol-299/#event> ;
-    ns1:editor <http://ceur-ws.org/Vol-299/#Editediby>,
+    ns1:hasSession <http://ceur-ws.org/Vol-299/#ElisaFKendallJayJacobsDeborahLMcGuinnessStephenSchwab> ;
+    ns8:issued "2007-11-27T00:00:00+00:00"^^xsd:dateTime ;
+    ns4:presentedAt <http://ceur-ws.org/Vol-299/#event> ;
+    ns3:editor <http://ceur-ws.org/Vol-299/#Editediby>,
         <http://ceur-ws.org/Vol-299/#KathleeniStewartiHornsby> .
 

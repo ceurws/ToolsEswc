@@ -1,60 +1,358 @@
-@prefix ns1: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns2: <http://www.w3.org/2002/07/owl#> .
-@prefix ns3: <http://xmlns.com/foaf/0.1/> .
-@prefix ns4: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns1: <http://xmlns.com/foaf/0.1/> .
+@prefix ns2: <http://purl.org/ontology/bibo/#> .
+@prefix ns3: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns4: <http://www.w3.org/2002/07/owl#> .
 @prefix ns5: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns6: <http://purl.org/dc/elements/1.1/> .
-@prefix ns7: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns8: <http://purl.org/ontology/bibo/#> .
+@prefix ns6: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns8: <http://purl.org/dc/elements/1.1/> .
+@prefix ns9: <http://purl.org/NET/c4dm/timeline.owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1620/> a ns7:Proceedings ;
-    ns1:issued "2016-07-05T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:presentedAt <http://ceur-ws.org/Vol-1620/#event> ;
+<http://ceur-ws.org/Vol-1620/#AdrianiGiurca> a ns1:Person ;
+    ns2:place <http://dbpedia.org/resource/Germany> ;
+    ns5:affiliation "Brandenburg University of Technology Cottbus–Senftenberg" ;
+    ns4:sameAs <http://ceur-ws.org/persons/AdrianiGiurca> ;
+    ns1:name "Adrian Giurca" .
+
+<http://ceur-ws.org/Vol-1620/#ChristophiBenzm%C3%BCller> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/ChristophiBenzm%C3%BCller> ;
+    ns1:made <http://ceur-ws.org/Vol-1620/#paper6> ;
+    ns1:name "Christoph Benzmüller" .
+
+<http://ceur-ws.org/Vol-1620/#DoertheiArndt> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/DoertheiArndt> ;
+    ns1:made <http://ceur-ws.org/Vol-1620/#paper12> ;
+    ns1:name "Doerthe Arndt" .
+
+<http://ceur-ws.org/Vol-1620/#ErikiMannens> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/ErikiMannens> ;
+    ns1:made <http://ceur-ws.org/Vol-1620/#paper12> ;
+    ns1:name "Erik Mannens" .
+
+<http://ceur-ws.org/Vol-1620/#FaribaiSadri> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/FaribaiSadri> ;
+    ns1:made <http://ceur-ws.org/Vol-1620/#paper5> ;
+    ns1:name "Fariba Sadri" .
+
+<http://ceur-ws.org/Vol-1620/#FirasiAliKhalil> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/FirasiAliKhalil> ;
+    ns1:made <http://ceur-ws.org/Vol-1620/#paper7> ;
+    ns1:name "Firas Al Khalil" .
+
+<http://ceur-ws.org/Vol-1620/#GerdaiJanssens> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/GerdaiJanssens> ;
+    ns1:made <http://ceur-ws.org/Vol-1620/#paper3> ;
+    ns1:name "Gerda Janssens" .
+
+<http://ceur-ws.org/Vol-1620/#GuntheriReinhart> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/GuntheriReinhart> ;
+    ns1:made <http://ceur-ws.org/Vol-1620/#paper8> ;
+    ns1:name "Gunther Reinhart" .
+
+<http://ceur-ws.org/Vol-1620/#HaroldiBoley> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/HaroldiBoley> ;
+    ns1:made <http://ceur-ws.org/Vol-1620/#paper6> ;
+    ns1:name "Harold Boley" .
+
+<http://ceur-ws.org/Vol-1620/#IngmariDasseville> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/IngmariDasseville> ;
+    ns1:made <http://ceur-ws.org/Vol-1620/#paper3> ;
+    ns1:name "Ingmar Dasseville" .
+
+<http://ceur-ws.org/Vol-1620/#JacobiFeldman> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/JacobiFeldman> ;
+    ns1:made <http://ceur-ws.org/Vol-1620/#paper2> ;
+    ns1:name "Jacob Feldman" .
+
+<http://ceur-ws.org/Vol-1620/#JamesiAnderson> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/JamesiAnderson> ;
+    ns1:made <http://ceur-ws.org/Vol-1620/#paper11> ;
+    ns1:name "James Anderson" .
+
+<http://ceur-ws.org/Vol-1620/#JaniVanthienen> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/JaniVanthienen> ;
+    ns1:made <http://ceur-ws.org/Vol-1620/#paper3> ;
+    ns1:name "Jan Vanthienen" .
+
+<http://ceur-ws.org/Vol-1620/#JoachimiVaniHerwegen> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/JoachimiVaniHerwegen> ;
+    ns1:made <http://ceur-ws.org/Vol-1620/#paper12> ;
+    ns1:name "Joachim Van Herwegen" .
+
+<http://ceur-ws.org/Vol-1620/#JuliaiPielmeier> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/JuliaiPielmeier> ;
+    ns1:made <http://ceur-ws.org/Vol-1620/#paper8> ;
+    ns1:name "Julia Pielmeier" .
+
+<http://ceur-ws.org/Vol-1620/#KiaiTeymourian> a ns1:Person ;
+    ns2:place <http://dbpedia.org/resource/United_States> ;
+    ns5:affiliation "Rice University" ;
+    ns4:sameAs <http://ceur-ws.org/persons/KiaiTeymourian> ;
+    ns1:name "Kia Teymourian" .
+
+<http://ceur-ws.org/Vol-1620/#LaurentiJanssens> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/LaurentiJanssens> ;
+    ns1:made <http://ceur-ws.org/Vol-1620/#paper3> ;
+    ns1:name "Laurent Janssens" .
+
+<http://ceur-ws.org/Vol-1620/#LeonaiO%27Brien> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/LeonaiO%27Brien> ;
+    ns1:made <http://ceur-ws.org/Vol-1620/#paper7> ;
+    ns1:name "Leona O'Brien" .
+
+<http://ceur-ws.org/Vol-1620/#MarcelloiCeci> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/MarcelloiCeci> ;
+    ns1:made <http://ceur-ws.org/Vol-1620/#paper7> ;
+    ns1:name "Marcello Ceci" .
+
+<http://ceur-ws.org/Vol-1620/#MarciDenecker> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/MarciDenecker> ;
+    ns1:made <http://ceur-ws.org/Vol-1620/#paper3> ;
+    ns1:name "Marc Denecker" .
+
+<http://ceur-ws.org/Vol-1620/#MarkiProctor> a ns1:Person ;
+    ns2:place <http://dbpedia.org/resource/United_Kingdom> ;
+    ns5:affiliation "Red Hat" ;
+    ns4:sameAs <http://ceur-ws.org/persons/MarkiProctor> ;
+    ns1:name "Mark Proctor" .
+
+<http://ceur-ws.org/Vol-1620/#MengiLuan> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/MengiLuan> ;
+    ns1:made <http://ceur-ws.org/Vol-1620/#paper6> ;
+    ns1:name "Meng Luan" .
+
+<http://ceur-ws.org/Vol-1620/#MohammadrezaiAbbasifard> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/MohammadrezaiAbbasifard> ;
+    ns1:made <http://ceur-ws.org/Vol-1620/#paper10> ;
+    ns1:name "Mohammadreza Abbasifard" .
+
+<http://ceur-ws.org/Vol-1620/#NadaiSharaf> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/NadaiSharaf> ;
+    ns1:made <http://ceur-ws.org/Vol-1620/#paper1> ;
+    ns1:name "Nada Sharaf" .
+
+<http://ceur-ws.org/Vol-1620/#NhaniLeiThanh> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/NhaniLeiThanh> ;
+    ns1:made <http://ceur-ws.org/Vol-1620/#paper9> ;
+    ns1:name "Nhan Le Thanh" .
+
+<http://ceur-ws.org/Vol-1620/#RikiVanideiWalle> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/RikiVanideiWalle> ;
+    ns1:made <http://ceur-ws.org/Vol-1620/#paper12> ;
+    ns1:name "Rik Van de Walle" .
+
+<http://ceur-ws.org/Vol-1620/#RolfiGr%C3%BCtter> a ns1:Person ;
+    ns2:place <http://dbpedia.org/resource/Switzerland> ;
+    ns5:affiliation "Swiss Federal Research Institute" ;
+    ns4:sameAs <http://ceur-ws.org/persons/RolfiGr%C3%BCtter> ;
+    ns1:name "Rolf Grütter" .
+
+<http://ceur-ws.org/Vol-1620/#RubeniVerborgh> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/RubeniVerborgh> ;
+    ns1:made <http://ceur-ws.org/Vol-1620/#paper12> ;
+    ns1:name "Ruben Verborgh" .
+
+<http://ceur-ws.org/Vol-1620/#SimoniK%C3%B6nnecke> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/SimoniK%C3%B6nnecke> ;
+    ns1:made <http://ceur-ws.org/Vol-1620/#paper4> ;
+    ns1:name "Simon Könnecke" .
+
+<http://ceur-ws.org/Vol-1620/#SlimiAbdennadher> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/SlimiAbdennadher> ;
+    ns1:made <http://ceur-ws.org/Vol-1620/#paper1> ;
+    ns1:name "Slim Abdennadher" .
+
+<http://ceur-ws.org/Vol-1620/#StefaniBraunreuther> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/StefaniBraunreuther> ;
+    ns1:made <http://ceur-ws.org/Vol-1620/#paper8> ;
+    ns1:name "Stefan Braunreuther" .
+
+<http://ceur-ws.org/Vol-1620/#ThomiFruehwirth> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/ThomiFruehwirth> ;
+    ns1:made <http://ceur-ws.org/Vol-1620/#paper1> ;
+    ns1:name "Thom Fruehwirth" .
+
+<http://ceur-ws.org/Vol-1620/#TuaniAnhiPham> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/TuaniAnhiPham> ;
+    ns1:made <http://ceur-ws.org/Vol-1620/#paper9> ;
+    ns1:name "Tuan Anh Pham" .
+
+<http://ceur-ws.org/Vol-1620/#WilliamiVaniWoensel> a ns1:Person ;
+    ns2:place <http://dbpedia.org/resource/Canada> ;
+    ns5:affiliation "Dalhousie University" ;
+    ns4:sameAs <http://ceur-ws.org/persons/WilliamiVaniWoensel> ;
+    ns1:name "William Van Woensel" .
+
+<http://ceur-ws.org/Vol-1620/#ZhendongiSha> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/ZhendongiSha> ;
+    ns1:made <http://ceur-ws.org/Vol-1620/#paper6> ;
+    ns1:name "Zhendong Sha" .
+
+<http://ceur-ws.org/Vol-1620/#event> a ns3:WorkshopEvent ;
+    ns3:hasLocation <http://dbpedia.org/resource/United_States> ;
+    ns3:hasPart <http://ceur-ws.org/Vol-1620/#part-RuleML> ;
+    ns3:isSubEventOf <http://ceur-ws.org/Vol-1620/#conf> ;
+    ns9:beginsAtDatetime "2016-07-06T00:00:00+00:00"^^xsd:dateTime ;
+    ns9:endsAtDatetime "2016-07-09T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:license "http://creativecommons.org/publicdomain/zero/1.0/" ;
+    rdfs:seeAlso <http://ceur-ws.org/Vol-1004/#event>,
+        <http://ceur-ws.org/Vol-1211/#event>,
+        <http://ceur-ws.org/Vol-1417/#event>,
+        <http://ceur-ws.org/Vol-799/#event>,
+        <http://ceur-ws.org/Vol-874/#event> .
+
+<http://ceur-ws.org/Vol-1620/#TaraiAthan> a ns1:Person ;
+    ns2:place <http://dbpedia.org/resource/Germany> ;
+    ns5:affiliation "Athan Services, Freie Universitaet Berlin" ;
+    ns4:sameAs <http://ceur-ws.org/persons/TaraiAthan> ;
+    ns1:made <http://ceur-ws.org/Vol-1620/#paper11> ;
+    ns1:name "Tara Athan" .
+
+<http://ceur-ws.org/Vol-1620/#paper10> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1620/> ;
+    ns6:title "Rule Based Fragment Allocation in Distributed Database Systems" ;
+    ns2:section <http://ceur-ws.org/Vol-1620/#Part2DoctoralConsortiumRuleML2016> ;
+    ns5:author <http://ceur-ws.org/Vol-1620/#MohammadrezaiAbbasifard> .
+
+<http://ceur-ws.org/Vol-1620/#paper13> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1620/> ;
+    ns6:title "On the Use of Provalets in a Predictive Maintenance Use Case" ;
+    ns2:section <http://ceur-ws.org/Vol-1620/#Part3IndustryTrackRuleML2016> ;
+    ns5:author <http://ceur-ws.org/Vol-1620/#AdrianiPaschke> .
+
+<http://ceur-ws.org/Vol-1620/#paper2> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1620/> ;
+    ns6:title "What-If Analyzer for DMN-based Decision Models" ;
+    ns2:section <http://ceur-ws.org/Vol-1620/#Part1RuleChallengeRuleML2016> ;
+    ns5:author <http://ceur-ws.org/Vol-1620/#JacobiFeldman> .
+
+<http://ceur-ws.org/Vol-1620/#paper5> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1620/> ;
+    ns6:title "An Executable Logic-Based Model for Cutter Suction Dredging Using LPS" ;
+    ns2:section <http://ceur-ws.org/Vol-1620/#Part1RuleChallengeRuleML2016> ;
+    ns5:author <http://ceur-ws.org/Vol-1620/#FaribaiSadri> .
+
+<http://ceur-ws.org/Vol-1620/#AdrianiPaschke> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/AdrianiPaschke> ;
+    ns1:made <http://ceur-ws.org/Vol-1620/#paper11>,
+        <http://ceur-ws.org/Vol-1620/#paper13>,
+        <http://ceur-ws.org/Vol-1620/#paper4> ;
+    ns1:name "Adrian Paschke" .
+
+<http://ceur-ws.org/Vol-1620/#paper4> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1620/> ;
+    ns6:title "RuleML - DMN Translator" ;
+    ns2:section <http://ceur-ws.org/Vol-1620/#Part1RuleChallengeRuleML2016> ;
+    ns5:author <http://ceur-ws.org/Vol-1620/#AdrianiPaschke>,
+        <http://ceur-ws.org/Vol-1620/#SimoniK%C3%B6nnecke> .
+
+<http://ceur-ws.org/Vol-1620/#paper9> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1620/> ;
+    ns6:title "Checking the Compliance of Business Process in Business Process Life Cycle" ;
+    ns2:section <http://ceur-ws.org/Vol-1620/#Part2DoctoralConsortiumRuleML2016> ;
+    ns5:author <http://ceur-ws.org/Vol-1620/#NhaniLeiThanh>,
+        <http://ceur-ws.org/Vol-1620/#TuaniAnhiPham> .
+
+<http://ceur-ws.org/Vol-1620/#Part2DoctoralConsortiumRuleML2016> a ns3:SessionEvent ;
+    ns3:partOf <http://ceur-ws.org/Vol-1620/> ;
+    ns6:title "Part 2: Doctoral Consortium@RuleML2016" .
+
+<http://ceur-ws.org/Vol-1620/#Part3IndustryTrackRuleML2016> a ns3:SessionEvent ;
+    ns3:partOf <http://ceur-ws.org/Vol-1620/> ;
+    ns6:title "Part 3: Industry Track@RuleML2016" .
+
+<http://ceur-ws.org/Vol-1620/#paper1> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1620/> ;
+    ns6:title "A Rule Based Approach to teach Mathematics using Animation" ;
+    ns2:section <http://ceur-ws.org/Vol-1620/#Part1RuleChallengeRuleML2016> ;
+    ns5:author <http://ceur-ws.org/Vol-1620/#NadaiSharaf>,
+        <http://ceur-ws.org/Vol-1620/#SlimiAbdennadher>,
+        <http://ceur-ws.org/Vol-1620/#ThomiFruehwirth> .
+
+<http://ceur-ws.org/Vol-1620/#paper11> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1620/> ;
+    ns6:title "Rules and RDF Streams - A Position Paper" ;
+    ns2:section <http://ceur-ws.org/Vol-1620/#Part3IndustryTrackRuleML2016> ;
+    ns5:author <http://ceur-ws.org/Vol-1620/#AdrianiPaschke>,
+        <http://ceur-ws.org/Vol-1620/#JamesiAnderson>,
+        <http://ceur-ws.org/Vol-1620/#TaraiAthan> .
+
+<http://ceur-ws.org/Vol-1620/#paper7> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1620/> ;
+    ns6:title "Making Sense of Regulations with SBVR" ;
+    ns2:section <http://ceur-ws.org/Vol-1620/#Part1RuleChallengeRuleML2016> ;
+    ns5:author <http://ceur-ws.org/Vol-1620/#FirasiAliKhalil>,
+        <http://ceur-ws.org/Vol-1620/#LeonaiO%27Brien>,
+        <http://ceur-ws.org/Vol-1620/#MarcelloiCeci> .
+
+<http://ceur-ws.org/Vol-1620/#paper8> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1620/> ;
+    ns6:title "Situational Handling of Events for Industrial Production Environments" ;
+    ns2:section <http://ceur-ws.org/Vol-1620/#Part2DoctoralConsortiumRuleML2016> ;
+    ns5:author <http://ceur-ws.org/Vol-1620/#GuntheriReinhart>,
+        <http://ceur-ws.org/Vol-1620/#JuliaiPielmeier>,
+        <http://ceur-ws.org/Vol-1620/#StefaniBraunreuther> .
+
+<http://ceur-ws.org/Vol-1620/#paper6> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1620/> ;
+    ns6:title "Translating Higher-Order Modal Logic from RuleML to TPTP" ;
+    ns2:section <http://ceur-ws.org/Vol-1620/#Part1RuleChallengeRuleML2016> ;
+    ns5:author <http://ceur-ws.org/Vol-1620/#ChristophiBenzm%C3%BCller>,
+        <http://ceur-ws.org/Vol-1620/#HaroldiBoley>,
+        <http://ceur-ws.org/Vol-1620/#MengiLuan>,
+        <http://ceur-ws.org/Vol-1620/#ZhendongiSha> .
+
+<http://ceur-ws.org/Vol-1620/#paper12> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1620/> ;
+    ns6:title "Using Rules to generate and execute Workflows in Smart Factories" ;
+    ns2:section <http://ceur-ws.org/Vol-1620/#Part3IndustryTrackRuleML2016> ;
+    ns5:author <http://ceur-ws.org/Vol-1620/#DoertheiArndt>,
+        <http://ceur-ws.org/Vol-1620/#ErikiMannens>,
+        <http://ceur-ws.org/Vol-1620/#JoachimiVaniHerwegen>,
+        <http://ceur-ws.org/Vol-1620/#RikiVanideiWalle>,
+        <http://ceur-ws.org/Vol-1620/#RubeniVerborgh> .
+
+<http://ceur-ws.org/Vol-1620/#paper3> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1620/> ;
+    ns6:title "Combining DMN and the Knowledge Base Paradigm for Flexible Decision Enactment" ;
+    ns2:section <http://ceur-ws.org/Vol-1620/#Part1RuleChallengeRuleML2016> ;
+    ns5:author <http://ceur-ws.org/Vol-1620/#GerdaiJanssens>,
+        <http://ceur-ws.org/Vol-1620/#IngmariDasseville>,
+        <http://ceur-ws.org/Vol-1620/#JaniVanthienen>,
+        <http://ceur-ws.org/Vol-1620/#LaurentiJanssens>,
+        <http://ceur-ws.org/Vol-1620/#MarciDenecker> .
+
+<http://ceur-ws.org/Vol-1620/#Part1RuleChallengeRuleML2016> a ns3:SessionEvent ;
+    ns3:partOf <http://ceur-ws.org/Vol-1620/> ;
+    ns6:title "Part 1: Rule Challenge@RuleML2016" .
+
+<http://ceur-ws.org/Vol-1620/> a ns3:Proceedings ;
+    ns3:hasPart <http://ceur-ws.org/Vol-1620/#paper1>,
+        <http://ceur-ws.org/Vol-1620/#paper10>,
+        <http://ceur-ws.org/Vol-1620/#paper11>,
+        <http://ceur-ws.org/Vol-1620/#paper12>,
+        <http://ceur-ws.org/Vol-1620/#paper13>,
+        <http://ceur-ws.org/Vol-1620/#paper2>,
+        <http://ceur-ws.org/Vol-1620/#paper3>,
+        <http://ceur-ws.org/Vol-1620/#paper4>,
+        <http://ceur-ws.org/Vol-1620/#paper5>,
+        <http://ceur-ws.org/Vol-1620/#paper6>,
+        <http://ceur-ws.org/Vol-1620/#paper7>,
+        <http://ceur-ws.org/Vol-1620/#paper8>,
+        <http://ceur-ws.org/Vol-1620/#paper9> ;
+    ns3:hasSession <http://ceur-ws.org/Vol-1620/#Part1RuleChallengeRuleML2016>,
+        <http://ceur-ws.org/Vol-1620/#Part2DoctoralConsortiumRuleML2016>,
+        <http://ceur-ws.org/Vol-1620/#Part3IndustryTrackRuleML2016> ;
+    ns7:issued "2016-07-05T00:00:00+00:00"^^xsd:dateTime ;
+    ns2:presentedAt <http://ceur-ws.org/Vol-1620/#event> ;
     ns5:editor <http://ceur-ws.org/Vol-1620/#AdrianiGiurca>,
         <http://ceur-ws.org/Vol-1620/#KiaiTeymourian>,
         <http://ceur-ws.org/Vol-1620/#MarkiProctor>,
         <http://ceur-ws.org/Vol-1620/#RolfiGr%C3%BCtter>,
         <http://ceur-ws.org/Vol-1620/#TaraiAthan>,
         <http://ceur-ws.org/Vol-1620/#WilliamiVaniWoensel> .
-
-<http://ceur-ws.org/Vol-1620/#AdrianiGiurca> a ns3:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/AdrianiGiurca> ;
-    ns3:name "Adrian Giurca" .
-
-<http://ceur-ws.org/Vol-1620/#KiaiTeymourian> a ns3:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/KiaiTeymourian> ;
-    ns3:name "Kia Teymourian" .
-
-<http://ceur-ws.org/Vol-1620/#MarkiProctor> a ns3:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/MarkiProctor> ;
-    ns3:name "Mark Proctor" .
-
-<http://ceur-ws.org/Vol-1620/#RolfiGr%C3%BCtter> a ns3:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/RolfiGr%C3%BCtter> ;
-    ns3:name "Rolf Grütter" .
-
-<http://ceur-ws.org/Vol-1620/#TaraiAthan> a ns3:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/TaraiAthan> ;
-    ns3:name "Tara Athan" .
-
-<http://ceur-ws.org/Vol-1620/#WilliamiVaniWoensel> a ns3:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/WilliamiVaniWoensel> ;
-    ns3:name "William Van Woensel" .
-
-<http://ceur-ws.org/Vol-1620/#event> a ns7:WorkshopEvent ;
-    ns7:hasLocation <http://dbpedia.org/resource/United_States> ;
-    ns7:hasPart <http://ceur-ws.org/Vol-1620/#part-RuleML> ;
-    ns7:isSubEventOf <http://ceur-ws.org/Vol-1620/#conf> ;
-    ns4:beginsAtDatetime "2016-07-06T00:00:00+00:00"^^xsd:dateTime ;
-    ns4:endsAtDatetime "2016-07-09T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:license "http://creativecommons.org/publicdomain/zero/1.0/" ;
-    rdfs:seeAlso <http://ceur-ws.org/Vol-1004/#event>,
-        <http://ceur-ws.org/Vol-1211/#event>,
-        <http://ceur-ws.org/Vol-1417/#event>,
-        <http://ceur-ws.org/Vol-799/#event>,
-        <http://ceur-ws.org/Vol-874/#event> .
 

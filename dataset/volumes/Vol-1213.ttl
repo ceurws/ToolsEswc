@@ -1,45 +1,341 @@
-@prefix ns1: <http://purl.org/ontology/bibo/#> .
+@prefix ns1: <http://swrc.ontoware.org/ontology/#> .
 @prefix ns2: <http://www.w3.org/2002/07/owl#> .
-@prefix ns3: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns4: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns3: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns4: <http://purl.org/ontology/bibo/#> .
 @prefix ns5: <http://xmlns.com/foaf/0.1/> .
-@prefix ns6: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns8: <http://purl.org/dc/elements/1.1/> .
+@prefix ns6: <http://purl.org/dc/elements/1.1/> .
+@prefix ns7: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns9: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1213/> a ns6:Proceedings ;
-    ns4:issued "2014-08-17T00:00:00+00:00"^^xsd:dateTime ;
-    ns1:presentedAt <http://ceur-ws.org/Vol-1213/#event> ;
-    ns3:editor <http://ceur-ws.org/Vol-1213/#AldoiFrancoiDragoni>,
-        <http://ceur-ws.org/Vol-1213/#ConstantineiD.iSpyropoulos>,
-        <http://ceur-ws.org/Vol-1213/#PaoloiSernani>,
-        <http://ceur-ws.org/Vol-1213/#StavrosiJ.iPerantonis> .
+<http://ceur-ws.org/Vol-1213/#AlbertiBrugu%C3%A9s> a ns5:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/AlbertiBrugu%C3%A9s> ;
+    ns5:made <http://ceur-ws.org/Vol-1213/#paper2> ;
+    ns5:name "Albert Brugués" .
+
+<http://ceur-ws.org/Vol-1213/#AnaiMlinar> a ns5:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/AnaiMlinar> ;
+    ns5:made <http://ceur-ws.org/Vol-1213/#paper8> ;
+    ns5:name "Ana Mlinar" .
+
+<http://ceur-ws.org/Vol-1213/#AndreaiClaudi> a ns5:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/AndreaiClaudi> ;
+    ns5:made <http://ceur-ws.org/Vol-1213/#paper4> ;
+    ns5:name "Andrea Claudi" .
+
+<http://ceur-ws.org/Vol-1213/#AntoniGradi%C5%A1ek> a ns5:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/AntoniGradi%C5%A1ek> ;
+    ns5:made <http://ceur-ws.org/Vol-1213/#paper8> ;
+    ns5:name "Anton Gradišek" .
+
+<http://ceur-ws.org/Vol-1213/#AntonisiBillis> a ns5:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/AntonisiBillis> ;
+    ns5:made <http://ceur-ws.org/Vol-1213/#paper7> ;
+    ns5:name "Antonis Billis" .
+
+<http://ceur-ws.org/Vol-1213/#BerardinoiDeiBari> a ns5:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/BerardinoiDeiBari> ;
+    ns5:made <http://ceur-ws.org/Vol-1213/#paper1> ;
+    ns5:name "Berardino De Bari" .
+
+<http://ceur-ws.org/Vol-1213/#ChristosiSmailis> a ns5:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/ChristosiSmailis> ;
+    ns5:made <http://ceur-ws.org/Vol-1213/#paper9> ;
+    ns5:name "Christos Smailis" .
+
+<http://ceur-ws.org/Vol-1213/#DanieleiAccattoli> a ns5:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/DanieleiAccattoli> ;
+    ns5:made <http://ceur-ws.org/Vol-1213/#paper4> ;
+    ns5:name "Daniele Accattoli" .
+
+<http://ceur-ws.org/Vol-1213/#EfstratiosiKontopoulos> a ns5:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/EfstratiosiKontopoulos> ;
+    ns5:made <http://ceur-ws.org/Vol-1213/#paper3> ;
+    ns5:name "Efstratios Kontopoulos" .
+
+<http://ceur-ws.org/Vol-1213/#EloiiCasals> a ns5:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/EloiiCasals> ;
+    ns5:made <http://ceur-ws.org/Vol-1213/#paper5> ;
+    ns5:name "Eloi Casals" .
+
+<http://ceur-ws.org/Vol-1213/#EloisaiVargiu> a ns5:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/EloisaiVargiu> ;
+    ns5:made <http://ceur-ws.org/Vol-1213/#paper5> ;
+    ns5:name "Eloisa Vargiu" .
+
+<http://ceur-ws.org/Vol-1213/#FelipiMiralles> a ns5:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/FelipiMiralles> ;
+    ns5:made <http://ceur-ws.org/Vol-1213/#paper5> ;
+    ns5:name "Felip Miralles" .
+
+<http://ceur-ws.org/Vol-1213/#GeorgeiMeditskos> a ns5:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/GeorgeiMeditskos> ;
+    ns5:made <http://ceur-ws.org/Vol-1213/#paper3> ;
+    ns5:name "George Meditskos" .
+
+<http://ceur-ws.org/Vol-1213/#IoannisiKompatsiaris> a ns5:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/IoannisiKompatsiaris> ;
+    ns5:made <http://ceur-ws.org/Vol-1213/#paper3> ;
+    ns5:name "Ioannis Kompatsiaris" .
+
+<http://ceur-ws.org/Vol-1213/#IoannisiPratikakis> a ns5:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/IoannisiPratikakis> ;
+    ns5:made <http://ceur-ws.org/Vol-1213/#paper6> ;
+    ns5:name "Ioannis Pratikakis" .
+
+<http://ceur-ws.org/Vol-1213/#Jos%C3%A9iAlejandroiCordero> a ns5:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/Jos%C3%A9iAlejandroiCordero> ;
+    ns5:made <http://ceur-ws.org/Vol-1213/#paper5> ;
+    ns5:name "José Alejandro Cordero" .
+
+<http://ceur-ws.org/Vol-1213/#JosepiPegueroles-Valles> a ns5:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/JosepiPegueroles-Valles> ;
+    ns5:made <http://ceur-ws.org/Vol-1213/#paper2> ;
+    ns5:name "Josep Pegueroles-Valles" .
+
+<http://ceur-ws.org/Vol-1213/#KonstantinosiZagoris> a ns5:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/KonstantinosiZagoris> ;
+    ns5:made <http://ceur-ws.org/Vol-1213/#paper6> ;
+    ns5:name "Konstantinos Zagoris" .
+
+<http://ceur-ws.org/Vol-1213/#LazarosiTsochatzidis> a ns5:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/LazarosiTsochatzidis> ;
+    ns5:made <http://ceur-ws.org/Vol-1213/#paper6> ;
+    ns5:name "Lazaros Tsochatzidis" .
+
+<http://ceur-ws.org/Vol-1213/#MahmutiOzsahin> a ns5:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/MahmutiOzsahin> ;
+    ns5:made <http://ceur-ws.org/Vol-1213/#paper1> ;
+    ns5:name "Mahmut Ozsahin" .
+
+<http://ceur-ws.org/Vol-1213/#MajaiSomrak> a ns5:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/MajaiSomrak> ;
+    ns5:made <http://ceur-ws.org/Vol-1213/#paper8> ;
+    ns5:name "Maja Somrak" .
+
+<http://ceur-ws.org/Vol-1213/#Matja%C5%BEiGams> a ns5:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/Matja%C5%BEiGams> ;
+    ns5:made <http://ceur-ws.org/Vol-1213/#paper8> ;
+    ns5:name "Matjaž Gams" .
+
+<http://ceur-ws.org/Vol-1213/#MauroiVallati> a ns5:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/MauroiVallati> ;
+    ns5:made <http://ceur-ws.org/Vol-1213/#paper1> ;
+    ns5:name "Mauro Vallati" .
+
+<http://ceur-ws.org/Vol-1213/#MichaeliIgnaziSchumacher> a ns5:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/MichaeliIgnaziSchumacher> ;
+    ns5:made <http://ceur-ws.org/Vol-1213/#paper2> ;
+    ns5:name "Michael Ignaz Schumacher" .
+
+<http://ceur-ws.org/Vol-1213/#MichalisiSavelonas> a ns5:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/MichalisiSavelonas> ;
+    ns5:made <http://ceur-ws.org/Vol-1213/#paper6> ;
+    ns5:name "Michalis Savelonas" .
+
+<http://ceur-ws.org/Vol-1213/#MihaiSok> a ns5:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/MihaiSok> ;
+    ns5:made <http://ceur-ws.org/Vol-1213/#paper8> ;
+    ns5:name "Miha Sok" .
+
+<http://ceur-ws.org/Vol-1213/#MitjaiLu%C5%A1trek> a ns5:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/MitjaiLu%C5%A1trek> ;
+    ns5:made <http://ceur-ws.org/Vol-1213/#paper8> ;
+    ns5:name "Mitja Luštrek" .
+
+<http://ceur-ws.org/Vol-1213/#PanagiotisiBamidis> a ns5:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/PanagiotisiBamidis> ;
+    ns5:made <http://ceur-ws.org/Vol-1213/#paper7> ;
+    ns5:name "Panagiotis Bamidis" .
+
+<http://ceur-ws.org/Vol-1213/#PaoloiCalvaresi> a ns5:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/PaoloiCalvaresi> ;
+    ns5:made <http://ceur-ws.org/Vol-1213/#paper4> ;
+    ns5:name "Paolo Calvaresi" .
+
+<http://ceur-ws.org/Vol-1213/#RobertoiGatta> a ns5:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/RobertoiGatta> ;
+    ns5:made <http://ceur-ws.org/Vol-1213/#paper1> ;
+    ns5:name "Roberto Gatta" .
+
+<http://ceur-ws.org/Vol-1213/#RobertoiTofani> a ns5:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/RobertoiTofani> ;
+    ns5:made <http://ceur-ws.org/Vol-1213/#paper4> ;
+    ns5:name "Roberto Tofani" .
+
+<http://ceur-ws.org/Vol-1213/#StefaniDauwalder> a ns5:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/StefaniDauwalder> ;
+    ns5:made <http://ceur-ws.org/Vol-1213/#paper5> ;
+    ns5:name "Stefan Dauwalder" .
+
+<http://ceur-ws.org/Vol-1213/#StefanoiBromuri> a ns5:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/StefanoiBromuri> ;
+    ns5:made <http://ceur-ws.org/Vol-1213/#paper2> ;
+    ns5:name "Stefano Bromuri" .
+
+<http://ceur-ws.org/Vol-1213/#ThanosiStavropoulos> a ns5:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/ThanosiStavropoulos> ;
+    ns5:made <http://ceur-ws.org/Vol-1213/#paper3> ;
+    ns5:name "Thanos Stavropoulos" .
+
+<http://ceur-ws.org/Vol-1213/#TheodorosiGiannakopoulos> a ns5:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/TheodorosiGiannakopoulos> ;
+    ns5:made <http://ceur-ws.org/Vol-1213/#paper9> ;
+    ns5:name "Theodoros Giannakopoulos" .
+
+<http://ceur-ws.org/Vol-1213/#event> a ns7:WorkshopEvent ;
+    ns7:hasLocation <http://dbpedia.org/resource/Czech_Republic> ;
+    ns7:hasPart <http://ceur-ws.org/Vol-1213/#part-AI-AM>,
+        <http://ceur-ws.org/Vol-1213/#part-NetMed> ;
+    ns7:isSubEventOf <http://ceur-ws.org/Vol-1213/#conf> ;
+    ns8:beginsAtDatetime "2014-08-18T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:endsAtDatetime "2014-08-18T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:license "http://choosealicense.com/licenses/no-license/" .
 
 <http://ceur-ws.org/Vol-1213/#AldoiFrancoiDragoni> a ns5:Person ;
+    ns1:affiliation "" ;
     ns2:sameAs <http://ceur-ws.org/persons/AldoiFrancoiDragoni> ;
+    ns5:made <http://ceur-ws.org/Vol-1213/#paper4> ;
     ns5:name "Aldo Franco Dragoni" .
 
 <http://ceur-ws.org/Vol-1213/#ConstantineiD.iSpyropoulos> a ns5:Person ;
+    ns1:affiliation "" ;
     ns2:sameAs <http://ceur-ws.org/persons/ConstantineiD.iSpyropoulos> ;
+    ns5:made <http://ceur-ws.org/Vol-1213/#paper9> ;
     ns5:name "Constantine D. Spyropoulos" .
 
 <http://ceur-ws.org/Vol-1213/#PaoloiSernani> a ns5:Person ;
+    ns1:affiliation "" ;
     ns2:sameAs <http://ceur-ws.org/persons/PaoloiSernani> ;
+    ns5:made <http://ceur-ws.org/Vol-1213/#paper4> ;
     ns5:name "Paolo Sernani" .
 
 <http://ceur-ws.org/Vol-1213/#StavrosiJ.iPerantonis> a ns5:Person ;
+    ns1:affiliation "" ;
     ns2:sameAs <http://ceur-ws.org/persons/StavrosiJ.iPerantonis> ;
+    ns5:made <http://ceur-ws.org/Vol-1213/#paper9> ;
     ns5:name "Stavros J. Perantonis" .
 
-<http://ceur-ws.org/Vol-1213/#event> a ns6:WorkshopEvent ;
-    ns6:hasLocation <http://dbpedia.org/resource/Czech_Republic> ;
-    ns6:hasPart <http://ceur-ws.org/Vol-1213/#part-ws> ;
-    ns6:isSubEventOf <http://ceur-ws.org/Vol-1213/#conf> ;
-    ns7:beginsAtDatetime "2014-08-18T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:endsAtDatetime "2014-08-18T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:license "http://choosealicense.com/licenses/no-license/" .
+<http://ceur-ws.org/Vol-1213/#paper7> a ns7:Paper ;
+    ns7:partOf <http://ceur-ws.org/Vol-1213/> ;
+    ns3:title "Employing time-series forecasting to historical medical data: an application towards early prognosis within elderly health monitoring environments" ;
+    ns4:endPage 35 ;
+    ns4:numPages 5 ;
+    ns4:startPage 31 ;
+    ns1:author <http://ceur-ws.org/Vol-1213/#AntonisiBillis>,
+        <http://ceur-ws.org/Vol-1213/#PanagiotisiBamidis> .
+
+<http://ceur-ws.org/Vol-1213/#paper1> a ns7:Paper ;
+    ns7:partOf <http://ceur-ws.org/Vol-1213/> ;
+    ns3:title "The impact of different training sets on medical documents classification" ;
+    ns4:endPage 5 ;
+    ns4:numPages 5 ;
+    ns4:startPage 1 ;
+    ns1:author <http://ceur-ws.org/Vol-1213/#BerardinoiDeiBari>,
+        <http://ceur-ws.org/Vol-1213/#MahmutiOzsahin>,
+        <http://ceur-ws.org/Vol-1213/#MauroiVallati>,
+        <http://ceur-ws.org/Vol-1213/#RobertoiGatta> .
+
+<http://ceur-ws.org/Vol-1213/#paper2> a ns7:Paper ;
+    ns7:partOf <http://ceur-ws.org/Vol-1213/> ;
+    ns3:title "MAGPIE: an agent platform for the development of mobile applications for pervasive healthcare" ;
+    ns4:endPage 10 ;
+    ns4:numPages 5 ;
+    ns4:startPage 6 ;
+    ns1:author <http://ceur-ws.org/Vol-1213/#AlbertiBrugu%C3%A9s>,
+        <http://ceur-ws.org/Vol-1213/#JosepiPegueroles-Valles>,
+        <http://ceur-ws.org/Vol-1213/#MichaeliIgnaziSchumacher>,
+        <http://ceur-ws.org/Vol-1213/#StefanoiBromuri> .
+
+<http://ceur-ws.org/Vol-1213/#paper3> a ns7:Paper ;
+    ns7:partOf <http://ceur-ws.org/Vol-1213/> ;
+    ns3:title "The DemaWare service-oriented AAL platform for people with dementia" ;
+    ns4:endPage 15 ;
+    ns4:numPages 5 ;
+    ns4:startPage 11 ;
+    ns1:author <http://ceur-ws.org/Vol-1213/#EfstratiosiKontopoulos>,
+        <http://ceur-ws.org/Vol-1213/#GeorgeiMeditskos>,
+        <http://ceur-ws.org/Vol-1213/#IoannisiKompatsiaris>,
+        <http://ceur-ws.org/Vol-1213/#ThanosiStavropoulos> .
+
+<http://ceur-ws.org/Vol-1213/#paper6> a ns7:Paper ;
+    ns7:partOf <http://ceur-ws.org/Vol-1213/> ;
+    ns3:title "SVM-based CBIR of breast masses on mammograms" ;
+    ns4:endPage 30 ;
+    ns4:numPages 5 ;
+    ns4:startPage 26 ;
+    ns1:author <http://ceur-ws.org/Vol-1213/#IoannisiPratikakis>,
+        <http://ceur-ws.org/Vol-1213/#KonstantinosiZagoris>,
+        <http://ceur-ws.org/Vol-1213/#LazarosiTsochatzidis>,
+        <http://ceur-ws.org/Vol-1213/#MichalisiSavelonas> .
+
+<http://ceur-ws.org/Vol-1213/#paper9> a ns7:Paper ;
+    ns7:partOf <http://ceur-ws.org/Vol-1213/> ;
+    ns3:title "Realtime depression estimation using mid-term audio features" ;
+    ns4:endPage 45 ;
+    ns4:numPages 5 ;
+    ns4:startPage 41 ;
+    ns1:author <http://ceur-ws.org/Vol-1213/#ChristosiSmailis>,
+        <http://ceur-ws.org/Vol-1213/#ConstantineiD.iSpyropoulos>,
+        <http://ceur-ws.org/Vol-1213/#StavrosiJ.iPerantonis>,
+        <http://ceur-ws.org/Vol-1213/#TheodorosiGiannakopoulos> .
+
+<http://ceur-ws.org/Vol-1213/#paper5> a ns7:Paper ;
+    ns7:partOf <http://ceur-ws.org/Vol-1213/> ;
+    ns3:title "Today, how was your ability to move about?" ;
+    ns4:endPage 25 ;
+    ns4:numPages 5 ;
+    ns4:startPage 21 ;
+    ns1:author <http://ceur-ws.org/Vol-1213/#EloiiCasals>,
+        <http://ceur-ws.org/Vol-1213/#EloisaiVargiu>,
+        <http://ceur-ws.org/Vol-1213/#FelipiMiralles>,
+        <http://ceur-ws.org/Vol-1213/#Jos%C3%A9iAlejandroiCordero>,
+        <http://ceur-ws.org/Vol-1213/#StefaniDauwalder> .
+
+<http://ceur-ws.org/Vol-1213/#paper4> a ns7:Paper ;
+    ns7:partOf <http://ceur-ws.org/Vol-1213/> ;
+    ns3:title "Using 3D simulators for the ambient assisted living" ;
+    ns4:endPage 20 ;
+    ns4:numPages 5 ;
+    ns4:startPage 16 ;
+    ns1:author <http://ceur-ws.org/Vol-1213/#AldoiFrancoiDragoni>,
+        <http://ceur-ws.org/Vol-1213/#AndreaiClaudi>,
+        <http://ceur-ws.org/Vol-1213/#DanieleiAccattoli>,
+        <http://ceur-ws.org/Vol-1213/#PaoloiCalvaresi>,
+        <http://ceur-ws.org/Vol-1213/#PaoloiSernani>,
+        <http://ceur-ws.org/Vol-1213/#RobertoiTofani> .
+
+<http://ceur-ws.org/Vol-1213/#paper8> a ns7:Paper ;
+    ns7:partOf <http://ceur-ws.org/Vol-1213/> ;
+    ns3:title "Medical diagnostics based on combination of sensor and user-provided data" ;
+    ns4:endPage 40 ;
+    ns4:numPages 5 ;
+    ns4:startPage 36 ;
+    ns1:author <http://ceur-ws.org/Vol-1213/#AnaiMlinar>,
+        <http://ceur-ws.org/Vol-1213/#AntoniGradi%C5%A1ek>,
+        <http://ceur-ws.org/Vol-1213/#MajaiSomrak>,
+        <http://ceur-ws.org/Vol-1213/#Matja%C5%BEiGams>,
+        <http://ceur-ws.org/Vol-1213/#MihaiSok>,
+        <http://ceur-ws.org/Vol-1213/#MitjaiLu%C5%A1trek> .
+
+<http://ceur-ws.org/Vol-1213/> a ns7:Proceedings ;
+    ns7:hasPart <http://ceur-ws.org/Vol-1213/#paper1>,
+        <http://ceur-ws.org/Vol-1213/#paper2>,
+        <http://ceur-ws.org/Vol-1213/#paper3>,
+        <http://ceur-ws.org/Vol-1213/#paper4>,
+        <http://ceur-ws.org/Vol-1213/#paper5>,
+        <http://ceur-ws.org/Vol-1213/#paper6>,
+        <http://ceur-ws.org/Vol-1213/#paper7>,
+        <http://ceur-ws.org/Vol-1213/#paper8>,
+        <http://ceur-ws.org/Vol-1213/#paper9> ;
+    ns9:issued "2014-08-17T00:00:00+00:00"^^xsd:dateTime ;
+    ns4:presentedAt <http://ceur-ws.org/Vol-1213/#event> ;
+    ns1:editor <http://ceur-ws.org/Vol-1213/#AldoiFrancoiDragoni>,
+        <http://ceur-ws.org/Vol-1213/#ConstantineiD.iSpyropoulos>,
+        <http://ceur-ws.org/Vol-1213/#PaoloiSernani>,
+        <http://ceur-ws.org/Vol-1213/#StavrosiJ.iPerantonis> .
 

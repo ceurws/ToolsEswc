@@ -1,46 +1,430 @@
-@prefix ns1: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns2: <http://xmlns.com/foaf/0.1/> .
-@prefix ns3: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns4: <http://purl.org/dc/elements/1.1/> .
-@prefix ns5: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns6: <http://purl.org/ontology/bibo/#> .
-@prefix ns7: <http://www.w3.org/2002/07/owl#> .
-@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns1: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns2: <http://www.w3.org/2002/07/owl#> .
+@prefix ns3: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns4: <http://xmlns.com/foaf/0.1/> .
+@prefix ns5: <http://purl.org/ontology/bibo/#> .
+@prefix ns6: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns7: <http://purl.org/dc/elements/1.1/> .
+@prefix ns8: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns9: <http://purl.org/NET/c4dm/timeline.owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1107/> a ns5:Proceedings ;
-    ns8:issued "2013-12-06T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:presentedAt <http://ceur-ws.org/Vol-1107/#event> ;
-    ns3:editor <http://ceur-ws.org/Vol-1107/#FedericoiChesaniib>,
+<http://ceur-ws.org/Vol-1107/#AlbertoiManganaro> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/AlbertoiManganaro> ;
+    ns4:made <http://ceur-ws.org/Vol-1107/#paper8> ;
+    ns4:name "Alberto Manganaro" .
+
+<http://ceur-ws.org/Vol-1107/#AliceiPiva> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/AliceiPiva> ;
+    ns4:made <http://ceur-ws.org/Vol-1107/#paper7> ;
+    ns4:name "Alice Piva" .
+
+<http://ceur-ws.org/Vol-1107/#AndreaiBisson> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/AndreaiBisson> ;
+    ns4:made <http://ceur-ws.org/Vol-1107/#paper12> ;
+    ns4:name "Andrea Bisson" .
+
+<http://ceur-ws.org/Vol-1107/#AndreaiBusatto> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/AndreaiBusatto> ;
+    ns4:made <http://ceur-ws.org/Vol-1107/#paper12> ;
+    ns4:name "Andrea Busatto" .
+
+<http://ceur-ws.org/Vol-1107/#AntoniWimmer> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/AntoniWimmer> ;
+    ns4:made <http://ceur-ws.org/Vol-1107/#paper10> ;
+    ns4:name "Anton Wimmer" .
+
+<http://ceur-ws.org/Vol-1107/#ChristophiRedl> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/ChristophiRedl> ;
+    ns4:made <http://ceur-ws.org/Vol-1107/#paper10> ;
+    ns4:name "Christoph Redl" .
+
+<http://ceur-ws.org/Vol-1107/#CristinaiBaroglio> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/CristinaiBaroglio> ;
+    ns4:made <http://ceur-ws.org/Vol-1107/#paper3> ;
+    ns4:name "Cristina Baroglio" .
+
+<http://ceur-ws.org/Vol-1107/#DanieleiNardi> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/DanieleiNardi> ;
+    ns4:made <http://ceur-ws.org/Vol-1107/#paper1> ;
+    ns4:name "Daniele Nardi" .
+
+<http://ceur-ws.org/Vol-1107/#DavideiFusc%C3%A0> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/DavideiFusc%C3%A0> ;
+    ns4:made <http://ceur-ws.org/Vol-1107/#paper9> ;
+    ns4:name "Davide Fuscà" .
+
+<http://ceur-ws.org/Vol-1107/#DenisiFerraretti> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/DenisiFerraretti> ;
+    ns4:made <http://ceur-ws.org/Vol-1107/#paper7> ;
+    ns4:name "Denis Ferraretti" .
+
+<http://ceur-ws.org/Vol-1107/#EmilioiBenfenati> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/EmilioiBenfenati> ;
+    ns4:made <http://ceur-ws.org/Vol-1107/#paper8> ;
+    ns4:name "Emilio Benfenati" .
+
+<http://ceur-ws.org/Vol-1107/#EvelinaiLamma> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/EvelinaiLamma> ;
+    ns4:made <http://ceur-ws.org/Vol-1107/#paper7> ;
+    ns4:name "Evelina Lamma" .
+
+<http://ceur-ws.org/Vol-1107/#FabioiGabrieli> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/FabioiGabrieli> ;
+    ns4:made <http://ceur-ws.org/Vol-1107/#paper13> ;
+    ns4:name "Fabio Gabrieli" .
+
+<http://ceur-ws.org/Vol-1107/#GabrieleiPozzato> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/GabrieleiPozzato> ;
+    ns4:made <http://ceur-ws.org/Vol-1107/#paper11> ;
+    ns4:name "Gabriele Pozzato" .
+
+<http://ceur-ws.org/Vol-1107/#GiacomoiGamberoni> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/GiacomoiGamberoni> ;
+    ns4:made <http://ceur-ws.org/Vol-1107/#paper7> ;
+    ns4:name "Giacomo Gamberoni" .
+
+<http://ceur-ws.org/Vol-1107/#GiovambattistaiIanni> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/GiovambattistaiIanni> ;
+    ns4:made <http://ceur-ws.org/Vol-1107/#paper10> ;
+    ns4:name "Giovambattista Ianni" .
+
+<http://ceur-ws.org/Vol-1107/#GiuseppinaiGini> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/GiuseppinaiGini> ;
+    ns4:made <http://ceur-ws.org/Vol-1107/#paper8> ;
+    ns4:name "Giuseppina Gini" .
+
+<http://ceur-ws.org/Vol-1107/#JacopoiFesta> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/JacopoiFesta> ;
+    ns4:made <http://ceur-ws.org/Vol-1107/#paper2> ;
+    ns4:name "Jacopo Festa" .
+
+<http://ceur-ws.org/Vol-1107/#JessicaiZangari> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/JessicaiZangari> ;
+    ns4:made <http://ceur-ws.org/Vol-1107/#paper9> ;
+    ns4:name "Jessica Zangari" .
+
+<http://ceur-ws.org/Vol-1107/#LorenzoiChiari> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/LorenzoiChiari> ;
+    ns4:made <http://ceur-ws.org/Vol-1107/#paper4> ;
+    ns4:name "Lorenzo Chiari" .
+
+<http://ceur-ws.org/Vol-1107/#LucaiCattelani> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/LucaiCattelani> ;
+    ns4:made <http://ceur-ws.org/Vol-1107/#paper4> ;
+    ns4:name "Luca Cattelani" .
+
+<http://ceur-ws.org/Vol-1107/#LucaiIocchi> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/LucaiIocchi> ;
+    ns4:made <http://ceur-ws.org/Vol-1107/#paper1> ;
+    ns4:name "Luca Iocchi" .
+
+<http://ceur-ws.org/Vol-1107/#LucaiPalmerini> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/LucaiPalmerini> ;
+    ns4:made <http://ceur-ws.org/Vol-1107/#paper4> ;
+    ns4:name "Luca Palmerini" .
+
+<http://ceur-ws.org/Vol-1107/#LuigiaiCarlucciiAiello> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/LuigiaiCarlucciiAiello> ;
+    ns4:made <http://ceur-ws.org/Vol-1107/#paper1> ;
+    ns4:name "Luigia Carlucci Aiello" .
+
+<http://ceur-ws.org/Vol-1107/#MarcoiMontaliic> a ns4:Person ;
+    ns1:affiliation "" ;
+    ns2:sameAs <http://ceur-ws.org/persons/MarcoiMontaliic> ;
+    ns4:name "Marco Montali c" .
+
+<http://ceur-ws.org/Vol-1107/#MatteoiBaldoniia> a ns4:Person ;
+    ns1:affiliation "" ;
+    ns2:sameAs <http://ceur-ws.org/persons/MatteoiBaldoniia> ;
+    ns4:name "Matteo Baldoni a" .
+
+<http://ceur-ws.org/Vol-1107/#MattiaiVinci> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/MattiaiVinci> ;
+    ns4:made <http://ceur-ws.org/Vol-1107/#paper6> ;
+    ns4:name "Mattia Vinci" .
+
+<http://ceur-ws.org/Vol-1107/#MauroiAntonello> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/MauroiAntonello> ;
+    ns4:made <http://ceur-ws.org/Vol-1107/#paper13> ;
+    ns4:name "Mauro Antonello" .
+
+<http://ceur-ws.org/Vol-1107/#MichaeliFink> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/MichaeliFink> ;
+    ns4:made <http://ceur-ws.org/Vol-1107/#paper10> ;
+    ns4:name "Michael Fink" .
+
+<http://ceur-ws.org/Vol-1107/#MicheleiSolimando> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/MicheleiSolimando> ;
+    ns4:made <http://ceur-ws.org/Vol-1107/#paper5> ;
+    ns4:name "Michele Solimando" .
+
+<http://ceur-ws.org/Vol-1107/#PaolaiMelloib> a ns4:Person ;
+    ns1:affiliation "" ;
+    ns2:sameAs <http://ceur-ws.org/persons/PaolaiMelloib> ;
+    ns4:name "Paola Mello b" .
+
+<http://ceur-ws.org/Vol-1107/#PierpaoloiPalumbo> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/PierpaoloiPalumbo> ;
+    ns4:made <http://ceur-ws.org/Vol-1107/#paper4> ;
+    ns4:name "Pierpaolo Palumbo" .
+
+<http://ceur-ws.org/Vol-1107/#RobertoiMicalizio> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/RobertoiMicalizio> ;
+    ns4:made <http://ceur-ws.org/Vol-1107/#paper6> ;
+    ns4:name "Roberto Micalizio" .
+
+<http://ceur-ws.org/Vol-1107/#SimonaiPerri> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/SimonaiPerri> ;
+    ns4:made <http://ceur-ws.org/Vol-1107/#paper9> ;
+    ns4:name "Simona Perri" .
+
+<http://ceur-ws.org/Vol-1107/#SimoneiVallana> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/SimoneiVallana> ;
+    ns4:made <http://ceur-ws.org/Vol-1107/#paper3> ;
+    ns4:name "Simone Vallana" .
+
+<http://ceur-ws.org/Vol-1107/#SimonettaiCola> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/SimonettaiCola> ;
+    ns4:made <http://ceur-ws.org/Vol-1107/#paper13> ;
+    ns4:name "Simonetta Cola" .
+
+<http://ceur-ws.org/Vol-1107/#StanislaoiDavino> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/StanislaoiDavino> ;
+    ns4:made <http://ceur-ws.org/Vol-1107/#paper2> ;
+    ns4:name "Stanislao Davino" .
+
+<http://ceur-ws.org/Vol-1107/#StefanoiLanza> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/StefanoiLanza> ;
+    ns4:made <http://ceur-ws.org/Vol-1107/#paper3> ;
+    ns4:name "Stefano Lanza" .
+
+<http://ceur-ws.org/Vol-1107/#ValerioiMazza> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/ValerioiMazza> ;
+    ns4:made <http://ceur-ws.org/Vol-1107/#paper5> ;
+    ns4:name "Valerio Mazza" .
+
+<http://ceur-ws.org/Vol-1107/#event> a ns3:WorkshopEvent ;
+    ns3:hasLocation <http://dbpedia.org/resource/Italy> ;
+    ns3:hasPart <http://ceur-ws.org/Vol-1107/#part-PAI> ;
+    ns3:isSubEventOf <http://ceur-ws.org/Vol-1107/#conf> ;
+    ns9:beginsAtDatetime "2013-12-05T00:00:00+00:00"^^xsd:dateTime ;
+    ns9:endsAtDatetime "2013-12-05T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:license "http://choosealicense.com/licenses/no-license/" ;
+    rdfs:seeAlso <http://ceur-ws.org/Vol-860/#event> .
+
+<http://ceur-ws.org/Vol-1107/#FedericoiChesaniib> a ns4:Person ;
+    ns1:affiliation "" ;
+    ns2:sameAs <http://ceur-ws.org/persons/FedericoiChesaniib> ;
+    ns4:made <http://ceur-ws.org/Vol-1107/#paper4> ;
+    ns4:name "Federico Chesani b" .
+
+<http://ceur-ws.org/Vol-1107/#FrancescoiCalimeri> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/FrancescoiCalimeri> ;
+    ns4:made <http://ceur-ws.org/Vol-1107/#paper10>,
+        <http://ceur-ws.org/Vol-1107/#paper9> ;
+    ns4:name "Francesco Calimeri" .
+
+<http://ceur-ws.org/Vol-1107/#StefanoiGermano> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/StefanoiGermano> ;
+    ns4:made <http://ceur-ws.org/Vol-1107/#paper10>,
+        <http://ceur-ws.org/Vol-1107/#paper9> ;
+    ns4:name "Stefano Germano" .
+
+<http://ceur-ws.org/Vol-1107/#StefanoiMichieletto> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/StefanoiMichieletto> ;
+    ns4:made <http://ceur-ws.org/Vol-1107/#paper11>,
+        <http://ceur-ws.org/Vol-1107/#paper12> ;
+    ns4:name "Stefano Michieletto" .
+
+<http://ceur-ws.org/Vol-1107/#EmanueleiMenegatti> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/EmanueleiMenegatti> ;
+    ns4:made <http://ceur-ws.org/Vol-1107/#paper11>,
+        <http://ceur-ws.org/Vol-1107/#paper12>,
+        <http://ceur-ws.org/Vol-1107/#paper13> ;
+    ns4:name "Emanuele Menegatti" .
+
+<http://ceur-ws.org/Vol-1107/#paper2> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1107/> ;
+    ns8:title "\"IAgo vs Othello\": An Artificial Intelligence Agent Playing Reversi" ;
+    ns5:endPage 41 ;
+    ns5:numPages 5 ;
+    ns5:section <http://ceur-ws.org/Vol-1107/#StudentExperiencesInsideAICourses> ;
+    ns5:startPage 37 ;
+    ns1:author <http://ceur-ws.org/Vol-1107/#JacopoiFesta>,
+        <http://ceur-ws.org/Vol-1107/#StanislaoiDavino> .
+
+<http://ceur-ws.org/Vol-1107/#paper5> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1107/> ;
+    ns8:title "Smart usage of Mobile Phones Sensors within an Event Calculus Engine" ;
+    ns5:endPage 57 ;
+    ns5:numPages 7 ;
+    ns5:section <http://ceur-ws.org/Vol-1107/#StudentExperiencesInsideAICourses> ;
+    ns5:startPage 51 ;
+    ns1:author <http://ceur-ws.org/Vol-1107/#MicheleiSolimando>,
+        <http://ceur-ws.org/Vol-1107/#ValerioiMazza> .
+
+<http://ceur-ws.org/Vol-1107/#paper6> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1107/> ;
+    ns8:title "Emerging Stable Configurations in Cellular Automata" ;
+    ns5:endPage 65 ;
+    ns5:numPages 7 ;
+    ns5:section <http://ceur-ws.org/Vol-1107/#StudentExperiencesInsideAICourses> ;
+    ns5:startPage 59 ;
+    ns1:author <http://ceur-ws.org/Vol-1107/#MattiaiVinci>,
+        <http://ceur-ws.org/Vol-1107/#RobertoiMicalizio> .
+
+<http://ceur-ws.org/Vol-1107/#paper1> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1107/> ;
+    ns8:title "RoboCup@Sapienza" ;
+    ns5:endPage 3 ;
+    ns5:numPages 1 ;
+    ns5:section <http://ceur-ws.org/Vol-1107/#IndustrialandResearchAcademicExperiences> ;
+    ns5:startPage 3 ;
+    ns1:author <http://ceur-ws.org/Vol-1107/#DanieleiNardi>,
+        <http://ceur-ws.org/Vol-1107/#LucaiIocchi>,
+        <http://ceur-ws.org/Vol-1107/#LuigiaiCarlucciiAiello> .
+
+<http://ceur-ws.org/Vol-1107/#paper11> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1107/> ;
+    ns8:title "Towards Smart Robots: Rock-Paper-Scissors Gaming versus Human Players" ;
+    ns5:endPage 88 ;
+    ns5:numPages 8 ;
+    ns5:section <http://ceur-ws.org/Vol-1107/#StudentExperiencesInsideAICourses> ;
+    ns5:startPage 81 ;
+    ns1:author <http://ceur-ws.org/Vol-1107/#EmanueleiMenegatti>,
+        <http://ceur-ws.org/Vol-1107/#GabrieleiPozzato>,
+        <http://ceur-ws.org/Vol-1107/#StefanoiMichieletto> .
+
+<http://ceur-ws.org/Vol-1107/#paper3> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1107/> ;
+    ns8:title "CME: A Tool for Designing Business Models based on Commitment Patterns" ;
+    ns5:endPage 50 ;
+    ns5:numPages 8 ;
+    ns5:section <http://ceur-ws.org/Vol-1107/#StudentExperiencesInsideAICourses> ;
+    ns5:startPage 43 ;
+    ns1:author <http://ceur-ws.org/Vol-1107/#CristinaiBaroglio>,
+        <http://ceur-ws.org/Vol-1107/#SimoneiVallana>,
+        <http://ceur-ws.org/Vol-1107/#StefanoiLanza> .
+
+<http://ceur-ws.org/Vol-1107/#paper8> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1107/> ;
+    ns8:title "VEGA-QSAR: AI Inside a Platform for Predictive Toxicology" ;
+    ns5:endPage 20 ;
+    ns5:numPages 6 ;
+    ns5:section <http://ceur-ws.org/Vol-1107/#IndustrialandResearchAcademicExperiences> ;
+    ns5:startPage 15 ;
+    ns1:author <http://ceur-ws.org/Vol-1107/#AlbertoiManganaro>,
+        <http://ceur-ws.org/Vol-1107/#EmilioiBenfenati>,
+        <http://ceur-ws.org/Vol-1107/#GiuseppinaiGini> .
+
+<http://ceur-ws.org/Vol-1107/#paper12> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1107/> ;
+    ns8:title "Stabilize Humanoid Robot Teleoperated by a RGB-D Sensor" ;
+    ns5:endPage 95 ;
+    ns5:numPages 7 ;
+    ns5:section <http://ceur-ws.org/Vol-1107/#StudentExperiencesInsideAICourses> ;
+    ns5:startPage 89 ;
+    ns1:author <http://ceur-ws.org/Vol-1107/#AndreaiBisson>,
+        <http://ceur-ws.org/Vol-1107/#AndreaiBusatto>,
+        <http://ceur-ws.org/Vol-1107/#EmanueleiMenegatti>,
+        <http://ceur-ws.org/Vol-1107/#StefanoiMichieletto> .
+
+<http://ceur-ws.org/Vol-1107/#paper13> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1107/> ;
+    ns8:title "Automated Landslide Monitoring through a Low-Cost Stereo Vision System" ;
+    ns5:endPage 35 ;
+    ns5:numPages 7 ;
+    ns5:section <http://ceur-ws.org/Vol-1107/#IndustrialandResearchAcademicExperiences> ;
+    ns5:startPage 29 ;
+    ns1:author <http://ceur-ws.org/Vol-1107/#EmanueleiMenegatti>,
+        <http://ceur-ws.org/Vol-1107/#FabioiGabrieli>,
+        <http://ceur-ws.org/Vol-1107/#MauroiAntonello>,
+        <http://ceur-ws.org/Vol-1107/#SimonettaiCola> .
+
+<http://ceur-ws.org/Vol-1107/#paper7> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1107/> ;
+    ns8:title "di4g: Uno Strumento di Clustering per l'Analisi Integrata di Dati Geologici" ;
+    ns5:endPage 72 ;
+    ns5:numPages 6 ;
+    ns5:section <http://ceur-ws.org/Vol-1107/#StudentExperiencesInsideAICourses> ;
+    ns5:startPage 67 ;
+    ns1:author <http://ceur-ws.org/Vol-1107/#AliceiPiva>,
+        <http://ceur-ws.org/Vol-1107/#DenisiFerraretti>,
+        <http://ceur-ws.org/Vol-1107/#EvelinaiLamma>,
+        <http://ceur-ws.org/Vol-1107/#GiacomoiGamberoni> .
+
+<http://ceur-ws.org/Vol-1107/#IndustrialandResearchAcademicExperiences> a ns3:SessionEvent ;
+    ns3:partOf <http://ceur-ws.org/Vol-1107/> ;
+    ns8:title "Industrial, and Research/Academic Experiences" .
+
+<http://ceur-ws.org/Vol-1107/#paper4> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1107/> ;
+    ns8:title "LPAD-based Fall Risk Assessment" ;
+    ns5:endPage 14 ;
+    ns5:numPages 8 ;
+    ns5:section <http://ceur-ws.org/Vol-1107/#IndustrialandResearchAcademicExperiences> ;
+    ns5:startPage 7 ;
+    ns1:author <http://ceur-ws.org/Vol-1107/#FedericoiChesaniib>,
+        <http://ceur-ws.org/Vol-1107/#LorenzoiChiari>,
+        <http://ceur-ws.org/Vol-1107/#LucaiCattelani>,
+        <http://ceur-ws.org/Vol-1107/#LucaiPalmerini>,
+        <http://ceur-ws.org/Vol-1107/#PierpaoloiPalumbo> .
+
+<http://ceur-ws.org/Vol-1107/#paper9> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1107/> ;
+    ns8:title "Answer Set Programming and Declarative Problem Solving in Game AIs" ;
+    ns5:endPage 79 ;
+    ns5:numPages 7 ;
+    ns5:section <http://ceur-ws.org/Vol-1107/#StudentExperiencesInsideAICourses> ;
+    ns5:startPage 73 ;
+    ns1:author <http://ceur-ws.org/Vol-1107/#DavideiFusc%C3%A0>,
+        <http://ceur-ws.org/Vol-1107/#FrancescoiCalimeri>,
+        <http://ceur-ws.org/Vol-1107/#JessicaiZangari>,
+        <http://ceur-ws.org/Vol-1107/#SimonaiPerri>,
+        <http://ceur-ws.org/Vol-1107/#StefanoiGermano> .
+
+<http://ceur-ws.org/Vol-1107/#paper10> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1107/> ;
+    ns8:title "AngryHEX: an Artificial Player for Angry Birds Based on Declarative Knowledge Bases" ;
+    ns5:endPage 28 ;
+    ns5:numPages 8 ;
+    ns5:section <http://ceur-ws.org/Vol-1107/#IndustrialandResearchAcademicExperiences> ;
+    ns5:startPage 21 ;
+    ns1:author <http://ceur-ws.org/Vol-1107/#AntoniWimmer>,
+        <http://ceur-ws.org/Vol-1107/#ChristophiRedl>,
+        <http://ceur-ws.org/Vol-1107/#FrancescoiCalimeri>,
+        <http://ceur-ws.org/Vol-1107/#GiovambattistaiIanni>,
+        <http://ceur-ws.org/Vol-1107/#MichaeliFink>,
+        <http://ceur-ws.org/Vol-1107/#StefanoiGermano> .
+
+<http://ceur-ws.org/Vol-1107/#StudentExperiencesInsideAICourses> a ns3:SessionEvent ;
+    ns3:partOf <http://ceur-ws.org/Vol-1107/> ;
+    ns8:title "Student Experiences Inside AI Courses" .
+
+<http://ceur-ws.org/Vol-1107/> a ns3:Proceedings ;
+    ns3:hasPart <http://ceur-ws.org/Vol-1107/#paper1>,
+        <http://ceur-ws.org/Vol-1107/#paper10>,
+        <http://ceur-ws.org/Vol-1107/#paper11>,
+        <http://ceur-ws.org/Vol-1107/#paper12>,
+        <http://ceur-ws.org/Vol-1107/#paper13>,
+        <http://ceur-ws.org/Vol-1107/#paper2>,
+        <http://ceur-ws.org/Vol-1107/#paper3>,
+        <http://ceur-ws.org/Vol-1107/#paper4>,
+        <http://ceur-ws.org/Vol-1107/#paper5>,
+        <http://ceur-ws.org/Vol-1107/#paper6>,
+        <http://ceur-ws.org/Vol-1107/#paper7>,
+        <http://ceur-ws.org/Vol-1107/#paper8>,
+        <http://ceur-ws.org/Vol-1107/#paper9> ;
+    ns3:hasSession <http://ceur-ws.org/Vol-1107/#IndustrialandResearchAcademicExperiences>,
+        <http://ceur-ws.org/Vol-1107/#StudentExperiencesInsideAICourses> ;
+    ns6:issued "2013-12-06T00:00:00+00:00"^^xsd:dateTime ;
+    ns5:presentedAt <http://ceur-ws.org/Vol-1107/#event> ;
+    ns1:editor <http://ceur-ws.org/Vol-1107/#FedericoiChesaniib>,
         <http://ceur-ws.org/Vol-1107/#MarcoiMontaliic>,
         <http://ceur-ws.org/Vol-1107/#MatteoiBaldoniia>,
         <http://ceur-ws.org/Vol-1107/#PaolaiMelloib> .
-
-<http://ceur-ws.org/Vol-1107/#FedericoiChesaniib> a ns2:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/FedericoiChesaniib> ;
-    ns2:name "Federico Chesani b" .
-
-<http://ceur-ws.org/Vol-1107/#MarcoiMontaliic> a ns2:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/MarcoiMontaliic> ;
-    ns2:name "Marco Montali c" .
-
-<http://ceur-ws.org/Vol-1107/#MatteoiBaldoniia> a ns2:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/MatteoiBaldoniia> ;
-    ns2:name "Matteo Baldoni a" .
-
-<http://ceur-ws.org/Vol-1107/#PaolaiMelloib> a ns2:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/PaolaiMelloib> ;
-    ns2:name "Paola Mello b" .
-
-<http://ceur-ws.org/Vol-1107/#event> a ns5:WorkshopEvent ;
-    ns5:hasLocation <http://dbpedia.org/resource/Italy> ;
-    ns5:hasPart <http://ceur-ws.org/Vol-1107/#part-ws> ;
-    ns5:isSubEventOf <http://ceur-ws.org/Vol-1107/#conf> ;
-    ns1:beginsAtDatetime "2013-12-05T00:00:00+00:00"^^xsd:dateTime ;
-    ns1:endsAtDatetime "2013-12-05T00:00:00+00:00"^^xsd:dateTime ;
-    ns4:license "http://choosealicense.com/licenses/no-license/" ;
-    rdfs:seeAlso <http://ceur-ws.org/Vol-860/#event> .
 

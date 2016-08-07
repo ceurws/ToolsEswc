@@ -1,36 +1,171 @@
-@prefix ns1: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns2: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns3: <http://www.w3.org/2002/07/owl#> .
-@prefix ns4: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns5: <http://purl.org/ontology/bibo/#> .
-@prefix ns6: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns7: <http://xmlns.com/foaf/0.1/> .
-@prefix ns8: <http://purl.org/dc/elements/1.1/> .
+@prefix ns1: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns2: <http://xmlns.com/foaf/0.1/> .
+@prefix ns3: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns4: <http://purl.org/ontology/bibo/#> .
+@prefix ns5: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns6: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns7: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns8: <http://www.w3.org/2002/07/owl#> .
+@prefix ns9: <http://purl.org/dc/elements/1.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1571/> a ns2:Proceedings ;
-    ns6:issued "2016-03-29T00:00:00+00:00"^^xsd:dateTime ;
-    ns5:presentedAt <http://ceur-ws.org/Vol-1571/#event> ;
-    ns1:editor <http://ceur-ws.org/Vol-1571/#AnthonyiAnjorin>,
-        <http://ceur-ws.org/Vol-1571/#JeremyiGibbons> .
+<http://ceur-ws.org/Vol-1571/#AnthonyiAnjorin> a ns2:Person ;
+    ns7:affiliation "" ;
+    ns8:sameAs <http://ceur-ws.org/persons/AnthonyiAnjorin> ;
+    ns2:name "Anthony Anjorin" .
 
-<http://ceur-ws.org/Vol-1571/#AnthonyiAnjorin> a ns7:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/AnthonyiAnjorin> ;
-    ns7:name "Anthony Anjorin" .
+<http://ceur-ws.org/Vol-1571/#ErhaniLeblebici> a ns2:Person ;
+    ns8:sameAs <http://ceur-ws.org/persons/ErhaniLeblebici> ;
+    ns2:made <http://ceur-ws.org/Vol-1571/#paper_5> ;
+    ns2:name "Erhan Leblebici" .
 
-<http://ceur-ws.org/Vol-1571/#JeremyiGibbons> a ns7:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/JeremyiGibbons> ;
-    ns7:name "Jeremy Gibbons" .
+<http://ceur-ws.org/Vol-1571/#JeremyiGibbons> a ns2:Person ;
+    ns7:affiliation "" ;
+    ns8:sameAs <http://ceur-ws.org/persons/JeremyiGibbons> ;
+    ns2:name "Jeremy Gibbons" .
 
-<http://ceur-ws.org/Vol-1571/#event> a ns2:WorkshopEvent ;
-    ns2:hasLocation <http://dbpedia.org/resource/Netherlands> ;
-    ns2:hasPart <http://ceur-ws.org/Vol-1571/#part-ws> ;
-    ns2:isSubEventOf <http://ceur-ws.org/Vol-1571/#conf> ;
-    ns4:beginsAtDatetime "2016-04-08T00:00:00+00:00"^^xsd:dateTime ;
-    ns4:endsAtDatetime "2016-04-08T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:license "http://creativecommons.org/publicdomain/zero/1.0/" ;
+<http://ceur-ws.org/Vol-1571/#MaxiE.iKramer> a ns2:Person ;
+    ns8:sameAs <http://ceur-ws.org/persons/MaxiE.iKramer> ;
+    ns2:made <http://ceur-ws.org/Vol-1571/#paper_4> ;
+    ns2:name "Max E. Kramer" .
+
+<http://ceur-ws.org/Vol-1571/#MichaeliJohnson> a ns2:Person ;
+    ns8:sameAs <http://ceur-ws.org/persons/MichaeliJohnson> ;
+    ns2:made <http://ceur-ws.org/Vol-1571/#paper_13> ;
+    ns2:name "Michael Johnson" .
+
+<http://ceur-ws.org/Vol-1571/#Oszk%C3%A1riSemer%C3%A1th> a ns2:Person ;
+    ns8:sameAs <http://ceur-ws.org/persons/Oszk%C3%A1riSemer%C3%A1th> ;
+    ns2:made <http://ceur-ws.org/Vol-1571/#paper_6> ;
+    ns2:name "Oszkár Semeráth" .
+
+<http://ceur-ws.org/Vol-1571/#SusanniGottmann> a ns2:Person ;
+    ns8:sameAs <http://ceur-ws.org/persons/SusanniGottmann> ;
+    ns2:made <http://ceur-ws.org/Vol-1571/#paper_7> ;
+    ns2:name "Susann Gottmann" .
+
+<http://ceur-ws.org/Vol-1571/#TaoiZan> a ns2:Person ;
+    ns8:sameAs <http://ceur-ws.org/persons/TaoiZan> ;
+    ns2:made <http://ceur-ws.org/Vol-1571/#paper_3> ;
+    ns2:name "Tao Zan" .
+
+<http://ceur-ws.org/Vol-1571/#ZinovyiDiskin> a ns2:Person ;
+    ns8:sameAs <http://ceur-ws.org/persons/ZinovyiDiskin> ;
+    ns2:made <http://ceur-ws.org/Vol-1571/#paper_9> ;
+    ns2:name "Zinovy Diskin" .
+
+<http://ceur-ws.org/Vol-1571/#event> a ns6:WorkshopEvent ;
+    ns6:hasLocation <http://dbpedia.org/resource/Netherlands> ;
+    ns6:hasPart <http://ceur-ws.org/Vol-1571/#part-ws> ;
+    ns6:isSubEventOf <http://ceur-ws.org/Vol-1571/#conf> ;
+    ns5:beginsAtDatetime "2016-04-08T00:00:00+00:00"^^xsd:dateTime ;
+    ns5:endsAtDatetime "2016-04-08T00:00:00+00:00"^^xsd:dateTime ;
+    ns9:license "http://creativecommons.org/publicdomain/zero/1.0/" ;
     rdfs:seeAlso <http://ceur-ws.org/Vol-1396/#event> .
+
+<http://ceur-ws.org/Vol-1571/#paper_10> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1571/> ;
+    ns1:title "Complements Witness Consistency" ;
+    ns4:endPage 94 ;
+    ns4:numPages 5 ;
+    ns4:startPage 90 ;
+    ns7:author <http://ceur-ws.org/Vol-1571/#JamesiMcKinna> .
+
+<http://ceur-ws.org/Vol-1571/#paper_11> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1571/> ;
+    ns1:title "Bidirectional Transformations with Deltas: A Dependently Typed Approach (Talk Proposal)" ;
+    ns4:endPage 14 ;
+    ns4:numPages 1 ;
+    ns4:startPage 14 ;
+    ns7:author <http://ceur-ws.org/Vol-1571/#JamesiMcKinna> .
+
+<http://ceur-ws.org/Vol-1571/#paper_12> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1571/> ;
+    ns1:title "How to Regain Equilibrium without Losing your Balance? Scenarios for Bx Deployment (Discussion Paper)" ;
+    ns4:endPage 34 ;
+    ns4:numPages 3 ;
+    ns4:startPage 32 ;
+    ns7:author <http://ceur-ws.org/Vol-1571/#JamesiMcKinna> .
+
+<http://ceur-ws.org/Vol-1571/#paper_13> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1571/> ;
+    ns1:title "Unifying Set-Based, Delta-Based and Edit-Based Lenses" ;
+    ns4:endPage 13 ;
+    ns4:numPages 13 ;
+    ns4:startPage 1 ;
+    ns7:author <http://ceur-ws.org/Vol-1571/#MichaeliJohnson> .
+
+<http://ceur-ws.org/Vol-1571/#paper_3> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1571/> ;
+    ns1:title "Brul: A Putback-Based Bidirectional Transformation Library for Updatable Views" ;
+    ns4:endPage 89 ;
+    ns4:numPages 13 ;
+    ns4:startPage 77 ;
+    ns7:author <http://ceur-ws.org/Vol-1571/#TaoiZan> .
+
+<http://ceur-ws.org/Vol-1571/#paper_4> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1571/> ;
+    ns1:title "Automated Inversion of Attribute Mappings in Bidirectional Model Transformations" ;
+    ns4:endPage 76 ;
+    ns4:numPages 16 ;
+    ns4:startPage 61 ;
+    ns7:author <http://ceur-ws.org/Vol-1571/#MaxiE.iKramer> .
+
+<http://ceur-ws.org/Vol-1571/#paper_5> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1571/> ;
+    ns1:title "Towards a Graph Grammar-Based Approach to Inter-Model Consistency Checks with Traceability Support" ;
+    ns4:endPage 39 ;
+    ns4:numPages 5 ;
+    ns4:startPage 35 ;
+    ns7:author <http://ceur-ws.org/Vol-1571/#ErhaniLeblebici> .
+
+<http://ceur-ws.org/Vol-1571/#paper_6> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1571/> ;
+    ns1:title "Change Propagation of View Models by Logic Synthesis using SAT solvers" ;
+    ns4:endPage 44 ;
+    ns4:numPages 5 ;
+    ns4:startPage 40 ;
+    ns7:author <http://ceur-ws.org/Vol-1571/#Oszk%C3%A1riSemer%C3%A1th> .
+
+<http://ceur-ws.org/Vol-1571/#paper_7> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1571/> ;
+    ns1:title "Towards the Propagation of Model Updates along different Views in Multi-View Models" ;
+    ns4:endPage 60 ;
+    ns4:numPages 16 ;
+    ns4:startPage 45 ;
+    ns7:author <http://ceur-ws.org/Vol-1571/#SusanniGottmann> .
+
+<http://ceur-ws.org/Vol-1571/#paper_9> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1571/> ;
+    ns1:title "Incorporating Uncertainty into Bidirectional Model Transformations and their Delta-Lens Formalization" ;
+    ns4:endPage 31 ;
+    ns4:numPages 17 ;
+    ns4:startPage 15 ;
+    ns7:author <http://ceur-ws.org/Vol-1571/#ZinovyiDiskin> .
+
+<http://ceur-ws.org/Vol-1571/#JamesiMcKinna> a ns2:Person ;
+    ns8:sameAs <http://ceur-ws.org/persons/JamesiMcKinna> ;
+    ns2:made <http://ceur-ws.org/Vol-1571/#paper_10>,
+        <http://ceur-ws.org/Vol-1571/#paper_11>,
+        <http://ceur-ws.org/Vol-1571/#paper_12> ;
+    ns2:name "James McKinna" .
+
+<http://ceur-ws.org/Vol-1571/> a ns6:Proceedings ;
+    ns6:hasPart <http://ceur-ws.org/Vol-1571/#paper_10>,
+        <http://ceur-ws.org/Vol-1571/#paper_11>,
+        <http://ceur-ws.org/Vol-1571/#paper_12>,
+        <http://ceur-ws.org/Vol-1571/#paper_13>,
+        <http://ceur-ws.org/Vol-1571/#paper_3>,
+        <http://ceur-ws.org/Vol-1571/#paper_4>,
+        <http://ceur-ws.org/Vol-1571/#paper_5>,
+        <http://ceur-ws.org/Vol-1571/#paper_6>,
+        <http://ceur-ws.org/Vol-1571/#paper_7>,
+        <http://ceur-ws.org/Vol-1571/#paper_9> ;
+    ns3:issued "2016-03-29T00:00:00+00:00"^^xsd:dateTime ;
+    ns4:presentedAt <http://ceur-ws.org/Vol-1571/#event> ;
+    ns7:editor <http://ceur-ws.org/Vol-1571/#AnthonyiAnjorin>,
+        <http://ceur-ws.org/Vol-1571/#JeremyiGibbons> .
 

@@ -2,11 +2,11 @@
 @prefix ns2: <http://xmlns.com/foaf/0.1/> .
 @prefix ns3: <http://www.w3.org/2002/07/owl#> .
 @prefix ns4: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns5: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns6: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns7: <http://purl.org/dc/elements/1.1/> .
+@prefix ns5: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns6: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix ns8: <http://purl.org/ontology/bibo/#> .
-@prefix ns9: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns9: <http://purl.org/dc/elements/1.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -119,11 +119,11 @@
 
 <http://ceur-ws.org/Vol-755/#event> a ns4:WorkshopEvent ;
     ns4:hasLocation <http://dbpedia.org/resource/Spain> ;
-    ns4:hasPart <http://ceur-ws.org/Vol-755/#part-CEUR-WS> ;
+    ns4:hasPart <http://ceur-ws.org/Vol-755/#part-ConfWS> ;
     ns4:isSubEventOf <http://ceur-ws.org/Vol-755/#conf> ;
-    ns5:beginsAtDatetime "2011-07-24T00:00:00+00:00"^^xsd:dateTime ;
-    ns5:endsAtDatetime "2011-07-24T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:license "http://choosealicense.com/licenses/no-license/" .
+    ns6:beginsAtDatetime "2011-07-16T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:endsAtDatetime "2011-07-16T00:00:00+00:00"^^xsd:dateTime ;
+    ns9:license "http://choosealicense.com/licenses/no-license/" .
 
 <http://ceur-ws.org/Vol-755/#DietmariJannach> a ns2:Person ;
     ns1:affiliation "" ;
@@ -133,37 +133,37 @@
 
 <http://ceur-ws.org/Vol-755/#paper01> a ns4:Paper ;
     ns4:partOf <http://ceur-ws.org/Vol-755/> ;
-    ns6:title "A Graphical Framework for Supporting Mass Customization" ;
+    ns5:title "A Graphical Framework for Supporting Mass Customization" ;
     ns1:author <http://ceur-ws.org/Vol-755/#DarioiCampagna> .
 
 <http://ceur-ws.org/Vol-755/#paper05> a ns4:Paper ;
     ns4:partOf <http://ceur-ws.org/Vol-755/> ;
-    ns6:title "Incremental Prediction of Configurator Input Values Based on Association Rules - A Case Study" ;
+    ns5:title "Incremental Prediction of Configurator Input Values Based on Association Rules - A Case Study" ;
     ns1:author <http://ceur-ws.org/Vol-755/#DietmariJannach>,
         <http://ceur-ws.org/Vol-755/#LukasiKalabis> .
 
 <http://ceur-ws.org/Vol-755/#paper06> a ns4:Paper ;
     ns4:partOf <http://ceur-ws.org/Vol-755/> ;
-    ns6:title "When to use what: Structuralization, Specialization, Instantiation, Metaization - Some Hints for Knowledge Engineers" ;
+    ns5:title "When to use what: Structuralization, Specialization, Instantiation, Metaization - Some Hints for Knowledge Engineers" ;
     ns1:author <http://ceur-ws.org/Vol-755/#LothariHotz>,
         <http://ceur-ws.org/Vol-755/#StephanieivoniRiegen> .
 
 <http://ceur-ws.org/Vol-755/#paper07> a ns4:Paper ;
     ns4:partOf <http://ceur-ws.org/Vol-755/> ;
-    ns6:title "SiMoL - A Modeling Language for Simulation and (Re-)Configuration" ;
+    ns5:title "SiMoL - A Modeling Language for Simulation and (Re-)Configuration" ;
     ns1:author <http://ceur-ws.org/Vol-755/#FranziWotawa>,
         <http://ceur-ws.org/Vol-755/#IuliaiNica> .
 
 <http://ceur-ws.org/Vol-755/#paper04> a ns4:Paper ;
     ns4:partOf <http://ceur-ws.org/Vol-755/> ;
-    ns6:title "Enumeration of Valid Partial Configurations" ;
+    ns5:title "Enumeration of Valid Partial Configurations" ;
     ns1:author <http://ceur-ws.org/Vol-755/#AlexeyiVoronov>,
         <http://ceur-ws.org/Vol-755/#FredrikiEkstedt>,
         <http://ceur-ws.org/Vol-755/#Knuti%C3%85kesson> .
 
 <http://ceur-ws.org/Vol-755/#paper02> a ns4:Paper ;
     ns4:partOf <http://ceur-ws.org/Vol-755/> ;
-    ns6:title "Modelling Configuration Knowledge in Heterogeneous Product Families" ;
+    ns5:title "Modelling Configuration Knowledge in Heterogeneous Product Families" ;
     ns1:author <http://ceur-ws.org/Vol-755/#ChristianiW.iProbst>,
         <http://ceur-ws.org/Vol-755/#LaurentiRicci>,
         <http://ceur-ws.org/Vol-755/#MatthieuiQu%C3%A9va>,
@@ -177,7 +177,7 @@
         <http://ceur-ws.org/Vol-755/#paper05>,
         <http://ceur-ws.org/Vol-755/#paper06>,
         <http://ceur-ws.org/Vol-755/#paper07> ;
-    ns9:issued "2011-07-24T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:issued "2011-07-24T00:00:00+00:00"^^xsd:dateTime ;
     ns8:presentedAt <http://ceur-ws.org/Vol-755/#event> ;
     ns1:editor <http://ceur-ws.org/Vol-755/#DietmariJannach>,
         <http://ceur-ws.org/Vol-755/#KostyantyniShchekotykhin>,
@@ -185,7 +185,7 @@
 
 <http://ceur-ws.org/Vol-755/#paper03> a ns4:Paper ;
     ns4:partOf <http://ceur-ws.org/Vol-755/> ;
-    ns6:title "(Re)configuration using Answer Set Programming" ;
+    ns5:title "(Re)configuration using Answer Set Programming" ;
     ns1:author <http://ceur-ws.org/Vol-755/#AloisiHaselb%C3%B6ck>,
         <http://ceur-ws.org/Vol-755/#AndreasiA.iFalkner>,
         <http://ceur-ws.org/Vol-755/#AnnaiRyabokon>,

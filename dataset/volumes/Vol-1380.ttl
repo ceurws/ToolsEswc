@@ -1,45 +1,192 @@
-@prefix ns1: <http://xmlns.com/foaf/0.1/> .
-@prefix ns2: <http://purl.org/dc/elements/1.1/> .
-@prefix ns3: <http://purl.org/ontology/bibo/#> .
+@prefix ns1: <http://purl.org/ontology/bibo/#> .
+@prefix ns2: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns3: <http://swrc.ontoware.org/ontology/#> .
 @prefix ns4: <http://www.w3.org/2002/07/owl#> .
-@prefix ns5: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns6: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns8: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns5: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns6: <http://xmlns.com/foaf/0.1/> .
+@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns9: <http://purl.org/dc/elements/1.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1380/> a ns6:Proceedings ;
-    ns5:issued "2015-07-08T00:00:00+00:00"^^xsd:dateTime ;
-    ns3:presentedAt <http://ceur-ws.org/Vol-1380/#event> ;
-    ns8:editor <http://ceur-ws.org/Vol-1380/#AndreasiSchrader>,
+<http://ceur-ws.org/Vol-1380/#BastianiMohrmann> a ns6:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/BastianiMohrmann> ;
+    ns6:made <http://ceur-ws.org/Vol-1380/#paper6> ;
+    ns6:name "Bastian Mohrmann" .
+
+<http://ceur-ws.org/Vol-1380/#ChristianiM%C3%A4rtin> a ns6:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/ChristianiM%C3%A4rtin> ;
+    ns6:made <http://ceur-ws.org/Vol-1380/#paper5> ;
+    ns6:name "Christian Märtin" .
+
+<http://ceur-ws.org/Vol-1380/#DanieliBurmeister> a ns6:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/DanieliBurmeister> ;
+    ns6:made <http://ceur-ws.org/Vol-1380/#paper2> ;
+    ns6:name "Daniel Burmeister" .
+
+<http://ceur-ws.org/Vol-1380/#EnesiYigitbas> a ns6:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/EnesiYigitbas> ;
+    ns6:made <http://ceur-ws.org/Vol-1380/#paper6> ;
+    ns6:name "Enes Yigitbas" .
+
+<http://ceur-ws.org/Vol-1380/#FlorianiNiebling> a ns6:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/FlorianiNiebling> ;
+    ns6:made <http://ceur-ws.org/Vol-1380/#paper3> ;
+    ns6:name "Florian Niebling" .
+
+<http://ceur-ws.org/Vol-1380/#J%C3%BCrgeniEngel> a ns6:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/J%C3%BCrgeniEngel> ;
+    ns6:made <http://ceur-ws.org/Vol-1380/#paper5> ;
+    ns6:name "Jürgen Engel" .
+
+<http://ceur-ws.org/Vol-1380/#JohannesiSch%C3%B6ning> a ns6:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/JohannesiSch%C3%B6ning> ;
+    ns6:made <http://ceur-ws.org/Vol-1380/#paper1> ;
+    ns6:name "Johannes Schöning" .
+
+<http://ceur-ws.org/Vol-1380/#MandyiKorzetz> a ns6:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/MandyiKorzetz> ;
+    ns6:made <http://ceur-ws.org/Vol-1380/#paper3> ;
+    ns6:name "Mandy Korzetz" .
+
+<http://ceur-ws.org/Vol-1380/#PeteriForbrig> a ns6:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/PeteriForbrig> ;
+    ns6:made <http://ceur-ws.org/Vol-1380/#paper5> ;
+    ns6:name "Peter Forbrig" .
+
+<http://ceur-ws.org/Vol-1380/#StefaniSauer> a ns6:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/StefaniSauer> ;
+    ns6:made <http://ceur-ws.org/Vol-1380/#paper6> ;
+    ns6:name "Stefan Sauer" .
+
+<http://ceur-ws.org/Vol-1380/#TobiasiNicolai> a ns6:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/TobiasiNicolai> ;
+    ns6:made <http://ceur-ws.org/Vol-1380/#paper3> ;
+    ns6:name "Tobias Nicolai" .
+
+<http://ceur-ws.org/Vol-1380/#event> a ns5:WorkshopEvent ;
+    ns5:hasLocation <http://dbpedia.org/resource/Germany> ;
+    ns5:hasPart <http://ceur-ws.org/Vol-1380/#part-LMIS> ;
+    ns5:isSubEventOf <http://ceur-ws.org/Vol-1380/#conf> ;
+    ns8:beginsAtDatetime "2015-06-23T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:endsAtDatetime "2015-06-23T00:00:00+00:00"^^xsd:dateTime ;
+    ns9:license "http://creativecommons.org/publicdomain/zero/1.0/" .
+
+<http://ceur-ws.org/Vol-1380/#InvitedKeynote> a ns5:SessionEvent ;
+    ns5:partOf <http://ceur-ws.org/Vol-1380/> ;
+    ns2:title "Invited Keynote" .
+
+<http://ceur-ws.org/Vol-1380/#RonnyiSeiger> a ns6:Person ;
+    ns3:affiliation "" ;
+    ns4:sameAs <http://ceur-ws.org/persons/RonnyiSeiger> ;
+    ns6:made <http://ceur-ws.org/Vol-1380/#paper3> ;
+    ns6:name "Ronny Seiger" .
+
+<http://ceur-ws.org/Vol-1380/#ThomasiSchlegel> a ns6:Person ;
+    ns3:affiliation "" ;
+    ns4:sameAs <http://ceur-ws.org/persons/ThomasiSchlegel> ;
+    ns6:made <http://ceur-ws.org/Vol-1380/#paper3> ;
+    ns6:name "Thomas Schlegel" .
+
+<http://ceur-ws.org/Vol-1380/#paper1> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1380/> ;
+    ns2:title "Navigation in Ambient Spaces" ;
+    ns1:endPage 13 ;
+    ns1:numPages 13 ;
+    ns1:section <http://ceur-ws.org/Vol-1380/#InvitedKeynote> ;
+    ns1:startPage 1 ;
+    ns3:author <http://ceur-ws.org/Vol-1380/#JohannesiSch%C3%B6ning> .
+
+<http://ceur-ws.org/Vol-1380/#AndreasiSchrader> a ns6:Person ;
+    ns3:affiliation "" ;
+    ns4:sameAs <http://ceur-ws.org/persons/AndreasiSchrader> ;
+    ns6:made <http://ceur-ws.org/Vol-1380/#paper2>,
+        <http://ceur-ws.org/Vol-1380/#paper4> ;
+    ns6:name "Andreas Schrader" .
+
+<http://ceur-ws.org/Vol-1380/#BashariAltakrouri> a ns6:Person ;
+    ns3:affiliation "" ;
+    ns4:sameAs <http://ceur-ws.org/persons/BashariAltakrouri> ;
+    ns6:made <http://ceur-ws.org/Vol-1380/#paper2>,
+        <http://ceur-ws.org/Vol-1380/#paper4> ;
+    ns6:name "Bashar Altakrouri" .
+
+<http://ceur-ws.org/Vol-1380/#paper4> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1380/> ;
+    ns2:title "Challenging Documentation Practices for Interactions in Natural User Interfaces" ;
+    ns1:endPage 28 ;
+    ns1:numPages 8 ;
+    ns1:section <http://ceur-ws.org/Vol-1380/#ScientificPapers> ;
+    ns1:startPage 21 ;
+    ns3:author <http://ceur-ws.org/Vol-1380/#AndreasiSchrader>,
+        <http://ceur-ws.org/Vol-1380/#BashariAltakrouri> .
+
+<http://ceur-ws.org/Vol-1380/#paper2> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1380/> ;
+    ns2:title "Ambient Reflection: Towards Self-explaining Devices" ;
+    ns1:endPage 15 ;
+    ns1:numPages 2 ;
+    ns1:section <http://ceur-ws.org/Vol-1380/#ScientificPapers> ;
+    ns1:startPage 14 ;
+    ns3:author <http://ceur-ws.org/Vol-1380/#AndreasiSchrader>,
+        <http://ceur-ws.org/Vol-1380/#BashariAltakrouri>,
+        <http://ceur-ws.org/Vol-1380/#DanieliBurmeister> .
+
+<http://ceur-ws.org/Vol-1380/#paper5> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1380/> ;
+    ns2:title "A Concerted Model-driven and Pattern-based Framework for Developing User Interfaces of Interactive Ubiquitous Applications" ;
+    ns1:endPage 34 ;
+    ns1:numPages 6 ;
+    ns1:section <http://ceur-ws.org/Vol-1380/#ScientificPapers> ;
+    ns1:startPage 29 ;
+    ns3:author <http://ceur-ws.org/Vol-1380/#ChristianiM%C3%A4rtin>,
+        <http://ceur-ws.org/Vol-1380/#J%C3%BCrgeniEngel>,
+        <http://ceur-ws.org/Vol-1380/#PeteriForbrig> .
+
+<http://ceur-ws.org/Vol-1380/#paper6> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1380/> ;
+    ns2:title "Model-driven UI Development Integrating HCI Patterns" ;
+    ns1:endPage 41 ;
+    ns1:numPages 7 ;
+    ns1:section <http://ceur-ws.org/Vol-1380/#ScientificPapers> ;
+    ns1:startPage 35 ;
+    ns3:author <http://ceur-ws.org/Vol-1380/#BastianiMohrmann>,
+        <http://ceur-ws.org/Vol-1380/#EnesiYigitbas>,
+        <http://ceur-ws.org/Vol-1380/#StefaniSauer> .
+
+<http://ceur-ws.org/Vol-1380/#ScientificPapers> a ns5:SessionEvent ;
+    ns5:partOf <http://ceur-ws.org/Vol-1380/> ;
+    ns2:title "Scientific Papers" .
+
+<http://ceur-ws.org/Vol-1380/#paper3> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1380/> ;
+    ns2:title "A Framework for Rapid Prototyping of Multimodal Interaction Concepts" ;
+    ns1:endPage 20 ;
+    ns1:numPages 5 ;
+    ns1:section <http://ceur-ws.org/Vol-1380/#ScientificPapers> ;
+    ns1:startPage 16 ;
+    ns3:author <http://ceur-ws.org/Vol-1380/#FlorianiNiebling>,
+        <http://ceur-ws.org/Vol-1380/#MandyiKorzetz>,
+        <http://ceur-ws.org/Vol-1380/#RonnyiSeiger>,
+        <http://ceur-ws.org/Vol-1380/#ThomasiSchlegel>,
+        <http://ceur-ws.org/Vol-1380/#TobiasiNicolai> .
+
+<http://ceur-ws.org/Vol-1380/> a ns5:Proceedings ;
+    ns5:hasPart <http://ceur-ws.org/Vol-1380/#paper1>,
+        <http://ceur-ws.org/Vol-1380/#paper2>,
+        <http://ceur-ws.org/Vol-1380/#paper3>,
+        <http://ceur-ws.org/Vol-1380/#paper4>,
+        <http://ceur-ws.org/Vol-1380/#paper5>,
+        <http://ceur-ws.org/Vol-1380/#paper6> ;
+    ns5:hasSession <http://ceur-ws.org/Vol-1380/#InvitedKeynote>,
+        <http://ceur-ws.org/Vol-1380/#ScientificPapers> ;
+    ns7:issued "2015-07-08T00:00:00+00:00"^^xsd:dateTime ;
+    ns1:presentedAt <http://ceur-ws.org/Vol-1380/#event> ;
+    ns3:editor <http://ceur-ws.org/Vol-1380/#AndreasiSchrader>,
         <http://ceur-ws.org/Vol-1380/#BashariAltakrouri>,
         <http://ceur-ws.org/Vol-1380/#RonnyiSeiger>,
         <http://ceur-ws.org/Vol-1380/#ThomasiSchlegel> .
-
-<http://ceur-ws.org/Vol-1380/#AndreasiSchrader> a ns1:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/AndreasiSchrader> ;
-    ns1:name "Andreas Schrader" .
-
-<http://ceur-ws.org/Vol-1380/#BashariAltakrouri> a ns1:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/BashariAltakrouri> ;
-    ns1:name "Bashar Altakrouri" .
-
-<http://ceur-ws.org/Vol-1380/#RonnyiSeiger> a ns1:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/RonnyiSeiger> ;
-    ns1:name "Ronny Seiger" .
-
-<http://ceur-ws.org/Vol-1380/#ThomasiSchlegel> a ns1:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/ThomasiSchlegel> ;
-    ns1:name "Thomas Schlegel" .
-
-<http://ceur-ws.org/Vol-1380/#event> a ns6:WorkshopEvent ;
-    ns6:hasLocation <http://dbpedia.org/resource/Germany> ;
-    ns6:hasPart <http://ceur-ws.org/Vol-1380/#part-ws> ;
-    ns6:isSubEventOf <http://ceur-ws.org/Vol-1380/#conf> ;
-    ns7:beginsAtDatetime "2015-06-23T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:endsAtDatetime "2015-06-23T00:00:00+00:00"^^xsd:dateTime ;
-    ns2:license "http://creativecommons.org/publicdomain/zero/1.0/" .
 

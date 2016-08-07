@@ -1,40 +1,121 @@
-@prefix ns1: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns2: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns3: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns1: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns2: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns3: <http://purl.org/ontology/bibo/#> .
 @prefix ns4: <http://xmlns.com/foaf/0.1/> .
 @prefix ns5: <http://swrc.ontoware.org/ontology/#> .
 @prefix ns6: <http://www.w3.org/2002/07/owl#> .
-@prefix ns7: <http://purl.org/dc/elements/1.1/> .
-@prefix ns8: <http://purl.org/ontology/bibo/#> .
+@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns9: <http://purl.org/dc/elements/1.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-899/> a ns3:Proceedings ;
-    ns1:issued "2012-09-14T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:presentedAt <http://ceur-ws.org/Vol-899/#event> ;
-    ns5:editor <http://ceur-ws.org/Vol-899/#DenisiTurdakov>,
-        <http://ceur-ws.org/Vol-899/#IlyaiTaranov> .
+<http://ceur-ws.org/Vol-899/#AlekseyiAlekseev> a ns4:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/AlekseyiAlekseev> ;
+    ns4:made <http://ceur-ws.org/Vol-899/#paper2> ;
+    ns4:name "Aleksey Alekseev" .
+
+<http://ceur-ws.org/Vol-899/#AliceiPigul> a ns4:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/AliceiPigul> ;
+    ns4:made <http://ceur-ws.org/Vol-899/#paper5> ;
+    ns4:name "Alice Pigul" .
 
 <http://ceur-ws.org/Vol-899/#DenisiTurdakov> a ns4:Person ;
+    ns5:affiliation "" ;
     ns6:sameAs <http://ceur-ws.org/persons/DenisiTurdakov> ;
     ns4:name "Denis Turdakov" .
 
-<http://ceur-ws.org/Vol-899/#IlyaiTaranov> a ns4:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/IlyaiTaranov> ;
-    ns4:name "Ilya Taranov" .
+<http://ceur-ws.org/Vol-899/#EkaterinaiIvannikova> a ns4:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/EkaterinaiIvannikova> ;
+    ns4:made <http://ceur-ws.org/Vol-899/#paper4> ;
+    ns4:name "Ekaterina Ivannikova" .
 
-<http://ceur-ws.org/Vol-899/#event> a ns3:WorkshopEvent ;
-    ns3:hasLocation <http://dbpedia.org/resource/Russia> ;
-    ns3:hasPart <http://ceur-ws.org/Vol-899/#part-CEUR-WS> ;
-    ns3:isSubEventOf <http://ceur-ws.org/Vol-899/#conf> ;
-    ns2:beginsAtDatetime "2012-06-01T00:00:00+00:00"^^xsd:dateTime ;
-    ns2:endsAtDatetime "2012-06-01T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:license "http://choosealicense.com/licenses/no-license/" ;
+<http://ceur-ws.org/Vol-899/#KuznetcoviKonstantin> a ns4:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/KuznetcoviKonstantin> ;
+    ns4:made <http://ceur-ws.org/Vol-899/#paper3> ;
+    ns4:name "Kuznetcov Konstantin" .
+
+<http://ceur-ws.org/Vol-899/#NataliaiLoukachevitch> a ns4:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/NataliaiLoukachevitch> ;
+    ns4:made <http://ceur-ws.org/Vol-899/#paper2> ;
+    ns4:name "Natalia Loukachevitch" .
+
+<http://ceur-ws.org/Vol-899/#OlegiBorisenko> a ns4:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/OlegiBorisenko> ;
+    ns4:made <http://ceur-ws.org/Vol-899/#paper1> ;
+    ns4:name "Oleg Borisenko" .
+
+<http://ceur-ws.org/Vol-899/#event> a ns1:WorkshopEvent ;
+    ns1:hasLocation <http://dbpedia.org/resource/Russia> ;
+    ns1:hasPart <http://ceur-ws.org/Vol-899/#part-SYRCoDIS> ;
+    ns1:isSubEventOf <http://ceur-ws.org/Vol-899/#conf> ;
+    ns8:beginsAtDatetime "2012-06-01T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:endsAtDatetime "2012-06-01T00:00:00+00:00"^^xsd:dateTime ;
+    ns9:license "http://choosealicense.com/licenses/no-license/" ;
     rdfs:seeAlso <http://ceur-ws.org/Vol-154/#event>,
         <http://ceur-ws.org/Vol-256/#event>,
         <http://ceur-ws.org/Vol-355/#event>,
         <http://ceur-ws.org/Vol-454/#event>,
         <http://ceur-ws.org/Vol-735/#event> .
+
+<http://ceur-ws.org/Vol-899/#IlyaiTaranov> a ns4:Person ;
+    ns5:affiliation "" ;
+    ns6:sameAs <http://ceur-ws.org/persons/IlyaiTaranov> ;
+    ns4:made <http://ceur-ws.org/Vol-899/#paper1> ;
+    ns4:name "Ilya Taranov" .
+
+<http://ceur-ws.org/Vol-899/#paper3> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-899/> ;
+    ns2:title "Data integration system for Linked Open Data space" ;
+    ns3:endPage 15 ;
+    ns3:numPages 4 ;
+    ns3:startPage 12 ;
+    ns5:author <http://ceur-ws.org/Vol-899/#KuznetcoviKonstantin> .
+
+<http://ceur-ws.org/Vol-899/#paper4> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-899/> ;
+    ns2:title "Mining periodic patterns in time-series databases" ;
+    ns3:endPage 28 ;
+    ns3:numPages 7 ;
+    ns3:startPage 22 ;
+    ns5:author <http://ceur-ws.org/Vol-899/#EkaterinaiIvannikova> .
+
+<http://ceur-ws.org/Vol-899/#paper5> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-899/> ;
+    ns2:title "Generalized Parallel Join Algorithms and Designing Cost Models" ;
+    ns3:endPage 40 ;
+    ns3:numPages 12 ;
+    ns3:startPage 29 ;
+    ns5:author <http://ceur-ws.org/Vol-899/#AliceiPigul> .
+
+<http://ceur-ws.org/Vol-899/#paper1> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-899/> ;
+    ns2:title "Implementing block-stored prefix trees in XML-DBMS" ;
+    ns3:endPage 21 ;
+    ns3:numPages 6 ;
+    ns3:startPage 16 ;
+    ns5:author <http://ceur-ws.org/Vol-899/#IlyaiTaranov>,
+        <http://ceur-ws.org/Vol-899/#OlegiBorisenko> .
+
+<http://ceur-ws.org/Vol-899/#paper2> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-899/> ;
+    ns2:title "Use of Multiple Features for Extracting Topics from News Clusters" ;
+    ns3:endPage 11 ;
+    ns3:numPages 9 ;
+    ns3:startPage 3 ;
+    ns5:author <http://ceur-ws.org/Vol-899/#AlekseyiAlekseev>,
+        <http://ceur-ws.org/Vol-899/#NataliaiLoukachevitch> .
+
+<http://ceur-ws.org/Vol-899/> a ns1:Proceedings ;
+    ns1:hasPart <http://ceur-ws.org/Vol-899/#paper1>,
+        <http://ceur-ws.org/Vol-899/#paper2>,
+        <http://ceur-ws.org/Vol-899/#paper3>,
+        <http://ceur-ws.org/Vol-899/#paper4>,
+        <http://ceur-ws.org/Vol-899/#paper5> ;
+    ns7:issued "2012-09-14T00:00:00+00:00"^^xsd:dateTime ;
+    ns3:presentedAt <http://ceur-ws.org/Vol-899/#event> ;
+    ns5:editor <http://ceur-ws.org/Vol-899/#DenisiTurdakov>,
+        <http://ceur-ws.org/Vol-899/#IlyaiTaranov> .
 

@@ -1,12 +1,12 @@
 @prefix ns1: <http://xmlns.com/foaf/0.1/> .
 @prefix ns2: <http://www.w3.org/2002/07/owl#> .
 @prefix ns3: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns4: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns5: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns4: <http://purl.org/ontology/bibo/#> .
+@prefix ns5: <http://data.semanticweb.org/ns/swc/ontology/#> .
 @prefix ns6: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns7: <http://purl.org/ontology/bibo/#> .
-@prefix ns8: <http://purl.org/dc/elements/1.1/> .
-@prefix ns9: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns7: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns9: <http://purl.org/dc/elements/1.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -257,19 +257,19 @@
     ns1:made <http://ceur-ws.org/Vol-433/#paper9> ;
     ns1:name "X. Dolques" .
 
-<http://ceur-ws.org/Vol-433/#event> a ns4:WorkshopEvent ;
-    ns4:hasLocation <http://dbpedia.org/resource/Czech_Republic> ;
-    ns4:hasPart <http://ceur-ws.org/Vol-433/#part-CEUR-WS> ;
-    ns4:isSubEventOf <http://ceur-ws.org/Vol-433/#conf> ;
-    ns6:beginsAtDatetime "2009-02-02T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:endsAtDatetime "2009-02-02T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:license "http://choosealicense.com/licenses/no-license/" ;
+<http://ceur-ws.org/Vol-433/#event> a ns5:WorkshopEvent ;
+    ns5:hasLocation <http://dbpedia.org/resource/Czech_Republic> ;
+    ns5:hasPart <http://ceur-ws.org/Vol-433/#part-CLA> ;
+    ns5:isSubEventOf <http://ceur-ws.org/Vol-433/#conf> ;
+    ns6:beginsAtDatetime "2008-10-21T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:endsAtDatetime "2008-10-23T00:00:00+00:00"^^xsd:dateTime ;
+    ns9:license "http://choosealicense.com/licenses/no-license/" ;
     rdfs:seeAlso <http://ceur-ws.org/Vol-110/#event>,
         <http://ceur-ws.org/Vol-162/#event>,
         <http://ceur-ws.org/Vol-331/#event> .
 
 <http://ceur-ws.org/Vol-433/#RadimiBelohlavek> a ns1:Person ;
-    ns7:place <http://dbpedia.org/resource/Czech_Republic> ;
+    ns4:place <http://dbpedia.org/resource/Czech_Republic> ;
     ns3:affiliation "Department of Computer Science, Palacký University, Olomouc" ;
     ns2:sameAs <http://ceur-ws.org/persons/RadimiBelohlavek> ;
     ns1:made <http://ceur-ws.org/Vol-433/#paper5> ;
@@ -287,184 +287,184 @@
         <http://ceur-ws.org/Vol-433/#paper15> ;
     ns1:name "Uta Priss" .
 
-<http://ceur-ws.org/Vol-433/#invited1> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-433/> ;
-    ns5:title "Recent Interfaces for Formal Concept Analysis" ;
-    ns7:section <http://ceur-ws.org/Vol-433/#InvitedContributionsabstracts> ;
+<http://ceur-ws.org/Vol-433/#invited1> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-433/> ;
+    ns7:title "Recent Interfaces for Formal Concept Analysis" ;
+    ns4:section <http://ceur-ws.org/Vol-433/#InvitedContributionsabstracts> ;
     ns3:author <http://ceur-ws.org/Vol-433/#BernhardiGanter> .
 
-<http://ceur-ws.org/Vol-433/#invited2> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-433/> ;
-    ns5:title "The GUHA Method and its Meaning for Data Mining" ;
-    ns7:section <http://ceur-ws.org/Vol-433/#InvitedContributionsabstracts> ;
+<http://ceur-ws.org/Vol-433/#invited2> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-433/> ;
+    ns7:title "The GUHA Method and its Meaning for Data Mining" ;
+    ns4:section <http://ceur-ws.org/Vol-433/#InvitedContributionsabstracts> ;
     ns3:author <http://ceur-ws.org/Vol-433/#PetriH%C3%A1jek> .
 
-<http://ceur-ws.org/Vol-433/#invited3> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-433/> ;
-    ns5:title "Biclustering Methods Meets Formal Concept Analysis" ;
-    ns7:section <http://ceur-ws.org/Vol-433/#InvitedContributionsabstracts> ;
+<http://ceur-ws.org/Vol-433/#invited3> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-433/> ;
+    ns7:title "Biclustering Methods Meets Formal Concept Analysis" ;
+    ns4:section <http://ceur-ws.org/Vol-433/#InvitedContributionsabstracts> ;
     ns3:author <http://ceur-ws.org/Vol-433/#GeorgeiKarypis> .
 
-<http://ceur-ws.org/Vol-433/#invited4> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-433/> ;
-    ns5:title "Rough Sets and Formal Concept Analysis: Foundations and the Case Studies of Feature Subset Selection and Knowledge Structure Formation" ;
-    ns7:section <http://ceur-ws.org/Vol-433/#InvitedContributionsabstracts> ;
+<http://ceur-ws.org/Vol-433/#invited4> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-433/> ;
+    ns7:title "Rough Sets and Formal Concept Analysis: Foundations and the Case Studies of Feature Subset Selection and Knowledge Structure Formation" ;
+    ns4:section <http://ceur-ws.org/Vol-433/#InvitedContributionsabstracts> ;
     ns3:author <http://ceur-ws.org/Vol-433/#DominikiSlezak> .
 
-<http://ceur-ws.org/Vol-433/#paper11> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-433/> ;
-    ns5:title "FCA Software Interoperability" ;
-    ns7:section <http://ceur-ws.org/Vol-433/#Papers> ;
+<http://ceur-ws.org/Vol-433/#paper11> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-433/> ;
+    ns7:title "FCA Software Interoperability" ;
+    ns4:section <http://ceur-ws.org/Vol-433/#Papers> ;
     ns3:author <http://ceur-ws.org/Vol-433/#UtaiPriss> .
 
-<http://ceur-ws.org/Vol-433/#paper17> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-433/> ;
-    ns5:title "On Generalization of Fuzzy Concept Lattices Based on Change of Underlying Fuzzy Order" ;
-    ns7:section <http://ceur-ws.org/Vol-433/#Papers> ;
+<http://ceur-ws.org/Vol-433/#paper17> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-433/> ;
+    ns7:title "On Generalization of Fuzzy Concept Lattices Based on Change of Underlying Fuzzy Order" ;
+    ns4:section <http://ceur-ws.org/Vol-433/#Papers> ;
     ns3:author <http://ceur-ws.org/Vol-433/#PaveliMartinek> .
 
-<http://ceur-ws.org/Vol-433/#paper19> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-433/> ;
-    ns5:title "Factorization of Concept Lattices with Hedges by Means of Factorization of Residuated Lattices" ;
-    ns7:section <http://ceur-ws.org/Vol-433/#Papers> ;
+<http://ceur-ws.org/Vol-433/#paper19> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-433/> ;
+    ns7:title "Factorization of Concept Lattices with Hedges by Means of Factorization of Residuated Lattices" ;
+    ns4:section <http://ceur-ws.org/Vol-433/#Papers> ;
     ns3:author <http://ceur-ws.org/Vol-433/#MichaliKrupka> .
 
-<http://ceur-ws.org/Vol-433/#paper2> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-433/> ;
-    ns5:title "Connecting Many-valued Contexts to General Geometric Structures" ;
-    ns7:section <http://ceur-ws.org/Vol-433/#Papers> ;
+<http://ceur-ws.org/Vol-433/#paper2> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-433/> ;
+    ns7:title "Connecting Many-valued Contexts to General Geometric Structures" ;
+    ns4:section <http://ceur-ws.org/Vol-433/#Papers> ;
     ns3:author <http://ceur-ws.org/Vol-433/#TimiB.iKaiser> .
 
-<http://ceur-ws.org/Vol-433/#paper3> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-433/> ;
-    ns5:title "Concept Lattice Mining for Unsupervised Named Entity Annotation" ;
-    ns7:section <http://ceur-ws.org/Vol-433/#Papers> ;
+<http://ceur-ws.org/Vol-433/#paper3> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-433/> ;
+    ns7:title "Concept Lattice Mining for Unsupervised Named Entity Annotation" ;
+    ns4:section <http://ceur-ws.org/Vol-433/#Papers> ;
     ns3:author <http://ceur-ws.org/Vol-433/#ThomasiGirault> .
 
-<http://ceur-ws.org/Vol-433/#paper1> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-433/> ;
-    ns5:title "A Formal Concept Analysis of Harmonic Forms and Interval Structures" ;
-    ns7:section <http://ceur-ws.org/Vol-433/#Papers> ;
+<http://ceur-ws.org/Vol-433/#paper1> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-433/> ;
+    ns7:title "A Formal Concept Analysis of Harmonic Forms and Interval Structures" ;
+    ns4:section <http://ceur-ws.org/Vol-433/#Papers> ;
     ns3:author <http://ceur-ws.org/Vol-433/#StefaniE.iSchmidt>,
         <http://ceur-ws.org/Vol-433/#TobiasiSchlemmer> .
 
-<http://ceur-ws.org/Vol-433/#paper13> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-433/> ;
-    ns5:title "Concept-based Recommendations for Internet Advertisement" ;
-    ns7:section <http://ceur-ws.org/Vol-433/#Papers> ;
+<http://ceur-ws.org/Vol-433/#paper13> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-433/> ;
+    ns7:title "Concept-based Recommendations for Internet Advertisement" ;
+    ns4:section <http://ceur-ws.org/Vol-433/#Papers> ;
     ns3:author <http://ceur-ws.org/Vol-433/#DmitryiI.iIgnatov>,
         <http://ceur-ws.org/Vol-433/#SergeiiO.iKuznetsov> .
 
-<http://ceur-ws.org/Vol-433/#paper14> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-433/> ;
-    ns5:title "The Mathematical in Music Thinking" ;
-    ns7:section <http://ceur-ws.org/Vol-433/#Papers> ;
+<http://ceur-ws.org/Vol-433/#paper14> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-433/> ;
+    ns7:title "The Mathematical in Music Thinking" ;
+    ns4:section <http://ceur-ws.org/Vol-433/#Papers> ;
     ns3:author <http://ceur-ws.org/Vol-433/#RenateiWille-Henning>,
         <http://ceur-ws.org/Vol-433/#RudolfiWille> .
 
-<http://ceur-ws.org/Vol-433/#paper18> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-433/> ;
-    ns5:title "On the Isomorphism Problem of Concept Algebras" ;
-    ns7:section <http://ceur-ws.org/Vol-433/#Papers> ;
+<http://ceur-ws.org/Vol-433/#paper18> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-433/> ;
+    ns7:title "On the Isomorphism Problem of Concept Algebras" ;
+    ns4:section <http://ceur-ws.org/Vol-433/#Papers> ;
     ns3:author <http://ceur-ws.org/Vol-433/#HajimeiMachida>,
         <http://ceur-ws.org/Vol-433/#L%C3%A9onardiKwuida> .
 
-<http://ceur-ws.org/Vol-433/#paper7> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-433/> ;
-    ns5:title "Proto-fuzzy Concepts, their Retrieval and Usage" ;
-    ns7:section <http://ceur-ws.org/Vol-433/#Papers> ;
+<http://ceur-ws.org/Vol-433/#paper7> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-433/> ;
+    ns7:title "Proto-fuzzy Concepts, their Retrieval and Usage" ;
+    ns4:section <http://ceur-ws.org/Vol-433/#Papers> ;
     ns3:author <http://ceur-ws.org/Vol-433/#OndrejiKr%C3%ADdlo>,
         <http://ceur-ws.org/Vol-433/#StanislaviKraj%C4%8Di> .
 
-<http://ceur-ws.org/Vol-433/#paper12> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-433/> ;
-    ns5:title "GARM: Generalized Association Rule Mining" ;
-    ns7:section <http://ceur-ws.org/Vol-433/#Papers> ;
+<http://ceur-ws.org/Vol-433/#paper12> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-433/> ;
+    ns7:title "GARM: Generalized Association Rule Mining" ;
+    ns4:section <http://ceur-ws.org/Vol-433/#Papers> ;
     ns3:author <http://ceur-ws.org/Vol-433/#E.iMephuiNguifo>,
         <http://ceur-ws.org/Vol-433/#S.iBeniYahia>,
         <http://ceur-ws.org/Vol-433/#T.iHamrouni> .
 
-<http://ceur-ws.org/Vol-433/#paper15> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-433/> ;
-    ns5:title "An Application of Formal Concept Analysis to Neural Decoding" ;
-    ns7:section <http://ceur-ws.org/Vol-433/#Papers> ;
+<http://ceur-ws.org/Vol-433/#paper15> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-433/> ;
+    ns7:title "An Application of Formal Concept Analysis to Neural Decoding" ;
+    ns4:section <http://ceur-ws.org/Vol-433/#Papers> ;
     ns3:author <http://ceur-ws.org/Vol-433/#DominikiEndres>,
         <http://ceur-ws.org/Vol-433/#PeteriF%C3%B6ldi%C3%A1k>,
         <http://ceur-ws.org/Vol-433/#UtaiPriss> .
 
-<http://ceur-ws.org/Vol-433/#paper5> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-433/> ;
-    ns5:title "Optimal Decompositions of Matrices with Grades into Binary and Graded Matrices" ;
-    ns7:section <http://ceur-ws.org/Vol-433/#Papers> ;
+<http://ceur-ws.org/Vol-433/#paper5> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-433/> ;
+    ns7:title "Optimal Decompositions of Matrices with Grades into Binary and Graded Matrices" ;
+    ns4:section <http://ceur-ws.org/Vol-433/#Papers> ;
     ns3:author <http://ceur-ws.org/Vol-433/#EduardiBartl>,
         <http://ceur-ws.org/Vol-433/#JaniKonecny>,
         <http://ceur-ws.org/Vol-433/#RadimiBelohlavek> .
 
-<http://ceur-ws.org/Vol-433/#paper6> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-433/> ;
-    ns5:title "Parallel Recursive Algorithm for FCA" ;
-    ns7:section <http://ceur-ws.org/Vol-433/#Papers> ;
+<http://ceur-ws.org/Vol-433/#paper6> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-433/> ;
+    ns7:title "Parallel Recursive Algorithm for FCA" ;
+    ns4:section <http://ceur-ws.org/Vol-433/#Papers> ;
     ns3:author <http://ceur-ws.org/Vol-433/#JaniOutrata>,
         <http://ceur-ws.org/Vol-433/#PetriKrajca>,
         <http://ceur-ws.org/Vol-433/#VilemiVychodil> .
 
-<http://ceur-ws.org/Vol-433/#InvitedContributionsabstracts> a ns4:SessionEvent ;
-    ns4:partOf <http://ceur-ws.org/Vol-433/> ;
-    ns5:title "Invited Contributions (abstracts)" .
+<http://ceur-ws.org/Vol-433/#InvitedContributionsabstracts> a ns5:SessionEvent ;
+    ns5:partOf <http://ceur-ws.org/Vol-433/> ;
+    ns7:title "Invited Contributions (abstracts)" .
 
-<http://ceur-ws.org/Vol-433/#paper4> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-433/> ;
-    ns5:title "An Efficient Hybrid Algorithm for Mining Frequent Closures and Generators" ;
-    ns7:section <http://ceur-ws.org/Vol-433/#Papers> ;
+<http://ceur-ws.org/Vol-433/#paper4> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-433/> ;
+    ns7:title "An Efficient Hybrid Algorithm for Mining Frequent Closures and Generators" ;
+    ns4:section <http://ceur-ws.org/Vol-433/#Papers> ;
     ns3:author <http://ceur-ws.org/Vol-433/#AmedeoiNapoli>,
         <http://ceur-ws.org/Vol-433/#LaszloiSzathmary>,
         <http://ceur-ws.org/Vol-433/#PetkoiValtchev>,
         <http://ceur-ws.org/Vol-433/#RobertiGodin> .
 
-<http://ceur-ws.org/Vol-433/#paper8> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-433/> ;
-    ns5:title "Application of the Formal Concept Analysis in Evaluation of Results of ANEWS Questionnaire and Physical Activity of the Czech Regional Centers" ;
-    ns7:section <http://ceur-ws.org/Vol-433/#Papers> ;
+<http://ceur-ws.org/Vol-433/#paper8> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-433/> ;
+    ns7:title "Application of the Formal Concept Analysis in Evaluation of Results of ANEWS Questionnaire and Physical Activity of the Czech Regional Centers" ;
+    ns4:section <http://ceur-ws.org/Vol-433/#Papers> ;
     ns3:author <http://ceur-ws.org/Vol-433/#ErikiSigmund>,
         <http://ceur-ws.org/Vol-433/#Ji%C5%99%C3%ADiZacpal>,
         <http://ceur-ws.org/Vol-433/#JosefiMit%C3%A1%C5%A1>,
         <http://ceur-ws.org/Vol-433/#Vladim%C3%ADriSklen%C3%A1%C5%99> .
 
-<http://ceur-ws.org/Vol-433/#paper9> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-433/> ;
-    ns5:title "A Model-driven Engineering Based RCA Process for Bi-level Models Elements / Meta-elements: Application to Description Logics" ;
-    ns7:section <http://ceur-ws.org/Vol-433/#Papers> ;
+<http://ceur-ws.org/Vol-433/#paper9> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-433/> ;
+    ns7:title "A Model-driven Engineering Based RCA Process for Bi-level Models Elements / Meta-elements: Application to Description Logics" ;
+    ns4:section <http://ceur-ws.org/Vol-433/#Papers> ;
     ns3:author <http://ceur-ws.org/Vol-433/#C.iNebut>,
         <http://ceur-ws.org/Vol-433/#J.-R.iFalleri>,
         <http://ceur-ws.org/Vol-433/#M.iHuchard>,
         <http://ceur-ws.org/Vol-433/#X.iDolques> .
 
-<http://ceur-ws.org/Vol-433/#paper10> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-433/> ;
-    ns5:title "Extending Attribute Exploration by Means of Boolean Derivatives" ;
-    ns7:section <http://ceur-ws.org/Vol-433/#Papers> ;
+<http://ceur-ws.org/Vol-433/#paper10> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-433/> ;
+    ns7:title "Extending Attribute Exploration by Means of Boolean Derivatives" ;
+    ns4:section <http://ceur-ws.org/Vol-433/#Papers> ;
     ns3:author <http://ceur-ws.org/Vol-433/#GonzaloiA.iAranda-Corral>,
         <http://ceur-ws.org/Vol-433/#J.iAntonioiAlonso-Jim%C3%A9nez>,
         <http://ceur-ws.org/Vol-433/#Joaqu%C3%ADniBorrego-D%C3%ADaz>,
         <http://ceur-ws.org/Vol-433/#M.iJos%C3%A9iHidalgo-Doblado>,
         <http://ceur-ws.org/Vol-433/#M.iMagdalenaiFern%C3%A1ndez-Lebr%C3%B3n> .
 
-<http://ceur-ws.org/Vol-433/#paper16> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-433/> ;
-    ns5:title "Some Links Between Decision Tree and Dichotomic Lattice" ;
-    ns7:section <http://ceur-ws.org/Vol-433/#Papers> ;
+<http://ceur-ws.org/Vol-433/#paper16> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-433/> ;
+    ns7:title "Some Links Between Decision Tree and Dichotomic Lattice" ;
+    ns4:section <http://ceur-ws.org/Vol-433/#Papers> ;
     ns3:author <http://ceur-ws.org/Vol-433/#J-M.iOgier>,
         <http://ceur-ws.org/Vol-433/#K.iBertet>,
         <http://ceur-ws.org/Vol-433/#M.iVisani>,
         <http://ceur-ws.org/Vol-433/#N.iGirard>,
         <http://ceur-ws.org/Vol-433/#S.iGuillas> .
 
-<http://ceur-ws.org/Vol-433/#Papers> a ns4:SessionEvent ;
-    ns4:partOf <http://ceur-ws.org/Vol-433/> ;
-    ns5:title "Papers" .
+<http://ceur-ws.org/Vol-433/#Papers> a ns5:SessionEvent ;
+    ns5:partOf <http://ceur-ws.org/Vol-433/> ;
+    ns7:title "Papers" .
 
-<http://ceur-ws.org/Vol-433/> a ns4:Proceedings ;
-    ns4:hasPart <http://ceur-ws.org/Vol-433/#invited1>,
+<http://ceur-ws.org/Vol-433/> a ns5:Proceedings ;
+    ns5:hasPart <http://ceur-ws.org/Vol-433/#invited1>,
         <http://ceur-ws.org/Vol-433/#invited2>,
         <http://ceur-ws.org/Vol-433/#invited3>,
         <http://ceur-ws.org/Vol-433/#invited4>,
@@ -487,10 +487,10 @@
         <http://ceur-ws.org/Vol-433/#paper7>,
         <http://ceur-ws.org/Vol-433/#paper8>,
         <http://ceur-ws.org/Vol-433/#paper9> ;
-    ns4:hasSession <http://ceur-ws.org/Vol-433/#InvitedContributionsabstracts>,
+    ns5:hasSession <http://ceur-ws.org/Vol-433/#InvitedContributionsabstracts>,
         <http://ceur-ws.org/Vol-433/#Papers> ;
-    ns9:issued "2009-02-02T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:presentedAt <http://ceur-ws.org/Vol-433/#event> ;
+    ns8:issued "2009-02-02T00:00:00+00:00"^^xsd:dateTime ;
+    ns4:presentedAt <http://ceur-ws.org/Vol-433/#event> ;
     ns3:editor <http://ceur-ws.org/Vol-433/#RadimiBelohlavek>,
         <http://ceur-ws.org/Vol-433/#SergeiiO.iKuznetsov> .
 

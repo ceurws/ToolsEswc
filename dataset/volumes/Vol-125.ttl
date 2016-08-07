@@ -1,10 +1,10 @@
 @prefix ns1: <http://www.w3.org/2002/07/owl#> .
-@prefix ns2: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns2: <http://swrc.ontoware.org/ontology/#> .
 @prefix ns3: <http://xmlns.com/foaf/0.1/> .
 @prefix ns4: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns5: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns6: <http://purl.org/ontology/bibo/#> .
-@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns5: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns6: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns7: <http://purl.org/ontology/bibo/#> .
 @prefix ns8: <http://purl.org/dc/elements/1.1/> .
 @prefix ns9: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -462,12 +462,13 @@
     ns3:made <http://ceur-ws.org/Vol-125/#paper27> ;
     ns3:name "Y. Pigneur" .
 
-<http://ceur-ws.org/Vol-125/#event> a ns2:WorkshopEvent ;
-    ns2:hasLocation <http://dbpedia.org/resource/Latvia> ;
-    ns2:hasPart <http://ceur-ws.org/Vol-125/#part-InterOp> ;
-    ns2:isSubEventOf <http://ceur-ws.org/Vol-125/#conf> ;
-    ns7:beginsAtDatetime "2005-01-05T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:endsAtDatetime "2005-01-05T00:00:00+00:00"^^xsd:dateTime ;
+<http://ceur-ws.org/Vol-125/#event> a ns5:WorkshopEvent ;
+    ns5:hasLocation <http://dbpedia.org/resource/Latvia> ;
+    ns5:hasPart <http://ceur-ws.org/Vol-125/#part-EMOI>,
+        <http://ceur-ws.org/Vol-125/#part-INTEROP> ;
+    ns5:isSubEventOf <http://ceur-ws.org/Vol-125/#conf> ;
+    ns6:beginsAtDatetime "2004-06-07T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:endsAtDatetime "2004-06-08T00:00:00+00:00"^^xsd:dateTime ;
     ns8:license "http://choosealicense.com/licenses/no-license/" .
 
 <http://ceur-ws.org/Vol-125/#D.iBianchini> a ns3:Person ;
@@ -488,8 +489,8 @@
         <http://ceur-ws.org/Vol-125/#paper8> ;
     ns3:name "G. Sindre" .
 
-<http://ceur-ws.org/Vol-125/#Keynotespeech> a ns2:SessionEvent ;
-    ns2:partOf <http://ceur-ws.org/Vol-125/> ;
+<http://ceur-ws.org/Vol-125/#Keynotespeech> a ns5:SessionEvent ;
+    ns5:partOf <http://ceur-ws.org/Vol-125/> ;
     ns4:title "Keynote speech:" .
 
 <http://ceur-ws.org/Vol-125/#M.C.iJaeger> a ns3:Person ;
@@ -540,53 +541,53 @@
         <http://ceur-ws.org/Vol-125/#paper8> ;
     ns3:name "X. Su" .
 
-<http://ceur-ws.org/Vol-125/#keynote> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-125/> ;
+<http://ceur-ws.org/Vol-125/#keynote> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-125/> ;
     ns4:title "Canonical model development techniques aimed at semantic interoperability in the heterogeneous world of information modeling" ;
-    ns6:section <http://ceur-ws.org/Vol-125/#Keynotespeech> ;
-    ns5:author <http://ceur-ws.org/Vol-125/#L.A.iKalinichenko> .
+    ns7:section <http://ceur-ws.org/Vol-125/#Keynotespeech> ;
+    ns2:author <http://ceur-ws.org/Vol-125/#L.A.iKalinichenko> .
 
-<http://ceur-ws.org/Vol-125/#paper19> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-125/> ;
+<http://ceur-ws.org/Vol-125/#paper19> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-125/> ;
     ns4:title "Using business network models in web-Pilarcos" ;
-    ns6:section <http://ceur-ws.org/Vol-125/#ShortPapers> ;
-    ns5:author <http://ceur-ws.org/Vol-125/#L.iKutvonen> .
+    ns7:section <http://ceur-ws.org/Vol-125/#ShortPapers> ;
+    ns2:author <http://ceur-ws.org/Vol-125/#L.iKutvonen> .
 
-<http://ceur-ws.org/Vol-125/#paper20> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-125/> ;
+<http://ceur-ws.org/Vol-125/#paper20> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-125/> ;
     ns4:title "Ontology of Enterprise Competencies" ;
-    ns6:section <http://ceur-ws.org/Vol-125/#ShortPapers> ;
-    ns5:author <http://ceur-ws.org/Vol-125/#M.iHarzallah> .
+    ns7:section <http://ceur-ws.org/Vol-125/#ShortPapers> ;
+    ns2:author <http://ceur-ws.org/Vol-125/#M.iHarzallah> .
 
-<http://ceur-ws.org/Vol-125/#paper24> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-125/> ;
+<http://ceur-ws.org/Vol-125/#paper24> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-125/> ;
     ns4:title "Description Logics for Interoperability" ;
-    ns6:section <http://ceur-ws.org/Vol-125/#ShortPapers> ;
-    ns5:author <http://ceur-ws.org/Vol-125/#E.iFranconi> .
+    ns7:section <http://ceur-ws.org/Vol-125/#ShortPapers> ;
+    ns2:author <http://ceur-ws.org/Vol-125/#E.iFranconi> .
 
-<http://ceur-ws.org/Vol-125/#paper37> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-125/> ;
+<http://ceur-ws.org/Vol-125/#paper37> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-125/> ;
     ns4:title "Ontology for Characterising Architecture Frameworks" ;
-    ns6:section <http://ceur-ws.org/Vol-125/#ShortPapers> ;
-    ns5:author <http://ceur-ws.org/Vol-125/#O.P.iOhren> .
+    ns7:section <http://ceur-ws.org/Vol-125/#ShortPapers> ;
+    ns2:author <http://ceur-ws.org/Vol-125/#O.P.iOhren> .
 
-<http://ceur-ws.org/Vol-125/#paper6> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-125/> ;
+<http://ceur-ws.org/Vol-125/#paper6> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-125/> ;
     ns4:title "On the use of WordNet for semantic interoperability: towards �cognitive computing�" ;
-    ns6:section <http://ceur-ws.org/Vol-125/#Regularpapers> ;
-    ns5:author <http://ceur-ws.org/Vol-125/#C.iVeres> .
+    ns7:section <http://ceur-ws.org/Vol-125/#Regularpapers> ;
+    ns2:author <http://ceur-ws.org/Vol-125/#C.iVeres> .
 
-<http://ceur-ws.org/Vol-125/#paperX1> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-125/> ;
+<http://ceur-ws.org/Vol-125/#paperX1> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-125/> ;
     ns4:title "Introduction to iVS - Intelligent Distributed Systems" ;
-    ns6:section <http://ceur-ws.org/Vol-125/#ShortPapers> ;
-    ns5:author <http://ceur-ws.org/Vol-125/#M.C.iJaeger> .
+    ns7:section <http://ceur-ws.org/Vol-125/#ShortPapers> ;
+    ns2:author <http://ceur-ws.org/Vol-125/#M.C.iJaeger> .
 
-<http://ceur-ws.org/Vol-125/#tutorial1> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-125/> ;
+<http://ceur-ws.org/Vol-125/#tutorial1> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-125/> ;
     ns4:title "Enterprise Modelling: objectives, constructs and ontologies" ;
-    ns6:section <http://ceur-ws.org/Vol-125/#Tutorials> ;
-    ns5:author <http://ceur-ws.org/Vol-125/#F.iVernadat> .
+    ns7:section <http://ceur-ws.org/Vol-125/#Tutorials> ;
+    ns2:author <http://ceur-ws.org/Vol-125/#F.iVernadat> .
 
 <http://ceur-ws.org/Vol-125/#C.iVeres> a ns3:Person ;
     ns1:sameAs <http://ceur-ws.org/persons/C.iVeres> ;
@@ -596,261 +597,261 @@
     ns3:name "C. Veres" .
 
 <http://ceur-ws.org/Vol-125/#MicheleiMissikoff> a ns3:Person ;
-    ns5:affiliation "" ;
+    ns2:affiliation "" ;
     ns1:sameAs <http://ceur-ws.org/persons/MicheleiMissikoff> ;
     ns3:made <http://ceur-ws.org/Vol-125/#paper32>,
         <http://ceur-ws.org/Vol-125/#tutorial2> ;
     ns3:name "Michele Missikoff" .
 
-<http://ceur-ws.org/Vol-125/#Tutorials> a ns2:SessionEvent ;
-    ns2:partOf <http://ceur-ws.org/Vol-125/> ;
+<http://ceur-ws.org/Vol-125/#Tutorials> a ns5:SessionEvent ;
+    ns5:partOf <http://ceur-ws.org/Vol-125/> ;
     ns4:title "Tutorials:" .
 
-<http://ceur-ws.org/Vol-125/#paper1> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-125/> ;
+<http://ceur-ws.org/Vol-125/#paper1> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-125/> ;
     ns4:title "Ontologies for Analysis and Improvement of Business Process Quality in a Virtual Enterprise" ;
-    ns6:section <http://ceur-ws.org/Vol-125/#Regularpapers> ;
-    ns5:author <http://ceur-ws.org/Vol-125/#A.iGalatescu>,
+    ns7:section <http://ceur-ws.org/Vol-125/#Regularpapers> ;
+    ns2:author <http://ceur-ws.org/Vol-125/#A.iGalatescu>,
         <http://ceur-ws.org/Vol-125/#T.iGreceanu> .
 
-<http://ceur-ws.org/Vol-125/#paper13> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-125/> ;
+<http://ceur-ws.org/Vol-125/#paper13> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-125/> ;
     ns4:title "Enhancing Application Interoperability and Enabling B2B Transactions over the Internet for Small and Medium Enterprises : The PRAXIS Project" ;
-    ns6:section <http://ceur-ws.org/Vol-125/#ShortPapers> ;
-    ns5:author <http://ceur-ws.org/Vol-125/#S.iPantelopoulos>,
+    ns7:section <http://ceur-ws.org/Vol-125/#ShortPapers> ;
+    ns2:author <http://ceur-ws.org/Vol-125/#S.iPantelopoulos>,
         <http://ceur-ws.org/Vol-125/#Y.iCharalabidis> .
 
-<http://ceur-ws.org/Vol-125/#paper16> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-125/> ;
+<http://ceur-ws.org/Vol-125/#paper16> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-125/> ;
     ns4:title "Achieving Enterprise Model Interoperability through the Model-Based Architecture Framework for Enterprises" ;
-    ns6:section <http://ceur-ws.org/Vol-125/#ShortPapers> ;
-    ns5:author <http://ceur-ws.org/Vol-125/#H.D.iJ%EF%BF%BDrgensen>,
+    ns7:section <http://ceur-ws.org/Vol-125/#ShortPapers> ;
+    ns2:author <http://ceur-ws.org/Vol-125/#H.D.iJ%EF%BF%BDrgensen>,
         <http://ceur-ws.org/Vol-125/#O.P.iOhren> .
 
-<http://ceur-ws.org/Vol-125/#paper17> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-125/> ;
+<http://ceur-ws.org/Vol-125/#paper17> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-125/> ;
     ns4:title "Perspectives on the scope and definition process of the Unified Enterprise Modelling Language" ;
-    ns6:section <http://ceur-ws.org/Vol-125/#ShortPapers> ;
-    ns5:author <http://ceur-ws.org/Vol-125/#M.iPetit>,
+    ns7:section <http://ceur-ws.org/Vol-125/#ShortPapers> ;
+    ns2:author <http://ceur-ws.org/Vol-125/#M.iPetit>,
         <http://ceur-ws.org/Vol-125/#P.iHeymans> .
 
-<http://ceur-ws.org/Vol-125/#paper2> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-125/> ;
+<http://ceur-ws.org/Vol-125/#paper2> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-125/> ;
     ns4:title "A Unified Foundational Ontology and some Applications of it in Business Modeling" ;
-    ns6:section <http://ceur-ws.org/Vol-125/#Regularpapers> ;
-    ns5:author <http://ceur-ws.org/Vol-125/#G.iGuizzardi>,
+    ns7:section <http://ceur-ws.org/Vol-125/#Regularpapers> ;
+    ns2:author <http://ceur-ws.org/Vol-125/#G.iGuizzardi>,
         <http://ceur-ws.org/Vol-125/#G.iWagner> .
 
-<http://ceur-ws.org/Vol-125/#paper21> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-125/> ;
+<http://ceur-ws.org/Vol-125/#paper21> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-125/> ;
     ns4:title "Why we understand each other: the role of the context" ;
-    ns6:section <http://ceur-ws.org/Vol-125/#ShortPapers> ;
-    ns5:author <http://ceur-ws.org/Vol-125/#G.iAndrighetto>,
+    ns7:section <http://ceur-ws.org/Vol-125/#ShortPapers> ;
+    ns2:author <http://ceur-ws.org/Vol-125/#G.iAndrighetto>,
         <http://ceur-ws.org/Vol-125/#P.iAssogna> .
 
-<http://ceur-ws.org/Vol-125/#paper25> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-125/> ;
+<http://ceur-ws.org/Vol-125/#paper25> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-125/> ;
     ns4:title "A Patient Centred Process Ontology for Information Visualisation in Health Care" ;
-    ns6:section <http://ceur-ws.org/Vol-125/#ShortPapers> ;
-    ns5:author <http://ceur-ws.org/Vol-125/#P.iJayaweera>,
+    ns7:section <http://ceur-ws.org/Vol-125/#ShortPapers> ;
+    ns2:author <http://ceur-ws.org/Vol-125/#P.iJayaweera>,
         <http://ceur-ws.org/Vol-125/#P.iJohannesson> .
 
-<http://ceur-ws.org/Vol-125/#paper28> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-125/> ;
+<http://ceur-ws.org/Vol-125/#paper28> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-125/> ;
     ns4:title "Ontologies in the CRP Henri Tudor projects" ;
-    ns6:section <http://ceur-ws.org/Vol-125/#ShortPapers> ;
-    ns5:author <http://ceur-ws.org/Vol-125/#J-SiBrunner>,
+    ns7:section <http://ceur-ws.org/Vol-125/#ShortPapers> ;
+    ns2:author <http://ceur-ws.org/Vol-125/#J-SiBrunner>,
         <http://ceur-ws.org/Vol-125/#T.iLatour> .
 
-<http://ceur-ws.org/Vol-125/#paper3-title-abstract> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-125/> ;
+<http://ceur-ws.org/Vol-125/#paper3-title-abstract> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-125/> ;
     ns4:title "Evaluating the REA Enterprise Ontology from an Operational Perspective" ;
-    ns6:section <http://ceur-ws.org/Vol-125/#Regularpapers> ;
-    ns5:author <http://ceur-ws.org/Vol-125/#C.iStefansen>,
+    ns7:section <http://ceur-ws.org/Vol-125/#Regularpapers> ;
+    ns2:author <http://ceur-ws.org/Vol-125/#C.iStefansen>,
         <http://ceur-ws.org/Vol-125/#S.E.iBorch> .
 
-<http://ceur-ws.org/Vol-125/#paper31> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-125/> ;
+<http://ceur-ws.org/Vol-125/#paper31> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-125/> ;
     ns4:title "Complement Concept and Capability Discovery" ;
-    ns6:section <http://ceur-ws.org/Vol-125/#ShortPapers> ;
-    ns5:author <http://ceur-ws.org/Vol-125/#C.iDong>,
+    ns7:section <http://ceur-ws.org/Vol-125/#ShortPapers> ;
+    ns2:author <http://ceur-ws.org/Vol-125/#C.iDong>,
         <http://ceur-ws.org/Vol-125/#N.iBoudjlida> .
 
-<http://ceur-ws.org/Vol-125/#paper32> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-125/> ;
+<http://ceur-ws.org/Vol-125/#paper32> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-125/> ;
     ns4:title "Enriching Ontology Languages Adequacy for eBusiness Domain" ;
-    ns6:section <http://ceur-ws.org/Vol-125/#ShortPapers> ;
-    ns5:author <http://ceur-ws.org/Vol-125/#F.iSchiappelli>,
+    ns7:section <http://ceur-ws.org/Vol-125/#ShortPapers> ;
+    ns2:author <http://ceur-ws.org/Vol-125/#F.iSchiappelli>,
         <http://ceur-ws.org/Vol-125/#MicheleiMissikoff> .
 
-<http://ceur-ws.org/Vol-125/#paper33> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-125/> ;
+<http://ceur-ws.org/Vol-125/#paper33> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-125/> ;
     ns4:title "UML for Ontology Modelling and Interoperability" ;
-    ns6:section <http://ceur-ws.org/Vol-125/#ShortPapers> ;
-    ns5:author <http://ceur-ws.org/Vol-125/#P.iJohannesson>,
+    ns7:section <http://ceur-ws.org/Vol-125/#ShortPapers> ;
+    ns2:author <http://ceur-ws.org/Vol-125/#P.iJohannesson>,
         <http://ceur-ws.org/Vol-125/#V.iKabilan> .
 
-<http://ceur-ws.org/Vol-125/#paper34> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-125/> ;
+<http://ceur-ws.org/Vol-125/#paper34> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-125/> ;
     ns4:title "Using the WordNet ontology for interpreting Medical Records" ;
-    ns6:section <http://ceur-ws.org/Vol-125/#ShortPapers> ;
-    ns5:author <http://ceur-ws.org/Vol-125/#C.iVeres>,
+    ns7:section <http://ceur-ws.org/Vol-125/#ShortPapers> ;
+    ns2:author <http://ceur-ws.org/Vol-125/#C.iVeres>,
         <http://ceur-ws.org/Vol-125/#J.E.iIngvaldsen> .
 
-<http://ceur-ws.org/Vol-125/#paper39> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-125/> ;
+<http://ceur-ws.org/Vol-125/#paper39> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-125/> ;
     ns4:title "Adding trust to ontology based peer-to-peer networks" ;
-    ns6:section <http://ceur-ws.org/Vol-125/#ShortPapers> ;
-    ns5:author <http://ceur-ws.org/Vol-125/#A.iHahn>,
+    ns7:section <http://ceur-ws.org/Vol-125/#ShortPapers> ;
+    ns2:author <http://ceur-ws.org/Vol-125/#A.iHahn>,
         <http://ceur-ws.org/Vol-125/#S.iAbels> .
 
-<http://ceur-ws.org/Vol-125/#paper7> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-125/> ;
+<http://ceur-ws.org/Vol-125/#paper7> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-125/> ;
     ns4:title "A knowledge-based approach to ontology learning and semantic annotation" ;
-    ns6:section <http://ceur-ws.org/Vol-125/#Regularpapers> ;
-    ns5:author <http://ceur-ws.org/Vol-125/#P.iVelardi>,
+    ns7:section <http://ceur-ws.org/Vol-125/#Regularpapers> ;
+    ns2:author <http://ceur-ws.org/Vol-125/#P.iVelardi>,
         <http://ceur-ws.org/Vol-125/#R.iNavigli> .
 
-<http://ceur-ws.org/Vol-125/#paper9> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-125/> ;
+<http://ceur-ws.org/Vol-125/#paper9> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-125/> ;
     ns4:title "Ranked Matching for Service Descriptions using DAML-S" ;
-    ns6:section <http://ceur-ws.org/Vol-125/#Regularpapers> ;
-    ns5:author <http://ceur-ws.org/Vol-125/#M.C.iJaeger>,
+    ns7:section <http://ceur-ws.org/Vol-125/#Regularpapers> ;
+    ns2:author <http://ceur-ws.org/Vol-125/#M.C.iJaeger>,
         <http://ceur-ws.org/Vol-125/#S.iTang> .
 
-<http://ceur-ws.org/Vol-125/#tutorial2> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-125/> ;
+<http://ceur-ws.org/Vol-125/#tutorial2> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-125/> ;
     ns4:title "Ontologies for Interoperability" ;
-    ns6:section <http://ceur-ws.org/Vol-125/#Tutorials> ;
-    ns5:author <http://ceur-ws.org/Vol-125/#M.iLenzerini>,
+    ns7:section <http://ceur-ws.org/Vol-125/#Tutorials> ;
+    ns2:author <http://ceur-ws.org/Vol-125/#M.iLenzerini>,
         <http://ceur-ws.org/Vol-125/#MicheleiMissikoff> .
 
-<http://ceur-ws.org/Vol-125/#paper11> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-125/> ;
+<http://ceur-ws.org/Vol-125/#paper11> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-125/> ;
     ns4:title "A Model-based Ontology of the Software Interoperability Problem: Preliminary Results" ;
-    ns6:section <http://ceur-ws.org/Vol-125/#Regularpapers> ;
-    ns5:author <http://ceur-ws.org/Vol-125/#E.iDubois>,
+    ns7:section <http://ceur-ws.org/Vol-125/#Regularpapers> ;
+    ns2:author <http://ceur-ws.org/Vol-125/#E.iDubois>,
         <http://ceur-ws.org/Vol-125/#T.iLatour>,
         <http://ceur-ws.org/Vol-125/#V.iRosener> .
 
-<http://ceur-ws.org/Vol-125/#paper14> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-125/> ;
+<http://ceur-ws.org/Vol-125/#paper14> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-125/> ;
     ns4:title "Methods and Techniques for Ontology-based Semantic Interoperability in Networked Enterprise Contexts" ;
-    ns6:section <http://ceur-ws.org/Vol-125/#ShortPapers> ;
-    ns5:author <http://ceur-ws.org/Vol-125/#A.iFerrara>,
+    ns7:section <http://ceur-ws.org/Vol-125/#ShortPapers> ;
+    ns2:author <http://ceur-ws.org/Vol-125/#A.iFerrara>,
         <http://ceur-ws.org/Vol-125/#S.iCastano>,
         <http://ceur-ws.org/Vol-125/#S.iMontanelli> .
 
-<http://ceur-ws.org/Vol-125/#paper23> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-125/> ;
+<http://ceur-ws.org/Vol-125/#paper23> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-125/> ;
     ns4:title "The PARADIGMA Project: an Ontology-based Approach for Cooperative Work in the Medical Domain" ;
-    ns6:section <http://ceur-ws.org/Vol-125/#ShortPapers> ;
-    ns5:author <http://ceur-ws.org/Vol-125/#A.iDiiLeva>,
+    ns7:section <http://ceur-ws.org/Vol-125/#ShortPapers> ;
+    ns2:author <http://ceur-ws.org/Vol-125/#A.iDiiLeva>,
         <http://ceur-ws.org/Vol-125/#C.iReyneri>,
         <http://ceur-ws.org/Vol-125/#D.iOcchetti> .
 
-<http://ceur-ws.org/Vol-125/#paper27> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-125/> ;
+<http://ceur-ws.org/Vol-125/#paper27> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-125/> ;
     ns4:title "Setting up an ontology of business models" ;
-    ns6:section <http://ceur-ws.org/Vol-125/#ShortPapers> ;
-    ns5:author <http://ceur-ws.org/Vol-125/#A.iOsterwalder>,
+    ns7:section <http://ceur-ws.org/Vol-125/#ShortPapers> ;
+    ns2:author <http://ceur-ws.org/Vol-125/#A.iOsterwalder>,
         <http://ceur-ws.org/Vol-125/#C.iParent>,
         <http://ceur-ws.org/Vol-125/#Y.iPigneur> .
 
-<http://ceur-ws.org/Vol-125/#paper29> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-125/> ;
+<http://ceur-ws.org/Vol-125/#paper29> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-125/> ;
     ns4:title "Ontology-based semantic infrastructure for service interoperability" ;
-    ns6:section <http://ceur-ws.org/Vol-125/#ShortPapers> ;
-    ns5:author <http://ceur-ws.org/Vol-125/#D.iBianchini>,
+    ns7:section <http://ceur-ws.org/Vol-125/#ShortPapers> ;
+    ns2:author <http://ceur-ws.org/Vol-125/#D.iBianchini>,
         <http://ceur-ws.org/Vol-125/#M.iMelchiori>,
         <http://ceur-ws.org/Vol-125/#V.iDeiAntonellis> .
 
-<http://ceur-ws.org/Vol-125/#paper36> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-125/> ;
+<http://ceur-ws.org/Vol-125/#paper36> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-125/> ;
     ns4:title "Towards Semantic Service Specification and Discovery" ;
-    ns6:section <http://ceur-ws.org/Vol-125/#ShortPapers> ;
-    ns5:author <http://ceur-ws.org/Vol-125/#M.W.A.iSteen>,
+    ns7:section <http://ceur-ws.org/Vol-125/#ShortPapers> ;
+    ns2:author <http://ceur-ws.org/Vol-125/#M.W.A.iSteen>,
         <http://ceur-ws.org/Vol-125/#R.J.iWieringa>,
         <http://ceur-ws.org/Vol-125/#S.iPokraev> .
 
-<http://ceur-ws.org/Vol-125/#paper4> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-125/> ;
+<http://ceur-ws.org/Vol-125/#paper4> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-125/> ;
     ns4:title "Ontology-based Interoperability for Interorganizational Applications" ;
-    ns6:section <http://ceur-ws.org/Vol-125/#Regularpapers> ;
-    ns5:author <http://ceur-ws.org/Vol-125/#D.iBianchini>,
+    ns7:section <http://ceur-ws.org/Vol-125/#Regularpapers> ;
+    ns2:author <http://ceur-ws.org/Vol-125/#D.iBianchini>,
         <http://ceur-ws.org/Vol-125/#M.iMelchiori>,
         <http://ceur-ws.org/Vol-125/#V.iDeiAntonellis> .
 
-<http://ceur-ws.org/Vol-125/#paper5> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-125/> ;
+<http://ceur-ws.org/Vol-125/#paper5> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-125/> ;
     ns4:title "Supporting Enterprise Integration through a Unified Enterprise Modeling Language" ;
-    ns6:section <http://ceur-ws.org/Vol-125/#Regularpapers> ;
-    ns5:author <http://ceur-ws.org/Vol-125/#%EF%BF%BD.iOrtiz>,
+    ns7:section <http://ceur-ws.org/Vol-125/#Regularpapers> ;
+    ns2:author <http://ceur-ws.org/Vol-125/#%EF%BF%BD.iOrtiz>,
         <http://ceur-ws.org/Vol-125/#G.iBerio>,
         <http://ceur-ws.org/Vol-125/#V.iAnaya> .
 
-<http://ceur-ws.org/Vol-125/#paper10> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-125/> ;
+<http://ceur-ws.org/Vol-125/#paper10> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-125/> ;
     ns4:title "Towards Ontology-Driven Institutional IS Engineering" ;
-    ns6:section <http://ceur-ws.org/Vol-125/#Regularpapers> ;
-    ns5:author <http://ceur-ws.org/Vol-125/#A.iKhadraoui>,
+    ns7:section <http://ceur-ws.org/Vol-125/#Regularpapers> ;
+    ns2:author <http://ceur-ws.org/Vol-125/#A.iKhadraoui>,
         <http://ceur-ws.org/Vol-125/#C.iA%EF%BF%BDdonidis>,
         <http://ceur-ws.org/Vol-125/#M.iL%EF%BF%BDonard>,
         <http://ceur-ws.org/Vol-125/#S.iTurki> .
 
-<http://ceur-ws.org/Vol-125/#paper12> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-125/> ;
+<http://ceur-ws.org/Vol-125/#paper12> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-125/> ;
     ns4:title "An Approach to the Enterprise Integration" ;
-    ns6:section <http://ceur-ws.org/Vol-125/#ShortPapers> ;
-    ns5:author <http://ceur-ws.org/Vol-125/#%EF%BF%BD.iColtell>,
+    ns7:section <http://ceur-ws.org/Vol-125/#ShortPapers> ;
+    ns2:author <http://ceur-ws.org/Vol-125/#%EF%BF%BD.iColtell>,
         <http://ceur-ws.org/Vol-125/#C.iCampos>,
         <http://ceur-ws.org/Vol-125/#R.iChalmeta>,
         <http://ceur-ws.org/Vol-125/#R.iGrangel> .
 
-<http://ceur-ws.org/Vol-125/#paper22> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-125/> ;
+<http://ceur-ws.org/Vol-125/#paper22> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-125/> ;
     ns4:title "Moda-ML: Building a collaborative sectoral framework based on ebXML" ;
-    ns6:section <http://ceur-ws.org/Vol-125/#ShortPapers> ;
-    ns5:author <http://ceur-ws.org/Vol-125/#F.iVitali>,
+    ns7:section <http://ceur-ws.org/Vol-125/#ShortPapers> ;
+    ns2:author <http://ceur-ws.org/Vol-125/#F.iVitali>,
         <http://ceur-ws.org/Vol-125/#M.iMarzocchi>,
         <http://ceur-ws.org/Vol-125/#N.iGessa>,
         <http://ceur-ws.org/Vol-125/#P.iDeiSabbata> .
 
-<http://ceur-ws.org/Vol-125/#paper26> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-125/> ;
+<http://ceur-ws.org/Vol-125/#paper26> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-125/> ;
     ns4:title "Using Ontologies to Compose Transformations of XML Schema Based Documents" ;
-    ns6:section <http://ceur-ws.org/Vol-125/#ShortPapers> ;
-    ns5:author <http://ceur-ws.org/Vol-125/#C.iKoncilia>,
+    ns7:section <http://ceur-ws.org/Vol-125/#ShortPapers> ;
+    ns2:author <http://ceur-ws.org/Vol-125/#C.iKoncilia>,
         <http://ceur-ws.org/Vol-125/#H.iPichler>,
         <http://ceur-ws.org/Vol-125/#J.iEder>,
         <http://ceur-ws.org/Vol-125/#M.iLehmann> .
 
-<http://ceur-ws.org/Vol-125/#paper8> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-125/> ;
+<http://ceur-ws.org/Vol-125/#paper8> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-125/> ;
     ns4:title "A Step Towards Context Insensitive Quality Control for Ontology Building Methodologies" ;
-    ns6:section <http://ceur-ws.org/Vol-125/#Regularpapers> ;
-    ns5:author <http://ceur-ws.org/Vol-125/#D.iStrasunskas>,
+    ns7:section <http://ceur-ws.org/Vol-125/#Regularpapers> ;
+    ns2:author <http://ceur-ws.org/Vol-125/#D.iStrasunskas>,
         <http://ceur-ws.org/Vol-125/#G.iSindre>,
         <http://ceur-ws.org/Vol-125/#R.iMatulevi%C4%8Dius>,
         <http://ceur-ws.org/Vol-125/#S.iHakkarainen>,
         <http://ceur-ws.org/Vol-125/#X.iSu> .
 
-<http://ceur-ws.org/Vol-125/#paper18> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-125/> ;
+<http://ceur-ws.org/Vol-125/#paper18> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-125/> ;
     ns4:title "Ontology Driven Business Processes Integration � a Position Paper" ;
-    ns6:section <http://ceur-ws.org/Vol-125/#ShortPapers> ;
-    ns5:author <http://ceur-ws.org/Vol-125/#A.iPersson>,
+    ns7:section <http://ceur-ws.org/Vol-125/#ShortPapers> ;
+    ns2:author <http://ceur-ws.org/Vol-125/#A.iPersson>,
         <http://ceur-ws.org/Vol-125/#A.iToms>,
         <http://ceur-ws.org/Vol-125/#B.iWangler>,
         <http://ceur-ws.org/Vol-125/#E.iS%EF%BF%BDderstr%EF%BF%BDm>,
         <http://ceur-ws.org/Vol-125/#P.iBacklund>,
         <http://ceur-ws.org/Vol-125/#R.-M.i%EF%BF%BDhlfeldt> .
 
-<http://ceur-ws.org/Vol-125/#paper15> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-125/> ;
+<http://ceur-ws.org/Vol-125/#paper15> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-125/> ;
     ns4:title "Modeling and realizing interoperability" ;
-    ns6:section <http://ceur-ws.org/Vol-125/#ShortPapers> ;
-    ns5:author <http://ceur-ws.org/Vol-125/#H.iWeigand>,
+    ns7:section <http://ceur-ws.org/Vol-125/#ShortPapers> ;
+    ns2:author <http://ceur-ws.org/Vol-125/#H.iWeigand>,
         <http://ceur-ws.org/Vol-125/#J.iHoppenbrouwers>,
         <http://ceur-ws.org/Vol-125/#J.iYang>,
         <http://ceur-ws.org/Vol-125/#K.iLeune>,
@@ -858,11 +859,11 @@
         <http://ceur-ws.org/Vol-125/#M.iPapazoglou>,
         <http://ceur-ws.org/Vol-125/#W.-J.ivanideniHeuvel> .
 
-<http://ceur-ws.org/Vol-125/#paper35-title-abstract> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-125/> ;
+<http://ceur-ws.org/Vol-125/#paper35-title-abstract> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-125/> ;
     ns4:title "Virtual Engineering Team for the Industrial Engineering" ;
-    ns6:section <http://ceur-ws.org/Vol-125/#ShortPapers> ;
-    ns5:author <http://ceur-ws.org/Vol-125/#A.iBernard>,
+    ns7:section <http://ceur-ws.org/Vol-125/#ShortPapers> ;
+    ns2:author <http://ceur-ws.org/Vol-125/#A.iBernard>,
         <http://ceur-ws.org/Vol-125/#A.iCandlot>,
         <http://ceur-ws.org/Vol-125/#M.iMauchand>,
         <http://ceur-ws.org/Vol-125/#M.iPouliquen>,
@@ -871,11 +872,11 @@
         <http://ceur-ws.org/Vol-125/#S.A.iKhodja>,
         <http://ceur-ws.org/Vol-125/#Y.iKeraron> .
 
-<http://ceur-ws.org/Vol-125/#paper30> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-125/> ;
+<http://ceur-ws.org/Vol-125/#paper30> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-125/> ;
     ns4:title "COEUR-SW: Concepts On Enriching, Understanding, and Retrieving the Semantics on the Web" ;
-    ns6:section <http://ceur-ws.org/Vol-125/#ShortPapers> ;
-    ns5:author <http://ceur-ws.org/Vol-125/#A.iS%EF%BF%BDlvberg>,
+    ns7:section <http://ceur-ws.org/Vol-125/#ShortPapers> ;
+    ns2:author <http://ceur-ws.org/Vol-125/#A.iS%EF%BF%BDlvberg>,
         <http://ceur-ws.org/Vol-125/#C.iVeres>,
         <http://ceur-ws.org/Vol-125/#D.iStrasunskas>,
         <http://ceur-ws.org/Vol-125/#G.iSindre>,
@@ -885,16 +886,16 @@
         <http://ceur-ws.org/Vol-125/#X.iSu>,
         <http://ceur-ws.org/Vol-125/#Y.iLin> .
 
-<http://ceur-ws.org/Vol-125/#Regularpapers> a ns2:SessionEvent ;
-    ns2:partOf <http://ceur-ws.org/Vol-125/> ;
+<http://ceur-ws.org/Vol-125/#Regularpapers> a ns5:SessionEvent ;
+    ns5:partOf <http://ceur-ws.org/Vol-125/> ;
     ns4:title "Regular papers:" .
 
-<http://ceur-ws.org/Vol-125/#ShortPapers> a ns2:SessionEvent ;
-    ns2:partOf <http://ceur-ws.org/Vol-125/> ;
+<http://ceur-ws.org/Vol-125/#ShortPapers> a ns5:SessionEvent ;
+    ns5:partOf <http://ceur-ws.org/Vol-125/> ;
     ns4:title "Short Papers:" .
 
-<http://ceur-ws.org/Vol-125/> a ns2:Proceedings ;
-    ns2:hasPart <http://ceur-ws.org/Vol-125/#keynote>,
+<http://ceur-ws.org/Vol-125/> a ns5:Proceedings ;
+    ns5:hasPart <http://ceur-ws.org/Vol-125/#keynote>,
         <http://ceur-ws.org/Vol-125/#paper1>,
         <http://ceur-ws.org/Vol-125/#paper10>,
         <http://ceur-ws.org/Vol-125/#paper11>,
@@ -936,11 +937,11 @@
         <http://ceur-ws.org/Vol-125/#paperX1>,
         <http://ceur-ws.org/Vol-125/#tutorial1>,
         <http://ceur-ws.org/Vol-125/#tutorial2> ;
-    ns2:hasSession <http://ceur-ws.org/Vol-125/#Keynotespeech>,
+    ns5:hasSession <http://ceur-ws.org/Vol-125/#Keynotespeech>,
         <http://ceur-ws.org/Vol-125/#Regularpapers>,
         <http://ceur-ws.org/Vol-125/#ShortPapers>,
         <http://ceur-ws.org/Vol-125/#Tutorials> ;
     ns9:issued "2005-01-04T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:presentedAt <http://ceur-ws.org/Vol-125/#event> ;
-    ns5:editor <http://ceur-ws.org/Vol-125/#MicheleiMissikoff> .
+    ns7:presentedAt <http://ceur-ws.org/Vol-125/#event> ;
+    ns2:editor <http://ceur-ws.org/Vol-125/#MicheleiMissikoff> .
 

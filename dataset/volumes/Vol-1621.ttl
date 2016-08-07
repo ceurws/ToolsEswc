@@ -1,43 +1,234 @@
-@prefix ns1: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns2: <http://xmlns.com/foaf/0.1/> .
-@prefix ns3: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns4: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns5: <http://www.w3.org/2002/07/owl#> .
+@prefix ns1: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns2: <http://www.w3.org/2002/07/owl#> .
+@prefix ns3: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns4: <http://xmlns.com/foaf/0.1/> .
+@prefix ns5: <http://purl.org/dc/elements/1.1/#> .
 @prefix ns6: <http://purl.org/ontology/bibo/#> .
-@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1621/> a ns4:Proceedings ;
-    ns3:issued "2016-07-05T00:00:00+00:00"^^xsd:dateTime ;
+<http://ceur-ws.org/Vol-1621/#AlaniWecker> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/AlaniWecker> ;
+    ns4:made <http://ceur-ws.org/Vol-1621/#paper10> ;
+    ns4:name "Alan Wecker" .
+
+<http://ceur-ws.org/Vol-1621/#AmoniRapp> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/AmoniRapp> ;
+    ns4:made <http://ceur-ws.org/Vol-1621/#paper2> ;
+    ns4:name "Amon Rapp" .
+
+<http://ceur-ws.org/Vol-1621/#AntonioiOriglia> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/AntonioiOriglia> ;
+    ns4:made <http://ceur-ws.org/Vol-1621/#paper4> ;
+    ns4:name "Antonio Origlia" .
+
+<http://ceur-ws.org/Vol-1621/#AntonioiSorgente> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/AntonioiSorgente> ;
+    ns4:made <http://ceur-ws.org/Vol-1621/#paper3> ;
+    ns4:name "Antonio Sorgente" .
+
+<http://ceur-ws.org/Vol-1621/#BerardinaiNadjaiDeiCarolis> a ns4:Person ;
+    ns3:affiliation "" ;
+    ns2:sameAs <http://ceur-ws.org/persons/BerardinaiNadjaiDeiCarolis> ;
+    ns4:name "Berardina Nadja De Carolis" .
+
+<http://ceur-ws.org/Vol-1621/#DavideiMariaiCalandra> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/DavideiMariaiCalandra> ;
+    ns4:made <http://ceur-ws.org/Vol-1621/#paper7> ;
+    ns4:name "Davide Maria Calandra" .
+
+<http://ceur-ws.org/Vol-1621/#FabioiMarcoiCaputo> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/FabioiMarcoiCaputo> ;
+    ns4:made <http://ceur-ws.org/Vol-1621/#paper6> ;
+    ns4:name "Fabio Marco Caputo" .
+
+<http://ceur-ws.org/Vol-1621/#FabrizioiNunnari> a ns4:Person ;
+    ns3:affiliation "" ;
+    ns2:sameAs <http://ceur-ws.org/persons/FabrizioiNunnari> ;
+    ns4:name "Fabrizio Nunnari" .
+
+<http://ceur-ws.org/Vol-1621/#JoeliLanir> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/JoeliLanir> ;
+    ns4:made <http://ceur-ws.org/Vol-1621/#paper8> ;
+    ns4:name "Joel Lanir" .
+
+<http://ceur-ws.org/Vol-1621/#MoayadiMokatren> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/MoayadiMokatren> ;
+    ns4:made <http://ceur-ws.org/Vol-1621/#paper5> ;
+    ns4:name "Moayad Mokatren" .
+
+<http://ceur-ws.org/Vol-1621/#NicolaiOrio> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/NicolaiOrio> ;
+    ns4:made <http://ceur-ws.org/Vol-1621/#paper9> ;
+    ns4:name "Nicola Orio" .
+
+<http://ceur-ws.org/Vol-1621/#NikolaosiPartarakis> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/NikolaosiPartarakis> ;
+    ns4:made <http://ceur-ws.org/Vol-1621/#paper1> ;
+    ns4:name "Nikolaos Partarakis" .
+
+<http://ceur-ws.org/Vol-1621/#TsviiKuflik> a ns4:Person ;
+    ns3:affiliation "" ;
+    ns2:sameAs <http://ceur-ws.org/persons/TsviiKuflik> ;
+    ns4:name "Tsvi Kuflik" .
+
+<http://ceur-ws.org/Vol-1621/#event> a ns1:WorkshopEvent ;
+    ns1:hasLocation <http://dbpedia.org/resource/Italy> ;
+    ns1:hasPart <http://ceur-ws.org/Vol-1621/#part-CH> ;
+    ns1:isSubEventOf <http://ceur-ws.org/Vol-1621/#conf> ;
+    ns8:beginsAtDatetime "2016-06-07T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:endsAtDatetime "2016-06-10T00:00:00+00:00"^^xsd:dateTime .
+
+<http://ceur-ws.org/Vol-1621/#CristinaiGena> a ns4:Person ;
+    ns3:affiliation "" ;
+    ns2:sameAs <http://ceur-ws.org/persons/CristinaiGena> ;
+    ns4:made <http://ceur-ws.org/Vol-1621/#preface> ;
+    ns4:name "Cristina Gena" .
+
+<http://ceur-ws.org/Vol-1621/#Preface> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-1621/> ;
+    ns5:title "Preface" .
+
+<http://ceur-ws.org/Vol-1621/#Session3Usersmonitoring> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-1621/> ;
+    ns5:title "Session 3: Users’ monitoring" .
+
+<http://ceur-ws.org/Vol-1621/#paper1> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1621/> ;
+    ns5:title "Adaptation and Content Personalization in the Context of Multi User Museum Exhibits" ;
+    ns6:endPage 10 ;
+    ns6:numPages 6 ;
+    ns6:section <http://ceur-ws.org/Vol-1621/#Session1Interactionmodels> ;
+    ns6:startPage 5 ;
+    ns3:author <http://ceur-ws.org/Vol-1621/#NikolaosiPartarakis> .
+
+<http://ceur-ws.org/Vol-1621/#paper10> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1621/> ;
+    ns5:title "CHEST: Cultural Heritage Experience Scrapbook Tool" ;
+    ns6:endPage 54 ;
+    ns6:numPages 4 ;
+    ns6:section <http://ceur-ws.org/Vol-1621/#Session4Explorationoftheenvironment> ;
+    ns6:startPage 51 ;
+    ns3:author <http://ceur-ws.org/Vol-1621/#AlaniWecker> .
+
+<http://ceur-ws.org/Vol-1621/#paper2> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1621/> ;
+    ns5:title "A Field Evaluation of an Intelligent Interaction Between People and a Territory and its Cultural Heritage" ;
+    ns6:endPage 14 ;
+    ns6:numPages 4 ;
+    ns6:section <http://ceur-ws.org/Vol-1621/#Session1Interactionmodels> ;
+    ns6:startPage 11 ;
+    ns3:author <http://ceur-ws.org/Vol-1621/#AmoniRapp> .
+
+<http://ceur-ws.org/Vol-1621/#paper3> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1621/> ;
+    ns5:title "Multimedia Responses in Natural Language Dialogues" ;
+    ns6:endPage 18 ;
+    ns6:numPages 4 ;
+    ns6:section <http://ceur-ws.org/Vol-1621/#Session1Interactionmodels> ;
+    ns6:startPage 15 ;
+    ns3:author <http://ceur-ws.org/Vol-1621/#AntonioiSorgente> .
+
+<http://ceur-ws.org/Vol-1621/#paper4> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1621/> ;
+    ns5:title "Cultural Heritage Presentations with a Humanoid Robot Using Implicit Feedback" ;
+    ns6:endPage 22 ;
+    ns6:numPages 4 ;
+    ns6:section <http://ceur-ws.org/Vol-1621/#Session1Interactionmodels> ;
+    ns6:startPage 19 ;
+    ns3:author <http://ceur-ws.org/Vol-1621/#AntonioiOriglia> .
+
+<http://ceur-ws.org/Vol-1621/#paper5> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1621/> ;
+    ns5:title "Exploring the Potential Contribution of Mobile Eye-tracking Technology in Enhancing the Museum Visit Experience" ;
+    ns6:endPage 31 ;
+    ns6:numPages 9 ;
+    ns6:section <http://ceur-ws.org/Vol-1621/#Session2Interactiondevices> ;
+    ns6:startPage 23 ;
+    ns3:author <http://ceur-ws.org/Vol-1621/#MoayadiMokatren> .
+
+<http://ceur-ws.org/Vol-1621/#paper6> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1621/> ;
+    ns5:title "Gestural Interaction and Navigation Techniques for Virtual Museum Experiences" ;
+    ns6:endPage 35 ;
+    ns6:numPages 4 ;
+    ns6:section <http://ceur-ws.org/Vol-1621/#Session2Interactiondevices> ;
+    ns6:startPage 32 ;
+    ns3:author <http://ceur-ws.org/Vol-1621/#FabioiMarcoiCaputo> .
+
+<http://ceur-ws.org/Vol-1621/#paper7> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1621/> ;
+    ns5:title "Navigating Wall-sized Displays with the Gaze: a Proposal for Cultural Heritage" ;
+    ns6:endPage 43 ;
+    ns6:numPages 8 ;
+    ns6:section <http://ceur-ws.org/Vol-1621/#Session2Interactiondevices> ;
+    ns6:startPage 36 ;
+    ns3:author <http://ceur-ws.org/Vol-1621/#DavideiMariaiCalandra> .
+
+<http://ceur-ws.org/Vol-1621/#paper8> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1621/> ;
+    ns5:title "Visualizing Museum Visitors’ Behavior" ;
+    ns6:endPage 47 ;
+    ns6:numPages 4 ;
+    ns6:section <http://ceur-ws.org/Vol-1621/#Session3Usersmonitoring> ;
+    ns6:startPage 44 ;
+    ns3:author <http://ceur-ws.org/Vol-1621/#JoeliLanir> .
+
+<http://ceur-ws.org/Vol-1621/#paper9> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1621/> ;
+    ns5:title "Padova Soundscape: a Crowdsourcing Approach to Describe the Sound of a City (position paper)" ;
+    ns6:endPage 50 ;
+    ns6:numPages 3 ;
+    ns6:section <http://ceur-ws.org/Vol-1621/#Session4Explorationoftheenvironment> ;
+    ns6:startPage 48 ;
+    ns3:author <http://ceur-ws.org/Vol-1621/#NicolaiOrio> .
+
+<http://ceur-ws.org/Vol-1621/#preface> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1621/> ;
+    ns5:title "Advanced Visual Interface for Cultural Heritage" ;
+    ns6:endPage 4 ;
+    ns6:numPages 4 ;
+    ns6:section <http://ceur-ws.org/Vol-1621/#Preface> ;
+    ns6:startPage 1 ;
+    ns3:author <http://ceur-ws.org/Vol-1621/#CristinaiGena> .
+
+<http://ceur-ws.org/Vol-1621/#Session4Explorationoftheenvironment> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-1621/> ;
+    ns5:title "Session 4: Exploration of the environment" .
+
+<http://ceur-ws.org/Vol-1621/#Session2Interactiondevices> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-1621/> ;
+    ns5:title "Session 2: Interaction devices" .
+
+<http://ceur-ws.org/Vol-1621/#Session1Interactionmodels> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-1621/> ;
+    ns5:title "Session 1: Interaction models" .
+
+<http://ceur-ws.org/Vol-1621/> a ns1:Proceedings ;
+    ns1:hasPart <http://ceur-ws.org/Vol-1621/#paper1>,
+        <http://ceur-ws.org/Vol-1621/#paper10>,
+        <http://ceur-ws.org/Vol-1621/#paper2>,
+        <http://ceur-ws.org/Vol-1621/#paper3>,
+        <http://ceur-ws.org/Vol-1621/#paper4>,
+        <http://ceur-ws.org/Vol-1621/#paper5>,
+        <http://ceur-ws.org/Vol-1621/#paper6>,
+        <http://ceur-ws.org/Vol-1621/#paper7>,
+        <http://ceur-ws.org/Vol-1621/#paper8>,
+        <http://ceur-ws.org/Vol-1621/#paper9>,
+        <http://ceur-ws.org/Vol-1621/#preface> ;
+    ns1:hasSession <http://ceur-ws.org/Vol-1621/#Preface>,
+        <http://ceur-ws.org/Vol-1621/#Session1Interactionmodels>,
+        <http://ceur-ws.org/Vol-1621/#Session2Interactiondevices>,
+        <http://ceur-ws.org/Vol-1621/#Session3Usersmonitoring>,
+        <http://ceur-ws.org/Vol-1621/#Session4Explorationoftheenvironment> ;
+    ns7:issued "2016-07-05T00:00:00+00:00"^^xsd:dateTime ;
     ns6:presentedAt <http://ceur-ws.org/Vol-1621/#event> ;
-    ns1:editor <http://ceur-ws.org/Vol-1621/#BerardinaiNadjaiDeiCarolis>,
+    ns3:editor <http://ceur-ws.org/Vol-1621/#BerardinaiNadjaiDeiCarolis>,
         <http://ceur-ws.org/Vol-1621/#CristinaiGena>,
         <http://ceur-ws.org/Vol-1621/#FabrizioiNunnari>,
         <http://ceur-ws.org/Vol-1621/#TsviiKuflik> .
-
-<http://ceur-ws.org/Vol-1621/#BerardinaiNadjaiDeiCarolis> a ns2:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/BerardinaiNadjaiDeiCarolis> ;
-    ns2:name "Berardina Nadja De Carolis" .
-
-<http://ceur-ws.org/Vol-1621/#CristinaiGena> a ns2:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/CristinaiGena> ;
-    ns2:name "Cristina Gena" .
-
-<http://ceur-ws.org/Vol-1621/#FabrizioiNunnari> a ns2:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/FabrizioiNunnari> ;
-    ns2:name "Fabrizio Nunnari" .
-
-<http://ceur-ws.org/Vol-1621/#TsviiKuflik> a ns2:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/TsviiKuflik> ;
-    ns2:name "Tsvi Kuflik" .
-
-<http://ceur-ws.org/Vol-1621/#event> a ns4:WorkshopEvent ;
-    ns4:hasLocation <http://dbpedia.org/resource/Italy> ;
-    ns4:hasPart <http://ceur-ws.org/Vol-1621/#part-ws> ;
-    ns4:isSubEventOf <http://ceur-ws.org/Vol-1621/#conf> ;
-    ns7:beginsAtDatetime "2016-06-07T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:endsAtDatetime "2016-06-10T00:00:00+00:00"^^xsd:dateTime .
 

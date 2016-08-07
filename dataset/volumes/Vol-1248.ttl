@@ -1,50 +1,209 @@
-@prefix ns1: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns2: <http://www.w3.org/2002/07/owl#> .
+@prefix ns1: <http://purl.org/ontology/bibo/#> .
+@prefix ns2: <http://swrc.ontoware.org/ontology/#> .
 @prefix ns3: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns4: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns5: <http://purl.org/ontology/bibo/#> .
+@prefix ns4: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns5: <http://www.w3.org/2002/07/owl#> .
 @prefix ns6: <http://xmlns.com/foaf/0.1/> .
-@prefix ns7: <http://purl.org/dc/elements/1.1/> .
-@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns8: <http://purl.org/dc/elements/1.1/> .
+@prefix ns9: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1248/> a ns3:Proceedings ;
-    ns8:issued "2014-09-19T00:00:00+00:00"^^xsd:dateTime ;
-    ns5:presentedAt <http://ceur-ws.org/Vol-1248/#event> ;
-    ns4:editor <http://ceur-ws.org/Vol-1248/#IvaniVarzinczak>,
-        <http://ceur-ws.org/Vol-1248/#KennethiBaclawski>,
-        <http://ceur-ws.org/Vol-1248/#TorsteniHahmann>,
-        <http://ceur-ws.org/Vol-1248/#TudoriGroza> .
+<http://ceur-ws.org/Vol-1248/#AdrianiPaschke> a ns6:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/AdrianiPaschke> ;
+    ns6:made <http://ceur-ws.org/Vol-1248/#paper4> ;
+    ns6:name "Adrian Paschke" .
+
+<http://ceur-ws.org/Vol-1248/#AliciaiDiaz> a ns6:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/AliciaiDiaz> ;
+    ns6:made <http://ceur-ws.org/Vol-1248/#paper6> ;
+    ns6:name "Alicia Diaz" .
+
+<http://ceur-ws.org/Vol-1248/#AnselmoiGuedes> a ns6:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/AnselmoiGuedes> ;
+    ns6:made <http://ceur-ws.org/Vol-1248/#paper7> ;
+    ns6:name "Anselmo Guedes" .
+
+<http://ceur-ws.org/Vol-1248/#EdelweisiRohrer> a ns6:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/EdelweisiRohrer> ;
+    ns6:made <http://ceur-ws.org/Vol-1248/#paper6> ;
+    ns6:name "Edelweis Rohrer" .
+
+<http://ceur-ws.org/Vol-1248/#FernandaiBaiao> a ns6:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/FernandaiBaiao> ;
+    ns6:made <http://ceur-ws.org/Vol-1248/#paper7> ;
+    ns6:name "Fernanda Baiao" .
+
+<http://ceur-ws.org/Vol-1248/#GeorgeiVouros> a ns6:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/GeorgeiVouros> ;
+    ns6:made <http://ceur-ws.org/Vol-1248/#paper1> ;
+    ns6:name "George Vouros" .
+
+<http://ceur-ws.org/Vol-1248/#GeorgiosiSantipantakis> a ns6:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/GeorgiosiSantipantakis> ;
+    ns6:made <http://ceur-ws.org/Vol-1248/#paper1> ;
+    ns6:name "Georgios Santipantakis" .
 
 <http://ceur-ws.org/Vol-1248/#IvaniVarzinczak> a ns6:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/IvaniVarzinczak> ;
+    ns2:affiliation "" ;
+    ns5:sameAs <http://ceur-ws.org/persons/IvaniVarzinczak> ;
     ns6:name "Ivan Varzinczak" .
 
+<http://ceur-ws.org/Vol-1248/#KateiRevoredo> a ns6:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/KateiRevoredo> ;
+    ns6:made <http://ceur-ws.org/Vol-1248/#paper7> ;
+    ns6:name "Kate Revoredo" .
+
 <http://ceur-ws.org/Vol-1248/#KennethiBaclawski> a ns6:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/KennethiBaclawski> ;
+    ns2:affiliation "" ;
+    ns5:sameAs <http://ceur-ws.org/persons/KennethiBaclawski> ;
     ns6:name "Kenneth Baclawski" .
 
-<http://ceur-ws.org/Vol-1248/#TorsteniHahmann> a ns6:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/TorsteniHahmann> ;
-    ns6:name "Torsten Hahmann" .
+<http://ceur-ws.org/Vol-1248/#PaulaiSeveri> a ns6:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/PaulaiSeveri> ;
+    ns6:made <http://ceur-ws.org/Vol-1248/#paper6> ;
+    ns6:name "Paula Severi" .
+
+<http://ceur-ws.org/Vol-1248/#RalphiSchaefermeyer> a ns6:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/RalphiSchaefermeyer> ;
+    ns6:made <http://ceur-ws.org/Vol-1248/#paper4> ;
+    ns6:name "Ralph Schaefermeyer" .
+
+<http://ceur-ws.org/Vol-1248/#ReginaiMotz> a ns6:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/ReginaiMotz> ;
+    ns6:made <http://ceur-ws.org/Vol-1248/#paper6> ;
+    ns6:name "Regina Motz" .
+
+<http://ceur-ws.org/Vol-1248/#RiichiroiMizoguchi> a ns6:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/RiichiroiMizoguchi> ;
+    ns6:made <http://ceur-ws.org/Vol-1248/#invitedtalk> ;
+    ns6:name "Riichiro Mizoguchi" .
+
+<http://ceur-ws.org/Vol-1248/#TaraiAthan> a ns6:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/TaraiAthan> ;
+    ns6:made <http://ceur-ws.org/Vol-1248/#paper4> ;
+    ns6:name "Tara Athan" .
 
 <http://ceur-ws.org/Vol-1248/#TudoriGroza> a ns6:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/TudoriGroza> ;
+    ns2:affiliation "" ;
+    ns5:sameAs <http://ceur-ws.org/persons/TudoriGroza> ;
     ns6:name "Tudor Groza" .
 
 <http://ceur-ws.org/Vol-1248/#event> a ns3:WorkshopEvent ;
     ns3:hasLocation <http://dbpedia.org/resource/Brazil> ;
-    ns3:hasPart <http://ceur-ws.org/Vol-1248/#part-ws> ;
+    ns3:hasPart <http://ceur-ws.org/Vol-1248/#part-WoMO> ;
     ns3:isSubEventOf <http://ceur-ws.org/Vol-1248/#conf> ;
-    ns1:beginsAtDatetime "2014-09-22T00:00:00+00:00"^^xsd:dateTime ;
-    ns1:endsAtDatetime "2014-09-22T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:license "http://choosealicense.com/licenses/no-license/" ;
+    ns7:beginsAtDatetime "2014-09-22T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:endsAtDatetime "2014-09-22T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:license "http://choosealicense.com/licenses/no-license/" ;
     rdfs:seeAlso <http://ceur-ws.org/Vol-1081/#event>,
         <http://ceur-ws.org/Vol-232/#event>,
         <http://ceur-ws.org/Vol-315/#event>,
         <http://ceur-ws.org/Vol-348/#event>,
         <http://ceur-ws.org/Vol-875/#event> .
+
+<http://ceur-ws.org/Vol-1248/#BahariAameri> a ns6:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/BahariAameri> ;
+    ns6:made <http://ceur-ws.org/Vol-1248/#paper2>,
+        <http://ceur-ws.org/Vol-1248/#paper5> ;
+    ns6:name "Bahar Aameri" .
+
+<http://ceur-ws.org/Vol-1248/#InvitedTalk> a ns3:SessionEvent ;
+    ns3:partOf <http://ceur-ws.org/Vol-1248/> ;
+    ns4:title "Invited Talk" .
+
+<http://ceur-ws.org/Vol-1248/#MichaeliGruninger> a ns6:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/MichaeliGruninger> ;
+    ns6:made <http://ceur-ws.org/Vol-1248/#paper2>,
+        <http://ceur-ws.org/Vol-1248/#paper5> ;
+    ns6:name "Michael Gruninger" .
+
+<http://ceur-ws.org/Vol-1248/#TorsteniHahmann> a ns6:Person ;
+    ns2:affiliation "" ;
+    ns5:sameAs <http://ceur-ws.org/persons/TorsteniHahmann> ;
+    ns6:made <http://ceur-ws.org/Vol-1248/#paper3> ;
+    ns6:name "Torsten Hahmann" .
+
+<http://ceur-ws.org/Vol-1248/#invitedtalk> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1248/> ;
+    ns4:title "The upper ontology YAMATA: Theoretical and practical issues" ;
+    ns1:section <http://ceur-ws.org/Vol-1248/#InvitedTalk> ;
+    ns2:author <http://ceur-ws.org/Vol-1248/#RiichiroiMizoguchi> .
+
+<http://ceur-ws.org/Vol-1248/#paper3> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1248/> ;
+    ns4:title "Ontology Repositories: A Treasure Trove for Content Ontology Design Patterns" ;
+    ns1:section <http://ceur-ws.org/Vol-1248/#Acceptedpapers> ;
+    ns2:author <http://ceur-ws.org/Vol-1248/#TorsteniHahmann> .
+
+<http://ceur-ws.org/Vol-1248/#paper1> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1248/> ;
+    ns4:title "Constructing E-SHIQ Distributed Knowledge Bases via Ontology Modularization: The mONTul method" ;
+    ns1:section <http://ceur-ws.org/Vol-1248/#Acceptedpapers> ;
+    ns2:author <http://ceur-ws.org/Vol-1248/#GeorgeiVouros>,
+        <http://ceur-ws.org/Vol-1248/#GeorgiosiSantipantakis> .
+
+<http://ceur-ws.org/Vol-1248/#paper2> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1248/> ;
+    ns4:title "Preservation of Modules" ;
+    ns1:section <http://ceur-ws.org/Vol-1248/#Acceptedpapers> ;
+    ns2:author <http://ceur-ws.org/Vol-1248/#BahariAameri>,
+        <http://ceur-ws.org/Vol-1248/#MichaeliGruninger> .
+
+<http://ceur-ws.org/Vol-1248/#paper5> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1248/> ;
+    ns4:title "Reuse with Domain and Process Ontologies" ;
+    ns1:section <http://ceur-ws.org/Vol-1248/#Acceptedpapers> ;
+    ns2:author <http://ceur-ws.org/Vol-1248/#BahariAameri>,
+        <http://ceur-ws.org/Vol-1248/#MichaeliGruninger> .
+
+<http://ceur-ws.org/Vol-1248/#paper4> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1248/> ;
+    ns4:title "An Algorithm for Resolution of Common Logic (Edition 2) Importation Implemented in OntoMaven" ;
+    ns1:section <http://ceur-ws.org/Vol-1248/#Acceptedpapers> ;
+    ns2:author <http://ceur-ws.org/Vol-1248/#AdrianiPaschke>,
+        <http://ceur-ws.org/Vol-1248/#RalphiSchaefermeyer>,
+        <http://ceur-ws.org/Vol-1248/#TaraiAthan> .
+
+<http://ceur-ws.org/Vol-1248/#paper7> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1248/> ;
+    ns4:title "On the Identification and Representation of Ontology Correspondence Antipatterns" ;
+    ns1:section <http://ceur-ws.org/Vol-1248/#Acceptedpapers> ;
+    ns2:author <http://ceur-ws.org/Vol-1248/#AnselmoiGuedes>,
+        <http://ceur-ws.org/Vol-1248/#FernandaiBaiao>,
+        <http://ceur-ws.org/Vol-1248/#KateiRevoredo> .
+
+<http://ceur-ws.org/Vol-1248/#paper6> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1248/> ;
+    ns4:title "Metamodelling in a Ontology Network" ;
+    ns1:section <http://ceur-ws.org/Vol-1248/#Acceptedpapers> ;
+    ns2:author <http://ceur-ws.org/Vol-1248/#AliciaiDiaz>,
+        <http://ceur-ws.org/Vol-1248/#EdelweisiRohrer>,
+        <http://ceur-ws.org/Vol-1248/#PaulaiSeveri>,
+        <http://ceur-ws.org/Vol-1248/#ReginaiMotz> .
+
+<http://ceur-ws.org/Vol-1248/#Acceptedpapers> a ns3:SessionEvent ;
+    ns3:partOf <http://ceur-ws.org/Vol-1248/> ;
+    ns4:title "Accepted papers" .
+
+<http://ceur-ws.org/Vol-1248/> a ns3:Proceedings ;
+    ns3:hasPart <http://ceur-ws.org/Vol-1248/#invitedtalk>,
+        <http://ceur-ws.org/Vol-1248/#paper1>,
+        <http://ceur-ws.org/Vol-1248/#paper2>,
+        <http://ceur-ws.org/Vol-1248/#paper3>,
+        <http://ceur-ws.org/Vol-1248/#paper4>,
+        <http://ceur-ws.org/Vol-1248/#paper5>,
+        <http://ceur-ws.org/Vol-1248/#paper6>,
+        <http://ceur-ws.org/Vol-1248/#paper7> ;
+    ns3:hasSession <http://ceur-ws.org/Vol-1248/#Acceptedpapers>,
+        <http://ceur-ws.org/Vol-1248/#InvitedTalk> ;
+    ns9:issued "2014-09-19T00:00:00+00:00"^^xsd:dateTime ;
+    ns1:presentedAt <http://ceur-ws.org/Vol-1248/#event> ;
+    ns2:editor <http://ceur-ws.org/Vol-1248/#IvaniVarzinczak>,
+        <http://ceur-ws.org/Vol-1248/#KennethiBaclawski>,
+        <http://ceur-ws.org/Vol-1248/#TorsteniHahmann>,
+        <http://ceur-ws.org/Vol-1248/#TudoriGroza> .
 

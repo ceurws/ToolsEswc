@@ -1,43 +1,185 @@
-@prefix ns1: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns1: <http://swrc.ontoware.org/ontology/#> .
 @prefix ns2: <http://xmlns.com/foaf/0.1/> .
-@prefix ns3: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns3: <http://www.w3.org/2002/07/owl#> .
 @prefix ns4: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns5: <http://www.w3.org/2002/07/owl#> .
-@prefix ns6: <http://purl.org/dc/elements/1.1/> .
-@prefix ns7: <http://purl.org/ontology/bibo/#> .
-@prefix ns8: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns5: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns6: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns7: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns8: <http://purl.org/dc/elements/1.1/> .
+@prefix ns9: <http://purl.org/ontology/bibo/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-890/> a ns8:Proceedings ;
-    ns4:issued "2012-09-10T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:presentedAt <http://ceur-ws.org/Vol-890/#event> ;
-    ns3:editor <http://ceur-ws.org/Vol-890/#DimitrisiPlexousakis>,
-        <http://ceur-ws.org/Vol-890/#TudoriGroza>,
-        <http://ceur-ws.org/Vol-890/#VitiNovacek> .
+<http://ceur-ws.org/Vol-890/#AminaiChniti> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/AminaiChniti> ;
+    ns2:made <http://ceur-ws.org/Vol-890/#paper3> ;
+    ns2:name "Amina Chniti" .
+
+<http://ceur-ws.org/Vol-890/#AndreasiThor> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/AndreasiThor> ;
+    ns2:made <http://ceur-ws.org/Vol-890/#paper1> ;
+    ns2:name "Andreas Thor" .
+
+<http://ceur-ws.org/Vol-890/#AnikaiGross> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/AnikaiGross> ;
+    ns2:made <http://ceur-ws.org/Vol-890/#paper1> ;
+    ns2:name "Anika Gross" .
+
+<http://ceur-ws.org/Vol-890/#ChiaraiGhidini> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/ChiaraiGhidini> ;
+    ns2:made <http://ceur-ws.org/Vol-890/#paper4> ;
+    ns2:name "Chiara Ghidini" .
 
 <http://ceur-ws.org/Vol-890/#DimitrisiPlexousakis> a ns2:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/DimitrisiPlexousakis> ;
+    ns1:affiliation "" ;
+    ns3:sameAs <http://ceur-ws.org/persons/DimitrisiPlexousakis> ;
     ns2:name "Dimitris Plexousakis" .
 
+<http://ceur-ws.org/Vol-890/#ErhardiRahm> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/ErhardiRahm> ;
+    ns2:made <http://ceur-ws.org/Vol-890/#paper1> ;
+    ns2:name "Erhard Rahm" .
+
+<http://ceur-ws.org/Vol-890/#GiorgosiFlouris> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/GiorgosiFlouris> ;
+    ns2:made <http://ceur-ws.org/Vol-890/#paper2> ;
+    ns2:name "Giorgos Flouris" .
+
+<http://ceur-ws.org/Vol-890/#IriniiFundulaki> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/IriniiFundulaki> ;
+    ns2:made <http://ceur-ws.org/Vol-890/#paper2> ;
+    ns2:name "Irini Fundulaki" .
+
+<http://ceur-ws.org/Vol-890/#JeaniCharlet> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/JeaniCharlet> ;
+    ns2:made <http://ceur-ws.org/Vol-890/#paper3> ;
+    ns2:name "Jean Charlet" .
+
+<http://ceur-ws.org/Vol-890/#MariaiPoveda-Villalon> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/MariaiPoveda-Villalon> ;
+    ns2:made <http://ceur-ws.org/Vol-890/#paper2> ;
+    ns2:name "Maria Poveda-Villalon" .
+
+<http://ceur-ws.org/Vol-890/#MauroiDragoni> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/MauroiDragoni> ;
+    ns2:made <http://ceur-ws.org/Vol-890/#paper4> ;
+    ns2:name "Mauro Dragoni" .
+
+<http://ceur-ws.org/Vol-890/#MichaeliHartung> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/MichaeliHartung> ;
+    ns2:made <http://ceur-ws.org/Vol-890/#paper1> ;
+    ns2:name "Michael Hartung" .
+
+<http://ceur-ws.org/Vol-890/#PabloiN.iMendes> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/PabloiN.iMendes> ;
+    ns2:made <http://ceur-ws.org/Vol-890/#paper2> ;
+    ns2:name "Pablo N. Mendes" .
+
+<http://ceur-ws.org/Vol-890/#PatrickiAlbert> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/PatrickiAlbert> ;
+    ns2:made <http://ceur-ws.org/Vol-890/#paper3> ;
+    ns2:name "Patrick Albert" .
+
 <http://ceur-ws.org/Vol-890/#TudoriGroza> a ns2:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/TudoriGroza> ;
+    ns1:affiliation "" ;
+    ns3:sameAs <http://ceur-ws.org/persons/TudoriGroza> ;
     ns2:name "Tudor Groza" .
 
 <http://ceur-ws.org/Vol-890/#VitiNovacek> a ns2:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/VitiNovacek> ;
+    ns1:affiliation "" ;
+    ns3:sameAs <http://ceur-ws.org/persons/VitiNovacek> ;
     ns2:name "Vit Novacek" .
 
-<http://ceur-ws.org/Vol-890/#event> a ns8:WorkshopEvent ;
-    ns8:hasLocation <http://dbpedia.org/resource/United_States> ;
-    ns8:hasPart <http://ceur-ws.org/Vol-890/#part-CEUR-WS> ;
-    ns8:isSubEventOf <http://ceur-ws.org/Vol-890/#conf> ;
-    ns1:beginsAtDatetime "2012-11-12T00:00:00+00:00"^^xsd:dateTime ;
-    ns1:endsAtDatetime "2012-11-12T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:license "http://choosealicense.com/licenses/no-license/" ;
+<http://ceur-ws.org/Vol-890/#YannisiRoussakis> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/YannisiRoussakis> ;
+    ns2:made <http://ceur-ws.org/Vol-890/#paper2> ;
+    ns2:name "Yannis Roussakis" .
+
+<http://ceur-ws.org/Vol-890/#event> a ns5:WorkshopEvent ;
+    ns5:hasLocation <http://dbpedia.org/resource/United_States> ;
+    ns5:hasPart <http://ceur-ws.org/Vol-890/#part-EvoDyn> ;
+    ns5:isSubEventOf <http://ceur-ws.org/Vol-890/#conf> ;
+    ns6:beginsAtDatetime "2012-11-12T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:endsAtDatetime "2012-11-12T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:license "http://choosealicense.com/licenses/no-license/" ;
     rdfs:seeAlso <http://ceur-ws.org/Vol-519/#event>,
         <http://ceur-ws.org/Vol-651/#event>,
         <http://ceur-ws.org/Vol-784/#event> .
+
+<http://ceur-ws.org/Vol-890/#ClausiPahl> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/ClausiPahl> ;
+    ns2:made <http://ceur-ws.org/Vol-890/#paper5>,
+        <http://ceur-ws.org/Vol-890/#paper6> ;
+    ns2:name "Claus Pahl" .
+
+<http://ceur-ws.org/Vol-890/#MuhammadiJaved> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/MuhammadiJaved> ;
+    ns2:made <http://ceur-ws.org/Vol-890/#paper5>,
+        <http://ceur-ws.org/Vol-890/#paper6> ;
+    ns2:name "Muhammad Javed" .
+
+<http://ceur-ws.org/Vol-890/#YalemisewiM.iAbgaz> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/YalemisewiM.iAbgaz> ;
+    ns2:made <http://ceur-ws.org/Vol-890/#paper5>,
+        <http://ceur-ws.org/Vol-890/#paper6> ;
+    ns2:name "Yalemisew M. Abgaz" .
+
+<http://ceur-ws.org/Vol-890/#paper4> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-890/> ;
+    ns7:title "Evaluating the Impact of Ontology Evolution Patterns on the Effectiveness of Resources Retrieval" ;
+    ns1:author <http://ceur-ws.org/Vol-890/#ChiaraiGhidini>,
+        <http://ceur-ws.org/Vol-890/#MauroiDragoni> .
+
+<http://ceur-ws.org/Vol-890/#paper3> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-890/> ;
+    ns7:title "MDROntology : An Ontology for Managing Ontology Changes Impacts on Business Rules" ;
+    ns1:author <http://ceur-ws.org/Vol-890/#AminaiChniti>,
+        <http://ceur-ws.org/Vol-890/#JeaniCharlet>,
+        <http://ceur-ws.org/Vol-890/#PatrickiAlbert> .
+
+<http://ceur-ws.org/Vol-890/#paper5> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-890/> ;
+    ns7:title "Analyzing Impacts of Change Operations in Evolving Ontologies" ;
+    ns1:author <http://ceur-ws.org/Vol-890/#ClausiPahl>,
+        <http://ceur-ws.org/Vol-890/#MuhammadiJaved>,
+        <http://ceur-ws.org/Vol-890/#YalemisewiM.iAbgaz> .
+
+<http://ceur-ws.org/Vol-890/#paper6> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-890/> ;
+    ns7:title "Composite Ontology Change Operators and their Customizable Evolution Strategies" ;
+    ns1:author <http://ceur-ws.org/Vol-890/#ClausiPahl>,
+        <http://ceur-ws.org/Vol-890/#MuhammadiJaved>,
+        <http://ceur-ws.org/Vol-890/#YalemisewiM.iAbgaz> .
+
+<http://ceur-ws.org/Vol-890/#paper1> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-890/> ;
+    ns7:title "How do Computed Ontology Mappings Evolve? - A Case Study for Life Science Ontologies" ;
+    ns1:author <http://ceur-ws.org/Vol-890/#AndreasiThor>,
+        <http://ceur-ws.org/Vol-890/#AnikaiGross>,
+        <http://ceur-ws.org/Vol-890/#ErhardiRahm>,
+        <http://ceur-ws.org/Vol-890/#MichaeliHartung> .
+
+<http://ceur-ws.org/Vol-890/> a ns5:Proceedings ;
+    ns5:hasPart <http://ceur-ws.org/Vol-890/#paper1>,
+        <http://ceur-ws.org/Vol-890/#paper2>,
+        <http://ceur-ws.org/Vol-890/#paper3>,
+        <http://ceur-ws.org/Vol-890/#paper4>,
+        <http://ceur-ws.org/Vol-890/#paper5>,
+        <http://ceur-ws.org/Vol-890/#paper6> ;
+    ns4:issued "2012-09-10T00:00:00+00:00"^^xsd:dateTime ;
+    ns9:presentedAt <http://ceur-ws.org/Vol-890/#event> ;
+    ns1:editor <http://ceur-ws.org/Vol-890/#DimitrisiPlexousakis>,
+        <http://ceur-ws.org/Vol-890/#TudoriGroza>,
+        <http://ceur-ws.org/Vol-890/#VitiNovacek> .
+
+<http://ceur-ws.org/Vol-890/#paper2> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-890/> ;
+    ns7:title "Using Provenance for Quality Assessment and Repair in Linked Open Data" ;
+    ns1:author <http://ceur-ws.org/Vol-890/#GiorgosiFlouris>,
+        <http://ceur-ws.org/Vol-890/#IriniiFundulaki>,
+        <http://ceur-ws.org/Vol-890/#MariaiPoveda-Villalon>,
+        <http://ceur-ws.org/Vol-890/#PabloiN.iMendes>,
+        <http://ceur-ws.org/Vol-890/#YannisiRoussakis> .
 

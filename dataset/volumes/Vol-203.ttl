@@ -1,176 +1,30 @@
 @prefix ns1: <http://xmlns.com/foaf/0.1/> .
-@prefix ns2: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns2: <http://purl.org/NET/c4dm/timeline.owl#> .
 @prefix ns3: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns4: <http://www.w3.org/2002/07/owl#> .
-@prefix ns5: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns6: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns4: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns5: <http://purl.org/ontology/bibo/#> .
+@prefix ns6: <http://www.w3.org/2002/07/owl#> .
 @prefix ns7: <http://purl.org/dc/elements/1.1/> .
-@prefix ns8: <http://purl.org/ontology/bibo/#> .
-@prefix ns9: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-203/#AnisiCharfi> a ns1:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/AnisiCharfi> ;
-    ns1:made <http://ceur-ws.org/Vol-203/#paper6> ;
-    ns1:name "Anis Charfi" .
-
-<http://ceur-ws.org/Vol-203/#AviiWasser> a ns1:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/AviiWasser> ;
-    ns1:made <http://ceur-ws.org/Vol-203/#paper1> ;
-    ns1:name "Avi Wasser" .
-
-<http://ceur-ws.org/Vol-203/#B.iVolz> a ns1:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/B.iVolz> ;
-    ns1:made <http://ceur-ws.org/Vol-203/#paper3> ;
-    ns1:name "B. Volz" .
-
-<http://ceur-ws.org/Vol-203/#FrankiLeymann> a ns1:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/FrankiLeymann> ;
-    ns1:made <http://ceur-ws.org/Vol-203/#paper4> ;
-    ns1:name "Frank Leymann" .
-
-<http://ceur-ws.org/Vol-203/#FrankiPuhlmann> a ns1:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/FrankiPuhlmann> ;
-    ns1:made <http://ceur-ws.org/Vol-203/#paper2> ;
-    ns1:name "Frank Puhlmann" .
-
-<http://ceur-ws.org/Vol-203/#GeroiDecker> a ns1:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/GeroiDecker> ;
-    ns1:made <http://ceur-ws.org/Vol-203/#paper5> ;
-    ns1:name "Gero Decker" .
-
-<http://ceur-ws.org/Vol-203/#JanaiKoehler> a ns1:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/JanaiKoehler> ;
-    ns1:made <http://ceur-ws.org/Vol-203/#paper4> ;
-    ns1:name "Jana Koehler" .
+<http://ceur-ws.org/Vol-203/> a ns3:Proceedings ;
+    ns8:issued "2006-10-02T00:00:00+00:00"^^xsd:dateTime ;
+    ns5:presentedAt <http://ceur-ws.org/Vol-203/#event> ;
+    ns4:editor <http://ceur-ws.org/Vol-203/#JaniMendling> .
 
 <http://ceur-ws.org/Vol-203/#JaniMendling> a ns1:Person ;
-    ns2:affiliation "" ;
-    ns4:sameAs <http://ceur-ws.org/persons/JaniMendling> ;
+    ns6:sameAs <http://ceur-ws.org/persons/JaniMendling> ;
     ns1:name "Jan Mendling" .
-
-<http://ceur-ws.org/Vol-203/#JohannesiMariaiZaha> a ns1:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/JohannesiMariaiZaha> ;
-    ns1:made <http://ceur-ws.org/Vol-203/#paper5> ;
-    ns1:name "Johannes Maria Zaha" .
-
-<http://ceur-ws.org/Vol-203/#JussiiVanhatalo> a ns1:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/JussiiVanhatalo> ;
-    ns1:made <http://ceur-ws.org/Vol-203/#paper4> ;
-    ns1:name "Jussi Vanhatalo" .
-
-<http://ceur-ws.org/Vol-203/#M.iFaerber> a ns1:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/M.iFaerber> ;
-    ns1:made <http://ceur-ws.org/Vol-203/#paper3> ;
-    ns1:name "M. Faerber" .
-
-<http://ceur-ws.org/Vol-203/#M.iG%C3%B6tz> a ns1:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/M.iG%C3%B6tz> ;
-    ns1:made <http://ceur-ws.org/Vol-203/#paper3> ;
-    ns1:name "M. Götz" .
-
-<http://ceur-ws.org/Vol-203/#MargaritiKirov> a ns1:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/MargaritiKirov> ;
-    ns1:made <http://ceur-ws.org/Vol-203/#paper5> ;
-    ns1:name "Margarit Kirov" .
-
-<http://ceur-ws.org/Vol-203/#MarloniDumas> a ns1:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/MarloniDumas> ;
-    ns1:made <http://ceur-ws.org/Vol-203/#paper5> ;
-    ns1:name "Marlon Dumas" .
-
-<http://ceur-ws.org/Vol-203/#MayaiLincoln> a ns1:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/MayaiLincoln> ;
-    ns1:made <http://ceur-ws.org/Vol-203/#paper1> ;
-    ns1:name "Maya Lincoln" .
-
-<http://ceur-ws.org/Vol-203/#MiraiMezini> a ns1:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/MiraiMezini> ;
-    ns1:made <http://ceur-ws.org/Vol-203/#paper6> ;
-    ns1:name "Mira Mezini" .
-
-<http://ceur-ws.org/Vol-203/#ReuveniKarni> a ns1:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/ReuveniKarni> ;
-    ns1:made <http://ceur-ws.org/Vol-203/#paper1> ;
-    ns1:name "Reuven Karni" .
-
-<http://ceur-ws.org/Vol-203/#S.iDornstauder> a ns1:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/S.iDornstauder> ;
-    ns1:made <http://ceur-ws.org/Vol-203/#paper3> ;
-    ns1:name "S. Dornstauder" .
-
-<http://ceur-ws.org/Vol-203/#S.iJablonski> a ns1:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/S.iJablonski> ;
-    ns1:made <http://ceur-ws.org/Vol-203/#paper3> ;
-    ns1:name "S. Jablonski" .
-
-<http://ceur-ws.org/Vol-203/#S.iM%EF%BF%BDller> a ns1:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/S.iM%EF%BF%BDller> ;
-    ns1:made <http://ceur-ws.org/Vol-203/#paper3> ;
-    ns1:name "S. M�ller" .
 
 <http://ceur-ws.org/Vol-203/#event> a ns3:WorkshopEvent ;
     ns3:hasLocation <http://dbpedia.org/resource/Austria> ;
-    ns3:hasPart <http://ceur-ws.org/Vol-203/#part-CEUR-WS> ;
+    ns3:hasPart <http://ceur-ws.org/Vol-203/#part-ws> ;
     ns3:isSubEventOf <http://ceur-ws.org/Vol-203/#conf> ;
-    ns6:beginsAtDatetime "2006-10-02T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:endsAtDatetime "2006-10-02T00:00:00+00:00"^^xsd:dateTime ;
+    ns2:beginsAtDatetime "2006-09-05T00:00:00+00:00"^^xsd:dateTime ;
+    ns2:endsAtDatetime "2006-09-07T00:00:00+00:00"^^xsd:dateTime ;
     ns7:license "http://choosealicense.com/licenses/no-license/" .
-
-<http://ceur-ws.org/Vol-203/#paper2> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-203/> ;
-    ns5:title "A Tool Chain for Lazy Soundness" ;
-    ns2:author <http://ceur-ws.org/Vol-203/#FrankiPuhlmann> .
-
-<http://ceur-ws.org/Vol-203/#paper6> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-203/> ;
-    ns5:title "Middleware Support for BPEL Workflows in the AO4BPEL Engine" ;
-    ns2:author <http://ceur-ws.org/Vol-203/#AnisiCharfi>,
-        <http://ceur-ws.org/Vol-203/#MiraiMezini> .
-
-<http://ceur-ws.org/Vol-203/#paper1> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-203/> ;
-    ns5:title "ProcessGene Query � a Tool for Querying the Content Layer of Business Process Models" ;
-    ns2:author <http://ceur-ws.org/Vol-203/#AviiWasser>,
-        <http://ceur-ws.org/Vol-203/#MayaiLincoln>,
-        <http://ceur-ws.org/Vol-203/#ReuveniKarni> .
-
-<http://ceur-ws.org/Vol-203/#paper4> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-203/> ;
-    ns5:title "Repository for Business Processes and Arbitrary Associated Metadata" ;
-    ns2:author <http://ceur-ws.org/Vol-203/#FrankiLeymann>,
-        <http://ceur-ws.org/Vol-203/#JanaiKoehler>,
-        <http://ceur-ws.org/Vol-203/#JussiiVanhatalo> .
-
-<http://ceur-ws.org/Vol-203/#paper5> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-203/> ;
-    ns5:title "Maestro for Let�s Dance: An Environment for Modeling Service Interactions" ;
-    ns2:author <http://ceur-ws.org/Vol-203/#GeroiDecker>,
-        <http://ceur-ws.org/Vol-203/#JohannesiMariaiZaha>,
-        <http://ceur-ws.org/Vol-203/#MargaritiKirov>,
-        <http://ceur-ws.org/Vol-203/#MarloniDumas> .
-
-<http://ceur-ws.org/Vol-203/> a ns3:Proceedings ;
-    ns3:hasPart <http://ceur-ws.org/Vol-203/#paper1>,
-        <http://ceur-ws.org/Vol-203/#paper2>,
-        <http://ceur-ws.org/Vol-203/#paper3>,
-        <http://ceur-ws.org/Vol-203/#paper4>,
-        <http://ceur-ws.org/Vol-203/#paper5>,
-        <http://ceur-ws.org/Vol-203/#paper6> ;
-    ns9:issued "2006-10-02T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:presentedAt <http://ceur-ws.org/Vol-203/#event> ;
-    ns2:editor <http://ceur-ws.org/Vol-203/#JaniMendling> .
-
-<http://ceur-ws.org/Vol-203/#paper3> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-203/> ;
-    ns5:title "Configurable Execution Environments for Medical Processes" ;
-    ns2:author <http://ceur-ws.org/Vol-203/#B.iVolz>,
-        <http://ceur-ws.org/Vol-203/#M.iFaerber>,
-        <http://ceur-ws.org/Vol-203/#M.iG%C3%B6tz>,
-        <http://ceur-ws.org/Vol-203/#S.iDornstauder>,
-        <http://ceur-ws.org/Vol-203/#S.iJablonski>,
-        <http://ceur-ws.org/Vol-203/#S.iM%EF%BF%BDller> .
 

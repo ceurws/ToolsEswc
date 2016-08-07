@@ -1,42 +1,417 @@
-@prefix ns1: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns2: <http://www.w3.org/2002/07/owl#> .
-@prefix ns3: <http://xmlns.com/foaf/0.1/> .
-@prefix ns4: <http://purl.org/ontology/bibo/#> .
-@prefix ns5: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns6: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns7: <http://purl.org/dc/elements/1.1/> .
+@prefix ns1: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns2: <http://xmlns.com/foaf/0.1/> .
+@prefix ns3: <http://purl.org/ontology/bibo/#> .
+@prefix ns4: <http://purl.org/dc/elements/1.1/> .
+@prefix ns5: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns6: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns7: <http://www.w3.org/2002/07/owl#> .
 @prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns9: <http://purl.org/NET/c4dm/timeline.owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-850/> a ns6:Proceedings ;
-    ns8:issued "2012-05-25T00:00:00+00:00"^^xsd:dateTime ;
-    ns4:presentedAt <http://ceur-ws.org/Vol-850/#event> ;
-    ns1:editor <http://ceur-ws.org/Vol-850/#IngoiSchmitt>,
-        <http://ceur-ws.org/Vol-850/#MarceliZierenberg>,
-        <http://ceur-ws.org/Vol-850/#SaschaiSaretz> .
+<http://ceur-ws.org/Vol-850/#AlexanderiAdam> a ns2:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/AlexanderiAdam> ;
+    ns2:made <http://ceur-ws.org/Vol-850/#paper_adam> ;
+    ns2:name "Alexander Adam" .
 
-<http://ceur-ws.org/Vol-850/#IngoiSchmitt> a ns3:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/IngoiSchmitt> ;
-    ns3:name "Ingo Schmitt" .
+<http://ceur-ws.org/Vol-850/#AlexanderiGrebhahn> a ns2:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/AlexanderiGrebhahn> ;
+    ns2:made <http://ceur-ws.org/Vol-850/#paper_grebhahn> ;
+    ns2:name "Alexander Grebhahn" .
 
-<http://ceur-ws.org/Vol-850/#MarceliZierenberg> a ns3:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/MarceliZierenberg> ;
-    ns3:name "Marcel Zierenberg" .
+<http://ceur-ws.org/Vol-850/#AlexanderiStein> a ns2:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/AlexanderiStein> ;
+    ns2:made <http://ceur-ws.org/Vol-850/#paper_fluegel> ;
+    ns2:name "Alexander Stein" .
 
-<http://ceur-ws.org/Vol-850/#SaschaiSaretz> a ns3:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/SaschaiSaretz> ;
-    ns3:name "Sascha Saretz" .
+<http://ceur-ws.org/Vol-850/#AndreasiG%C3%B6bel> a ns2:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/AndreasiG%C3%B6bel> ;
+    ns2:made <http://ceur-ws.org/Vol-850/#paper_goebel> ;
+    ns2:name "Andreas Göbel" .
 
-<http://ceur-ws.org/Vol-850/#event> a ns6:WorkshopEvent ;
-    ns6:hasLocation <http://dbpedia.org/resource/Germany> ;
-    ns6:hasPart <http://ceur-ws.org/Vol-850/#part-CEUR-WS> ;
-    ns6:isSubEventOf <http://ceur-ws.org/Vol-850/#conf> ;
-    ns5:beginsAtDatetime "2016-05-29T00:00:00+00:00"^^xsd:dateTime ;
-    ns5:endsAtDatetime "2016-05-29T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:license "http://choosealicense.com/licenses/no-license/" ;
+<http://ceur-ws.org/Vol-850/#BernhardiThalheim> a ns2:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/BernhardiThalheim> ;
+    ns2:made <http://ceur-ws.org/Vol-850/#keynote_thalheim> ;
+    ns2:name "Bernhard Thalheim" .
+
+<http://ceur-ws.org/Vol-850/#ChristophiKoch> a ns2:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/ChristophiKoch> ;
+    ns2:made <http://ceur-ws.org/Vol-850/#paper_koch> ;
+    ns2:name "Christoph Koch" .
+
+<http://ceur-ws.org/Vol-850/#DavidiBroneske> a ns2:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/DavidiBroneske> ;
+    ns2:made <http://ceur-ws.org/Vol-850/#paper_grebhahn> ;
+    ns2:name "David Broneske" .
+
+<http://ceur-ws.org/Vol-850/#G%C3%BCntheriSpecht> a ns2:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/G%C3%BCntheriSpecht> ;
+    ns2:made <http://ceur-ws.org/Vol-850/#keynote_specht> ;
+    ns2:name "Günther Specht" .
+
+<http://ceur-ws.org/Vol-850/#GregoriBuchholz> a ns2:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/GregoriBuchholz> ;
+    ns2:made <http://ceur-ws.org/Vol-850/#paper_schick> ;
+    ns2:name "Gregor Buchholz" .
+
+<http://ceur-ws.org/Vol-850/#GunteriSaake> a ns2:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/GunteriSaake> ;
+    ns2:made <http://ceur-ws.org/Vol-850/#paper_grebhahn> ;
+    ns2:name "Gunter Saake" .
+
+<http://ceur-ws.org/Vol-850/#HeikoiBetz> a ns2:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/HeikoiBetz> ;
+    ns2:made <http://ceur-ws.org/Vol-850/#paper_betz> ;
+    ns2:name "Heiko Betz" .
+
+<http://ceur-ws.org/Vol-850/#HendrikiWarneke> a ns2:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/HendrikiWarneke> ;
+    ns2:made <http://ceur-ws.org/Vol-850/#paper_warneke> ;
+    ns2:name "Hendrik Warneke" .
+
+<http://ceur-ws.org/Vol-850/#IngoiSchmitt> a ns2:Person ;
+    ns5:affiliation "" ;
+    ns7:sameAs <http://ceur-ws.org/persons/IngoiSchmitt> ;
+    ns2:name "Ingo Schmitt" .
+
+<http://ceur-ws.org/Vol-850/#Kai-UweiSattler> a ns2:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/Kai-UweiSattler> ;
+    ns2:made <http://ceur-ws.org/Vol-850/#paper_betz> ;
+    ns2:name "Kai-Uwe Sattler" .
+
+<http://ceur-ws.org/Vol-850/#MartiniSch%C3%A4ler> a ns2:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/MartiniSch%C3%A4ler> ;
+    ns2:made <http://ceur-ws.org/Vol-850/#paper_grebhahn> ;
+    ns2:name "Martin Schäler" .
+
+<http://ceur-ws.org/Vol-850/#MaxiFl%C3%BCgel> a ns2:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/MaxiFl%C3%BCgel> ;
+    ns2:made <http://ceur-ws.org/Vol-850/#paper_fluegel> ;
+    ns2:name "Max Flügel" .
+
+<http://ceur-ws.org/Vol-850/#MichaeliH%C3%B6ding> a ns2:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/MichaeliH%C3%B6ding> ;
+    ns2:made <http://ceur-ws.org/Vol-850/#paper_fluegel> ;
+    ns2:name "Michael Höding" .
+
+<http://ceur-ws.org/Vol-850/#PeteriForbrig> a ns2:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/PeteriForbrig> ;
+    ns2:made <http://ceur-ws.org/Vol-850/#paper_schick> ;
+    ns2:name "Peter Forbrig" .
+
+<http://ceur-ws.org/Vol-850/#ReimariSchr%C3%B6ter> a ns2:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/ReimariSchr%C3%B6ter> ;
+    ns2:made <http://ceur-ws.org/Vol-850/#paper_grebhahn> ;
+    ns2:name "Reimar Schröter" .
+
+<http://ceur-ws.org/Vol-850/#SaschaiSaretz> a ns2:Person ;
+    ns5:affiliation "" ;
+    ns7:sameAs <http://ceur-ws.org/persons/SaschaiSaretz> ;
+    ns2:name "Sascha Saretz" .
+
+<http://ceur-ws.org/Vol-850/#SebastianiLehrack> a ns2:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/SebastianiLehrack> ;
+    ns2:made <http://ceur-ws.org/Vol-850/#paper_lehrack> ;
+    ns2:name "Sebastian Lehrack" .
+
+<http://ceur-ws.org/Vol-850/#SebastianiLeuoth> a ns2:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/SebastianiLeuoth> ;
+    ns2:made <http://ceur-ws.org/Vol-850/#paper_adam> ;
+    ns2:name "Sebastian Leuoth" .
+
+<http://ceur-ws.org/Vol-850/#SebastianiSchick> a ns2:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/SebastianiSchick> ;
+    ns2:made <http://ceur-ws.org/Vol-850/#paper_schick> ;
+    ns2:name "Sebastian Schick" .
+
+<http://ceur-ws.org/Vol-850/#ThomasiN%C3%B6singer> a ns2:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/ThomasiN%C3%B6singer> ;
+    ns2:made <http://ceur-ws.org/Vol-850/#paper_noesinger> ;
+    ns2:name "Thomas Nösinger" .
+
+<http://ceur-ws.org/Vol-850/#UdoiW.iLipeck> a ns2:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/UdoiW.iLipeck> ;
+    ns2:made <http://ceur-ws.org/Vol-850/#paper_warneke> ;
+    ns2:name "Udo W. Lipeck" .
+
+<http://ceur-ws.org/Vol-850/#VeitiK%C3%B6ppen> a ns2:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/VeitiK%C3%B6ppen> ;
+    ns2:made <http://ceur-ws.org/Vol-850/#paper_grebhahn> ;
+    ns2:name "Veit Köppen" .
+
+<http://ceur-ws.org/Vol-850/#WolfgangiBenn> a ns2:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/WolfgangiBenn> ;
+    ns2:made <http://ceur-ws.org/Vol-850/#paper_adam> ;
+    ns2:name "Wolfgang Benn" .
+
+<http://ceur-ws.org/Vol-850/#event> a ns1:WorkshopEvent ;
+    ns1:hasLocation <http://dbpedia.org/resource/Germany> ;
+    ns1:hasPart <http://ceur-ws.org/Vol-850/#part-GvD> ;
+    ns1:isSubEventOf <http://ceur-ws.org/Vol-850/#conf> ;
+    ns9:beginsAtDatetime "2016-05-29T00:00:00+00:00"^^xsd:dateTime ;
+    ns9:endsAtDatetime "2016-05-29T00:00:00+00:00"^^xsd:dateTime ;
+    ns4:license "http://choosealicense.com/licenses/no-license/" ;
     rdfs:seeAlso <http://ceur-ws.org/Vol-581/#event>,
         <http://ceur-ws.org/Vol-733/#event> .
+
+<http://ceur-ws.org/Vol-850/#AndreasiHeuer> a ns2:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/AndreasiHeuer> ;
+    ns2:made <http://ceur-ws.org/Vol-850/#paper_noesinger>,
+        <http://ceur-ws.org/Vol-850/#paper_schick> ;
+    ns2:name "Andreas Heuer" .
+
+<http://ceur-ws.org/Vol-850/#EikeiSchallehn> a ns2:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/EikeiSchallehn> ;
+    ns2:made <http://ceur-ws.org/Vol-850/#paper_bress>,
+        <http://ceur-ws.org/Vol-850/#paper_mohammad> ;
+    ns2:name "Eike Schallehn" .
+
+<http://ceur-ws.org/Vol-850/#HageniH%C3%B6pfner> a ns2:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/HageniH%C3%B6pfner> ;
+    ns2:made <http://ceur-ws.org/Vol-850/#paper_hoepfner>,
+        <http://ceur-ws.org/Vol-850/#paper_schirmer> ;
+    ns2:name "Hagen Höpfner" .
+
+<http://ceur-ws.org/Vol-850/#MarceliZierenberg> a ns2:Person ;
+    ns5:affiliation "" ;
+    ns7:sameAs <http://ceur-ws.org/persons/MarceliZierenberg> ;
+    ns2:made <http://ceur-ws.org/Vol-850/#paper_zierenberg> ;
+    ns2:name "Marcel Zierenberg" .
+
+<http://ceur-ws.org/Vol-850/#MaximilianiSchirmer> a ns2:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/MaximilianiSchirmer> ;
+    ns2:made <http://ceur-ws.org/Vol-850/#paper_hoepfner>,
+        <http://ceur-ws.org/Vol-850/#paper_schirmer> ;
+    ns2:name "Maximilian Schirmer" .
+
+<http://ceur-ws.org/Vol-850/#MeikeiKlettke> a ns2:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/MeikeiKlettke> ;
+    ns2:made <http://ceur-ws.org/Vol-850/#paper_noesinger>,
+        <http://ceur-ws.org/Vol-850/#paper_schick> ;
+    ns2:name "Meike Klettke" .
+
+<http://ceur-ws.org/Vol-850/#SebastianiBre%C3%9F> a ns2:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/SebastianiBre%C3%9F> ;
+    ns2:made <http://ceur-ws.org/Vol-850/#paper_bress>,
+        <http://ceur-ws.org/Vol-850/#paper_mohammad> ;
+    ns2:name "Sebastian Breß" .
+
+<http://ceur-ws.org/Vol-850/#SibaiMohammad> a ns2:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/SibaiMohammad> ;
+    ns2:made <http://ceur-ws.org/Vol-850/#paper_bress>,
+        <http://ceur-ws.org/Vol-850/#paper_mohammad> ;
+    ns2:name "Siba Mohammad" .
+
+<http://ceur-ws.org/Vol-850/#keynote_specht> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-850/> ;
+    ns6:title "Out of Africa?" ;
+    ns3:endPage 1 ;
+    ns3:numPages 1 ;
+    ns3:section <http://ceur-ws.org/Vol-850/#Keynotes> ;
+    ns3:startPage 1 ;
+    ns5:author <http://ceur-ws.org/Vol-850/#G%C3%BCntheriSpecht> .
+
+<http://ceur-ws.org/Vol-850/#keynote_thalheim> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-850/> ;
+    ns6:title "Privacy-Enhanced Information Systems" ;
+    ns3:endPage 3 ;
+    ns3:numPages 1 ;
+    ns3:section <http://ceur-ws.org/Vol-850/#Keynotes> ;
+    ns3:startPage 3 ;
+    ns5:author <http://ceur-ws.org/Vol-850/#BernhardiThalheim> .
+
+<http://ceur-ws.org/Vol-850/#paper_goebel> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-850/> ;
+    ns6:title "SLO-basiertes Management in relationalen Datenbanksystemen mit nativer Multi-Tenancy-Unterstützung" ;
+    ns3:endPage 58 ;
+    ns3:numPages 6 ;
+    ns3:section <http://ceur-ws.org/Vol-850/#WorkshopEntries> ;
+    ns3:startPage 53 ;
+    ns5:author <http://ceur-ws.org/Vol-850/#AndreasiG%C3%B6bel> .
+
+<http://ceur-ws.org/Vol-850/#paper_koch> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-850/> ;
+    ns6:title "Migration nicht-nativer XML-Strukturen in den nativen XML-Datentyp am Beispiel von DB2 for z/OS V9.1" ;
+    ns3:endPage 28 ;
+    ns3:numPages 6 ;
+    ns3:section <http://ceur-ws.org/Vol-850/#WorkshopEntries> ;
+    ns3:startPage 23 ;
+    ns5:author <http://ceur-ws.org/Vol-850/#ChristophiKoch> .
+
+<http://ceur-ws.org/Vol-850/#paper_lehrack> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-850/> ;
+    ns6:title "Ereignismuster für die Verwaltung von komplexen Tupelereignissen in Probabilistischen Datenbanken" ;
+    ns3:endPage 70 ;
+    ns3:numPages 6 ;
+    ns3:section <http://ceur-ws.org/Vol-850/#WorkshopEntries> ;
+    ns3:startPage 65 ;
+    ns5:author <http://ceur-ws.org/Vol-850/#SebastianiLehrack> .
+
+<http://ceur-ws.org/Vol-850/#paper_zierenberg> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-850/> ;
+    ns6:title "Flexible Indexierung für Ähnlichkeitssuche mit logikbasierten Multi-Feature-Anfragen" ;
+    ns3:endPage 76 ;
+    ns3:numPages 6 ;
+    ns3:section <http://ceur-ws.org/Vol-850/#WorkshopEntries> ;
+    ns3:startPage 71 ;
+    ns5:author <http://ceur-ws.org/Vol-850/#MarceliZierenberg> .
+
+<http://ceur-ws.org/Vol-850/#Keynotes> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-850/> ;
+    ns6:title "Keynotes" .
+
+<http://ceur-ws.org/Vol-850/#paper_betz> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-850/> ;
+    ns6:title "Cloud-Services und effiziente Anfrageverarbeitung für Linked Open Data" ;
+    ns3:endPage 52 ;
+    ns3:numPages 6 ;
+    ns3:section <http://ceur-ws.org/Vol-850/#WorkshopEntries> ;
+    ns3:startPage 47 ;
+    ns5:author <http://ceur-ws.org/Vol-850/#HeikoiBetz>,
+        <http://ceur-ws.org/Vol-850/#Kai-UweiSattler> .
+
+<http://ceur-ws.org/Vol-850/#paper_hoepfner> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-850/> ;
+    ns6:title "Towards Modeling Locations as Poly-Hierarchies" ;
+    ns3:endPage 9 ;
+    ns3:numPages 5 ;
+    ns3:section <http://ceur-ws.org/Vol-850/#WorkshopEntries> ;
+    ns3:startPage 5 ;
+    ns5:author <http://ceur-ws.org/Vol-850/#HageniH%C3%B6pfner>,
+        <http://ceur-ws.org/Vol-850/#MaximilianiSchirmer> .
+
+<http://ceur-ws.org/Vol-850/#paper_schirmer> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-850/> ;
+    ns6:title "Towards Using Location Poly-Hierarchies for Energy-Efficient Continuous Location Determination" ;
+    ns3:endPage 16 ;
+    ns3:numPages 6 ;
+    ns3:section <http://ceur-ws.org/Vol-850/#WorkshopEntries> ;
+    ns3:startPage 11 ;
+    ns5:author <http://ceur-ws.org/Vol-850/#HageniH%C3%B6pfner>,
+        <http://ceur-ws.org/Vol-850/#MaximilianiSchirmer> .
+
+<http://ceur-ws.org/Vol-850/#paper_warneke> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-850/> ;
+    ns6:title "Ein Partitionierungsdienst für Geographische Daten in Räumlichen Datenbanken" ;
+    ns3:endPage 40 ;
+    ns3:numPages 6 ;
+    ns3:section <http://ceur-ws.org/Vol-850/#WorkshopEntries> ;
+    ns3:startPage 35 ;
+    ns5:author <http://ceur-ws.org/Vol-850/#HendrikiWarneke>,
+        <http://ceur-ws.org/Vol-850/#UdoiW.iLipeck> .
+
+<http://ceur-ws.org/Vol-850/#paper_adam> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-850/> ;
+    ns6:title "Minimal-Invasive Indexintegration - Transparente Datenbankbeschleunigung" ;
+    ns3:endPage 87 ;
+    ns3:numPages 5 ;
+    ns3:section <http://ceur-ws.org/Vol-850/#WorkshopEntries> ;
+    ns3:startPage 83 ;
+    ns5:author <http://ceur-ws.org/Vol-850/#AlexanderiAdam>,
+        <http://ceur-ws.org/Vol-850/#SebastianiLeuoth>,
+        <http://ceur-ws.org/Vol-850/#WolfgangiBenn> .
+
+<http://ceur-ws.org/Vol-850/#paper_bress> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-850/> ;
+    ns6:title "Self-Tuning Distribution of DB-Operations on Hybrid CPU/GPU Platforms" ;
+    ns3:endPage 94 ;
+    ns3:numPages 6 ;
+    ns3:section <http://ceur-ws.org/Vol-850/#WorkshopEntries> ;
+    ns3:startPage 89 ;
+    ns5:author <http://ceur-ws.org/Vol-850/#EikeiSchallehn>,
+        <http://ceur-ws.org/Vol-850/#SebastianiBre%C3%9F>,
+        <http://ceur-ws.org/Vol-850/#SibaiMohammad> .
+
+<http://ceur-ws.org/Vol-850/#paper_fluegel> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-850/> ;
+    ns6:title "Datenbank-Performance-Experimente in der Lehre" ;
+    ns3:endPage 22 ;
+    ns3:numPages 6 ;
+    ns3:section <http://ceur-ws.org/Vol-850/#WorkshopEntries> ;
+    ns3:startPage 17 ;
+    ns5:author <http://ceur-ws.org/Vol-850/#AlexanderiStein>,
+        <http://ceur-ws.org/Vol-850/#MaxiFl%C3%BCgel>,
+        <http://ceur-ws.org/Vol-850/#MichaeliH%C3%B6ding> .
+
+<http://ceur-ws.org/Vol-850/#paper_mohammad> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-850/> ;
+    ns6:title "Cloud Data Management: A Short Overview and Comparison of Current Approaches" ;
+    ns3:endPage 46 ;
+    ns3:numPages 6 ;
+    ns3:section <http://ceur-ws.org/Vol-850/#WorkshopEntries> ;
+    ns3:startPage 41 ;
+    ns5:author <http://ceur-ws.org/Vol-850/#EikeiSchallehn>,
+        <http://ceur-ws.org/Vol-850/#SebastianiBre%C3%9F>,
+        <http://ceur-ws.org/Vol-850/#SibaiMohammad> .
+
+<http://ceur-ws.org/Vol-850/#paper_noesinger> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-850/> ;
+    ns6:title "Evolution von XML-Schemata auf konzeptioneller Ebene - Übersicht: Der CodeX-Ansatz zur Lösung des Gültigkeitsproblems" ;
+    ns3:endPage 34 ;
+    ns3:numPages 6 ;
+    ns3:section <http://ceur-ws.org/Vol-850/#WorkshopEntries> ;
+    ns3:startPage 29 ;
+    ns5:author <http://ceur-ws.org/Vol-850/#AndreasiHeuer>,
+        <http://ceur-ws.org/Vol-850/#MeikeiKlettke>,
+        <http://ceur-ws.org/Vol-850/#ThomasiN%C3%B6singer> .
+
+<http://ceur-ws.org/Vol-850/#paper_schick> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-850/> ;
+    ns6:title "iETL: Flexibilisierung der Datenintegration in Data Warehouses" ;
+    ns3:endPage 64 ;
+    ns3:numPages 6 ;
+    ns3:section <http://ceur-ws.org/Vol-850/#WorkshopEntries> ;
+    ns3:startPage 59 ;
+    ns5:author <http://ceur-ws.org/Vol-850/#AndreasiHeuer>,
+        <http://ceur-ws.org/Vol-850/#GregoriBuchholz>,
+        <http://ceur-ws.org/Vol-850/#MeikeiKlettke>,
+        <http://ceur-ws.org/Vol-850/#PeteriForbrig>,
+        <http://ceur-ws.org/Vol-850/#SebastianiSchick> .
+
+<http://ceur-ws.org/Vol-850/#paper_grebhahn> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-850/> ;
+    ns6:title "Challenges in Finding an Appropriate Multi-Dimensional Index Structure with Respect to Specific Use Cases" ;
+    ns3:endPage 82 ;
+    ns3:numPages 6 ;
+    ns3:section <http://ceur-ws.org/Vol-850/#WorkshopEntries> ;
+    ns3:startPage 77 ;
+    ns5:author <http://ceur-ws.org/Vol-850/#AlexanderiGrebhahn>,
+        <http://ceur-ws.org/Vol-850/#DavidiBroneske>,
+        <http://ceur-ws.org/Vol-850/#GunteriSaake>,
+        <http://ceur-ws.org/Vol-850/#MartiniSch%C3%A4ler>,
+        <http://ceur-ws.org/Vol-850/#ReimariSchr%C3%B6ter>,
+        <http://ceur-ws.org/Vol-850/#VeitiK%C3%B6ppen> .
+
+<http://ceur-ws.org/Vol-850/#WorkshopEntries> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-850/> ;
+    ns6:title "Workshop Entries" .
+
+<http://ceur-ws.org/Vol-850/> a ns1:Proceedings ;
+    ns1:hasPart <http://ceur-ws.org/Vol-850/#keynote_specht>,
+        <http://ceur-ws.org/Vol-850/#keynote_thalheim>,
+        <http://ceur-ws.org/Vol-850/#paper_adam>,
+        <http://ceur-ws.org/Vol-850/#paper_betz>,
+        <http://ceur-ws.org/Vol-850/#paper_bress>,
+        <http://ceur-ws.org/Vol-850/#paper_fluegel>,
+        <http://ceur-ws.org/Vol-850/#paper_goebel>,
+        <http://ceur-ws.org/Vol-850/#paper_grebhahn>,
+        <http://ceur-ws.org/Vol-850/#paper_hoepfner>,
+        <http://ceur-ws.org/Vol-850/#paper_koch>,
+        <http://ceur-ws.org/Vol-850/#paper_lehrack>,
+        <http://ceur-ws.org/Vol-850/#paper_mohammad>,
+        <http://ceur-ws.org/Vol-850/#paper_noesinger>,
+        <http://ceur-ws.org/Vol-850/#paper_schick>,
+        <http://ceur-ws.org/Vol-850/#paper_schirmer>,
+        <http://ceur-ws.org/Vol-850/#paper_warneke>,
+        <http://ceur-ws.org/Vol-850/#paper_zierenberg> ;
+    ns1:hasSession <http://ceur-ws.org/Vol-850/#Keynotes>,
+        <http://ceur-ws.org/Vol-850/#WorkshopEntries> ;
+    ns8:issued "2012-05-25T00:00:00+00:00"^^xsd:dateTime ;
+    ns3:presentedAt <http://ceur-ws.org/Vol-850/#event> ;
+    ns5:editor <http://ceur-ws.org/Vol-850/#IngoiSchmitt>,
+        <http://ceur-ws.org/Vol-850/#MarceliZierenberg>,
+        <http://ceur-ws.org/Vol-850/#SaschaiSaretz> .
 

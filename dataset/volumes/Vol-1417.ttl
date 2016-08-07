@@ -1,20 +1,596 @@
-@prefix ns1: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns2: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns3: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns4: <http://xmlns.com/foaf/0.1/> .
-@prefix ns5: <http://www.w3.org/2002/07/owl#> .
-@prefix ns6: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns7: <http://purl.org/dc/elements/1.1/> .
-@prefix ns8: <http://purl.org/ontology/bibo/#> .
+@prefix ns1: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns2: <http://www.w3.org/2002/07/owl#> .
+@prefix ns3: <http://xmlns.com/foaf/0.1/> .
+@prefix ns4: <http://purl.org/ontology/bibo/#> .
+@prefix ns5: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns6: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns8: <http://purl.org/dc/elements/1.1/> .
+@prefix ns9: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1417/> a ns2:Proceedings ;
-    ns3:issued "2015-08-07T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:presentedAt <http://ceur-ws.org/Vol-1417/#event> ;
-    ns1:editor <http://ceur-ws.org/Vol-1417/#AGHiUniversityiofiScience>,
+<http://ceur-ws.org/Vol-1417/#AGHiUniversityiofiScience> a ns3:Person ;
+    ns4:place <http://dbpedia.org/resource/Commemorative_coins_of_Poland> ;
+    ns5:affiliation "Krakow" ;
+    ns2:sameAs <http://ceur-ws.org/persons/AGHiUniversityiofiScience> ;
+    ns3:name "AGH University of Science" .
+
+<http://ceur-ws.org/Vol-1417/#AdamiWyner> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/AdamiWyner> ;
+    ns3:made <http://ceur-ws.org/Vol-1417/#paperX1> ;
+    ns3:name "Adam Wyner" .
+
+<http://ceur-ws.org/Vol-1417/#AdelaiSchneider> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/AdelaiSchneider> ;
+    ns3:made <http://ceur-ws.org/Vol-1417/#paper20> ;
+    ns3:name "Adela Schneider" .
+
+<http://ceur-ws.org/Vol-1417/#AlainiGutierrez> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/AlainiGutierrez> ;
+    ns3:made <http://ceur-ws.org/Vol-1417/#paper9> ;
+    ns3:name "Alain Gutierrez" .
+
+<http://ceur-ws.org/Vol-1417/#AlexandruiTodor> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/AlexandruiTodor> ;
+    ns3:made <http://ceur-ws.org/Vol-1417/#paper17> ;
+    ns3:name "Alexandru Todor" .
+
+<http://ceur-ws.org/Vol-1417/#AristotleiUniversityiofiThessaloniki> a ns3:Person ;
+    ns4:place <http://dbpedia.org/resource/Greece> ;
+    ns5:affiliation "Greece(2)" ;
+    ns2:sameAs <http://ceur-ws.org/persons/AristotleiUniversityiofiThessaloniki> ;
+    ns3:name "Aristotle University of Thessaloniki" .
+
+<http://ceur-ws.org/Vol-1417/#ArminiBauer> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/ArminiBauer> ;
+    ns3:made <http://ceur-ws.org/Vol-1417/#paper20> ;
+    ns3:name "Armin Bauer" .
+
+<http://ceur-ws.org/Vol-1417/#BenjaminiGrosof> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/BenjaminiGrosof> ;
+    ns3:made <http://ceur-ws.org/Vol-1417/#paper8> ;
+    ns3:name "Benjamin Grosof" .
+
+<http://ceur-ws.org/Vol-1417/#Cl%C3%A9mentiSipieter> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/Cl%C3%A9mentiSipieter> ;
+    ns3:made <http://ceur-ws.org/Vol-1417/#paper9> ;
+    ns3:name "Clément Sipieter" .
+
+<http://ceur-ws.org/Vol-1417/#CzeslawiJedrzejek> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/CzeslawiJedrzejek> ;
+    ns3:made <http://ceur-ws.org/Vol-1417/#paper11> ;
+    ns3:name "Czeslaw Jedrzejek" .
+
+<http://ceur-ws.org/Vol-1417/#DavidiVallenet> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/DavidiVallenet> ;
+    ns3:made <http://ceur-ws.org/Vol-1417/#paper4> ;
+    ns3:name "David Vallenet" .
+
+<http://ceur-ws.org/Vol-1417/#DieteriRoller> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/DieteriRoller> ;
+    ns3:made <http://ceur-ws.org/Vol-1417/#paper3> ;
+    ns3:name "Dieter Roller" .
+
+<http://ceur-ws.org/Vol-1417/#DumitruiRoman> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/DumitruiRoman> ;
+    ns3:made <http://ceur-ws.org/Vol-1417/#paper19> ;
+    ns3:name "Dumitru Roman" .
+
+<http://ceur-ws.org/Vol-1417/#FreieiUniversit%C3%A4tiBerlin> a ns3:Person ;
+    ns4:place <http://dbpedia.org/resource/Germany> ;
+    ns5:affiliation "Germany(9)" ;
+    ns2:sameAs <http://ceur-ws.org/persons/FreieiUniversit%C3%A4tiBerlin> ;
+    ns3:name "Freie Universität Berlin" .
+
+<http://ceur-ws.org/Vol-1417/#GeniZou> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/GeniZou> ;
+    ns3:made <http://ceur-ws.org/Vol-1417/#paper14> ;
+    ns3:name "Gen Zou" .
+
+<http://ceur-ws.org/Vol-1417/#GiovanniiDeiGasperis> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/GiovanniiDeiGasperis> ;
+    ns3:made <http://ceur-ws.org/Vol-1417/#paper12> ;
+    ns3:name "Giovanni De Gasperis" .
+
+<http://ceur-ws.org/Vol-1417/#GuidoiGovernatori> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/GuidoiGovernatori> ;
+    ns3:made <http://ceur-ws.org/Vol-1417/#paperX1> ;
+    ns3:name "Guido Governatori" .
+
+<http://ceur-ws.org/Vol-1417/#HaroldiBoley> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/HaroldiBoley> ;
+    ns3:made <http://ceur-ws.org/Vol-1417/#paper6> ;
+    ns3:name "Harold Boley" .
+
+<http://ceur-ws.org/Vol-1417/#IsaaciGrosof> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/IsaaciGrosof> ;
+    ns3:made <http://ceur-ws.org/Vol-1417/#paper8> ;
+    ns3:name "Isaac Grosof" .
+
+<http://ceur-ws.org/Vol-1417/#JakubiDudkiewicz> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/JakubiDudkiewicz> ;
+    ns3:made <http://ceur-ws.org/Vol-1417/#paper11> ;
+    ns3:name "Jakub Dudkiewicz" .
+
+<http://ceur-ws.org/Vol-1417/#JakubiNowakowski> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/JakubiNowakowski> ;
+    ns3:made <http://ceur-ws.org/Vol-1417/#paper11> ;
+    ns3:name "Jakub Nowakowski" .
+
+<http://ceur-ws.org/Vol-1417/#JanineiBloomfield> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/JanineiBloomfield> ;
+    ns3:made <http://ceur-ws.org/Vol-1417/#paper8> ;
+    ns3:name "Janine Bloomfield" .
+
+<http://ceur-ws.org/Vol-1417/#Jean-Fran%C3%A7oisiBaget> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/Jean-Fran%C3%A7oisiBaget> ;
+    ns3:made <http://ceur-ws.org/Vol-1417/#paper9> ;
+    ns3:name "Jean-François Baget" .
+
+<http://ceur-ws.org/Vol-1417/#Jes%C3%BAsiEstrada> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/Jes%C3%BAsiEstrada> ;
+    ns3:made <http://ceur-ws.org/Vol-1417/#paper19> ;
+    ns3:name "Jesús Estrada" .
+
+<http://ceur-ws.org/Vol-1417/#JoaoiMoreira> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/JoaoiMoreira> ;
+    ns3:made <http://ceur-ws.org/Vol-1417/#paper15> ;
+    ns3:name "Joao Moreira" .
+
+<http://ceur-ws.org/Vol-1417/#JonathaniMercier> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/JonathaniMercier> ;
+    ns3:made <http://ceur-ws.org/Vol-1417/#paper4> ;
+    ns3:name "Jonathan Mercier" .
+
+<http://ceur-ws.org/Vol-1417/#JulianiR.iEichhoff> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/JulianiR.iEichhoff> ;
+    ns3:made <http://ceur-ws.org/Vol-1417/#paper3> ;
+    ns3:name "Julian R. Eichhoff" .
+
+<http://ceur-ws.org/Vol-1417/#Lu%C3%ADsiFerreiraiPires> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/Lu%C3%ADsiFerreiraiPires> ;
+    ns3:made <http://ceur-ws.org/Vol-1417/#paper15> ;
+    ns3:name "Luís Ferreira Pires" .
+
+<http://ceur-ws.org/Vol-1417/#LudwigiOstermayer> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/LudwigiOstermayer> ;
+    ns3:made <http://ceur-ws.org/Vol-1417/#paper2> ;
+    ns3:name "Ludwig Ostermayer" .
+
+<http://ceur-ws.org/Vol-1417/#MarianoiNavarro> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/MarianoiNavarro> ;
+    ns3:made <http://ceur-ws.org/Vol-1417/#paper19> ;
+    ns3:name "Mariano Navarro" .
+
+<http://ceur-ws.org/Vol-1417/#Marie-LaureiMugnier> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/Marie-LaureiMugnier> ;
+    ns3:made <http://ceur-ws.org/Vol-1417/#paper9> ;
+    ns3:name "Marie-Laure Mugnier" .
+
+<http://ceur-ws.org/Vol-1417/#MarkoiHarasic> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/MarkoiHarasic> ;
+    ns3:made <http://ceur-ws.org/Vol-1417/#paper17> ;
+    ns3:name "Marko Harasic" .
+
+<http://ceur-ws.org/Vol-1417/#MartaiVomlelova> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/MartaiVomlelova> ;
+    ns3:made <http://ceur-ws.org/Vol-1417/#paper18> ;
+    ns3:name "Marta Vomlelova" .
+
+<http://ceur-ws.org/Vol-1417/#MarteniVaniSinderen> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/MarteniVaniSinderen> ;
+    ns3:made <http://ceur-ws.org/Vol-1417/#paper15> ;
+    ns3:name "Marten Van Sinderen" .
+
+<http://ceur-ws.org/Vol-1417/#MichaeliKifer> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/MichaeliKifer> ;
+    ns3:made <http://ceur-ws.org/Vol-1417/#paper8> ;
+    ns3:name "Michael Kifer" .
+
+<http://ceur-ws.org/Vol-1417/#MichaliKopecky> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/MichaliKopecky> ;
+    ns3:made <http://ceur-ws.org/Vol-1417/#paper18> ;
+    ns3:name "Michal Kopecky" .
+
+<http://ceur-ws.org/Vol-1417/#MicheliLecl%C3%A8re> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/MicheliLecl%C3%A8re> ;
+    ns3:made <http://ceur-ws.org/Vol-1417/#paper9> ;
+    ns3:name "Michel Leclère" .
+
+<http://ceur-ws.org/Vol-1417/#MigueliCalejo> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/MigueliCalejo> ;
+    ns3:made <http://ceur-ws.org/Vol-1417/#paper8> ;
+    ns3:name "Miguel Calejo" .
+
+<http://ceur-ws.org/Vol-1417/#MonicaiPalmirani> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/MonicaiPalmirani> ;
+    ns3:made <http://ceur-ws.org/Vol-1417/#paperX1> ;
+    ns3:name "Monica Palmirani" .
+
+<http://ceur-ws.org/Vol-1417/#MostafaiMilani> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/MostafaiMilani> ;
+    ns3:made <http://ceur-ws.org/Vol-1417/#paper1> ;
+    ns3:name "Mostafa Milani" .
+
+<http://ceur-ws.org/Vol-1417/#NhaniLeiThanh> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/NhaniLeiThanh> ;
+    ns3:made <http://ceur-ws.org/Vol-1417/#paper5> ;
+    ns3:name "Nhan Le Thanh" .
+
+<http://ceur-ws.org/Vol-1417/#NikiiHoedoro> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/NikiiHoedoro> ;
+    ns3:made <http://ceur-ws.org/Vol-1417/#paper20> ;
+    ns3:name "Niki Hoedoro" .
+
+<http://ceur-ws.org/Vol-1417/#Patr%C3%ADciaiDockhorniCosta> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/Patr%C3%ADciaiDockhorniCosta> ;
+    ns3:made <http://ceur-ws.org/Vol-1417/#paper15> ;
+    ns3:name "Patrícia Dockhorn Costa" .
+
+<http://ceur-ws.org/Vol-1417/#PauliFodor> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/PauliFodor> ;
+    ns3:made <http://ceur-ws.org/Vol-1417/#paper8> ;
+    ns3:name "Paul Fodor" .
+
+<http://ceur-ws.org/Vol-1417/#PeteriVojtas> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/PeteriVojtas> ;
+    ns3:made <http://ceur-ws.org/Vol-1417/#paper18> ;
+    ns3:name "Peter Vojtas" .
+
+<http://ceur-ws.org/Vol-1417/#PierreiAhrendt> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/PierreiAhrendt> ;
+    ns3:made <http://ceur-ws.org/Vol-1417/#paper17> ;
+    ns3:name "Pierre Ahrendt" .
+
+<http://ceur-ws.org/Vol-1417/#Ram%C3%B3niBaiget> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/Ram%C3%B3niBaiget> ;
+    ns3:made <http://ceur-ws.org/Vol-1417/#paper19> ;
+    ns3:name "Ramón Baiget" .
+
+<http://ceur-ws.org/Vol-1417/#Redhat> a ns3:Person ;
+    ns4:place <http://dbpedia.org/resource/Serbia> ;
+    ns5:affiliation "UK(10) SINTEF / University of Oslo, Norway(11)Imperial College London, UK(12)Nissatech Innovation Centre" ;
+    ns2:sameAs <http://ceur-ws.org/persons/Redhat> ;
+    ns3:name "Redhat" .
+
+<http://ceur-ws.org/Vol-1417/#StanislaviVoj%C3%ADr> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/StanislaviVoj%C3%ADr> ;
+    ns3:made <http://ceur-ws.org/Vol-1417/#paper10> ;
+    ns3:name "Stanislav Vojír" .
+
+<http://ceur-ws.org/Vol-1417/#StefaniaiCostantini> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/StefaniaiCostantini> ;
+    ns3:made <http://ceur-ws.org/Vol-1417/#paper12> ;
+    ns3:name "Stefania Costantini" .
+
+<http://ceur-ws.org/Vol-1417/#StonyiBrookiUniversity> a ns3:Person ;
+    ns4:place <http://dbpedia.org/resource/United_States> ;
+    ns5:affiliation "USA(3)" ;
+    ns2:sameAs <http://ceur-ws.org/persons/StonyiBrookiUniversity> ;
+    ns3:name "Stony Brook University" .
+
+<http://ceur-ws.org/Vol-1417/#SwaniRocher> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/SwaniRocher> ;
+    ns3:made <http://ceur-ws.org/Vol-1417/#paper9> ;
+    ns3:name "Swan Rocher" .
+
+<http://ceur-ws.org/Vol-1417/#Technology> a ns3:Person ;
+    ns4:place <http://dbpedia.org/resource/Commemorative_coins_of_Poland>,
+        <http://dbpedia.org/resource/Germany> ;
+    ns5:affiliation "Germany(4)",
+        "Krakow" ;
+    ns2:sameAs <http://ceur-ws.org/persons/Technology> ;
+    ns3:name "Technology" .
+
+<http://ceur-ws.org/Vol-1417/#TerranceiSwift> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/TerranceiSwift> ;
+    ns3:made <http://ceur-ws.org/Vol-1417/#paper8> ;
+    ns3:name "Terrance Swift" .
+
+<http://ceur-ws.org/Vol-1417/#TomasiKliegr> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/TomasiKliegr> ;
+    ns3:made <http://ceur-ws.org/Vol-1417/#paper10> ;
+    ns3:name "Tomas Kliegr" .
+
+<http://ceur-ws.org/Vol-1417/#TuaniAnhiPham> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/TuaniAnhiPham> ;
+    ns3:made <http://ceur-ws.org/Vol-1417/#paper5> ;
+    ns3:name "Tuan Anh Pham" .
+
+<http://ceur-ws.org/Vol-1417/#Universit%C3%A0idiiBologna> a ns3:Person ;
+    ns4:place <http://dbpedia.org/resource/Italy> ;
+    ns5:affiliation "Italy(8)" ;
+    ns2:sameAs <http://ceur-ws.org/persons/Universit%C3%A0idiiBologna> ;
+    ns3:name "Università di Bologna" .
+
+<http://ceur-ws.org/Vol-1417/#UniversityiofiEconomics> a ns3:Person ;
+    ns4:place <http://dbpedia.org/resource/Czech_Republic> ;
+    ns5:affiliation "Prague" ;
+    ns2:sameAs <http://ceur-ws.org/persons/UniversityiofiEconomics> ;
+    ns3:name "University of Economics" .
+
+<http://ceur-ws.org/Vol-1417/#UniversityiofiOxford> a ns3:Person ;
+    ns4:place <http://dbpedia.org/resource/United_Kingdom> ;
+    ns5:affiliation "UK(5)" ;
+    ns2:sameAs <http://ceur-ws.org/persons/UniversityiofiOxford> ;
+    ns3:name "University of Oxford" .
+
+<http://ceur-ws.org/Vol-1417/#V%C3%A1claviZeman> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/V%C3%A1claviZeman> ;
+    ns3:made <http://ceur-ws.org/Vol-1417/#paper10> ;
+    ns3:name "Václav Zeman" .
+
+<http://ceur-ws.org/Vol-1417/#event> a ns1:WorkshopEvent ;
+    ns1:hasLocation <http://dbpedia.org/resource/Germany> ;
+    ns1:hasPart <http://ceur-ws.org/Vol-1417/#part-RuleML> ;
+    ns1:isSubEventOf <http://ceur-ws.org/Vol-1417/#conf> ;
+    ns7:beginsAtDatetime "2015-08-02T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:endsAtDatetime "2015-08-05T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:license "http://creativecommons.org/publicdomain/zero/1.0/" ;
+    rdfs:seeAlso <http://ceur-ws.org/Vol-1004/#event>,
+        <http://ceur-ws.org/Vol-1211/#event>,
+        <http://ceur-ws.org/Vol-799/#event>,
+        <http://ceur-ws.org/Vol-874/#event> .
+
+<http://ceur-ws.org/Vol-1417/#AlexanderiPolupanov> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/AlexanderiPolupanov> ;
+    ns3:made <http://ceur-ws.org/Vol-1417/#paper13>,
+        <http://ceur-ws.org/Vol-1417/#paper7> ;
+    ns3:name "Alexander Polupanov" .
+
+<http://ceur-ws.org/Vol-1417/#AlexeiiMorozov> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/AlexeiiMorozov> ;
+    ns3:made <http://ceur-ws.org/Vol-1417/#paper13>,
+        <http://ceur-ws.org/Vol-1417/#paper7> ;
+    ns3:name "Alexei Morozov" .
+
+<http://ceur-ws.org/Vol-1417/#JaroslaviKuchar> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/JaroslaviKuchar> ;
+    ns3:made <http://ceur-ws.org/Vol-1417/#paper10>,
+        <http://ceur-ws.org/Vol-1417/#paper16> ;
+    ns3:name "Jaroslav Kuchar" .
+
+<http://ceur-ws.org/Vol-1417/#OlgaiSushkova> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/OlgaiSushkova> ;
+    ns3:made <http://ceur-ws.org/Vol-1417/#paper13>,
+        <http://ceur-ws.org/Vol-1417/#paper7> ;
+    ns3:name "Olga Sushkova" .
+
+<http://ceur-ws.org/Vol-1417/#TaraiAthan> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/TaraiAthan> ;
+    ns3:made <http://ceur-ws.org/Vol-1417/#paper6>,
+        <http://ceur-ws.org/Vol-1417/#paperX1> ;
+    ns3:name "Tara Athan" .
+
+<http://ceur-ws.org/Vol-1417/#paper1> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1417/> ;
+    ns6:title "Multidimensional Ontologies for Contextual Quality Data Specification and Extraction" ;
+    ns4:section <http://ceur-ws.org/Vol-1417/#Part1DoctoralConsortiumRuleML2015> ;
+    ns5:author <http://ceur-ws.org/Vol-1417/#MostafaiMilani> .
+
+<http://ceur-ws.org/Vol-1417/#paper14> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1417/> ;
+    ns6:title "PSOA RuleML Integration of Relational and Object-Centered Geospatial Data" ;
+    ns4:section <http://ceur-ws.org/Vol-1417/#Track1RuleModelingRuleAuthoringRuleEnginesandApplications> ;
+    ns5:author <http://ceur-ws.org/Vol-1417/#GeniZou> .
+
+<http://ceur-ws.org/Vol-1417/#paper16> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1417/> ;
+    ns6:title "Augmenting a Feature Set of Movies Using Linked Open Data" ;
+    ns4:section <http://ceur-ws.org/Vol-1417/#Track2RulebasedRecommenderSystemsfortheWebofData> ;
+    ns5:author <http://ceur-ws.org/Vol-1417/#JaroslaviKuchar> .
+
+<http://ceur-ws.org/Vol-1417/#paper2> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1417/> ;
+    ns6:title "Seamless Cooperation of Java and Prolog for Rule-Based Software Development" ;
+    ns4:section <http://ceur-ws.org/Vol-1417/#Part1DoctoralConsortiumRuleML2015> ;
+    ns5:author <http://ceur-ws.org/Vol-1417/#LudwigiOstermayer> .
+
+<http://ceur-ws.org/Vol-1417/#AdrianiPaschke> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/AdrianiPaschke> ;
+    ns3:made <http://ceur-ws.org/Vol-1417/#paper17>,
+        <http://ceur-ws.org/Vol-1417/#paper6>,
+        <http://ceur-ws.org/Vol-1417/#paperX1> ;
+    ns3:name "Adrian Paschke" .
+
+<http://ceur-ws.org/Vol-1417/#paper12> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1417/> ;
+    ns6:title "Exchanging Data and Ontological Definitions in Multi-Agent-Contexts Systems" ;
+    ns4:section <http://ceur-ws.org/Vol-1417/#Track1RuleModelingRuleAuthoringRuleEnginesandApplications> ;
+    ns5:author <http://ceur-ws.org/Vol-1417/#GiovanniiDeiGasperis>,
+        <http://ceur-ws.org/Vol-1417/#StefaniaiCostantini> .
+
+<http://ceur-ws.org/Vol-1417/#paper3> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1417/> ;
+    ns6:title "Genetic Programming for Design Grammar Rule Induction" ;
+    ns4:section <http://ceur-ws.org/Vol-1417/#Part1DoctoralConsortiumRuleML2015> ;
+    ns5:author <http://ceur-ws.org/Vol-1417/#DieteriRoller>,
+        <http://ceur-ws.org/Vol-1417/#JulianiR.iEichhoff> .
+
+<http://ceur-ws.org/Vol-1417/#paper4> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1417/> ;
+    ns6:title "GROOLS: Reactive Graph Reasoning for Genome Annotation" ;
+    ns4:section <http://ceur-ws.org/Vol-1417/#Part1DoctoralConsortiumRuleML2015> ;
+    ns5:author <http://ceur-ws.org/Vol-1417/#DavidiVallenet>,
+        <http://ceur-ws.org/Vol-1417/#JonathaniMercier> .
+
+<http://ceur-ws.org/Vol-1417/#paper5> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1417/> ;
+    ns6:title "A Rule-Based Language for Integrating Business Process and Business Rules" ;
+    ns4:section <http://ceur-ws.org/Vol-1417/#Part1DoctoralConsortiumRuleML2015> ;
+    ns5:author <http://ceur-ws.org/Vol-1417/#NhaniLeiThanh>,
+        <http://ceur-ws.org/Vol-1417/#TuaniAnhiPham> .
+
+<http://ceur-ws.org/Vol-1417/#Part3PostersRuleML2015> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-1417/> ;
+    ns6:title "Part 3: Posters@RuleML2015" .
+
+<http://ceur-ws.org/Vol-1417/#Track2RulebasedRecommenderSystemsfortheWebofData> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-1417/> ;
+    ns6:title "Track 2: Rule-based Recommender Systems for the Web of Data" .
+
+<http://ceur-ws.org/Vol-1417/#paper11> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1417/> ;
+    ns6:title "Assessing Elements of Crime Based on an Agent Simulation of a Street Robbery" ;
+    ns4:section <http://ceur-ws.org/Vol-1417/#Track1RuleModelingRuleAuthoringRuleEnginesandApplications> ;
+    ns5:author <http://ceur-ws.org/Vol-1417/#CzeslawiJedrzejek>,
+        <http://ceur-ws.org/Vol-1417/#JakubiDudkiewicz>,
+        <http://ceur-ws.org/Vol-1417/#JakubiNowakowski> .
+
+<http://ceur-ws.org/Vol-1417/#paper13> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1417/> ;
+    ns6:title "A Translator of Actor Prolog to Java" ;
+    ns4:section <http://ceur-ws.org/Vol-1417/#Track1RuleModelingRuleAuthoringRuleEnginesandApplications> ;
+    ns5:author <http://ceur-ws.org/Vol-1417/#AlexanderiPolupanov>,
+        <http://ceur-ws.org/Vol-1417/#AlexeiiMorozov>,
+        <http://ceur-ws.org/Vol-1417/#OlgaiSushkova> .
+
+<http://ceur-ws.org/Vol-1417/#paper18> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1417/> ;
+    ns6:title "Transformation and Aggregation Preprocessing for Top-k Recommendation GAP Rules Induction" ;
+    ns4:section <http://ceur-ws.org/Vol-1417/#Track2RulebasedRecommenderSystemsfortheWebofData> ;
+    ns5:author <http://ceur-ws.org/Vol-1417/#MartaiVomlelova>,
+        <http://ceur-ws.org/Vol-1417/#MichaliKopecky>,
+        <http://ceur-ws.org/Vol-1417/#PeteriVojtas> .
+
+<http://ceur-ws.org/Vol-1417/#paper20> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1417/> ;
+    ns6:title "Rule-based Approach to Text Generation in Natural Language - Automated Text Markup Language (ATML3)" ;
+    ns4:section <http://ceur-ws.org/Vol-1417/#Part4IndustryRuleML2015selectedpapers> ;
+    ns5:author <http://ceur-ws.org/Vol-1417/#AdelaiSchneider>,
+        <http://ceur-ws.org/Vol-1417/#ArminiBauer>,
+        <http://ceur-ws.org/Vol-1417/#NikiiHoedoro> .
+
+<http://ceur-ws.org/Vol-1417/#paper6> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1417/> ;
+    ns6:title "RuleML 1.02: Deliberation, Reaction and Consumer Families" ;
+    ns4:section <http://ceur-ws.org/Vol-1417/#Part3PostersRuleML2015> ;
+    ns5:author <http://ceur-ws.org/Vol-1417/#AdrianiPaschke>,
+        <http://ceur-ws.org/Vol-1417/#HaroldiBoley>,
+        <http://ceur-ws.org/Vol-1417/#TaraiAthan> .
+
+<http://ceur-ws.org/Vol-1417/#paper7> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1417/> ;
+    ns6:title "An Approach to the Intelligent Monitoring of Anomalous Human Behaviour Based on the Actor Prolog Object-Oriented Logic Language" ;
+    ns4:section <http://ceur-ws.org/Vol-1417/#Part3PostersRuleML2015> ;
+    ns5:author <http://ceur-ws.org/Vol-1417/#AlexanderiPolupanov>,
+        <http://ceur-ws.org/Vol-1417/#AlexeiiMorozov>,
+        <http://ceur-ws.org/Vol-1417/#OlgaiSushkova> .
+
+<http://ceur-ws.org/Vol-1417/#Part4IndustryRuleML2015selectedpapers> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-1417/> ;
+    ns6:title "Part 4: Industry@RuleML2015 (selected papers)" .
+
+<http://ceur-ws.org/Vol-1417/#paper10> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1417/> ;
+    ns6:title "EasyMiner/R Preview: Towards a Web Interface for Association Rule Learning and Classification in R" ;
+    ns4:section <http://ceur-ws.org/Vol-1417/#Track1RuleModelingRuleAuthoringRuleEnginesandApplications> ;
+    ns5:author <http://ceur-ws.org/Vol-1417/#JaroslaviKuchar>,
+        <http://ceur-ws.org/Vol-1417/#StanislaviVoj%C3%ADr>,
+        <http://ceur-ws.org/Vol-1417/#TomasiKliegr>,
+        <http://ceur-ws.org/Vol-1417/#V%C3%A1claviZeman> .
+
+<http://ceur-ws.org/Vol-1417/#paper15> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1417/> ;
+    ns6:title "Developing Situation-Aware Applications for Disaster Management with a Distributed Rule-Based platform" ;
+    ns4:section <http://ceur-ws.org/Vol-1417/#Part3PostersRuleML2015> ;
+    ns5:author <http://ceur-ws.org/Vol-1417/#JoaoiMoreira>,
+        <http://ceur-ws.org/Vol-1417/#Lu%C3%ADsiFerreiraiPires>,
+        <http://ceur-ws.org/Vol-1417/#MarteniVaniSinderen>,
+        <http://ceur-ws.org/Vol-1417/#Patr%C3%ADciaiDockhorniCosta> .
+
+<http://ceur-ws.org/Vol-1417/#paper17> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1417/> ;
+    ns6:title "Towards Time-Aware Semantic Enriched Recommender Systems for Movies" ;
+    ns4:section <http://ceur-ws.org/Vol-1417/#Track2RulebasedRecommenderSystemsfortheWebofData> ;
+    ns5:author <http://ceur-ws.org/Vol-1417/#AdrianiPaschke>,
+        <http://ceur-ws.org/Vol-1417/#AlexandruiTodor>,
+        <http://ceur-ws.org/Vol-1417/#MarkoiHarasic>,
+        <http://ceur-ws.org/Vol-1417/#PierreiAhrendt> .
+
+<http://ceur-ws.org/Vol-1417/#paper19> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1417/> ;
+    ns6:title "CAPAS: A Service for Improving the Assignments of Common Agriculture Policy Funds to Farmers and Land Owners" ;
+    ns4:section <http://ceur-ws.org/Vol-1417/#Part4IndustryRuleML2015selectedpapers> ;
+    ns5:author <http://ceur-ws.org/Vol-1417/#DumitruiRoman>,
+        <http://ceur-ws.org/Vol-1417/#Jes%C3%BAsiEstrada>,
+        <http://ceur-ws.org/Vol-1417/#MarianoiNavarro>,
+        <http://ceur-ws.org/Vol-1417/#Ram%C3%B3niBaiget> .
+
+<http://ceur-ws.org/Vol-1417/#Part1DoctoralConsortiumRuleML2015> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-1417/> ;
+    ns6:title "Part 1: Doctoral Consortium@RuleML2015" .
+
+<http://ceur-ws.org/Vol-1417/#paperX1> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1417/> ;
+    ns6:title "Legal Norms Modelling with LegalRuleML (OASIS)" ;
+    ns4:section <http://ceur-ws.org/Vol-1417/#Part4IndustryRuleML2015selectedpapers> ;
+    ns5:author <http://ceur-ws.org/Vol-1417/#AdamiWyner>,
+        <http://ceur-ws.org/Vol-1417/#AdrianiPaschke>,
+        <http://ceur-ws.org/Vol-1417/#GuidoiGovernatori>,
+        <http://ceur-ws.org/Vol-1417/#MonicaiPalmirani>,
+        <http://ceur-ws.org/Vol-1417/#TaraiAthan> .
+
+<http://ceur-ws.org/Vol-1417/#Track1RuleModelingRuleAuthoringRuleEnginesandApplications> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-1417/> ;
+    ns6:title "Track 1: Rule Modeling, Rule Authoring, Rule Engines and Applications" .
+
+<http://ceur-ws.org/Vol-1417/#paper9> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1417/> ;
+    ns6:title "Datalog+, RuleML and OWL 2: Formats and Translations for Existential Rules" ;
+    ns4:section <http://ceur-ws.org/Vol-1417/#Track1RuleModelingRuleAuthoringRuleEnginesandApplications> ;
+    ns5:author <http://ceur-ws.org/Vol-1417/#AlainiGutierrez>,
+        <http://ceur-ws.org/Vol-1417/#Cl%C3%A9mentiSipieter>,
+        <http://ceur-ws.org/Vol-1417/#Jean-Fran%C3%A7oisiBaget>,
+        <http://ceur-ws.org/Vol-1417/#Marie-LaureiMugnier>,
+        <http://ceur-ws.org/Vol-1417/#MicheliLecl%C3%A8re>,
+        <http://ceur-ws.org/Vol-1417/#SwaniRocher> .
+
+<http://ceur-ws.org/Vol-1417/#paper8> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1417/> ;
+    ns6:title "Automated Decision Support for Financial Regulatory/Policy Compliance, using Textual Rulelog" ;
+    ns4:section <http://ceur-ws.org/Vol-1417/#Part4IndustryRuleML2015selectedpapers> ;
+    ns5:author <http://ceur-ws.org/Vol-1417/#BenjaminiGrosof>,
+        <http://ceur-ws.org/Vol-1417/#IsaaciGrosof>,
+        <http://ceur-ws.org/Vol-1417/#JanineiBloomfield>,
+        <http://ceur-ws.org/Vol-1417/#MichaeliKifer>,
+        <http://ceur-ws.org/Vol-1417/#MigueliCalejo>,
+        <http://ceur-ws.org/Vol-1417/#PauliFodor>,
+        <http://ceur-ws.org/Vol-1417/#TerranceiSwift> .
+
+<http://ceur-ws.org/Vol-1417/> a ns1:Proceedings ;
+    ns1:hasPart <http://ceur-ws.org/Vol-1417/#paper1>,
+        <http://ceur-ws.org/Vol-1417/#paper10>,
+        <http://ceur-ws.org/Vol-1417/#paper11>,
+        <http://ceur-ws.org/Vol-1417/#paper12>,
+        <http://ceur-ws.org/Vol-1417/#paper13>,
+        <http://ceur-ws.org/Vol-1417/#paper14>,
+        <http://ceur-ws.org/Vol-1417/#paper15>,
+        <http://ceur-ws.org/Vol-1417/#paper16>,
+        <http://ceur-ws.org/Vol-1417/#paper17>,
+        <http://ceur-ws.org/Vol-1417/#paper18>,
+        <http://ceur-ws.org/Vol-1417/#paper19>,
+        <http://ceur-ws.org/Vol-1417/#paper2>,
+        <http://ceur-ws.org/Vol-1417/#paper20>,
+        <http://ceur-ws.org/Vol-1417/#paper3>,
+        <http://ceur-ws.org/Vol-1417/#paper4>,
+        <http://ceur-ws.org/Vol-1417/#paper5>,
+        <http://ceur-ws.org/Vol-1417/#paper6>,
+        <http://ceur-ws.org/Vol-1417/#paper7>,
+        <http://ceur-ws.org/Vol-1417/#paper8>,
+        <http://ceur-ws.org/Vol-1417/#paper9>,
+        <http://ceur-ws.org/Vol-1417/#paperX1> ;
+    ns1:hasSession <http://ceur-ws.org/Vol-1417/#Part1DoctoralConsortiumRuleML2015>,
+        <http://ceur-ws.org/Vol-1417/#Part3PostersRuleML2015>,
+        <http://ceur-ws.org/Vol-1417/#Part4IndustryRuleML2015selectedpapers>,
+        <http://ceur-ws.org/Vol-1417/#Track1RuleModelingRuleAuthoringRuleEnginesandApplications>,
+        <http://ceur-ws.org/Vol-1417/#Track2RulebasedRecommenderSystemsfortheWebofData> ;
+    ns9:issued "2015-08-07T00:00:00+00:00"^^xsd:dateTime ;
+    ns4:presentedAt <http://ceur-ws.org/Vol-1417/#event> ;
+    ns5:editor <http://ceur-ws.org/Vol-1417/#AGHiUniversityiofiScience>,
         <http://ceur-ws.org/Vol-1417/#AristotleiUniversityiofiThessaloniki>,
         <http://ceur-ws.org/Vol-1417/#FreieiUniversit%C3%A4tiBerlin>,
         <http://ceur-ws.org/Vol-1417/#Redhat>,
@@ -23,52 +599,4 @@
         <http://ceur-ws.org/Vol-1417/#Universit%C3%A0idiiBologna>,
         <http://ceur-ws.org/Vol-1417/#UniversityiofiEconomics>,
         <http://ceur-ws.org/Vol-1417/#UniversityiofiOxford> .
-
-<http://ceur-ws.org/Vol-1417/#AGHiUniversityiofiScience> a ns4:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/AGHiUniversityiofiScience> ;
-    ns4:name "AGH University of Science" .
-
-<http://ceur-ws.org/Vol-1417/#AristotleiUniversityiofiThessaloniki> a ns4:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/AristotleiUniversityiofiThessaloniki> ;
-    ns4:name "Aristotle University of Thessaloniki" .
-
-<http://ceur-ws.org/Vol-1417/#FreieiUniversit%C3%A4tiBerlin> a ns4:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/FreieiUniversit%C3%A4tiBerlin> ;
-    ns4:name "Freie Universität Berlin" .
-
-<http://ceur-ws.org/Vol-1417/#Redhat> a ns4:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/Redhat> ;
-    ns4:name "Redhat" .
-
-<http://ceur-ws.org/Vol-1417/#StonyiBrookiUniversity> a ns4:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/StonyiBrookiUniversity> ;
-    ns4:name "Stony Brook University" .
-
-<http://ceur-ws.org/Vol-1417/#Technology> a ns4:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/Technology> ;
-    ns4:name "Technology" .
-
-<http://ceur-ws.org/Vol-1417/#Universit%C3%A0idiiBologna> a ns4:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/Universit%C3%A0idiiBologna> ;
-    ns4:name "Università di Bologna" .
-
-<http://ceur-ws.org/Vol-1417/#UniversityiofiEconomics> a ns4:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/UniversityiofiEconomics> ;
-    ns4:name "University of Economics" .
-
-<http://ceur-ws.org/Vol-1417/#UniversityiofiOxford> a ns4:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/UniversityiofiOxford> ;
-    ns4:name "University of Oxford" .
-
-<http://ceur-ws.org/Vol-1417/#event> a ns2:WorkshopEvent ;
-    ns2:hasLocation <http://dbpedia.org/resource/Germany> ;
-    ns2:hasPart <http://ceur-ws.org/Vol-1417/#part-RuleML> ;
-    ns2:isSubEventOf <http://ceur-ws.org/Vol-1417/#conf> ;
-    ns6:beginsAtDatetime "2015-08-02T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:endsAtDatetime "2015-08-05T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:license "http://creativecommons.org/publicdomain/zero/1.0/" ;
-    rdfs:seeAlso <http://ceur-ws.org/Vol-1004/#event>,
-        <http://ceur-ws.org/Vol-1211/#event>,
-        <http://ceur-ws.org/Vol-799/#event>,
-        <http://ceur-ws.org/Vol-874/#event> .
 

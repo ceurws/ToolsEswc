@@ -1,12 +1,12 @@
 @prefix ns1: <http://xmlns.com/foaf/0.1/> .
 @prefix ns2: <http://www.w3.org/2002/07/owl#> .
-@prefix ns3: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns4: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns5: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns6: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns3: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns4: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns5: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns6: <http://purl.org/dc/elements/1.1/> .
 @prefix ns7: <http://purl.org/ontology/bibo/#> .
-@prefix ns8: <http://purl.org/dc/elements/1.1/> .
-@prefix ns9: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns9: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -48,7 +48,7 @@
     ns1:name "Bart De Win" .
 
 <http://ceur-ws.org/Vol-413/#BashariNuseibeh> a ns1:Person ;
-    ns4:affiliation "" ;
+    ns3:affiliation "" ;
     ns2:sameAs <http://ceur-ws.org/persons/BashariNuseibeh> ;
     ns1:name "Bashar Nuseibeh" .
 
@@ -88,7 +88,7 @@
     ns1:name "Franck Fleurey" .
 
 <http://ceur-ws.org/Vol-413/#GleniDobson> a ns1:Person ;
-    ns4:affiliation "" ;
+    ns3:affiliation "" ;
     ns2:sameAs <http://ceur-ws.org/persons/GleniDobson> ;
     ns1:name "Glen Dobson" .
 
@@ -128,7 +128,7 @@
     ns1:name "Jonas Hallberg" .
 
 <http://ceur-ws.org/Vol-413/#JoniWhittle> a ns1:Person ;
-    ns4:affiliation "" ;
+    ns3:affiliation "" ;
     ns2:sameAs <http://ceur-ws.org/persons/JoniWhittle> ;
     ns1:name "Jon Whittle" .
 
@@ -282,153 +282,152 @@
     ns1:made <http://ceur-ws.org/Vol-413/#paper08> ;
     ns1:name "Yves Le Traon" .
 
-<http://ceur-ws.org/Vol-413/#event> a ns3:WorkshopEvent ;
-    ns3:hasLocation <http://dbpedia.org/resource/France> ;
-    ns3:hasPart <http://ceur-ws.org/Vol-413/#part-MODELS>,
-        <http://ceur-ws.org/Vol-413/#part-MODSEC> ;
-    ns3:isSubEventOf <http://ceur-ws.org/Vol-413/#conf> ;
-    ns9:beginsAtDatetime "2009-02-10T00:00:00+00:00"^^xsd:dateTime ;
-    ns9:endsAtDatetime "2009-02-10T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:license "http://choosealicense.com/licenses/no-license/" .
+<http://ceur-ws.org/Vol-413/#event> a ns5:WorkshopEvent ;
+    ns5:hasLocation <http://dbpedia.org/resource/France> ;
+    ns5:hasPart <http://ceur-ws.org/Vol-413/#part-MODSEC> ;
+    ns5:isSubEventOf <http://ceur-ws.org/Vol-413/#conf> ;
+    ns8:beginsAtDatetime "2008-09-28T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:endsAtDatetime "2008-09-28T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:license "http://choosealicense.com/licenses/no-license/" .
 
-<http://ceur-ws.org/Vol-413/#paper04> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-413/> ;
-    ns5:title "Curriculum for Modeling Security: Experiences and Lessons Learned" ;
-    ns4:author <http://ceur-ws.org/Vol-413/#HaralambosiMouratidis> .
+<http://ceur-ws.org/Vol-413/#paper04> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-413/> ;
+    ns4:title "Curriculum for Modeling Security: Experiences and Lessons Learned" ;
+    ns3:author <http://ceur-ws.org/Vol-413/#HaralambosiMouratidis> .
 
-<http://ceur-ws.org/Vol-413/#paper12> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-413/> ;
-    ns5:title "Experiences Threat Modeling at Microsoft" ;
-    ns4:author <http://ceur-ws.org/Vol-413/#AdamiShostack> .
+<http://ceur-ws.org/Vol-413/#paper12> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-413/> ;
+    ns4:title "Experiences Threat Modeling at Microsoft" ;
+    ns3:author <http://ceur-ws.org/Vol-413/#AdamiShostack> .
 
 <http://ceur-ws.org/Vol-413/#JaniJ%C3%BCrjens> a ns1:Person ;
-    ns4:affiliation "" ;
+    ns3:affiliation "" ;
     ns2:sameAs <http://ceur-ws.org/persons/JaniJ%C3%BCrjens> ;
     ns1:made <http://ceur-ws.org/Vol-413/#paper14>,
         <http://ceur-ws.org/Vol-413/#paper16> ;
     ns1:name "Jan Jürjens" .
 
-<http://ceur-ws.org/Vol-413/#paper09> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-413/> ;
-    ns5:title "Using Common Criteria as Reusable Knowledge in Security Requirements Elicitation" ;
-    ns4:author <http://ceur-ws.org/Vol-413/#HaruhikoiKaiya>,
+<http://ceur-ws.org/Vol-413/#paper09> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-413/> ;
+    ns4:title "Using Common Criteria as Reusable Knowledge in Security Requirements Elicitation" ;
+    ns3:author <http://ceur-ws.org/Vol-413/#HaruhikoiKaiya>,
         <http://ceur-ws.org/Vol-413/#MotoshiiSaeki> .
 
-<http://ceur-ws.org/Vol-413/#paper10> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-413/> ;
-    ns5:title "Model Driven Security Management: Making Security Management Manageable in Complex Distributed Systems" ;
-    ns4:author <http://ceur-ws.org/Vol-413/#RudolfiSchreiner>,
+<http://ceur-ws.org/Vol-413/#paper10> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-413/> ;
+    ns4:title "Model Driven Security Management: Making Security Management Manageable in Complex Distributed Systems" ;
+    ns3:author <http://ceur-ws.org/Vol-413/#RudolfiSchreiner>,
         <http://ceur-ws.org/Vol-413/#UlrichiLang> .
 
-<http://ceur-ws.org/Vol-413/#paper13> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-413/> ;
-    ns5:title "Towards an Integrated Framework for Model-Driven Security Engineering" ;
-    ns4:author <http://ceur-ws.org/Vol-413/#JorditiCabot>,
+<http://ceur-ws.org/Vol-413/#paper13> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-413/> ;
+    ns4:title "Towards an Integrated Framework for Model-Driven Security Engineering" ;
+    ns3:author <http://ceur-ws.org/Vol-413/#JorditiCabot>,
         <http://ceur-ws.org/Vol-413/#NicolaiZannone> .
 
-<http://ceur-ws.org/Vol-413/#paper14> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-413/> ;
-    ns5:title "Incorporating Security Requirements from Legal Regulations into UMLsec model" ;
-    ns4:author <http://ceur-ws.org/Vol-413/#JaniJ%C3%BCrjens>,
+<http://ceur-ws.org/Vol-413/#paper14> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-413/> ;
+    ns4:title "Incorporating Security Requirements from Legal Regulations into UMLsec model" ;
+    ns3:author <http://ceur-ws.org/Vol-413/#JaniJ%C3%BCrjens>,
         <http://ceur-ws.org/Vol-413/#ShareefuliIslam> .
 
-<http://ceur-ws.org/Vol-413/#paper16> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-413/> ;
-    ns5:title "IT Security Risk Analysis based on Business Process Models enhanced with Security Requirements" ;
-    ns4:author <http://ceur-ws.org/Vol-413/#JaniJ%C3%BCrjens>,
+<http://ceur-ws.org/Vol-413/#paper16> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-413/> ;
+    ns4:title "IT Security Risk Analysis based on Business Process Models enhanced with Security Requirements" ;
+    ns3:author <http://ceur-ws.org/Vol-413/#JaniJ%C3%BCrjens>,
         <http://ceur-ws.org/Vol-413/#StefaniTaubenberger> .
 
-<http://ceur-ws.org/Vol-413/#paper21> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-413/> ;
-    ns5:title "SPML: A Visual Approach for Modeling Firewall Configurations" ;
-    ns4:author <http://ceur-ws.org/Vol-413/#KleberiTrevisani>,
+<http://ceur-ws.org/Vol-413/#paper21> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-413/> ;
+    ns4:title "SPML: A Visual Approach for Modeling Firewall Configurations" ;
+    ns3:author <http://ceur-ws.org/Vol-413/#KleberiTrevisani>,
         <http://ceur-ws.org/Vol-413/#Rog%EF%BF%BDrioiGarcia> .
 
-<http://ceur-ws.org/Vol-413/#paper02> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-413/> ;
-    ns5:title "SECTISSIMO: A Platform-Independent Framework for Security Services" ;
-    ns4:author <http://ceur-ws.org/Vol-413/#MichaeliHafner>,
+<http://ceur-ws.org/Vol-413/#paper02> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-413/> ;
+    ns4:title "SECTISSIMO: A Platform-Independent Framework for Security Services" ;
+    ns3:author <http://ceur-ws.org/Vol-413/#MichaeliHafner>,
         <http://ceur-ws.org/Vol-413/#MukhtiariMemon>,
         <http://ceur-ws.org/Vol-413/#RuthiBreu> .
 
-<http://ceur-ws.org/Vol-413/#paper05> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-413/> ;
-    ns5:title "Modeling Security Protocols using UML2" ;
-    ns4:author <http://ceur-ws.org/Vol-413/#AlainiBeaulieu>,
+<http://ceur-ws.org/Vol-413/#paper05> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-413/> ;
+    ns4:title "Modeling Security Protocols using UML2" ;
+    ns3:author <http://ceur-ws.org/Vol-413/#AlainiBeaulieu>,
         <http://ceur-ws.org/Vol-413/#GregiPhillips>,
         <http://ceur-ws.org/Vol-413/#SandraiSmith> .
 
-<http://ceur-ws.org/Vol-413/#paper06> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-413/> ;
-    ns5:title "Modeling and Assessment of Systems Security" ;
-    ns4:author <http://ceur-ws.org/Vol-413/#JohaniBengtsson>,
+<http://ceur-ws.org/Vol-413/#paper06> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-413/> ;
+    ns4:title "Modeling and Assessment of Systems Security" ;
+    ns3:author <http://ceur-ws.org/Vol-413/#JohaniBengtsson>,
         <http://ceur-ws.org/Vol-413/#JonasiHallberg>,
         <http://ceur-ws.org/Vol-413/#NiklasiHallberg> .
 
-<http://ceur-ws.org/Vol-413/#paper15> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-413/> ;
-    ns5:title "Transforming Security Audit Requirements into a Software Architecture" ;
-    ns4:author <http://ceur-ws.org/Vol-413/#BartiDeiWin>,
+<http://ceur-ws.org/Vol-413/#paper15> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-413/> ;
+    ns4:title "Transforming Security Audit Requirements into a Software Architecture" ;
+    ns3:author <http://ceur-ws.org/Vol-413/#BartiDeiWin>,
         <http://ceur-ws.org/Vol-413/#KoeniYskout>,
         <http://ceur-ws.org/Vol-413/#WouteriJoosen> .
 
-<http://ceur-ws.org/Vol-413/#paper18> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-413/> ;
-    ns5:title "On the Inability of Existing Security Models to Cope with Data Mobility in Dynamic Organizations" ;
-    ns4:author <http://ceur-ws.org/Vol-413/#PieteriHartel>,
+<http://ceur-ws.org/Vol-413/#paper18> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-413/> ;
+    ns4:title "On the Inability of Existing Security Models to Cope with Data Mobility in Dynamic Organizations" ;
+    ns3:author <http://ceur-ws.org/Vol-413/#PieteriHartel>,
         <http://ceur-ws.org/Vol-413/#QiangiTang>,
         <http://ceur-ws.org/Vol-413/#TrajceiDimkov> .
 
-<http://ceur-ws.org/Vol-413/#paper20> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-413/> ;
-    ns5:title "A Server Side SOA Meta Model for Assigning Aspect Services" ;
-    ns4:author <http://ceur-ws.org/Vol-413/#AndreasiGanser>,
+<http://ceur-ws.org/Vol-413/#paper20> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-413/> ;
+    ns4:title "A Server Side SOA Meta Model for Assigning Aspect Services" ;
+    ns3:author <http://ceur-ws.org/Vol-413/#AndreasiGanser>,
         <http://ceur-ws.org/Vol-413/#HorstiLichter>,
         <http://ceur-ws.org/Vol-413/#StefaniHurtz> .
 
-<http://ceur-ws.org/Vol-413/#paper03> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-413/> ;
-    ns5:title "A Security Domain Model for Implementing Trusted Subject Behaviors" ;
-    ns4:author <http://ceur-ws.org/Vol-413/#AlaniShaffer>,
+<http://ceur-ws.org/Vol-413/#paper03> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-413/> ;
+    ns4:title "A Security Domain Model for Implementing Trusted Subject Behaviors" ;
+    ns3:author <http://ceur-ws.org/Vol-413/#AlaniShaffer>,
         <http://ceur-ws.org/Vol-413/#CynthiaiIrvine>,
         <http://ceur-ws.org/Vol-413/#MikhailiAuguston>,
         <http://ceur-ws.org/Vol-413/#TimiLevin> .
 
-<http://ceur-ws.org/Vol-413/#paper08> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-413/> ;
-    ns5:title "Mutating DAC and MAC Security Policies: A Generic Metamodel Based Approach" ;
-    ns4:author <http://ceur-ws.org/Vol-413/#BenoitiBaudry>,
+<http://ceur-ws.org/Vol-413/#paper08> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-413/> ;
+    ns4:title "Mutating DAC and MAC Security Policies: A Generic Metamodel Based Approach" ;
+    ns3:author <http://ceur-ws.org/Vol-413/#BenoitiBaudry>,
         <http://ceur-ws.org/Vol-413/#FranckiFleurey>,
         <http://ceur-ws.org/Vol-413/#TejeddineiMouelhi>,
         <http://ceur-ws.org/Vol-413/#YvesiLeiTraon> .
 
-<http://ceur-ws.org/Vol-413/#paper11> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-413/> ;
-    ns5:title "Specifying Security Aspects in UML Models" ;
-    ns4:author <http://ceur-ws.org/Vol-413/#AlexiOrozco>,
+<http://ceur-ws.org/Vol-413/#paper11> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-413/> ;
+    ns4:title "Specifying Security Aspects in UML Models" ;
+    ns3:author <http://ceur-ws.org/Vol-413/#AlexiOrozco>,
         <http://ceur-ws.org/Vol-413/#AvelinoiZorzo>,
         <http://ceur-ws.org/Vol-413/#FlavioiOliveira>,
         <http://ceur-ws.org/Vol-413/#KarineiPeralta> .
 
-<http://ceur-ws.org/Vol-413/#paper17> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-413/> ;
-    ns5:title "Towards a Measurement Framework for Security Risk Management" ;
-    ns4:author <http://ceur-ws.org/Vol-413/#EriciDubois>,
+<http://ceur-ws.org/Vol-413/#paper17> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-413/> ;
+    ns4:title "Towards a Measurement Framework for Security Risk Management" ;
+    ns3:author <http://ceur-ws.org/Vol-413/#EriciDubois>,
         <http://ceur-ws.org/Vol-413/#NicolasiMayer>,
         <http://ceur-ws.org/Vol-413/#PatrickiHeymans>,
         <http://ceur-ws.org/Vol-413/#RaimundasiMatulevicius> .
 
-<http://ceur-ws.org/Vol-413/#paper22> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-413/> ;
-    ns5:title "Automatic Generation of Secure Multidimensional Code for Data Warehouses by using QVT Transformations: an MDA Approach" ;
-    ns4:author <http://ceur-ws.org/Vol-413/#CarlosiBlanco>,
+<http://ceur-ws.org/Vol-413/#paper22> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-413/> ;
+    ns4:title "Automatic Generation of Secure Multidimensional Code for Data Warehouses by using QVT Transformations: an MDA Approach" ;
+    ns3:author <http://ceur-ws.org/Vol-413/#CarlosiBlanco>,
         <http://ceur-ws.org/Vol-413/#EduardoiFernandez-Medina>,
         <http://ceur-ws.org/Vol-413/#IgnacioiGarcia>,
         <http://ceur-ws.org/Vol-413/#JuaniTrujillo>,
         <http://ceur-ws.org/Vol-413/#MarioiPiattini> .
 
-<http://ceur-ws.org/Vol-413/> a ns3:Proceedings ;
-    ns3:hasPart <http://ceur-ws.org/Vol-413/#paper02>,
+<http://ceur-ws.org/Vol-413/> a ns5:Proceedings ;
+    ns5:hasPart <http://ceur-ws.org/Vol-413/#paper02>,
         <http://ceur-ws.org/Vol-413/#paper03>,
         <http://ceur-ws.org/Vol-413/#paper04>,
         <http://ceur-ws.org/Vol-413/#paper05>,
@@ -447,9 +446,9 @@
         <http://ceur-ws.org/Vol-413/#paper20>,
         <http://ceur-ws.org/Vol-413/#paper21>,
         <http://ceur-ws.org/Vol-413/#paper22> ;
-    ns6:issued "2008-11-03T00:00:00+00:00"^^xsd:dateTime ;
+    ns9:issued "2008-11-03T00:00:00+00:00"^^xsd:dateTime ;
     ns7:presentedAt <http://ceur-ws.org/Vol-413/#event> ;
-    ns4:editor <http://ceur-ws.org/Vol-413/#BashariNuseibeh>,
+    ns3:editor <http://ceur-ws.org/Vol-413/#BashariNuseibeh>,
         <http://ceur-ws.org/Vol-413/#GleniDobson>,
         <http://ceur-ws.org/Vol-413/#JaniJ%C3%BCrjens>,
         <http://ceur-ws.org/Vol-413/#JoniWhittle> .

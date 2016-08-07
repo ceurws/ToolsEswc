@@ -1,43 +1,441 @@
-@prefix ns1: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns2: <http://xmlns.com/foaf/0.1/> .
-@prefix ns3: <http://www.w3.org/2002/07/owl#> .
-@prefix ns4: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns5: <http://purl.org/dc/elements/1.1/> .
+@prefix ns1: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns2: <http://purl.org/ontology/bibo/#> .
+@prefix ns3: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns4: <http://xmlns.com/foaf/0.1/> .
+@prefix ns5: <http://www.w3.org/2002/07/owl#> .
 @prefix ns6: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns7: <http://purl.org/ontology/bibo/#> .
-@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns7: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns8: <http://purl.org/dc/elements/1.1/> .
+@prefix ns9: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-800/> a ns1:Proceedings ;
-    ns8:issued "2011-10-28T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:presentedAt <http://ceur-ws.org/Vol-800/#event> ;
-    ns4:editor <http://ceur-ws.org/Vol-800/#JaniHidders>,
-        <http://ceur-ws.org/Vol-800/#SietseiOverbeek>,
-        <http://ceur-ws.org/Vol-800/#VirginiaiDignum> .
+<http://ceur-ws.org/Vol-800/#AgnesiNakakawa> a ns4:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/AgnesiNakakawa> ;
+    ns4:made <http://ceur-ws.org/Vol-800/#paper-4-3> ;
+    ns4:name "Agnes Nakakawa" .
 
-<http://ceur-ws.org/Vol-800/#JaniHidders> a ns2:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/JaniHidders> ;
-    ns2:name "Jan Hidders" .
+<http://ceur-ws.org/Vol-800/#AlinaiLartseva> a ns4:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/AlinaiLartseva> ;
+    ns4:made <http://ceur-ws.org/Vol-800/#paper-1-2> ;
+    ns4:name "Alina Lartseva" .
 
-<http://ceur-ws.org/Vol-800/#SietseiOverbeek> a ns2:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/SietseiOverbeek> ;
-    ns2:name "Sietse Overbeek" .
+<http://ceur-ws.org/Vol-800/#AmyivaniLooy> a ns4:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/AmyivaniLooy> ;
+    ns4:made <http://ceur-ws.org/Vol-800/#paper-3-3> ;
+    ns4:name "Amy van Looy" .
 
-<http://ceur-ws.org/Vol-800/#VirginiaiDignum> a ns2:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/VirginiaiDignum> ;
-    ns2:name "Virginia Dignum" .
+<http://ceur-ws.org/Vol-800/#DenisiSsebuggwawo> a ns4:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/DenisiSsebuggwawo> ;
+    ns4:made <http://ceur-ws.org/Vol-800/#paper-4-1> ;
+    ns4:name "Denis Ssebuggwawo" .
 
-<http://ceur-ws.org/Vol-800/#event> a ns1:WorkshopEvent ;
-    ns1:hasLocation <http://dbpedia.org/resource/Netherlands> ;
-    ns1:hasPart <http://ceur-ws.org/Vol-800/#part-EIS>,
-        <http://ceur-ws.org/Vol-800/#part-NAF>,
+<http://ceur-ws.org/Vol-800/#DeniziCetinkaya> a ns4:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/DeniziCetinkaya> ;
+    ns4:made <http://ceur-ws.org/Vol-800/#paper-3-1> ;
+    ns4:name "Deniz Cetinkaya" .
+
+<http://ceur-ws.org/Vol-800/#DirkivanideriLinden> a ns4:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/DirkivanideriLinden> ;
+    ns4:made <http://ceur-ws.org/Vol-800/#paper-1-2> ;
+    ns4:name "Dirk van der Linden" .
+
+<http://ceur-ws.org/Vol-800/#ElisahiLemey> a ns4:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/ElisahiLemey> ;
+    ns4:made <http://ceur-ws.org/Vol-800/#paper-2-3> ;
+    ns4:name "Elisah Lemey" .
+
+<http://ceur-ws.org/Vol-800/#HansiWeigand> a ns4:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/HansiWeigand> ;
+    ns4:made <http://ceur-ws.org/Vol-800/#paper-3-4> ;
+    ns4:name "Hans Weigand" .
+
+<http://ceur-ws.org/Vol-800/#HarmeniNauta> a ns4:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/HarmeniNauta> ;
+    ns4:made <http://ceur-ws.org/Vol-800/#paper-4-4> ;
+    ns4:name "Harmen Nauta" .
+
+<http://ceur-ws.org/Vol-800/#IgoriRust> a ns4:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/IgoriRust> ;
+    ns4:made <http://ceur-ws.org/Vol-800/#paper-3-1> ;
+    ns4:name "Igor Rust" .
+
+<http://ceur-ws.org/Vol-800/#IngeivanideiWeerd> a ns4:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/IngeivanideiWeerd> ;
+    ns4:made <http://ceur-ws.org/Vol-800/#paper-2-2> ;
+    ns4:name "Inge van de Weerd" .
+
+<http://ceur-ws.org/Vol-800/#IvoiWenzler> a ns4:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/IvoiWenzler> ;
+    ns4:made <http://ceur-ws.org/Vol-800/#paper-3-1> ;
+    ns4:name "Ivo Wenzler" .
+
+<http://ceur-ws.org/Vol-800/#JaniClaes> a ns4:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/JaniClaes> ;
+    ns4:made <http://ceur-ws.org/Vol-800/#paper-3-2> ;
+    ns4:name "Jan Claes" .
+
+<http://ceur-ws.org/Vol-800/#JaniHidders> a ns4:Person ;
+    ns3:affiliation "" ;
+    ns5:sameAs <http://ceur-ws.org/persons/JaniHidders> ;
+    ns4:name "Jan Hidders" .
+
+<http://ceur-ws.org/Vol-800/#JeewanieiJayasingheiArachchige> a ns4:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/JeewanieiJayasingheiArachchige> ;
+    ns4:made <http://ceur-ws.org/Vol-800/#paper-3-4> ;
+    ns4:name "Jeewanie Jayasinghe Arachchige" .
+
+<http://ceur-ws.org/Vol-800/#JieiJiang> a ns4:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/JieiJiang> ;
+    ns4:made <http://ceur-ws.org/Vol-800/#paper-4-2> ;
+    ns4:name "Jie Jiang" .
+
+<http://ceur-ws.org/Vol-800/#JoaoiPombinho> a ns4:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/JoaoiPombinho> ;
+    ns4:made <http://ceur-ws.org/Vol-800/#paper-1-3> ;
+    ns4:name "Joao Pombinho" .
+
+<http://ceur-ws.org/Vol-800/#JohaniVersendaal> a ns4:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/JohaniVersendaal> ;
+    ns4:made <http://ceur-ws.org/Vol-800/#paper-2-2> ;
+    ns4:name "Johan Versendaal" .
+
+<http://ceur-ws.org/Vol-800/#JoseiTribolet> a ns4:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/JoseiTribolet> ;
+    ns4:made <http://ceur-ws.org/Vol-800/#paper-1-3> ;
+    ns4:name "Jose Tribolet" .
+
+<http://ceur-ws.org/Vol-800/#MamadouiSeck> a ns4:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/MamadouiSeck> ;
+    ns4:made <http://ceur-ws.org/Vol-800/#paper-3-1> ;
+    ns4:name "Mamadou Seck" .
+
+<http://ceur-ws.org/Vol-800/#ManfrediJeusfeld> a ns4:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/ManfrediJeusfeld> ;
+    ns4:made <http://ceur-ws.org/Vol-800/#paper-3-4> ;
+    ns4:name "Manfred Jeusfeld" .
+
+<http://ceur-ws.org/Vol-800/#ManuideiBacker> a ns4:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/ManuideiBacker> ;
+    ns4:made <http://ceur-ws.org/Vol-800/#paper-3-3> ;
+    ns4:name "Manu de Backer" .
+
+<http://ceur-ws.org/Vol-800/#MarciLankhorst> a ns4:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/MarciLankhorst> ;
+    ns4:made <http://ceur-ws.org/Vol-800/#keynote_lankhorst> ;
+    ns4:name "Marc Lankhorst" .
+
+<http://ceur-ws.org/Vol-800/#MarijniJanssen> a ns4:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/MarijniJanssen> ;
+    ns4:made <http://ceur-ws.org/Vol-800/#paper-2-1> ;
+    ns4:name "Marijn Janssen" .
+
+<http://ceur-ws.org/Vol-800/#MarjanaiShammi> a ns4:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/MarjanaiShammi> ;
+    ns4:made <http://ceur-ws.org/Vol-800/#paper-2-1> ;
+    ns4:name "Marjana Shammi" .
+
+<http://ceur-ws.org/Vol-800/#MartijniZoet> a ns4:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/MartijniZoet> ;
+    ns4:made <http://ceur-ws.org/Vol-800/#paper-2-2> ;
+    ns4:name "Martijn Zoet" .
+
+<http://ceur-ws.org/Vol-800/#MaximeiBernaert> a ns4:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/MaximeiBernaert> ;
+    ns4:made <http://ceur-ws.org/Vol-800/#paper-1-1> ;
+    ns4:name "Maxime Bernaert" .
+
+<http://ceur-ws.org/Vol-800/#NiekiWijngaards> a ns4:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/NiekiWijngaards> ;
+    ns4:made <http://ceur-ws.org/Vol-800/#keynote_wijngaards> ;
+    ns4:name "Niek Wijngaards" .
+
+<http://ceur-ws.org/Vol-800/#PatrickivaniBommel> a ns4:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/PatrickivaniBommel> ;
+    ns4:made <http://ceur-ws.org/Vol-800/#paper-4-3> ;
+    ns4:name "Patrick van Bommel" .
+
+<http://ceur-ws.org/Vol-800/#RobertiVerburg> a ns4:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/RobertiVerburg> ;
+    ns4:made <http://ceur-ws.org/Vol-800/#paper-2-1> ;
+    ns4:name "Robert Verburg" .
+
+<http://ceur-ws.org/Vol-800/#ToniSpil> a ns4:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/ToniSpil> ;
+    ns4:made <http://ceur-ws.org/Vol-800/#paper-4-4> ;
+    ns4:name "Ton Spil" .
+
+<http://ceur-ws.org/Vol-800/#event> a ns7:WorkshopEvent ;
+    ns7:hasLocation <http://dbpedia.org/resource/Netherlands> ;
+    ns7:hasPart <http://ceur-ws.org/Vol-800/#part-EIS>,
         <http://ceur-ws.org/Vol-800/#part-SIKS> ;
-    ns1:isSubEventOf <http://ceur-ws.org/Vol-800/#conf> ;
+    ns7:isSubEventOf <http://ceur-ws.org/Vol-800/#conf> ;
     ns6:beginsAtDatetime "2011-10-31T00:00:00+00:00"^^xsd:dateTime ;
     ns6:endsAtDatetime "2011-10-31T00:00:00+00:00"^^xsd:dateTime ;
-    ns5:license "http://choosealicense.com/licenses/no-license/" ;
+    ns8:license "http://choosealicense.com/licenses/no-license/" ;
     rdfs:seeAlso <http://ceur-ws.org/Vol-662/#event> .
+
+<http://ceur-ws.org/Vol-800/#VirginiaiDignum> a ns4:Person ;
+    ns3:affiliation "" ;
+    ns5:sameAs <http://ceur-ws.org/persons/VirginiaiDignum> ;
+    ns4:made <http://ceur-ws.org/Vol-800/#paper-4-2> ;
+    ns4:name "Virginia Dignum" .
+
+<http://ceur-ws.org/Vol-800/#Yao-HuaiTan> a ns4:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/Yao-HuaiTan> ;
+    ns4:made <http://ceur-ws.org/Vol-800/#paper-2-1>,
+        <http://ceur-ws.org/Vol-800/#paper-4-2> ;
+    ns4:name "Yao-Hua Tan" .
+
+<http://ceur-ws.org/Vol-800/#keynote_lankhorst> a ns7:Paper ;
+    ns7:partOf <http://ceur-ws.org/Vol-800/> ;
+    ns1:title "ArchiMate: Past, Present and Future" ;
+    ns2:endPage 11 ;
+    ns2:numPages 1 ;
+    ns2:section <http://ceur-ws.org/Vol-800/#Keynotes> ;
+    ns2:startPage 11 ;
+    ns3:author <http://ceur-ws.org/Vol-800/#MarciLankhorst> .
+
+<http://ceur-ws.org/Vol-800/#keynote_wijngaards> a ns7:Paper ;
+    ns7:partOf <http://ceur-ws.org/Vol-800/> ;
+    ns1:title "Actor-Agent Communities: Supporting Inter-Organisational Cooperation" ;
+    ns2:endPage 9 ;
+    ns2:numPages 1 ;
+    ns2:section <http://ceur-ws.org/Vol-800/#Keynotes> ;
+    ns2:startPage 9 ;
+    ns3:author <http://ceur-ws.org/Vol-800/#NiekiWijngaards> .
+
+<http://ceur-ws.org/Vol-800/#ErikiProper> a ns4:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/ErikiProper> ;
+    ns4:made <http://ceur-ws.org/Vol-800/#paper-1-2>,
+        <http://ceur-ws.org/Vol-800/#paper-4-1>,
+        <http://ceur-ws.org/Vol-800/#paper-4-3> ;
+    ns4:name "Erik Proper" .
+
+<http://ceur-ws.org/Vol-800/#Keynotes> a ns7:SessionEvent ;
+    ns7:partOf <http://ceur-ws.org/Vol-800/> ;
+    ns1:title "Keynotes" .
+
+<http://ceur-ws.org/Vol-800/#SietseiOverbeek> a ns4:Person ;
+    ns3:affiliation "" ;
+    ns5:sameAs <http://ceur-ws.org/persons/SietseiOverbeek> ;
+    ns4:made <http://ceur-ws.org/Vol-800/#paper-2-1>,
+        <http://ceur-ws.org/Vol-800/#paper-4-2> ;
+    ns4:name "Sietse Overbeek" .
+
+<http://ceur-ws.org/Vol-800/#StijniHoppenbrouwers> a ns4:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/StijniHoppenbrouwers> ;
+    ns4:made <http://ceur-ws.org/Vol-800/#paper-1-2>,
+        <http://ceur-ws.org/Vol-800/#paper-2-2>,
+        <http://ceur-ws.org/Vol-800/#paper-4-1> ;
+    ns4:name "Stijn Hoppenbrouwers" .
+
+<http://ceur-ws.org/Vol-800/#paper-1-1> a ns7:Paper ;
+    ns7:partOf <http://ceur-ws.org/Vol-800/> ;
+    ns1:title "Quest for Know-How, Know-Why, Know-What and Know-Who: Using KAOS for Enterprise Modelling" ;
+    ns2:endPage 16 ;
+    ns2:numPages 2 ;
+    ns2:section <http://ceur-ws.org/Vol-800/#Session1EnterpriseEngineering> ;
+    ns2:startPage 15 ;
+    ns3:author <http://ceur-ws.org/Vol-800/#GeertiPoels>,
+        <http://ceur-ws.org/Vol-800/#MaximeiBernaert> .
+
+<http://ceur-ws.org/Vol-800/#paper-1-3> a ns7:Paper ;
+    ns7:partOf <http://ceur-ws.org/Vol-800/> ;
+    ns1:title "Issues and Challenges in Dynamic Systems Design and Engineering - A Value-Oriented Approach" ;
+    ns2:endPage 28 ;
+    ns2:numPages 10 ;
+    ns2:section <http://ceur-ws.org/Vol-800/#Session1EnterpriseEngineering> ;
+    ns2:startPage 19 ;
+    ns3:author <http://ceur-ws.org/Vol-800/#JoaoiPombinho>,
+        <http://ceur-ws.org/Vol-800/#JoseiTribolet> .
+
+<http://ceur-ws.org/Vol-800/#paper-2-3> a ns7:Paper ;
+    ns7:partOf <http://ceur-ws.org/Vol-800/> ;
+    ns1:title "Towards a Service System Ontology for Service Science" ;
+    ns2:endPage 44 ;
+    ns2:numPages 2 ;
+    ns2:section <http://ceur-ws.org/Vol-800/#Session2ServiceScience> ;
+    ns2:startPage 43 ;
+    ns3:author <http://ceur-ws.org/Vol-800/#ElisahiLemey>,
+        <http://ceur-ws.org/Vol-800/#GeertiPoels> .
+
+<http://ceur-ws.org/Vol-800/#paper-3-2> a ns7:Paper ;
+    ns7:partOf <http://ceur-ws.org/Vol-800/> ;
+    ns1:title "Merging Computer Log Files for Process Mining: An Artificial Immune System Technique" ;
+    ns2:endPage 50 ;
+    ns2:numPages 2 ;
+    ns2:section <http://ceur-ws.org/Vol-800/#Session3BusinessProcessModeling> ;
+    ns2:startPage 49 ;
+    ns3:author <http://ceur-ws.org/Vol-800/#GeertiPoels>,
+        <http://ceur-ws.org/Vol-800/#JaniClaes> .
+
+<http://ceur-ws.org/Vol-800/#paper-4-4> a ns7:Paper ;
+    ns7:partOf <http://ceur-ws.org/Vol-800/> ;
+    ns1:title "Change your Lifestyle or your Game is Over" ;
+    ns2:endPage 72 ;
+    ns2:numPages 2 ;
+    ns2:section <http://ceur-ws.org/Vol-800/#Session4CollaborativeModeling> ;
+    ns2:startPage 71 ;
+    ns3:author <http://ceur-ws.org/Vol-800/#HarmeniNauta>,
+        <http://ceur-ws.org/Vol-800/#ToniSpil> .
+
+<http://ceur-ws.org/Vol-800/#GeertiPoels> a ns4:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/GeertiPoels> ;
+    ns4:made <http://ceur-ws.org/Vol-800/#paper-1-1>,
+        <http://ceur-ws.org/Vol-800/#paper-2-3>,
+        <http://ceur-ws.org/Vol-800/#paper-3-2>,
+        <http://ceur-ws.org/Vol-800/#paper-3-3> ;
+    ns4:name "Geert Poels" .
+
+<http://ceur-ws.org/Vol-800/#Session1EnterpriseEngineering> a ns7:SessionEvent ;
+    ns7:partOf <http://ceur-ws.org/Vol-800/> ;
+    ns1:title "Session 1: Enterprise Engineering" .
+
+<http://ceur-ws.org/Vol-800/#Session2ServiceScience> a ns7:SessionEvent ;
+    ns7:partOf <http://ceur-ws.org/Vol-800/> ;
+    ns1:title "Session 2: Service Science" .
+
+<http://ceur-ws.org/Vol-800/#paper-3-3> a ns7:Paper ;
+    ns7:partOf <http://ceur-ws.org/Vol-800/> ;
+    ns1:title "Questioning the Design of Business Process Maturity Models" ;
+    ns2:endPage 60 ;
+    ns2:numPages 10 ;
+    ns2:section <http://ceur-ws.org/Vol-800/#Session3BusinessProcessModeling> ;
+    ns2:startPage 51 ;
+    ns3:author <http://ceur-ws.org/Vol-800/#AmyivaniLooy>,
+        <http://ceur-ws.org/Vol-800/#GeertiPoels>,
+        <http://ceur-ws.org/Vol-800/#ManuideiBacker> .
+
+<http://ceur-ws.org/Vol-800/#paper-3-4> a ns7:Paper ;
+    ns7:partOf <http://ceur-ws.org/Vol-800/> ;
+    ns1:title "Business Service Modeling for the Service-Oriented Enterprise" ;
+    ns2:endPage 62 ;
+    ns2:numPages 2 ;
+    ns2:section <http://ceur-ws.org/Vol-800/#Session3BusinessProcessModeling> ;
+    ns2:startPage 61 ;
+    ns3:author <http://ceur-ws.org/Vol-800/#HansiWeigand>,
+        <http://ceur-ws.org/Vol-800/#JeewanieiJayasingheiArachchige>,
+        <http://ceur-ws.org/Vol-800/#ManfrediJeusfeld> .
+
+<http://ceur-ws.org/Vol-800/#paper-4-1> a ns7:Paper ;
+    ns7:partOf <http://ceur-ws.org/Vol-800/> ;
+    ns1:title "Assessing Collaborative Modeling Quality Based on Modeling Artifacts" ;
+    ns2:endPage 66 ;
+    ns2:numPages 2 ;
+    ns2:section <http://ceur-ws.org/Vol-800/#Session4CollaborativeModeling> ;
+    ns2:startPage 65 ;
+    ns3:author <http://ceur-ws.org/Vol-800/#DenisiSsebuggwawo>,
+        <http://ceur-ws.org/Vol-800/#ErikiProper>,
+        <http://ceur-ws.org/Vol-800/#StijniHoppenbrouwers> .
+
+<http://ceur-ws.org/Vol-800/#paper-4-3> a ns7:Paper ;
+    ns7:partOf <http://ceur-ws.org/Vol-800/> ;
+    ns1:title "Applying Soft Systems Methodology in Enterprise Architecture Creation Workshops" ;
+    ns2:endPage 70 ;
+    ns2:numPages 2 ;
+    ns2:section <http://ceur-ws.org/Vol-800/#Session4CollaborativeModeling> ;
+    ns2:startPage 69 ;
+    ns3:author <http://ceur-ws.org/Vol-800/#AgnesiNakakawa>,
+        <http://ceur-ws.org/Vol-800/#ErikiProper>,
+        <http://ceur-ws.org/Vol-800/#PatrickivaniBommel> .
+
+<http://ceur-ws.org/Vol-800/#Session3BusinessProcessModeling> a ns7:SessionEvent ;
+    ns7:partOf <http://ceur-ws.org/Vol-800/> ;
+    ns1:title "Session 3: Business Process Modeling" .
+
+<http://ceur-ws.org/Vol-800/#Session4CollaborativeModeling> a ns7:SessionEvent ;
+    ns7:partOf <http://ceur-ws.org/Vol-800/> ;
+    ns1:title "Session 4: Collaborative Modeling" .
+
+<http://ceur-ws.org/Vol-800/#paper-1-2> a ns7:Paper ;
+    ns7:partOf <http://ceur-ws.org/Vol-800/> ;
+    ns1:title "Towards an Investigation of the Conceptual Landscape of Enterprise Architecture" ;
+    ns2:endPage 18 ;
+    ns2:numPages 2 ;
+    ns2:section <http://ceur-ws.org/Vol-800/#Session1EnterpriseEngineering> ;
+    ns2:startPage 17 ;
+    ns3:author <http://ceur-ws.org/Vol-800/#AlinaiLartseva>,
+        <http://ceur-ws.org/Vol-800/#DirkivanideriLinden>,
+        <http://ceur-ws.org/Vol-800/#ErikiProper>,
+        <http://ceur-ws.org/Vol-800/#StijniHoppenbrouwers> .
+
+<http://ceur-ws.org/Vol-800/#paper-2-2> a ns7:Paper ;
+    ns7:partOf <http://ceur-ws.org/Vol-800/> ;
+    ns1:title "Agile Service Development: A Rule-Based Method Engineering Approach" ;
+    ns2:endPage 42 ;
+    ns2:numPages 2 ;
+    ns2:section <http://ceur-ws.org/Vol-800/#Session2ServiceScience> ;
+    ns2:startPage 41 ;
+    ns3:author <http://ceur-ws.org/Vol-800/#IngeivanideiWeerd>,
+        <http://ceur-ws.org/Vol-800/#JohaniVersendaal>,
+        <http://ceur-ws.org/Vol-800/#MartijniZoet>,
+        <http://ceur-ws.org/Vol-800/#StijniHoppenbrouwers> .
+
+<http://ceur-ws.org/Vol-800/#paper-3-1> a ns7:Paper ;
+    ns7:partOf <http://ceur-ws.org/Vol-800/> ;
+    ns1:title "Business Process Simulation for Management Consultants: A DEVS-Based Simplified Business Process Modelling Library" ;
+    ns2:endPage 48 ;
+    ns2:numPages 2 ;
+    ns2:section <http://ceur-ws.org/Vol-800/#Session3BusinessProcessModeling> ;
+    ns2:startPage 47 ;
+    ns3:author <http://ceur-ws.org/Vol-800/#DeniziCetinkaya>,
+        <http://ceur-ws.org/Vol-800/#IgoriRust>,
+        <http://ceur-ws.org/Vol-800/#IvoiWenzler>,
+        <http://ceur-ws.org/Vol-800/#MamadouiSeck> .
+
+<http://ceur-ws.org/Vol-800/#paper-4-2> a ns7:Paper ;
+    ns7:partOf <http://ceur-ws.org/Vol-800/> ;
+    ns1:title "A Context-Aware Inter-Organizational Collaboration Model Applied to International Trade" ;
+    ns2:endPage 68 ;
+    ns2:numPages 2 ;
+    ns2:section <http://ceur-ws.org/Vol-800/#Session4CollaborativeModeling> ;
+    ns2:startPage 67 ;
+    ns3:author <http://ceur-ws.org/Vol-800/#JieiJiang>,
+        <http://ceur-ws.org/Vol-800/#SietseiOverbeek>,
+        <http://ceur-ws.org/Vol-800/#VirginiaiDignum>,
+        <http://ceur-ws.org/Vol-800/#Yao-HuaiTan> .
+
+<http://ceur-ws.org/Vol-800/#paper-2-1> a ns7:Paper ;
+    ns7:partOf <http://ceur-ws.org/Vol-800/> ;
+    ns1:title "Agile Process for Integrated Service Delivery" ;
+    ns2:endPage 40 ;
+    ns2:numPages 10 ;
+    ns2:section <http://ceur-ws.org/Vol-800/#Session2ServiceScience> ;
+    ns2:startPage 31 ;
+    ns3:author <http://ceur-ws.org/Vol-800/#MarijniJanssen>,
+        <http://ceur-ws.org/Vol-800/#MarjanaiShammi>,
+        <http://ceur-ws.org/Vol-800/#RobertiVerburg>,
+        <http://ceur-ws.org/Vol-800/#SietseiOverbeek>,
+        <http://ceur-ws.org/Vol-800/#Yao-HuaiTan> .
+
+<http://ceur-ws.org/Vol-800/> a ns7:Proceedings ;
+    ns7:hasPart <http://ceur-ws.org/Vol-800/#keynote_lankhorst>,
+        <http://ceur-ws.org/Vol-800/#keynote_wijngaards>,
+        <http://ceur-ws.org/Vol-800/#paper-1-1>,
+        <http://ceur-ws.org/Vol-800/#paper-1-2>,
+        <http://ceur-ws.org/Vol-800/#paper-1-3>,
+        <http://ceur-ws.org/Vol-800/#paper-2-1>,
+        <http://ceur-ws.org/Vol-800/#paper-2-2>,
+        <http://ceur-ws.org/Vol-800/#paper-2-3>,
+        <http://ceur-ws.org/Vol-800/#paper-3-1>,
+        <http://ceur-ws.org/Vol-800/#paper-3-2>,
+        <http://ceur-ws.org/Vol-800/#paper-3-3>,
+        <http://ceur-ws.org/Vol-800/#paper-3-4>,
+        <http://ceur-ws.org/Vol-800/#paper-4-1>,
+        <http://ceur-ws.org/Vol-800/#paper-4-2>,
+        <http://ceur-ws.org/Vol-800/#paper-4-3>,
+        <http://ceur-ws.org/Vol-800/#paper-4-4> ;
+    ns7:hasSession <http://ceur-ws.org/Vol-800/#Keynotes>,
+        <http://ceur-ws.org/Vol-800/#Session1EnterpriseEngineering>,
+        <http://ceur-ws.org/Vol-800/#Session2ServiceScience>,
+        <http://ceur-ws.org/Vol-800/#Session3BusinessProcessModeling>,
+        <http://ceur-ws.org/Vol-800/#Session4CollaborativeModeling> ;
+    ns9:issued "2011-10-28T00:00:00+00:00"^^xsd:dateTime ;
+    ns2:presentedAt <http://ceur-ws.org/Vol-800/#event> ;
+    ns3:editor <http://ceur-ws.org/Vol-800/#JaniHidders>,
+        <http://ceur-ws.org/Vol-800/#SietseiOverbeek>,
+        <http://ceur-ws.org/Vol-800/#VirginiaiDignum> .
 

@@ -1,36 +1,194 @@
-@prefix ns1: <http://purl.org/ontology/bibo/#> .
-@prefix ns2: <http://www.w3.org/2002/07/owl#> .
-@prefix ns3: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns4: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns5: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns6: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns7: <http://xmlns.com/foaf/0.1/> .
-@prefix ns8: <http://purl.org/dc/elements/1.1/> .
+@prefix ns1: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns2: <http://purl.org/ontology/bibo/#> .
+@prefix ns3: <http://www.w3.org/2002/07/owl#> .
+@prefix ns4: <http://purl.org/dc/elements/1.1/> .
+@prefix ns5: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns6: <http://xmlns.com/foaf/0.1/> .
+@prefix ns7: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns9: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1533/> a ns4:Proceedings ;
-    ns5:issued "2015-12-10T00:00:00+00:00"^^xsd:dateTime ;
-    ns1:presentedAt <http://ceur-ws.org/Vol-1533/#event> ;
-    ns6:editor <http://ceur-ws.org/Vol-1533/#FrancescoiRicci>,
+<http://ceur-ws.org/Vol-1533/#AlainiStarke> a ns6:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/AlainiStarke> ;
+    ns6:made <http://ceur-ws.org/Vol-1533/#paper2> ;
+    ns6:name "Alain Starke" .
+
+<http://ceur-ws.org/Vol-1533/#DanieliHerzog> a ns6:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/DanieliHerzog> ;
+    ns6:made <http://ceur-ws.org/Vol-1533/#paper1> ;
+    ns6:name "Daniel Herzog" .
+
+<http://ceur-ws.org/Vol-1533/#DavidiElsweiler> a ns6:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/DavidiElsweiler> ;
+    ns6:made <http://ceur-ws.org/Vol-1533/#paper8> ;
+    ns6:name "David Elsweiler" .
+
+<http://ceur-ws.org/Vol-1533/#DimitrisiSacharidis> a ns6:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/DimitrisiSacharidis> ;
+    ns6:made <http://ceur-ws.org/Vol-1533/#paper6> ;
+    ns6:name "Dimitris Sacharidis" .
+
+<http://ceur-ws.org/Vol-1533/#FrancescoiBarile> a ns6:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/FrancescoiBarile> ;
+    ns6:made <http://ceur-ws.org/Vol-1533/#paper4> ;
+    ns6:name "Francesco Barile" .
+
+<http://ceur-ws.org/Vol-1533/#FrancescoiRicci> a ns6:Person ;
+    ns1:affiliation "" ;
+    ns3:sameAs <http://ceur-ws.org/persons/FrancescoiRicci> ;
+    ns6:name "Francesco Ricci" .
+
+<http://ceur-ws.org/Vol-1533/#HannaiSch%C3%A4fer> a ns6:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/HannaiSch%C3%A4fer> ;
+    ns6:made <http://ceur-ws.org/Vol-1533/#paper5> ;
+    ns6:name "Hanna Schäfer" .
+
+<http://ceur-ws.org/Vol-1533/#MonaiNaseri> a ns6:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/MonaiNaseri> ;
+    ns6:made <http://ceur-ws.org/Vol-1533/#paper10> ;
+    ns6:name "Mona Naseri" .
+
+<http://ceur-ws.org/Vol-1533/#MouzhiiGe> a ns6:Person ;
+    ns1:affiliation "" ;
+    ns3:sameAs <http://ceur-ws.org/persons/MouzhiiGe> ;
+    ns6:name "Mouzhi Ge" .
+
+<http://ceur-ws.org/Vol-1533/#PaoloiCremonesi> a ns6:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/PaoloiCremonesi> ;
+    ns6:made <http://ceur-ws.org/Vol-1533/#paper9> ;
+    ns6:name "Paolo Cremonesi" .
+
+<http://ceur-ws.org/Vol-1533/#PeteriKnees> a ns6:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/PeteriKnees> ;
+    ns6:made <http://ceur-ws.org/Vol-1533/#paper3> ;
+    ns6:name "Peter Knees" .
+
+<http://ceur-ws.org/Vol-1533/#StefaniHirschmeier> a ns6:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/StefaniHirschmeier> ;
+    ns6:made <http://ceur-ws.org/Vol-1533/#paper7> ;
+    ns6:name "Stefan Hirschmeier" .
+
+<http://ceur-ws.org/Vol-1533/#event> a ns7:WorkshopEvent ;
+    ns7:hasLocation <http://dbpedia.org/resource/Italy> ;
+    ns7:hasPart <http://ceur-ws.org/Vol-1533/#part-DMRS> ;
+    ns7:isSubEventOf <http://ceur-ws.org/Vol-1533/#conf> ;
+    ns8:beginsAtDatetime "2015-10-22T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:endsAtDatetime "2015-10-23T00:00:00+00:00"^^xsd:dateTime ;
+    ns4:license "http://creativecommons.org/publicdomain/zero/1.0/" ;
+    rdfs:seeAlso <http://ceur-ws.org/Vol-1278/#event> .
+
+<http://ceur-ws.org/Vol-1533/#paper1> a ns7:Paper ;
+    ns7:partOf <http://ceur-ws.org/Vol-1533/> ;
+    ns5:title "Spontaneous Event Recommendations on the Go" ;
+    ns2:endPage 4 ;
+    ns2:numPages 4 ;
+    ns2:section <http://ceur-ws.org/Vol-1533/#PosterPapers> ;
+    ns2:startPage 1 ;
+    ns1:author <http://ceur-ws.org/Vol-1533/#DanieliHerzog> .
+
+<http://ceur-ws.org/Vol-1533/#paper10> a ns7:Paper ;
+    ns7:partOf <http://ceur-ws.org/Vol-1533/> ;
+    ns5:title "Investigating the Decision Making Process of Users based on the PoliMovie Dataset" ;
+    ns2:endPage 44 ;
+    ns2:numPages 4 ;
+    ns2:section <http://ceur-ws.org/Vol-1533/#PosterPapers> ;
+    ns2:startPage 41 ;
+    ns1:author <http://ceur-ws.org/Vol-1533/#MonaiNaseri> .
+
+<http://ceur-ws.org/Vol-1533/#paper2> a ns7:Paper ;
+    ns7:partOf <http://ceur-ws.org/Vol-1533/> ;
+    ns5:title "Saving Energy in 1-D: Tailoring Energy-saving Advice Using a Rasch-based Energy Recommender System" ;
+    ns2:endPage 8 ;
+    ns2:numPages 4 ;
+    ns2:section <http://ceur-ws.org/Vol-1533/#PosterPapers> ;
+    ns2:startPage 5 ;
+    ns1:author <http://ceur-ws.org/Vol-1533/#AlainiStarke> .
+
+<http://ceur-ws.org/Vol-1533/#paper3> a ns7:Paper ;
+    ns7:partOf <http://ceur-ws.org/Vol-1533/> ;
+    ns5:title "\"I’d like it to do the opposite\": Music-Making Between Recommendation and Obstruction" ;
+    ns2:endPage 16 ;
+    ns2:numPages 8 ;
+    ns2:section <http://ceur-ws.org/Vol-1533/#PosterPapers> ;
+    ns2:startPage 9 ;
+    ns1:author <http://ceur-ws.org/Vol-1533/#PeteriKnees> .
+
+<http://ceur-ws.org/Vol-1533/#paper4> a ns7:Paper ;
+    ns7:partOf <http://ceur-ws.org/Vol-1533/> ;
+    ns5:title "Evaluating User's Personality and Social Interactions for Groups Recommendations" ;
+    ns2:endPage 20 ;
+    ns2:numPages 4 ;
+    ns2:section <http://ceur-ws.org/Vol-1533/#PosterPapers> ;
+    ns2:startPage 17 ;
+    ns1:author <http://ceur-ws.org/Vol-1533/#FrancescoiBarile> .
+
+<http://ceur-ws.org/Vol-1533/#paper5> a ns7:Paper ;
+    ns7:partOf <http://ceur-ws.org/Vol-1533/> ;
+    ns5:title "Personalized Food Recommendation" ;
+    ns2:endPage 24 ;
+    ns2:numPages 4 ;
+    ns2:section <http://ceur-ws.org/Vol-1533/#PosterPapers> ;
+    ns2:startPage 21 ;
+    ns1:author <http://ceur-ws.org/Vol-1533/#HannaiSch%C3%A4fer> .
+
+<http://ceur-ws.org/Vol-1533/#paper6> a ns7:Paper ;
+    ns7:partOf <http://ceur-ws.org/Vol-1533/> ;
+    ns5:title "Learning the Role and Behavior of Users in Group Decision Making" ;
+    ns2:endPage 28 ;
+    ns2:numPages 4 ;
+    ns2:section <http://ceur-ws.org/Vol-1533/#PosterPapers> ;
+    ns2:startPage 25 ;
+    ns1:author <http://ceur-ws.org/Vol-1533/#DimitrisiSacharidis> .
+
+<http://ceur-ws.org/Vol-1533/#paper7> a ns7:Paper ;
+    ns7:partOf <http://ceur-ws.org/Vol-1533/> ;
+    ns5:title "Stating and Discussing Challenges of Radio Recommender Systems in Contrast to Music Recommendation" ;
+    ns2:endPage 32 ;
+    ns2:numPages 4 ;
+    ns2:section <http://ceur-ws.org/Vol-1533/#PosterPapers> ;
+    ns2:startPage 29 ;
+    ns1:author <http://ceur-ws.org/Vol-1533/#StefaniHirschmeier> .
+
+<http://ceur-ws.org/Vol-1533/#paper8> a ns7:Paper ;
+    ns7:partOf <http://ceur-ws.org/Vol-1533/> ;
+    ns5:title "Bringing the “healthy” into Food Recommenders" ;
+    ns2:endPage 36 ;
+    ns2:numPages 4 ;
+    ns2:section <http://ceur-ws.org/Vol-1533/#PosterPapers> ;
+    ns2:startPage 33 ;
+    ns1:author <http://ceur-ws.org/Vol-1533/#DavidiElsweiler> .
+
+<http://ceur-ws.org/Vol-1533/#paper9> a ns7:Paper ;
+    ns7:partOf <http://ceur-ws.org/Vol-1533/> ;
+    ns5:title "Decision Making through Polarized Summarization of User Reviews" ;
+    ns2:endPage 40 ;
+    ns2:numPages 4 ;
+    ns2:section <http://ceur-ws.org/Vol-1533/#PosterPapers> ;
+    ns2:startPage 37 ;
+    ns1:author <http://ceur-ws.org/Vol-1533/#PaoloiCremonesi> .
+
+<http://ceur-ws.org/Vol-1533/> a ns7:Proceedings ;
+    ns7:hasPart <http://ceur-ws.org/Vol-1533/#paper1>,
+        <http://ceur-ws.org/Vol-1533/#paper10>,
+        <http://ceur-ws.org/Vol-1533/#paper2>,
+        <http://ceur-ws.org/Vol-1533/#paper3>,
+        <http://ceur-ws.org/Vol-1533/#paper4>,
+        <http://ceur-ws.org/Vol-1533/#paper5>,
+        <http://ceur-ws.org/Vol-1533/#paper6>,
+        <http://ceur-ws.org/Vol-1533/#paper7>,
+        <http://ceur-ws.org/Vol-1533/#paper8>,
+        <http://ceur-ws.org/Vol-1533/#paper9> ;
+    ns7:hasSession <http://ceur-ws.org/Vol-1533/#PosterPapers> ;
+    ns9:issued "2015-12-10T00:00:00+00:00"^^xsd:dateTime ;
+    ns2:presentedAt <http://ceur-ws.org/Vol-1533/#event> ;
+    ns1:editor <http://ceur-ws.org/Vol-1533/#FrancescoiRicci>,
         <http://ceur-ws.org/Vol-1533/#MouzhiiGe> .
 
-<http://ceur-ws.org/Vol-1533/#FrancescoiRicci> a ns7:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/FrancescoiRicci> ;
-    ns7:name "Francesco Ricci" .
-
-<http://ceur-ws.org/Vol-1533/#MouzhiiGe> a ns7:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/MouzhiiGe> ;
-    ns7:name "Mouzhi Ge" .
-
-<http://ceur-ws.org/Vol-1533/#event> a ns4:WorkshopEvent ;
-    ns4:hasLocation <http://dbpedia.org/resource/Italy> ;
-    ns4:hasPart <http://ceur-ws.org/Vol-1533/#part-ws> ;
-    ns4:isSubEventOf <http://ceur-ws.org/Vol-1533/#conf> ;
-    ns3:beginsAtDatetime "2015-10-22T00:00:00+00:00"^^xsd:dateTime ;
-    ns3:endsAtDatetime "2015-10-23T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:license "http://creativecommons.org/publicdomain/zero/1.0/" ;
-    rdfs:seeAlso <http://ceur-ws.org/Vol-1278/#event> .
+<http://ceur-ws.org/Vol-1533/#PosterPapers> a ns7:SessionEvent ;
+    ns7:partOf <http://ceur-ws.org/Vol-1533/> ;
+    ns5:title "Poster Papers" .
 

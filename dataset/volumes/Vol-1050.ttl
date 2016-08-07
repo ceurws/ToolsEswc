@@ -1,62 +1,290 @@
 @prefix ns1: <http://xmlns.com/foaf/0.1/> .
-@prefix ns2: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns3: <http://www.w3.org/2002/07/owl#> .
-@prefix ns4: <http://purl.org/ontology/bibo/#> .
-@prefix ns5: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns6: <http://purl.org/dc/elements/1.1/> .
-@prefix ns7: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns2: <http://purl.org/ontology/bibo/#> .
+@prefix ns3: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns4: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns5: <http://purl.org/dc/elements/1.1/> .
+@prefix ns6: <http://www.w3.org/2002/07/owl#> .
+@prefix ns7: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns9: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1050/> a ns7:Proceedings ;
-    ns8:issued "2013-09-27T00:00:00+00:00"^^xsd:dateTime ;
-    ns4:presentedAt <http://ceur-ws.org/Vol-1050/#event> ;
-    ns2:editor <http://ceur-ws.org/Vol-1050/#AlexanderiFelfernig>,
+<http://ceur-ws.org/Vol-1050/#AlexanderiFelfernig> a ns1:Person ;
+    ns2:place <http://dbpedia.org/resource/Austria> ;
+    ns4:affiliation "Graz University of Technology" ;
+    ns6:sameAs <http://ceur-ws.org/persons/AlexanderiFelfernig> ;
+    ns1:name "Alexander Felfernig" .
+
+<http://ceur-ws.org/Vol-1050/#AlexanderiGelbukh> a ns1:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/AlexanderiGelbukh> ;
+    ns1:made <http://ceur-ws.org/Vol-1050/#paper2> ;
+    ns1:name "Alexander Gelbukh" .
+
+<http://ceur-ws.org/Vol-1050/#AndrejiKo%C5%A1ir> a ns1:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/AndrejiKo%C5%A1ir> ;
+    ns1:made <http://ceur-ws.org/Vol-1050/#paper5> ;
+    ns1:name "Andrej Košir" .
+
+<http://ceur-ws.org/Vol-1050/#AnteiOdi%C4%87> a ns1:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/AnteiOdi%C4%87> ;
+    ns1:made <http://ceur-ws.org/Vol-1050/#paper5> ;
+    ns1:name "Ante Odić" .
+
+<http://ceur-ws.org/Vol-1050/#B%C3%A9atriceiLamche> a ns1:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/B%C3%A9atriceiLamche> ;
+    ns1:made <http://ceur-ws.org/Vol-1050/#paper3> ;
+    ns1:name "Béatrice Lamche" .
+
+<http://ceur-ws.org/Vol-1050/#BamshadiMobasher> a ns1:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/BamshadiMobasher> ;
+    ns1:made <http://ceur-ws.org/Vol-1050/#paper4> ;
+    ns1:name "Bamshad Mobasher" .
+
+<http://ceur-ws.org/Vol-1050/#BartiKnijnenburg> a ns1:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/BartiKnijnenburg> ;
+    ns1:made <http://ceur-ws.org/Vol-1050/#paper7> ;
+    ns1:name "Bart Knijnenburg" .
+
+<http://ceur-ws.org/Vol-1050/#ClaudiaiBecerra> a ns1:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/ClaudiaiBecerra> ;
+    ns1:made <http://ceur-ws.org/Vol-1050/#paper2> ;
+    ns1:name "Claudia Becerra" .
+
+<http://ceur-ws.org/Vol-1050/#FrancescoiRicci> a ns1:Person ;
+    ns2:place <http://dbpedia.org/resource/Italy> ;
+    ns4:affiliation "University of Bozen-Bolzano" ;
+    ns6:sameAs <http://ceur-ws.org/persons/FrancescoiRicci> ;
+    ns1:name "Francesco Ricci" .
+
+<http://ceur-ws.org/Vol-1050/#GiovanniiSemeraro> a ns1:Person ;
+    ns2:place <http://dbpedia.org/resource/Italy> ;
+    ns4:affiliation "University of Bari Aldo Moro" ;
+    ns6:sameAs <http://ceur-ws.org/persons/GiovanniiSemeraro> ;
+    ns1:name "Giovanni Semeraro" .
+
+<http://ceur-ws.org/Vol-1050/#HidekiiAsoh> a ns1:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/HidekiiAsoh> ;
+    ns1:made <http://ceur-ws.org/Vol-1050/#paper1> ;
+    ns1:name "Hideki Asoh" .
+
+<http://ceur-ws.org/Vol-1050/#JaniWeicker> a ns1:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/JaniWeicker> ;
+    ns1:made <http://ceur-ws.org/Vol-1050/#paper3> ;
+    ns1:name "Jan Weicker" .
+
+<http://ceur-ws.org/Vol-1050/#JilliFreyne> a ns1:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/JilliFreyne> ;
+    ns1:made <http://ceur-ws.org/Vol-1050/#paper8> ;
+    ns1:name "Jill Freyne" .
+
+<http://ceur-ws.org/Vol-1050/#JuniSakuma> a ns1:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/JuniSakuma> ;
+    ns1:made <http://ceur-ws.org/Vol-1050/#paper1> ;
+    ns1:name "Jun Sakuma" .
+
+<http://ceur-ws.org/Vol-1050/#LiiChen> a ns1:Person ;
+    ns2:place <http://dbpedia.org/resource/Hong_Kong> ;
+    ns4:affiliation "Hong Kong Baptist University" ;
+    ns6:sameAs <http://ceur-ws.org/persons/LiiChen> ;
+    ns1:name "Li Chen" .
+
+<http://ceur-ws.org/Vol-1050/#LuciMartens> a ns1:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/LuciMartens> ;
+    ns1:made <http://ceur-ws.org/Vol-1050/#paper6> ;
+    ns1:name "Luc Martens" .
+
+<http://ceur-ws.org/Vol-1050/#MarcoideiGemmis> a ns1:Person ;
+    ns2:place <http://dbpedia.org/resource/Italy> ;
+    ns4:affiliation "University of Bari Aldo Moro" ;
+    ns6:sameAs <http://ceur-ws.org/persons/MarcoideiGemmis> ;
+    ns1:name "Marco de Gemmis" .
+
+<http://ceur-ws.org/Vol-1050/#MarkoiTkal%C4%8Di%C4%8D> a ns1:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/MarkoiTkal%C4%8Di%C4%8D> ;
+    ns1:made <http://ceur-ws.org/Vol-1050/#paper5> ;
+    ns1:name "Marko Tkalčič" .
+
+<http://ceur-ws.org/Vol-1050/#MartijniWillemsen> a ns1:Person ;
+    ns4:affiliation "Eindhoven University of Technology, The Nederlands" ;
+    ns6:sameAs <http://ceur-ws.org/persons/MartijniWillemsen> ;
+    ns1:name "Martijn Willemsen" .
+
+<http://ceur-ws.org/Vol-1050/#PasqualeiLops> a ns1:Person ;
+    ns2:place <http://dbpedia.org/resource/Italy> ;
+    ns4:affiliation "University of Bari Aldo Moro" ;
+    ns6:sameAs <http://ceur-ws.org/persons/PasqualeiLops> ;
+    ns1:name "Pasquale Lops" .
+
+<http://ceur-ws.org/Vol-1050/#RobiniBurke> a ns1:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/RobiniBurke> ;
+    ns1:made <http://ceur-ws.org/Vol-1050/#paper4> ;
+    ns1:name "Robin Burke" .
+
+<http://ceur-ws.org/Vol-1050/#SergioiJimenez> a ns1:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/SergioiJimenez> ;
+    ns1:made <http://ceur-ws.org/Vol-1050/#paper2> ;
+    ns1:name "Sergio Jimenez" .
+
+<http://ceur-ws.org/Vol-1050/#ShlomoiBerkovsky> a ns1:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/ShlomoiBerkovsky> ;
+    ns1:made <http://ceur-ws.org/Vol-1050/#paper8> ;
+    ns1:name "Shlomo Berkovsky" .
+
+<http://ceur-ws.org/Vol-1050/#ShotaroiAkaho> a ns1:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/ShotaroiAkaho> ;
+    ns1:made <http://ceur-ws.org/Vol-1050/#paper1> ;
+    ns1:name "Shotaro Akaho" .
+
+<http://ceur-ws.org/Vol-1050/#SimoniDooms> a ns1:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/SimoniDooms> ;
+    ns1:made <http://ceur-ws.org/Vol-1050/#paper6> ;
+    ns1:name "Simon Dooms" .
+
+<http://ceur-ws.org/Vol-1050/#TooniDeiPessemier> a ns1:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/TooniDeiPessemier> ;
+    ns1:made <http://ceur-ws.org/Vol-1050/#paper6> ;
+    ns1:name "Toon De Pessemier" .
+
+<http://ceur-ws.org/Vol-1050/#ToshihiroiKamishima> a ns1:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/ToshihiroiKamishima> ;
+    ns1:made <http://ceur-ws.org/Vol-1050/#paper1> ;
+    ns1:name "Toshihiro Kamishima" .
+
+<http://ceur-ws.org/Vol-1050/#WolfgangiW%C3%B6rndl> a ns1:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/WolfgangiW%C3%B6rndl> ;
+    ns1:made <http://ceur-ws.org/Vol-1050/#paper3> ;
+    ns1:name "Wolfgang Wörndl" .
+
+<http://ceur-ws.org/Vol-1050/#YongiZheng> a ns1:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/YongiZheng> ;
+    ns1:made <http://ceur-ws.org/Vol-1050/#paper4> ;
+    ns1:name "Yong Zheng" .
+
+<http://ceur-ws.org/Vol-1050/#event> a ns3:WorkshopEvent ;
+    ns3:hasLocation <http://dbpedia.org/resource/China> ;
+    ns3:hasPart <http://ceur-ws.org/Vol-1050/#part-ws> ;
+    ns3:isSubEventOf <http://ceur-ws.org/Vol-1050/#conf> ;
+    ns8:beginsAtDatetime "2013-10-12T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:endsAtDatetime "2013-10-12T00:00:00+00:00"^^xsd:dateTime ;
+    ns5:license "http://choosealicense.com/licenses/no-license/" ;
+    rdfs:seeAlso <http://ceur-ws.org/Vol-811/#event>,
+        <http://ceur-ws.org/Vol-893/#event> .
+
+<http://ceur-ws.org/Vol-1050/#paper7> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1050/> ;
+    ns7:title "Simplifying Privacy Decisions: Towards Interactive and Adaptive Solutions" ;
+    ns2:endPage 41 ;
+    ns2:numPages 2 ;
+    ns2:section <http://ceur-ws.org/Vol-1050/#InvitedPresentations> ;
+    ns2:startPage 40 ;
+    ns4:author <http://ceur-ws.org/Vol-1050/#BartiKnijnenburg> .
+
+<http://ceur-ws.org/Vol-1050/#InvitedPresentations> a ns3:SessionEvent ;
+    ns3:partOf <http://ceur-ws.org/Vol-1050/> ;
+    ns7:title "Invited Presentations" .
+
+<http://ceur-ws.org/Vol-1050/#paper8> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1050/> ;
+    ns7:title "Food Recommendations: Biases that Underpin Ratings" ;
+    ns2:endPage 42 ;
+    ns2:numPages 1 ;
+    ns2:section <http://ceur-ws.org/Vol-1050/#InvitedPresentations> ;
+    ns2:startPage 42 ;
+    ns4:author <http://ceur-ws.org/Vol-1050/#JilliFreyne>,
+        <http://ceur-ws.org/Vol-1050/#ShlomoiBerkovsky> .
+
+<http://ceur-ws.org/Vol-1050/#paper2> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1050/> ;
+    ns7:title "Towards User Profile-based Interfaces for Exploration of Large Collections of Items" ;
+    ns2:endPage 16 ;
+    ns2:numPages 8 ;
+    ns2:section <http://ceur-ws.org/Vol-1050/#AcceptedPapers> ;
+    ns2:startPage 9 ;
+    ns4:author <http://ceur-ws.org/Vol-1050/#AlexanderiGelbukh>,
+        <http://ceur-ws.org/Vol-1050/#ClaudiaiBecerra>,
+        <http://ceur-ws.org/Vol-1050/#SergioiJimenez> .
+
+<http://ceur-ws.org/Vol-1050/#paper3> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1050/> ;
+    ns7:title "Selecting Gestural User Interaction Patterns for Recommender Applications on Smartphones" ;
+    ns2:endPage 20 ;
+    ns2:numPages 4 ;
+    ns2:section <http://ceur-ws.org/Vol-1050/#AcceptedPapers> ;
+    ns2:startPage 17 ;
+    ns4:author <http://ceur-ws.org/Vol-1050/#B%C3%A9atriceiLamche>,
+        <http://ceur-ws.org/Vol-1050/#JaniWeicker>,
+        <http://ceur-ws.org/Vol-1050/#WolfgangiW%C3%B6rndl> .
+
+<http://ceur-ws.org/Vol-1050/#paper4> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1050/> ;
+    ns7:title "The Role of Emotions in Context-aware Recommendation" ;
+    ns2:endPage 28 ;
+    ns2:numPages 8 ;
+    ns2:section <http://ceur-ws.org/Vol-1050/#AcceptedPapers> ;
+    ns2:startPage 21 ;
+    ns4:author <http://ceur-ws.org/Vol-1050/#BamshadiMobasher>,
+        <http://ceur-ws.org/Vol-1050/#RobiniBurke>,
+        <http://ceur-ws.org/Vol-1050/#YongiZheng> .
+
+<http://ceur-ws.org/Vol-1050/#paper5> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1050/> ;
+    ns7:title "Managing Irrelevant Contextual Categories in a Movie Recommender System" ;
+    ns2:endPage 35 ;
+    ns2:numPages 7 ;
+    ns2:section <http://ceur-ws.org/Vol-1050/#AcceptedPapers> ;
+    ns2:startPage 29 ;
+    ns4:author <http://ceur-ws.org/Vol-1050/#AndrejiKo%C5%A1ir>,
+        <http://ceur-ws.org/Vol-1050/#AnteiOdi%C4%87>,
+        <http://ceur-ws.org/Vol-1050/#MarkoiTkal%C4%8Di%C4%8D> .
+
+<http://ceur-ws.org/Vol-1050/#paper6> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1050/> ;
+    ns7:title "An Improved Data Aggregation Strategy for Group Recommendations" ;
+    ns2:endPage 39 ;
+    ns2:numPages 4 ;
+    ns2:section <http://ceur-ws.org/Vol-1050/#AcceptedPapers> ;
+    ns2:startPage 36 ;
+    ns4:author <http://ceur-ws.org/Vol-1050/#LuciMartens>,
+        <http://ceur-ws.org/Vol-1050/#SimoniDooms>,
+        <http://ceur-ws.org/Vol-1050/#TooniDeiPessemier> .
+
+<http://ceur-ws.org/Vol-1050/#paper1> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1050/> ;
+    ns7:title "Efficiency Improvement of Neutrality-Enhanced Recommendation" ;
+    ns2:endPage 8 ;
+    ns2:numPages 8 ;
+    ns2:section <http://ceur-ws.org/Vol-1050/#AcceptedPapers> ;
+    ns2:startPage 1 ;
+    ns4:author <http://ceur-ws.org/Vol-1050/#HidekiiAsoh>,
+        <http://ceur-ws.org/Vol-1050/#JuniSakuma>,
+        <http://ceur-ws.org/Vol-1050/#ShotaroiAkaho>,
+        <http://ceur-ws.org/Vol-1050/#ToshihiroiKamishima> .
+
+<http://ceur-ws.org/Vol-1050/#AcceptedPapers> a ns3:SessionEvent ;
+    ns3:partOf <http://ceur-ws.org/Vol-1050/> ;
+    ns7:title "Accepted Papers" .
+
+<http://ceur-ws.org/Vol-1050/> a ns3:Proceedings ;
+    ns3:hasPart <http://ceur-ws.org/Vol-1050/#paper1>,
+        <http://ceur-ws.org/Vol-1050/#paper2>,
+        <http://ceur-ws.org/Vol-1050/#paper3>,
+        <http://ceur-ws.org/Vol-1050/#paper4>,
+        <http://ceur-ws.org/Vol-1050/#paper5>,
+        <http://ceur-ws.org/Vol-1050/#paper6>,
+        <http://ceur-ws.org/Vol-1050/#paper7>,
+        <http://ceur-ws.org/Vol-1050/#paper8> ;
+    ns3:hasSession <http://ceur-ws.org/Vol-1050/#AcceptedPapers>,
+        <http://ceur-ws.org/Vol-1050/#InvitedPresentations> ;
+    ns9:issued "2013-09-27T00:00:00+00:00"^^xsd:dateTime ;
+    ns2:presentedAt <http://ceur-ws.org/Vol-1050/#event> ;
+    ns4:editor <http://ceur-ws.org/Vol-1050/#AlexanderiFelfernig>,
         <http://ceur-ws.org/Vol-1050/#FrancescoiRicci>,
         <http://ceur-ws.org/Vol-1050/#GiovanniiSemeraro>,
         <http://ceur-ws.org/Vol-1050/#LiiChen>,
         <http://ceur-ws.org/Vol-1050/#MarcoideiGemmis>,
         <http://ceur-ws.org/Vol-1050/#MartijniWillemsen>,
         <http://ceur-ws.org/Vol-1050/#PasqualeiLops> .
-
-<http://ceur-ws.org/Vol-1050/#AlexanderiFelfernig> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/AlexanderiFelfernig> ;
-    ns1:name "Alexander Felfernig" .
-
-<http://ceur-ws.org/Vol-1050/#FrancescoiRicci> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/FrancescoiRicci> ;
-    ns1:name "Francesco Ricci" .
-
-<http://ceur-ws.org/Vol-1050/#GiovanniiSemeraro> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/GiovanniiSemeraro> ;
-    ns1:name "Giovanni Semeraro" .
-
-<http://ceur-ws.org/Vol-1050/#LiiChen> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/LiiChen> ;
-    ns1:name "Li Chen" .
-
-<http://ceur-ws.org/Vol-1050/#MarcoideiGemmis> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/MarcoideiGemmis> ;
-    ns1:name "Marco de Gemmis" .
-
-<http://ceur-ws.org/Vol-1050/#MartijniWillemsen> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/MartijniWillemsen> ;
-    ns1:name "Martijn Willemsen" .
-
-<http://ceur-ws.org/Vol-1050/#PasqualeiLops> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/PasqualeiLops> ;
-    ns1:name "Pasquale Lops" .
-
-<http://ceur-ws.org/Vol-1050/#event> a ns7:WorkshopEvent ;
-    ns7:hasLocation <http://dbpedia.org/resource/China> ;
-    ns7:hasPart <http://ceur-ws.org/Vol-1050/#part-CEUR-WS> ;
-    ns7:isSubEventOf <http://ceur-ws.org/Vol-1050/#conf> ;
-    ns5:beginsAtDatetime "2013-10-12T00:00:00+00:00"^^xsd:dateTime ;
-    ns5:endsAtDatetime "2013-10-12T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:license "http://choosealicense.com/licenses/no-license/" ;
-    rdfs:seeAlso <http://ceur-ws.org/Vol-811/#event>,
-        <http://ceur-ws.org/Vol-893/#event> .
 

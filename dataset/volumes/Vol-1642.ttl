@@ -1,46 +1,177 @@
-@prefix ns1: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns2: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns3: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns4: <http://www.w3.org/2002/07/owl#> .
-@prefix ns5: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns6: <http://purl.org/ontology/bibo/#> .
-@prefix ns7: <http://xmlns.com/foaf/0.1/> .
-@prefix ns8: <http://purl.org/dc/elements/1.1/> .
+@prefix ns1: <http://purl.org/ontology/bibo/#> .
+@prefix ns2: <http://www.w3.org/2002/07/owl#> .
+@prefix ns3: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns4: <http://xmlns.com/foaf/0.1/> .
+@prefix ns5: <http://purl.org/dc/elements/1.1/> .
+@prefix ns6: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns7: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns8: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns9: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1642/> a ns1:Proceedings ;
-    ns3:issued "2016-07-16T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:presentedAt <http://ceur-ws.org/Vol-1642/#event> ;
-    ns2:editor <http://ceur-ws.org/Vol-1642/#FrankiHopfgartner>,
+<http://ceur-ws.org/Vol-1642/#AndreasiLeibetseder> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/AndreasiLeibetseder> ;
+    ns4:made <http://ceur-ws.org/Vol-1642/#paper6> ;
+    ns4:name "Andreas Leibetseder" .
+
+<http://ceur-ws.org/Vol-1642/#FrankiHopfgartner> a ns4:Person ;
+    ns8:affiliation "" ;
+    ns2:sameAs <http://ceur-ws.org/persons/FrankiHopfgartner> ;
+    ns4:name "Frank Hopfgartner" .
+
+<http://ceur-ws.org/Vol-1642/#GabriellaiKazai> a ns4:Person ;
+    ns8:affiliation "" ;
+    ns2:sameAs <http://ceur-ws.org/persons/GabriellaiKazai> ;
+    ns4:name "Gabriella Kazai" .
+
+<http://ceur-ws.org/Vol-1642/#GiorgioiMariaiDiiNunzio> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/GiorgioiMariaiDiiNunzio> ;
+    ns4:made <http://ceur-ws.org/Vol-1642/#paper7> ;
+    ns4:name "Giorgio Maria Di Nunzio" .
+
+<http://ceur-ws.org/Vol-1642/#IoannisiKaratassis> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/IoannisiKaratassis> ;
+    ns4:made <http://ceur-ws.org/Vol-1642/#paper3> ;
+    ns4:name "Ioannis Karatassis" .
+
+<http://ceur-ws.org/Vol-1642/#LauraiGuillot> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/LauraiGuillot> ;
+    ns4:made <http://ceur-ws.org/Vol-1642/#paper4> ;
+    ns4:name "Laura Guillot" .
+
+<http://ceur-ws.org/Vol-1642/#MatthewiBarr> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/MatthewiBarr> ;
+    ns4:made <http://ceur-ws.org/Vol-1642/#paper1> ;
+    ns4:name "Matthew Barr" .
+
+<http://ceur-ws.org/Vol-1642/#SebastianiDeterding> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/SebastianiDeterding> ;
+    ns4:made <http://ceur-ws.org/Vol-1642/#intro1> ;
+    ns4:name "Sebastian Deterding" .
+
+<http://ceur-ws.org/Vol-1642/#UdoiKruschwitz> a ns4:Person ;
+    ns8:affiliation "" ;
+    ns2:sameAs <http://ceur-ws.org/persons/UdoiKruschwitz> ;
+    ns4:name "Udo Kruschwitz" .
+
+<http://ceur-ws.org/Vol-1642/#YuaniJin> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/YuaniJin> ;
+    ns4:made <http://ceur-ws.org/Vol-1642/#paper5> ;
+    ns4:name "Yuan Jin" .
+
+<http://ceur-ws.org/Vol-1642/#event> a ns3:WorkshopEvent ;
+    ns3:hasLocation <http://dbpedia.org/resource/Italy> ;
+    ns3:hasPart <http://ceur-ws.org/Vol-1642/#part-GamifIR> ;
+    ns3:isSubEventOf <http://ceur-ws.org/Vol-1642/#conf> ;
+    ns6:beginsAtDatetime "2016-07-21T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:endsAtDatetime "2016-07-21T00:00:00+00:00"^^xsd:dateTime ;
+    ns5:license "http://creativecommons.org/publicdomain/zero/1.0/" ;
+    rdfs:seeAlso <http://ceur-ws.org/Vol-1345/#event> .
+
+<http://ceur-ws.org/Vol-1642/#InvitedTalk> a ns3:SessionEvent ;
+    ns3:partOf <http://ceur-ws.org/Vol-1642/> ;
+    ns7:title "Invited Talk" .
+
+<http://ceur-ws.org/Vol-1642/#MichaeliMeder> a ns4:Person ;
+    ns8:affiliation "" ;
+    ns2:sameAs <http://ceur-ws.org/persons/MichaeliMeder> ;
+    ns4:made <http://ceur-ws.org/Vol-1642/#paper2> ;
+    ns4:name "Michael Meder" .
+
+<http://ceur-ws.org/Vol-1642/#intro1> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1642/> ;
+    ns7:title "Desperately Seeking Theory: Gamification, Design, Data, Machine Learning, and the Promise of Double Loop Learning Systems" ;
+    ns1:endPage 1 ;
+    ns1:numPages 1 ;
+    ns1:section <http://ceur-ws.org/Vol-1642/#InvitedTalk> ;
+    ns1:startPage 1 ;
+    ns8:author <http://ceur-ws.org/Vol-1642/#SebastianiDeterding> .
+
+<http://ceur-ws.org/Vol-1642/#paper1> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1642/> ;
+    ns7:title "Increasing Engagement with the Library via Gamification" ;
+    ns1:endPage 6 ;
+    ns1:numPages 5 ;
+    ns1:section <http://ceur-ws.org/Vol-1642/#PeerreviewedPapers> ;
+    ns1:startPage 2 ;
+    ns8:author <http://ceur-ws.org/Vol-1642/#MatthewiBarr> .
+
+<http://ceur-ws.org/Vol-1642/#paper2> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1642/> ;
+    ns7:title "Learning Gamification Design - An Usability First Approach for the Enterprise Infoboard Experiment" ;
+    ns1:endPage 14 ;
+    ns1:numPages 8 ;
+    ns1:section <http://ceur-ws.org/Vol-1642/#PeerreviewedPapers> ;
+    ns1:startPage 7 ;
+    ns8:author <http://ceur-ws.org/Vol-1642/#MichaeliMeder> .
+
+<http://ceur-ws.org/Vol-1642/#paper3> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1642/> ;
+    ns7:title "Gamification for WebSAIL" ;
+    ns1:endPage 20 ;
+    ns1:numPages 6 ;
+    ns1:section <http://ceur-ws.org/Vol-1642/#PeerreviewedPapers> ;
+    ns1:startPage 15 ;
+    ns8:author <http://ceur-ws.org/Vol-1642/#IoannisiKaratassis> .
+
+<http://ceur-ws.org/Vol-1642/#paper4> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1642/> ;
+    ns7:title "Towards a Gamified System to Improve Translation for Online Meetings" ;
+    ns1:endPage 28 ;
+    ns1:numPages 8 ;
+    ns1:section <http://ceur-ws.org/Vol-1642/#PeerreviewedPapers> ;
+    ns1:startPage 21 ;
+    ns8:author <http://ceur-ws.org/Vol-1642/#LauraiGuillot> .
+
+<http://ceur-ws.org/Vol-1642/#paper5> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1642/> ;
+    ns7:title "A Little Competition Never Hurt Anyone's Relevance Assessments" ;
+    ns1:endPage 36 ;
+    ns1:numPages 8 ;
+    ns1:section <http://ceur-ws.org/Vol-1642/#PeerreviewedPapers> ;
+    ns1:startPage 29 ;
+    ns8:author <http://ceur-ws.org/Vol-1642/#YuaniJin> .
+
+<http://ceur-ws.org/Vol-1642/#paper6> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1642/> ;
+    ns7:title "Gamifying Fitness or Fitnessifying Games: a Comparative Study" ;
+    ns1:endPage 44 ;
+    ns1:numPages 8 ;
+    ns1:section <http://ceur-ws.org/Vol-1642/#PeerreviewedPapers> ;
+    ns1:startPage 37 ;
+    ns8:author <http://ceur-ws.org/Vol-1642/#AndreasiLeibetseder> .
+
+<http://ceur-ws.org/Vol-1642/#paper7> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1642/> ;
+    ns7:title "Gamification for Machine Learning: The Classification Game" ;
+    ns1:endPage 52 ;
+    ns1:numPages 8 ;
+    ns1:section <http://ceur-ws.org/Vol-1642/#PeerreviewedPapers> ;
+    ns1:startPage 45 ;
+    ns8:author <http://ceur-ws.org/Vol-1642/#GiorgioiMariaiDiiNunzio> .
+
+<http://ceur-ws.org/Vol-1642/#PeerreviewedPapers> a ns3:SessionEvent ;
+    ns3:partOf <http://ceur-ws.org/Vol-1642/> ;
+    ns7:title "Peer-reviewed Papers" .
+
+<http://ceur-ws.org/Vol-1642/> a ns3:Proceedings ;
+    ns3:hasPart <http://ceur-ws.org/Vol-1642/#intro1>,
+        <http://ceur-ws.org/Vol-1642/#paper1>,
+        <http://ceur-ws.org/Vol-1642/#paper2>,
+        <http://ceur-ws.org/Vol-1642/#paper3>,
+        <http://ceur-ws.org/Vol-1642/#paper4>,
+        <http://ceur-ws.org/Vol-1642/#paper5>,
+        <http://ceur-ws.org/Vol-1642/#paper6>,
+        <http://ceur-ws.org/Vol-1642/#paper7> ;
+    ns3:hasSession <http://ceur-ws.org/Vol-1642/#InvitedTalk>,
+        <http://ceur-ws.org/Vol-1642/#PeerreviewedPapers> ;
+    ns9:issued "2016-07-16T00:00:00+00:00"^^xsd:dateTime ;
+    ns1:presentedAt <http://ceur-ws.org/Vol-1642/#event> ;
+    ns8:editor <http://ceur-ws.org/Vol-1642/#FrankiHopfgartner>,
         <http://ceur-ws.org/Vol-1642/#GabriellaiKazai>,
         <http://ceur-ws.org/Vol-1642/#MichaeliMeder>,
         <http://ceur-ws.org/Vol-1642/#UdoiKruschwitz> .
-
-<http://ceur-ws.org/Vol-1642/#FrankiHopfgartner> a ns7:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/FrankiHopfgartner> ;
-    ns7:name "Frank Hopfgartner" .
-
-<http://ceur-ws.org/Vol-1642/#GabriellaiKazai> a ns7:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/GabriellaiKazai> ;
-    ns7:name "Gabriella Kazai" .
-
-<http://ceur-ws.org/Vol-1642/#MichaeliMeder> a ns7:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/MichaeliMeder> ;
-    ns7:name "Michael Meder" .
-
-<http://ceur-ws.org/Vol-1642/#UdoiKruschwitz> a ns7:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/UdoiKruschwitz> ;
-    ns7:name "Udo Kruschwitz" .
-
-<http://ceur-ws.org/Vol-1642/#event> a ns1:WorkshopEvent ;
-    ns1:hasLocation <http://dbpedia.org/resource/Italy> ;
-    ns1:hasPart <http://ceur-ws.org/Vol-1642/#part-ws> ;
-    ns1:isSubEventOf <http://ceur-ws.org/Vol-1642/#conf> ;
-    ns5:beginsAtDatetime "2016-07-21T00:00:00+00:00"^^xsd:dateTime ;
-    ns5:endsAtDatetime "2016-07-21T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:license "http://creativecommons.org/publicdomain/zero/1.0/" ;
-    rdfs:seeAlso <http://ceur-ws.org/Vol-1345/#event> .
 

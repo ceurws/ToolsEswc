@@ -1,36 +1,137 @@
-@prefix ns1: <http://www.w3.org/2002/07/owl#> .
-@prefix ns2: <http://purl.org/ontology/bibo/#> .
-@prefix ns3: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns4: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns5: <http://xmlns.com/foaf/0.1/> .
-@prefix ns6: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns7: <http://purl.org/dc/elements/1.1/> .
+@prefix ns1: <http://purl.org/ontology/bibo/#> .
+@prefix ns2: <http://www.w3.org/2002/07/owl#> .
+@prefix ns3: <http://xmlns.com/foaf/0.1/> .
+@prefix ns4: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns5: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns6: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
 @prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns9: <http://purl.org/dc/elements/1.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1462/> a ns3:Proceedings ;
-    ns8:issued "2015-10-08T00:00:00+00:00"^^xsd:dateTime ;
-    ns2:presentedAt <http://ceur-ws.org/Vol-1462/#event> ;
-    ns4:editor <http://ceur-ws.org/Vol-1462/#AntonioiPiccinno>,
-        <http://ceur-ws.org/Vol-1462/#MassimoiMecella> .
+<http://ceur-ws.org/Vol-1462/#AntonioiOpromolla> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/AntonioiOpromolla> ;
+    ns3:made <http://ceur-ws.org/Vol-1462/#paper5> ;
+    ns3:name "Antonio Opromolla" .
 
-<http://ceur-ws.org/Vol-1462/#AntonioiPiccinno> a ns5:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/AntonioiPiccinno> ;
-    ns5:name "Antonio Piccinno" .
+<http://ceur-ws.org/Vol-1462/#AntonioiPiccinno> a ns3:Person ;
+    ns5:affiliation "" ;
+    ns2:sameAs <http://ceur-ws.org/persons/AntonioiPiccinno> ;
+    ns3:name "Antonio Piccinno" .
 
-<http://ceur-ws.org/Vol-1462/#MassimoiMecella> a ns5:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/MassimoiMecella> ;
-    ns5:name "Massimo Mecella" .
+<http://ceur-ws.org/Vol-1462/#AssuntaiMatassa> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/AssuntaiMatassa> ;
+    ns3:made <http://ceur-ws.org/Vol-1462/#paper4> ;
+    ns3:name "Assunta Matassa" .
 
-<http://ceur-ws.org/Vol-1462/#event> a ns3:WorkshopEvent ;
-    ns3:hasLocation <http://dbpedia.org/resource/Italy> ;
-    ns3:hasPart <http://ceur-ws.org/Vol-1462/#part-CHItaly> ;
-    ns3:isSubEventOf <http://ceur-ws.org/Vol-1462/#conf> ;
-    ns6:beginsAtDatetime "2015-09-28T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:endsAtDatetime "2015-09-28T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:license "http://creativecommons.org/publicdomain/zero/1.0/" ;
+<http://ceur-ws.org/Vol-1462/#DarioiDiiMauro> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/DarioiDiiMauro> ;
+    ns3:made <http://ceur-ws.org/Vol-1462/#paper3> ;
+    ns3:name "Dario Di Mauro" .
+
+<http://ceur-ws.org/Vol-1462/#FrancescaiCirianni> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/FrancescaiCirianni> ;
+    ns3:made <http://ceur-ws.org/Vol-1462/#paper2> ;
+    ns3:name "Francesca Cirianni" .
+
+<http://ceur-ws.org/Vol-1462/#MalikiAliQassas> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/MalikiAliQassas> ;
+    ns3:made <http://ceur-ws.org/Vol-1462/#paper1> ;
+    ns3:name "Malik Al Qassas" .
+
+<http://ceur-ws.org/Vol-1462/#MarcoiPolignano> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/MarcoiPolignano> ;
+    ns3:made <http://ceur-ws.org/Vol-1462/#paper6> ;
+    ns3:name "Marco Polignano" .
+
+<http://ceur-ws.org/Vol-1462/#MassimoiMecella> a ns3:Person ;
+    ns5:affiliation "" ;
+    ns2:sameAs <http://ceur-ws.org/persons/MassimoiMecella> ;
+    ns3:name "Massimo Mecella" .
+
+<http://ceur-ws.org/Vol-1462/#PatriziaiRusso> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/PatriziaiRusso> ;
+    ns3:made <http://ceur-ws.org/Vol-1462/#paper7> ;
+    ns3:name "Patrizia Russo" .
+
+<http://ceur-ws.org/Vol-1462/#event> a ns4:WorkshopEvent ;
+    ns4:hasLocation <http://dbpedia.org/resource/Italy> ;
+    ns4:hasPart <http://ceur-ws.org/Vol-1462/#part-CHItaly> ;
+    ns4:isSubEventOf <http://ceur-ws.org/Vol-1462/#conf> ;
+    ns7:beginsAtDatetime "2015-09-28T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:endsAtDatetime "2015-09-28T00:00:00+00:00"^^xsd:dateTime ;
+    ns9:license "http://creativecommons.org/publicdomain/zero/1.0/" ;
     rdfs:seeAlso <http://ceur-ws.org/Vol-1065/#event> .
+
+<http://ceur-ws.org/Vol-1462/#paper1> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1462/> ;
+    ns6:title "An Interactive System for Documentation and Analysis of Clinical Discussions" ;
+    ns1:endPage 12 ;
+    ns1:numPages 12 ;
+    ns1:startPage 1 ;
+    ns5:author <http://ceur-ws.org/Vol-1462/#MalikiAliQassas> .
+
+<http://ceur-ws.org/Vol-1462/#paper2> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1462/> ;
+    ns6:title "Interaction with Mobile Devices and Work-Life Balance" ;
+    ns1:endPage 24 ;
+    ns1:numPages 12 ;
+    ns1:startPage 13 ;
+    ns5:author <http://ceur-ws.org/Vol-1462/#FrancescaiCirianni> .
+
+<http://ceur-ws.org/Vol-1462/#paper3> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1462/> ;
+    ns6:title "A Framework to Support Multiple Levels of Interaction" ;
+    ns1:endPage 33 ;
+    ns1:numPages 9 ;
+    ns1:startPage 25 ;
+    ns5:author <http://ceur-ws.org/Vol-1462/#DarioiDiiMauro> .
+
+<http://ceur-ws.org/Vol-1462/#paper4> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1462/> ;
+    ns6:title "Interaction with a Personalised Smart Space to Enhance People Everyday Life" ;
+    ns1:endPage 45 ;
+    ns1:numPages 12 ;
+    ns1:startPage 34 ;
+    ns5:author <http://ceur-ws.org/Vol-1462/#AssuntaiMatassa> .
+
+<http://ceur-ws.org/Vol-1462/#paper5> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1462/> ;
+    ns6:title "“Gamified” Social Dynamics in the Interactive Systems as a Possible Solution for Increasing Co-Design of Emerging Services in Smart Territories" ;
+    ns1:endPage 57 ;
+    ns1:numPages 12 ;
+    ns1:startPage 46 ;
+    ns5:author <http://ceur-ws.org/Vol-1462/#AntonioiOpromolla> .
+
+<http://ceur-ws.org/Vol-1462/#paper6> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1462/> ;
+    ns6:title "The Infuence of User's Emotions in Recommender Systems for Decision Making Processes" ;
+    ns1:endPage 66 ;
+    ns1:numPages 9 ;
+    ns1:startPage 58 ;
+    ns5:author <http://ceur-ws.org/Vol-1462/#MarcoiPolignano> .
+
+<http://ceur-ws.org/Vol-1462/#paper7> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1462/> ;
+    ns6:title "Investigating Usability of Planning Support Systems and Improving their Adoption and Use by Land Use Planners" ;
+    ns1:endPage 76 ;
+    ns1:numPages 10 ;
+    ns1:startPage 67 ;
+    ns5:author <http://ceur-ws.org/Vol-1462/#PatriziaiRusso> .
+
+<http://ceur-ws.org/Vol-1462/> a ns4:Proceedings ;
+    ns4:hasPart <http://ceur-ws.org/Vol-1462/#paper1>,
+        <http://ceur-ws.org/Vol-1462/#paper2>,
+        <http://ceur-ws.org/Vol-1462/#paper3>,
+        <http://ceur-ws.org/Vol-1462/#paper4>,
+        <http://ceur-ws.org/Vol-1462/#paper5>,
+        <http://ceur-ws.org/Vol-1462/#paper6>,
+        <http://ceur-ws.org/Vol-1462/#paper7> ;
+    ns8:issued "2015-10-08T00:00:00+00:00"^^xsd:dateTime ;
+    ns1:presentedAt <http://ceur-ws.org/Vol-1462/#event> ;
+    ns5:editor <http://ceur-ws.org/Vol-1462/#AntonioiPiccinno>,
+        <http://ceur-ws.org/Vol-1462/#MassimoiMecella> .
 

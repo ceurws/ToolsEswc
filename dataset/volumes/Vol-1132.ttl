@@ -1,35 +1,183 @@
-@prefix ns1: <http://purl.org/dc/elements/1.1/> .
-@prefix ns2: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns1: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns2: <http://purl.org/ontology/bibo/#> .
 @prefix ns3: <http://www.w3.org/2002/07/owl#> .
-@prefix ns4: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns5: <http://purl.org/ontology/bibo/#> .
-@prefix ns6: <http://xmlns.com/foaf/0.1/> .
-@prefix ns7: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns4: <http://xmlns.com/foaf/0.1/> .
+@prefix ns5: <http://purl.org/dc/elements/1.1/> .
+@prefix ns6: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns7: <http://purl.org/dc/elements/1.1/#> .
 @prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns9: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1132/> a ns7:Proceedings ;
-    ns2:issued "2014-03-02T00:00:00+00:00"^^xsd:dateTime ;
-    ns5:presentedAt <http://ceur-ws.org/Vol-1132/#event> ;
-    ns4:editor <http://ceur-ws.org/Vol-1132/#JimiBurton>,
-        <http://ceur-ws.org/Vol-1132/#LopamudraiChoudhury> .
+<http://ceur-ws.org/Vol-1132/#GemiStapleton> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/GemiStapleton> ;
+    ns4:made <http://ceur-ws.org/Vol-1132/#paper1> ;
+    ns4:name "Gem Stapleton" .
 
-<http://ceur-ws.org/Vol-1132/#JimiBurton> a ns6:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/JimiBurton> ;
-    ns6:name "Jim Burton" .
+<http://ceur-ws.org/Vol-1132/#MihiriKumariChakraborty> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/MihiriKumariChakraborty> ;
+    ns4:made <http://ceur-ws.org/Vol-1132/#paper7> ;
+    ns4:name "Mihir Kumar Chakraborty" .
 
-<http://ceur-ws.org/Vol-1132/#LopamudraiChoudhury> a ns6:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/LopamudraiChoudhury> ;
-    ns6:name "Lopamudra Choudhury" .
+<http://ceur-ws.org/Vol-1132/#RyoiTakemura> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/RyoiTakemura> ;
+    ns4:made <http://ceur-ws.org/Vol-1132/#paper2> ;
+    ns4:name "Ryo Takemura" .
 
-<http://ceur-ws.org/Vol-1132/#event> a ns7:WorkshopEvent ;
-    ns7:hasLocation <http://dbpedia.org/resource/India> ;
-    ns7:hasPart <http://ceur-ws.org/Vol-1132/#part-ws> ;
-    ns7:isSubEventOf <http://ceur-ws.org/Vol-1132/#conf> ;
+<http://ceur-ws.org/Vol-1132/#ShyamantaiMiHazarika> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/ShyamantaiMiHazarika> ;
+    ns4:made <http://ceur-ws.org/Vol-1132/#paper6> ;
+    ns4:name "Shyamanta M Hazarika" .
+
+<http://ceur-ws.org/Vol-1132/#SumantaiSarathiiSharma> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/SumantaiSarathiiSharma> ;
+    ns4:made <http://ceur-ws.org/Vol-1132/#paper3> ;
+    ns4:name "Sumanta Sarathi Sharma" .
+
+<http://ceur-ws.org/Vol-1132/#event> a ns1:WorkshopEvent ;
+    ns1:hasLocation <http://dbpedia.org/resource/India> ;
+    ns1:hasPart <http://ceur-ws.org/Vol-1132/#part-DLAC> ;
+    ns1:isSubEventOf <http://ceur-ws.org/Vol-1132/#conf> ;
     ns8:beginsAtDatetime "2013-10-28T00:00:00+00:00"^^xsd:dateTime ;
     ns8:endsAtDatetime "2013-10-29T00:00:00+00:00"^^xsd:dateTime ;
-    ns1:license "http://choosealicense.com/licenses/no-license/" .
+    ns5:license "http://choosealicense.com/licenses/no-license/" .
+
+<http://ceur-ws.org/Vol-1132/#Ahti-VeikkoiPietarinen> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/Ahti-VeikkoiPietarinen> ;
+    ns4:made <http://ceur-ws.org/Vol-1132/#paper4>,
+        <http://ceur-ws.org/Vol-1132/#paper5> ;
+    ns4:name "Ahti-Veikko Pietarinen" .
+
+<http://ceur-ws.org/Vol-1132/#AmiroucheiMoktefi> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/AmiroucheiMoktefi> ;
+    ns4:made <http://ceur-ws.org/Vol-1132/#paper4>,
+        <http://ceur-ws.org/Vol-1132/#paper5> ;
+    ns4:name "Amirouche Moktefi" .
+
+<http://ceur-ws.org/Vol-1132/#FrancescoiBellucci> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/FrancescoiBellucci> ;
+    ns4:made <http://ceur-ws.org/Vol-1132/#paper4>,
+        <http://ceur-ws.org/Vol-1132/#paper5> ;
+    ns4:name "Francesco Bellucci" .
+
+<http://ceur-ws.org/Vol-1132/#JimiBurton> a ns4:Person ;
+    ns6:affiliation "" ;
+    ns3:sameAs <http://ceur-ws.org/persons/JimiBurton> ;
+    ns4:made <http://ceur-ws.org/Vol-1132/#paper8> ;
+    ns4:name "Jim Burton" .
+
+<http://ceur-ws.org/Vol-1132/#Keynotespeech> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-1132/> ;
+    ns7:title "Keynote speech" .
+
+<http://ceur-ws.org/Vol-1132/#LopamudraiChoudhury> a ns4:Person ;
+    ns6:affiliation "" ;
+    ns3:sameAs <http://ceur-ws.org/persons/LopamudraiChoudhury> ;
+    ns4:made <http://ceur-ws.org/Vol-1132/#paper7> ;
+    ns4:name "Lopamudra Choudhury" .
+
+<http://ceur-ws.org/Vol-1132/#paper1> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1132/> ;
+    ns7:title "Delivering the Potential of Diagrammatic Logics" ;
+    ns2:endPage 8 ;
+    ns2:numPages 8 ;
+    ns2:section <http://ceur-ws.org/Vol-1132/#Keynotespeech> ;
+    ns2:startPage 1 ;
+    ns6:author <http://ceur-ws.org/Vol-1132/#GemiStapleton> .
+
+<http://ceur-ws.org/Vol-1132/#paper2> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1132/> ;
+    ns7:title "A Heterogeneous Logic with Tables" ;
+    ns2:endPage 16 ;
+    ns2:numPages 8 ;
+    ns2:section <http://ceur-ws.org/Vol-1132/#Mainworkshop> ;
+    ns2:startPage 9 ;
+    ns6:author <http://ceur-ws.org/Vol-1132/#RyoiTakemura> .
+
+<http://ceur-ws.org/Vol-1132/#paper3> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1132/> ;
+    ns7:title "Perfect Syllogisms and the Method of Minimal Representation" ;
+    ns2:endPage 22 ;
+    ns2:numPages 6 ;
+    ns2:section <http://ceur-ws.org/Vol-1132/#Mainworkshop> ;
+    ns2:startPage 17 ;
+    ns6:author <http://ceur-ws.org/Vol-1132/#SumantaiSarathiiSharma> .
+
+<http://ceur-ws.org/Vol-1132/#paper6> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1132/> ;
+    ns7:title "Reasoning about Directions in an Egocentric Spatial Reference Frame" ;
+    ns2:endPage 42 ;
+    ns2:numPages 7 ;
+    ns2:section <http://ceur-ws.org/Vol-1132/#Mainworkshop> ;
+    ns2:startPage 36 ;
+    ns6:author <http://ceur-ws.org/Vol-1132/#ShyamantaiMiHazarika> .
+
+<http://ceur-ws.org/Vol-1132/#paper8> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1132/> ;
+    ns7:title "Improving the Experience of Ontology Design, Management and Enquiry with Concept Diagrams" ;
+    ns2:endPage 56 ;
+    ns2:numPages 7 ;
+    ns2:section <http://ceur-ws.org/Vol-1132/#Invitedtalks> ;
+    ns2:startPage 50 ;
+    ns6:author <http://ceur-ws.org/Vol-1132/#JimiBurton> .
+
+<http://ceur-ws.org/Vol-1132/#Invitedtalks> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-1132/> ;
+    ns7:title "Invited talks" .
+
+<http://ceur-ws.org/Vol-1132/#paper7> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1132/> ;
+    ns7:title "Singular Propositions and their Negations in Diagrams" ;
+    ns2:endPage 49 ;
+    ns2:numPages 7 ;
+    ns2:section <http://ceur-ws.org/Vol-1132/#Invitedtalks> ;
+    ns2:startPage 43 ;
+    ns6:author <http://ceur-ws.org/Vol-1132/#LopamudraiChoudhury>,
+        <http://ceur-ws.org/Vol-1132/#MihiriKumariChakraborty> .
+
+<http://ceur-ws.org/Vol-1132/#paper4> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1132/> ;
+    ns7:title "Diagrammatic Autarchy: Linear diagrams in the 17th and 18th centuries" ;
+    ns2:endPage 30 ;
+    ns2:numPages 8 ;
+    ns2:section <http://ceur-ws.org/Vol-1132/#Mainworkshop> ;
+    ns2:startPage 23 ;
+    ns6:author <http://ceur-ws.org/Vol-1132/#Ahti-VeikkoiPietarinen>,
+        <http://ceur-ws.org/Vol-1132/#AmiroucheiMoktefi>,
+        <http://ceur-ws.org/Vol-1132/#FrancescoiBellucci> .
+
+<http://ceur-ws.org/Vol-1132/#paper5> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1132/> ;
+    ns7:title "Continuity, Connectivity and Regularity in Spatial Diagrams for N Terms" ;
+    ns2:endPage 35 ;
+    ns2:numPages 5 ;
+    ns2:section <http://ceur-ws.org/Vol-1132/#Mainworkshop> ;
+    ns2:startPage 31 ;
+    ns6:author <http://ceur-ws.org/Vol-1132/#Ahti-VeikkoiPietarinen>,
+        <http://ceur-ws.org/Vol-1132/#AmiroucheiMoktefi>,
+        <http://ceur-ws.org/Vol-1132/#FrancescoiBellucci> .
+
+<http://ceur-ws.org/Vol-1132/#Mainworkshop> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-1132/> ;
+    ns7:title "Main workshop" .
+
+<http://ceur-ws.org/Vol-1132/> a ns1:Proceedings ;
+    ns1:hasPart <http://ceur-ws.org/Vol-1132/#paper1>,
+        <http://ceur-ws.org/Vol-1132/#paper2>,
+        <http://ceur-ws.org/Vol-1132/#paper3>,
+        <http://ceur-ws.org/Vol-1132/#paper4>,
+        <http://ceur-ws.org/Vol-1132/#paper5>,
+        <http://ceur-ws.org/Vol-1132/#paper6>,
+        <http://ceur-ws.org/Vol-1132/#paper7>,
+        <http://ceur-ws.org/Vol-1132/#paper8> ;
+    ns1:hasSession <http://ceur-ws.org/Vol-1132/#Invitedtalks>,
+        <http://ceur-ws.org/Vol-1132/#Keynotespeech>,
+        <http://ceur-ws.org/Vol-1132/#Mainworkshop> ;
+    ns9:issued "2014-03-02T00:00:00+00:00"^^xsd:dateTime ;
+    ns2:presentedAt <http://ceur-ws.org/Vol-1132/#event> ;
+    ns6:editor <http://ceur-ws.org/Vol-1132/#JimiBurton>,
+        <http://ceur-ws.org/Vol-1132/#LopamudraiChoudhury> .
 

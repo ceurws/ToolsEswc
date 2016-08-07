@@ -1,37 +1,84 @@
-@prefix ns1: <http://xmlns.com/foaf/0.1/> .
-@prefix ns2: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns3: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns4: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns5: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns6: <http://purl.org/ontology/bibo/#> .
-@prefix ns7: <http://www.w3.org/2002/07/owl#> .
-@prefix ns8: <http://purl.org/dc/elements/1.1/> .
+@prefix ns1: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns2: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns3: <http://purl.org/ontology/bibo/#> .
+@prefix ns4: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns5: <http://xmlns.com/foaf/0.1/> .
+@prefix ns6: <http://www.w3.org/2002/07/owl#> .
+@prefix ns7: <http://purl.org/dc/elements/1.1/> .
+@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns9: <http://purl.org/NET/c4dm/timeline.owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1562/> a ns4:Proceedings ;
-    ns3:issued "2016-03-03T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:presentedAt <http://ceur-ws.org/Vol-1562/#event> ;
-    ns5:editor <http://ceur-ws.org/Vol-1562/#ChristophiHochreiner>,
-        <http://ceur-ws.org/Vol-1562/#StefaniSchulte> .
+<http://ceur-ws.org/Vol-1562/#BudooriAllehyani> a ns5:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/BudooriAllehyani> ;
+    ns5:made <http://ceur-ws.org/Vol-1562/#paper3> ;
+    ns5:name "Budoor Allehyani" .
 
-<http://ceur-ws.org/Vol-1562/#ChristophiHochreiner> a ns1:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/ChristophiHochreiner> ;
-    ns1:name "Christoph Hochreiner" .
+<http://ceur-ws.org/Vol-1562/#ChristophiHochreiner> a ns5:Person ;
+    ns2:affiliation "" ;
+    ns6:sameAs <http://ceur-ws.org/persons/ChristophiHochreiner> ;
+    ns5:name "Christoph Hochreiner" .
 
-<http://ceur-ws.org/Vol-1562/#StefaniSchulte> a ns1:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/StefaniSchulte> ;
-    ns1:name "Stefan Schulte" .
+<http://ceur-ws.org/Vol-1562/#FelixiBaumann> a ns5:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/FelixiBaumann> ;
+    ns5:made <http://ceur-ws.org/Vol-1562/#paper4> ;
+    ns5:name "Felix Baumann" .
 
-<http://ceur-ws.org/Vol-1562/#event> a ns4:WorkshopEvent ;
-    ns4:hasLocation <http://dbpedia.org/resource/Austria> ;
-    ns4:hasPart <http://ceur-ws.org/Vol-1562/#part-ZEUS> ;
-    ns4:isSubEventOf <http://ceur-ws.org/Vol-1562/#conf> ;
-    ns2:beginsAtDatetime "2016-01-27T00:00:00+00:00"^^xsd:dateTime ;
-    ns2:endsAtDatetime "2016-01-28T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:license "http://creativecommons.org/publicdomain/zero/1.0/" ;
+<http://ceur-ws.org/Vol-1562/#FrankiSteimle> a ns5:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/FrankiSteimle> ;
+    ns5:made <http://ceur-ws.org/Vol-1562/#paper10> ;
+    ns5:name "Frank Steimle" .
+
+<http://ceur-ws.org/Vol-1562/#JaniMendling> a ns5:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/JaniMendling> ;
+    ns5:made <http://ceur-ws.org/Vol-1562/#paper0> ;
+    ns5:name "Jan Mendling" .
+
+<http://ceur-ws.org/Vol-1562/#MatteoiNardelli> a ns5:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/MatteoiNardelli> ;
+    ns5:made <http://ceur-ws.org/Vol-1562/#paper9> ;
+    ns5:name "Matteo Nardelli" .
+
+<http://ceur-ws.org/Vol-1562/#MatthiasiGeiger> a ns5:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/MatthiasiGeiger> ;
+    ns5:made <http://ceur-ws.org/Vol-1562/#paper5> ;
+    ns5:name "Matthias Geiger" .
+
+<http://ceur-ws.org/Vol-1562/#MichaeliHanser> a ns5:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/MichaeliHanser> ;
+    ns5:made <http://ceur-ws.org/Vol-1562/#paper1> ;
+    ns5:name "Michael Hanser" .
+
+<http://ceur-ws.org/Vol-1562/#OlenaiSkarlat> a ns5:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/OlenaiSkarlat> ;
+    ns5:made <http://ceur-ws.org/Vol-1562/#paper6> ;
+    ns5:name "Olena Skarlat" .
+
+<http://ceur-ws.org/Vol-1562/#RichardiBraun> a ns5:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/RichardiBraun> ;
+    ns5:made <http://ceur-ws.org/Vol-1562/#paper2> ;
+    ns5:name "Richard Braun" .
+
+<http://ceur-ws.org/Vol-1562/#StefaniSchulte> a ns5:Person ;
+    ns2:affiliation "" ;
+    ns6:sameAs <http://ceur-ws.org/persons/StefaniSchulte> ;
+    ns5:name "Stefan Schulte" .
+
+<http://ceur-ws.org/Vol-1562/#TimmiCaporale> a ns5:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/TimmiCaporale> ;
+    ns5:made <http://ceur-ws.org/Vol-1562/#paper7> ;
+    ns5:name "Timm Caporale" .
+
+<http://ceur-ws.org/Vol-1562/#event> a ns1:WorkshopEvent ;
+    ns1:hasLocation <http://dbpedia.org/resource/Austria> ;
+    ns1:hasPart <http://ceur-ws.org/Vol-1562/#part-ZEUS> ;
+    ns1:isSubEventOf <http://ceur-ws.org/Vol-1562/#conf> ;
+    ns9:beginsAtDatetime "2016-01-27T00:00:00+00:00"^^xsd:dateTime ;
+    ns9:endsAtDatetime "2016-01-28T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:license "http://creativecommons.org/publicdomain/zero/1.0/" ;
     rdfs:seeAlso <http://ceur-ws.org/Vol-1029/#event>,
         <http://ceur-ws.org/Vol-1140/#event>,
         <http://ceur-ws.org/Vol-1360/#event>,
@@ -39,4 +86,135 @@
         <http://ceur-ws.org/Vol-563/#event>,
         <http://ceur-ws.org/Vol-705/#event>,
         <http://ceur-ws.org/Vol-847/#event> .
+
+<http://ceur-ws.org/Vol-1562/#Keynote> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-1562/> ;
+    ns4:title "Keynote" .
+
+<http://ceur-ws.org/Vol-1562/#paper0> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1562/> ;
+    ns4:title "From Scientific Process Management to Process Science: Towards an Empirical Research Agenda for Business Process Management" ;
+    ns3:endPage 4 ;
+    ns3:numPages 4 ;
+    ns3:section <http://ceur-ws.org/Vol-1562/#Keynote> ;
+    ns3:startPage 1 ;
+    ns2:author <http://ceur-ws.org/Vol-1562/#JaniMendling> .
+
+<http://ceur-ws.org/Vol-1562/#paper1> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1562/> ;
+    ns4:title "A Novel Framework for Visualizing Declarative Process Models" ;
+    ns3:endPage 12 ;
+    ns3:numPages 8 ;
+    ns3:section <http://ceur-ws.org/Vol-1562/#Session1ProcessModeling> ;
+    ns3:startPage 5 ;
+    ns2:author <http://ceur-ws.org/Vol-1562/#MichaeliHanser> .
+
+<http://ceur-ws.org/Vol-1562/#paper10> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1562/> ;
+    ns4:title "ECHO - An mHealth Solution to Support Treatment of Chronic Patients" ;
+    ns3:endPage 63 ;
+    ns3:numPages 8 ;
+    ns3:section <http://ceur-ws.org/Vol-1562/#Session4AppliedServiceandCloudTechnologies> ;
+    ns3:startPage 56 ;
+    ns2:author <http://ceur-ws.org/Vol-1562/#FrankiSteimle> .
+
+<http://ceur-ws.org/Vol-1562/#paper2> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1562/> ;
+    ns4:title "SemFrameX - Towards a Framework for the Semantic Justification of BPMN Adaptations" ;
+    ns3:endPage 20 ;
+    ns3:numPages 8 ;
+    ns3:section <http://ceur-ws.org/Vol-1562/#Session1ProcessModeling> ;
+    ns3:startPage 13 ;
+    ns2:author <http://ceur-ws.org/Vol-1562/#RichardiBraun> .
+
+<http://ceur-ws.org/Vol-1562/#paper3> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1562/> ;
+    ns4:title "Maintaining Goals of Business Processes during Runtime Reconfigurations" ;
+    ns3:endPage 28 ;
+    ns3:numPages 8 ;
+    ns3:section <http://ceur-ws.org/Vol-1562/#Session2ProcessEnactment> ;
+    ns3:startPage 21 ;
+    ns2:author <http://ceur-ws.org/Vol-1562/#BudooriAllehyani> .
+
+<http://ceur-ws.org/Vol-1562/#paper4> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1562/> ;
+    ns4:title "3D Printing Process Pipeline on the Internet" ;
+    ns3:endPage 36 ;
+    ns3:numPages 8 ;
+    ns3:section <http://ceur-ws.org/Vol-1562/#Session2ProcessEnactment> ;
+    ns3:startPage 29 ;
+    ns2:author <http://ceur-ws.org/Vol-1562/#FelixiBaumann> .
+
+<http://ceur-ws.org/Vol-1562/#paper5> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1562/> ;
+    ns4:title "Process Engine Benchmarking with Betsy - Current Status and Future Directions" ;
+    ns3:endPage 44 ;
+    ns3:numPages 8 ;
+    ns3:section <http://ceur-ws.org/Vol-1562/#Session2ProcessEnactment> ;
+    ns3:startPage 37 ;
+    ns2:author <http://ceur-ws.org/Vol-1562/#MatthiasiGeiger> .
+
+<http://ceur-ws.org/Vol-1562/#paper6> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1562/> ;
+    ns4:title "Elastic Manufacturing Process Landscapes" ;
+    ns3:endPage 48 ;
+    ns3:numPages 4 ;
+    ns3:section <http://ceur-ws.org/Vol-1562/#Session3ShortPapers> ;
+    ns3:startPage 45 ;
+    ns2:author <http://ceur-ws.org/Vol-1562/#OlenaiSkarlat> .
+
+<http://ceur-ws.org/Vol-1562/#paper7> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1562/> ;
+    ns4:title "A Tool for Natural Language Oriented Business Process Modeling" ;
+    ns3:endPage 52 ;
+    ns3:numPages 4 ;
+    ns3:section <http://ceur-ws.org/Vol-1562/#Session3ShortPapers> ;
+    ns3:startPage 49 ;
+    ns2:author <http://ceur-ws.org/Vol-1562/#TimmiCaporale> .
+
+<http://ceur-ws.org/Vol-1562/#paper9> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1562/> ;
+    ns4:title "A Framework for Data Stream Applications in a Distributed Cloud" ;
+    ns3:endPage 55 ;
+    ns3:numPages 3 ;
+    ns3:section <http://ceur-ws.org/Vol-1562/#Session4AppliedServiceandCloudTechnologies> ;
+    ns3:startPage 53 ;
+    ns2:author <http://ceur-ws.org/Vol-1562/#MatteoiNardelli> .
+
+<http://ceur-ws.org/Vol-1562/#Session1ProcessModeling> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-1562/> ;
+    ns4:title "Session 1 - Process Modeling" .
+
+<http://ceur-ws.org/Vol-1562/#Session3ShortPapers> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-1562/> ;
+    ns4:title "Session 3 - Short Papers" .
+
+<http://ceur-ws.org/Vol-1562/#Session4AppliedServiceandCloudTechnologies> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-1562/> ;
+    ns4:title "Session 4 - Applied Service and Cloud Technologies" .
+
+<http://ceur-ws.org/Vol-1562/#Session2ProcessEnactment> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-1562/> ;
+    ns4:title "Session 2 - Process Enactment" .
+
+<http://ceur-ws.org/Vol-1562/> a ns1:Proceedings ;
+    ns1:hasPart <http://ceur-ws.org/Vol-1562/#paper0>,
+        <http://ceur-ws.org/Vol-1562/#paper1>,
+        <http://ceur-ws.org/Vol-1562/#paper10>,
+        <http://ceur-ws.org/Vol-1562/#paper2>,
+        <http://ceur-ws.org/Vol-1562/#paper3>,
+        <http://ceur-ws.org/Vol-1562/#paper4>,
+        <http://ceur-ws.org/Vol-1562/#paper5>,
+        <http://ceur-ws.org/Vol-1562/#paper6>,
+        <http://ceur-ws.org/Vol-1562/#paper7>,
+        <http://ceur-ws.org/Vol-1562/#paper9> ;
+    ns1:hasSession <http://ceur-ws.org/Vol-1562/#Keynote>,
+        <http://ceur-ws.org/Vol-1562/#Session1ProcessModeling>,
+        <http://ceur-ws.org/Vol-1562/#Session2ProcessEnactment>,
+        <http://ceur-ws.org/Vol-1562/#Session3ShortPapers>,
+        <http://ceur-ws.org/Vol-1562/#Session4AppliedServiceandCloudTechnologies> ;
+    ns8:issued "2016-03-03T00:00:00+00:00"^^xsd:dateTime ;
+    ns3:presentedAt <http://ceur-ws.org/Vol-1562/#event> ;
+    ns2:editor <http://ceur-ws.org/Vol-1562/#ChristophiHochreiner>,
+        <http://ceur-ws.org/Vol-1562/#StefaniSchulte> .
 

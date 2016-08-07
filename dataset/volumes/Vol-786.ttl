@@ -1,40 +1,149 @@
-@prefix ns1: <http://www.w3.org/2002/07/owl#> .
-@prefix ns2: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns3: <http://purl.org/dc/elements/1.1/> .
-@prefix ns4: <http://xmlns.com/foaf/0.1/> .
-@prefix ns5: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns6: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns8: <http://purl.org/ontology/bibo/#> .
+@prefix ns1: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns2: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns3: <http://www.w3.org/2002/07/owl#> .
+@prefix ns4: <http://purl.org/ontology/bibo/#> .
+@prefix ns5: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns6: <http://xmlns.com/foaf/0.1/> .
+@prefix ns7: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns9: <http://purl.org/dc/elements/1.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-786/> a ns2:Proceedings ;
-    ns6:issued "2011-10-12T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:presentedAt <http://ceur-ws.org/Vol-786/#event> ;
-    ns5:editor <http://ceur-ws.org/Vol-786/#BerndiLudwig>,
+<http://ceur-ws.org/Vol-786/#BerndiLudwig> a ns6:Person ;
+    ns7:affiliation "" ;
+    ns3:sameAs <http://ceur-ws.org/persons/BerndiLudwig> ;
+    ns6:name "Bernd Ludwig" .
+
+<http://ceur-ws.org/Vol-786/#BjoerniZenker> a ns6:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/BjoerniZenker> ;
+    ns6:made <http://ceur-ws.org/Vol-786/#paper4> ;
+    ns6:name "Bjoern Zenker" .
+
+<http://ceur-ws.org/Vol-786/#FlorianiMichahelles> a ns6:Person ;
+    ns7:affiliation "" ;
+    ns3:sameAs <http://ceur-ws.org/persons/FlorianiMichahelles> ;
+    ns6:name "Florian Michahelles" .
+
+<http://ceur-ws.org/Vol-786/#MartiniHacker> a ns6:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/MartiniHacker> ;
+    ns6:made <http://ceur-ws.org/Vol-786/#paper1> ;
+    ns6:name "Martin Hacker" .
+
+<http://ceur-ws.org/Vol-786/#RichardiSchaller> a ns6:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/RichardiSchaller> ;
+    ns6:made <http://ceur-ws.org/Vol-786/#paper5> ;
+    ns6:name "Richard Schaller" .
+
+<http://ceur-ws.org/Vol-786/#SebastianiBader> a ns6:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/SebastianiBader> ;
+    ns6:made <http://ceur-ws.org/Vol-786/#paper2> ;
+    ns6:name "Sebastian Bader" .
+
+<http://ceur-ws.org/Vol-786/#StefaniBienk> a ns6:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/StefaniBienk> ;
+    ns6:made <http://ceur-ws.org/Vol-786/#paper6> ;
+    ns6:name "Stefan Bienk" .
+
+<http://ceur-ws.org/Vol-786/#StefaniMandl> a ns6:Person ;
+    ns7:affiliation "" ;
+    ns3:sameAs <http://ceur-ws.org/persons/StefaniMandl> ;
+    ns6:name "Stefan Mandl" .
+
+<http://ceur-ws.org/Vol-786/#StefanieiMika> a ns6:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/StefanieiMika> ;
+    ns6:made <http://ceur-ws.org/Vol-786/#paper3> ;
+    ns6:name "Stefanie Mika" .
+
+<http://ceur-ws.org/Vol-786/#event> a ns5:WorkshopEvent ;
+    ns5:hasLocation <http://dbpedia.org/resource/Germany> ;
+    ns5:hasPart <http://ceur-ws.org/Vol-786/#part-CAIA> ;
+    ns5:isSubEventOf <http://ceur-ws.org/Vol-786/#conf> ;
+    ns1:beginsAtDatetime "2011-10-04T00:00:00+00:00"^^xsd:dateTime ;
+    ns1:endsAtDatetime "2011-10-04T00:00:00+00:00"^^xsd:dateTime ;
+    ns9:license "http://choosealicense.com/licenses/no-license/" .
+
+<http://ceur-ws.org/Vol-786/#Session3HealthInformatics> a ns5:SessionEvent ;
+    ns5:partOf <http://ceur-ws.org/Vol-786/> ;
+    ns2:title "Session 3: Health Informatics" .
+
+<http://ceur-ws.org/Vol-786/#paper1> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-786/> ;
+    ns2:title "Context-aware Speech Recognition in a Robot Navigation Scenario" ;
+    ns4:endPage 3 ;
+    ns4:numPages 3 ;
+    ns4:section <http://ceur-ws.org/Vol-786/#Session1UserInteraction> ;
+    ns4:startPage 1 ;
+    ns7:author <http://ceur-ws.org/Vol-786/#MartiniHacker> .
+
+<http://ceur-ws.org/Vol-786/#paper2> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-786/> ;
+    ns2:title "Probably Asked Questions: Intelligibility through Question Generation" ;
+    ns4:endPage 15 ;
+    ns4:numPages 12 ;
+    ns4:section <http://ceur-ws.org/Vol-786/#Session1UserInteraction> ;
+    ns4:startPage 4 ;
+    ns7:author <http://ceur-ws.org/Vol-786/#SebastianiBader> .
+
+<http://ceur-ws.org/Vol-786/#paper3> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-786/> ;
+    ns2:title "Challenges for Nutrition Recommender Systems" ;
+    ns4:endPage 24 ;
+    ns4:numPages 9 ;
+    ns4:section <http://ceur-ws.org/Vol-786/#Session2PersonalAssistance> ;
+    ns4:startPage 16 ;
+    ns7:author <http://ceur-ws.org/Vol-786/#StefanieiMika> .
+
+<http://ceur-ws.org/Vol-786/#paper4> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-786/> ;
+    ns2:title "People Go Out Together: a Neglected Context Factor in Pedestrian Assistance Systems" ;
+    ns4:endPage 33 ;
+    ns4:numPages 9 ;
+    ns4:section <http://ceur-ws.org/Vol-786/#Session2PersonalAssistance> ;
+    ns4:startPage 25 ;
+    ns7:author <http://ceur-ws.org/Vol-786/#BjoerniZenker> .
+
+<http://ceur-ws.org/Vol-786/#paper5> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-786/> ;
+    ns2:title "Planning and Navigational Assistance for Distributed Events" ;
+    ns4:endPage 43 ;
+    ns4:numPages 10 ;
+    ns4:section <http://ceur-ws.org/Vol-786/#Session2PersonalAssistance> ;
+    ns4:startPage 34 ;
+    ns7:author <http://ceur-ws.org/Vol-786/#RichardiSchaller> .
+
+<http://ceur-ws.org/Vol-786/#paper6> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-786/> ;
+    ns2:title "Home Lab - Context-Aware Fall-Risk Assessment at Home" ;
+    ns4:endPage 56 ;
+    ns4:numPages 13 ;
+    ns4:section <http://ceur-ws.org/Vol-786/#Session3HealthInformatics> ;
+    ns4:startPage 44 ;
+    ns7:author <http://ceur-ws.org/Vol-786/#StefaniBienk> .
+
+<http://ceur-ws.org/Vol-786/#Session1UserInteraction> a ns5:SessionEvent ;
+    ns5:partOf <http://ceur-ws.org/Vol-786/> ;
+    ns2:title "Session 1: User Interaction" .
+
+<http://ceur-ws.org/Vol-786/#Session2PersonalAssistance> a ns5:SessionEvent ;
+    ns5:partOf <http://ceur-ws.org/Vol-786/> ;
+    ns2:title "Session 2: Personal Assistance" .
+
+<http://ceur-ws.org/Vol-786/> a ns5:Proceedings ;
+    ns5:hasPart <http://ceur-ws.org/Vol-786/#paper1>,
+        <http://ceur-ws.org/Vol-786/#paper2>,
+        <http://ceur-ws.org/Vol-786/#paper3>,
+        <http://ceur-ws.org/Vol-786/#paper4>,
+        <http://ceur-ws.org/Vol-786/#paper5>,
+        <http://ceur-ws.org/Vol-786/#paper6> ;
+    ns5:hasSession <http://ceur-ws.org/Vol-786/#Session1UserInteraction>,
+        <http://ceur-ws.org/Vol-786/#Session2PersonalAssistance>,
+        <http://ceur-ws.org/Vol-786/#Session3HealthInformatics> ;
+    ns8:issued "2011-10-12T00:00:00+00:00"^^xsd:dateTime ;
+    ns4:presentedAt <http://ceur-ws.org/Vol-786/#event> ;
+    ns7:editor <http://ceur-ws.org/Vol-786/#BerndiLudwig>,
         <http://ceur-ws.org/Vol-786/#FlorianiMichahelles>,
         <http://ceur-ws.org/Vol-786/#StefaniMandl> .
-
-<http://ceur-ws.org/Vol-786/#BerndiLudwig> a ns4:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/BerndiLudwig> ;
-    ns4:name "Bernd Ludwig" .
-
-<http://ceur-ws.org/Vol-786/#FlorianiMichahelles> a ns4:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/FlorianiMichahelles> ;
-    ns4:name "Florian Michahelles" .
-
-<http://ceur-ws.org/Vol-786/#StefaniMandl> a ns4:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/StefaniMandl> ;
-    ns4:name "Stefan Mandl" .
-
-<http://ceur-ws.org/Vol-786/#event> a ns2:WorkshopEvent ;
-    ns2:hasLocation <http://dbpedia.org/resource/Germany> ;
-    ns2:hasPart <http://ceur-ws.org/Vol-786/#part-CEUR-WS> ;
-    ns2:isSubEventOf <http://ceur-ws.org/Vol-786/#conf> ;
-    ns7:beginsAtDatetime "2011-10-04T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:endsAtDatetime "2011-10-04T00:00:00+00:00"^^xsd:dateTime ;
-    ns3:license "http://choosealicense.com/licenses/no-license/" .
 

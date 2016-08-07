@@ -1,45 +1,157 @@
-@prefix ns1: <http://xmlns.com/foaf/0.1/> .
+@prefix ns1: <http://purl.org/dc/elements/1.1/#> .
 @prefix ns2: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns3: <http://purl.org/ontology/bibo/#> .
-@prefix ns4: <http://www.w3.org/2002/07/owl#> .
-@prefix ns5: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns3: <http://purl.org/dc/elements/1.1/> .
+@prefix ns4: <http://xmlns.com/foaf/0.1/> .
+@prefix ns5: <http://purl.org/ontology/bibo/#> .
 @prefix ns6: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns8: <http://purl.org/dc/elements/1.1/> .
+@prefix ns7: <http://www.w3.org/2002/07/owl#> .
+@prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns9: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
+<http://ceur-ws.org/Vol-1590/#Bla%C5%BEenkaiDivjak> a ns4:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/Bla%C5%BEenkaiDivjak> ;
+    ns4:made <http://ceur-ws.org/Vol-1590/#paper-05> ;
+    ns4:name "Blaženka Divjak" .
+
+<http://ceur-ws.org/Vol-1590/#DannyiY.T.iLiu> a ns4:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/DannyiY.T.iLiu> ;
+    ns4:made <http://ceur-ws.org/Vol-1590/#paper-01> ;
+    ns4:name "Danny Y.T. Liu" .
+
+<http://ceur-ws.org/Vol-1590/#JohniFritz> a ns4:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/JohniFritz> ;
+    ns4:made <http://ceur-ws.org/Vol-1590/#paper-03> ;
+    ns4:name "John Fritz" .
+
+<http://ceur-ws.org/Vol-1590/#TimothyiMcKay> a ns4:Person ;
+    ns5:place <http://dbpedia.org/resource/United_States> ;
+    ns6:affiliation "University of Michigan" ;
+    ns7:sameAs <http://ceur-ws.org/persons/TimothyiMcKay> ;
+    ns4:name "Timothy McKay" .
+
+<http://ceur-ws.org/Vol-1590/#WaiiYeeiWong> a ns4:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/WaiiYeeiWong> ;
+    ns4:made <http://ceur-ws.org/Vol-1590/#paper-02> ;
+    ns4:name "Wai Yee Wong" .
+
+<http://ceur-ws.org/Vol-1590/#event> a ns2:WorkshopEvent ;
+    ns2:hasLocation <http://dbpedia.org/resource/United_Kingdom> ;
+    ns2:hasPart <http://ceur-ws.org/Vol-1590/#part-PCLA> ;
+    ns2:isSubEventOf <http://ceur-ws.org/Vol-1590/#conf> ;
+    ns8:beginsAtDatetime "2016-04-25T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:endsAtDatetime "2016-04-25T00:00:00+00:00"^^xsd:dateTime ;
+    ns3:license "http://creativecommons.org/publicdomain/zero/1.0/" .
+
+<http://ceur-ws.org/Vol-1590/#JimiGreer> a ns4:Person ;
+    ns5:place <http://dbpedia.org/resource/Canada> ;
+    ns6:affiliation "University of Saskatchewan" ;
+    ns7:sameAs <http://ceur-ws.org/persons/JimiGreer> ;
+    ns4:made <http://ceur-ws.org/Vol-1590/#paper-06> ;
+    ns4:name "Jim Greer" .
+
+<http://ceur-ws.org/Vol-1590/#MarcoiMolinaro> a ns4:Person ;
+    ns5:place <http://dbpedia.org/resource/United_States> ;
+    ns6:affiliation "University of California – Davis" ;
+    ns7:sameAs <http://ceur-ws.org/persons/MarcoiMolinaro> ;
+    ns4:made <http://ceur-ws.org/Vol-1590/#paper-07> ;
+    ns4:name "Marco Molinaro" .
+
+<http://ceur-ws.org/Vol-1590/#XavieriOchoa> a ns4:Person ;
+    ns5:place <http://dbpedia.org/resource/Ecuador> ;
+    ns6:affiliation "Escuela Superior Politécnica del Litoral" ;
+    ns7:sameAs <http://ceur-ws.org/persons/XavieriOchoa> ;
+    ns4:made <http://ceur-ws.org/Vol-1590/#paper-04> ;
+    ns4:name "Xavier Ochoa" .
+
+<http://ceur-ws.org/Vol-1590/#paper-01> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1590/> ;
+    ns1:title "Empowering Instructors Through Customizable Collection and Analyses of Actionable Information" ;
+    ns5:endPage 9 ;
+    ns5:numPages 7 ;
+    ns5:section <http://ceur-ws.org/Vol-1590/#Session1> ;
+    ns5:startPage 3 ;
+    ns6:author <http://ceur-ws.org/Vol-1590/#DannyiY.T.iLiu> .
+
+<http://ceur-ws.org/Vol-1590/#paper-02> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1590/> ;
+    ns1:title "Using a Risk Management Approach in Analytics for Curriculum and Program Quality Improvement" ;
+    ns5:endPage 14 ;
+    ns5:numPages 5 ;
+    ns5:section <http://ceur-ws.org/Vol-1590/#Session1> ;
+    ns5:startPage 10 ;
+    ns6:author <http://ceur-ws.org/Vol-1590/#WaiiYeeiWong> .
+
+<http://ceur-ws.org/Vol-1590/#paper-03> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1590/> ;
+    ns1:title "LMS Course Design As Learning Analytics Variable" ;
+    ns5:endPage 19 ;
+    ns5:numPages 5 ;
+    ns5:section <http://ceur-ws.org/Vol-1590/#Session1> ;
+    ns5:startPage 15 ;
+    ns6:author <http://ceur-ws.org/Vol-1590/#JohniFritz> .
+
+<http://ceur-ws.org/Vol-1590/#paper-04> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1590/> ;
+    ns1:title "Simple Metrics for Curriculum Analytics" ;
+    ns5:endPage 26 ;
+    ns5:numPages 7 ;
+    ns5:section <http://ceur-ws.org/Vol-1590/#Session1> ;
+    ns5:startPage 20 ;
+    ns6:author <http://ceur-ws.org/Vol-1590/#XavieriOchoa> .
+
+<http://ceur-ws.org/Vol-1590/#paper-05> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1590/> ;
+    ns1:title "Assessment Analytics for Peer-Assessment: A Model and Implementation" ;
+    ns5:endPage 31 ;
+    ns5:numPages 5 ;
+    ns5:section <http://ceur-ws.org/Vol-1590/#Session2> ;
+    ns5:startPage 27 ;
+    ns6:author <http://ceur-ws.org/Vol-1590/#Bla%C5%BEenkaiDivjak> .
+
+<http://ceur-ws.org/Vol-1590/#paper-06> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1590/> ;
+    ns1:title "Data-Driven Programmatic Change at Universities: What Works and How" ;
+    ns5:endPage 35 ;
+    ns5:numPages 4 ;
+    ns5:section <http://ceur-ws.org/Vol-1590/#Session2> ;
+    ns5:startPage 32 ;
+    ns6:author <http://ceur-ws.org/Vol-1590/#JimiGreer> .
+
+<http://ceur-ws.org/Vol-1590/#paper-07> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1590/> ;
+    ns1:title "Promoting Instructor and Department Action via Simple, Actionable Tools and Analyses" ;
+    ns5:endPage 40 ;
+    ns5:numPages 5 ;
+    ns5:section <http://ceur-ws.org/Vol-1590/#Session2> ;
+    ns5:startPage 36 ;
+    ns6:author <http://ceur-ws.org/Vol-1590/#MarcoiMolinaro> .
+
+<http://ceur-ws.org/Vol-1590/#Session2> a ns2:SessionEvent ;
+    ns2:partOf <http://ceur-ws.org/Vol-1590/> ;
+    ns1:title "Session 2" .
+
+<http://ceur-ws.org/Vol-1590/#Session1> a ns2:SessionEvent ;
+    ns2:partOf <http://ceur-ws.org/Vol-1590/> ;
+    ns1:title "Session 1" .
+
 <http://ceur-ws.org/Vol-1590/> a ns2:Proceedings ;
-    ns7:issued "2016-05-19T00:00:00+00:00"^^xsd:dateTime ;
-    ns3:presentedAt <http://ceur-ws.org/Vol-1590/#event> ;
+    ns2:hasPart <http://ceur-ws.org/Vol-1590/#paper-01>,
+        <http://ceur-ws.org/Vol-1590/#paper-02>,
+        <http://ceur-ws.org/Vol-1590/#paper-03>,
+        <http://ceur-ws.org/Vol-1590/#paper-04>,
+        <http://ceur-ws.org/Vol-1590/#paper-05>,
+        <http://ceur-ws.org/Vol-1590/#paper-06>,
+        <http://ceur-ws.org/Vol-1590/#paper-07> ;
+    ns2:hasSession <http://ceur-ws.org/Vol-1590/#Session1>,
+        <http://ceur-ws.org/Vol-1590/#Session2> ;
+    ns9:issued "2016-05-19T00:00:00+00:00"^^xsd:dateTime ;
+    ns5:presentedAt <http://ceur-ws.org/Vol-1590/#event> ;
     ns6:editor <http://ceur-ws.org/Vol-1590/#JimiGreer>,
         <http://ceur-ws.org/Vol-1590/#MarcoiMolinaro>,
         <http://ceur-ws.org/Vol-1590/#TimothyiMcKay>,
         <http://ceur-ws.org/Vol-1590/#XavieriOchoa> .
-
-<http://ceur-ws.org/Vol-1590/#JimiGreer> a ns1:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/JimiGreer> ;
-    ns1:name "Jim Greer" .
-
-<http://ceur-ws.org/Vol-1590/#MarcoiMolinaro> a ns1:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/MarcoiMolinaro> ;
-    ns1:name "Marco Molinaro" .
-
-<http://ceur-ws.org/Vol-1590/#TimothyiMcKay> a ns1:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/TimothyiMcKay> ;
-    ns1:name "Timothy McKay" .
-
-<http://ceur-ws.org/Vol-1590/#XavieriOchoa> a ns1:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/XavieriOchoa> ;
-    ns1:name "Xavier Ochoa" .
-
-<http://ceur-ws.org/Vol-1590/#event> a ns2:WorkshopEvent ;
-    ns2:hasLocation <http://dbpedia.org/resource/United_Kingdom> ;
-    ns2:hasPart <http://ceur-ws.org/Vol-1590/#part-ws> ;
-    ns2:isSubEventOf <http://ceur-ws.org/Vol-1590/#conf> ;
-    ns5:beginsAtDatetime "2016-04-25T00:00:00+00:00"^^xsd:dateTime ;
-    ns5:endsAtDatetime "2016-04-25T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:license "http://creativecommons.org/publicdomain/zero/1.0/" .
 

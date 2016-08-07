@@ -1,35 +1,35 @@
 @prefix ns1: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns2: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns3: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns4: <http://www.w3.org/2002/07/owl#> .
-@prefix ns5: <http://xmlns.com/foaf/0.1/> .
-@prefix ns6: <http://purl.org/dc/elements/1.1/> .
-@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns8: <http://purl.org/ontology/bibo/#> .
+@prefix ns2: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns3: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns4: <http://purl.org/dc/elements/1.1/> .
+@prefix ns5: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns6: <http://www.w3.org/2002/07/owl#> .
+@prefix ns7: <http://purl.org/ontology/bibo/#> .
+@prefix ns8: <http://xmlns.com/foaf/0.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1439/> a ns3:Proceedings ;
-    ns7:issued "2015-09-05T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:presentedAt <http://ceur-ws.org/Vol-1439/#event> ;
+<http://ceur-ws.org/Vol-1439/> a ns2:Proceedings ;
+    ns3:issued "2015-09-05T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:presentedAt <http://ceur-ws.org/Vol-1439/#event> ;
     ns1:editor <http://ceur-ws.org/Vol-1439/#JaniMendling>,
         <http://ceur-ws.org/Vol-1439/#JanivomiBrocke> .
 
-<http://ceur-ws.org/Vol-1439/#JaniMendling> a ns5:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/JaniMendling> ;
-    ns5:name "Jan Mendling" .
+<http://ceur-ws.org/Vol-1439/#JaniMendling> a ns8:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/JaniMendling> ;
+    ns8:name "Jan Mendling" .
 
-<http://ceur-ws.org/Vol-1439/#JanivomiBrocke> a ns5:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/JanivomiBrocke> ;
-    ns5:name "Jan vom Brocke" .
+<http://ceur-ws.org/Vol-1439/#JanivomiBrocke> a ns8:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/JanivomiBrocke> ;
+    ns8:name "Jan vom Brocke" .
 
-<http://ceur-ws.org/Vol-1439/#event> a ns3:WorkshopEvent ;
-    ns3:hasLocation <http://dbpedia.org/resource/Austria> ;
-    ns3:hasPart <http://ceur-ws.org/Vol-1439/#part-ws> ;
-    ns3:isSubEventOf <http://ceur-ws.org/Vol-1439/#conf> ;
-    ns2:beginsAtDatetime "2015-09-01T00:00:00+00:00"^^xsd:dateTime ;
-    ns2:endsAtDatetime "2015-09-01T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:license "http://creativecommons.org/publicdomain/zero/1.0/" .
+<http://ceur-ws.org/Vol-1439/#event> a ns2:WorkshopEvent ;
+    ns2:hasLocation <http://dbpedia.org/resource/Austria> ;
+    ns2:hasPart <http://ceur-ws.org/Vol-1439/#part-ws> ;
+    ns2:isSubEventOf <http://ceur-ws.org/Vol-1439/#conf> ;
+    ns5:beginsAtDatetime "2015-09-01T00:00:00+00:00"^^xsd:dateTime ;
+    ns5:endsAtDatetime "2015-09-01T00:00:00+00:00"^^xsd:dateTime ;
+    ns4:license "http://creativecommons.org/publicdomain/zero/1.0/" .
 

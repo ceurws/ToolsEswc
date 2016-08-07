@@ -1,56 +1,545 @@
-@prefix ns1: <http://www.w3.org/2002/07/owl#> .
-@prefix ns2: <http://xmlns.com/foaf/0.1/> .
-@prefix ns3: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns1: <http://xmlns.com/foaf/0.1/> .
+@prefix ns2: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns3: <http://www.w3.org/2002/07/owl#> .
 @prefix ns4: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns5: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns6: <http://purl.org/dc/elements/1.1/> .
-@prefix ns7: <http://purl.org/ontology/bibo/#> .
-@prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns5: <http://purl.org/ontology/bibo/#> .
+@prefix ns6: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns9: <http://purl.org/dc/elements/1.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1300/> a ns3:Proceedings ;
-    ns5:issued "2014-11-22T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:presentedAt <http://ceur-ws.org/Vol-1300/#event> ;
+<http://ceur-ws.org/Vol-1300/#AndreaiGiglio> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/AndreaiGiglio> ;
+    ns1:made <http://ceur-ws.org/Vol-1300/#paper6> ;
+    ns1:name "Andrea Giglio" .
+
+<http://ceur-ws.org/Vol-1300/#AndreaiMargini> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/AndreaiMargini> ;
+    ns1:made <http://ceur-ws.org/Vol-1300/#paper04> ;
+    ns1:name "Andrea Margini" .
+
+<http://ceur-ws.org/Vol-1300/#AndreaiTundis> a ns1:Person ;
+    ns5:place <http://dbpedia.org/resource/Italy> ;
+    ns4:affiliation "University of Calabria, Rende (CS)" ;
+    ns3:sameAs <http://ceur-ws.org/persons/AndreaiTundis> ;
+    ns1:name "Andrea Tundis" .
+
+<http://ceur-ws.org/Vol-1300/#AndreasiGerndt> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/AndreasiGerndt> ;
+    ns1:made <http://ceur-ws.org/Vol-1300/#paper8> ;
+    ns1:name "Andreas Gerndt" .
+
+<http://ceur-ws.org/Vol-1300/#AngeloiFurfaro> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/AngeloiFurfaro> ;
+    ns1:made <http://ceur-ws.org/Vol-1300/#paper3> ;
+    ns1:name "Angelo Furfaro" .
+
+<http://ceur-ws.org/Vol-1300/#CarloiPoloni> a ns1:Person ;
+    ns5:place <http://dbpedia.org/resource/Italy> ;
+    ns4:affiliation "University of Trieste, Trieste (TS)" ;
+    ns3:sameAs <http://ceur-ws.org/persons/CarloiPoloni> ;
+    ns1:name "Carlo Poloni" .
+
+<http://ceur-ws.org/Vol-1300/#CarmeloiTommasi> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/CarmeloiTommasi> ;
+    ns1:made <http://ceur-ws.org/Vol-1300/#paper9> ;
+    ns1:name "Carmelo Tommasi" .
+
+<http://ceur-ws.org/Vol-1300/#CesareiFantuzzi> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/CesareiFantuzzi> ;
+    ns1:made <http://ceur-ws.org/Vol-1300/#paper04> ;
+    ns1:name "Cesare Fantuzzi" .
+
+<http://ceur-ws.org/Vol-1300/#DanieleiGianni> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/DanieleiGianni> ;
+    ns1:made <http://ceur-ws.org/Vol-1300/#paper8> ;
+    ns1:name "Daniele Gianni" .
+
+<http://ceur-ws.org/Vol-1300/#DavideiFerretto> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/DavideiFerretto> ;
+    ns1:made <http://ceur-ws.org/Vol-1300/#paper5> ;
+    ns1:name "Davide Ferretto" .
+
+<http://ceur-ws.org/Vol-1300/#DiegoiGerbaz> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/DiegoiGerbaz> ;
+    ns1:made <http://ceur-ws.org/Vol-1300/#paper11> ;
+    ns1:name "Diego Gerbaz" .
+
+<http://ceur-ws.org/Vol-1300/#DomenicoiSacc%C3%A1> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/DomenicoiSacc%C3%A1> ;
+    ns1:made <http://ceur-ws.org/Vol-1300/#paper3> ;
+    ns1:name "Domenico Saccá" .
+
+<http://ceur-ws.org/Vol-1300/#EmilianoiCaponi> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/EmilianoiCaponi> ;
+    ns1:made <http://ceur-ws.org/Vol-1300/#paper6> ;
+    ns1:name "Emiliano Caponi" .
+
+<http://ceur-ws.org/Vol-1300/#EmilianoiPaglia> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/EmilianoiPaglia> ;
+    ns1:made <http://ceur-ws.org/Vol-1300/#paper6> ;
+    ns1:name "Emiliano Paglia" .
+
+<http://ceur-ws.org/Vol-1300/#EnricoiGiro> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/EnricoiGiro> ;
+    ns1:made <http://ceur-ws.org/Vol-1300/#paper10> ;
+    ns1:name "Enrico Giro" .
+
+<http://ceur-ws.org/Vol-1300/#EnricoiMancin> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/EnricoiMancin> ;
+    ns1:made <http://ceur-ws.org/Vol-1300/#paper7> ;
+    ns1:name "Enrico Mancin" .
+
+<http://ceur-ws.org/Vol-1300/#EugenioiVacca> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/EugenioiVacca> ;
+    ns1:made <http://ceur-ws.org/Vol-1300/#paper9> ;
+    ns1:name "Eugenio Vacca" .
+
+<http://ceur-ws.org/Vol-1300/#FrancescoiDeiVita> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/FrancescoiDeiVita> ;
+    ns1:made <http://ceur-ws.org/Vol-1300/#paper5> ;
+    ns1:name "Francesco De Vita" .
+
+<http://ceur-ws.org/Vol-1300/#GaetanoiCutrona> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/GaetanoiCutrona> ;
+    ns1:made <http://ceur-ws.org/Vol-1300/#paper04> ;
+    ns1:name "Gaetano Cutrona" .
+
+<http://ceur-ws.org/Vol-1300/#GinoiTosti> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/GinoiTosti> ;
+    ns1:made <http://ceur-ws.org/Vol-1300/#paper10> ;
+    ns1:name "Gino Tosti" .
+
+<http://ceur-ws.org/Vol-1300/#GiovanniiPareschi> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/GiovanniiPareschi> ;
+    ns1:made <http://ceur-ws.org/Vol-1300/#paper10> ;
+    ns1:name "Giovanni Pareschi" .
+
+<http://ceur-ws.org/Vol-1300/#GiulioiCassio> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/GiulioiCassio> ;
+    ns1:made <http://ceur-ws.org/Vol-1300/#paper1> ;
+    ns1:name "Giulio Cassio" .
+
+<http://ceur-ws.org/Vol-1300/#JoachimiFuchs> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/JoachimiFuchs> ;
+    ns1:made <http://ceur-ws.org/Vol-1300/#paper11> ;
+    ns1:name "Joachim Fuchs" .
+
+<http://ceur-ws.org/Vol-1300/#JuhaniiViitaniemi> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/JuhaniiViitaniemi> ;
+    ns1:made <http://ceur-ws.org/Vol-1300/#paper11> ;
+    ns1:name "Juhani Viitaniemi" .
+
+<http://ceur-ws.org/Vol-1300/#LauraiBaracchi> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/LauraiBaracchi> ;
+    ns1:made <http://ceur-ws.org/Vol-1300/#paper11> ;
+    ns1:name "Laura Baracchi" .
+
+<http://ceur-ws.org/Vol-1300/#LorenzoiPace> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/LorenzoiPace> ;
+    ns1:made <http://ceur-ws.org/Vol-1300/#paper11> ;
+    ns1:name "Lorenzo Pace" .
+
+<http://ceur-ws.org/Vol-1300/#LucaiStringhetti> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/LucaiStringhetti> ;
+    ns1:made <http://ceur-ws.org/Vol-1300/#paper10> ;
+    ns1:name "Luca Stringhetti" .
+
+<http://ceur-ws.org/Vol-1300/#LucioiTirone> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/LucioiTirone> ;
+    ns1:made <http://ceur-ws.org/Vol-1300/#TUT02> ;
+    ns1:name "Lucio Tirone" .
+
+<http://ceur-ws.org/Vol-1300/#MarcoiLassalle> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/MarcoiLassalle> ;
+    ns1:made <http://ceur-ws.org/Vol-1300/#paper11> ;
+    ns1:name "Marco Lassalle" .
+
+<http://ceur-ws.org/Vol-1300/#MarcoiLisi> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/MarcoiLisi> ;
+    ns1:made <http://ceur-ws.org/Vol-1300/#paper8> ;
+    ns1:name "Marco Lisi" .
+
+<http://ceur-ws.org/Vol-1300/#MariaiConcettaiMaccarone> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/MariaiConcettaiMaccarone> ;
+    ns1:made <http://ceur-ws.org/Vol-1300/#paper10> ;
+    ns1:name "Maria Concetta Maccarone" .
+
+<http://ceur-ws.org/Vol-1300/#MatteoiNicolich> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/MatteoiNicolich> ;
+    ns1:made <http://ceur-ws.org/Vol-1300/#paper1> ;
+    ns1:name "Matteo Nicolich" .
+
+<http://ceur-ws.org/Vol-1300/#MauroiFiorini> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/MauroiFiorini> ;
+    ns1:made <http://ceur-ws.org/Vol-1300/#paper10> ;
+    ns1:name "Mauro Fiorini" .
+
+<http://ceur-ws.org/Vol-1300/#MauroiPasquinelli> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/MauroiPasquinelli> ;
+    ns1:made <http://ceur-ws.org/Vol-1300/#paper11> ;
+    ns1:name "Mauro Pasquinelli" .
+
+<http://ceur-ws.org/Vol-1300/#MikhailiBelov> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/MikhailiBelov> ;
+    ns1:made <http://ceur-ws.org/Vol-1300/#paper13> ;
+    ns1:name "Mikhail Belov" .
+
+<http://ceur-ws.org/Vol-1300/#NicolaiLaiPalombara> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/NicolaiLaiPalombara> ;
+    ns1:made <http://ceur-ws.org/Vol-1300/#paper10> ;
+    ns1:name "Nicola La Palombara" .
+
+<http://ceur-ws.org/Vol-1300/#OsvaldoiCatalano> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/OsvaldoiCatalano> ;
+    ns1:made <http://ceur-ws.org/Vol-1300/#paper10> ;
+    ns1:name "Osvaldo Catalano" .
+
+<http://ceur-ws.org/Vol-1300/#PaoloiBocciarelli> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/PaoloiBocciarelli> ;
+    ns1:made <http://ceur-ws.org/Vol-1300/#paper6> ;
+    ns1:name "Paolo Bocciarelli" .
+
+<http://ceur-ws.org/Vol-1300/#PierluigiiDeiSimone> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/PierluigiiDeiSimone> ;
+    ns1:made <http://ceur-ws.org/Vol-1300/#paper8> ;
+    ns1:name "Pierluigi De Simone" .
+
+<http://ceur-ws.org/Vol-1300/#RodolfoiCanestrari> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/RodolfoiCanestrari> ;
+    ns1:made <http://ceur-ws.org/Vol-1300/#paper10> ;
+    ns1:name "Rodolfo Canestrari" .
+
+<http://ceur-ws.org/Vol-1300/#SabrinaiGraziano> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/SabrinaiGraziano> ;
+    ns1:made <http://ceur-ws.org/Vol-1300/#paper3> ;
+    ns1:name "Sabrina Graziano" .
+
+<http://ceur-ws.org/Vol-1300/#SergioiChiesa> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/SergioiChiesa> ;
+    ns1:made <http://ceur-ws.org/Vol-1300/#paper5> ;
+    ns1:name "Sergio Chiesa" .
+
+<http://ceur-ws.org/Vol-1300/#SilviaiMazzini> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/SilviaiMazzini> ;
+    ns1:made <http://ceur-ws.org/Vol-1300/#paper11> ;
+    ns1:name "Silvia Mazzini" .
+
+<http://ceur-ws.org/Vol-1300/#SimonaiCitrigno> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/SimonaiCitrigno> ;
+    ns1:made <http://ceur-ws.org/Vol-1300/#paper3> ;
+    ns1:name "Simona Citrigno" .
+
+<http://ceur-ws.org/Vol-1300/#StefanoiPuri> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/StefanoiPuri> ;
+    ns1:made <http://ceur-ws.org/Vol-1300/#paper11> ;
+    ns1:name "Stefano Puri" .
+
+<http://ceur-ws.org/Vol-1300/#StefanoiVercellone> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/StefanoiVercellone> ;
+    ns1:made <http://ceur-ws.org/Vol-1300/#paper10> ;
+    ns1:name "Stefano Vercellone" .
+
+<http://ceur-ws.org/Vol-1300/#TeresaiGallo> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/TeresaiGallo> ;
+    ns1:made <http://ceur-ws.org/Vol-1300/#paper3> ;
+    ns1:name "Teresa Gallo" .
+
+<http://ceur-ws.org/Vol-1300/#ValteriBasso> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/ValteriBasso> ;
+    ns1:made <http://ceur-ws.org/Vol-1300/#paper11> ;
+    ns1:name "Valter Basso" .
+
+<http://ceur-ws.org/Vol-1300/#VolkeriSchaus> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/VolkeriSchaus> ;
+    ns1:made <http://ceur-ws.org/Vol-1300/#paper8> ;
+    ns1:name "Volker Schaus" .
+
+<http://ceur-ws.org/Vol-1300/#event> a ns2:WorkshopEvent ;
+    ns2:hasLocation <http://dbpedia.org/resource/Italy> ;
+    ns2:hasPart <http://ceur-ws.org/Vol-1300/#part-CIISE>,
+        <http://ceur-ws.org/Vol-1300/#part-INCOSE> ;
+    ns2:isSubEventOf <http://ceur-ws.org/Vol-1300/#conf> ;
+    ns7:beginsAtDatetime "2014-11-24T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:endsAtDatetime "2014-11-25T00:00:00+00:00"^^xsd:dateTime ;
+    ns9:license "http://creativecommons.org/publicdomain/zero/1.0/" .
+
+<http://ceur-ws.org/Vol-1300/#AmbraiCal%C3%A1> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/AmbraiCal%C3%A1> ;
+    ns1:made <http://ceur-ws.org/Vol-1300/#paper12>,
+        <http://ceur-ws.org/Vol-1300/#paper5> ;
+    ns1:name "Ambra Calá" .
+
+<http://ceur-ws.org/Vol-1300/#CarloiLeardi> a ns1:Person ;
+    ns5:place <http://dbpedia.org/resource/Italy> ;
+    ns4:affiliation "Tetra Pak Packaging Solutions, Modena (MO)" ;
+    ns3:sameAs <http://ceur-ws.org/persons/CarloiLeardi> ;
+    ns1:made <http://ceur-ws.org/Vol-1300/#paper2> ;
+    ns1:name "Carlo Leardi" .
+
+<http://ceur-ws.org/Vol-1300/#EugenioiBrusa> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/EugenioiBrusa> ;
+    ns1:made <http://ceur-ws.org/Vol-1300/#paper12>,
+        <http://ceur-ws.org/Vol-1300/#paper5> ;
+    ns1:name "Eugenio Brusa" .
+
+<http://ceur-ws.org/Vol-1300/#TUT01> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1300/> ;
+    ns6:title "Introduction to Systems Engineering" ;
+    ns5:endPage 154 ;
+    ns5:numPages 7 ;
+    ns5:section <http://ceur-ws.org/Vol-1300/#Session4TutorialsonSystemsEngineering> ;
+    ns5:startPage 148 ;
+    ns4:author <http://ceur-ws.org/Vol-1300/#VincenzoiArrichiello> .
+
+<http://ceur-ws.org/Vol-1300/#TUT03> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1300/> ;
+    ns6:title "System Dependability Analysis: Main Issues and Possible Solutions" ;
+    ns5:endPage 161 ;
+    ns5:numPages 4 ;
+    ns5:section <http://ceur-ws.org/Vol-1300/#Session4TutorialsonSystemsEngineering> ;
+    ns5:startPage 158 ;
+    ns4:author <http://ceur-ws.org/Vol-1300/#AlfredoiGarro> .
+
+<http://ceur-ws.org/Vol-1300/#VincenzoiArrichiello> a ns1:Person ;
+    ns5:place <http://dbpedia.org/resource/Italy> ;
+    ns4:affiliation "Selex ES, Roma (RM)" ;
+    ns3:sameAs <http://ceur-ws.org/persons/VincenzoiArrichiello> ;
+    ns1:made <http://ceur-ws.org/Vol-1300/#TUT01> ;
+    ns1:name "Vincenzo Arrichiello" .
+
+<http://ceur-ws.org/Vol-1300/#paper13> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1300/> ;
+    ns6:title "How We Engineer Enterprise Systems" ;
+    ns5:endPage 137 ;
+    ns5:numPages 12 ;
+    ns5:section <http://ceur-ws.org/Vol-1300/#Session3CaseStudiesandApplications> ;
+    ns5:startPage 126 ;
+    ns4:author <http://ceur-ws.org/Vol-1300/#MikhailiBelov> .
+
+<http://ceur-ws.org/Vol-1300/#paper2> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1300/> ;
+    ns6:title "MDM Industrial Applications in Systems Engineering Validation" ;
+    ns5:endPage 25 ;
+    ns5:numPages 9 ;
+    ns5:section <http://ceur-ws.org/Vol-1300/#Session1SystemsEngineeringMethodologies> ;
+    ns5:startPage 17 ;
+    ns4:author <http://ceur-ws.org/Vol-1300/#CarloiLeardi> .
+
+<http://ceur-ws.org/Vol-1300/#paper7> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1300/> ;
+    ns6:title "How Model Based Systems Engineering Streamlines the Development of Complex Systems" ;
+    ns5:endPage 71 ;
+    ns5:numPages 13 ;
+    ns5:section <http://ceur-ws.org/Vol-1300/#Session2ModelBasedSystemsEngineering> ;
+    ns5:startPage 59 ;
+    ns4:author <http://ceur-ws.org/Vol-1300/#EnricoiMancin> .
+
+<http://ceur-ws.org/Vol-1300/#AlfredoiGarro> a ns1:Person ;
+    ns5:place <http://dbpedia.org/resource/Italy> ;
+    ns4:affiliation "University of Calabria, Rende (CS)" ;
+    ns3:sameAs <http://ceur-ws.org/persons/AlfredoiGarro> ;
+    ns1:made <http://ceur-ws.org/Vol-1300/#TUT03>,
+        <http://ceur-ws.org/Vol-1300/#paper3> ;
+    ns1:name "Alfredo Garro" .
+
+<http://ceur-ws.org/Vol-1300/#TUT02> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1300/> ;
+    ns6:title "Modeling Approaches for the Design and Analysis of Complex Systems" ;
+    ns5:endPage 157 ;
+    ns5:numPages 3 ;
+    ns5:section <http://ceur-ws.org/Vol-1300/#Session4TutorialsonSystemsEngineering> ;
+    ns5:startPage 155 ;
+    ns4:author <http://ceur-ws.org/Vol-1300/#AndreaiD%27Ambrogio>,
+        <http://ceur-ws.org/Vol-1300/#LucioiTirone> .
+
+<http://ceur-ws.org/Vol-1300/#paper1> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1300/> ;
+    ns6:title "System Models Simulation Process Management and Collaborative Multidisciplinary Optimization" ;
+    ns5:endPage 16 ;
+    ns5:numPages 16 ;
+    ns5:section <http://ceur-ws.org/Vol-1300/#Session1SystemsEngineeringMethodologies> ;
+    ns5:startPage 1 ;
+    ns4:author <http://ceur-ws.org/Vol-1300/#GiulioiCassio>,
+        <http://ceur-ws.org/Vol-1300/#MatteoiNicolich> .
+
+<http://ceur-ws.org/Vol-1300/#paper12> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1300/> ;
+    ns6:title "Identifying the Smartness of a Mechatronic Coiler through the 'Systems Engineering'" ;
+    ns5:endPage 125 ;
+    ns5:numPages 10 ;
+    ns5:section <http://ceur-ws.org/Vol-1300/#Session3CaseStudiesandApplications> ;
+    ns5:startPage 116 ;
+    ns4:author <http://ceur-ws.org/Vol-1300/#AmbraiCal%C3%A1>,
+        <http://ceur-ws.org/Vol-1300/#EugenioiBrusa> .
+
+<http://ceur-ws.org/Vol-1300/#paper9> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1300/> ;
+    ns6:title "How Model-Based SE Makes Product/System Lifecycle Management Framework More Effective" ;
+    ns5:endPage 92 ;
+    ns5:numPages 11 ;
+    ns5:section <http://ceur-ws.org/Vol-1300/#Session2ModelBasedSystemsEngineering> ;
+    ns5:startPage 82 ;
+    ns4:author <http://ceur-ws.org/Vol-1300/#CarmeloiTommasi>,
+        <http://ceur-ws.org/Vol-1300/#EugenioiVacca> .
+
+<http://ceur-ws.org/Vol-1300/#AndreaiD%27Ambrogio> a ns1:Person ;
+    ns5:place <http://dbpedia.org/resource/Italy> ;
+    ns4:affiliation "University of Rome \"Tor Vergata\", Roma (RM)" ;
+    ns3:sameAs <http://ceur-ws.org/persons/AndreaiD%27Ambrogio> ;
+    ns1:made <http://ceur-ws.org/Vol-1300/#TUT02>,
+        <http://ceur-ws.org/Vol-1300/#paper6>,
+        <http://ceur-ws.org/Vol-1300/#paper8> ;
+    ns1:name "Andrea D'Ambrogio" .
+
+<http://ceur-ws.org/Vol-1300/#Session1SystemsEngineeringMethodologies> a ns2:SessionEvent ;
+    ns2:partOf <http://ceur-ws.org/Vol-1300/> ;
+    ns6:title "Session 1: Systems Engineering Methodologies" .
+
+<http://ceur-ws.org/Vol-1300/#Session4TutorialsonSystemsEngineering> a ns2:SessionEvent ;
+    ns2:partOf <http://ceur-ws.org/Vol-1300/> ;
+    ns6:title "Session 4: Tutorials on Systems Engineering" .
+
+<http://ceur-ws.org/Vol-1300/#paper04> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1300/> ;
+    ns6:title "Product Architecture Management - An Approach to Product Life Cycle" ;
+    ns5:endPage 147 ;
+    ns5:numPages 10 ;
+    ns5:section <http://ceur-ws.org/Vol-1300/#Session3CaseStudiesandApplications> ;
+    ns5:startPage 138 ;
+    ns4:author <http://ceur-ws.org/Vol-1300/#AndreaiMargini>,
+        <http://ceur-ws.org/Vol-1300/#CesareiFantuzzi>,
+        <http://ceur-ws.org/Vol-1300/#GaetanoiCutrona> .
+
+<http://ceur-ws.org/Vol-1300/#Session3CaseStudiesandApplications> a ns2:SessionEvent ;
+    ns2:partOf <http://ceur-ws.org/Vol-1300/> ;
+    ns6:title "Session 3: Case Studies and Applications" .
+
+<http://ceur-ws.org/Vol-1300/#paper5> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1300/> ;
+    ns6:title "Towards an Effective Interoperability of Models Within the 'Systems Engineering' Applied to Aeronautics" ;
+    ns5:endPage 47 ;
+    ns5:numPages 10 ;
+    ns5:section <http://ceur-ws.org/Vol-1300/#Session2ModelBasedSystemsEngineering> ;
+    ns5:startPage 38 ;
+    ns4:author <http://ceur-ws.org/Vol-1300/#AmbraiCal%C3%A1>,
+        <http://ceur-ws.org/Vol-1300/#DavideiFerretto>,
+        <http://ceur-ws.org/Vol-1300/#EugenioiBrusa>,
+        <http://ceur-ws.org/Vol-1300/#FrancescoiDeiVita>,
+        <http://ceur-ws.org/Vol-1300/#SergioiChiesa> .
+
+<http://ceur-ws.org/Vol-1300/#paper6> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1300/> ;
+    ns6:title "A Methodological Template for Model Driven Systems Engineering" ;
+    ns5:endPage 58 ;
+    ns5:numPages 11 ;
+    ns5:section <http://ceur-ws.org/Vol-1300/#Session2ModelBasedSystemsEngineering> ;
+    ns5:startPage 48 ;
+    ns4:author <http://ceur-ws.org/Vol-1300/#AndreaiD%27Ambrogio>,
+        <http://ceur-ws.org/Vol-1300/#AndreaiGiglio>,
+        <http://ceur-ws.org/Vol-1300/#EmilianoiCaponi>,
+        <http://ceur-ws.org/Vol-1300/#EmilianoiPaglia>,
+        <http://ceur-ws.org/Vol-1300/#PaoloiBocciarelli> .
+
+<http://ceur-ws.org/Vol-1300/#Session2ModelBasedSystemsEngineering> a ns2:SessionEvent ;
+    ns2:partOf <http://ceur-ws.org/Vol-1300/> ;
+    ns6:title "Session 2: Model-Based Systems Engineering" .
+
+<http://ceur-ws.org/Vol-1300/#paper3> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1300/> ;
+    ns6:title "Mastering Concept Exploration in Large Industrial Research Projects" ;
+    ns5:endPage 37 ;
+    ns5:numPages 12 ;
+    ns5:section <http://ceur-ws.org/Vol-1300/#Session1SystemsEngineeringMethodologies> ;
+    ns5:startPage 26 ;
+    ns4:author <http://ceur-ws.org/Vol-1300/#AlfredoiGarro>,
+        <http://ceur-ws.org/Vol-1300/#AngeloiFurfaro>,
+        <http://ceur-ws.org/Vol-1300/#DomenicoiSacc%C3%A1>,
+        <http://ceur-ws.org/Vol-1300/#SabrinaiGraziano>,
+        <http://ceur-ws.org/Vol-1300/#SimonaiCitrigno>,
+        <http://ceur-ws.org/Vol-1300/#TeresaiGallo> .
+
+<http://ceur-ws.org/Vol-1300/#paper8> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1300/> ;
+    ns6:title "Interface Management in Concurrent Engineering Facilities for Systems and Service Systems Engineering: A Model-based Approach" ;
+    ns5:endPage 81 ;
+    ns5:numPages 10 ;
+    ns5:section <http://ceur-ws.org/Vol-1300/#Session2ModelBasedSystemsEngineering> ;
+    ns5:startPage 72 ;
+    ns4:author <http://ceur-ws.org/Vol-1300/#AndreaiD%27Ambrogio>,
+        <http://ceur-ws.org/Vol-1300/#AndreasiGerndt>,
+        <http://ceur-ws.org/Vol-1300/#DanieleiGianni>,
+        <http://ceur-ws.org/Vol-1300/#MarcoiLisi>,
+        <http://ceur-ws.org/Vol-1300/#PierluigiiDeiSimone>,
+        <http://ceur-ws.org/Vol-1300/#VolkeriSchaus> .
+
+<http://ceur-ws.org/Vol-1300/#paper10> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1300/> ;
+    ns6:title "The Verification Process in the ASTRI Project: the Verification Control Document (VCD)" ;
+    ns5:endPage 115 ;
+    ns5:numPages 10 ;
+    ns5:section <http://ceur-ws.org/Vol-1300/#Session3CaseStudiesandApplications> ;
+    ns5:startPage 106 ;
+    ns4:author <http://ceur-ws.org/Vol-1300/#EnricoiGiro>,
+        <http://ceur-ws.org/Vol-1300/#GinoiTosti>,
+        <http://ceur-ws.org/Vol-1300/#GiovanniiPareschi>,
+        <http://ceur-ws.org/Vol-1300/#LucaiStringhetti>,
+        <http://ceur-ws.org/Vol-1300/#MariaiConcettaiMaccarone>,
+        <http://ceur-ws.org/Vol-1300/#MauroiFiorini>,
+        <http://ceur-ws.org/Vol-1300/#NicolaiLaiPalombara>,
+        <http://ceur-ws.org/Vol-1300/#OsvaldoiCatalano>,
+        <http://ceur-ws.org/Vol-1300/#RodolfoiCanestrari>,
+        <http://ceur-ws.org/Vol-1300/#StefanoiVercellone> .
+
+<http://ceur-ws.org/Vol-1300/#paper11> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1300/> ;
+    ns6:title "Model-based Approach for the Verification Enhancement Across the Lifecycle of a Space System" ;
+    ns5:endPage 105 ;
+    ns5:numPages 13 ;
+    ns5:section <http://ceur-ws.org/Vol-1300/#Session2ModelBasedSystemsEngineering> ;
+    ns5:startPage 93 ;
+    ns4:author <http://ceur-ws.org/Vol-1300/#DiegoiGerbaz>,
+        <http://ceur-ws.org/Vol-1300/#JoachimiFuchs>,
+        <http://ceur-ws.org/Vol-1300/#JuhaniiViitaniemi>,
+        <http://ceur-ws.org/Vol-1300/#LauraiBaracchi>,
+        <http://ceur-ws.org/Vol-1300/#LorenzoiPace>,
+        <http://ceur-ws.org/Vol-1300/#MarcoiLassalle>,
+        <http://ceur-ws.org/Vol-1300/#MauroiPasquinelli>,
+        <http://ceur-ws.org/Vol-1300/#SilviaiMazzini>,
+        <http://ceur-ws.org/Vol-1300/#StefanoiPuri>,
+        <http://ceur-ws.org/Vol-1300/#ValteriBasso> .
+
+<http://ceur-ws.org/Vol-1300/> a ns2:Proceedings ;
+    ns2:hasPart <http://ceur-ws.org/Vol-1300/#TUT01>,
+        <http://ceur-ws.org/Vol-1300/#TUT02>,
+        <http://ceur-ws.org/Vol-1300/#TUT03>,
+        <http://ceur-ws.org/Vol-1300/#paper04>,
+        <http://ceur-ws.org/Vol-1300/#paper1>,
+        <http://ceur-ws.org/Vol-1300/#paper10>,
+        <http://ceur-ws.org/Vol-1300/#paper11>,
+        <http://ceur-ws.org/Vol-1300/#paper12>,
+        <http://ceur-ws.org/Vol-1300/#paper13>,
+        <http://ceur-ws.org/Vol-1300/#paper2>,
+        <http://ceur-ws.org/Vol-1300/#paper3>,
+        <http://ceur-ws.org/Vol-1300/#paper5>,
+        <http://ceur-ws.org/Vol-1300/#paper6>,
+        <http://ceur-ws.org/Vol-1300/#paper7>,
+        <http://ceur-ws.org/Vol-1300/#paper8>,
+        <http://ceur-ws.org/Vol-1300/#paper9> ;
+    ns2:hasSession <http://ceur-ws.org/Vol-1300/#Session1SystemsEngineeringMethodologies>,
+        <http://ceur-ws.org/Vol-1300/#Session2ModelBasedSystemsEngineering>,
+        <http://ceur-ws.org/Vol-1300/#Session3CaseStudiesandApplications>,
+        <http://ceur-ws.org/Vol-1300/#Session4TutorialsonSystemsEngineering> ;
+    ns8:issued "2014-11-22T00:00:00+00:00"^^xsd:dateTime ;
+    ns5:presentedAt <http://ceur-ws.org/Vol-1300/#event> ;
     ns4:editor <http://ceur-ws.org/Vol-1300/#AlfredoiGarro>,
         <http://ceur-ws.org/Vol-1300/#AndreaiD%27Ambrogio>,
         <http://ceur-ws.org/Vol-1300/#AndreaiTundis>,
         <http://ceur-ws.org/Vol-1300/#CarloiLeardi>,
         <http://ceur-ws.org/Vol-1300/#CarloiPoloni>,
         <http://ceur-ws.org/Vol-1300/#VincenzoiArrichiello> .
-
-<http://ceur-ws.org/Vol-1300/#AlfredoiGarro> a ns2:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/AlfredoiGarro> ;
-    ns2:name "Alfredo Garro" .
-
-<http://ceur-ws.org/Vol-1300/#AndreaiD%27Ambrogio> a ns2:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/AndreaiD%27Ambrogio> ;
-    ns2:name "Andrea D'Ambrogio" .
-
-<http://ceur-ws.org/Vol-1300/#AndreaiTundis> a ns2:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/AndreaiTundis> ;
-    ns2:name "Andrea Tundis" .
-
-<http://ceur-ws.org/Vol-1300/#CarloiLeardi> a ns2:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/CarloiLeardi> ;
-    ns2:name "Carlo Leardi" .
-
-<http://ceur-ws.org/Vol-1300/#CarloiPoloni> a ns2:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/CarloiPoloni> ;
-    ns2:name "Carlo Poloni" .
-
-<http://ceur-ws.org/Vol-1300/#VincenzoiArrichiello> a ns2:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/VincenzoiArrichiello> ;
-    ns2:name "Vincenzo Arrichiello" .
-
-<http://ceur-ws.org/Vol-1300/#event> a ns3:WorkshopEvent ;
-    ns3:hasLocation <http://dbpedia.org/resource/Italy> ;
-    ns3:hasPart <http://ceur-ws.org/Vol-1300/#part-CIISE>,
-        <http://ceur-ws.org/Vol-1300/#part-INCOSE> ;
-    ns3:isSubEventOf <http://ceur-ws.org/Vol-1300/#conf> ;
-    ns8:beginsAtDatetime "2014-11-24T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:endsAtDatetime "2014-11-25T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:license "http://creativecommons.org/publicdomain/zero/1.0/" .
 

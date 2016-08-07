@@ -1,11 +1,12 @@
 @prefix ns1: <http://xmlns.com/foaf/0.1/> .
-@prefix ns2: <http://purl.org/ontology/bibo/#> .
-@prefix ns3: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns2: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns3: <http://purl.org/ontology/bibo/#> .
 @prefix ns4: <http://www.w3.org/2002/07/owl#> .
-@prefix ns5: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns5: <http://data.semanticweb.org/ns/swc/ontology/#> .
 @prefix ns6: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns7: <http://purl.org/dc/elements/1.1/> .
 @prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns9: <http://purl.org/NET/c4dm/timeline.owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -32,8 +33,8 @@
     ns1:name "Christophe Viudez" .
 
 <http://ceur-ws.org/Vol-1010/#ChristophiLange> a ns1:Person ;
-    ns2:place <http://dbpedia.org/resource/United_Kingdom> ;
-    ns5:affiliation "University of Birmingham" ;
+    ns3:place <http://dbpedia.org/resource/United_Kingdom> ;
+    ns2:affiliation "University of Birmingham" ;
     ns4:sameAs <http://ceur-ws.org/persons/ChristophiLange> ;
     ns1:name "Christoph Lange" .
 
@@ -53,8 +54,8 @@
     ns1:name "Dave Murray-Rust" .
 
 <http://ceur-ws.org/Vol-1010/#DavidiAspinall> a ns1:Person ;
-    ns2:place <http://dbpedia.org/resource/United_Kingdom> ;
-    ns5:affiliation "University of Edinburgh" ;
+    ns3:place <http://dbpedia.org/resource/United_Kingdom> ;
+    ns2:affiliation "University of Edinburgh" ;
     ns4:sameAs <http://ceur-ws.org/persons/DavidiAspinall> ;
     ns1:name "David Aspinall" .
 
@@ -89,20 +90,20 @@
     ns1:name "Hans Cuypers" .
 
 <http://ceur-ws.org/Vol-1010/#IainiWhiteside> a ns1:Person ;
-    ns2:place <http://dbpedia.org/resource/United_Kingdom> ;
-    ns5:affiliation "Newcastle University" ;
+    ns3:place <http://dbpedia.org/resource/United_Kingdom> ;
+    ns2:affiliation "Newcastle University" ;
     ns4:sameAs <http://ceur-ws.org/persons/IainiWhiteside> ;
     ns1:name "Iain Whiteside" .
 
 <http://ceur-ws.org/Vol-1010/#JacquesiCarette> a ns1:Person ;
-    ns2:place <http://dbpedia.org/resource/Canada> ;
-    ns5:affiliation "McMaster University" ;
+    ns3:place <http://dbpedia.org/resource/Canada> ;
+    ns2:affiliation "McMaster University" ;
     ns4:sameAs <http://ceur-ws.org/persons/JacquesiCarette> ;
     ns1:name "Jacques Carette" .
 
 <http://ceur-ws.org/Vol-1010/#JamesiDavenport> a ns1:Person ;
-    ns2:place <http://dbpedia.org/resource/United_Kingdom> ;
-    ns5:affiliation "University of Bath" ;
+    ns3:place <http://dbpedia.org/resource/United_Kingdom> ;
+    ns2:affiliation "University of Bath" ;
     ns4:sameAs <http://ceur-ws.org/persons/JamesiDavenport> ;
     ns1:name "James Davenport" .
 
@@ -147,8 +148,8 @@
     ns1:name "Nuno Baeta" .
 
 <http://ceur-ws.org/Vol-1010/#PauliLibbrecht> a ns1:Person ;
-    ns2:place <http://dbpedia.org/resource/Germany> ;
-    ns5:affiliation "Center for Educational Research in Mathematics and Technology, Martin-Luther-University Halle-Wittenberg" ;
+    ns3:place <http://dbpedia.org/resource/Germany> ;
+    ns2:affiliation "Center for Educational Research in Mathematics and Technology, Martin-Luther-University Halle-Wittenberg" ;
     ns4:sameAs <http://ceur-ws.org/persons/PauliLibbrecht> ;
     ns1:name "Paul Libbrecht" .
 
@@ -158,8 +159,8 @@
     ns1:name "Peter Murray-Rust" .
 
 <http://ceur-ws.org/Vol-1010/#PetriSojka> a ns1:Person ;
-    ns2:place <http://dbpedia.org/resource/Czech_Republic> ;
-    ns5:affiliation "Masaryk University" ;
+    ns3:place <http://dbpedia.org/resource/Czech_Republic> ;
+    ns2:affiliation "Masaryk University" ;
     ns4:sameAs <http://ceur-ws.org/persons/PetriSojka> ;
     ns1:name "Petr Sojka" .
 
@@ -194,33 +195,33 @@
     ns1:name "Walther Neuper" .
 
 <http://ceur-ws.org/Vol-1010/#WolfgangiWindsteiger> a ns1:Person ;
-    ns2:place <http://dbpedia.org/resource/Austria> ;
-    ns5:affiliation "RISC Institute, JKU Linz" ;
+    ns3:place <http://dbpedia.org/resource/Austria> ;
+    ns2:affiliation "RISC Institute, JKU Linz" ;
     ns4:sameAs <http://ceur-ws.org/persons/WolfgangiWindsteiger> ;
     ns1:name "Wolfgang Windsteiger" .
 
-<http://ceur-ws.org/Vol-1010/#event> a ns3:WorkshopEvent ;
-    ns3:hasLocation <http://dbpedia.org/resource/United_Kingdom> ;
-    ns3:hasPart <http://ceur-ws.org/Vol-1010/#part-MathUI>,
+<http://ceur-ws.org/Vol-1010/#event> a ns5:WorkshopEvent ;
+    ns5:hasLocation <http://dbpedia.org/resource/United_Kingdom> ;
+    ns5:hasPart <http://ceur-ws.org/Vol-1010/#part-MathUI>,
         <http://ceur-ws.org/Vol-1010/#part-OpenMath>,
         <http://ceur-ws.org/Vol-1010/#part-PLMMS>,
         <http://ceur-ws.org/Vol-1010/#part-ThEdu> ;
-    ns3:isSubEventOf <http://ceur-ws.org/Vol-1010/#conf> ;
-    ns7:beginsAtDatetime "2016-07-09T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:endsAtDatetime "2016-07-09T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:license <http://choosealicense.com/licenses/no-license/> ;
+    ns5:isSubEventOf <http://ceur-ws.org/Vol-1010/#conf> ;
+    ns9:beginsAtDatetime "2016-07-09T00:00:00+00:00"^^xsd:dateTime ;
+    ns9:endsAtDatetime "2016-07-09T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:license "http://choosealicense.com/licenses/no-license/" ;
     rdfs:seeAlso <http://ceur-ws.org/Vol-921/#event> .
 
 <http://ceur-ws.org/Vol-1010/#AndreaiKohlhase> a ns1:Person ;
-    ns2:place <http://dbpedia.org/resource/Germany> ;
-    ns5:affiliation "Jacobs University Bremen" ;
+    ns3:place <http://dbpedia.org/resource/Germany> ;
+    ns2:affiliation "Jacobs University Bremen" ;
     ns4:sameAs <http://ceur-ws.org/persons/AndreaiKohlhase> ;
     ns1:made <http://ceur-ws.org/Vol-1010/#paper-17> ;
     ns1:name "Andrea Kohlhase" .
 
 <http://ceur-ws.org/Vol-1010/#FlorianiRabe> a ns1:Person ;
-    ns2:place <http://dbpedia.org/resource/Germany> ;
-    ns5:affiliation "Jacobs University Bremen" ;
+    ns3:place <http://dbpedia.org/resource/Germany> ;
+    ns2:affiliation "Jacobs University Bremen" ;
     ns4:sameAs <http://ceur-ws.org/persons/FlorianiRabe> ;
     ns1:made <http://ceur-ws.org/Vol-1010/#paper-15> ;
     ns1:name "Florian Rabe" .
@@ -238,8 +239,8 @@
     ns1:name "Lars Hellström" .
 
 <http://ceur-ws.org/Vol-1010/#MichaeliKohlhase> a ns1:Person ;
-    ns2:place <http://dbpedia.org/resource/Germany> ;
-    ns5:affiliation "Jacobs University Bremen" ;
+    ns3:place <http://dbpedia.org/resource/Germany> ;
+    ns2:affiliation "Jacobs University Bremen" ;
     ns4:sameAs <http://ceur-ws.org/persons/MichaeliKohlhase> ;
     ns1:made <http://ceur-ws.org/Vol-1010/#paper-12> ;
     ns1:name "Michael Kohlhase" .
@@ -251,8 +252,8 @@
     ns1:name "Nathan C. Carter" .
 
 <http://ceur-ws.org/Vol-1010/#PedroiQuaresma> a ns1:Person ;
-    ns2:place <http://dbpedia.org/resource/Portugal> ;
-    ns5:affiliation "University of Coimbra" ;
+    ns3:place <http://dbpedia.org/resource/Portugal> ;
+    ns2:affiliation "University of Coimbra" ;
     ns4:sameAs <http://ceur-ws.org/persons/PedroiQuaresma> ;
     ns1:made <http://ceur-ws.org/Vol-1010/#paper-08> ;
     ns1:name "Pedro Quaresma" .
@@ -263,183 +264,183 @@
         <http://ceur-ws.org/Vol-1010/#paper-19> ;
     ns1:name "Stephen M. Watt" .
 
-<http://ceur-ws.org/Vol-1010/#paper-01> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1010/> ;
+<http://ceur-ws.org/Vol-1010/#paper-01> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1010/> ;
     ns6:title "Tagged mathematics in PDFs for accessibility and other purposes" ;
-    ns2:section <http%3A//ceur-ws.org/Vol-1010/%23WorkinProgress> ;
-    ns5:author <http://ceur-ws.org/Vol-1010/#RossiMoore> .
+    ns3:section <http://ceur-ws.org/Vol-1010/#WorkinProgress> ;
+    ns2:author <http://ceur-ws.org/Vol-1010/#RossiMoore> .
 
-<http://ceur-ws.org/Vol-1010/#paper-02> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1010/> ;
+<http://ceur-ws.org/Vol-1010/#paper-02> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1010/> ;
     ns6:title "Scaling feature based mathematical search engine for real-world document sets" ;
-    ns2:section <http%3A//ceur-ws.org/Vol-1010/%23WorkinProgress> ;
-    ns5:author <http://ceur-ws.org/Vol-1010/#JozefiMi%C5%A1utka> .
+    ns3:section <http://ceur-ws.org/Vol-1010/#WorkinProgress> ;
+    ns2:author <http://ceur-ws.org/Vol-1010/#JozefiMi%C5%A1utka> .
 
-<http://ceur-ws.org/Vol-1010/#paper-05> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1010/> ;
+<http://ceur-ws.org/Vol-1010/#paper-05> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1010/> ;
     ns6:title "Dependent types for an adequate programming of algebra" ;
-    ns2:section <http%3A//ceur-ws.org/Vol-1010/%23ProgrammingLanguagesforMechanizesMathematicalSystems%28PLMMS%29> ;
-    ns5:author <http://ceur-ws.org/Vol-1010/#SergeiiD.iMeshveliani> .
+    ns3:section <http://ceur-ws.org/Vol-1010/#ProgrammingLanguagesforMechanizesMathematicalSystemsPLMMS> ;
+    ns2:author <http://ceur-ws.org/Vol-1010/#SergeiiD.iMeshveliani> .
 
-<http://ceur-ws.org/Vol-1010/#paper-07> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1010/> ;
+<http://ceur-ws.org/Vol-1010/#paper-07> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1010/> ;
     ns6:title "Reading an algebra textbook" ;
-    ns2:section <http%3A//ceur-ws.org/Vol-1010/%23ProgrammingLanguagesforMechanizesMathematicalSystems%28PLMMS%29> ;
-    ns5:author <http://ceur-ws.org/Vol-1010/#ClemensiBallarin> .
+    ns3:section <http://ceur-ws.org/Vol-1010/#ProgrammingLanguagesforMechanizesMathematicalSystemsPLMMS> ;
+    ns2:author <http://ceur-ws.org/Vol-1010/#ClemensiBallarin> .
 
-<http://ceur-ws.org/Vol-1010/#paper-09> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1010/> ;
+<http://ceur-ws.org/Vol-1010/#paper-09> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1010/> ;
     ns6:title "Computer algebra implemented in Isabelle's function package under Lucas-interpretation — a case study" ;
-    ns2:section <http%3A//ceur-ws.org/Vol-1010/%23TheoremprovingcomponentsforEducationalsoftware%28ThEdu%29> ;
-    ns5:author <http://ceur-ws.org/Vol-1010/#WaltheriNeuper> .
+    ns3:section <http://ceur-ws.org/Vol-1010/#TheoremprovingcomponentsforEducationalsoftwareThEdu> ;
+    ns2:author <http://ceur-ws.org/Vol-1010/#WaltheriNeuper> .
 
-<http://ceur-ws.org/Vol-1010/#paper-13> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1010/> ;
+<http://ceur-ws.org/Vol-1010/#paper-13> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1010/> ;
     ns6:title "NNexus Glasses: a drop-in showcase for wikification" ;
-    ns2:section <http%3A//ceur-ws.org/Vol-1010/%23MathematicalUserInterfaces%28MathUI%29> ;
-    ns5:author <http://ceur-ws.org/Vol-1010/#DeyaniGinev> .
+    ns3:section <http://ceur-ws.org/Vol-1010/#MathematicalUserInterfacesMathUI> ;
+    ns2:author <http://ceur-ws.org/Vol-1010/#DeyaniGinev> .
 
-<http://ceur-ws.org/Vol-1010/#paper-17> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1010/> ;
+<http://ceur-ws.org/Vol-1010/#paper-17> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1010/> ;
     ns6:title "Spreadsheets: from data interfaces to knowledge interfaces" ;
-    ns2:section <http%3A//ceur-ws.org/Vol-1010/%23MathematicalUserInterfaces%28MathUI%29> ;
-    ns5:author <http://ceur-ws.org/Vol-1010/#AndreaiKohlhase> .
+    ns3:section <http://ceur-ws.org/Vol-1010/#MathematicalUserInterfacesMathUI> ;
+    ns2:author <http://ceur-ws.org/Vol-1010/#AndreaiKohlhase> .
 
-<http://ceur-ws.org/Vol-1010/#paper-18> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1010/> ;
+<http://ceur-ws.org/Vol-1010/#paper-18> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1010/> ;
     ns6:title "Edition with Arabic mathematical notation" ;
-    ns2:section <http%3A//ceur-ws.org/Vol-1010/%23MathematicalUserInterfaces%28MathUI%29> ;
-    ns5:author <http://ceur-ws.org/Vol-1010/#DanieliMarqu%C3%A8siSol%C3%A9> .
+    ns3:section <http://ceur-ws.org/Vol-1010/#MathematicalUserInterfacesMathUI> ;
+    ns2:author <http://ceur-ws.org/Vol-1010/#DanieliMarqu%C3%A8siSol%C3%A9> .
 
-<http://ceur-ws.org/Vol-1010/#paper-21> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1010/> ;
+<http://ceur-ws.org/Vol-1010/#paper-21> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1010/> ;
     ns6:title "Quantifiers and n-ary binders: an OpenMath standard enhancement proposal" ;
-    ns2:section <http%3A//ceur-ws.org/Vol-1010/%23OpenMath> ;
-    ns5:author <http://ceur-ws.org/Vol-1010/#LarsiHellstr%C3%B6m> .
+    ns3:section <http://ceur-ws.org/Vol-1010/#OpenMath> ;
+    ns2:author <http://ceur-ws.org/Vol-1010/#LarsiHellstr%C3%B6m> .
 
-<http://ceur-ws.org/Vol-1010/#paper-22> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1010/> ;
+<http://ceur-ws.org/Vol-1010/#paper-22> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1010/> ;
     ns6:title "Literate sources for content dictionaries" ;
-    ns2:section <http%3A//ceur-ws.org/Vol-1010/%23OpenMath> ;
-    ns5:author <http://ceur-ws.org/Vol-1010/#LarsiHellstr%C3%B6m> .
+    ns3:section <http://ceur-ws.org/Vol-1010/#OpenMath> ;
+    ns2:author <http://ceur-ws.org/Vol-1010/#LarsiHellstr%C3%B6m> .
 
-<http%3A//ceur-ws.org/Vol-1010/%23TheoremprovingcomponentsforEducationalsoftware%28ThEdu%29> a ns3:SessionEvent ;
-    ns3:partOf <http://ceur-ws.org/Vol-1010/> ;
+<http://ceur-ws.org/Vol-1010/#TheoremprovingcomponentsforEducationalsoftwareThEdu> a ns5:SessionEvent ;
+    ns5:partOf <http://ceur-ws.org/Vol-1010/> ;
     ns6:title "Theorem proving components for Educational software (ThEdu)" .
 
-<http://ceur-ws.org/Vol-1010/#paper-03> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1010/> ;
+<http://ceur-ws.org/Vol-1010/#paper-03> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1010/> ;
     ns6:title "The Declaratron, semantic specification for scientific computation using MathML" ;
-    ns2:section <http%3A//ceur-ws.org/Vol-1010/%23WorkinProgress> ;
-    ns5:author <http://ceur-ws.org/Vol-1010/#DaveiMurray-Rust>,
+    ns3:section <http://ceur-ws.org/Vol-1010/#WorkinProgress> ;
+    ns2:author <http://ceur-ws.org/Vol-1010/#DaveiMurray-Rust>,
         <http://ceur-ws.org/Vol-1010/#PeteriMurray-Rust> .
 
-<http://ceur-ws.org/Vol-1010/#paper-04> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1010/> ;
+<http://ceur-ws.org/Vol-1010/#paper-04> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1010/> ;
     ns6:title "Lurch: a word processor that can grade students' proofs" ;
-    ns2:section <http%3A//ceur-ws.org/Vol-1010/%23WorkinProgress> ;
-    ns5:author <http://ceur-ws.org/Vol-1010/#KennethiG.iMonks>,
+    ns3:section <http://ceur-ws.org/Vol-1010/#WorkinProgress> ;
+    ns2:author <http://ceur-ws.org/Vol-1010/#KennethiG.iMonks>,
         <http://ceur-ws.org/Vol-1010/#NathaniC.iCarter> .
 
-<http://ceur-ws.org/Vol-1010/#paper-08> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1010/> ;
+<http://ceur-ws.org/Vol-1010/#paper-08> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1010/> ;
     ns6:title "The full angle method on the OpenGeoProver" ;
-    ns2:section <http%3A//ceur-ws.org/Vol-1010/%23TheoremprovingcomponentsforEducationalsoftware%28ThEdu%29> ;
-    ns5:author <http://ceur-ws.org/Vol-1010/#NunoiBaeta>,
+    ns3:section <http://ceur-ws.org/Vol-1010/#TheoremprovingcomponentsforEducationalsoftwareThEdu> ;
+    ns2:author <http://ceur-ws.org/Vol-1010/#NunoiBaeta>,
         <http://ceur-ws.org/Vol-1010/#PedroiQuaresma> .
 
-<http://ceur-ws.org/Vol-1010/#paper-12> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1010/> ;
+<http://ceur-ws.org/Vol-1010/#paper-12> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1010/> ;
     ns6:title "OpenMathMap: accessing math via interactive maps" ;
-    ns2:section <http%3A//ceur-ws.org/Vol-1010/%23MathematicalUserInterfaces%28MathUI%29> ;
-    ns5:author <http://ceur-ws.org/Vol-1010/#JaniWilkeniD%C3%B6rrie>,
+    ns3:section <http://ceur-ws.org/Vol-1010/#MathematicalUserInterfacesMathUI> ;
+    ns2:author <http://ceur-ws.org/Vol-1010/#JaniWilkeniD%C3%B6rrie>,
         <http://ceur-ws.org/Vol-1010/#MichaeliKohlhase> .
 
-<http://ceur-ws.org/Vol-1010/#paper-14> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1010/> ;
+<http://ceur-ws.org/Vol-1010/#paper-14> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1010/> ;
     ns6:title "InkChat: a collaboration tool for mathematics" ;
-    ns2:section <http%3A//ceur-ws.org/Vol-1010/%23MathematicalUserInterfaces%28MathUI%29> ;
-    ns5:author <http://ceur-ws.org/Vol-1010/#RuiiHu>,
+    ns3:section <http://ceur-ws.org/Vol-1010/#MathematicalUserInterfacesMathUI> ;
+    ns2:author <http://ceur-ws.org/Vol-1010/#RuiiHu>,
         <http://ceur-ws.org/Vol-1010/#StepheniM.iWatt> .
 
-<http://ceur-ws.org/Vol-1010/#paper-16> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1010/> ;
+<http://ceur-ws.org/Vol-1010/#paper-16> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1010/> ;
     ns6:title "Interactive mathematical videos" ;
-    ns2:section <http%3A//ceur-ws.org/Vol-1010/%23MathematicalUserInterfaces%28MathUI%29> ;
-    ns5:author <http://ceur-ws.org/Vol-1010/#HansiCuypers>,
+    ns3:section <http://ceur-ws.org/Vol-1010/#MathematicalUserInterfacesMathUI> ;
+    ns2:author <http://ceur-ws.org/Vol-1010/#HansiCuypers>,
         <http://ceur-ws.org/Vol-1010/#JaniWillemiKnopper> .
 
-<http://ceur-ws.org/Vol-1010/#paper-19> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1010/> ;
+<http://ceur-ws.org/Vol-1010/#paper-19> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1010/> ;
     ns6:title "Recommendation systems in mathematical character recognition" ;
-    ns2:section <http%3A//ceur-ws.org/Vol-1010/%23MathematicalUserInterfaces%28MathUI%29> ;
-    ns5:author <http://ceur-ws.org/Vol-1010/#StepheniM.iWatt>,
+    ns3:section <http://ceur-ws.org/Vol-1010/#MathematicalUserInterfacesMathUI> ;
+    ns2:author <http://ceur-ws.org/Vol-1010/#StepheniM.iWatt>,
         <http://ceur-ws.org/Vol-1010/#VadimiMazalov> .
 
-<http://ceur-ws.org/Vol-1010/#paper-20> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1010/> ;
+<http://ceur-ws.org/Vol-1010/#paper-20> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1010/> ;
     ns6:title "Implementation of dynamic algebra in Epsilonwriter" ;
-    ns2:section <http%3A//ceur-ws.org/Vol-1010/%23MathematicalUserInterfaces%28MathUI%29> ;
-    ns5:author <http://ceur-ws.org/Vol-1010/#ChristopheiViudez>,
+    ns3:section <http://ceur-ws.org/Vol-1010/#MathematicalUserInterfacesMathUI> ;
+    ns2:author <http://ceur-ws.org/Vol-1010/#ChristopheiViudez>,
         <http://ceur-ws.org/Vol-1010/#Jean-Fran%C3%A7oisiNicaud> .
 
-<http://ceur-ws.org/Vol-1010/#paper-23> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1010/> ;
+<http://ceur-ws.org/Vol-1010/#paper-23> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1010/> ;
     ns6:title "Lurch: a word processor built on OpenMath that can check mathematical reasoning" ;
-    ns2:section <http%3A//ceur-ws.org/Vol-1010/%23OpenMath> ;
-    ns5:author <http://ceur-ws.org/Vol-1010/#KennethiG.iMonks>,
+    ns3:section <http://ceur-ws.org/Vol-1010/#OpenMath> ;
+    ns2:author <http://ceur-ws.org/Vol-1010/#KennethiG.iMonks>,
         <http://ceur-ws.org/Vol-1010/#NathaniC.iCarter> .
 
-<http%3A//ceur-ws.org/Vol-1010/%23OpenMath> a ns3:SessionEvent ;
-    ns3:partOf <http://ceur-ws.org/Vol-1010/> ;
+<http://ceur-ws.org/Vol-1010/#OpenMath> a ns5:SessionEvent ;
+    ns5:partOf <http://ceur-ws.org/Vol-1010/> ;
     ns6:title "OpenMath" .
 
-<http%3A//ceur-ws.org/Vol-1010/%23ProgrammingLanguagesforMechanizesMathematicalSystems%28PLMMS%29> a ns3:SessionEvent ;
-    ns3:partOf <http://ceur-ws.org/Vol-1010/> ;
+<http://ceur-ws.org/Vol-1010/#ProgrammingLanguagesforMechanizesMathematicalSystemsPLMMS> a ns5:SessionEvent ;
+    ns5:partOf <http://ceur-ws.org/Vol-1010/> ;
     ns6:title "Programming Languages for Mechanizes Mathematical Systems (PLMMS)" .
 
-<http://ceur-ws.org/Vol-1010/#paper-06> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1010/> ;
+<http://ceur-ws.org/Vol-1010/#paper-06> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1010/> ;
     ns6:title "Sequential decision problems, dependently-typed solutions" ;
-    ns2:section <http%3A//ceur-ws.org/Vol-1010/%23ProgrammingLanguagesforMechanizesMathematicalSystems%28PLMMS%29> ;
-    ns5:author <http://ceur-ws.org/Vol-1010/#CezariIonescu>,
+    ns3:section <http://ceur-ws.org/Vol-1010/#ProgrammingLanguagesforMechanizesMathematicalSystemsPLMMS> ;
+    ns2:author <http://ceur-ws.org/Vol-1010/#CezariIonescu>,
         <http://ceur-ws.org/Vol-1010/#EdwiniBrady>,
         <http://ceur-ws.org/Vol-1010/#NicolaiBotta> .
 
-<http://ceur-ws.org/Vol-1010/#paper-10> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1010/> ;
+<http://ceur-ws.org/Vol-1010/#paper-10> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1010/> ;
     ns6:title "Towards automatic generation of domain-specific mathematical input support" ;
-    ns2:section <http%3A//ceur-ws.org/Vol-1010/%23MathematicalUserInterfaces%28MathUI%29> ;
-    ns5:author <http://ceur-ws.org/Vol-1010/#BastiaaniHeeren>,
+    ns3:section <http://ceur-ws.org/Vol-1010/#MathematicalUserInterfacesMathUI> ;
+    ns2:author <http://ceur-ws.org/Vol-1010/#BastiaaniHeeren>,
         <http://ceur-ws.org/Vol-1010/#EriciAndr%C3%A8s>,
         <http://ceur-ws.org/Vol-1010/#JohaniJeuring> .
 
-<http://ceur-ws.org/Vol-1010/#paper-11> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1010/> ;
+<http://ceur-ws.org/Vol-1010/#paper-11> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1010/> ;
     ns6:title "Ziggy: very interactive trigonometry" ;
-    ns2:section <http%3A//ceur-ws.org/Vol-1010/%23MathematicalUserInterfaces%28MathUI%29> ;
-    ns5:author <http://ceur-ws.org/Vol-1010/#AnjoiAnjewierden>,
+    ns3:section <http://ceur-ws.org/Vol-1010/#MathematicalUserInterfacesMathUI> ;
+    ns2:author <http://ceur-ws.org/Vol-1010/#AnjoiAnjewierden>,
         <http://ceur-ws.org/Vol-1010/#ElleniT.iKamp>,
         <http://ceur-ws.org/Vol-1010/#TonideiJong> .
 
-<http://ceur-ws.org/Vol-1010/#paper-15> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-1010/> ;
+<http://ceur-ws.org/Vol-1010/#paper-15> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1010/> ;
     ns6:title "The Scala-REPL + MMT as a lightweight mathematical user interface" ;
-    ns2:section <http%3A//ceur-ws.org/Vol-1010/%23MathematicalUserInterfaces%28MathUI%29> ;
-    ns5:author <http://ceur-ws.org/Vol-1010/#FelixiMance>,
+    ns3:section <http://ceur-ws.org/Vol-1010/#MathematicalUserInterfacesMathUI> ;
+    ns2:author <http://ceur-ws.org/Vol-1010/#FelixiMance>,
         <http://ceur-ws.org/Vol-1010/#FlorianiRabe>,
         <http://ceur-ws.org/Vol-1010/#MihneaiIancu> .
 
-<http%3A//ceur-ws.org/Vol-1010/%23WorkinProgress> a ns3:SessionEvent ;
-    ns3:partOf <http://ceur-ws.org/Vol-1010/> ;
+<http://ceur-ws.org/Vol-1010/#WorkinProgress> a ns5:SessionEvent ;
+    ns5:partOf <http://ceur-ws.org/Vol-1010/> ;
     ns6:title "Work in Progress" .
 
-<http%3A//ceur-ws.org/Vol-1010/%23MathematicalUserInterfaces%28MathUI%29> a ns3:SessionEvent ;
-    ns3:partOf <http://ceur-ws.org/Vol-1010/> ;
+<http://ceur-ws.org/Vol-1010/#MathematicalUserInterfacesMathUI> a ns5:SessionEvent ;
+    ns5:partOf <http://ceur-ws.org/Vol-1010/> ;
     ns6:title "Mathematical User Interfaces (MathUI)" .
 
-<http://ceur-ws.org/Vol-1010/> a ns3:Proceedings ;
-    ns3:hasPart <http://ceur-ws.org/Vol-1010/#paper-01>,
+<http://ceur-ws.org/Vol-1010/> a ns5:Proceedings ;
+    ns5:hasPart <http://ceur-ws.org/Vol-1010/#paper-01>,
         <http://ceur-ws.org/Vol-1010/#paper-02>,
         <http://ceur-ws.org/Vol-1010/#paper-03>,
         <http://ceur-ws.org/Vol-1010/#paper-04>,
@@ -462,14 +463,14 @@
         <http://ceur-ws.org/Vol-1010/#paper-21>,
         <http://ceur-ws.org/Vol-1010/#paper-22>,
         <http://ceur-ws.org/Vol-1010/#paper-23> ;
-    ns3:hasSession <http%3A//ceur-ws.org/Vol-1010/%23MathematicalUserInterfaces%28MathUI%29>,
-        <http%3A//ceur-ws.org/Vol-1010/%23OpenMath>,
-        <http%3A//ceur-ws.org/Vol-1010/%23ProgrammingLanguagesforMechanizesMathematicalSystems%28PLMMS%29>,
-        <http%3A//ceur-ws.org/Vol-1010/%23TheoremprovingcomponentsforEducationalsoftware%28ThEdu%29>,
-        <http%3A//ceur-ws.org/Vol-1010/%23WorkinProgress> ;
+    ns5:hasSession <http://ceur-ws.org/Vol-1010/#MathematicalUserInterfacesMathUI>,
+        <http://ceur-ws.org/Vol-1010/#OpenMath>,
+        <http://ceur-ws.org/Vol-1010/#ProgrammingLanguagesforMechanizesMathematicalSystemsPLMMS>,
+        <http://ceur-ws.org/Vol-1010/#TheoremprovingcomponentsforEducationalsoftwareThEdu>,
+        <http://ceur-ws.org/Vol-1010/#WorkinProgress> ;
     ns8:issued "2013-07-10T00:00:00+00:00"^^xsd:dateTime ;
-    ns2:presentedAt <http://ceur-ws.org/Vol-1010/#event> ;
-    ns5:editor <http://ceur-ws.org/Vol-1010/#AndreaiKohlhase>,
+    ns3:presentedAt <http://ceur-ws.org/Vol-1010/#event> ;
+    ns2:editor <http://ceur-ws.org/Vol-1010/#AndreaiKohlhase>,
         <http://ceur-ws.org/Vol-1010/#ChristophiLange>,
         <http://ceur-ws.org/Vol-1010/#DavidiAspinall>,
         <http://ceur-ws.org/Vol-1010/#FlorianiRabe>,

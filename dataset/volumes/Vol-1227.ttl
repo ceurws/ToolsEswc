@@ -1,35 +1,923 @@
-@prefix ns1: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns2: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns3: <http://xmlns.com/foaf/0.1/> .
-@prefix ns4: <http://www.w3.org/2002/07/owl#> .
-@prefix ns5: <http://purl.org/ontology/bibo/#> .
-@prefix ns6: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns7: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns1: <http://xmlns.com/foaf/0.1/> .
+@prefix ns2: <http://purl.org/ontology/bibo/#> .
+@prefix ns3: <http://www.w3.org/2002/07/owl#> .
+@prefix ns4: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns5: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns6: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
 @prefix ns8: <http://purl.org/dc/elements/1.1/> .
+@prefix ns9: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1227/> a ns1:Proceedings ;
-    ns6:issued "2014-09-05T00:00:00+00:00"^^xsd:dateTime ;
-    ns5:presentedAt <http://ceur-ws.org/Vol-1227/#event> ;
-    ns7:editor <http://ceur-ws.org/Vol-1227/#ChristophiRensing>,
-        <http://ceur-ws.org/Vol-1227/#StephaniTrahasch> .
+<http://ceur-ws.org/Vol-1227/#AgatheiMerceron> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/AgatheiMerceron> ;
+    ns1:made <http://ceur-ws.org/Vol-1227/#paper26> ;
+    ns1:name "Agathe Merceron" .
 
-<http://ceur-ws.org/Vol-1227/#ChristophiRensing> a ns3:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/ChristophiRensing> ;
-    ns3:name "Christoph Rensing" .
+<http://ceur-ws.org/Vol-1227/#AlexanderiKnoth> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/AlexanderiKnoth> ;
+    ns1:made <http://ceur-ws.org/Vol-1227/#paper34> ;
+    ns1:name "Alexander Knoth" .
 
-<http://ceur-ws.org/Vol-1227/#StephaniTrahasch> a ns3:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/StephaniTrahasch> ;
-    ns3:name "Stephan Trahasch" .
+<http://ceur-ws.org/Vol-1227/#AlexanderiTillmann> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/AlexanderiTillmann> ;
+    ns1:made <http://ceur-ws.org/Vol-1227/#paper32> ;
+    ns1:name "Alexander Tillmann" .
 
-<http://ceur-ws.org/Vol-1227/#event> a ns1:WorkshopEvent ;
-    ns1:hasLocation <http://dbpedia.org/resource/Germany> ;
-    ns1:hasPart <http://ceur-ws.org/Vol-1227/#part-ws> ;
-    ns1:isSubEventOf <http://ceur-ws.org/Vol-1227/#conf> ;
-    ns2:beginsAtDatetime "2014-09-15T00:00:00+00:00"^^xsd:dateTime ;
-    ns2:endsAtDatetime "2014-09-15T00:00:00+00:00"^^xsd:dateTime ;
+<http://ceur-ws.org/Vol-1227/#AlmutiReiners> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/AlmutiReiners> ;
+    ns1:made <http://ceur-ws.org/Vol-1227/#paper35> ;
+    ns1:name "Almut Reiners" .
+
+<http://ceur-ws.org/Vol-1227/#AndreasiHarrer> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/AndreasiHarrer> ;
+    ns1:made <http://ceur-ws.org/Vol-1227/#paper28> ;
+    ns1:name "Andreas Harrer" .
+
+<http://ceur-ws.org/Vol-1227/#AnikaiM%C3%BCller> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/AnikaiM%C3%BCller> ;
+    ns1:made <http://ceur-ws.org/Vol-1227/#paper14> ;
+    ns1:name "Anika Müller" .
+
+<http://ceur-ws.org/Vol-1227/#AnjaiLorenz> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/AnjaiLorenz> ;
+    ns1:made <http://ceur-ws.org/Vol-1227/#paper52> ;
+    ns1:name "Anja Lorenz" .
+
+<http://ceur-ws.org/Vol-1227/#ArhamiMuslim> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/ArhamiMuslim> ;
+    ns1:made <http://ceur-ws.org/Vol-1227/#paper22> ;
+    ns1:name "Arham Muslim" .
+
+<http://ceur-ws.org/Vol-1227/#BerndiBecker> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/BerndiBecker> ;
+    ns1:made <http://ceur-ws.org/Vol-1227/#paper41> ;
+    ns1:name "Bernd Becker" .
+
+<http://ceur-ws.org/Vol-1227/#Bj%C3%B6rniKr%C3%B6ske> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/Bj%C3%B6rniKr%C3%B6ske> ;
+    ns1:made <http://ceur-ws.org/Vol-1227/#paper38> ;
+    ns1:name "Björn Kröske" .
+
+<http://ceur-ws.org/Vol-1227/#ChristianiSturm> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/ChristianiSturm> ;
+    ns1:made <http://ceur-ws.org/Vol-1227/#paper53> ;
+    ns1:name "Christian Sturm" .
+
+<http://ceur-ws.org/Vol-1227/#ChristineiPlicht> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/ChristineiPlicht> ;
+    ns1:made <http://ceur-ws.org/Vol-1227/#paper51> ;
+    ns1:name "Christine Plicht" .
+
+<http://ceur-ws.org/Vol-1227/#ChristophiRensing> a ns1:Person ;
+    ns5:affiliation "" ;
+    ns3:sameAs <http://ceur-ws.org/persons/ChristophiRensing> ;
+    ns1:name "Christoph Rensing" .
+
+<http://ceur-ws.org/Vol-1227/#ClaudiaiBremer> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/ClaudiaiBremer> ;
+    ns1:made <http://ceur-ws.org/Vol-1227/#paper32> ;
+    ns1:name "Claudia Bremer" .
+
+<http://ceur-ws.org/Vol-1227/#CorinnaiWulf> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/CorinnaiWulf> ;
+    ns1:made <http://ceur-ws.org/Vol-1227/#paper18> ;
+    ns1:name "Corinna Wulf" .
+
+<http://ceur-ws.org/Vol-1227/#DagmariIsrael> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/DagmariIsrael> ;
+    ns1:made <http://ceur-ws.org/Vol-1227/#paper15> ;
+    ns1:name "Dagmar Israel" .
+
+<http://ceur-ws.org/Vol-1227/#DanieliSch%C3%B6n> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/DanieliSch%C3%B6n> ;
+    ns1:made <http://ceur-ws.org/Vol-1227/#paper25> ;
+    ns1:name "Daniel Schön" .
+
+<http://ceur-ws.org/Vol-1227/#DieteriLandes> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/DieteriLandes> ;
+    ns1:made <http://ceur-ws.org/Vol-1227/#paper29> ;
+    ns1:name "Dieter Landes" .
+
+<http://ceur-ws.org/Vol-1227/#DietmariZenker> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/DietmariZenker> ;
+    ns1:made <http://ceur-ws.org/Vol-1227/#paper55> ;
+    ns1:name "Dietmar Zenker" .
+
+<http://ceur-ws.org/Vol-1227/#ElineiJoosten> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/ElineiJoosten> ;
+    ns1:made <http://ceur-ws.org/Vol-1227/#paper13> ;
+    ns1:name "Eline Joosten" .
+
+<http://ceur-ws.org/Vol-1227/#FatemehiSalehianiKia> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/FatemehiSalehianiKia> ;
+    ns1:made <http://ceur-ws.org/Vol-1227/#paper22> ;
+    ns1:name "Fatemeh Salehian Kia" .
+
+<http://ceur-ws.org/Vol-1227/#FlorianiSchimanke> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/FlorianiSchimanke> ;
+    ns1:made <http://ceur-ws.org/Vol-1227/#paper37> ;
+    ns1:name "Florian Schimanke" .
+
+<http://ceur-ws.org/Vol-1227/#FrankiGommlich> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/FrankiGommlich> ;
+    ns1:made <http://ceur-ws.org/Vol-1227/#paper36> ;
+    ns1:name "Frank Gommlich" .
+
+<http://ceur-ws.org/Vol-1227/#GalaliGalal-Edeen> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/GalaliGalal-Edeen> ;
+    ns1:made <http://ceur-ws.org/Vol-1227/#paper53> ;
+    ns1:name "Galal Galal-Edeen" .
+
+<http://ceur-ws.org/Vol-1227/#GeorgiHeyne> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/GeorgiHeyne> ;
+    ns1:made <http://ceur-ws.org/Vol-1227/#paper36> ;
+    ns1:name "Georg Heyne" .
+
+<http://ceur-ws.org/Vol-1227/#GerhardiThiem> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/GerhardiThiem> ;
+    ns1:made <http://ceur-ws.org/Vol-1227/#paper15> ;
+    ns1:name "Gerhard Thiem" .
+
+<http://ceur-ws.org/Vol-1227/#GernoldiFrank> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/GernoldiFrank> ;
+    ns1:made <http://ceur-ws.org/Vol-1227/#paper27> ;
+    ns1:name "Gernold Frank" .
+
+<http://ceur-ws.org/Vol-1227/#GudruniMarci-Boehncke> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/GudruniMarci-Boehncke> ;
+    ns1:made <http://ceur-ws.org/Vol-1227/#paper18> ;
+    ns1:name "Gudrun Marci-Boehncke" .
+
+<http://ceur-ws.org/Vol-1227/#H.iUlrichiHoppe> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/H.iUlrichiHoppe> ;
+    ns1:made <http://ceur-ws.org/Vol-1227/#paper23> ;
+    ns1:name "H. Ulrich Hoppe" .
+
+<http://ceur-ws.org/Vol-1227/#HelenaiJank> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/HelenaiJank> ;
+    ns1:made <http://ceur-ws.org/Vol-1227/#paper38> ;
+    ns1:name "Helena Jank" .
+
+<http://ceur-ws.org/Vol-1227/#HendrikiBreitbarth> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/HendrikiBreitbarth> ;
+    ns1:made <http://ceur-ws.org/Vol-1227/#paper14> ;
+    ns1:name "Hendrik Breitbarth" .
+
+<http://ceur-ws.org/Vol-1227/#IrawaniNurhas> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/IrawaniNurhas> ;
+    ns1:made <http://ceur-ws.org/Vol-1227/#paper39> ;
+    ns1:name "Irawan Nurhas" .
+
+<http://ceur-ws.org/Vol-1227/#JaniEberwein> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/JaniEberwein> ;
+    ns1:made <http://ceur-ws.org/Vol-1227/#paper39> ;
+    ns1:name "Jan Eberwein" .
+
+<http://ceur-ws.org/Vol-1227/#JannaiSpannagel> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/JannaiSpannagel> ;
+    ns1:made <http://ceur-ws.org/Vol-1227/#paper51> ;
+    ns1:name "Janna Spannagel" .
+
+<http://ceur-ws.org/Vol-1227/#JasminiSeifried> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/JasminiSeifried> ;
+    ns1:made <http://ceur-ws.org/Vol-1227/#paper16> ;
+    ns1:name "Jasmin Seifried" .
+
+<http://ceur-ws.org/Vol-1227/#JosefiGuttmann> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/JosefiGuttmann> ;
+    ns1:made <http://ceur-ws.org/Vol-1227/#paper16> ;
+    ns1:name "Josef Guttmann" .
+
+<http://ceur-ws.org/Vol-1227/#JuliaiBlank> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/JuliaiBlank> ;
+    ns1:made <http://ceur-ws.org/Vol-1227/#paper17> ;
+    ns1:name "Julia Blank" .
+
+<http://ceur-ws.org/Vol-1227/#KariniGorges> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/KariniGorges> ;
+    ns1:made <http://ceur-ws.org/Vol-1227/#paper11> ;
+    ns1:name "Karin Gorges" .
+
+<http://ceur-ws.org/Vol-1227/#KatriniWeber> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/KatriniWeber> ;
+    ns1:made <http://ceur-ws.org/Vol-1227/#paper41> ;
+    ns1:name "Katrin Weber" .
+
+<http://ceur-ws.org/Vol-1227/#KonradiFroitzheim> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/KonradiFroitzheim> ;
+    ns1:made <http://ceur-ws.org/Vol-1227/#paper36> ;
+    ns1:name "Konrad Froitzheim" .
+
+<http://ceur-ws.org/Vol-1227/#KristinaiHolst> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/KristinaiHolst> ;
+    ns1:made <http://ceur-ws.org/Vol-1227/#paper17> ;
+    ns1:name "Kristina Holst" .
+
+<http://ceur-ws.org/Vol-1227/#LailaiShoukry> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/LailaiShoukry> ;
+    ns1:made <http://ceur-ws.org/Vol-1227/#paper53> ;
+    ns1:name "Laila Shoukry" .
+
+<http://ceur-ws.org/Vol-1227/#MahmoodiK.iPathan> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/MahmoodiK.iPathan> ;
+    ns1:made <http://ceur-ws.org/Vol-1227/#paper26> ;
+    ns1:name "Mahmood K. Pathan" .
+
+<http://ceur-ws.org/Vol-1227/#MarciJansen> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/MarciJansen> ;
+    ns1:made <http://ceur-ws.org/Vol-1227/#paper39> ;
+    ns1:name "Marc Jansen" .
+
+<http://ceur-ws.org/Vol-1227/#MarcusiKl%C3%BCsener> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/MarcusiKl%C3%BCsener> ;
+    ns1:made <http://ceur-ws.org/Vol-1227/#paper21> ;
+    ns1:name "Marcus Klüsener" .
+
+<http://ceur-ws.org/Vol-1227/#MariaiReichelt> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/MariaiReichelt> ;
+    ns1:made <http://ceur-ws.org/Vol-1227/#paper14> ;
+    ns1:name "Maria Reichelt" .
+
+<http://ceur-ws.org/Vol-1227/#MarkusiWehrle> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/MarkusiWehrle> ;
+    ns1:made <http://ceur-ws.org/Vol-1227/#paper51> ;
+    ns1:name "Markus Wehrle" .
+
+<http://ceur-ws.org/Vol-1227/#MartiniM%C3%BChlpfordt> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/MartiniM%C3%BChlpfordt> ;
+    ns1:made <http://ceur-ws.org/Vol-1227/#paper33> ;
+    ns1:name "Martin Mühlpfordt" .
+
+<http://ceur-ws.org/Vol-1227/#MartiniZimmermann> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/MartiniZimmermann> ;
+    ns1:made <http://ceur-ws.org/Vol-1227/#paper41> ;
+    ns1:name "Martin Zimmermann" .
+
+<http://ceur-ws.org/Vol-1227/#MatthiasiFinck> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/MatthiasiFinck> ;
+    ns1:made <http://ceur-ws.org/Vol-1227/#paper13> ;
+    ns1:name "Matthias Finck" .
+
+<http://ceur-ws.org/Vol-1227/#MatthiasiSchumann> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/MatthiasiSchumann> ;
+    ns1:made <http://ceur-ws.org/Vol-1227/#paper35> ;
+    ns1:name "Matthias Schumann" .
+
+<http://ceur-ws.org/Vol-1227/#MichaeliKoch> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/MichaeliKoch> ;
+    ns1:made <http://ceur-ws.org/Vol-1227/#paper29> ;
+    ns1:name "Michael Koch" .
+
+<http://ceur-ws.org/Vol-1227/#MicheliBintener> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/MicheliBintener> ;
+    ns1:made <http://ceur-ws.org/Vol-1227/#paper31> ;
+    ns1:name "Michel Bintener" .
+
+<http://ceur-ws.org/Vol-1227/#MilenaiIsailov> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/MilenaiIsailov> ;
+    ns1:made <http://ceur-ws.org/Vol-1227/#paper17> ;
+    ns1:name "Milena Isailov" .
+
+<http://ceur-ws.org/Vol-1227/#NandoiSt%C3%B6cklin> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/NandoiSt%C3%B6cklin> ;
+    ns1:made <http://ceur-ws.org/Vol-1227/#paper54> ;
+    ns1:name "Nando Stöcklin" .
+
+<http://ceur-ws.org/Vol-1227/#NicoiSteinbach> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/NicoiSteinbach> ;
+    ns1:made <http://ceur-ws.org/Vol-1227/#paper54> ;
+    ns1:name "Nico Steinbach" .
+
+<http://ceur-ws.org/Vol-1227/#NilsiMalzahn> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/NilsiMalzahn> ;
+    ns1:made <http://ceur-ws.org/Vol-1227/#paper23> ;
+    ns1:name "Nils Malzahn" .
+
+<http://ceur-ws.org/Vol-1227/#OliveriVornberger> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/OliveriVornberger> ;
+    ns1:made <http://ceur-ws.org/Vol-1227/#paper37> ;
+    ns1:name "Oliver Vornberger" .
+
+<http://ceur-ws.org/Vol-1227/#PetraiRatka-Kr%C3%BCger> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/PetraiRatka-Kr%C3%BCger> ;
+    ns1:made <http://ceur-ws.org/Vol-1227/#paper17> ;
+    ns1:name "Petra Ratka-Krüger" .
+
+<http://ceur-ws.org/Vol-1227/#RaheelaiAsif> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/RaheelaiAsif> ;
+    ns1:made <http://ceur-ws.org/Vol-1227/#paper26> ;
+    ns1:name "Raheela Asif" .
+
+<http://ceur-ws.org/Vol-1227/#RobertiMertens> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/RobertiMertens> ;
+    ns1:made <http://ceur-ws.org/Vol-1227/#paper37> ;
+    ns1:name "Robert Mertens" .
+
+<http://ceur-ws.org/Vol-1227/#SabineiGruschwitz> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/SabineiGruschwitz> ;
+    ns1:made <http://ceur-ws.org/Vol-1227/#paper14> ;
+    ns1:name "Sabine Gruschwitz" .
+
+<http://ceur-ws.org/Vol-1227/#SabrinaiZiebarth> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/SabrinaiZiebarth> ;
+    ns1:made <http://ceur-ws.org/Vol-1227/#paper23> ;
+    ns1:name "Sabrina Ziebarth" .
+
+<http://ceur-ws.org/Vol-1227/#SandraiDessi> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/SandraiDessi> ;
+    ns1:made <http://ceur-ws.org/Vol-1227/#paper31> ;
+    ns1:name "Sandra Dessi" .
+
+<http://ceur-ws.org/Vol-1227/#SebastianiHobert> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/SebastianiHobert> ;
+    ns1:made <http://ceur-ws.org/Vol-1227/#paper35> ;
+    ns1:name "Sebastian Hobert" .
+
+<http://ceur-ws.org/Vol-1227/#SebastianiSchwarzrock> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/SebastianiSchwarzrock> ;
+    ns1:made <http://ceur-ws.org/Vol-1227/#paper21> ;
+    ns1:name "Sebastian Schwarzrock" .
+
+<http://ceur-ws.org/Vol-1227/#SergeiLinckels> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/SergeiLinckels> ;
+    ns1:made <http://ceur-ws.org/Vol-1227/#paper31> ;
+    ns1:name "Serge Linckels" .
+
+<http://ceur-ws.org/Vol-1227/#StefaniG%C3%B6bel> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/StefaniG%C3%B6bel> ;
+    ns1:made <http://ceur-ws.org/Vol-1227/#paper53> ;
+    ns1:name "Stefan Göbel" .
+
+<http://ceur-ws.org/Vol-1227/#StefaniMeier> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/StefaniMeier> ;
+    ns1:made <http://ceur-ws.org/Vol-1227/#paper52> ;
+    ns1:name "Stefan Meier" .
+
+<http://ceur-ws.org/Vol-1227/#StefaniSchumann> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/StefaniSchumann> ;
+    ns1:made <http://ceur-ws.org/Vol-1227/#paper16> ;
+    ns1:name "Stefan Schumann" .
+
+<http://ceur-ws.org/Vol-1227/#StefaniSteinwasser> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/StefaniSteinwasser> ;
+    ns1:made <http://ceur-ws.org/Vol-1227/#paper39> ;
+    ns1:name "Stefan Steinwasser" .
+
+<http://ceur-ws.org/Vol-1227/#SteffeniSikora> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/SteffeniSikora> ;
+    ns1:made <http://ceur-ws.org/Vol-1227/#paper25> ;
+    ns1:name "Steffen Sikora" .
+
+<http://ceur-ws.org/Vol-1227/#StephaniKopf> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/StephaniKopf> ;
+    ns1:made <http://ceur-ws.org/Vol-1227/#paper25> ;
+    ns1:name "Stephan Kopf" .
+
+<http://ceur-ws.org/Vol-1227/#StephaniTrahasch> a ns1:Person ;
+    ns5:affiliation "" ;
+    ns3:sameAs <http://ceur-ws.org/persons/StephaniTrahasch> ;
+    ns1:name "Stephan Trahasch" .
+
+<http://ceur-ws.org/Vol-1227/#ThomasiBr%C3%B6ker> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/ThomasiBr%C3%B6ker> ;
+    ns1:made <http://ceur-ws.org/Vol-1227/#paper11> ;
+    ns1:name "Thomas Bröker" .
+
+<http://ceur-ws.org/Vol-1227/#ThomasiLinowsky> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/ThomasiLinowsky> ;
+    ns1:made <http://ceur-ws.org/Vol-1227/#paper36> ;
+    ns1:name "Thomas Linowsky" .
+
+<http://ceur-ws.org/Vol-1227/#ThorsteniDaubenfeld> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/ThorsteniDaubenfeld> ;
+    ns1:made <http://ceur-ws.org/Vol-1227/#paper55> ;
+    ns1:name "Thorsten Daubenfeld" .
+
+<http://ceur-ws.org/Vol-1227/#TilliSch%C3%BCmmer> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/TilliSch%C3%BCmmer> ;
+    ns1:made <http://ceur-ws.org/Vol-1227/#paper33> ;
+    ns1:name "Till Schümmer" .
+
+<http://ceur-ws.org/Vol-1227/#TilmaniG%C3%B6hnert> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/TilmaniG%C3%B6hnert> ;
+    ns1:made <http://ceur-ws.org/Vol-1227/#paper23> ;
+    ns1:name "Tilman Göhnert" .
+
+<http://ceur-ws.org/Vol-1227/#TobiasiMoebert> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/TobiasiMoebert> ;
+    ns1:made <http://ceur-ws.org/Vol-1227/#paper38> ;
+    ns1:name "Tobias Moebert" .
+
+<http://ceur-ws.org/Vol-1227/#UlrikeiWilkens> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/UlrikeiWilkens> ;
+    ns1:made <http://ceur-ws.org/Vol-1227/#paper12> ;
+    ns1:name "Ulrike Wilkens" .
+
+<http://ceur-ws.org/Vol-1227/#UrsiSonderegger> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/UrsiSonderegger> ;
+    ns1:made <http://ceur-ws.org/Vol-1227/#paper41> ;
+    ns1:name "Urs Sonderegger" .
+
+<http://ceur-ws.org/Vol-1227/#VeraiTitschen> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/VeraiTitschen> ;
+    ns1:made <http://ceur-ws.org/Vol-1227/#paper16> ;
+    ns1:name "Vera Titschen" .
+
+<http://ceur-ws.org/Vol-1227/#VincentiKruse> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/VincentiKruse> ;
+    ns1:made <http://ceur-ws.org/Vol-1227/#paper51> ;
+    ns1:name "Vincent Kruse" .
+
+<http://ceur-ws.org/Vol-1227/#VlatkoiLukarov> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/VlatkoiLukarov> ;
+    ns1:made <http://ceur-ws.org/Vol-1227/#paper22> ;
+    ns1:name "Vlatko Lukarov" .
+
+<http://ceur-ws.org/Vol-1227/#WolfgangiEffelsberg> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/WolfgangiEffelsberg> ;
+    ns1:made <http://ceur-ws.org/Vol-1227/#paper25> ;
+    ns1:name "Wolfgang Effelsberg" .
+
+<http://ceur-ws.org/Vol-1227/#event> a ns4:WorkshopEvent ;
+    ns4:hasLocation <http://dbpedia.org/resource/Germany> ;
+    ns4:hasPart <http://ceur-ws.org/Vol-1227/#part-DeLFI-WS> ;
+    ns4:isSubEventOf <http://ceur-ws.org/Vol-1227/#conf> ;
+    ns7:beginsAtDatetime "2014-09-15T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:endsAtDatetime "2014-09-15T00:00:00+00:00"^^xsd:dateTime ;
     ns8:license "http://choosealicense.com/licenses/no-license/" .
+
+<http://ceur-ws.org/Vol-1227/#AlbrechtiFortenbacher> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/AlbrechtiFortenbacher> ;
+    ns1:made <http://ceur-ws.org/Vol-1227/#paper21>,
+        <http://ceur-ws.org/Vol-1227/#paper27> ;
+    ns1:name "Albrecht Fortenbacher" .
+
+<http://ceur-ws.org/Vol-1227/#AlexanderiKiy> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/AlexanderiKiy> ;
+    ns1:made <http://ceur-ws.org/Vol-1227/#paper24>,
+        <http://ceur-ws.org/Vol-1227/#paper34> ;
+    ns1:name "Alexander Kiy" .
+
+<http://ceur-ws.org/Vol-1227/#ChristianiSpannagel> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/ChristianiSpannagel> ;
+    ns1:made <http://ceur-ws.org/Vol-1227/#paper51>,
+        <http://ceur-ws.org/Vol-1227/#paper54> ;
+    ns1:name "Christian Spannagel" .
+
+<http://ceur-ws.org/Vol-1227/#ChristophiGreven> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/ChristophiGreven> ;
+    ns1:made <http://ceur-ws.org/Vol-1227/#paper22>,
+        <http://ceur-ws.org/Vol-1227/#paper40> ;
+    ns1:name "Christoph Greven" .
+
+<http://ceur-ws.org/Vol-1227/#HendrikiTh%C3%BCs> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/HendrikiTh%C3%BCs> ;
+    ns1:made <http://ceur-ws.org/Vol-1227/#paper22>,
+        <http://ceur-ws.org/Vol-1227/#paper40> ;
+    ns1:name "Hendrik Thüs" .
+
+<http://ceur-ws.org/Vol-1227/#MohamediAmineiChatti> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/MohamediAmineiChatti> ;
+    ns1:made <http://ceur-ws.org/Vol-1227/#paper22>,
+        <http://ceur-ws.org/Vol-1227/#paper40> ;
+    ns1:name "Mohamed Amine Chatti" .
+
+<http://ceur-ws.org/Vol-1227/#UlrikeiLucke> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/UlrikeiLucke> ;
+    ns1:made <http://ceur-ws.org/Vol-1227/#paper24>,
+        <http://ceur-ws.org/Vol-1227/#paper38> ;
+    ns1:name "Ulrike Lucke" .
+
+<http://ceur-ws.org/Vol-1227/#UlrikiSchroeder> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/UlrikiSchroeder> ;
+    ns1:made <http://ceur-ws.org/Vol-1227/#paper22>,
+        <http://ceur-ws.org/Vol-1227/#paper40> ;
+    ns1:name "Ulrik Schroeder" .
+
+<http://ceur-ws.org/Vol-1227/#paper12> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1227/> ;
+    ns6:title "Eine Handreichung für die didaktische Begleitung von Off-Campus-Lernphasen. Zeitmodell und Leitfaden für Blended-Learning-Module." ;
+    ns2:endPage 27 ;
+    ns2:numPages 8 ;
+    ns2:section <http://ceur-ws.org/Vol-1227/#WorkshopBlendedLearninginMasterstudiengängenSzenarienWerkzeugeSupportstrukturen> ;
+    ns2:startPage 20 ;
+    ns5:author <http://ceur-ws.org/Vol-1227/#UlrikeiWilkens> .
+
+<http://ceur-ws.org/Vol-1227/#paper28> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1227/> ;
+    ns6:title "Design von Interventionen für lernerzentriertes Analytics" ;
+    ns2:endPage 139 ;
+    ns2:numPages 8 ;
+    ns2:section <http://ceur-ws.org/Vol-1227/#WorkshopLearningAnalytics> ;
+    ns2:startPage 132 ;
+    ns5:author <http://ceur-ws.org/Vol-1227/#AndreasiHarrer> .
+
+<http://ceur-ws.org/Vol-1227/#paper11> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1227/> ;
+    ns6:title "Chancen und Grenzen der Flexibilität in berufsbegleitenden Studiengängen" ;
+    ns2:endPage 19 ;
+    ns2:numPages 9 ;
+    ns2:section <http://ceur-ws.org/Vol-1227/#WorkshopBlendedLearninginMasterstudiengängenSzenarienWerkzeugeSupportstrukturen> ;
+    ns2:startPage 11 ;
+    ns5:author <http://ceur-ws.org/Vol-1227/#KariniGorges>,
+        <http://ceur-ws.org/Vol-1227/#ThomasiBr%C3%B6ker> .
+
+<http://ceur-ws.org/Vol-1227/#paper13> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1227/> ;
+    ns6:title "Erweckung aus dem Dornröschenschlaf - Wie lassen sich Studenten und Dozenten in der Selbstlernphase aktivieren?" ;
+    ns2:endPage 35 ;
+    ns2:numPages 8 ;
+    ns2:section <http://ceur-ws.org/Vol-1227/#WorkshopBlendedLearninginMasterstudiengängenSzenarienWerkzeugeSupportstrukturen> ;
+    ns2:startPage 28 ;
+    ns5:author <http://ceur-ws.org/Vol-1227/#ElineiJoosten>,
+        <http://ceur-ws.org/Vol-1227/#MatthiasiFinck> .
+
+<http://ceur-ws.org/Vol-1227/#paper15> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1227/> ;
+    ns6:title "Einsatz von Blended-Learning im berufsbegleitenden Weiterbildungsangebot \"Nachhaltigkeit in gesamtwirtschaftlichen Kreisläufen - Sustainability 2020" ;
+    ns2:endPage 52 ;
+    ns2:numPages 8 ;
+    ns2:section <http://ceur-ws.org/Vol-1227/#WorkshopBlendedLearninginMasterstudiengängenSzenarienWerkzeugeSupportstrukturen> ;
+    ns2:startPage 45 ;
+    ns5:author <http://ceur-ws.org/Vol-1227/#DagmariIsrael>,
+        <http://ceur-ws.org/Vol-1227/#GerhardiThiem> .
+
+<http://ceur-ws.org/Vol-1227/#paper18> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1227/> ;
+    ns6:title "Ab in die Praxis! Lese- und Medienförderung als Blended-Learning-Angebot im Rahmen der Lehrerausbildung LaBG 2009" ;
+    ns2:endPage 76 ;
+    ns2:numPages 8 ;
+    ns2:section <http://ceur-ws.org/Vol-1227/#WorkshopBlendedLearninginMasterstudiengängenSzenarienWerkzeugeSupportstrukturen> ;
+    ns2:startPage 69 ;
+    ns5:author <http://ceur-ws.org/Vol-1227/#CorinnaiWulf>,
+        <http://ceur-ws.org/Vol-1227/#GudruniMarci-Boehncke> .
+
+<http://ceur-ws.org/Vol-1227/#paper24> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1227/> ;
+    ns6:title "Learning-Analytics-Werkzeuge im Praxisvergleich" ;
+    ns2:endPage 111 ;
+    ns2:numPages 8 ;
+    ns2:section <http://ceur-ws.org/Vol-1227/#WorkshopLearningAnalytics> ;
+    ns2:startPage 104 ;
+    ns5:author <http://ceur-ws.org/Vol-1227/#AlexanderiKiy>,
+        <http://ceur-ws.org/Vol-1227/#UlrikeiLucke> .
+
+<http://ceur-ws.org/Vol-1227/#paper27> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1227/> ;
+    ns6:title "Überprüfung von Lernpfaden mit Learning Analytics" ;
+    ns2:endPage 131 ;
+    ns2:numPages 8 ;
+    ns2:section <http://ceur-ws.org/Vol-1227/#WorkshopLearningAnalytics> ;
+    ns2:startPage 124 ;
+    ns5:author <http://ceur-ws.org/Vol-1227/#AlbrechtiFortenbacher>,
+        <http://ceur-ws.org/Vol-1227/#GernoldiFrank> .
+
+<http://ceur-ws.org/Vol-1227/#paper29> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1227/> ;
+    ns6:title "A Recommender System for Didactical Approaches in Software Engineering Education" ;
+    ns2:endPage 143 ;
+    ns2:numPages 4 ;
+    ns2:section <http://ceur-ws.org/Vol-1227/#WorkshopLearningAnalytics> ;
+    ns2:startPage 140 ;
+    ns5:author <http://ceur-ws.org/Vol-1227/#DieteriLandes>,
+        <http://ceur-ws.org/Vol-1227/#MichaeliKoch> .
+
+<http://ceur-ws.org/Vol-1227/#paper32> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1227/> ;
+    ns6:title "Mobiles Lernen in Hessen (MOLE) - Einsatz von Tablets in Grundschulen: Projektumsetzung und Ergebnisse aus der Erstbefragung" ;
+    ns2:endPage 163 ;
+    ns2:numPages 8 ;
+    ns2:section <http://ceur-ws.org/Vol-1227/#WorkshopMobileLearning> ;
+    ns2:startPage 156 ;
+    ns5:author <http://ceur-ws.org/Vol-1227/#AlexanderiTillmann>,
+        <http://ceur-ws.org/Vol-1227/#ClaudiaiBremer> .
+
+<http://ceur-ws.org/Vol-1227/#paper33> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1227/> ;
+    ns6:title "Partizipation bei der Schulwegeplanung - Ein mobiler Lernansatz für Grundschüler" ;
+    ns2:endPage 171 ;
+    ns2:numPages 8 ;
+    ns2:section <http://ceur-ws.org/Vol-1227/#WorkshopMobileLearning> ;
+    ns2:startPage 164 ;
+    ns5:author <http://ceur-ws.org/Vol-1227/#MartiniM%C3%BChlpfordt>,
+        <http://ceur-ws.org/Vol-1227/#TilliSch%C3%BCmmer> .
+
+<http://ceur-ws.org/Vol-1227/#paper34> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1227/> ;
+    ns6:title "(Selbst-)bewusst durch die Studieneingangsphase mit der Reflect-App" ;
+    ns2:endPage 179 ;
+    ns2:numPages 8 ;
+    ns2:section <http://ceur-ws.org/Vol-1227/#WorkshopMobileLearning> ;
+    ns2:startPage 172 ;
+    ns5:author <http://ceur-ws.org/Vol-1227/#AlexanderiKiy>,
+        <http://ceur-ws.org/Vol-1227/#AlexanderiKnoth> .
+
+<http://ceur-ws.org/Vol-1227/#paper52> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1227/> ;
+    ns6:title "Digital Badges zur Dokumentation von Kompetenzen: Klassifikation und Umsetzung am Beispiel des Saxon Open Online Courses (SOOC)" ;
+    ns2:endPage 261 ;
+    ns2:numPages 8 ;
+    ns2:section <http://ceur-ws.org/Vol-1227/#WorkshopSpieleundSpielelementeinLernkontexten> ;
+    ns2:startPage 254 ;
+    ns5:author <http://ceur-ws.org/Vol-1227/#AnjaiLorenz>,
+        <http://ceur-ws.org/Vol-1227/#StefaniMeier> .
+
+<http://ceur-ws.org/Vol-1227/#paper55> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1227/> ;
+    ns6:title "\"Die Insel der Phasen \" - Making of" ;
+    ns2:endPage 285 ;
+    ns2:numPages 8 ;
+    ns2:section <http://ceur-ws.org/Vol-1227/#WorkshopSpieleundSpielelementeinLernkontexten> ;
+    ns2:startPage 278 ;
+    ns5:author <http://ceur-ws.org/Vol-1227/#DietmariZenker>,
+        <http://ceur-ws.org/Vol-1227/#ThorsteniDaubenfeld> .
+
+<http://ceur-ws.org/Vol-1227/#paper21> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1227/> ;
+    ns6:title "Ein generisches Datenmodell für Learning Analytics Autoren" ;
+    ns2:endPage 87 ;
+    ns2:numPages 8 ;
+    ns2:section <http://ceur-ws.org/Vol-1227/#WorkshopLearningAnalytics> ;
+    ns2:startPage 80 ;
+    ns5:author <http://ceur-ws.org/Vol-1227/#AlbrechtiFortenbacher>,
+        <http://ceur-ws.org/Vol-1227/#MarcusiKl%C3%BCsener>,
+        <http://ceur-ws.org/Vol-1227/#SebastianiSchwarzrock> .
+
+<http://ceur-ws.org/Vol-1227/#paper26> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1227/> ;
+    ns6:title "Investigating Performances's Progress of Students" ;
+    ns2:endPage 123 ;
+    ns2:numPages 8 ;
+    ns2:section <http://ceur-ws.org/Vol-1227/#WorkshopLearningAnalytics> ;
+    ns2:startPage 116 ;
+    ns5:author <http://ceur-ws.org/Vol-1227/#AgatheiMerceron>,
+        <http://ceur-ws.org/Vol-1227/#MahmoodiK.iPathan>,
+        <http://ceur-ws.org/Vol-1227/#RaheelaiAsif> .
+
+<http://ceur-ws.org/Vol-1227/#paper31> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1227/> ;
+    ns6:title "Technik um jeden Preis? - Über Sinn und Unsinn des Einsatzes von iPads in der Schule" ;
+    ns2:endPage 155 ;
+    ns2:numPages 8 ;
+    ns2:section <http://ceur-ws.org/Vol-1227/#WorkshopMobileLearning> ;
+    ns2:startPage 148 ;
+    ns5:author <http://ceur-ws.org/Vol-1227/#MicheliBintener>,
+        <http://ceur-ws.org/Vol-1227/#SandraiDessi>,
+        <http://ceur-ws.org/Vol-1227/#SergeiLinckels> .
+
+<http://ceur-ws.org/Vol-1227/#paper35> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1227/> ;
+    ns6:title "Lernen mit Smartphones an der Georgia-Augusta - Eine Zwischenbilanz" ;
+    ns2:endPage 188 ;
+    ns2:numPages 9 ;
+    ns2:section <http://ceur-ws.org/Vol-1227/#WorkshopMobileLearning> ;
+    ns2:startPage 180 ;
+    ns5:author <http://ceur-ws.org/Vol-1227/#AlmutiReiners>,
+        <http://ceur-ws.org/Vol-1227/#MatthiasiSchumann>,
+        <http://ceur-ws.org/Vol-1227/#SebastianiHobert> .
+
+<http://ceur-ws.org/Vol-1227/#paper37> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1227/> ;
+    ns6:title "Verwendung von Spaced-Repetition-Algorithmen in mobilen Lernspielen" ;
+    ns2:endPage 204 ;
+    ns2:numPages 8 ;
+    ns2:section <http://ceur-ws.org/Vol-1227/#WorkshopMobileLearning> ;
+    ns2:startPage 197 ;
+    ns5:author <http://ceur-ws.org/Vol-1227/#FlorianiSchimanke>,
+        <http://ceur-ws.org/Vol-1227/#OliveriVornberger>,
+        <http://ceur-ws.org/Vol-1227/#RobertiMertens> .
+
+<http://ceur-ws.org/Vol-1227/#paper54> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1227/> ;
+    ns6:title "Computerunterstützte Gamification von Unterrichtseinheiten: Erste Erfahrungen mit QuesTanja" ;
+    ns2:endPage 277 ;
+    ns2:numPages 8 ;
+    ns2:section <http://ceur-ws.org/Vol-1227/#WorkshopSpieleundSpielelementeinLernkontexten> ;
+    ns2:startPage 270 ;
+    ns5:author <http://ceur-ws.org/Vol-1227/#ChristianiSpannagel>,
+        <http://ceur-ws.org/Vol-1227/#NandoiSt%C3%B6cklin>,
+        <http://ceur-ws.org/Vol-1227/#NicoiSteinbach> .
+
+<http://ceur-ws.org/Vol-1227/#paper14> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1227/> ;
+    ns6:title "Didaktische Implementierung und Evaluation von Blended-Learning im Bereich Marketing und Marktforschung" ;
+    ns2:endPage 44 ;
+    ns2:numPages 9 ;
+    ns2:section <http://ceur-ws.org/Vol-1227/#WorkshopBlendedLearninginMasterstudiengängenSzenarienWerkzeugeSupportstrukturen> ;
+    ns2:startPage 36 ;
+    ns5:author <http://ceur-ws.org/Vol-1227/#AnikaiM%C3%BCller>,
+        <http://ceur-ws.org/Vol-1227/#HendrikiBreitbarth>,
+        <http://ceur-ws.org/Vol-1227/#MariaiReichelt>,
+        <http://ceur-ws.org/Vol-1227/#SabineiGruschwitz> .
+
+<http://ceur-ws.org/Vol-1227/#paper16> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1227/> ;
+    ns6:title "Besondere Anforderungen an ein berufsbegleitendes Weiterbildungsangebot für Mediziner � Bericht aus der Praxis" ;
+    ns2:endPage 60 ;
+    ns2:numPages 8 ;
+    ns2:section <http://ceur-ws.org/Vol-1227/#WorkshopBlendedLearninginMasterstudiengängenSzenarienWerkzeugeSupportstrukturen> ;
+    ns2:startPage 53 ;
+    ns5:author <http://ceur-ws.org/Vol-1227/#JasminiSeifried>,
+        <http://ceur-ws.org/Vol-1227/#JosefiGuttmann>,
+        <http://ceur-ws.org/Vol-1227/#StefaniSchumann>,
+        <http://ceur-ws.org/Vol-1227/#VeraiTitschen> .
+
+<http://ceur-ws.org/Vol-1227/#paper17> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1227/> ;
+    ns6:title "Mediengestützte Patientenfälle in der parodontologischen Ausbildung am Universitätsklinikum Freiburg" ;
+    ns2:endPage 68 ;
+    ns2:numPages 8 ;
+    ns2:section <http://ceur-ws.org/Vol-1227/#WorkshopBlendedLearninginMasterstudiengängenSzenarienWerkzeugeSupportstrukturen> ;
+    ns2:startPage 61 ;
+    ns5:author <http://ceur-ws.org/Vol-1227/#JuliaiBlank>,
+        <http://ceur-ws.org/Vol-1227/#KristinaiHolst>,
+        <http://ceur-ws.org/Vol-1227/#MilenaiIsailov>,
+        <http://ceur-ws.org/Vol-1227/#PetraiRatka-Kr%C3%BCger> .
+
+<http://ceur-ws.org/Vol-1227/#paper23> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1227/> ;
+    ns6:title "Einbettung von Learning Analytics in Lernplattformen" ;
+    ns2:endPage 103 ;
+    ns2:numPages 8 ;
+    ns2:section <http://ceur-ws.org/Vol-1227/#WorkshopLearningAnalytics> ;
+    ns2:startPage 96 ;
+    ns5:author <http://ceur-ws.org/Vol-1227/#H.iUlrichiHoppe>,
+        <http://ceur-ws.org/Vol-1227/#NilsiMalzahn>,
+        <http://ceur-ws.org/Vol-1227/#SabrinaiZiebarth>,
+        <http://ceur-ws.org/Vol-1227/#TilmaniG%C3%B6hnert> .
+
+<http://ceur-ws.org/Vol-1227/#paper25> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1227/> ;
+    ns6:title "GLA: A Generic Analytics Tool for e-Learning" ;
+    ns2:endPage 115 ;
+    ns2:numPages 4 ;
+    ns2:section <http://ceur-ws.org/Vol-1227/#WorkshopLearningAnalytics> ;
+    ns2:startPage 112 ;
+    ns5:author <http://ceur-ws.org/Vol-1227/#DanieliSch%C3%B6n>,
+        <http://ceur-ws.org/Vol-1227/#SteffeniSikora>,
+        <http://ceur-ws.org/Vol-1227/#StephaniKopf>,
+        <http://ceur-ws.org/Vol-1227/#WolfgangiEffelsberg> .
+
+<http://ceur-ws.org/Vol-1227/#paper36> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1227/> ;
+    ns6:title "Mobile Learning mit myTU - Awarenessbasierte persönliche Lernumgebung" ;
+    ns2:endPage 196 ;
+    ns2:numPages 8 ;
+    ns2:section <http://ceur-ws.org/Vol-1227/#WorkshopMobileLearning> ;
+    ns2:startPage 189 ;
+    ns5:author <http://ceur-ws.org/Vol-1227/#FrankiGommlich>,
+        <http://ceur-ws.org/Vol-1227/#GeorgiHeyne>,
+        <http://ceur-ws.org/Vol-1227/#KonradiFroitzheim>,
+        <http://ceur-ws.org/Vol-1227/#ThomasiLinowsky> .
+
+<http://ceur-ws.org/Vol-1227/#paper38> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1227/> ;
+    ns6:title "Ein generalisierter Ansatz zur kontextsensitiven Anpassung in mobilen E-Learning-Umgebungen" ;
+    ns2:endPage 212 ;
+    ns2:numPages 8 ;
+    ns2:section <http://ceur-ws.org/Vol-1227/#WorkshopMobileLearning> ;
+    ns2:startPage 205 ;
+    ns5:author <http://ceur-ws.org/Vol-1227/#Bj%C3%B6rniKr%C3%B6ske>,
+        <http://ceur-ws.org/Vol-1227/#HelenaiJank>,
+        <http://ceur-ws.org/Vol-1227/#TobiasiMoebert>,
+        <http://ceur-ws.org/Vol-1227/#UlrikeiLucke> .
+
+<http://ceur-ws.org/Vol-1227/#paper39> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1227/> ;
+    ns6:title "Evaluation der Akzeptanz mobiler Lernszenarien auf Basis plattformunabhängiger Webtechnologien" ;
+    ns2:endPage 220 ;
+    ns2:numPages 8 ;
+    ns2:section <http://ceur-ws.org/Vol-1227/#WorkshopMobileLearning> ;
+    ns2:startPage 213 ;
+    ns5:author <http://ceur-ws.org/Vol-1227/#IrawaniNurhas>,
+        <http://ceur-ws.org/Vol-1227/#JaniEberwein>,
+        <http://ceur-ws.org/Vol-1227/#MarciJansen>,
+        <http://ceur-ws.org/Vol-1227/#StefaniSteinwasser> .
+
+<http://ceur-ws.org/Vol-1227/#paper40> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1227/> ;
+    ns6:title "Mobiles Professionelles Lernen in PRiME" ;
+    ns2:endPage 228 ;
+    ns2:numPages 8 ;
+    ns2:section <http://ceur-ws.org/Vol-1227/#WorkshopMobileLearning> ;
+    ns2:startPage 221 ;
+    ns5:author <http://ceur-ws.org/Vol-1227/#ChristophiGreven>,
+        <http://ceur-ws.org/Vol-1227/#HendrikiTh%C3%BCs>,
+        <http://ceur-ws.org/Vol-1227/#MohamediAmineiChatti>,
+        <http://ceur-ws.org/Vol-1227/#UlrikiSchroeder> .
+
+<http://ceur-ws.org/Vol-1227/#paper41> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1227/> ;
+    ns6:title "Mobile Learning mit kontextbezogenen mobilen Diensten in der \"KMU Smart Factory\": Szenarien und Lösungsansätze für Fertigungsprozesse" ;
+    ns2:endPage 239 ;
+    ns2:numPages 11 ;
+    ns2:section <http://ceur-ws.org/Vol-1227/#WorkshopMobileLearning> ;
+    ns2:startPage 229 ;
+    ns5:author <http://ceur-ws.org/Vol-1227/#BerndiBecker>,
+        <http://ceur-ws.org/Vol-1227/#KatriniWeber>,
+        <http://ceur-ws.org/Vol-1227/#MartiniZimmermann>,
+        <http://ceur-ws.org/Vol-1227/#UrsiSonderegger> .
+
+<http://ceur-ws.org/Vol-1227/#paper53> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1227/> ;
+    ns6:title "Conducting Evaluation Studies of Mobile Games with Preschoolers" ;
+    ns2:endPage 269 ;
+    ns2:numPages 8 ;
+    ns2:section <http://ceur-ws.org/Vol-1227/#WorkshopSpieleundSpielelementeinLernkontexten> ;
+    ns2:startPage 262 ;
+    ns5:author <http://ceur-ws.org/Vol-1227/#ChristianiSturm>,
+        <http://ceur-ws.org/Vol-1227/#GalaliGalal-Edeen>,
+        <http://ceur-ws.org/Vol-1227/#LailaiShoukry>,
+        <http://ceur-ws.org/Vol-1227/#StefaniG%C3%B6bel> .
+
+<http://ceur-ws.org/Vol-1227/#WorkshopSpieleundSpielelementeinLernkontexten> a ns4:SessionEvent ;
+    ns4:partOf <http://ceur-ws.org/Vol-1227/> ;
+    ns6:title "Workshop Spiele und Spielelemente in Lernkontexten" .
+
+<http://ceur-ws.org/Vol-1227/#paper51> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1227/> ;
+    ns6:title "Creatures of the Night: Konzeption und Evaluation einer Gamification-Plattform im Rahmen einer Mathematikvorlesung" ;
+    ns2:endPage 253 ;
+    ns2:numPages 8 ;
+    ns2:section <http://ceur-ws.org/Vol-1227/#WorkshopSpieleundSpielelementeinLernkontexten> ;
+    ns2:startPage 246 ;
+    ns5:author <http://ceur-ws.org/Vol-1227/#ChristianiSpannagel>,
+        <http://ceur-ws.org/Vol-1227/#ChristineiPlicht>,
+        <http://ceur-ws.org/Vol-1227/#JannaiSpannagel>,
+        <http://ceur-ws.org/Vol-1227/#MarkusiWehrle>,
+        <http://ceur-ws.org/Vol-1227/#VincentiKruse> .
+
+<http://ceur-ws.org/Vol-1227/#paper22> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1227/> ;
+    ns6:title "Data Models in Learning Analytics" ;
+    ns2:endPage 95 ;
+    ns2:numPages 8 ;
+    ns2:section <http://ceur-ws.org/Vol-1227/#WorkshopLearningAnalytics> ;
+    ns2:startPage 88 ;
+    ns5:author <http://ceur-ws.org/Vol-1227/#ArhamiMuslim>,
+        <http://ceur-ws.org/Vol-1227/#ChristophiGreven>,
+        <http://ceur-ws.org/Vol-1227/#FatemehiSalehianiKia>,
+        <http://ceur-ws.org/Vol-1227/#HendrikiTh%C3%BCs>,
+        <http://ceur-ws.org/Vol-1227/#MohamediAmineiChatti>,
+        <http://ceur-ws.org/Vol-1227/#UlrikiSchroeder>,
+        <http://ceur-ws.org/Vol-1227/#VlatkoiLukarov> .
+
+<http://ceur-ws.org/Vol-1227/#WorkshopBlendedLearninginMasterstudiengängenSzenarienWerkzeugeSupportstrukturen> a ns4:SessionEvent ;
+    ns4:partOf <http://ceur-ws.org/Vol-1227/> ;
+    ns6:title "Workshop Blended-Learning in Masterstudiengängen - Szenarien, Werkzeuge, Supportstrukturen" .
+
+<http://ceur-ws.org/Vol-1227/#WorkshopLearningAnalytics> a ns4:SessionEvent ;
+    ns4:partOf <http://ceur-ws.org/Vol-1227/> ;
+    ns6:title "Workshop Learning Analytics" .
+
+<http://ceur-ws.org/Vol-1227/#WorkshopMobileLearning> a ns4:SessionEvent ;
+    ns4:partOf <http://ceur-ws.org/Vol-1227/> ;
+    ns6:title "Workshop Mobile Learning" .
+
+<http://ceur-ws.org/Vol-1227/> a ns4:Proceedings ;
+    ns4:hasPart <http://ceur-ws.org/Vol-1227/#paper11>,
+        <http://ceur-ws.org/Vol-1227/#paper12>,
+        <http://ceur-ws.org/Vol-1227/#paper13>,
+        <http://ceur-ws.org/Vol-1227/#paper14>,
+        <http://ceur-ws.org/Vol-1227/#paper15>,
+        <http://ceur-ws.org/Vol-1227/#paper16>,
+        <http://ceur-ws.org/Vol-1227/#paper17>,
+        <http://ceur-ws.org/Vol-1227/#paper18>,
+        <http://ceur-ws.org/Vol-1227/#paper21>,
+        <http://ceur-ws.org/Vol-1227/#paper22>,
+        <http://ceur-ws.org/Vol-1227/#paper23>,
+        <http://ceur-ws.org/Vol-1227/#paper24>,
+        <http://ceur-ws.org/Vol-1227/#paper25>,
+        <http://ceur-ws.org/Vol-1227/#paper26>,
+        <http://ceur-ws.org/Vol-1227/#paper27>,
+        <http://ceur-ws.org/Vol-1227/#paper28>,
+        <http://ceur-ws.org/Vol-1227/#paper29>,
+        <http://ceur-ws.org/Vol-1227/#paper31>,
+        <http://ceur-ws.org/Vol-1227/#paper32>,
+        <http://ceur-ws.org/Vol-1227/#paper33>,
+        <http://ceur-ws.org/Vol-1227/#paper34>,
+        <http://ceur-ws.org/Vol-1227/#paper35>,
+        <http://ceur-ws.org/Vol-1227/#paper36>,
+        <http://ceur-ws.org/Vol-1227/#paper37>,
+        <http://ceur-ws.org/Vol-1227/#paper38>,
+        <http://ceur-ws.org/Vol-1227/#paper39>,
+        <http://ceur-ws.org/Vol-1227/#paper40>,
+        <http://ceur-ws.org/Vol-1227/#paper41>,
+        <http://ceur-ws.org/Vol-1227/#paper51>,
+        <http://ceur-ws.org/Vol-1227/#paper52>,
+        <http://ceur-ws.org/Vol-1227/#paper53>,
+        <http://ceur-ws.org/Vol-1227/#paper54>,
+        <http://ceur-ws.org/Vol-1227/#paper55> ;
+    ns4:hasSession <http://ceur-ws.org/Vol-1227/#WorkshopBlendedLearninginMasterstudiengängenSzenarienWerkzeugeSupportstrukturen>,
+        <http://ceur-ws.org/Vol-1227/#WorkshopLearningAnalytics>,
+        <http://ceur-ws.org/Vol-1227/#WorkshopMobileLearning>,
+        <http://ceur-ws.org/Vol-1227/#WorkshopSpieleundSpielelementeinLernkontexten> ;
+    ns9:issued "2014-09-05T00:00:00+00:00"^^xsd:dateTime ;
+    ns2:presentedAt <http://ceur-ws.org/Vol-1227/#event> ;
+    ns5:editor <http://ceur-ws.org/Vol-1227/#ChristophiRensing>,
+        <http://ceur-ws.org/Vol-1227/#StephaniTrahasch> .
 

@@ -1,40 +1,139 @@
-@prefix ns1: <http://purl.org/dc/elements/1.1/> .
-@prefix ns2: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns3: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns1: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns2: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns3: <http://purl.org/dc/elements/1.1/#> .
 @prefix ns4: <http://purl.org/ontology/bibo/#> .
-@prefix ns5: <http://www.w3.org/2002/07/owl#> .
-@prefix ns6: <http://xmlns.com/foaf/0.1/> .
-@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns5: <http://xmlns.com/foaf/0.1/> .
+@prefix ns6: <http://www.w3.org/2002/07/owl#> .
+@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns9: <http://purl.org/dc/elements/1.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1547/> a ns3:Proceedings ;
-    ns8:issued "2016-01-17T00:00:00+00:00"^^xsd:dateTime ;
+<http://ceur-ws.org/Vol-1547/#AndressaiPinheiro> a ns5:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/AndressaiPinheiro> ;
+    ns5:made <http://ceur-ws.org/Vol-1547/#paper4> ;
+    ns5:name "Andressa Pinheiro" .
+
+<http://ceur-ws.org/Vol-1547/#AnnaiSort> a ns5:Person ;
+    ns1:affiliation "" ;
+    ns6:sameAs <http://ceur-ws.org/persons/AnnaiSort> ;
+    ns5:name "Anna Sort" .
+
+<http://ceur-ws.org/Vol-1547/#I%C3%B1igoiFdezideiPi%C3%A9rola> a ns5:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/I%C3%B1igoiFdezideiPi%C3%A9rola> ;
+    ns5:made <http://ceur-ws.org/Vol-1547/#paper5> ;
+    ns5:name "Iñigo Fdez de Piérola" .
+
+<http://ceur-ws.org/Vol-1547/#IvaniAlsina-Jurnet> a ns5:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/IvaniAlsina-Jurnet> ;
+    ns5:made <http://ceur-ws.org/Vol-1547/#paper6> ;
+    ns5:name "Ivan Alsina-Jurnet" .
+
+<http://ceur-ws.org/Vol-1547/#JaumeiVerg%C3%A9s-Llah%C3%AD> a ns5:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/JaumeiVerg%C3%A9s-Llah%C3%AD> ;
+    ns5:made <http://ceur-ws.org/Vol-1547/#paper2> ;
+    ns5:name "Jaume Vergés-Llahí" .
+
+<http://ceur-ws.org/Vol-1547/#JordiiMu%C3%B1oz> a ns5:Person ;
+    ns1:affiliation "" ;
+    ns6:sameAs <http://ceur-ws.org/persons/JordiiMu%C3%B1oz> ;
+    ns5:name "Jordi Muñoz" .
+
+<http://ceur-ws.org/Vol-1547/#Jos%C3%A9iCarlosiCortizo> a ns5:Person ;
+    ns1:affiliation "" ;
+    ns6:sameAs <http://ceur-ws.org/persons/Jos%C3%A9iCarlosiCortizo> ;
+    ns5:name "José Carlos Cortizo" .
+
+<http://ceur-ws.org/Vol-1547/#MaiteiGarolera> a ns5:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/MaiteiGarolera> ;
+    ns5:made <http://ceur-ws.org/Vol-1547/#paper1> ;
+    ns5:name "Maite Garolera" .
+
+<http://ceur-ws.org/Vol-1547/#RitaiMarques> a ns5:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/RitaiMarques> ;
+    ns5:made <http://ceur-ws.org/Vol-1547/#paper3> ;
+    ns5:name "Rita Marques" .
+
+<http://ceur-ws.org/Vol-1547/#event> a ns2:WorkshopEvent ;
+    ns2:hasLocation <http://dbpedia.org/resource/Spain> ;
+    ns2:hasPart <http://ceur-ws.org/Vol-1547/#part-GHEALTH> ;
+    ns2:isSubEventOf <http://ceur-ws.org/Vol-1547/#conf> ;
+    ns8:beginsAtDatetime "2015-11-13T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:endsAtDatetime "2015-11-13T00:00:00+00:00"^^xsd:dateTime ;
+    ns9:license "http://creativecommons.org/publicdomain/zero/1.0/" .
+
+<http://ceur-ws.org/Vol-1547/#paper1> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1547/> ;
+    ns3:title "Active-U: Playing to Stimulate your Brain" ;
+    ns4:endPage 7 ;
+    ns4:numPages 6 ;
+    ns4:section <http://ceur-ws.org/Vol-1547/#RegularPapers> ;
+    ns4:startPage 2 ;
+    ns1:author <http://ceur-ws.org/Vol-1547/#MaiteiGarolera> .
+
+<http://ceur-ws.org/Vol-1547/#paper2> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1547/> ;
+    ns3:title "GAME-ABLING: Platform of Games for People with Cerebral Palsy to Enhance Living Adjustement" ;
+    ns4:endPage 13 ;
+    ns4:numPages 6 ;
+    ns4:section <http://ceur-ws.org/Vol-1547/#RegularPapers> ;
+    ns4:startPage 8 ;
+    ns1:author <http://ceur-ws.org/Vol-1547/#JaumeiVerg%C3%A9s-Llah%C3%AD> .
+
+<http://ceur-ws.org/Vol-1547/#paper3> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1547/> ;
+    ns3:title "Using Gamification for Improving Nurses Productivity in a Hospital Ward" ;
+    ns4:endPage 21 ;
+    ns4:numPages 8 ;
+    ns4:section <http://ceur-ws.org/Vol-1547/#RegularPapers> ;
+    ns4:startPage 14 ;
+    ns1:author <http://ceur-ws.org/Vol-1547/#RitaiMarques> .
+
+<http://ceur-ws.org/Vol-1547/#paper4> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1547/> ;
+    ns3:title "Gamification to Expand Awareness about Stress and its Impacts within Companies" ;
+    ns4:endPage 31 ;
+    ns4:numPages 10 ;
+    ns4:section <http://ceur-ws.org/Vol-1547/#RegularPapers> ;
+    ns4:startPage 22 ;
+    ns1:author <http://ceur-ws.org/Vol-1547/#AndressaiPinheiro> .
+
+<http://ceur-ws.org/Vol-1547/#paper5> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1547/> ;
+    ns3:title "NeuronUp's Next Step: Structured and Clinically Validated Programs" ;
+    ns4:endPage 39 ;
+    ns4:numPages 8 ;
+    ns4:section <http://ceur-ws.org/Vol-1547/#RegularPapers> ;
+    ns4:startPage 32 ;
+    ns1:author <http://ceur-ws.org/Vol-1547/#I%C3%B1igoiFdezideiPi%C3%A9rola> .
+
+<http://ceur-ws.org/Vol-1547/#paper6> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1547/> ;
+    ns3:title "mSinaptiks: An eHealth Platform for Virtual and Augmented Reality Mobile Applications" ;
+    ns4:endPage 46 ;
+    ns4:numPages 7 ;
+    ns4:section <http://ceur-ws.org/Vol-1547/#RegularPapers> ;
+    ns4:startPage 40 ;
+    ns1:author <http://ceur-ws.org/Vol-1547/#IvaniAlsina-Jurnet> .
+
+<http://ceur-ws.org/Vol-1547/> a ns2:Proceedings ;
+    ns2:hasPart <http://ceur-ws.org/Vol-1547/#paper1>,
+        <http://ceur-ws.org/Vol-1547/#paper2>,
+        <http://ceur-ws.org/Vol-1547/#paper3>,
+        <http://ceur-ws.org/Vol-1547/#paper4>,
+        <http://ceur-ws.org/Vol-1547/#paper5>,
+        <http://ceur-ws.org/Vol-1547/#paper6> ;
+    ns2:hasSession <http://ceur-ws.org/Vol-1547/#RegularPapers> ;
+    ns7:issued "2016-01-17T00:00:00+00:00"^^xsd:dateTime ;
     ns4:presentedAt <http://ceur-ws.org/Vol-1547/#event> ;
-    ns2:editor <http://ceur-ws.org/Vol-1547/#AnnaiSort>,
+    ns1:editor <http://ceur-ws.org/Vol-1547/#AnnaiSort>,
         <http://ceur-ws.org/Vol-1547/#JordiiMu%C3%B1oz>,
         <http://ceur-ws.org/Vol-1547/#Jos%C3%A9iCarlosiCortizo> .
 
-<http://ceur-ws.org/Vol-1547/#AnnaiSort> a ns6:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/AnnaiSort> ;
-    ns6:name "Anna Sort" .
-
-<http://ceur-ws.org/Vol-1547/#JordiiMu%C3%B1oz> a ns6:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/JordiiMu%C3%B1oz> ;
-    ns6:name "Jordi Muñoz" .
-
-<http://ceur-ws.org/Vol-1547/#Jos%C3%A9iCarlosiCortizo> a ns6:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/Jos%C3%A9iCarlosiCortizo> ;
-    ns6:name "José Carlos Cortizo" .
-
-<http://ceur-ws.org/Vol-1547/#event> a ns3:WorkshopEvent ;
-    ns3:hasLocation <http://dbpedia.org/resource/Spain> ;
-    ns3:hasPart <http://ceur-ws.org/Vol-1547/#part-ws> ;
-    ns3:isSubEventOf <http://ceur-ws.org/Vol-1547/#conf> ;
-    ns7:beginsAtDatetime "2015-11-13T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:endsAtDatetime "2015-11-13T00:00:00+00:00"^^xsd:dateTime ;
-    ns1:license "http://creativecommons.org/publicdomain/zero/1.0/" .
+<http://ceur-ws.org/Vol-1547/#RegularPapers> a ns2:SessionEvent ;
+    ns2:partOf <http://ceur-ws.org/Vol-1547/> ;
+    ns3:title "Regular Papers" .
 

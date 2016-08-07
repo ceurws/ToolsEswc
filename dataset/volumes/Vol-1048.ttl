@@ -1,33 +1,132 @@
-@prefix ns1: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns2: <http://purl.org/dc/elements/1.1/> .
-@prefix ns3: <http://purl.org/ontology/bibo/#> .
+@prefix ns1: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns2: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns3: <http://xmlns.com/foaf/0.1/> .
 @prefix ns4: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns5: <http://www.w3.org/2002/07/owl#> .
-@prefix ns6: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns7: <http://xmlns.com/foaf/0.1/> .
-@prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns5: <http://purl.org/dc/elements/1.1/> .
+@prefix ns6: <http://purl.org/ontology/bibo/#> .
+@prefix ns7: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns8: <http://www.w3.org/2002/07/owl#> .
+@prefix ns9: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1048/> a ns4:Proceedings ;
-    ns1:issued "2013-09-26T00:00:00+00:00"^^xsd:dateTime ;
-    ns3:presentedAt <http://ceur-ws.org/Vol-1048/#event> ;
-    ns6:editor <http://ceur-ws.org/Vol-1048/#HenningiBaars> .
+<http://ceur-ws.org/Vol-1048/#Adri%C3%A1niJuan-Verdejo> a ns3:Person ;
+    ns8:sameAs <http://ceur-ws.org/persons/Adri%C3%A1niJuan-Verdejo> ;
+    ns3:made <http://ceur-ws.org/Vol-1048/#paper2> ;
+    ns3:name "Adrián Juan-Verdejo" .
 
-<http://ceur-ws.org/Vol-1048/#HenningiBaars> a ns7:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/HenningiBaars> ;
-    ns7:name "Henning Baars" .
+<http://ceur-ws.org/Vol-1048/#AxeliKlarmann> a ns3:Person ;
+    ns8:sameAs <http://ceur-ws.org/persons/AxeliKlarmann> ;
+    ns3:made <http://ceur-ws.org/Vol-1048/#paper3> ;
+    ns3:name "Axel Klarmann" .
+
+<http://ceur-ws.org/Vol-1048/#BenjaminiMosig> a ns3:Person ;
+    ns8:sameAs <http://ceur-ws.org/persons/BenjaminiMosig> ;
+    ns3:made <http://ceur-ws.org/Vol-1048/#paper4> ;
+    ns3:name "Benjamin Mosig" .
+
+<http://ceur-ws.org/Vol-1048/#BogdaniFranczyk> a ns3:Person ;
+    ns8:sameAs <http://ceur-ws.org/persons/BogdaniFranczyk> ;
+    ns3:made <http://ceur-ws.org/Vol-1048/#paper3> ;
+    ns3:name "Bogdan Franczyk" .
+
+<http://ceur-ws.org/Vol-1048/#ClemensiHau%C3%9Fmann> a ns3:Person ;
+    ns8:sameAs <http://ceur-ws.org/persons/ClemensiHau%C3%9Fmann> ;
+    ns3:made <http://ceur-ws.org/Vol-1048/#paper1> ;
+    ns3:name "Clemens Haußmann" .
+
+<http://ceur-ws.org/Vol-1048/#MarcoiC.iMeier> a ns3:Person ;
+    ns8:sameAs <http://ceur-ws.org/persons/MarcoiC.iMeier> ;
+    ns3:made <http://ceur-ws.org/Vol-1048/#paper4> ;
+    ns3:name "Marco C. Meier" .
+
+<http://ceur-ws.org/Vol-1048/#MartiniRoth> a ns3:Person ;
+    ns8:sameAs <http://ceur-ws.org/persons/MartiniRoth> ;
+    ns3:made <http://ceur-ws.org/Vol-1048/#paper3> ;
+    ns3:name "Martin Roth" .
+
+<http://ceur-ws.org/Vol-1048/#SarahiOtyepka> a ns3:Person ;
+    ns8:sameAs <http://ceur-ws.org/persons/SarahiOtyepka> ;
+    ns3:made <http://ceur-ws.org/Vol-1048/#paper4> ;
+    ns3:name "Sarah Otyepka" .
 
 <http://ceur-ws.org/Vol-1048/#event> a ns4:WorkshopEvent ;
     ns4:hasLocation <http://dbpedia.org/resource/Germany> ;
-    ns4:hasPart <http://ceur-ws.org/Vol-1048/#part-CEUR-WS> ;
+    ns4:hasPart <http://ceur-ws.org/Vol-1048/#part-WSBI> ;
     ns4:isSubEventOf <http://ceur-ws.org/Vol-1048/#conf> ;
-    ns8:beginsAtDatetime "2012-09-27T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:endsAtDatetime "2012-09-28T00:00:00+00:00"^^xsd:dateTime ;
-    ns2:license "http://choosealicense.com/licenses/no-license/" ;
+    ns1:beginsAtDatetime "2012-09-27T00:00:00+00:00"^^xsd:dateTime ;
+    ns1:endsAtDatetime "2012-09-28T00:00:00+00:00"^^xsd:dateTime ;
+    ns5:license "http://choosealicense.com/licenses/no-license/" ;
     rdfs:seeAlso <http://ceur-ws.org/Vol-542/#event>,
         <http://ceur-ws.org/Vol-663/#event>,
         <http://ceur-ws.org/Vol-831/#event> .
+
+<http://ceur-ws.org/Vol-1048/#HenningiBaars> a ns3:Person ;
+    ns2:affiliation "" ;
+    ns8:sameAs <http://ceur-ws.org/persons/HenningiBaars> ;
+    ns3:made <http://ceur-ws.org/Vol-1048/#paperX1> ;
+    ns3:name "Henning Baars" .
+
+<http://ceur-ws.org/Vol-1048/#paper1> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1048/> ;
+    ns7:title "Erstellung eines Konzepts für ETL-Prozesse zur Befüllung von produktorientierten Datawarehouses" ;
+    ns6:endPage 13 ;
+    ns6:numPages 13 ;
+    ns6:section <http://ceur-ws.org/Vol-1048/#Inhaltsverzeichnis> ;
+    ns6:startPage 1 ;
+    ns2:author <http://ceur-ws.org/Vol-1048/#ClemensiHau%C3%9Fmann> .
+
+<http://ceur-ws.org/Vol-1048/#paper2> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1048/> ;
+    ns7:title "Assisted migration of enterprise applications to the Cloud - A hybrid Cloud approach" ;
+    ns6:endPage 27 ;
+    ns6:numPages 14 ;
+    ns6:section <http://ceur-ws.org/Vol-1048/#Inhaltsverzeichnis> ;
+    ns6:startPage 14 ;
+    ns2:author <http://ceur-ws.org/Vol-1048/#Adri%C3%A1niJuan-Verdejo> .
+
+<http://ceur-ws.org/Vol-1048/#paperX1> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1048/> ;
+    ns7:title "Das Gesamtdokument kann" ;
+    ns6:section <http://ceur-ws.org/Vol-1048/#Inhaltsverzeichnis> ;
+    ns2:author <http://ceur-ws.org/Vol-1048/#HenningiBaars> .
+
+<http://ceur-ws.org/Vol-1048/#paper3> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1048/> ;
+    ns7:title "Entscheidungsunterstützung in logistischen Netzwerken - Ansätze für eine Umsetzung" ;
+    ns6:endPage 36 ;
+    ns6:numPages 9 ;
+    ns6:section <http://ceur-ws.org/Vol-1048/#Inhaltsverzeichnis> ;
+    ns6:startPage 28 ;
+    ns2:author <http://ceur-ws.org/Vol-1048/#AxeliKlarmann>,
+        <http://ceur-ws.org/Vol-1048/#BogdaniFranczyk>,
+        <http://ceur-ws.org/Vol-1048/#MartiniRoth> .
+
+<http://ceur-ws.org/Vol-1048/#paper4> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1048/> ;
+    ns7:title "Towards an Economic Foundation for the Decision between Agile and Plan-driven Project Management in a Business Intelligence Context" ;
+    ns6:endPage 48 ;
+    ns6:numPages 12 ;
+    ns6:section <http://ceur-ws.org/Vol-1048/#Inhaltsverzeichnis> ;
+    ns6:startPage 37 ;
+    ns2:author <http://ceur-ws.org/Vol-1048/#BenjaminiMosig>,
+        <http://ceur-ws.org/Vol-1048/#MarcoiC.iMeier>,
+        <http://ceur-ws.org/Vol-1048/#SarahiOtyepka> .
+
+<http://ceur-ws.org/Vol-1048/> a ns4:Proceedings ;
+    ns4:hasPart <http://ceur-ws.org/Vol-1048/#paper1>,
+        <http://ceur-ws.org/Vol-1048/#paper2>,
+        <http://ceur-ws.org/Vol-1048/#paper3>,
+        <http://ceur-ws.org/Vol-1048/#paper4>,
+        <http://ceur-ws.org/Vol-1048/#paperX1> ;
+    ns4:hasSession <http://ceur-ws.org/Vol-1048/#Inhaltsverzeichnis> ;
+    ns9:issued "2013-09-26T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:presentedAt <http://ceur-ws.org/Vol-1048/#event> ;
+    ns2:editor <http://ceur-ws.org/Vol-1048/#HenningiBaars> .
+
+<http://ceur-ws.org/Vol-1048/#Inhaltsverzeichnis> a ns4:SessionEvent ;
+    ns4:partOf <http://ceur-ws.org/Vol-1048/> ;
+    ns7:title "Inhaltsverzeichnis" .
 

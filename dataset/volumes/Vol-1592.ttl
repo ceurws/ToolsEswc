@@ -1,41 +1,199 @@
-@prefix ns1: <http://xmlns.com/foaf/0.1/> .
-@prefix ns2: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns3: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns4: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns5: <http://www.w3.org/2002/07/owl#> .
-@prefix ns6: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns7: <http://purl.org/ontology/bibo/#> .
+@prefix ns1: <http://www.w3.org/2002/07/owl#> .
+@prefix ns2: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns3: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns4: <http://purl.org/ontology/bibo/#> .
+@prefix ns5: <http://xmlns.com/foaf/0.1/> .
+@prefix ns6: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix ns8: <http://purl.org/dc/elements/1.1/> .
+@prefix ns9: <http://purl.org/NET/c4dm/timeline.owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1592/> a ns4:Proceedings ;
-    ns2:issued "2016-06-17T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:presentedAt <http://ceur-ws.org/Vol-1592/#event> ;
-    ns6:editor <http://ceur-ws.org/Vol-1592/#JosepiCarmona>,
-        <http://ceur-ws.org/Vol-1592/#RobiniBergenthum>,
-        <http://ceur-ws.org/Vol-1592/#WilivanideriAalst> .
+<http://ceur-ws.org/Vol-1592/#BenjaminiMeis> a ns5:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/BenjaminiMeis> ;
+    ns5:made <http://ceur-ws.org/Vol-1592/#paper04> ;
+    ns5:name "Benjamin Meis" .
 
-<http://ceur-ws.org/Vol-1592/#JosepiCarmona> a ns1:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/JosepiCarmona> ;
-    ns1:name "Josep Carmona" .
+<http://ceur-ws.org/Vol-1592/#BorjaiV%C3%A1zquez-Barreiros> a ns5:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/BorjaiV%C3%A1zquez-Barreiros> ;
+    ns5:made <http://ceur-ws.org/Vol-1592/#paper02> ;
+    ns5:name "Borja Vázquez-Barreiros" .
 
-<http://ceur-ws.org/Vol-1592/#RobiniBergenthum> a ns1:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/RobiniBergenthum> ;
-    ns1:name "Robin Bergenthum" .
+<http://ceur-ws.org/Vol-1592/#EdelmaiRodr%C3%ADguez-P%C3%A9rez> a ns5:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/EdelmaiRodr%C3%ADguez-P%C3%A9rez> ;
+    ns5:made <http://ceur-ws.org/Vol-1592/#paper11> ;
+    ns5:name "Edelma Rodríguez-Pérez" .
 
-<http://ceur-ws.org/Vol-1592/#WilivanideriAalst> a ns1:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/WilivanideriAalst> ;
-    ns1:name "Wil van der Aalst" .
+<http://ceur-ws.org/Vol-1592/#GabrieliJuh%C3%A1s> a ns5:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/GabrieliJuh%C3%A1s> ;
+    ns5:made <http://ceur-ws.org/Vol-1592/#paper05> ;
+    ns5:name "Gabriel Juhás" .
 
-<http://ceur-ws.org/Vol-1592/#event> a ns4:WorkshopEvent ;
-    ns4:hasLocation <http://dbpedia.org/resource/Commemorative_coins_of_Poland> ;
-    ns4:hasPart <http://ceur-ws.org/Vol-1592/#part-ACSD> ;
-    ns4:isSubEventOf <http://ceur-ws.org/Vol-1592/#conf> ;
-    ns3:beginsAtDatetime "2016-06-20T00:00:00+00:00"^^xsd:dateTime ;
-    ns3:endsAtDatetime "2016-06-21T00:00:00+00:00"^^xsd:dateTime ;
+<http://ceur-ws.org/Vol-1592/#GertiJanssenswillen> a ns5:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/GertiJanssenswillen> ;
+    ns5:made <http://ceur-ws.org/Vol-1592/#paper10> ;
+    ns5:name "Gert Janssenswillen" .
+
+<http://ceur-ws.org/Vol-1592/#JosepiCarmona> a ns5:Person ;
+    ns3:affiliation "" ;
+    ns1:sameAs <http://ceur-ws.org/persons/JosepiCarmona> ;
+    ns5:name "Josep Carmona" .
+
+<http://ceur-ws.org/Vol-1592/#JuliusiHolderer> a ns5:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/JuliusiHolderer> ;
+    ns5:made <http://ceur-ws.org/Vol-1592/#paper09> ;
+    ns5:name "Julius Holderer" .
+
+<http://ceur-ws.org/Vol-1592/#KamilaiBarylska> a ns5:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/KamilaiBarylska> ;
+    ns5:made <http://ceur-ws.org/Vol-1592/#paper08> ;
+    ns5:name "Kamila Barylska" .
+
+<http://ceur-ws.org/Vol-1592/#Mar%C3%ADaiTeresaiG%C3%B3mez-L%C3%B3pez> a ns5:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/Mar%C3%ADaiTeresaiG%C3%B3mez-L%C3%B3pez> ;
+    ns5:made <http://ceur-ws.org/Vol-1592/#paper07> ;
+    ns5:name "María Teresa Gómez-López" .
+
+<http://ceur-ws.org/Vol-1592/#PieteriDeiKoninck> a ns5:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/PieteriDeiKoninck> ;
+    ns5:made <http://ceur-ws.org/Vol-1592/#paper01> ;
+    ns5:name "Pieter De Koninck" .
+
+<http://ceur-ws.org/Vol-1592/#RobiniBergenthum> a ns5:Person ;
+    ns3:affiliation "" ;
+    ns1:sameAs <http://ceur-ws.org/persons/RobiniBergenthum> ;
+    ns5:name "Robin Bergenthum" .
+
+<http://ceur-ws.org/Vol-1592/#SergeyiA.iShershakov> a ns5:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/SergeyiA.iShershakov> ;
+    ns5:made <http://ceur-ws.org/Vol-1592/#paper06> ;
+    ns5:name "Sergey A. Shershakov" .
+
+<http://ceur-ws.org/Vol-1592/#TonatiuhiTapia-Flores> a ns5:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/TonatiuhiTapia-Flores> ;
+    ns5:made <http://ceur-ws.org/Vol-1592/#paper03> ;
+    ns5:name "Tonatiuh Tapia-Flores" .
+
+<http://ceur-ws.org/Vol-1592/#WilivanideriAalst> a ns5:Person ;
+    ns3:affiliation "" ;
+    ns1:sameAs <http://ceur-ws.org/persons/WilivanideriAalst> ;
+    ns5:name "Wil van der Aalst" .
+
+<http://ceur-ws.org/Vol-1592/#event> a ns2:WorkshopEvent ;
+    ns2:hasLocation <http://dbpedia.org/resource/Commemorative_coins_of_Poland> ;
+    ns2:hasPart <http://ceur-ws.org/Vol-1592/#part-ATAED> ;
+    ns2:isSubEventOf <http://ceur-ws.org/Vol-1592/#conf> ;
+    ns9:beginsAtDatetime "2016-06-20T00:00:00+00:00"^^xsd:dateTime ;
+    ns9:endsAtDatetime "2016-06-21T00:00:00+00:00"^^xsd:dateTime ;
     ns8:license "http://choosealicense.com/licenses/no-license/" ;
     rdfs:seeAlso <http://ceur-ws.org/Vol-1371/#event> .
+
+<http://ceur-ws.org/Vol-1592/#paper01> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1592/> ;
+    ns6:title "Determining the Number of Trace Clusters: a Stability-based Approach" ;
+    ns4:endPage 15 ;
+    ns4:numPages 15 ;
+    ns4:startPage 1 ;
+    ns3:author <http://ceur-ws.org/Vol-1592/#PieteriDeiKoninck> .
+
+<http://ceur-ws.org/Vol-1592/#paper02> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1592/> ;
+    ns6:title "Process Mining in IT Service Management: A Case Study" ;
+    ns4:endPage 30 ;
+    ns4:numPages 15 ;
+    ns4:startPage 16 ;
+    ns3:author <http://ceur-ws.org/Vol-1592/#BorjaiV%C3%A1zquez-Barreiros> .
+
+<http://ceur-ws.org/Vol-1592/#paper03> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1592/> ;
+    ns6:title "Discovering Process Models from Incomplete Event Logs using Conjoint Occurrence Classes" ;
+    ns4:endPage 46 ;
+    ns4:numPages 16 ;
+    ns4:startPage 31 ;
+    ns3:author <http://ceur-ws.org/Vol-1592/#TonatiuhiTapia-Flores> .
+
+<http://ceur-ws.org/Vol-1592/#paper04> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1592/> ;
+    ns6:title "Synthesis of Elementary Net Systems with Final Configurations" ;
+    ns4:endPage 57 ;
+    ns4:numPages 11 ;
+    ns4:startPage 47 ;
+    ns3:author <http://ceur-ws.org/Vol-1592/#BenjaminiMeis> .
+
+<http://ceur-ws.org/Vol-1592/#paper05> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1592/> ;
+    ns6:title "Synthesis of bounded Petri Nets from Prime Event Structures with Cutting Context" ;
+    ns4:endPage 77 ;
+    ns4:numPages 20 ;
+    ns4:startPage 58 ;
+    ns3:author <http://ceur-ws.org/Vol-1592/#GabrieliJuh%C3%A1s> .
+
+<http://ceur-ws.org/Vol-1592/#paper06> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1592/> ;
+    ns6:title "Transition Systems Reduction: Balancing between Precision and Simplicity" ;
+    ns4:endPage 95 ;
+    ns4:numPages 18 ;
+    ns4:startPage 78 ;
+    ns3:author <http://ceur-ws.org/Vol-1592/#SergeyiA.iShershakov> .
+
+<http://ceur-ws.org/Vol-1592/#paper07> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1592/> ;
+    ns6:title "Computing Alignments with Constraint Programming: The Acyclic Case" ;
+    ns4:endPage 110 ;
+    ns4:numPages 15 ;
+    ns4:startPage 96 ;
+    ns3:author <http://ceur-ws.org/Vol-1592/#Mar%C3%ADaiTeresaiG%C3%B3mez-L%C3%B3pez> .
+
+<http://ceur-ws.org/Vol-1592/#paper08> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1592/> ;
+    ns6:title "Properties of Plain, Pure, and Safe Petri Nets - with some Applications to Petri Net Synthesis" ;
+    ns4:endPage 125 ;
+    ns4:numPages 15 ;
+    ns4:startPage 111 ;
+    ns3:author <http://ceur-ws.org/Vol-1592/#KamilaiBarylska> .
+
+<http://ceur-ws.org/Vol-1592/#paper09> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1592/> ;
+    ns6:title "Security-Sensitive Tackling of Obstructed Workow Executions" ;
+    ns4:endPage 137 ;
+    ns4:numPages 12 ;
+    ns4:startPage 126 ;
+    ns3:author <http://ceur-ws.org/Vol-1592/#JuliusiHolderer> .
+
+<http://ceur-ws.org/Vol-1592/#paper10> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1592/> ;
+    ns6:title "Calculating the Number of Unique Paths in a Block-Structured Process Model" ;
+    ns4:endPage 152 ;
+    ns4:numPages 15 ;
+    ns4:startPage 138 ;
+    ns3:author <http://ceur-ws.org/Vol-1592/#GertiJanssenswillen> .
+
+<http://ceur-ws.org/Vol-1592/#paper11> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1592/> ;
+    ns6:title "Identification of Timed Discrete Event Processes. Building Input-Output Petri Net Models" ;
+    ns4:endPage 167 ;
+    ns4:numPages 15 ;
+    ns4:startPage 153 ;
+    ns3:author <http://ceur-ws.org/Vol-1592/#EdelmaiRodr%C3%ADguez-P%C3%A9rez> .
+
+<http://ceur-ws.org/Vol-1592/> a ns2:Proceedings ;
+    ns2:hasPart <http://ceur-ws.org/Vol-1592/#paper01>,
+        <http://ceur-ws.org/Vol-1592/#paper02>,
+        <http://ceur-ws.org/Vol-1592/#paper03>,
+        <http://ceur-ws.org/Vol-1592/#paper04>,
+        <http://ceur-ws.org/Vol-1592/#paper05>,
+        <http://ceur-ws.org/Vol-1592/#paper06>,
+        <http://ceur-ws.org/Vol-1592/#paper07>,
+        <http://ceur-ws.org/Vol-1592/#paper08>,
+        <http://ceur-ws.org/Vol-1592/#paper09>,
+        <http://ceur-ws.org/Vol-1592/#paper10>,
+        <http://ceur-ws.org/Vol-1592/#paper11> ;
+    ns7:issued "2016-06-17T00:00:00+00:00"^^xsd:dateTime ;
+    ns4:presentedAt <http://ceur-ws.org/Vol-1592/#event> ;
+    ns3:editor <http://ceur-ws.org/Vol-1592/#JosepiCarmona>,
+        <http://ceur-ws.org/Vol-1592/#RobiniBergenthum>,
+        <http://ceur-ws.org/Vol-1592/#WilivanideriAalst> .
 

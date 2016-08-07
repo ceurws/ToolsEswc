@@ -1,45 +1,356 @@
-@prefix ns1: <http://www.w3.org/2002/07/owl#> .
-@prefix ns2: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns3: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns4: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns5: <http://xmlns.com/foaf/0.1/> .
-@prefix ns6: <http://purl.org/dc/elements/1.1/> .
-@prefix ns7: <http://purl.org/ontology/bibo/#> .
-@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns1: <http://xmlns.com/foaf/0.1/> .
+@prefix ns2: <http://purl.org/ontology/bibo/#> .
+@prefix ns3: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns4: <http://www.w3.org/2002/07/owl#> .
+@prefix ns5: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns6: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns8: <http://purl.org/dc/elements/1.1/> .
+@prefix ns9: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1286/> a ns3:Proceedings ;
-    ns8:issued "2014-11-04T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:presentedAt <http://ceur-ws.org/Vol-1286/#event> ;
-    ns4:editor <http://ceur-ws.org/Vol-1286/#ColiniAtkinson>,
+<http://ceur-ws.org/Vol-1286/#AlexanderiEgyed> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/AlexanderiEgyed> ;
+    ns1:made <http://ceur-ws.org/Vol-1286/#paper8> ;
+    ns1:name "Alexander Egyed" .
+
+<http://ceur-ws.org/Vol-1286/#AndreasiDemuth> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/AndreasiDemuth> ;
+    ns1:made <http://ceur-ws.org/Vol-1286/#paper8> ;
+    ns1:name "Andreas Demuth" .
+
+<http://ceur-ws.org/Vol-1286/#AndreasiJordan> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/AndreasiJordan> ;
+    ns1:made <http://ceur-ws.org/Vol-1286/#paper10> ;
+    ns1:name "Andreas Jordan" .
+
+<http://ceur-ws.org/Vol-1286/#BastianiRoth> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/BastianiRoth> ;
+    ns1:made <http://ceur-ws.org/Vol-1286/#paper3> ;
+    ns1:name "Bastian Roth" .
+
+<http://ceur-ws.org/Vol-1286/#BerndiNeumayr> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/BerndiNeumayr> ;
+    ns1:made <http://ceur-ws.org/Vol-1286/#paper1> ;
+    ns1:name "Bernd Neumayr" .
+
+<http://ceur-ws.org/Vol-1286/#BrianiHenderson-Sellers> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/BrianiHenderson-Sellers> ;
+    ns1:made <http://ceur-ws.org/Vol-1286/#paper5> ;
+    ns1:name "Brian Henderson-Sellers" .
+
+<http://ceur-ws.org/Vol-1286/#BrunoiBarroca> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/BrunoiBarroca> ;
+    ns1:made <http://ceur-ws.org/Vol-1286/#paper9> ;
+    ns1:name "Bruno Barroca" .
+
+<http://ceur-ws.org/Vol-1286/#CesariGonzalez-Perez> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/CesariGonzalez-Perez> ;
+    ns1:made <http://ceur-ws.org/Vol-1286/#paper5> ;
+    ns1:name "Cesar Gonzalez-Perez" .
+
+<http://ceur-ws.org/Vol-1286/#DetlefiKips> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/DetlefiKips> ;
+    ns1:made <http://ceur-ws.org/Vol-1286/#paper11> ;
+    ns1:name "Detlef Kips" .
+
+<http://ceur-ws.org/Vol-1286/#DirkiHusemann> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/DirkiHusemann> ;
+    ns1:made <http://ceur-ws.org/Vol-1286/#paper11> ;
+    ns1:name "Dirk Husemann" .
+
+<http://ceur-ws.org/Vol-1286/#EstheriGuerra> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/EstheriGuerra> ;
+    ns1:made <http://ceur-ws.org/Vol-1286/#paper7> ;
+    ns1:name "Esther Guerra" .
+
+<http://ceur-ws.org/Vol-1286/#EugeneiSyriani> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/EugeneiSyriani> ;
+    ns1:made <http://ceur-ws.org/Vol-1286/#paper9> ;
+    ns1:name "Eugene Syriani" .
+
+<http://ceur-ws.org/Vol-1286/#FrankiHilken> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/FrankiHilken> ;
+    ns1:made <http://ceur-ws.org/Vol-1286/#paper2> ;
+    ns1:name "Frank Hilken" .
+
+<http://ceur-ws.org/Vol-1286/#HansiVangheluwe> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/HansiVangheluwe> ;
+    ns1:made <http://ceur-ws.org/Vol-1286/#paper9> ;
+    ns1:name "Hans Vangheluwe" .
+
+<http://ceur-ws.org/Vol-1286/#LarsiHamann> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/LarsiHamann> ;
+    ns1:made <http://ceur-ws.org/Vol-1286/#paper2> ;
+    ns1:name "Lars Hamann" .
+
+<http://ceur-ws.org/Vol-1286/#MarkusiRiedl-Ehrenleitner> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/MarkusiRiedl-Ehrenleitner> ;
+    ns1:made <http://ceur-ws.org/Vol-1286/#paper8> ;
+    ns1:name "Markus Riedl-Ehrenleitner" .
+
+<http://ceur-ws.org/Vol-1286/#MartiniGogolla> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/MartiniGogolla> ;
+    ns1:made <http://ceur-ws.org/Vol-1286/#paper2> ;
+    ns1:name "Martin Gogolla" .
+
+<http://ceur-ws.org/Vol-1286/#MartiniHaeusler> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/MartiniHaeusler> ;
+    ns1:made <http://ceur-ws.org/Vol-1286/#paper12> ;
+    ns1:name "Martin Haeusler" .
+
+<http://ceur-ws.org/Vol-1286/#MartiniJung> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/MartiniJung> ;
+    ns1:made <http://ceur-ws.org/Vol-1286/#paper11> ;
+    ns1:name "Martin Jung" .
+
+<http://ceur-ws.org/Vol-1286/#MatthiasiFarwick> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/MatthiasiFarwick> ;
+    ns1:made <http://ceur-ws.org/Vol-1286/#paper12> ;
+    ns1:name "Matthias Farwick" .
+
+<http://ceur-ws.org/Vol-1286/#MatthiasiJahn> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/MatthiasiJahn> ;
+    ns1:made <http://ceur-ws.org/Vol-1286/#paper3> ;
+    ns1:name "Matthias Jahn" .
+
+<http://ceur-ws.org/Vol-1286/#MatthiasiSedlmeier> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/MatthiasiSedlmeier> ;
+    ns1:made <http://ceur-ws.org/Vol-1286/#paper2> ;
+    ns1:name "Matthias Sedlmeier" .
+
+<http://ceur-ws.org/Vol-1286/#MichaeliPhilippsen> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/MichaeliPhilippsen> ;
+    ns1:made <http://ceur-ws.org/Vol-1286/#paper11> ;
+    ns1:name "Michael Philippsen" .
+
+<http://ceur-ws.org/Vol-1286/#MichaeliSchrefl> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/MichaeliSchrefl> ;
+    ns1:made <http://ceur-ws.org/Vol-1286/#paper1> ;
+    ns1:name "Michael Schrefl" .
+
+<http://ceur-ws.org/Vol-1286/#MuzaffariIgamberdiev> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/MuzaffariIgamberdiev> ;
+    ns1:made <http://ceur-ws.org/Vol-1286/#paper4> ;
+    ns1:name "Muzaffar Igamberdiev" .
+
+<http://ceur-ws.org/Vol-1286/#RalphiGerbig> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/RalphiGerbig> ;
+    ns1:made <http://ceur-ws.org/Vol-1286/#paper6> ;
+    ns1:name "Ralph Gerbig" .
+
+<http://ceur-ws.org/Vol-1286/#SamiriAl-Hilank> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/SamiriAl-Hilank> ;
+    ns1:made <http://ceur-ws.org/Vol-1286/#paper11> ;
+    ns1:name "Samir Al-Hilank" .
+
+<http://ceur-ws.org/Vol-1286/#SimoniVaniMierlo> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/SimoniVaniMierlo> ;
+    ns1:made <http://ceur-ws.org/Vol-1286/#paper9> ;
+    ns1:name "Simon Van Mierlo" .
+
+<http://ceur-ws.org/Vol-1286/#StefaniJablonski> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/StefaniJablonski> ;
+    ns1:made <http://ceur-ws.org/Vol-1286/#paper3> ;
+    ns1:name "Stefan Jablonski" .
+
+<http://ceur-ws.org/Vol-1286/#ThomasiTrojer> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/ThomasiTrojer> ;
+    ns1:made <http://ceur-ws.org/Vol-1286/#paper12> ;
+    ns1:name "Thomas Trojer" .
+
+<http://ceur-ws.org/Vol-1286/#TonyiClark> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/TonyiClark> ;
+    ns1:made <http://ceur-ws.org/Vol-1286/#paper5> ;
+    ns1:name "Tony Clark" .
+
+<http://ceur-ws.org/Vol-1286/#WolfgangiMayer> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/WolfgangiMayer> ;
+    ns1:made <http://ceur-ws.org/Vol-1286/#paper10> ;
+    ns1:name "Wolfgang Mayer" .
+
+<http://ceur-ws.org/Vol-1286/#event> a ns5:WorkshopEvent ;
+    ns5:hasLocation <http://dbpedia.org/resource/Spain> ;
+    ns5:hasPart <http://ceur-ws.org/Vol-1286/#part-MULTI> ;
+    ns5:isSubEventOf <http://ceur-ws.org/Vol-1286/#conf> ;
+    ns7:beginsAtDatetime "2014-09-28T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:endsAtDatetime "2014-09-28T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:license "http://creativecommons.org/publicdomain/zero/1.0/" .
+
+<http://ceur-ws.org/Vol-1286/#ColiniAtkinson> a ns1:Person ;
+    ns3:affiliation "" ;
+    ns4:sameAs <http://ceur-ws.org/persons/ColiniAtkinson> ;
+    ns1:made <http://ceur-ws.org/Vol-1286/#paper6> ;
+    ns1:name "Colin Atkinson" .
+
+<http://ceur-ws.org/Vol-1286/#GeorgiGrossmann> a ns1:Person ;
+    ns3:affiliation "" ;
+    ns4:sameAs <http://ceur-ws.org/persons/GeorgiGrossmann> ;
+    ns1:made <http://ceur-ws.org/Vol-1286/#paper4> ;
+    ns1:name "Georg Grossmann" .
+
+<http://ceur-ws.org/Vol-1286/#JuanideiLara> a ns1:Person ;
+    ns3:affiliation "" ;
+    ns4:sameAs <http://ceur-ws.org/persons/JuanideiLara> ;
+    ns1:made <http://ceur-ws.org/Vol-1286/#paper7> ;
+    ns1:name "Juan de Lara" .
+
+<http://ceur-ws.org/Vol-1286/#MarkusiStumptner> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/MarkusiStumptner> ;
+    ns1:made <http://ceur-ws.org/Vol-1286/#paper10>,
+        <http://ceur-ws.org/Vol-1286/#paper4> ;
+    ns1:name "Markus Stumptner" .
+
+<http://ceur-ws.org/Vol-1286/#ThomasiK%C3%BChne> a ns1:Person ;
+    ns3:affiliation "" ;
+    ns4:sameAs <http://ceur-ws.org/persons/ThomasiK%C3%BChne> ;
+    ns1:made <http://ceur-ws.org/Vol-1286/#paper6>,
+        <http://ceur-ws.org/Vol-1286/#paper9> ;
+    ns1:name "Thomas Kühne" .
+
+<http://ceur-ws.org/Vol-1286/#paper1> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1286/> ;
+    ns6:title "Abstract vs concrete clabjects in dual deep instantiation" ;
+    ns2:endPage 12 ;
+    ns2:numPages 10 ;
+    ns2:startPage 3 ;
+    ns3:author <http://ceur-ws.org/Vol-1286/#BerndiNeumayr>,
+        <http://ceur-ws.org/Vol-1286/#MichaeliSchrefl> .
+
+<http://ceur-ws.org/Vol-1286/#paper7> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1286/> ;
+    ns6:title "Towards automating the analysis of integrity constraints in multi-level models" ;
+    ns2:endPage 72 ;
+    ns2:numPages 10 ;
+    ns2:startPage 63 ;
+    ns3:author <http://ceur-ws.org/Vol-1286/#EstheriGuerra>,
+        <http://ceur-ws.org/Vol-1286/#JuanideiLara> .
+
+<http://ceur-ws.org/Vol-1286/#paper10> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1286/> ;
+    ns6:title "Multilevel modelling for interoperability" ;
+    ns2:endPage 102 ;
+    ns2:numPages 10 ;
+    ns2:startPage 93 ;
+    ns3:author <http://ceur-ws.org/Vol-1286/#AndreasiJordan>,
+        <http://ceur-ws.org/Vol-1286/#MarkusiStumptner>,
+        <http://ceur-ws.org/Vol-1286/#WolfgangiMayer> .
+
+<http://ceur-ws.org/Vol-1286/#paper12> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1286/> ;
+    ns6:title "Modeling techniques for enterprise architecture documentation: experiences from practice" ;
+    ns2:endPage 122 ;
+    ns2:numPages 10 ;
+    ns2:startPage 113 ;
+    ns3:author <http://ceur-ws.org/Vol-1286/#MartiniHaeusler>,
+        <http://ceur-ws.org/Vol-1286/#MatthiasiFarwick>,
+        <http://ceur-ws.org/Vol-1286/#ThomasiTrojer> .
+
+<http://ceur-ws.org/Vol-1286/#paper3> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1286/> ;
+    ns6:title "Instance specialization - a pattern for multi-level metamodelling" ;
+    ns2:endPage 32 ;
+    ns2:numPages 10 ;
+    ns2:startPage 23 ;
+    ns3:author <http://ceur-ws.org/Vol-1286/#BastianiRoth>,
+        <http://ceur-ws.org/Vol-1286/#MatthiasiJahn>,
+        <http://ceur-ws.org/Vol-1286/#StefaniJablonski> .
+
+<http://ceur-ws.org/Vol-1286/#paper4> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1286/> ;
+    ns6:title "An implementation of multi-level modelling in F-logic" ;
+    ns2:endPage 42 ;
+    ns2:numPages 10 ;
+    ns2:startPage 33 ;
+    ns3:author <http://ceur-ws.org/Vol-1286/#GeorgiGrossmann>,
+        <http://ceur-ws.org/Vol-1286/#MarkusiStumptner>,
+        <http://ceur-ws.org/Vol-1286/#MuzaffariIgamberdiev> .
+
+<http://ceur-ws.org/Vol-1286/#paper5> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1286/> ;
+    ns6:title "A foundation for multi-level modelling" ;
+    ns2:endPage 52 ;
+    ns2:numPages 10 ;
+    ns2:startPage 43 ;
+    ns3:author <http://ceur-ws.org/Vol-1286/#BrianiHenderson-Sellers>,
+        <http://ceur-ws.org/Vol-1286/#CesariGonzalez-Perez>,
+        <http://ceur-ws.org/Vol-1286/#TonyiClark> .
+
+<http://ceur-ws.org/Vol-1286/#paper6> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1286/> ;
+    ns6:title "Comparing multi-level modeling approaches" ;
+    ns2:endPage 61 ;
+    ns2:numPages 9 ;
+    ns2:startPage 53 ;
+    ns3:author <http://ceur-ws.org/Vol-1286/#ColiniAtkinson>,
+        <http://ceur-ws.org/Vol-1286/#RalphiGerbig>,
+        <http://ceur-ws.org/Vol-1286/#ThomasiK%C3%BChne> .
+
+<http://ceur-ws.org/Vol-1286/#paper8> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1286/> ;
+    ns6:title "Towards flexible, incremental, and paradigm-agnostic consistency checking in multi-level modeling environments" ;
+    ns2:endPage 82 ;
+    ns2:numPages 10 ;
+    ns2:startPage 73 ;
+    ns3:author <http://ceur-ws.org/Vol-1286/#AlexanderiEgyed>,
+        <http://ceur-ws.org/Vol-1286/#AndreasiDemuth>,
+        <http://ceur-ws.org/Vol-1286/#MarkusiRiedl-Ehrenleitner> .
+
+<http://ceur-ws.org/Vol-1286/#paper2> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1286/> ;
+    ns6:title "On metamodel superstructures employing UML generalization features" ;
+    ns2:endPage 22 ;
+    ns2:numPages 10 ;
+    ns2:startPage 13 ;
+    ns3:author <http://ceur-ws.org/Vol-1286/#FrankiHilken>,
+        <http://ceur-ws.org/Vol-1286/#LarsiHamann>,
+        <http://ceur-ws.org/Vol-1286/#MartiniGogolla>,
+        <http://ceur-ws.org/Vol-1286/#MatthiasiSedlmeier> .
+
+<http://ceur-ws.org/Vol-1286/#paper11> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1286/> ;
+    ns6:title "Using multi level-modeling techniques for managing mapping information" ;
+    ns2:endPage 112 ;
+    ns2:numPages 10 ;
+    ns2:startPage 103 ;
+    ns3:author <http://ceur-ws.org/Vol-1286/#DetlefiKips>,
+        <http://ceur-ws.org/Vol-1286/#DirkiHusemann>,
+        <http://ceur-ws.org/Vol-1286/#MartiniJung>,
+        <http://ceur-ws.org/Vol-1286/#MichaeliPhilippsen>,
+        <http://ceur-ws.org/Vol-1286/#SamiriAl-Hilank> .
+
+<http://ceur-ws.org/Vol-1286/#paper9> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1286/> ;
+    ns6:title "Multi-level modelling in the Modelverse" ;
+    ns2:endPage 92 ;
+    ns2:numPages 10 ;
+    ns2:startPage 83 ;
+    ns3:author <http://ceur-ws.org/Vol-1286/#BrunoiBarroca>,
+        <http://ceur-ws.org/Vol-1286/#EugeneiSyriani>,
+        <http://ceur-ws.org/Vol-1286/#HansiVangheluwe>,
+        <http://ceur-ws.org/Vol-1286/#SimoniVaniMierlo>,
+        <http://ceur-ws.org/Vol-1286/#ThomasiK%C3%BChne> .
+
+<http://ceur-ws.org/Vol-1286/> a ns5:Proceedings ;
+    ns5:hasPart <http://ceur-ws.org/Vol-1286/#paper1>,
+        <http://ceur-ws.org/Vol-1286/#paper10>,
+        <http://ceur-ws.org/Vol-1286/#paper11>,
+        <http://ceur-ws.org/Vol-1286/#paper12>,
+        <http://ceur-ws.org/Vol-1286/#paper2>,
+        <http://ceur-ws.org/Vol-1286/#paper3>,
+        <http://ceur-ws.org/Vol-1286/#paper4>,
+        <http://ceur-ws.org/Vol-1286/#paper5>,
+        <http://ceur-ws.org/Vol-1286/#paper6>,
+        <http://ceur-ws.org/Vol-1286/#paper7>,
+        <http://ceur-ws.org/Vol-1286/#paper8>,
+        <http://ceur-ws.org/Vol-1286/#paper9> ;
+    ns9:issued "2014-11-04T00:00:00+00:00"^^xsd:dateTime ;
+    ns2:presentedAt <http://ceur-ws.org/Vol-1286/#event> ;
+    ns3:editor <http://ceur-ws.org/Vol-1286/#ColiniAtkinson>,
         <http://ceur-ws.org/Vol-1286/#GeorgiGrossmann>,
         <http://ceur-ws.org/Vol-1286/#JuanideiLara>,
         <http://ceur-ws.org/Vol-1286/#ThomasiK%C3%BChne> .
-
-<http://ceur-ws.org/Vol-1286/#ColiniAtkinson> a ns5:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/ColiniAtkinson> ;
-    ns5:name "Colin Atkinson" .
-
-<http://ceur-ws.org/Vol-1286/#GeorgiGrossmann> a ns5:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/GeorgiGrossmann> ;
-    ns5:name "Georg Grossmann" .
-
-<http://ceur-ws.org/Vol-1286/#JuanideiLara> a ns5:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/JuanideiLara> ;
-    ns5:name "Juan de Lara" .
-
-<http://ceur-ws.org/Vol-1286/#ThomasiK%C3%BChne> a ns5:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/ThomasiK%C3%BChne> ;
-    ns5:name "Thomas Kühne" .
-
-<http://ceur-ws.org/Vol-1286/#event> a ns3:WorkshopEvent ;
-    ns3:hasLocation <http://dbpedia.org/resource/Spain> ;
-    ns3:hasPart <http://ceur-ws.org/Vol-1286/#part-ws> ;
-    ns3:isSubEventOf <http://ceur-ws.org/Vol-1286/#conf> ;
-    ns2:beginsAtDatetime "2014-09-28T00:00:00+00:00"^^xsd:dateTime ;
-    ns2:endsAtDatetime "2014-09-28T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:license "http://creativecommons.org/publicdomain/zero/1.0/" .
 

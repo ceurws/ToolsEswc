@@ -1,51 +1,231 @@
-@prefix ns1: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns2: <http://xmlns.com/foaf/0.1/> .
-@prefix ns3: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns1: <http://purl.org/ontology/bibo/#> .
+@prefix ns2: <http://purl.org/dc/elements/1.1/> .
+@prefix ns3: <http://www.w3.org/2002/07/owl#> .
 @prefix ns4: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns5: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns6: <http://www.w3.org/2002/07/owl#> .
-@prefix ns7: <http://purl.org/dc/elements/1.1/> .
-@prefix ns8: <http://purl.org/ontology/bibo/#> .
+@prefix ns5: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns6: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns7: <http://xmlns.com/foaf/0.1/> .
+@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns9: <http://purl.org/NET/c4dm/timeline.owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1641/> a ns1:Proceedings ;
-    ns3:issued "2016-07-15T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:presentedAt <http://ceur-ws.org/Vol-1641/#event> ;
+<http://ceur-ws.org/Vol-1641/#AngelaiLocoro> a ns7:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/AngelaiLocoro> ;
+    ns7:made <http://ceur-ws.org/Vol-1641/#paper7> ;
+    ns7:name "Angela Locoro" .
+
+<http://ceur-ws.org/Vol-1641/#AntonioiPiccinno> a ns7:Person ;
+    ns4:affiliation "" ;
+    ns3:sameAs <http://ceur-ws.org/persons/AntonioiPiccinno> ;
+    ns7:name "Antonio Piccinno" .
+
+<http://ceur-ws.org/Vol-1641/#BrunoiA.iChagas> a ns7:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/BrunoiA.iChagas> ;
+    ns7:made <http://ceur-ws.org/Vol-1641/#paper11> ;
+    ns7:name "Bruno A. Chagas" .
+
+<http://ceur-ws.org/Vol-1641/#DanieliTetteroo> a ns7:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/DanieliTetteroo> ;
+    ns7:made <http://ceur-ws.org/Vol-1641/#paper10> ;
+    ns7:name "Daniel Tetteroo" .
+
+<http://ceur-ws.org/Vol-1641/#FedericoiCabitza> a ns7:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/FedericoiCabitza> ;
+    ns7:made <http://ceur-ws.org/Vol-1641/#paper5> ;
+    ns7:name "Federico Cabitza" .
+
+<http://ceur-ws.org/Vol-1641/#FrancescoiBenzi> a ns7:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/FrancescoiBenzi> ;
+    ns7:made <http://ceur-ws.org/Vol-1641/#paper6> ;
+    ns7:name "Francesco Benzi" .
+
+<http://ceur-ws.org/Vol-1641/#HenriiKorvela> a ns7:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/HenriiKorvela> ;
+    ns7:made <http://ceur-ws.org/Vol-1641/#paper2> ;
+    ns7:name "Henri Korvela" .
+
+<http://ceur-ws.org/Vol-1641/#MonicaiMaceli> a ns7:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/MonicaiMaceli> ;
+    ns7:made <http://ceur-ws.org/Vol-1641/#paper4> ;
+    ns7:name "Monica Maceli" .
+
+<http://ceur-ws.org/Vol-1641/#PalomaiD%C3%ADaz> a ns7:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/PalomaiD%C3%ADaz> ;
+    ns7:made <http://ceur-ws.org/Vol-1641/#paper12> ;
+    ns7:name "Paloma Díaz" .
+
+<http://ceur-ws.org/Vol-1641/#event> a ns6:WorkshopEvent ;
+    ns6:hasLocation <http://dbpedia.org/resource/Spain> ;
+    ns6:hasPart <http://ceur-ws.org/Vol-1641/#part-CoPDA> ;
+    ns6:isSubEventOf <http://ceur-ws.org/Vol-1641/#conf> ;
+    ns9:beginsAtDatetime "2015-05-26T00:00:00+00:00"^^xsd:dateTime ;
+    ns9:endsAtDatetime "2015-05-26T00:00:00+00:00"^^xsd:dateTime ;
+    ns2:license "http://choosealicense.com/licenses/no-license/" ;
+    rdfs:seeAlso <http://ceur-ws.org/Vol-1640/#event> .
+
+<http://ceur-ws.org/Vol-1641/#AndersiM%C3%B8rch> a ns7:Person ;
+    ns4:affiliation "" ;
+    ns3:sameAs <http://ceur-ws.org/persons/AndersiM%C3%B8rch> ;
+    ns7:made <http://ceur-ws.org/Vol-1641/#paper3> ;
+    ns7:name "Anders Mørch" .
+
+<http://ceur-ws.org/Vol-1641/#BarbaraiRitaiBarricelli> a ns7:Person ;
+    ns4:affiliation "" ;
+    ns3:sameAs <http://ceur-ws.org/persons/BarbaraiRitaiBarricelli> ;
+    ns7:made <http://ceur-ws.org/Vol-1641/#paper8> ;
+    ns7:name "Barbara Rita Barricelli" .
+
+<http://ceur-ws.org/Vol-1641/#GerhardiFischer> a ns7:Person ;
+    ns4:affiliation "" ;
+    ns3:sameAs <http://ceur-ws.org/persons/GerhardiFischer> ;
+    ns7:made <http://ceur-ws.org/Vol-1641/#paper1> ;
+    ns7:name "Gerhard Fischer" .
+
+<http://ceur-ws.org/Vol-1641/#StefanoiValtolina> a ns7:Person ;
+    ns4:affiliation "" ;
+    ns3:sameAs <http://ceur-ws.org/persons/StefanoiValtolina> ;
+    ns7:made <http://ceur-ws.org/Vol-1641/#paper9> ;
+    ns7:name "Stefano Valtolina" .
+
+<http://ceur-ws.org/Vol-1641/#paper1> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1641/> ;
+    ns5:title "Information, Participation, and Collaboration Overload - A Design Trade-Off Analysis" ;
+    ns1:endPage 9 ;
+    ns1:numPages 9 ;
+    ns1:section <http://ceur-ws.org/Vol-1641/#Regularpapers> ;
+    ns1:startPage 1 ;
+    ns4:author <http://ceur-ws.org/Vol-1641/#GerhardiFischer> .
+
+<http://ceur-ws.org/Vol-1641/#paper10> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1641/> ;
+    ns5:title "Participation Overload in Physical Rehabilitation" ;
+    ns1:endPage 64 ;
+    ns1:numPages 6 ;
+    ns1:section <http://ceur-ws.org/Vol-1641/#Regularpapers> ;
+    ns1:startPage 59 ;
+    ns4:author <http://ceur-ws.org/Vol-1641/#DanieliTetteroo> .
+
+<http://ceur-ws.org/Vol-1641/#paper11> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1641/> ;
+    ns5:title "Towards micro-groupware: Supporting Small Group Activities Around Assistive Technology" ;
+    ns1:endPage 71 ;
+    ns1:numPages 7 ;
+    ns1:section <http://ceur-ws.org/Vol-1641/#Demopapers> ;
+    ns1:startPage 65 ;
+    ns4:author <http://ceur-ws.org/Vol-1641/#BrunoiA.iChagas> .
+
+<http://ceur-ws.org/Vol-1641/#paper12> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1641/> ;
+    ns5:title "Digitally-Augmented Exhibitions to Foster a Participatory Culture in Cultural Heritage Sites" ;
+    ns1:endPage 77 ;
+    ns1:numPages 6 ;
+    ns1:section <http://ceur-ws.org/Vol-1641/#Demopapers> ;
+    ns1:startPage 72 ;
+    ns4:author <http://ceur-ws.org/Vol-1641/#PalomaiD%C3%ADaz> .
+
+<http://ceur-ws.org/Vol-1641/#paper2> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1641/> ;
+    ns5:title "What Are the Roles of Information, Participation and Cooperation Overload in End-User Development Support?" ;
+    ns1:endPage 16 ;
+    ns1:numPages 7 ;
+    ns1:section <http://ceur-ws.org/Vol-1641/#Regularpapers> ;
+    ns1:startPage 10 ;
+    ns4:author <http://ceur-ws.org/Vol-1641/#HenriiKorvela> .
+
+<http://ceur-ws.org/Vol-1641/#paper3> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1641/> ;
+    ns5:title "Ready-to-hand Information and Computer-mediated Activity: Challenges, Opportunities, and Methods" ;
+    ns1:endPage 21 ;
+    ns1:numPages 5 ;
+    ns1:section <http://ceur-ws.org/Vol-1641/#Regularpapers> ;
+    ns1:startPage 17 ;
+    ns4:author <http://ceur-ws.org/Vol-1641/#AndersiM%C3%B8rch> .
+
+<http://ceur-ws.org/Vol-1641/#paper4> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1641/> ;
+    ns5:title "Towards a Future of Increasing End-User Development: Creating Empowered or Over-Burdened End Users?" ;
+    ns1:endPage 26 ;
+    ns1:numPages 5 ;
+    ns1:section <http://ceur-ws.org/Vol-1641/#Regularpapers> ;
+    ns1:startPage 22 ;
+    ns4:author <http://ceur-ws.org/Vol-1641/#MonicaiMaceli> .
+
+<http://ceur-ws.org/Vol-1641/#paper5> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1641/> ;
+    ns5:title "A Conceptual Framework For End-User Development in Ambient Intelligence" ;
+    ns1:endPage 31 ;
+    ns1:numPages 5 ;
+    ns1:section <http://ceur-ws.org/Vol-1641/#Regularpapers> ;
+    ns1:startPage 27 ;
+    ns4:author <http://ceur-ws.org/Vol-1641/#FedericoiCabitza> .
+
+<http://ceur-ws.org/Vol-1641/#paper6> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1641/> ;
+    ns5:title "The Role of Gamification in End-User Development" ;
+    ns1:endPage 38 ;
+    ns1:numPages 7 ;
+    ns1:section <http://ceur-ws.org/Vol-1641/#Regularpapers> ;
+    ns1:startPage 32 ;
+    ns4:author <http://ceur-ws.org/Vol-1641/#FrancescoiBenzi> .
+
+<http://ceur-ws.org/Vol-1641/#paper7> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1641/> ;
+    ns5:title "A Map is worth a Thousand Data: Requirements in Tertiary Human-Data Interaction to Foster Participation" ;
+    ns1:endPage 44 ;
+    ns1:numPages 6 ;
+    ns1:section <http://ceur-ws.org/Vol-1641/#Regularpapers> ;
+    ns1:startPage 39 ;
+    ns4:author <http://ceur-ws.org/Vol-1641/#AngelaiLocoro> .
+
+<http://ceur-ws.org/Vol-1641/#paper8> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1641/> ;
+    ns5:title "A Semiotic Approach to EUD for the Internet of Things" ;
+    ns1:endPage 51 ;
+    ns1:numPages 7 ;
+    ns1:section <http://ceur-ws.org/Vol-1641/#Regularpapers> ;
+    ns1:startPage 45 ;
+    ns4:author <http://ceur-ws.org/Vol-1641/#BarbaraiRitaiBarricelli> .
+
+<http://ceur-ws.org/Vol-1641/#paper9> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1641/> ;
+    ns5:title "User-Centered Event Data Modelling and Analytics" ;
+    ns1:endPage 58 ;
+    ns1:numPages 7 ;
+    ns1:section <http://ceur-ws.org/Vol-1641/#Regularpapers> ;
+    ns1:startPage 52 ;
+    ns4:author <http://ceur-ws.org/Vol-1641/#StefanoiValtolina> .
+
+<http://ceur-ws.org/Vol-1641/#Demopapers> a ns6:SessionEvent ;
+    ns6:partOf <http://ceur-ws.org/Vol-1641/> ;
+    ns5:title "Demo papers" .
+
+<http://ceur-ws.org/Vol-1641/#Regularpapers> a ns6:SessionEvent ;
+    ns6:partOf <http://ceur-ws.org/Vol-1641/> ;
+    ns5:title "Regular papers" .
+
+<http://ceur-ws.org/Vol-1641/> a ns6:Proceedings ;
+    ns6:hasPart <http://ceur-ws.org/Vol-1641/#paper1>,
+        <http://ceur-ws.org/Vol-1641/#paper10>,
+        <http://ceur-ws.org/Vol-1641/#paper11>,
+        <http://ceur-ws.org/Vol-1641/#paper12>,
+        <http://ceur-ws.org/Vol-1641/#paper2>,
+        <http://ceur-ws.org/Vol-1641/#paper3>,
+        <http://ceur-ws.org/Vol-1641/#paper4>,
+        <http://ceur-ws.org/Vol-1641/#paper5>,
+        <http://ceur-ws.org/Vol-1641/#paper6>,
+        <http://ceur-ws.org/Vol-1641/#paper7>,
+        <http://ceur-ws.org/Vol-1641/#paper8>,
+        <http://ceur-ws.org/Vol-1641/#paper9> ;
+    ns6:hasSession <http://ceur-ws.org/Vol-1641/#Demopapers>,
+        <http://ceur-ws.org/Vol-1641/#Regularpapers> ;
+    ns8:issued "2016-07-15T00:00:00+00:00"^^xsd:dateTime ;
+    ns1:presentedAt <http://ceur-ws.org/Vol-1641/#event> ;
     ns4:editor <http://ceur-ws.org/Vol-1641/#AndersiM%C3%B8rch>,
         <http://ceur-ws.org/Vol-1641/#AntonioiPiccinno>,
         <http://ceur-ws.org/Vol-1641/#BarbaraiRitaiBarricelli>,
         <http://ceur-ws.org/Vol-1641/#GerhardiFischer>,
         <http://ceur-ws.org/Vol-1641/#StefanoiValtolina> .
-
-<http://ceur-ws.org/Vol-1641/#AndersiM%C3%B8rch> a ns2:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/AndersiM%C3%B8rch> ;
-    ns2:name "Anders Mørch" .
-
-<http://ceur-ws.org/Vol-1641/#AntonioiPiccinno> a ns2:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/AntonioiPiccinno> ;
-    ns2:name "Antonio Piccinno" .
-
-<http://ceur-ws.org/Vol-1641/#BarbaraiRitaiBarricelli> a ns2:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/BarbaraiRitaiBarricelli> ;
-    ns2:name "Barbara Rita Barricelli" .
-
-<http://ceur-ws.org/Vol-1641/#GerhardiFischer> a ns2:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/GerhardiFischer> ;
-    ns2:name "Gerhard Fischer" .
-
-<http://ceur-ws.org/Vol-1641/#StefanoiValtolina> a ns2:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/StefanoiValtolina> ;
-    ns2:name "Stefano Valtolina" .
-
-<http://ceur-ws.org/Vol-1641/#event> a ns1:WorkshopEvent ;
-    ns1:hasLocation <http://dbpedia.org/resource/Spain> ;
-    ns1:hasPart <http://ceur-ws.org/Vol-1641/#part-ws> ;
-    ns1:isSubEventOf <http://ceur-ws.org/Vol-1641/#conf> ;
-    ns5:beginsAtDatetime "2015-05-26T00:00:00+00:00"^^xsd:dateTime ;
-    ns5:endsAtDatetime "2015-05-26T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:license "http://choosealicense.com/licenses/no-license/" ;
-    rdfs:seeAlso <http://ceur-ws.org/Vol-1640/#event> .
 

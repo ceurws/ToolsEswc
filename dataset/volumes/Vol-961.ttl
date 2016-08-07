@@ -1,35 +1,847 @@
-@prefix ns1: <http://www.w3.org/2002/07/owl#> .
-@prefix ns2: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns3: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns4: <http://purl.org/ontology/bibo/#> .
+@prefix ns1: <http://purl.org/ontology/bibo/#> .
+@prefix ns2: <http://www.w3.org/2002/07/owl#> .
+@prefix ns3: <http://xmlns.com/foaf/0.1/> .
+@prefix ns4: <http://data.semanticweb.org/ns/swc/ontology/#> .
 @prefix ns5: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns6: <http://purl.org/dc/elements/1.1/> .
-@prefix ns7: <http://xmlns.com/foaf/0.1/> .
+@prefix ns6: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
 @prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns9: <http://purl.org/dc/elements/1.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-961/> a ns2:Proceedings ;
+<http://ceur-ws.org/Vol-961/#%C3%85keiNyberg> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/%C3%85keiNyberg> ;
+    ns3:made <http://ceur-ws.org/Vol-961/#paper12> ;
+    ns3:name "Åke Nyberg" .
+
+<http://ceur-ws.org/Vol-961/#%C3%96rjaniGrape> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/%C3%96rjaniGrape> ;
+    ns3:made <http://ceur-ws.org/Vol-961/#paper34> ;
+    ns3:name "Örjan Grape" .
+
+<http://ceur-ws.org/Vol-961/#AlainiChauffaut> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/AlainiChauffaut> ;
+    ns3:made <http://ceur-ws.org/Vol-961/#paper23> ;
+    ns3:name "Alain Chauffaut" .
+
+<http://ceur-ws.org/Vol-961/#AlistairiSutcliffe> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/AlistairiSutcliffe> ;
+    ns3:made <http://ceur-ws.org/Vol-961/#paper24> ;
+    ns3:name "Alistair Sutcliffe" .
+
+<http://ceur-ws.org/Vol-961/#AndersiG.iNilsson> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/AndersiG.iNilsson> ;
+    ns3:made <http://ceur-ws.org/Vol-961/#paper4> ;
+    ns3:name "Anders G. Nilsson" .
+
+<http://ceur-ws.org/Vol-961/#AndreasiOberweis> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/AndreasiOberweis> ;
+    ns3:made <http://ceur-ws.org/Vol-961/#paper29> ;
+    ns3:name "Andreas Oberweis" .
+
+<http://ceur-ws.org/Vol-961/#AnitaiKollerbaur> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/AnitaiKollerbaur> ;
+    ns3:made <http://ceur-ws.org/Vol-961/#paper22> ;
+    ns3:name "Anita Kollerbaur" .
+
+<http://ceur-ws.org/Vol-961/#BerndiG.iWenzel> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/BerndiG.iWenzel> ;
+    ns3:made <http://ceur-ws.org/Vol-961/#paper11> ;
+    ns3:name "Bernd G. Wenzel" .
+
+<http://ceur-ws.org/Vol-961/#BerntiT.iBostr%C3%B6m> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/BerntiT.iBostr%C3%B6m> ;
+    ns3:made <http://ceur-ws.org/Vol-961/#paper10> ;
+    ns3:name "Bernt T. Boström" .
+
+<http://ceur-ws.org/Vol-961/#Bj%C3%B6rniSkjellaug> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/Bj%C3%B6rniSkjellaug> ;
+    ns3:made <http://ceur-ws.org/Vol-961/#paper16> ;
+    ns3:name "Björn Skjellaug" .
+
+<http://ceur-ws.org/Vol-961/#Bj%C3%B8rniIvariDanielsen> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/Bj%C3%B8rniIvariDanielsen> ;
+    ns3:made <http://ceur-ws.org/Vol-961/#paper8> ;
+    ns3:name "Bjørn Ivar Danielsen" .
+
+<http://ceur-ws.org/Vol-961/#ChristinaiLagerkvist> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/ChristinaiLagerkvist> ;
+    ns3:made <http://ceur-ws.org/Vol-961/#paper12> ;
+    ns3:name "Christina Lagerkvist" .
+
+<http://ceur-ws.org/Vol-961/#ChristineiBuors> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/ChristineiBuors> ;
+    ns3:made <http://ceur-ws.org/Vol-961/#paper26> ;
+    ns3:name "Christine Buors" .
+
+<http://ceur-ws.org/Vol-961/#CorineiCauvet> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/CorineiCauvet> ;
+    ns3:made <http://ceur-ws.org/Vol-961/#paper28> ;
+    ns3:name "Corine Cauvet" .
+
+<http://ceur-ws.org/Vol-961/#DickiSchefstr%C3%B6m> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/DickiSchefstr%C3%B6m> ;
+    ns3:made <http://ceur-ws.org/Vol-961/#paper15> ;
+    ns3:name "Dick Schefström" .
+
+<http://ceur-ws.org/Vol-961/#DirkiVermeir> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/DirkiVermeir> ;
+    ns3:made <http://ceur-ws.org/Vol-961/#paper6> ;
+    ns3:name "Dirk Vermeir" .
+
+<http://ceur-ws.org/Vol-961/#ElsiLaenens> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/ElsiLaenens> ;
+    ns3:made <http://ceur-ws.org/Vol-961/#paper6> ;
+    ns3:name "Els Laenens" .
+
+<http://ceur-ws.org/Vol-961/#EspeniBrodin> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/EspeniBrodin> ;
+    ns3:made <http://ceur-ws.org/Vol-961/#paper8> ;
+    ns3:name "Espen Brodin" .
+
+<http://ceur-ws.org/Vol-961/#FilippoiCacace> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/FilippoiCacace> ;
+    ns3:made <http://ceur-ws.org/Vol-961/#paper41> ;
+    ns3:name "Filippo Cacace" .
+
+<http://ceur-ws.org/Vol-961/#FrancoisiStaes> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/FrancoisiStaes> ;
+    ns3:made <http://ceur-ws.org/Vol-961/#paper6> ;
+    ns3:name "Francois Staes" .
+
+<http://ceur-ws.org/Vol-961/#FrankiSch%C3%B6nthaler> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/FrankiSch%C3%B6nthaler> ;
+    ns3:made <http://ceur-ws.org/Vol-961/#paper29> ;
+    ns3:name "Frank Schönthaler" .
+
+<http://ceur-ws.org/Vol-961/#FranziEngelmann> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/FranziEngelmann> ;
+    ns3:made <http://ceur-ws.org/Vol-961/#paper42> ;
+    ns3:name "Franz Engelmann" .
+
+<http://ceur-ws.org/Vol-961/#FranzivaniAssche> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/FranzivaniAssche> ;
+    ns3:made <http://ceur-ws.org/Vol-961/#paper13> ;
+    ns3:name "Franz van Assche" .
+
+<http://ceur-ws.org/Vol-961/#FredrikiRunnquist> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/FredrikiRunnquist> ;
+    ns3:made <http://ceur-ws.org/Vol-961/#paper34> ;
+    ns3:name "Fredrik Runnquist" .
+
+<http://ceur-ws.org/Vol-961/#G%C3%B6raniLustig> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/G%C3%B6raniLustig> ;
+    ns3:made <http://ceur-ws.org/Vol-961/#paper30-1> ;
+    ns3:name "Göran Lustig" .
+
+<http://ceur-ws.org/Vol-961/#G%C3%BCnteriR.iKoch> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/G%C3%BCnteriR.iKoch> ;
+    ns3:made <http://ceur-ws.org/Vol-961/#paper42> ;
+    ns3:name "Günter R. Koch" .
+
+<http://ceur-ws.org/Vol-961/#GeorgiGottlob> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/GeorgiGottlob> ;
+    ns3:made <http://ceur-ws.org/Vol-961/#paper41> ;
+    ns3:name "Georg Gottlob" .
+
+<http://ceur-ws.org/Vol-961/#GeorgiLausen> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/GeorgiLausen> ;
+    ns3:made <http://ceur-ws.org/Vol-961/#paper29> ;
+    ns3:name "Georg Lausen" .
+
+<http://ceur-ws.org/Vol-961/#GianfrancoiLamperti> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/GianfrancoiLamperti> ;
+    ns3:made <http://ceur-ws.org/Vol-961/#paper41> ;
+    ns3:name "Gianfranco Lamperti" .
+
+<http://ceur-ws.org/Vol-961/#GianiMiMedri> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/GianiMiMedri> ;
+    ns3:made <http://ceur-ws.org/Vol-961/#paper36> ;
+    ns3:name "Gian M Medri" .
+
+<http://ceur-ws.org/Vol-961/#GunnariNilsson> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/GunnariNilsson> ;
+    ns3:made <http://ceur-ws.org/Vol-961/#paper31> ;
+    ns3:name "Gunnar Nilsson" .
+
+<http://ceur-ws.org/Vol-961/#HannuiKangassalo> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/HannuiKangassalo> ;
+    ns3:made <http://ceur-ws.org/Vol-961/#paper27> ;
+    ns3:name "Hannu Kangassalo" .
+
+<http://ceur-ws.org/Vol-961/#Ing-MarieiStenstr%C3%B6m> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/Ing-MarieiStenstr%C3%B6m> ;
+    ns3:made <http://ceur-ws.org/Vol-961/#paper9> ;
+    ns3:name "Ing-Marie Stenström" .
+
+<http://ceur-ws.org/Vol-961/#IngemariLindqvist> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/IngemariLindqvist> ;
+    ns3:made <http://ceur-ws.org/Vol-961/#paper5> ;
+    ns3:name "Ingemar Lindqvist" .
+
+<http://ceur-ws.org/Vol-961/#JalaliMatini> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/JalaliMatini> ;
+    ns3:made <http://ceur-ws.org/Vol-961/#paper19> ;
+    ns3:name "Jalal Matini" .
+
+<http://ceur-ws.org/Vol-961/#JaniHernb%C3%A4ck> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/JaniHernb%C3%A4ck> ;
+    ns3:made <http://ceur-ws.org/Vol-961/#paper5> ;
+    ns3:name "Jan Hernbäck" .
+
+<http://ceur-ws.org/Vol-961/#JanisiBubenkoijr.> a ns3:Person ;
+    ns5:affiliation "" ;
+    ns2:sameAs <http://ceur-ws.org/persons/JanisiBubenkoijr.> ;
+    ns3:name "Janis Bubenko jr." .
+
+<http://ceur-ws.org/Vol-961/#JanisiStirna> a ns3:Person ;
+    ns1:place <http://dbpedia.org/resource/Sweden> ;
+    ns5:affiliation "* Stockholm University, Department of Computer and Systems Sciences, Stockholm" ;
+    ns2:sameAs <http://ceur-ws.org/persons/JanisiStirna> ;
+    ns3:name "Janis Stirna" .
+
+<http://ceur-ws.org/Vol-961/#JaroiPotucek> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/JaroiPotucek> ;
+    ns3:made <http://ceur-ws.org/Vol-961/#paper33> ;
+    ns3:name "Jaro Potucek" .
+
+<http://ceur-ws.org/Vol-961/#Jean-LouisiVignaud> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/Jean-LouisiVignaud> ;
+    ns3:made <http://ceur-ws.org/Vol-961/#paper26> ;
+    ns3:name "Jean-Louis Vignaud" .
+
+<http://ceur-ws.org/Vol-961/#Jean-YvesiLignat> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/Jean-YvesiLignat> ;
+    ns3:made <http://ceur-ws.org/Vol-961/#paper28> ;
+    ns3:name "Jean-Yves Lignat" .
+
+<http://ceur-ws.org/Vol-961/#JohniSnijders> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/JohniSnijders> ;
+    ns3:made <http://ceur-ws.org/Vol-961/#paper6> ;
+    ns3:name "John Snijders" .
+
+<http://ceur-ws.org/Vol-961/#KalleiLyytinen> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/KalleiLyytinen> ;
+    ns3:made <http://ceur-ws.org/Vol-961/#paper20> ;
+    ns3:name "Kalle Lyytinen" .
+
+<http://ceur-ws.org/Vol-961/#KariiHakkarainen> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/KariiHakkarainen> ;
+    ns3:made <http://ceur-ws.org/Vol-961/#paper40> ;
+    ns3:name "Kari Hakkarainen" .
+
+<http://ceur-ws.org/Vol-961/#KariiK%C3%A4ns%C3%A4l%C3%A4> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/KariiK%C3%A4ns%C3%A4l%C3%A4> ;
+    ns3:made <http://ceur-ws.org/Vol-961/#paper17> ;
+    ns3:name "Kari Känsälä" .
+
+<http://ceur-ws.org/Vol-961/#KariiRossi> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/KariiRossi> ;
+    ns3:made <http://ceur-ws.org/Vol-961/#paper18> ;
+    ns3:name "Kari Rossi" .
+
+<http://ceur-ws.org/Vol-961/#KariiSmolander> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/KariiSmolander> ;
+    ns3:made <http://ceur-ws.org/Vol-961/#paper20> ;
+    ns3:name "Kari Smolander" .
+
+<http://ceur-ws.org/Vol-961/#KariniBeck> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/KariniBeck> ;
+    ns3:made <http://ceur-ws.org/Vol-961/#paper11> ;
+    ns3:name "Karin Beck" .
+
+<http://ceur-ws.org/Vol-961/#KimiPortman> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/KimiPortman> ;
+    ns3:made <http://ceur-ws.org/Vol-961/#paper18> ;
+    ns3:name "Kim Portman" .
+
+<http://ceur-ws.org/Vol-961/#KorbinianiKern> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/KorbinianiKern> ;
+    ns3:made <http://ceur-ws.org/Vol-961/#paper11> ;
+    ns3:name "Korbinian Kern" .
+
+<http://ceur-ws.org/Vol-961/#LarsiHemingstam> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/LarsiHemingstam> ;
+    ns3:made <http://ceur-ws.org/Vol-961/#paper25> ;
+    ns3:name "Lars Hemingstam" .
+
+<http://ceur-ws.org/Vol-961/#LaurenceiRouille> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/LaurenceiRouille> ;
+    ns3:made <http://ceur-ws.org/Vol-961/#paper23> ;
+    ns3:name "Laurence Rouille" .
+
+<http://ceur-ws.org/Vol-961/#LetiziaiTanca> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/LetiziaiTanca> ;
+    ns3:made <http://ceur-ws.org/Vol-961/#paper41> ;
+    ns3:name "Letizia Tanca" .
+
+<http://ceur-ws.org/Vol-961/#LillianiDahl> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/LillianiDahl> ;
+    ns3:made <http://ceur-ws.org/Vol-961/#paper14> ;
+    ns3:name "Lillian Dahl" .
+
+<http://ceur-ws.org/Vol-961/#LoreiM.iKern-Bausch> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/LoreiM.iKern-Bausch> ;
+    ns3:made <http://ceur-ws.org/Vol-961/#paper11> ;
+    ns3:name "Lore M. Kern-Bausch" .
+
+<http://ceur-ws.org/Vol-961/#LuigiiLavazza> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/LuigiiLavazza> ;
+    ns3:made <http://ceur-ws.org/Vol-961/#paper41> ;
+    ns3:name "Luigi Lavazza" .
+
+<http://ceur-ws.org/Vol-961/#MarkkuiOivo> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/MarkkuiOivo> ;
+    ns3:made <http://ceur-ws.org/Vol-961/#paper40> ;
+    ns3:name "Markku Oivo" .
+
+<http://ceur-ws.org/Vol-961/#MichaeliA.iKingsbury> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/MichaeliA.iKingsbury> ;
+    ns3:made <http://ceur-ws.org/Vol-961/#paper2> ;
+    ns3:name "Michael A. Kingsbury" .
+
+<http://ceur-ws.org/Vol-961/#MikaeliKindborg> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/MikaeliKindborg> ;
+    ns3:made <http://ceur-ws.org/Vol-961/#paper22> ;
+    ns3:name "Mikael Kindborg" .
+
+<http://ceur-ws.org/Vol-961/#MilesiWelter> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/MilesiWelter> ;
+    ns3:made <http://ceur-ws.org/Vol-961/#paper32> ;
+    ns3:name "Miles Welter" .
+
+<http://ceur-ws.org/Vol-961/#MokraneiBouzeghoub> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/MokraneiBouzeghoub> ;
+    ns3:made <http://ceur-ws.org/Vol-961/#paper39> ;
+    ns3:name "Mokrane Bouzeghoub" .
+
+<http://ceur-ws.org/Vol-961/#PatrickiBosc> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/PatrickiBosc> ;
+    ns3:made <http://ceur-ws.org/Vol-961/#paper23> ;
+    ns3:name "Patrick Bosc" .
+
+<http://ceur-ws.org/Vol-961/#PauliD.iMcDaniel> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/PauliD.iMcDaniel> ;
+    ns3:made <http://ceur-ws.org/Vol-961/#paper7> ;
+    ns3:name "Paul D. McDaniel" .
+
+<http://ceur-ws.org/Vol-961/#PauliLindgreen> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/PauliLindgreen> ;
+    ns3:made <http://ceur-ws.org/Vol-961/#paper21> ;
+    ns3:name "Paul Lindgreen" .
+
+<http://ceur-ws.org/Vol-961/#PericlesiLoucopoulos> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/PericlesiLoucopoulos> ;
+    ns3:made <http://ceur-ws.org/Vol-961/#paper38> ;
+    ns3:name "Pericles Loucopoulos" .
+
+<http://ceur-ws.org/Vol-961/#PetraiLuchner> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/PetraiLuchner> ;
+    ns3:made <http://ceur-ws.org/Vol-961/#paper42> ;
+    ns3:name "Petra Luchner" .
+
+<http://ceur-ws.org/Vol-961/#R.E.M.iChampion> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/R.E.M.iChampion> ;
+    ns3:made <http://ceur-ws.org/Vol-961/#paper38> ;
+    ns3:name "R.E.M. Champion" .
+
+<http://ceur-ws.org/Vol-961/#RobertoiV.iZicari> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/RobertoiV.iZicari> ;
+    ns3:made <http://ceur-ws.org/Vol-961/#paper41> ;
+    ns3:name "Roberto V. Zicari" .
+
+<http://ceur-ws.org/Vol-961/#RudiiOlsson> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/RudiiOlsson> ;
+    ns3:made <http://ceur-ws.org/Vol-961/#paper14> ;
+    ns3:name "Rudi Olsson" .
+
+<http://ceur-ws.org/Vol-961/#SimoniHolloway> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/SimoniHolloway> ;
+    ns3:made <http://ceur-ws.org/Vol-961/#paper30> ;
+    ns3:name "Simon Holloway" .
+
+<http://ceur-ws.org/Vol-961/#StefanoiCeri> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/StefanoiCeri> ;
+    ns3:made <http://ceur-ws.org/Vol-961/#paper41> ;
+    ns3:name "Stefano Ceri" .
+
+<http://ceur-ws.org/Vol-961/#StefanoiCrespi-Reghizzi> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/StefanoiCrespi-Reghizzi> ;
+    ns3:made <http://ceur-ws.org/Vol-961/#paper41> ;
+    ns3:name "Stefano Crespi-Reghizzi" .
+
+<http://ceur-ws.org/Vol-961/#TapaniiKinnula> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/TapaniiKinnula> ;
+    ns3:made <http://ceur-ws.org/Vol-961/#paper19> ;
+    ns3:name "Tapani Kinnula" .
+
+<http://ceur-ws.org/Vol-961/#ThomasiLamhed> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/ThomasiLamhed> ;
+    ns3:made <http://ceur-ws.org/Vol-961/#paper22> ;
+    ns3:name "Thomas Lamhed" .
+
+<http://ceur-ws.org/Vol-961/#TiboriN%C3%A9meth> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/TiboriN%C3%A9meth> ;
+    ns3:made <http://ceur-ws.org/Vol-961/#paper29> ;
+    ns3:name "Tibor Németh" .
+
+<http://ceur-ws.org/Vol-961/#TorsteniBergkvist> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/TorsteniBergkvist> ;
+    ns3:made <http://ceur-ws.org/Vol-961/#paper3> ;
+    ns3:name "Torsten Bergkvist" .
+
+<http://ceur-ws.org/Vol-961/#Veli-PekkaiTahvanainen> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/Veli-PekkaiTahvanainen> ;
+    ns3:made <http://ceur-ws.org/Vol-961/#paper20> ;
+    ns3:name "Veli-Pekka Tahvanainen" .
+
+<http://ceur-ws.org/Vol-961/#WolffriediStucky> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/WolffriediStucky> ;
+    ns3:made <http://ceur-ws.org/Vol-961/#paper29> ;
+    ns3:name "Wolffried Stucky" .
+
+<http://ceur-ws.org/Vol-961/#event> a ns4:WorkshopEvent ;
+    ns4:hasLocation <http://dbpedia.org/resource/Sweden> ;
+    ns4:hasPart <http://ceur-ws.org/Vol-961/#part-CASE> ;
+    ns4:isSubEventOf <http://ceur-ws.org/Vol-961/#conf> ;
+    ns7:beginsAtDatetime "1989-05-09T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:endsAtDatetime "1989-05-11T00:00:00+00:00"^^xsd:dateTime ;
+    ns9:license "http://choosealicense.com/licenses/no-license/" .
+
+<http://ceur-ws.org/Vol-961/#BusinessSystems> a ns4:SessionEvent ;
+    ns4:partOf <http://ceur-ws.org/Vol-961/> ;
+    ns6:title "Business Systems" .
+
+<http://ceur-ws.org/Vol-961/#ColetteiRolland> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/ColetteiRolland> ;
+    ns3:made <http://ceur-ws.org/Vol-961/#paper1>,
+        <http://ceur-ws.org/Vol-961/#paper28> ;
+    ns3:name "Colette Rolland" .
+
+<http://ceur-ws.org/Vol-961/#EskiliSwende> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/EskiliSwende> ;
+    ns3:made <http://ceur-ws.org/Vol-961/#paper35>,
+        <http://ceur-ws.org/Vol-961/#paper9> ;
+    ns3:name "Eskil Swende" .
+
+<http://ceur-ws.org/Vol-961/#OpeningKeynote> a ns4:SessionEvent ;
+    ns4:partOf <http://ceur-ws.org/Vol-961/> ;
+    ns6:title "Opening Keynote" .
+
+<http://ceur-ws.org/Vol-961/#SystemsDevelopmentModels> a ns4:SessionEvent ;
+    ns4:partOf <http://ceur-ws.org/Vol-961/> ;
+    ns6:title "Systems Development Models" .
+
+<http://ceur-ws.org/Vol-961/#TuomasiIhme> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/TuomasiIhme> ;
+    ns3:made <http://ceur-ws.org/Vol-961/#paper37>,
+        <http://ceur-ws.org/Vol-961/#paper40> ;
+    ns3:name "Tuomas Ihme" .
+
+<http://ceur-ws.org/Vol-961/#paper1> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-961/> ;
+    ns6:title "On the Future of Modelling - Why Current CASE Tools Insist on Supporting 20 Years Old Methods and Techniques" ;
+    ns1:section <http://ceur-ws.org/Vol-961/#OpeningKeynote> ;
+    ns5:author <http://ceur-ws.org/Vol-961/#ColetteiRolland> .
+
+<http://ceur-ws.org/Vol-961/#paper10> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-961/> ;
+    ns6:title "Information Systems Development Supporting Methodologies with Computerized Tools" ;
+    ns1:section <http://ceur-ws.org/Vol-961/#ToolsandMethods> ;
+    ns5:author <http://ceur-ws.org/Vol-961/#BerntiT.iBostr%C3%B6m> .
+
+<http://ceur-ws.org/Vol-961/#paper13> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-961/> ;
+    ns6:title "On the Future of CASE Tools" ;
+    ns1:section <http://ceur-ws.org/Vol-961/#Keynote> ;
+    ns5:author <http://ceur-ws.org/Vol-961/#FranzivaniAssche> .
+
+<http://ceur-ws.org/Vol-961/#paper15> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-961/> ;
+    ns6:title "On Posteriori Integration of Software Tools" ;
+    ns1:section <http://ceur-ws.org/Vol-961/#CASEToolStructures> ;
+    ns5:author <http://ceur-ws.org/Vol-961/#DickiSchefstr%C3%B6m> .
+
+<http://ceur-ws.org/Vol-961/#paper16> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-961/> ;
+    ns6:title "IB - An Information Bus: A Multilayered Information Base Interface for Remote Applications" ;
+    ns1:section <http://ceur-ws.org/Vol-961/#CASEToolStructures> ;
+    ns5:author <http://ceur-ws.org/Vol-961/#Bj%C3%B6rniSkjellaug> .
+
+<http://ceur-ws.org/Vol-961/#paper17> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-961/> ;
+    ns6:title "Loosely Integrated Sets of CASE tools: Our Experience" ;
+    ns1:section <http://ceur-ws.org/Vol-961/#CASEToolStructures> ;
+    ns5:author <http://ceur-ws.org/Vol-961/#KariiK%C3%A4ns%C3%A4l%C3%A4> .
+
+<http://ceur-ws.org/Vol-961/#paper2> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-961/> ;
+    ns6:title "Systems Development: Basic Flaws in the Current Culture - Ideas for Rectifying Some of the Problems" ;
+    ns1:section <http://ceur-ws.org/Vol-961/#OnProblemsinSystemsDevelopment> ;
+    ns5:author <http://ceur-ws.org/Vol-961/#MichaeliA.iKingsbury> .
+
+<http://ceur-ws.org/Vol-961/#paper21> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-961/> ;
+    ns6:title "The Concepts Behind A Systemateque" ;
+    ns1:section <http://ceur-ws.org/Vol-961/#BusinessSystems> ;
+    ns5:author <http://ceur-ws.org/Vol-961/#PauliLindgreen> .
+
+<http://ceur-ws.org/Vol-961/#paper24> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-961/> ;
+    ns6:title "CASE Tools and the Human Computer Interface: Implications for Designers" ;
+    ns1:section <http://ceur-ws.org/Vol-961/#ManMachineInterface> ;
+    ns5:author <http://ceur-ws.org/Vol-961/#AlistairiSutcliffe> .
+
+<http://ceur-ws.org/Vol-961/#paper25> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-961/> ;
+    ns6:title "FRAME: A Concept for Documentation at ABB Data" ;
+    ns1:section <http://ceur-ws.org/Vol-961/#ManMachineInterface> ;
+    ns5:author <http://ceur-ws.org/Vol-961/#LarsiHemingstam> .
+
+<http://ceur-ws.org/Vol-961/#paper27> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-961/> ;
+    ns6:title "COMIC: A System for Conceptual Modelling and Information Construction" ;
+    ns1:section <http://ceur-ws.org/Vol-961/#Modelling> ;
+    ns5:author <http://ceur-ws.org/Vol-961/#HannuiKangassalo> .
+
+<http://ceur-ws.org/Vol-961/#paper3> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-961/> ;
+    ns6:title "The mistakes - where systems development doesn't support business idea!" ;
+    ns1:section <http://ceur-ws.org/Vol-961/#OnProblemsinSystemsDevelopment> ;
+    ns5:author <http://ceur-ws.org/Vol-961/#TorsteniBergkvist> .
+
+<http://ceur-ws.org/Vol-961/#paper30> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-961/> ;
+    ns6:title "Organisational Implications Caused by the Fourth Generation Environment" ;
+    ns1:section <http://ceur-ws.org/Vol-961/#Keynote> ;
+    ns5:author <http://ceur-ws.org/Vol-961/#SimoniHolloway> .
+
+<http://ceur-ws.org/Vol-961/#paper30-1> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-961/> ;
+    ns6:title "How CASE Tools and Methods Relate to Each Other" ;
+    ns1:section <http://ceur-ws.org/Vol-961/#CASEToDareOrNotTo> ;
+    ns5:author <http://ceur-ws.org/Vol-961/#G%C3%B6raniLustig> .
+
+<http://ceur-ws.org/Vol-961/#paper31> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-961/> ;
+    ns6:title "The Good CASE" ;
+    ns1:section <http://ceur-ws.org/Vol-961/#CASEToDareOrNotTo> ;
+    ns5:author <http://ceur-ws.org/Vol-961/#GunnariNilsson> .
+
+<http://ceur-ws.org/Vol-961/#paper32> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-961/> ;
+    ns6:title "Application Development Trends and Directions" ;
+    ns1:section <http://ceur-ws.org/Vol-961/#CASEToDareOrNotTo> ;
+    ns5:author <http://ceur-ws.org/Vol-961/#MilesiWelter> .
+
+<http://ceur-ws.org/Vol-961/#paper33> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-961/> ;
+    ns6:title "CASE Tools in an IRM Environment" ;
+    ns1:section <http://ceur-ws.org/Vol-961/#InformationResourceManagementinPractice> ;
+    ns5:author <http://ceur-ws.org/Vol-961/#JaroiPotucek> .
+
+<http://ceur-ws.org/Vol-961/#paper35> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-961/> ;
+    ns6:title "IRMA - Information Resource Management Architecture: A Data-driven Method Used in Planning the Overall System Architecture" ;
+    ns1:section <http://ceur-ws.org/Vol-961/#InformationResourceManagementinPractice> ;
+    ns5:author <http://ceur-ws.org/Vol-961/#EskiliSwende> .
+
+<http://ceur-ws.org/Vol-961/#paper36> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-961/> ;
+    ns6:title "The Role of Knowledge Based Systems to Enhance User Participation in the System Development Process" ;
+    ns1:section <http://ceur-ws.org/Vol-961/#KnowledgeBasedSystems> ;
+    ns5:author <http://ceur-ws.org/Vol-961/#GianiMiMedri> .
+
+<http://ceur-ws.org/Vol-961/#paper37> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-961/> ;
+    ns6:title "A Knowledge-based Support System for the Reuse of Structured Specifications and Designs of Embedded Computer Systems" ;
+    ns1:section <http://ceur-ws.org/Vol-961/#KnowledgeBasedSystems> ;
+    ns5:author <http://ceur-ws.org/Vol-961/#TuomasiIhme> .
+
+<http://ceur-ws.org/Vol-961/#paper39> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-961/> ;
+    ns6:title "An Expert System for Semantic and Relational Database Design" ;
+    ns1:section <http://ceur-ws.org/Vol-961/#KnowledgeBasedSystems> ;
+    ns5:author <http://ceur-ws.org/Vol-961/#MokraneiBouzeghoub> .
+
+<http://ceur-ws.org/Vol-961/#paper4> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-961/> ;
+    ns6:title "Information Systems Development: A Frame Of Reference and Classifications" ;
+    ns1:section <http://ceur-ws.org/Vol-961/#CASEinTheoryandPractice> ;
+    ns5:author <http://ceur-ws.org/Vol-961/#AndersiG.iNilsson> .
+
+<http://ceur-ws.org/Vol-961/#paper7> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-961/> ;
+    ns6:title "Using PSL/PSA to Model Information System Planning for The United States Department of the Army Headquarters" ;
+    ns1:section <http://ceur-ws.org/Vol-961/#CASEinTheoryandPractice> ;
+    ns5:author <http://ceur-ws.org/Vol-961/#PauliD.iMcDaniel> .
+
+<http://ceur-ws.org/Vol-961/#Keynote> a ns4:SessionEvent ;
+    ns4:partOf <http://ceur-ws.org/Vol-961/> ;
+    ns6:title "Keynote" .
+
+<http://ceur-ws.org/Vol-961/#OnProblemsinSystemsDevelopment> a ns4:SessionEvent ;
+    ns4:partOf <http://ceur-ws.org/Vol-961/> ;
+    ns6:title "On Problems in Systems Development" .
+
+<http://ceur-ws.org/Vol-961/#ToolComparisonMethods> a ns4:SessionEvent ;
+    ns4:partOf <http://ceur-ws.org/Vol-961/> ;
+    ns6:title "Tool Comparison Methods" .
+
+<http://ceur-ws.org/Vol-961/#paper12> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-961/> ;
+    ns6:title "How to Succeed with Modern Tools such as the CASE tool \"Deft\" on the Macintosh" ;
+    ns1:section <http://ceur-ws.org/Vol-961/#ToolsandMethods> ;
+    ns5:author <http://ceur-ws.org/Vol-961/#%C3%85keiNyberg>,
+        <http://ceur-ws.org/Vol-961/#ChristinaiLagerkvist> .
+
+<http://ceur-ws.org/Vol-961/#paper14> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-961/> ;
+    ns6:title "The Relationship between Models, Methods and System Development Tools (i.e. Case Tools and 4GL)" ;
+    ns1:section <http://ceur-ws.org/Vol-961/#SystemsDevelopmentModels> ;
+    ns5:author <http://ceur-ws.org/Vol-961/#LillianiDahl>,
+        <http://ceur-ws.org/Vol-961/#RudiiOlsson> .
+
+<http://ceur-ws.org/Vol-961/#paper18> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-961/> ;
+    ns6:title "PCTE - Solving CASE Data Integration" ;
+    ns1:section <http://ceur-ws.org/Vol-961/#CASEToolStructures> ;
+    ns5:author <http://ceur-ws.org/Vol-961/#KariiRossi>,
+        <http://ceur-ws.org/Vol-961/#KimiPortman> .
+
+<http://ceur-ws.org/Vol-961/#paper19> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-961/> ;
+    ns6:title "How to Test and Compare CASE tools" ;
+    ns1:section <http://ceur-ws.org/Vol-961/#ToolComparisonMethods> ;
+    ns5:author <http://ceur-ws.org/Vol-961/#JalaliMatini>,
+        <http://ceur-ws.org/Vol-961/#TapaniiKinnula> .
+
+<http://ceur-ws.org/Vol-961/#paper26> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-961/> ;
+    ns6:title "Edition of Structured Documents in a Hypertext Environment" ;
+    ns1:section <http://ceur-ws.org/Vol-961/#ManMachineInterface> ;
+    ns5:author <http://ceur-ws.org/Vol-961/#ChristineiBuors>,
+        <http://ceur-ws.org/Vol-961/#Jean-LouisiVignaud> .
+
+<http://ceur-ws.org/Vol-961/#paper34> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-961/> ;
+    ns6:title "IRM as a Basis for Long Range Planning and Systems Coordination" ;
+    ns1:section <http://ceur-ws.org/Vol-961/#InformationResourceManagementinPractice> ;
+    ns5:author <http://ceur-ws.org/Vol-961/#%C3%96rjaniGrape>,
+        <http://ceur-ws.org/Vol-961/#FredrikiRunnquist> .
+
+<http://ceur-ws.org/Vol-961/#paper38> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-961/> ;
+    ns6:title "Knowledge-Based Support for Requirements Engineering" ;
+    ns1:section <http://ceur-ws.org/Vol-961/#KnowledgeBasedSystems> ;
+    ns5:author <http://ceur-ws.org/Vol-961/#PericlesiLoucopoulos>,
+        <http://ceur-ws.org/Vol-961/#R.E.M.iChampion> .
+
+<http://ceur-ws.org/Vol-961/#paper5> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-961/> ;
+    ns6:title "A Framework for Use and Classification of CASE Tools in Systems Analysis and a Strategy for Implementation" ;
+    ns1:section <http://ceur-ws.org/Vol-961/#CASEinTheoryandPractice> ;
+    ns5:author <http://ceur-ws.org/Vol-961/#IngemariLindqvist>,
+        <http://ceur-ws.org/Vol-961/#JaniHernb%C3%A4ck> .
+
+<http://ceur-ws.org/Vol-961/#paper8> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-961/> ;
+    ns6:title "Foundation - The Broad Tool" ;
+    ns1:section <http://ceur-ws.org/Vol-961/#ToolsandMethods> ;
+    ns5:author <http://ceur-ws.org/Vol-961/#Bj%C3%B8rniIvariDanielsen>,
+        <http://ceur-ws.org/Vol-961/#EspeniBrodin> .
+
+<http://ceur-ws.org/Vol-961/#paper9> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-961/> ;
+    ns6:title "SVEA - A User Driven and Data Driven System Development Method" ;
+    ns1:section <http://ceur-ws.org/Vol-961/#ToolsandMethods> ;
+    ns5:author <http://ceur-ws.org/Vol-961/#EskiliSwende>,
+        <http://ceur-ws.org/Vol-961/#Ing-MarieiStenstr%C3%B6m> .
+
+<http://ceur-ws.org/Vol-961/#CASEToDareOrNotTo> a ns4:SessionEvent ;
+    ns4:partOf <http://ceur-ws.org/Vol-961/> ;
+    ns6:title "CASE - To Dare Or Not To" .
+
+<http://ceur-ws.org/Vol-961/#InformationResourceManagementinPractice> a ns4:SessionEvent ;
+    ns4:partOf <http://ceur-ws.org/Vol-961/> ;
+    ns6:title "Information Resource Management in Practice" .
+
+<http://ceur-ws.org/Vol-961/#Modelling> a ns4:SessionEvent ;
+    ns4:partOf <http://ceur-ws.org/Vol-961/> ;
+    ns6:title "Modelling" .
+
+<http://ceur-ws.org/Vol-961/#paper20> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-961/> ;
+    ns6:title "Modelling CASE Environments in Systems Development" ;
+    ns1:section <http://ceur-ws.org/Vol-961/#ToolComparisonMethods> ;
+    ns5:author <http://ceur-ws.org/Vol-961/#KalleiLyytinen>,
+        <http://ceur-ws.org/Vol-961/#KariiSmolander>,
+        <http://ceur-ws.org/Vol-961/#Veli-PekkaiTahvanainen> .
+
+<http://ceur-ws.org/Vol-961/#paper22> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-961/> ;
+    ns6:title "Lexivisual Interfaces - The New Look" ;
+    ns1:section <http://ceur-ws.org/Vol-961/#ManMachineInterface> ;
+    ns5:author <http://ceur-ws.org/Vol-961/#AnitaiKollerbaur>,
+        <http://ceur-ws.org/Vol-961/#MikaeliKindborg>,
+        <http://ceur-ws.org/Vol-961/#ThomasiLamhed> .
+
+<http://ceur-ws.org/Vol-961/#paper23> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-961/> ;
+    ns6:title "A Generic Model for Dialog Specification" ;
+    ns1:section <http://ceur-ws.org/Vol-961/#ManMachineInterface> ;
+    ns5:author <http://ceur-ws.org/Vol-961/#AlainiChauffaut>,
+        <http://ceur-ws.org/Vol-961/#LaurenceiRouille>,
+        <http://ceur-ws.org/Vol-961/#PatrickiBosc> .
+
+<http://ceur-ws.org/Vol-961/#paper28> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-961/> ;
+    ns6:title "Information System Engineering: The RUBIS System" ;
+    ns1:section <http://ceur-ws.org/Vol-961/#Modelling> ;
+    ns5:author <http://ceur-ws.org/Vol-961/#ColetteiRolland>,
+        <http://ceur-ws.org/Vol-961/#CorineiCauvet>,
+        <http://ceur-ws.org/Vol-961/#Jean-YvesiLignat> .
+
+<http://ceur-ws.org/Vol-961/#paper40> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-961/> ;
+    ns6:title "A Knowledge-Based Support System for Embedded Computer Software Analysis" ;
+    ns1:section <http://ceur-ws.org/Vol-961/#KnowledgeBasedSystems> ;
+    ns5:author <http://ceur-ws.org/Vol-961/#KariiHakkarainen>,
+        <http://ceur-ws.org/Vol-961/#MarkkuiOivo>,
+        <http://ceur-ws.org/Vol-961/#TuomasiIhme> .
+
+<http://ceur-ws.org/Vol-961/#paper42> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-961/> ;
+    ns6:title "Glueing CASE Tools Together in a Heterogeneous CASE Environment" ;
+    ns1:section <http://ceur-ws.org/Vol-961/#ToolsandMethods> ;
+    ns5:author <http://ceur-ws.org/Vol-961/#FranziEngelmann>,
+        <http://ceur-ws.org/Vol-961/#G%C3%BCnteriR.iKoch>,
+        <http://ceur-ws.org/Vol-961/#PetraiLuchner> .
+
+<http://ceur-ws.org/Vol-961/#CASEToolStructures> a ns4:SessionEvent ;
+    ns4:partOf <http://ceur-ws.org/Vol-961/> ;
+    ns6:title "CASE Tool Structures" .
+
+<http://ceur-ws.org/Vol-961/#CASEinTheoryandPractice> a ns4:SessionEvent ;
+    ns4:partOf <http://ceur-ws.org/Vol-961/> ;
+    ns6:title "CASE in Theory and Practice" .
+
+<http://ceur-ws.org/Vol-961/#paper11> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-961/> ;
+    ns6:title "Computer Aided Database Design" ;
+    ns1:section <http://ceur-ws.org/Vol-961/#ToolsandMethods> ;
+    ns5:author <http://ceur-ws.org/Vol-961/#BerndiG.iWenzel>,
+        <http://ceur-ws.org/Vol-961/#KariniBeck>,
+        <http://ceur-ws.org/Vol-961/#KorbinianiKern>,
+        <http://ceur-ws.org/Vol-961/#LoreiM.iKern-Bausch> .
+
+<http://ceur-ws.org/Vol-961/#paper6> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-961/> ;
+    ns6:title "A Case Study in Object-Oriented Knowledge-Base Design Using the KIWI System" ;
+    ns1:section <http://ceur-ws.org/Vol-961/#CASEinTheoryandPractice> ;
+    ns5:author <http://ceur-ws.org/Vol-961/#DirkiVermeir>,
+        <http://ceur-ws.org/Vol-961/#ElsiLaenens>,
+        <http://ceur-ws.org/Vol-961/#FrancoisiStaes>,
+        <http://ceur-ws.org/Vol-961/#JohniSnijders> .
+
+<http://ceur-ws.org/Vol-961/#KnowledgeBasedSystems> a ns4:SessionEvent ;
+    ns4:partOf <http://ceur-ws.org/Vol-961/> ;
+    ns6:title "Knowledge Based Systems" .
+
+<http://ceur-ws.org/Vol-961/#ManMachineInterface> a ns4:SessionEvent ;
+    ns4:partOf <http://ceur-ws.org/Vol-961/> ;
+    ns6:title "Man-Machine Interface" .
+
+<http://ceur-ws.org/Vol-961/#paper29> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-961/> ;
+    ns6:title "The INCOME Approach for Conceptual Modelling and Prototyping of Information Systems" ;
+    ns1:section <http://ceur-ws.org/Vol-961/#Modelling> ;
+    ns5:author <http://ceur-ws.org/Vol-961/#AndreasiOberweis>,
+        <http://ceur-ws.org/Vol-961/#FrankiSch%C3%B6nthaler>,
+        <http://ceur-ws.org/Vol-961/#GeorgiLausen>,
+        <http://ceur-ws.org/Vol-961/#TiboriN%C3%A9meth>,
+        <http://ceur-ws.org/Vol-961/#WolffriediStucky> .
+
+<http://ceur-ws.org/Vol-961/#ToolsandMethods> a ns4:SessionEvent ;
+    ns4:partOf <http://ceur-ws.org/Vol-961/> ;
+    ns6:title "Tools and Methods" .
+
+<http://ceur-ws.org/Vol-961/#paper41> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-961/> ;
+    ns6:title "ALGRES: An Extended Relational Database System for the Specification and Prototyping of Complex Applications" ;
+    ns1:section <http://ceur-ws.org/Vol-961/#ToolsandMethods> ;
+    ns5:author <http://ceur-ws.org/Vol-961/#FilippoiCacace>,
+        <http://ceur-ws.org/Vol-961/#GeorgiGottlob>,
+        <http://ceur-ws.org/Vol-961/#GianfrancoiLamperti>,
+        <http://ceur-ws.org/Vol-961/#LetiziaiTanca>,
+        <http://ceur-ws.org/Vol-961/#LuigiiLavazza>,
+        <http://ceur-ws.org/Vol-961/#RobertoiV.iZicari>,
+        <http://ceur-ws.org/Vol-961/#StefanoiCeri>,
+        <http://ceur-ws.org/Vol-961/#StefanoiCrespi-Reghizzi> .
+
+<http://ceur-ws.org/Vol-961/> a ns4:Proceedings ;
+    ns4:hasPart <http://ceur-ws.org/Vol-961/#paper1>,
+        <http://ceur-ws.org/Vol-961/#paper10>,
+        <http://ceur-ws.org/Vol-961/#paper11>,
+        <http://ceur-ws.org/Vol-961/#paper12>,
+        <http://ceur-ws.org/Vol-961/#paper13>,
+        <http://ceur-ws.org/Vol-961/#paper14>,
+        <http://ceur-ws.org/Vol-961/#paper15>,
+        <http://ceur-ws.org/Vol-961/#paper16>,
+        <http://ceur-ws.org/Vol-961/#paper17>,
+        <http://ceur-ws.org/Vol-961/#paper18>,
+        <http://ceur-ws.org/Vol-961/#paper19>,
+        <http://ceur-ws.org/Vol-961/#paper2>,
+        <http://ceur-ws.org/Vol-961/#paper20>,
+        <http://ceur-ws.org/Vol-961/#paper21>,
+        <http://ceur-ws.org/Vol-961/#paper22>,
+        <http://ceur-ws.org/Vol-961/#paper23>,
+        <http://ceur-ws.org/Vol-961/#paper24>,
+        <http://ceur-ws.org/Vol-961/#paper25>,
+        <http://ceur-ws.org/Vol-961/#paper26>,
+        <http://ceur-ws.org/Vol-961/#paper27>,
+        <http://ceur-ws.org/Vol-961/#paper28>,
+        <http://ceur-ws.org/Vol-961/#paper29>,
+        <http://ceur-ws.org/Vol-961/#paper3>,
+        <http://ceur-ws.org/Vol-961/#paper30>,
+        <http://ceur-ws.org/Vol-961/#paper30-1>,
+        <http://ceur-ws.org/Vol-961/#paper31>,
+        <http://ceur-ws.org/Vol-961/#paper32>,
+        <http://ceur-ws.org/Vol-961/#paper33>,
+        <http://ceur-ws.org/Vol-961/#paper34>,
+        <http://ceur-ws.org/Vol-961/#paper35>,
+        <http://ceur-ws.org/Vol-961/#paper36>,
+        <http://ceur-ws.org/Vol-961/#paper37>,
+        <http://ceur-ws.org/Vol-961/#paper38>,
+        <http://ceur-ws.org/Vol-961/#paper39>,
+        <http://ceur-ws.org/Vol-961/#paper4>,
+        <http://ceur-ws.org/Vol-961/#paper40>,
+        <http://ceur-ws.org/Vol-961/#paper41>,
+        <http://ceur-ws.org/Vol-961/#paper42>,
+        <http://ceur-ws.org/Vol-961/#paper5>,
+        <http://ceur-ws.org/Vol-961/#paper6>,
+        <http://ceur-ws.org/Vol-961/#paper7>,
+        <http://ceur-ws.org/Vol-961/#paper8>,
+        <http://ceur-ws.org/Vol-961/#paper9> ;
+    ns4:hasSession <http://ceur-ws.org/Vol-961/#BusinessSystems>,
+        <http://ceur-ws.org/Vol-961/#CASEToDareOrNotTo>,
+        <http://ceur-ws.org/Vol-961/#CASEToolStructures>,
+        <http://ceur-ws.org/Vol-961/#CASEinTheoryandPractice>,
+        <http://ceur-ws.org/Vol-961/#InformationResourceManagementinPractice>,
+        <http://ceur-ws.org/Vol-961/#Keynote>,
+        <http://ceur-ws.org/Vol-961/#KnowledgeBasedSystems>,
+        <http://ceur-ws.org/Vol-961/#ManMachineInterface>,
+        <http://ceur-ws.org/Vol-961/#Modelling>,
+        <http://ceur-ws.org/Vol-961/#OnProblemsinSystemsDevelopment>,
+        <http://ceur-ws.org/Vol-961/#OpeningKeynote>,
+        <http://ceur-ws.org/Vol-961/#SystemsDevelopmentModels>,
+        <http://ceur-ws.org/Vol-961/#ToolComparisonMethods>,
+        <http://ceur-ws.org/Vol-961/#ToolsandMethods> ;
     ns8:issued "2013-02-17T00:00:00+00:00"^^xsd:dateTime ;
-    ns4:presentedAt <http://ceur-ws.org/Vol-961/#event> ;
+    ns1:presentedAt <http://ceur-ws.org/Vol-961/#event> ;
     ns5:editor <http://ceur-ws.org/Vol-961/#JanisiBubenkoijr.>,
         <http://ceur-ws.org/Vol-961/#JanisiStirna> .
-
-<http://ceur-ws.org/Vol-961/#JanisiBubenkoijr.> a ns7:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/JanisiBubenkoijr.> ;
-    ns7:name "Janis Bubenko jr." .
-
-<http://ceur-ws.org/Vol-961/#JanisiStirna> a ns7:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/JanisiStirna> ;
-    ns7:name "Janis Stirna" .
-
-<http://ceur-ws.org/Vol-961/#event> a ns2:WorkshopEvent ;
-    ns2:hasLocation <http://dbpedia.org/resource/Sweden> ;
-    ns2:hasPart <http://ceur-ws.org/Vol-961/#part-CASE> ;
-    ns2:isSubEventOf <http://ceur-ws.org/Vol-961/#conf> ;
-    ns3:beginsAtDatetime "1989-05-09T00:00:00+00:00"^^xsd:dateTime ;
-    ns3:endsAtDatetime "1989-05-11T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:license "http://choosealicense.com/licenses/no-license/" .
 

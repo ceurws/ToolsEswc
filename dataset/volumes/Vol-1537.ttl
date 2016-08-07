@@ -1,35 +1,136 @@
-@prefix ns1: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns2: <http://www.w3.org/2002/07/owl#> .
-@prefix ns3: <http://xmlns.com/foaf/0.1/> .
-@prefix ns4: <http://purl.org/dc/elements/1.1/> .
-@prefix ns5: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns6: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns7: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns8: <http://purl.org/ontology/bibo/#> .
+@prefix ns1: <http://purl.org/ontology/bibo/#> .
+@prefix ns2: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns3: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns4: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns5: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns6: <http://purl.org/dc/elements/1.1/> .
+@prefix ns7: <http://www.w3.org/2002/07/owl#> .
+@prefix ns8: <http://xmlns.com/foaf/0.1/> .
+@prefix ns9: <http://purl.org/NET/c4dm/timeline.owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1537/> a ns7:Proceedings ;
-    ns6:issued "2015-12-17T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:presentedAt <http://ceur-ws.org/Vol-1537/#event> ;
-    ns5:editor <http://ceur-ws.org/Vol-1537/#PeteriWerneriEklund>,
+<http://ceur-ws.org/Vol-1537/#AlisaiSotsenko> a ns8:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/AlisaiSotsenko> ;
+    ns8:made <http://ceur-ws.org/Vol-1537/#paper4> ;
+    ns8:name "Alisa Sotsenko" .
+
+<http://ceur-ws.org/Vol-1537/#GabriellaiA.iB.iBarros> a ns8:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/GabriellaiA.iB.iBarros> ;
+    ns8:made <http://ceur-ws.org/Vol-1537/#paper3> ;
+    ns8:name "Gabriella A. B. Barros" .
+
+<http://ceur-ws.org/Vol-1537/#GiuliaiLanzirotti> a ns8:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/GiuliaiLanzirotti> ;
+    ns8:made <http://ceur-ws.org/Vol-1537/#paper7> ;
+    ns8:name "Giulia Lanzirotti" .
+
+<http://ceur-ws.org/Vol-1537/#HyeoniKyeongiHwang> a ns8:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/HyeoniKyeongiHwang> ;
+    ns8:made <http://ceur-ws.org/Vol-1537/#paper5> ;
+    ns8:name "Hyeon Kyeong Hwang" .
+
+<http://ceur-ws.org/Vol-1537/#MarciNgovel> a ns8:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/MarciNgovel> ;
+    ns8:made <http://ceur-ws.org/Vol-1537/#paper6> ;
+    ns8:name "Marc Ngovel" .
+
+<http://ceur-ws.org/Vol-1537/#MarcoiSicrea> a ns8:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/MarcoiSicrea> ;
+    ns8:made <http://ceur-ws.org/Vol-1537/#paper2> ;
+    ns8:name "Marco Sicrea" .
+
+<http://ceur-ws.org/Vol-1537/#PeteriWerneriEklund> a ns8:Person ;
+    ns2:affiliation "" ;
+    ns7:sameAs <http://ceur-ws.org/persons/PeteriWerneriEklund> ;
+    ns8:name "Peter Werner Eklund" .
+
+<http://ceur-ws.org/Vol-1537/#RebekehiWegener> a ns8:Person ;
+    ns2:affiliation "" ;
+    ns7:sameAs <http://ceur-ws.org/persons/RebekehiWegener> ;
+    ns8:name "Rebekeh Wegener" .
+
+<http://ceur-ws.org/Vol-1537/#VaggelikiiVlachostergiou> a ns8:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/VaggelikiiVlachostergiou> ;
+    ns8:made <http://ceur-ws.org/Vol-1537/#paper1> ;
+    ns8:name "Vaggeliki Vlachostergiou" .
+
+<http://ceur-ws.org/Vol-1537/#event> a ns3:WorkshopEvent ;
+    ns3:hasLocation <http://dbpedia.org/resource/Euro_gold_and_silver_commemorative_coins> ;
+    ns3:hasPart <http://ceur-ws.org/Vol-1537/#part-CONTEXT> ;
+    ns3:isSubEventOf <http://ceur-ws.org/Vol-1537/#conf> ;
+    ns9:beginsAtDatetime "2015-11-02T00:00:00+00:00"^^xsd:dateTime ;
+    ns9:endsAtDatetime "2015-11-02T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:license "http://creativecommons.org/publicdomain/zero/1.0/" .
+
+<http://ceur-ws.org/Vol-1537/#paper1> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1537/> ;
+    ns5:title "A Revisit to the Incorporation of Context - Awareness in Affective Computing Systems" ;
+    ns1:endPage 8 ;
+    ns1:numPages 8 ;
+    ns1:startPage 1 ;
+    ns2:author <http://ceur-ws.org/Vol-1537/#VaggelikiiVlachostergiou> .
+
+<http://ceur-ws.org/Vol-1537/#paper2> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1537/> ;
+    ns5:title "Affective Expression in Computer Generated Music and its Effect on Player Experience" ;
+    ns1:endPage 14 ;
+    ns1:numPages 6 ;
+    ns1:startPage 9 ;
+    ns2:author <http://ceur-ws.org/Vol-1537/#MarcoiSicrea> .
+
+<http://ceur-ws.org/Vol-1537/#paper3> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1537/> ;
+    ns5:title "Data Games: Towards Generating Content using the Real World" ;
+    ns1:endPage 22 ;
+    ns1:numPages 8 ;
+    ns1:startPage 15 ;
+    ns2:author <http://ceur-ws.org/Vol-1537/#GabriellaiA.iB.iBarros> .
+
+<http://ceur-ws.org/Vol-1537/#paper4> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1537/> ;
+    ns5:title "Exploring Different Use Cases for a Rich Context Model for Mobile Applications" ;
+    ns1:endPage 31 ;
+    ns1:numPages 9 ;
+    ns1:startPage 23 ;
+    ns2:author <http://ceur-ws.org/Vol-1537/#AlisaiSotsenko> .
+
+<http://ceur-ws.org/Vol-1537/#paper5> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1537/> ;
+    ns5:title "Contextualizing bookmarks: An approach based on user context to improve organization and retrieval of bookmarks" ;
+    ns1:endPage 40 ;
+    ns1:numPages 10 ;
+    ns1:startPage 31 ;
+    ns2:author <http://ceur-ws.org/Vol-1537/#HyeoniKyeongiHwang> .
+
+<http://ceur-ws.org/Vol-1537/#paper6> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1537/> ;
+    ns5:title "Contextualized Search by Nearness" ;
+    ns1:endPage 49 ;
+    ns1:numPages 9 ;
+    ns1:startPage 41 ;
+    ns2:author <http://ceur-ws.org/Vol-1537/#MarciNgovel> .
+
+<http://ceur-ws.org/Vol-1537/#paper7> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1537/> ;
+    ns5:title "Context as a Structure of Emergence: An Inquiry from a Phenomenological Point of View" ;
+    ns1:endPage 57 ;
+    ns1:numPages 9 ;
+    ns1:startPage 49 ;
+    ns2:author <http://ceur-ws.org/Vol-1537/#GiuliaiLanzirotti> .
+
+<http://ceur-ws.org/Vol-1537/> a ns3:Proceedings ;
+    ns3:hasPart <http://ceur-ws.org/Vol-1537/#paper1>,
+        <http://ceur-ws.org/Vol-1537/#paper2>,
+        <http://ceur-ws.org/Vol-1537/#paper3>,
+        <http://ceur-ws.org/Vol-1537/#paper4>,
+        <http://ceur-ws.org/Vol-1537/#paper5>,
+        <http://ceur-ws.org/Vol-1537/#paper6>,
+        <http://ceur-ws.org/Vol-1537/#paper7> ;
+    ns4:issued "2015-12-17T00:00:00+00:00"^^xsd:dateTime ;
+    ns1:presentedAt <http://ceur-ws.org/Vol-1537/#event> ;
+    ns2:editor <http://ceur-ws.org/Vol-1537/#PeteriWerneriEklund>,
         <http://ceur-ws.org/Vol-1537/#RebekehiWegener> .
-
-<http://ceur-ws.org/Vol-1537/#PeteriWerneriEklund> a ns3:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/PeteriWerneriEklund> ;
-    ns3:name "Peter Werner Eklund" .
-
-<http://ceur-ws.org/Vol-1537/#RebekehiWegener> a ns3:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/RebekehiWegener> ;
-    ns3:name "Rebekeh Wegener" .
-
-<http://ceur-ws.org/Vol-1537/#event> a ns7:WorkshopEvent ;
-    ns7:hasLocation <http://dbpedia.org/resource/Euro_gold_and_silver_commemorative_coins> ;
-    ns7:hasPart <http://ceur-ws.org/Vol-1537/#part-CONTEXT> ;
-    ns7:isSubEventOf <http://ceur-ws.org/Vol-1537/#conf> ;
-    ns1:beginsAtDatetime "2015-11-02T00:00:00+00:00"^^xsd:dateTime ;
-    ns1:endsAtDatetime "2015-11-02T00:00:00+00:00"^^xsd:dateTime ;
-    ns4:license "http://creativecommons.org/publicdomain/zero/1.0/" .
 

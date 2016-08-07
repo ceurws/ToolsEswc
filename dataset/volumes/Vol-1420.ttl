@@ -1,40 +1,532 @@
-@prefix ns1: <http://www.w3.org/2002/07/owl#> .
-@prefix ns2: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns3: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns4: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns5: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns6: <http://purl.org/ontology/bibo/#> .
-@prefix ns7: <http://xmlns.com/foaf/0.1/> .
+@prefix ns1: <http://xmlns.com/foaf/0.1/> .
+@prefix ns2: <http://www.w3.org/2002/07/owl#> .
+@prefix ns3: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns4: <http://purl.org/ontology/bibo/#> .
+@prefix ns5: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns6: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
 @prefix ns8: <http://purl.org/dc/elements/1.1/> .
+@prefix ns9: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1420/> a ns5:Proceedings ;
-    ns4:issued "2015-08-14T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:presentedAt <http://ceur-ws.org/Vol-1420/#event> ;
-    ns2:editor <http://ceur-ws.org/Vol-1420/#FabrizioiMariaiMaggi>,
-        <http://ceur-ws.org/Vol-1420/#PeepiK%C3%BCngas>,
-        <http://ceur-ws.org/Vol-1420/#RaimundasiMatulevi> .
+<http://ceur-ws.org/Vol-1420/#%C3%89liseiDegrave> a ns1:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/%C3%89liseiDegrave> ;
+    ns1:made <http://ceur-ws.org/Vol-1420/#scbp-paper2> ;
+    ns1:name "Élise Degrave" .
 
-<http://ceur-ws.org/Vol-1420/#FabrizioiMariaiMaggi> a ns7:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/FabrizioiMariaiMaggi> ;
-    ns7:name "Fabrizio Maria Maggi" .
+<http://ceur-ws.org/Vol-1420/#Albertasi%C4%8Caplinskas> a ns1:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/Albertasi%C4%8Caplinskas> ;
+    ns1:made <http://ceur-ws.org/Vol-1420/#ws-keynote> ;
+    ns1:name "Albertas Čaplinskas" .
 
-<http://ceur-ws.org/Vol-1420/#PeepiK%C3%BCngas> a ns7:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/PeepiK%C3%BCngas> ;
-    ns7:name "Peep Küngas" .
+<http://ceur-ws.org/Vol-1420/#AlexeyiKashevnik> a ns1:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/AlexeyiKashevnik> ;
+    ns1:made <http://ceur-ws.org/Vol-1420/#ilog-paper5.pdf> ;
+    ns1:name "Alexey Kashevnik" .
 
-<http://ceur-ws.org/Vol-1420/#RaimundasiMatulevi> a ns7:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/RaimundasiMatulevi> ;
-    ns7:name "Raimundas Matulevi" .
+<http://ceur-ws.org/Vol-1420/#AlfrediZimmermann> a ns1:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/AlfrediZimmermann> ;
+    ns1:made <http://ceur-ws.org/Vol-1420/#ilog-paper2> ;
+    ns1:name "Alfred Zimmermann" .
 
-<http://ceur-ws.org/Vol-1420/#event> a ns5:WorkshopEvent ;
-    ns5:hasLocation <http://dbpedia.org/resource/Estonia> ;
-    ns5:hasPart <http://ceur-ws.org/Vol-1420/#part-ws> ;
-    ns5:isSubEventOf <http://ceur-ws.org/Vol-1420/#conf> ;
-    ns3:beginsAtDatetime "2015-08-26T00:00:00+00:00"^^xsd:dateTime ;
-    ns3:endsAtDatetime "2015-08-28T00:00:00+00:00"^^xsd:dateTime ;
+<http://ceur-ws.org/Vol-1420/#AndreasiOroszi> a ns1:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/AndreasiOroszi> ;
+    ns1:made <http://ceur-ws.org/Vol-1420/#ilog-paper5.pdf> ;
+    ns1:name "Andreas Oroszi" .
+
+<http://ceur-ws.org/Vol-1420/#AndriusiValatavi%26ccaron> a ns1:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/AndriusiValatavi%26ccaron> ;
+    ns1:made <http://ceur-ws.org/Vol-1420/#dc-paper2> ;
+    ns1:name "Andrius Valatavi&ccaron" .
+
+<http://ceur-ws.org/Vol-1420/#Antanasi%C4%8Cenys> a ns1:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/Antanasi%C4%8Cenys> ;
+    ns1:made <http://ceur-ws.org/Vol-1420/#dc-paper4> ;
+    ns1:name "Antanas Čenys" .
+
+<http://ceur-ws.org/Vol-1420/#AudriusiLopata> a ns1:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/AudriusiLopata> ;
+    ns1:made <http://ceur-ws.org/Vol-1420/#dc-paper1> ;
+    ns1:name "Audrius Lopata" .
+
+<http://ceur-ws.org/Vol-1420/#Audron%C4%97iLupeikien%C4%97> a ns1:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/Audron%C4%97iLupeikien%C4%97> ;
+    ns1:made <http://ceur-ws.org/Vol-1420/#ws-keynote> ;
+    ns1:name "Audronė Lupeikienė" .
+
+<http://ceur-ws.org/Vol-1420/#Beno%C3%AEtiVanderose> a ns1:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/Beno%C3%AEtiVanderose> ;
+    ns1:made <http://ceur-ws.org/Vol-1420/#scbp-paper2> ;
+    ns1:name "Benoît Vanderose" .
+
+<http://ceur-ws.org/Vol-1420/#BirgeriLantow> a ns1:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/BirgeriLantow> ;
+    ns1:made <http://ceur-ws.org/Vol-1420/#wois-paper3> ;
+    ns1:name "Birger Lantow" .
+
+<http://ceur-ws.org/Vol-1420/#Bj%C3%B6rniJohansson> a ns1:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/Bj%C3%B6rniJohansson> ;
+    ns1:made <http://ceur-ws.org/Vol-1420/#ilog-paper4> ;
+    ns1:name "Björn Johansson" .
+
+<http://ceur-ws.org/Vol-1420/#ChristianiSchweda> a ns1:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/ChristianiSchweda> ;
+    ns1:made <http://ceur-ws.org/Vol-1420/#ilog-paper2> ;
+    ns1:name "Christian Schweda" .
+
+<http://ceur-ws.org/Vol-1420/#ClaraiBassano> a ns1:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/ClaraiBassano> ;
+    ns1:made <http://ceur-ws.org/Vol-1420/#ilog-paper6> ;
+    ns1:name "Clara Bassano" .
+
+<http://ceur-ws.org/Vol-1420/#DierkiJugel> a ns1:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/DierkiJugel> ;
+    ns1:made <http://ceur-ws.org/Vol-1420/#ilog-paper2> ;
+    ns1:name "Dierk Jugel" .
+
+<http://ceur-ws.org/Vol-1420/#DirkiStamer> a ns1:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/DirkiStamer> ;
+    ns1:made <http://ceur-ws.org/Vol-1420/#ilog-paper7> ;
+    ns1:name "Dirk Stamer" .
+
+<http://ceur-ws.org/Vol-1420/#DoganiAlkan> a ns1:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/DoganiAlkan> ;
+    ns1:made <http://ceur-ws.org/Vol-1420/#ilog-paper4> ;
+    ns1:name "Dogan Alkan" .
+
+<http://ceur-ws.org/Vol-1420/#Egl%C4%97iRadvil%C4%97> a ns1:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/Egl%C4%97iRadvil%C4%97> ;
+    ns1:made <http://ceur-ws.org/Vol-1420/#dc-paper4> ;
+    ns1:name "Eglė Radvilė" .
+
+<http://ceur-ws.org/Vol-1420/#FabrizioiMariaiMaggi> a ns1:Person ;
+    ns6:affiliation "" ;
+    ns2:sameAs <http://ceur-ws.org/persons/FabrizioiMariaiMaggi> ;
+    ns1:name "Fabrizio Maria Maggi" .
+
+<http://ceur-ws.org/Vol-1420/#GeorgeiBarakat> a ns1:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/GeorgeiBarakat> ;
+    ns1:made <http://ceur-ws.org/Vol-1420/#wois-paper1> ;
+    ns1:name "George Barakat" .
+
+<http://ceur-ws.org/Vol-1420/#GintautasiDzemyda> a ns1:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/GintautasiDzemyda> ;
+    ns1:made <http://ceur-ws.org/Vol-1420/#ws-keynote> ;
+    ns1:name "Gintautas Dzemyda" .
+
+<http://ceur-ws.org/Vol-1420/#GiuseppeiD%27Aniello> a ns1:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/GiuseppeiD%27Aniello> ;
+    ns1:made <http://ceur-ws.org/Vol-1420/#ilog-paper6> ;
+    ns1:name "Giuseppe D'Aniello" .
+
+<http://ceur-ws.org/Vol-1420/#HasaniKo%C3%A7> a ns1:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/HasaniKo%C3%A7> ;
+    ns1:made <http://ceur-ws.org/Vol-1420/#wois-paper3> ;
+    ns1:name "Hasan Koç" .
+
+<http://ceur-ws.org/Vol-1420/#HeiTan> a ns1:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/HeiTan> ;
+    ns1:made <http://ceur-ws.org/Vol-1420/#wois-paper1> ;
+    ns1:name "He Tan" .
+
+<http://ceur-ws.org/Vol-1420/#LinaiNemurait%C4%97> a ns1:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/LinaiNemurait%C4%97> ;
+    ns1:made <http://ceur-ws.org/Vol-1420/#dc-paper3> ;
+    ns1:name "Lina Nemuraitė" .
+
+<http://ceur-ws.org/Vol-1420/#LuigiiRarita> a ns1:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/LuigiiRarita> ;
+    ns1:made <http://ceur-ws.org/Vol-1420/#ilog-paper6> ;
+    ns1:name "Luigi Rarita" .
+
+<http://ceur-ws.org/Vol-1420/#MariaiVincenzaiCiasullo> a ns1:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/MariaiVincenzaiCiasullo> ;
+    ns1:made <http://ceur-ws.org/Vol-1420/#ilog-paper6> ;
+    ns1:name "Maria Vincenza Ciasullo" .
+
+<http://ceur-ws.org/Vol-1420/#MarioiSinko> a ns1:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/MarioiSinko> ;
+    ns1:made <http://ceur-ws.org/Vol-1420/#ilog-paper5.pdf> ;
+    ns1:name "Mario Sinko" .
+
+<http://ceur-ws.org/Vol-1420/#MariusiLiutvinavi%26ccaron> a ns1:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/MariusiLiutvinavi%26ccaron> ;
+    ns1:made <http://ceur-ws.org/Vol-1420/#dc-paper1> ;
+    ns1:name "Marius Liutvinavi&ccaron" .
+
+<http://ceur-ws.org/Vol-1420/#MatteoiGaeta> a ns1:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/MatteoiGaeta> ;
+    ns1:made <http://ceur-ws.org/Vol-1420/#ilog-paper6> ;
+    ns1:name "Matteo Gaeta" .
+
+<http://ceur-ws.org/Vol-1420/#MichaeliM%C3%B6hring> a ns1:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/MichaeliM%C3%B6hring> ;
+    ns1:made <http://ceur-ws.org/Vol-1420/#ilog-paper2> ;
+    ns1:name "Michael Möhring" .
+
+<http://ceur-ws.org/Vol-1420/#NajiiHabra> a ns1:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/NajiiHabra> ;
+    ns1:made <http://ceur-ws.org/Vol-1420/#scbp-paper2> ;
+    ns1:name "Naji Habra" .
+
+<http://ceur-ws.org/Vol-1420/#OlgaiKurasova> a ns1:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/OlgaiKurasova> ;
+    ns1:made <http://ceur-ws.org/Vol-1420/#ws-keynote> ;
+    ns1:name "Olga Kurasova" .
+
+<http://ceur-ws.org/Vol-1420/#PeepiK%C3%BCngas> a ns1:Person ;
+    ns6:affiliation "" ;
+    ns2:sameAs <http://ceur-ws.org/persons/PeepiK%C3%BCngas> ;
+    ns1:name "Peep Küngas" .
+
+<http://ceur-ws.org/Vol-1420/#RaineriSchmidt> a ns1:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/RaineriSchmidt> ;
+    ns1:made <http://ceur-ws.org/Vol-1420/#ilog-paper2> ;
+    ns1:name "Rainer Schmidt" .
+
+<http://ceur-ws.org/Vol-1420/#RobiniCarlsson> a ns1:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/RobiniCarlsson> ;
+    ns1:made <http://ceur-ws.org/Vol-1420/#ilog-paper4> ;
+    ns1:name "Robin Carlsson" .
+
+<http://ceur-ws.org/Vol-1420/#TatianaiLevashova> a ns1:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/TatianaiLevashova> ;
+    ns1:made <http://ceur-ws.org/Vol-1420/#wois-paper2> ;
+    ns1:name "Tatiana Levashova" .
+
+<http://ceur-ws.org/Vol-1420/#ThorsteniKrebs> a ns1:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/ThorsteniKrebs> ;
+    ns1:made <http://ceur-ws.org/Vol-1420/#ilog-paper5.pdf> ;
+    ns1:name "Thorsten Krebs" .
+
+<http://ceur-ws.org/Vol-1420/#VeronikaiZeiner> a ns1:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/VeronikaiZeiner> ;
+    ns1:made <http://ceur-ws.org/Vol-1420/#ilog-paper7> ;
+    ns1:name "Veronika Zeiner" .
+
+<http://ceur-ws.org/Vol-1420/#ViktoriMedvedev> a ns1:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/ViktoriMedvedev> ;
+    ns1:made <http://ceur-ws.org/Vol-1420/#ws-keynote> ;
+    ns1:name "Viktor Medvedev" .
+
+<http://ceur-ws.org/Vol-1420/#VladimiriTarasov> a ns1:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/VladimiriTarasov> ;
+    ns1:made <http://ceur-ws.org/Vol-1420/#wois-paper1> ;
+    ns1:name "Vladimir Tarasov" .
+
+<http://ceur-ws.org/Vol-1420/#Voldemarasi%26Zcaron> a ns1:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/Voldemarasi%26Zcaron> ;
+    ns1:made <http://ceur-ws.org/Vol-1420/#dc-paper3> ;
+    ns1:name "Voldemaras &Zcaron" .
+
+<http://ceur-ws.org/Vol-1420/#event> a ns3:WorkshopEvent ;
+    ns3:hasLocation <http://dbpedia.org/resource/Estonia> ;
+    ns3:hasPart <http://ceur-ws.org/Vol-1420/#part-BIR-WS> ;
+    ns3:isSubEventOf <http://ceur-ws.org/Vol-1420/#conf> ;
+    ns7:beginsAtDatetime "2015-08-26T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:endsAtDatetime "2015-08-28T00:00:00+00:00"^^xsd:dateTime ;
     ns8:license "http://creativecommons.org/publicdomain/zero/1.0/" .
+
+<http://ceur-ws.org/Vol-1420/#itkus> a ns1:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/itkus> ;
+    ns1:made <http://ceur-ws.org/Vol-1420/#dc-paper3> ;
+    ns1:name "itkus" .
+
+<http://ceur-ws.org/Vol-1420/#MariteiKirikova> a ns1:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/MariteiKirikova> ;
+    ns1:made <http://ceur-ws.org/Vol-1420/#ilog-paper3>,
+        <http://ceur-ws.org/Vol-1420/#scbp-paper1> ;
+    ns1:name "Marite Kirikova" .
+
+<http://ceur-ws.org/Vol-1420/#NavediAhmed> a ns1:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/NavediAhmed> ;
+    ns1:made <http://ceur-ws.org/Vol-1420/#ilog-paper3>,
+        <http://ceur-ws.org/Vol-1420/#scbp-paper1> ;
+    ns1:name "Naved Ahmed" .
+
+<http://ceur-ws.org/Vol-1420/#NikolayiShilov> a ns1:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/NikolayiShilov> ;
+    ns1:made <http://ceur-ws.org/Vol-1420/#ilog-paper5.pdf>,
+        <http://ceur-ws.org/Vol-1420/#wois-paper2> ;
+    ns1:name "Nikolay Shilov" .
+
+<http://ceur-ws.org/Vol-1420/#WorkshopKeynote> a ns3:SessionEvent ;
+    ns3:partOf <http://ceur-ws.org/Vol-1420/> ;
+    ns5:title "Workshop Keynote" .
+
+<http://ceur-ws.org/Vol-1420/#AlexanderiSmirnov> a ns1:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/AlexanderiSmirnov> ;
+    ns1:made <http://ceur-ws.org/Vol-1420/#ilog-keynote>,
+        <http://ceur-ws.org/Vol-1420/#ilog-paper5.pdf>,
+        <http://ceur-ws.org/Vol-1420/#wois-paper2> ;
+    ns1:name "Alexander Smirnov" .
+
+<http://ceur-ws.org/Vol-1420/#RaimundasiMatulevi%26ccaron> a ns1:Person ;
+    ns6:affiliation "&ccaron;ius" ;
+    ns2:sameAs <http://ceur-ws.org/persons/RaimundasiMatulevi%26ccaron> ;
+    ns1:made <http://ceur-ws.org/Vol-1420/#ilog-paper3>,
+        <http://ceur-ws.org/Vol-1420/#scbp-paper1> ;
+    ns1:name "Raimundas Matulevi&ccaron" .
+
+<http://ceur-ws.org/Vol-1420/#SCBP15WorkshoponSecurityandComplianceinBusinessProcesses> a ns3:SessionEvent ;
+    ns3:partOf <http://ceur-ws.org/Vol-1420/> ;
+    ns5:title "SCBP'15: Workshop on Security and Compliance in Business Processes" .
+
+<http://ceur-ws.org/Vol-1420/#dc-paper2> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1420/> ;
+    ns5:title "Enterprise Software System Integration Using Autonomic Computing" ;
+    ns4:endPage 163 ;
+    ns4:numPages 8 ;
+    ns4:section <http://ceur-ws.org/Vol-1420/#DoctoralConsortium> ;
+    ns4:startPage 156 ;
+    ns6:author <http://ceur-ws.org/Vol-1420/#AndriusiValatavi%26ccaron>,
+        <http://ceur-ws.org/Vol-1420/#SauliusiGudas> .
+
+<http://ceur-ws.org/Vol-1420/#dc-paper4> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1420/> ;
+    ns5:title "Research: What Eyes and Brain Reveals about Visual Performance in the Curved Display" ;
+    ns4:endPage 180 ;
+    ns4:numPages 8 ;
+    ns4:section <http://ceur-ws.org/Vol-1420/#DoctoralConsortium> ;
+    ns4:startPage 173 ;
+    ns6:author <http://ceur-ws.org/Vol-1420/#Antanasi%C4%8Cenys>,
+        <http://ceur-ws.org/Vol-1420/#Egl%C4%97iRadvil%C4%97> .
+
+<http://ceur-ws.org/Vol-1420/#ilog-keynote> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1420/> ;
+    ns5:title "Context-Oriented Knowledge Management for Decision Support in Business Networks: Modern Requirements and Challenges" ;
+    ns4:endPage 23 ;
+    ns4:numPages 15 ;
+    ns4:section <http://ceur-ws.org/Vol-1420/#ILOG158thWorkshoponInformationLogisticsandKnowledgeSupply> ;
+    ns4:startPage 9 ;
+    ns6:author <http://ceur-ws.org/Vol-1420/#AlexanderiSmirnov>,
+        <http://ceur-ws.org/Vol-1420/#KurtiSandkuhl> .
+
+<http://ceur-ws.org/Vol-1420/#SauliusiGudas> a ns1:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/SauliusiGudas> ;
+    ns1:made <http://ceur-ws.org/Vol-1420/#dc-paper1>,
+        <http://ceur-ws.org/Vol-1420/#dc-paper2>,
+        <http://ceur-ws.org/Vol-1420/#ilog-paper3>,
+        <http://ceur-ws.org/Vol-1420/#scbp-paper1> ;
+    ns1:name "Saulius Gudas" .
+
+<http://ceur-ws.org/Vol-1420/#WOIS153rdWorkshoponOntologiesandInformationSystems> a ns3:SessionEvent ;
+    ns3:partOf <http://ceur-ws.org/Vol-1420/> ;
+    ns5:title "WOIS'15: 3rd Workshop on Ontologies and Information Systems" .
+
+<http://ceur-ws.org/Vol-1420/#dc-paper1> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1420/> ;
+    ns5:title "Knowledge Based Modeling of Financial Decision Support Systems" ;
+    ns4:endPage 155 ;
+    ns4:numPages 8 ;
+    ns4:section <http://ceur-ws.org/Vol-1420/#DoctoralConsortium> ;
+    ns4:startPage 148 ;
+    ns6:author <http://ceur-ws.org/Vol-1420/#AudriusiLopata>,
+        <http://ceur-ws.org/Vol-1420/#MariusiLiutvinavi%26ccaron>,
+        <http://ceur-ws.org/Vol-1420/#SauliusiGudas> .
+
+<http://ceur-ws.org/Vol-1420/#dc-paper3> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1420/> ;
+    ns5:title "Automated Anaphora and Co-reference Resolution for Lithuanian Language Combining Results from Different Text Analysis Stages" ;
+    ns4:endPage 172 ;
+    ns4:numPages 9 ;
+    ns4:section <http://ceur-ws.org/Vol-1420/#DoctoralConsortium> ;
+    ns4:startPage 164 ;
+    ns6:author <http://ceur-ws.org/Vol-1420/#LinaiNemurait%C4%97>,
+        <http://ceur-ws.org/Vol-1420/#Voldemarasi%26Zcaron>,
+        <http://ceur-ws.org/Vol-1420/#itkus> .
+
+<http://ceur-ws.org/Vol-1420/#ilog-paper4> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1420/> ;
+    ns5:title "Self-Service BI does it Change the Rule of the Game for BI Systems Designers" ;
+    ns4:endPage 61 ;
+    ns4:numPages 14 ;
+    ns4:section <http://ceur-ws.org/Vol-1420/#ILOG158thWorkshoponInformationLogisticsandKnowledgeSupply> ;
+    ns4:startPage 48 ;
+    ns6:author <http://ceur-ws.org/Vol-1420/#Bj%C3%B6rniJohansson>,
+        <http://ceur-ws.org/Vol-1420/#DoganiAlkan>,
+        <http://ceur-ws.org/Vol-1420/#RobiniCarlsson> .
+
+<http://ceur-ws.org/Vol-1420/#ilog-paper7> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1420/> ;
+    ns5:title "Development and Validation of an Information Demand Pattern for a Team in Project Management" ;
+    ns4:endPage 97 ;
+    ns4:numPages 12 ;
+    ns4:section <http://ceur-ws.org/Vol-1420/#ILOG158thWorkshoponInformationLogisticsandKnowledgeSupply> ;
+    ns4:startPage 86 ;
+    ns6:author <http://ceur-ws.org/Vol-1420/#DirkiStamer>,
+        <http://ceur-ws.org/Vol-1420/#KurtiSandkuhl>,
+        <http://ceur-ws.org/Vol-1420/#VeronikaiZeiner> .
+
+<http://ceur-ws.org/Vol-1420/#scbp-paper2> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1420/> ;
+    ns5:title "Privacy by Design and Administrative Efficiency in E-Governance : a Case Study" ;
+    ns4:endPage 115 ;
+    ns4:numPages 6 ;
+    ns4:section <http://ceur-ws.org/Vol-1420/#SCBP15WorkshoponSecurityandComplianceinBusinessProcesses> ;
+    ns4:startPage 110 ;
+    ns6:author <http://ceur-ws.org/Vol-1420/#%C3%89liseiDegrave>,
+        <http://ceur-ws.org/Vol-1420/#Beno%C3%AEtiVanderose>,
+        <http://ceur-ws.org/Vol-1420/#NajiiHabra> .
+
+<http://ceur-ws.org/Vol-1420/#wois-paper1> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1420/> ;
+    ns5:title "Translating XML Models into OWL Ontologies for Interoperability of Simulation Systems" ;
+    ns4:endPage 123 ;
+    ns4:numPages 8 ;
+    ns4:section <http://ceur-ws.org/Vol-1420/#WOIS153rdWorkshoponOntologiesandInformationSystems> ;
+    ns4:startPage 116 ;
+    ns6:author <http://ceur-ws.org/Vol-1420/#GeorgeiBarakat>,
+        <http://ceur-ws.org/Vol-1420/#HeiTan>,
+        <http://ceur-ws.org/Vol-1420/#VladimiriTarasov> .
+
+<http://ceur-ws.org/Vol-1420/#wois-paper2> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1420/> ;
+    ns5:title "Online Communities for Agent Collaboration in Cyber-Physical-Social Systems" ;
+    ns4:endPage 135 ;
+    ns4:numPages 12 ;
+    ns4:section <http://ceur-ws.org/Vol-1420/#WOIS153rdWorkshoponOntologiesandInformationSystems> ;
+    ns4:startPage 124 ;
+    ns6:author <http://ceur-ws.org/Vol-1420/#AlexanderiSmirnov>,
+        <http://ceur-ws.org/Vol-1420/#NikolayiShilov>,
+        <http://ceur-ws.org/Vol-1420/#TatianaiLevashova> .
+
+<http://ceur-ws.org/Vol-1420/#wois-paper3> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1420/> ;
+    ns5:title "Experiences from Ontology Development for Service Innovation in Transportation Industries" ;
+    ns4:endPage 147 ;
+    ns4:numPages 12 ;
+    ns4:section <http://ceur-ws.org/Vol-1420/#WOIS153rdWorkshoponOntologiesandInformationSystems> ;
+    ns4:startPage 136 ;
+    ns6:author <http://ceur-ws.org/Vol-1420/#BirgeriLantow>,
+        <http://ceur-ws.org/Vol-1420/#HasaniKo%C3%A7>,
+        <http://ceur-ws.org/Vol-1420/#KurtiSandkuhl> .
+
+<http://ceur-ws.org/Vol-1420/#DoctoralConsortium> a ns3:SessionEvent ;
+    ns3:partOf <http://ceur-ws.org/Vol-1420/> ;
+    ns5:title "Doctoral Consortium" .
+
+<http://ceur-ws.org/Vol-1420/#KurtiSandkuhl> a ns1:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/KurtiSandkuhl> ;
+    ns1:made <http://ceur-ws.org/Vol-1420/#ilog-keynote>,
+        <http://ceur-ws.org/Vol-1420/#ilog-paper3>,
+        <http://ceur-ws.org/Vol-1420/#ilog-paper7>,
+        <http://ceur-ws.org/Vol-1420/#scbp-paper1>,
+        <http://ceur-ws.org/Vol-1420/#wois-paper3> ;
+    ns1:name "Kurt Sandkuhl" .
+
+<http://ceur-ws.org/Vol-1420/#ilog-paper2> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1420/> ;
+    ns5:title "Collaborative Decision Support for Adaptive Digital Enterprise Architecture" ;
+    ns4:endPage 35 ;
+    ns4:numPages 12 ;
+    ns4:section <http://ceur-ws.org/Vol-1420/#ILOG158thWorkshoponInformationLogisticsandKnowledgeSupply> ;
+    ns4:startPage 24 ;
+    ns6:author <http://ceur-ws.org/Vol-1420/#AlfrediZimmermann>,
+        <http://ceur-ws.org/Vol-1420/#ChristianiSchweda>,
+        <http://ceur-ws.org/Vol-1420/#DierkiJugel>,
+        <http://ceur-ws.org/Vol-1420/#MichaeliM%C3%B6hring>,
+        <http://ceur-ws.org/Vol-1420/#RaineriSchmidt> .
+
+<http://ceur-ws.org/Vol-1420/#ilog-paper3> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1420/> ;
+    ns5:title "Integration of IT-Security Aspects into Information Demand Analysis and Patterns" ;
+    ns4:endPage 47 ;
+    ns4:numPages 12 ;
+    ns4:section <http://ceur-ws.org/Vol-1420/#ILOG158thWorkshoponInformationLogisticsandKnowledgeSupply> ;
+    ns4:startPage 36 ;
+    ns6:author <http://ceur-ws.org/Vol-1420/#KurtiSandkuhl>,
+        <http://ceur-ws.org/Vol-1420/#MariteiKirikova>,
+        <http://ceur-ws.org/Vol-1420/#NavediAhmed>,
+        <http://ceur-ws.org/Vol-1420/#RaimundasiMatulevi%26ccaron>,
+        <http://ceur-ws.org/Vol-1420/#SauliusiGudas> .
+
+<http://ceur-ws.org/Vol-1420/#ilog-paper6> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1420/> ;
+    ns5:title "Improvements of Logistics in Region Campania Using a Profiling/Competence-based Approach, Enriched with Experience" ;
+    ns4:endPage 85 ;
+    ns4:numPages 12 ;
+    ns4:section <http://ceur-ws.org/Vol-1420/#ILOG158thWorkshoponInformationLogisticsandKnowledgeSupply> ;
+    ns4:startPage 74 ;
+    ns6:author <http://ceur-ws.org/Vol-1420/#ClaraiBassano>,
+        <http://ceur-ws.org/Vol-1420/#GiuseppeiD%27Aniello>,
+        <http://ceur-ws.org/Vol-1420/#LuigiiRarita>,
+        <http://ceur-ws.org/Vol-1420/#MariaiVincenzaiCiasullo>,
+        <http://ceur-ws.org/Vol-1420/#MatteoiGaeta> .
+
+<http://ceur-ws.org/Vol-1420/#scbp-paper1> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1420/> ;
+    ns5:title "Refining Security Requirement Elicitation from Business Processes using Method Engineering" ;
+    ns4:endPage 109 ;
+    ns4:numPages 12 ;
+    ns4:section <http://ceur-ws.org/Vol-1420/#SCBP15WorkshoponSecurityandComplianceinBusinessProcesses> ;
+    ns4:startPage 98 ;
+    ns6:author <http://ceur-ws.org/Vol-1420/#KurtiSandkuhl>,
+        <http://ceur-ws.org/Vol-1420/#MariteiKirikova>,
+        <http://ceur-ws.org/Vol-1420/#NavediAhmed>,
+        <http://ceur-ws.org/Vol-1420/#RaimundasiMatulevi%26ccaron>,
+        <http://ceur-ws.org/Vol-1420/#SauliusiGudas> .
+
+<http://ceur-ws.org/Vol-1420/#ws-keynote> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1420/> ;
+    ns5:title "Decision Support via Big Multidimensional Data Visualization" ;
+    ns4:endPage 8 ;
+    ns4:numPages 8 ;
+    ns4:section <http://ceur-ws.org/Vol-1420/#WorkshopKeynote> ;
+    ns4:startPage 1 ;
+    ns6:author <http://ceur-ws.org/Vol-1420/#Albertasi%C4%8Caplinskas>,
+        <http://ceur-ws.org/Vol-1420/#Audron%C4%97iLupeikien%C4%97>,
+        <http://ceur-ws.org/Vol-1420/#GintautasiDzemyda>,
+        <http://ceur-ws.org/Vol-1420/#OlgaiKurasova>,
+        <http://ceur-ws.org/Vol-1420/#ViktoriMedvedev> .
+
+<http://ceur-ws.org/Vol-1420/#ilog-paper5.pdf> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1420/> ;
+    ns5:title "Changing Business Information Systems for Innovative Configuration Processes" ;
+    ns4:endPage 73 ;
+    ns4:numPages 12 ;
+    ns4:section <http://ceur-ws.org/Vol-1420/#ILOG158thWorkshoponInformationLogisticsandKnowledgeSupply> ;
+    ns4:startPage 62 ;
+    ns6:author <http://ceur-ws.org/Vol-1420/#AlexanderiSmirnov>,
+        <http://ceur-ws.org/Vol-1420/#AlexeyiKashevnik>,
+        <http://ceur-ws.org/Vol-1420/#AndreasiOroszi>,
+        <http://ceur-ws.org/Vol-1420/#MarioiSinko>,
+        <http://ceur-ws.org/Vol-1420/#NikolayiShilov>,
+        <http://ceur-ws.org/Vol-1420/#ThorsteniKrebs> .
+
+<http://ceur-ws.org/Vol-1420/#ILOG158thWorkshoponInformationLogisticsandKnowledgeSupply> a ns3:SessionEvent ;
+    ns3:partOf <http://ceur-ws.org/Vol-1420/> ;
+    ns5:title "ILOG'15: 8th Workshop on Information Logistics and Knowledge Supply" .
+
+<http://ceur-ws.org/Vol-1420/> a ns3:Proceedings ;
+    ns3:hasPart <http://ceur-ws.org/Vol-1420/#dc-paper1>,
+        <http://ceur-ws.org/Vol-1420/#dc-paper2>,
+        <http://ceur-ws.org/Vol-1420/#dc-paper3>,
+        <http://ceur-ws.org/Vol-1420/#dc-paper4>,
+        <http://ceur-ws.org/Vol-1420/#ilog-keynote>,
+        <http://ceur-ws.org/Vol-1420/#ilog-paper2>,
+        <http://ceur-ws.org/Vol-1420/#ilog-paper3>,
+        <http://ceur-ws.org/Vol-1420/#ilog-paper4>,
+        <http://ceur-ws.org/Vol-1420/#ilog-paper5.pdf>,
+        <http://ceur-ws.org/Vol-1420/#ilog-paper6>,
+        <http://ceur-ws.org/Vol-1420/#ilog-paper7>,
+        <http://ceur-ws.org/Vol-1420/#scbp-paper1>,
+        <http://ceur-ws.org/Vol-1420/#scbp-paper2>,
+        <http://ceur-ws.org/Vol-1420/#wois-paper1>,
+        <http://ceur-ws.org/Vol-1420/#wois-paper2>,
+        <http://ceur-ws.org/Vol-1420/#wois-paper3>,
+        <http://ceur-ws.org/Vol-1420/#ws-keynote> ;
+    ns3:hasSession <http://ceur-ws.org/Vol-1420/#DoctoralConsortium>,
+        <http://ceur-ws.org/Vol-1420/#ILOG158thWorkshoponInformationLogisticsandKnowledgeSupply>,
+        <http://ceur-ws.org/Vol-1420/#SCBP15WorkshoponSecurityandComplianceinBusinessProcesses>,
+        <http://ceur-ws.org/Vol-1420/#WOIS153rdWorkshoponOntologiesandInformationSystems>,
+        <http://ceur-ws.org/Vol-1420/#WorkshopKeynote> ;
+    ns9:issued "2015-08-14T00:00:00+00:00"^^xsd:dateTime ;
+    ns4:presentedAt <http://ceur-ws.org/Vol-1420/#event> ;
+    ns6:editor <http://ceur-ws.org/Vol-1420/#FabrizioiMariaiMaggi>,
+        <http://ceur-ws.org/Vol-1420/#PeepiK%C3%BCngas>,
+        <http://ceur-ws.org/Vol-1420/#RaimundasiMatulevi%26ccaron> .
 

@@ -1,40 +1,156 @@
-@prefix ns1: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns2: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns3: <http://www.w3.org/2002/07/owl#> .
-@prefix ns4: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns5: <http://xmlns.com/foaf/0.1/> .
-@prefix ns6: <http://purl.org/ontology/bibo/#> .
-@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns8: <http://purl.org/dc/elements/1.1/> .
+@prefix ns1: <http://xmlns.com/foaf/0.1/> .
+@prefix ns2: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns3: <http://purl.org/ontology/bibo/#> .
+@prefix ns4: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns5: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns6: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns7: <http://www.w3.org/2002/07/owl#> .
+@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns9: <http://purl.org/dc/elements/1.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1578/> a ns2:Proceedings ;
-    ns7:issued "2016-04-15T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:presentedAt <http://ceur-ws.org/Vol-1578/#event> ;
-    ns1:editor <http://ceur-ws.org/Vol-1578/#JieiZhang>,
+<http://ceur-ws.org/Vol-1578/#AlessandroiSapienza> a ns1:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/AlessandroiSapienza> ;
+    ns1:made <http://ceur-ws.org/Vol-1578/#paper11> ;
+    ns1:name "Alessandro Sapienza" .
+
+<http://ceur-ws.org/Vol-1578/#EdmundiH.iDurfee> a ns1:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/EdmundiH.iDurfee> ;
+    ns1:made <http://ceur-ws.org/Vol-1578/#paper9> ;
+    ns1:name "Edmund H. Durfee" .
+
+<http://ceur-ws.org/Vol-1578/#JerzyiKonorski> a ns1:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/JerzyiKonorski> ;
+    ns1:made <http://ceur-ws.org/Vol-1578/#paper8> ;
+    ns1:name "Jerzy Konorski" .
+
+<http://ceur-ws.org/Vol-1578/#JieiZhang> a ns1:Person ;
+    ns2:affiliation "" ;
+    ns7:sameAs <http://ceur-ws.org/persons/JieiZhang> ;
+    ns1:name "Jie Zhang" .
+
+<http://ceur-ws.org/Vol-1578/#LingiLiu> a ns1:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/LingiLiu> ;
+    ns1:made <http://ceur-ws.org/Vol-1578/#paper2> ;
+    ns1:name "Ling Liu" .
+
+<http://ceur-ws.org/Vol-1578/#MuratiSensoy> a ns1:Person ;
+    ns2:affiliation "" ;
+    ns7:sameAs <http://ceur-ws.org/persons/MuratiSensoy> ;
+    ns1:name "Murat Sensoy" .
+
+<http://ceur-ws.org/Vol-1578/#NardineiOsman> a ns1:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/NardineiOsman> ;
+    ns1:made <http://ceur-ws.org/Vol-1578/#paper1> ;
+    ns1:name "Nardine Osman" .
+
+<http://ceur-ws.org/Vol-1578/#QikuniXiang> a ns1:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/QikuniXiang> ;
+    ns1:made <http://ceur-ws.org/Vol-1578/#paper4> ;
+    ns1:name "Qikun Xiang" .
+
+<http://ceur-ws.org/Vol-1578/#RobiniCohen> a ns1:Person ;
+    ns2:affiliation "" ;
+    ns7:sameAs <http://ceur-ws.org/persons/RobiniCohen> ;
+    ns1:name "Robin Cohen" .
+
+<http://ceur-ws.org/Vol-1578/#TimiMuller> a ns1:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/TimiMuller> ;
+    ns1:made <http://ceur-ws.org/Vol-1578/#paper10> ;
+    ns1:name "Tim Muller" .
+
+<http://ceur-ws.org/Vol-1578/#VictoriS.iMelo> a ns1:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/VictoriS.iMelo> ;
+    ns1:made <http://ceur-ws.org/Vol-1578/#paper6> ;
+    ns1:name "Victor S. Melo" .
+
+<http://ceur-ws.org/Vol-1578/#event> a ns5:WorkshopEvent ;
+    ns5:hasLocation <http://dbpedia.org/resource/Singapore> ;
+    ns5:hasPart <http://ceur-ws.org/Vol-1578/#part-TRUST> ;
+    ns5:isSubEventOf <http://ceur-ws.org/Vol-1578/#conf> ;
+    ns6:beginsAtDatetime "2016-05-10T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:endsAtDatetime "2016-05-10T00:00:00+00:00"^^xsd:dateTime ;
+    ns9:license "http://creativecommons.org/publicdomain/zero/1.0/" .
+
+<http://ceur-ws.org/Vol-1578/#paper1> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1578/> ;
+    ns4:title "Reputation in the Academic World" ;
+    ns3:endPage 17 ;
+    ns3:numPages 17 ;
+    ns3:startPage 1 ;
+    ns2:author <http://ceur-ws.org/Vol-1578/#NardineiOsman> .
+
+<http://ceur-ws.org/Vol-1578/#paper10> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1578/> ;
+    ns4:title "A Language for Trust Modelling" ;
+    ns3:endPage 70 ;
+    ns3:numPages 8 ;
+    ns3:startPage 63 ;
+    ns2:author <http://ceur-ws.org/Vol-1578/#TimiMuller> .
+
+<http://ceur-ws.org/Vol-1578/#paper11> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1578/> ;
+    ns4:title "How to Manage the Information Sources' Trustworthiness in a Scenario of Hydrogeological Risks" ;
+    ns3:endPage 82 ;
+    ns3:numPages 12 ;
+    ns3:startPage 71 ;
+    ns2:author <http://ceur-ws.org/Vol-1578/#AlessandroiSapienza> .
+
+<http://ceur-ws.org/Vol-1578/#paper2> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1578/> ;
+    ns4:title "Machine to Machine Trust in the IoT Era" ;
+    ns3:endPage 29 ;
+    ns3:numPages 12 ;
+    ns3:startPage 18 ;
+    ns2:author <http://ceur-ws.org/Vol-1578/#LingiLiu> .
+
+<http://ceur-ws.org/Vol-1578/#paper4> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1578/> ;
+    ns4:title "Collusion-resistant Spatial Phenomena Crowdsourcing via Mixture of Gaussian Processes Regression" ;
+    ns3:endPage 30 ;
+    ns3:numPages 12 ;
+    ns3:startPage 19 ;
+    ns2:author <http://ceur-ws.org/Vol-1578/#QikuniXiang> .
+
+<http://ceur-ws.org/Vol-1578/#paper6> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1578/> ;
+    ns4:title "Trust on Beliefs: Source, Time and Expertise" ;
+    ns3:endPage 42 ;
+    ns3:numPages 12 ;
+    ns3:startPage 31 ;
+    ns2:author <http://ceur-ws.org/Vol-1578/#VictoriS.iMelo> .
+
+<http://ceur-ws.org/Vol-1578/#paper8> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1578/> ;
+    ns4:title "Trust Dynamics Analysis of CTR Scheme Subversion under Virtual Anonymity and Trust-Unaware Partner Selection" ;
+    ns3:endPage 53 ;
+    ns3:numPages 11 ;
+    ns3:startPage 43 ;
+    ns2:author <http://ceur-ws.org/Vol-1578/#JerzyiKonorski> .
+
+<http://ceur-ws.org/Vol-1578/#paper9> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1578/> ;
+    ns4:title "On the Trustworthy Fulfillment of Commitments" ;
+    ns3:endPage 62 ;
+    ns3:numPages 9 ;
+    ns3:startPage 54 ;
+    ns2:author <http://ceur-ws.org/Vol-1578/#EdmundiH.iDurfee> .
+
+<http://ceur-ws.org/Vol-1578/> a ns5:Proceedings ;
+    ns5:hasPart <http://ceur-ws.org/Vol-1578/#paper1>,
+        <http://ceur-ws.org/Vol-1578/#paper10>,
+        <http://ceur-ws.org/Vol-1578/#paper11>,
+        <http://ceur-ws.org/Vol-1578/#paper2>,
+        <http://ceur-ws.org/Vol-1578/#paper4>,
+        <http://ceur-ws.org/Vol-1578/#paper6>,
+        <http://ceur-ws.org/Vol-1578/#paper8>,
+        <http://ceur-ws.org/Vol-1578/#paper9> ;
+    ns8:issued "2016-04-15T00:00:00+00:00"^^xsd:dateTime ;
+    ns3:presentedAt <http://ceur-ws.org/Vol-1578/#event> ;
+    ns2:editor <http://ceur-ws.org/Vol-1578/#JieiZhang>,
         <http://ceur-ws.org/Vol-1578/#MuratiSensoy>,
         <http://ceur-ws.org/Vol-1578/#RobiniCohen> .
-
-<http://ceur-ws.org/Vol-1578/#JieiZhang> a ns5:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/JieiZhang> ;
-    ns5:name "Jie Zhang" .
-
-<http://ceur-ws.org/Vol-1578/#MuratiSensoy> a ns5:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/MuratiSensoy> ;
-    ns5:name "Murat Sensoy" .
-
-<http://ceur-ws.org/Vol-1578/#RobiniCohen> a ns5:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/RobiniCohen> ;
-    ns5:name "Robin Cohen" .
-
-<http://ceur-ws.org/Vol-1578/#event> a ns2:WorkshopEvent ;
-    ns2:hasLocation <http://dbpedia.org/resource/Singapore> ;
-    ns2:hasPart <http://ceur-ws.org/Vol-1578/#part-ws> ;
-    ns2:isSubEventOf <http://ceur-ws.org/Vol-1578/#conf> ;
-    ns4:beginsAtDatetime "2016-05-10T00:00:00+00:00"^^xsd:dateTime ;
-    ns4:endsAtDatetime "2016-05-10T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:license "http://creativecommons.org/publicdomain/zero/1.0/" .
 

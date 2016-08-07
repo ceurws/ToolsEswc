@@ -1,40 +1,149 @@
-@prefix ns1: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns2: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns3: <http://xmlns.com/foaf/0.1/> .
-@prefix ns4: <http://purl.org/dc/elements/1.1/> .
-@prefix ns5: <http://www.w3.org/2002/07/owl#> .
-@prefix ns6: <http://purl.org/ontology/bibo/#> .
-@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns1: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns2: <http://xmlns.com/foaf/0.1/> .
+@prefix ns3: <http://purl.org/ontology/bibo/#> .
+@prefix ns4: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns5: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns6: <http://www.w3.org/2002/07/owl#> .
+@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns9: <http://purl.org/dc/elements/1.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1588/> a ns2:Proceedings ;
-    ns8:issued "2016-05-13T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:presentedAt <http://ceur-ws.org/Vol-1588/#event> ;
-    ns1:editor <http://ceur-ws.org/Vol-1588/#AntonisiBikakis>,
+<http://ceur-ws.org/Vol-1588/#AhmetiSoylu> a ns2:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/AhmetiSoylu> ;
+    ns2:made <http://ceur-ws.org/Vol-1588/#paper4> ;
+    ns2:name "Ahmet Soylu" .
+
+<http://ceur-ws.org/Vol-1588/#AntonisiBikakis> a ns2:Person ;
+    ns4:affiliation "" ;
+    ns6:sameAs <http://ceur-ws.org/persons/AntonisiBikakis> ;
+    ns2:name "Antonis Bikakis" .
+
+<http://ceur-ws.org/Vol-1588/#GeorgiosiMeditskos> a ns2:Person ;
+    ns4:affiliation "" ;
+    ns6:sameAs <http://ceur-ws.org/persons/GeorgiosiMeditskos> ;
+    ns2:name "Georgios Meditskos" .
+
+<http://ceur-ws.org/Vol-1588/#Jean-EudesiRanvier> a ns2:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/Jean-EudesiRanvier> ;
+    ns2:made <http://ceur-ws.org/Vol-1588/#paper2> ;
+    ns2:name "Jean-Eudes Ranvier" .
+
+<http://ceur-ws.org/Vol-1588/#Jean-YvesiVion-Dury> a ns2:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/Jean-YvesiVion-Dury> ;
+    ns2:made <http://ceur-ws.org/Vol-1588/#paper6> ;
+    ns2:name "Jean-Yves Vion-Dury" .
+
+<http://ceur-ws.org/Vol-1588/#KasperiApajalahti> a ns2:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/KasperiApajalahti> ;
+    ns2:made <http://ceur-ws.org/Vol-1588/#paper1> ;
+    ns2:name "Kasper Apajalahti" .
+
+<http://ceur-ws.org/Vol-1588/#NicoleiMerkle> a ns2:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/NicoleiMerkle> ;
+    ns2:made <http://ceur-ws.org/Vol-1588/#paper3> ;
+    ns2:name "Nicole Merkle" .
+
+<http://ceur-ws.org/Vol-1588/#SteliosiAndreadis> a ns2:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/SteliosiAndreadis> ;
+    ns2:made <http://ceur-ws.org/Vol-1588/#paper5> ;
+    ns2:name "Stelios Andreadis" .
+
+<http://ceur-ws.org/Vol-1588/#ThanosiStavropoulos> a ns2:Person ;
+    ns4:affiliation "" ;
+    ns6:sameAs <http://ceur-ws.org/persons/ThanosiStavropoulos> ;
+    ns2:name "Thanos Stavropoulos" .
+
+<http://ceur-ws.org/Vol-1588/#event> a ns5:WorkshopEvent ;
+    ns5:hasLocation <http://dbpedia.org/resource/Greece> ;
+    ns5:hasPart <http://ceur-ws.org/Vol-1588/#part-SEMPER> ;
+    ns5:isSubEventOf <http://ceur-ws.org/Vol-1588/#conf> ;
+    ns8:beginsAtDatetime "2016-05-29T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:endsAtDatetime "2016-05-29T00:00:00+00:00"^^xsd:dateTime ;
+    ns9:license "http://creativecommons.org/publicdomain/zero/1.0/" .
+
+<http://ceur-ws.org/Vol-1588/#paper1> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1588/> ;
+    ns1:title "Combining Ontologies and Markov Logic Networks for Statistical Relational Mobile Network Analysis" ;
+    ns3:endPage 45 ;
+    ns3:numPages 10 ;
+    ns3:section <http://ceur-ws.org/Vol-1588/#SessiononNetworksandFormalisms> ;
+    ns3:startPage 36 ;
+    ns4:author <http://ceur-ws.org/Vol-1588/#KasperiApajalahti> .
+
+<http://ceur-ws.org/Vol-1588/#paper2> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1588/> ;
+    ns1:title "Detection of Hypoglycemic Events through Wearable Sensors" ;
+    ns3:endPage 26 ;
+    ns3:numPages 6 ;
+    ns3:section <http://ceur-ws.org/Vol-1588/#SessiononWearablesandAmbientAssistedLiving> ;
+    ns3:startPage 21 ;
+    ns4:author <http://ceur-ws.org/Vol-1588/#Jean-EudesiRanvier> .
+
+<http://ceur-ws.org/Vol-1588/#paper3> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1588/> ;
+    ns1:title "Self-Service Ambient Intelligence Using Web of Things Technologies" ;
+    ns3:endPage 10 ;
+    ns3:numPages 10 ;
+    ns3:section <http://ceur-ws.org/Vol-1588/#SessiononIoTandStreamingData> ;
+    ns3:startPage 1 ;
+    ns4:author <http://ceur-ws.org/Vol-1588/#NicoleiMerkle> .
+
+<http://ceur-ws.org/Vol-1588/#paper4> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1588/> ;
+    ns1:title "Domain Experts Surfing on Stream Sensor Data over Ontologies" ;
+    ns3:endPage 20 ;
+    ns3:numPages 10 ;
+    ns3:section <http://ceur-ws.org/Vol-1588/#SessiononIoTandStreamingData> ;
+    ns3:startPage 11 ;
+    ns4:author <http://ceur-ws.org/Vol-1588/#AhmetiSoylu> .
+
+<http://ceur-ws.org/Vol-1588/#paper5> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1588/> ;
+    ns1:title "Dem@Home: Ambient Intelligence for Clinical Support of People Living with Dementia" ;
+    ns3:endPage 36 ;
+    ns3:numPages 10 ;
+    ns3:section <http://ceur-ws.org/Vol-1588/#SessiononWearablesandAmbientAssistedLiving> ;
+    ns3:startPage 27 ;
+    ns4:author <http://ceur-ws.org/Vol-1588/#SteliosiAndreadis> .
+
+<http://ceur-ws.org/Vol-1588/#paper6> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1588/> ;
+    ns1:title "The Resource Action Language (ReAL): Towards Designing Reactive RDF Stores" ;
+    ns3:endPage 54 ;
+    ns3:numPages 10 ;
+    ns3:section <http://ceur-ws.org/Vol-1588/#SessiononNetworksandFormalisms> ;
+    ns3:startPage 45 ;
+    ns4:author <http://ceur-ws.org/Vol-1588/#Jean-YvesiVion-Dury> .
+
+<http://ceur-ws.org/Vol-1588/#SessiononIoTandStreamingData> a ns5:SessionEvent ;
+    ns5:partOf <http://ceur-ws.org/Vol-1588/> ;
+    ns1:title "Session on IoT and Streaming Data" .
+
+<http://ceur-ws.org/Vol-1588/#SessiononNetworksandFormalisms> a ns5:SessionEvent ;
+    ns5:partOf <http://ceur-ws.org/Vol-1588/> ;
+    ns1:title "Session on Networks and Formalisms" .
+
+<http://ceur-ws.org/Vol-1588/#SessiononWearablesandAmbientAssistedLiving> a ns5:SessionEvent ;
+    ns5:partOf <http://ceur-ws.org/Vol-1588/> ;
+    ns1:title "Session on Wearables and Ambient Assisted Living" .
+
+<http://ceur-ws.org/Vol-1588/> a ns5:Proceedings ;
+    ns5:hasPart <http://ceur-ws.org/Vol-1588/#paper1>,
+        <http://ceur-ws.org/Vol-1588/#paper2>,
+        <http://ceur-ws.org/Vol-1588/#paper3>,
+        <http://ceur-ws.org/Vol-1588/#paper4>,
+        <http://ceur-ws.org/Vol-1588/#paper5>,
+        <http://ceur-ws.org/Vol-1588/#paper6> ;
+    ns5:hasSession <http://ceur-ws.org/Vol-1588/#SessiononIoTandStreamingData>,
+        <http://ceur-ws.org/Vol-1588/#SessiononNetworksandFormalisms>,
+        <http://ceur-ws.org/Vol-1588/#SessiononWearablesandAmbientAssistedLiving> ;
+    ns7:issued "2016-05-13T00:00:00+00:00"^^xsd:dateTime ;
+    ns3:presentedAt <http://ceur-ws.org/Vol-1588/#event> ;
+    ns4:editor <http://ceur-ws.org/Vol-1588/#AntonisiBikakis>,
         <http://ceur-ws.org/Vol-1588/#GeorgiosiMeditskos>,
         <http://ceur-ws.org/Vol-1588/#ThanosiStavropoulos> .
-
-<http://ceur-ws.org/Vol-1588/#AntonisiBikakis> a ns3:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/AntonisiBikakis> ;
-    ns3:name "Antonis Bikakis" .
-
-<http://ceur-ws.org/Vol-1588/#GeorgiosiMeditskos> a ns3:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/GeorgiosiMeditskos> ;
-    ns3:name "Georgios Meditskos" .
-
-<http://ceur-ws.org/Vol-1588/#ThanosiStavropoulos> a ns3:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/ThanosiStavropoulos> ;
-    ns3:name "Thanos Stavropoulos" .
-
-<http://ceur-ws.org/Vol-1588/#event> a ns2:WorkshopEvent ;
-    ns2:hasLocation <http://dbpedia.org/resource/Greece> ;
-    ns2:hasPart <http://ceur-ws.org/Vol-1588/#part-ws> ;
-    ns2:isSubEventOf <http://ceur-ws.org/Vol-1588/#conf> ;
-    ns7:beginsAtDatetime "2016-05-29T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:endsAtDatetime "2016-05-29T00:00:00+00:00"^^xsd:dateTime ;
-    ns4:license "http://creativecommons.org/publicdomain/zero/1.0/" .
 

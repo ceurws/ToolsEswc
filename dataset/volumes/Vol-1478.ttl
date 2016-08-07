@@ -1,36 +1,673 @@
-@prefix ns1: <http://xmlns.com/foaf/0.1/> .
-@prefix ns2: <http://purl.org/ontology/bibo/#> .
-@prefix ns3: <http://www.w3.org/2002/07/owl#> .
-@prefix ns4: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns5: <http://purl.org/dc/elements/1.1/> .
-@prefix ns6: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns1: <http://purl.org/ontology/bibo/#> .
+@prefix ns2: <http://xmlns.com/foaf/0.1/> .
+@prefix ns3: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns4: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns5: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns6: <http://www.w3.org/2002/07/owl#> .
+@prefix ns7: <http://purl.org/dc/elements/1.1/> .
+@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns9: <http://purl.org/NET/c4dm/timeline.owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1478/> a ns4:Proceedings ;
-    ns7:issued "2015-10-14T00:00:00+00:00"^^xsd:dateTime ;
-    ns2:presentedAt <http://ceur-ws.org/Vol-1478/#event> ;
-    ns6:editor <http://ceur-ws.org/Vol-1478/#HugoiAlatrista-Salas>,
+<http://ceur-ws.org/Vol-1478/#AlbertiBifet> a ns2:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/AlbertiBifet> ;
+    ns2:made <http://ceur-ws.org/Vol-1478/#ks1> ;
+    ns2:name "Albert Bifet" .
+
+<http://ceur-ws.org/Vol-1478/#AlejandroiLe%C3%B3n> a ns2:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/AlejandroiLe%C3%B3n> ;
+    ns2:made <http://ceur-ws.org/Vol-1478/#paper9> ;
+    ns2:name "Alejandro León" .
+
+<http://ceur-ws.org/Vol-1478/#AlessandraiMartello> a ns2:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/AlessandraiMartello> ;
+    ns2:made <http://ceur-ws.org/Vol-1478/#paper4> ;
+    ns2:name "Alessandra Martello" .
+
+<http://ceur-ws.org/Vol-1478/#AlneuideiAndradeiLopes> a ns2:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/AlneuideiAndradeiLopes> ;
+    ns2:made <http://ceur-ws.org/Vol-1478/#paper6> ;
+    ns2:name "Alneu de Andrade Lopes" .
+
+<http://ceur-ws.org/Vol-1478/#AlonsoiRa%C3%BAliMelgarejoiGalv%C3%A1n> a ns2:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/AlonsoiRa%C3%BAliMelgarejoiGalv%C3%A1n> ;
+    ns2:made <http://ceur-ws.org/Vol-1478/#paper14> ;
+    ns2:name "Alonso Raúl Melgarejo Galván" .
+
+<http://ceur-ws.org/Vol-1478/#AlvaroiMamaniiAliaga> a ns2:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/AlvaroiMamaniiAliaga> ;
+    ns2:made <http://ceur-ws.org/Vol-1478/#paper18> ;
+    ns2:name "Alvaro Mamani Aliaga" .
+
+<http://ceur-ws.org/Vol-1478/#AndreaiRuiziGuerrero> a ns2:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/AndreaiRuiziGuerrero> ;
+    ns2:made <http://ceur-ws.org/Vol-1478/#paper2> ;
+    ns2:name "Andrea Ruiz Guerrero" .
+
+<http://ceur-ws.org/Vol-1478/#BrettiDrury> a ns2:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/BrettiDrury> ;
+    ns2:made <http://ceur-ws.org/Vol-1478/#paper6> ;
+    ns2:name "Brett Drury" .
+
+<http://ceur-ws.org/Vol-1478/#CarolineiMollevi> a ns2:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/CarolineiMollevi> ;
+    ns2:made <http://ceur-ws.org/Vol-1478/#paper11> ;
+    ns2:name "Caroline Mollevi" .
+
+<http://ceur-ws.org/Vol-1478/#ChristianiLavergne> a ns2:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/ChristianiLavergne> ;
+    ns2:made <http://ceur-ws.org/Vol-1478/#paper11> ;
+    ns2:name "Christian Lavergne" .
+
+<http://ceur-ws.org/Vol-1478/#DennisiSalcedo> a ns2:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/DennisiSalcedo> ;
+    ns2:made <http://ceur-ws.org/Vol-1478/#paper9> ;
+    ns2:name "Dennis Salcedo" .
+
+<http://ceur-ws.org/Vol-1478/#DhouhaiJemal> a ns2:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/DhouhaiJemal> ;
+    ns2:made <http://ceur-ws.org/Vol-1478/#paper15> ;
+    ns2:name "Dhouha Jemal" .
+
+<http://ceur-ws.org/Vol-1478/#DidieriVega-Oliveros> a ns2:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/DidieriVega-Oliveros> ;
+    ns2:made <http://ceur-ws.org/Vol-1478/#paper8> ;
+    ns2:name "Didier Vega-Oliveros" .
+
+<http://ceur-ws.org/Vol-1478/#ElizabethiVeronicaiVeraiCervantes> a ns2:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/ElizabethiVeronicaiVeraiCervantes> ;
+    ns2:made <http://ceur-ws.org/Vol-1478/#paper16> ;
+    ns2:name "Elizabeth Veronica Vera Cervantes" .
+
+<http://ceur-ws.org/Vol-1478/#EustratiZhupa> a ns2:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/EustratiZhupa> ;
+    ns2:made <http://ceur-ws.org/Vol-1478/#paper4> ;
+    ns2:name "Eustrat Zhupa" .
+
+<http://ceur-ws.org/Vol-1478/#FelixiArmandoiFerminiPerez> a ns2:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/FelixiArmandoiFerminiPerez> ;
+    ns2:made <http://ceur-ws.org/Vol-1478/#paper19> ;
+    ns2:name "Felix Armando Fermin Perez" .
+
+<http://ceur-ws.org/Vol-1478/#FernandaiHondo> a ns2:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/FernandaiHondo> ;
+    ns2:made <http://ceur-ws.org/Vol-1478/#paper17> ;
+    ns2:name "Fernanda Hondo" .
+
+<http://ceur-ws.org/Vol-1478/#GissellaiBejarano> a ns2:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/GissellaiBejarano> ;
+    ns2:made <http://ceur-ws.org/Vol-1478/#paper13> ;
+    ns2:name "Gissella Bejarano" .
+
+<http://ceur-ws.org/Vol-1478/#HamidiMushtaq> a ns2:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/HamidiMushtaq> ;
+    ns2:made <http://ceur-ws.org/Vol-1478/#paper10> ;
+    ns2:name "Hamid Mushtaq" .
+
+<http://ceur-ws.org/Vol-1478/#HarleyiVeraiOlivera> a ns2:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/HarleyiVeraiOlivera> ;
+    ns2:made <http://ceur-ws.org/Vol-1478/#paper17> ;
+    ns2:name "Harley Vera Olivera" .
+
+<http://ceur-ws.org/Vol-1478/#Hern%C3%A1niGiliRam%C3%ADrez> a ns2:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/Hern%C3%A1niGiliRam%C3%ADrez> ;
+    ns2:made <http://ceur-ws.org/Vol-1478/#paper3> ;
+    ns2:name "Hernán Gil Ramírez" .
+
+<http://ceur-ws.org/Vol-1478/#IlariaiGuagliardi> a ns2:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/IlariaiGuagliardi> ;
+    ns2:made <http://ceur-ws.org/Vol-1478/#paper4> ;
+    ns2:name "Ilaria Guagliardi" .
+
+<http://ceur-ws.org/Vol-1478/#Jo%C3%ABliMa%C3%AFzi> a ns2:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/Jo%C3%ABliMa%C3%AFzi> ;
+    ns2:made <http://ceur-ws.org/Vol-1478/#paper11> ;
+    ns2:name "Joël Maïzi" .
+
+<http://ceur-ws.org/Vol-1478/#JorgeiLeoncioiGuerraiGuerra> a ns2:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/JorgeiLeoncioiGuerraiGuerra> ;
+    ns2:made <http://ceur-ws.org/Vol-1478/#paper19> ;
+    ns2:name "Jorge Leoncio Guerra Guerra" .
+
+<http://ceur-ws.org/Vol-1478/#JorgeiValverde-Rebaza> a ns2:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/JorgeiValverde-Rebaza> ;
+    ns2:made <http://ceur-ws.org/Vol-1478/#paper6> ;
+    ns2:name "Jorge Valverde-Rebaza" .
+
+<http://ceur-ws.org/Vol-1478/#Jos%C3%A9iAstuvilca> a ns2:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/Jos%C3%A9iAstuvilca> ;
+    ns2:made <http://ceur-ws.org/Vol-1478/#paper13> ;
+    ns2:name "José Astuvilca" .
+
+<http://ceur-ws.org/Vol-1478/#Jos%C3%A9iEduardoiOchoaiLuna> a ns2:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/Jos%C3%A9iEduardoiOchoaiLuna> ;
+    ns2:made <http://ceur-ws.org/Vol-1478/#paper16> ;
+    ns2:name "José Eduardo Ochoa Luna" .
+
+<http://ceur-ws.org/Vol-1478/#JuberiSerranoiCervantes> a ns2:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/JuberiSerranoiCervantes> ;
+    ns2:made <http://ceur-ws.org/Vol-1478/#paper18> ;
+    ns2:name "Juber Serrano Cervantes" .
+
+<http://ceur-ws.org/Vol-1478/#KaterineiRocioiClavoiNavarro> a ns2:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/KaterineiRocioiClavoiNavarro> ;
+    ns2:made <http://ceur-ws.org/Vol-1478/#paper14> ;
+    ns2:name "Katerine Rocio Clavo Navarro" .
+
+<http://ceur-ws.org/Vol-1478/#KitiCheung> a ns2:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/KitiCheung> ;
+    ns2:made <http://ceur-ws.org/Vol-1478/#paper12> ;
+    ns2:name "Kit Cheung" .
+
+<http://ceur-ws.org/Vol-1478/#LauraiCruz> a ns2:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/LauraiCruz> ;
+    ns2:made <http://ceur-ws.org/Vol-1478/#paper16> ;
+    ns2:name "Laura Cruz" .
+
+<http://ceur-ws.org/Vol-1478/#LilianiBerton> a ns2:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/LilianiBerton> ;
+    ns2:made <http://ceur-ws.org/Vol-1478/#paper8> ;
+    ns2:name "Lilian Berton" .
+
+<http://ceur-ws.org/Vol-1478/#LuisiAngeliCajachahuaiEspinoza> a ns2:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/LuisiAngeliCajachahuaiEspinoza> ;
+    ns2:made <http://ceur-ws.org/Vol-1478/#paper2> ;
+    ns2:name "Luis Angel Cajachahua Espinoza" .
+
+<http://ceur-ws.org/Vol-1478/#M.iJordaniRaddick> a ns2:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/M.iJordaniRaddick> ;
+    ns2:made <http://ceur-ws.org/Vol-1478/#paper7> ;
+    ns2:name "M. Jordan Raddick" .
+
+<http://ceur-ws.org/Vol-1478/#MarcoiPicelli> a ns2:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/MarcoiPicelli> ;
+    ns2:made <http://ceur-ws.org/Vol-1478/#paper4> ;
+    ns2:name "Marco Picelli" .
+
+<http://ceur-ws.org/Vol-1478/#MaristelaiHolanda> a ns2:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/MaristelaiHolanda> ;
+    ns2:made <http://ceur-ws.org/Vol-1478/#paper17> ;
+    ns2:name "Maristela Holanda" .
+
+<http://ceur-ws.org/Vol-1478/#MathieuiRoche> a ns2:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/MathieuiRoche> ;
+    ns2:made <http://ceur-ws.org/Vol-1478/#ks4> ;
+    ns2:name "Mathieu Roche" .
+
+<http://ceur-ws.org/Vol-1478/#MichelangeloiRubino> a ns2:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/MichelangeloiRubino> ;
+    ns2:made <http://ceur-ws.org/Vol-1478/#paper4> ;
+    ns2:name "Michelangelo Rubino" .
+
+<http://ceur-ws.org/Vol-1478/#MikeiDonaldiTapi-Nzali> a ns2:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/MikeiDonaldiTapi-Nzali> ;
+    ns2:made <http://ceur-ws.org/Vol-1478/#paper11> ;
+    ns2:name "Mike Donald Tapi-Nzali" .
+
+<http://ceur-ws.org/Vol-1478/#OsmariR.iZa%C3%AFane> a ns2:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/OsmariR.iZa%C3%AFane> ;
+    ns2:made <http://ceur-ws.org/Vol-1478/#ks5> ;
+    ns2:name "Osmar R. Zaïane" .
+
+<http://ceur-ws.org/Vol-1478/#PabloiYanyachi> a ns2:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/PabloiYanyachi> ;
+    ns2:made <http://ceur-ws.org/Vol-1478/#paper18> ;
+    ns2:name "Pablo Yanyachi" .
+
+<http://ceur-ws.org/Vol-1478/#PascaliPoncelet> a ns2:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/PascaliPoncelet> ;
+    ns2:made <http://ceur-ws.org/Vol-1478/#ks3> ;
+    ns2:name "Pascal Poncelet" .
+
+<http://ceur-ws.org/Vol-1478/#PedroiVega> a ns2:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/PedroiVega> ;
+    ns2:made <http://ceur-ws.org/Vol-1478/#paper13> ;
+    ns2:name "Pedro Vega" .
+
+<http://ceur-ws.org/Vol-1478/#PierreiPompidor> a ns2:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/PierreiPompidor> ;
+    ns2:made <http://ceur-ws.org/Vol-1478/#paper11> ;
+    ns2:name "Pierre Pompidor" .
+
+<http://ceur-ws.org/Vol-1478/#PrasadithiBuddhitha> a ns2:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/PrasadithiBuddhitha> ;
+    ns2:made <http://ceur-ws.org/Vol-1478/#paper1> ;
+    ns2:name "Prasadith Buddhitha" .
+
+<http://ceur-ws.org/Vol-1478/#RacheliMok> a ns2:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/RacheliMok> ;
+    ns2:made <http://ceur-ws.org/Vol-1478/#paper12> ;
+    ns2:name "Rachel Mok" .
+
+<http://ceur-ws.org/Vol-1478/#RafaeliSantos> a ns2:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/RafaeliSantos> ;
+    ns2:made <http://ceur-ws.org/Vol-1478/#paper7> ;
+    ns2:name "Rafael Santos" .
+
+<http://ceur-ws.org/Vol-1478/#RaffaeleiCozza> a ns2:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/RaffaeleiCozza> ;
+    ns2:made <http://ceur-ws.org/Vol-1478/#paper4> ;
+    ns2:name "Raffaele Cozza" .
+
+<http://ceur-ws.org/Vol-1478/#Ren%C3%A9iCruziMu%C3%B1oz> a ns2:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/Ren%C3%A9iCruziMu%C3%B1oz> ;
+    ns2:made <http://ceur-ws.org/Vol-1478/#paper18> ;
+    ns2:name "René Cruz Muñoz" .
+
+<http://ceur-ws.org/Vol-1478/#RimiFaiz> a ns2:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/RimiFaiz> ;
+    ns2:made <http://ceur-ws.org/Vol-1478/#paper15> ;
+    ns2:name "Rim Faiz" .
+
+<http://ceur-ws.org/Vol-1478/#RosaiMar%C3%ADaiGuilleumas> a ns2:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/RosaiMar%C3%ADaiGuilleumas> ;
+    ns2:made <http://ceur-ws.org/Vol-1478/#paper3> ;
+    ns2:name "Rosa María Guilleumas" .
+
+<http://ceur-ws.org/Vol-1478/#SandraiBringay> a ns2:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/SandraiBringay> ;
+    ns2:made <http://ceur-ws.org/Vol-1478/#paper11> ;
+    ns2:name "Sandra Bringay" .
+
+<http://ceur-ws.org/Vol-1478/#Tom%C3%A1siNietoiAgudo> a ns2:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/Tom%C3%A1siNietoiAgudo> ;
+    ns2:made <http://ceur-ws.org/Vol-1478/#paper2> ;
+    ns2:name "Tomás Nieto Agudo" .
+
+<http://ceur-ws.org/Vol-1478/#ValeriaiGuimar%C3%A2es> a ns2:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/ValeriaiGuimar%C3%A2es> ;
+    ns2:made <http://ceur-ws.org/Vol-1478/#paper17> ;
+    ns2:name "Valeria Guimarâes" .
+
+<http://ceur-ws.org/Vol-1478/#VitoriHirotaiMakiyama> a ns2:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/VitoriHirotaiMakiyama> ;
+    ns2:made <http://ceur-ws.org/Vol-1478/#paper7> ;
+    ns2:name "Vitor Hirota Makiyama" .
+
+<http://ceur-ws.org/Vol-1478/#VittoriaiCozza> a ns2:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/VittoriaiCozza> ;
+    ns2:made <http://ceur-ws.org/Vol-1478/#paper4> ;
+    ns2:name "Vittoria Cozza" .
+
+<http://ceur-ws.org/Vol-1478/#WagneriBoaventura> a ns2:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/WagneriBoaventura> ;
+    ns2:made <http://ceur-ws.org/Vol-1478/#paper17> ;
+    ns2:name "Wagner Boaventura" .
+
+<http://ceur-ws.org/Vol-1478/#WaiiMok> a ns2:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/WaiiMok> ;
+    ns2:made <http://ceur-ws.org/Vol-1478/#paper12> ;
+    ns2:name "Wai Mok" .
+
+<http://ceur-ws.org/Vol-1478/#WilderiNinaiChoquehuayta> a ns2:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/WilderiNinaiChoquehuayta> ;
+    ns2:made <http://ceur-ws.org/Vol-1478/#paper18> ;
+    ns2:name "Wilder Nina Choquehuayta" .
+
+<http://ceur-ws.org/Vol-1478/#YesseniaiYari> a ns2:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/YesseniaiYari> ;
+    ns2:made <http://ceur-ws.org/Vol-1478/#paper18> ;
+    ns2:name "Yessenia Yari" .
+
+<http://ceur-ws.org/Vol-1478/#ZaidiAlars> a ns2:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/ZaidiAlars> ;
+    ns2:made <http://ceur-ws.org/Vol-1478/#paper10> ;
+    ns2:name "Zaid Alars" .
+
+<http://ceur-ws.org/Vol-1478/#event> a ns3:WorkshopEvent ;
+    ns3:hasLocation <http://dbpedia.org/resource/Peru> ;
+    ns3:hasPart <http://ceur-ws.org/Vol-1478/#part-SIMBig> ;
+    ns3:isSubEventOf <http://ceur-ws.org/Vol-1478/#conf> ;
+    ns9:beginsAtDatetime "2015-09-02T00:00:00+00:00"^^xsd:dateTime ;
+    ns9:endsAtDatetime "2015-09-04T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:license "http://creativecommons.org/publicdomain/zero/1.0/" ;
+    rdfs:seeAlso <http://ceur-ws.org/Vol-1318/#event> .
+
+<http://ceur-ws.org/Vol-1478/#DianaiInkpen> a ns2:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/DianaiInkpen> ;
+    ns2:made <http://ceur-ws.org/Vol-1478/#ks2>,
+        <http://ceur-ws.org/Vol-1478/#paper1> ;
+    ns2:name "Diana Inkpen" .
+
+<http://ceur-ws.org/Vol-1478/#HugoiAlatrista-Salas> a ns2:Person ;
+    ns4:affiliation "" ;
+    ns6:sameAs <http://ceur-ws.org/persons/HugoiAlatrista-Salas> ;
+    ns2:made <http://ceur-ws.org/Vol-1478/#o1> ;
+    ns2:name "Hugo Alatrista-Salas" .
+
+<http://ceur-ws.org/Vol-1478/#JuaniAntonioiLossio-Ventura> a ns2:Person ;
+    ns4:affiliation "" ;
+    ns6:sameAs <http://ceur-ws.org/persons/JuaniAntonioiLossio-Ventura> ;
+    ns2:made <http://ceur-ws.org/Vol-1478/#o1> ;
+    ns2:name "Juan Antonio Lossio-Ventura" .
+
+<http://ceur-ws.org/Vol-1478/#OverviewofSIMBig2015> a ns3:SessionEvent ;
+    ns3:partOf <http://ceur-ws.org/Vol-1478/> ;
+    ns5:title "Overview of SIMBig 2015" .
+
+<http://ceur-ws.org/Vol-1478/#ks1> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1478/> ;
+    ns5:title "Real-Time Big Data Stream Analytics" ;
+    ns1:endPage 14 ;
+    ns1:numPages 2 ;
+    ns1:section <http://ceur-ws.org/Vol-1478/#KeynoteSpeakerPresentations> ;
+    ns1:startPage 13 ;
+    ns4:author <http://ceur-ws.org/Vol-1478/#AlbertiBifet> .
+
+<http://ceur-ws.org/Vol-1478/#ks2> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1478/> ;
+    ns5:title "Detecting Locations from Twitter Messages" ;
+    ns1:endPage 16 ;
+    ns1:numPages 2 ;
+    ns1:section <http://ceur-ws.org/Vol-1478/#KeynoteSpeakerPresentations> ;
+    ns1:startPage 15 ;
+    ns4:author <http://ceur-ws.org/Vol-1478/#DianaiInkpen> .
+
+<http://ceur-ws.org/Vol-1478/#ks3> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1478/> ;
+    ns5:title "Opinion Mining: Taking into account the Criteria!" ;
+    ns1:endPage 18 ;
+    ns1:numPages 2 ;
+    ns1:section <http://ceur-ws.org/Vol-1478/#KeynoteSpeakerPresentations> ;
+    ns1:startPage 17 ;
+    ns4:author <http://ceur-ws.org/Vol-1478/#PascaliPoncelet> .
+
+<http://ceur-ws.org/Vol-1478/#ks4> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1478/> ;
+    ns5:title "How to Deal with Heterogeneous Data?" ;
+    ns1:endPage 20 ;
+    ns1:numPages 2 ;
+    ns1:section <http://ceur-ws.org/Vol-1478/#KeynoteSpeakerPresentations> ;
+    ns1:startPage 19 ;
+    ns4:author <http://ceur-ws.org/Vol-1478/#MathieuiRoche> .
+
+<http://ceur-ws.org/Vol-1478/#ks5> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1478/> ;
+    ns5:title "Rich Data: Risks, Issues, Controversies & Hype" ;
+    ns1:endPage 24 ;
+    ns1:numPages 4 ;
+    ns1:section <http://ceur-ws.org/Vol-1478/#KeynoteSpeakerPresentations> ;
+    ns1:startPage 21 ;
+    ns4:author <http://ceur-ws.org/Vol-1478/#OsmariR.iZa%C3%AFane> .
+
+<http://ceur-ws.org/Vol-1478/#Session3BiomedicalInformatics> a ns3:SessionEvent ;
+    ns3:partOf <http://ceur-ws.org/Vol-1478/> ;
+    ns5:title "Session 3: Biomedical Informatics" .
+
+<http://ceur-ws.org/Vol-1478/#Session4Databases> a ns3:SessionEvent ;
+    ns3:partOf <http://ceur-ws.org/Vol-1478/> ;
+    ns5:title "Session 4: Databases" .
+
+<http://ceur-ws.org/Vol-1478/#Session6Posters> a ns3:SessionEvent ;
+    ns3:partOf <http://ceur-ws.org/Vol-1478/> ;
+    ns5:title "Session 6: Posters" .
+
+<http://ceur-ws.org/Vol-1478/#o1> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1478/> ;
+    ns5:title "Overview of SIMBig 2015: 2nd Annual International Symposium on Information Management and Big Data" ;
+    ns1:endPage 12 ;
+    ns1:numPages 3 ;
+    ns1:section <http://ceur-ws.org/Vol-1478/#OverviewofSIMBig2015> ;
+    ns1:startPage 10 ;
+    ns4:author <http://ceur-ws.org/Vol-1478/#HugoiAlatrista-Salas>,
         <http://ceur-ws.org/Vol-1478/#JuaniAntonioiLossio-Ventura> .
 
-<http://ceur-ws.org/Vol-1478/#HugoiAlatrista-Salas> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/HugoiAlatrista-Salas> ;
-    ns1:name "Hugo Alatrista-Salas" .
+<http://ceur-ws.org/Vol-1478/#paper1> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1478/> ;
+    ns5:title "Dependency-based Topic-Oriented Sentiment Analysis in Microposts" ;
+    ns1:endPage 34 ;
+    ns1:numPages 10 ;
+    ns1:section <http://ceur-ws.org/Vol-1478/#Session1TextMiningandSocialNetworks> ;
+    ns1:startPage 25 ;
+    ns4:author <http://ceur-ws.org/Vol-1478/#DianaiInkpen>,
+        <http://ceur-ws.org/Vol-1478/#PrasadithiBuddhitha> .
 
-<http://ceur-ws.org/Vol-1478/#JuaniAntonioiLossio-Ventura> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/JuaniAntonioiLossio-Ventura> ;
-    ns1:name "Juan Antonio Lossio-Ventura" .
+<http://ceur-ws.org/Vol-1478/#paper10> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1478/> ;
+    ns5:title "Scalability Potential of BWA DNA Mapping Algorithm on Apache Spark" ;
+    ns1:endPage 88 ;
+    ns1:numPages 4 ;
+    ns1:section <http://ceur-ws.org/Vol-1478/#Session3BiomedicalInformatics> ;
+    ns1:startPage 85 ;
+    ns4:author <http://ceur-ws.org/Vol-1478/#HamidiMushtaq>,
+        <http://ceur-ws.org/Vol-1478/#ZaidiAlars> .
 
-<http://ceur-ws.org/Vol-1478/#event> a ns4:WorkshopEvent ;
-    ns4:hasLocation <http://dbpedia.org/resource/Peru> ;
-    ns4:hasPart <http://ceur-ws.org/Vol-1478/#part-SIMBig> ;
-    ns4:isSubEventOf <http://ceur-ws.org/Vol-1478/#conf> ;
-    ns8:beginsAtDatetime "2015-09-02T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:endsAtDatetime "2015-09-04T00:00:00+00:00"^^xsd:dateTime ;
-    ns5:license "http://creativecommons.org/publicdomain/zero/1.0/" ;
-    rdfs:seeAlso <http://ceur-ws.org/Vol-1318/#event> .
+<http://ceur-ws.org/Vol-1478/#paper14> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1478/> ;
+    ns5:title "Arquitectura de Big Data para la Predicción de la Portabilidad Numérica en Empresas de Telefonía Móvil" ;
+    ns1:endPage 116 ;
+    ns1:numPages 11 ;
+    ns1:section <http://ceur-ws.org/Vol-1478/#Session5BigData> ;
+    ns1:startPage 106 ;
+    ns4:author <http://ceur-ws.org/Vol-1478/#AlonsoiRa%C3%BAliMelgarejoiGalv%C3%A1n>,
+        <http://ceur-ws.org/Vol-1478/#KaterineiRocioiClavoiNavarro> .
+
+<http://ceur-ws.org/Vol-1478/#paper15> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1478/> ;
+    ns5:title "MapReduce and Relational Database Management Systems: Competing or Completing Paradigms?" ;
+    ns1:endPage 121 ;
+    ns1:numPages 5 ;
+    ns1:section <http://ceur-ws.org/Vol-1478/#Session5BigData> ;
+    ns1:startPage 117 ;
+    ns4:author <http://ceur-ws.org/Vol-1478/#DhouhaiJemal>,
+        <http://ceur-ws.org/Vol-1478/#RimiFaiz> .
+
+<http://ceur-ws.org/Vol-1478/#paper19> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1478/> ;
+    ns5:title "Multi-agent System for Usability Improvement of an University Administrative System" ;
+    ns1:endPage 139 ;
+    ns1:numPages 2 ;
+    ns1:section <http://ceur-ws.org/Vol-1478/#Session6Posters> ;
+    ns1:startPage 138 ;
+    ns4:author <http://ceur-ws.org/Vol-1478/#FelixiArmandoiFerminiPerez>,
+        <http://ceur-ws.org/Vol-1478/#JorgeiLeoncioiGuerraiGuerra> .
+
+<http://ceur-ws.org/Vol-1478/#paper3> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1478/> ;
+    ns5:title "Social Networks of Teachers on Twitter" ;
+    ns1:endPage 51 ;
+    ns1:numPages 9 ;
+    ns1:section <http://ceur-ws.org/Vol-1478/#Session1TextMiningandSocialNetworks> ;
+    ns1:startPage 43 ;
+    ns4:author <http://ceur-ws.org/Vol-1478/#Hern%C3%A1niGiliRam%C3%ADrez>,
+        <http://ceur-ws.org/Vol-1478/#RosaiMar%C3%ADaiGuilleumas> .
+
+<http://ceur-ws.org/Vol-1478/#paper8> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1478/> ;
+    ns5:title "Spreader Selection by Community to Maximize Information Diffusion in Social Networks" ;
+    ns1:endPage 82 ;
+    ns1:numPages 10 ;
+    ns1:section <http://ceur-ws.org/Vol-1478/#Session2SpecialTrackWebandTextIntelligence> ;
+    ns1:startPage 73 ;
+    ns4:author <http://ceur-ws.org/Vol-1478/#DidieriVega-Oliveros>,
+        <http://ceur-ws.org/Vol-1478/#LilianiBerton> .
+
+<http://ceur-ws.org/Vol-1478/#paper9> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1478/> ;
+    ns5:title "Behavior of Symptoms on Twitter" ;
+    ns1:endPage 84 ;
+    ns1:numPages 2 ;
+    ns1:section <http://ceur-ws.org/Vol-1478/#Session2SpecialTrackWebandTextIntelligence> ;
+    ns1:startPage 83 ;
+    ns4:author <http://ceur-ws.org/Vol-1478/#AlejandroiLe%C3%B3n>,
+        <http://ceur-ws.org/Vol-1478/#DennisiSalcedo> .
+
+<http://ceur-ws.org/Vol-1478/#paper12> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1478/> ;
+    ns5:title "A Security Price Data Cleaning Technique: Reynold's Decomposition Approach" ;
+    ns1:endPage 98 ;
+    ns1:numPages 5 ;
+    ns1:section <http://ceur-ws.org/Vol-1478/#Session4Databases> ;
+    ns1:startPage 94 ;
+    ns4:author <http://ceur-ws.org/Vol-1478/#KitiCheung>,
+        <http://ceur-ws.org/Vol-1478/#RacheliMok>,
+        <http://ceur-ws.org/Vol-1478/#WaiiMok> .
+
+<http://ceur-ws.org/Vol-1478/#paper13> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1478/> ;
+    ns5:title "Automation of Process to Load Database from OSM for the Design of Public Routes" ;
+    ns1:endPage 105 ;
+    ns1:numPages 7 ;
+    ns1:section <http://ceur-ws.org/Vol-1478/#Session4Databases> ;
+    ns1:startPage 99 ;
+    ns4:author <http://ceur-ws.org/Vol-1478/#GissellaiBejarano>,
+        <http://ceur-ws.org/Vol-1478/#Jos%C3%A9iAstuvilca>,
+        <http://ceur-ws.org/Vol-1478/#PedroiVega> .
+
+<http://ceur-ws.org/Vol-1478/#paper16> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1478/> ;
+    ns5:title "Performance of Alternating Least Squares in a Distributed Approach Using GraphLab and MapReduce" ;
+    ns1:endPage 128 ;
+    ns1:numPages 7 ;
+    ns1:section <http://ceur-ws.org/Vol-1478/#Session5BigData> ;
+    ns1:startPage 122 ;
+    ns4:author <http://ceur-ws.org/Vol-1478/#ElizabethiVeronicaiVeraiCervantes>,
+        <http://ceur-ws.org/Vol-1478/#Jos%C3%A9iEduardoiOchoaiLuna>,
+        <http://ceur-ws.org/Vol-1478/#LauraiCruz> .
+
+<http://ceur-ws.org/Vol-1478/#paper2> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1478/> ;
+    ns5:title "Specializations for the Peruvian Professional in Statistics: A Text Mining Approach" ;
+    ns1:endPage 42 ;
+    ns1:numPages 8 ;
+    ns1:section <http://ceur-ws.org/Vol-1478/#Session1TextMiningandSocialNetworks> ;
+    ns1:startPage 35 ;
+    ns4:author <http://ceur-ws.org/Vol-1478/#AndreaiRuiziGuerrero>,
+        <http://ceur-ws.org/Vol-1478/#LuisiAngeliCajachahuaiEspinoza>,
+        <http://ceur-ws.org/Vol-1478/#Tom%C3%A1siNietoiAgudo> .
+
+<http://ceur-ws.org/Vol-1478/#paper6> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1478/> ;
+    ns5:title "Causation Generalization Through the Identification of Equivalent Nodes in Causal Sparse Graphs Constructed from Text using Node Similarity Strategies" ;
+    ns1:endPage 65 ;
+    ns1:numPages 8 ;
+    ns1:section <http://ceur-ws.org/Vol-1478/#Session2SpecialTrackWebandTextIntelligence> ;
+    ns1:startPage 58 ;
+    ns4:author <http://ceur-ws.org/Vol-1478/#AlneuideiAndradeiLopes>,
+        <http://ceur-ws.org/Vol-1478/#BrettiDrury>,
+        <http://ceur-ws.org/Vol-1478/#JorgeiValverde-Rebaza> .
+
+<http://ceur-ws.org/Vol-1478/#paper7> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1478/> ;
+    ns5:title "Text Mining Applied to SQL Queries: A Case Study for the SDSS SkyServer" ;
+    ns1:endPage 72 ;
+    ns1:numPages 7 ;
+    ns1:section <http://ceur-ws.org/Vol-1478/#Session2SpecialTrackWebandTextIntelligence> ;
+    ns1:startPage 66 ;
+    ns4:author <http://ceur-ws.org/Vol-1478/#M.iJordaniRaddick>,
+        <http://ceur-ws.org/Vol-1478/#RafaeliSantos>,
+        <http://ceur-ws.org/Vol-1478/#VitoriHirotaiMakiyama> .
+
+<http://ceur-ws.org/Vol-1478/#Session1TextMiningandSocialNetworks> a ns3:SessionEvent ;
+    ns3:partOf <http://ceur-ws.org/Vol-1478/> ;
+    ns5:title "Session 1: Text Mining and Social Networks" .
+
+<http://ceur-ws.org/Vol-1478/#Session2SpecialTrackWebandTextIntelligence> a ns3:SessionEvent ;
+    ns3:partOf <http://ceur-ws.org/Vol-1478/> ;
+    ns5:title "Session 2: Special Track - Web and Text Intelligence" .
+
+<http://ceur-ws.org/Vol-1478/#Session5BigData> a ns3:SessionEvent ;
+    ns3:partOf <http://ceur-ws.org/Vol-1478/> ;
+    ns5:title "Session 5: Big Data" .
+
+<http://ceur-ws.org/Vol-1478/#KeynoteSpeakerPresentations> a ns3:SessionEvent ;
+    ns3:partOf <http://ceur-ws.org/Vol-1478/> ;
+    ns5:title "Keynote Speaker Presentations" .
+
+<http://ceur-ws.org/Vol-1478/#paper17> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1478/> ;
+    ns5:title "Data Modeling for NoSQL Document-Oriented Databases" ;
+    ns1:endPage 135 ;
+    ns1:numPages 7 ;
+    ns1:section <http://ceur-ws.org/Vol-1478/#Session5BigData> ;
+    ns1:startPage 129 ;
+    ns4:author <http://ceur-ws.org/Vol-1478/#FernandaiHondo>,
+        <http://ceur-ws.org/Vol-1478/#HarleyiVeraiOlivera>,
+        <http://ceur-ws.org/Vol-1478/#MaristelaiHolanda>,
+        <http://ceur-ws.org/Vol-1478/#ValeriaiGuimar%C3%A2es>,
+        <http://ceur-ws.org/Vol-1478/#WagneriBoaventura> .
+
+<http://ceur-ws.org/Vol-1478/#paper11> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1478/> ;
+    ns5:title "Explain Sentiments using Conditional Random Field and a Huge Lexical Network" ;
+    ns1:endPage 93 ;
+    ns1:numPages 5 ;
+    ns1:section <http://ceur-ws.org/Vol-1478/#Session3BiomedicalInformatics> ;
+    ns1:startPage 89 ;
+    ns4:author <http://ceur-ws.org/Vol-1478/#CarolineiMollevi>,
+        <http://ceur-ws.org/Vol-1478/#ChristianiLavergne>,
+        <http://ceur-ws.org/Vol-1478/#Jo%C3%ABliMa%C3%AFzi>,
+        <http://ceur-ws.org/Vol-1478/#MikeiDonaldiTapi-Nzali>,
+        <http://ceur-ws.org/Vol-1478/#PierreiPompidor>,
+        <http://ceur-ws.org/Vol-1478/#SandraiBringay> .
+
+<http://ceur-ws.org/Vol-1478/#paper18> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1478/> ;
+    ns5:title "Hipi, as Alternative for Satellite Images Processing" ;
+    ns1:endPage 137 ;
+    ns1:numPages 2 ;
+    ns1:section <http://ceur-ws.org/Vol-1478/#Session6Posters> ;
+    ns1:startPage 136 ;
+    ns4:author <http://ceur-ws.org/Vol-1478/#AlvaroiMamaniiAliaga>,
+        <http://ceur-ws.org/Vol-1478/#JuberiSerranoiCervantes>,
+        <http://ceur-ws.org/Vol-1478/#PabloiYanyachi>,
+        <http://ceur-ws.org/Vol-1478/#Ren%C3%A9iCruziMu%C3%B1oz>,
+        <http://ceur-ws.org/Vol-1478/#WilderiNinaiChoquehuayta>,
+        <http://ceur-ws.org/Vol-1478/#YesseniaiYari> .
+
+<http://ceur-ws.org/Vol-1478/#paper4> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1478/> ;
+    ns5:title "Esopo: Sensors and Social Pollution Measurements" ;
+    ns1:endPage 57 ;
+    ns1:numPages 6 ;
+    ns1:section <http://ceur-ws.org/Vol-1478/#Session1TextMiningandSocialNetworks> ;
+    ns1:startPage 52 ;
+    ns4:author <http://ceur-ws.org/Vol-1478/#AlessandraiMartello>,
+        <http://ceur-ws.org/Vol-1478/#EustratiZhupa>,
+        <http://ceur-ws.org/Vol-1478/#IlariaiGuagliardi>,
+        <http://ceur-ws.org/Vol-1478/#MarcoiPicelli>,
+        <http://ceur-ws.org/Vol-1478/#MichelangeloiRubino>,
+        <http://ceur-ws.org/Vol-1478/#RaffaeleiCozza>,
+        <http://ceur-ws.org/Vol-1478/#VittoriaiCozza> .
+
+<http://ceur-ws.org/Vol-1478/> a ns3:Proceedings ;
+    ns3:hasPart <http://ceur-ws.org/Vol-1478/#ks1>,
+        <http://ceur-ws.org/Vol-1478/#ks2>,
+        <http://ceur-ws.org/Vol-1478/#ks3>,
+        <http://ceur-ws.org/Vol-1478/#ks4>,
+        <http://ceur-ws.org/Vol-1478/#ks5>,
+        <http://ceur-ws.org/Vol-1478/#o1>,
+        <http://ceur-ws.org/Vol-1478/#paper1>,
+        <http://ceur-ws.org/Vol-1478/#paper10>,
+        <http://ceur-ws.org/Vol-1478/#paper11>,
+        <http://ceur-ws.org/Vol-1478/#paper12>,
+        <http://ceur-ws.org/Vol-1478/#paper13>,
+        <http://ceur-ws.org/Vol-1478/#paper14>,
+        <http://ceur-ws.org/Vol-1478/#paper15>,
+        <http://ceur-ws.org/Vol-1478/#paper16>,
+        <http://ceur-ws.org/Vol-1478/#paper17>,
+        <http://ceur-ws.org/Vol-1478/#paper18>,
+        <http://ceur-ws.org/Vol-1478/#paper19>,
+        <http://ceur-ws.org/Vol-1478/#paper2>,
+        <http://ceur-ws.org/Vol-1478/#paper3>,
+        <http://ceur-ws.org/Vol-1478/#paper4>,
+        <http://ceur-ws.org/Vol-1478/#paper6>,
+        <http://ceur-ws.org/Vol-1478/#paper7>,
+        <http://ceur-ws.org/Vol-1478/#paper8>,
+        <http://ceur-ws.org/Vol-1478/#paper9> ;
+    ns3:hasSession <http://ceur-ws.org/Vol-1478/#KeynoteSpeakerPresentations>,
+        <http://ceur-ws.org/Vol-1478/#OverviewofSIMBig2015>,
+        <http://ceur-ws.org/Vol-1478/#Session1TextMiningandSocialNetworks>,
+        <http://ceur-ws.org/Vol-1478/#Session2SpecialTrackWebandTextIntelligence>,
+        <http://ceur-ws.org/Vol-1478/#Session3BiomedicalInformatics>,
+        <http://ceur-ws.org/Vol-1478/#Session4Databases>,
+        <http://ceur-ws.org/Vol-1478/#Session5BigData>,
+        <http://ceur-ws.org/Vol-1478/#Session6Posters> ;
+    ns8:issued "2015-10-14T00:00:00+00:00"^^xsd:dateTime ;
+    ns1:presentedAt <http://ceur-ws.org/Vol-1478/#event> ;
+    ns4:editor <http://ceur-ws.org/Vol-1478/#HugoiAlatrista-Salas>,
+        <http://ceur-ws.org/Vol-1478/#JuaniAntonioiLossio-Ventura> .
 

@@ -1,37 +1,389 @@
-@prefix ns1: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns2: <http://www.w3.org/2002/07/owl#> .
-@prefix ns3: <http://purl.org/dc/elements/1.1/> .
+@prefix ns1: <http://www.w3.org/2002/07/owl#> .
+@prefix ns2: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns3: <http://purl.org/dc/elements/1.1/#> .
 @prefix ns4: <http://purl.org/ontology/bibo/#> .
-@prefix ns5: <http://xmlns.com/foaf/0.1/> .
-@prefix ns6: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns7: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns5: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns6: <http://xmlns.com/foaf/0.1/> .
+@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
 @prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns9: <http://purl.org/dc/elements/1.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1144/> a ns1:Proceedings ;
-    ns8:issued "2014-04-12T00:00:00+00:00"^^xsd:dateTime ;
-    ns4:presentedAt <http://ceur-ws.org/Vol-1144/#event> ;
-    ns7:editor <http://ceur-ws.org/Vol-1144/#AtsushiiInoue>,
-        <http://ceur-ws.org/Vol-1144/#PauliDePalma> .
+<http://ceur-ws.org/Vol-1144/#AlbertiEsterline> a ns6:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/AlbertiEsterline> ;
+    ns6:made <http://ceur-ws.org/Vol-1144/#paper3> ;
+    ns6:name "Albert Esterline" .
 
-<http://ceur-ws.org/Vol-1144/#AtsushiiInoue> a ns5:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/AtsushiiInoue> ;
-    ns5:name "Atsushi Inoue" .
+<http://ceur-ws.org/Vol-1144/#AncaiRalescu> a ns6:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/AncaiRalescu> ;
+    ns6:made <http://ceur-ws.org/Vol-1144/#paper9> ;
+    ns6:name "Anca Ralescu" .
 
-<http://ceur-ws.org/Vol-1144/#PauliDePalma> a ns5:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/PauliDePalma> ;
-    ns5:name "Paul DePalma" .
+<http://ceur-ws.org/Vol-1144/#Chang-HwaniLee> a ns6:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/Chang-HwaniLee> ;
+    ns6:made <http://ceur-ws.org/Vol-1144/#paper4> ;
+    ns6:name "Chang-Hwan Lee" .
 
-<http://ceur-ws.org/Vol-1144/#event> a ns1:WorkshopEvent ;
-    ns1:hasLocation <http://dbpedia.org/resource/United_States> ;
-    ns1:hasPart <http://ceur-ws.org/Vol-1144/#part-ws> ;
-    ns1:isSubEventOf <http://ceur-ws.org/Vol-1144/#conf> ;
-    ns6:beginsAtDatetime "2014-04-26T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:endsAtDatetime "2014-04-26T00:00:00+00:00"^^xsd:dateTime ;
-    ns3:license "http://choosealicense.com/licenses/no-license/" ;
+<http://ceur-ws.org/Vol-1144/#DaniTappan> a ns6:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/DaniTappan> ;
+    ns6:made <http://ceur-ws.org/Vol-1144/#paper7> ;
+    ns6:name "Dan Tappan" .
+
+<http://ceur-ws.org/Vol-1144/#GabrieliFerrer> a ns6:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/GabrieliFerrer> ;
+    ns6:made <http://ceur-ws.org/Vol-1144/#paper6> ;
+    ns6:name "Gabriel Ferrer" .
+
+<http://ceur-ws.org/Vol-1144/#GerdaiBortsova> a ns6:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/GerdaiBortsova> ;
+    ns6:made <http://ceur-ws.org/Vol-1144/#paper1> ;
+    ns6:name "Gerda Bortsova" .
+
+<http://ceur-ws.org/Vol-1144/#GerryiDozier> a ns6:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/GerryiDozier> ;
+    ns6:made <http://ceur-ws.org/Vol-1144/#paper3> ;
+    ns6:name "Gerry Dozier" .
+
+<http://ceur-ws.org/Vol-1144/#IaniBeaver> a ns6:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/IaniBeaver> ;
+    ns6:made <http://ceur-ws.org/Vol-1144/#paper10> ;
+    ns6:name "Ian Beaver" .
+
+<http://ceur-ws.org/Vol-1144/#JungiHeeiKim> a ns6:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/JungiHeeiKim> ;
+    ns6:made <http://ceur-ws.org/Vol-1144/#paper5> ;
+    ns6:name "Jung Hee Kim" .
+
+<http://ceur-ws.org/Vol-1144/#KelviniBryant> a ns6:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/KelviniBryant> ;
+    ns6:made <http://ceur-ws.org/Vol-1144/#paper5> ;
+    ns6:name "Kelvin Bryant" .
+
+<http://ceur-ws.org/Vol-1144/#MattiHempleman> a ns6:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/MattiHempleman> ;
+    ns6:made <http://ceur-ws.org/Vol-1144/#paper7> ;
+    ns6:name "Matt Hempleman" .
+
+<http://ceur-ws.org/Vol-1144/#MelissaiDesjarlais> a ns6:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/MelissaiDesjarlais> ;
+    ns6:made <http://ceur-ws.org/Vol-1144/#paper5> ;
+    ns6:name "Melissa Desjarlais" .
+
+<http://ceur-ws.org/Vol-1144/#MicaylaiGoodrum> a ns6:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/MicaylaiGoodrum> ;
+    ns6:made <http://ceur-ws.org/Vol-1144/#paper5> ;
+    ns6:name "Micayla Goodrum" .
+
+<http://ceur-ws.org/Vol-1144/#MichaeliGlass> a ns6:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/MichaeliGlass> ;
+    ns6:made <http://ceur-ws.org/Vol-1144/#paper5> ;
+    ns6:name "Michael Glass" .
+
+<http://ceur-ws.org/Vol-1144/#NathaniSommer> a ns6:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/NathaniSommer> ;
+    ns6:made <http://ceur-ws.org/Vol-1144/#paper9> ;
+    ns6:name "Nathan Sommer" .
+
+<http://ceur-ws.org/Vol-1144/#NoriakiiNakagawa> a ns6:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/NoriakiiNakagawa> ;
+    ns6:made <http://ceur-ws.org/Vol-1144/#abstract1> ;
+    ns6:name "Noriaki Nakagawa" .
+
+<http://ceur-ws.org/Vol-1144/#PauliDePalma> a ns6:Person ;
+    ns5:affiliation "" ;
+    ns1:sameAs <http://ceur-ws.org/persons/PauliDePalma> ;
+    ns6:name "Paul DePalma" .
+
+<http://ceur-ws.org/Vol-1144/#RobertiHammelliIi> a ns6:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/RobertiHammelliIi> ;
+    ns6:made <http://ceur-ws.org/Vol-1144/#paper8> ;
+    ns6:name "Robert Hammell Ii" .
+
+<http://ceur-ws.org/Vol-1144/#ShengiMiao> a ns6:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/ShengiMiao> ;
+    ns6:made <http://ceur-ws.org/Vol-1144/#paper8> ;
+    ns6:name "Sheng Miao" .
+
+<http://ceur-ws.org/Vol-1144/#SyojiiKobashi> a ns6:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/SyojiiKobashi> ;
+    ns6:made <http://ceur-ws.org/Vol-1144/#abstract2> ;
+    ns6:name "Syoji Kobashi" .
+
+<http://ceur-ws.org/Vol-1144/#ThomasiMartin> a ns6:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/ThomasiMartin> ;
+    ns6:made <http://ceur-ws.org/Vol-1144/#paper5> ;
+    ns6:name "Thomas Martin" .
+
+<http://ceur-ws.org/Vol-1144/#TimothyiHanratty> a ns6:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/TimothyiHanratty> ;
+    ns6:made <http://ceur-ws.org/Vol-1144/#paper8> ;
+    ns6:name "Timothy Hanratty" .
+
+<http://ceur-ws.org/Vol-1144/#YukiiNakagawa> a ns6:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/YukiiNakagawa> ;
+    ns6:made <http://ceur-ws.org/Vol-1144/#abstract1> ;
+    ns6:name "Yuki Nakagawa" .
+
+<http://ceur-ws.org/Vol-1144/#ZiyingiTang> a ns6:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/ZiyingiTang> ;
+    ns6:made <http://ceur-ws.org/Vol-1144/#paper8> ;
+    ns6:name "Ziying Tang" .
+
+<http://ceur-ws.org/Vol-1144/#event> a ns2:WorkshopEvent ;
+    ns2:hasLocation <http://dbpedia.org/resource/United_States> ;
+    ns2:hasPart <http://ceur-ws.org/Vol-1144/#part-MAICS> ;
+    ns2:isSubEventOf <http://ceur-ws.org/Vol-1144/#conf> ;
+    ns7:beginsAtDatetime "2014-04-26T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:endsAtDatetime "2014-04-26T00:00:00+00:00"^^xsd:dateTime ;
+    ns9:license "http://choosealicense.com/licenses/no-license/" ;
     rdfs:seeAlso <http://ceur-ws.org/Vol-710/#event>,
         <http://ceur-ws.org/Vol-841/#event> .
+
+<http://ceur-ws.org/Vol-1144/#AtsushiiInoue> a ns6:Person ;
+    ns5:affiliation "" ;
+    ns1:sameAs <http://ceur-ws.org/persons/AtsushiiInoue> ;
+    ns6:made <http://ceur-ws.org/Vol-1144/#paper2> ;
+    ns6:name "Atsushi Inoue" .
+
+<http://ceur-ws.org/Vol-1144/#ChayaniChakrabarti> a ns6:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/ChayaniChakrabarti> ;
+    ns6:made <http://ceur-ws.org/Vol-1144/#paper12>,
+        <http://ceur-ws.org/Vol-1144/#paper13> ;
+    ns6:name "Chayan Chakrabarti" .
+
+<http://ceur-ws.org/Vol-1144/#GeorgeiLuger> a ns6:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/GeorgeiLuger> ;
+    ns6:made <http://ceur-ws.org/Vol-1144/#paper12>,
+        <http://ceur-ws.org/Vol-1144/#paper13> ;
+    ns6:name "George Luger" .
+
+<http://ceur-ws.org/Vol-1144/#HiroharuiKawanaka> a ns6:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/HiroharuiKawanaka> ;
+    ns6:made <http://ceur-ws.org/Vol-1144/#abstract3>,
+        <http://ceur-ws.org/Vol-1144/#paper2> ;
+    ns6:name "Hiroharu Kawanaka" .
+
+<http://ceur-ws.org/Vol-1144/#JoeiDumoulin> a ns6:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/JoeiDumoulin> ;
+    ns6:made <http://ceur-ws.org/Vol-1144/#paper10>,
+        <http://ceur-ws.org/Vol-1144/#paper11> ;
+    ns6:name "Joe Dumoulin" .
+
+<http://ceur-ws.org/Vol-1144/#PakizariShamoi> a ns6:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/PakizariShamoi> ;
+    ns6:made <http://ceur-ws.org/Vol-1144/#paper1>,
+        <http://ceur-ws.org/Vol-1144/#paper2> ;
+    ns6:name "Pakizar Shamoi" .
+
+<http://ceur-ws.org/Vol-1144/#abstract2> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1144/> ;
+    ns3:title "Invited Lecture 1:" ;
+    ns4:endPage 2 ;
+    ns4:numPages 1 ;
+    ns4:section <http://ceur-ws.org/Vol-1144/#PlenaryandInvitedLectures> ;
+    ns4:startPage 2 ;
+    ns5:author <http://ceur-ws.org/Vol-1144/#SyojiiKobashi> .
+
+<http://ceur-ws.org/Vol-1144/#abstract3> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1144/> ;
+    ns3:title "Invited Lecture 2:" ;
+    ns4:endPage 3 ;
+    ns4:numPages 1 ;
+    ns4:section <http://ceur-ws.org/Vol-1144/#PlenaryandInvitedLectures> ;
+    ns4:startPage 3 ;
+    ns5:author <http://ceur-ws.org/Vol-1144/#HiroharuiKawanaka> .
+
+<http://ceur-ws.org/Vol-1144/#paper11> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1144/> ;
+    ns3:title "Using Multiple Classifiers to Improve Intent Recognition in Human Chats" ;
+    ns4:endPage 79 ;
+    ns4:numPages 6 ;
+    ns4:section <http://ceur-ws.org/Vol-1144/#SpecialSessionExtractingConceptsandRelationsfromNoisyHumanData> ;
+    ns4:startPage 74 ;
+    ns5:author <http://ceur-ws.org/Vol-1144/#JoeiDumoulin> .
+
+<http://ceur-ws.org/Vol-1144/#paper4> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1144/> ;
+    ns3:title "A New Fine-Grained Weighting Method in Multi-Label Text Classification" ;
+    ns4:endPage 30 ;
+    ns4:numPages 5 ;
+    ns4:section <http://ceur-ws.org/Vol-1144/#AdvancesinModernArtificialIntelligenceII> ;
+    ns4:startPage 26 ;
+    ns5:author <http://ceur-ws.org/Vol-1144/#Chang-HwaniLee> .
+
+<http://ceur-ws.org/Vol-1144/#paper6> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1144/> ;
+    ns3:title "Creating Visual Reactive Robot Behaviors Using Growing Neural Gas" ;
+    ns4:endPage 44 ;
+    ns4:numPages 6 ;
+    ns4:section <http://ceur-ws.org/Vol-1144/#AdvancesinModernArtificialIntelligenceII> ;
+    ns4:startPage 39 ;
+    ns5:author <http://ceur-ws.org/Vol-1144/#GabrieliFerrer> .
+
+<http://ceur-ws.org/Vol-1144/#SpecialSessionMAICS2014BestStudentPaperCompetition> a ns2:SessionEvent ;
+    ns2:partOf <http://ceur-ws.org/Vol-1144/> ;
+    ns3:title "Special Session: MAICS2014 Best Student Paper Competition" .
+
+<http://ceur-ws.org/Vol-1144/#abstract1> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1144/> ;
+    ns3:title "Plenary Lecture:" ;
+    ns4:endPage 1 ;
+    ns4:numPages 1 ;
+    ns4:section <http://ceur-ws.org/Vol-1144/#PlenaryandInvitedLectures> ;
+    ns4:startPage 1 ;
+    ns5:author <http://ceur-ws.org/Vol-1144/#NoriakiiNakagawa>,
+        <http://ceur-ws.org/Vol-1144/#YukiiNakagawa> .
+
+<http://ceur-ws.org/Vol-1144/#paper1> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1144/> ;
+    ns3:title "Derivation of Complex Linguistic Summaries from Databases for a More Human Consistent Data Analysis" ;
+    ns4:endPage 10 ;
+    ns4:numPages 7 ;
+    ns4:section <http://ceur-ws.org/Vol-1144/#AdvancesinModernArtificialIntelligenceI> ;
+    ns4:startPage 4 ;
+    ns5:author <http://ceur-ws.org/Vol-1144/#GerdaiBortsova>,
+        <http://ceur-ws.org/Vol-1144/#PakizariShamoi> .
+
+<http://ceur-ws.org/Vol-1144/#paper10> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1144/> ;
+    ns3:title "Scaling User Preference Learning in Near Real-Time to Large Datasets" ;
+    ns4:endPage 73 ;
+    ns4:numPages 6 ;
+    ns4:section <http://ceur-ws.org/Vol-1144/#SpecialSessionExtractingConceptsandRelationsfromNoisyHumanData> ;
+    ns4:startPage 68 ;
+    ns5:author <http://ceur-ws.org/Vol-1144/#IaniBeaver>,
+        <http://ceur-ws.org/Vol-1144/#JoeiDumoulin> .
+
+<http://ceur-ws.org/Vol-1144/#paper12> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1144/> ;
+    ns3:title "An Anatomy for Artificial Conversation Generation in the Customer Service Domain" ;
+    ns4:endPage 85 ;
+    ns4:numPages 6 ;
+    ns4:section <http://ceur-ws.org/Vol-1144/#SpecialSessionExtractingConceptsandRelationsfromNoisyHumanData> ;
+    ns4:startPage 80 ;
+    ns5:author <http://ceur-ws.org/Vol-1144/#ChayaniChakrabarti>,
+        <http://ceur-ws.org/Vol-1144/#GeorgeiLuger> .
+
+<http://ceur-ws.org/Vol-1144/#paper13> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1144/> ;
+    ns3:title "Modern AI: Stochastic Models and an Epistemological Stance" ;
+    ns4:endPage 92 ;
+    ns4:numPages 7 ;
+    ns4:section <http://ceur-ws.org/Vol-1144/#SpecialSessionExtractingConceptsandRelationsfromNoisyHumanData> ;
+    ns4:startPage 86 ;
+    ns5:author <http://ceur-ws.org/Vol-1144/#ChayaniChakrabarti>,
+        <http://ceur-ws.org/Vol-1144/#GeorgeiLuger> .
+
+<http://ceur-ws.org/Vol-1144/#paper3> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1144/> ;
+    ns3:title "A Formal Framework for Identity in Cyber and Other Universes" ;
+    ns4:endPage 25 ;
+    ns4:numPages 8 ;
+    ns4:section <http://ceur-ws.org/Vol-1144/#AdvancesinModernArtificialIntelligenceI> ;
+    ns4:startPage 18 ;
+    ns5:author <http://ceur-ws.org/Vol-1144/#AlbertiEsterline>,
+        <http://ceur-ws.org/Vol-1144/#GerryiDozier> .
+
+<http://ceur-ws.org/Vol-1144/#paper7> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1144/> ;
+    ns3:title "Toward Introspective Human Versus Machine Learning of Simulated Airplane Flight Dynamics" ;
+    ns4:endPage 52 ;
+    ns4:numPages 8 ;
+    ns4:section <http://ceur-ws.org/Vol-1144/#AdvancesinModernArtificialIntelligenceII> ;
+    ns4:startPage 45 ;
+    ns5:author <http://ceur-ws.org/Vol-1144/#DaniTappan>,
+        <http://ceur-ws.org/Vol-1144/#MattiHempleman> .
+
+<http://ceur-ws.org/Vol-1144/#paper9> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1144/> ;
+    ns3:title "Developing a Machine Learning Approach to Controlling Musical Synthesizer Parameters in Real-Time Live Performance" ;
+    ns4:endPage 67 ;
+    ns4:numPages 7 ;
+    ns4:section <http://ceur-ws.org/Vol-1144/#SpecialSessionMAICS2014BestStudentPaperCompetition> ;
+    ns4:startPage 61 ;
+    ns5:author <http://ceur-ws.org/Vol-1144/#AncaiRalescu>,
+        <http://ceur-ws.org/Vol-1144/#NathaniSommer> .
+
+<http://ceur-ws.org/Vol-1144/#AdvancesinModernArtificialIntelligenceI> a ns2:SessionEvent ;
+    ns2:partOf <http://ceur-ws.org/Vol-1144/> ;
+    ns3:title "Advances in Modern Artificial Intelligence I" .
+
+<http://ceur-ws.org/Vol-1144/#PlenaryandInvitedLectures> a ns2:SessionEvent ;
+    ns2:partOf <http://ceur-ws.org/Vol-1144/> ;
+    ns3:title "Plenary and Invited Lectures" .
+
+<http://ceur-ws.org/Vol-1144/#paper2> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1144/> ;
+    ns3:title "Fuzzification of HSI Color Space and its Use in Apparel Coordination" ;
+    ns4:endPage 17 ;
+    ns4:numPages 7 ;
+    ns4:section <http://ceur-ws.org/Vol-1144/#AdvancesinModernArtificialIntelligenceI> ;
+    ns4:startPage 11 ;
+    ns5:author <http://ceur-ws.org/Vol-1144/#AtsushiiInoue>,
+        <http://ceur-ws.org/Vol-1144/#HiroharuiKawanaka>,
+        <http://ceur-ws.org/Vol-1144/#PakizariShamoi> .
+
+<http://ceur-ws.org/Vol-1144/#AdvancesinModernArtificialIntelligenceII> a ns2:SessionEvent ;
+    ns2:partOf <http://ceur-ws.org/Vol-1144/> ;
+    ns3:title "Advances in Modern Artificial Intelligence II" .
+
+<http://ceur-ws.org/Vol-1144/#SpecialSessionExtractingConceptsandRelationsfromNoisyHumanData> a ns2:SessionEvent ;
+    ns2:partOf <http://ceur-ws.org/Vol-1144/> ;
+    ns3:title "Special Session: Extracting Concepts and Relations from Noisy Human Data" .
+
+<http://ceur-ws.org/Vol-1144/#paper8> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1144/> ;
+    ns3:title "Comparison of Fuzzy Membership Functions for Value of Information Determination" ;
+    ns4:endPage 60 ;
+    ns4:numPages 8 ;
+    ns4:section <http://ceur-ws.org/Vol-1144/#SpecialSessionMAICS2014BestStudentPaperCompetition> ;
+    ns4:startPage 53 ;
+    ns5:author <http://ceur-ws.org/Vol-1144/#RobertiHammelliIi>,
+        <http://ceur-ws.org/Vol-1144/#ShengiMiao>,
+        <http://ceur-ws.org/Vol-1144/#TimothyiHanratty>,
+        <http://ceur-ws.org/Vol-1144/#ZiyingiTang> .
+
+<http://ceur-ws.org/Vol-1144/#paper5> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1144/> ;
+    ns3:title "Toward Measurement of Conversational Interactivity in COMPS Computer Mediated Problem-Solving Dialogues" ;
+    ns4:endPage 38 ;
+    ns4:numPages 8 ;
+    ns4:section <http://ceur-ws.org/Vol-1144/#AdvancesinModernArtificialIntelligenceII> ;
+    ns4:startPage 31 ;
+    ns5:author <http://ceur-ws.org/Vol-1144/#JungiHeeiKim>,
+        <http://ceur-ws.org/Vol-1144/#KelviniBryant>,
+        <http://ceur-ws.org/Vol-1144/#MelissaiDesjarlais>,
+        <http://ceur-ws.org/Vol-1144/#MicaylaiGoodrum>,
+        <http://ceur-ws.org/Vol-1144/#MichaeliGlass>,
+        <http://ceur-ws.org/Vol-1144/#ThomasiMartin> .
+
+<http://ceur-ws.org/Vol-1144/> a ns2:Proceedings ;
+    ns2:hasPart <http://ceur-ws.org/Vol-1144/#abstract1>,
+        <http://ceur-ws.org/Vol-1144/#abstract2>,
+        <http://ceur-ws.org/Vol-1144/#abstract3>,
+        <http://ceur-ws.org/Vol-1144/#paper1>,
+        <http://ceur-ws.org/Vol-1144/#paper10>,
+        <http://ceur-ws.org/Vol-1144/#paper11>,
+        <http://ceur-ws.org/Vol-1144/#paper12>,
+        <http://ceur-ws.org/Vol-1144/#paper13>,
+        <http://ceur-ws.org/Vol-1144/#paper2>,
+        <http://ceur-ws.org/Vol-1144/#paper3>,
+        <http://ceur-ws.org/Vol-1144/#paper4>,
+        <http://ceur-ws.org/Vol-1144/#paper5>,
+        <http://ceur-ws.org/Vol-1144/#paper6>,
+        <http://ceur-ws.org/Vol-1144/#paper7>,
+        <http://ceur-ws.org/Vol-1144/#paper8>,
+        <http://ceur-ws.org/Vol-1144/#paper9> ;
+    ns2:hasSession <http://ceur-ws.org/Vol-1144/#AdvancesinModernArtificialIntelligenceI>,
+        <http://ceur-ws.org/Vol-1144/#AdvancesinModernArtificialIntelligenceII>,
+        <http://ceur-ws.org/Vol-1144/#PlenaryandInvitedLectures>,
+        <http://ceur-ws.org/Vol-1144/#SpecialSessionExtractingConceptsandRelationsfromNoisyHumanData>,
+        <http://ceur-ws.org/Vol-1144/#SpecialSessionMAICS2014BestStudentPaperCompetition> ;
+    ns8:issued "2014-04-12T00:00:00+00:00"^^xsd:dateTime ;
+    ns4:presentedAt <http://ceur-ws.org/Vol-1144/#event> ;
+    ns5:editor <http://ceur-ws.org/Vol-1144/#AtsushiiInoue>,
+        <http://ceur-ws.org/Vol-1144/#PauliDePalma> .
 

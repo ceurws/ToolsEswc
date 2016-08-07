@@ -1,12 +1,12 @@
 @prefix ns1: <http://xmlns.com/foaf/0.1/> .
-@prefix ns2: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns3: <http://purl.org/ontology/bibo/#> .
+@prefix ns2: <http://purl.org/ontology/bibo/#> .
+@prefix ns3: <http://swrc.ontoware.org/ontology/#> .
 @prefix ns4: <http://www.w3.org/2002/07/owl#> .
-@prefix ns5: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns6: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns5: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns6: <http://data.semanticweb.org/ns/swc/ontology/#> .
 @prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns8: <http://purl.org/dc/elements/1.1/> .
-@prefix ns9: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns9: <http://purl.org/dc/elements/1.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -133,7 +133,7 @@
     ns1:name "Matthew D. Johnson" .
 
 <http://ceur-ws.org/Vol-732/#MilosiKravcik> a ns1:Person ;
-    ns5:affiliation "" ;
+    ns3:affiliation "" ;
     ns4:sameAs <http://ceur-ws.org/persons/MilosiKravcik> ;
     ns1:name "Milos Kravcik" .
 
@@ -202,175 +202,175 @@
     ns1:made <http://ceur-ws.org/Vol-732/#paper11> ;
     ns1:name "Vanessa Frias-Martinez" .
 
-<http://ceur-ws.org/Vol-732/#event> a ns2:WorkshopEvent ;
-    ns2:hasLocation <http://dbpedia.org/resource/Spain> ;
-    ns2:hasPart <http://ceur-ws.org/Vol-732/#part-CEUR-WS> ;
-    ns2:isSubEventOf <http://ceur-ws.org/Vol-732/#conf> ;
-    ns7:beginsAtDatetime "2011-06-19T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:endsAtDatetime "2011-06-19T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:license "http://choosealicense.com/licenses/no-license/" .
+<http://ceur-ws.org/Vol-732/#event> a ns6:WorkshopEvent ;
+    ns6:hasLocation <http://dbpedia.org/resource/Spain> ;
+    ns6:hasPart <http://ceur-ws.org/Vol-732/#part-PALE> ;
+    ns6:isSubEventOf <http://ceur-ws.org/Vol-732/#conf> ;
+    ns7:beginsAtDatetime "2011-07-15T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:endsAtDatetime "2011-07-15T00:00:00+00:00"^^xsd:dateTime ;
+    ns9:license "http://choosealicense.com/licenses/no-license/" .
 
 <http://ceur-ws.org/Vol-732/#DianaiPerez-Marin> a ns1:Person ;
-    ns5:affiliation "" ;
+    ns3:affiliation "" ;
     ns4:sameAs <http://ceur-ws.org/persons/DianaiPerez-Marin> ;
     ns1:made <http://ceur-ws.org/Vol-732/#paper3> ;
     ns1:name "Diana Perez-Marin" .
 
 <http://ceur-ws.org/Vol-732/#OlgaiC.iSantos> a ns1:Person ;
-    ns5:affiliation "" ;
+    ns3:affiliation "" ;
     ns4:sameAs <http://ceur-ws.org/persons/OlgaiC.iSantos> ;
     ns1:made <http://ceur-ws.org/Vol-732/#paper12> ;
     ns1:name "Olga C. Santos" .
 
-<http://ceur-ws.org/Vol-732/#paper1> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-732/> ;
-    ns6:title "Processes in Learning" ;
-    ns3:endPage 2 ;
-    ns3:numPages 1 ;
-    ns3:section <http://ceur-ws.org/Vol-732/#Session1AdaptationandPersonalizationinEBLearningusingPedagogicConversationalAgentsAPLEC> ;
-    ns3:startPage 2 ;
-    ns5:author <http://ceur-ws.org/Vol-732/#PauliCohen> .
+<http://ceur-ws.org/Vol-732/#paper1> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-732/> ;
+    ns5:title "Processes in Learning" ;
+    ns2:endPage 2 ;
+    ns2:numPages 1 ;
+    ns2:section <http://ceur-ws.org/Vol-732/#Session1AdaptationandPersonalizationinEBLearningusingPedagogicConversationalAgentsAPLEC> ;
+    ns2:startPage 2 ;
+    ns3:author <http://ceur-ws.org/Vol-732/#PauliCohen> .
 
-<http://ceur-ws.org/Vol-732/#paper2> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-732/> ;
-    ns6:title "Understanding How Humans Teach Robots" ;
-    ns3:endPage 3 ;
-    ns3:numPages 1 ;
-    ns3:section <http://ceur-ws.org/Vol-732/#Session1AdaptationandPersonalizationinEBLearningusingPedagogicConversationalAgentsAPLEC> ;
-    ns3:startPage 3 ;
-    ns5:author <http://ceur-ws.org/Vol-732/#TasneemiKaochar> .
+<http://ceur-ws.org/Vol-732/#paper2> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-732/> ;
+    ns5:title "Understanding How Humans Teach Robots" ;
+    ns2:endPage 3 ;
+    ns2:numPages 1 ;
+    ns2:section <http://ceur-ws.org/Vol-732/#Session1AdaptationandPersonalizationinEBLearningusingPedagogicConversationalAgentsAPLEC> ;
+    ns2:startPage 3 ;
+    ns3:author <http://ceur-ws.org/Vol-732/#TasneemiKaochar> .
 
-<http://ceur-ws.org/Vol-732/#paper11> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-732/> ;
-    ns6:title "Personalization Of Mobile Learning Tools For Low-Income Populations" ;
-    ns3:endPage 53 ;
-    ns3:numPages 6 ;
-    ns3:section <http://ceur-ws.org/Vol-732/#Session3TowardsUserModelingandAdaptiveSystemsforAllTUMASA> ;
-    ns3:startPage 48 ;
-    ns5:author <http://ceur-ws.org/Vol-732/#JesusiVirseda>,
+<http://ceur-ws.org/Vol-732/#paper11> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-732/> ;
+    ns5:title "Personalization Of Mobile Learning Tools For Low-Income Populations" ;
+    ns2:endPage 53 ;
+    ns2:numPages 6 ;
+    ns2:section <http://ceur-ws.org/Vol-732/#Session3TowardsUserModelingandAdaptiveSystemsforAllTUMASA> ;
+    ns2:startPage 48 ;
+    ns3:author <http://ceur-ws.org/Vol-732/#JesusiVirseda>,
         <http://ceur-ws.org/Vol-732/#VanessaiFrias-Martinez> .
 
-<http://ceur-ws.org/Vol-732/#paper3> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-732/> ;
-    ns6:title "Automatic Generation of Questions Adapted to the Personality and Learning Style of the Students" ;
-    ns3:endPage 7 ;
-    ns3:numPages 4 ;
-    ns3:section <http://ceur-ws.org/Vol-732/#Session1AdaptationandPersonalizationinEBLearningusingPedagogicConversationalAgentsAPLEC> ;
-    ns3:startPage 4 ;
-    ns5:author <http://ceur-ws.org/Vol-732/#AlbertoiRedondo-Hernandez>,
+<http://ceur-ws.org/Vol-732/#paper3> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-732/> ;
+    ns5:title "Automatic Generation of Questions Adapted to the Personality and Learning Style of the Students" ;
+    ns2:endPage 7 ;
+    ns2:numPages 4 ;
+    ns2:section <http://ceur-ws.org/Vol-732/#Session1AdaptationandPersonalizationinEBLearningusingPedagogicConversationalAgentsAPLEC> ;
+    ns2:startPage 4 ;
+    ns3:author <http://ceur-ws.org/Vol-732/#AlbertoiRedondo-Hernandez>,
         <http://ceur-ws.org/Vol-732/#DianaiPerez-Marin> .
 
-<http://ceur-ws.org/Vol-732/#Session3TowardsUserModelingandAdaptiveSystemsforAllTUMASA> a ns2:SessionEvent ;
-    ns2:partOf <http://ceur-ws.org/Vol-732/> ;
-    ns6:title "Session 3: Towards User Modeling and Adaptive Systems for All (TUMAS-A)" .
+<http://ceur-ws.org/Vol-732/#Session3TowardsUserModelingandAdaptiveSystemsforAllTUMASA> a ns6:SessionEvent ;
+    ns6:partOf <http://ceur-ws.org/Vol-732/> ;
+    ns5:title "Session 3: Towards User Modeling and Adaptive Systems for All (TUMAS-A)" .
 
-<http://ceur-ws.org/Vol-732/#paper5> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-732/> ;
-    ns6:title "Context-Aware Factorization for Personalized Student's Task Recommendation" ;
-    ns3:endPage 18 ;
-    ns3:numPages 6 ;
-    ns3:section <http://ceur-ws.org/Vol-732/#Session2PersonalizingResponsiveOpenLearningEnvironmentsROLE> ;
-    ns3:startPage 13 ;
-    ns5:author <http://ceur-ws.org/Vol-732/#LarsiSchmidt-Thieme>,
+<http://ceur-ws.org/Vol-732/#paper5> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-732/> ;
+    ns5:title "Context-Aware Factorization for Personalized Student's Task Recommendation" ;
+    ns2:endPage 18 ;
+    ns2:numPages 6 ;
+    ns2:section <http://ceur-ws.org/Vol-732/#Session2PersonalizingResponsiveOpenLearningEnvironmentsROLE> ;
+    ns2:startPage 13 ;
+    ns3:author <http://ceur-ws.org/Vol-732/#LarsiSchmidt-Thieme>,
         <http://ceur-ws.org/Vol-732/#NguyeniThai-Nghe>,
         <http://ceur-ws.org/Vol-732/#TomasiHorvath> .
 
-<http://ceur-ws.org/Vol-732/#paper7> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-732/> ;
-    ns6:title "Understanding Student Attention to Adaptive Hints with Eye-Tracking" ;
-    ns3:endPage 29 ;
-    ns3:numPages 5 ;
-    ns3:section <http://ceur-ws.org/Vol-732/#Session2PersonalizingResponsiveOpenLearningEnvironmentsROLE> ;
-    ns3:startPage 25 ;
-    ns5:author <http://ceur-ws.org/Vol-732/#AlirezaiDavoodi>,
+<http://ceur-ws.org/Vol-732/#paper7> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-732/> ;
+    ns5:title "Understanding Student Attention to Adaptive Hints with Eye-Tracking" ;
+    ns2:endPage 29 ;
+    ns2:numPages 5 ;
+    ns2:section <http://ceur-ws.org/Vol-732/#Session2PersonalizingResponsiveOpenLearningEnvironmentsROLE> ;
+    ns2:startPage 25 ;
+    ns3:author <http://ceur-ws.org/Vol-732/#AlirezaiDavoodi>,
         <http://ceur-ws.org/Vol-732/#CristinaiConati>,
         <http://ceur-ws.org/Vol-732/#MaryiMuir> .
 
-<http://ceur-ws.org/Vol-732/#paper8> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-732/> ;
-    ns6:title "Improving Searching and Browsing Capabilities of Learning Object Repositories" ;
-    ns3:endPage 35 ;
-    ns3:numPages 6 ;
-    ns3:section <http://ceur-ws.org/Vol-732/#Session2PersonalizingResponsiveOpenLearningEnvironmentsROLE> ;
-    ns3:startPage 30 ;
-    ns5:author <http://ceur-ws.org/Vol-732/#JordiiConesa>,
+<http://ceur-ws.org/Vol-732/#paper8> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-732/> ;
+    ns5:title "Improving Searching and Browsing Capabilities of Learning Object Repositories" ;
+    ns2:endPage 35 ;
+    ns2:numPages 6 ;
+    ns2:section <http://ceur-ws.org/Vol-732/#Session2PersonalizingResponsiveOpenLearningEnvironmentsROLE> ;
+    ns2:startPage 30 ;
+    ns3:author <http://ceur-ws.org/Vol-732/#JordiiConesa>,
         <http://ceur-ws.org/Vol-732/#JuliaiMinguillon>,
         <http://ceur-ws.org/Vol-732/#M.iElenaiRodriguez> .
 
-<http://ceur-ws.org/Vol-732/#Session1AdaptationandPersonalizationinEBLearningusingPedagogicConversationalAgentsAPLEC> a ns2:SessionEvent ;
-    ns2:partOf <http://ceur-ws.org/Vol-732/> ;
-    ns6:title "Session 1: Adaptation and Personalization in E-B/Learning using Pedagogic Conversational Agents (APLEC)" .
+<http://ceur-ws.org/Vol-732/#Session1AdaptationandPersonalizationinEBLearningusingPedagogicConversationalAgentsAPLEC> a ns6:SessionEvent ;
+    ns6:partOf <http://ceur-ws.org/Vol-732/> ;
+    ns5:title "Session 1: Adaptation and Personalization in E-B/Learning using Pedagogic Conversational Agents (APLEC)" .
 
-<http://ceur-ws.org/Vol-732/#paper10> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-732/> ;
-    ns6:title "Adaptive Activities for Inclusive Learning using Multitouch Tabletops: An approach" ;
-    ns3:endPage 47 ;
-    ns3:numPages 6 ;
-    ns3:section <http://ceur-ws.org/Vol-732/#Session3TowardsUserModelingandAdaptiveSystemsforAllTUMASA> ;
-    ns3:startPage 42 ;
-    ns5:author <http://ceur-ws.org/Vol-732/#DavidiRoldan>,
+<http://ceur-ws.org/Vol-732/#paper10> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-732/> ;
+    ns5:title "Adaptive Activities for Inclusive Learning using Multitouch Tabletops: An approach" ;
+    ns2:endPage 47 ;
+    ns2:numPages 6 ;
+    ns2:section <http://ceur-ws.org/Vol-732/#Session3TowardsUserModelingandAdaptiveSystemsforAllTUMASA> ;
+    ns2:startPage 42 ;
+    ns3:author <http://ceur-ws.org/Vol-732/#DavidiRoldan>,
         <http://ceur-ws.org/Vol-732/#EstefaniaiMartin>,
         <http://ceur-ws.org/Vol-732/#ManueliGarcia-Herranz>,
         <http://ceur-ws.org/Vol-732/#PabloiA.iHaya> .
 
-<http://ceur-ws.org/Vol-732/#paper6> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-732/> ;
-    ns6:title "Epistemic Beliefs and Open Learner Models" ;
-    ns3:endPage 24 ;
-    ns3:numPages 6 ;
-    ns3:section <http://ceur-ws.org/Vol-732/#Session2PersonalizingResponsiveOpenLearningEnvironmentsROLE> ;
-    ns3:startPage 19 ;
-    ns5:author <http://ceur-ws.org/Vol-732/#MatthewiD.iJohnson>,
+<http://ceur-ws.org/Vol-732/#paper6> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-732/> ;
+    ns5:title "Epistemic Beliefs and Open Learner Models" ;
+    ns2:endPage 24 ;
+    ns2:numPages 6 ;
+    ns2:section <http://ceur-ws.org/Vol-732/#Session2PersonalizingResponsiveOpenLearningEnvironmentsROLE> ;
+    ns2:startPage 19 ;
+    ns3:author <http://ceur-ws.org/Vol-732/#MatthewiD.iJohnson>,
         <http://ceur-ws.org/Vol-732/#NobukoiFujita>,
         <http://ceur-ws.org/Vol-732/#PeteriReimann>,
         <http://ceur-ws.org/Vol-732/#SusaniBull> .
 
-<http://ceur-ws.org/Vol-732/#Session2PersonalizingResponsiveOpenLearningEnvironmentsROLE> a ns2:SessionEvent ;
-    ns2:partOf <http://ceur-ws.org/Vol-732/> ;
-    ns6:title "Session 2: Personalizing Responsive Open Learning Environments (ROLE)" .
+<http://ceur-ws.org/Vol-732/#Session2PersonalizingResponsiveOpenLearningEnvironmentsROLE> a ns6:SessionEvent ;
+    ns6:partOf <http://ceur-ws.org/Vol-732/> ;
+    ns5:title "Session 2: Personalizing Responsive Open Learning Environments (ROLE)" .
 
-<http://ceur-ws.org/Vol-732/#paper12> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-732/> ;
-    ns6:title "Open Issues in Personalized Inclusive Learning Scenarios" ;
-    ns3:endPage 58 ;
-    ns3:numPages 5 ;
-    ns3:section <http://ceur-ws.org/Vol-732/#Session3TowardsUserModelingandAdaptiveSystemsforAllTUMASA> ;
-    ns3:startPage 54 ;
-    ns5:author <http://ceur-ws.org/Vol-732/#EmmanuelleiGutierreziyiRestrepo>,
+<http://ceur-ws.org/Vol-732/#paper12> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-732/> ;
+    ns5:title "Open Issues in Personalized Inclusive Learning Scenarios" ;
+    ns2:endPage 58 ;
+    ns2:numPages 5 ;
+    ns2:section <http://ceur-ws.org/Vol-732/#Session3TowardsUserModelingandAdaptiveSystemsforAllTUMASA> ;
+    ns2:startPage 54 ;
+    ns3:author <http://ceur-ws.org/Vol-732/#EmmanuelleiGutierreziyiRestrepo>,
         <http://ceur-ws.org/Vol-732/#JesusiG.iBoticario>,
         <http://ceur-ws.org/Vol-732/#OlgaiC.iSantos>,
         <http://ceur-ws.org/Vol-732/#RamoniFabregat>,
         <http://ceur-ws.org/Vol-732/#SilviaiBaldiris> .
 
-<http://ceur-ws.org/Vol-732/#paper9> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-732/> ;
-    ns6:title "Identifying Requirements for a Psycho-Pedagogical Mash-up Design for Personalising the Learning Environment" ;
-    ns3:endPage 40 ;
-    ns3:numPages 5 ;
-    ns3:section <http://ceur-ws.org/Vol-732/#Session2PersonalizingResponsiveOpenLearningEnvironmentsROLE> ;
-    ns3:startPage 36 ;
-    ns5:author <http://ceur-ws.org/Vol-732/#AlexanderiNussbaumer>,
+<http://ceur-ws.org/Vol-732/#paper9> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-732/> ;
+    ns5:title "Identifying Requirements for a Psycho-Pedagogical Mash-up Design for Personalising the Learning Environment" ;
+    ns2:endPage 40 ;
+    ns2:numPages 5 ;
+    ns2:section <http://ceur-ws.org/Vol-732/#Session2PersonalizingResponsiveOpenLearningEnvironmentsROLE> ;
+    ns2:startPage 36 ;
+    ns3:author <http://ceur-ws.org/Vol-732/#AlexanderiNussbaumer>,
         <http://ceur-ws.org/Vol-732/#AndreasiKiefel>,
         <http://ceur-ws.org/Vol-732/#DietrichiAlbert>,
         <http://ceur-ws.org/Vol-732/#MarceliBerthold>,
         <http://ceur-ws.org/Vol-732/#SergeiiPachtchenko> .
 
-<http://ceur-ws.org/Vol-732/#paper4> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-732/> ;
-    ns6:title "Social Robots in Learning Environments: a Case Study of an Empathic Chess Companion" ;
-    ns3:endPage 12 ;
-    ns3:numPages 5 ;
-    ns3:section <http://ceur-ws.org/Vol-732/#Session1AdaptationandPersonalizationinEBLearningusingPedagogicConversationalAgentsAPLEC> ;
-    ns3:startPage 8 ;
-    ns5:author <http://ceur-ws.org/Vol-732/#AnaiPaiva>,
+<http://ceur-ws.org/Vol-732/#paper4> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-732/> ;
+    ns5:title "Social Robots in Learning Environments: a Case Study of an Empathic Chess Companion" ;
+    ns2:endPage 12 ;
+    ns2:numPages 5 ;
+    ns2:section <http://ceur-ws.org/Vol-732/#Session1AdaptationandPersonalizationinEBLearningusingPedagogicConversationalAgentsAPLEC> ;
+    ns2:startPage 8 ;
+    ns3:author <http://ceur-ws.org/Vol-732/#AnaiPaiva>,
         <http://ceur-ws.org/Vol-732/#AndreiPereira>,
         <http://ceur-ws.org/Vol-732/#CarlosiMartinho>,
         <http://ceur-ws.org/Vol-732/#GinevraiCastellano>,
         <http://ceur-ws.org/Vol-732/#IolandaiLeite>,
         <http://ceur-ws.org/Vol-732/#SamueliMascarenhas> .
 
-<http://ceur-ws.org/Vol-732/> a ns2:Proceedings ;
-    ns2:hasPart <http://ceur-ws.org/Vol-732/#paper1>,
+<http://ceur-ws.org/Vol-732/> a ns6:Proceedings ;
+    ns6:hasPart <http://ceur-ws.org/Vol-732/#paper1>,
         <http://ceur-ws.org/Vol-732/#paper10>,
         <http://ceur-ws.org/Vol-732/#paper11>,
         <http://ceur-ws.org/Vol-732/#paper12>,
@@ -382,12 +382,12 @@
         <http://ceur-ws.org/Vol-732/#paper7>,
         <http://ceur-ws.org/Vol-732/#paper8>,
         <http://ceur-ws.org/Vol-732/#paper9> ;
-    ns2:hasSession <http://ceur-ws.org/Vol-732/#Session1AdaptationandPersonalizationinEBLearningusingPedagogicConversationalAgentsAPLEC>,
+    ns6:hasSession <http://ceur-ws.org/Vol-732/#Session1AdaptationandPersonalizationinEBLearningusingPedagogicConversationalAgentsAPLEC>,
         <http://ceur-ws.org/Vol-732/#Session2PersonalizingResponsiveOpenLearningEnvironmentsROLE>,
         <http://ceur-ws.org/Vol-732/#Session3TowardsUserModelingandAdaptiveSystemsforAllTUMASA> ;
-    ns9:issued "2011-06-10T00:00:00+00:00"^^xsd:dateTime ;
-    ns3:presentedAt <http://ceur-ws.org/Vol-732/#event> ;
-    ns5:editor <http://ceur-ws.org/Vol-732/#DianaiPerez-Marin>,
+    ns8:issued "2011-06-10T00:00:00+00:00"^^xsd:dateTime ;
+    ns2:presentedAt <http://ceur-ws.org/Vol-732/#event> ;
+    ns3:editor <http://ceur-ws.org/Vol-732/#DianaiPerez-Marin>,
         <http://ceur-ws.org/Vol-732/#MilosiKravcik>,
         <http://ceur-ws.org/Vol-732/#OlgaiC.iSantos> .
 

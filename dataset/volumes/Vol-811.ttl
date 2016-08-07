@@ -1,56 +1,378 @@
-@prefix ns1: <http://xmlns.com/foaf/0.1/> .
-@prefix ns2: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns3: <http://www.w3.org/2002/07/owl#> .
-@prefix ns4: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns5: <http://purl.org/dc/elements/1.1/> .
-@prefix ns6: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns7: <http://purl.org/ontology/bibo/#> .
+@prefix ns1: <http://purl.org/ontology/bibo/#> .
+@prefix ns2: <http://xmlns.com/foaf/0.1/> .
+@prefix ns3: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns4: <http://www.w3.org/2002/07/owl#> .
+@prefix ns5: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns6: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns7: <http://purl.org/dc/elements/1.1/#> .
 @prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns9: <http://purl.org/dc/elements/1.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-811/> a ns6:Proceedings ;
+<http://ceur-ws.org/Vol-811/#A.iFelfernig> a ns2:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/A.iFelfernig> ;
+    ns2:made <http://ceur-ws.org/Vol-811/#paper1> ;
+    ns2:name "A. Felfernig" .
+
+<http://ceur-ws.org/Vol-811/#A.iGelbukh> a ns2:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/A.iGelbukh> ;
+    ns2:made <http://ceur-ws.org/Vol-811/#paper5> ;
+    ns2:name "A. Gelbukh" .
+
+<http://ceur-ws.org/Vol-811/#A.iKo%C5%A1ir> a ns2:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/A.iKo%C5%A1ir> ;
+    ns2:made <http://ceur-ws.org/Vol-811/#paper2> ;
+    ns2:name "A. Košir" .
+
+<http://ceur-ws.org/Vol-811/#A.iLindley> a ns2:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/A.iLindley> ;
+    ns2:made <http://ceur-ws.org/Vol-811/#paper8> ;
+    ns2:name "A. Lindley" .
+
+<http://ceur-ws.org/Vol-811/#AlexanderiFelfernig> a ns2:Person ;
+    ns6:affiliation "" ;
+    ns4:sameAs <http://ceur-ws.org/persons/AlexanderiFelfernig> ;
+    ns2:name "Alexander Felfernig" .
+
+<http://ceur-ws.org/Vol-811/#B.iAckerman> a ns2:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/B.iAckerman> ;
+    ns2:made <http://ceur-ws.org/Vol-811/#paper11> ;
+    ns2:name "B. Ackerman" .
+
+<http://ceur-ws.org/Vol-811/#B.iKnijnenburg> a ns2:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/B.iKnijnenburg> ;
+    ns2:made <http://ceur-ws.org/Vol-811/#paper3> ;
+    ns2:name "B. Knijnenburg" .
+
+<http://ceur-ws.org/Vol-811/#C.iBecerra> a ns2:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/C.iBecerra> ;
+    ns2:made <http://ceur-ws.org/Vol-811/#paper5> ;
+    ns2:name "C. Becerra" .
+
+<http://ceur-ws.org/Vol-811/#D.iWilson> a ns2:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/D.iWilson> ;
+    ns2:made <http://ceur-ws.org/Vol-811/#paper7> ;
+    ns2:name "D. Wilson" .
+
+<http://ceur-ws.org/Vol-811/#DirkiBollen> a ns2:Person ;
+    ns6:affiliation "" ;
+    ns4:sameAs <http://ceur-ws.org/persons/DirkiBollen> ;
+    ns2:name "Dirk Bollen" .
+
+<http://ceur-ws.org/Vol-811/#E.iTeppan> a ns2:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/E.iTeppan> ;
+    ns2:made <http://ceur-ws.org/Vol-811/#paper1> ;
+    ns2:name "E. Teppan" .
+
+<http://ceur-ws.org/Vol-811/#E.iWach> a ns2:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/E.iWach> ;
+    ns2:made <http://ceur-ws.org/Vol-811/#paper9> ;
+    ns2:name "E. Wach" .
+
+<http://ceur-ws.org/Vol-811/#F.iGonzalez> a ns2:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/F.iGonzalez> ;
+    ns2:made <http://ceur-ws.org/Vol-811/#paper5> ;
+    ns2:name "F. Gonzalez" .
+
+<http://ceur-ws.org/Vol-811/#G.iAdomavicius> a ns2:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/G.iAdomavicius> ;
+    ns2:made <http://ceur-ws.org/Vol-811/#paper6> ;
+    ns2:name "G. Adomavicius" .
+
+<http://ceur-ws.org/Vol-811/#G.iSchroder> a ns2:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/G.iSchroder> ;
+    ns2:made <http://ceur-ws.org/Vol-811/#paper12> ;
+    ns2:name "G. Schroder" .
+
+<http://ceur-ws.org/Vol-811/#H.iTsoi> a ns2:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/H.iTsoi> ;
+    ns2:made <http://ceur-ws.org/Vol-811/#paper4> ;
+    ns2:name "H. Tsoi" .
+
+<http://ceur-ws.org/Vol-811/#J.iBockstedt> a ns2:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/J.iBockstedt> ;
+    ns2:made <http://ceur-ws.org/Vol-811/#paper6> ;
+    ns2:name "J. Bockstedt" .
+
+<http://ceur-ws.org/Vol-811/#J.iTasi%C4%8D> a ns2:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/J.iTasi%C4%8D> ;
+    ns2:made <http://ceur-ws.org/Vol-811/#paper2> ;
+    ns2:name "J. Tasič" .
+
+<http://ceur-ws.org/Vol-811/#J.iZhang> a ns2:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/J.iZhang> ;
+    ns2:made <http://ceur-ws.org/Vol-811/#paper6> ;
+    ns2:name "J. Zhang" .
+
+<http://ceur-ws.org/Vol-811/#K.iFu> a ns2:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/K.iFu> ;
+    ns2:made <http://ceur-ws.org/Vol-811/#paper3> ;
+    ns2:name "K. Fu" .
+
+<http://ceur-ws.org/Vol-811/#K.iIsak> a ns2:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/K.iIsak> ;
+    ns2:made <http://ceur-ws.org/Vol-811/#paper1> ;
+    ns2:name "K. Isak" .
+
+<http://ceur-ws.org/Vol-811/#L.iMartens> a ns2:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/L.iMartens> ;
+    ns2:made <http://ceur-ws.org/Vol-811/#paper10> ;
+    ns2:name "L. Martens" .
+
+<http://ceur-ws.org/Vol-811/#L.iVelter-Bremmers> a ns2:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/L.iVelter-Bremmers> ;
+    ns2:made <http://ceur-ws.org/Vol-811/#paper3> ;
+    ns2:name "L. Velter-Bremmers" .
+
+<http://ceur-ws.org/Vol-811/#M.iGraus> a ns2:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/M.iGraus> ;
+    ns2:made <http://ceur-ws.org/Vol-811/#paper3> ;
+    ns2:name "M. Graus" .
+
+<http://ceur-ws.org/Vol-811/#M.iThiele> a ns2:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/M.iThiele> ;
+    ns2:made <http://ceur-ws.org/Vol-811/#paper12> ;
+    ns2:name "M. Thiele" .
+
+<http://ceur-ws.org/Vol-811/#M.iTkal%C4%8Di%C4%8D> a ns2:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/M.iTkal%C4%8Di%C4%8D> ;
+    ns2:made <http://ceur-ws.org/Vol-811/#paper2> ;
+    ns2:name "M. Tkalčič" .
+
+<http://ceur-ws.org/Vol-811/#MichaeliEkstrand> a ns2:Person ;
+    ns6:affiliation "" ;
+    ns4:sameAs <http://ceur-ws.org/persons/MichaeliEkstrand> ;
+    ns2:name "Michael Ekstrand" .
+
+<http://ceur-ws.org/Vol-811/#MonikaiMandl> a ns2:Person ;
+    ns6:affiliation "" ;
+    ns4:sameAs <http://ceur-ws.org/persons/MonikaiMandl> ;
+    ns2:name "Monika Mandl" .
+
+<http://ceur-ws.org/Vol-811/#N.iNajjar> a ns2:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/N.iNajjar> ;
+    ns2:made <http://ceur-ws.org/Vol-811/#paper7> ;
+    ns2:name "N. Najjar" .
+
+<http://ceur-ws.org/Vol-811/#R.iGraf> a ns2:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/R.iGraf> ;
+    ns2:made <http://ceur-ws.org/Vol-811/#paper8> ;
+    ns2:name "R. Graf" .
+
+<http://ceur-ws.org/Vol-811/#S.iCurley> a ns2:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/S.iCurley> ;
+    ns2:made <http://ceur-ws.org/Vol-811/#paper6> ;
+    ns2:name "S. Curley" .
+
+<http://ceur-ws.org/Vol-811/#S.iDooms> a ns2:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/S.iDooms> ;
+    ns2:made <http://ceur-ws.org/Vol-811/#paper10> ;
+    ns2:name "S. Dooms" .
+
+<http://ceur-ws.org/Vol-811/#S.iGordea> a ns2:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/S.iGordea> ;
+    ns2:made <http://ceur-ws.org/Vol-811/#paper8> ;
+    ns2:name "S. Gordea" .
+
+<http://ceur-ws.org/Vol-811/#T.iDeiPessemier> a ns2:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/T.iDeiPessemier> ;
+    ns2:made <http://ceur-ws.org/Vol-811/#paper10> ;
+    ns2:name "T. De Pessemier" .
+
+<http://ceur-ws.org/Vol-811/#W.iLehner> a ns2:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/W.iLehner> ;
+    ns2:made <http://ceur-ws.org/Vol-811/#paper12> ;
+    ns2:name "W. Lehner" .
+
+<http://ceur-ws.org/Vol-811/#Y.iChen> a ns2:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/Y.iChen> ;
+    ns2:made <http://ceur-ws.org/Vol-811/#paper11> ;
+    ns2:name "Y. Chen" .
+
+<http://ceur-ws.org/Vol-811/#event> a ns3:WorkshopEvent ;
+    ns3:hasLocation <http://dbpedia.org/resource/United_States> ;
+    ns3:hasPart <http://ceur-ws.org/Vol-811/#part-RecSys>,
+        <http://ceur-ws.org/Vol-811/#part-UCERSTI> ;
+    ns3:isSubEventOf <http://ceur-ws.org/Vol-811/#conf> ;
+    ns5:beginsAtDatetime "2016-10-23T00:00:00+00:00"^^xsd:dateTime ;
+    ns5:endsAtDatetime "2016-10-23T00:00:00+00:00"^^xsd:dateTime ;
+    ns9:license "http://choosealicense.com/licenses/no-license/" ;
+    rdfs:seeAlso <http://ceur-ws.org/Vol-612/#event> .
+
+<http://ceur-ws.org/Vol-811/#L.iChen> a ns2:Person ;
+    ns6:affiliation "" ;
+    ns4:sameAs <http://ceur-ws.org/persons/L.iChen> ;
+    ns2:made <http://ceur-ws.org/Vol-811/#paper4> ;
+    ns2:name "L. Chen" .
+
+<http://ceur-ws.org/Vol-811/#MartijniWillemsen> a ns2:Person ;
+    ns6:affiliation "" ;
+    ns4:sameAs <http://ceur-ws.org/persons/MartijniWillemsen> ;
+    ns2:made <http://ceur-ws.org/Vol-811/#paper3> ;
+    ns2:name "Martijn Willemsen" .
+
+<http://ceur-ws.org/Vol-811/#paper9> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-811/> ;
+    ns7:title "Automated Ontology Evolution as a Basis for User-Adaptive Recommender Interfaces" ;
+    ns1:endPage 66 ;
+    ns1:numPages 8 ;
+    ns1:section <http://ceur-ws.org/Vol-811/#UCERSTI2> ;
+    ns1:startPage 59 ;
+    ns6:author <http://ceur-ws.org/Vol-811/#E.iWach> .
+
+<http://ceur-ws.org/Vol-811/#paper11> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-811/> ;
+    ns7:title "Evaluating Rank Accuracy based on Incomplete Pairwise Preferences" ;
+    ns1:endPage 77 ;
+    ns1:numPages 4 ;
+    ns1:section <http://ceur-ws.org/Vol-811/#UCERSTI2> ;
+    ns1:startPage 74 ;
+    ns6:author <http://ceur-ws.org/Vol-811/#B.iAckerman>,
+        <http://ceur-ws.org/Vol-811/#Y.iChen> .
+
+<http://ceur-ws.org/Vol-811/#paper4> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-811/> ;
+    ns7:title "Users' Decision Behavior in Recommender Interfaces: Impact of Layout Design" ;
+    ns1:endPage 26 ;
+    ns1:numPages 6 ;
+    ns1:section <http://ceur-ws.org/Vol-811/#DecisionsRecSys2011> ;
+    ns1:startPage 21 ;
+    ns6:author <http://ceur-ws.org/Vol-811/#H.iTsoi>,
+        <http://ceur-ws.org/Vol-811/#L.iChen> .
+
+<http://ceur-ws.org/Vol-811/#paper7> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-811/> ;
+    ns7:title "Evaluating Group Recommendation Strategies in Memory-Based Collaborative Filtering" ;
+    ns1:endPage 50 ;
+    ns1:numPages 8 ;
+    ns1:section <http://ceur-ws.org/Vol-811/#DecisionsRecSys2011> ;
+    ns1:startPage 43 ;
+    ns6:author <http://ceur-ws.org/Vol-811/#D.iWilson>,
+        <http://ceur-ws.org/Vol-811/#N.iNajjar> .
+
+<http://ceur-ws.org/Vol-811/#paper1> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-811/> ;
+    ns7:title "Decoy Effects in Financial Service E-Sales Systems" ;
+    ns1:endPage 8 ;
+    ns1:numPages 8 ;
+    ns1:section <http://ceur-ws.org/Vol-811/#DecisionsRecSys2011> ;
+    ns1:startPage 1 ;
+    ns6:author <http://ceur-ws.org/Vol-811/#A.iFelfernig>,
+        <http://ceur-ws.org/Vol-811/#E.iTeppan>,
+        <http://ceur-ws.org/Vol-811/#K.iIsak> .
+
+<http://ceur-ws.org/Vol-811/#paper10> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-811/> ;
+    ns7:title "A User-centric Evaluation of Recommender Algorithms for an Event Recommendation System" ;
+    ns1:endPage 73 ;
+    ns1:numPages 7 ;
+    ns1:section <http://ceur-ws.org/Vol-811/#UCERSTI2> ;
+    ns1:startPage 67 ;
+    ns6:author <http://ceur-ws.org/Vol-811/#L.iMartens>,
+        <http://ceur-ws.org/Vol-811/#S.iDooms>,
+        <http://ceur-ws.org/Vol-811/#T.iDeiPessemier> .
+
+<http://ceur-ws.org/Vol-811/#paper12> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-811/> ;
+    ns7:title "Setting Goals and Choosing Metrics for Recommender System Evaluations" ;
+    ns1:endPage 85 ;
+    ns1:numPages 8 ;
+    ns1:section <http://ceur-ws.org/Vol-811/#UCERSTI2> ;
+    ns1:startPage 78 ;
+    ns6:author <http://ceur-ws.org/Vol-811/#G.iSchroder>,
+        <http://ceur-ws.org/Vol-811/#M.iThiele>,
+        <http://ceur-ws.org/Vol-811/#W.iLehner> .
+
+<http://ceur-ws.org/Vol-811/#paper2> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-811/> ;
+    ns7:title "Affective Recommender Systems: the Role of Emotions in Recommender Systems" ;
+    ns1:endPage 13 ;
+    ns1:numPages 5 ;
+    ns1:section <http://ceur-ws.org/Vol-811/#DecisionsRecSys2011> ;
+    ns1:startPage 9 ;
+    ns6:author <http://ceur-ws.org/Vol-811/#A.iKo%C5%A1ir>,
+        <http://ceur-ws.org/Vol-811/#J.iTasi%C4%8D>,
+        <http://ceur-ws.org/Vol-811/#M.iTkal%C4%8Di%C4%8D> .
+
+<http://ceur-ws.org/Vol-811/#paper5> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-811/> ;
+    ns7:title "Visualizable and Explicable Recommendations Obtained from Price Estimation Functions" ;
+    ns1:endPage 34 ;
+    ns1:numPages 8 ;
+    ns1:section <http://ceur-ws.org/Vol-811/#DecisionsRecSys2011> ;
+    ns1:startPage 27 ;
+    ns6:author <http://ceur-ws.org/Vol-811/#A.iGelbukh>,
+        <http://ceur-ws.org/Vol-811/#C.iBecerra>,
+        <http://ceur-ws.org/Vol-811/#F.iGonzalez> .
+
+<http://ceur-ws.org/Vol-811/#paper8> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-811/> ;
+    ns7:title "Computing Recommendations for Long Term Data Accessibility basing on Open Knowledge and Linked Data" ;
+    ns1:endPage 58 ;
+    ns1:numPages 8 ;
+    ns1:section <http://ceur-ws.org/Vol-811/#DecisionsRecSys2011> ;
+    ns1:startPage 51 ;
+    ns6:author <http://ceur-ws.org/Vol-811/#A.iLindley>,
+        <http://ceur-ws.org/Vol-811/#R.iGraf>,
+        <http://ceur-ws.org/Vol-811/#S.iGordea> .
+
+<http://ceur-ws.org/Vol-811/#UCERSTI2> a ns3:SessionEvent ;
+    ns3:partOf <http://ceur-ws.org/Vol-811/> ;
+    ns7:title "UCERSTI 2" .
+
+<http://ceur-ws.org/Vol-811/#paper6> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-811/> ;
+    ns7:title "Recommender Systems, Consumer Preferences, and Anchoring Effects" ;
+    ns1:endPage 42 ;
+    ns1:numPages 8 ;
+    ns1:section <http://ceur-ws.org/Vol-811/#DecisionsRecSys2011> ;
+    ns1:startPage 35 ;
+    ns6:author <http://ceur-ws.org/Vol-811/#G.iAdomavicius>,
+        <http://ceur-ws.org/Vol-811/#J.iBockstedt>,
+        <http://ceur-ws.org/Vol-811/#J.iZhang>,
+        <http://ceur-ws.org/Vol-811/#S.iCurley> .
+
+<http://ceur-ws.org/Vol-811/#paper3> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-811/> ;
+    ns7:title "Using Latent Features Diversification to Reduce Choice Difficulty in Recommendation List" ;
+    ns1:endPage 20 ;
+    ns1:numPages 7 ;
+    ns1:section <http://ceur-ws.org/Vol-811/#DecisionsRecSys2011> ;
+    ns1:startPage 14 ;
+    ns6:author <http://ceur-ws.org/Vol-811/#B.iKnijnenburg>,
+        <http://ceur-ws.org/Vol-811/#K.iFu>,
+        <http://ceur-ws.org/Vol-811/#L.iVelter-Bremmers>,
+        <http://ceur-ws.org/Vol-811/#M.iGraus>,
+        <http://ceur-ws.org/Vol-811/#MartijniWillemsen> .
+
+<http://ceur-ws.org/Vol-811/#DecisionsRecSys2011> a ns3:SessionEvent ;
+    ns3:partOf <http://ceur-ws.org/Vol-811/> ;
+    ns7:title "Decisions @ RecSys 2011" .
+
+<http://ceur-ws.org/Vol-811/> a ns3:Proceedings ;
+    ns3:hasPart <http://ceur-ws.org/Vol-811/#paper1>,
+        <http://ceur-ws.org/Vol-811/#paper10>,
+        <http://ceur-ws.org/Vol-811/#paper11>,
+        <http://ceur-ws.org/Vol-811/#paper12>,
+        <http://ceur-ws.org/Vol-811/#paper2>,
+        <http://ceur-ws.org/Vol-811/#paper3>,
+        <http://ceur-ws.org/Vol-811/#paper4>,
+        <http://ceur-ws.org/Vol-811/#paper5>,
+        <http://ceur-ws.org/Vol-811/#paper6>,
+        <http://ceur-ws.org/Vol-811/#paper7>,
+        <http://ceur-ws.org/Vol-811/#paper8>,
+        <http://ceur-ws.org/Vol-811/#paper9> ;
+    ns3:hasSession <http://ceur-ws.org/Vol-811/#DecisionsRecSys2011>,
+        <http://ceur-ws.org/Vol-811/#UCERSTI2> ;
     ns8:issued "2011-11-30T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:presentedAt <http://ceur-ws.org/Vol-811/#event> ;
-    ns2:editor <http://ceur-ws.org/Vol-811/#AlexanderiFelfernig>,
+    ns1:presentedAt <http://ceur-ws.org/Vol-811/#event> ;
+    ns6:editor <http://ceur-ws.org/Vol-811/#AlexanderiFelfernig>,
         <http://ceur-ws.org/Vol-811/#DirkiBollen>,
-        <http://ceur-ws.org/Vol-811/#LiiChen>,
+        <http://ceur-ws.org/Vol-811/#L.iChen>,
         <http://ceur-ws.org/Vol-811/#MartijniWillemsen>,
         <http://ceur-ws.org/Vol-811/#MichaeliEkstrand>,
         <http://ceur-ws.org/Vol-811/#MonikaiMandl> .
-
-<http://ceur-ws.org/Vol-811/#AlexanderiFelfernig> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/AlexanderiFelfernig> ;
-    ns1:name "Alexander Felfernig" .
-
-<http://ceur-ws.org/Vol-811/#DirkiBollen> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/DirkiBollen> ;
-    ns1:name "Dirk Bollen" .
-
-<http://ceur-ws.org/Vol-811/#LiiChen> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/LiiChen> ;
-    ns1:name "Li Chen" .
-
-<http://ceur-ws.org/Vol-811/#MartijniWillemsen> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/MartijniWillemsen> ;
-    ns1:name "Martijn Willemsen" .
-
-<http://ceur-ws.org/Vol-811/#MichaeliEkstrand> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/MichaeliEkstrand> ;
-    ns1:name "Michael Ekstrand" .
-
-<http://ceur-ws.org/Vol-811/#MonikaiMandl> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/MonikaiMandl> ;
-    ns1:name "Monika Mandl" .
-
-<http://ceur-ws.org/Vol-811/#event> a ns6:WorkshopEvent ;
-    ns6:hasLocation <http://dbpedia.org/resource/United_States> ;
-    ns6:hasPart <http://ceur-ws.org/Vol-811/#part-CEUR-WS> ;
-    ns6:isSubEventOf <http://ceur-ws.org/Vol-811/#conf> ;
-    ns4:beginsAtDatetime "2016-10-23T00:00:00+00:00"^^xsd:dateTime ;
-    ns4:endsAtDatetime "2016-10-23T00:00:00+00:00"^^xsd:dateTime ;
-    ns5:license "http://choosealicense.com/licenses/no-license/" ;
-    rdfs:seeAlso <http://ceur-ws.org/Vol-612/#event> .
 

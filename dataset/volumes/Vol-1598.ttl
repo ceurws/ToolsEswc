@@ -1,41 +1,265 @@
-@prefix ns1: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns1: <http://swrc.ontoware.org/ontology/#> .
 @prefix ns2: <http://xmlns.com/foaf/0.1/> .
-@prefix ns3: <http://www.w3.org/2002/07/owl#> .
-@prefix ns4: <http://purl.org/ontology/bibo/#> .
-@prefix ns5: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns6: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns8: <http://purl.org/dc/elements/1.1/> .
+@prefix ns3: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns4: <http://www.w3.org/2002/07/owl#> .
+@prefix ns5: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns6: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns7: <http://purl.org/dc/elements/1.1/> .
+@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns9: <http://purl.org/ontology/bibo/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1598/> a ns1:Proceedings ;
-    ns7:issued "2016-06-02T00:00:00+00:00"^^xsd:dateTime ;
-    ns4:presentedAt <http://ceur-ws.org/Vol-1598/#event> ;
-    ns6:editor <http://ceur-ws.org/Vol-1598/#B%C3%A9n%C3%A9dicteiBucher>,
-        <http://ceur-ws.org/Vol-1598/#LexiComber>,
-        <http://ceur-ws.org/Vol-1598/#StefaniIvanovic> .
-
 <http://ceur-ws.org/Vol-1598/#B%C3%A9n%C3%A9dicteiBucher> a ns2:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/B%C3%A9n%C3%A9dicteiBucher> ;
+    ns1:affiliation "" ;
+    ns4:sameAs <http://ceur-ws.org/persons/B%C3%A9n%C3%A9dicteiBucher> ;
     ns2:name "Bénédicte Bucher" .
 
+<http://ceur-ws.org/Vol-1598/#C%C3%A9driciGrueau> a ns2:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/C%C3%A9driciGrueau> ;
+    ns2:made <http://ceur-ws.org/Vol-1598/#paper6> ;
+    ns2:name "Cédric Grueau" .
+
+<http://ceur-ws.org/Vol-1598/#ChristophiStich> a ns2:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/ChristophiStich> ;
+    ns2:made <http://ceur-ws.org/Vol-1598/#paper7> ;
+    ns2:name "Christoph Stich" .
+
+<http://ceur-ws.org/Vol-1598/#ChunzhuiWei> a ns2:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/ChunzhuiWei> ;
+    ns2:made <http://ceur-ws.org/Vol-1598/#paper18> ;
+    ns2:name "Chunzhu Wei" .
+
+<http://ceur-ws.org/Vol-1598/#HamediMehdipoor> a ns2:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/HamediMehdipoor> ;
+    ns2:made <http://ceur-ws.org/Vol-1598/#paper14> ;
+    ns2:name "Hamed Mehdipoor" .
+
+<http://ceur-ws.org/Vol-1598/#IsabeliGeorg> a ns2:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/IsabeliGeorg> ;
+    ns2:made <http://ceur-ws.org/Vol-1598/#paper11> ;
+    ns2:name "Isabel Georg" .
+
 <http://ceur-ws.org/Vol-1598/#LexiComber> a ns2:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/LexiComber> ;
+    ns1:affiliation "" ;
+    ns4:sameAs <http://ceur-ws.org/persons/LexiComber> ;
     ns2:name "Lex Comber" .
 
+<http://ceur-ws.org/Vol-1598/#MarioniDumont> a ns2:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/MarioniDumont> ;
+    ns2:made <http://ceur-ws.org/Vol-1598/#paper17> ;
+    ns2:name "Marion Dumont" .
+
+<http://ceur-ws.org/Vol-1598/#MartiniTanguy> a ns2:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/MartiniTanguy> ;
+    ns2:made <http://ceur-ws.org/Vol-1598/#paper10> ;
+    ns2:name "Martin Tanguy" .
+
+<http://ceur-ws.org/Vol-1598/#NegariAlinaghi> a ns2:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/NegariAlinaghi> ;
+    ns2:made <http://ceur-ws.org/Vol-1598/#paper9> ;
+    ns2:name "Negar Alinaghi" .
+
+<http://ceur-ws.org/Vol-1598/#NunoiAmorim> a ns2:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/NunoiAmorim> ;
+    ns2:made <http://ceur-ws.org/Vol-1598/#paper5> ;
+    ns2:name "Nuno Amorim" .
+
+<http://ceur-ws.org/Vol-1598/#OlgaiYanenko> a ns2:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/OlgaiYanenko> ;
+    ns2:made <http://ceur-ws.org/Vol-1598/#paper12> ;
+    ns2:name "Olga Yanenko" .
+
+<http://ceur-ws.org/Vol-1598/#PabloiCabrera-Barona> a ns2:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/PabloiCabrera-Barona> ;
+    ns2:made <http://ceur-ws.org/Vol-1598/#paper20> ;
+    ns2:name "Pablo Cabrera-Barona" .
+
+<http://ceur-ws.org/Vol-1598/#PatriziaiSulis> a ns2:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/PatriziaiSulis> ;
+    ns2:made <http://ceur-ws.org/Vol-1598/#paper16> ;
+    ns2:name "Patrizia Sulis" .
+
+<http://ceur-ws.org/Vol-1598/#PauloiDiasiAlmeida> a ns2:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/PauloiDiasiAlmeida> ;
+    ns2:made <http://ceur-ws.org/Vol-1598/#paper3> ;
+    ns2:name "Paulo Dias Almeida" .
+
+<http://ceur-ws.org/Vol-1598/#RicardoiAlmeidaiSilva> a ns2:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/RicardoiAlmeidaiSilva> ;
+    ns2:made <http://ceur-ws.org/Vol-1598/#paper8> ;
+    ns2:name "Ricardo Almeida Silva" .
+
+<http://ceur-ws.org/Vol-1598/#RobiniFrew> a ns2:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/RobiniFrew> ;
+    ns2:made <http://ceur-ws.org/Vol-1598/#paper4> ;
+    ns2:name "Robin Frew" .
+
 <http://ceur-ws.org/Vol-1598/#StefaniIvanovic> a ns2:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/StefaniIvanovic> ;
+    ns1:affiliation "" ;
+    ns4:sameAs <http://ceur-ws.org/persons/StefaniIvanovic> ;
     ns2:name "Stefan Ivanovic" .
 
-<http://ceur-ws.org/Vol-1598/#event> a ns1:WorkshopEvent ;
-    ns1:hasLocation <http://dbpedia.org/resource/France> ;
-    ns1:hasPart <http://ceur-ws.org/Vol-1598/#part-AGILE> ;
-    ns1:isSubEventOf <http://ceur-ws.org/Vol-1598/#conf> ;
-    ns5:beginsAtDatetime "2015-09-15T00:00:00+00:00"^^xsd:dateTime ;
-    ns5:endsAtDatetime "2015-09-18T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:license "http://creativecommons.org/publicdomain/zero/1.0/" ;
+<http://ceur-ws.org/Vol-1598/#StefaniS.iIvanovi%26cacute> a ns2:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/StefaniS.iIvanovi%26cacute> ;
+    ns2:made <http://ceur-ws.org/Vol-1598/#paper15> ;
+    ns2:name "Stefan S. Ivanovi&cacute" .
+
+<http://ceur-ws.org/Vol-1598/#StefaniaiZourlidou> a ns2:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/StefaniaiZourlidou> ;
+    ns2:made <http://ceur-ws.org/Vol-1598/#paper1> ;
+    ns2:name "Stefania Zourlidou" .
+
+<http://ceur-ws.org/Vol-1598/#ThomasiHeinz> a ns2:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/ThomasiHeinz> ;
+    ns2:made <http://ceur-ws.org/Vol-1598/#paper2> ;
+    ns2:name "Thomas Heinz" .
+
+<http://ceur-ws.org/Vol-1598/#TiagoiH.iMoreiraideiOliveira> a ns2:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/TiagoiH.iMoreiraideiOliveira> ;
+    ns2:made <http://ceur-ws.org/Vol-1598/#paper13> ;
+    ns2:name "Tiago H. Moreira de Oliveira" .
+
+<http://ceur-ws.org/Vol-1598/#TingiZhou> a ns2:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/TingiZhou> ;
+    ns2:made <http://ceur-ws.org/Vol-1598/#paper19> ;
+    ns2:name "Ting Zhou" .
+
+<http://ceur-ws.org/Vol-1598/#event> a ns5:WorkshopEvent ;
+    ns5:hasLocation <http://dbpedia.org/resource/France> ;
+    ns5:hasPart <http://ceur-ws.org/Vol-1598/#part-AGILE> ;
+    ns5:isSubEventOf <http://ceur-ws.org/Vol-1598/#conf> ;
+    ns6:beginsAtDatetime "2015-09-15T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:endsAtDatetime "2015-09-18T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:license "http://creativecommons.org/publicdomain/zero/1.0/" ;
     rdfs:seeAlso <http://ceur-ws.org/Vol-1136/#event> .
+
+<http://ceur-ws.org/Vol-1598/#paper1> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1598/> ;
+    ns3:title "Road regulation sensing with in-vehicle sensors" ;
+    ns1:author <http://ceur-ws.org/Vol-1598/#StefaniaiZourlidou> .
+
+<http://ceur-ws.org/Vol-1598/#paper10> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1598/> ;
+    ns3:title "Modeling the dynamics of maritime territories to assess the vulnerability of the maritime net-work" ;
+    ns1:author <http://ceur-ws.org/Vol-1598/#MartiniTanguy> .
+
+<http://ceur-ws.org/Vol-1598/#paper11> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1598/> ;
+    ns3:title "Identifying urban corridors : unified concept and global analysis" ;
+    ns1:author <http://ceur-ws.org/Vol-1598/#IsabeliGeorg> .
+
+<http://ceur-ws.org/Vol-1598/#paper12> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1598/> ;
+    ns3:title "Volunteered geographic information and data quality - the case of social reporting" ;
+    ns1:author <http://ceur-ws.org/Vol-1598/#OlgaiYanenko> .
+
+<http://ceur-ws.org/Vol-1598/#paper13> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1598/> ;
+    ns3:title "The emotion-aware city: using ambient geographic information (AGI) in order to understand emotion & stress within smart cities" ;
+    ns1:author <http://ceur-ws.org/Vol-1598/#TiagoiH.iMoreiraideiOliveira> .
+
+<http://ceur-ws.org/Vol-1598/#paper14> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1598/> ;
+    ns3:title "Exploring climate change and its impact on agriculture using volunteered geographic information" ;
+    ns1:author <http://ceur-ws.org/Vol-1598/#HamediMehdipoor> .
+
+<http://ceur-ws.org/Vol-1598/#paper15> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1598/> ;
+    ns3:title "Detection of potential updates of authoritative spatial databases by fusion of volunteered geographical information from different sources" ;
+    ns1:author <http://ceur-ws.org/Vol-1598/#StefaniS.iIvanovi%26cacute> .
+
+<http://ceur-ws.org/Vol-1598/#paper16> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1598/> ;
+    ns3:title "Detecting unstructured events through multi-source data analysis" ;
+    ns1:author <http://ceur-ws.org/Vol-1598/#PatriziaiSulis> .
+
+<http://ceur-ws.org/Vol-1598/#paper17> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1598/> ;
+    ns3:title "Adding intermediate representations in a multi-scale map to enable a smooth zooming" ;
+    ns1:author <http://ceur-ws.org/Vol-1598/#MarioniDumont> .
+
+<http://ceur-ws.org/Vol-1598/#paper18> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1598/> ;
+    ns3:title "Detecting and analysing \"urban villages\" in the Pearl River delta using multi-source remote sensing data" ;
+    ns1:author <http://ceur-ws.org/Vol-1598/#ChunzhuiWei> .
+
+<http://ceur-ws.org/Vol-1598/#paper19> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1598/> ;
+    ns3:title "Optimizing the provision of cultural ecosystem service for inhabitants: combing residential distance with landscape characteristics" ;
+    ns1:author <http://ceur-ws.org/Vol-1598/#TingiZhou> .
+
+<http://ceur-ws.org/Vol-1598/#paper2> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1598/> ;
+    ns3:title "A pattern-based design environment for creating geogames" ;
+    ns1:author <http://ceur-ws.org/Vol-1598/#ThomasiHeinz> .
+
+<http://ceur-ws.org/Vol-1598/#paper20> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1598/> ;
+    ns3:title "An integrated geo-spatial approach of access to public healthcare services and socio-economic analyses" ;
+    ns1:author <http://ceur-ws.org/Vol-1598/#PabloiCabrera-Barona> .
+
+<http://ceur-ws.org/Vol-1598/#paper3> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1598/> ;
+    ns3:title "Image and 3D structure based ontology for object recognition" ;
+    ns1:author <http://ceur-ws.org/Vol-1598/#PauloiDiasiAlmeida> .
+
+<http://ceur-ws.org/Vol-1598/#paper4> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1598/> ;
+    ns3:title "Assessing geographic data usability in analytical contexts by using sensitivity analyses of geospatial processes" ;
+    ns1:author <http://ceur-ws.org/Vol-1598/#RobiniFrew> .
+
+<http://ceur-ws.org/Vol-1598/#paper5> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1598/> ;
+    ns3:title "Minimal structure from motion representation for image geocoding" ;
+    ns1:author <http://ceur-ws.org/Vol-1598/#NunoiAmorim> .
+
+<http://ceur-ws.org/Vol-1598/#paper6> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1598/> ;
+    ns3:title "A framework to specify agent-based models in geographic sciences" ;
+    ns1:author <http://ceur-ws.org/Vol-1598/#C%C3%A9driciGrueau> .
+
+<http://ceur-ws.org/Vol-1598/#paper7> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1598/> ;
+    ns3:title "The interplay of places and human social networks" ;
+    ns1:author <http://ceur-ws.org/Vol-1598/#ChristophiStich> .
+
+<http://ceur-ws.org/Vol-1598/#paper8> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1598/> ;
+    ns3:title "Describing the levels of detail for the analysis of spatio-temporal events" ;
+    ns1:author <http://ceur-ws.org/Vol-1598/#RicardoiAlmeidaiSilva> .
+
+<http://ceur-ws.org/Vol-1598/#paper9> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1598/> ;
+    ns3:title "Semiotics of addressing systems in urban environments" ;
+    ns1:author <http://ceur-ws.org/Vol-1598/#NegariAlinaghi> .
+
+<http://ceur-ws.org/Vol-1598/> a ns5:Proceedings ;
+    ns5:hasPart <http://ceur-ws.org/Vol-1598/#paper1>,
+        <http://ceur-ws.org/Vol-1598/#paper10>,
+        <http://ceur-ws.org/Vol-1598/#paper11>,
+        <http://ceur-ws.org/Vol-1598/#paper12>,
+        <http://ceur-ws.org/Vol-1598/#paper13>,
+        <http://ceur-ws.org/Vol-1598/#paper14>,
+        <http://ceur-ws.org/Vol-1598/#paper15>,
+        <http://ceur-ws.org/Vol-1598/#paper16>,
+        <http://ceur-ws.org/Vol-1598/#paper17>,
+        <http://ceur-ws.org/Vol-1598/#paper18>,
+        <http://ceur-ws.org/Vol-1598/#paper19>,
+        <http://ceur-ws.org/Vol-1598/#paper2>,
+        <http://ceur-ws.org/Vol-1598/#paper20>,
+        <http://ceur-ws.org/Vol-1598/#paper3>,
+        <http://ceur-ws.org/Vol-1598/#paper4>,
+        <http://ceur-ws.org/Vol-1598/#paper5>,
+        <http://ceur-ws.org/Vol-1598/#paper6>,
+        <http://ceur-ws.org/Vol-1598/#paper7>,
+        <http://ceur-ws.org/Vol-1598/#paper8>,
+        <http://ceur-ws.org/Vol-1598/#paper9> ;
+    ns8:issued "2016-06-02T00:00:00+00:00"^^xsd:dateTime ;
+    ns9:presentedAt <http://ceur-ws.org/Vol-1598/#event> ;
+    ns1:editor <http://ceur-ws.org/Vol-1598/#B%C3%A9n%C3%A9dicteiBucher>,
+        <http://ceur-ws.org/Vol-1598/#LexiComber>,
+        <http://ceur-ws.org/Vol-1598/#StefaniIvanovic> .
 

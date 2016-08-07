@@ -1,45 +1,205 @@
-@prefix ns1: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns2: <http://xmlns.com/foaf/0.1/> .
-@prefix ns3: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns4: <http://purl.org/ontology/bibo/#> .
-@prefix ns5: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns6: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns7: <http://www.w3.org/2002/07/owl#> .
-@prefix ns8: <http://purl.org/dc/elements/1.1/> .
+@prefix ns1: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns2: <http://purl.org/ontology/bibo/#> .
+@prefix ns3: <http://xmlns.com/foaf/0.1/> .
+@prefix ns4: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns5: <http://www.w3.org/2002/07/owl#> .
+@prefix ns6: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns9: <http://purl.org/dc/elements/1.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1273/> a ns1:Proceedings ;
-    ns5:issued "2014-10-21T00:00:00+00:00"^^xsd:dateTime ;
-    ns4:presentedAt <http://ceur-ws.org/Vol-1273/#event> ;
-    ns3:editor <http://ceur-ws.org/Vol-1273/#BenjaminiAdams>,
+<http://ceur-ws.org/Vol-1273/#AndreaiBallatore> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/AndreaiBallatore> ;
+    ns3:made <http://ceur-ws.org/Vol-1273/#paper3> ;
+    ns3:name "Andrea Ballatore" .
+
+<http://ceur-ws.org/Vol-1273/#AndreiBruggmann> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/AndreiBruggmann> ;
+    ns3:made <http://ceur-ws.org/Vol-1273/#paper1> ;
+    ns3:name "Andre Bruggmann" .
+
+<http://ceur-ws.org/Vol-1273/#AndrewiU.iFrank> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/AndrewiU.iFrank> ;
+    ns3:made <http://ceur-ws.org/Vol-1273/#paper2> ;
+    ns3:name "Andrew U. Frank" .
+
+<http://ceur-ws.org/Vol-1273/#AurioliDegbelo> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/AurioliDegbelo> ;
+    ns3:made <http://ceur-ws.org/Vol-1273/#paper6> ;
+    ns3:name "Auriol Degbelo" .
+
+<http://ceur-ws.org/Vol-1273/#BandanaiKar> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/BandanaiKar> ;
+    ns3:made <http://ceur-ws.org/Vol-1273/#paper4> ;
+    ns3:name "Bandana Kar" .
+
+<http://ceur-ws.org/Vol-1273/#HeidelindeiHobel> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/HeidelindeiHobel> ;
+    ns3:made <http://ceur-ws.org/Vol-1273/#paper2> ;
+    ns3:name "Heidelinde Hobel" .
+
+<http://ceur-ws.org/Vol-1273/#MarkiGahegan> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/MarkiGahegan> ;
+    ns3:made <http://ceur-ws.org/Vol-1273/#paper5> ;
+    ns3:name "Mark Gahegan" .
+
+<http://ceur-ws.org/Vol-1273/#PrashantiGupta> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/PrashantiGupta> ;
+    ns3:made <http://ceur-ws.org/Vol-1273/#paper5> ;
+    ns3:name "Prashant Gupta" .
+
+<http://ceur-ws.org/Vol-1273/#RichardiHosking> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/RichardiHosking> ;
+    ns3:made <http://ceur-ws.org/Vol-1273/#paper5> ;
+    ns3:name "Richard Hosking" .
+
+<http://ceur-ws.org/Vol-1273/#RinaiGhose> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/RinaiGhose> ;
+    ns3:made <http://ceur-ws.org/Vol-1273/#paper4> ;
+    ns3:name "Rina Ghose" .
+
+<http://ceur-ws.org/Vol-1273/#SaraiI.iFabrikant> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/SaraiI.iFabrikant> ;
+    ns3:made <http://ceur-ws.org/Vol-1273/#paper1> ;
+    ns3:name "Sara I. Fabrikant" .
+
+<http://ceur-ws.org/Vol-1273/#WerneriKuhn> a ns3:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/WerneriKuhn> ;
+    ns3:made <http://ceur-ws.org/Vol-1273/#paper6> ;
+    ns3:name "Werner Kuhn" .
+
+<http://ceur-ws.org/Vol-1273/#event> a ns4:WorkshopEvent ;
+    ns4:hasLocation <http://dbpedia.org/resource/Austria> ;
+    ns4:hasPart <http://ceur-ws.org/Vol-1273/#part-GIO> ;
+    ns4:isSubEventOf <http://ceur-ws.org/Vol-1273/#conf> ;
+    ns7:beginsAtDatetime "2014-09-23T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:endsAtDatetime "2014-09-23T00:00:00+00:00"^^xsd:dateTime ;
+    ns9:license "http://creativecommons.org/publicdomain/zero/1.0/" .
+
+<http://ceur-ws.org/Vol-1273/#GrantiMcKenzie> a ns3:Person ;
+    ns1:affiliation "" ;
+    ns5:sameAs <http://ceur-ws.org/persons/GrantiMcKenzie> ;
+    ns3:made <http://ceur-ws.org/Vol-1273/#intro1> ;
+    ns3:name "Grant McKenzie" .
+
+<http://ceur-ws.org/Vol-1273/#Introduction> a ns4:SessionEvent ;
+    ns4:partOf <http://ceur-ws.org/Vol-1273/> ;
+    ns6:title "Introduction" .
+
+<http://ceur-ws.org/Vol-1273/#KrzysztofiJanowicz> a ns3:Person ;
+    ns1:affiliation "" ;
+    ns5:sameAs <http://ceur-ws.org/persons/KrzysztofiJanowicz> ;
+    ns3:made <http://ceur-ws.org/Vol-1273/#intro1> ;
+    ns3:name "Krzysztof Janowicz" .
+
+<http://ceur-ws.org/Vol-1273/#TomiiKauppinen> a ns3:Person ;
+    ns1:affiliation "" ;
+    ns5:sameAs <http://ceur-ws.org/persons/TomiiKauppinen> ;
+    ns3:made <http://ceur-ws.org/Vol-1273/#intro1> ;
+    ns3:name "Tomi Kauppinen" .
+
+<http://ceur-ws.org/Vol-1273/#paper3> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1273/> ;
+    ns6:title "Exploring the Geographic Information Universe: The Role of Search Technologies" ;
+    ns2:endPage 27 ;
+    ns2:numPages 5 ;
+    ns2:section <http://ceur-ws.org/Vol-1273/#Acceptedpapers> ;
+    ns2:startPage 23 ;
+    ns1:author <http://ceur-ws.org/Vol-1273/#AndreaiBallatore> .
+
+<http://ceur-ws.org/Vol-1273/#BenjaminiAdams> a ns3:Person ;
+    ns1:affiliation "" ;
+    ns5:sameAs <http://ceur-ws.org/persons/BenjaminiAdams> ;
+    ns3:made <http://ceur-ws.org/Vol-1273/#intro1>,
+        <http://ceur-ws.org/Vol-1273/#paper5> ;
+    ns3:name "Benjamin Adams" .
+
+<http://ceur-ws.org/Vol-1273/#paper1> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1273/> ;
+    ns6:title "Spatializing a Digital Text Archive about History" ;
+    ns2:endPage 14 ;
+    ns2:numPages 9 ;
+    ns2:section <http://ceur-ws.org/Vol-1273/#Acceptedpapers> ;
+    ns2:startPage 6 ;
+    ns1:author <http://ceur-ws.org/Vol-1273/#AndreiBruggmann>,
+        <http://ceur-ws.org/Vol-1273/#SaraiI.iFabrikant> .
+
+<http://ceur-ws.org/Vol-1273/#paper2> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1273/> ;
+    ns6:title "Exploiting Linked Spatial Data and Granularity Transformations" ;
+    ns2:endPage 22 ;
+    ns2:numPages 8 ;
+    ns2:section <http://ceur-ws.org/Vol-1273/#Acceptedpapers> ;
+    ns2:startPage 15 ;
+    ns1:author <http://ceur-ws.org/Vol-1273/#AndrewiU.iFrank>,
+        <http://ceur-ws.org/Vol-1273/#HeidelindeiHobel> .
+
+<http://ceur-ws.org/Vol-1273/#paper4> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1273/> ;
+    ns6:title "Is My Information Private? Geo-Privacy in the World of Social Media" ;
+    ns2:endPage 31 ;
+    ns2:numPages 4 ;
+    ns2:section <http://ceur-ws.org/Vol-1273/#Acceptedpapers> ;
+    ns2:startPage 28 ;
+    ns1:author <http://ceur-ws.org/Vol-1273/#BandanaiKar>,
+        <http://ceur-ws.org/Vol-1273/#RinaiGhose> .
+
+<http://ceur-ws.org/Vol-1273/#paper6> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1273/> ;
+    ns6:title "Five General Properties of Resolution" ;
+    ns2:endPage 47 ;
+    ns2:numPages 8 ;
+    ns2:section <http://ceur-ws.org/Vol-1273/#Acceptedpapers> ;
+    ns2:startPage 40 ;
+    ns1:author <http://ceur-ws.org/Vol-1273/#AurioliDegbelo>,
+        <http://ceur-ws.org/Vol-1273/#WerneriKuhn> .
+
+<http://ceur-ws.org/Vol-1273/#intro1> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1273/> ;
+    ns6:title "Towards Geographic Information Observatories" ;
+    ns2:endPage 5 ;
+    ns2:numPages 5 ;
+    ns2:section <http://ceur-ws.org/Vol-1273/#Introduction> ;
+    ns2:startPage 1 ;
+    ns1:author <http://ceur-ws.org/Vol-1273/#BenjaminiAdams>,
         <http://ceur-ws.org/Vol-1273/#GrantiMcKenzie>,
         <http://ceur-ws.org/Vol-1273/#KrzysztofiJanowicz>,
         <http://ceur-ws.org/Vol-1273/#TomiiKauppinen> .
 
-<http://ceur-ws.org/Vol-1273/#BenjaminiAdams> a ns2:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/BenjaminiAdams> ;
-    ns2:name "Benjamin Adams" .
+<http://ceur-ws.org/Vol-1273/#paper5> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1273/> ;
+    ns6:title "Geographic Information Observatories for Supporting Science" ;
+    ns2:endPage 39 ;
+    ns2:numPages 8 ;
+    ns2:section <http://ceur-ws.org/Vol-1273/#Acceptedpapers> ;
+    ns2:startPage 32 ;
+    ns1:author <http://ceur-ws.org/Vol-1273/#BenjaminiAdams>,
+        <http://ceur-ws.org/Vol-1273/#MarkiGahegan>,
+        <http://ceur-ws.org/Vol-1273/#PrashantiGupta>,
+        <http://ceur-ws.org/Vol-1273/#RichardiHosking> .
 
-<http://ceur-ws.org/Vol-1273/#GrantiMcKenzie> a ns2:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/GrantiMcKenzie> ;
-    ns2:name "Grant McKenzie" .
+<http://ceur-ws.org/Vol-1273/#Acceptedpapers> a ns4:SessionEvent ;
+    ns4:partOf <http://ceur-ws.org/Vol-1273/> ;
+    ns6:title "Accepted papers" .
 
-<http://ceur-ws.org/Vol-1273/#KrzysztofiJanowicz> a ns2:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/KrzysztofiJanowicz> ;
-    ns2:name "Krzysztof Janowicz" .
-
-<http://ceur-ws.org/Vol-1273/#TomiiKauppinen> a ns2:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/TomiiKauppinen> ;
-    ns2:name "Tomi Kauppinen" .
-
-<http://ceur-ws.org/Vol-1273/#event> a ns1:WorkshopEvent ;
-    ns1:hasLocation <http://dbpedia.org/resource/Austria> ;
-    ns1:hasPart <http://ceur-ws.org/Vol-1273/#part-ws> ;
-    ns1:isSubEventOf <http://ceur-ws.org/Vol-1273/#conf> ;
-    ns6:beginsAtDatetime "2014-09-23T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:endsAtDatetime "2014-09-23T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:license "http://creativecommons.org/publicdomain/zero/1.0/" .
+<http://ceur-ws.org/Vol-1273/> a ns4:Proceedings ;
+    ns4:hasPart <http://ceur-ws.org/Vol-1273/#intro1>,
+        <http://ceur-ws.org/Vol-1273/#paper1>,
+        <http://ceur-ws.org/Vol-1273/#paper2>,
+        <http://ceur-ws.org/Vol-1273/#paper3>,
+        <http://ceur-ws.org/Vol-1273/#paper4>,
+        <http://ceur-ws.org/Vol-1273/#paper5>,
+        <http://ceur-ws.org/Vol-1273/#paper6> ;
+    ns4:hasSession <http://ceur-ws.org/Vol-1273/#Acceptedpapers>,
+        <http://ceur-ws.org/Vol-1273/#Introduction> ;
+    ns8:issued "2014-10-21T00:00:00+00:00"^^xsd:dateTime ;
+    ns2:presentedAt <http://ceur-ws.org/Vol-1273/#event> ;
+    ns1:editor <http://ceur-ws.org/Vol-1273/#BenjaminiAdams>,
+        <http://ceur-ws.org/Vol-1273/#GrantiMcKenzie>,
+        <http://ceur-ws.org/Vol-1273/#KrzysztofiJanowicz>,
+        <http://ceur-ws.org/Vol-1273/#TomiiKauppinen> .
 

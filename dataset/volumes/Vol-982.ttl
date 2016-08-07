@@ -1,45 +1,281 @@
 @prefix ns1: <http://www.w3.org/2002/07/owl#> .
-@prefix ns2: <http://purl.org/dc/elements/1.1/> .
-@prefix ns3: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns4: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns5: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns6: <http://purl.org/ontology/bibo/#> .
-@prefix ns7: <http://xmlns.com/foaf/0.1/> .
-@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns2: <http://xmlns.com/foaf/0.1/> .
+@prefix ns3: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns4: <http://purl.org/ontology/bibo/#> .
+@prefix ns5: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns6: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns9: <http://purl.org/dc/elements/1.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-982/> a ns3:Proceedings ;
-    ns8:issued "2013-06-04T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:presentedAt <http://ceur-ws.org/Vol-982/#event> ;
-    ns4:editor <http://ceur-ws.org/Vol-982/#AndreasiHense>,
+<http://ceur-ws.org/Vol-982/#AndreasiHense> a ns2:Person ;
+    ns4:place <http://dbpedia.org/resource/Germany> ;
+    ns3:affiliation "Bonn-Rhein-Sieg University of Applied Sciences, Sankt Augustin" ;
+    ns1:sameAs <http://ceur-ws.org/persons/AndreasiHense> ;
+    ns2:name "Andreas Hense" .
+
+<http://ceur-ws.org/Vol-982/#AndreasiHeuer> a ns2:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/AndreasiHeuer> ;
+    ns2:made <http://ceur-ws.org/Vol-982/#YAWL2013-Paper03> ;
+    ns2:name "Andreas Heuer" .
+
+<http://ceur-ws.org/Vol-982/#ArthuriteriHofstede> a ns2:Person ;
+    ns4:place <http://dbpedia.org/resource/Australia> ;
+    ns3:affiliation "Queensland University of Technology, Brisbane" ;
+    ns1:sameAs <http://ceur-ws.org/persons/ArthuriteriHofstede> ;
+    ns2:name "Arthur ter Hofstede" .
+
+<http://ceur-ws.org/Vol-982/#ChuniOuyang> a ns2:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/ChuniOuyang> ;
+    ns2:made <http://ceur-ws.org/Vol-982/#YAWL2013-Paper04> ;
+    ns2:name "Chun Ouyang" .
+
+<http://ceur-ws.org/Vol-982/#DennisiSchunselaar> a ns2:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/DennisiSchunselaar> ;
+    ns2:made <http://ceur-ws.org/Vol-982/#YAWL2013-Paper06> ;
+    ns2:name "Dennis Schunselaar" .
+
+<http://ceur-ws.org/Vol-982/#EriciVerbeek> a ns2:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/EriciVerbeek> ;
+    ns2:made <http://ceur-ws.org/Vol-982/#YAWL2013-Paper06> ;
+    ns2:name "Eric Verbeek" .
+
+<http://ceur-ws.org/Vol-982/#FelixiMannhardt> a ns2:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/FelixiMannhardt> ;
+    ns2:made <http://ceur-ws.org/Vol-982/#YAWL2013-Paper09> ;
+    ns2:name "Felix Mannhardt" .
+
+<http://ceur-ws.org/Vol-982/#GiancarloiFortino> a ns2:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/GiancarloiFortino> ;
+    ns2:made <http://ceur-ws.org/Vol-982/#YAWL2013-Paper07> ;
+    ns2:name "Giancarlo Fortino" .
+
+<http://ceur-ws.org/Vol-982/#HolgeriMeyer> a ns2:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/HolgeriMeyer> ;
+    ns2:made <http://ceur-ws.org/Vol-982/#YAWL2013-Paper03> ;
+    ns2:name "Holger Meyer" .
+
+<http://ceur-ws.org/Vol-982/#Jan-ChristianiKuhr> a ns2:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/Jan-ChristianiKuhr> ;
+    ns2:made <http://ceur-ws.org/Vol-982/#YAWL2013-Paper03> ;
+    ns2:name "Jan-Christian Kuhr" .
+
+<http://ceur-ws.org/Vol-982/#JaniMendling> a ns2:Person ;
+    ns4:place <http://dbpedia.org/resource/Austria> ;
+    ns3:affiliation "University of Economics and Business, Vienna" ;
+    ns1:sameAs <http://ceur-ws.org/persons/JaniMendling> ;
+    ns2:name "Jan Mendling" .
+
+<http://ceur-ws.org/Vol-982/#MarcelloiLaiRosa> a ns2:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/MarcelloiLaiRosa> ;
+    ns2:made <http://ceur-ws.org/Vol-982/#YAWL2013-Paper07> ;
+    ns2:name "Marcello La Rosa" .
+
+<http://ceur-ws.org/Vol-982/#MaryiFurey> a ns2:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/MaryiFurey> ;
+    ns2:made <http://ceur-ws.org/Vol-982/#YAWL2013-Paper01> ;
+    ns2:name "Mary Furey" .
+
+<http://ceur-ws.org/Vol-982/#MoeiWynn> a ns2:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/MoeiWynn> ;
+    ns2:made <http://ceur-ws.org/Vol-982/#YAWL2013-Paper04> ;
+    ns2:name "Moe Wynn" .
+
+<http://ceur-ws.org/Vol-982/#RaffaeleiConforti> a ns2:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/RaffaeleiConforti> ;
+    ns2:made <http://ceur-ws.org/Vol-982/#YAWL2013-Paper07> ;
+    ns2:name "Raffaele Conforti" .
+
+<http://ceur-ws.org/Vol-982/#RonnyiMans> a ns2:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/RonnyiMans> ;
+    ns2:made <http://ceur-ws.org/Vol-982/#YAWL2013-Paper05> ;
+    ns2:name "Ronny Mans" .
+
+<http://ceur-ws.org/Vol-982/#SebastianiSchick> a ns2:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/SebastianiSchick> ;
+    ns2:made <http://ceur-ws.org/Vol-982/#YAWL2013-Paper03> ;
+    ns2:name "Sebastian Schick" .
+
+<http://ceur-ws.org/Vol-982/#TerryiHussey> a ns2:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/TerryiHussey> ;
+    ns2:made <http://ceur-ws.org/Vol-982/#YAWL2013-Paper01> ;
+    ns2:name "Terry Hussey" .
+
+<http://ceur-ws.org/Vol-982/#ThomasiFreytag> a ns2:Person ;
+    ns4:place <http://dbpedia.org/resource/Germany> ;
+    ns3:affiliation "Baden-Wuerttemberg Cooperative State University (DHBW), Karlsruhe" ;
+    ns1:sameAs <http://ceur-ws.org/persons/ThomasiFreytag> ;
+    ns2:name "Thomas Freytag" .
+
+<http://ceur-ws.org/Vol-982/#TimivanideriAvoort> a ns2:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/TimivanideriAvoort> ;
+    ns2:made <http://ceur-ws.org/Vol-982/#YAWL2013-Paper06> ;
+    ns2:name "Tim van der Avoort" .
+
+<http://ceur-ws.org/Vol-982/#event> a ns5:WorkshopEvent ;
+    ns5:hasLocation <http://dbpedia.org/resource/Germany> ;
+    ns5:hasPart <http://ceur-ws.org/Vol-982/#part-YAWL> ;
+    ns5:isSubEventOf <http://ceur-ws.org/Vol-982/#conf> ;
+    ns8:beginsAtDatetime "2013-06-07T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:endsAtDatetime "2013-06-07T00:00:00+00:00"^^xsd:dateTime ;
+    ns9:license "http://choosealicense.com/licenses/no-license/" .
+
+<http://ceur-ws.org/Vol-982/#JoergiEvermann> a ns2:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/JoergiEvermann> ;
+    ns2:made <http://ceur-ws.org/Vol-982/#YAWL2013-Paper01>,
+        <http://ceur-ws.org/Vol-982/#YAWL2013-Paper02> ;
+    ns2:name "Joerg Evermann" .
+
+<http://ceur-ws.org/Vol-982/#WilivanideriAalst> a ns2:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/WilivanideriAalst> ;
+    ns2:made <http://ceur-ws.org/Vol-982/#YAWL2013-Paper05>,
+        <http://ceur-ws.org/Vol-982/#YAWL2013-Paper06> ;
+    ns2:name "Wil van der Aalst" .
+
+<http://ceur-ws.org/Vol-982/#YAWL2013-Paper02> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-982/> ;
+    ns6:title "Developing a Realistic Workflow Management Environment for Teaching: An Interface from YAWL to OpenERP" ;
+    ns4:endPage 17 ;
+    ns4:numPages 8 ;
+    ns4:section <http://ceur-ws.org/Vol-982/#Session1UsingYAWL> ;
+    ns4:startPage 10 ;
+    ns3:author <http://ceur-ws.org/Vol-982/#JoergiEvermann> .
+
+<http://ceur-ws.org/Vol-982/#YAWL2013-Paper08> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-982/> ;
+    ns6:title "Editor 3.0: Redesigning the YAWL User Interface" ;
+    ns4:endPage 61 ;
+    ns4:numPages 6 ;
+    ns4:section <http://ceur-ws.org/Vol-982/#Session3YAWLUserInterface> ;
+    ns4:startPage 56 ;
+    ns3:author <http://ceur-ws.org/Vol-982/#MichaeliAdams> .
+
+<http://ceur-ws.org/Vol-982/#YAWL2013-Paper09> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-982/> ;
+    ns6:title "Web-based Editor for YAWL" ;
+    ns4:endPage 68 ;
+    ns4:numPages 7 ;
+    ns4:section <http://ceur-ws.org/Vol-982/#Session3YAWLUserInterface> ;
+    ns4:startPage 62 ;
+    ns3:author <http://ceur-ws.org/Vol-982/#FelixiMannhardt> .
+
+<http://ceur-ws.org/Vol-982/#YAWL2013-Paper10> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-982/> ;
+    ns6:title "Usability Extension for the Worklet Service" ;
+    ns4:endPage 75 ;
+    ns4:numPages 7 ;
+    ns4:section <http://ceur-ws.org/Vol-982/#Session3YAWLUserInterface> ;
+    ns4:startPage 69 ;
+    ns3:author <http://ceur-ws.org/Vol-982/#MichaeliAdams> .
+
+<http://ceur-ws.org/Vol-982/#MichaeliAdams> a ns2:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/MichaeliAdams> ;
+    ns2:made <http://ceur-ws.org/Vol-982/#YAWL2013-Paper04>,
+        <http://ceur-ws.org/Vol-982/#YAWL2013-Paper08>,
+        <http://ceur-ws.org/Vol-982/#YAWL2013-Paper10> ;
+    ns2:name "Michael Adams" .
+
+<http://ceur-ws.org/Vol-982/#YAWL2013-Paper05> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-982/> ;
+    ns6:title "Supporting the Workflow Management System Development Process with YAWL" ;
+    ns4:endPage 40 ;
+    ns4:numPages 8 ;
+    ns4:section <http://ceur-ws.org/Vol-982/#Session2YAWLDevelopment> ;
+    ns4:startPage 33 ;
+    ns3:author <http://ceur-ws.org/Vol-982/#RonnyiMans>,
+        <http://ceur-ws.org/Vol-982/#WilivanideriAalst> .
+
+<http://ceur-ws.org/Vol-982/#Session2YAWLDevelopment> a ns5:SessionEvent ;
+    ns5:partOf <http://ceur-ws.org/Vol-982/> ;
+    ns6:title "Session 2: YAWL Development" .
+
+<http://ceur-ws.org/Vol-982/#Session3YAWLUserInterface> a ns5:SessionEvent ;
+    ns5:partOf <http://ceur-ws.org/Vol-982/> ;
+    ns6:title "Session 3: YAWL User Interface" .
+
+<http://ceur-ws.org/Vol-982/#YAWL2013-Paper01> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-982/> ;
+    ns6:title "Using YAWL in a Business Undergraduate Course on Process Management: An Experience Report" ;
+    ns4:endPage 9 ;
+    ns4:numPages 9 ;
+    ns4:section <http://ceur-ws.org/Vol-982/#Session1UsingYAWL> ;
+    ns4:startPage 1 ;
+    ns3:author <http://ceur-ws.org/Vol-982/#JoergiEvermann>,
+        <http://ceur-ws.org/Vol-982/#MaryiFurey>,
+        <http://ceur-ws.org/Vol-982/#TerryiHussey> .
+
+<http://ceur-ws.org/Vol-982/#YAWL2013-Paper04> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-982/> ;
+    ns6:title "YAWL4Industry: Reflections on using YAWL for Industry Projects" ;
+    ns4:endPage 32 ;
+    ns4:numPages 7 ;
+    ns4:section <http://ceur-ws.org/Vol-982/#Session1UsingYAWL> ;
+    ns4:startPage 26 ;
+    ns3:author <http://ceur-ws.org/Vol-982/#ChuniOuyang>,
+        <http://ceur-ws.org/Vol-982/#MichaeliAdams>,
+        <http://ceur-ws.org/Vol-982/#MoeiWynn> .
+
+<http://ceur-ws.org/Vol-982/#YAWL2013-Paper07> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-982/> ;
+    ns6:title "Process Monitoring Using Sensors in YAWL" ;
+    ns4:endPage 55 ;
+    ns4:numPages 7 ;
+    ns4:section <http://ceur-ws.org/Vol-982/#Session2YAWLDevelopment> ;
+    ns4:startPage 49 ;
+    ns3:author <http://ceur-ws.org/Vol-982/#GiancarloiFortino>,
+        <http://ceur-ws.org/Vol-982/#MarcelloiLaiRosa>,
+        <http://ceur-ws.org/Vol-982/#RaffaeleiConforti> .
+
+<http://ceur-ws.org/Vol-982/#Session1UsingYAWL> a ns5:SessionEvent ;
+    ns5:partOf <http://ceur-ws.org/Vol-982/> ;
+    ns6:title "Session 1: Using YAWL" .
+
+<http://ceur-ws.org/Vol-982/#YAWL2013-Paper03> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-982/> ;
+    ns6:title "Adapting a Generic Data Synchronisation Framework for YAWL to Access Clinical Information Systems at the Task Level" ;
+    ns4:endPage 25 ;
+    ns4:numPages 8 ;
+    ns4:section <http://ceur-ws.org/Vol-982/#Session1UsingYAWL> ;
+    ns4:startPage 18 ;
+    ns3:author <http://ceur-ws.org/Vol-982/#AndreasiHeuer>,
+        <http://ceur-ws.org/Vol-982/#HolgeriMeyer>,
+        <http://ceur-ws.org/Vol-982/#Jan-ChristianiKuhr>,
+        <http://ceur-ws.org/Vol-982/#SebastianiSchick> .
+
+<http://ceur-ws.org/Vol-982/#YAWL2013-Paper06> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-982/> ;
+    ns6:title "YAWL in the Cloud" ;
+    ns4:endPage 48 ;
+    ns4:numPages 8 ;
+    ns4:section <http://ceur-ws.org/Vol-982/#Session2YAWLDevelopment> ;
+    ns4:startPage 41 ;
+    ns3:author <http://ceur-ws.org/Vol-982/#DennisiSchunselaar>,
+        <http://ceur-ws.org/Vol-982/#EriciVerbeek>,
+        <http://ceur-ws.org/Vol-982/#TimivanideriAvoort>,
+        <http://ceur-ws.org/Vol-982/#WilivanideriAalst> .
+
+<http://ceur-ws.org/Vol-982/> a ns5:Proceedings ;
+    ns5:hasPart <http://ceur-ws.org/Vol-982/#YAWL2013-Paper01>,
+        <http://ceur-ws.org/Vol-982/#YAWL2013-Paper02>,
+        <http://ceur-ws.org/Vol-982/#YAWL2013-Paper03>,
+        <http://ceur-ws.org/Vol-982/#YAWL2013-Paper04>,
+        <http://ceur-ws.org/Vol-982/#YAWL2013-Paper05>,
+        <http://ceur-ws.org/Vol-982/#YAWL2013-Paper06>,
+        <http://ceur-ws.org/Vol-982/#YAWL2013-Paper07>,
+        <http://ceur-ws.org/Vol-982/#YAWL2013-Paper08>,
+        <http://ceur-ws.org/Vol-982/#YAWL2013-Paper09>,
+        <http://ceur-ws.org/Vol-982/#YAWL2013-Paper10> ;
+    ns5:hasSession <http://ceur-ws.org/Vol-982/#Session1UsingYAWL>,
+        <http://ceur-ws.org/Vol-982/#Session2YAWLDevelopment>,
+        <http://ceur-ws.org/Vol-982/#Session3YAWLUserInterface> ;
+    ns7:issued "2013-06-04T00:00:00+00:00"^^xsd:dateTime ;
+    ns4:presentedAt <http://ceur-ws.org/Vol-982/#event> ;
+    ns3:editor <http://ceur-ws.org/Vol-982/#AndreasiHense>,
         <http://ceur-ws.org/Vol-982/#ArthuriteriHofstede>,
         <http://ceur-ws.org/Vol-982/#JaniMendling>,
         <http://ceur-ws.org/Vol-982/#ThomasiFreytag> .
-
-<http://ceur-ws.org/Vol-982/#AndreasiHense> a ns7:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/AndreasiHense> ;
-    ns7:name "Andreas Hense" .
-
-<http://ceur-ws.org/Vol-982/#ArthuriteriHofstede> a ns7:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/ArthuriteriHofstede> ;
-    ns7:name "Arthur ter Hofstede" .
-
-<http://ceur-ws.org/Vol-982/#JaniMendling> a ns7:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/JaniMendling> ;
-    ns7:name "Jan Mendling" .
-
-<http://ceur-ws.org/Vol-982/#ThomasiFreytag> a ns7:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/ThomasiFreytag> ;
-    ns7:name "Thomas Freytag" .
-
-<http://ceur-ws.org/Vol-982/#event> a ns3:WorkshopEvent ;
-    ns3:hasLocation <http://dbpedia.org/resource/Germany> ;
-    ns3:hasPart <http://ceur-ws.org/Vol-982/#part-CEUR-WS> ;
-    ns3:isSubEventOf <http://ceur-ws.org/Vol-982/#conf> ;
-    ns5:beginsAtDatetime "2013-06-07T00:00:00+00:00"^^xsd:dateTime ;
-    ns5:endsAtDatetime "2013-06-07T00:00:00+00:00"^^xsd:dateTime ;
-    ns2:license "http://choosealicense.com/licenses/no-license/" .
 

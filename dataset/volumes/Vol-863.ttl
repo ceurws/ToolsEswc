@@ -1,40 +1,142 @@
 @prefix ns1: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns2: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns3: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns4: <http://purl.org/dc/elements/1.1/> .
-@prefix ns5: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns6: <http://xmlns.com/foaf/0.1/> .
-@prefix ns7: <http://www.w3.org/2002/07/owl#> .
-@prefix ns8: <http://purl.org/ontology/bibo/#> .
+@prefix ns2: <http://xmlns.com/foaf/0.1/> .
+@prefix ns3: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns4: <http://www.w3.org/2002/07/owl#> .
+@prefix ns5: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns6: <http://purl.org/ontology/bibo/#> .
+@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns8: <http://purl.org/dc/elements/1.1/> .
+@prefix ns9: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-863/> a ns1:Proceedings ;
-    ns5:issued "2012-06-23T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:presentedAt <http://ceur-ws.org/Vol-863/#event> ;
-    ns2:editor <http://ceur-ws.org/Vol-863/#BarbaraiPernici>,
-        <http://ceur-ws.org/Vol-863/#IsabelleiMirbel> .
+<http://ceur-ws.org/Vol-863/#AminaiSouag> a ns2:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/AminaiSouag> ;
+    ns2:made <http://ceur-ws.org/Vol-863/#paper3> ;
+    ns2:name "Amina Souag" .
 
-<http://ceur-ws.org/Vol-863/#BarbaraiPernici> a ns6:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/BarbaraiPernici> ;
-    ns6:name "Barbara Pernici" .
+<http://ceur-ws.org/Vol-863/#BarbaraiPernici> a ns2:Person ;
+    ns3:affiliation "" ;
+    ns4:sameAs <http://ceur-ws.org/persons/BarbaraiPernici> ;
+    ns2:name "Barbara Pernici" .
 
-<http://ceur-ws.org/Vol-863/#IsabelleiMirbel> a ns6:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/IsabelleiMirbel> ;
-    ns6:name "Isabelle Mirbel" .
+<http://ceur-ws.org/Vol-863/#IsabelleiMirbel> a ns2:Person ;
+    ns3:affiliation "" ;
+    ns4:sameAs <http://ceur-ws.org/persons/IsabelleiMirbel> ;
+    ns2:name "Isabelle Mirbel" .
+
+<http://ceur-ws.org/Vol-863/#KatjaiHeiden> a ns2:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/KatjaiHeiden> ;
+    ns2:made <http://ceur-ws.org/Vol-863/#paper7> ;
+    ns2:name "Katja Heiden" .
+
+<http://ceur-ws.org/Vol-863/#MatthiasiFarwick> a ns2:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/MatthiasiFarwick> ;
+    ns2:made <http://ceur-ws.org/Vol-863/#paper4> ;
+    ns2:name "Matthias Farwick" .
+
+<http://ceur-ws.org/Vol-863/#MichieliMeulendijk> a ns2:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/MichieliMeulendijk> ;
+    ns2:made <http://ceur-ws.org/Vol-863/#paper6> ;
+    ns2:name "Michiel Meulendijk" .
+
+<http://ceur-ws.org/Vol-863/#NadejdaiAlkhaldi> a ns2:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/NadejdaiAlkhaldi> ;
+    ns2:made <http://ceur-ws.org/Vol-863/#paper2> ;
+    ns2:name "Nadejda Alkhaldi" .
+
+<http://ceur-ws.org/Vol-863/#SlavkoiZitnik> a ns2:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/SlavkoiZitnik> ;
+    ns2:made <http://ceur-ws.org/Vol-863/#paper1> ;
+    ns2:name "Slavko Zitnik" .
+
+<http://ceur-ws.org/Vol-863/#TommiiKramer> a ns2:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/TommiiKramer> ;
+    ns2:made <http://ceur-ws.org/Vol-863/#paper5> ;
+    ns2:name "Tommi Kramer" .
 
 <http://ceur-ws.org/Vol-863/#event> a ns1:WorkshopEvent ;
     ns1:hasLocation <http://dbpedia.org/resource/Commemorative_coins_of_Poland> ;
-    ns1:hasPart <http://ceur-ws.org/Vol-863/#part-CEUR-WS> ;
+    ns1:hasPart <http://ceur-ws.org/Vol-863/#part-CAiSE> ;
     ns1:isSubEventOf <http://ceur-ws.org/Vol-863/#conf> ;
-    ns3:beginsAtDatetime "2012-06-26T00:00:00+00:00"^^xsd:dateTime ;
-    ns3:endsAtDatetime "2012-06-26T00:00:00+00:00"^^xsd:dateTime ;
-    ns4:license "http://choosealicense.com/licenses/no-license/" ;
+    ns7:beginsAtDatetime "2012-06-26T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:endsAtDatetime "2012-06-26T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:license "http://choosealicense.com/licenses/no-license/" ;
     rdfs:seeAlso <http://ceur-ws.org/Vol-263/#event>,
         <http://ceur-ws.org/Vol-343/#event>,
         <http://ceur-ws.org/Vol-479/#event>,
         <http://ceur-ws.org/Vol-593/#event>,
         <http://ceur-ws.org/Vol-731/#event> .
+
+<http://ceur-ws.org/Vol-863/#paper1> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-863/> ;
+    ns5:title "Collective Ontology-based Information Extraction using Probabilistic Graphical Models" ;
+    ns6:section <http://ceur-ws.org/Vol-863/#Session1OntologyBasedInformationSystemEngineering> ;
+    ns3:author <http://ceur-ws.org/Vol-863/#SlavkoiZitnik> .
+
+<http://ceur-ws.org/Vol-863/#paper2> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-863/> ;
+    ns5:title "Participatory Quality Management of Ontologies in Enterprise Modelling" ;
+    ns6:section <http://ceur-ws.org/Vol-863/#Session1OntologyBasedInformationSystemEngineering> ;
+    ns3:author <http://ceur-ws.org/Vol-863/#NadejdaiAlkhaldi> .
+
+<http://ceur-ws.org/Vol-863/#paper3> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-863/> ;
+    ns5:title "Towards a new generation of security requirements definition methodology using ontologies" ;
+    ns6:section <http://ceur-ws.org/Vol-863/#Session1OntologyBasedInformationSystemEngineering> ;
+    ns3:author <http://ceur-ws.org/Vol-863/#AminaiSouag> .
+
+<http://ceur-ws.org/Vol-863/#paper4> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-863/> ;
+    ns5:title "Towards Automation of Enterprise Architecture Model Maintenance" ;
+    ns6:section <http://ceur-ws.org/Vol-863/#Session2InformationSystemModeling> ;
+    ns3:author <http://ceur-ws.org/Vol-863/#MatthiasiFarwick> .
+
+<http://ceur-ws.org/Vol-863/#paper5> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-863/> ;
+    ns5:title "Software Component Allocation in Distributed Development Settings" ;
+    ns6:section <http://ceur-ws.org/Vol-863/#Session2InformationSystemModeling> ;
+    ns3:author <http://ceur-ws.org/Vol-863/#TommiiKramer> .
+
+<http://ceur-ws.org/Vol-863/#paper6> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-863/> ;
+    ns5:title "Development of a decision-support system in the primary care sector" ;
+    ns6:section <http://ceur-ws.org/Vol-863/#Session4> ;
+    ns3:author <http://ceur-ws.org/Vol-863/#MichieliMeulendijk> .
+
+<http://ceur-ws.org/Vol-863/#paper7> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-863/> ;
+    ns5:title "Model-based Integration of Clinical Practice Guidelines in Clinical Pathways" ;
+    ns6:section <http://ceur-ws.org/Vol-863/#Session4> ;
+    ns3:author <http://ceur-ws.org/Vol-863/#KatjaiHeiden> .
+
+<http://ceur-ws.org/Vol-863/#Session2InformationSystemModeling> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-863/> ;
+    ns5:title "Session 2: Information System Modeling" .
+
+<http://ceur-ws.org/Vol-863/#Session4> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-863/> ;
+    ns5:title "Session 4:" .
+
+<http://ceur-ws.org/Vol-863/#Session1OntologyBasedInformationSystemEngineering> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-863/> ;
+    ns5:title "Session 1: Ontology Based Information System Engineering" .
+
+<http://ceur-ws.org/Vol-863/> a ns1:Proceedings ;
+    ns1:hasPart <http://ceur-ws.org/Vol-863/#paper1>,
+        <http://ceur-ws.org/Vol-863/#paper2>,
+        <http://ceur-ws.org/Vol-863/#paper3>,
+        <http://ceur-ws.org/Vol-863/#paper4>,
+        <http://ceur-ws.org/Vol-863/#paper5>,
+        <http://ceur-ws.org/Vol-863/#paper6>,
+        <http://ceur-ws.org/Vol-863/#paper7> ;
+    ns1:hasSession <http://ceur-ws.org/Vol-863/#Session1OntologyBasedInformationSystemEngineering>,
+        <http://ceur-ws.org/Vol-863/#Session2InformationSystemModeling>,
+        <http://ceur-ws.org/Vol-863/#Session4> ;
+    ns9:issued "2012-06-23T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:presentedAt <http://ceur-ws.org/Vol-863/#event> ;
+    ns3:editor <http://ceur-ws.org/Vol-863/#BarbaraiPernici>,
+        <http://ceur-ws.org/Vol-863/#IsabelleiMirbel> .
 

@@ -1,40 +1,919 @@
-@prefix ns1: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns2: <http://xmlns.com/foaf/0.1/> .
-@prefix ns3: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns4: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns5: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns1: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns2: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns3: <http://xmlns.com/foaf/0.1/> .
+@prefix ns4: <http://purl.org/ontology/bibo/#> .
+@prefix ns5: <http://swrc.ontoware.org/ontology/#> .
 @prefix ns6: <http://www.w3.org/2002/07/owl#> .
 @prefix ns7: <http://purl.org/dc/elements/1.1/> .
-@prefix ns8: <http://purl.org/ontology/bibo/#> .
+@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns9: <http://purl.org/NET/c4dm/timeline.owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-920/> a ns1:Proceedings ;
-    ns5:issued "2012-10-15T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:presentedAt <http://ceur-ws.org/Vol-920/#event> ;
-    ns3:editor <http://ceur-ws.org/Vol-920/#Milo%C5%A1iRadovanovi%C4%87>,
+<http://ceur-ws.org/Vol-920/#%C3%81kosiGub%C3%A1n> a ns3:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/%C3%81kosiGub%C3%A1n> ;
+    ns3:made <http://ceur-ws.org/Vol-920/#p5-demetrovics> ;
+    ns3:name "Ákos Gubán" .
+
+<http://ceur-ws.org/Vol-920/#%C4%90or%C4%91eiHerceg> a ns3:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/%C4%90or%C4%91eiHerceg> ;
+    ns3:made <http://ceur-ws.org/Vol-920/#p11-herceg> ;
+    ns3:name "Đorđe Herceg" .
+
+<http://ceur-ws.org/Vol-920/#AdrianaiNeago%26scedil> a ns3:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/AdrianaiNeago%26scedil> ;
+    ns3:made <http://ceur-ws.org/Vol-920/#p125-neagos> ;
+    ns3:name "Adriana Neago&scedil" .
+
+<http://ceur-ws.org/Vol-920/#AisaiBezhani> a ns3:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/AisaiBezhani> ;
+    ns3:made <http://ceur-ws.org/Vol-920/#p40-daci> ;
+    ns3:name "Aisa Bezhani" .
+
+<http://ceur-ws.org/Vol-920/#AleksandraiTrtovac> a ns3:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/AleksandraiTrtovac> ;
+    ns3:made <http://ceur-ws.org/Vol-920/#p101-stankovic> ;
+    ns3:name "Aleksandra Trtovac" .
+
+<http://ceur-ws.org/Vol-920/#AlexiMuscar> a ns3:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/AlexiMuscar> ;
+    ns3:made <http://ceur-ws.org/Vol-920/#p136-muscar> ;
+    ns3:name "Alex Muscar" .
+
+<http://ceur-ws.org/Vol-920/#AliiAl-Dahoud> a ns3:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/AliiAl-Dahoud> ;
+    ns3:made <http://ceur-ws.org/Vol-920/#p147-mitrovic> ;
+    ns3:name "Ali Al-Dahoud" .
+
+<http://ceur-ws.org/Vol-920/#An%C4%91elkaiZe%26ccaron> a ns3:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/An%C4%91elkaiZe%26ccaron> ;
+    ns3:made <http://ceur-ws.org/Vol-920/#p109-zecevic> ;
+    ns3:name "Anđelka Ze&ccaron" .
+
+<http://ceur-ws.org/Vol-920/#BiseraiDugalic> a ns3:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/BiseraiDugalic> ;
+    ns3:made <http://ceur-ws.org/Vol-920/#p113-dugalic> ;
+    ns3:name "Bisera Dugalic" .
+
+<http://ceur-ws.org/Vol-920/#BojanaiKoteska> a ns3:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/BojanaiKoteska> ;
+    ns3:made <http://ceur-ws.org/Vol-920/#p121-koteska> ;
+    ns3:name "Bojana Koteska" .
+
+<http://ceur-ws.org/Vol-920/#BojkeniShehu> a ns3:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/BojkeniShehu> ;
+    ns3:made <http://ceur-ws.org/Vol-920/#p46-kajo-mece> ;
+    ns3:name "Bojken Shehu" .
+
+<http://ceur-ws.org/Vol-920/#DanijelaiBoberi%C4%87iKrsti%C4%87ev> a ns3:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/DanijelaiBoberi%C4%87iKrsti%C4%87ev> ;
+    ns3:made <http://ceur-ws.org/Vol-920/#p25-boberic-krsticev> ;
+    ns3:name "Danijela Boberić Krstićev" .
+
+<http://ceur-ws.org/Vol-920/#DanijelaiTe%C5%A1endi%C4%87> a ns3:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/DanijelaiTe%C5%A1endi%C4%87> ;
+    ns3:made <http://ceur-ws.org/Vol-920/#p35-tesendic> ;
+    ns3:name "Danijela Tešendić" .
+
+<http://ceur-ws.org/Vol-920/#DavidiCooke> a ns3:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/DavidiCooke> ;
+    ns3:made <http://ceur-ws.org/Vol-920/#p51-kureshi> ;
+    ns3:name "David Cooke" .
+
+<http://ceur-ws.org/Vol-920/#DavorkaiRadakovi%C4%87> a ns3:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/DavorkaiRadakovi%C4%87> ;
+    ns3:made <http://ceur-ws.org/Vol-920/#p11-herceg> ;
+    ns3:name "Davorka Radaković" .
+
+<http://ceur-ws.org/Vol-920/#DejaniMitrovi%C4%87> a ns3:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/DejaniMitrovi%C4%87> ;
+    ns3:made <http://ceur-ws.org/Vol-920/#p147-mitrovic> ;
+    ns3:name "Dejan Mitrović" .
+
+<http://ceur-ws.org/Vol-920/#DimitariChristozov> a ns3:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/DimitariChristozov> ;
+    ns3:made <http://ceur-ws.org/Vol-920/#p21-galletly> ;
+    ns3:name "Dimitar Christozov" .
+
+<http://ceur-ws.org/Vol-920/#DraganiIvetic> a ns3:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/DraganiIvetic> ;
+    ns3:made <http://ceur-ws.org/Vol-920/#p81-sipos> ;
+    ns3:name "Dragan Ivetic" .
+
+<http://ceur-ws.org/Vol-920/#EnidaiSheme> a ns3:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/EnidaiSheme> ;
+    ns3:made <http://ceur-ws.org/Vol-920/#p68-sheme> ;
+    ns3:name "Enida Sheme" .
+
+<http://ceur-ws.org/Vol-920/#EnidiVrenozaj> a ns3:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/EnidiVrenozaj> ;
+    ns3:made <http://ceur-ws.org/Vol-920/#p46-kajo-mece> ;
+    ns3:name "Enid Vrenozaj" .
+
+<http://ceur-ws.org/Vol-920/#EugeniaiKovatcheva> a ns3:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/EugeniaiKovatcheva> ;
+    ns3:made <http://ceur-ws.org/Vol-920/#p16-kovatcheva> ;
+    ns3:name "Eugenia Kovatcheva" .
+
+<http://ceur-ws.org/Vol-920/#GentiiDaci> a ns3:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/GentiiDaci> ;
+    ns3:made <http://ceur-ws.org/Vol-920/#p40-daci> ;
+    ns3:name "Genti Daci" .
+
+<http://ceur-ws.org/Vol-920/#GoraniPani%C4%87> a ns3:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/GoraniPani%C4%87> ;
+    ns3:made <http://ceur-ws.org/Vol-920/#p58-panic> ;
+    ns3:name "Goran Panić" .
+
+<http://ceur-ws.org/Vol-920/#GoraniVelkoski> a ns3:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/GoraniVelkoski> ;
+    ns3:made <http://ceur-ws.org/Vol-920/#p142-kostoska> ;
+    ns3:name "Goran Velkoski" .
+
+<http://ceur-ws.org/Vol-920/#HuaiNamiSon> a ns3:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/HuaiNamiSon> ;
+    ns3:made <http://ceur-ws.org/Vol-920/#p5-demetrovics> ;
+    ns3:name "Hua Nam Son" .
+
+<http://ceur-ws.org/Vol-920/#IbadiKureshi> a ns3:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/IbadiKureshi> ;
+    ns3:made <http://ceur-ws.org/Vol-920/#p51-kureshi> ;
+    ns3:name "Ibad Kureshi" .
+
+<http://ceur-ws.org/Vol-920/#IvaniObradovi%C4%87> a ns3:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/IvaniObradovi%C4%87> ;
+    ns3:made <http://ceur-ws.org/Vol-920/#p101-stankovic> ;
+    ns3:name "Ivan Obradović" .
+
+<http://ceur-ws.org/Vol-920/#J%C3%A1nosiDemetrovics> a ns3:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/J%C3%A1nosiDemetrovics> ;
+    ns3:made <http://ceur-ws.org/Vol-920/#p5-demetrovics> ;
+    ns3:name "János Demetrovics" .
+
+<http://ceur-ws.org/Vol-920/#JelenaiGraovac> a ns3:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/JelenaiGraovac> ;
+    ns3:made <http://ceur-ws.org/Vol-920/#p93-graovac> ;
+    ns3:name "Jelena Graovac" .
+
+<http://ceur-ws.org/Vol-920/#JelenaiJa%C4%87imovi%C4%87> a ns3:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/JelenaiJa%C4%87imovi%C4%87> ;
+    ns3:made <http://ceur-ws.org/Vol-920/#p97-jacimovic> ;
+    ns3:name "Jelena Jaćimović" .
+
+<http://ceur-ws.org/Vol-920/#JohniGalletly> a ns3:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/JohniGalletly> ;
+    ns3:made <http://ceur-ws.org/Vol-920/#p21-galletly> ;
+    ns3:name "John Galletly" .
+
+<http://ceur-ws.org/Vol-920/#KatarzynaiWasielewska> a ns3:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/KatarzynaiWasielewska> ;
+    ns3:made <http://ceur-ws.org/Vol-920/#p134-ganzha> ;
+    ns3:name "Katarzyna Wasielewska" .
+
+<http://ceur-ws.org/Vol-920/#KiriliKiroski> a ns3:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/KiriliKiroski> ;
+    ns3:made <http://ceur-ws.org/Vol-920/#p30-kostoska> ;
+    ns3:name "Kiril Kiroski" .
+
+<http://ceur-ws.org/Vol-920/#KrsteiBozinoski> a ns3:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/KrsteiBozinoski> ;
+    ns3:made <http://ceur-ws.org/Vol-920/#p142-kostoska> ;
+    ns3:name "Krste Bozinoski" .
+
+<http://ceur-ws.org/Vol-920/#LadislaviSamuelis> a ns3:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/LadislaviSamuelis> ;
+    ns3:made <http://ceur-ws.org/Vol-920/#p129-samuelis> ;
+    ns3:name "Ladislav Samuelis" .
+
+<http://ceur-ws.org/Vol-920/#LauraiSurcel> a ns3:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/LauraiSurcel> ;
+    ns3:made <http://ceur-ws.org/Vol-920/#p136-muscar> ;
+    ns3:name "Laura Surcel" .
+
+<http://ceur-ws.org/Vol-920/#LorenaiKodra> a ns3:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/LorenaiKodra> ;
+    ns3:made <http://ceur-ws.org/Vol-920/#p46-kajo-mece> ;
+    ns3:name "Lorena Kodra" .
+
+<http://ceur-ws.org/Vol-920/#MariniAranitasi> a ns3:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/MariniAranitasi> ;
+    ns3:made <http://ceur-ws.org/Vol-920/#p68-sheme> ;
+    ns3:name "Marin Aranitasi" .
+
+<http://ceur-ws.org/Vol-920/#MarjaniHeri%26ccaron> a ns3:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/MarjaniHeri%26ccaron> ;
+    ns3:made <http://ceur-ws.org/Vol-920/#p117-gerlec> ;
+    ns3:name "Marjan Heri&ccaron" .
+
+<http://ceur-ws.org/Vol-920/#MegiiTartari> a ns3:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/MegiiTartari> ;
+    ns3:made <http://ceur-ws.org/Vol-920/#p72-kajo-mece> ;
+    ns3:name "Megi Tartari" .
+
+<http://ceur-ws.org/Vol-920/#MihaelaiColhon> a ns3:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/MihaelaiColhon> ;
+    ns3:made <http://ceur-ws.org/Vol-920/#p85-colhon> ;
+    ns3:name "Mihaela Colhon" .
+
+<http://ceur-ws.org/Vol-920/#MilaniVidakovi%C4%87> a ns3:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/MilaniVidakovi%C4%87> ;
+    ns3:made <http://ceur-ws.org/Vol-920/#p147-mitrovic> ;
+    ns3:name "Milan Vidaković" .
+
+<http://ceur-ws.org/Vol-920/#Milo%C5%A1iRackovi%C4%87> a ns3:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/Milo%C5%A1iRackovi%C4%87> ;
+    ns3:made <http://ceur-ws.org/Vol-920/#p58-panic> ;
+    ns3:name "Miloš Racković" .
+
+<http://ceur-ws.org/Vol-920/#Milo%C5%A1iRadovanovi%C4%87> a ns3:Person ;
+    ns5:affiliation "" ;
+    ns6:sameAs <http://ceur-ws.org/persons/Milo%C5%A1iRadovanovi%C4%87> ;
+    ns3:name "Miloš Radovanović" .
+
+<http://ceur-ws.org/Vol-920/#Milo%C5%A1iUtvi%C4%87> a ns3:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/Milo%C5%A1iUtvi%C4%87> ;
+    ns3:made <http://ceur-ws.org/Vol-920/#p109-zecevic> ;
+    ns3:name "Miloš Utvić" .
+
+<http://ceur-ws.org/Vol-920/#NekiiFrasheri> a ns3:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/NekiiFrasheri> ;
+    ns3:made <http://ceur-ws.org/Vol-920/#p68-sheme> ;
+    ns3:name "Neki Frasheri" .
+
+<http://ceur-ws.org/Vol-920/#SimonaiMotogna> a ns3:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/SimonaiMotogna> ;
+    ns3:made <http://ceur-ws.org/Vol-920/#p125-neagos> ;
+    ns3:name "Simona Motogna" .
+
+<http://ceur-ws.org/Vol-920/#SoriniIlie> a ns3:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/SoriniIlie> ;
+    ns3:made <http://ceur-ws.org/Vol-920/#p139-badica> ;
+    ns3:name "Sorin Ilie" .
+
+<http://ceur-ws.org/Vol-920/#Srdjani%C5%A0krbi%C4%87> a ns3:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/Srdjani%C5%A0krbi%C4%87> ;
+    ns3:made <http://ceur-ws.org/Vol-920/#p58-panic> ;
+    ns3:name "Srdjan Škrbić" .
+
+<http://ceur-ws.org/Vol-920/#StoyaniBonev> a ns3:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/StoyaniBonev> ;
+    ns3:made <http://ceur-ws.org/Vol-920/#p21-galletly> ;
+    ns3:name "Stoyan Bonev" .
+
+<http://ceur-ws.org/Vol-920/#VeraiHerceg-Mandi%C4%87> a ns3:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/VeraiHerceg-Mandi%C4%87> ;
+    ns3:made <http://ceur-ws.org/Vol-920/#p11-herceg> ;
+    ns3:name "Vera Herceg-Mandić" .
+
+<http://ceur-ws.org/Vol-920/#VesnaiPaji%C4%87> a ns3:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/VesnaiPaji%C4%87> ;
+    ns3:made <http://ceur-ws.org/Vol-920/#p105-vujicic-stankovic> ;
+    ns3:name "Vesna Pajić" .
+
+<http://ceur-ws.org/Vol-920/#VioletaiHolmes> a ns3:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/VioletaiHolmes> ;
+    ns3:made <http://ceur-ws.org/Vol-920/#p51-kureshi> ;
+    ns3:name "Violeta Holmes" .
+
+<http://ceur-ws.org/Vol-920/#VoliniKaragiozov> a ns3:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/VoliniKaragiozov> ;
+    ns3:made <http://ceur-ws.org/Vol-920/#p21-galletly> ;
+    ns3:name "Volin Karagiozov" .
+
+<http://ceur-ws.org/Vol-920/#ZoraniBudimac> a ns3:Person ;
+    ns5:affiliation "" ;
+    ns6:sameAs <http://ceur-ws.org/persons/ZoraniBudimac> ;
+    ns3:name "Zoran Budimac" .
+
+<http://ceur-ws.org/Vol-920/#event> a ns2:WorkshopEvent ;
+    ns2:hasLocation <http://dbpedia.org/resource/Serbia> ;
+    ns2:hasPart <http://ceur-ws.org/Vol-920/#part-BCI-LOCAL> ;
+    ns2:isSubEventOf <http://ceur-ws.org/Vol-920/#conf> ;
+    ns9:beginsAtDatetime "2012-09-16T00:00:00+00:00"^^xsd:dateTime ;
+    ns9:endsAtDatetime "2012-09-20T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:license "http://choosealicense.com/licenses/no-license/" .
+
+<http://ceur-ws.org/Vol-920/#i%C4%87iStankovi%C4%87> a ns3:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/i%C4%87iStankovi%C4%87> ;
+    ns3:made <http://ceur-ws.org/Vol-920/#p105-vujicic-stankovic> ;
+    ns3:name "ić Stanković" .
+
+<http://ceur-ws.org/Vol-920/#rtiGerlec> a ns3:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/rtiGerlec> ;
+    ns3:made <http://ceur-ws.org/Vol-920/#p117-gerlec> ;
+    ns3:name "rt Gerlec" .
+
+<http://ceur-ws.org/Vol-920/#> a ns3:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/> ;
+    ns3:made <http://ceur-ws.org/Vol-920/#p125-neagos>,
+        <http://ceur-ws.org/Vol-920/#p139-badica> ;
+    ns3:name "" .
+
+<http://ceur-ws.org/Vol-920/#AleksanderiBiberaj> a ns3:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/AleksanderiBiberaj> ;
+    ns3:made <http://ceur-ws.org/Vol-920/#p1-bejleri>,
+        <http://ceur-ws.org/Vol-920/#p63-bejleri> ;
+    ns3:name "Aleksander Biberaj" .
+
+<http://ceur-ws.org/Vol-920/#AnastasiMishev> a ns3:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/AnastasiMishev> ;
+    ns3:made <http://ceur-ws.org/Vol-920/#p113-dugalic>,
+        <http://ceur-ws.org/Vol-920/#p121-koteska> ;
+    ns3:name "Anastas Mishev" .
+
+<http://ceur-ws.org/Vol-920/#ArianaiBejleri> a ns3:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/ArianaiBejleri> ;
+    ns3:made <http://ceur-ws.org/Vol-920/#p1-bejleri>,
+        <http://ceur-ws.org/Vol-920/#p63-bejleri> ;
+    ns3:name "Ariana Bejleri" .
+
+<http://ceur-ws.org/Vol-920/#Bojanai%C4%90or%C4%91evi%C4%87> a ns3:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/Bojanai%C4%90or%C4%91evi%C4%87> ;
+    ns3:made <http://ceur-ws.org/Vol-920/#p109-zecevic>,
+        <http://ceur-ws.org/Vol-920/#p89-djordjevic> ;
+    ns3:name "Bojana Đorđević" .
+
+<http://ceur-ws.org/Vol-920/#CostiniB%26abreve> a ns3:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/CostiniB%26abreve> ;
+    ns3:made <http://ceur-ws.org/Vol-920/#p136-muscar>,
+        <http://ceur-ws.org/Vol-920/#p139-badica> ;
+    ns3:name "Costin B&abreve" .
+
+<http://ceur-ws.org/Vol-920/#ElindaiKajo-Mece> a ns3:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/ElindaiKajo-Mece> ;
+    ns3:made <http://ceur-ws.org/Vol-920/#p46-kajo-mece>,
+        <http://ceur-ws.org/Vol-920/#p72-kajo-mece> ;
+    ns3:name "Elinda Kajo-Mece" .
+
+<http://ceur-ws.org/Vol-920/#ErmaliBeqiri> a ns3:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/ErmaliBeqiri> ;
+    ns3:made <http://ceur-ws.org/Vol-920/#p1-bejleri>,
+        <http://ceur-ws.org/Vol-920/#p63-bejleri> ;
+    ns3:name "Ermal Beqiri" .
+
+<http://ceur-ws.org/Vol-920/#IgliiTafaj> a ns3:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/IgliiTafaj> ;
+    ns3:made <http://ceur-ws.org/Vol-920/#p1-bejleri>,
+        <http://ceur-ws.org/Vol-920/#p63-bejleri> ;
+    ns3:name "Igli Tafaj" .
+
+<http://ceur-ws.org/Vol-920/#IvaniPeric> a ns3:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/IvaniPeric> ;
+    ns3:made <http://ceur-ws.org/Vol-920/#p76-peric>,
+        <http://ceur-ws.org/Vol-920/#p81-sipos> ;
+    ns3:name "Ivan Peric" .
+
+<http://ceur-ws.org/Vol-920/#JulianiFejzaj> a ns3:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/JulianiFejzaj> ;
+    ns3:made <http://ceur-ws.org/Vol-920/#p1-bejleri>,
+        <http://ceur-ws.org/Vol-920/#p63-bejleri> ;
+    ns3:name "Julian Fejzaj" .
+
+<http://ceur-ws.org/Vol-920/#MagdalenaiKostoska> a ns3:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/MagdalenaiKostoska> ;
+    ns3:made <http://ceur-ws.org/Vol-920/#p142-kostoska>,
+        <http://ceur-ws.org/Vol-920/#p30-kostoska> ;
+    ns3:name "Magdalena Kostoska" .
+
+<http://ceur-ws.org/Vol-920/#MariusziM.iMesjasz> a ns3:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/MariusziM.iMesjasz> ;
+    ns3:made <http://ceur-ws.org/Vol-920/#p133-ganzha>,
+        <http://ceur-ws.org/Vol-920/#p135-ganzha> ;
+    ns3:name "Mariusz M. Mesjasz" .
+
+<http://ceur-ws.org/Vol-920/#MarjaniGusev> a ns3:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/MarjaniGusev> ;
+    ns3:made <http://ceur-ws.org/Vol-920/#p142-kostoska>,
+        <http://ceur-ws.org/Vol-920/#p30-kostoska> ;
+    ns3:name "Marjan Gusev" .
+
+<http://ceur-ws.org/Vol-920/#OliveriSipos> a ns3:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/OliveriSipos> ;
+    ns3:made <http://ceur-ws.org/Vol-920/#p76-peric>,
+        <http://ceur-ws.org/Vol-920/#p81-sipos> ;
+    ns3:name "Oliver Sipos" .
+
+<http://ceur-ws.org/Vol-920/#RankaiStankovi%C4%87> a ns3:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/RankaiStankovi%C4%87> ;
+    ns3:made <http://ceur-ws.org/Vol-920/#p101-stankovic>,
+        <http://ceur-ws.org/Vol-920/#p117-gerlec> ;
+    ns3:name "Ranka Stanković" .
+
+<http://ceur-ws.org/Vol-920/#SaskoiRistov> a ns3:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/SaskoiRistov> ;
+    ns3:made <http://ceur-ws.org/Vol-920/#p142-kostoska>,
+        <http://ceur-ws.org/Vol-920/#p30-kostoska> ;
+    ns3:name "Sasko Ristov" .
+
+<http://ceur-ws.org/Vol-920/#Sta%C5%A1aiVuji%26ccaron> a ns3:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/Sta%C5%A1aiVuji%26ccaron> ;
+    ns3:made <http://ceur-ws.org/Vol-920/#p105-vujicic-stankovic>,
+        <http://ceur-ws.org/Vol-920/#p117-gerlec> ;
+    ns3:name "Staša Vuji&ccaron" .
+
+<http://ceur-ws.org/Vol-920/#dic%26abreve> a ns3:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/dic%26abreve> ;
+    ns3:made <http://ceur-ws.org/Vol-920/#p136-muscar>,
+        <http://ceur-ws.org/Vol-920/#p139-badica> ;
+    ns3:name "dic&abreve" .
+
+<http://ceur-ws.org/Vol-920/#p129-samuelis> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-920/> ;
+    ns1:title "Notes on the Parallels Between Biological and Software Evolution" ;
+    ns4:endPage 132 ;
+    ns4:numPages 4 ;
+    ns4:section <http://ceur-ws.org/Vol-920/#WorkshoponSoftwareQualityAnalysisMonitoringImprovementandApplicationsSQAMIA2012> ;
+    ns4:startPage 129 ;
+    ns5:author <http://ceur-ws.org/Vol-920/#LadislaviSamuelis> .
+
+<http://ceur-ws.org/Vol-920/#p16-kovatcheva> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-920/> ;
+    ns1:title "<L|ETAP> Model for an Adaptive Tutoring System" ;
+    ns4:endPage 20 ;
+    ns4:numPages 5 ;
+    ns4:section <http://ceur-ws.org/Vol-920/#ComputerApplicationsinDifferentDomains> ;
+    ns4:startPage 16 ;
+    ns5:author <http://ceur-ws.org/Vol-920/#EugeniaiKovatcheva> .
+
+<http://ceur-ws.org/Vol-920/#p25-boberic-krsticev> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-920/> ;
+    ns1:title "Applying MDA in Developing Intermediary Service for Data Retrieval" ;
+    ns4:endPage 29 ;
+    ns4:numPages 5 ;
+    ns4:section <http://ceur-ws.org/Vol-920/#InformationStorageandRetrieval> ;
+    ns4:startPage 25 ;
+    ns5:author <http://ceur-ws.org/Vol-920/#DanijelaiBoberi%C4%87iKrsti%C4%87ev> .
+
+<http://ceur-ws.org/Vol-920/#p35-tesendic> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-920/> ;
+    ns1:title "Data Model for Consortial Circulation in Libraries" ;
+    ns4:endPage 39 ;
+    ns4:numPages 5 ;
+    ns4:section <http://ceur-ws.org/Vol-920/#InformationStorageandRetrieval> ;
+    ns4:startPage 35 ;
+    ns5:author <http://ceur-ws.org/Vol-920/#DanijelaiTe%C5%A1endi%C4%87> .
+
+<http://ceur-ws.org/Vol-920/#p85-colhon> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-920/> ;
+    ns1:title "Syntactic Translation Patterns from a Parallel Treebank" ;
+    ns4:endPage 88 ;
+    ns4:numPages 4 ;
+    ns4:section <http://ceur-ws.org/Vol-920/#WorkshoponComputationalLinguisticsandNaturalLanguageProcessingofBalkanLanguagesCLoBL2012> ;
+    ns4:startPage 85 ;
+    ns5:author <http://ceur-ws.org/Vol-920/#MihaelaiColhon> .
+
+<http://ceur-ws.org/Vol-920/#p89-djordjevic> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-920/> ;
+    ns1:title "Automatic Recognition of Composite Verb Forms in Serbian" ;
+    ns4:endPage 92 ;
+    ns4:numPages 4 ;
+    ns4:section <http://ceur-ws.org/Vol-920/#WorkshoponComputationalLinguisticsandNaturalLanguageProcessingofBalkanLanguagesCLoBL2012> ;
+    ns4:startPage 89 ;
+    ns5:author <http://ceur-ws.org/Vol-920/#Bojanai%C4%90or%C4%91evi%C4%87> .
+
+<http://ceur-ws.org/Vol-920/#p93-graovac> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-920/> ;
+    ns1:title "Serbian Text Categorization Using Byte Level n-Grams" ;
+    ns4:endPage 96 ;
+    ns4:numPages 4 ;
+    ns4:section <http://ceur-ws.org/Vol-920/#WorkshoponComputationalLinguisticsandNaturalLanguageProcessingofBalkanLanguagesCLoBL2012> ;
+    ns4:startPage 93 ;
+    ns5:author <http://ceur-ws.org/Vol-920/#JelenaiGraovac> .
+
+<http://ceur-ws.org/Vol-920/#p97-jacimovic> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-920/> ;
+    ns1:title "Recognition and Normalization of Temporal Expressions in Serbian Texts" ;
+    ns4:endPage 100 ;
+    ns4:numPages 4 ;
+    ns4:section <http://ceur-ws.org/Vol-920/#WorkshoponComputationalLinguisticsandNaturalLanguageProcessingofBalkanLanguagesCLoBL2012> ;
+    ns4:startPage 97 ;
+    ns5:author <http://ceur-ws.org/Vol-920/#JelenaiJa%C4%87imovi%C4%87> .
+
+<http://ceur-ws.org/Vol-920/#ComputerApplicationsinDifferentDomains> a ns2:SessionEvent ;
+    ns2:partOf <http://ceur-ws.org/Vol-920/> ;
+    ns1:title "Computer Applications in Different Domains" .
+
+<http://ceur-ws.org/Vol-920/#MarciniPaprzycki> a ns3:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/MarciniPaprzycki> ;
+    ns3:made <http://ceur-ws.org/Vol-920/#p133-ganzha>,
+        <http://ceur-ws.org/Vol-920/#p134-ganzha>,
+        <http://ceur-ws.org/Vol-920/#p135-ganzha> ;
+    ns3:name "Marcin Paprzycki" .
+
+<http://ceur-ws.org/Vol-920/#MariaiGanzha> a ns3:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/MariaiGanzha> ;
+    ns3:made <http://ceur-ws.org/Vol-920/#p133-ganzha>,
+        <http://ceur-ws.org/Vol-920/#p134-ganzha>,
+        <http://ceur-ws.org/Vol-920/#p135-ganzha> ;
+    ns3:name "Maria Ganzha" .
+
+<http://ceur-ws.org/Vol-920/#MirjanaiIvanovi%C4%87> a ns3:Person ;
+    ns5:affiliation "" ;
+    ns6:sameAs <http://ceur-ws.org/persons/MirjanaiIvanovi%C4%87> ;
+    ns3:made <http://ceur-ws.org/Vol-920/#p139-badica>,
+        <http://ceur-ws.org/Vol-920/#p147-mitrovic> ;
+    ns3:name "Mirjana Ivanović" .
+
+<http://ceur-ws.org/Vol-920/#Networks> a ns2:SessionEvent ;
+    ns2:partOf <http://ceur-ws.org/Vol-920/> ;
+    ns1:title "Networks" .
+
+<http://ceur-ws.org/Vol-920/#p113-dugalic> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-920/> ;
+    ns1:title "ISO Software Quality Standards and Certification" ;
+    ns4:endPage 116 ;
+    ns4:numPages 4 ;
+    ns4:section <http://ceur-ws.org/Vol-920/#WorkshoponSoftwareQualityAnalysisMonitoringImprovementandApplicationsSQAMIA2012> ;
+    ns4:startPage 113 ;
+    ns5:author <http://ceur-ws.org/Vol-920/#AnastasiMishev>,
+        <http://ceur-ws.org/Vol-920/#BiseraiDugalic> .
+
+<http://ceur-ws.org/Vol-920/#p121-koteska> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-920/> ;
+    ns1:title "Agile Software Testing Technologies in a Large Scale Project" ;
+    ns4:endPage 124 ;
+    ns4:numPages 4 ;
+    ns4:section <http://ceur-ws.org/Vol-920/#WorkshoponSoftwareQualityAnalysisMonitoringImprovementandApplicationsSQAMIA2012> ;
+    ns4:startPage 121 ;
+    ns5:author <http://ceur-ws.org/Vol-920/#AnastasiMishev>,
+        <http://ceur-ws.org/Vol-920/#BojanaiKoteska> .
+
+<http://ceur-ws.org/Vol-920/#p40-daci> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-920/> ;
+    ns1:title "A Review of Disc Scrubbing and Intra Disc Redundancy Techniques for Reducing Data Loss in Disc File Systems" ;
+    ns4:endPage 45 ;
+    ns4:numPages 6 ;
+    ns4:section <http://ceur-ws.org/Vol-920/#LanguagesandTechniquesOperatingSystems> ;
+    ns4:startPage 40 ;
+    ns5:author <http://ceur-ws.org/Vol-920/#AisaiBezhani>,
+        <http://ceur-ws.org/Vol-920/#GentiiDaci> .
+
+<http://ceur-ws.org/Vol-920/#p72-kajo-mece> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-920/> ;
+    ns1:title "An Evaluation of Java Code Coverage Testing Tools" ;
+    ns4:endPage 75 ;
+    ns4:numPages 4 ;
+    ns4:section <http://ceur-ws.org/Vol-920/#SofwareEngineering> ;
+    ns4:startPage 72 ;
+    ns5:author <http://ceur-ws.org/Vol-920/#ElindaiKajo-Mece>,
+        <http://ceur-ws.org/Vol-920/#MegiiTartari> .
+
+<http://ceur-ws.org/Vol-920/#p76-peric> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-920/> ;
+    ns1:title "User-Friendly Menu for New-Age Mobile Phones" ;
+    ns4:endPage 80 ;
+    ns4:numPages 5 ;
+    ns4:section <http://ceur-ws.org/Vol-920/#SofwareEngineering> ;
+    ns4:startPage 76 ;
+    ns5:author <http://ceur-ws.org/Vol-920/#IvaniPeric>,
+        <http://ceur-ws.org/Vol-920/#OliveriSipos> .
+
+<http://ceur-ws.org/Vol-920/#AnalysisofAlgorithmsandProblemComplexityComputerGraphics> a ns2:SessionEvent ;
+    ns2:partOf <http://ceur-ws.org/Vol-920/> ;
+    ns1:title "Analysis of Algorithms and Problem Complexity, Computer Graphics" .
+
+<http://ceur-ws.org/Vol-920/#InformationStorageandRetrieval> a ns2:SessionEvent ;
+    ns2:partOf <http://ceur-ws.org/Vol-920/> ;
+    ns1:title "Information Storage and Retrieval" .
+
+<http://ceur-ws.org/Vol-920/#SofwareEngineering> a ns2:SessionEvent ;
+    ns2:partOf <http://ceur-ws.org/Vol-920/> ;
+    ns1:title "Sofware Engineering" .
+
+<http://ceur-ws.org/Vol-920/#p101-stankovic> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-920/> ;
+    ns1:title "An Approach to Development of Bilingual Lexical Resources" ;
+    ns4:endPage 104 ;
+    ns4:numPages 4 ;
+    ns4:section <http://ceur-ws.org/Vol-920/#WorkshoponComputationalLinguisticsandNaturalLanguageProcessingofBalkanLanguagesCLoBL2012> ;
+    ns4:startPage 101 ;
+    ns5:author <http://ceur-ws.org/Vol-920/#AleksandraiTrtovac>,
+        <http://ceur-ws.org/Vol-920/#IvaniObradovi%C4%87>,
+        <http://ceur-ws.org/Vol-920/#RankaiStankovi%C4%87> .
+
+<http://ceur-ws.org/Vol-920/#p105-vujicic-stankovic> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-920/> ;
+    ns1:title "Information Extraction from the Weather Reports in Serbian" ;
+    ns4:endPage 108 ;
+    ns4:numPages 4 ;
+    ns4:section <http://ceur-ws.org/Vol-920/#WorkshoponComputationalLinguisticsandNaturalLanguageProcessingofBalkanLanguagesCLoBL2012> ;
+    ns4:startPage 105 ;
+    ns5:author <http://ceur-ws.org/Vol-920/#Sta%C5%A1aiVuji%26ccaron>,
+        <http://ceur-ws.org/Vol-920/#VesnaiPaji%C4%87>,
+        <http://ceur-ws.org/Vol-920/#i%C4%87iStankovi%C4%87> .
+
+<http://ceur-ws.org/Vol-920/#p109-zecevic> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-920/> ;
+    ns1:title "An Authorship Attribution for Serbian" ;
+    ns4:endPage 112 ;
+    ns4:numPages 4 ;
+    ns4:section <http://ceur-ws.org/Vol-920/#WorkshoponComputationalLinguisticsandNaturalLanguageProcessingofBalkanLanguagesCLoBL2012> ;
+    ns4:startPage 109 ;
+    ns5:author <http://ceur-ws.org/Vol-920/#An%C4%91elkaiZe%26ccaron>,
+        <http://ceur-ws.org/Vol-920/#Bojanai%C4%90or%C4%91evi%C4%87>,
+        <http://ceur-ws.org/Vol-920/#Milo%C5%A1iUtvi%C4%87> .
+
+<http://ceur-ws.org/Vol-920/#p11-herceg> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-920/> ;
+    ns1:title "The Teaching of Geography Using Dynamic Geometry Software" ;
+    ns4:endPage 15 ;
+    ns4:numPages 5 ;
+    ns4:section <http://ceur-ws.org/Vol-920/#AnalysisofAlgorithmsandProblemComplexityComputerGraphics> ;
+    ns4:startPage 11 ;
+    ns5:author <http://ceur-ws.org/Vol-920/#%C4%90or%C4%91eiHerceg>,
+        <http://ceur-ws.org/Vol-920/#DavorkaiRadakovi%C4%87>,
+        <http://ceur-ws.org/Vol-920/#VeraiHerceg-Mandi%C4%87> .
+
+<http://ceur-ws.org/Vol-920/#p125-neagos> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-920/> ;
+    ns1:title "Security Analysis Regarding Cross-Site Scripting on Internet Explorer" ;
+    ns4:endPage 128 ;
+    ns4:numPages 4 ;
+    ns4:section <http://ceur-ws.org/Vol-920/#WorkshoponSoftwareQualityAnalysisMonitoringImprovementandApplicationsSQAMIA2012> ;
+    ns4:startPage 125 ;
+    ns5:author <http://ceur-ws.org/Vol-920/#>,
+        <http://ceur-ws.org/Vol-920/#AdrianaiNeago%26scedil>,
+        <http://ceur-ws.org/Vol-920/#SimonaiMotogna> .
+
+<http://ceur-ws.org/Vol-920/#p133-ganzha> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-920/> ;
+    ns1:title "GliderAgent 2.0 - Agent-Based Glider Pilot Support System for Android Devices" ;
+    ns4:endPage 133 ;
+    ns4:numPages 1 ;
+    ns4:section <http://ceur-ws.org/Vol-920/#2ndWorkshoponApplicationsofSoftwareAgentsWASA2012> ;
+    ns4:startPage 133 ;
+    ns5:author <http://ceur-ws.org/Vol-920/#MarciniPaprzycki>,
+        <http://ceur-ws.org/Vol-920/#MariaiGanzha>,
+        <http://ceur-ws.org/Vol-920/#MariusziM.iMesjasz> .
+
+<http://ceur-ws.org/Vol-920/#p134-ganzha> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-920/> ;
+    ns1:title "Applying Saaty's Multicriterial Decision Making Approach in Grid Resource Management" ;
+    ns4:endPage 134 ;
+    ns4:numPages 1 ;
+    ns4:section <http://ceur-ws.org/Vol-920/#2ndWorkshoponApplicationsofSoftwareAgentsWASA2012> ;
+    ns4:startPage 134 ;
+    ns5:author <http://ceur-ws.org/Vol-920/#KatarzynaiWasielewska>,
+        <http://ceur-ws.org/Vol-920/#MarciniPaprzycki>,
+        <http://ceur-ws.org/Vol-920/#MariaiGanzha> .
+
+<http://ceur-ws.org/Vol-920/#p135-ganzha> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-920/> ;
+    ns1:title "New Outlook on Agent-Based Travel Support Systems" ;
+    ns4:endPage 135 ;
+    ns4:numPages 1 ;
+    ns4:section <http://ceur-ws.org/Vol-920/#2ndWorkshoponApplicationsofSoftwareAgentsWASA2012> ;
+    ns4:startPage 135 ;
+    ns5:author <http://ceur-ws.org/Vol-920/#MarciniPaprzycki>,
+        <http://ceur-ws.org/Vol-920/#MariaiGanzha>,
+        <http://ceur-ws.org/Vol-920/#MariusziM.iMesjasz> .
+
+<http://ceur-ws.org/Vol-920/#p5-demetrovics> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-920/> ;
+    ns1:title "Logical Representation of Dependencies of Items and the Complexity of Customer Sets" ;
+    ns4:endPage 10 ;
+    ns4:numPages 6 ;
+    ns4:section <http://ceur-ws.org/Vol-920/#AnalysisofAlgorithmsandProblemComplexityComputerGraphics> ;
+    ns4:startPage 5 ;
+    ns5:author <http://ceur-ws.org/Vol-920/#%C3%81kosiGub%C3%A1n>,
+        <http://ceur-ws.org/Vol-920/#HuaiNamiSon>,
+        <http://ceur-ws.org/Vol-920/#J%C3%A1nosiDemetrovics> .
+
+<http://ceur-ws.org/Vol-920/#p51-kureshi> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-920/> ;
+    ns1:title "Robust Mouldable Scheduling Using Application Benchmarking for Elastic Environments" ;
+    ns4:endPage 57 ;
+    ns4:numPages 7 ;
+    ns4:section <http://ceur-ws.org/Vol-920/#LanguagesandTechniquesOperatingSystems> ;
+    ns4:startPage 51 ;
+    ns5:author <http://ceur-ws.org/Vol-920/#DavidiCooke>,
+        <http://ceur-ws.org/Vol-920/#IbadiKureshi>,
+        <http://ceur-ws.org/Vol-920/#VioletaiHolmes> .
+
+<http://ceur-ws.org/Vol-920/#p58-panic> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-920/> ;
+    ns1:title "Fuzzy XML with Implementation" ;
+    ns4:endPage 62 ;
+    ns4:numPages 5 ;
+    ns4:section <http://ceur-ws.org/Vol-920/#LanguagesandTechniquesOperatingSystems> ;
+    ns4:startPage 58 ;
+    ns5:author <http://ceur-ws.org/Vol-920/#GoraniPani%C4%87>,
+        <http://ceur-ws.org/Vol-920/#Milo%C5%A1iRackovi%C4%87>,
+        <http://ceur-ws.org/Vol-920/#Srdjani%C5%A0krbi%C4%87> .
+
+<http://ceur-ws.org/Vol-920/#p68-sheme> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-920/> ;
+    ns1:title "Implementation and Evaluation of a Sleep-Proxy for Energy Savings in Networked Computers" ;
+    ns4:endPage 71 ;
+    ns4:numPages 4 ;
+    ns4:section <http://ceur-ws.org/Vol-920/#Networks> ;
+    ns4:startPage 68 ;
+    ns5:author <http://ceur-ws.org/Vol-920/#EnidaiSheme>,
+        <http://ceur-ws.org/Vol-920/#MariniAranitasi>,
+        <http://ceur-ws.org/Vol-920/#NekiiFrasheri> .
+
+<http://ceur-ws.org/Vol-920/#p81-sipos> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-920/> ;
+    ns1:title "Layout Proposal for One-Handed Device Interface" ;
+    ns4:endPage 84 ;
+    ns4:numPages 4 ;
+    ns4:section <http://ceur-ws.org/Vol-920/#SofwareEngineering> ;
+    ns4:startPage 81 ;
+    ns5:author <http://ceur-ws.org/Vol-920/#DraganiIvetic>,
+        <http://ceur-ws.org/Vol-920/#IvaniPeric>,
+        <http://ceur-ws.org/Vol-920/#OliveriSipos> .
+
+<http://ceur-ws.org/Vol-920/#LanguagesandTechniquesOperatingSystems> a ns2:SessionEvent ;
+    ns2:partOf <http://ceur-ws.org/Vol-920/> ;
+    ns1:title "Languages and Techniques, Operating Systems" .
+
+<http://ceur-ws.org/Vol-920/#p117-gerlec> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-920/> ;
+    ns1:title "Analyzing Structural Software Changes: A Case Study" ;
+    ns4:endPage 120 ;
+    ns4:numPages 4 ;
+    ns4:section <http://ceur-ws.org/Vol-920/#WorkshoponSoftwareQualityAnalysisMonitoringImprovementandApplicationsSQAMIA2012> ;
+    ns4:startPage 117 ;
+    ns5:author <http://ceur-ws.org/Vol-920/#MarjaniHeri%26ccaron>,
+        <http://ceur-ws.org/Vol-920/#RankaiStankovi%C4%87>,
+        <http://ceur-ws.org/Vol-920/#Sta%C5%A1aiVuji%26ccaron>,
+        <http://ceur-ws.org/Vol-920/#rtiGerlec> .
+
+<http://ceur-ws.org/Vol-920/#p136-muscar> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-920/> ;
+    ns1:title "Using Jason to Develop Declarative Prototypes of Automated Negotiations" ;
+    ns4:endPage 138 ;
+    ns4:numPages 3 ;
+    ns4:section <http://ceur-ws.org/Vol-920/#2ndWorkshoponApplicationsofSoftwareAgentsWASA2012> ;
+    ns4:startPage 136 ;
+    ns5:author <http://ceur-ws.org/Vol-920/#AlexiMuscar>,
+        <http://ceur-ws.org/Vol-920/#CostiniB%26abreve>,
+        <http://ceur-ws.org/Vol-920/#LauraiSurcel>,
+        <http://ceur-ws.org/Vol-920/#dic%26abreve> .
+
+<http://ceur-ws.org/Vol-920/#p147-mitrovic> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-920/> ;
+    ns1:title "Developing Software Agents Using Enterprise JavaBeans" ;
+    ns4:endPage 149 ;
+    ns4:numPages 3 ;
+    ns4:section <http://ceur-ws.org/Vol-920/#2ndWorkshoponApplicationsofSoftwareAgentsWASA2012> ;
+    ns4:startPage 147 ;
+    ns5:author <http://ceur-ws.org/Vol-920/#AliiAl-Dahoud>,
+        <http://ceur-ws.org/Vol-920/#DejaniMitrovi%C4%87>,
+        <http://ceur-ws.org/Vol-920/#MilaniVidakovi%C4%87>,
+        <http://ceur-ws.org/Vol-920/#MirjanaiIvanovi%C4%87> .
+
+<http://ceur-ws.org/Vol-920/#p21-galletly> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-920/> ;
+    ns1:title "Program Assessment via a Capstone Project" ;
+    ns4:endPage 24 ;
+    ns4:numPages 4 ;
+    ns4:section <http://ceur-ws.org/Vol-920/#ComputerApplicationsinDifferentDomains> ;
+    ns4:startPage 21 ;
+    ns5:author <http://ceur-ws.org/Vol-920/#DimitariChristozov>,
+        <http://ceur-ws.org/Vol-920/#JohniGalletly>,
+        <http://ceur-ws.org/Vol-920/#StoyaniBonev>,
+        <http://ceur-ws.org/Vol-920/#VoliniKaragiozov> .
+
+<http://ceur-ws.org/Vol-920/#p30-kostoska> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-920/> ;
+    ns1:title "Cloud Computing Interoperability Approaches - Possibilities and Challenges" ;
+    ns4:endPage 34 ;
+    ns4:numPages 5 ;
+    ns4:section <http://ceur-ws.org/Vol-920/#InformationStorageandRetrieval> ;
+    ns4:startPage 30 ;
+    ns5:author <http://ceur-ws.org/Vol-920/#KiriliKiroski>,
+        <http://ceur-ws.org/Vol-920/#MagdalenaiKostoska>,
+        <http://ceur-ws.org/Vol-920/#MarjaniGusev>,
+        <http://ceur-ws.org/Vol-920/#SaskoiRistov> .
+
+<http://ceur-ws.org/Vol-920/#p46-kajo-mece> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-920/> ;
+    ns1:title "Protection of Web Applications Using Aspect Oriented Programming and Performance Evaluation" ;
+    ns4:endPage 50 ;
+    ns4:numPages 5 ;
+    ns4:section <http://ceur-ws.org/Vol-920/#LanguagesandTechniquesOperatingSystems> ;
+    ns4:startPage 46 ;
+    ns5:author <http://ceur-ws.org/Vol-920/#BojkeniShehu>,
+        <http://ceur-ws.org/Vol-920/#ElindaiKajo-Mece>,
+        <http://ceur-ws.org/Vol-920/#EnidiVrenozaj>,
+        <http://ceur-ws.org/Vol-920/#LorenaiKodra> .
+
+<http://ceur-ws.org/Vol-920/#WorkshoponSoftwareQualityAnalysisMonitoringImprovementandApplicationsSQAMIA2012> a ns2:SessionEvent ;
+    ns2:partOf <http://ceur-ws.org/Vol-920/> ;
+    ns1:title "Workshop on Software Quality Analysis, Monitoring, Improvement, and Applications - SQAMIA 2012" .
+
+<http://ceur-ws.org/Vol-920/#p1-bejleri> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-920/> ;
+    ns1:title "The Evaluation of Performance in Flow Label and Non Flow Label Approach Based on IPv6 Technology" ;
+    ns4:endPage 4 ;
+    ns4:numPages 4 ;
+    ns4:section <http://ceur-ws.org/Vol-920/#AnalysisofAlgorithmsandProblemComplexityComputerGraphics> ;
+    ns4:startPage 1 ;
+    ns5:author <http://ceur-ws.org/Vol-920/#AleksanderiBiberaj>,
+        <http://ceur-ws.org/Vol-920/#ArianaiBejleri>,
+        <http://ceur-ws.org/Vol-920/#ErmaliBeqiri>,
+        <http://ceur-ws.org/Vol-920/#IgliiTafaj>,
+        <http://ceur-ws.org/Vol-920/#JulianiFejzaj> .
+
+<http://ceur-ws.org/Vol-920/#p139-badica> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-920/> ;
+    ns1:title "Method for Optimizing Communication Costs in ACODA Using Simulated Annealing" ;
+    ns4:endPage 141 ;
+    ns4:numPages 3 ;
+    ns4:section <http://ceur-ws.org/Vol-920/#2ndWorkshoponApplicationsofSoftwareAgentsWASA2012> ;
+    ns4:startPage 139 ;
+    ns5:author <http://ceur-ws.org/Vol-920/#>,
+        <http://ceur-ws.org/Vol-920/#CostiniB%26abreve>,
+        <http://ceur-ws.org/Vol-920/#MirjanaiIvanovi%C4%87>,
+        <http://ceur-ws.org/Vol-920/#SoriniIlie>,
+        <http://ceur-ws.org/Vol-920/#dic%26abreve> .
+
+<http://ceur-ws.org/Vol-920/#p142-kostoska> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-920/> ;
+    ns1:title "Service Agents for Calendar Exchange" ;
+    ns4:endPage 146 ;
+    ns4:numPages 5 ;
+    ns4:section <http://ceur-ws.org/Vol-920/#2ndWorkshoponApplicationsofSoftwareAgentsWASA2012> ;
+    ns4:startPage 142 ;
+    ns5:author <http://ceur-ws.org/Vol-920/#GoraniVelkoski>,
+        <http://ceur-ws.org/Vol-920/#KrsteiBozinoski>,
+        <http://ceur-ws.org/Vol-920/#MagdalenaiKostoska>,
+        <http://ceur-ws.org/Vol-920/#MarjaniGusev>,
+        <http://ceur-ws.org/Vol-920/#SaskoiRistov> .
+
+<http://ceur-ws.org/Vol-920/#p63-bejleri> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-920/> ;
+    ns1:title "Analyses of QoS Routing Approach and the Starvation's Evaluation in LAN" ;
+    ns4:endPage 67 ;
+    ns4:numPages 5 ;
+    ns4:section <http://ceur-ws.org/Vol-920/#Networks> ;
+    ns4:startPage 63 ;
+    ns5:author <http://ceur-ws.org/Vol-920/#AleksanderiBiberaj>,
+        <http://ceur-ws.org/Vol-920/#ArianaiBejleri>,
+        <http://ceur-ws.org/Vol-920/#ErmaliBeqiri>,
+        <http://ceur-ws.org/Vol-920/#IgliiTafaj>,
+        <http://ceur-ws.org/Vol-920/#JulianiFejzaj> .
+
+<http://ceur-ws.org/Vol-920/#2ndWorkshoponApplicationsofSoftwareAgentsWASA2012> a ns2:SessionEvent ;
+    ns2:partOf <http://ceur-ws.org/Vol-920/> ;
+    ns1:title "2nd Workshop on Applications of Software Agents - WASA 2012" .
+
+<http://ceur-ws.org/Vol-920/#WorkshoponComputationalLinguisticsandNaturalLanguageProcessingofBalkanLanguagesCLoBL2012> a ns2:SessionEvent ;
+    ns2:partOf <http://ceur-ws.org/Vol-920/> ;
+    ns1:title "Workshop on Computational Linguistics and Natural Language Processing of Balkan Languages - CLoBL 2012" .
+
+<http://ceur-ws.org/Vol-920/> a ns2:Proceedings ;
+    ns2:hasPart <http://ceur-ws.org/Vol-920/#p1-bejleri>,
+        <http://ceur-ws.org/Vol-920/#p101-stankovic>,
+        <http://ceur-ws.org/Vol-920/#p105-vujicic-stankovic>,
+        <http://ceur-ws.org/Vol-920/#p109-zecevic>,
+        <http://ceur-ws.org/Vol-920/#p11-herceg>,
+        <http://ceur-ws.org/Vol-920/#p113-dugalic>,
+        <http://ceur-ws.org/Vol-920/#p117-gerlec>,
+        <http://ceur-ws.org/Vol-920/#p121-koteska>,
+        <http://ceur-ws.org/Vol-920/#p125-neagos>,
+        <http://ceur-ws.org/Vol-920/#p129-samuelis>,
+        <http://ceur-ws.org/Vol-920/#p133-ganzha>,
+        <http://ceur-ws.org/Vol-920/#p134-ganzha>,
+        <http://ceur-ws.org/Vol-920/#p135-ganzha>,
+        <http://ceur-ws.org/Vol-920/#p136-muscar>,
+        <http://ceur-ws.org/Vol-920/#p139-badica>,
+        <http://ceur-ws.org/Vol-920/#p142-kostoska>,
+        <http://ceur-ws.org/Vol-920/#p147-mitrovic>,
+        <http://ceur-ws.org/Vol-920/#p16-kovatcheva>,
+        <http://ceur-ws.org/Vol-920/#p21-galletly>,
+        <http://ceur-ws.org/Vol-920/#p25-boberic-krsticev>,
+        <http://ceur-ws.org/Vol-920/#p30-kostoska>,
+        <http://ceur-ws.org/Vol-920/#p35-tesendic>,
+        <http://ceur-ws.org/Vol-920/#p40-daci>,
+        <http://ceur-ws.org/Vol-920/#p46-kajo-mece>,
+        <http://ceur-ws.org/Vol-920/#p5-demetrovics>,
+        <http://ceur-ws.org/Vol-920/#p51-kureshi>,
+        <http://ceur-ws.org/Vol-920/#p58-panic>,
+        <http://ceur-ws.org/Vol-920/#p63-bejleri>,
+        <http://ceur-ws.org/Vol-920/#p68-sheme>,
+        <http://ceur-ws.org/Vol-920/#p72-kajo-mece>,
+        <http://ceur-ws.org/Vol-920/#p76-peric>,
+        <http://ceur-ws.org/Vol-920/#p81-sipos>,
+        <http://ceur-ws.org/Vol-920/#p85-colhon>,
+        <http://ceur-ws.org/Vol-920/#p89-djordjevic>,
+        <http://ceur-ws.org/Vol-920/#p93-graovac>,
+        <http://ceur-ws.org/Vol-920/#p97-jacimovic> ;
+    ns2:hasSession <http://ceur-ws.org/Vol-920/#2ndWorkshoponApplicationsofSoftwareAgentsWASA2012>,
+        <http://ceur-ws.org/Vol-920/#AnalysisofAlgorithmsandProblemComplexityComputerGraphics>,
+        <http://ceur-ws.org/Vol-920/#ComputerApplicationsinDifferentDomains>,
+        <http://ceur-ws.org/Vol-920/#InformationStorageandRetrieval>,
+        <http://ceur-ws.org/Vol-920/#LanguagesandTechniquesOperatingSystems>,
+        <http://ceur-ws.org/Vol-920/#Networks>,
+        <http://ceur-ws.org/Vol-920/#SofwareEngineering>,
+        <http://ceur-ws.org/Vol-920/#WorkshoponComputationalLinguisticsandNaturalLanguageProcessingofBalkanLanguagesCLoBL2012>,
+        <http://ceur-ws.org/Vol-920/#WorkshoponSoftwareQualityAnalysisMonitoringImprovementandApplicationsSQAMIA2012> ;
+    ns8:issued "2012-10-15T00:00:00+00:00"^^xsd:dateTime ;
+    ns4:presentedAt <http://ceur-ws.org/Vol-920/#event> ;
+    ns5:editor <http://ceur-ws.org/Vol-920/#Milo%C5%A1iRadovanovi%C4%87>,
         <http://ceur-ws.org/Vol-920/#MirjanaiIvanovi%C4%87>,
         <http://ceur-ws.org/Vol-920/#ZoraniBudimac> .
-
-<http://ceur-ws.org/Vol-920/#Milo%C5%A1iRadovanovi%C4%87> a ns2:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/Milo%C5%A1iRadovanovi%C4%87> ;
-    ns2:name "Miloš Radovanović" .
-
-<http://ceur-ws.org/Vol-920/#MirjanaiIvanovi%C4%87> a ns2:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/MirjanaiIvanovi%C4%87> ;
-    ns2:name "Mirjana Ivanović" .
-
-<http://ceur-ws.org/Vol-920/#ZoraniBudimac> a ns2:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/ZoraniBudimac> ;
-    ns2:name "Zoran Budimac" .
-
-<http://ceur-ws.org/Vol-920/#event> a ns1:WorkshopEvent ;
-    ns1:hasLocation <http://dbpedia.org/resource/Serbia> ;
-    ns1:hasPart <http://ceur-ws.org/Vol-920/#part-CEUR-WS> ;
-    ns1:isSubEventOf <http://ceur-ws.org/Vol-920/#conf> ;
-    ns4:beginsAtDatetime "2012-09-16T00:00:00+00:00"^^xsd:dateTime ;
-    ns4:endsAtDatetime "2012-09-20T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:license "http://choosealicense.com/licenses/no-license/" .
 

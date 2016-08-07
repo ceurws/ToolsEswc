@@ -1,40 +1,551 @@
-@prefix ns1: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns2: <http://www.w3.org/2002/07/owl#> .
-@prefix ns3: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns4: <http://xmlns.com/foaf/0.1/> .
-@prefix ns5: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns6: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns7: <http://purl.org/dc/elements/1.1/> .
-@prefix ns8: <http://purl.org/ontology/bibo/#> .
+@prefix ns1: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns2: <http://purl.org/ontology/bibo/#> .
+@prefix ns3: <http://xmlns.com/foaf/0.1/> .
+@prefix ns4: <http://www.w3.org/2002/07/owl#> .
+@prefix ns5: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns6: <http://purl.org/dc/elements/1.1/> .
+@prefix ns7: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns9: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1305/> a ns5:Proceedings ;
-    ns3:issued "2014-11-27T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:presentedAt <http://ceur-ws.org/Vol-1305/#event> ;
-    ns1:editor <http://ceur-ws.org/Vol-1305/#ChristianiKrause>,
-        <http://ceur-ws.org/Vol-1305/#LouisiM.iRose>,
+<http://ceur-ws.org/Vol-1305/#%C3%81beliHeged%C3%BCs> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/%C3%81beliHeged%C3%BCs> ;
+    ns3:made <http://ceur-ws.org/Vol-1305/#paper14> ;
+    ns3:name "Ábel Hegedüs" .
+
+<http://ceur-ws.org/Vol-1305/#AnthonyiAnjorin> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/AnthonyiAnjorin> ;
+    ns3:made <http://ceur-ws.org/Vol-1305/#paper18> ;
+    ns3:name "Anthony Anjorin" .
+
+<http://ceur-ws.org/Vol-1305/#AntonioiMoreno-Delgado> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/AntonioiMoreno-Delgado> ;
+    ns3:made <http://ceur-ws.org/Vol-1305/#paper16> ;
+    ns3:name "Antonio Moreno-Delgado" .
+
+<http://ceur-ws.org/Vol-1305/#BenedekiIzs%C3%B3> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/BenedekiIzs%C3%B3> ;
+    ns3:made <http://ceur-ws.org/Vol-1305/#paper14> ;
+    ns3:name "Benedek Izsó" .
+
+<http://ceur-ws.org/Vol-1305/#BenjaminiBraatz> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/BenjaminiBraatz> ;
+    ns3:made <http://ceur-ws.org/Vol-1305/#paper9> ;
+    ns3:name "Benjamin Braatz" .
+
+<http://ceur-ws.org/Vol-1305/#ChristianiHeinzemann> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/ChristianiHeinzemann> ;
+    ns3:made <http://ceur-ws.org/Vol-1305/#paper13> ;
+    ns3:name "Christian Heinzemann" .
+
+<http://ceur-ws.org/Vol-1305/#ChristopheriGerking> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/ChristopheriGerking> ;
+    ns3:made <http://ceur-ws.org/Vol-1305/#paper13> ;
+    ns3:name "Christopher Gerking" .
+
+<http://ceur-ws.org/Vol-1305/#CsabaiDebreceni> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/CsabaiDebreceni> ;
+    ns3:made <http://ceur-ws.org/Vol-1305/#paper14> ;
+    ns3:name "Csaba Debreceni" .
+
+<http://ceur-ws.org/Vol-1305/#DanningiLi> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/DanningiLi> ;
+    ns3:made <http://ceur-ws.org/Vol-1305/#paper8> ;
+    ns3:name "Danning Li" .
+
+<http://ceur-ws.org/Vol-1305/#EdgariJakumeit> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/EdgariJakumeit> ;
+    ns3:made <http://ceur-ws.org/Vol-1305/#paper17> ;
+    ns3:name "Edgar Jakumeit" .
+
+<http://ceur-ws.org/Vol-1305/#ErhaniLeblebici> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/ErhaniLeblebici> ;
+    ns3:made <http://ceur-ws.org/Vol-1305/#paper18> ;
+    ns3:name "Erhan Leblebici" .
+
+<http://ceur-ws.org/Vol-1305/#EugeneiSyriani> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/EugeneiSyriani> ;
+    ns3:made <http://ceur-ws.org/Vol-1305/#paper20> ;
+    ns3:name "Eugene Syriani" .
+
+<http://ceur-ws.org/Vol-1305/#FilipiK%C5%99ikava> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/FilipiK%C5%99ikava> ;
+    ns3:made <http://ceur-ws.org/Vol-1305/#paper19> ;
+    ns3:name "Filip Křikava" .
+
+<http://ceur-ws.org/Vol-1305/#FranciscoiDur%C3%A1n> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/FranciscoiDur%C3%A1n> ;
+    ns3:made <http://ceur-ws.org/Vol-1305/#paper16> ;
+    ns3:name "Francisco Durán" .
+
+<http://ceur-ws.org/Vol-1305/#FrankiHermann> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/FrankiHermann> ;
+    ns3:made <http://ceur-ws.org/Vol-1305/#paper9> ;
+    ns3:name "Frank Hermann" .
+
+<http://ceur-ws.org/Vol-1305/#G%C3%A1boriBergmann> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/G%C3%A1boriBergmann> ;
+    ns3:made <http://ceur-ws.org/Vol-1305/#paper14> ;
+    ns3:name "Gábor Bergmann" .
+
+<http://ceur-ws.org/Vol-1305/#G%C3%A1boriSz%C3%A1rnyas> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/G%C3%A1boriSz%C3%A1rnyas> ;
+    ns3:made <http://ceur-ws.org/Vol-1305/#paper14> ;
+    ns3:name "Gábor Szárnyas" .
+
+<http://ceur-ws.org/Vol-1305/#G%C3%A9zaiKulcs%C3%A1r> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/G%C3%A9zaiKulcs%C3%A1r> ;
+    ns3:made <http://ceur-ws.org/Vol-1305/#paper18> ;
+    ns3:name "Géza Kulcsár" .
+
+<http://ceur-ws.org/Vol-1305/#HamoudiAljamaan> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/HamoudiAljamaan> ;
+    ns3:made <http://ceur-ws.org/Vol-1305/#paper15> ;
+    ns3:name "Hamoud Aljamaan" .
+
+<http://ceur-ws.org/Vol-1305/#HoracioiHoyos> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/HoracioiHoyos> ;
+    ns3:made <http://ceur-ws.org/Vol-1305/#paper21> ;
+    ns3:name "Horacio Hoyos" .
+
+<http://ceur-ws.org/Vol-1305/#HuseyiniErgin> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/HuseyiniErgin> ;
+    ns3:made <http://ceur-ws.org/Vol-1305/#paper20> ;
+    ns3:name "Huseyin Ergin" .
+
+<http://ceur-ws.org/Vol-1305/#JaimeiChavarriaga> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/JaimeiChavarriaga> ;
+    ns3:made <http://ceur-ws.org/Vol-1305/#paper21> ;
+    ns3:name "Jaime Chavarriaga" .
+
+<http://ceur-ws.org/Vol-1305/#KrikoriMaroukian> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/KrikoriMaroukian> ;
+    ns3:made <http://ceur-ws.org/Vol-1305/#paper1> ;
+    ns3:name "Krikor Maroukian" .
+
+<http://ceur-ws.org/Vol-1305/#LiiDan> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/LiiDan> ;
+    ns3:made <http://ceur-ws.org/Vol-1305/#paper8> ;
+    ns3:name "Li Dan" .
+
+<http://ceur-ws.org/Vol-1305/#LouisiM.iRose> a ns3:Person ;
+    ns5:affiliation "" ;
+    ns4:sameAs <http://ceur-ws.org/persons/LouisiM.iRose> ;
+    ns3:name "Louis M. Rose" .
+
+<http://ceur-ws.org/Vol-1305/#MatthiasiTichy> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/MatthiasiTichy> ;
+    ns3:made <http://ceur-ws.org/Vol-1305/#paper2> ;
+    ns3:name "Matthias Tichy" .
+
+<http://ceur-ws.org/Vol-1305/#MigueliGarzon> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/MigueliGarzon> ;
+    ns3:made <http://ceur-ws.org/Vol-1305/#paper15> ;
+    ns3:name "Miguel Garzon" .
+
+<http://ceur-ws.org/Vol-1305/#NicoiNachtigall> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/NicoiNachtigall> ;
+    ns3:made <http://ceur-ws.org/Vol-1305/#paper9> ;
+    ns3:name "Nico Nachtigall" .
+
+<http://ceur-ws.org/Vol-1305/#OpeyemiiAdesina> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/OpeyemiiAdesina> ;
+    ns3:made <http://ceur-ws.org/Vol-1305/#paper15> ;
+    ns3:name "Opeyemi Adesina" .
+
+<http://ceur-ws.org/Vol-1305/#Oszk%C3%A1riSemer%C3%A1th> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/Oszk%C3%A1riSemer%C3%A1th> ;
+    ns3:made <http://ceur-ws.org/Vol-1305/#paper14> ;
+    ns3:name "Oszkár Semeráth" .
+
+<http://ceur-ws.org/Vol-1305/#PaolaiG%C3%B3mez> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/PaolaiG%C3%B3mez> ;
+    ns3:made <http://ceur-ws.org/Vol-1305/#paper21> ;
+    ns3:name "Paola Gómez" .
+
+<http://ceur-ws.org/Vol-1305/#PhilippeiCollet> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/PhilippeiCollet> ;
+    ns3:made <http://ceur-ws.org/Vol-1305/#paper19> ;
+    ns3:name "Philippe Collet" .
+
+<http://ceur-ws.org/Vol-1305/#SteffeniZschaler> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/SteffeniZschaler> ;
+    ns3:made <http://ceur-ws.org/Vol-1305/#paper12> ;
+    ns3:name "Steffen Zschaler" .
+
+<http://ceur-ws.org/Vol-1305/#SusanniGottmann> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/SusanniGottmann> ;
+    ns3:made <http://ceur-ws.org/Vol-1305/#paper9> ;
+    ns3:name "Susann Gottmann" .
+
+<http://ceur-ws.org/Vol-1305/#ThomasiEngel> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/ThomasiEngel> ;
+    ns3:made <http://ceur-ws.org/Vol-1305/#paper9> ;
+    ns3:name "Thomas Engel" .
+
+<http://ceur-ws.org/Vol-1305/#TimothyiLethbridge> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/TimothyiLethbridge> ;
+    ns3:made <http://ceur-ws.org/Vol-1305/#paper15> ;
+    ns3:name "Timothy Lethbridge" .
+
+<http://ceur-ws.org/Vol-1305/#VahdatiAbdelzad> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/VahdatiAbdelzad> ;
+    ns3:made <http://ceur-ws.org/Vol-1305/#paper15> ;
+    ns3:name "Vahdat Abdelzad" .
+
+<http://ceur-ws.org/Vol-1305/#VolkeriStolz> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/VolkeriStolz> ;
+    ns3:made <http://ceur-ws.org/Vol-1305/#paper8> ;
+    ns3:name "Volker Stolz" .
+
+<http://ceur-ws.org/Vol-1305/#XiaoshaniLi> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/XiaoshaniLi> ;
+    ns3:made <http://ceur-ws.org/Vol-1305/#paper8> ;
+    ns3:name "Xiaoshan Li" .
+
+<http://ceur-ws.org/Vol-1305/#Zolt%C3%A1niUjhelyi> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/Zolt%C3%A1niUjhelyi> ;
+    ns3:made <http://ceur-ws.org/Vol-1305/#paper14> ;
+    ns3:name "Zoltán Ujhelyi" .
+
+<http://ceur-ws.org/Vol-1305/#event> a ns1:WorkshopEvent ;
+    ns1:hasLocation <http://dbpedia.org/resource/United_Kingdom> ;
+    ns1:hasPart <http://ceur-ws.org/Vol-1305/#part-TTC> ;
+    ns1:isSubEventOf <http://ceur-ws.org/Vol-1305/#conf> ;
+    ns8:beginsAtDatetime "2014-07-25T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:endsAtDatetime "2014-07-25T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:license "http://creativecommons.org/publicdomain/zero/1.0/" .
+
+<http://ceur-ws.org/Vol-1305/#AlbertiZ%C3%BCndorf> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/AlbertiZ%C3%BCndorf> ;
+    ns3:made <http://ceur-ws.org/Vol-1305/#paper5>,
+        <http://ceur-ws.org/Vol-1305/#paper6> ;
+    ns3:name "Albert Zündorf" .
+
+<http://ceur-ws.org/Vol-1305/#ChristianiKrause> a ns3:Person ;
+    ns5:affiliation "" ;
+    ns4:sameAs <http://ceur-ws.org/persons/ChristianiKrause> ;
+    ns3:made <http://ceur-ws.org/Vol-1305/#paper2> ;
+    ns3:name "Christian Krause" .
+
+<http://ceur-ws.org/Vol-1305/#ChristophiEickhoff> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/ChristophiEickhoff> ;
+    ns3:made <http://ceur-ws.org/Vol-1305/#paper5>,
+        <http://ceur-ws.org/Vol-1305/#paper6> ;
+    ns3:name "Christoph Eickhoff" .
+
+<http://ceur-ws.org/Vol-1305/#KeviniLano> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/KeviniLano> ;
+    ns3:made <http://ceur-ws.org/Vol-1305/#paper1>,
+        <http://ceur-ws.org/Vol-1305/#paper7> ;
+    ns3:name "Kevin Lano" .
+
+<http://ceur-ws.org/Vol-1305/#PabloiInostroza> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/PabloiInostroza> ;
+    ns3:made <http://ceur-ws.org/Vol-1305/#paper10>,
+        <http://ceur-ws.org/Vol-1305/#paper11> ;
+    ns3:name "Pablo Inostroza" .
+
+<http://ceur-ws.org/Vol-1305/#StefaniLindel> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/StefaniLindel> ;
+    ns3:made <http://ceur-ws.org/Vol-1305/#paper5>,
+        <http://ceur-ws.org/Vol-1305/#paper6> ;
+    ns3:name "Stefan Lindel" .
+
+<http://ceur-ws.org/Vol-1305/#TijsivanideriStorm> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/TijsivanideriStorm> ;
+    ns3:made <http://ceur-ws.org/Vol-1305/#paper10>,
+        <http://ceur-ws.org/Vol-1305/#paper11> ;
+    ns3:name "Tijs van der Storm" .
+
+<http://ceur-ws.org/Vol-1305/#TobiasiGeorge> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/TobiasiGeorge> ;
+    ns3:made <http://ceur-ws.org/Vol-1305/#paper5>,
+        <http://ceur-ws.org/Vol-1305/#paper6> ;
+    ns3:name "Tobias George" .
+
+<http://ceur-ws.org/Vol-1305/#paper17> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1305/> ;
+    ns7:title "Solving the TTC 2014 Movie Database Case with GrGen.NET" ;
+    ns2:endPage 133 ;
+    ns2:numPages 9 ;
+    ns2:section <http://ceur-ws.org/Vol-1305/#TheMovieDatabaseCase> ;
+    ns2:startPage 125 ;
+    ns5:author <http://ceur-ws.org/Vol-1305/#EdgariJakumeit> .
+
+<http://ceur-ws.org/Vol-1305/#paper3> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1305/> ;
+    ns7:title "Solving the TTC FIXML Case with FunnyQT" ;
+    ns2:endPage 21 ;
+    ns2:numPages 15 ;
+    ns2:section <http://ceur-ws.org/Vol-1305/#TheFIXMLCase> ;
+    ns2:startPage 7 ;
+    ns5:author <http://ceur-ws.org/Vol-1305/#TassiloiHorn> .
+
+<http://ceur-ws.org/Vol-1305/#paper4> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1305/> ;
+    ns7:title "Solving the TTC Movie Database Case with FunnyQT" ;
+    ns2:endPage 144 ;
+    ns2:numPages 6 ;
+    ns2:section <http://ceur-ws.org/Vol-1305/#TheMovieDatabaseCase> ;
+    ns2:startPage 139 ;
+    ns5:author <http://ceur-ws.org/Vol-1305/#TassiloiHorn> .
+
+<http://ceur-ws.org/Vol-1305/#SobhaniYassipouriTehrani> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/SobhaniYassipouriTehrani> ;
+    ns3:made <http://ceur-ws.org/Vol-1305/#paper1>,
+        <http://ceur-ws.org/Vol-1305/#paper12>,
+        <http://ceur-ws.org/Vol-1305/#paper7> ;
+    ns3:name "Sobhan Yassipour Tehrani" .
+
+<http://ceur-ws.org/Vol-1305/#paper10> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1305/> ;
+    ns7:title "The TTC 2014 Movie Database Case: Rascal Solution" ;
+    ns2:endPage 159 ;
+    ns2:numPages 5 ;
+    ns2:section <http://ceur-ws.org/Vol-1305/#TheMovieDatabaseCase> ;
+    ns2:startPage 155 ;
+    ns5:author <http://ceur-ws.org/Vol-1305/#PabloiInostroza>,
+        <http://ceur-ws.org/Vol-1305/#TijsivanideriStorm> .
+
+<http://ceur-ws.org/Vol-1305/#paper11> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1305/> ;
+    ns7:title "The TTC 2014 FIXML Case: Rascal Solution" ;
+    ns2:endPage 51 ;
+    ns2:numPages 5 ;
+    ns2:section <http://ceur-ws.org/Vol-1305/#TheFIXMLCase> ;
+    ns2:startPage 47 ;
+    ns5:author <http://ceur-ws.org/Vol-1305/#PabloiInostroza>,
+        <http://ceur-ws.org/Vol-1305/#TijsivanideriStorm> .
+
+<http://ceur-ws.org/Vol-1305/#paper12> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1305/> ;
+    ns7:title "Aspectual Code Generators for Easy Generation of FIXML to OO Mappings" ;
+    ns2:endPage 64 ;
+    ns2:numPages 13 ;
+    ns2:section <http://ceur-ws.org/Vol-1305/#TheFIXMLCase> ;
+    ns2:startPage 52 ;
+    ns5:author <http://ceur-ws.org/Vol-1305/#SobhaniYassipouriTehrani>,
+        <http://ceur-ws.org/Vol-1305/#SteffeniZschaler> .
+
+<http://ceur-ws.org/Vol-1305/#paper13> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1305/> ;
+    ns7:title "Solving the Movie Database Case with QVTo" ;
+    ns2:endPage 102 ;
+    ns2:numPages 5 ;
+    ns2:section <http://ceur-ws.org/Vol-1305/#TheMovieDatabaseCase> ;
+    ns2:startPage 98 ;
+    ns5:author <http://ceur-ws.org/Vol-1305/#ChristianiHeinzemann>,
+        <http://ceur-ws.org/Vol-1305/#ChristopheriGerking> .
+
+<http://ceur-ws.org/Vol-1305/#paper16> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1305/> ;
+    ns7:title "The Movie Database Case: A Solution Using the Maude-based e-Motions Tool" ;
+    ns2:endPage 124 ;
+    ns2:numPages 9 ;
+    ns2:section <http://ceur-ws.org/Vol-1305/#TheMovieDatabaseCase> ;
+    ns2:startPage 116 ;
+    ns5:author <http://ceur-ws.org/Vol-1305/#AntonioiMoreno-Delgado>,
+        <http://ceur-ws.org/Vol-1305/#FranciscoiDur%C3%A1n> .
+
+<http://ceur-ws.org/Vol-1305/#paper19> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1305/> ;
+    ns7:title "Solving the TTC'14 FIXML Case Study with SIGMA" ;
+    ns2:endPage 86 ;
+    ns2:numPages 11 ;
+    ns2:section <http://ceur-ws.org/Vol-1305/#TheFIXMLCase> ;
+    ns2:startPage 76 ;
+    ns5:author <http://ceur-ws.org/Vol-1305/#FilipiK%C5%99ikava>,
+        <http://ceur-ws.org/Vol-1305/#PhilippeiCollet> .
+
+<http://ceur-ws.org/Vol-1305/#paper20> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1305/> ;
+    ns7:title "AToMPM Solution for the IMDB Case Study" ;
+    ns2:endPage 138 ;
+    ns2:numPages 5 ;
+    ns2:section <http://ceur-ws.org/Vol-1305/#TheMovieDatabaseCase> ;
+    ns2:startPage 134 ;
+    ns5:author <http://ceur-ws.org/Vol-1305/#EugeneiSyriani>,
+        <http://ceur-ws.org/Vol-1305/#HuseyiniErgin> .
+
+<http://ceur-ws.org/Vol-1305/#paper7> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1305/> ;
+    ns7:title "Solving the TTC 2014 Movie Database Case with UML-RSDS" ;
+    ns2:endPage 154 ;
+    ns2:numPages 5 ;
+    ns2:section <http://ceur-ws.org/Vol-1305/#TheMovieDatabaseCase> ;
+    ns2:startPage 150 ;
+    ns5:author <http://ceur-ws.org/Vol-1305/#KeviniLano>,
+        <http://ceur-ws.org/Vol-1305/#SobhaniYassipouriTehrani> .
+
+<http://ceur-ws.org/Vol-1305/#TassiloiHorn> a ns3:Person ;
+    ns5:affiliation "" ;
+    ns4:sameAs <http://ceur-ws.org/persons/TassiloiHorn> ;
+    ns3:made <http://ceur-ws.org/Vol-1305/#paper2>,
+        <http://ceur-ws.org/Vol-1305/#paper3>,
+        <http://ceur-ws.org/Vol-1305/#paper4> ;
+    ns3:name "Tassilo Horn" .
+
+<http://ceur-ws.org/Vol-1305/#paper1> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1305/> ;
+    ns7:title "Case study: FIXML to Java, C# and C++" ;
+    ns2:endPage 6 ;
+    ns2:numPages 5 ;
+    ns2:section <http://ceur-ws.org/Vol-1305/#TheFIXMLCase> ;
+    ns2:startPage 2 ;
+    ns5:author <http://ceur-ws.org/Vol-1305/#KeviniLano>,
+        <http://ceur-ws.org/Vol-1305/#KrikoriMaroukian>,
+        <http://ceur-ws.org/Vol-1305/#SobhaniYassipouriTehrani> .
+
+<http://ceur-ws.org/Vol-1305/#paper18> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1305/> ;
+    ns7:title "A Solution to the FIXML Case Study Using Triple Graph Grammars and eMoflon" ;
+    ns2:endPage 75 ;
+    ns2:numPages 5 ;
+    ns2:section <http://ceur-ws.org/Vol-1305/#TheFIXMLCase> ;
+    ns2:startPage 71 ;
+    ns5:author <http://ceur-ws.org/Vol-1305/#AnthonyiAnjorin>,
+        <http://ceur-ws.org/Vol-1305/#ErhaniLeblebici>,
+        <http://ceur-ws.org/Vol-1305/#G%C3%A9zaiKulcs%C3%A1r> .
+
+<http://ceur-ws.org/Vol-1305/#paper2> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1305/> ;
+    ns7:title "The TTC 2014 Movie Database Case" ;
+    ns2:endPage 97 ;
+    ns2:numPages 5 ;
+    ns2:section <http://ceur-ws.org/Vol-1305/#TheMovieDatabaseCase> ;
+    ns2:startPage 93 ;
+    ns5:author <http://ceur-ws.org/Vol-1305/#ChristianiKrause>,
+        <http://ceur-ws.org/Vol-1305/#MatthiasiTichy>,
         <http://ceur-ws.org/Vol-1305/#TassiloiHorn> .
 
-<http://ceur-ws.org/Vol-1305/#ChristianiKrause> a ns4:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/ChristianiKrause> ;
-    ns4:name "Christian Krause" .
+<http://ceur-ws.org/Vol-1305/#paper21> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1305/> ;
+    ns7:title "Solving the FIXML Case Study Using Epsilon and Java" ;
+    ns2:endPage 92 ;
+    ns2:numPages 6 ;
+    ns2:section <http://ceur-ws.org/Vol-1305/#TheFIXMLCase> ;
+    ns2:startPage 87 ;
+    ns5:author <http://ceur-ws.org/Vol-1305/#HoracioiHoyos>,
+        <http://ceur-ws.org/Vol-1305/#JaimeiChavarriaga>,
+        <http://ceur-ws.org/Vol-1305/#PaolaiG%C3%B3mez> .
 
-<http://ceur-ws.org/Vol-1305/#LouisiM.iRose> a ns4:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/LouisiM.iRose> ;
-    ns4:name "Louis M. Rose" .
+<http://ceur-ws.org/Vol-1305/#paper5> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1305/> ;
+    ns7:title "The SDMLib Solution to the FIXML Case for TTC2014" ;
+    ns2:endPage 26 ;
+    ns2:numPages 5 ;
+    ns2:section <http://ceur-ws.org/Vol-1305/#TheFIXMLCase> ;
+    ns2:startPage 22 ;
+    ns5:author <http://ceur-ws.org/Vol-1305/#AlbertiZ%C3%BCndorf>,
+        <http://ceur-ws.org/Vol-1305/#ChristophiEickhoff>,
+        <http://ceur-ws.org/Vol-1305/#StefaniLindel>,
+        <http://ceur-ws.org/Vol-1305/#TobiasiGeorge> .
 
-<http://ceur-ws.org/Vol-1305/#TassiloiHorn> a ns4:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/TassiloiHorn> ;
-    ns4:name "Tassilo Horn" .
+<http://ceur-ws.org/Vol-1305/#paper6> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1305/> ;
+    ns7:title "The SDMLib Solution to the MovieDB Case for TTC2014" ;
+    ns2:endPage 149 ;
+    ns2:numPages 5 ;
+    ns2:section <http://ceur-ws.org/Vol-1305/#TheMovieDatabaseCase> ;
+    ns2:startPage 145 ;
+    ns5:author <http://ceur-ws.org/Vol-1305/#AlbertiZ%C3%BCndorf>,
+        <http://ceur-ws.org/Vol-1305/#ChristophiEickhoff>,
+        <http://ceur-ws.org/Vol-1305/#StefaniLindel>,
+        <http://ceur-ws.org/Vol-1305/#TobiasiGeorge> .
 
-<http://ceur-ws.org/Vol-1305/#event> a ns5:WorkshopEvent ;
-    ns5:hasLocation <http://dbpedia.org/resource/United_Kingdom> ;
-    ns5:hasPart <http://ceur-ws.org/Vol-1305/#part-STAF> ;
-    ns5:isSubEventOf <http://ceur-ws.org/Vol-1305/#conf> ;
-    ns6:beginsAtDatetime "2014-07-25T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:endsAtDatetime "2014-07-25T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:license "http://creativecommons.org/publicdomain/zero/1.0/" .
+<http://ceur-ws.org/Vol-1305/#paper8> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1305/> ;
+    ns7:title "FIXML to Java, C# and C++ Transformations with QVTR-XSLT" ;
+    ns2:endPage 31 ;
+    ns2:numPages 5 ;
+    ns2:section <http://ceur-ws.org/Vol-1305/#TheFIXMLCase> ;
+    ns2:startPage 27 ;
+    ns5:author <http://ceur-ws.org/Vol-1305/#DanningiLi>,
+        <http://ceur-ws.org/Vol-1305/#LiiDan>,
+        <http://ceur-ws.org/Vol-1305/#VolkeriStolz>,
+        <http://ceur-ws.org/Vol-1305/#XiaoshaniLi> .
+
+<http://ceur-ws.org/Vol-1305/#paper15> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1305/> ;
+    ns7:title "A Model-Driven Solution for Financial Data Representation Expressed in FIXML" ;
+    ns2:endPage 70 ;
+    ns2:numPages 6 ;
+    ns2:section <http://ceur-ws.org/Vol-1305/#TheFIXMLCase> ;
+    ns2:startPage 65 ;
+    ns5:author <http://ceur-ws.org/Vol-1305/#HamoudiAljamaan>,
+        <http://ceur-ws.org/Vol-1305/#MigueliGarzon>,
+        <http://ceur-ws.org/Vol-1305/#OpeyemiiAdesina>,
+        <http://ceur-ws.org/Vol-1305/#TimothyiLethbridge>,
+        <http://ceur-ws.org/Vol-1305/#VahdatiAbdelzad> .
+
+<http://ceur-ws.org/Vol-1305/#paper9> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1305/> ;
+    ns7:title "Solving the FIXML2Code-case Study with HenshinTGG" ;
+    ns2:endPage 46 ;
+    ns2:numPages 15 ;
+    ns2:section <http://ceur-ws.org/Vol-1305/#TheFIXMLCase> ;
+    ns2:startPage 32 ;
+    ns5:author <http://ceur-ws.org/Vol-1305/#BenjaminiBraatz>,
+        <http://ceur-ws.org/Vol-1305/#FrankiHermann>,
+        <http://ceur-ws.org/Vol-1305/#NicoiNachtigall>,
+        <http://ceur-ws.org/Vol-1305/#SusanniGottmann>,
+        <http://ceur-ws.org/Vol-1305/#ThomasiEngel> .
+
+<http://ceur-ws.org/Vol-1305/#paper14> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1305/> ;
+    ns7:title "Movie Database Case: An EMF-IncQuery Solution" ;
+    ns2:endPage 115 ;
+    ns2:numPages 13 ;
+    ns2:section <http://ceur-ws.org/Vol-1305/#TheMovieDatabaseCase> ;
+    ns2:startPage 103 ;
+    ns5:author <http://ceur-ws.org/Vol-1305/#%C3%81beliHeged%C3%BCs>,
+        <http://ceur-ws.org/Vol-1305/#BenedekiIzs%C3%B3>,
+        <http://ceur-ws.org/Vol-1305/#CsabaiDebreceni>,
+        <http://ceur-ws.org/Vol-1305/#G%C3%A1boriBergmann>,
+        <http://ceur-ws.org/Vol-1305/#G%C3%A1boriSz%C3%A1rnyas>,
+        <http://ceur-ws.org/Vol-1305/#Oszk%C3%A1riSemer%C3%A1th>,
+        <http://ceur-ws.org/Vol-1305/#Zolt%C3%A1niUjhelyi> .
+
+<http://ceur-ws.org/Vol-1305/#TheMovieDatabaseCase> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-1305/> ;
+    ns7:title "The Movie Database Case" .
+
+<http://ceur-ws.org/Vol-1305/#TheFIXMLCase> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-1305/> ;
+    ns7:title "The FIXML Case" .
+
+<http://ceur-ws.org/Vol-1305/> a ns1:Proceedings ;
+    ns1:hasPart <http://ceur-ws.org/Vol-1305/#paper1>,
+        <http://ceur-ws.org/Vol-1305/#paper10>,
+        <http://ceur-ws.org/Vol-1305/#paper11>,
+        <http://ceur-ws.org/Vol-1305/#paper12>,
+        <http://ceur-ws.org/Vol-1305/#paper13>,
+        <http://ceur-ws.org/Vol-1305/#paper14>,
+        <http://ceur-ws.org/Vol-1305/#paper15>,
+        <http://ceur-ws.org/Vol-1305/#paper16>,
+        <http://ceur-ws.org/Vol-1305/#paper17>,
+        <http://ceur-ws.org/Vol-1305/#paper18>,
+        <http://ceur-ws.org/Vol-1305/#paper19>,
+        <http://ceur-ws.org/Vol-1305/#paper2>,
+        <http://ceur-ws.org/Vol-1305/#paper20>,
+        <http://ceur-ws.org/Vol-1305/#paper21>,
+        <http://ceur-ws.org/Vol-1305/#paper3>,
+        <http://ceur-ws.org/Vol-1305/#paper4>,
+        <http://ceur-ws.org/Vol-1305/#paper5>,
+        <http://ceur-ws.org/Vol-1305/#paper6>,
+        <http://ceur-ws.org/Vol-1305/#paper7>,
+        <http://ceur-ws.org/Vol-1305/#paper8>,
+        <http://ceur-ws.org/Vol-1305/#paper9> ;
+    ns1:hasSession <http://ceur-ws.org/Vol-1305/#TheFIXMLCase>,
+        <http://ceur-ws.org/Vol-1305/#TheMovieDatabaseCase> ;
+    ns9:issued "2014-11-27T00:00:00+00:00"^^xsd:dateTime ;
+    ns2:presentedAt <http://ceur-ws.org/Vol-1305/#event> ;
+    ns5:editor <http://ceur-ws.org/Vol-1305/#ChristianiKrause>,
+        <http://ceur-ws.org/Vol-1305/#LouisiM.iRose>,
+        <http://ceur-ws.org/Vol-1305/#TassiloiHorn> .
 

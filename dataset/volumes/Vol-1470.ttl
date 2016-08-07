@@ -1,40 +1,192 @@
-@prefix ns1: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns2: <http://xmlns.com/foaf/0.1/> .
-@prefix ns3: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns1: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns2: <http://www.w3.org/2002/07/owl#> .
+@prefix ns3: <http://xmlns.com/foaf/0.1/> .
 @prefix ns4: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns5: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns6: <http://purl.org/dc/elements/1.1/> .
-@prefix ns7: <http://www.w3.org/2002/07/owl#> .
-@prefix ns8: <http://purl.org/ontology/bibo/#> .
+@prefix ns5: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns6: <http://purl.org/ontology/bibo/#> .
+@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns8: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns9: <http://purl.org/dc/elements/1.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1470/> a ns1:Proceedings ;
-    ns3:issued "2015-10-13T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:presentedAt <http://ceur-ws.org/Vol-1470/#event> ;
+<http://ceur-ws.org/Vol-1470/#AlfonsoiPierantonio> a ns3:Person ;
+    ns4:affiliation "" ;
+    ns2:sameAs <http://ceur-ws.org/persons/AlfonsoiPierantonio> ;
+    ns3:name "Alfonso Pierantonio" .
+
+<http://ceur-ws.org/Vol-1470/#AramiHovsepyan> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/AramiHovsepyan> ;
+    ns3:made <http://ceur-ws.org/Vol-1470/#paper6> ;
+    ns3:name "Aram Hovsepyan" .
+
+<http://ceur-ws.org/Vol-1470/#ColiniAtkinson> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/ColiniAtkinson> ;
+    ns3:made <http://ceur-ws.org/Vol-1470/#keynote> ;
+    ns3:name "Colin Atkinson" .
+
+<http://ceur-ws.org/Vol-1470/#DavideiDiiRuscio> a ns3:Person ;
+    ns4:affiliation "" ;
+    ns2:sameAs <http://ceur-ws.org/persons/DavideiDiiRuscio> ;
+    ns3:name "Davide Di Ruscio" .
+
+<http://ceur-ws.org/Vol-1470/#DimitriiVaniLanduyt> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/DimitriiVaniLanduyt> ;
+    ns3:made <http://ceur-ws.org/Vol-1470/#paper6> ;
+    ns3:name "Dimitri Van Landuyt" .
+
+<http://ceur-ws.org/Vol-1470/#JuanideiLara> a ns3:Person ;
+    ns4:affiliation "" ;
+    ns2:sameAs <http://ceur-ws.org/persons/JuanideiLara> ;
+    ns3:name "Juan de Lara" .
+
+<http://ceur-ws.org/Vol-1470/#SamiDevlin> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/SamiDevlin> ;
+    ns3:made <http://ceur-ws.org/Vol-1470/#paper3> ;
+    ns3:name "Sam Devlin" .
+
+<http://ceur-ws.org/Vol-1470/#SteffeniVaupel> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/SteffeniVaupel> ;
+    ns3:made <http://ceur-ws.org/Vol-1470/#paper2> ;
+    ns3:name "Steffen Vaupel" .
+
+<http://ceur-ws.org/Vol-1470/#VadimiZaytsev> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/VadimiZaytsev> ;
+    ns3:made <http://ceur-ws.org/Vol-1470/#paper5> ;
+    ns3:name "Vadim Zaytsev" .
+
+<http://ceur-ws.org/Vol-1470/#event> a ns8:WorkshopEvent ;
+    ns8:hasLocation <http://dbpedia.org/resource/Canada> ;
+    ns8:hasPart <http://ceur-ws.org/Vol-1470/#part-FlexMDE> ;
+    ns8:isSubEventOf <http://ceur-ws.org/Vol-1470/#conf> ;
+    ns7:beginsAtDatetime "2015-09-29T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:endsAtDatetime "2015-09-29T00:00:00+00:00"^^xsd:dateTime ;
+    ns9:license "http://creativecommons.org/publicdomain/zero/1.0/" .
+
+<http://ceur-ws.org/Vol-1470/#AthanasiosiZolotas> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/AthanasiosiZolotas> ;
+    ns3:made <http://ceur-ws.org/Vol-1470/#paper3>,
+        <http://ceur-ws.org/Vol-1470/#paper4> ;
+    ns3:name "Athanasios Zolotas" .
+
+<http://ceur-ws.org/Vol-1470/#DanieliStr%C3%BCber> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/DanieliStr%C3%BCber> ;
+    ns3:made <http://ceur-ws.org/Vol-1470/#paper1>,
+        <http://ceur-ws.org/Vol-1470/#paper2> ;
+    ns3:name "Daniel Strüber" .
+
+<http://ceur-ws.org/Vol-1470/#DimitriosiS.iKolovos> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/DimitriosiS.iKolovos> ;
+    ns3:made <http://ceur-ws.org/Vol-1470/#paper3>,
+        <http://ceur-ws.org/Vol-1470/#paper4> ;
+    ns3:name "Dimitrios S. Kolovos" .
+
+<http://ceur-ws.org/Vol-1470/#FelixiRieger> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/FelixiRieger> ;
+    ns3:made <http://ceur-ws.org/Vol-1470/#paper1>,
+        <http://ceur-ws.org/Vol-1470/#paper2> ;
+    ns3:name "Felix Rieger" .
+
+<http://ceur-ws.org/Vol-1470/#GabrieleiTaentzer> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/GabrieleiTaentzer> ;
+    ns3:made <http://ceur-ws.org/Vol-1470/#paper1>,
+        <http://ceur-ws.org/Vol-1470/#paper2> ;
+    ns3:name "Gabriele Taentzer" .
+
+<http://ceur-ws.org/Vol-1470/#NicholasiMatragkas> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/NicholasiMatragkas> ;
+    ns3:made <http://ceur-ws.org/Vol-1470/#paper3>,
+        <http://ceur-ws.org/Vol-1470/#paper4> ;
+    ns3:name "Nicholas Matragkas" .
+
+<http://ceur-ws.org/Vol-1470/#RichardiF.iPaige> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/RichardiF.iPaige> ;
+    ns3:made <http://ceur-ws.org/Vol-1470/#paper3>,
+        <http://ceur-ws.org/Vol-1470/#paper4> ;
+    ns3:name "Richard F. Paige" .
+
+<http://ceur-ws.org/Vol-1470/#keynote> a ns8:Paper ;
+    ns8:partOf <http://ceur-ws.org/Vol-1470/> ;
+    ns5:title "Maximizing the Amount of Information Not Modelled in MDE" ;
+    ns6:endPage 1 ;
+    ns6:numPages 1 ;
+    ns6:startPage 1 ;
+    ns4:author <http://ceur-ws.org/Vol-1470/#ColiniAtkinson> .
+
+<http://ceur-ws.org/Vol-1470/#paper5> a ns8:Paper ;
+    ns8:partOf <http://ceur-ws.org/Vol-1470/> ;
+    ns5:title "Taxonomy of Flexible Linguistic Commitments" ;
+    ns6:endPage 50 ;
+    ns6:numPages 9 ;
+    ns6:startPage 42 ;
+    ns4:author <http://ceur-ws.org/Vol-1470/#VadimiZaytsev> .
+
+<http://ceur-ws.org/Vol-1470/#paper6> a ns8:Paper ;
+    ns8:partOf <http://ceur-ws.org/Vol-1470/> ;
+    ns5:title "Prototizer: Agile on Steroids" ;
+    ns6:endPage 60 ;
+    ns6:numPages 10 ;
+    ns6:startPage 51 ;
+    ns4:author <http://ceur-ws.org/Vol-1470/#AramiHovsepyan>,
+        <http://ceur-ws.org/Vol-1470/#DimitriiVaniLanduyt> .
+
+<http://ceur-ws.org/Vol-1470/#paper1> a ns8:Paper ;
+    ns8:partOf <http://ceur-ws.org/Vol-1470/> ;
+    ns5:title "MUTANT: Model-Driven Unit Testing using ASCII-art as Notational Text" ;
+    ns6:endPage 11 ;
+    ns6:numPages 10 ;
+    ns6:startPage 2 ;
+    ns4:author <http://ceur-ws.org/Vol-1470/#DanieliStr%C3%BCber>,
+        <http://ceur-ws.org/Vol-1470/#FelixiRieger>,
+        <http://ceur-ws.org/Vol-1470/#GabrieleiTaentzer> .
+
+<http://ceur-ws.org/Vol-1470/#paper2> a ns8:Paper ;
+    ns8:partOf <http://ceur-ws.org/Vol-1470/> ;
+    ns5:title "Agile Bottom-Up Development of Domain-Specific IDEs for Model-Driven Development" ;
+    ns6:endPage 21 ;
+    ns6:numPages 10 ;
+    ns6:startPage 12 ;
+    ns4:author <http://ceur-ws.org/Vol-1470/#DanieliStr%C3%BCber>,
+        <http://ceur-ws.org/Vol-1470/#FelixiRieger>,
+        <http://ceur-ws.org/Vol-1470/#GabrieleiTaentzer>,
+        <http://ceur-ws.org/Vol-1470/#SteffeniVaupel> .
+
+<http://ceur-ws.org/Vol-1470/#paper4> a ns8:Paper ;
+    ns8:partOf <http://ceur-ws.org/Vol-1470/> ;
+    ns5:title "Flexible Modelling for Requirements Engineering" ;
+    ns6:endPage 41 ;
+    ns6:numPages 10 ;
+    ns6:startPage 32 ;
+    ns4:author <http://ceur-ws.org/Vol-1470/#AthanasiosiZolotas>,
+        <http://ceur-ws.org/Vol-1470/#DimitriosiS.iKolovos>,
+        <http://ceur-ws.org/Vol-1470/#NicholasiMatragkas>,
+        <http://ceur-ws.org/Vol-1470/#RichardiF.iPaige> .
+
+<http://ceur-ws.org/Vol-1470/#paper3> a ns8:Paper ;
+    ns8:partOf <http://ceur-ws.org/Vol-1470/> ;
+    ns5:title "Type Inference Using Concrete Syntax Properties in Flexible Model-Driven Engineering" ;
+    ns6:endPage 31 ;
+    ns6:numPages 10 ;
+    ns6:startPage 22 ;
+    ns4:author <http://ceur-ws.org/Vol-1470/#AthanasiosiZolotas>,
+        <http://ceur-ws.org/Vol-1470/#DimitriosiS.iKolovos>,
+        <http://ceur-ws.org/Vol-1470/#NicholasiMatragkas>,
+        <http://ceur-ws.org/Vol-1470/#RichardiF.iPaige>,
+        <http://ceur-ws.org/Vol-1470/#SamiDevlin> .
+
+<http://ceur-ws.org/Vol-1470/> a ns8:Proceedings ;
+    ns8:hasPart <http://ceur-ws.org/Vol-1470/#keynote>,
+        <http://ceur-ws.org/Vol-1470/#paper1>,
+        <http://ceur-ws.org/Vol-1470/#paper2>,
+        <http://ceur-ws.org/Vol-1470/#paper3>,
+        <http://ceur-ws.org/Vol-1470/#paper4>,
+        <http://ceur-ws.org/Vol-1470/#paper5>,
+        <http://ceur-ws.org/Vol-1470/#paper6> ;
+    ns1:issued "2015-10-13T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:presentedAt <http://ceur-ws.org/Vol-1470/#event> ;
     ns4:editor <http://ceur-ws.org/Vol-1470/#AlfonsoiPierantonio>,
         <http://ceur-ws.org/Vol-1470/#DavideiDiiRuscio>,
         <http://ceur-ws.org/Vol-1470/#JuanideiLara> .
-
-<http://ceur-ws.org/Vol-1470/#AlfonsoiPierantonio> a ns2:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/AlfonsoiPierantonio> ;
-    ns2:name "Alfonso Pierantonio" .
-
-<http://ceur-ws.org/Vol-1470/#DavideiDiiRuscio> a ns2:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/DavideiDiiRuscio> ;
-    ns2:name "Davide Di Ruscio" .
-
-<http://ceur-ws.org/Vol-1470/#JuanideiLara> a ns2:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/JuanideiLara> ;
-    ns2:name "Juan de Lara" .
-
-<http://ceur-ws.org/Vol-1470/#event> a ns1:WorkshopEvent ;
-    ns1:hasLocation <http://dbpedia.org/resource/Canada> ;
-    ns1:hasPart <http://ceur-ws.org/Vol-1470/#part-ws> ;
-    ns1:isSubEventOf <http://ceur-ws.org/Vol-1470/#conf> ;
-    ns5:beginsAtDatetime "2015-09-29T00:00:00+00:00"^^xsd:dateTime ;
-    ns5:endsAtDatetime "2015-09-29T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:license "http://creativecommons.org/publicdomain/zero/1.0/" .
 

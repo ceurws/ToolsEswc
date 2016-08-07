@@ -1,31 +1,357 @@
-@prefix ns1: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns2: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns3: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns4: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns5: <http://www.w3.org/2002/07/owl#> .
-@prefix ns6: <http://purl.org/ontology/bibo/#> .
+@prefix ns1: <http://xmlns.com/foaf/0.1/> .
+@prefix ns2: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns3: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns4: <http://www.w3.org/2002/07/owl#> .
+@prefix ns5: <http://purl.org/ontology/bibo/#> .
+@prefix ns6: <http://purl.org/dc/elements/1.1/#> .
 @prefix ns7: <http://purl.org/dc/elements/1.1/> .
-@prefix ns8: <http://xmlns.com/foaf/0.1/> .
+@prefix ns8: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns9: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1374/> a ns2:Proceedings ;
-    ns1:issued "2015-06-04T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:presentedAt <http://ceur-ws.org/Vol-1374/#event> ;
-    ns3:editor <http://ceur-ws.org/Vol-1374/#JeffyiMwakalinga> .
+<http://ceur-ws.org/Vol-1374/#AlainiWegmann> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/AlainiWegmann> ;
+    ns1:made <http://ceur-ws.org/Vol-1374/#paper1> ;
+    ns1:name "Alain Wegmann" .
 
-<http://ceur-ws.org/Vol-1374/#JeffyiMwakalinga> a ns8:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/JeffyiMwakalinga> ;
-    ns8:name "Jeffy Mwakalinga" .
+<http://ceur-ws.org/Vol-1374/#AlexanderiNolte> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/AlexanderiNolte> ;
+    ns1:made <http://ceur-ws.org/Vol-1374/#paper7> ;
+    ns1:name "Alexander Nolte" .
 
-<http://ceur-ws.org/Vol-1374/#event> a ns2:WorkshopEvent ;
-    ns2:hasLocation <http://dbpedia.org/resource/Sweden> ;
-    ns2:hasPart <http://ceur-ws.org/Vol-1374/#part-IS>,
+<http://ceur-ws.org/Vol-1374/#AntonellaiDeiAngeli> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/AntonellaiDeiAngeli> ;
+    ns1:made <http://ceur-ws.org/Vol-1374/#paper10> ;
+    ns1:name "Antonella De Angeli" .
+
+<http://ceur-ws.org/Vol-1374/#BertiPainter> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/BertiPainter> ;
+    ns1:made <http://ceur-ws.org/Vol-1374/#paper5> ;
+    ns1:name "Bert Painter" .
+
+<http://ceur-ws.org/Vol-1374/#BetsyiMerck> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/BetsyiMerck> ;
+    ns1:made <http://ceur-ws.org/Vol-1374/#paper5> ;
+    ns1:name "Betsy Merck" .
+
+<http://ceur-ws.org/Vol-1374/#BettyiBarrett> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/BettyiBarrett> ;
+    ns1:made <http://ceur-ws.org/Vol-1374/#paper5> ;
+    ns1:name "Betty Barrett" .
+
+<http://ceur-ws.org/Vol-1374/#ChristianiProbst> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/ChristianiProbst> ;
+    ns1:made <http://ceur-ws.org/Vol-1374/#paper12> ;
+    ns1:name "Christian Probst" .
+
+<http://ceur-ws.org/Vol-1374/#DouglasiAustrom> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/DouglasiAustrom> ;
+    ns1:made <http://ceur-ws.org/Vol-1374/#paper5> ;
+    ns1:name "Douglas Austrom" .
+
+<http://ceur-ws.org/Vol-1374/#FlemmingiNielson> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/FlemmingiNielson> ;
+    ns1:made <http://ceur-ws.org/Vol-1374/#paper12> ;
+    ns1:name "Flemming Nielson" .
+
+<http://ceur-ws.org/Vol-1374/#GiliRegev> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/GiliRegev> ;
+    ns1:made <http://ceur-ws.org/Vol-1374/#paper1> ;
+    ns1:name "Gil Regev" .
+
+<http://ceur-ws.org/Vol-1374/#IaniSommerville> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/IaniSommerville> ;
+    ns1:made <http://ceur-ws.org/Vol-1374/#invitedpaper> ;
+    ns1:name "Ian Sommerville" .
+
+<http://ceur-ws.org/Vol-1374/#IliaiBider> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/IliaiBider> ;
+    ns1:made <http://ceur-ws.org/Vol-1374/#paper11> ;
+    ns1:name "Ilia Bider" .
+
+<http://ceur-ws.org/Vol-1374/#JulieiLang> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/JulieiLang> ;
+    ns1:made <http://ceur-ws.org/Vol-1374/#paper1> ;
+    ns1:name "Julie Lang" .
+
+<http://ceur-ws.org/Vol-1374/#LarsiTax%C3%A9n> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/LarsiTax%C3%A9n> ;
+    ns1:made <http://ceur-ws.org/Vol-1374/#paper6> ;
+    ns1:name "Lars Taxén" .
+
+<http://ceur-ws.org/Vol-1374/#LauraiRegev> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/LauraiRegev> ;
+    ns1:made <http://ceur-ws.org/Vol-1374/#paper1> ;
+    ns1:name "Laura Regev" .
+
+<http://ceur-ws.org/Vol-1374/#MarietaiGeorgievaiIvanova> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/MarietaiGeorgievaiIvanova> ;
+    ns1:made <http://ceur-ws.org/Vol-1374/#paper12> ;
+    ns1:name "Marieta Georgieva Ivanova" .
+
+<http://ceur-ws.org/Vol-1374/#MariusziNowostawski> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/MariusziNowostawski> ;
+    ns1:made <http://ceur-ws.org/Vol-1374/#paper14> ;
+    ns1:name "Mariusz Nowostawski" .
+
+<http://ceur-ws.org/Vol-1374/#MichelaiCozza> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/MichelaiCozza> ;
+    ns1:made <http://ceur-ws.org/Vol-1374/#paper10> ;
+    ns1:name "Michela Cozza" .
+
+<http://ceur-ws.org/Vol-1374/#MohamadiGharib> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/MohamadiGharib> ;
+    ns1:made <http://ceur-ws.org/Vol-1374/#paper8> ;
+    ns1:name "Mohamad Gharib" .
+
+<http://ceur-ws.org/Vol-1374/#MoufidaiSadok> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/MoufidaiSadok> ;
+    ns1:made <http://ceur-ws.org/Vol-1374/#paper2> ;
+    ns1:name "Moufida Sadok" .
+
+<http://ceur-ws.org/Vol-1374/#PamelaiPosey> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/PamelaiPosey> ;
+    ns1:made <http://ceur-ws.org/Vol-1374/#paper5> ;
+    ns1:name "Pamela Posey" .
+
+<http://ceur-ws.org/Vol-1374/#PaolaiMauri> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/PaolaiMauri> ;
+    ns1:made <http://ceur-ws.org/Vol-1374/#paper9> ;
+    ns1:name "Paola Mauri" .
+
+<http://ceur-ws.org/Vol-1374/#PaoloiGiorgini> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/PaoloiGiorgini> ;
+    ns1:made <http://ceur-ws.org/Vol-1374/#paper8> ;
+    ns1:name "Paolo Giorgini" .
+
+<http://ceur-ws.org/Vol-1374/#PeteriBednar> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/PeteriBednar> ;
+    ns1:made <http://ceur-ws.org/Vol-1374/#paper2> ;
+    ns1:name "Peter Bednar" .
+
+<http://ceur-ws.org/Vol-1374/#RamkrishnaniTenkasi> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/RamkrishnaniTenkasi> ;
+    ns1:made <http://ceur-ws.org/Vol-1374/#paper5> ;
+    ns1:name "Ramkrishnan Tenkasi" .
+
+<http://ceur-ws.org/Vol-1374/#SteveniAlter> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/SteveniAlter> ;
+    ns1:made <http://ceur-ws.org/Vol-1374/#paper3> ;
+    ns1:name "Steven Alter" .
+
+<http://ceur-ws.org/Vol-1374/#StewartiKowalski> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/StewartiKowalski> ;
+    ns1:made <http://ceur-ws.org/Vol-1374/#paper14> ;
+    ns1:name "Stewart Kowalski" .
+
+<http://ceur-ws.org/Vol-1374/#ThomasiHerrmann> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/ThomasiHerrmann> ;
+    ns1:made <http://ceur-ws.org/Vol-1374/#paper7> ;
+    ns1:name "Thomas Herrmann" .
+
+<http://ceur-ws.org/Vol-1374/#YasminaiNa%C3%AFm> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/YasminaiNa%C3%AFm> ;
+    ns1:made <http://ceur-ws.org/Vol-1374/#paper1> ;
+    ns1:name "Yasmina Naïm" .
+
+<http://ceur-ws.org/Vol-1374/#ZaruhiiAslanyan> a ns1:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/ZaruhiiAslanyan> ;
+    ns1:made <http://ceur-ws.org/Vol-1374/#paper12> ;
+    ns1:name "Zaruhi Aslanyan" .
+
+<http://ceur-ws.org/Vol-1374/#event> a ns8:WorkshopEvent ;
+    ns8:hasLocation <http://dbpedia.org/resource/Sweden> ;
+    ns8:hasPart <http://ceur-ws.org/Vol-1374/#part-IS>,
         <http://ceur-ws.org/Vol-1374/#part-STPIS> ;
-    ns2:isSubEventOf <http://ceur-ws.org/Vol-1374/#conf> ;
-    ns4:beginsAtDatetime "2015-06-09T00:00:00+00:00"^^xsd:dateTime ;
-    ns4:endsAtDatetime "2015-06-09T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:isSubEventOf <http://ceur-ws.org/Vol-1374/#conf> ;
+    ns3:beginsAtDatetime "2015-06-09T00:00:00+00:00"^^xsd:dateTime ;
+    ns3:endsAtDatetime "2015-06-09T00:00:00+00:00"^^xsd:dateTime ;
     ns7:license "http://creativecommons.org/publicdomain/zero/1.0/" .
+
+<http://ceur-ws.org/Vol-1374/#JeffyiMwakalinga> a ns1:Person ;
+    ns2:affiliation "" ;
+    ns4:sameAs <http://ceur-ws.org/persons/JeffyiMwakalinga> ;
+    ns1:made <http://ceur-ws.org/Vol-1374/#paper14> ;
+    ns1:name "Jeffy Mwakalinga" .
+
+<http://ceur-ws.org/Vol-1374/#Session1Opening> a ns8:SessionEvent ;
+    ns8:partOf <http://ceur-ws.org/Vol-1374/> ;
+    ns6:title "Session 1: Opening" .
+
+<http://ceur-ws.org/Vol-1374/#invitedpaper> a ns8:Paper ;
+    ns8:partOf <http://ceur-ws.org/Vol-1374/> ;
+    ns6:title "Designing Software for a Million Users: it's not About the Technology" ;
+    ns5:endPage 4 ;
+    ns5:numPages 4 ;
+    ns5:section <http://ceur-ws.org/Vol-1374/#Session1Opening> ;
+    ns5:startPage 1 ;
+    ns2:author <http://ceur-ws.org/Vol-1374/#IaniSommerville> .
+
+<http://ceur-ws.org/Vol-1374/#paper11> a ns8:Paper ;
+    ns8:partOf <http://ceur-ws.org/Vol-1374/> ;
+    ns6:title "Functional Decomposition of a Socio-Technical System: What is Missing?" ;
+    ns5:endPage 120 ;
+    ns5:numPages 7 ;
+    ns5:section <http://ceur-ws.org/Vol-1374/#Session4DiverseIssues> ;
+    ns5:startPage 114 ;
+    ns2:author <http://ceur-ws.org/Vol-1374/#IliaiBider> .
+
+<http://ceur-ws.org/Vol-1374/#paper3> a ns8:Paper ;
+    ns8:partOf <http://ceur-ws.org/Vol-1374/> ;
+    ns6:title "Sociotechnical Systems Through a Work System Lens: A Possible Path for Reconciling System Conceptualizations, Business Realities, and Humanist Values in IS Development" ;
+    ns5:endPage 39 ;
+    ns5:numPages 8 ;
+    ns5:section <http://ceur-ws.org/Vol-1374/#Session2TeachingandPractice> ;
+    ns5:startPage 32 ;
+    ns2:author <http://ceur-ws.org/Vol-1374/#SteveniAlter> .
+
+<http://ceur-ws.org/Vol-1374/#paper6> a ns8:Paper ;
+    ns8:partOf <http://ceur-ws.org/Vol-1374/> ;
+    ns6:title "A Neurobiological Perspective on Socio-Technical Systems" ;
+    ns5:endPage 68 ;
+    ns5:numPages 13 ;
+    ns5:section <http://ceur-ws.org/Vol-1374/#Session3TheoryandPractice> ;
+    ns5:startPage 56 ;
+    ns2:author <http://ceur-ws.org/Vol-1374/#LarsiTax%C3%A9n> .
+
+<http://ceur-ws.org/Vol-1374/#paper9> a ns8:Paper ;
+    ns8:partOf <http://ceur-ws.org/Vol-1374/> ;
+    ns6:title "The Process Analysis as a Frame to Merge Social and Technical Issues in the Design of Information and Management Systems" ;
+    ns5:endPage 105 ;
+    ns5:numPages 6 ;
+    ns5:section <http://ceur-ws.org/Vol-1374/#Session4DiverseIssues> ;
+    ns5:startPage 100 ;
+    ns2:author <http://ceur-ws.org/Vol-1374/#PaolaiMauri> .
+
+<http://ceur-ws.org/Vol-1374/#Session5Posters> a ns8:SessionEvent ;
+    ns8:partOf <http://ceur-ws.org/Vol-1374/> ;
+    ns6:title "Session 5: Posters" .
+
+<http://ceur-ws.org/Vol-1374/#paper10> a ns8:Paper ;
+    ns8:partOf <http://ceur-ws.org/Vol-1374/> ;
+    ns6:title "Scaling up the Engagement in Participatory Design" ;
+    ns5:endPage 113 ;
+    ns5:numPages 8 ;
+    ns5:section <http://ceur-ws.org/Vol-1374/#Session4DiverseIssues> ;
+    ns5:startPage 106 ;
+    ns2:author <http://ceur-ws.org/Vol-1374/#AntonellaiDeiAngeli>,
+        <http://ceur-ws.org/Vol-1374/#MichelaiCozza> .
+
+<http://ceur-ws.org/Vol-1374/#paper2> a ns8:Paper ;
+    ns8:partOf <http://ceur-ws.org/Vol-1374/> ;
+    ns6:title "Socio-Technical Toolbox for Business Systems Analysis and Design" ;
+    ns5:endPage 31 ;
+    ns5:numPages 12 ;
+    ns5:section <http://ceur-ws.org/Vol-1374/#Session2TeachingandPractice> ;
+    ns5:startPage 20 ;
+    ns2:author <http://ceur-ws.org/Vol-1374/#MoufidaiSadok>,
+        <http://ceur-ws.org/Vol-1374/#PeteriBednar> .
+
+<http://ceur-ws.org/Vol-1374/#paper7> a ns8:Paper ;
+    ns8:partOf <http://ceur-ws.org/Vol-1374/> ;
+    ns6:title "Sociotechnical Requirements Specification - an Example of Continuous Support for Collaborative Modelling and Design" ;
+    ns5:endPage 83 ;
+    ns5:numPages 15 ;
+    ns5:section <http://ceur-ws.org/Vol-1374/#Session3TheoryandPractice> ;
+    ns5:startPage 69 ;
+    ns2:author <http://ceur-ws.org/Vol-1374/#AlexanderiNolte>,
+        <http://ceur-ws.org/Vol-1374/#ThomasiHerrmann> .
+
+<http://ceur-ws.org/Vol-1374/#paper8> a ns8:Paper ;
+    ns8:partOf <http://ceur-ws.org/Vol-1374/> ;
+    ns6:title "Modeling and Analyzing Information Quality Requirements of Socio-technical Systems: Experience Report" ;
+    ns5:endPage 99 ;
+    ns5:numPages 16 ;
+    ns5:section <http://ceur-ws.org/Vol-1374/#Session4DiverseIssues> ;
+    ns5:startPage 84 ;
+    ns2:author <http://ceur-ws.org/Vol-1374/#MohamadiGharib>,
+        <http://ceur-ws.org/Vol-1374/#PaoloiGiorgini> .
+
+<http://ceur-ws.org/Vol-1374/#Session2TeachingandPractice> a ns8:SessionEvent ;
+    ns8:partOf <http://ceur-ws.org/Vol-1374/> ;
+    ns6:title "Session 2: Teaching and Practice" .
+
+<http://ceur-ws.org/Vol-1374/#Session3TheoryandPractice> a ns8:SessionEvent ;
+    ns8:partOf <http://ceur-ws.org/Vol-1374/> ;
+    ns6:title "Session 3: Theory and Practice" .
+
+<http://ceur-ws.org/Vol-1374/#paper14> a ns8:Paper ;
+    ns8:partOf <http://ceur-ws.org/Vol-1374/> ;
+    ns6:title "HIPing Innovation Education in University. Introducing Socio-Technical Concepts for Cross-Disciplinary Teams in Applied Computer Sciences" ;
+    ns5:endPage 128 ;
+    ns5:numPages 4 ;
+    ns5:section <http://ceur-ws.org/Vol-1374/#Session5Posters> ;
+    ns5:startPage 125 ;
+    ns2:author <http://ceur-ws.org/Vol-1374/#JeffyiMwakalinga>,
+        <http://ceur-ws.org/Vol-1374/#MariusziNowostawski>,
+        <http://ceur-ws.org/Vol-1374/#StewartiKowalski> .
+
+<http://ceur-ws.org/Vol-1374/#Session4DiverseIssues> a ns8:SessionEvent ;
+    ns8:partOf <http://ceur-ws.org/Vol-1374/> ;
+    ns6:title "Session 4: Diverse Issues" .
+
+<http://ceur-ws.org/Vol-1374/#paper12> a ns8:Paper ;
+    ns8:partOf <http://ceur-ws.org/Vol-1374/> ;
+    ns6:title "Modelling and Analysing Socio-Technical Systems" ;
+    ns5:endPage 124 ;
+    ns5:numPages 4 ;
+    ns5:section <http://ceur-ws.org/Vol-1374/#Session5Posters> ;
+    ns5:startPage 121 ;
+    ns2:author <http://ceur-ws.org/Vol-1374/#ChristianiProbst>,
+        <http://ceur-ws.org/Vol-1374/#FlemmingiNielson>,
+        <http://ceur-ws.org/Vol-1374/#MarietaiGeorgievaiIvanova>,
+        <http://ceur-ws.org/Vol-1374/#ZaruhiiAslanyan> .
+
+<http://ceur-ws.org/Vol-1374/#paper1> a ns8:Paper ;
+    ns8:partOf <http://ceur-ws.org/Vol-1374/> ;
+    ns6:title "Teaching an Ethnographic Approach to Requirements Elicitation in an Enterprise Architecture Course" ;
+    ns5:endPage 19 ;
+    ns5:numPages 15 ;
+    ns5:section <http://ceur-ws.org/Vol-1374/#Session2TeachingandPractice> ;
+    ns5:startPage 5 ;
+    ns2:author <http://ceur-ws.org/Vol-1374/#AlainiWegmann>,
+        <http://ceur-ws.org/Vol-1374/#GiliRegev>,
+        <http://ceur-ws.org/Vol-1374/#JulieiLang>,
+        <http://ceur-ws.org/Vol-1374/#LauraiRegev>,
+        <http://ceur-ws.org/Vol-1374/#YasminaiNa%C3%AFm> .
+
+<http://ceur-ws.org/Vol-1374/#paper5> a ns8:Paper ;
+    ns8:partOf <http://ceur-ws.org/Vol-1374/> ;
+    ns6:title "Sociotechnical Systems (STS) in Coordination of Virtual Innovation Work" ;
+    ns5:endPage 55 ;
+    ns5:numPages 16 ;
+    ns5:section <http://ceur-ws.org/Vol-1374/#Session3TheoryandPractice> ;
+    ns5:startPage 40 ;
+    ns2:author <http://ceur-ws.org/Vol-1374/#BertiPainter>,
+        <http://ceur-ws.org/Vol-1374/#BetsyiMerck>,
+        <http://ceur-ws.org/Vol-1374/#BettyiBarrett>,
+        <http://ceur-ws.org/Vol-1374/#DouglasiAustrom>,
+        <http://ceur-ws.org/Vol-1374/#PamelaiPosey>,
+        <http://ceur-ws.org/Vol-1374/#RamkrishnaniTenkasi> .
+
+<http://ceur-ws.org/Vol-1374/> a ns8:Proceedings ;
+    ns8:hasPart <http://ceur-ws.org/Vol-1374/#invitedpaper>,
+        <http://ceur-ws.org/Vol-1374/#paper1>,
+        <http://ceur-ws.org/Vol-1374/#paper10>,
+        <http://ceur-ws.org/Vol-1374/#paper11>,
+        <http://ceur-ws.org/Vol-1374/#paper12>,
+        <http://ceur-ws.org/Vol-1374/#paper14>,
+        <http://ceur-ws.org/Vol-1374/#paper2>,
+        <http://ceur-ws.org/Vol-1374/#paper3>,
+        <http://ceur-ws.org/Vol-1374/#paper5>,
+        <http://ceur-ws.org/Vol-1374/#paper6>,
+        <http://ceur-ws.org/Vol-1374/#paper7>,
+        <http://ceur-ws.org/Vol-1374/#paper8>,
+        <http://ceur-ws.org/Vol-1374/#paper9> ;
+    ns8:hasSession <http://ceur-ws.org/Vol-1374/#Session1Opening>,
+        <http://ceur-ws.org/Vol-1374/#Session2TeachingandPractice>,
+        <http://ceur-ws.org/Vol-1374/#Session3TheoryandPractice>,
+        <http://ceur-ws.org/Vol-1374/#Session4DiverseIssues>,
+        <http://ceur-ws.org/Vol-1374/#Session5Posters> ;
+    ns9:issued "2015-06-04T00:00:00+00:00"^^xsd:dateTime ;
+    ns5:presentedAt <http://ceur-ws.org/Vol-1374/#event> ;
+    ns2:editor <http://ceur-ws.org/Vol-1374/#JeffyiMwakalinga> .
 

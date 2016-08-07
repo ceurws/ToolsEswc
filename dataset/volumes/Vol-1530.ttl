@@ -1,41 +1,169 @@
 @prefix ns1: <http://purl.org/ontology/bibo/#> .
-@prefix ns2: <http://xmlns.com/foaf/0.1/> .
+@prefix ns2: <http://swrc.ontoware.org/ontology/#> .
 @prefix ns3: <http://www.w3.org/2002/07/owl#> .
-@prefix ns4: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns5: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns4: <http://xmlns.com/foaf/0.1/> .
+@prefix ns5: <http://purl.org/dc/elements/1.1/#> .
 @prefix ns6: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns7: <http://purl.org/dc/elements/1.1/> .
-@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns8: <http://purl.org/dc/elements/1.1/> .
+@prefix ns9: <http://purl.org/NET/c4dm/timeline.owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1530/> a ns6:Proceedings ;
-    ns8:issued "2015-12-08T00:00:00+00:00"^^xsd:dateTime ;
-    ns1:presentedAt <http://ceur-ws.org/Vol-1530/#event> ;
-    ns5:editor <http://ceur-ws.org/Vol-1530/#EugeneiSyriani>,
-        <http://ceur-ws.org/Vol-1530/#ManueliWimmer>,
-        <http://ceur-ws.org/Vol-1530/#MoussaiAmrani> .
-
-<http://ceur-ws.org/Vol-1530/#EugeneiSyriani> a ns2:Person ;
+<http://ceur-ws.org/Vol-1530/#EugeneiSyriani> a ns4:Person ;
+    ns2:affiliation "" ;
     ns3:sameAs <http://ceur-ws.org/persons/EugeneiSyriani> ;
-    ns2:name "Eugene Syriani" .
+    ns4:name "Eugene Syriani" .
 
-<http://ceur-ws.org/Vol-1530/#ManueliWimmer> a ns2:Person ;
+<http://ceur-ws.org/Vol-1530/#FrankiHilken> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/FrankiHilken> ;
+    ns4:made <http://ceur-ws.org/Vol-1530/#paper4> ;
+    ns4:name "Frank Hilken" .
+
+<http://ceur-ws.org/Vol-1530/#GabrieleiTaentzer> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/GabrieleiTaentzer> ;
+    ns4:made <http://ceur-ws.org/Vol-1530/#paper1> ;
+    ns4:name "Gabriele Taentzer" .
+
+<http://ceur-ws.org/Vol-1530/#GeorgiGrossmann> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/GeorgiGrossmann> ;
+    ns4:made <http://ceur-ws.org/Vol-1530/#paper5> ;
+    ns4:name "Georg Grossmann" .
+
+<http://ceur-ws.org/Vol-1530/#JamesiPower> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/JamesiPower> ;
+    ns4:made <http://ceur-ws.org/Vol-1530/#paper3> ;
+    ns4:name "James Power" .
+
+<http://ceur-ws.org/Vol-1530/#ManueliWimmer> a ns4:Person ;
+    ns2:affiliation "" ;
     ns3:sameAs <http://ceur-ws.org/persons/ManueliWimmer> ;
-    ns2:name "Manuel Wimmer" .
+    ns4:name "Manuel Wimmer" .
 
-<http://ceur-ws.org/Vol-1530/#MoussaiAmrani> a ns2:Person ;
+<http://ceur-ws.org/Vol-1530/#MarkusiStumptner> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/MarkusiStumptner> ;
+    ns4:made <http://ceur-ws.org/Vol-1530/#paper5> ;
+    ns4:name "Markus Stumptner" .
+
+<http://ceur-ws.org/Vol-1530/#MartiniGogolla> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/MartiniGogolla> ;
+    ns4:made <http://ceur-ws.org/Vol-1530/#paper4> ;
+    ns4:name "Martin Gogolla" .
+
+<http://ceur-ws.org/Vol-1530/#MoussaiAmrani> a ns4:Person ;
+    ns2:affiliation "" ;
     ns3:sameAs <http://ceur-ws.org/persons/MoussaiAmrani> ;
-    ns2:name "Moussa Amrani" .
+    ns4:name "Moussa Amrani" .
+
+<http://ceur-ws.org/Vol-1530/#MuzaffariIgamberdiev> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/MuzaffariIgamberdiev> ;
+    ns4:made <http://ceur-ws.org/Vol-1530/#paper5> ;
+    ns4:name "Muzaffar Igamberdiev" .
+
+<http://ceur-ws.org/Vol-1530/#RosemaryiMonahan> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/RosemaryiMonahan> ;
+    ns4:made <http://ceur-ws.org/Vol-1530/#paper3> ;
+    ns4:name "Rosemary Monahan" .
+
+<http://ceur-ws.org/Vol-1530/#ShekoufehiKolahdouziRahimi> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/ShekoufehiKolahdouziRahimi> ;
+    ns4:made <http://ceur-ws.org/Vol-1530/#paper6> ;
+    ns4:name "Shekoufeh Kolahdouz Rahimi" .
+
+<http://ceur-ws.org/Vol-1530/#ZhengiCheng> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/ZhengiCheng> ;
+    ns4:made <http://ceur-ws.org/Vol-1530/#paper3> ;
+    ns4:name "Zheng Cheng" .
 
 <http://ceur-ws.org/Vol-1530/#event> a ns6:WorkshopEvent ;
     ns6:hasLocation <http://dbpedia.org/resource/Italy> ;
-    ns6:hasPart <http://ceur-ws.org/Vol-1530/#part-ws> ;
+    ns6:hasPart <http://ceur-ws.org/Vol-1530/#part-VOLT> ;
     ns6:isSubEventOf <http://ceur-ws.org/Vol-1530/#conf> ;
-    ns4:beginsAtDatetime "2015-07-23T00:00:00+00:00"^^xsd:dateTime ;
-    ns4:endsAtDatetime "2015-07-23T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:license "http://creativecommons.org/publicdomain/zero/1.0/" ;
+    ns9:beginsAtDatetime "2015-07-23T00:00:00+00:00"^^xsd:dateTime ;
+    ns9:endsAtDatetime "2015-07-23T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:license "http://creativecommons.org/publicdomain/zero/1.0/" ;
     rdfs:seeAlso <http://ceur-ws.org/Vol-1325/#event> .
+
+<http://ceur-ws.org/Vol-1530/#KeviniLano> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/KeviniLano> ;
+    ns4:made <http://ceur-ws.org/Vol-1530/#paper2>,
+        <http://ceur-ws.org/Vol-1530/#paper6> ;
+    ns4:name "Kevin Lano" .
+
+<http://ceur-ws.org/Vol-1530/#SobhaniYassipouriTehrani> a ns4:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/SobhaniYassipouriTehrani> ;
+    ns4:made <http://ceur-ws.org/Vol-1530/#paper2>,
+        <http://ceur-ws.org/Vol-1530/#paper6> ;
+    ns4:name "Sobhan Yassipour Tehrani" .
+
+<http://ceur-ws.org/Vol-1530/#paper1> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1530/> ;
+    ns5:title "Analysis Techniques for Graph Transformation Systems" ;
+    ns1:endPage 1 ;
+    ns1:numPages 1 ;
+    ns1:startPage 1 ;
+    ns2:author <http://ceur-ws.org/Vol-1530/#GabrieleiTaentzer> .
+
+<http://ceur-ws.org/Vol-1530/#paper2> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1530/> ;
+    ns5:title "Temporal Logic Specification and Analysis for Model Transformations" ;
+    ns1:endPage 11 ;
+    ns1:numPages 10 ;
+    ns1:startPage 2 ;
+    ns2:author <http://ceur-ws.org/Vol-1530/#KeviniLano>,
+        <http://ceur-ws.org/Vol-1530/#SobhaniYassipouriTehrani> .
+
+<http://ceur-ws.org/Vol-1530/#paper4> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1530/> ;
+    ns5:title "UML and OCL Transformation Model Analysis: Checking Invariant Independence" ;
+    ns1:endPage 27 ;
+    ns1:numPages 8 ;
+    ns1:startPage 20 ;
+    ns2:author <http://ceur-ws.org/Vol-1530/#FrankiHilken>,
+        <http://ceur-ws.org/Vol-1530/#MartiniGogolla> .
+
+<http://ceur-ws.org/Vol-1530/#paper3> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1530/> ;
+    ns5:title "Verifying SimpleGT Transformations Using an Intermediate Verification Language" ;
+    ns1:endPage 19 ;
+    ns1:numPages 8 ;
+    ns1:startPage 12 ;
+    ns2:author <http://ceur-ws.org/Vol-1530/#JamesiPower>,
+        <http://ceur-ws.org/Vol-1530/#RosemaryiMonahan>,
+        <http://ceur-ws.org/Vol-1530/#ZhengiCheng> .
+
+<http://ceur-ws.org/Vol-1530/#paper5> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1530/> ;
+    ns5:title "Verification of the CD2RDBMS Transformation Case in Flora-2" ;
+    ns1:endPage 45 ;
+    ns1:numPages 18 ;
+    ns1:startPage 28 ;
+    ns2:author <http://ceur-ws.org/Vol-1530/#GeorgiGrossmann>,
+        <http://ceur-ws.org/Vol-1530/#MarkusiStumptner>,
+        <http://ceur-ws.org/Vol-1530/#MuzaffariIgamberdiev> .
+
+<http://ceur-ws.org/Vol-1530/#paper6> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1530/> ;
+    ns5:title "Model Transformation Semantic Analysis by Transformation" ;
+    ns1:endPage 53 ;
+    ns1:numPages 8 ;
+    ns1:startPage 46 ;
+    ns2:author <http://ceur-ws.org/Vol-1530/#KeviniLano>,
+        <http://ceur-ws.org/Vol-1530/#ShekoufehiKolahdouziRahimi>,
+        <http://ceur-ws.org/Vol-1530/#SobhaniYassipouriTehrani> .
+
+<http://ceur-ws.org/Vol-1530/> a ns6:Proceedings ;
+    ns6:hasPart <http://ceur-ws.org/Vol-1530/#paper1>,
+        <http://ceur-ws.org/Vol-1530/#paper2>,
+        <http://ceur-ws.org/Vol-1530/#paper3>,
+        <http://ceur-ws.org/Vol-1530/#paper4>,
+        <http://ceur-ws.org/Vol-1530/#paper5>,
+        <http://ceur-ws.org/Vol-1530/#paper6> ;
+    ns7:issued "2015-12-08T00:00:00+00:00"^^xsd:dateTime ;
+    ns1:presentedAt <http://ceur-ws.org/Vol-1530/#event> ;
+    ns2:editor <http://ceur-ws.org/Vol-1530/#EugeneiSyriani>,
+        <http://ceur-ws.org/Vol-1530/#ManueliWimmer>,
+        <http://ceur-ws.org/Vol-1530/#MoussaiAmrani> .
 

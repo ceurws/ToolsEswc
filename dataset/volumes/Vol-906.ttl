@@ -1,50 +1,368 @@
-@prefix ns1: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns1: <http://www.w3.org/2002/07/owl#> .
 @prefix ns2: <http://xmlns.com/foaf/0.1/> .
-@prefix ns3: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns4: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns5: <http://www.w3.org/2002/07/owl#> .
-@prefix ns6: <http://purl.org/dc/elements/1.1/> .
-@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns8: <http://purl.org/ontology/bibo/#> .
+@prefix ns3: <http://purl.org/ontology/bibo/#> .
+@prefix ns4: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns5: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns6: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns8: <http://purl.org/dc/elements/1.1/> .
+@prefix ns9: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-906/> a ns1:Proceedings ;
-    ns7:issued "2012-09-21T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:presentedAt <http://ceur-ws.org/Vol-906/#event> ;
-    ns4:editor <http://ceur-ws.org/Vol-906/#AdityaiKalyanpur>,
+<http://ceur-ws.org/Vol-906/#AdityaiKalyanpur> a ns2:Person ;
+    ns5:affiliation "" ;
+    ns1:sameAs <http://ceur-ws.org/persons/AdityaiKalyanpur> ;
+    ns2:name "Aditya Kalyanpur" .
+
+<http://ceur-ws.org/Vol-906/#AdrianaiS.iVivacqua> a ns2:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/AdrianaiS.iVivacqua> ;
+    ns2:made <http://ceur-ws.org/Vol-906/#paper5> ;
+    ns2:name "Adriana S. Vivacqua" .
+
+<http://ceur-ws.org/Vol-906/#AleksanderiPohl> a ns2:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/AleksanderiPohl> ;
+    ns2:made <http://ceur-ws.org/Vol-906/#paper2> ;
+    ns2:name "Aleksander Pohl" .
+
+<http://ceur-ws.org/Vol-906/#Andr%C3%A9iFreitas> a ns2:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/Andr%C3%A9iFreitas> ;
+    ns2:made <http://ceur-ws.org/Vol-906/#paper8> ;
+    ns2:name "André Freitas" .
+
+<http://ceur-ws.org/Vol-906/#Axel-CyrilleiNgongaiNgomo> a ns2:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/Axel-CyrilleiNgongaiNgomo> ;
+    ns2:made <http://ceur-ws.org/Vol-906/#paper9> ;
+    ns2:name "Axel-Cyrille Ngonga Ngomo" .
+
+<http://ceur-ws.org/Vol-906/#BernardoiPereiraiNunes> a ns2:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/BernardoiPereiraiNunes> ;
+    ns2:made <http://ceur-ws.org/Vol-906/#paper6> ;
+    ns2:name "Bernardo Pereira Nunes" .
+
+<http://ceur-ws.org/Vol-906/#BiancaiPereira> a ns2:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/BiancaiPereira> ;
+    ns2:made <http://ceur-ws.org/Vol-906/#paper5> ;
+    ns2:name "Bianca Pereira" .
+
+<http://ceur-ws.org/Vol-906/#ChantaliReynaud> a ns2:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/ChantaliReynaud> ;
+    ns2:made <http://ceur-ws.org/Vol-906/#paper10> ;
+    ns2:name "Chantal Reynaud" .
+
+<http://ceur-ws.org/Vol-906/#ChristianiHachenberg> a ns2:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/ChristianiHachenberg> ;
+    ns2:made <http://ceur-ws.org/Vol-906/#paper3> ;
+    ns2:name "Christian Hachenberg" .
+
+<http://ceur-ws.org/Vol-906/#DanieliHladky> a ns2:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/DanieliHladky> ;
+    ns2:made <http://ceur-ws.org/Vol-906/#paper1> ;
+    ns2:name "Daniel Hladky" .
+
+<http://ceur-ws.org/Vol-906/#DanieliSonntag> a ns2:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/DanieliSonntag> ;
+    ns2:made <http://ceur-ws.org/Vol-906/#paper10> ;
+    ns2:name "Daniel Sonntag" .
+
+<http://ceur-ws.org/Vol-906/#DaniloiS.iCarvalho> a ns2:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/DaniloiS.iCarvalho> ;
+    ns2:made <http://ceur-ws.org/Vol-906/#paper8> ;
+    ns2:name "Danilo S. Carvalho" .
+
+<http://ceur-ws.org/Vol-906/#DavideiTaibi> a ns2:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/DavideiTaibi> ;
+    ns2:made <http://ceur-ws.org/Vol-906/#paper6> ;
+    ns2:name "Davide Taibi" .
+
+<http://ceur-ws.org/Vol-906/#DavyiVaniDeursen> a ns2:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/DavyiVaniDeursen> ;
+    ns2:made <http://ceur-ws.org/Vol-906/#paper11> ;
+    ns2:name "Davy Van Deursen" .
+
+<http://ceur-ws.org/Vol-906/#EdwardiCurry> a ns2:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/EdwardiCurry> ;
+    ns2:made <http://ceur-ws.org/Vol-906/#paper8> ;
+    ns2:name "Edward Curry" .
+
+<http://ceur-ws.org/Vol-906/#EriciCharton> a ns2:Person ;
+    ns5:affiliation "" ;
+    ns1:sameAs <http://ceur-ws.org/persons/EriciCharton> ;
+    ns2:name "Eric Charton" .
+
+<http://ceur-ws.org/Vol-906/#ErikiMannens> a ns2:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/ErikiMannens> ;
+    ns2:made <http://ceur-ws.org/Vol-906/#paper11> ;
+    ns2:name "Erik Mannens" .
+
+<http://ceur-ws.org/Vol-906/#EvelieniD%27heer> a ns2:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/EvelieniD%27heer> ;
+    ns2:made <http://ceur-ws.org/Vol-906/#paper11> ;
+    ns2:name "Evelien D'heer" .
+
+<http://ceur-ws.org/Vol-906/#GianlucaiQuercini> a ns2:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/GianlucaiQuercini> ;
+    ns2:made <http://ceur-ws.org/Vol-906/#paper10> ;
+    ns2:name "Gianluca Quercini" .
+
+<http://ceur-ws.org/Vol-906/#GiuseppeiRizzo> a ns2:Person ;
+    ns5:affiliation "" ;
+    ns1:sameAs <http://ceur-ws.org/persons/GiuseppeiRizzo> ;
+    ns2:name "Giuseppe Rizzo" .
+
+<http://ceur-ws.org/Vol-906/#GrigoryiDrobyazko> a ns2:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/GrigoryiDrobyazko> ;
+    ns2:made <http://ceur-ws.org/Vol-906/#paper1> ;
+    ns2:name "Grigory Drobyazko" .
+
+<http://ceur-ws.org/Vol-906/#JocheniSetz> a ns2:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/JocheniSetz> ;
+    ns2:made <http://ceur-ws.org/Vol-906/#paper10> ;
+    ns2:name "Jochen Setz" .
+
+<http://ceur-ws.org/Vol-906/#MarcoiAntonioiCasanova> a ns2:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/MarcoiAntonioiCasanova> ;
+    ns2:made <http://ceur-ws.org/Vol-906/#paper6> ;
+    ns2:name "Marco Antonio Casanova" .
+
+<http://ceur-ws.org/Vol-906/#MichaeliKrauthammer> a ns2:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/MichaeliKrauthammer> ;
+    ns2:made <http://ceur-ws.org/Vol-906/#paper4> ;
+    ns2:name "Michael Krauthammer" .
+
+<http://ceur-ws.org/Vol-906/#PabloiMendes> a ns2:Person ;
+    ns5:affiliation "" ;
+    ns1:sameAs <http://ceur-ws.org/persons/PabloiMendes> ;
+    ns2:name "Pablo Mendes" .
+
+<http://ceur-ws.org/Vol-906/#PeteriExner> a ns2:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/PeteriExner> ;
+    ns2:made <http://ceur-ws.org/Vol-906/#paper7> ;
+    ns2:name "Peter Exner" .
+
+<http://ceur-ws.org/Vol-906/#PierreiNugues> a ns2:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/PierreiNugues> ;
+    ns2:made <http://ceur-ws.org/Vol-906/#paper7> ;
+    ns2:name "Pierre Nugues" .
+
+<http://ceur-ws.org/Vol-906/#RicardoiKawase> a ns2:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/RicardoiKawase> ;
+    ns2:made <http://ceur-ws.org/Vol-906/#paper6> ;
+    ns2:name "Ricardo Kawase" .
+
+<http://ceur-ws.org/Vol-906/#RikiVaniDeiWalle> a ns2:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/RikiVaniDeiWalle> ;
+    ns2:made <http://ceur-ws.org/Vol-906/#paper11> ;
+    ns2:name "Rik Van De Walle" .
+
+<http://ceur-ws.org/Vol-906/#S%C3%B6reniAuer> a ns2:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/S%C3%B6reniAuer> ;
+    ns2:made <http://ceur-ws.org/Vol-906/#paper9> ;
+    ns2:name "Sören Auer" .
+
+<http://ceur-ws.org/Vol-906/#SaeedehiShekarpour> a ns2:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/SaeedehiShekarpour> ;
+    ns2:made <http://ceur-ws.org/Vol-906/#paper9> ;
+    ns2:name "Saeedeh Shekarpour" .
+
+<http://ceur-ws.org/Vol-906/#SamiCoppens> a ns2:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/SamiCoppens> ;
+    ns2:made <http://ceur-ws.org/Vol-906/#paper11> ;
+    ns2:name "Sam Coppens" .
+
+<http://ceur-ws.org/Vol-906/#Se%C3%A1niO%27Rriain> a ns2:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/Se%C3%A1niO%27Rriain> ;
+    ns2:made <http://ceur-ws.org/Vol-906/#paper8> ;
+    ns2:name "Seán O'Rriain" .
+
+<http://ceur-ws.org/Vol-906/#SebastianiHellmann> a ns2:Person ;
+    ns5:affiliation "" ;
+    ns1:sameAs <http://ceur-ws.org/persons/SebastianiHellmann> ;
+    ns2:name "Sebastian Hellmann" .
+
+<http://ceur-ws.org/Vol-906/#StefaniDietze> a ns2:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/StefaniDietze> ;
+    ns2:made <http://ceur-ws.org/Vol-906/#paper6> ;
+    ns2:name "Stefan Dietze" .
+
+<http://ceur-ws.org/Vol-906/#SteveiPaulussen> a ns2:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/SteveiPaulussen> ;
+    ns2:made <http://ceur-ws.org/Vol-906/#paper11> ;
+    ns2:name "Steve Paulussen" .
+
+<http://ceur-ws.org/Vol-906/#ThomasiGottron> a ns2:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/ThomasiGottron> ;
+    ns2:made <http://ceur-ws.org/Vol-906/#paper3> ;
+    ns2:name "Thomas Gottron" .
+
+<http://ceur-ws.org/Vol-906/#TobiasiKuhn> a ns2:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/TobiasiKuhn> ;
+    ns2:made <http://ceur-ws.org/Vol-906/#paper4> ;
+    ns2:name "Tobias Kuhn" .
+
+<http://ceur-ws.org/Vol-906/#TomiDeiNies> a ns2:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/TomiDeiNies> ;
+    ns2:made <http://ceur-ws.org/Vol-906/#paper11> ;
+    ns2:name "Tom De Nies" .
+
+<http://ceur-ws.org/Vol-906/#VictoriKlintsov> a ns2:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/VictoriKlintsov> ;
+    ns2:made <http://ceur-ws.org/Vol-906/#paper1> ;
+    ns2:name "Victor Klintsov" .
+
+<http://ceur-ws.org/Vol-906/#WolfgangiNejdl> a ns2:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/WolfgangiNejdl> ;
+    ns2:made <http://ceur-ws.org/Vol-906/#paper6> ;
+    ns2:name "Wolfgang Nejdl" .
+
+<http://ceur-ws.org/Vol-906/#event> a ns6:WorkshopEvent ;
+    ns6:hasLocation <http://dbpedia.org/resource/United_States> ;
+    ns6:hasPart <http://ceur-ws.org/Vol-906/#part-WoLE> ;
+    ns6:isSubEventOf <http://ceur-ws.org/Vol-906/#conf> ;
+    ns7:beginsAtDatetime "2012-11-11T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:endsAtDatetime "2012-11-11T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:license "http://choosealicense.com/licenses/no-license/" .
+
+<http://ceur-ws.org/Vol-906/#Jo%C3%A3oiC.iP.idaiSilva> a ns2:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/Jo%C3%A3oiC.iP.idaiSilva> ;
+    ns2:made <http://ceur-ws.org/Vol-906/#paper5>,
+        <http://ceur-ws.org/Vol-906/#paper8> ;
+    ns2:name "João C. P. da Silva" .
+
+<http://ceur-ws.org/Vol-906/#paper2> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-906/> ;
+    ns4:title "Classifying the Wikipedia Articles into the OpenCyc Taxonomy" ;
+    ns3:endPage 16 ;
+    ns3:numPages 12 ;
+    ns3:startPage 5 ;
+    ns5:author <http://ceur-ws.org/Vol-906/#AleksanderiPohl> .
+
+<http://ceur-ws.org/Vol-906/#paper3> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-906/> ;
+    ns4:title "Finding Good URLs: Aligning Entities in Knowledge Bases with Public Web Document Representations" ;
+    ns3:endPage 28 ;
+    ns3:numPages 12 ;
+    ns3:startPage 17 ;
+    ns5:author <http://ceur-ws.org/Vol-906/#ChristianiHachenberg>,
+        <http://ceur-ws.org/Vol-906/#ThomasiGottron> .
+
+<http://ceur-ws.org/Vol-906/#paper4> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-906/> ;
+    ns4:title "Underspecified Scientific Claims in Nanopublications" ;
+    ns3:endPage 32 ;
+    ns3:numPages 4 ;
+    ns3:startPage 29 ;
+    ns5:author <http://ceur-ws.org/Vol-906/#MichaeliKrauthammer>,
+        <http://ceur-ws.org/Vol-906/#TobiasiKuhn> .
+
+<http://ceur-ws.org/Vol-906/#paper7> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-906/> ;
+    ns4:title "Entity Extraction: From Unstructured Text to DBpedia RDF triples" ;
+    ns3:endPage 69 ;
+    ns3:numPages 12 ;
+    ns3:startPage 58 ;
+    ns5:author <http://ceur-ws.org/Vol-906/#PeteriExner>,
+        <http://ceur-ws.org/Vol-906/#PierreiNugues> .
+
+<http://ceur-ws.org/Vol-906/#paper1> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-906/> ;
+    ns4:title "Enabling Russian National Knowledge with Linked Open Data (LOD Russia)" ;
+    ns3:endPage 4 ;
+    ns3:numPages 4 ;
+    ns3:startPage 1 ;
+    ns5:author <http://ceur-ws.org/Vol-906/#DanieliHladky>,
+        <http://ceur-ws.org/Vol-906/#GrigoryiDrobyazko>,
+        <http://ceur-ws.org/Vol-906/#VictoriKlintsov> .
+
+<http://ceur-ws.org/Vol-906/#paper5> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-906/> ;
+    ns4:title "Discovering Names in Linked Data Datasets" ;
+    ns3:endPage 44 ;
+    ns3:numPages 12 ;
+    ns3:startPage 33 ;
+    ns5:author <http://ceur-ws.org/Vol-906/#AdrianaiS.iVivacqua>,
+        <http://ceur-ws.org/Vol-906/#BiancaiPereira>,
+        <http://ceur-ws.org/Vol-906/#Jo%C3%A3oiC.iP.idaiSilva> .
+
+<http://ceur-ws.org/Vol-906/#paper9> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-906/> ;
+    ns4:title "Query Segmentation and Resource Disambiguation Leveraging Background Knowledge" ;
+    ns3:endPage 93 ;
+    ns3:numPages 12 ;
+    ns3:startPage 82 ;
+    ns5:author <http://ceur-ws.org/Vol-906/#Axel-CyrilleiNgongaiNgomo>,
+        <http://ceur-ws.org/Vol-906/#S%C3%B6reniAuer>,
+        <http://ceur-ws.org/Vol-906/#SaeedehiShekarpour> .
+
+<http://ceur-ws.org/Vol-906/#paper10> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-906/> ;
+    ns4:title "Facetted Browsing on Extracted Fusion Tables Data for Digital Cities" ;
+    ns3:endPage 105 ;
+    ns3:numPages 12 ;
+    ns3:startPage 94 ;
+    ns5:author <http://ceur-ws.org/Vol-906/#ChantaliReynaud>,
+        <http://ceur-ws.org/Vol-906/#DanieliSonntag>,
+        <http://ceur-ws.org/Vol-906/#GianlucaiQuercini>,
+        <http://ceur-ws.org/Vol-906/#JocheniSetz> .
+
+<http://ceur-ws.org/Vol-906/#paper8> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-906/> ;
+    ns4:title "A Semantic Best-Effort Approach for Extracting Structured Discourse Graphs from Wikipedia" ;
+    ns3:endPage 81 ;
+    ns3:numPages 12 ;
+    ns3:startPage 70 ;
+    ns5:author <http://ceur-ws.org/Vol-906/#Andr%C3%A9iFreitas>,
+        <http://ceur-ws.org/Vol-906/#DaniloiS.iCarvalho>,
+        <http://ceur-ws.org/Vol-906/#EdwardiCurry>,
+        <http://ceur-ws.org/Vol-906/#Jo%C3%A3oiC.iP.idaiSilva>,
+        <http://ceur-ws.org/Vol-906/#Se%C3%A1niO%27Rriain> .
+
+<http://ceur-ws.org/Vol-906/#paper6> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-906/> ;
+    ns4:title "Can Entities be Friends?" ;
+    ns3:endPage 57 ;
+    ns3:numPages 13 ;
+    ns3:startPage 45 ;
+    ns5:author <http://ceur-ws.org/Vol-906/#BernardoiPereiraiNunes>,
+        <http://ceur-ws.org/Vol-906/#DavideiTaibi>,
+        <http://ceur-ws.org/Vol-906/#MarcoiAntonioiCasanova>,
+        <http://ceur-ws.org/Vol-906/#RicardoiKawase>,
+        <http://ceur-ws.org/Vol-906/#StefaniDietze>,
+        <http://ceur-ws.org/Vol-906/#WolfgangiNejdl> .
+
+<http://ceur-ws.org/Vol-906/#paper11> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-906/> ;
+    ns4:title "Bringing Newsworthiness into the 21st Century" ;
+    ns3:endPage 117 ;
+    ns3:numPages 12 ;
+    ns3:startPage 106 ;
+    ns5:author <http://ceur-ws.org/Vol-906/#DavyiVaniDeursen>,
+        <http://ceur-ws.org/Vol-906/#ErikiMannens>,
+        <http://ceur-ws.org/Vol-906/#EvelieniD%27heer>,
+        <http://ceur-ws.org/Vol-906/#RikiVaniDeiWalle>,
+        <http://ceur-ws.org/Vol-906/#SamiCoppens>,
+        <http://ceur-ws.org/Vol-906/#SteveiPaulussen>,
+        <http://ceur-ws.org/Vol-906/#TomiDeiNies> .
+
+<http://ceur-ws.org/Vol-906/> a ns6:Proceedings ;
+    ns6:hasPart <http://ceur-ws.org/Vol-906/#paper1>,
+        <http://ceur-ws.org/Vol-906/#paper10>,
+        <http://ceur-ws.org/Vol-906/#paper11>,
+        <http://ceur-ws.org/Vol-906/#paper2>,
+        <http://ceur-ws.org/Vol-906/#paper3>,
+        <http://ceur-ws.org/Vol-906/#paper4>,
+        <http://ceur-ws.org/Vol-906/#paper5>,
+        <http://ceur-ws.org/Vol-906/#paper6>,
+        <http://ceur-ws.org/Vol-906/#paper7>,
+        <http://ceur-ws.org/Vol-906/#paper8>,
+        <http://ceur-ws.org/Vol-906/#paper9> ;
+    ns9:issued "2012-09-21T00:00:00+00:00"^^xsd:dateTime ;
+    ns3:presentedAt <http://ceur-ws.org/Vol-906/#event> ;
+    ns5:editor <http://ceur-ws.org/Vol-906/#AdityaiKalyanpur>,
         <http://ceur-ws.org/Vol-906/#EriciCharton>,
         <http://ceur-ws.org/Vol-906/#GiuseppeiRizzo>,
         <http://ceur-ws.org/Vol-906/#PabloiMendes>,
         <http://ceur-ws.org/Vol-906/#SebastianiHellmann> .
-
-<http://ceur-ws.org/Vol-906/#AdityaiKalyanpur> a ns2:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/AdityaiKalyanpur> ;
-    ns2:name "Aditya Kalyanpur" .
-
-<http://ceur-ws.org/Vol-906/#EriciCharton> a ns2:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/EriciCharton> ;
-    ns2:name "Eric Charton" .
-
-<http://ceur-ws.org/Vol-906/#GiuseppeiRizzo> a ns2:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/GiuseppeiRizzo> ;
-    ns2:name "Giuseppe Rizzo" .
-
-<http://ceur-ws.org/Vol-906/#PabloiMendes> a ns2:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/PabloiMendes> ;
-    ns2:name "Pablo Mendes" .
-
-<http://ceur-ws.org/Vol-906/#SebastianiHellmann> a ns2:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/SebastianiHellmann> ;
-    ns2:name "Sebastian Hellmann" .
-
-<http://ceur-ws.org/Vol-906/#event> a ns1:WorkshopEvent ;
-    ns1:hasLocation <http://dbpedia.org/resource/United_States> ;
-    ns1:hasPart <http://ceur-ws.org/Vol-906/#part-CEUR-WS> ;
-    ns1:isSubEventOf <http://ceur-ws.org/Vol-906/#conf> ;
-    ns3:beginsAtDatetime "2012-11-11T00:00:00+00:00"^^xsd:dateTime ;
-    ns3:endsAtDatetime "2012-11-11T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:license "http://choosealicense.com/licenses/no-license/" .
 

@@ -1,50 +1,156 @@
-@prefix ns1: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns2: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns3: <http://xmlns.com/foaf/0.1/> .
-@prefix ns4: <http://purl.org/ontology/bibo/#> .
-@prefix ns5: <http://www.w3.org/2002/07/owl#> .
-@prefix ns6: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns7: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns8: <http://purl.org/dc/elements/1.1/> .
+@prefix ns1: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns2: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns3: <http://purl.org/ontology/bibo/#> .
+@prefix ns4: <http://xmlns.com/foaf/0.1/> .
+@prefix ns5: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns6: <http://www.w3.org/2002/07/owl#> .
+@prefix ns7: <http://purl.org/dc/elements/1.1/> .
+@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns9: <http://purl.org/NET/c4dm/timeline.owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1589/> a ns2:Proceedings ;
-    ns6:issued "2016-05-17T00:00:00+00:00"^^xsd:dateTime ;
-    ns4:presentedAt <http://ceur-ws.org/Vol-1589/#event> ;
-    ns7:editor <http://ceur-ws.org/Vol-1589/#AndreaiTagarelli>,
+<http://ceur-ws.org/Vol-1589/#AndreaiTagarelli> a ns4:Person ;
+    ns2:affiliation "" ;
+    ns6:sameAs <http://ceur-ws.org/persons/AndreaiTagarelli> ;
+    ns4:name "Andrea Tagarelli" .
+
+<http://ceur-ws.org/Vol-1589/#AngeloiFerrando> a ns4:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/AngeloiFerrando> ;
+    ns4:made <http://ceur-ws.org/Vol-1589/#MultiLingMine1> ;
+    ns4:name "Angelo Ferrando" .
+
+<http://ceur-ws.org/Vol-1589/#DarkoiBrodic> a ns4:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/DarkoiBrodic> ;
+    ns4:made <http://ceur-ws.org/Vol-1589/#MultiLingMine5> ;
+    ns4:name "Darko Brodic" .
+
+<http://ceur-ws.org/Vol-1589/#DinoiIenco> a ns4:Person ;
+    ns2:affiliation "" ;
+    ns6:sameAs <http://ceur-ws.org/persons/DinoiIenco> ;
+    ns4:name "Dino Ienco" .
+
+<http://ceur-ws.org/Vol-1589/#HosseiniNasriEsfahani> a ns4:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/HosseiniNasriEsfahani> ;
+    ns4:made <http://ceur-ws.org/Vol-1589/#MultiLingMine3> ;
+    ns4:name "Hossein Nasr Esfahani" .
+
+<http://ceur-ws.org/Vol-1589/#IriaidaiCunha> a ns4:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/IriaidaiCunha> ;
+    ns4:made <http://ceur-ws.org/Vol-1589/#MultiLingMine4> ;
+    ns4:name "Iria da Cunha" .
+
+<http://ceur-ws.org/Vol-1589/#MarisaiLlorens-Salvador> a ns4:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/MarisaiLlorens-Salvador> ;
+    ns4:made <http://ceur-ws.org/Vol-1589/#MultiLingMine2> ;
+    ns4:name "Marisa Llorens-Salvador" .
+
+<http://ceur-ws.org/Vol-1589/#MathieuiRoche> a ns4:Person ;
+    ns2:affiliation "" ;
+    ns6:sameAs <http://ceur-ws.org/persons/MathieuiRoche> ;
+    ns4:name "Mathieu Roche" .
+
+<http://ceur-ws.org/Vol-1589/#PaoloiRosso> a ns4:Person ;
+    ns2:affiliation "" ;
+    ns6:sameAs <http://ceur-ws.org/persons/PaoloiRosso> ;
+    ns4:name "Paolo Rosso" .
+
+<http://ceur-ws.org/Vol-1589/#SalvatoreiRomeo> a ns4:Person ;
+    ns2:affiliation "" ;
+    ns6:sameAs <http://ceur-ws.org/persons/SalvatoreiRomeo> ;
+    ns4:name "Salvatore Romeo" .
+
+<http://ceur-ws.org/Vol-1589/#SomnathiBanerjee> a ns4:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/SomnathiBanerjee> ;
+    ns4:made <http://ceur-ws.org/Vol-1589/#MultiLingMine6> ;
+    ns4:name "Somnath Banerjee" .
+
+<http://ceur-ws.org/Vol-1589/#event> a ns1:WorkshopEvent ;
+    ns1:hasLocation <http://dbpedia.org/resource/Italy> ;
+    ns1:hasPart <http://ceur-ws.org/Vol-1589/#part-ws> ;
+    ns1:isSubEventOf <http://ceur-ws.org/Vol-1589/#conf> ;
+    ns9:beginsAtDatetime "2016-03-20T00:00:00+00:00"^^xsd:dateTime ;
+    ns9:endsAtDatetime "2016-03-20T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:license "http://creativecommons.org/publicdomain/zero/1.0/" .
+
+<http://ceur-ws.org/Vol-1589/#MultiLingMine1> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1589/> ;
+    ns5:title "Identification of Disease Symptoms in Multilingual Sentences: An Ontology-Driven Approach" ;
+    ns3:endPage 15 ;
+    ns3:numPages 10 ;
+    ns3:section <http://ceur-ws.org/Vol-1589/#Session1> ;
+    ns3:startPage 6 ;
+    ns2:author <http://ceur-ws.org/Vol-1589/#AngeloiFerrando> .
+
+<http://ceur-ws.org/Vol-1589/#MultiLingMine2> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1589/> ;
+    ns5:title "Deep Level Lexical Features for Cross-lingual Authorship Attribution" ;
+    ns3:endPage 25 ;
+    ns3:numPages 10 ;
+    ns3:section <http://ceur-ws.org/Vol-1589/#Session1> ;
+    ns3:startPage 16 ;
+    ns2:author <http://ceur-ws.org/Vol-1589/#MarisaiLlorens-Salvador> .
+
+<http://ceur-ws.org/Vol-1589/#MultiLingMine3> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1589/> ;
+    ns5:title "Profile-based Translation in Multilingual Expertise Retrieval" ;
+    ns3:endPage 35 ;
+    ns3:numPages 10 ;
+    ns3:section <http://ceur-ws.org/Vol-1589/#Session2> ;
+    ns3:startPage 26 ;
+    ns2:author <http://ceur-ws.org/Vol-1589/#HosseiniNasriEsfahani> .
+
+<http://ceur-ws.org/Vol-1589/#MultiLingMine4> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1589/> ;
+    ns5:title "Extending Automatic Discourse Segmentation for Texts in Spanish to Catalan" ;
+    ns3:endPage 45 ;
+    ns3:numPages 10 ;
+    ns3:section <http://ceur-ws.org/Vol-1589/#Session2> ;
+    ns3:startPage 36 ;
+    ns2:author <http://ceur-ws.org/Vol-1589/#IriaidaiCunha> .
+
+<http://ceur-ws.org/Vol-1589/#MultiLingMine5> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1589/> ;
+    ns5:title "A New Image Analysis Framework for Latin and Italian Language Discrimination" ;
+    ns3:endPage 55 ;
+    ns3:numPages 10 ;
+    ns3:section <http://ceur-ws.org/Vol-1589/#Session2> ;
+    ns3:startPage 46 ;
+    ns2:author <http://ceur-ws.org/Vol-1589/#DarkoiBrodic> .
+
+<http://ceur-ws.org/Vol-1589/#MultiLingMine6> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1589/> ;
+    ns5:title "The First Cross-Script Code-Mixed Question Answering Corpus" ;
+    ns3:endPage 65 ;
+    ns3:numPages 10 ;
+    ns3:section <http://ceur-ws.org/Vol-1589/#Session2> ;
+    ns3:startPage 56 ;
+    ns2:author <http://ceur-ws.org/Vol-1589/#SomnathiBanerjee> .
+
+<http://ceur-ws.org/Vol-1589/#Session1> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-1589/> ;
+    ns5:title "Session 1" .
+
+<http://ceur-ws.org/Vol-1589/#Session2> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-1589/> ;
+    ns5:title "Session 2" .
+
+<http://ceur-ws.org/Vol-1589/> a ns1:Proceedings ;
+    ns1:hasPart <http://ceur-ws.org/Vol-1589/#MultiLingMine1>,
+        <http://ceur-ws.org/Vol-1589/#MultiLingMine2>,
+        <http://ceur-ws.org/Vol-1589/#MultiLingMine3>,
+        <http://ceur-ws.org/Vol-1589/#MultiLingMine4>,
+        <http://ceur-ws.org/Vol-1589/#MultiLingMine5>,
+        <http://ceur-ws.org/Vol-1589/#MultiLingMine6> ;
+    ns1:hasSession <http://ceur-ws.org/Vol-1589/#Session1>,
+        <http://ceur-ws.org/Vol-1589/#Session2> ;
+    ns8:issued "2016-05-17T00:00:00+00:00"^^xsd:dateTime ;
+    ns3:presentedAt <http://ceur-ws.org/Vol-1589/#event> ;
+    ns2:editor <http://ceur-ws.org/Vol-1589/#AndreaiTagarelli>,
         <http://ceur-ws.org/Vol-1589/#DinoiIenco>,
         <http://ceur-ws.org/Vol-1589/#MathieuiRoche>,
         <http://ceur-ws.org/Vol-1589/#PaoloiRosso>,
         <http://ceur-ws.org/Vol-1589/#SalvatoreiRomeo> .
-
-<http://ceur-ws.org/Vol-1589/#AndreaiTagarelli> a ns3:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/AndreaiTagarelli> ;
-    ns3:name "Andrea Tagarelli" .
-
-<http://ceur-ws.org/Vol-1589/#DinoiIenco> a ns3:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/DinoiIenco> ;
-    ns3:name "Dino Ienco" .
-
-<http://ceur-ws.org/Vol-1589/#MathieuiRoche> a ns3:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/MathieuiRoche> ;
-    ns3:name "Mathieu Roche" .
-
-<http://ceur-ws.org/Vol-1589/#PaoloiRosso> a ns3:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/PaoloiRosso> ;
-    ns3:name "Paolo Rosso" .
-
-<http://ceur-ws.org/Vol-1589/#SalvatoreiRomeo> a ns3:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/SalvatoreiRomeo> ;
-    ns3:name "Salvatore Romeo" .
-
-<http://ceur-ws.org/Vol-1589/#event> a ns2:WorkshopEvent ;
-    ns2:hasLocation <http://dbpedia.org/resource/Italy> ;
-    ns2:hasPart <http://ceur-ws.org/Vol-1589/#part-ws> ;
-    ns2:isSubEventOf <http://ceur-ws.org/Vol-1589/#conf> ;
-    ns1:beginsAtDatetime "2016-03-20T00:00:00+00:00"^^xsd:dateTime ;
-    ns1:endsAtDatetime "2016-03-20T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:license "http://creativecommons.org/publicdomain/zero/1.0/" .
 

@@ -1,47 +1,183 @@
-@prefix ns1: <http://xmlns.com/foaf/0.1/> .
+@prefix ns1: <http://purl.org/ontology/bibo/#> .
 @prefix ns2: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns3: <http://purl.org/dc/elements/1.1/> .
-@prefix ns4: <http://www.w3.org/2002/07/owl#> .
-@prefix ns5: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns6: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns7: <http://purl.org/ontology/bibo/#> .
+@prefix ns3: <http://xmlns.com/foaf/0.1/> .
+@prefix ns4: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns5: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns6: <http://www.w3.org/2002/07/owl#> .
+@prefix ns7: <http://purl.org/dc/elements/1.1/> .
 @prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns9: <http://purl.org/NET/c4dm/timeline.owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1444/> a ns5:Proceedings ;
+<http://ceur-ws.org/Vol-1444/#BoraiIiKumova> a ns3:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/BoraiIiKumova> ;
+    ns3:made <http://ceur-ws.org/Vol-1444/#paper5> ;
+    ns3:name "Bora I Kumova" .
+
+<http://ceur-ws.org/Vol-1444/#ChristianiEichhorn> a ns3:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/ChristianiEichhorn> ;
+    ns3:made <http://ceur-ws.org/Vol-1444/#paper2> ;
+    ns3:name "Christian Eichhorn" .
+
+<http://ceur-ws.org/Vol-1444/#ChristophiBeierle> a ns3:Person ;
+    ns2:affiliation "" ;
+    ns6:sameAs <http://ceur-ws.org/persons/ChristophiBeierle> ;
+    ns3:name "Christoph Beierle" .
+
+<http://ceur-ws.org/Vol-1444/#DaaniApeldoorn> a ns3:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/DaaniApeldoorn> ;
+    ns3:made <http://ceur-ws.org/Vol-1444/#paper1> ;
+    ns3:name "Daan Apeldoorn" .
+
+<http://ceur-ws.org/Vol-1444/#GerhardiSchurz> a ns3:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/GerhardiSchurz> ;
+    ns3:made <http://ceur-ws.org/Vol-1444/#paper2> ;
+    ns3:name "Gerhard Schurz" .
+
+<http://ceur-ws.org/Vol-1444/#HaythemiO.iIsmail> a ns3:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/HaythemiO.iIsmail> ;
+    ns3:made <http://ceur-ws.org/Vol-1444/#paper3> ;
+    ns3:name "Haythem O. Ismail" .
+
+<http://ceur-ws.org/Vol-1444/#HerbertiJaeger> a ns3:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/HerbertiJaeger> ;
+    ns3:made <http://ceur-ws.org/Vol-1444/#intro1> ;
+    ns3:name "Herbert Jaeger" .
+
+<http://ceur-ws.org/Vol-1444/#MarcoiRagni> a ns3:Person ;
+    ns2:affiliation "" ;
+    ns6:sameAs <http://ceur-ws.org/persons/MarcoiRagni> ;
+    ns3:name "Marco Ragni" .
+
+<http://ceur-ws.org/Vol-1444/#MassimilianoiGiacomin> a ns3:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/MassimilianoiGiacomin> ;
+    ns3:made <http://ceur-ws.org/Vol-1444/#paper4> ;
+    ns3:name "Massimiliano Giacomin" .
+
+<http://ceur-ws.org/Vol-1444/#NourhaniEhab> a ns3:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/NourhaniEhab> ;
+    ns3:made <http://ceur-ws.org/Vol-1444/#paper3> ;
+    ns3:name "Nourhan Ehab" .
+
+<http://ceur-ws.org/Vol-1444/#PauliThorn> a ns3:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/PauliThorn> ;
+    ns3:made <http://ceur-ws.org/Vol-1444/#paper2> ;
+    ns3:name "Paul Thorn" .
+
+<http://ceur-ws.org/Vol-1444/#StefaniWoltran> a ns3:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/StefaniWoltran> ;
+    ns3:made <http://ceur-ws.org/Vol-1444/#paper4> ;
+    ns3:name "Stefan Woltran" .
+
+<http://ceur-ws.org/Vol-1444/#ThomasiLinsbichler> a ns3:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/ThomasiLinsbichler> ;
+    ns3:made <http://ceur-ws.org/Vol-1444/#paper4> ;
+    ns3:name "Thomas Linsbichler" .
+
+<http://ceur-ws.org/Vol-1444/#event> a ns4:WorkshopEvent ;
+    ns4:hasLocation <http://dbpedia.org/resource/Germany> ;
+    ns4:hasPart <http://ceur-ws.org/Vol-1444/#part-DKB-KIK> ;
+    ns4:isSubEventOf <http://ceur-ws.org/Vol-1444/#conf> ;
+    ns9:beginsAtDatetime "2015-09-22T00:00:00+00:00"^^xsd:dateTime ;
+    ns9:endsAtDatetime "2015-09-22T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:license "http://creativecommons.org/publicdomain/zero/1.0/" ;
+    rdfs:seeAlso <http://ceur-ws.org/Vol-1055/#event> .
+
+<http://ceur-ws.org/Vol-1444/#metadataiincl.ibibliographicidataipublishediunder> a ns3:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/metadataiincl.ibibliographicidataipublishediunder> ;
+    ns3:made <http://ceur-ws.org/Vol-1444/#paperX1> ;
+    ns3:name "metadata incl. bibliographic data published under" .
+
+<http://ceur-ws.org/Vol-1444/#2015-09-09%3AisubmittedibyiFriederiStolzenburg> a ns3:Person ;
+    ns2:affiliation "" ;
+    ns6:sameAs <http://ceur-ws.org/persons/2015-09-09%3AisubmittedibyiFriederiStolzenburg> ;
+    ns3:made <http://ceur-ws.org/Vol-1444/#paperX1> ;
+    ns3:name "2015-09-09: submitted by Frieder Stolzenburg" .
+
+<http://ceur-ws.org/Vol-1444/#GabrieleiKern-Isberner> a ns3:Person ;
+    ns2:affiliation "" ;
+    ns6:sameAs <http://ceur-ws.org/persons/GabrieleiKern-Isberner> ;
+    ns3:made <http://ceur-ws.org/Vol-1444/#paper2> ;
+    ns3:name "Gabriele Kern-Isberner" .
+
+<http://ceur-ws.org/Vol-1444/#intro1> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1444/> ;
+    ns5:title "Shaping the Dynamics of Recurrent Neural Networks by Conceptors" ;
+    ns1:endPage 2 ;
+    ns1:numPages 2 ;
+    ns1:startPage 1 ;
+    ns2:author <http://ceur-ws.org/Vol-1444/#HerbertiJaeger> .
+
+<http://ceur-ws.org/Vol-1444/#paper1> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1444/> ;
+    ns5:title "Learning Rules for Cooperative Solving of Spatio-Temporal Problems" ;
+    ns1:endPage 3 ;
+    ns1:numPages 1 ;
+    ns1:startPage 3 ;
+    ns2:author <http://ceur-ws.org/Vol-1444/#DaaniApeldoorn> .
+
+<http://ceur-ws.org/Vol-1444/#paper5> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1444/> ;
+    ns5:title "Approximate Reasoning with Fuzzy-Syllogistic Systems" ;
+    ns1:endPage 54 ;
+    ns1:numPages 12 ;
+    ns1:startPage 43 ;
+    ns2:author <http://ceur-ws.org/Vol-1444/#BoraiIiKumova> .
+
+<http://ceur-ws.org/Vol-1444/#paper3> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1444/> ;
+    ns5:title "Algebraic Semantics for Graded Propositions" ;
+    ns1:endPage 28 ;
+    ns1:numPages 13 ;
+    ns1:startPage 16 ;
+    ns2:author <http://ceur-ws.org/Vol-1444/#HaythemiO.iIsmail>,
+        <http://ceur-ws.org/Vol-1444/#NourhaniEhab> .
+
+<http://ceur-ws.org/Vol-1444/#paperX1> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1444/> ;
+    ns5:title "The whole proceedings can also be downloaded as a" ;
+    ns1:endPage 62 ;
+    ns1:numPages 8 ;
+    ns1:startPage 55 ;
+    ns2:author <http://ceur-ws.org/Vol-1444/#2015-09-09%3AisubmittedibyiFriederiStolzenburg>,
+        <http://ceur-ws.org/Vol-1444/#metadataiincl.ibibliographicidataipublishediunder> .
+
+<http://ceur-ws.org/Vol-1444/#paper4> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1444/> ;
+    ns5:title "On the Functional Completeness of Argumentation Semantics" ;
+    ns1:endPage 42 ;
+    ns1:numPages 14 ;
+    ns1:startPage 29 ;
+    ns2:author <http://ceur-ws.org/Vol-1444/#MassimilianoiGiacomin>,
+        <http://ceur-ws.org/Vol-1444/#StefaniWoltran>,
+        <http://ceur-ws.org/Vol-1444/#ThomasiLinsbichler> .
+
+<http://ceur-ws.org/Vol-1444/#paper2> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1444/> ;
+    ns5:title "Qualitative Probabilistic Inference with Default Inheritance" ;
+    ns1:endPage 15 ;
+    ns1:numPages 11 ;
+    ns1:startPage 5 ;
+    ns2:author <http://ceur-ws.org/Vol-1444/#ChristianiEichhorn>,
+        <http://ceur-ws.org/Vol-1444/#GabrieleiKern-Isberner>,
+        <http://ceur-ws.org/Vol-1444/#GerhardiSchurz>,
+        <http://ceur-ws.org/Vol-1444/#PauliThorn> .
+
+<http://ceur-ws.org/Vol-1444/> a ns4:Proceedings ;
+    ns4:hasPart <http://ceur-ws.org/Vol-1444/#intro1>,
+        <http://ceur-ws.org/Vol-1444/#paper1>,
+        <http://ceur-ws.org/Vol-1444/#paper2>,
+        <http://ceur-ws.org/Vol-1444/#paper3>,
+        <http://ceur-ws.org/Vol-1444/#paper4>,
+        <http://ceur-ws.org/Vol-1444/#paper5>,
+        <http://ceur-ws.org/Vol-1444/#paperX1> ;
     ns8:issued "2015-09-09T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:presentedAt <http://ceur-ws.org/Vol-1444/#event> ;
-    ns2:editor <http://ceur-ws.org/Vol-1444/#ChristophiBeierle>,
-        <http://ceur-ws.org/Vol-1444/#FriederiStolzenburg>,
+    ns1:presentedAt <http://ceur-ws.org/Vol-1444/#event> ;
+    ns2:editor <http://ceur-ws.org/Vol-1444/#2015-09-09%3AisubmittedibyiFriederiStolzenburg>,
+        <http://ceur-ws.org/Vol-1444/#ChristophiBeierle>,
         <http://ceur-ws.org/Vol-1444/#GabrieleiKern-Isberner>,
         <http://ceur-ws.org/Vol-1444/#MarcoiRagni> .
-
-<http://ceur-ws.org/Vol-1444/#ChristophiBeierle> a ns1:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/ChristophiBeierle> ;
-    ns1:name "Christoph Beierle" .
-
-<http://ceur-ws.org/Vol-1444/#FriederiStolzenburg> a ns1:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/FriederiStolzenburg> ;
-    ns1:name "Frieder Stolzenburg" .
-
-<http://ceur-ws.org/Vol-1444/#GabrieleiKern-Isberner> a ns1:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/GabrieleiKern-Isberner> ;
-    ns1:name "Gabriele Kern-Isberner" .
-
-<http://ceur-ws.org/Vol-1444/#MarcoiRagni> a ns1:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/MarcoiRagni> ;
-    ns1:name "Marco Ragni" .
-
-<http://ceur-ws.org/Vol-1444/#event> a ns5:WorkshopEvent ;
-    ns5:hasLocation <http://dbpedia.org/resource/Germany> ;
-    ns5:hasPart <http://ceur-ws.org/Vol-1444/#part-DKB>,
-        <http://ceur-ws.org/Vol-1444/#part-KIK> ;
-    ns5:isSubEventOf <http://ceur-ws.org/Vol-1444/#conf> ;
-    ns6:beginsAtDatetime "2015-09-22T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:endsAtDatetime "2015-09-22T00:00:00+00:00"^^xsd:dateTime ;
-    ns3:license "http://creativecommons.org/publicdomain/zero/1.0/" ;
-    rdfs:seeAlso <http://ceur-ws.org/Vol-1055/#event> .
 

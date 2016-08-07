@@ -1,40 +1,204 @@
-@prefix ns1: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns2: <http://purl.org/ontology/bibo/#> .
-@prefix ns3: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns4: <http://purl.org/dc/elements/1.1/> .
-@prefix ns5: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns1: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns2: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns3: <http://purl.org/ontology/bibo/#> .
+@prefix ns4: <http://xmlns.com/foaf/0.1/> .
+@prefix ns5: <http://purl.org/dc/elements/1.1/#> .
 @prefix ns6: <http://www.w3.org/2002/07/owl#> .
-@prefix ns7: <http://xmlns.com/foaf/0.1/> .
-@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns8: <http://purl.org/dc/elements/1.1/> .
+@prefix ns9: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1580/> a ns3:Proceedings ;
-    ns8:issued "2016-04-25T00:00:00+00:00"^^xsd:dateTime ;
-    ns2:presentedAt <http://ceur-ws.org/Vol-1580/#event> ;
-    ns1:editor <http://ceur-ws.org/Vol-1580/#MohamediLazaar>,
+<http://ceur-ws.org/Vol-1580/#HasnaeiL%E2%80%99amrani> a ns4:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/HasnaeiL%E2%80%99amrani> ;
+    ns4:made <http://ceur-ws.org/Vol-1580/#48> ;
+    ns4:name "Hasnae L’amrani" .
+
+<http://ceur-ws.org/Vol-1580/#IbtissamiEnnajjar> a ns4:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/IbtissamiEnnajjar> ;
+    ns4:made <http://ceur-ws.org/Vol-1580/#17> ;
+    ns4:name "Ibtissam Ennajjar" .
+
+<http://ceur-ws.org/Vol-1580/#JamaliTalbi> a ns4:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/JamaliTalbi> ;
+    ns4:made <http://ceur-ws.org/Vol-1580/#5> ;
+    ns4:name "Jamal Talbi" .
+
+<http://ceur-ws.org/Vol-1580/#KhalidiEliMakkaou> a ns4:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/KhalidiEliMakkaou> ;
+    ns4:made <http://ceur-ws.org/Vol-1580/#6> ;
+    ns4:name "Khalid El Makkaou" .
+
+<http://ceur-ws.org/Vol-1580/#MalekiSarhani> a ns4:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/MalekiSarhani> ;
+    ns4:made <http://ceur-ws.org/Vol-1580/#16> ;
+    ns4:name "Malek Sarhani" .
+
+<http://ceur-ws.org/Vol-1580/#MohamediLazaar> a ns4:Person ;
+    ns2:affiliation "" ;
+    ns6:sameAs <http://ceur-ws.org/persons/MohamediLazaar> ;
+    ns4:name "Mohamed Lazaar" .
+
+<http://ceur-ws.org/Vol-1580/#MohammediAliAchhab> a ns4:Person ;
+    ns2:affiliation "" ;
+    ns6:sameAs <http://ceur-ws.org/persons/MohammediAliAchhab> ;
+    ns4:name "Mohammed Al Achhab" .
+
+<http://ceur-ws.org/Vol-1580/#RhizlaneiSeltani> a ns4:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/RhizlaneiSeltani> ;
+    ns4:made <http://ceur-ws.org/Vol-1580/#41> ;
+    ns4:name "Rhizlane Seltani" .
+
+<http://ceur-ws.org/Vol-1580/#SaraiAhajjam> a ns4:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/SaraiAhajjam> ;
+    ns4:made <http://ceur-ws.org/Vol-1580/#32> ;
+    ns4:name "Sara Ahajjam" .
+
+<http://ceur-ws.org/Vol-1580/#YasseriEliMadaniiEliAlami> a ns4:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/YasseriEliMadaniiEliAlami> ;
+    ns4:made <http://ceur-ws.org/Vol-1580/#49> ;
+    ns4:name "Yasser El Madani El Alami" .
+
+<http://ceur-ws.org/Vol-1580/#YassineiElmahoti> a ns4:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/YassineiElmahoti> ;
+    ns4:made <http://ceur-ws.org/Vol-1580/#38> ;
+    ns4:name "Yassine Elmahoti" .
+
+<http://ceur-ws.org/Vol-1580/#YounessiTabii> a ns4:Person ;
+    ns2:affiliation "" ;
+    ns6:sameAs <http://ceur-ws.org/persons/YounessiTabii> ;
+    ns4:name "Youness Tabii" .
+
+<http://ceur-ws.org/Vol-1580/#ZakariaeiEn-Naimani> a ns4:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/ZakariaeiEn-Naimani> ;
+    ns4:made <http://ceur-ws.org/Vol-1580/#44> ;
+    ns4:name "Zakariae En-Naimani" .
+
+<http://ceur-ws.org/Vol-1580/#event> a ns1:WorkshopEvent ;
+    ns1:hasLocation <http://dbpedia.org/resource/Morocco> ;
+    ns1:hasPart <http://ceur-ws.org/Vol-1580/#part-BDCA> ;
+    ns1:isSubEventOf <http://ceur-ws.org/Vol-1580/#conf> ;
+    ns7:beginsAtDatetime "2015-05-25T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:endsAtDatetime "2015-05-26T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:license "http://creativecommons.org/publicdomain/zero/1.0/" .
+
+<http://ceur-ws.org/Vol-1580/#16> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1580/> ;
+    ns5:title "Electric Load Forecasting Using Hybrid Machine Learning Approach Incorporating Feature Selection" ;
+    ns3:endPage 7 ;
+    ns3:numPages 7 ;
+    ns3:section <http://ceur-ws.org/Vol-1580/#Session1BigDataandApplications> ;
+    ns3:startPage 1 ;
+    ns2:author <http://ceur-ws.org/Vol-1580/#MalekiSarhani> .
+
+<http://ceur-ws.org/Vol-1580/#17> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1580/> ;
+    ns5:title "Improving Data Sharing Security in Cloud Computing" ;
+    ns3:endPage 50 ;
+    ns3:numPages 5 ;
+    ns3:section <http://ceur-ws.org/Vol-1580/#Session2CloudandApplications> ;
+    ns3:startPage 46 ;
+    ns2:author <http://ceur-ws.org/Vol-1580/#IbtissamiEnnajjar> .
+
+<http://ceur-ws.org/Vol-1580/#32> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1580/> ;
+    ns5:title "Towards a New Approach for Community Detection Algorithm in Social Networks" ;
+    ns3:endPage 28 ;
+    ns3:numPages 6 ;
+    ns3:section <http://ceur-ws.org/Vol-1580/#Session1BigDataandApplications> ;
+    ns3:startPage 23 ;
+    ns2:author <http://ceur-ws.org/Vol-1580/#SaraiAhajjam> .
+
+<http://ceur-ws.org/Vol-1580/#38> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1580/> ;
+    ns5:title "Optimization Energy Consumption in Mobile Cloud Computing by Using an Elastic Framework" ;
+    ns3:endPage 55 ;
+    ns3:numPages 5 ;
+    ns3:section <http://ceur-ws.org/Vol-1580/#Session2CloudandApplications> ;
+    ns3:startPage 51 ;
+    ns2:author <http://ceur-ws.org/Vol-1580/#YassineiElmahoti> .
+
+<http://ceur-ws.org/Vol-1580/#41> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1580/> ;
+    ns5:title "Using Big Data Classification and Mining for the Decision-making 2.0 Process" ;
+    ns3:endPage 33 ;
+    ns3:numPages 5 ;
+    ns3:section <http://ceur-ws.org/Vol-1580/#Session1BigDataandApplications> ;
+    ns3:startPage 29 ;
+    ns2:author <http://ceur-ws.org/Vol-1580/#RhizlaneiSeltani> .
+
+<http://ceur-ws.org/Vol-1580/#44> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1580/> ;
+    ns5:title "Architecture Optimization Model for the Probabilistic Self-organizing Maps" ;
+    ns3:endPage 15 ;
+    ns3:numPages 8 ;
+    ns3:section <http://ceur-ws.org/Vol-1580/#Session1BigDataandApplications> ;
+    ns3:startPage 8 ;
+    ns2:author <http://ceur-ws.org/Vol-1580/#ZakariaeiEn-Naimani> .
+
+<http://ceur-ws.org/Vol-1580/#48> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1580/> ;
+    ns5:title "The Security of Web Services: Secure Communication and Identity Management" ;
+    ns3:endPage 60 ;
+    ns3:numPages 5 ;
+    ns3:section <http://ceur-ws.org/Vol-1580/#Session2CloudandApplications> ;
+    ns3:startPage 56 ;
+    ns2:author <http://ceur-ws.org/Vol-1580/#HasnaeiL%E2%80%99amrani> .
+
+<http://ceur-ws.org/Vol-1580/#49> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1580/> ;
+    ns5:title "Improving Neighborhood-Based Collaborative Filtering by a Heuristic Approach and an Adjusted Similarity Measure" ;
+    ns3:endPage 22 ;
+    ns3:numPages 7 ;
+    ns3:section <http://ceur-ws.org/Vol-1580/#Session1BigDataandApplications> ;
+    ns3:startPage 16 ;
+    ns2:author <http://ceur-ws.org/Vol-1580/#YasseriEliMadaniiEliAlami> .
+
+<http://ceur-ws.org/Vol-1580/#5> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1580/> ;
+    ns5:title "A Novel Framework for Ranking Cloud Service Providers Using Security Risk Approach" ;
+    ns3:endPage 39 ;
+    ns3:numPages 6 ;
+    ns3:section <http://ceur-ws.org/Vol-1580/#Session2CloudandApplications> ;
+    ns3:startPage 34 ;
+    ns2:author <http://ceur-ws.org/Vol-1580/#JamaliTalbi> .
+
+<http://ceur-ws.org/Vol-1580/#6> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1580/> ;
+    ns5:title "Homomorphic Encryption as a Solution of Trust Issues in Cloud" ;
+    ns3:endPage 45 ;
+    ns3:numPages 6 ;
+    ns3:section <http://ceur-ws.org/Vol-1580/#Session2CloudandApplications> ;
+    ns3:startPage 40 ;
+    ns2:author <http://ceur-ws.org/Vol-1580/#KhalidiEliMakkaou> .
+
+<http://ceur-ws.org/Vol-1580/#Session1BigDataandApplications> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-1580/> ;
+    ns5:title "Session 1: Big Data and Applications" .
+
+<http://ceur-ws.org/Vol-1580/#Session2CloudandApplications> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-1580/> ;
+    ns5:title "Session 2: Cloud and Applications" .
+
+<http://ceur-ws.org/Vol-1580/> a ns1:Proceedings ;
+    ns1:hasPart <http://ceur-ws.org/Vol-1580/#16>,
+        <http://ceur-ws.org/Vol-1580/#17>,
+        <http://ceur-ws.org/Vol-1580/#32>,
+        <http://ceur-ws.org/Vol-1580/#38>,
+        <http://ceur-ws.org/Vol-1580/#41>,
+        <http://ceur-ws.org/Vol-1580/#44>,
+        <http://ceur-ws.org/Vol-1580/#48>,
+        <http://ceur-ws.org/Vol-1580/#49>,
+        <http://ceur-ws.org/Vol-1580/#5>,
+        <http://ceur-ws.org/Vol-1580/#6> ;
+    ns1:hasSession <http://ceur-ws.org/Vol-1580/#Session1BigDataandApplications>,
+        <http://ceur-ws.org/Vol-1580/#Session2CloudandApplications> ;
+    ns9:issued "2016-04-25T00:00:00+00:00"^^xsd:dateTime ;
+    ns3:presentedAt <http://ceur-ws.org/Vol-1580/#event> ;
+    ns2:editor <http://ceur-ws.org/Vol-1580/#MohamediLazaar>,
         <http://ceur-ws.org/Vol-1580/#MohammediAliAchhab>,
         <http://ceur-ws.org/Vol-1580/#YounessiTabii> .
-
-<http://ceur-ws.org/Vol-1580/#MohamediLazaar> a ns7:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/MohamediLazaar> ;
-    ns7:name "Mohamed Lazaar" .
-
-<http://ceur-ws.org/Vol-1580/#MohammediAliAchhab> a ns7:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/MohammediAliAchhab> ;
-    ns7:name "Mohammed Al Achhab" .
-
-<http://ceur-ws.org/Vol-1580/#YounessiTabii> a ns7:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/YounessiTabii> ;
-    ns7:name "Youness Tabii" .
-
-<http://ceur-ws.org/Vol-1580/#event> a ns3:WorkshopEvent ;
-    ns3:hasLocation <http://dbpedia.org/resource/Morocco> ;
-    ns3:hasPart <http://ceur-ws.org/Vol-1580/#part-ws> ;
-    ns3:isSubEventOf <http://ceur-ws.org/Vol-1580/#conf> ;
-    ns5:beginsAtDatetime "2015-05-25T00:00:00+00:00"^^xsd:dateTime ;
-    ns5:endsAtDatetime "2015-05-26T00:00:00+00:00"^^xsd:dateTime ;
-    ns4:license "http://creativecommons.org/publicdomain/zero/1.0/" .
 

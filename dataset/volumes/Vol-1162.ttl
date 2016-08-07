@@ -1,46 +1,217 @@
-@prefix ns1: <http://xmlns.com/foaf/0.1/> .
-@prefix ns2: <http://purl.org/dc/elements/1.1/> .
-@prefix ns3: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns1: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns2: <http://xmlns.com/foaf/0.1/> .
+@prefix ns3: <http://www.w3.org/2002/07/owl#> .
 @prefix ns4: <http://purl.org/ontology/bibo/#> .
 @prefix ns5: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns6: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns7: <http://www.w3.org/2002/07/owl#> .
-@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns6: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns9: <http://purl.org/dc/elements/1.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1162/> a ns5:Proceedings ;
-    ns8:issued "2014-06-09T00:00:00+00:00"^^xsd:dateTime ;
-    ns4:presentedAt <http://ceur-ws.org/Vol-1162/#event> ;
-    ns6:editor <http://ceur-ws.org/Vol-1162/#BijaniParsia>,
-        <http://ceur-ws.org/Vol-1162/#GuiliniQi>,
-        <http://ceur-ws.org/Vol-1162/#MatthewiHorridge>,
-        <http://ceur-ws.org/Vol-1162/#PatrickiLambrix> .
+<http://ceur-ws.org/Vol-1162/#BijaniParsia> a ns2:Person ;
+    ns1:affiliation "" ;
+    ns3:sameAs <http://ceur-ws.org/persons/BijaniParsia> ;
+    ns2:name "Bijan Parsia" .
 
-<http://ceur-ws.org/Vol-1162/#BijaniParsia> a ns1:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/BijaniParsia> ;
-    ns1:name "Bijan Parsia" .
+<http://ceur-ws.org/Vol-1162/#DanieliFleischhacker> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/DanieliFleischhacker> ;
+    ns2:made <http://ceur-ws.org/Vol-1162/#paper2> ;
+    ns2:name "Daniel Fleischhacker" .
 
-<http://ceur-ws.org/Vol-1162/#GuiliniQi> a ns1:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/GuiliniQi> ;
-    ns1:name "Guilin Qi" .
+<http://ceur-ws.org/Vol-1162/#FangiWei-Kleiner> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/FangiWei-Kleiner> ;
+    ns2:made <http://ceur-ws.org/Vol-1162/#paper5> ;
+    ns2:name "Fang Wei-Kleiner" .
 
-<http://ceur-ws.org/Vol-1162/#MatthewiHorridge> a ns1:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/MatthewiHorridge> ;
-    ns1:name "Matthew Horridge" .
+<http://ceur-ws.org/Vol-1162/#GerhardiFriedrich> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/GerhardiFriedrich> ;
+    ns2:made <http://ceur-ws.org/Vol-1162/#paper4> ;
+    ns2:name "Gerhard Friedrich" .
 
-<http://ceur-ws.org/Vol-1162/#PatrickiLambrix> a ns1:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/PatrickiLambrix> ;
-    ns1:name "Patrick Lambrix" .
+<http://ceur-ws.org/Vol-1162/#GuiliniQi> a ns2:Person ;
+    ns1:affiliation "" ;
+    ns3:sameAs <http://ceur-ws.org/persons/GuiliniQi> ;
+    ns2:name "Guilin Qi" .
+
+<http://ceur-ws.org/Vol-1162/#HeikoiPaulheim> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/HeikoiPaulheim> ;
+    ns2:made <http://ceur-ws.org/Vol-1162/#paper3> ;
+    ns2:name "Heiko Paulheim" .
+
+<http://ceur-ws.org/Vol-1162/#JaniKluka> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/JaniKluka> ;
+    ns2:made <http://ceur-ws.org/Vol-1162/#paper6> ;
+    ns2:name "Jan Kluka" .
+
+<http://ceur-ws.org/Vol-1162/#KostyantyniShchekotykhin> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/KostyantyniShchekotykhin> ;
+    ns2:made <http://ceur-ws.org/Vol-1162/#paper4> ;
+    ns2:name "Kostyantyn Shchekotykhin" .
+
+<http://ceur-ws.org/Vol-1162/#MartiniHomola> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/MartiniHomola> ;
+    ns2:made <http://ceur-ws.org/Vol-1162/#paper6> ;
+    ns2:name "Martin Homola" .
+
+<http://ceur-ws.org/Vol-1162/#MatthewiHorridge> a ns2:Person ;
+    ns1:affiliation "" ;
+    ns3:sameAs <http://ceur-ws.org/persons/MatthewiHorridge> ;
+    ns2:name "Matthew Horridge" .
+
+<http://ceur-ws.org/Vol-1162/#MiroslaviVacura> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/MiroslaviVacura> ;
+    ns2:made <http://ceur-ws.org/Vol-1162/#paper6> ;
+    ns2:name "Miroslav Vacura" .
+
+<http://ceur-ws.org/Vol-1162/#PatrickiRodler> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/PatrickiRodler> ;
+    ns2:made <http://ceur-ws.org/Vol-1162/#paper4> ;
+    ns2:name "Patrick Rodler" .
+
+<http://ceur-ws.org/Vol-1162/#PhilippiFleiss> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/PhilippiFleiss> ;
+    ns2:made <http://ceur-ws.org/Vol-1162/#paper4> ;
+    ns2:name "Philipp Fleiss" .
+
+<http://ceur-ws.org/Vol-1162/#SimoneiSerra> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/SimoneiSerra> ;
+    ns2:made <http://ceur-ws.org/Vol-1162/#paper6> ;
+    ns2:name "Simone Serra" .
+
+<http://ceur-ws.org/Vol-1162/#VojtechiSvatek> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/VojtechiSvatek> ;
+    ns2:made <http://ceur-ws.org/Vol-1162/#paper6> ;
+    ns2:name "Vojtech Svatek" .
+
+<http://ceur-ws.org/Vol-1162/#ZlataniDragisic> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/ZlataniDragisic> ;
+    ns2:made <http://ceur-ws.org/Vol-1162/#paper5> ;
+    ns2:name "Zlatan Dragisic" .
 
 <http://ceur-ws.org/Vol-1162/#event> a ns5:WorkshopEvent ;
     ns5:hasLocation <http://dbpedia.org/resource/Greece> ;
-    ns5:hasPart <http://ceur-ws.org/Vol-1162/#part-ws> ;
+    ns5:hasPart <http://ceur-ws.org/Vol-1162/#part-WoDOOM> ;
     ns5:isSubEventOf <http://ceur-ws.org/Vol-1162/#conf> ;
-    ns3:beginsAtDatetime "2014-05-26T00:00:00+00:00"^^xsd:dateTime ;
-    ns3:endsAtDatetime "2014-05-26T00:00:00+00:00"^^xsd:dateTime ;
-    ns2:license "http://choosealicense.com/licenses/no-license/" ;
+    ns8:beginsAtDatetime "2014-05-26T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:endsAtDatetime "2014-05-26T00:00:00+00:00"^^xsd:dateTime ;
+    ns9:license "http://choosealicense.com/licenses/no-license/" ;
     rdfs:seeAlso <http://ceur-ws.org/Vol-999/#event> .
+
+<http://ceur-ws.org/Vol-1162/#Invitedtalk> a ns5:SessionEvent ;
+    ns5:partOf <http://ceur-ws.org/Vol-1162/> ;
+    ns6:title "Invited talk" .
+
+<http://ceur-ws.org/Vol-1162/#JeromeiEuzenat> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/JeromeiEuzenat> ;
+    ns2:made <http://ceur-ws.org/Vol-1162/#invited>,
+        <http://ceur-ws.org/Vol-1162/#paper1> ;
+    ns2:name "Jerome Euzenat" .
+
+<http://ceur-ws.org/Vol-1162/#PatrickiLambrix> a ns2:Person ;
+    ns1:affiliation "" ;
+    ns3:sameAs <http://ceur-ws.org/persons/PatrickiLambrix> ;
+    ns2:made <http://ceur-ws.org/Vol-1162/#paper5> ;
+    ns2:name "Patrick Lambrix" .
+
+<http://ceur-ws.org/Vol-1162/#invited> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1162/> ;
+    ns6:title "Foundations for Revising Networks of Ontologies" ;
+    ns4:endPage 1 ;
+    ns4:numPages 1 ;
+    ns4:section <http://ceur-ws.org/Vol-1162/#Invitedtalk> ;
+    ns4:startPage 1 ;
+    ns1:author <http://ceur-ws.org/Vol-1162/#JeromeiEuzenat> .
+
+<http://ceur-ws.org/Vol-1162/#paper1> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1162/> ;
+    ns6:title "First Experiments in Cultural Alignment Repair" ;
+    ns4:endPage 14 ;
+    ns4:numPages 12 ;
+    ns4:section <http://ceur-ws.org/Vol-1162/#Researchpapers> ;
+    ns4:startPage 3 ;
+    ns1:author <http://ceur-ws.org/Vol-1162/#JeromeiEuzenat> .
+
+<http://ceur-ws.org/Vol-1162/#paper2> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1162/> ;
+    ns6:title "Repairing Learned Ontologies" ;
+    ns4:endPage 26 ;
+    ns4:numPages 12 ;
+    ns4:section <http://ceur-ws.org/Vol-1162/#Researchpapers> ;
+    ns4:startPage 15 ;
+    ns1:author <http://ceur-ws.org/Vol-1162/#DanieliFleischhacker> .
+
+<http://ceur-ws.org/Vol-1162/#paper3> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1162/> ;
+    ns6:title "Identifying Wrong Links between Datasets by Multi-dimensional Outlier Detection" ;
+    ns4:endPage 38 ;
+    ns4:numPages 12 ;
+    ns4:section <http://ceur-ws.org/Vol-1162/#Researchpapers> ;
+    ns4:startPage 27 ;
+    ns1:author <http://ceur-ws.org/Vol-1162/#HeikoiPaulheim> .
+
+<http://ceur-ws.org/Vol-1162/#Demonstrationpapers> a ns5:SessionEvent ;
+    ns5:partOf <http://ceur-ws.org/Vol-1162/> ;
+    ns6:title "Demonstration papers" .
+
+<http://ceur-ws.org/Vol-1162/#paper5> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1162/> ;
+    ns6:title "A System for Debugging Missing Is-a Structure in EL Ontologies" ;
+    ns4:endPage 58 ;
+    ns4:numPages 8 ;
+    ns4:section <http://ceur-ws.org/Vol-1162/#Demonstrationpapers> ;
+    ns4:startPage 51 ;
+    ns1:author <http://ceur-ws.org/Vol-1162/#FangiWei-Kleiner>,
+        <http://ceur-ws.org/Vol-1162/#PatrickiLambrix>,
+        <http://ceur-ws.org/Vol-1162/#ZlataniDragisic> .
+
+<http://ceur-ws.org/Vol-1162/#Researchpapers> a ns5:SessionEvent ;
+    ns5:partOf <http://ceur-ws.org/Vol-1162/> ;
+    ns6:title "Research papers" .
+
+<http://ceur-ws.org/Vol-1162/#paper4> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1162/> ;
+    ns6:title "Interactive Ontology Debugging using Direct Diagnosis" ;
+    ns4:endPage 50 ;
+    ns4:numPages 12 ;
+    ns4:section <http://ceur-ws.org/Vol-1162/#Researchpapers> ;
+    ns4:startPage 39 ;
+    ns1:author <http://ceur-ws.org/Vol-1162/#GerhardiFriedrich>,
+        <http://ceur-ws.org/Vol-1162/#KostyantyniShchekotykhin>,
+        <http://ceur-ws.org/Vol-1162/#PatrickiRodler>,
+        <http://ceur-ws.org/Vol-1162/#PhilippiFleiss> .
+
+<http://ceur-ws.org/Vol-1162/#paper6> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1162/> ;
+    ns6:title "B-Annot: Supplying Background Model Annotations for Ontology Coherence Testing" ;
+    ns4:endPage 66 ;
+    ns4:numPages 8 ;
+    ns4:section <http://ceur-ws.org/Vol-1162/#Demonstrationpapers> ;
+    ns4:startPage 59 ;
+    ns1:author <http://ceur-ws.org/Vol-1162/#JaniKluka>,
+        <http://ceur-ws.org/Vol-1162/#MartiniHomola>,
+        <http://ceur-ws.org/Vol-1162/#MiroslaviVacura>,
+        <http://ceur-ws.org/Vol-1162/#SimoneiSerra>,
+        <http://ceur-ws.org/Vol-1162/#VojtechiSvatek> .
+
+<http://ceur-ws.org/Vol-1162/> a ns5:Proceedings ;
+    ns5:hasPart <http://ceur-ws.org/Vol-1162/#invited>,
+        <http://ceur-ws.org/Vol-1162/#paper1>,
+        <http://ceur-ws.org/Vol-1162/#paper2>,
+        <http://ceur-ws.org/Vol-1162/#paper3>,
+        <http://ceur-ws.org/Vol-1162/#paper4>,
+        <http://ceur-ws.org/Vol-1162/#paper5>,
+        <http://ceur-ws.org/Vol-1162/#paper6> ;
+    ns5:hasSession <http://ceur-ws.org/Vol-1162/#Demonstrationpapers>,
+        <http://ceur-ws.org/Vol-1162/#Invitedtalk>,
+        <http://ceur-ws.org/Vol-1162/#Researchpapers> ;
+    ns7:issued "2014-06-09T00:00:00+00:00"^^xsd:dateTime ;
+    ns4:presentedAt <http://ceur-ws.org/Vol-1162/#event> ;
+    ns1:editor <http://ceur-ws.org/Vol-1162/#BijaniParsia>,
+        <http://ceur-ws.org/Vol-1162/#GuiliniQi>,
+        <http://ceur-ws.org/Vol-1162/#MatthewiHorridge>,
+        <http://ceur-ws.org/Vol-1162/#PatrickiLambrix> .
 

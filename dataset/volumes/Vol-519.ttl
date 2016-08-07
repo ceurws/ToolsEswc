@@ -1,12 +1,12 @@
-@prefix ns1: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns2: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns1: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns2: <http://data.semanticweb.org/ns/swc/ontology/#> .
 @prefix ns3: <http://xmlns.com/foaf/0.1/> .
-@prefix ns4: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns4: <http://purl.org/ontology/bibo/#> .
 @prefix ns5: <http://www.w3.org/2002/07/owl#> .
-@prefix ns6: <http://purl.org/ontology/bibo/#> .
-@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns9: <http://purl.org/dc/elements/1.1/> .
+@prefix ns6: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns7: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns8: <http://purl.org/dc/elements/1.1/> .
+@prefix ns9: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -87,13 +87,13 @@
     ns3:made <http://ceur-ws.org/Vol-519/#pammer> ;
     ns3:name "Viktoria Pammer" .
 
-<http://ceur-ws.org/Vol-519/#event> a ns1:WorkshopEvent ;
-    ns1:hasLocation <http://dbpedia.org/resource/United_States> ;
-    ns1:hasPart <http://ceur-ws.org/Vol-519/#part-CEUR-WS> ;
-    ns1:isSubEventOf <http://ceur-ws.org/Vol-519/#conf> ;
-    ns8:beginsAtDatetime "2009-10-28T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:endsAtDatetime "2009-10-28T00:00:00+00:00"^^xsd:dateTime ;
-    ns9:license "http://choosealicense.com/licenses/no-license/" .
+<http://ceur-ws.org/Vol-519/#event> a ns2:WorkshopEvent ;
+    ns2:hasLocation <http://dbpedia.org/resource/United_States> ;
+    ns2:hasPart <http://ceur-ws.org/Vol-519/#part-IWOD> ;
+    ns2:isSubEventOf <http://ceur-ws.org/Vol-519/#conf> ;
+    ns6:beginsAtDatetime "2009-10-26T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:endsAtDatetime "2009-10-26T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:license "http://choosealicense.com/licenses/no-license/" .
 
 <http://ceur-ws.org/Vol-519/#EnricoiMotta> a ns3:Person ;
     ns5:sameAs <http://ceur-ws.org/persons/EnricoiMotta> ;
@@ -102,93 +102,93 @@
     ns3:name "Enrico Motta" .
 
 <http://ceur-ws.org/Vol-519/#GrigorisiAntoniou> a ns3:Person ;
-    ns4:affiliation "" ;
+    ns1:affiliation "" ;
     ns5:sameAs <http://ceur-ws.org/persons/GrigorisiAntoniou> ;
     ns3:made <http://ceur-ws.org/Vol-519/#ribeiro> ;
     ns3:name "Grigoris Antoniou" .
 
-<http://ceur-ws.org/Vol-519/#grandi> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-519/> ;
-    ns2:title "Multi-temporal RDF Ontology Versioning." ;
-    ns6:section <http://ceur-ws.org/Vol-519/#ShortPresentations> ;
-    ns4:author <http://ceur-ws.org/Vol-519/#FabioiGrandi> .
+<http://ceur-ws.org/Vol-519/#grandi> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-519/> ;
+    ns7:title "Multi-temporal RDF Ontology Versioning." ;
+    ns4:section <http://ceur-ws.org/Vol-519/#ShortPresentations> ;
+    ns1:author <http://ceur-ws.org/Vol-519/#FabioiGrandi> .
 
 <http://ceur-ws.org/Vol-519/#Mathieuid%27Aquin> a ns3:Person ;
-    ns4:affiliation "" ;
+    ns1:affiliation "" ;
     ns5:sameAs <http://ceur-ws.org/persons/Mathieuid%27Aquin> ;
     ns3:made <http://ceur-ws.org/Vol-519/#allocca>,
         <http://ceur-ws.org/Vol-519/#zablith> ;
     ns3:name "Mathieu d'Aquin" .
 
-<http://ceur-ws.org/Vol-519/#djedidi> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-519/> ;
-    ns2:title "Change Management Patterns (CMP) for Ontology Evolution Process." ;
-    ns6:section <http://ceur-ws.org/Vol-519/#LongPresentations> ;
-    ns4:author <http://ceur-ws.org/Vol-519/#Marie-AudeiAufaure>,
+<http://ceur-ws.org/Vol-519/#djedidi> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-519/> ;
+    ns7:title "Change Management Patterns (CMP) for Ontology Evolution Process." ;
+    ns4:section <http://ceur-ws.org/Vol-519/#LongPresentations> ;
+    ns1:author <http://ceur-ws.org/Vol-519/#Marie-AudeiAufaure>,
         <http://ceur-ws.org/Vol-519/#RimiDjedidi> .
 
-<http://ceur-ws.org/Vol-519/#tovar> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-519/> ;
-    ns2:title "REACTIVE: A Rule-based Framework to Process Reactivity." ;
-    ns6:section <http://ceur-ws.org/Vol-519/#ShortPresentations> ;
-    ns4:author <http://ceur-ws.org/Vol-519/#TovariElsaiLiliana>,
+<http://ceur-ws.org/Vol-519/#tovar> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-519/> ;
+    ns7:title "REACTIVE: A Rule-based Framework to Process Reactivity." ;
+    ns4:section <http://ceur-ws.org/Vol-519/#ShortPresentations> ;
+    ns1:author <http://ceur-ws.org/Vol-519/#TovariElsaiLiliana>,
         <http://ceur-ws.org/Vol-519/#VidaliMaria-Esther> .
 
-<http://ceur-ws.org/Vol-519/#ShortPresentations> a ns1:SessionEvent ;
-    ns1:partOf <http://ceur-ws.org/Vol-519/> ;
-    ns2:title "Short Presentations" .
+<http://ceur-ws.org/Vol-519/#ShortPresentations> a ns2:SessionEvent ;
+    ns2:partOf <http://ceur-ws.org/Vol-519/> ;
+    ns7:title "Short Presentations" .
 
-<http://ceur-ws.org/Vol-519/#allocca> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-519/> ;
-    ns2:title "Detecting Different Versions of Ontologies in Large Ontology Repositories." ;
-    ns6:section <http://ceur-ws.org/Vol-519/#LongPresentations> ;
-    ns4:author <http://ceur-ws.org/Vol-519/#CarloiAllocca>,
+<http://ceur-ws.org/Vol-519/#allocca> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-519/> ;
+    ns7:title "Detecting Different Versions of Ontologies in Large Ontology Repositories." ;
+    ns4:section <http://ceur-ws.org/Vol-519/#LongPresentations> ;
+    ns1:author <http://ceur-ws.org/Vol-519/#CarloiAllocca>,
         <http://ceur-ws.org/Vol-519/#EnricoiMotta>,
         <http://ceur-ws.org/Vol-519/#Mathieuid%27Aquin> .
 
-<http://ceur-ws.org/Vol-519/#pammer> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-519/> ;
-    ns2:title "Highlighting Assertional Effects of Ontology Editing Activities in OWL." ;
-    ns6:section <http://ceur-ws.org/Vol-519/#LongPresentations> ;
-    ns4:author <http://ceur-ws.org/Vol-519/#LucianoiSerafini>,
+<http://ceur-ws.org/Vol-519/#pammer> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-519/> ;
+    ns7:title "Highlighting Assertional Effects of Ontology Editing Activities in OWL." ;
+    ns4:section <http://ceur-ws.org/Vol-519/#LongPresentations> ;
+    ns1:author <http://ceur-ws.org/Vol-519/#LucianoiSerafini>,
         <http://ceur-ws.org/Vol-519/#StefanieiLindstaedt>,
         <http://ceur-ws.org/Vol-519/#ViktoriaiPammer> .
 
-<http://ceur-ws.org/Vol-519/#LongPresentations> a ns1:SessionEvent ;
-    ns1:partOf <http://ceur-ws.org/Vol-519/> ;
-    ns2:title "Long Presentations" .
+<http://ceur-ws.org/Vol-519/#LongPresentations> a ns2:SessionEvent ;
+    ns2:partOf <http://ceur-ws.org/Vol-519/> ;
+    ns7:title "Long Presentations" .
 
-<http://ceur-ws.org/Vol-519/#zablith> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-519/> ;
-    ns2:title "Investigating the Use of Background Knowledge for Assessing the Relevance of Statements to an Ontology in Ontology Evolution." ;
-    ns6:section <http://ceur-ws.org/Vol-519/#LongPresentations> ;
-    ns4:author <http://ceur-ws.org/Vol-519/#EnricoiMotta>,
+<http://ceur-ws.org/Vol-519/#zablith> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-519/> ;
+    ns7:title "Investigating the Use of Background Knowledge for Assessing the Relevance of Statements to an Ontology in Ontology Evolution." ;
+    ns4:section <http://ceur-ws.org/Vol-519/#LongPresentations> ;
+    ns1:author <http://ceur-ws.org/Vol-519/#EnricoiMotta>,
         <http://ceur-ws.org/Vol-519/#FouadiZablith>,
         <http://ceur-ws.org/Vol-519/#MartaiSabou>,
         <http://ceur-ws.org/Vol-519/#Mathieuid%27Aquin> .
 
-<http://ceur-ws.org/Vol-519/#ribeiro> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-519/> ;
-    ns2:title "Contraction on the Semantic Web: On the Role of Relevance and Recovery." ;
-    ns6:section <http://ceur-ws.org/Vol-519/#ShortPresentations> ;
-    ns4:author <http://ceur-ws.org/Vol-519/#GiorgosiFlouris>,
+<http://ceur-ws.org/Vol-519/#ribeiro> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-519/> ;
+    ns7:title "Contraction on the Semantic Web: On the Role of Relevance and Recovery." ;
+    ns4:section <http://ceur-ws.org/Vol-519/#ShortPresentations> ;
+    ns1:author <http://ceur-ws.org/Vol-519/#GiorgosiFlouris>,
         <http://ceur-ws.org/Vol-519/#GrigorisiAntoniou>,
         <http://ceur-ws.org/Vol-519/#JeffiPan>,
         <http://ceur-ws.org/Vol-519/#M%C3%A1rcioiM.iRibeiro>,
         <http://ceur-ws.org/Vol-519/#RenataiWassermann> .
 
-<http://ceur-ws.org/Vol-519/> a ns1:Proceedings ;
-    ns1:hasPart <http://ceur-ws.org/Vol-519/#allocca>,
+<http://ceur-ws.org/Vol-519/> a ns2:Proceedings ;
+    ns2:hasPart <http://ceur-ws.org/Vol-519/#allocca>,
         <http://ceur-ws.org/Vol-519/#djedidi>,
         <http://ceur-ws.org/Vol-519/#grandi>,
         <http://ceur-ws.org/Vol-519/#pammer>,
         <http://ceur-ws.org/Vol-519/#ribeiro>,
         <http://ceur-ws.org/Vol-519/#tovar>,
         <http://ceur-ws.org/Vol-519/#zablith> ;
-    ns1:hasSession <http://ceur-ws.org/Vol-519/#LongPresentations>,
+    ns2:hasSession <http://ceur-ws.org/Vol-519/#LongPresentations>,
         <http://ceur-ws.org/Vol-519/#ShortPresentations> ;
-    ns7:issued "2009-10-28T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:presentedAt <http://ceur-ws.org/Vol-519/#event> ;
-    ns4:editor <http://ceur-ws.org/Vol-519/#GrigorisiAntoniou>,
+    ns9:issued "2009-10-28T00:00:00+00:00"^^xsd:dateTime ;
+    ns4:presentedAt <http://ceur-ws.org/Vol-519/#event> ;
+    ns1:editor <http://ceur-ws.org/Vol-519/#GrigorisiAntoniou>,
         <http://ceur-ws.org/Vol-519/#Mathieuid%27Aquin> .
 

@@ -1,41 +1,202 @@
-@prefix ns1: <http://www.w3.org/2002/07/owl#> .
-@prefix ns2: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns3: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns4: <http://xmlns.com/foaf/0.1/> .
-@prefix ns5: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns6: <http://purl.org/ontology/bibo/#> .
-@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns1: <http://xmlns.com/foaf/0.1/> .
+@prefix ns2: <http://www.w3.org/2002/07/owl#> .
+@prefix ns3: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns4: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns5: <http://purl.org/ontology/bibo/#> .
+@prefix ns6: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
 @prefix ns8: <http://purl.org/dc/elements/1.1/> .
+@prefix ns9: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1635/> a ns3:Proceedings ;
-    ns7:issued "2016-07-11T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:presentedAt <http://ceur-ws.org/Vol-1635/#event> ;
-    ns5:editor <http://ceur-ws.org/Vol-1635/#JosefiUrban>,
-        <http://ceur-ws.org/Vol-1635/#PascaliFontaine>,
-        <http://ceur-ws.org/Vol-1635/#StephaniSchulz> .
+<http://ceur-ws.org/Vol-1635/#AndreasiTeucke> a ns1:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/AndreasiTeucke> ;
+    ns1:made <http://ceur-ws.org/Vol-1635/#paper-09> ;
+    ns1:name "Andreas Teucke" .
 
-<http://ceur-ws.org/Vol-1635/#JosefiUrban> a ns4:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/JosefiUrban> ;
-    ns4:name "Josef Urban" .
+<http://ceur-ws.org/Vol-1635/#CezaryiKaliszyk> a ns1:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/CezaryiKaliszyk> ;
+    ns1:made <http://ceur-ws.org/Vol-1635/#paper-05> ;
+    ns1:name "Cezary Kaliszyk" .
 
-<http://ceur-ws.org/Vol-1635/#PascaliFontaine> a ns4:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/PascaliFontaine> ;
-    ns4:name "Pascal Fontaine" .
+<http://ceur-ws.org/Vol-1635/#ChristophiWernhard> a ns1:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/ChristophiWernhard> ;
+    ns1:made <http://ceur-ws.org/Vol-1635/#paper-11> ;
+    ns1:name "Christoph Wernhard" .
 
-<http://ceur-ws.org/Vol-1635/#StephaniSchulz> a ns4:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/StephaniSchulz> ;
-    ns4:name "Stephan Schulz" .
+<http://ceur-ws.org/Vol-1635/#EugeniKuksa> a ns1:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/EugeniKuksa> ;
+    ns1:made <http://ceur-ws.org/Vol-1635/#paper-06> ;
+    ns1:name "Eugen Kuksa" .
 
-<http://ceur-ws.org/Vol-1635/#event> a ns3:WorkshopEvent ;
-    ns3:hasLocation <http://dbpedia.org/resource/Portugal> ;
-    ns3:hasPart <http://ceur-ws.org/Vol-1635/#part-ws> ;
-    ns3:isSubEventOf <http://ceur-ws.org/Vol-1635/#conf> ;
-    ns2:beginsAtDatetime "2016-07-02T00:00:00+00:00"^^xsd:dateTime ;
-    ns2:endsAtDatetime "2016-07-02T00:00:00+00:00"^^xsd:dateTime ;
+<http://ceur-ws.org/Vol-1635/#HanieliBarbosa> a ns1:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/HanieliBarbosa> ;
+    ns1:made <http://ceur-ws.org/Vol-1635/#paper-01> ;
+    ns1:name "Haniel Barbosa" .
+
+<http://ceur-ws.org/Vol-1635/#JeaniMarieiLagniez> a ns1:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/JeaniMarieiLagniez> ;
+    ns1:made <http://ceur-ws.org/Vol-1635/#paper-07> ;
+    ns1:name "Jean Marie Lagniez" .
+
+<http://ceur-ws.org/Vol-1635/#JelenaiVlasenko> a ns1:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/JelenaiVlasenko> ;
+    ns1:made <http://ceur-ws.org/Vol-1635/#paper-10> ;
+    ns1:name "Jelena Vlasenko" .
+
+<http://ceur-ws.org/Vol-1635/#JosefiUrban> a ns1:Person ;
+    ns5:place <http://dbpedia.org/resource/Czech_Republic> ;
+    ns6:affiliation "Czech Technical University in Prague" ;
+    ns2:sameAs <http://ceur-ws.org/persons/JosefiUrban> ;
+    ns1:name "Josef Urban" .
+
+<http://ceur-ws.org/Vol-1635/#KoeniClaessen> a ns1:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/KoeniClaessen> ;
+    ns1:made <http://ceur-ws.org/Vol-1635/#paper-02> ;
+    ns1:name "Koen Claessen" .
+
+<http://ceur-ws.org/Vol-1635/#MichaeliF%C3%A4rber> a ns1:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/MichaeliF%C3%A4rber> ;
+    ns1:made <http://ceur-ws.org/Vol-1635/#paper-03> ;
+    ns1:name "Michael Färber" .
+
+<http://ceur-ws.org/Vol-1635/#MohamediHassona> a ns1:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/MohamediHassona> ;
+    ns1:made <http://ceur-ws.org/Vol-1635/#paper-04> ;
+    ns1:name "Mohamed Hassona" .
+
+<http://ceur-ws.org/Vol-1635/#PascaliFontaine> a ns1:Person ;
+    ns5:place <http://dbpedia.org/resource/France> ;
+    ns6:affiliation "Loria, INRIA, University of Lorraine" ;
+    ns2:sameAs <http://ceur-ws.org/persons/PascaliFontaine> ;
+    ns1:name "Pascal Fontaine" .
+
+<http://ceur-ws.org/Vol-1635/#StephaniSchulz> a ns1:Person ;
+    ns5:place <http://dbpedia.org/resource/Germany> ;
+    ns6:affiliation "DHBW Stuttgart" ;
+    ns2:sameAs <http://ceur-ws.org/persons/StephaniSchulz> ;
+    ns1:name "Stephan Schulz" .
+
+<http://ceur-ws.org/Vol-1635/#TomeriLibal> a ns1:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/TomeriLibal> ;
+    ns1:made <http://ceur-ws.org/Vol-1635/#paper-08> ;
+    ns1:name "Tomer Libal" .
+
+<http://ceur-ws.org/Vol-1635/#event> a ns4:WorkshopEvent ;
+    ns4:hasLocation <http://dbpedia.org/resource/Portugal> ;
+    ns4:hasPart <http://ceur-ws.org/Vol-1635/#part-PAAR> ;
+    ns4:isSubEventOf <http://ceur-ws.org/Vol-1635/#conf> ;
+    ns7:beginsAtDatetime "2016-07-02T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:endsAtDatetime "2016-07-02T00:00:00+00:00"^^xsd:dateTime ;
     ns8:license "http://creativecommons.org/publicdomain/zero/1.0/" ;
     rdfs:seeAlso <http://ceur-ws.org/Vol-373/#event> .
+
+<http://ceur-ws.org/Vol-1635/#paper-01> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1635/> ;
+    ns3:title "Efficient Instantiation Techniques in SMT (Work In Progress)" ;
+    ns5:endPage 10 ;
+    ns5:numPages 10 ;
+    ns5:startPage 1 ;
+    ns6:author <http://ceur-ws.org/Vol-1635/#HanieliBarbosa> .
+
+<http://ceur-ws.org/Vol-1635/#paper-02> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1635/> ;
+    ns3:title "Alternative Treatments of Common Binary Relations in First-order Automated Reasoning" ;
+    ns5:endPage 23 ;
+    ns5:numPages 13 ;
+    ns5:startPage 11 ;
+    ns6:author <http://ceur-ws.org/Vol-1635/#KoeniClaessen> .
+
+<http://ceur-ws.org/Vol-1635/#paper-03> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1635/> ;
+    ns3:title "No Choice: Reconstruction of First-order ATP Proofs without Skolem Functions" ;
+    ns5:endPage 31 ;
+    ns5:numPages 8 ;
+    ns5:startPage 24 ;
+    ns6:author <http://ceur-ws.org/Vol-1635/#MichaeliF%C3%A4rber> .
+
+<http://ceur-ws.org/Vol-1635/#paper-04> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1635/> ;
+    ns3:title "Deduction as a Service" ;
+    ns5:endPage 40 ;
+    ns5:numPages 9 ;
+    ns5:startPage 32 ;
+    ns6:author <http://ceur-ws.org/Vol-1635/#MohamediHassona> .
+
+<http://ceur-ws.org/Vol-1635/#paper-05> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1635/> ;
+    ns3:title "TH1: The TPTP Typed Higher-Order Form with Rank-1 Polymorphism" ;
+    ns5:endPage 55 ;
+    ns5:numPages 15 ;
+    ns5:startPage 41 ;
+    ns6:author <http://ceur-ws.org/Vol-1635/#CezaryiKaliszyk> .
+
+<http://ceur-ws.org/Vol-1635/#paper-06> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1635/> ;
+    ns3:title "Prover-independent Axiom Selection for Automated Theorem Proving in Ontohub" ;
+    ns5:endPage 68 ;
+    ns5:numPages 13 ;
+    ns5:startPage 56 ;
+    ns6:author <http://ceur-ws.org/Vol-1635/#EugeniKuksa> .
+
+<http://ceur-ws.org/Vol-1635/#paper-07> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1635/> ;
+    ns3:title "On Checking Kripke Models for Modal Logic K" ;
+    ns5:endPage 81 ;
+    ns5:numPages 13 ;
+    ns5:startPage 69 ;
+    ns6:author <http://ceur-ws.org/Vol-1635/#JeaniMarieiLagniez> .
+
+<http://ceur-ws.org/Vol-1635/#paper-08> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1635/> ;
+    ns3:title "Towards a Substitution Tree Based Index for Higher-order Resolution Theorem Provers" ;
+    ns5:endPage 94 ;
+    ns5:numPages 13 ;
+    ns5:startPage 82 ;
+    ns6:author <http://ceur-ws.org/Vol-1635/#TomeriLibal> .
+
+<http://ceur-ws.org/Vol-1635/#paper-09> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1635/> ;
+    ns3:title "Ordered Resolution with Straight Dismatching Constraints" ;
+    ns5:endPage 109 ;
+    ns5:numPages 15 ;
+    ns5:startPage 95 ;
+    ns6:author <http://ceur-ws.org/Vol-1635/#AndreasiTeucke> .
+
+<http://ceur-ws.org/Vol-1635/#paper-10> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1635/> ;
+    ns3:title "A Saturation-based Algebraic Reasoner for ELQ" ;
+    ns5:endPage 124 ;
+    ns5:numPages 15 ;
+    ns5:startPage 110 ;
+    ns6:author <http://ceur-ws.org/Vol-1635/#JelenaiVlasenko> .
+
+<http://ceur-ws.org/Vol-1635/#paper-11> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1635/> ;
+    ns3:title "The PIE Environment for First-Order-Based Proving, Interpolating and Eliminating" ;
+    ns5:endPage 138 ;
+    ns5:numPages 14 ;
+    ns5:startPage 125 ;
+    ns6:author <http://ceur-ws.org/Vol-1635/#ChristophiWernhard> .
+
+<http://ceur-ws.org/Vol-1635/> a ns4:Proceedings ;
+    ns4:hasPart <http://ceur-ws.org/Vol-1635/#paper-01>,
+        <http://ceur-ws.org/Vol-1635/#paper-02>,
+        <http://ceur-ws.org/Vol-1635/#paper-03>,
+        <http://ceur-ws.org/Vol-1635/#paper-04>,
+        <http://ceur-ws.org/Vol-1635/#paper-05>,
+        <http://ceur-ws.org/Vol-1635/#paper-06>,
+        <http://ceur-ws.org/Vol-1635/#paper-07>,
+        <http://ceur-ws.org/Vol-1635/#paper-08>,
+        <http://ceur-ws.org/Vol-1635/#paper-09>,
+        <http://ceur-ws.org/Vol-1635/#paper-10>,
+        <http://ceur-ws.org/Vol-1635/#paper-11> ;
+    ns9:issued "2016-07-11T00:00:00+00:00"^^xsd:dateTime ;
+    ns5:presentedAt <http://ceur-ws.org/Vol-1635/#event> ;
+    ns6:editor <http://ceur-ws.org/Vol-1635/#JosefiUrban>,
+        <http://ceur-ws.org/Vol-1635/#PascaliFontaine>,
+        <http://ceur-ws.org/Vol-1635/#StephaniSchulz> .
 

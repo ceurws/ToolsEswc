@@ -1,30 +1,180 @@
-@prefix ns1: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns1: <http://data.semanticweb.org/ns/swc/ontology/#> .
 @prefix ns2: <http://purl.org/ontology/bibo/#> .
-@prefix ns3: <http://purl.org/dc/elements/1.1/> .
-@prefix ns4: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns5: <http://xmlns.com/foaf/0.1/> .
-@prefix ns6: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns3: <http://xmlns.com/foaf/0.1/> .
+@prefix ns4: <http://www.w3.org/2002/07/owl#> .
+@prefix ns5: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns6: <http://purl.org/dc/elements/1.1/#> .
 @prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns8: <http://www.w3.org/2002/07/owl#> .
+@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns9: <http://purl.org/dc/elements/1.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1403/> a ns4:Proceedings ;
-    ns1:issued "2015-07-16T00:00:00+00:00"^^xsd:dateTime ;
-    ns2:presentedAt <http://ceur-ws.org/Vol-1403/#event> ;
-    ns6:editor <http://ceur-ws.org/Vol-1403/#DetlefiPlump> .
+<http://ceur-ws.org/Vol-1403/#AndyiSch%C3%BCrr> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/AndyiSch%C3%BCrr> ;
+    ns3:made <http://ceur-ws.org/Vol-1403/#paper1> ;
+    ns3:name "Andy Schürr" .
 
-<http://ceur-ws.org/Vol-1403/#DetlefiPlump> a ns5:Person ;
-    ns8:sameAs <http://ceur-ws.org/persons/DetlefiPlump> ;
-    ns5:name "Detlef Plump" .
+<http://ceur-ws.org/Vol-1403/#AnnegretiHabel> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/AnnegretiHabel> ;
+    ns3:made <http://ceur-ws.org/Vol-1403/#paper6> ;
+    ns3:name "Annegret Habel" .
 
-<http://ceur-ws.org/Vol-1403/#event> a ns4:WorkshopEvent ;
-    ns4:hasLocation <http://dbpedia.org/resource/Italy> ;
-    ns4:hasPart <http://ceur-ws.org/Vol-1403/#part-ws> ;
-    ns4:isSubEventOf <http://ceur-ws.org/Vol-1403/#conf> ;
+<http://ceur-ws.org/Vol-1403/#AntoineiSpicher> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/AntoineiSpicher> ;
+    ns3:made <http://ceur-ws.org/Vol-1403/#paper4> ;
+    ns3:name "Antoine Spicher" .
+
+<http://ceur-ws.org/Vol-1403/#ChristophiPeuser> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/ChristophiPeuser> ;
+    ns3:made <http://ceur-ws.org/Vol-1403/#paper6> ;
+    ns3:name "Christoph Peuser" .
+
+<http://ceur-ws.org/Vol-1403/#DetlefiPlump> a ns3:Person ;
+    ns5:affiliation "" ;
+    ns4:sameAs <http://ceur-ws.org/persons/DetlefiPlump> ;
+    ns3:name "Detlef Plump" .
+
+<http://ceur-ws.org/Vol-1403/#FrancescoiParisiiPresicce> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/FrancescoiParisiiPresicce> ;
+    ns3:made <http://ceur-ws.org/Vol-1403/#paper3> ;
+    ns3:name "Francesco Parisi Presicce" .
+
+<http://ceur-ws.org/Vol-1403/#IaniMackie> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/IaniMackie> ;
+    ns3:made <http://ceur-ws.org/Vol-1403/#paper5> ;
+    ns3:name "Ian Mackie" .
+
+<http://ceur-ws.org/Vol-1403/#LuidneliMaignan> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/LuidneliMaignan> ;
+    ns3:made <http://ceur-ws.org/Vol-1403/#paper4> ;
+    ns3:name "Luidnel Maignan" .
+
+<http://ceur-ws.org/Vol-1403/#MariusiTempelmeier> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/MariusiTempelmeier> ;
+    ns3:made <http://ceur-ws.org/Vol-1403/#paper7> ;
+    ns3:name "Marius Tempelmeier" .
+
+<http://ceur-ws.org/Vol-1403/#MichaeliL%C3%B6we> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/MichaeliL%C3%B6we> ;
+    ns3:made <http://ceur-ws.org/Vol-1403/#paper7> ;
+    ns3:name "Michael Löwe" .
+
+<http://ceur-ws.org/Vol-1403/#NilsiErikiFlick> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/NilsiErikiFlick> ;
+    ns3:made <http://ceur-ws.org/Vol-1403/#paper8> ;
+    ns3:name "Nils Erik Flick" .
+
+<http://ceur-ws.org/Vol-1403/#PaoloiBottoni> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/PaoloiBottoni> ;
+    ns3:made <http://ceur-ws.org/Vol-1403/#paper3> ;
+    ns3:name "Paolo Bottoni" .
+
+<http://ceur-ws.org/Vol-1403/#RobertoiNavigli> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/RobertoiNavigli> ;
+    ns3:made <http://ceur-ws.org/Vol-1403/#paper3> ;
+    ns3:name "Roberto Navigli" .
+
+<http://ceur-ws.org/Vol-1403/#ShinyaiSato> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/ShinyaiSato> ;
+    ns3:made <http://ceur-ws.org/Vol-1403/#paper5> ;
+    ns3:name "Shinya Sato" .
+
+<http://ceur-ws.org/Vol-1403/#VadimiZaytsev> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/VadimiZaytsev> ;
+    ns3:made <http://ceur-ws.org/Vol-1403/#paper2> ;
+    ns3:name "Vadim Zaytsev" .
+
+<http://ceur-ws.org/Vol-1403/#event> a ns1:WorkshopEvent ;
+    ns1:hasLocation <http://dbpedia.org/resource/Italy> ;
+    ns1:hasPart <http://ceur-ws.org/Vol-1403/#part-GCM> ;
+    ns1:isSubEventOf <http://ceur-ws.org/Vol-1403/#conf> ;
     ns7:beginsAtDatetime "2015-07-20T00:00:00+00:00"^^xsd:dateTime ;
     ns7:endsAtDatetime "2015-07-20T00:00:00+00:00"^^xsd:dateTime ;
-    ns3:license "http://creativecommons.org/publicdomain/zero/1.0/" .
+    ns9:license "http://creativecommons.org/publicdomain/zero/1.0/" .
+
+<http://ceur-ws.org/Vol-1403/#paper1> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1403/> ;
+    ns6:title "20 Years of Concurrent Model Driven Application Engineering with Triple Graph Grammars" ;
+    ns2:endPage 1 ;
+    ns2:numPages 1 ;
+    ns2:startPage 1 ;
+    ns5:author <http://ceur-ws.org/Vol-1403/#AndyiSch%C3%BCrr> .
+
+<http://ceur-ws.org/Vol-1403/#paper2> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1403/> ;
+    ns6:title "Coupled Transformations of Shared Packed Parse Forests" ;
+    ns2:endPage 17 ;
+    ns2:numPages 16 ;
+    ns2:startPage 2 ;
+    ns5:author <http://ceur-ws.org/Vol-1403/#VadimiZaytsev> .
+
+<http://ceur-ws.org/Vol-1403/#paper8> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1403/> ;
+    ns6:title "On Correctness of Graph Programs Relative to Recursively Nested Conditions" ;
+    ns2:endPage 112 ;
+    ns2:numPages 16 ;
+    ns2:startPage 97 ;
+    ns5:author <http://ceur-ws.org/Vol-1403/#NilsiErikiFlick> .
+
+<http://ceur-ws.org/Vol-1403/#paper4> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1403/> ;
+    ns6:title "Global Graph Transformations" ;
+    ns2:endPage 49 ;
+    ns2:numPages 16 ;
+    ns2:startPage 34 ;
+    ns5:author <http://ceur-ws.org/Vol-1403/#AntoineiSpicher>,
+        <http://ceur-ws.org/Vol-1403/#LuidneliMaignan> .
+
+<http://ceur-ws.org/Vol-1403/#paper5> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1403/> ;
+    ns6:title "Parallel Evaluation of Interaction Nets: Some Observations and Examples" ;
+    ns2:endPage 65 ;
+    ns2:numPages 16 ;
+    ns2:startPage 50 ;
+    ns5:author <http://ceur-ws.org/Vol-1403/#IaniMackie>,
+        <http://ceur-ws.org/Vol-1403/#ShinyaiSato> .
+
+<http://ceur-ws.org/Vol-1403/#paper6> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1403/> ;
+    ns6:title "Attribution of Graphs by Composition of M,N-adhesive Categories" ;
+    ns2:endPage 81 ;
+    ns2:numPages 16 ;
+    ns2:startPage 66 ;
+    ns5:author <http://ceur-ws.org/Vol-1403/#AnnegretiHabel>,
+        <http://ceur-ws.org/Vol-1403/#ChristophiPeuser> .
+
+<http://ceur-ws.org/Vol-1403/#paper7> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1403/> ;
+    ns6:title "Single-Pushout Rewriting of Partial Algebras" ;
+    ns2:endPage 96 ;
+    ns2:numPages 15 ;
+    ns2:startPage 82 ;
+    ns5:author <http://ceur-ws.org/Vol-1403/#MariusiTempelmeier>,
+        <http://ceur-ws.org/Vol-1403/#MichaeliL%C3%B6we> .
+
+<http://ceur-ws.org/Vol-1403/#paper3> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1403/> ;
+    ns6:title "Conditions, Constraints and Contracts: On the Use of Annotations for Policy Modeling" ;
+    ns2:endPage 33 ;
+    ns2:numPages 16 ;
+    ns2:startPage 18 ;
+    ns5:author <http://ceur-ws.org/Vol-1403/#FrancescoiParisiiPresicce>,
+        <http://ceur-ws.org/Vol-1403/#PaoloiBottoni>,
+        <http://ceur-ws.org/Vol-1403/#RobertoiNavigli> .
+
+<http://ceur-ws.org/Vol-1403/> a ns1:Proceedings ;
+    ns1:hasPart <http://ceur-ws.org/Vol-1403/#paper1>,
+        <http://ceur-ws.org/Vol-1403/#paper2>,
+        <http://ceur-ws.org/Vol-1403/#paper3>,
+        <http://ceur-ws.org/Vol-1403/#paper4>,
+        <http://ceur-ws.org/Vol-1403/#paper5>,
+        <http://ceur-ws.org/Vol-1403/#paper6>,
+        <http://ceur-ws.org/Vol-1403/#paper7>,
+        <http://ceur-ws.org/Vol-1403/#paper8> ;
+    ns8:issued "2015-07-16T00:00:00+00:00"^^xsd:dateTime ;
+    ns2:presentedAt <http://ceur-ws.org/Vol-1403/#event> ;
+    ns5:editor <http://ceur-ws.org/Vol-1403/#DetlefiPlump> .
 

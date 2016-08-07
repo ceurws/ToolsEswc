@@ -1,31 +1,381 @@
-@prefix ns1: <http://www.w3.org/2002/07/owl#> .
-@prefix ns2: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns3: <http://xmlns.com/foaf/0.1/> .
+@prefix ns1: <http://xmlns.com/foaf/0.1/> .
+@prefix ns2: <http://purl.org/ontology/bibo/#> .
+@prefix ns3: <http://www.w3.org/2002/07/owl#> .
 @prefix ns4: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns5: <http://purl.org/ontology/bibo/#> .
-@prefix ns6: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns5: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns6: <http://purl.org/dc/elements/1.1/#> .
 @prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns8: <http://purl.org/dc/elements/1.1/> .
+@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns9: <http://purl.org/dc/elements/1.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1026/> a ns6:Proceedings ;
-    ns2:issued "2013-08-28T00:00:00+00:00"^^xsd:dateTime ;
-    ns5:presentedAt <http://ceur-ws.org/Vol-1026/#event> ;
-    ns4:editor <http://ceur-ws.org/Vol-1026/#SteffeniLohmann> .
+<http://ceur-ws.org/Vol-1026/#AmitiSheth> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/AmitiSheth> ;
+    ns1:made <http://ceur-ws.org/Vol-1026/#paper8> ;
+    ns1:name "Amit Sheth" .
 
-<http://ceur-ws.org/Vol-1026/#SteffeniLohmann> a ns3:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/SteffeniLohmann> ;
-    ns3:name "Steffen Lohmann" .
+<http://ceur-ws.org/Vol-1026/#AudreyiLarue-Triolet> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/AudreyiLarue-Triolet> ;
+    ns1:made <http://ceur-ws.org/Vol-1026/#paper12> ;
+    ns1:name "Audrey Larue-Triolet" .
 
-<http://ceur-ws.org/Vol-1026/#event> a ns6:WorkshopEvent ;
-    ns6:hasLocation <http://dbpedia.org/resource/Austria> ;
-    ns6:hasPart <http://ceur-ws.org/Vol-1026/#part-CEUR-WS> ;
-    ns6:isSubEventOf <http://ceur-ws.org/Vol-1026/#conf> ;
+<http://ceur-ws.org/Vol-1026/#AxeliPolleres> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/AxeliPolleres> ;
+    ns1:made <http://ceur-ws.org/Vol-1026/#paper10> ;
+    ns1:name "Axel Polleres" .
+
+<http://ceur-ws.org/Vol-1026/#BelginiMutlu> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/BelginiMutlu> ;
+    ns1:made <http://ceur-ws.org/Vol-1026/#paper9> ;
+    ns1:name "Belgin Mutlu" .
+
+<http://ceur-ws.org/Vol-1026/#BettinaiSteger> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/BettinaiSteger> ;
+    ns1:made <http://ceur-ws.org/Vol-1026/#paper7> ;
+    ns1:name "Bettina Steger" .
+
+<http://ceur-ws.org/Vol-1026/#Bj%C3%B8rnariTessem> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/Bj%C3%B8rnariTessem> ;
+    ns1:made <http://ceur-ws.org/Vol-1026/#paper2> ;
+    ns1:name "Bjørnar Tessem" .
+
+<http://ceur-ws.org/Vol-1026/#BjarteiJohansen> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/BjarteiJohansen> ;
+    ns1:made <http://ceur-ws.org/Vol-1026/#paper2> ;
+    ns1:name "Bjarte Johansen" .
+
+<http://ceur-ws.org/Vol-1026/#BorisiVillazon-Terrazas> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/BorisiVillazon-Terrazas> ;
+    ns1:made <http://ceur-ws.org/Vol-1026/#paper4> ;
+    ns1:name "Boris Villazon-Terrazas" .
+
+<http://ceur-ws.org/Vol-1026/#ChristianiHentschel> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/ChristianiHentschel> ;
+    ns1:made <http://ceur-ws.org/Vol-1026/#paper6> ;
+    ns1:name "Christian Hentschel" .
+
+<http://ceur-ws.org/Vol-1026/#ChristophiTrattner> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/ChristophiTrattner> ;
+    ns1:made <http://ceur-ws.org/Vol-1026/#paper11> ;
+    ns1:name "Christoph Trattner" .
+
+<http://ceur-ws.org/Vol-1026/#DieteriTheiler> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/DieteriTheiler> ;
+    ns1:made <http://ceur-ws.org/Vol-1026/#paper11> ;
+    ns1:name "Dieter Theiler" .
+
+<http://ceur-ws.org/Vol-1026/#DominikiKowald> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/DominikiKowald> ;
+    ns1:made <http://ceur-ws.org/Vol-1026/#paper11> ;
+    ns1:name "Dominik Kowald" .
+
+<http://ceur-ws.org/Vol-1026/#EivindiElseth> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/EivindiElseth> ;
+    ns1:made <http://ceur-ws.org/Vol-1026/#paper3> ;
+    ns1:name "Eivind Elseth" .
+
+<http://ceur-ws.org/Vol-1026/#GerwaldiTschinkel> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/GerwaldiTschinkel> ;
+    ns1:made <http://ceur-ws.org/Vol-1026/#paper9> ;
+    ns1:name "Gerwald Tschinkel" .
+
+<http://ceur-ws.org/Vol-1026/#HaraldiSack> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/HaraldiSack> ;
+    ns1:made <http://ceur-ws.org/Vol-1026/#paper6> ;
+    ns1:name "Harald Sack" .
+
+<http://ceur-ws.org/Vol-1026/#IoannisiStavrakantonakis> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/IoannisiStavrakantonakis> ;
+    ns1:made <http://ceur-ws.org/Vol-1026/#paper1> ;
+    ns1:name "Ioannis Stavrakantonakis" .
+
+<http://ceur-ws.org/Vol-1026/#Jean-BaptisteiVeyrieras> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/Jean-BaptisteiVeyrieras> ;
+    ns1:made <http://ceur-ws.org/Vol-1026/#paper12> ;
+    ns1:name "Jean-Baptiste Veyrieras" .
+
+<http://ceur-ws.org/Vol-1026/#JohannesiEschrig> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/JohannesiEschrig> ;
+    ns1:made <http://ceur-ws.org/Vol-1026/#paper6> ;
+    ns1:name "Johannes Eschrig" .
+
+<http://ceur-ws.org/Vol-1026/#Jos%C3%A9-ManueliG%C3%B3mez-P%C3%A9rez> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/Jos%C3%A9-ManueliG%C3%B3mez-P%C3%A9rez> ;
+    ns1:made <http://ceur-ws.org/Vol-1026/#paper4> ;
+    ns1:name "José-Manuel Gómez-Pérez" .
+
+<http://ceur-ws.org/Vol-1026/#KalpaiGunaratna> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/KalpaiGunaratna> ;
+    ns1:made <http://ceur-ws.org/Vol-1026/#paper8> ;
+    ns1:name "Kalpa Gunaratna" .
+
+<http://ceur-ws.org/Vol-1026/#KrishnaprasadiThirunarayan> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/KrishnaprasadiThirunarayan> ;
+    ns1:made <http://ceur-ws.org/Vol-1026/#paper8> ;
+    ns1:name "Krishnaprasad Thirunarayan" .
+
+<http://ceur-ws.org/Vol-1026/#MagaliiJaillard> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/MagaliiJaillard> ;
+    ns1:made <http://ceur-ws.org/Vol-1026/#paper12> ;
+    ns1:name "Magali Jaillard" .
+
+<http://ceur-ws.org/Vol-1026/#MagnusiKnuth> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/MagnusiKnuth> ;
+    ns1:made <http://ceur-ws.org/Vol-1026/#paper6> ;
+    ns1:name "Magnus Knuth" .
+
+<http://ceur-ws.org/Vol-1026/#MichaeliGranitzer> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/MichaeliGranitzer> ;
+    ns1:made <http://ceur-ws.org/Vol-1026/#paper9> ;
+    ns1:name "Michael Granitzer" .
+
+<http://ceur-ws.org/Vol-1026/#PanosiAlexopoulos> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/PanosiAlexopoulos> ;
+    ns1:made <http://ceur-ws.org/Vol-1026/#paper4> ;
+    ns1:name "Panos Alexopoulos" .
+
+<http://ceur-ws.org/Vol-1026/#PatrickiHoefler> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/PatrickiHoefler> ;
+    ns1:made <http://ceur-ws.org/Vol-1026/#paper9> ;
+    ns1:name "Patrick Hoefler" .
+
+<http://ceur-ws.org/Vol-1026/#RicardaiSch%C3%BCler> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/RicardaiSch%C3%BCler> ;
+    ns1:made <http://ceur-ws.org/Vol-1026/#paper6> ;
+    ns1:name "Ricarda Schüler" .
+
+<http://ceur-ws.org/Vol-1026/#SebastianiDennerlein> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/SebastianiDennerlein> ;
+    ns1:made <http://ceur-ws.org/Vol-1026/#paper11> ;
+    ns1:name "Sebastian Dennerlein" .
+
+<http://ceur-ws.org/Vol-1026/#SebastianiSchaffert> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/SebastianiSchaffert> ;
+    ns1:made <http://ceur-ws.org/Vol-1026/#paper7> ;
+    ns1:name "Sebastian Schaffert" .
+
+<http://ceur-ws.org/Vol-1026/#SimoniHangl> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/SimoniHangl> ;
+    ns1:made <http://ceur-ws.org/Vol-1026/#paper5> ;
+    ns1:name "Simon Hangl" .
+
+<http://ceur-ws.org/Vol-1026/#SimoniSperl> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/SimoniSperl> ;
+    ns1:made <http://ceur-ws.org/Vol-1026/#paper10> ;
+    ns1:name "Simon Sperl" .
+
+<http://ceur-ws.org/Vol-1026/#SimoniWalk> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/SimoniWalk> ;
+    ns1:made <http://ceur-ws.org/Vol-1026/#paper11> ;
+    ns1:name "Simon Walk" .
+
+<http://ceur-ws.org/Vol-1026/#St%C3%A9phaneiSchicklin> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/St%C3%A9phaneiSchicklin> ;
+    ns1:made <http://ceur-ws.org/Vol-1026/#paper12> ;
+    ns1:name "Stéphane Schicklin" .
+
+<http://ceur-ws.org/Vol-1026/#StefaniBischof> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/StefaniBischof> ;
+    ns1:made <http://ceur-ws.org/Vol-1026/#paper10> ;
+    ns1:name "Stefan Bischof" .
+
+<http://ceur-ws.org/Vol-1026/#StefaniBunk> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/StefaniBunk> ;
+    ns1:made <http://ceur-ws.org/Vol-1026/#paper6> ;
+    ns1:name "Stefan Bunk" .
+
+<http://ceur-ws.org/Vol-1026/#SteffeniLohmann> a ns1:Person ;
+    ns4:affiliation "" ;
+    ns3:sameAs <http://ceur-ws.org/persons/SteffeniLohmann> ;
+    ns1:name "Steffen Lohmann" .
+
+<http://ceur-ws.org/Vol-1026/#TanjaiBergmann> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/TanjaiBergmann> ;
+    ns1:made <http://ceur-ws.org/Vol-1026/#paper6> ;
+    ns1:name "Tanja Bergmann" .
+
+<http://ceur-ws.org/Vol-1026/#ThomasiKurz> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/ThomasiKurz> ;
+    ns1:made <http://ceur-ws.org/Vol-1026/#paper7> ;
+    ns1:name "Thomas Kurz" .
+
+<http://ceur-ws.org/Vol-1026/#VedraniSabol> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/VedraniSabol> ;
+    ns1:made <http://ceur-ws.org/Vol-1026/#paper9> ;
+    ns1:name "Vedran Sabol" .
+
+<http://ceur-ws.org/Vol-1026/#event> a ns5:WorkshopEvent ;
+    ns5:hasLocation <http://dbpedia.org/resource/Austria> ;
+    ns5:hasPart <http://ceur-ws.org/Vol-1026/#part-ISEM-PD> ;
+    ns5:isSubEventOf <http://ceur-ws.org/Vol-1026/#conf> ;
     ns7:beginsAtDatetime "2013-09-04T00:00:00+00:00"^^xsd:dateTime ;
     ns7:endsAtDatetime "2013-09-06T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:license "http://choosealicense.com/licenses/no-license/" ;
+    ns9:license "http://choosealicense.com/licenses/no-license/" ;
     rdfs:seeAlso <http://ceur-ws.org/Vol-932/#event> .
+
+<http://ceur-ws.org/Vol-1026/#AndreasiThalhammer> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/AndreasiThalhammer> ;
+    ns1:made <http://ceur-ws.org/Vol-1026/#paper1>,
+        <http://ceur-ws.org/Vol-1026/#paper5> ;
+    ns1:name "Andreas Thalhammer" .
+
+<http://ceur-ws.org/Vol-1026/#CsabaiVeres> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/CsabaiVeres> ;
+    ns1:made <http://ceur-ws.org/Vol-1026/#paper2>,
+        <http://ceur-ws.org/Vol-1026/#paper3> ;
+    ns1:name "Csaba Veres" .
+
+<http://ceur-ws.org/Vol-1026/#IoaniToma> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/IoaniToma> ;
+    ns1:made <http://ceur-ws.org/Vol-1026/#paper1>,
+        <http://ceur-ws.org/Vol-1026/#paper5> ;
+    ns1:name "Ioan Toma" .
+
+<http://ceur-ws.org/Vol-1026/#paper3> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1026/> ;
+    ns6:title "Schema.org for the Semantic Web with MaDaME" ;
+    ns2:endPage 15 ;
+    ns2:numPages 5 ;
+    ns2:startPage 11 ;
+    ns4:author <http://ceur-ws.org/Vol-1026/#CsabaiVeres>,
+        <http://ceur-ws.org/Vol-1026/#EivindiElseth> .
+
+<http://ceur-ws.org/Vol-1026/#paper1> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1026/> ;
+    ns6:title "Diversity-Aware Clustering of SIOC Posts" ;
+    ns2:endPage 5 ;
+    ns2:numPages 5 ;
+    ns2:startPage 1 ;
+    ns4:author <http://ceur-ws.org/Vol-1026/#AndreasiThalhammer>,
+        <http://ceur-ws.org/Vol-1026/#IoaniToma>,
+        <http://ceur-ws.org/Vol-1026/#IoannisiStavrakantonakis> .
+
+<http://ceur-ws.org/Vol-1026/#paper10> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1026/> ;
+    ns6:title "City Data Pipeline – A System for Making Open Data Useful for Cities" ;
+    ns2:endPage 49 ;
+    ns2:numPages 5 ;
+    ns2:startPage 45 ;
+    ns4:author <http://ceur-ws.org/Vol-1026/#AxeliPolleres>,
+        <http://ceur-ws.org/Vol-1026/#SimoniSperl>,
+        <http://ceur-ws.org/Vol-1026/#StefaniBischof> .
+
+<http://ceur-ws.org/Vol-1026/#paper2> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1026/> ;
+    ns6:title "Mobile Location-Driven Associative Search in DBpedia with Tag Clouds" ;
+    ns2:endPage 10 ;
+    ns2:numPages 5 ;
+    ns2:startPage 6 ;
+    ns4:author <http://ceur-ws.org/Vol-1026/#Bj%C3%B8rnariTessem>,
+        <http://ceur-ws.org/Vol-1026/#BjarteiJohansen>,
+        <http://ceur-ws.org/Vol-1026/#CsabaiVeres> .
+
+<http://ceur-ws.org/Vol-1026/#paper4> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1026/> ;
+    ns6:title "Knowledge Tagger: Customizable Semantic Entity Resolution using Ontological Evidence" ;
+    ns2:endPage 19 ;
+    ns2:numPages 4 ;
+    ns2:startPage 16 ;
+    ns4:author <http://ceur-ws.org/Vol-1026/#BorisiVillazon-Terrazas>,
+        <http://ceur-ws.org/Vol-1026/#Jos%C3%A9-ManueliG%C3%B3mez-P%C3%A9rez>,
+        <http://ceur-ws.org/Vol-1026/#PanosiAlexopoulos> .
+
+<http://ceur-ws.org/Vol-1026/#paper5> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1026/> ;
+    ns6:title "Introducing a Diversity-Aware Drupal Extension" ;
+    ns2:endPage 24 ;
+    ns2:numPages 5 ;
+    ns2:startPage 20 ;
+    ns4:author <http://ceur-ws.org/Vol-1026/#AndreasiThalhammer>,
+        <http://ceur-ws.org/Vol-1026/#IoaniToma>,
+        <http://ceur-ws.org/Vol-1026/#SimoniHangl> .
+
+<http://ceur-ws.org/Vol-1026/#paper7> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1026/> ;
+    ns6:title "Resource Description Graph Views for Configuring Linked Data Visualizations" ;
+    ns2:endPage 34 ;
+    ns2:numPages 5 ;
+    ns2:startPage 30 ;
+    ns4:author <http://ceur-ws.org/Vol-1026/#BettinaiSteger>,
+        <http://ceur-ws.org/Vol-1026/#SebastianiSchaffert>,
+        <http://ceur-ws.org/Vol-1026/#ThomasiKurz> .
+
+<http://ceur-ws.org/Vol-1026/#paper8> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1026/> ;
+    ns6:title "Types of Property Pairs and Alignment on Linked Datasets – A Preliminary Analysis" ;
+    ns2:endPage 39 ;
+    ns2:numPages 5 ;
+    ns2:startPage 35 ;
+    ns4:author <http://ceur-ws.org/Vol-1026/#AmitiSheth>,
+        <http://ceur-ws.org/Vol-1026/#KalpaiGunaratna>,
+        <http://ceur-ws.org/Vol-1026/#KrishnaprasadiThirunarayan> .
+
+<http://ceur-ws.org/Vol-1026/#paper12> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1026/> ;
+    ns6:title "A Comprehensive Microbial Knowledge Base to Support the Development of In-vitro Diagnostic Solutions in Infectious Diseases" ;
+    ns2:endPage 59 ;
+    ns2:numPages 5 ;
+    ns2:startPage 55 ;
+    ns4:author <http://ceur-ws.org/Vol-1026/#AudreyiLarue-Triolet>,
+        <http://ceur-ws.org/Vol-1026/#Jean-BaptisteiVeyrieras>,
+        <http://ceur-ws.org/Vol-1026/#MagaliiJaillard>,
+        <http://ceur-ws.org/Vol-1026/#St%C3%A9phaneiSchicklin> .
+
+<http://ceur-ws.org/Vol-1026/#paper11> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1026/> ;
+    ns6:title "The Social Semantic Server – A Framework to Provide Services on Social Semantic Network Data" ;
+    ns2:endPage 54 ;
+    ns2:numPages 5 ;
+    ns2:startPage 50 ;
+    ns4:author <http://ceur-ws.org/Vol-1026/#ChristophiTrattner>,
+        <http://ceur-ws.org/Vol-1026/#DieteriTheiler>,
+        <http://ceur-ws.org/Vol-1026/#DominikiKowald>,
+        <http://ceur-ws.org/Vol-1026/#SebastianiDennerlein>,
+        <http://ceur-ws.org/Vol-1026/#SimoniWalk> .
+
+<http://ceur-ws.org/Vol-1026/#paper9> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1026/> ;
+    ns6:title "Automated Visualization Support for Linked Research Data" ;
+    ns2:endPage 44 ;
+    ns2:numPages 5 ;
+    ns2:startPage 40 ;
+    ns4:author <http://ceur-ws.org/Vol-1026/#BelginiMutlu>,
+        <http://ceur-ws.org/Vol-1026/#GerwaldiTschinkel>,
+        <http://ceur-ws.org/Vol-1026/#MichaeliGranitzer>,
+        <http://ceur-ws.org/Vol-1026/#PatrickiHoefler>,
+        <http://ceur-ws.org/Vol-1026/#VedraniSabol> .
+
+<http://ceur-ws.org/Vol-1026/#paper6> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1026/> ;
+    ns6:title "Linked Soccer Data" ;
+    ns2:endPage 29 ;
+    ns2:numPages 5 ;
+    ns2:startPage 25 ;
+    ns4:author <http://ceur-ws.org/Vol-1026/#ChristianiHentschel>,
+        <http://ceur-ws.org/Vol-1026/#HaraldiSack>,
+        <http://ceur-ws.org/Vol-1026/#JohannesiEschrig>,
+        <http://ceur-ws.org/Vol-1026/#MagnusiKnuth>,
+        <http://ceur-ws.org/Vol-1026/#RicardaiSch%C3%BCler>,
+        <http://ceur-ws.org/Vol-1026/#StefaniBunk>,
+        <http://ceur-ws.org/Vol-1026/#TanjaiBergmann> .
+
+<http://ceur-ws.org/Vol-1026/> a ns5:Proceedings ;
+    ns5:hasPart <http://ceur-ws.org/Vol-1026/#paper1>,
+        <http://ceur-ws.org/Vol-1026/#paper10>,
+        <http://ceur-ws.org/Vol-1026/#paper11>,
+        <http://ceur-ws.org/Vol-1026/#paper12>,
+        <http://ceur-ws.org/Vol-1026/#paper2>,
+        <http://ceur-ws.org/Vol-1026/#paper3>,
+        <http://ceur-ws.org/Vol-1026/#paper4>,
+        <http://ceur-ws.org/Vol-1026/#paper5>,
+        <http://ceur-ws.org/Vol-1026/#paper6>,
+        <http://ceur-ws.org/Vol-1026/#paper7>,
+        <http://ceur-ws.org/Vol-1026/#paper8>,
+        <http://ceur-ws.org/Vol-1026/#paper9> ;
+    ns8:issued "2013-08-28T00:00:00+00:00"^^xsd:dateTime ;
+    ns2:presentedAt <http://ceur-ws.org/Vol-1026/#event> ;
+    ns4:editor <http://ceur-ws.org/Vol-1026/#SteffeniLohmann> .
 

@@ -1,41 +1,428 @@
-@prefix ns1: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns2: <http://purl.org/dc/elements/1.1/> .
-@prefix ns3: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns4: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns5: <http://www.w3.org/2002/07/owl#> .
+@prefix ns1: <http://www.w3.org/2002/07/owl#> .
+@prefix ns2: <http://purl.org/ontology/bibo/#> .
+@prefix ns3: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns4: <http://xmlns.com/foaf/0.1/> .
+@prefix ns5: <http://purl.org/dc/elements/1.1/#> .
 @prefix ns6: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns7: <http://xmlns.com/foaf/0.1/> .
-@prefix ns8: <http://purl.org/ontology/bibo/#> .
+@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns9: <http://purl.org/dc/elements/1.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1524/> a ns1:Proceedings ;
-    ns4:issued "2015-12-01T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:presentedAt <http://ceur-ws.org/Vol-1524/#event> ;
+<http://ceur-ws.org/Vol-1524/#ArnaudiBlouin> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/ArnaudiBlouin> ;
+    ns4:made <http://ceur-ws.org/Vol-1524/#paper12> ;
+    ns4:name "Arnaud Blouin" .
+
+<http://ceur-ws.org/Vol-1524/#BenoitiCombemale> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/BenoitiCombemale> ;
+    ns4:made <http://ceur-ws.org/Vol-1524/#paper12> ;
+    ns4:name "Benoit Combemale" .
+
+<http://ceur-ws.org/Vol-1524/#C%C3%A9driciBrun> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/C%C3%A9driciBrun> ;
+    ns4:made <http://ceur-ws.org/Vol-1524/#paper12> ;
+    ns4:name "Cédric Brun" .
+
+<http://ceur-ws.org/Vol-1524/#ChristoffiB%C3%BCrger> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/ChristoffiB%C3%BCrger> ;
+    ns4:made <http://ceur-ws.org/Vol-1524/#paper10> ;
+    ns4:name "Christoff Bürger" .
+
+<http://ceur-ws.org/Vol-1524/#D%C3%A1nieliStein> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/D%C3%A1nieliStein> ;
+    ns4:made <http://ceur-ws.org/Vol-1524/#paper21> ;
+    ns4:name "Dániel Stein" .
+
+<http://ceur-ws.org/Vol-1524/#D%C3%A1nieliVarr%C3%B3> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/D%C3%A1nieliVarr%C3%B3> ;
+    ns4:made <http://ceur-ws.org/Vol-1524/#paper2> ;
+    ns4:name "Dániel Varró" .
+
+<http://ceur-ws.org/Vol-1524/#DennisiWagelaar> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/DennisiWagelaar> ;
+    ns4:made <http://ceur-ws.org/Vol-1524/#paper16> ;
+    ns4:name "Dennis Wagelaar" .
+
+<http://ceur-ws.org/Vol-1524/#DidieriVojtisek> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/DidieriVojtisek> ;
+    ns4:made <http://ceur-ws.org/Vol-1524/#paper12> ;
+    ns4:name "Didier Vojtisek" .
+
+<http://ceur-ws.org/Vol-1524/#ErwaniBousse> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/ErwaniBousse> ;
+    ns4:made <http://ceur-ws.org/Vol-1524/#paper12> ;
+    ns4:name "Erwan Bousse" .
+
+<http://ceur-ws.org/Vol-1524/#G%C3%A9rardiPaligot> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/G%C3%A9rardiPaligot> ;
+    ns4:made <http://ceur-ws.org/Vol-1524/#paper11> ;
+    ns4:name "Gérard Paligot" .
+
+<http://ceur-ws.org/Vol-1524/#JulieniDeAntoni> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/JulieniDeAntoni> ;
+    ns4:made <http://ceur-ws.org/Vol-1524/#paper12> ;
+    ns4:name "Julien DeAntoni" .
+
+<http://ceur-ws.org/Vol-1524/#LouisiM.iRose> a ns4:Person ;
+    ns6:affiliation "" ;
+    ns1:sameAs <http://ceur-ws.org/persons/LouisiM.iRose> ;
+    ns4:name "Louis M. Rose" .
+
+<http://ceur-ws.org/Vol-1524/#LuciaiHappe> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/LuciaiHappe> ;
+    ns4:made <http://ceur-ws.org/Vol-1524/#paper8> ;
+    ns4:name "Lucia Happe" .
+
+<http://ceur-ws.org/Vol-1524/#M%C3%A1rtoniB%C3%BAr> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/M%C3%A1rtoniB%C3%BAr> ;
+    ns4:made <http://ceur-ws.org/Vol-1524/#paper19> ;
+    ns4:name "Márton Búr" .
+
+<http://ceur-ws.org/Vol-1524/#ManueliWimmer> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/ManueliWimmer> ;
+    ns4:made <http://ceur-ws.org/Vol-1524/#paper5> ;
+    ns4:name "Manuel Wimmer" .
+
+<http://ceur-ws.org/Vol-1524/#MartiniMonperrus> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/MartiniMonperrus> ;
+    ns4:made <http://ceur-ws.org/Vol-1524/#paper11> ;
+    ns4:name "Martin Monperrus" .
+
+<http://ceur-ws.org/Vol-1524/#MatthiasiSchmidt> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/MatthiasiSchmidt> ;
+    ns4:made <http://ceur-ws.org/Vol-1524/#paper17> ;
+    ns4:name "Matthias Schmidt" .
+
+<http://ceur-ws.org/Vol-1524/#NicolasiPetitprez> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/NicolasiPetitprez> ;
+    ns4:made <http://ceur-ws.org/Vol-1524/#paper11> ;
+    ns4:name "Nicolas Petitprez" .
+
+<http://ceur-ws.org/Vol-1524/#OlafiGunkel> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/OlafiGunkel> ;
+    ns4:made <http://ceur-ws.org/Vol-1524/#paper17> ;
+    ns4:name "Olaf Gunkel" .
+
+<http://ceur-ws.org/Vol-1524/#OlivieriBarais> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/OlivieriBarais> ;
+    ns4:made <http://ceur-ws.org/Vol-1524/#paper12> ;
+    ns4:name "Olivier Barais" .
+
+<http://ceur-ws.org/Vol-1524/#Oszk%C3%A1riSemer%C3%A1th> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/Oszk%C3%A1riSemer%C3%A1th> ;
+    ns4:made <http://ceur-ws.org/Vol-1524/#paper2> ;
+    ns4:name "Oszkár Semeráth" .
+
+<http://ceur-ws.org/Vol-1524/#StefaniLindel> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/StefaniLindel> ;
+    ns4:made <http://ceur-ws.org/Vol-1524/#paper18> ;
+    ns4:name "Stefan Lindel" .
+
+<http://ceur-ws.org/Vol-1524/#TanjaiMayerhofer> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/TanjaiMayerhofer> ;
+    ns4:made <http://ceur-ws.org/Vol-1524/#paper5> ;
+    ns4:name "Tanja Mayerhofer" .
+
+<http://ceur-ws.org/Vol-1524/#ThomasiDegueule> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/ThomasiDegueule> ;
+    ns4:made <http://ceur-ws.org/Vol-1524/#paper12> ;
+    ns4:name "Thomas Degueule" .
+
+<http://ceur-ws.org/Vol-1524/#event> a ns3:WorkshopEvent ;
+    ns3:hasLocation <http://dbpedia.org/resource/Italy> ;
+    ns3:hasPart <http://ceur-ws.org/Vol-1524/#part-TTC> ;
+    ns3:isSubEventOf <http://ceur-ws.org/Vol-1524/#conf> ;
+    ns8:beginsAtDatetime "2015-07-24T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:endsAtDatetime "2015-07-24T00:00:00+00:00"^^xsd:dateTime ;
+    ns9:license "http://creativecommons.org/publicdomain/zero/1.0/" ;
+    rdfs:seeAlso <http://ceur-ws.org/Vol-1305/#event> .
+
+<http://ceur-ws.org/Vol-1524/#AlbertiZ%C3%BCndorf> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/AlbertiZ%C3%BCndorf> ;
+    ns4:made <http://ceur-ws.org/Vol-1524/#paper17>,
+        <http://ceur-ws.org/Vol-1524/#paper18> ;
+    ns4:name "Albert Zündorf" .
+
+<http://ceur-ws.org/Vol-1524/#FilipiK%C5%99ikava> a ns4:Person ;
+    ns6:affiliation "" ;
+    ns1:sameAs <http://ceur-ws.org/persons/FilipiK%C5%99ikava> ;
+    ns4:made <http://ceur-ws.org/Vol-1524/#paper22> ;
+    ns4:name "Filip Křikava" .
+
+<http://ceur-ws.org/Vol-1524/#G%C3%A9zaiKulcs%C3%A1r> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/G%C3%A9zaiKulcs%C3%A1r> ;
+    ns4:made <http://ceur-ws.org/Vol-1524/#paper20>,
+        <http://ceur-ws.org/Vol-1524/#paper3> ;
+    ns4:name "Géza Kulcsár" .
+
+<http://ceur-ws.org/Vol-1524/#GeorgiHinkel> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/GeorgiHinkel> ;
+    ns4:made <http://ceur-ws.org/Vol-1524/#paper8>,
+        <http://ceur-ws.org/Vol-1524/#paper9> ;
+    ns4:name "Georg Hinkel" .
+
+<http://ceur-ws.org/Vol-1524/#MalteiLochau> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/MalteiLochau> ;
+    ns4:made <http://ceur-ws.org/Vol-1524/#paper20>,
+        <http://ceur-ws.org/Vol-1524/#paper3> ;
+    ns4:name "Malte Lochau" .
+
+<http://ceur-ws.org/Vol-1524/#SveniPeldszus> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/SveniPeldszus> ;
+    ns4:made <http://ceur-ws.org/Vol-1524/#paper20>,
+        <http://ceur-ws.org/Vol-1524/#paper3> ;
+    ns4:name "Sven Peldszus" .
+
+<http://ceur-ws.org/Vol-1524/#paper10> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1524/> ;
+    ns5:title "fUML Activity Diagrams with RAG-controlled Rewriting: A RACR Solution of The TTC 2015 Model Execution Case" ;
+    ns2:endPage 36 ;
+    ns2:numPages 10 ;
+    ns2:section <http://ceur-ws.org/Vol-1524/#TheModelExecutionCase> ;
+    ns2:startPage 27 ;
+    ns6:author <http://ceur-ws.org/Vol-1524/#ChristoffiB%C3%BCrger> .
+
+<http://ceur-ws.org/Vol-1524/#paper13> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1524/> ;
+    ns5:title "Solving the TTC Model Execution Case with FunnyQT" ;
+    ns2:endPage 51 ;
+    ns2:numPages 5 ;
+    ns2:section <http://ceur-ws.org/Vol-1524/#TheModelExecutionCase> ;
+    ns2:startPage 47 ;
+    ns6:author <http://ceur-ws.org/Vol-1524/#TassiloiHorn> .
+
+<http://ceur-ws.org/Vol-1524/#paper14> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1524/> ;
+    ns5:title "Solving the TTC Java Refactoring Case with FunnyQT" ;
+    ns2:endPage 87 ;
+    ns2:numPages 5 ;
+    ns2:section <http://ceur-ws.org/Vol-1524/#TheJavaRefactoringCase> ;
+    ns2:startPage 83 ;
+    ns6:author <http://ceur-ws.org/Vol-1524/#TassiloiHorn> .
+
+<http://ceur-ws.org/Vol-1524/#paper15> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1524/> ;
+    ns5:title "Solving the TTC Train Benchmark Case with FunnyQT" ;
+    ns2:endPage 151 ;
+    ns2:numPages 5 ;
+    ns2:section <http://ceur-ws.org/Vol-1524/#TheTrainBenchmarkCase> ;
+    ns2:startPage 147 ;
+    ns6:author <http://ceur-ws.org/Vol-1524/#TassiloiHorn> .
+
+<http://ceur-ws.org/Vol-1524/#paper16> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1524/> ;
+    ns5:title "The ATL/EMFTVM Solution to the Train Benchmark Case" ;
+    ns2:endPage 156 ;
+    ns2:numPages 5 ;
+    ns2:section <http://ceur-ws.org/Vol-1524/#TheTrainBenchmarkCase> ;
+    ns2:startPage 152 ;
+    ns6:author <http://ceur-ws.org/Vol-1524/#DennisiWagelaar> .
+
+<http://ceur-ws.org/Vol-1524/#paper22> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1524/> ;
+    ns5:title "Solving the TTC'15 Train Benchmark Case Study with SIGMA" ;
+    ns2:endPage 175 ;
+    ns2:numPages 9 ;
+    ns2:section <http://ceur-ws.org/Vol-1524/#TheTrainBenchmarkCase> ;
+    ns2:startPage 167 ;
+    ns6:author <http://ceur-ws.org/Vol-1524/#FilipiK%C5%99ikava> .
+
+<http://ceur-ws.org/Vol-1524/#paper9> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1524/> ;
+    ns5:title "An NMF Solution to the Java Refactoring Case" ;
+    ns2:endPage 99 ;
+    ns2:numPages 5 ;
+    ns2:section <http://ceur-ws.org/Vol-1524/#TheJavaRefactoringCase> ;
+    ns2:startPage 95 ;
+    ns6:author <http://ceur-ws.org/Vol-1524/#GeorgiHinkel> .
+
+<http://ceur-ws.org/Vol-1524/#G%C3%A1boriSz%C3%A1rnyas> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/G%C3%A1boriSz%C3%A1rnyas> ;
+    ns4:made <http://ceur-ws.org/Vol-1524/#paper19>,
+        <http://ceur-ws.org/Vol-1524/#paper2>,
+        <http://ceur-ws.org/Vol-1524/#paper21> ;
+    ns4:name "Gábor Szárnyas" .
+
+<http://ceur-ws.org/Vol-1524/#Istv%C3%A1niR%C3%A1th> a ns4:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/Istv%C3%A1niR%C3%A1th> ;
+    ns4:made <http://ceur-ws.org/Vol-1524/#paper19>,
+        <http://ceur-ws.org/Vol-1524/#paper2>,
+        <http://ceur-ws.org/Vol-1524/#paper21> ;
+    ns4:name "István Ráth" .
+
+<http://ceur-ws.org/Vol-1524/#paper18> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1524/> ;
+    ns5:title "The SDMLib Solution to the Model Execution Case for TTC2015" ;
+    ns2:endPage 46 ;
+    ns2:numPages 10 ;
+    ns2:section <http://ceur-ws.org/Vol-1524/#TheModelExecutionCase> ;
+    ns2:startPage 37 ;
+    ns6:author <http://ceur-ws.org/Vol-1524/#AlbertiZ%C3%BCndorf>,
+        <http://ceur-ws.org/Vol-1524/#StefaniLindel> .
+
+<http://ceur-ws.org/Vol-1524/#paper5> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1524/> ;
+    ns5:title "The TTC 2015 Model Execution Case" ;
+    ns2:endPage 18 ;
+    ns2:numPages 17 ;
+    ns2:section <http://ceur-ws.org/Vol-1524/#TheModelExecutionCase> ;
+    ns2:startPage 2 ;
+    ns6:author <http://ceur-ws.org/Vol-1524/#ManueliWimmer>,
+        <http://ceur-ws.org/Vol-1524/#TanjaiMayerhofer> .
+
+<http://ceur-ws.org/Vol-1524/#paper8> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1524/> ;
+    ns5:title "An NMF Solution to the Train Benchmark Case" ;
+    ns2:endPage 146 ;
+    ns2:numPages 5 ;
+    ns2:section <http://ceur-ws.org/Vol-1524/#TheTrainBenchmarkCase> ;
+    ns2:startPage 142 ;
+    ns6:author <http://ceur-ws.org/Vol-1524/#GeorgiHinkel>,
+        <http://ceur-ws.org/Vol-1524/#LuciaiHappe> .
+
+<http://ceur-ws.org/Vol-1524/#TassiloiHorn> a ns4:Person ;
+    ns6:affiliation "" ;
+    ns1:sameAs <http://ceur-ws.org/persons/TassiloiHorn> ;
+    ns4:made <http://ceur-ws.org/Vol-1524/#paper13>,
+        <http://ceur-ws.org/Vol-1524/#paper14>,
+        <http://ceur-ws.org/Vol-1524/#paper15> ;
+    ns4:name "Tassilo Horn" .
+
+<http://ceur-ws.org/Vol-1524/#paper11> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1524/> ;
+    ns5:title "Refactoring Java Programs using Spoon" ;
+    ns2:endPage 94 ;
+    ns2:numPages 7 ;
+    ns2:section <http://ceur-ws.org/Vol-1524/#TheJavaRefactoringCase> ;
+    ns2:startPage 88 ;
+    ns6:author <http://ceur-ws.org/Vol-1524/#G%C3%A9rardiPaligot>,
+        <http://ceur-ws.org/Vol-1524/#MartiniMonperrus>,
+        <http://ceur-ws.org/Vol-1524/#NicolasiPetitprez> .
+
+<http://ceur-ws.org/Vol-1524/#paper17> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1524/> ;
+    ns5:title "The SDMLib Solution to the Java Refactoring Case for TTC2015" ;
+    ns2:endPage 127 ;
+    ns2:numPages 5 ;
+    ns2:section <http://ceur-ws.org/Vol-1524/#TheJavaRefactoringCase> ;
+    ns2:startPage 123 ;
+    ns6:author <http://ceur-ws.org/Vol-1524/#AlbertiZ%C3%BCndorf>,
+        <http://ceur-ws.org/Vol-1524/#MatthiasiSchmidt>,
+        <http://ceur-ws.org/Vol-1524/#OlafiGunkel> .
+
+<http://ceur-ws.org/Vol-1524/#paper19> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1524/> ;
+    ns5:title "Train Benchmark Case: an EMF-INCQUERY Solution" ;
+    ns2:endPage 166 ;
+    ns2:numPages 10 ;
+    ns2:section <http://ceur-ws.org/Vol-1524/#TheTrainBenchmarkCase> ;
+    ns2:startPage 157 ;
+    ns6:author <http://ceur-ws.org/Vol-1524/#G%C3%A1boriSz%C3%A1rnyas>,
+        <http://ceur-ws.org/Vol-1524/#Istv%C3%A1niR%C3%A1th>,
+        <http://ceur-ws.org/Vol-1524/#M%C3%A1rtoniB%C3%BAr> .
+
+<http://ceur-ws.org/Vol-1524/#paper20> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1524/> ;
+    ns5:title "A Solution to the Java Refactoring Case Study using eMoflon" ;
+    ns2:endPage 122 ;
+    ns2:numPages 5 ;
+    ns2:section <http://ceur-ws.org/Vol-1524/#TheJavaRefactoringCase> ;
+    ns2:startPage 118 ;
+    ns6:author <http://ceur-ws.org/Vol-1524/#G%C3%A9zaiKulcs%C3%A1r>,
+        <http://ceur-ws.org/Vol-1524/#MalteiLochau>,
+        <http://ceur-ws.org/Vol-1524/#SveniPeldszus> .
+
+<http://ceur-ws.org/Vol-1524/#paper21> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1524/> ;
+    ns5:title "Java Refactoring Case: A VIATRA Solution" ;
+    ns2:endPage 117 ;
+    ns2:numPages 18 ;
+    ns2:section <http://ceur-ws.org/Vol-1524/#TheJavaRefactoringCase> ;
+    ns2:startPage 100 ;
+    ns6:author <http://ceur-ws.org/Vol-1524/#D%C3%A1nieliStein>,
+        <http://ceur-ws.org/Vol-1524/#G%C3%A1boriSz%C3%A1rnyas>,
+        <http://ceur-ws.org/Vol-1524/#Istv%C3%A1niR%C3%A1th> .
+
+<http://ceur-ws.org/Vol-1524/#paper3> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1524/> ;
+    ns5:title "Object-oriented Refactoring of Java Programs using Graph Transformation" ;
+    ns2:endPage 82 ;
+    ns2:numPages 30 ;
+    ns2:section <http://ceur-ws.org/Vol-1524/#TheJavaRefactoringCase> ;
+    ns2:startPage 53 ;
+    ns6:author <http://ceur-ws.org/Vol-1524/#G%C3%A9zaiKulcs%C3%A1r>,
+        <http://ceur-ws.org/Vol-1524/#MalteiLochau>,
+        <http://ceur-ws.org/Vol-1524/#SveniPeldszus> .
+
+<http://ceur-ws.org/Vol-1524/#paper2> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1524/> ;
+    ns5:title "The TTC 2015 Train Benchmark Case for Incremental Model Validation" ;
+    ns2:endPage 141 ;
+    ns2:numPages 13 ;
+    ns2:section <http://ceur-ws.org/Vol-1524/#TheTrainBenchmarkCase> ;
+    ns2:startPage 129 ;
+    ns6:author <http://ceur-ws.org/Vol-1524/#D%C3%A1nieliVarr%C3%B3>,
+        <http://ceur-ws.org/Vol-1524/#G%C3%A1boriSz%C3%A1rnyas>,
+        <http://ceur-ws.org/Vol-1524/#Istv%C3%A1niR%C3%A1th>,
+        <http://ceur-ws.org/Vol-1524/#Oszk%C3%A1riSemer%C3%A1th> .
+
+<http://ceur-ws.org/Vol-1524/#TheModelExecutionCase> a ns3:SessionEvent ;
+    ns3:partOf <http://ceur-ws.org/Vol-1524/> ;
+    ns5:title "The Model Execution Case" .
+
+<http://ceur-ws.org/Vol-1524/#TheTrainBenchmarkCase> a ns3:SessionEvent ;
+    ns3:partOf <http://ceur-ws.org/Vol-1524/> ;
+    ns5:title "The Train Benchmark Case" .
+
+<http://ceur-ws.org/Vol-1524/#TheJavaRefactoringCase> a ns3:SessionEvent ;
+    ns3:partOf <http://ceur-ws.org/Vol-1524/> ;
+    ns5:title "The Java Refactoring Case" .
+
+<http://ceur-ws.org/Vol-1524/#paper12> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1524/> ;
+    ns5:title "A Solution to the TTC'15 Model Execution Case Using the GEMOC Studio" ;
+    ns2:endPage 26 ;
+    ns2:numPages 8 ;
+    ns2:section <http://ceur-ws.org/Vol-1524/#TheModelExecutionCase> ;
+    ns2:startPage 19 ;
+    ns6:author <http://ceur-ws.org/Vol-1524/#ArnaudiBlouin>,
+        <http://ceur-ws.org/Vol-1524/#BenoitiCombemale>,
+        <http://ceur-ws.org/Vol-1524/#C%C3%A9driciBrun>,
+        <http://ceur-ws.org/Vol-1524/#DidieriVojtisek>,
+        <http://ceur-ws.org/Vol-1524/#ErwaniBousse>,
+        <http://ceur-ws.org/Vol-1524/#JulieniDeAntoni>,
+        <http://ceur-ws.org/Vol-1524/#OlivieriBarais>,
+        <http://ceur-ws.org/Vol-1524/#ThomasiDegueule> .
+
+<http://ceur-ws.org/Vol-1524/> a ns3:Proceedings ;
+    ns3:hasPart <http://ceur-ws.org/Vol-1524/#paper10>,
+        <http://ceur-ws.org/Vol-1524/#paper11>,
+        <http://ceur-ws.org/Vol-1524/#paper12>,
+        <http://ceur-ws.org/Vol-1524/#paper13>,
+        <http://ceur-ws.org/Vol-1524/#paper14>,
+        <http://ceur-ws.org/Vol-1524/#paper15>,
+        <http://ceur-ws.org/Vol-1524/#paper16>,
+        <http://ceur-ws.org/Vol-1524/#paper17>,
+        <http://ceur-ws.org/Vol-1524/#paper18>,
+        <http://ceur-ws.org/Vol-1524/#paper19>,
+        <http://ceur-ws.org/Vol-1524/#paper2>,
+        <http://ceur-ws.org/Vol-1524/#paper20>,
+        <http://ceur-ws.org/Vol-1524/#paper21>,
+        <http://ceur-ws.org/Vol-1524/#paper22>,
+        <http://ceur-ws.org/Vol-1524/#paper3>,
+        <http://ceur-ws.org/Vol-1524/#paper5>,
+        <http://ceur-ws.org/Vol-1524/#paper8>,
+        <http://ceur-ws.org/Vol-1524/#paper9> ;
+    ns3:hasSession <http://ceur-ws.org/Vol-1524/#TheJavaRefactoringCase>,
+        <http://ceur-ws.org/Vol-1524/#TheModelExecutionCase>,
+        <http://ceur-ws.org/Vol-1524/#TheTrainBenchmarkCase> ;
+    ns7:issued "2015-12-01T00:00:00+00:00"^^xsd:dateTime ;
+    ns2:presentedAt <http://ceur-ws.org/Vol-1524/#event> ;
     ns6:editor <http://ceur-ws.org/Vol-1524/#FilipiK%C5%99ikava>,
         <http://ceur-ws.org/Vol-1524/#LouisiM.iRose>,
         <http://ceur-ws.org/Vol-1524/#TassiloiHorn> .
-
-<http://ceur-ws.org/Vol-1524/#FilipiK%C5%99ikava> a ns7:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/FilipiK%C5%99ikava> ;
-    ns7:name "Filip Křikava" .
-
-<http://ceur-ws.org/Vol-1524/#LouisiM.iRose> a ns7:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/LouisiM.iRose> ;
-    ns7:name "Louis M. Rose" .
-
-<http://ceur-ws.org/Vol-1524/#TassiloiHorn> a ns7:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/TassiloiHorn> ;
-    ns7:name "Tassilo Horn" .
-
-<http://ceur-ws.org/Vol-1524/#event> a ns1:WorkshopEvent ;
-    ns1:hasLocation <http://dbpedia.org/resource/Italy> ;
-    ns1:hasPart <http://ceur-ws.org/Vol-1524/#part-STAF> ;
-    ns1:isSubEventOf <http://ceur-ws.org/Vol-1524/#conf> ;
-    ns3:beginsAtDatetime "2015-07-24T00:00:00+00:00"^^xsd:dateTime ;
-    ns3:endsAtDatetime "2015-07-24T00:00:00+00:00"^^xsd:dateTime ;
-    ns2:license "http://creativecommons.org/publicdomain/zero/1.0/" ;
-    rdfs:seeAlso <http://ceur-ws.org/Vol-1305/#event> .
 

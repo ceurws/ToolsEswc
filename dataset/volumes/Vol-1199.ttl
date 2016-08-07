@@ -1,45 +1,45 @@
-@prefix ns1: <http://purl.org/ontology/bibo/#> .
-@prefix ns2: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns3: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns4: <http://purl.org/dc/elements/1.1/> .
-@prefix ns5: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns6: <http://www.w3.org/2002/07/owl#> .
-@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns8: <http://xmlns.com/foaf/0.1/> .
+@prefix ns1: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns2: <http://xmlns.com/foaf/0.1/> .
+@prefix ns3: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns4: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns5: <http://www.w3.org/2002/07/owl#> .
+@prefix ns6: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns7: <http://purl.org/dc/elements/1.1/> .
+@prefix ns8: <http://purl.org/ontology/bibo/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1199/> a ns2:Proceedings ;
-    ns7:issued "2014-07-28T00:00:00+00:00"^^xsd:dateTime ;
-    ns1:presentedAt <http://ceur-ws.org/Vol-1199/#event> ;
-    ns3:editor <http://ceur-ws.org/Vol-1199/#EugenioiMart%C3%ADneziC%C3%A1mara>,
+<http://ceur-ws.org/Vol-1199/> a ns3:Proceedings ;
+    ns4:issued "2014-07-28T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:presentedAt <http://ceur-ws.org/Vol-1199/#event> ;
+    ns1:editor <http://ceur-ws.org/Vol-1199/#EugenioiMart%C3%ADneziC%C3%A1mara>,
         <http://ceur-ws.org/Vol-1199/#FranciscoiJavieriOrtegaiRodr%C3%ADguez>,
         <http://ceur-ws.org/Vol-1199/#Jos%C3%A9iAntonioiTroyanoiJim%C3%A9nez>,
         <http://ceur-ws.org/Vol-1199/#L.iAlfonsoiUre%C3%B1aiL%C3%B3pez> .
 
-<http://ceur-ws.org/Vol-1199/#EugenioiMart%C3%ADneziC%C3%A1mara> a ns8:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/EugenioiMart%C3%ADneziC%C3%A1mara> ;
-    ns8:name "Eugenio Martínez Cámara" .
+<http://ceur-ws.org/Vol-1199/#EugenioiMart%C3%ADneziC%C3%A1mara> a ns2:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/EugenioiMart%C3%ADneziC%C3%A1mara> ;
+    ns2:name "Eugenio Martínez Cámara" .
 
-<http://ceur-ws.org/Vol-1199/#FranciscoiJavieriOrtegaiRodr%C3%ADguez> a ns8:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/FranciscoiJavieriOrtegaiRodr%C3%ADguez> ;
-    ns8:name "Francisco Javier Ortega Rodríguez" .
+<http://ceur-ws.org/Vol-1199/#FranciscoiJavieriOrtegaiRodr%C3%ADguez> a ns2:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/FranciscoiJavieriOrtegaiRodr%C3%ADguez> ;
+    ns2:name "Francisco Javier Ortega Rodríguez" .
 
-<http://ceur-ws.org/Vol-1199/#Jos%C3%A9iAntonioiTroyanoiJim%C3%A9nez> a ns8:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/Jos%C3%A9iAntonioiTroyanoiJim%C3%A9nez> ;
-    ns8:name "José Antonio Troyano Jiménez" .
+<http://ceur-ws.org/Vol-1199/#Jos%C3%A9iAntonioiTroyanoiJim%C3%A9nez> a ns2:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/Jos%C3%A9iAntonioiTroyanoiJim%C3%A9nez> ;
+    ns2:name "José Antonio Troyano Jiménez" .
 
-<http://ceur-ws.org/Vol-1199/#L.iAlfonsoiUre%C3%B1aiL%C3%B3pez> a ns8:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/L.iAlfonsoiUre%C3%B1aiL%C3%B3pez> ;
-    ns8:name "L. Alfonso Ureña López" .
+<http://ceur-ws.org/Vol-1199/#L.iAlfonsoiUre%C3%B1aiL%C3%B3pez> a ns2:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/L.iAlfonsoiUre%C3%B1aiL%C3%B3pez> ;
+    ns2:name "L. Alfonso Ureña López" .
 
-<http://ceur-ws.org/Vol-1199/#event> a ns2:WorkshopEvent ;
-    ns2:hasLocation <http://dbpedia.org/resource/Spain> ;
-    ns2:hasPart <http://ceur-ws.org/Vol-1199/#part-ws> ;
-    ns2:isSubEventOf <http://ceur-ws.org/Vol-1199/#conf> ;
-    ns5:beginsAtDatetime "2014-06-01T00:00:00+00:00"^^xsd:dateTime ;
-    ns5:endsAtDatetime "2014-06-01T00:00:00+00:00"^^xsd:dateTime ;
-    ns4:license "http://choosealicense.com/licenses/no-license/" .
+<http://ceur-ws.org/Vol-1199/#event> a ns3:WorkshopEvent ;
+    ns3:hasLocation <http://dbpedia.org/resource/Spain> ;
+    ns3:hasPart <http://ceur-ws.org/Vol-1199/#part-TIMM> ;
+    ns3:isSubEventOf <http://ceur-ws.org/Vol-1199/#conf> ;
+    ns6:beginsAtDatetime "2014-06-01T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:endsAtDatetime "2014-06-01T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:license "http://choosealicense.com/licenses/no-license/" .
 

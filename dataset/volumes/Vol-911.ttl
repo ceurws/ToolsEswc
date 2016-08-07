@@ -1,51 +1,158 @@
-@prefix ns1: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns1: <http://purl.org/ontology/bibo/#> .
 @prefix ns2: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns3: <http://www.w3.org/2002/07/owl#> .
-@prefix ns4: <http://xmlns.com/foaf/0.1/> .
-@prefix ns5: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns6: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns3: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns4: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns5: <http://www.w3.org/2002/07/owl#> .
+@prefix ns6: <http://xmlns.com/foaf/0.1/> .
 @prefix ns7: <http://purl.org/dc/elements/1.1/> .
-@prefix ns8: <http://purl.org/ontology/bibo/#> .
+@prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns9: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-911/> a ns6:Proceedings ;
-    ns5:issued "2012-09-27T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:presentedAt <http://ceur-ws.org/Vol-911/#event> ;
-    ns2:editor <http://ceur-ws.org/Vol-911/#ClaudiaiZepeda>,
-        <http://ceur-ws.org/Vol-911/#IvaniOlmos>,
-        <http://ceur-ws.org/Vol-911/#Jos%C3%A9iLuisiCarballido>,
-        <http://ceur-ws.org/Vol-911/#MauricioiOsorio>,
-        <http://ceur-ws.org/Vol-911/#R.iCarolinaiMedina> .
+<http://ceur-ws.org/Vol-911/#AlejandroiSantoyo> a ns6:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/AlejandroiSantoyo> ;
+    ns6:made <http://ceur-ws.org/Vol-911/#09_LANMR12> ;
+    ns6:name "Alejandro Santoyo" .
 
-<http://ceur-ws.org/Vol-911/#ClaudiaiZepeda> a ns4:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/ClaudiaiZepeda> ;
-    ns4:name "Claudia Zepeda" .
+<http://ceur-ws.org/Vol-911/#AntonioiBenitez> a ns6:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/AntonioiBenitez> ;
+    ns6:made <http://ceur-ws.org/Vol-911/#06_LANMR12> ;
+    ns6:name "Antonio Benitez" .
 
-<http://ceur-ws.org/Vol-911/#IvaniOlmos> a ns4:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/IvaniOlmos> ;
-    ns4:name "Ivan Olmos" .
+<http://ceur-ws.org/Vol-911/#Carlos-ManueliL%C3%B3pez-Enr%C3%ADquez> a ns6:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/Carlos-ManueliL%C3%B3pez-Enr%C3%ADquez> ;
+    ns6:made <http://ceur-ws.org/Vol-911/#10_LANMR12> ;
+    ns6:name "Carlos-Manuel López-Enríquez" .
 
-<http://ceur-ws.org/Vol-911/#Jos%C3%A9iLuisiCarballido> a ns4:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/Jos%C3%A9iLuisiCarballido> ;
-    ns4:name "José Luis Carballido" .
+<http://ceur-ws.org/Vol-911/#ChristineiCollet> a ns6:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/ChristineiCollet> ;
+    ns6:made <http://ceur-ws.org/Vol-911/#10_LANMR12> ;
+    ns6:name "Christine Collet" .
 
-<http://ceur-ws.org/Vol-911/#MauricioiOsorio> a ns4:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/MauricioiOsorio> ;
-    ns4:name "Mauricio Osorio" .
+<http://ceur-ws.org/Vol-911/#Francisco-EdgariCastillo-Barrera> a ns6:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/Francisco-EdgariCastillo-Barrera> ;
+    ns6:made <http://ceur-ws.org/Vol-911/#14_LANMR12> ;
+    ns6:name "Francisco-Edgar Castillo-Barrera" .
 
-<http://ceur-ws.org/Vol-911/#R.iCarolinaiMedina> a ns4:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/R.iCarolinaiMedina> ;
-    ns4:name "R. Carolina Medina" .
+<http://ceur-ws.org/Vol-911/#GenovevaiVargas-Solar> a ns6:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/GenovevaiVargas-Solar> ;
+    ns6:made <http://ceur-ws.org/Vol-911/#10_LANMR12> ;
+    ns6:name "Genoveva Vargas-Solar" .
 
-<http://ceur-ws.org/Vol-911/#event> a ns6:WorkshopEvent ;
-    ns6:hasLocation <http://dbpedia.org/resource/Mexico> ;
-    ns6:hasPart <http://ceur-ws.org/Vol-911/#part-CEUR-WS> ;
-    ns6:isSubEventOf <http://ceur-ws.org/Vol-911/#conf> ;
-    ns1:beginsAtDatetime "2012-09-10T00:00:00+00:00"^^xsd:dateTime ;
-    ns1:endsAtDatetime "2012-09-11T00:00:00+00:00"^^xsd:dateTime ;
+<http://ceur-ws.org/Vol-911/#HildaiCastilloiZacatelco> a ns6:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/HildaiCastilloiZacatelco> ;
+    ns6:made <http://ceur-ws.org/Vol-911/#07_LANMR12> ;
+    ns6:name "Hilda Castillo Zacatelco" .
+
+<http://ceur-ws.org/Vol-911/#J.iA.iHern%C3%A1ndez> a ns6:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/J.iA.iHern%C3%A1ndez> ;
+    ns6:made <http://ceur-ws.org/Vol-911/#05_LANMR12> ;
+    ns6:name "J. A. Hernández" .
+
+<http://ceur-ws.org/Vol-911/#J.iAlfredoiS%C3%A1nchez> a ns6:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/J.iAlfredoiS%C3%A1nchez> ;
+    ns6:made <http://ceur-ws.org/Vol-911/#06_LANMR12> ;
+    ns6:name "J. Alfredo Sánchez" .
+
+<http://ceur-ws.org/Vol-911/#J.iR.iMarcial-Romero> a ns6:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/J.iR.iMarcial-Romero> ;
+    ns6:made <http://ceur-ws.org/Vol-911/#05_LANMR12> ;
+    ns6:name "J. R. Marcial-Romero" .
+
+<http://ceur-ws.org/Vol-911/#J.ideilaiCalleja> a ns6:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/J.ideilaiCalleja> ;
+    ns6:made <http://ceur-ws.org/Vol-911/#06_LANMR12> ;
+    ns6:name "J. de la Calleja" .
+
+<http://ceur-ws.org/Vol-911/#Joaqu%C3%ADniP%C3%A9reziOrtega> a ns6:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/Joaqu%C3%ADniP%C3%A9reziOrtega> ;
+    ns6:made <http://ceur-ws.org/Vol-911/#07_LANMR12> ;
+    ns6:name "Joaquín Pérez Ortega" .
+
+<http://ceur-ws.org/Vol-911/#Jos%C3%A9-LuisiZechinelli-Martini> a ns6:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/Jos%C3%A9-LuisiZechinelli-Martini> ;
+    ns6:made <http://ceur-ws.org/Vol-911/#10_LANMR12> ;
+    ns6:name "José-Luis Zechinelli-Martini" .
+
+<http://ceur-ws.org/Vol-911/#Jos%C3%A9iMart%C3%ADniCastro-Manzano> a ns6:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/Jos%C3%A9iMart%C3%ADniCastro-Manzano> ;
+    ns6:made <http://ceur-ws.org/Vol-911/#02_LANMR12> ;
+    ns6:name "José Martín Castro-Manzano" .
+
+<http://ceur-ws.org/Vol-911/#Jos%C3%BAeiP%C3%A9rez> a ns6:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/Jos%C3%BAeiP%C3%A9rez> ;
+    ns6:made <http://ceur-ws.org/Vol-911/#03_LANMR12> ;
+    ns6:name "Josúe Pérez" .
+
+<http://ceur-ws.org/Vol-911/#JoseiAndr%C3%A9siVazqueziFlores> a ns6:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/JoseiAndr%C3%A9siVazqueziFlores> ;
+    ns6:made <http://ceur-ws.org/Vol-911/#08_LANMR12> ;
+    ns6:name "Jose Andrés Vazquez Flores" .
+
+<http://ceur-ws.org/Vol-911/#JuaniC.iAcosta-Guadarrama> a ns6:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/JuaniC.iAcosta-Guadarrama> ;
+    ns6:made <http://ceur-ws.org/Vol-911/#04_LANMR12> ;
+    ns6:name "Juan C. Acosta-Guadarrama" .
+
+<http://ceur-ws.org/Vol-911/#JuaniCarlosiP%C3%A9rez> a ns6:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/JuaniCarlosiP%C3%A9rez> ;
+    ns6:made <http://ceur-ws.org/Vol-911/#03_LANMR12> ;
+    ns6:name "Juan Carlos Pérez" .
+
+<http://ceur-ws.org/Vol-911/#Ma.iAuxilioiMedina> a ns6:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/Ma.iAuxilioiMedina> ;
+    ns6:made <http://ceur-ws.org/Vol-911/#06_LANMR12> ;
+    ns6:name "Ma. Auxilio Medina" .
+
+<http://ceur-ws.org/Vol-911/#MarcoiRodr%C3%ADgueziHern%C3%ADndez> a ns6:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/MarcoiRodr%C3%ADgueziHern%C3%ADndez> ;
+    ns6:made <http://ceur-ws.org/Vol-911/#08_LANMR12> ;
+    ns6:name "Marco Rodríguez Herníndez" .
+
+<http://ceur-ws.org/Vol-911/#MelizaiContrerasiGonz%C3%A1lez> a ns6:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/MelizaiContrerasiGonz%C3%A1lez> ;
+    ns6:made <http://ceur-ws.org/Vol-911/#08_LANMR12> ;
+    ns6:name "Meliza Contreras González" .
+
+<http://ceur-ws.org/Vol-911/#NahuniLoya> a ns6:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/NahuniLoya> ;
+    ns6:made <http://ceur-ws.org/Vol-911/#12_LANMR12> ;
+    ns6:name "Nahun Loya" .
+
+<http://ceur-ws.org/Vol-911/#PedroiBelloiL%C3%B3pez> a ns6:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/PedroiBelloiL%C3%B3pez> ;
+    ns6:made <http://ceur-ws.org/Vol-911/#08_LANMR12> ;
+    ns6:name "Pedro Bello López" .
+
+<http://ceur-ws.org/Vol-911/#R.iCarolinaiMedina> a ns6:Person ;
+    ns2:affiliation "" ;
+    ns5:sameAs <http://ceur-ws.org/persons/R.iCarolinaiMedina> ;
+    ns6:name "R. Carolina Medina" .
+
+<http://ceur-ws.org/Vol-911/#RafaelideilaiRosaiFlores> a ns6:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/RafaelideilaiRosaiFlores> ;
+    ns6:made <http://ceur-ws.org/Vol-911/#07_LANMR12> ;
+    ns6:name "Rafael de la Rosa Flores" .
+
+<http://ceur-ws.org/Vol-911/#StefaniaiCostantini> a ns6:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/StefaniaiCostantini> ;
+    ns6:made <http://ceur-ws.org/Vol-911/#01_LANMR12> ;
+    ns6:name "Stefania Costantini" .
+
+<http://ceur-ws.org/Vol-911/#YolandaiMoyao> a ns6:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/YolandaiMoyao> ;
+    ns6:made <http://ceur-ws.org/Vol-911/#03_LANMR12> ;
+    ns6:name "Yolanda Moyao" .
+
+<http://ceur-ws.org/Vol-911/#event> a ns3:WorkshopEvent ;
+    ns3:hasLocation <http://dbpedia.org/resource/Mexico> ;
+    ns3:hasPart <http://ceur-ws.org/Vol-911/#part-LANMR> ;
+    ns3:isSubEventOf <http://ceur-ws.org/Vol-911/#conf> ;
+    ns8:beginsAtDatetime "2012-09-10T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:endsAtDatetime "2012-09-11T00:00:00+00:00"^^xsd:dateTime ;
     ns7:license "http://choosealicense.com/licenses/no-license/" ;
     rdfs:seeAlso <http://ceur-ws.org/Vol-217/#event>,
         <http://ceur-ws.org/Vol-286/#event>,
@@ -54,4 +161,221 @@
         <http://ceur-ws.org/Vol-677/#event>,
         <http://ceur-ws.org/Vol-804/#event>,
         <http://ceur-ws.org/Vol-92/#event> .
+
+<http://ceur-ws.org/Vol-911/#01_LANMR12> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-911/> ;
+    ns4:title "Self-checking Logical Agents" ;
+    ns1:endPage 30 ;
+    ns1:numPages 28 ;
+    ns1:section <http://ceur-ws.org/Vol-911/#RegularPapers> ;
+    ns1:startPage 3 ;
+    ns2:author <http://ceur-ws.org/Vol-911/#StefaniaiCostantini> .
+
+<http://ceur-ws.org/Vol-911/#02_LANMR12> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-911/> ;
+    ns4:title "Formal Properties of Intentional Reasoning" ;
+    ns1:endPage 40 ;
+    ns1:numPages 10 ;
+    ns1:section <http://ceur-ws.org/Vol-911/#RegularPapers> ;
+    ns1:startPage 31 ;
+    ns2:author <http://ceur-ws.org/Vol-911/#Jos%C3%A9iMart%C3%ADniCastro-Manzano> .
+
+<http://ceur-ws.org/Vol-911/#04_LANMR12> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-911/> ;
+    ns4:title "Towards a Unified Framework for Declarative Knowledge-Change---Principles and Consistency" ;
+    ns1:endPage 62 ;
+    ns1:numPages 12 ;
+    ns1:section <http://ceur-ws.org/Vol-911/#RegularPapers> ;
+    ns1:startPage 51 ;
+    ns2:author <http://ceur-ws.org/Vol-911/#JuaniC.iAcosta-Guadarrama> .
+
+<http://ceur-ws.org/Vol-911/#14_LANMR12> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-911/> ;
+    ns4:title "Ontology-based Translators: The new generation" ;
+    ns1:endPage 155 ;
+    ns1:numPages 7 ;
+    ns1:section <http://ceur-ws.org/Vol-911/#PosterPapers> ;
+    ns1:startPage 149 ;
+    ns2:author <http://ceur-ws.org/Vol-911/#Francisco-EdgariCastillo-Barrera> .
+
+<http://ceur-ws.org/Vol-911/#GuillermoideiIta> a ns6:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/GuillermoideiIta> ;
+    ns6:made <http://ceur-ws.org/Vol-911/#03_LANMR12>,
+        <http://ceur-ws.org/Vol-911/#05_LANMR12> ;
+    ns6:name "Guillermo de Ita" .
+
+<http://ceur-ws.org/Vol-911/#IvaniOlmos> a ns6:Person ;
+    ns2:affiliation "" ;
+    ns5:sameAs <http://ceur-ws.org/persons/IvaniOlmos> ;
+    ns6:made <http://ceur-ws.org/Vol-911/#12_LANMR12> ;
+    ns6:name "Ivan Olmos" .
+
+<http://ceur-ws.org/Vol-911/#Jos%C3%A9iLuisiCarballido> a ns6:Person ;
+    ns2:affiliation "" ;
+    ns5:sameAs <http://ceur-ws.org/persons/Jos%C3%A9iLuisiCarballido> ;
+    ns6:made <http://ceur-ws.org/Vol-911/#11_LANMR12> ;
+    ns6:name "José Luis Carballido" .
+
+<http://ceur-ws.org/Vol-911/#MauricioiOsorio> a ns6:Person ;
+    ns2:affiliation "" ;
+    ns5:sameAs <http://ceur-ws.org/persons/MauricioiOsorio> ;
+    ns6:made <http://ceur-ws.org/Vol-911/#09_LANMR12> ;
+    ns6:name "Mauricio Osorio" .
+
+<http://ceur-ws.org/Vol-911/#SergioiArzola> a ns6:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/SergioiArzola> ;
+    ns6:made <http://ceur-ws.org/Vol-911/#11_LANMR12>,
+        <http://ceur-ws.org/Vol-911/#13_LANMR12> ;
+    ns6:name "Sergio Arzola" .
+
+<http://ceur-ws.org/Vol-911/#09_LANMR12> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-911/> ;
+    ns4:title "Decision Analysis with Logic and Mathematical Programming" ;
+    ns1:endPage 116 ;
+    ns1:numPages 8 ;
+    ns1:section <http://ceur-ws.org/Vol-911/#RegularPapers> ;
+    ns1:startPage 109 ;
+    ns2:author <http://ceur-ws.org/Vol-911/#AlejandroiSantoyo>,
+        <http://ceur-ws.org/Vol-911/#MauricioiOsorio> .
+
+<http://ceur-ws.org/Vol-911/#12_LANMR12> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-911/> ;
+    ns4:title "Ozone Pollution Forecast based on Neural Networks and Decision Trees" ;
+    ns1:endPage 144 ;
+    ns1:numPages 8 ;
+    ns1:section <http://ceur-ws.org/Vol-911/#RegularPapers> ;
+    ns1:startPage 137 ;
+    ns2:author <http://ceur-ws.org/Vol-911/#IvaniOlmos>,
+        <http://ceur-ws.org/Vol-911/#NahuniLoya> .
+
+<http://ceur-ws.org/Vol-911/#13_LANMR12> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-911/> ;
+    ns4:title "Unified Perception-Prediction Model for Cognitive Agents" ;
+    ns1:endPage 148 ;
+    ns1:numPages 4 ;
+    ns1:section <http://ceur-ws.org/Vol-911/#PosterPapers> ;
+    ns1:startPage 145 ;
+    ns2:author <http://ceur-ws.org/Vol-911/#ClaudiaiZepeda>,
+        <http://ceur-ws.org/Vol-911/#SergioiArzola> .
+
+<http://ceur-ws.org/Vol-911/#ClaudiaiZepeda> a ns6:Person ;
+    ns2:affiliation "" ;
+    ns5:sameAs <http://ceur-ws.org/persons/ClaudiaiZepeda> ;
+    ns6:made <http://ceur-ws.org/Vol-911/#11_LANMR12>,
+        <http://ceur-ws.org/Vol-911/#13_LANMR12> ;
+    ns6:name "Claudia Zepeda" .
+
+<http://ceur-ws.org/Vol-911/#PosterPapers> a ns3:SessionEvent ;
+    ns3:partOf <http://ceur-ws.org/Vol-911/> ;
+    ns4:title "Poster Papers" .
+
+<http://ceur-ws.org/Vol-911/#05_LANMR12> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-911/> ;
+    ns4:title "Edge covering of acyclic graphs" ;
+    ns1:endPage 74 ;
+    ns1:numPages 12 ;
+    ns1:section <http://ceur-ws.org/Vol-911/#RegularPapers> ;
+    ns1:startPage 63 ;
+    ns2:author <http://ceur-ws.org/Vol-911/#GuillermoideiIta>,
+        <http://ceur-ws.org/Vol-911/#J.iA.iHern%C3%A1ndez>,
+        <http://ceur-ws.org/Vol-911/#J.iR.iMarcial-Romero> .
+
+<http://ceur-ws.org/Vol-911/#07_LANMR12> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-911/> ;
+    ns4:title "An analysis of the state of the art of algorithms applied to BPP" ;
+    ns1:endPage 100 ;
+    ns1:numPages 12 ;
+    ns1:section <http://ceur-ws.org/Vol-911/#RegularPapers> ;
+    ns1:startPage 89 ;
+    ns2:author <http://ceur-ws.org/Vol-911/#HildaiCastilloiZacatelco>,
+        <http://ceur-ws.org/Vol-911/#Joaqu%C3%ADniP%C3%A9reziOrtega>,
+        <http://ceur-ws.org/Vol-911/#RafaelideilaiRosaiFlores> .
+
+<http://ceur-ws.org/Vol-911/#11_LANMR12> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-911/> ;
+    ns4:title "A general framework for representing preferences" ;
+    ns1:endPage 136 ;
+    ns1:numPages 8 ;
+    ns1:section <http://ceur-ws.org/Vol-911/#RegularPapers> ;
+    ns1:startPage 129 ;
+    ns2:author <http://ceur-ws.org/Vol-911/#ClaudiaiZepeda>,
+        <http://ceur-ws.org/Vol-911/#Jos%C3%A9iLuisiCarballido>,
+        <http://ceur-ws.org/Vol-911/#SergioiArzola> .
+
+<http://ceur-ws.org/Vol-911/#03_LANMR12> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-911/> ;
+    ns4:title "Job Shop Scheduling via Disjunctive Boolean Formulas" ;
+    ns1:endPage 50 ;
+    ns1:numPages 10 ;
+    ns1:section <http://ceur-ws.org/Vol-911/#RegularPapers> ;
+    ns1:startPage 41 ;
+    ns2:author <http://ceur-ws.org/Vol-911/#GuillermoideiIta>,
+        <http://ceur-ws.org/Vol-911/#Jos%C3%BAeiP%C3%A9rez>,
+        <http://ceur-ws.org/Vol-911/#JuaniCarlosiP%C3%A9rez>,
+        <http://ceur-ws.org/Vol-911/#YolandaiMoyao> .
+
+<http://ceur-ws.org/Vol-911/#06_LANMR12> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-911/> ;
+    ns4:title "A practical approach to model classification schemes with OWL ontologies" ;
+    ns1:endPage 88 ;
+    ns1:numPages 14 ;
+    ns1:section <http://ceur-ws.org/Vol-911/#RegularPapers> ;
+    ns1:startPage 75 ;
+    ns2:author <http://ceur-ws.org/Vol-911/#AntonioiBenitez>,
+        <http://ceur-ws.org/Vol-911/#J.iAlfredoiS%C3%A1nchez>,
+        <http://ceur-ws.org/Vol-911/#J.ideilaiCalleja>,
+        <http://ceur-ws.org/Vol-911/#Ma.iAuxilioiMedina> .
+
+<http://ceur-ws.org/Vol-911/#08_LANMR12> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-911/> ;
+    ns4:title "Detection of inconsistencies in knowledge bases for emission of foreign judgments" ;
+    ns1:endPage 108 ;
+    ns1:numPages 8 ;
+    ns1:section <http://ceur-ws.org/Vol-911/#RegularPapers> ;
+    ns1:startPage 101 ;
+    ns2:author <http://ceur-ws.org/Vol-911/#JoseiAndr%C3%A9siVazqueziFlores>,
+        <http://ceur-ws.org/Vol-911/#MarcoiRodr%C3%ADgueziHern%C3%ADndez>,
+        <http://ceur-ws.org/Vol-911/#MelizaiContrerasiGonz%C3%A1lez>,
+        <http://ceur-ws.org/Vol-911/#PedroiBelloiL%C3%B3pez> .
+
+<http://ceur-ws.org/Vol-911/#10_LANMR12> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-911/> ;
+    ns4:title "Hybrid query plan generation" ;
+    ns1:endPage 128 ;
+    ns1:numPages 12 ;
+    ns1:section <http://ceur-ws.org/Vol-911/#RegularPapers> ;
+    ns1:startPage 117 ;
+    ns2:author <http://ceur-ws.org/Vol-911/#Carlos-ManueliL%C3%B3pez-Enr%C3%ADquez>,
+        <http://ceur-ws.org/Vol-911/#ChristineiCollet>,
+        <http://ceur-ws.org/Vol-911/#GenovevaiVargas-Solar>,
+        <http://ceur-ws.org/Vol-911/#Jos%C3%A9-LuisiZechinelli-Martini> .
+
+<http://ceur-ws.org/Vol-911/#RegularPapers> a ns3:SessionEvent ;
+    ns3:partOf <http://ceur-ws.org/Vol-911/> ;
+    ns4:title "Regular Papers" .
+
+<http://ceur-ws.org/Vol-911/> a ns3:Proceedings ;
+    ns3:hasPart <http://ceur-ws.org/Vol-911/#01_LANMR12>,
+        <http://ceur-ws.org/Vol-911/#02_LANMR12>,
+        <http://ceur-ws.org/Vol-911/#03_LANMR12>,
+        <http://ceur-ws.org/Vol-911/#04_LANMR12>,
+        <http://ceur-ws.org/Vol-911/#05_LANMR12>,
+        <http://ceur-ws.org/Vol-911/#06_LANMR12>,
+        <http://ceur-ws.org/Vol-911/#07_LANMR12>,
+        <http://ceur-ws.org/Vol-911/#08_LANMR12>,
+        <http://ceur-ws.org/Vol-911/#09_LANMR12>,
+        <http://ceur-ws.org/Vol-911/#10_LANMR12>,
+        <http://ceur-ws.org/Vol-911/#11_LANMR12>,
+        <http://ceur-ws.org/Vol-911/#12_LANMR12>,
+        <http://ceur-ws.org/Vol-911/#13_LANMR12>,
+        <http://ceur-ws.org/Vol-911/#14_LANMR12> ;
+    ns3:hasSession <http://ceur-ws.org/Vol-911/#PosterPapers>,
+        <http://ceur-ws.org/Vol-911/#RegularPapers> ;
+    ns9:issued "2012-09-27T00:00:00+00:00"^^xsd:dateTime ;
+    ns1:presentedAt <http://ceur-ws.org/Vol-911/#event> ;
+    ns2:editor <http://ceur-ws.org/Vol-911/#ClaudiaiZepeda>,
+        <http://ceur-ws.org/Vol-911/#IvaniOlmos>,
+        <http://ceur-ws.org/Vol-911/#Jos%C3%A9iLuisiCarballido>,
+        <http://ceur-ws.org/Vol-911/#MauricioiOsorio>,
+        <http://ceur-ws.org/Vol-911/#R.iCarolinaiMedina> .
 

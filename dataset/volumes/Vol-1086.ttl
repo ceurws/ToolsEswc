@@ -1,20 +1,385 @@
-@prefix ns1: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns2: <http://xmlns.com/foaf/0.1/> .
-@prefix ns3: <http://www.w3.org/2002/07/owl#> .
+@prefix ns1: <http://www.w3.org/2002/07/owl#> .
+@prefix ns2: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns3: <http://purl.org/ontology/bibo/#> .
 @prefix ns4: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns5: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns6: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns5: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns6: <http://xmlns.com/foaf/0.1/> .
 @prefix ns7: <http://purl.org/dc/elements/1.1/> .
-@prefix ns8: <http://purl.org/ontology/bibo/#> .
+@prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns9: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1086/> a ns6:Proceedings ;
-    ns1:issued "2013-11-19T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:presentedAt <http://ceur-ws.org/Vol-1086/#event> ;
-    ns4:editor <http://ceur-ws.org/Vol-1086/#ArkaitziZubiaga>,
+<http://ceur-ws.org/Vol-1086/#%C3%93scariMu%C3%B1oz-Garc%C3%ADa> a ns6:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/%C3%93scariMu%C3%B1oz-Garc%C3%ADa> ;
+    ns6:made <http://ceur-ws.org/Vol-1086/#02-paper> ;
+    ns6:name "Óscar Muñoz-García" .
+
+<http://ceur-ws.org/Vol-1086/#AlejandroiMosqueraiL%C3%B3pez> a ns6:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/AlejandroiMosqueraiL%C3%B3pez> ;
+    ns6:made <http://ceur-ws.org/Vol-1086/#05-paper> ;
+    ns6:name "Alejandro Mosquera López" .
+
+<http://ceur-ws.org/Vol-1086/#AliciaiAgeno> a ns6:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/AliciaiAgeno> ;
+    ns6:made <http://ceur-ws.org/Vol-1086/#11-paper> ;
+    ns6:name "Alicia Ageno" .
+
+<http://ceur-ws.org/Vol-1086/#ArturoiMontejoiR%C3%A1ez> a ns6:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/ArturoiMontejoiR%C3%A1ez> ;
+    ns6:made <http://ceur-ws.org/Vol-1086/#07-paper> ;
+    ns6:name "Arturo Montejo Ráez" .
+
+<http://ceur-ws.org/Vol-1086/#BoiHan> a ns6:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/BoiHan> ;
+    ns6:made <http://ceur-ws.org/Vol-1086/#06-paper> ;
+    ns6:name "Bo Han" .
+
+<http://ceur-ws.org/Vol-1086/#DavidiVilares> a ns6:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/DavidiVilares> ;
+    ns6:made <http://ceur-ws.org/Vol-1086/#08-paper> ;
+    ns6:name "David Vilares" .
+
+<http://ceur-ws.org/Vol-1086/#EugenioiMart%C3%ADneziC%C3%A1mara> a ns6:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/EugenioiMart%C3%ADneziC%C3%A1mara> ;
+    ns6:made <http://ceur-ws.org/Vol-1086/#07-paper> ;
+    ns6:name "Eugenio Martínez Cámara" .
+
+<http://ceur-ws.org/Vol-1086/#Ferm%C3%ADniL.iCruz> a ns6:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/Ferm%C3%ADniL.iCruz> ;
+    ns6:made <http://ceur-ws.org/Vol-1086/#04-paper> ;
+    ns6:name "Fermín L. Cruz" .
+
+<http://ceur-ws.org/Vol-1086/#GorkaiLabaka> a ns6:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/GorkaiLabaka> ;
+    ns6:made <http://ceur-ws.org/Vol-1086/#03-paper> ;
+    ns6:name "Gorka Labaka" .
+
+<http://ceur-ws.org/Vol-1086/#IzaskuniEtxeberria> a ns6:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/IzaskuniEtxeberria> ;
+    ns6:made <http://ceur-ws.org/Vol-1086/#03-paper> ;
+    ns6:name "Izaskun Etxeberria" .
+
+<http://ceur-ws.org/Vol-1086/#JeridiFrancom> a ns6:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/JeridiFrancom> ;
+    ns6:made <http://ceur-ws.org/Vol-1086/#14-paper> ;
+    ns6:name "Jerid Francom" .
+
+<http://ceur-ws.org/Vol-1086/#JesusiVilares> a ns6:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/JesusiVilares> ;
+    ns6:made <http://ceur-ws.org/Vol-1086/#08-paper> ;
+    ns6:name "Jesus Vilares" .
+
+<http://ceur-ws.org/Vol-1086/#JordiiPorta> a ns6:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/JordiiPorta> ;
+    ns6:made <http://ceur-ws.org/Vol-1086/#10-paper> ;
+    ns6:name "Jordi Porta" .
+
+<http://ceur-ws.org/Vol-1086/#Jos%C3%A9iLuisiSancho> a ns6:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/Jos%C3%A9iLuisiSancho> ;
+    ns6:made <http://ceur-ws.org/Vol-1086/#10-paper> ;
+    ns6:name "José Luis Sancho" .
+
+<http://ceur-ws.org/Vol-1086/#Jos%C3%A9iRamomiPichel> a ns6:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/Jos%C3%A9iRamomiPichel> ;
+    ns6:made <http://ceur-ws.org/Vol-1086/#09-paper> ;
+    ns6:name "José Ramom Pichel" .
+
+<http://ceur-ws.org/Vol-1086/#JoseiA.iTroyano> a ns6:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/JoseiA.iTroyano> ;
+    ns6:made <http://ceur-ws.org/Vol-1086/#04-paper> ;
+    ns6:name "Jose A. Troyano" .
+
+<http://ceur-ws.org/Vol-1086/#JuaniM.iCoteloiMoya> a ns6:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/JuaniM.iCoteloiMoya> ;
+    ns6:made <http://ceur-ws.org/Vol-1086/#04-paper> ;
+    ns6:name "Juan M. Cotelo Moya" .
+
+<http://ceur-ws.org/Vol-1086/#L.iAlfonsoiUre%C3%B1aiL%C3%B3pez> a ns6:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/L.iAlfonsoiUre%C3%B1aiL%C3%B3pez> ;
+    ns6:made <http://ceur-ws.org/Vol-1086/#07-paper> ;
+    ns6:name "L. Alfonso Ureña López" .
+
+<http://ceur-ws.org/Vol-1086/#M.iTeresaiMart%C3%ADiValdivia> a ns6:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/M.iTeresaiMart%C3%ADiValdivia> ;
+    ns6:made <http://ceur-ws.org/Vol-1086/#07-paper> ;
+    ns6:name "M. Teresa Martí Valdivia" .
+
+<http://ceur-ws.org/Vol-1086/#MansiHulden> a ns6:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/MansiHulden> ;
+    ns6:made <http://ceur-ws.org/Vol-1086/#14-paper> ;
+    ns6:name "Mans Hulden" .
+
+<http://ceur-ws.org/Vol-1086/#ManueliCarlosiD%C3%ADaziGaliano> a ns6:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/ManueliCarlosiD%C3%ADaziGaliano> ;
+    ns6:made <http://ceur-ws.org/Vol-1086/#07-paper> ;
+    ns6:name "Manuel Carlos Díaz Galiano" .
+
+<http://ceur-ws.org/Vol-1086/#MarcosiGarcia> a ns6:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/MarcosiGarcia> ;
+    ns6:made <http://ceur-ws.org/Vol-1086/#09-paper> ;
+    ns6:name "Marcos Garcia" .
+
+<http://ceur-ws.org/Vol-1086/#Migueli%C3%81ngeliGarc%C3%ADaiCumbreras> a ns6:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/Migueli%C3%81ngeliGarc%C3%ADaiCumbreras> ;
+    ns6:made <http://ceur-ws.org/Vol-1086/#07-paper> ;
+    ns6:name "Miguel Ángel García Cumbreras" .
+
+<http://ceur-ws.org/Vol-1086/#MigueliA.iAlonso> a ns6:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/MigueliA.iAlonso> ;
+    ns6:made <http://ceur-ws.org/Vol-1086/#08-paper> ;
+    ns6:name "Miguel A. Alonso" .
+
+<http://ceur-ws.org/Vol-1086/#MontseiCuadros> a ns6:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/MontseiCuadros> ;
+    ns6:made <http://ceur-ws.org/Vol-1086/#12-paper> ;
+    ns6:name "Montse Cuadros" .
+
+<http://ceur-ws.org/Vol-1086/#NuriaiBel> a ns6:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/NuriaiBel> ;
+    ns6:made <http://ceur-ws.org/Vol-1086/#02-paper> ;
+    ns6:name "Nuria Bel" .
+
+<http://ceur-ws.org/Vol-1086/#PabloiRuiz> a ns6:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/PabloiRuiz> ;
+    ns6:made <http://ceur-ws.org/Vol-1086/#12-paper> ;
+    ns6:name "Pablo Ruiz" .
+
+<http://ceur-ws.org/Vol-1086/#PalomaiMoreda> a ns6:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/PalomaiMoreda> ;
+    ns6:made <http://ceur-ws.org/Vol-1086/#05-paper> ;
+    ns6:name "Paloma Moreda" .
+
+<http://ceur-ws.org/Vol-1086/#PauliCook> a ns6:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/PauliCook> ;
+    ns6:made <http://ceur-ws.org/Vol-1086/#06-paper> ;
+    ns6:name "Paul Cook" .
+
+<http://ceur-ws.org/Vol-1086/#PereiR.iComas> a ns6:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/PereiR.iComas> ;
+    ns6:made <http://ceur-ws.org/Vol-1086/#11-paper> ;
+    ns6:name "Pere R. Comas" .
+
+<http://ceur-ws.org/Vol-1086/#SilviaiV%C3%A1zqueziSu%C3%A1rez> a ns6:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/SilviaiV%C3%A1zqueziSu%C3%A1rez> ;
+    ns6:made <http://ceur-ws.org/Vol-1086/#02-paper> ;
+    ns6:name "Silvia Vázquez Suárez" .
+
+<http://ceur-ws.org/Vol-1086/#ThierryiEtchegoyhen> a ns6:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/ThierryiEtchegoyhen> ;
+    ns6:made <http://ceur-ws.org/Vol-1086/#12-paper> ;
+    ns6:name "Thierry Etchegoyhen" .
+
+<http://ceur-ws.org/Vol-1086/#TimothyiBaldwin> a ns6:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/TimothyiBaldwin> ;
+    ns6:made <http://ceur-ws.org/Vol-1086/#06-paper> ;
+    ns6:name "Timothy Baldwin" .
+
+<http://ceur-ws.org/Vol-1086/#XabieriSaralegi> a ns6:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/XabieriSaralegi> ;
+    ns6:made <http://ceur-ws.org/Vol-1086/#13-paper> ;
+    ns6:name "Xabier Saralegi" .
+
+<http://ceur-ws.org/Vol-1086/#event> a ns2:WorkshopEvent ;
+    ns2:hasLocation <http://dbpedia.org/resource/Spain> ;
+    ns2:hasPart <http://ceur-ws.org/Vol-1086/#part-Tweet-Norm> ;
+    ns2:isSubEventOf <http://ceur-ws.org/Vol-1086/#conf> ;
+    ns8:beginsAtDatetime "2013-09-20T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:endsAtDatetime "2013-09-20T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:license "http://choosealicense.com/licenses/no-license/" .
+
+<http://ceur-ws.org/Vol-1086/#ArkaitziZubiaga> a ns6:Person ;
+    ns4:affiliation "City University of New York" ;
+    ns1:sameAs <http://ceur-ws.org/persons/ArkaitziZubiaga> ;
+    ns6:made <http://ceur-ws.org/Vol-1086/#01-paper> ;
+    ns6:name "Arkaitz Zubiaga" .
+
+<http://ceur-ws.org/Vol-1086/#NoraiAranberri> a ns6:Person ;
+    ns4:affiliation "University of the Basque Country" ;
+    ns1:sameAs <http://ceur-ws.org/persons/NoraiAranberri> ;
+    ns6:made <http://ceur-ws.org/Vol-1086/#01-paper> ;
+    ns6:name "Nora Aranberri" .
+
+<http://ceur-ws.org/Vol-1086/#V%C3%ADctoriFresno> a ns6:Person ;
+    ns4:affiliation "UNED" ;
+    ns1:sameAs <http://ceur-ws.org/persons/V%C3%ADctoriFresno> ;
+    ns6:made <http://ceur-ws.org/Vol-1086/#01-paper> ;
+    ns6:name "Víctor Fresno" .
+
+<http://ceur-ws.org/Vol-1086/#05-paper> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1086/> ;
+    ns5:title "DLSI en Tweet-Norm 2013: Normalización de Tweets en Español" ;
+    ns3:endPage 29 ;
+    ns3:numPages 5 ;
+    ns3:startPage 25 ;
+    ns4:author <http://ceur-ws.org/Vol-1086/#AlejandroiMosqueraiL%C3%B3pez>,
+        <http://ceur-ws.org/Vol-1086/#PalomaiMoreda> .
+
+<http://ceur-ws.org/Vol-1086/#10-paper> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1086/> ;
+    ns5:title "Word Normalization in Twitter Using Finite-state Transducers" ;
+    ns3:endPage 53 ;
+    ns3:numPages 5 ;
+    ns3:startPage 49 ;
+    ns4:author <http://ceur-ws.org/Vol-1086/#JordiiPorta>,
+        <http://ceur-ws.org/Vol-1086/#Jos%C3%A9iLuisiSancho> .
+
+<http://ceur-ws.org/Vol-1086/#13-paper> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1086/> ;
+    ns5:title "Elhuyar at Tweet-Norm 2013" ;
+    ns3:endPage 68 ;
+    ns3:numPages 5 ;
+    ns3:startPage 64 ;
+    ns4:author <http://ceur-ws.org/Vol-1086/#I%C3%B1akiiSaniVicente>,
+        <http://ceur-ws.org/Vol-1086/#XabieriSaralegi> .
+
+<http://ceur-ws.org/Vol-1086/#14-paper> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1086/> ;
+    ns5:title "Weighted and Unweighted Transducers for Tweet Normalization" ;
+    ns3:endPage 72 ;
+    ns3:numPages 4 ;
+    ns3:startPage 69 ;
+    ns4:author <http://ceur-ws.org/Vol-1086/#JeridiFrancom>,
+        <http://ceur-ws.org/Vol-1086/#MansiHulden> .
+
+<http://ceur-ws.org/Vol-1086/#I%C3%B1akiiAlegria> a ns6:Person ;
+    ns4:affiliation "University of the Basque Country" ;
+    ns1:sameAs <http://ceur-ws.org/persons/I%C3%B1akiiAlegria> ;
+    ns6:made <http://ceur-ws.org/Vol-1086/#01-paper>,
+        <http://ceur-ws.org/Vol-1086/#03-paper> ;
+    ns6:name "Iñaki Alegria" .
+
+<http://ceur-ws.org/Vol-1086/#I%C3%B1akiiSaniVicente> a ns6:Person ;
+    ns4:affiliation "Elhuyar" ;
+    ns1:sameAs <http://ceur-ws.org/persons/I%C3%B1akiiSaniVicente> ;
+    ns6:made <http://ceur-ws.org/Vol-1086/#01-paper>,
+        <http://ceur-ws.org/Vol-1086/#13-paper> ;
+    ns6:name "Iñaki San Vicente" .
+
+<http://ceur-ws.org/Vol-1086/#JordiiTurmo> a ns6:Person ;
+    ns4:affiliation "Technical University of Catalonia" ;
+    ns1:sameAs <http://ceur-ws.org/persons/JordiiTurmo> ;
+    ns6:made <http://ceur-ws.org/Vol-1086/#01-paper>,
+        <http://ceur-ws.org/Vol-1086/#11-paper> ;
+    ns6:name "Jordi Turmo" .
+
+<http://ceur-ws.org/Vol-1086/#Llu%C3%ADsiPadr%C3%B3> a ns6:Person ;
+    ns4:affiliation "Technical University of Catalonia" ;
+    ns1:sameAs <http://ceur-ws.org/persons/Llu%C3%ADsiPadr%C3%B3> ;
+    ns6:made <http://ceur-ws.org/Vol-1086/#01-paper>,
+        <http://ceur-ws.org/Vol-1086/#11-paper> ;
+    ns6:name "Lluís Padró" .
+
+<http://ceur-ws.org/Vol-1086/#PabloiGamallo> a ns6:Person ;
+    ns4:affiliation "University of Santiago de Compostela" ;
+    ns1:sameAs <http://ceur-ws.org/persons/PabloiGamallo> ;
+    ns6:made <http://ceur-ws.org/Vol-1086/#01-paper>,
+        <http://ceur-ws.org/Vol-1086/#09-paper> ;
+    ns6:name "Pablo Gamallo" .
+
+<http://ceur-ws.org/Vol-1086/#02-paper> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1086/> ;
+    ns5:title "Exploiting Web-based Collective Knowledge for Micropost Normalisation" ;
+    ns3:endPage 14 ;
+    ns3:numPages 5 ;
+    ns3:startPage 10 ;
+    ns4:author <http://ceur-ws.org/Vol-1086/#%C3%93scariMu%C3%B1oz-Garc%C3%ADa>,
+        <http://ceur-ws.org/Vol-1086/#NuriaiBel>,
+        <http://ceur-ws.org/Vol-1086/#SilviaiV%C3%A1zqueziSu%C3%A1rez> .
+
+<http://ceur-ws.org/Vol-1086/#03-paper> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1086/> ;
+    ns5:title "Una Cascada de Transductores Simples para Normalizar Tweets" ;
+    ns3:endPage 19 ;
+    ns3:numPages 5 ;
+    ns3:startPage 15 ;
+    ns4:author <http://ceur-ws.org/Vol-1086/#GorkaiLabaka>,
+        <http://ceur-ws.org/Vol-1086/#I%C3%B1akiiAlegria>,
+        <http://ceur-ws.org/Vol-1086/#IzaskuniEtxeberria> .
+
+<http://ceur-ws.org/Vol-1086/#04-paper> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1086/> ;
+    ns5:title "Resource-based Lexical Approach to Tweet-Norm task" ;
+    ns3:endPage 24 ;
+    ns3:numPages 5 ;
+    ns3:startPage 20 ;
+    ns4:author <http://ceur-ws.org/Vol-1086/#Ferm%C3%ADniL.iCruz>,
+        <http://ceur-ws.org/Vol-1086/#JoseiA.iTroyano>,
+        <http://ceur-ws.org/Vol-1086/#JuaniM.iCoteloiMoya> .
+
+<http://ceur-ws.org/Vol-1086/#06-paper> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1086/> ;
+    ns5:title "unimelb: Spanish Text Normalisation" ;
+    ns3:endPage 36 ;
+    ns3:numPages 5 ;
+    ns3:startPage 32 ;
+    ns4:author <http://ceur-ws.org/Vol-1086/#BoiHan>,
+        <http://ceur-ws.org/Vol-1086/#PauliCook>,
+        <http://ceur-ws.org/Vol-1086/#TimothyiBaldwin> .
+
+<http://ceur-ws.org/Vol-1086/#08-paper> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1086/> ;
+    ns5:title "Prototipado Rápido de un Sistema de Normalización de Tuits: Una Aproximación Léxica" ;
+    ns3:endPage 43 ;
+    ns3:numPages 5 ;
+    ns3:startPage 39 ;
+    ns4:author <http://ceur-ws.org/Vol-1086/#DavidiVilares>,
+        <http://ceur-ws.org/Vol-1086/#JesusiVilares>,
+        <http://ceur-ws.org/Vol-1086/#MigueliA.iAlonso> .
+
+<http://ceur-ws.org/Vol-1086/#09-paper> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1086/> ;
+    ns5:title "A Method to Lexical Normalisation of Tweets" ;
+    ns3:endPage 48 ;
+    ns3:numPages 5 ;
+    ns3:startPage 44 ;
+    ns4:author <http://ceur-ws.org/Vol-1086/#Jos%C3%A9iRamomiPichel>,
+        <http://ceur-ws.org/Vol-1086/#MarcosiGarcia>,
+        <http://ceur-ws.org/Vol-1086/#PabloiGamallo> .
+
+<http://ceur-ws.org/Vol-1086/#12-paper> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1086/> ;
+    ns5:title "Lexical Normalization of Spanish Tweets with Preprocessing Rules, Domain-specific Edit Distances, and Language Models" ;
+    ns3:endPage 63 ;
+    ns3:numPages 5 ;
+    ns3:startPage 59 ;
+    ns4:author <http://ceur-ws.org/Vol-1086/#MontseiCuadros>,
+        <http://ceur-ws.org/Vol-1086/#PabloiRuiz>,
+        <http://ceur-ws.org/Vol-1086/#ThierryiEtchegoyhen> .
+
+<http://ceur-ws.org/Vol-1086/#11-paper> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1086/> ;
+    ns5:title "The TALP-UPC Approach to Tweet-Norm 2013" ;
+    ns3:endPage 58 ;
+    ns3:numPages 5 ;
+    ns3:startPage 54 ;
+    ns4:author <http://ceur-ws.org/Vol-1086/#AliciaiAgeno>,
+        <http://ceur-ws.org/Vol-1086/#JordiiTurmo>,
+        <http://ceur-ws.org/Vol-1086/#Llu%C3%ADsiPadr%C3%B3>,
+        <http://ceur-ws.org/Vol-1086/#PereiR.iComas> .
+
+<http://ceur-ws.org/Vol-1086/#07-paper> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1086/> ;
+    ns5:title "SINAI at Twitter-Normalization 2013" ;
+    ns3:endPage 38 ;
+    ns3:numPages 4 ;
+    ns3:startPage 35 ;
+    ns4:author <http://ceur-ws.org/Vol-1086/#ArturoiMontejoiR%C3%A1ez>,
+        <http://ceur-ws.org/Vol-1086/#EugenioiMart%C3%ADneziC%C3%A1mara>,
+        <http://ceur-ws.org/Vol-1086/#L.iAlfonsoiUre%C3%B1aiL%C3%B3pez>,
+        <http://ceur-ws.org/Vol-1086/#M.iTeresaiMart%C3%ADiValdivia>,
+        <http://ceur-ws.org/Vol-1086/#ManueliCarlosiD%C3%ADaziGaliano>,
+        <http://ceur-ws.org/Vol-1086/#Migueli%C3%81ngeliGarc%C3%ADaiCumbreras> .
+
+<http://ceur-ws.org/Vol-1086/#01-paper> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1086/> ;
+    ns5:title "Introducción a la Tarea Compartida Tweet-Norm 2013: Normalización Léxica de Tuits en Español" ;
+    ns3:endPage 9 ;
+    ns3:numPages 9 ;
+    ns3:startPage 1 ;
+    ns4:author <http://ceur-ws.org/Vol-1086/#ArkaitziZubiaga>,
         <http://ceur-ws.org/Vol-1086/#I%C3%B1akiiAlegria>,
         <http://ceur-ws.org/Vol-1086/#I%C3%B1akiiSaniVicente>,
         <http://ceur-ws.org/Vol-1086/#JordiiTurmo>,
@@ -23,43 +388,29 @@
         <http://ceur-ws.org/Vol-1086/#PabloiGamallo>,
         <http://ceur-ws.org/Vol-1086/#V%C3%ADctoriFresno> .
 
-<http://ceur-ws.org/Vol-1086/#ArkaitziZubiaga> a ns2:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/ArkaitziZubiaga> ;
-    ns2:name "Arkaitz Zubiaga" .
-
-<http://ceur-ws.org/Vol-1086/#I%C3%B1akiiAlegria> a ns2:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/I%C3%B1akiiAlegria> ;
-    ns2:name "Iñaki Alegria" .
-
-<http://ceur-ws.org/Vol-1086/#I%C3%B1akiiSaniVicente> a ns2:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/I%C3%B1akiiSaniVicente> ;
-    ns2:name "Iñaki San Vicente" .
-
-<http://ceur-ws.org/Vol-1086/#JordiiTurmo> a ns2:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/JordiiTurmo> ;
-    ns2:name "Jordi Turmo" .
-
-<http://ceur-ws.org/Vol-1086/#Llu%C3%ADsiPadr%C3%B3> a ns2:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/Llu%C3%ADsiPadr%C3%B3> ;
-    ns2:name "Lluís Padró" .
-
-<http://ceur-ws.org/Vol-1086/#NoraiAranberri> a ns2:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/NoraiAranberri> ;
-    ns2:name "Nora Aranberri" .
-
-<http://ceur-ws.org/Vol-1086/#PabloiGamallo> a ns2:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/PabloiGamallo> ;
-    ns2:name "Pablo Gamallo" .
-
-<http://ceur-ws.org/Vol-1086/#V%C3%ADctoriFresno> a ns2:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/V%C3%ADctoriFresno> ;
-    ns2:name "Víctor Fresno" .
-
-<http://ceur-ws.org/Vol-1086/#event> a ns6:WorkshopEvent ;
-    ns6:hasLocation <http://dbpedia.org/resource/Spain> ;
-    ns6:hasPart <http://ceur-ws.org/Vol-1086/#part-ws> ;
-    ns6:isSubEventOf <http://ceur-ws.org/Vol-1086/#conf> ;
-    ns5:beginsAtDatetime "2013-09-20T00:00:00+00:00"^^xsd:dateTime ;
-    ns5:endsAtDatetime "2013-09-20T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:license "http://choosealicense.com/licenses/no-license/" .
+<http://ceur-ws.org/Vol-1086/> a ns2:Proceedings ;
+    ns2:hasPart <http://ceur-ws.org/Vol-1086/#01-paper>,
+        <http://ceur-ws.org/Vol-1086/#02-paper>,
+        <http://ceur-ws.org/Vol-1086/#03-paper>,
+        <http://ceur-ws.org/Vol-1086/#04-paper>,
+        <http://ceur-ws.org/Vol-1086/#05-paper>,
+        <http://ceur-ws.org/Vol-1086/#06-paper>,
+        <http://ceur-ws.org/Vol-1086/#07-paper>,
+        <http://ceur-ws.org/Vol-1086/#08-paper>,
+        <http://ceur-ws.org/Vol-1086/#09-paper>,
+        <http://ceur-ws.org/Vol-1086/#10-paper>,
+        <http://ceur-ws.org/Vol-1086/#11-paper>,
+        <http://ceur-ws.org/Vol-1086/#12-paper>,
+        <http://ceur-ws.org/Vol-1086/#13-paper>,
+        <http://ceur-ws.org/Vol-1086/#14-paper> ;
+    ns9:issued "2013-11-19T00:00:00+00:00"^^xsd:dateTime ;
+    ns3:presentedAt <http://ceur-ws.org/Vol-1086/#event> ;
+    ns4:editor <http://ceur-ws.org/Vol-1086/#ArkaitziZubiaga>,
+        <http://ceur-ws.org/Vol-1086/#I%C3%B1akiiAlegria>,
+        <http://ceur-ws.org/Vol-1086/#I%C3%B1akiiSaniVicente>,
+        <http://ceur-ws.org/Vol-1086/#JordiiTurmo>,
+        <http://ceur-ws.org/Vol-1086/#Llu%C3%ADsiPadr%C3%B3>,
+        <http://ceur-ws.org/Vol-1086/#NoraiAranberri>,
+        <http://ceur-ws.org/Vol-1086/#PabloiGamallo>,
+        <http://ceur-ws.org/Vol-1086/#V%C3%ADctoriFresno> .
 

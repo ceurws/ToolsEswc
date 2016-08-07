@@ -1,49 +1,498 @@
-@prefix ns1: <http://www.w3.org/2002/07/owl#> .
-@prefix ns2: <http://xmlns.com/foaf/0.1/> .
-@prefix ns3: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns4: <http://purl.org/dc/elements/1.1/> .
-@prefix ns5: <http://purl.org/ontology/bibo/#> .
-@prefix ns6: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns1: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns2: <http://purl.org/dc/elements/1.1/> .
+@prefix ns3: <http://xmlns.com/foaf/0.1/> .
+@prefix ns4: <http://www.w3.org/2002/07/owl#> .
+@prefix ns5: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns6: <http://purl.org/ontology/bibo/#> .
 @prefix ns7: <http://data.semanticweb.org/ns/swc/ontology/#> .
 @prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns9: <http://purl.org/NET/c4dm/timeline.owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1099/> a ns7:Proceedings ;
-    ns8:issued "2013-11-30T00:00:00+00:00"^^xsd:dateTime ;
-    ns5:presentedAt <http://ceur-ws.org/Vol-1099/#event> ;
-    ns6:editor <http://ceur-ws.org/Vol-1099/#AlfredoiGarroic>,
-        <http://ceur-ws.org/Vol-1099/#CristinaiBaroglioia>,
-        <http://ceur-ws.org/Vol-1099/#FedericoiBergentiib>,
-        <http://ceur-ws.org/Vol-1099/#MatteoiBaldoniia> .
+<http://ceur-ws.org/Vol-1099/#AgostinoiPoggi> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/AgostinoiPoggi> ;
+    ns3:made <http://ceur-ws.org/Vol-1099/#paper13> ;
+    ns3:name "Agostino Poggi" .
 
-<http://ceur-ws.org/Vol-1099/#AlfredoiGarroic> a ns2:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/AlfredoiGarroic> ;
-    ns2:name "Alfredo Garro c" .
+<http://ceur-ws.org/Vol-1099/#AldoiFrancoiDragoni> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/AldoiFrancoiDragoni> ;
+    ns3:made <http://ceur-ws.org/Vol-1099/#paper14> ;
+    ns3:name "Aldo Franco Dragoni" .
 
-<http://ceur-ws.org/Vol-1099/#CristinaiBaroglioia> a ns2:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/CristinaiBaroglioia> ;
-    ns2:name "Cristina Baroglio a" .
+<http://ceur-ws.org/Vol-1099/#AlfredoiGarroic> a ns3:Person ;
+    ns5:affiliation "" ;
+    ns4:sameAs <http://ceur-ws.org/persons/AlfredoiGarroic> ;
+    ns3:name "Alfredo Garro c" .
 
-<http://ceur-ws.org/Vol-1099/#FedericoiBergentiib> a ns2:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/FedericoiBergentiib> ;
-    ns2:name "Federico Bergenti b" .
+<http://ceur-ws.org/Vol-1099/#AndreaiClaudi> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/AndreaiClaudi> ;
+    ns3:made <http://ceur-ws.org/Vol-1099/#paper14> ;
+    ns3:name "Andrea Claudi" .
 
-<http://ceur-ws.org/Vol-1099/#MatteoiBaldoniia> a ns2:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/MatteoiBaldoniia> ;
-    ns2:name "Matteo Baldoni a" .
+<http://ceur-ws.org/Vol-1099/#CarmeloiLodato> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/CarmeloiLodato> ;
+    ns3:made <http://ceur-ws.org/Vol-1099/#paper12> ;
+    ns3:name "Carmelo Lodato" .
+
+<http://ceur-ws.org/Vol-1099/#ClaudiaiDiiNapoli> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/ClaudiaiDiiNapoli> ;
+    ns3:made <http://ceur-ws.org/Vol-1099/#paper2> ;
+    ns3:name "Claudia Di Napoli" .
+
+<http://ceur-ws.org/Vol-1099/#DanieleiBlanc> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/DanieleiBlanc> ;
+    ns3:made <http://ceur-ws.org/Vol-1099/#paper7> ;
+    ns3:name "Daniele Blanc" .
+
+<http://ceur-ws.org/Vol-1099/#DaniloiGotta> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/DaniloiGotta> ;
+    ns3:made <http://ceur-ws.org/Vol-1099/#paper9> ;
+    ns3:name "Danilo Gotta" .
+
+<http://ceur-ws.org/Vol-1099/#DarioiDiiNocera> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/DarioiDiiNocera> ;
+    ns3:made <http://ceur-ws.org/Vol-1099/#paper2> ;
+    ns3:name "Dario Di Nocera" .
+
+<http://ceur-ws.org/Vol-1099/#DomenicoiRosaci> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/DomenicoiRosaci> ;
+    ns3:made <http://ceur-ws.org/Vol-1099/#paper1> ;
+    ns3:name "Domenico Rosaci" .
+
+<http://ceur-ws.org/Vol-1099/#ElisabettaiFersini> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/ElisabettaiFersini> ;
+    ns3:made <http://ceur-ws.org/Vol-1099/#paper7> ;
+    ns3:name "Elisabetta Fersini" .
+
+<http://ceur-ws.org/Vol-1099/#EmilioiFerrara> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/EmilioiFerrara> ;
+    ns3:made <http://ceur-ws.org/Vol-1099/#paper1> ;
+    ns3:name "Emilio Ferrara" .
+
+<http://ceur-ws.org/Vol-1099/#EnzaiMessina> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/EnzaiMessina> ;
+    ns3:made <http://ceur-ws.org/Vol-1099/#paper7> ;
+    ns3:name "Enza Messina" .
+
+<http://ceur-ws.org/Vol-1099/#EugenioiDiiSciascio> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/EugenioiDiiSciascio> ;
+    ns3:made <http://ceur-ws.org/Vol-1099/#paper10> ;
+    ns3:name "Eugenio Di Sciascio" .
+
+<http://ceur-ws.org/Vol-1099/#FabioiSartori> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/FabioiSartori> ;
+    ns3:made <http://ceur-ws.org/Vol-1099/#paper8> ;
+    ns3:name "Fabio Sartori" .
+
+<http://ceur-ws.org/Vol-1099/#FedericoiAlbertoiPozzi> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/FedericoiAlbertoiPozzi> ;
+    ns3:made <http://ceur-ws.org/Vol-1099/#paper7> ;
+    ns3:name "Federico Alberto Pozzi" .
+
+<http://ceur-ws.org/Vol-1099/#FedericoiCapuzzimati> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/FedericoiCapuzzimati> ;
+    ns3:made <http://ceur-ws.org/Vol-1099/#paper11> ;
+    ns3:name "Federico Capuzzimati" .
+
+<http://ceur-ws.org/Vol-1099/#FilippoiAgazzi> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/FilippoiAgazzi> ;
+    ns3:made <http://ceur-ws.org/Vol-1099/#paper6> ;
+    ns3:name "Filippo Agazzi" .
+
+<http://ceur-ws.org/Vol-1099/#FlorianoiScioscia> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/FlorianoiScioscia> ;
+    ns3:made <http://ceur-ws.org/Vol-1099/#paper10> ;
+    ns3:name "Floriano Scioscia" .
+
+<http://ceur-ws.org/Vol-1099/#GiancarloiFortino> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/GiancarloiFortino> ;
+    ns3:made <http://ceur-ws.org/Vol-1099/#paper15> ;
+    ns3:name "Giancarlo Fortino" .
+
+<http://ceur-ws.org/Vol-1099/#GianlucaiDolcini> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/GianlucaiDolcini> ;
+    ns3:made <http://ceur-ws.org/Vol-1099/#paper14> ;
+    ns3:name "Gianluca Dolcini" .
+
+<http://ceur-ws.org/Vol-1099/#GiovanniiCaire> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/GiovanniiCaire> ;
+    ns3:made <http://ceur-ws.org/Vol-1099/#paper9> ;
+    ns3:name "Giovanni Caire" .
+
+<http://ceur-ws.org/Vol-1099/#GiuseppeiLoseto> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/GiuseppeiLoseto> ;
+    ns3:made <http://ceur-ws.org/Vol-1099/#paper10> ;
+    ns3:name "Giuseppe Loseto" .
+
+<http://ceur-ws.org/Vol-1099/#GiuseppeiM.iL.iSarn%C3%A8> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/GiuseppeiM.iL.iSarn%C3%A8> ;
+    ns3:made <http://ceur-ws.org/Vol-1099/#paper1> ;
+    ns3:name "Giuseppe M. L. Sarnè" .
+
+<http://ceur-ws.org/Vol-1099/#GiuseppeiVizzari> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/GiuseppeiVizzari> ;
+    ns3:made <http://ceur-ws.org/Vol-1099/#paper16> ;
+    ns3:name "Giuseppe Vizzari" .
+
+<http://ceur-ws.org/Vol-1099/#LorenzaiManenti> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/LorenzaiManenti> ;
+    ns3:made <http://ceur-ws.org/Vol-1099/#paper8> ;
+    ns3:name "Lorenza Manenti" .
+
+<http://ceur-ws.org/Vol-1099/#LucaiCrociani> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/LucaiCrociani> ;
+    ns3:made <http://ceur-ws.org/Vol-1099/#paper16> ;
+    ns3:name "Luca Crociani" .
+
+<http://ceur-ws.org/Vol-1099/#LucaiGrazioli> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/LucaiGrazioli> ;
+    ns3:made <http://ceur-ws.org/Vol-1099/#paper8> ;
+    ns3:name "Luca Grazioli" .
+
+<http://ceur-ws.org/Vol-1099/#LucaiPalazzo> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/LucaiPalazzo> ;
+    ns3:made <http://ceur-ws.org/Vol-1099/#paper14> ;
+    ns3:name "Luca Palazzo" .
+
+<http://ceur-ws.org/Vol-1099/#LucaiSabatucci> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/LucaiSabatucci> ;
+    ns3:made <http://ceur-ws.org/Vol-1099/#paper12> ;
+    ns3:name "Luca Sabatucci" .
+
+<http://ceur-ws.org/Vol-1099/#MarinaiMongiello> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/MarinaiMongiello> ;
+    ns3:made <http://ceur-ws.org/Vol-1099/#paper10> ;
+    ns3:name "Marina Mongiello" .
+
+<http://ceur-ws.org/Vol-1099/#MassimoiCossentino> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/MassimoiCossentino> ;
+    ns3:made <http://ceur-ws.org/Vol-1099/#paper12> ;
+    ns3:name "Massimo Cossentino" .
+
+<http://ceur-ws.org/Vol-1099/#MicheleiRuta> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/MicheleiRuta> ;
+    ns3:made <http://ceur-ws.org/Vol-1099/#paper10> ;
+    ns3:name "Michele Ruta" .
+
+<http://ceur-ws.org/Vol-1099/#MicheleiTomaiuolo> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/MicheleiTomaiuolo> ;
+    ns3:made <http://ceur-ws.org/Vol-1099/#paper6> ;
+    ns3:name "Michele Tomaiuolo" .
+
+<http://ceur-ws.org/Vol-1099/#PaoloiSernani> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/PaoloiSernani> ;
+    ns3:made <http://ceur-ws.org/Vol-1099/#paper14> ;
+    ns3:name "Paolo Sernani" .
+
+<http://ceur-ws.org/Vol-1099/#PasqualeiDeiMeo> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/PasqualeiDeiMeo> ;
+    ns3:made <http://ceur-ws.org/Vol-1099/#paper1> ;
+    ns3:name "Pasquale De Meo" .
+
+<http://ceur-ws.org/Vol-1099/#PatriziaiRibino> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/PatriziaiRibino> ;
+    ns3:made <http://ceur-ws.org/Vol-1099/#paper12> ;
+    ns3:name "Patrizia Ribino" .
+
+<http://ceur-ws.org/Vol-1099/#SalvatoreiLopes> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/SalvatoreiLopes> ;
+    ns3:made <http://ceur-ws.org/Vol-1099/#paper12> ;
+    ns3:name "Salvatore Lopes" .
+
+<http://ceur-ws.org/Vol-1099/#SilviaiRossi> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/SilviaiRossi> ;
+    ns3:made <http://ceur-ws.org/Vol-1099/#paper2> ;
+    ns3:name "Silvia Rossi" .
+
+<http://ceur-ws.org/Vol-1099/#SultaniDaudiKhan> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/SultaniDaudiKhan> ;
+    ns3:made <http://ceur-ws.org/Vol-1099/#paper16> ;
+    ns3:name "Sultan Daud Khan" .
+
+<http://ceur-ws.org/Vol-1099/#ValeriaiSeidita> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/ValeriaiSeidita> ;
+    ns3:made <http://ceur-ws.org/Vol-1099/#paper12> ;
+    ns3:name "Valeria Seidita" .
+
+<http://ceur-ws.org/Vol-1099/#WilmaiRusso> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/WilmaiRusso> ;
+    ns3:made <http://ceur-ws.org/Vol-1099/#paper15> ;
+    ns3:name "Wilma Russo" .
 
 <http://ceur-ws.org/Vol-1099/#event> a ns7:WorkshopEvent ;
     ns7:hasLocation <http://dbpedia.org/resource/Italy> ;
-    ns7:hasPart <http://ceur-ws.org/Vol-1099/#part-ws> ;
+    ns7:hasPart <http://ceur-ws.org/Vol-1099/#part-WOA> ;
     ns7:isSubEventOf <http://ceur-ws.org/Vol-1099/#conf> ;
-    ns3:beginsAtDatetime "2013-12-02T00:00:00+00:00"^^xsd:dateTime ;
-    ns3:endsAtDatetime "2013-12-03T00:00:00+00:00"^^xsd:dateTime ;
-    ns4:license "http://choosealicense.com/licenses/no-license/" ;
+    ns9:beginsAtDatetime "2013-12-02T00:00:00+00:00"^^xsd:dateTime ;
+    ns9:endsAtDatetime "2013-12-03T00:00:00+00:00"^^xsd:dateTime ;
+    ns2:license "http://choosealicense.com/licenses/no-license/" ;
     rdfs:seeAlso <http://ceur-ws.org/Vol-204/#event>,
         <http://ceur-ws.org/Vol-621/#event>,
         <http://ceur-ws.org/Vol-741/#event>,
         <http://ceur-ws.org/Vol-892/#event> .
+
+<http://ceur-ws.org/Vol-1099/#AndreaiOmicini> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/AndreaiOmicini> ;
+    ns3:made <http://ceur-ws.org/Vol-1099/#paper3>,
+        <http://ceur-ws.org/Vol-1099/#paper4> ;
+    ns3:name "Andrea Omicini" .
+
+<http://ceur-ws.org/Vol-1099/#CristinaiBaroglioia> a ns3:Person ;
+    ns5:affiliation "" ;
+    ns4:sameAs <http://ceur-ws.org/persons/CristinaiBaroglioia> ;
+    ns3:made <http://ceur-ws.org/Vol-1099/#paper11> ;
+    ns3:name "Cristina Baroglio a" .
+
+<http://ceur-ws.org/Vol-1099/#FedericoiBergentiib> a ns3:Person ;
+    ns5:affiliation "" ;
+    ns4:sameAs <http://ceur-ws.org/persons/FedericoiBergentiib> ;
+    ns3:made <http://ceur-ws.org/Vol-1099/#paper9> ;
+    ns3:name "Federico Bergenti b" .
+
+<http://ceur-ws.org/Vol-1099/#MatteoiBaldoniia> a ns3:Person ;
+    ns5:affiliation "" ;
+    ns4:sameAs <http://ceur-ws.org/persons/MatteoiBaldoniia> ;
+    ns3:made <http://ceur-ws.org/Vol-1099/#paper11> ;
+    ns3:name "Matteo Baldoni a" .
+
+<http://ceur-ws.org/Vol-1099/#Ontologies> a ns7:SessionEvent ;
+    ns7:partOf <http://ceur-ws.org/Vol-1099/> ;
+    ns1:title "Ontologies" .
+
+<http://ceur-ws.org/Vol-1099/#paper13> a ns7:Paper ;
+    ns7:partOf <http://ceur-ws.org/Vol-1099/> ;
+    ns1:title "Replaceable Implementations for Actor Systems" ;
+    ns6:endPage 96 ;
+    ns6:numPages 6 ;
+    ns6:section <http://ceur-ws.org/Vol-1099/#MultiAgentSystemsArchitectures> ;
+    ns6:startPage 91 ;
+    ns5:author <http://ceur-ws.org/Vol-1099/#AgostinoiPoggi> .
+
+<http://ceur-ws.org/Vol-1099/#paper5> a ns7:Paper ;
+    ns7:partOf <http://ceur-ws.org/Vol-1099/> ;
+    ns1:title "Parameter Engineering vs. Parameter Tuning: the Case of Biochemical Coordination in MoK" ;
+    ns6:endPage 23 ;
+    ns6:numPages 8 ;
+    ns6:section <http://ceur-ws.org/Vol-1099/#Coordinations> ;
+    ns6:startPage 16 ;
+    ns5:author <http://ceur-ws.org/Vol-1099/#StefanoiMariani> .
+
+<http://ceur-ws.org/Vol-1099/#Agentsservicesandcloud> a ns7:SessionEvent ;
+    ns7:partOf <http://ceur-ws.org/Vol-1099/> ;
+    ns1:title "Agents, services, and cloud" .
+
+<http://ceur-ws.org/Vol-1099/#StefanoiMariani> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/StefanoiMariani> ;
+    ns3:made <http://ceur-ws.org/Vol-1099/#paper3>,
+        <http://ceur-ws.org/Vol-1099/#paper4>,
+        <http://ceur-ws.org/Vol-1099/#paper5> ;
+    ns3:name "Stefano Mariani" .
+
+<http://ceur-ws.org/Vol-1099/#paper15> a ns7:Paper ;
+    ns7:partOf <http://ceur-ws.org/Vol-1099/> ;
+    ns1:title "Towards a Cloud-assisted and Agent-oriented Architecture for the Internet of Things" ;
+    ns6:endPage 65 ;
+    ns6:numPages 6 ;
+    ns6:section <http://ceur-ws.org/Vol-1099/#Agentsservicesandcloud> ;
+    ns6:startPage 60 ;
+    ns5:author <http://ceur-ws.org/Vol-1099/#GiancarloiFortino>,
+        <http://ceur-ws.org/Vol-1099/#WilmaiRusso> .
+
+<http://ceur-ws.org/Vol-1099/#paper3> a ns7:Paper ;
+    ns7:partOf <http://ceur-ws.org/Vol-1099/> ;
+    ns1:title "Space-aware Coordination in ReSpecT" ;
+    ns6:endPage 7 ;
+    ns6:numPages 7 ;
+    ns6:section <http://ceur-ws.org/Vol-1099/#Coordinations> ;
+    ns6:startPage 1 ;
+    ns5:author <http://ceur-ws.org/Vol-1099/#AndreaiOmicini>,
+        <http://ceur-ws.org/Vol-1099/#StefanoiMariani> .
+
+<http://ceur-ws.org/Vol-1099/#paper4> a ns7:Paper ;
+    ns7:partOf <http://ceur-ws.org/Vol-1099/> ;
+    ns1:title "Tuple-based Coordination of Stochastic Systems with Uniform Primitives" ;
+    ns6:endPage 15 ;
+    ns6:numPages 8 ;
+    ns6:section <http://ceur-ws.org/Vol-1099/#Coordinations> ;
+    ns6:startPage 8 ;
+    ns5:author <http://ceur-ws.org/Vol-1099/#AndreaiOmicini>,
+        <http://ceur-ws.org/Vol-1099/#StefanoiMariani> .
+
+<http://ceur-ws.org/Vol-1099/#paper6> a ns7:Paper ;
+    ns7:partOf <http://ceur-ws.org/Vol-1099/> ;
+    ns1:title "Trust Negotiation for Automated Service Integration" ;
+    ns6:endPage 103 ;
+    ns6:numPages 7 ;
+    ns6:section <http://ceur-ws.org/Vol-1099/#MultiAgentSystemsArchitectures> ;
+    ns6:startPage 97 ;
+    ns5:author <http://ceur-ws.org/Vol-1099/#FilippoiAgazzi>,
+        <http://ceur-ws.org/Vol-1099/#MicheleiTomaiuolo> .
+
+<http://ceur-ws.org/Vol-1099/#Coordinations> a ns7:SessionEvent ;
+    ns7:partOf <http://ceur-ws.org/Vol-1099/> ;
+    ns1:title "Coordinations" .
+
+<http://ceur-ws.org/Vol-1099/#MultiAgentSystemsArchitectures> a ns7:SessionEvent ;
+    ns7:partOf <http://ceur-ws.org/Vol-1099/> ;
+    ns1:title "Multi-Agent Systems Architectures" .
+
+<http://ceur-ws.org/Vol-1099/#SocialApplications> a ns7:SessionEvent ;
+    ns7:partOf <http://ceur-ws.org/Vol-1099/> ;
+    ns1:title "Social Applications" .
+
+<http://ceur-ws.org/Vol-1099/#paper11> a ns7:Paper ;
+    ns7:partOf <http://ceur-ws.org/Vol-1099/> ;
+    ns1:title "2COMM: A Commitment-based MAS Architecture" ;
+    ns6:endPage 111 ;
+    ns6:numPages 8 ;
+    ns6:section <http://ceur-ws.org/Vol-1099/#MultiAgentSystemsArchitectures> ;
+    ns6:startPage 104 ;
+    ns5:author <http://ceur-ws.org/Vol-1099/#CristinaiBaroglioia>,
+        <http://ceur-ws.org/Vol-1099/#FedericoiCapuzzimati>,
+        <http://ceur-ws.org/Vol-1099/#MatteoiBaldoniia> .
+
+<http://ceur-ws.org/Vol-1099/#paper16> a ns7:Paper ;
+    ns7:partOf <http://ceur-ws.org/Vol-1099/> ;
+    ns1:title "Integrated Analysis and Synthesis of Pedestrian Dynamics: First Results in a Real World Case Study" ;
+    ns6:endPage 40 ;
+    ns6:numPages 11 ;
+    ns6:section <http://ceur-ws.org/Vol-1099/#Applications> ;
+    ns6:startPage 30 ;
+    ns5:author <http://ceur-ws.org/Vol-1099/#GiuseppeiVizzari>,
+        <http://ceur-ws.org/Vol-1099/#LucaiCrociani>,
+        <http://ceur-ws.org/Vol-1099/#SultaniDaudiKhan> .
+
+<http://ceur-ws.org/Vol-1099/#paper2> a ns7:Paper ;
+    ns7:partOf <http://ceur-ws.org/Vol-1099/> ;
+    ns1:title "Evaluating Negotiation Cost for QoS-aware Service Composition" ;
+    ns6:endPage 59 ;
+    ns6:numPages 6 ;
+    ns6:section <http://ceur-ws.org/Vol-1099/#Agentsservicesandcloud> ;
+    ns6:startPage 54 ;
+    ns5:author <http://ceur-ws.org/Vol-1099/#ClaudiaiDiiNapoli>,
+        <http://ceur-ws.org/Vol-1099/#DarioiDiiNocera>,
+        <http://ceur-ws.org/Vol-1099/#SilviaiRossi> .
+
+<http://ceur-ws.org/Vol-1099/#paper8> a ns7:Paper ;
+    ns7:partOf <http://ceur-ws.org/Vol-1099/> ;
+    ns1:title "A Conceptual and Computational Model for Knowledge-based Agents in ANDROID" ;
+    ns6:endPage 46 ;
+    ns6:numPages 6 ;
+    ns6:section <http://ceur-ws.org/Vol-1099/#Applications> ;
+    ns6:startPage 41 ;
+    ns5:author <http://ceur-ws.org/Vol-1099/#FabioiSartori>,
+        <http://ceur-ws.org/Vol-1099/#LorenzaiManenti>,
+        <http://ceur-ws.org/Vol-1099/#LucaiGrazioli> .
+
+<http://ceur-ws.org/Vol-1099/#paper9> a ns7:Paper ;
+    ns7:partOf <http://ceur-ws.org/Vol-1099/> ;
+    ns1:title "An Overview of the AMUSE Social Gaming Platform" ;
+    ns6:endPage 90 ;
+    ns6:numPages 6 ;
+    ns6:section <http://ceur-ws.org/Vol-1099/#SocialApplications> ;
+    ns6:startPage 85 ;
+    ns5:author <http://ceur-ws.org/Vol-1099/#DaniloiGotta>,
+        <http://ceur-ws.org/Vol-1099/#FedericoiBergentiib>,
+        <http://ceur-ws.org/Vol-1099/#GiovanniiCaire> .
+
+<http://ceur-ws.org/Vol-1099/#Applications> a ns7:SessionEvent ;
+    ns7:partOf <http://ceur-ws.org/Vol-1099/> ;
+    ns1:title "Applications" .
+
+<http://ceur-ws.org/Vol-1099/#paper1> a ns7:Paper ;
+    ns7:partOf <http://ceur-ws.org/Vol-1099/> ;
+    ns1:title "How to Improve Group Homogeneity in Online Social Networks" ;
+    ns6:endPage 77 ;
+    ns6:numPages 5 ;
+    ns6:section <http://ceur-ws.org/Vol-1099/#SocialApplications> ;
+    ns6:startPage 73 ;
+    ns5:author <http://ceur-ws.org/Vol-1099/#DomenicoiRosaci>,
+        <http://ceur-ws.org/Vol-1099/#EmilioiFerrara>,
+        <http://ceur-ws.org/Vol-1099/#GiuseppeiM.iL.iSarn%C3%A8>,
+        <http://ceur-ws.org/Vol-1099/#PasqualeiDeiMeo> .
+
+<http://ceur-ws.org/Vol-1099/#paper7> a ns7:Paper ;
+    ns7:partOf <http://ceur-ws.org/Vol-1099/> ;
+    ns1:title "Enhance Polarity Classification on Social Media through Sentiment-based Feature Expansion" ;
+    ns6:endPage 84 ;
+    ns6:numPages 7 ;
+    ns6:section <http://ceur-ws.org/Vol-1099/#SocialApplications> ;
+    ns6:startPage 78 ;
+    ns5:author <http://ceur-ws.org/Vol-1099/#DanieleiBlanc>,
+        <http://ceur-ws.org/Vol-1099/#ElisabettaiFersini>,
+        <http://ceur-ws.org/Vol-1099/#EnzaiMessina>,
+        <http://ceur-ws.org/Vol-1099/#FedericoiAlbertoiPozzi> .
+
+<http://ceur-ws.org/Vol-1099/#paper10> a ns7:Paper ;
+    ns7:partOf <http://ceur-ws.org/Vol-1099/> ;
+    ns1:title "Mining the User Profile from a Smartphone: a Multimodal Agent Framework" ;
+    ns6:endPage 53 ;
+    ns6:numPages 7 ;
+    ns6:section <http://ceur-ws.org/Vol-1099/#Applications> ;
+    ns6:startPage 47 ;
+    ns5:author <http://ceur-ws.org/Vol-1099/#EugenioiDiiSciascio>,
+        <http://ceur-ws.org/Vol-1099/#FlorianoiScioscia>,
+        <http://ceur-ws.org/Vol-1099/#GiuseppeiLoseto>,
+        <http://ceur-ws.org/Vol-1099/#MarinaiMongiello>,
+        <http://ceur-ws.org/Vol-1099/#MicheleiRuta> .
+
+<http://ceur-ws.org/Vol-1099/#paper14> a ns7:Paper ;
+    ns7:partOf <http://ceur-ws.org/Vol-1099/> ;
+    ns1:title "A Multi-Agent Solution for the Interoperability Issue in Health Information Systems" ;
+    ns6:endPage 29 ;
+    ns6:numPages 6 ;
+    ns6:section <http://ceur-ws.org/Vol-1099/#Applications> ;
+    ns6:startPage 24 ;
+    ns5:author <http://ceur-ws.org/Vol-1099/#AldoiFrancoiDragoni>,
+        <http://ceur-ws.org/Vol-1099/#AndreaiClaudi>,
+        <http://ceur-ws.org/Vol-1099/#GianlucaiDolcini>,
+        <http://ceur-ws.org/Vol-1099/#LucaiPalazzo>,
+        <http://ceur-ws.org/Vol-1099/#PaoloiSernani> .
+
+<http://ceur-ws.org/Vol-1099/#paper12> a ns7:Paper ;
+    ns7:partOf <http://ceur-ws.org/Vol-1099/> ;
+    ns1:title "Ontology and Goal Model in Designing BDI Multi-Agent Systems" ;
+    ns6:endPage 72 ;
+    ns6:numPages 7 ;
+    ns6:section <http://ceur-ws.org/Vol-1099/#Ontologies> ;
+    ns6:startPage 66 ;
+    ns5:author <http://ceur-ws.org/Vol-1099/#CarmeloiLodato>,
+        <http://ceur-ws.org/Vol-1099/#LucaiSabatucci>,
+        <http://ceur-ws.org/Vol-1099/#MassimoiCossentino>,
+        <http://ceur-ws.org/Vol-1099/#PatriziaiRibino>,
+        <http://ceur-ws.org/Vol-1099/#SalvatoreiLopes>,
+        <http://ceur-ws.org/Vol-1099/#ValeriaiSeidita> .
+
+<http://ceur-ws.org/Vol-1099/> a ns7:Proceedings ;
+    ns7:hasPart <http://ceur-ws.org/Vol-1099/#paper1>,
+        <http://ceur-ws.org/Vol-1099/#paper10>,
+        <http://ceur-ws.org/Vol-1099/#paper11>,
+        <http://ceur-ws.org/Vol-1099/#paper12>,
+        <http://ceur-ws.org/Vol-1099/#paper13>,
+        <http://ceur-ws.org/Vol-1099/#paper14>,
+        <http://ceur-ws.org/Vol-1099/#paper15>,
+        <http://ceur-ws.org/Vol-1099/#paper16>,
+        <http://ceur-ws.org/Vol-1099/#paper2>,
+        <http://ceur-ws.org/Vol-1099/#paper3>,
+        <http://ceur-ws.org/Vol-1099/#paper4>,
+        <http://ceur-ws.org/Vol-1099/#paper5>,
+        <http://ceur-ws.org/Vol-1099/#paper6>,
+        <http://ceur-ws.org/Vol-1099/#paper7>,
+        <http://ceur-ws.org/Vol-1099/#paper8>,
+        <http://ceur-ws.org/Vol-1099/#paper9> ;
+    ns7:hasSession <http://ceur-ws.org/Vol-1099/#Agentsservicesandcloud>,
+        <http://ceur-ws.org/Vol-1099/#Applications>,
+        <http://ceur-ws.org/Vol-1099/#Coordinations>,
+        <http://ceur-ws.org/Vol-1099/#MultiAgentSystemsArchitectures>,
+        <http://ceur-ws.org/Vol-1099/#Ontologies>,
+        <http://ceur-ws.org/Vol-1099/#SocialApplications> ;
+    ns8:issued "2013-11-30T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:presentedAt <http://ceur-ws.org/Vol-1099/#event> ;
+    ns5:editor <http://ceur-ws.org/Vol-1099/#AlfredoiGarroic>,
+        <http://ceur-ws.org/Vol-1099/#CristinaiBaroglioia>,
+        <http://ceur-ws.org/Vol-1099/#FedericoiBergentiib>,
+        <http://ceur-ws.org/Vol-1099/#MatteoiBaldoniia> .
 

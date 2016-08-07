@@ -1,12 +1,12 @@
 @prefix ns1: <http://www.w3.org/2002/07/owl#> .
 @prefix ns2: <http://xmlns.com/foaf/0.1/> .
-@prefix ns3: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns4: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns5: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns6: <http://purl.org/ontology/bibo/#> .
-@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns9: <http://purl.org/dc/elements/1.1/> .
+@prefix ns3: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns4: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns5: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns6: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns7: <http://purl.org/ontology/bibo/#> .
+@prefix ns8: <http://purl.org/dc/elements/1.1/> .
+@prefix ns9: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -92,16 +92,16 @@
     ns2:made <http://ceur-ws.org/Vol-693/#paper3> ;
     ns2:name "Thilo Kerscher" .
 
-<http://ceur-ws.org/Vol-693/#event> a ns3:WorkshopEvent ;
-    ns3:hasLocation <http://dbpedia.org/resource/Japan> ;
-    ns3:hasPart <http://ceur-ws.org/Vol-693/#part-ws> ;
-    ns3:isSubEventOf <http://ceur-ws.org/Vol-693/#conf> ;
-    ns8:beginsAtDatetime "2011-01-26T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:endsAtDatetime "2011-01-26T00:00:00+00:00"^^xsd:dateTime ;
-    ns9:license "http://choosealicense.com/licenses/no-license/" .
+<http://ceur-ws.org/Vol-693/#event> a ns4:WorkshopEvent ;
+    ns4:hasLocation <http://dbpedia.org/resource/Japan> ;
+    ns4:hasPart <http://ceur-ws.org/Vol-693/#part-IHRCMICA> ;
+    ns4:isSubEventOf <http://ceur-ws.org/Vol-693/#conf> ;
+    ns6:beginsAtDatetime "2009-09-28T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:endsAtDatetime "2009-09-28T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:license "http://choosealicense.com/licenses/no-license/" .
 
 <http://ceur-ws.org/Vol-693/#AndersiGreen> a ns2:Person ;
-    ns5:affiliation "" ;
+    ns3:affiliation "" ;
     ns1:sameAs <http://ceur-ws.org/persons/AndersiGreen> ;
     ns2:made <http://ceur-ws.org/Vol-693/#paper4> ;
     ns2:name "Anders Green" .
@@ -113,19 +113,19 @@
     ns2:name "Cristian Bogdan" .
 
 <http://ceur-ws.org/Vol-693/#DominikiErtl> a ns2:Person ;
-    ns5:affiliation "" ;
+    ns3:affiliation "" ;
     ns1:sameAs <http://ceur-ws.org/persons/DominikiErtl> ;
     ns2:made <http://ceur-ws.org/Vol-693/#paper7> ;
     ns2:name "Dominik Ertl" .
 
 <http://ceur-ws.org/Vol-693/#FredericiLerasle> a ns2:Person ;
-    ns5:affiliation "" ;
+    ns3:affiliation "" ;
     ns1:sameAs <http://ceur-ws.org/persons/FredericiLerasle> ;
     ns2:made <http://ceur-ws.org/Vol-693/#paper2> ;
     ns2:name "Frederic Lerasle" .
 
 <http://ceur-ws.org/Vol-693/#HelgeiH%C3%BCttenrauch> a ns2:Person ;
-    ns5:affiliation "" ;
+    ns3:affiliation "" ;
     ns1:sameAs <http://ceur-ws.org/persons/HelgeiH%C3%BCttenrauch> ;
     ns2:made <http://ceur-ws.org/Vol-693/#paper4> ;
     ns2:name "Helge Hüttenrauch" .
@@ -136,64 +136,64 @@
         <http://ceur-ws.org/Vol-693/#paper8> ;
     ns2:name "Michael Göller" .
 
-<http://ceur-ws.org/Vol-693/#paper1> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-693/> ;
-    ns4:title "Understanding Spatial Concepts by Exploiting Interaction Patterns" ;
-    ns5:author <http://ceur-ws.org/Vol-693/#EliniA.iTopp> .
+<http://ceur-ws.org/Vol-693/#paper1> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-693/> ;
+    ns5:title "Understanding Spatial Concepts by Exploiting Interaction Patterns" ;
+    ns3:author <http://ceur-ws.org/Vol-693/#EliniA.iTopp> .
 
-<http://ceur-ws.org/Vol-693/#paper6> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-693/> ;
-    ns4:title "How to interface a human operator and a Motion Planning Algorithm" ;
-    ns5:author <http://ceur-ws.org/Vol-693/#DavidiFlavigne>,
+<http://ceur-ws.org/Vol-693/#paper6> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-693/> ;
+    ns5:title "How to interface a human operator and a Motion Planning Algorithm" ;
+    ns3:author <http://ceur-ws.org/Vol-693/#DavidiFlavigne>,
         <http://ceur-ws.org/Vol-693/#MicheliTaix> .
 
-<http://ceur-ws.org/Vol-693/#paper7> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-693/> ;
-    ns4:title "Decoupling of Modality Integration and Interaction Design for Multimodal Human-Robot Interfaces" ;
-    ns5:author <http://ceur-ws.org/Vol-693/#DominikiErtl>,
+<http://ceur-ws.org/Vol-693/#paper7> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-693/> ;
+    ns5:title "Decoupling of Modality Integration and Interaction Design for Multimodal Human-Robot Interfaces" ;
+    ns3:author <http://ceur-ws.org/Vol-693/#DominikiErtl>,
         <http://ceur-ws.org/Vol-693/#MathieuiVallee> .
 
-<http://ceur-ws.org/Vol-693/#paper8> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-693/> ;
-    ns4:title "Towards a Framework for Design and Evaluation of Mixed Initiative Systems: Considering Movement as a Modality" ;
-    ns5:author <http://ceur-ws.org/Vol-693/#CristianiBogdan>,
+<http://ceur-ws.org/Vol-693/#paper8> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-693/> ;
+    ns5:title "Towards a Framework for Design and Evaluation of Mixed Initiative Systems: Considering Movement as a Modality" ;
+    ns3:author <http://ceur-ws.org/Vol-693/#CristianiBogdan>,
         <http://ceur-ws.org/Vol-693/#MichaeliG%C3%B6ller> .
 
-<http://ceur-ws.org/Vol-693/#paper2> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-693/> ;
-    ns4:title "Measuring Gaze Orientation for Human-Robot Interaction" ;
-    ns5:author <http://ceur-ws.org/Vol-693/#ArianeiHerbulot>,
+<http://ceur-ws.org/Vol-693/#paper2> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-693/> ;
+    ns5:title "Measuring Gaze Orientation for Human-Robot Interaction" ;
+    ns3:author <http://ceur-ws.org/Vol-693/#ArianeiHerbulot>,
         <http://ceur-ws.org/Vol-693/#BriceiBurger>,
         <http://ceur-ws.org/Vol-693/#FredericiLerasle>,
         <http://ceur-ws.org/Vol-693/#R.iBrochard> .
 
-<http://ceur-ws.org/Vol-693/#paper4> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-693/> ;
-    ns4:title "With a New Helper Comes New Tasks Mixed-Initiative Interaction for Robot-Assisted Shopping" ;
-    ns5:author <http://ceur-ws.org/Vol-693/#AndersiGreen>,
+<http://ceur-ws.org/Vol-693/#paper4> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-693/> ;
+    ns5:title "With a New Helper Comes New Tasks Mixed-Initiative Interaction for Robot-Assisted Shopping" ;
+    ns3:author <http://ceur-ws.org/Vol-693/#AndersiGreen>,
         <http://ceur-ws.org/Vol-693/#CristianiBogdan>,
         <http://ceur-ws.org/Vol-693/#HelgeiH%C3%BCttenrauch>,
         <http://ceur-ws.org/Vol-693/#KerstiniSeverinsoniEklundh> .
 
-<http://ceur-ws.org/Vol-693/#paper5> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-693/> ;
-    ns4:title "Mixed-Initiative in Interactive Robotic Learning" ;
-    ns5:author <http://ceur-ws.org/Vol-693/#BrittaiWrede>,
+<http://ceur-ws.org/Vol-693/#paper5> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-693/> ;
+    ns5:title "Mixed-Initiative in Interactive Robotic Learning" ;
+    ns3:author <http://ceur-ws.org/Vol-693/#BrittaiWrede>,
         <http://ceur-ws.org/Vol-693/#IngoiL%C3%BCtkebohle>,
         <http://ceur-ws.org/Vol-693/#JuliaiPeltason>,
         <http://ceur-ws.org/Vol-693/#MarciHanheide> .
 
-<http://ceur-ws.org/Vol-693/#paper3> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-693/> ;
-    ns4:title "Can the Modeling of Pedestrian Movements Improve Robot Behaviors?" ;
-    ns5:author <http://ceur-ws.org/Vol-693/#J.iMariusiZ%C3%B6llner>,
+<http://ceur-ws.org/Vol-693/#paper3> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-693/> ;
+    ns5:title "Can the Modeling of Pedestrian Movements Improve Robot Behaviors?" ;
+    ns3:author <http://ceur-ws.org/Vol-693/#J.iMariusiZ%C3%B6llner>,
         <http://ceur-ws.org/Vol-693/#MalcoiBl%C3%BCmel>,
         <http://ceur-ws.org/Vol-693/#MichaeliG%C3%B6ller>,
         <http://ceur-ws.org/Vol-693/#R%C3%BCdigeriDillmann>,
         <http://ceur-ws.org/Vol-693/#ThiloiKerscher> .
 
-<http://ceur-ws.org/Vol-693/> a ns3:Proceedings ;
-    ns3:hasPart <http://ceur-ws.org/Vol-693/#paper1>,
+<http://ceur-ws.org/Vol-693/> a ns4:Proceedings ;
+    ns4:hasPart <http://ceur-ws.org/Vol-693/#paper1>,
         <http://ceur-ws.org/Vol-693/#paper2>,
         <http://ceur-ws.org/Vol-693/#paper3>,
         <http://ceur-ws.org/Vol-693/#paper4>,
@@ -201,9 +201,9 @@
         <http://ceur-ws.org/Vol-693/#paper6>,
         <http://ceur-ws.org/Vol-693/#paper7>,
         <http://ceur-ws.org/Vol-693/#paper8> ;
-    ns7:issued "2011-01-24T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:presentedAt <http://ceur-ws.org/Vol-693/#event> ;
-    ns5:editor <http://ceur-ws.org/Vol-693/#AndersiGreen>,
+    ns9:issued "2011-01-24T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:presentedAt <http://ceur-ws.org/Vol-693/#event> ;
+    ns3:editor <http://ceur-ws.org/Vol-693/#AndersiGreen>,
         <http://ceur-ws.org/Vol-693/#DominikiErtl>,
         <http://ceur-ws.org/Vol-693/#FredericiLerasle>,
         <http://ceur-ws.org/Vol-693/#HelgeiH%C3%BCttenrauch> .

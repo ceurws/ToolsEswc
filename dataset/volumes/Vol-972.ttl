@@ -1,41 +1,854 @@
-@prefix ns1: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns2: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns1: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns2: <http://data.semanticweb.org/ns/swc/ontology/#> .
 @prefix ns3: <http://purl.org/ontology/bibo/#> .
-@prefix ns4: <http://purl.org/dc/elements/1.1/> .
-@prefix ns5: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns6: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns7: <http://www.w3.org/2002/07/owl#> .
-@prefix ns8: <http://xmlns.com/foaf/0.1/> .
+@prefix ns4: <http://xmlns.com/foaf/0.1/> .
+@prefix ns5: <http://www.w3.org/2002/07/owl#> .
+@prefix ns6: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns9: <http://purl.org/dc/elements/1.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-972/> a ns1:Proceedings ;
-    ns2:issued "2013-03-19T00:00:00+00:00"^^xsd:dateTime ;
-    ns3:presentedAt <http://ceur-ws.org/Vol-972/#event> ;
-    ns5:editor <http://ceur-ws.org/Vol-972/#LaszloiSzathmary>,
-        <http://ceur-ws.org/Vol-972/#UtaiPriss> .
+<http://ceur-ws.org/Vol-972/#%C5%A0tefaniPero> a ns4:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/%C5%A0tefaniPero> ;
+    ns4:made <http://ceur-ws.org/Vol-972/#paper3> ;
+    ns4:name "Štefan Pero" .
 
-<http://ceur-ws.org/Vol-972/#LaszloiSzathmary> a ns8:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/LaszloiSzathmary> ;
-    ns8:name "Laszlo Szathmary" .
+<http://ceur-ws.org/Vol-972/#AbdoulkaderiOsmaniGu%C3%A9di> a ns4:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/AbdoulkaderiOsmaniGu%C3%A9di> ;
+    ns4:made <http://ceur-ws.org/Vol-972/#paper12> ;
+    ns4:name "Abdoulkader Osman Guédi" .
 
-<http://ceur-ws.org/Vol-972/#UtaiPriss> a ns8:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/UtaiPriss> ;
-    ns8:name "Uta Priss" .
+<http://ceur-ws.org/Vol-972/#AdrieniCoulet> a ns4:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/AdrieniCoulet> ;
+    ns4:made <http://ceur-ws.org/Vol-972/#paper_short1> ;
+    ns4:name "Adrien Coulet" .
 
-<http://ceur-ws.org/Vol-972/#event> a ns1:WorkshopEvent ;
-    ns1:hasLocation <http://dbpedia.org/resource/Spain> ;
-    ns1:hasPart <http://ceur-ws.org/Vol-972/#part-CEUR-WS> ;
-    ns1:isSubEventOf <http://ceur-ws.org/Vol-972/#conf> ;
-    ns6:beginsAtDatetime "2016-10-11T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:endsAtDatetime "2016-10-11T00:00:00+00:00"^^xsd:dateTime ;
-    ns4:license "http://choosealicense.com/licenses/no-license/" ;
+<http://ceur-ws.org/Vol-972/#AlainiSigayret> a ns4:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/AlainiSigayret> ;
+    ns4:made <http://ceur-ws.org/Vol-972/#paper2> ;
+    ns4:name "Alain Sigayret" .
+
+<http://ceur-ws.org/Vol-972/#AlekseyiBuzmakov> a ns4:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/AlekseyiBuzmakov> ;
+    ns4:made <http://ceur-ws.org/Vol-972/#paper18> ;
+    ns4:name "Aleksey Buzmakov" .
+
+<http://ceur-ws.org/Vol-972/#Andr%C3%A9iMiralles> a ns4:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/Andr%C3%A9iMiralles> ;
+    ns4:made <http://ceur-ws.org/Vol-972/#paper12> ;
+    ns4:name "André Miralles" .
+
+<http://ceur-ws.org/Vol-972/#AngeliMora> a ns4:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/AngeliMora> ;
+    ns4:made <http://ceur-ws.org/Vol-972/#paper16> ;
+    ns4:name "Angel Mora" .
+
+<http://ceur-ws.org/Vol-972/#AnneiBerry> a ns4:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/AnneiBerry> ;
+    ns4:made <http://ceur-ws.org/Vol-972/#paper2> ;
+    ns4:name "Anne Berry" .
+
+<http://ceur-ws.org/Vol-972/#ArtemiRevenko> a ns4:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/ArtemiRevenko> ;
+    ns4:made <http://ceur-ws.org/Vol-972/#paper13> ;
+    ns4:name "Artem Revenko" .
+
+<http://ceur-ws.org/Vol-972/#BastieniAmar> a ns4:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/BastieniAmar> ;
+    ns4:made <http://ceur-ws.org/Vol-972/#paper12> ;
+    ns4:name "Bastien Amar" .
+
+<http://ceur-ws.org/Vol-972/#BohuslaviMacek> a ns4:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/BohuslaviMacek> ;
+    ns4:made <http://ceur-ws.org/Vol-972/#paper8> ;
+    ns4:name "Bohuslav Macek" .
+
+<http://ceur-ws.org/Vol-972/#BruceiW.iWatson> a ns4:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/BruceiW.iWatson> ;
+    ns4:made <http://ceur-ws.org/Vol-972/#paper24> ;
+    ns4:name "Bruce W. Watson" .
+
+<http://ceur-ws.org/Vol-972/#CarmeniPel%C3%A1ez-Moreno> a ns4:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/CarmeniPel%C3%A1ez-Moreno> ;
+    ns4:made <http://ceur-ws.org/Vol-972/#paper_short2> ;
+    ns4:name "Carmen Peláez-Moreno" .
+
+<http://ceur-ws.org/Vol-972/#CassioiMelo> a ns4:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/CassioiMelo> ;
+    ns4:made <http://ceur-ws.org/Vol-972/#paper17> ;
+    ns4:name "Cassio Melo" .
+
+<http://ceur-ws.org/Vol-972/#ChristianiWurm> a ns4:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/ChristianiWurm> ;
+    ns4:made <http://ceur-ws.org/Vol-972/#paper9> ;
+    ns4:name "Christian Wurm" .
+
+<http://ceur-ws.org/Vol-972/#CristinaiAlcalde> a ns4:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/CristinaiAlcalde> ;
+    ns4:made <http://ceur-ws.org/Vol-972/#paper7> ;
+    ns4:name "Cristina Alcalde" .
+
+<http://ceur-ws.org/Vol-972/#CynthiaiVeraiGlodeanu> a ns4:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/CynthiaiVeraiGlodeanu> ;
+    ns4:made <http://ceur-ws.org/Vol-972/#paper11> ;
+    ns4:name "Cynthia Vera Glodeanu" .
+
+<http://ceur-ws.org/Vol-972/#DanieliBorchmann> a ns4:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/DanieliBorchmann> ;
+    ns4:made <http://ceur-ws.org/Vol-972/#paper1> ;
+    ns4:name "Daniel Borchmann" .
+
+<http://ceur-ws.org/Vol-972/#DerrickiG.iKourie> a ns4:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/DerrickiG.iKourie> ;
+    ns4:made <http://ceur-ws.org/Vol-972/#paper24> ;
+    ns4:name "Derrick G. Kourie" .
+
+<http://ceur-ws.org/Vol-972/#DungiBui> a ns4:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/DungiBui> ;
+    ns4:made <http://ceur-ws.org/Vol-972/#paper17> ;
+    ns4:name "Dung Bui" .
+
+<http://ceur-ws.org/Vol-972/#EngelbertiMephuiNguifo> a ns4:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/EngelbertiMephuiNguifo> ;
+    ns4:made <http://ceur-ws.org/Vol-972/#invited3> ;
+    ns4:name "Engelbert Mephu Nguifo" .
+
+<http://ceur-ws.org/Vol-972/#FelixiDistel> a ns4:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/FelixiDistel> ;
+    ns4:made <http://ceur-ws.org/Vol-972/#paper14> ;
+    ns4:name "Felix Distel" .
+
+<http://ceur-ws.org/Vol-972/#FranciscoiJ.iValverde-Albacete> a ns4:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/FranciscoiJ.iValverde-Albacete> ;
+    ns4:made <http://ceur-ws.org/Vol-972/#paper_short2> ;
+    ns4:name "Francisco J. Valverde-Albacete" .
+
+<http://ceur-ws.org/Vol-972/#FritziJ.iVenter> a ns4:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/FritziJ.iVenter> ;
+    ns4:made <http://ceur-ws.org/Vol-972/#paper24> ;
+    ns4:name "Fritz J. Venter" .
+
+<http://ceur-ws.org/Vol-972/#HajeriSaada> a ns4:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/HajeriSaada> ;
+    ns4:made <http://ceur-ws.org/Vol-972/#paper4> ;
+    ns4:name "Hajer Saada" .
+
+<http://ceur-ws.org/Vol-972/#HirohisaiSeki> a ns4:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/HirohisaiSeki> ;
+    ns4:made <http://ceur-ws.org/Vol-972/#paper10> ;
+    ns4:name "Hirohisa Seki" .
+
+<http://ceur-ws.org/Vol-972/#HouariiSahraoui> a ns4:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/HouariiSahraoui> ;
+    ns4:made <http://ceur-ws.org/Vol-972/#paper4> ;
+    ns4:name "Houari Sahraoui" .
+
+<http://ceur-ws.org/Vol-972/#IoannaiLykourentzou> a ns4:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/IoannaiLykourentzou> ;
+    ns4:made <http://ceur-ws.org/Vol-972/#paper22> ;
+    ns4:name "Ioanna Lykourentzou" .
+
+<http://ceur-ws.org/Vol-972/#JaniKonecny> a ns4:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/JaniKonecny> ;
+    ns4:made <http://ceur-ws.org/Vol-972/#paper21> ;
+    ns4:name "Jan Konecny" .
+
+<http://ceur-ws.org/Vol-972/#JaniOutrata> a ns4:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/JaniOutrata> ;
+    ns4:made <http://ceur-ws.org/Vol-972/#paper26> ;
+    ns4:name "Jan Outrata" .
+
+<http://ceur-ws.org/Vol-972/#JaumeiBaixeries> a ns4:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/JaumeiBaixeries> ;
+    ns4:made <http://ceur-ws.org/Vol-972/#paper15> ;
+    ns4:name "Jaume Baixeries" .
+
+<http://ceur-ws.org/Vol-972/#JeaniVaillancourt> a ns4:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/JeaniVaillancourt> ;
+    ns4:made <http://ceur-ws.org/Vol-972/#paper28> ;
+    ns4:name "Jean Vaillancourt" .
+
+<http://ceur-ws.org/Vol-972/#JorgeiRuiz-Calvino> a ns4:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/JorgeiRuiz-Calvino> ;
+    ns4:made <http://ceur-ws.org/Vol-972/#paper6> ;
+    ns4:name "Jorge Ruiz-Calvino" .
+
+<http://ceur-ws.org/Vol-972/#Jos%C3%A9iMar%C3%ADaiFern%C3%A1ndez-Calabozo> a ns4:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/Jos%C3%A9iMar%C3%ADaiFern%C3%A1ndez-Calabozo> ;
+    ns4:made <http://ceur-ws.org/Vol-972/#paper_short2> ;
+    ns4:name "José María Fernández-Calabozo" .
+
+<http://ceur-ws.org/Vol-972/#KarelliBertet> a ns4:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/KarelliBertet> ;
+    ns4:made <http://ceur-ws.org/Vol-972/#paper19> ;
+    ns4:name "Karell Bertet" .
+
+<http://ceur-ws.org/Vol-972/#L%27ubom%C3%ADriAntoni> a ns4:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/L%27ubom%C3%ADriAntoni> ;
+    ns4:made <http://ceur-ws.org/Vol-972/#paper8> ;
+    ns4:name "L'ubomír Antoni" .
+
+<http://ceur-ws.org/Vol-972/#L%C3%A9onardiKwuida> a ns4:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/L%C3%A9onardiKwuida> ;
+    ns4:made <http://ceur-ws.org/Vol-972/#paper28> ;
+    ns4:name "Léonard Kwuida" .
+
+<http://ceur-ws.org/Vol-972/#LaurentiBeaudou> a ns4:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/LaurentiBeaudou> ;
+    ns4:made <http://ceur-ws.org/Vol-972/#paper27> ;
+    ns4:name "Laurent Beaudou" .
+
+<http://ceur-ws.org/Vol-972/#LhouariiNourine> a ns4:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/LhouariiNourine> ;
+    ns4:made <http://ceur-ws.org/Vol-972/#paper27> ;
+    ns4:name "Lhouari Nourine" .
+
+<http://ceur-ws.org/Vol-972/#MalikaiSma%C3%AFl-Tabbone> a ns4:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/MalikaiSma%C3%AFl-Tabbone> ;
+    ns4:made <http://ceur-ws.org/Vol-972/#paper_short1> ;
+    ns4:name "Malika Smaïl-Tabbone" .
+
+<http://ceur-ws.org/Vol-972/#MamadouiMoustaphaiKant%C3%A9> a ns4:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/MamadouiMoustaphaiKant%C3%A9> ;
+    ns4:made <http://ceur-ws.org/Vol-972/#paper27> ;
+    ns4:name "Mamadou Moustapha Kanté" .
+
+<http://ceur-ws.org/Vol-972/#ManueliEnciso> a ns4:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/ManueliEnciso> ;
+    ns4:made <http://ceur-ws.org/Vol-972/#paper16> ;
+    ns4:name "Manuel Enciso" .
+
+<http://ceur-ws.org/Vol-972/#Marie-AudeiAufaure> a ns4:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/Marie-AudeiAufaure> ;
+    ns4:made <http://ceur-ws.org/Vol-972/#paper17> ;
+    ns4:name "Marie-Aude Aufaure" .
+
+<http://ceur-ws.org/Vol-972/#MarketaiKrmelova> a ns4:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/MarketaiKrmelova> ;
+    ns4:made <http://ceur-ws.org/Vol-972/#paper25> ;
+    ns4:name "Marketa Krmelova" .
+
+<http://ceur-ws.org/Vol-972/#MartiniTrnecka> a ns4:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/MartiniTrnecka> ;
+    ns4:made <http://ceur-ws.org/Vol-972/#paper26> ;
+    ns4:name "Martin Trnecka" .
+
+<http://ceur-ws.org/Vol-972/#MehdiiKaytoue> a ns4:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/MehdiiKaytoue> ;
+    ns4:made <http://ceur-ws.org/Vol-972/#paper15> ;
+    ns4:name "Mehdi Kaytoue" .
+
+<http://ceur-ws.org/Vol-972/#MehwishiAlam> a ns4:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/MehwishiAlam> ;
+    ns4:made <http://ceur-ws.org/Vol-972/#paper_short1> ;
+    ns4:name "Mehwish Alam" .
+
+<http://ceur-ws.org/Vol-972/#MohamediHamdaoui> a ns4:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/MohamediHamdaoui> ;
+    ns4:made <http://ceur-ws.org/Vol-972/#paper17> ;
+    ns4:name "Mohamed Hamdaoui" .
+
+<http://ceur-ws.org/Vol-972/#NizariMessai> a ns4:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/NizariMessai> ;
+    ns4:made <http://ceur-ws.org/Vol-972/#paper17> ;
+    ns4:name "Nizar Messai" .
+
+<http://ceur-ws.org/Vol-972/#PabloiCordero> a ns4:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/PabloiCordero> ;
+    ns4:made <http://ceur-ws.org/Vol-972/#paper16> ;
+    ns4:name "Pablo Cordero" .
+
+<http://ceur-ws.org/Vol-972/#PetkoiValtchev> a ns4:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/PetkoiValtchev> ;
+    ns4:made <http://ceur-ws.org/Vol-972/#paper23> ;
+    ns4:name "Petko Valtchev" .
+
+<http://ceur-ws.org/Vol-972/#Ram%C3%B3niFuentes-Gonz%C3%A1lez> a ns4:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/Ram%C3%B3niFuentes-Gonz%C3%A1lez> ;
+    ns4:made <http://ceur-ws.org/Vol-972/#paper7> ;
+    ns4:name "Ramón Fuentes-González" .
+
+<http://ceur-ws.org/Vol-972/#RobertiGodin> a ns4:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/RobertiGodin> ;
+    ns4:made <http://ceur-ws.org/Vol-972/#paper23> ;
+    ns4:name "Robert Godin" .
+
+<http://ceur-ws.org/Vol-972/#RokiaiMissaoui> a ns4:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/RokiaiMissaoui> ;
+    ns4:made <http://ceur-ws.org/Vol-972/#paper28> ;
+    ns4:name "Rokia Missaoui" .
+
+<http://ceur-ws.org/Vol-972/#Sho-ichiTanimoto> a ns4:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/Sho-ichiTanimoto> ;
+    ns4:made <http://ceur-ws.org/Vol-972/#paper10> ;
+    ns4:name "Sho-ich Tanimoto" .
+
+<http://ceur-ws.org/Vol-972/#Th%C3%A9r%C3%A8seiLibourel> a ns4:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/Th%C3%A9r%C3%A8seiLibourel> ;
+    ns4:made <http://ceur-ws.org/Vol-972/#paper12> ;
+    ns4:name "Thérèse Libourel" .
+
+<http://ceur-ws.org/Vol-972/#ThomasiBourquard> a ns4:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/ThomasiBourquard> ;
+    ns4:made <http://ceur-ws.org/Vol-972/#paper18> ;
+    ns4:name "Thomas Bourquard" .
+
+<http://ceur-ws.org/Vol-972/#TobiasiSchlemmer> a ns4:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/TobiasiSchlemmer> ;
+    ns4:made <http://ceur-ws.org/Vol-972/#paper5> ;
+    ns4:name "Tobias Schlemmer" .
+
+<http://ceur-ws.org/Vol-972/#Tom%C3%A1%C5%A1iHorv%C3%A1th> a ns4:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/Tom%C3%A1%C5%A1iHorv%C3%A1th> ;
+    ns4:made <http://ceur-ws.org/Vol-972/#paper3> ;
+    ns4:name "Tomáš Horváth" .
+
+<http://ceur-ws.org/Vol-972/#V%C3%ADctoriCodocedo> a ns4:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/V%C3%ADctoriCodocedo> ;
+    ns4:made <http://ceur-ws.org/Vol-972/#paper22> ;
+    ns4:name "Víctor Codocedo" .
+
+<http://ceur-ws.org/Vol-972/#XavieriDolques> a ns4:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/XavieriDolques> ;
+    ns4:made <http://ceur-ws.org/Vol-972/#paper4> ;
+    ns4:name "Xavier Dolques" .
+
+<http://ceur-ws.org/Vol-972/#YasmineiAsses> a ns4:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/YasmineiAsses> ;
+    ns4:made <http://ceur-ws.org/Vol-972/#paper18> ;
+    ns4:name "Yasmine Asses" .
+
+<http://ceur-ws.org/Vol-972/#event> a ns2:WorkshopEvent ;
+    ns2:hasLocation <http://dbpedia.org/resource/Spain> ;
+    ns2:hasPart <http://ceur-ws.org/Vol-972/#part-CLA> ;
+    ns2:isSubEventOf <http://ceur-ws.org/Vol-972/#conf> ;
+    ns8:beginsAtDatetime "2016-10-11T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:endsAtDatetime "2016-10-11T00:00:00+00:00"^^xsd:dateTime ;
+    ns9:license "http://choosealicense.com/licenses/no-license/" ;
     rdfs:seeAlso <http://ceur-ws.org/Vol-110/#event>,
         <http://ceur-ws.org/Vol-162/#event>,
         <http://ceur-ws.org/Vol-331/#event>,
         <http://ceur-ws.org/Vol-433/#event>,
         <http://ceur-ws.org/Vol-672/#event>,
         <http://ceur-ws.org/Vol-959/#event> .
+
+<http://ceur-ws.org/Vol-972/#AnaiBurusco> a ns4:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/AnaiBurusco> ;
+    ns4:made <http://ceur-ws.org/Vol-972/#invited1>,
+        <http://ceur-ws.org/Vol-972/#paper7> ;
+    ns4:name "Ana Burusco" .
+
+<http://ceur-ws.org/Vol-972/#Cl%C3%A9mentineiNebut> a ns4:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/Cl%C3%A9mentineiNebut> ;
+    ns4:made <http://ceur-ws.org/Vol-972/#paper12>,
+        <http://ceur-ws.org/Vol-972/#paper4> ;
+    ns4:name "Clémentine Nebut" .
+
+<http://ceur-ws.org/Vol-972/#LaszloiSzathmary> a ns4:Person ;
+    ns1:affiliation "" ;
+    ns5:sameAs <http://ceur-ws.org/persons/LaszloiSzathmary> ;
+    ns4:made <http://ceur-ws.org/Vol-972/#paper23> ;
+    ns4:name "Laszlo Szathmary" .
+
+<http://ceur-ws.org/Vol-972/#LenkaiPiskov%C3%A1> a ns4:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/LenkaiPiskov%C3%A1> ;
+    ns4:made <http://ceur-ws.org/Vol-972/#paper3>,
+        <http://ceur-ws.org/Vol-972/#paper8> ;
+    ns4:name "Lenka Pisková" .
+
+<http://ceur-ws.org/Vol-972/#OndrejiKr%C3%ADdlo> a ns4:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/OndrejiKr%C3%ADdlo> ;
+    ns4:made <http://ceur-ws.org/Vol-972/#paper20>,
+        <http://ceur-ws.org/Vol-972/#paper8> ;
+    ns4:name "Ondrej Krídlo" .
+
+<http://ceur-ws.org/Vol-972/#RadimiBelohlavek> a ns4:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/RadimiBelohlavek> ;
+    ns4:made <http://ceur-ws.org/Vol-972/#paper25>,
+        <http://ceur-ws.org/Vol-972/#paper26> ;
+    ns4:name "Radim Belohlavek" .
+
+<http://ceur-ws.org/Vol-972/#StanislaviKraj%C4%8Di> a ns4:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/StanislaviKraj%C4%8Di> ;
+    ns4:made <http://ceur-ws.org/Vol-972/#paper3>,
+        <http://ceur-ws.org/Vol-972/#paper8> ;
+    ns4:name "Stanislav Krajči" .
+
+<http://ceur-ws.org/Vol-972/#UtaiPriss> a ns4:Person ;
+    ns1:affiliation "" ;
+    ns5:sameAs <http://ceur-ws.org/persons/UtaiPriss> ;
+    ns4:made <http://ceur-ws.org/Vol-972/#paper_short3> ;
+    ns4:name "Uta Priss" .
+
+<http://ceur-ws.org/Vol-972/#invited1> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-972/> ;
+    ns6:title "Some Results on the L-Fuzzy Concept Analysis" ;
+    ns3:endPage 1 ;
+    ns3:numPages 1 ;
+    ns3:section <http://ceur-ws.org/Vol-972/#InvitedPapers> ;
+    ns3:startPage 1 ;
+    ns1:author <http://ceur-ws.org/Vol-972/#AnaiBurusco> .
+
+<http://ceur-ws.org/Vol-972/#invited2> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-972/> ;
+    ns6:title "Multi-adjoint Concept Lattices" ;
+    ns3:endPage 3 ;
+    ns3:numPages 1 ;
+    ns3:section <http://ceur-ws.org/Vol-972/#InvitedPapers> ;
+    ns3:startPage 3 ;
+    ns1:author <http://ceur-ws.org/Vol-972/#Jes%C3%BAsiMedina> .
+
+<http://ceur-ws.org/Vol-972/#invited3> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-972/> ;
+    ns6:title "Data Characteristics and their Relation to Closed Patterns Discovery Algorithms" ;
+    ns3:endPage 5 ;
+    ns3:numPages 1 ;
+    ns3:section <http://ceur-ws.org/Vol-972/#InvitedPapers> ;
+    ns3:startPage 5 ;
+    ns1:author <http://ceur-ws.org/Vol-972/#EngelbertiMephuiNguifo> .
+
+<http://ceur-ws.org/Vol-972/#invited4> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-972/> ;
+    ns6:title "On the Names of Implication" ;
+    ns3:endPage 7 ;
+    ns3:numPages 1 ;
+    ns3:section <http://ceur-ws.org/Vol-972/#InvitedPapers> ;
+    ns3:startPage 7 ;
+    ns1:author <http://ceur-ws.org/Vol-972/#SergeiiO.iKuznetsov> .
+
+<http://ceur-ws.org/Vol-972/#paper1> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-972/> ;
+    ns6:title "A Generalized Next-Closure Algorithm - Enumerating Semilattice Elements from a Generating Set" ;
+    ns3:endPage 20 ;
+    ns3:numPages 12 ;
+    ns3:section <http://ceur-ws.org/Vol-972/#RegularPapers> ;
+    ns3:startPage 9 ;
+    ns1:author <http://ceur-ws.org/Vol-972/#DanieliBorchmann> .
+
+<http://ceur-ws.org/Vol-972/#paper11> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-972/> ;
+    ns6:title "Attribute Dependencies in a Fuzzy Setting" ;
+    ns3:endPage 138 ;
+    ns3:numPages 12 ;
+    ns3:section <http://ceur-ws.org/Vol-972/#RegularPapers> ;
+    ns3:startPage 127 ;
+    ns1:author <http://ceur-ws.org/Vol-972/#CynthiaiVeraiGlodeanu> .
+
+<http://ceur-ws.org/Vol-972/#paper14> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-972/> ;
+    ns6:title "Adapting Fuzzy Formal Concept Analysis for Fuzzy Description Logics" ;
+    ns3:endPage 174 ;
+    ns3:numPages 12 ;
+    ns3:section <http://ceur-ws.org/Vol-972/#RegularPapers> ;
+    ns3:startPage 163 ;
+    ns1:author <http://ceur-ws.org/Vol-972/#FelixiDistel> .
+
+<http://ceur-ws.org/Vol-972/#paper19> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-972/> ;
+    ns6:title "The dependence Graph of a Lattice" ;
+    ns3:endPage 232 ;
+    ns3:numPages 10 ;
+    ns3:section <http://ceur-ws.org/Vol-972/#RegularPapers> ;
+    ns3:startPage 223 ;
+    ns1:author <http://ceur-ws.org/Vol-972/#KarelliBertet> .
+
+<http://ceur-ws.org/Vol-972/#paper5> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-972/> ;
+    ns6:title "Annotating Lattice Orbifolds with Minimal Acting Automorphisms" ;
+    ns3:endPage 68 ;
+    ns3:numPages 12 ;
+    ns3:section <http://ceur-ws.org/Vol-972/#RegularPapers> ;
+    ns3:startPage 57 ;
+    ns1:author <http://ceur-ws.org/Vol-972/#TobiasiSchlemmer> .
+
+<http://ceur-ws.org/Vol-972/#paper9> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-972/> ;
+    ns6:title "Concepts and Types -- An Application to Formal Language Theory" ;
+    ns3:endPage 114 ;
+    ns3:numPages 12 ;
+    ns3:section <http://ceur-ws.org/Vol-972/#RegularPapers> ;
+    ns3:startPage 103 ;
+    ns1:author <http://ceur-ws.org/Vol-972/#ChristianiWurm> .
+
+<http://ceur-ws.org/Vol-972/#paper_short3> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-972/> ;
+    ns6:title "Concept Lattices and Median Networks" ;
+    ns3:endPage 354 ;
+    ns3:numPages 4 ;
+    ns3:section <http://ceur-ws.org/Vol-972/#ShortPapers> ;
+    ns3:startPage 351 ;
+    ns1:author <http://ceur-ws.org/Vol-972/#UtaiPriss> .
+
+<http://ceur-ws.org/Vol-972/#Jes%C3%BAsiMedina> a ns4:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/Jes%C3%BAsiMedina> ;
+    ns4:made <http://ceur-ws.org/Vol-972/#invited2>,
+        <http://ceur-ws.org/Vol-972/#paper21>,
+        <http://ceur-ws.org/Vol-972/#paper6> ;
+    ns4:name "Jesús Medina" .
+
+<http://ceur-ws.org/Vol-972/#ManueliOjeda-Aciego> a ns4:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/ManueliOjeda-Aciego> ;
+    ns4:made <http://ceur-ws.org/Vol-972/#paper16>,
+        <http://ceur-ws.org/Vol-972/#paper20>,
+        <http://ceur-ws.org/Vol-972/#paper21> ;
+    ns4:name "Manuel Ojeda-Aciego" .
+
+<http://ceur-ws.org/Vol-972/#MarianneiHuchard> a ns4:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/MarianneiHuchard> ;
+    ns4:made <http://ceur-ws.org/Vol-972/#paper12>,
+        <http://ceur-ws.org/Vol-972/#paper2>,
+        <http://ceur-ws.org/Vol-972/#paper4> ;
+    ns4:name "Marianne Huchard" .
+
+<http://ceur-ws.org/Vol-972/#SergeiiO.iKuznetsov> a ns4:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/SergeiiO.iKuznetsov> ;
+    ns4:made <http://ceur-ws.org/Vol-972/#invited4>,
+        <http://ceur-ws.org/Vol-972/#paper13>,
+        <http://ceur-ws.org/Vol-972/#paper18> ;
+    ns4:name "Sergei O. Kuznetsov" .
+
+<http://ceur-ws.org/Vol-972/#paper10> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-972/> ;
+    ns6:title "Distributed Closed Pattern Mining in Multi-Relational Data based on Iceberg Query Lattices: Some Preliminary Results" ;
+    ns3:endPage 126 ;
+    ns3:numPages 12 ;
+    ns3:section <http://ceur-ws.org/Vol-972/#RegularPapers> ;
+    ns3:startPage 115 ;
+    ns1:author <http://ceur-ws.org/Vol-972/#HirohisaiSeki>,
+        <http://ceur-ws.org/Vol-972/#Sho-ichiTanimoto> .
+
+<http://ceur-ws.org/Vol-972/#paper13> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-972/> ;
+    ns6:title "Finding Errors in New Object Intents" ;
+    ns3:endPage 162 ;
+    ns3:numPages 12 ;
+    ns3:section <http://ceur-ws.org/Vol-972/#RegularPapers> ;
+    ns3:startPage 151 ;
+    ns1:author <http://ceur-ws.org/Vol-972/#ArtemiRevenko>,
+        <http://ceur-ws.org/Vol-972/#SergeiiO.iKuznetsov> .
+
+<http://ceur-ws.org/Vol-972/#paper20> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-972/> ;
+    ns6:title "Linking L-Chu Correspondences and Completely Lattice L-ordered Sets" ;
+    ns3:endPage 244 ;
+    ns3:numPages 12 ;
+    ns3:section <http://ceur-ws.org/Vol-972/#RegularPapers> ;
+    ns3:startPage 233 ;
+    ns1:author <http://ceur-ws.org/Vol-972/#ManueliOjeda-Aciego>,
+        <http://ceur-ws.org/Vol-972/#OndrejiKr%C3%ADdlo> .
+
+<http://ceur-ws.org/Vol-972/#paper25> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-972/> ;
+    ns6:title "Factor Analysis of Sports Data via Decomposition of Matrices with Grades" ;
+    ns3:endPage 304 ;
+    ns3:numPages 12 ;
+    ns3:section <http://ceur-ws.org/Vol-972/#RegularPapers> ;
+    ns3:startPage 293 ;
+    ns1:author <http://ceur-ws.org/Vol-972/#MarketaiKrmelova>,
+        <http://ceur-ws.org/Vol-972/#RadimiBelohlavek> .
+
+<http://ceur-ws.org/Vol-972/#paper6> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-972/> ;
+    ns6:title "Fuzzy Formal Concept Analysis via Multilattices: First Prospects and Results" ;
+    ns3:endPage 80 ;
+    ns3:numPages 12 ;
+    ns3:section <http://ceur-ws.org/Vol-972/#RegularPapers> ;
+    ns3:startPage 69 ;
+    ns1:author <http://ceur-ws.org/Vol-972/#Jes%C3%BAsiMedina>,
+        <http://ceur-ws.org/Vol-972/#JorgeiRuiz-Calvino> .
+
+<http://ceur-ws.org/Vol-972/#ShortPapers> a ns2:SessionEvent ;
+    ns2:partOf <http://ceur-ws.org/Vol-972/> ;
+    ns6:title "Short Papers" .
+
+<http://ceur-ws.org/Vol-972/#paper15> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-972/> ;
+    ns6:title "Computing Functional Dependencies with Pattern Structures" ;
+    ns3:endPage 186 ;
+    ns3:numPages 12 ;
+    ns3:section <http://ceur-ws.org/Vol-972/#RegularPapers> ;
+    ns3:startPage 175 ;
+    ns1:author <http://ceur-ws.org/Vol-972/#AmedeoiNapoli>,
+        <http://ceur-ws.org/Vol-972/#JaumeiBaixeries>,
+        <http://ceur-ws.org/Vol-972/#MehdiiKaytoue> .
+
+<http://ceur-ws.org/Vol-972/#paper21> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-972/> ;
+    ns6:title "Using Intensifying Hedges to Reduce Size of Multi-adjoint Concept Lattices with Heterogeneous Conjunctors" ;
+    ns3:endPage 256 ;
+    ns3:numPages 12 ;
+    ns3:section <http://ceur-ws.org/Vol-972/#RegularPapers> ;
+    ns3:startPage 245 ;
+    ns1:author <http://ceur-ws.org/Vol-972/#JaniKonecny>,
+        <http://ceur-ws.org/Vol-972/#Jes%C3%BAsiMedina>,
+        <http://ceur-ws.org/Vol-972/#ManueliOjeda-Aciego> .
+
+<http://ceur-ws.org/Vol-972/#paper22> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-972/> ;
+    ns6:title "A Contribution to Semantic Indexing and Retrieval Based on FCA - An Application to Song Datasets" ;
+    ns3:endPage 268 ;
+    ns3:numPages 12 ;
+    ns3:section <http://ceur-ws.org/Vol-972/#RegularPapers> ;
+    ns3:startPage 257 ;
+    ns1:author <http://ceur-ws.org/Vol-972/#AmedeoiNapoli>,
+        <http://ceur-ws.org/Vol-972/#IoannaiLykourentzou>,
+        <http://ceur-ws.org/Vol-972/#V%C3%ADctoriCodocedo> .
+
+<http://ceur-ws.org/Vol-972/#paper24> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-972/> ;
+    ns6:title "Multiple Keyword Pattern Matching using Position Encoded Pattern Lattices" ;
+    ns3:endPage 292 ;
+    ns3:numPages 12 ;
+    ns3:section <http://ceur-ws.org/Vol-972/#RegularPapers> ;
+    ns3:startPage 281 ;
+    ns1:author <http://ceur-ws.org/Vol-972/#BruceiW.iWatson>,
+        <http://ceur-ws.org/Vol-972/#DerrickiG.iKourie>,
+        <http://ceur-ws.org/Vol-972/#FritziJ.iVenter> .
+
+<http://ceur-ws.org/Vol-972/#paper26> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-972/> ;
+    ns6:title "Impact of Boolean Factorization as Preprocessing Methods for Classification of Boolean Data" ;
+    ns3:endPage 316 ;
+    ns3:numPages 12 ;
+    ns3:section <http://ceur-ws.org/Vol-972/#RegularPapers> ;
+    ns3:startPage 305 ;
+    ns1:author <http://ceur-ws.org/Vol-972/#JaniOutrata>,
+        <http://ceur-ws.org/Vol-972/#MartiniTrnecka>,
+        <http://ceur-ws.org/Vol-972/#RadimiBelohlavek> .
+
+<http://ceur-ws.org/Vol-972/#paper27> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-972/> ;
+    ns6:title "The Lattice of all Betweenness Relations: Structure and Properties" ;
+    ns3:endPage 326 ;
+    ns3:numPages 10 ;
+    ns3:section <http://ceur-ws.org/Vol-972/#RegularPapers> ;
+    ns3:startPage 317 ;
+    ns1:author <http://ceur-ws.org/Vol-972/#LaurentiBeaudou>,
+        <http://ceur-ws.org/Vol-972/#LhouariiNourine>,
+        <http://ceur-ws.org/Vol-972/#MamadouiMoustaphaiKant%C3%A9> .
+
+<http://ceur-ws.org/Vol-972/#paper28> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-972/> ;
+    ns6:title "Using Taxonomies on Objects and Attributes to Discover Generalized Patterns" ;
+    ns3:endPage 338 ;
+    ns3:numPages 12 ;
+    ns3:section <http://ceur-ws.org/Vol-972/#RegularPapers> ;
+    ns3:startPage 327 ;
+    ns1:author <http://ceur-ws.org/Vol-972/#JeaniVaillancourt>,
+        <http://ceur-ws.org/Vol-972/#L%C3%A9onardiKwuida>,
+        <http://ceur-ws.org/Vol-972/#RokiaiMissaoui> .
+
+<http://ceur-ws.org/Vol-972/#paper7> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-972/> ;
+    ns6:title "An interpretation of the L-Fuzzy Concept Analysis as a tool for the Morphological Image and Signal Processing" ;
+    ns3:endPage 92 ;
+    ns3:numPages 12 ;
+    ns3:section <http://ceur-ws.org/Vol-972/#RegularPapers> ;
+    ns3:startPage 81 ;
+    ns1:author <http://ceur-ws.org/Vol-972/#AnaiBurusco>,
+        <http://ceur-ws.org/Vol-972/#CristinaiAlcalde>,
+        <http://ceur-ws.org/Vol-972/#Ram%C3%B3niFuentes-Gonz%C3%A1lez> .
+
+<http://ceur-ws.org/Vol-972/#paper_short2> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-972/> ;
+    ns6:title "WebGeneKFCA: an On-line Conceptual Analysis Tool for Genomic Expression Data" ;
+    ns3:endPage 350 ;
+    ns3:numPages 6 ;
+    ns3:section <http://ceur-ws.org/Vol-972/#ShortPapers> ;
+    ns3:startPage 345 ;
+    ns1:author <http://ceur-ws.org/Vol-972/#CarmeniPel%C3%A1ez-Moreno>,
+        <http://ceur-ws.org/Vol-972/#FranciscoiJ.iValverde-Albacete>,
+        <http://ceur-ws.org/Vol-972/#Jos%C3%A9iMar%C3%ADaiFern%C3%A1ndez-Calabozo> .
+
+<http://ceur-ws.org/Vol-972/#InvitedPapers> a ns2:SessionEvent ;
+    ns2:partOf <http://ceur-ws.org/Vol-972/> ;
+    ns6:title "Invited Papers" .
+
+<http://ceur-ws.org/Vol-972/#paper16> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-972/> ;
+    ns6:title "Computing Minimal Generators from Implications: a Logic-guided Approach" ;
+    ns3:endPage 198 ;
+    ns3:numPages 12 ;
+    ns3:section <http://ceur-ws.org/Vol-972/#RegularPapers> ;
+    ns3:startPage 187 ;
+    ns1:author <http://ceur-ws.org/Vol-972/#AngeliMora>,
+        <http://ceur-ws.org/Vol-972/#ManueliEnciso>,
+        <http://ceur-ws.org/Vol-972/#ManueliOjeda-Aciego>,
+        <http://ceur-ws.org/Vol-972/#PabloiCordero> .
+
+<http://ceur-ws.org/Vol-972/#paper2> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-972/> ;
+    ns6:title "Hermes: an Efficient Algorithm for Building Galois Sub-hierarchies" ;
+    ns3:endPage 32 ;
+    ns3:numPages 12 ;
+    ns3:section <http://ceur-ws.org/Vol-972/#RegularPapers> ;
+    ns3:startPage 21 ;
+    ns1:author <http://ceur-ws.org/Vol-972/#AlainiSigayret>,
+        <http://ceur-ws.org/Vol-972/#AmedeoiNapoli>,
+        <http://ceur-ws.org/Vol-972/#AnneiBerry>,
+        <http://ceur-ws.org/Vol-972/#MarianneiHuchard> .
+
+<http://ceur-ws.org/Vol-972/#paper23> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-972/> ;
+    ns6:title "Efficient Vertical Mining of Minimal Rare Itemsets" ;
+    ns3:endPage 280 ;
+    ns3:numPages 12 ;
+    ns3:section <http://ceur-ws.org/Vol-972/#RegularPapers> ;
+    ns3:startPage 269 ;
+    ns1:author <http://ceur-ws.org/Vol-972/#AmedeoiNapoli>,
+        <http://ceur-ws.org/Vol-972/#LaszloiSzathmary>,
+        <http://ceur-ws.org/Vol-972/#PetkoiValtchev>,
+        <http://ceur-ws.org/Vol-972/#RobertiGodin> .
+
+<http://ceur-ws.org/Vol-972/#paper3> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-972/> ;
+    ns6:title "Mining Concepts from Incomplete Datasets Utilizing Matrix Factorization" ;
+    ns3:endPage 44 ;
+    ns3:numPages 12 ;
+    ns3:section <http://ceur-ws.org/Vol-972/#RegularPapers> ;
+    ns3:startPage 33 ;
+    ns1:author <http://ceur-ws.org/Vol-972/#%C5%A0tefaniPero>,
+        <http://ceur-ws.org/Vol-972/#LenkaiPiskov%C3%A1>,
+        <http://ceur-ws.org/Vol-972/#StanislaviKraj%C4%8Di>,
+        <http://ceur-ws.org/Vol-972/#Tom%C3%A1%C5%A1iHorv%C3%A1th> .
+
+<http://ceur-ws.org/Vol-972/#paper_short1> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-972/> ;
+    ns6:title "Formal Concept Analysis Applied to Transcriptomic Data" ;
+    ns3:endPage 344 ;
+    ns3:numPages 6 ;
+    ns3:section <http://ceur-ws.org/Vol-972/#ShortPapers> ;
+    ns3:startPage 339 ;
+    ns1:author <http://ceur-ws.org/Vol-972/#AdrieniCoulet>,
+        <http://ceur-ws.org/Vol-972/#AmedeoiNapoli>,
+        <http://ceur-ws.org/Vol-972/#MalikaiSma%C3%AFl-Tabbone>,
+        <http://ceur-ws.org/Vol-972/#MehwishiAlam> .
+
+<http://ceur-ws.org/Vol-972/#AmedeoiNapoli> a ns4:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/AmedeoiNapoli> ;
+    ns4:made <http://ceur-ws.org/Vol-972/#paper15>,
+        <http://ceur-ws.org/Vol-972/#paper18>,
+        <http://ceur-ws.org/Vol-972/#paper2>,
+        <http://ceur-ws.org/Vol-972/#paper22>,
+        <http://ceur-ws.org/Vol-972/#paper23>,
+        <http://ceur-ws.org/Vol-972/#paper_short1> ;
+    ns4:name "Amedeo Napoli" .
+
+<http://ceur-ws.org/Vol-972/#paper17> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-972/> ;
+    ns6:title "Conceptual Analysis of Complex System Simulation Data for Decision Support: Application to Aircraft Cabin Design" ;
+    ns3:endPage 210 ;
+    ns3:numPages 12 ;
+    ns3:section <http://ceur-ws.org/Vol-972/#RegularPapers> ;
+    ns3:startPage 199 ;
+    ns1:author <http://ceur-ws.org/Vol-972/#CassioiMelo>,
+        <http://ceur-ws.org/Vol-972/#DungiBui>,
+        <http://ceur-ws.org/Vol-972/#Marie-AudeiAufaure>,
+        <http://ceur-ws.org/Vol-972/#MohamediHamdaoui>,
+        <http://ceur-ws.org/Vol-972/#NizariMessai> .
+
+<http://ceur-ws.org/Vol-972/#paper18> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-972/> ;
+    ns6:title "A Hybrid Classification Approach based on FCA and Emerging Patterns - An application for the classification of biological inhibitors" ;
+    ns3:endPage 222 ;
+    ns3:numPages 12 ;
+    ns3:section <http://ceur-ws.org/Vol-972/#RegularPapers> ;
+    ns3:startPage 211 ;
+    ns1:author <http://ceur-ws.org/Vol-972/#AlekseyiBuzmakov>,
+        <http://ceur-ws.org/Vol-972/#AmedeoiNapoli>,
+        <http://ceur-ws.org/Vol-972/#SergeiiO.iKuznetsov>,
+        <http://ceur-ws.org/Vol-972/#ThomasiBourquard>,
+        <http://ceur-ws.org/Vol-972/#YasmineiAsses> .
+
+<http://ceur-ws.org/Vol-972/#paper4> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-972/> ;
+    ns6:title "Learning Model Transformations from Examples using FCA: One for All or All for One?" ;
+    ns3:endPage 56 ;
+    ns3:numPages 12 ;
+    ns3:section <http://ceur-ws.org/Vol-972/#RegularPapers> ;
+    ns3:startPage 45 ;
+    ns1:author <http://ceur-ws.org/Vol-972/#Cl%C3%A9mentineiNebut>,
+        <http://ceur-ws.org/Vol-972/#HajeriSaada>,
+        <http://ceur-ws.org/Vol-972/#HouariiSahraoui>,
+        <http://ceur-ws.org/Vol-972/#MarianneiHuchard>,
+        <http://ceur-ws.org/Vol-972/#XavieriDolques> .
+
+<http://ceur-ws.org/Vol-972/#paper8> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-972/> ;
+    ns6:title "Relationship between Two FCA Approaches on Heterogeneous Formal Contexts" ;
+    ns3:endPage 102 ;
+    ns3:numPages 10 ;
+    ns3:section <http://ceur-ws.org/Vol-972/#RegularPapers> ;
+    ns3:startPage 93 ;
+    ns1:author <http://ceur-ws.org/Vol-972/#BohuslaviMacek>,
+        <http://ceur-ws.org/Vol-972/#L%27ubom%C3%ADriAntoni>,
+        <http://ceur-ws.org/Vol-972/#LenkaiPiskov%C3%A1>,
+        <http://ceur-ws.org/Vol-972/#OndrejiKr%C3%ADdlo>,
+        <http://ceur-ws.org/Vol-972/#StanislaviKraj%C4%8Di> .
+
+<http://ceur-ws.org/Vol-972/#paper12> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-972/> ;
+    ns6:title "How Relational Concept Analysis Can Help to Observe the Evolution of Business Class Models" ;
+    ns3:endPage 150 ;
+    ns3:numPages 12 ;
+    ns3:section <http://ceur-ws.org/Vol-972/#RegularPapers> ;
+    ns3:startPage 139 ;
+    ns1:author <http://ceur-ws.org/Vol-972/#AbdoulkaderiOsmaniGu%C3%A9di>,
+        <http://ceur-ws.org/Vol-972/#Andr%C3%A9iMiralles>,
+        <http://ceur-ws.org/Vol-972/#BastieniAmar>,
+        <http://ceur-ws.org/Vol-972/#Cl%C3%A9mentineiNebut>,
+        <http://ceur-ws.org/Vol-972/#MarianneiHuchard>,
+        <http://ceur-ws.org/Vol-972/#Th%C3%A9r%C3%A8seiLibourel> .
+
+<http://ceur-ws.org/Vol-972/#RegularPapers> a ns2:SessionEvent ;
+    ns2:partOf <http://ceur-ws.org/Vol-972/> ;
+    ns6:title "Regular Papers" .
+
+<http://ceur-ws.org/Vol-972/> a ns2:Proceedings ;
+    ns2:hasPart <http://ceur-ws.org/Vol-972/#invited1>,
+        <http://ceur-ws.org/Vol-972/#invited2>,
+        <http://ceur-ws.org/Vol-972/#invited3>,
+        <http://ceur-ws.org/Vol-972/#invited4>,
+        <http://ceur-ws.org/Vol-972/#paper1>,
+        <http://ceur-ws.org/Vol-972/#paper10>,
+        <http://ceur-ws.org/Vol-972/#paper11>,
+        <http://ceur-ws.org/Vol-972/#paper12>,
+        <http://ceur-ws.org/Vol-972/#paper13>,
+        <http://ceur-ws.org/Vol-972/#paper14>,
+        <http://ceur-ws.org/Vol-972/#paper15>,
+        <http://ceur-ws.org/Vol-972/#paper16>,
+        <http://ceur-ws.org/Vol-972/#paper17>,
+        <http://ceur-ws.org/Vol-972/#paper18>,
+        <http://ceur-ws.org/Vol-972/#paper19>,
+        <http://ceur-ws.org/Vol-972/#paper2>,
+        <http://ceur-ws.org/Vol-972/#paper20>,
+        <http://ceur-ws.org/Vol-972/#paper21>,
+        <http://ceur-ws.org/Vol-972/#paper22>,
+        <http://ceur-ws.org/Vol-972/#paper23>,
+        <http://ceur-ws.org/Vol-972/#paper24>,
+        <http://ceur-ws.org/Vol-972/#paper25>,
+        <http://ceur-ws.org/Vol-972/#paper26>,
+        <http://ceur-ws.org/Vol-972/#paper27>,
+        <http://ceur-ws.org/Vol-972/#paper28>,
+        <http://ceur-ws.org/Vol-972/#paper3>,
+        <http://ceur-ws.org/Vol-972/#paper4>,
+        <http://ceur-ws.org/Vol-972/#paper5>,
+        <http://ceur-ws.org/Vol-972/#paper6>,
+        <http://ceur-ws.org/Vol-972/#paper7>,
+        <http://ceur-ws.org/Vol-972/#paper8>,
+        <http://ceur-ws.org/Vol-972/#paper9>,
+        <http://ceur-ws.org/Vol-972/#paper_short1>,
+        <http://ceur-ws.org/Vol-972/#paper_short2>,
+        <http://ceur-ws.org/Vol-972/#paper_short3> ;
+    ns2:hasSession <http://ceur-ws.org/Vol-972/#InvitedPapers>,
+        <http://ceur-ws.org/Vol-972/#RegularPapers>,
+        <http://ceur-ws.org/Vol-972/#ShortPapers> ;
+    ns7:issued "2013-03-19T00:00:00+00:00"^^xsd:dateTime ;
+    ns3:presentedAt <http://ceur-ws.org/Vol-972/#event> ;
+    ns1:editor <http://ceur-ws.org/Vol-972/#LaszloiSzathmary>,
+        <http://ceur-ws.org/Vol-972/#UtaiPriss> .
 

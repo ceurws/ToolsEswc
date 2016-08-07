@@ -1,11 +1,11 @@
-@prefix ns1: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns1: <http://purl.org/dc/elements/1.1/#> .
 @prefix ns2: <http://xmlns.com/foaf/0.1/> .
-@prefix ns3: <http://purl.org/ontology/bibo/#> .
+@prefix ns3: <http://swrc.ontoware.org/ontology/#> .
 @prefix ns4: <http://data.semanticweb.org/ns/swc/ontology/#> .
 @prefix ns5: <http://www.w3.org/2002/07/owl#> .
-@prefix ns6: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns6: <http://purl.org/ontology/bibo/#> .
+@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
 @prefix ns9: <http://purl.org/dc/elements/1.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -48,7 +48,7 @@
     ns2:name "Chris Preist" .
 
 <http://ceur-ws.org/Vol-119/#DavidiMartin> a ns2:Person ;
-    ns1:affiliation "" ;
+    ns3:affiliation "" ;
     ns5:sameAs <http://ceur-ws.org/persons/DavidiMartin> ;
     ns2:name "David Martin" .
 
@@ -138,8 +138,8 @@
     ns2:name "Stephan Grimm" .
 
 <http://ceur-ws.org/Vol-119/#TakahiraiYamaguchi> a ns2:Person ;
-    ns3:place <http://dbpedia.org/resource/Japan> ;
-    ns1:affiliation "Keio University" ;
+    ns6:place <http://dbpedia.org/resource/Japan> ;
+    ns3:affiliation "Keio University" ;
     ns5:sameAs <http://ceur-ws.org/persons/TakahiraiYamaguchi> ;
     ns2:name "Takahira Yamaguchi" .
 
@@ -160,10 +160,10 @@
 
 <http://ceur-ws.org/Vol-119/#event> a ns4:WorkshopEvent ;
     ns4:hasLocation <http://dbpedia.org/resource/Japan> ;
-    ns4:hasPart <http://ceur-ws.org/Vol-119/#part-ISWC> ;
+    ns4:hasPart <http://ceur-ws.org/Vol-119/#part-SWS> ;
     ns4:isSubEventOf <http://ceur-ws.org/Vol-119/#conf> ;
-    ns7:beginsAtDatetime "2004-11-22T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:endsAtDatetime "2004-11-22T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:beginsAtDatetime "2004-11-08T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:endsAtDatetime "2004-11-08T00:00:00+00:00"^^xsd:dateTime ;
     ns9:license "http://choosealicense.com/licenses/no-license/" .
 
 <http://ceur-ws.org/Vol-119/#DieteriFensel> a ns2:Person ;
@@ -184,114 +184,114 @@
         <http://ceur-ws.org/Vol-119/#paper6> ;
     ns2:name "Massimo Paolucci" .
 
-<http://ceur-ws.org/Vol-119/#Rub%C3%A9niLara> a ns2:Person ;
-    ns3:place <http://dbpedia.org/resource/Austria> ;
-    ns1:affiliation "Digital Enterprise Research Institute (DERI), Innsbruck" ;
-    ns5:sameAs <http://ceur-ws.org/persons/Rub%C3%A9niLara> ;
+<http://ceur-ws.org/Vol-119/#RubeniLara> a ns2:Person ;
+    ns6:place <http://dbpedia.org/resource/Austria> ;
+    ns3:affiliation "Digital Enterprise Research Institute (DERI), Innsbruck" ;
+    ns5:sameAs <http://ceur-ws.org/persons/RubeniLara> ;
     ns2:made <http://ceur-ws.org/Vol-119/#paper3> ;
-    ns2:name "Rubén Lara" .
+    ns2:name "Ruben Lara" .
 
 <http://ceur-ws.org/Vol-119/#paper9> a ns4:Paper ;
     ns4:partOf <http://ceur-ws.org/Vol-119/> ;
-    ns6:title "Triple-based Computing" ;
-    ns3:section <http://ceur-ws.org/Vol-119/#FullPapers> ;
-    ns1:author <http://ceur-ws.org/Vol-119/#DieteriFensel> .
+    ns1:title "Triple-based Computing" ;
+    ns6:section <http://ceur-ws.org/Vol-119/#FullPapers> ;
+    ns3:author <http://ceur-ws.org/Vol-119/#DieteriFensel> .
 
 <http://ceur-ws.org/Vol-119/#PositionPapers> a ns4:SessionEvent ;
     ns4:partOf <http://ceur-ws.org/Vol-119/> ;
-    ns6:title "Position Papers" .
+    ns1:title "Position Papers" .
 
 <http://ceur-ws.org/Vol-119/#paper1> a ns4:Paper ;
     ns4:partOf <http://ceur-ws.org/Vol-119/> ;
-    ns6:title "Planning for Semantic Web Services" ;
-    ns3:section <http://ceur-ws.org/Vol-119/#FullPapers> ;
-    ns1:author <http://ceur-ws.org/Vol-119/#BijaniParsia>,
+    ns1:title "Planning for Semantic Web Services" ;
+    ns6:section <http://ceur-ws.org/Vol-119/#FullPapers> ;
+    ns3:author <http://ceur-ws.org/Vol-119/#BijaniParsia>,
         <http://ceur-ws.org/Vol-119/#EvreniSirin> .
 
 <http://ceur-ws.org/Vol-119/#paper11> a ns4:Paper ;
     ns4:partOf <http://ceur-ws.org/Vol-119/> ;
-    ns6:title "What does Software Engineering Practice offer to Semantic Web Service Composition?" ;
-    ns3:section <http://ceur-ws.org/Vol-119/#PositionPapers> ;
-    ns1:author <http://ceur-ws.org/Vol-119/#BruceiSpencer>,
+    ns1:title "What does Software Engineering Practice offer to Semantic Web Service Composition?" ;
+    ns6:section <http://ceur-ws.org/Vol-119/#PositionPapers> ;
+    ns3:author <http://ceur-ws.org/Vol-119/#BruceiSpencer>,
         <http://ceur-ws.org/Vol-119/#SandyiLiu> .
 
 <http://ceur-ws.org/Vol-119/#paper4> a ns4:Paper ;
     ns4:partOf <http://ceur-ws.org/Vol-119/> ;
-    ns6:title "Bridging the Gap between Abstract and Concrete Services -- A Semantic Approach for Grounding OWL-S" ;
-    ns3:section <http://ceur-ws.org/Vol-119/#FullPapers> ;
-    ns1:author <http://ceur-ws.org/Vol-119/#SteffeniBalzer>,
+    ns1:title "Bridging the Gap between Abstract and Concrete Services -- A Semantic Approach for Grounding OWL-S" ;
+    ns6:section <http://ceur-ws.org/Vol-119/#FullPapers> ;
+    ns3:author <http://ceur-ws.org/Vol-119/#SteffeniBalzer>,
         <http://ceur-ws.org/Vol-119/#ThorsteniLiebig> .
 
 <http://ceur-ws.org/Vol-119/#paper5> a ns4:Paper ;
     ns4:partOf <http://ceur-ws.org/Vol-119/> ;
-    ns6:title "A Model of Interactions about Actions for Active and Semantic Web Services" ;
-    ns3:section <http://ceur-ws.org/Vol-119/#FullPapers> ;
-    ns1:author <http://ceur-ws.org/Vol-119/#NicolasiSabouret>,
+    ns1:title "A Model of Interactions about Actions for Active and Semantic Web Services" ;
+    ns6:section <http://ceur-ws.org/Vol-119/#FullPapers> ;
+    ns3:author <http://ceur-ws.org/Vol-119/#NicolasiSabouret>,
         <http://ceur-ws.org/Vol-119/#YasmineiCharif> .
 
 <http://ceur-ws.org/Vol-119/#paper8> a ns4:Paper ;
     ns4:partOf <http://ceur-ws.org/Vol-119/> ;
-    ns6:title "Using Semantic Web Technologies to Integrate Software Components" ;
-    ns3:section <http://ceur-ws.org/Vol-119/#FullPapers> ;
-    ns1:author <http://ceur-ws.org/Vol-119/#JosephiK.iDeRosa>,
+    ns1:title "Using Semantic Web Technologies to Integrate Software Components" ;
+    ns6:section <http://ceur-ws.org/Vol-119/#FullPapers> ;
+    ns3:author <http://ceur-ws.org/Vol-119/#JosephiK.iDeRosa>,
         <http://ceur-ws.org/Vol-119/#MarwaniSabbouh> .
 
 <http://ceur-ws.org/Vol-119/#paper10> a ns4:Paper ;
     ns4:partOf <http://ceur-ws.org/Vol-119/> ;
-    ns6:title "Expressing WSMO Mediators in OWL-S" ;
-    ns3:section <http://ceur-ws.org/Vol-119/#FullPapers> ;
-    ns1:author <http://ceur-ws.org/Vol-119/#KatiaiSycara>,
+    ns1:title "Expressing WSMO Mediators in OWL-S" ;
+    ns6:section <http://ceur-ws.org/Vol-119/#FullPapers> ;
+    ns3:author <http://ceur-ws.org/Vol-119/#KatiaiSycara>,
         <http://ceur-ws.org/Vol-119/#MassimoiPaolucci>,
         <http://ceur-ws.org/Vol-119/#NaveeniSrinivasan> .
 
 <http://ceur-ws.org/Vol-119/#paper12> a ns4:Paper ;
     ns4:partOf <http://ceur-ws.org/Vol-119/> ;
-    ns6:title "A Mediated Approach Towards Web Service Choreography" ;
-    ns3:section <http://ceur-ws.org/Vol-119/#PositionPapers> ;
-    ns1:author <http://ceur-ws.org/Vol-119/#DumitruiRoman>,
+    ns1:title "A Mediated Approach Towards Web Service Choreography" ;
+    ns6:section <http://ceur-ws.org/Vol-119/#PositionPapers> ;
+    ns3:author <http://ceur-ws.org/Vol-119/#DumitruiRoman>,
         <http://ceur-ws.org/Vol-119/#JuaniMigueliG%C3%B3mez>,
         <http://ceur-ws.org/Vol-119/#MichaeliStollberg> .
 
 <http://ceur-ws.org/Vol-119/#paper2> a ns4:Paper ;
     ns4:partOf <http://ceur-ws.org/Vol-119/> ;
-    ns6:title "Variance in e-Business Service Discovery" ;
-    ns3:section <http://ceur-ws.org/Vol-119/#FullPapers> ;
-    ns1:author <http://ceur-ws.org/Vol-119/#BorisiMotik>,
+    ns1:title "Variance in e-Business Service Discovery" ;
+    ns6:section <http://ceur-ws.org/Vol-119/#FullPapers> ;
+    ns3:author <http://ceur-ws.org/Vol-119/#BorisiMotik>,
         <http://ceur-ws.org/Vol-119/#ChrisiPreist>,
         <http://ceur-ws.org/Vol-119/#StephaniGrimm> .
 
 <http://ceur-ws.org/Vol-119/#paper6> a ns4:Paper ;
     ns4:partOf <http://ceur-ws.org/Vol-119/> ;
-    ns6:title "Spinning the OWL-S Process Model -- Toward the Verification of the OWL-S Process Models" ;
-    ns3:section <http://ceur-ws.org/Vol-119/#FullPapers> ;
-    ns1:author <http://ceur-ws.org/Vol-119/#AnupriyaiAnkolekar>,
+    ns1:title "Spinning the OWL-S Process Model -- Toward the Verification of the OWL-S Process Models" ;
+    ns6:section <http://ceur-ws.org/Vol-119/#FullPapers> ;
+    ns3:author <http://ceur-ws.org/Vol-119/#AnupriyaiAnkolekar>,
         <http://ceur-ws.org/Vol-119/#KatiaiSycara>,
         <http://ceur-ws.org/Vol-119/#MassimoiPaolucci> .
 
 <http://ceur-ws.org/Vol-119/#paper7> a ns4:Paper ;
     ns4:partOf <http://ceur-ws.org/Vol-119/> ;
-    ns6:title "Accessing and Manipulating Ontologies Using Web Services" ;
-    ns3:section <http://ceur-ws.org/Vol-119/#FullPapers> ;
-    ns1:author <http://ceur-ws.org/Vol-119/#HolgeriKnublauch>,
+    ns1:title "Accessing and Manipulating Ontologies Using Web Services" ;
+    ns6:section <http://ceur-ws.org/Vol-119/#FullPapers> ;
+    ns3:author <http://ceur-ws.org/Vol-119/#HolgeriKnublauch>,
         <http://ceur-ws.org/Vol-119/#MarkiA.iMusen>,
         <http://ceur-ws.org/Vol-119/#NatalyaiF.iNoy>,
         <http://ceur-ws.org/Vol-119/#OlivieriDameron> .
 
 <http://ceur-ws.org/Vol-119/#paper3> a ns4:Paper ;
     ns4:partOf <http://ceur-ws.org/Vol-119/> ;
-    ns6:title "A Logical Framework for Web Service Discovery" ;
-    ns3:section <http://ceur-ws.org/Vol-119/#FullPapers> ;
-    ns1:author <http://ceur-ws.org/Vol-119/#AxeliPolleres>,
+    ns1:title "A Logical Framework for Web Service Discovery" ;
+    ns6:section <http://ceur-ws.org/Vol-119/#FullPapers> ;
+    ns3:author <http://ceur-ws.org/Vol-119/#AxeliPolleres>,
         <http://ceur-ws.org/Vol-119/#ChangiZhao>,
         <http://ceur-ws.org/Vol-119/#DieteriFensel>,
         <http://ceur-ws.org/Vol-119/#HolgeriLausen>,
         <http://ceur-ws.org/Vol-119/#MichaeliKifer>,
-        <http://ceur-ws.org/Vol-119/#Rub%C3%A9niLara>,
+        <http://ceur-ws.org/Vol-119/#RubeniLara>,
         <http://ceur-ws.org/Vol-119/#UweiKeller> .
 
 <http://ceur-ws.org/Vol-119/#FullPapers> a ns4:SessionEvent ;
     ns4:partOf <http://ceur-ws.org/Vol-119/> ;
-    ns6:title "Full Papers" .
+    ns1:title "Full Papers" .
 
 <http://ceur-ws.org/Vol-119/> a ns4:Proceedings ;
     ns4:hasPart <http://ceur-ws.org/Vol-119/#paper1>,
@@ -308,9 +308,9 @@
         <http://ceur-ws.org/Vol-119/#paper9> ;
     ns4:hasSession <http://ceur-ws.org/Vol-119/#FullPapers>,
         <http://ceur-ws.org/Vol-119/#PositionPapers> ;
-    ns8:issued "2004-11-22T00:00:00+00:00"^^xsd:dateTime ;
-    ns3:presentedAt <http://ceur-ws.org/Vol-119/#event> ;
-    ns1:editor <http://ceur-ws.org/Vol-119/#DavidiMartin>,
-        <http://ceur-ws.org/Vol-119/#Rub%C3%A9niLara>,
+    ns7:issued "2004-11-22T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:presentedAt <http://ceur-ws.org/Vol-119/#event> ;
+    ns3:editor <http://ceur-ws.org/Vol-119/#DavidiMartin>,
+        <http://ceur-ws.org/Vol-119/#RubeniLara>,
         <http://ceur-ws.org/Vol-119/#TakahiraiYamaguchi> .
 

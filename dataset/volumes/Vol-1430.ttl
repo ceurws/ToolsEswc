@@ -1,43 +1,305 @@
 @prefix ns1: <http://www.w3.org/2002/07/owl#> .
-@prefix ns2: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns2: <http://purl.org/ontology/bibo/#> .
 @prefix ns3: <http://xmlns.com/foaf/0.1/> .
-@prefix ns4: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns5: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns6: <http://purl.org/ontology/bibo/#> .
+@prefix ns4: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns5: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns6: <http://purl.org/dc/elements/1.1/#> .
 @prefix ns7: <http://purl.org/dc/elements/1.1/> .
-@prefix ns8: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns9: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1430/> a ns8:Proceedings ;
-    ns4:issued "2015-08-25T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:presentedAt <http://ceur-ws.org/Vol-1430/#event> ;
-    ns2:editor <http://ceur-ws.org/Vol-1430/#AmedeoiNapoli>,
-        <http://ceur-ws.org/Vol-1430/#SebastianiRudolph>,
-        <http://ceur-ws.org/Vol-1430/#SergeiiO.iKuznetsov> .
+<http://ceur-ws.org/Vol-1430/#AlexeyiMasyutin> a ns3:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/AlexeyiMasyutin> ;
+    ns3:made <http://ceur-ws.org/Vol-1430/#paper5> ;
+    ns3:name "Alexey Masyutin" .
 
-<http://ceur-ws.org/Vol-1430/#AmedeoiNapoli> a ns3:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/AmedeoiNapoli> ;
-    ns3:name "Amedeo Napoli" .
+<http://ceur-ws.org/Vol-1430/#CarlosiRanieryiPaulaiDosiSantos> a ns3:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/CarlosiRanieryiPaulaiDosiSantos> ;
+    ns3:made <http://ceur-ws.org/Vol-1430/#paper8> ;
+    ns3:name "Carlos Raniery Paula Dos Santos" .
 
-<http://ceur-ws.org/Vol-1430/#SebastianiRudolph> a ns3:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/SebastianiRudolph> ;
-    ns3:name "Sebastian Rudolph" .
+<http://ceur-ws.org/Vol-1430/#ChristianiSacarea> a ns3:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/ChristianiSacarea> ;
+    ns3:made <http://ceur-ws.org/Vol-1430/#paper6> ;
+    ns3:name "Christian Sacarea" .
 
-<http://ceur-ws.org/Vol-1430/#SergeiiO.iKuznetsov> a ns3:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/SergeiiO.iKuznetsov> ;
-    ns3:name "Sergei O. Kuznetsov" .
+<http://ceur-ws.org/Vol-1430/#DenisiKornilov> a ns3:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/DenisiKornilov> ;
+    ns3:made <http://ceur-ws.org/Vol-1430/#paper9> ;
+    ns3:name "Denis Kornilov" .
 
-<http://ceur-ws.org/Vol-1430/#event> a ns8:WorkshopEvent ;
-    ns8:hasLocation <http://dbpedia.org/resource/Argentina> ;
-    ns8:hasPart <http://ceur-ws.org/Vol-1430/#part-FCA> ;
-    ns8:isSubEventOf <http://ceur-ws.org/Vol-1430/#conf> ;
-    ns5:beginsAtDatetime "2015-07-25T00:00:00+00:00"^^xsd:dateTime ;
-    ns5:endsAtDatetime "2015-07-25T00:00:00+00:00"^^xsd:dateTime ;
+<http://ceur-ws.org/Vol-1430/#DianaiTroanca> a ns3:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/DianaiTroanca> ;
+    ns3:made <http://ceur-ws.org/Vol-1430/#paper6> ;
+    ns3:name "Diana Troanca" .
+
+<http://ceur-ws.org/Vol-1430/#DmitryiIgnatov> a ns3:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/DmitryiIgnatov> ;
+    ns3:made <http://ceur-ws.org/Vol-1430/#paper9> ;
+    ns3:name "Dmitry Ignatov" .
+
+<http://ceur-ws.org/Vol-1430/#DmitryiIlvovsky> a ns3:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/DmitryiIlvovsky> ;
+    ns3:made <http://ceur-ws.org/Vol-1430/#paper4> ;
+    ns3:name "Dmitry Ilvovsky" .
+
+<http://ceur-ws.org/Vol-1430/#GustavoiBetarte> a ns3:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/GustavoiBetarte> ;
+    ns3:made <http://ceur-ws.org/Vol-1430/#paper8> ;
+    ns3:name "Gustavo Betarte" .
+
+<http://ceur-ws.org/Vol-1430/#J%C3%A9fersoniCamposiNobre> a ns3:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/J%C3%A9fersoniCamposiNobre> ;
+    ns3:made <http://ceur-ws.org/Vol-1430/#paper8> ;
+    ns3:name "Jéferson Campos Nobre" .
+
+<http://ceur-ws.org/Vol-1430/#JavieriBaliosian> a ns3:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/JavieriBaliosian> ;
+    ns3:made <http://ceur-ws.org/Vol-1430/#paper8> ;
+    ns3:name "Javier Baliosian" .
+
+<http://ceur-ws.org/Vol-1430/#LisandroiZambenedettiiGranville> a ns3:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/LisandroiZambenedettiiGranville> ;
+    ns3:made <http://ceur-ws.org/Vol-1430/#paper8> ;
+    ns3:name "Lisandro Zambenedetti Granville" .
+
+<http://ceur-ws.org/Vol-1430/#MarceloiAliquintuy> a ns3:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/MarceloiAliquintuy> ;
+    ns3:made <http://ceur-ws.org/Vol-1430/#paper8> ;
+    ns3:name "Marcelo Aliquintuy" .
+
+<http://ceur-ws.org/Vol-1430/#MarceloiRodr%C3%ADguez> a ns3:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/MarceloiRodr%C3%ADguez> ;
+    ns3:made <http://ceur-ws.org/Vol-1430/#paper8> ;
+    ns3:name "Marcelo Rodríguez" .
+
+<http://ceur-ws.org/Vol-1430/#Mart%C3%ADniBarr%C3%A8re> a ns3:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/Mart%C3%ADniBarr%C3%A8re> ;
+    ns3:made <http://ceur-ws.org/Vol-1430/#paper8> ;
+    ns3:name "Martín Barrère" .
+
+<http://ceur-ws.org/Vol-1430/#MehwishiAlam> a ns3:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/MehwishiAlam> ;
+    ns3:made <http://ceur-ws.org/Vol-1430/#paper1> ;
+    ns3:name "Mehwish Alam" .
+
+<http://ceur-ws.org/Vol-1430/#OlivieriFestor> a ns3:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/OlivieriFestor> ;
+    ns3:made <http://ceur-ws.org/Vol-1430/#paper8> ;
+    ns3:name "Olivier Festor" .
+
+<http://ceur-ws.org/Vol-1430/#R%C3%A9miiBadonnel> a ns3:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/R%C3%A9miiBadonnel> ;
+    ns3:made <http://ceur-ws.org/Vol-1430/#paper8> ;
+    ns3:name "Rémi Badonnel" .
+
+<http://ceur-ws.org/Vol-1430/#RenzoiStanley> a ns3:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/RenzoiStanley> ;
+    ns3:made <http://ceur-ws.org/Vol-1430/#paper2> ;
+    ns3:name "Renzo Stanley" .
+
+<http://ceur-ws.org/Vol-1430/#TatyanaiMakhalova> a ns3:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/TatyanaiMakhalova> ;
+    ns3:made <http://ceur-ws.org/Vol-1430/#paper4> ;
+    ns3:name "Tatyana Makhalova" .
+
+<http://ceur-ws.org/Vol-1430/#event> a ns5:WorkshopEvent ;
+    ns5:hasLocation <http://dbpedia.org/resource/Argentina> ;
+    ns5:hasPart <http://ceur-ws.org/Vol-1430/#part-FCA> ;
+    ns5:isSubEventOf <http://ceur-ws.org/Vol-1430/#conf> ;
+    ns8:beginsAtDatetime "2015-07-25T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:endsAtDatetime "2015-07-25T00:00:00+00:00"^^xsd:dateTime ;
     ns7:license "http://creativecommons.org/publicdomain/zero/1.0/" ;
     rdfs:seeAlso <http://ceur-ws.org/Vol-1058/#event>,
         <http://ceur-ws.org/Vol-1257/#event>,
         <http://ceur-ws.org/Vol-939/#event> .
+
+<http://ceur-ws.org/Vol-1430/#AlekseyiBuzmakov> a ns3:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/AlekseyiBuzmakov> ;
+    ns3:made <http://ceur-ws.org/Vol-1430/#paper1>,
+        <http://ceur-ws.org/Vol-1430/#paper3> ;
+    ns3:name "Aleksey Buzmakov" .
+
+<http://ceur-ws.org/Vol-1430/#BorisiGalitsky> a ns3:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/BorisiGalitsky> ;
+    ns3:made <http://ceur-ws.org/Vol-1430/#paper10>,
+        <http://ceur-ws.org/Vol-1430/#paper4> ;
+    ns3:name "Boris Galitsky" .
+
+<http://ceur-ws.org/Vol-1430/#SebastianiRudolph> a ns3:Person ;
+    ns4:affiliation "" ;
+    ns1:sameAs <http://ceur-ws.org/persons/SebastianiRudolph> ;
+    ns3:made <http://ceur-ws.org/Vol-1430/#paper6> ;
+    ns3:name "Sebastian Rudolph" .
+
+<http://ceur-ws.org/Vol-1430/#V%C3%ADctoriCodocedo> a ns3:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/V%C3%ADctoriCodocedo> ;
+    ns3:made <http://ceur-ws.org/Vol-1430/#paper1>,
+        <http://ceur-ws.org/Vol-1430/#paper8> ;
+    ns3:name "Víctor Codocedo" .
+
+<http://ceur-ws.org/Vol-1430/#YuryiKashnitsky> a ns3:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/YuryiKashnitsky> ;
+    ns3:made <http://ceur-ws.org/Vol-1430/#paper5>,
+        <http://ceur-ws.org/Vol-1430/#paper7> ;
+    ns3:name "Yury Kashnitsky" .
+
+<http://ceur-ws.org/Vol-1430/#paper0> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1430/> ;
+    ns6:title "Using Trust Networks to Improve Data Quality and Recommendations" ;
+    ns2:endPage 8 ;
+    ns2:numPages 2 ;
+    ns2:startPage 7 ;
+    ns4:author <http://ceur-ws.org/Vol-1430/#Hern%C3%A1niAstudillo> .
+
+<http://ceur-ws.org/Vol-1430/#paper10> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1430/> ;
+    ns6:title "Finding a Lattice of Needles in a Haystack: Forming a Query from a Set of Items of Interest" ;
+    ns2:endPage 106 ;
+    ns2:numPages 8 ;
+    ns2:startPage 99 ;
+    ns4:author <http://ceur-ws.org/Vol-1430/#BorisiGalitsky> .
+
+<http://ceur-ws.org/Vol-1430/#Hern%C3%A1niAstudillo> a ns3:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/Hern%C3%A1niAstudillo> ;
+    ns3:made <http://ceur-ws.org/Vol-1430/#paper0>,
+        <http://ceur-ws.org/Vol-1430/#paper2>,
+        <http://ceur-ws.org/Vol-1430/#paper8> ;
+    ns3:name "Hernán Astudillo" .
+
+<http://ceur-ws.org/Vol-1430/#paper2> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1430/> ;
+    ns6:title "A Conceptual-KDD Tool for Ontology Construction from a Database Schema" ;
+    ns2:endPage 26 ;
+    ns2:numPages 10 ;
+    ns2:startPage 17 ;
+    ns4:author <http://ceur-ws.org/Vol-1430/#Hern%C3%A1niAstudillo>,
+        <http://ceur-ws.org/Vol-1430/#RenzoiStanley> .
+
+<http://ceur-ws.org/Vol-1430/#paper7> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1430/> ;
+    ns6:title "Lazy Associative Graph Classification" ;
+    ns2:endPage 74 ;
+    ns2:numPages 12 ;
+    ns2:startPage 63 ;
+    ns4:author <http://ceur-ws.org/Vol-1430/#SergeiiO.iKuznetsov>,
+        <http://ceur-ws.org/Vol-1430/#YuryiKashnitsky> .
+
+<http://ceur-ws.org/Vol-1430/#paper9> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1430/> ;
+    ns6:title "RAPS: A Recommender Algorithm Based on Pattern Structures" ;
+    ns2:endPage 98 ;
+    ns2:numPages 12 ;
+    ns2:startPage 87 ;
+    ns4:author <http://ceur-ws.org/Vol-1430/#DenisiKornilov>,
+        <http://ceur-ws.org/Vol-1430/#DmitryiIgnatov> .
+
+<http://ceur-ws.org/Vol-1430/#AmedeoiNapoli> a ns3:Person ;
+    ns4:affiliation "" ;
+    ns1:sameAs <http://ceur-ws.org/persons/AmedeoiNapoli> ;
+    ns3:made <http://ceur-ws.org/Vol-1430/#paper1>,
+        <http://ceur-ws.org/Vol-1430/#paper3>,
+        <http://ceur-ws.org/Vol-1430/#paper8> ;
+    ns3:name "Amedeo Napoli" .
+
+<http://ceur-ws.org/Vol-1430/#SergeiiO.iKuznetsov> a ns3:Person ;
+    ns4:affiliation "" ;
+    ns1:sameAs <http://ceur-ws.org/persons/SergeiiO.iKuznetsov> ;
+    ns3:made <http://ceur-ws.org/Vol-1430/#paper3>,
+        <http://ceur-ws.org/Vol-1430/#paper5>,
+        <http://ceur-ws.org/Vol-1430/#paper7> ;
+    ns3:name "Sergei O. Kuznetsov" .
+
+<http://ceur-ws.org/Vol-1430/#paper3> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1430/> ;
+    ns6:title "SOFIA: How to Make FCA Polynomial?" ;
+    ns2:endPage 35 ;
+    ns2:numPages 9 ;
+    ns2:startPage 27 ;
+    ns4:author <http://ceur-ws.org/Vol-1430/#AlekseyiBuzmakov>,
+        <http://ceur-ws.org/Vol-1430/#AmedeoiNapoli>,
+        <http://ceur-ws.org/Vol-1430/#SergeiiO.iKuznetsov> .
+
+<http://ceur-ws.org/Vol-1430/#paper4> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1430/> ;
+    ns6:title "Pattern Structures for News Clustering" ;
+    ns2:endPage 42 ;
+    ns2:numPages 8 ;
+    ns2:startPage 35 ;
+    ns4:author <http://ceur-ws.org/Vol-1430/#BorisiGalitsky>,
+        <http://ceur-ws.org/Vol-1430/#DmitryiIlvovsky>,
+        <http://ceur-ws.org/Vol-1430/#TatyanaiMakhalova> .
+
+<http://ceur-ws.org/Vol-1430/#paper5> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1430/> ;
+    ns6:title "Lazy Classication with Interval Pattern Structures: Application to Credit Scoring" ;
+    ns2:endPage 54 ;
+    ns2:numPages 12 ;
+    ns2:startPage 43 ;
+    ns4:author <http://ceur-ws.org/Vol-1430/#AlexeyiMasyutin>,
+        <http://ceur-ws.org/Vol-1430/#SergeiiO.iKuznetsov>,
+        <http://ceur-ws.org/Vol-1430/#YuryiKashnitsky> .
+
+<http://ceur-ws.org/Vol-1430/#paper6> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1430/> ;
+    ns6:title "Reduction in Triadic Data Sets" ;
+    ns2:endPage 62 ;
+    ns2:numPages 8 ;
+    ns2:startPage 55 ;
+    ns4:author <http://ceur-ws.org/Vol-1430/#ChristianiSacarea>,
+        <http://ceur-ws.org/Vol-1430/#DianaiTroanca>,
+        <http://ceur-ws.org/Vol-1430/#SebastianiRudolph> .
+
+<http://ceur-ws.org/Vol-1430/#paper1> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1430/> ;
+    ns6:title "Bridging DBpedia Categories and DL-Concept Definitions Using Formal Concept Analysis" ;
+    ns2:endPage 16 ;
+    ns2:numPages 8 ;
+    ns2:startPage 9 ;
+    ns4:author <http://ceur-ws.org/Vol-1430/#AlekseyiBuzmakov>,
+        <http://ceur-ws.org/Vol-1430/#AmedeoiNapoli>,
+        <http://ceur-ws.org/Vol-1430/#MehwishiAlam>,
+        <http://ceur-ws.org/Vol-1430/#V%C3%ADctoriCodocedo> .
+
+<http://ceur-ws.org/Vol-1430/> a ns5:Proceedings ;
+    ns5:hasPart <http://ceur-ws.org/Vol-1430/#paper0>,
+        <http://ceur-ws.org/Vol-1430/#paper1>,
+        <http://ceur-ws.org/Vol-1430/#paper10>,
+        <http://ceur-ws.org/Vol-1430/#paper2>,
+        <http://ceur-ws.org/Vol-1430/#paper3>,
+        <http://ceur-ws.org/Vol-1430/#paper4>,
+        <http://ceur-ws.org/Vol-1430/#paper5>,
+        <http://ceur-ws.org/Vol-1430/#paper6>,
+        <http://ceur-ws.org/Vol-1430/#paper7>,
+        <http://ceur-ws.org/Vol-1430/#paper8>,
+        <http://ceur-ws.org/Vol-1430/#paper9> ;
+    ns9:issued "2015-08-25T00:00:00+00:00"^^xsd:dateTime ;
+    ns2:presentedAt <http://ceur-ws.org/Vol-1430/#event> ;
+    ns4:editor <http://ceur-ws.org/Vol-1430/#AmedeoiNapoli>,
+        <http://ceur-ws.org/Vol-1430/#SebastianiRudolph>,
+        <http://ceur-ws.org/Vol-1430/#SergeiiO.iKuznetsov> .
+
+<http://ceur-ws.org/Vol-1430/#paper8> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1430/> ;
+    ns6:title "Machine-assisted Cyber Threat Analysis Using Conceptual Knowledge Discovery" ;
+    ns2:endPage 86 ;
+    ns2:numPages 12 ;
+    ns2:startPage 75 ;
+    ns4:author <http://ceur-ws.org/Vol-1430/#AmedeoiNapoli>,
+        <http://ceur-ws.org/Vol-1430/#CarlosiRanieryiPaulaiDosiSantos>,
+        <http://ceur-ws.org/Vol-1430/#GustavoiBetarte>,
+        <http://ceur-ws.org/Vol-1430/#Hern%C3%A1niAstudillo>,
+        <http://ceur-ws.org/Vol-1430/#J%C3%A9fersoniCamposiNobre>,
+        <http://ceur-ws.org/Vol-1430/#JavieriBaliosian>,
+        <http://ceur-ws.org/Vol-1430/#LisandroiZambenedettiiGranville>,
+        <http://ceur-ws.org/Vol-1430/#MarceloiAliquintuy>,
+        <http://ceur-ws.org/Vol-1430/#MarceloiRodr%C3%ADguez>,
+        <http://ceur-ws.org/Vol-1430/#Mart%C3%ADniBarr%C3%A8re>,
+        <http://ceur-ws.org/Vol-1430/#OlivieriFestor>,
+        <http://ceur-ws.org/Vol-1430/#R%C3%A9miiBadonnel>,
+        <http://ceur-ws.org/Vol-1430/#V%C3%ADctoriCodocedo> .
 

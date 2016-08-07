@@ -23,6 +23,15 @@ bibo = rdflib.Namespace('http://purl.org/ontology/bibo/#')
 dc = rdflib.Namespace('http://purl.org/dc/elements/1.1/#')
 swrc = rdflib.Namespace('http://swrc.ontoware.org/ontology/#')
 
+def clean_string(string):
+    """remove leading, tailing space, replace newline, and merge multiple space into one
+    :param string: string to be processed
+    :return: string after processed
+    """
+    #string = ' '.join(string.strip().replace('\n', '').split()).encode('utf8')
+    
+    return ''.join(e for e in string if e.isalnum())
+
 def check_blazegraph():
     """check whether blazegraph is running
     return: url of running blaezgraph
@@ -56,7 +65,7 @@ def serialize_rdflib(g):
     """serialize to rdf data by using rdflib
     parameters: g: rdf graph store read by rdflib
     """
-    s = g.serialize(destination='serialized.ttl', format='turtle')
+    s = g.serialize(destination='serialized.ttl', format='turtle', encoding='utf-8')
 
 def data_processing():
     """call SemPub2015Extractor.jar to process dataset, generated dataset will be in blazegraph repository
@@ -157,17 +166,23 @@ def define_person(filename):
         name, person_uri = row
         #  1). most cases, the affiliation start with '(' after person name
         if '(' in name:
-            short_name = rdflib.term.Literal(name.split('(')[0].strip())
-            short_person = rdflib.URIRef(urllib.unquote(person_uri.encode('utf8')).decode('utf8').split('(')[0])
+            real_name = rdflib.term.Literal(name.split('(')[0].strip())
+            person_uri = urllib.unquote(person_uri)
+            print real_name
+            person_uri = person_uri.split('(')[0]
+            print person_uri
+            #real_person = rdflib.URIRef(urllib.unquote(person_uri.encode('utf8')).decode('utf8').split('(')[0])
+            real_person = rdflib.URIRef(person_uri)
             for s, p, o in g.triples((person_uri, None, None)):
                 if p == FOAF.name:
-                    g.add((short_person, FOAF.name, short_name))
+                    g.add((real_person, FOAF.name, real_name))
                 else:
-                    g.add((short_person, p, o))
+                    g.add((real_person, p, o))
                 g.remove((s, p, o))
             for s, p, o in g.triples((None, None, person_uri)):
-                g.add((s, p, short_person))
+                g.add((s, p, real_person))
                 g.remove((s, p, o))
+            person_uri = real_person
         #  2). solve the same person name issue 
         result = same_person(name, person_uri, persons)  # if same person name exist, then return the person name, and uri
         if result:  # if same person exist, then merge them
@@ -190,8 +205,13 @@ def define_person(filename):
 def define_section(g):
     for s, p, o in g.triples((None, bibo.section, None)):
         vol = s.split('#')[0]
-        #sec = vol + '#' + o
-        subj = rdflib.URIRef(urllib.quote((vol+ '#' + "".join(o.split())).encode('utf8')))
+        print o
+        sec = vol + '#' + clean_string(o)
+        #str.join([vol, '#', o])
+        print sec
+        #sec = vol + '#' + o.decode('utf-8').strip()
+        #subj = rdflib.URIRef(urllib.quote((vol+ '#' + "".join(o.split())).encode('utf8')))
+        subj = rdflib.URIRef(sec)
         # add new triple for section
         g.add((subj, RDF.type, swc.SessionEvent))
         g.add((subj, swc.partOf, rdflib.URIRef(vol+'#proc')))
@@ -260,7 +280,7 @@ def remove_bad_words():
         for line in old:
             if not any(bad_word in line for bad_word in bad_words):
                 new.write(line)
-    os.remove('serialized.ttl')
+    #os.remove('serialized.ttl')
 
 def check_file(filename):
     if not os.path.exists(os.path.dirname(filename)):
@@ -299,7 +319,7 @@ def split_into_volume():
                             g_.add((section, n__, t__))
                     g_.add((proc_, n_, t_))
             g_.add((m, n, t))
-        g_.serialize(destination=filename, format='turtle')
+        g_.serialize(destination=filename, format='turtle', encoding='utf-8')
 
 def clean_file(filename):
     """clean a file by replace some string in a file, and rewrite the new data into it
@@ -333,13 +353,13 @@ def main():
     add_license(url)
     #add_missed_volumes(url)
     serialize_blazegraph(url)
-    #print "Start to redefine data"
+    print "Start to redefine data"
     g = redefine_data()
     serialize_rdflib(g)
     remove_bad_words()
-    #split_into_volume()
-    #clean_serializatioin('./volumes/')
     clean_file('ceur-ws.ttl')
+    split_into_volume()
+    clean_serializatioin('./volumes/')
 
 if __name__ == "__main__":
     main()

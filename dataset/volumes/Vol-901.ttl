@@ -1,47 +1,197 @@
 @prefix ns1: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns2: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns2: <http://www.w3.org/2002/07/owl#> .
 @prefix ns3: <http://xmlns.com/foaf/0.1/> .
-@prefix ns4: <http://www.w3.org/2002/07/owl#> .
-@prefix ns5: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns6: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns7: <http://purl.org/dc/elements/1.1/> .
-@prefix ns8: <http://purl.org/ontology/bibo/#> .
+@prefix ns4: <http://purl.org/ontology/bibo/#> .
+@prefix ns5: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns6: <http://purl.org/dc/elements/1.1/> .
+@prefix ns7: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns9: <http://purl.org/NET/c4dm/timeline.owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-901/> a ns5:Proceedings ;
-    ns2:issued "2012-09-18T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:presentedAt <http://ceur-ws.org/Vol-901/#event> ;
+<http://ceur-ws.org/Vol-901/#AlkyoniiBaglatzi> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/AlkyoniiBaglatzi> ;
+    ns3:made <http://ceur-ws.org/Vol-901/#paper4> ;
+    ns3:name "Alkyoni Baglatzi" .
+
+<http://ceur-ws.org/Vol-901/#CharalamposiNikolaou> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/CharalamposiNikolaou> ;
+    ns3:made <http://ceur-ws.org/Vol-901/#paper5> ;
+    ns3:name "Charalampos Nikolaou" .
+
+<http://ceur-ws.org/Vol-901/#DanieliCoutoiVale> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/DanieliCoutoiVale> ;
+    ns3:made <http://ceur-ws.org/Vol-901/#paper6> ;
+    ns3:name "Daniel Couto Vale" .
+
+<http://ceur-ws.org/Vol-901/#DaveiKolas> a ns3:Person ;
+    ns1:affiliation "" ;
+    ns2:sameAs <http://ceur-ws.org/persons/DaveiKolas> ;
+    ns3:name "Dave Kolas" .
+
+<http://ceur-ws.org/Vol-901/#GhislainiAugusteiAtemezing> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/GhislainiAugusteiAtemezing> ;
+    ns3:made <http://ceur-ws.org/Vol-901/#paper1> ;
+    ns3:name "Ghislain Auguste Atemezing" .
+
+<http://ceur-ws.org/Vol-901/#JesperiZedlitz> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/JesperiZedlitz> ;
+    ns3:made <http://ceur-ws.org/Vol-901/#paper2> ;
+    ns3:name "Jesper Zedlitz" .
+
+<http://ceur-ws.org/Vol-901/#Mareki%C5%A0m%C3%ADd> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/Mareki%C5%A0m%C3%ADd> ;
+    ns3:made <http://ceur-ws.org/Vol-901/#paper3> ;
+    ns3:name "Marek Šmíd" .
+
+<http://ceur-ws.org/Vol-901/#MargaritaiKokla> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/MargaritaiKokla> ;
+    ns3:made <http://ceur-ws.org/Vol-901/#paper4> ;
+    ns3:name "Margarita Kokla" .
+
+<http://ceur-ws.org/Vol-901/#MarinosiKavouras> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/MarinosiKavouras> ;
+    ns3:made <http://ceur-ws.org/Vol-901/#paper4> ;
+    ns3:name "Marinos Kavouras" .
+
+<http://ceur-ws.org/Vol-901/#MatthewiPerry> a ns3:Person ;
+    ns1:affiliation "" ;
+    ns2:sameAs <http://ceur-ws.org/persons/MatthewiPerry> ;
+    ns3:name "Matthew Perry" .
+
+<http://ceur-ws.org/Vol-901/#MihaiiCodescu> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/MihaiiCodescu> ;
+    ns3:made <http://ceur-ws.org/Vol-901/#paper6> ;
+    ns3:name "Mihai Codescu" .
+
+<http://ceur-ws.org/Vol-901/#NorbertiLuttenberger> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/NorbertiLuttenberger> ;
+    ns3:made <http://ceur-ws.org/Vol-901/#paper2> ;
+    ns3:name "Norbert Luttenberger" .
+
+<http://ceur-ws.org/Vol-901/#OliveriKutz> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/OliveriKutz> ;
+    ns3:made <http://ceur-ws.org/Vol-901/#paper6> ;
+    ns3:name "Oliver Kutz" .
+
+<http://ceur-ws.org/Vol-901/#Rapha%C3%ABliTroncy> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/Rapha%C3%ABliTroncy> ;
+    ns3:made <http://ceur-ws.org/Vol-901/#paper1> ;
+    ns3:name "Raphaël Troncy" .
+
+<http://ceur-ws.org/Vol-901/#RolfiGr%C3%BCtter> a ns3:Person ;
+    ns1:affiliation "" ;
+    ns2:sameAs <http://ceur-ws.org/persons/RolfiGr%C3%BCtter> ;
+    ns3:name "Rolf Grütter" .
+
+<http://ceur-ws.org/Vol-901/#TilliMossakowski> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/TilliMossakowski> ;
+    ns3:made <http://ceur-ws.org/Vol-901/#paper6> ;
+    ns3:name "Till Mossakowski" .
+
+<http://ceur-ws.org/Vol-901/#Zden%C4%9BkiKouba> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/Zden%C4%9BkiKouba> ;
+    ns3:made <http://ceur-ws.org/Vol-901/#paper3> ;
+    ns3:name "Zdeněk Kouba" .
+
+<http://ceur-ws.org/Vol-901/#event> a ns7:WorkshopEvent ;
+    ns7:hasLocation <http://dbpedia.org/resource/United_States> ;
+    ns7:hasPart <http://ceur-ws.org/Vol-901/#part-ws> ;
+    ns7:isSubEventOf <http://ceur-ws.org/Vol-901/#conf> ;
+    ns9:beginsAtDatetime "2012-11-12T00:00:00+00:00"^^xsd:dateTime ;
+    ns9:endsAtDatetime "2012-11-12T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:license "http://choosealicense.com/licenses/no-license/" ;
+    rdfs:seeAlso <http://ceur-ws.org/Vol-518/#event>,
+        <http://ceur-ws.org/Vol-798/#event> .
+
+<http://ceur-ws.org/Vol-901/#ManolisiKoubarakis> a ns3:Person ;
+    ns1:affiliation "" ;
+    ns2:sameAs <http://ceur-ws.org/persons/ManolisiKoubarakis> ;
+    ns3:made <http://ceur-ws.org/Vol-901/#paper5> ;
+    ns3:name "Manolis Koubarakis" .
+
+<http://ceur-ws.org/Vol-901/#paper1> a ns7:Paper ;
+    ns7:partOf <http://ceur-ws.org/Vol-901/> ;
+    ns5:title "Comparing Vocabularies for Representing Geographical Features and Their Geometry" ;
+    ns4:endPage 14 ;
+    ns4:numPages 12 ;
+    ns4:section <http://ceur-ws.org/Vol-901/#TechnicalPapers> ;
+    ns4:startPage 3 ;
+    ns1:author <http://ceur-ws.org/Vol-901/#GhislainiAugusteiAtemezing>,
+        <http://ceur-ws.org/Vol-901/#Rapha%C3%ABliTroncy> .
+
+<http://ceur-ws.org/Vol-901/#paper2> a ns7:Paper ;
+    ns7:partOf <http://ceur-ws.org/Vol-901/> ;
+    ns5:title "Transforming Between UML Conceptual Models and OWL 2 Ontologies" ;
+    ns4:endPage 26 ;
+    ns4:numPages 12 ;
+    ns4:section <http://ceur-ws.org/Vol-901/#TechnicalPapers> ;
+    ns4:startPage 15 ;
+    ns1:author <http://ceur-ws.org/Vol-901/#JesperiZedlitz>,
+        <http://ceur-ws.org/Vol-901/#NorbertiLuttenberger> .
+
+<http://ceur-ws.org/Vol-901/#paper3> a ns7:Paper ;
+    ns7:partOf <http://ceur-ws.org/Vol-901/> ;
+    ns5:title "OnGIS: Ontology Driven Geospatial Search and Integration" ;
+    ns4:endPage 38 ;
+    ns4:numPages 12 ;
+    ns4:section <http://ceur-ws.org/Vol-901/#TechnicalPapers> ;
+    ns4:startPage 27 ;
+    ns1:author <http://ceur-ws.org/Vol-901/#Mareki%C5%A0m%C3%ADd>,
+        <http://ceur-ws.org/Vol-901/#Zden%C4%9BkiKouba> .
+
+<http://ceur-ws.org/Vol-901/#paper5> a ns7:Paper ;
+    ns7:partOf <http://ceur-ws.org/Vol-901/> ;
+    ns5:title "Querying Linked Geospatial Data with Incomplete Information" ;
+    ns4:endPage 61 ;
+    ns4:numPages 11 ;
+    ns4:section <http://ceur-ws.org/Vol-901/#TechnicalPapers> ;
+    ns4:startPage 51 ;
+    ns1:author <http://ceur-ws.org/Vol-901/#CharalamposiNikolaou>,
+        <http://ceur-ws.org/Vol-901/#ManolisiKoubarakis> .
+
+<http://ceur-ws.org/Vol-901/#paper4> a ns7:Paper ;
+    ns7:partOf <http://ceur-ws.org/Vol-901/> ;
+    ns5:title "Semantifying OpenStreetMap" ;
+    ns4:endPage 50 ;
+    ns4:numPages 12 ;
+    ns4:section <http://ceur-ws.org/Vol-901/#TechnicalPapers> ;
+    ns4:startPage 39 ;
+    ns1:author <http://ceur-ws.org/Vol-901/#AlkyoniiBaglatzi>,
+        <http://ceur-ws.org/Vol-901/#MargaritaiKokla>,
+        <http://ceur-ws.org/Vol-901/#MarinosiKavouras> .
+
+<http://ceur-ws.org/Vol-901/#paper6> a ns7:Paper ;
+    ns7:partOf <http://ceur-ws.org/Vol-901/> ;
+    ns5:title "Ontology-based Route Planning for OpenStreetMap" ;
+    ns4:endPage 73 ;
+    ns4:numPages 12 ;
+    ns4:section <http://ceur-ws.org/Vol-901/#TechnicalPapers> ;
+    ns4:startPage 62 ;
+    ns1:author <http://ceur-ws.org/Vol-901/#DanieliCoutoiVale>,
+        <http://ceur-ws.org/Vol-901/#MihaiiCodescu>,
+        <http://ceur-ws.org/Vol-901/#OliveriKutz>,
+        <http://ceur-ws.org/Vol-901/#TilliMossakowski> .
+
+<http://ceur-ws.org/Vol-901/> a ns7:Proceedings ;
+    ns7:hasPart <http://ceur-ws.org/Vol-901/#paper1>,
+        <http://ceur-ws.org/Vol-901/#paper2>,
+        <http://ceur-ws.org/Vol-901/#paper3>,
+        <http://ceur-ws.org/Vol-901/#paper4>,
+        <http://ceur-ws.org/Vol-901/#paper5>,
+        <http://ceur-ws.org/Vol-901/#paper6> ;
+    ns7:hasSession <http://ceur-ws.org/Vol-901/#TechnicalPapers> ;
+    ns8:issued "2012-09-18T00:00:00+00:00"^^xsd:dateTime ;
+    ns4:presentedAt <http://ceur-ws.org/Vol-901/#event> ;
     ns1:editor <http://ceur-ws.org/Vol-901/#DaveiKolas>,
         <http://ceur-ws.org/Vol-901/#ManolisiKoubarakis>,
         <http://ceur-ws.org/Vol-901/#MatthewiPerry>,
         <http://ceur-ws.org/Vol-901/#RolfiGr%C3%BCtter> .
 
-<http://ceur-ws.org/Vol-901/#DaveiKolas> a ns3:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/DaveiKolas> ;
-    ns3:name "Dave Kolas" .
-
-<http://ceur-ws.org/Vol-901/#ManolisiKoubarakis> a ns3:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/ManolisiKoubarakis> ;
-    ns3:name "Manolis Koubarakis" .
-
-<http://ceur-ws.org/Vol-901/#MatthewiPerry> a ns3:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/MatthewiPerry> ;
-    ns3:name "Matthew Perry" .
-
-<http://ceur-ws.org/Vol-901/#RolfiGr%C3%BCtter> a ns3:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/RolfiGr%C3%BCtter> ;
-    ns3:name "Rolf Grütter" .
-
-<http://ceur-ws.org/Vol-901/#event> a ns5:WorkshopEvent ;
-    ns5:hasLocation <http://dbpedia.org/resource/United_States> ;
-    ns5:hasPart <http://ceur-ws.org/Vol-901/#part-CEUR-WS> ;
-    ns5:isSubEventOf <http://ceur-ws.org/Vol-901/#conf> ;
-    ns6:beginsAtDatetime "2012-11-12T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:endsAtDatetime "2012-11-12T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:license "http://choosealicense.com/licenses/no-license/" ;
-    rdfs:seeAlso <http://ceur-ws.org/Vol-518/#event>,
-        <http://ceur-ws.org/Vol-798/#event> .
+<http://ceur-ws.org/Vol-901/#TechnicalPapers> a ns7:SessionEvent ;
+    ns7:partOf <http://ceur-ws.org/Vol-901/> ;
+    ns5:title "Technical Papers" .
 

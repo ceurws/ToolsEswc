@@ -1,46 +1,436 @@
-@prefix ns1: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns2: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns3: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns4: <http://xmlns.com/foaf/0.1/> .
+@prefix ns1: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns2: <http://www.w3.org/2002/07/owl#> .
+@prefix ns3: <http://xmlns.com/foaf/0.1/> .
+@prefix ns4: <http://purl.org/ontology/bibo/#> .
 @prefix ns5: <http://purl.org/dc/elements/1.1/> .
 @prefix ns6: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns7: <http://www.w3.org/2002/07/owl#> .
-@prefix ns8: <http://purl.org/ontology/bibo/#> .
+@prefix ns7: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns8: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns9: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1007/> a ns2:Proceedings ;
-    ns1:issued "2013-07-02T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:presentedAt <http://ceur-ws.org/Vol-1007/#event> ;
-    ns3:editor <http://ceur-ws.org/Vol-1007/#MehuliBhattb>,
-        <http://ceur-ws.org/Vol-1007/#OliveriKutza>,
-        <http://ceur-ws.org/Vol-1007/#PauloiSantosd>,
-        <http://ceur-ws.org/Vol-1007/#StefanoiBorgoc> .
+<http://ceur-ws.org/Vol-1007/#AhmediAbdel-Fattah> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/AhmediAbdel-Fattah> ;
+    ns3:made <http://ceur-ws.org/Vol-1007/#paper1> ;
+    ns3:name "Ahmed Abdel-Fattah" .
 
-<http://ceur-ws.org/Vol-1007/#MehuliBhattb> a ns4:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/MehuliBhattb> ;
-    ns4:name "Mehul Bhattb" .
+<http://ceur-ws.org/Vol-1007/#AlessandraiMelas> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/AlessandraiMelas> ;
+    ns3:made <http://ceur-ws.org/Vol-1007/#paper8> ;
+    ns3:name "Alessandra Melas" .
 
-<http://ceur-ws.org/Vol-1007/#OliveriKutza> a ns4:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/OliveriKutza> ;
-    ns4:name "Oliver Kutza" .
+<http://ceur-ws.org/Vol-1007/#AngelaiSchwering> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/AngelaiSchwering> ;
+    ns3:made <http://ceur-ws.org/Vol-1007/#paper1> ;
+    ns3:name "Angela Schwering" .
 
-<http://ceur-ws.org/Vol-1007/#PauloiSantosd> a ns4:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/PauloiSantosd> ;
-    ns4:name "Paulo Santosd" .
+<http://ceur-ws.org/Vol-1007/#AntonyiGalton> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/AntonyiGalton> ;
+    ns3:made <http://ceur-ws.org/Vol-1007/#invited4> ;
+    ns3:name "Antony Galton" .
 
-<http://ceur-ws.org/Vol-1007/#StefanoiBorgoc> a ns4:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/StefanoiBorgoc> ;
-    ns4:name "Stefano Borgoc" .
+<http://ceur-ws.org/Vol-1007/#BarbaraiTversky> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/BarbaraiTversky> ;
+    ns3:made <http://ceur-ws.org/Vol-1007/#invited5> ;
+    ns3:name "Barbara Tversky" .
 
-<http://ceur-ws.org/Vol-1007/#event> a ns2:WorkshopEvent ;
-    ns2:hasLocation <http://dbpedia.org/resource/Brazil> ;
-    ns2:hasPart <http://ceur-ws.org/Vol-1007/#part-CEUR-WS> ;
-    ns2:isSubEventOf <http://ceur-ws.org/Vol-1007/#conf> ;
+<http://ceur-ws.org/Vol-1007/#ChristophiZetzsche> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/ChristophiZetzsche> ;
+    ns3:made <http://ceur-ws.org/Vol-1007/#paper14> ;
+    ns3:name "Christoph Zetzsche" .
+
+<http://ceur-ws.org/Vol-1007/#ColiniBatchelor> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/ColiniBatchelor> ;
+    ns3:made <http://ceur-ws.org/Vol-1007/#paper6> ;
+    ns3:name "Colin Batchelor" .
+
+<http://ceur-ws.org/Vol-1007/#EriciTremault> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/EriciTremault> ;
+    ns3:made <http://ceur-ws.org/Vol-1007/#paper13> ;
+    ns3:name "Eric Tremault" .
+
+<http://ceur-ws.org/Vol-1007/#HelmariGust> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/HelmariGust> ;
+    ns3:made <http://ceur-ws.org/Vol-1007/#paper1> ;
+    ns3:name "Helmar Gust" .
+
+<http://ceur-ws.org/Vol-1007/#JannaiHastings> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/JannaiHastings> ;
+    ns3:made <http://ceur-ws.org/Vol-1007/#paper6> ;
+    ns3:name "Janna Hastings" .
+
+<http://ceur-ws.org/Vol-1007/#Jos%C3%A9iGustavoiMorales> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/Jos%C3%A9iGustavoiMorales> ;
+    ns3:made <http://ceur-ws.org/Vol-1007/#paper9> ;
+    ns3:name "José Gustavo Morales" .
+
+<http://ceur-ws.org/Vol-1007/#KonradiGadzicki> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/KonradiGadzicki> ;
+    ns3:made <http://ceur-ws.org/Vol-1007/#paper14> ;
+    ns3:name "Konrad Gadzicki" .
+
+<http://ceur-ws.org/Vol-1007/#MalikaiAuvray> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/MalikaiAuvray> ;
+    ns3:made <http://ceur-ws.org/Vol-1007/#paper3> ;
+    ns3:name "Malika Auvray" .
+
+<http://ceur-ws.org/Vol-1007/#MaraiAbel> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/MaraiAbel> ;
+    ns3:made <http://ceur-ws.org/Vol-1007/#paper4> ;
+    ns3:name "Mara Abel" .
+
+<http://ceur-ws.org/Vol-1007/#MartiniSchmidt> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/MartiniSchmidt> ;
+    ns3:made <http://ceur-ws.org/Vol-1007/#paper1> ;
+    ns3:name "Martin Schmidt" .
+
+<http://ceur-ws.org/Vol-1007/#Mat%C3%ADasiSaracho> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/Mat%C3%ADasiSaracho> ;
+    ns3:made <http://ceur-ws.org/Vol-1007/#paper9> ;
+    ns3:name "Matías Saracho" .
+
+<http://ceur-ws.org/Vol-1007/#MitsuhiroiOkada> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/MitsuhiroiOkada> ;
+    ns3:made <http://ceur-ws.org/Vol-1007/#paper6> ;
+    ns3:name "Mitsuhiro Okada" .
+
+<http://ceur-ws.org/Vol-1007/#NicolaiGuarino> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/NicolaiGuarino> ;
+    ns3:made <http://ceur-ws.org/Vol-1007/#paper5> ;
+    ns3:name "Nicola Guarino" .
+
+<http://ceur-ws.org/Vol-1007/#OliveriKutza> a ns3:Person ;
+    ns7:affiliation "" ;
+    ns2:sameAs <http://ceur-ws.org/persons/OliveriKutza> ;
+    ns3:name "Oliver Kutza" .
+
+<http://ceur-ws.org/Vol-1007/#OpheliaiDeroy> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/OpheliaiDeroy> ;
+    ns3:made <http://ceur-ws.org/Vol-1007/#paper3> ;
+    ns3:name "Ophelia Deroy" .
+
+<http://ceur-ws.org/Vol-1007/#PauloiSantosd> a ns3:Person ;
+    ns7:affiliation "" ;
+    ns2:sameAs <http://ceur-ws.org/persons/PauloiSantosd> ;
+    ns3:name "Paulo Santosd" .
+
+<http://ceur-ws.org/Vol-1007/#PeteriG%C3%A4rdenfors> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/PeteriG%C3%A4rdenfors> ;
+    ns3:made <http://ceur-ws.org/Vol-1007/#paper4> ;
+    ns3:name "Peter Gärdenfors" .
+
+<http://ceur-ws.org/Vol-1007/#RobertiJ.iRovetto> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/RobertiJ.iRovetto> ;
+    ns3:made <http://ceur-ws.org/Vol-1007/#paper10> ;
+    ns3:name "Robert J. Rovetto" .
+
+<http://ceur-ws.org/Vol-1007/#RobertoiCasati> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/RobertoiCasati> ;
+    ns3:made <http://ceur-ws.org/Vol-1007/#invited1> ;
+    ns3:name "Roberto Casati" .
+
+<http://ceur-ws.org/Vol-1007/#RobertoiMarcondesiCesariJr.> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/RobertoiMarcondesiCesariJr.> ;
+    ns3:made <http://ceur-ws.org/Vol-1007/#invited2> ;
+    ns3:name "Roberto Marcondes Cesar Jr." .
+
+<http://ceur-ws.org/Vol-1007/#SandroiRamaiFiorini> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/SandroiRamaiFiorini> ;
+    ns3:made <http://ceur-ws.org/Vol-1007/#paper4> ;
+    ns3:name "Sandro Rama Fiorini" .
+
+<http://ceur-ws.org/Vol-1007/#SilviaiLikavec> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/SilviaiLikavec> ;
+    ns3:made <http://ceur-ws.org/Vol-1007/#paper7> ;
+    ns3:name "Silvia Likavec" .
+
+<http://ceur-ws.org/Vol-1007/#SimoniColton> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/SimoniColton> ;
+    ns3:made <http://ceur-ws.org/Vol-1007/#invited3> ;
+    ns3:name "Simon Colton" .
+
+<http://ceur-ws.org/Vol-1007/#StefanoiBorgoc> a ns3:Person ;
+    ns7:affiliation "" ;
+    ns2:sameAs <http://ceur-ws.org/persons/StefanoiBorgoc> ;
+    ns3:name "Stefano Borgoc" .
+
+<http://ceur-ws.org/Vol-1007/#TarekiBesold> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/TarekiBesold> ;
+    ns3:made <http://ceur-ws.org/Vol-1007/#paper1> ;
+    ns3:name "Tarek Besold" .
+
+<http://ceur-ws.org/Vol-1007/#TobiasiKluth> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/TobiasiKluth> ;
+    ns3:made <http://ceur-ws.org/Vol-1007/#paper14> ;
+    ns3:name "Tobias Kluth" .
+
+<http://ceur-ws.org/Vol-1007/#event> a ns8:WorkshopEvent ;
+    ns8:hasLocation <http://dbpedia.org/resource/Brazil> ;
+    ns8:hasPart <http://ceur-ws.org/Vol-1007/#part-SHAPES> ;
+    ns8:isSubEventOf <http://ceur-ws.org/Vol-1007/#conf> ;
     ns6:beginsAtDatetime "2013-04-03T00:00:00+00:00"^^xsd:dateTime ;
     ns6:endsAtDatetime "2013-04-04T00:00:00+00:00"^^xsd:dateTime ;
     ns5:license "http://choosealicense.com/licenses/no-license/" ;
     rdfs:seeAlso <http://ceur-ws.org/Vol-812/#event> .
+
+<http://ceur-ws.org/Vol-1007/#CarliSchultz> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/CarliSchultz> ;
+    ns3:made <http://ceur-ws.org/Vol-1007/#paper12>,
+        <http://ceur-ws.org/Vol-1007/#paper2> ;
+    ns3:name "Carl Schultz" .
+
+<http://ceur-ws.org/Vol-1007/#Kai-UweiK%C3%BChnberger> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/Kai-UweiK%C3%BChnberger> ;
+    ns3:made <http://ceur-ws.org/Vol-1007/#paper1>,
+        <http://ceur-ws.org/Vol-1007/#paper11> ;
+    ns3:name "Kai-Uwe Kühnberger" .
+
+<http://ceur-ws.org/Vol-1007/#StefaniSchneider> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/StefaniSchneider> ;
+    ns3:made <http://ceur-ws.org/Vol-1007/#paper1>,
+        <http://ceur-ws.org/Vol-1007/#paper11> ;
+    ns3:name "Stefan Schneider" .
+
+<http://ceur-ws.org/Vol-1007/#UlfiKrumnack> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/UlfiKrumnack> ;
+    ns3:made <http://ceur-ws.org/Vol-1007/#paper1>,
+        <http://ceur-ws.org/Vol-1007/#paper11> ;
+    ns3:name "Ulf Krumnack" .
+
+<http://ceur-ws.org/Vol-1007/#invited1> a ns8:Paper ;
+    ns8:partOf <http://ceur-ws.org/Vol-1007/> ;
+    ns1:title "Knowledge of knots: shapes in action" ;
+    ns4:endPage 19 ;
+    ns4:numPages 17 ;
+    ns4:section <http://ceur-ws.org/Vol-1007/#InvitedSpeakers> ;
+    ns4:startPage 3 ;
+    ns7:author <http://ceur-ws.org/Vol-1007/#RobertoiCasati> .
+
+<http://ceur-ws.org/Vol-1007/#invited2> a ns8:Paper ;
+    ns8:partOf <http://ceur-ws.org/Vol-1007/> ;
+    ns1:title "Graph-based pattern recognition and applications" ;
+    ns4:endPage 21 ;
+    ns4:numPages 1 ;
+    ns4:section <http://ceur-ws.org/Vol-1007/#InvitedSpeakers> ;
+    ns4:startPage 21 ;
+    ns7:author <http://ceur-ws.org/Vol-1007/#RobertoiMarcondesiCesariJr.> .
+
+<http://ceur-ws.org/Vol-1007/#invited3> a ns8:Paper ;
+    ns8:partOf <http://ceur-ws.org/Vol-1007/> ;
+    ns1:title "On Shape Poems and the Shape of Poems: A Computational Creativity Perspective" ;
+    ns4:endPage 28 ;
+    ns4:numPages 6 ;
+    ns4:section <http://ceur-ws.org/Vol-1007/#InvitedSpeakers> ;
+    ns4:startPage 23 ;
+    ns7:author <http://ceur-ws.org/Vol-1007/#SimoniColton> .
+
+<http://ceur-ws.org/Vol-1007/#invited4> a ns8:Paper ;
+    ns8:partOf <http://ceur-ws.org/Vol-1007/> ;
+    ns1:title "Prolegomena to an Ontology of Shape" ;
+    ns4:endPage 40 ;
+    ns4:numPages 12 ;
+    ns4:section <http://ceur-ws.org/Vol-1007/#InvitedSpeakers> ;
+    ns4:startPage 29 ;
+    ns7:author <http://ceur-ws.org/Vol-1007/#AntonyiGalton> .
+
+<http://ceur-ws.org/Vol-1007/#invited5> a ns8:Paper ;
+    ns8:partOf <http://ceur-ws.org/Vol-1007/> ;
+    ns1:title "Lines, Shapes, and Meaning" ;
+    ns4:endPage 45 ;
+    ns4:numPages 5 ;
+    ns4:section <http://ceur-ws.org/Vol-1007/#InvitedSpeakers> ;
+    ns4:startPage 41 ;
+    ns7:author <http://ceur-ws.org/Vol-1007/#BarbaraiTversky> .
+
+<http://ceur-ws.org/Vol-1007/#paper10> a ns8:Paper ;
+    ns8:partOf <http://ceur-ws.org/Vol-1007/> ;
+    ns1:title "Shaping up: The Phenotypic Quality Ontology and Cross Sections" ;
+    ns4:endPage 136 ;
+    ns4:numPages 12 ;
+    ns4:section <http://ceur-ws.org/Vol-1007/#ContributedPapers> ;
+    ns4:startPage 125 ;
+    ns7:author <http://ceur-ws.org/Vol-1007/#RobertiJ.iRovetto> .
+
+<http://ceur-ws.org/Vol-1007/#paper13> a ns8:Paper ;
+    ns8:partOf <http://ceur-ws.org/Vol-1007/> ;
+    ns1:title "Mental “structures” in the Berlin school of Gestalt Psychology: can sensation be described as “structural”?" ;
+    ns4:endPage 162 ;
+    ns4:numPages 12 ;
+    ns4:section <http://ceur-ws.org/Vol-1007/#ContributedPapers> ;
+    ns4:startPage 151 ;
+    ns7:author <http://ceur-ws.org/Vol-1007/#EriciTremault> .
+
+<http://ceur-ws.org/Vol-1007/#paper5> a ns8:Paper ;
+    ns8:partOf <http://ceur-ws.org/Vol-1007/> ;
+    ns1:title "Local Qualities, Quality Fields, and Quality Patterns: A Preliminary Investigation" ;
+    ns4:endPage 81 ;
+    ns4:numPages 7 ;
+    ns4:section <http://ceur-ws.org/Vol-1007/#ContributedPapers> ;
+    ns4:startPage 75 ;
+    ns7:author <http://ceur-ws.org/Vol-1007/#NicolaiGuarino> .
+
+<http://ceur-ws.org/Vol-1007/#paper7> a ns8:Paper ;
+    ns8:partOf <http://ceur-ws.org/Vol-1007/> ;
+    ns1:title "Shapes as property restrictions and property-based similarity" ;
+    ns4:endPage 105 ;
+    ns4:numPages 11 ;
+    ns4:section <http://ceur-ws.org/Vol-1007/#ContributedPapers> ;
+    ns4:startPage 95 ;
+    ns7:author <http://ceur-ws.org/Vol-1007/#SilviaiLikavec> .
+
+<http://ceur-ws.org/Vol-1007/#paper8> a ns8:Paper ;
+    ns8:partOf <http://ceur-ws.org/Vol-1007/> ;
+    ns1:title "The Shape of Absolute Coincidences. Salmon's Interactive Fork Model as Shape of Coincidental Processes" ;
+    ns4:endPage 116 ;
+    ns4:numPages 10 ;
+    ns4:section <http://ceur-ws.org/Vol-1007/#ContributedPapers> ;
+    ns4:startPage 107 ;
+    ns7:author <http://ceur-ws.org/Vol-1007/#AlessandraiMelas> .
+
+<http://ceur-ws.org/Vol-1007/#MehuliBhatt> a ns3:Person ;
+    ns7:affiliation "" ;
+    ns2:sameAs <http://ceur-ws.org/persons/MehuliBhatt> ;
+    ns3:made <http://ceur-ws.org/Vol-1007/#paper12>,
+        <http://ceur-ws.org/Vol-1007/#paper2> ;
+    ns3:name "Mehul Bhatt" .
+
+<http://ceur-ws.org/Vol-1007/#paper12> a ns8:Paper ;
+    ns8:partOf <http://ceur-ws.org/Vol-1007/> ;
+    ns1:title "Declarative Computing with Shapes and Shadows" ;
+    ns4:endPage 150 ;
+    ns4:numPages 8 ;
+    ns4:section <http://ceur-ws.org/Vol-1007/#ContributedPapers> ;
+    ns4:startPage 143 ;
+    ns7:author <http://ceur-ws.org/Vol-1007/#CarliSchultz>,
+        <http://ceur-ws.org/Vol-1007/#MehuliBhatt> .
+
+<http://ceur-ws.org/Vol-1007/#paper2> a ns8:Paper ;
+    ns8:partOf <http://ceur-ws.org/Vol-1007/> ;
+    ns1:title "The Shape of Empty Space: Human-centred cognitive foundations in computing for spatial design" ;
+    ns4:endPage 59 ;
+    ns4:numPages 1 ;
+    ns4:section <http://ceur-ws.org/Vol-1007/#ContributedPapers> ;
+    ns4:startPage 59 ;
+    ns7:author <http://ceur-ws.org/Vol-1007/#CarliSchultz>,
+        <http://ceur-ws.org/Vol-1007/#MehuliBhatt> .
+
+<http://ceur-ws.org/Vol-1007/#paper3> a ns8:Paper ;
+    ns8:partOf <http://ceur-ws.org/Vol-1007/> ;
+    ns1:title "A new Molyneux's problem: Sounds, shapes and arbitrary crossmodal correspondences" ;
+    ns4:endPage 70 ;
+    ns4:numPages 10 ;
+    ns4:section <http://ceur-ws.org/Vol-1007/#ContributedPapers> ;
+    ns4:startPage 61 ;
+    ns7:author <http://ceur-ws.org/Vol-1007/#MalikaiAuvray>,
+        <http://ceur-ws.org/Vol-1007/#OpheliaiDeroy> .
+
+<http://ceur-ws.org/Vol-1007/#paper9> a ns8:Paper ;
+    ns8:partOf <http://ceur-ws.org/Vol-1007/> ;
+    ns1:title "The Role of Shape in Problem-Solving Activities in Mathematics" ;
+    ns4:endPage 124 ;
+    ns4:numPages 8 ;
+    ns4:section <http://ceur-ws.org/Vol-1007/#ContributedPapers> ;
+    ns4:startPage 117 ;
+    ns7:author <http://ceur-ws.org/Vol-1007/#Jos%C3%A9iGustavoiMorales>,
+        <http://ceur-ws.org/Vol-1007/#Mat%C3%ADasiSaracho> .
+
+<http://ceur-ws.org/Vol-1007/#paper11> a ns8:Paper ;
+    ns8:partOf <http://ceur-ws.org/Vol-1007/> ;
+    ns1:title "Dynamic Assembly of Figures in Visuospatial Reasoning" ;
+    ns4:endPage 141 ;
+    ns4:numPages 5 ;
+    ns4:section <http://ceur-ws.org/Vol-1007/#ContributedPapers> ;
+    ns4:startPage 137 ;
+    ns7:author <http://ceur-ws.org/Vol-1007/#Kai-UweiK%C3%BChnberger>,
+        <http://ceur-ws.org/Vol-1007/#StefaniSchneider>,
+        <http://ceur-ws.org/Vol-1007/#UlfiKrumnack> .
+
+<http://ceur-ws.org/Vol-1007/#paper14> a ns8:Paper ;
+    ns8:partOf <http://ceur-ws.org/Vol-1007/> ;
+    ns1:title "Statistical Invariants of Spatial Form: From Local AND to Numerosity" ;
+    ns4:endPage 172 ;
+    ns4:numPages 10 ;
+    ns4:section <http://ceur-ws.org/Vol-1007/#ContributedPapers> ;
+    ns4:startPage 163 ;
+    ns7:author <http://ceur-ws.org/Vol-1007/#ChristophiZetzsche>,
+        <http://ceur-ws.org/Vol-1007/#KonradiGadzicki>,
+        <http://ceur-ws.org/Vol-1007/#TobiasiKluth> .
+
+<http://ceur-ws.org/Vol-1007/#paper4> a ns8:Paper ;
+    ns8:partOf <http://ceur-ws.org/Vol-1007/> ;
+    ns1:title "Structure, Similarity and Spaces" ;
+    ns4:endPage 74 ;
+    ns4:numPages 4 ;
+    ns4:section <http://ceur-ws.org/Vol-1007/#ContributedPapers> ;
+    ns4:startPage 71 ;
+    ns7:author <http://ceur-ws.org/Vol-1007/#MaraiAbel>,
+        <http://ceur-ws.org/Vol-1007/#PeteriG%C3%A4rdenfors>,
+        <http://ceur-ws.org/Vol-1007/#SandroiRamaiFiorini> .
+
+<http://ceur-ws.org/Vol-1007/#paper6> a ns8:Paper ;
+    ns8:partOf <http://ceur-ws.org/Vol-1007/> ;
+    ns1:title "Shape Perception in Chemistry" ;
+    ns4:endPage 94 ;
+    ns4:numPages 12 ;
+    ns4:section <http://ceur-ws.org/Vol-1007/#ContributedPapers> ;
+    ns4:startPage 83 ;
+    ns7:author <http://ceur-ws.org/Vol-1007/#ColiniBatchelor>,
+        <http://ceur-ws.org/Vol-1007/#JannaiHastings>,
+        <http://ceur-ws.org/Vol-1007/#MitsuhiroiOkada> .
+
+<http://ceur-ws.org/Vol-1007/#InvitedSpeakers> a ns8:SessionEvent ;
+    ns8:partOf <http://ceur-ws.org/Vol-1007/> ;
+    ns1:title "Invited Speakers" .
+
+<http://ceur-ws.org/Vol-1007/#paper1> a ns8:Paper ;
+    ns8:partOf <http://ceur-ws.org/Vol-1007/> ;
+    ns1:title "Sketch Learning by Analogy" ;
+    ns4:endPage 58 ;
+    ns4:numPages 10 ;
+    ns4:section <http://ceur-ws.org/Vol-1007/#ContributedPapers> ;
+    ns4:startPage 49 ;
+    ns7:author <http://ceur-ws.org/Vol-1007/#AhmediAbdel-Fattah>,
+        <http://ceur-ws.org/Vol-1007/#AngelaiSchwering>,
+        <http://ceur-ws.org/Vol-1007/#HelmariGust>,
+        <http://ceur-ws.org/Vol-1007/#Kai-UweiK%C3%BChnberger>,
+        <http://ceur-ws.org/Vol-1007/#MartiniSchmidt>,
+        <http://ceur-ws.org/Vol-1007/#StefaniSchneider>,
+        <http://ceur-ws.org/Vol-1007/#TarekiBesold>,
+        <http://ceur-ws.org/Vol-1007/#UlfiKrumnack> .
+
+<http://ceur-ws.org/Vol-1007/#ContributedPapers> a ns8:SessionEvent ;
+    ns8:partOf <http://ceur-ws.org/Vol-1007/> ;
+    ns1:title "Contributed Papers" .
+
+<http://ceur-ws.org/Vol-1007/> a ns8:Proceedings ;
+    ns8:hasPart <http://ceur-ws.org/Vol-1007/#invited1>,
+        <http://ceur-ws.org/Vol-1007/#invited2>,
+        <http://ceur-ws.org/Vol-1007/#invited3>,
+        <http://ceur-ws.org/Vol-1007/#invited4>,
+        <http://ceur-ws.org/Vol-1007/#invited5>,
+        <http://ceur-ws.org/Vol-1007/#paper1>,
+        <http://ceur-ws.org/Vol-1007/#paper10>,
+        <http://ceur-ws.org/Vol-1007/#paper11>,
+        <http://ceur-ws.org/Vol-1007/#paper12>,
+        <http://ceur-ws.org/Vol-1007/#paper13>,
+        <http://ceur-ws.org/Vol-1007/#paper14>,
+        <http://ceur-ws.org/Vol-1007/#paper2>,
+        <http://ceur-ws.org/Vol-1007/#paper3>,
+        <http://ceur-ws.org/Vol-1007/#paper4>,
+        <http://ceur-ws.org/Vol-1007/#paper5>,
+        <http://ceur-ws.org/Vol-1007/#paper6>,
+        <http://ceur-ws.org/Vol-1007/#paper7>,
+        <http://ceur-ws.org/Vol-1007/#paper8>,
+        <http://ceur-ws.org/Vol-1007/#paper9> ;
+    ns8:hasSession <http://ceur-ws.org/Vol-1007/#ContributedPapers>,
+        <http://ceur-ws.org/Vol-1007/#InvitedSpeakers> ;
+    ns9:issued "2013-07-02T00:00:00+00:00"^^xsd:dateTime ;
+    ns4:presentedAt <http://ceur-ws.org/Vol-1007/#event> ;
+    ns7:editor <http://ceur-ws.org/Vol-1007/#MehuliBhatt>,
+        <http://ceur-ws.org/Vol-1007/#OliveriKutza>,
+        <http://ceur-ws.org/Vol-1007/#PauloiSantosd>,
+        <http://ceur-ws.org/Vol-1007/#StefanoiBorgoc> .
 

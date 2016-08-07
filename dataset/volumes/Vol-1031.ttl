@@ -1,46 +1,191 @@
-@prefix ns1: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns2: <http://xmlns.com/foaf/0.1/> .
+@prefix ns1: <http://www.w3.org/2002/07/owl#> .
+@prefix ns2: <http://purl.org/ontology/bibo/#> .
 @prefix ns3: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns4: <http://www.w3.org/2002/07/owl#> .
-@prefix ns5: <http://purl.org/dc/elements/1.1/> .
-@prefix ns6: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns8: <http://purl.org/ontology/bibo/#> .
+@prefix ns4: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns5: <http://xmlns.com/foaf/0.1/> .
+@prefix ns6: <http://purl.org/dc/elements/1.1/> .
+@prefix ns7: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns9: <http://purl.org/NET/c4dm/timeline.owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1031/> a ns3:Proceedings ;
-    ns1:issued "2013-09-06T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:presentedAt <http://ceur-ws.org/Vol-1031/#event> ;
-    ns6:editor <http://ceur-ws.org/Vol-1031/#DenisiTurdakov>,
-        <http://ceur-ws.org/Vol-1031/#NataliaiVassilieva>,
-        <http://ceur-ws.org/Vol-1031/#VladimiriIvanov> .
+<http://ceur-ws.org/Vol-1031/#ArtemiKuznetsov> a ns5:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/ArtemiKuznetsov> ;
+    ns5:made <http://ceur-ws.org/Vol-1031/#paper2> ;
+    ns5:name "Artem Kuznetsov" .
 
-<http://ceur-ws.org/Vol-1031/#DenisiTurdakov> a ns2:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/DenisiTurdakov> ;
-    ns2:name "Denis Turdakov" .
+<http://ceur-ws.org/Vol-1031/#CherednikiKirill> a ns5:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/CherednikiKirill> ;
+    ns5:made <http://ceur-ws.org/Vol-1031/#paper5> ;
+    ns5:name "Cherednik Kirill" .
 
-<http://ceur-ws.org/Vol-1031/#NataliaiVassilieva> a ns2:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/NataliaiVassilieva> ;
-    ns2:name "Natalia Vassilieva" .
+<http://ceur-ws.org/Vol-1031/#ChernisheviGeorge> a ns5:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/ChernisheviGeorge> ;
+    ns5:made <http://ceur-ws.org/Vol-1031/#paper5> ;
+    ns5:name "Chernishev George" .
 
-<http://ceur-ws.org/Vol-1031/#VladimiriIvanov> a ns2:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/VladimiriIvanov> ;
-    ns2:name "Vladimir Ivanov" .
+<http://ceur-ws.org/Vol-1031/#DariaiDzendzik> a ns5:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/DariaiDzendzik> ;
+    ns5:made <http://ceur-ws.org/Vol-1031/#paper1> ;
+    ns5:name "Daria Dzendzik" .
+
+<http://ceur-ws.org/Vol-1031/#DenisiFedorenko> a ns5:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/DenisiFedorenko> ;
+    ns5:made <http://ceur-ws.org/Vol-1031/#paper3> ;
+    ns5:name "Denis Fedorenko" .
+
+<http://ceur-ws.org/Vol-1031/#GalinaiLezina> a ns5:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/GalinaiLezina> ;
+    ns5:made <http://ceur-ws.org/Vol-1031/#paper2> ;
+    ns5:name "Galina Lezina" .
+
+<http://ceur-ws.org/Vol-1031/#GeorgeiErokhin> a ns5:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/GeorgeiErokhin> ;
+    ns5:made <http://ceur-ws.org/Vol-1031/#paper5> ;
+    ns5:name "George Erokhin" .
+
+<http://ceur-ws.org/Vol-1031/#KirilliSmirnov> a ns5:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/KirilliSmirnov> ;
+    ns5:made <http://ceur-ws.org/Vol-1031/#paper5> ;
+    ns5:name "Kirill Smirnov" .
+
+<http://ceur-ws.org/Vol-1031/#KonstantiniAbakumov> a ns5:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/KonstantiniAbakumov> ;
+    ns5:made <http://ceur-ws.org/Vol-1031/#paper6> ;
+    ns5:name "Konstantin Abakumov" .
+
+<http://ceur-ws.org/Vol-1031/#NataliaiVassilieva> a ns5:Person ;
+    ns4:affiliation "" ;
+    ns1:sameAs <http://ceur-ws.org/persons/NataliaiVassilieva> ;
+    ns5:name "Natalia Vassilieva" .
+
+<http://ceur-ws.org/Vol-1031/#NikitaiAstrakhantsev> a ns5:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/NikitaiAstrakhantsev> ;
+    ns5:made <http://ceur-ws.org/Vol-1031/#paper3> ;
+    ns5:name "Nikita Astrakhantsev" .
+
+<http://ceur-ws.org/Vol-1031/#OxanaiDolmatova> a ns5:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/OxanaiDolmatova> ;
+    ns5:made <http://ceur-ws.org/Vol-1031/#paper4> ;
+    ns5:name "Oxana Dolmatova" .
+
+<http://ceur-ws.org/Vol-1031/#PaveliFedotovsky> a ns5:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/PaveliFedotovsky> ;
+    ns5:made <http://ceur-ws.org/Vol-1031/#paper5> ;
+    ns5:name "Pavel Fedotovsky" .
+
+<http://ceur-ws.org/Vol-1031/#SergeyiSerebryakov> a ns5:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/SergeyiSerebryakov> ;
+    ns5:made <http://ceur-ws.org/Vol-1031/#paper1> ;
+    ns5:name "Sergey Serebryakov" .
+
+<http://ceur-ws.org/Vol-1031/#VladimiriIvanov> a ns5:Person ;
+    ns4:affiliation "" ;
+    ns1:sameAs <http://ceur-ws.org/persons/VladimiriIvanov> ;
+    ns5:name "Vladimir Ivanov" .
 
 <http://ceur-ws.org/Vol-1031/#event> a ns3:WorkshopEvent ;
     ns3:hasLocation <http://dbpedia.org/resource/Russia> ;
-    ns3:hasPart <http://ceur-ws.org/Vol-1031/#part-CEUR-WS> ;
+    ns3:hasPart <http://ceur-ws.org/Vol-1031/#part-SYRCoDIS> ;
     ns3:isSubEventOf <http://ceur-ws.org/Vol-1031/#conf> ;
-    ns7:beginsAtDatetime "2013-05-31T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:endsAtDatetime "2013-05-31T00:00:00+00:00"^^xsd:dateTime ;
-    ns5:license "http://choosealicense.com/licenses/no-license/" ;
+    ns9:beginsAtDatetime "2013-05-31T00:00:00+00:00"^^xsd:dateTime ;
+    ns9:endsAtDatetime "2013-05-31T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:license "http://choosealicense.com/licenses/no-license/" ;
     rdfs:seeAlso <http://ceur-ws.org/Vol-154/#event>,
         <http://ceur-ws.org/Vol-256/#event>,
         <http://ceur-ws.org/Vol-355/#event>,
         <http://ceur-ws.org/Vol-454/#event>,
         <http://ceur-ws.org/Vol-735/#event>,
         <http://ceur-ws.org/Vol-899/#event> .
+
+<http://ceur-ws.org/Vol-1031/#DenisiTurdakov> a ns5:Person ;
+    ns4:affiliation "" ;
+    ns1:sameAs <http://ceur-ws.org/persons/DenisiTurdakov> ;
+    ns5:made <http://ceur-ws.org/Vol-1031/#paper3> ;
+    ns5:name "Denis Turdakov" .
+
+<http://ceur-ws.org/Vol-1031/#paper4> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1031/> ;
+    ns7:title "An Adaptive Approximate Algorithm For Join" ;
+    ns2:section <http://ceur-ws.org/Vol-1031/#ConstructionofDBMSapplicationstructuredandsemistructureddataanalysis> ;
+    ns4:author <http://ceur-ws.org/Vol-1031/#OxanaiDolmatova> .
+
+<http://ceur-ws.org/Vol-1031/#paper6> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1031/> ;
+    ns7:title "JSQ: Distributed querying of JSON stream data" ;
+    ns2:endPage 34 ;
+    ns2:numPages 8 ;
+    ns2:section <http://ceur-ws.org/Vol-1031/#ConstructionofDBMSapplicationstructuredandsemistructureddataanalysis> ;
+    ns2:startPage 27 ;
+    ns4:author <http://ceur-ws.org/Vol-1031/#KonstantiniAbakumov> .
+
+<http://ceur-ws.org/Vol-1031/#paper1> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1031/> ;
+    ns7:title "Semi-Automatic Generation of Linear Event Extraction Patterns for Free Texts" ;
+    ns2:endPage 9 ;
+    ns2:numPages 5 ;
+    ns2:section <http://ceur-ws.org/Vol-1031/#Textdataanalysismethodsandtechnologies> ;
+    ns2:startPage 5 ;
+    ns4:author <http://ceur-ws.org/Vol-1031/#DariaiDzendzik>,
+        <http://ceur-ws.org/Vol-1031/#SergeyiSerebryakov> .
+
+<http://ceur-ws.org/Vol-1031/#paper2> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1031/> ;
+    ns7:title "Predict Closed Questions on StackOverflow" ;
+    ns2:endPage 14 ;
+    ns2:numPages 5 ;
+    ns2:section <http://ceur-ws.org/Vol-1031/#Textdataanalysismethodsandtechnologies> ;
+    ns2:startPage 10 ;
+    ns4:author <http://ceur-ws.org/Vol-1031/#ArtemiKuznetsov>,
+        <http://ceur-ws.org/Vol-1031/#GalinaiLezina> .
+
+<http://ceur-ws.org/Vol-1031/#ConstructionofDBMSapplicationstructuredandsemistructureddataanalysis> a ns3:SessionEvent ;
+    ns3:partOf <http://ceur-ws.org/Vol-1031/> ;
+    ns7:title "Construction of DBMS application, structured and semistructured data analysis" .
+
+<http://ceur-ws.org/Vol-1031/#Textdataanalysismethodsandtechnologies> a ns3:SessionEvent ;
+    ns3:partOf <http://ceur-ws.org/Vol-1031/> ;
+    ns7:title "Text data analysis methods and technologies" .
+
+<http://ceur-ws.org/Vol-1031/#paper3> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1031/> ;
+    ns7:title "Automatic recognition of domain-specific terms: an experimental evaluation" ;
+    ns2:endPage 23 ;
+    ns2:numPages 9 ;
+    ns2:section <http://ceur-ws.org/Vol-1031/#Textdataanalysismethodsandtechnologies> ;
+    ns2:startPage 15 ;
+    ns4:author <http://ceur-ws.org/Vol-1031/#DenisiFedorenko>,
+        <http://ceur-ws.org/Vol-1031/#DenisiTurdakov>,
+        <http://ceur-ws.org/Vol-1031/#NikitaiAstrakhantsev> .
+
+<http://ceur-ws.org/Vol-1031/#paper5> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1031/> ;
+    ns7:title "To Sort or not to Sort: The Evaluation of R-Tree and B" ;
+    ns2:endPage 26 ;
+    ns2:numPages 3 ;
+    ns2:section <http://ceur-ws.org/Vol-1031/#ConstructionofDBMSapplicationstructuredandsemistructureddataanalysis> ;
+    ns2:startPage 24 ;
+    ns4:author <http://ceur-ws.org/Vol-1031/#CherednikiKirill>,
+        <http://ceur-ws.org/Vol-1031/#ChernisheviGeorge>,
+        <http://ceur-ws.org/Vol-1031/#GeorgeiErokhin>,
+        <http://ceur-ws.org/Vol-1031/#KirilliSmirnov>,
+        <http://ceur-ws.org/Vol-1031/#PaveliFedotovsky> .
+
+<http://ceur-ws.org/Vol-1031/> a ns3:Proceedings ;
+    ns3:hasPart <http://ceur-ws.org/Vol-1031/#paper1>,
+        <http://ceur-ws.org/Vol-1031/#paper2>,
+        <http://ceur-ws.org/Vol-1031/#paper3>,
+        <http://ceur-ws.org/Vol-1031/#paper4>,
+        <http://ceur-ws.org/Vol-1031/#paper5>,
+        <http://ceur-ws.org/Vol-1031/#paper6> ;
+    ns3:hasSession <http://ceur-ws.org/Vol-1031/#ConstructionofDBMSapplicationstructuredandsemistructureddataanalysis>,
+        <http://ceur-ws.org/Vol-1031/#Textdataanalysismethodsandtechnologies> ;
+    ns8:issued "2013-09-06T00:00:00+00:00"^^xsd:dateTime ;
+    ns2:presentedAt <http://ceur-ws.org/Vol-1031/#event> ;
+    ns4:editor <http://ceur-ws.org/Vol-1031/#DenisiTurdakov>,
+        <http://ceur-ws.org/Vol-1031/#NataliaiVassilieva>,
+        <http://ceur-ws.org/Vol-1031/#VladimiriIvanov> .
 

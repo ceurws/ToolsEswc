@@ -1,12 +1,12 @@
-@prefix ns1: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns1: <http://data.semanticweb.org/ns/swc/ontology/#> .
 @prefix ns2: <http://xmlns.com/foaf/0.1/> .
 @prefix ns3: <http://www.w3.org/2002/07/owl#> .
-@prefix ns4: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns5: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns6: <http://purl.org/ontology/bibo/#> .
-@prefix ns7: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns8: <http://purl.org/dc/elements/1.1/> .
-@prefix ns9: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns4: <http://purl.org/ontology/bibo/#> .
+@prefix ns5: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns6: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns9: <http://purl.org/dc/elements/1.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -28,8 +28,8 @@
     ns2:name "Chuanlei Zhang" .
 
 <http://ceur-ws.org/Vol-338/#ElaiHunt> a ns2:Person ;
-    ns6:place <http://dbpedia.org/resource/Switzerland> ;
-    ns1:affiliation "2, Swiss Federal Institute of Technology (ETHZ), Zurich" ;
+    ns4:place <http://dbpedia.org/resource/Switzerland> ;
+    ns6:affiliation "2, Swiss Federal Institute of Technology (ETHZ), Zurich" ;
     ns3:sameAs <http://ceur-ws.org/persons/ElaiHunt> ;
     ns2:name "Ela Hunt" .
 
@@ -69,8 +69,8 @@
     ns2:name "Mayra Padilla-Duarte" .
 
 <http://ceur-ws.org/Vol-338/#MuraliiMohaniNarasipuram> a ns2:Person ;
-    ns6:place <http://dbpedia.org/resource/China> ;
-    ns1:affiliation "1,  City University of Hong Kong" ;
+    ns4:place <http://dbpedia.org/resource/China> ;
+    ns6:affiliation "1,  City University of Hong Kong" ;
     ns3:sameAs <http://ceur-ws.org/persons/MuraliiMohaniNarasipuram> ;
     ns2:name "Murali Mohan Narasipuram" .
 
@@ -90,14 +90,14 @@
     ns2:name "Peggy D. Lee" .
 
 <http://ceur-ws.org/Vol-338/#PeteriRittgen> a ns2:Person ;
-    ns6:place <http://dbpedia.org/resource/Sweden> ;
-    ns1:affiliation "1,  University College of Borås" ;
+    ns4:place <http://dbpedia.org/resource/Sweden> ;
+    ns6:affiliation "1,  University College of Borås" ;
     ns3:sameAs <http://ceur-ws.org/persons/PeteriRittgen> ;
     ns2:name "Peter Rittgen" .
 
 <http://ceur-ws.org/Vol-338/#RemiiColetta> a ns2:Person ;
-    ns6:place <http://dbpedia.org/resource/France> ;
-    ns1:affiliation "2, LIRMM CNRS-University of Montpellier 2" ;
+    ns4:place <http://dbpedia.org/resource/France> ;
+    ns6:affiliation "2, LIRMM CNRS-University of Montpellier 2" ;
     ns3:sameAs <http://ceur-ws.org/persons/RemiiColetta> ;
     ns2:name "Remi Coletta" .
 
@@ -122,18 +122,18 @@
     ns2:name "Toader Jucan" .
 
 <http://ceur-ws.org/Vol-338/#XavieriFranch> a ns2:Person ;
-    ns6:place <http://dbpedia.org/resource/Spain> ;
-    ns1:affiliation "2, Universitat Politècnica de Catalunya" ;
+    ns4:place <http://dbpedia.org/resource/Spain> ;
+    ns6:affiliation "2, Universitat Politècnica de Catalunya" ;
     ns3:sameAs <http://ceur-ws.org/persons/XavieriFranch> ;
     ns2:name "Xavier Franch" .
 
-<http://ceur-ws.org/Vol-338/#event> a ns4:WorkshopEvent ;
-    ns4:hasLocation <http://dbpedia.org/resource/France> ;
-    ns4:hasPart <http://ceur-ws.org/Vol-338/#part-CEUR-WS> ;
-    ns4:isSubEventOf <http://ceur-ws.org/Vol-338/#conf> ;
-    ns5:beginsAtDatetime "2008-06-09T00:00:00+00:00"^^xsd:dateTime ;
-    ns5:endsAtDatetime "2008-06-09T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:license "http://choosealicense.com/licenses/no-license/" .
+<http://ceur-ws.org/Vol-338/#event> a ns1:WorkshopEvent ;
+    ns1:hasLocation <http://dbpedia.org/resource/France> ;
+    ns1:hasPart <http://ceur-ws.org/Vol-338/#part-EOMAS> ;
+    ns1:isSubEventOf <http://ceur-ws.org/Vol-338/#conf> ;
+    ns7:beginsAtDatetime "2008-06-16T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:endsAtDatetime "2008-06-17T00:00:00+00:00"^^xsd:dateTime ;
+    ns9:license "http://choosealicense.com/licenses/no-license/" .
 
 <http://ceur-ws.org/Vol-338/#AshishiGupta> a ns2:Person ;
     ns3:sameAs <http://ceur-ws.org/persons/AshishiGupta> ;
@@ -141,9 +141,9 @@
         <http://ceur-ws.org/Vol-338/#paper7> ;
     ns2:name "Ashish Gupta" .
 
-<http://ceur-ws.org/Vol-338/#Introduction> a ns4:SessionEvent ;
-    ns4:partOf <http://ceur-ws.org/Vol-338/> ;
-    ns7:title "Introduction" .
+<http://ceur-ws.org/Vol-338/#Introduction> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-338/> ;
+    ns5:title "Introduction" .
 
 <http://ceur-ws.org/Vol-338/#RameshiSharda> a ns2:Person ;
     ns3:sameAs <http://ceur-ws.org/persons/RameshiSharda> ;
@@ -151,112 +151,112 @@
         <http://ceur-ws.org/Vol-338/#paper7> ;
     ns2:name "Ramesh Sharda" .
 
-<http://ceur-ws.org/Vol-338/#paper1> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-338/> ;
-    ns7:title "Enterprise, Organization, Modeling, Simulation: Putting Pieces Together" ;
-    ns6:section <http://ceur-ws.org/Vol-338/#Introduction> ;
-    ns1:author <http://ceur-ws.org/Vol-338/#JosephiBarjis> .
+<http://ceur-ws.org/Vol-338/#paper1> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-338/> ;
+    ns5:title "Enterprise, Organization, Modeling, Simulation: Putting Pieces Together" ;
+    ns4:section <http://ceur-ws.org/Vol-338/#Introduction> ;
+    ns6:author <http://ceur-ws.org/Vol-338/#JosephiBarjis> .
 
-<http://ceur-ws.org/Vol-338/#paper10> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-338/> ;
-    ns7:title "User Interface Modelling Based on the Graph Transformations of Conceptual Data Model" ;
-    ns6:section <http://ceur-ws.org/Vol-338/#ResearchPapers> ;
-    ns1:author <http://ceur-ws.org/Vol-338/#MartiniMolhanec> .
+<http://ceur-ws.org/Vol-338/#paper10> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-338/> ;
+    ns5:title "User Interface Modelling Based on the Graph Transformations of Conceptual Data Model" ;
+    ns4:section <http://ceur-ws.org/Vol-338/#ResearchPapers> ;
+    ns6:author <http://ceur-ws.org/Vol-338/#MartiniMolhanec> .
 
-<http://ceur-ws.org/Vol-338/#paper11> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-338/> ;
-    ns7:title "Modelling and Simulation of a Real-Time Hybrid System" ;
-    ns6:section <http://ceur-ws.org/Vol-338/#ResearchPapers> ;
-    ns1:author <http://ceur-ws.org/Vol-338/#ManueliI.iCapel-Tu%C3%B1%C3%B3n> .
+<http://ceur-ws.org/Vol-338/#paper11> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-338/> ;
+    ns5:title "Modelling and Simulation of a Real-Time Hybrid System" ;
+    ns4:section <http://ceur-ws.org/Vol-338/#ResearchPapers> ;
+    ns6:author <http://ceur-ws.org/Vol-338/#ManueliI.iCapel-Tu%C3%B1%C3%B3n> .
 
-<http://ceur-ws.org/Vol-338/#paper2> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-338/> ;
-    ns7:title "Causal Mapping as an Innovative Approach to Course Curriculum Development" ;
-    ns6:section <http://ceur-ws.org/Vol-338/#PanelPresentation> ;
-    ns1:author <http://ceur-ws.org/Vol-338/#TatianaiBouzdine-Chameeva> .
+<http://ceur-ws.org/Vol-338/#paper2> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-338/> ;
+    ns5:title "Causal Mapping as an Innovative Approach to Course Curriculum Development" ;
+    ns4:section <http://ceur-ws.org/Vol-338/#PanelPresentation> ;
+    ns6:author <http://ceur-ws.org/Vol-338/#TatianaiBouzdine-Chameeva> .
 
-<http://ceur-ws.org/Vol-338/#paper3> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-338/> ;
-    ns7:title "Teaching a Unified Approach to Modeling and Simulation" ;
-    ns6:section <http://ceur-ws.org/Vol-338/#PanelPresentation> ;
-    ns1:author <http://ceur-ws.org/Vol-338/#JamesiC.iBrowne> .
+<http://ceur-ws.org/Vol-338/#paper3> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-338/> ;
+    ns5:title "Teaching a Unified Approach to Modeling and Simulation" ;
+    ns4:section <http://ceur-ws.org/Vol-338/#PanelPresentation> ;
+    ns6:author <http://ceur-ws.org/Vol-338/#JamesiC.iBrowne> .
 
-<http://ceur-ws.org/Vol-338/#paper5> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-338/> ;
-    ns7:title "Using Second Life to Teach Operations Management" ;
-    ns6:section <http://ceur-ws.org/Vol-338/#PanelPresentation> ;
-    ns1:author <http://ceur-ws.org/Vol-338/#PeggyiD.iLee> .
+<http://ceur-ws.org/Vol-338/#paper5> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-338/> ;
+    ns5:title "Using Second Life to Teach Operations Management" ;
+    ns4:section <http://ceur-ws.org/Vol-338/#PanelPresentation> ;
+    ns6:author <http://ceur-ws.org/Vol-338/#PeggyiD.iLee> .
 
 <http://ceur-ws.org/Vol-338/#JosephiBarjis> a ns2:Person ;
-    ns6:place <http://dbpedia.org/resource/Netherlands> ;
-    ns1:affiliation "1,  Delft University of Technology" ;
+    ns4:place <http://dbpedia.org/resource/Netherlands> ;
+    ns6:affiliation "1,  Delft University of Technology" ;
     ns3:sameAs <http://ceur-ws.org/persons/JosephiBarjis> ;
     ns2:made <http://ceur-ws.org/Vol-338/#paper1>,
         <http://ceur-ws.org/Vol-338/#paper13> ;
     ns2:name "Joseph Barjis" .
 
-<http://ceur-ws.org/Vol-338/#paper12> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-338/> ;
-    ns7:title "An Operational Activity Analysis Using Analytic Hierarchy Process and Queuing Petri Net" ;
-    ns6:section <http://ceur-ws.org/Vol-338/#ResearchPapers> ;
-    ns1:author <http://ceur-ws.org/Vol-338/#ArezkiiAitiSeddik>,
+<http://ceur-ws.org/Vol-338/#paper12> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-338/> ;
+    ns5:title "An Operational Activity Analysis Using Analytic Hierarchy Process and Queuing Petri Net" ;
+    ns4:section <http://ceur-ws.org/Vol-338/#ResearchPapers> ;
+    ns6:author <http://ceur-ws.org/Vol-338/#ArezkiiAitiSeddik>,
         <http://ceur-ws.org/Vol-338/#PatrickiLallement> .
 
-<http://ceur-ws.org/Vol-338/#paper4> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-338/> ;
-    ns7:title "Simulating, Visualizing, Gaming and Analyzing: Modeling your Way towards Innovative Teaching Approaches" ;
-    ns6:section <http://ceur-ws.org/Vol-338/#PanelPresentation> ;
-    ns1:author <http://ceur-ws.org/Vol-338/#AshishiGupta>,
+<http://ceur-ws.org/Vol-338/#paper4> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-338/> ;
+    ns5:title "Simulating, Visualizing, Gaming and Analyzing: Modeling your Way towards Innovative Teaching Approaches" ;
+    ns4:section <http://ceur-ws.org/Vol-338/#PanelPresentation> ;
+    ns6:author <http://ceur-ws.org/Vol-338/#AshishiGupta>,
         <http://ceur-ws.org/Vol-338/#RameshiSharda> .
 
-<http://ceur-ws.org/Vol-338/#paper7> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-338/> ;
-    ns7:title "Simulating Email Flow within Knowledge Networks" ;
-    ns6:section <http://ceur-ws.org/Vol-338/#ResearchPapers> ;
-    ns1:author <http://ceur-ws.org/Vol-338/#AshishiGupta>,
+<http://ceur-ws.org/Vol-338/#paper7> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-338/> ;
+    ns5:title "Simulating Email Flow within Knowledge Networks" ;
+    ns4:section <http://ceur-ws.org/Vol-338/#ResearchPapers> ;
+    ns6:author <http://ceur-ws.org/Vol-338/#AshishiGupta>,
         <http://ceur-ws.org/Vol-338/#RameshiSharda> .
 
-<http://ceur-ws.org/Vol-338/#paper9> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-338/> ;
-    ns7:title "Interorganizational Workflow Nets: a Petri Net Based Approach for Modelling and Analyzing Interorganizational Workflows" ;
-    ns6:section <http://ceur-ws.org/Vol-338/#ResearchPapers> ;
-    ns1:author <http://ceur-ws.org/Vol-338/#OanaiPrisecaru>,
+<http://ceur-ws.org/Vol-338/#paper9> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-338/> ;
+    ns5:title "Interorganizational Workflow Nets: a Petri Net Based Approach for Modelling and Analyzing Interorganizational Workflows" ;
+    ns4:section <http://ceur-ws.org/Vol-338/#ResearchPapers> ;
+    ns6:author <http://ceur-ws.org/Vol-338/#OanaiPrisecaru>,
         <http://ceur-ws.org/Vol-338/#ToaderiJucan> .
 
-<http://ceur-ws.org/Vol-338/#paper13> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-338/> ;
-    ns7:title "Simulation of Patient Admission Process Using Colored Petri Net" ;
-    ns6:section <http://ceur-ws.org/Vol-338/#ResearchPapers> ;
-    ns1:author <http://ceur-ws.org/Vol-338/#ChristofiSchulze>,
+<http://ceur-ws.org/Vol-338/#paper13> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-338/> ;
+    ns5:title "Simulation of Patient Admission Process Using Colored Petri Net" ;
+    ns4:section <http://ceur-ws.org/Vol-338/#ResearchPapers> ;
+    ns6:author <http://ceur-ws.org/Vol-338/#ChristofiSchulze>,
         <http://ceur-ws.org/Vol-338/#JosephiBarjis>,
         <http://ceur-ws.org/Vol-338/#SebastianiFreund> .
 
-<http://ceur-ws.org/Vol-338/#paper6> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-338/> ;
-    ns7:title "Mining Email Archives and Simulating the Dynamics of Open-Source Project Developer Networks" ;
-    ns6:section <http://ceur-ws.org/Vol-338/#ResearchPapers> ;
-    ns1:author <http://ceur-ws.org/Vol-338/#ChuanleiiZhang>,
+<http://ceur-ws.org/Vol-338/#paper6> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-338/> ;
+    ns5:title "Mining Email Archives and Simulating the Dynamics of Open-Source Project Developer Networks" ;
+    ns4:section <http://ceur-ws.org/Vol-338/#ResearchPapers> ;
+    ns6:author <http://ceur-ws.org/Vol-338/#ChuanleiiZhang>,
         <http://ceur-ws.org/Vol-338/#LiguoiYu>,
         <http://ceur-ws.org/Vol-338/#SriniiRamaswamy> .
 
-<http://ceur-ws.org/Vol-338/#paper8> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-338/> ;
-    ns7:title "Modeling and Simulation of Workflow Processes Using Multi-level Petri Nets" ;
-    ns6:section <http://ceur-ws.org/Vol-338/#ResearchPapers> ;
-    ns1:author <http://ceur-ws.org/Vol-338/#ErnestoiL%C3%B3pez-Mellado>,
+<http://ceur-ws.org/Vol-338/#paper8> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-338/> ;
+    ns5:title "Modeling and Simulation of Workflow Processes Using Multi-level Petri Nets" ;
+    ns4:section <http://ceur-ws.org/Vol-338/#ResearchPapers> ;
+    ns6:author <http://ceur-ws.org/Vol-338/#ErnestoiL%C3%B3pez-Mellado>,
         <http://ceur-ws.org/Vol-338/#MarinaiFlores-Badillo>,
         <http://ceur-ws.org/Vol-338/#MayraiPadilla-Duarte> .
 
-<http://ceur-ws.org/Vol-338/#PanelPresentation> a ns4:SessionEvent ;
-    ns4:partOf <http://ceur-ws.org/Vol-338/> ;
-    ns7:title "Panel Presentation" .
+<http://ceur-ws.org/Vol-338/#PanelPresentation> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-338/> ;
+    ns5:title "Panel Presentation" .
 
-<http://ceur-ws.org/Vol-338/#ResearchPapers> a ns4:SessionEvent ;
-    ns4:partOf <http://ceur-ws.org/Vol-338/> ;
-    ns7:title "Research Papers" .
+<http://ceur-ws.org/Vol-338/#ResearchPapers> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-338/> ;
+    ns5:title "Research Papers" .
 
-<http://ceur-ws.org/Vol-338/> a ns4:Proceedings ;
-    ns4:hasPart <http://ceur-ws.org/Vol-338/#paper1>,
+<http://ceur-ws.org/Vol-338/> a ns1:Proceedings ;
+    ns1:hasPart <http://ceur-ws.org/Vol-338/#paper1>,
         <http://ceur-ws.org/Vol-338/#paper10>,
         <http://ceur-ws.org/Vol-338/#paper11>,
         <http://ceur-ws.org/Vol-338/#paper12>,
@@ -269,12 +269,12 @@
         <http://ceur-ws.org/Vol-338/#paper7>,
         <http://ceur-ws.org/Vol-338/#paper8>,
         <http://ceur-ws.org/Vol-338/#paper9> ;
-    ns4:hasSession <http://ceur-ws.org/Vol-338/#Introduction>,
+    ns1:hasSession <http://ceur-ws.org/Vol-338/#Introduction>,
         <http://ceur-ws.org/Vol-338/#PanelPresentation>,
         <http://ceur-ws.org/Vol-338/#ResearchPapers> ;
-    ns9:issued "2008-06-09T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:presentedAt <http://ceur-ws.org/Vol-338/#event> ;
-    ns1:editor <http://ceur-ws.org/Vol-338/#ElaiHunt>,
+    ns8:issued "2008-06-09T00:00:00+00:00"^^xsd:dateTime ;
+    ns4:presentedAt <http://ceur-ws.org/Vol-338/#event> ;
+    ns6:editor <http://ceur-ws.org/Vol-338/#ElaiHunt>,
         <http://ceur-ws.org/Vol-338/#JosephiBarjis>,
         <http://ceur-ws.org/Vol-338/#MuraliiMohaniNarasipuram>,
         <http://ceur-ws.org/Vol-338/#PeteriRittgen>,

@@ -1,12 +1,12 @@
 @prefix ns1: <http://xmlns.com/foaf/0.1/> .
 @prefix ns2: <http://www.w3.org/2002/07/owl#> .
-@prefix ns3: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns3: <http://purl.org/ontology/bibo/#> .
 @prefix ns4: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns5: <http://purl.org/ontology/bibo/#> .
-@prefix ns6: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns5: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns6: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns7: <http://purl.org/dc/elements/1.1/> .
 @prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns9: <http://purl.org/dc/elements/1.1/> .
+@prefix ns9: <http://purl.org/NET/c4dm/timeline.owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -122,13 +122,13 @@
     ns1:made <http://ceur-ws.org/Vol-856/#paper_4> ;
     ns1:name "Yolanda Gil" .
 
-<http://ceur-ws.org/Vol-856/#event> a ns3:WorkshopEvent ;
-    ns3:hasLocation <http://dbpedia.org/resource/Greece> ;
-    ns3:hasPart <http://ceur-ws.org/Vol-856/#part-ws> ;
-    ns3:isSubEventOf <http://ceur-ws.org/Vol-856/#conf> ;
-    ns7:beginsAtDatetime "2013-12-06T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:endsAtDatetime "2013-12-06T00:00:00+00:00"^^xsd:dateTime ;
-    ns9:license "http://choosealicense.com/licenses/no-license/" ;
+<http://ceur-ws.org/Vol-856/#event> a ns6:WorkshopEvent ;
+    ns6:hasLocation <http://dbpedia.org/resource/Greece> ;
+    ns6:hasPart <http://ceur-ws.org/Vol-856/#part-ws> ;
+    ns6:isSubEventOf <http://ceur-ws.org/Vol-856/#conf> ;
+    ns9:beginsAtDatetime "2012-05-28T00:00:00+00:00"^^xsd:dateTime ;
+    ns9:endsAtDatetime "2012-05-28T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:license "http://choosealicense.com/licenses/no-license/" ;
     rdfs:seeAlso <http://ceur-ws.org/Vol-526/#event>,
         <http://ceur-ws.org/Vol-670/#event> .
 
@@ -144,84 +144,84 @@
         <http://ceur-ws.org/Vol-856/#paper_8> ;
     ns1:name "Edward Curry" .
 
-<http://ceur-ws.org/Vol-856/#SeaniOriain> a ns1:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/SeaniOriain> ;
+<http://ceur-ws.org/Vol-856/#SeaniO%27Riain> a ns1:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/SeaniO%27Riain> ;
     ns1:made <http://ceur-ws.org/Vol-856/#paper_7>,
         <http://ceur-ws.org/Vol-856/#paper_8> ;
-    ns1:name "Sean Oriain" .
+    ns1:name "Sean O'Riain" .
 
-<http://ceur-ws.org/Vol-856/#paper_6> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-856/> ;
-    ns6:title "Capturing Provenance Information with a Workflow Monitoring Extension for the Kieker Framework" ;
-    ns5:section <http://ceur-ws.org/Vol-856/#Session1CapturingProvenance> ;
+<http://ceur-ws.org/Vol-856/#paper_6> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-856/> ;
+    ns5:title "Capturing Provenance Information with a Workflow Monitoring Extension for the Kieker Framework" ;
+    ns3:section <http://ceur-ws.org/Vol-856/#Session1CapturingProvenance> ;
     ns4:author <http://ceur-ws.org/Vol-856/#PeeriC.iBrauer>,
         <http://ceur-ws.org/Vol-856/#WilhelmiHasselbring> .
 
-<http://ceur-ws.org/Vol-856/#Session1CapturingProvenance> a ns3:SessionEvent ;
-    ns3:partOf <http://ceur-ws.org/Vol-856/> ;
-    ns6:title "Session 1: Capturing Provenance" .
+<http://ceur-ws.org/Vol-856/#Session1CapturingProvenance> a ns6:SessionEvent ;
+    ns6:partOf <http://ceur-ws.org/Vol-856/> ;
+    ns5:title "Session 1: Capturing Provenance" .
 
-<http://ceur-ws.org/Vol-856/#Session2ReasoningwithProvenance> a ns3:SessionEvent ;
-    ns3:partOf <http://ceur-ws.org/Vol-856/> ;
-    ns6:title "Session 2: Reasoning with Provenance" .
+<http://ceur-ws.org/Vol-856/#Session2ReasoningwithProvenance> a ns6:SessionEvent ;
+    ns6:partOf <http://ceur-ws.org/Vol-856/> ;
+    ns5:title "Session 2: Reasoning with Provenance" .
 
-<http://ceur-ws.org/Vol-856/#paper_4> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-856/> ;
-    ns6:title "Automatic Metadata Annotation through Reconstructing Provenance" ;
-    ns5:section <http://ceur-ws.org/Vol-856/#Session2ReasoningwithProvenance> ;
+<http://ceur-ws.org/Vol-856/#paper_4> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-856/> ;
+    ns5:title "Automatic Metadata Annotation through Reconstructing Provenance" ;
+    ns3:section <http://ceur-ws.org/Vol-856/#Session2ReasoningwithProvenance> ;
     ns4:author <http://ceur-ws.org/Vol-856/#PauliGroth>,
         <http://ceur-ws.org/Vol-856/#SaraiMagliacane>,
         <http://ceur-ws.org/Vol-856/#YolandaiGil> .
 
-<http://ceur-ws.org/Vol-856/#paper_5> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-856/> ;
-    ns6:title "Towards Semantic Provenance in CRISTAL" ;
-    ns5:section <http://ceur-ws.org/Vol-856/#Session2ReasoningwithProvenance> ;
+<http://ceur-ws.org/Vol-856/#paper_5> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-856/> ;
+    ns5:title "Towards Semantic Provenance in CRISTAL" ;
+    ns3:section <http://ceur-ws.org/Vol-856/#Session2ReasoningwithProvenance> ;
     ns4:author <http://ceur-ws.org/Vol-856/#AndrewiBranson>,
         <http://ceur-ws.org/Vol-856/#JetendriShamdasani>,
         <http://ceur-ws.org/Vol-856/#RichardiMcclatchey> .
 
-<http://ceur-ws.org/Vol-856/#paper_3> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-856/> ;
-    ns6:title "Evolution of Workflow Provenance Information in the Presence of Custom Inference Rules" ;
-    ns5:section <http://ceur-ws.org/Vol-856/#Session1CapturingProvenance> ;
+<http://ceur-ws.org/Vol-856/#paper_3> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-856/> ;
+    ns5:title "Evolution of Workflow Provenance Information in the Presence of Custom Inference Rules" ;
+    ns3:section <http://ceur-ws.org/Vol-856/#Session1CapturingProvenance> ;
     ns4:author <http://ceur-ws.org/Vol-856/#ChristosiStrubulis>,
         <http://ceur-ws.org/Vol-856/#GiorgosiFlouris>,
         <http://ceur-ws.org/Vol-856/#MartiniDoerr>,
         <http://ceur-ws.org/Vol-856/#YannisiTzitzikas> .
 
-<http://ceur-ws.org/Vol-856/#paper_7> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-856/> ;
-    ns6:title "Representing Interoperable Provenance Descriptions for ETL Workflows" ;
-    ns5:section <http://ceur-ws.org/Vol-856/#Session2ReasoningwithProvenance> ;
+<http://ceur-ws.org/Vol-856/#paper_7> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-856/> ;
+    ns5:title "Representing Interoperable Provenance Descriptions for ETL Workflows" ;
+    ns3:section <http://ceur-ws.org/Vol-856/#Session2ReasoningwithProvenance> ;
     ns4:author <http://ceur-ws.org/Vol-856/#AndreiFreitas>,
         <http://ceur-ws.org/Vol-856/#BenediktiK%C3%A4mpgen>,
         <http://ceur-ws.org/Vol-856/#EdwardiCurry>,
         <http://ceur-ws.org/Vol-856/#Jo%C3%A3oiGabrieliOliveira>,
-        <http://ceur-ws.org/Vol-856/#SeaniOriain> .
+        <http://ceur-ws.org/Vol-856/#SeaniO%27Riain> .
 
-<http://ceur-ws.org/Vol-856/#paper_8> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-856/> ;
-    ns6:title "Capturing Interactive Data Transformation Operations using Provenance Workflows" ;
-    ns5:section <http://ceur-ws.org/Vol-856/#Session1CapturingProvenance> ;
+<http://ceur-ws.org/Vol-856/#paper_8> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-856/> ;
+    ns5:title "Capturing Interactive Data Transformation Operations using Provenance Workflows" ;
+    ns3:section <http://ceur-ws.org/Vol-856/#Session1CapturingProvenance> ;
     ns4:author <http://ceur-ws.org/Vol-856/#AndreiFreitas>,
         <http://ceur-ws.org/Vol-856/#EdwardiCurry>,
         <http://ceur-ws.org/Vol-856/#NicholasiGibbins>,
         <http://ceur-ws.org/Vol-856/#NigeliShadbolt>,
-        <http://ceur-ws.org/Vol-856/#SeaniOriain>,
+        <http://ceur-ws.org/Vol-856/#SeaniO%27Riain>,
         <http://ceur-ws.org/Vol-856/#TopeiOmitola> .
 
-<http://ceur-ws.org/Vol-856/> a ns3:Proceedings ;
-    ns3:hasPart <http://ceur-ws.org/Vol-856/#paper_3>,
+<http://ceur-ws.org/Vol-856/> a ns6:Proceedings ;
+    ns6:hasPart <http://ceur-ws.org/Vol-856/#paper_3>,
         <http://ceur-ws.org/Vol-856/#paper_4>,
         <http://ceur-ws.org/Vol-856/#paper_5>,
         <http://ceur-ws.org/Vol-856/#paper_6>,
         <http://ceur-ws.org/Vol-856/#paper_7>,
         <http://ceur-ws.org/Vol-856/#paper_8> ;
-    ns3:hasSession <http://ceur-ws.org/Vol-856/#Session1CapturingProvenance>,
+    ns6:hasSession <http://ceur-ws.org/Vol-856/#Session1CapturingProvenance>,
         <http://ceur-ws.org/Vol-856/#Session2ReasoningwithProvenance> ;
     ns8:issued "2012-05-30T00:00:00+00:00"^^xsd:dateTime ;
-    ns5:presentedAt <http://ceur-ws.org/Vol-856/#event> ;
+    ns3:presentedAt <http://ceur-ws.org/Vol-856/#event> ;
     ns4:editor <http://ceur-ws.org/Vol-856/#Jos%C3%A9-ManueliGomez-Perez>,
         <http://ceur-ws.org/Vol-856/#JuniZhao>,
         <http://ceur-ws.org/Vol-856/#KhalidiBelhjjame>,

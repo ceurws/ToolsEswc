@@ -1,36 +1,713 @@
-@prefix ns1: <http://purl.org/dc/elements/1.1/> .
-@prefix ns2: <http://www.w3.org/2002/07/owl#> .
-@prefix ns3: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns4: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns5: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns6: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns7: <http://purl.org/ontology/bibo/#> .
-@prefix ns8: <http://xmlns.com/foaf/0.1/> .
+@prefix ns1: <http://xmlns.com/foaf/0.1/> .
+@prefix ns2: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns3: <http://www.w3.org/2002/07/owl#> .
+@prefix ns4: <http://purl.org/ontology/bibo/#> .
+@prefix ns5: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns6: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns9: <http://purl.org/dc/elements/1.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1495/> a ns4:Proceedings ;
-    ns6:issued "2015-10-31T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:presentedAt <http://ceur-ws.org/Vol-1495/#event> ;
-    ns5:editor <http://ceur-ws.org/Vol-1495/#PamelaiFaber>,
-        <http://ceur-ws.org/Vol-1495/#ThierryiPoibeau> .
+<http://ceur-ws.org/Vol-1495/#AdrianiVanideriLek> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/AdrianiVanideriLek> ;
+    ns1:made <http://ceur-ws.org/Vol-1495/#paper_19> ;
+    ns1:name "Adrian Van der Lek" .
 
-<http://ceur-ws.org/Vol-1495/#PamelaiFaber> a ns8:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/PamelaiFaber> ;
-    ns8:name "Pamela Faber" .
+<http://ceur-ws.org/Vol-1495/#AlainiPolgu%C3%A8re> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/AlainiPolgu%C3%A8re> ;
+    ns1:made <http://ceur-ws.org/Vol-1495/#paper_11> ;
+    ns1:name "Alain Polguère" .
 
-<http://ceur-ws.org/Vol-1495/#ThierryiPoibeau> a ns8:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/ThierryiPoibeau> ;
-    ns8:name "Thierry Poibeau" .
+<http://ceur-ws.org/Vol-1495/#AmandaiHicks> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/AmandaiHicks> ;
+    ns1:made <http://ceur-ws.org/Vol-1495/#paper_15> ;
+    ns1:name "Amanda Hicks" .
 
-<http://ceur-ws.org/Vol-1495/#event> a ns4:WorkshopEvent ;
-    ns4:hasLocation <http://dbpedia.org/resource/Spain> ;
-    ns4:hasPart <http://ceur-ws.org/Vol-1495/#part-ws> ;
-    ns4:isSubEventOf <http://ceur-ws.org/Vol-1495/#conf> ;
-    ns3:beginsAtDatetime "2015-11-04T00:00:00+00:00"^^xsd:dateTime ;
-    ns3:endsAtDatetime "2015-11-06T00:00:00+00:00"^^xsd:dateTime ;
-    ns1:license "http://creativecommons.org/publicdomain/zero/1.0/" ;
+<http://ceur-ws.org/Vol-1495/#Anne-KathriniSchumann> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/Anne-KathriniSchumann> ;
+    ns1:made <http://ceur-ws.org/Vol-1495/#paper_16> ;
+    ns1:name "Anne-Kathrin Schumann" .
+
+<http://ceur-ws.org/Vol-1495/#AnnieiForet> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/AnnieiForet> ;
+    ns1:made <http://ceur-ws.org/Vol-1495/#paper_14> ;
+    ns1:name "Annie Foret" .
+
+<http://ceur-ws.org/Vol-1495/#BeatriziM%C3%A9ndez-Cend%C3%B3n> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/BeatriziM%C3%A9ndez-Cend%C3%B3n> ;
+    ns1:made <http://ceur-ws.org/Vol-1495/#paper_25> ;
+    ns1:name "Beatriz Méndez-Cendón" .
+
+<http://ceur-ws.org/Vol-1495/#BehrangiQ.iZadeh> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/BehrangiQ.iZadeh> ;
+    ns1:made <http://ceur-ws.org/Vol-1495/#paper_16> ;
+    ns1:name "Behrang Q. Zadeh" .
+
+<http://ceur-ws.org/Vol-1495/#BiljanaiLazi%C4%87> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/BiljanaiLazi%C4%87> ;
+    ns1:made <http://ceur-ws.org/Vol-1495/#paper_13> ;
+    ns1:name "Biljana Lazić" .
+
+<http://ceur-ws.org/Vol-1495/#C%C3%A9sariAntonioiAguilar> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/C%C3%A9sariAntonioiAguilar> ;
+    ns1:made <http://ceur-ws.org/Vol-1495/#paper_21> ;
+    ns1:name "César Antonio Aguilar" .
+
+<http://ceur-ws.org/Vol-1495/#CarolineiBarri%C3%A8re> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/CarolineiBarri%C3%A8re> ;
+    ns1:made <http://ceur-ws.org/Vol-1495/#paper_2> ;
+    ns1:name "Caroline Barrière" .
+
+<http://ceur-ws.org/Vol-1495/#ChristopheiRoche> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/ChristopheiRoche> ;
+    ns1:made <http://ceur-ws.org/Vol-1495/#paper_30> ;
+    ns1:name "Christophe Roche" .
+
+<http://ceur-ws.org/Vol-1495/#CorneliaiWermuth> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/CorneliaiWermuth> ;
+    ns1:made <http://ceur-ws.org/Vol-1495/#paper_17> ;
+    ns1:name "Cornelia Wermuth" .
+
+<http://ceur-ws.org/Vol-1495/#CvetanaiKrstev> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/CvetanaiKrstev> ;
+    ns1:made <http://ceur-ws.org/Vol-1495/#paper_13> ;
+    ns1:name "Cvetana Krstev" .
+
+<http://ceur-ws.org/Vol-1495/#DanieliVila-Suero> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/DanieliVila-Suero> ;
+    ns1:made <http://ceur-ws.org/Vol-1495/#paper_31> ;
+    ns1:name "Daniel Vila-Suero" .
+
+<http://ceur-ws.org/Vol-1495/#ElenaiMontiel-Ponsoda> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/ElenaiMontiel-Ponsoda> ;
+    ns1:made <http://ceur-ws.org/Vol-1495/#paper_31> ;
+    ns1:name "Elena Montiel-Ponsoda" .
+
+<http://ceur-ws.org/Vol-1495/#EveiPaul> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/EveiPaul> ;
+    ns1:made <http://ceur-ws.org/Vol-1495/#paper_12> ;
+    ns1:name "Eve Paul" .
+
+<http://ceur-ws.org/Vol-1495/#FlavieiVial> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/FlavieiVial> ;
+    ns1:made <http://ceur-ws.org/Vol-1495/#paper_8> ;
+    ns1:name "Flavie Vial" .
+
+<http://ceur-ws.org/Vol-1495/#Fran%C3%A7oisiLevy> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/Fran%C3%A7oisiLevy> ;
+    ns1:made <http://ceur-ws.org/Vol-1495/#paper_12> ;
+    ns1:name "François Levy" .
+
+<http://ceur-ws.org/Vol-1495/#FrancescaiIngrosso> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/FrancescaiIngrosso> ;
+    ns1:made <http://ceur-ws.org/Vol-1495/#paper_11> ;
+    ns1:name "Francesca Ingrosso" .
+
+<http://ceur-ws.org/Vol-1495/#GabrieliBernier-Colborne> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/GabrieliBernier-Colborne> ;
+    ns1:made <http://ceur-ws.org/Vol-1495/#paper_4> ;
+    ns1:name "Gabriel Bernier-Colborne" .
+
+<http://ceur-ws.org/Vol-1495/#GloriaiCorpasiPastor> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/GloriaiCorpasiPastor> ;
+    ns1:made <http://ceur-ws.org/Vol-1495/#paper_5> ;
+    ns1:name "Gloria Corpas Pastor" .
+
+<http://ceur-ws.org/Vol-1495/#GuadalupeiAguado-de-Cea> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/GuadalupeiAguado-de-Cea> ;
+    ns1:made <http://ceur-ws.org/Vol-1495/#paper_31> ;
+    ns1:name "Guadalupe Aguado-de-Cea" .
+
+<http://ceur-ws.org/Vol-1495/#GuillaumeiTisserant> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/GuillaumeiTisserant> ;
+    ns1:made <http://ceur-ws.org/Vol-1495/#paper_18> ;
+    ns1:name "Guillaume Tisserant" .
+
+<http://ceur-ws.org/Vol-1495/#HalynaiZorko> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/HalynaiZorko> ;
+    ns1:made <http://ceur-ws.org/Vol-1495/#paper_27> ;
+    ns1:name "Halyna Zorko" .
+
+<http://ceur-ws.org/Vol-1495/#HendrikiJ.iKockaert> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/HendrikiJ.iKockaert> ;
+    ns1:made <http://ceur-ws.org/Vol-1495/#paper_17> ;
+    ns1:name "Hendrik J. Kockaert" .
+
+<http://ceur-ws.org/Vol-1495/#HernaniiCosta> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/HernaniiCosta> ;
+    ns1:made <http://ceur-ws.org/Vol-1495/#paper_5> ;
+    ns1:name "Hernani Costa" .
+
+<http://ceur-ws.org/Vol-1495/#HorstiPosthaus> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/HorstiPosthaus> ;
+    ns1:made <http://ceur-ws.org/Vol-1495/#paper_8> ;
+    ns1:name "Horst Posthaus" .
+
+<http://ceur-ws.org/Vol-1495/#InaiR%C3%B6siger> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/InaiR%C3%B6siger> ;
+    ns1:made <http://ceur-ws.org/Vol-1495/#paper_7> ;
+    ns1:name "Ina Rösiger" .
+
+<http://ceur-ws.org/Vol-1495/#IvaniObradovi%C4%87> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/IvaniObradovi%C4%87> ;
+    ns1:made <http://ceur-ws.org/Vol-1495/#paper_13> ;
+    ns1:name "Ivan Obradović" .
+
+<http://ceur-ws.org/Vol-1495/#JeaniQuirion> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/JeaniQuirion> ;
+    ns1:made <http://ceur-ws.org/Vol-1495/#paper_2> ;
+    ns1:name "Jean Quirion" .
+
+<http://ceur-ws.org/Vol-1495/#JohannesiSch%C3%A4fer> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/JohannesiSch%C3%A4fer> ;
+    ns1:made <http://ceur-ws.org/Vol-1495/#paper_7> ;
+    ns1:name "Johannes Schäfer" .
+
+<http://ceur-ws.org/Vol-1495/#JohniBerezowski> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/JohniBerezowski> ;
+    ns1:made <http://ceur-ws.org/Vol-1495/#paper_8> ;
+    ns1:name "John Berezowski" .
+
+<http://ceur-ws.org/Vol-1495/#JorgeiGracia> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/JorgeiGracia> ;
+    ns1:made <http://ceur-ws.org/Vol-1495/#paper_31> ;
+    ns1:name "Jorge Gracia" .
+
+<http://ceur-ws.org/Vol-1495/#Jos%C3%A9iManueliUre%C3%B1a> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/Jos%C3%A9iManueliUre%C3%B1a> ;
+    ns1:made <http://ceur-ws.org/Vol-1495/#paper_24> ;
+    ns1:name "José Manuel Ureña" .
+
+<http://ceur-ws.org/Vol-1495/#JuliaiBosque-Gil> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/JuliaiBosque-Gil> ;
+    ns1:made <http://ceur-ws.org/Vol-1495/#paper_31> ;
+    ns1:name "Julia Bosque-Gil" .
+
+<http://ceur-ws.org/Vol-1495/#KorenchukiYuliya> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/KorenchukiYuliya> ;
+    ns1:made <http://ceur-ws.org/Vol-1495/#paper_26> ;
+    ns1:name "Korenchuk Yuliya" .
+
+<http://ceur-ws.org/Vol-1495/#LeonoriP%C3%A9rez-Ruiz> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/LeonoriP%C3%A9rez-Ruiz> ;
+    ns1:made <http://ceur-ws.org/Vol-1495/#paper_25> ;
+    ns1:name "Leonor Pérez-Ruiz" .
+
+<http://ceur-ws.org/Vol-1495/#LuceiLefeuvre> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/LuceiLefeuvre> ;
+    ns1:made <http://ceur-ws.org/Vol-1495/#paper_10> ;
+    ns1:name "Luce Lefeuvre" .
+
+<http://ceur-ws.org/Vol-1495/#Marie-ClaudeiL%E2%80%99Homme> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/Marie-ClaudeiL%E2%80%99Homme> ;
+    ns1:made <http://ceur-ws.org/Vol-1495/#paper_4> ;
+    ns1:name "Marie-Claude L’Homme" .
+
+<http://ceur-ws.org/Vol-1495/#MathieuiRoche> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/MathieuiRoche> ;
+    ns1:made <http://ceur-ws.org/Vol-1495/#paper_18> ;
+    ns1:name "Mathieu Roche" .
+
+<http://ceur-ws.org/Vol-1495/#MaximeiWarnier> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/MaximeiWarnier> ;
+    ns1:made <http://ceur-ws.org/Vol-1495/#paper_6> ;
+    ns1:name "Maxime Warnier" .
+
+<http://ceur-ws.org/Vol-1495/#MichaeliDorna> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/MichaeliDorna> ;
+    ns1:made <http://ceur-ws.org/Vol-1495/#paper_7> ;
+    ns1:name "Michael Dorna" .
+
+<http://ceur-ws.org/Vol-1495/#NataliiaiShyshkina> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/NataliiaiShyshkina> ;
+    ns1:made <http://ceur-ws.org/Vol-1495/#paper_27> ;
+    ns1:name "Nataliia Shyshkina" .
+
+<http://ceur-ws.org/Vol-1495/#OlgaiLidiaiAcostaiL%C3%B3pez> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/OlgaiLidiaiAcostaiL%C3%B3pez> ;
+    ns1:made <http://ceur-ws.org/Vol-1495/#paper_21> ;
+    ns1:name "Olga Lidia Acosta López" .
+
+<http://ceur-ws.org/Vol-1495/#PamelaiFaber> a ns1:Person ;
+    ns2:affiliation "" ;
+    ns3:sameAs <http://ceur-ws.org/persons/PamelaiFaber> ;
+    ns1:name "Pamela Faber" .
+
+<http://ceur-ws.org/Vol-1495/#PauliBuitelaar> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/PauliBuitelaar> ;
+    ns1:made <http://ceur-ws.org/Vol-1495/#invited_paper_1> ;
+    ns1:name "Paul Buitelaar" .
+
+<http://ceur-ws.org/Vol-1495/#PauliSambre> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/PauliSambre> ;
+    ns1:made <http://ceur-ws.org/Vol-1495/#paper_17> ;
+    ns1:name "Paul Sambre" .
+
+<http://ceur-ws.org/Vol-1495/#PierreiAndreiMenard> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/PierreiAndreiMenard> ;
+    ns1:made <http://ceur-ws.org/Vol-1495/#paper_2> ;
+    ns1:name "Pierre Andre Menard" .
+
+<http://ceur-ws.org/Vol-1495/#RankaiStankovi%C4%87> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/RankaiStankovi%C4%87> ;
+    ns1:made <http://ceur-ws.org/Vol-1495/#paper_13> ;
+    ns1:name "Ranka Stanković" .
+
+<http://ceur-ws.org/Vol-1495/#RicardoiMairal> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/RicardoiMairal> ;
+    ns1:made <http://ceur-ws.org/Vol-1495/#invited_paper_2> ;
+    ns1:name "Ricardo Mairal" .
+
+<http://ceur-ws.org/Vol-1495/#RuslaniMitkov> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/RuslaniMitkov> ;
+    ns1:made <http://ceur-ws.org/Vol-1495/#paper_5> ;
+    ns1:name "Ruslan Mitkov" .
+
+<http://ceur-ws.org/Vol-1495/#RuteiCosta> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/RuteiCosta> ;
+    ns1:made <http://ceur-ws.org/Vol-1495/#paper_30> ;
+    ns1:name "Rute Costa" .
+
+<http://ceur-ws.org/Vol-1495/#SaraiCarvalho> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/SaraiCarvalho> ;
+    ns1:made <http://ceur-ws.org/Vol-1495/#paper_30> ;
+    ns1:name "Sara Carvalho" .
+
+<http://ceur-ws.org/Vol-1495/#SeljaiSepp%C3%A4l%C3%A4> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/SeljaiSepp%C3%A4l%C3%A4> ;
+    ns1:made <http://ceur-ws.org/Vol-1495/#paper_15> ;
+    ns1:name "Selja Seppälä" .
+
+<http://ceur-ws.org/Vol-1495/#SusanneiK%C3%BCker> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/SusanneiK%C3%BCker> ;
+    ns1:made <http://ceur-ws.org/Vol-1495/#paper_8> ;
+    ns1:name "Susanne Küker" .
+
+<http://ceur-ws.org/Vol-1495/#SylvieiSzulman> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/SylvieiSzulman> ;
+    ns1:made <http://ceur-ws.org/Vol-1495/#paper_12> ;
+    ns1:name "Sylvie Szulman" .
+
+<http://ceur-ws.org/Vol-1495/#ThierryiPoibeau> a ns1:Person ;
+    ns2:affiliation "" ;
+    ns3:sameAs <http://ceur-ws.org/persons/ThierryiPoibeau> ;
+    ns1:name "Thierry Poibeau" .
+
+<http://ceur-ws.org/Vol-1495/#TiliaiRenateiEllendorff> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/TiliaiRenateiEllendorff> ;
+    ns1:made <http://ceur-ws.org/Vol-1495/#paper_19> ;
+    ns1:name "Tilia Renate Ellendorff" .
+
+<http://ceur-ws.org/Vol-1495/#ViolaineiPrince> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/ViolaineiPrince> ;
+    ns1:made <http://ceur-ws.org/Vol-1495/#paper_18> ;
+    ns1:name "Violaine Prince" .
+
+<http://ceur-ws.org/Vol-1495/#WandjiiTchamiiOrnella> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/WandjiiTchamiiOrnella> ;
+    ns1:made <http://ceur-ws.org/Vol-1495/#paper_20> ;
+    ns1:name "Wandji Tchami Ornella" .
+
+<http://ceur-ws.org/Vol-1495/#event> a ns6:WorkshopEvent ;
+    ns6:hasLocation <http://dbpedia.org/resource/Spain> ;
+    ns6:hasPart <http://ceur-ws.org/Vol-1495/#part-TIA> ;
+    ns6:isSubEventOf <http://ceur-ws.org/Vol-1495/#conf> ;
+    ns7:beginsAtDatetime "2015-11-04T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:endsAtDatetime "2015-11-06T00:00:00+00:00"^^xsd:dateTime ;
+    ns9:license "http://creativecommons.org/publicdomain/zero/1.0/" ;
     rdfs:seeAlso <http://ceur-ws.org/Vol-578/#event> .
+
+<http://ceur-ws.org/Vol-1495/#AnneiCondamines> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/AnneiCondamines> ;
+    ns1:made <http://ceur-ws.org/Vol-1495/#paper_10>,
+        <http://ceur-ws.org/Vol-1495/#paper_6> ;
+    ns1:name "Anne Condamines" .
+
+<http://ceur-ws.org/Vol-1495/#FabioiRinaldi> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/FabioiRinaldi> ;
+    ns1:made <http://ceur-ws.org/Vol-1495/#paper_19>,
+        <http://ceur-ws.org/Vol-1495/#paper_8> ;
+    ns1:name "Fabio Rinaldi" .
+
+<http://ceur-ws.org/Vol-1495/#LenziFurrer> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/LenziFurrer> ;
+    ns1:made <http://ceur-ws.org/Vol-1495/#paper_19>,
+        <http://ceur-ws.org/Vol-1495/#paper_8> ;
+    ns1:name "Lenz Furrer" .
+
+<http://ceur-ws.org/Vol-1495/#UlrichiHeid> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/UlrichiHeid> ;
+    ns1:made <http://ceur-ws.org/Vol-1495/#paper_20>,
+        <http://ceur-ws.org/Vol-1495/#paper_7> ;
+    ns1:name "Ulrich Heid" .
+
+<http://ceur-ws.org/Vol-1495/#invited_paper_1> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1495/> ;
+    ns5:title "Knowledge Extraction with Saffron: A Framework and Research Program" ;
+    ns4:endPage 3 ;
+    ns4:numPages 1 ;
+    ns4:section <http://ceur-ws.org/Vol-1495/#InvitedPapers> ;
+    ns4:startPage 3 ;
+    ns2:author <http://ceur-ws.org/Vol-1495/#PauliBuitelaar> .
+
+<http://ceur-ws.org/Vol-1495/#invited_paper_2> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1495/> ;
+    ns5:title "Multilingualism and Conceptual Modelling" ;
+    ns4:endPage 5 ;
+    ns4:numPages 1 ;
+    ns4:section <http://ceur-ws.org/Vol-1495/#InvitedPapers> ;
+    ns4:startPage 5 ;
+    ns2:author <http://ceur-ws.org/Vol-1495/#RicardoiMairal> .
+
+<http://ceur-ws.org/Vol-1495/#paper_14> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1495/> ;
+    ns5:title "A Logical Information System Proposal for Browsing Terminological Resources" ;
+    ns4:endPage 59 ;
+    ns4:numPages 9 ;
+    ns4:section <http://ceur-ws.org/Vol-1495/#LongPapers> ;
+    ns4:startPage 51 ;
+    ns2:author <http://ceur-ws.org/Vol-1495/#AnnieiForet> .
+
+<http://ceur-ws.org/Vol-1495/#paper_24> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1495/> ;
+    ns5:title "Novel Metaphor and Scientific Discourse Come to Terms: A Case Study of Metaphorical Prototerms in Biology" ;
+    ns4:endPage 157 ;
+    ns4:numPages 9 ;
+    ns4:section <http://ceur-ws.org/Vol-1495/#LongPapers> ;
+    ns4:startPage 149 ;
+    ns2:author <http://ceur-ws.org/Vol-1495/#Jos%C3%A9iManueliUre%C3%B1a> .
+
+<http://ceur-ws.org/Vol-1495/#paper_26> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1495/> ;
+    ns5:title "Dealing with Large Corpora for Ontology Population" ;
+    ns4:endPage 204 ;
+    ns4:numPages 4 ;
+    ns4:section <http://ceur-ws.org/Vol-1495/#PostersandDemonstrations> ;
+    ns4:startPage 201 ;
+    ns2:author <http://ceur-ws.org/Vol-1495/#KorenchukiYuliya> .
+
+<http://ceur-ws.org/Vol-1495/#InvitedPapers> a ns6:SessionEvent ;
+    ns6:partOf <http://ceur-ws.org/Vol-1495/> ;
+    ns5:title "Invited Papers" .
+
+<http://ceur-ws.org/Vol-1495/#ThierryiHamon> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/ThierryiHamon> ;
+    ns1:made <http://ceur-ws.org/Vol-1495/#paper_27>,
+        <http://ceur-ws.org/Vol-1495/#paper_28>,
+        <http://ceur-ws.org/Vol-1495/#paper_9> ;
+    ns1:name "Thierry Hamon" .
+
+<http://ceur-ws.org/Vol-1495/#paper_10> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1495/> ;
+    ns5:title "Constitution d’une Base Bilingue de Marqueurs de Relations Conceptuelles pour l’Élaboration de Ressources Termino-Ontologiques" ;
+    ns4:endPage 178 ;
+    ns4:numPages 6 ;
+    ns4:section <http://ceur-ws.org/Vol-1495/#Shortpapers> ;
+    ns4:startPage 173 ;
+    ns2:author <http://ceur-ws.org/Vol-1495/#AnneiCondamines>,
+        <http://ceur-ws.org/Vol-1495/#LuceiLefeuvre> .
+
+<http://ceur-ws.org/Vol-1495/#paper_11> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1495/> ;
+    ns5:title "How Terms Meet in Small-World Lexical Networks: The Case of Chemistry Terminology" ;
+    ns4:endPage 171 ;
+    ns4:numPages 5 ;
+    ns4:section <http://ceur-ws.org/Vol-1495/#Shortpapers> ;
+    ns4:startPage 167 ;
+    ns2:author <http://ceur-ws.org/Vol-1495/#AlainiPolgu%C3%A8re>,
+        <http://ceur-ws.org/Vol-1495/#FrancescaiIngrosso> .
+
+<http://ceur-ws.org/Vol-1495/#paper_15> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1495/> ;
+    ns5:title "Enhancing Terminological Knowledge with Upper Level Ontologies" ;
+    ns4:endPage 182 ;
+    ns4:numPages 4 ;
+    ns4:section <http://ceur-ws.org/Vol-1495/#Shortpapers> ;
+    ns4:startPage 179 ;
+    ns2:author <http://ceur-ws.org/Vol-1495/#AmandaiHicks>,
+        <http://ceur-ws.org/Vol-1495/#SeljaiSepp%C3%A4l%C3%A4> .
+
+<http://ceur-ws.org/Vol-1495/#paper_16> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1495/> ;
+    ns5:title "Tracing Research Paradigm Change Using Terminological Methods. A Case Study on ”Machine Translation” in the ACL Anthology Reference Corpus" ;
+    ns4:endPage 122 ;
+    ns4:numPages 8 ;
+    ns4:section <http://ceur-ws.org/Vol-1495/#LongPapers> ;
+    ns4:startPage 115 ;
+    ns2:author <http://ceur-ws.org/Vol-1495/#Anne-KathriniSchumann>,
+        <http://ceur-ws.org/Vol-1495/#BehrangiQ.iZadeh> .
+
+<http://ceur-ws.org/Vol-1495/#paper_21> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1495/> ;
+    ns5:title "Extraction of Definitional Contexts from Restricted Domains by Measuring Synthetic Judgements and Word Relevance" ;
+    ns4:endPage 165 ;
+    ns4:numPages 5 ;
+    ns4:section <http://ceur-ws.org/Vol-1495/#Shortpapers> ;
+    ns4:startPage 161 ;
+    ns2:author <http://ceur-ws.org/Vol-1495/#C%C3%A9sariAntonioiAguilar>,
+        <http://ceur-ws.org/Vol-1495/#OlgaiLidiaiAcostaiL%C3%B3pez> .
+
+<http://ceur-ws.org/Vol-1495/#paper_25> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1495/> ;
+    ns5:title "Compilation of a Multilingual (Spanish / English / French / Portuguese) Glossary of Rural Tourism Terms of Castile and Leon" ;
+    ns4:endPage 200 ;
+    ns4:numPages 4 ;
+    ns4:section <http://ceur-ws.org/Vol-1495/#PostersandDemonstrations> ;
+    ns4:startPage 197 ;
+    ns2:author <http://ceur-ws.org/Vol-1495/#BeatriziM%C3%A9ndez-Cend%C3%B3n>,
+        <http://ceur-ws.org/Vol-1495/#LeonoriP%C3%A9rez-Ruiz> .
+
+<http://ceur-ws.org/Vol-1495/#paper_28> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1495/> ;
+    ns5:title "Descriptors for the Detection of the Chemical Risk" ;
+    ns4:endPage 192 ;
+    ns4:numPages 2 ;
+    ns4:section <http://ceur-ws.org/Vol-1495/#PostersandDemonstrations> ;
+    ns4:startPage 191 ;
+    ns2:author <http://ceur-ws.org/Vol-1495/#NataliaiGrabar>,
+        <http://ceur-ws.org/Vol-1495/#ThierryiHamon> .
+
+<http://ceur-ws.org/Vol-1495/#paper_4> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1495/> ;
+    ns5:title "Using a Distributional Neighbourhood Graph to Enrich Semantic Frames in the Field of the Environment" ;
+    ns4:endPage 16 ;
+    ns4:numPages 8 ;
+    ns4:section <http://ceur-ws.org/Vol-1495/#LongPapers> ;
+    ns4:startPage 9 ;
+    ns2:author <http://ceur-ws.org/Vol-1495/#GabrieliBernier-Colborne>,
+        <http://ceur-ws.org/Vol-1495/#Marie-ClaudeiL%E2%80%99Homme> .
+
+<http://ceur-ws.org/Vol-1495/#paper_6> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1495/> ;
+    ns5:title "A Methodology for Identifying Terms and Patterns Specific to Requirements as a Textual Genre Using Automated Tools" ;
+    ns4:endPage 187 ;
+    ns4:numPages 5 ;
+    ns4:section <http://ceur-ws.org/Vol-1495/#Shortpapers> ;
+    ns4:startPage 183 ;
+    ns2:author <http://ceur-ws.org/Vol-1495/#AnneiCondamines>,
+        <http://ceur-ws.org/Vol-1495/#MaximeiWarnier> .
+
+<http://ceur-ws.org/Vol-1495/#paper_9> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1495/> ;
+    ns5:title "Acquisition of Medical Terminology for Ukrainian from Parallel Corpora and Wikipedia" ;
+    ns4:endPage 79 ;
+    ns4:numPages 9 ;
+    ns4:section <http://ceur-ws.org/Vol-1495/#LongPapers> ;
+    ns4:startPage 71 ;
+    ns2:author <http://ceur-ws.org/Vol-1495/#NataliaiGrabar>,
+        <http://ceur-ws.org/Vol-1495/#ThierryiHamon> .
+
+<http://ceur-ws.org/Vol-1495/#NataliaiGrabar> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/NataliaiGrabar> ;
+    ns1:made <http://ceur-ws.org/Vol-1495/#paper_20>,
+        <http://ceur-ws.org/Vol-1495/#paper_27>,
+        <http://ceur-ws.org/Vol-1495/#paper_28>,
+        <http://ceur-ws.org/Vol-1495/#paper_9> ;
+    ns1:name "Natalia Grabar" .
+
+<http://ceur-ws.org/Vol-1495/#paper_12> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1495/> ;
+    ns5:title "OMTAT Annotation Tool: Semantical Enrichment for Legal Document Search" ;
+    ns4:endPage 140 ;
+    ns4:numPages 8 ;
+    ns4:section <http://ceur-ws.org/Vol-1495/#LongPapers> ;
+    ns4:startPage 133 ;
+    ns2:author <http://ceur-ws.org/Vol-1495/#EveiPaul>,
+        <http://ceur-ws.org/Vol-1495/#Fran%C3%A7oisiLevy>,
+        <http://ceur-ws.org/Vol-1495/#SylvieiSzulman> .
+
+<http://ceur-ws.org/Vol-1495/#paper_17> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1495/> ;
+    ns5:title "The Time Factor as an Associative Concept Relation in Modelling Post-Liver Transplant Management Complications" ;
+    ns4:endPage 114 ;
+    ns4:numPages 8 ;
+    ns4:section <http://ceur-ws.org/Vol-1495/#LongPapers> ;
+    ns4:startPage 107 ;
+    ns2:author <http://ceur-ws.org/Vol-1495/#CorneliaiWermuth>,
+        <http://ceur-ws.org/Vol-1495/#HendrikiJ.iKockaert>,
+        <http://ceur-ws.org/Vol-1495/#PauliSambre> .
+
+<http://ceur-ws.org/Vol-1495/#paper_18> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1495/> ;
+    ns5:title "Génération Automatique de HashTags" ;
+    ns4:endPage 148 ;
+    ns4:numPages 8 ;
+    ns4:section <http://ceur-ws.org/Vol-1495/#LongPapers> ;
+    ns4:startPage 141 ;
+    ns2:author <http://ceur-ws.org/Vol-1495/#GuillaumeiTisserant>,
+        <http://ceur-ws.org/Vol-1495/#MathieuiRoche>,
+        <http://ceur-ws.org/Vol-1495/#ViolaineiPrince> .
+
+<http://ceur-ws.org/Vol-1495/#paper_2> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1495/> ;
+    ns5:title "Helping Term Sense Disambiguation with Active Learning" ;
+    ns4:endPage 97 ;
+    ns4:numPages 9 ;
+    ns4:section <http://ceur-ws.org/Vol-1495/#LongPapers> ;
+    ns4:startPage 89 ;
+    ns2:author <http://ceur-ws.org/Vol-1495/#CarolineiBarri%C3%A8re>,
+        <http://ceur-ws.org/Vol-1495/#JeaniQuirion>,
+        <http://ceur-ws.org/Vol-1495/#PierreiAndreiMenard> .
+
+<http://ceur-ws.org/Vol-1495/#paper_20> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1495/> ;
+    ns5:title "Syntagmatic Behaviors of Verbs in Medical Texts: Expert Communication vs. Forums of Patients" ;
+    ns4:endPage 106 ;
+    ns4:numPages 8 ;
+    ns4:section <http://ceur-ws.org/Vol-1495/#LongPapers> ;
+    ns4:startPage 99 ;
+    ns2:author <http://ceur-ws.org/Vol-1495/#NataliaiGrabar>,
+        <http://ceur-ws.org/Vol-1495/#UlrichiHeid>,
+        <http://ceur-ws.org/Vol-1495/#WandjiiTchamiiOrnella> .
+
+<http://ceur-ws.org/Vol-1495/#paper_30> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1495/> ;
+    ns5:title "Ontologies for Terminological Purposes: the EndoTerm Project" ;
+    ns4:endPage 27 ;
+    ns4:numPages 11 ;
+    ns4:section <http://ceur-ws.org/Vol-1495/#LongPapers> ;
+    ns4:startPage 17 ;
+    ns2:author <http://ceur-ws.org/Vol-1495/#ChristopheiRoche>,
+        <http://ceur-ws.org/Vol-1495/#RuteiCosta>,
+        <http://ceur-ws.org/Vol-1495/#SaraiCarvalho> .
+
+<http://ceur-ws.org/Vol-1495/#paper_5> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1495/> ;
+    ns5:title "Measuring the Relatedness between Documents in Comparable Corpora" ;
+    ns4:endPage 37 ;
+    ns4:numPages 9 ;
+    ns4:section <http://ceur-ws.org/Vol-1495/#LongPapers> ;
+    ns4:startPage 29 ;
+    ns2:author <http://ceur-ws.org/Vol-1495/#GloriaiCorpasiPastor>,
+        <http://ceur-ws.org/Vol-1495/#HernaniiCosta>,
+        <http://ceur-ws.org/Vol-1495/#RuslaniMitkov> .
+
+<http://ceur-ws.org/Vol-1495/#paper_13> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1495/> ;
+    ns5:title "Terminology Acquisition and Description Using Lexical Resources and Local Grammars" ;
+    ns4:endPage 89 ;
+    ns4:numPages 9 ;
+    ns4:section <http://ceur-ws.org/Vol-1495/#LongPapers> ;
+    ns4:startPage 81 ;
+    ns2:author <http://ceur-ws.org/Vol-1495/#BiljanaiLazi%C4%87>,
+        <http://ceur-ws.org/Vol-1495/#CvetanaiKrstev>,
+        <http://ceur-ws.org/Vol-1495/#IvaniObradovi%C4%87>,
+        <http://ceur-ws.org/Vol-1495/#RankaiStankovi%C4%87> .
+
+<http://ceur-ws.org/Vol-1495/#paper_19> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1495/> ;
+    ns5:title "A Combined Resource of Biomedical Terminology and its Statistics" ;
+    ns4:endPage 49 ;
+    ns4:numPages 11 ;
+    ns4:section <http://ceur-ws.org/Vol-1495/#LongPapers> ;
+    ns4:startPage 39 ;
+    ns2:author <http://ceur-ws.org/Vol-1495/#AdrianiVanideriLek>,
+        <http://ceur-ws.org/Vol-1495/#FabioiRinaldi>,
+        <http://ceur-ws.org/Vol-1495/#LenziFurrer>,
+        <http://ceur-ws.org/Vol-1495/#TiliaiRenateiEllendorff> .
+
+<http://ceur-ws.org/Vol-1495/#paper_27> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1495/> ;
+    ns5:title "Terminological Research in Ukraine" ;
+    ns4:endPage 195 ;
+    ns4:numPages 3 ;
+    ns4:section <http://ceur-ws.org/Vol-1495/#PostersandDemonstrations> ;
+    ns4:startPage 193 ;
+    ns2:author <http://ceur-ws.org/Vol-1495/#HalynaiZorko>,
+        <http://ceur-ws.org/Vol-1495/#NataliaiGrabar>,
+        <http://ceur-ws.org/Vol-1495/#NataliiaiShyshkina>,
+        <http://ceur-ws.org/Vol-1495/#ThierryiHamon> .
+
+<http://ceur-ws.org/Vol-1495/#paper_7> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1495/> ;
+    ns5:title "Evaluating Noise Reduction Strategies for Terminology Extraction" ;
+    ns4:endPage 131 ;
+    ns4:numPages 9 ;
+    ns4:section <http://ceur-ws.org/Vol-1495/#LongPapers> ;
+    ns4:startPage 123 ;
+    ns2:author <http://ceur-ws.org/Vol-1495/#InaiR%C3%B6siger>,
+        <http://ceur-ws.org/Vol-1495/#JohannesiSch%C3%A4fer>,
+        <http://ceur-ws.org/Vol-1495/#MichaeliDorna>,
+        <http://ceur-ws.org/Vol-1495/#UlrichiHeid> .
+
+<http://ceur-ws.org/Vol-1495/#PostersandDemonstrations> a ns6:SessionEvent ;
+    ns6:partOf <http://ceur-ws.org/Vol-1495/> ;
+    ns5:title "Posters and Demonstrations" .
+
+<http://ceur-ws.org/Vol-1495/#Shortpapers> a ns6:SessionEvent ;
+    ns6:partOf <http://ceur-ws.org/Vol-1495/> ;
+    ns5:title "Short papers" .
+
+<http://ceur-ws.org/Vol-1495/#paper_31> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1495/> ;
+    ns5:title "Towards the Integration of Multilingual Terminologies: an Example of a Linked Data Prototype" ;
+    ns4:endPage 206 ;
+    ns4:numPages 2 ;
+    ns4:section <http://ceur-ws.org/Vol-1495/#PostersandDemonstrations> ;
+    ns4:startPage 205 ;
+    ns2:author <http://ceur-ws.org/Vol-1495/#DanieliVila-Suero>,
+        <http://ceur-ws.org/Vol-1495/#ElenaiMontiel-Ponsoda>,
+        <http://ceur-ws.org/Vol-1495/#GuadalupeiAguado-de-Cea>,
+        <http://ceur-ws.org/Vol-1495/#JorgeiGracia>,
+        <http://ceur-ws.org/Vol-1495/#JuliaiBosque-Gil> .
+
+<http://ceur-ws.org/Vol-1495/#paper_8> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1495/> ;
+    ns5:title "Constructing a Syndromic Terminology Resource for Veterinary Text Mining" ;
+    ns4:endPage 70 ;
+    ns4:numPages 10 ;
+    ns4:section <http://ceur-ws.org/Vol-1495/#LongPapers> ;
+    ns4:startPage 61 ;
+    ns2:author <http://ceur-ws.org/Vol-1495/#FabioiRinaldi>,
+        <http://ceur-ws.org/Vol-1495/#FlavieiVial>,
+        <http://ceur-ws.org/Vol-1495/#HorstiPosthaus>,
+        <http://ceur-ws.org/Vol-1495/#JohniBerezowski>,
+        <http://ceur-ws.org/Vol-1495/#LenziFurrer>,
+        <http://ceur-ws.org/Vol-1495/#SusanneiK%C3%BCker> .
+
+<http://ceur-ws.org/Vol-1495/#LongPapers> a ns6:SessionEvent ;
+    ns6:partOf <http://ceur-ws.org/Vol-1495/> ;
+    ns5:title "Long Papers" .
+
+<http://ceur-ws.org/Vol-1495/> a ns6:Proceedings ;
+    ns6:hasPart <http://ceur-ws.org/Vol-1495/#invited_paper_1>,
+        <http://ceur-ws.org/Vol-1495/#invited_paper_2>,
+        <http://ceur-ws.org/Vol-1495/#paper_10>,
+        <http://ceur-ws.org/Vol-1495/#paper_11>,
+        <http://ceur-ws.org/Vol-1495/#paper_12>,
+        <http://ceur-ws.org/Vol-1495/#paper_13>,
+        <http://ceur-ws.org/Vol-1495/#paper_14>,
+        <http://ceur-ws.org/Vol-1495/#paper_15>,
+        <http://ceur-ws.org/Vol-1495/#paper_16>,
+        <http://ceur-ws.org/Vol-1495/#paper_17>,
+        <http://ceur-ws.org/Vol-1495/#paper_18>,
+        <http://ceur-ws.org/Vol-1495/#paper_19>,
+        <http://ceur-ws.org/Vol-1495/#paper_2>,
+        <http://ceur-ws.org/Vol-1495/#paper_20>,
+        <http://ceur-ws.org/Vol-1495/#paper_21>,
+        <http://ceur-ws.org/Vol-1495/#paper_24>,
+        <http://ceur-ws.org/Vol-1495/#paper_25>,
+        <http://ceur-ws.org/Vol-1495/#paper_26>,
+        <http://ceur-ws.org/Vol-1495/#paper_27>,
+        <http://ceur-ws.org/Vol-1495/#paper_28>,
+        <http://ceur-ws.org/Vol-1495/#paper_30>,
+        <http://ceur-ws.org/Vol-1495/#paper_31>,
+        <http://ceur-ws.org/Vol-1495/#paper_4>,
+        <http://ceur-ws.org/Vol-1495/#paper_5>,
+        <http://ceur-ws.org/Vol-1495/#paper_6>,
+        <http://ceur-ws.org/Vol-1495/#paper_7>,
+        <http://ceur-ws.org/Vol-1495/#paper_8>,
+        <http://ceur-ws.org/Vol-1495/#paper_9> ;
+    ns6:hasSession <http://ceur-ws.org/Vol-1495/#InvitedPapers>,
+        <http://ceur-ws.org/Vol-1495/#LongPapers>,
+        <http://ceur-ws.org/Vol-1495/#PostersandDemonstrations>,
+        <http://ceur-ws.org/Vol-1495/#Shortpapers> ;
+    ns8:issued "2015-10-31T00:00:00+00:00"^^xsd:dateTime ;
+    ns4:presentedAt <http://ceur-ws.org/Vol-1495/#event> ;
+    ns2:editor <http://ceur-ws.org/Vol-1495/#PamelaiFaber>,
+        <http://ceur-ws.org/Vol-1495/#ThierryiPoibeau> .
 

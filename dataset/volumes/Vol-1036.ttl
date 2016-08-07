@@ -1,41 +1,735 @@
-@prefix ns1: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns2: <http://www.w3.org/2002/07/owl#> .
-@prefix ns3: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns4: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns5: <http://xmlns.com/foaf/0.1/> .
-@prefix ns6: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns7: <http://purl.org/ontology/bibo/#> .
-@prefix ns8: <http://purl.org/dc/elements/1.1/> .
+@prefix ns1: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns2: <http://purl.org/ontology/bibo/#> .
+@prefix ns3: <http://xmlns.com/foaf/0.1/> .
+@prefix ns4: <http://www.w3.org/2002/07/owl#> .
+@prefix ns5: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns6: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns9: <http://purl.org/dc/elements/1.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1036/> a ns6:Proceedings ;
-    ns3:issued "2013-09-13T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:presentedAt <http://ceur-ws.org/Vol-1036/#event> ;
-    ns4:editor <http://ceur-ws.org/Vol-1036/#ChristosiK.iGeorgiadis>,
+<http://ceur-ws.org/Vol-1036/#A.HalimiZaim> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/A.HalimiZaim> ;
+    ns3:made <http://ceur-ws.org/Vol-1036/#p47-Kirci> ;
+    ns3:name "A.Halim Zaim" .
+
+<http://ceur-ws.org/Vol-1036/#AdrianiBesimi> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/AdrianiBesimi> ;
+    ns3:made <http://ceur-ws.org/Vol-1036/#p158-Besimi> ;
+    ns3:name "Adrian Besimi" .
+
+<http://ceur-ws.org/Vol-1036/#AleksandariKareski> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/AleksandariKareski> ;
+    ns3:made <http://ceur-ws.org/Vol-1036/#p162-Kareski> ;
+    ns3:name "Aleksandar Kareski" .
+
+<http://ceur-ws.org/Vol-1036/#AleksandariMilenkovic> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/AleksandariMilenkovic> ;
+    ns3:made <http://ceur-ws.org/Vol-1036/#p86-Rajkovic> ;
+    ns3:name "Aleksandar Milenkovic" .
+
+<http://ceur-ws.org/Vol-1036/#AleksanderiXhuvani> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/AleksanderiXhuvani> ;
+    ns3:made <http://ceur-ws.org/Vol-1036/#p14-Trandafili> ;
+    ns3:name "Aleksander Xhuvani" .
+
+<http://ceur-ws.org/Vol-1036/#AlexanderiChatzigeorgiou> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/AlexanderiChatzigeorgiou> ;
+    ns3:made <http://ceur-ws.org/Vol-1036/#p121-Ligu> ;
+    ns3:name "Alexander Chatzigeorgiou" .
+
+<http://ceur-ws.org/Vol-1036/#AmaliaiMiliou> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/AmaliaiMiliou> ;
+    ns3:made <http://ceur-ws.org/Vol-1036/#p25-Kichidis> ;
+    ns3:name "Amalia Miliou" .
+
+<http://ceur-ws.org/Vol-1036/#AmeliaiBadica> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/AmeliaiBadica> ;
+    ns3:made <http://ceur-ws.org/Vol-1036/#p78-Badica> ;
+    ns3:name "Amelia Badica" .
+
+<http://ceur-ws.org/Vol-1036/#AnastasiosiEconomides> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/AnastasiosiEconomides> ;
+    ns3:made <http://ceur-ws.org/Vol-1036/#p107-Nikou> ;
+    ns3:name "Anastasios Economides" .
+
+<http://ceur-ws.org/Vol-1036/#AnastasiosiKichidis> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/AnastasiosiKichidis> ;
+    ns3:made <http://ceur-ws.org/Vol-1036/#p25-Kichidis> ;
+    ns3:name "Anastasios Kichidis" .
+
+<http://ceur-ws.org/Vol-1036/#ArbeniHajra> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/ArbeniHajra> ;
+    ns3:made <http://ceur-ws.org/Vol-1036/#p140-Hajra> ;
+    ns3:name "Arben Hajra" .
+
+<http://ceur-ws.org/Vol-1036/#ArjaniDurresi> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/ArjaniDurresi> ;
+    ns3:made <http://ceur-ws.org/Vol-1036/#p59-Latifi> ;
+    ns3:name "Arjan Durresi" .
+
+<http://ceur-ws.org/Vol-1036/#AthanasiaiEleftheriaiChantzi> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/AthanasiaiEleftheriaiChantzi> ;
+    ns3:made <http://ceur-ws.org/Vol-1036/#p92-Chantzi> ;
+    ns3:name "Athanasia Eleftheria Chantzi" .
+
+<http://ceur-ws.org/Vol-1036/#AthanasiosiTsakalidis> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/AthanasiosiTsakalidis> ;
+    ns3:made <http://ceur-ws.org/Vol-1036/#p92-Chantzi> ;
+    ns3:name "Athanasios Tsakalidis" .
+
+<http://ceur-ws.org/Vol-1036/#CharikleiaiPlessa> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/CharikleiaiPlessa> ;
+    ns3:made <http://ceur-ws.org/Vol-1036/#p92-Chantzi> ;
+    ns3:name "Charikleia Plessa" .
+
+<http://ceur-ws.org/Vol-1036/#ChristosiK.iGeorgiadis> a ns3:Person ;
+    ns6:affiliation "" ;
+    ns4:sameAs <http://ceur-ws.org/persons/ChristosiK.iGeorgiadis> ;
+    ns3:name "Christos K. Georgiadis" .
+
+<http://ceur-ws.org/Vol-1036/#ChrysafisiHartonas> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/ChrysafisiHartonas> ;
+    ns3:made <http://ceur-ws.org/Vol-1036/#p72-Tsiakmaki> ;
+    ns3:name "Chrysafis Hartonas" .
+
+<http://ceur-ws.org/Vol-1036/#ChrystallaiNeofytou> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/ChrystallaiNeofytou> ;
+    ns3:made <http://ceur-ws.org/Vol-1036/#p132-Neofytou> ;
+    ns3:name "Chrystalla Neofytou" .
+
+<http://ceur-ws.org/Vol-1036/#CostiniBadica> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/CostiniBadica> ;
+    ns3:made <http://ceur-ws.org/Vol-1036/#p78-Badica> ;
+    ns3:name "Costin Badica" .
+
+<http://ceur-ws.org/Vol-1036/#DemosthenesiStamatis> a ns3:Person ;
+    ns6:affiliation "" ;
+    ns4:sameAs <http://ceur-ws.org/persons/DemosthenesiStamatis> ;
+    ns3:name "Demosthenes Stamatis" .
+
+<http://ceur-ws.org/Vol-1036/#Dhurat%C3%ABiHyseni> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/Dhurat%C3%ABiHyseni> ;
+    ns3:made <http://ceur-ws.org/Vol-1036/#p145-Shabani> ;
+    ns3:name "Dhuratë Hyseni" .
+
+<http://ceur-ws.org/Vol-1036/#DimitariChristozov> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/DimitariChristozov> ;
+    ns3:made <http://ceur-ws.org/Vol-1036/#p104-Galletly> ;
+    ns3:name "Dimitar Christozov" .
+
+<http://ceur-ws.org/Vol-1036/#DimitariTrajanov> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/DimitariTrajanov> ;
+    ns3:made <http://ceur-ws.org/Vol-1036/#p162-Kareski> ;
+    ns3:name "Dimitar Trajanov" .
+
+<http://ceur-ws.org/Vol-1036/#DimitriosiTsolis> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/DimitriosiTsolis> ;
+    ns3:made <http://ceur-ws.org/Vol-1036/#p92-Chantzi> ;
+    ns3:name "Dimitrios Tsolis" .
+
+<http://ceur-ws.org/Vol-1036/#DraganiJankovic> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/DraganiJankovic> ;
+    ns3:made <http://ceur-ws.org/Vol-1036/#p86-Rajkovic> ;
+    ns3:name "Dragan Jankovic" .
+
+<http://ceur-ws.org/Vol-1036/#ElindaiKajoiMece> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/ElindaiKajoiMece> ;
+    ns3:made <http://ceur-ws.org/Vol-1036/#p150-Kajo> ;
+    ns3:name "Elinda Kajo Mece" .
+
+<http://ceur-ws.org/Vol-1036/#ElvisiLigu> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/ElvisiLigu> ;
+    ns3:made <http://ceur-ws.org/Vol-1036/#p121-Ligu> ;
+    ns3:name "Elvis Ligu" .
+
+<http://ceur-ws.org/Vol-1036/#EneidaiDriza> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/EneidaiDriza> ;
+    ns3:made <http://ceur-ws.org/Vol-1036/#p150-Kajo> ;
+    ns3:name "Eneida Driza" .
+
+<http://ceur-ws.org/Vol-1036/#EraldaiNishani> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/EraldaiNishani> ;
+    ns3:made <http://ceur-ws.org/Vol-1036/#p39-Nishani> ;
+    ns3:name "Eralda Nishani" .
+
+<http://ceur-ws.org/Vol-1036/#EvisiTrandafili> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/EvisiTrandafili> ;
+    ns3:made <http://ceur-ws.org/Vol-1036/#p14-Trandafili> ;
+    ns3:name "Evis Trandafili" .
+
+<http://ceur-ws.org/Vol-1036/#FatosiHalilaj> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/FatosiHalilaj> ;
+    ns3:made <http://ceur-ws.org/Vol-1036/#p145-Shabani> ;
+    ns3:name "Fatos Halilaj" .
+
+<http://ceur-ws.org/Vol-1036/#GentiiDaci> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/GentiiDaci> ;
+    ns3:made <http://ceur-ws.org/Vol-1036/#p52-Daci> ;
+    ns3:name "Genti Daci" .
+
+<http://ceur-ws.org/Vol-1036/#GrzegorziTimoszuk> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/GrzegorziTimoszuk> ;
+    ns3:made <http://ceur-ws.org/Vol-1036/#p128-Markovets> ;
+    ns3:name "Grzegorz Timoszuk" .
+
+<http://ceur-ws.org/Vol-1036/#IasoniChatziparadeisisiGkanas> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/IasoniChatziparadeisisiGkanas> ;
+    ns3:made <http://ceur-ws.org/Vol-1036/#p92-Chantzi> ;
+    ns3:name "Iason Chatziparadeisis Gkanas" .
+
+<http://ceur-ws.org/Vol-1036/#IliasiKrikelas> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/IliasiKrikelas> ;
+    ns3:made <http://ceur-ws.org/Vol-1036/#p65-Krikelas> ;
+    ns3:name "Ilias Krikelas" .
+
+<http://ceur-ws.org/Vol-1036/#IoannisiXydas> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/IoannisiXydas> ;
+    ns3:made <http://ceur-ws.org/Vol-1036/#p65-Krikelas> ;
+    ns3:name "Ioannis Xydas" .
+
+<http://ceur-ws.org/Vol-1036/#IsakiShabani> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/IsakiShabani> ;
+    ns3:made <http://ceur-ws.org/Vol-1036/#p145-Shabani> ;
+    ns3:name "Isak Shabani" .
+
+<http://ceur-ws.org/Vol-1036/#KlausiTochtermann> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/KlausiTochtermann> ;
+    ns3:made <http://ceur-ws.org/Vol-1036/#p140-Hajra> ;
+    ns3:name "Klaus Tochtermann" .
+
+<http://ceur-ws.org/Vol-1036/#KrzysztofiStencel> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/KrzysztofiStencel> ;
+    ns3:made <http://ceur-ws.org/Vol-1036/#p128-Markovets> ;
+    ns3:name "Krzysztof Stencel" .
+
+<http://ceur-ws.org/Vol-1036/#ManolisiVozalis> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/ManolisiVozalis> ;
+    ns3:made <http://ceur-ws.org/Vol-1036/#p32-Lazaridis> ;
+    ns3:name "Manolis Vozalis" .
+
+<http://ceur-ws.org/Vol-1036/#MarengleniBiba> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/MarengleniBiba> ;
+    ns3:made <http://ceur-ws.org/Vol-1036/#p14-Trandafili> ;
+    ns3:name "Marenglen Biba" .
+
+<http://ceur-ws.org/Vol-1036/#MariaiTsiakmaki> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/MariaiTsiakmaki> ;
+    ns3:made <http://ceur-ws.org/Vol-1036/#p72-Tsiakmaki> ;
+    ns3:name "Maria Tsiakmaki" .
+
+<http://ceur-ws.org/Vol-1036/#MariusiBrezovan> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/MariusiBrezovan> ;
+    ns3:made <http://ceur-ws.org/Vol-1036/#p78-Badica> ;
+    ns3:name "Marius Brezovan" .
+
+<http://ceur-ws.org/Vol-1036/#MilosiJovanovik> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/MilosiJovanovik> ;
+    ns3:made <http://ceur-ws.org/Vol-1036/#p162-Kareski> ;
+    ns3:name "Milos Jovanovik" .
+
+<http://ceur-ws.org/Vol-1036/#MirelaiNdreu> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/MirelaiNdreu> ;
+    ns3:made <http://ceur-ws.org/Vol-1036/#p52-Daci> ;
+    ns3:name "Mirela Ndreu" .
+
+<http://ceur-ws.org/Vol-1036/#MirjanaiIvanovic> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/MirjanaiIvanovic> ;
+    ns3:made <http://ceur-ws.org/Vol-1036/#p96-Aleksic> ;
+    ns3:name "Mirjana Ivanovic" .
+
+<http://ceur-ws.org/Vol-1036/#NekiiFrasheriiFrasheri> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/NekiiFrasheriiFrasheri> ;
+    ns3:made <http://ceur-ws.org/Vol-1036/#p39-Nishani> ;
+    ns3:name "Neki Frasheri Frasheri" .
+
+<http://ceur-ws.org/Vol-1036/#NikolaosiPleros> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/NikolaosiPleros> ;
+    ns3:made <http://ceur-ws.org/Vol-1036/#p25-Kichidis> ;
+    ns3:name "Nikolaos Pleros" .
+
+<http://ceur-ws.org/Vol-1036/#PaveliBoytchev> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/PaveliBoytchev> ;
+    ns3:made <http://ceur-ws.org/Vol-1036/#p115-Boytchev> ;
+    ns3:name "Pavel Boytchev" .
+
+<http://ceur-ws.org/Vol-1036/#PetariRajkovic> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/PetariRajkovic> ;
+    ns3:made <http://ceur-ws.org/Vol-1036/#p86-Rajkovic> ;
+    ns3:name "Petar Rajkovic" .
+
+<http://ceur-ws.org/Vol-1036/#PetrosiKefalas> a ns3:Person ;
+    ns6:affiliation "" ;
+    ns4:sameAs <http://ceur-ws.org/persons/PetrosiKefalas> ;
+    ns3:name "Petros Kefalas" .
+
+<http://ceur-ws.org/Vol-1036/#Pierre-FrancoisiBonnefoi> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/Pierre-FrancoisiBonnefoi> ;
+    ns3:made <http://ceur-ws.org/Vol-1036/#p65-Krikelas> ;
+    ns3:name "Pierre-Francois Bonnefoi" .
+
+<http://ceur-ws.org/Vol-1036/#PinariKirci> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/PinariKirci> ;
+    ns3:made <http://ceur-ws.org/Vol-1036/#p47-Kirci> ;
+    ns3:name "Pinar Kirci" .
+
+<http://ceur-ws.org/Vol-1036/#RadoslaviRadev> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/RadoslaviRadev> ;
+    ns3:made <http://ceur-ws.org/Vol-1036/#p1-Radev> ;
+    ns3:name "Radoslav Radev" .
+
+<http://ceur-ws.org/Vol-1036/#RobertiDabrowski> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/RobertiDabrowski> ;
+    ns3:made <http://ceur-ws.org/Vol-1036/#p128-Markovets> ;
+    ns3:name "Robert Dabrowski" .
+
+<http://ceur-ws.org/Vol-1036/#RovsheniNazarov> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/RovsheniNazarov> ;
+    ns3:made <http://ceur-ws.org/Vol-1036/#p21-Nazarov> ;
+    ns3:name "Rovshen Nazarov" .
+
+<http://ceur-ws.org/Vol-1036/#ShpetimiLatifi> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/ShpetimiLatifi> ;
+    ns3:made <http://ceur-ws.org/Vol-1036/#p59-Latifi> ;
+    ns3:name "Shpetim Latifi" .
+
+<http://ceur-ws.org/Vol-1036/#SimosiLazaridis> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/SimosiLazaridis> ;
+    ns3:made <http://ceur-ws.org/Vol-1036/#p32-Lazaridis> ;
+    ns3:name "Simos Lazaridis" .
+
+<http://ceur-ws.org/Vol-1036/#StavrosiNikou> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/StavrosiNikou> ;
+    ns3:made <http://ceur-ws.org/Vol-1036/#p107-Nikou> ;
+    ns3:name "Stavros Nikou" .
+
+<http://ceur-ws.org/Vol-1036/#StoyaniBonev> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/StoyaniBonev> ;
+    ns3:made <http://ceur-ws.org/Vol-1036/#p104-Galletly> ;
+    ns3:name "Stoyan Bonev" .
+
+<http://ceur-ws.org/Vol-1036/#TheodoreiChaikalis> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/TheodoreiChaikalis> ;
+    ns3:made <http://ceur-ws.org/Vol-1036/#p121-Ligu> ;
+    ns3:name "Theodore Chaikalis" .
+
+<http://ceur-ws.org/Vol-1036/#VeljkoiAleksic> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/VeljkoiAleksic> ;
+    ns3:made <http://ceur-ws.org/Vol-1036/#p96-Aleksic> ;
+    ns3:name "Veljko Aleksic" .
+
+<http://ceur-ws.org/Vol-1036/#VladimiriMarkovets> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/VladimiriMarkovets> ;
+    ns3:made <http://ceur-ws.org/Vol-1036/#p128-Markovets> ;
+    ns3:name "Vladimir Markovets" .
+
+<http://ceur-ws.org/Vol-1036/#VladimiriRadevski> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/VladimiriRadevski> ;
+    ns3:made <http://ceur-ws.org/Vol-1036/#p140-Hajra> ;
+    ns3:name "Vladimir Radevski" .
+
+<http://ceur-ws.org/Vol-1036/#VoliniKaragiozov> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/VoliniKaragiozov> ;
+    ns3:made <http://ceur-ws.org/Vol-1036/#p104-Galletly> ;
+    ns3:name "Volin Karagiozov" .
+
+<http://ceur-ws.org/Vol-1036/#WerneriGabrisch> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/WerneriGabrisch> ;
+    ns3:made <http://ceur-ws.org/Vol-1036/#p9-Gabrisch> ;
+    ns3:name "Werner Gabrisch" .
+
+<http://ceur-ws.org/Vol-1036/#ZamiriDika> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/ZamiriDika> ;
+    ns3:made <http://ceur-ws.org/Vol-1036/#p158-Besimi> ;
+    ns3:name "Zamir Dika" .
+
+<http://ceur-ws.org/Vol-1036/#event> a ns1:WorkshopEvent ;
+    ns1:hasLocation <http://dbpedia.org/resource/Greece> ;
+    ns1:hasPart <http://ceur-ws.org/Vol-1036/#part-BCI-LOCAL> ;
+    ns1:isSubEventOf <http://ceur-ws.org/Vol-1036/#conf> ;
+    ns7:beginsAtDatetime "2013-09-19T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:endsAtDatetime "2013-09-21T00:00:00+00:00"^^xsd:dateTime ;
+    ns9:license "http://choosealicense.com/licenses/no-license/" ;
+    rdfs:seeAlso <http://ceur-ws.org/Vol-920/#event> .
+
+<http://ceur-ws.org/Vol-1036/#JohniGalletly> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/JohniGalletly> ;
+    ns3:made <http://ceur-ws.org/Vol-1036/#p104-Galletly>,
+        <http://ceur-ws.org/Vol-1036/#p21-Nazarov> ;
+    ns3:name "John Galletly" .
+
+<http://ceur-ws.org/Vol-1036/#Session2ArtificialIntelligence> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-1036/> ;
+    ns5:title "Session 2: Artificial Intelligence" .
+
+<http://ceur-ws.org/Vol-1036/#Session5ComputerSecurity> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-1036/> ;
+    ns5:title "Session 5: Computer Security" .
+
+<http://ceur-ws.org/Vol-1036/#p1-Radev> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1036/> ;
+    ns5:title "Representing a Relational Database as a Directed Graph and Some Applications" ;
+    ns2:endPage 1 ;
+    ns2:numPages 1 ;
+    ns2:section <http://ceur-ws.org/Vol-1036/#Session1AlgorithmsandTheoreticalFoundations> ;
+    ns2:startPage 1 ;
+    ns6:author <http://ceur-ws.org/Vol-1036/#RadoslaviRadev> .
+
+<http://ceur-ws.org/Vol-1036/#p115-Boytchev> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1036/> ;
+    ns5:title "Constructing �Learning Content" ;
+    ns2:endPage 115 ;
+    ns2:numPages 1 ;
+    ns2:section <http://ceur-ws.org/Vol-1036/#Session7InformaticsEducationandeLearning> ;
+    ns2:startPage 115 ;
+    ns6:author <http://ceur-ws.org/Vol-1036/#PaveliBoytchev> .
+
+<http://ceur-ws.org/Vol-1036/#p132-Neofytou> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1036/> ;
+    ns5:title "Semantic Web Tools for Categorization Greek Texts on the Internet: the MeDa13 standard and TeGO ontology" ;
+    ns2:endPage 132 ;
+    ns2:numPages 1 ;
+    ns2:section <http://ceur-ws.org/Vol-1036/#Session9WebSystemsApplications> ;
+    ns2:startPage 132 ;
+    ns6:author <http://ceur-ws.org/Vol-1036/#ChrystallaiNeofytou> .
+
+<http://ceur-ws.org/Vol-1036/#p9-Gabrisch> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1036/> ;
+    ns5:title "Decomposition of verification of machine programs based on control-state Abstract State Machines" ;
+    ns2:endPage 9 ;
+    ns2:numPages 1 ;
+    ns2:section <http://ceur-ws.org/Vol-1036/#Session1AlgorithmsandTheoreticalFoundations> ;
+    ns2:startPage 9 ;
+    ns6:author <http://ceur-ws.org/Vol-1036/#WerneriGabrisch> .
+
+<http://ceur-ws.org/Vol-1036/#BetimiCico> a ns3:Person ;
+    ns4:sameAs <http://ceur-ws.org/persons/BetimiCico> ;
+    ns3:made <http://ceur-ws.org/Vol-1036/#p145-Shabani>,
+        <http://ceur-ws.org/Vol-1036/#p39-Nishani>,
+        <http://ceur-ws.org/Vol-1036/#p59-Latifi> ;
+    ns3:name "Betim Cico" .
+
+<http://ceur-ws.org/Vol-1036/#Session1AlgorithmsandTheoreticalFoundations> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-1036/> ;
+    ns5:title "Session 1: Algorithms and Theoretical Foundations" .
+
+<http://ceur-ws.org/Vol-1036/#Session8SoftwareEngineering> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-1036/> ;
+    ns5:title "Session 8: Software Engineering" .
+
+<http://ceur-ws.org/Vol-1036/#p107-Nikou> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1036/> ;
+    ns5:title "Student achievement in paper, computer/web and mobile based assessment" ;
+    ns2:endPage 107 ;
+    ns2:numPages 1 ;
+    ns2:section <http://ceur-ws.org/Vol-1036/#Session7InformaticsEducationandeLearning> ;
+    ns2:startPage 107 ;
+    ns6:author <http://ceur-ws.org/Vol-1036/#AnastasiosiEconomides>,
+        <http://ceur-ws.org/Vol-1036/#StavrosiNikou> .
+
+<http://ceur-ws.org/Vol-1036/#p150-Kajo> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1036/> ;
+    ns5:title "An Approach to Evaluate the Reliability of Web Applications in Cloud Computing Using Dynamic Fault Trees" ;
+    ns2:endPage 150 ;
+    ns2:numPages 1 ;
+    ns2:section <http://ceur-ws.org/Vol-1036/#Session9WebSystemsApplications> ;
+    ns2:startPage 150 ;
+    ns6:author <http://ceur-ws.org/Vol-1036/#ElindaiKajoiMece>,
+        <http://ceur-ws.org/Vol-1036/#EneidaiDriza> .
+
+<http://ceur-ws.org/Vol-1036/#p158-Besimi> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1036/> ;
+    ns5:title "B2B or Not B2B? The future of B2B and the role of Small and Medium-sized Enterprises from SEE" ;
+    ns2:endPage 158 ;
+    ns2:numPages 1 ;
+    ns2:section <http://ceur-ws.org/Vol-1036/#Session9WebSystemsApplications> ;
+    ns2:startPage 158 ;
+    ns6:author <http://ceur-ws.org/Vol-1036/#AdrianiBesimi>,
+        <http://ceur-ws.org/Vol-1036/#ZamiriDika> .
+
+<http://ceur-ws.org/Vol-1036/#p21-Nazarov> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1036/> ;
+    ns5:title "Native browser support for 3D rendering and physics using WebGL, HTML5 and Javascript" ;
+    ns2:endPage 21 ;
+    ns2:numPages 1 ;
+    ns2:section <http://ceur-ws.org/Vol-1036/#Session3ComputerGraphicsGUIVisualizationGIS> ;
+    ns2:startPage 21 ;
+    ns6:author <http://ceur-ws.org/Vol-1036/#JohniGalletly>,
+        <http://ceur-ws.org/Vol-1036/#RovsheniNazarov> .
+
+<http://ceur-ws.org/Vol-1036/#p32-Lazaridis> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1036/> ;
+    ns5:title "Visualizing the research profile of an IT Department" ;
+    ns2:endPage 32 ;
+    ns2:numPages 1 ;
+    ns2:section <http://ceur-ws.org/Vol-1036/#Session3ComputerGraphicsGUIVisualizationGIS> ;
+    ns2:startPage 32 ;
+    ns6:author <http://ceur-ws.org/Vol-1036/#ManolisiVozalis>,
+        <http://ceur-ws.org/Vol-1036/#SimosiLazaridis> .
+
+<http://ceur-ws.org/Vol-1036/#p47-Kirci> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1036/> ;
+    ns5:title "Optical Wdm Networks and Multicasting" ;
+    ns2:endPage 47 ;
+    ns2:numPages 1 ;
+    ns2:section <http://ceur-ws.org/Vol-1036/#Session4ComputerNetworksandOperatingSystems> ;
+    ns2:startPage 47 ;
+    ns6:author <http://ceur-ws.org/Vol-1036/#A.HalimiZaim>,
+        <http://ceur-ws.org/Vol-1036/#PinariKirci> .
+
+<http://ceur-ws.org/Vol-1036/#p52-Daci> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1036/> ;
+    ns5:title "Improving RAID-5 performance by reducing data redistribution time" ;
+    ns2:endPage 52 ;
+    ns2:numPages 1 ;
+    ns2:section <http://ceur-ws.org/Vol-1036/#Session4ComputerNetworksandOperatingSystems> ;
+    ns2:startPage 52 ;
+    ns6:author <http://ceur-ws.org/Vol-1036/#GentiiDaci>,
+        <http://ceur-ws.org/Vol-1036/#MirelaiNdreu> .
+
+<http://ceur-ws.org/Vol-1036/#p72-Tsiakmaki> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1036/> ;
+    ns5:title "Implementing the CROP Reference Architecture: The CROP Learning Object Editor" ;
+    ns2:endPage 72 ;
+    ns2:numPages 1 ;
+    ns2:section <http://ceur-ws.org/Vol-1036/#Session6InformaticsApplications> ;
+    ns2:startPage 72 ;
+    ns6:author <http://ceur-ws.org/Vol-1036/#ChrysafisiHartonas>,
+        <http://ceur-ws.org/Vol-1036/#MariaiTsiakmaki> .
+
+<http://ceur-ws.org/Vol-1036/#p96-Aleksic> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1036/> ;
+    ns5:title "Blended Learning in Tertiary Education: A Case Study" ;
+    ns2:endPage 96 ;
+    ns2:numPages 1 ;
+    ns2:section <http://ceur-ws.org/Vol-1036/#Session7InformaticsEducationandeLearning> ;
+    ns2:startPage 96 ;
+    ns6:author <http://ceur-ws.org/Vol-1036/#MirjanaiIvanovic>,
+        <http://ceur-ws.org/Vol-1036/#VeljkoiAleksic> .
+
+<http://ceur-ws.org/Vol-1036/#Session4ComputerNetworksandOperatingSystems> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-1036/> ;
+    ns5:title "Session 4: Computer Networks and Operating Systems" .
+
+<http://ceur-ws.org/Vol-1036/#p121-Ligu> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1036/> ;
+    ns5:title "BuCo Reporter: Mining Software and Bug Repositories" ;
+    ns2:endPage 121 ;
+    ns2:numPages 1 ;
+    ns2:section <http://ceur-ws.org/Vol-1036/#Session8SoftwareEngineering> ;
+    ns2:startPage 121 ;
+    ns6:author <http://ceur-ws.org/Vol-1036/#AlexanderiChatzigeorgiou>,
+        <http://ceur-ws.org/Vol-1036/#ElvisiLigu>,
+        <http://ceur-ws.org/Vol-1036/#TheodoreiChaikalis> .
+
+<http://ceur-ws.org/Vol-1036/#p14-Trandafili> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1036/> ;
+    ns5:title "Profiling Social Network Users With Machine Learning" ;
+    ns2:endPage 14 ;
+    ns2:numPages 1 ;
+    ns2:section <http://ceur-ws.org/Vol-1036/#Session2ArtificialIntelligence> ;
+    ns2:startPage 14 ;
+    ns6:author <http://ceur-ws.org/Vol-1036/#AleksanderiXhuvani>,
+        <http://ceur-ws.org/Vol-1036/#EvisiTrandafili>,
+        <http://ceur-ws.org/Vol-1036/#MarengleniBiba> .
+
+<http://ceur-ws.org/Vol-1036/#p140-Hajra> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1036/> ;
+    ns5:title "Enriching scientific publications with semantically related data" ;
+    ns2:endPage 140 ;
+    ns2:numPages 1 ;
+    ns2:section <http://ceur-ws.org/Vol-1036/#Session9WebSystemsApplications> ;
+    ns2:startPage 140 ;
+    ns6:author <http://ceur-ws.org/Vol-1036/#ArbeniHajra>,
+        <http://ceur-ws.org/Vol-1036/#KlausiTochtermann>,
+        <http://ceur-ws.org/Vol-1036/#VladimiriRadevski> .
+
+<http://ceur-ws.org/Vol-1036/#p162-Kareski> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1036/> ;
+    ns5:title "Desktop Gateway: Semantic Desktop Integration with Cloud Services" ;
+    ns2:endPage 162 ;
+    ns2:numPages 1 ;
+    ns2:section <http://ceur-ws.org/Vol-1036/#Session9WebSystemsApplications> ;
+    ns2:startPage 162 ;
+    ns6:author <http://ceur-ws.org/Vol-1036/#AleksandariKareski>,
+        <http://ceur-ws.org/Vol-1036/#DimitariTrajanov>,
+        <http://ceur-ws.org/Vol-1036/#MilosiJovanovik> .
+
+<http://ceur-ws.org/Vol-1036/#p25-Kichidis> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1036/> ;
+    ns5:title "Development of a Finite Element Method Mode Solver Application for Optical Waveguides" ;
+    ns2:endPage 25 ;
+    ns2:numPages 1 ;
+    ns2:section <http://ceur-ws.org/Vol-1036/#Session3ComputerGraphicsGUIVisualizationGIS> ;
+    ns2:startPage 25 ;
+    ns6:author <http://ceur-ws.org/Vol-1036/#AmaliaiMiliou>,
+        <http://ceur-ws.org/Vol-1036/#AnastasiosiKichidis>,
+        <http://ceur-ws.org/Vol-1036/#NikolaosiPleros> .
+
+<http://ceur-ws.org/Vol-1036/#p39-Nishani> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1036/> ;
+    ns5:title "Investigating the Performance of Motion Estimation Block-Matching Algorithms on GPU Cards" ;
+    ns2:endPage 39 ;
+    ns2:numPages 1 ;
+    ns2:section <http://ceur-ws.org/Vol-1036/#Session3ComputerGraphicsGUIVisualizationGIS> ;
+    ns2:startPage 39 ;
+    ns6:author <http://ceur-ws.org/Vol-1036/#BetimiCico>,
+        <http://ceur-ws.org/Vol-1036/#EraldaiNishani>,
+        <http://ceur-ws.org/Vol-1036/#NekiiFrasheriiFrasheri> .
+
+<http://ceur-ws.org/Vol-1036/#p59-Latifi> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1036/> ;
+    ns5:title "Separating network control from routers with Software Defined Networking" ;
+    ns2:endPage 59 ;
+    ns2:numPages 1 ;
+    ns2:section <http://ceur-ws.org/Vol-1036/#Session4ComputerNetworksandOperatingSystems> ;
+    ns2:startPage 59 ;
+    ns6:author <http://ceur-ws.org/Vol-1036/#ArjaniDurresi>,
+        <http://ceur-ws.org/Vol-1036/#BetimiCico>,
+        <http://ceur-ws.org/Vol-1036/#ShpetimiLatifi> .
+
+<http://ceur-ws.org/Vol-1036/#p65-Krikelas> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1036/> ;
+    ns5:title "Graphical User Authentication in Mobile Device using the web RGB color palette" ;
+    ns2:endPage 65 ;
+    ns2:numPages 1 ;
+    ns2:section <http://ceur-ws.org/Vol-1036/#Session5ComputerSecurity> ;
+    ns2:startPage 65 ;
+    ns6:author <http://ceur-ws.org/Vol-1036/#IliasiKrikelas>,
+        <http://ceur-ws.org/Vol-1036/#IoannisiXydas>,
+        <http://ceur-ws.org/Vol-1036/#Pierre-FrancoisiBonnefoi> .
+
+<http://ceur-ws.org/Vol-1036/#p78-Badica> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1036/> ;
+    ns5:title "An Overview of Smart Home Environments: Architectures, Technologies and Applications" ;
+    ns2:endPage 78 ;
+    ns2:numPages 1 ;
+    ns2:section <http://ceur-ws.org/Vol-1036/#Session6InformaticsApplications> ;
+    ns2:startPage 78 ;
+    ns6:author <http://ceur-ws.org/Vol-1036/#AmeliaiBadica>,
+        <http://ceur-ws.org/Vol-1036/#CostiniBadica>,
+        <http://ceur-ws.org/Vol-1036/#MariusiBrezovan> .
+
+<http://ceur-ws.org/Vol-1036/#p86-Rajkovic> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1036/> ;
+    ns5:title "Using CQRS Pattern for Improving Performances in Medical Information Systems" ;
+    ns2:endPage 86 ;
+    ns2:numPages 1 ;
+    ns2:section <http://ceur-ws.org/Vol-1036/#Session6InformaticsApplications> ;
+    ns2:startPage 86 ;
+    ns6:author <http://ceur-ws.org/Vol-1036/#AleksandariMilenkovic>,
+        <http://ceur-ws.org/Vol-1036/#DraganiJankovic>,
+        <http://ceur-ws.org/Vol-1036/#PetariRajkovic> .
+
+<http://ceur-ws.org/Vol-1036/#Session3ComputerGraphicsGUIVisualizationGIS> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-1036/> ;
+    ns5:title "Session 3: Computer Graphics, GUI, Visualization &GIS" .
+
+<http://ceur-ws.org/Vol-1036/#Session6InformaticsApplications> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-1036/> ;
+    ns5:title "Session 6: Informatics Applications" .
+
+<http://ceur-ws.org/Vol-1036/#Session7InformaticsEducationandeLearning> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-1036/> ;
+    ns5:title "Session 7: Informatics Education and e-Learning" .
+
+<http://ceur-ws.org/Vol-1036/#p104-Galletly> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1036/> ;
+    ns5:title "Towards the Creation of a New Program in Informatics" ;
+    ns2:endPage 104 ;
+    ns2:numPages 1 ;
+    ns2:section <http://ceur-ws.org/Vol-1036/#Session7InformaticsEducationandeLearning> ;
+    ns2:startPage 104 ;
+    ns6:author <http://ceur-ws.org/Vol-1036/#DimitariChristozov>,
+        <http://ceur-ws.org/Vol-1036/#JohniGalletly>,
+        <http://ceur-ws.org/Vol-1036/#StoyaniBonev>,
+        <http://ceur-ws.org/Vol-1036/#VoliniKaragiozov> .
+
+<http://ceur-ws.org/Vol-1036/#p128-Markovets> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1036/> ;
+    ns5:title "Know Thy Source Code. Is it mostly dead or alive?" ;
+    ns2:endPage 128 ;
+    ns2:numPages 1 ;
+    ns2:section <http://ceur-ws.org/Vol-1036/#Session8SoftwareEngineering> ;
+    ns2:startPage 128 ;
+    ns6:author <http://ceur-ws.org/Vol-1036/#GrzegorziTimoszuk>,
+        <http://ceur-ws.org/Vol-1036/#KrzysztofiStencel>,
+        <http://ceur-ws.org/Vol-1036/#RobertiDabrowski>,
+        <http://ceur-ws.org/Vol-1036/#VladimiriMarkovets> .
+
+<http://ceur-ws.org/Vol-1036/#p145-Shabani> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1036/> ;
+    ns5:title "The Increase of the Web Application Reliability to the End Users" ;
+    ns2:endPage 145 ;
+    ns2:numPages 1 ;
+    ns2:section <http://ceur-ws.org/Vol-1036/#Session9WebSystemsApplications> ;
+    ns2:startPage 145 ;
+    ns6:author <http://ceur-ws.org/Vol-1036/#BetimiCico>,
+        <http://ceur-ws.org/Vol-1036/#Dhurat%C3%ABiHyseni>,
+        <http://ceur-ws.org/Vol-1036/#FatosiHalilaj>,
+        <http://ceur-ws.org/Vol-1036/#IsakiShabani> .
+
+<http://ceur-ws.org/Vol-1036/#p92-Chantzi> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1036/> ;
+    ns5:title "Design and Development of Educational Platform in Augmented Reality Environment using Gamification to enhance Traditional, Electronic and Lifelong Learning Experience." ;
+    ns2:endPage 92 ;
+    ns2:numPages 1 ;
+    ns2:section <http://ceur-ws.org/Vol-1036/#Session6InformaticsApplications> ;
+    ns2:startPage 92 ;
+    ns6:author <http://ceur-ws.org/Vol-1036/#AthanasiaiEleftheriaiChantzi>,
+        <http://ceur-ws.org/Vol-1036/#AthanasiosiTsakalidis>,
+        <http://ceur-ws.org/Vol-1036/#CharikleiaiPlessa>,
+        <http://ceur-ws.org/Vol-1036/#DimitriosiTsolis>,
+        <http://ceur-ws.org/Vol-1036/#IasoniChatziparadeisisiGkanas> .
+
+<http://ceur-ws.org/Vol-1036/#Session9WebSystemsApplications> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-1036/> ;
+    ns5:title "Session 9: Web Systems/Applications" .
+
+<http://ceur-ws.org/Vol-1036/> a ns1:Proceedings ;
+    ns1:hasPart <http://ceur-ws.org/Vol-1036/#p1-Radev>,
+        <http://ceur-ws.org/Vol-1036/#p104-Galletly>,
+        <http://ceur-ws.org/Vol-1036/#p107-Nikou>,
+        <http://ceur-ws.org/Vol-1036/#p115-Boytchev>,
+        <http://ceur-ws.org/Vol-1036/#p121-Ligu>,
+        <http://ceur-ws.org/Vol-1036/#p128-Markovets>,
+        <http://ceur-ws.org/Vol-1036/#p132-Neofytou>,
+        <http://ceur-ws.org/Vol-1036/#p14-Trandafili>,
+        <http://ceur-ws.org/Vol-1036/#p140-Hajra>,
+        <http://ceur-ws.org/Vol-1036/#p145-Shabani>,
+        <http://ceur-ws.org/Vol-1036/#p150-Kajo>,
+        <http://ceur-ws.org/Vol-1036/#p158-Besimi>,
+        <http://ceur-ws.org/Vol-1036/#p162-Kareski>,
+        <http://ceur-ws.org/Vol-1036/#p21-Nazarov>,
+        <http://ceur-ws.org/Vol-1036/#p25-Kichidis>,
+        <http://ceur-ws.org/Vol-1036/#p32-Lazaridis>,
+        <http://ceur-ws.org/Vol-1036/#p39-Nishani>,
+        <http://ceur-ws.org/Vol-1036/#p47-Kirci>,
+        <http://ceur-ws.org/Vol-1036/#p52-Daci>,
+        <http://ceur-ws.org/Vol-1036/#p59-Latifi>,
+        <http://ceur-ws.org/Vol-1036/#p65-Krikelas>,
+        <http://ceur-ws.org/Vol-1036/#p72-Tsiakmaki>,
+        <http://ceur-ws.org/Vol-1036/#p78-Badica>,
+        <http://ceur-ws.org/Vol-1036/#p86-Rajkovic>,
+        <http://ceur-ws.org/Vol-1036/#p9-Gabrisch>,
+        <http://ceur-ws.org/Vol-1036/#p92-Chantzi>,
+        <http://ceur-ws.org/Vol-1036/#p96-Aleksic> ;
+    ns1:hasSession <http://ceur-ws.org/Vol-1036/#Session1AlgorithmsandTheoreticalFoundations>,
+        <http://ceur-ws.org/Vol-1036/#Session2ArtificialIntelligence>,
+        <http://ceur-ws.org/Vol-1036/#Session3ComputerGraphicsGUIVisualizationGIS>,
+        <http://ceur-ws.org/Vol-1036/#Session4ComputerNetworksandOperatingSystems>,
+        <http://ceur-ws.org/Vol-1036/#Session5ComputerSecurity>,
+        <http://ceur-ws.org/Vol-1036/#Session6InformaticsApplications>,
+        <http://ceur-ws.org/Vol-1036/#Session7InformaticsEducationandeLearning>,
+        <http://ceur-ws.org/Vol-1036/#Session8SoftwareEngineering>,
+        <http://ceur-ws.org/Vol-1036/#Session9WebSystemsApplications> ;
+    ns8:issued "2013-09-13T00:00:00+00:00"^^xsd:dateTime ;
+    ns2:presentedAt <http://ceur-ws.org/Vol-1036/#event> ;
+    ns6:editor <http://ceur-ws.org/Vol-1036/#ChristosiK.iGeorgiadis>,
         <http://ceur-ws.org/Vol-1036/#DemosthenesiStamatis>,
         <http://ceur-ws.org/Vol-1036/#PetrosiKefalas> .
-
-<http://ceur-ws.org/Vol-1036/#ChristosiK.iGeorgiadis> a ns5:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/ChristosiK.iGeorgiadis> ;
-    ns5:name "Christos K. Georgiadis" .
-
-<http://ceur-ws.org/Vol-1036/#DemosthenesiStamatis> a ns5:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/DemosthenesiStamatis> ;
-    ns5:name "Demosthenes Stamatis" .
-
-<http://ceur-ws.org/Vol-1036/#PetrosiKefalas> a ns5:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/PetrosiKefalas> ;
-    ns5:name "Petros Kefalas" .
-
-<http://ceur-ws.org/Vol-1036/#event> a ns6:WorkshopEvent ;
-    ns6:hasLocation <http://dbpedia.org/resource/Greece> ;
-    ns6:hasPart <http://ceur-ws.org/Vol-1036/#part-CEUR-WS> ;
-    ns6:isSubEventOf <http://ceur-ws.org/Vol-1036/#conf> ;
-    ns1:beginsAtDatetime "2013-09-19T00:00:00+00:00"^^xsd:dateTime ;
-    ns1:endsAtDatetime "2013-09-21T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:license "http://choosealicense.com/licenses/no-license/" ;
-    rdfs:seeAlso <http://ceur-ws.org/Vol-920/#event> .
 

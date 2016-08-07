@@ -1,45 +1,242 @@
-@prefix ns1: <http://xmlns.com/foaf/0.1/> .
-@prefix ns2: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns3: <http://purl.org/dc/elements/1.1/> .
-@prefix ns4: <http://purl.org/ontology/bibo/#> .
-@prefix ns5: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns6: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns7: <http://www.w3.org/2002/07/owl#> .
-@prefix ns8: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns1: <http://purl.org/ontology/bibo/#> .
+@prefix ns2: <http://xmlns.com/foaf/0.1/> .
+@prefix ns3: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns4: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns5: <http://www.w3.org/2002/07/owl#> .
+@prefix ns6: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns8: <http://purl.org/dc/elements/1.1/> .
+@prefix ns9: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-908/> a ns8:Proceedings ;
-    ns2:issued "2012-09-26T00:00:00+00:00"^^xsd:dateTime ;
-    ns4:presentedAt <http://ceur-ws.org/Vol-908/#event> ;
-    ns5:editor <http://ceur-ws.org/Vol-908/#BoiXu>,
+<http://ceur-ws.org/Vol-908/#AldaiLopesiGan%C3%A7arski> a ns2:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/AldaiLopesiGan%C3%A7arski> ;
+    ns2:made <http://ceur-ws.org/Vol-908/#paper5> ;
+    ns2:name "Alda Lopes Gançarski" .
+
+<http://ceur-ws.org/Vol-908/#Ana-MariaiManzat> a ns2:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/Ana-MariaiManzat> ;
+    ns2:made <http://ceur-ws.org/Vol-908/#paper7> ;
+    ns2:name "Ana-Maria Manzat" .
+
+<http://ceur-ws.org/Vol-908/#B%C3%A9atriceiFinance> a ns2:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/B%C3%A9atriceiFinance> ;
+    ns2:made <http://ceur-ws.org/Vol-908/#paper3> ;
+    ns2:name "Béatrice Finance" .
+
+<http://ceur-ws.org/Vol-908/#BoiXu> a ns2:Person ;
+    ns3:affiliation "Department of Computer Science, University of Illinois at Chicago" ;
+    ns5:sameAs <http://ceur-ws.org/persons/BoiXu> ;
+    ns2:name "Bo Xu" .
+
+<http://ceur-ws.org/Vol-908/#ChristophiQuix> a ns2:Person ;
+    ns1:place <http://dbpedia.org/resource/Germany> ;
+    ns3:affiliation "Information Systems, RWTH Aachen University" ;
+    ns5:sameAs <http://ceur-ws.org/persons/ChristophiQuix> ;
+    ns2:name "Christoph Quix" .
+
+<http://ceur-ws.org/Vol-908/#DanaiAliKukhun> a ns2:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/DanaiAliKukhun> ;
+    ns2:made <http://ceur-ws.org/Vol-908/#paper7> ;
+    ns2:name "Dana Al Kukhun" .
+
+<http://ceur-ws.org/Vol-908/#DanaiCodreanu> a ns2:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/DanaiCodreanu> ;
+    ns2:made <http://ceur-ws.org/Vol-908/#paper7> ;
+    ns2:name "Dana Codreanu" .
+
+<http://ceur-ws.org/Vol-908/#DanielaiNicklas> a ns2:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/DanielaiNicklas> ;
+    ns2:made <http://ceur-ws.org/Vol-908/#paper1> ;
+    ns2:name "Daniela Nicklas" .
+
+<http://ceur-ws.org/Vol-908/#DjalleliBouneffouf> a ns2:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/DjalleliBouneffouf> ;
+    ns2:made <http://ceur-ws.org/Vol-908/#paper5> ;
+    ns2:name "Djallel Bouneffouf" .
+
+<http://ceur-ws.org/Vol-908/#FlorenceiSedes> a ns2:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/FlorenceiSedes> ;
+    ns2:made <http://ceur-ws.org/Vol-908/#paper7> ;
+    ns2:name "Florence Sedes" .
+
+<http://ceur-ws.org/Vol-908/#Kai-UweiSattler> a ns2:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/Kai-UweiSattler> ;
+    ns2:made <http://ceur-ws.org/Vol-908/#paper2> ;
+    ns2:name "Kai-Uwe Sattler" .
+
+<http://ceur-ws.org/Vol-908/#KhedijaiArour> a ns2:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/KhedijaiArour> ;
+    ns2:made <http://ceur-ws.org/Vol-908/#paper4> ;
+    ns2:name "Khedija Arour" .
+
+<http://ceur-ws.org/Vol-908/#KimiT%C3%A2miHuynh> a ns2:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/KimiT%C3%A2miHuynh> ;
+    ns2:made <http://ceur-ws.org/Vol-908/#paper3> ;
+    ns2:name "Kim Tâm Huynh" .
+
+<http://ceur-ws.org/Vol-908/#LiziRibe-Baumann> a ns2:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/LiziRibe-Baumann> ;
+    ns2:made <http://ceur-ws.org/Vol-908/#paper2> ;
+    ns2:name "Liz Ribe-Baumann" .
+
+<http://ceur-ws.org/Vol-908/#MasanoriiMano> a ns2:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/MasanoriiMano> ;
+    ns2:made <http://ceur-ws.org/Vol-908/#paper6> ;
+    ns2:name "Masanori Mano" .
+
+<http://ceur-ws.org/Vol-908/#MokraneiBouzeghoub> a ns2:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/MokraneiBouzeghoub> ;
+    ns2:made <http://ceur-ws.org/Vol-908/#paper3> ;
+    ns2:name "Mokrane Bouzeghoub" .
+
+<http://ceur-ws.org/Vol-908/#SandraiGeisler> a ns2:Person ;
+    ns1:place <http://dbpedia.org/resource/Germany> ;
+    ns3:affiliation "Information Systems, RWTH Aachen University" ;
+    ns5:sameAs <http://ceur-ws.org/persons/SandraiGeisler> ;
+    ns2:name "Sandra Geisler" .
+
+<http://ceur-ws.org/Vol-908/#TaoufikiYeferny> a ns2:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/TaoufikiYeferny> ;
+    ns2:made <http://ceur-ws.org/Vol-908/#paper4> ;
+    ns2:name "Taoufik Yeferny" .
+
+<http://ceur-ws.org/Vol-908/#ThierryiDelot> a ns2:Person ;
+    ns1:place <http://dbpedia.org/resource/France> ;
+    ns3:affiliation "Department of Computer Science, University of Valenciennes & Inria Lille" ;
+    ns5:sameAs <http://ceur-ws.org/persons/ThierryiDelot> ;
+    ns2:name "Thierry Delot" .
+
+<http://ceur-ws.org/Vol-908/#TingtingiDong> a ns2:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/TingtingiDong> ;
+    ns2:made <http://ceur-ws.org/Vol-908/#paper6> ;
+    ns2:name "Tingting Dong" .
+
+<http://ceur-ws.org/Vol-908/#XiiGuo> a ns2:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/XiiGuo> ;
+    ns2:made <http://ceur-ws.org/Vol-908/#paper6> ;
+    ns2:name "Xi Guo" .
+
+<http://ceur-ws.org/Vol-908/#YoshiharuiIshikawa> a ns2:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/YoshiharuiIshikawa> ;
+    ns2:made <http://ceur-ws.org/Vol-908/#paper6> ;
+    ns2:name "Yoshiharu Ishikawa" .
+
+<http://ceur-ws.org/Vol-908/#event> a ns4:WorkshopEvent ;
+    ns4:hasLocation <http://dbpedia.org/resource/Turkey> ;
+    ns4:hasPart <http://ceur-ws.org/Vol-908/#part-IMMoA> ;
+    ns4:isSubEventOf <http://ceur-ws.org/Vol-908/#conf> ;
+    ns7:beginsAtDatetime "2012-08-31T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:endsAtDatetime "2012-08-31T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:license "http://choosealicense.com/licenses/no-license/" .
+
+<http://ceur-ws.org/Vol-908/#AmeliBouzeghoub> a ns2:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/AmeliBouzeghoub> ;
+    ns2:made <http://ceur-ws.org/Vol-908/#paper4>,
+        <http://ceur-ws.org/Vol-908/#paper5> ;
+    ns2:name "Amel Bouzeghoub" .
+
+<http://ceur-ws.org/Vol-908/#KeynoteTalk> a ns4:SessionEvent ;
+    ns4:partOf <http://ceur-ws.org/Vol-908/> ;
+    ns6:title "Keynote Talk" .
+
+<http://ceur-ws.org/Vol-908/#paper1> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-908/> ;
+    ns6:title "Dynamic Context Management for Mobile Applications" ;
+    ns1:endPage 4 ;
+    ns1:numPages 1 ;
+    ns1:section <http://ceur-ws.org/Vol-908/#KeynoteTalk> ;
+    ns1:startPage 4 ;
+    ns3:author <http://ceur-ws.org/Vol-908/#DanielaiNicklas> .
+
+<http://ceur-ws.org/Vol-908/#paper2> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-908/> ;
+    ns6:title "A Hierarchical Approach to Resource Awareness in DHTs for Mobile Data Management" ;
+    ns1:endPage 12 ;
+    ns1:numPages 8 ;
+    ns1:section <http://ceur-ws.org/Vol-908/#RegularPapers> ;
+    ns1:startPage 5 ;
+    ns3:author <http://ceur-ws.org/Vol-908/#Kai-UweiSattler>,
+        <http://ceur-ws.org/Vol-908/#LiziRibe-Baumann> .
+
+<http://ceur-ws.org/Vol-908/#paper3> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-908/> ;
+    ns6:title "Towards an Ambient Data Mediation System" ;
+    ns1:endPage 20 ;
+    ns1:numPages 8 ;
+    ns1:section <http://ceur-ws.org/Vol-908/#RegularPapers> ;
+    ns1:startPage 13 ;
+    ns3:author <http://ceur-ws.org/Vol-908/#B%C3%A9atriceiFinance>,
+        <http://ceur-ws.org/Vol-908/#KimiT%C3%A2miHuynh>,
+        <http://ceur-ws.org/Vol-908/#MokraneiBouzeghoub> .
+
+<http://ceur-ws.org/Vol-908/#paper4> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-908/> ;
+    ns6:title "Context-Aware Routing Method for P2P File Sharing Systems over MANET" ;
+    ns1:endPage 25 ;
+    ns1:numPages 5 ;
+    ns1:section <http://ceur-ws.org/Vol-908/#RegularPapers> ;
+    ns1:startPage 21 ;
+    ns3:author <http://ceur-ws.org/Vol-908/#AmeliBouzeghoub>,
+        <http://ceur-ws.org/Vol-908/#KhedijaiArour>,
+        <http://ceur-ws.org/Vol-908/#TaoufikiYeferny> .
+
+<http://ceur-ws.org/Vol-908/#paper5> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-908/> ;
+    ns6:title "Considering the High Level Critical Situations in Context-Aware Recommender Systems" ;
+    ns1:endPage 32 ;
+    ns1:numPages 7 ;
+    ns1:section <http://ceur-ws.org/Vol-908/#RegularPapers> ;
+    ns1:startPage 26 ;
+    ns3:author <http://ceur-ws.org/Vol-908/#AldaiLopesiGan%C3%A7arski>,
+        <http://ceur-ws.org/Vol-908/#AmeliBouzeghoub>,
+        <http://ceur-ws.org/Vol-908/#DjalleliBouneffouf> .
+
+<http://ceur-ws.org/Vol-908/#paper6> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-908/> ;
+    ns6:title "Privacy Preservation for Location-Based Services Based on Attribute Visibility" ;
+    ns1:endPage 41 ;
+    ns1:numPages 9 ;
+    ns1:section <http://ceur-ws.org/Vol-908/#RegularPapers> ;
+    ns1:startPage 33 ;
+    ns3:author <http://ceur-ws.org/Vol-908/#MasanoriiMano>,
+        <http://ceur-ws.org/Vol-908/#TingtingiDong>,
+        <http://ceur-ws.org/Vol-908/#XiiGuo>,
+        <http://ceur-ws.org/Vol-908/#YoshiharuiIshikawa> .
+
+<http://ceur-ws.org/Vol-908/#paper7> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-908/> ;
+    ns6:title "Applying Pervasive and Flexible Access Control to Distributed Multimedia Retrieval" ;
+    ns1:endPage 48 ;
+    ns1:numPages 8 ;
+    ns1:section <http://ceur-ws.org/Vol-908/#RegularPapers> ;
+    ns1:startPage 41 ;
+    ns3:author <http://ceur-ws.org/Vol-908/#Ana-MariaiManzat>,
+        <http://ceur-ws.org/Vol-908/#DanaiAliKukhun>,
+        <http://ceur-ws.org/Vol-908/#DanaiCodreanu>,
+        <http://ceur-ws.org/Vol-908/#FlorenceiSedes> .
+
+<http://ceur-ws.org/Vol-908/#RegularPapers> a ns4:SessionEvent ;
+    ns4:partOf <http://ceur-ws.org/Vol-908/> ;
+    ns6:title "Regular Papers" .
+
+<http://ceur-ws.org/Vol-908/> a ns4:Proceedings ;
+    ns4:hasPart <http://ceur-ws.org/Vol-908/#paper1>,
+        <http://ceur-ws.org/Vol-908/#paper2>,
+        <http://ceur-ws.org/Vol-908/#paper3>,
+        <http://ceur-ws.org/Vol-908/#paper4>,
+        <http://ceur-ws.org/Vol-908/#paper5>,
+        <http://ceur-ws.org/Vol-908/#paper6>,
+        <http://ceur-ws.org/Vol-908/#paper7> ;
+    ns4:hasSession <http://ceur-ws.org/Vol-908/#KeynoteTalk>,
+        <http://ceur-ws.org/Vol-908/#RegularPapers> ;
+    ns9:issued "2012-09-26T00:00:00+00:00"^^xsd:dateTime ;
+    ns1:presentedAt <http://ceur-ws.org/Vol-908/#event> ;
+    ns3:editor <http://ceur-ws.org/Vol-908/#BoiXu>,
         <http://ceur-ws.org/Vol-908/#ChristophiQuix>,
         <http://ceur-ws.org/Vol-908/#SandraiGeisler>,
         <http://ceur-ws.org/Vol-908/#ThierryiDelot> .
-
-<http://ceur-ws.org/Vol-908/#BoiXu> a ns1:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/BoiXu> ;
-    ns1:name "Bo Xu" .
-
-<http://ceur-ws.org/Vol-908/#ChristophiQuix> a ns1:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/ChristophiQuix> ;
-    ns1:name "Christoph Quix" .
-
-<http://ceur-ws.org/Vol-908/#SandraiGeisler> a ns1:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/SandraiGeisler> ;
-    ns1:name "Sandra Geisler" .
-
-<http://ceur-ws.org/Vol-908/#ThierryiDelot> a ns1:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/ThierryiDelot> ;
-    ns1:name "Thierry Delot" .
-
-<http://ceur-ws.org/Vol-908/#event> a ns8:WorkshopEvent ;
-    ns8:hasLocation <http://dbpedia.org/resource/Turkey> ;
-    ns8:hasPart <http://ceur-ws.org/Vol-908/#part-CEUR-WS> ;
-    ns8:isSubEventOf <http://ceur-ws.org/Vol-908/#conf> ;
-    ns6:beginsAtDatetime "2012-08-31T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:endsAtDatetime "2012-08-31T00:00:00+00:00"^^xsd:dateTime ;
-    ns3:license "http://choosealicense.com/licenses/no-license/" .
 

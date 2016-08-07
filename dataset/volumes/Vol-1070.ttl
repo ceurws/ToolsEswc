@@ -1,41 +1,210 @@
-@prefix ns1: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns2: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns3: <http://xmlns.com/foaf/0.1/> .
-@prefix ns4: <http://purl.org/ontology/bibo/#> .
-@prefix ns5: <http://purl.org/dc/elements/1.1/> .
-@prefix ns6: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns8: <http://www.w3.org/2002/07/owl#> .
+@prefix ns1: <http://xmlns.com/foaf/0.1/> .
+@prefix ns2: <http://www.w3.org/2002/07/owl#> .
+@prefix ns3: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns4: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns5: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns6: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns8: <http://purl.org/dc/elements/1.1/> .
+@prefix ns9: <http://purl.org/ontology/bibo/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1070/> a ns2:Proceedings ;
-    ns7:issued "2013-10-31T00:00:00+00:00"^^xsd:dateTime ;
-    ns4:presentedAt <http://ceur-ws.org/Vol-1070/#event> ;
-    ns1:editor <http://ceur-ws.org/Vol-1070/#GrzegorziJ.iNalepa>,
-        <http://ceur-ws.org/Vol-1070/#JoachimiBaumeister> .
+<http://ceur-ws.org/Vol-1070/#AlbrechtiStriffler> a ns1:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/AlbrechtiStriffler> ;
+    ns1:made <http://ceur-ws.org/Vol-1070/#kese9-03_05> ;
+    ns1:name "Albrecht Striffler" .
 
-<http://ceur-ws.org/Vol-1070/#GrzegorziJ.iNalepa> a ns3:Person ;
-    ns8:sameAs <http://ceur-ws.org/persons/GrzegorziJ.iNalepa> ;
-    ns3:name "Grzegorz J. Nalepa" .
+<http://ceur-ws.org/Vol-1070/#ChristianiSauer> a ns1:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/ChristianiSauer> ;
+    ns1:made <http://ceur-ws.org/Vol-1070/#kese9-02_03> ;
+    ns1:name "Christian Sauer" .
 
-<http://ceur-ws.org/Vol-1070/#JoachimiBaumeister> a ns3:Person ;
-    ns8:sameAs <http://ceur-ws.org/persons/JoachimiBaumeister> ;
-    ns3:name "Joachim Baumeister" .
+<http://ceur-ws.org/Vol-1070/#DeaniKramer> a ns1:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/DeaniKramer> ;
+    ns1:made <http://ceur-ws.org/Vol-1070/#kese9-02_03> ;
+    ns1:name "Dean Kramer" .
 
-<http://ceur-ws.org/Vol-1070/#event> a ns2:WorkshopEvent ;
-    ns2:hasLocation <http://dbpedia.org/resource/Germany> ;
-    ns2:hasPart <http://ceur-ws.org/Vol-1070/#part-KESE> ;
-    ns2:isSubEventOf <http://ceur-ws.org/Vol-1070/#conf> ;
-    ns6:beginsAtDatetime "2013-09-17T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:endsAtDatetime "2013-09-17T00:00:00+00:00"^^xsd:dateTime ;
-    ns5:license "http://choosealicense.com/licenses/no-license/" ;
+<http://ceur-ws.org/Vol-1070/#DietmariSeipel> a ns1:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/DietmariSeipel> ;
+    ns1:made <http://ceur-ws.org/Vol-1070/#kese9-06_04> ;
+    ns1:name "Dietmar Seipel" .
+
+<http://ceur-ws.org/Vol-1070/#EmilianiPascalau> a ns1:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/EmilianiPascalau> ;
+    ns1:made <http://ceur-ws.org/Vol-1070/#kese9-04_06> ;
+    ns1:name "Emilian Pascalau" .
+
+<http://ceur-ws.org/Vol-1070/#JuergeniDunkel> a ns1:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/JuergeniDunkel> ;
+    ns1:made <http://ceur-ws.org/Vol-1070/#kese9-01_02> ;
+    ns1:name "Juergen Dunkel" .
+
+<http://ceur-ws.org/Vol-1070/#Klaus-DieteriAlthoff> a ns1:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/Klaus-DieteriAlthoff> ;
+    ns1:made <http://ceur-ws.org/Vol-1070/#kese9-07_09> ;
+    ns1:name "Klaus-Dieter Althoff" .
+
+<http://ceur-ws.org/Vol-1070/#KrzysztofiKaczor> a ns1:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/KrzysztofiKaczor> ;
+    ns1:made <http://ceur-ws.org/Vol-1070/#kese9-08_08> ;
+    ns1:name "Krzysztof Kaczor" .
+
+<http://ceur-ws.org/Vol-1070/#KrzysztofiKluza> a ns1:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/KrzysztofiKluza> ;
+    ns1:made <http://ceur-ws.org/Vol-1070/#kese9-05_07> ;
+    ns1:name "Krzysztof Kluza" .
+
+<http://ceur-ws.org/Vol-1070/#KrzysztofiKutt> a ns1:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/KrzysztofiKutt> ;
+    ns1:made <http://ceur-ws.org/Vol-1070/#kese9-08_08> ;
+    ns1:name "Krzysztof Kutt" .
+
+<http://ceur-ws.org/Vol-1070/#LeonardiRenners> a ns1:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/LeonardiRenners> ;
+    ns1:made <http://ceur-ws.org/Vol-1070/#kese9-01_02> ;
+    ns1:name "Leonard Renners" .
+
+<http://ceur-ws.org/Vol-1070/#LudwigiOstermayer> a ns1:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/LudwigiOstermayer> ;
+    ns1:made <http://ceur-ws.org/Vol-1070/#kese9-06_04> ;
+    ns1:name "Ludwig Ostermayer" .
+
+<http://ceur-ws.org/Vol-1070/#MarciBrandt> a ns1:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/MarciBrandt> ;
+    ns1:made <http://ceur-ws.org/Vol-1070/#kese9-03_05> ;
+    ns1:name "Marc Brandt" .
+
+<http://ceur-ws.org/Vol-1070/#MateusziBaran> a ns1:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/MateusziBaran> ;
+    ns1:made <http://ceur-ws.org/Vol-1070/#kese9-05_07> ;
+    ns1:name "Mateusz Baran" .
+
+<http://ceur-ws.org/Vol-1070/#MichaeliNeumann> a ns1:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/MichaeliNeumann> ;
+    ns1:made <http://ceur-ws.org/Vol-1070/#kese9-03_05> ;
+    ns1:name "Michael Neumann" .
+
+<http://ceur-ws.org/Vol-1070/#R%C3%A9gisiNewo> a ns1:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/R%C3%A9gisiNewo> ;
+    ns1:made <http://ceur-ws.org/Vol-1070/#kese9-07_09> ;
+    ns1:name "Régis Newo" .
+
+<http://ceur-ws.org/Vol-1070/#RalfiBruns> a ns1:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/RalfiBruns> ;
+    ns1:made <http://ceur-ws.org/Vol-1070/#kese9-01_02> ;
+    ns1:name "Ralf Bruns" .
+
+<http://ceur-ws.org/Vol-1070/#SimoniBeckstein> a ns1:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/SimoniBeckstein> ;
+    ns1:made <http://ceur-ws.org/Vol-1070/#kese9-01_02> ;
+    ns1:name "Simon Beckstein" .
+
+<http://ceur-ws.org/Vol-1070/#SzymoniBobek> a ns1:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/SzymoniBobek> ;
+    ns1:made <http://ceur-ws.org/Vol-1070/#kese9-05_07> ;
+    ns1:name "Szymon Bobek" .
+
+<http://ceur-ws.org/Vol-1070/#ThomasiRoth-Berghofer> a ns1:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/ThomasiRoth-Berghofer> ;
+    ns1:made <http://ceur-ws.org/Vol-1070/#kese9-02_03> ;
+    ns1:name "Thomas Roth-Berghofer" .
+
+<http://ceur-ws.org/Vol-1070/#event> a ns4:WorkshopEvent ;
+    ns4:hasLocation <http://dbpedia.org/resource/Germany> ;
+    ns4:hasPart <http://ceur-ws.org/Vol-1070/#part-KESE> ;
+    ns4:isSubEventOf <http://ceur-ws.org/Vol-1070/#conf> ;
+    ns7:beginsAtDatetime "2013-09-17T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:endsAtDatetime "2013-09-17T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:license "http://choosealicense.com/licenses/no-license/" ;
     rdfs:seeAlso <http://ceur-ws.org/Vol-282/#event>,
         <http://ceur-ws.org/Vol-425/#event>,
         <http://ceur-ws.org/Vol-486/#event>,
         <http://ceur-ws.org/Vol-636/#event>,
         <http://ceur-ws.org/Vol-805/#event>,
         <http://ceur-ws.org/Vol-949/#event> .
+
+<http://ceur-ws.org/Vol-1070/#JoachimiBaumeister> a ns1:Person ;
+    ns3:affiliation "" ;
+    ns2:sameAs <http://ceur-ws.org/persons/JoachimiBaumeister> ;
+    ns1:made <http://ceur-ws.org/Vol-1070/#kese9-03_05> ;
+    ns1:name "Joachim Baumeister" .
+
+<http://ceur-ws.org/Vol-1070/#kese9-04_06> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1070/> ;
+    ns5:title "Identifying Guidelines for Designing and Engineering Human-Centered Context-Aware Systems" ;
+    ns3:author <http://ceur-ws.org/Vol-1070/#EmilianiPascalau> .
+
+<http://ceur-ws.org/Vol-1070/#GrzegorziJ.iNalepa> a ns1:Person ;
+    ns3:affiliation "" ;
+    ns2:sameAs <http://ceur-ws.org/persons/GrzegorziJ.iNalepa> ;
+    ns1:made <http://ceur-ws.org/Vol-1070/#kese9-05_07>,
+        <http://ceur-ws.org/Vol-1070/#kese9-08_08> ;
+    ns1:name "Grzegorz J. Nalepa" .
+
+<http://ceur-ws.org/Vol-1070/#kese9-06_04> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1070/> ;
+    ns5:title "A Prolog Framework for Integrating Business Rules into Java Applications" ;
+    ns3:author <http://ceur-ws.org/Vol-1070/#DietmariSeipel>,
+        <http://ceur-ws.org/Vol-1070/#LudwigiOstermayer> .
+
+<http://ceur-ws.org/Vol-1070/#kese9-07_09> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1070/> ;
+    ns5:title "Knowledge Acquisition for Life Counseling" ;
+    ns3:author <http://ceur-ws.org/Vol-1070/#Klaus-DieteriAlthoff>,
+        <http://ceur-ws.org/Vol-1070/#R%C3%A9gisiNewo> .
+
+<http://ceur-ws.org/Vol-1070/#kese9-02_03> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1070/> ;
+    ns5:title "Towards Explanation Generation using Feature Models in Software Product Lines" ;
+    ns3:author <http://ceur-ws.org/Vol-1070/#ChristianiSauer>,
+        <http://ceur-ws.org/Vol-1070/#DeaniKramer>,
+        <http://ceur-ws.org/Vol-1070/#ThomasiRoth-Berghofer> .
+
+<http://ceur-ws.org/Vol-1070/#kese9-08_08> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1070/> ;
+    ns5:title "HaDEsclipse - Integrated Environment for Rules (Tool Presentation)" ;
+    ns3:author <http://ceur-ws.org/Vol-1070/#GrzegorziJ.iNalepa>,
+        <http://ceur-ws.org/Vol-1070/#KrzysztofiKaczor>,
+        <http://ceur-ws.org/Vol-1070/#KrzysztofiKutt> .
+
+<http://ceur-ws.org/Vol-1070/#kese9-01_02> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1070/> ;
+    ns5:title "Integrating Semantic Knowledge in Data Stream Processing" ;
+    ns3:author <http://ceur-ws.org/Vol-1070/#JuergeniDunkel>,
+        <http://ceur-ws.org/Vol-1070/#LeonardiRenners>,
+        <http://ceur-ws.org/Vol-1070/#RalfiBruns>,
+        <http://ceur-ws.org/Vol-1070/#SimoniBeckstein> .
+
+<http://ceur-ws.org/Vol-1070/#kese9-03_05> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1070/> ;
+    ns5:title "Towards Continuous Knowledge Representations in Episodic and Collaborative Decision Making" ;
+    ns3:author <http://ceur-ws.org/Vol-1070/#AlbrechtiStriffler>,
+        <http://ceur-ws.org/Vol-1070/#JoachimiBaumeister>,
+        <http://ceur-ws.org/Vol-1070/#MarciBrandt>,
+        <http://ceur-ws.org/Vol-1070/#MichaeliNeumann> .
+
+<http://ceur-ws.org/Vol-1070/#kese9-05_07> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1070/> ;
+    ns5:title "Overview of Recommendation Techniques in Business Process Modeling" ;
+    ns3:author <http://ceur-ws.org/Vol-1070/#GrzegorziJ.iNalepa>,
+        <http://ceur-ws.org/Vol-1070/#KrzysztofiKluza>,
+        <http://ceur-ws.org/Vol-1070/#MateusziBaran>,
+        <http://ceur-ws.org/Vol-1070/#SzymoniBobek> .
+
+<http://ceur-ws.org/Vol-1070/> a ns4:Proceedings ;
+    ns4:hasPart <http://ceur-ws.org/Vol-1070/#kese9-01_02>,
+        <http://ceur-ws.org/Vol-1070/#kese9-02_03>,
+        <http://ceur-ws.org/Vol-1070/#kese9-03_05>,
+        <http://ceur-ws.org/Vol-1070/#kese9-04_06>,
+        <http://ceur-ws.org/Vol-1070/#kese9-05_07>,
+        <http://ceur-ws.org/Vol-1070/#kese9-06_04>,
+        <http://ceur-ws.org/Vol-1070/#kese9-07_09>,
+        <http://ceur-ws.org/Vol-1070/#kese9-08_08> ;
+    ns6:issued "2013-10-31T00:00:00+00:00"^^xsd:dateTime ;
+    ns9:presentedAt <http://ceur-ws.org/Vol-1070/#event> ;
+    ns3:editor <http://ceur-ws.org/Vol-1070/#GrzegorziJ.iNalepa>,
+        <http://ceur-ws.org/Vol-1070/#JoachimiBaumeister> .
 

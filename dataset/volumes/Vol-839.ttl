@@ -1,42 +1,493 @@
-@prefix ns1: <http://xmlns.com/foaf/0.1/> .
-@prefix ns2: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns3: <http://purl.org/ontology/bibo/#> .
-@prefix ns4: <http://www.w3.org/2002/07/owl#> .
-@prefix ns5: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns6: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns8: <http://purl.org/dc/elements/1.1/> .
+@prefix ns1: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns2: <http://purl.org/ontology/bibo/#> .
+@prefix ns3: <http://xmlns.com/foaf/0.1/> .
+@prefix ns4: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns5: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns6: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns7: <http://www.w3.org/2002/07/owl#> .
+@prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns9: <http://purl.org/dc/elements/1.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-839/> a ns6:Proceedings ;
-    ns2:issued "2012-03-30T00:00:00+00:00"^^xsd:dateTime ;
-    ns3:presentedAt <http://ceur-ws.org/Vol-839/#event> ;
-    ns5:editor <http://ceur-ws.org/Vol-839/#AruniAyyagari>,
+<http://ceur-ws.org/Vol-839/#AlexandreiPassant> a ns3:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/AlexandreiPassant> ;
+    ns3:made <http://ceur-ws.org/Vol-839/#crowley> ;
+    ns3:name "Alexandre Passant" .
+
+<http://ceur-ws.org/Vol-839/#AndriyiNikolov> a ns3:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/AndriyiNikolov> ;
+    ns3:made <http://ceur-ws.org/Vol-839/#daquin> ;
+    ns3:name "Andriy Nikolov" .
+
+<http://ceur-ws.org/Vol-839/#ArneiJ.iBerre> a ns3:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/ArneiJ.iBerre> ;
+    ns3:made <http://ceur-ws.org/Vol-839/#roman> ;
+    ns3:name "Arne J. Berre" .
+
+<http://ceur-ws.org/Vol-839/#DavidiCorsar> a ns3:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/DavidiCorsar> ;
+    ns3:made <http://ceur-ws.org/Vol-839/#corsar> ;
+    ns3:name "David Corsar" .
+
+<http://ceur-ws.org/Vol-839/#DavidiCrowley> a ns3:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/DavidiCrowley> ;
+    ns3:made <http://ceur-ws.org/Vol-839/#crowley> ;
+    ns3:name "David Crowley" .
+
+<http://ceur-ws.org/Vol-839/#DeshendraniMoodley> a ns3:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/DeshendraniMoodley> ;
+    ns3:made <http://ceur-ws.org/Vol-839/#moodley> ;
+    ns3:name "Deshendran Moodley" .
+
+<http://ceur-ws.org/Vol-839/#DumitruiRoman> a ns3:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/DumitruiRoman> ;
+    ns3:made <http://ceur-ws.org/Vol-839/#roman> ;
+    ns3:name "Dumitru Roman" .
+
+<http://ceur-ws.org/Vol-839/#EdwardiCurry> a ns3:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/EdwardiCurry> ;
+    ns3:made <http://ceur-ws.org/Vol-839/#hasan> ;
+    ns3:name "Edward Curry" .
+
+<http://ceur-ws.org/Vol-839/#EhmiKannegieser> a ns3:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/EhmiKannegieser> ;
+    ns3:made <http://ceur-ws.org/Vol-839/#kannegieser> ;
+    ns3:name "Ehm Kannegieser" .
+
+<http://ceur-ws.org/Vol-839/#EnricoiMotta> a ns3:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/EnricoiMotta> ;
+    ns3:made <http://ceur-ws.org/Vol-839/#daquin> ;
+    ns3:name "Enrico Motta" .
+
+<http://ceur-ws.org/Vol-839/#FanoiRamparany> a ns3:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/FanoiRamparany> ;
+    ns3:made <http://ceur-ws.org/Vol-839/#ramparany> ;
+    ns3:name "Fano Ramparany" .
+
+<http://ceur-ws.org/Vol-839/#HarshaliPatni> a ns3:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/HarshaliPatni> ;
+    ns3:made <http://ceur-ws.org/Vol-839/#patni> ;
+    ns3:name "Harshal Patni" .
+
+<http://ceur-ws.org/Vol-839/#HoyoungiJeung> a ns3:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/HoyoungiJeung> ;
+    ns3:made <http://ceur-ws.org/Vol-839/#calbimonte> ;
+    ns3:name "Hoyoung Jeung" .
+
+<http://ceur-ws.org/Vol-839/#Jean-PauliCalbimonte> a ns3:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/Jean-PauliCalbimonte> ;
+    ns3:made <http://ceur-ws.org/Vol-839/#calbimonte> ;
+    ns3:name "Jean-Paul Calbimonte" .
+
+<http://ceur-ws.org/Vol-839/#JeffiPan> a ns3:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/JeffiPan> ;
+    ns3:made <http://ceur-ws.org/Vol-839/#corsar> ;
+    ns3:name "Jeff Pan" .
+
+<http://ceur-ws.org/Vol-839/#JeremieiGadeyne> a ns3:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/JeremieiGadeyne> ;
+    ns3:made <http://ceur-ws.org/Vol-839/#ramparany> ;
+    ns3:name "Jeremie Gadeyne" .
+
+<http://ceur-ws.org/Vol-839/#JohniG.iBreslin> a ns3:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/JohniG.iBreslin> ;
+    ns3:made <http://ceur-ws.org/Vol-839/#crowley> ;
+    ns3:name "John G. Breslin" .
+
+<http://ceur-ws.org/Vol-839/#JohniNelson> a ns3:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/JohniNelson> ;
+    ns3:made <http://ceur-ws.org/Vol-839/#corsar> ;
+    ns3:name "John Nelson" .
+
+<http://ceur-ws.org/Vol-839/#JulesiRaymondiTapamo> a ns3:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/JulesiRaymondiTapamo> ;
+    ns3:made <http://ceur-ws.org/Vol-839/#moodley> ;
+    ns3:name "Jules Raymond Tapamo" .
+
+<http://ceur-ws.org/Vol-839/#KarliAberer> a ns3:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/KarliAberer> ;
+    ns3:made <http://ceur-ws.org/Vol-839/#calbimonte> ;
+    ns3:name "Karl Aberer" .
+
+<http://ceur-ws.org/Vol-839/#KrishnaprasadiThirunarayan> a ns3:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/KrishnaprasadiThirunarayan> ;
+    ns3:made <http://ceur-ws.org/Vol-839/#patni> ;
+    ns3:name "Krishnaprasad Thirunarayan" .
+
+<http://ceur-ws.org/Vol-839/#LucasiLeidinger> a ns3:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/LucasiLeidinger> ;
+    ns3:made <http://ceur-ws.org/Vol-839/#leidinger> ;
+    ns3:name "Lucas Leidinger" .
+
+<http://ceur-ws.org/Vol-839/#MathieuiD%27Aquin> a ns3:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/MathieuiD%27Aquin> ;
+    ns3:made <http://ceur-ws.org/Vol-839/#daquin> ;
+    ns3:name "Mathieu D'Aquin" .
+
+<http://ceur-ws.org/Vol-839/#MauricioiBanduk> a ns3:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/MauricioiBanduk> ;
+    ns3:made <http://ceur-ws.org/Vol-839/#hasan> ;
+    ns3:name "Mauricio Banduk" .
+
+<http://ceur-ws.org/Vol-839/#MichaeliCompton> a ns3:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/MichaeliCompton> ;
+    ns3:made <http://ceur-ws.org/Vol-839/#compton> ;
+    ns3:name "Michael Compton" .
+
+<http://ceur-ws.org/Vol-839/#MichaeliCooney> a ns3:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/MichaeliCooney> ;
+    ns3:made <http://ceur-ws.org/Vol-839/#patni> ;
+    ns3:name "Michael Cooney" .
+
+<http://ceur-ws.org/Vol-839/#NagendraiVelaga> a ns3:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/NagendraiVelaga> ;
+    ns3:made <http://ceur-ws.org/Vol-839/#corsar> ;
+    ns3:name "Nagendra Velaga" .
+
+<http://ceur-ws.org/Vol-839/#OscariCorcho> a ns3:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/OscariCorcho> ;
+    ns3:made <http://ceur-ws.org/Vol-839/#calbimonte> ;
+    ns3:name "Oscar Corcho" .
+
+<http://ceur-ws.org/Vol-839/#PeteriEdwards> a ns3:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/PeteriEdwards> ;
+    ns3:made <http://ceur-ws.org/Vol-839/#corsar> ;
+    ns3:name "Peter Edwards" .
+
+<http://ceur-ws.org/Vol-839/#PhilippeiBeaune> a ns3:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/PhilippeiBeaune> ;
+    ns3:made <http://ceur-ws.org/Vol-839/#ramparany> ;
+    ns3:name "Philippe Beaune" .
+
+<http://ceur-ws.org/Vol-839/#PramodiAnantharam> a ns3:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/PramodiAnantharam> ;
+    ns3:made <http://ceur-ws.org/Vol-839/#desai> ;
+    ns3:name "Pramod Anantharam" .
+
+<http://ceur-ws.org/Vol-839/#PratikkumariDesai> a ns3:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/PratikkumariDesai> ;
+    ns3:made <http://ceur-ws.org/Vol-839/#desai> ;
+    ns3:name "Pratikkumar Desai" .
+
+<http://ceur-ws.org/Vol-839/#SandroiLeuchter> a ns3:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/SandroiLeuchter> ;
+    ns3:made <http://ceur-ws.org/Vol-839/#kannegieser> ;
+    ns3:name "Sandro Leuchter" .
+
+<http://ceur-ws.org/Vol-839/#SeaniO%27Riain> a ns3:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/SeaniO%27Riain> ;
+    ns3:made <http://ceur-ws.org/Vol-839/#hasan> ;
+    ns3:name "Sean O'Riain" .
+
+<http://ceur-ws.org/Vol-839/#SouleimaniHasan> a ns3:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/SouleimaniHasan> ;
+    ns3:made <http://ceur-ws.org/Vol-839/#hasan> ;
+    ns3:name "Souleiman Hasan" .
+
+<http://ceur-ws.org/Vol-839/#ThomasiEverding> a ns3:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/ThomasiEverding> ;
+    ns3:made <http://ceur-ws.org/Vol-839/#broering> ;
+    ns3:name "Thomas Everding" .
+
+<http://ceur-ws.org/Vol-839/#XiaoxiniGao> a ns3:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/XiaoxiniGao> ;
+    ns3:made <http://ceur-ws.org/Vol-839/#roman> ;
+    ns3:name "Xiaoxin Gao" .
+
+<http://ceur-ws.org/Vol-839/#YazidiBenazzouz> a ns3:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/YazidiBenazzouz> ;
+    ns3:made <http://ceur-ws.org/Vol-839/#ramparany> ;
+    ns3:name "Yazid Benazzouz" .
+
+<http://ceur-ws.org/Vol-839/#event> a ns1:WorkshopEvent ;
+    ns1:hasLocation <http://dbpedia.org/resource/Germany> ;
+    ns1:hasPart <http://ceur-ws.org/Vol-839/#part-SSN> ;
+    ns1:isSubEventOf <http://ceur-ws.org/Vol-839/#conf> ;
+    ns8:beginsAtDatetime "2011-10-23T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:endsAtDatetime "2011-10-23T00:00:00+00:00"^^xsd:dateTime ;
+    ns9:license "http://choosealicense.com/licenses/no-license/" ;
+    rdfs:seeAlso <http://ceur-ws.org/Vol-522/#event>,
+        <http://ceur-ws.org/Vol-668/#event> .
+
+<http://ceur-ws.org/Vol-839/#AlejandroiLlaves> a ns3:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/AlejandroiLlaves> ;
+    ns3:made <http://ceur-ws.org/Vol-839/#broering>,
+        <http://ceur-ws.org/Vol-839/#stasch> ;
+    ns3:name "Alejandro Llaves" .
+
+<http://ceur-ws.org/Vol-839/#AmitiSheth> a ns3:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/AmitiSheth> ;
+    ns3:made <http://ceur-ws.org/Vol-839/#desai>,
+        <http://ceur-ws.org/Vol-839/#patni> ;
+    ns3:name "Amit Sheth" .
+
+<http://ceur-ws.org/Vol-839/#ArneiBroring> a ns3:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/ArneiBroring> ;
+    ns3:made <http://ceur-ws.org/Vol-839/#broering>,
+        <http://ceur-ws.org/Vol-839/#stasch> ;
+    ns3:name "Arne Broring" .
+
+<http://ceur-ws.org/Vol-839/#AruniAyyagari> a ns3:Person ;
+    ns4:affiliation "" ;
+    ns7:sameAs <http://ceur-ws.org/persons/AruniAyyagari> ;
+    ns3:made <http://ceur-ws.org/Vol-839/#preface> ;
+    ns3:name "Arun Ayyagari" .
+
+<http://ceur-ws.org/Vol-839/#ChristophiStasch> a ns3:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/ChristophiStasch> ;
+    ns3:made <http://ceur-ws.org/Vol-839/#broering>,
+        <http://ceur-ws.org/Vol-839/#stasch> ;
+    ns3:name "Christoph Stasch" .
+
+<http://ceur-ws.org/Vol-839/#CoryiHenson> a ns3:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/CoryiHenson> ;
+    ns3:made <http://ceur-ws.org/Vol-839/#desai>,
+        <http://ceur-ws.org/Vol-839/#patni> ;
+    ns3:name "Cory Henson" .
+
+<http://ceur-ws.org/Vol-839/#DavidiDeiRoure> a ns3:Person ;
+    ns4:affiliation "" ;
+    ns7:sameAs <http://ceur-ws.org/persons/DavidiDeiRoure> ;
+    ns3:made <http://ceur-ws.org/Vol-839/#preface> ;
+    ns3:name "David De Roure" .
+
+<http://ceur-ws.org/Vol-839/#KrzysztofiJanowicz> a ns3:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/KrzysztofiJanowicz> ;
+    ns3:made <http://ceur-ws.org/Vol-839/#broering>,
+        <http://ceur-ws.org/Vol-839/#stasch> ;
+    ns3:name "Krzysztof Janowicz" .
+
+<http://ceur-ws.org/Vol-839/#SveniSchade> a ns3:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/SveniSchade> ;
+    ns3:made <http://ceur-ws.org/Vol-839/#broering>,
+        <http://ceur-ws.org/Vol-839/#stasch> ;
+    ns3:name "Sven Schade" .
+
+<http://ceur-ws.org/Vol-839/#compton> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-839/> ;
+    ns5:title "What Now and Where Next for the W3C Semantic Sensor Networks Incubator Group Sensor Ontology" ;
+    ns2:endPage 8 ;
+    ns2:numPages 8 ;
+    ns2:section <http://ceur-ws.org/Vol-839/#FullPapers> ;
+    ns2:startPage 1 ;
+    ns4:author <http://ceur-ws.org/Vol-839/#MichaeliCompton> .
+
+<http://ceur-ws.org/Vol-839/#KerryiTaylor> a ns3:Person ;
+    ns4:affiliation "" ;
+    ns7:sameAs <http://ceur-ws.org/persons/KerryiTaylor> ;
+    ns3:made <http://ceur-ws.org/Vol-839/#leidinger>,
+        <http://ceur-ws.org/Vol-839/#preface> ;
+    ns3:name "Kerry Taylor" .
+
+<http://ceur-ws.org/Vol-839/#kannegieser> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-839/> ;
+    ns5:title "Short Paper: Using SOAR as a Semantic Support Component for Sensor Web Enablement" ;
+    ns2:endPage 87 ;
+    ns2:numPages 5 ;
+    ns2:section <http://ceur-ws.org/Vol-839/#ShortPapers> ;
+    ns2:startPage 83 ;
+    ns4:author <http://ceur-ws.org/Vol-839/#EhmiKannegieser>,
+        <http://ceur-ws.org/Vol-839/#SandroiLeuchter> .
+
+<http://ceur-ws.org/Vol-839/#leidinger> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-839/> ;
+    ns5:title "Demonstration: Defining and Detecting Complex Events in Sensor Networks" ;
+    ns2:endPage 113 ;
+    ns2:numPages 3 ;
+    ns2:section <http://ceur-ws.org/Vol-839/#DemonstrationPapers> ;
+    ns2:startPage 111 ;
+    ns4:author <http://ceur-ws.org/Vol-839/#KerryiTaylor>,
+        <http://ceur-ws.org/Vol-839/#LucasiLeidinger> .
+
+<http://ceur-ws.org/Vol-839/#moodley> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-839/> ;
+    ns5:title "A Semantic Infrastructure for a Knowledge Driven Sensor Web" ;
+    ns2:endPage 54 ;
+    ns2:numPages 16 ;
+    ns2:section <http://ceur-ws.org/Vol-839/#FullPapers> ;
+    ns2:startPage 39 ;
+    ns4:author <http://ceur-ws.org/Vol-839/#DeshendraniMoodley>,
+        <http://ceur-ws.org/Vol-839/#JulesiRaymondiTapamo> .
+
+<http://ceur-ws.org/Vol-839/#crowley> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-839/> ;
+    ns5:title "Short Paper: Annotating Microblog Posts with Sensor Data for Emergency Reporting Applications" ;
+    ns2:endPage 100 ;
+    ns2:numPages 6 ;
+    ns2:section <http://ceur-ws.org/Vol-839/#ShortPapers> ;
+    ns2:startPage 95 ;
+    ns4:author <http://ceur-ws.org/Vol-839/#AlexandreiPassant>,
+        <http://ceur-ws.org/Vol-839/#DavidiCrowley>,
+        <http://ceur-ws.org/Vol-839/#JohniG.iBreslin> .
+
+<http://ceur-ws.org/Vol-839/#daquin> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-839/> ;
+    ns5:title "Short Paper: Enabling Lightweight Semantic Sensor Networks on Android Devices" ;
+    ns2:endPage 94 ;
+    ns2:numPages 6 ;
+    ns2:section <http://ceur-ws.org/Vol-839/#ShortPapers> ;
+    ns2:startPage 89 ;
+    ns4:author <http://ceur-ws.org/Vol-839/#AndriyiNikolov>,
+        <http://ceur-ws.org/Vol-839/#EnricoiMotta>,
+        <http://ceur-ws.org/Vol-839/#MathieuiD%27Aquin> .
+
+<http://ceur-ws.org/Vol-839/#preface> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-839/> ;
+    ns5:title "Preface: Research Topics in Semantic Sensor Networks" ;
+    ns4:author <http://ceur-ws.org/Vol-839/#AruniAyyagari>,
         <http://ceur-ws.org/Vol-839/#DavidiDeiRoure>,
         <http://ceur-ws.org/Vol-839/#KerryiTaylor> .
 
-<http://ceur-ws.org/Vol-839/#AruniAyyagari> a ns1:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/AruniAyyagari> ;
-    ns1:name "Arun Ayyagari" .
+<http://ceur-ws.org/Vol-839/#roman> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-839/> ;
+    ns5:title "Demonstration: Sensapp - An Application Development Platform for OGC-based Sensor Services" ;
+    ns2:endPage 110 ;
+    ns2:numPages 4 ;
+    ns2:section <http://ceur-ws.org/Vol-839/#DemonstrationPapers> ;
+    ns2:startPage 107 ;
+    ns4:author <http://ceur-ws.org/Vol-839/#ArneiJ.iBerre>,
+        <http://ceur-ws.org/Vol-839/#DumitruiRoman>,
+        <http://ceur-ws.org/Vol-839/#XiaoxiniGao> .
 
-<http://ceur-ws.org/Vol-839/#DavidiDeiRoure> a ns1:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/DavidiDeiRoure> ;
-    ns1:name "David De Roure" .
+<http://ceur-ws.org/Vol-839/#ShortPapers> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-839/> ;
+    ns5:title "Short Papers" .
 
-<http://ceur-ws.org/Vol-839/#KerryiTaylor> a ns1:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/KerryiTaylor> ;
-    ns1:name "Kerry Taylor" .
+<http://ceur-ws.org/Vol-839/#calbimonte> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-839/> ;
+    ns5:title "Semantic Sensor Data Search in a Large-Scale Federated Sensor Network" ;
+    ns2:endPage 38 ;
+    ns2:numPages 16 ;
+    ns2:section <http://ceur-ws.org/Vol-839/#FullPapers> ;
+    ns2:startPage 23 ;
+    ns4:author <http://ceur-ws.org/Vol-839/#HoyoungiJeung>,
+        <http://ceur-ws.org/Vol-839/#Jean-PauliCalbimonte>,
+        <http://ceur-ws.org/Vol-839/#KarliAberer>,
+        <http://ceur-ws.org/Vol-839/#OscariCorcho> .
 
-<http://ceur-ws.org/Vol-839/#event> a ns6:WorkshopEvent ;
-    ns6:hasLocation <http://dbpedia.org/resource/Germany> ;
-    ns6:hasPart <http://ceur-ws.org/Vol-839/#part-CEUR-WS> ;
-    ns6:isSubEventOf <http://ceur-ws.org/Vol-839/#conf> ;
-    ns7:beginsAtDatetime "2011-10-23T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:endsAtDatetime "2011-10-23T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:license "http://choosealicense.com/licenses/no-license/" ;
-    rdfs:seeAlso <http://ceur-ws.org/Vol-522/#event>,
-        <http://ceur-ws.org/Vol-668/#event> .
+<http://ceur-ws.org/Vol-839/#desai> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-839/> ;
+    ns5:title "Demonstration: SECURE - Semantics Empowered ResCUe Environment" ;
+    ns2:endPage 118 ;
+    ns2:numPages 4 ;
+    ns2:section <http://ceur-ws.org/Vol-839/#DemonstrationPapers> ;
+    ns2:startPage 115 ;
+    ns4:author <http://ceur-ws.org/Vol-839/#AmitiSheth>,
+        <http://ceur-ws.org/Vol-839/#CoryiHenson>,
+        <http://ceur-ws.org/Vol-839/#PramodiAnantharam>,
+        <http://ceur-ws.org/Vol-839/#PratikkumariDesai> .
+
+<http://ceur-ws.org/Vol-839/#hasan> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-839/> ;
+    ns5:title "Toward Situation Awareness for the Semantic Sensor Web: Complex Event Processing with Dynamic Linked Data Enrichment" ;
+    ns2:endPage 81 ;
+    ns2:numPages 13 ;
+    ns2:section <http://ceur-ws.org/Vol-839/#FullPapers> ;
+    ns2:startPage 69 ;
+    ns4:author <http://ceur-ws.org/Vol-839/#EdwardiCurry>,
+        <http://ceur-ws.org/Vol-839/#MauricioiBanduk>,
+        <http://ceur-ws.org/Vol-839/#SeaniO%27Riain>,
+        <http://ceur-ws.org/Vol-839/#SouleimaniHasan> .
+
+<http://ceur-ws.org/Vol-839/#ramparany> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-839/> ;
+    ns5:title "Automated Context Learning in Ubiquitous Computing Environments" ;
+    ns2:endPage 21 ;
+    ns2:numPages 13 ;
+    ns2:section <http://ceur-ws.org/Vol-839/#FullPapers> ;
+    ns2:startPage 9 ;
+    ns4:author <http://ceur-ws.org/Vol-839/#FanoiRamparany>,
+        <http://ceur-ws.org/Vol-839/#JeremieiGadeyne>,
+        <http://ceur-ws.org/Vol-839/#PhilippeiBeaune>,
+        <http://ceur-ws.org/Vol-839/#YazidiBenazzouz> .
+
+<http://ceur-ws.org/Vol-839/#DemonstrationPapers> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-839/> ;
+    ns5:title "Demonstration Papers" .
+
+<http://ceur-ws.org/Vol-839/#corsar> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-839/> ;
+    ns5:title "Short Paper: Addressing the Challenges of Semantic Citizen-Sensing" ;
+    ns2:endPage 106 ;
+    ns2:numPages 6 ;
+    ns2:section <http://ceur-ws.org/Vol-839/#ShortPapers> ;
+    ns2:startPage 101 ;
+    ns4:author <http://ceur-ws.org/Vol-839/#DavidiCorsar>,
+        <http://ceur-ws.org/Vol-839/#JeffiPan>,
+        <http://ceur-ws.org/Vol-839/#JohniNelson>,
+        <http://ceur-ws.org/Vol-839/#NagendraiVelaga>,
+        <http://ceur-ws.org/Vol-839/#PeteriEdwards> .
+
+<http://ceur-ws.org/Vol-839/#patni> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-839/> ;
+    ns5:title "Demonstration: Real-Time Semantic Analysis of Sensor Streams" ;
+    ns2:endPage 122 ;
+    ns2:numPages 4 ;
+    ns2:section <http://ceur-ws.org/Vol-839/#DemonstrationPapers> ;
+    ns2:startPage 119 ;
+    ns4:author <http://ceur-ws.org/Vol-839/#AmitiSheth>,
+        <http://ceur-ws.org/Vol-839/#CoryiHenson>,
+        <http://ceur-ws.org/Vol-839/#HarshaliPatni>,
+        <http://ceur-ws.org/Vol-839/#KrishnaprasadiThirunarayan>,
+        <http://ceur-ws.org/Vol-839/#MichaeliCooney> .
+
+<http://ceur-ws.org/Vol-839/#stasch> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-839/> ;
+    ns5:title "Aggregating Linked Sensor Data" ;
+    ns2:endPage 68 ;
+    ns2:numPages 14 ;
+    ns2:section <http://ceur-ws.org/Vol-839/#FullPapers> ;
+    ns2:startPage 55 ;
+    ns4:author <http://ceur-ws.org/Vol-839/#AlejandroiLlaves>,
+        <http://ceur-ws.org/Vol-839/#ArneiBroring>,
+        <http://ceur-ws.org/Vol-839/#ChristophiStasch>,
+        <http://ceur-ws.org/Vol-839/#KrzysztofiJanowicz>,
+        <http://ceur-ws.org/Vol-839/#SveniSchade> .
+
+<http://ceur-ws.org/Vol-839/#FullPapers> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-839/> ;
+    ns5:title "Full Papers" .
+
+<http://ceur-ws.org/Vol-839/#broering> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-839/> ;
+    ns5:title "Demonstration: A RESTful SOS Proxy for Linked Sensor Data" ;
+    ns2:endPage 126 ;
+    ns2:numPages 4 ;
+    ns2:section <http://ceur-ws.org/Vol-839/#DemonstrationPapers> ;
+    ns2:startPage 123 ;
+    ns4:author <http://ceur-ws.org/Vol-839/#AlejandroiLlaves>,
+        <http://ceur-ws.org/Vol-839/#ArneiBroring>,
+        <http://ceur-ws.org/Vol-839/#ChristophiStasch>,
+        <http://ceur-ws.org/Vol-839/#KrzysztofiJanowicz>,
+        <http://ceur-ws.org/Vol-839/#SveniSchade>,
+        <http://ceur-ws.org/Vol-839/#ThomasiEverding> .
+
+<http://ceur-ws.org/Vol-839/> a ns1:Proceedings ;
+    ns1:hasPart <http://ceur-ws.org/Vol-839/#broering>,
+        <http://ceur-ws.org/Vol-839/#calbimonte>,
+        <http://ceur-ws.org/Vol-839/#compton>,
+        <http://ceur-ws.org/Vol-839/#corsar>,
+        <http://ceur-ws.org/Vol-839/#crowley>,
+        <http://ceur-ws.org/Vol-839/#daquin>,
+        <http://ceur-ws.org/Vol-839/#desai>,
+        <http://ceur-ws.org/Vol-839/#hasan>,
+        <http://ceur-ws.org/Vol-839/#kannegieser>,
+        <http://ceur-ws.org/Vol-839/#leidinger>,
+        <http://ceur-ws.org/Vol-839/#moodley>,
+        <http://ceur-ws.org/Vol-839/#patni>,
+        <http://ceur-ws.org/Vol-839/#preface>,
+        <http://ceur-ws.org/Vol-839/#ramparany>,
+        <http://ceur-ws.org/Vol-839/#roman>,
+        <http://ceur-ws.org/Vol-839/#stasch> ;
+    ns1:hasSession <http://ceur-ws.org/Vol-839/#DemonstrationPapers>,
+        <http://ceur-ws.org/Vol-839/#FullPapers>,
+        <http://ceur-ws.org/Vol-839/#ShortPapers> ;
+    ns6:issued "2012-03-30T00:00:00+00:00"^^xsd:dateTime ;
+    ns2:presentedAt <http://ceur-ws.org/Vol-839/#event> ;
+    ns4:editor <http://ceur-ws.org/Vol-839/#AruniAyyagari>,
+        <http://ceur-ws.org/Vol-839/#DavidiDeiRoure>,
+        <http://ceur-ws.org/Vol-839/#KerryiTaylor> .
 

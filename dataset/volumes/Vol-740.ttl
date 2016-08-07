@@ -1,6 +1,6 @@
-@prefix ns1: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns2: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns3: <http://purl.org/ontology/bibo/#> .
+@prefix ns1: <http://purl.org/ontology/bibo/#> .
+@prefix ns2: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns3: <http://swrc.ontoware.org/ontology/#> .
 @prefix ns4: <http://xmlns.com/foaf/0.1/> .
 @prefix ns5: <http://www.w3.org/2002/07/owl#> .
 @prefix ns6: <http://purl.org/dc/elements/1.1/#> .
@@ -152,12 +152,13 @@
     ns4:made <http://ceur-ws.org/Vol-740/#DEMRA2011_paper2> ;
     ns4:name "Wolfgang Woerndl" .
 
-<http://ceur-ws.org/Vol-740/#event> a ns1:WorkshopEvent ;
-    ns1:hasLocation <http://dbpedia.org/resource/Spain> ;
-    ns1:hasPart <http://ceur-ws.org/Vol-740/#part-CEUR-WS> ;
-    ns1:isSubEventOf <http://ceur-ws.org/Vol-740/#conf> ;
-    ns8:beginsAtDatetime "2011-06-24T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:endsAtDatetime "2011-06-24T00:00:00+00:00"^^xsd:dateTime ;
+<http://ceur-ws.org/Vol-740/#event> a ns2:WorkshopEvent ;
+    ns2:hasLocation <http://dbpedia.org/resource/Spain> ;
+    ns2:hasPart <http://ceur-ws.org/Vol-740/#part-DEMRA>,
+        <http://ceur-ws.org/Vol-740/#part-UMMS> ;
+    ns2:isSubEventOf <http://ceur-ws.org/Vol-740/#conf> ;
+    ns8:beginsAtDatetime "2011-07-11T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:endsAtDatetime "2011-07-11T00:00:00+00:00"^^xsd:dateTime ;
     ns7:license "http://choosealicense.com/licenses/no-license/" .
 
 <http://ceur-ws.org/Vol-740/#AndrejiKosir> a ns4:Person ;
@@ -166,35 +167,35 @@
         <http://ceur-ws.org/Vol-740/#UMMS2011_paper7> ;
     ns4:name "Andrej Kosir" .
 
-<http://ceur-ws.org/Vol-740/#DEMRA2011_paper1> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-740/> ;
+<http://ceur-ws.org/Vol-740/#DEMRA2011_paper1> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-740/> ;
     ns6:title "What Should Recommender Systems People Know About the Psychology of Choice and Decision Making?" ;
-    ns3:endPage 10 ;
-    ns3:numPages 1 ;
-    ns3:section <http://ceur-ws.org/Vol-740/#DecisionMakingandRecommendationAcceptanceIssuesinRecommenderSystemsDEMRA2011> ;
-    ns3:startPage 10 ;
-    ns2:author <http://ceur-ws.org/Vol-740/#AnthonyiJameson> .
+    ns1:endPage 10 ;
+    ns1:numPages 1 ;
+    ns1:section <http://ceur-ws.org/Vol-740/#DecisionMakingandRecommendationAcceptanceIssuesinRecommenderSystemsDEMRA2011> ;
+    ns1:startPage 10 ;
+    ns3:author <http://ceur-ws.org/Vol-740/#AnthonyiJameson> .
 
 <http://ceur-ws.org/Vol-740/#FlorianaiGrasso> a ns4:Person ;
-    ns2:affiliation "UMMS) (^" ;
+    ns3:affiliation "UMMS) (^" ;
     ns5:sameAs <http://ceur-ws.org/persons/FlorianaiGrasso> ;
     ns4:made <http://ceur-ws.org/Vol-740/#UMMS2011_preface> ;
     ns4:name "Floriana Grasso" .
 
 <http://ceur-ws.org/Vol-740/#GiovanniiSemeraro> a ns4:Person ;
-    ns2:affiliation "DEMRA) (+" ;
+    ns3:affiliation "DEMRA) (+" ;
     ns5:sameAs <http://ceur-ws.org/persons/GiovanniiSemeraro> ;
     ns4:made <http://ceur-ws.org/Vol-740/#DEMRA2011_preface> ;
     ns4:name "Giovanni Semeraro" .
 
 <http://ceur-ws.org/Vol-740/#JaapiHam> a ns4:Person ;
-    ns2:affiliation "UMMS) (�" ;
+    ns3:affiliation "UMMS) (�" ;
     ns5:sameAs <http://ceur-ws.org/persons/JaapiHam> ;
     ns4:made <http://ceur-ws.org/Vol-740/#UMMS2011_preface> ;
     ns4:name "Jaap Ham" .
 
 <http://ceur-ws.org/Vol-740/#JudithiMasthoff> a ns4:Person ;
-    ns2:affiliation "UMMS) (#" ;
+    ns3:affiliation "UMMS) (#" ;
     ns5:sameAs <http://ceur-ws.org/persons/JudithiMasthoff> ;
     ns4:made <http://ceur-ws.org/Vol-740/#UMMS2011_preface> ;
     ns4:name "Judith Masthoff" .
@@ -206,7 +207,7 @@
     ns4:name "Jurij Tasic" .
 
 <http://ceur-ws.org/Vol-740/#MarcoideiGemmis> a ns4:Person ;
-    ns2:affiliation "DEMRA) (+" ;
+    ns3:affiliation "DEMRA) (+" ;
     ns5:sameAs <http://ceur-ws.org/persons/MarcoideiGemmis> ;
     ns4:made <http://ceur-ws.org/Vol-740/#DEMRA2011_preface> ;
     ns4:name "Marco de Gemmis" .
@@ -218,173 +219,173 @@
     ns4:name "Marko Tkalcic" .
 
 <http://ceur-ws.org/Vol-740/#PasqualeiLops> a ns4:Person ;
-    ns2:affiliation "DEMRA) (+" ;
+    ns3:affiliation "DEMRA) (+" ;
     ns5:sameAs <http://ceur-ws.org/persons/PasqualeiLops> ;
     ns4:made <http://ceur-ws.org/Vol-740/#DEMRA2011_preface> ;
     ns4:name "Pasquale Lops" .
 
 <http://ceur-ws.org/Vol-740/#FrancescoiRicci> a ns4:Person ;
-    ns2:affiliation "DEMRA) (" ;
+    ns3:affiliation "DEMRA) (" ;
     ns5:sameAs <http://ceur-ws.org/persons/FrancescoiRicci> ;
     ns4:made <http://ceur-ws.org/Vol-740/#DEMRA2011_paper3>,
         <http://ceur-ws.org/Vol-740/#DEMRA2011_preface> ;
     ns4:name "Francesco Ricci" .
 
-<http://ceur-ws.org/Vol-740/#UMMS2011_paper1> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-740/> ;
+<http://ceur-ws.org/Vol-740/#UMMS2011_paper1> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-740/> ;
     ns6:title "Motivating People in Smart Environments" ;
-    ns3:endPage 47 ;
-    ns3:numPages 1 ;
-    ns3:section <http://ceur-ws.org/Vol-740/#UserModelsforMotivationalSystemsTheaffectiveandtherationalroutestopersuasionUMMS2011> ;
-    ns3:startPage 47 ;
-    ns2:author <http://ceur-ws.org/Vol-740/#BerardinaiDeiCarolis>,
+    ns1:endPage 47 ;
+    ns1:numPages 1 ;
+    ns1:section <http://ceur-ws.org/Vol-740/#UserModelsforMotivationalSystemsTheaffectiveandtherationalroutestopersuasionUMMS2011> ;
+    ns1:startPage 47 ;
+    ns3:author <http://ceur-ws.org/Vol-740/#BerardinaiDeiCarolis>,
         <http://ceur-ws.org/Vol-740/#IreneiMazzotta> .
 
-<http://ceur-ws.org/Vol-740/#UMMS2011_paper2> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-740/> ;
+<http://ceur-ws.org/Vol-740/#UMMS2011_paper2> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-740/> ;
     ns6:title "Arguing with Emotions" ;
-    ns3:endPage 59 ;
-    ns3:numPages 1 ;
-    ns3:section <http://ceur-ws.org/Vol-740/#UserModelsforMotivationalSystemsTheaffectiveandtherationalroutestopersuasionUMMS2011> ;
-    ns3:startPage 59 ;
-    ns2:author <http://ceur-ws.org/Vol-740/#AdamiWyner>,
+    ns1:endPage 59 ;
+    ns1:numPages 1 ;
+    ns1:section <http://ceur-ws.org/Vol-740/#UserModelsforMotivationalSystemsTheaffectiveandtherationalroutestopersuasionUMMS2011> ;
+    ns1:startPage 59 ;
+    ns3:author <http://ceur-ws.org/Vol-740/#AdamiWyner>,
         <http://ceur-ws.org/Vol-740/#MartyniLloyd-Kelly> .
 
-<http://ceur-ws.org/Vol-740/#UMMS2011_paper3> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-740/> ;
+<http://ceur-ws.org/Vol-740/#UMMS2011_paper3> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-740/> ;
     ns6:title "Adapting Engagement e-mails to Users' Characteristics" ;
-    ns3:endPage 71 ;
-    ns3:numPages 1 ;
-    ns3:section <http://ceur-ws.org/Vol-740/#UserModelsforMotivationalSystemsTheaffectiveandtherationalroutestopersuasionUMMS2011> ;
-    ns3:startPage 71 ;
-    ns2:author <http://ceur-ws.org/Vol-740/#ClaudiaiLopez>,
+    ns1:endPage 71 ;
+    ns1:numPages 1 ;
+    ns1:section <http://ceur-ws.org/Vol-740/#UserModelsforMotivationalSystemsTheaffectiveandtherationalroutestopersuasionUMMS2011> ;
+    ns1:startPage 71 ;
+    ns3:author <http://ceur-ws.org/Vol-740/#ClaudiaiLopez>,
         <http://ceur-ws.org/Vol-740/#PeteriBrusilovsky> .
 
-<http://ceur-ws.org/Vol-740/#UMMS2011_paper5> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-740/> ;
+<http://ceur-ws.org/Vol-740/#UMMS2011_paper5> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-740/> ;
     ns6:title "Towards an Embodied View of Flow" ;
-    ns3:endPage 100 ;
-    ns3:numPages 1 ;
-    ns3:section <http://ceur-ws.org/Vol-740/#UserModelsforMotivationalSystemsTheaffectiveandtherationalroutestopersuasionUMMS2011> ;
-    ns3:startPage 100 ;
-    ns2:author <http://ceur-ws.org/Vol-740/#EduardoiCalvillo-Gamez>,
+    ns1:endPage 100 ;
+    ns1:numPages 1 ;
+    ns1:section <http://ceur-ws.org/Vol-740/#UserModelsforMotivationalSystemsTheaffectiveandtherationalroutestopersuasionUMMS2011> ;
+    ns1:startPage 100 ;
+    ns3:author <http://ceur-ws.org/Vol-740/#EduardoiCalvillo-Gamez>,
         <http://ceur-ws.org/Vol-740/#PabloiRomero> .
 
-<http://ceur-ws.org/Vol-740/#DEMRA2011_paper4> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-740/> ;
+<http://ceur-ws.org/Vol-740/#DEMRA2011_paper4> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-740/> ;
     ns6:title "Group Decision Support for Requirements Negotiation" ;
-    ns3:endPage 27 ;
-    ns3:numPages 1 ;
-    ns3:section <http://ceur-ws.org/Vol-740/#DecisionMakingandRecommendationAcceptanceIssuesinRecommenderSystemsDEMRA2011> ;
-    ns3:startPage 27 ;
-    ns2:author <http://ceur-ws.org/Vol-740/#AlexanderiFelfernig>,
+    ns1:endPage 27 ;
+    ns1:numPages 1 ;
+    ns1:section <http://ceur-ws.org/Vol-740/#DecisionMakingandRecommendationAcceptanceIssuesinRecommenderSystemsDEMRA2011> ;
+    ns1:startPage 27 ;
+    ns3:author <http://ceur-ws.org/Vol-740/#AlexanderiFelfernig>,
         <http://ceur-ws.org/Vol-740/#ChristophiZehentner>,
         <http://ceur-ws.org/Vol-740/#HaraldiGrabner> .
 
-<http://ceur-ws.org/Vol-740/#UMMS2011_paper4> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-740/> ;
+<http://ceur-ws.org/Vol-740/#UMMS2011_paper4> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-740/> ;
     ns6:title "Discrediting Moves in Political Debates" ;
-    ns3:endPage 84 ;
-    ns3:numPages 1 ;
-    ns3:section <http://ceur-ws.org/Vol-740/#UserModelsforMotivationalSystemsTheaffectiveandtherationalroutestopersuasionUMMS2011> ;
-    ns3:startPage 84 ;
-    ns2:author <http://ceur-ws.org/Vol-740/#FrancescaiD%27Errico>,
+    ns1:endPage 84 ;
+    ns1:numPages 1 ;
+    ns1:section <http://ceur-ws.org/Vol-740/#UserModelsforMotivationalSystemsTheaffectiveandtherationalroutestopersuasionUMMS2011> ;
+    ns1:startPage 84 ;
+    ns3:author <http://ceur-ws.org/Vol-740/#FrancescaiD%27Errico>,
         <http://ceur-ws.org/Vol-740/#IsabellaiPoggi>,
         <http://ceur-ws.org/Vol-740/#LauraiVincze> .
 
-<http://ceur-ws.org/Vol-740/#UMMS2011_preface> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-740/> ;
+<http://ceur-ws.org/Vol-740/#UMMS2011_preface> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-740/> ;
     ns6:title "Preface of UMMS 2011" ;
-    ns3:endPage 44 ;
-    ns3:numPages 1 ;
-    ns3:section <http://ceur-ws.org/Vol-740/#UserModelsforMotivationalSystemsTheaffectiveandtherationalroutestopersuasionUMMS2011> ;
-    ns3:startPage 44 ;
-    ns2:author <http://ceur-ws.org/Vol-740/#FlorianaiGrasso>,
+    ns1:endPage 44 ;
+    ns1:numPages 1 ;
+    ns1:section <http://ceur-ws.org/Vol-740/#UserModelsforMotivationalSystemsTheaffectiveandtherationalroutestopersuasionUMMS2011> ;
+    ns1:startPage 44 ;
+    ns3:author <http://ceur-ws.org/Vol-740/#FlorianaiGrasso>,
         <http://ceur-ws.org/Vol-740/#JaapiHam>,
         <http://ceur-ws.org/Vol-740/#JudithiMasthoff> .
 
-<http://ceur-ws.org/Vol-740/#DEMRA2011_paper2> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-740/> ;
+<http://ceur-ws.org/Vol-740/#DEMRA2011_paper2> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-740/> ;
     ns6:title "Explanations in Proactive Recommender Systems in Automotive Scenarios" ;
-    ns3:endPage 11 ;
-    ns3:numPages 1 ;
-    ns3:section <http://ceur-ws.org/Vol-740/#DecisionMakingandRecommendationAcceptanceIssuesinRecommenderSystemsDEMRA2011> ;
-    ns3:startPage 11 ;
-    ns2:author <http://ceur-ws.org/Vol-740/#AndreasiKaritnig>,
+    ns1:endPage 11 ;
+    ns1:numPages 1 ;
+    ns1:section <http://ceur-ws.org/Vol-740/#DecisionMakingandRecommendationAcceptanceIssuesinRecommenderSystemsDEMRA2011> ;
+    ns1:startPage 11 ;
+    ns3:author <http://ceur-ws.org/Vol-740/#AndreasiKaritnig>,
         <http://ceur-ws.org/Vol-740/#GerhardiLeitner>,
         <http://ceur-ws.org/Vol-740/#RolandiBader>,
         <http://ceur-ws.org/Vol-740/#WolfgangiWoerndl> .
 
-<http://ceur-ws.org/Vol-740/#DEMRA2011_paper3> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-740/> ;
+<http://ceur-ws.org/Vol-740/#DEMRA2011_paper3> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-740/> ;
     ns6:title "Context-Aware Places of Interest Recommendations and Explanations" ;
-    ns3:endPage 19 ;
-    ns3:numPages 1 ;
-    ns3:section <http://ceur-ws.org/Vol-740/#DecisionMakingandRecommendationAcceptanceIssuesinRecommenderSystemsDEMRA2011> ;
-    ns3:startPage 19 ;
-    ns2:author <http://ceur-ws.org/Vol-740/#BerndiLudwig>,
+    ns1:endPage 19 ;
+    ns1:numPages 1 ;
+    ns1:section <http://ceur-ws.org/Vol-740/#DecisionMakingandRecommendationAcceptanceIssuesinRecommenderSystemsDEMRA2011> ;
+    ns1:startPage 19 ;
+    ns3:author <http://ceur-ws.org/Vol-740/#BerndiLudwig>,
         <http://ceur-ws.org/Vol-740/#FrancescoiRicci>,
         <http://ceur-ws.org/Vol-740/#LinasiBaltrunas>,
         <http://ceur-ws.org/Vol-740/#StefaniPeer> .
 
-<http://ceur-ws.org/Vol-740/#DEMRA2011_paper5> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-740/> ;
+<http://ceur-ws.org/Vol-740/#DEMRA2011_paper5> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-740/> ;
     ns6:title "Exploring the Effects of Feed-forward and Feedback on Information Disclosure and User Experience in a Context-Aware Recommender System" ;
-    ns3:endPage 35 ;
-    ns3:numPages 1 ;
-    ns3:section <http://ceur-ws.org/Vol-740/#DecisionMakingandRecommendationAcceptanceIssuesinRecommenderSystemsDEMRA2011> ;
-    ns3:startPage 35 ;
-    ns2:author <http://ceur-ws.org/Vol-740/#AlfrediKobsa>,
+    ns1:endPage 35 ;
+    ns1:numPages 1 ;
+    ns1:section <http://ceur-ws.org/Vol-740/#DecisionMakingandRecommendationAcceptanceIssuesinRecommenderSystemsDEMRA2011> ;
+    ns1:startPage 35 ;
+    ns3:author <http://ceur-ws.org/Vol-740/#AlfrediKobsa>,
         <http://ceur-ws.org/Vol-740/#BartiKnijnenburg>,
         <http://ceur-ws.org/Vol-740/#MartiniSvensson>,
         <http://ceur-ws.org/Vol-740/#SimoniMoritz> .
 
-<http://ceur-ws.org/Vol-740/#DEMRA2011_preface> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-740/> ;
+<http://ceur-ws.org/Vol-740/#DEMRA2011_preface> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-740/> ;
     ns6:title "Preface of DEMRA 2011" ;
-    ns3:endPage 7 ;
-    ns3:numPages 1 ;
-    ns3:section <http://ceur-ws.org/Vol-740/#DecisionMakingandRecommendationAcceptanceIssuesinRecommenderSystemsDEMRA2011> ;
-    ns3:startPage 7 ;
-    ns2:author <http://ceur-ws.org/Vol-740/#FrancescoiRicci>,
+    ns1:endPage 7 ;
+    ns1:numPages 1 ;
+    ns1:section <http://ceur-ws.org/Vol-740/#DecisionMakingandRecommendationAcceptanceIssuesinRecommenderSystemsDEMRA2011> ;
+    ns1:startPage 7 ;
+    ns3:author <http://ceur-ws.org/Vol-740/#FrancescoiRicci>,
         <http://ceur-ws.org/Vol-740/#GiovanniiSemeraro>,
         <http://ceur-ws.org/Vol-740/#MarcoideiGemmis>,
         <http://ceur-ws.org/Vol-740/#PasqualeiLops> .
 
-<http://ceur-ws.org/Vol-740/#UMMS2011_paper6> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-740/> ;
+<http://ceur-ws.org/Vol-740/#UMMS2011_paper6> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-740/> ;
     ns6:title "Addressing the New User Problem with a Personality Based User Similarity Measure" ;
-    ns3:endPage 106 ;
-    ns3:numPages 1 ;
-    ns3:section <http://ceur-ws.org/Vol-740/#UserModelsforMotivationalSystemsTheaffectiveandtherationalroutestopersuasionUMMS2011> ;
-    ns3:startPage 106 ;
-    ns2:author <http://ceur-ws.org/Vol-740/#AndrejiKosir>,
+    ns1:endPage 106 ;
+    ns1:numPages 1 ;
+    ns1:section <http://ceur-ws.org/Vol-740/#UserModelsforMotivationalSystemsTheaffectiveandtherationalroutestopersuasionUMMS2011> ;
+    ns1:startPage 106 ;
+    ns3:author <http://ceur-ws.org/Vol-740/#AndrejiKosir>,
         <http://ceur-ws.org/Vol-740/#JurijiTasic>,
         <http://ceur-ws.org/Vol-740/#MarkoiTkalcic>,
         <http://ceur-ws.org/Vol-740/#MatevziKunaver> .
 
-<http://ceur-ws.org/Vol-740/#UMMS2011_paper7> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-740/> ;
+<http://ceur-ws.org/Vol-740/#UMMS2011_paper7> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-740/> ;
     ns6:title "Impact of Implicit and Explicit Affective Labeling on a Recommender System's Performance" ;
-    ns3:endPage 112 ;
-    ns3:numPages 1 ;
-    ns3:section <http://ceur-ws.org/Vol-740/#UserModelsforMotivationalSystemsTheaffectiveandtherationalroutestopersuasionUMMS2011> ;
-    ns3:startPage 112 ;
-    ns2:author <http://ceur-ws.org/Vol-740/#AndrejiKosir>,
+    ns1:endPage 112 ;
+    ns1:numPages 1 ;
+    ns1:section <http://ceur-ws.org/Vol-740/#UserModelsforMotivationalSystemsTheaffectiveandtherationalroutestopersuasionUMMS2011> ;
+    ns1:startPage 112 ;
+    ns3:author <http://ceur-ws.org/Vol-740/#AndrejiKosir>,
         <http://ceur-ws.org/Vol-740/#AnteiOdic>,
         <http://ceur-ws.org/Vol-740/#JurijiTasic>,
         <http://ceur-ws.org/Vol-740/#MarkoiTkalcic> .
 
-<http://ceur-ws.org/Vol-740/#DecisionMakingandRecommendationAcceptanceIssuesinRecommenderSystemsDEMRA2011> a ns1:SessionEvent ;
-    ns1:partOf <http://ceur-ws.org/Vol-740/> ;
+<http://ceur-ws.org/Vol-740/#DecisionMakingandRecommendationAcceptanceIssuesinRecommenderSystemsDEMRA2011> a ns2:SessionEvent ;
+    ns2:partOf <http://ceur-ws.org/Vol-740/> ;
     ns6:title "Decision Making and Recommendation Acceptance Issues in Recommender Systems (DEMRA 2011)" .
 
-<http://ceur-ws.org/Vol-740/#UserModelsforMotivationalSystemsTheaffectiveandtherationalroutestopersuasionUMMS2011> a ns1:SessionEvent ;
-    ns1:partOf <http://ceur-ws.org/Vol-740/> ;
+<http://ceur-ws.org/Vol-740/#UserModelsforMotivationalSystemsTheaffectiveandtherationalroutestopersuasionUMMS2011> a ns2:SessionEvent ;
+    ns2:partOf <http://ceur-ws.org/Vol-740/> ;
     ns6:title "User Models for Motivational Systems: The affective and the rational routes to persuasion (UMMS 2011)" .
 
-<http://ceur-ws.org/Vol-740/> a ns1:Proceedings ;
-    ns1:hasPart <http://ceur-ws.org/Vol-740/#DEMRA2011_paper1>,
+<http://ceur-ws.org/Vol-740/> a ns2:Proceedings ;
+    ns2:hasPart <http://ceur-ws.org/Vol-740/#DEMRA2011_paper1>,
         <http://ceur-ws.org/Vol-740/#DEMRA2011_paper2>,
         <http://ceur-ws.org/Vol-740/#DEMRA2011_paper3>,
         <http://ceur-ws.org/Vol-740/#DEMRA2011_paper4>,
@@ -398,11 +399,11 @@
         <http://ceur-ws.org/Vol-740/#UMMS2011_paper6>,
         <http://ceur-ws.org/Vol-740/#UMMS2011_paper7>,
         <http://ceur-ws.org/Vol-740/#UMMS2011_preface> ;
-    ns1:hasSession <http://ceur-ws.org/Vol-740/#DecisionMakingandRecommendationAcceptanceIssuesinRecommenderSystemsDEMRA2011>,
+    ns2:hasSession <http://ceur-ws.org/Vol-740/#DecisionMakingandRecommendationAcceptanceIssuesinRecommenderSystemsDEMRA2011>,
         <http://ceur-ws.org/Vol-740/#UserModelsforMotivationalSystemsTheaffectiveandtherationalroutestopersuasionUMMS2011> ;
     ns9:issued "2011-06-24T00:00:00+00:00"^^xsd:dateTime ;
-    ns3:presentedAt <http://ceur-ws.org/Vol-740/#event> ;
-    ns2:editor <http://ceur-ws.org/Vol-740/#FlorianaiGrasso>,
+    ns1:presentedAt <http://ceur-ws.org/Vol-740/#event> ;
+    ns3:editor <http://ceur-ws.org/Vol-740/#FlorianaiGrasso>,
         <http://ceur-ws.org/Vol-740/#FrancescoiRicci>,
         <http://ceur-ws.org/Vol-740/#GiovanniiSemeraro>,
         <http://ceur-ws.org/Vol-740/#JaapiHam>,

@@ -1,36 +1,156 @@
-@prefix ns1: <http://purl.org/ontology/bibo/#> .
-@prefix ns2: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns1: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns2: <http://purl.org/ontology/bibo/#> .
 @prefix ns3: <http://xmlns.com/foaf/0.1/> .
-@prefix ns4: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns5: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns6: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns7: <http://purl.org/dc/elements/1.1/> .
-@prefix ns8: <http://www.w3.org/2002/07/owl#> .
+@prefix ns4: <http://purl.org/dc/elements/1.1/> .
+@prefix ns5: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns6: <http://www.w3.org/2002/07/owl#> .
+@prefix ns7: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns9: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1651/> a ns2:Proceedings ;
-    ns5:issued "2016-08-03T00:00:00+00:00"^^xsd:dateTime ;
-    ns1:presentedAt <http://ceur-ws.org/Vol-1651/#event> ;
-    ns4:editor <http://ceur-ws.org/Vol-1651/#ClaudiaiSchon>,
-        <http://ceur-ws.org/Vol-1651/#UlrichiFurbach> .
+<http://ceur-ws.org/Vol-1651/#AaroniSloman> a ns3:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/AaroniSloman> ;
+    ns3:made <http://ceur-ws.org/Vol-1651/#12340084> ;
+    ns3:name "Aaron Sloman" .
 
-<http://ceur-ws.org/Vol-1651/#ClaudiaiSchon> a ns3:Person ;
-    ns8:sameAs <http://ceur-ws.org/persons/ClaudiaiSchon> ;
-    ns3:name "Claudia Schon" .
+<http://ceur-ws.org/Vol-1651/#AnaiCosta> a ns3:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/AnaiCosta> ;
+    ns3:made <http://ceur-ws.org/Vol-1651/#12340003> ;
+    ns3:name "Ana Costa" .
+
+<http://ceur-ws.org/Vol-1651/#AntonisiKakas> a ns3:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/AntonisiKakas> ;
+    ns3:made <http://ceur-ws.org/Vol-1651/#12340041> ;
+    ns3:name "Antonis Kakas" .
+
+<http://ceur-ws.org/Vol-1651/#MarcoiRagni> a ns3:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/MarcoiRagni> ;
+    ns3:made <http://ceur-ws.org/Vol-1651/#12340059> ;
+    ns3:name "Marco Ragni" .
+
+<http://ceur-ws.org/Vol-1651/#NaveeniSundariGovindarajulu> a ns3:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/NaveeniSundariGovindarajulu> ;
+    ns3:made <http://ceur-ws.org/Vol-1651/#12340026> ;
+    ns3:name "Naveen Sundar Govindarajulu" .
+
+<http://ceur-ws.org/Vol-1651/#SangeetiKhemlani> a ns3:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/SangeetiKhemlani> ;
+    ns3:made <http://ceur-ws.org/Vol-1651/#12340001> ;
+    ns3:name "Sangeet Khemlani" .
+
+<http://ceur-ws.org/Vol-1651/#event> a ns7:WorkshopEvent ;
+    ns7:hasLocation <http://dbpedia.org/resource/United_States> ;
+    ns7:hasPart <http://ceur-ws.org/Vol-1651/#part-ws> ;
+    ns7:isSubEventOf <http://ceur-ws.org/Vol-1651/#conf> ;
+    ns8:beginsAtDatetime "2016-07-09T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:endsAtDatetime "2016-07-09T00:00:00+00:00"^^xsd:dateTime ;
+    ns4:license "http://creativecommons.org/publicdomain/zero/1.0/" ;
+    rdfs:seeAlso <http://ceur-ws.org/Vol-1412/#event> .
+
+<http://ceur-ws.org/Vol-1651/#metadataiincl.ibibliographicidataipublishediunder> a ns3:Person ;
+    ns6:sameAs <http://ceur-ws.org/persons/metadataiincl.ibibliographicidataipublishediunder> ;
+    ns3:made <http://ceur-ws.org/Vol-1651/#paperX1> ;
+    ns3:name "metadata incl. bibliographic data published under" .
+
+<http://ceur-ws.org/Vol-1651/#12340001> a ns7:Paper ;
+    ns7:partOf <http://ceur-ws.org/Vol-1651/> ;
+    ns1:title "Automating Human Inference" ;
+    ns2:endPage 1 ;
+    ns2:numPages 1 ;
+    ns2:startPage 1 ;
+    ns5:author <http://ceur-ws.org/Vol-1651/#SangeetiKhemlani> .
+
+<http://ceur-ws.org/Vol-1651/#12340003> a ns7:Paper ;
+    ns7:partOf <http://ceur-ws.org/Vol-1651/> ;
+    ns1:title "Syllogistic Reasoning under the Weak Completion Semantics" ;
+    ns2:endPage 19 ;
+    ns2:numPages 15 ;
+    ns2:startPage 5 ;
+    ns5:author <http://ceur-ws.org/Vol-1651/#AnaiCosta> .
+
+<http://ceur-ws.org/Vol-1651/#12340018> a ns7:Paper ;
+    ns7:partOf <http://ceur-ws.org/Vol-1651/> ;
+    ns1:title "Relating Strong Spatial Cognition to Symbolic Problem Solving — An Example" ;
+    ns2:endPage 27 ;
+    ns2:numPages 8 ;
+    ns2:startPage 20 ;
+    ns5:author <http://ceur-ws.org/Vol-1651/#UlrichiFurbach> .
+
+<http://ceur-ws.org/Vol-1651/#12340026> a ns7:Paper ;
+    ns7:partOf <http://ceur-ws.org/Vol-1651/> ;
+    ns1:title "Crowdsourcing Theorem Proving via Natural Games" ;
+    ns2:endPage 42 ;
+    ns2:numPages 15 ;
+    ns2:startPage 28 ;
+    ns5:author <http://ceur-ws.org/Vol-1651/#NaveeniSundariGovindarajulu> .
+
+<http://ceur-ws.org/Vol-1651/#12340041> a ns7:Paper ;
+    ns7:partOf <http://ceur-ws.org/Vol-1651/> ;
+    ns1:title "Argumentation: Reconciling Human and Automated Reasoning" ;
+    ns2:endPage 60 ;
+    ns2:numPages 18 ;
+    ns2:startPage 43 ;
+    ns5:author <http://ceur-ws.org/Vol-1651/#AntonisiKakas> .
+
+<http://ceur-ws.org/Vol-1651/#12340059> a ns7:Paper ;
+    ns7:partOf <http://ceur-ws.org/Vol-1651/> ;
+    ns1:title "Two-Valued Logic is Not Sufficient to Model Human Reasoning, but Three-Valued Logic is: A Formal Analysis" ;
+    ns2:endPage 73 ;
+    ns2:numPages 13 ;
+    ns2:startPage 61 ;
+    ns5:author <http://ceur-ws.org/Vol-1651/#MarcoiRagni> .
+
+<http://ceur-ws.org/Vol-1651/#12340072> a ns7:Paper ;
+    ns7:partOf <http://ceur-ws.org/Vol-1651/> ;
+    ns1:title "Commonsense Reasoning Meets Theorem Proving" ;
+    ns2:endPage 85 ;
+    ns2:numPages 12 ;
+    ns2:startPage 74 ;
+    ns5:author <http://ceur-ws.org/Vol-1651/#UlrichiFurbach> .
+
+<http://ceur-ws.org/Vol-1651/#12340084> a ns7:Paper ;
+    ns7:partOf <http://ceur-ws.org/Vol-1651/> ;
+    ns1:title "Natural Vision and Mathematics: Seeing Impossibilities" ;
+    ns2:endPage 101 ;
+    ns2:numPages 16 ;
+    ns2:startPage 86 ;
+    ns5:author <http://ceur-ws.org/Vol-1651/#AaroniSloman> .
+
+<http://ceur-ws.org/Vol-1651/#2016-08-02%3AisubmittedibyiClaudiaiSchon> a ns3:Person ;
+    ns5:affiliation "" ;
+    ns6:sameAs <http://ceur-ws.org/persons/2016-08-02%3AisubmittedibyiClaudiaiSchon> ;
+    ns3:made <http://ceur-ws.org/Vol-1651/#paperX1> ;
+    ns3:name "2016-08-02: submitted by Claudia Schon" .
 
 <http://ceur-ws.org/Vol-1651/#UlrichiFurbach> a ns3:Person ;
-    ns8:sameAs <http://ceur-ws.org/persons/UlrichiFurbach> ;
+    ns5:affiliation "" ;
+    ns6:sameAs <http://ceur-ws.org/persons/UlrichiFurbach> ;
+    ns3:made <http://ceur-ws.org/Vol-1651/#12340018>,
+        <http://ceur-ws.org/Vol-1651/#12340072> ;
     ns3:name "Ulrich Furbach" .
 
-<http://ceur-ws.org/Vol-1651/#event> a ns2:WorkshopEvent ;
-    ns2:hasLocation <http://dbpedia.org/resource/United_States> ;
-    ns2:hasPart <http://ceur-ws.org/Vol-1651/#part-ws> ;
-    ns2:isSubEventOf <http://ceur-ws.org/Vol-1651/#conf> ;
-    ns6:beginsAtDatetime "2016-07-09T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:endsAtDatetime "2016-07-09T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:license "http://creativecommons.org/publicdomain/zero/1.0/" ;
-    rdfs:seeAlso <http://ceur-ws.org/Vol-1412/#event> .
+<http://ceur-ws.org/Vol-1651/#paperX1> a ns7:Paper ;
+    ns7:partOf <http://ceur-ws.org/Vol-1651/> ;
+    ns1:title "The whole proceedings can also be downloaded as a" ;
+    ns5:author <http://ceur-ws.org/Vol-1651/#2016-08-02%3AisubmittedibyiClaudiaiSchon>,
+        <http://ceur-ws.org/Vol-1651/#metadataiincl.ibibliographicidataipublishediunder> .
+
+<http://ceur-ws.org/Vol-1651/> a ns7:Proceedings ;
+    ns7:hasPart <http://ceur-ws.org/Vol-1651/#12340001>,
+        <http://ceur-ws.org/Vol-1651/#12340003>,
+        <http://ceur-ws.org/Vol-1651/#12340018>,
+        <http://ceur-ws.org/Vol-1651/#12340026>,
+        <http://ceur-ws.org/Vol-1651/#12340041>,
+        <http://ceur-ws.org/Vol-1651/#12340059>,
+        <http://ceur-ws.org/Vol-1651/#12340072>,
+        <http://ceur-ws.org/Vol-1651/#12340084>,
+        <http://ceur-ws.org/Vol-1651/#paperX1> ;
+    ns9:issued "2016-08-03T00:00:00+00:00"^^xsd:dateTime ;
+    ns2:presentedAt <http://ceur-ws.org/Vol-1651/#event> ;
+    ns5:editor <http://ceur-ws.org/Vol-1651/#2016-08-02%3AisubmittedibyiClaudiaiSchon>,
+        <http://ceur-ws.org/Vol-1651/#UlrichiFurbach> .
 

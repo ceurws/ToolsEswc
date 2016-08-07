@@ -1,50 +1,271 @@
-@prefix ns1: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns2: <http://www.w3.org/2002/07/owl#> .
-@prefix ns3: <http://xmlns.com/foaf/0.1/> .
-@prefix ns4: <http://purl.org/dc/elements/1.1/> .
-@prefix ns5: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns6: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns8: <http://purl.org/ontology/bibo/#> .
+@prefix ns1: <http://xmlns.com/foaf/0.1/> .
+@prefix ns2: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns3: <http://www.w3.org/2002/07/owl#> .
+@prefix ns4: <http://purl.org/ontology/bibo/#> .
+@prefix ns5: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns6: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns7: <http://purl.org/dc/elements/1.1/> .
+@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns9: <http://purl.org/NET/c4dm/timeline.owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1370/> a ns6:Proceedings ;
-    ns5:issued "2015-05-29T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:presentedAt <http://ceur-ws.org/Vol-1370/#event> ;
-    ns1:editor <http://ceur-ws.org/Vol-1370/#EriciYu>,
+<http://ceur-ws.org/Vol-1370/#AmeliBennaceur> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/AmeliBennaceur> ;
+    ns1:made <http://ceur-ws.org/Vol-1370/#paper_8> ;
+    ns1:name "Amel Bennaceur" .
+
+<http://ceur-ws.org/Vol-1370/#AntonioideiP%C3%A1duaiAlbuquerqueiOliveira> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/AntonioideiP%C3%A1duaiAlbuquerqueiOliveira> ;
+    ns1:made <http://ceur-ws.org/Vol-1370/#paper_9> ;
+    ns1:name "Antonio de Pádua Albuquerque Oliveira" .
+
+<http://ceur-ws.org/Vol-1370/#EldaiPaja> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/EldaiPaja> ;
+    ns1:made <http://ceur-ws.org/Vol-1370/#paper_7> ;
+    ns1:name "Elda Paja" .
+
+<http://ceur-ws.org/Vol-1370/#Eric-OlufiSvee> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/Eric-OlufiSvee> ;
+    ns1:made <http://ceur-ws.org/Vol-1370/#paper_4> ;
+    ns1:name "Eric-Oluf Svee" .
+
+<http://ceur-ws.org/Vol-1370/#FabianoiDalpiaz> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/FabianoiDalpiaz> ;
+    ns1:made <http://ceur-ws.org/Vol-1370/#paper_1> ;
+    ns1:name "Fabiano Dalpiaz" .
+
+<http://ceur-ws.org/Vol-1370/#JelenaiZdravkovic> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/JelenaiZdravkovic> ;
+    ns1:made <http://ceur-ws.org/Vol-1370/#paper_4> ;
+    ns1:name "Jelena Zdravkovic" .
+
+<http://ceur-ws.org/Vol-1370/#JuaniPabloiCarvallo> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/JuaniPabloiCarvallo> ;
+    ns1:made <http://ceur-ws.org/Vol-1370/#paper_2> ;
+    ns1:name "Juan Pablo Carvallo" .
+
+<http://ceur-ws.org/Vol-1370/#JulioiCesariSampaioidoiPradoiLeite> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/JulioiCesariSampaioidoiPradoiLeite> ;
+    ns1:made <http://ceur-ws.org/Vol-1370/#paper_9> ;
+    ns1:name "Julio Cesar Sampaio do Prado Leite" .
+
+<http://ceur-ws.org/Vol-1370/#LuiziMarcioiCysneiros> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/LuiziMarcioiCysneiros> ;
+    ns1:made <http://ceur-ws.org/Vol-1370/#paper_9> ;
+    ns1:name "Luiz Marcio Cysneiros" .
+
+<http://ceur-ws.org/Vol-1370/#OscariPastor> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/OscariPastor> ;
+    ns1:made <http://ceur-ws.org/Vol-1370/#keynote> ;
+    ns1:name "Oscar Pastor" .
+
+<http://ceur-ws.org/Vol-1370/#VeraiMariaiBenjamimiWerneck> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/VeraiMariaiBenjamimiWerneck> ;
+    ns1:made <http://ceur-ws.org/Vol-1370/#paper_9> ;
+    ns1:name "Vera Maria Benjamim Werneck" .
+
+<http://ceur-ws.org/Vol-1370/#XavieriFranch> a ns1:Person ;
+    ns5:affiliation "" ;
+    ns3:sameAs <http://ceur-ws.org/persons/XavieriFranch> ;
+    ns1:name "Xavier Franch" .
+
+<http://ceur-ws.org/Vol-1370/#event> a ns2:WorkshopEvent ;
+    ns2:hasLocation <http://dbpedia.org/resource/Sweden> ;
+    ns2:hasPart <http://ceur-ws.org/Vol-1370/#part-StarT> ;
+    ns2:isSubEventOf <http://ceur-ws.org/Vol-1370/#conf> ;
+    ns9:beginsAtDatetime "2015-06-09T00:00:00+00:00"^^xsd:dateTime ;
+    ns9:endsAtDatetime "2015-06-09T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:license "http://creativecommons.org/publicdomain/zero/1.0/" .
+
+<http://ceur-ws.org/Vol-1370/#JamesiLockerbie> a ns1:Person ;
+    ns5:affiliation "" ;
+    ns3:sameAs <http://ceur-ws.org/persons/JamesiLockerbie> ;
+    ns1:made <http://ceur-ws.org/Vol-1370/#paper_8> ;
+    ns1:name "James Lockerbie" .
+
+<http://ceur-ws.org/Vol-1370/#JohniMylopoulos> a ns1:Person ;
+    ns5:affiliation "" ;
+    ns3:sameAs <http://ceur-ws.org/persons/JohniMylopoulos> ;
+    ns1:made <http://ceur-ws.org/Vol-1370/#paper_7> ;
+    ns1:name "John Mylopoulos" .
+
+<http://ceur-ws.org/Vol-1370/#Keynote> a ns2:SessionEvent ;
+    ns2:partOf <http://ceur-ws.org/Vol-1370/> ;
+    ns6:title "Keynote" .
+
+<http://ceur-ws.org/Vol-1370/#LysanneiLessard> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/LysanneiLessard> ;
+    ns1:made <http://ceur-ws.org/Vol-1370/#paper_5>,
+        <http://ceur-ws.org/Vol-1370/#paper_6> ;
+    ns1:name "Lysanne Lessard" .
+
+<http://ceur-ws.org/Vol-1370/#Session2> a ns2:SessionEvent ;
+    ns2:partOf <http://ceur-ws.org/Vol-1370/> ;
+    ns6:title "Session 2" .
+
+<http://ceur-ws.org/Vol-1370/#SorooshiNalchigar> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/SorooshiNalchigar> ;
+    ns1:made <http://ceur-ws.org/Vol-1370/#paper_5>,
+        <http://ceur-ws.org/Vol-1370/#paper_6> ;
+    ns1:name "Soroosh Nalchigar" .
+
+<http://ceur-ws.org/Vol-1370/#ZiaiBabar> a ns1:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/ZiaiBabar> ;
+    ns1:made <http://ceur-ws.org/Vol-1370/#paper_5>,
+        <http://ceur-ws.org/Vol-1370/#paper_6> ;
+    ns1:name "Zia Babar" .
+
+<http://ceur-ws.org/Vol-1370/#keynote> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1370/> ;
+    ns6:title "Teaching and Integrating i* in a Conceptual Schema-Centric Development" ;
+    ns4:section <http://ceur-ws.org/Vol-1370/#Keynote> ;
+    ns5:author <http://ceur-ws.org/Vol-1370/#OscariPastor> .
+
+<http://ceur-ws.org/Vol-1370/#paper_1> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1370/> ;
+    ns6:title "Teaching Goal Modeling in Undergraduate Education" ;
+    ns4:endPage 6 ;
+    ns4:numPages 6 ;
+    ns4:section <http://ceur-ws.org/Vol-1370/#Session1> ;
+    ns4:startPage 1 ;
+    ns5:author <http://ceur-ws.org/Vol-1370/#FabianoiDalpiaz> .
+
+<http://ceur-ws.org/Vol-1370/#paper_2> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1370/> ;
+    ns6:title "Teaching Information Systems: an i*-based approach" ;
+    ns4:endPage 12 ;
+    ns4:numPages 6 ;
+    ns4:section <http://ceur-ws.org/Vol-1370/#Session1> ;
+    ns4:startPage 7 ;
+    ns5:author <http://ceur-ws.org/Vol-1370/#JuaniPabloiCarvallo> .
+
+<http://ceur-ws.org/Vol-1370/#paper_3> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1370/> ;
+    ns6:title "Observational Studies of new i* Users: Challenges and Recommendations" ;
+    ns4:endPage 18 ;
+    ns4:numPages 6 ;
+    ns4:section <http://ceur-ws.org/Vol-1370/#Session1> ;
+    ns4:startPage 13 ;
+    ns5:author <http://ceur-ws.org/Vol-1370/#JenniferiHorkoff> .
+
+<http://ceur-ws.org/Vol-1370/#EriciYu> a ns1:Person ;
+    ns5:affiliation "" ;
+    ns3:sameAs <http://ceur-ws.org/persons/EriciYu> ;
+    ns1:made <http://ceur-ws.org/Vol-1370/#paper_5>,
+        <http://ceur-ws.org/Vol-1370/#paper_6> ;
+    ns1:name "Eric Yu" .
+
+<http://ceur-ws.org/Vol-1370/#paper_4> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1370/> ;
+    ns6:title "iStar Instruction in Mixed Student Cohort Environments" ;
+    ns4:endPage 24 ;
+    ns4:numPages 6 ;
+    ns4:section <http://ceur-ws.org/Vol-1370/#Session2> ;
+    ns4:startPage 19 ;
+    ns5:author <http://ceur-ws.org/Vol-1370/#Eric-OlufiSvee>,
+        <http://ceur-ws.org/Vol-1370/#JelenaiZdravkovic> .
+
+<http://ceur-ws.org/Vol-1370/#Session1> a ns2:SessionEvent ;
+    ns2:partOf <http://ceur-ws.org/Vol-1370/> ;
+    ns6:title "Session 1" .
+
+<http://ceur-ws.org/Vol-1370/#paper_7> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1370/> ;
+    ns6:title "The Importance of Teaching Goal-Oriented Analysis Techniques: an Experience Report" ;
+    ns4:endPage 42 ;
+    ns4:numPages 6 ;
+    ns4:section <http://ceur-ws.org/Vol-1370/#Session3> ;
+    ns4:startPage 37 ;
+    ns5:author <http://ceur-ws.org/Vol-1370/#EldaiPaja>,
+        <http://ceur-ws.org/Vol-1370/#JenniferiHorkoff>,
+        <http://ceur-ws.org/Vol-1370/#JohniMylopoulos> .
+
+<http://ceur-ws.org/Vol-1370/#paper_8> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1370/> ;
+    ns6:title "On the Learnability of i*: Experiences from a New Teacher" ;
+    ns4:endPage 48 ;
+    ns4:numPages 6 ;
+    ns4:section <http://ceur-ws.org/Vol-1370/#Session3> ;
+    ns4:startPage 43 ;
+    ns5:author <http://ceur-ws.org/Vol-1370/#AmeliBennaceur>,
+        <http://ceur-ws.org/Vol-1370/#JamesiLockerbie>,
+        <http://ceur-ws.org/Vol-1370/#JenniferiHorkoff> .
+
+<http://ceur-ws.org/Vol-1370/#paper_9> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1370/> ;
+    ns6:title "The Monopoly Game to Teach ERi*c - Intentional Requirements Engineering" ;
+    ns4:endPage 54 ;
+    ns4:numPages 6 ;
+    ns4:section <http://ceur-ws.org/Vol-1370/#Session3> ;
+    ns4:startPage 49 ;
+    ns5:author <http://ceur-ws.org/Vol-1370/#AntonioideiP%C3%A1duaiAlbuquerqueiOliveira>,
+        <http://ceur-ws.org/Vol-1370/#JulioiCesariSampaioidoiPradoiLeite>,
+        <http://ceur-ws.org/Vol-1370/#LuiziMarcioiCysneiros>,
+        <http://ceur-ws.org/Vol-1370/#VeraiMariaiBenjamimiWerneck> .
+
+<http://ceur-ws.org/Vol-1370/#JenniferiHorkoff> a ns1:Person ;
+    ns5:affiliation "" ;
+    ns3:sameAs <http://ceur-ws.org/persons/JenniferiHorkoff> ;
+    ns1:made <http://ceur-ws.org/Vol-1370/#paper_3>,
+        <http://ceur-ws.org/Vol-1370/#paper_5>,
+        <http://ceur-ws.org/Vol-1370/#paper_6>,
+        <http://ceur-ws.org/Vol-1370/#paper_7>,
+        <http://ceur-ws.org/Vol-1370/#paper_8> ;
+    ns1:name "Jennifer Horkoff" .
+
+<http://ceur-ws.org/Vol-1370/#Session3> a ns2:SessionEvent ;
+    ns2:partOf <http://ceur-ws.org/Vol-1370/> ;
+    ns6:title "Session 3" .
+
+<http://ceur-ws.org/Vol-1370/#paper_5> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1370/> ;
+    ns6:title "Teaching i* Alongside a Contrasting Modeling Framework" ;
+    ns4:endPage 30 ;
+    ns4:numPages 6 ;
+    ns4:section <http://ceur-ws.org/Vol-1370/#Session3> ;
+    ns4:startPage 25 ;
+    ns5:author <http://ceur-ws.org/Vol-1370/#EriciYu>,
+        <http://ceur-ws.org/Vol-1370/#JenniferiHorkoff>,
+        <http://ceur-ws.org/Vol-1370/#LysanneiLessard>,
+        <http://ceur-ws.org/Vol-1370/#SorooshiNalchigar>,
+        <http://ceur-ws.org/Vol-1370/#ZiaiBabar> .
+
+<http://ceur-ws.org/Vol-1370/#paper_6> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1370/> ;
+    ns6:title "Instructional Experiences with Modeling and Analysis using the i* Framework" ;
+    ns4:endPage 36 ;
+    ns4:numPages 6 ;
+    ns4:section <http://ceur-ws.org/Vol-1370/#Session3> ;
+    ns4:startPage 31 ;
+    ns5:author <http://ceur-ws.org/Vol-1370/#EriciYu>,
+        <http://ceur-ws.org/Vol-1370/#JenniferiHorkoff>,
+        <http://ceur-ws.org/Vol-1370/#LysanneiLessard>,
+        <http://ceur-ws.org/Vol-1370/#SorooshiNalchigar>,
+        <http://ceur-ws.org/Vol-1370/#ZiaiBabar> .
+
+<http://ceur-ws.org/Vol-1370/> a ns2:Proceedings ;
+    ns2:hasPart <http://ceur-ws.org/Vol-1370/#keynote>,
+        <http://ceur-ws.org/Vol-1370/#paper_1>,
+        <http://ceur-ws.org/Vol-1370/#paper_2>,
+        <http://ceur-ws.org/Vol-1370/#paper_3>,
+        <http://ceur-ws.org/Vol-1370/#paper_4>,
+        <http://ceur-ws.org/Vol-1370/#paper_5>,
+        <http://ceur-ws.org/Vol-1370/#paper_6>,
+        <http://ceur-ws.org/Vol-1370/#paper_7>,
+        <http://ceur-ws.org/Vol-1370/#paper_8>,
+        <http://ceur-ws.org/Vol-1370/#paper_9> ;
+    ns2:hasSession <http://ceur-ws.org/Vol-1370/#Keynote>,
+        <http://ceur-ws.org/Vol-1370/#Session1>,
+        <http://ceur-ws.org/Vol-1370/#Session2>,
+        <http://ceur-ws.org/Vol-1370/#Session3> ;
+    ns8:issued "2015-05-29T00:00:00+00:00"^^xsd:dateTime ;
+    ns4:presentedAt <http://ceur-ws.org/Vol-1370/#event> ;
+    ns5:editor <http://ceur-ws.org/Vol-1370/#EriciYu>,
         <http://ceur-ws.org/Vol-1370/#JamesiLockerbie>,
         <http://ceur-ws.org/Vol-1370/#JenniferiHorkoff>,
         <http://ceur-ws.org/Vol-1370/#JohniMylopoulos>,
         <http://ceur-ws.org/Vol-1370/#XavieriFranch> .
-
-<http://ceur-ws.org/Vol-1370/#EriciYu> a ns3:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/EriciYu> ;
-    ns3:name "Eric Yu" .
-
-<http://ceur-ws.org/Vol-1370/#JamesiLockerbie> a ns3:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/JamesiLockerbie> ;
-    ns3:name "James Lockerbie" .
-
-<http://ceur-ws.org/Vol-1370/#JenniferiHorkoff> a ns3:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/JenniferiHorkoff> ;
-    ns3:name "Jennifer Horkoff" .
-
-<http://ceur-ws.org/Vol-1370/#JohniMylopoulos> a ns3:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/JohniMylopoulos> ;
-    ns3:name "John Mylopoulos" .
-
-<http://ceur-ws.org/Vol-1370/#XavieriFranch> a ns3:Person ;
-    ns2:sameAs <http://ceur-ws.org/persons/XavieriFranch> ;
-    ns3:name "Xavier Franch" .
-
-<http://ceur-ws.org/Vol-1370/#event> a ns6:WorkshopEvent ;
-    ns6:hasLocation <http://dbpedia.org/resource/Sweden> ;
-    ns6:hasPart <http://ceur-ws.org/Vol-1370/#part-ws> ;
-    ns6:isSubEventOf <http://ceur-ws.org/Vol-1370/#conf> ;
-    ns7:beginsAtDatetime "2015-06-09T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:endsAtDatetime "2015-06-09T00:00:00+00:00"^^xsd:dateTime ;
-    ns4:license "http://creativecommons.org/publicdomain/zero/1.0/" .
 
