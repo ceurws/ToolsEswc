@@ -1,12 +1,12 @@
 @prefix ns1: <http://xmlns.com/foaf/0.1/> .
-@prefix ns2: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns3: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns2: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns3: <http://purl.org/ontology/bibo/#> .
 @prefix ns4: <http://www.w3.org/2002/07/owl#> .
-@prefix ns5: <http://purl.org/ontology/bibo/#> .
+@prefix ns5: <http://data.semanticweb.org/ns/swc/ontology/#> .
 @prefix ns6: <http://purl.org/dc/elements/1.1/#> .
 @prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns9: <http://purl.org/dc/elements/1.1/> .
+@prefix ns8: <http://purl.org/dc/elements/1.1/> .
+@prefix ns9: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -108,7 +108,7 @@
     ns1:name "Letizia Tanca" .
 
 <http://ceur-ws.org/Vol-1087/#LoretoiBravo> a ns1:Person ;
-    ns3:affiliation "" ;
+    ns2:affiliation "" ;
     ns4:sameAs <http://ceur-ws.org/persons/LoretoiBravo> ;
     ns1:name "Loreto Bravo" .
 
@@ -128,7 +128,7 @@
     ns1:name "Matteo Interlandi" .
 
 <http://ceur-ws.org/Vol-1087/#MaurizioiLenzerini> a ns1:Person ;
-    ns3:affiliation "" ;
+    ns2:affiliation "" ;
     ns4:sameAs <http://ceur-ws.org/persons/MaurizioiLenzerini> ;
     ns1:name "Maurizio Lenzerini" .
 
@@ -192,17 +192,23 @@
     ns1:made <http://ceur-ws.org/Vol-1087/#shortpaper3> ;
     ns1:name "Yuridiana Alemán" .
 
-<http://ceur-ws.org/Vol-1087/#event> a ns2:WorkshopEvent ;
-    ns2:hasLocation <http://dbpedia.org/resource/Mexico> ;
-    ns2:hasPart <http://ceur-ws.org/Vol-1087/#part-AMW> ;
-    ns2:isSubEventOf <http://ceur-ws.org/Vol-1087/#conf> ;
+<http://ceur-ws.org/Vol-1087/#event> a ns5:WorkshopEvent ;
+    ns5:hasLocation <http://dbpedia.org/resource/Mexico> ;
+    ns5:hasPart <http://ceur-ws.org/Vol-1087/#part-AMW> ;
+    ns5:isSubEventOf <http://ceur-ws.org/Vol-1087/#conf> ;
     ns7:beginsAtDatetime "2013-05-21T00:00:00+00:00"^^xsd:dateTime ;
     ns7:endsAtDatetime "2013-05-23T00:00:00+00:00"^^xsd:dateTime ;
-    ns9:license "http://choosealicense.com/licenses/no-license/" ;
+    ns8:license "http://choosealicense.com/licenses/no-license/" ;
     rdfs:seeAlso <http://ceur-ws.org/Vol-450/#event>,
         <http://ceur-ws.org/Vol-619/#event>,
         <http://ceur-ws.org/Vol-749/#event>,
         <http://ceur-ws.org/Vol-866/#event> .
+
+<http://ceur-ws.org/Vol-1087/#part-AMW> a ns3:Workshop ;
+    ns5:partOf <http://ceur-ws.org/series/AMW> ;
+    ns6:title "Alberto Mendelzon International Workshop on Foundations of Data Management 2013" ;
+    ns3:shortTitle "AMW" ;
+    ns2:edition 7 .
 
 <http://ceur-ws.org/Vol-1087/#DavidiPinto> a ns1:Person ;
     ns4:sameAs <http://ceur-ws.org/persons/DavidiPinto> ;
@@ -252,181 +258,181 @@
         <http://ceur-ws.org/Vol-1087/#shortpaper3> ;
     ns1:name "Vilariño Darnes" .
 
-<http://ceur-ws.org/Vol-1087/#keynote1> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1087/> ;
+<http://ceur-ws.org/Vol-1087/#keynote1> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1087/> ;
     ns6:title "Big Data and Enterprise Analytics" ;
-    ns5:section <http://ceur-ws.org/Vol-1087/#Keynotes> ;
-    ns3:author <http://ceur-ws.org/Vol-1087/#SurajitiChaudhuri> .
+    ns3:section <http://ceur-ws.org/Vol-1087/#Keynotes> ;
+    ns2:author <http://ceur-ws.org/Vol-1087/#SurajitiChaudhuri> .
 
-<http://ceur-ws.org/Vol-1087/#keynote2> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1087/> ;
+<http://ceur-ws.org/Vol-1087/#keynote2> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1087/> ;
     ns6:title "The Query Containment Problem: Set Semantics vs. Bag Semantics" ;
-    ns5:section <http://ceur-ws.org/Vol-1087/#Keynotes> ;
-    ns3:author <http://ceur-ws.org/Vol-1087/#PhokioniKolaitis> .
+    ns3:section <http://ceur-ws.org/Vol-1087/#Keynotes> ;
+    ns2:author <http://ceur-ws.org/Vol-1087/#PhokioniKolaitis> .
 
-<http://ceur-ws.org/Vol-1087/#keynote3> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1087/> ;
+<http://ceur-ws.org/Vol-1087/#keynote3> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1087/> ;
     ns6:title "Ontology Based Query Answering: The Story So Far" ;
-    ns5:section <http://ceur-ws.org/Vol-1087/#Keynotes> ;
-    ns3:author <http://ceur-ws.org/Vol-1087/#MagdalenaiOrtiz> .
+    ns3:section <http://ceur-ws.org/Vol-1087/#Keynotes> ;
+    ns2:author <http://ceur-ws.org/Vol-1087/#MagdalenaiOrtiz> .
 
-<http://ceur-ws.org/Vol-1087/#keynote4> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1087/> ;
+<http://ceur-ws.org/Vol-1087/#keynote4> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1087/> ;
     ns6:title "Addressing Data Management on the Cloud: Tackling the Big Data Challenges" ;
-    ns5:section <http://ceur-ws.org/Vol-1087/#Keynotes> ;
-    ns3:author <http://ceur-ws.org/Vol-1087/#GenovevaiVargasiSolar> .
+    ns3:section <http://ceur-ws.org/Vol-1087/#Keynotes> ;
+    ns2:author <http://ceur-ws.org/Vol-1087/#GenovevaiVargasiSolar> .
 
-<http://ceur-ws.org/Vol-1087/#paper14> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1087/> ;
+<http://ceur-ws.org/Vol-1087/#paper14> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1087/> ;
     ns6:title "Big Data or Right Data?" ;
-    ns5:section <http://ceur-ws.org/Vol-1087/#RegularPapers> ;
-    ns3:author <http://ceur-ws.org/Vol-1087/#RicardoiBaeza-Yates> .
+    ns3:section <http://ceur-ws.org/Vol-1087/#RegularPapers> ;
+    ns2:author <http://ceur-ws.org/Vol-1087/#RicardoiBaeza-Yates> .
 
-<http://ceur-ws.org/Vol-1087/#paper1> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1087/> ;
+<http://ceur-ws.org/Vol-1087/#paper1> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1087/> ;
     ns6:title "On the Complexity of Query Answering under Matching Dependencies for Entity Resolution" ;
-    ns5:section <http://ceur-ws.org/Vol-1087/#RegularPapers> ;
-    ns3:author <http://ceur-ws.org/Vol-1087/#JafferiGardezi>,
+    ns3:section <http://ceur-ws.org/Vol-1087/#RegularPapers> ;
+    ns2:author <http://ceur-ws.org/Vol-1087/#JafferiGardezi>,
         <http://ceur-ws.org/Vol-1087/#LeopoldoiBertossi> .
 
-<http://ceur-ws.org/Vol-1087/#paper12> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1087/> ;
+<http://ceur-ws.org/Vol-1087/#paper12> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1087/> ;
     ns6:title "Data Posting: a New Frontier for Data Exchange in the Big Data Era" ;
-    ns5:section <http://ceur-ws.org/Vol-1087/#RegularPapers> ;
-    ns3:author <http://ceur-ws.org/Vol-1087/#DomenicoiSacc%C3%A0>,
+    ns3:section <http://ceur-ws.org/Vol-1087/#RegularPapers> ;
+    ns2:author <http://ceur-ws.org/Vol-1087/#DomenicoiSacc%C3%A0>,
         <http://ceur-ws.org/Vol-1087/#EdoardoiSerra> .
 
-<http://ceur-ws.org/Vol-1087/#paper3> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1087/> ;
+<http://ceur-ws.org/Vol-1087/#paper3> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1087/> ;
     ns6:title "A Lattice-Theoretic Approach for Representing and Managing Hypothesis-driven Research" ;
-    ns5:endPage 5 ;
-    ns5:numPages 1 ;
-    ns5:section <http://ceur-ws.org/Vol-1087/#RegularPapers> ;
-    ns5:startPage 5 ;
-    ns3:author <http://ceur-ws.org/Vol-1087/#BernardoiGon%C3%A7alves>,
+    ns3:endPage 5 ;
+    ns3:numPages 1 ;
+    ns3:section <http://ceur-ws.org/Vol-1087/#RegularPapers> ;
+    ns3:startPage 5 ;
+    ns2:author <http://ceur-ws.org/Vol-1087/#BernardoiGon%C3%A7alves>,
         <http://ceur-ws.org/Vol-1087/#FabioiPorto> .
 
-<http://ceur-ws.org/Vol-1087/#paper7> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1087/> ;
+<http://ceur-ws.org/Vol-1087/#paper7> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1087/> ;
     ns6:title "Effectively Updatable Conjunctive Views" ;
-    ns5:section <http://ceur-ws.org/Vol-1087/#RegularPapers> ;
-    ns3:author <http://ceur-ws.org/Vol-1087/#EnricoiFranconi>,
+    ns3:section <http://ceur-ws.org/Vol-1087/#RegularPapers> ;
+    ns2:author <http://ceur-ws.org/Vol-1087/#EnricoiFranconi>,
         <http://ceur-ws.org/Vol-1087/#PaoloiGuagliardo> .
 
-<http://ceur-ws.org/Vol-1087/#shortpaper2> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1087/> ;
+<http://ceur-ws.org/Vol-1087/#shortpaper2> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1087/> ;
     ns6:title "GDE: General Data Exchange with Schema and Data Level Mappings" ;
-    ns5:section <http://ceur-ws.org/Vol-1087/#ShortPapers> ;
-    ns3:author <http://ceur-ws.org/Vol-1087/#IlujuiKiringa>,
+    ns3:section <http://ceur-ws.org/Vol-1087/#ShortPapers> ;
+    ns2:author <http://ceur-ws.org/Vol-1087/#IlujuiKiringa>,
         <http://ceur-ws.org/Vol-1087/#RanaiAwada> .
 
-<http://ceur-ws.org/Vol-1087/#paper10> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1087/> ;
+<http://ceur-ws.org/Vol-1087/#paper10> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1087/> ;
     ns6:title "Towards General Representability in Knowledge Exchange" ;
-    ns5:section <http://ceur-ws.org/Vol-1087/#RegularPapers> ;
-    ns3:author <http://ceur-ws.org/Vol-1087/#EmanueliSallinger>,
+    ns3:section <http://ceur-ws.org/Vol-1087/#RegularPapers> ;
+    ns2:author <http://ceur-ws.org/Vol-1087/#EmanueliSallinger>,
         <http://ceur-ws.org/Vol-1087/#JorgeiP%C3%A9rez>,
         <http://ceur-ws.org/Vol-1087/#MarceloiArenas> .
 
-<http://ceur-ws.org/Vol-1087/#paper11> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1087/> ;
+<http://ceur-ws.org/Vol-1087/#paper11> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1087/> ;
     ns6:title "Evaluation of SPARQL Property Paths via Recursive SQL" ;
-    ns5:section <http://ceur-ws.org/Vol-1087/#RegularPapers> ;
-    ns3:author <http://ceur-ws.org/Vol-1087/#JarekiGryz>,
+    ns3:section <http://ceur-ws.org/Vol-1087/#RegularPapers> ;
+    ns2:author <http://ceur-ws.org/Vol-1087/#JarekiGryz>,
         <http://ceur-ws.org/Vol-1087/#NikolayiYakovets>,
         <http://ceur-ws.org/Vol-1087/#ParkeiGodfrey> .
 
-<http://ceur-ws.org/Vol-1087/#paper13> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1087/> ;
+<http://ceur-ws.org/Vol-1087/#paper13> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1087/> ;
     ns6:title "Semantic Answer Validation in Question Answering Systems for Reading Comprehension Tests" ;
-    ns5:section <http://ceur-ws.org/Vol-1087/#RegularPapers> ;
-    ns3:author <http://ceur-ws.org/Vol-1087/#DavidiPinto>,
+    ns3:section <http://ceur-ws.org/Vol-1087/#RegularPapers> ;
+    ns2:author <http://ceur-ws.org/Vol-1087/#DavidiPinto>,
         <http://ceur-ws.org/Vol-1087/#HelenaiG%C3%B3mez-Adorno>,
         <http://ceur-ws.org/Vol-1087/#Vilari%C3%B1oiDarnes> .
 
-<http://ceur-ws.org/Vol-1087/#paper2> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1087/> ;
+<http://ceur-ws.org/Vol-1087/#paper2> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1087/> ;
     ns6:title "Datalog in Time and Space, Synchronously" ;
-    ns5:section <http://ceur-ws.org/Vol-1087/#RegularPapers> ;
-    ns3:author <http://ceur-ws.org/Vol-1087/#LetiziaiTanca>,
+    ns3:section <http://ceur-ws.org/Vol-1087/#RegularPapers> ;
+    ns2:author <http://ceur-ws.org/Vol-1087/#LetiziaiTanca>,
         <http://ceur-ws.org/Vol-1087/#MatteoiInterlandi>,
         <http://ceur-ws.org/Vol-1087/#SoniaiBergamaschi> .
 
-<http://ceur-ws.org/Vol-1087/#paper5> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1087/> ;
+<http://ceur-ws.org/Vol-1087/#paper5> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1087/> ;
     ns6:title "A Monotonic Extension for Horn-Clauses and its Significance in Datalog's Renaissance" ;
-    ns5:endPage 3 ;
-    ns5:numPages 1 ;
-    ns5:section <http://ceur-ws.org/Vol-1087/#RegularPapers> ;
-    ns5:startPage 3 ;
-    ns3:author <http://ceur-ws.org/Vol-1087/#CarloiZaniolo>,
+    ns3:endPage 3 ;
+    ns3:numPages 1 ;
+    ns3:section <http://ceur-ws.org/Vol-1087/#RegularPapers> ;
+    ns3:startPage 3 ;
+    ns2:author <http://ceur-ws.org/Vol-1087/#CarloiZaniolo>,
         <http://ceur-ws.org/Vol-1087/#EdoardoiSerra>,
         <http://ceur-ws.org/Vol-1087/#MirjanaiMazuran> .
 
-<http://ceur-ws.org/Vol-1087/#paper6> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1087/> ;
+<http://ceur-ws.org/Vol-1087/#paper6> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1087/> ;
     ns6:title "Enhancing the Updatability of Projective Views" ;
-    ns5:section <http://ceur-ws.org/Vol-1087/#RegularPapers> ;
-    ns3:author <http://ceur-ws.org/Vol-1087/#EmanueliSallinger>,
+    ns3:section <http://ceur-ws.org/Vol-1087/#RegularPapers> ;
+    ns2:author <http://ceur-ws.org/Vol-1087/#EmanueliSallinger>,
         <http://ceur-ws.org/Vol-1087/#PaoloiGuagliardo>,
         <http://ceur-ws.org/Vol-1087/#ReinhardiPichler> .
 
-<http://ceur-ws.org/Vol-1087/#paper8> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1087/> ;
+<http://ceur-ws.org/Vol-1087/#paper8> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1087/> ;
     ns6:title "A Practical Query Language for Graph DBs" ;
-    ns5:section <http://ceur-ws.org/Vol-1087/#RegularPapers> ;
-    ns3:author <http://ceur-ws.org/Vol-1087/#GonzaloiRios>,
+    ns3:section <http://ceur-ws.org/Vol-1087/#RegularPapers> ;
+    ns2:author <http://ceur-ws.org/Vol-1087/#GonzaloiRios>,
         <http://ceur-ws.org/Vol-1087/#PabloiBarcel%C3%B3>,
         <http://ceur-ws.org/Vol-1087/#RenzoiAngles> .
 
-<http://ceur-ws.org/Vol-1087/#shortpaper3> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1087/> ;
+<http://ceur-ws.org/Vol-1087/#shortpaper3> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1087/> ;
     ns6:title "Searching Sexual Predators in Social Network Dialogues" ;
-    ns5:section <http://ceur-ws.org/Vol-1087/#ShortPapers> ;
-    ns3:author <http://ceur-ws.org/Vol-1087/#DavidiPinto>,
+    ns3:section <http://ceur-ws.org/Vol-1087/#ShortPapers> ;
+    ns2:author <http://ceur-ws.org/Vol-1087/#DavidiPinto>,
         <http://ceur-ws.org/Vol-1087/#Vilari%C3%B1oiDarnes>,
         <http://ceur-ws.org/Vol-1087/#YuridianaiAlem%C3%A1n> .
 
-<http://ceur-ws.org/Vol-1087/#shortpaper4> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1087/> ;
+<http://ceur-ws.org/Vol-1087/#shortpaper4> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1087/> ;
     ns6:title "A Logical Database for Geriatric Purposes" ;
-    ns5:section <http://ceur-ws.org/Vol-1087/#ShortPapers> ;
-    ns3:author <http://ceur-ws.org/Vol-1087/#GuillermoiDeiIta>,
+    ns3:section <http://ceur-ws.org/Vol-1087/#ShortPapers> ;
+    ns2:author <http://ceur-ws.org/Vol-1087/#GuillermoiDeiIta>,
         <http://ceur-ws.org/Vol-1087/#JosueiP%C3%A9rez>,
         <http://ceur-ws.org/Vol-1087/#Ju%C3%A1niCarlosiP%C3%A9rez> .
 
-<http://ceur-ws.org/Vol-1087/#Keynotes> a ns2:SessionEvent ;
-    ns2:partOf <http://ceur-ws.org/Vol-1087/> ;
+<http://ceur-ws.org/Vol-1087/#Keynotes> a ns5:SessionEvent ;
+    ns5:partOf <http://ceur-ws.org/Vol-1087/> ;
     ns6:title "Keynotes" .
 
-<http://ceur-ws.org/Vol-1087/#ShortPapers> a ns2:SessionEvent ;
-    ns2:partOf <http://ceur-ws.org/Vol-1087/> ;
+<http://ceur-ws.org/Vol-1087/#ShortPapers> a ns5:SessionEvent ;
+    ns5:partOf <http://ceur-ws.org/Vol-1087/> ;
     ns6:title "Short Papers" .
 
-<http://ceur-ws.org/Vol-1087/#paper9> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1087/> ;
+<http://ceur-ws.org/Vol-1087/#paper9> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1087/> ;
     ns6:title "Efficient Updates of Uncertain Databases" ;
-    ns5:section <http://ceur-ws.org/Vol-1087/#RegularPapers> ;
-    ns3:author <http://ceur-ws.org/Vol-1087/#AndreasiHubmer>,
+    ns3:section <http://ceur-ws.org/Vol-1087/#RegularPapers> ;
+    ns2:author <http://ceur-ws.org/Vol-1087/#AndreasiHubmer>,
         <http://ceur-ws.org/Vol-1087/#ReinhardiPichler>,
         <http://ceur-ws.org/Vol-1087/#SebastianiSkritek>,
         <http://ceur-ws.org/Vol-1087/#VadimiSavenkov> .
 
-<http://ceur-ws.org/Vol-1087/#shortpaper1> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1087/> ;
+<http://ceur-ws.org/Vol-1087/#shortpaper1> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1087/> ;
     ns6:title "Axiomatic System for Order Dependencies" ;
-    ns5:section <http://ceur-ws.org/Vol-1087/#ShortPapers> ;
-    ns3:author <http://ceur-ws.org/Vol-1087/#CalistoiZuzarte>,
+    ns3:section <http://ceur-ws.org/Vol-1087/#ShortPapers> ;
+    ns2:author <http://ceur-ws.org/Vol-1087/#CalistoiZuzarte>,
         <http://ceur-ws.org/Vol-1087/#JarekiGryz>,
         <http://ceur-ws.org/Vol-1087/#JaroslawiSzlichta>,
         <http://ceur-ws.org/Vol-1087/#ParkeiGodfrey> .
 
-<http://ceur-ws.org/Vol-1087/#RegularPapers> a ns2:SessionEvent ;
-    ns2:partOf <http://ceur-ws.org/Vol-1087/> ;
+<http://ceur-ws.org/Vol-1087/#RegularPapers> a ns5:SessionEvent ;
+    ns5:partOf <http://ceur-ws.org/Vol-1087/> ;
     ns6:title "Regular Papers" .
 
-<http://ceur-ws.org/Vol-1087/> a ns2:Proceedings ;
-    ns2:hasPart <http://ceur-ws.org/Vol-1087/#keynote1>,
+<http://ceur-ws.org/Vol-1087/> a ns5:Proceedings ;
+    ns5:hasPart <http://ceur-ws.org/Vol-1087/#keynote1>,
         <http://ceur-ws.org/Vol-1087/#keynote2>,
         <http://ceur-ws.org/Vol-1087/#keynote3>,
         <http://ceur-ws.org/Vol-1087/#keynote4>,
@@ -447,11 +453,11 @@
         <http://ceur-ws.org/Vol-1087/#shortpaper2>,
         <http://ceur-ws.org/Vol-1087/#shortpaper3>,
         <http://ceur-ws.org/Vol-1087/#shortpaper4> ;
-    ns2:hasSession <http://ceur-ws.org/Vol-1087/#Keynotes>,
+    ns5:hasSession <http://ceur-ws.org/Vol-1087/#Keynotes>,
         <http://ceur-ws.org/Vol-1087/#RegularPapers>,
         <http://ceur-ws.org/Vol-1087/#ShortPapers> ;
-    ns8:issued "2013-11-20T00:00:00+00:00"^^xsd:dateTime ;
-    ns5:presentedAt <http://ceur-ws.org/Vol-1087/#event> ;
-    ns3:editor <http://ceur-ws.org/Vol-1087/#LoretoiBravo>,
+    ns9:issued "2013-11-20T00:00:00+00:00"^^xsd:dateTime ;
+    ns3:presentedAt <http://ceur-ws.org/Vol-1087/#event> ;
+    ns2:editor <http://ceur-ws.org/Vol-1087/#LoretoiBravo>,
         <http://ceur-ws.org/Vol-1087/#MaurizioiLenzerini> .
 

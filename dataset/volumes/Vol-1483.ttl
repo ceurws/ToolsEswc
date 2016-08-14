@@ -1,11 +1,11 @@
 @prefix ns1: <http://xmlns.com/foaf/0.1/> .
-@prefix ns2: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns2: <http://swrc.ontoware.org/ontology/#> .
 @prefix ns3: <http://data.semanticweb.org/ns/swc/ontology/#> .
 @prefix ns4: <http://www.w3.org/2002/07/owl#> .
-@prefix ns5: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns6: <http://purl.org/ontology/bibo/#> .
-@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns5: <http://purl.org/ontology/bibo/#> .
+@prefix ns6: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix ns9: <http://purl.org/dc/elements/1.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -841,11 +841,17 @@
     ns3:hasLocation <http://dbpedia.org/resource/Turkey> ;
     ns3:hasPart <http://ceur-ws.org/Vol-1483/#part-UYMS> ;
     ns3:isSubEventOf <http://ceur-ws.org/Vol-1483/#conf> ;
-    ns8:beginsAtDatetime "2015-09-09T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:endsAtDatetime "2015-09-11T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:beginsAtDatetime "2015-09-09T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:endsAtDatetime "2015-09-11T00:00:00+00:00"^^xsd:dateTime ;
     ns9:license "http://creativecommons.org/publicdomain/zero/1.0/" ;
     rdfs:seeAlso <http://ceur-ws.org/Vol-1072/#event>,
         <http://ceur-ws.org/Vol-1221/#event> .
+
+<http://ceur-ws.org/Vol-1483/#part-UYMS> a ns5:Workshop ;
+    ns3:partOf <http://ceur-ws.org/series/UYMS> ;
+    ns6:title "Turkish National Software Engineering Symposium 2015" ;
+    ns5:shortTitle "UYMS" ;
+    ns2:edition 9 .
 
 <http://ceur-ws.org/Vol-1483/#%C3%96zg%C3%BCiCan> a ns1:Person ;
     ns4:sameAs <http://ceur-ws.org/persons/%C3%96zg%C3%BCiCan> ;
@@ -861,81 +867,81 @@
 
 <http://ceur-ws.org/Vol-1483/#0_DavetliKonusma> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-1483/> ;
-    ns2:title "Formal Modelling in Software Design" ;
-    ns6:section <http://ceur-ws.org/Vol-1483/#KeynoteSpeaker> ;
-    ns5:author <http://ceur-ws.org/Vol-1483/#Lu%C3%ADsiSoaresiBarbosa> .
+    ns6:title "Formal Modelling in Software Design" ;
+    ns5:section <http://ceur-ws.org/Vol-1483/#KeynoteSpeaker> ;
+    ns2:author <http://ceur-ws.org/Vol-1483/#Lu%C3%ADsiSoaresiBarbosa> .
 
 <http://ceur-ws.org/Vol-1483/#27_Bildiri> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-1483/> ;
-    ns2:title "Uygulama Geliştirme ve Yaygınlaştırma Süreçlerindeki Performans Değerlendirmesinde AHP Yönteminin Uygulanması" ;
-    ns6:section <http://ceur-ws.org/Vol-1483/#SessionYTM4YazılımTestMühendisliği4> ;
-    ns5:author <http://ceur-ws.org/Vol-1483/#HayriyeiG%C3%B6ksu> .
+    ns6:title "Uygulama Geliştirme ve Yaygınlaştırma Süreçlerindeki Performans Değerlendirmesinde AHP Yönteminin Uygulanması" ;
+    ns5:section <http://ceur-ws.org/Vol-1483/#SessionYTM4YazılımTestMühendisliği4> ;
+    ns2:author <http://ceur-ws.org/Vol-1483/#HayriyeiG%C3%B6ksu> .
 
 <http://ceur-ws.org/Vol-1483/#2_Bildiri> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-1483/> ;
-    ns2:title "Yazılım Yapısal Kapsama Analizinde Testlerin Önceliklendirilmesi" ;
-    ns6:section <http://ceur-ws.org/Vol-1483/#SessionYTM1YazılımTestMühendisliği1> ;
-    ns5:author <http://ceur-ws.org/Vol-1483/#TolgaiAyav> .
+    ns6:title "Yazılım Yapısal Kapsama Analizinde Testlerin Önceliklendirilmesi" ;
+    ns5:section <http://ceur-ws.org/Vol-1483/#SessionYTM1YazılımTestMühendisliği1> ;
+    ns2:author <http://ceur-ws.org/Vol-1483/#TolgaiAyav> .
 
 <http://ceur-ws.org/Vol-1483/#33_GenisOzet> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-1483/> ;
-    ns2:title "Sayısal Devrelerin Model Kontrol Tabanlı Testi" ;
-    ns6:section <http://ceur-ws.org/Vol-1483/#SpecialSessionYüksekLisansveDoktoraTezleriToplantıları> ;
-    ns5:author <http://ceur-ws.org/Vol-1483/#Sava%C5%9FiTakan> .
+    ns6:title "Sayısal Devrelerin Model Kontrol Tabanlı Testi" ;
+    ns5:section <http://ceur-ws.org/Vol-1483/#SpecialSessionYüksekLisansveDoktoraTezleriToplantıları> ;
+    ns2:author <http://ceur-ws.org/Vol-1483/#Sava%C5%9FiTakan> .
 
 <http://ceur-ws.org/Vol-1483/#37_Deneyim> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-1483/> ;
-    ns2:title "Bankacılık Sistemlerinde Uyum Süreci Kapsamında Yazılım Dönüşümünde Big Bang ve Paralel Uyum Sürecinin Kıyaslanması" ;
-    ns6:section <http://ceur-ws.org/Vol-1483/#SessionYGS5YazılımGeliştirmeSüreçleri5> ;
-    ns5:author <http://ceur-ws.org/Vol-1483/#MustafaiZeybek> .
+    ns6:title "Bankacılık Sistemlerinde Uyum Süreci Kapsamında Yazılım Dönüşümünde Big Bang ve Paralel Uyum Sürecinin Kıyaslanması" ;
+    ns5:section <http://ceur-ws.org/Vol-1483/#SessionYGS5YazılımGeliştirmeSüreçleri5> ;
+    ns2:author <http://ceur-ws.org/Vol-1483/#MustafaiZeybek> .
 
 <http://ceur-ws.org/Vol-1483/#3_Bildiri> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-1483/> ;
-    ns2:title "Yazılım Geliştirme Süreç İyileştirme Ölçme Deneyimleri: Son mu, Başlangıç mı?" ;
-    ns6:section <http://ceur-ws.org/Vol-1483/#SessionYGS1YazılımGeliştirmeSüreçleri1> ;
-    ns5:author <http://ceur-ws.org/Vol-1483/#%C3%9Clk%C3%BCi%C5%9Eencan> .
+    ns6:title "Yazılım Geliştirme Süreç İyileştirme Ölçme Deneyimleri: Son mu, Başlangıç mı?" ;
+    ns5:section <http://ceur-ws.org/Vol-1483/#SessionYGS1YazılımGeliştirmeSüreçleri1> ;
+    ns2:author <http://ceur-ws.org/Vol-1483/#%C3%9Clk%C3%BCi%C5%9Eencan> .
 
 <http://ceur-ws.org/Vol-1483/#44_Ozet> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-1483/> ;
-    ns2:title "Eğitim Semineri-2: Yeşil Yazılım" ;
-    ns6:section <http://ceur-ws.org/Vol-1483/#SessionYYYeşilYazılım> ;
-    ns5:author <http://ceur-ws.org/Vol-1483/#G%C3%BClfemiI%C5%9F%C4%B1klariAlptekin> .
+    ns6:title "Eğitim Semineri-2: Yeşil Yazılım" ;
+    ns5:section <http://ceur-ws.org/Vol-1483/#SessionYYYeşilYazılım> ;
+    ns2:author <http://ceur-ws.org/Vol-1483/#G%C3%BClfemiI%C5%9F%C4%B1klariAlptekin> .
 
 <http://ceur-ws.org/Vol-1483/#4_Bildiri> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-1483/> ;
-    ns2:title "Yazılım Geliştirme Süreci Uyarlama İçin Bir Çerçeve Önerisi" ;
-    ns6:section <http://ceur-ws.org/Vol-1483/#SessionYGS1YazılımGeliştirmeSüreçleri1> ;
-    ns5:author <http://ceur-ws.org/Vol-1483/#G%C3%B6rkemiGiray> .
+    ns6:title "Yazılım Geliştirme Süreci Uyarlama İçin Bir Çerçeve Önerisi" ;
+    ns5:section <http://ceur-ws.org/Vol-1483/#SessionYGS1YazılımGeliştirmeSüreçleri1> ;
+    ns2:author <http://ceur-ws.org/Vol-1483/#G%C3%B6rkemiGiray> .
 
 <http://ceur-ws.org/Vol-1483/#57_Deneyim> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-1483/> ;
-    ns2:title "ULAKSPY: Ara Katman Entegrasyon Test Otomasyon Aracı" ;
-    ns6:section <http://ceur-ws.org/Vol-1483/#SessionYGDAYazılımGeliştirmeDestekAraçları> ;
-    ns5:author <http://ceur-ws.org/Vol-1483/#G%C3%B6khani%C3%96zta%C5%9F> .
+    ns6:title "ULAKSPY: Ara Katman Entegrasyon Test Otomasyon Aracı" ;
+    ns5:section <http://ceur-ws.org/Vol-1483/#SessionYGDAYazılımGeliştirmeDestekAraçları> ;
+    ns2:author <http://ceur-ws.org/Vol-1483/#G%C3%B6khani%C3%96zta%C5%9F> .
 
 <http://ceur-ws.org/Vol-1483/#59_Bildiri> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-1483/> ;
-    ns2:title "Emniyet Kritik Yazılım Geliştirme Projelerinde Karşılaşılabilecek Etik Problemler" ;
-    ns6:section <http://ceur-ws.org/Vol-1483/#SessionYPYEYazılımProjeYönetimEğilimler> ;
-    ns5:author <http://ceur-ws.org/Vol-1483/#M.iUmutiP%C4%B0%C5%9EKEN> .
+    ns6:title "Emniyet Kritik Yazılım Geliştirme Projelerinde Karşılaşılabilecek Etik Problemler" ;
+    ns5:section <http://ceur-ws.org/Vol-1483/#SessionYPYEYazılımProjeYönetimEğilimler> ;
+    ns2:author <http://ceur-ws.org/Vol-1483/#M.iUmutiP%C4%B0%C5%9EKEN> .
 
 <http://ceur-ws.org/Vol-1483/#64_Bildiri> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-1483/> ;
-    ns2:title "Atış Kontrol Yazılımlarında Ürün Hattı Yaklaşımının Uygulanması" ;
-    ns6:section <http://ceur-ws.org/Vol-1483/#SessionGGZYS1GömülüGerçekZamanlıYazılımSistemleri1> ;
-    ns5:author <http://ceur-ws.org/Vol-1483/#AdnaniKalay> .
+    ns6:title "Atış Kontrol Yazılımlarında Ürün Hattı Yaklaşımının Uygulanması" ;
+    ns5:section <http://ceur-ws.org/Vol-1483/#SessionGGZYS1GömülüGerçekZamanlıYazılımSistemleri1> ;
+    ns2:author <http://ceur-ws.org/Vol-1483/#AdnaniKalay> .
 
 <http://ceur-ws.org/Vol-1483/#76_Deneyim> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-1483/> ;
-    ns2:title "Yazılım Kalite Güvence'de Ara Tasarım Değerlendirme Yaklaşımı" ;
-    ns6:section <http://ceur-ws.org/Vol-1483/#SessionYKGSDYazılımKaliteGüvenceSınamaDoğrulama> ;
-    ns5:author <http://ceur-ws.org/Vol-1483/#%C4%B0lgiiKeskiniKaynak> .
+    ns6:title "Yazılım Kalite Güvence'de Ara Tasarım Değerlendirme Yaklaşımı" ;
+    ns5:section <http://ceur-ws.org/Vol-1483/#SessionYKGSDYazılımKaliteGüvenceSınamaDoğrulama> ;
+    ns2:author <http://ceur-ws.org/Vol-1483/#%C4%B0lgiiKeskiniKaynak> .
 
 <http://ceur-ws.org/Vol-1483/#77_Bildiri> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-1483/> ;
-    ns2:title "Hiyerarşik Kümeleme ile Yazılım Mimarisi Geri Kazanımı" ;
-    ns6:section <http://ceur-ws.org/Vol-1483/#SessionYMYazılımMimarisi> ;
-    ns5:author <http://ceur-ws.org/Vol-1483/#OzaniZorlu> .
+    ns6:title "Hiyerarşik Kümeleme ile Yazılım Mimarisi Geri Kazanımı" ;
+    ns5:section <http://ceur-ws.org/Vol-1483/#SessionYMYazılımMimarisi> ;
+    ns2:author <http://ceur-ws.org/Vol-1483/#OzaniZorlu> .
 
 <http://ceur-ws.org/Vol-1483/#Ak%C4%B1ni%C3%96z%C3%A7ift> a ns1:Person ;
     ns4:sameAs <http://ceur-ws.org/persons/Ak%C4%B1ni%C3%96z%C3%A7ift> ;
@@ -1011,7 +1017,7 @@
 
 <http://ceur-ws.org/Vol-1483/#KeynoteSpeaker> a ns3:SessionEvent ;
     ns3:partOf <http://ceur-ws.org/Vol-1483/> ;
-    ns2:title "Keynote  Speaker" .
+    ns6:title "Keynote  Speaker" .
 
 <http://ceur-ws.org/Vol-1483/#MehmetiG%C3%B6rkemi%C3%9Clkar> a ns1:Person ;
     ns4:sameAs <http://ceur-ws.org/persons/MehmetiG%C3%B6rkemi%C3%9Clkar> ;
@@ -1026,7 +1032,7 @@
     ns1:name "Merve Özkardeş" .
 
 <http://ceur-ws.org/Vol-1483/#MuratiKomesli> a ns1:Person ;
-    ns5:affiliation "" ;
+    ns2:affiliation "" ;
     ns4:sameAs <http://ceur-ws.org/persons/MuratiKomesli> ;
     ns1:made <http://ceur-ws.org/Vol-1483/#79_Bildiri> ;
     ns1:name "Murat Komesli" .
@@ -1069,15 +1075,15 @@
 
 <http://ceur-ws.org/Vol-1483/#SessionES1EğitimSemineri1> a ns3:SessionEvent ;
     ns3:partOf <http://ceur-ws.org/Vol-1483/> ;
-    ns2:title "Session ES-1:  Eğitim Semineri-1" .
+    ns6:title "Session ES-1:  Eğitim Semineri-1" .
 
 <http://ceur-ws.org/Vol-1483/#SessionES3EğitimSemineri3> a ns3:SessionEvent ;
     ns3:partOf <http://ceur-ws.org/Vol-1483/> ;
-    ns2:title "Session ES-3:  Eğitim Semineri-3" .
+    ns6:title "Session ES-3:  Eğitim Semineri-3" .
 
 <http://ceur-ws.org/Vol-1483/#SessionES4EğitimSemineri4> a ns3:SessionEvent ;
     ns3:partOf <http://ceur-ws.org/Vol-1483/> ;
-    ns2:title "Session ES-4:  Eğitim Semineri-4" .
+    ns6:title "Session ES-4:  Eğitim Semineri-4" .
 
 <http://ceur-ws.org/Vol-1483/#TubaiYa%C4%9Fl%C4%B1> a ns1:Person ;
     ns4:sameAs <http://ceur-ws.org/persons/TubaiYa%C4%9Fl%C4%B1> ;
@@ -1099,212 +1105,212 @@
 
 <http://ceur-ws.org/Vol-1483/#10_Bildiri> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-1483/> ;
-    ns2:title "Web Uygulamaları için Model Bazlı Test Süreci Otomasyonu" ;
-    ns6:section <http://ceur-ws.org/Vol-1483/#SessionYTM2YazılımTestMühendisliği2> ;
-    ns5:author <http://ceur-ws.org/Vol-1483/#HasaniS%C3%B6zer>,
+    ns6:title "Web Uygulamaları için Model Bazlı Test Süreci Otomasyonu" ;
+    ns5:section <http://ceur-ws.org/Vol-1483/#SessionYTM2YazılımTestMühendisliği2> ;
+    ns2:author <http://ceur-ws.org/Vol-1483/#HasaniS%C3%B6zer>,
         <http://ceur-ws.org/Vol-1483/#U%C4%9Furi%C3%96zkan> .
 
 <http://ceur-ws.org/Vol-1483/#12_Bildiri> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-1483/> ;
-    ns2:title "Uygulama Yaşam Döngüsü Yönetimi Karşılaştırmalı Süreç İncelemesi" ;
-    ns6:section <http://ceur-ws.org/Vol-1483/#SessionYGS2YazılımGeliştirmeSüreçleri2> ;
-    ns5:author <http://ceur-ws.org/Vol-1483/#ErayiT%C3%BCz%C3%BCn>,
+    ns6:title "Uygulama Yaşam Döngüsü Yönetimi Karşılaştırmalı Süreç İncelemesi" ;
+    ns5:section <http://ceur-ws.org/Vol-1483/#SessionYGS2YazılımGeliştirmeSüreçleri2> ;
+    ns2:author <http://ceur-ws.org/Vol-1483/#ErayiT%C3%BCz%C3%BCn>,
         <http://ceur-ws.org/Vol-1483/#YagupiMacit> .
 
 <http://ceur-ws.org/Vol-1483/#15_Bildiri> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-1483/> ;
-    ns2:title "SAAS Uygulamalar için bir Anomali Algılama Sistemi" ;
-    ns6:section <http://ceur-ws.org/Vol-1483/#SessionDYM2DeneyselYazılımMühendisliği2> ;
-    ns5:author <http://ceur-ws.org/Vol-1483/#%C3%96zg%C3%BCiCan>,
+    ns6:title "SAAS Uygulamalar için bir Anomali Algılama Sistemi" ;
+    ns5:section <http://ceur-ws.org/Vol-1483/#SessionDYM2DeneyselYazılımMühendisliği2> ;
+    ns2:author <http://ceur-ws.org/Vol-1483/#%C3%96zg%C3%BCiCan>,
         <http://ceur-ws.org/Vol-1483/#Tun%C3%A7iG%C3%BCltekin> .
 
 <http://ceur-ws.org/Vol-1483/#1_Bildiri> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-1483/> ;
-    ns2:title "Büyüyen Kısmi Yol Kısıtlarıyla Konkolik Test" ;
-    ns6:section <http://ceur-ws.org/Vol-1483/#SessionYTM1YazılımTestMühendisliği1> ;
-    ns5:author <http://ceur-ws.org/Vol-1483/#Alperi%C5%9Een>,
+    ns6:title "Büyüyen Kısmi Yol Kısıtlarıyla Konkolik Test" ;
+    ns5:section <http://ceur-ws.org/Vol-1483/#SessionYTM1YazılımTestMühendisliği1> ;
+    ns2:author <http://ceur-ws.org/Vol-1483/#Alperi%C5%9Een>,
         <http://ceur-ws.org/Vol-1483/#YavuziK%C3%B6ro%C4%9Flu> .
 
 <http://ceur-ws.org/Vol-1483/#23_Bildiri> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-1483/> ;
-    ns2:title "Çok Katmanlı Nesne İlişkisel Eşleme Mimarisi İçin Otomatik Fonksiyonel Büyüklük Ölçümü" ;
-    ns6:section <http://ceur-ws.org/Vol-1483/#SessionDYM3DeneyselYazılımMühendisliği3> ;
-    ns5:author <http://ceur-ws.org/Vol-1483/#Bar%C4%B1%C5%9Fi%C3%96zkan>,
+    ns6:title "Çok Katmanlı Nesne İlişkisel Eşleme Mimarisi İçin Otomatik Fonksiyonel Büyüklük Ölçümü" ;
+    ns5:section <http://ceur-ws.org/Vol-1483/#SessionDYM3DeneyselYazılımMühendisliği3> ;
+    ns2:author <http://ceur-ws.org/Vol-1483/#Bar%C4%B1%C5%9Fi%C3%96zkan>,
         <http://ceur-ws.org/Vol-1483/#HamdiiDemirel> .
 
 <http://ceur-ws.org/Vol-1483/#29_Deneyim> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-1483/> ;
-    ns2:title "Savunma Projelerinde Çevik Metodolojiler" ;
-    ns6:section <http://ceur-ws.org/Vol-1483/#SessionYGS4YazılımGeliştirmeSüreçleri4> ;
-    ns5:author <http://ceur-ws.org/Vol-1483/#BurcuiNalbant>,
+    ns6:title "Savunma Projelerinde Çevik Metodolojiler" ;
+    ns5:section <http://ceur-ws.org/Vol-1483/#SessionYGS4YazılımGeliştirmeSüreçleri4> ;
+    ns2:author <http://ceur-ws.org/Vol-1483/#BurcuiNalbant>,
         <http://ceur-ws.org/Vol-1483/#MertiB%C4%B1%C3%A7ak%C3%A7%C4%B1> .
 
 <http://ceur-ws.org/Vol-1483/#31_Deneyim> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-1483/> ;
-    ns2:title "Çoklu Bileşenlerden Oluşan Sistemlerde Çevik Yazılım Geliştirme Deneyimi" ;
-    ns6:section <http://ceur-ws.org/Vol-1483/#SessionYGS4YazılımGeliştirmeSüreçleri4> ;
-    ns5:author <http://ceur-ws.org/Vol-1483/#%C4%B0brahimiDo%C4%9Fru>,
+    ns6:title "Çoklu Bileşenlerden Oluşan Sistemlerde Çevik Yazılım Geliştirme Deneyimi" ;
+    ns5:section <http://ceur-ws.org/Vol-1483/#SessionYGS4YazılımGeliştirmeSüreçleri4> ;
+    ns2:author <http://ceur-ws.org/Vol-1483/#%C4%B0brahimiDo%C4%9Fru>,
         <http://ceur-ws.org/Vol-1483/#HilaliCo%C5%9Fkun> .
 
 <http://ceur-ws.org/Vol-1483/#34_GenisOzet> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-1483/> ;
-    ns2:title "Web Sayfalarının Enerji Tasarrufu için Dönüştürülmesi" ;
-    ns6:section <http://ceur-ws.org/Vol-1483/#SpecialSessionYüksekLisansveDoktoraTezleriToplantıları> ;
-    ns5:author <http://ceur-ws.org/Vol-1483/#EdaiK%C3%B6ksal>,
+    ns6:title "Web Sayfalarının Enerji Tasarrufu için Dönüştürülmesi" ;
+    ns5:section <http://ceur-ws.org/Vol-1483/#SpecialSessionYüksekLisansveDoktoraTezleriToplantıları> ;
+    ns2:author <http://ceur-ws.org/Vol-1483/#EdaiK%C3%B6ksal>,
         <http://ceur-ws.org/Vol-1483/#YeliziYe%C5%9Filada> .
 
 <http://ceur-ws.org/Vol-1483/#36_Bildiri> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-1483/> ;
-    ns2:title "Bilgi Teknolojileri Proje Yönetişimi: Türkiye’deki Organizasyonların Durumu" ;
-    ns6:section <http://ceur-ws.org/Vol-1483/#SessionYGS5YazılımGeliştirmeSüreçleri5> ;
-    ns5:author <http://ceur-ws.org/Vol-1483/#EmreiAl%C4%B1%C3%A7>,
+    ns6:title "Bilgi Teknolojileri Proje Yönetişimi: Türkiye’deki Organizasyonların Durumu" ;
+    ns5:section <http://ceur-ws.org/Vol-1483/#SessionYGS5YazılımGeliştirmeSüreçleri5> ;
+    ns2:author <http://ceur-ws.org/Vol-1483/#EmreiAl%C4%B1%C3%A7>,
         <http://ceur-ws.org/Vol-1483/#P%C4%B1nariOnayiDurdu> .
 
 <http://ceur-ws.org/Vol-1483/#40_Bildiri> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-1483/> ;
-    ns2:title "Yazılım Ürün Hatlarında Alana Özgü Bileşenleri Belirleme Yaklaşımı" ;
-    ns6:section <http://ceur-ws.org/Vol-1483/#SessionMGYG1ModelGüdümlüYazılımGeliştirme1> ;
-    ns5:author <http://ceur-ws.org/Vol-1483/#%C4%B0brahimiOnuralpiYi%C4%9Fit>,
+    ns6:title "Yazılım Ürün Hatlarında Alana Özgü Bileşenleri Belirleme Yaklaşımı" ;
+    ns5:section <http://ceur-ws.org/Vol-1483/#SessionMGYG1ModelGüdümlüYazılımGeliştirme1> ;
+    ns2:author <http://ceur-ws.org/Vol-1483/#%C4%B0brahimiOnuralpiYi%C4%9Fit>,
         <http://ceur-ws.org/Vol-1483/#AliiHikmetiDo%C4%9Fru> .
 
 <http://ceur-ws.org/Vol-1483/#41_Bildiri> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-1483/> ;
-    ns2:title "DSL4JavaCard: JavaCard Platformu İçin Bir Alana Özgü Dil" ;
-    ns6:section <http://ceur-ws.org/Vol-1483/#SessionMGYG1ModelGüdümlüYazılımGeliştirme1> ;
-    ns5:author <http://ceur-ws.org/Vol-1483/#GeylaniiKarda%C5%9F>,
+    ns6:title "DSL4JavaCard: JavaCard Platformu İçin Bir Alana Özgü Dil" ;
+    ns5:section <http://ceur-ws.org/Vol-1483/#SessionMGYG1ModelGüdümlüYazılımGeliştirme1> ;
+    ns2:author <http://ceur-ws.org/Vol-1483/#GeylaniiKarda%C5%9F>,
         <http://ceur-ws.org/Vol-1483/#MirayiTosun> .
 
 <http://ceur-ws.org/Vol-1483/#42_Bildiri> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-1483/> ;
-    ns2:title "Yazılım Yeniden Yapılamaya Yönelik Model Güdümlü ve Kaliteye Yönelimli Süreç Modeli" ;
-    ns6:section <http://ceur-ws.org/Vol-1483/#SessionMGYG1ModelGüdümlüYazılımGeliştirme1> ;
-    ns5:author <http://ceur-ws.org/Vol-1483/#A.iErhaniMergen>,
+    ns6:title "Yazılım Yeniden Yapılamaya Yönelik Model Güdümlü ve Kaliteye Yönelimli Süreç Modeli" ;
+    ns5:section <http://ceur-ws.org/Vol-1483/#SessionMGYG1ModelGüdümlüYazılımGeliştirme1> ;
+    ns2:author <http://ceur-ws.org/Vol-1483/#A.iErhaniMergen>,
         <http://ceur-ws.org/Vol-1483/#MuratiPa%C5%9FaiUysal> .
 
 <http://ceur-ws.org/Vol-1483/#45_Deneyim> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-1483/> ;
-    ns2:title "Örün Tabanlı Coğrafi Bilgi Sistemi Uygulama Programlama Arayüzü Geliştirilmesi" ;
-    ns6:section <http://ceur-ws.org/Vol-1483/#SessionYGS6YazılımGeliştirmeSüreçleri6> ;
-    ns5:author <http://ceur-ws.org/Vol-1483/#B%C3%BClenti%C3%96zhorasan>,
+    ns6:title "Örün Tabanlı Coğrafi Bilgi Sistemi Uygulama Programlama Arayüzü Geliştirilmesi" ;
+    ns5:section <http://ceur-ws.org/Vol-1483/#SessionYGS6YazılımGeliştirmeSüreçleri6> ;
+    ns2:author <http://ceur-ws.org/Vol-1483/#B%C3%BClenti%C3%96zhorasan>,
         <http://ceur-ws.org/Vol-1483/#H%C3%BCseyiniAte%C5%9F> .
 
 <http://ceur-ws.org/Vol-1483/#47_Deneyim> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-1483/> ;
-    ns2:title "Uluslararası Geliştirilen Bir Projenin İşleyişi, Gözlemlerimiz ve Edinilen Tecrübeler" ;
-    ns6:section <http://ceur-ws.org/Vol-1483/#SessionYGS6YazılımGeliştirmeSüreçleri6> ;
-    ns5:author <http://ceur-ws.org/Vol-1483/#EmraiA%C5%9Fkaro%C4%9Flu>,
+    ns6:title "Uluslararası Geliştirilen Bir Projenin İşleyişi, Gözlemlerimiz ve Edinilen Tecrübeler" ;
+    ns5:section <http://ceur-ws.org/Vol-1483/#SessionYGS6YazılımGeliştirmeSüreçleri6> ;
+    ns2:author <http://ceur-ws.org/Vol-1483/#EmraiA%C5%9Fkaro%C4%9Flu>,
         <http://ceur-ws.org/Vol-1483/#HakaniY%C4%B1lmaz> .
 
 <http://ceur-ws.org/Vol-1483/#50_Bildiri> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-1483/> ;
-    ns2:title "Web Uygulamaları için Model Tabanlı Çevik Süreç Yöntemi ile Yazılım Geliştirme" ;
-    ns6:section <http://ceur-ws.org/Vol-1483/#SessionMGYG2ModelGüdümlüYazılımGeliştirme2> ;
-    ns5:author <http://ceur-ws.org/Vol-1483/#G%C3%BCrkaniAlpaslan>,
+    ns6:title "Web Uygulamaları için Model Tabanlı Çevik Süreç Yöntemi ile Yazılım Geliştirme" ;
+    ns5:section <http://ceur-ws.org/Vol-1483/#SessionMGYG2ModelGüdümlüYazılımGeliştirme2> ;
+    ns2:author <http://ceur-ws.org/Vol-1483/#G%C3%BCrkaniAlpaslan>,
         <http://ceur-ws.org/Vol-1483/#OyaiKal%C4%B1ps%C4%B1z> .
 
 <http://ceur-ws.org/Vol-1483/#52_Bildiri> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-1483/> ;
-    ns2:title "Yazılım Mühendisliği Eğitiminde Bitirme Projesinin Yürütülmesinde İki Farklı Yöntemin Öğrenci Bakış Açısıyla Değerlendirilmesi" ;
-    ns6:section <http://ceur-ws.org/Vol-1483/#SessionYMEYazılımMühendisliğiEğitimi> ;
-    ns5:author <http://ceur-ws.org/Vol-1483/#AtilaiBostan>,
+    ns6:title "Yazılım Mühendisliği Eğitiminde Bitirme Projesinin Yürütülmesinde İki Farklı Yöntemin Öğrenci Bakış Açısıyla Değerlendirilmesi" ;
+    ns5:section <http://ceur-ws.org/Vol-1483/#SessionYMEYazılımMühendisliğiEğitimi> ;
+    ns2:author <http://ceur-ws.org/Vol-1483/#AtilaiBostan>,
         <http://ceur-ws.org/Vol-1483/#MuratiKarakaya> .
 
 <http://ceur-ws.org/Vol-1483/#54_Ozet> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-1483/> ;
-    ns2:title "Alana Özgü Modelleme" ;
-    ns6:section <http://ceur-ws.org/Vol-1483/#SessionES3EğitimSemineri3> ;
-    ns5:author <http://ceur-ws.org/Vol-1483/#Necmii%C5%9Eentuna>,
+    ns6:title "Alana Özgü Modelleme" ;
+    ns5:section <http://ceur-ws.org/Vol-1483/#SessionES3EğitimSemineri3> ;
+    ns2:author <http://ceur-ws.org/Vol-1483/#Necmii%C5%9Eentuna>,
         <http://ceur-ws.org/Vol-1483/#Tu%C4%9FkaniTu%C4%9Flular> .
 
 <http://ceur-ws.org/Vol-1483/#55_Bildiri> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-1483/> ;
-    ns2:title "Web Uygulamalarında Dolaşım ve Erişim Kontrolü Hatalarının Tespiti ve Yeniden Canlandırılması" ;
-    ns6:section <http://ceur-ws.org/Vol-1483/#SessionYGDAYazılımGeliştirmeDestekAraçları> ;
-    ns5:author <http://ceur-ws.org/Vol-1483/#AysuiBetiniCan>,
+    ns6:title "Web Uygulamalarında Dolaşım ve Erişim Kontrolü Hatalarının Tespiti ve Yeniden Canlandırılması" ;
+    ns5:section <http://ceur-ws.org/Vol-1483/#SessionYGDAYazılımGeliştirmeDestekAraçları> ;
+    ns2:author <http://ceur-ws.org/Vol-1483/#AysuiBetiniCan>,
         <http://ceur-ws.org/Vol-1483/#YudumiPa%C3%A7in> .
 
 <http://ceur-ws.org/Vol-1483/#60_Bildiri> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-1483/> ;
-    ns2:title "Futbol Hakemlerinin Karar Verme Yeteneklerini Geliştirmek İçin Düşünülmüş Ciddi Oyun Tabanlı Öğrenme Çatısı" ;
-    ns6:section <http://ceur-ws.org/Vol-1483/#SessionYPYEYazılımProjeYönetimEğilimler> ;
-    ns5:author <http://ceur-ws.org/Vol-1483/#MuratiYilmaz>,
+    ns6:title "Futbol Hakemlerinin Karar Verme Yeteneklerini Geliştirmek İçin Düşünülmüş Ciddi Oyun Tabanlı Öğrenme Çatısı" ;
+    ns5:section <http://ceur-ws.org/Vol-1483/#SessionYPYEYazılımProjeYönetimEğilimler> ;
+    ns2:author <http://ceur-ws.org/Vol-1483/#MuratiYilmaz>,
         <http://ceur-ws.org/Vol-1483/#Ula%C5%9FiG%C3%BCle%C3%A7> .
 
 <http://ceur-ws.org/Vol-1483/#62_Bildiri> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-1483/> ;
-    ns2:title "Yazılım Ürün Hattı Projelerinde Kalite Maliyeti ve Hata Yoğunluğu Ölçüm Yaklaşımı" ;
-    ns6:section <http://ceur-ws.org/Vol-1483/#SessionYKYYazılımKaliteYönetimi> ;
-    ns5:author <http://ceur-ws.org/Vol-1483/#ElifiCeylan>,
+    ns6:title "Yazılım Ürün Hattı Projelerinde Kalite Maliyeti ve Hata Yoğunluğu Ölçüm Yaklaşımı" ;
+    ns5:section <http://ceur-ws.org/Vol-1483/#SessionYKYYazılımKaliteYönetimi> ;
+    ns2:author <http://ceur-ws.org/Vol-1483/#ElifiCeylan>,
         <http://ceur-ws.org/Vol-1483/#SezeniErdem> .
 
 <http://ceur-ws.org/Vol-1483/#63_Bildiri> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-1483/> ;
-    ns2:title "ISO/IEC 15504 Standardının Devlet Kurumları için Uyarlanması" ;
-    ns6:section <http://ceur-ws.org/Vol-1483/#SessionYKYYazılımKaliteYönetimi> ;
-    ns5:author <http://ceur-ws.org/Vol-1483/#EbruiG%C3%B6kalp>,
+    ns6:title "ISO/IEC 15504 Standardının Devlet Kurumları için Uyarlanması" ;
+    ns5:section <http://ceur-ws.org/Vol-1483/#SessionYKYYazılımKaliteYönetimi> ;
+    ns2:author <http://ceur-ws.org/Vol-1483/#EbruiG%C3%B6kalp>,
         <http://ceur-ws.org/Vol-1483/#OnuriDemir%C3%B6rs> .
 
 <http://ceur-ws.org/Vol-1483/#66_Bildiri> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-1483/> ;
-    ns2:title "Sayısal Almaç Planlayıcı Bileşeninin Biçimsel Doğrulanması" ;
-    ns6:section <http://ceur-ws.org/Vol-1483/#SessionGGZYS1GömülüGerçekZamanlıYazılımSistemleri1> ;
-    ns5:author <http://ceur-ws.org/Vol-1483/#%C3%96zg%C3%BCriK%C4%B1z%C4%B1lay>,
+    ns6:title "Sayısal Almaç Planlayıcı Bileşeninin Biçimsel Doğrulanması" ;
+    ns5:section <http://ceur-ws.org/Vol-1483/#SessionGGZYS1GömülüGerçekZamanlıYazılımSistemleri1> ;
+    ns2:author <http://ceur-ws.org/Vol-1483/#%C3%96zg%C3%BCriK%C4%B1z%C4%B1lay>,
         <http://ceur-ws.org/Vol-1483/#MustafaiDursun> .
 
 <http://ceur-ws.org/Vol-1483/#6_Bildiri> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-1483/> ;
-    ns2:title "Yazılım Projelerinde Başarısızlık: Kritik Başarı Faktörlerine Dayalı bir Vaka Çalışması" ;
-    ns6:section <http://ceur-ws.org/Vol-1483/#SessionDYM1DeneyselYazılımMühendisliği1> ;
-    ns5:author <http://ceur-ws.org/Vol-1483/#K%C4%B1van%C3%A7iDin%C3%A7er>,
+    ns6:title "Yazılım Projelerinde Başarısızlık: Kritik Başarı Faktörlerine Dayalı bir Vaka Çalışması" ;
+    ns5:section <http://ceur-ws.org/Vol-1483/#SessionDYM1DeneyselYazılımMühendisliği1> ;
+    ns2:author <http://ceur-ws.org/Vol-1483/#K%C4%B1van%C3%A7iDin%C3%A7er>,
         <http://ceur-ws.org/Vol-1483/#VahidiGarousi> .
 
 <http://ceur-ws.org/Vol-1483/#71_Deneyim> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-1483/> ;
-    ns2:title "Gömülü Sistem Üzerinde Harita Fonksiyonlarının Performans Analizi" ;
-    ns6:section <http://ceur-ws.org/Vol-1483/#SessionGGZYS2GömülüGerçekZamanlıYazılımSistemleri2> ;
-    ns5:author <http://ceur-ws.org/Vol-1483/#ErdemiErgen>,
+    ns6:title "Gömülü Sistem Üzerinde Harita Fonksiyonlarının Performans Analizi" ;
+    ns5:section <http://ceur-ws.org/Vol-1483/#SessionGGZYS2GömülüGerçekZamanlıYazılımSistemleri2> ;
+    ns2:author <http://ceur-ws.org/Vol-1483/#ErdemiErgen>,
         <http://ceur-ws.org/Vol-1483/#G.i%C3%87i%C4%9Fdemi%C3%87avdaro%C4%9Flu> .
 
 <http://ceur-ws.org/Vol-1483/#73_Deneyim> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-1483/> ;
-    ns2:title "Elektronik İstihbarat Algoritma Yazılımlarının OpenMP Kullanılarak Çok Çekirdekli İşlemciler Üzerinde Paralelleştirilmesi" ;
-    ns6:section <http://ceur-ws.org/Vol-1483/#SessionDaYMDağıtıkYazılımMühendisliği> ;
-    ns5:author <http://ceur-ws.org/Vol-1483/#AlparslaniFi%C5%9Fne>,
+    ns6:title "Elektronik İstihbarat Algoritma Yazılımlarının OpenMP Kullanılarak Çok Çekirdekli İşlemciler Üzerinde Paralelleştirilmesi" ;
+    ns5:section <http://ceur-ws.org/Vol-1483/#SessionDaYMDağıtıkYazılımMühendisliği> ;
+    ns2:author <http://ceur-ws.org/Vol-1483/#AlparslaniFi%C5%9Fne>,
         <http://ceur-ws.org/Vol-1483/#MuratiSever> .
 
 <http://ceur-ws.org/Vol-1483/#75_Bildiri> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-1483/> ;
-    ns2:title "JavaScript Kütüphaneleri için Girdi Doğrulama Analizi" ;
-    ns6:section <http://ceur-ws.org/Vol-1483/#SessionYKGSDYazılımKaliteGüvenceSınamaDoğrulama> ;
-    ns5:author <http://ceur-ws.org/Vol-1483/#EkincaniUfuktepe>,
+    ns6:title "JavaScript Kütüphaneleri için Girdi Doğrulama Analizi" ;
+    ns5:section <http://ceur-ws.org/Vol-1483/#SessionYKGSDYazılımKaliteGüvenceSınamaDoğrulama> ;
+    ns2:author <http://ceur-ws.org/Vol-1483/#EkincaniUfuktepe>,
         <http://ceur-ws.org/Vol-1483/#Tu%C4%9FkaniTu%C4%9Flular> .
 
 <http://ceur-ws.org/Vol-1483/#81_Bildiri> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-1483/> ;
-    ns2:title "Mikro Bloglardaki Finans Toplulukları için Kullanıcı Ağırlıklandırılmış Duygu Analizi Yöntemi" ;
-    ns6:section <http://ceur-ws.org/Vol-1483/#SessionİBEİnsanBilgisayarEtkilesimi> ;
-    ns5:author <http://ceur-ws.org/Vol-1483/#AlpaslaniBurakiElia%C3%A7%C4%B1k>,
+    ns6:title "Mikro Bloglardaki Finans Toplulukları için Kullanıcı Ağırlıklandırılmış Duygu Analizi Yöntemi" ;
+    ns5:section <http://ceur-ws.org/Vol-1483/#SessionİBEİnsanBilgisayarEtkilesimi> ;
+    ns2:author <http://ceur-ws.org/Vol-1483/#AlpaslaniBurakiElia%C3%A7%C4%B1k>,
         <http://ceur-ws.org/Vol-1483/#NadiaiErdo%C4%9Fan> .
 
 <http://ceur-ws.org/Vol-1483/#83_Bildiri> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-1483/> ;
-    ns2:title "İşletim İzlerinden Otomatik COSMIC Büyüklük Ölçme – Durum Çalışması" ;
-    ns6:section <http://ceur-ws.org/Vol-1483/#SessionYPKYSYazılımProjeKonfigürasyonYönetim> ;
-    ns5:author <http://ceur-ws.org/Vol-1483/#Ay%C3%A7aiTarhan>,
+    ns6:title "İşletim İzlerinden Otomatik COSMIC Büyüklük Ölçme – Durum Çalışması" ;
+    ns5:section <http://ceur-ws.org/Vol-1483/#SessionYPKYSYazılımProjeKonfigürasyonYönetim> ;
+    ns2:author <http://ceur-ws.org/Vol-1483/#Ay%C3%A7aiTarhan>,
         <http://ceur-ws.org/Vol-1483/#MuhammetiAliiSa%C4%9F> .
 
 <http://ceur-ws.org/Vol-1483/#84_Bildiri> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-1483/> ;
-    ns2:title "Form Tabanlı Uygulamalar İçin Çaba Kestirimi" ;
-    ns6:section <http://ceur-ws.org/Vol-1483/#SessionYPKYSYazılımProjeKonfigürasyonYönetim> ;
-    ns5:author <http://ceur-ws.org/Vol-1483/#U%C4%9FuriKemaliHa%C5%9Flak>,
+    ns6:title "Form Tabanlı Uygulamalar İçin Çaba Kestirimi" ;
+    ns5:section <http://ceur-ws.org/Vol-1483/#SessionYPKYSYazılımProjeKonfigürasyonYönetim> ;
+    ns2:author <http://ceur-ws.org/Vol-1483/#U%C4%9FuriKemaliHa%C5%9Flak>,
         <http://ceur-ws.org/Vol-1483/#YunusiEmreiSel%C3%A7uk> .
 
 <http://ceur-ws.org/Vol-1483/#9_Bildiri> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-1483/> ;
-    ns2:title "Test Olgunluk Seviyesi Modeli" ;
-    ns6:section <http://ceur-ws.org/Vol-1483/#SessionYTM2YazılımTestMühendisliği2> ;
-    ns5:author <http://ceur-ws.org/Vol-1483/#Bar%C4%B1%C5%9FiSar%C4%B1alio%C4%9Flu>,
+    ns6:title "Test Olgunluk Seviyesi Modeli" ;
+    ns5:section <http://ceur-ws.org/Vol-1483/#SessionYTM2YazılımTestMühendisliği2> ;
+    ns2:author <http://ceur-ws.org/Vol-1483/#Bar%C4%B1%C5%9FiSar%C4%B1alio%C4%9Flu>,
         <http://ceur-ws.org/Vol-1483/#BerkiD%C3%BClger> .
 
 <http://ceur-ws.org/Vol-1483/#K%C4%B1van%C3%A7iDin%C3%A7er> a ns1:Person ;
@@ -1330,23 +1336,23 @@
 
 <http://ceur-ws.org/Vol-1483/#SessionYGS3YazılımGeliştirmeSüreçleri3> a ns3:SessionEvent ;
     ns3:partOf <http://ceur-ws.org/Vol-1483/> ;
-    ns2:title "Session YGS-3:  Yazılım Geliştirme Süreçleri-3" .
+    ns6:title "Session YGS-3:  Yazılım Geliştirme Süreçleri-3" .
 
 <http://ceur-ws.org/Vol-1483/#SessionYKGSDYazılımKaliteGüvenceSınamaDoğrulama> a ns3:SessionEvent ;
     ns3:partOf <http://ceur-ws.org/Vol-1483/> ;
-    ns2:title "Session YKGSD:  Yazılım Kalite Güvence, Sınama, Doğrulama" .
+    ns6:title "Session YKGSD:  Yazılım Kalite Güvence, Sınama, Doğrulama" .
 
 <http://ceur-ws.org/Vol-1483/#SessionYTM1YazılımTestMühendisliği1> a ns3:SessionEvent ;
     ns3:partOf <http://ceur-ws.org/Vol-1483/> ;
-    ns2:title "Session YTM-1:  Yazılım Test Mühendisliği-1" .
+    ns6:title "Session YTM-1:  Yazılım Test Mühendisliği-1" .
 
 <http://ceur-ws.org/Vol-1483/#SessionYTM3YazılımTestMühendisliği3> a ns3:SessionEvent ;
     ns3:partOf <http://ceur-ws.org/Vol-1483/> ;
-    ns2:title "Session YTM-3:  Yazılım Test Mühendisliği-3" .
+    ns6:title "Session YTM-3:  Yazılım Test Mühendisliği-3" .
 
 <http://ceur-ws.org/Vol-1483/#SessionYYYeşilYazılım> a ns3:SessionEvent ;
     ns3:partOf <http://ceur-ws.org/Vol-1483/> ;
-    ns2:title "Session YY:  Yeşil Yazılım" .
+    ns6:title "Session YY:  Yeşil Yazılım" .
 
 <http://ceur-ws.org/Vol-1483/#Soneri%C3%87%C4%B1nar> a ns1:Person ;
     ns4:sameAs <http://ceur-ws.org/persons/Soneri%C3%87%C4%B1nar> ;
@@ -1357,10 +1363,10 @@
 
 <http://ceur-ws.org/Vol-1483/#SpecialSessionYüksekLisansveDoktoraTezleriToplantıları> a ns3:SessionEvent ;
     ns3:partOf <http://ceur-ws.org/Vol-1483/> ;
-    ns2:title "Special Session:  Yüksek Lisans ve Doktora Tezleri Toplantıları" .
+    ns6:title "Special Session:  Yüksek Lisans ve Doktora Tezleri Toplantıları" .
 
 <http://ceur-ws.org/Vol-1483/#Tu%C4%9FkaniTu%C4%9Flular> a ns1:Person ;
-    ns5:affiliation "" ;
+    ns2:affiliation "" ;
     ns4:sameAs <http://ceur-ws.org/persons/Tu%C4%9FkaniTu%C4%9Flular> ;
     ns1:made <http://ceur-ws.org/Vol-1483/#54_Ozet>,
         <http://ceur-ws.org/Vol-1483/#75_Bildiri> ;
@@ -1368,145 +1374,145 @@
 
 <http://ceur-ws.org/Vol-1483/#18_Bildiri> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-1483/> ;
-    ns2:title "Farklı Projelerde Geliştirilen Gömülü Yazılımların Test Otomasyonu İçin Donanım Sistemi Simülasyonu Geliştirme Deneyimi" ;
-    ns6:section <http://ceur-ws.org/Vol-1483/#SessionYTM3YazılımTestMühendisliği3> ;
-    ns5:author <http://ceur-ws.org/Vol-1483/#%C3%96meriFarukiMoral%C4%B1o%C4%9Flu>,
+    ns6:title "Farklı Projelerde Geliştirilen Gömülü Yazılımların Test Otomasyonu İçin Donanım Sistemi Simülasyonu Geliştirme Deneyimi" ;
+    ns5:section <http://ceur-ws.org/Vol-1483/#SessionYTM3YazılımTestMühendisliği3> ;
+    ns2:author <http://ceur-ws.org/Vol-1483/#%C3%96meriFarukiMoral%C4%B1o%C4%9Flu>,
         <http://ceur-ws.org/Vol-1483/#%C3%96nderiCezayirli>,
         <http://ceur-ws.org/Vol-1483/#MuratiYilmaz> .
 
 <http://ceur-ws.org/Vol-1483/#20_Bildiri> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-1483/> ;
-    ns2:title "E-belge Uyum Yazılımı Deneyimleri" ;
-    ns6:section <http://ceur-ws.org/Vol-1483/#SessionYGS3YazılımGeliştirmeSüreçleri3> ;
-    ns5:author <http://ceur-ws.org/Vol-1483/#MehmetiG%C3%B6rkemi%C3%9Clkar>,
+    ns6:title "E-belge Uyum Yazılımı Deneyimleri" ;
+    ns5:section <http://ceur-ws.org/Vol-1483/#SessionYGS3YazılımGeliştirmeSüreçleri3> ;
+    ns2:author <http://ceur-ws.org/Vol-1483/#MehmetiG%C3%B6rkemi%C3%9Clkar>,
         <http://ceur-ws.org/Vol-1483/#SalihiBayar>,
         <http://ceur-ws.org/Vol-1483/#Yal%C3%A7%C4%B1niTercan> .
 
 <http://ceur-ws.org/Vol-1483/#21_Bildiri> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-1483/> ;
-    ns2:title "Yazılım Geliştirme Süreçlerinde Şelale Yönteminden Çevik Yaklaşıma Geçiş: Bir Teknoloji Şirketinde Uygulama" ;
-    ns6:section <http://ceur-ws.org/Vol-1483/#SessionYGS3YazılımGeliştirmeSüreçleri3> ;
-    ns5:author <http://ceur-ws.org/Vol-1483/#Alii%C3%96zkaya>,
+    ns6:title "Yazılım Geliştirme Süreçlerinde Şelale Yönteminden Çevik Yaklaşıma Geçiş: Bir Teknoloji Şirketinde Uygulama" ;
+    ns5:section <http://ceur-ws.org/Vol-1483/#SessionYGS3YazılımGeliştirmeSüreçleri3> ;
+    ns2:author <http://ceur-ws.org/Vol-1483/#Alii%C3%96zkaya>,
         <http://ceur-ws.org/Vol-1483/#AyferiBa%C5%9Far>,
         <http://ceur-ws.org/Vol-1483/#FatihiKesgin> .
 
 <http://ceur-ws.org/Vol-1483/#22_Bildiri> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-1483/> ;
-    ns2:title "Yüksek Sinyal İşleme Algoritmalarının İşlemci (CPU) ve Grafik İşlemci (GPU) Üzerinde Paylaşılarak Gerçeklenmesi" ;
-    ns6:section <http://ceur-ws.org/Vol-1483/#SessionDYM3DeneyselYazılımMühendisliği3> ;
-    ns5:author <http://ceur-ws.org/Vol-1483/#BurcuiSa%C4%9FeliTawk>,
+    ns6:title "Yüksek Sinyal İşleme Algoritmalarının İşlemci (CPU) ve Grafik İşlemci (GPU) Üzerinde Paylaşılarak Gerçeklenmesi" ;
+    ns5:section <http://ceur-ws.org/Vol-1483/#SessionDYM3DeneyselYazılımMühendisliği3> ;
+    ns2:author <http://ceur-ws.org/Vol-1483/#BurcuiSa%C4%9FeliTawk>,
         <http://ceur-ws.org/Vol-1483/#ErdaliMehmetcik>,
         <http://ceur-ws.org/Vol-1483/#SevdaiErdo%C4%9Fdu> .
 
 <http://ceur-ws.org/Vol-1483/#25_Bildiri> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-1483/> ;
-    ns2:title "Türkiye’deki Kamu Kurumları Yazılım Test ve Kalite Faaliyetleri Anketi, Değerlendirilmesi ve Öneriler" ;
-    ns6:section <http://ceur-ws.org/Vol-1483/#SessionYTM4YazılımTestMühendisliği4> ;
-    ns5:author <http://ceur-ws.org/Vol-1483/#Ay%C5%9Feg%C3%BCliKurt>,
+    ns6:title "Türkiye’deki Kamu Kurumları Yazılım Test ve Kalite Faaliyetleri Anketi, Değerlendirilmesi ve Öneriler" ;
+    ns5:section <http://ceur-ws.org/Vol-1483/#SessionYTM4YazılımTestMühendisliği4> ;
+    ns2:author <http://ceur-ws.org/Vol-1483/#Ay%C5%9Feg%C3%BCliKurt>,
         <http://ceur-ws.org/Vol-1483/#Mehmeti%C3%96zbek>,
         <http://ceur-ws.org/Vol-1483/#MustafaiSar%C4%B1> .
 
 <http://ceur-ws.org/Vol-1483/#26_Bildiri> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-1483/> ;
-    ns2:title "Statik ve Dinamik Analizler ile Hesaplanan Risklere Dayalı Olarak Test Modellerinin İyileştirilmesi" ;
-    ns6:section <http://ceur-ws.org/Vol-1483/#SessionYTM4YazılımTestMühendisliği4> ;
-    ns5:author <http://ceur-ws.org/Vol-1483/#Cereni%C5%9EahiniGebizli>,
+    ns6:title "Statik ve Dinamik Analizler ile Hesaplanan Risklere Dayalı Olarak Test Modellerinin İyileştirilmesi" ;
+    ns5:section <http://ceur-ws.org/Vol-1483/#SessionYTM4YazılımTestMühendisliği4> ;
+    ns2:author <http://ceur-ws.org/Vol-1483/#Cereni%C5%9EahiniGebizli>,
         <http://ceur-ws.org/Vol-1483/#DuyguiMetin>,
         <http://ceur-ws.org/Vol-1483/#HasaniS%C3%B6zer> .
 
 <http://ceur-ws.org/Vol-1483/#38_Deneyim> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-1483/> ;
-    ns2:title "Kullanıcı Tarafında eBelge Oluşturma ve Yazdırma Yazılım Deneyimleri" ;
-    ns6:section <http://ceur-ws.org/Vol-1483/#SessionYGS5YazılımGeliştirmeSüreçleri5> ;
-    ns5:author <http://ceur-ws.org/Vol-1483/#Alperi%C5%9Een>,
+    ns6:title "Kullanıcı Tarafında eBelge Oluşturma ve Yazdırma Yazılım Deneyimleri" ;
+    ns5:section <http://ceur-ws.org/Vol-1483/#SessionYGS5YazılımGeliştirmeSüreçleri5> ;
+    ns2:author <http://ceur-ws.org/Vol-1483/#Alperi%C5%9Een>,
         <http://ceur-ws.org/Vol-1483/#MehmetiG%C3%B6rkemi%C3%9Clkar>,
         <http://ceur-ws.org/Vol-1483/#SalihiBayar> .
 
 <http://ceur-ws.org/Vol-1483/#43_Bildiri> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-1483/> ;
-    ns2:title "Bir Yazılımın Çevre ve Kalite Açısından Değerlendirilmesi için Önerilmiş Karar Alma Modeli" ;
-    ns6:section <http://ceur-ws.org/Vol-1483/#SessionYYYeşilYazılım> ;
-    ns5:author <http://ceur-ws.org/Vol-1483/#Ay%C5%9FeiBa%C5%9FariBener>,
+    ns6:title "Bir Yazılımın Çevre ve Kalite Açısından Değerlendirilmesi için Önerilmiş Karar Alma Modeli" ;
+    ns5:section <http://ceur-ws.org/Vol-1483/#SessionYYYeşilYazılım> ;
+    ns2:author <http://ceur-ws.org/Vol-1483/#Ay%C5%9FeiBa%C5%9FariBener>,
         <http://ceur-ws.org/Vol-1483/#G%C3%BClfemiI%C5%9F%C4%B1klariAlptekin>,
         <http://ceur-ws.org/Vol-1483/#SedefiAk%C4%B1nl%C4%B1iKo%C3%A7ak> .
 
 <http://ceur-ws.org/Vol-1483/#46_Deneyim> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-1483/> ;
-    ns2:title "ED Model Yapıtaşı Haberleşme Altyapısı" ;
-    ns6:section <http://ceur-ws.org/Vol-1483/#SessionYGS6YazılımGeliştirmeSüreçleri6> ;
-    ns5:author <http://ceur-ws.org/Vol-1483/#AysuniSancariY%C4%B1lmaz>,
+    ns6:title "ED Model Yapıtaşı Haberleşme Altyapısı" ;
+    ns5:section <http://ceur-ws.org/Vol-1483/#SessionYGS6YazılımGeliştirmeSüreçleri6> ;
+    ns2:author <http://ceur-ws.org/Vol-1483/#AysuniSancariY%C4%B1lmaz>,
         <http://ceur-ws.org/Vol-1483/#Bet%C3%BCliBaydemiri%C3%87ankaya>,
         <http://ceur-ws.org/Vol-1483/#HandeiDo%C4%9FaniK%C3%B6seo%C4%9Flu> .
 
 <http://ceur-ws.org/Vol-1483/#51_Bildiri> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-1483/> ;
-    ns2:title "Üniversite Yazılım Mühendisliği Programları Müfredatının SWEBOK Kılavuzu Kullanılarak Değerlendirme ve İyileştirilmesi: Türkiye’de bir Vaka Çalışması" ;
-    ns6:section <http://ceur-ws.org/Vol-1483/#SessionYMEYazılımMühendisliğiEğitimi> ;
-    ns5:author <http://ceur-ws.org/Vol-1483/#AliiYaz%C4%B1c%C4%B1>,
+    ns6:title "Üniversite Yazılım Mühendisliği Programları Müfredatının SWEBOK Kılavuzu Kullanılarak Değerlendirme ve İyileştirilmesi: Türkiye’de bir Vaka Çalışması" ;
+    ns5:section <http://ceur-ws.org/Vol-1483/#SessionYMEYazılımMühendisliğiEğitimi> ;
+    ns2:author <http://ceur-ws.org/Vol-1483/#AliiYaz%C4%B1c%C4%B1>,
         <http://ceur-ws.org/Vol-1483/#AlokiMishra>,
         <http://ceur-ws.org/Vol-1483/#VahidiGarousi> .
 
 <http://ceur-ws.org/Vol-1483/#61_Bildiri> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-1483/> ;
-    ns2:title "İş Süreci Olgunluğu İçin Bir ÖzDeğerlendirme Aracı" ;
-    ns6:section <http://ceur-ws.org/Vol-1483/#SessionYKYYazılımKaliteYönetimi> ;
-    ns5:author <http://ceur-ws.org/Vol-1483/#Ay%C3%A7aiTarhan>,
+    ns6:title "İş Süreci Olgunluğu İçin Bir ÖzDeğerlendirme Aracı" ;
+    ns5:section <http://ceur-ws.org/Vol-1483/#SessionYKYYazılımKaliteYönetimi> ;
+    ns2:author <http://ceur-ws.org/Vol-1483/#Ay%C3%A7aiTarhan>,
         <http://ceur-ws.org/Vol-1483/#Fadimei%C4%B0lisulu>,
         <http://ceur-ws.org/Vol-1483/#OktayiT%C3%BCretken> .
 
 <http://ceur-ws.org/Vol-1483/#65_Bildiri> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-1483/> ;
-    ns2:title "Askeri bir Gömülü Yazılımın Bileşen Tabanlı Bir Mimari Kullanılarak Refaktör Edilmesi" ;
-    ns6:section <http://ceur-ws.org/Vol-1483/#SessionGGZYS1GömülüGerçekZamanlıYazılımSistemleri1> ;
-    ns5:author <http://ceur-ws.org/Vol-1483/#BerkhaniDeniz>,
+    ns6:title "Askeri bir Gömülü Yazılımın Bileşen Tabanlı Bir Mimari Kullanılarak Refaktör Edilmesi" ;
+    ns5:section <http://ceur-ws.org/Vol-1483/#SessionGGZYS1GömülüGerçekZamanlıYazılımSistemleri1> ;
+    ns2:author <http://ceur-ws.org/Vol-1483/#BerkhaniDeniz>,
         <http://ceur-ws.org/Vol-1483/#G%C3%B6khani%C3%96zta%C5%9F>,
         <http://ceur-ws.org/Vol-1483/#Soneri%C3%87%C4%B1nar> .
 
 <http://ceur-ws.org/Vol-1483/#67_Ozet> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-1483/> ;
-    ns2:title "Agility Mod Yazılım Çeviklik Değerlendirme Referans Modeli" ;
-    ns6:section <http://ceur-ws.org/Vol-1483/#SessionES4EğitimSemineri4> ;
-    ns5:author <http://ceur-ws.org/Vol-1483/#%C3%96zdeni%C3%96zcaniTop>,
+    ns6:title "Agility Mod Yazılım Çeviklik Değerlendirme Referans Modeli" ;
+    ns5:section <http://ceur-ws.org/Vol-1483/#SessionES4EğitimSemineri4> ;
+    ns2:author <http://ceur-ws.org/Vol-1483/#%C3%96zdeni%C3%96zcaniTop>,
         <http://ceur-ws.org/Vol-1483/#OnatiEgeiAdal%C4%B1>,
         <http://ceur-ws.org/Vol-1483/#OnuriDemir%C3%B6rs> .
 
 <http://ceur-ws.org/Vol-1483/#68_Bildiri> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-1483/> ;
-    ns2:title "Gömülü Sistemlerde ModelViewController (MVC) Kullanımı" ;
-    ns6:section <http://ceur-ws.org/Vol-1483/#SessionGGZYS2GömülüGerçekZamanlıYazılımSistemleri2> ;
-    ns5:author <http://ceur-ws.org/Vol-1483/#%C4%B0brahimiS%C4%B1caky%C3%BCz>,
+    ns6:title "Gömülü Sistemlerde ModelViewController (MVC) Kullanımı" ;
+    ns5:section <http://ceur-ws.org/Vol-1483/#SessionGGZYS2GömülüGerçekZamanlıYazılımSistemleri2> ;
+    ns2:author <http://ceur-ws.org/Vol-1483/#%C4%B0brahimiS%C4%B1caky%C3%BCz>,
         <http://ceur-ws.org/Vol-1483/#MetiniTekkalmaz>,
         <http://ceur-ws.org/Vol-1483/#MuratiSalman> .
 
 <http://ceur-ws.org/Vol-1483/#80_Bildiri> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-1483/> ;
-    ns2:title "Mobil İşletim Sistemleri (iOS ve Android) Açısından Kullanıcı Memnuniyetini Etkileyen Faktörler" ;
-    ns6:section <http://ceur-ws.org/Vol-1483/#SessionİBEİnsanBilgisayarEtkilesimi> ;
-    ns5:author <http://ceur-ws.org/Vol-1483/#EmreiDemirba%C5%9F>,
+    ns6:title "Mobil İşletim Sistemleri (iOS ve Android) Açısından Kullanıcı Memnuniyetini Etkileyen Faktörler" ;
+    ns5:section <http://ceur-ws.org/Vol-1483/#SessionİBEİnsanBilgisayarEtkilesimi> ;
+    ns2:author <http://ceur-ws.org/Vol-1483/#EmreiDemirba%C5%9F>,
         <http://ceur-ws.org/Vol-1483/#MetehaniTolon>,
         <http://ceur-ws.org/Vol-1483/#MustafaiDe%C4%9Ferli> .
 
 <http://ceur-ws.org/Vol-1483/#82_Deneyim> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-1483/> ;
-    ns2:title "Veterinerler için Sensör Tabanlı Tanı Destek Sistemi: VETDEY" ;
-    ns6:section <http://ceur-ws.org/Vol-1483/#SessionİBEİnsanBilgisayarEtkilesimi> ;
-    ns5:author <http://ceur-ws.org/Vol-1483/#BurakiY%C3%B6ny%C3%BCl>,
+    ns6:title "Veterinerler için Sensör Tabanlı Tanı Destek Sistemi: VETDEY" ;
+    ns5:section <http://ceur-ws.org/Vol-1483/#SessionİBEİnsanBilgisayarEtkilesimi> ;
+    ns2:author <http://ceur-ws.org/Vol-1483/#BurakiY%C3%B6ny%C3%BCl>,
         <http://ceur-ws.org/Vol-1483/#KaaniKurtel>,
         <http://ceur-ws.org/Vol-1483/#Ufuki%C3%87elikkan> .
 
 <http://ceur-ws.org/Vol-1483/#85_Bildiri> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-1483/> ;
-    ns2:title "Gömülü Sistem Mühendisliğinde Kullanılan Yazılım Modellemesi ve Model Güdümlü Teknikler Anketi: Türkiye Sonuçları" ;
-    ns6:section <http://ceur-ws.org/Vol-1483/#SessionYPKYSYazılımProjeKonfigürasyonYönetim> ;
-    ns5:author <http://ceur-ws.org/Vol-1483/#DeniziAkdur>,
+    ns6:title "Gömülü Sistem Mühendisliğinde Kullanılan Yazılım Modellemesi ve Model Güdümlü Teknikler Anketi: Türkiye Sonuçları" ;
+    ns5:section <http://ceur-ws.org/Vol-1483/#SessionYPKYSYazılımProjeKonfigürasyonYönetim> ;
+    ns2:author <http://ceur-ws.org/Vol-1483/#DeniziAkdur>,
         <http://ceur-ws.org/Vol-1483/#OnuriDemir%C3%B6rs>,
         <http://ceur-ws.org/Vol-1483/#VahidiGarousi> .
 
 <http://ceur-ws.org/Vol-1483/#8_Deneyim> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-1483/> ;
-    ns2:title "Bir Platform Oyununa Kullanıcı Performansı Temelinde Yapay Zeka Uyarlaması" ;
-    ns6:section <http://ceur-ws.org/Vol-1483/#SessionDYM1DeneyselYazılımMühendisliği1> ;
-    ns5:author <http://ceur-ws.org/Vol-1483/#HilmiiYal%C4%B1niMungan>,
+    ns6:title "Bir Platform Oyununa Kullanıcı Performansı Temelinde Yapay Zeka Uyarlaması" ;
+    ns5:section <http://ceur-ws.org/Vol-1483/#SessionDYM1DeneyselYazılımMühendisliği1> ;
+    ns2:author <http://ceur-ws.org/Vol-1483/#HilmiiYal%C4%B1niMungan>,
         <http://ceur-ws.org/Vol-1483/#SelmaiTekir>,
         <http://ceur-ws.org/Vol-1483/#SercaniT%C3%BCrkmen> .
 
@@ -1520,79 +1526,79 @@
 
 <http://ceur-ws.org/Vol-1483/#SessionDYM1DeneyselYazılımMühendisliği1> a ns3:SessionEvent ;
     ns3:partOf <http://ceur-ws.org/Vol-1483/> ;
-    ns2:title "Session DYM-1:  Deneysel Yazılım Mühendisliği-1" .
+    ns6:title "Session DYM-1:  Deneysel Yazılım Mühendisliği-1" .
 
 <http://ceur-ws.org/Vol-1483/#SessionDYM2DeneyselYazılımMühendisliği2> a ns3:SessionEvent ;
     ns3:partOf <http://ceur-ws.org/Vol-1483/> ;
-    ns2:title "Session DYM-2:  Deneysel Yazılım Mühendisliği-2" .
+    ns6:title "Session DYM-2:  Deneysel Yazılım Mühendisliği-2" .
 
 <http://ceur-ws.org/Vol-1483/#SessionDYM3DeneyselYazılımMühendisliği3> a ns3:SessionEvent ;
     ns3:partOf <http://ceur-ws.org/Vol-1483/> ;
-    ns2:title "Session DYM-3:  Deneysel Yazılım Mühendisliği-3" .
+    ns6:title "Session DYM-3:  Deneysel Yazılım Mühendisliği-3" .
 
 <http://ceur-ws.org/Vol-1483/#SessionDaYMDağıtıkYazılımMühendisliği> a ns3:SessionEvent ;
     ns3:partOf <http://ceur-ws.org/Vol-1483/> ;
-    ns2:title "Session DaYM:  Dağıtık Yazılım Mühendisliği" .
+    ns6:title "Session DaYM:  Dağıtık Yazılım Mühendisliği" .
 
 <http://ceur-ws.org/Vol-1483/#SessionGGZYS1GömülüGerçekZamanlıYazılımSistemleri1> a ns3:SessionEvent ;
     ns3:partOf <http://ceur-ws.org/Vol-1483/> ;
-    ns2:title "Session GGZYS-1:  Gömülü-Gerçek Zamanlı Yazılım Sistemleri-1" .
+    ns6:title "Session GGZYS-1:  Gömülü-Gerçek Zamanlı Yazılım Sistemleri-1" .
 
 <http://ceur-ws.org/Vol-1483/#SessionMGYG1ModelGüdümlüYazılımGeliştirme1> a ns3:SessionEvent ;
     ns3:partOf <http://ceur-ws.org/Vol-1483/> ;
-    ns2:title "Session MGYG-1:  Model Güdümlü Yazılım Geliştirme-1" .
+    ns6:title "Session MGYG-1:  Model Güdümlü Yazılım Geliştirme-1" .
 
 <http://ceur-ws.org/Vol-1483/#SessionMGYG2ModelGüdümlüYazılımGeliştirme2> a ns3:SessionEvent ;
     ns3:partOf <http://ceur-ws.org/Vol-1483/> ;
-    ns2:title "Session MGYG-2:  Model Güdümlü Yazılım Geliştirme-2" .
+    ns6:title "Session MGYG-2:  Model Güdümlü Yazılım Geliştirme-2" .
 
 <http://ceur-ws.org/Vol-1483/#SessionYGDAYazılımGeliştirmeDestekAraçları> a ns3:SessionEvent ;
     ns3:partOf <http://ceur-ws.org/Vol-1483/> ;
-    ns2:title "Session YGDA:  Yazılım Geliştirme / Destek Araçları" .
+    ns6:title "Session YGDA:  Yazılım Geliştirme / Destek Araçları" .
 
 <http://ceur-ws.org/Vol-1483/#SessionYGS1YazılımGeliştirmeSüreçleri1> a ns3:SessionEvent ;
     ns3:partOf <http://ceur-ws.org/Vol-1483/> ;
-    ns2:title "Session YGS-1:  Yazılım Geliştirme Süreçleri-1" .
+    ns6:title "Session YGS-1:  Yazılım Geliştirme Süreçleri-1" .
 
 <http://ceur-ws.org/Vol-1483/#SessionYGS2YazılımGeliştirmeSüreçleri2> a ns3:SessionEvent ;
     ns3:partOf <http://ceur-ws.org/Vol-1483/> ;
-    ns2:title "Session YGS-2:  Yazılım Geliştirme Süreçleri-2" .
+    ns6:title "Session YGS-2:  Yazılım Geliştirme Süreçleri-2" .
 
 <http://ceur-ws.org/Vol-1483/#SessionYGS6YazılımGeliştirmeSüreçleri6> a ns3:SessionEvent ;
     ns3:partOf <http://ceur-ws.org/Vol-1483/> ;
-    ns2:title "Session YGS-6:  Yazılım Geliştirme Süreçleri-6" .
+    ns6:title "Session YGS-6:  Yazılım Geliştirme Süreçleri-6" .
 
 <http://ceur-ws.org/Vol-1483/#SessionYKYYazılımKaliteYönetimi> a ns3:SessionEvent ;
     ns3:partOf <http://ceur-ws.org/Vol-1483/> ;
-    ns2:title "Session YKY:  Yazılım Kalite Yönetimi" .
+    ns6:title "Session YKY:  Yazılım Kalite Yönetimi" .
 
 <http://ceur-ws.org/Vol-1483/#SessionYMEYazılımMühendisliğiEğitimi> a ns3:SessionEvent ;
     ns3:partOf <http://ceur-ws.org/Vol-1483/> ;
-    ns2:title "Session YME:  Yazılım Mühendisliği Eğitimi" .
+    ns6:title "Session YME:  Yazılım Mühendisliği Eğitimi" .
 
 <http://ceur-ws.org/Vol-1483/#SessionYMYazılımMimarisi> a ns3:SessionEvent ;
     ns3:partOf <http://ceur-ws.org/Vol-1483/> ;
-    ns2:title "Session YM:  Yazılım Mimarisi" .
+    ns6:title "Session YM:  Yazılım Mimarisi" .
 
 <http://ceur-ws.org/Vol-1483/#SessionYPKYSYazılımProjeKonfigürasyonYönetim> a ns3:SessionEvent ;
     ns3:partOf <http://ceur-ws.org/Vol-1483/> ;
-    ns2:title "Session YPKYS:  Yazılım Proje / Konfigürasyon, Yönetim" .
+    ns6:title "Session YPKYS:  Yazılım Proje / Konfigürasyon, Yönetim" .
 
 <http://ceur-ws.org/Vol-1483/#SessionYPYEYazılımProjeYönetimEğilimler> a ns3:SessionEvent ;
     ns3:partOf <http://ceur-ws.org/Vol-1483/> ;
-    ns2:title "Session YPYE:  Yazılım Proje Yönetim Eğilimler" .
+    ns6:title "Session YPYE:  Yazılım Proje Yönetim Eğilimler" .
 
 <http://ceur-ws.org/Vol-1483/#SessionYTM2YazılımTestMühendisliği2> a ns3:SessionEvent ;
     ns3:partOf <http://ceur-ws.org/Vol-1483/> ;
-    ns2:title "Session YTM-2:  Yazılım Test Mühendisliği-2" .
+    ns6:title "Session YTM-2:  Yazılım Test Mühendisliği-2" .
 
 <http://ceur-ws.org/Vol-1483/#SessionYTM4YazılımTestMühendisliği4> a ns3:SessionEvent ;
     ns3:partOf <http://ceur-ws.org/Vol-1483/> ;
-    ns2:title "Session YTM-4:  Yazılım Test Mühendisliği-4" .
+    ns6:title "Session YTM-4:  Yazılım Test Mühendisliği-4" .
 
 <http://ceur-ws.org/Vol-1483/#SessionİBEİnsanBilgisayarEtkilesimi> a ns3:SessionEvent ;
     ns3:partOf <http://ceur-ws.org/Vol-1483/> ;
-    ns2:title "Session İBE:  İnsan-Bilgisayar Etkilesimi" .
+    ns6:title "Session İBE:  İnsan-Bilgisayar Etkilesimi" .
 
 <http://ceur-ws.org/Vol-1483/#VahidiGarousi> a ns1:Person ;
     ns4:sameAs <http://ceur-ws.org/persons/VahidiGarousi> ;
@@ -1604,138 +1610,138 @@
 
 <http://ceur-ws.org/Vol-1483/#13_Bildiri> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-1483/> ;
-    ns2:title "Uygulama Yaşam Döngüsü Yönetimi Sistematik Eşleme Çalışması" ;
-    ns6:section <http://ceur-ws.org/Vol-1483/#SessionYGS2YazılımGeliştirmeSüreçleri2> ;
-    ns5:author <http://ceur-ws.org/Vol-1483/#Ahseni%C4%B0kbaliAytekin>,
+    ns6:title "Uygulama Yaşam Döngüsü Yönetimi Sistematik Eşleme Çalışması" ;
+    ns5:section <http://ceur-ws.org/Vol-1483/#SessionYGS2YazılımGeliştirmeSüreçleri2> ;
+    ns2:author <http://ceur-ws.org/Vol-1483/#Ahseni%C4%B0kbaliAytekin>,
         <http://ceur-ws.org/Vol-1483/#BediriTekinerdo%C4%9Fan>,
         <http://ceur-ws.org/Vol-1483/#ErayiT%C3%BCz%C3%BCn>,
         <http://ceur-ws.org/Vol-1483/#YagupiMacit> .
 
 <http://ceur-ws.org/Vol-1483/#28_Bildiri> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-1483/> ;
-    ns2:title "Plural Yöntemi ile BPMN Tabanlı Özne Yönelimli Süreç Modelleme: Örnek Olay İncelemesi" ;
-    ns6:section <http://ceur-ws.org/Vol-1483/#SessionYGS4YazılımGeliştirmeSüreçleri4> ;
-    ns5:author <http://ceur-ws.org/Vol-1483/#Ay%C5%9Feg%C3%BCli%C3%9Cnal>,
+    ns6:title "Plural Yöntemi ile BPMN Tabanlı Özne Yönelimli Süreç Modelleme: Örnek Olay İncelemesi" ;
+    ns5:section <http://ceur-ws.org/Vol-1483/#SessionYGS4YazılımGeliştirmeSüreçleri4> ;
+    ns2:author <http://ceur-ws.org/Vol-1483/#Ay%C5%9Feg%C3%BCli%C3%9Cnal>,
         <http://ceur-ws.org/Vol-1483/#HenkivanideniHurk>,
         <http://ceur-ws.org/Vol-1483/#N.iAlpayiKarag%C3%B6z>,
         <http://ceur-ws.org/Vol-1483/#OktayiT%C3%BCretken> .
 
 <http://ceur-ws.org/Vol-1483/#30_Deneyim> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-1483/> ;
-    ns2:title "Savunma Sanayii Projelerinde Çevik Yazılım Geliştirme Yöntemlerinin Kullanımı" ;
-    ns6:section <http://ceur-ws.org/Vol-1483/#SessionYGS4YazılımGeliştirmeSüreçleri4> ;
-    ns5:author <http://ceur-ws.org/Vol-1483/#K%C3%BCr%C5%9Fati%C4%B0nce>,
+    ns6:title "Savunma Sanayii Projelerinde Çevik Yazılım Geliştirme Yöntemlerinin Kullanımı" ;
+    ns5:section <http://ceur-ws.org/Vol-1483/#SessionYGS4YazılımGeliştirmeSüreçleri4> ;
+    ns2:author <http://ceur-ws.org/Vol-1483/#K%C3%BCr%C5%9Fati%C4%B0nce>,
         <http://ceur-ws.org/Vol-1483/#OrhaniAksoy>,
         <http://ceur-ws.org/Vol-1483/#Sel%C3%A7ukiKarayakaylar>,
         <http://ceur-ws.org/Vol-1483/#U%C4%9FuriSuyadal> .
 
 <http://ceur-ws.org/Vol-1483/#35_Ozet> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-1483/> ;
-    ns2:title "Yazılım Test Mühendisliği: Yazılım Test Mühendisliğinde Teknikler, Pratikler ve Öğrenilen Dersler" ;
-    ns6:section <http://ceur-ws.org/Vol-1483/#SessionES1EğitimSemineri1> ;
-    ns5:author <http://ceur-ws.org/Vol-1483/#MustafaiSar%C4%B1>,
+    ns6:title "Yazılım Test Mühendisliği: Yazılım Test Mühendisliğinde Teknikler, Pratikler ve Öğrenilen Dersler" ;
+    ns5:section <http://ceur-ws.org/Vol-1483/#SessionES1EğitimSemineri1> ;
+    ns2:author <http://ceur-ws.org/Vol-1483/#MustafaiSar%C4%B1>,
         <http://ceur-ws.org/Vol-1483/#NurhaniYa%C4%9Fc%C4%B1>,
         <http://ceur-ws.org/Vol-1483/#OyaiKal%C4%B1ps%C4%B1z>,
         <http://ceur-ws.org/Vol-1483/#VahidiGarousi> .
 
 <http://ceur-ws.org/Vol-1483/#39_Deneyim> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-1483/> ;
-    ns2:title "DOOB: RAHAT Ürün Olarak Komuta Kontrol Yazılımı ve Geliştirme Deneyimleri" ;
-    ns6:section <http://ceur-ws.org/Vol-1483/#SessionYGS5YazılımGeliştirmeSüreçleri5> ;
-    ns5:author <http://ceur-ws.org/Vol-1483/#Bet%C3%BCliBostanc%C4%B1>,
+    ns6:title "DOOB: RAHAT Ürün Olarak Komuta Kontrol Yazılımı ve Geliştirme Deneyimleri" ;
+    ns5:section <http://ceur-ws.org/Vol-1483/#SessionYGS5YazılımGeliştirmeSüreçleri5> ;
+    ns2:author <http://ceur-ws.org/Vol-1483/#Bet%C3%BCliBostanc%C4%B1>,
         <http://ceur-ws.org/Vol-1483/#Murati%C5%9Eahin>,
         <http://ceur-ws.org/Vol-1483/#TubaiYa%C4%9Fl%C4%B1>,
         <http://ceur-ws.org/Vol-1483/#TurgayiY%C4%B1lmaz> .
 
 <http://ceur-ws.org/Vol-1483/#48_Bildiri> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-1483/> ;
-    ns2:title "Mobil Kullanıma Yönelik Taktik Komuta Kontrol Sistemi Yazılımı Geliştirilmesi" ;
-    ns6:section <http://ceur-ws.org/Vol-1483/#SessionMGYG2ModelGüdümlüYazılımGeliştirme2> ;
-    ns5:author <http://ceur-ws.org/Vol-1483/#HaticeiDeniziErten>,
+    ns6:title "Mobil Kullanıma Yönelik Taktik Komuta Kontrol Sistemi Yazılımı Geliştirilmesi" ;
+    ns5:section <http://ceur-ws.org/Vol-1483/#SessionMGYG2ModelGüdümlüYazılımGeliştirme2> ;
+    ns2:author <http://ceur-ws.org/Vol-1483/#HaticeiDeniziErten>,
         <http://ceur-ws.org/Vol-1483/#RasimiYama%C3%A7>,
         <http://ceur-ws.org/Vol-1483/#TubaiYa%C4%9Fl%C4%B1>,
         <http://ceur-ws.org/Vol-1483/#TurgayiY%C4%B1lmaz> .
 
 <http://ceur-ws.org/Vol-1483/#49_Bildiri> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-1483/> ;
-    ns2:title "Yazılım Mimari Tasarımından Yazılım Geliştirme Çatısının Üretilmesinde Model Güdümlü Bir Yaklaşım" ;
-    ns6:section <http://ceur-ws.org/Vol-1483/#SessionMGYG2ModelGüdümlüYazılımGeliştirme2> ;
-    ns5:author <http://ceur-ws.org/Vol-1483/#%C4%B0brahimiOnuralpiYi%C4%9Fit>,
+    ns6:title "Yazılım Mimari Tasarımından Yazılım Geliştirme Çatısının Üretilmesinde Model Güdümlü Bir Yaklaşım" ;
+    ns5:section <http://ceur-ws.org/Vol-1483/#SessionMGYG2ModelGüdümlüYazılımGeliştirme2> ;
+    ns2:author <http://ceur-ws.org/Vol-1483/#%C4%B0brahimiOnuralpiYi%C4%9Fit>,
         <http://ceur-ws.org/Vol-1483/#AhmetiErdin%C3%A7iY%C4%B1lmaz>,
         <http://ceur-ws.org/Vol-1483/#B%C3%BClentiDurak>,
         <http://ceur-ws.org/Vol-1483/#NafiyeiK%C3%BCbraiTurhan> .
 
 <http://ceur-ws.org/Vol-1483/#53_Bildiri> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-1483/> ;
-    ns2:title "Kitlesel Açık Çevrimiçi Kurslardaki Katılımcı Profillerinin Yapay Sinir Ağı Kullanılarak Sınıflandırması" ;
-    ns6:section <http://ceur-ws.org/Vol-1483/#SessionYMEYazılımMühendisliğiEğitimi> ;
-    ns5:author <http://ceur-ws.org/Vol-1483/#AliiAl-Taei>,
+    ns6:title "Kitlesel Açık Çevrimiçi Kurslardaki Katılımcı Profillerinin Yapay Sinir Ağı Kullanılarak Sınıflandırması" ;
+    ns5:section <http://ceur-ws.org/Vol-1483/#SessionYMEYazılımMühendisliğiEğitimi> ;
+    ns2:author <http://ceur-ws.org/Vol-1483/#AliiAl-Taei>,
         <http://ceur-ws.org/Vol-1483/#MuratiYilmaz>,
         <http://ceur-ws.org/Vol-1483/#RoryiV.iO%E2%80%99Connor>,
         <http://ceur-ws.org/Vol-1483/#UguriHalici> .
 
 <http://ceur-ws.org/Vol-1483/#5_Bildiri> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-1483/> ;
-    ns2:title "Yazılım Proje Faktörlerinin Risklerle Etkileşimi: Telekomünikasyon Örneği" ;
-    ns6:section <http://ceur-ws.org/Vol-1483/#SessionYGS1YazılımGeliştirmeSüreçleri1> ;
-    ns5:author <http://ceur-ws.org/Vol-1483/#%C5%9EilaniT%C3%BCrkdo%C4%9Fan>,
+    ns6:title "Yazılım Proje Faktörlerinin Risklerle Etkileşimi: Telekomünikasyon Örneği" ;
+    ns5:section <http://ceur-ws.org/Vol-1483/#SessionYGS1YazılımGeliştirmeSüreçleri1> ;
+    ns2:author <http://ceur-ws.org/Vol-1483/#%C5%9EilaniT%C3%BCrkdo%C4%9Fan>,
         <http://ceur-ws.org/Vol-1483/#Ay%C5%9FeiBuharal%C4%B1iOlcaysoy>,
         <http://ceur-ws.org/Vol-1483/#OyaiKal%C4%B1ps%C4%B1z>,
         <http://ceur-ws.org/Vol-1483/#TayfuriG%C3%BCrlesin> .
 
 <http://ceur-ws.org/Vol-1483/#69_Deneyim> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-1483/> ;
-    ns2:title "Gömülü Yazılımlarda Çok Amaçlı Grafik Arayüzü: Vision GDI" ;
-    ns6:section <http://ceur-ws.org/Vol-1483/#SessionGGZYS2GömülüGerçekZamanlıYazılımSistemleri2> ;
-    ns5:author <http://ceur-ws.org/Vol-1483/#Buraki%C3%9Cnaltay>,
+    ns6:title "Gömülü Yazılımlarda Çok Amaçlı Grafik Arayüzü: Vision GDI" ;
+    ns5:section <http://ceur-ws.org/Vol-1483/#SessionGGZYS2GömülüGerçekZamanlıYazılımSistemleri2> ;
+    ns2:author <http://ceur-ws.org/Vol-1483/#Buraki%C3%9Cnaltay>,
         <http://ceur-ws.org/Vol-1483/#Mervei%C3%96zkarde%C5%9F>,
         <http://ceur-ws.org/Vol-1483/#RecepiBorai%C3%87al%C4%B1%C5%9Fkanba%C5%9F>,
         <http://ceur-ws.org/Vol-1483/#Soneri%C3%87%C4%B1nar> .
 
 <http://ceur-ws.org/Vol-1483/#70_Deneyim> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-1483/> ;
-    ns2:title "Sensör ve Silah Sistemleri İçin Yeni Nesil Eğitim Simülasyonu Yaklaşımı" ;
-    ns6:section <http://ceur-ws.org/Vol-1483/#SessionGGZYS2GömülüGerçekZamanlıYazılımSistemleri2> ;
-    ns5:author <http://ceur-ws.org/Vol-1483/#Burcui%C3%87al%C4%B1k>,
+    ns6:title "Sensör ve Silah Sistemleri İçin Yeni Nesil Eğitim Simülasyonu Yaklaşımı" ;
+    ns5:section <http://ceur-ws.org/Vol-1483/#SessionGGZYS2GömülüGerçekZamanlıYazılımSistemleri2> ;
+    ns2:author <http://ceur-ws.org/Vol-1483/#Burcui%C3%87al%C4%B1k>,
         <http://ceur-ws.org/Vol-1483/#CansuiBender>,
         <http://ceur-ws.org/Vol-1483/#Mervei%C3%96zkarde%C5%9F>,
         <http://ceur-ws.org/Vol-1483/#Soneri%C3%87%C4%B1nar> .
 
 <http://ceur-ws.org/Vol-1483/#74_Deneyim> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-1483/> ;
-    ns2:title "PBX Aboneleri için Merkezi VoIP Santral Yönlendirme Servislerinin Tasarımı" ;
-    ns6:section <http://ceur-ws.org/Vol-1483/#SessionDaYMDağıtıkYazılımMühendisliği> ;
-    ns5:author <http://ceur-ws.org/Vol-1483/#CaneriAksoy>,
+    ns6:title "PBX Aboneleri için Merkezi VoIP Santral Yönlendirme Servislerinin Tasarımı" ;
+    ns5:section <http://ceur-ws.org/Vol-1483/#SessionDaYMDağıtıkYazılımMühendisliği> ;
+    ns2:author <http://ceur-ws.org/Vol-1483/#CaneriAksoy>,
         <http://ceur-ws.org/Vol-1483/#EcemiTu%C4%9FbaiY%C4%B1ld%C4%B1z>,
         <http://ceur-ws.org/Vol-1483/#NecipiG%C3%B6z%C3%BCa%C3%A7%C4%B1k>,
         <http://ceur-ws.org/Vol-1483/#O%C4%9FuzhaniYavuz> .
 
 <http://ceur-ws.org/Vol-1483/#79_Bildiri> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-1483/> ;
-    ns2:title "Melez Erişim Denetimi için bir Mimari Önerisi: İK Uygulaması Örneği" ;
-    ns6:section <http://ceur-ws.org/Vol-1483/#SessionYMYazılımMimarisi> ;
-    ns5:author <http://ceur-ws.org/Vol-1483/#%C3%96zg%C3%BCiCan>,
+    ns6:title "Melez Erişim Denetimi için bir Mimari Önerisi: İK Uygulaması Örneği" ;
+    ns5:section <http://ceur-ws.org/Vol-1483/#SessionYMYazılımMimarisi> ;
+    ns2:author <http://ceur-ws.org/Vol-1483/#%C3%96zg%C3%BCiCan>,
         <http://ceur-ws.org/Vol-1483/#MuratiKomesli>,
         <http://ceur-ws.org/Vol-1483/#MuratiOsmani%C3%9Cnal%C4%B1r>,
         <http://ceur-ws.org/Vol-1483/#NuriyeiYaseminiAlparslan> .
 
 <http://ceur-ws.org/Vol-1483/#SessionGGZYS2GömülüGerçekZamanlıYazılımSistemleri2> a ns3:SessionEvent ;
     ns3:partOf <http://ceur-ws.org/Vol-1483/> ;
-    ns2:title "Session GGZYS-2:  Gömülü-Gerçek Zamanlı Yazılım Sistemleri-2" .
+    ns6:title "Session GGZYS-2:  Gömülü-Gerçek Zamanlı Yazılım Sistemleri-2" .
 
 <http://ceur-ws.org/Vol-1483/#SessionYGS4YazılımGeliştirmeSüreçleri4> a ns3:SessionEvent ;
     ns3:partOf <http://ceur-ws.org/Vol-1483/> ;
-    ns2:title "Session YGS-4:  Yazılım Geliştirme Süreçleri-4" .
+    ns6:title "Session YGS-4:  Yazılım Geliştirme Süreçleri-4" .
 
 <http://ceur-ws.org/Vol-1483/#SessionYGS5YazılımGeliştirmeSüreçleri5> a ns3:SessionEvent ;
     ns3:partOf <http://ceur-ws.org/Vol-1483/> ;
-    ns2:title "Session YGS-5:  Yazılım Geliştirme Süreçleri-5" .
+    ns6:title "Session YGS-5:  Yazılım Geliştirme Süreçleri-5" .
 
 <http://ceur-ws.org/Vol-1483/#11_Bildiri> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-1483/> ;
-    ns2:title "Yazılım Hata Kestiriminde Kolektif Sınıflandırma Modellerinin Etkisi" ;
-    ns6:section <http://ceur-ws.org/Vol-1483/#SessionYTM2YazılımTestMühendisliği2> ;
-    ns5:author <http://ceur-ws.org/Vol-1483/#Ak%C4%B1ni%C3%96z%C3%A7ift>,
+    ns6:title "Yazılım Hata Kestiriminde Kolektif Sınıflandırma Modellerinin Etkisi" ;
+    ns5:section <http://ceur-ws.org/Vol-1483/#SessionYTM2YazılımTestMühendisliği2> ;
+    ns2:author <http://ceur-ws.org/Vol-1483/#Ak%C4%B1ni%C3%96z%C3%A7ift>,
         <http://ceur-ws.org/Vol-1483/#DeniziK%C4%B1l%C4%B1n%C3%A7>,
         <http://ceur-ws.org/Vol-1483/#EminiBoranda%C4%9F>,
         <http://ceur-ws.org/Vol-1483/#FatihiY%C3%BCcalar>,
@@ -1743,9 +1749,9 @@
 
 <http://ceur-ws.org/Vol-1483/#14_Bildiri> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-1483/> ;
-    ns2:title "Yazılım Kalite Maliyetleri Üzerine Bir Çalışma – Farklı Sektörlerden Proje İncelemeleri" ;
-    ns6:section <http://ceur-ws.org/Vol-1483/#SessionYGS2YazılımGeliştirmeSüreçleri2> ;
-    ns5:author <http://ceur-ws.org/Vol-1483/#BanuiDeniziYan%C4%B1k>,
+    ns6:title "Yazılım Kalite Maliyetleri Üzerine Bir Çalışma – Farklı Sektörlerden Proje İncelemeleri" ;
+    ns5:section <http://ceur-ws.org/Vol-1483/#SessionYGS2YazılımGeliştirmeSüreçleri2> ;
+    ns2:author <http://ceur-ws.org/Vol-1483/#BanuiDeniziYan%C4%B1k>,
         <http://ceur-ws.org/Vol-1483/#FeyzaiNuriDemir>,
         <http://ceur-ws.org/Vol-1483/#MuratiSalman>,
         <http://ceur-ws.org/Vol-1483/#OnuriDemir%C3%B6rs>,
@@ -1753,9 +1759,9 @@
 
 <http://ceur-ws.org/Vol-1483/#17_Bildiri> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-1483/> ;
-    ns2:title "Kamu Kurumları Tarafından Hazır Ticari Yazılım Seçiminde Kullanılacak DAR Tabanlı Bir Yöntem" ;
-    ns6:section <http://ceur-ws.org/Vol-1483/#SessionDYM2DeneyselYazılımMühendisliği2> ;
-    ns5:author <http://ceur-ws.org/Vol-1483/#BuseiTekin>,
+    ns6:title "Kamu Kurumları Tarafından Hazır Ticari Yazılım Seçiminde Kullanılacak DAR Tabanlı Bir Yöntem" ;
+    ns5:section <http://ceur-ws.org/Vol-1483/#SessionDYM2DeneyselYazılımMühendisliği2> ;
+    ns2:author <http://ceur-ws.org/Vol-1483/#BuseiTekin>,
         <http://ceur-ws.org/Vol-1483/#EmineiFiruzeiTayta%C5%9F>,
         <http://ceur-ws.org/Vol-1483/#K%C4%B1van%C3%A7iDin%C3%A7er>,
         <http://ceur-ws.org/Vol-1483/#MehmetiG%C3%BCn>,
@@ -1763,9 +1769,9 @@
 
 <http://ceur-ws.org/Vol-1483/#24_Bildiri> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-1483/> ;
-    ns2:title "Metin Madenciliği Kullanılarak Yazılım Kullanımına Dair Bulguların Elde Edilmesi" ;
-    ns6:section <http://ceur-ws.org/Vol-1483/#SessionDYM3DeneyselYazılımMühendisliği3> ;
-    ns5:author <http://ceur-ws.org/Vol-1483/#Ak%C4%B1ni%C3%96z%C3%A7ift>,
+    ns6:title "Metin Madenciliği Kullanılarak Yazılım Kullanımına Dair Bulguların Elde Edilmesi" ;
+    ns5:section <http://ceur-ws.org/Vol-1483/#SessionDYM3DeneyselYazılımMühendisliği3> ;
+    ns2:author <http://ceur-ws.org/Vol-1483/#Ak%C4%B1ni%C3%96z%C3%A7ift>,
         <http://ceur-ws.org/Vol-1483/#DeniziK%C4%B1l%C4%B1n%C3%A7>,
         <http://ceur-ws.org/Vol-1483/#EminiBoranda%C4%9F>,
         <http://ceur-ws.org/Vol-1483/#FatihiY%C3%BCcalar>,
@@ -1773,9 +1779,9 @@
 
 <http://ceur-ws.org/Vol-1483/#56_Bildiri> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-1483/> ;
-    ns2:title "PSP Eğitimi için Kullanıcı Dostu bir Süreç Yönetim Aracı Geliştirme Tecrübesi" ;
-    ns6:section <http://ceur-ws.org/Vol-1483/#SessionYGDAYazılımGeliştirmeDestekAraçları> ;
-    ns5:author <http://ceur-ws.org/Vol-1483/#Ebrui%C3%87etinkaya>,
+    ns6:title "PSP Eğitimi için Kullanıcı Dostu bir Süreç Yönetim Aracı Geliştirme Tecrübesi" ;
+    ns5:section <http://ceur-ws.org/Vol-1483/#SessionYGDAYazılımGeliştirmeDestekAraçları> ;
+    ns2:author <http://ceur-ws.org/Vol-1483/#Ebrui%C3%87etinkaya>,
         <http://ceur-ws.org/Vol-1483/#EmreiY%C4%B1lmaz>,
         <http://ceur-ws.org/Vol-1483/#Handei%C3%87ak%C4%B1c%C4%B1>,
         <http://ceur-ws.org/Vol-1483/#K%C4%B1van%C3%A7iDin%C3%A7er>,
@@ -1793,9 +1799,9 @@
 
 <http://ceur-ws.org/Vol-1483/#16_Bildiri> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-1483/> ;
-    ns2:title "Pazar Sepet Analizi için Örneklem Oluşturulması ve Birliktelik Kurallarının Çıkartılması" ;
-    ns6:section <http://ceur-ws.org/Vol-1483/#SessionDYM2DeneyselYazılımMühendisliği2> ;
-    ns5:author <http://ceur-ws.org/Vol-1483/#MehmetiS.iAkta%C5%9F>,
+    ns6:title "Pazar Sepet Analizi için Örneklem Oluşturulması ve Birliktelik Kurallarının Çıkartılması" ;
+    ns5:section <http://ceur-ws.org/Vol-1483/#SessionDYM2DeneyselYazılımMühendisliği2> ;
+    ns2:author <http://ceur-ws.org/Vol-1483/#MehmetiS.iAkta%C5%9F>,
         <http://ceur-ws.org/Vol-1483/#NevzatiEkmek%C3%A7i>,
         <http://ceur-ws.org/Vol-1483/#OyaiKal%C4%B1ps%C4%B1z>,
         <http://ceur-ws.org/Vol-1483/#SideriHazaliK%C4%B1rtay>,
@@ -1804,9 +1810,9 @@
 
 <http://ceur-ws.org/Vol-1483/#58_Bildiri> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-1483/> ;
-    ns2:title "UYMS Araştırma Eğilimleri: Bir Sistematik Eşleme Çalışması" ;
-    ns6:section <http://ceur-ws.org/Vol-1483/#SessionYPYEYazılımProjeYönetimEğilimler> ;
-    ns5:author <http://ceur-ws.org/Vol-1483/#AleviMutlu>,
+    ns6:title "UYMS Araştırma Eğilimleri: Bir Sistematik Eşleme Çalışması" ;
+    ns5:section <http://ceur-ws.org/Vol-1483/#SessionYPYEYazılımProjeYönetimEğilimler> ;
+    ns2:author <http://ceur-ws.org/Vol-1483/#AleviMutlu>,
         <http://ceur-ws.org/Vol-1483/#BurcuiBilgin>,
         <http://ceur-ws.org/Vol-1483/#Davuti%C4%B0ncebacak>,
         <http://ceur-ws.org/Vol-1483/#GencayiDeniz>,
@@ -1815,9 +1821,9 @@
 
 <http://ceur-ws.org/Vol-1483/#72_Bildiri> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-1483/> ;
-    ns2:title "İlişkisel Veri Tabanı Sistemlerinde İşlem Yönetimi ve Büyük Verinin Saklanması" ;
-    ns6:section <http://ceur-ws.org/Vol-1483/#SessionDaYMDağıtıkYazılımMühendisliği> ;
-    ns5:author <http://ceur-ws.org/Vol-1483/#%C4%B0hsaniHelvac%C4%B1o%C4%9Flu>,
+    ns6:title "İlişkisel Veri Tabanı Sistemlerinde İşlem Yönetimi ve Büyük Verinin Saklanması" ;
+    ns5:section <http://ceur-ws.org/Vol-1483/#SessionDaYMDağıtıkYazılımMühendisliği> ;
+    ns2:author <http://ceur-ws.org/Vol-1483/#%C4%B0hsaniHelvac%C4%B1o%C4%9Flu>,
         <http://ceur-ws.org/Vol-1483/#EsatiE.iDemirel>,
         <http://ceur-ws.org/Vol-1483/#MehmetiS.iAkta%C5%9F>,
         <http://ceur-ws.org/Vol-1483/#OyaiKal%C4%B1ps%C4%B1z>,
@@ -1826,9 +1832,9 @@
 
 <http://ceur-ws.org/Vol-1483/#7_Bildiri> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-1483/> ;
-    ns2:title "Veri Madenciliğinde Özellik Seçim Tekniklerinin Bankacılık Verisine Uygulanması Üzerine Araştırma ve Karşılaştırmalı Uygulama" ;
-    ns6:section <http://ceur-ws.org/Vol-1483/#SessionDYM1DeneyselYazılımMühendisliği1> ;
-    ns5:author <http://ceur-ws.org/Vol-1483/#Bet%C3%BCliYaz%C4%B1c%C4%B1>,
+    ns6:title "Veri Madenciliğinde Özellik Seçim Tekniklerinin Bankacılık Verisine Uygulanması Üzerine Araştırma ve Karşılaştırmalı Uygulama" ;
+    ns5:section <http://ceur-ws.org/Vol-1483/#SessionDYM1DeneyselYazılımMühendisliği1> ;
+    ns2:author <http://ceur-ws.org/Vol-1483/#Bet%C3%BCliYaz%C4%B1c%C4%B1>,
         <http://ceur-ws.org/Vol-1483/#FethiyeiYasl%C4%B1>,
         <http://ceur-ws.org/Vol-1483/#HandeiY%C4%B1ld%C4%B1ziG%C3%BCrleyik>,
         <http://ceur-ws.org/Vol-1483/#MehmetiS.iAkta%C5%9F>,
@@ -1837,9 +1843,9 @@
 
 <http://ceur-ws.org/Vol-1483/#19_Bildiri> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-1483/> ;
-    ns2:title "Kabin İçi Eğlence Sistemi Geliştiriminde Bir Kullanılabilirlik Testi Uygulaması" ;
-    ns6:section <http://ceur-ws.org/Vol-1483/#SessionYTM3YazılımTestMühendisliği3> ;
-    ns5:author <http://ceur-ws.org/Vol-1483/#%C4%B0hsaniBerkiI%C5%9F%C4%B1k>,
+    ns6:title "Kabin İçi Eğlence Sistemi Geliştiriminde Bir Kullanılabilirlik Testi Uygulaması" ;
+    ns5:section <http://ceur-ws.org/Vol-1483/#SessionYTM3YazılımTestMühendisliği3> ;
+    ns2:author <http://ceur-ws.org/Vol-1483/#%C4%B0hsaniBerkiI%C5%9F%C4%B1k>,
         <http://ceur-ws.org/Vol-1483/#Ademi%C3%87a%C4%9Flar>,
         <http://ceur-ws.org/Vol-1483/#BurakiYola%C3%A7an>,
         <http://ceur-ws.org/Vol-1483/#EmreiEr>,
@@ -1849,9 +1855,9 @@
 
 <http://ceur-ws.org/Vol-1483/#78_Bildiri> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-1483/> ;
-    ns2:title "Veri Yoğun Bilgi Sistemleri için Melez Bir Veri Mimarisi Önerisi" ;
-    ns6:section <http://ceur-ws.org/Vol-1483/#SessionYMYazılımMimarisi> ;
-    ns5:author <http://ceur-ws.org/Vol-1483/#BurakiY%C3%B6ny%C3%BCl>,
+    ns6:title "Veri Yoğun Bilgi Sistemleri için Melez Bir Veri Mimarisi Önerisi" ;
+    ns5:section <http://ceur-ws.org/Vol-1483/#SessionYMYazılımMimarisi> ;
+    ns2:author <http://ceur-ws.org/Vol-1483/#BurakiY%C3%B6ny%C3%BCl>,
         <http://ceur-ws.org/Vol-1483/#Devrimi%C4%B0%C5%9Fli>,
         <http://ceur-ws.org/Vol-1483/#DilekiY%C4%B1lmazer>,
         <http://ceur-ws.org/Vol-1483/#Emrahi%C4%B0nan>,
@@ -1979,8 +1985,8 @@
         <http://ceur-ws.org/Vol-1483/#SessionYYYeşilYazılım>,
         <http://ceur-ws.org/Vol-1483/#SessionİBEİnsanBilgisayarEtkilesimi>,
         <http://ceur-ws.org/Vol-1483/#SpecialSessionYüksekLisansveDoktoraTezleriToplantıları> ;
-    ns7:issued "2015-10-23T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:presentedAt <http://ceur-ws.org/Vol-1483/#event> ;
-    ns5:editor <http://ceur-ws.org/Vol-1483/#MuratiKomesli>,
+    ns8:issued "2015-10-23T00:00:00+00:00"^^xsd:dateTime ;
+    ns5:presentedAt <http://ceur-ws.org/Vol-1483/#event> ;
+    ns2:editor <http://ceur-ws.org/Vol-1483/#MuratiKomesli>,
         <http://ceur-ws.org/Vol-1483/#Tu%C4%9FkaniTu%C4%9Flular> .
 

@@ -1,10 +1,10 @@
 @prefix ns1: <http://xmlns.com/foaf/0.1/> .
-@prefix ns2: <http://purl.org/ontology/bibo/#> .
-@prefix ns3: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns4: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns2: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns3: <http://purl.org/ontology/bibo/#> .
+@prefix ns4: <http://data.semanticweb.org/ns/swc/ontology/#> .
 @prefix ns5: <http://www.w3.org/2002/07/owl#> .
-@prefix ns6: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns6: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns7: <http://purl.org/dc/elements/1.1/#> .
 @prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix ns9: <http://purl.org/dc/elements/1.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -48,8 +48,8 @@
     ns1:name "João Alcântara" .
 
 <http://ceur-ws.org/Vol-654/#KennethiJ.iLaskey> a ns1:Person ;
-    ns2:place <http://dbpedia.org/resource/United_States> ;
-    ns4:affiliation "MITRE Corporation, McLean, VA" ;
+    ns3:place <http://dbpedia.org/resource/United_States> ;
+    ns2:affiliation "MITRE Corporation, McLean, VA" ;
     ns5:sameAs <http://ceur-ws.org/persons/KennethiJ.iLaskey> ;
     ns1:name "Kenneth J. Laskey" .
 
@@ -64,14 +64,14 @@
     ns1:name "Martin O�Connor" .
 
 <http://ceur-ws.org/Vol-654/#MatthiasiNickles> a ns1:Person ;
-    ns2:place <http://dbpedia.org/resource/United_Kingdom> ;
-    ns4:affiliation "University of Bath, Department of Computer Science, Bath" ;
+    ns3:place <http://dbpedia.org/resource/United_Kingdom> ;
+    ns2:affiliation "University of Bath, Department of Computer Science, Bath" ;
     ns5:sameAs <http://ceur-ws.org/persons/MatthiasiNickles> ;
     ns1:name "Matthias Nickles" .
 
 <http://ceur-ws.org/Vol-654/#MichaeliPool> a ns1:Person ;
-    ns2:place <http://dbpedia.org/resource/United_States> ;
-    ns4:affiliation "Convera, Inc., Vienna, VA" ;
+    ns3:place <http://dbpedia.org/resource/United_States> ;
+    ns2:affiliation "Convera, Inc., Vienna, VA" ;
     ns5:sameAs <http://ceur-ws.org/persons/MichaeliPool> ;
     ns1:name "Michael Pool" .
 
@@ -106,8 +106,8 @@
     ns1:name "Thiago Alves" .
 
 <http://ceur-ws.org/Vol-654/#ThomasiLukasiewicz> a ns1:Person ;
-    ns2:place <http://dbpedia.org/resource/United_Kingdom> ;
-    ns4:affiliation "University of Oxford, Computing Laboratory, Oxford" ;
+    ns3:place <http://dbpedia.org/resource/United_Kingdom> ;
+    ns2:affiliation "University of Oxford, Computing Laboratory, Oxford" ;
     ns5:sameAs <http://ceur-ws.org/persons/ThomasiLukasiewicz> ;
     ns1:name "Thomas Lukasiewicz" .
 
@@ -122,8 +122,8 @@
     ns1:name "Tomasz Wiktor Wlodarczyk" .
 
 <http://ceur-ws.org/Vol-654/#TrevoriMartin> a ns1:Person ;
-    ns2:place <http://dbpedia.org/resource/United_Kingdom> ;
-    ns4:affiliation "University of Bristol, Department of Engineering Mathematics, Bristol" ;
+    ns3:place <http://dbpedia.org/resource/United_Kingdom> ;
+    ns2:affiliation "University of Bristol, Department of Engineering Mathematics, Bristol" ;
     ns5:sameAs <http://ceur-ws.org/persons/TrevoriMartin> ;
     ns1:name "Trevor Martin" .
 
@@ -152,12 +152,12 @@
     ns1:made <http://ceur-ws.org/Vol-654/#paper1> ;
     ns1:name "Yuncheng Jiang" .
 
-<http://ceur-ws.org/Vol-654/#event> a ns3:WorkshopEvent ;
-    ns3:hasLocation <http://dbpedia.org/resource/China> ;
-    ns3:hasPart <http://ceur-ws.org/Vol-654/#part-URSW> ;
-    ns3:isSubEventOf <http://ceur-ws.org/Vol-654/#conf> ;
-    ns7:beginsAtDatetime "2010-11-07T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:endsAtDatetime "2010-11-07T00:00:00+00:00"^^xsd:dateTime ;
+<http://ceur-ws.org/Vol-654/#event> a ns4:WorkshopEvent ;
+    ns4:hasLocation <http://dbpedia.org/resource/China> ;
+    ns4:hasPart <http://ceur-ws.org/Vol-654/#part-URSW> ;
+    ns4:isSubEventOf <http://ceur-ws.org/Vol-654/#conf> ;
+    ns6:beginsAtDatetime "2010-11-07T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:endsAtDatetime "2010-11-07T00:00:00+00:00"^^xsd:dateTime ;
     ns9:license "http://choosealicense.com/licenses/no-license/" ;
     rdfs:seeAlso <http://ceur-ws.org/Vol-173/#event>,
         <http://ceur-ws.org/Vol-218/#event>,
@@ -165,9 +165,15 @@
         <http://ceur-ws.org/Vol-423/#event>,
         <http://ceur-ws.org/Vol-527/#event> .
 
+<http://ceur-ws.org/Vol-654/#part-URSW> a ns3:Workshop ;
+    ns4:partOf <http://ceur-ws.org/series/URSW> ;
+    ns7:title "Uncertainty Reasoning for the Semantic Web 2010" ;
+    ns3:shortTitle "URSW" ;
+    ns2:edition 6 .
+
 <http://ceur-ws.org/Vol-654/#ClaudiaiD%27Amato> a ns1:Person ;
-    ns2:place <http://dbpedia.org/resource/Italy> ;
-    ns4:affiliation "Università degli Studi di Bari, Dipartimento di Informatica, Bari" ;
+    ns3:place <http://dbpedia.org/resource/Italy> ;
+    ns2:affiliation "Università degli Studi di Bari, Dipartimento di Informatica, Bari" ;
     ns5:sameAs <http://ceur-ws.org/persons/ClaudiaiD%27Amato> ;
     ns1:made <http://ceur-ws.org/Vol-654/#pospaper3> ;
     ns1:name "Claudia D'Amato" .
@@ -191,182 +197,182 @@
     ns1:name "Kate Revoredo" .
 
 <http://ceur-ws.org/Vol-654/#KathryniB.iLaskey> a ns1:Person ;
-    ns2:place <http://dbpedia.org/resource/United_States> ;
-    ns4:affiliation "George Mason University, Volgenau School of Information Technology and Engineering, Fairfax, VA" ;
+    ns3:place <http://dbpedia.org/resource/United_States> ;
+    ns2:affiliation "George Mason University, Volgenau School of Information Technology and Engineering, Fairfax, VA" ;
     ns5:sameAs <http://ceur-ws.org/persons/KathryniB.iLaskey> ;
     ns1:made <http://ceur-ws.org/Vol-654/#paper7> ;
     ns1:name "Kathryn B. Laskey" .
 
 <http://ceur-ws.org/Vol-654/#NicolaiFanizzi> a ns1:Person ;
-    ns2:place <http://dbpedia.org/resource/Italy> ;
-    ns4:affiliation "Università degli Studi di Bari, Dipartimento di Informatica, Bari" ;
+    ns3:place <http://dbpedia.org/resource/Italy> ;
+    ns2:affiliation "Università degli Studi di Bari, Dipartimento di Informatica, Bari" ;
     ns5:sameAs <http://ceur-ws.org/persons/NicolaiFanizzi> ;
     ns1:made <http://ceur-ws.org/Vol-654/#pospaper3> ;
     ns1:name "Nicola Fanizzi" .
 
 <http://ceur-ws.org/Vol-654/#PauloiC.iG.idaiCosta> a ns1:Person ;
-    ns2:place <http://dbpedia.org/resource/United_States> ;
-    ns4:affiliation "George Mason University, Volgenau School of Information Technology and Engineering, Fairfax, VA" ;
+    ns3:place <http://dbpedia.org/resource/United_States> ;
+    ns2:affiliation "George Mason University, Volgenau School of Information Technology and Engineering, Fairfax, VA" ;
     ns5:sameAs <http://ceur-ws.org/persons/PauloiC.iG.idaiCosta> ;
     ns1:made <http://ceur-ws.org/Vol-654/#paper7> ;
     ns1:name "Paulo C. G. da Costa" .
 
 <http://ceur-ws.org/Vol-654/#RommeliN.iCarvalho> a ns1:Person ;
-    ns2:place <http://dbpedia.org/resource/United_States> ;
-    ns4:affiliation "George Mason University, Volgenau School of Information Technology and Engineering, Fairfax, VA" ;
+    ns3:place <http://dbpedia.org/resource/United_States> ;
+    ns2:affiliation "George Mason University, Volgenau School of Information Technology and Engineering, Fairfax, VA" ;
     ns5:sameAs <http://ceur-ws.org/persons/RommeliN.iCarvalho> ;
     ns1:made <http://ceur-ws.org/Vol-654/#paper7> ;
     ns1:name "Rommel N. Carvalho" .
 
-<http://ceur-ws.org/Vol-654/#paper1> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-654/> ;
-    ns6:title "Description Logics over Multisets" ;
-    ns2:endPage 12 ;
-    ns2:numPages 12 ;
-    ns2:section <http://ceur-ws.org/Vol-654/#TechnicalPapers> ;
-    ns2:startPage 1 ;
-    ns4:author <http://ceur-ws.org/Vol-654/#YunchengiJiang> .
+<http://ceur-ws.org/Vol-654/#paper1> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-654/> ;
+    ns7:title "Description Logics over Multisets" ;
+    ns3:endPage 12 ;
+    ns3:numPages 12 ;
+    ns3:section <http://ceur-ws.org/Vol-654/#TechnicalPapers> ;
+    ns3:startPage 1 ;
+    ns2:author <http://ceur-ws.org/Vol-654/#YunchengiJiang> .
 
-<http://ceur-ws.org/Vol-654/#paper2> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-654/> ;
-    ns6:title "Transforming Fuzzy Description Logic ALCFL into Classical Description Logic ALCH" ;
-    ns2:endPage 24 ;
-    ns2:numPages 12 ;
-    ns2:section <http://ceur-ws.org/Vol-654/#TechnicalPapers> ;
-    ns2:startPage 13 ;
-    ns4:author <http://ceur-ws.org/Vol-654/#YiningiWu> .
+<http://ceur-ws.org/Vol-654/#paper2> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-654/> ;
+    ns7:title "Transforming Fuzzy Description Logic ALCFL into Classical Description Logic ALCH" ;
+    ns3:endPage 24 ;
+    ns3:numPages 12 ;
+    ns3:section <http://ceur-ws.org/Vol-654/#TechnicalPapers> ;
+    ns3:startPage 13 ;
+    ns2:author <http://ceur-ws.org/Vol-654/#YiningiWu> .
 
 <http://ceur-ws.org/Vol-654/#FernandoiBobillo> a ns1:Person ;
-    ns2:place <http://dbpedia.org/resource/Spain> ;
-    ns4:affiliation "Universidad de Zaragoza, Departamento de Informática e Ingeniería de Sistemas, Zaragoza" ;
+    ns3:place <http://dbpedia.org/resource/Spain> ;
+    ns2:affiliation "Universidad de Zaragoza, Departamento de Informática e Ingeniería de Sistemas, Zaragoza" ;
     ns5:sameAs <http://ceur-ws.org/persons/FernandoiBobillo> ;
     ns1:made <http://ceur-ws.org/Vol-654/#paper6>,
         <http://ceur-ws.org/Vol-654/#pospaper4> ;
     ns1:name "Fernando Bobillo" .
 
-<http://ceur-ws.org/Vol-654/#paper4> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-654/> ;
-    ns6:title "Efficient approximate SPARQL querying of Web of Linked Data" ;
-    ns2:endPage 48 ;
-    ns2:numPages 12 ;
-    ns2:section <http://ceur-ws.org/Vol-654/#TechnicalPapers> ;
-    ns2:startPage 37 ;
-    ns4:author <http://ceur-ws.org/Vol-654/#B.iR.iKuldeepiReddy>,
+<http://ceur-ws.org/Vol-654/#paper4> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-654/> ;
+    ns7:title "Efficient approximate SPARQL querying of Web of Linked Data" ;
+    ns3:endPage 48 ;
+    ns3:numPages 12 ;
+    ns3:section <http://ceur-ws.org/Vol-654/#TechnicalPapers> ;
+    ns3:startPage 37 ;
+    ns2:author <http://ceur-ws.org/Vol-654/#B.iR.iKuldeepiReddy>,
         <http://ceur-ws.org/Vol-654/#P.iSreenivasaiKumar> .
 
-<http://ceur-ws.org/Vol-654/#paper6> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-654/> ;
-    ns6:title "Finite Fuzzy Description Logics: A Crisp Representation for Finite Fuzzy ALCH" ;
-    ns2:endPage 72 ;
-    ns2:numPages 12 ;
-    ns2:section <http://ceur-ws.org/Vol-654/#TechnicalPapers> ;
-    ns2:startPage 61 ;
-    ns4:author <http://ceur-ws.org/Vol-654/#FernandoiBobillo>,
+<http://ceur-ws.org/Vol-654/#paper6> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-654/> ;
+    ns7:title "Finite Fuzzy Description Logics: A Crisp Representation for Finite Fuzzy ALCH" ;
+    ns3:endPage 72 ;
+    ns3:numPages 12 ;
+    ns3:section <http://ceur-ws.org/Vol-654/#TechnicalPapers> ;
+    ns3:startPage 61 ;
+    ns2:author <http://ceur-ws.org/Vol-654/#FernandoiBobillo>,
         <http://ceur-ws.org/Vol-654/#UmbertoiStraccia> .
 
-<http://ceur-ws.org/Vol-654/#pospaper4> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-654/> ;
-    ns6:title "Tractability of the Crisp Representations of Tractable Fuzzy Description Logics" ;
-    ns2:endPage 112 ;
-    ns2:numPages 4 ;
-    ns2:section <http://ceur-ws.org/Vol-654/#PositionPapers> ;
-    ns2:startPage 109 ;
-    ns4:author <http://ceur-ws.org/Vol-654/#FernandoiBobillo>,
+<http://ceur-ws.org/Vol-654/#pospaper4> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-654/> ;
+    ns7:title "Tractability of the Crisp Representations of Tractable Fuzzy Description Logics" ;
+    ns3:endPage 112 ;
+    ns3:numPages 4 ;
+    ns3:section <http://ceur-ws.org/Vol-654/#PositionPapers> ;
+    ns3:startPage 109 ;
+    ns2:author <http://ceur-ws.org/Vol-654/#FernandoiBobillo>,
         <http://ceur-ws.org/Vol-654/#MigueliDelgado> .
 
-<http://ceur-ws.org/Vol-654/#paper5> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-654/> ;
-    ns6:title "Semantic Query Extension through Probabilistic Description Logics" ;
-    ns2:endPage 60 ;
-    ns2:numPages 12 ;
-    ns2:section <http://ceur-ws.org/Vol-654/#TechnicalPapers> ;
-    ns2:startPage 49 ;
-    ns4:author <http://ceur-ws.org/Vol-654/#FabioiGagliardiiCozman>,
+<http://ceur-ws.org/Vol-654/#paper5> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-654/> ;
+    ns7:title "Semantic Query Extension through Probabilistic Description Logics" ;
+    ns3:endPage 60 ;
+    ns3:numPages 12 ;
+    ns3:section <http://ceur-ws.org/Vol-654/#TechnicalPapers> ;
+    ns3:startPage 49 ;
+    ns2:author <http://ceur-ws.org/Vol-654/#FabioiGagliardiiCozman>,
         <http://ceur-ws.org/Vol-654/#Jos%C3%A9iEduardoiOchoaiLuna>,
         <http://ceur-ws.org/Vol-654/#KateiRevoredo> .
 
-<http://ceur-ws.org/Vol-654/#paper7> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-654/> ;
-    ns6:title "PR-OWL 2.0 - Bridging the gap to OWL semantics" ;
-    ns2:endPage 84 ;
-    ns2:numPages 12 ;
-    ns2:section <http://ceur-ws.org/Vol-654/#TechnicalPapers> ;
-    ns2:startPage 73 ;
-    ns4:author <http://ceur-ws.org/Vol-654/#KathryniB.iLaskey>,
+<http://ceur-ws.org/Vol-654/#paper7> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-654/> ;
+    ns7:title "PR-OWL 2.0 - Bridging the gap to OWL semantics" ;
+    ns3:endPage 84 ;
+    ns3:numPages 12 ;
+    ns3:section <http://ceur-ws.org/Vol-654/#TechnicalPapers> ;
+    ns3:startPage 73 ;
+    ns2:author <http://ceur-ws.org/Vol-654/#KathryniB.iLaskey>,
         <http://ceur-ws.org/Vol-654/#PauloiC.iG.idaiCosta>,
         <http://ceur-ws.org/Vol-654/#RommeliN.iCarvalho> .
 
-<http://ceur-ws.org/Vol-654/#paper8> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-654/> ;
-    ns6:title "Learning Sentences and Assessments in Probabilistic Description Logics" ;
-    ns2:endPage 96 ;
-    ns2:numPages 12 ;
-    ns2:section <http://ceur-ws.org/Vol-654/#TechnicalPapers> ;
-    ns2:startPage 85 ;
-    ns4:author <http://ceur-ws.org/Vol-654/#FabioiGagliardiiCozman>,
+<http://ceur-ws.org/Vol-654/#paper8> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-654/> ;
+    ns7:title "Learning Sentences and Assessments in Probabilistic Description Logics" ;
+    ns3:endPage 96 ;
+    ns3:numPages 12 ;
+    ns3:section <http://ceur-ws.org/Vol-654/#TechnicalPapers> ;
+    ns3:startPage 85 ;
+    ns2:author <http://ceur-ws.org/Vol-654/#FabioiGagliardiiCozman>,
         <http://ceur-ws.org/Vol-654/#Jos%C3%A9iEduardoiOchoaiLuna>,
         <http://ceur-ws.org/Vol-654/#KateiRevoredo> .
 
-<http://ceur-ws.org/Vol-654/#PositionPapers> a ns3:SessionEvent ;
-    ns3:partOf <http://ceur-ws.org/Vol-654/> ;
-    ns6:title "Position Papers" .
+<http://ceur-ws.org/Vol-654/#PositionPapers> a ns4:SessionEvent ;
+    ns4:partOf <http://ceur-ws.org/Vol-654/> ;
+    ns7:title "Position Papers" .
 
-<http://ceur-ws.org/Vol-654/#paper3> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-654/> ;
-    ns6:title "PrOntoLearn: Unsupervised Lexico-Semantic Ontology Generation using Probabilistic Methods" ;
-    ns2:endPage 36 ;
-    ns2:numPages 12 ;
-    ns2:section <http://ceur-ws.org/Vol-654/#TechnicalPapers> ;
-    ns2:startPage 25 ;
-    ns4:author <http://ceur-ws.org/Vol-654/#SamindaiAbeyruwan>,
+<http://ceur-ws.org/Vol-654/#paper3> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-654/> ;
+    ns7:title "PrOntoLearn: Unsupervised Lexico-Semantic Ontology Generation using Probabilistic Methods" ;
+    ns3:endPage 36 ;
+    ns3:numPages 12 ;
+    ns3:section <http://ceur-ws.org/Vol-654/#TechnicalPapers> ;
+    ns3:startPage 25 ;
+    ns2:author <http://ceur-ws.org/Vol-654/#SamindaiAbeyruwan>,
         <http://ceur-ws.org/Vol-654/#StephaniSch%C3%BCrer>,
         <http://ceur-ws.org/Vol-654/#UbboiVisser>,
         <http://ceur-ws.org/Vol-654/#VanceiLemmon> .
 
-<http://ceur-ws.org/Vol-654/#pospaper1> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-654/> ;
-    ns6:title "SWRL-F - A Fuzzy Logic Extension of the Semantic Web Rule Language" ;
-    ns2:endPage 100 ;
-    ns2:numPages 4 ;
-    ns2:section <http://ceur-ws.org/Vol-654/#PositionPapers> ;
-    ns2:startPage 97 ;
-    ns4:author <http://ceur-ws.org/Vol-654/#ChunmingiRong>,
+<http://ceur-ws.org/Vol-654/#pospaper1> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-654/> ;
+    ns7:title "SWRL-F - A Fuzzy Logic Extension of the Semantic Web Rule Language" ;
+    ns3:endPage 100 ;
+    ns3:numPages 4 ;
+    ns3:section <http://ceur-ws.org/Vol-654/#PositionPapers> ;
+    ns3:startPage 97 ;
+    ns2:author <http://ceur-ws.org/Vol-654/#ChunmingiRong>,
         <http://ceur-ws.org/Vol-654/#MarkiMusen>,
         <http://ceur-ws.org/Vol-654/#MartiniO%EF%BF%BDConnor>,
         <http://ceur-ws.org/Vol-654/#TomasziWiktoriWlodarczyk> .
 
-<http://ceur-ws.org/Vol-654/#pospaper2> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-654/> ;
-    ns6:title "A Tractable Paraconsistent Fuzzy Description Logic" ;
-    ns2:endPage 104 ;
-    ns2:numPages 4 ;
-    ns2:section <http://ceur-ws.org/Vol-654/#PositionPapers> ;
-    ns2:startPage 101 ;
-    ns4:author <http://ceur-ws.org/Vol-654/#AnaiTeresaiMartins>,
+<http://ceur-ws.org/Vol-654/#pospaper2> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-654/> ;
+    ns7:title "A Tractable Paraconsistent Fuzzy Description Logic" ;
+    ns3:endPage 104 ;
+    ns3:numPages 4 ;
+    ns3:section <http://ceur-ws.org/Vol-654/#PositionPapers> ;
+    ns3:startPage 101 ;
+    ns2:author <http://ceur-ws.org/Vol-654/#AnaiTeresaiMartins>,
         <http://ceur-ws.org/Vol-654/#HenriqueiViana>,
         <http://ceur-ws.org/Vol-654/#Jo%C3%A3oiAlc%C3%A2ntara>,
         <http://ceur-ws.org/Vol-654/#ThiagoiAlves> .
 
-<http://ceur-ws.org/Vol-654/#pospaper3> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-654/> ;
-    ns6:title "Default Logics for Plausible Reasoning with Controversial Axioms" ;
-    ns2:endPage 108 ;
-    ns2:numPages 4 ;
-    ns2:section <http://ceur-ws.org/Vol-654/#PositionPapers> ;
-    ns2:startPage 105 ;
-    ns4:author <http://ceur-ws.org/Vol-654/#AbrahamiBernsteins>,
+<http://ceur-ws.org/Vol-654/#pospaper3> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-654/> ;
+    ns7:title "Default Logics for Plausible Reasoning with Controversial Axioms" ;
+    ns3:endPage 108 ;
+    ns3:numPages 4 ;
+    ns3:section <http://ceur-ws.org/Vol-654/#PositionPapers> ;
+    ns3:startPage 105 ;
+    ns2:author <http://ceur-ws.org/Vol-654/#AbrahamiBernsteins>,
         <http://ceur-ws.org/Vol-654/#BettinaiWaldvogel>,
         <http://ceur-ws.org/Vol-654/#ClaudiaiD%27Amato>,
         <http://ceur-ws.org/Vol-654/#NicolaiFanizzi>,
         <http://ceur-ws.org/Vol-654/#RolfiGr%C3%BCtter>,
         <http://ceur-ws.org/Vol-654/#ThomasiScharrenbach> .
 
-<http://ceur-ws.org/Vol-654/#TechnicalPapers> a ns3:SessionEvent ;
-    ns3:partOf <http://ceur-ws.org/Vol-654/> ;
-    ns6:title "Technical Papers" .
+<http://ceur-ws.org/Vol-654/#TechnicalPapers> a ns4:SessionEvent ;
+    ns4:partOf <http://ceur-ws.org/Vol-654/> ;
+    ns7:title "Technical Papers" .
 
-<http://ceur-ws.org/Vol-654/> a ns3:Proceedings ;
-    ns3:hasPart <http://ceur-ws.org/Vol-654/#paper1>,
+<http://ceur-ws.org/Vol-654/> a ns4:Proceedings ;
+    ns4:hasPart <http://ceur-ws.org/Vol-654/#paper1>,
         <http://ceur-ws.org/Vol-654/#paper2>,
         <http://ceur-ws.org/Vol-654/#paper3>,
         <http://ceur-ws.org/Vol-654/#paper4>,
@@ -378,11 +384,11 @@
         <http://ceur-ws.org/Vol-654/#pospaper2>,
         <http://ceur-ws.org/Vol-654/#pospaper3>,
         <http://ceur-ws.org/Vol-654/#pospaper4> ;
-    ns3:hasSession <http://ceur-ws.org/Vol-654/#PositionPapers>,
+    ns4:hasSession <http://ceur-ws.org/Vol-654/#PositionPapers>,
         <http://ceur-ws.org/Vol-654/#TechnicalPapers> ;
     ns8:issued "2010-10-21T00:00:00+00:00"^^xsd:dateTime ;
-    ns2:presentedAt <http://ceur-ws.org/Vol-654/#event> ;
-    ns4:editor <http://ceur-ws.org/Vol-654/#ClaudiaiD%27Amato>,
+    ns3:presentedAt <http://ceur-ws.org/Vol-654/#event> ;
+    ns2:editor <http://ceur-ws.org/Vol-654/#ClaudiaiD%27Amato>,
         <http://ceur-ws.org/Vol-654/#FernandoiBobillo>,
         <http://ceur-ws.org/Vol-654/#KathryniB.iLaskey>,
         <http://ceur-ws.org/Vol-654/#KennethiJ.iLaskey>,

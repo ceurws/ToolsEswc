@@ -1,10 +1,10 @@
 @prefix ns1: <http://xmlns.com/foaf/0.1/> .
-@prefix ns2: <http://purl.org/dc/elements/1.1/> .
+@prefix ns2: <http://data.semanticweb.org/ns/swc/ontology/#> .
 @prefix ns3: <http://www.w3.org/2002/07/owl#> .
-@prefix ns4: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns4: <http://purl.org/ontology/bibo/#> .
 @prefix ns5: <http://purl.org/dc/elements/1.1/#> .
 @prefix ns6: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns7: <http://purl.org/ontology/bibo/#> .
+@prefix ns7: <http://purl.org/dc/elements/1.1/> .
 @prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
 @prefix ns9: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -197,13 +197,19 @@
     ns1:made <http://ceur-ws.org/Vol-1154/#paper9> ;
     ns1:name "Urs Grohbiel" .
 
-<http://ceur-ws.org/Vol-1154/#event> a ns4:WorkshopEvent ;
-    ns4:hasLocation <http://dbpedia.org/resource/United_Kingdom> ;
-    ns4:hasPart <http://ceur-ws.org/Vol-1154/#part-BIIML> ;
-    ns4:isSubEventOf <http://ceur-ws.org/Vol-1154/#conf> ;
+<http://ceur-ws.org/Vol-1154/#event> a ns2:WorkshopEvent ;
+    ns2:hasLocation <http://dbpedia.org/resource/United_Kingdom> ;
+    ns2:hasPart <http://ceur-ws.org/Vol-1154/#part-BIIML> ;
+    ns2:isSubEventOf <http://ceur-ws.org/Vol-1154/#conf> ;
     ns8:beginsAtDatetime "2014-03-06T00:00:00+00:00"^^xsd:dateTime ;
     ns8:endsAtDatetime "2014-03-07T00:00:00+00:00"^^xsd:dateTime ;
-    ns2:license "http://choosealicense.com/licenses/no-license/" .
+    ns7:license "http://choosealicense.com/licenses/no-license/" .
+
+<http://ceur-ws.org/Vol-1154/#part-BIIML> a ns4:Workshop ;
+    ns2:partOf <http://ceur-ws.org/series/BIIML> ;
+    ns5:title "Bristol Ideas in Mobile Learning 2014" ;
+    ns4:shortTitle "BIIML" ;
+    ns6:edition 1 .
 
 <http://ceur-ws.org/Vol-1154/#DanieliSpikol> a ns1:Person ;
     ns3:sameAs <http://ceur-ws.org/persons/DanieliSpikol> ;
@@ -211,8 +217,8 @@
         <http://ceur-ws.org/Vol-1154/#paper23> ;
     ns1:name "Daniel Spikol" .
 
-<http://ceur-ws.org/Vol-1154/#Industrypapers> a ns4:SessionEvent ;
-    ns4:partOf <http://ceur-ws.org/Vol-1154/> ;
+<http://ceur-ws.org/Vol-1154/#Industrypapers> a ns2:SessionEvent ;
+    ns2:partOf <http://ceur-ws.org/Vol-1154/> ;
     ns5:title "Industry papers" .
 
 <http://ceur-ws.org/Vol-1154/#JohniCook> a ns1:Person ;
@@ -239,162 +245,162 @@
     ns1:made <http://ceur-ws.org/Vol-1154/#paper16> ;
     ns1:name "Yishay Mor" .
 
-<http://ceur-ws.org/Vol-1154/#paper1> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1154/> ;
+<http://ceur-ws.org/Vol-1154/#paper1> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1154/> ;
     ns5:title "Towards mobile seamless learning" ;
-    ns7:section <http://ceur-ws.org/Vol-1154/#InvitedTalks> ;
+    ns4:section <http://ceur-ws.org/Vol-1154/#InvitedTalks> ;
     ns6:author <http://ceur-ws.org/Vol-1154/#MarcusiSpecht> .
 
-<http://ceur-ws.org/Vol-1154/#paper13> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1154/> ;
+<http://ceur-ws.org/Vol-1154/#paper13> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1154/> ;
     ns5:title "User Generated Contexts: Thinking about changes in mass communication in terms of agency, innovation, trust and risk" ;
-    ns7:section <http://ceur-ws.org/Vol-1154/#RoundTablePapers> ;
+    ns4:section <http://ceur-ws.org/Vol-1154/#RoundTablePapers> ;
     ns6:author <http://ceur-ws.org/Vol-1154/#JohniCook> .
 
-<http://ceur-ws.org/Vol-1154/#paper14> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1154/> ;
+<http://ceur-ws.org/Vol-1154/#paper14> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1154/> ;
     ns5:title "Journalist, citizen and learner? A consideration of context in learning mobile journalism through mobile learning" ;
-    ns7:section <http://ceur-ws.org/Vol-1154/#RoundTablePapers> ;
+    ns4:section <http://ceur-ws.org/Vol-1154/#RoundTablePapers> ;
     ns6:author <http://ceur-ws.org/Vol-1154/#BernhardiGross> .
 
-<http://ceur-ws.org/Vol-1154/#paper15> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1154/> ;
+<http://ceur-ws.org/Vol-1154/#paper15> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1154/> ;
     ns5:title "Keep Taking the Tablets: Integrating the Mobile in Work-Based Learning" ;
-    ns7:section <http://ceur-ws.org/Vol-1154/#RoundTablePapers> ;
+    ns4:section <http://ceur-ws.org/Vol-1154/#RoundTablePapers> ;
     ns6:author <http://ceur-ws.org/Vol-1154/#DavidiBarber> .
 
-<http://ceur-ws.org/Vol-1154/#paper16> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1154/> ;
+<http://ceur-ws.org/Vol-1154/#paper16> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1154/> ;
     ns5:title "The SoMoLearn initiative: empowering teachers to recruit mobile technologies and social media as an ally" ;
-    ns7:section <http://ceur-ws.org/Vol-1154/#RoundTablePapers> ;
+    ns4:section <http://ceur-ws.org/Vol-1154/#RoundTablePapers> ;
     ns6:author <http://ceur-ws.org/Vol-1154/#YishayiMor> .
 
-<http://ceur-ws.org/Vol-1154/#paper17> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1154/> ;
+<http://ceur-ws.org/Vol-1154/#paper17> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1154/> ;
     ns5:title "Interaction matters in m-learning in situ" ;
-    ns7:section <http://ceur-ws.org/Vol-1154/#RoundTablePapers> ;
+    ns4:section <http://ceur-ws.org/Vol-1154/#RoundTablePapers> ;
     ns6:author <http://ceur-ws.org/Vol-1154/#PatriciaiSantos> .
 
-<http://ceur-ws.org/Vol-1154/#paper18> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1154/> ;
+<http://ceur-ws.org/Vol-1154/#paper18> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1154/> ;
     ns5:title "Wearable learning: How Google Glass is changing education?" ;
-    ns7:section <http://ceur-ws.org/Vol-1154/#RoundTablePapers> ;
+    ns4:section <http://ceur-ws.org/Vol-1154/#RoundTablePapers> ;
     ns6:author <http://ceur-ws.org/Vol-1154/#DaniyariSapargaliyev> .
 
-<http://ceur-ws.org/Vol-1154/#paper2> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1154/> ;
+<http://ceur-ws.org/Vol-1154/#paper2> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1154/> ;
     ns5:title "Sustainability for mobile learning under the societal and cultural condition of delimitation, a conceptual framework with a proposal of practical tools" ;
-    ns7:section <http://ceur-ws.org/Vol-1154/#InvitedTalks> ;
+    ns4:section <http://ceur-ws.org/Vol-1154/#InvitedTalks> ;
     ns6:author <http://ceur-ws.org/Vol-1154/#BeniBachmair> .
 
-<http://ceur-ws.org/Vol-1154/#paper20> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1154/> ;
+<http://ceur-ws.org/Vol-1154/#paper20> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1154/> ;
     ns5:title "Mobile Learning in the Global South" ;
-    ns7:section <http://ceur-ws.org/Vol-1154/#RoundTablePapers> ;
+    ns4:section <http://ceur-ws.org/Vol-1154/#RoundTablePapers> ;
     ns6:author <http://ceur-ws.org/Vol-1154/#JohniTraxler> .
 
-<http://ceur-ws.org/Vol-1154/#paper22> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1154/> ;
+<http://ceur-ws.org/Vol-1154/#paper22> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1154/> ;
     ns5:title "Experience (Re)Design Techniques using Innovative Mobile Assistive Technologies and Creative Context Engineering" ;
-    ns7:section <http://ceur-ws.org/Vol-1154/#RoundTablePapers> ;
+    ns4:section <http://ceur-ws.org/Vol-1154/#RoundTablePapers> ;
     ns6:author <http://ceur-ws.org/Vol-1154/#CarliSmith> .
 
-<http://ceur-ws.org/Vol-1154/#paper3> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1154/> ;
+<http://ceur-ws.org/Vol-1154/#paper3> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1154/> ;
     ns5:title "Literacy in a culture of delimitation and provisionality" ;
-    ns7:section <http://ceur-ws.org/Vol-1154/#InvitedTalks> ;
+    ns4:section <http://ceur-ws.org/Vol-1154/#InvitedTalks> ;
     ns6:author <http://ceur-ws.org/Vol-1154/#NorbertiPachler> .
 
-<http://ceur-ws.org/Vol-1154/#paper4> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1154/> ;
+<http://ceur-ws.org/Vol-1154/#paper4> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1154/> ;
     ns5:title "The future of mobile learning in the workplace: Qualcomm Insights" ;
-    ns7:section <http://ceur-ws.org/Vol-1154/#Industrypapers> ;
+    ns4:section <http://ceur-ws.org/Vol-1154/#Industrypapers> ;
     ns6:author <http://ceur-ws.org/Vol-1154/#GeoffiStead> .
 
-<http://ceur-ws.org/Vol-1154/#paper5> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1154/> ;
+<http://ceur-ws.org/Vol-1154/#paper5> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1154/> ;
     ns5:title "Mobile 'comfort' zones: overcoming barriers to enable facilitated learning in the workplace" ;
-    ns7:section <http://ceur-ws.org/Vol-1154/#FullPapers> ;
+    ns4:section <http://ceur-ws.org/Vol-1154/#FullPapers> ;
     ns6:author <http://ceur-ws.org/Vol-1154/#DebbieiHolley> .
 
-<http://ceur-ws.org/Vol-1154/#paper7> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1154/> ;
+<http://ceur-ws.org/Vol-1154/#paper7> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1154/> ;
     ns5:title "Using Context-Aware Ubiquitous Learning to Support Students in Learning Angle Concepts" ;
-    ns7:section <http://ceur-ws.org/Vol-1154/#FullPapers> ;
+    ns4:section <http://ceur-ws.org/Vol-1154/#FullPapers> ;
     ns6:author <http://ceur-ws.org/Vol-1154/#HeleniCrompton> .
 
-<http://ceur-ws.org/Vol-1154/#paper10> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1154/> ;
+<http://ceur-ws.org/Vol-1154/#paper10> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1154/> ;
     ns5:title "Linking mobile enhanced collective learning to open educational practice (OEP)" ;
-    ns7:section <http://ceur-ws.org/Vol-1154/#FullPapers> ;
+    ns4:section <http://ceur-ws.org/Vol-1154/#FullPapers> ;
     ns6:author <http://ceur-ws.org/Vol-1154/#JohniStav>,
         <http://ceur-ws.org/Vol-1154/#KaterinaiZourou> .
 
-<http://ceur-ws.org/Vol-1154/#paper21> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1154/> ;
+<http://ceur-ws.org/Vol-1154/#paper21> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1154/> ;
     ns5:title "Social Media based learning from a European perspective: A Framework for Social Innovation" ;
-    ns7:section <http://ceur-ws.org/Vol-1154/#RoundTablePapers> ;
+    ns4:section <http://ceur-ws.org/Vol-1154/#RoundTablePapers> ;
     ns6:author <http://ceur-ws.org/Vol-1154/#BastianiPelka>,
         <http://ceur-ws.org/Vol-1154/#StuartiMitchell> .
 
-<http://ceur-ws.org/Vol-1154/#paper23> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1154/> ;
+<http://ceur-ws.org/Vol-1154/#paper23> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1154/> ;
     ns5:title "Designing for Drawing-based Modelling for tablet computers" ;
-    ns7:section <http://ceur-ws.org/Vol-1154/#RoundTablePapers> ;
+    ns4:section <http://ceur-ws.org/Vol-1154/#RoundTablePapers> ;
     ns6:author <http://ceur-ws.org/Vol-1154/#AxeliOlsson>,
         <http://ceur-ws.org/Vol-1154/#DanieliSpikol> .
 
-<http://ceur-ws.org/Vol-1154/#paper8> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1154/> ;
+<http://ceur-ws.org/Vol-1154/#paper8> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1154/> ;
     ns5:title "What's happening in 'their space'? Exploring the borders of formal and informal learning with undergraduate students of education in the age of mobile technologies" ;
-    ns7:section <http://ceur-ws.org/Vol-1154/#FullPapers> ;
+    ns4:section <http://ceur-ws.org/Vol-1154/#FullPapers> ;
     ns6:author <http://ceur-ws.org/Vol-1154/#JaneiAndrews>,
         <http://ceur-ws.org/Vol-1154/#MarkiJones> .
 
-<http://ceur-ws.org/Vol-1154/#InvitedTalks> a ns4:SessionEvent ;
-    ns4:partOf <http://ceur-ws.org/Vol-1154/> ;
+<http://ceur-ws.org/Vol-1154/#InvitedTalks> a ns2:SessionEvent ;
+    ns2:partOf <http://ceur-ws.org/Vol-1154/> ;
     ns5:title "Invited Talks" .
 
-<http://ceur-ws.org/Vol-1154/#paper12> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1154/> ;
+<http://ceur-ws.org/Vol-1154/#paper12> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1154/> ;
     ns5:title "Developing context and work based mobile learning in the Construction sector" ;
-    ns7:section <http://ceur-ws.org/Vol-1154/#FullPapers> ;
+    ns4:section <http://ceur-ws.org/Vol-1154/#FullPapers> ;
     ns6:author <http://ceur-ws.org/Vol-1154/#GrahamiAttwell>,
         <http://ceur-ws.org/Vol-1154/#MartinaiLuebbing>,
         <http://ceur-ws.org/Vol-1154/#OweniGray> .
 
-<http://ceur-ws.org/Vol-1154/#paper6> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1154/> ;
+<http://ceur-ws.org/Vol-1154/#paper6> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1154/> ;
     ns5:title "Being able to accommodate activity's formal purposes as a critical factor when designing for 'location-based learning games' at scale" ;
-    ns7:section <http://ceur-ws.org/Vol-1154/#FullPapers> ;
+    ns4:section <http://ceur-ws.org/Vol-1154/#FullPapers> ;
     ns6:author <http://ceur-ws.org/Vol-1154/#DaviniaiHernandez-Leo>,
         <http://ceur-ws.org/Vol-1154/#JavieriMelero>,
         <http://ceur-ws.org/Vol-1154/#JosepiBlat> .
 
-<http://ceur-ws.org/Vol-1154/#paper11> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1154/> ;
+<http://ceur-ws.org/Vol-1154/#paper11> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1154/> ;
     ns5:title "Using Augmented Reality, Artistic Research and Mobile Phones to Explore Practice-based Learning" ;
-    ns7:section <http://ceur-ws.org/Vol-1154/#FullPapers> ;
+    ns4:section <http://ceur-ws.org/Vol-1154/#FullPapers> ;
     ns6:author <http://ceur-ws.org/Vol-1154/#CamillaiRyd>,
         <http://ceur-ws.org/Vol-1154/#DanieliSpikol>,
         <http://ceur-ws.org/Vol-1154/#JacekiSmolicki>,
         <http://ceur-ws.org/Vol-1154/#JeannetteiGinslov>,
         <http://ceur-ws.org/Vol-1154/#SusaniKoze> .
 
-<http://ceur-ws.org/Vol-1154/#paper19> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1154/> ;
+<http://ceur-ws.org/Vol-1154/#paper19> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1154/> ;
     ns5:title "Creating and understanding mobile game simulations for school children" ;
-    ns7:section <http://ceur-ws.org/Vol-1154/#RoundTablePapers> ;
+    ns4:section <http://ceur-ws.org/Vol-1154/#RoundTablePapers> ;
     ns6:author <http://ceur-ws.org/Vol-1154/#BirgitiSchmitz>,
         <http://ceur-ws.org/Vol-1154/#DirkiBorner>,
         <http://ceur-ws.org/Vol-1154/#MarcoiKalz>,
         <http://ceur-ws.org/Vol-1154/#MarcusiSpecht>,
         <http://ceur-ws.org/Vol-1154/#RolandiKlemke> .
 
-<http://ceur-ws.org/Vol-1154/#paper9> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1154/> ;
+<http://ceur-ws.org/Vol-1154/#paper9> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-1154/> ;
     ns5:title "Mobile phones to facilitate connected social learning and work-based practices in marginalized settings. Insights from a research project in rural South Africa." ;
-    ns7:section <http://ceur-ws.org/Vol-1154/#FullPapers> ;
+    ns4:section <http://ceur-ws.org/Vol-1154/#FullPapers> ;
     ns6:author <http://ceur-ws.org/Vol-1154/#ChristophiPimmer>,
         <http://ceur-ws.org/Vol-1154/#FionaiWalters>,
         <http://ceur-ws.org/Vol-1154/#JenniferiChipps>,
@@ -402,16 +408,16 @@
         <http://ceur-ws.org/Vol-1154/#SebastianiLinxen>,
         <http://ceur-ws.org/Vol-1154/#UrsiGrohbiel> .
 
-<http://ceur-ws.org/Vol-1154/#FullPapers> a ns4:SessionEvent ;
-    ns4:partOf <http://ceur-ws.org/Vol-1154/> ;
+<http://ceur-ws.org/Vol-1154/#FullPapers> a ns2:SessionEvent ;
+    ns2:partOf <http://ceur-ws.org/Vol-1154/> ;
     ns5:title "Full Papers" .
 
-<http://ceur-ws.org/Vol-1154/#RoundTablePapers> a ns4:SessionEvent ;
-    ns4:partOf <http://ceur-ws.org/Vol-1154/> ;
+<http://ceur-ws.org/Vol-1154/#RoundTablePapers> a ns2:SessionEvent ;
+    ns2:partOf <http://ceur-ws.org/Vol-1154/> ;
     ns5:title "Round Table Papers" .
 
-<http://ceur-ws.org/Vol-1154/> a ns4:Proceedings ;
-    ns4:hasPart <http://ceur-ws.org/Vol-1154/#paper1>,
+<http://ceur-ws.org/Vol-1154/> a ns2:Proceedings ;
+    ns2:hasPart <http://ceur-ws.org/Vol-1154/#paper1>,
         <http://ceur-ws.org/Vol-1154/#paper10>,
         <http://ceur-ws.org/Vol-1154/#paper11>,
         <http://ceur-ws.org/Vol-1154/#paper12>,
@@ -434,12 +440,12 @@
         <http://ceur-ws.org/Vol-1154/#paper7>,
         <http://ceur-ws.org/Vol-1154/#paper8>,
         <http://ceur-ws.org/Vol-1154/#paper9> ;
-    ns4:hasSession <http://ceur-ws.org/Vol-1154/#FullPapers>,
+    ns2:hasSession <http://ceur-ws.org/Vol-1154/#FullPapers>,
         <http://ceur-ws.org/Vol-1154/#Industrypapers>,
         <http://ceur-ws.org/Vol-1154/#InvitedTalks>,
         <http://ceur-ws.org/Vol-1154/#RoundTablePapers> ;
     ns9:issued "2014-05-25T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:presentedAt <http://ceur-ws.org/Vol-1154/#event> ;
+    ns4:presentedAt <http://ceur-ws.org/Vol-1154/#event> ;
     ns6:editor <http://ceur-ws.org/Vol-1154/#JohniCook>,
         <http://ceur-ws.org/Vol-1154/#PatriciaiSantos>,
         <http://ceur-ws.org/Vol-1154/#YishayiMor> .

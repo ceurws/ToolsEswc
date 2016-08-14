@@ -1,24 +1,25 @@
-@prefix ns1: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns1: <http://swrc.ontoware.org/ontology/#> .
 @prefix ns2: <http://data.semanticweb.org/ns/swc/ontology/#> .
 @prefix ns3: <http://purl.org/ontology/bibo/#> .
 @prefix ns4: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns5: <http://xmlns.com/foaf/0.1/> .
-@prefix ns6: <http://www.w3.org/2002/07/owl#> .
-@prefix ns7: <http://purl.org/dc/elements/1.1/> .
-@prefix ns8: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns5: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns6: <http://purl.org/dc/elements/1.1/> .
+@prefix ns7: <http://xmlns.com/foaf/0.1/> .
+@prefix ns8: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns9: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <http://ceur-ws.org/Vol-12/> a ns2:Proceedings ;
-    ns1:issued "1998-06-04T00:00:00+00:00"^^xsd:dateTime ;
+    ns5:issued "1998-06-04T00:00:00+00:00"^^xsd:dateTime ;
     ns3:presentedAt <http://ceur-ws.org/Vol-12/#event> ;
-    ns8:editor <http://ceur-ws.org/Vol-12/#Algorithmeni-iSystemei-iAnwendungen> .
+    ns1:editor <http://ceur-ws.org/Vol-12/#Algorithmeni-iSystemei-iAnwendungen> .
 
-<http://ceur-ws.org/Vol-12/#Algorithmeni-iSystemei-iAnwendungen> a ns5:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/Algorithmeni-iSystemei-iAnwendungen> ;
-    ns5:name "Algorithmen - Systeme - Anwendungen" .
+<http://ceur-ws.org/Vol-12/#Algorithmeni-iSystemei-iAnwendungen> a ns7:Person ;
+    ns9:sameAs <http://ceur-ws.org/persons/Algorithmeni-iSystemei-iAnwendungen> ;
+    ns7:name "Algorithmen - Systeme - Anwendungen" .
 
 <http://ceur-ws.org/Vol-12/#event> a ns2:WorkshopEvent ;
     ns2:hasLocation <http://dbpedia.org/resource/Germany> ;
@@ -26,5 +27,9 @@
     ns2:isSubEventOf <http://ceur-ws.org/Vol-12/#conf> ;
     ns4:beginsAtDatetime "1998-03-26T00:00:00+00:00"^^xsd:dateTime ;
     ns4:endsAtDatetime "1998-03-27T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:license "http://choosealicense.com/licenses/no-license/" .
+    ns6:license "http://choosealicense.com/licenses/no-license/" .
+
+<http://ceur-ws.org/Vol-12/#part-ws> a ns3:Workshop ;
+    ns2:partOf <http://ceur-ws.org/series/ws> ;
+    ns8:title "Bildverarbeitung für die Medizin 1998: Algorithmen - Systeme - Anwendungen" .
 

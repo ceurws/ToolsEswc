@@ -1,39 +1,46 @@
-@prefix ns1: <http://xmlns.com/foaf/0.1/> .
-@prefix ns2: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns3: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns4: <http://www.w3.org/2002/07/owl#> .
-@prefix ns5: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns6: <http://purl.org/ontology/bibo/#> .
+@prefix ns1: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns2: <http://purl.org/dc/elements/1.1/> .
+@prefix ns3: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns4: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns5: <http://xmlns.com/foaf/0.1/> .
+@prefix ns6: <http://data.semanticweb.org/ns/swc/ontology/#> .
 @prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns8: <http://purl.org/dc/elements/1.1/> .
+@prefix ns8: <http://purl.org/ontology/bibo/#> .
+@prefix ns9: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-35/> a ns3:Proceedings ;
+<http://ceur-ws.org/Vol-35/> a ns6:Proceedings ;
     ns7:issued "2000-11-02T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:presentedAt <http://ceur-ws.org/Vol-35/#event> ;
-    ns2:editor <http://ceur-ws.org/Vol-35/#AlaniFrisch>,
+    ns8:presentedAt <http://ceur-ws.org/Vol-35/#event> ;
+    ns4:editor <http://ceur-ws.org/Vol-35/#AlaniFrisch>,
         <http://ceur-ws.org/Vol-35/#BothiatiDepartmentiofiComputeriScience>,
         <http://ceur-ws.org/Vol-35/#JamesiCussens> .
 
-<http://ceur-ws.org/Vol-35/#AlaniFrisch> a ns1:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/AlaniFrisch> ;
-    ns1:name "Alan Frisch" .
+<http://ceur-ws.org/Vol-35/#AlaniFrisch> a ns5:Person ;
+    ns9:sameAs <http://ceur-ws.org/persons/AlaniFrisch> ;
+    ns5:name "Alan Frisch" .
 
-<http://ceur-ws.org/Vol-35/#BothiatiDepartmentiofiComputeriScience> a ns1:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/BothiatiDepartmentiofiComputeriScience> ;
-    ns1:name "Both at Department of Computer Science" .
+<http://ceur-ws.org/Vol-35/#BothiatiDepartmentiofiComputeriScience> a ns5:Person ;
+    ns9:sameAs <http://ceur-ws.org/persons/BothiatiDepartmentiofiComputeriScience> ;
+    ns5:name "Both at Department of Computer Science" .
 
-<http://ceur-ws.org/Vol-35/#JamesiCussens> a ns1:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/JamesiCussens> ;
-    ns1:name "James Cussens" .
+<http://ceur-ws.org/Vol-35/#JamesiCussens> a ns5:Person ;
+    ns9:sameAs <http://ceur-ws.org/persons/JamesiCussens> ;
+    ns5:name "James Cussens" .
 
-<http://ceur-ws.org/Vol-35/#event> a ns3:WorkshopEvent ;
-    ns3:hasPart <http://ceur-ws.org/Vol-35/#part-ILP> ;
-    ns3:isSubEventOf <http://ceur-ws.org/Vol-35/#conf> ;
-    ns5:beginsAtDatetime "2000-07-01T00:00:00+00:00"^^xsd:dateTime ;
-    ns5:endsAtDatetime "2000-07-01T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:license "http://choosealicense.com/licenses/no-license/" .
+<http://ceur-ws.org/Vol-35/#event> a ns6:WorkshopEvent ;
+    ns6:hasPart <http://ceur-ws.org/Vol-35/#part-ILP> ;
+    ns6:isSubEventOf <http://ceur-ws.org/Vol-35/#conf> ;
+    ns3:beginsAtDatetime "2000-07-01T00:00:00+00:00"^^xsd:dateTime ;
+    ns3:endsAtDatetime "2000-07-01T00:00:00+00:00"^^xsd:dateTime ;
+    ns2:license "http://choosealicense.com/licenses/no-license/" .
+
+<http://ceur-ws.org/Vol-35/#part-ILP> a ns8:Workshop ;
+    ns6:partOf <http://ceur-ws.org/series/ILP> ;
+    ns1:title "Inductive Logic Programming 2000" ;
+    ns8:shortTitle "ILP" ;
+    ns4:edition 10 .
 

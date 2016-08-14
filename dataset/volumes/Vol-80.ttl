@@ -1,40 +1,45 @@
-@prefix ns1: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns1: <http://www.w3.org/2002/07/owl#> .
 @prefix ns2: <http://xmlns.com/foaf/0.1/> .
-@prefix ns3: <http://purl.org/dc/elements/1.1/> .
-@prefix ns4: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns5: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns6: <http://purl.org/ontology/bibo/#> .
-@prefix ns7: <http://www.w3.org/2002/07/owl#> .
-@prefix ns8: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns3: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns4: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns5: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns6: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns7: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns8: <http://purl.org/dc/elements/1.1/> .
+@prefix ns9: <http://purl.org/ontology/bibo/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-80/> a ns8:Proceedings ;
-    ns4:issued "2003-09-04T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:presentedAt <http://ceur-ws.org/Vol-80/#event> ;
-    ns1:editor <http://ceur-ws.org/Vol-80/#AlexanderiHorschiundiHans-PeteriMeinzer>,
+<http://ceur-ws.org/Vol-80/> a ns5:Proceedings ;
+    ns6:issued "2003-09-04T00:00:00+00:00"^^xsd:dateTime ;
+    ns9:presentedAt <http://ceur-ws.org/Vol-80/#event> ;
+    ns4:editor <http://ceur-ws.org/Vol-80/#AlexanderiHorschiundiHans-PeteriMeinzer>,
         <http://ceur-ws.org/Vol-80/#HerausgegebenivoniThomasiWittenberg> .
 
 <http://ceur-ws.org/Vol-80/#AlexanderiHorschiundiHans-PeteriMeinzer> a ns2:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/AlexanderiHorschiundiHans-PeteriMeinzer> ;
+    ns1:sameAs <http://ceur-ws.org/persons/AlexanderiHorschiundiHans-PeteriMeinzer> ;
     ns2:name "Alexander Horsch und Hans-Peter Meinzer" .
 
 <http://ceur-ws.org/Vol-80/#HerausgegebenivoniThomasiWittenberg> a ns2:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/HerausgegebenivoniThomasiWittenberg> ;
+    ns1:sameAs <http://ceur-ws.org/persons/HerausgegebenivoniThomasiWittenberg> ;
     ns2:name "Herausgegeben von Thomas Wittenberg" .
 
-<http://ceur-ws.org/Vol-80/#event> a ns8:WorkshopEvent ;
-    ns8:hasPart <http://ceur-ws.org/Vol-80/#part-ws> ;
-    ns8:isSubEventOf <http://ceur-ws.org/Vol-80/#conf> ;
-    ns5:beginsAtDatetime "2003-03-11T00:00:00+00:00"^^xsd:dateTime ;
-    ns5:endsAtDatetime "2003-03-11T00:00:00+00:00"^^xsd:dateTime ;
-    ns3:license "http://choosealicense.com/licenses/no-license/" ;
+<http://ceur-ws.org/Vol-80/#event> a ns5:WorkshopEvent ;
+    ns5:hasPart <http://ceur-ws.org/Vol-80/#part-ws> ;
+    ns5:isSubEventOf <http://ceur-ws.org/Vol-80/#conf> ;
+    ns3:beginsAtDatetime "2003-03-11T00:00:00+00:00"^^xsd:dateTime ;
+    ns3:endsAtDatetime "2003-03-11T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:license "http://choosealicense.com/licenses/no-license/" ;
     rdfs:seeAlso <http://ceur-ws.org/Vol-12/#event>,
         <http://ceur-ws.org/Vol-20/#event>,
         <http://ceur-ws.org/Vol-27/#event>,
         <http://ceur-ws.org/Vol-36/#event>,
         <http://ceur-ws.org/Vol-56/#event>,
         <http://ceur-ws.org/Vol-6/#event> .
+
+<http://ceur-ws.org/Vol-80/#part-ws> a ns9:Workshop ;
+    ns5:partOf <http://ceur-ws.org/series/ws> ;
+    ns7:title "Bildverarbeitung für die Medizin 2003: Algorithmen - Systeme - Anwendungen" .
 

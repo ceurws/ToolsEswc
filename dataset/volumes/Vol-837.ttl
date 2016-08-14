@@ -1,12 +1,12 @@
 @prefix ns1: <http://xmlns.com/foaf/0.1/> .
 @prefix ns2: <http://swrc.ontoware.org/ontology/#> .
 @prefix ns3: <http://www.w3.org/2002/07/owl#> .
-@prefix ns4: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns4: <http://purl.org/dc/elements/1.1/#> .
 @prefix ns5: <http://purl.org/ontology/bibo/#> .
-@prefix ns6: <http://purl.org/dc/elements/1.1/> .
-@prefix ns7: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns9: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns6: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns9: <http://purl.org/dc/elements/1.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -153,13 +153,13 @@
     ns1:made <http://ceur-ws.org/Vol-837/#paper3> ;
     ns1:name "Zdenek Rybola" .
 
-<http://ceur-ws.org/Vol-837/#event> a ns4:WorkshopEvent ;
-    ns4:hasLocation <http://dbpedia.org/resource/Czech_Republic> ;
-    ns4:hasPart <http://ceur-ws.org/Vol-837/#part-DATESO> ;
-    ns4:isSubEventOf <http://ceur-ws.org/Vol-837/#conf> ;
-    ns8:beginsAtDatetime "2012-04-18T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:endsAtDatetime "2012-04-18T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:license "http://choosealicense.com/licenses/no-license/" ;
+<http://ceur-ws.org/Vol-837/#event> a ns6:WorkshopEvent ;
+    ns6:hasLocation <http://dbpedia.org/resource/Czech_Republic> ;
+    ns6:hasPart <http://ceur-ws.org/Vol-837/#part-DATESO> ;
+    ns6:isSubEventOf <http://ceur-ws.org/Vol-837/#conf> ;
+    ns7:beginsAtDatetime "2012-04-18T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:endsAtDatetime "2012-04-18T00:00:00+00:00"^^xsd:dateTime ;
+    ns9:license "http://choosealicense.com/licenses/no-license/" ;
     rdfs:seeAlso <http://ceur-ws.org/Vol-129/#event>,
         <http://ceur-ws.org/Vol-176/#event>,
         <http://ceur-ws.org/Vol-235/#event>,
@@ -169,9 +169,15 @@
         <http://ceur-ws.org/Vol-706/#event>,
         <http://ceur-ws.org/Vol-98/#event> .
 
-<http://ceur-ws.org/Vol-837/#Invitedpapers> a ns4:SessionEvent ;
-    ns4:partOf <http://ceur-ws.org/Vol-837/> ;
-    ns7:title "Invited papers" .
+<http://ceur-ws.org/Vol-837/#part-DATESO> a ns5:Workshop ;
+    ns6:partOf <http://ceur-ws.org/series/DATESO> ;
+    ns4:title "Databases, Texts, Specifications, Objects 2012" ;
+    ns5:shortTitle "DATESO" ;
+    ns2:edition 1 .
+
+<http://ceur-ws.org/Vol-837/#Invitedpapers> a ns6:SessionEvent ;
+    ns6:partOf <http://ceur-ws.org/Vol-837/> ;
+    ns4:title "Invited papers" .
 
 <http://ceur-ws.org/Vol-837/#IrenaiMlynkova> a ns1:Person ;
     ns3:sameAs <http://ceur-ws.org/persons/IrenaiMlynkova> ;
@@ -209,9 +215,9 @@
         <http://ceur-ws.org/Vol-837/#paper2> ;
     ns1:name "Tomas Kocyan" .
 
-<http://ceur-ws.org/Vol-837/#invited2> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-837/> ;
-    ns7:title "Social Network Analysis: Selected Methods and Applications" ;
+<http://ceur-ws.org/Vol-837/#invited2> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-837/> ;
+    ns4:title "Social Network Analysis: Selected Methods and Applications" ;
     ns5:endPage 150 ;
     ns5:numPages 8 ;
     ns5:section <http://ceur-ws.org/Vol-837/#Invitedpapers> ;
@@ -233,9 +239,9 @@
         <http://ceur-ws.org/Vol-837/#poster17> ;
     ns1:name "Karel Richta" .
 
-<http://ceur-ws.org/Vol-837/#paper10> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-837/> ;
-    ns7:title "On General-purpose Textual Modeling Languages" ;
+<http://ceur-ws.org/Vol-837/#paper10> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-837/> ;
+    ns4:title "On General-purpose Textual Modeling Languages" ;
     ns5:endPage 12 ;
     ns5:numPages 12 ;
     ns5:section <http://ceur-ws.org/Vol-837/#Fullpapers> ;
@@ -243,9 +249,9 @@
     ns2:author <http://ceur-ws.org/Vol-837/#MartiniMazanec>,
         <http://ceur-ws.org/Vol-837/#OndrejiMacek> .
 
-<http://ceur-ws.org/Vol-837/#paper11> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-837/> ;
-    ns7:title "P systems: State of the Art with Respect to Representation of Geographical Space" ;
+<http://ceur-ws.org/Vol-837/#paper11> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-837/> ;
+    ns4:title "P systems: State of the Art with Respect to Representation of Geographical Space" ;
     ns5:endPage 24 ;
     ns5:numPages 12 ;
     ns5:section <http://ceur-ws.org/Vol-837/#Fullpapers> ;
@@ -253,9 +259,9 @@
     ns2:author <http://ceur-ws.org/Vol-837/#JiriiDvorsky>,
         <http://ceur-ws.org/Vol-837/#ZbynekiJanoska> .
 
-<http://ceur-ws.org/Vol-837/#paper3> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-837/> ;
-    ns7:title "Using OCL in Model Validation According to Stereotypes" ;
+<http://ceur-ws.org/Vol-837/#paper3> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-837/> ;
+    ns4:title "Using OCL in Model Validation According to Stereotypes" ;
     ns5:endPage 102 ;
     ns5:numPages 10 ;
     ns5:section <http://ceur-ws.org/Vol-837/#Fullpapers> ;
@@ -263,9 +269,9 @@
     ns2:author <http://ceur-ws.org/Vol-837/#KareliRichta>,
         <http://ceur-ws.org/Vol-837/#ZdenekiRybola> .
 
-<http://ceur-ws.org/Vol-837/#paper6> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-837/> ;
-    ns7:title "Models for Efficient Semantic Data Storage Demonstrated on Concrete Example of DBpedia" ;
+<http://ceur-ws.org/Vol-837/#paper6> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-837/> ;
+    ns4:title "Models for Efficient Semantic Data Storage Demonstrated on Concrete Example of DBpedia" ;
     ns5:endPage 114 ;
     ns5:numPages 12 ;
     ns5:section <http://ceur-ws.org/Vol-837/#Fullpapers> ;
@@ -273,9 +279,9 @@
     ns2:author <http://ceur-ws.org/Vol-837/#IvoiLasek>,
         <http://ceur-ws.org/Vol-837/#PeteriVojtas> .
 
-<http://ceur-ws.org/Vol-837/#Posters> a ns4:SessionEvent ;
-    ns4:partOf <http://ceur-ws.org/Vol-837/> ;
-    ns7:title "Posters" .
+<http://ceur-ws.org/Vol-837/#Posters> a ns6:SessionEvent ;
+    ns6:partOf <http://ceur-ws.org/Vol-837/> ;
+    ns4:title "Posters" .
 
 <http://ceur-ws.org/Vol-837/#VaclaviSnasel> a ns1:Person ;
     ns2:affiliation "" ;
@@ -285,9 +291,9 @@
         <http://ceur-ws.org/Vol-837/#paper18> ;
     ns1:name "Vaclav Snasel" .
 
-<http://ceur-ws.org/Vol-837/#poster17> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-837/> ;
-    ns7:title "Inter-Project Dependenciesin Java Software Ecosystems" ;
+<http://ceur-ws.org/Vol-837/#poster17> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-837/> ;
+    ns4:title "Inter-Project Dependenciesin Java Software Ecosystems" ;
     ns5:endPage 134 ;
     ns5:numPages 8 ;
     ns5:section <http://ceur-ws.org/Vol-837/#Posters> ;
@@ -296,9 +302,9 @@
         <http://ceur-ws.org/Vol-837/#KareliRichta>,
         <http://ceur-ws.org/Vol-837/#MirceaiLungu> .
 
-<http://ceur-ws.org/Vol-837/#poster8> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-837/> ;
-    ns7:title "On Distributed Querying of Linked Data" ;
+<http://ceur-ws.org/Vol-837/#poster8> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-837/> ;
+    ns4:title "On Distributed Querying of Linked Data" ;
     ns5:endPage 142 ;
     ns5:numPages 8 ;
     ns5:section <http://ceur-ws.org/Vol-837/#Posters> ;
@@ -307,9 +313,9 @@
         <http://ceur-ws.org/Vol-837/#JakubiStarka>,
         <http://ceur-ws.org/Vol-837/#MartiniSvoboda> .
 
-<http://ceur-ws.org/Vol-837/#paper18> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-837/> ;
-    ns7:title "The Bayesian Spam Filter with NCD" ;
+<http://ceur-ws.org/Vol-837/#paper18> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-837/> ;
+    ns4:title "The Bayesian Spam Filter with NCD" ;
     ns5:endPage 68 ;
     ns5:numPages 9 ;
     ns5:section <http://ceur-ws.org/Vol-837/#Fullpapers> ;
@@ -319,9 +325,9 @@
         <http://ceur-ws.org/Vol-837/#MichaliPrilepok>,
         <http://ceur-ws.org/Vol-837/#VaclaviSnasel> .
 
-<http://ceur-ws.org/Vol-837/#paper19> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-837/> ;
-    ns7:title "eXolutio" ;
+<http://ceur-ws.org/Vol-837/#paper19> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-837/> ;
+    ns4:title "eXolutio" ;
     ns5:endPage 80 ;
     ns5:numPages 12 ;
     ns5:section <http://ceur-ws.org/Vol-837/#Fullpapers> ;
@@ -331,9 +337,9 @@
         <http://ceur-ws.org/Vol-837/#JakubiMaly>,
         <http://ceur-ws.org/Vol-837/#MartiniNecasky> .
 
-<http://ceur-ws.org/Vol-837/#paper2> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-837/> ;
-    ns7:title "Unsupervised Algorithm for Post-Processing of Roughly Segmented Categorical Time Series" ;
+<http://ceur-ws.org/Vol-837/#paper2> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-837/> ;
+    ns4:title "Unsupervised Algorithm for Post-Processing of Roughly Segmented Categorical Time Series" ;
     ns5:endPage 92 ;
     ns5:numPages 12 ;
     ns5:section <http://ceur-ws.org/Vol-837/#Fullpapers> ;
@@ -343,9 +349,9 @@
         <http://ceur-ws.org/Vol-837/#StepaniKuchar>,
         <http://ceur-ws.org/Vol-837/#TomasiKocyan> .
 
-<http://ceur-ws.org/Vol-837/#poster13> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-837/> ;
-    ns7:title "On Indexing in Native XML Database Systems" ;
+<http://ceur-ws.org/Vol-837/#poster13> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-837/> ;
+    ns4:title "On Indexing in Native XML Database Systems" ;
     ns5:endPage 126 ;
     ns5:numPages 12 ;
     ns5:section <http://ceur-ws.org/Vol-837/#Posters> ;
@@ -355,9 +361,9 @@
         <http://ceur-ws.org/Vol-837/#PaveliLoupal>,
         <http://ceur-ws.org/Vol-837/#PaveliStrnad> .
 
-<http://ceur-ws.org/Vol-837/#paper14> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-837/> ;
-    ns7:title "Developers' Cooperation based on Terms of Project Description" ;
+<http://ceur-ws.org/Vol-837/#paper14> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-837/> ;
+    ns4:title "Developers' Cooperation based on Terms of Project Description" ;
     ns5:endPage 48 ;
     ns5:numPages 11 ;
     ns5:section <http://ceur-ws.org/Vol-837/#Fullpapers> ;
@@ -368,9 +374,9 @@
         <http://ceur-ws.org/Vol-837/#PavlaiDrazdilova>,
         <http://ceur-ws.org/Vol-837/#StepaniMinks> .
 
-<http://ceur-ws.org/Vol-837/#paper16> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-837/> ;
-    ns7:title "Dynamic Time Warping in Analysis of Student Behavioral Patterns" ;
+<http://ceur-ws.org/Vol-837/#paper16> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-837/> ;
+    ns4:title "Dynamic Time Warping in Analysis of Student Behavioral Patterns" ;
     ns5:endPage 59 ;
     ns5:numPages 11 ;
     ns5:section <http://ceur-ws.org/Vol-837/#Fullpapers> ;
@@ -381,9 +387,9 @@
         <http://ceur-ws.org/Vol-837/#TomasiKocyan>,
         <http://ceur-ws.org/Vol-837/#VaclaviSnasel> .
 
-<http://ceur-ws.org/Vol-837/#paper12> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-837/> ;
-    ns7:title "Methodology for Estimating Working Time Effort of the Software Project" ;
+<http://ceur-ws.org/Vol-837/#paper12> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-837/> ;
+    ns4:title "Methodology for Estimating Working Time Effort of the Software Project" ;
     ns5:endPage 37 ;
     ns5:numPages 13 ;
     ns5:section <http://ceur-ws.org/Vol-837/#Fullpapers> ;
@@ -395,12 +401,12 @@
         <http://ceur-ws.org/Vol-837/#SvatoplukiStolfa>,
         <http://ceur-ws.org/Vol-837/#VaclaviSnasel> .
 
-<http://ceur-ws.org/Vol-837/#Fullpapers> a ns4:SessionEvent ;
-    ns4:partOf <http://ceur-ws.org/Vol-837/> ;
-    ns7:title "Full papers" .
+<http://ceur-ws.org/Vol-837/#Fullpapers> a ns6:SessionEvent ;
+    ns6:partOf <http://ceur-ws.org/Vol-837/> ;
+    ns4:title "Full papers" .
 
-<http://ceur-ws.org/Vol-837/> a ns4:Proceedings ;
-    ns4:hasPart <http://ceur-ws.org/Vol-837/#invited2>,
+<http://ceur-ws.org/Vol-837/> a ns6:Proceedings ;
+    ns6:hasPart <http://ceur-ws.org/Vol-837/#invited2>,
         <http://ceur-ws.org/Vol-837/#paper10>,
         <http://ceur-ws.org/Vol-837/#paper11>,
         <http://ceur-ws.org/Vol-837/#paper12>,
@@ -414,10 +420,10 @@
         <http://ceur-ws.org/Vol-837/#poster13>,
         <http://ceur-ws.org/Vol-837/#poster17>,
         <http://ceur-ws.org/Vol-837/#poster8> ;
-    ns4:hasSession <http://ceur-ws.org/Vol-837/#Fullpapers>,
+    ns6:hasSession <http://ceur-ws.org/Vol-837/#Fullpapers>,
         <http://ceur-ws.org/Vol-837/#Invitedpapers>,
         <http://ceur-ws.org/Vol-837/#Posters> ;
-    ns9:issued "2012-05-14T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:issued "2012-05-14T00:00:00+00:00"^^xsd:dateTime ;
     ns5:presentedAt <http://ceur-ws.org/Vol-837/#event> ;
     ns2:editor <http://ceur-ws.org/Vol-837/#JaroslaviPokorny>,
         <http://ceur-ws.org/Vol-837/#KareliRichta>,

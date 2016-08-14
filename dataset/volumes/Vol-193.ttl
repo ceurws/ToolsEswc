@@ -1,12 +1,12 @@
 @prefix ns1: <http://xmlns.com/foaf/0.1/> .
-@prefix ns2: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns3: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns4: <http://www.w3.org/2002/07/owl#> .
-@prefix ns5: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns6: <http://purl.org/dc/elements/1.1/> .
-@prefix ns7: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns9: <http://purl.org/ontology/bibo/#> .
+@prefix ns2: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns3: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns4: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns5: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns6: <http://www.w3.org/2002/07/owl#> .
+@prefix ns7: <http://purl.org/ontology/bibo/#> .
+@prefix ns8: <http://purl.org/dc/elements/1.1/> .
+@prefix ns9: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -17,7 +17,7 @@
     ns1:name "Alessandro Marchetto (Università di Milano" .
 
 <http://ceur-ws.org/Vol-193/#Benevento> a ns1:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/Benevento> ;
+    ns6:sameAs <http://ceur-ws.org/persons/Benevento> ;
     ns1:made <http://ceur-ws.org/Vol-193/#paperX5> ;
     ns1:name "Benevento" .
 
@@ -38,7 +38,7 @@
     ns1:name "Greece) Nikos Karousos (University of Patras" .
 
 <http://ceur-ws.org/Vol-193/#Greece)iMichailiVaitisi> a ns1:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/Greece)iMichailiVaitisi> ;
+    ns6:sameAs <http://ceur-ws.org/persons/Greece)iMichailiVaitisi> ;
     ns1:made <http://ceur-ws.org/Vol-193/#paperX4> .
 
 <http://ceur-ws.org/Vol-193/#Italy%29iAndreaiTrentinii%28Universit%C3%A0idiiMilano> a ns1:Person ;
@@ -62,8 +62,8 @@
     ns1:name "Italy) Roberto Paiano (Università di Lecce) Andrea Pandurino (Università di Lecce" .
 
 <http://ceur-ws.org/Vol-193/#Italy)iAndreaiTrentinii> a ns1:Person ;
-    ns2:affiliation "Alessandro Marchetto and Carlo Bellettini" ;
-    ns4:sameAs <http://ceur-ws.org/persons/Italy)iAndreaiTrentinii> .
+    ns4:affiliation "Alessandro Marchetto and Carlo Bellettini" ;
+    ns6:sameAs <http://ceur-ws.org/persons/Italy)iAndreaiTrentinii> .
 
 <http://ceur-ws.org/Vol-193/#LucaiMainettii%28Universit%C2%80idiiLecce> a ns1:Person ;
     ns1:made <http://ceur-ws.org/Vol-193/#paperX6> ;
@@ -82,80 +82,86 @@
     ns1:name "Simon Giesecke (Carl von Ossietzky University" .
 
 <http://ceur-ws.org/Vol-193/#Trento> a ns1:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/Trento> ;
+    ns6:sameAs <http://ceur-ws.org/persons/Trento> ;
     ns1:made <http://ceur-ws.org/Vol-193/#paperX5> ;
     ns1:name "Trento" .
 
-<http://ceur-ws.org/Vol-193/#event> a ns3:WorkshopEvent ;
-    ns3:hasLocation <http://dbpedia.org/resource/Italy> ;
-    ns3:hasPart <http://ceur-ws.org/Vol-193/#part-WMR> ;
-    ns3:isSubEventOf <http://ceur-ws.org/Vol-193/#conf> ;
-    ns5:beginsAtDatetime "2006-03-24T00:00:00+00:00"^^xsd:dateTime ;
-    ns5:endsAtDatetime "2006-03-24T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:license "http://choosealicense.com/licenses/no-license/" .
+<http://ceur-ws.org/Vol-193/#event> a ns5:WorkshopEvent ;
+    ns5:hasLocation <http://dbpedia.org/resource/Italy> ;
+    ns5:hasPart <http://ceur-ws.org/Vol-193/#part-WMR> ;
+    ns5:isSubEventOf <http://ceur-ws.org/Vol-193/#conf> ;
+    ns3:beginsAtDatetime "2006-03-24T00:00:00+00:00"^^xsd:dateTime ;
+    ns3:endsAtDatetime "2006-03-24T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:license "http://choosealicense.com/licenses/no-license/" .
+
+<http://ceur-ws.org/Vol-193/#part-WMR> a ns7:Workshop ;
+    ns5:partOf <http://ceur-ws.org/series/WMR> ;
+    ns2:title "Web Maintenance and Reengineering 2006" ;
+    ns7:shortTitle "WMR" ;
+    ns4:edition 1 .
 
 <http://ceur-ws.org/Vol-193/#Germany%29> a ns1:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/Germany%29> ;
+    ns6:sameAs <http://ceur-ws.org/persons/Germany%29> ;
     ns1:made <http://ceur-ws.org/Vol-193/#paperX1>,
         <http://ceur-ws.org/Vol-193/#paperX2> ;
     ns1:name "Germany)" .
 
 <http://ceur-ws.org/Vol-193/#Italy)iFilippoiRiccai> a ns1:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/Italy)iFilippoiRiccai> ;
+    ns6:sameAs <http://ceur-ws.org/persons/Italy)iFilippoiRiccai> ;
     ns1:made <http://ceur-ws.org/Vol-193/#paperX3>,
         <http://ceur-ws.org/Vol-193/#paperX5>,
         <http://ceur-ws.org/Vol-193/#paperX6> .
 
-<http://ceur-ws.org/Vol-193/#paperX1> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-193/> ;
-    ns7:title "The Core NSP Type System (" ;
-    ns2:author <http://ceur-ws.org/Vol-193/#DirkiDraheimi%28FreieiUniversit%C3%A4tiBerlin>,
+<http://ceur-ws.org/Vol-193/#paperX1> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-193/> ;
+    ns2:title "The Core NSP Type System (" ;
+    ns4:author <http://ceur-ws.org/Vol-193/#DirkiDraheimi%28FreieiUniversit%C3%A4tiBerlin>,
         <http://ceur-ws.org/Vol-193/#Germany%29> .
 
-<http://ceur-ws.org/Vol-193/#paperX2> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-193/> ;
-    ns7:title "Style-based Architectural Analysis for Migrating a Webbased Regional Trade Information System (" ;
-    ns2:author <http://ceur-ws.org/Vol-193/#Germany%29>,
+<http://ceur-ws.org/Vol-193/#paperX2> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-193/> ;
+    ns2:title "Style-based Architectural Analysis for Migrating a Webbased Regional Trade Information System (" ;
+    ns4:author <http://ceur-ws.org/Vol-193/#Germany%29>,
         <http://ceur-ws.org/Vol-193/#Germany%29iJohannesiBornholdi%28CarlivoniOssietzkyiUniversity>,
         <http://ceur-ws.org/Vol-193/#SimoniGieseckei%28CarlivoniOssietzkyiUniversity> .
 
-<http://ceur-ws.org/Vol-193/#paperX3> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-193/> ;
-    ns7:title "A framework for Web Applications Testing through Object-Oriented approach and XUnit tools (" ;
-    ns2:author <http://ceur-ws.org/Vol-193/#AlessandroiMarchettoi%28Universit%C3%A0idiiMilano>,
+<http://ceur-ws.org/Vol-193/#paperX3> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-193/> ;
+    ns2:title "A framework for Web Applications Testing through Object-Oriented approach and XUnit tools (" ;
+    ns4:author <http://ceur-ws.org/Vol-193/#AlessandroiMarchettoi%28Universit%C3%A0idiiMilano>,
         <http://ceur-ws.org/Vol-193/#Italy%29iAndreaiTrentinii%28Universit%C3%A0idiiMilano>,
         <http://ceur-ws.org/Vol-193/#Italy)iFilippoiRiccai> .
 
-<http://ceur-ws.org/Vol-193/#paperX6> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-193/> ;
-    ns7:title "User-Centred reverse engineering: Genesis-D project (" ;
-    ns2:author <http://ceur-ws.org/Vol-193/#Italy%29iRobertoiPaianoi%28Universit%C3%A0idiiLecce%29iAndreaiPandurinoi%28Universit%C3%A0idiiLecce>,
+<http://ceur-ws.org/Vol-193/#paperX6> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-193/> ;
+    ns2:title "User-Centred reverse engineering: Genesis-D project (" ;
+    ns4:author <http://ceur-ws.org/Vol-193/#Italy%29iRobertoiPaianoi%28Universit%C3%A0idiiLecce%29iAndreaiPandurinoi%28Universit%C3%A0idiiLecce>,
         <http://ceur-ws.org/Vol-193/#Italy)iFilippoiRiccai>,
         <http://ceur-ws.org/Vol-193/#LucaiMainettii%28Universit%C2%80idiiLecce> .
 
-<http://ceur-ws.org/Vol-193/#paperX4> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-193/> ;
-    ns7:title "Supporting the Evolution of Service Oriented Web Applications using Design Patterns (" ;
-    ns2:author <http://ceur-ws.org/Vol-193/#Greece%29iMichailiVaitisi%28UniversityiofitheiAegean>,
+<http://ceur-ws.org/Vol-193/#paperX4> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-193/> ;
+    ns2:title "Supporting the Evolution of Service Oriented Web Applications using Design Patterns (" ;
+    ns4:author <http://ceur-ws.org/Vol-193/#Greece%29iMichailiVaitisi%28UniversityiofitheiAegean>,
         <http://ceur-ws.org/Vol-193/#Greece%29iNikosiKarousosi%28UniversityiofiPatras>,
         <http://ceur-ws.org/Vol-193/#Greece)iMichailiVaitisi>,
         <http://ceur-ws.org/Vol-193/#ManolisiTzagarakisi%28UniversityiofiPatrasiCampus> .
 
-<http://ceur-ws.org/Vol-193/> a ns3:Proceedings ;
-    ns3:hasPart <http://ceur-ws.org/Vol-193/#paperX1>,
+<http://ceur-ws.org/Vol-193/> a ns5:Proceedings ;
+    ns5:hasPart <http://ceur-ws.org/Vol-193/#paperX1>,
         <http://ceur-ws.org/Vol-193/#paperX2>,
         <http://ceur-ws.org/Vol-193/#paperX3>,
         <http://ceur-ws.org/Vol-193/#paperX4>,
         <http://ceur-ws.org/Vol-193/#paperX5>,
         <http://ceur-ws.org/Vol-193/#paperX6> ;
-    ns8:issued "2006-07-24T00:00:00+00:00"^^xsd:dateTime ;
-    ns9:presentedAt <http://ceur-ws.org/Vol-193/#event> ;
-    ns2:editor <http://ceur-ws.org/Vol-193/#Italy)iAndreaiTrentinii> .
+    ns9:issued "2006-07-24T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:presentedAt <http://ceur-ws.org/Vol-193/#event> ;
+    ns4:editor <http://ceur-ws.org/Vol-193/#Italy)iAndreaiTrentinii> .
 
-<http://ceur-ws.org/Vol-193/#paperX5> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-193/> ;
-    ns7:title "Towards Empirical Validation of Design Notations for Web Applications: An Experimental Framework (" ;
-    ns2:author <http://ceur-ws.org/Vol-193/#Benevento>,
+<http://ceur-ws.org/Vol-193/#paperX5> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-193/> ;
+    ns2:title "Towards Empirical Validation of Design Notations for Web Applications: An Experimental Framework (" ;
+    ns4:author <http://ceur-ws.org/Vol-193/#Benevento>,
         <http://ceur-ws.org/Vol-193/#Italy%29iFilippoiRiccai%28ITCirst>,
         <http://ceur-ws.org/Vol-193/#Italy%29iMarcoiTorchianoi%28PolitecnicoidiiTorino>,
         <http://ceur-ws.org/Vol-193/#Italy%29iMassimilianoiDiiPentai%28UniversityiofiSannio>,

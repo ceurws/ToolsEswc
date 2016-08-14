@@ -1,9 +1,9 @@
-@prefix ns1: <http://xmlns.com/foaf/0.1/> .
-@prefix ns2: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns1: <http://www.w3.org/2002/07/owl#> .
+@prefix ns2: <http://xmlns.com/foaf/0.1/> .
 @prefix ns3: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns4: <http://purl.org/ontology/bibo/#> .
-@prefix ns5: <http://www.w3.org/2002/07/owl#> .
-@prefix ns6: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns4: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns5: <http://purl.org/ontology/bibo/#> .
+@prefix ns6: <http://swrc.ontoware.org/ontology/#> .
 @prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
 @prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix ns9: <http://purl.org/dc/elements/1.1/> .
@@ -12,30 +12,30 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-265/#AxeliPolleres> a ns1:Person ;
-    ns2:affiliation "DERI, National University of Ireland, Galway" ;
-    ns5:sameAs <http://ceur-ws.org/persons/AxeliPolleres> ;
-    ns1:name "Axel Polleres" .
+<http://ceur-ws.org/Vol-265/#AxeliPolleres> a ns2:Person ;
+    ns6:affiliation "DERI, National University of Ireland, Galway" ;
+    ns1:sameAs <http://ceur-ws.org/persons/AxeliPolleres> ;
+    ns2:name "Axel Polleres" .
 
-<http://ceur-ws.org/Vol-265/#JoohyungiLee> a ns1:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/JoohyungiLee> ;
-    ns1:made <http://ceur-ws.org/Vol-265/#CENT2007-paper2> ;
-    ns1:name "Joohyung Lee" .
+<http://ceur-ws.org/Vol-265/#JoohyungiLee> a ns2:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/JoohyungiLee> ;
+    ns2:made <http://ceur-ws.org/Vol-265/#CENT2007-paper2> ;
+    ns2:name "Joohyung Lee" .
 
-<http://ceur-ws.org/Vol-265/#MartiniGebser> a ns1:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/MartiniGebser> ;
-    ns1:made <http://ceur-ws.org/Vol-265/#CENT2007-paper5> ;
-    ns1:name "Martin Gebser" .
+<http://ceur-ws.org/Vol-265/#MartiniGebser> a ns2:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/MartiniGebser> ;
+    ns2:made <http://ceur-ws.org/Vol-265/#CENT2007-paper5> ;
+    ns2:name "Martin Gebser" .
 
-<http://ceur-ws.org/Vol-265/#RaviiPalla.> a ns1:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/RaviiPalla.> ;
-    ns1:made <http://ceur-ws.org/Vol-265/#CENT2007-paper2> ;
-    ns1:name "Ravi Palla." .
+<http://ceur-ws.org/Vol-265/#RaviiPalla.> a ns2:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/RaviiPalla.> ;
+    ns2:made <http://ceur-ws.org/Vol-265/#CENT2007-paper2> ;
+    ns2:name "Ravi Palla." .
 
-<http://ceur-ws.org/Vol-265/#TorsteniSchaub> a ns1:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/TorsteniSchaub> ;
-    ns1:made <http://ceur-ws.org/Vol-265/#CENT2007-paper5> ;
-    ns1:name "Torsten Schaub" .
+<http://ceur-ws.org/Vol-265/#TorsteniSchaub> a ns2:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/TorsteniSchaub> ;
+    ns2:made <http://ceur-ws.org/Vol-265/#CENT2007-paper5> ;
+    ns2:name "Torsten Schaub" .
 
 <http://ceur-ws.org/Vol-265/#event> a ns3:WorkshopEvent ;
     ns3:hasLocation <http://dbpedia.org/resource/United_States> ;
@@ -45,58 +45,64 @@
     ns7:endsAtDatetime "2007-05-14T00:00:00+00:00"^^xsd:dateTime ;
     ns9:license "http://choosealicense.com/licenses/no-license/" .
 
-<http://ceur-ws.org/Vol-265/#Agust%C3%ADniValverde> a ns1:Person ;
-    ns4:place <http://dbpedia.org/resource/Spain> ;
-    ns2:affiliation "Universidad de Málaga" ;
-    ns5:sameAs <http://ceur-ws.org/persons/Agust%C3%ADniValverde> ;
-    ns1:made <http://ceur-ws.org/Vol-265/#CENT2007-paper7> ;
-    ns1:name "Agustín Valverde" .
+<http://ceur-ws.org/Vol-265/#part-CENT> a ns5:Workshop ;
+    ns3:partOf <http://ceur-ws.org/series/CENT> ;
+    ns4:title "Correspondence and Equivalence for Nonmonotonic Theories 2007" ;
+    ns5:shortTitle "CENT" ;
+    ns6:edition 1 .
+
+<http://ceur-ws.org/Vol-265/#Agust%C3%ADniValverde> a ns2:Person ;
+    ns5:place <http://dbpedia.org/resource/Spain> ;
+    ns6:affiliation "Universidad de Málaga" ;
+    ns1:sameAs <http://ceur-ws.org/persons/Agust%C3%ADniValverde> ;
+    ns2:made <http://ceur-ws.org/Vol-265/#CENT2007-paper7> ;
+    ns2:name "Agustín Valverde" .
 
 <http://ceur-ws.org/Vol-265/#CENT2007-paper3> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-265/> ;
-    ns6:title "A Common View on Strong, Uniform, and Other Notions of Equivalence in Answer-Set Programming" ;
-    ns2:author <http://ceur-ws.org/Vol-265/#StefaniWoltran> .
+    ns4:title "A Common View on Strong, Uniform, and Other Notions of Equivalence in Answer-Set Programming" ;
+    ns6:author <http://ceur-ws.org/Vol-265/#StefaniWoltran> .
 
-<http://ceur-ws.org/Vol-265/#HansiTompits> a ns1:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/HansiTompits> ;
-    ns1:made <http://ceur-ws.org/Vol-265/#CENT2007-paper5>,
+<http://ceur-ws.org/Vol-265/#HansiTompits> a ns2:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/HansiTompits> ;
+    ns2:made <http://ceur-ws.org/Vol-265/#CENT2007-paper5>,
         <http://ceur-ws.org/Vol-265/#CENT2007-paper6> ;
-    ns1:name "Hans Tompits" .
+    ns2:name "Hans Tompits" .
 
 <http://ceur-ws.org/Vol-265/#CENT2007-paper2> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-265/> ;
-    ns6:title "Yet Another Proof of the Strong Equivalence Between Propositional Theories and Logic Programs" ;
-    ns2:author <http://ceur-ws.org/Vol-265/#JoohyungiLee>,
+    ns4:title "Yet Another Proof of the Strong Equivalence Between Propositional Theories and Logic Programs" ;
+    ns6:author <http://ceur-ws.org/Vol-265/#JoohyungiLee>,
         <http://ceur-ws.org/Vol-265/#RaviiPalla.> .
 
 <http://ceur-ws.org/Vol-265/#CENT2007-paper7> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-265/> ;
-    ns6:title "Interpretability and Equivalence in Quantified Equilibrium Logic" ;
-    ns2:author <http://ceur-ws.org/Vol-265/#Agust%C3%ADniValverde>,
+    ns4:title "Interpretability and Equivalence in Quantified Equilibrium Logic" ;
+    ns6:author <http://ceur-ws.org/Vol-265/#Agust%C3%ADniValverde>,
         <http://ceur-ws.org/Vol-265/#DavidiPearce> .
 
-<http://ceur-ws.org/Vol-265/#DavidiPearce> a ns1:Person ;
-    ns2:affiliation "Universidad Rey Juan Carlos, Madrid" ;
-    ns5:sameAs <http://ceur-ws.org/persons/DavidiPearce> ;
-    ns1:made <http://ceur-ws.org/Vol-265/#CENT2007-paper6>,
+<http://ceur-ws.org/Vol-265/#DavidiPearce> a ns2:Person ;
+    ns6:affiliation "Universidad Rey Juan Carlos, Madrid" ;
+    ns1:sameAs <http://ceur-ws.org/persons/DavidiPearce> ;
+    ns2:made <http://ceur-ws.org/Vol-265/#CENT2007-paper6>,
         <http://ceur-ws.org/Vol-265/#CENT2007-paper7> ;
-    ns1:name "David Pearce" .
+    ns2:name "David Pearce" .
 
 <http://ceur-ws.org/Vol-265/#CENT2007-paper6> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-265/> ;
-    ns6:title "Relativised Equivalence in Equilibrium Logic and its Applications to Prediction and Explanation: Preliminary Report" ;
-    ns2:author <http://ceur-ws.org/Vol-265/#DavidiPearce>,
+    ns4:title "Relativised Equivalence in Equilibrium Logic and its Applications to Prediction and Explanation: Preliminary Report" ;
+    ns6:author <http://ceur-ws.org/Vol-265/#DavidiPearce>,
         <http://ceur-ws.org/Vol-265/#HansiTompits>,
         <http://ceur-ws.org/Vol-265/#StefaniWoltran> .
 
-<http://ceur-ws.org/Vol-265/#StefaniWoltran> a ns1:Person ;
-    ns4:place <http://dbpedia.org/resource/Austria> ;
-    ns2:affiliation "Vienna University of Technology" ;
-    ns5:sameAs <http://ceur-ws.org/persons/StefaniWoltran> ;
-    ns1:made <http://ceur-ws.org/Vol-265/#CENT2007-paper3>,
+<http://ceur-ws.org/Vol-265/#StefaniWoltran> a ns2:Person ;
+    ns5:place <http://dbpedia.org/resource/Austria> ;
+    ns6:affiliation "Vienna University of Technology" ;
+    ns1:sameAs <http://ceur-ws.org/persons/StefaniWoltran> ;
+    ns2:made <http://ceur-ws.org/Vol-265/#CENT2007-paper3>,
         <http://ceur-ws.org/Vol-265/#CENT2007-paper5>,
         <http://ceur-ws.org/Vol-265/#CENT2007-paper6> ;
-    ns1:name "Stefan Woltran" .
+    ns2:name "Stefan Woltran" .
 
 <http://ceur-ws.org/Vol-265/> a ns3:Proceedings ;
     ns3:hasPart <http://ceur-ws.org/Vol-265/#CENT2007-paper2>,
@@ -105,16 +111,16 @@
         <http://ceur-ws.org/Vol-265/#CENT2007-paper6>,
         <http://ceur-ws.org/Vol-265/#CENT2007-paper7> ;
     ns8:issued "2007-08-14T00:00:00+00:00"^^xsd:dateTime ;
-    ns4:presentedAt <http://ceur-ws.org/Vol-265/#event> ;
-    ns2:editor <http://ceur-ws.org/Vol-265/#Agust%C3%ADniValverde>,
+    ns5:presentedAt <http://ceur-ws.org/Vol-265/#event> ;
+    ns6:editor <http://ceur-ws.org/Vol-265/#Agust%C3%ADniValverde>,
         <http://ceur-ws.org/Vol-265/#AxeliPolleres>,
         <http://ceur-ws.org/Vol-265/#DavidiPearce>,
         <http://ceur-ws.org/Vol-265/#StefaniWoltran> .
 
 <http://ceur-ws.org/Vol-265/#CENT2007-paper5> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-265/> ;
-    ns6:title "Alternative Characterizations for Program Equivalence under Answer-Set Semantics: Preliminary Report" ;
-    ns2:author <http://ceur-ws.org/Vol-265/#HansiTompits>,
+    ns4:title "Alternative Characterizations for Program Equivalence under Answer-Set Semantics: Preliminary Report" ;
+    ns6:author <http://ceur-ws.org/Vol-265/#HansiTompits>,
         <http://ceur-ws.org/Vol-265/#MartiniGebser>,
         <http://ceur-ws.org/Vol-265/#StefaniWoltran>,
         <http://ceur-ws.org/Vol-265/#TorsteniSchaub> .

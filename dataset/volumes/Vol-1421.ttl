@@ -5,8 +5,8 @@
 @prefix ns5: <http://data.semanticweb.org/ns/swc/ontology/#> .
 @prefix ns6: <http://purl.org/dc/elements/1.1/#> .
 @prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns9: <http://purl.org/dc/elements/1.1/> .
+@prefix ns8: <http://purl.org/dc/elements/1.1/> .
+@prefix ns9: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -78,7 +78,13 @@
     ns5:isSubEventOf <http://ceur-ws.org/Vol-1421/#conf> ;
     ns7:beginsAtDatetime "2016-08-09T00:00:00+00:00"^^xsd:dateTime ;
     ns7:endsAtDatetime "2016-08-09T00:00:00+00:00"^^xsd:dateTime ;
-    ns9:license "http://creativecommons.org/publicdomain/zero/1.0/" .
+    ns8:license "http://creativecommons.org/publicdomain/zero/1.0/" .
+
+<http://ceur-ws.org/Vol-1421/#part-SPS> a ns3:Workshop ;
+    ns5:partOf <http://ceur-ws.org/series/SPS> ;
+    ns6:title "Social Personalisation & Search 2015" ;
+    ns3:shortTitle "SPS" ;
+    ns1:edition 1 .
 
 <http://ceur-ws.org/Vol-1421/#ChristophiTrattner> a ns4:Person ;
     ns1:affiliation "" ;
@@ -217,7 +223,7 @@
         <http://ceur-ws.org/Vol-1421/#preface> ;
     ns5:hasSession <http://ceur-ws.org/Vol-1421/#InvitedTalks>,
         <http://ceur-ws.org/Vol-1421/#Presentations> ;
-    ns8:issued "2015-08-20T00:00:00+00:00"^^xsd:dateTime ;
+    ns9:issued "2015-08-20T00:00:00+00:00"^^xsd:dateTime ;
     ns3:presentedAt <http://ceur-ws.org/Vol-1421/#event> ;
     ns1:editor <http://ceur-ws.org/Vol-1421/#ChristophiTrattner>,
         <http://ceur-ws.org/Vol-1421/#DenisiParra>,

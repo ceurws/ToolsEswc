@@ -1,11 +1,11 @@
-@prefix ns1: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns2: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns1: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns2: <http://purl.org/ontology/bibo/#> .
 @prefix ns3: <http://xmlns.com/foaf/0.1/> .
-@prefix ns4: <http://purl.org/ontology/bibo/#> .
+@prefix ns4: <http://swrc.ontoware.org/ontology/#> .
 @prefix ns5: <http://www.w3.org/2002/07/owl#> .
 @prefix ns6: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -82,7 +82,7 @@
     ns3:name "Daniele Francesco Santamaria" .
 
 <http://ceur-ws.org/Vol-1459/#DavideiAncona> a ns3:Person ;
-    ns1:affiliation "" ;
+    ns4:affiliation "" ;
     ns5:sameAs <http://ceur-ws.org/persons/DavideiAncona> ;
     ns3:name "Davide Ancona" .
 
@@ -212,7 +212,7 @@
     ns3:name "Luca Vallata" .
 
 <http://ceur-ws.org/Vol-1459/#MarcoiMaratea> a ns3:Person ;
-    ns1:affiliation "" ;
+    ns4:affiliation "" ;
     ns5:sameAs <http://ceur-ws.org/persons/MarcoiMaratea> ;
     ns3:name "Marco Maratea" .
 
@@ -341,20 +341,26 @@
     ns3:made <http://ceur-ws.org/Vol-1459/#paper20> ;
     ns3:name "Vadim Malvone" .
 
-<http://ceur-ws.org/Vol-1459/#event> a ns2:WorkshopEvent ;
-    ns2:hasLocation <http://dbpedia.org/resource/Italy> ;
-    ns2:hasPart <http://ceur-ws.org/Vol-1459/#part-CILC> ;
-    ns2:isSubEventOf <http://ceur-ws.org/Vol-1459/#conf> ;
-    ns8:beginsAtDatetime "2015-07-01T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:endsAtDatetime "2015-07-03T00:00:00+00:00"^^xsd:dateTime ;
+<http://ceur-ws.org/Vol-1459/#event> a ns1:WorkshopEvent ;
+    ns1:hasLocation <http://dbpedia.org/resource/Italy> ;
+    ns1:hasPart <http://ceur-ws.org/Vol-1459/#part-CILC> ;
+    ns1:isSubEventOf <http://ceur-ws.org/Vol-1459/#conf> ;
+    ns7:beginsAtDatetime "2015-07-01T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:endsAtDatetime "2015-07-03T00:00:00+00:00"^^xsd:dateTime ;
     rdfs:seeAlso <http://ceur-ws.org/Vol-1068/#event>,
         <http://ceur-ws.org/Vol-1195/#event>,
         <http://ceur-ws.org/Vol-598/#event>,
         <http://ceur-ws.org/Vol-810/#event>,
         <http://ceur-ws.org/Vol-857/#event> .
 
-<http://ceur-ws.org/Vol-1459/#Abstractoftheinvitedtalk> a ns2:SessionEvent ;
-    ns2:partOf <http://ceur-ws.org/Vol-1459/> ;
+<http://ceur-ws.org/Vol-1459/#part-CILC> a ns2:Workshop ;
+    ns1:partOf <http://ceur-ws.org/series/CILC> ;
+    ns6:title "Italian Conference on Computational Logic 2015" ;
+    ns2:shortTitle "CILC" ;
+    ns4:edition 30 .
+
+<http://ceur-ws.org/Vol-1459/#Abstractoftheinvitedtalk> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-1459/> ;
     ns6:title "Abstract of the invited talk" .
 
 <http://ceur-ws.org/Vol-1459/#AndreaiCorradi> a ns3:Person ;
@@ -393,276 +399,276 @@
         <http://ceur-ws.org/Vol-1459/#paper8> ;
     ns3:name "Marco Gavanelli" .
 
-<http://ceur-ws.org/Vol-1459/#invitedTalk> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1459/> ;
+<http://ceur-ws.org/Vol-1459/#invitedTalk> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1459/> ;
     ns6:title "A framework for data, knowledge, and reasoning: Datalog +/-" ;
-    ns4:endPage 1 ;
-    ns4:numPages 1 ;
-    ns4:section <http://ceur-ws.org/Vol-1459/#Abstractoftheinvitedtalk> ;
-    ns4:startPage 1 ;
-    ns1:author <http://ceur-ws.org/Vol-1459/#GeorgiGottlob> .
+    ns2:endPage 1 ;
+    ns2:numPages 1 ;
+    ns2:section <http://ceur-ws.org/Vol-1459/#Abstractoftheinvitedtalk> ;
+    ns2:startPage 1 ;
+    ns4:author <http://ceur-ws.org/Vol-1459/#GeorgiGottlob> .
 
-<http://ceur-ws.org/Vol-1459/#paper18> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1459/> ;
+<http://ceur-ws.org/Vol-1459/#paper18> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1459/> ;
     ns6:title "Preferential description logics meet sports entertainment: cardinality restrictions and perfect extensions for a better royal rumble match" ;
-    ns4:endPage 174 ;
-    ns4:numPages 16 ;
-    ns4:section <http://ceur-ws.org/Vol-1459/#Descriptionlogicsandontologies> ;
-    ns4:startPage 159 ;
-    ns1:author <http://ceur-ws.org/Vol-1459/#GianiLucaiPozzato> .
+    ns2:endPage 174 ;
+    ns2:numPages 16 ;
+    ns2:section <http://ceur-ws.org/Vol-1459/#Descriptionlogicsandontologies> ;
+    ns2:startPage 159 ;
+    ns4:author <http://ceur-ws.org/Vol-1459/#GianiLucaiPozzato> .
 
-<http://ceur-ws.org/Vol-1459/#paper26> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1459/> ;
+<http://ceur-ws.org/Vol-1459/#paper26> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1459/> ;
     ns6:title "Parametric protocol-driven agents and their integration in JADE" ;
-    ns4:endPage 84 ;
-    ns4:numPages 13 ;
-    ns4:section <http://ceur-ws.org/Vol-1459/#Agentsandmultiagentsystems> ;
-    ns4:startPage 72 ;
-    ns1:author <http://ceur-ws.org/Vol-1459/#AngeloiFerrando> .
+    ns2:endPage 84 ;
+    ns2:numPages 13 ;
+    ns2:section <http://ceur-ws.org/Vol-1459/#Agentsandmultiagentsystems> ;
+    ns2:startPage 72 ;
+    ns4:author <http://ceur-ws.org/Vol-1459/#AngeloiFerrando> .
 
-<http://ceur-ws.org/Vol-1459/#paperX1> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1459/> ;
+<http://ceur-ws.org/Vol-1459/#paperX1> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1459/> ;
     ns6:title "The whole proceedings (including the preface and the table of contents) can be downloaded as a" ;
-    ns4:section <http://ceur-ws.org/Vol-1459/#Applicationsframeworksandtools> ;
-    ns1:author <http://ceur-ws.org/Vol-1459/#VivianaiMascardi> .
+    ns2:section <http://ceur-ws.org/Vol-1459/#Applicationsframeworksandtools> ;
+    ns4:author <http://ceur-ws.org/Vol-1459/#VivianaiMascardi> .
 
-<http://ceur-ws.org/Vol-1459/#Agentsandmultiagentsystems> a ns2:SessionEvent ;
-    ns2:partOf <http://ceur-ws.org/Vol-1459/> ;
+<http://ceur-ws.org/Vol-1459/#Agentsandmultiagentsystems> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-1459/> ;
     ns6:title "Agents and multiagent systems" .
 
-<http://ceur-ws.org/Vol-1459/#Languagesandprogramming> a ns2:SessionEvent ;
-    ns2:partOf <http://ceur-ws.org/Vol-1459/> ;
+<http://ceur-ws.org/Vol-1459/#Languagesandprogramming> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-1459/> ;
     ns6:title "Languages and programming" .
 
 <http://ceur-ws.org/Vol-1459/#VivianaiMascardi> a ns3:Person ;
-    ns1:affiliation "" ;
+    ns4:affiliation "" ;
     ns5:sameAs <http://ceur-ws.org/persons/VivianaiMascardi> ;
     ns3:made <http://ceur-ws.org/Vol-1459/#paper10>,
         <http://ceur-ws.org/Vol-1459/#paperX1> ;
     ns3:name "Viviana Mascardi" .
 
-<http://ceur-ws.org/Vol-1459/#paper12> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1459/> ;
+<http://ceur-ws.org/Vol-1459/#paper12> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1459/> ;
     ns6:title "Infinite derivations as failures" ;
-    ns4:endPage 24 ;
-    ns4:numPages 6 ;
-    ns4:section <http://ceur-ws.org/Vol-1459/#Foundationsandtheoreticalresults> ;
-    ns4:startPage 19 ;
-    ns1:author <http://ceur-ws.org/Vol-1459/#AndreaiCorradi>,
+    ns2:endPage 24 ;
+    ns2:numPages 6 ;
+    ns2:section <http://ceur-ws.org/Vol-1459/#Foundationsandtheoreticalresults> ;
+    ns2:startPage 19 ;
+    ns4:author <http://ceur-ws.org/Vol-1459/#AndreaiCorradi>,
         <http://ceur-ws.org/Vol-1459/#FedericoiFrassetto> .
 
-<http://ceur-ws.org/Vol-1459/#paper14> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1459/> ;
+<http://ceur-ws.org/Vol-1459/#paper14> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1459/> ;
     ns6:title "A natural sequent calculus for Lewis' logic of counterfactuals" ;
-    ns4:endPage 18 ;
-    ns4:numPages 6 ;
-    ns4:section <http://ceur-ws.org/Vol-1459/#Foundationsandtheoreticalresults> ;
-    ns4:startPage 13 ;
-    ns1:author <http://ceur-ws.org/Vol-1459/#GianiLucaiPozzato>,
+    ns2:endPage 18 ;
+    ns2:numPages 6 ;
+    ns2:section <http://ceur-ws.org/Vol-1459/#Foundationsandtheoreticalresults> ;
+    ns2:startPage 13 ;
+    ns4:author <http://ceur-ws.org/Vol-1459/#GianiLucaiPozzato>,
         <http://ceur-ws.org/Vol-1459/#NicolaiOlivetti> .
 
-<http://ceur-ws.org/Vol-1459/#paper19> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1459/> ;
+<http://ceur-ws.org/Vol-1459/#paper19> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1459/> ;
     ns6:title "Towards fuzzy granulation in OWL ontologies" ;
-    ns4:endPage 158 ;
-    ns4:numPages 15 ;
-    ns4:section <http://ceur-ws.org/Vol-1459/#Descriptionlogicsandontologies> ;
-    ns4:startPage 144 ;
-    ns1:author <http://ceur-ws.org/Vol-1459/#CorradoiMencar>,
+    ns2:endPage 158 ;
+    ns2:numPages 15 ;
+    ns2:section <http://ceur-ws.org/Vol-1459/#Descriptionlogicsandontologies> ;
+    ns2:startPage 144 ;
+    ns4:author <http://ceur-ws.org/Vol-1459/#CorradoiMencar>,
         <http://ceur-ws.org/Vol-1459/#FrancescaiAlessandraiLisi> .
 
-<http://ceur-ws.org/Vol-1459/#paper24> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1459/> ;
+<http://ceur-ws.org/Vol-1459/#paper24> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1459/> ;
     ns6:title "On the first-order rewritability of conjunctive queries over binary guarded existential rules" ;
-    ns4:endPage 30 ;
-    ns4:numPages 6 ;
-    ns4:section <http://ceur-ws.org/Vol-1459/#Foundationsandtheoreticalresults> ;
-    ns4:startPage 25 ;
-    ns1:author <http://ceur-ws.org/Vol-1459/#CristinaiCivili>,
+    ns2:endPage 30 ;
+    ns2:numPages 6 ;
+    ns2:section <http://ceur-ws.org/Vol-1459/#Foundationsandtheoreticalresults> ;
+    ns2:startPage 25 ;
+    ns4:author <http://ceur-ws.org/Vol-1459/#CristinaiCivili>,
         <http://ceur-ws.org/Vol-1459/#RiccardoiRosati> .
 
-<http://ceur-ws.org/Vol-1459/#paper31> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1459/> ;
+<http://ceur-ws.org/Vol-1459/#paper31> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1459/> ;
     ns6:title "A Diophantine representation of Wolstenholme's pseudoprimality" ;
-    ns4:endPage 12 ;
-    ns4:numPages 11 ;
-    ns4:section <http://ceur-ws.org/Vol-1459/#Foundationsandtheoreticalresults> ;
-    ns4:startPage 2 ;
-    ns1:author <http://ceur-ws.org/Vol-1459/#EugenioiOmodeo>,
+    ns2:endPage 12 ;
+    ns2:numPages 11 ;
+    ns2:section <http://ceur-ws.org/Vol-1459/#Foundationsandtheoreticalresults> ;
+    ns2:startPage 2 ;
+    ns4:author <http://ceur-ws.org/Vol-1459/#EugenioiOmodeo>,
         <http://ceur-ws.org/Vol-1459/#LucaiVallata> .
 
-<http://ceur-ws.org/Vol-1459/#paper13> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1459/> ;
+<http://ceur-ws.org/Vol-1459/#paper13> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1459/> ;
     ns6:title "Towards a tableau-based procedure for PLTL based on a multi-conclusion rule and logical optimizations" ;
-    ns4:endPage 121 ;
-    ns4:numPages 5 ;
-    ns4:section <http://ceur-ws.org/Vol-1459/#Languagesandprogramming> ;
-    ns4:startPage 117 ;
-    ns1:author <http://ceur-ws.org/Vol-1459/#CamilloiFiorentini>,
+    ns2:endPage 121 ;
+    ns2:numPages 5 ;
+    ns2:section <http://ceur-ws.org/Vol-1459/#Languagesandprogramming> ;
+    ns2:startPage 117 ;
+    ns4:author <http://ceur-ws.org/Vol-1459/#CamilloiFiorentini>,
         <http://ceur-ws.org/Vol-1459/#GuidoiFiorino>,
         <http://ceur-ws.org/Vol-1459/#MauroiFerrari> .
 
-<http://ceur-ws.org/Vol-1459/#paper20> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1459/> ;
+<http://ceur-ws.org/Vol-1459/#paper20> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1459/> ;
     ns6:title "Games with additional winning strategies" ;
-    ns4:endPage 180 ;
-    ns4:numPages 6 ;
-    ns4:section <http://ceur-ws.org/Vol-1459/#Applicationsframeworksandtools> ;
-    ns4:startPage 175 ;
-    ns1:author <http://ceur-ws.org/Vol-1459/#AnielloiMurano>,
+    ns2:endPage 180 ;
+    ns2:numPages 6 ;
+    ns2:section <http://ceur-ws.org/Vol-1459/#Applicationsframeworksandtools> ;
+    ns2:startPage 175 ;
+    ns4:author <http://ceur-ws.org/Vol-1459/#AnielloiMurano>,
         <http://ceur-ws.org/Vol-1459/#LoredanaiSorrentino>,
         <http://ceur-ws.org/Vol-1459/#VadimiMalvone> .
 
-<http://ceur-ws.org/Vol-1459/#paper29> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1459/> ;
+<http://ceur-ws.org/Vol-1459/#paper29> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1459/> ;
     ns6:title "How Answer Set Programming can help in digital forensic investigation" ;
-    ns4:endPage 65 ;
-    ns4:numPages 13 ;
-    ns4:section <http://ceur-ws.org/Vol-1459/#Practicalexperiencesandcasestudies> ;
-    ns4:startPage 53 ;
-    ns1:author <http://ceur-ws.org/Vol-1459/#GiovanniiDeiGasperis>,
+    ns2:endPage 65 ;
+    ns2:numPages 13 ;
+    ns2:section <http://ceur-ws.org/Vol-1459/#Practicalexperiencesandcasestudies> ;
+    ns2:startPage 53 ;
+    ns4:author <http://ceur-ws.org/Vol-1459/#GiovanniiDeiGasperis>,
         <http://ceur-ws.org/Vol-1459/#RaffaeleiOlivieri>,
         <http://ceur-ws.org/Vol-1459/#StefaniaiCostantini> .
 
-<http://ceur-ws.org/Vol-1459/#paper7> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1459/> ;
+<http://ceur-ws.org/Vol-1459/#paper7> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1459/> ;
     ns6:title "An authority degree-based evaluation strategy for abstract argumentation frameworks" ;
-    ns4:endPage 196 ;
-    ns4:numPages 16 ;
-    ns4:section <http://ceur-ws.org/Vol-1459/#Applicationsframeworksandtools> ;
-    ns4:startPage 181 ;
-    ns1:author <http://ceur-ws.org/Vol-1459/#AndreaiPazienza>,
+    ns2:endPage 196 ;
+    ns2:numPages 16 ;
+    ns2:section <http://ceur-ws.org/Vol-1459/#Applicationsframeworksandtools> ;
+    ns2:startPage 181 ;
+    ns4:author <http://ceur-ws.org/Vol-1459/#AndreaiPazienza>,
         <http://ceur-ws.org/Vol-1459/#FlorianaiEsposito>,
         <http://ceur-ws.org/Vol-1459/#StefanoiFerilli> .
 
-<http://ceur-ws.org/Vol-1459/#Descriptionlogicsandontologies> a ns2:SessionEvent ;
-    ns2:partOf <http://ceur-ws.org/Vol-1459/> ;
+<http://ceur-ws.org/Vol-1459/#Descriptionlogicsandontologies> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-1459/> ;
     ns6:title "Description logics and ontologies" .
 
-<http://ceur-ws.org/Vol-1459/#Foundationsandtheoreticalresults> a ns2:SessionEvent ;
-    ns2:partOf <http://ceur-ws.org/Vol-1459/> ;
+<http://ceur-ws.org/Vol-1459/#Foundationsandtheoreticalresults> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-1459/> ;
     ns6:title "Foundations and theoretical results" .
 
-<http://ceur-ws.org/Vol-1459/#Practicalexperiencesandcasestudies> a ns2:SessionEvent ;
-    ns2:partOf <http://ceur-ws.org/Vol-1459/> ;
+<http://ceur-ws.org/Vol-1459/#Practicalexperiencesandcasestudies> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-1459/> ;
     ns6:title "Practical experiences and case studies" .
 
-<http://ceur-ws.org/Vol-1459/#paper17> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1459/> ;
+<http://ceur-ws.org/Vol-1459/#paper17> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1459/> ;
     ns6:title "Leveraging commitments and goals in agent interaction" ;
-    ns4:endPage 100 ;
-    ns4:numPages 16 ;
-    ns4:section <http://ceur-ws.org/Vol-1459/#Agentsandmultiagentsystems> ;
-    ns4:startPage 85 ;
-    ns1:author <http://ceur-ws.org/Vol-1459/#CristinaiBaroglio>,
+    ns2:endPage 100 ;
+    ns2:numPages 16 ;
+    ns2:section <http://ceur-ws.org/Vol-1459/#Agentsandmultiagentsystems> ;
+    ns2:startPage 85 ;
+    ns4:author <http://ceur-ws.org/Vol-1459/#CristinaiBaroglio>,
         <http://ceur-ws.org/Vol-1459/#FedericoiCapuzzimati>,
         <http://ceur-ws.org/Vol-1459/#MatteoiBaldoni>,
         <http://ceur-ws.org/Vol-1459/#RobertoiMicalizio> .
 
-<http://ceur-ws.org/Vol-1459/#paper28> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1459/> ;
+<http://ceur-ws.org/Vol-1459/#paper28> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1459/> ;
     ns6:title "Towards visualising security with arguments" ;
-    ns4:endPage 201 ;
-    ns4:numPages 5 ;
-    ns4:section <http://ceur-ws.org/Vol-1459/#Applicationsframeworksandtools> ;
-    ns4:startPage 197 ;
-    ns1:author <http://ceur-ws.org/Vol-1459/#CarloiTaticchi>,
+    ns2:endPage 201 ;
+    ns2:numPages 5 ;
+    ns2:section <http://ceur-ws.org/Vol-1459/#Applicationsframeworksandtools> ;
+    ns2:startPage 197 ;
+    ns4:author <http://ceur-ws.org/Vol-1459/#CarloiTaticchi>,
         <http://ceur-ws.org/Vol-1459/#FabioiRossi>,
         <http://ceur-ws.org/Vol-1459/#FrancescoiSantini>,
         <http://ceur-ws.org/Vol-1459/#StefanoiBistarelli> .
 
-<http://ceur-ws.org/Vol-1459/#paper5> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1459/> ;
+<http://ceur-ws.org/Vol-1459/#paper5> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1459/> ;
     ns6:title "Ontoceramic: an OWL ontology for ceramics classification" ;
-    ns4:endPage 127 ;
-    ns4:numPages 6 ;
-    ns4:section <http://ceur-ws.org/Vol-1459/#Descriptionlogicsandontologies> ;
-    ns4:startPage 122 ;
-    ns1:author <http://ceur-ws.org/Vol-1459/#DanieleiFrancescoiSantamaria>,
+    ns2:endPage 127 ;
+    ns2:numPages 6 ;
+    ns2:section <http://ceur-ws.org/Vol-1459/#Descriptionlogicsandontologies> ;
+    ns2:startPage 122 ;
+    ns4:author <http://ceur-ws.org/Vol-1459/#DanieleiFrancescoiSantamaria>,
         <http://ceur-ws.org/Vol-1459/#DomenicoiCantone>,
         <http://ceur-ws.org/Vol-1459/#FrancescaiTrapani>,
         <http://ceur-ws.org/Vol-1459/#MariannaiNicolosi-Asmundo> .
 
-<http://ceur-ws.org/Vol-1459/#Applicationsframeworksandtools> a ns2:SessionEvent ;
-    ns2:partOf <http://ceur-ws.org/Vol-1459/> ;
+<http://ceur-ws.org/Vol-1459/#Applicationsframeworksandtools> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-1459/> ;
     ns6:title "Applications, frameworks and tools" .
 
-<http://ceur-ws.org/Vol-1459/#paper3> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1459/> ;
+<http://ceur-ws.org/Vol-1459/#paper3> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1459/> ;
     ns6:title "SUNNY for algorithm selection: a preliminary study" ;
-    ns4:endPage 206 ;
-    ns4:numPages 5 ;
-    ns4:section <http://ceur-ws.org/Vol-1459/#Applicationsframeworksandtools> ;
-    ns4:startPage 202 ;
-    ns1:author <http://ceur-ws.org/Vol-1459/#FabioiBiselli>,
+    ns2:endPage 206 ;
+    ns2:numPages 5 ;
+    ns2:section <http://ceur-ws.org/Vol-1459/#Applicationsframeworksandtools> ;
+    ns2:startPage 202 ;
+    ns4:author <http://ceur-ws.org/Vol-1459/#FabioiBiselli>,
         <http://ceur-ws.org/Vol-1459/#JacopoiMauro>,
         <http://ceur-ws.org/Vol-1459/#MaurizioiGabbrielli>,
         <http://ceur-ws.org/Vol-1459/#RobertoiAmadini>,
         <http://ceur-ws.org/Vol-1459/#TongiLiu> .
 
-<http://ceur-ws.org/Vol-1459/#paper8> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1459/> ;
+<http://ceur-ws.org/Vol-1459/#paper8> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1459/> ;
     ns6:title "Evaluating compliance: from LTL to abductive logic programming" ;
-    ns4:endPage 116 ;
-    ns4:numPages 16 ;
-    ns4:section <http://ceur-ws.org/Vol-1459/#Languagesandprogramming> ;
-    ns4:startPage 101 ;
-    ns1:author <http://ceur-ws.org/Vol-1459/#EvelinaiLamma>,
+    ns2:endPage 116 ;
+    ns2:numPages 16 ;
+    ns2:section <http://ceur-ws.org/Vol-1459/#Languagesandprogramming> ;
+    ns2:startPage 101 ;
+    ns4:author <http://ceur-ws.org/Vol-1459/#EvelinaiLamma>,
         <http://ceur-ws.org/Vol-1459/#FedericoiChesani>,
         <http://ceur-ws.org/Vol-1459/#MarcoiGavanelli>,
         <http://ceur-ws.org/Vol-1459/#MarcoiMontali>,
         <http://ceur-ws.org/Vol-1459/#PaolaiMello> .
 
-<http://ceur-ws.org/Vol-1459/#paper15> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1459/> ;
+<http://ceur-ws.org/Vol-1459/#paper15> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1459/> ;
     ns6:title "Leveraging semantic web technologies for analysis of crime in social science" ;
-    ns4:endPage 71 ;
-    ns4:numPages 6 ;
-    ns4:section <http://ceur-ws.org/Vol-1459/#Practicalexperiencesandcasestudies> ;
-    ns4:startPage 66 ;
-    ns1:author <http://ceur-ws.org/Vol-1459/#AntoniettaiMazzette>,
+    ns2:endPage 71 ;
+    ns2:numPages 6 ;
+    ns2:section <http://ceur-ws.org/Vol-1459/#Practicalexperiencesandcasestudies> ;
+    ns2:startPage 66 ;
+    ns4:author <http://ceur-ws.org/Vol-1459/#AntoniettaiMazzette>,
         <http://ceur-ws.org/Vol-1459/#CamilloiTidore>,
         <http://ceur-ws.org/Vol-1459/#ElenaiPiga>,
         <http://ceur-ws.org/Vol-1459/#LauraiPandolfo>,
         <http://ceur-ws.org/Vol-1459/#LucaiPulina>,
         <http://ceur-ws.org/Vol-1459/#MariaiLauraiRuiu> .
 
-<http://ceur-ws.org/Vol-1459/#paper21> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1459/> ;
+<http://ceur-ws.org/Vol-1459/#paper21> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1459/> ;
     ns6:title "Abductive logic programming for Datalog +/- ontologies" ;
-    ns4:endPage 143 ;
-    ns4:numPages 16 ;
-    ns4:section <http://ceur-ws.org/Vol-1459/#Descriptionlogicsandontologies> ;
-    ns4:startPage 128 ;
-    ns1:author <http://ceur-ws.org/Vol-1459/#ElenaiBellodi>,
+    ns2:endPage 143 ;
+    ns2:numPages 16 ;
+    ns2:section <http://ceur-ws.org/Vol-1459/#Descriptionlogicsandontologies> ;
+    ns2:startPage 128 ;
+    ns4:author <http://ceur-ws.org/Vol-1459/#ElenaiBellodi>,
         <http://ceur-ws.org/Vol-1459/#EvelinaiLamma>,
         <http://ceur-ws.org/Vol-1459/#FabrizioiRiguzzi>,
         <http://ceur-ws.org/Vol-1459/#GiuseppeiCota>,
         <http://ceur-ws.org/Vol-1459/#MarcoiGavanelli>,
         <http://ceur-ws.org/Vol-1459/#RiccardoiZese> .
 
-<http://ceur-ws.org/Vol-1459/#paper32> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1459/> ;
+<http://ceur-ws.org/Vol-1459/#paper32> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1459/> ;
     ns6:title "A case study on graph-based planning for emergency evacuation" ;
-    ns4:endPage 52 ;
-    ns4:numPages 7 ;
-    ns4:section <http://ceur-ws.org/Vol-1459/#Practicalexperiencesandcasestudies> ;
-    ns4:startPage 46 ;
-    ns1:author <http://ceur-ws.org/Vol-1459/#AlessandroiProvetti>,
+    ns2:endPage 52 ;
+    ns2:numPages 7 ;
+    ns2:section <http://ceur-ws.org/Vol-1459/#Practicalexperiencesandcasestudies> ;
+    ns2:startPage 46 ;
+    ns4:author <http://ceur-ws.org/Vol-1459/#AlessandroiProvetti>,
         <http://ceur-ws.org/Vol-1459/#MariaiFrancescaiMilazzo>,
         <http://ceur-ws.org/Vol-1459/#MassimoiMarchi>,
         <http://ceur-ws.org/Vol-1459/#PasqualeiDeiMeo>,
         <http://ceur-ws.org/Vol-1459/#SalvatoreiNunnari>,
         <http://ceur-ws.org/Vol-1459/#SantaiAgreste> .
 
-<http://ceur-ws.org/Vol-1459/#paper10> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1459/> ;
+<http://ceur-ws.org/Vol-1459/#paper10> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1459/> ;
     ns6:title "Computational thinking for beginners: A successful experience using Prolog" ;
-    ns4:endPage 45 ;
-    ns4:numPages 15 ;
-    ns4:section <http://ceur-ws.org/Vol-1459/#Practicalexperiencesandcasestudies> ;
-    ns4:startPage 31 ;
-    ns1:author <http://ceur-ws.org/Vol-1459/#AlessandroiSolimando>,
+    ns2:endPage 45 ;
+    ns2:numPages 15 ;
+    ns2:section <http://ceur-ws.org/Vol-1459/#Practicalexperiencesandcasestudies> ;
+    ns2:startPage 31 ;
+    ns4:author <http://ceur-ws.org/Vol-1459/#AlessandroiSolimando>,
         <http://ceur-ws.org/Vol-1459/#AndreaiCorradi>,
         <http://ceur-ws.org/Vol-1459/#AngeloiFerrando>,
         <http://ceur-ws.org/Vol-1459/#ArmandoiTacchella>,
@@ -675,8 +681,8 @@
         <http://ceur-ws.org/Vol-1459/#SilvioiBeux>,
         <http://ceur-ws.org/Vol-1459/#VivianaiMascardi> .
 
-<http://ceur-ws.org/Vol-1459/> a ns2:Proceedings ;
-    ns2:hasPart <http://ceur-ws.org/Vol-1459/#invitedTalk>,
+<http://ceur-ws.org/Vol-1459/> a ns1:Proceedings ;
+    ns1:hasPart <http://ceur-ws.org/Vol-1459/#invitedTalk>,
         <http://ceur-ws.org/Vol-1459/#paper10>,
         <http://ceur-ws.org/Vol-1459/#paper12>,
         <http://ceur-ws.org/Vol-1459/#paper13>,
@@ -698,16 +704,16 @@
         <http://ceur-ws.org/Vol-1459/#paper7>,
         <http://ceur-ws.org/Vol-1459/#paper8>,
         <http://ceur-ws.org/Vol-1459/#paperX1> ;
-    ns2:hasSession <http://ceur-ws.org/Vol-1459/#Abstractoftheinvitedtalk>,
+    ns1:hasSession <http://ceur-ws.org/Vol-1459/#Abstractoftheinvitedtalk>,
         <http://ceur-ws.org/Vol-1459/#Agentsandmultiagentsystems>,
         <http://ceur-ws.org/Vol-1459/#Applicationsframeworksandtools>,
         <http://ceur-ws.org/Vol-1459/#Descriptionlogicsandontologies>,
         <http://ceur-ws.org/Vol-1459/#Foundationsandtheoreticalresults>,
         <http://ceur-ws.org/Vol-1459/#Languagesandprogramming>,
         <http://ceur-ws.org/Vol-1459/#Practicalexperiencesandcasestudies> ;
-    ns7:issued "2015-09-29T00:00:00+00:00"^^xsd:dateTime ;
-    ns4:presentedAt <http://ceur-ws.org/Vol-1459/#event> ;
-    ns1:editor <http://ceur-ws.org/Vol-1459/#DavideiAncona>,
+    ns8:issued "2015-09-29T00:00:00+00:00"^^xsd:dateTime ;
+    ns2:presentedAt <http://ceur-ws.org/Vol-1459/#event> ;
+    ns4:editor <http://ceur-ws.org/Vol-1459/#DavideiAncona>,
         <http://ceur-ws.org/Vol-1459/#MarcoiMaratea>,
         <http://ceur-ws.org/Vol-1459/#VivianaiMascardi> .
 

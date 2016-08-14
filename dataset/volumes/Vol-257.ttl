@@ -1,10 +1,10 @@
-@prefix ns1: <http://xmlns.com/foaf/0.1/> .
-@prefix ns2: <http://purl.org/ontology/bibo/#> .
-@prefix ns3: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns1: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns2: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns3: <http://xmlns.com/foaf/0.1/> .
 @prefix ns4: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns5: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns5: <http://purl.org/ontology/bibo/#> .
 @prefix ns6: <http://www.w3.org/2002/07/owl#> .
-@prefix ns7: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
 @prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix ns9: <http://purl.org/dc/elements/1.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -12,120 +12,126 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-257/#AdamiPease> a ns1:Person ;
+<http://ceur-ws.org/Vol-257/#AdamiPease> a ns3:Person ;
     ns6:sameAs <http://ceur-ws.org/persons/AdamiPease> ;
-    ns1:made <http://ceur-ws.org/Vol-257/#07_Pease> ;
-    ns1:name "Adam Pease" .
+    ns3:made <http://ceur-ws.org/Vol-257/#07_Pease> ;
+    ns3:name "Adam Pease" .
 
-<http://ceur-ws.org/Vol-257/#KeithiGoolsbey> a ns1:Person ;
+<http://ceur-ws.org/Vol-257/#KeithiGoolsbey> a ns3:Person ;
     ns6:sameAs <http://ceur-ws.org/persons/KeithiGoolsbey> ;
-    ns1:made <http://ceur-ws.org/Vol-257/#paperX2> ;
-    ns1:name "Keith Goolsbey" .
+    ns3:made <http://ceur-ws.org/Vol-257/#paperX2> ;
+    ns3:name "Keith Goolsbey" .
 
-<http://ceur-ws.org/Vol-257/#LeonardoideiMoura> a ns1:Person ;
+<http://ceur-ws.org/Vol-257/#LeonardoideiMoura> a ns3:Person ;
     ns6:sameAs <http://ceur-ws.org/persons/LeonardoideiMoura> ;
-    ns1:made <http://ceur-ws.org/Vol-257/#paperX1> ;
-    ns1:name "Leonardo de Moura" .
+    ns3:made <http://ceur-ws.org/Vol-257/#paperX1> ;
+    ns3:name "Leonardo de Moura" .
 
-<http://ceur-ws.org/Vol-257/#MichaeliGenesereth> a ns1:Person ;
+<http://ceur-ws.org/Vol-257/#MichaeliGenesereth> a ns3:Person ;
     ns6:sameAs <http://ceur-ws.org/persons/MichaeliGenesereth> ;
-    ns1:made <http://ceur-ws.org/Vol-257/#03_Hinrichs> ;
-    ns1:name "Michael Genesereth" .
+    ns3:made <http://ceur-ws.org/Vol-257/#03_Hinrichs> ;
+    ns3:name "Michael Genesereth" .
 
-<http://ceur-ws.org/Vol-257/#PetriPudl%C3%A1k> a ns1:Person ;
+<http://ceur-ws.org/Vol-257/#PetriPudl%C3%A1k> a ns3:Person ;
     ns6:sameAs <http://ceur-ws.org/persons/PetriPudl%C3%A1k> ;
-    ns1:made <http://ceur-ws.org/Vol-257/#04_Pudlak> ;
-    ns1:name "Petr Pudlák" .
+    ns3:made <http://ceur-ws.org/Vol-257/#04_Pudlak> ;
+    ns3:name "Petr Pudlák" .
 
-<http://ceur-ws.org/Vol-257/#StephaniSchulz> a ns1:Person ;
-    ns7:affiliation "" ;
+<http://ceur-ws.org/Vol-257/#StephaniSchulz> a ns3:Person ;
+    ns1:affiliation "" ;
     ns6:sameAs <http://ceur-ws.org/persons/StephaniSchulz> ;
-    ns1:name "Stephan Schulz" .
+    ns3:name "Stephan Schulz" .
 
-<http://ceur-ws.org/Vol-257/#TimiHinrichs> a ns1:Person ;
+<http://ceur-ws.org/Vol-257/#TimiHinrichs> a ns3:Person ;
     ns6:sameAs <http://ceur-ws.org/persons/TimiHinrichs> ;
-    ns1:made <http://ceur-ws.org/Vol-257/#03_Hinrichs> ;
-    ns1:name "Tim Hinrichs" .
+    ns3:made <http://ceur-ws.org/Vol-257/#03_Hinrichs> ;
+    ns3:name "Tim Hinrichs" .
 
-<http://ceur-ws.org/Vol-257/#and> a ns1:Person ;
-    ns7:affiliation "" ;
+<http://ceur-ws.org/Vol-257/#and> a ns3:Person ;
+    ns1:affiliation "" ;
     ns6:sameAs <http://ceur-ws.org/persons/and> ;
-    ns1:name "and" .
+    ns3:name "and" .
 
-<http://ceur-ws.org/Vol-257/#event> a ns3:WorkshopEvent ;
-    ns3:hasLocation <http://dbpedia.org/resource/Germany> ;
-    ns3:hasPart <http://ceur-ws.org/Vol-257/#part-ESARLT> ;
-    ns3:isSubEventOf <http://ceur-ws.org/Vol-257/#conf> ;
-    ns5:beginsAtDatetime "2007-07-17T00:00:00+00:00"^^xsd:dateTime ;
-    ns5:endsAtDatetime "2007-07-17T00:00:00+00:00"^^xsd:dateTime ;
+<http://ceur-ws.org/Vol-257/#event> a ns2:WorkshopEvent ;
+    ns2:hasLocation <http://dbpedia.org/resource/Germany> ;
+    ns2:hasPart <http://ceur-ws.org/Vol-257/#part-ESARLT> ;
+    ns2:isSubEventOf <http://ceur-ws.org/Vol-257/#conf> ;
+    ns7:beginsAtDatetime "2007-07-17T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:endsAtDatetime "2007-07-17T00:00:00+00:00"^^xsd:dateTime ;
     ns9:license "http://choosealicense.com/licenses/no-license/" .
 
-<http://ceur-ws.org/Vol-257/#04_Pudlak> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-257/> ;
+<http://ceur-ws.org/Vol-257/#part-ESARLT> a ns5:Workshop ;
+    ns2:partOf <http://ceur-ws.org/series/ESARLT> ;
+    ns4:title "Empirically Successful Automated Reasoning in Large Theories 2007" ;
+    ns5:shortTitle "ESARLT" ;
+    ns1:edition 17 .
+
+<http://ceur-ws.org/Vol-257/#04_Pudlak> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-257/> ;
     ns4:title "Semantic Selection of Premisses for Automated Theorem Proving" ;
-    ns2:section <http://ceur-ws.org/Vol-257/#Completeproceedings> ;
-    ns7:author <http://ceur-ws.org/Vol-257/#PetriPudl%C3%A1k> .
+    ns5:section <http://ceur-ws.org/Vol-257/#Completeproceedings> ;
+    ns1:author <http://ceur-ws.org/Vol-257/#PetriPudl%C3%A1k> .
 
-<http://ceur-ws.org/Vol-257/#05_Urban> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-257/> ;
+<http://ceur-ws.org/Vol-257/#05_Urban> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-257/> ;
     ns4:title "MaLARea: a Metasystem for Automated Reasoning in Large Theories" ;
-    ns2:section <http://ceur-ws.org/Vol-257/#Completeproceedings> ;
-    ns7:author <http://ceur-ws.org/Vol-257/#JosefiUrban> .
+    ns5:section <http://ceur-ws.org/Vol-257/#Completeproceedings> ;
+    ns1:author <http://ceur-ws.org/Vol-257/#JosefiUrban> .
 
-<http://ceur-ws.org/Vol-257/#GeoffiSutcliffe> a ns1:Person ;
-    ns7:affiliation "" ;
+<http://ceur-ws.org/Vol-257/#GeoffiSutcliffe> a ns3:Person ;
+    ns1:affiliation "" ;
     ns6:sameAs <http://ceur-ws.org/persons/GeoffiSutcliffe> ;
-    ns1:made <http://ceur-ws.org/Vol-257/#07_Pease> ;
-    ns1:name "Geoff Sutcliffe" .
+    ns3:made <http://ceur-ws.org/Vol-257/#07_Pease> ;
+    ns3:name "Geoff Sutcliffe" .
 
-<http://ceur-ws.org/Vol-257/#JosefiUrban> a ns1:Person ;
-    ns7:affiliation "" ;
+<http://ceur-ws.org/Vol-257/#JosefiUrban> a ns3:Person ;
+    ns1:affiliation "" ;
     ns6:sameAs <http://ceur-ws.org/persons/JosefiUrban> ;
-    ns1:made <http://ceur-ws.org/Vol-257/#05_Urban> ;
-    ns1:name "Josef Urban" .
+    ns3:made <http://ceur-ws.org/Vol-257/#05_Urban> ;
+    ns3:name "Josef Urban" .
 
-<http://ceur-ws.org/Vol-257/#paperX1> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-257/> ;
+<http://ceur-ws.org/Vol-257/#paperX1> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-257/> ;
     ns4:title "Invited talk:" ;
-    ns2:section <http://ceur-ws.org/Vol-257/#Completeproceedings> ;
-    ns7:author <http://ceur-ws.org/Vol-257/#LeonardoideiMoura> .
+    ns5:section <http://ceur-ws.org/Vol-257/#Completeproceedings> ;
+    ns1:author <http://ceur-ws.org/Vol-257/#LeonardoideiMoura> .
 
-<http://ceur-ws.org/Vol-257/#paperX2> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-257/> ;
+<http://ceur-ws.org/Vol-257/#paperX2> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-257/> ;
     ns4:title "Invited talk:" ;
-    ns2:section <http://ceur-ws.org/Vol-257/#Completeproceedings> ;
-    ns7:author <http://ceur-ws.org/Vol-257/#KeithiGoolsbey> .
+    ns5:section <http://ceur-ws.org/Vol-257/#Completeproceedings> ;
+    ns1:author <http://ceur-ws.org/Vol-257/#KeithiGoolsbey> .
 
-<http://ceur-ws.org/Vol-257/#03_Hinrichs> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-257/> ;
+<http://ceur-ws.org/Vol-257/#03_Hinrichs> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-257/> ;
     ns4:title "Extensional Reasoning" ;
-    ns2:section <http://ceur-ws.org/Vol-257/#Completeproceedings> ;
-    ns7:author <http://ceur-ws.org/Vol-257/#MichaeliGenesereth>,
+    ns5:section <http://ceur-ws.org/Vol-257/#Completeproceedings> ;
+    ns1:author <http://ceur-ws.org/Vol-257/#MichaeliGenesereth>,
         <http://ceur-ws.org/Vol-257/#TimiHinrichs> .
 
-<http://ceur-ws.org/Vol-257/#07_Pease> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-257/> ;
+<http://ceur-ws.org/Vol-257/#07_Pease> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-257/> ;
     ns4:title "First Order Reasoning on a Large Ontology" ;
-    ns2:section <http://ceur-ws.org/Vol-257/#Completeproceedings> ;
-    ns7:author <http://ceur-ws.org/Vol-257/#AdamiPease>,
+    ns5:section <http://ceur-ws.org/Vol-257/#Completeproceedings> ;
+    ns1:author <http://ceur-ws.org/Vol-257/#AdamiPease>,
         <http://ceur-ws.org/Vol-257/#GeoffiSutcliffe> .
 
-<http://ceur-ws.org/Vol-257/> a ns3:Proceedings ;
-    ns3:hasPart <http://ceur-ws.org/Vol-257/#03_Hinrichs>,
+<http://ceur-ws.org/Vol-257/> a ns2:Proceedings ;
+    ns2:hasPart <http://ceur-ws.org/Vol-257/#03_Hinrichs>,
         <http://ceur-ws.org/Vol-257/#04_Pudlak>,
         <http://ceur-ws.org/Vol-257/#05_Urban>,
         <http://ceur-ws.org/Vol-257/#07_Pease>,
         <http://ceur-ws.org/Vol-257/#paperX1>,
         <http://ceur-ws.org/Vol-257/#paperX2> ;
-    ns3:hasSession <http://ceur-ws.org/Vol-257/#Completeproceedings> ;
+    ns2:hasSession <http://ceur-ws.org/Vol-257/#Completeproceedings> ;
     ns8:issued "2007-06-27T00:00:00+00:00"^^xsd:dateTime ;
-    ns2:presentedAt <http://ceur-ws.org/Vol-257/#event> ;
-    ns7:editor <http://ceur-ws.org/Vol-257/#GeoffiSutcliffe>,
+    ns5:presentedAt <http://ceur-ws.org/Vol-257/#event> ;
+    ns1:editor <http://ceur-ws.org/Vol-257/#GeoffiSutcliffe>,
         <http://ceur-ws.org/Vol-257/#JosefiUrban>,
         <http://ceur-ws.org/Vol-257/#StephaniSchulz>,
         <http://ceur-ws.org/Vol-257/#and> .
 
-<http://ceur-ws.org/Vol-257/#Completeproceedings> a ns3:SessionEvent ;
-    ns3:partOf <http://ceur-ws.org/Vol-257/> ;
+<http://ceur-ws.org/Vol-257/#Completeproceedings> a ns2:SessionEvent ;
+    ns2:partOf <http://ceur-ws.org/Vol-257/> ;
     ns4:title "Complete proceedings" .
 

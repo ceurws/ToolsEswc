@@ -1,12 +1,12 @@
-@prefix ns1: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns2: <http://purl.org/ontology/bibo/#> .
+@prefix ns1: <http://purl.org/ontology/bibo/#> .
+@prefix ns2: <http://swrc.ontoware.org/ontology/#> .
 @prefix ns3: <http://xmlns.com/foaf/0.1/> .
-@prefix ns4: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns4: <http://data.semanticweb.org/ns/swc/ontology/#> .
 @prefix ns5: <http://www.w3.org/2002/07/owl#> .
 @prefix ns6: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns9: <http://purl.org/dc/elements/1.1/> .
+@prefix ns7: <http://purl.org/dc/elements/1.1/> .
+@prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns9: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -33,7 +33,7 @@
     ns3:name "Amal El Fallah Seghrouchni" .
 
 <http://ceur-ws.org/Vol-1528/#AndreasiKomninos> a ns3:Person ;
-    ns4:affiliation "" ;
+    ns2:affiliation "" ;
     ns5:sameAs <http://ceur-ws.org/persons/AndreasiKomninos> ;
     ns3:name "Andreas Komninos" .
 
@@ -118,7 +118,7 @@
     ns3:name "Ioannis Chatzigiannakis" .
 
 <http://ceur-ws.org/Vol-1528/#JavediVassilisiKhan> a ns3:Person ;
-    ns4:affiliation "" ;
+    ns2:affiliation "" ;
     ns5:sameAs <http://ceur-ws.org/persons/JavediVassilisiKhan> ;
     ns3:name "Javed Vassilis Khan" .
 
@@ -153,7 +153,7 @@
     ns3:name "Paolo Buono" .
 
 <http://ceur-ws.org/Vol-1528/#PetrosiNicopolitidis> a ns3:Person ;
-    ns4:affiliation "" ;
+    ns2:affiliation "" ;
     ns5:sameAs <http://ceur-ws.org/persons/PetrosiNicopolitidis> ;
     ns3:name "Petros Nicopolitidis" .
 
@@ -168,7 +168,7 @@
     ns3:name "Styliani Kleanthous" .
 
 <http://ceur-ws.org/Vol-1528/#VassilisiKoutkias> a ns3:Person ;
-    ns4:affiliation "" ;
+    ns2:affiliation "" ;
     ns5:sameAs <http://ceur-ws.org/persons/VassilisiKoutkias> ;
     ns3:name "Vassilis Koutkias" .
 
@@ -177,13 +177,19 @@
     ns3:made <http://ceur-ws.org/Vol-1528/#paper11> ;
     ns3:name "Zain Khan" .
 
-<http://ceur-ws.org/Vol-1528/#event> a ns1:WorkshopEvent ;
-    ns1:hasLocation <http://dbpedia.org/resource/Greece> ;
-    ns1:hasPart <http://ceur-ws.org/Vol-1528/#part-AmI> ;
-    ns1:isSubEventOf <http://ceur-ws.org/Vol-1528/#conf> ;
-    ns7:beginsAtDatetime "2016-11-11T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:endsAtDatetime "2016-11-11T00:00:00+00:00"^^xsd:dateTime ;
-    ns9:license "http://creativecommons.org/publicdomain/zero/1.0/" .
+<http://ceur-ws.org/Vol-1528/#event> a ns4:WorkshopEvent ;
+    ns4:hasLocation <http://dbpedia.org/resource/Greece> ;
+    ns4:hasPart <http://ceur-ws.org/Vol-1528/#part-AmI> ;
+    ns4:isSubEventOf <http://ceur-ws.org/Vol-1528/#conf> ;
+    ns8:beginsAtDatetime "2016-11-11T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:endsAtDatetime "2016-11-11T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:license "http://creativecommons.org/publicdomain/zero/1.0/" .
+
+<http://ceur-ws.org/Vol-1528/#part-AmI> a ns1:Workshop ;
+    ns4:partOf <http://ceur-ws.org/series/AmI> ;
+    ns6:title "AmI-2015 Adjunct Proceedings" ;
+    ns1:shortTitle "AmI" ;
+    ns2:edition 1 .
 
 <http://ceur-ws.org/Vol-1528/#AndreasiBraun> a ns3:Person ;
     ns5:sameAs <http://ceur-ws.org/persons/AndreasiBraun> ;
@@ -233,11 +239,11 @@
         <http://ceur-ws.org/Vol-1528/#paper7> ;
     ns3:name "Valeria Bopp" .
 
-<http://ceur-ws.org/Vol-1528/#paper9> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-1528/> ;
+<http://ceur-ws.org/Vol-1528/#paper9> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1528/> ;
     ns6:title "A Low Cost System for Home Energy Consumption Awareness" ;
-    ns2:section <http://ceur-ws.org/Vol-1528/#PostersfromAmI15> ;
-    ns4:author <http://ceur-ws.org/Vol-1528/#PaoloiBuono> .
+    ns1:section <http://ceur-ws.org/Vol-1528/#PostersfromAmI15> ;
+    ns2:author <http://ceur-ws.org/Vol-1528/#PaoloiBuono> .
 
 <http://ceur-ws.org/Vol-1528/#ChristianaiTsiourti> a ns3:Person ;
     ns5:sameAs <http://ceur-ws.org/persons/ChristianaiTsiourti> ;
@@ -246,123 +252,123 @@
         <http://ceur-ws.org/Vol-1528/#paper4> ;
     ns3:name "Christiana Tsiourti" .
 
-<http://ceur-ws.org/Vol-1528/#paper11> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-1528/> ;
+<http://ceur-ws.org/Vol-1528/#paper11> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1528/> ;
     ns6:title "A Scenario Editor and Authoring Tool for a Low Fidelity Cultural Competence Serious Game" ;
-    ns2:section <http://ceur-ws.org/Vol-1528/#PostersfromAmI15> ;
-    ns4:author <http://ceur-ws.org/Vol-1528/#BilliKapralos>,
+    ns1:section <http://ceur-ws.org/Vol-1528/#PostersfromAmI15> ;
+    ns2:author <http://ceur-ws.org/Vol-1528/#BilliKapralos>,
         <http://ceur-ws.org/Vol-1528/#ZainiKhan> .
 
-<http://ceur-ws.org/Vol-1528/#paper3> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-1528/> ;
+<http://ceur-ws.org/Vol-1528/#paper3> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1528/> ;
     ns6:title "DeEvA, a Depot of Evolving Avatars" ;
-    ns2:section <http://ceur-ws.org/Vol-1528/#PapersfromWorkshoponAffectiveInteractionwithAvatars> ;
-    ns4:author <http://ceur-ws.org/Vol-1528/#AlexisiHeloir>,
+    ns1:section <http://ceur-ws.org/Vol-1528/#PapersfromWorkshoponAffectiveInteractionwithAvatars> ;
+    ns2:author <http://ceur-ws.org/Vol-1528/#AlexisiHeloir>,
         <http://ceur-ws.org/Vol-1528/#FabrizioiNunnari> .
 
-<http://ceur-ws.org/Vol-1528/#paper10> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-1528/> ;
+<http://ceur-ws.org/Vol-1528/#paper10> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1528/> ;
     ns6:title "CAmIE: An Agent-Based Model for the Development of Large-Scale AmI Environments" ;
-    ns2:section <http://ceur-ws.org/Vol-1528/#PostersfromAmI15> ;
-    ns4:author <http://ceur-ws.org/Vol-1528/#AdinaiMagdaiFlorea>,
+    ns1:section <http://ceur-ws.org/Vol-1528/#PostersfromAmI15> ;
+    ns2:author <http://ceur-ws.org/Vol-1528/#AdinaiMagdaiFlorea>,
         <http://ceur-ws.org/Vol-1528/#AmaliEliFallahiSeghrouchni>,
         <http://ceur-ws.org/Vol-1528/#Marius-TudoriBenea> .
 
-<http://ceur-ws.org/Vol-1528/#paper12> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-1528/> ;
+<http://ceur-ws.org/Vol-1528/#paper12> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1528/> ;
     ns6:title "Design and Implementation of a Platform for Smart Connected School Buildings" ;
-    ns2:section <http://ceur-ws.org/Vol-1528/#PostersfromAmI15> ;
-    ns4:author <http://ceur-ws.org/Vol-1528/#DimitriosiAmaxilatis>,
+    ns1:section <http://ceur-ws.org/Vol-1528/#PostersfromAmI15> ;
+    ns2:author <http://ceur-ws.org/Vol-1528/#DimitriosiAmaxilatis>,
         <http://ceur-ws.org/Vol-1528/#GeorgiosiMylonas>,
         <http://ceur-ws.org/Vol-1528/#IoannisiChatzigiannakis> .
 
-<http://ceur-ws.org/Vol-1528/#paper8> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-1528/> ;
+<http://ceur-ws.org/Vol-1528/#paper8> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1528/> ;
     ns6:title "Using Statistico-Relational Model for Activity Recognition in Smart Home" ;
-    ns2:section <http://ceur-ws.org/Vol-1528/#PostersfromAmI15> ;
-    ns4:author <http://ceur-ws.org/Vol-1528/#AlexisiBrenon>,
+    ns1:section <http://ceur-ws.org/Vol-1528/#PostersfromAmI15> ;
+    ns2:author <http://ceur-ws.org/Vol-1528/#AlexisiBrenon>,
         <http://ceur-ws.org/Vol-1528/#Fran%C3%A7oisiPortet>,
         <http://ceur-ws.org/Vol-1528/#MicheliVacher> .
 
-<http://ceur-ws.org/Vol-1528/#paper13> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-1528/> ;
+<http://ceur-ws.org/Vol-1528/#paper13> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1528/> ;
     ns6:title "Observe or Participate: The Effect of Point-Of-View on Presence and Enjoyment in 360 Degree Movies for Head Mounted Displays" ;
-    ns2:section <http://ceur-ws.org/Vol-1528/#PostersfromAmI15> ;
-    ns4:author <http://ceur-ws.org/Vol-1528/#AnnelieneiA.L.F.M.ivanideniBoom>,
+    ns1:section <http://ceur-ws.org/Vol-1528/#PostersfromAmI15> ;
+    ns2:author <http://ceur-ws.org/Vol-1528/#AnnelieneiA.L.F.M.ivanideniBoom>,
         <http://ceur-ws.org/Vol-1528/#MarnixiS.ivaniGisbergen>,
         <http://ceur-ws.org/Vol-1528/#OscariS.P.iBastiaens>,
         <http://ceur-ws.org/Vol-1528/#Sne%C5%BEanaiStupar-Rutenfrans> .
 
-<http://ceur-ws.org/Vol-1528/#paper6> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-1528/> ;
+<http://ceur-ws.org/Vol-1528/#paper6> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1528/> ;
     ns6:title "Improving Daily Life for People with Dementia – An Observation Study" ;
-    ns2:section <http://ceur-ws.org/Vol-1528/#PostersfromAmI15> ;
-    ns4:author <http://ceur-ws.org/Vol-1528/#NamiTungiLy>,
+    ns1:section <http://ceur-ws.org/Vol-1528/#PostersfromAmI15> ;
+    ns2:author <http://ceur-ws.org/Vol-1528/#NamiTungiLy>,
         <http://ceur-ws.org/Vol-1528/#RobertiTscharn>,
         <http://ceur-ws.org/Vol-1528/#StefanieiEbert>,
         <http://ceur-ws.org/Vol-1528/#ValeriaiBopp> .
 
-<http://ceur-ws.org/Vol-1528/#paper7> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-1528/> ;
+<http://ceur-ws.org/Vol-1528/#paper7> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1528/> ;
     ns6:title "Guiding Lights – Facilitation of Way-finding for People with Dementia via Spatial Light Cues" ;
-    ns2:section <http://ceur-ws.org/Vol-1528/#PostersfromAmI15> ;
-    ns4:author <http://ceur-ws.org/Vol-1528/#NamiTungiLy>,
+    ns1:section <http://ceur-ws.org/Vol-1528/#PostersfromAmI15> ;
+    ns2:author <http://ceur-ws.org/Vol-1528/#NamiTungiLy>,
         <http://ceur-ws.org/Vol-1528/#RobertiTscharn>,
         <http://ceur-ws.org/Vol-1528/#StefanieiEbert>,
         <http://ceur-ws.org/Vol-1528/#ValeriaiBopp> .
 
-<http://ceur-ws.org/Vol-1528/#PapersfromWorkshoponAffectiveInteractionwithAvatars> a ns1:SessionEvent ;
-    ns1:partOf <http://ceur-ws.org/Vol-1528/> ;
+<http://ceur-ws.org/Vol-1528/#PapersfromWorkshoponAffectiveInteractionwithAvatars> a ns4:SessionEvent ;
+    ns4:partOf <http://ceur-ws.org/Vol-1528/> ;
     ns6:title "Papers from Workshop on \"Affective Interaction with Avatars\"" .
 
-<http://ceur-ws.org/Vol-1528/#paper4> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-1528/> ;
+<http://ceur-ws.org/Vol-1528/#paper4> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1528/> ;
     ns6:title "The Technical Specification and Architecture of a Virtual Support Partner" ;
-    ns2:section <http://ceur-ws.org/Vol-1528/#PapersfromWorkshoponAffectiveInteractionwithAvatars> ;
-    ns4:author <http://ceur-ws.org/Vol-1528/#AndreasiBraun>,
+    ns1:section <http://ceur-ws.org/Vol-1528/#PapersfromWorkshoponAffectiveInteractionwithAvatars> ;
+    ns2:author <http://ceur-ws.org/Vol-1528/#AndreasiBraun>,
         <http://ceur-ws.org/Vol-1528/#AndreasiStainer-Hochgatterer>,
         <http://ceur-ws.org/Vol-1528/#ChristianaiTsiourti>,
         <http://ceur-ws.org/Vol-1528/#EmanueliSandner>,
         <http://ceur-ws.org/Vol-1528/#SteniHanke> .
 
-<http://ceur-ws.org/Vol-1528/#paper5> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-1528/> ;
+<http://ceur-ws.org/Vol-1528/#paper5> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1528/> ;
     ns6:title "Towards a Back-End Framework for Supporting Affective Avatar-Based Interaction Systems" ;
-    ns2:section <http://ceur-ws.org/Vol-1528/#PapersfromWorkshoponAffectiveInteractionwithAvatars> ;
-    ns4:author <http://ceur-ws.org/Vol-1528/#AndreasiPamboris>,
+    ns1:section <http://ceur-ws.org/Vol-1528/#PapersfromWorkshoponAffectiveInteractionwithAvatars> ;
+    ns2:author <http://ceur-ws.org/Vol-1528/#AndreasiPamboris>,
         <http://ceur-ws.org/Vol-1528/#ChristophorosiChristophorou>,
         <http://ceur-ws.org/Vol-1528/#DimosthenisiGeorgiadis>,
         <http://ceur-ws.org/Vol-1528/#GeorgeiSamaras>,
         <http://ceur-ws.org/Vol-1528/#PanayiotisiAndreou> .
 
-<http://ceur-ws.org/Vol-1528/#paper1> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-1528/> ;
+<http://ceur-ws.org/Vol-1528/#paper1> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1528/> ;
     ns6:title "Summary of the Workshop Affective Interaction with Avatars @ Ambient Intelligence 2015" ;
-    ns2:section <http://ceur-ws.org/Vol-1528/#PapersfromWorkshoponAffectiveInteractionwithAvatars> ;
-    ns4:author <http://ceur-ws.org/Vol-1528/#AndreasiBraun>,
+    ns1:section <http://ceur-ws.org/Vol-1528/#PapersfromWorkshoponAffectiveInteractionwithAvatars> ;
+    ns2:author <http://ceur-ws.org/Vol-1528/#AndreasiBraun>,
         <http://ceur-ws.org/Vol-1528/#CarsteniStockl%C3%B6w>,
         <http://ceur-ws.org/Vol-1528/#ChristianaiTsiourti>,
         <http://ceur-ws.org/Vol-1528/#MaheriBeniMoussa>,
         <http://ceur-ws.org/Vol-1528/#PanayiotisiAndreou>,
         <http://ceur-ws.org/Vol-1528/#SteniHanke> .
 
-<http://ceur-ws.org/Vol-1528/#paper2> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-1528/> ;
+<http://ceur-ws.org/Vol-1528/#paper2> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1528/> ;
     ns6:title "Virtual Partners for Seniors: Analysis of the Users’ Preferences and Expectations on Personality and Appearance" ;
-    ns2:section <http://ceur-ws.org/Vol-1528/#PapersfromWorkshoponAffectiveInteractionwithAvatars> ;
-    ns4:author <http://ceur-ws.org/Vol-1528/#ChristianaiTsiourti>,
+    ns1:section <http://ceur-ws.org/Vol-1528/#PapersfromWorkshoponAffectiveInteractionwithAvatars> ;
+    ns2:author <http://ceur-ws.org/Vol-1528/#ChristianaiTsiourti>,
         <http://ceur-ws.org/Vol-1528/#ChristophorosiChristophorou>,
         <http://ceur-ws.org/Vol-1528/#CindyiWings>,
         <http://ceur-ws.org/Vol-1528/#DonatoiM.iCereghetti>,
         <http://ceur-ws.org/Vol-1528/#EleniiChristodoulou>,
         <http://ceur-ws.org/Vol-1528/#StylianiiKleanthous> .
 
-<http://ceur-ws.org/Vol-1528/#PostersfromAmI15> a ns1:SessionEvent ;
-    ns1:partOf <http://ceur-ws.org/Vol-1528/> ;
+<http://ceur-ws.org/Vol-1528/#PostersfromAmI15> a ns4:SessionEvent ;
+    ns4:partOf <http://ceur-ws.org/Vol-1528/> ;
     ns6:title "Posters from AmI-15" .
 
-<http://ceur-ws.org/Vol-1528/> a ns1:Proceedings ;
-    ns1:hasPart <http://ceur-ws.org/Vol-1528/#paper1>,
+<http://ceur-ws.org/Vol-1528/> a ns4:Proceedings ;
+    ns4:hasPart <http://ceur-ws.org/Vol-1528/#paper1>,
         <http://ceur-ws.org/Vol-1528/#paper10>,
         <http://ceur-ws.org/Vol-1528/#paper11>,
         <http://ceur-ws.org/Vol-1528/#paper12>,
@@ -375,11 +381,11 @@
         <http://ceur-ws.org/Vol-1528/#paper7>,
         <http://ceur-ws.org/Vol-1528/#paper8>,
         <http://ceur-ws.org/Vol-1528/#paper9> ;
-    ns1:hasSession <http://ceur-ws.org/Vol-1528/#PapersfromWorkshoponAffectiveInteractionwithAvatars>,
+    ns4:hasSession <http://ceur-ws.org/Vol-1528/#PapersfromWorkshoponAffectiveInteractionwithAvatars>,
         <http://ceur-ws.org/Vol-1528/#PostersfromAmI15> ;
-    ns8:issued "2015-12-07T00:00:00+00:00"^^xsd:dateTime ;
-    ns2:presentedAt <http://ceur-ws.org/Vol-1528/#event> ;
-    ns4:editor <http://ceur-ws.org/Vol-1528/#AndreasiKomninos>,
+    ns9:issued "2015-12-07T00:00:00+00:00"^^xsd:dateTime ;
+    ns1:presentedAt <http://ceur-ws.org/Vol-1528/#event> ;
+    ns2:editor <http://ceur-ws.org/Vol-1528/#AndreasiKomninos>,
         <http://ceur-ws.org/Vol-1528/#JavediVassilisiKhan>,
         <http://ceur-ws.org/Vol-1528/#PetrosiNicopolitidis>,
         <http://ceur-ws.org/Vol-1528/#VassilisiKoutkias> .

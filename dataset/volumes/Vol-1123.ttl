@@ -1,11 +1,11 @@
 @prefix ns1: <http://www.w3.org/2002/07/owl#> .
-@prefix ns2: <http://purl.org/ontology/bibo/#> .
+@prefix ns2: <http://swrc.ontoware.org/ontology/#> .
 @prefix ns3: <http://xmlns.com/foaf/0.1/> .
 @prefix ns4: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns5: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns6: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns7: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns5: <http://purl.org/ontology/bibo/#> .
+@prefix ns6: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix ns9: <http://purl.org/dc/elements/1.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -33,7 +33,7 @@
     ns3:name "Christopher Brewster" .
 
 <http://ceur-ws.org/Vol-1123/#DavidiA.iShamma> a ns3:Person ;
-    ns5:affiliation "" ;
+    ns2:affiliation "" ;
     ns1:sameAs <http://ceur-ws.org/persons/DavidiA.iShamma> ;
     ns3:name "David A. Shamma" .
 
@@ -63,17 +63,17 @@
     ns3:name "Iina Hellsten" .
 
 <http://ceur-ws.org/Vol-1123/#LauraiHollink> a ns3:Person ;
-    ns5:affiliation "" ;
+    ns2:affiliation "" ;
     ns1:sameAs <http://ceur-ws.org/persons/LauraiHollink> ;
     ns3:name "Laura Hollink" .
 
 <http://ceur-ws.org/Vol-1123/#LianliiGao> a ns3:Person ;
-    ns5:affiliation "" ;
+    ns2:affiliation "" ;
     ns1:sameAs <http://ceur-ws.org/persons/LianliiGao> ;
     ns3:name "Lianli Gao" .
 
 <http://ceur-ws.org/Vol-1123/#MariekeivaniErp> a ns3:Person ;
-    ns5:affiliation "" ;
+    ns2:affiliation "" ;
     ns1:sameAs <http://ceur-ws.org/persons/MariekeivaniErp> ;
     ns3:name "Marieke van Erp" .
 
@@ -93,12 +93,12 @@
     ns3:name "Oana Inel" .
 
 <http://ceur-ws.org/Vol-1123/#Pi%C3%ABrreivanideiLaar> a ns3:Person ;
-    ns5:affiliation "" ;
+    ns2:affiliation "" ;
     ns1:sameAs <http://ceur-ws.org/persons/Pi%C3%ABrreivanideiLaar> ;
     ns3:name "Piërre van de Laar" .
 
 <http://ceur-ws.org/Vol-1123/#Rapha%C3%ABliTroncy> a ns3:Person ;
-    ns5:affiliation "" ;
+    ns2:affiliation "" ;
     ns1:sameAs <http://ceur-ws.org/persons/Rapha%C3%ABliTroncy> ;
     ns3:name "Raphaël Troncy" .
 
@@ -126,19 +126,25 @@
     ns4:hasLocation <http://dbpedia.org/resource/Australia> ;
     ns4:hasPart <http://ceur-ws.org/Vol-1123/#part-DeRiVE> ;
     ns4:isSubEventOf <http://ceur-ws.org/Vol-1123/#conf> ;
-    ns8:beginsAtDatetime "2013-10-21T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:endsAtDatetime "2013-10-21T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:beginsAtDatetime "2013-10-21T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:endsAtDatetime "2013-10-21T00:00:00+00:00"^^xsd:dateTime ;
     ns9:license "http://choosealicense.com/licenses/no-license/" ;
     rdfs:seeAlso <http://ceur-ws.org/Vol-779/#event>,
         <http://ceur-ws.org/Vol-902/#event> .
 
+<http://ceur-ws.org/Vol-1123/#part-DeRiVE> a ns5:Workshop ;
+    ns4:partOf <http://ceur-ws.org/series/DeRiVE> ;
+    ns6:title "Detection, Representation and Exploitation of Events in the Semantic Web 2013" ;
+    ns5:shortTitle "DeRiVE" ;
+    ns2:edition 3 .
+
 <http://ceur-ws.org/Vol-1123/#1> a ns4:Paper ;
     ns4:partOf <http://ceur-ws.org/Vol-1123/> ;
-    ns7:title "Listening to the pulse of our cities during City Scale Events" ;
-    ns2:endPage 1 ;
-    ns2:numPages 1 ;
-    ns2:startPage 1 ;
-    ns5:author <http://ceur-ws.org/Vol-1123/#EmanuelleiDellaiValle> .
+    ns6:title "Listening to the pulse of our cities during City Scale Events" ;
+    ns5:endPage 1 ;
+    ns5:numPages 1 ;
+    ns5:startPage 1 ;
+    ns2:author <http://ceur-ws.org/Vol-1123/#EmanuelleiDellaiValle> .
 
 <http://ceur-ws.org/Vol-1123/#JesperiHoeksema> a ns3:Person ;
     ns1:sameAs <http://ceur-ws.org/persons/JesperiHoeksema> ;
@@ -153,47 +159,47 @@
     ns3:name "Lora Aroyo" .
 
 <http://ceur-ws.org/Vol-1123/#WillemiRobertivaniHage> a ns3:Person ;
-    ns5:affiliation "" ;
+    ns2:affiliation "" ;
     ns1:sameAs <http://ceur-ws.org/persons/WillemiRobertivaniHage> ;
     ns3:made <http://ceur-ws.org/Vol-1123/#paper6> ;
     ns3:name "Willem Robert van Hage" .
 
 <http://ceur-ws.org/Vol-1123/#paper4> a ns4:Paper ;
     ns4:partOf <http://ceur-ws.org/Vol-1123/> ;
-    ns7:title "Representing Supply Chain Events on the Web of Data" ;
-    ns2:endPage 29 ;
-    ns2:numPages 12 ;
-    ns2:startPage 18 ;
-    ns5:author <http://ceur-ws.org/Vol-1123/#ChristopheriBrewster>,
+    ns6:title "Representing Supply Chain Events on the Web of Data" ;
+    ns5:endPage 29 ;
+    ns5:numPages 12 ;
+    ns5:startPage 18 ;
+    ns2:author <http://ceur-ws.org/Vol-1123/#ChristopheriBrewster>,
         <http://ceur-ws.org/Vol-1123/#MonikaiSolanki> .
 
 <http://ceur-ws.org/Vol-1123/#paper6> a ns4:Paper ;
     ns4:partOf <http://ceur-ws.org/Vol-1123/> ;
-    ns7:title "A Case Study on Automated Risk Assessment of Ships Using Newspaper-Based Event Extraction" ;
-    ns2:endPage 52 ;
-    ns2:numPages 11 ;
-    ns2:startPage 42 ;
-    ns5:author <http://ceur-ws.org/Vol-1123/#JesperiHoeksema>,
+    ns6:title "A Case Study on Automated Risk Assessment of Ships Using Newspaper-Based Event Extraction" ;
+    ns5:endPage 52 ;
+    ns5:numPages 11 ;
+    ns5:startPage 42 ;
+    ns2:author <http://ceur-ws.org/Vol-1123/#JesperiHoeksema>,
         <http://ceur-ws.org/Vol-1123/#WillemiRobertivaniHage> .
 
 <http://ceur-ws.org/Vol-1123/#2> a ns4:Paper ;
     ns4:partOf <http://ceur-ws.org/Vol-1123/> ;
-    ns7:title "Domain-Independent Quality Measures for Crowd Truth Disagreement" ;
-    ns2:endPage 13 ;
-    ns2:numPages 12 ;
-    ns2:startPage 2 ;
-    ns5:author <http://ceur-ws.org/Vol-1123/#ChrisiWelty>,
+    ns6:title "Domain-Independent Quality Measures for Crowd Truth Disagreement" ;
+    ns5:endPage 13 ;
+    ns5:numPages 12 ;
+    ns5:startPage 2 ;
+    ns2:author <http://ceur-ws.org/Vol-1123/#ChrisiWelty>,
         <http://ceur-ws.org/Vol-1123/#LoraiAroyo>,
         <http://ceur-ws.org/Vol-1123/#OanaiInel>,
         <http://ceur-ws.org/Vol-1123/#Robert-JaniSips> .
 
 <http://ceur-ws.org/Vol-1123/#3> a ns4:Paper ;
     ns4:partOf <http://ceur-ws.org/Vol-1123/> ;
-    ns7:title "FRED as an Event Extraction Tool" ;
-    ns2:endPage 17 ;
-    ns2:numPages 4 ;
-    ns2:startPage 14 ;
-    ns5:author <http://ceur-ws.org/Vol-1123/#AldoiGangemi>,
+    ns6:title "FRED as an Event Extraction Tool" ;
+    ns5:endPage 17 ;
+    ns5:numPages 4 ;
+    ns5:startPage 14 ;
+    ns2:author <http://ceur-ws.org/Vol-1123/#AldoiGangemi>,
         <http://ceur-ws.org/Vol-1123/#DiegoiReforgiatoRecupero>,
         <http://ceur-ws.org/Vol-1123/#EhabiHassan>,
         <http://ceur-ws.org/Vol-1123/#ValentinaiPresutti> .
@@ -205,9 +211,9 @@
         <http://ceur-ws.org/Vol-1123/#paper4>,
         <http://ceur-ws.org/Vol-1123/#paper5>,
         <http://ceur-ws.org/Vol-1123/#paper6> ;
-    ns6:issued "2014-02-11T00:00:00+00:00"^^xsd:dateTime ;
-    ns2:presentedAt <http://ceur-ws.org/Vol-1123/#event> ;
-    ns5:editor <http://ceur-ws.org/Vol-1123/#DavidiA.iShamma>,
+    ns8:issued "2014-02-11T00:00:00+00:00"^^xsd:dateTime ;
+    ns5:presentedAt <http://ceur-ws.org/Vol-1123/#event> ;
+    ns2:editor <http://ceur-ws.org/Vol-1123/#DavidiA.iShamma>,
         <http://ceur-ws.org/Vol-1123/#LauraiHollink>,
         <http://ceur-ws.org/Vol-1123/#LianliiGao>,
         <http://ceur-ws.org/Vol-1123/#MariekeivaniErp>,
@@ -217,11 +223,11 @@
 
 <http://ceur-ws.org/Vol-1123/#paper5> a ns4:Paper ;
     ns4:partOf <http://ceur-ws.org/Vol-1123/> ;
-    ns7:title "Extractivism: Extracting Activists Events from News Articles Using Existing NLP Tools and Services" ;
-    ns2:endPage 41 ;
-    ns2:numPages 12 ;
-    ns2:startPage 30 ;
-    ns5:author <http://ceur-ws.org/Vol-1123/#AntskeiFokkens>,
+    ns6:title "Extractivism: Extracting Activists Events from News Articles Using Existing NLP Tools and Services" ;
+    ns5:endPage 41 ;
+    ns5:numPages 12 ;
+    ns5:startPage 30 ;
+    ns2:author <http://ceur-ws.org/Vol-1123/#AntskeiFokkens>,
         <http://ceur-ws.org/Vol-1123/#FrankideiBakker>,
         <http://ceur-ws.org/Vol-1123/#IinaiHellsten>,
         <http://ceur-ws.org/Vol-1123/#JesperiHoeksema>,

@@ -1,12 +1,12 @@
-@prefix ns1: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns1: <http://swrc.ontoware.org/ontology/#> .
 @prefix ns2: <http://xmlns.com/foaf/0.1/> .
 @prefix ns3: <http://www.w3.org/2002/07/owl#> .
-@prefix ns4: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns4: <http://data.semanticweb.org/ns/swc/ontology/#> .
 @prefix ns5: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns6: <http://purl.org/ontology/bibo/#> .
-@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns8: <http://purl.org/dc/elements/1.1/> .
-@prefix ns9: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns6: <http://purl.org/dc/elements/1.1/> .
+@prefix ns7: <http://purl.org/ontology/bibo/#> .
+@prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns9: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -83,7 +83,7 @@
     ns2:name "Noriaki Izumi" .
 
 <http://ceur-ws.org/Vol-128/#OscariCorcho> a ns2:Person ;
-    ns4:affiliation "Intelligent Software Components, S.A. (ES)" ;
+    ns1:affiliation "Intelligent Software Components, S.A. (ES)" ;
     ns3:sameAs <http://ceur-ws.org/persons/OscariCorcho> ;
     ns2:name "Oscar Corcho" .
 
@@ -118,8 +118,8 @@
     ns2:name "Takeshi Morita" .
 
 <http://ceur-ws.org/Vol-128/#ToddiHughes> a ns2:Person ;
-    ns6:place <http://dbpedia.org/resource/United_States> ;
-    ns4:affiliation "Lockheed Martin (US)" ;
+    ns7:place <http://dbpedia.org/resource/United_States> ;
+    ns1:affiliation "Lockheed Martin (US)" ;
     ns3:sameAs <http://ceur-ws.org/persons/ToddiHughes> ;
     ns2:name "Todd Hughes" .
 
@@ -138,110 +138,116 @@
     ns2:made <http://ceur-ws.org/Vol-128/#EON2004_Morita> ;
     ns2:name "Yoshihiro Shigeta" .
 
-<http://ceur-ws.org/Vol-128/#event> a ns1:WorkshopEvent ;
-    ns1:hasLocation <http://dbpedia.org/resource/Japan> ;
-    ns1:hasPart <http://ceur-ws.org/Vol-128/#part-EON> ;
-    ns1:isSubEventOf <http://ceur-ws.org/Vol-128/#conf> ;
-    ns9:beginsAtDatetime "2004-11-07T00:00:00+00:00"^^xsd:dateTime ;
-    ns9:endsAtDatetime "2004-11-07T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:license "http://choosealicense.com/licenses/no-license/" ;
+<http://ceur-ws.org/Vol-128/#event> a ns4:WorkshopEvent ;
+    ns4:hasLocation <http://dbpedia.org/resource/Japan> ;
+    ns4:hasPart <http://ceur-ws.org/Vol-128/#part-EON> ;
+    ns4:isSubEventOf <http://ceur-ws.org/Vol-128/#conf> ;
+    ns8:beginsAtDatetime "2004-11-07T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:endsAtDatetime "2004-11-07T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:license "http://choosealicense.com/licenses/no-license/" ;
     rdfs:seeAlso <http://ceur-ws.org/Vol-62/#event>,
         <http://ceur-ws.org/Vol-87/#event> .
 
-<http://ceur-ws.org/Vol-128/#EON2004_EXP_Introduction> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-128/> ;
+<http://ceur-ws.org/Vol-128/#part-EON> a ns7:Workshop ;
+    ns4:partOf <http://ceur-ws.org/series/EON> ;
+    ns5:title "Evaluation of Ontology-based Tools 2004" ;
+    ns7:shortTitle "EON" ;
+    ns1:edition 3 .
+
+<http://ceur-ws.org/Vol-128/#EON2004_EXP_Introduction> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-128/> ;
     ns5:title "Introduction to the Experiment" ;
-    ns6:section <http://ceur-ws.org/Vol-128/#PartIIExperimentContributions> ;
-    ns4:author <http://ceur-ws.org/Vol-128/#JeromeiEuzenat> .
+    ns7:section <http://ceur-ws.org/Vol-128/#PartIIExperimentContributions> ;
+    ns1:author <http://ceur-ws.org/Vol-128/#JeromeiEuzenat> .
 
 <http://ceur-ws.org/Vol-128/#YorkiSure> a ns2:Person ;
-    ns4:affiliation "Institute AIFB, University of Karlsruhe (DE)" ;
+    ns1:affiliation "Institute AIFB, University of Karlsruhe (DE)" ;
     ns3:sameAs <http://ceur-ws.org/persons/YorkiSure> ;
     ns2:made <http://ceur-ws.org/Vol-128/#EON2004_EXP_Ehrig> ;
     ns2:name "York Sure" .
 
-<http://ceur-ws.org/Vol-128/#EON2004_Baojie> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-128/> ;
+<http://ceur-ws.org/Vol-128/#EON2004_Baojie> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-128/> ;
     ns5:title "Collaborative Ontology Building with Wiki@nt - A Multi-agent Based Ontology Building Environment" ;
-    ns6:section <http://ceur-ws.org/Vol-128/#PartIAcceptedPapers> ;
-    ns4:author <http://ceur-ws.org/Vol-128/#JieiBao>,
+    ns7:section <http://ceur-ws.org/Vol-128/#PartIAcceptedPapers> ;
+    ns1:author <http://ceur-ws.org/Vol-128/#JieiBao>,
         <http://ceur-ws.org/Vol-128/#VasantiGiHonavar> .
 
-<http://ceur-ws.org/Vol-128/#EON2004_EXP_Ehrig> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-128/> ;
+<http://ceur-ws.org/Vol-128/#EON2004_EXP_Ehrig> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-128/> ;
     ns5:title "Ontology Alignment - Karlsruhe" ;
-    ns6:section <http://ceur-ws.org/Vol-128/#PartIIExperimentContributions> ;
-    ns4:author <http://ceur-ws.org/Vol-128/#MarciEhrig>,
+    ns7:section <http://ceur-ws.org/Vol-128/#PartIIExperimentContributions> ;
+    ns1:author <http://ceur-ws.org/Vol-128/#MarciEhrig>,
         <http://ceur-ws.org/Vol-128/#YorkiSure> .
 
-<http://ceur-ws.org/Vol-128/#EON2004_EXP_Noy> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-128/> ;
+<http://ceur-ws.org/Vol-128/#EON2004_EXP_Noy> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-128/> ;
     ns5:title "Using Prompt Ontology-Comparison Tools in the EON Ontology Alignment Contest" ;
-    ns6:section <http://ceur-ws.org/Vol-128/#PartIIExperimentContributions> ;
-    ns4:author <http://ceur-ws.org/Vol-128/#MarkiA.iMusen>,
+    ns7:section <http://ceur-ws.org/Vol-128/#PartIIExperimentContributions> ;
+    ns1:author <http://ceur-ws.org/Vol-128/#MarkiA.iMusen>,
         <http://ceur-ws.org/Vol-128/#NatalyaiF.iNoy> .
 
-<http://ceur-ws.org/Vol-128/#EON2004_Garcia-Castro_Gomez-Perez> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-128/> ;
+<http://ceur-ws.org/Vol-128/#EON2004_Garcia-Castro_Gomez-Perez> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-128/> ;
     ns5:title "A Benchmark Suite for Evaluating the Performance of the WebODE Ontology Engineering Platform" ;
-    ns6:section <http://ceur-ws.org/Vol-128/#PartIAcceptedPapers> ;
-    ns4:author <http://ceur-ws.org/Vol-128/#Asunci%EF%BF%BDniG%EF%BF%BDmez-P%EF%BF%BDrez>,
+    ns7:section <http://ceur-ws.org/Vol-128/#PartIAcceptedPapers> ;
+    ns1:author <http://ceur-ws.org/Vol-128/#Asunci%EF%BF%BDniG%EF%BF%BDmez-P%EF%BF%BDrez>,
         <http://ceur-ws.org/Vol-128/#Ra%EF%BF%BDliGarc%EF%BF%BDa-Castro> .
 
 <http://ceur-ws.org/Vol-128/#JeromeiEuzenat> a ns2:Person ;
-    ns4:affiliation "" ;
+    ns1:affiliation "" ;
     ns3:sameAs <http://ceur-ws.org/persons/JeromeiEuzenat> ;
     ns2:made <http://ceur-ws.org/Vol-128/#EON2004_EXP_Euzenat>,
         <http://ceur-ws.org/Vol-128/#EON2004_EXP_Introduction> ;
     ns2:name "Jerome Euzenat" .
 
-<http://ceur-ws.org/Vol-128/#EON2004_SintekBuitelaar> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-128/> ;
+<http://ceur-ws.org/Vol-128/#EON2004_SintekBuitelaar> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-128/> ;
     ns5:title "A Formalization of Ontology Learning From Text" ;
-    ns6:section <http://ceur-ws.org/Vol-128/#PartIAcceptedPapers> ;
-    ns4:author <http://ceur-ws.org/Vol-128/#DanieliOlejnik>,
+    ns7:section <http://ceur-ws.org/Vol-128/#PartIAcceptedPapers> ;
+    ns1:author <http://ceur-ws.org/Vol-128/#DanieliOlejnik>,
         <http://ceur-ws.org/Vol-128/#MichaeliSintek>,
         <http://ceur-ws.org/Vol-128/#PauliBuitelaar> .
 
-<http://ceur-ws.org/Vol-128/#EON2004_EXP_Euzenat> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-128/> ;
+<http://ceur-ws.org/Vol-128/#EON2004_EXP_Euzenat> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-128/> ;
     ns5:title "Ontology Alignment with OLA" ;
-    ns6:section <http://ceur-ws.org/Vol-128/#PartIIExperimentContributions> ;
-    ns4:author <http://ceur-ws.org/Vol-128/#DavidiLoup>,
+    ns7:section <http://ceur-ws.org/Vol-128/#PartIIExperimentContributions> ;
+    ns1:author <http://ceur-ws.org/Vol-128/#DavidiLoup>,
         <http://ceur-ws.org/Vol-128/#JeromeiEuzenat>,
         <http://ceur-ws.org/Vol-128/#MohamediTouzani>,
         <http://ceur-ws.org/Vol-128/#PetkoiValtchev> .
 
-<http://ceur-ws.org/Vol-128/#EON2004_EXP_Hoshiai> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-128/> ;
+<http://ceur-ws.org/Vol-128/#EON2004_EXP_Hoshiai> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-128/> ;
     ns5:title "A Semantic Category Matching Approach to Ontology Alignment" ;
-    ns6:section <http://ceur-ws.org/Vol-128/#PartIIExperimentContributions> ;
-    ns4:author <http://ceur-ws.org/Vol-128/#DaisukeiNakamura>,
+    ns7:section <http://ceur-ws.org/Vol-128/#PartIIExperimentContributions> ;
+    ns1:author <http://ceur-ws.org/Vol-128/#DaisukeiNakamura>,
         <http://ceur-ws.org/Vol-128/#HiroshiiTsuda>,
         <http://ceur-ws.org/Vol-128/#TadashiiHoshiai>,
         <http://ceur-ws.org/Vol-128/#YasuoiYamane> .
 
-<http://ceur-ws.org/Vol-128/#PartIAcceptedPapers> a ns1:SessionEvent ;
-    ns1:partOf <http://ceur-ws.org/Vol-128/> ;
+<http://ceur-ws.org/Vol-128/#PartIAcceptedPapers> a ns4:SessionEvent ;
+    ns4:partOf <http://ceur-ws.org/Vol-128/> ;
     ns5:title "Part I: Accepted Papers" .
 
-<http://ceur-ws.org/Vol-128/#PartIIExperimentContributions> a ns1:SessionEvent ;
-    ns1:partOf <http://ceur-ws.org/Vol-128/> ;
+<http://ceur-ws.org/Vol-128/#PartIIExperimentContributions> a ns4:SessionEvent ;
+    ns4:partOf <http://ceur-ws.org/Vol-128/> ;
     ns5:title "Part II: Experiment Contributions" .
 
-<http://ceur-ws.org/Vol-128/#EON2004_Morita> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-128/> ;
+<http://ceur-ws.org/Vol-128/#EON2004_Morita> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-128/> ;
     ns5:title "DOODLE-OWL: OWL-based Semi-Automatic Ontology Development Environment" ;
-    ns6:section <http://ceur-ws.org/Vol-128/#PartIAcceptedPapers> ;
-    ns4:author <http://ceur-ws.org/Vol-128/#NaokiiFukuta>,
+    ns7:section <http://ceur-ws.org/Vol-128/#PartIAcceptedPapers> ;
+    ns1:author <http://ceur-ws.org/Vol-128/#NaokiiFukuta>,
         <http://ceur-ws.org/Vol-128/#NaokiiSugiura>,
         <http://ceur-ws.org/Vol-128/#NoriakiiIzumi>,
         <http://ceur-ws.org/Vol-128/#TakahiraiYamaguchi>,
         <http://ceur-ws.org/Vol-128/#TakeshiiMorita>,
         <http://ceur-ws.org/Vol-128/#YoshihiroiShigeta> .
 
-<http://ceur-ws.org/Vol-128/> a ns1:Proceedings ;
-    ns1:hasPart <http://ceur-ws.org/Vol-128/#EON2004_Baojie>,
+<http://ceur-ws.org/Vol-128/> a ns4:Proceedings ;
+    ns4:hasPart <http://ceur-ws.org/Vol-128/#EON2004_Baojie>,
         <http://ceur-ws.org/Vol-128/#EON2004_EXP_Ehrig>,
         <http://ceur-ws.org/Vol-128/#EON2004_EXP_Euzenat>,
         <http://ceur-ws.org/Vol-128/#EON2004_EXP_Hoshiai>,
@@ -250,11 +256,11 @@
         <http://ceur-ws.org/Vol-128/#EON2004_Garcia-Castro_Gomez-Perez>,
         <http://ceur-ws.org/Vol-128/#EON2004_Morita>,
         <http://ceur-ws.org/Vol-128/#EON2004_SintekBuitelaar> ;
-    ns1:hasSession <http://ceur-ws.org/Vol-128/#PartIAcceptedPapers>,
+    ns4:hasSession <http://ceur-ws.org/Vol-128/#PartIAcceptedPapers>,
         <http://ceur-ws.org/Vol-128/#PartIIExperimentContributions> ;
-    ns7:issued "2005-03-15T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:presentedAt <http://ceur-ws.org/Vol-128/#event> ;
-    ns4:editor <http://ceur-ws.org/Vol-128/#JeromeiEuzenat>,
+    ns9:issued "2005-03-15T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:presentedAt <http://ceur-ws.org/Vol-128/#event> ;
+    ns1:editor <http://ceur-ws.org/Vol-128/#JeromeiEuzenat>,
         <http://ceur-ws.org/Vol-128/#OscariCorcho>,
         <http://ceur-ws.org/Vol-128/#ToddiHughes>,
         <http://ceur-ws.org/Vol-128/#YorkiSure> .

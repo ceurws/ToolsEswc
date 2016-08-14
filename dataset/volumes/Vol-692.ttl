@@ -1,12 +1,12 @@
 @prefix ns1: <http://xmlns.com/foaf/0.1/> .
-@prefix ns2: <http://purl.org/dc/elements/1.1/> .
+@prefix ns2: <http://purl.org/dc/elements/1.1/#> .
 @prefix ns3: <http://www.w3.org/2002/07/owl#> .
 @prefix ns4: <http://data.semanticweb.org/ns/swc/ontology/#> .
 @prefix ns5: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns6: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns8: <http://purl.org/ontology/bibo/#> .
-@prefix ns9: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns6: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns7: <http://purl.org/ontology/bibo/#> .
+@prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns9: <http://purl.org/dc/elements/1.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -101,54 +101,60 @@
     ns4:hasLocation <http://dbpedia.org/resource/Austria> ;
     ns4:hasPart <http://ceur-ws.org/Vol-692/#part-P3JW> ;
     ns4:isSubEventOf <http://ceur-ws.org/Vol-692/#conf> ;
-    ns7:beginsAtDatetime "2010-09-16T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:endsAtDatetime "2010-09-16T00:00:00+00:00"^^xsd:dateTime ;
-    ns2:license "http://choosealicense.com/licenses/no-license/" .
+    ns8:beginsAtDatetime "2010-09-16T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:endsAtDatetime "2010-09-16T00:00:00+00:00"^^xsd:dateTime ;
+    ns9:license "http://choosealicense.com/licenses/no-license/" .
+
+<http://ceur-ws.org/Vol-692/#part-P3JW> a ns7:Workshop ;
+    ns4:partOf <http://ceur-ws.org/series/P3JW> ;
+    ns2:title "Work-in-Progress Session at PPPJ 2010" ;
+    ns7:shortTitle "P3JW" ;
+    ns5:edition 1 .
 
 <http://ceur-ws.org/Vol-692/#paper6> a ns4:Paper ;
     ns4:partOf <http://ceur-ws.org/Vol-692/> ;
-    ns6:title "Bytecode Analysis for Checking Java Access Modifiers" ;
+    ns2:title "Bytecode Analysis for Checking Java Access Modifiers" ;
     ns5:author <http://ceur-ws.org/Vol-692/#AndreasiM%C3%BCller> .
 
 <http://ceur-ws.org/Vol-692/#paper7> a ns4:Paper ;
     ns4:partOf <http://ceur-ws.org/Vol-692/> ;
-    ns6:title "Scala = Java (mod JVM) -- On the Performance Characteristics of Scala Programs on the Java Virtual Machine" ;
+    ns2:title "Scala = Java (mod JVM) -- On the Performance Characteristics of Scala Programs on the Java Virtual Machine" ;
     ns5:author <http://ceur-ws.org/Vol-692/#AndreasiSewe> .
 
 <http://ceur-ws.org/Vol-692/#paper8> a ns4:Paper ;
     ns4:partOf <http://ceur-ws.org/Vol-692/> ;
-    ns6:title "Extending Java's Communication Mechanisms for Multicore Processors" ;
+    ns2:title "Extending Java's Communication Mechanisms for Multicore Processors" ;
     ns5:author <http://ceur-ws.org/Vol-692/#GeorgeiC.iWells> .
 
 <http://ceur-ws.org/Vol-692/#paper1> a ns4:Paper ;
     ns4:partOf <http://ceur-ws.org/Vol-692/> ;
-    ns6:title "RuLAM Project: Speculative Parallelization for Java using Software Transactional Memory" ;
+    ns2:title "RuLAM Project: Speculative Parallelization for Java using Software Transactional Memory" ;
     ns5:author <http://ceur-ws.org/Vol-692/#IvoiAnjo>,
         <http://ceur-ws.org/Vol-692/#Jo%C3%A3oiCachopo> .
 
 <http://ceur-ws.org/Vol-692/#paper2> a ns4:Paper ;
     ns4:partOf <http://ceur-ws.org/Vol-692/> ;
-    ns6:title "A Java Framework for Developing Intelligent Tutoring Systems" ;
+    ns2:title "A Java Framework for Developing Intelligent Tutoring Systems" ;
     ns5:author <http://ceur-ws.org/Vol-692/#ColiniDepradine>,
         <http://ceur-ws.org/Vol-692/#JulianiArthur> .
 
 <http://ceur-ws.org/Vol-692/#paper3> a ns4:Paper ;
     ns4:partOf <http://ceur-ws.org/Vol-692/> ;
-    ns6:title "Implementing Dynamic Mixins for the Java Virtual Machine" ;
+    ns2:title "Implementing Dynamic Mixins for the Java Virtual Machine" ;
     ns5:author <http://ceur-ws.org/Vol-692/#ChristophiWimberger>,
         <http://ceur-ws.org/Vol-692/#KerstiniBreiteneder>,
         <http://ceur-ws.org/Vol-692/#ThomasiW%C3%BCrthinger> .
 
 <http://ceur-ws.org/Vol-692/#paper4> a ns4:Paper ;
     ns4:partOf <http://ceur-ws.org/Vol-692/> ;
-    ns6:title "Semantic Subtyping for Objects and Classes" ;
+    ns2:title "Semantic Subtyping for Objects and Classes" ;
     ns5:author <http://ceur-ws.org/Vol-692/#DanieleiGorla>,
         <http://ceur-ws.org/Vol-692/#DanieleiVaracca>,
         <http://ceur-ws.org/Vol-692/#OrnelaiDardha> .
 
 <http://ceur-ws.org/Vol-692/#paper5> a ns4:Paper ;
     ns4:partOf <http://ceur-ws.org/Vol-692/> ;
-    ns6:title "Specification, Execution, and Detection of Refactorings for Software Models" ;
+    ns2:title "Specification, Execution, and Detection of Refactorings for Software Models" ;
     ns5:author <http://ceur-ws.org/Vol-692/#KonradiWieland>,
         <http://ceur-ws.org/Vol-692/#PetraiBrosch>,
         <http://ceur-ws.org/Vol-692/#PhilipiLanger> .
@@ -162,7 +168,7 @@
         <http://ceur-ws.org/Vol-692/#paper6>,
         <http://ceur-ws.org/Vol-692/#paper7>,
         <http://ceur-ws.org/Vol-692/#paper8> ;
-    ns9:issued "2011-01-12T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:presentedAt <http://ceur-ws.org/Vol-692/#event> ;
+    ns6:issued "2011-01-12T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:presentedAt <http://ceur-ws.org/Vol-692/#event> ;
     ns5:editor <http://ceur-ws.org/Vol-692/#AndreasiKrall> .
 

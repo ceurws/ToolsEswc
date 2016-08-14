@@ -1,10 +1,10 @@
-@prefix ns1: <http://purl.org/ontology/bibo/#> .
+@prefix ns1: <http://swrc.ontoware.org/ontology/#> .
 @prefix ns2: <http://xmlns.com/foaf/0.1/> .
 @prefix ns3: <http://www.w3.org/2002/07/owl#> .
-@prefix ns4: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns4: <http://purl.org/dc/elements/1.1/#> .
 @prefix ns5: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix ns6: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns7: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns7: <http://purl.org/ontology/bibo/#> .
 @prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
 @prefix ns9: <http://purl.org/dc/elements/1.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -23,8 +23,8 @@
     ns2:name "Charles Herring" .
 
 <http://ceur-ws.org/Vol-30/#ChristophiBussler> a ns2:Person ;
-    ns1:place <http://dbpedia.org/resource/United_States> ;
-    ns4:affiliation "Netfish Technologies, Inc., Santa Clara, CA 95054" ;
+    ns7:place <http://dbpedia.org/resource/United_States> ;
+    ns1:affiliation "Netfish Technologies, Inc., Santa Clara, CA 95054" ;
     ns3:sameAs <http://ceur-ws.org/persons/ChristophiBussler> ;
     ns2:name "Christoph Bussler" .
 
@@ -39,7 +39,7 @@
     ns2:name "Florian Klein" .
 
 <http://ceur-ws.org/Vol-30/#HeikoiLudwig> a ns2:Person ;
-    ns4:affiliation "" ;
+    ns1:affiliation "" ;
     ns3:sameAs <http://ceur-ws.org/persons/HeikoiLudwig> ;
     ns2:name "Heiko Ludwig" .
 
@@ -59,8 +59,8 @@
     ns2:name "Markus Greunz" .
 
 <http://ceur-ws.org/Vol-30/#MartiniBichler> a ns2:Person ;
-    ns1:place <http://dbpedia.org/resource/Austria> ;
-    ns4:affiliation "Vienna University of Economics and Business Administration, A-1090 Vienna" ;
+    ns7:place <http://dbpedia.org/resource/Austria> ;
+    ns1:affiliation "Vienna University of Economics and Business Administration, A-1090 Vienna" ;
     ns3:sameAs <http://ceur-ws.org/persons/MartiniBichler> ;
     ns2:name "Martin Bichler" .
 
@@ -100,7 +100,7 @@
     ns2:name "Wijnand Derks" .
 
 <http://ceur-ws.org/Vol-30/#YigaliHoffner> a ns2:Person ;
-    ns4:affiliation "" ;
+    ns1:affiliation "" ;
     ns3:sameAs <http://ceur-ws.org/persons/YigaliHoffner> ;
     ns2:name "Yigal Hoffner" .
 
@@ -127,51 +127,57 @@
     ns8:endsAtDatetime "2000-06-06T00:00:00+00:00"^^xsd:dateTime ;
     ns9:license "http://choosealicense.com/licenses/no-license/" .
 
+<http://ceur-ws.org/Vol-30/#part-ISDO> a ns7:Workshop ;
+    ns6:partOf <http://ceur-ws.org/series/ISDO> ;
+    ns4:title "Infrastructure for Dynamic Business-to-Business Service Outsourcing" ;
+    ns7:shortTitle "ISDO" ;
+    ns1:edition 1 .
+
 <http://ceur-ws.org/Vol-30/#paper4> a ns6:Paper ;
     ns6:partOf <http://ceur-ws.org/Vol-30/> ;
-    ns7:title "A Multi-Perspective Approach for Modeling Workflows" ;
-    ns4:author <http://ceur-ws.org/Vol-30/#ZakariaiMaamar> .
+    ns4:title "A Multi-Perspective Approach for Modeling Workflows" ;
+    ns1:author <http://ceur-ws.org/Vol-30/#ZakariaiMaamar> .
 
 <http://ceur-ws.org/Vol-30/#paper5> a ns6:Paper ;
     ns6:partOf <http://ceur-ws.org/Vol-30/> ;
-    ns7:title "eFLow: an Open, Flexible and Configurable Approach to Service Composition" ;
-    ns4:author <http://ceur-ws.org/Vol-30/#FabioiCasati> .
+    ns4:title "eFLow: an Open, Flexible and Configurable Approach to Service Composition" ;
+    ns1:author <http://ceur-ws.org/Vol-30/#FabioiCasati> .
 
 <http://ceur-ws.org/Vol-30/#paper6> a ns6:Paper ;
     ns6:partOf <http://ceur-ws.org/Vol-30/> ;
-    ns7:title "Contract-Based Transaction Management in Cross-Organizational Workflow Management" ;
-    ns4:author <http://ceur-ws.org/Vol-30/#PauliGrefen> .
+    ns4:title "Contract-Based Transaction Management in Cross-Organizational Workflow Management" ;
+    ns1:author <http://ceur-ws.org/Vol-30/#PauliGrefen> .
 
 <http://ceur-ws.org/Vol-30/#paper1> a ns6:Paper ;
     ns6:partOf <http://ceur-ws.org/Vol-30/> ;
-    ns7:title "eServices to Integrate eBusiness with ERP Systems -- The Case of HiServ's Business Port" ;
-    ns4:author <http://ceur-ws.org/Vol-30/#NorbertiKaltenmorgen>,
+    ns4:title "eServices to Integrate eBusiness with ERP Systems -- The Case of HiServ's Business Port" ;
+    ns1:author <http://ceur-ws.org/Vol-30/#NorbertiKaltenmorgen>,
         <http://ceur-ws.org/Vol-30/#RolandiKlueber> .
 
 <http://ceur-ws.org/Vol-30/#paper3> a ns6:Paper ;
     ns6:partOf <http://ceur-ws.org/Vol-30/> ;
-    ns7:title "AFRICA: Workflow Interoperability Based on XML-Messages" ;
-    ns4:author <http://ceur-ws.org/Vol-30/#FlorianiKlein>,
+    ns4:title "AFRICA: Workflow Interoperability Based on XML-Messages" ;
+    ns1:author <http://ceur-ws.org/Vol-30/#FlorianiKlein>,
         <http://ceur-ws.org/Vol-30/#MichaelizuriMuehlen> .
 
 <http://ceur-ws.org/Vol-30/#paper7> a ns6:Paper ;
     ns6:partOf <http://ceur-ws.org/Vol-30/> ;
-    ns7:title "Legal Aspects of Electronic Contracts" ;
-    ns4:author <http://ceur-ws.org/Vol-30/#KatarinaiStanoevska-Slabeva>,
+    ns4:title "Legal Aspects of Electronic Contracts" ;
+    ns1:author <http://ceur-ws.org/Vol-30/#KatarinaiStanoevska-Slabeva>,
         <http://ceur-ws.org/Vol-30/#MarkusiGreunz>,
         <http://ceur-ws.org/Vol-30/#MichaeliGisler> .
 
 <http://ceur-ws.org/Vol-30/#paper8> a ns6:Paper ;
     ns6:partOf <http://ceur-ws.org/Vol-30/> ;
-    ns7:title "Business Contracts for B2B" ;
-    ns4:author <http://ceur-ws.org/Vol-30/#AndrewiGoodchild>,
+    ns4:title "Business Contracts for B2B" ;
+    ns1:author <http://ceur-ws.org/Vol-30/#AndrewiGoodchild>,
         <http://ceur-ws.org/Vol-30/#CharlesiHerring>,
         <http://ceur-ws.org/Vol-30/#ZuraniMilosevic> .
 
 <http://ceur-ws.org/Vol-30/#paper2> a ns6:Paper ;
     ns6:partOf <http://ceur-ws.org/Vol-30/> ;
-    ns7:title "Business-to-Business E-Commerce in a Logistics Domain" ;
-    ns4:author <http://ceur-ws.org/Vol-30/#HenkiEnsing>,
+    ns4:title "Business-to-Business E-Commerce in a Logistics Domain" ;
+    ns1:author <http://ceur-ws.org/Vol-30/#HenkiEnsing>,
         <http://ceur-ws.org/Vol-30/#MatthijsiDuitshof>,
         <http://ceur-ws.org/Vol-30/#WijnandiDerks>,
         <http://ceur-ws.org/Vol-30/#ZefiDamen> .
@@ -186,8 +192,8 @@
         <http://ceur-ws.org/Vol-30/#paper7>,
         <http://ceur-ws.org/Vol-30/#paper8> ;
     ns5:issued "2000-07-12T00:00:00+00:00"^^xsd:dateTime ;
-    ns1:presentedAt <http://ceur-ws.org/Vol-30/#event> ;
-    ns4:editor <http://ceur-ws.org/Vol-30/#ChristophiBussler>,
+    ns7:presentedAt <http://ceur-ws.org/Vol-30/#event> ;
+    ns1:editor <http://ceur-ws.org/Vol-30/#ChristophiBussler>,
         <http://ceur-ws.org/Vol-30/#HeikoiLudwig>,
         <http://ceur-ws.org/Vol-30/#MartiniBichler>,
         <http://ceur-ws.org/Vol-30/#YigaliHoffner> .

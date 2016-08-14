@@ -1,24 +1,25 @@
-@prefix ns1: <http://purl.org/dc/elements/1.1/> .
+@prefix ns1: <http://purl.org/ontology/bibo/#> .
 @prefix ns2: <http://data.semanticweb.org/ns/swc/ontology/#> .
 @prefix ns3: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns4: <http://www.w3.org/2002/07/owl#> .
-@prefix ns5: <http://xmlns.com/foaf/0.1/> .
-@prefix ns6: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns8: <http://purl.org/ontology/bibo/#> .
+@prefix ns4: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns5: <http://www.w3.org/2002/07/owl#> .
+@prefix ns6: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns8: <http://xmlns.com/foaf/0.1/> .
+@prefix ns9: <http://purl.org/dc/elements/1.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <http://ceur-ws.org/Vol-75/> a ns2:Proceedings ;
-    ns6:issued "2003-08-11T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:presentedAt <http://ceur-ws.org/Vol-75/#event> ;
+    ns7:issued "2003-08-11T00:00:00+00:00"^^xsd:dateTime ;
+    ns1:presentedAt <http://ceur-ws.org/Vol-75/#event> ;
     ns3:editor <http://ceur-ws.org/Vol-75/#GiliRegev> .
 
-<http://ceur-ws.org/Vol-75/#GiliRegev> a ns5:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/GiliRegev> ;
-    ns5:name "Gil Regev" .
+<http://ceur-ws.org/Vol-75/#GiliRegev> a ns8:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/GiliRegev> ;
+    ns8:name "Gil Regev" .
 
 <http://ceur-ws.org/Vol-75/#event> a ns2:WorkshopEvent ;
     ns2:hasLocation <http://dbpedia.org/resource/Austria> ;
@@ -30,7 +31,49 @@
         <http://ceur-ws.org/Vol-75/#part-SupportIan>,
         <http://ceur-ws.org/Vol-75/#part-UMICS> ;
     ns2:isSubEventOf <http://ceur-ws.org/Vol-75/#conf> ;
-    ns7:beginsAtDatetime "2003-06-16T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:endsAtDatetime "2003-06-20T00:00:00+00:00"^^xsd:dateTime ;
-    ns1:license "http://choosealicense.com/licenses/no-license/" .
+    ns6:beginsAtDatetime "2003-06-16T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:endsAtDatetime "2003-06-20T00:00:00+00:00"^^xsd:dateTime ;
+    ns9:license "http://choosealicense.com/licenses/no-license/" .
+
+<http://ceur-ws.org/Vol-75/#part-DSE> a ns1:Workshop ;
+    ns2:partOf <http://ceur-ws.org/series/DSE> ;
+    ns4:title "CAiSE Workshop Proceedings 2003" ;
+    ns1:shortTitle "DSE" ;
+    ns3:edition 1 .
+
+<http://ceur-ws.org/Vol-75/#part-ISBN> a ns1:Workshop ;
+    ns2:partOf <http://ceur-ws.org/series/ISBN> ;
+    ns4:title "CAiSE Workshop Proceedings 2003" ;
+    ns1:shortTitle "ISBN" ;
+    ns3:edition 1 .
+
+<http://ceur-ws.org/Vol-75/#part-REBPS> a ns1:Workshop ;
+    ns2:partOf <http://ceur-ws.org/series/REBPS> ;
+    ns4:title "CAiSE Workshop Proceedings 2003" ;
+    ns1:shortTitle "REBPS" ;
+    ns3:edition 1 .
+
+<http://ceur-ws.org/Vol-75/#part-SW-WL> a ns1:Workshop ;
+    ns2:partOf <http://ceur-ws.org/series/SW-WL> ;
+    ns4:title "CAiSE Workshop Proceedings 2003" ;
+    ns1:shortTitle "SW-WL" ;
+    ns3:edition 1 .
+
+<http://ceur-ws.org/Vol-75/#part-Si-Sa> a ns1:Workshop ;
+    ns2:partOf <http://ceur-ws.org/series/Si-Sa> ;
+    ns4:title "CAiSE Workshop Proceedings 2003" ;
+    ns1:shortTitle "Si-Sa" ;
+    ns3:edition 1 .
+
+<http://ceur-ws.org/Vol-75/#part-SupportIan> a ns1:Workshop ;
+    ns2:partOf <http://ceur-ws.org/series/SupportIan> ;
+    ns4:title "CAiSE Workshop Proceedings 2003" ;
+    ns1:shortTitle "SupportIan" ;
+    ns3:edition 1 .
+
+<http://ceur-ws.org/Vol-75/#part-UMICS> a ns1:Workshop ;
+    ns2:partOf <http://ceur-ws.org/series/UMICS> ;
+    ns4:title "CAiSE Workshop Proceedings 2003" ;
+    ns1:shortTitle "UMICS" ;
+    ns3:edition 1 .
 

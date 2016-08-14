@@ -1,11 +1,11 @@
 @prefix ns1: <http://xmlns.com/foaf/0.1/> .
 @prefix ns2: <http://swrc.ontoware.org/ontology/#> .
 @prefix ns3: <http://www.w3.org/2002/07/owl#> .
-@prefix ns4: <http://purl.org/ontology/bibo/#> .
-@prefix ns5: <http://purl.org/dc/elements/1.1/> .
-@prefix ns6: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns7: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns8: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns4: <http://purl.org/dc/elements/1.1/> .
+@prefix ns5: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns6: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns8: <http://purl.org/ontology/bibo/#> .
 @prefix ns9: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -18,7 +18,7 @@
     ns1:name "Adila A. Krisnadhi" .
 
 <http://ceur-ws.org/Vol-1426/#AidaniHogan> a ns1:Person ;
-    ns4:place <http://dbpedia.org/resource/Chile> ;
+    ns8:place <http://dbpedia.org/resource/Chile> ;
     ns2:affiliation "Department of Computer Science, Universidad de Chile" ;
     ns3:sameAs <http://ceur-ws.org/persons/AidaniHogan> ;
     ns1:name "Aidan Hogan" .
@@ -79,7 +79,7 @@
     ns1:name "José Luis Ambite" .
 
 <http://ceur-ws.org/Vol-1426/#JuaniSequeda> a ns1:Person ;
-    ns4:place <http://dbpedia.org/resource/United_States> ;
+    ns8:place <http://dbpedia.org/resource/United_States> ;
     ns2:affiliation "Capsenta Labs" ;
     ns3:sameAs <http://ceur-ws.org/persons/JuaniSequeda> ;
     ns1:name "Juan Sequeda" .
@@ -125,7 +125,7 @@
     ns1:name "Nazifa Karima" .
 
 <http://ceur-ws.org/Vol-1426/#OlafiHartig> a ns1:Person ;
-    ns4:place <http://dbpedia.org/resource/Germany> ;
+    ns8:place <http://dbpedia.org/resource/Germany> ;
     ns2:affiliation "Hasso-Plattner-Institute for IT Systems Engineering, University of Potsdam" ;
     ns3:sameAs <http://ceur-ws.org/persons/OlafiHartig> ;
     ns1:name "Olaf Hartig" .
@@ -175,18 +175,24 @@
     ns1:made <http://ceur-ws.org/Vol-1426/#paper-07> ;
     ns1:name "Yinyi Chen" .
 
-<http://ceur-ws.org/Vol-1426/#event> a ns8:WorkshopEvent ;
-    ns8:hasLocation <http://dbpedia.org/resource/United_States> ;
-    ns8:hasPart <http://ceur-ws.org/Vol-1426/#part-COLD> ;
-    ns8:isSubEventOf <http://ceur-ws.org/Vol-1426/#conf> ;
-    ns6:beginsAtDatetime "2015-10-12T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:endsAtDatetime "2015-10-12T00:00:00+00:00"^^xsd:dateTime ;
-    ns5:license "http://creativecommons.org/publicdomain/zero/1.0/" ;
+<http://ceur-ws.org/Vol-1426/#event> a ns6:WorkshopEvent ;
+    ns6:hasLocation <http://dbpedia.org/resource/United_States> ;
+    ns6:hasPart <http://ceur-ws.org/Vol-1426/#part-COLD> ;
+    ns6:isSubEventOf <http://ceur-ws.org/Vol-1426/#conf> ;
+    ns7:beginsAtDatetime "2015-10-12T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:endsAtDatetime "2015-10-12T00:00:00+00:00"^^xsd:dateTime ;
+    ns4:license "http://creativecommons.org/publicdomain/zero/1.0/" ;
     rdfs:seeAlso <http://ceur-ws.org/Vol-1034/#event>,
         <http://ceur-ws.org/Vol-1264/#event>,
         <http://ceur-ws.org/Vol-665/#event>,
         <http://ceur-ws.org/Vol-782/#event>,
         <http://ceur-ws.org/Vol-905/#event> .
+
+<http://ceur-ws.org/Vol-1426/#part-COLD> a ns8:Workshop ;
+    ns6:partOf <http://ceur-ws.org/series/COLD> ;
+    ns5:title "Consuming Linked Data 2015" ;
+    ns8:shortTitle "COLD" ;
+    ns2:edition 6 .
 
 <http://ceur-ws.org/Vol-1426/#CraigiKnoblock> a ns1:Person ;
     ns3:sameAs <http://ceur-ws.org/persons/CraigiKnoblock> ;
@@ -200,64 +206,64 @@
         <http://ceur-ws.org/Vol-1426/#paper-08> ;
     ns1:name "Pedro Szekely" .
 
-<http://ceur-ws.org/Vol-1426/#paper-04> a ns8:Paper ;
-    ns8:partOf <http://ceur-ws.org/Vol-1426/> ;
-    ns7:title "Towards Crawling the Web for Structured Data: Pitfalls of Common Crawl for E-Commerce" ;
+<http://ceur-ws.org/Vol-1426/#paper-04> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1426/> ;
+    ns5:title "Towards Crawling the Web for Structured Data: Pitfalls of Common Crawl for E-Commerce" ;
     ns2:author <http://ceur-ws.org/Vol-1426/#AlexiStolz>,
         <http://ceur-ws.org/Vol-1426/#MartiniHepp> .
 
-<http://ceur-ws.org/Vol-1426/#paper-03> a ns8:Paper ;
-    ns8:partOf <http://ceur-ws.org/Vol-1426/> ;
-    ns7:title "Uniqueness, Density, and Keyness: Exploring Class Hierarchies" ;
+<http://ceur-ws.org/Vol-1426/#paper-03> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1426/> ;
+    ns5:title "Uniqueness, Density, and Keyness: Exploring Class Hierarchies" ;
     ns2:author <http://ceur-ws.org/Vol-1426/#AnjaiJentzsch>,
         <http://ceur-ws.org/Vol-1426/#FelixiNaumann>,
         <http://ceur-ws.org/Vol-1426/#HannesiM%C3%BChleisen> .
 
-<http://ceur-ws.org/Vol-1426/#paper-01> a ns8:Paper ;
-    ns8:partOf <http://ceur-ws.org/Vol-1426/> ;
-    ns7:title "Policies Composition based on Data Usage Context" ;
+<http://ceur-ws.org/Vol-1426/#paper-01> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1426/> ;
+    ns5:title "Policies Composition based on Data Usage Context" ;
     ns2:author <http://ceur-ws.org/Vol-1426/#AntonioiGarcia-Macias>,
         <http://ceur-ws.org/Vol-1426/#EmmanueliDesmontils>,
         <http://ceur-ws.org/Vol-1426/#PatriciaiSerrano-Alvarado>,
         <http://ceur-ws.org/Vol-1426/#ValeriaiSoto-Mendoza> .
 
-<http://ceur-ws.org/Vol-1426/#paper-02> a ns8:Paper ;
-    ns8:partOf <http://ceur-ws.org/Vol-1426/> ;
-    ns7:title "Optimizing RDF Data Cubes for Efficient Processing of Analytical Queries" ;
+<http://ceur-ws.org/Vol-1426/#paper-02> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1426/> ;
+    ns5:title "Optimizing RDF Data Cubes for Efficient Processing of Analytical Queries" ;
     ns2:author <http://ceur-ws.org/Vol-1426/#AlexiB.iAndersen>,
         <http://ceur-ws.org/Vol-1426/#KatjaiHose>,
         <http://ceur-ws.org/Vol-1426/#KimiAhlstr%C3%B8miJakobsen>,
         <http://ceur-ws.org/Vol-1426/#TorbeniBachiPedersen> .
 
-<http://ceur-ws.org/Vol-1426/#paper-08> a ns8:Paper ;
-    ns8:partOf <http://ceur-ws.org/Vol-1426/> ;
-    ns7:title "KR2RML: An Alternative Interpretation of R2RML for Heterogenous Sources" ;
+<http://ceur-ws.org/Vol-1426/#paper-08> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1426/> ;
+    ns5:title "KR2RML: An Alternative Interpretation of R2RML for Heterogenous Sources" ;
     ns2:author <http://ceur-ws.org/Vol-1426/#ChengyeiYin>,
         <http://ceur-ws.org/Vol-1426/#CraigiKnoblock>,
         <http://ceur-ws.org/Vol-1426/#JasoniSlepicka>,
         <http://ceur-ws.org/Vol-1426/#PedroiSzekely> .
 
-<http://ceur-ws.org/Vol-1426/#paper-06> a ns8:Paper ;
-    ns8:partOf <http://ceur-ws.org/Vol-1426/> ;
-    ns7:title "LOTUS: Linked Open Text UnleaShed" ;
+<http://ceur-ws.org/Vol-1426/#paper-06> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1426/> ;
+    ns5:title "LOTUS: Linked Open Text UnleaShed" ;
     ns2:author <http://ceur-ws.org/Vol-1426/#FilipiIlievski>,
         <http://ceur-ws.org/Vol-1426/#LaurensiRietveld>,
         <http://ceur-ws.org/Vol-1426/#MariekeiVaniErp>,
         <http://ceur-ws.org/Vol-1426/#StefaniSchlobach>,
         <http://ceur-ws.org/Vol-1426/#WouteriBeek> .
 
-<http://ceur-ws.org/Vol-1426/#paper-07> a ns8:Paper ;
-    ns8:partOf <http://ceur-ws.org/Vol-1426/> ;
-    ns7:title "Leveraging Linked Data to Infer Semantic Relations within Structured Sources" ;
+<http://ceur-ws.org/Vol-1426/#paper-07> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1426/> ;
+    ns5:title "Leveraging Linked Data to Infer Semantic Relations within Structured Sources" ;
     ns2:author <http://ceur-ws.org/Vol-1426/#CraigiKnoblock>,
         <http://ceur-ws.org/Vol-1426/#Jos%C3%A9iLuisiAmbite>,
         <http://ceur-ws.org/Vol-1426/#MohseniTaheriyan>,
         <http://ceur-ws.org/Vol-1426/#PedroiSzekely>,
         <http://ceur-ws.org/Vol-1426/#YinyiiChen> .
 
-<http://ceur-ws.org/Vol-1426/#paper-05> a ns8:Paper ;
-    ns8:partOf <http://ceur-ws.org/Vol-1426/> ;
-    ns7:title "Pattern-Based Linked Data Publication: The Linked Chess Dataset Case" ;
+<http://ceur-ws.org/Vol-1426/#paper-05> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-1426/> ;
+    ns5:title "Pattern-Based Linked Data Publication: The Linked Chess Dataset Case" ;
     ns2:author <http://ceur-ws.org/Vol-1426/#AdilaiA.iKrisnadhi>,
         <http://ceur-ws.org/Vol-1426/#MichelleiCheatham>,
         <http://ceur-ws.org/Vol-1426/#NazifaiKarima>,
@@ -265,8 +271,8 @@
         <http://ceur-ws.org/Vol-1426/#ReihanehiAmini>,
         <http://ceur-ws.org/Vol-1426/#V%C3%ADctoriRodr%C3%ADguez-Doncel> .
 
-<http://ceur-ws.org/Vol-1426/> a ns8:Proceedings ;
-    ns8:hasPart <http://ceur-ws.org/Vol-1426/#paper-01>,
+<http://ceur-ws.org/Vol-1426/> a ns6:Proceedings ;
+    ns6:hasPart <http://ceur-ws.org/Vol-1426/#paper-01>,
         <http://ceur-ws.org/Vol-1426/#paper-02>,
         <http://ceur-ws.org/Vol-1426/#paper-03>,
         <http://ceur-ws.org/Vol-1426/#paper-04>,
@@ -275,7 +281,7 @@
         <http://ceur-ws.org/Vol-1426/#paper-07>,
         <http://ceur-ws.org/Vol-1426/#paper-08> ;
     ns9:issued "2015-08-24T00:00:00+00:00"^^xsd:dateTime ;
-    ns4:presentedAt <http://ceur-ws.org/Vol-1426/#event> ;
+    ns8:presentedAt <http://ceur-ws.org/Vol-1426/#event> ;
     ns2:editor <http://ceur-ws.org/Vol-1426/#AidaniHogan>,
         <http://ceur-ws.org/Vol-1426/#JuaniSequeda>,
         <http://ceur-ws.org/Vol-1426/#OlafiHartig> .

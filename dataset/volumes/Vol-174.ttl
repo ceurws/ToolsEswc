@@ -1,12 +1,12 @@
-@prefix ns1: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns1: <http://purl.org/ontology/bibo/#> .
 @prefix ns2: <http://xmlns.com/foaf/0.1/> .
 @prefix ns3: <http://www.w3.org/2002/07/owl#> .
 @prefix ns4: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns5: <http://purl.org/ontology/bibo/#> .
-@prefix ns6: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns8: <http://purl.org/dc/elements/1.1/> .
-@prefix ns9: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns5: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns6: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns7: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns9: <http://purl.org/dc/elements/1.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -23,8 +23,8 @@
     ns2:name "Ching-Chien Chen" .
 
 <http://ceur-ws.org/Vol-174/#ChristopheiClaramunt> a ns2:Person ;
-    ns5:place <http://dbpedia.org/resource/France> ;
-    ns1:affiliation "Naval Academy Research Institute" ;
+    ns1:place <http://dbpedia.org/resource/France> ;
+    ns5:affiliation "Naval Academy Research Institute" ;
     ns3:sameAs <http://ceur-ws.org/persons/ChristopheiClaramunt> ;
     ns2:name "Christophe Claramunt" .
 
@@ -64,8 +64,8 @@
     ns2:name "Jidong Chen" .
 
 <http://ceur-ws.org/Vol-174/#Ki-JouneiLi> a ns2:Person ;
-    ns5:place <http://dbpedia.org/resource/South_Korea> ;
-    ns1:affiliation "Pusan National University" ;
+    ns1:place <http://dbpedia.org/resource/South_Korea> ;
+    ns5:affiliation "Pusan National University" ;
     ns3:sameAs <http://ceur-ws.org/persons/Ki-JouneiLi> ;
     ns2:name "Ki-Joune Li" .
 
@@ -90,8 +90,8 @@
     ns2:name "Pavani Kuntala" .
 
 <http://ceur-ws.org/Vol-174/#SimonasiSaltenis> a ns2:Person ;
-    ns5:place <http://dbpedia.org/resource/Denmark> ;
-    ns1:affiliation "Aalborg University" ;
+    ns1:place <http://dbpedia.org/resource/Denmark> ;
+    ns5:affiliation "Aalborg University" ;
     ns3:sameAs <http://ceur-ws.org/persons/SimonasiSaltenis> ;
     ns2:name "Simonas Saltenis" .
 
@@ -139,9 +139,15 @@
     ns4:hasLocation <http://dbpedia.org/resource/South_Korea> ;
     ns4:hasPart <http://ceur-ws.org/Vol-174/#part-STDBM> ;
     ns4:isSubEventOf <http://ceur-ws.org/Vol-174/#conf> ;
-    ns9:beginsAtDatetime "2006-09-11T00:00:00+00:00"^^xsd:dateTime ;
-    ns9:endsAtDatetime "2006-09-11T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:license "http://choosealicense.com/licenses/no-license/" .
+    ns8:beginsAtDatetime "2006-09-11T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:endsAtDatetime "2006-09-11T00:00:00+00:00"^^xsd:dateTime ;
+    ns9:license "http://choosealicense.com/licenses/no-license/" .
+
+<http://ceur-ws.org/Vol-174/#part-STDBM> a ns1:Workshop ;
+    ns4:partOf <http://ceur-ws.org/series/STDBM> ;
+    ns7:title "Spatio-Temporal Database Management 2006" ;
+    ns1:shortTitle "STDBM" ;
+    ns5:edition 3 .
 
 <http://ceur-ws.org/Vol-174/#CyrusiShahabi> a ns2:Person ;
     ns3:sameAs <http://ceur-ws.org/persons/CyrusiShahabi> ;
@@ -151,68 +157,68 @@
 
 <http://ceur-ws.org/Vol-174/#paper6> a ns4:Paper ;
     ns4:partOf <http://ceur-ws.org/Vol-174/> ;
-    ns6:title "On Construction of Holistic Synopses under the Duplicate Semantics of Streaming Queries" ;
-    ns5:section <http://ceur-ws.org/Vol-174/#Completeproceedings> ;
-    ns1:author <http://ceur-ws.org/Vol-174/#DavidiToman> .
+    ns7:title "On Construction of Holistic Synopses under the Duplicate Semantics of Streaming Queries" ;
+    ns1:section <http://ceur-ws.org/Vol-174/#Completeproceedings> ;
+    ns5:author <http://ceur-ws.org/Vol-174/#DavidiToman> .
 
 <http://ceur-ws.org/Vol-174/#paper3> a ns4:Paper ;
     ns4:partOf <http://ceur-ws.org/Vol-174/> ;
-    ns6:title "A Spatio-Temporal Database Model on Transportation Surveillance Videos" ;
-    ns5:section <http://ceur-ws.org/Vol-174/#Completeproceedings> ;
-    ns1:author <http://ceur-ws.org/Vol-174/#ChengcuiiZhang>,
+    ns7:title "A Spatio-Temporal Database Model on Transportation Surveillance Videos" ;
+    ns1:section <http://ceur-ws.org/Vol-174/#Completeproceedings> ;
+    ns5:author <http://ceur-ws.org/Vol-174/#ChengcuiiZhang>,
         <http://ceur-ws.org/Vol-174/#XiniChen> .
 
 <http://ceur-ws.org/Vol-174/#paper5> a ns4:Paper ;
     ns4:partOf <http://ceur-ws.org/Vol-174/> ;
-    ns6:title "Additively Weighted Voronoi Diagrams for Optimal Sequenced Route Queries" ;
-    ns5:section <http://ceur-ws.org/Vol-174/#Completeproceedings> ;
-    ns1:author <http://ceur-ws.org/Vol-174/#CyrusiShahabi>,
+    ns7:title "Additively Weighted Voronoi Diagrams for Optimal Sequenced Route Queries" ;
+    ns1:section <http://ceur-ws.org/Vol-174/#Completeproceedings> ;
+    ns5:author <http://ceur-ws.org/Vol-174/#CyrusiShahabi>,
         <http://ceur-ws.org/Vol-174/#MehdiiSharifzadeh> .
 
 <http://ceur-ws.org/Vol-174/#paper7> a ns4:Paper ;
     ns4:partOf <http://ceur-ws.org/Vol-174/> ;
-    ns6:title "Mining Long, Sharable Patterns in Trajectories of Moving Objects" ;
-    ns5:section <http://ceur-ws.org/Vol-174/#Completeproceedings> ;
-    ns1:author <http://ceur-ws.org/Vol-174/#GyozoiGidofalvi>,
+    ns7:title "Mining Long, Sharable Patterns in Trajectories of Moving Objects" ;
+    ns1:section <http://ceur-ws.org/Vol-174/#Completeproceedings> ;
+    ns5:author <http://ceur-ws.org/Vol-174/#GyozoiGidofalvi>,
         <http://ceur-ws.org/Vol-174/#TorbeniBachiPedersen> .
 
 <http://ceur-ws.org/Vol-174/#paper8> a ns4:Paper ;
     ns4:partOf <http://ceur-ws.org/Vol-174/> ;
-    ns6:title "Fusion Based Methodology for Spatial Clustering" ;
-    ns5:section <http://ceur-ws.org/Vol-174/#Completeproceedings> ;
-    ns1:author <http://ceur-ws.org/Vol-174/#PavaniiKuntala>,
+    ns7:title "Fusion Based Methodology for Spatial Clustering" ;
+    ns1:section <http://ceur-ws.org/Vol-174/#Completeproceedings> ;
+    ns5:author <http://ceur-ws.org/Vol-174/#PavaniiKuntala>,
         <http://ceur-ws.org/Vol-174/#VijaviV.iRaghavan> .
 
 <http://ceur-ws.org/Vol-174/#paper9> a ns4:Paper ;
     ns4:partOf <http://ceur-ws.org/Vol-174/> ;
-    ns6:title "A Storage Scheme for Multi-dimensional Databases Using Extendible Array Files" ;
-    ns5:section <http://ceur-ws.org/Vol-174/#Completeproceedings> ;
-    ns1:author <http://ceur-ws.org/Vol-174/#DoroniRotem>,
+    ns7:title "A Storage Scheme for Multi-dimensional Databases Using Extendible Array Files" ;
+    ns1:section <http://ceur-ws.org/Vol-174/#Completeproceedings> ;
+    ns5:author <http://ceur-ws.org/Vol-174/#DoroniRotem>,
         <http://ceur-ws.org/Vol-174/#EkowiJ.iOtoo> .
 
 <http://ceur-ws.org/Vol-174/#paper1> a ns4:Paper ;
     ns4:partOf <http://ceur-ws.org/Vol-174/> ;
-    ns6:title "Automatically and Efficiently Matching Road Networks with Spatial Attributes in Unknown Geometry Systems" ;
-    ns5:section <http://ceur-ws.org/Vol-174/#Completeproceedings> ;
-    ns1:author <http://ceur-ws.org/Vol-174/#Ching-ChieniChen>,
+    ns7:title "Automatically and Efficiently Matching Road Networks with Spatial Attributes in Unknown Geometry Systems" ;
+    ns1:section <http://ceur-ws.org/Vol-174/#Completeproceedings> ;
+    ns5:author <http://ceur-ws.org/Vol-174/#Ching-ChieniChen>,
         <http://ceur-ws.org/Vol-174/#Craig.iA.iKnoblock>,
         <http://ceur-ws.org/Vol-174/#CyrusiShahabi>,
         <http://ceur-ws.org/Vol-174/#MohammadiKolahdouzan> .
 
 <http://ceur-ws.org/Vol-174/#paper2> a ns4:Paper ;
     ns4:partOf <http://ceur-ws.org/Vol-174/> ;
-    ns6:title "Update-efficient Indexing of Moving Objects in Road Networks" ;
-    ns5:section <http://ceur-ws.org/Vol-174/#Completeproceedings> ;
-    ns1:author <http://ceur-ws.org/Vol-174/#JidongiChen>,
+    ns7:title "Update-efficient Indexing of Moving Objects in Road Networks" ;
+    ns1:section <http://ceur-ws.org/Vol-174/#Completeproceedings> ;
+    ns5:author <http://ceur-ws.org/Vol-174/#JidongiChen>,
         <http://ceur-ws.org/Vol-174/#XiaofengiMeng>,
         <http://ceur-ws.org/Vol-174/#YanyaniGuo>,
         <http://ceur-ws.org/Vol-174/#ZheniXiao> .
 
 <http://ceur-ws.org/Vol-174/#paper4> a ns4:Paper ;
     ns4:partOf <http://ceur-ws.org/Vol-174/> ;
-    ns6:title "Predicted Range Aggregate Processing in Spatio-temporal Databases" ;
-    ns5:section <http://ceur-ws.org/Vol-174/#Completeproceedings> ;
-    ns1:author <http://ceur-ws.org/Vol-174/#GuifeniTang>,
+    ns7:title "Predicted Range Aggregate Processing in Spatio-temporal Databases" ;
+    ns1:section <http://ceur-ws.org/Vol-174/#Completeproceedings> ;
+    ns5:author <http://ceur-ws.org/Vol-174/#GuifeniTang>,
         <http://ceur-ws.org/Vol-174/#NingiJing>,
         <http://ceur-ws.org/Vol-174/#WeiiLiao>,
         <http://ceur-ws.org/Vol-174/#ZhinongiZhong> .
@@ -228,13 +234,13 @@
         <http://ceur-ws.org/Vol-174/#paper8>,
         <http://ceur-ws.org/Vol-174/#paper9> ;
     ns4:hasSession <http://ceur-ws.org/Vol-174/#Completeproceedings> ;
-    ns7:issued "2006-08-28T00:00:00+00:00"^^xsd:dateTime ;
-    ns5:presentedAt <http://ceur-ws.org/Vol-174/#event> ;
-    ns1:editor <http://ceur-ws.org/Vol-174/#ChristopheiClaramunt>,
+    ns6:issued "2006-08-28T00:00:00+00:00"^^xsd:dateTime ;
+    ns1:presentedAt <http://ceur-ws.org/Vol-174/#event> ;
+    ns5:editor <http://ceur-ws.org/Vol-174/#ChristopheiClaramunt>,
         <http://ceur-ws.org/Vol-174/#Ki-JouneiLi>,
         <http://ceur-ws.org/Vol-174/#SimonasiSaltenis> .
 
 <http://ceur-ws.org/Vol-174/#Completeproceedings> a ns4:SessionEvent ;
     ns4:partOf <http://ceur-ws.org/Vol-174/> ;
-    ns6:title "Complete proceedings" .
+    ns7:title "Complete proceedings" .
 

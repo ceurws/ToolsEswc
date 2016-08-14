@@ -1,12 +1,12 @@
-@prefix ns1: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns1: <http://purl.org/dc/elements/1.1/#> .
 @prefix ns2: <http://xmlns.com/foaf/0.1/> .
-@prefix ns3: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns3: <http://swrc.ontoware.org/ontology/#> .
 @prefix ns4: <http://www.w3.org/2002/07/owl#> .
-@prefix ns5: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns5: <http://data.semanticweb.org/ns/swc/ontology/#> .
 @prefix ns6: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns8: <http://purl.org/dc/elements/1.1/> .
-@prefix ns9: <http://purl.org/ontology/bibo/#> .
+@prefix ns7: <http://purl.org/ontology/bibo/#> .
+@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns9: <http://purl.org/dc/elements/1.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -348,8 +348,8 @@
     ns2:name "Octavian Popescu" .
 
 <http://ceur-ws.org/Vol-201/#OresteiSignore> a ns2:Person ;
-    ns9:place <http://dbpedia.org/resource/Italy> ;
-    ns1:affiliation "Istituto di Scienza e Tecnologie dell' Informazione, CNR" ;
+    ns7:place <http://dbpedia.org/resource/Italy> ;
+    ns3:affiliation "Istituto di Scienza e Tecnologie dell' Informazione, CNR" ;
     ns4:sameAs <http://ceur-ws.org/persons/OresteiSignore> ;
     ns2:name "Oreste Signore" .
 
@@ -498,24 +498,30 @@
     ns2:made <http://ceur-ws.org/Vol-201/#16> ;
     ns2:name "Yillbyung Lee" .
 
-<http://ceur-ws.org/Vol-201/#event> a ns3:WorkshopEvent ;
-    ns3:hasLocation <http://dbpedia.org/resource/Italy> ;
-    ns3:hasPart <http://ceur-ws.org/Vol-201/#part-SWAP> ;
-    ns3:isSubEventOf <http://ceur-ws.org/Vol-201/#conf> ;
+<http://ceur-ws.org/Vol-201/#event> a ns5:WorkshopEvent ;
+    ns5:hasLocation <http://dbpedia.org/resource/Italy> ;
+    ns5:hasPart <http://ceur-ws.org/Vol-201/#part-SWAP> ;
+    ns5:isSubEventOf <http://ceur-ws.org/Vol-201/#conf> ;
     ns6:beginsAtDatetime "2006-12-18T00:00:00+00:00"^^xsd:dateTime ;
     ns6:endsAtDatetime "2006-12-20T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:license "http://choosealicense.com/licenses/no-license/" ;
+    ns9:license "http://choosealicense.com/licenses/no-license/" ;
     rdfs:seeAlso <http://ceur-ws.org/Vol-166/#event> .
 
-<http://ceur-ws.org/Vol-201/#06> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-201/> ;
-    ns5:title "Enabling Data Mining Systems to Semantic Web Applications" ;
-    ns1:author <http://ceur-ws.org/Vol-201/#FrancescaiA.iLisi> .
+<http://ceur-ws.org/Vol-201/#part-SWAP> a ns7:Workshop ;
+    ns5:partOf <http://ceur-ws.org/series/SWAP> ;
+    ns1:title "Semantic Web Applications and Perspectives 2006" ;
+    ns7:shortTitle "SWAP" ;
+    ns3:edition 3 .
 
-<http://ceur-ws.org/Vol-201/#36> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-201/> ;
-    ns5:title "A Discount Approach to the Semantic Web" ;
-    ns1:author <http://ceur-ws.org/Vol-201/#EmmaiTonkin> .
+<http://ceur-ws.org/Vol-201/#06> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-201/> ;
+    ns1:title "Enabling Data Mining Systems to Semantic Web Applications" ;
+    ns3:author <http://ceur-ws.org/Vol-201/#FrancescaiA.iLisi> .
+
+<http://ceur-ws.org/Vol-201/#36> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-201/> ;
+    ns1:title "A Discount Approach to the Semantic Web" ;
+    ns3:author <http://ceur-ws.org/Vol-201/#EmmaiTonkin> .
 
 <http://ceur-ws.org/Vol-201/#DanieliGiacomuzzi> a ns2:Person ;
     ns4:sameAs <http://ceur-ws.org/persons/DanieliGiacomuzzi> ;
@@ -530,8 +536,8 @@
     ns2:name "Domenico Redavid" .
 
 <http://ceur-ws.org/Vol-201/#GiovanniiTummarello> a ns2:Person ;
-    ns9:place <http://dbpedia.org/resource/Italy> ;
-    ns1:affiliation "Università Politecnica delle Marche" ;
+    ns7:place <http://dbpedia.org/resource/Italy> ;
+    ns3:affiliation "Università Politecnica delle Marche" ;
     ns4:sameAs <http://ceur-ws.org/persons/GiovanniiTummarello> ;
     ns2:made <http://ceur-ws.org/Vol-201/#42> ;
     ns2:name "Giovanni Tummarello" .
@@ -566,40 +572,40 @@
         <http://ceur-ws.org/Vol-201/#10> ;
     ns2:name "Zizette Boufaïda" .
 
-<http://ceur-ws.org/Vol-201/#08> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-201/> ;
-    ns5:title "Reconciling Concepts and Relations in Heterogeneous Ontologies" ;
-    ns1:author <http://ceur-ws.org/Vol-201/#ChiaraiGhidini>,
+<http://ceur-ws.org/Vol-201/#08> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-201/> ;
+    ns1:title "Reconciling Concepts and Relations in Heterogeneous Ontologies" ;
+    ns3:author <http://ceur-ws.org/Vol-201/#ChiaraiGhidini>,
         <http://ceur-ws.org/Vol-201/#LucianoiSerafini> .
 
-<http://ceur-ws.org/Vol-201/#17> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-201/> ;
-    ns5:title "On Integrating a Semantic Wiki in a Knowledge Management System" ;
-    ns1:author <http://ceur-ws.org/Vol-201/#FlavioiDeiPaoli>,
+<http://ceur-ws.org/Vol-201/#17> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-201/> ;
+    ns1:title "On Integrating a Semantic Wiki in a Knowledge Management System" ;
+    ns3:author <http://ceur-ws.org/Vol-201/#FlavioiDeiPaoli>,
         <http://ceur-ws.org/Vol-201/#MarcoiLoregian> .
 
-<http://ceur-ws.org/Vol-201/#19> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-201/> ;
-    ns5:title "Unsupervised Metadata Extraction in Scientific Digital Libraries Using A-Priori Domain-Specific Knowledge" ;
-    ns1:author <http://ceur-ws.org/Vol-201/#AlexanderiIvanyukovich>,
+<http://ceur-ws.org/Vol-201/#19> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-201/> ;
+    ns1:title "Unsupervised Metadata Extraction in Scientific Digital Libraries Using A-Priori Domain-Specific Knowledge" ;
+    ns3:author <http://ceur-ws.org/Vol-201/#AlexanderiIvanyukovich>,
         <http://ceur-ws.org/Vol-201/#MaurizioiMarchese> .
 
-<http://ceur-ws.org/Vol-201/#21> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-201/> ;
-    ns5:title "Improving Human-Semantic Web Interaction: The Rhizomer Experience" ;
-    ns1:author <http://ceur-ws.org/Vol-201/#RobertoiGarc%C3%ADa>,
+<http://ceur-ws.org/Vol-201/#21> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-201/> ;
+    ns1:title "Improving Human-Semantic Web Interaction: The Rhizomer Experience" ;
+    ns3:author <http://ceur-ws.org/Vol-201/#RobertoiGarc%C3%ADa>,
         <http://ceur-ws.org/Vol-201/#RosaiGil> .
 
-<http://ceur-ws.org/Vol-201/#32> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-201/> ;
-    ns5:title "An Extensible Platform for Semantic Classification And Retrieval of Multimedia Resources" ;
-    ns1:author <http://ceur-ws.org/Vol-201/#FulvioiCorno>,
+<http://ceur-ws.org/Vol-201/#32> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-201/> ;
+    ns1:title "An Extensible Platform for Semantic Classification And Retrieval of Multimedia Resources" ;
+    ns3:author <http://ceur-ws.org/Vol-201/#FulvioiCorno>,
         <http://ceur-ws.org/Vol-201/#PaoloiPellegrino> .
 
-<http://ceur-ws.org/Vol-201/#43> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-201/> ;
-    ns5:title "Towards an OWL Ontology for Identity on the Web" ;
-    ns1:author <http://ceur-ws.org/Vol-201/#AldoiGangemi>,
+<http://ceur-ws.org/Vol-201/#43> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-201/> ;
+    ns1:title "Towards an OWL Ontology for Identity on the Web" ;
+    ns3:author <http://ceur-ws.org/Vol-201/#AldoiGangemi>,
         <http://ceur-ws.org/Vol-201/#ValentinaiPresutti> .
 
 <http://ceur-ws.org/Vol-201/#GiovanniiSemeraro> a ns2:Person ;
@@ -610,225 +616,225 @@
     ns2:name "Giovanni Semeraro" .
 
 <http://ceur-ws.org/Vol-201/#PaoloiBouquet> a ns2:Person ;
-    ns9:place <http://dbpedia.org/resource/Italy> ;
-    ns1:affiliation "University of Trento" ;
+    ns7:place <http://dbpedia.org/resource/Italy> ;
+    ns3:affiliation "University of Trento" ;
     ns4:sameAs <http://ceur-ws.org/persons/PaoloiBouquet> ;
     ns2:made <http://ceur-ws.org/Vol-201/#23>,
         <http://ceur-ws.org/Vol-201/#33> ;
     ns2:name "Paolo Bouquet" .
 
-<http://ceur-ws.org/Vol-201/#03> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-201/> ;
-    ns5:title "A Classification of Ontology Change" ;
-    ns1:author <http://ceur-ws.org/Vol-201/#DimitrisiPlexousakis>,
+<http://ceur-ws.org/Vol-201/#03> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-201/> ;
+    ns1:title "A Classification of Ontology Change" ;
+    ns3:author <http://ceur-ws.org/Vol-201/#DimitrisiPlexousakis>,
         <http://ceur-ws.org/Vol-201/#GiorgosiFlouris>,
         <http://ceur-ws.org/Vol-201/#GrigorisiAntoniou> .
 
-<http://ceur-ws.org/Vol-201/#05> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-201/> ;
-    ns5:title "FaceTag: Integrating Bottom-up and Top-down Classification" ;
-    ns1:author <http://ceur-ws.org/Vol-201/#AndreaiResmini>,
+<http://ceur-ws.org/Vol-201/#05> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-201/> ;
+    ns1:title "FaceTag: Integrating Bottom-up and Top-down Classification" ;
+    ns3:author <http://ceur-ws.org/Vol-201/#AndreaiResmini>,
         <http://ceur-ws.org/Vol-201/#EmanueleiQuintarelli>,
         <http://ceur-ws.org/Vol-201/#LucaiRosati> .
 
-<http://ceur-ws.org/Vol-201/#07> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-201/> ;
-    ns5:title "Sharing, Discovering and Browsing Photo Collections through RDF geo-metadata" ;
-    ns1:author <http://ceur-ws.org/Vol-201/#CarloiTorniai>,
+<http://ceur-ws.org/Vol-201/#07> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-201/> ;
+    ns1:title "Sharing, Discovering and Browsing Photo Collections through RDF geo-metadata" ;
+    ns3:author <http://ceur-ws.org/Vol-201/#CarloiTorniai>,
         <http://ceur-ws.org/Vol-201/#SteveiBattle>,
         <http://ceur-ws.org/Vol-201/#SteveiCayzer> .
 
-<http://ceur-ws.org/Vol-201/#09> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-201/> ;
-    ns5:title "An Approach for Application Ontology Building and Integration Enactment" ;
-    ns1:author <http://ceur-ws.org/Vol-201/#Habib-EllahiGuergour>,
+<http://ceur-ws.org/Vol-201/#09> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-201/> ;
+    ns1:title "An Approach for Application Ontology Building and Integration Enactment" ;
+    ns3:author <http://ceur-ws.org/Vol-201/#Habib-EllahiGuergour>,
         <http://ceur-ws.org/Vol-201/#RazikaiDriouche>,
         <http://ceur-ws.org/Vol-201/#ZizetteiBoufa%C3%AFda> .
 
-<http://ceur-ws.org/Vol-201/#10> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-201/> ;
-    ns5:title "Semantic Annotation of Documents Applied to E-Recruitment" ;
-    ns1:author <http://ceur-ws.org/Vol-201/#LeilaiYahiaoui>,
+<http://ceur-ws.org/Vol-201/#10> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-201/> ;
+    ns1:title "Semantic Annotation of Documents Applied to E-Recruitment" ;
+    ns3:author <http://ceur-ws.org/Vol-201/#LeilaiYahiaoui>,
         <http://ceur-ws.org/Vol-201/#YannickiPri%C3%A9>,
         <http://ceur-ws.org/Vol-201/#ZizetteiBoufa%C3%AFda> .
 
-<http://ceur-ws.org/Vol-201/#14> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-201/> ;
-    ns5:title "Achieving Scalability and Expressivity in an RDF Knowledge Base by Implementing Contexts" ;
-    ns1:author <http://ceur-ws.org/Vol-201/#DomenicoiRedavid>,
+<http://ceur-ws.org/Vol-201/#14> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-201/> ;
+    ns1:title "Achieving Scalability and Expressivity in an RDF Knowledge Base by Implementing Contexts" ;
+    ns3:author <http://ceur-ws.org/Vol-201/#DomenicoiRedavid>,
         <http://ceur-ws.org/Vol-201/#HeikoiStoermer>,
         <http://ceur-ws.org/Vol-201/#IgnazioiPalmisano> .
 
-<http://ceur-ws.org/Vol-201/#15> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-201/> ;
-    ns5:title "A Framework for Ontological Description of Archaeological Scientific Publications" ;
-    ns1:author <http://ceur-ws.org/Vol-201/#AndreaiBonomi>,
+<http://ceur-ws.org/Vol-201/#15> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-201/> ;
+    ns1:title "A Framework for Ontological Description of Archaeological Scientific Publications" ;
+    ns3:author <http://ceur-ws.org/Vol-201/#AndreaiBonomi>,
         <http://ceur-ws.org/Vol-201/#GiuseppeiVizzari>,
         <http://ceur-ws.org/Vol-201/#GlaucoiMantegari> .
 
-<http://ceur-ws.org/Vol-201/#16> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-201/> ;
-    ns5:title "Shrinking Number of Clusters by Multi-Dimensional Scaling" ;
-    ns1:author <http://ceur-ws.org/Vol-201/#HyunjiniLee>,
+<http://ceur-ws.org/Vol-201/#16> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-201/> ;
+    ns1:title "Shrinking Number of Clusters by Multi-Dimensional Scaling" ;
+    ns3:author <http://ceur-ws.org/Vol-201/#HyunjiniLee>,
         <http://ceur-ws.org/Vol-201/#Tae-ChangiJee>,
         <http://ceur-ws.org/Vol-201/#YillbyungiLee> .
 
-<http://ceur-ws.org/Vol-201/#25> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-201/> ;
-    ns5:title "Reasoning by Analogy in Description Logics Through Instance-based Learning" ;
-    ns1:author <http://ceur-ws.org/Vol-201/#Claudiaid%27Amato>,
+<http://ceur-ws.org/Vol-201/#25> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-201/> ;
+    ns1:title "Reasoning by Analogy in Description Logics Through Instance-based Learning" ;
+    ns3:author <http://ceur-ws.org/Vol-201/#Claudiaid%27Amato>,
         <http://ceur-ws.org/Vol-201/#FlorianaiEsposito>,
         <http://ceur-ws.org/Vol-201/#NicolaiFanizzi> .
 
-<http://ceur-ws.org/Vol-201/#26> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-201/> ;
-    ns5:title "Gobbleing Over the Web With Semantic Turkey" ;
-    ns1:author <http://ceur-ws.org/Vol-201/#ArmandoiStellato>,
+<http://ceur-ws.org/Vol-201/#26> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-201/> ;
+    ns1:title "Gobbleing Over the Web With Semantic Turkey" ;
+    ns3:author <http://ceur-ws.org/Vol-201/#ArmandoiStellato>,
         <http://ceur-ws.org/Vol-201/#DonatoiGriesi>,
         <http://ceur-ws.org/Vol-201/#MariaiTeresaiPazienza> .
 
-<http://ceur-ws.org/Vol-201/#27> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-201/> ;
-    ns5:title "MDSS: A framework for the Integration of Ontology Mapping Tools" ;
-    ns1:author <http://ceur-ws.org/Vol-201/#FulvioiD%27Antonio>,
+<http://ceur-ws.org/Vol-201/#27> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-201/> ;
+    ns1:title "MDSS: A framework for the Integration of Ontology Mapping Tools" ;
+    ns3:author <http://ceur-ws.org/Vol-201/#FulvioiD%27Antonio>,
         <http://ceur-ws.org/Vol-201/#GabrieleiMarcelli>,
         <http://ceur-ws.org/Vol-201/#TaniaiDiiMascio> .
 
-<http://ceur-ws.org/Vol-201/#40> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-201/> ;
-    ns5:title "Discovery-Driven Ontology Evolution" ;
-    ns1:author <http://ceur-ws.org/Vol-201/#AlfioiFerrara>,
+<http://ceur-ws.org/Vol-201/#40> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-201/> ;
+    ns1:title "Discovery-Driven Ontology Evolution" ;
+    ns3:author <http://ceur-ws.org/Vol-201/#AlfioiFerrara>,
         <http://ceur-ws.org/Vol-201/#GuillermoiN.iHess>,
         <http://ceur-ws.org/Vol-201/#SilvanaiCastano> .
 
-<http://ceur-ws.org/Vol-201/#11> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-201/> ;
-    ns5:title "ICCD2OWL: an ICCD to OWL Data Compiler" ;
-    ns1:author <http://ceur-ws.org/Vol-201/#AldoiAiello>,
+<http://ceur-ws.org/Vol-201/#11> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-201/> ;
+    ns1:title "ICCD2OWL: an ICCD to OWL Data Compiler" ;
+    ns3:author <http://ceur-ws.org/Vol-201/#AldoiAiello>,
         <http://ceur-ws.org/Vol-201/#FiorenzaiProto>,
         <http://ceur-ws.org/Vol-201/#MarioiMangoiFurnari>,
         <http://ceur-ws.org/Vol-201/#SalvatoreiBrandi> .
 
-<http://ceur-ws.org/Vol-201/#12> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-201/> ;
-    ns5:title "A Prototype for Discovering Compositions of Semantic Web Services" ;
-    ns1:author <http://ceur-ws.org/Vol-201/#AntonioiBrogi>,
+<http://ceur-ws.org/Vol-201/#12> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-201/> ;
+    ns1:title "A Prototype for Discovering Compositions of Semantic Web Services" ;
+    ns3:author <http://ceur-ws.org/Vol-201/#AntonioiBrogi>,
         <http://ceur-ws.org/Vol-201/#IsmaeliNavas>,
         <http://ceur-ws.org/Vol-201/#Jos%C3%A9iAldana>,
         <http://ceur-ws.org/Vol-201/#SaraiCorfini> .
 
-<http://ceur-ws.org/Vol-201/#20> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-201/> ;
-    ns5:title "Ontology Alignment Through Instance Negotiation: a Machine Learning Approach" ;
-    ns1:author <http://ceur-ws.org/Vol-201/#DomenicoiRedavid>,
+<http://ceur-ws.org/Vol-201/#20> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-201/> ;
+    ns1:title "Ontology Alignment Through Instance Negotiation: a Machine Learning Approach" ;
+    ns3:author <http://ceur-ws.org/Vol-201/#DomenicoiRedavid>,
         <http://ceur-ws.org/Vol-201/#GiovanniiSemeraro>,
         <http://ceur-ws.org/Vol-201/#IgnazioiPalmisano>,
         <http://ceur-ws.org/Vol-201/#LuigiiIannone> .
 
-<http://ceur-ws.org/Vol-201/#24> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-201/> ;
-    ns5:title "Semantic Query Routing Experiences in a PDMS" ;
-    ns1:author <http://ceur-ws.org/Vol-201/#FedericaiMandreoli>,
+<http://ceur-ws.org/Vol-201/#24> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-201/> ;
+    ns1:title "Semantic Query Routing Experiences in a PDMS" ;
+    ns3:author <http://ceur-ws.org/Vol-201/#FedericaiMandreoli>,
         <http://ceur-ws.org/Vol-201/#RiccardoiMartoglia>,
         <http://ceur-ws.org/Vol-201/#SimonaiSassatelli>,
         <http://ceur-ws.org/Vol-201/#WilmaiPenzo> .
 
-<http://ceur-ws.org/Vol-201/#29> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-201/> ;
-    ns5:title "MultiMedia Metadata Management: a Proposal for an Infrastructure" ;
-    ns1:author <http://ceur-ws.org/Vol-201/#MassimoiMartinelli>,
+<http://ceur-ws.org/Vol-201/#29> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-201/> ;
+    ns1:title "MultiMedia Metadata Management: a Proposal for an Infrastructure" ;
+    ns3:author <http://ceur-ws.org/Vol-201/#MassimoiMartinelli>,
         <http://ceur-ws.org/Vol-201/#OvidioiSalvetti>,
         <http://ceur-ws.org/Vol-201/#PatriziaiAsirelli>,
         <http://ceur-ws.org/Vol-201/#SuzanneiLittle> .
 
-<http://ceur-ws.org/Vol-201/#33> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-201/> ;
-    ns5:title "OkkaM: Towards a Solution to the ``Identity Crisis'' on the Semantic Web" ;
-    ns1:author <http://ceur-ws.org/Vol-201/#DanieliGiacomuzzi>,
+<http://ceur-ws.org/Vol-201/#33> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-201/> ;
+    ns1:title "OkkaM: Towards a Solution to the ``Identity Crisis'' on the Semantic Web" ;
+    ns3:author <http://ceur-ws.org/Vol-201/#DanieliGiacomuzzi>,
         <http://ceur-ws.org/Vol-201/#HeikoiStoermer>,
         <http://ceur-ws.org/Vol-201/#MicheleiMancioppi>,
         <http://ceur-ws.org/Vol-201/#PaoloiBouquet> .
 
-<http://ceur-ws.org/Vol-201/#37> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-201/> ;
-    ns5:title "Semantic and Bayesian Profiling Services for Textual Resource Retrieval" ;
-    ns1:author <http://ceur-ws.org/Vol-201/#EufemiaiTinelli>,
+<http://ceur-ws.org/Vol-201/#37> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-201/> ;
+    ns1:title "Semantic and Bayesian Profiling Services for Textual Resource Retrieval" ;
+    ns3:author <http://ceur-ws.org/Vol-201/#EufemiaiTinelli>,
         <http://ceur-ws.org/Vol-201/#EugenioiDiiSciascio>,
         <http://ceur-ws.org/Vol-201/#GiovanniiSemeraro>,
         <http://ceur-ws.org/Vol-201/#PierpaoloiBasile> .
 
-<http://ceur-ws.org/Vol-201/#42> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-201/> ;
-    ns5:title "The DODA Ontology: Lightweight Integration of Semantic Data Access Technologies" ;
-    ns1:author <http://ceur-ws.org/Vol-201/#ChristianiMorbidoni>,
+<http://ceur-ws.org/Vol-201/#42> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-201/> ;
+    ns1:title "The DODA Ontology: Lightweight Integration of Semantic Data Access Technologies" ;
+    ns3:author <http://ceur-ws.org/Vol-201/#ChristianiMorbidoni>,
         <http://ceur-ws.org/Vol-201/#GiovanniiTummarello>,
         <http://ceur-ws.org/Vol-201/#MicheleiNucci>,
         <http://ceur-ws.org/Vol-201/#RichardiCyganiak> .
 
-<http://ceur-ws.org/Vol-201/#44> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-201/> ;
-    ns5:title "An Integrated Framework for Automating Content Enrich Packaging and Distribution with DRM support" ;
-    ns1:author <http://ceur-ws.org/Vol-201/#DavideiRogai>,
+<http://ceur-ws.org/Vol-201/#44> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-201/> ;
+    ns1:title "An Integrated Framework for Automating Content Enrich Packaging and Distribution with DRM support" ;
+    ns3:author <http://ceur-ws.org/Vol-201/#DavideiRogai>,
         <http://ceur-ws.org/Vol-201/#IvaniBruno>,
         <http://ceur-ws.org/Vol-201/#PaoloiNesi>,
         <http://ceur-ws.org/Vol-201/#PierfrancescoiBellini> .
 
-<http://ceur-ws.org/Vol-201/#13> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-201/> ;
-    ns5:title "Semantic Web Personalization in a Scientific Congress Scenario" ;
-    ns1:author <http://ceur-ws.org/Vol-201/#AnnaiLisaiGentile>,
+<http://ceur-ws.org/Vol-201/#13> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-201/> ;
+    ns1:title "Semantic Web Personalization in a Scientific Congress Scenario" ;
+    ns3:author <http://ceur-ws.org/Vol-201/#AnnaiLisaiGentile>,
         <http://ceur-ws.org/Vol-201/#GiovanniiSemeraro>,
         <http://ceur-ws.org/Vol-201/#MarcoiDegemmis>,
         <http://ceur-ws.org/Vol-201/#PasqualeiLops>,
         <http://ceur-ws.org/Vol-201/#PierpaoloiBasile> .
 
-<http://ceur-ws.org/Vol-201/#22> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-201/> ;
-    ns5:title "Policy-based Reasoning for Smart Web Service Interaction" ;
-    ns1:author <http://ceur-ws.org/Vol-201/#EvelinaiLamma>,
+<http://ceur-ws.org/Vol-201/#22> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-201/> ;
+    ns1:title "Policy-based Reasoning for Smart Web Service Interaction" ;
+    ns3:author <http://ceur-ws.org/Vol-201/#EvelinaiLamma>,
         <http://ceur-ws.org/Vol-201/#FedericoiChesani>,
         <http://ceur-ws.org/Vol-201/#MarcoiAlberti>,
         <http://ceur-ws.org/Vol-201/#MarcoiGavanelli>,
         <http://ceur-ws.org/Vol-201/#PaolaiMello> .
 
-<http://ceur-ws.org/Vol-201/#23> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-201/> ;
-    ns5:title "An Incremental Method for Meaning Elicitation of a Domain Ontology" ;
-    ns1:author <http://ceur-ws.org/Vol-201/#DanieliGiacomuzzi>,
+<http://ceur-ws.org/Vol-201/#23> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-201/> ;
+    ns1:title "An Incremental Method for Meaning Elicitation of a Domain Ontology" ;
+    ns3:author <http://ceur-ws.org/Vol-201/#DanieliGiacomuzzi>,
         <http://ceur-ws.org/Vol-201/#LauraiPo>,
         <http://ceur-ws.org/Vol-201/#MaurizioiVincini>,
         <http://ceur-ws.org/Vol-201/#PaoloiBouquet>,
         <http://ceur-ws.org/Vol-201/#SoniaiBergamaschi> .
 
-<http://ceur-ws.org/Vol-201/#30> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-201/> ;
-    ns5:title "From Mentions to Ontology: A Pilot Sudy" ;
-    ns1:author <http://ceur-ws.org/Vol-201/#BernardoiMagnini>,
+<http://ceur-ws.org/Vol-201/#30> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-201/> ;
+    ns1:title "From Mentions to Ontology: A Pilot Sudy" ;
+    ns3:author <http://ceur-ws.org/Vol-201/#BernardoiMagnini>,
         <http://ceur-ws.org/Vol-201/#EmanueleiPianta>,
         <http://ceur-ws.org/Vol-201/#LucianoiSerafini>,
         <http://ceur-ws.org/Vol-201/#ManuelaiSperanza>,
         <http://ceur-ws.org/Vol-201/#OctavianiPopescu> .
 
-<http://ceur-ws.org/Vol-201/#35> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-201/> ;
-    ns5:title "Toward an Architecture for the Global Wordnet Initiative" ;
-    ns1:author <http://ceur-ws.org/Vol-201/#AndreaiMarchetti>,
+<http://ceur-ws.org/Vol-201/#35> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-201/> ;
+    ns1:title "Toward an Architecture for the Global Wordnet Initiative" ;
+    ns3:author <http://ceur-ws.org/Vol-201/#AndreaiMarchetti>,
         <http://ceur-ws.org/Vol-201/#FrancescaiBertagna>,
         <http://ceur-ws.org/Vol-201/#FrancescoiRonzano>,
         <http://ceur-ws.org/Vol-201/#MarcoiRosella>,
         <http://ceur-ws.org/Vol-201/#MaurizioiTesconi> .
 
-<http://ceur-ws.org/Vol-201/#41> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-201/> ;
-    ns5:title "Multimedia Information Extraction in Ontology-based Semantic Annotation of Product Catalogues" ;
-    ns1:author <http://ceur-ws.org/Vol-201/#ClaudioiAndreatta>,
+<http://ceur-ws.org/Vol-201/#41> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-201/> ;
+    ns1:title "Multimedia Information Extraction in Ontology-based Semantic Annotation of Product Catalogues" ;
+    ns3:author <http://ceur-ws.org/Vol-201/#ClaudioiAndreatta>,
         <http://ceur-ws.org/Vol-201/#EmilianoiGiovannetti>,
         <http://ceur-ws.org/Vol-201/#RobertoiBartolini>,
         <http://ceur-ws.org/Vol-201/#SimoneiMarchi>,
         <http://ceur-ws.org/Vol-201/#SimonettaiMontemagni> .
 
-<http://ceur-ws.org/Vol-201/> a ns3:Proceedings ;
-    ns3:hasPart <http://ceur-ws.org/Vol-201/#03>,
+<http://ceur-ws.org/Vol-201/> a ns5:Proceedings ;
+    ns5:hasPart <http://ceur-ws.org/Vol-201/#03>,
         <http://ceur-ws.org/Vol-201/#05>,
         <http://ceur-ws.org/Vol-201/#06>,
         <http://ceur-ws.org/Vol-201/#07>,
@@ -863,9 +869,9 @@
         <http://ceur-ws.org/Vol-201/#42>,
         <http://ceur-ws.org/Vol-201/#43>,
         <http://ceur-ws.org/Vol-201/#44> ;
-    ns7:issued "2006-12-13T00:00:00+00:00"^^xsd:dateTime ;
-    ns9:presentedAt <http://ceur-ws.org/Vol-201/#event> ;
-    ns1:editor <http://ceur-ws.org/Vol-201/#GiovanniiTummarello>,
+    ns8:issued "2006-12-13T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:presentedAt <http://ceur-ws.org/Vol-201/#event> ;
+    ns3:editor <http://ceur-ws.org/Vol-201/#GiovanniiTummarello>,
         <http://ceur-ws.org/Vol-201/#OresteiSignore>,
         <http://ceur-ws.org/Vol-201/#PaoloiBouquet> .
 

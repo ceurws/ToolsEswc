@@ -1,8 +1,8 @@
 @prefix ns1: <http://xmlns.com/foaf/0.1/> .
-@prefix ns2: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns2: <http://purl.org/ontology/bibo/#> .
 @prefix ns3: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns4: <http://purl.org/ontology/bibo/#> .
-@prefix ns5: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns4: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns5: <http://swrc.ontoware.org/ontology/#> .
 @prefix ns6: <http://www.w3.org/2002/07/owl#> .
 @prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
 @prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
@@ -98,7 +98,7 @@
     ns1:name "Eric-Oluf Svee" .
 
 <http://ceur-ws.org/Vol-1157/#FabianoiDalpiaz> a ns1:Person ;
-    ns2:affiliation "" ;
+    ns5:affiliation "" ;
     ns6:sameAs <http://ceur-ws.org/persons/FabianoiDalpiaz> ;
     ns1:name "Fabiano Dalpiaz" .
 
@@ -148,7 +148,7 @@
     ns1:name "Jelena Zdravkovic" .
 
 <http://ceur-ws.org/Vol-1157/#JenniferiHorkoff> a ns1:Person ;
-    ns2:affiliation "" ;
+    ns5:affiliation "" ;
     ns6:sameAs <http://ceur-ws.org/persons/JenniferiHorkoff> ;
     ns1:name "Jennifer Horkoff" .
 
@@ -299,6 +299,10 @@
         <http://ceur-ws.org/Vol-766/#event>,
         <http://ceur-ws.org/Vol-978/#event> .
 
+<http://ceur-ws.org/Vol-1157/#part-ws> a ns2:Workshop ;
+    ns3:partOf <http://ceur-ws.org/series/ws> ;
+    ns4:title "iStar 2014" .
+
 <http://ceur-ws.org/Vol-1157/#AlbertoiSiena> a ns1:Person ;
     ns6:sameAs <http://ceur-ws.org/persons/AlbertoiSiena> ;
     ns1:made <http://ceur-ws.org/Vol-1157/#norms1>,
@@ -355,13 +359,13 @@
 
 <http://ceur-ws.org/Vol-1157/#Session5Keynote> a ns3:SessionEvent ;
     ns3:partOf <http://ceur-ws.org/Vol-1157/> ;
-    ns5:title "Session 5: Keynote" .
+    ns4:title "Session 5: Keynote" .
 
 <http://ceur-ws.org/Vol-1157/#keynote> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-1157/> ;
-    ns5:title "The Inevitable Ontological Commitment or: How I Learned to Stop Worrying and Love Ontology" ;
-    ns4:section <http://ceur-ws.org/Vol-1157/#Session5Keynote> ;
-    ns2:author <http://ceur-ws.org/Vol-1157/#GiancarloiGuizzardi> .
+    ns4:title "The Inevitable Ontological Commitment or: How I Learned to Stop Worrying and Love Ontology" ;
+    ns2:section <http://ceur-ws.org/Vol-1157/#Session5Keynote> ;
+    ns5:author <http://ceur-ws.org/Vol-1157/#GiancarloiGuizzardi> .
 
 <http://ceur-ws.org/Vol-1157/#JohniMylopoulos> a ns1:Person ;
     ns6:sameAs <http://ceur-ws.org/persons/JohniMylopoulos> ;
@@ -379,86 +383,86 @@
 
 <http://ceur-ws.org/Vol-1157/#empirical1> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-1157/> ;
-    ns5:title "Lessons Learned in the Use of i* by Non-Technical Users" ;
-    ns4:section <http://ceur-ws.org/Vol-1157/#Session1EmpiricalStudies> ;
-    ns2:author <http://ceur-ws.org/Vol-1157/#JuaniPabloiCarvallo>,
+    ns4:title "Lessons Learned in the Use of i* by Non-Technical Users" ;
+    ns2:section <http://ceur-ws.org/Vol-1157/#Session1EmpiricalStudies> ;
+    ns5:author <http://ceur-ws.org/Vol-1157/#JuaniPabloiCarvallo>,
         <http://ceur-ws.org/Vol-1157/#XavieriFranch> .
 
 <http://ceur-ws.org/Vol-1157/#empirical3> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-1157/> ;
-    ns5:title "Modeling Software Engineering Education with i*" ;
-    ns4:section <http://ceur-ws.org/Vol-1157/#Session1EmpiricalStudies> ;
-    ns2:author <http://ceur-ws.org/Vol-1157/#DieteriLandes>,
+    ns4:title "Modeling Software Engineering Education with i*" ;
+    ns2:section <http://ceur-ws.org/Vol-1157/#Session1EmpiricalStudies> ;
+    ns5:author <http://ceur-ws.org/Vol-1157/#DieteriLandes>,
         <http://ceur-ws.org/Vol-1157/#MichaeliKoch> .
 
 <http://ceur-ws.org/Vol-1157/#mettools1> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-1157/> ;
-    ns5:title "StarGro: Building i* Metrics for Agile Methodologies" ;
-    ns4:section <http://ceur-ws.org/Vol-1157/#Session4MetricsandTools> ;
-    ns2:author <http://ceur-ws.org/Vol-1157/#DanieliColomeriCollell>,
+    ns4:title "StarGro: Building i* Metrics for Agile Methodologies" ;
+    ns2:section <http://ceur-ws.org/Vol-1157/#Session4MetricsandTools> ;
+    ns5:author <http://ceur-ws.org/Vol-1157/#DanieliColomeriCollell>,
         <http://ceur-ws.org/Vol-1157/#XavieriFranch> .
 
 <http://ceur-ws.org/Vol-1157/#norms4> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-1157/> ;
-    ns5:title "Modeling and Applying Security Patterns Using Contextual Goal Models" ;
-    ns4:section <http://ceur-ws.org/Vol-1157/#Session3NormsSecurityandRisk> ;
-    ns2:author <http://ceur-ws.org/Vol-1157/#JohniMylopoulos>,
+    ns4:title "Modeling and Applying Security Patterns Using Contextual Goal Models" ;
+    ns2:section <http://ceur-ws.org/Vol-1157/#Session3NormsSecurityandRisk> ;
+    ns5:author <http://ceur-ws.org/Vol-1157/#JohniMylopoulos>,
         <http://ceur-ws.org/Vol-1157/#TongiLi> .
 
 <http://ceur-ws.org/Vol-1157/#organizea2> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-1157/> ;
-    ns5:title "Architecting Enterprise Capabilities: Creating Dynamic Capabilities from IT and Software Architecture" ;
-    ns4:section <http://ceur-ws.org/Vol-1157/#Session2OrganizationsandEnterpriseArchitecture> ;
-    ns2:author <http://ceur-ws.org/Vol-1157/#EriciYu>,
+    ns4:title "Architecting Enterprise Capabilities: Creating Dynamic Capabilities from IT and Software Architecture" ;
+    ns2:section <http://ceur-ws.org/Vol-1157/#Session2OrganizationsandEnterpriseArchitecture> ;
+    ns5:author <http://ceur-ws.org/Vol-1157/#EriciYu>,
         <http://ceur-ws.org/Vol-1157/#MohammadiHosseiniDanesh> .
 
 <http://ceur-ws.org/Vol-1157/#organizea3> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-1157/> ;
-    ns5:title "Applying Business Strategy Models in Organizations" ;
-    ns4:section <http://ceur-ws.org/Vol-1157/#Session2OrganizationsandEnterpriseArchitecture> ;
-    ns2:author <http://ceur-ws.org/Vol-1157/#LidiaiL%C3%B3pez>,
+    ns4:title "Applying Business Strategy Models in Organizations" ;
+    ns2:section <http://ceur-ws.org/Vol-1157/#Session2OrganizationsandEnterpriseArchitecture> ;
+    ns5:author <http://ceur-ws.org/Vol-1157/#LidiaiL%C3%B3pez>,
         <http://ceur-ws.org/Vol-1157/#XavieriFranch> .
 
 <http://ceur-ws.org/Vol-1157/#organizea4> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-1157/> ;
-    ns5:title "Value Cocreation Modeling: Supporting the Analysis and Design of B2B Service Engagements through Agent Orientation and Business Intelligence" ;
-    ns4:section <http://ceur-ws.org/Vol-1157/#Session2OrganizationsandEnterpriseArchitecture> ;
-    ns2:author <http://ceur-ws.org/Vol-1157/#EriciYu>,
+    ns4:title "Value Cocreation Modeling: Supporting the Analysis and Design of B2B Service Engagements through Agent Orientation and Business Intelligence" ;
+    ns2:section <http://ceur-ws.org/Vol-1157/#Session2OrganizationsandEnterpriseArchitecture> ;
+    ns5:author <http://ceur-ws.org/Vol-1157/#EriciYu>,
         <http://ceur-ws.org/Vol-1157/#LysanneiLessard> .
 
 <http://ceur-ws.org/Vol-1157/#sp1> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-1157/> ;
-    ns5:title "Using Intentional Modeling to Discover the User Preferences in Existing Software Systems" ;
-    ns4:section <http://ceur-ws.org/Vol-1157/#Session7ShortPapers> ;
-    ns2:author <http://ceur-ws.org/Vol-1157/#Eric-OlufiSvee>,
+    ns4:title "Using Intentional Modeling to Discover the User Preferences in Existing Software Systems" ;
+    ns2:section <http://ceur-ws.org/Vol-1157/#Session7ShortPapers> ;
+    ns5:author <http://ceur-ws.org/Vol-1157/#Eric-OlufiSvee>,
         <http://ceur-ws.org/Vol-1157/#JelenaiZdravkovic> .
 
 <http://ceur-ws.org/Vol-1157/#sp2> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-1157/> ;
-    ns5:title "Social Team Characteristics and Architectural Decisions: a Goal-oriented Approach" ;
-    ns4:section <http://ceur-ws.org/Vol-1157/#Session7ShortPapers> ;
-    ns2:author <http://ceur-ws.org/Vol-1157/#FrederikiSchulz>,
+    ns4:title "Social Team Characteristics and Architectural Decisions: a Goal-oriented Approach" ;
+    ns2:section <http://ceur-ws.org/Vol-1157/#Session7ShortPapers> ;
+    ns5:author <http://ceur-ws.org/Vol-1157/#FrederikiSchulz>,
         <http://ceur-ws.org/Vol-1157/#JohannesiMei%C3%9Fner> .
 
 <http://ceur-ws.org/Vol-1157/#sp4> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-1157/> ;
-    ns5:title "Measurement of Actor External Dependencies in GRL Models" ;
-    ns4:section <http://ceur-ws.org/Vol-1157/#Session7ShortPapers> ;
-    ns2:author <http://ceur-ws.org/Vol-1157/#JameleddineiHassine>,
+    ns4:title "Measurement of Actor External Dependencies in GRL Models" ;
+    ns2:section <http://ceur-ws.org/Vol-1157/#Session7ShortPapers> ;
+    ns5:author <http://ceur-ws.org/Vol-1157/#JameleddineiHassine>,
         <http://ceur-ws.org/Vol-1157/#MohammadiAlshayeb> .
 
 <http://ceur-ws.org/Vol-1157/#sp5> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-1157/> ;
-    ns5:title "The Experience of Using ERi*c in a Telecom Corporation" ;
-    ns4:section <http://ceur-ws.org/Vol-1157/#Session7ShortPapers> ;
-    ns2:author <http://ceur-ws.org/Vol-1157/#AntonioiDeiP%C3%A1duaiA.iOliveira>,
+    ns4:title "The Experience of Using ERi*c in a Telecom Corporation" ;
+    ns2:section <http://ceur-ws.org/Vol-1157/#Session7ShortPapers> ;
+    ns5:author <http://ceur-ws.org/Vol-1157/#AntonioiDeiP%C3%A1duaiA.iOliveira>,
         <http://ceur-ws.org/Vol-1157/#JulioiCesariSampaioiDoiPradoiLeite> .
 
 <http://ceur-ws.org/Vol-1157/#sp6> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-1157/> ;
-    ns5:title "Transforming Socio-Technical Security Requirements in SecBPMN Security Policies" ;
-    ns4:section <http://ceur-ws.org/Vol-1157/#Session7ShortPapers> ;
-    ns2:author <http://ceur-ws.org/Vol-1157/#MattiaiSalnitri>,
+    ns4:title "Transforming Socio-Technical Security Requirements in SecBPMN Security Policies" ;
+    ns2:section <http://ceur-ws.org/Vol-1157/#Session7ShortPapers> ;
+    ns5:author <http://ceur-ws.org/Vol-1157/#MattiaiSalnitri>,
         <http://ceur-ws.org/Vol-1157/#PaoloiGiorgini> .
 
 <http://ceur-ws.org/Vol-1157/#EriciYu> a ns1:Person ;
@@ -471,114 +475,114 @@
 
 <http://ceur-ws.org/Vol-1157/#Session1EmpiricalStudies> a ns3:SessionEvent ;
     ns3:partOf <http://ceur-ws.org/Vol-1157/> ;
-    ns5:title "Session 1: Empirical Studies" .
+    ns4:title "Session 1: Empirical Studies" .
 
 <http://ceur-ws.org/Vol-1157/#Session4MetricsandTools> a ns3:SessionEvent ;
     ns3:partOf <http://ceur-ws.org/Vol-1157/> ;
-    ns5:title "Session 4: Metrics and Tools" .
+    ns4:title "Session 4: Metrics and Tools" .
 
 <http://ceur-ws.org/Vol-1157/#apps4> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-1157/> ;
-    ns5:title "A Goal-oriented Analysis to Guide the Development of a User Feedback Ontology" ;
-    ns4:section <http://ceur-ws.org/Vol-1157/#Session6Applicationsofi> ;
-    ns2:author <http://ceur-ws.org/Vol-1157/#AnnaiPerini>,
+    ns4:title "A Goal-oriented Analysis to Guide the Development of a User Feedback Ontology" ;
+    ns2:section <http://ceur-ws.org/Vol-1157/#Session6Applicationsofi> ;
+    ns5:author <http://ceur-ws.org/Vol-1157/#AnnaiPerini>,
         <http://ceur-ws.org/Vol-1157/#ItzeliMorales-Ram%C3%ADrez>,
         <http://ceur-ws.org/Vol-1157/#RenataiGuizzardi> .
 
 <http://ceur-ws.org/Vol-1157/#empirical2> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-1157/> ;
-    ns5:title "A Case Study to Evaluate the Use of i* for Helping Pedagogy Transparency" ;
-    ns4:section <http://ceur-ws.org/Vol-1157/#Session1EmpiricalStudies> ;
-    ns2:author <http://ceur-ws.org/Vol-1157/#ElizabethiSuescuniMonsalve>,
+    ns4:title "A Case Study to Evaluate the Use of i* for Helping Pedagogy Transparency" ;
+    ns2:section <http://ceur-ws.org/Vol-1157/#Session1EmpiricalStudies> ;
+    ns5:author <http://ceur-ws.org/Vol-1157/#ElizabethiSuescuniMonsalve>,
         <http://ceur-ws.org/Vol-1157/#JulioiCesariSampaioiDoiPradoiLeite>,
         <http://ceur-ws.org/Vol-1157/#VeraiMariaiBenjamimiWerneck> .
 
 <http://ceur-ws.org/Vol-1157/#mettools3> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-1157/> ;
-    ns5:title "Analysing the Style of Textual Labels in i* Models" ;
-    ns4:section <http://ceur-ws.org/Vol-1157/#Session4MetricsandTools> ;
-    ns2:author <http://ceur-ws.org/Vol-1157/#ArianiStorch>,
+    ns4:title "Analysing the Style of Textual Labels in i* Models" ;
+    ns2:section <http://ceur-ws.org/Vol-1157/#Session4MetricsandTools> ;
+    ns5:author <http://ceur-ws.org/Vol-1157/#ArianiStorch>,
         <http://ceur-ws.org/Vol-1157/#RalfiLaue>,
         <http://ceur-ws.org/Vol-1157/#VolkeriGruhn> .
 
 <http://ceur-ws.org/Vol-1157/#norms1> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-1157/> ;
-    ns5:title "Goals and Compliance in Nomos 3" ;
-    ns4:section <http://ceur-ws.org/Vol-1157/#Session3NormsSecurityandRisk> ;
-    ns2:author <http://ceur-ws.org/Vol-1157/#AlbertoiSiena>,
+    ns4:title "Goals and Compliance in Nomos 3" ;
+    ns2:section <http://ceur-ws.org/Vol-1157/#Session3NormsSecurityandRisk> ;
+    ns5:author <http://ceur-ws.org/Vol-1157/#AlbertoiSiena>,
         <http://ceur-ws.org/Vol-1157/#JohniMylopoulos>,
         <http://ceur-ws.org/Vol-1157/#SilviaiIngolfo> .
 
 <http://ceur-ws.org/Vol-1157/#organizea1> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-1157/> ;
-    ns5:title "A Principle-based Goal-oriented Requirements Language (GRL) for Enterprise Architecture" ;
-    ns4:section <http://ceur-ws.org/Vol-1157/#Session2OrganizationsandEnterpriseArchitecture> ;
-    ns2:author <http://ceur-ws.org/Vol-1157/#DianaiMarosin>,
+    ns4:title "A Principle-based Goal-oriented Requirements Language (GRL) for Enterprise Architecture" ;
+    ns2:section <http://ceur-ws.org/Vol-1157/#Session2OrganizationsandEnterpriseArchitecture> ;
+    ns5:author <http://ceur-ws.org/Vol-1157/#DianaiMarosin>,
         <http://ceur-ws.org/Vol-1157/#DirkivanideriLinden>,
         <http://ceur-ws.org/Vol-1157/#SepidehiGhanavati> .
 
 <http://ceur-ws.org/Vol-1157/#Session2OrganizationsandEnterpriseArchitecture> a ns3:SessionEvent ;
     ns3:partOf <http://ceur-ws.org/Vol-1157/> ;
-    ns5:title "Session 2: Organizations and Enterprise Architecture" .
+    ns4:title "Session 2: Organizations and Enterprise Architecture" .
 
 <http://ceur-ws.org/Vol-1157/#Session3NormsSecurityandRisk> a ns3:SessionEvent ;
     ns3:partOf <http://ceur-ws.org/Vol-1157/> ;
-    ns5:title "Session 3: Norms, Security, and Risk" .
+    ns4:title "Session 3: Norms, Security, and Risk" .
 
 <http://ceur-ws.org/Vol-1157/#Session6Applicationsofi> a ns3:SessionEvent ;
     ns3:partOf <http://ceur-ws.org/Vol-1157/> ;
-    ns5:title "Session 6: Applications of i*" .
+    ns4:title "Session 6: Applications of i*" .
 
 <http://ceur-ws.org/Vol-1157/#apps2> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-1157/> ;
-    ns5:title "Exploring Domain Requirements and Technology Solutions: A Goal Modeling Approach" ;
-    ns4:section <http://ceur-ws.org/Vol-1157/#Session6Applicationsofi> ;
-    ns2:author <http://ceur-ws.org/Vol-1157/#AldoiFrancoiDragoni>,
+    ns4:title "Exploring Domain Requirements and Technology Solutions: A Goal Modeling Approach" ;
+    ns2:section <http://ceur-ws.org/Vol-1157/#Session6Applicationsofi> ;
+    ns5:author <http://ceur-ws.org/Vol-1157/#AldoiFrancoiDragoni>,
         <http://ceur-ws.org/Vol-1157/#ArnoniSturm>,
         <http://ceur-ws.org/Vol-1157/#DavideiCalvaresi>,
         <http://ceur-ws.org/Vol-1157/#EriciYu> .
 
 <http://ceur-ws.org/Vol-1157/#apps3> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-1157/> ;
-    ns5:title "Know-How Mapping: From i* to ME-maps" ;
-    ns4:section <http://ceur-ws.org/Vol-1157/#Session6Applicationsofi> ;
-    ns2:author <http://ceur-ws.org/Vol-1157/#ArnoniSturm>,
+    ns4:title "Know-How Mapping: From i* to ME-maps" ;
+    ns2:section <http://ceur-ws.org/Vol-1157/#Session6Applicationsofi> ;
+    ns5:author <http://ceur-ws.org/Vol-1157/#ArnoniSturm>,
         <http://ceur-ws.org/Vol-1157/#DanieliGross>,
         <http://ceur-ws.org/Vol-1157/#EriciYu>,
         <http://ceur-ws.org/Vol-1157/#JianiWang> .
 
 <http://ceur-ws.org/Vol-1157/#mettools2> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-1157/> ;
-    ns5:title "Preliminary Results on the Understandability of i* Notations" ;
-    ns4:section <http://ceur-ws.org/Vol-1157/#Session4MetricsandTools> ;
-    ns2:author <http://ceur-ws.org/Vol-1157/#BorisiB%C3%B6ttcher>,
+    ns4:title "Preliminary Results on the Understandability of i* Notations" ;
+    ns2:section <http://ceur-ws.org/Vol-1157/#Session4MetricsandTools> ;
+    ns5:author <http://ceur-ws.org/Vol-1157/#BorisiB%C3%B6ttcher>,
         <http://ceur-ws.org/Vol-1157/#FrankiHogrebe>,
         <http://ceur-ws.org/Vol-1157/#MarkusiN%C3%BCttgens>,
         <http://ceur-ws.org/Vol-1157/#RalfiLaue> .
 
 <http://ceur-ws.org/Vol-1157/#norms2> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-1157/> ;
-    ns5:title "Designing Sociotechnical Systems with Protos" ;
-    ns4:section <http://ceur-ws.org/Vol-1157/#Session3NormsSecurityandRisk> ;
-    ns2:author <http://ceur-ws.org/Vol-1157/#FatmaiBa%26scedil>,
+    ns4:title "Designing Sociotechnical Systems with Protos" ;
+    ns2:section <http://ceur-ws.org/Vol-1157/#Session3NormsSecurityandRisk> ;
+    ns5:author <http://ceur-ws.org/Vol-1157/#FatmaiBa%26scedil>,
         <http://ceur-ws.org/Vol-1157/#JohniMylopoulos>,
         <http://ceur-ws.org/Vol-1157/#PaoloiGiorgini>,
         <http://ceur-ws.org/Vol-1157/#akiAydemir> .
 
 <http://ceur-ws.org/Vol-1157/#sp3> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-1157/> ;
-    ns5:title "Towards Using i* for Modeling Mega-Urban Processes" ;
-    ns4:section <http://ceur-ws.org/Vol-1157/#Session7ShortPapers> ;
-    ns2:author <http://ceur-ws.org/Vol-1157/#GerhardiLakemeyer>,
+    ns4:title "Towards Using i* for Modeling Mega-Urban Processes" ;
+    ns2:section <http://ceur-ws.org/Vol-1157/#Session7ShortPapers> ;
+    ns5:author <http://ceur-ws.org/Vol-1157/#GerhardiLakemeyer>,
         <http://ceur-ws.org/Vol-1157/#KlausiBaier>,
         <http://ceur-ws.org/Vol-1157/#MartiniLiebenberg>,
         <http://ceur-ws.org/Vol-1157/#VictoriMatare> .
 
 <http://ceur-ws.org/Vol-1157/#apps1> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-1157/> ;
-    ns5:title "i*-REST: Light-Weight i* Modeling with RESTful Web Services" ;
-    ns4:section <http://ceur-ws.org/Vol-1157/#Session6Applicationsofi> ;
-    ns2:author <http://ceur-ws.org/Vol-1157/#AlexanderiRuppert>,
+    ns4:title "i*-REST: Light-Weight i* Modeling with RESTful Web Services" ;
+    ns2:section <http://ceur-ws.org/Vol-1157/#Session6Applicationsofi> ;
+    ns5:author <http://ceur-ws.org/Vol-1157/#AlexanderiRuppert>,
         <http://ceur-ws.org/Vol-1157/#DominikiRenzel>,
         <http://ceur-ws.org/Vol-1157/#MatthiasiJarke>,
         <http://ceur-ws.org/Vol-1157/#RalfiKlamma>,
@@ -586,9 +590,9 @@
 
 <http://ceur-ws.org/Vol-1157/#sp7> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-1157/> ;
-    ns5:title "An i* Based Approach for Conceptual Modeling of Business Process Technology" ;
-    ns4:section <http://ceur-ws.org/Vol-1157/#Session7ShortPapers> ;
-    ns2:author <http://ceur-ws.org/Vol-1157/#AliciaiMartinez>,
+    ns4:title "An i* Based Approach for Conceptual Modeling of Business Process Technology" ;
+    ns2:section <http://ceur-ws.org/Vol-1157/#Session7ShortPapers> ;
+    ns5:author <http://ceur-ws.org/Vol-1157/#AliciaiMartinez>,
         <http://ceur-ws.org/Vol-1157/#HugoiEstrada>,
         <http://ceur-ws.org/Vol-1157/#JoaquiniPerez>,
         <http://ceur-ws.org/Vol-1157/#LuisiSantillan>,
@@ -596,9 +600,9 @@
 
 <http://ceur-ws.org/Vol-1157/#sp8> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-1157/> ;
-    ns5:title "Adaptation of Business Models to the Structure-in-5 Organizational Style" ;
-    ns4:section <http://ceur-ws.org/Vol-1157/#Session7ShortPapers> ;
-    ns2:author <http://ceur-ws.org/Vol-1157/#AliciaiMartinez>,
+    ns4:title "Adaptation of Business Models to the Structure-in-5 Organizational Style" ;
+    ns2:section <http://ceur-ws.org/Vol-1157/#Session7ShortPapers> ;
+    ns5:author <http://ceur-ws.org/Vol-1157/#AliciaiMartinez>,
         <http://ceur-ws.org/Vol-1157/#BlancaiVazquez>,
         <http://ceur-ws.org/Vol-1157/#FranciscoiBarrera>,
         <http://ceur-ws.org/Vol-1157/#HugoiEstrada>,
@@ -606,9 +610,9 @@
 
 <http://ceur-ws.org/Vol-1157/#norms3> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-1157/> ;
-    ns5:title "Quantifying the Impact of OSS Adoption Risks with the help of i* Models" ;
-    ns4:section <http://ceur-ws.org/Vol-1157/#Session3NormsSecurityandRisk> ;
-    ns2:author <http://ceur-ws.org/Vol-1157/#AlbertoiSiena>,
+    ns4:title "Quantifying the Impact of OSS Adoption Risks with the help of i* Models" ;
+    ns2:section <http://ceur-ws.org/Vol-1157/#Session3NormsSecurityandRisk> ;
+    ns5:author <http://ceur-ws.org/Vol-1157/#AlbertoiSiena>,
         <http://ceur-ws.org/Vol-1157/#AngeloiSusi>,
         <http://ceur-ws.org/Vol-1157/#DanieliGross>,
         <http://ceur-ws.org/Vol-1157/#DolorsiCostal>,
@@ -617,7 +621,7 @@
 
 <http://ceur-ws.org/Vol-1157/#Session7ShortPapers> a ns3:SessionEvent ;
     ns3:partOf <http://ceur-ws.org/Vol-1157/> ;
-    ns5:title "Session 7: Short Papers" .
+    ns4:title "Session 7: Short Papers" .
 
 <http://ceur-ws.org/Vol-1157/> a ns3:Proceedings ;
     ns3:hasPart <http://ceur-ws.org/Vol-1157/#apps1>,
@@ -655,7 +659,7 @@
         <http://ceur-ws.org/Vol-1157/#Session6Applicationsofi>,
         <http://ceur-ws.org/Vol-1157/#Session7ShortPapers> ;
     ns8:issued "2014-06-04T00:00:00+00:00"^^xsd:dateTime ;
-    ns4:presentedAt <http://ceur-ws.org/Vol-1157/#event> ;
-    ns2:editor <http://ceur-ws.org/Vol-1157/#FabianoiDalpiaz>,
+    ns2:presentedAt <http://ceur-ws.org/Vol-1157/#event> ;
+    ns5:editor <http://ceur-ws.org/Vol-1157/#FabianoiDalpiaz>,
         <http://ceur-ws.org/Vol-1157/#JenniferiHorkoff> .
 

@@ -1,11 +1,11 @@
-@prefix ns1: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns1: <http://purl.org/dc/elements/1.1/#> .
 @prefix ns2: <http://xmlns.com/foaf/0.1/> .
 @prefix ns3: <http://www.w3.org/2002/07/owl#> .
-@prefix ns4: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns5: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns4: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns5: <http://swrc.ontoware.org/ontology/#> .
 @prefix ns6: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns7: <http://purl.org/ontology/bibo/#> .
-@prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns8: <http://purl.org/ontology/bibo/#> .
 @prefix ns9: <http://purl.org/dc/elements/1.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -33,8 +33,8 @@
     ns2:name "Antoine Isaac" .
 
 <http://ceur-ws.org/Vol-329/#Asunci%C3%B3niG%C3%B3mez-P%C3%A9rez> a ns2:Person ;
-    ns7:place <http://dbpedia.org/resource/Spain> ;
-    ns4:affiliation "Ontology Engineering Group, Universidad Politecnica de Madrid" ;
+    ns8:place <http://dbpedia.org/resource/Spain> ;
+    ns5:affiliation "Ontology Engineering Group, Universidad Politecnica de Madrid" ;
     ns3:sameAs <http://ceur-ws.org/persons/Asunci%C3%B3niG%C3%B3mez-P%C3%A9rez> ;
     ns2:name "Asunción Gómez-Pérez" .
 
@@ -49,7 +49,7 @@
     ns2:name "Deendayal Dinakarpandian" .
 
 <http://ceur-ws.org/Vol-329/#DennyiVrandecic> a ns2:Person ;
-    ns4:affiliation "" ;
+    ns5:affiliation "" ;
     ns3:sameAs <http://ceur-ws.org/persons/DennyiVrandecic> ;
     ns2:name "Denny Vrandecic" .
 
@@ -89,8 +89,8 @@
     ns2:name "Paul Buitelaar" .
 
 <http://ceur-ws.org/Vol-329/#Ra%C3%BAliGarc%C3%ADa-Castro> a ns2:Person ;
-    ns7:place <http://dbpedia.org/resource/Spain> ;
-    ns4:affiliation "Ontology Engineering Group, Universidad Politecnica de Madrid" ;
+    ns8:place <http://dbpedia.org/resource/Spain> ;
+    ns5:affiliation "Ontology Engineering Group, Universidad Politecnica de Madrid" ;
     ns3:sameAs <http://ceur-ws.org/persons/Ra%C3%BAliGarc%C3%ADa-Castro> ;
     ns2:name "Raúl García-Castro" .
 
@@ -120,7 +120,7 @@
     ns2:name "Willem Van Hage" .
 
 <http://ceur-ws.org/Vol-329/#YorkiSure> a ns2:Person ;
-    ns4:affiliation "" ;
+    ns5:affiliation "" ;
     ns3:sameAs <http://ceur-ws.org/persons/YorkiSure> ;
     ns2:name "York Sure" .
 
@@ -140,63 +140,69 @@
     ns2:name "Zharko Aleksovski" .
 
 <http://ceur-ws.org/Vol-329/#ZhishengiHuang> a ns2:Person ;
-    ns4:affiliation "Artificial Intelligence Group, at Vrije University of Amsterdam" ;
+    ns5:affiliation "Artificial Intelligence Group, at Vrije University of Amsterdam" ;
     ns3:sameAs <http://ceur-ws.org/persons/ZhishengiHuang> ;
     ns2:name "Zhisheng Huang" .
 
-<http://ceur-ws.org/Vol-329/#event> a ns1:WorkshopEvent ;
-    ns1:hasLocation <http://dbpedia.org/resource/South_Korea> ;
-    ns1:hasPart <http://ceur-ws.org/Vol-329/#part-EON> ;
-    ns1:isSubEventOf <http://ceur-ws.org/Vol-329/#conf> ;
-    ns8:beginsAtDatetime "2007-11-11T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:endsAtDatetime "2007-11-11T00:00:00+00:00"^^xsd:dateTime ;
+<http://ceur-ws.org/Vol-329/#event> a ns4:WorkshopEvent ;
+    ns4:hasLocation <http://dbpedia.org/resource/South_Korea> ;
+    ns4:hasPart <http://ceur-ws.org/Vol-329/#part-EON> ;
+    ns4:isSubEventOf <http://ceur-ws.org/Vol-329/#conf> ;
+    ns7:beginsAtDatetime "2007-11-11T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:endsAtDatetime "2007-11-11T00:00:00+00:00"^^xsd:dateTime ;
     ns9:license "http://choosealicense.com/licenses/no-license/" ;
     rdfs:seeAlso <http://ceur-ws.org/Vol-128/#event>,
         <http://ceur-ws.org/Vol-179/#event>,
         <http://ceur-ws.org/Vol-62/#event>,
         <http://ceur-ws.org/Vol-87/#event> .
 
-<http://ceur-ws.org/Vol-329/#paper02> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-329/> ;
-    ns5:title "Evaluating Ontology Search" ;
-    ns4:author <http://ceur-ws.org/Vol-329/#PauliBuitelaar>,
+<http://ceur-ws.org/Vol-329/#part-EON> a ns8:Workshop ;
+    ns4:partOf <http://ceur-ws.org/series/EON> ;
+    ns1:title "Evaluation of Ontologies for the Web 2007" ;
+    ns8:shortTitle "EON" ;
+    ns5:edition 5 .
+
+<http://ceur-ws.org/Vol-329/#paper02> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-329/> ;
+    ns1:title "Evaluating Ontology Search" ;
+    ns5:author <http://ceur-ws.org/Vol-329/#PauliBuitelaar>,
         <http://ceur-ws.org/Vol-329/#ThomasiEigner> .
 
-<http://ceur-ws.org/Vol-329/#paper06> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-329/> ;
-    ns5:title "Detecting Quality Problems in Semantic Metadata without the Presence of a Gold Standard" ;
-    ns4:author <http://ceur-ws.org/Vol-329/#AndriyiNikolov>,
+<http://ceur-ws.org/Vol-329/#paper06> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-329/> ;
+    ns1:title "Detecting Quality Problems in Semantic Metadata without the Presence of a Gold Standard" ;
+    ns5:author <http://ceur-ws.org/Vol-329/#AndriyiNikolov>,
         <http://ceur-ws.org/Vol-329/#YuanguiiLei> .
 
-<http://ceur-ws.org/Vol-329/#paper07> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-329/> ;
-    ns5:title "Tracking Name Patterns in OWL Ontologies" ;
-    ns4:author <http://ceur-ws.org/Vol-329/#OndrejiSvab>,
+<http://ceur-ws.org/Vol-329/#paper07> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-329/> ;
+    ns1:title "Tracking Name Patterns in OWL Ontologies" ;
+    ns5:author <http://ceur-ws.org/Vol-329/#OndrejiSvab>,
         <http://ceur-ws.org/Vol-329/#VojtechiSvatek> .
 
-<http://ceur-ws.org/Vol-329/#paper03> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-329/> ;
-    ns5:title "Benchmarking Reasoners for Multi-Ontology Applications" ;
-    ns4:author <http://ceur-ws.org/Vol-329/#AbiriQasem>,
+<http://ceur-ws.org/Vol-329/#paper03> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-329/> ;
+    ns1:title "Benchmarking Reasoners for Multi-Ontology Applications" ;
+    ns5:author <http://ceur-ws.org/Vol-329/#AbiriQasem>,
         <http://ceur-ws.org/Vol-329/#AmeetiChitnis>,
         <http://ceur-ws.org/Vol-329/#JeffiHeflin> .
 
-<http://ceur-ws.org/Vol-329/#paper04> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-329/> ;
-    ns5:title "A Panoramic Approach to Integrated Evaluation of Ontologies in the Semantic Web" ;
-    ns4:author <http://ceur-ws.org/Vol-329/#DeendayaliDinakarpandian>,
+<http://ceur-ws.org/Vol-329/#paper04> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-329/> ;
+    ns1:title "A Panoramic Approach to Integrated Evaluation of Ontologies in the Semantic Web" ;
+    ns5:author <http://ceur-ws.org/Vol-329/#DeendayaliDinakarpandian>,
         <http://ceur-ws.org/Vol-329/#SourishiDasgupta>,
         <http://ceur-ws.org/Vol-329/#YugyungiLee> .
 
-<http://ceur-ws.org/Vol-329/#paper05> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-329/> ;
-    ns5:title "Sample Evaluation of Ontology-Matching Systems" ;
-    ns4:author <http://ceur-ws.org/Vol-329/#AntoineiIsaac>,
+<http://ceur-ws.org/Vol-329/#paper05> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-329/> ;
+    ns1:title "Sample Evaluation of Ontology-Matching Systems" ;
+    ns5:author <http://ceur-ws.org/Vol-329/#AntoineiIsaac>,
         <http://ceur-ws.org/Vol-329/#WillemiVaniHage>,
         <http://ceur-ws.org/Vol-329/#ZharkoiAleksovski> .
 
-<http://ceur-ws.org/Vol-329/> a ns1:Proceedings ;
-    ns1:hasPart <http://ceur-ws.org/Vol-329/#paper01>,
+<http://ceur-ws.org/Vol-329/> a ns4:Proceedings ;
+    ns4:hasPart <http://ceur-ws.org/Vol-329/#paper01>,
         <http://ceur-ws.org/Vol-329/#paper02>,
         <http://ceur-ws.org/Vol-329/#paper03>,
         <http://ceur-ws.org/Vol-329/#paper04>,
@@ -204,17 +210,17 @@
         <http://ceur-ws.org/Vol-329/#paper06>,
         <http://ceur-ws.org/Vol-329/#paper07> ;
     ns6:issued "2008-03-25T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:presentedAt <http://ceur-ws.org/Vol-329/#event> ;
-    ns4:editor <http://ceur-ws.org/Vol-329/#Asunci%C3%B3niG%C3%B3mez-P%C3%A9rez>,
+    ns8:presentedAt <http://ceur-ws.org/Vol-329/#event> ;
+    ns5:editor <http://ceur-ws.org/Vol-329/#Asunci%C3%B3niG%C3%B3mez-P%C3%A9rez>,
         <http://ceur-ws.org/Vol-329/#DennyiVrandecic>,
         <http://ceur-ws.org/Vol-329/#Ra%C3%BAliGarc%C3%ADa-Castro>,
         <http://ceur-ws.org/Vol-329/#YorkiSure>,
         <http://ceur-ws.org/Vol-329/#ZhishengiHuang> .
 
-<http://ceur-ws.org/Vol-329/#paper01> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-329/> ;
-    ns5:title "Characterizing Knowledge on the Semantic Web with Watson" ;
-    ns4:author <http://ceur-ws.org/Vol-329/#ClaudioiBaldassarre>,
+<http://ceur-ws.org/Vol-329/#paper01> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-329/> ;
+    ns1:title "Characterizing Knowledge on the Semantic Web with Watson" ;
+    ns5:author <http://ceur-ws.org/Vol-329/#ClaudioiBaldassarre>,
         <http://ceur-ws.org/Vol-329/#EnricoiMotta>,
         <http://ceur-ws.org/Vol-329/#LaurianiGridinoc>,
         <http://ceur-ws.org/Vol-329/#MartaiSabou>,

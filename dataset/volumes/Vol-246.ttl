@@ -1,36 +1,37 @@
-@prefix ns1: <http://xmlns.com/foaf/0.1/> .
-@prefix ns2: <http://purl.org/dc/elements/1.1/> .
-@prefix ns3: <http://purl.org/ontology/bibo/#> .
-@prefix ns4: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns5: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns6: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns7: <http://www.w3.org/2002/07/owl#> .
-@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns1: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns2: <http://www.w3.org/2002/07/owl#> .
+@prefix ns3: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns4: <http://xmlns.com/foaf/0.1/> .
+@prefix ns5: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns6: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns7: <http://purl.org/dc/elements/1.1/> .
+@prefix ns8: <http://purl.org/ontology/bibo/#> .
+@prefix ns9: <http://purl.org/dc/elements/1.1/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-246/> a ns5:Proceedings ;
-    ns8:issued "2007-05-09T00:00:00+00:00"^^xsd:dateTime ;
-    ns3:presentedAt <http://ceur-ws.org/Vol-246/#event> ;
-    ns6:editor <http://ceur-ws.org/Vol-246/#AlexanderiHorschiundiThomasiTolxdorff>,
+<http://ceur-ws.org/Vol-246/> a ns6:Proceedings ;
+    ns1:issued "2007-05-09T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:presentedAt <http://ceur-ws.org/Vol-246/#event> ;
+    ns5:editor <http://ceur-ws.org/Vol-246/#AlexanderiHorschiundiThomasiTolxdorff>,
         <http://ceur-ws.org/Vol-246/#HerausgegebenivoniHans-PeteriMeinzer> .
 
-<http://ceur-ws.org/Vol-246/#AlexanderiHorschiundiThomasiTolxdorff> a ns1:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/AlexanderiHorschiundiThomasiTolxdorff> ;
-    ns1:name "Alexander Horsch und Thomas Tolxdorff" .
+<http://ceur-ws.org/Vol-246/#AlexanderiHorschiundiThomasiTolxdorff> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/AlexanderiHorschiundiThomasiTolxdorff> ;
+    ns4:name "Alexander Horsch und Thomas Tolxdorff" .
 
-<http://ceur-ws.org/Vol-246/#HerausgegebenivoniHans-PeteriMeinzer> a ns1:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/HerausgegebenivoniHans-PeteriMeinzer> ;
-    ns1:name "Herausgegeben von Hans-Peter Meinzer" .
+<http://ceur-ws.org/Vol-246/#HerausgegebenivoniHans-PeteriMeinzer> a ns4:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/HerausgegebenivoniHans-PeteriMeinzer> ;
+    ns4:name "Herausgegeben von Hans-Peter Meinzer" .
 
-<http://ceur-ws.org/Vol-246/#event> a ns5:WorkshopEvent ;
-    ns5:hasPart <http://ceur-ws.org/Vol-246/#part-ws> ;
-    ns5:isSubEventOf <http://ceur-ws.org/Vol-246/#conf> ;
-    ns4:beginsAtDatetime "2016-03-15T00:00:00+00:00"^^xsd:dateTime ;
-    ns4:endsAtDatetime "2016-03-15T00:00:00+00:00"^^xsd:dateTime ;
-    ns2:license "http://choosealicense.com/licenses/no-license/" ;
+<http://ceur-ws.org/Vol-246/#event> a ns6:WorkshopEvent ;
+    ns6:hasPart <http://ceur-ws.org/Vol-246/#part-ws> ;
+    ns6:isSubEventOf <http://ceur-ws.org/Vol-246/#conf> ;
+    ns3:beginsAtDatetime "2016-03-15T00:00:00+00:00"^^xsd:dateTime ;
+    ns3:endsAtDatetime "2016-03-15T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:license "http://choosealicense.com/licenses/no-license/" ;
     rdfs:seeAlso <http://ceur-ws.org/Vol-116/#event>,
         <http://ceur-ws.org/Vol-12/#event>,
         <http://ceur-ws.org/Vol-20/#event>,
@@ -39,4 +40,8 @@
         <http://ceur-ws.org/Vol-56/#event>,
         <http://ceur-ws.org/Vol-6/#event>,
         <http://ceur-ws.org/Vol-80/#event> .
+
+<http://ceur-ws.org/Vol-246/#part-ws> a ns8:Workshop ;
+    ns6:partOf <http://ceur-ws.org/series/ws> ;
+    ns9:title "Bildverarbeitung für die Medizin 2005: Algorithmen - Systeme - Anwendungen" .
 

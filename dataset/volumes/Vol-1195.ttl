@@ -1,12 +1,12 @@
 @prefix ns1: <http://xmlns.com/foaf/0.1/> .
-@prefix ns2: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns2: <http://purl.org/ontology/bibo/#> .
 @prefix ns3: <http://www.w3.org/2002/07/owl#> .
 @prefix ns4: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns5: <http://purl.org/ontology/bibo/#> .
+@prefix ns5: <http://data.semanticweb.org/ns/swc/ontology/#> .
 @prefix ns6: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns9: <http://purl.org/dc/elements/1.1/> .
+@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns8: <http://purl.org/dc/elements/1.1/> .
+@prefix ns9: <http://purl.org/NET/c4dm/timeline.owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -347,17 +347,23 @@
     ns1:made <http://ceur-ws.org/Vol-1195/#paper6-copy> ;
     ns1:name "Wolfgang Faber" .
 
-<http://ceur-ws.org/Vol-1195/#event> a ns2:WorkshopEvent ;
-    ns2:hasLocation <http://dbpedia.org/resource/Italy> ;
-    ns2:hasPart <http://ceur-ws.org/Vol-1195/#part-CILC> ;
-    ns2:isSubEventOf <http://ceur-ws.org/Vol-1195/#conf> ;
-    ns7:beginsAtDatetime "2014-06-16T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:endsAtDatetime "2014-06-18T00:00:00+00:00"^^xsd:dateTime ;
-    ns9:license "http://choosealicense.com/licenses/no-license/" ;
+<http://ceur-ws.org/Vol-1195/#event> a ns5:WorkshopEvent ;
+    ns5:hasLocation <http://dbpedia.org/resource/Italy> ;
+    ns5:hasPart <http://ceur-ws.org/Vol-1195/#part-CILC> ;
+    ns5:isSubEventOf <http://ceur-ws.org/Vol-1195/#conf> ;
+    ns9:beginsAtDatetime "2014-06-16T00:00:00+00:00"^^xsd:dateTime ;
+    ns9:endsAtDatetime "2014-06-18T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:license "http://choosealicense.com/licenses/no-license/" ;
     rdfs:seeAlso <http://ceur-ws.org/Vol-1068/#event>,
         <http://ceur-ws.org/Vol-598/#event>,
         <http://ceur-ws.org/Vol-810/#event>,
         <http://ceur-ws.org/Vol-857/#event> .
+
+<http://ceur-ws.org/Vol-1195/#part-CILC> a ns2:Workshop ;
+    ns5:partOf <http://ceur-ws.org/series/CILC> ;
+    ns6:title "Italian Conference on Computational Logic 2014" ;
+    ns2:shortTitle "CILC" ;
+    ns4:edition 29 .
 
 <http://ceur-ws.org/Vol-1195/#AlexandruiI.iTomescu> a ns1:Person ;
     ns3:sameAs <http://ceur-ws.org/persons/AlexandruiI.iTomescu> ;
@@ -419,50 +425,50 @@
         <http://ceur-ws.org/Vol-1195/#short3> ;
     ns1:name "Viviana Mascardi" .
 
-<http://ceur-ws.org/Vol-1195/#invited1> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1195/> ;
+<http://ceur-ws.org/Vol-1195/#invited1> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1195/> ;
     ns6:title "From Logic Programming to Argumentation and Back" ;
-    ns5:endPage 4 ;
-    ns5:numPages 2 ;
-    ns5:section <http://ceur-ws.org/Vol-1195/#Abstractsofinvitedtalks> ;
-    ns5:startPage 3 ;
+    ns2:endPage 4 ;
+    ns2:numPages 2 ;
+    ns2:section <http://ceur-ws.org/Vol-1195/#Abstractsofinvitedtalks> ;
+    ns2:startPage 3 ;
     ns4:author <http://ceur-ws.org/Vol-1195/#FrancescaiToni> .
 
-<http://ceur-ws.org/Vol-1195/#invited2> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1195/> ;
+<http://ceur-ws.org/Vol-1195/#invited2> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1195/> ;
     ns6:title "Tractable Approaches to Consistent Query Answering in Ontology-Based-Data Access" ;
-    ns5:endPage 11 ;
-    ns5:numPages 1 ;
-    ns5:section <http://ceur-ws.org/Vol-1195/#Abstractsofinvitedtalks> ;
-    ns5:startPage 11 ;
+    ns2:endPage 11 ;
+    ns2:numPages 1 ;
+    ns2:section <http://ceur-ws.org/Vol-1195/#Abstractsofinvitedtalks> ;
+    ns2:startPage 11 ;
     ns4:author <http://ceur-ws.org/Vol-1195/#RiccardoiRosati> .
 
-<http://ceur-ws.org/Vol-1195/#long1> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1195/> ;
+<http://ceur-ws.org/Vol-1195/#long1> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1195/> ;
     ns6:title "Set Graphs VI: Logic Programming and Bisimulation" ;
-    ns5:endPage 12 ;
-    ns5:numPages 1 ;
-    ns5:section <http://ceur-ws.org/Vol-1195/#Fullpapers> ;
-    ns5:startPage 12 ;
+    ns2:endPage 12 ;
+    ns2:numPages 1 ;
+    ns2:section <http://ceur-ws.org/Vol-1195/#Fullpapers> ;
+    ns2:startPage 12 ;
     ns4:author <http://ceur-ws.org/Vol-1195/#AgostinoiDovier> .
 
-<http://ceur-ws.org/Vol-1195/#long7> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1195/> ;
+<http://ceur-ws.org/Vol-1195/#long7> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1195/> ;
     ns6:title "Toward an Improved Downward Refinement Operator for Inductive Logic Programming" ;
-    ns5:endPage 98 ;
-    ns5:numPages 15 ;
-    ns5:section <http://ceur-ws.org/Vol-1195/#Fullpapers> ;
-    ns5:startPage 84 ;
+    ns2:endPage 98 ;
+    ns2:numPages 15 ;
+    ns2:section <http://ceur-ws.org/Vol-1195/#Fullpapers> ;
+    ns2:startPage 84 ;
     ns4:author <http://ceur-ws.org/Vol-1195/#StefanoiFerilli> .
 
-<http://ceur-ws.org/Vol-1195/#paperX1> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1195/> ;
+<http://ceur-ws.org/Vol-1195/#paperX1> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1195/> ;
     ns6:title "The whole proceedings (including the preface and the table of contents) can be downloaded as a" ;
-    ns5:section <http://ceur-ws.org/Vol-1195/#FullpaperspublishedonarXivorg> ;
+    ns2:section <http://ceur-ws.org/Vol-1195/#FullpaperspublishedonarXivorg> ;
     ns4:author <http://ceur-ws.org/Vol-1195/#GianiLucaiPozzato> .
 
-<http://ceur-ws.org/Vol-1195/#Abstractsofinvitedtalks> a ns2:SessionEvent ;
-    ns2:partOf <http://ceur-ws.org/Vol-1195/> ;
+<http://ceur-ws.org/Vol-1195/#Abstractsofinvitedtalks> a ns5:SessionEvent ;
+    ns5:partOf <http://ceur-ws.org/Vol-1195/> ;
     ns6:title "Abstracts of invited talks" .
 
 <http://ceur-ws.org/Vol-1195/#GianiLucaiPozzato> a ns1:Person ;
@@ -479,301 +485,301 @@
         <http://ceur-ws.org/Vol-1195/#long5> ;
     ns1:name "Stefania Costantini" .
 
-<http://ceur-ws.org/Vol-1195/#long12> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1195/> ;
+<http://ceur-ws.org/Vol-1195/#long12> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1195/> ;
     ns6:title "Semantic Web Services for Integrated Tourism in the Apulia Region" ;
-    ns5:endPage 177 ;
-    ns5:numPages 16 ;
-    ns5:section <http://ceur-ws.org/Vol-1195/#Fullpapers> ;
-    ns5:startPage 162 ;
+    ns2:endPage 177 ;
+    ns2:numPages 16 ;
+    ns2:section <http://ceur-ws.org/Vol-1195/#Fullpapers> ;
+    ns2:startPage 162 ;
     ns4:author <http://ceur-ws.org/Vol-1195/#FlorianaiEsposito>,
         <http://ceur-ws.org/Vol-1195/#FrancescaiAlessandraiLisi> .
 
-<http://ceur-ws.org/Vol-1195/#long15> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1195/> ;
+<http://ceur-ws.org/Vol-1195/#long15> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1195/> ;
     ns6:title "Revising Description Logic Terminologies to Handle Exceptions: a First Step" ;
-    ns5:endPage 224 ;
-    ns5:numPages 15 ;
-    ns5:section <http://ceur-ws.org/Vol-1195/#Fullpapers> ;
-    ns5:startPage 210 ;
+    ns2:endPage 224 ;
+    ns2:numPages 15 ;
+    ns2:section <http://ceur-ws.org/Vol-1195/#Fullpapers> ;
+    ns2:startPage 210 ;
     ns4:author <http://ceur-ws.org/Vol-1195/#GianiLucaiPozzato>,
         <http://ceur-ws.org/Vol-1195/#RobertoiMicalizio> .
 
-<http://ceur-ws.org/Vol-1195/#long16> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1195/> ;
+<http://ceur-ws.org/Vol-1195/#long16> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1195/> ;
     ns6:title "Runtime Self-Checking via Temporal (Meta-)Axioms for Assurance of Logical Agent Systems" ;
-    ns5:endPage 240 ;
-    ns5:numPages 16 ;
-    ns5:section <http://ceur-ws.org/Vol-1195/#Fullpapers> ;
-    ns5:startPage 225 ;
+    ns2:endPage 240 ;
+    ns2:numPages 16 ;
+    ns2:section <http://ceur-ws.org/Vol-1195/#Fullpapers> ;
+    ns2:startPage 225 ;
     ns4:author <http://ceur-ws.org/Vol-1195/#GiovanniiDeiGasperis>,
         <http://ceur-ws.org/Vol-1195/#StefaniaiCostantini> .
 
-<http://ceur-ws.org/Vol-1195/#long17> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1195/> ;
+<http://ceur-ws.org/Vol-1195/#long17> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1195/> ;
     ns6:title "Complex Events and Actions in Logical Agents" ;
-    ns5:endPage 255 ;
-    ns5:numPages 15 ;
-    ns5:section <http://ceur-ws.org/Vol-1195/#Fullpapers> ;
-    ns5:startPage 241 ;
+    ns2:endPage 255 ;
+    ns2:numPages 15 ;
+    ns2:section <http://ceur-ws.org/Vol-1195/#Fullpapers> ;
+    ns2:startPage 241 ;
     ns4:author <http://ceur-ws.org/Vol-1195/#RegisiRiveret>,
         <http://ceur-ws.org/Vol-1195/#StefaniaiCostantini> .
 
-<http://ceur-ws.org/Vol-1195/#long5> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1195/> ;
+<http://ceur-ws.org/Vol-1195/#long5> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1195/> ;
     ns6:title "Query Answering in Resource-Based Answer Set Semantics" ;
-    ns5:endPage 68 ;
-    ns5:numPages 15 ;
-    ns5:section <http://ceur-ws.org/Vol-1195/#Fullpapers> ;
-    ns5:startPage 54 ;
+    ns2:endPage 68 ;
+    ns2:numPages 15 ;
+    ns2:section <http://ceur-ws.org/Vol-1195/#Fullpapers> ;
+    ns2:startPage 54 ;
     ns4:author <http://ceur-ws.org/Vol-1195/#AndreaiFormisano>,
         <http://ceur-ws.org/Vol-1195/#StefaniaiCostantini> .
 
-<http://ceur-ws.org/Vol-1195/#short5> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1195/> ;
+<http://ceur-ws.org/Vol-1195/#short5> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1195/> ;
     ns6:title "Keeping Interval-Based Functional Dependencies Up-to-Date" ;
-    ns5:endPage 329 ;
-    ns5:numPages 6 ;
-    ns5:section <http://ceur-ws.org/Vol-1195/#Shortpapers> ;
-    ns5:startPage 324 ;
+    ns2:endPage 329 ;
+    ns2:numPages 6 ;
+    ns2:section <http://ceur-ws.org/Vol-1195/#Shortpapers> ;
+    ns2:startPage 324 ;
     ns4:author <http://ceur-ws.org/Vol-1195/#CarloiCombi>,
         <http://ceur-ws.org/Vol-1195/#PietroiSala> .
 
-<http://ceur-ws.org/Vol-1195/#FullpaperspublishedonarXivorg> a ns2:SessionEvent ;
-    ns2:partOf <http://ceur-ws.org/Vol-1195/> ;
+<http://ceur-ws.org/Vol-1195/#FullpaperspublishedonarXivorg> a ns5:SessionEvent ;
+    ns5:partOf <http://ceur-ws.org/Vol-1195/> ;
     ns6:title "Full papers published on arXiv.org" .
 
-<http://ceur-ws.org/Vol-1195/#long10> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1195/> ;
+<http://ceur-ws.org/Vol-1195/#long10> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1195/> ;
     ns6:title "A Mechanism for Ontology Confidentiality" ;
-    ns5:endPage 146 ;
-    ns5:numPages 15 ;
-    ns5:section <http://ceur-ws.org/Vol-1195/#Fullpapers> ;
-    ns5:startPage 132 ;
+    ns2:endPage 146 ;
+    ns2:numPages 15 ;
+    ns2:section <http://ceur-ws.org/Vol-1195/#Fullpapers> ;
+    ns2:startPage 132 ;
     ns4:author <http://ceur-ws.org/Vol-1195/#IlianaiPetrova>,
         <http://ceur-ws.org/Vol-1195/#LuigiiSauro>,
         <http://ceur-ws.org/Vol-1195/#PieroiA.iBonatti> .
 
-<http://ceur-ws.org/Vol-1195/#long11> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1195/> ;
+<http://ceur-ws.org/Vol-1195/#long11> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1195/> ;
     ns6:title "Herbrand-Satisfiability of a Quantified Set-theoretical Fragment" ;
-    ns5:endPage 161 ;
-    ns5:numPages 15 ;
-    ns5:section <http://ceur-ws.org/Vol-1195/#Fullpapers> ;
-    ns5:startPage 147 ;
+    ns2:endPage 161 ;
+    ns2:numPages 15 ;
+    ns2:section <http://ceur-ws.org/Vol-1195/#Fullpapers> ;
+    ns2:startPage 147 ;
     ns4:author <http://ceur-ws.org/Vol-1195/#CristianoiLongo>,
         <http://ceur-ws.org/Vol-1195/#DomenicoiCantone>,
         <http://ceur-ws.org/Vol-1195/#MariannaiNicolosi-Asmundo> .
 
-<http://ceur-ws.org/Vol-1195/#long13> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1195/> ;
+<http://ceur-ws.org/Vol-1195/#long13> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1195/> ;
     ns6:title "A Dual Tableau-based Decision Procedure for a Relational Logic with the Universal Relation" ;
-    ns5:endPage 193 ;
-    ns5:numPages 16 ;
-    ns5:section <http://ceur-ws.org/Vol-1195/#Fullpapers> ;
-    ns5:startPage 178 ;
+    ns2:endPage 193 ;
+    ns2:numPages 16 ;
+    ns2:section <http://ceur-ws.org/Vol-1195/#Fullpapers> ;
+    ns2:startPage 178 ;
     ns4:author <http://ceur-ws.org/Vol-1195/#DomenicoiCantone>,
         <http://ceur-ws.org/Vol-1195/#EwaiOrlowska>,
         <http://ceur-ws.org/Vol-1195/#MariannaiNicolosi-Asmundo> .
 
-<http://ceur-ws.org/Vol-1195/#long14> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1195/> ;
+<http://ceur-ws.org/Vol-1195/#long14> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1195/> ;
     ns6:title "Query Answering over Contextualized RDF Knowledge with Forall-Existential Bridge Rules: Attaining Decidability Using Acyclicity" ;
-    ns5:endPage 209 ;
-    ns5:numPages 16 ;
-    ns5:section <http://ceur-ws.org/Vol-1195/#Fullpapers> ;
-    ns5:startPage 194 ;
+    ns2:endPage 209 ;
+    ns2:numPages 16 ;
+    ns2:section <http://ceur-ws.org/Vol-1195/#Fullpapers> ;
+    ns2:startPage 194 ;
     ns4:author <http://ceur-ws.org/Vol-1195/#GabrieliKuper>,
         <http://ceur-ws.org/Vol-1195/#LucianoiSerafini>,
         <http://ceur-ws.org/Vol-1195/#MathewiJoseph> .
 
-<http://ceur-ws.org/Vol-1195/#long18> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1195/> ;
+<http://ceur-ws.org/Vol-1195/#long18> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1195/> ;
     ns6:title "Argumentation for Propositional Logic and Nonmonotonic Reasoning" ;
-    ns5:endPage 271 ;
-    ns5:numPages 16 ;
-    ns5:section <http://ceur-ws.org/Vol-1195/#Fullpapers> ;
-    ns5:startPage 256 ;
+    ns2:endPage 271 ;
+    ns2:numPages 16 ;
+    ns2:section <http://ceur-ws.org/Vol-1195/#Fullpapers> ;
+    ns2:startPage 256 ;
     ns4:author <http://ceur-ws.org/Vol-1195/#AntonisiKakas>,
         <http://ceur-ws.org/Vol-1195/#FrancescaiToni>,
         <http://ceur-ws.org/Vol-1195/#PaoloiMancarella> .
 
-<http://ceur-ws.org/Vol-1195/#long19> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1195/> ;
+<http://ceur-ws.org/Vol-1195/#long19> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1195/> ;
     ns6:title "The Representation of Boolean Algebras in the Spotlight of a Proof Checker" ;
-    ns5:endPage 286 ;
-    ns5:numPages 15 ;
-    ns5:section <http://ceur-ws.org/Vol-1195/#Fullpapers> ;
-    ns5:startPage 272 ;
+    ns2:endPage 286 ;
+    ns2:numPages 15 ;
+    ns2:section <http://ceur-ws.org/Vol-1195/#Fullpapers> ;
+    ns2:startPage 272 ;
     ns4:author <http://ceur-ws.org/Vol-1195/#AlexandruiI.iTomescu>,
         <http://ceur-ws.org/Vol-1195/#EugenioiG.iOmodeo>,
         <http://ceur-ws.org/Vol-1195/#RodicaiCeterchi> .
 
-<http://ceur-ws.org/Vol-1195/#long3> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1195/> ;
+<http://ceur-ws.org/Vol-1195/#long3> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1195/> ;
     ns6:title "JTabWb: a Java Framework for Implementing Terminating Sequent and Tableau Calculi" ;
-    ns5:endPage 45 ;
-    ns5:numPages 16 ;
-    ns5:section <http://ceur-ws.org/Vol-1195/#Fullpapers> ;
-    ns5:startPage 30 ;
+    ns2:endPage 45 ;
+    ns2:numPages 16 ;
+    ns2:section <http://ceur-ws.org/Vol-1195/#Fullpapers> ;
+    ns2:startPage 30 ;
     ns4:author <http://ceur-ws.org/Vol-1195/#CamilloiFiorentini>,
         <http://ceur-ws.org/Vol-1195/#GuidoiFiorino>,
         <http://ceur-ws.org/Vol-1195/#MauroiFerrari> .
 
-<http://ceur-ws.org/Vol-1195/#long6> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1195/> ;
+<http://ceur-ws.org/Vol-1195/#long6> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1195/> ;
     ns6:title "Specification and Verification of Commitment-Regulated Data-Aware Multiagent Systems" ;
-    ns5:endPage 83 ;
-    ns5:numPages 15 ;
-    ns5:section <http://ceur-ws.org/Vol-1195/#Fullpapers> ;
-    ns5:startPage 69 ;
+    ns2:endPage 83 ;
+    ns2:numPages 15 ;
+    ns2:section <http://ceur-ws.org/Vol-1195/#Fullpapers> ;
+    ns2:startPage 69 ;
     ns4:author <http://ceur-ws.org/Vol-1195/#DiegoiCalvanese>,
         <http://ceur-ws.org/Vol-1195/#GiuseppeiDeiGiacomo>,
         <http://ceur-ws.org/Vol-1195/#MarcoiMontali> .
 
-<http://ceur-ws.org/Vol-1195/#long9> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1195/> ;
+<http://ceur-ws.org/Vol-1195/#long9> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1195/> ;
     ns6:title "Defeasibility in Contextual Reasoning with CKR" ;
-    ns5:endPage 131 ;
-    ns5:numPages 18 ;
-    ns5:section <http://ceur-ws.org/Vol-1195/#Fullpapers> ;
-    ns5:startPage 114 ;
+    ns2:endPage 131 ;
+    ns2:numPages 18 ;
+    ns2:section <http://ceur-ws.org/Vol-1195/#Fullpapers> ;
+    ns2:startPage 114 ;
     ns4:author <http://ceur-ws.org/Vol-1195/#LorisiBozzato>,
         <http://ceur-ws.org/Vol-1195/#LucianoiSerafini>,
         <http://ceur-ws.org/Vol-1195/#ThomasiEiter> .
 
-<http://ceur-ws.org/Vol-1195/#paper6-copy> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1195/> ;
+<http://ceur-ws.org/Vol-1195/#paper6-copy> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1195/> ;
     ns6:title "Efficient Computation of the Well-Founded Semantics over Big Data" ;
-    ns5:section <http://ceur-ws.org/Vol-1195/#FullpaperspublishedonarXivorg> ;
+    ns2:section <http://ceur-ws.org/Vol-1195/#FullpaperspublishedonarXivorg> ;
     ns4:author <http://ceur-ws.org/Vol-1195/#GrigorisiAntoniou>,
         <http://ceur-ws.org/Vol-1195/#IliasiTachmazidis>,
         <http://ceur-ws.org/Vol-1195/#WolfgangiFaber> .
 
-<http://ceur-ws.org/Vol-1195/#short0> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1195/> ;
+<http://ceur-ws.org/Vol-1195/#short0> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1195/> ;
     ns6:title "A Framework for the Verification of Parameterized Infinite-State Systems" ;
-    ns5:endPage 301 ;
-    ns5:numPages 15 ;
-    ns5:section <http://ceur-ws.org/Vol-1195/#Shortpapers> ;
-    ns5:startPage 287 ;
+    ns2:endPage 301 ;
+    ns2:numPages 15 ;
+    ns2:section <http://ceur-ws.org/Vol-1195/#Shortpapers> ;
+    ns2:startPage 287 ;
     ns4:author <http://ceur-ws.org/Vol-1195/#FrancescoiAlberti>,
         <http://ceur-ws.org/Vol-1195/#NatashaiSharygina>,
         <http://ceur-ws.org/Vol-1195/#SilvioiGhilardi> .
 
-<http://ceur-ws.org/Vol-1195/#short1> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1195/> ;
+<http://ceur-ws.org/Vol-1195/#short1> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1195/> ;
     ns6:title "On Relating Voting Systems and Argumentation Frameworks" ;
-    ns5:endPage 308 ;
-    ns5:numPages 6 ;
-    ns5:section <http://ceur-ws.org/Vol-1195/#Shortpapers> ;
-    ns5:startPage 303 ;
+    ns2:endPage 308 ;
+    ns2:numPages 6 ;
+    ns2:section <http://ceur-ws.org/Vol-1195/#Shortpapers> ;
+    ns2:startPage 303 ;
     ns4:author <http://ceur-ws.org/Vol-1195/#IreneiBenedetti>,
         <http://ceur-ws.org/Vol-1195/#PaoloiPiersanti>,
         <http://ceur-ws.org/Vol-1195/#StefanoiBistarelli> .
 
-<http://ceur-ws.org/Vol-1195/#short2> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1195/> ;
+<http://ceur-ws.org/Vol-1195/#short2> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1195/> ;
     ns6:title "A First Study of the Horn Fragment of the Modal Logic of Time Intervals" ;
-    ns5:endPage 313 ;
-    ns5:numPages 5 ;
-    ns5:section <http://ceur-ws.org/Vol-1195/#Shortpapers> ;
-    ns5:startPage 309 ;
+    ns2:endPage 313 ;
+    ns2:numPages 5 ;
+    ns2:section <http://ceur-ws.org/Vol-1195/#Shortpapers> ;
+    ns2:startPage 309 ;
     ns4:author <http://ceur-ws.org/Vol-1195/#DavideiBresolin>,
         <http://ceur-ws.org/Vol-1195/#EmilioiMuoz-Velasco>,
         <http://ceur-ws.org/Vol-1195/#GuidoiSciavicco> .
 
-<http://ceur-ws.org/Vol-1195/#short3> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1195/> ;
+<http://ceur-ws.org/Vol-1195/#short3> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1195/> ;
     ns6:title "Distributed Runtime Verification of JADE and Jason Multiagent Systems with Prolog" ;
-    ns5:endPage 318 ;
-    ns5:numPages 5 ;
-    ns5:section <http://ceur-ws.org/Vol-1195/#Shortpapers> ;
-    ns5:startPage 314 ;
+    ns2:endPage 318 ;
+    ns2:numPages 5 ;
+    ns2:section <http://ceur-ws.org/Vol-1195/#Shortpapers> ;
+    ns2:startPage 314 ;
     ns4:author <http://ceur-ws.org/Vol-1195/#DanielaiBriola>,
         <http://ceur-ws.org/Vol-1195/#DavideiAncona>,
         <http://ceur-ws.org/Vol-1195/#VivianaiMascardi> .
 
-<http://ceur-ws.org/Vol-1195/#short6> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1195/> ;
+<http://ceur-ws.org/Vol-1195/#short6> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1195/> ;
     ns6:title "A Computational Model for Mapreduce Job Flow" ;
-    ns5:endPage 334 ;
-    ns5:numPages 5 ;
-    ns5:section <http://ceur-ws.org/Vol-1195/#Shortpapers> ;
-    ns5:startPage 330 ;
+    ns2:endPage 334 ;
+    ns2:numPages 5 ;
+    ns2:section <http://ceur-ws.org/Vol-1195/#Shortpapers> ;
+    ns2:startPage 330 ;
     ns4:author <http://ceur-ws.org/Vol-1195/#EugenioiDiiSciascio>,
         <http://ceur-ws.org/Vol-1195/#MarinaiMongiello>,
         <http://ceur-ws.org/Vol-1195/#TommasoidiiNoia> .
 
-<http://ceur-ws.org/Vol-1195/#long8> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1195/> ;
+<http://ceur-ws.org/Vol-1195/#long8> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1195/> ;
     ns6:title "Program Verification using Constraint Handling Rules and Array Constraint Generalizations" ;
-    ns5:endPage 113 ;
-    ns5:numPages 15 ;
-    ns5:section <http://ceur-ws.org/Vol-1195/#Fullpapers> ;
-    ns5:startPage 99 ;
+    ns2:endPage 113 ;
+    ns2:numPages 15 ;
+    ns2:section <http://ceur-ws.org/Vol-1195/#Fullpapers> ;
+    ns2:startPage 99 ;
     ns4:author <http://ceur-ws.org/Vol-1195/#AlbertoiPettorossi>,
         <http://ceur-ws.org/Vol-1195/#EmanueleiDeiAngelis>,
         <http://ceur-ws.org/Vol-1195/#FabioiFioravanti>,
         <http://ceur-ws.org/Vol-1195/#MaurizioiProietti> .
 
-<http://ceur-ws.org/Vol-1195/#short4> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1195/> ;
+<http://ceur-ws.org/Vol-1195/#short4> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1195/> ;
     ns6:title "Finding Commonalities in Linked Open Data" ;
-    ns5:endPage 323 ;
-    ns5:numPages 5 ;
-    ns5:section <http://ceur-ws.org/Vol-1195/#Shortpapers> ;
-    ns5:startPage 319 ;
+    ns2:endPage 323 ;
+    ns2:numPages 5 ;
+    ns2:section <http://ceur-ws.org/Vol-1195/#Shortpapers> ;
+    ns2:startPage 319 ;
     ns4:author <http://ceur-ws.org/Vol-1195/#EugenioiDiiSciascio>,
         <http://ceur-ws.org/Vol-1195/#FrancescoiM.iDonini>,
         <http://ceur-ws.org/Vol-1195/#SilviaiGiannini>,
         <http://ceur-ws.org/Vol-1195/#SimonaiColucci> .
 
-<http://ceur-ws.org/Vol-1195/#short7> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1195/> ;
+<http://ceur-ws.org/Vol-1195/#short7> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1195/> ;
     ns6:title "Hyper-Extensionality and One-Node Elimination on Membership Graphs" ;
-    ns5:endPage 340 ;
-    ns5:numPages 6 ;
-    ns5:section <http://ceur-ws.org/Vol-1195/#Shortpapers> ;
-    ns5:startPage 335 ;
+    ns2:endPage 340 ;
+    ns2:numPages 6 ;
+    ns2:section <http://ceur-ws.org/Vol-1195/#Shortpapers> ;
+    ns2:startPage 335 ;
     ns4:author <http://ceur-ws.org/Vol-1195/#AlbertoiPolicriti>,
         <http://ceur-ws.org/Vol-1195/#AlexandruiI.iTomescu>,
         <http://ceur-ws.org/Vol-1195/#CarlaiPiazza>,
         <http://ceur-ws.org/Vol-1195/#EugenioiG.iOmodeo> .
 
-<http://ceur-ws.org/Vol-1195/#long2> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1195/> ;
+<http://ceur-ws.org/Vol-1195/#long2> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1195/> ;
     ns6:title "Exploiting Prolog for Projecting Agent Interaction Protocols" ;
-    ns5:endPage 29 ;
-    ns5:numPages 16 ;
-    ns5:section <http://ceur-ws.org/Vol-1195/#Fullpapers> ;
-    ns5:startPage 14 ;
+    ns2:endPage 29 ;
+    ns2:numPages 16 ;
+    ns2:section <http://ceur-ws.org/Vol-1195/#Fullpapers> ;
+    ns2:startPage 14 ;
     ns4:author <http://ceur-ws.org/Vol-1195/#AmaliEliFallahiSeghrouchni>,
         <http://ceur-ws.org/Vol-1195/#DanielaiBriola>,
         <http://ceur-ws.org/Vol-1195/#DavideiAncona>,
         <http://ceur-ws.org/Vol-1195/#PatrickiTaillibert>,
         <http://ceur-ws.org/Vol-1195/#VivianaiMascardi> .
 
-<http://ceur-ws.org/Vol-1195/#no-trace> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1195/> ;
+<http://ceur-ws.org/Vol-1195/#no-trace> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1195/> ;
     ns6:title "Lifted Probabilistic Logic Programming" ;
-    ns5:endPage 346 ;
-    ns5:numPages 6 ;
-    ns5:section <http://ceur-ws.org/Vol-1195/#FullpaperspublishedonarXivorg> ;
-    ns5:startPage 341 ;
+    ns2:endPage 346 ;
+    ns2:numPages 6 ;
+    ns2:section <http://ceur-ws.org/Vol-1195/#FullpaperspublishedonarXivorg> ;
+    ns2:startPage 341 ;
     ns4:author <http://ceur-ws.org/Vol-1195/#ElenaiBellodi>,
         <http://ceur-ws.org/Vol-1195/#EvelinaiLamma>,
         <http://ceur-ws.org/Vol-1195/#FabrizioiRiguzzi>,
         <http://ceur-ws.org/Vol-1195/#RiccardoiZese>,
         <http://ceur-ws.org/Vol-1195/#VoriSantosiCosta> .
 
-<http://ceur-ws.org/Vol-1195/#long4> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1195/> ;
+<http://ceur-ws.org/Vol-1195/#long4> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-1195/> ;
     ns6:title "Multi-Criteria Optimal Planning for Energy Policies in CLP" ;
-    ns5:endPage 53 ;
-    ns5:numPages 8 ;
-    ns5:section <http://ceur-ws.org/Vol-1195/#Fullpapers> ;
-    ns5:startPage 46 ;
+    ns2:endPage 53 ;
+    ns2:numPages 8 ;
+    ns2:section <http://ceur-ws.org/Vol-1195/#Fullpapers> ;
+    ns2:startPage 46 ;
     ns4:author <http://ceur-ws.org/Vol-1195/#ElisaiMarengo>,
         <http://ceur-ws.org/Vol-1195/#FedericoiChesani>,
         <http://ceur-ws.org/Vol-1195/#MarcoiGavanelli>,
@@ -781,16 +787,16 @@
         <http://ceur-ws.org/Vol-1195/#PaoloiCagnoli>,
         <http://ceur-ws.org/Vol-1195/#StefanoiBragaglia> .
 
-<http://ceur-ws.org/Vol-1195/#Shortpapers> a ns2:SessionEvent ;
-    ns2:partOf <http://ceur-ws.org/Vol-1195/> ;
+<http://ceur-ws.org/Vol-1195/#Shortpapers> a ns5:SessionEvent ;
+    ns5:partOf <http://ceur-ws.org/Vol-1195/> ;
     ns6:title "Short papers" .
 
-<http://ceur-ws.org/Vol-1195/#Fullpapers> a ns2:SessionEvent ;
-    ns2:partOf <http://ceur-ws.org/Vol-1195/> ;
+<http://ceur-ws.org/Vol-1195/#Fullpapers> a ns5:SessionEvent ;
+    ns5:partOf <http://ceur-ws.org/Vol-1195/> ;
     ns6:title "Full papers" .
 
-<http://ceur-ws.org/Vol-1195/> a ns2:Proceedings ;
-    ns2:hasPart <http://ceur-ws.org/Vol-1195/#invited1>,
+<http://ceur-ws.org/Vol-1195/> a ns5:Proceedings ;
+    ns5:hasPart <http://ceur-ws.org/Vol-1195/#invited1>,
         <http://ceur-ws.org/Vol-1195/#invited2>,
         <http://ceur-ws.org/Vol-1195/#long1>,
         <http://ceur-ws.org/Vol-1195/#long10>,
@@ -822,12 +828,12 @@
         <http://ceur-ws.org/Vol-1195/#short5>,
         <http://ceur-ws.org/Vol-1195/#short6>,
         <http://ceur-ws.org/Vol-1195/#short7> ;
-    ns2:hasSession <http://ceur-ws.org/Vol-1195/#Abstractsofinvitedtalks>,
+    ns5:hasSession <http://ceur-ws.org/Vol-1195/#Abstractsofinvitedtalks>,
         <http://ceur-ws.org/Vol-1195/#Fullpapers>,
         <http://ceur-ws.org/Vol-1195/#FullpaperspublishedonarXivorg>,
         <http://ceur-ws.org/Vol-1195/#Shortpapers> ;
-    ns8:issued "2014-07-18T00:00:00+00:00"^^xsd:dateTime ;
-    ns5:presentedAt <http://ceur-ws.org/Vol-1195/#event> ;
+    ns7:issued "2014-07-18T00:00:00+00:00"^^xsd:dateTime ;
+    ns2:presentedAt <http://ceur-ws.org/Vol-1195/#event> ;
     ns4:editor <http://ceur-ws.org/Vol-1195/#GianiLucaiPozzato>,
         <http://ceur-ws.org/Vol-1195/#LauraiGiordano>,
         <http://ceur-ws.org/Vol-1195/#ValentinaiGliozzi> .

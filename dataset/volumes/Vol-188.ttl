@@ -1,12 +1,12 @@
 @prefix ns1: <http://xmlns.com/foaf/0.1/> .
-@prefix ns2: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns2: <http://swrc.ontoware.org/ontology/#> .
 @prefix ns3: <http://www.w3.org/2002/07/owl#> .
-@prefix ns4: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns5: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns6: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns7: <http://purl.org/dc/elements/1.1/> .
+@prefix ns4: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns5: <http://purl.org/ontology/bibo/#> .
+@prefix ns6: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns9: <http://purl.org/ontology/bibo/#> .
+@prefix ns9: <http://purl.org/dc/elements/1.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -53,7 +53,7 @@
     ns1:name "Belen Diaz-Agudo" .
 
 <http://ceur-ws.org/Vol-188/#BijaniParsia> a ns1:Person ;
-    ns4:affiliation "" ;
+    ns2:affiliation "" ;
     ns3:sameAs <http://ceur-ws.org/persons/BijaniParsia> ;
     ns1:name "Bijan Parsia" .
 
@@ -258,7 +258,7 @@
     ns1:name "Peter Haase" .
 
 <http://ceur-ws.org/Vol-188/#PeteriPatel-Schneider> a ns1:Person ;
-    ns4:affiliation "Bell Labs Research" ;
+    ns2:affiliation "Bell Labs Research" ;
     ns3:sameAs <http://ceur-ws.org/persons/PeteriPatel-Schneider> ;
     ns1:name "Peter Patel-Schneider" .
 
@@ -382,17 +382,31 @@
     ns1:made <http://ceur-ws.org/Vol-188/#sub6> ;
     ns1:name "Zhengxiang Pan." .
 
-<http://ceur-ws.org/Vol-188/#event> a ns5:WorkshopEvent ;
-    ns5:hasLocation <http://dbpedia.org/resource/Republic_of_Ireland> ;
-    ns5:hasPart <http://ceur-ws.org/Vol-188/#part-OWL>,
+<http://ceur-ws.org/Vol-188/#event> a ns4:WorkshopEvent ;
+    ns4:hasLocation <http://dbpedia.org/resource/Republic_of_Ireland> ;
+    ns4:hasPart <http://ceur-ws.org/Vol-188/#part-OWL>,
         <http://ceur-ws.org/Vol-188/#part-OWLED> ;
-    ns5:isSubEventOf <http://ceur-ws.org/Vol-188/#conf> ;
+    ns4:isSubEventOf <http://ceur-ws.org/Vol-188/#conf> ;
     ns8:beginsAtDatetime "2005-11-11T00:00:00+00:00"^^xsd:dateTime ;
     ns8:endsAtDatetime "2005-11-12T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:license "http://choosealicense.com/licenses/no-license/" .
+    ns9:license "http://choosealicense.com/licenses/no-license/" .
+
+<http://ceur-ws.org/Vol-188/#part-OWL> a ns5:Workshop ;
+    ns4:partOf <http://ceur-ws.org/series/OWL> ;
+    ns6:title "OWL",
+        "OWL: Experiences and Directions 2005" ;
+    ns5:shortTitle "OWL" ;
+    ns2:edition 1 .
+
+<http://ceur-ws.org/Vol-188/#part-OWLED> a ns5:Workshop ;
+    ns4:partOf <http://ceur-ws.org/series/OWLED> ;
+    ns6:title "OWL: Experiences and Directions 2005",
+        "OWLED" ;
+    ns5:shortTitle "OWLED" ;
+    ns2:edition 1 .
 
 <http://ceur-ws.org/Vol-188/#BernardoiCuencaiGrau> a ns1:Person ;
-    ns4:affiliation "" ;
+    ns2:affiliation "" ;
     ns3:sameAs <http://ceur-ws.org/persons/BernardoiCuencaiGrau> ;
     ns1:made <http://ceur-ws.org/Vol-188/#sub26> ;
     ns1:name "Bernardo Cuenca Grau" .
@@ -415,45 +429,45 @@
         <http://ceur-ws.org/Vol-188/#sub5> ;
     ns1:name "Pascal Hitzler" .
 
-<http://ceur-ws.org/Vol-188/#sub17> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-188/> ;
-    ns2:title "Experiences of Using OWL at the Ordnance Survey" ;
-    ns4:author <http://ceur-ws.org/Vol-188/#JohniGoodwin.> .
+<http://ceur-ws.org/Vol-188/#sub17> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-188/> ;
+    ns6:title "Experiences of Using OWL at the Ordnance Survey" ;
+    ns2:author <http://ceur-ws.org/Vol-188/#JohniGoodwin.> .
 
-<http://ceur-ws.org/Vol-188/#sub18> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-188/> ;
-    ns2:title "What Have Ontologies Ever Done For Us � Potential Applications at a National Mapping Agency" ;
-    ns4:author <http://ceur-ws.org/Vol-188/#JohniGoodwin.> .
+<http://ceur-ws.org/Vol-188/#sub18> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-188/> ;
+    ns6:title "What Have Ontologies Ever Done For Us � Potential Applications at a National Mapping Agency" ;
+    ns2:author <http://ceur-ws.org/Vol-188/#JohniGoodwin.> .
 
-<http://ceur-ws.org/Vol-188/#sub19> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-188/> ;
-    ns2:title "The Foundational Model of Anatomy in OWL: experience and perspectives" ;
-    ns4:author <http://ceur-ws.org/Vol-188/#ChristineiGolbreich.> .
+<http://ceur-ws.org/Vol-188/#sub19> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-188/> ;
+    ns6:title "The Foundational Model of Anatomy in OWL: experience and perspectives" ;
+    ns2:author <http://ceur-ws.org/Vol-188/#ChristineiGolbreich.> .
 
-<http://ceur-ws.org/Vol-188/#sub21> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-188/> ;
-    ns2:title "What reasoning support for Ontology and Rules? the brain anatomy case study" ;
-    ns4:author <http://ceur-ws.org/Vol-188/#ChristineiGolbreich.> .
+<http://ceur-ws.org/Vol-188/#sub21> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-188/> ;
+    ns6:title "What reasoning support for Ontology and Rules? the brain anatomy case study" ;
+    ns2:author <http://ceur-ws.org/Vol-188/#ChristineiGolbreich.> .
 
-<http://ceur-ws.org/Vol-188/#sub23> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-188/> ;
-    ns2:title "Experiences with OWL-S, Directions for Service Composition: The Cashew Position" ;
-    ns4:author <http://ceur-ws.org/Vol-188/#BarryiNorton.> .
+<http://ceur-ws.org/Vol-188/#sub23> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-188/> ;
+    ns6:title "Experiences with OWL-S, Directions for Service Composition: The Cashew Position" ;
+    ns2:author <http://ceur-ws.org/Vol-188/#BarryiNorton.> .
 
-<http://ceur-ws.org/Vol-188/#sub31> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-188/> ;
-    ns2:title "Open vs Closed world, Rules vs Queries: Use cases from Industry" ;
-    ns4:author <http://ceur-ws.org/Vol-188/#GaryiNg.> .
+<http://ceur-ws.org/Vol-188/#sub31> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-188/> ;
+    ns6:title "Open vs Closed world, Rules vs Queries: Use cases from Industry" ;
+    ns2:author <http://ceur-ws.org/Vol-188/#GaryiNg.> .
 
-<http://ceur-ws.org/Vol-188/#sub32> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-188/> ;
-    ns2:title "The Policy Argument, the Commercial Imperative and the Wow factor" ;
-    ns4:author <http://ceur-ws.org/Vol-188/#PhiliArcher.> .
+<http://ceur-ws.org/Vol-188/#sub32> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-188/> ;
+    ns6:title "The Policy Argument, the Commercial Imperative and the Wow factor" ;
+    ns2:author <http://ceur-ws.org/Vol-188/#PhiliArcher.> .
 
-<http://ceur-ws.org/Vol-188/#sub6> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-188/> ;
-    ns2:title "Benchmarking DL Reasoners Using Realistic Ontologies" ;
-    ns4:author <http://ceur-ws.org/Vol-188/#ZhengxiangiPan.> .
+<http://ceur-ws.org/Vol-188/#sub6> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-188/> ;
+    ns6:title "Benchmarking DL Reasoners Using Realistic Ontologies" ;
+    ns2:author <http://ceur-ws.org/Vol-188/#ZhengxiangiPan.> .
 
 <http://ceur-ws.org/Vol-188/#JeffiZ.iPan> a ns1:Person ;
     ns3:sameAs <http://ceur-ws.org/persons/JeffiZ.iPan> ;
@@ -462,91 +476,91 @@
         <http://ceur-ws.org/Vol-188/#sub16> ;
     ns1:name "Jeff Z. Pan" .
 
-<http://ceur-ws.org/Vol-188/#sub1> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-188/> ;
-    ns2:title "A Tool for Storing OWL Using Database Technology" ;
-    ns4:author <http://ceur-ws.org/Vol-188/#JoseiF.iAldana-Montes.>,
+<http://ceur-ws.org/Vol-188/#sub1> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-188/> ;
+    ns6:title "A Tool for Storing OWL Using Database Technology" ;
+    ns2:author <http://ceur-ws.org/Vol-188/#JoseiF.iAldana-Montes.>,
         <http://ceur-ws.org/Vol-188/#MariaideliMariRoldan-Garcia> .
 
-<http://ceur-ws.org/Vol-188/#sub10> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-188/> ;
-    ns2:title "Introducing Customised Datatypes and Datatype Predicates into OWL" ;
-    ns4:author <http://ceur-ws.org/Vol-188/#IaniHorrocks.>,
+<http://ceur-ws.org/Vol-188/#sub10> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-188/> ;
+    ns6:title "Introducing Customised Datatypes and Datatype Predicates into OWL" ;
+    ns2:author <http://ceur-ws.org/Vol-188/#IaniHorrocks.>,
         <http://ceur-ws.org/Vol-188/#JeffiZ.iPan> .
 
-<http://ceur-ws.org/Vol-188/#sub12> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-188/> ;
-    ns2:title "Closed World Reasoning in the Semantic Web through Epistemic Operators" ;
-    ns4:author <http://ceur-ws.org/Vol-188/#BorisiMotik.>,
+<http://ceur-ws.org/Vol-188/#sub12> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-188/> ;
+    ns6:title "Closed World Reasoning in the Semantic Web through Epistemic Operators" ;
+    ns2:author <http://ceur-ws.org/Vol-188/#BorisiMotik.>,
         <http://ceur-ws.org/Vol-188/#StephaniGrimm> .
 
-<http://ceur-ws.org/Vol-188/#sub26> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-188/> ;
-    ns2:title "Representing Qualitative Spatial Information in OWL-DL" ;
-    ns4:author <http://ceur-ws.org/Vol-188/#BernardoiCuencaiGrau>,
+<http://ceur-ws.org/Vol-188/#sub26> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-188/> ;
+    ns6:title "Representing Qualitative Spatial Information in OWL-DL" ;
+    ns2:author <http://ceur-ws.org/Vol-188/#BernardoiCuencaiGrau>,
         <http://ceur-ws.org/Vol-188/#YardeniKatz> .
 
-<http://ceur-ws.org/Vol-188/#sub3> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-188/> ;
-    ns2:title "An OWL-Based Semantic Web Service Discovery Framework" ;
-    ns4:author <http://ceur-ws.org/Vol-188/#XinqiiWang>,
+<http://ceur-ws.org/Vol-188/#sub3> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-188/> ;
+    ns6:title "An OWL-Based Semantic Web Service Discovery Framework" ;
+    ns2:author <http://ceur-ws.org/Vol-188/#XinqiiWang>,
         <http://ceur-ws.org/Vol-188/#XueliiYu.> .
 
-<http://ceur-ws.org/Vol-188/#sub33> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-188/> ;
-    ns2:title "Extending OWL with Maximal Subproperties: An Approach to Define Qualified Cardinality Restrictions and Reflexive Properties" ;
-    ns4:author <http://ceur-ws.org/Vol-188/#RogieriBrussee.>,
+<http://ceur-ws.org/Vol-188/#sub33> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-188/> ;
+    ns6:title "Extending OWL with Maximal Subproperties: An Approach to Define Qualified Cardinality Restrictions and Reflexive Properties" ;
+    ns2:author <http://ceur-ws.org/Vol-188/#RogieriBrussee.>,
         <http://ceur-ws.org/Vol-188/#StanislaviPokraev> .
 
-<http://ceur-ws.org/Vol-188/#sub5> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-188/> ;
-    ns2:title "Modeling Fuzzy Rules with Description Logics" ;
-    ns4:author <http://ceur-ws.org/Vol-188/#PascaliHitzler>,
+<http://ceur-ws.org/Vol-188/#sub5> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-188/> ;
+    ns6:title "Modeling Fuzzy Rules with Description Logics" ;
+    ns2:author <http://ceur-ws.org/Vol-188/#PascaliHitzler>,
         <http://ceur-ws.org/Vol-188/#SudhiriAgarwal> .
 
-<http://ceur-ws.org/Vol-188/#sub9> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-188/> ;
-    ns2:title "Towards an Object-Oriented Reasoning System for OWL" ;
-    ns4:author <http://ceur-ws.org/Vol-188/#GeorgiosiMeditskos>,
+<http://ceur-ws.org/Vol-188/#sub9> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-188/> ;
+    ns6:title "Towards an Object-Oriented Reasoning System for OWL" ;
+    ns2:author <http://ceur-ws.org/Vol-188/#GeorgiosiMeditskos>,
         <http://ceur-ws.org/Vol-188/#NickiBassiliades.> .
 
-<http://ceur-ws.org/Vol-188/#sub15> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-188/> ;
-    ns2:title "OWL FA: A Metamodeling Extension of OWL DL" ;
-    ns4:author <http://ceur-ws.org/Vol-188/#GuusiSchreiber.>,
+<http://ceur-ws.org/Vol-188/#sub15> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-188/> ;
+    ns6:title "OWL FA: A Metamodeling Extension of OWL DL" ;
+    ns2:author <http://ceur-ws.org/Vol-188/#GuusiSchreiber.>,
         <http://ceur-ws.org/Vol-188/#IaniHorrocks.>,
         <http://ceur-ws.org/Vol-188/#JeffiZ.iPan> .
 
-<http://ceur-ws.org/Vol-188/#sub20> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-188/> ;
-    ns2:title "The Irresistible SRIQ" ;
-    ns4:author <http://ceur-ws.org/Vol-188/#IaniHorrocks.>,
+<http://ceur-ws.org/Vol-188/#sub20> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-188/> ;
+    ns6:title "The Irresistible SRIQ" ;
+    ns2:author <http://ceur-ws.org/Vol-188/#IaniHorrocks.>,
         <http://ceur-ws.org/Vol-188/#OliveriKutz>,
         <http://ceur-ws.org/Vol-188/#UlrikeiSattler.> .
 
-<http://ceur-ws.org/Vol-188/#sub24> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-188/> ;
-    ns2:title "Logical reconstruction of normative RDF" ;
-    ns4:author <http://ceur-ws.org/Vol-188/#EnricoiFranconi>,
+<http://ceur-ws.org/Vol-188/#sub24> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-188/> ;
+    ns6:title "Logical reconstruction of normative RDF" ;
+    ns2:author <http://ceur-ws.org/Vol-188/#EnricoiFranconi>,
         <http://ceur-ws.org/Vol-188/#JosideiBruijn>,
         <http://ceur-ws.org/Vol-188/#SergioiTessaris.> .
 
-<http://ceur-ws.org/Vol-188/#sub25> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-188/> ;
-    ns2:title "Building and Using an Ontology of Tasks" ;
-    ns4:author <http://ceur-ws.org/Vol-188/#FatmaiMili>,
+<http://ceur-ws.org/Vol-188/#sub25> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-188/> ;
+    ns6:title "Building and Using an Ontology of Tasks" ;
+    ns2:author <http://ceur-ws.org/Vol-188/#FatmaiMili>,
         <http://ceur-ws.org/Vol-188/#SangiviDungrani>,
         <http://ceur-ws.org/Vol-188/#SwapnaiGhanekar.> .
 
-<http://ceur-ws.org/Vol-188/#sub37> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-188/> ;
-    ns2:title "Experience Using OWL DL for the Exchange of Biological Pathway Information" ;
-    ns4:author <http://ceur-ws.org/Vol-188/#AlaniRuttenberg>,
+<http://ceur-ws.org/Vol-188/#sub37> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-188/> ;
+    ns6:title "Experience Using OWL DL for the Exchange of Biological Pathway Information" ;
+    ns2:author <http://ceur-ws.org/Vol-188/#AlaniRuttenberg>,
         <http://ceur-ws.org/Vol-188/#JoanneiLuciano.>,
         <http://ceur-ws.org/Vol-188/#JonathaniRees> .
 
 <http://ceur-ws.org/Vol-188/#IaniHorrocks.> a ns1:Person ;
-    ns4:affiliation "" ;
+    ns2:affiliation "" ;
     ns3:sameAs <http://ceur-ws.org/persons/IaniHorrocks.> ;
     ns1:made <http://ceur-ws.org/Vol-188/#sub10>,
         <http://ceur-ws.org/Vol-188/#sub15>,
@@ -554,79 +568,79 @@
         <http://ceur-ws.org/Vol-188/#sub20> ;
     ns1:name "Ian Horrocks." .
 
-<http://ceur-ws.org/Vol-188/#sub13> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-188/> ;
-    ns2:title "Tailoring OWL for data intensive ontologies" ;
-    ns4:author <http://ceur-ws.org/Vol-188/#DomenicoiLembo>,
+<http://ceur-ws.org/Vol-188/#sub13> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-188/> ;
+    ns6:title "Tailoring OWL for data intensive ontologies" ;
+    ns2:author <http://ceur-ws.org/Vol-188/#DomenicoiLembo>,
         <http://ceur-ws.org/Vol-188/#GiuseppeiDeiGiacomo>,
         <http://ceur-ws.org/Vol-188/#MaurizioiLenzerini>,
         <http://ceur-ws.org/Vol-188/#RiccardoiRosati.> .
 
-<http://ceur-ws.org/Vol-188/#sub22> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-188/> ;
-    ns2:title "Pushing the limits of OWL, Rules and Protege. A simple example." ;
-    ns4:author <http://ceur-ws.org/Vol-188/#AnneiCregan>,
+<http://ceur-ws.org/Vol-188/#sub22> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-188/> ;
+    ns6:title "Pushing the limits of OWL, Rules and Protege. A simple example." ;
+    ns2:author <http://ceur-ws.org/Vol-188/#AnneiCregan>,
         <http://ceur-ws.org/Vol-188/#DennyiVrandecic>,
         <http://ceur-ws.org/Vol-188/#MalgorzataiMochol>,
         <http://ceur-ws.org/Vol-188/#SeaniBechhofer.> .
 
-<http://ceur-ws.org/Vol-188/#sub30> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-188/> ;
-    ns2:title "On Developing a Distributed CBR Framework through Semantic Web Services" ;
-    ns4:author <http://ceur-ws.org/Vol-188/#BeleniDiaz-Agudo>,
+<http://ceur-ws.org/Vol-188/#sub30> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-188/> ;
+    ns6:title "On Developing a Distributed CBR Framework through Semantic Web Services" ;
+    ns2:author <http://ceur-ws.org/Vol-188/#BeleniDiaz-Agudo>,
         <http://ceur-ws.org/Vol-188/#MarcoiAntonioiGomez-Martin.>,
         <http://ceur-ws.org/Vol-188/#PedroiA.iGonzalez-Calero>,
         <http://ceur-ws.org/Vol-188/#PedroiPabloiGomez-Martin> .
 
-<http://ceur-ws.org/Vol-188/#sub35> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-188/> ;
-    ns2:title "Protein Ontology Development using OWL" ;
-    ns4:author <http://ceur-ws.org/Vol-188/#AmandeepiSidhu>,
+<http://ceur-ws.org/Vol-188/#sub35> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-188/> ;
+    ns6:title "Protein Ontology Development using OWL" ;
+    ns2:author <http://ceur-ws.org/Vol-188/#AmandeepiSidhu>,
         <http://ceur-ws.org/Vol-188/#BaldeviSinghiSidhu>,
         <http://ceur-ws.org/Vol-188/#ElisabethiChang>,
         <http://ceur-ws.org/Vol-188/#TharamiDillon> .
 
-<http://ceur-ws.org/Vol-188/#sub16> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-188/> ;
-    ns2:title "Fuzzy OWL: Uncertainty and the Semantic Web" ;
-    ns4:author <http://ceur-ws.org/Vol-188/#GiorgosiStamou>,
+<http://ceur-ws.org/Vol-188/#sub16> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-188/> ;
+    ns6:title "Fuzzy OWL: Uncertainty and the Semantic Web" ;
+    ns2:author <http://ceur-ws.org/Vol-188/#GiorgosiStamou>,
         <http://ceur-ws.org/Vol-188/#GiorgosiStoilos>,
         <http://ceur-ws.org/Vol-188/#IaniHorrocks.>,
         <http://ceur-ws.org/Vol-188/#JeffiZ.iPan>,
         <http://ceur-ws.org/Vol-188/#VassilisiTzouvaras> .
 
-<http://ceur-ws.org/Vol-188/#sub2> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-188/> ;
-    ns2:title "DLP is not so bad after all" ;
-    ns4:author <http://ceur-ws.org/Vol-188/#MarkusiKr%EF%BF%BDtzsch>,
+<http://ceur-ws.org/Vol-188/#sub2> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-188/> ;
+    ns6:title "DLP is not so bad after all" ;
+    ns2:author <http://ceur-ws.org/Vol-188/#MarkusiKr%EF%BF%BDtzsch>,
         <http://ceur-ws.org/Vol-188/#PascaliHitzler>,
         <http://ceur-ws.org/Vol-188/#PeteriHaase>,
         <http://ceur-ws.org/Vol-188/#RudiiStuder.>,
         <http://ceur-ws.org/Vol-188/#YorkiSure> .
 
-<http://ceur-ws.org/Vol-188/#sub28> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-188/> ;
-    ns2:title "Building Applications and Tools for OWL -- Experiences and Suggestions" ;
-    ns4:author <http://ceur-ws.org/Vol-188/#MarkoiLuther>,
+<http://ceur-ws.org/Vol-188/#sub28> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-188/> ;
+    ns6:title "Building Applications and Tools for OWL -- Experiences and Suggestions" ;
+    ns2:author <http://ceur-ws.org/Vol-188/#MarkoiLuther>,
         <http://ceur-ws.org/Vol-188/#MassimoiPaolucci>,
         <http://ceur-ws.org/Vol-188/#MatthiasiWagner.>,
         <http://ceur-ws.org/Vol-188/#OlafiNoppens>,
         <http://ceur-ws.org/Vol-188/#ThorsteniLiebig> .
 
-<http://ceur-ws.org/Vol-188/#sub27> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-188/> ;
-    ns2:title "Experiences Using OWL in Military Applications" ;
-    ns4:author <http://ceur-ws.org/Vol-188/#AliceiMulvehill>,
+<http://ceur-ws.org/Vol-188/#sub27> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-188/> ;
+    ns6:title "Experiences Using OWL in Military Applications" ;
+    ns2:author <http://ceur-ws.org/Vol-188/#AliceiMulvehill>,
         <http://ceur-ws.org/Vol-188/#GabrieliAviles>,
         <http://ceur-ws.org/Vol-188/#KareniFraser>,
         <http://ceur-ws.org/Vol-188/#LeeiLacy>,
         <http://ceur-ws.org/Vol-188/#RobertiGaskill.>,
         <http://ceur-ws.org/Vol-188/#WilliamiGerber> .
 
-<http://ceur-ws.org/Vol-188/#sub14> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-188/> ;
-    ns2:title "The Protege OWL Experience" ;
-    ns4:author <http://ceur-ws.org/Vol-188/#AlaniRector>,
+<http://ceur-ws.org/Vol-188/#sub14> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-188/> ;
+    ns6:title "The Protege OWL Experience" ;
+    ns2:author <http://ceur-ws.org/Vol-188/#AlaniRector>,
         <http://ceur-ws.org/Vol-188/#HaiiWang.>,
         <http://ceur-ws.org/Vol-188/#HolgeriKnublauch>,
         <http://ceur-ws.org/Vol-188/#JulianiSeidenberg>,
@@ -637,8 +651,8 @@
         <http://ceur-ws.org/Vol-188/#PhiliLord>,
         <http://ceur-ws.org/Vol-188/#RobertiStevens> .
 
-<http://ceur-ws.org/Vol-188/> a ns5:Proceedings ;
-    ns5:hasPart <http://ceur-ws.org/Vol-188/#sub1>,
+<http://ceur-ws.org/Vol-188/> a ns4:Proceedings ;
+    ns4:hasPart <http://ceur-ws.org/Vol-188/#sub1>,
         <http://ceur-ws.org/Vol-188/#sub10>,
         <http://ceur-ws.org/Vol-188/#sub12>,
         <http://ceur-ws.org/Vol-188/#sub13>,
@@ -668,9 +682,9 @@
         <http://ceur-ws.org/Vol-188/#sub5>,
         <http://ceur-ws.org/Vol-188/#sub6>,
         <http://ceur-ws.org/Vol-188/#sub9> ;
-    ns6:issued "2006-06-26T00:00:00+00:00"^^xsd:dateTime ;
-    ns9:presentedAt <http://ceur-ws.org/Vol-188/#event> ;
-    ns4:editor <http://ceur-ws.org/Vol-188/#BernardoiCuencaiGrau>,
+    ns7:issued "2006-06-26T00:00:00+00:00"^^xsd:dateTime ;
+    ns5:presentedAt <http://ceur-ws.org/Vol-188/#event> ;
+    ns2:editor <http://ceur-ws.org/Vol-188/#BernardoiCuencaiGrau>,
         <http://ceur-ws.org/Vol-188/#BijaniParsia>,
         <http://ceur-ws.org/Vol-188/#IaniHorrocks.>,
         <http://ceur-ws.org/Vol-188/#PeteriPatel-Schneider> .

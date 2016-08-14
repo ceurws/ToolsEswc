@@ -1,12 +1,12 @@
-@prefix ns1: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns2: <http://purl.org/ontology/bibo/#> .
+@prefix ns1: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns2: <http://swrc.ontoware.org/ontology/#> .
 @prefix ns3: <http://xmlns.com/foaf/0.1/> .
-@prefix ns4: <http://www.w3.org/2002/07/owl#> .
-@prefix ns5: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns6: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns4: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns5: <http://purl.org/ontology/bibo/#> .
+@prefix ns6: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns8: <http://purl.org/dc/elements/1.1/> .
-@prefix ns9: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns8: <http://www.w3.org/2002/07/owl#> .
+@prefix ns9: <http://purl.org/dc/elements/1.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -89,89 +89,95 @@
     ns3:name "W. Mansoor (U.A.E)" .
 
 <http://ceur-ws.org/Vol-61/#WathiqiMansoor> a ns3:Person ;
-    ns5:affiliation "" ;
-    ns4:sameAs <http://ceur-ws.org/persons/WathiqiMansoor> ;
+    ns2:affiliation "" ;
+    ns8:sameAs <http://ceur-ws.org/persons/WathiqiMansoor> ;
     ns3:name "Wathiq Mansoor" .
 
 <http://ceur-ws.org/Vol-61/#Willem-JanivanideniHeuvel> a ns3:Person ;
-    ns2:place <http://dbpedia.org/resource/Kingdom_of_the_Netherlands> ;
-    ns5:affiliation "Infolab, Tilburg University, Tilburg, The Netherlands, PO Box 90153, NL-5000 LE TILBURG" ;
-    ns4:sameAs <http://ceur-ws.org/persons/Willem-JanivanideniHeuvel> ;
+    ns5:place <http://dbpedia.org/resource/Kingdom_of_the_Netherlands> ;
+    ns2:affiliation "Infolab, Tilburg University, Tilburg, The Netherlands, PO Box 90153, NL-5000 LE TILBURG" ;
+    ns8:sameAs <http://ceur-ws.org/persons/Willem-JanivanideniHeuvel> ;
     ns3:name "Willem-Jan van den Heuvel" .
 
 <http://ceur-ws.org/Vol-61/#ZakariaiMaamar> a ns3:Person ;
-    ns5:affiliation "" ;
-    ns4:sameAs <http://ceur-ws.org/persons/ZakariaiMaamar> ;
+    ns2:affiliation "" ;
+    ns8:sameAs <http://ceur-ws.org/persons/ZakariaiMaamar> ;
     ns3:name "Zakaria Maamar" .
 
-<http://ceur-ws.org/Vol-61/#event> a ns1:WorkshopEvent ;
-    ns1:hasLocation <http://dbpedia.org/resource/France> ;
-    ns1:hasPart <http://ceur-ws.org/Vol-61/#part-M-Services> ;
-    ns1:isSubEventOf <http://ceur-ws.org/Vol-61/#conf> ;
+<http://ceur-ws.org/Vol-61/#event> a ns4:WorkshopEvent ;
+    ns4:hasLocation <http://dbpedia.org/resource/France> ;
+    ns4:hasPart <http://ceur-ws.org/Vol-61/#part-M-Services> ;
+    ns4:isSubEventOf <http://ceur-ws.org/Vol-61/#conf> ;
     ns7:beginsAtDatetime "2002-06-26T00:00:00+00:00"^^xsd:dateTime ;
     ns7:endsAtDatetime "2002-06-26T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:license "http://choosealicense.com/licenses/no-license/" .
+    ns9:license "http://choosealicense.com/licenses/no-license/" .
+
+<http://ceur-ws.org/Vol-61/#part-M-Services> a ns5:Workshop ;
+    ns4:partOf <http://ceur-ws.org/series/M-Services> ;
+    ns1:title "International Workshop on M-Services 2002" ;
+    ns5:shortTitle "M-Services" ;
+    ns2:edition 1 .
 
 <http://ceur-ws.org/Vol-61/#Z.iMaamari%28U.A.E%29> a ns3:Person ;
     ns3:made <http://ceur-ws.org/Vol-61/#paper3>,
         <http://ceur-ws.org/Vol-61/#paper8> ;
     ns3:name "Z. Maamar (U.A.E)" .
 
-<http://ceur-ws.org/Vol-61/#paper5> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-61/> ;
-    ns6:title "M-Services Meet Web Services: Architectural Opportunities for M-Commerce" ;
-    ns5:author <http://ceur-ws.org/Vol-61/#F.iP.iCoylei%28U.S.A%29> .
+<http://ceur-ws.org/Vol-61/#paper5> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-61/> ;
+    ns1:title "M-Services Meet Web Services: Architectural Opportunities for M-Commerce" ;
+    ns2:author <http://ceur-ws.org/Vol-61/#F.iP.iCoylei%28U.S.A%29> .
 
-<http://ceur-ws.org/Vol-61/#paper7> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-61/> ;
-    ns6:title "Software Agent Technology in Mobile Service Environments" ;
-    ns5:author <http://ceur-ws.org/Vol-61/#A.iKeiblingeri%28Germany%29>,
+<http://ceur-ws.org/Vol-61/#paper7> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-61/> ;
+    ns1:title "Software Agent Technology in Mobile Service Environments" ;
+    ns2:author <http://ceur-ws.org/Vol-61/#A.iKeiblingeri%28Germany%29>,
         <http://ceur-ws.org/Vol-61/#R.iSessleri%28Germany%29> .
 
-<http://ceur-ws.org/Vol-61/#paper1> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-61/> ;
-    ns6:title "Characteristics of Mobile Payment Procedures" ;
-    ns5:author <http://ceur-ws.org/Vol-61/#K.iPousttchii%28Germany%29>,
+<http://ceur-ws.org/Vol-61/#paper1> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-61/> ;
+    ns1:title "Characteristics of Mobile Payment Procedures" ;
+    ns2:author <http://ceur-ws.org/Vol-61/#K.iPousttchii%28Germany%29>,
         <http://ceur-ws.org/Vol-61/#K.iTurowskii%28Germany%29>,
         <http://ceur-ws.org/Vol-61/#N.iKreyeri%28Germany%29> .
 
-<http://ceur-ws.org/Vol-61/#paper2> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-61/> ;
-    ns6:title "Wireless E-Learning and Communication Environment: WELCOME at the University of Regensburg" ;
-    ns5:author <http://ceur-ws.org/Vol-61/#F.iLehneri%28Germany%29>,
+<http://ceur-ws.org/Vol-61/#paper2> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-61/> ;
+    ns1:title "Wireless E-Learning and Communication Environment: WELCOME at the University of Regensburg" ;
+    ns2:author <http://ceur-ws.org/Vol-61/#F.iLehneri%28Germany%29>,
         <http://ceur-ws.org/Vol-61/#H.iLehmanni%28Germany%29>,
         <http://ceur-ws.org/Vol-61/#H.iNosekabeli%28Germany%29> .
 
-<http://ceur-ws.org/Vol-61/#paper3> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-61/> ;
-    ns6:title "Software Agents in the Wireless World - Application to Mobile Services -" ;
-    ns5:author <http://ceur-ws.org/Vol-61/#Q.iH.iMahmoudi%28Canada%29>,
+<http://ceur-ws.org/Vol-61/#paper3> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-61/> ;
+    ns1:title "Software Agents in the Wireless World - Application to Mobile Services -" ;
+    ns2:author <http://ceur-ws.org/Vol-61/#Q.iH.iMahmoudi%28Canada%29>,
         <http://ceur-ws.org/Vol-61/#W.iMansoori%28U.A.E%29>,
         <http://ceur-ws.org/Vol-61/#Z.iMaamari%28U.A.E%29> .
 
-<http://ceur-ws.org/Vol-61/#paper4> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-61/> ;
-    ns6:title "Combining Open APIS (Parlay/JAIN) & Software Agents for Next Generation Mobile Services" ;
-    ns5:author <http://ceur-ws.org/Vol-61/#A.iKameli%28U.S.A%29>,
+<http://ceur-ws.org/Vol-61/#paper4> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-61/> ;
+    ns1:title "Combining Open APIS (Parlay/JAIN) & Software Agents for Next Generation Mobile Services" ;
+    ns2:author <http://ceur-ws.org/Vol-61/#A.iKameli%28U.S.A%29>,
         <http://ceur-ws.org/Vol-61/#D.iRautelai%28U.S.A%29>,
         <http://ceur-ws.org/Vol-61/#G.iMarkwardti%28Germany%29> .
 
-<http://ceur-ws.org/Vol-61/#paper6> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-61/> ;
-    ns6:title "A Flexible Services Architecture Based Translator Web Services" ;
-    ns5:author <http://ceur-ws.org/Vol-61/#F.iKitchensi%28U.S.A%29>,
+<http://ceur-ws.org/Vol-61/#paper6> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-61/> ;
+    ns1:title "A Flexible Services Architecture Based Translator Web Services" ;
+    ns2:author <http://ceur-ws.org/Vol-61/#F.iKitchensi%28U.S.A%29>,
         <http://ceur-ws.org/Vol-61/#P.iMilleri%28U.S.A%29>,
         <http://ceur-ws.org/Vol-61/#S.iK.iSharmai%28U.S.A%29> .
 
-<http://ceur-ws.org/Vol-61/#paper8> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-61/> ;
-    ns6:title "Towards a Unified Framework for Composing E-/M-Services" ;
-    ns5:author <http://ceur-ws.org/Vol-61/#B.iBenatallahi%28Australia%29>,
+<http://ceur-ws.org/Vol-61/#paper8> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-61/> ;
+    ns1:title "Towards a Unified Framework for Composing E-/M-Services" ;
+    ns2:author <http://ceur-ws.org/Vol-61/#B.iBenatallahi%28Australia%29>,
         <http://ceur-ws.org/Vol-61/#Q.iZ.iShengi%28Australia%29>,
         <http://ceur-ws.org/Vol-61/#Z.iMaamari%28U.A.E%29> .
 
-<http://ceur-ws.org/Vol-61/> a ns1:Proceedings ;
-    ns1:hasPart <http://ceur-ws.org/Vol-61/#paper1>,
+<http://ceur-ws.org/Vol-61/> a ns4:Proceedings ;
+    ns4:hasPart <http://ceur-ws.org/Vol-61/#paper1>,
         <http://ceur-ws.org/Vol-61/#paper2>,
         <http://ceur-ws.org/Vol-61/#paper3>,
         <http://ceur-ws.org/Vol-61/#paper4>,
@@ -179,9 +185,9 @@
         <http://ceur-ws.org/Vol-61/#paper6>,
         <http://ceur-ws.org/Vol-61/#paper7>,
         <http://ceur-ws.org/Vol-61/#paper8> ;
-    ns9:issued "2002-08-23T00:00:00+00:00"^^xsd:dateTime ;
-    ns2:presentedAt <http://ceur-ws.org/Vol-61/#event> ;
-    ns5:editor <http://ceur-ws.org/Vol-61/#WathiqiMansoor>,
+    ns6:issued "2002-08-23T00:00:00+00:00"^^xsd:dateTime ;
+    ns5:presentedAt <http://ceur-ws.org/Vol-61/#event> ;
+    ns2:editor <http://ceur-ws.org/Vol-61/#WathiqiMansoor>,
         <http://ceur-ws.org/Vol-61/#Willem-JanivanideniHeuvel>,
         <http://ceur-ws.org/Vol-61/#ZakariaiMaamar> .
 

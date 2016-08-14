@@ -1,57 +1,63 @@
-@prefix ns1: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns2: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns3: <http://purl.org/ontology/bibo/#> .
-@prefix ns4: <http://xmlns.com/foaf/0.1/> .
-@prefix ns5: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns6: <http://www.w3.org/2002/07/owl#> .
-@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns9: <http://purl.org/dc/elements/1.1/> .
+@prefix ns1: <http://xmlns.com/foaf/0.1/> .
+@prefix ns2: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns3: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns4: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns5: <http://www.w3.org/2002/07/owl#> .
+@prefix ns6: <http://purl.org/ontology/bibo/#> .
+@prefix ns7: <http://purl.org/dc/elements/1.1/> .
+@prefix ns8: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns9: <http://purl.org/NET/c4dm/timeline.owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-1297/> a ns2:Proceedings ;
-    ns2:hasPart <http://ceur-ws.org/Vol-1297/#paperX1> ;
-    ns8:issued "2014-11-18T00:00:00+00:00"^^xsd:dateTime ;
-    ns3:presentedAt <http://ceur-ws.org/Vol-1297/#event> ;
-    ns1:editor <http://ceur-ws.org/Vol-1297/#LidiaiKalmykova>,
+<http://ceur-ws.org/Vol-1297/> a ns3:Proceedings ;
+    ns3:hasPart <http://ceur-ws.org/Vol-1297/#paperX1> ;
+    ns4:issued "2014-11-18T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:presentedAt <http://ceur-ws.org/Vol-1297/#event> ;
+    ns8:editor <http://ceur-ws.org/Vol-1297/#LidiaiKalmykova>,
         <http://ceur-ws.org/Vol-1297/#MikhailiKogalovsky> .
 
-<http://ceur-ws.org/Vol-1297/#MikhailiKogalovsky> a ns4:Person ;
-    ns1:affiliation "" ;
-    ns6:sameAs <http://ceur-ws.org/persons/MikhailiKogalovsky> ;
-    ns4:name "Mikhail Kogalovsky" .
+<http://ceur-ws.org/Vol-1297/#MikhailiKogalovsky> a ns1:Person ;
+    ns8:affiliation "" ;
+    ns5:sameAs <http://ceur-ws.org/persons/MikhailiKogalovsky> ;
+    ns1:name "Mikhail Kogalovsky" .
 
-<http://ceur-ws.org/Vol-1297/#event> a ns2:WorkshopEvent ;
-    ns2:hasLocation <http://dbpedia.org/resource/Russia> ;
-    ns2:hasPart <http://ceur-ws.org/Vol-1297/#part-RCDL> ;
-    ns2:isSubEventOf <http://ceur-ws.org/Vol-1297/#conf> ;
-    ns7:beginsAtDatetime "2014-10-13T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:endsAtDatetime "2014-10-16T00:00:00+00:00"^^xsd:dateTime ;
-    ns9:license "http://creativecommons.org/publicdomain/zero/1.0/" ;
+<http://ceur-ws.org/Vol-1297/#event> a ns3:WorkshopEvent ;
+    ns3:hasLocation <http://dbpedia.org/resource/Russia> ;
+    ns3:hasPart <http://ceur-ws.org/Vol-1297/#part-RCDL> ;
+    ns3:isSubEventOf <http://ceur-ws.org/Vol-1297/#conf> ;
+    ns9:beginsAtDatetime "2014-10-13T00:00:00+00:00"^^xsd:dateTime ;
+    ns9:endsAtDatetime "2014-10-16T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:license "http://creativecommons.org/publicdomain/zero/1.0/" ;
     rdfs:seeAlso <http://ceur-ws.org/Vol-1108/#event>,
         <http://ceur-ws.org/Vol-803/#event>,
         <http://ceur-ws.org/Vol-934/#event> .
 
-<http://ceur-ws.org/Vol-1297/#metadataiincl.ibibliographicidataipublishediunder> a ns4:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/metadataiincl.ibibliographicidataipublishediunder> ;
-    ns4:made <http://ceur-ws.org/Vol-1297/#paperX1> ;
-    ns4:name "metadata incl. bibliographic data published under" .
+<http://ceur-ws.org/Vol-1297/#metadataiincl.ibibliographicidataipublishediunder> a ns1:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/metadataiincl.ibibliographicidataipublishediunder> ;
+    ns1:made <http://ceur-ws.org/Vol-1297/#paperX1> ;
+    ns1:name "metadata incl. bibliographic data published under" .
 
-<http://ceur-ws.org/Vol-1297/#LidiaiKalmykova> a ns4:Person ;
-    ns1:affiliation "" ;
-    ns6:sameAs <http://ceur-ws.org/persons/LidiaiKalmykova> ;
-    ns4:made <http://ceur-ws.org/Vol-1297/#paperX1> ;
-    ns4:name "Lidia Kalmykova" .
+<http://ceur-ws.org/Vol-1297/#part-RCDL> a ns6:Workshop ;
+    ns3:partOf <http://ceur-ws.org/series/RCDL> ;
+    ns2:title "Russian Conference on Digital Libraries 2014" ;
+    ns6:shortTitle "RCDL" ;
+    ns8:edition 1 .
 
-<http://ceur-ws.org/Vol-1297/#paperX1> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1297/> ;
-    ns5:title "The whole proceedings can also be downloaded as a single file (" ;
-    ns3:endPage 9 ;
-    ns3:numPages 4 ;
-    ns3:startPage 6 ;
-    ns1:author <http://ceur-ws.org/Vol-1297/#LidiaiKalmykova>,
+<http://ceur-ws.org/Vol-1297/#LidiaiKalmykova> a ns1:Person ;
+    ns8:affiliation "" ;
+    ns5:sameAs <http://ceur-ws.org/persons/LidiaiKalmykova> ;
+    ns1:made <http://ceur-ws.org/Vol-1297/#paperX1> ;
+    ns1:name "Lidia Kalmykova" .
+
+<http://ceur-ws.org/Vol-1297/#paperX1> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1297/> ;
+    ns2:title "The whole proceedings can also be downloaded as a single file (" ;
+    ns6:endPage 9 ;
+    ns6:numPages 4 ;
+    ns6:startPage 6 ;
+    ns8:author <http://ceur-ws.org/Vol-1297/#LidiaiKalmykova>,
         <http://ceur-ws.org/Vol-1297/#metadataiincl.ibibliographicidataipublishediunder> .
 

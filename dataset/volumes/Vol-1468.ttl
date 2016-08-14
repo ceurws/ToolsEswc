@@ -1,12 +1,12 @@
 @prefix ns1: <http://www.w3.org/2002/07/owl#> .
-@prefix ns2: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns2: <http://swrc.ontoware.org/ontology/#> .
 @prefix ns3: <http://xmlns.com/foaf/0.1/> .
-@prefix ns4: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns5: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns4: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns5: <http://purl.org/NET/c4dm/timeline.owl#> .
 @prefix ns6: <http://purl.org/ontology/bibo/#> .
-@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns9: <http://purl.org/dc/elements/1.1/> .
+@prefix ns7: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns8: <http://purl.org/dc/elements/1.1/> .
+@prefix ns9: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -103,7 +103,7 @@
     ns3:name "Jo-Anne M. Abbott" .
 
 <http://ceur-ws.org/Vol-1468/#KatrinaiBarbuto> a ns3:Person ;
-    ns4:affiliation "" ;
+    ns2:affiliation "" ;
     ns1:sameAs <http://ceur-ws.org/persons/KatrinaiBarbuto> ;
     ns3:name "Katrina Barbuto" .
 
@@ -113,7 +113,7 @@
     ns3:name "Lawrence Cavedon" .
 
 <http://ceur-ws.org/Vol-1468/#LouiseiSchaper> a ns3:Person ;
-    ns4:affiliation "" ;
+    ns2:affiliation "" ;
     ns1:sameAs <http://ceur-ws.org/persons/LouiseiSchaper> ;
     ns3:name "Louise Schaper" .
 
@@ -152,14 +152,18 @@
     ns3:made <http://ceur-ws.org/Vol-1468/#bd2015_mcNair> ;
     ns3:name "Terri Jackson" .
 
-<http://ceur-ws.org/Vol-1468/#event> a ns2:WorkshopEvent ;
-    ns2:hasLocation <http://dbpedia.org/resource/Australia> ;
-    ns2:hasPart <http://ceur-ws.org/Vol-1468/#part-ws> ;
-    ns2:isSubEventOf <http://ceur-ws.org/Vol-1468/#conf> ;
-    ns7:beginsAtDatetime "2015-10-20T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:endsAtDatetime "2015-10-21T00:00:00+00:00"^^xsd:dateTime ;
-    ns9:license "http://creativecommons.org/publicdomain/zero/1.0/" ;
+<http://ceur-ws.org/Vol-1468/#event> a ns4:WorkshopEvent ;
+    ns4:hasLocation <http://dbpedia.org/resource/Australia> ;
+    ns4:hasPart <http://ceur-ws.org/Vol-1468/#part-ws> ;
+    ns4:isSubEventOf <http://ceur-ws.org/Vol-1468/#conf> ;
+    ns5:beginsAtDatetime "2015-10-20T00:00:00+00:00"^^xsd:dateTime ;
+    ns5:endsAtDatetime "2015-10-21T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:license "http://creativecommons.org/publicdomain/zero/1.0/" ;
     rdfs:seeAlso <http://ceur-ws.org/Vol-1149/#event> .
+
+<http://ceur-ws.org/Vol-1468/#part-ws> a ns6:Workshop ;
+    ns4:partOf <http://ceur-ws.org/series/ws> ;
+    ns7:title "Big Data in Health Analytics 2015" .
 
 <http://ceur-ws.org/Vol-1468/#Kim-AnhiLeiCao> a ns3:Person ;
     ns1:sameAs <http://ceur-ws.org/persons/Kim-AnhiLeiCao> ;
@@ -168,71 +172,71 @@
     ns3:name "Kim-Anh Le Cao" .
 
 <http://ceur-ws.org/Vol-1468/#KariniVerspoor> a ns3:Person ;
-    ns4:affiliation "" ;
+    ns2:affiliation "" ;
     ns1:sameAs <http://ceur-ws.org/persons/KariniVerspoor> ;
     ns3:made <http://ceur-ws.org/Vol-1468/#bd2015_kocbek.pdf>,
         <http://ceur-ws.org/Vol-1468/#bd2015_ofoghi> ;
     ns3:name "Karin Verspoor" .
 
-<http://ceur-ws.org/Vol-1468/#bd2015_mcNair> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1468/> ;
-    ns5:title "Transfusion did not prevent complications of scheduled surgery in California hospitals during 2012-13" ;
+<http://ceur-ws.org/Vol-1468/#bd2015_mcNair> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1468/> ;
+    ns7:title "Transfusion did not prevent complications of scheduled surgery in California hospitals during 2012-13" ;
     ns6:section <http://ceur-ws.org/Vol-1468/#BigData2015ScientificPapers> ;
-    ns4:author <http://ceur-ws.org/Vol-1468/#PeteriMcNair>,
+    ns2:author <http://ceur-ws.org/Vol-1468/#PeteriMcNair>,
         <http://ceur-ws.org/Vol-1468/#TerriiJackson> .
 
-<http://ceur-ws.org/Vol-1468/#bd2015_obrien> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1468/> ;
-    ns5:title "VariantSpark: Applying Spark-based machine learning methods to genomic information" ;
+<http://ceur-ws.org/Vol-1468/#bd2015_obrien> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1468/> ;
+    ns7:title "VariantSpark: Applying Spark-based machine learning methods to genomic information" ;
     ns6:section <http://ceur-ws.org/Vol-1468/#BigData2015ScientificPapers> ;
-    ns4:author <http://ceur-ws.org/Vol-1468/#AidaniR.iO%E2%80%99Brien>,
+    ns2:author <http://ceur-ws.org/Vol-1468/#AidaniR.iO%E2%80%99Brien>,
         <http://ceur-ws.org/Vol-1468/#DenisiC.iBauer> .
 
-<http://ceur-ws.org/Vol-1468/#bd2015_ofoghi> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1468/> ;
-    ns5:title "Assessing the performance of American chief complaint classifiers on Victorian syndromic surveillance data" ;
+<http://ceur-ws.org/Vol-1468/#bd2015_ofoghi> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1468/> ;
+    ns7:title "Assessing the performance of American chief complaint classifiers on Victorian syndromic surveillance data" ;
     ns6:section <http://ceur-ws.org/Vol-1468/#BigData2015ScientificPapers> ;
-    ns4:author <http://ceur-ws.org/Vol-1468/#BahadorrezaiOfoghi>,
+    ns2:author <http://ceur-ws.org/Vol-1468/#BahadorrezaiOfoghi>,
         <http://ceur-ws.org/Vol-1468/#KariniVerspoor> .
 
-<http://ceur-ws.org/Vol-1468/#bd2015_meyer> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1468/> ;
-    ns5:title "Big data study for coping with stress" ;
+<http://ceur-ws.org/Vol-1468/#bd2015_meyer> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1468/> ;
+    ns7:title "Big data study for coping with stress" ;
     ns6:section <http://ceur-ws.org/Vol-1468/#BigData2015ScientificPapers> ;
-    ns4:author <http://ceur-ws.org/Vol-1468/#DennyiMeyer>,
+    ns2:author <http://ceur-ws.org/Vol-1468/#DennyiMeyer>,
         <http://ceur-ws.org/Vol-1468/#Jo-AnneiM.iAbbott>,
         <http://ceur-ws.org/Vol-1468/#MajaiNedejkovic> .
 
-<http://ceur-ws.org/Vol-1468/#bd2015_kanwal> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1468/> ;
-    ns5:title "Experiences in implementing large-scale biomedical workflows on the cloud: Challenges in transitioning to the clinical domain" ;
+<http://ceur-ws.org/Vol-1468/#bd2015_kanwal> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1468/> ;
+    ns7:title "Experiences in implementing large-scale biomedical workflows on the cloud: Challenges in transitioning to the clinical domain" ;
     ns6:section <http://ceur-ws.org/Vol-1468/#BigData2015ScientificPapers> ;
-    ns4:author <http://ceur-ws.org/Vol-1468/#AndrewiLonie>,
+    ns2:author <http://ceur-ws.org/Vol-1468/#AndrewiLonie>,
         <http://ceur-ws.org/Vol-1468/#CharlotteiAnderson>,
         <http://ceur-ws.org/Vol-1468/#RichardiO.iSinnott>,
         <http://ceur-ws.org/Vol-1468/#SehrishiKanwal> .
 
-<http://ceur-ws.org/Vol-1468/#bd2015_straube> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1468/> ;
-    ns5:title "Analysing delays between time course gene expression data and biomarkers" ;
+<http://ceur-ws.org/Vol-1468/#bd2015_straube> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1468/> ;
+    ns7:title "Analysing delays between time course gene expression data and biomarkers" ;
     ns6:section <http://ceur-ws.org/Vol-1468/#BigData2015ScientificPapers> ;
-    ns4:author <http://ceur-ws.org/Vol-1468/#AnneiBernard>,
+    ns2:author <http://ceur-ws.org/Vol-1468/#AnneiBernard>,
         <http://ceur-ws.org/Vol-1468/#BevaniEmmaiHuang>,
         <http://ceur-ws.org/Vol-1468/#JasminiStraube>,
         <http://ceur-ws.org/Vol-1468/#Kim-AnhiLeiCao> .
 
-<http://ceur-ws.org/Vol-1468/#bd2015_leCao> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1468/> ;
-    ns5:title "Improving conventional prognosticators in diffuse large B cell lymphoma using marker ratios" ;
+<http://ceur-ws.org/Vol-1468/#bd2015_leCao> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1468/> ;
+    ns7:title "Improving conventional prognosticators in diffuse large B cell lymphoma using marker ratios" ;
     ns6:section <http://ceur-ws.org/Vol-1468/#BigData2015ScientificPapers> ;
-    ns4:author <http://ceur-ws.org/Vol-1468/#ColmiKeane>,
+    ns2:author <http://ceur-ws.org/Vol-1468/#ColmiKeane>,
         <http://ceur-ws.org/Vol-1468/#DiptiiTalaulikar>,
         <http://ceur-ws.org/Vol-1468/#EricaiHan>,
         <http://ceur-ws.org/Vol-1468/#Kim-AnhiLeiCao>,
         <http://ceur-ws.org/Vol-1468/#MaheriGandhi> .
 
-<http://ceur-ws.org/Vol-1468/> a ns2:Proceedings ;
-    ns2:hasPart <http://ceur-ws.org/Vol-1468/#bd2015_kanwal>,
+<http://ceur-ws.org/Vol-1468/> a ns4:Proceedings ;
+    ns4:hasPart <http://ceur-ws.org/Vol-1468/#bd2015_kanwal>,
         <http://ceur-ws.org/Vol-1468/#bd2015_kocbek.pdf>,
         <http://ceur-ws.org/Vol-1468/#bd2015_leCao>,
         <http://ceur-ws.org/Vol-1468/#bd2015_mcNair>,
@@ -240,22 +244,22 @@
         <http://ceur-ws.org/Vol-1468/#bd2015_obrien>,
         <http://ceur-ws.org/Vol-1468/#bd2015_ofoghi>,
         <http://ceur-ws.org/Vol-1468/#bd2015_straube> ;
-    ns2:hasSession <http://ceur-ws.org/Vol-1468/#BigData2015ScientificPapers> ;
-    ns8:issued "2015-10-09T00:00:00+00:00"^^xsd:dateTime ;
+    ns4:hasSession <http://ceur-ws.org/Vol-1468/#BigData2015ScientificPapers> ;
+    ns9:issued "2015-10-09T00:00:00+00:00"^^xsd:dateTime ;
     ns6:presentedAt <http://ceur-ws.org/Vol-1468/#event> ;
-    ns4:editor <http://ceur-ws.org/Vol-1468/#KariniVerspoor>,
+    ns2:editor <http://ceur-ws.org/Vol-1468/#KariniVerspoor>,
         <http://ceur-ws.org/Vol-1468/#KatrinaiBarbuto>,
         <http://ceur-ws.org/Vol-1468/#LouiseiSchaper> .
 
-<http://ceur-ws.org/Vol-1468/#BigData2015ScientificPapers> a ns2:SessionEvent ;
-    ns2:partOf <http://ceur-ws.org/Vol-1468/> ;
-    ns5:title "Big Data 2015 Scientific Papers" .
+<http://ceur-ws.org/Vol-1468/#BigData2015ScientificPapers> a ns4:SessionEvent ;
+    ns4:partOf <http://ceur-ws.org/Vol-1468/> ;
+    ns7:title "Big Data 2015 Scientific Papers" .
 
-<http://ceur-ws.org/Vol-1468/#bd2015_kocbek.pdf> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1468/> ;
-    ns5:title "Evaluating classification power of linked admission data sources with text mining" ;
+<http://ceur-ws.org/Vol-1468/#bd2015_kocbek.pdf> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1468/> ;
+    ns7:title "Evaluating classification power of linked admission data sources with text mining" ;
     ns6:section <http://ceur-ws.org/Vol-1468/#BigData2015ScientificPapers> ;
-    ns4:author <http://ceur-ws.org/Vol-1468/#ChrisiMaciManus>,
+    ns2:author <http://ceur-ws.org/Vol-1468/#ChrisiMaciManus>,
         <http://ceur-ws.org/Vol-1468/#ChristopheriBain>,
         <http://ceur-ws.org/Vol-1468/#DavidiMartinez>,
         <http://ceur-ws.org/Vol-1468/#GholamrezaiHaffari>,

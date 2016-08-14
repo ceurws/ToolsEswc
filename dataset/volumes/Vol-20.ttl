@@ -1,50 +1,55 @@
-@prefix ns1: <http://xmlns.com/foaf/0.1/> .
-@prefix ns2: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns3: <http://www.w3.org/2002/07/owl#> .
-@prefix ns4: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns5: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns1: <http://www.w3.org/2002/07/owl#> .
+@prefix ns2: <http://xmlns.com/foaf/0.1/> .
+@prefix ns3: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns4: <http://purl.org/ontology/bibo/#> .
+@prefix ns5: <http://data.semanticweb.org/ns/swc/ontology/#> .
 @prefix ns6: <http://purl.org/dc/elements/1.1/> .
-@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns8: <http://purl.org/ontology/bibo/#> .
+@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns9: <http://purl.org/dc/elements/1.1/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-20/> a ns4:Proceedings ;
-    ns7:issued "1999-05-18T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:presentedAt <http://ceur-ws.org/Vol-20/#event> ;
-    ns2:editor <http://ceur-ws.org/Vol-20/#GeraldiGlombitza>,
+<http://ceur-ws.org/Vol-20/> a ns5:Proceedings ;
+    ns8:issued "1999-05-18T00:00:00+00:00"^^xsd:dateTime ;
+    ns4:presentedAt <http://ceur-ws.org/Vol-20/#event> ;
+    ns3:editor <http://ceur-ws.org/Vol-20/#GeraldiGlombitza>,
         <http://ceur-ws.org/Vol-20/#Hans-PeteriMeinzer>,
         <http://ceur-ws.org/Vol-20/#HaraldiEvers>,
         <http://ceur-ws.org/Vol-20/#Herausgegebenivon>,
         <http://ceur-ws.org/Vol-20/#ThomasiLehmann> .
 
-<http://ceur-ws.org/Vol-20/#GeraldiGlombitza> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/GeraldiGlombitza> ;
-    ns1:name "Gerald Glombitza" .
+<http://ceur-ws.org/Vol-20/#GeraldiGlombitza> a ns2:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/GeraldiGlombitza> ;
+    ns2:name "Gerald Glombitza" .
 
-<http://ceur-ws.org/Vol-20/#Hans-PeteriMeinzer> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/Hans-PeteriMeinzer> ;
-    ns1:name "Hans-Peter Meinzer" .
+<http://ceur-ws.org/Vol-20/#Hans-PeteriMeinzer> a ns2:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/Hans-PeteriMeinzer> ;
+    ns2:name "Hans-Peter Meinzer" .
 
-<http://ceur-ws.org/Vol-20/#HaraldiEvers> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/HaraldiEvers> ;
-    ns1:name "Harald Evers" .
+<http://ceur-ws.org/Vol-20/#HaraldiEvers> a ns2:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/HaraldiEvers> ;
+    ns2:name "Harald Evers" .
 
-<http://ceur-ws.org/Vol-20/#Herausgegebenivon> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/Herausgegebenivon> ;
-    ns1:name "Herausgegeben von" .
+<http://ceur-ws.org/Vol-20/#Herausgegebenivon> a ns2:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/Herausgegebenivon> ;
+    ns2:name "Herausgegeben von" .
 
-<http://ceur-ws.org/Vol-20/#ThomasiLehmann> a ns1:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/ThomasiLehmann> ;
-    ns1:name "Thomas Lehmann" .
+<http://ceur-ws.org/Vol-20/#ThomasiLehmann> a ns2:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/ThomasiLehmann> ;
+    ns2:name "Thomas Lehmann" .
 
-<http://ceur-ws.org/Vol-20/#event> a ns4:WorkshopEvent ;
-    ns4:hasLocation <http://dbpedia.org/resource/Germany> ;
-    ns4:hasPart <http://ceur-ws.org/Vol-20/#part-ws> ;
-    ns4:isSubEventOf <http://ceur-ws.org/Vol-20/#conf> ;
-    ns5:beginsAtDatetime "1999-03-04T00:00:00+00:00"^^xsd:dateTime ;
-    ns5:endsAtDatetime "1999-03-05T00:00:00+00:00"^^xsd:dateTime ;
+<http://ceur-ws.org/Vol-20/#event> a ns5:WorkshopEvent ;
+    ns5:hasLocation <http://dbpedia.org/resource/Germany> ;
+    ns5:hasPart <http://ceur-ws.org/Vol-20/#part-ws> ;
+    ns5:isSubEventOf <http://ceur-ws.org/Vol-20/#conf> ;
+    ns7:beginsAtDatetime "1999-03-04T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:endsAtDatetime "1999-03-05T00:00:00+00:00"^^xsd:dateTime ;
     ns6:license "http://choosealicense.com/licenses/no-license/" .
+
+<http://ceur-ws.org/Vol-20/#part-ws> a ns4:Workshop ;
+    ns5:partOf <http://ceur-ws.org/series/ws> ;
+    ns9:title "Bildverarbeitung für die Medizin 1999: Algorithmen - Systeme - Anwendungen" .
 

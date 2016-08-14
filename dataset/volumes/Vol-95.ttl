@@ -1,42 +1,61 @@
-@prefix ns1: <http://www.w3.org/2002/07/owl#> .
-@prefix ns2: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns3: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns4: <http://xmlns.com/foaf/0.1/> .
-@prefix ns5: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns6: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns7: <http://purl.org/ontology/bibo/#> .
-@prefix ns8: <http://purl.org/dc/elements/1.1/> .
+@prefix ns1: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns2: <http://www.w3.org/2002/07/owl#> .
+@prefix ns3: <http://purl.org/dc/elements/1.1/> .
+@prefix ns4: <http://purl.org/ontology/bibo/#> .
+@prefix ns5: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns6: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns7: <http://xmlns.com/foaf/0.1/> .
+@prefix ns8: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns9: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-95/> a ns2:Proceedings ;
-    ns3:issued "2004-02-24T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:presentedAt <http://ceur-ws.org/Vol-95/#event> ;
-    ns6:editor <http://ceur-ws.org/Vol-95/#AlexandraiPoulovassilis>,
+<http://ceur-ws.org/Vol-95/> a ns1:Proceedings ;
+    ns9:issued "2004-02-24T00:00:00+00:00"^^xsd:dateTime ;
+    ns4:presentedAt <http://ceur-ws.org/Vol-95/#event> ;
+    ns8:editor <http://ceur-ws.org/Vol-95/#AlexandraiPoulovassilis>,
         <http://ceur-ws.org/Vol-95/#KeviniKeenoy>,
         <http://ceur-ws.org/Vol-95/#VassilisiChristophides> .
 
-<http://ceur-ws.org/Vol-95/#AlexandraiPoulovassilis> a ns4:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/AlexandraiPoulovassilis> ;
-    ns4:name "Alexandra Poulovassilis" .
+<http://ceur-ws.org/Vol-95/#AlexandraiPoulovassilis> a ns7:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/AlexandraiPoulovassilis> ;
+    ns7:name "Alexandra Poulovassilis" .
 
-<http://ceur-ws.org/Vol-95/#KeviniKeenoy> a ns4:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/KeviniKeenoy> ;
-    ns4:name "Kevin Keenoy" .
+<http://ceur-ws.org/Vol-95/#KeviniKeenoy> a ns7:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/KeviniKeenoy> ;
+    ns7:name "Kevin Keenoy" .
 
-<http://ceur-ws.org/Vol-95/#VassilisiChristophides> a ns4:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/VassilisiChristophides> ;
-    ns4:name "Vassilis Christophides" .
+<http://ceur-ws.org/Vol-95/#VassilisiChristophides> a ns7:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/VassilisiChristophides> ;
+    ns7:name "Vassilis Christophides" .
 
-<http://ceur-ws.org/Vol-95/#event> a ns2:WorkshopEvent ;
-    ns2:hasLocation <http://dbpedia.org/resource/United_Kingdom> ;
-    ns2:hasPart <http://ceur-ws.org/Vol-95/#part-IST>,
+<http://ceur-ws.org/Vol-95/#event> a ns1:WorkshopEvent ;
+    ns1:hasLocation <http://dbpedia.org/resource/United_Kingdom> ;
+    ns1:hasPart <http://ceur-ws.org/Vol-95/#part-IST>,
         <http://ceur-ws.org/Vol-95/#part-MMGPS>,
         <http://ceur-ws.org/Vol-95/#part-P2P> ;
-    ns2:isSubEventOf <http://ceur-ws.org/Vol-95/#conf> ;
-    ns5:beginsAtDatetime "2003-12-16T00:00:00+00:00"^^xsd:dateTime ;
-    ns5:endsAtDatetime "2003-12-16T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:license "http://choosealicense.com/licenses/no-license/" .
+    ns1:isSubEventOf <http://ceur-ws.org/Vol-95/#conf> ;
+    ns6:beginsAtDatetime "2003-12-16T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:endsAtDatetime "2003-12-16T00:00:00+00:00"^^xsd:dateTime ;
+    ns3:license "http://choosealicense.com/licenses/no-license/" .
+
+<http://ceur-ws.org/Vol-95/#part-IST> a ns4:Workshop ;
+    ns1:partOf <http://ceur-ws.org/series/IST> ;
+    ns5:title "Metadata Management in Grid and P2P Systems 2003" ;
+    ns4:shortTitle "IST" ;
+    ns8:edition 1 .
+
+<http://ceur-ws.org/Vol-95/#part-MMGPS> a ns4:Workshop ;
+    ns1:partOf <http://ceur-ws.org/series/MMGPS> ;
+    ns5:title "Metadata Management in Grid and P2P Systems 2003" ;
+    ns4:shortTitle "MMGPS" ;
+    ns8:edition 1 .
+
+<http://ceur-ws.org/Vol-95/#part-P2P> a ns4:Workshop ;
+    ns1:partOf <http://ceur-ws.org/series/P2P> ;
+    ns5:title "Metadata Management in Grid and P2P Systems 2003" ;
+    ns4:shortTitle "P2P" ;
+    ns8:edition 1 .
 

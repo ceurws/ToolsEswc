@@ -1,12 +1,12 @@
 @prefix ns1: <http://www.w3.org/2002/07/owl#> .
-@prefix ns2: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns2: <http://purl.org/dc/elements/1.1/#> .
 @prefix ns3: <http://xmlns.com/foaf/0.1/> .
 @prefix ns4: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns5: <http://purl.org/ontology/bibo/#> .
-@prefix ns6: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns5: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns6: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix ns7: <http://purl.org/dc/elements/1.1/> .
-@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns9: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns9: <http://purl.org/ontology/bibo/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -68,7 +68,7 @@
     ns3:name "Olga Streibel" .
 
 <http://ceur-ws.org/Vol-358/#PhilippeiCudr%C3%A9-Mauroux> a ns3:Person ;
-    ns5:place <http://dbpedia.org/resource/United_States> ;
+    ns9:place <http://dbpedia.org/resource/United_States> ;
     ns4:affiliation "MIT" ;
     ns1:sameAs <http://ceur-ws.org/persons/PhilippeiCudr%C3%A9-Mauroux> ;
     ns3:name "Philippe Cudré-Mauroux" .
@@ -98,12 +98,12 @@
     ns3:made <http://ceur-ws.org/Vol-358/#paper10> ;
     ns3:name "Zurina Muda" .
 
-<http://ceur-ws.org/Vol-358/#event> a ns2:WorkshopEvent ;
-    ns2:hasLocation <http://dbpedia.org/resource/Spain> ;
-    ns2:hasPart <http://ceur-ws.org/Vol-358/#part-ESWC> ;
-    ns2:isSubEventOf <http://ceur-ws.org/Vol-358/#conf> ;
-    ns9:beginsAtDatetime "2008-06-02T00:00:00+00:00"^^xsd:dateTime ;
-    ns9:endsAtDatetime "2008-06-02T00:00:00+00:00"^^xsd:dateTime ;
+<http://ceur-ws.org/Vol-358/#event> a ns5:WorkshopEvent ;
+    ns5:hasLocation <http://dbpedia.org/resource/Spain> ;
+    ns5:hasPart <http://ceur-ws.org/Vol-358/#part-ESWC> ;
+    ns5:isSubEventOf <http://ceur-ws.org/Vol-358/#conf> ;
+    ns8:beginsAtDatetime "2008-06-02T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:endsAtDatetime "2008-06-02T00:00:00+00:00"^^xsd:dateTime ;
     ns7:license "http://choosealicense.com/licenses/no-license/" .
 
 <http://ceur-ws.org/Vol-358/#pagesi11-15> a ns3:Person ;
@@ -176,110 +176,116 @@
     ns3:made <http://ceur-ws.org/Vol-358/#paper16> ;
     ns3:name "pages 78-82" .
 
+<http://ceur-ws.org/Vol-358/#part-ESWC> a ns9:Workshop ;
+    ns5:partOf <http://ceur-ws.org/series/ESWC> ;
+    ns2:title "ESWC 2008 Ph.D. Symposium" ;
+    ns9:shortTitle "ESWC" ;
+    ns4:edition 1 .
+
 <http://ceur-ws.org/Vol-358/#pagesi21-25> a ns3:Person ;
     ns1:sameAs <http://ceur-ws.org/persons/pagesi21-25> ;
     ns3:made <http://ceur-ws.org/Vol-358/#paper01>,
         <http://ceur-ws.org/Vol-358/#paper05> ;
     ns3:name "pages 21-25" .
 
-<http://ceur-ws.org/Vol-358/#paper01> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-358/> ;
-    ns6:title "Towards Semantic Web-based Adaptive Hypermedia Model" ;
+<http://ceur-ws.org/Vol-358/#paper01> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-358/> ;
+    ns2:title "Towards Semantic Web-based Adaptive Hypermedia Model" ;
     ns4:author <http://ceur-ws.org/Vol-358/#MartiniBalik>,
         <http://ceur-ws.org/Vol-358/#pagesi21-25> .
 
-<http://ceur-ws.org/Vol-358/#paper02> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-358/> ;
-    ns6:title "Techniques to Produce Good Web Service Compositions in The Semantic Grid" ;
+<http://ceur-ws.org/Vol-358/#paper02> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-358/> ;
+    ns2:title "Techniques to Produce Good Web Service Compositions in The Semantic Grid" ;
     ns4:author <http://ceur-ws.org/Vol-358/#EduardoiBlanco>,
         <http://ceur-ws.org/Vol-358/#pagesi6-10> .
 
-<http://ceur-ws.org/Vol-358/#paper03> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-358/> ;
-    ns6:title "Metadata goes where Metadata is: contextual networks in the photographic domain" ;
+<http://ceur-ws.org/Vol-358/#paper03> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-358/> ;
+    ns2:title "Metadata goes where Metadata is: contextual networks in the photographic domain" ;
     ns4:author <http://ceur-ws.org/Vol-358/#RodrigoiFonteneleiCarvalho>,
         <http://ceur-ws.org/Vol-358/#pagesi11-15> .
 
-<http://ceur-ws.org/Vol-358/#paper04> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-358/> ;
-    ns6:title "Process Mediation for Semantic Web Services" ;
+<http://ceur-ws.org/Vol-358/#paper04> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-358/> ;
+    ns2:title "Process Mediation for Semantic Web Services" ;
     ns4:author <http://ceur-ws.org/Vol-358/#EmiliaiCimpian>,
         <http://ceur-ws.org/Vol-358/#pagesi16-20> .
 
-<http://ceur-ws.org/Vol-358/#paper05> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-358/> ;
-    ns6:title "Towards Ontology Mapping for Ordinary People" ;
+<http://ceur-ws.org/Vol-358/#paper05> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-358/> ;
+    ns2:title "Towards Ontology Mapping for Ordinary People" ;
     ns4:author <http://ceur-ws.org/Vol-358/#ColmiConroy>,
         <http://ceur-ws.org/Vol-358/#pagesi21-25> .
 
-<http://ceur-ws.org/Vol-358/#paper06> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-358/> ;
-    ns6:title "Methodology for Searching Entities on the Web" ;
+<http://ceur-ws.org/Vol-358/#paper06> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-358/> ;
+    ns2:title "Methodology for Searching Entities on the Web" ;
     ns4:author <http://ceur-ws.org/Vol-358/#RenaudiDelbru>,
         <http://ceur-ws.org/Vol-358/#pagesi26-30> .
 
-<http://ceur-ws.org/Vol-358/#paper07> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-358/> ;
-    ns6:title "Event and Sentiment Detection in Financial Markets" ;
+<http://ceur-ws.org/Vol-358/#paper07> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-358/> ;
+    ns2:title "Event and Sentiment Detection in Financial Markets" ;
     ns4:author <http://ceur-ws.org/Vol-358/#UtaiHellinger>,
         <http://ceur-ws.org/Vol-358/#pagesi31-35> .
 
-<http://ceur-ws.org/Vol-358/#paper08> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-358/> ;
-    ns6:title "Access rights and collaborative ontology integration for reuse across security domains" ;
+<http://ceur-ws.org/Vol-358/#paper08> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-358/> ;
+    ns2:title "Access rights and collaborative ontology integration for reuse across security domains" ;
     ns4:author <http://ceur-ws.org/Vol-358/#MartiniKnechtel>,
         <http://ceur-ws.org/Vol-358/#pagesi36-40> .
 
-<http://ceur-ws.org/Vol-358/#paper09> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-358/> ;
-    ns6:title "Acquisition and Management of Semantic Web Service Descriptions" ;
+<http://ceur-ws.org/Vol-358/#paper09> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-358/> ;
+    ns2:title "Acquisition and Management of Semantic Web Service Descriptions" ;
     ns4:author <http://ceur-ws.org/Vol-358/#MariaiMaleshkova>,
         <http://ceur-ws.org/Vol-358/#pagesi41-45> .
 
-<http://ceur-ws.org/Vol-358/#paper10> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-358/> ;
-    ns6:title "Ontological Description of Image Content Using Regions Relationships" ;
+<http://ceur-ws.org/Vol-358/#paper10> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-358/> ;
+    ns2:title "Ontological Description of Image Content Using Regions Relationships" ;
     ns4:author <http://ceur-ws.org/Vol-358/#ZurinaiMuda>,
         <http://ceur-ws.org/Vol-358/#pagesi46-50> .
 
-<http://ceur-ws.org/Vol-358/#paper11> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-358/> ;
-    ns6:title "Semantic Web-based Group Formation for E-learning" ;
+<http://ceur-ws.org/Vol-358/#paper11> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-358/> ;
+    ns2:title "Semantic Web-based Group Formation for E-learning" ;
     ns4:author <http://ceur-ws.org/Vol-358/#AsmaiOunnas>,
         <http://ceur-ws.org/Vol-358/#pagesi51-55> .
 
-<http://ceur-ws.org/Vol-358/#paper12> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-358/> ;
-    ns6:title "Identifying Individuals using Identity Features and Social Information" ;
+<http://ceur-ws.org/Vol-358/#paper12> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-358/> ;
+    ns2:title "Identifying Individuals using Identity Features and Social Information" ;
     ns4:author <http://ceur-ws.org/Vol-358/#MatthewiRowe>,
         <http://ceur-ws.org/Vol-358/#pagesi56-60> .
 
-<http://ceur-ws.org/Vol-358/#paper13> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-358/> ;
-    ns6:title "An Approach to Evaluate and Enhance the Retrieval of Web Services Based on Semantic Information" ;
+<http://ceur-ws.org/Vol-358/#paper13> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-358/> ;
+    ns2:title "An Approach to Evaluate and Enhance the Retrieval of Web Services Based on Semantic Information" ;
     ns4:author <http://ceur-ws.org/Vol-358/#StefaniSchulte>,
         <http://ceur-ws.org/Vol-358/#pagesi61-65> .
 
-<http://ceur-ws.org/Vol-358/#paper14> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-358/> ;
-    ns6:title "OntoGame: Games with a Purpose for the Semantic Web" ;
+<http://ceur-ws.org/Vol-358/#paper14> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-358/> ;
+    ns2:title "OntoGame: Games with a Purpose for the Semantic Web" ;
     ns4:author <http://ceur-ws.org/Vol-358/#KatharinaiSiorpaes>,
         <http://ceur-ws.org/Vol-358/#pagesi66-70> .
 
-<http://ceur-ws.org/Vol-358/#paper15> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-358/> ;
-    ns6:title "Trend Mining with Semantic-based Learning" ;
+<http://ceur-ws.org/Vol-358/#paper15> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-358/> ;
+    ns2:title "Trend Mining with Semantic-based Learning" ;
     ns4:author <http://ceur-ws.org/Vol-358/#OlgaiStreibel>,
         <http://ceur-ws.org/Vol-358/#pagesi71-77> .
 
-<http://ceur-ws.org/Vol-358/#paper16> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-358/> ;
-    ns6:title "Semantics-aware Software Project Repositories" ;
+<http://ceur-ws.org/Vol-358/#paper16> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-358/> ;
+    ns2:title "Semantics-aware Software Project Repositories" ;
     ns4:author <http://ceur-ws.org/Vol-358/#JonasiTappolet>,
         <http://ceur-ws.org/Vol-358/#pagesi78-82> .
 
-<http://ceur-ws.org/Vol-358/> a ns2:Proceedings ;
-    ns2:hasPart <http://ceur-ws.org/Vol-358/#paper01>,
+<http://ceur-ws.org/Vol-358/> a ns5:Proceedings ;
+    ns5:hasPart <http://ceur-ws.org/Vol-358/#paper01>,
         <http://ceur-ws.org/Vol-358/#paper02>,
         <http://ceur-ws.org/Vol-358/#paper03>,
         <http://ceur-ws.org/Vol-358/#paper04>,
@@ -295,7 +301,7 @@
         <http://ceur-ws.org/Vol-358/#paper14>,
         <http://ceur-ws.org/Vol-358/#paper15>,
         <http://ceur-ws.org/Vol-358/#paper16> ;
-    ns8:issued "2008-06-16T00:00:00+00:00"^^xsd:dateTime ;
-    ns5:presentedAt <http://ceur-ws.org/Vol-358/#event> ;
+    ns6:issued "2008-06-16T00:00:00+00:00"^^xsd:dateTime ;
+    ns9:presentedAt <http://ceur-ws.org/Vol-358/#event> ;
     ns4:editor <http://ceur-ws.org/Vol-358/#PhilippeiCudr%C3%A9-Mauroux> .
 

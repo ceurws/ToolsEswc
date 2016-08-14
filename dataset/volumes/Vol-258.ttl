@@ -1,10 +1,10 @@
-@prefix ns1: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns1: <http://swrc.ontoware.org/ontology/#> .
 @prefix ns2: <http://xmlns.com/foaf/0.1/> .
-@prefix ns3: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns3: <http://data.semanticweb.org/ns/swc/ontology/#> .
 @prefix ns4: <http://www.w3.org/2002/07/owl#> .
-@prefix ns5: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns5: <http://purl.org/ontology/bibo/#> .
 @prefix ns6: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns7: <http://purl.org/ontology/bibo/#> .
+@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
 @prefix ns9: <http://purl.org/dc/elements/1.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -13,7 +13,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <http://ceur-ws.org/Vol-258/#AdityaiKalyanpur> a ns2:Person ;
-    ns3:affiliation "" ;
+    ns1:affiliation "" ;
     ns4:sameAs <http://ceur-ws.org/persons/AdityaiKalyanpur> ;
     ns2:name "Aditya Kalyanpur" .
 
@@ -577,19 +577,33 @@
     ns2:made <http://ceur-ws.org/Vol-258/#paper03> ;
     ns2:name "Zhen Liu" .
 
-<http://ceur-ws.org/Vol-258/#event> a ns1:WorkshopEvent ;
-    ns1:hasLocation <http://dbpedia.org/resource/Austria> ;
-    ns1:hasPart <http://ceur-ws.org/Vol-258/#part-OWL>,
+<http://ceur-ws.org/Vol-258/#event> a ns3:WorkshopEvent ;
+    ns3:hasLocation <http://dbpedia.org/resource/Austria> ;
+    ns3:hasPart <http://ceur-ws.org/Vol-258/#part-OWL>,
         <http://ceur-ws.org/Vol-258/#part-OWLED> ;
-    ns1:isSubEventOf <http://ceur-ws.org/Vol-258/#conf> ;
+    ns3:isSubEventOf <http://ceur-ws.org/Vol-258/#conf> ;
     ns8:beginsAtDatetime "2007-06-06T00:00:00+00:00"^^xsd:dateTime ;
     ns8:endsAtDatetime "2007-06-07T00:00:00+00:00"^^xsd:dateTime ;
     ns9:license "http://choosealicense.com/licenses/no-license/" ;
     rdfs:seeAlso <http://ceur-ws.org/Vol-188/#event>,
         <http://ceur-ws.org/Vol-216/#event> .
 
+<http://ceur-ws.org/Vol-258/#part-OWL> a ns5:Workshop ;
+    ns3:partOf <http://ceur-ws.org/series/OWL> ;
+    ns6:title "OWL",
+        "OWL: Experiences and Directions 2007" ;
+    ns5:shortTitle "OWL" ;
+    ns1:edition 1 .
+
+<http://ceur-ws.org/Vol-258/#part-OWLED> a ns5:Workshop ;
+    ns3:partOf <http://ceur-ws.org/series/OWLED> ;
+    ns6:title "OWL: Experiences and Directions 2007",
+        "OWLED" ;
+    ns5:shortTitle "OWLED" ;
+    ns1:edition 1 .
+
 <http://ceur-ws.org/Vol-258/#BijaniParsia> a ns2:Person ;
-    ns3:affiliation "" ;
+    ns1:affiliation "" ;
     ns4:sameAs <http://ceur-ws.org/persons/BijaniParsia> ;
     ns2:made <http://ceur-ws.org/Vol-258/#paper14> ;
     ns2:name "Bijan Parsia" .
@@ -630,50 +644,50 @@
         <http://ceur-ws.org/Vol-258/#paper34> ;
     ns2:name "Stephen Larson" .
 
-<http://ceur-ws.org/Vol-258/#paper02> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-258/> ;
+<http://ceur-ws.org/Vol-258/#paper02> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-258/> ;
     ns6:title "Ontology Engineering for Product Development" ;
-    ns7:section <http://ceur-ws.org/Vol-258/#Papers> ;
-    ns3:author <http://ceur-ws.org/Vol-258/#HensoniGraves> .
+    ns5:section <http://ceur-ws.org/Vol-258/#Papers> ;
+    ns1:author <http://ceur-ws.org/Vol-258/#HensoniGraves> .
 
-<http://ceur-ws.org/Vol-258/#paper04> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-258/> ;
+<http://ceur-ws.org/Vol-258/#paper04> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-258/> ;
     ns6:title "Semantic Web Technologies in Technical Automotive Documentation" ;
-    ns7:section <http://ceur-ws.org/Vol-258/#Papers> ;
-    ns3:author <http://ceur-ws.org/Vol-258/#Fran%EF%BF%BDois-PauliServant> .
+    ns5:section <http://ceur-ws.org/Vol-258/#Papers> ;
+    ns1:author <http://ceur-ws.org/Vol-258/#Fran%EF%BF%BDois-PauliServant> .
 
-<http://ceur-ws.org/Vol-258/#paper18> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-258/> ;
+<http://ceur-ws.org/Vol-258/#paper18> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-258/> ;
     ns6:title "Reasoning with OWL-DL in Inductive Logic Programming" ;
-    ns7:section <http://ceur-ws.org/Vol-258/#Papers> ;
-    ns3:author <http://ceur-ws.org/Vol-258/#FrancescaiAlessandraiLisi> .
+    ns5:section <http://ceur-ws.org/Vol-258/#Papers> ;
+    ns1:author <http://ceur-ws.org/Vol-258/#FrancescaiAlessandraiLisi> .
 
-<http://ceur-ws.org/Vol-258/#paper24> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-258/> ;
+<http://ceur-ws.org/Vol-258/#paper24> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-258/> ;
     ns6:title "Structured Ontology Format" ;
-    ns7:section <http://ceur-ws.org/Vol-258/#Papers> ;
-    ns3:author <http://ceur-ws.org/Vol-258/#RobiShearer> .
+    ns5:section <http://ceur-ws.org/Vol-258/#Papers> ;
+    ns1:author <http://ceur-ws.org/Vol-258/#RobiShearer> .
 
-<http://ceur-ws.org/Vol-258/#paper29> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-258/> ;
+<http://ceur-ws.org/Vol-258/#paper29> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-258/> ;
     ns6:title "Representing Phenotypes in OWL" ;
-    ns7:section <http://ceur-ws.org/Vol-258/#Papers> ;
-    ns3:author <http://ceur-ws.org/Vol-258/#ChrisiMungall> .
+    ns5:section <http://ceur-ws.org/Vol-258/#Papers> ;
+    ns1:author <http://ceur-ws.org/Vol-258/#ChrisiMungall> .
 
-<http://ceur-ws.org/Vol-258/#paper31> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-258/> ;
+<http://ceur-ws.org/Vol-258/#paper31> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-258/> ;
     ns6:title "An Examination of OWL and the Requirements of a Large Health Care Terminology" ;
-    ns7:section <http://ceur-ws.org/Vol-258/#Papers> ;
-    ns3:author <http://ceur-ws.org/Vol-258/#KentiSpackman> .
+    ns5:section <http://ceur-ws.org/Vol-258/#Papers> ;
+    ns1:author <http://ceur-ws.org/Vol-258/#KentiSpackman> .
 
-<http://ceur-ws.org/Vol-258/#paper44> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-258/> ;
+<http://ceur-ws.org/Vol-258/#paper44> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-258/> ;
     ns6:title "Hey! You Got Imperative in My Declarative, or A Mashup Made in Heaven: Making OWL friendlier with Javascript." ;
-    ns7:section <http://ceur-ws.org/Vol-258/#PosterorDemo> ;
-    ns3:author <http://ceur-ws.org/Vol-258/#AlaniRuttenberg> .
+    ns5:section <http://ceur-ws.org/Vol-258/#PosterorDemo> ;
+    ns1:author <http://ceur-ws.org/Vol-258/#AlaniRuttenberg> .
 
 <http://ceur-ws.org/Vol-258/#ChristineiGolbreich> a ns2:Person ;
-    ns3:affiliation "" ;
+    ns1:affiliation "" ;
     ns4:sameAs <http://ceur-ws.org/persons/ChristineiGolbreich> ;
     ns2:made <http://ceur-ws.org/Vol-258/#paper08>,
         <http://ceur-ws.org/Vol-258/#paper35> ;
@@ -693,317 +707,317 @@
         <http://ceur-ws.org/Vol-258/#paper16> ;
     ns2:name "Ulrike Sattler" .
 
-<http://ceur-ws.org/Vol-258/#paper06> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-258/> ;
+<http://ceur-ws.org/Vol-258/#paper06> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-258/> ;
     ns6:title "Implementing an RDF/OWL Ontology on Henry the III Fine Rolls" ;
-    ns7:section <http://ceur-ws.org/Vol-258/#Papers> ;
-    ns3:author <http://ceur-ws.org/Vol-258/#AriannaiCiula>,
+    ns5:section <http://ceur-ws.org/Vol-258/#Papers> ;
+    ns1:author <http://ceur-ws.org/Vol-258/#AriannaiCiula>,
         <http://ceur-ws.org/Vol-258/#JoseiVieira> .
 
-<http://ceur-ws.org/Vol-258/#paper07> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-258/> ;
+<http://ceur-ws.org/Vol-258/#paper07> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-258/> ;
     ns6:title "Rule-Based Reasoning With A Multi-Scale Neuroanatomical Ontology" ;
-    ns7:section <http://ceur-ws.org/Vol-258/#Papers> ;
-    ns3:author <http://ceur-ws.org/Vol-258/#MaryanniMartone>,
+    ns5:section <http://ceur-ws.org/Vol-258/#Papers> ;
+    ns1:author <http://ceur-ws.org/Vol-258/#MaryanniMartone>,
         <http://ceur-ws.org/Vol-258/#StepheniLarson> .
 
-<http://ceur-ws.org/Vol-258/#paper09> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-258/> ;
+<http://ceur-ws.org/Vol-258/#paper09> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-258/> ;
     ns6:title "A Business Case of the Use of Ontologies for Knowledge Capitalization and Exploitation" ;
-    ns7:section <http://ceur-ws.org/Vol-258/#Papers> ;
-    ns3:author <http://ceur-ws.org/Vol-258/#Fran%EF%BF%BDois-MarieiLesaffre>,
+    ns5:section <http://ceur-ws.org/Vol-258/#Papers> ;
+    ns1:author <http://ceur-ws.org/Vol-258/#Fran%EF%BF%BDois-MarieiLesaffre>,
         <http://ceur-ws.org/Vol-258/#VincentiPelletier> .
 
-<http://ceur-ws.org/Vol-258/#paper12> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-258/> ;
+<http://ceur-ws.org/Vol-258/#paper12> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-258/> ;
     ns6:title "Extending Fuzzy Description Logics for the Semantic Web" ;
-    ns7:section <http://ceur-ws.org/Vol-258/#Papers> ;
-    ns3:author <http://ceur-ws.org/Vol-258/#GiorgosiStamou.>,
+    ns5:section <http://ceur-ws.org/Vol-258/#Papers> ;
+    ns1:author <http://ceur-ws.org/Vol-258/#GiorgosiStamou.>,
         <http://ceur-ws.org/Vol-258/#GiorgosiStoilos> .
 
-<http://ceur-ws.org/Vol-258/#paper14> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-258/> ;
+<http://ceur-ws.org/Vol-258/#paper14> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-258/> ;
     ns6:title "SPARQL-DL: SPARQL Query for OWL-DL" ;
-    ns7:section <http://ceur-ws.org/Vol-258/#Papers> ;
-    ns3:author <http://ceur-ws.org/Vol-258/#BijaniParsia>,
+    ns5:section <http://ceur-ws.org/Vol-258/#Papers> ;
+    ns1:author <http://ceur-ws.org/Vol-258/#BijaniParsia>,
         <http://ceur-ws.org/Vol-258/#EvreniSirin> .
 
-<http://ceur-ws.org/Vol-258/#paper17> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-258/> ;
+<http://ceur-ws.org/Vol-258/#paper17> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-258/> ;
     ns6:title "Combining OWL with RCC for Spatioterminological Reasoning on Environmental Data" ;
-    ns7:section <http://ceur-ws.org/Vol-258/#Papers> ;
-    ns3:author <http://ceur-ws.org/Vol-258/#BettinaiBauer-Messmer>,
+    ns5:section <http://ceur-ws.org/Vol-258/#Papers> ;
+    ns1:author <http://ceur-ws.org/Vol-258/#BettinaiBauer-Messmer>,
         <http://ceur-ws.org/Vol-258/#RolfiGr%EF%BF%BDtter> .
 
-<http://ceur-ws.org/Vol-258/#paper21> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-258/> ;
+<http://ceur-ws.org/Vol-258/#paper21> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-258/> ;
     ns6:title "An Extension of DIG 2.0 for Handling Bulk Data" ;
-    ns7:section <http://ceur-ws.org/Vol-258/#Papers> ;
-    ns3:author <http://ceur-ws.org/Vol-258/#DiegoiCalvanese>,
+    ns5:section <http://ceur-ws.org/Vol-258/#Papers> ;
+    ns1:author <http://ceur-ws.org/Vol-258/#DiegoiCalvanese>,
         <http://ceur-ws.org/Vol-258/#MarianoiRodriguez> .
 
-<http://ceur-ws.org/Vol-258/#paper23> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-258/> ;
+<http://ceur-ws.org/Vol-258/#paper23> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-258/> ;
     ns6:title "Verbalizing OWL in Attempto Controlled English" ;
-    ns7:section <http://ceur-ws.org/Vol-258/#Papers> ;
-    ns3:author <http://ceur-ws.org/Vol-258/#KaareliKaljurand>,
+    ns5:section <http://ceur-ws.org/Vol-258/#Papers> ;
+    ns1:author <http://ceur-ws.org/Vol-258/#KaareliKaljurand>,
         <http://ceur-ws.org/Vol-258/#NorbertiFuchs> .
 
-<http://ceur-ws.org/Vol-258/#paper25> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-258/> ;
+<http://ceur-ws.org/Vol-258/#paper25> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-258/> ;
     ns6:title "Design Principles and Realization Techniques for User Friendly, Interactive, and Scalable Ontology Browsing and Inspection Tools" ;
-    ns7:section <http://ceur-ws.org/Vol-258/#Papers> ;
-    ns3:author <http://ceur-ws.org/Vol-258/#MichaeliWessel>,
+    ns5:section <http://ceur-ws.org/Vol-258/#Papers> ;
+    ns1:author <http://ceur-ws.org/Vol-258/#MichaeliWessel>,
         <http://ceur-ws.org/Vol-258/#RalfiMoeller> .
 
-<http://ceur-ws.org/Vol-258/#paper28> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-258/> ;
+<http://ceur-ws.org/Vol-258/#paper28> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-258/> ;
     ns6:title "Describing Chemical Functional Groups in OWL-DL for the Classification of Chemical Compounds" ;
-    ns7:section <http://ceur-ws.org/Vol-258/#Papers> ;
-    ns3:author <http://ceur-ws.org/Vol-258/#MicheliDumontier>,
+    ns5:section <http://ceur-ws.org/Vol-258/#Papers> ;
+    ns1:author <http://ceur-ws.org/Vol-258/#MicheliDumontier>,
         <http://ceur-ws.org/Vol-258/#NataliaiVillanueva-Rosales> .
 
-<http://ceur-ws.org/Vol-258/#paper33> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-258/> ;
+<http://ceur-ws.org/Vol-258/#paper33> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-258/> ;
     ns6:title "Experiences in Modeling Clinical Examinations in Oral Medicine Using OWL" ;
-    ns7:section <http://ceur-ws.org/Vol-258/#Papers> ;
-    ns3:author <http://ceur-ws.org/Vol-258/#G%EF%BF%BDraniFalkman>,
+    ns5:section <http://ceur-ws.org/Vol-258/#Papers> ;
+    ns1:author <http://ceur-ws.org/Vol-258/#G%EF%BF%BDraniFalkman>,
         <http://ceur-ws.org/Vol-258/#MarieiGustafsson> .
 
-<http://ceur-ws.org/Vol-258/#paper35> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-258/> ;
+<http://ceur-ws.org/Vol-258/#paper35> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-258/> ;
     ns6:title "The OBO to OWL mapping, GO to OWL 1.1!" ;
-    ns7:section <http://ceur-ws.org/Vol-258/#Papers> ;
-    ns3:author <http://ceur-ws.org/Vol-258/#ChristineiGolbreich>,
+    ns5:section <http://ceur-ws.org/Vol-258/#Papers> ;
+    ns1:author <http://ceur-ws.org/Vol-258/#ChristineiGolbreich>,
         <http://ceur-ws.org/Vol-258/#IaniHorrocks> .
 
-<http://ceur-ws.org/Vol-258/#paper38> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-258/> ;
+<http://ceur-ws.org/Vol-258/#paper38> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-258/> ;
     ns6:title "Ontology-based data access with MASTRO" ;
-    ns7:section <http://ceur-ws.org/Vol-258/#PosterorDemo> ;
-    ns3:author <http://ceur-ws.org/Vol-258/#AntonellaiPoggi>,
+    ns5:section <http://ceur-ws.org/Vol-258/#PosterorDemo> ;
+    ns1:author <http://ceur-ws.org/Vol-258/#AntonellaiPoggi>,
         <http://ceur-ws.org/Vol-258/#MarcoiRuzzi> .
 
-<http://ceur-ws.org/Vol-258/#paper40> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-258/> ;
+<http://ceur-ws.org/Vol-258/#paper40> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-258/> ;
     ns6:title "Satisfiability Model Visualization Plugin for Deep Consistency Checking of OWL Ontologies" ;
-    ns7:section <http://ceur-ws.org/Vol-258/#PosterorDemo> ;
-    ns3:author <http://ceur-ws.org/Vol-258/#GuntisiBarzdins>,
+    ns5:section <http://ceur-ws.org/Vol-258/#PosterorDemo> ;
+    ns1:author <http://ceur-ws.org/Vol-258/#GuntisiBarzdins>,
         <http://ceur-ws.org/Vol-258/#MartinsiBarinskis> .
 
-<http://ceur-ws.org/Vol-258/#paper45> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-258/> ;
+<http://ceur-ws.org/Vol-258/#paper45> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-258/> ;
     ns6:title "Use Case: Ontology to Support System Verification Process" ;
-    ns7:section <http://ceur-ws.org/Vol-258/#PosterorDemo> ;
-    ns3:author <http://ceur-ws.org/Vol-258/#AnneiMonceaux>,
+    ns5:section <http://ceur-ws.org/Vol-258/#PosterorDemo> ;
+    ns1:author <http://ceur-ws.org/Vol-258/#AnneiMonceaux>,
         <http://ceur-ws.org/Vol-258/#MartineiCallot> .
 
-<http://ceur-ws.org/Vol-258/#paper03> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-258/> ;
+<http://ceur-ws.org/Vol-258/#paper03> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-258/> ;
     ns6:title "Use of OWL for Describing Stream Processing Components to Enable Automatic Composition" ;
-    ns7:section <http://ceur-ws.org/Vol-258/#Papers> ;
-    ns3:author <http://ceur-ws.org/Vol-258/#AnandiRanganathan>,
+    ns5:section <http://ceur-ws.org/Vol-258/#Papers> ;
+    ns1:author <http://ceur-ws.org/Vol-258/#AnandiRanganathan>,
         <http://ceur-ws.org/Vol-258/#AntoniRiabov>,
         <http://ceur-ws.org/Vol-258/#ZheniLiu> .
 
-<http://ceur-ws.org/Vol-258/#paper05> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-258/> ;
+<http://ceur-ws.org/Vol-258/#paper05> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-258/> ;
     ns6:title "VIVO Development Roadmap: Enhancing an Ontology-Based University Research Portal with OWL and Rules" ;
-    ns7:section <http://ceur-ws.org/Vol-258/#Papers> ;
-    ns3:author <http://ceur-ws.org/Vol-258/#BrianiCaruso>,
+    ns5:section <http://ceur-ws.org/Vol-258/#Papers> ;
+    ns1:author <http://ceur-ws.org/Vol-258/#BrianiCaruso>,
         <http://ceur-ws.org/Vol-258/#BrianiLowe>,
         <http://ceur-ws.org/Vol-258/#JoniCorson-Rikert> .
 
-<http://ceur-ws.org/Vol-258/#paper11> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-258/> ;
+<http://ceur-ws.org/Vol-258/#paper11> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-258/> ;
     ns6:title "Adding Integrity Constraints to OWL" ;
-    ns7:section <http://ceur-ws.org/Vol-258/#Papers> ;
-    ns3:author <http://ceur-ws.org/Vol-258/#BorisiMotik>,
+    ns5:section <http://ceur-ws.org/Vol-258/#Papers> ;
+    ns1:author <http://ceur-ws.org/Vol-258/#BorisiMotik>,
         <http://ceur-ws.org/Vol-258/#IaniHorrocks>,
         <http://ceur-ws.org/Vol-258/#UlrikeiSattler> .
 
-<http://ceur-ws.org/Vol-258/#paper19> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-258/> ;
+<http://ceur-ws.org/Vol-258/#paper19> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-258/> ;
     ns6:title "Igniting the OWL 1.1 Touch Paper: The OWL API" ;
-    ns7:section <http://ceur-ws.org/Vol-258/#Papers> ;
-    ns3:author <http://ceur-ws.org/Vol-258/#MatthewiHorridge>,
+    ns5:section <http://ceur-ws.org/Vol-258/#Papers> ;
+    ns1:author <http://ceur-ws.org/Vol-258/#MatthewiHorridge>,
         <http://ceur-ws.org/Vol-258/#OlafiNoppens>,
         <http://ceur-ws.org/Vol-258/#SeaniBechhofer> .
 
-<http://ceur-ws.org/Vol-258/#paper26> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-258/> ;
+<http://ceur-ws.org/Vol-258/#paper26> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-258/> ;
     ns6:title "ONTOSEARCH2: Searching Ontologies Semantically" ;
-    ns7:section <http://ceur-ws.org/Vol-258/#Papers> ;
-    ns3:author <http://ceur-ws.org/Vol-258/#DerekiSleeman>,
+    ns5:section <http://ceur-ws.org/Vol-258/#Papers> ;
+    ns1:author <http://ceur-ws.org/Vol-258/#DerekiSleeman>,
         <http://ceur-ws.org/Vol-258/#EdwardiThomas>,
         <http://ceur-ws.org/Vol-258/#JeffiZ.iPan> .
 
-<http://ceur-ws.org/Vol-258/#paper27> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-258/> ;
+<http://ceur-ws.org/Vol-258/#paper27> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-258/> ;
     ns6:title "IBSE: An OWL Interoperability Evaluation Infrastructure" ;
-    ns7:section <http://ceur-ws.org/Vol-258/#Papers> ;
-    ns3:author <http://ceur-ws.org/Vol-258/#Asunci%EF%BF%BDniG%EF%BF%BDmez-P%EF%BF%BDrez>,
+    ns5:section <http://ceur-ws.org/Vol-258/#Papers> ;
+    ns1:author <http://ceur-ws.org/Vol-258/#Asunci%EF%BF%BDniG%EF%BF%BDmez-P%EF%BF%BDrez>,
         <http://ceur-ws.org/Vol-258/#JesusiPrieto-Gonzalez>,
         <http://ceur-ws.org/Vol-258/#RauliGarcia-Castro> .
 
-<http://ceur-ws.org/Vol-258/#paper30> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-258/> ;
+<http://ceur-ws.org/Vol-258/#paper30> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-258/> ;
     ns6:title "A Survey of Requirements for Automated Reasoning Services for Bio-Ontologies in OWL" ;
-    ns7:section <http://ceur-ws.org/Vol-258/#Papers> ;
-    ns3:author <http://ceur-ws.org/Vol-258/#C.iMariaiKeet>,
+    ns5:section <http://ceur-ws.org/Vol-258/#Papers> ;
+    ns1:author <http://ceur-ws.org/Vol-258/#C.iMariaiKeet>,
         <http://ceur-ws.org/Vol-258/#M.iScottiMarshall>,
         <http://ceur-ws.org/Vol-258/#MarcoiRoos> .
 
-<http://ceur-ws.org/Vol-258/#paper36> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-258/> ;
+<http://ceur-ws.org/Vol-258/#paper36> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-258/> ;
     ns6:title "Sydney OWL Syntax - towards a Controlled Natural Language Syntax for OWL 1.1" ;
-    ns7:section <http://ceur-ws.org/Vol-258/#PosterorDemo> ;
-    ns3:author <http://ceur-ws.org/Vol-258/#AnneiCregan>,
+    ns5:section <http://ceur-ws.org/Vol-258/#PosterorDemo> ;
+    ns1:author <http://ceur-ws.org/Vol-258/#AnneiCregan>,
         <http://ceur-ws.org/Vol-258/#RolfiSchwitter>,
         <http://ceur-ws.org/Vol-258/#ThomasiMeyer> .
 
-<http://ceur-ws.org/Vol-258/#paper37> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-258/> ;
+<http://ceur-ws.org/Vol-258/#paper37> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-258/> ;
     ns6:title "Ontological Context Visualization" ;
-    ns7:section <http://ceur-ws.org/Vol-258/#PosterorDemo> ;
-    ns3:author <http://ceur-ws.org/Vol-258/#FonsiJ.iVerbeek>,
+    ns5:section <http://ceur-ws.org/Vol-258/#PosterorDemo> ;
+    ns1:author <http://ceur-ws.org/Vol-258/#FonsiJ.iVerbeek>,
         <http://ceur-ws.org/Vol-258/#JuliaiDmitrieva>,
         <http://ceur-ws.org/Vol-258/#YuniBei> .
 
-<http://ceur-ws.org/Vol-258/#paper39> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-258/> ;
+<http://ceur-ws.org/Vol-258/#paper39> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-258/> ;
     ns6:title "Lege Feliciter: Using Structured English to represent a Topographic Hydrology Ontology" ;
-    ns7:section <http://ceur-ws.org/Vol-258/#PosterorDemo> ;
-    ns3:author <http://ceur-ws.org/Vol-258/#CatherineiDolbear>,
+    ns5:section <http://ceur-ws.org/Vol-258/#PosterorDemo> ;
+    ns1:author <http://ceur-ws.org/Vol-258/#CatherineiDolbear>,
         <http://ceur-ws.org/Vol-258/#GleniHart>,
         <http://ceur-ws.org/Vol-258/#JohniGoodwin.> .
 
-<http://ceur-ws.org/Vol-258/#paper41> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-258/> ;
+<http://ceur-ws.org/Vol-258/#paper41> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-258/> ;
     ns6:title "On Querying Ontologies with Contextual Logic Programming" ;
-    ns7:section <http://ceur-ws.org/Vol-258/#PosterorDemo> ;
-    ns3:author <http://ceur-ws.org/Vol-258/#Cl%EF%BF%BDudioiFernandes>,
+    ns5:section <http://ceur-ws.org/Vol-258/#PosterorDemo> ;
+    ns1:author <http://ceur-ws.org/Vol-258/#Cl%EF%BF%BDudioiFernandes>,
         <http://ceur-ws.org/Vol-258/#NunoiLopes>,
         <http://ceur-ws.org/Vol-258/#SalvadoriAbreu> .
 
-<http://ceur-ws.org/Vol-258/#paper42> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-258/> ;
+<http://ceur-ws.org/Vol-258/#paper42> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-258/> ;
     ns6:title "Ontology-Based Management of the Telehealth Smart Home, Dedicated to Elderly in Loss of Cognitive Autonomy" ;
-    ns7:section <http://ceur-ws.org/Vol-258/#PosterorDemo> ;
-    ns3:author <http://ceur-ws.org/Vol-258/#BernardiLefebvre>,
+    ns5:section <http://ceur-ws.org/Vol-258/#PosterorDemo> ;
+    ns1:author <http://ceur-ws.org/Vol-258/#BernardiLefebvre>,
         <http://ceur-ws.org/Vol-258/#CelineiDescheneaux>,
         <http://ceur-ws.org/Vol-258/#FatihaiLatfi> .
 
-<http://ceur-ws.org/Vol-258/#paper46> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-258/> ;
+<http://ceur-ws.org/Vol-258/#paper46> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-258/> ;
     ns6:title "Requirements for the Treatment of Multilinguality in Ontologies within FAO" ;
-    ns7:section <http://ceur-ws.org/Vol-258/#PosterorDemo> ;
-    ns3:author <http://ceur-ws.org/Vol-258/#CaterinaiCaracciolo>,
+    ns5:section <http://ceur-ws.org/Vol-258/#PosterorDemo> ;
+    ns1:author <http://ceur-ws.org/Vol-258/#CaterinaiCaracciolo>,
         <http://ceur-ws.org/Vol-258/#JohannesiKeizer>,
         <http://ceur-ws.org/Vol-258/#MargheritaiSini> .
 
-<http://ceur-ws.org/Vol-258/#paper15> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-258/> ;
+<http://ceur-ws.org/Vol-258/#paper15> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-258/> ;
     ns6:title "Extracting Modules from Ontologies: A Logic-based Approach" ;
-    ns7:section <http://ceur-ws.org/Vol-258/#Papers> ;
-    ns3:author <http://ceur-ws.org/Vol-258/#BernardoiCuencaiGrau>,
+    ns5:section <http://ceur-ws.org/Vol-258/#Papers> ;
+    ns1:author <http://ceur-ws.org/Vol-258/#BernardoiCuencaiGrau>,
         <http://ceur-ws.org/Vol-258/#IaniHorrocks>,
         <http://ceur-ws.org/Vol-258/#UlrikeiSattler>,
         <http://ceur-ws.org/Vol-258/#YevgenyiKazakov> .
 
-<http://ceur-ws.org/Vol-258/#paper16> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-258/> ;
+<http://ceur-ws.org/Vol-258/#paper16> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-258/> ;
     ns6:title "Completing Description Logic Knowledge Bases using Formal Concept Analysis" ;
-    ns7:section <http://ceur-ws.org/Vol-258/#Papers> ;
-    ns3:author <http://ceur-ws.org/Vol-258/#BarisiSertkaya>,
+    ns5:section <http://ceur-ws.org/Vol-258/#Papers> ;
+    ns1:author <http://ceur-ws.org/Vol-258/#BarisiSertkaya>,
         <http://ceur-ws.org/Vol-258/#BernhardiGanter>,
         <http://ceur-ws.org/Vol-258/#FranziBaader>,
         <http://ceur-ws.org/Vol-258/#UlrikeiSattler> .
 
-<http://ceur-ws.org/Vol-258/#paper20> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-258/> ;
+<http://ceur-ws.org/Vol-258/#paper20> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-258/> ;
     ns6:title "DIG 2.0 Reference Middleware" ;
-    ns7:section <http://ceur-ws.org/Vol-258/#Papers> ;
-    ns3:author <http://ceur-ws.org/Vol-258/#MarkoiLuther>,
+    ns5:section <http://ceur-ws.org/Vol-258/#Papers> ;
+    ns1:author <http://ceur-ws.org/Vol-258/#MarkoiLuther>,
         <http://ceur-ws.org/Vol-258/#SebastianiB%EF%BF%BDhm>,
         <http://ceur-ws.org/Vol-258/#ThorsteniLiebig>,
         <http://ceur-ws.org/Vol-258/#TimoiWeith%EF%BF%BDner> .
 
-<http://ceur-ws.org/Vol-258/#paper22> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-258/> ;
+<http://ceur-ws.org/Vol-258/#paper22> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-258/> ;
     ns6:title "Towards a Scalable and Efficient Middleware for Instance Retrieval Inference Services" ;
-    ns7:section <http://ceur-ws.org/Vol-258/#Papers> ;
-    ns3:author <http://ceur-ws.org/Vol-258/#AlissaiKaplunova>,
+    ns5:section <http://ceur-ws.org/Vol-258/#Papers> ;
+    ns1:author <http://ceur-ws.org/Vol-258/#AlissaiKaplunova>,
         <http://ceur-ws.org/Vol-258/#AtilaiKaya>,
         <http://ceur-ws.org/Vol-258/#RalfiMoeller>,
         <http://ceur-ws.org/Vol-258/#TobiasiBerger> .
 
-<http://ceur-ws.org/Vol-258/#paper43> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-258/> ;
+<http://ceur-ws.org/Vol-258/#paper43> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-258/> ;
     ns6:title "OWL SAIQL - An OWL DL Query Language for Ontology Extraction" ;
-    ns7:section <http://ceur-ws.org/Vol-258/#PosterorDemo> ;
-    ns3:author <http://ceur-ws.org/Vol-258/#AlexanderiKubias>,
+    ns5:section <http://ceur-ws.org/Vol-258/#PosterorDemo> ;
+    ns1:author <http://ceur-ws.org/Vol-258/#AlexanderiKubias>,
         <http://ceur-ws.org/Vol-258/#JeffiZ.iPan>,
         <http://ceur-ws.org/Vol-258/#SimoniSchenk>,
         <http://ceur-ws.org/Vol-258/#SteffeniStaab> .
 
-<http://ceur-ws.org/Vol-258/#paper08> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-258/> ;
+<http://ceur-ws.org/Vol-258/#paper08> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-258/> ;
     ns6:title "Querying multiple sources with OWL ontologies: an exploratory study in an automotive company" ;
-    ns7:section <http://ceur-ws.org/Vol-258/#Papers> ;
-    ns3:author <http://ceur-ws.org/Vol-258/#AlainiBerger>,
+    ns5:section <http://ceur-ws.org/Vol-258/#Papers> ;
+    ns1:author <http://ceur-ws.org/Vol-258/#AlainiBerger>,
         <http://ceur-ws.org/Vol-258/#ChristineiGolbreich>,
         <http://ceur-ws.org/Vol-258/#Fran%EF%BF%BDoisiVexler>,
         <http://ceur-ws.org/Vol-258/#Jean-PierreiCotton>,
         <http://ceur-ws.org/Vol-258/#PierreiMariot> .
 
-<http://ceur-ws.org/Vol-258/#paper10> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-258/> ;
+<http://ceur-ws.org/Vol-258/#paper10> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-258/> ;
     ns6:title "Mother, May I? OWL-based Policy Management at NASA" ;
-    ns7:section <http://ceur-ws.org/Vol-258/#Papers> ;
-    ns3:author <http://ceur-ws.org/Vol-258/#AndrewiSchain>,
+    ns5:section <http://ceur-ws.org/Vol-258/#Papers> ;
+    ns1:author <http://ceur-ws.org/Vol-258/#AndrewiSchain>,
         <http://ceur-ws.org/Vol-258/#ArleniGriffey>,
         <http://ceur-ws.org/Vol-258/#KendalliClark>,
         <http://ceur-ws.org/Vol-258/#MichaeliSmith>,
         <http://ceur-ws.org/Vol-258/#VladimiriKolovski> .
 
-<http://ceur-ws.org/Vol-258/#paper13> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-258/> ;
+<http://ceur-ws.org/Vol-258/#paper13> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-258/> ;
     ns6:title "Can OWL Model Football Leagues?" ;
-    ns7:section <http://ceur-ws.org/Vol-258/#Papers> ;
-    ns3:author <http://ceur-ws.org/Vol-258/#DiegoiCalvanese>,
+    ns5:section <http://ceur-ws.org/Vol-258/#Papers> ;
+    ns1:author <http://ceur-ws.org/Vol-258/#DiegoiCalvanese>,
         <http://ceur-ws.org/Vol-258/#DomenicoiLembo>,
         <http://ceur-ws.org/Vol-258/#GiuseppeiDeiGiacomo>,
         <http://ceur-ws.org/Vol-258/#MaurizioiLenzerini>,
         <http://ceur-ws.org/Vol-258/#RiccardoiRosati> .
 
-<http://ceur-ws.org/Vol-258/#paper01> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-258/> ;
+<http://ceur-ws.org/Vol-258/#paper01> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-258/> ;
     ns6:title "Ontologies in OWL for Rapid Enterprise Integration" ;
-    ns7:section <http://ceur-ws.org/Vol-258/#Papers> ;
-    ns3:author <http://ceur-ws.org/Vol-258/#DeborahiNichols>,
+    ns5:section <http://ceur-ws.org/Vol-258/#Papers> ;
+    ns1:author <http://ceur-ws.org/Vol-258/#DeborahiNichols>,
         <http://ceur-ws.org/Vol-258/#KeniSamuel>,
         <http://ceur-ws.org/Vol-258/#LeoiObrst>,
         <http://ceur-ws.org/Vol-258/#MichaeliPrausa>,
         <http://ceur-ws.org/Vol-258/#PauliFranklin>,
         <http://ceur-ws.org/Vol-258/#SuzetteiStoutenburg> .
 
-<http://ceur-ws.org/Vol-258/#paper32> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-258/> ;
+<http://ceur-ws.org/Vol-258/#paper32> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-258/> ;
     ns6:title "Current and Future Uses of OWL for Scientific Data Frameworks: Successes and Limitations" ;
-    ns7:section <http://ceur-ws.org/Vol-258/#Papers> ;
-    ns3:author <http://ceur-ws.org/Vol-258/#DeborahiMcGuinness>,
+    ns5:section <http://ceur-ws.org/Vol-258/#Papers> ;
+    ns1:author <http://ceur-ws.org/Vol-258/#DeborahiMcGuinness>,
         <http://ceur-ws.org/Vol-258/#JamesiBenedict>,
         <http://ceur-ws.org/Vol-258/#JoseiGarcia>,
         <http://ceur-ws.org/Vol-258/#LucaiCinquini>,
         <http://ceur-ws.org/Vol-258/#PatrickiWest>,
         <http://ceur-ws.org/Vol-258/#PeteriFox> .
 
-<http://ceur-ws.org/Vol-258/#paper34> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-258/> ;
+<http://ceur-ws.org/Vol-258/#paper34> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-258/> ;
     ns6:title "An Ontology-Driven Knowledge Environment For Subcellular Neuroanatomy" ;
-    ns7:section <http://ceur-ws.org/Vol-258/#Papers> ;
-    ns3:author <http://ceur-ws.org/Vol-258/#AmarnathiGupta>,
+    ns5:section <http://ceur-ws.org/Vol-258/#Papers> ;
+    ns1:author <http://ceur-ws.org/Vol-258/#AmarnathiGupta>,
         <http://ceur-ws.org/Vol-258/#CelineiDescheneaux>,
         <http://ceur-ws.org/Vol-258/#ChristopheriCondit>,
         <http://ceur-ws.org/Vol-258/#LisaiFong>,
@@ -1014,16 +1028,16 @@
         <http://ceur-ws.org/Vol-258/#StepheniLarson>,
         <http://ceur-ws.org/Vol-258/#WilliamiBug> .
 
-<http://ceur-ws.org/Vol-258/#PosterorDemo> a ns1:SessionEvent ;
-    ns1:partOf <http://ceur-ws.org/Vol-258/> ;
+<http://ceur-ws.org/Vol-258/#PosterorDemo> a ns3:SessionEvent ;
+    ns3:partOf <http://ceur-ws.org/Vol-258/> ;
     ns6:title "Poster or Demo" .
 
-<http://ceur-ws.org/Vol-258/#Papers> a ns1:SessionEvent ;
-    ns1:partOf <http://ceur-ws.org/Vol-258/> ;
+<http://ceur-ws.org/Vol-258/#Papers> a ns3:SessionEvent ;
+    ns3:partOf <http://ceur-ws.org/Vol-258/> ;
     ns6:title "Papers" .
 
-<http://ceur-ws.org/Vol-258/> a ns1:Proceedings ;
-    ns1:hasPart <http://ceur-ws.org/Vol-258/#paper01>,
+<http://ceur-ws.org/Vol-258/> a ns3:Proceedings ;
+    ns3:hasPart <http://ceur-ws.org/Vol-258/#paper01>,
         <http://ceur-ws.org/Vol-258/#paper02>,
         <http://ceur-ws.org/Vol-258/#paper03>,
         <http://ceur-ws.org/Vol-258/#paper04>,
@@ -1069,11 +1083,11 @@
         <http://ceur-ws.org/Vol-258/#paper44>,
         <http://ceur-ws.org/Vol-258/#paper45>,
         <http://ceur-ws.org/Vol-258/#paper46> ;
-    ns1:hasSession <http://ceur-ws.org/Vol-258/#Papers>,
+    ns3:hasSession <http://ceur-ws.org/Vol-258/#Papers>,
         <http://ceur-ws.org/Vol-258/#PosterorDemo> ;
-    ns5:issued "2007-07-13T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:presentedAt <http://ceur-ws.org/Vol-258/#event> ;
-    ns3:editor <http://ceur-ws.org/Vol-258/#AdityaiKalyanpur>,
+    ns7:issued "2007-07-13T00:00:00+00:00"^^xsd:dateTime ;
+    ns5:presentedAt <http://ceur-ws.org/Vol-258/#event> ;
+    ns1:editor <http://ceur-ws.org/Vol-258/#AdityaiKalyanpur>,
         <http://ceur-ws.org/Vol-258/#BijaniParsia>,
         <http://ceur-ws.org/Vol-258/#ChristineiGolbreich> .
 

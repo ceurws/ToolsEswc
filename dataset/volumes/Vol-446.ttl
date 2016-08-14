@@ -1,35 +1,36 @@
-@prefix ns1: <http://purl.org/ontology/bibo/#> .
-@prefix ns2: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns3: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns4: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns5: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns6: <http://xmlns.com/foaf/0.1/> .
-@prefix ns7: <http://www.w3.org/2002/07/owl#> .
+@prefix ns1: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns2: <http://xmlns.com/foaf/0.1/> .
+@prefix ns3: <http://www.w3.org/2002/07/owl#> .
+@prefix ns4: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns5: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns6: <http://purl.org/ontology/bibo/#> .
+@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix ns8: <http://purl.org/dc/elements/1.1/> .
+@prefix ns9: <http://purl.org/dc/elements/1.1/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-446/> a ns5:Proceedings ;
-    ns4:issued "2009-04-21T00:00:00+00:00"^^xsd:dateTime ;
-    ns1:presentedAt <http://ceur-ws.org/Vol-446/#event> ;
-    ns3:editor <http://ceur-ws.org/Vol-446/#HeinziHandels>,
+<http://ceur-ws.org/Vol-446/> a ns1:Proceedings ;
+    ns7:issued "2009-04-21T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:presentedAt <http://ceur-ws.org/Vol-446/#event> ;
+    ns5:editor <http://ceur-ws.org/Vol-446/#HeinziHandels>,
         <http://ceur-ws.org/Vol-446/#HerausgegebenivoniHans-PeteriMeinzer> .
 
-<http://ceur-ws.org/Vol-446/#HeinziHandels> a ns6:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/HeinziHandels> ;
-    ns6:name "Heinz Handels" .
+<http://ceur-ws.org/Vol-446/#HeinziHandels> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/HeinziHandels> ;
+    ns2:name "Heinz Handels" .
 
-<http://ceur-ws.org/Vol-446/#HerausgegebenivoniHans-PeteriMeinzer> a ns6:Person ;
-    ns7:sameAs <http://ceur-ws.org/persons/HerausgegebenivoniHans-PeteriMeinzer> ;
-    ns6:name "Herausgegeben von Hans-Peter Meinzer" .
+<http://ceur-ws.org/Vol-446/#HerausgegebenivoniHans-PeteriMeinzer> a ns2:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/HerausgegebenivoniHans-PeteriMeinzer> ;
+    ns2:name "Herausgegeben von Hans-Peter Meinzer" .
 
-<http://ceur-ws.org/Vol-446/#event> a ns5:WorkshopEvent ;
-    ns5:hasPart <http://ceur-ws.org/Vol-446/#part-ws> ;
-    ns5:isSubEventOf <http://ceur-ws.org/Vol-446/#conf> ;
-    ns2:beginsAtDatetime "2009-03-25T00:00:00+00:00"^^xsd:dateTime ;
-    ns2:endsAtDatetime "2009-03-25T00:00:00+00:00"^^xsd:dateTime ;
+<http://ceur-ws.org/Vol-446/#event> a ns1:WorkshopEvent ;
+    ns1:hasPart <http://ceur-ws.org/Vol-446/#part-ws> ;
+    ns1:isSubEventOf <http://ceur-ws.org/Vol-446/#conf> ;
+    ns4:beginsAtDatetime "2009-03-25T00:00:00+00:00"^^xsd:dateTime ;
+    ns4:endsAtDatetime "2009-03-25T00:00:00+00:00"^^xsd:dateTime ;
     ns8:license "http://choosealicense.com/licenses/no-license/" ;
     rdfs:seeAlso <http://ceur-ws.org/Vol-116/#event>,
         <http://ceur-ws.org/Vol-12/#event>,
@@ -43,4 +44,8 @@
         <http://ceur-ws.org/Vol-56/#event>,
         <http://ceur-ws.org/Vol-6/#event>,
         <http://ceur-ws.org/Vol-80/#event> .
+
+<http://ceur-ws.org/Vol-446/#part-ws> a ns6:Workshop ;
+    ns1:partOf <http://ceur-ws.org/series/ws> ;
+    ns9:title "Bildverarbeitung für die Medizin 2009: Algorithmen - Systeme - Anwendungen" .
 

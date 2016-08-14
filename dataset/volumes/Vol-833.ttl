@@ -1,11 +1,11 @@
-@prefix ns1: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns1: <http://swrc.ontoware.org/ontology/#> .
 @prefix ns2: <http://www.w3.org/2002/07/owl#> .
 @prefix ns3: <http://xmlns.com/foaf/0.1/> .
-@prefix ns4: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns5: <http://purl.org/ontology/bibo/#> .
-@prefix ns6: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns7: <http://purl.org/dc/elements/1.1/> .
-@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns4: <http://purl.org/ontology/bibo/#> .
+@prefix ns5: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns6: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns8: <http://purl.org/dc/elements/1.1/> .
 @prefix ns9: <http://purl.org/NET/c4dm/timeline.owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -1221,13 +1221,19 @@
     ns3:made <http://ceur-ws.org/Vol-833/#paperX1> ;
     ns3:name "available online at CEUR-WS.org/Vol-833/." .
 
-<http://ceur-ws.org/Vol-833/#event> a ns1:WorkshopEvent ;
-    ns1:hasLocation <http://dbpedia.org/resource/United_States> ;
-    ns1:hasPart <http://ceur-ws.org/Vol-833/#part-ICBO> ;
-    ns1:isSubEventOf <http://ceur-ws.org/Vol-833/#conf> ;
+<http://ceur-ws.org/Vol-833/#event> a ns6:WorkshopEvent ;
+    ns6:hasLocation <http://dbpedia.org/resource/United_States> ;
+    ns6:hasPart <http://ceur-ws.org/Vol-833/#part-ICBO> ;
+    ns6:isSubEventOf <http://ceur-ws.org/Vol-833/#conf> ;
     ns9:beginsAtDatetime "2016-07-28T00:00:00+00:00"^^xsd:dateTime ;
     ns9:endsAtDatetime "2016-07-30T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:license "http://choosealicense.com/licenses/no-license/" .
+    ns8:license "http://choosealicense.com/licenses/no-license/" .
+
+<http://ceur-ws.org/Vol-833/#part-ICBO> a ns4:Workshop ;
+    ns6:partOf <http://ceur-ws.org/series/ICBO> ;
+    ns5:title "International Conference on Biomedical Ontology 2011" ;
+    ns4:shortTitle "ICBO" ;
+    ns1:edition 2 .
 
 <http://ceur-ws.org/Vol-833/#theieagle-iiConsortium> a ns3:Person ;
     ns2:sameAs <http://ceur-ws.org/persons/theieagle-iiConsortium> ;
@@ -1379,7 +1385,7 @@
     ns3:name "Nicole Vasilevsky" .
 
 <http://ceur-ws.org/Vol-833/#OlivieriBodenreider> a ns3:Person ;
-    ns4:affiliation "" ;
+    ns1:affiliation "" ;
     ns2:sameAs <http://ceur-ws.org/persons/OlivieriBodenreider> ;
     ns3:made <http://ceur-ws.org/Vol-833/#paperX1> ;
     ns3:name "Olivier Bodenreider" .
@@ -1504,53 +1510,53 @@
         <http://ceur-ws.org/Vol-833/#paper39> ;
     ns3:name "William R. Hogan" .
 
-<http://ceur-ws.org/Vol-833/#paper28> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-833/> ;
-    ns6:title "A Framework Ontology for Computer-Based Patient Record Systems" ;
-    ns5:section <http://ceur-ws.org/Vol-833/#ICBOPresentations> ;
-    ns4:author <http://ceur-ws.org/Vol-833/#ChimezieiOgbuji> .
+<http://ceur-ws.org/Vol-833/#paper28> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-833/> ;
+    ns5:title "A Framework Ontology for Computer-Based Patient Record Systems" ;
+    ns4:section <http://ceur-ws.org/Vol-833/#ICBOPresentations> ;
+    ns1:author <http://ceur-ws.org/Vol-833/#ChimezieiOgbuji> .
 
-<http://ceur-ws.org/Vol-833/#paper36> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-833/> ;
-    ns6:title "An Ontology for Gastrointestinal Endoscopy" ;
-    ns5:section <http://ceur-ws.org/Vol-833/#PosterPapersAbstracts> ;
-    ns4:author <http://ceur-ws.org/Vol-833/#ShahimiEssaid> .
+<http://ceur-ws.org/Vol-833/#paper36> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-833/> ;
+    ns5:title "An Ontology for Gastrointestinal Endoscopy" ;
+    ns4:section <http://ceur-ws.org/Vol-833/#PosterPapersAbstracts> ;
+    ns1:author <http://ceur-ws.org/Vol-833/#ShahimiEssaid> .
 
-<http://ceur-ws.org/Vol-833/#paper45> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-833/> ;
-    ns6:title "Towards Desiderata for Provenance Ontologies in Biomedicine" ;
-    ns5:section <http://ceur-ws.org/Vol-833/#PosterPapersAbstracts> ;
-    ns4:author <http://ceur-ws.org/Vol-833/#SatyaiS.iSahoo> .
+<http://ceur-ws.org/Vol-833/#paper45> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-833/> ;
+    ns5:title "Towards Desiderata for Provenance Ontologies in Biomedicine" ;
+    ns4:section <http://ceur-ws.org/Vol-833/#PosterPapersAbstracts> ;
+    ns1:author <http://ceur-ws.org/Vol-833/#SatyaiS.iSahoo> .
 
-<http://ceur-ws.org/Vol-833/#paper78> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-833/> ;
-    ns6:title "FUNCARO: A Functional Extension to CARO" ;
-    ns5:section <http://ceur-ws.org/Vol-833/#FacilitatingAnatomyOntologyInteroperability> ;
-    ns4:author <http://ceur-ws.org/Vol-833/#DavidiOsumi-Sutherland> .
+<http://ceur-ws.org/Vol-833/#paper78> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-833/> ;
+    ns5:title "FUNCARO: A Functional Extension to CARO" ;
+    ns4:section <http://ceur-ws.org/Vol-833/#FacilitatingAnatomyOntologyInteroperability> ;
+    ns1:author <http://ceur-ws.org/Vol-833/#DavidiOsumi-Sutherland> .
 
-<http://ceur-ws.org/Vol-833/#paper81> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-833/> ;
-    ns6:title "CARO 2.0" ;
-    ns5:section <http://ceur-ws.org/Vol-833/#FacilitatingAnatomyOntologyInteroperability> ;
-    ns4:author <http://ceur-ws.org/Vol-833/#DavidiOsumi-Sutherland> .
+<http://ceur-ws.org/Vol-833/#paper81> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-833/> ;
+    ns5:title "CARO 2.0" ;
+    ns4:section <http://ceur-ws.org/Vol-833/#FacilitatingAnatomyOntologyInteroperability> ;
+    ns1:author <http://ceur-ws.org/Vol-833/#DavidiOsumi-Sutherland> .
 
-<http://ceur-ws.org/Vol-833/#paper85> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-833/> ;
-    ns6:title "One Empirical Study, Three Tests of Translation, Many Questions on Biomedical Ontologies: Limited Contribution of MeSH Terms to Effective Literature Searches on &#8216Health-Related Values’" ;
-    ns5:section <http://ceur-ws.org/Vol-833/#DoctoralandPostDoctoralConsortium> ;
-    ns4:author <http://ceur-ws.org/Vol-833/#MilaiPetrova> .
+<http://ceur-ws.org/Vol-833/#paper85> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-833/> ;
+    ns5:title "One Empirical Study, Three Tests of Translation, Many Questions on Biomedical Ontologies: Limited Contribution of MeSH Terms to Effective Literature Searches on &#8216Health-Related Values’" ;
+    ns4:section <http://ceur-ws.org/Vol-833/#DoctoralandPostDoctoralConsortium> ;
+    ns1:author <http://ceur-ws.org/Vol-833/#MilaiPetrova> .
 
-<http://ceur-ws.org/Vol-833/#paper88> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-833/> ;
-    ns6:title "Philosophy, Ontology, and Scientific Explanation" ;
-    ns5:section <http://ceur-ws.org/Vol-833/#DoctoralandPostDoctoralConsortium> ;
-    ns4:author <http://ceur-ws.org/Vol-833/#JamesiA.iOverton> .
+<http://ceur-ws.org/Vol-833/#paper88> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-833/> ;
+    ns5:title "Philosophy, Ontology, and Scientific Explanation" ;
+    ns4:section <http://ceur-ws.org/Vol-833/#DoctoralandPostDoctoralConsortium> ;
+    ns1:author <http://ceur-ws.org/Vol-833/#JamesiA.iOverton> .
 
-<http://ceur-ws.org/Vol-833/#paper89> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-833/> ;
-    ns6:title "Refining Ontology for Glucose Metabolism Disorders" ;
-    ns5:section <http://ceur-ws.org/Vol-833/#DoctoralandPostDoctoralConsortium> ;
-    ns4:author <http://ceur-ws.org/Vol-833/#YuiLin> .
+<http://ceur-ws.org/Vol-833/#paper89> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-833/> ;
+    ns5:title "Refining Ontology for Glucose Metabolism Disorders" ;
+    ns4:section <http://ceur-ws.org/Vol-833/#DoctoralandPostDoctoralConsortium> ;
+    ns1:author <http://ceur-ws.org/Vol-833/#YuiLin> .
 
 <http://ceur-ws.org/Vol-833/#AnnaiMariaiMasci> a ns3:Person ;
     ns2:sameAs <http://ceur-ws.org/persons/AnnaiMariaiMasci> ;
@@ -1727,88 +1733,88 @@
         <http://ceur-ws.org/Vol-833/#paper89> ;
     ns3:name "Yu Lin" .
 
-<http://ceur-ws.org/Vol-833/#paper1> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-833/> ;
-    ns6:title "Where GO is Going and What it Means for Ontology Extension" ;
-    ns5:section <http://ceur-ws.org/Vol-833/#ICBOPresentations> ;
-    ns4:author <http://ceur-ws.org/Vol-833/#CatiaiPesquita>,
+<http://ceur-ws.org/Vol-833/#paper1> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-833/> ;
+    ns5:title "Where GO is Going and What it Means for Ontology Extension" ;
+    ns4:section <http://ceur-ws.org/Vol-833/#ICBOPresentations> ;
+    ns1:author <http://ceur-ws.org/Vol-833/#CatiaiPesquita>,
         <http://ceur-ws.org/Vol-833/#FranciscoiM.iCouto> .
 
-<http://ceur-ws.org/Vol-833/#paper16> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-833/> ;
-    ns6:title "Generic Semantic Relatedness Measure for Biomedical Ontologies" ;
-    ns5:section <http://ceur-ws.org/Vol-833/#ICBOPresentations> ;
-    ns4:author <http://ceur-ws.org/Vol-833/#FranciscoiM.iCouto>,
+<http://ceur-ws.org/Vol-833/#paper16> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-833/> ;
+    ns5:title "Generic Semantic Relatedness Measure for Biomedical Ontologies" ;
+    ns4:section <http://ceur-ws.org/Vol-833/#ICBOPresentations> ;
+    ns1:author <http://ceur-ws.org/Vol-833/#FranciscoiM.iCouto>,
         <http://ceur-ws.org/Vol-833/#Jo%26atildeoiD.iFerreira> .
 
-<http://ceur-ws.org/Vol-833/#paper19> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-833/> ;
-    ns6:title "The HL7 Approach to Semantic Interoperability" ;
-    ns5:section <http://ceur-ws.org/Vol-833/#ICBOPresentations> ;
-    ns4:author <http://ceur-ws.org/Vol-833/#BarryiSmith>,
+<http://ceur-ws.org/Vol-833/#paper19> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-833/> ;
+    ns5:title "The HL7 Approach to Semantic Interoperability" ;
+    ns4:section <http://ceur-ws.org/Vol-833/#ICBOPresentations> ;
+    ns1:author <http://ceur-ws.org/Vol-833/#BarryiSmith>,
         <http://ceur-ws.org/Vol-833/#JobstiLandgrebe> .
 
-<http://ceur-ws.org/Vol-833/#paper22> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-833/> ;
-    ns6:title "The CHRONIOUS Ontology Suite: Methodology and Design Principles" ;
-    ns5:section <http://ceur-ws.org/Vol-833/#ICBOPresentations> ;
-    ns4:author <http://ceur-ws.org/Vol-833/#LuciSchneider>,
+<http://ceur-ws.org/Vol-833/#paper22> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-833/> ;
+    ns5:title "The CHRONIOUS Ontology Suite: Methodology and Design Principles" ;
+    ns4:section <http://ceur-ws.org/Vol-833/#ICBOPresentations> ;
+    ns1:author <http://ceur-ws.org/Vol-833/#LuciSchneider>,
         <http://ceur-ws.org/Vol-833/#MathiasiBrochhausen> .
 
-<http://ceur-ws.org/Vol-833/#paper23> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-833/> ;
-    ns6:title "Applying Rigidity to Standardizing OBO Foundry Candidate Ontologies" ;
-    ns5:section <http://ceur-ws.org/Vol-833/#ICBOPresentations> ;
-    ns4:author <http://ceur-ws.org/Vol-833/#PatriceiSeyed>,
+<http://ceur-ws.org/Vol-833/#paper23> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-833/> ;
+    ns5:title "Applying Rigidity to Standardizing OBO Foundry Candidate Ontologies" ;
+    ns4:section <http://ceur-ws.org/Vol-833/#ICBOPresentations> ;
+    ns1:author <http://ceur-ws.org/Vol-833/#PatriceiSeyed>,
         <http://ceur-ws.org/Vol-833/#StuartiC.iShapiro> .
 
-<http://ceur-ws.org/Vol-833/#paper34> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-833/> ;
-    ns6:title "Towards an Adverse Event Reporting Ontology" ;
-    ns5:section <http://ceur-ws.org/Vol-833/#PosterPapersAbstracts> ;
-    ns4:author <http://ceur-ws.org/Vol-833/#M%26eacutelanieiCourtot>,
+<http://ceur-ws.org/Vol-833/#paper34> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-833/> ;
+    ns5:title "Towards an Adverse Event Reporting Ontology" ;
+    ns4:section <http://ceur-ws.org/Vol-833/#PosterPapersAbstracts> ;
+    ns1:author <http://ceur-ws.org/Vol-833/#M%26eacutelanieiCourtot>,
         <http://ceur-ws.org/Vol-833/#RyaniR.iBrinkman> .
 
-<http://ceur-ws.org/Vol-833/#paper61> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-833/> ;
-    ns6:title "Adverse Events from Clinical Studies in Pharmaceutical Research and Development" ;
-    ns5:section <http://ceur-ws.org/Vol-833/#RepresentingAdverseEvents> ;
-    ns4:author <http://ceur-ws.org/Vol-833/#KerstiniForsberg>,
+<http://ceur-ws.org/Vol-833/#paper61> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-833/> ;
+    ns5:title "Adverse Events from Clinical Studies in Pharmaceutical Research and Development" ;
+    ns4:section <http://ceur-ws.org/Vol-833/#RepresentingAdverseEvents> ;
+    ns1:author <http://ceur-ws.org/Vol-833/#KerstiniForsberg>,
         <http://ceur-ws.org/Vol-833/#PiaiEmilsson> .
 
-<http://ceur-ws.org/Vol-833/#paper62> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-833/> ;
-    ns6:title "Classifying Adverse Events from Clinical Trials" ;
-    ns5:section <http://ceur-ws.org/Vol-833/#RepresentingAdverseEvents> ;
-    ns4:author <http://ceur-ws.org/Vol-833/#BernardiLaSalle>,
+<http://ceur-ws.org/Vol-833/#paper62> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-833/> ;
+    ns5:title "Classifying Adverse Events from Clinical Trials" ;
+    ns4:section <http://ceur-ws.org/Vol-833/#RepresentingAdverseEvents> ;
+    ns1:author <http://ceur-ws.org/Vol-833/#BernardiLaSalle>,
         <http://ceur-ws.org/Vol-833/#RichardiBradshaw> .
 
-<http://ceur-ws.org/Vol-833/#paper77> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-833/> ;
-    ns6:title "Mouse Anatomy Ontologies and GXD" ;
-    ns5:section <http://ceur-ws.org/Vol-833/#FacilitatingAnatomyOntologyInteroperability> ;
-    ns4:author <http://ceur-ws.org/Vol-833/#MartiniRingwald>,
+<http://ceur-ws.org/Vol-833/#paper77> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-833/> ;
+    ns5:title "Mouse Anatomy Ontologies and GXD" ;
+    ns4:section <http://ceur-ws.org/Vol-833/#FacilitatingAnatomyOntologyInteroperability> ;
+    ns1:author <http://ceur-ws.org/Vol-833/#MartiniRingwald>,
         <http://ceur-ws.org/Vol-833/#TerryiF.iHayamizu> .
 
-<http://ceur-ws.org/Vol-833/#paper84> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-833/> ;
-    ns6:title "Ontologies in the Fish Tank: Using the Zebrafish Anatomy Ontology with Other OBO Ontologies to Annotate Expression and Phenotype" ;
-    ns5:section <http://ceur-ws.org/Vol-833/#FacilitatingAnatomyOntologyInteroperability> ;
-    ns4:author <http://ceur-ws.org/Vol-833/#CeriiVaniSlyke>,
+<http://ceur-ws.org/Vol-833/#paper84> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-833/> ;
+    ns5:title "Ontologies in the Fish Tank: Using the Zebrafish Anatomy Ontology with Other OBO Ontologies to Annotate Expression and Phenotype" ;
+    ns4:section <http://ceur-ws.org/Vol-833/#FacilitatingAnatomyOntologyInteroperability> ;
+    ns1:author <http://ceur-ws.org/Vol-833/#CeriiVaniSlyke>,
         <http://ceur-ws.org/Vol-833/#YvonneiBradford> .
 
-<http://ceur-ws.org/Vol-833/#paper91> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-833/> ;
-    ns6:title "Epistemological Issues in Information Organization Instruments: Ontologies and Health Information Models" ;
-    ns5:section <http://ceur-ws.org/Vol-833/#DoctoralandPostDoctoralConsortium> ;
-    ns4:author <http://ceur-ws.org/Vol-833/#Andr%C3%A9iQueiroziAndrade>,
+<http://ceur-ws.org/Vol-833/#paper91> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-833/> ;
+    ns5:title "Epistemological Issues in Information Organization Instruments: Ontologies and Health Information Models" ;
+    ns4:section <http://ceur-ws.org/Vol-833/#DoctoralandPostDoctoralConsortium> ;
+    ns1:author <http://ceur-ws.org/Vol-833/#Andr%C3%A9iQueiroziAndrade>,
         <http://ceur-ws.org/Vol-833/#MauricioiBarcellosiAlmeida> .
 
-<http://ceur-ws.org/Vol-833/#paper94> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-833/> ;
-    ns6:title "Applications for a Translational Biomedical Ontology Model" ;
-    ns5:section <http://ceur-ws.org/Vol-833/#DoctoralandPostDoctoralConsortium> ;
-    ns4:author <http://ceur-ws.org/Vol-833/#GracielaiGonzalez>,
+<http://ceur-ws.org/Vol-833/#paper94> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-833/> ;
+    ns5:title "Applications for a Translational Biomedical Ontology Model" ;
+    ns4:section <http://ceur-ws.org/Vol-833/#DoctoralandPostDoctoralConsortium> ;
+    ns1:author <http://ceur-ws.org/Vol-833/#GracielaiGonzalez>,
         <http://ceur-ws.org/Vol-833/#RobertiYao> .
 
 <http://ceur-ws.org/Vol-833/#ChristopheriG.iChute> a ns3:Person ;
@@ -1836,138 +1842,138 @@
     ns3:name "Mark Musen" .
 
 <http://ceur-ws.org/Vol-833/#MaryanniE.iMartone> a ns3:Person ;
-    ns4:affiliation "" ;
+    ns1:affiliation "" ;
     ns2:sameAs <http://ceur-ws.org/persons/MaryanniE.iMartone> ;
     ns3:made <http://ceur-ws.org/Vol-833/#paper43>,
         <http://ceur-ws.org/Vol-833/#paper67>,
         <http://ceur-ws.org/Vol-833/#paperX1> ;
     ns3:name "Maryann E. Martone" .
 
-<http://ceur-ws.org/Vol-833/#paper12> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-833/> ;
-    ns6:title "Annotating Experimental Records Using Ontologies" ;
-    ns5:section <http://ceur-ws.org/Vol-833/#ICBOPresentations> ;
-    ns4:author <http://ceur-ws.org/Vol-833/#AlexanderiGarciaiCastro>,
+<http://ceur-ws.org/Vol-833/#paper12> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-833/> ;
+    ns5:title "Annotating Experimental Records Using Ontologies" ;
+    ns4:section <http://ceur-ws.org/Vol-833/#ICBOPresentations> ;
+    ns1:author <http://ceur-ws.org/Vol-833/#AlexanderiGarciaiCastro>,
         <http://ceur-ws.org/Vol-833/#JaeliGarc%26iacutea>,
         <http://ceur-ws.org/Vol-833/#OlgaiGiraldo> .
 
-<http://ceur-ws.org/Vol-833/#paper13> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-833/> ;
-    ns6:title "Ontology Driven Data Collection for EuPathDB" ;
-    ns5:section <http://ceur-ws.org/Vol-833/#ICBOPresentations> ;
-    ns4:author <http://ceur-ws.org/Vol-833/#ChristianiJ.iStoeckertiJr.>,
+<http://ceur-ws.org/Vol-833/#paper13> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-833/> ;
+    ns5:title "Ontology Driven Data Collection for EuPathDB" ;
+    ns4:section <http://ceur-ws.org/Vol-833/#ICBOPresentations> ;
+    ns1:author <http://ceur-ws.org/Vol-833/#ChristianiJ.iStoeckertiJr.>,
         <http://ceur-ws.org/Vol-833/#JieiZheng>,
         <http://ceur-ws.org/Vol-833/#OmariS.iHarb> .
 
-<http://ceur-ws.org/Vol-833/#paper2> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-833/> ;
-    ns6:title "Revising the Cell Ontology" ;
-    ns5:section <http://ceur-ws.org/Vol-833/#ICBOPresentations> ;
-    ns4:author <http://ceur-ws.org/Vol-833/#AlexanderiD.iDiehl>,
+<http://ceur-ws.org/Vol-833/#paper2> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-833/> ;
+    ns5:title "Revising the Cell Ontology" ;
+    ns4:section <http://ceur-ws.org/Vol-833/#ICBOPresentations> ;
+    ns1:author <http://ceur-ws.org/Vol-833/#AlexanderiD.iDiehl>,
         <http://ceur-ws.org/Vol-833/#ChrisiJ.iMungall>,
         <http://ceur-ws.org/Vol-833/#TerrenceiF.iMeehan> .
 
-<http://ceur-ws.org/Vol-833/#paper20> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-833/> ;
-    ns6:title "Representing the Reality Underlying Demographic Data" ;
-    ns5:section <http://ceur-ws.org/Vol-833/#ICBOPresentations> ;
-    ns4:author <http://ceur-ws.org/Vol-833/#ShariqiA.iTariq>,
+<http://ceur-ws.org/Vol-833/#paper20> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-833/> ;
+    ns5:title "Representing the Reality Underlying Demographic Data" ;
+    ns4:section <http://ceur-ws.org/Vol-833/#ICBOPresentations> ;
+    ns1:author <http://ceur-ws.org/Vol-833/#ShariqiA.iTariq>,
         <http://ceur-ws.org/Vol-833/#SwethaiGarimalla>,
         <http://ceur-ws.org/Vol-833/#WilliamiR.iHogan> .
 
-<http://ceur-ws.org/Vol-833/#paper21> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-833/> ;
-    ns6:title "Information Models and Ontologies for Representing the Electronic Health Record" ;
-    ns5:section <http://ceur-ws.org/Vol-833/#ICBOPresentations> ;
-    ns4:author <http://ceur-ws.org/Vol-833/#DanieliKarlsson>,
+<http://ceur-ws.org/Vol-833/#paper21> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-833/> ;
+    ns5:title "Information Models and Ontologies for Representing the Electronic Health Record" ;
+    ns4:section <http://ceur-ws.org/Vol-833/#ICBOPresentations> ;
+    ns1:author <http://ceur-ws.org/Vol-833/#DanieliKarlsson>,
         <http://ceur-ws.org/Vol-833/#MartiniBerzell>,
         <http://ceur-ws.org/Vol-833/#StefaniSchulz> .
 
-<http://ceur-ws.org/Vol-833/#paper24> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-833/> ;
-    ns6:title "Higgs Bosons, Mars Missions, and Unicorn Delusions: How to Deal with Terms of Dubious Reference in Scientific Ontologies" ;
-    ns5:section <http://ceur-ws.org/Vol-833/#ICBOPresentations> ;
-    ns4:author <http://ceur-ws.org/Vol-833/#MathiasiBrochhausen>,
+<http://ceur-ws.org/Vol-833/#paper24> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-833/> ;
+    ns5:title "Higgs Bosons, Mars Missions, and Unicorn Delusions: How to Deal with Terms of Dubious Reference in Scientific Ontologies" ;
+    ns4:section <http://ceur-ws.org/Vol-833/#ICBOPresentations> ;
+    ns1:author <http://ceur-ws.org/Vol-833/#MathiasiBrochhausen>,
         <http://ceur-ws.org/Vol-833/#RobertiHoehndorf>,
         <http://ceur-ws.org/Vol-833/#StefaniSchulz> .
 
-<http://ceur-ws.org/Vol-833/#paper25> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-833/> ;
-    ns6:title "Towards an Ontology for Conceptual Modeling" ;
-    ns5:section <http://ceur-ws.org/Vol-833/#ICBOPresentations> ;
-    ns4:author <http://ceur-ws.org/Vol-833/#DeborahiL.iMcGuinness>,
+<http://ceur-ws.org/Vol-833/#paper25> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-833/> ;
+    ns5:title "Towards an Ontology for Conceptual Modeling" ;
+    ns4:section <http://ceur-ws.org/Vol-833/#ICBOPresentations> ;
+    ns1:author <http://ceur-ws.org/Vol-833/#DeborahiL.iMcGuinness>,
         <http://ceur-ws.org/Vol-833/#JamesiP.iMcCusker>,
         <http://ceur-ws.org/Vol-833/#JoanneiLuciano> .
 
-<http://ceur-ws.org/Vol-833/#paper5> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-833/> ;
-    ns6:title "Towards a Semantic Web Application: Ontology-Driven Ortholog Clustering Analysis" ;
-    ns5:section <http://ceur-ws.org/Vol-833/#ICBOPresentations> ;
-    ns4:author <http://ceur-ws.org/Vol-833/#YongquniHe>,
+<http://ceur-ws.org/Vol-833/#paper5> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-833/> ;
+    ns5:title "Towards a Semantic Web Application: Ontology-Driven Ortholog Clustering Analysis" ;
+    ns4:section <http://ceur-ws.org/Vol-833/#ICBOPresentations> ;
+    ns1:author <http://ceur-ws.org/Vol-833/#YongquniHe>,
         <http://ceur-ws.org/Vol-833/#YuiLin>,
         <http://ceur-ws.org/Vol-833/#ZuoshuangiXiang> .
 
-<http://ceur-ws.org/Vol-833/#paper58> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-833/> ;
-    ns6:title "OntoFox and its Application in Development of Brucellosis Ontology" ;
-    ns5:section <http://ceur-ws.org/Vol-833/#SoftwareDemonstrations> ;
-    ns4:author <http://ceur-ws.org/Vol-833/#YongquniHe>,
+<http://ceur-ws.org/Vol-833/#paper58> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-833/> ;
+    ns5:title "OntoFox and its Application in Development of Brucellosis Ontology" ;
+    ns4:section <http://ceur-ws.org/Vol-833/#SoftwareDemonstrations> ;
+    ns1:author <http://ceur-ws.org/Vol-833/#YongquniHe>,
         <http://ceur-ws.org/Vol-833/#YuiLin>,
         <http://ceur-ws.org/Vol-833/#ZuoshuangiXiang> .
 
-<http://ceur-ws.org/Vol-833/#paper60> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-833/> ;
-    ns6:title "Reporting Adverse Events: Basis for a Common Representation" ;
-    ns5:section <http://ceur-ws.org/Vol-833/#RepresentingAdverseEvents> ;
-    ns4:author <http://ceur-ws.org/Vol-833/#AlaniRuttenberg>,
+<http://ceur-ws.org/Vol-833/#paper60> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-833/> ;
+    ns5:title "Reporting Adverse Events: Basis for a Common Representation" ;
+    ns4:section <http://ceur-ws.org/Vol-833/#RepresentingAdverseEvents> ;
+    ns1:author <http://ceur-ws.org/Vol-833/#AlaniRuttenberg>,
         <http://ceur-ws.org/Vol-833/#M%26eacutelanieiCourtot>,
         <http://ceur-ws.org/Vol-833/#RyaniR.iBrinkman> .
 
-<http://ceur-ws.org/Vol-833/#paper66> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-833/> ;
-    ns6:title "Using Failure Modes, Mechanisms, and Effects Analysis in Medical Device Adverse Event Investigations" ;
-    ns5:section <http://ceur-ws.org/Vol-833/#RepresentingAdverseEvents> ;
-    ns4:author <http://ceur-ws.org/Vol-833/#DigantaiDas>,
+<http://ceur-ws.org/Vol-833/#paper66> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-833/> ;
+    ns5:title "Using Failure Modes, Mechanisms, and Effects Analysis in Medical Device Adverse Event Investigations" ;
+    ns4:section <http://ceur-ws.org/Vol-833/#RepresentingAdverseEvents> ;
+    ns1:author <http://ceur-ws.org/Vol-833/#DigantaiDas>,
         <http://ceur-ws.org/Vol-833/#MichaeliPecht>,
         <http://ceur-ws.org/Vol-833/#ShunfengiCheng> .
 
-<http://ceur-ws.org/Vol-833/#paper8> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-833/> ;
-    ns6:title "Ontology-Based Analysis of Event-Related Potentials" ;
-    ns5:section <http://ceur-ws.org/Vol-833/#ICBOPresentations> ;
-    ns4:author <http://ceur-ws.org/Vol-833/#GweniFrishkoff>,
+<http://ceur-ws.org/Vol-833/#paper8> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-833/> ;
+    ns5:title "Ontology-Based Analysis of Event-Related Potentials" ;
+    ns4:section <http://ceur-ws.org/Vol-833/#ICBOPresentations> ;
+    ns1:author <http://ceur-ws.org/Vol-833/#GweniFrishkoff>,
         <http://ceur-ws.org/Vol-833/#PaeaiLePendu>,
         <http://ceur-ws.org/Vol-833/#RobertiFrank> .
 
-<http://ceur-ws.org/Vol-833/#paper82> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-833/> ;
-    ns6:title "Integrating Anatomy and Phenotype Ontologies with Taxonomic Hierarchies" ;
-    ns5:section <http://ceur-ws.org/Vol-833/#FacilitatingAnatomyOntologyInteroperability> ;
-    ns4:author <http://ceur-ws.org/Vol-833/#HilmariLapp>,
+<http://ceur-ws.org/Vol-833/#paper82> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-833/> ;
+    ns5:title "Integrating Anatomy and Phenotype Ontologies with Taxonomic Hierarchies" ;
+    ns4:section <http://ceur-ws.org/Vol-833/#FacilitatingAnatomyOntologyInteroperability> ;
+    ns1:author <http://ceur-ws.org/Vol-833/#HilmariLapp>,
         <http://ceur-ws.org/Vol-833/#JamesiP.iBalhoff>,
         <http://ceur-ws.org/Vol-833/#PeteriMidford> .
 
-<http://ceur-ws.org/Vol-833/#paper86> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-833/> ;
-    ns6:title "The Age of Data-Driven Medicine: Mining the Electronic Health Record" ;
-    ns5:section <http://ceur-ws.org/Vol-833/#DoctoralandPostDoctoralConsortium> ;
-    ns4:author <http://ceur-ws.org/Vol-833/#MarkiMusen>,
+<http://ceur-ws.org/Vol-833/#paper86> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-833/> ;
+    ns5:title "The Age of Data-Driven Medicine: Mining the Electronic Health Record" ;
+    ns4:section <http://ceur-ws.org/Vol-833/#DoctoralandPostDoctoralConsortium> ;
+    ns1:author <http://ceur-ws.org/Vol-833/#MarkiMusen>,
         <http://ceur-ws.org/Vol-833/#NigamiH.iShah>,
         <http://ceur-ws.org/Vol-833/#PaeaiLePendu> .
 
-<http://ceur-ws.org/Vol-833/#paper92> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-833/> ;
-    ns6:title "The Foundational Model of Neuroanatomy Ontology: An Ontology Framework to Support Neuroanatomical Data Integration" ;
-    ns5:section <http://ceur-ws.org/Vol-833/#DoctoralandPostDoctoralConsortium> ;
-    ns4:author <http://ceur-ws.org/Vol-833/#B.iNolaniNichols>,
+<http://ceur-ws.org/Vol-833/#paper92> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-833/> ;
+    ns5:title "The Foundational Model of Neuroanatomy Ontology: An Ontology Framework to Support Neuroanatomical Data Integration" ;
+    ns4:section <http://ceur-ws.org/Vol-833/#DoctoralandPostDoctoralConsortium> ;
+    ns1:author <http://ceur-ws.org/Vol-833/#B.iNolaniNichols>,
         <http://ceur-ws.org/Vol-833/#JamesiF.iBrinkley>,
         <http://ceur-ws.org/Vol-833/#JoseiL.V.iMejinoiJr.> .
 
-<http://ceur-ws.org/Vol-833/#paper93> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-833/> ;
-    ns6:title "Workflows and Framework for Nutritional/Metabolic Phenotype/Genotype and Foods-for-Health Knowledge Integration" ;
-    ns5:section <http://ceur-ws.org/Vol-833/#DoctoralandPostDoctoralConsortium> ;
-    ns4:author <http://ceur-ws.org/Vol-833/#J.iBruceiGerman>,
+<http://ceur-ws.org/Vol-833/#paper93> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-833/> ;
+    ns5:title "Workflows and Framework for Nutritional/Metabolic Phenotype/Genotype and Foods-for-Health Knowledge Integration" ;
+    ns4:section <http://ceur-ws.org/Vol-833/#DoctoralandPostDoctoralConsortium> ;
+    ns1:author <http://ceur-ws.org/Vol-833/#J.iBruceiGerman>,
         <http://ceur-ws.org/Vol-833/#JimiKaput>,
         <http://ceur-ws.org/Vol-833/#MatthewiLange> .
 
@@ -2025,164 +2031,164 @@
         <http://ceur-ws.org/Vol-833/#paper59> ;
     ns3:name "Zuoshuang Xiang" .
 
-<http://ceur-ws.org/Vol-833/#paper10> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-833/> ;
-    ns6:title "Dispositions and Processes in the Emotion Ontology" ;
-    ns5:section <http://ceur-ws.org/Vol-833/#ICBOPresentations> ;
-    ns4:author <http://ceur-ws.org/Vol-833/#BarryiSmith>,
+<http://ceur-ws.org/Vol-833/#paper10> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-833/> ;
+    ns5:title "Dispositions and Processes in the Emotion Ontology" ;
+    ns4:section <http://ceur-ws.org/Vol-833/#ICBOPresentations> ;
+    ns1:author <http://ceur-ws.org/Vol-833/#BarryiSmith>,
         <http://ceur-ws.org/Vol-833/#JannaiHastings>,
         <http://ceur-ws.org/Vol-833/#KeviniMulligan>,
         <http://ceur-ws.org/Vol-833/#WerneriCeusters> .
 
-<http://ceur-ws.org/Vol-833/#paper15> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-833/> ;
-    ns6:title "Mapping Composition for Matching Large Life Science Ontologies" ;
-    ns5:section <http://ceur-ws.org/Vol-833/#ICBOPresentations> ;
-    ns4:author <http://ceur-ws.org/Vol-833/#AnikaiGross>,
+<http://ceur-ws.org/Vol-833/#paper15> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-833/> ;
+    ns5:title "Mapping Composition for Matching Large Life Science Ontologies" ;
+    ns4:section <http://ceur-ws.org/Vol-833/#ICBOPresentations> ;
+    ns1:author <http://ceur-ws.org/Vol-833/#AnikaiGross>,
         <http://ceur-ws.org/Vol-833/#ErhardiRahm>,
         <http://ceur-ws.org/Vol-833/#MichaeliHartung>,
         <http://ceur-ws.org/Vol-833/#ToralfiKirsten> .
 
-<http://ceur-ws.org/Vol-833/#paper26> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-833/> ;
-    ns6:title "What's in an &#8216is about’ Link? Chemical Diagrams and the Information Artifact Ontology" ;
-    ns5:section <http://ceur-ws.org/Vol-833/#ICBOPresentations> ;
-    ns4:author <http://ceur-ws.org/Vol-833/#ChristophiSteinbeck>,
+<http://ceur-ws.org/Vol-833/#paper26> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-833/> ;
+    ns5:title "What's in an &#8216is about’ Link? Chemical Diagrams and the Information Artifact Ontology" ;
+    ns4:section <http://ceur-ws.org/Vol-833/#ICBOPresentations> ;
+    ns1:author <http://ceur-ws.org/Vol-833/#ChristophiSteinbeck>,
         <http://ceur-ws.org/Vol-833/#ColiniBatchelor>,
         <http://ceur-ws.org/Vol-833/#FabianiNeuhaus>,
         <http://ceur-ws.org/Vol-833/#JannaiHastings> .
 
-<http://ceur-ws.org/Vol-833/#paper29> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-833/> ;
-    ns6:title "The Blood Ontology: An Ontology in the Domain of Hematology" ;
-    ns5:section <http://ceur-ws.org/Vol-833/#PosterPapersAbstracts> ;
-    ns4:author <http://ceur-ws.org/Vol-833/#AnnaiBarbaraideiFreitasiCarneiroiProietti>,
+<http://ceur-ws.org/Vol-833/#paper29> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-833/> ;
+    ns5:title "The Blood Ontology: An Ontology in the Domain of Hematology" ;
+    ns4:section <http://ceur-ws.org/Vol-833/#PosterPapersAbstracts> ;
+    ns1:author <http://ceur-ws.org/Vol-833/#AnnaiBarbaraideiFreitasiCarneiroiProietti>,
         <http://ceur-ws.org/Vol-833/#BarryiSmith>,
         <http://ceur-ws.org/Vol-833/#JiyeiAi>,
         <http://ceur-ws.org/Vol-833/#MauricioiBarcellosiAlmeida> .
 
-<http://ceur-ws.org/Vol-833/#paper3> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-833/> ;
-    ns6:title "Rapid Development of an Ontology of Coriell Cell Lines" ;
-    ns5:section <http://ceur-ws.org/Vol-833/#ICBOPresentations> ;
-    ns4:author <http://ceur-ws.org/Vol-833/#ChaoiPang>,
+<http://ceur-ws.org/Vol-833/#paper3> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-833/> ;
+    ns5:title "Rapid Development of an Ontology of Coriell Cell Lines" ;
+    ns4:section <http://ceur-ws.org/Vol-833/#ICBOPresentations> ;
+    ns1:author <http://ceur-ws.org/Vol-833/#ChaoiPang>,
         <http://ceur-ws.org/Vol-833/#HeleniParkinson>,
         <http://ceur-ws.org/Vol-833/#JamesiMalone>,
         <http://ceur-ws.org/Vol-833/#TomasziAdamusiak> .
 
-<http://ceur-ws.org/Vol-833/#paper39> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-833/> ;
-    ns6:title "Representing Local Identifiers in a Referent-Tracking System" ;
-    ns5:section <http://ceur-ws.org/Vol-833/#PosterPapersAbstracts> ;
-    ns4:author <http://ceur-ws.org/Vol-833/#ShariqiA.iTariq>,
+<http://ceur-ws.org/Vol-833/#paper39> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-833/> ;
+    ns5:title "Representing Local Identifiers in a Referent-Tracking System" ;
+    ns4:section <http://ceur-ws.org/Vol-833/#PosterPapersAbstracts> ;
+    ns1:author <http://ceur-ws.org/Vol-833/#ShariqiA.iTariq>,
         <http://ceur-ws.org/Vol-833/#SwethaiGarimalla>,
         <http://ceur-ws.org/Vol-833/#WerneriCeusters>,
         <http://ceur-ws.org/Vol-833/#WilliamiR.iHogan> .
 
-<http://ceur-ws.org/Vol-833/#paper40> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-833/> ;
-    ns6:title "owl_cpp" ;
-    ns5:section <http://ceur-ws.org/Vol-833/#PosterPapersAbstracts> ;
-    ns4:author <http://ceur-ws.org/Vol-833/#AlaniRuttenberg>,
+<http://ceur-ws.org/Vol-833/#paper40> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-833/> ;
+    ns5:title "owl_cpp" ;
+    ns4:section <http://ceur-ws.org/Vol-833/#PosterPapersAbstracts> ;
+    ns1:author <http://ceur-ws.org/Vol-833/#AlaniRuttenberg>,
         <http://ceur-ws.org/Vol-833/#AnnaiMariaiMasci>,
         <http://ceur-ws.org/Vol-833/#LindsayiCowell>,
         <http://ceur-ws.org/Vol-833/#MikhailiLevin> .
 
-<http://ceur-ws.org/Vol-833/#paper41> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-833/> ;
-    ns6:title "Gene Ontology Signatures for Immune Cell-Types Inferred by Gene Expression Analysis" ;
-    ns5:section <http://ceur-ws.org/Vol-833/#PosterPapersAbstracts> ;
-    ns4:author <http://ceur-ws.org/Vol-833/#AlexanderiD.iDiehl>,
+<http://ceur-ws.org/Vol-833/#paper41> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-833/> ;
+    ns5:title "Gene Ontology Signatures for Immune Cell-Types Inferred by Gene Expression Analysis" ;
+    ns4:section <http://ceur-ws.org/Vol-833/#PosterPapersAbstracts> ;
+    ns1:author <http://ceur-ws.org/Vol-833/#AlexanderiD.iDiehl>,
         <http://ceur-ws.org/Vol-833/#ChrisiJ.iMungall>,
         <http://ceur-ws.org/Vol-833/#JudithiA.iBlake>,
         <http://ceur-ws.org/Vol-833/#TerrenceiF.iMeehan> .
 
-<http://ceur-ws.org/Vol-833/#paper46> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-833/> ;
-    ns6:title "Modeling Issues and Solutions: Building a Taxonomy from a Biology Textbook" ;
-    ns5:section <http://ceur-ws.org/Vol-833/#PosterPapersAbstracts> ;
-    ns4:author <http://ceur-ws.org/Vol-833/#AndrewiGoldenkranz>,
+<http://ceur-ws.org/Vol-833/#paper46> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-833/> ;
+    ns5:title "Modeling Issues and Solutions: Building a Taxonomy from a Biology Textbook" ;
+    ns4:section <http://ceur-ws.org/Vol-833/#PosterPapersAbstracts> ;
+    ns1:author <http://ceur-ws.org/Vol-833/#AndrewiGoldenkranz>,
         <http://ceur-ws.org/Vol-833/#JohniPacheco>,
         <http://ceur-ws.org/Vol-833/#PatriceiSeyed>,
         <http://ceur-ws.org/Vol-833/#VinayiChaudhri> .
 
-<http://ceur-ws.org/Vol-833/#paper48> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-833/> ;
-    ns6:title "Ontobee: A Linked Data Server and Browser for Ontology Terms" ;
-    ns5:section <http://ceur-ws.org/Vol-833/#PosterPapersAbstracts> ;
-    ns4:author <http://ceur-ws.org/Vol-833/#AlaniRuttenberg>,
+<http://ceur-ws.org/Vol-833/#paper48> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-833/> ;
+    ns5:title "Ontobee: A Linked Data Server and Browser for Ontology Terms" ;
+    ns4:section <http://ceur-ws.org/Vol-833/#PosterPapersAbstracts> ;
+    ns1:author <http://ceur-ws.org/Vol-833/#AlaniRuttenberg>,
         <http://ceur-ws.org/Vol-833/#ChrisiJ.iMungall>,
         <http://ceur-ws.org/Vol-833/#YongquniHe>,
         <http://ceur-ws.org/Vol-833/#ZuoshuangiXiang> .
 
-<http://ceur-ws.org/Vol-833/#paper63> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-833/> ;
-    ns6:title "An Ontological Representation of Adverse Drug Events" ;
-    ns5:section <http://ceur-ws.org/Vol-833/#RepresentingAdverseEvents> ;
-    ns4:author <http://ceur-ws.org/Vol-833/#ChristopheriG.iChute>,
+<http://ceur-ws.org/Vol-833/#paper63> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-833/> ;
+    ns5:title "An Ontological Representation of Adverse Drug Events" ;
+    ns4:section <http://ceur-ws.org/Vol-833/#RepresentingAdverseEvents> ;
+    ns1:author <http://ceur-ws.org/Vol-833/#ChristopheriG.iChute>,
         <http://ceur-ws.org/Vol-833/#GuoqianiJiang>,
         <http://ceur-ws.org/Vol-833/#JoniD.iDuke>,
         <http://ceur-ws.org/Vol-833/#JyotishmaniPathak> .
 
-<http://ceur-ws.org/Vol-833/#paper65> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-833/> ;
-    ns6:title "Supporting Medical Device Adverse Event Analysis in an Interoperable Clinical Environment: Design of a Data Logging and Playback System" ;
-    ns5:section <http://ceur-ws.org/Vol-833/#RepresentingAdverseEvents> ;
-    ns4:author <http://ceur-ws.org/Vol-833/#DavidiArney>,
+<http://ceur-ws.org/Vol-833/#paper65> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-833/> ;
+    ns5:title "Supporting Medical Device Adverse Event Analysis in an Interoperable Clinical Environment: Design of a Data Logging and Playback System" ;
+    ns4:section <http://ceur-ws.org/Vol-833/#RepresentingAdverseEvents> ;
+    ns1:author <http://ceur-ws.org/Vol-833/#DavidiArney>,
         <http://ceur-ws.org/Vol-833/#JulianiM.iGoldman>,
         <http://ceur-ws.org/Vol-833/#SandyiWeininger>,
         <http://ceur-ws.org/Vol-833/#USA> .
 
-<http://ceur-ws.org/Vol-833/#paper69> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-833/> ;
-    ns6:title "A Meta-Data Approach to Querying Multiple Biomedical Ontologies" ;
-    ns5:section <http://ceur-ws.org/Vol-833/#WorkingwithMultipleBiomedicalOntologies> ;
-    ns4:author <http://ceur-ws.org/Vol-833/#DaniTecuci>,
+<http://ceur-ws.org/Vol-833/#paper69> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-833/> ;
+    ns5:title "A Meta-Data Approach to Querying Multiple Biomedical Ontologies" ;
+    ns4:section <http://ceur-ws.org/Vol-833/#WorkingwithMultipleBiomedicalOntologies> ;
+    ns1:author <http://ceur-ws.org/Vol-833/#DaniTecuci>,
         <http://ceur-ws.org/Vol-833/#MathaeusiDejori>,
         <http://ceur-ws.org/Vol-833/#RaviiPalla>,
         <http://ceur-ws.org/Vol-833/#VinayiShet> .
 
-<http://ceur-ws.org/Vol-833/#paper7> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-833/> ;
-    ns6:title "Composite Annotation for Heart Development" ;
-    ns5:section <http://ceur-ws.org/Vol-833/#ICBOPresentations> ;
-    ns4:author <http://ceur-ws.org/Vol-833/#Jean-MarciSchleich>,
+<http://ceur-ws.org/Vol-833/#paper7> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-833/> ;
+    ns5:title "Composite Annotation for Heart Development" ;
+    ns4:section <http://ceur-ws.org/Vol-833/#ICBOPresentations> ;
+    ns1:author <http://ceur-ws.org/Vol-833/#Jean-MarciSchleich>,
         <http://ceur-ws.org/Vol-833/#RoniSummers>,
         <http://ceur-ws.org/Vol-833/#RyaniImms>,
         <http://ceur-ws.org/Vol-833/#TariqiAbdulla> .
 
-<http://ceur-ws.org/Vol-833/#paper72> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-833/> ;
-    ns6:title "Building the OBO Foundry - One Policy at a Time" ;
-    ns5:section <http://ceur-ws.org/Vol-833/#WorkingwithMultipleBiomedicalOntologies> ;
-    ns4:author <http://ceur-ws.org/Vol-833/#AlaniRuttenberg>,
+<http://ceur-ws.org/Vol-833/#paper72> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-833/> ;
+    ns5:title "Building the OBO Foundry - One Policy at a Time" ;
+    ns4:section <http://ceur-ws.org/Vol-833/#WorkingwithMultipleBiomedicalOntologies> ;
+    ns1:author <http://ceur-ws.org/Vol-833/#AlaniRuttenberg>,
         <http://ceur-ws.org/Vol-833/#ChrisiJ.iMungall>,
         <http://ceur-ws.org/Vol-833/#M%26eacutelanieiCourtot>,
         <http://ceur-ws.org/Vol-833/#RyaniR.iBrinkman> .
 
-<http://ceur-ws.org/Vol-833/#paper74> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-833/> ;
-    ns6:title "Connecting Ontologies for the Representation of Biological Pathways" ;
-    ns5:section <http://ceur-ws.org/Vol-833/#WorkingwithMultipleBiomedicalOntologies> ;
-    ns4:author <http://ceur-ws.org/Vol-833/#AlaniRuttenberg>,
+<http://ceur-ws.org/Vol-833/#paper74> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-833/> ;
+    ns5:title "Connecting Ontologies for the Representation of Biological Pathways" ;
+    ns4:section <http://ceur-ws.org/Vol-833/#WorkingwithMultipleBiomedicalOntologies> ;
+    ns1:author <http://ceur-ws.org/Vol-833/#AlaniRuttenberg>,
         <http://ceur-ws.org/Vol-833/#AnnaiMariaiMasci>,
         <http://ceur-ws.org/Vol-833/#LindsayiCowell>,
         <http://ceur-ws.org/Vol-833/#MikhailiLevin> .
 
-<http://ceur-ws.org/Vol-833/#paper87> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-833/> ;
-    ns6:title "Quality of Care Domain Modeling in Cancer: A Semantic Approach" ;
-    ns5:section <http://ceur-ws.org/Vol-833/#DoctoralandPostDoctoralConsortium> ;
-    ns4:author <http://ceur-ws.org/Vol-833/#DeaniF.iSittig>,
+<http://ceur-ws.org/Vol-833/#paper87> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-833/> ;
+    ns5:title "Quality of Care Domain Modeling in Cancer: A Semantic Approach" ;
+    ns4:section <http://ceur-ws.org/Vol-833/#DoctoralandPostDoctoralConsortium> ;
+    ns1:author <http://ceur-ws.org/Vol-833/#DeaniF.iSittig>,
         <http://ceur-ws.org/Vol-833/#KimiDunn>,
         <http://ceur-ws.org/Vol-833/#ParsaiMirhaji>,
         <http://ceur-ws.org/Vol-833/#SinaiMadani> .
 
-<http://ceur-ws.org/Vol-833/#paper90> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-833/> ;
-    ns6:title "A Case Study in Using ZFA and PATO for Describing Histological Phenotypes in the Larval Zebrafish" ;
-    ns5:section <http://ceur-ws.org/Vol-833/#DoctoralandPostDoctoralConsortium> ;
-    ns4:author <http://ceur-ws.org/Vol-833/#BrianiCanada>,
+<http://ceur-ws.org/Vol-833/#paper90> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-833/> ;
+    ns5:title "A Case Study in Using ZFA and PATO for Describing Histological Phenotypes in the Larval Zebrafish" ;
+    ns4:section <http://ceur-ws.org/Vol-833/#DoctoralandPostDoctoralConsortium> ;
+    ns1:author <http://ceur-ws.org/Vol-833/#BrianiCanada>,
         <http://ceur-ws.org/Vol-833/#GeorgiaiThomas>,
         <http://ceur-ws.org/Vol-833/#KeithiCheng>,
         <http://ceur-ws.org/Vol-833/#TimothyiCooper> .
@@ -2207,176 +2213,176 @@
         <http://ceur-ws.org/Vol-833/#paper72> ;
     ns3:name "Chris J. Mungall" .
 
-<http://ceur-ws.org/Vol-833/#paper47> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-833/> ;
-    ns6:title "Biomedical Analyses: OWL Model Based Edition" ;
-    ns5:section <http://ceur-ws.org/Vol-833/#PosterPapersAbstracts> ;
-    ns4:author <http://ceur-ws.org/Vol-833/#EriciLepage>,
+<http://ceur-ws.org/Vol-833/#paper47> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-833/> ;
+    ns5:title "Biomedical Analyses: OWL Model Based Edition" ;
+    ns4:section <http://ceur-ws.org/Vol-833/#PosterPapersAbstracts> ;
+    ns1:author <http://ceur-ws.org/Vol-833/#EriciLepage>,
         <http://ceur-ws.org/Vol-833/#FerdinandiDhombres>,
         <http://ceur-ws.org/Vol-833/#JeaniCharlet>,
         <http://ceur-ws.org/Vol-833/#Pierre-YvesiVandenbussche>,
         <http://ceur-ws.org/Vol-833/#SylvieiCormont> .
 
-<http://ceur-ws.org/Vol-833/#paper50> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-833/> ;
-    ns6:title "SHIRAZ and CABERNET: Leveraging Automation, Crowdsourcing, and Ontologies to Improve the Accuracy and Throughput of Zebrafish Histological Phenotype Annotations." ;
-    ns5:section <http://ceur-ws.org/Vol-833/#SoftwareDemonstrations> ;
-    ns4:author <http://ceur-ws.org/Vol-833/#BrianiCanada>,
+<http://ceur-ws.org/Vol-833/#paper50> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-833/> ;
+    ns5:title "SHIRAZ and CABERNET: Leveraging Automation, Crowdsourcing, and Ontologies to Improve the Accuracy and Throughput of Zebrafish Histological Phenotype Annotations." ;
+    ns4:section <http://ceur-ws.org/Vol-833/#SoftwareDemonstrations> ;
+    ns1:author <http://ceur-ws.org/Vol-833/#BrianiCanada>,
         <http://ceur-ws.org/Vol-833/#GeorgiaiThomas>,
         <http://ceur-ws.org/Vol-833/#JamesiZ.iWang>,
         <http://ceur-ws.org/Vol-833/#JohniSchleicher>,
         <http://ceur-ws.org/Vol-833/#KeithiCheng> .
 
-<http://ceur-ws.org/Vol-833/#paper51> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-833/> ;
-    ns6:title "Biomedical Ontology Matching Using the AgreementMaker System" ;
-    ns5:section <http://ceur-ws.org/Vol-833/#SoftwareDemonstrations> ;
-    ns4:author <http://ceur-ws.org/Vol-833/#CatiaiPesquita>,
+<http://ceur-ws.org/Vol-833/#paper51> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-833/> ;
+    ns5:title "Biomedical Ontology Matching Using the AgreementMaker System" ;
+    ns4:section <http://ceur-ws.org/Vol-833/#SoftwareDemonstrations> ;
+    ns1:author <http://ceur-ws.org/Vol-833/#CatiaiPesquita>,
         <http://ceur-ws.org/Vol-833/#CosminiStroe>,
         <http://ceur-ws.org/Vol-833/#FranciscoiM.iCouto>,
         <http://ceur-ws.org/Vol-833/#IsabeliF.iCruz>,
         <http://ceur-ws.org/Vol-833/#ValerieiCross> .
 
-<http://ceur-ws.org/Vol-833/#paper55> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-833/> ;
-    ns6:title "The BioPortal Import Plugin for Prot&eacutegé" ;
-    ns5:section <http://ceur-ws.org/Vol-833/#SoftwareDemonstrations> ;
-    ns4:author <http://ceur-ws.org/Vol-833/#JithuniNair>,
+<http://ceur-ws.org/Vol-833/#paper55> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-833/> ;
+    ns5:title "The BioPortal Import Plugin for Prot&eacutegé" ;
+    ns4:section <http://ceur-ws.org/Vol-833/#SoftwareDemonstrations> ;
+    ns1:author <http://ceur-ws.org/Vol-833/#JithuniNair>,
         <http://ceur-ws.org/Vol-833/#MarkiMusen>,
         <http://ceur-ws.org/Vol-833/#NatalyaiNoy>,
         <http://ceur-ws.org/Vol-833/#TaniaiTudorache>,
         <http://ceur-ws.org/Vol-833/#TrishiWhetzel> .
 
-<http://ceur-ws.org/Vol-833/#paper59> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-833/> ;
-    ns6:title "AEO: A Realism-Based Biomedical Ontology for the Representation of Adverse Events" ;
-    ns5:section <http://ceur-ws.org/Vol-833/#RepresentingAdverseEvents> ;
-    ns4:author <http://ceur-ws.org/Vol-833/#LucaiToldo>,
+<http://ceur-ws.org/Vol-833/#paper59> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-833/> ;
+    ns5:title "AEO: A Realism-Based Biomedical Ontology for the Representation of Adverse Events" ;
+    ns4:section <http://ceur-ws.org/Vol-833/#RepresentingAdverseEvents> ;
+    ns1:author <http://ceur-ws.org/Vol-833/#LucaiToldo>,
         <http://ceur-ws.org/Vol-833/#SiraratiSarntivijai>,
         <http://ceur-ws.org/Vol-833/#WerneriCeusters>,
         <http://ceur-ws.org/Vol-833/#YongquniHe>,
         <http://ceur-ws.org/Vol-833/#ZuoshuangiXiang> .
 
-<http://ceur-ws.org/Vol-833/#paper6> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-833/> ;
-    ns6:title "HeartCyc: A Cardiac Cycle Process Ontology Based in the Ontology of Physics for Biology" ;
-    ns5:section <http://ceur-ws.org/Vol-833/#ICBOPresentations> ;
-    ns4:author <http://ceur-ws.org/Vol-833/#DanieliL.iCook>,
+<http://ceur-ws.org/Vol-833/#paper6> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-833/> ;
+    ns5:title "HeartCyc: A Cardiac Cycle Process Ontology Based in the Ontology of Physics for Biology" ;
+    ns4:section <http://ceur-ws.org/Vol-833/#ICBOPresentations> ;
+    ns1:author <http://ceur-ws.org/Vol-833/#DanieliL.iCook>,
         <http://ceur-ws.org/Vol-833/#JohniH.iGennari>,
         <http://ceur-ws.org/Vol-833/#JoseiL.V.iMejinoiJr.>,
         <http://ceur-ws.org/Vol-833/#MaxwelliL.iNeal>,
         <http://ceur-ws.org/Vol-833/#MichaliGaldzicki> .
 
-<http://ceur-ws.org/Vol-833/#paper64> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-833/> ;
-    ns6:title "Toward Answering Time-Related Questions from Adverse Event Reports Using Ontology-Based Approaches" ;
-    ns5:section <http://ceur-ws.org/Vol-833/#RepresentingAdverseEvents> ;
-    ns4:author <http://ceur-ws.org/Vol-833/#ChristopheriG.iChute>,
+<http://ceur-ws.org/Vol-833/#paper64> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-833/> ;
+    ns5:title "Toward Answering Time-Related Questions from Adverse Event Reports Using Ontology-Based Approaches" ;
+    ns4:section <http://ceur-ws.org/Vol-833/#RepresentingAdverseEvents> ;
+    ns1:author <http://ceur-ws.org/Vol-833/#ChristopheriG.iChute>,
         <http://ceur-ws.org/Vol-833/#CuiiTao>,
         <http://ceur-ws.org/Vol-833/#DeepakiSharma>,
         <http://ceur-ws.org/Vol-833/#GuoqianiJiang>,
         <http://ceur-ws.org/Vol-833/#KimiClark> .
 
-<http://ceur-ws.org/Vol-833/#paper70> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-833/> ;
-    ns6:title "Multiple Ontologies in Healthcare Information Technology: Motivations and Recommendation for Ontology Mapping and Alignment" ;
-    ns5:section <http://ceur-ws.org/Vol-833/#WorkingwithMultipleBiomedicalOntologies> ;
-    ns4:author <http://ceur-ws.org/Vol-833/#ColiniPuri>,
+<http://ceur-ws.org/Vol-833/#paper70> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-833/> ;
+    ns5:title "Multiple Ontologies in Healthcare Information Technology: Motivations and Recommendation for Ontology Mapping and Alignment" ;
+    ns4:section <http://ceur-ws.org/Vol-833/#WorkingwithMultipleBiomedicalOntologies> ;
+    ns1:author <http://ceur-ws.org/Vol-833/#ColiniPuri>,
         <http://ceur-ws.org/Vol-833/#KarthikiGomadam>,
         <http://ceur-ws.org/Vol-833/#KunaliVerma>,
         <http://ceur-ws.org/Vol-833/#PeteriZ.iYeh>,
         <http://ceur-ws.org/Vol-833/#PrateekiJain> .
 
-<http://ceur-ws.org/Vol-833/#paper75> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-833/> ;
-    ns6:title "Bridging Multiple Ontologies: Representation of the Liver Immune Response" ;
-    ns5:section <http://ceur-ws.org/Vol-833/#WorkingwithMultipleBiomedicalOntologies> ;
-    ns4:author <http://ceur-ws.org/Vol-833/#AnnaiMariaiMasci>,
+<http://ceur-ws.org/Vol-833/#paper75> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-833/> ;
+    ns5:title "Bridging Multiple Ontologies: Representation of the Liver Immune Response" ;
+    ns4:section <http://ceur-ws.org/Vol-833/#WorkingwithMultipleBiomedicalOntologies> ;
+    ns1:author <http://ceur-ws.org/Vol-833/#AnnaiMariaiMasci>,
         <http://ceur-ws.org/Vol-833/#BernardideiBono>,
         <http://ceur-ws.org/Vol-833/#JeffreyiRoach>,
         <http://ceur-ws.org/Vol-833/#LindsayiCowell>,
         <http://ceur-ws.org/Vol-833/#PierreiGrenon> .
 
-<http://ceur-ws.org/Vol-833/#paper76> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-833/> ;
-    ns6:title "Hyperontology for the Biomedical Ontologist: A Sketch and Some Examples" ;
-    ns5:section <http://ceur-ws.org/Vol-833/#WorkingwithMultipleBiomedicalOntologies> ;
-    ns4:author <http://ceur-ws.org/Vol-833/#AleksandraiSojic>,
+<http://ceur-ws.org/Vol-833/#paper76> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-833/> ;
+    ns5:title "Hyperontology for the Biomedical Ontologist: A Sketch and Some Examples" ;
+    ns4:section <http://ceur-ws.org/Vol-833/#WorkingwithMultipleBiomedicalOntologies> ;
+    ns1:author <http://ceur-ws.org/Vol-833/#AleksandraiSojic>,
         <http://ceur-ws.org/Vol-833/#AlexanderiGarciaiCastro>,
         <http://ceur-ws.org/Vol-833/#JannaiHastings>,
         <http://ceur-ws.org/Vol-833/#OliveriKutz>,
         <http://ceur-ws.org/Vol-833/#TilliMosskowski> .
 
-<http://ceur-ws.org/Vol-833/#paper80> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-833/> ;
-    ns6:title "Multi-Species Anatomy Ontology Development Requires a Pluralist Approach to Label-Class Mapping" ;
-    ns5:section <http://ceur-ws.org/Vol-833/#FacilitatingAnatomyOntologyInteroperability> ;
-    ns4:author <http://ceur-ws.org/Vol-833/#AndrewiR.iDeans>,
+<http://ceur-ws.org/Vol-833/#paper80> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-833/> ;
+    ns5:title "Multi-Species Anatomy Ontology Development Requires a Pluralist Approach to Label-Class Mapping" ;
+    ns4:section <http://ceur-ws.org/Vol-833/#FacilitatingAnatomyOntologyInteroperability> ;
+    ns1:author <http://ceur-ws.org/Vol-833/#AndrewiR.iDeans>,
         <http://ceur-ws.org/Vol-833/#Istv%26eacuteniMik%C3%B3>,
         <http://ceur-ws.org/Vol-833/#KatjaiC.iSeltmann>,
         <http://ceur-ws.org/Vol-833/#MatthewiA.iBertone>,
         <http://ceur-ws.org/Vol-833/#MatthewiJ.iYoder> .
 
-<http://ceur-ws.org/Vol-833/#paper18> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-833/> ;
-    ns6:title "A Case Study of ICD-11 Anatomy Value Set Extraction from SNOMED CT" ;
-    ns5:section <http://ceur-ws.org/Vol-833/#ICBOPresentations> ;
-    ns4:author <http://ceur-ws.org/Vol-833/#AlaniL.iRector>,
+<http://ceur-ws.org/Vol-833/#paper18> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-833/> ;
+    ns5:title "A Case Study of ICD-11 Anatomy Value Set Extraction from SNOMED CT" ;
+    ns4:section <http://ceur-ws.org/Vol-833/#ICBOPresentations> ;
+    ns1:author <http://ceur-ws.org/Vol-833/#AlaniL.iRector>,
         <http://ceur-ws.org/Vol-833/#ChristopheriG.iChute>,
         <http://ceur-ws.org/Vol-833/#GuoqianiJiang>,
         <http://ceur-ws.org/Vol-833/#HaroldiR.iSolbrig>,
         <http://ceur-ws.org/Vol-833/#KentiSpackman>,
         <http://ceur-ws.org/Vol-833/#RobertiJ.G.iChalmers> .
 
-<http://ceur-ws.org/Vol-833/#paper32> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-833/> ;
-    ns6:title "Developing a Reagent Application Ontology within the OBO Foundry Framework" ;
-    ns5:section <http://ceur-ws.org/Vol-833/#PosterPapersAbstracts> ;
-    ns4:author <http://ceur-ws.org/Vol-833/#CarloiTorniai>,
+<http://ceur-ws.org/Vol-833/#paper32> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-833/> ;
+    ns5:title "Developing a Reagent Application Ontology within the OBO Foundry Framework" ;
+    ns4:section <http://ceur-ws.org/Vol-833/#PosterPapersAbstracts> ;
+    ns1:author <http://ceur-ws.org/Vol-833/#CarloiTorniai>,
         <http://ceur-ws.org/Vol-833/#ChrisiShaffer>,
         <http://ceur-ws.org/Vol-833/#MatthewiH.iBrush>,
         <http://ceur-ws.org/Vol-833/#MelissaiA.iHaendel>,
         <http://ceur-ws.org/Vol-833/#NicoleiVasilevsky>,
         <http://ceur-ws.org/Vol-833/#TenilleiJohnson> .
 
-<http://ceur-ws.org/Vol-833/#paper33> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-833/> ;
-    ns6:title "The Ontology of Microbial Phenotypes (OMP): A Precomposed Ontology Based on Cross Products from Multiple External Ontologies that is Used for Guiding Microbial Phenotype Annotation" ;
-    ns5:section <http://ceur-ws.org/Vol-833/#PosterPapersAbstracts> ;
-    ns4:author <http://ceur-ws.org/Vol-833/#AdrienneiZweifel>,
+<http://ceur-ws.org/Vol-833/#paper33> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-833/> ;
+    ns5:title "The Ontology of Microbial Phenotypes (OMP): A Precomposed Ontology Based on Cross Products from Multiple External Ontologies that is Used for Guiding Microbial Phenotype Annotation" ;
+    ns4:section <http://ceur-ws.org/Vol-833/#PosterPapersAbstracts> ;
+    ns1:author <http://ceur-ws.org/Vol-833/#AdrienneiZweifel>,
         <http://ceur-ws.org/Vol-833/#DeborahiSiegele>,
         <http://ceur-ws.org/Vol-833/#JamesiHu>,
         <http://ceur-ws.org/Vol-833/#MarcusiChibucos>,
         <http://ceur-ws.org/Vol-833/#MichelleiGiglio>,
         <http://ceur-ws.org/Vol-833/#PeteriUetz> .
 
-<http://ceur-ws.org/Vol-833/#paper67> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-833/> ;
-    ns6:title "NIFSTD and NeuroLex: Comprehensive Neuroscience Ontology Development Based on Multiple Biomedical Ontologies and Community Involvement" ;
-    ns5:section <http://ceur-ws.org/Vol-833/#WorkingwithMultipleBiomedicalOntologies> ;
-    ns4:author <http://ceur-ws.org/Vol-833/#AmarnathiGupta>,
+<http://ceur-ws.org/Vol-833/#paper67> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-833/> ;
+    ns5:title "NIFSTD and NeuroLex: Comprehensive Neuroscience Ontology Development Based on Multiple Biomedical Ontologies and Community Involvement" ;
+    ns4:section <http://ceur-ws.org/Vol-833/#WorkingwithMultipleBiomedicalOntologies> ;
+    ns1:author <http://ceur-ws.org/Vol-833/#AmarnathiGupta>,
         <http://ceur-ws.org/Vol-833/#AnitaiBandrowski>,
         <http://ceur-ws.org/Vol-833/#FahimiT.iImam>,
         <http://ceur-ws.org/Vol-833/#JeffreyiS.iGrethe>,
         <http://ceur-ws.org/Vol-833/#MaryanniE.iMartone>,
         <http://ceur-ws.org/Vol-833/#StepheniD.iLarson> .
 
-<http://ceur-ws.org/Vol-833/#paper68> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-833/> ;
-    ns6:title "Use of Multiple Ontologies to Characterize the Bioactivity of Small Molecules" ;
-    ns5:section <http://ceur-ws.org/Vol-833/#WorkingwithMultipleBiomedicalOntologies> ;
-    ns4:author <http://ceur-ws.org/Vol-833/#ChristophiSteinbeck>,
+<http://ceur-ws.org/Vol-833/#paper68> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-833/> ;
+    ns5:title "Use of Multiple Ontologies to Characterize the Bioactivity of Small Molecules" ;
+    ns4:section <http://ceur-ws.org/Vol-833/#WorkingwithMultipleBiomedicalOntologies> ;
+    ns1:author <http://ceur-ws.org/Vol-833/#ChristophiSteinbeck>,
         <http://ceur-ws.org/Vol-833/#DietrichiRebholz-Schuhmann>,
         <http://ceur-ws.org/Vol-833/#JannaiHastings>,
         <http://ceur-ws.org/Vol-833/#Jee-HyubiKim>,
         <http://ceur-ws.org/Vol-833/#StefaniSchulz>,
         <http://ceur-ws.org/Vol-833/#YingiYan> .
 
-<http://ceur-ws.org/Vol-833/#paper73> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-833/> ;
-    ns6:title "Towards a Body Fluids Ontology: A Unified Application Ontology for Basic and Translational Science" ;
-    ns5:section <http://ceur-ws.org/Vol-833/#WorkingwithMultipleBiomedicalOntologies> ;
-    ns4:author <http://ceur-ws.org/Vol-833/#AlaniRuttenberg>,
+<http://ceur-ws.org/Vol-833/#paper73> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-833/> ;
+    ns5:title "Towards a Body Fluids Ontology: A Unified Application Ontology for Basic and Translational Science" ;
+    ns4:section <http://ceur-ws.org/Vol-833/#WorkingwithMultipleBiomedicalOntologies> ;
+    ns1:author <http://ceur-ws.org/Vol-833/#AlaniRuttenberg>,
         <http://ceur-ws.org/Vol-833/#Andr%C3%A9iQueiroziAndrade>,
         <http://ceur-ws.org/Vol-833/#BarryiSmith>,
         <http://ceur-ws.org/Vol-833/#DavidiTaiiWaiiWong>,
@@ -2384,7 +2390,7 @@
         <http://ceur-ws.org/Vol-833/#MauricioiBarcellosiAlmeida> .
 
 <http://ceur-ws.org/Vol-833/#AlaniRuttenberg> a ns3:Person ;
-    ns4:affiliation "" ;
+    ns1:affiliation "" ;
     ns2:sameAs <http://ceur-ws.org/persons/AlaniRuttenberg> ;
     ns3:made <http://ceur-ws.org/Vol-833/#paper40>,
         <http://ceur-ws.org/Vol-833/#paper48>,
@@ -2395,11 +2401,11 @@
         <http://ceur-ws.org/Vol-833/#paper74> ;
     ns3:name "Alan Ruttenberg" .
 
-<http://ceur-ws.org/Vol-833/#paper30> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-833/> ;
-    ns6:title "Employing Reasoning within the Phenoscape Knowledgebase" ;
-    ns5:section <http://ceur-ws.org/Vol-833/#PosterPapersAbstracts> ;
-    ns4:author <http://ceur-ws.org/Vol-833/#HilmariLapp>,
+<http://ceur-ws.org/Vol-833/#paper30> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-833/> ;
+    ns5:title "Employing Reasoning within the Phenoscape Knowledgebase" ;
+    ns4:section <http://ceur-ws.org/Vol-833/#PosterPapersAbstracts> ;
+    ns1:author <http://ceur-ws.org/Vol-833/#HilmariLapp>,
         <http://ceur-ws.org/Vol-833/#JamesiP.iBalhoff>,
         <http://ceur-ws.org/Vol-833/#MonteiWesterfield>,
         <http://ceur-ws.org/Vol-833/#PaulaiM.iMabee>,
@@ -2407,11 +2413,11 @@
         <http://ceur-ws.org/Vol-833/#ToddiVision>,
         <http://ceur-ws.org/Vol-833/#WasilaiDahdul> .
 
-<http://ceur-ws.org/Vol-833/#paper44> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-833/> ;
-    ns6:title "Using RxNorm to Extract Medication Data from Electronic Health Records in the Rochester Epidemiology Project" ;
-    ns5:section <http://ceur-ws.org/Vol-833/#PosterPapersAbstracts> ;
-    ns4:author <http://ceur-ws.org/Vol-833/#BarbaraiP.iYawn>,
+<http://ceur-ws.org/Vol-833/#paper44> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-833/> ;
+    ns5:title "Using RxNorm to Extract Medication Data from Electronic Health Records in the Rochester Epidemiology Project" ;
+    ns4:section <http://ceur-ws.org/Vol-833/#PosterPapersAbstracts> ;
+    ns1:author <http://ceur-ws.org/Vol-833/#BarbaraiP.iYawn>,
         <http://ceur-ws.org/Vol-833/#BrianiN.iWillaert>,
         <http://ceur-ws.org/Vol-833/#ChristopheriG.iChute>,
         <http://ceur-ws.org/Vol-833/#HilaliM.iKremers>,
@@ -2419,11 +2425,11 @@
         <http://ceur-ws.org/Vol-833/#ShawniP.iMurphy>,
         <http://ceur-ws.org/Vol-833/#WalteriA.iRocca> .
 
-<http://ceur-ws.org/Vol-833/#paper54> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-833/> ;
-    ns6:title "The Vitro Integrated Ontology Editor and Semantic Web Application" ;
-    ns5:section <http://ceur-ws.org/Vol-833/#SoftwareDemonstrations> ;
-    ns4:author <http://ceur-ws.org/Vol-833/#BrianiCaruso>,
+<http://ceur-ws.org/Vol-833/#paper54> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-833/> ;
+    ns5:title "The Vitro Integrated Ontology Editor and Semantic Web Application" ;
+    ns4:section <http://ceur-ws.org/Vol-833/#SoftwareDemonstrations> ;
+    ns1:author <http://ceur-ws.org/Vol-833/#BrianiCaruso>,
         <http://ceur-ws.org/Vol-833/#BrianiLowe>,
         <http://ceur-ws.org/Vol-833/#JoniCorson-Rikert>,
         <http://ceur-ws.org/Vol-833/#MilesiWorthington>,
@@ -2431,11 +2437,11 @@
         <http://ceur-ws.org/Vol-833/#StellaiMitchell>,
         <http://ceur-ws.org/Vol-833/#VIVOiCollaboration> .
 
-<http://ceur-ws.org/Vol-833/#paper56> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-833/> ;
-    ns6:title "The Biomedical Ontology Applications (BOA) Framework" ;
-    ns5:section <http://ceur-ws.org/Vol-833/#SoftwareDemonstrations> ;
-    ns4:author <http://ceur-ws.org/Vol-833/#BrunoiTavares>,
+<http://ceur-ws.org/Vol-833/#paper56> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-833/> ;
+    ns5:title "The Biomedical Ontology Applications (BOA) Framework" ;
+    ns4:section <http://ceur-ws.org/Vol-833/#SoftwareDemonstrations> ;
+    ns1:author <http://ceur-ws.org/Vol-833/#BrunoiTavares>,
         <http://ceur-ws.org/Vol-833/#CatiaiPesquita>,
         <http://ceur-ws.org/Vol-833/#DanieliFaria>,
         <http://ceur-ws.org/Vol-833/#FranciscoiM.iCouto>,
@@ -2443,11 +2449,11 @@
         <http://ceur-ws.org/Vol-833/#Jo%EF%BF%BDoiD.iFerreira>,
         <http://ceur-ws.org/Vol-833/#TiagoiGrego> .
 
-<http://ceur-ws.org/Vol-833/#paper57> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-833/> ;
-    ns6:title "The NCBO Annotator: Ontology-Based Annotation as a Web Service" ;
-    ns5:section <http://ceur-ws.org/Vol-833/#SoftwareDemonstrations> ;
-    ns4:author <http://ceur-ws.org/Vol-833/#CherieiYoun>,
+<http://ceur-ws.org/Vol-833/#paper57> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-833/> ;
+    ns5:title "The NCBO Annotator: Ontology-Based Annotation as a Web Service" ;
+    ns4:section <http://ceur-ws.org/Vol-833/#SoftwareDemonstrations> ;
+    ns1:author <http://ceur-ws.org/Vol-833/#CherieiYoun>,
         <http://ceur-ws.org/Vol-833/#ClementiJonquet>,
         <http://ceur-ws.org/Vol-833/#MarkiMusen>,
         <http://ceur-ws.org/Vol-833/#MichaeliDorf>,
@@ -2455,11 +2461,11 @@
         <http://ceur-ws.org/Vol-833/#PatriciaiL.iWhetzel>,
         <http://ceur-ws.org/Vol-833/#RayiFergerson> .
 
-<http://ceur-ws.org/Vol-833/#paper79> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-833/> ;
-    ns6:title "The Vertebrate Bridging Ontology (VBO)" ;
-    ns5:section <http://ceur-ws.org/Vol-833/#FacilitatingAnatomyOntologyInteroperability> ;
-    ns4:author <http://ceur-ws.org/Vol-833/#ChaoiPang>,
+<http://ceur-ws.org/Vol-833/#paper79> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-833/> ;
+    ns5:title "The Vertebrate Bridging Ontology (VBO)" ;
+    ns4:section <http://ceur-ws.org/Vol-833/#FacilitatingAnatomyOntologyInteroperability> ;
+    ns1:author <http://ceur-ws.org/Vol-833/#ChaoiPang>,
         <http://ceur-ws.org/Vol-833/#HeleniParkinson>,
         <http://ceur-ws.org/Vol-833/#JamesiMalone>,
         <http://ceur-ws.org/Vol-833/#JohniHancock>,
@@ -2467,11 +2473,11 @@
         <http://ceur-ws.org/Vol-833/#PeteriW.H.iHolland>,
         <http://ceur-ws.org/Vol-833/#RavensaraiTravillian> .
 
-<http://ceur-ws.org/Vol-833/#paper83> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-833/> ;
-    ns6:title "Phenoscape: Use Cases and Anatomy Ontology Requirements for Linking Evolutionary and Model Organism Phenotypes" ;
-    ns5:section <http://ceur-ws.org/Vol-833/#FacilitatingAnatomyOntologyInteroperability> ;
-    ns4:author <http://ceur-ws.org/Vol-833/#HilmariLapp>,
+<http://ceur-ws.org/Vol-833/#paper83> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-833/> ;
+    ns5:title "Phenoscape: Use Cases and Anatomy Ontology Requirements for Linking Evolutionary and Model Organism Phenotypes" ;
+    ns4:section <http://ceur-ws.org/Vol-833/#FacilitatingAnatomyOntologyInteroperability> ;
+    ns1:author <http://ceur-ws.org/Vol-833/#HilmariLapp>,
         <http://ceur-ws.org/Vol-833/#JamesiP.iBalhoff>,
         <http://ceur-ws.org/Vol-833/#MonteiWesterfield>,
         <http://ceur-ws.org/Vol-833/#PaulaiM.iMabee>,
@@ -2479,11 +2485,11 @@
         <http://ceur-ws.org/Vol-833/#ToddiVision>,
         <http://ceur-ws.org/Vol-833/#WasilaiDahdul> .
 
-<http://ceur-ws.org/Vol-833/#paper9> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-833/> ;
-    ns6:title "River Flow Model of Diseases" ;
-    ns5:section <http://ceur-ws.org/Vol-833/#ICBOPresentations> ;
-    ns4:author <http://ceur-ws.org/Vol-833/#HirokoiKou>,
+<http://ceur-ws.org/Vol-833/#paper9> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-833/> ;
+    ns5:title "River Flow Model of Diseases" ;
+    ns4:section <http://ceur-ws.org/Vol-833/#ICBOPresentations> ;
+    ns1:author <http://ceur-ws.org/Vol-833/#HirokoiKou>,
         <http://ceur-ws.org/Vol-833/#KayoiWaki>,
         <http://ceur-ws.org/Vol-833/#KazuhikoiOhe>,
         <http://ceur-ws.org/Vol-833/#KoujiiKozaki>,
@@ -2491,19 +2497,19 @@
         <http://ceur-ws.org/Vol-833/#TakeshiiImai>,
         <http://ceur-ws.org/Vol-833/#YukiiYamagata> .
 
-<http://ceur-ws.org/Vol-833/#FacilitatingAnatomyOntologyInteroperability> a ns1:SessionEvent ;
-    ns1:partOf <http://ceur-ws.org/Vol-833/> ;
-    ns6:title "Facilitating Anatomy Ontology Interoperability" .
+<http://ceur-ws.org/Vol-833/#FacilitatingAnatomyOntologyInteroperability> a ns6:SessionEvent ;
+    ns6:partOf <http://ceur-ws.org/Vol-833/> ;
+    ns5:title "Facilitating Anatomy Ontology Interoperability" .
 
-<http://ceur-ws.org/Vol-833/#RepresentingAdverseEvents> a ns1:SessionEvent ;
-    ns1:partOf <http://ceur-ws.org/Vol-833/> ;
-    ns6:title "Representing Adverse Events" .
+<http://ceur-ws.org/Vol-833/#RepresentingAdverseEvents> a ns6:SessionEvent ;
+    ns6:partOf <http://ceur-ws.org/Vol-833/> ;
+    ns5:title "Representing Adverse Events" .
 
-<http://ceur-ws.org/Vol-833/#paper17> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-833/> ;
-    ns6:title "Aligning the Parasite Experiment Ontology and the Ontology for Biomedical Investigations Using AgreementMaker" ;
-    ns5:section <http://ceur-ws.org/Vol-833/#ICBOPresentations> ;
-    ns4:author <http://ceur-ws.org/Vol-833/#AmitiSheth>,
+<http://ceur-ws.org/Vol-833/#paper17> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-833/> ;
+    ns5:title "Aligning the Parasite Experiment Ontology and the Ontology for Biomedical Investigations Using AgreementMaker" ;
+    ns4:section <http://ceur-ws.org/Vol-833/#ICBOPresentations> ;
+    ns1:author <http://ceur-ws.org/Vol-833/#AmitiSheth>,
         <http://ceur-ws.org/Vol-833/#CosminiStroe>,
         <http://ceur-ws.org/Vol-833/#IsabeliF.iCruz>,
         <http://ceur-ws.org/Vol-833/#MaryamiPanahiazar>,
@@ -2512,11 +2518,11 @@
         <http://ceur-ws.org/Vol-833/#ValerieiCross>,
         <http://ceur-ws.org/Vol-833/#XuehengiHu> .
 
-<http://ceur-ws.org/Vol-833/#paper35> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-833/> ;
-    ns6:title "OntoOrpha: An Ontology to Support Edition and Audit of Knowledge of Rare Diseases in ORPHANET" ;
-    ns5:section <http://ceur-ws.org/Vol-833/#PosterPapersAbstracts> ;
-    ns4:author <http://ceur-ws.org/Vol-833/#AnaiRath>,
+<http://ceur-ws.org/Vol-833/#paper35> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-833/> ;
+    ns5:title "OntoOrpha: An Ontology to Support Edition and Audit of Knowledge of Rare Diseases in ORPHANET" ;
+    ns4:section <http://ceur-ws.org/Vol-833/#PosterPapersAbstracts> ;
+    ns1:author <http://ceur-ws.org/Vol-833/#AnaiRath>,
         <http://ceur-ws.org/Vol-833/#AnnieiOlry>,
         <http://ceur-ws.org/Vol-833/#BrunoiUrbero>,
         <http://ceur-ws.org/Vol-833/#FerdinandiDhombres>,
@@ -2525,11 +2531,11 @@
         <http://ceur-ws.org/Vol-833/#Pierre-YvesiVandenbussche>,
         <http://ceur-ws.org/Vol-833/#R%26eacutemyiChoquet> .
 
-<http://ceur-ws.org/Vol-833/#paper37> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-833/> ;
-    ns6:title "Enriching the Ontology for Biomedical Investigations (OBI) to Improve its Suitability for Web Service Annotations" ;
-    ns5:section <http://ceur-ws.org/Vol-833/#PosterPapersAbstracts> ;
-    ns4:author <http://ceur-ws.org/Vol-833/#AlokiDhamanaskar>,
+<http://ceur-ws.org/Vol-833/#paper37> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-833/> ;
+    ns5:title "Enriching the Ontology for Biomedical Investigations (OBI) to Improve its Suitability for Web Service Annotations" ;
+    ns4:section <http://ceur-ws.org/Vol-833/#PosterPapersAbstracts> ;
+    ns1:author <http://ceur-ws.org/Vol-833/#AlokiDhamanaskar>,
         <http://ceur-ws.org/Vol-833/#ChaitanyaiGuttula>,
         <http://ceur-ws.org/Vol-833/#ChristianiJ.iStoeckertiJr.>,
         <http://ceur-ws.org/Vol-833/#JessicaiC.iKissinger>,
@@ -2538,11 +2544,11 @@
         <http://ceur-ws.org/Vol-833/#Jr.>,
         <http://ceur-ws.org/Vol-833/#RuiiWang> .
 
-<http://ceur-ws.org/Vol-833/#paper53> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-833/> ;
-    ns6:title "Populous: A Tool for Populating an Ontology" ;
-    ns5:section <http://ceur-ws.org/Vol-833/#SoftwareDemonstrations> ;
-    ns4:author <http://ceur-ws.org/Vol-833/#JoostiSchanstra>,
+<http://ceur-ws.org/Vol-833/#paper53> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-833/> ;
+    ns5:title "Populous: A Tool for Populating an Ontology" ;
+    ns4:section <http://ceur-ws.org/Vol-833/#SoftwareDemonstrations> ;
+    ns1:author <http://ceur-ws.org/Vol-833/#JoostiSchanstra>,
         <http://ceur-ws.org/Vol-833/#JulieiKlein>,
         <http://ceur-ws.org/Vol-833/#KatyiWolstencroft>,
         <http://ceur-ws.org/Vol-833/#LuigiiIannone>,
@@ -2551,11 +2557,11 @@
         <http://ceur-ws.org/Vol-833/#SimoniJupp>,
         <http://ceur-ws.org/Vol-833/#StuartiOwen> .
 
-<http://ceur-ws.org/Vol-833/#paper71> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-833/> ;
-    ns6:title "Modularization for the Cell Ontology" ;
-    ns5:section <http://ceur-ws.org/Vol-833/#WorkingwithMultipleBiomedicalOntologies> ;
-    ns4:author <http://ceur-ws.org/Vol-833/#AlexanderiD.iDiehl>,
+<http://ceur-ws.org/Vol-833/#paper71> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-833/> ;
+    ns5:title "Modularization for the Cell Ontology" ;
+    ns4:section <http://ceur-ws.org/Vol-833/#WorkingwithMultipleBiomedicalOntologies> ;
+    ns1:author <http://ceur-ws.org/Vol-833/#AlexanderiD.iDiehl>,
         <http://ceur-ws.org/Vol-833/#AmeliaiIreland>,
         <http://ceur-ws.org/Vol-833/#CarloiTorniai>,
         <http://ceur-ws.org/Vol-833/#ChrisiJ.iMungall>,
@@ -2564,11 +2570,11 @@
         <http://ceur-ws.org/Vol-833/#ShahidiManzoor>,
         <http://ceur-ws.org/Vol-833/#TerryiMeehan> .
 
-<http://ceur-ws.org/Vol-833/#paper14> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-833/> ;
-    ns6:title "Developing an Application Ontology for Biomedical Resource Annotation and Retrieval: Challenges and Lessons Learned" ;
-    ns5:section <http://ceur-ws.org/Vol-833/#ICBOPresentations> ;
-    ns4:author <http://ceur-ws.org/Vol-833/#CarloiTorniai>,
+<http://ceur-ws.org/Vol-833/#paper14> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-833/> ;
+    ns5:title "Developing an Application Ontology for Biomedical Resource Annotation and Retrieval: Challenges and Lessons Learned" ;
+    ns4:section <http://ceur-ws.org/Vol-833/#ICBOPresentations> ;
+    ns1:author <http://ceur-ws.org/Vol-833/#CarloiTorniai>,
         <http://ceur-ws.org/Vol-833/#ChrisiShaffer>,
         <http://ceur-ws.org/Vol-833/#ErikiSegerdell>,
         <http://ceur-ws.org/Vol-833/#KareniCorday>,
@@ -2578,11 +2584,11 @@
         <http://ceur-ws.org/Vol-833/#NicoleiVasilevsky>,
         <http://ceur-ws.org/Vol-833/#TenilleiJohnson> .
 
-<http://ceur-ws.org/Vol-833/#paper31> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-833/> ;
-    ns6:title "Waiting for a Robust Disease Ontology: A Merger of OMIM and MeSH as a Practical Interim Solution" ;
-    ns5:section <http://ceur-ws.org/Vol-833/#PosterPapersAbstracts> ;
-    ns4:author <http://ceur-ws.org/Vol-833/#AllaniPeteriDavis>,
+<http://ceur-ws.org/Vol-833/#paper31> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-833/> ;
+    ns5:title "Waiting for a Robust Disease Ontology: A Merger of OMIM and MeSH as a Practical Interim Solution" ;
+    ns4:section <http://ceur-ws.org/Vol-833/#PosterPapersAbstracts> ;
+    ns1:author <http://ceur-ws.org/Vol-833/#AllaniPeteriDavis>,
         <http://ceur-ws.org/Vol-833/#CarolyniMattingly>,
         <http://ceur-ws.org/Vol-833/#CynthiaiSmith>,
         <http://ceur-ws.org/Vol-833/#JananiT.iEppig>,
@@ -2592,11 +2598,11 @@
         <http://ceur-ws.org/Vol-833/#ThomasiC.iWiegers>,
         <http://ceur-ws.org/Vol-833/#USA> .
 
-<http://ceur-ws.org/Vol-833/#paper38> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-833/> ;
-    ns6:title "Recent Developments in the ChEBI Ontology" ;
-    ns5:section <http://ceur-ws.org/Vol-833/#PosterPapersAbstracts> ;
-    ns4:author <http://ceur-ws.org/Vol-833/#AdrianoiDekker>,
+<http://ceur-ws.org/Vol-833/#paper38> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-833/> ;
+    ns5:title "Recent Developments in the ChEBI Ontology" ;
+    ns4:section <http://ceur-ws.org/Vol-833/#PosterPapersAbstracts> ;
+    ns1:author <http://ceur-ws.org/Vol-833/#AdrianoiDekker>,
         <http://ceur-ws.org/Vol-833/#ChristophiSteinbeck>,
         <http://ceur-ws.org/Vol-833/#GarethiOwen>,
         <http://ceur-ws.org/Vol-833/#JannaiHastings>,
@@ -2606,19 +2612,19 @@
         <http://ceur-ws.org/Vol-833/#SteveiTurner>,
         <http://ceur-ws.org/Vol-833/#ZaraiJosephs> .
 
-<http://ceur-ws.org/Vol-833/#SoftwareDemonstrations> a ns1:SessionEvent ;
-    ns1:partOf <http://ceur-ws.org/Vol-833/> ;
-    ns6:title "Software Demonstrations" .
+<http://ceur-ws.org/Vol-833/#SoftwareDemonstrations> a ns6:SessionEvent ;
+    ns6:partOf <http://ceur-ws.org/Vol-833/> ;
+    ns5:title "Software Demonstrations" .
 
-<http://ceur-ws.org/Vol-833/#WorkingwithMultipleBiomedicalOntologies> a ns1:SessionEvent ;
-    ns1:partOf <http://ceur-ws.org/Vol-833/> ;
-    ns6:title "Working with Multiple Biomedical Ontologies" .
+<http://ceur-ws.org/Vol-833/#WorkingwithMultipleBiomedicalOntologies> a ns6:SessionEvent ;
+    ns6:partOf <http://ceur-ws.org/Vol-833/> ;
+    ns5:title "Working with Multiple Biomedical Ontologies" .
 
-<http://ceur-ws.org/Vol-833/#paper52> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-833/> ;
-    ns6:title "Bioportal: Ontologies and Integrated Data Resources at the Click of a Mouse" ;
-    ns5:section <http://ceur-ws.org/Vol-833/#SoftwareDemonstrations> ;
-    ns4:author <http://ceur-ws.org/Vol-833/#BarryiSmith>,
+<http://ceur-ws.org/Vol-833/#paper52> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-833/> ;
+    ns5:title "Bioportal: Ontologies and Integrated Data Resources at the Click of a Mouse" ;
+    ns4:section <http://ceur-ws.org/Vol-833/#SoftwareDemonstrations> ;
+    ns1:author <http://ceur-ws.org/Vol-833/#BarryiSmith>,
         <http://ceur-ws.org/Vol-833/#ChrisiChute>,
         <http://ceur-ws.org/Vol-833/#Margaret-AnneiStorey>,
         <http://ceur-ws.org/Vol-833/#MarkiMusen>,
@@ -2629,15 +2635,15 @@
         <http://ceur-ws.org/Vol-833/#PauliAlexander>,
         <http://ceur-ws.org/Vol-833/#RayiFergerson> .
 
-<http://ceur-ws.org/Vol-833/#DoctoralandPostDoctoralConsortium> a ns1:SessionEvent ;
-    ns1:partOf <http://ceur-ws.org/Vol-833/> ;
-    ns6:title "Doctoral and Post-Doctoral Consortium" .
+<http://ceur-ws.org/Vol-833/#DoctoralandPostDoctoralConsortium> a ns6:SessionEvent ;
+    ns6:partOf <http://ceur-ws.org/Vol-833/> ;
+    ns5:title "Doctoral and Post-Doctoral Consortium" .
 
-<http://ceur-ws.org/Vol-833/#paper27> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-833/> ;
-    ns6:title "Bioassay Ontology to Describe High-Throughput Screening Assays and their Results" ;
-    ns5:section <http://ceur-ws.org/Vol-833/#ICBOPresentations> ;
-    ns4:author <http://ceur-ws.org/Vol-833/#AmariKoleti>,
+<http://ceur-ws.org/Vol-833/#paper27> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-833/> ;
+    ns5:title "Bioassay Ontology to Describe High-Throughput Screening Assays and their Results" ;
+    ns4:section <http://ceur-ws.org/Vol-833/#ICBOPresentations> ;
+    ns1:author <http://ceur-ws.org/Vol-833/#AmariKoleti>,
         <http://ceur-ws.org/Vol-833/#CatyiChung>,
         <http://ceur-ws.org/Vol-833/#ChristopheriMader>,
         <http://ceur-ws.org/Vol-833/#KunieiSakurai>,
@@ -2649,11 +2655,11 @@
         <http://ceur-ws.org/Vol-833/#UmaiVempati>,
         <http://ceur-ws.org/Vol-833/#VanceiLemmon> .
 
-<http://ceur-ws.org/Vol-833/#paper4> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-833/> ;
-    ns6:title "Cell Line Ontology: Redesigning the Cell Line Knowledgebase to Aid Integrative Translational Informatics" ;
-    ns5:section <http://ceur-ws.org/Vol-833/#ICBOPresentations> ;
-    ns4:author <http://ceur-ws.org/Vol-833/#AlexanderiD.iDiehl>,
+<http://ceur-ws.org/Vol-833/#paper4> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-833/> ;
+    ns5:title "Cell Line Ontology: Redesigning the Cell Line Knowledgebase to Aid Integrative Translational Informatics" ;
+    ns4:section <http://ceur-ws.org/Vol-833/#ICBOPresentations> ;
+    ns1:author <http://ceur-ws.org/Vol-833/#AlexanderiD.iDiehl>,
         <http://ceur-ws.org/Vol-833/#BrianiD.iAthey>,
         <http://ceur-ws.org/Vol-833/#ChaoiPang>,
         <http://ceur-ws.org/Vol-833/#HeleniParkinson>,
@@ -2665,11 +2671,11 @@
         <http://ceur-ws.org/Vol-833/#YongquniHe>,
         <http://ceur-ws.org/Vol-833/#ZuoshuangiXiang> .
 
-<http://ceur-ws.org/Vol-833/#paperX1> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-833/> ;
-    ns6:title "The proceedings are usually cited as follows:" ;
-    ns5:section <http://ceur-ws.org/Vol-833/#DoctoralandPostDoctoralConsortium> ;
-    ns4:author <http://ceur-ws.org/Vol-833/#2011.iCEURiWorkshopiProceedings>,
+<http://ceur-ws.org/Vol-833/#paperX1> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-833/> ;
+    ns5:title "The proceedings are usually cited as follows:" ;
+    ns4:section <http://ceur-ws.org/Vol-833/#DoctoralandPostDoctoralConsortium> ;
+    ns1:author <http://ceur-ws.org/Vol-833/#2011.iCEURiWorkshopiProceedings>,
         <http://ceur-ws.org/Vol-833/#26-30>,
         <http://ceur-ws.org/Vol-833/#AlaniRuttenbergi%28eds.%29%3AiProceedingsiofitheii2ndiInternationaliConferenceioniBiomedicaliOntologyi%28ICBO-2011%29>,
         <http://ceur-ws.org/Vol-833/#Buffalo>,
@@ -2681,11 +2687,11 @@
         <http://ceur-ws.org/Vol-833/#USA>,
         <http://ceur-ws.org/Vol-833/#availableionlineiatiCEUR-WS.org%2FVol-833%2F.> .
 
-<http://ceur-ws.org/Vol-833/#paper42> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-833/> ;
-    ns6:title "Aligning Research Resource and Researcher Representation: The eagle-i and VIVO Use Case" ;
-    ns5:section <http://ceur-ws.org/Vol-833/#PosterPapersAbstracts> ;
-    ns4:author <http://ceur-ws.org/Vol-833/#BrianiLowe>,
+<http://ceur-ws.org/Vol-833/#paper42> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-833/> ;
+    ns5:title "Aligning Research Resource and Researcher Representation: The eagle-i and VIVO Use Case" ;
+    ns4:section <http://ceur-ws.org/Vol-833/#PosterPapersAbstracts> ;
+    ns1:author <http://ceur-ws.org/Vol-833/#BrianiLowe>,
         <http://ceur-ws.org/Vol-833/#CarloiTorniai>,
         <http://ceur-ws.org/Vol-833/#JoniCorson-Rikert>,
         <http://ceur-ws.org/Vol-833/#MansooriAhmed>,
@@ -2698,11 +2704,11 @@
         <http://ceur-ws.org/Vol-833/#YingiDing>,
         <http://ceur-ws.org/Vol-833/#theieagle-iiConsortium> .
 
-<http://ceur-ws.org/Vol-833/#paper11> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-833/> ;
-    ns6:title "An Advanced Strategy for Integration of Biological Measurement Data" ;
-    ns5:section <http://ceur-ws.org/Vol-833/#ICBOPresentations> ;
-    ns4:author <http://ceur-ws.org/Vol-833/#GeorgiosiV.iGkoutos>,
+<http://ceur-ws.org/Vol-833/#paper11> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-833/> ;
+    ns5:title "An Advanced Strategy for Integration of Biological Measurement Data" ;
+    ns4:section <http://ceur-ws.org/Vol-833/#ICBOPresentations> ;
+    ns1:author <http://ceur-ws.org/Vol-833/#GeorgiosiV.iGkoutos>,
         <http://ceur-ws.org/Vol-833/#HiroshiiMasuya>,
         <http://ceur-ws.org/Vol-833/#KazunoriiWaki>,
         <http://ceur-ws.org/Vol-833/#KojiiDoi>,
@@ -2716,11 +2722,11 @@
         <http://ceur-ws.org/Vol-833/#TetsuroiToyoda>,
         <http://ceur-ws.org/Vol-833/#YoshihiroiOkuda> .
 
-<http://ceur-ws.org/Vol-833/#paper49> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-833/> ;
-    ns6:title "Protein-Centric Connection of Biomedical Knowledge: Protein Ontology (PRO) Research and Annotation Tools" ;
-    ns5:section <http://ceur-ws.org/Vol-833/#SoftwareDemonstrations> ;
-    ns4:author <http://ceur-ws.org/Vol-833/#AlaniRuttenberg>,
+<http://ceur-ws.org/Vol-833/#paper49> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-833/> ;
+    ns5:title "Protein-Centric Connection of Biomedical Knowledge: Protein Ontology (PRO) Research and Annotation Tools" ;
+    ns4:section <http://ceur-ws.org/Vol-833/#SoftwareDemonstrations> ;
+    ns1:author <http://ceur-ws.org/Vol-833/#AlaniRuttenberg>,
         <http://ceur-ws.org/Vol-833/#AlexanderiD.iDiehl>,
         <http://ceur-ws.org/Vol-833/#AlexeiiEvsikov>,
         <http://ceur-ws.org/Vol-833/#BarryiSmith>,
@@ -2736,15 +2742,15 @@
         <http://ceur-ws.org/Vol-833/#NataliaiV.iRoberts>,
         <http://ceur-ws.org/Vol-833/#PeteriD%27Eustachio> .
 
-<http://ceur-ws.org/Vol-833/#PosterPapersAbstracts> a ns1:SessionEvent ;
-    ns1:partOf <http://ceur-ws.org/Vol-833/> ;
-    ns6:title "Poster Papers & Abstracts" .
+<http://ceur-ws.org/Vol-833/#PosterPapersAbstracts> a ns6:SessionEvent ;
+    ns6:partOf <http://ceur-ws.org/Vol-833/> ;
+    ns5:title "Poster Papers & Abstracts" .
 
-<http://ceur-ws.org/Vol-833/#paper43> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-833/> ;
-    ns6:title "An Ontology-Based Approach to Linking Model Organisms and Resources to Human Diseases" ;
-    ns5:section <http://ceur-ws.org/Vol-833/#PosterPapersAbstracts> ;
-    ns4:author <http://ceur-ws.org/Vol-833/#AndrewiChatr-Aryamontri>,
+<http://ceur-ws.org/Vol-833/#paper43> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-833/> ;
+    ns5:title "An Ontology-Based Approach to Linking Model Organisms and Resources to Human Diseases" ;
+    ns4:section <http://ceur-ws.org/Vol-833/#PosterPapersAbstracts> ;
+    ns1:author <http://ceur-ws.org/Vol-833/#AndrewiChatr-Aryamontri>,
         <http://ceur-ws.org/Vol-833/#AnitaiBandrowski>,
         <http://ceur-ws.org/Vol-833/#BrianiCanada>,
         <http://ceur-ws.org/Vol-833/#CarloiTorniai>,
@@ -2767,12 +2773,12 @@
         <http://ceur-ws.org/Vol-833/#ShawniIadonato>,
         <http://ceur-ws.org/Vol-833/#StepheniD.iLarson> .
 
-<http://ceur-ws.org/Vol-833/#ICBOPresentations> a ns1:SessionEvent ;
-    ns1:partOf <http://ceur-ws.org/Vol-833/> ;
-    ns6:title "ICBO Presentations" .
+<http://ceur-ws.org/Vol-833/#ICBOPresentations> a ns6:SessionEvent ;
+    ns6:partOf <http://ceur-ws.org/Vol-833/> ;
+    ns5:title "ICBO Presentations" .
 
-<http://ceur-ws.org/Vol-833/> a ns1:Proceedings ;
-    ns1:hasPart <http://ceur-ws.org/Vol-833/#paper1>,
+<http://ceur-ws.org/Vol-833/> a ns6:Proceedings ;
+    ns6:hasPart <http://ceur-ws.org/Vol-833/#paper1>,
         <http://ceur-ws.org/Vol-833/#paper10>,
         <http://ceur-ws.org/Vol-833/#paper11>,
         <http://ceur-ws.org/Vol-833/#paper12>,
@@ -2867,16 +2873,16 @@
         <http://ceur-ws.org/Vol-833/#paper93>,
         <http://ceur-ws.org/Vol-833/#paper94>,
         <http://ceur-ws.org/Vol-833/#paperX1> ;
-    ns1:hasSession <http://ceur-ws.org/Vol-833/#DoctoralandPostDoctoralConsortium>,
+    ns6:hasSession <http://ceur-ws.org/Vol-833/#DoctoralandPostDoctoralConsortium>,
         <http://ceur-ws.org/Vol-833/#FacilitatingAnatomyOntologyInteroperability>,
         <http://ceur-ws.org/Vol-833/#ICBOPresentations>,
         <http://ceur-ws.org/Vol-833/#PosterPapersAbstracts>,
         <http://ceur-ws.org/Vol-833/#RepresentingAdverseEvents>,
         <http://ceur-ws.org/Vol-833/#SoftwareDemonstrations>,
         <http://ceur-ws.org/Vol-833/#WorkingwithMultipleBiomedicalOntologies> ;
-    ns8:issued "2012-02-26T00:00:00+00:00"^^xsd:dateTime ;
-    ns5:presentedAt <http://ceur-ws.org/Vol-833/#event> ;
-    ns4:editor <http://ceur-ws.org/Vol-833/#AlaniRuttenberg>,
+    ns7:issued "2012-02-26T00:00:00+00:00"^^xsd:dateTime ;
+    ns4:presentedAt <http://ceur-ws.org/Vol-833/#event> ;
+    ns1:editor <http://ceur-ws.org/Vol-833/#AlaniRuttenberg>,
         <http://ceur-ws.org/Vol-833/#MaryanniE.iMartone>,
         <http://ceur-ws.org/Vol-833/#OlivieriBodenreider> .
 

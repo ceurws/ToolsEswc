@@ -1,11 +1,11 @@
-@prefix ns1: <http://purl.org/ontology/bibo/#> .
+@prefix ns1: <http://swrc.ontoware.org/ontology/#> .
 @prefix ns2: <http://data.semanticweb.org/ns/swc/ontology/#> .
 @prefix ns3: <http://xmlns.com/foaf/0.1/> .
 @prefix ns4: <http://www.w3.org/2002/07/owl#> .
-@prefix ns5: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns5: <http://purl.org/ontology/bibo/#> .
 @prefix ns6: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns7: <http://purl.org/dc/elements/1.1/> .
-@prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns8: <http://purl.org/dc/elements/1.1/> .
 @prefix ns9: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -101,34 +101,40 @@
     ns2:hasLocation <http://dbpedia.org/resource/United_States> ;
     ns2:hasPart <http://ceur-ws.org/Vol-1369/#part-BCSS> ;
     ns2:isSubEventOf <http://ceur-ws.org/Vol-1369/#conf> ;
-    ns8:beginsAtDatetime "2015-06-03T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:endsAtDatetime "2015-06-03T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:license "http://creativecommons.org/publicdomain/zero/1.0/" ;
+    ns7:beginsAtDatetime "2015-06-03T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:endsAtDatetime "2015-06-03T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:license "http://creativecommons.org/publicdomain/zero/1.0/" ;
     rdfs:seeAlso <http://ceur-ws.org/Vol-1153/#event>,
         <http://ceur-ws.org/Vol-973/#event> .
 
+<http://ceur-ws.org/Vol-1369/#part-BCSS> a ns5:Workshop ;
+    ns2:partOf <http://ceur-ws.org/series/BCSS> ;
+    ns6:title "Behavior Change Support Systems 2015" ;
+    ns5:shortTitle "BCSS" ;
+    ns1:edition 3 .
+
 <http://ceur-ws.org/Vol-1369/#SaskiaiKelders> a ns3:Person ;
-    ns5:affiliation "" ;
+    ns1:affiliation "" ;
     ns4:sameAs <http://ceur-ws.org/persons/SaskiaiKelders> ;
     ns3:made <http://ceur-ws.org/Vol-1369/#Editorial> ;
     ns3:name "Saskia Kelders" .
 
 <http://ceur-ws.org/Vol-1369/#HarriiOinas-Kukkonen> a ns3:Person ;
-    ns5:affiliation "" ;
+    ns1:affiliation "" ;
     ns4:sameAs <http://ceur-ws.org/persons/HarriiOinas-Kukkonen> ;
     ns3:made <http://ceur-ws.org/Vol-1369/#Editorial>,
         <http://ceur-ws.org/Vol-1369/#Paper_4> ;
     ns3:name "Harri Oinas-Kukkonen" .
 
 <http://ceur-ws.org/Vol-1369/#LisetteivaniGemertiPijnen> a ns3:Person ;
-    ns5:affiliation "" ;
+    ns1:affiliation "" ;
     ns4:sameAs <http://ceur-ws.org/persons/LisetteivaniGemertiPijnen> ;
     ns3:made <http://ceur-ws.org/Vol-1369/#Editorial>,
         <http://ceur-ws.org/Vol-1369/#Paper_3> ;
     ns3:name "Lisette van Gemert Pijnen" .
 
 <http://ceur-ws.org/Vol-1369/#OlgaiKulyk> a ns3:Person ;
-    ns5:affiliation "" ;
+    ns1:affiliation "" ;
     ns4:sameAs <http://ceur-ws.org/persons/OlgaiKulyk> ;
     ns3:made <http://ceur-ws.org/Vol-1369/#Editorial>,
         <http://ceur-ws.org/Vol-1369/#Paper_3> ;
@@ -137,31 +143,31 @@
 <http://ceur-ws.org/Vol-1369/#Paper_1> a ns2:Paper ;
     ns2:partOf <http://ceur-ws.org/Vol-1369/> ;
     ns6:title "Triggers in the Environment: Increasing the Reach of Behavior Change Support Systems by Connecting to the Offline World" ;
-    ns1:endPage 16 ;
-    ns1:numPages 10 ;
-    ns1:section <http://ceur-ws.org/Vol-1369/#Session1Persuasivestrategiestoincreasereach> ;
-    ns1:startPage 7 ;
-    ns5:author <http://ceur-ws.org/Vol-1369/#GekeiD.S.iLudden>,
+    ns5:endPage 16 ;
+    ns5:numPages 10 ;
+    ns5:section <http://ceur-ws.org/Vol-1369/#Session1Persuasivestrategiestoincreasereach> ;
+    ns5:startPage 7 ;
+    ns1:author <http://ceur-ws.org/Vol-1369/#GekeiD.S.iLudden>,
         <http://ceur-ws.org/Vol-1369/#MarleeniOffringa> .
 
 <http://ceur-ws.org/Vol-1369/#Paper_2> a ns2:Paper ;
     ns2:partOf <http://ceur-ws.org/Vol-1369/> ;
     ns6:title "Enhancing Persuasive Features of Behaviour Change Support Systems: The Role of U-FADE" ;
-    ns1:endPage 27 ;
-    ns1:numPages 11 ;
-    ns1:section <http://ceur-ws.org/Vol-1369/#Session1Persuasivestrategiestoincreasereach> ;
-    ns1:startPage 17 ;
-    ns5:author <http://ceur-ws.org/Vol-1369/#DorothyiA.iFrempong>,
+    ns5:endPage 27 ;
+    ns5:numPages 11 ;
+    ns5:section <http://ceur-ws.org/Vol-1369/#Session1Persuasivestrategiestoincreasereach> ;
+    ns5:startPage 17 ;
+    ns1:author <http://ceur-ws.org/Vol-1369/#DorothyiA.iFrempong>,
         <http://ceur-ws.org/Vol-1369/#IsaaciWiafe> .
 
 <http://ceur-ws.org/Vol-1369/#Paper_5> a ns2:Paper ;
     ns2:partOf <http://ceur-ws.org/Vol-1369/> ;
     ns6:title "Behavior Change Support Systems for Privacy and Security" ;
-    ns1:endPage 55 ;
-    ns1:numPages 5 ;
-    ns1:section <http://ceur-ws.org/Vol-1369/#Session2Theimportanceofcontext> ;
-    ns1:startPage 51 ;
-    ns5:author <http://ceur-ws.org/Vol-1369/#RoelandiH.P.iKegel>,
+    ns5:endPage 55 ;
+    ns5:numPages 5 ;
+    ns5:section <http://ceur-ws.org/Vol-1369/#Session2Theimportanceofcontext> ;
+    ns5:startPage 51 ;
+    ns1:author <http://ceur-ws.org/Vol-1369/#RoelandiH.P.iKegel>,
         <http://ceur-ws.org/Vol-1369/#RoeliJ.iWieringa> .
 
 <http://ceur-ws.org/Vol-1369/#Session1Persuasivestrategiestoincreasereach> a ns2:SessionEvent ;
@@ -175,11 +181,11 @@
 <http://ceur-ws.org/Vol-1369/#Paper_3> a ns2:Paper ;
     ns2:partOf <http://ceur-ws.org/Vol-1369/> ;
     ns6:title "How Persuasive are Serious Games, Social Media and mHealth Technologies for Vulnerable Young Adults? Design Factors for Health Behavior and Lifestyle Change Support: Sexual Health Case" ;
-    ns1:endPage 42 ;
-    ns1:numPages 15 ;
-    ns1:section <http://ceur-ws.org/Vol-1369/#Session1Persuasivestrategiestoincreasereach> ;
-    ns1:startPage 28 ;
-    ns5:author <http://ceur-ws.org/Vol-1369/#ChantalideniDaas>,
+    ns5:endPage 42 ;
+    ns5:numPages 15 ;
+    ns5:section <http://ceur-ws.org/Vol-1369/#Session1Persuasivestrategiestoincreasereach> ;
+    ns5:startPage 28 ;
+    ns1:author <http://ceur-ws.org/Vol-1369/#ChantalideniDaas>,
         <http://ceur-ws.org/Vol-1369/#LisetteivaniGemertiPijnen>,
         <http://ceur-ws.org/Vol-1369/#OlgaiKulyk>,
         <http://ceur-ws.org/Vol-1369/#SilkeiDavid> .
@@ -187,11 +193,11 @@
 <http://ceur-ws.org/Vol-1369/#Paper_4> a ns2:Paper ;
     ns2:partOf <http://ceur-ws.org/Vol-1369/> ;
     ns6:title "About the Persuasion Context for BCSSs: Analyzing the Contextual Factors" ;
-    ns1:endPage 50 ;
-    ns1:numPages 8 ;
-    ns1:section <http://ceur-ws.org/Vol-1369/#Session2Theimportanceofcontext> ;
-    ns1:startPage 43 ;
-    ns5:author <http://ceur-ws.org/Vol-1369/#HarriiOinas-Kukkonen>,
+    ns5:endPage 50 ;
+    ns5:numPages 8 ;
+    ns5:section <http://ceur-ws.org/Vol-1369/#Session2Theimportanceofcontext> ;
+    ns5:startPage 43 ;
+    ns1:author <http://ceur-ws.org/Vol-1369/#HarriiOinas-Kukkonen>,
         <http://ceur-ws.org/Vol-1369/#KirsiiHalttu>,
         <http://ceur-ws.org/Vol-1369/#MichaeliOduor>,
         <http://ceur-ws.org/Vol-1369/#PiiastiinaiTikka> .
@@ -201,11 +207,11 @@
     ns2:partOf <http://ceur-ws.org/Vol-1369/> ;
     ns6:title "Editorial",
         "Selecting Effective Persuasive Strategies in Behavior Change Support Systems" ;
-    ns1:endPage 6 ;
-    ns1:numPages 6 ;
-    ns1:section <http://ceur-ws.org/Vol-1369/#Editorial> ;
-    ns1:startPage 1 ;
-    ns5:author <http://ceur-ws.org/Vol-1369/#HarriiOinas-Kukkonen>,
+    ns5:endPage 6 ;
+    ns5:numPages 6 ;
+    ns5:section <http://ceur-ws.org/Vol-1369/#Editorial> ;
+    ns5:startPage 1 ;
+    ns1:author <http://ceur-ws.org/Vol-1369/#HarriiOinas-Kukkonen>,
         <http://ceur-ws.org/Vol-1369/#LisetteivaniGemertiPijnen>,
         <http://ceur-ws.org/Vol-1369/#OlgaiKulyk>,
         <http://ceur-ws.org/Vol-1369/#SaskiaiKelders> .
@@ -213,11 +219,11 @@
 <http://ceur-ws.org/Vol-1369/#Paper_6> a ns2:Paper ;
     ns2:partOf <http://ceur-ws.org/Vol-1369/> ;
     ns6:title "Persuasive Information Security. A Behavior Change Support System to Help Employees Protect Organizational Information Security" ;
-    ns1:endPage 66 ;
-    ns1:numPages 11 ;
-    ns1:section <http://ceur-ws.org/Vol-1369/#Session2Theimportanceofcontext> ;
-    ns1:startPage 56 ;
-    ns5:author <http://ceur-ws.org/Vol-1369/#ChristinaiHochleitner>,
+    ns5:endPage 66 ;
+    ns5:numPages 11 ;
+    ns5:section <http://ceur-ws.org/Vol-1369/#Session2Theimportanceofcontext> ;
+    ns5:startPage 56 ;
+    ns1:author <http://ceur-ws.org/Vol-1369/#ChristinaiHochleitner>,
         <http://ceur-ws.org/Vol-1369/#GeorgiRegal>,
         <http://ceur-ws.org/Vol-1369/#ManfrediTscheligi>,
         <http://ceur-ws.org/Vol-1369/#MarciBusch>,
@@ -236,8 +242,8 @@
         <http://ceur-ws.org/Vol-1369/#Session1Persuasivestrategiestoincreasereach>,
         <http://ceur-ws.org/Vol-1369/#Session2Theimportanceofcontext> ;
     ns9:issued "2015-05-29T00:00:00+00:00"^^xsd:dateTime ;
-    ns1:presentedAt <http://ceur-ws.org/Vol-1369/#event> ;
-    ns5:editor <http://ceur-ws.org/Vol-1369/#HarriiOinas-Kukkonen>,
+    ns5:presentedAt <http://ceur-ws.org/Vol-1369/#event> ;
+    ns1:editor <http://ceur-ws.org/Vol-1369/#HarriiOinas-Kukkonen>,
         <http://ceur-ws.org/Vol-1369/#LisetteivaniGemertiPijnen>,
         <http://ceur-ws.org/Vol-1369/#OlgaiKulyk>,
         <http://ceur-ws.org/Vol-1369/#SaskiaiKelders> .

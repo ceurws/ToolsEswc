@@ -1,43 +1,56 @@
-@prefix ns1: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns2: <http://purl.org/ontology/bibo/#> .
-@prefix ns3: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns1: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns2: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns3: <http://xmlns.com/foaf/0.1/> .
 @prefix ns4: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns5: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns6: <http://xmlns.com/foaf/0.1/> .
+@prefix ns5: <http://purl.org/ontology/bibo/#> .
+@prefix ns6: <http://data.semanticweb.org/ns/swc/ontology/#> .
 @prefix ns7: <http://www.w3.org/2002/07/owl#> .
 @prefix ns8: <http://purl.org/dc/elements/1.1/> .
+@prefix ns9: <http://purl.org/dc/elements/1.1/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-200/> a ns5:Proceedings ;
-    ns3:issued "2006-09-13T00:00:00+00:00"^^xsd:dateTime ;
-    ns2:presentedAt <http://ceur-ws.org/Vol-200/#event> ;
+<http://ceur-ws.org/Vol-200/> a ns6:Proceedings ;
+    ns1:issued "2006-09-13T00:00:00+00:00"^^xsd:dateTime ;
+    ns5:presentedAt <http://ceur-ws.org/Vol-200/#event> ;
     ns4:editor <http://ceur-ws.org/Vol-200/#AntonioiDeiNicola>,
         <http://ceur-ws.org/Vol-200/#FulvioiD%27Antonio>,
         <http://ceur-ws.org/Vol-200/#MicheleiMissikoff> .
 
-<http://ceur-ws.org/Vol-200/#AntonioiDeiNicola> a ns6:Person ;
+<http://ceur-ws.org/Vol-200/#AntonioiDeiNicola> a ns3:Person ;
     ns7:sameAs <http://ceur-ws.org/persons/AntonioiDeiNicola> ;
-    ns6:name "Antonio De Nicola" .
+    ns3:name "Antonio De Nicola" .
 
-<http://ceur-ws.org/Vol-200/#FulvioiD%27Antonio> a ns6:Person ;
+<http://ceur-ws.org/Vol-200/#FulvioiD%27Antonio> a ns3:Person ;
     ns7:sameAs <http://ceur-ws.org/persons/FulvioiD%27Antonio> ;
-    ns6:name "Fulvio D'Antonio" .
+    ns3:name "Fulvio D'Antonio" .
 
-<http://ceur-ws.org/Vol-200/#MicheleiMissikoff> a ns6:Person ;
+<http://ceur-ws.org/Vol-200/#MicheleiMissikoff> a ns3:Person ;
     ns7:sameAs <http://ceur-ws.org/persons/MicheleiMissikoff> ;
-    ns6:name "Michele Missikoff" .
+    ns3:name "Michele Missikoff" .
 
-<http://ceur-ws.org/Vol-200/#event> a ns5:WorkshopEvent ;
-    ns5:hasLocation <http://dbpedia.org/resource/Luxembourg> ;
-    ns5:hasPart <http://ceur-ws.org/Vol-200/#part-EMOI>,
+<http://ceur-ws.org/Vol-200/#event> a ns6:WorkshopEvent ;
+    ns6:hasLocation <http://dbpedia.org/resource/Luxembourg> ;
+    ns6:hasPart <http://ceur-ws.org/Vol-200/#part-EMOI>,
         <http://ceur-ws.org/Vol-200/#part-INTEROP> ;
-    ns5:isSubEventOf <http://ceur-ws.org/Vol-200/#conf> ;
-    ns1:beginsAtDatetime "2006-06-05T00:00:00+00:00"^^xsd:dateTime ;
-    ns1:endsAtDatetime "2006-06-06T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:isSubEventOf <http://ceur-ws.org/Vol-200/#conf> ;
+    ns2:beginsAtDatetime "2006-06-05T00:00:00+00:00"^^xsd:dateTime ;
+    ns2:endsAtDatetime "2006-06-06T00:00:00+00:00"^^xsd:dateTime ;
     ns8:license "http://choosealicense.com/licenses/no-license/" ;
     rdfs:seeAlso <http://ceur-ws.org/Vol-125/#event>,
         <http://ceur-ws.org/Vol-160/#event> .
+
+<http://ceur-ws.org/Vol-200/#part-EMOI> a ns5:Workshop ;
+    ns6:partOf <http://ceur-ws.org/series/EMOI> ;
+    ns9:title "Enterprise Modelling and Ontologies for Interoperability 2006" ;
+    ns5:shortTitle "EMOI" ;
+    ns4:edition 1 .
+
+<http://ceur-ws.org/Vol-200/#part-INTEROP> a ns5:Workshop ;
+    ns6:partOf <http://ceur-ws.org/series/INTEROP> ;
+    ns9:title "Enterprise Modelling and Ontologies for Interoperability 2006" ;
+    ns5:shortTitle "INTEROP" ;
+    ns4:edition 1 .
 

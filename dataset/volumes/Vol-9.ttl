@@ -1,19 +1,20 @@
 @prefix ns1: <http://www.w3.org/2002/07/owl#> .
 @prefix ns2: <http://xmlns.com/foaf/0.1/> .
 @prefix ns3: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns4: <http://purl.org/dc/elements/1.1/> .
-@prefix ns5: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns6: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns7: <http://purl.org/ontology/bibo/#> .
+@prefix ns4: <http://purl.org/ontology/bibo/#> .
+@prefix ns5: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns6: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns7: <http://purl.org/dc/elements/1.1/> .
 @prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns9: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-9/> a ns5:Proceedings ;
-    ns6:issued "1998-03-30T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:presentedAt <http://ceur-ws.org/Vol-9/#event> ;
+<http://ceur-ws.org/Vol-9/> a ns6:Proceedings ;
+    ns9:issued "1998-03-30T00:00:00+00:00"^^xsd:dateTime ;
+    ns4:presentedAt <http://ceur-ws.org/Vol-9/#event> ;
     ns3:editor <http://ceur-ws.org/Vol-9/#%C2%A0>,
         <http://ceur-ws.org/Vol-9/#%C2%A0%C2%A0%C2%A0iAachen>,
         <http://ceur-ws.org/Vol-9/#AndyiSch%C3%BCrr>,
@@ -117,16 +118,20 @@
     ns1:sameAs <http://ceur-ws.org/persons/befassenisichimitideriModellierungiunterschiedlicheriAspekteivoniSoftware-iundiInformationssystemen.iDieidaf%C3%BCrientwickelteniKonzepteiundiVorgehensweisenivorzustellen> ;
     ns2:name "befassen sich mit der Modellierung unterschiedlicher Aspekte von Software- und Informationssystemen. Die dafür entwickelten Konzepte und Vorgehensweisen vorzustellen" .
 
-<http://ceur-ws.org/Vol-9/#event> a ns5:WorkshopEvent ;
-    ns5:hasPart <http://ceur-ws.org/Vol-9/#part-ws> ;
-    ns5:isSubEventOf <http://ceur-ws.org/Vol-9/#conf> ;
+<http://ceur-ws.org/Vol-9/#event> a ns6:WorkshopEvent ;
+    ns6:hasPart <http://ceur-ws.org/Vol-9/#part-ws> ;
+    ns6:isSubEventOf <http://ceur-ws.org/Vol-9/#conf> ;
     ns8:beginsAtDatetime "1998-03-11T00:00:00+00:00"^^xsd:dateTime ;
     ns8:endsAtDatetime "1998-03-11T00:00:00+00:00"^^xsd:dateTime ;
-    ns4:license "http://choosealicense.com/licenses/no-license/" .
+    ns7:license "http://choosealicense.com/licenses/no-license/" .
 
 <http://ceur-ws.org/Vol-9/#gedankt.iAmiTageideriEinreichungsfristifehlteiunsikeinieinzigesiGutachten> a ns2:Person ;
     ns1:sameAs <http://ceur-ws.org/persons/gedankt.iAmiTageideriEinreichungsfristifehlteiunsikeinieinzigesiGutachten> ;
     ns2:name "gedankt. Am Tage der Einreichungsfrist fehlte uns kein einziges Gutachten" .
+
+<http://ceur-ws.org/Vol-9/#part-ws> a ns4:Workshop ;
+    ns6:partOf <http://ceur-ws.org/series/ws> ;
+    ns5:title "Modellierung '98" .
 
 <http://ceur-ws.org/Vol-9/#zuidiskutiereniwarivornehmlichesiZielidesiWorkshopsiModellierungi%27> a ns2:Person ;
     ns1:sameAs <http://ceur-ws.org/persons/zuidiskutiereniwarivornehmlichesiZielidesiWorkshopsiModellierungi%27> ;

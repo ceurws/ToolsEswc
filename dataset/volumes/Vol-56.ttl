@@ -1,20 +1,21 @@
-@prefix ns1: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns2: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns3: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns4: <http://www.w3.org/2002/07/owl#> .
-@prefix ns5: <http://purl.org/dc/elements/1.1/> .
+@prefix ns1: <http://www.w3.org/2002/07/owl#> .
+@prefix ns2: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns3: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns4: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns5: <http://purl.org/NET/c4dm/timeline.owl#> .
 @prefix ns6: <http://xmlns.com/foaf/0.1/> .
-@prefix ns7: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns8: <http://purl.org/ontology/bibo/#> .
+@prefix ns7: <http://purl.org/dc/elements/1.1/> .
+@prefix ns8: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns9: <http://purl.org/ontology/bibo/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-56/> a ns7:Proceedings ;
-    ns3:issued "2002-05-01T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:presentedAt <http://ceur-ws.org/Vol-56/#event> ;
-    ns1:editor <http://ceur-ws.org/Vol-56/#DietmariSaupe>,
+<http://ceur-ws.org/Vol-56/> a ns4:Proceedings ;
+    ns2:issued "2002-05-01T00:00:00+00:00"^^xsd:dateTime ;
+    ns9:presentedAt <http://ceur-ws.org/Vol-56/#event> ;
+    ns3:editor <http://ceur-ws.org/Vol-56/#DietmariSaupe>,
         <http://ceur-ws.org/Vol-56/#FrithjofiKruggel>,
         <http://ceur-ws.org/Vol-56/#HeinziHandels>,
         <http://ceur-ws.org/Vol-56/#Herausgegebenivon>,
@@ -22,33 +23,37 @@
         <http://ceur-ws.org/Vol-56/#ThomasiLehmann> .
 
 <http://ceur-ws.org/Vol-56/#DietmariSaupe> a ns6:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/DietmariSaupe> ;
+    ns1:sameAs <http://ceur-ws.org/persons/DietmariSaupe> ;
     ns6:name "Dietmar Saupe" .
 
 <http://ceur-ws.org/Vol-56/#FrithjofiKruggel> a ns6:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/FrithjofiKruggel> ;
+    ns1:sameAs <http://ceur-ws.org/persons/FrithjofiKruggel> ;
     ns6:name "Frithjof Kruggel" .
 
 <http://ceur-ws.org/Vol-56/#HeinziHandels> a ns6:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/HeinziHandels> ;
+    ns1:sameAs <http://ceur-ws.org/persons/HeinziHandels> ;
     ns6:name "Heinz Handels" .
 
 <http://ceur-ws.org/Vol-56/#Herausgegebenivon> a ns6:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/Herausgegebenivon> ;
+    ns1:sameAs <http://ceur-ws.org/persons/Herausgegebenivon> ;
     ns6:name "Herausgegeben von" .
 
 <http://ceur-ws.org/Vol-56/#MonikaiMeiler> a ns6:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/MonikaiMeiler> ;
+    ns1:sameAs <http://ceur-ws.org/persons/MonikaiMeiler> ;
     ns6:name "Monika Meiler" .
 
 <http://ceur-ws.org/Vol-56/#ThomasiLehmann> a ns6:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/ThomasiLehmann> ;
+    ns1:sameAs <http://ceur-ws.org/persons/ThomasiLehmann> ;
     ns6:name "Thomas Lehmann" .
 
-<http://ceur-ws.org/Vol-56/#event> a ns7:WorkshopEvent ;
-    ns7:hasPart <http://ceur-ws.org/Vol-56/#part-ws> ;
-    ns7:isSubEventOf <http://ceur-ws.org/Vol-56/#conf> ;
-    ns2:beginsAtDatetime "2002-03-12T00:00:00+00:00"^^xsd:dateTime ;
-    ns2:endsAtDatetime "2002-03-12T00:00:00+00:00"^^xsd:dateTime ;
-    ns5:license "http://choosealicense.com/licenses/no-license/" .
+<http://ceur-ws.org/Vol-56/#event> a ns4:WorkshopEvent ;
+    ns4:hasPart <http://ceur-ws.org/Vol-56/#part-ws> ;
+    ns4:isSubEventOf <http://ceur-ws.org/Vol-56/#conf> ;
+    ns5:beginsAtDatetime "2002-03-12T00:00:00+00:00"^^xsd:dateTime ;
+    ns5:endsAtDatetime "2002-03-12T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:license "http://choosealicense.com/licenses/no-license/" .
+
+<http://ceur-ws.org/Vol-56/#part-ws> a ns9:Workshop ;
+    ns4:partOf <http://ceur-ws.org/series/ws> ;
+    ns8:title "Bildverarbeitung für die Medizin 2002: Algorithmen - Systeme - Anwendungen" .
 

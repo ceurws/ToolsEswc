@@ -1,8 +1,8 @@
 @prefix ns1: <http://xmlns.com/foaf/0.1/> .
-@prefix ns2: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns2: <http://swrc.ontoware.org/ontology/#> .
 @prefix ns3: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns4: <http://purl.org/ontology/bibo/#> .
-@prefix ns5: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns4: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns5: <http://purl.org/ontology/bibo/#> .
 @prefix ns6: <http://www.w3.org/2002/07/owl#> .
 @prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
 @prefix ns8: <http://purl.org/dc/elements/1.1/> .
@@ -188,8 +188,8 @@
     ns1:name "Nigel Collier" .
 
 <http://ceur-ws.org/Vol-222/#OlivieriBodenreider> a ns1:Person ;
-    ns4:place <http://dbpedia.org/resource/United_States> ;
-    ns5:affiliation "National Library of Medicine" ;
+    ns5:place <http://dbpedia.org/resource/United_States> ;
+    ns2:affiliation "National Library of Medicine" ;
     ns6:sameAs <http://ceur-ws.org/persons/OlivieriBodenreider> ;
     ns1:name "Olivier Bodenreider" .
 
@@ -272,101 +272,107 @@
     ns8:license "http://choosealicense.com/licenses/no-license/" ;
     rdfs:seeAlso <http://ceur-ws.org/Vol-102/#event> .
 
+<http://ceur-ws.org/Vol-222/#part-KR-MED> a ns5:Workshop ;
+    ns3:partOf <http://ceur-ws.org/series/KR-MED> ;
+    ns4:title "Formal Biomedical Knowledge Representation 2006" ;
+    ns5:shortTitle "KR-MED" ;
+    ns2:edition 2 .
+
 <http://ceur-ws.org/Vol-222/#krmed2006-a11> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-222/> ;
-    ns2:title "A CPG-Based Ontology Driven Clinical Decision Support System for Breast Cancer Follow-Up" ;
-    ns4:section <http://ceur-ws.org/Vol-222/#Posters> ;
-    ns5:author <http://ceur-ws.org/Vol-222/#SaminaiRazaiAbidi> .
+    ns4:title "A CPG-Based Ontology Driven Clinical Decision Support System for Breast Cancer Follow-Up" ;
+    ns5:section <http://ceur-ws.org/Vol-222/#Posters> ;
+    ns2:author <http://ceur-ws.org/Vol-222/#SaminaiRazaiAbidi> .
 
 <http://ceur-ws.org/Vol-222/#krmed2006-a13> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-222/> ;
-    ns2:title "Experience with an Ontology of Pediatric Electrolyte Disorders in a Developing Country" ;
-    ns4:section <http://ceur-ws.org/Vol-222/#Posters> ;
-    ns5:author <http://ceur-ws.org/Vol-222/#VorapongiChaichanamongkol>,
+    ns4:title "Experience with an Ontology of Pediatric Electrolyte Disorders in a Developing Country" ;
+    ns5:section <http://ceur-ws.org/Vol-222/#Posters> ;
+    ns2:author <http://ceur-ws.org/Vol-222/#VorapongiChaichanamongkol>,
         <http://ceur-ws.org/Vol-222/#WanwipaiTitthasiri> .
 
 <http://ceur-ws.org/Vol-222/#krmed2006-p03> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-222/> ;
-    ns2:title "Using Ontology Graphs to Understand Annotations and Reason about Them" ;
-    ns4:section <http://ceur-ws.org/Vol-222/#Papers> ;
-    ns5:author <http://ceur-ws.org/Vol-222/#JudithiA.iBlake>,
+    ns4:title "Using Ontology Graphs to Understand Annotations and Reason about Them" ;
+    ns5:section <http://ceur-ws.org/Vol-222/#Papers> ;
+    ns2:author <http://ceur-ws.org/Vol-222/#JudithiA.iBlake>,
         <http://ceur-ws.org/Vol-222/#MaryiE.iDolan> .
 
 <http://ceur-ws.org/Vol-222/#krmed2006-p05> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-222/> ;
-    ns2:title "\"Lmo-2 interacts with elf-2\" On the Meaning of Common Statements in Biomedical Literature" ;
-    ns4:section <http://ceur-ws.org/Vol-222/#Papers> ;
-    ns5:author <http://ceur-ws.org/Vol-222/#LudgeriJansen>,
+    ns4:title "\"Lmo-2 interacts with elf-2\" On the Meaning of Common Statements in Biomedical Literature" ;
+    ns5:section <http://ceur-ws.org/Vol-222/#Papers> ;
+    ns2:author <http://ceur-ws.org/Vol-222/#LudgeriJansen>,
         <http://ceur-ws.org/Vol-222/#StefaniSchulz> .
 
 <http://ceur-ws.org/Vol-222/#krmed2006-p06> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-222/> ;
-    ns2:title "The Qualitative and Time-Dependent Character of Spatial Relations in Biomedical Ontologies" ;
-    ns4:section <http://ceur-ws.org/Vol-222/#Papers> ;
-    ns5:author <http://ceur-ws.org/Vol-222/#LouisiJ.iGoldberg>,
+    ns4:title "The Qualitative and Time-Dependent Character of Spatial Relations in Biomedical Ontologies" ;
+    ns5:section <http://ceur-ws.org/Vol-222/#Papers> ;
+    ns2:author <http://ceur-ws.org/Vol-222/#LouisiJ.iGoldberg>,
         <http://ceur-ws.org/Vol-222/#ThomasiBittner> .
 
 <http://ceur-ws.org/Vol-222/#krmed2006-p02> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-222/> ;
-    ns2:title "Binding Ontologies & Coding Systems to Electronic Health Records and Messages" ;
-    ns4:section <http://ceur-ws.org/Vol-222/#Papers> ;
-    ns5:author <http://ceur-ws.org/Vol-222/#ALiRector>,
+    ns4:title "Binding Ontologies & Coding Systems to Electronic Health Records and Messages" ;
+    ns5:section <http://ceur-ws.org/Vol-222/#Papers> ;
+    ns2:author <http://ceur-ws.org/Vol-222/#ALiRector>,
         <http://ceur-ws.org/Vol-222/#RiQamar>,
         <http://ceur-ws.org/Vol-222/#TiMarley> .
 
 <http://ceur-ws.org/Vol-222/#krmed2006-p10> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-222/> ;
-    ns2:title "BioFrameNet: A Domain-Specific FrameNet Extension with Links to Biomedical Ontologies" ;
-    ns4:section <http://ceur-ws.org/Vol-222/#Papers> ;
-    ns5:author <http://ceur-ws.org/Vol-222/#AndrewiDolbey>,
+    ns4:title "BioFrameNet: A Domain-Specific FrameNet Extension with Links to Biomedical Ontologies" ;
+    ns5:section <http://ceur-ws.org/Vol-222/#Papers> ;
+    ns2:author <http://ceur-ws.org/Vol-222/#AndrewiDolbey>,
         <http://ceur-ws.org/Vol-222/#JaniScheffczyk>,
         <http://ceur-ws.org/Vol-222/#MichaeliEllsworth> .
 
 <http://ceur-ws.org/Vol-222/#Posters> a ns3:SessionEvent ;
     ns3:partOf <http://ceur-ws.org/Vol-222/> ;
-    ns2:title "Posters" .
+    ns4:title "Posters" .
 
 <http://ceur-ws.org/Vol-222/#krmed2006-a14> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-222/> ;
-    ns2:title "Issues in Representing Biological and Clinical Phenotypes Using the Formal Models" ;
-    ns4:section <http://ceur-ws.org/Vol-222/#Posters> ;
-    ns5:author <http://ceur-ws.org/Vol-222/#CaroliFriedman>,
+    ns4:title "Issues in Representing Biological and Clinical Phenotypes Using the Formal Models" ;
+    ns5:section <http://ceur-ws.org/Vol-222/#Posters> ;
+    ns2:author <http://ceur-ws.org/Vol-222/#CaroliFriedman>,
         <http://ceur-ws.org/Vol-222/#ChintaniPatel>,
         <http://ceur-ws.org/Vol-222/#YingiTao>,
         <http://ceur-ws.org/Vol-222/#YvesiA.iLussier> .
 
 <http://ceur-ws.org/Vol-222/#krmed2006-p01> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-222/> ;
-    ns2:title "Registration in Practice: Comparing Free-Text and Compositional Terminological System Based Registration of ICU Reasons for Admission" ;
-    ns4:section <http://ceur-ws.org/Vol-222/#Papers> ;
-    ns5:author <http://ceur-ws.org/Vol-222/#EvertideiJonge>,
+    ns4:title "Registration in Practice: Comparing Free-Text and Compositional Terminological System Based Registration of ICU Reasons for Admission" ;
+    ns5:section <http://ceur-ws.org/Vol-222/#Papers> ;
+    ns2:author <http://ceur-ws.org/Vol-222/#EvertideiJonge>,
         <http://ceur-ws.org/Vol-222/#FerishtaiBakhshi-Raiez>,
         <http://ceur-ws.org/Vol-222/#NicoletteideiKeizer>,
         <http://ceur-ws.org/Vol-222/#RonaldiCornet> .
 
 <http://ceur-ws.org/Vol-222/#krmed2006-p07> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-222/> ;
-    ns2:title "Towards a Reference Terminology for Ontology Research and Development in the Biomedical Domain" ;
-    ns4:section <http://ceur-ws.org/Vol-222/#Papers> ;
-    ns5:author <http://ceur-ws.org/Vol-222/#BarryiSmith>,
+    ns4:title "Towards a Reference Terminology for Ontology Research and Development in the Biomedical Domain" ;
+    ns5:section <http://ceur-ws.org/Vol-222/#Papers> ;
+    ns2:author <http://ceur-ws.org/Vol-222/#BarryiSmith>,
         <http://ceur-ws.org/Vol-222/#DanieliSchober>,
         <http://ceur-ws.org/Vol-222/#WaclawiKusnierczyk>,
         <http://ceur-ws.org/Vol-222/#WerneriCeusters> .
 
 <http://ceur-ws.org/Vol-222/#krmed2006-p08> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-222/> ;
-    ns2:title "LinKBase®, a Philosophically-Inspired Ontology for NLP/NLU Applications" ;
-    ns4:section <http://ceur-ws.org/Vol-222/#Papers> ;
-    ns5:author <http://ceur-ws.org/Vol-222/#ManueliDecoene>,
+    ns4:title "LinKBase®, a Philosophically-Inspired Ontology for NLP/NLU Applications" ;
+    ns5:section <http://ceur-ws.org/Vol-222/#Papers> ;
+    ns2:author <http://ceur-ws.org/Vol-222/#ManueliDecoene>,
         <http://ceur-ws.org/Vol-222/#MariaivaniGurp>,
         <http://ceur-ws.org/Vol-222/#MarianaiCasellaidosiSantos>,
         <http://ceur-ws.org/Vol-222/#MarnixiHolvoet> .
 
 <http://ceur-ws.org/Vol-222/#krmed2006-a12> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-222/> ;
-    ns2:title "Inferring Gene Ontology Category Membership via Gene Expression and Sequence Similarity Data Analysis" ;
-    ns4:section <http://ceur-ws.org/Vol-222/#Posters> ;
-    ns5:author <http://ceur-ws.org/Vol-222/#BeniGoertzel>,
+    ns4:title "Inferring Gene Ontology Category Membership via Gene Expression and Sequence Similarity Data Analysis" ;
+    ns5:section <http://ceur-ws.org/Vol-222/#Posters> ;
+    ns2:author <http://ceur-ws.org/Vol-222/#BeniGoertzel>,
         <http://ceur-ws.org/Vol-222/#CassioiPennachin>,
         <http://ceur-ws.org/Vol-222/#FranciscoiPereiraiLobo>,
         <http://ceur-ws.org/Vol-222/#FranciscoiProsdocimi>,
@@ -375,9 +381,9 @@
 
 <http://ceur-ws.org/Vol-222/#krmed2006-p04> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-222/> ;
-    ns2:title "An Online Ontology: WiktionaryZ" ;
-    ns4:section <http://ceur-ws.org/Vol-222/#Papers> ;
-    ns5:author <http://ceur-ws.org/Vol-222/#BarendiMons>,
+    ns4:title "An Online Ontology: WiktionaryZ" ;
+    ns5:section <http://ceur-ws.org/Vol-222/#Papers> ;
+    ns2:author <http://ceur-ws.org/Vol-222/#BarendiMons>,
         <http://ceur-ws.org/Vol-222/#ErikiM%C3%B6ller>,
         <http://ceur-ws.org/Vol-222/#ErikiM.ivaniMulligen>,
         <http://ceur-ws.org/Vol-222/#GerardiMeijssen>,
@@ -386,9 +392,9 @@
 
 <http://ceur-ws.org/Vol-222/#krmed2006-p09> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-222/> ;
-    ns2:title "The Development of a Schema for the Annotation of Terms in the Biocaster Disease Detecting/Tracking System" ;
-    ns4:section <http://ceur-ws.org/Vol-222/#Papers> ;
-    ns5:author <http://ceur-ws.org/Vol-222/#AiiKawazoe>,
+    ns4:title "The Development of a Schema for the Annotation of Terms in the Biocaster Disease Detecting/Tracking System" ;
+    ns5:section <http://ceur-ws.org/Vol-222/#Papers> ;
+    ns2:author <http://ceur-ws.org/Vol-222/#AiiKawazoe>,
         <http://ceur-ws.org/Vol-222/#KiyosuiTaniguchi>,
         <http://ceur-ws.org/Vol-222/#LihuaiJin>,
         <http://ceur-ws.org/Vol-222/#MikaiShigematsu>,
@@ -397,7 +403,7 @@
 
 <http://ceur-ws.org/Vol-222/#Papers> a ns3:SessionEvent ;
     ns3:partOf <http://ceur-ws.org/Vol-222/> ;
-    ns2:title "Papers" .
+    ns4:title "Papers" .
 
 <http://ceur-ws.org/Vol-222/> a ns3:Proceedings ;
     ns3:hasPart <http://ceur-ws.org/Vol-222/#krmed2006-a11>,
@@ -417,6 +423,6 @@
     ns3:hasSession <http://ceur-ws.org/Vol-222/#Papers>,
         <http://ceur-ws.org/Vol-222/#Posters> ;
     ns9:issued "2006-11-27T00:00:00+00:00"^^xsd:dateTime ;
-    ns4:presentedAt <http://ceur-ws.org/Vol-222/#event> ;
-    ns5:editor <http://ceur-ws.org/Vol-222/#OlivieriBodenreider> .
+    ns5:presentedAt <http://ceur-ws.org/Vol-222/#event> ;
+    ns2:editor <http://ceur-ws.org/Vol-222/#OlivieriBodenreider> .
 

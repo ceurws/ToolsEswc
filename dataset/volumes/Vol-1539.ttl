@@ -1,12 +1,12 @@
 @prefix ns1: <http://xmlns.com/foaf/0.1/> .
 @prefix ns2: <http://www.w3.org/2002/07/owl#> .
 @prefix ns3: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns4: <http://purl.org/ontology/bibo/#> .
-@prefix ns5: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns6: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns7: <http://purl.org/dc/elements/1.1/> .
-@prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns9: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns4: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns5: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns6: <http://purl.org/ontology/bibo/#> .
+@prefix ns7: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns9: <http://purl.org/dc/elements/1.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -162,90 +162,96 @@
     ns2:sameAs <http://ceur-ws.org/persons/YannisiManolopoulos> ;
     ns1:name "Yannis Manolopoulos" .
 
-<http://ceur-ws.org/Vol-1539/#event> a ns5:WorkshopEvent ;
-    ns5:hasLocation <http://dbpedia.org/resource/France> ;
-    ns5:hasPart <http://ceur-ws.org/Vol-1539/#part-AIAI-STW> ;
-    ns5:isSubEventOf <http://ceur-ws.org/Vol-1539/#conf> ;
-    ns8:beginsAtDatetime "2015-09-14T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:endsAtDatetime "2015-09-17T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:license "http://creativecommons.org/publicdomain/zero/1.0/" ;
+<http://ceur-ws.org/Vol-1539/#event> a ns4:WorkshopEvent ;
+    ns4:hasLocation <http://dbpedia.org/resource/France> ;
+    ns4:hasPart <http://ceur-ws.org/Vol-1539/#part-AIAI-STW> ;
+    ns4:isSubEventOf <http://ceur-ws.org/Vol-1539/#conf> ;
+    ns5:beginsAtDatetime "2015-09-14T00:00:00+00:00"^^xsd:dateTime ;
+    ns5:endsAtDatetime "2015-09-17T00:00:00+00:00"^^xsd:dateTime ;
+    ns9:license "http://creativecommons.org/publicdomain/zero/1.0/" ;
     rdfs:seeAlso <http://ceur-ws.org/Vol-475/#event> .
 
-<http://ceur-ws.org/Vol-1539/#paper6> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1539/> ;
-    ns6:title "Recent Developments in City Scale Modelling, Monitoring and Performance Information Delivery" ;
-    ns4:endPage 66 ;
-    ns4:numPages 8 ;
-    ns4:startPage 59 ;
+<http://ceur-ws.org/Vol-1539/#part-AIAI-STW> a ns6:Workshop ;
+    ns4:partOf <http://ceur-ws.org/series/AIAI-STW> ;
+    ns7:title "Special Tracks and Workshops of AIAI 2015" ;
+    ns6:shortTitle "AIAI-STW" ;
+    ns3:edition 1 .
+
+<http://ceur-ws.org/Vol-1539/#paper6> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1539/> ;
+    ns7:title "Recent Developments in City Scale Modelling, Monitoring and Performance Information Delivery" ;
+    ns6:endPage 66 ;
+    ns6:numPages 8 ;
+    ns6:startPage 59 ;
     ns3:author <http://ceur-ws.org/Vol-1539/#JoeiClarke> .
 
-<http://ceur-ws.org/Vol-1539/#paper3> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1539/> ;
-    ns6:title "Intelligent Energy Efficient and MAC Aware Multipath QoS Routing Protocol for Wireless Multimedia Sensor Networks" ;
-    ns4:endPage 31 ;
-    ns4:numPages 9 ;
-    ns4:startPage 23 ;
+<http://ceur-ws.org/Vol-1539/#paper3> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1539/> ;
+    ns7:title "Intelligent Energy Efficient and MAC Aware Multipath QoS Routing Protocol for Wireless Multimedia Sensor Networks" ;
+    ns6:endPage 31 ;
+    ns6:numPages 9 ;
+    ns6:startPage 23 ;
     ns3:author <http://ceur-ws.org/Vol-1539/#HasinaiAttaullah>,
         <http://ceur-ws.org/Vol-1539/#MuhammadiFaisaliKhan> .
 
-<http://ceur-ws.org/Vol-1539/#paper5> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1539/> ;
-    ns6:title "The VERYSchool Project: Valuable EneRgY for a Smart School - Intelligent ISO 50001 Energy Management Decision Making in School Buildings" ;
-    ns4:endPage 58 ;
-    ns4:numPages 13 ;
-    ns4:startPage 46 ;
+<http://ceur-ws.org/Vol-1539/#paper5> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1539/> ;
+    ns7:title "The VERYSchool Project: Valuable EneRgY for a Smart School - Intelligent ISO 50001 Energy Management Decision Making in School Buildings" ;
+    ns6:endPage 58 ;
+    ns6:numPages 13 ;
+    ns6:startPage 46 ;
     ns3:author <http://ceur-ws.org/Vol-1539/#AlfioiGalata>,
         <http://ceur-ws.org/Vol-1539/#MikeiBrogan> .
 
-<http://ceur-ws.org/Vol-1539/#paper1> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1539/> ;
-    ns6:title "Spike-Time Dependant Plasticity in a Spiking Neural Network for Robot Path Planning" ;
-    ns4:endPage 13 ;
-    ns4:numPages 12 ;
-    ns4:startPage 2 ;
+<http://ceur-ws.org/Vol-1539/#paper1> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1539/> ;
+    ns7:title "Spike-Time Dependant Plasticity in a Spiking Neural Network for Robot Path Planning" ;
+    ns6:endPage 13 ;
+    ns6:numPages 12 ;
+    ns6:startPage 2 ;
     ns3:author <http://ceur-ws.org/Vol-1539/#MohamediBenmohammed>,
         <http://ceur-ws.org/Vol-1539/#MohamediNadjibiZennir>,
         <http://ceur-ws.org/Vol-1539/#RimaiBoudjadja> .
 
-<http://ceur-ws.org/Vol-1539/#paper4> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1539/> ;
-    ns6:title "Investigation of Using Fuzzy Logic to Model Occupant Satisfaction and Behavior in a Building" ;
-    ns4:endPage 45 ;
-    ns4:numPages 14 ;
-    ns4:startPage 32 ;
+<http://ceur-ws.org/Vol-1539/#paper4> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1539/> ;
+    ns7:title "Investigation of Using Fuzzy Logic to Model Occupant Satisfaction and Behavior in a Building" ;
+    ns6:endPage 45 ;
+    ns6:numPages 14 ;
+    ns6:startPage 32 ;
     ns3:author <http://ceur-ws.org/Vol-1539/#A.iBurakiGoktepe>,
         <http://ceur-ws.org/Vol-1539/#GulbeniCalis>,
         <http://ceur-ws.org/Vol-1539/#IremiBayram> .
 
-<http://ceur-ws.org/Vol-1539/#paper2> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1539/> ;
-    ns6:title "Quranic Letter Pronunciation Analysis based on Spectrogram Technique: Case Study on Qalqalah Letters" ;
-    ns4:endPage 22 ;
-    ns4:numPages 9 ;
-    ns4:startPage 14 ;
+<http://ceur-ws.org/Vol-1539/#paper2> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1539/> ;
+    ns7:title "Quranic Letter Pronunciation Analysis based on Spectrogram Technique: Case Study on Qalqalah Letters" ;
+    ns6:endPage 22 ;
+    ns6:numPages 9 ;
+    ns6:startPage 14 ;
     ns3:author <http://ceur-ws.org/Vol-1539/#SalmiahiAhmad>,
         <http://ceur-ws.org/Vol-1539/#SuruliShahbudiniHassan>,
         <http://ceur-ws.org/Vol-1539/#TareqiAltalmas>,
         <http://ceur-ws.org/Vol-1539/#WahjuiSediono> .
 
-<http://ceur-ws.org/Vol-1539/#paper7> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1539/> ;
-    ns6:title "Towards a Data Driven Platform for Energy Efficiency Monitoring: Two Use Cases" ;
-    ns4:endPage 82 ;
-    ns4:numPages 16 ;
-    ns4:startPage 67 ;
+<http://ceur-ws.org/Vol-1539/#paper7> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1539/> ;
+    ns7:title "Towards a Data Driven Platform for Energy Efficiency Monitoring: Two Use Cases" ;
+    ns6:endPage 82 ;
+    ns6:numPages 16 ;
+    ns6:startPage 67 ;
     ns3:author <http://ceur-ws.org/Vol-1539/#CarlesiPous>,
         <http://ceur-ws.org/Vol-1539/#JoaniColomer>,
         <http://ceur-ws.org/Vol-1539/#JoaquimiMassana>,
         <http://ceur-ws.org/Vol-1539/#JoaquimiMelendez>,
         <http://ceur-ws.org/Vol-1539/#Lloren%C3%A7iBurgas> .
 
-<http://ceur-ws.org/Vol-1539/#paper8> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-1539/> ;
-    ns6:title "WATERNOMICS (ICT for Water Resource Management) - Methodology for Deployment of a Water Management System" ;
-    ns4:endPage 96 ;
-    ns4:numPages 14 ;
-    ns4:startPage 83 ;
+<http://ceur-ws.org/Vol-1539/#paper8> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1539/> ;
+    ns7:title "WATERNOMICS (ICT for Water Resource Management) - Methodology for Deployment of a Water Management System" ;
+    ns6:endPage 96 ;
+    ns6:numPages 14 ;
+    ns6:startPage 83 ;
     ns3:author <http://ceur-ws.org/Vol-1539/#CostaiAndrea>,
         <http://ceur-ws.org/Vol-1539/#DomenicoiPerfido>,
         <http://ceur-ws.org/Vol-1539/#FedericoiNoris>,
@@ -253,8 +259,8 @@
         <http://ceur-ws.org/Vol-1539/#SanderiSmit>,
         <http://ceur-ws.org/Vol-1539/#ThomasiMesservey> .
 
-<http://ceur-ws.org/Vol-1539/> a ns5:Proceedings ;
-    ns5:hasPart <http://ceur-ws.org/Vol-1539/#paper1>,
+<http://ceur-ws.org/Vol-1539/> a ns4:Proceedings ;
+    ns4:hasPart <http://ceur-ws.org/Vol-1539/#paper1>,
         <http://ceur-ws.org/Vol-1539/#paper2>,
         <http://ceur-ws.org/Vol-1539/#paper3>,
         <http://ceur-ws.org/Vol-1539/#paper4>,
@@ -262,8 +268,8 @@
         <http://ceur-ws.org/Vol-1539/#paper6>,
         <http://ceur-ws.org/Vol-1539/#paper7>,
         <http://ceur-ws.org/Vol-1539/#paper8> ;
-    ns9:issued "2015-12-21T00:00:00+00:00"^^xsd:dateTime ;
-    ns4:presentedAt <http://ceur-ws.org/Vol-1539/#event> ;
+    ns8:issued "2015-12-21T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:presentedAt <http://ceur-ws.org/Vol-1539/#event> ;
     ns3:editor <http://ceur-ws.org/Vol-1539/#IliasiMaglogiannis>,
         <http://ceur-ws.org/Vol-1539/#RedaiAlhajj>,
         <http://ceur-ws.org/Vol-1539/#RichardiChbeir>,

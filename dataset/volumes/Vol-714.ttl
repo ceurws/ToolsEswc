@@ -1,52 +1,59 @@
-@prefix ns1: <http://www.w3.org/2002/07/owl#> .
-@prefix ns2: <http://purl.org/dc/elements/1.1/> .
-@prefix ns3: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns4: <http://purl.org/ontology/bibo/#> .
+@prefix ns1: <http://xmlns.com/foaf/0.1/> .
+@prefix ns2: <http://www.w3.org/2002/07/owl#> .
+@prefix ns3: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns4: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix ns5: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns6: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns7: <http://xmlns.com/foaf/0.1/> .
-@prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns6: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns7: <http://purl.org/dc/elements/1.1/> .
+@prefix ns8: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns9: <http://purl.org/ontology/bibo/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-714/> a ns6:Proceedings ;
-    ns3:issued "2011-04-18T00:00:00+00:00"^^xsd:dateTime ;
-    ns4:presentedAt <http://ceur-ws.org/Vol-714/#event> ;
+<http://ceur-ws.org/Vol-714/> a ns3:Proceedings ;
+    ns4:issued "2011-04-18T00:00:00+00:00"^^xsd:dateTime ;
+    ns9:presentedAt <http://ceur-ws.org/Vol-714/#event> ;
     ns5:editor <http://ceur-ws.org/Vol-714/#DietrichiRebholz-Schuhmann>,
         <http://ceur-ws.org/Vol-714/#FabioiRinaldi>,
         <http://ceur-ws.org/Vol-714/#NigeliCollier>,
         <http://ceur-ws.org/Vol-714/#SampoiPyysalo>,
         <http://ceur-ws.org/Vol-714/#UdoiHahn> .
 
-<http://ceur-ws.org/Vol-714/#DietrichiRebholz-Schuhmann> a ns7:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/DietrichiRebholz-Schuhmann> ;
-    ns7:name "Dietrich Rebholz-Schuhmann" .
+<http://ceur-ws.org/Vol-714/#DietrichiRebholz-Schuhmann> a ns1:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/DietrichiRebholz-Schuhmann> ;
+    ns1:name "Dietrich Rebholz-Schuhmann" .
 
-<http://ceur-ws.org/Vol-714/#FabioiRinaldi> a ns7:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/FabioiRinaldi> ;
-    ns7:name "Fabio Rinaldi" .
+<http://ceur-ws.org/Vol-714/#FabioiRinaldi> a ns1:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/FabioiRinaldi> ;
+    ns1:name "Fabio Rinaldi" .
 
-<http://ceur-ws.org/Vol-714/#NigeliCollier> a ns7:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/NigeliCollier> ;
-    ns7:name "Nigel Collier" .
+<http://ceur-ws.org/Vol-714/#NigeliCollier> a ns1:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/NigeliCollier> ;
+    ns1:name "Nigel Collier" .
 
-<http://ceur-ws.org/Vol-714/#SampoiPyysalo> a ns7:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/SampoiPyysalo> ;
-    ns7:name "Sampo Pyysalo" .
+<http://ceur-ws.org/Vol-714/#SampoiPyysalo> a ns1:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/SampoiPyysalo> ;
+    ns1:name "Sampo Pyysalo" .
 
-<http://ceur-ws.org/Vol-714/#UdoiHahn> a ns7:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/UdoiHahn> ;
-    ns7:name "Udo Hahn" .
+<http://ceur-ws.org/Vol-714/#UdoiHahn> a ns1:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/UdoiHahn> ;
+    ns1:name "Udo Hahn" .
 
-<http://ceur-ws.org/Vol-714/#event> a ns6:WorkshopEvent ;
-    ns6:hasLocation <http://dbpedia.org/resource/United_Kingdom> ;
-    ns6:hasPart <http://ceur-ws.org/Vol-714/#part-SMBM> ;
-    ns6:isSubEventOf <http://ceur-ws.org/Vol-714/#conf> ;
-    ns8:beginsAtDatetime "2010-10-01T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:endsAtDatetime "2010-10-01T00:00:00+00:00"^^xsd:dateTime ;
-    ns2:license "http://choosealicense.com/licenses/no-license/" ;
+<http://ceur-ws.org/Vol-714/#event> a ns3:WorkshopEvent ;
+    ns3:hasLocation <http://dbpedia.org/resource/United_Kingdom> ;
+    ns3:hasPart <http://ceur-ws.org/Vol-714/#part-SMBM> ;
+    ns3:isSubEventOf <http://ceur-ws.org/Vol-714/#conf> ;
+    ns6:beginsAtDatetime "2010-10-01T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:endsAtDatetime "2010-10-01T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:license "http://choosealicense.com/licenses/no-license/" ;
     rdfs:seeAlso <http://ceur-ws.org/Vol-148/#event>,
         <http://ceur-ws.org/Vol-177/#event> .
+
+<http://ceur-ws.org/Vol-714/#part-SMBM> a ns9:Workshop ;
+    ns3:partOf <http://ceur-ws.org/series/SMBM> ;
+    ns8:title "Semantic Mining in Biomedicine 2010" ;
+    ns9:shortTitle "SMBM" ;
+    ns5:edition 4 .
 

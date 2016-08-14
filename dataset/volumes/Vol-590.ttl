@@ -1,12 +1,12 @@
 @prefix ns1: <http://www.w3.org/2002/07/owl#> .
-@prefix ns2: <http://purl.org/ontology/bibo/#> .
-@prefix ns3: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns4: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns2: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns3: <http://purl.org/dc/elements/1.1/> .
+@prefix ns4: <http://data.semanticweb.org/ns/swc/ontology/#> .
 @prefix ns5: <http://xmlns.com/foaf/0.1/> .
-@prefix ns6: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns9: <http://purl.org/dc/elements/1.1/> .
+@prefix ns6: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns7: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns8: <http://purl.org/ontology/bibo/#> .
+@prefix ns9: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -18,7 +18,7 @@
     ns5:name "Adrian Knoth" .
 
 <http://ceur-ws.org/Vol-590/#AntoninaiDattolo> a ns5:Person ;
-    ns3:affiliation "" ;
+    ns2:affiliation "" ;
     ns1:sameAs <http://ceur-ws.org/persons/AntoninaiDattolo> ;
     ns5:name "Antonina Dattolo" .
 
@@ -33,12 +33,12 @@
     ns5:name "Birgitta König-Ries" .
 
 <http://ceur-ws.org/Vol-590/#CarloiTasso> a ns5:Person ;
-    ns3:affiliation "" ;
+    ns2:affiliation "" ;
     ns1:sameAs <http://ceur-ws.org/persons/CarloiTasso> ;
     ns5:name "Carlo Tasso" .
 
 <http://ceur-ws.org/Vol-590/#DavidiBuenoiVallejo> a ns5:Person ;
-    ns3:affiliation "" ;
+    ns2:affiliation "" ;
     ns1:sameAs <http://ceur-ws.org/persons/DavidiBuenoiVallejo> ;
     ns5:name "David Bueno Vallejo" .
 
@@ -48,7 +48,7 @@
     ns5:name "Domenico Ursino" .
 
 <http://ceur-ws.org/Vol-590/#FedericaiCena> a ns5:Person ;
-    ns3:affiliation "" ;
+    ns2:affiliation "" ;
     ns1:sameAs <http://ceur-ws.org/persons/FedericaiCena> ;
     ns5:name "Federica Cena" .
 
@@ -83,7 +83,7 @@
     ns5:name "Paul Seitlinger" .
 
 <http://ceur-ws.org/Vol-590/#StylianiiKleanthous> a ns5:Person ;
-    ns3:affiliation "" ;
+    ns2:affiliation "" ;
     ns1:sameAs <http://ceur-ws.org/persons/StylianiiKleanthous> ;
     ns5:name "Styliani Kleanthous" .
 
@@ -102,91 +102,97 @@
     ns5:made <http://ceur-ws.org/Vol-590/#sasweb10_3> ;
     ns5:name "Yuan Wang" .
 
-<http://ceur-ws.org/Vol-590/#event> a ns6:WorkshopEvent ;
-    ns6:hasLocation <http://dbpedia.org/resource/United_States> ;
-    ns6:hasPart <http://ceur-ws.org/Vol-590/#part-SASweb> ;
-    ns6:isSubEventOf <http://ceur-ws.org/Vol-590/#conf> ;
-    ns7:beginsAtDatetime "2010-06-21T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:endsAtDatetime "2010-06-21T00:00:00+00:00"^^xsd:dateTime ;
-    ns9:license "http://choosealicense.com/licenses/no-license/" .
+<http://ceur-ws.org/Vol-590/#event> a ns4:WorkshopEvent ;
+    ns4:hasLocation <http://dbpedia.org/resource/United_States> ;
+    ns4:hasPart <http://ceur-ws.org/Vol-590/#part-SASweb> ;
+    ns4:isSubEventOf <http://ceur-ws.org/Vol-590/#conf> ;
+    ns6:beginsAtDatetime "2010-06-21T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:endsAtDatetime "2010-06-21T00:00:00+00:00"^^xsd:dateTime ;
+    ns3:license "http://choosealicense.com/licenses/no-license/" .
+
+<http://ceur-ws.org/Vol-590/#part-SASweb> a ns8:Workshop ;
+    ns4:partOf <http://ceur-ws.org/series/SASweb> ;
+    ns7:title "Adaptation in Social and Semantic Web 2010" ;
+    ns8:shortTitle "SASweb" ;
+    ns2:edition 21 .
 
 <http://ceur-ws.org/Vol-590/#JulitaiVassileva> a ns5:Person ;
-    ns3:affiliation "" ;
+    ns2:affiliation "" ;
     ns1:sameAs <http://ceur-ws.org/persons/JulitaiVassileva> ;
     ns5:made <http://ceur-ws.org/Vol-590/#sasweb10_3> ;
     ns5:name "Julita Vassileva" .
 
-<http://ceur-ws.org/Vol-590/#sasweb10_1> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-590/> ;
-    ns4:title "Adaptive Retrieval and Composition of Socio-Semantic Content for Personalised Customer Care" ;
-    ns2:endPage 12 ;
-    ns2:numPages 12 ;
-    ns2:section <http://ceur-ws.org/Vol-590/#WorkshopPapers> ;
-    ns2:startPage 1 ;
-    ns3:author <http://ceur-ws.org/Vol-590/#BeniSteichen>,
+<http://ceur-ws.org/Vol-590/#sasweb10_1> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-590/> ;
+    ns7:title "Adaptive Retrieval and Composition of Socio-Semantic Content for Personalised Customer Care" ;
+    ns8:endPage 12 ;
+    ns8:numPages 12 ;
+    ns8:section <http://ceur-ws.org/Vol-590/#WorkshopPapers> ;
+    ns8:startPage 1 ;
+    ns2:author <http://ceur-ws.org/Vol-590/#BeniSteichen>,
         <http://ceur-ws.org/Vol-590/#VincentiWade> .
 
-<http://ceur-ws.org/Vol-590/#sasweb10_2> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-590/> ;
-    ns4:title "A Cognitive Perspective on Emergent Semantics in Collaborative Tagging: The Basic Level Effect" ;
-    ns2:endPage 18 ;
-    ns2:numPages 6 ;
-    ns2:section <http://ceur-ws.org/Vol-590/#WorkshopPapers> ;
-    ns2:startPage 13 ;
-    ns3:author <http://ceur-ws.org/Vol-590/#PauliSeitlinger>,
+<http://ceur-ws.org/Vol-590/#sasweb10_2> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-590/> ;
+    ns7:title "A Cognitive Perspective on Emergent Semantics in Collaborative Tagging: The Basic Level Effect" ;
+    ns8:endPage 18 ;
+    ns8:numPages 6 ;
+    ns8:section <http://ceur-ws.org/Vol-590/#WorkshopPapers> ;
+    ns8:startPage 13 ;
+    ns2:author <http://ceur-ws.org/Vol-590/#PauliSeitlinger>,
         <http://ceur-ws.org/Vol-590/#TobiasiLey> .
 
-<http://ceur-ws.org/Vol-590/#sasweb10_3> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-590/> ;
-    ns4:title "Personalized Recommendation of Integrated Social Data across Social Networking Sitest" ;
-    ns2:endPage 30 ;
-    ns2:numPages 12 ;
-    ns2:section <http://ceur-ws.org/Vol-590/#WorkshopPapers> ;
-    ns2:startPage 19 ;
-    ns3:author <http://ceur-ws.org/Vol-590/#JieiZhang>,
+<http://ceur-ws.org/Vol-590/#sasweb10_3> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-590/> ;
+    ns7:title "Personalized Recommendation of Integrated Social Data across Social Networking Sitest" ;
+    ns8:endPage 30 ;
+    ns8:numPages 12 ;
+    ns8:section <http://ceur-ws.org/Vol-590/#WorkshopPapers> ;
+    ns8:startPage 19 ;
+    ns2:author <http://ceur-ws.org/Vol-590/#JieiZhang>,
         <http://ceur-ws.org/Vol-590/#JulitaiVassileva>,
         <http://ceur-ws.org/Vol-590/#YuaniWang> .
 
-<http://ceur-ws.org/Vol-590/#sasweb10_5> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-590/> ;
-    ns4:title "Trust and Reputation in Social Internetworking Systems" ;
-    ns2:endPage 53 ;
-    ns2:numPages 12 ;
-    ns2:section <http://ceur-ws.org/Vol-590/#WorkshopPapers> ;
-    ns2:startPage 42 ;
-    ns3:author <http://ceur-ws.org/Vol-590/#DomenicoiUrsino>,
+<http://ceur-ws.org/Vol-590/#sasweb10_5> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-590/> ;
+    ns7:title "Trust and Reputation in Social Internetworking Systems" ;
+    ns8:endPage 53 ;
+    ns8:numPages 12 ;
+    ns8:section <http://ceur-ws.org/Vol-590/#WorkshopPapers> ;
+    ns8:startPage 42 ;
+    ns2:author <http://ceur-ws.org/Vol-590/#DomenicoiUrsino>,
         <http://ceur-ws.org/Vol-590/#LoraiAroyo>,
         <http://ceur-ws.org/Vol-590/#PasqualeiDeiMeo> .
 
-<http://ceur-ws.org/Vol-590/#sasweb10_4> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-590/> ;
-    ns4:title "Semantic Enrichment of Social Media Resources for Adaptation" ;
-    ns2:endPage 41 ;
-    ns2:numPages 11 ;
-    ns2:section <http://ceur-ws.org/Vol-590/#WorkshopPapers> ;
-    ns2:startPage 31 ;
-    ns3:author <http://ceur-ws.org/Vol-590/#AdrianiKnoth>,
+<http://ceur-ws.org/Vol-590/#sasweb10_4> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-590/> ;
+    ns7:title "Semantic Enrichment of Social Media Resources for Adaptation" ;
+    ns8:endPage 41 ;
+    ns8:numPages 11 ;
+    ns8:section <http://ceur-ws.org/Vol-590/#WorkshopPapers> ;
+    ns8:startPage 31 ;
+    ns2:author <http://ceur-ws.org/Vol-590/#AdrianiKnoth>,
         <http://ceur-ws.org/Vol-590/#BirgittaiK%C3%B6nig-Ries>,
         <http://ceur-ws.org/Vol-590/#FedoriBakalov>,
         <http://ceur-ws.org/Vol-590/#OliveriSchimratzki> .
 
-<http://ceur-ws.org/Vol-590/> a ns6:Proceedings ;
-    ns6:hasPart <http://ceur-ws.org/Vol-590/#sasweb10_1>,
+<http://ceur-ws.org/Vol-590/> a ns4:Proceedings ;
+    ns4:hasPart <http://ceur-ws.org/Vol-590/#sasweb10_1>,
         <http://ceur-ws.org/Vol-590/#sasweb10_2>,
         <http://ceur-ws.org/Vol-590/#sasweb10_3>,
         <http://ceur-ws.org/Vol-590/#sasweb10_4>,
         <http://ceur-ws.org/Vol-590/#sasweb10_5> ;
-    ns6:hasSession <http://ceur-ws.org/Vol-590/#WorkshopPapers> ;
-    ns8:issued "2010-06-08T00:00:00+00:00"^^xsd:dateTime ;
-    ns2:presentedAt <http://ceur-ws.org/Vol-590/#event> ;
-    ns3:editor <http://ceur-ws.org/Vol-590/#AntoninaiDattolo>,
+    ns4:hasSession <http://ceur-ws.org/Vol-590/#WorkshopPapers> ;
+    ns9:issued "2010-06-08T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:presentedAt <http://ceur-ws.org/Vol-590/#event> ;
+    ns2:editor <http://ceur-ws.org/Vol-590/#AntoninaiDattolo>,
         <http://ceur-ws.org/Vol-590/#CarloiTasso>,
         <http://ceur-ws.org/Vol-590/#DavidiBuenoiVallejo>,
         <http://ceur-ws.org/Vol-590/#FedericaiCena>,
         <http://ceur-ws.org/Vol-590/#JulitaiVassileva>,
         <http://ceur-ws.org/Vol-590/#StylianiiKleanthous> .
 
-<http://ceur-ws.org/Vol-590/#WorkshopPapers> a ns6:SessionEvent ;
-    ns6:partOf <http://ceur-ws.org/Vol-590/> ;
-    ns4:title "Workshop Papers" .
+<http://ceur-ws.org/Vol-590/#WorkshopPapers> a ns4:SessionEvent ;
+    ns4:partOf <http://ceur-ws.org/Vol-590/> ;
+    ns7:title "Workshop Papers" .
 

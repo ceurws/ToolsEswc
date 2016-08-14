@@ -1,12 +1,12 @@
-@prefix ns1: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns1: <http://swrc.ontoware.org/ontology/#> .
 @prefix ns2: <http://xmlns.com/foaf/0.1/> .
-@prefix ns3: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns4: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns3: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns4: <http://data.semanticweb.org/ns/swc/ontology/#> .
 @prefix ns5: <http://www.w3.org/2002/07/owl#> .
-@prefix ns6: <http://purl.org/dc/elements/1.1/> .
-@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns8: <http://purl.org/ontology/bibo/#> .
-@prefix ns9: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns6: <http://purl.org/ontology/bibo/#> .
+@prefix ns7: <http://purl.org/dc/elements/1.1/> .
+@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns9: <http://purl.org/NET/c4dm/timeline.owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -43,8 +43,8 @@
     ns2:name "A. van den Bosch" .
 
 <http://ceur-ws.org/Vol-532/#AlfrediKobsa> a ns2:Person ;
-    ns8:place <http://dbpedia.org/resource/United_States> ;
-    ns4:affiliation "Donald Bren School of Information and Computer Sciences University of California, Irvine" ;
+    ns6:place <http://dbpedia.org/resource/United_States> ;
+    ns1:affiliation "Donald Bren School of Information and Computer Sciences University of California, Irvine" ;
     ns5:sameAs <http://ceur-ws.org/persons/AlfrediKobsa> ;
     ns2:name "Alfred Kobsa" .
 
@@ -54,8 +54,8 @@
     ns2:name "C. Musto" .
 
 <http://ceur-ws.org/Vol-532/#CaseyiDugan> a ns2:Person ;
-    ns8:place <http://dbpedia.org/resource/United_States> ;
-    ns4:affiliation "IBM Research, Cambridge, MA" ;
+    ns6:place <http://dbpedia.org/resource/United_States> ;
+    ns1:affiliation "IBM Research, Cambridge, MA" ;
     ns5:sameAs <http://ceur-ws.org/persons/CaseyiDugan> ;
     ns2:name "Casey Dugan" .
 
@@ -70,8 +70,8 @@
     ns2:name "D. Parra" .
 
 <http://ceur-ws.org/Vol-532/#DietmariJannach> a ns2:Person ;
-    ns8:place <http://dbpedia.org/resource/Germany> ;
-    ns4:affiliation "Department of Computer Science, TU Dortmund" ;
+    ns6:place <http://dbpedia.org/resource/Germany> ;
+    ns1:affiliation "Department of Computer Science, TU Dortmund" ;
     ns5:sameAs <http://ceur-ws.org/persons/DietmariJannach> ;
     ns2:name "Dietmar Jannach" .
 
@@ -111,8 +111,8 @@
     ns2:name "J. Kleint" .
 
 <http://ceur-ws.org/Vol-532/#JilliFreyne> a ns2:Person ;
-    ns8:place <http://dbpedia.org/resource/Australia> ;
-    ns4:affiliation "CSIRO, TasICT Centre" ;
+    ns6:place <http://dbpedia.org/resource/Australia> ;
+    ns1:affiliation "CSIRO, TasICT Centre" ;
     ns5:sameAs <http://ceur-ws.org/persons/JilliFreyne> ;
     ns2:name "Jill Freyne" .
 
@@ -232,8 +232,8 @@
     ns2:name "W. Zheng" .
 
 <http://ceur-ws.org/Vol-532/#WerneriGeyer> a ns2:Person ;
-    ns8:place <http://dbpedia.org/resource/United_States> ;
-    ns4:affiliation "IBM Research, Cambridge, MA" ;
+    ns6:place <http://dbpedia.org/resource/United_States> ;
+    ns1:affiliation "IBM Research, Cambridge, MA" ;
     ns5:sameAs <http://ceur-ws.org/persons/WerneriGeyer> ;
     ns2:name "Werner Geyer" .
 
@@ -247,17 +247,21 @@
     ns2:made <http://ceur-ws.org/Vol-532/#paper7> ;
     ns2:name "Y. Liu" .
 
-<http://ceur-ws.org/Vol-532/#event> a ns3:WorkshopEvent ;
-    ns3:hasLocation <http://dbpedia.org/resource/United_States> ;
-    ns3:hasPart <http://ceur-ws.org/Vol-532/#part-ws> ;
-    ns3:isSubEventOf <http://ceur-ws.org/Vol-532/#conf> ;
-    ns7:beginsAtDatetime "2009-10-25T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:endsAtDatetime "2009-10-25T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:license "http://choosealicense.com/licenses/no-license/" .
+<http://ceur-ws.org/Vol-532/#event> a ns4:WorkshopEvent ;
+    ns4:hasLocation <http://dbpedia.org/resource/United_States> ;
+    ns4:hasPart <http://ceur-ws.org/Vol-532/#part-ws> ;
+    ns4:isSubEventOf <http://ceur-ws.org/Vol-532/#conf> ;
+    ns9:beginsAtDatetime "2009-10-25T00:00:00+00:00"^^xsd:dateTime ;
+    ns9:endsAtDatetime "2009-10-25T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:license "http://choosealicense.com/licenses/no-license/" .
+
+<http://ceur-ws.org/Vol-532/#part-ws> a ns6:Workshop ;
+    ns4:partOf <http://ceur-ws.org/series/ws> ;
+    ns3:title "Recommender Systems and the Social Web 2009" .
 
 <http://ceur-ws.org/Vol-532/#B.iMobasher> a ns2:Person ;
-    ns8:place <http://dbpedia.org/resource/United_States> ;
-    ns4:affiliation "School of Computing, DePaul University" ;
+    ns6:place <http://dbpedia.org/resource/United_States> ;
+    ns1:affiliation "School of Computing, DePaul University" ;
     ns5:sameAs <http://ceur-ws.org/persons/B.iMobasher> ;
     ns2:made <http://ceur-ws.org/Vol-532/#paper3> ;
     ns2:name "B. Mobasher" .
@@ -275,131 +279,131 @@
     ns2:name "P. Brusilovsky" .
 
 <http://ceur-ws.org/Vol-532/#S.iSinghiAnand> a ns2:Person ;
-    ns8:place <http://dbpedia.org/resource/United_Kingdom> ;
-    ns4:affiliation "Department of Computer Science, University of Warwick" ;
+    ns6:place <http://dbpedia.org/resource/United_Kingdom> ;
+    ns1:affiliation "Department of Computer Science, University of Warwick" ;
     ns5:sameAs <http://ceur-ws.org/persons/S.iSinghiAnand> ;
     ns2:made <http://ceur-ws.org/Vol-532/#paper13> ;
     ns2:name "S. Singh Anand" .
 
-<http://ceur-ws.org/Vol-532/#paper10> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-532/> ;
-    ns1:title "Does Trust Influence Information Similarity?" ;
-    ns8:section <http://ceur-ws.org/Vol-532/#Shortpapers> ;
-    ns4:author <http://ceur-ws.org/Vol-532/#D.H.iLee>,
+<http://ceur-ws.org/Vol-532/#paper10> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-532/> ;
+    ns3:title "Does Trust Influence Information Similarity?" ;
+    ns6:section <http://ceur-ws.org/Vol-532/#Shortpapers> ;
+    ns1:author <http://ceur-ws.org/Vol-532/#D.H.iLee>,
         <http://ceur-ws.org/Vol-532/#P.iBrusilovsky> .
 
-<http://ceur-ws.org/Vol-532/#paper11> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-532/> ;
-    ns1:title "A Holistic Approach to Enhance the Doctor-Patient Relationship for Diabetes Using Social Networking, Personalized Alerts, Reminders, and Recommendation" ;
-    ns8:section <http://ceur-ws.org/Vol-532/#Shortpapers> ;
-    ns4:author <http://ceur-ws.org/Vol-532/#L.iM.iQuiroga>,
+<http://ceur-ws.org/Vol-532/#paper11> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-532/> ;
+    ns3:title "A Holistic Approach to Enhance the Doctor-Patient Relationship for Diabetes Using Social Networking, Personalized Alerts, Reminders, and Recommendation" ;
+    ns6:section <http://ceur-ws.org/Vol-532/#Shortpapers> ;
+    ns1:author <http://ceur-ws.org/Vol-532/#L.iM.iQuiroga>,
         <http://ceur-ws.org/Vol-532/#W.iWLiYip> .
 
-<http://ceur-ws.org/Vol-532/#paper12> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-532/> ;
-    ns1:title "Using Wikipedia Content to Derive Ontology for Modeling end Recommanding Web pages across Systems" ;
-    ns8:section <http://ceur-ws.org/Vol-532/#Shortpapers> ;
-    ns4:author <http://ceur-ws.org/Vol-532/#L.iM.iQuiroga>,
+<http://ceur-ws.org/Vol-532/#paper12> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-532/> ;
+    ns3:title "Using Wikipedia Content to Derive Ontology for Modeling end Recommanding Web pages across Systems" ;
+    ns6:section <http://ceur-ws.org/Vol-532/#Shortpapers> ;
+    ns1:author <http://ceur-ws.org/Vol-532/#L.iM.iQuiroga>,
         <http://ceur-ws.org/Vol-532/#P.-C.iChang> .
 
-<http://ceur-ws.org/Vol-532/#paper13> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-532/> ;
-    ns1:title "Personalised Tag Recommendation" ;
-    ns8:section <http://ceur-ws.org/Vol-532/#Shortpapers> ;
-    ns4:author <http://ceur-ws.org/Vol-532/#N.iLandia>,
+<http://ceur-ws.org/Vol-532/#paper13> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-532/> ;
+    ns3:title "Personalised Tag Recommendation" ;
+    ns6:section <http://ceur-ws.org/Vol-532/#Shortpapers> ;
+    ns1:author <http://ceur-ws.org/Vol-532/#N.iLandia>,
         <http://ceur-ws.org/Vol-532/#S.iSinghiAnand> .
 
-<http://ceur-ws.org/Vol-532/#paper2> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-532/> ;
-    ns1:title "Collaborative and Content-based Filtering for Item Recommendation on Social Bookmarking Websites" ;
-    ns8:section <http://ceur-ws.org/Vol-532/#LongPapers> ;
-    ns4:author <http://ceur-ws.org/Vol-532/#A.ivanideniBosch>,
+<http://ceur-ws.org/Vol-532/#paper2> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-532/> ;
+    ns3:title "Collaborative and Content-based Filtering for Item Recommendation on Social Bookmarking Websites" ;
+    ns6:section <http://ceur-ws.org/Vol-532/#LongPapers> ;
+    ns1:author <http://ceur-ws.org/Vol-532/#A.ivanideniBosch>,
         <http://ceur-ws.org/Vol-532/#T.iBogers> .
 
-<http://ceur-ws.org/Vol-532/#paper5> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-532/> ;
-    ns1:title "Social Trust as a Solution to Address Sparsity-inherent Problems of Recommender Systems" ;
-    ns8:section <http://ceur-ws.org/Vol-532/#LongPapers> ;
-    ns4:author <http://ceur-ws.org/Vol-532/#G.iPitsilis>,
+<http://ceur-ws.org/Vol-532/#paper5> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-532/> ;
+    ns3:title "Social Trust as a Solution to Address Sparsity-inherent Problems of Recommender Systems" ;
+    ns6:section <http://ceur-ws.org/Vol-532/#LongPapers> ;
+    ns1:author <http://ceur-ws.org/Vol-532/#G.iPitsilis>,
         <http://ceur-ws.org/Vol-532/#S.J.iKnapskog> .
 
-<http://ceur-ws.org/Vol-532/#paper6> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-532/> ;
-    ns1:title "Ontology Guided Dynamic Preference Elicitation" ;
-    ns8:section <http://ceur-ws.org/Vol-532/#LongPapers> ;
-    ns4:author <http://ceur-ws.org/Vol-532/#G.iChamiel>,
+<http://ceur-ws.org/Vol-532/#paper6> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-532/> ;
+    ns3:title "Ontology Guided Dynamic Preference Elicitation" ;
+    ns6:section <http://ceur-ws.org/Vol-532/#LongPapers> ;
+    ns1:author <http://ceur-ws.org/Vol-532/#G.iChamiel>,
         <http://ceur-ws.org/Vol-532/#M.iPagnucco> .
 
-<http://ceur-ws.org/Vol-532/#paper9> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-532/> ;
-    ns1:title "The Copied Item Injection Attack" ;
-    ns8:section <http://ceur-ws.org/Vol-532/#LongPapers> ;
-    ns4:author <http://ceur-ws.org/Vol-532/#N.iOostendorp>,
+<http://ceur-ws.org/Vol-532/#paper9> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-532/> ;
+    ns3:title "The Copied Item Injection Attack" ;
+    ns6:section <http://ceur-ws.org/Vol-532/#LongPapers> ;
+    ns1:author <http://ceur-ws.org/Vol-532/#N.iOostendorp>,
         <http://ceur-ws.org/Vol-532/#R.iSami> .
 
-<http://ceur-ws.org/Vol-532/#paper15> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-532/> ;
-    ns1:title "Cobot: Real Time Multi User Conversational Search and Recommendations" ;
-    ns8:section <http://ceur-ws.org/Vol-532/#Shortpapers> ;
-    ns4:author <http://ceur-ws.org/Vol-532/#A.iRam>,
+<http://ceur-ws.org/Vol-532/#paper15> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-532/> ;
+    ns3:title "Cobot: Real Time Multi User Conversational Search and Recommendations" ;
+    ns6:section <http://ceur-ws.org/Vol-532/#Shortpapers> ;
+    ns1:author <http://ceur-ws.org/Vol-532/#A.iRam>,
         <http://ceur-ws.org/Vol-532/#A.iVenkatesh>,
         <http://ceur-ws.org/Vol-532/#S.iSahay> .
 
-<http://ceur-ws.org/Vol-532/#paper8> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-532/> ;
-    ns1:title "Spreading Activation Approach to Tag-aware Recommenders: Modeling Similarity on Multidimensional Networks" ;
-    ns8:section <http://ceur-ws.org/Vol-532/#LongPapers> ;
-    ns4:author <http://ceur-ws.org/Vol-532/#A.iTroussov>,
+<http://ceur-ws.org/Vol-532/#paper8> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-532/> ;
+    ns3:title "Spreading Activation Approach to Tag-aware Recommenders: Modeling Similarity on Multidimensional Networks" ;
+    ns6:section <http://ceur-ws.org/Vol-532/#LongPapers> ;
+    ns1:author <http://ceur-ws.org/Vol-532/#A.iTroussov>,
         <http://ceur-ws.org/Vol-532/#D.iParra>,
         <http://ceur-ws.org/Vol-532/#P.iBrusilovsky> .
 
-<http://ceur-ws.org/Vol-532/#paper1> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-532/> ;
-    ns1:title "Improving Recommendation Accuracy by Clustering Social Networks with Trust" ;
-    ns8:section <http://ceur-ws.org/Vol-532/#LongPapers> ;
-    ns4:author <http://ceur-ws.org/Vol-532/#A.iSrinivasan>,
+<http://ceur-ws.org/Vol-532/#paper1> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-532/> ;
+    ns3:title "Improving Recommendation Accuracy by Clustering Social Networks with Trust" ;
+    ns6:section <http://ceur-ws.org/Vol-532/#LongPapers> ;
+    ns1:author <http://ceur-ws.org/Vol-532/#A.iSrinivasan>,
         <http://ceur-ws.org/Vol-532/#J.iGolbeck>,
         <http://ceur-ws.org/Vol-532/#J.iKleint>,
         <http://ceur-ws.org/Vol-532/#T.iDuBois> .
 
-<http://ceur-ws.org/Vol-532/#paper14> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-532/> ;
-    ns1:title "A Hybrid PLSA Approach for Warmer Cold Start in Folksonomy Recommendation" ;
-    ns8:section <http://ceur-ws.org/Vol-532/#Shortpapers> ;
-    ns4:author <http://ceur-ws.org/Vol-532/#A.iSaid>,
+<http://ceur-ws.org/Vol-532/#paper14> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-532/> ;
+    ns3:title "A Hybrid PLSA Approach for Warmer Cold Start in Folksonomy Recommendation" ;
+    ns6:section <http://ceur-ws.org/Vol-532/#Shortpapers> ;
+    ns1:author <http://ceur-ws.org/Vol-532/#A.iSaid>,
         <http://ceur-ws.org/Vol-532/#L.iHennig>,
         <http://ceur-ws.org/Vol-532/#R.iWetzker>,
         <http://ceur-ws.org/Vol-532/#W.iUmbrath> .
 
-<http://ceur-ws.org/Vol-532/#paper3> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-532/> ;
-    ns1:title "Improving Folkrank With Item-Based Collaborative Filtering" ;
-    ns8:section <http://ceur-ws.org/Vol-532/#LongPapers> ;
-    ns4:author <http://ceur-ws.org/Vol-532/#B.iMobasher>,
+<http://ceur-ws.org/Vol-532/#paper3> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-532/> ;
+    ns3:title "Improving Folkrank With Item-Based Collaborative Filtering" ;
+    ns6:section <http://ceur-ws.org/Vol-532/#LongPapers> ;
+    ns1:author <http://ceur-ws.org/Vol-532/#B.iMobasher>,
         <http://ceur-ws.org/Vol-532/#J.iGemmell>,
         <http://ceur-ws.org/Vol-532/#L.iChristiansen>,
         <http://ceur-ws.org/Vol-532/#M.iRamezani>,
         <http://ceur-ws.org/Vol-532/#Th.iSchimoler> .
 
-<http://ceur-ws.org/Vol-532/#paper4> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-532/> ;
-    ns1:title "A Tag Recommender System Exploiting User and Community Behavior" ;
-    ns8:section <http://ceur-ws.org/Vol-532/#LongPapers> ;
-    ns4:author <http://ceur-ws.org/Vol-532/#C.iMusto>,
+<http://ceur-ws.org/Vol-532/#paper4> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-532/> ;
+    ns3:title "A Tag Recommender System Exploiting User and Community Behavior" ;
+    ns6:section <http://ceur-ws.org/Vol-532/#LongPapers> ;
+    ns1:author <http://ceur-ws.org/Vol-532/#C.iMusto>,
         <http://ceur-ws.org/Vol-532/#F.iNarducci>,
         <http://ceur-ws.org/Vol-532/#G.iSemeraro>,
         <http://ceur-ws.org/Vol-532/#M.iDeiGemmis>,
         <http://ceur-ws.org/Vol-532/#P.iLops> .
 
-<http://ceur-ws.org/Vol-532/#Shortpapers> a ns3:SessionEvent ;
-    ns3:partOf <http://ceur-ws.org/Vol-532/> ;
-    ns1:title "Short papers" .
+<http://ceur-ws.org/Vol-532/#Shortpapers> a ns4:SessionEvent ;
+    ns4:partOf <http://ceur-ws.org/Vol-532/> ;
+    ns3:title "Short papers" .
 
-<http://ceur-ws.org/Vol-532/#paper7> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-532/> ;
-    ns1:title "Augmenting Collaborative Recommender by Fusing Explicit Social Relationships" ;
-    ns8:section <http://ceur-ws.org/Vol-532/#LongPapers> ;
-    ns4:author <http://ceur-ws.org/Vol-532/#L.iChen>,
+<http://ceur-ws.org/Vol-532/#paper7> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-532/> ;
+    ns3:title "Augmenting Collaborative Recommender by Fusing Explicit Social Relationships" ;
+    ns6:section <http://ceur-ws.org/Vol-532/#LongPapers> ;
+    ns1:author <http://ceur-ws.org/Vol-532/#L.iChen>,
         <http://ceur-ws.org/Vol-532/#Q.iYuan>,
         <http://ceur-ws.org/Vol-532/#Sh.iDing>,
         <http://ceur-ws.org/Vol-532/#Sh.iZhao>,
@@ -407,12 +411,12 @@
         <http://ceur-ws.org/Vol-532/#X.iZhang>,
         <http://ceur-ws.org/Vol-532/#Y.iLiu> .
 
-<http://ceur-ws.org/Vol-532/#LongPapers> a ns3:SessionEvent ;
-    ns3:partOf <http://ceur-ws.org/Vol-532/> ;
-    ns1:title "Long Papers" .
+<http://ceur-ws.org/Vol-532/#LongPapers> a ns4:SessionEvent ;
+    ns4:partOf <http://ceur-ws.org/Vol-532/> ;
+    ns3:title "Long Papers" .
 
-<http://ceur-ws.org/Vol-532/> a ns3:Proceedings ;
-    ns3:hasPart <http://ceur-ws.org/Vol-532/#paper1>,
+<http://ceur-ws.org/Vol-532/> a ns4:Proceedings ;
+    ns4:hasPart <http://ceur-ws.org/Vol-532/#paper1>,
         <http://ceur-ws.org/Vol-532/#paper10>,
         <http://ceur-ws.org/Vol-532/#paper11>,
         <http://ceur-ws.org/Vol-532/#paper12>,
@@ -427,11 +431,11 @@
         <http://ceur-ws.org/Vol-532/#paper7>,
         <http://ceur-ws.org/Vol-532/#paper8>,
         <http://ceur-ws.org/Vol-532/#paper9> ;
-    ns3:hasSession <http://ceur-ws.org/Vol-532/#LongPapers>,
+    ns4:hasSession <http://ceur-ws.org/Vol-532/#LongPapers>,
         <http://ceur-ws.org/Vol-532/#Shortpapers> ;
-    ns9:issued "2009-10-27T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:presentedAt <http://ceur-ws.org/Vol-532/#event> ;
-    ns4:editor <http://ceur-ws.org/Vol-532/#AlfrediKobsa>,
+    ns8:issued "2009-10-27T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:presentedAt <http://ceur-ws.org/Vol-532/#event> ;
+    ns1:editor <http://ceur-ws.org/Vol-532/#AlfrediKobsa>,
         <http://ceur-ws.org/Vol-532/#B.iMobasher>,
         <http://ceur-ws.org/Vol-532/#CaseyiDugan>,
         <http://ceur-ws.org/Vol-532/#DietmariJannach>,

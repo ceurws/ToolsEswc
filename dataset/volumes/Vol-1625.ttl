@@ -1,11 +1,11 @@
-@prefix ns1: <http://purl.org/ontology/bibo/#> .
+@prefix ns1: <http://data.semanticweb.org/ns/swc/ontology/#> .
 @prefix ns2: <http://xmlns.com/foaf/0.1/> .
-@prefix ns3: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns3: <http://purl.org/ontology/bibo/#> .
 @prefix ns4: <http://www.w3.org/2002/07/owl#> .
 @prefix ns5: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns6: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns8: <http://purl.org/dc/elements/1.1/> .
+@prefix ns6: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns7: <http://purl.org/dc/elements/1.1/> .
+@prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
 @prefix ns9: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -97,131 +97,137 @@
     ns2:made <http://ceur-ws.org/Vol-1625/#abs1> ;
     ns2:name "Vladislav Tushkanov" .
 
-<http://ceur-ws.org/Vol-1625/#event> a ns6:WorkshopEvent ;
-    ns6:hasLocation <http://dbpedia.org/resource/Russia> ;
-    ns6:hasPart <http://ceur-ws.org/Vol-1625/#part-CDUD> ;
-    ns6:isSubEventOf <http://ceur-ws.org/Vol-1625/#conf> ;
-    ns7:beginsAtDatetime "2016-07-18T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:endsAtDatetime "2016-07-18T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:license "http://creativecommons.org/publicdomain/zero/1.0/" ;
+<http://ceur-ws.org/Vol-1625/#event> a ns1:WorkshopEvent ;
+    ns1:hasLocation <http://dbpedia.org/resource/Russia> ;
+    ns1:hasPart <http://ceur-ws.org/Vol-1625/#part-CDUD> ;
+    ns1:isSubEventOf <http://ceur-ws.org/Vol-1625/#conf> ;
+    ns8:beginsAtDatetime "2016-07-18T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:endsAtDatetime "2016-07-18T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:license "http://creativecommons.org/publicdomain/zero/1.0/" ;
     rdfs:seeAlso <http://ceur-ws.org/Vol-757/#event>,
         <http://ceur-ws.org/Vol-871/#event> .
 
-<http://ceur-ws.org/Vol-1625/#InvitedTalk> a ns6:SessionEvent ;
-    ns6:partOf <http://ceur-ws.org/Vol-1625/> ;
-    ns3:title "Invited Talk" .
+<http://ceur-ws.org/Vol-1625/#part-CDUD> a ns3:Workshop ;
+    ns1:partOf <http://ceur-ws.org/series/CDUD> ;
+    ns6:title "Concept Discovery in Unstructured Data 2016" ;
+    ns3:shortTitle "CDUD" ;
+    ns5:edition 3 .
 
-<http://ceur-ws.org/Vol-1625/#inv1> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-1625/> ;
-    ns3:title "Sentiment Analysis of Twitter Messages: Tasks, Approaches and Results" ;
-    ns1:endPage 1 ;
-    ns1:numPages 1 ;
-    ns1:section <http://ceur-ws.org/Vol-1625/#InvitedTalk> ;
-    ns1:startPage 1 ;
+<http://ceur-ws.org/Vol-1625/#InvitedTalk> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-1625/> ;
+    ns6:title "Invited Talk" .
+
+<http://ceur-ws.org/Vol-1625/#inv1> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1625/> ;
+    ns6:title "Sentiment Analysis of Twitter Messages: Tasks, Approaches and Results" ;
+    ns3:endPage 1 ;
+    ns3:numPages 1 ;
+    ns3:section <http://ceur-ws.org/Vol-1625/#InvitedTalk> ;
+    ns3:startPage 1 ;
     ns5:author <http://ceur-ws.org/Vol-1625/#NatalyaiLoukashevitch> .
 
-<http://ceur-ws.org/Vol-1625/#paper1> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-1625/> ;
-    ns3:title "Personalized Language Models for Computer-mediated Communication" ;
-    ns1:endPage 12 ;
-    ns1:numPages 11 ;
-    ns1:section <http://ceur-ws.org/Vol-1625/#RegularPapers> ;
-    ns1:startPage 2 ;
+<http://ceur-ws.org/Vol-1625/#paper1> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1625/> ;
+    ns6:title "Personalized Language Models for Computer-mediated Communication" ;
+    ns3:endPage 12 ;
+    ns3:numPages 11 ;
+    ns3:section <http://ceur-ws.org/Vol-1625/#RegularPapers> ;
+    ns3:startPage 2 ;
     ns5:author <http://ceur-ws.org/Vol-1625/#UmmeiHafsaiBillah> .
 
-<http://ceur-ws.org/Vol-1625/#paper2> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-1625/> ;
-    ns3:title "Framework for Conceptual Modeling on Natural Language Texts" ;
-    ns1:endPage 24 ;
-    ns1:numPages 12 ;
-    ns1:section <http://ceur-ws.org/Vol-1625/#RegularPapers> ;
-    ns1:startPage 13 ;
+<http://ceur-ws.org/Vol-1625/#paper2> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1625/> ;
+    ns6:title "Framework for Conceptual Modeling on Natural Language Texts" ;
+    ns3:endPage 24 ;
+    ns3:numPages 12 ;
+    ns3:section <http://ceur-ws.org/Vol-1625/#RegularPapers> ;
+    ns3:startPage 13 ;
     ns5:author <http://ceur-ws.org/Vol-1625/#MikhailiBogatyrev> .
 
-<http://ceur-ws.org/Vol-1625/#paper3> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-1625/> ;
-    ns3:title "Annotated Suffix Trees for Text Clustering" ;
-    ns1:endPage 31 ;
-    ns1:numPages 7 ;
-    ns1:section <http://ceur-ws.org/Vol-1625/#RegularPapers> ;
-    ns1:startPage 25 ;
+<http://ceur-ws.org/Vol-1625/#paper3> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1625/> ;
+    ns6:title "Annotated Suffix Trees for Text Clustering" ;
+    ns3:endPage 31 ;
+    ns3:numPages 7 ;
+    ns3:section <http://ceur-ws.org/Vol-1625/#RegularPapers> ;
+    ns3:startPage 25 ;
     ns5:author <http://ceur-ws.org/Vol-1625/#EkaterinaiChernyak> .
 
-<http://ceur-ws.org/Vol-1625/#paper4> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-1625/> ;
-    ns3:title "Single-Focus Broadening Navigation in Concept Lattices" ;
-    ns1:endPage 43 ;
-    ns1:numPages 12 ;
-    ns1:section <http://ceur-ws.org/Vol-1625/#RegularPapers> ;
-    ns1:startPage 32 ;
+<http://ceur-ws.org/Vol-1625/#paper4> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1625/> ;
+    ns6:title "Single-Focus Broadening Navigation in Concept Lattices" ;
+    ns3:endPage 43 ;
+    ns3:numPages 12 ;
+    ns3:section <http://ceur-ws.org/Vol-1625/#RegularPapers> ;
+    ns3:startPage 32 ;
     ns5:author <http://ceur-ws.org/Vol-1625/#GillianiJ.iGreene> .
 
-<http://ceur-ws.org/Vol-1625/#paper5> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-1625/> ;
-    ns3:title "Gender Prediction for Authors of Russian Texts Using Regression And Classification Techniques" ;
-    ns1:endPage 53 ;
-    ns1:numPages 10 ;
-    ns1:section <http://ceur-ws.org/Vol-1625/#RegularPapers> ;
-    ns1:startPage 44 ;
+<http://ceur-ws.org/Vol-1625/#paper5> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1625/> ;
+    ns6:title "Gender Prediction for Authors of Russian Texts Using Regression And Classification Techniques" ;
+    ns3:endPage 53 ;
+    ns3:numPages 10 ;
+    ns3:section <http://ceur-ws.org/Vol-1625/#RegularPapers> ;
+    ns3:startPage 44 ;
     ns5:author <http://ceur-ws.org/Vol-1625/#TatianaiLitvinova> .
 
-<http://ceur-ws.org/Vol-1625/#paper6> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-1625/> ;
-    ns3:title "Reproducing Russian NER Baseline Quality without Additional Data" ;
-    ns1:endPage 59 ;
-    ns1:numPages 6 ;
-    ns1:section <http://ceur-ws.org/Vol-1625/#RegularPapers> ;
-    ns1:startPage 54 ;
+<http://ceur-ws.org/Vol-1625/#paper6> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1625/> ;
+    ns6:title "Reproducing Russian NER Baseline Quality without Additional Data" ;
+    ns3:endPage 59 ;
+    ns3:numPages 6 ;
+    ns3:section <http://ceur-ws.org/Vol-1625/#RegularPapers> ;
+    ns3:startPage 54 ;
     ns5:author <http://ceur-ws.org/Vol-1625/#ValentiniMalykh> .
 
-<http://ceur-ws.org/Vol-1625/#paper7> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-1625/> ;
-    ns3:title "A Static Code Search Technique to Identify Dead Fields by Analyzing Usage of Setup Fields and Field Dependency in Test Code" ;
-    ns1:endPage 71 ;
-    ns1:numPages 12 ;
-    ns1:section <http://ceur-ws.org/Vol-1625/#RegularPapers> ;
-    ns1:startPage 60 ;
+<http://ceur-ws.org/Vol-1625/#paper7> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1625/> ;
+    ns6:title "A Static Code Search Technique to Identify Dead Fields by Analyzing Usage of Setup Fields and Field Dependency in Test Code" ;
+    ns3:endPage 71 ;
+    ns3:numPages 12 ;
+    ns3:section <http://ceur-ws.org/Vol-1625/#RegularPapers> ;
+    ns3:startPage 60 ;
     ns5:author <http://ceur-ws.org/Vol-1625/#AbdusiSatter> .
 
-<http://ceur-ws.org/Vol-1625/#proposal1> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-1625/> ;
-    ns3:title "Evaluation of Ontology Quality based on Analysis of Relations in Concept Lattices" ;
-    ns1:endPage 86 ;
-    ns1:numPages 13 ;
-    ns1:section <http://ceur-ws.org/Vol-1625/#Abstracts> ;
-    ns1:startPage 74 ;
+<http://ceur-ws.org/Vol-1625/#proposal1> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1625/> ;
+    ns6:title "Evaluation of Ontology Quality based on Analysis of Relations in Concept Lattices" ;
+    ns3:endPage 86 ;
+    ns3:numPages 13 ;
+    ns3:section <http://ceur-ws.org/Vol-1625/#Abstracts> ;
+    ns3:startPage 74 ;
     ns5:author <http://ceur-ws.org/Vol-1625/#BatoiMerdygeev> .
 
-<http://ceur-ws.org/Vol-1625/#abs1> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-1625/> ;
-    ns3:title "Verb-Noun Collocation and Government Model Extraction from Large Corpora" ;
-    ns1:endPage 72 ;
-    ns1:numPages 1 ;
-    ns1:section <http://ceur-ws.org/Vol-1625/#Abstracts> ;
-    ns1:startPage 72 ;
+<http://ceur-ws.org/Vol-1625/#abs1> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1625/> ;
+    ns6:title "Verb-Noun Collocation and Government Model Extraction from Large Corpora" ;
+    ns3:endPage 72 ;
+    ns3:numPages 1 ;
+    ns3:section <http://ceur-ws.org/Vol-1625/#Abstracts> ;
+    ns3:startPage 72 ;
     ns5:author <http://ceur-ws.org/Vol-1625/#OksanaiDereza>,
         <http://ceur-ws.org/Vol-1625/#VladislaviTushkanov> .
 
-<http://ceur-ws.org/Vol-1625/#abs2> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-1625/> ;
-    ns3:title "Topic Modeling without Generative Probabilistic Model: An Approach and its Validation" ;
-    ns1:endPage 73 ;
-    ns1:numPages 1 ;
-    ns1:section <http://ceur-ws.org/Vol-1625/#Abstracts> ;
-    ns1:startPage 73 ;
+<http://ceur-ws.org/Vol-1625/#abs2> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1625/> ;
+    ns6:title "Topic Modeling without Generative Probabilistic Model: An Approach and its Validation" ;
+    ns3:endPage 73 ;
+    ns3:numPages 1 ;
+    ns3:section <http://ceur-ws.org/Vol-1625/#Abstracts> ;
+    ns3:startPage 73 ;
     ns5:author <http://ceur-ws.org/Vol-1625/#ElenaiM.iKreines>,
         <http://ceur-ws.org/Vol-1625/#MikhailiG.iKreines> .
 
-<http://ceur-ws.org/Vol-1625/#Abstracts> a ns6:SessionEvent ;
-    ns6:partOf <http://ceur-ws.org/Vol-1625/> ;
-    ns3:title "Abstracts" .
+<http://ceur-ws.org/Vol-1625/#Abstracts> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-1625/> ;
+    ns6:title "Abstracts" .
 
-<http://ceur-ws.org/Vol-1625/#RegularPapers> a ns6:SessionEvent ;
-    ns6:partOf <http://ceur-ws.org/Vol-1625/> ;
-    ns3:title "Regular Papers" .
+<http://ceur-ws.org/Vol-1625/#RegularPapers> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-1625/> ;
+    ns6:title "Regular Papers" .
 
-<http://ceur-ws.org/Vol-1625/> a ns6:Proceedings ;
-    ns6:hasPart <http://ceur-ws.org/Vol-1625/#abs1>,
+<http://ceur-ws.org/Vol-1625/> a ns1:Proceedings ;
+    ns1:hasPart <http://ceur-ws.org/Vol-1625/#abs1>,
         <http://ceur-ws.org/Vol-1625/#abs2>,
         <http://ceur-ws.org/Vol-1625/#inv1>,
         <http://ceur-ws.org/Vol-1625/#paper1>,
@@ -232,11 +238,11 @@
         <http://ceur-ws.org/Vol-1625/#paper6>,
         <http://ceur-ws.org/Vol-1625/#paper7>,
         <http://ceur-ws.org/Vol-1625/#proposal1> ;
-    ns6:hasSession <http://ceur-ws.org/Vol-1625/#Abstracts>,
+    ns1:hasSession <http://ceur-ws.org/Vol-1625/#Abstracts>,
         <http://ceur-ws.org/Vol-1625/#InvitedTalk>,
         <http://ceur-ws.org/Vol-1625/#RegularPapers> ;
     ns9:issued "2016-07-25T00:00:00+00:00"^^xsd:dateTime ;
-    ns1:presentedAt <http://ceur-ws.org/Vol-1625/#event> ;
+    ns3:presentedAt <http://ceur-ws.org/Vol-1625/#event> ;
     ns5:editor <http://ceur-ws.org/Vol-1625/#AlexanderiPanchenko>,
         <http://ceur-ws.org/Vol-1625/#DmitryiI.iIgnatov>,
         <http://ceur-ws.org/Vol-1625/#DmitryiIlvovsky>,

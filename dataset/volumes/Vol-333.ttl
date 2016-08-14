@@ -1,12 +1,12 @@
 @prefix ns1: <http://www.w3.org/2002/07/owl#> .
 @prefix ns2: <http://xmlns.com/foaf/0.1/> .
-@prefix ns3: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns4: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns5: <http://purl.org/ontology/bibo/#> .
-@prefix ns6: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns8: <http://purl.org/dc/elements/1.1/> .
-@prefix ns9: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns3: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns4: <http://purl.org/ontology/bibo/#> .
+@prefix ns5: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns6: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns7: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns9: <http://purl.org/dc/elements/1.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -73,8 +73,8 @@
     ns2:name "Celine Poudat" .
 
 <http://ceur-ws.org/Vol-333/#DERI> a ns2:Person ;
-    ns5:place <http://dbpedia.org/resource/Republic_of_Ireland> ;
-    ns4:affiliation "NUI Galway" ;
+    ns4:place <http://dbpedia.org/resource/Republic_of_Ireland> ;
+    ns6:affiliation "NUI Galway" ;
     ns1:sameAs <http://ceur-ws.org/persons/DERI> ;
     ns2:name "DERI" .
 
@@ -268,142 +268,163 @@
     ns2:made <http://ceur-ws.org/Vol-333/#paperX10> ;
     ns2:name "Zsolt Tivadar Kardkovacs" .
 
-<http://ceur-ws.org/Vol-333/#event> a ns6:WorkshopEvent ;
-    ns6:hasLocation <http://dbpedia.org/resource/Austria> ;
-    ns6:hasPart <http://ceur-ws.org/Vol-333/#part-ADW>,
+<http://ceur-ws.org/Vol-333/#event> a ns3:WorkshopEvent ;
+    ns3:hasLocation <http://dbpedia.org/resource/Austria> ;
+    ns3:hasPart <http://ceur-ws.org/Vol-333/#part-ADW>,
         <http://ceur-ws.org/Vol-333/#part-E-Learning>,
         <http://ceur-ws.org/Vol-333/#part-SAW> ;
-    ns6:isSubEventOf <http://ceur-ws.org/Vol-333/#conf> ;
-    ns7:beginsAtDatetime "2008-05-06T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:endsAtDatetime "2008-05-07T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:license "http://choosealicense.com/licenses/no-license/" ;
+    ns3:isSubEventOf <http://ceur-ws.org/Vol-333/#conf> ;
+    ns5:beginsAtDatetime "2008-05-06T00:00:00+00:00"^^xsd:dateTime ;
+    ns5:endsAtDatetime "2008-05-07T00:00:00+00:00"^^xsd:dateTime ;
+    ns9:license "http://choosealicense.com/licenses/no-license/" ;
     rdfs:seeAlso <http://ceur-ws.org/Vol-245/#event> .
 
-<http://ceur-ws.org/Vol-333/#paperX2> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-333/> ;
-    ns3:title "Unevenness in network properties on the social Semantic Web. [" ;
-    ns5:section <http://ceur-ws.org/Vol-333/#2ndWorkshoponSocialAspectsoftheWebSAW2008> ;
-    ns4:author <http://ceur-ws.org/Vol-333/#RafiGuns.> .
+<http://ceur-ws.org/Vol-333/#part-ADW> a ns4:Workshop ;
+    ns3:partOf <http://ceur-ws.org/series/ADW> ;
+    ns7:title "ADW",
+        "BIS 2008 Workshops Proceedings" ;
+    ns4:shortTitle "ADW" ;
+    ns6:edition 1 .
 
-<http://ceur-ws.org/Vol-333/#paperX10> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-333/> ;
-    ns3:title "Determining Relevant Deep Web Sites by Query Context Identification. [" ;
-    ns5:section <http://ceur-ws.org/Vol-333/#1stWorkshoponAdvancesinaccessingDeepWebADW2008> ;
-    ns4:author <http://ceur-ws.org/Vol-333/#DomonkosiTikk.>,
+<http://ceur-ws.org/Vol-333/#part-E-Learning> a ns4:Workshop ;
+    ns3:partOf <http://ceur-ws.org/series/E-Learning> ;
+    ns7:title "BIS 2008 Workshops Proceedings",
+        "E-Learning" ;
+    ns4:shortTitle "E-Learning" ;
+    ns6:edition 1 .
+
+<http://ceur-ws.org/Vol-333/#part-SAW> a ns4:Workshop ;
+    ns3:partOf <http://ceur-ws.org/series/SAW> ;
+    ns7:title "BIS 2008 Workshops Proceedings",
+        "SAW" ;
+    ns4:shortTitle "SAW" ;
+    ns6:edition 1 .
+
+<http://ceur-ws.org/Vol-333/#paperX2> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-333/> ;
+    ns7:title "Unevenness in network properties on the social Semantic Web. [" ;
+    ns4:section <http://ceur-ws.org/Vol-333/#2ndWorkshoponSocialAspectsoftheWebSAW2008> ;
+    ns6:author <http://ceur-ws.org/Vol-333/#RafiGuns.> .
+
+<http://ceur-ws.org/Vol-333/#paperX10> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-333/> ;
+    ns7:title "Determining Relevant Deep Web Sites by Query Context Identification. [" ;
+    ns4:section <http://ceur-ws.org/Vol-333/#1stWorkshoponAdvancesinaccessingDeepWebADW2008> ;
+    ns6:author <http://ceur-ws.org/Vol-333/#DomonkosiTikk.>,
         <http://ceur-ws.org/Vol-333/#ZsoltiTivadariKardkovacs> .
 
-<http://ceur-ws.org/Vol-333/#paperX11> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-333/> ;
-    ns3:title "Deep Web Navigation by Example. [" ;
-    ns5:section <http://ceur-ws.org/Vol-333/#1stWorkshoponAdvancesinaccessingDeepWebADW2008> ;
-    ns4:author <http://ceur-ws.org/Vol-333/#ThomasiHornung.>,
+<http://ceur-ws.org/Vol-333/#paperX11> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-333/> ;
+    ns7:title "Deep Web Navigation by Example. [" ;
+    ns4:section <http://ceur-ws.org/Vol-333/#1stWorkshoponAdvancesinaccessingDeepWebADW2008> ;
+    ns6:author <http://ceur-ws.org/Vol-333/#ThomasiHornung.>,
         <http://ceur-ws.org/Vol-333/#YangiWang> .
 
-<http://ceur-ws.org/Vol-333/#paperX13> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-333/> ;
-    ns3:title "Web2Train: a Design Model for Corporate e-Learning Systems. [" ;
-    ns5:section <http://ceur-ws.org/Vol-333/#WorkshoponELearningforBusinessNeeds> ;
-    ns4:author <http://ceur-ws.org/Vol-333/#KaterinaiPapanikolaou>,
+<http://ceur-ws.org/Vol-333/#paperX13> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-333/> ;
+    ns7:title "Web2Train: a Design Model for Corporate e-Learning Systems. [" ;
+    ns4:section <http://ceur-ws.org/Vol-333/#WorkshoponELearningforBusinessNeeds> ;
+    ns6:author <http://ceur-ws.org/Vol-333/#KaterinaiPapanikolaou>,
         <http://ceur-ws.org/Vol-333/#StephanosiMavromoustakos.> .
 
-<http://ceur-ws.org/Vol-333/#paperX3> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-333/> ;
-    ns3:title "Trustlet, Open Research on Trust Metrics. [" ;
-    ns5:section <http://ceur-ws.org/Vol-333/#2ndWorkshoponSocialAspectsoftheWebSAW2008> ;
-    ns4:author <http://ceur-ws.org/Vol-333/#KasperiSouren.>,
+<http://ceur-ws.org/Vol-333/#paperX3> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-333/> ;
+    ns7:title "Trustlet, Open Research on Trust Metrics. [" ;
+    ns4:section <http://ceur-ws.org/Vol-333/#2ndWorkshoponSocialAspectsoftheWebSAW2008> ;
+    ns6:author <http://ceur-ws.org/Vol-333/#KasperiSouren.>,
         <http://ceur-ws.org/Vol-333/#PaoloiMassa> .
 
-<http://ceur-ws.org/Vol-333/#paperX8> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-333/> ;
-    ns3:title "Investigating Weblogs in Small and Medium Enterprises: An Exploratory Case Study. [" ;
-    ns5:section <http://ceur-ws.org/Vol-333/#2ndWorkshoponSocialAspectsoftheWebSAW2008> ;
-    ns4:author <http://ceur-ws.org/Vol-333/#AlexanderiStocker>,
+<http://ceur-ws.org/Vol-333/#paperX8> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-333/> ;
+    ns7:title "Investigating Weblogs in Small and Medium Enterprises: An Exploratory Case Study. [" ;
+    ns4:section <http://ceur-ws.org/Vol-333/#2ndWorkshoponSocialAspectsoftheWebSAW2008> ;
+    ns6:author <http://ceur-ws.org/Vol-333/#AlexanderiStocker>,
         <http://ceur-ws.org/Vol-333/#KlausiTochtermann.> .
 
-<http://ceur-ws.org/Vol-333/#1stWorkshoponAdvancesinaccessingDeepWebADW2008> a ns6:SessionEvent ;
-    ns6:partOf <http://ceur-ws.org/Vol-333/> ;
-    ns3:title "1st Workshop on Advances in accessing Deep Web (ADW 2008)" .
+<http://ceur-ws.org/Vol-333/#1stWorkshoponAdvancesinaccessingDeepWebADW2008> a ns3:SessionEvent ;
+    ns3:partOf <http://ceur-ws.org/Vol-333/> ;
+    ns7:title "1st Workshop on Advances in accessing Deep Web (ADW 2008)" .
 
-<http://ceur-ws.org/Vol-333/#WorkshoponELearningforBusinessNeeds> a ns6:SessionEvent ;
-    ns6:partOf <http://ceur-ws.org/Vol-333/> ;
-    ns3:title "Workshop on E-Learning for Business Needs" .
+<http://ceur-ws.org/Vol-333/#WorkshoponELearningforBusinessNeeds> a ns3:SessionEvent ;
+    ns3:partOf <http://ceur-ws.org/Vol-333/> ;
+    ns7:title "Workshop on E-Learning for Business Needs" .
 
-<http://ceur-ws.org/Vol-333/#paperX12> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-333/> ;
-    ns3:title "Fuzzy Constraint-based Schema Matching Formulation. [" ;
-    ns5:section <http://ceur-ws.org/Vol-333/#1stWorkshoponAdvancesinaccessingDeepWebADW2008> ;
-    ns4:author <http://ceur-ws.org/Vol-333/#AlsayediAlgergawy>,
+<http://ceur-ws.org/Vol-333/#paperX12> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-333/> ;
+    ns7:title "Fuzzy Constraint-based Schema Matching Formulation. [" ;
+    ns4:section <http://ceur-ws.org/Vol-333/#1stWorkshoponAdvancesinaccessingDeepWebADW2008> ;
+    ns6:author <http://ceur-ws.org/Vol-333/#AlsayediAlgergawy>,
         <http://ceur-ws.org/Vol-333/#EikeiSchallehn>,
         <http://ceur-ws.org/Vol-333/#GunteriSaake.> .
 
-<http://ceur-ws.org/Vol-333/#paperX15> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-333/> ;
-    ns3:title "VIEW: A Framework for Interactive eLearning in a Virtual World. [" ;
-    ns5:section <http://ceur-ws.org/Vol-333/#WorkshoponELearningforBusinessNeeds> ;
-    ns4:author <http://ceur-ws.org/Vol-333/#KamaliBijlani>,
+<http://ceur-ws.org/Vol-333/#paperX15> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-333/> ;
+    ns7:title "VIEW: A Framework for Interactive eLearning in a Virtual World. [" ;
+    ns4:section <http://ceur-ws.org/Vol-333/#WorkshoponELearningforBusinessNeeds> ;
+    ns6:author <http://ceur-ws.org/Vol-333/#KamaliBijlani>,
         <http://ceur-ws.org/Vol-333/#P.iManoj>,
         <http://ceur-ws.org/Vol-333/#P.iVenkatiRangan.> .
 
-<http://ceur-ws.org/Vol-333/#paperX5> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-333/> ;
-    ns3:title "Hubbub - An innovative customer support forum. [" ;
-    ns5:section <http://ceur-ws.org/Vol-333/#2ndWorkshoponSocialAspectsoftheWebSAW2008> ;
-    ns4:author <http://ceur-ws.org/Vol-333/#CefniHoile.>,
+<http://ceur-ws.org/Vol-333/#paperX5> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-333/> ;
+    ns7:title "Hubbub - An innovative customer support forum. [" ;
+    ns4:section <http://ceur-ws.org/Vol-333/#2ndWorkshoponSocialAspectsoftheWebSAW2008> ;
+    ns6:author <http://ceur-ws.org/Vol-333/#CefniHoile.>,
         <http://ceur-ws.org/Vol-333/#DuongiNguyen>,
         <http://ceur-ws.org/Vol-333/#SimoniThompson> .
 
-<http://ceur-ws.org/Vol-333/#paperX9> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-333/> ;
-    ns3:title "Transforming Exchange-based Job Boards into Lasting Career Communities. [" ;
-    ns5:section <http://ceur-ws.org/Vol-333/#2ndWorkshoponSocialAspectsoftheWebSAW2008> ;
-    ns4:author <http://ceur-ws.org/Vol-333/#CelesteiWilderom>,
+<http://ceur-ws.org/Vol-333/#paperX9> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-333/> ;
+    ns7:title "Transforming Exchange-based Job Boards into Lasting Career Communities. [" ;
+    ns4:section <http://ceur-ws.org/Vol-333/#2ndWorkshoponSocialAspectsoftheWebSAW2008> ;
+    ns6:author <http://ceur-ws.org/Vol-333/#CelesteiWilderom>,
         <http://ceur-ws.org/Vol-333/#ElfiiEttinger>,
         <http://ceur-ws.org/Vol-333/#RolfiVaniDick.> .
 
-<http://ceur-ws.org/Vol-333/#paperX1> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-333/> ;
-    ns3:title "Social Network and Data Portability using Semantic Web Technologies. [" ;
-    ns5:section <http://ceur-ws.org/Vol-333/#2ndWorkshoponSocialAspectsoftheWebSAW2008> ;
-    ns4:author <http://ceur-ws.org/Vol-333/#AlexandreiPassant>,
+<http://ceur-ws.org/Vol-333/#paperX1> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-333/> ;
+    ns7:title "Social Network and Data Portability using Semantic Web Technologies. [" ;
+    ns4:section <http://ceur-ws.org/Vol-333/#2ndWorkshoponSocialAspectsoftheWebSAW2008> ;
+    ns6:author <http://ceur-ws.org/Vol-333/#AlexandreiPassant>,
         <http://ceur-ws.org/Vol-333/#JohniG.iBreslin>,
         <http://ceur-ws.org/Vol-333/#StefaniDecker.>,
         <http://ceur-ws.org/Vol-333/#UldisiBojars> .
 
-<http://ceur-ws.org/Vol-333/#paperX14> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-333/> ;
-    ns3:title "Evaluate - An Innovative Service for Learning Performance Monitoring in Businesses. [" ;
-    ns5:section <http://ceur-ws.org/Vol-333/#WorkshoponELearningforBusinessNeeds> ;
-    ns4:author <http://ceur-ws.org/Vol-333/#AsmundiRealfsen>,
+<http://ceur-ws.org/Vol-333/#paperX14> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-333/> ;
+    ns7:title "Evaluate - An Innovative Service for Learning Performance Monitoring in Businesses. [" ;
+    ns4:section <http://ceur-ws.org/Vol-333/#WorkshoponELearningforBusinessNeeds> ;
+    ns6:author <http://ceur-ws.org/Vol-333/#AsmundiRealfsen>,
         <http://ceur-ws.org/Vol-333/#BerndiSimon>,
         <http://ceur-ws.org/Vol-333/#GustafiNeumann.>,
         <http://ceur-ws.org/Vol-333/#KasraiSeirafi>,
         <http://ceur-ws.org/Vol-333/#MarkiStrembeck> .
 
-<http://ceur-ws.org/Vol-333/#paperX6> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-333/> ;
-    ns3:title "Mobile Social Software for Cultural Heritage: A Reference Model. [" ;
-    ns5:section <http://ceur-ws.org/Vol-333/#2ndWorkshoponSocialAspectsoftheWebSAW2008> ;
-    ns4:author <http://ceur-ws.org/Vol-333/#ElenaiNazzi>,
+<http://ceur-ws.org/Vol-333/#paperX6> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-333/> ;
+    ns7:title "Mobile Social Software for Cultural Heritage: A Reference Model. [" ;
+    ns4:section <http://ceur-ws.org/Vol-333/#2ndWorkshoponSocialAspectsoftheWebSAW2008> ;
+    ns6:author <http://ceur-ws.org/Vol-333/#ElenaiNazzi>,
         <http://ceur-ws.org/Vol-333/#LucaiVassena.>,
         <http://ceur-ws.org/Vol-333/#PaoloiCoppola>,
         <http://ceur-ws.org/Vol-333/#RaffaellaiLomuscio>,
         <http://ceur-ws.org/Vol-333/#StefanoiMizzaro> .
 
-<http://ceur-ws.org/Vol-333/#paperX7> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-333/> ;
-    ns3:title "Managing conflicts between users in Wikipedia. [" ;
-    ns5:section <http://ceur-ws.org/Vol-333/#2ndWorkshoponSocialAspectsoftheWebSAW2008> ;
-    ns4:author <http://ceur-ws.org/Vol-333/#AurelieniLauf>,
+<http://ceur-ws.org/Vol-333/#paperX7> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-333/> ;
+    ns7:title "Managing conflicts between users in Wikipedia. [" ;
+    ns4:section <http://ceur-ws.org/Vol-333/#2ndWorkshoponSocialAspectsoftheWebSAW2008> ;
+    ns6:author <http://ceur-ws.org/Vol-333/#AurelieniLauf>,
         <http://ceur-ws.org/Vol-333/#BernardiJacquemin>,
         <http://ceur-ws.org/Vol-333/#CelineiPoudat>,
         <http://ceur-ws.org/Vol-333/#MartineiHurault-Plantet>,
         <http://ceur-ws.org/Vol-333/#NicolasiAuray.> .
 
-<http://ceur-ws.org/Vol-333/#paperX4> a ns6:Paper ;
-    ns6:partOf <http://ceur-ws.org/Vol-333/> ;
-    ns3:title "Organisational Knowledge Management Systems in the Era of Enterprise 2.0: The case of OrganiK. [" ;
-    ns5:section <http://ceur-ws.org/Vol-333/#2ndWorkshoponSocialAspectsoftheWebSAW2008> ;
-    ns4:author <http://ceur-ws.org/Vol-333/#AnaiCristinaiVasconcelos.>,
+<http://ceur-ws.org/Vol-333/#paperX4> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-333/> ;
+    ns7:title "Organisational Knowledge Management Systems in the Era of Enterprise 2.0: The case of OrganiK. [" ;
+    ns4:section <http://ceur-ws.org/Vol-333/#2ndWorkshoponSocialAspectsoftheWebSAW2008> ;
+    ns6:author <http://ceur-ws.org/Vol-333/#AnaiCristinaiVasconcelos.>,
         <http://ceur-ws.org/Vol-333/#AnsgariBernardi>,
         <http://ceur-ws.org/Vol-333/#DimitriosiKourtesis>,
         <http://ceur-ws.org/Vol-333/#DimitrisiApostolou>,
@@ -412,12 +433,12 @@
         <http://ceur-ws.org/Vol-333/#IraklisiParaskakis>,
         <http://ceur-ws.org/Vol-333/#LeoiSauermann> .
 
-<http://ceur-ws.org/Vol-333/#2ndWorkshoponSocialAspectsoftheWebSAW2008> a ns6:SessionEvent ;
-    ns6:partOf <http://ceur-ws.org/Vol-333/> ;
-    ns3:title "2nd Workshop on Social Aspects of the Web (SAW 2008)" .
+<http://ceur-ws.org/Vol-333/#2ndWorkshoponSocialAspectsoftheWebSAW2008> a ns3:SessionEvent ;
+    ns3:partOf <http://ceur-ws.org/Vol-333/> ;
+    ns7:title "2nd Workshop on Social Aspects of the Web (SAW 2008)" .
 
-<http://ceur-ws.org/Vol-333/> a ns6:Proceedings ;
-    ns6:hasPart <http://ceur-ws.org/Vol-333/#paperX1>,
+<http://ceur-ws.org/Vol-333/> a ns3:Proceedings ;
+    ns3:hasPart <http://ceur-ws.org/Vol-333/#paperX1>,
         <http://ceur-ws.org/Vol-333/#paperX10>,
         <http://ceur-ws.org/Vol-333/#paperX11>,
         <http://ceur-ws.org/Vol-333/#paperX12>,
@@ -432,10 +453,10 @@
         <http://ceur-ws.org/Vol-333/#paperX7>,
         <http://ceur-ws.org/Vol-333/#paperX8>,
         <http://ceur-ws.org/Vol-333/#paperX9> ;
-    ns6:hasSession <http://ceur-ws.org/Vol-333/#1stWorkshoponAdvancesinaccessingDeepWebADW2008>,
+    ns3:hasSession <http://ceur-ws.org/Vol-333/#1stWorkshoponAdvancesinaccessingDeepWebADW2008>,
         <http://ceur-ws.org/Vol-333/#2ndWorkshoponSocialAspectsoftheWebSAW2008>,
         <http://ceur-ws.org/Vol-333/#WorkshoponELearningforBusinessNeeds> ;
-    ns9:issued "2008-05-14T00:00:00+00:00"^^xsd:dateTime ;
-    ns5:presentedAt <http://ceur-ws.org/Vol-333/#event> ;
-    ns4:editor <http://ceur-ws.org/Vol-333/#DERI> .
+    ns8:issued "2008-05-14T00:00:00+00:00"^^xsd:dateTime ;
+    ns4:presentedAt <http://ceur-ws.org/Vol-333/#event> ;
+    ns6:editor <http://ceur-ws.org/Vol-333/#DERI> .
 

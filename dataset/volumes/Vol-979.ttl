@@ -1,12 +1,12 @@
 @prefix ns1: <http://xmlns.com/foaf/0.1/> .
 @prefix ns2: <http://www.w3.org/2002/07/owl#> .
-@prefix ns3: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns4: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns3: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns4: <http://purl.org/dc/elements/1.1/#> .
 @prefix ns5: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns6: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns7: <http://purl.org/dc/elements/1.1/> .
+@prefix ns6: <http://purl.org/ontology/bibo/#> .
+@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
 @prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns9: <http://purl.org/ontology/bibo/#> .
+@prefix ns9: <http://purl.org/dc/elements/1.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -38,7 +38,7 @@
     ns1:name "Carlos Fonseca" .
 
 <http://ceur-ws.org/Vol-979/#ClementiJonquet> a ns1:Person ;
-    ns4:affiliation "" ;
+    ns3:affiliation "" ;
     ns2:sameAs <http://ceur-ws.org/persons/ClementiJonquet> ;
     ns1:name "Clement Jonquet" .
 
@@ -128,7 +128,7 @@
     ns1:name "Lauren Joplin" .
 
 <http://ceur-ws.org/Vol-979/#ManueliRuiz> a ns1:Person ;
-    ns4:affiliation "" ;
+    ns3:affiliation "" ;
     ns2:sameAs <http://ceur-ws.org/persons/ManueliRuiz> ;
     ns1:name "Manuel Ruiz" .
 
@@ -193,7 +193,7 @@
     ns1:name "Pierre-Yves Chibon" .
 
 <http://ceur-ws.org/Vol-979/#PierreiLarmande> a ns1:Person ;
-    ns4:affiliation "" ;
+    ns3:affiliation "" ;
     ns2:sameAs <http://ceur-ws.org/persons/PierreiLarmande> ;
     ns1:name "Pierre Larmande" .
 
@@ -233,7 +233,7 @@
     ns1:name "Shawn Bowers" .
 
 <http://ceur-ws.org/Vol-979/#ThereseiLibourel> a ns1:Person ;
-    ns4:affiliation "" ;
+    ns3:affiliation "" ;
     ns2:sameAs <http://ceur-ws.org/persons/ThereseiLibourel> ;
     ns1:name "Therese Libourel" .
 
@@ -271,9 +271,15 @@
     ns5:hasLocation <http://dbpedia.org/resource/France> ;
     ns5:hasPart <http://ceur-ws.org/Vol-979/#part-S4BioDiv> ;
     ns5:isSubEventOf <http://ceur-ws.org/Vol-979/#conf> ;
-    ns6:beginsAtDatetime "2013-05-27T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:endsAtDatetime "2013-05-27T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:license "http://choosealicense.com/licenses/no-license/" .
+    ns7:beginsAtDatetime "2013-05-27T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:endsAtDatetime "2013-05-27T00:00:00+00:00"^^xsd:dateTime ;
+    ns9:license "http://choosealicense.com/licenses/no-license/" .
+
+<http://ceur-ws.org/Vol-979/#part-S4BioDiv> a ns6:Workshop ;
+    ns5:partOf <http://ceur-ws.org/series/S4BioDiv> ;
+    ns4:title "Semantics for Biodiversity 2013" ;
+    ns6:shortTitle "S4BioDiv" ;
+    ns3:edition 1 .
 
 <http://ceur-ws.org/Vol-979/#EeroiHyvonen> a ns1:Person ;
     ns2:sameAs <http://ceur-ws.org/persons/EeroiHyvonen> ;
@@ -282,13 +288,13 @@
     ns1:name "Eero Hyvonen" .
 
 <http://ceur-ws.org/Vol-979/#ElizabethiArnaud> a ns1:Person ;
-    ns4:affiliation "" ;
+    ns3:affiliation "" ;
     ns2:sameAs <http://ceur-ws.org/persons/ElizabethiArnaud> ;
     ns1:made <http://ceur-ws.org/Vol-979/#WS_s4biodiv2013_paper_4> ;
     ns1:name "Elizabeth Arnaud" .
 
 <http://ceur-ws.org/Vol-979/#IsabelleiMougenot> a ns1:Person ;
-    ns4:affiliation "" ;
+    ns3:affiliation "" ;
     ns2:sameAs <http://ceur-ws.org/persons/IsabelleiMougenot> ;
     ns1:made <http://ceur-ws.org/Vol-979/#WS_s4biodiv2013_paper_3> ;
     ns1:name "Isabelle Mougenot" .
@@ -301,59 +307,59 @@
 
 <http://ceur-ws.org/Vol-979/#WS_s4biodiv2013_paper_10> a ns5:Paper ;
     ns5:partOf <http://ceur-ws.org/Vol-979/> ;
-    ns3:title "A Knowledge Base for Exploited Marine Ecosystems" ;
-    ns4:author <http://ceur-ws.org/Vol-979/#BardeiJulien>,
+    ns4:title "A Knowledge Base for Exploited Marine Ecosystems" ;
+    ns3:author <http://ceur-ws.org/Vol-979/#BardeiJulien>,
         <http://ceur-ws.org/Vol-979/#BilletiNorbert>,
         <http://ceur-ws.org/Vol-979/#PascaliCauquil> .
 
 <http://ceur-ws.org/Vol-979/#WS_s4biodiv2013_paper_11> a ns5:Paper ;
     ns5:partOf <http://ceur-ws.org/Vol-979/> ;
-    ns3:title "Detecting Semantic Overlap and Discovering Precedents in the Biodiversity Research Literature" ;
-    ns4:author <http://ceur-ws.org/Vol-979/#GraemeiHirst>,
+    ns4:title "Detecting Semantic Overlap and Discovering Precedents in the Biodiversity Research Literature" ;
+    ns3:author <http://ceur-ws.org/Vol-979/#GraemeiHirst>,
         <http://ceur-ws.org/Vol-979/#NadiaiTalent>,
         <http://ceur-ws.org/Vol-979/#SaraiScharf> .
 
 <http://ceur-ws.org/Vol-979/#WS_s4biodiv2013_paper_2> a ns5:Paper ;
     ns5:partOf <http://ceur-ws.org/Vol-979/> ;
-    ns3:title "Publishing and Using Plant Names as an Ontology Service" ;
-    ns4:author <http://ceur-ws.org/Vol-979/#EeroiHyvonen>,
+    ns4:title "Publishing and Using Plant Names as an Ontology Service" ;
+    ns3:author <http://ceur-ws.org/Vol-979/#EeroiHyvonen>,
         <http://ceur-ws.org/Vol-979/#JouniiTuominen>,
         <http://ceur-ws.org/Vol-979/#NinaiLaurenne> .
 
 <http://ceur-ws.org/Vol-979/#WS_s4biodiv2013_paper_3> a ns5:Paper ;
     ns5:partOf <http://ceur-ws.org/Vol-979/> ;
-    ns3:title "A Faceted Search System for Facilitating Discovery-driven Scientific Activities: A Use Case from Functional Ecology" ;
-    ns4:author <http://ceur-ws.org/Vol-979/#EriciGarnier>,
+    ns4:title "A Faceted Search System for Facilitating Discovery-driven Scientific Activities: A Use Case from Functional Ecology" ;
+    ns3:author <http://ceur-ws.org/Vol-979/#EriciGarnier>,
         <http://ceur-ws.org/Vol-979/#IsabelleiMougenot>,
         <http://ceur-ws.org/Vol-979/#Marie-Ang%C3%A9liqueiLaporte> .
 
 <http://ceur-ws.org/Vol-979/#WS_s4biodiv2013_paper_5> a ns5:Paper ;
     ns5:partOf <http://ceur-ws.org/Vol-979/> ;
-    ns3:title "A Case-Study of Ontology-Driven Semantic Mediation of Flower-Visiting Data from Heterogeneous Data-Stores in Three South African Natural History Collections" ;
-    ns4:author <http://ceur-ws.org/Vol-979/#AuronaiGerber>,
+    ns4:title "A Case-Study of Ontology-Driven Semantic Mediation of Flower-Visiting Data from Heterogeneous Data-Stores in Three South African Natural History Collections" ;
+    ns3:author <http://ceur-ws.org/Vol-979/#AuronaiGerber>,
         <http://ceur-ws.org/Vol-979/#DeshendraniMoodley>,
         <http://ceur-ws.org/Vol-979/#WillemiCoetzer> .
 
 <http://ceur-ws.org/Vol-979/#WS_s4biodiv2013_paper_1> a ns5:Paper ;
     ns5:partOf <http://ceur-ws.org/Vol-979/> ;
-    ns3:title "A Logical Model for Taxonomic Concepts for Expanding Knowledge using Linked Open Data" ;
-    ns4:author <http://ceur-ws.org/Vol-979/#HideakiiTakeda>,
+    ns4:title "A Logical Model for Taxonomic Concepts for Expanding Knowledge using Linked Open Data" ;
+    ns3:author <http://ceur-ws.org/Vol-979/#HideakiiTakeda>,
         <http://ceur-ws.org/Vol-979/#RathachaiiChawuthai>,
         <http://ceur-ws.org/Vol-979/#UtsugiiJinbo>,
         <http://ceur-ws.org/Vol-979/#VilasiWuwongse> .
 
 <http://ceur-ws.org/Vol-979/#WS_s4biodiv2013_paper_8> a ns5:Paper ;
     ns5:partOf <http://ceur-ws.org/Vol-979/> ;
-    ns3:title "BirdWatch--Supporting Citizen Scientists for Better Linked Data Quality for Biodiversity Management" ;
-    ns4:author <http://ceur-ws.org/Vol-979/#EeroiHyvonen>,
+    ns4:title "BirdWatch--Supporting Citizen Scientists for Better Linked Data Quality for Biodiversity Management" ;
+    ns3:author <http://ceur-ws.org/Vol-979/#EeroiHyvonen>,
         <http://ceur-ws.org/Vol-979/#JouniiTuominen>,
         <http://ceur-ws.org/Vol-979/#MiikaiAlonen>,
         <http://ceur-ws.org/Vol-979/#MikkoiKoho> .
 
 <http://ceur-ws.org/Vol-979/#WS_s4biodiv2013_paper_9> a ns5:Paper ;
     ns5:partOf <http://ceur-ws.org/Vol-979/> ;
-    ns3:title "iPlant SSWAP (Simple Semantic Web Architecture and Protocol) Enables Semantic Pipelines for Biodiversity" ;
-    ns4:author <http://ceur-ws.org/Vol-979/#BlazejiBulka>,
+    ns4:title "iPlant SSWAP (Simple Semantic Web Architecture and Protocol) Enables Semantic Pipelines for Biodiversity" ;
+    ns3:author <http://ceur-ws.org/Vol-979/#BlazejiBulka>,
         <http://ceur-ws.org/Vol-979/#DamianiGessler>,
         <http://ceur-ws.org/Vol-979/#EvreniSirin>,
         <http://ceur-ws.org/Vol-979/#HansiVasquez-Gross>,
@@ -362,8 +368,8 @@
 
 <http://ceur-ws.org/Vol-979/#WS_s4biodiv2013_paper_6> a ns5:Paper ;
     ns5:partOf <http://ceur-ws.org/Vol-979/> ;
-    ns3:title "Flexible Scientific Data Management for Plant Phenomics Research" ;
-    ns4:author <http://ceur-ws.org/Vol-979/#DavidiBenn>,
+    ns4:title "Flexible Scientific Data Management for Plant Phenomics Research" ;
+    ns3:author <http://ceur-ws.org/Vol-979/#DavidiBenn>,
         <http://ceur-ws.org/Vol-979/#GarethiWilliams>,
         <http://ceur-ws.org/Vol-979/#JianmingiGuo>,
         <http://ceur-ws.org/Vol-979/#KutilaiGunasekera>,
@@ -373,8 +379,8 @@
 
 <http://ceur-ws.org/Vol-979/#WS_s4biodiv2013_paper_4> a ns5:Paper ;
     ns5:partOf <http://ceur-ws.org/Vol-979/> ;
-    ns3:title "Crop Ontology: Vocabulary for Crop-related Concepts" ;
-    ns4:author <http://ceur-ws.org/Vol-979/#ElizabethiArnaud>,
+    ns4:title "Crop Ontology: Vocabulary for Crop-related Concepts" ;
+    ns3:author <http://ceur-ws.org/Vol-979/#ElizabethiArnaud>,
         <http://ceur-ws.org/Vol-979/#GlenniHyman>,
         <http://ceur-ws.org/Vol-979/#HerliniEspinosa>,
         <http://ceur-ws.org/Vol-979/#MatteisiLuca>,
@@ -385,8 +391,8 @@
 
 <http://ceur-ws.org/Vol-979/#WS_s4biodiv2013_paper_7> a ns5:Paper ;
     ns5:partOf <http://ceur-ws.org/Vol-979/> ;
-    ns3:title "Lightweight Ontology-Based Tools for Managing Observational Data" ;
-    ns4:author <http://ceur-ws.org/Vol-979/#CarlosiFonseca>,
+    ns4:title "Lightweight Ontology-Based Tools for Managing Observational Data" ;
+    ns3:author <http://ceur-ws.org/Vol-979/#CarlosiFonseca>,
         <http://ceur-ws.org/Vol-979/#JacobiTroxel>,
         <http://ceur-ws.org/Vol-979/#LaureniJoplin>,
         <http://ceur-ws.org/Vol-979/#PatrickiMosca>,
@@ -409,8 +415,8 @@
         <http://ceur-ws.org/Vol-979/#WS_s4biodiv2013_paper_8>,
         <http://ceur-ws.org/Vol-979/#WS_s4biodiv2013_paper_9> ;
     ns8:issued "2013-05-01T00:00:00+00:00"^^xsd:dateTime ;
-    ns9:presentedAt <http://ceur-ws.org/Vol-979/#event> ;
-    ns4:editor <http://ceur-ws.org/Vol-979/#ClementiJonquet>,
+    ns6:presentedAt <http://ceur-ws.org/Vol-979/#event> ;
+    ns3:editor <http://ceur-ws.org/Vol-979/#ClementiJonquet>,
         <http://ceur-ws.org/Vol-979/#ElizabethiArnaud>,
         <http://ceur-ws.org/Vol-979/#IsabelleiMougenot>,
         <http://ceur-ws.org/Vol-979/#ManueliRuiz>,

@@ -1,11 +1,11 @@
 @prefix ns1: <http://xmlns.com/foaf/0.1/> .
 @prefix ns2: <http://data.semanticweb.org/ns/swc/ontology/#> .
 @prefix ns3: <http://www.w3.org/2002/07/owl#> .
-@prefix ns4: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns5: <http://purl.org/ontology/bibo/#> .
-@prefix ns6: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns7: <http://purl.org/dc/elements/1.1/> .
-@prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns4: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns5: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns6: <http://purl.org/ontology/bibo/#> .
+@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns8: <http://purl.org/dc/elements/1.1/> .
 @prefix ns9: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -63,8 +63,8 @@
     ns1:name "Axel-Cyrille Ngonga Ngomo" .
 
 <http://ceur-ws.org/Vol-1317/#AxeliNgonga> a ns1:Person ;
-    ns5:place <http://dbpedia.org/resource/Germany> ;
-    ns4:affiliation "University of Leipzig" ;
+    ns6:place <http://dbpedia.org/resource/Germany> ;
+    ns5:affiliation "University of Leipzig" ;
     ns3:sameAs <http://ceur-ws.org/persons/AxeliNgonga> ;
     ns1:name "Axel Ngonga" .
 
@@ -249,8 +249,8 @@
     ns1:name "Mihai Codescu" .
 
 <http://ceur-ws.org/Vol-1317/#MingiMao> a ns1:Person ;
-    ns5:place <http://dbpedia.org/resource/United_States> ;
-    ns4:affiliation "Electronic Arts" ;
+    ns6:place <http://dbpedia.org/resource/United_States> ;
+    ns5:affiliation "Electronic Arts" ;
     ns3:sameAs <http://ceur-ws.org/persons/MingiMao> ;
     ns1:name "Ming Mao" .
 
@@ -393,9 +393,9 @@
     ns2:hasLocation <http://dbpedia.org/resource/Italy> ;
     ns2:hasPart <http://ceur-ws.org/Vol-1317/#part-OM> ;
     ns2:isSubEventOf <http://ceur-ws.org/Vol-1317/#conf> ;
-    ns8:beginsAtDatetime "2014-10-20T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:endsAtDatetime "2014-10-20T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:license "http://creativecommons.org/publicdomain/zero/1.0/" ;
+    ns7:beginsAtDatetime "2014-10-20T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:endsAtDatetime "2014-10-20T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:license "http://creativecommons.org/publicdomain/zero/1.0/" ;
     rdfs:seeAlso <http://ceur-ws.org/Vol-1111/#event>,
         <http://ceur-ws.org/Vol-225/#event>,
         <http://ceur-ws.org/Vol-304/#event>,
@@ -404,6 +404,12 @@
         <http://ceur-ws.org/Vol-689/#event>,
         <http://ceur-ws.org/Vol-814/#event>,
         <http://ceur-ws.org/Vol-946/#event> .
+
+<http://ceur-ws.org/Vol-1317/#part-OM> a ns6:Workshop ;
+    ns2:partOf <http://ceur-ws.org/series/OM> ;
+    ns4:title "Ontology Matching 2014" ;
+    ns6:shortTitle "OM" ;
+    ns5:edition 9 .
 
 <http://ceur-ws.org/Vol-1317/#AbderrahmaneiKhiat> a ns1:Person ;
     ns3:sameAs <http://ceur-ws.org/persons/AbderrahmaneiKhiat> ;
@@ -442,15 +448,15 @@
     ns1:name "Francisco M. Couto" .
 
 <http://ceur-ws.org/Vol-1317/#J%C3%A9r%C3%B4meiEuzenat> a ns1:Person ;
-    ns5:place <http://dbpedia.org/resource/France> ;
-    ns4:affiliation "INRIA & LIG" ;
+    ns6:place <http://dbpedia.org/resource/France> ;
+    ns5:affiliation "INRIA & LIG" ;
     ns3:sameAs <http://ceur-ws.org/persons/J%C3%A9r%C3%B4meiEuzenat> ;
     ns1:made <http://ceur-ws.org/Vol-1317/#oaei14_paper0> ;
     ns1:name "Jérôme Euzenat" .
 
 <http://ceur-ws.org/Vol-1317/#JuanziiLi> a ns1:Person ;
-    ns5:place <http://dbpedia.org/resource/China> ;
-    ns4:affiliation "Tsinghua University" ;
+    ns6:place <http://dbpedia.org/resource/China> ;
+    ns5:affiliation "Tsinghua University" ;
     ns3:sameAs <http://ceur-ws.org/persons/JuanziiLi> ;
     ns1:made <http://ceur-ws.org/Vol-1317/#oaei14_paper9> ;
     ns1:name "Juanzi Li" .
@@ -468,8 +474,8 @@
     ns1:name "Moussa Benaissa" .
 
 <http://ceur-ws.org/Vol-1317/#PaveliShvaiko> a ns1:Person ;
-    ns5:place <http://dbpedia.org/resource/Italy> ;
-    ns4:affiliation "TasLab, Informatica Trentina" ;
+    ns6:place <http://dbpedia.org/resource/Italy> ;
+    ns5:affiliation "TasLab, Informatica Trentina" ;
     ns3:sameAs <http://ceur-ws.org/persons/PaveliShvaiko> ;
     ns1:made <http://ceur-ws.org/Vol-1317/#oaei14_paper0> ;
     ns1:name "Pavel Shvaiko" .
@@ -482,8 +488,8 @@
     ns1:name "Daniel Faria" .
 
 <http://ceur-ws.org/Vol-1317/#ErnestoiJim%C3%A9nez-Ruiz> a ns1:Person ;
-    ns5:place <http://dbpedia.org/resource/United_Kingdom> ;
-    ns4:affiliation "University of Oxford" ;
+    ns6:place <http://dbpedia.org/resource/United_Kingdom> ;
+    ns5:affiliation "University of Oxford" ;
     ns3:sameAs <http://ceur-ws.org/persons/ErnestoiJim%C3%A9nez-Ruiz> ;
     ns1:made <http://ceur-ws.org/Vol-1317/#oaei14_paper0>,
         <http://ceur-ws.org/Vol-1317/#oaei14_paper4> ;
@@ -491,217 +497,217 @@
 
 <http://ceur-ws.org/Vol-1317/#oaei14_paper11> a ns2:Paper ;
     ns2:partOf <http://ceur-ws.org/Vol-1317/> ;
-    ns6:title "XMap++: results for OAEI 2014" ;
-    ns5:endPage 169 ;
-    ns5:numPages 7 ;
-    ns5:section <http://ceur-ws.org/Vol-1317/#OAEIpapers> ;
-    ns5:startPage 163 ;
-    ns4:author <http://ceur-ws.org/Vol-1317/#MohamediTarekiKhadir>,
+    ns4:title "XMap++: results for OAEI 2014" ;
+    ns6:endPage 169 ;
+    ns6:numPages 7 ;
+    ns6:section <http://ceur-ws.org/Vol-1317/#OAEIpapers> ;
+    ns6:startPage 163 ;
+    ns5:author <http://ceur-ws.org/Vol-1317/#MohamediTarekiKhadir>,
         <http://ceur-ws.org/Vol-1317/#WarithiEddineiDjeddi> .
 
 <http://ceur-ws.org/Vol-1317/#oaei14_paper2> a ns2:Paper ;
     ns2:partOf <http://ceur-ws.org/Vol-1317/> ;
-    ns6:title "AOT / AOTL results for OAEI 2014" ;
-    ns5:endPage 119 ;
-    ns5:numPages 7 ;
-    ns5:section <http://ceur-ws.org/Vol-1317/#OAEIpapers> ;
-    ns5:startPage 113 ;
-    ns4:author <http://ceur-ws.org/Vol-1317/#AbderrahmaneiKhiat>,
+    ns4:title "AOT / AOTL results for OAEI 2014" ;
+    ns6:endPage 119 ;
+    ns6:numPages 7 ;
+    ns6:section <http://ceur-ws.org/Vol-1317/#OAEIpapers> ;
+    ns6:startPage 113 ;
+    ns5:author <http://ceur-ws.org/Vol-1317/#AbderrahmaneiKhiat>,
         <http://ceur-ws.org/Vol-1317/#MoussaiBenaissa> .
 
 <http://ceur-ws.org/Vol-1317/#oaei14_paper3> a ns2:Paper ;
     ns2:partOf <http://ceur-ws.org/Vol-1317/> ;
-    ns6:title "InsMT / InsMTL results for OAEI 2014 instance matching" ;
-    ns5:endPage 125 ;
-    ns5:numPages 6 ;
-    ns5:section <http://ceur-ws.org/Vol-1317/#OAEIpapers> ;
-    ns5:startPage 120 ;
-    ns4:author <http://ceur-ws.org/Vol-1317/#AbderrahmaneiKhiat>,
+    ns4:title "InsMT / InsMTL results for OAEI 2014 instance matching" ;
+    ns6:endPage 125 ;
+    ns6:numPages 6 ;
+    ns6:section <http://ceur-ws.org/Vol-1317/#OAEIpapers> ;
+    ns6:startPage 120 ;
+    ns5:author <http://ceur-ws.org/Vol-1317/#AbderrahmaneiKhiat>,
         <http://ceur-ws.org/Vol-1317/#MoussaiBenaissa> .
 
 <http://ceur-ws.org/Vol-1317/#oaei14_paper6> a ns2:Paper ;
     ns2:partOf <http://ceur-ws.org/Vol-1317/> ;
-    ns6:title "Alignment evaluation of MaasMatch for the OAEI 2014 campaign" ;
-    ns5:endPage 141 ;
-    ns5:numPages 7 ;
-    ns5:section <http://ceur-ws.org/Vol-1317/#OAEIpapers> ;
-    ns5:startPage 135 ;
-    ns4:author <http://ceur-ws.org/Vol-1317/#FrederikiC.iSchadd>,
+    ns4:title "Alignment evaluation of MaasMatch for the OAEI 2014 campaign" ;
+    ns6:endPage 141 ;
+    ns6:numPages 7 ;
+    ns6:section <http://ceur-ws.org/Vol-1317/#OAEIpapers> ;
+    ns6:startPage 135 ;
+    ns5:author <http://ceur-ws.org/Vol-1317/#FrederikiC.iSchadd>,
         <http://ceur-ws.org/Vol-1317/#NicoiRoos> .
 
 <http://ceur-ws.org/Vol-1317/#om2014_Tpaper2> a ns2:Paper ;
     ns2:partOf <http://ceur-ws.org/Vol-1317/> ;
-    ns6:title "The properties of property alignment" ;
-    ns5:endPage 24 ;
-    ns5:numPages 12 ;
-    ns5:section <http://ceur-ws.org/Vol-1317/#Technicalpapers> ;
-    ns5:startPage 13 ;
-    ns4:author <http://ceur-ws.org/Vol-1317/#MichelleiCheatham>,
+    ns4:title "The properties of property alignment" ;
+    ns6:endPage 24 ;
+    ns6:numPages 12 ;
+    ns6:section <http://ceur-ws.org/Vol-1317/#Technicalpapers> ;
+    ns6:startPage 13 ;
+    ns5:author <http://ceur-ws.org/Vol-1317/#MichelleiCheatham>,
         <http://ceur-ws.org/Vol-1317/#PascaliHitzler> .
 
 <http://ceur-ws.org/Vol-1317/#om2014_Tpaper4> a ns2:Paper ;
     ns2:partOf <http://ceur-ws.org/Vol-1317/> ;
-    ns6:title "Time-efficient execution of bounded Jaro-Winkler distances" ;
-    ns5:endPage 48 ;
-    ns5:numPages 12 ;
-    ns5:section <http://ceur-ws.org/Vol-1317/#Technicalpapers> ;
-    ns5:startPage 37 ;
-    ns4:author <http://ceur-ws.org/Vol-1317/#Axel-CyrilleiNgongaiNgomo>,
+    ns4:title "Time-efficient execution of bounded Jaro-Winkler distances" ;
+    ns6:endPage 48 ;
+    ns6:numPages 12 ;
+    ns6:section <http://ceur-ws.org/Vol-1317/#Technicalpapers> ;
+    ns6:startPage 37 ;
+    ns5:author <http://ceur-ws.org/Vol-1317/#Axel-CyrilleiNgongaiNgomo>,
         <http://ceur-ws.org/Vol-1317/#KeviniDre%C3%9Fler> .
 
 <http://ceur-ws.org/Vol-1317/#om2014_Tpaper5> a ns2:Paper ;
     ns2:partOf <http://ceur-ws.org/Vol-1317/> ;
-    ns6:title "A two-step blocking scheme learner for scalable link discovery" ;
-    ns5:endPage 60 ;
-    ns5:numPages 12 ;
-    ns5:section <http://ceur-ws.org/Vol-1317/#Technicalpapers> ;
-    ns5:startPage 49 ;
-    ns4:author <http://ceur-ws.org/Vol-1317/#DanieliP.iMiranker>,
+    ns4:title "A two-step blocking scheme learner for scalable link discovery" ;
+    ns6:endPage 60 ;
+    ns6:numPages 12 ;
+    ns6:section <http://ceur-ws.org/Vol-1317/#Technicalpapers> ;
+    ns6:startPage 49 ;
+    ns5:author <http://ceur-ws.org/Vol-1317/#DanieliP.iMiranker>,
         <http://ceur-ws.org/Vol-1317/#MayankiKejriwal> .
 
 <http://ceur-ws.org/Vol-1317/#om2014_poster1> a ns2:Paper ;
     ns2:partOf <http://ceur-ws.org/Vol-1317/> ;
-    ns6:title "Evaluation of string normalisation modules for string-based biomedical vocabularies alignment with AnAGram" ;
-    ns5:endPage 171 ;
-    ns5:numPages 2 ;
-    ns5:section <http://ceur-ws.org/Vol-1317/#Posters> ;
-    ns5:startPage 170 ;
-    ns4:author <http://ceur-ws.org/Vol-1317/#AniqueivaniBerne>,
+    ns4:title "Evaluation of string normalisation modules for string-based biomedical vocabularies alignment with AnAGram" ;
+    ns6:endPage 171 ;
+    ns6:numPages 2 ;
+    ns6:section <http://ceur-ws.org/Vol-1317/#Posters> ;
+    ns6:startPage 170 ;
+    ns5:author <http://ceur-ws.org/Vol-1317/#AniqueivaniBerne>,
         <http://ceur-ws.org/Vol-1317/#VeroniqueiMalais%C3%A9> .
 
 <http://ceur-ws.org/Vol-1317/#om2014_poster4> a ns2:Paper ;
     ns2:partOf <http://ceur-ws.org/Vol-1317/> ;
-    ns6:title "The importance of cross-lingual information for matching Wikipedia with the Cyc ontology" ;
-    ns5:endPage 177 ;
-    ns5:numPages 2 ;
-    ns5:section <http://ceur-ws.org/Vol-1317/#Posters> ;
-    ns5:startPage 176 ;
-    ns4:author <http://ceur-ws.org/Vol-1317/#AleksanderiSmywi%C5%84ski-Pohl>,
+    ns4:title "The importance of cross-lingual information for matching Wikipedia with the Cyc ontology" ;
+    ns6:endPage 177 ;
+    ns6:numPages 2 ;
+    ns6:section <http://ceur-ws.org/Vol-1317/#Posters> ;
+    ns6:startPage 176 ;
+    ns5:author <http://ceur-ws.org/Vol-1317/#AleksanderiSmywi%C5%84ski-Pohl>,
         <http://ceur-ws.org/Vol-1317/#KrzysztofiWr%C3%B3bel> .
 
 <http://ceur-ws.org/Vol-1317/#om2014_poster8> a ns2:Paper ;
     ns2:partOf <http://ceur-ws.org/Vol-1317/> ;
-    ns6:title "One query at a time: incremental, collective ontology matching" ;
-    ns5:endPage 185 ;
-    ns5:numPages 2 ;
-    ns5:section <http://ceur-ws.org/Vol-1317/#Posters> ;
-    ns5:startPage 184 ;
-    ns4:author <http://ceur-ws.org/Vol-1317/#HassoiPlattner>,
+    ns4:title "One query at a time: incremental, collective ontology matching" ;
+    ns6:endPage 185 ;
+    ns6:numPages 2 ;
+    ns6:section <http://ceur-ws.org/Vol-1317/#Posters> ;
+    ns6:startPage 184 ;
+    ns5:author <http://ceur-ws.org/Vol-1317/#HassoiPlattner>,
         <http://ceur-ws.org/Vol-1317/#ThomasiKowark> .
 
 <http://ceur-ws.org/Vol-1317/#oaei14_paper10> a ns2:Paper ;
     ns2:partOf <http://ceur-ws.org/Vol-1317/> ;
-    ns6:title "RSDL workbench results for OAEI 2014" ;
-    ns5:endPage 162 ;
-    ns5:numPages 8 ;
-    ns5:section <http://ceur-ws.org/Vol-1317/#OAEIpapers> ;
-    ns5:startPage 155 ;
-    ns4:author <http://ceur-ws.org/Vol-1317/#ChristianiGerth>,
+    ns4:title "RSDL workbench results for OAEI 2014" ;
+    ns6:endPage 162 ;
+    ns6:numPages 8 ;
+    ns6:section <http://ceur-ws.org/Vol-1317/#OAEIpapers> ;
+    ns6:startPage 155 ;
+    ns5:author <http://ceur-ws.org/Vol-1317/#ChristianiGerth>,
         <http://ceur-ws.org/Vol-1317/#GregoriEngels>,
         <http://ceur-ws.org/Vol-1317/#SimoniSchwichtenberg> .
 
 <http://ceur-ws.org/Vol-1317/#oaei14_paper9> a ns2:Paper ;
     ns2:partOf <http://ceur-ws.org/Vol-1317/> ;
-    ns6:title "RiMOM-IM results for OAEI 2014" ;
-    ns5:endPage 154 ;
-    ns5:numPages 6 ;
-    ns5:section <http://ceur-ws.org/Vol-1317/#OAEIpapers> ;
-    ns5:startPage 149 ;
-    ns4:author <http://ceur-ws.org/Vol-1317/#ChaoiShao>,
+    ns4:title "RiMOM-IM results for OAEI 2014" ;
+    ns6:endPage 154 ;
+    ns6:numPages 6 ;
+    ns6:section <http://ceur-ws.org/Vol-1317/#OAEIpapers> ;
+    ns6:startPage 149 ;
+    ns5:author <http://ceur-ws.org/Vol-1317/#ChaoiShao>,
         <http://ceur-ws.org/Vol-1317/#JuanziiLi>,
         <http://ceur-ws.org/Vol-1317/#LinmeiiHu> .
 
 <http://ceur-ws.org/Vol-1317/#om2014_Tpaper1> a ns2:Paper ;
     ns2:partOf <http://ceur-ws.org/Vol-1317/> ;
-    ns6:title "A categorical approach to ontology alignment" ;
-    ns5:endPage 12 ;
-    ns5:numPages 12 ;
-    ns5:section <http://ceur-ws.org/Vol-1317/#Technicalpapers> ;
-    ns5:startPage 1 ;
-    ns4:author <http://ceur-ws.org/Vol-1317/#MihaiiCodescu>,
+    ns4:title "A categorical approach to ontology alignment" ;
+    ns6:endPage 12 ;
+    ns6:numPages 12 ;
+    ns6:section <http://ceur-ws.org/Vol-1317/#Technicalpapers> ;
+    ns6:startPage 1 ;
+    ns5:author <http://ceur-ws.org/Vol-1317/#MihaiiCodescu>,
         <http://ceur-ws.org/Vol-1317/#OliveriKutz>,
         <http://ceur-ws.org/Vol-1317/#TilliMossakowski> .
 
 <http://ceur-ws.org/Vol-1317/#om2014_poster5> a ns2:Paper ;
     ns2:partOf <http://ceur-ws.org/Vol-1317/> ;
-    ns6:title "Constructing a class hierarchy with properties by refining and aligning Japanese wikipedia ontology and Japanese WordNet" ;
-    ns5:endPage 179 ;
-    ns5:numPages 2 ;
-    ns5:section <http://ceur-ws.org/Vol-1317/#Posters> ;
-    ns5:startPage 178 ;
-    ns4:author <http://ceur-ws.org/Vol-1317/#SusumuiTamagawa>,
+    ns4:title "Constructing a class hierarchy with properties by refining and aligning Japanese wikipedia ontology and Japanese WordNet" ;
+    ns6:endPage 179 ;
+    ns6:numPages 2 ;
+    ns6:section <http://ceur-ws.org/Vol-1317/#Posters> ;
+    ns6:startPage 178 ;
+    ns5:author <http://ceur-ws.org/Vol-1317/#SusumuiTamagawa>,
         <http://ceur-ws.org/Vol-1317/#TakahiraiYamaguchi>,
         <http://ceur-ws.org/Vol-1317/#TakeshiiMorita> .
 
 <http://ceur-ws.org/Vol-1317/#om2014_poster6> a ns2:Paper ;
     ns2:partOf <http://ceur-ws.org/Vol-1317/> ;
-    ns6:title "Partitioning-based ontology matching approaches: a comparative analysis" ;
-    ns5:endPage 181 ;
-    ns5:numPages 2 ;
-    ns5:section <http://ceur-ws.org/Vol-1317/#Posters> ;
-    ns5:startPage 180 ;
-    ns4:author <http://ceur-ws.org/Vol-1317/#AlsayediAlgergawy>,
+    ns4:title "Partitioning-based ontology matching approaches: a comparative analysis" ;
+    ns6:endPage 181 ;
+    ns6:numPages 2 ;
+    ns6:section <http://ceur-ws.org/Vol-1317/#Posters> ;
+    ns6:startPage 180 ;
+    ns5:author <http://ceur-ws.org/Vol-1317/#AlsayediAlgergawy>,
         <http://ceur-ws.org/Vol-1317/#BirgittaiKonig-Ries>,
         <http://ceur-ws.org/Vol-1317/#FriederikeiKlan> .
 
 <http://ceur-ws.org/Vol-1317/#om2014_poster7> a ns2:Paper ;
     ns2:partOf <http://ceur-ws.org/Vol-1317/> ;
-    ns6:title "Towards a cluster-based approach for user participation in ontology maching" ;
-    ns5:endPage 183 ;
-    ns5:numPages 2 ;
-    ns5:section <http://ceur-ws.org/Vol-1317/#Posters> ;
-    ns5:startPage 182 ;
-    ns4:author <http://ceur-ws.org/Vol-1317/#FernandaiBai%C3%A3o>,
+    ns4:title "Towards a cluster-based approach for user participation in ontology maching" ;
+    ns6:endPage 183 ;
+    ns6:numPages 2 ;
+    ns6:section <http://ceur-ws.org/Vol-1317/#Posters> ;
+    ns6:startPage 182 ;
+    ns5:author <http://ceur-ws.org/Vol-1317/#FernandaiBai%C3%A3o>,
         <http://ceur-ws.org/Vol-1317/#KateiRevoredo>,
         <http://ceur-ws.org/Vol-1317/#ViniciusiLopes> .
 
 <http://ceur-ws.org/Vol-1317/#om2014_poster9> a ns2:Paper ;
     ns2:partOf <http://ceur-ws.org/Vol-1317/> ;
-    ns6:title "Enabling semantic search for EO products: an ontology matching approach" ;
-    ns5:endPage 187 ;
-    ns5:numPages 2 ;
-    ns5:section <http://ceur-ws.org/Vol-1317/#Posters> ;
-    ns5:startPage 186 ;
-    ns4:author <http://ceur-ws.org/Vol-1317/#KonstantinaiDogani>,
+    ns4:title "Enabling semantic search for EO products: an ontology matching approach" ;
+    ns6:endPage 187 ;
+    ns6:numPages 2 ;
+    ns6:section <http://ceur-ws.org/Vol-1317/#Posters> ;
+    ns6:startPage 186 ;
+    ns5:author <http://ceur-ws.org/Vol-1317/#KonstantinaiDogani>,
         <http://ceur-ws.org/Vol-1317/#ManolisiKoubarakis>,
         <http://ceur-ws.org/Vol-1317/#MariaiKarpathiotaki> .
 
 <http://ceur-ws.org/Vol-1317/#om2014_Tpaper3> a ns2:Paper ;
     ns2:partOf <http://ceur-ws.org/Vol-1317/> ;
-    ns6:title "Completeness and optimality in ontology alignment debugging" ;
-    ns5:endPage 36 ;
-    ns5:numPages 12 ;
-    ns5:section <http://ceur-ws.org/Vol-1317/#Technicalpapers> ;
-    ns5:startPage 25 ;
-    ns4:author <http://ceur-ws.org/Vol-1317/#ChristianiMeilicke>,
+    ns4:title "Completeness and optimality in ontology alignment debugging" ;
+    ns6:endPage 36 ;
+    ns6:numPages 12 ;
+    ns6:section <http://ceur-ws.org/Vol-1317/#Technicalpapers> ;
+    ns6:startPage 25 ;
+    ns5:author <http://ceur-ws.org/Vol-1317/#ChristianiMeilicke>,
         <http://ceur-ws.org/Vol-1317/#HeineriStuckenschmidt>,
         <http://ceur-ws.org/Vol-1317/#JaniNoessner>,
         <http://ceur-ws.org/Vol-1317/#MathiasiNiepert> .
 
 <http://ceur-ws.org/Vol-1317/#om2014_poster3> a ns2:Paper ;
     ns2:partOf <http://ceur-ws.org/Vol-1317/> ;
-    ns6:title "A term-based approach for matching multilingual thesauri" ;
-    ns5:endPage 175 ;
-    ns5:numPages 2 ;
-    ns5:section <http://ceur-ws.org/Vol-1317/#Posters> ;
-    ns5:startPage 174 ;
-    ns4:author <http://ceur-ws.org/Vol-1317/#AlessioiBosca>,
+    ns4:title "A term-based approach for matching multilingual thesauri" ;
+    ns6:endPage 175 ;
+    ns6:numPages 2 ;
+    ns6:section <http://ceur-ws.org/Vol-1317/#Posters> ;
+    ns6:startPage 174 ;
+    ns5:author <http://ceur-ws.org/Vol-1317/#AlessioiBosca>,
         <http://ceur-ws.org/Vol-1317/#AndiiRexha>,
         <http://ceur-ws.org/Vol-1317/#MatteoiCasu>,
         <http://ceur-ws.org/Vol-1317/#MauroiDragoni> .
 
 <http://ceur-ws.org/Vol-1317/#Technicalpapers> a ns2:SessionEvent ;
     ns2:partOf <http://ceur-ws.org/Vol-1317/> ;
-    ns6:title "Technical papers" .
+    ns4:title "Technical papers" .
 
 <http://ceur-ws.org/Vol-1317/#om2014_poster2> a ns2:Paper ;
     ns2:partOf <http://ceur-ws.org/Vol-1317/> ;
-    ns6:title "Building reference alignments for compound matching of multiple ontologies using OBO cross-products" ;
-    ns5:endPage 173 ;
-    ns5:numPages 2 ;
-    ns5:section <http://ceur-ws.org/Vol-1317/#Posters> ;
-    ns5:startPage 172 ;
-    ns4:author <http://ceur-ws.org/Vol-1317/#CatiaiPesquita>,
+    ns4:title "Building reference alignments for compound matching of multiple ontologies using OBO cross-products" ;
+    ns6:endPage 173 ;
+    ns6:numPages 2 ;
+    ns6:section <http://ceur-ws.org/Vol-1317/#Posters> ;
+    ns6:startPage 172 ;
+    ns5:author <http://ceur-ws.org/Vol-1317/#CatiaiPesquita>,
         <http://ceur-ws.org/Vol-1317/#DanieliFaria>,
         <http://ceur-ws.org/Vol-1317/#EmanueliSantos>,
         <http://ceur-ws.org/Vol-1317/#FranciscoiM.iCouto>,
@@ -710,12 +716,12 @@
 
 <http://ceur-ws.org/Vol-1317/#oaei14_paper7> a ns2:Paper ;
     ns2:partOf <http://ceur-ws.org/Vol-1317/> ;
-    ns6:title "OMReasoner: combination of multi-matchers for ontology matching: results for OAEI 2014" ;
-    ns5:endPage 148 ;
-    ns5:numPages 7 ;
-    ns5:section <http://ceur-ws.org/Vol-1317/#OAEIpapers> ;
-    ns5:startPage 142 ;
-    ns4:author <http://ceur-ws.org/Vol-1317/#DazhouiKang>,
+    ns4:title "OMReasoner: combination of multi-matchers for ontology matching: results for OAEI 2014" ;
+    ns6:endPage 148 ;
+    ns6:numPages 7 ;
+    ns6:section <http://ceur-ws.org/Vol-1317/#OAEIpapers> ;
+    ns6:startPage 142 ;
+    ns5:author <http://ceur-ws.org/Vol-1317/#DazhouiKang>,
         <http://ceur-ws.org/Vol-1317/#FeiiWang>,
         <http://ceur-ws.org/Vol-1317/#GuohuaiShen>,
         <http://ceur-ws.org/Vol-1317/#JiaiSi>,
@@ -725,12 +731,12 @@
 
 <http://ceur-ws.org/Vol-1317/#oaei14_paper1> a ns2:Paper ;
     ns2:partOf <http://ceur-ws.org/Vol-1317/> ;
-    ns6:title "AgreementMakerLight results for OAEI 2014" ;
-    ns5:endPage 112 ;
-    ns5:numPages 8 ;
-    ns5:section <http://ceur-ws.org/Vol-1317/#OAEIpapers> ;
-    ns5:startPage 105 ;
-    ns4:author <http://ceur-ws.org/Vol-1317/#AmrutaiNanavaty>,
+    ns4:title "AgreementMakerLight results for OAEI 2014" ;
+    ns6:endPage 112 ;
+    ns6:numPages 8 ;
+    ns6:section <http://ceur-ws.org/Vol-1317/#OAEIpapers> ;
+    ns6:startPage 105 ;
+    ns5:author <http://ceur-ws.org/Vol-1317/#AmrutaiNanavaty>,
         <http://ceur-ws.org/Vol-1317/#AynaziTaheri>,
         <http://ceur-ws.org/Vol-1317/#CatarinaiMartins>,
         <http://ceur-ws.org/Vol-1317/#CatiaiPesquita>,
@@ -741,16 +747,16 @@
 
 <http://ceur-ws.org/Vol-1317/#Posters> a ns2:SessionEvent ;
     ns2:partOf <http://ceur-ws.org/Vol-1317/> ;
-    ns6:title "Posters" .
+    ns4:title "Posters" .
 
 <http://ceur-ws.org/Vol-1317/#oaei14_paper4> a ns2:Paper ;
     ns2:partOf <http://ceur-ws.org/Vol-1317/> ;
-    ns6:title "LogMap family results for OAEI 2014" ;
-    ns5:endPage 134 ;
-    ns5:numPages 9 ;
-    ns5:section <http://ceur-ws.org/Vol-1317/#OAEIpapers> ;
-    ns5:startPage 126 ;
-    ns4:author <http://ceur-ws.org/Vol-1317/#AlessandroiSolimando>,
+    ns4:title "LogMap family results for OAEI 2014" ;
+    ns6:endPage 134 ;
+    ns6:numPages 9 ;
+    ns6:section <http://ceur-ws.org/Vol-1317/#OAEIpapers> ;
+    ns6:startPage 126 ;
+    ns5:author <http://ceur-ws.org/Vol-1317/#AlessandroiSolimando>,
         <http://ceur-ws.org/Vol-1317/#AnuiChennai-Thiagarajan>,
         <http://ceur-ws.org/Vol-1317/#BernardoiCuencaiGrau>,
         <http://ceur-ws.org/Vol-1317/#ErnestoiJim%C3%A9nez-Ruiz>,
@@ -762,16 +768,16 @@
 
 <http://ceur-ws.org/Vol-1317/#OAEIpapers> a ns2:SessionEvent ;
     ns2:partOf <http://ceur-ws.org/Vol-1317/> ;
-    ns6:title "OAEI papers" .
+    ns4:title "OAEI papers" .
 
 <http://ceur-ws.org/Vol-1317/#oaei14_paper0> a ns2:Paper ;
     ns2:partOf <http://ceur-ws.org/Vol-1317/> ;
-    ns6:title "Results of the Ontology Alignment Evaluation Initiative 2014" ;
-    ns5:endPage 104 ;
-    ns5:numPages 44 ;
-    ns5:section <http://ceur-ws.org/Vol-1317/#OAEIpapers> ;
-    ns5:startPage 61 ;
-    ns4:author <http://ceur-ws.org/Vol-1317/#AlessandroiSolimando>,
+    ns4:title "Results of the Ontology Alignment Evaluation Initiative 2014" ;
+    ns6:endPage 104 ;
+    ns6:numPages 44 ;
+    ns6:section <http://ceur-ws.org/Vol-1317/#OAEIpapers> ;
+    ns6:startPage 61 ;
+    ns5:author <http://ceur-ws.org/Vol-1317/#AlessandroiSolimando>,
         <http://ceur-ws.org/Vol-1317/#AlfioiFerrara>,
         <http://ceur-ws.org/Vol-1317/#AndreasiOskariKempf>,
         <http://ceur-ws.org/Vol-1317/#BernardoiCuencaiGrau>,
@@ -819,8 +825,8 @@
         <http://ceur-ws.org/Vol-1317/#Posters>,
         <http://ceur-ws.org/Vol-1317/#Technicalpapers> ;
     ns9:issued "2014-12-16T00:00:00+00:00"^^xsd:dateTime ;
-    ns5:presentedAt <http://ceur-ws.org/Vol-1317/#event> ;
-    ns4:editor <http://ceur-ws.org/Vol-1317/#AxeliNgonga>,
+    ns6:presentedAt <http://ceur-ws.org/Vol-1317/#event> ;
+    ns5:editor <http://ceur-ws.org/Vol-1317/#AxeliNgonga>,
         <http://ceur-ws.org/Vol-1317/#ErnestoiJim%C3%A9nez-Ruiz>,
         <http://ceur-ws.org/Vol-1317/#J%C3%A9r%C3%B4meiEuzenat>,
         <http://ceur-ws.org/Vol-1317/#JuanziiLi>,

@@ -1,11 +1,11 @@
 @prefix ns1: <http://xmlns.com/foaf/0.1/> .
 @prefix ns2: <http://www.w3.org/2002/07/owl#> .
-@prefix ns3: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns4: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns5: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns6: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns8: <http://purl.org/ontology/bibo/#> .
+@prefix ns3: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns4: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns5: <http://purl.org/ontology/bibo/#> .
+@prefix ns6: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
 @prefix ns9: <http://purl.org/dc/elements/1.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -272,16 +272,22 @@
     ns1:made <http://ceur-ws.org/Vol-632/#paper22> ;
     ns1:name "V�ctor Codocedo" .
 
-<http://ceur-ws.org/Vol-632/#event> a ns3:WorkshopEvent ;
-    ns3:hasLocation <http://dbpedia.org/resource/Greece> ;
-    ns3:hasPart <http://ceur-ws.org/Vol-632/#part-SemWiki> ;
-    ns3:isSubEventOf <http://ceur-ws.org/Vol-632/#conf> ;
-    ns7:beginsAtDatetime "2010-05-31T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:endsAtDatetime "2010-05-31T00:00:00+00:00"^^xsd:dateTime ;
+<http://ceur-ws.org/Vol-632/#event> a ns4:WorkshopEvent ;
+    ns4:hasLocation <http://dbpedia.org/resource/Greece> ;
+    ns4:hasPart <http://ceur-ws.org/Vol-632/#part-SemWiki> ;
+    ns4:isSubEventOf <http://ceur-ws.org/Vol-632/#conf> ;
+    ns8:beginsAtDatetime "2010-05-31T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:endsAtDatetime "2010-05-31T00:00:00+00:00"^^xsd:dateTime ;
     ns9:license "http://choosealicense.com/licenses/no-license/" ;
     rdfs:seeAlso <http://ceur-ws.org/Vol-206/#event>,
         <http://ceur-ws.org/Vol-360/#event>,
         <http://ceur-ws.org/Vol-464/#event> .
+
+<http://ceur-ws.org/Vol-632/#part-SemWiki> a ns5:Workshop ;
+    ns4:partOf <http://ceur-ws.org/series/SemWiki> ;
+    ns6:title "Semantic Wikis Workshop 2010" ;
+    ns5:shortTitle "SemWiki" ;
+    ns3:edition 5 .
 
 <http://ceur-ws.org/Vol-632/#AntoniK%EF%BF%BDstlbacher> a ns1:Person ;
     ns2:sameAs <http://ceur-ws.org/persons/AntoniK%EF%BF%BDstlbacher> ;
@@ -290,7 +296,7 @@
     ns1:name "Anton K�stlbacher" .
 
 <http://ceur-ws.org/Vol-632/#ChristophiLange> a ns1:Person ;
-    ns6:affiliation "" ;
+    ns3:affiliation "" ;
     ns2:sameAs <http://ceur-ws.org/persons/ChristophiLange> ;
     ns1:made <http://ceur-ws.org/Vol-632/#paper14> ;
     ns1:name "Christoph Lange" .
@@ -302,7 +308,7 @@
     ns1:name "Fran�ois Bry" .
 
 <http://ceur-ws.org/Vol-632/#JocheniReutelshoefer> a ns1:Person ;
-    ns6:affiliation "" ;
+    ns3:affiliation "" ;
     ns2:sameAs <http://ceur-ws.org/persons/JocheniReutelshoefer> ;
     ns1:made <http://ceur-ws.org/Vol-632/#paper19> ;
     ns1:name "Jochen Reutelshoefer" .
@@ -314,159 +320,159 @@
     ns1:name "Pascal Molli" .
 
 <http://ceur-ws.org/Vol-632/#SebastianiSchaffert> a ns1:Person ;
-    ns6:affiliation "" ;
+    ns3:affiliation "" ;
     ns2:sameAs <http://ceur-ws.org/persons/SebastianiSchaffert> ;
     ns1:made <http://ceur-ws.org/Vol-632/#paper17> ;
     ns1:name "Sebastian Schaffert" .
 
-<http://ceur-ws.org/Vol-632/#paper10> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-632/> ;
-    ns4:title "Automating Content Generation for Large-scale Virtual Learning Environments using Semantic Web Services" ;
-    ns6:author <http://ceur-ws.org/Vol-632/#IaniDunwell> .
+<http://ceur-ws.org/Vol-632/#paper10> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-632/> ;
+    ns6:title "Automating Content Generation for Large-scale Virtual Learning Environments using Semantic Web Services" ;
+    ns3:author <http://ceur-ws.org/Vol-632/#IaniDunwell> .
 
 <http://ceur-ws.org/Vol-632/#HalaiSkaf-Molli> a ns1:Person ;
-    ns6:affiliation "" ;
+    ns3:affiliation "" ;
     ns2:sameAs <http://ceur-ws.org/persons/HalaiSkaf-Molli> ;
     ns1:made <http://ceur-ws.org/Vol-632/#paper12>,
         <http://ceur-ws.org/Vol-632/#paper21> ;
     ns1:name "Hala Skaf-Molli" .
 
-<http://ceur-ws.org/Vol-632/#paper03> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-632/> ;
-    ns4:title "Access and Annotation of Archaeological Corpus via a SemanticWiki" ;
-    ns6:author <http://ceur-ws.org/Vol-632/#EriciLeclercq>,
+<http://ceur-ws.org/Vol-632/#paper03> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-632/> ;
+    ns6:title "Access and Annotation of Archaeological Corpus via a SemanticWiki" ;
+    ns3:author <http://ceur-ws.org/Vol-632/#EriciLeclercq>,
         <http://ceur-ws.org/Vol-632/#MarinetteiSavonnet> .
 
-<http://ceur-ws.org/Vol-632/#paper04> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-632/> ;
-    ns4:title "A Perfect Match for Reasoning, Explanation, and Reason Maintenance: OWL 2 RL and Semantic Wikis" ;
-    ns6:author <http://ceur-ws.org/Vol-632/#Fran%EF%BF%BDoisiBry>,
+<http://ceur-ws.org/Vol-632/#paper04> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-632/> ;
+    ns6:title "A Perfect Match for Reasoning, Explanation, and Reason Maintenance: OWL 2 RL and Semantic Wikis" ;
+    ns3:author <http://ceur-ws.org/Vol-632/#Fran%EF%BF%BDoisiBry>,
         <http://ceur-ws.org/Vol-632/#JakubiKotowski> .
 
-<http://ceur-ws.org/Vol-632/#paper07> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-632/> ;
-    ns4:title "Annotation component for a Semantic Wiki" ;
-    ns6:author <http://ceur-ws.org/Vol-632/#MarekiSchmidt>,
+<http://ceur-ws.org/Vol-632/#paper07> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-632/> ;
+    ns6:title "Annotation component for a Semantic Wiki" ;
+    ns3:author <http://ceur-ws.org/Vol-632/#MarekiSchmidt>,
         <http://ceur-ws.org/Vol-632/#PaveliSmr%EF%BF%BD> .
 
-<http://ceur-ws.org/Vol-632/#paper08> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-632/> ;
-    ns4:title "Semantic Wiki Refactoring. A strategy to assist Semantic Wiki evolution" ;
-    ns6:author <http://ceur-ws.org/Vol-632/#AlejandroiFern%EF%BF%BDndez>,
+<http://ceur-ws.org/Vol-632/#paper08> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-632/> ;
+    ns6:title "Semantic Wiki Refactoring. A strategy to assist Semantic Wiki evolution" ;
+    ns3:author <http://ceur-ws.org/Vol-632/#AlejandroiFern%EF%BF%BDndez>,
         <http://ceur-ws.org/Vol-632/#AliciaiD%EF%BF%BDaz>,
         <http://ceur-ws.org/Vol-632/#MartiniRosenfeld> .
 
-<http://ceur-ws.org/Vol-632/#paper11> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-632/> ;
-    ns4:title "TasTicWiki: A Semantic Wiki with Content Recommendation" ;
-    ns6:author <http://ceur-ws.org/Vol-632/#Joaqu%EF%BF%BDniJ.iMolina-Castro>,
+<http://ceur-ws.org/Vol-632/#paper11> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-632/> ;
+    ns6:title "TasTicWiki: A Semantic Wiki with Content Recommendation" ;
+    ns3:author <http://ceur-ws.org/Vol-632/#Joaqu%EF%BF%BDniJ.iMolina-Castro>,
         <http://ceur-ws.org/Vol-632/#Jos%EF%BF%BDiF.iAldana-Montes>,
         <http://ceur-ws.org/Vol-632/#ManuelaiRuiz-montiel> .
 
-<http://ceur-ws.org/Vol-632/#paper18> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-632/> ;
-    ns4:title "Connecting Semantic Mediawiki to different Triple Stores Using RDF2Go" ;
-    ns6:author <http://ceur-ws.org/Vol-632/#AntoniK%EF%BF%BDstlbacher>,
+<http://ceur-ws.org/Vol-632/#paper18> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-632/> ;
+    ns6:title "Connecting Semantic Mediawiki to different Triple Stores Using RDF2Go" ;
+    ns3:author <http://ceur-ws.org/Vol-632/#AntoniK%EF%BF%BDstlbacher>,
         <http://ceur-ws.org/Vol-632/#ChristianiWolff>,
         <http://ceur-ws.org/Vol-632/#ManfrediSchied> .
 
-<http://ceur-ws.org/Vol-632/#paper19> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-632/> ;
-    ns4:title "Towards Meta-Engineering for Semantic Wikis" ;
-    ns6:author <http://ceur-ws.org/Vol-632/#FrankiPuppe>,
+<http://ceur-ws.org/Vol-632/#paper19> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-632/> ;
+    ns6:title "Towards Meta-Engineering for Semantic Wikis" ;
+    ns3:author <http://ceur-ws.org/Vol-632/#FrankiPuppe>,
         <http://ceur-ws.org/Vol-632/#JoachimiBaumeister>,
         <http://ceur-ws.org/Vol-632/#JocheniReutelshoefer> .
 
-<http://ceur-ws.org/Vol-632/#paper20> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-632/> ;
-    ns4:title "Enhancing MediaWiki Talk pages with Semantics for Better Coordination - A Proposal" ;
-    ns6:author <http://ceur-ws.org/Vol-632/#AlexandreiPassant>,
+<http://ceur-ws.org/Vol-632/#paper20> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-632/> ;
+    ns6:title "Enhancing MediaWiki Talk pages with Semantics for Better Coordination - A Proposal" ;
+    ns3:author <http://ceur-ws.org/Vol-632/#AlexandreiPassant>,
         <http://ceur-ws.org/Vol-632/#JodiiSchneider>,
         <http://ceur-ws.org/Vol-632/#JohniBreslin> .
 
-<http://ceur-ws.org/Vol-632/#paper21> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-632/> ;
-    ns4:title "DSMW: Distributed Semantic MediaWiki" ;
-    ns6:author <http://ceur-ws.org/Vol-632/#G%EF%BF%BDr%EF%BF%BDmeiCanals>,
+<http://ceur-ws.org/Vol-632/#paper21> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-632/> ;
+    ns6:title "DSMW: Distributed Semantic MediaWiki" ;
+    ns3:author <http://ceur-ws.org/Vol-632/#G%EF%BF%BDr%EF%BF%BDmeiCanals>,
         <http://ceur-ws.org/Vol-632/#HalaiSkaf-Molli>,
         <http://ceur-ws.org/Vol-632/#PascaliMolli> .
 
-<http://ceur-ws.org/Vol-632/#paper22> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-632/> ;
-    ns4:title "Jump-starting a Body-of-Knowledge with a Semantic Wiki on a Discipline Ontology" ;
-    ns6:author <http://ceur-ws.org/Vol-632/#ClaudiaiLopez>,
+<http://ceur-ws.org/Vol-632/#paper22> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-632/> ;
+    ns6:title "Jump-starting a Body-of-Knowledge with a Semantic Wiki on a Discipline Ontology" ;
+    ns3:author <http://ceur-ws.org/Vol-632/#ClaudiaiLopez>,
         <http://ceur-ws.org/Vol-632/#HernaniAstudillo>,
         <http://ceur-ws.org/Vol-632/#V%EF%BF%BDctoriCodocedo> .
 
-<http://ceur-ws.org/Vol-632/#paper05> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-632/> ;
-    ns4:title "PEST: Term-Propagation over Wiki-Structures as Eigenvector Computation" ;
-    ns6:author <http://ceur-ws.org/Vol-632/#FabianiKneissl>,
+<http://ceur-ws.org/Vol-632/#paper05> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-632/> ;
+    ns6:title "PEST: Term-Propagation over Wiki-Structures as Eigenvector Computation" ;
+    ns3:author <http://ceur-ws.org/Vol-632/#FabianiKneissl>,
         <http://ceur-ws.org/Vol-632/#Fran%EF%BF%BDoisiBry>,
         <http://ceur-ws.org/Vol-632/#KlaraiWeiand>,
         <http://ceur-ws.org/Vol-632/#TimiFurche> .
 
-<http://ceur-ws.org/Vol-632/#paper06> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-632/> ;
-    ns4:title "Collaborative Editing and Linking of Astronomy Vocabularies Using Semantic Mediawiki" ;
-    ns6:author <http://ceur-ws.org/Vol-632/#AlasdairiGray>,
+<http://ceur-ws.org/Vol-632/#paper06> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-632/> ;
+    ns6:title "Collaborative Editing and Linking of Astronomy Vocabularies Using Semantic Mediawiki" ;
+    ns3:author <http://ceur-ws.org/Vol-632/#AlasdairiGray>,
         <http://ceur-ws.org/Vol-632/#IadhiOunis>,
         <http://ceur-ws.org/Vol-632/#NormaniGray>,
         <http://ceur-ws.org/Vol-632/#StuartiChalmers> .
 
-<http://ceur-ws.org/Vol-632/#paper12> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-632/> ;
-    ns4:title "Human-machine Collaboration for Enriching Semantic Wikis using Formal Concept Analysis" ;
-    ns6:author <http://ceur-ws.org/Vol-632/#AlexandreiBlansch%EF%BF%BD>,
+<http://ceur-ws.org/Vol-632/#paper12> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-632/> ;
+    ns6:title "Human-machine Collaboration for Enriching Semantic Wikis using Formal Concept Analysis" ;
+    ns3:author <http://ceur-ws.org/Vol-632/#AlexandreiBlansch%EF%BF%BD>,
         <http://ceur-ws.org/Vol-632/#AmedeoiNapoli>,
         <http://ceur-ws.org/Vol-632/#HalaiSkaf-Molli>,
         <http://ceur-ws.org/Vol-632/#PascaliMolli> .
 
-<http://ceur-ws.org/Vol-632/#paper14> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-632/> ;
-    ns4:title "Prototyping a Browser for a Listed Buildings Database with Semantic MediaWiki" ;
-    ns6:author <http://ceur-ws.org/Vol-632/#AncaiDumitrache>,
+<http://ceur-ws.org/Vol-632/#paper14> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-632/> ;
+    ns6:title "Prototyping a Browser for a Listed Buildings Database with Semantic MediaWiki" ;
+    ns3:author <http://ceur-ws.org/Vol-632/#AncaiDumitrache>,
         <http://ceur-ws.org/Vol-632/#ChristophiLange>,
         <http://ceur-ws.org/Vol-632/#MichaeliKohlhase>,
         <http://ceur-ws.org/Vol-632/#NilsiAschenbeck> .
 
-<http://ceur-ws.org/Vol-632/#paper15> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-632/> ;
-    ns4:title "A Wiki-Oriented On-line Dictionary for Human and Social Sciences" ;
-    ns6:author <http://ceur-ws.org/Vol-632/#HammouiFadili>,
+<http://ceur-ws.org/Vol-632/#paper15> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-632/> ;
+    ns6:title "A Wiki-Oriented On-line Dictionary for Human and Social Sciences" ;
+    ns3:author <http://ceur-ws.org/Vol-632/#HammouiFadili>,
         <http://ceur-ws.org/Vol-632/#IlhamiNadiraiLammari>,
         <http://ceur-ws.org/Vol-632/#JackyiAkoka>,
         <http://ceur-ws.org/Vol-632/#KhelifaiLydia> .
 
-<http://ceur-ws.org/Vol-632/#paper17> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-632/> ;
-    ns4:title "Ideator - a collaborative enterprise idea management tool powered by KiWi" ;
-    ns6:author <http://ceur-ws.org/Vol-632/#MarkiMarkus>,
+<http://ceur-ws.org/Vol-632/#paper17> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-632/> ;
+    ns6:title "Ideator - a collaborative enterprise idea management tool powered by KiWi" ;
+    ns3:author <http://ceur-ws.org/Vol-632/#MarkiMarkus>,
         <http://ceur-ws.org/Vol-632/#RolfiSint>,
         <http://ceur-ws.org/Vol-632/#SebastianiSchaffert>,
         <http://ceur-ws.org/Vol-632/#ThomasiKurz> .
 
-<http://ceur-ws.org/Vol-632/#paper13> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-632/> ;
-    ns4:title "Lab Service Wiki: a wiki-based data management solution for protein production service" ;
-    ns6:author <http://ceur-ws.org/Vol-632/#AntoniiHermosoiPulido>,
+<http://ceur-ws.org/Vol-632/#paper13> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-632/> ;
+    ns6:title "Lab Service Wiki: a wiki-based data management solution for protein production service" ;
+    ns3:author <http://ceur-ws.org/Vol-632/#AntoniiHermosoiPulido>,
         <http://ceur-ws.org/Vol-632/#GuglielmoiRoma>,
         <http://ceur-ws.org/Vol-632/#MichelaiBertero>,
         <http://ceur-ws.org/Vol-632/#MiriamiAlloza>,
         <http://ceur-ws.org/Vol-632/#SilviaiSperoni> .
 
-<http://ceur-ws.org/Vol-632/#paper16> a ns3:Paper ;
-    ns3:partOf <http://ceur-ws.org/Vol-632/> ;
-    ns4:title "OpenDrugWiki � Using a Semantic Wiki for Consolidating, Editing and Reviewing of Existing Heterogeneous Drug Data" ;
-    ns6:author <http://ceur-ws.org/Vol-632/#AlexanderiHaas>,
+<http://ceur-ws.org/Vol-632/#paper16> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-632/> ;
+    ns6:title "OpenDrugWiki � Using a Semantic Wiki for Consolidating, Editing and Reviewing of Existing Heterogeneous Drug Data" ;
+    ns3:author <http://ceur-ws.org/Vol-632/#AlexanderiHaas>,
         <http://ceur-ws.org/Vol-632/#AntoniK%EF%BF%BDstlbacher>,
         <http://ceur-ws.org/Vol-632/#ChristophiHiemke>,
         <http://ceur-ws.org/Vol-632/#EkkehardiHaen>,
         <http://ceur-ws.org/Vol-632/#JonasiMaurus>,
         <http://ceur-ws.org/Vol-632/#RaineriHammw%EF%BF%BDhner> .
 
-<http://ceur-ws.org/Vol-632/> a ns3:Proceedings ;
-    ns3:hasPart <http://ceur-ws.org/Vol-632/#paper03>,
+<http://ceur-ws.org/Vol-632/> a ns4:Proceedings ;
+    ns4:hasPart <http://ceur-ws.org/Vol-632/#paper03>,
         <http://ceur-ws.org/Vol-632/#paper04>,
         <http://ceur-ws.org/Vol-632/#paper05>,
         <http://ceur-ws.org/Vol-632/#paper06>,
@@ -485,9 +491,9 @@
         <http://ceur-ws.org/Vol-632/#paper20>,
         <http://ceur-ws.org/Vol-632/#paper21>,
         <http://ceur-ws.org/Vol-632/#paper22> ;
-    ns5:issued "2010-09-22T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:presentedAt <http://ceur-ws.org/Vol-632/#event> ;
-    ns6:editor <http://ceur-ws.org/Vol-632/#ChristophiLange>,
+    ns7:issued "2010-09-22T00:00:00+00:00"^^xsd:dateTime ;
+    ns5:presentedAt <http://ceur-ws.org/Vol-632/#event> ;
+    ns3:editor <http://ceur-ws.org/Vol-632/#ChristophiLange>,
         <http://ceur-ws.org/Vol-632/#HalaiSkaf-Molli>,
         <http://ceur-ws.org/Vol-632/#JocheniReutelshoefer>,
         <http://ceur-ws.org/Vol-632/#SebastianiSchaffert> .

@@ -1,10 +1,10 @@
 @prefix ns1: <http://purl.org/ontology/bibo/#> .
 @prefix ns2: <http://xmlns.com/foaf/0.1/> .
 @prefix ns3: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns4: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns5: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns6: <http://www.w3.org/2002/07/owl#> .
-@prefix ns7: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns4: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns5: <http://www.w3.org/2002/07/owl#> .
+@prefix ns6: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
 @prefix ns8: <http://purl.org/dc/elements/1.1/> .
 @prefix ns9: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -17,12 +17,12 @@
     ns2:name " Nathalie Aussenac-Gilles (IRIT" .
 
 <http://ceur-ws.org/Vol-51/#AlexanderiMaedche> a ns2:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/AlexanderiMaedche> ;
+    ns5:sameAs <http://ceur-ws.org/persons/AlexanderiMaedche> ;
     ns2:made <http://ceur-ws.org/Vol-51/#Maedche> ;
     ns2:name "Alexander Maedche" .
 
 <http://ceur-ws.org/Vol-51/#AtanasiKiryakov> a ns2:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/AtanasiKiryakov> ;
+    ns5:sameAs <http://ceur-ws.org/persons/AtanasiKiryakov> ;
     ns2:made <http://ceur-ws.org/Vol-51/#KiryakovSimov> ;
     ns2:name "Atanas Kiryakov" .
 
@@ -31,7 +31,7 @@
     ns2:name "Bernard Delforge (CRIP5" .
 
 <http://ceur-ws.org/Vol-51/#Bulg%29> a ns2:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/Bulg%29> ;
+    ns5:sameAs <http://ceur-ws.org/persons/Bulg%29> ;
     ns2:made <http://ceur-ws.org/Vol-51/#KiryakovSimov> ;
     ns2:name "Bulg)" .
 
@@ -52,7 +52,7 @@
     ns2:name "Joanna Golebiowska (Renault" .
 
 <http://ceur-ws.org/Vol-51/#Joerg-UweiKietz> a ns2:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/Joerg-UweiKietz> ;
+    ns5:sameAs <http://ceur-ws.org/persons/Joerg-UweiKietz> ;
     ns2:made <http://ceur-ws.org/Vol-51/#Maedche> ;
     ns2:name "Joerg-Uwe Kietz" .
 
@@ -69,22 +69,22 @@
     ns2:name "Nathalie Aussenac-Gilles (IRIT" .
 
 <http://ceur-ws.org/Vol-51/#P%C3%A4ivikkiiParpola> a ns2:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/P%C3%A4ivikkiiParpola> ;
+    ns5:sameAs <http://ceur-ws.org/persons/P%C3%A4ivikkiiParpola> ;
     ns2:made <http://ceur-ws.org/Vol-51/#index> ;
     ns2:name "Päivikki Parpola" .
 
 <http://ceur-ws.org/Vol-51/#RaphaeliVolz> a ns2:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/RaphaeliVolz> ;
+    ns5:sameAs <http://ceur-ws.org/persons/RaphaeliVolz> ;
     ns2:made <http://ceur-ws.org/Vol-51/#Maedche> ;
     ns2:name "Raphael Volz" .
 
 <http://ceur-ws.org/Vol-51/#SZULMANiSylvie> a ns2:Person ;
-    ns4:affiliation "LIPN, Université Paris Nord, 93430  Villetaneuse (F)" ;
-    ns6:sameAs <http://ceur-ws.org/persons/SZULMANiSylvie> ;
+    ns6:affiliation "LIPN, Université Paris Nord, 93430  Villetaneuse (F)" ;
+    ns5:sameAs <http://ceur-ws.org/persons/SZULMANiSylvie> ;
     ns2:name "SZULMAN Sylvie" .
 
 <http://ceur-ws.org/Vol-51/#SylvieiDespres> a ns2:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/SylvieiDespres> ;
+    ns5:sameAs <http://ceur-ws.org/persons/SylvieiDespres> ;
     ns2:made <http://ceur-ws.org/Vol-51/#DespresDelforge> ;
     ns2:name "Sylvie Despres" .
 
@@ -96,113 +96,119 @@
     ns3:hasLocation <http://dbpedia.org/resource/France> ;
     ns3:hasPart <http://ceur-ws.org/Vol-51/#part-EKAW> ;
     ns3:isSubEventOf <http://ceur-ws.org/Vol-51/#conf> ;
-    ns5:beginsAtDatetime "2000-10-02T00:00:00+00:00"^^xsd:dateTime ;
-    ns5:endsAtDatetime "2000-10-02T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:beginsAtDatetime "2000-10-02T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:endsAtDatetime "2000-10-02T00:00:00+00:00"^^xsd:dateTime ;
     ns8:license "http://choosealicense.com/licenses/no-license/" .
 
+<http://ceur-ws.org/Vol-51/#part-EKAW> a ns1:Workshop ;
+    ns3:partOf <http://ceur-ws.org/series/EKAW> ;
+    ns4:title "Ontologies and Texts" ;
+    ns1:shortTitle "EKAW" ;
+    ns6:edition 1 .
+
 <http://ceur-ws.org/Vol-51/#Â NathalieiAussenac-Gillesi> a ns2:Person ;
-    ns4:affiliation "" ;
-    ns6:sameAs <http://ceur-ws.org/persons/Â NathalieiAussenac-Gillesi> .
+    ns6:affiliation "" ;
+    ns5:sameAs <http://ceur-ws.org/persons/Â NathalieiAussenac-Gillesi> .
 
 <http://ceur-ws.org/Vol-51/#BIEBOWiBrigitte> a ns2:Person ;
-    ns4:affiliation "LIPN, Université Paris Nord, 93430  Villetaneuse (F)" ;
-    ns6:sameAs <http://ceur-ws.org/persons/BIEBOWiBrigitte> ;
+    ns6:affiliation "LIPN, Université Paris Nord, 93430  Villetaneuse (F)" ;
+    ns5:sameAs <http://ceur-ws.org/persons/BIEBOWiBrigitte> ;
     ns2:made <http://ceur-ws.org/Vol-51/#AussenacBiebowSzulman> ;
     ns2:name "BIEBOW Brigitte" .
 
 <http://ceur-ws.org/Vol-51/#Toulouse> a ns2:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/Toulouse> ;
+    ns5:sameAs <http://ceur-ws.org/persons/Toulouse> ;
     ns2:made <http://ceur-ws.org/Vol-51/#AussBour>,
         <http://ceur-ws.org/Vol-51/#AussenacBiebowSzulman> ;
     ns2:name "Toulouse" .
 
 <http://ceur-ws.org/Vol-51/#index> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-51/> ;
-    ns7:title "Managing terminology using statistical analyses, ontologies and a graphical KA tool" ;
+    ns4:title "Managing terminology using statistical analyses, ontologies and a graphical KA tool" ;
     ns1:section <http://ceur-ws.org/Vol-51/#MethodsforOntologydesignfromtexts> ;
-    ns4:author <http://ceur-ws.org/Vol-51/#P%C3%A4ivikkiiParpola> .
+    ns6:author <http://ceur-ws.org/Vol-51/#P%C3%A4ivikkiiParpola> .
 
 <http://ceur-ws.org/Vol-51/#GeneralvsspecificLinguisticResources> a ns3:SessionEvent ;
     ns3:partOf <http://ceur-ws.org/Vol-51/> ;
-    ns7:title "General vs specific Linguistic Resources" .
+    ns4:title "General vs specific Linguistic Resources" .
 
 <http://ceur-ws.org/Vol-51/#Golebiowska> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-51/> ;
-    ns7:title "Samovar - Setting up and Exploitation of Ontologies for Capitalising on Project Vehicle Knowledge" ;
+    ns4:title "Samovar - Setting up and Exploitation of Ontologies for Capitalising on Project Vehicle Knowledge" ;
     ns1:section <http://ceur-ws.org/Vol-51/#Applications> ;
-    ns4:author <http://ceur-ws.org/Vol-51/#JoannaiGolebiowskai%28Renault>,
+    ns6:author <http://ceur-ws.org/Vol-51/#JoannaiGolebiowskai%28Renault>,
         <http://ceur-ws.org/Vol-51/#Paris>,
         <http://ceur-ws.org/Vol-51/#Sofia> .
 
 <http://ceur-ws.org/Vol-51/#Lame> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-51/> ;
-    ns7:title "Knowledge acquisition from texts towards an ontology of French law" ;
+    ns4:title "Knowledge acquisition from texts towards an ontology of French law" ;
     ns1:section <http://ceur-ws.org/Vol-51/#Applications> ;
-    ns4:author <http://ceur-ws.org/Vol-51/#GuiraudeiLamei%28ENSMP>,
+    ns6:author <http://ceur-ws.org/Vol-51/#GuiraudeiLamei%28ENSMP>,
         <http://ceur-ws.org/Vol-51/#Paris>,
         <http://ceur-ws.org/Vol-51/#Sofia> .
 
 <http://ceur-ws.org/Vol-51/#Maedche> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-51/> ;
-    ns7:title "A Method for Semi-Automatic Ontology Acquisition from a Corporate Intranet" ;
+    ns4:title "A Method for Semi-Automatic Ontology Acquisition from a Corporate Intranet" ;
     ns1:section <http://ceur-ws.org/Vol-51/#MethodsforOntologydesignfromtexts> ;
-    ns4:author <http://ceur-ws.org/Vol-51/#AlexanderiMaedche>,
+    ns6:author <http://ceur-ws.org/Vol-51/#AlexanderiMaedche>,
         <http://ceur-ws.org/Vol-51/#Joerg-UweiKietz>,
         <http://ceur-ws.org/Vol-51/#RaphaeliVolz> .
 
 <http://ceur-ws.org/Vol-51/#Nobecourt> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-51/> ;
-    ns7:title "A method to build formal ontologies from texts" ;
+    ns4:title "A method to build formal ontologies from texts" ;
     ns1:section <http://ceur-ws.org/Vol-51/#MethodsforOntologydesignfromtexts> ;
-    ns4:author <http://ceur-ws.org/Vol-51/#J%C3%A9r%C3%B4meiNob%C3%A9courti%28LIPN>,
+    ns6:author <http://ceur-ws.org/Vol-51/#J%C3%A9r%C3%B4meiNob%C3%A9courti%28LIPN>,
         <http://ceur-ws.org/Vol-51/#Paris>,
         <http://ceur-ws.org/Vol-51/#Sofia> .
 
 <http://ceur-ws.org/Vol-51/#Slodzian> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-51/> ;
-    ns7:title "Wordnet: what about its linguistic relevancy ?" ;
+    ns4:title "Wordnet: what about its linguistic relevancy ?" ;
     ns1:section <http://ceur-ws.org/Vol-51/#GeneralvsspecificLinguisticResources> ;
-    ns4:author <http://ceur-ws.org/Vol-51/#MoniqueiSlodziani%28INALCO>,
+    ns6:author <http://ceur-ws.org/Vol-51/#MoniqueiSlodziani%28INALCO>,
         <http://ceur-ws.org/Vol-51/#Paris>,
         <http://ceur-ws.org/Vol-51/#Sofia> .
 
 <http://ceur-ws.org/Vol-51/#Applications> a ns3:SessionEvent ;
     ns3:partOf <http://ceur-ws.org/Vol-51/> ;
-    ns7:title "Applications" .
+    ns4:title "Applications" .
 
 <http://ceur-ws.org/Vol-51/#AussBour> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-51/> ;
-    ns7:title "The Th(IC)2 initiative: Corpus-Based Thesaurus Construction for Indexing WWW Documents" ;
+    ns4:title "The Th(IC)2 initiative: Corpus-Based Thesaurus Construction for Indexing WWW Documents" ;
     ns1:section <http://ceur-ws.org/Vol-51/#Applications> ;
-    ns4:author <http://ceur-ws.org/Vol-51/#D.iBourigaulti%28ERSS>,
+    ns6:author <http://ceur-ws.org/Vol-51/#D.iBourigaulti%28ERSS>,
         <http://ceur-ws.org/Vol-51/#NathalieiAussenac-Gillesi%28IRIT>,
         <http://ceur-ws.org/Vol-51/#Sofia>,
         <http://ceur-ws.org/Vol-51/#Toulouse> .
 
 <http://ceur-ws.org/Vol-51/#DespresDelforge> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-51/> ;
-    ns7:title "Designing a medical law ontology from technical texts and a core ontology" ;
+    ns4:title "Designing a medical law ontology from technical texts and a core ontology" ;
     ns1:section <http://ceur-ws.org/Vol-51/#Applications> ;
-    ns4:author <http://ceur-ws.org/Vol-51/#BernardiDelforgei%28CRIP5>,
+    ns6:author <http://ceur-ws.org/Vol-51/#BernardiDelforgei%28CRIP5>,
         <http://ceur-ws.org/Vol-51/#Paris>,
         <http://ceur-ws.org/Vol-51/#Sofia>,
         <http://ceur-ws.org/Vol-51/#SylvieiDespres> .
 
 <http://ceur-ws.org/Vol-51/#KiryakovSimov> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-51/> ;
-    ns7:title "Mapping of EuroWordnet Top Ontology to Upper Cyc Ontology" ;
+    ns4:title "Mapping of EuroWordnet Top Ontology to Upper Cyc Ontology" ;
     ns1:section <http://ceur-ws.org/Vol-51/#GeneralvsspecificLinguisticResources> ;
-    ns4:author <http://ceur-ws.org/Vol-51/#AtanasiKiryakov>,
+    ns6:author <http://ceur-ws.org/Vol-51/#AtanasiKiryakov>,
         <http://ceur-ws.org/Vol-51/#Bulg%29>,
         <http://ceur-ws.org/Vol-51/#KyriliSimovi%28SirmaiLabs>,
         <http://ceur-ws.org/Vol-51/#Sofia> .
 
 <http://ceur-ws.org/Vol-51/#MethodsforOntologydesignfromtexts> a ns3:SessionEvent ;
     ns3:partOf <http://ceur-ws.org/Vol-51/> ;
-    ns7:title "Methods for Ontology design from texts" .
+    ns4:title "Methods for Ontology design from texts" .
 
 <http://ceur-ws.org/Vol-51/#Paris> a ns2:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/Paris> ;
+    ns5:sameAs <http://ceur-ws.org/persons/Paris> ;
     ns2:made <http://ceur-ws.org/Vol-51/#AussenacBiebowSzulman>,
         <http://ceur-ws.org/Vol-51/#DespresDelforge>,
         <http://ceur-ws.org/Vol-51/#Golebiowska>,
@@ -213,9 +219,9 @@
 
 <http://ceur-ws.org/Vol-51/#AussenacBiebowSzulman> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-51/> ;
-    ns7:title "Corpus analysis for conceptual modeling" ;
+    ns4:title "Corpus analysis for conceptual modeling" ;
     ns1:section <http://ceur-ws.org/Vol-51/#MethodsforOntologydesignfromtexts> ;
-    ns4:author <http://ceur-ws.org/Vol-51/#%C2%A0NathalieiAussenac-Gillesi%28IRIT>,
+    ns6:author <http://ceur-ws.org/Vol-51/#%C2%A0NathalieiAussenac-Gillesi%28IRIT>,
         <http://ceur-ws.org/Vol-51/#BIEBOWiBrigitte>,
         <http://ceur-ws.org/Vol-51/#Paris>,
         <http://ceur-ws.org/Vol-51/#Sofia>,
@@ -223,7 +229,7 @@
         <http://ceur-ws.org/Vol-51/#Toulouse> .
 
 <http://ceur-ws.org/Vol-51/#Sofia> a ns2:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/Sofia> ;
+    ns5:sameAs <http://ceur-ws.org/persons/Sofia> ;
     ns2:made <http://ceur-ws.org/Vol-51/#AussBour>,
         <http://ceur-ws.org/Vol-51/#AussenacBiebowSzulman>,
         <http://ceur-ws.org/Vol-51/#DespresDelforge>,
@@ -250,7 +256,7 @@
         <http://ceur-ws.org/Vol-51/#MethodsforOntologydesignfromtexts> ;
     ns9:issued "2001-09-25T00:00:00+00:00"^^xsd:dateTime ;
     ns1:presentedAt <http://ceur-ws.org/Vol-51/#event> ;
-    ns4:editor <http://ceur-ws.org/Vol-51/#BIEBOWiBrigitte>,
+    ns6:editor <http://ceur-ws.org/Vol-51/#BIEBOWiBrigitte>,
         <http://ceur-ws.org/Vol-51/#SZULMANiSylvie>,
         <http://ceur-ws.org/Vol-51/#Â NathalieiAussenac-Gillesi> .
 

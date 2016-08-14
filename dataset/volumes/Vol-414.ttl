@@ -1,45 +1,52 @@
-@prefix ns1: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns2: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns3: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns4: <http://www.w3.org/2002/07/owl#> .
-@prefix ns5: <http://xmlns.com/foaf/0.1/> .
-@prefix ns6: <http://purl.org/dc/elements/1.1/> .
-@prefix ns7: <http://purl.org/ontology/bibo/#> .
-@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns1: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns2: <http://xmlns.com/foaf/0.1/> .
+@prefix ns3: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns4: <http://purl.org/dc/elements/1.1/> .
+@prefix ns5: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns6: <http://purl.org/ontology/bibo/#> .
+@prefix ns7: <http://www.w3.org/2002/07/owl#> .
+@prefix ns8: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns9: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-414/> a ns2:Proceedings ;
-    ns8:issued "2008-11-04T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:presentedAt <http://ceur-ws.org/Vol-414/#event> ;
-    ns3:editor <http://ceur-ws.org/Vol-414/#FacultyiofiMathematics>,
+<http://ceur-ws.org/Vol-414/> a ns5:Proceedings ;
+    ns9:issued "2008-11-04T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:presentedAt <http://ceur-ws.org/Vol-414/#event> ;
+    ns1:editor <http://ceur-ws.org/Vol-414/#FacultyiofiMathematics>,
         <http://ceur-ws.org/Vol-414/#Instituteioficomputeriscience>,
         <http://ceur-ws.org/Vol-414/#Physics>,
         <http://ceur-ws.org/Vol-414/#SlovakiArtificialiIntelligenceiSociety> .
 
-<http://ceur-ws.org/Vol-414/#FacultyiofiMathematics> a ns5:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/FacultyiofiMathematics> ;
-    ns5:name "Faculty of Mathematics" .
+<http://ceur-ws.org/Vol-414/#FacultyiofiMathematics> a ns2:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/FacultyiofiMathematics> ;
+    ns2:name "Faculty of Mathematics" .
 
-<http://ceur-ws.org/Vol-414/#Instituteioficomputeriscience> a ns5:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/Instituteioficomputeriscience> ;
-    ns5:name "Institute of computer science" .
+<http://ceur-ws.org/Vol-414/#Instituteioficomputeriscience> a ns2:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/Instituteioficomputeriscience> ;
+    ns2:name "Institute of computer science" .
 
-<http://ceur-ws.org/Vol-414/#Physics> a ns5:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/Physics> ;
-    ns5:name "Physics" .
+<http://ceur-ws.org/Vol-414/#Physics> a ns2:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/Physics> ;
+    ns2:name "Physics" .
 
-<http://ceur-ws.org/Vol-414/#SlovakiArtificialiIntelligenceiSociety> a ns5:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/SlovakiArtificialiIntelligenceiSociety> ;
-    ns5:name "Slovak Artificial Intelligence Society" .
+<http://ceur-ws.org/Vol-414/#SlovakiArtificialiIntelligenceiSociety> a ns2:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/SlovakiArtificialiIntelligenceiSociety> ;
+    ns2:name "Slovak Artificial Intelligence Society" .
 
-<http://ceur-ws.org/Vol-414/#event> a ns2:WorkshopEvent ;
-    ns2:hasLocation <http://dbpedia.org/resource/Euro_gold_and_silver_commemorative_coins_(Slovakia)> ;
-    ns2:hasPart <http://ceur-ws.org/Vol-414/#part-ITAT> ;
-    ns2:isSubEventOf <http://ceur-ws.org/Vol-414/#conf> ;
-    ns1:beginsAtDatetime "2008-09-22T00:00:00+00:00"^^xsd:dateTime ;
-    ns1:endsAtDatetime "2008-09-26T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:license "http://choosealicense.com/licenses/no-license/" .
+<http://ceur-ws.org/Vol-414/#event> a ns5:WorkshopEvent ;
+    ns5:hasLocation <http://dbpedia.org/resource/Euro_gold_and_silver_commemorative_coins_(Slovakia)> ;
+    ns5:hasPart <http://ceur-ws.org/Vol-414/#part-ITAT> ;
+    ns5:isSubEventOf <http://ceur-ws.org/Vol-414/#conf> ;
+    ns3:beginsAtDatetime "2008-09-22T00:00:00+00:00"^^xsd:dateTime ;
+    ns3:endsAtDatetime "2008-09-26T00:00:00+00:00"^^xsd:dateTime ;
+    ns4:license "http://choosealicense.com/licenses/no-license/" .
+
+<http://ceur-ws.org/Vol-414/#part-ITAT> a ns6:Workshop ;
+    ns5:partOf <http://ceur-ws.org/series/ITAT> ;
+    ns8:title "Information Technologies - Applications and Theory 2008" ;
+    ns6:shortTitle "ITAT" ;
+    ns1:edition 1 .
 

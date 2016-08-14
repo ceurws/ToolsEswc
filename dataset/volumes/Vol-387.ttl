@@ -1,12 +1,12 @@
-@prefix ns1: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns1: <http://purl.org/dc/elements/1.1/#> .
 @prefix ns2: <http://xmlns.com/foaf/0.1/> .
-@prefix ns3: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns3: <http://swrc.ontoware.org/ontology/#> .
 @prefix ns4: <http://www.w3.org/2002/07/owl#> .
-@prefix ns5: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns6: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns7: <http://purl.org/ontology/bibo/#> .
-@prefix ns8: <http://purl.org/dc/elements/1.1/> .
-@prefix ns9: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns5: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns6: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns8: <http://purl.org/ontology/bibo/#> .
+@prefix ns9: <http://purl.org/dc/elements/1.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -18,12 +18,12 @@
     ns2:name "Alberto deDiego-Cottinelli & Javier Garcia-Herreros" .
 
 <http://ceur-ws.org/Vol-387/#AndreasiHarrer> a ns2:Person ;
-    ns1:affiliation "" ;
+    ns3:affiliation "" ;
     ns4:sameAs <http://ceur-ws.org/persons/AndreasiHarrer> ;
     ns2:name "Andreas Harrer" .
 
 <http://ceur-ws.org/Vol-387/#AndreasiLingnau> a ns2:Person ;
-    ns1:affiliation "" ;
+    ns3:affiliation "" ;
     ns4:sameAs <http://ceur-ws.org/persons/AndreasiLingnau> ;
     ns2:name "Andreas Lingnau" .
 
@@ -62,16 +62,22 @@
     ns2:made <http://ceur-ws.org/Vol-387/#paper4> ;
     ns2:name "Sofoklis Sotiriou Theodoros Arvanitis" .
 
-<http://ceur-ws.org/Vol-387/#event> a ns5:WorkshopEvent ;
-    ns5:hasLocation <http://dbpedia.org/resource/Netherlands> ;
-    ns5:hasPart <http://ceur-ws.org/Vol-387/#part-E-Learning> ;
-    ns5:isSubEventOf <http://ceur-ws.org/Vol-387/#conf> ;
-    ns6:beginsAtDatetime "2008-09-16T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:endsAtDatetime "2008-09-16T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:license "http://choosealicense.com/licenses/no-license/" .
+<http://ceur-ws.org/Vol-387/#event> a ns6:WorkshopEvent ;
+    ns6:hasLocation <http://dbpedia.org/resource/Netherlands> ;
+    ns6:hasPart <http://ceur-ws.org/Vol-387/#part-E-Learning> ;
+    ns6:isSubEventOf <http://ceur-ws.org/Vol-387/#conf> ;
+    ns5:beginsAtDatetime "2008-09-16T00:00:00+00:00"^^xsd:dateTime ;
+    ns5:endsAtDatetime "2008-09-16T00:00:00+00:00"^^xsd:dateTime ;
+    ns9:license "http://choosealicense.com/licenses/no-license/" .
+
+<http://ceur-ws.org/Vol-387/#part-E-Learning> a ns8:Workshop ;
+    ns6:partOf <http://ceur-ws.org/series/E-Learning> ;
+    ns1:title "Inclusive E-Learning - Special Needs and Special Solutions 2008" ;
+    ns8:shortTitle "E-Learning" ;
+    ns3:edition 1 .
 
 <http://ceur-ws.org/Vol-387/#AlkeiMartens> a ns2:Person ;
-    ns1:affiliation "" ;
+    ns3:affiliation "" ;
     ns4:sameAs <http://ceur-ws.org/persons/AlkeiMartens> ;
     ns2:made <http://ceur-ws.org/Vol-387/#paper3> ;
     ns2:name "Alke Martens" .
@@ -82,51 +88,51 @@
         <http://ceur-ws.org/Vol-387/#paper6> ;
     ns2:name "Argiroula Ath. Petrou" .
 
-<http://ceur-ws.org/Vol-387/#paper2> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-387/> ;
-    ns3:title "A Collaboration of ICT teacher training and primary school for special educational need children in Hungary" ;
-    ns1:author <http://ceur-ws.org/Vol-387/#BrigittaiR%C3%A9they-Prikkeli%26iM%C3%A1rtaiTurcs%C3%A1nyi-Szab%C3%B3> .
+<http://ceur-ws.org/Vol-387/#paper2> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-387/> ;
+    ns1:title "A Collaboration of ICT teacher training and primary school for special educational need children in Hungary" ;
+    ns3:author <http://ceur-ws.org/Vol-387/#BrigittaiR%C3%A9they-Prikkeli%26iM%C3%A1rtaiTurcs%C3%A1nyi-Szab%C3%B3> .
 
-<http://ceur-ws.org/Vol-387/#paper3> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-387/> ;
-    ns3:title "On the way to digital literacy for everyone: A user interface agent to assist (not only) blind computer users" ;
-    ns1:author <http://ceur-ws.org/Vol-387/#AlkeiMartens> .
+<http://ceur-ws.org/Vol-387/#paper3> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-387/> ;
+    ns1:title "On the way to digital literacy for everyone: A user interface agent to assist (not only) blind computer users" ;
+    ns3:author <http://ceur-ws.org/Vol-387/#AlkeiMartens> .
 
-<http://ceur-ws.org/Vol-387/#paper5> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-387/> ;
-    ns3:title "Designing ICT-based Learning Scenarios for Special Target Groups - Meeting Senior Learner Needs" ;
-    ns1:author <http://ceur-ws.org/Vol-387/#ChristianiPetteri%26iKathriniHelling> .
+<http://ceur-ws.org/Vol-387/#paper5> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-387/> ;
+    ns1:title "Designing ICT-based Learning Scenarios for Special Target Groups - Meeting Senior Learner Needs" ;
+    ns3:author <http://ceur-ws.org/Vol-387/#ChristianiPetteri%26iKathriniHelling> .
 
-<http://ceur-ws.org/Vol-387/#paper6> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-387/> ;
-    ns3:title "Use of cooperative learning scenarios in Computer Teaching for students with disabilities through an Internet platform" ;
-    ns1:author <http://ceur-ws.org/Vol-387/#ArgiroulaiAth.iPetrou>,
+<http://ceur-ws.org/Vol-387/#paper6> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-387/> ;
+    ns1:title "Use of cooperative learning scenarios in Computer Teaching for students with disabilities through an Internet platform" ;
+    ns3:author <http://ceur-ws.org/Vol-387/#ArgiroulaiAth.iPetrou>,
         <http://ceur-ws.org/Vol-387/#DimitracopoulouiAggeliki> .
 
-<http://ceur-ws.org/Vol-387/#paper1> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-387/> ;
-    ns3:title "Modelling pre-writing tasks to improve graphomotricity processes" ;
-    ns1:author <http://ceur-ws.org/Vol-387/#AlbertoideDiego-Cottinellii%26iJavieriGarcia-Herreros>,
+<http://ceur-ws.org/Vol-387/#paper1> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-387/> ;
+    ns1:title "Modelling pre-writing tasks to improve graphomotricity processes" ;
+    ns3:author <http://ceur-ws.org/Vol-387/#AlbertoideDiego-Cottinellii%26iJavieriGarcia-Herreros>,
         <http://ceur-ws.org/Vol-387/#BeatriziBarros>,
         <http://ceur-ws.org/Vol-387/#RicardoiConejo> .
 
-<http://ceur-ws.org/Vol-387/#paper4> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-387/> ;
-    ns3:title "The Use of Formal and Informal Learning Environments by Students with Physical Difficulties" ;
-    ns1:author <http://ceur-ws.org/Vol-387/#ArgiroulaiAth.iPetrou>,
+<http://ceur-ws.org/Vol-387/#paper4> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-387/> ;
+    ns1:title "The Use of Formal and Informal Learning Environments by Students with Physical Difficulties" ;
+    ns3:author <http://ceur-ws.org/Vol-387/#ArgiroulaiAth.iPetrou>,
         <http://ceur-ws.org/Vol-387/#JamesiF.iKnight>,
         <http://ceur-ws.org/Vol-387/#SofoklisiSotiriouiTheodorosiArvanitis> .
 
-<http://ceur-ws.org/Vol-387/> a ns5:Proceedings ;
-    ns5:hasPart <http://ceur-ws.org/Vol-387/#paper1>,
+<http://ceur-ws.org/Vol-387/> a ns6:Proceedings ;
+    ns6:hasPart <http://ceur-ws.org/Vol-387/#paper1>,
         <http://ceur-ws.org/Vol-387/#paper2>,
         <http://ceur-ws.org/Vol-387/#paper3>,
         <http://ceur-ws.org/Vol-387/#paper4>,
         <http://ceur-ws.org/Vol-387/#paper5>,
         <http://ceur-ws.org/Vol-387/#paper6> ;
-    ns9:issued "2008-09-10T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:presentedAt <http://ceur-ws.org/Vol-387/#event> ;
-    ns1:editor <http://ceur-ws.org/Vol-387/#AlkeiMartens>,
+    ns7:issued "2008-09-10T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:presentedAt <http://ceur-ws.org/Vol-387/#event> ;
+    ns3:editor <http://ceur-ws.org/Vol-387/#AlkeiMartens>,
         <http://ceur-ws.org/Vol-387/#AndreasiHarrer>,
         <http://ceur-ws.org/Vol-387/#AndreasiLingnau> .
 

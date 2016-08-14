@@ -1,12 +1,12 @@
 @prefix ns1: <http://xmlns.com/foaf/0.1/> .
 @prefix ns2: <http://swrc.ontoware.org/ontology/#> .
 @prefix ns3: <http://www.w3.org/2002/07/owl#> .
-@prefix ns4: <http://purl.org/dc/elements/1.1/> .
+@prefix ns4: <http://purl.org/ontology/bibo/#> .
 @prefix ns5: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns6: <http://purl.org/ontology/bibo/#> .
-@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns8: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns9: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns6: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns7: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns8: <http://purl.org/dc/elements/1.1/> .
+@prefix ns9: <http://purl.org/NET/c4dm/timeline.owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -91,11 +91,17 @@
     ns5:hasLocation <http://dbpedia.org/resource/Czech_Republic> ;
     ns5:hasPart <http://ceur-ws.org/Vol-1120/#part-PKDD> ;
     ns5:isSubEventOf <http://ceur-ws.org/Vol-1120/#conf> ;
-    ns7:beginsAtDatetime "2013-09-27T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:endsAtDatetime "2013-09-27T00:00:00+00:00"^^xsd:dateTime ;
-    ns4:license "http://choosealicense.com/licenses/no-license/" ;
+    ns9:beginsAtDatetime "2013-09-27T00:00:00+00:00"^^xsd:dateTime ;
+    ns9:endsAtDatetime "2013-09-27T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:license "http://choosealicense.com/licenses/no-license/" ;
     rdfs:seeAlso <http://ceur-ws.org/Vol-497/#event>,
         <http://ceur-ws.org/Vol-770/#event> .
+
+<http://ceur-ws.org/Vol-1120/#part-PKDD> a ns4:Workshop ;
+    ns5:partOf <http://ceur-ws.org/series/PKDD> ;
+    ns7:title "ECML PKDD Discovery Challenge 2013" ;
+    ns4:shortTitle "PKDD" ;
+    ns2:edition 1 .
 
 <http://ceur-ws.org/Vol-1120/#AndreasiHotho> a ns1:Person ;
     ns2:affiliation "" ;
@@ -129,56 +135,56 @@
 
 <http://ceur-ws.org/Vol-1120/#paper6> a ns5:Paper ;
     ns5:partOf <http://ceur-ws.org/Vol-1120/> ;
-    ns8:title "Similarity-Weighted Association Rules for a Name Recommender System" ;
-    ns6:endPage 80 ;
-    ns6:numPages 8 ;
-    ns6:startPage 73 ;
+    ns7:title "Similarity-Weighted Association Rules for a Name Recommender System" ;
+    ns4:endPage 80 ;
+    ns4:numPages 8 ;
+    ns4:startPage 73 ;
     ns2:author <http://ceur-ws.org/Vol-1120/#BenjaminiLetham> .
 
 <http://ceur-ws.org/Vol-1120/#paper4> a ns5:Paper ;
     ns5:partOf <http://ceur-ws.org/Vol-1120/> ;
-    ns8:title "Nameling Discovery Challenge - Collaborative Neighborhoods" ;
-    ns6:endPage 60 ;
-    ns6:numPages 12 ;
-    ns6:startPage 49 ;
+    ns7:title "Nameling Discovery Challenge - Collaborative Neighborhoods" ;
+    ns4:endPage 60 ;
+    ns4:numPages 12 ;
+    ns4:startPage 49 ;
     ns2:author <http://ceur-ws.org/Vol-1120/#DirkiSch%C3%A4fer>,
         <http://ceur-ws.org/Vol-1120/#RobiniSenge> .
 
 <http://ceur-ws.org/Vol-1120/#paper7> a ns5:Paper ;
     ns5:partOf <http://ceur-ws.org/Vol-1120/> ;
-    ns8:title "Factor Models for Recommending Given Names" ;
-    ns6:endPage 89 ;
-    ns6:numPages 9 ;
-    ns6:startPage 81 ;
+    ns7:title "Factor Models for Recommending Given Names" ;
+    ns4:endPage 89 ;
+    ns4:numPages 9 ;
+    ns4:startPage 81 ;
     ns2:author <http://ceur-ws.org/Vol-1120/#ImannueliBayer>,
         <http://ceur-ws.org/Vol-1120/#SteffeniRendle> .
 
 <http://ceur-ws.org/Vol-1120/#paper2> a ns5:Paper ;
     ns5:partOf <http://ceur-ws.org/Vol-1120/> ;
-    ns8:title "A Mixed Hybrid Recommender System for Given Names" ;
-    ns6:endPage 36 ;
-    ns6:numPages 12 ;
-    ns6:startPage 25 ;
+    ns7:title "A Mixed Hybrid Recommender System for Given Names" ;
+    ns4:endPage 36 ;
+    ns4:numPages 12 ;
+    ns4:startPage 25 ;
     ns2:author <http://ceur-ws.org/Vol-1120/#AngeloiLoula>,
         <http://ceur-ws.org/Vol-1120/#Jo%C3%A3oiRocha-Junior>,
         <http://ceur-ws.org/Vol-1120/#RafaeliGlauber> .
 
 <http://ceur-ws.org/Vol-1120/#paper3> a ns5:Paper ;
     ns5:partOf <http://ceur-ws.org/Vol-1120/> ;
-    ns8:title "Collaborative Filtering Ensemble for Personalized Name Recommendation" ;
-    ns6:endPage 48 ;
-    ns6:numPages 12 ;
-    ns6:startPage 37 ;
+    ns7:title "Collaborative Filtering Ensemble for Personalized Name Recommendation" ;
+    ns4:endPage 48 ;
+    ns4:numPages 12 ;
+    ns4:startPage 37 ;
     ns2:author <http://ceur-ws.org/Vol-1120/#BernatiComa-Puig>,
         <http://ceur-ws.org/Vol-1120/#ErnestoiDiaz-Aviles>,
         <http://ceur-ws.org/Vol-1120/#WolfgangiNejdl> .
 
 <http://ceur-ws.org/Vol-1120/#paper5> a ns5:Paper ;
     ns5:partOf <http://ceur-ws.org/Vol-1120/> ;
-    ns8:title "Improving the Recommendation of Given Names by Using Contextual Information" ;
-    ns6:endPage 72 ;
-    ns6:numPages 12 ;
-    ns6:startPage 61 ;
+    ns7:title "Improving the Recommendation of Given Names by Using Contextual Information" ;
+    ns4:endPage 72 ;
+    ns4:numPages 12 ;
+    ns4:startPage 61 ;
     ns2:author <http://ceur-ws.org/Vol-1120/#GustavoiE.iA.iP.iA.iBatista>,
         <http://ceur-ws.org/Vol-1120/#MarcosiAur%C3%A9lioiDomingues>,
         <http://ceur-ws.org/Vol-1120/#RicardoiMarcondesiMarcacini>,
@@ -186,10 +192,10 @@
 
 <http://ceur-ws.org/Vol-1120/#paper1> a ns5:Paper ;
     ns5:partOf <http://ceur-ws.org/Vol-1120/> ;
-    ns8:title "Summary of the 15th Discovery Challenge - Recommending Given Names" ;
-    ns6:endPage 24 ;
-    ns6:numPages 18 ;
-    ns6:startPage 7 ;
+    ns7:title "Summary of the 15th Discovery Challenge - Recommending Given Names" ;
+    ns4:endPage 24 ;
+    ns4:numPages 18 ;
+    ns4:startPage 7 ;
     ns2:author <http://ceur-ws.org/Vol-1120/#AndreasiHotho>,
         <http://ceur-ws.org/Vol-1120/#FolkeiMitzlaff>,
         <http://ceur-ws.org/Vol-1120/#JuergeniMueller>,
@@ -204,8 +210,8 @@
         <http://ceur-ws.org/Vol-1120/#paper5>,
         <http://ceur-ws.org/Vol-1120/#paper6>,
         <http://ceur-ws.org/Vol-1120/#paper7> ;
-    ns9:issued "2014-01-27T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:presentedAt <http://ceur-ws.org/Vol-1120/#event> ;
+    ns6:issued "2014-01-27T00:00:00+00:00"^^xsd:dateTime ;
+    ns4:presentedAt <http://ceur-ws.org/Vol-1120/#event> ;
     ns2:editor <http://ceur-ws.org/Vol-1120/#AndreasiHotho>,
         <http://ceur-ws.org/Vol-1120/#FolkeiMitzlaff>,
         <http://ceur-ws.org/Vol-1120/#JuergeniMueller>,

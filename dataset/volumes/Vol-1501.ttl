@@ -1,12 +1,12 @@
-@prefix ns1: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns2: <http://purl.org/ontology/bibo/#> .
+@prefix ns1: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns2: <http://purl.org/dc/elements/1.1/#> .
 @prefix ns3: <http://xmlns.com/foaf/0.1/> .
-@prefix ns4: <http://purl.org/dc/elements/1.1/> .
+@prefix ns4: <http://swrc.ontoware.org/ontology/#> .
 @prefix ns5: <http://www.w3.org/2002/07/owl#> .
-@prefix ns6: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns7: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns6: <http://purl.org/ontology/bibo/#> .
+@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
 @prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns9: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns9: <http://purl.org/dc/elements/1.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -48,8 +48,8 @@
     ns3:name "Brandon Kuczenski" .
 
 <http://ceur-ws.org/Vol-1501/#Claudiaid%27Amato> a ns3:Person ;
-    ns2:place <http://dbpedia.org/resource/Italy> ;
-    ns6:affiliation "Dept. of Computer Science, University of Bari, Bari" ;
+    ns6:place <http://dbpedia.org/resource/Italy> ;
+    ns4:affiliation "Dept. of Computer Science, University of Bari, Bari" ;
     ns5:sameAs <http://ceur-ws.org/persons/Claudiaid%27Amato> ;
     ns3:name "Claudia d'Amato" .
 
@@ -59,14 +59,14 @@
     ns3:name "Cynthia Chandler" .
 
 <http://ceur-ws.org/Vol-1501/#FabianiWirth> a ns3:Person ;
-    ns2:place <http://dbpedia.org/resource/Germany> ;
-    ns6:affiliation "Faculty of Computer Science and Mathematics, University of Passau, Passau" ;
+    ns6:place <http://dbpedia.org/resource/Germany> ;
+    ns4:affiliation "Faculty of Computer Science and Mathematics, University of Passau, Passau" ;
     ns5:sameAs <http://ceur-ws.org/persons/FabianiWirth> ;
     ns3:name "Fabian Wirth" .
 
 <http://ceur-ws.org/Vol-1501/#FreddyiL%C3%A9cu%C3%A9> a ns3:Person ;
-    ns2:place <http://dbpedia.org/resource/Republic_of_Ireland> ;
-    ns6:affiliation "IBM Research, Dublin" ;
+    ns6:place <http://dbpedia.org/resource/Republic_of_Ireland> ;
+    ns4:affiliation "IBM Research, Dublin" ;
     ns5:sameAs <http://ceur-ws.org/persons/FreddyiL%C3%A9cu%C3%A9> ;
     ns3:name "Freddy Lécué" .
 
@@ -126,8 +126,8 @@
     ns3:name "Peter Wiebe" .
 
 <http://ceur-ws.org/Vol-1501/#RaghavaiMutharaju> a ns3:Person ;
-    ns2:place <http://dbpedia.org/resource/United_States> ;
-    ns6:affiliation "Dept. of Computer Science and Engineering, Wright State University, Dayton, OH" ;
+    ns6:place <http://dbpedia.org/resource/United_States> ;
+    ns4:affiliation "Dept. of Computer Science and Engineering, Wright State University, Dayton, OH" ;
     ns5:sameAs <http://ceur-ws.org/persons/RaghavaiMutharaju> ;
     ns3:name "Raghava Mutharaju" .
 
@@ -157,8 +157,8 @@
     ns3:name "Suzanne Carbotte" .
 
 <http://ceur-ws.org/Vol-1501/#TomiNarock> a ns3:Person ;
-    ns2:place <http://dbpedia.org/resource/United_States> ;
-    ns6:affiliation "Marymount University, Arlington, VA" ;
+    ns6:place <http://dbpedia.org/resource/United_States> ;
+    ns4:affiliation "Marymount University, Arlington, VA" ;
     ns5:sameAs <http://ceur-ws.org/persons/TomiNarock> ;
     ns3:name "Tom Narock" .
 
@@ -182,35 +182,39 @@
     ns3:made <http://ceur-ws.org/Vol-1501/#Diversity2015-paper_1> ;
     ns3:name "Yu Chen" .
 
-<http://ceur-ws.org/Vol-1501/#event> a ns7:WorkshopEvent ;
-    ns7:hasLocation <http://dbpedia.org/resource/United_States> ;
-    ns7:hasPart <http://ceur-ws.org/Vol-1501/#part-ws> ;
-    ns7:isSubEventOf <http://ceur-ws.org/Vol-1501/#conf> ;
-    ns9:beginsAtDatetime "2015-10-12T00:00:00+00:00"^^xsd:dateTime ;
-    ns9:endsAtDatetime "2015-10-12T00:00:00+00:00"^^xsd:dateTime ;
-    ns4:license "http://creativecommons.org/publicdomain/zero/1.0/" .
+<http://ceur-ws.org/Vol-1501/#event> a ns1:WorkshopEvent ;
+    ns1:hasLocation <http://dbpedia.org/resource/United_States> ;
+    ns1:hasPart <http://ceur-ws.org/Vol-1501/#part-ws> ;
+    ns1:isSubEventOf <http://ceur-ws.org/Vol-1501/#conf> ;
+    ns7:beginsAtDatetime "2015-10-12T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:endsAtDatetime "2015-10-12T00:00:00+00:00"^^xsd:dateTime ;
+    ns9:license "http://creativecommons.org/publicdomain/zero/1.0/" .
 
-<http://ceur-ws.org/Vol-1501/#Diversity2015-InvitedPaper-MSolanki> a ns7:Paper ;
-    ns7:partOf <http://ceur-ws.org/Vol-1501/> ;
-    ns1:title "Towards Event-Based Traceability in Provenance-Aware Supply Chains" ;
-    ns2:endPage 45 ;
-    ns2:numPages 9 ;
-    ns2:section <http://ceur-ws.org/Vol-1501/#InvitedPapers> ;
-    ns2:startPage 37 ;
-    ns6:author <http://ceur-ws.org/Vol-1501/#MonikaiSolanki> .
+<http://ceur-ws.org/Vol-1501/#part-ws> a ns6:Workshop ;
+    ns1:partOf <http://ceur-ws.org/series/ws> ;
+    ns2:title "Diversity++ Workshop 2015" .
 
-<http://ceur-ws.org/Vol-1501/#Diversity2015-Keynote-Abstract> a ns7:Paper ;
-    ns7:partOf <http://ceur-ws.org/Vol-1501/> ;
-    ns1:title "Ontology Modeling with Domain Experts" ;
-    ns2:endPage 1 ;
-    ns2:numPages 1 ;
-    ns2:section <http://ceur-ws.org/Vol-1501/#Keynote> ;
-    ns2:startPage 1 ;
-    ns6:author <http://ceur-ws.org/Vol-1501/#PascaliHitzler> .
+<http://ceur-ws.org/Vol-1501/#Diversity2015-InvitedPaper-MSolanki> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1501/> ;
+    ns2:title "Towards Event-Based Traceability in Provenance-Aware Supply Chains" ;
+    ns6:endPage 45 ;
+    ns6:numPages 9 ;
+    ns6:section <http://ceur-ws.org/Vol-1501/#InvitedPapers> ;
+    ns6:startPage 37 ;
+    ns4:author <http://ceur-ws.org/Vol-1501/#MonikaiSolanki> .
 
-<http://ceur-ws.org/Vol-1501/#Keynote> a ns7:SessionEvent ;
-    ns7:partOf <http://ceur-ws.org/Vol-1501/> ;
-    ns1:title "Keynote" .
+<http://ceur-ws.org/Vol-1501/#Diversity2015-Keynote-Abstract> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1501/> ;
+    ns2:title "Ontology Modeling with Domain Experts" ;
+    ns6:endPage 1 ;
+    ns6:numPages 1 ;
+    ns6:section <http://ceur-ws.org/Vol-1501/#Keynote> ;
+    ns6:startPage 1 ;
+    ns4:author <http://ceur-ws.org/Vol-1501/#PascaliHitzler> .
+
+<http://ceur-ws.org/Vol-1501/#Keynote> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-1501/> ;
+    ns2:title "Keynote" .
 
 <http://ceur-ws.org/Vol-1501/#YingjieiHu> a ns3:Person ;
     ns5:sameAs <http://ceur-ws.org/persons/YingjieiHu> ;
@@ -225,9 +229,9 @@
         <http://ceur-ws.org/Vol-1501/#Diversity2015-paper_4> ;
     ns3:name "Adila Krisnadhi" .
 
-<http://ceur-ws.org/Vol-1501/#InvitedPapers> a ns7:SessionEvent ;
-    ns7:partOf <http://ceur-ws.org/Vol-1501/> ;
-    ns1:title "Invited Papers" .
+<http://ceur-ws.org/Vol-1501/#InvitedPapers> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-1501/> ;
+    ns2:title "Invited Papers" .
 
 <http://ceur-ws.org/Vol-1501/#KrzysztofiJanowicz> a ns3:Person ;
     ns5:sameAs <http://ceur-ws.org/persons/KrzysztofiJanowicz> ;
@@ -236,14 +240,14 @@
         <http://ceur-ws.org/Vol-1501/#Diversity2015-paper_4> ;
     ns3:name "Krzysztof Janowicz" .
 
-<http://ceur-ws.org/Vol-1501/#Diversity2015-InvitedPaper-PHitzler> a ns7:Paper ;
-    ns7:partOf <http://ceur-ws.org/Vol-1501/> ;
-    ns1:title "Ontology Modeling with Domain Experts: The GeoVocamp Experience" ;
-    ns2:endPage 36 ;
-    ns2:numPages 6 ;
-    ns2:section <http://ceur-ws.org/Vol-1501/#InvitedPapers> ;
-    ns2:startPage 31 ;
-    ns6:author <http://ceur-ws.org/Vol-1501/#AdilaiKrisnadhi>,
+<http://ceur-ws.org/Vol-1501/#Diversity2015-InvitedPaper-PHitzler> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1501/> ;
+    ns2:title "Ontology Modeling with Domain Experts: The GeoVocamp Experience" ;
+    ns6:endPage 36 ;
+    ns6:numPages 6 ;
+    ns6:section <http://ceur-ws.org/Vol-1501/#InvitedPapers> ;
+    ns6:startPage 31 ;
+    ns4:author <http://ceur-ws.org/Vol-1501/#AdilaiKrisnadhi>,
         <http://ceur-ws.org/Vol-1501/#KrzysztofiJanowicz>,
         <http://ceur-ws.org/Vol-1501/#PascaliHitzler> .
 
@@ -255,31 +259,31 @@
         <http://ceur-ws.org/Vol-1501/#Diversity2015-paper_4> ;
     ns3:name "Pascal Hitzler" .
 
-<http://ceur-ws.org/Vol-1501/#ResearchPapers> a ns7:SessionEvent ;
-    ns7:partOf <http://ceur-ws.org/Vol-1501/> ;
-    ns1:title "Research Papers" .
+<http://ceur-ws.org/Vol-1501/#ResearchPapers> a ns1:SessionEvent ;
+    ns1:partOf <http://ceur-ws.org/Vol-1501/> ;
+    ns2:title "Research Papers" .
 
-<http://ceur-ws.org/Vol-1501/#Diversity2015-paper_2> a ns7:Paper ;
-    ns7:partOf <http://ceur-ws.org/Vol-1501/> ;
-    ns1:title "To SCRY Linked Data: Extending SPARQL the Easy Way" ;
-    ns2:endPage 14 ;
-    ns2:numPages 7 ;
-    ns2:section <http://ceur-ws.org/Vol-1501/#ResearchPapers> ;
-    ns2:startPage 8 ;
-    ns6:author <http://ceur-ws.org/Vol-1501/#AlbertiMero%C3%B1o-Pe%C3%B1uela>,
+<http://ceur-ws.org/Vol-1501/#Diversity2015-paper_2> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1501/> ;
+    ns2:title "To SCRY Linked Data: Extending SPARQL the Easy Way" ;
+    ns6:endPage 14 ;
+    ns6:numPages 7 ;
+    ns6:section <http://ceur-ws.org/Vol-1501/#ResearchPapers> ;
+    ns6:startPage 8 ;
+    ns4:author <http://ceur-ws.org/Vol-1501/#AlbertiMero%C3%B1o-Pe%C3%B1uela>,
         <http://ceur-ws.org/Vol-1501/#AntonisiLoizou>,
         <http://ceur-ws.org/Vol-1501/#BasiStringer>,
         <http://ceur-ws.org/Vol-1501/#JaapiHeringa>,
         <http://ceur-ws.org/Vol-1501/#SanneiAbeln> .
 
-<http://ceur-ws.org/Vol-1501/#Diversity2015-paper_1> a ns7:Paper ;
-    ns7:partOf <http://ceur-ws.org/Vol-1501/> ;
-    ns1:title "From Data Portal to Knowledge Portal: Leveraging Semantic Technologies to Support Interdisciplinary Studies" ;
-    ns2:endPage 7 ;
-    ns2:numPages 6 ;
-    ns2:section <http://ceur-ws.org/Vol-1501/#ResearchPapers> ;
-    ns2:startPage 2 ;
-    ns6:author <http://ceur-ws.org/Vol-1501/#HaniWang>,
+<http://ceur-ws.org/Vol-1501/#Diversity2015-paper_1> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1501/> ;
+    ns2:title "From Data Portal to Knowledge Portal: Leveraging Semantic Technologies to Support Interdisciplinary Studies" ;
+    ns6:endPage 7 ;
+    ns6:numPages 6 ;
+    ns6:section <http://ceur-ws.org/Vol-1501/#ResearchPapers> ;
+    ns6:startPage 2 ;
+    ns4:author <http://ceur-ws.org/Vol-1501/#HaniWang>,
         <http://ceur-ws.org/Vol-1501/#HaoiZhong>,
         <http://ceur-ws.org/Vol-1501/#JohniErickson>,
         <http://ceur-ws.org/Vol-1501/#PatrickiWest>,
@@ -288,33 +292,33 @@
         <http://ceur-ws.org/Vol-1501/#XiaogangiMa>,
         <http://ceur-ws.org/Vol-1501/#YuiChen> .
 
-<http://ceur-ws.org/Vol-1501/> a ns7:Proceedings ;
-    ns7:hasPart <http://ceur-ws.org/Vol-1501/#Diversity2015-InvitedPaper-MSolanki>,
+<http://ceur-ws.org/Vol-1501/> a ns1:Proceedings ;
+    ns1:hasPart <http://ceur-ws.org/Vol-1501/#Diversity2015-InvitedPaper-MSolanki>,
         <http://ceur-ws.org/Vol-1501/#Diversity2015-InvitedPaper-PHitzler>,
         <http://ceur-ws.org/Vol-1501/#Diversity2015-Keynote-Abstract>,
         <http://ceur-ws.org/Vol-1501/#Diversity2015-paper_1>,
         <http://ceur-ws.org/Vol-1501/#Diversity2015-paper_2>,
         <http://ceur-ws.org/Vol-1501/#Diversity2015-paper_3>,
         <http://ceur-ws.org/Vol-1501/#Diversity2015-paper_4> ;
-    ns7:hasSession <http://ceur-ws.org/Vol-1501/#InvitedPapers>,
+    ns1:hasSession <http://ceur-ws.org/Vol-1501/#InvitedPapers>,
         <http://ceur-ws.org/Vol-1501/#Keynote>,
         <http://ceur-ws.org/Vol-1501/#ResearchPapers> ;
     ns8:issued "2015-11-05T00:00:00+00:00"^^xsd:dateTime ;
-    ns2:presentedAt <http://ceur-ws.org/Vol-1501/#event> ;
-    ns6:editor <http://ceur-ws.org/Vol-1501/#Claudiaid%27Amato>,
+    ns6:presentedAt <http://ceur-ws.org/Vol-1501/#event> ;
+    ns4:editor <http://ceur-ws.org/Vol-1501/#Claudiaid%27Amato>,
         <http://ceur-ws.org/Vol-1501/#FabianiWirth>,
         <http://ceur-ws.org/Vol-1501/#FreddyiL%C3%A9cu%C3%A9>,
         <http://ceur-ws.org/Vol-1501/#RaghavaiMutharaju>,
         <http://ceur-ws.org/Vol-1501/#TomiNarock> .
 
-<http://ceur-ws.org/Vol-1501/#Diversity2015-paper_4> a ns7:Paper ;
-    ns7:partOf <http://ceur-ws.org/Vol-1501/> ;
-    ns1:title "An Ontology For Specifying Spatiotemporal Scopes in Life Cycle Assessment" ;
-    ns2:endPage 30 ;
-    ns2:numPages 6 ;
-    ns2:section <http://ceur-ws.org/Vol-1501/#ResearchPapers> ;
-    ns2:startPage 25 ;
-    ns6:author <http://ceur-ws.org/Vol-1501/#AdilaiKrisnadhi>,
+<http://ceur-ws.org/Vol-1501/#Diversity2015-paper_4> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1501/> ;
+    ns2:title "An Ontology For Specifying Spatiotemporal Scopes in Life Cycle Assessment" ;
+    ns6:endPage 30 ;
+    ns6:numPages 6 ;
+    ns6:section <http://ceur-ws.org/Vol-1501/#ResearchPapers> ;
+    ns6:startPage 25 ;
+    ns4:author <http://ceur-ws.org/Vol-1501/#AdilaiKrisnadhi>,
         <http://ceur-ws.org/Vol-1501/#AndreaiBallatore>,
         <http://ceur-ws.org/Vol-1501/#BoiYan>,
         <http://ceur-ws.org/Vol-1501/#BrandoniKuczenski>,
@@ -325,14 +329,14 @@
         <http://ceur-ws.org/Vol-1501/#YingjieiHu>,
         <http://ceur-ws.org/Vol-1501/#YitingiJu> .
 
-<http://ceur-ws.org/Vol-1501/#Diversity2015-paper_3> a ns7:Paper ;
-    ns7:partOf <http://ceur-ws.org/Vol-1501/> ;
-    ns1:title "R2R+BCO-DMO - Linked Oceanographic Datasets" ;
-    ns2:endPage 24 ;
-    ns2:numPages 10 ;
-    ns2:section <http://ceur-ws.org/Vol-1501/#ResearchPapers> ;
-    ns2:startPage 15 ;
-    ns6:author <http://ceur-ws.org/Vol-1501/#AdamiShepherd>,
+<http://ceur-ws.org/Vol-1501/#Diversity2015-paper_3> a ns1:Paper ;
+    ns1:partOf <http://ceur-ws.org/Vol-1501/> ;
+    ns2:title "R2R+BCO-DMO - Linked Oceanographic Datasets" ;
+    ns6:endPage 24 ;
+    ns6:numPages 10 ;
+    ns6:section <http://ceur-ws.org/Vol-1501/#ResearchPapers> ;
+    ns6:startPage 15 ;
+    ns4:author <http://ceur-ws.org/Vol-1501/#AdamiShepherd>,
         <http://ceur-ws.org/Vol-1501/#AdilaiKrisnadhi>,
         <http://ceur-ws.org/Vol-1501/#CynthiaiChandler>,
         <http://ceur-ws.org/Vol-1501/#KrzysztofiJanowicz>,

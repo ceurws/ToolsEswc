@@ -1,11 +1,11 @@
 @prefix ns1: <http://xmlns.com/foaf/0.1/> .
-@prefix ns2: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns2: <http://swrc.ontoware.org/ontology/#> .
 @prefix ns3: <http://www.w3.org/2002/07/owl#> .
-@prefix ns4: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns4: <http://data.semanticweb.org/ns/swc/ontology/#> .
 @prefix ns5: <http://purl.org/ontology/bibo/#> .
 @prefix ns6: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
 @prefix ns9: <http://purl.org/dc/elements/1.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -24,7 +24,7 @@
 
 <http://ceur-ws.org/Vol-1300/#AndreaiTundis> a ns1:Person ;
     ns5:place <http://dbpedia.org/resource/Italy> ;
-    ns4:affiliation "University of Calabria, Rende (CS)" ;
+    ns2:affiliation "University of Calabria, Rende (CS)" ;
     ns3:sameAs <http://ceur-ws.org/persons/AndreaiTundis> ;
     ns1:name "Andrea Tundis" .
 
@@ -40,7 +40,7 @@
 
 <http://ceur-ws.org/Vol-1300/#CarloiPoloni> a ns1:Person ;
     ns5:place <http://dbpedia.org/resource/Italy> ;
-    ns4:affiliation "University of Trieste, Trieste (TS)" ;
+    ns2:affiliation "University of Trieste, Trieste (TS)" ;
     ns3:sameAs <http://ceur-ws.org/persons/CarloiPoloni> ;
     ns1:name "Carlo Poloni" .
 
@@ -259,14 +259,28 @@
     ns1:made <http://ceur-ws.org/Vol-1300/#paper8> ;
     ns1:name "Volker Schaus" .
 
-<http://ceur-ws.org/Vol-1300/#event> a ns2:WorkshopEvent ;
-    ns2:hasLocation <http://dbpedia.org/resource/Italy> ;
-    ns2:hasPart <http://ceur-ws.org/Vol-1300/#part-CIISE>,
+<http://ceur-ws.org/Vol-1300/#event> a ns4:WorkshopEvent ;
+    ns4:hasLocation <http://dbpedia.org/resource/Italy> ;
+    ns4:hasPart <http://ceur-ws.org/Vol-1300/#part-CIISE>,
         <http://ceur-ws.org/Vol-1300/#part-INCOSE> ;
-    ns2:isSubEventOf <http://ceur-ws.org/Vol-1300/#conf> ;
-    ns7:beginsAtDatetime "2014-11-24T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:endsAtDatetime "2014-11-25T00:00:00+00:00"^^xsd:dateTime ;
+    ns4:isSubEventOf <http://ceur-ws.org/Vol-1300/#conf> ;
+    ns8:beginsAtDatetime "2014-11-24T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:endsAtDatetime "2014-11-25T00:00:00+00:00"^^xsd:dateTime ;
     ns9:license "http://creativecommons.org/publicdomain/zero/1.0/" .
+
+<http://ceur-ws.org/Vol-1300/#part-CIISE> a ns5:Workshop ;
+    ns4:partOf <http://ceur-ws.org/series/CIISE> ;
+    ns6:title "CIISE",
+        "INCOSE Italia Conference on Systems Engineering 2014" ;
+    ns5:shortTitle "CIISE" ;
+    ns2:edition 1 .
+
+<http://ceur-ws.org/Vol-1300/#part-INCOSE> a ns5:Workshop ;
+    ns4:partOf <http://ceur-ws.org/series/INCOSE> ;
+    ns6:title "INCOSE",
+        "INCOSE Italia Conference on Systems Engineering 2014" ;
+    ns5:shortTitle "INCOSE" ;
+    ns2:edition 1 .
 
 <http://ceur-ws.org/Vol-1300/#AmbraiCal%C3%A1> a ns1:Person ;
     ns3:sameAs <http://ceur-ws.org/persons/AmbraiCal%C3%A1> ;
@@ -276,7 +290,7 @@
 
 <http://ceur-ws.org/Vol-1300/#CarloiLeardi> a ns1:Person ;
     ns5:place <http://dbpedia.org/resource/Italy> ;
-    ns4:affiliation "Tetra Pak Packaging Solutions, Modena (MO)" ;
+    ns2:affiliation "Tetra Pak Packaging Solutions, Modena (MO)" ;
     ns3:sameAs <http://ceur-ws.org/persons/CarloiLeardi> ;
     ns1:made <http://ceur-ws.org/Vol-1300/#paper2> ;
     ns1:name "Carlo Leardi" .
@@ -287,204 +301,204 @@
         <http://ceur-ws.org/Vol-1300/#paper5> ;
     ns1:name "Eugenio Brusa" .
 
-<http://ceur-ws.org/Vol-1300/#TUT01> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1300/> ;
+<http://ceur-ws.org/Vol-1300/#TUT01> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1300/> ;
     ns6:title "Introduction to Systems Engineering" ;
     ns5:endPage 154 ;
     ns5:numPages 7 ;
     ns5:section <http://ceur-ws.org/Vol-1300/#Session4TutorialsonSystemsEngineering> ;
     ns5:startPage 148 ;
-    ns4:author <http://ceur-ws.org/Vol-1300/#VincenzoiArrichiello> .
+    ns2:author <http://ceur-ws.org/Vol-1300/#VincenzoiArrichiello> .
 
-<http://ceur-ws.org/Vol-1300/#TUT03> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1300/> ;
+<http://ceur-ws.org/Vol-1300/#TUT03> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1300/> ;
     ns6:title "System Dependability Analysis: Main Issues and Possible Solutions" ;
     ns5:endPage 161 ;
     ns5:numPages 4 ;
     ns5:section <http://ceur-ws.org/Vol-1300/#Session4TutorialsonSystemsEngineering> ;
     ns5:startPage 158 ;
-    ns4:author <http://ceur-ws.org/Vol-1300/#AlfredoiGarro> .
+    ns2:author <http://ceur-ws.org/Vol-1300/#AlfredoiGarro> .
 
 <http://ceur-ws.org/Vol-1300/#VincenzoiArrichiello> a ns1:Person ;
     ns5:place <http://dbpedia.org/resource/Italy> ;
-    ns4:affiliation "Selex ES, Roma (RM)" ;
+    ns2:affiliation "Selex ES, Roma (RM)" ;
     ns3:sameAs <http://ceur-ws.org/persons/VincenzoiArrichiello> ;
     ns1:made <http://ceur-ws.org/Vol-1300/#TUT01> ;
     ns1:name "Vincenzo Arrichiello" .
 
-<http://ceur-ws.org/Vol-1300/#paper13> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1300/> ;
+<http://ceur-ws.org/Vol-1300/#paper13> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1300/> ;
     ns6:title "How We Engineer Enterprise Systems" ;
     ns5:endPage 137 ;
     ns5:numPages 12 ;
     ns5:section <http://ceur-ws.org/Vol-1300/#Session3CaseStudiesandApplications> ;
     ns5:startPage 126 ;
-    ns4:author <http://ceur-ws.org/Vol-1300/#MikhailiBelov> .
+    ns2:author <http://ceur-ws.org/Vol-1300/#MikhailiBelov> .
 
-<http://ceur-ws.org/Vol-1300/#paper2> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1300/> ;
+<http://ceur-ws.org/Vol-1300/#paper2> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1300/> ;
     ns6:title "MDM Industrial Applications in Systems Engineering Validation" ;
     ns5:endPage 25 ;
     ns5:numPages 9 ;
     ns5:section <http://ceur-ws.org/Vol-1300/#Session1SystemsEngineeringMethodologies> ;
     ns5:startPage 17 ;
-    ns4:author <http://ceur-ws.org/Vol-1300/#CarloiLeardi> .
+    ns2:author <http://ceur-ws.org/Vol-1300/#CarloiLeardi> .
 
-<http://ceur-ws.org/Vol-1300/#paper7> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1300/> ;
+<http://ceur-ws.org/Vol-1300/#paper7> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1300/> ;
     ns6:title "How Model Based Systems Engineering Streamlines the Development of Complex Systems" ;
     ns5:endPage 71 ;
     ns5:numPages 13 ;
     ns5:section <http://ceur-ws.org/Vol-1300/#Session2ModelBasedSystemsEngineering> ;
     ns5:startPage 59 ;
-    ns4:author <http://ceur-ws.org/Vol-1300/#EnricoiMancin> .
+    ns2:author <http://ceur-ws.org/Vol-1300/#EnricoiMancin> .
 
 <http://ceur-ws.org/Vol-1300/#AlfredoiGarro> a ns1:Person ;
     ns5:place <http://dbpedia.org/resource/Italy> ;
-    ns4:affiliation "University of Calabria, Rende (CS)" ;
+    ns2:affiliation "University of Calabria, Rende (CS)" ;
     ns3:sameAs <http://ceur-ws.org/persons/AlfredoiGarro> ;
     ns1:made <http://ceur-ws.org/Vol-1300/#TUT03>,
         <http://ceur-ws.org/Vol-1300/#paper3> ;
     ns1:name "Alfredo Garro" .
 
-<http://ceur-ws.org/Vol-1300/#TUT02> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1300/> ;
+<http://ceur-ws.org/Vol-1300/#TUT02> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1300/> ;
     ns6:title "Modeling Approaches for the Design and Analysis of Complex Systems" ;
     ns5:endPage 157 ;
     ns5:numPages 3 ;
     ns5:section <http://ceur-ws.org/Vol-1300/#Session4TutorialsonSystemsEngineering> ;
     ns5:startPage 155 ;
-    ns4:author <http://ceur-ws.org/Vol-1300/#AndreaiD%27Ambrogio>,
+    ns2:author <http://ceur-ws.org/Vol-1300/#AndreaiD%27Ambrogio>,
         <http://ceur-ws.org/Vol-1300/#LucioiTirone> .
 
-<http://ceur-ws.org/Vol-1300/#paper1> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1300/> ;
+<http://ceur-ws.org/Vol-1300/#paper1> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1300/> ;
     ns6:title "System Models Simulation Process Management and Collaborative Multidisciplinary Optimization" ;
     ns5:endPage 16 ;
     ns5:numPages 16 ;
     ns5:section <http://ceur-ws.org/Vol-1300/#Session1SystemsEngineeringMethodologies> ;
     ns5:startPage 1 ;
-    ns4:author <http://ceur-ws.org/Vol-1300/#GiulioiCassio>,
+    ns2:author <http://ceur-ws.org/Vol-1300/#GiulioiCassio>,
         <http://ceur-ws.org/Vol-1300/#MatteoiNicolich> .
 
-<http://ceur-ws.org/Vol-1300/#paper12> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1300/> ;
+<http://ceur-ws.org/Vol-1300/#paper12> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1300/> ;
     ns6:title "Identifying the Smartness of a Mechatronic Coiler through the 'Systems Engineering'" ;
     ns5:endPage 125 ;
     ns5:numPages 10 ;
     ns5:section <http://ceur-ws.org/Vol-1300/#Session3CaseStudiesandApplications> ;
     ns5:startPage 116 ;
-    ns4:author <http://ceur-ws.org/Vol-1300/#AmbraiCal%C3%A1>,
+    ns2:author <http://ceur-ws.org/Vol-1300/#AmbraiCal%C3%A1>,
         <http://ceur-ws.org/Vol-1300/#EugenioiBrusa> .
 
-<http://ceur-ws.org/Vol-1300/#paper9> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1300/> ;
+<http://ceur-ws.org/Vol-1300/#paper9> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1300/> ;
     ns6:title "How Model-Based SE Makes Product/System Lifecycle Management Framework More Effective" ;
     ns5:endPage 92 ;
     ns5:numPages 11 ;
     ns5:section <http://ceur-ws.org/Vol-1300/#Session2ModelBasedSystemsEngineering> ;
     ns5:startPage 82 ;
-    ns4:author <http://ceur-ws.org/Vol-1300/#CarmeloiTommasi>,
+    ns2:author <http://ceur-ws.org/Vol-1300/#CarmeloiTommasi>,
         <http://ceur-ws.org/Vol-1300/#EugenioiVacca> .
 
 <http://ceur-ws.org/Vol-1300/#AndreaiD%27Ambrogio> a ns1:Person ;
     ns5:place <http://dbpedia.org/resource/Italy> ;
-    ns4:affiliation "University of Rome \"Tor Vergata\", Roma (RM)" ;
+    ns2:affiliation "University of Rome \"Tor Vergata\", Roma (RM)" ;
     ns3:sameAs <http://ceur-ws.org/persons/AndreaiD%27Ambrogio> ;
     ns1:made <http://ceur-ws.org/Vol-1300/#TUT02>,
         <http://ceur-ws.org/Vol-1300/#paper6>,
         <http://ceur-ws.org/Vol-1300/#paper8> ;
     ns1:name "Andrea D'Ambrogio" .
 
-<http://ceur-ws.org/Vol-1300/#Session1SystemsEngineeringMethodologies> a ns2:SessionEvent ;
-    ns2:partOf <http://ceur-ws.org/Vol-1300/> ;
+<http://ceur-ws.org/Vol-1300/#Session1SystemsEngineeringMethodologies> a ns4:SessionEvent ;
+    ns4:partOf <http://ceur-ws.org/Vol-1300/> ;
     ns6:title "Session 1: Systems Engineering Methodologies" .
 
-<http://ceur-ws.org/Vol-1300/#Session4TutorialsonSystemsEngineering> a ns2:SessionEvent ;
-    ns2:partOf <http://ceur-ws.org/Vol-1300/> ;
+<http://ceur-ws.org/Vol-1300/#Session4TutorialsonSystemsEngineering> a ns4:SessionEvent ;
+    ns4:partOf <http://ceur-ws.org/Vol-1300/> ;
     ns6:title "Session 4: Tutorials on Systems Engineering" .
 
-<http://ceur-ws.org/Vol-1300/#paper04> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1300/> ;
+<http://ceur-ws.org/Vol-1300/#paper04> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1300/> ;
     ns6:title "Product Architecture Management - An Approach to Product Life Cycle" ;
     ns5:endPage 147 ;
     ns5:numPages 10 ;
     ns5:section <http://ceur-ws.org/Vol-1300/#Session3CaseStudiesandApplications> ;
     ns5:startPage 138 ;
-    ns4:author <http://ceur-ws.org/Vol-1300/#AndreaiMargini>,
+    ns2:author <http://ceur-ws.org/Vol-1300/#AndreaiMargini>,
         <http://ceur-ws.org/Vol-1300/#CesareiFantuzzi>,
         <http://ceur-ws.org/Vol-1300/#GaetanoiCutrona> .
 
-<http://ceur-ws.org/Vol-1300/#Session3CaseStudiesandApplications> a ns2:SessionEvent ;
-    ns2:partOf <http://ceur-ws.org/Vol-1300/> ;
+<http://ceur-ws.org/Vol-1300/#Session3CaseStudiesandApplications> a ns4:SessionEvent ;
+    ns4:partOf <http://ceur-ws.org/Vol-1300/> ;
     ns6:title "Session 3: Case Studies and Applications" .
 
-<http://ceur-ws.org/Vol-1300/#paper5> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1300/> ;
+<http://ceur-ws.org/Vol-1300/#paper5> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1300/> ;
     ns6:title "Towards an Effective Interoperability of Models Within the 'Systems Engineering' Applied to Aeronautics" ;
     ns5:endPage 47 ;
     ns5:numPages 10 ;
     ns5:section <http://ceur-ws.org/Vol-1300/#Session2ModelBasedSystemsEngineering> ;
     ns5:startPage 38 ;
-    ns4:author <http://ceur-ws.org/Vol-1300/#AmbraiCal%C3%A1>,
+    ns2:author <http://ceur-ws.org/Vol-1300/#AmbraiCal%C3%A1>,
         <http://ceur-ws.org/Vol-1300/#DavideiFerretto>,
         <http://ceur-ws.org/Vol-1300/#EugenioiBrusa>,
         <http://ceur-ws.org/Vol-1300/#FrancescoiDeiVita>,
         <http://ceur-ws.org/Vol-1300/#SergioiChiesa> .
 
-<http://ceur-ws.org/Vol-1300/#paper6> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1300/> ;
+<http://ceur-ws.org/Vol-1300/#paper6> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1300/> ;
     ns6:title "A Methodological Template for Model Driven Systems Engineering" ;
     ns5:endPage 58 ;
     ns5:numPages 11 ;
     ns5:section <http://ceur-ws.org/Vol-1300/#Session2ModelBasedSystemsEngineering> ;
     ns5:startPage 48 ;
-    ns4:author <http://ceur-ws.org/Vol-1300/#AndreaiD%27Ambrogio>,
+    ns2:author <http://ceur-ws.org/Vol-1300/#AndreaiD%27Ambrogio>,
         <http://ceur-ws.org/Vol-1300/#AndreaiGiglio>,
         <http://ceur-ws.org/Vol-1300/#EmilianoiCaponi>,
         <http://ceur-ws.org/Vol-1300/#EmilianoiPaglia>,
         <http://ceur-ws.org/Vol-1300/#PaoloiBocciarelli> .
 
-<http://ceur-ws.org/Vol-1300/#Session2ModelBasedSystemsEngineering> a ns2:SessionEvent ;
-    ns2:partOf <http://ceur-ws.org/Vol-1300/> ;
+<http://ceur-ws.org/Vol-1300/#Session2ModelBasedSystemsEngineering> a ns4:SessionEvent ;
+    ns4:partOf <http://ceur-ws.org/Vol-1300/> ;
     ns6:title "Session 2: Model-Based Systems Engineering" .
 
-<http://ceur-ws.org/Vol-1300/#paper3> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1300/> ;
+<http://ceur-ws.org/Vol-1300/#paper3> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1300/> ;
     ns6:title "Mastering Concept Exploration in Large Industrial Research Projects" ;
     ns5:endPage 37 ;
     ns5:numPages 12 ;
     ns5:section <http://ceur-ws.org/Vol-1300/#Session1SystemsEngineeringMethodologies> ;
     ns5:startPage 26 ;
-    ns4:author <http://ceur-ws.org/Vol-1300/#AlfredoiGarro>,
+    ns2:author <http://ceur-ws.org/Vol-1300/#AlfredoiGarro>,
         <http://ceur-ws.org/Vol-1300/#AngeloiFurfaro>,
         <http://ceur-ws.org/Vol-1300/#DomenicoiSacc%C3%A1>,
         <http://ceur-ws.org/Vol-1300/#SabrinaiGraziano>,
         <http://ceur-ws.org/Vol-1300/#SimonaiCitrigno>,
         <http://ceur-ws.org/Vol-1300/#TeresaiGallo> .
 
-<http://ceur-ws.org/Vol-1300/#paper8> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1300/> ;
+<http://ceur-ws.org/Vol-1300/#paper8> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1300/> ;
     ns6:title "Interface Management in Concurrent Engineering Facilities for Systems and Service Systems Engineering: A Model-based Approach" ;
     ns5:endPage 81 ;
     ns5:numPages 10 ;
     ns5:section <http://ceur-ws.org/Vol-1300/#Session2ModelBasedSystemsEngineering> ;
     ns5:startPage 72 ;
-    ns4:author <http://ceur-ws.org/Vol-1300/#AndreaiD%27Ambrogio>,
+    ns2:author <http://ceur-ws.org/Vol-1300/#AndreaiD%27Ambrogio>,
         <http://ceur-ws.org/Vol-1300/#AndreasiGerndt>,
         <http://ceur-ws.org/Vol-1300/#DanieleiGianni>,
         <http://ceur-ws.org/Vol-1300/#MarcoiLisi>,
         <http://ceur-ws.org/Vol-1300/#PierluigiiDeiSimone>,
         <http://ceur-ws.org/Vol-1300/#VolkeriSchaus> .
 
-<http://ceur-ws.org/Vol-1300/#paper10> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1300/> ;
+<http://ceur-ws.org/Vol-1300/#paper10> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1300/> ;
     ns6:title "The Verification Process in the ASTRI Project: the Verification Control Document (VCD)" ;
     ns5:endPage 115 ;
     ns5:numPages 10 ;
     ns5:section <http://ceur-ws.org/Vol-1300/#Session3CaseStudiesandApplications> ;
     ns5:startPage 106 ;
-    ns4:author <http://ceur-ws.org/Vol-1300/#EnricoiGiro>,
+    ns2:author <http://ceur-ws.org/Vol-1300/#EnricoiGiro>,
         <http://ceur-ws.org/Vol-1300/#GinoiTosti>,
         <http://ceur-ws.org/Vol-1300/#GiovanniiPareschi>,
         <http://ceur-ws.org/Vol-1300/#LucaiStringhetti>,
@@ -495,14 +509,14 @@
         <http://ceur-ws.org/Vol-1300/#RodolfoiCanestrari>,
         <http://ceur-ws.org/Vol-1300/#StefanoiVercellone> .
 
-<http://ceur-ws.org/Vol-1300/#paper11> a ns2:Paper ;
-    ns2:partOf <http://ceur-ws.org/Vol-1300/> ;
+<http://ceur-ws.org/Vol-1300/#paper11> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-1300/> ;
     ns6:title "Model-based Approach for the Verification Enhancement Across the Lifecycle of a Space System" ;
     ns5:endPage 105 ;
     ns5:numPages 13 ;
     ns5:section <http://ceur-ws.org/Vol-1300/#Session2ModelBasedSystemsEngineering> ;
     ns5:startPage 93 ;
-    ns4:author <http://ceur-ws.org/Vol-1300/#DiegoiGerbaz>,
+    ns2:author <http://ceur-ws.org/Vol-1300/#DiegoiGerbaz>,
         <http://ceur-ws.org/Vol-1300/#JoachimiFuchs>,
         <http://ceur-ws.org/Vol-1300/#JuhaniiViitaniemi>,
         <http://ceur-ws.org/Vol-1300/#LauraiBaracchi>,
@@ -513,8 +527,8 @@
         <http://ceur-ws.org/Vol-1300/#StefanoiPuri>,
         <http://ceur-ws.org/Vol-1300/#ValteriBasso> .
 
-<http://ceur-ws.org/Vol-1300/> a ns2:Proceedings ;
-    ns2:hasPart <http://ceur-ws.org/Vol-1300/#TUT01>,
+<http://ceur-ws.org/Vol-1300/> a ns4:Proceedings ;
+    ns4:hasPart <http://ceur-ws.org/Vol-1300/#TUT01>,
         <http://ceur-ws.org/Vol-1300/#TUT02>,
         <http://ceur-ws.org/Vol-1300/#TUT03>,
         <http://ceur-ws.org/Vol-1300/#paper04>,
@@ -530,13 +544,13 @@
         <http://ceur-ws.org/Vol-1300/#paper7>,
         <http://ceur-ws.org/Vol-1300/#paper8>,
         <http://ceur-ws.org/Vol-1300/#paper9> ;
-    ns2:hasSession <http://ceur-ws.org/Vol-1300/#Session1SystemsEngineeringMethodologies>,
+    ns4:hasSession <http://ceur-ws.org/Vol-1300/#Session1SystemsEngineeringMethodologies>,
         <http://ceur-ws.org/Vol-1300/#Session2ModelBasedSystemsEngineering>,
         <http://ceur-ws.org/Vol-1300/#Session3CaseStudiesandApplications>,
         <http://ceur-ws.org/Vol-1300/#Session4TutorialsonSystemsEngineering> ;
-    ns8:issued "2014-11-22T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:issued "2014-11-22T00:00:00+00:00"^^xsd:dateTime ;
     ns5:presentedAt <http://ceur-ws.org/Vol-1300/#event> ;
-    ns4:editor <http://ceur-ws.org/Vol-1300/#AlfredoiGarro>,
+    ns2:editor <http://ceur-ws.org/Vol-1300/#AlfredoiGarro>,
         <http://ceur-ws.org/Vol-1300/#AndreaiD%27Ambrogio>,
         <http://ceur-ws.org/Vol-1300/#AndreaiTundis>,
         <http://ceur-ws.org/Vol-1300/#CarloiLeardi>,

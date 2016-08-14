@@ -1,11 +1,11 @@
 @prefix ns1: <http://swrc.ontoware.org/ontology/#> .
 @prefix ns2: <http://xmlns.com/foaf/0.1/> .
-@prefix ns3: <http://purl.org/ontology/bibo/#> .
-@prefix ns4: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns5: <http://www.w3.org/2002/07/owl#> .
-@prefix ns6: <http://purl.org/dc/elements/1.1/> .
+@prefix ns3: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns4: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns5: <http://purl.org/ontology/bibo/#> .
+@prefix ns6: <http://www.w3.org/2002/07/owl#> .
 @prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns8: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns8: <http://purl.org/dc/elements/1.1/> .
 @prefix ns9: <http://purl.org/NET/c4dm/timeline.owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -13,146 +13,152 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <http://ceur-ws.org/Vol-1191/#AmparoiElizabethiCano> a ns2:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/AmparoiElizabethiCano> ;
+    ns6:sameAs <http://ceur-ws.org/persons/AmparoiElizabethiCano> ;
     ns2:made <http://ceur-ws.org/Vol-1191/#paper2> ;
     ns2:name "Amparo Elizabeth Cano" .
 
 <http://ceur-ws.org/Vol-1191/#AxeliSchulz> a ns2:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/AxeliSchulz> ;
+    ns6:sameAs <http://ceur-ws.org/persons/AxeliSchulz> ;
     ns2:made <http://ceur-ws.org/Vol-1191/#paper4> ;
     ns2:name "Axel Schulz" .
 
 <http://ceur-ws.org/Vol-1191/#FabioiCiravegna> a ns2:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/FabioiCiravegna> ;
+    ns6:sameAs <http://ceur-ws.org/persons/FabioiCiravegna> ;
     ns2:made <http://ceur-ws.org/Vol-1191/#paper2> ;
     ns2:name "Fabio Ciravegna" .
 
 <http://ceur-ws.org/Vol-1191/#HeikoiPaulheim> a ns2:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/HeikoiPaulheim> ;
+    ns6:sameAs <http://ceur-ws.org/persons/HeikoiPaulheim> ;
     ns2:made <http://ceur-ws.org/Vol-1191/#paper4> ;
     ns2:name "Heiko Paulheim" .
 
 <http://ceur-ws.org/Vol-1191/#PetariRistoski> a ns2:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/PetariRistoski> ;
+    ns6:sameAs <http://ceur-ws.org/persons/PetariRistoski> ;
     ns2:made <http://ceur-ws.org/Vol-1191/#paper4> ;
     ns2:name "Petar Ristoski" .
 
 <http://ceur-ws.org/Vol-1191/#RobiniKeskis%C3%A4rkk%C3%A4> a ns2:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/RobiniKeskis%C3%A4rkk%C3%A4> ;
+    ns6:sameAs <http://ceur-ws.org/persons/RobiniKeskis%C3%A4rkk%C3%A4> ;
     ns2:made <http://ceur-ws.org/Vol-1191/#paper1> ;
     ns2:name "Robin Keskisärkkä" .
 
 <http://ceur-ws.org/Vol-1191/#SeyyediShah> a ns2:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/SeyyediShah> ;
+    ns6:sameAs <http://ceur-ws.org/persons/SeyyediShah> ;
     ns2:made <http://ceur-ws.org/Vol-1191/#paper3> ;
     ns2:name "Seyyed Shah" .
 
 <http://ceur-ws.org/Vol-1191/#TomiiKauppinen> a ns2:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/TomiiKauppinen> ;
+    ns6:sameAs <http://ceur-ws.org/persons/TomiiKauppinen> ;
     ns2:made <http://ceur-ws.org/Vol-1191/#intro1> ;
     ns2:name "Tomi Kauppinen" .
 
-<http://ceur-ws.org/Vol-1191/#event> a ns4:WorkshopEvent ;
-    ns4:hasLocation <http://dbpedia.org/resource/France> ;
-    ns4:hasPart <http://ceur-ws.org/Vol-1191/#part-SMILE> ;
-    ns4:isSubEventOf <http://ceur-ws.org/Vol-1191/#conf> ;
+<http://ceur-ws.org/Vol-1191/#event> a ns3:WorkshopEvent ;
+    ns3:hasLocation <http://dbpedia.org/resource/France> ;
+    ns3:hasPart <http://ceur-ws.org/Vol-1191/#part-SMILE> ;
+    ns3:isSubEventOf <http://ceur-ws.org/Vol-1191/#conf> ;
     ns9:beginsAtDatetime "2013-05-26T00:00:00+00:00"^^xsd:dateTime ;
     ns9:endsAtDatetime "2013-05-26T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:license "http://choosealicense.com/licenses/no-license/" .
+    ns8:license "http://choosealicense.com/licenses/no-license/" .
 
-<http://ceur-ws.org/Vol-1191/#Session1Introduction> a ns4:SessionEvent ;
-    ns4:partOf <http://ceur-ws.org/Vol-1191/> ;
-    ns8:title "Session 1: Introduction" .
+<http://ceur-ws.org/Vol-1191/#part-SMILE> a ns5:Workshop ;
+    ns3:partOf <http://ceur-ws.org/series/SMILE> ;
+    ns4:title "Social Media and Linked Data for Emergency Response 2013" ;
+    ns5:shortTitle "SMILE" ;
+    ns1:edition 1 .
 
-<http://ceur-ws.org/Vol-1191/#intro1> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1191/> ;
-    ns8:title "Linking and Visualizing Social Media Data about Crises" ;
-    ns3:section <http://ceur-ws.org/Vol-1191/#Session1Introduction> ;
+<http://ceur-ws.org/Vol-1191/#Session1Introduction> a ns3:SessionEvent ;
+    ns3:partOf <http://ceur-ws.org/Vol-1191/> ;
+    ns4:title "Session 1: Introduction" .
+
+<http://ceur-ws.org/Vol-1191/#intro1> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1191/> ;
+    ns4:title "Linking and Visualizing Social Media Data about Crises" ;
+    ns5:section <http://ceur-ws.org/Vol-1191/#Session1Introduction> ;
     ns1:author <http://ceur-ws.org/Vol-1191/#TomiiKauppinen> .
 
 <http://ceur-ws.org/Vol-1191/#ChristopheriBrewster> a ns2:Person ;
     ns1:affiliation "" ;
-    ns5:sameAs <http://ceur-ws.org/persons/ChristopheriBrewster> ;
+    ns6:sameAs <http://ceur-ws.org/persons/ChristopheriBrewster> ;
     ns2:made <http://ceur-ws.org/Vol-1191/#discussions>,
         <http://ceur-ws.org/Vol-1191/#paper3> ;
     ns2:name "Christopher Brewster" .
 
 <http://ceur-ws.org/Vol-1191/#EvaiBlomqvist> a ns2:Person ;
     ns1:affiliation "" ;
-    ns5:sameAs <http://ceur-ws.org/persons/EvaiBlomqvist> ;
+    ns6:sameAs <http://ceur-ws.org/persons/EvaiBlomqvist> ;
     ns2:made <http://ceur-ws.org/Vol-1191/#discussions>,
         <http://ceur-ws.org/Vol-1191/#paper1> ;
     ns2:name "Eva Blomqvist" .
 
 <http://ceur-ws.org/Vol-1191/#SuvodeepiMazumdar> a ns2:Person ;
     ns1:affiliation "" ;
-    ns5:sameAs <http://ceur-ws.org/persons/SuvodeepiMazumdar> ;
+    ns6:sameAs <http://ceur-ws.org/persons/SuvodeepiMazumdar> ;
     ns2:made <http://ceur-ws.org/Vol-1191/#discussions>,
         <http://ceur-ws.org/Vol-1191/#paper2> ;
     ns2:name "Suvodeep Mazumdar" .
 
 <http://ceur-ws.org/Vol-1191/#VitaveskaiLanfranchi> a ns2:Person ;
     ns1:affiliation "" ;
-    ns5:sameAs <http://ceur-ws.org/persons/VitaveskaiLanfranchi> ;
+    ns6:sameAs <http://ceur-ws.org/persons/VitaveskaiLanfranchi> ;
     ns2:made <http://ceur-ws.org/Vol-1191/#discussions>,
         <http://ceur-ws.org/Vol-1191/#paper2> ;
     ns2:name "Vitaveska Lanfranchi" .
 
-<http://ceur-ws.org/Vol-1191/#paper1> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1191/> ;
-    ns8:title "Semantic Complex Event Processing for Social Media Monitoring - A Survey" ;
-    ns3:section <http://ceur-ws.org/Vol-1191/#Session2ResearchPapers> ;
+<http://ceur-ws.org/Vol-1191/#paper1> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1191/> ;
+    ns4:title "Semantic Complex Event Processing for Social Media Monitoring - A Survey" ;
+    ns5:section <http://ceur-ws.org/Vol-1191/#Session2ResearchPapers> ;
     ns1:author <http://ceur-ws.org/Vol-1191/#EvaiBlomqvist>,
         <http://ceur-ws.org/Vol-1191/#RobiniKeskis%C3%A4rkk%C3%A4> .
 
-<http://ceur-ws.org/Vol-1191/#paper3> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1191/> ;
-    ns8:title "Sierra: Cooperative Request-Response for Resource Management in Disasters using Semantic Web Principles" ;
-    ns3:section <http://ceur-ws.org/Vol-1191/#Session2ResearchPapers> ;
+<http://ceur-ws.org/Vol-1191/#paper3> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1191/> ;
+    ns4:title "Sierra: Cooperative Request-Response for Resource Management in Disasters using Semantic Web Principles" ;
+    ns5:section <http://ceur-ws.org/Vol-1191/#Session2ResearchPapers> ;
     ns1:author <http://ceur-ws.org/Vol-1191/#ChristopheriBrewster>,
         <http://ceur-ws.org/Vol-1191/#SeyyediShah> .
 
-<http://ceur-ws.org/Vol-1191/#paper4> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1191/> ;
-    ns8:title "I See a Car Crash: Real-time Detection of Small Scale Incidents in Microblogs" ;
-    ns3:section <http://ceur-ws.org/Vol-1191/#Session2ResearchPapers> ;
+<http://ceur-ws.org/Vol-1191/#paper4> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1191/> ;
+    ns4:title "I See a Car Crash: Real-time Detection of Small Scale Incidents in Microblogs" ;
+    ns5:section <http://ceur-ws.org/Vol-1191/#Session2ResearchPapers> ;
     ns1:author <http://ceur-ws.org/Vol-1191/#AxeliSchulz>,
         <http://ceur-ws.org/Vol-1191/#HeikoiPaulheim>,
         <http://ceur-ws.org/Vol-1191/#PetariRistoski> .
 
-<http://ceur-ws.org/Vol-1191/#discussions> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1191/> ;
-    ns8:title "Roadmapping Discussion Summary" ;
-    ns3:section <http://ceur-ws.org/Vol-1191/#Session2ResearchPapers> ;
+<http://ceur-ws.org/Vol-1191/#discussions> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1191/> ;
+    ns4:title "Roadmapping Discussion Summary" ;
+    ns5:section <http://ceur-ws.org/Vol-1191/#Session2ResearchPapers> ;
     ns1:author <http://ceur-ws.org/Vol-1191/#ChristopheriBrewster>,
         <http://ceur-ws.org/Vol-1191/#EvaiBlomqvist>,
         <http://ceur-ws.org/Vol-1191/#SuvodeepiMazumdar>,
         <http://ceur-ws.org/Vol-1191/#VitaveskaiLanfranchi> .
 
-<http://ceur-ws.org/Vol-1191/#paper2> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1191/> ;
-    ns8:title "Visualising Topical Sentiment in Twitter Streams" ;
-    ns3:section <http://ceur-ws.org/Vol-1191/#Session2ResearchPapers> ;
+<http://ceur-ws.org/Vol-1191/#paper2> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1191/> ;
+    ns4:title "Visualising Topical Sentiment in Twitter Streams" ;
+    ns5:section <http://ceur-ws.org/Vol-1191/#Session2ResearchPapers> ;
     ns1:author <http://ceur-ws.org/Vol-1191/#AmparoiElizabethiCano>,
         <http://ceur-ws.org/Vol-1191/#FabioiCiravegna>,
         <http://ceur-ws.org/Vol-1191/#SuvodeepiMazumdar>,
         <http://ceur-ws.org/Vol-1191/#VitaveskaiLanfranchi> .
 
-<http://ceur-ws.org/Vol-1191/#Session2ResearchPapers> a ns4:SessionEvent ;
-    ns4:partOf <http://ceur-ws.org/Vol-1191/> ;
-    ns8:title "Session 2: Research Papers" .
+<http://ceur-ws.org/Vol-1191/#Session2ResearchPapers> a ns3:SessionEvent ;
+    ns3:partOf <http://ceur-ws.org/Vol-1191/> ;
+    ns4:title "Session 2: Research Papers" .
 
-<http://ceur-ws.org/Vol-1191/> a ns4:Proceedings ;
-    ns4:hasPart <http://ceur-ws.org/Vol-1191/#discussions>,
+<http://ceur-ws.org/Vol-1191/> a ns3:Proceedings ;
+    ns3:hasPart <http://ceur-ws.org/Vol-1191/#discussions>,
         <http://ceur-ws.org/Vol-1191/#intro1>,
         <http://ceur-ws.org/Vol-1191/#paper1>,
         <http://ceur-ws.org/Vol-1191/#paper2>,
         <http://ceur-ws.org/Vol-1191/#paper3>,
         <http://ceur-ws.org/Vol-1191/#paper4> ;
-    ns4:hasSession <http://ceur-ws.org/Vol-1191/#Session1Introduction>,
+    ns3:hasSession <http://ceur-ws.org/Vol-1191/#Session1Introduction>,
         <http://ceur-ws.org/Vol-1191/#Session2ResearchPapers> ;
     ns7:issued "2014-07-07T00:00:00+00:00"^^xsd:dateTime ;
-    ns3:presentedAt <http://ceur-ws.org/Vol-1191/#event> ;
+    ns5:presentedAt <http://ceur-ws.org/Vol-1191/#event> ;
     ns1:editor <http://ceur-ws.org/Vol-1191/#ChristopheriBrewster>,
         <http://ceur-ws.org/Vol-1191/#EvaiBlomqvist>,
         <http://ceur-ws.org/Vol-1191/#SuvodeepiMazumdar>,

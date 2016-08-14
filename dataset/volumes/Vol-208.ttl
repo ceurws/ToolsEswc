@@ -3,10 +3,10 @@
 @prefix ns3: <http://data.semanticweb.org/ns/swc/ontology/#> .
 @prefix ns4: <http://www.w3.org/2002/07/owl#> .
 @prefix ns5: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns6: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns7: <http://purl.org/dc/elements/1.1/> .
-@prefix ns8: <http://purl.org/ontology/bibo/#> .
-@prefix ns9: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns6: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns7: <http://purl.org/ontology/bibo/#> .
+@prefix ns8: <http://purl.org/dc/elements/1.1/> .
+@prefix ns9: <http://purl.org/NET/c4dm/timeline.owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -411,9 +411,15 @@
     ns3:hasLocation <http://dbpedia.org/resource/Spain> ;
     ns3:hasPart <http://ceur-ws.org/Vol-208/#part-ICUC> ;
     ns3:isSubEventOf <http://ceur-ws.org/Vol-208/#conf> ;
-    ns6:beginsAtDatetime "2006-06-07T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:endsAtDatetime "2006-06-09T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:license "http://choosealicense.com/licenses/no-license/" .
+    ns9:beginsAtDatetime "2006-06-07T00:00:00+00:00"^^xsd:dateTime ;
+    ns9:endsAtDatetime "2006-06-09T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:license "http://choosealicense.com/licenses/no-license/" .
+
+<http://ceur-ws.org/Vol-208/#part-ICUC> a ns7:Workshop ;
+    ns3:partOf <http://ceur-ws.org/series/ICUC> ;
+    ns5:title "Ubiquitous Computing 2006" ;
+    ns7:shortTitle "ICUC" ;
+    ns2:edition 1 .
 
 <http://ceur-ws.org/Vol-208/#EnriqueideilaiHoz> a ns1:Person ;
     ns4:sameAs <http://ceur-ws.org/persons/EnriqueideilaiHoz> ;
@@ -804,8 +810,8 @@
         <http://ceur-ws.org/Vol-208/#paper35>,
         <http://ceur-ws.org/Vol-208/#paper36>,
         <http://ceur-ws.org/Vol-208/#paper37> ;
-    ns9:issued "2006-10-31T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:presentedAt <http://ceur-ws.org/Vol-208/#event> ;
+    ns6:issued "2006-10-31T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:presentedAt <http://ceur-ws.org/Vol-208/#event> ;
     ns2:editor <http://ceur-ws.org/Vol-208/#Jos%EF%BF%BDiM.iGarc%EF%BF%BDa>,
         <http://ceur-ws.org/Vol-208/#RobertoiBarchino> .
 

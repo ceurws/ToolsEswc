@@ -2,11 +2,11 @@
 @prefix ns2: <http://xmlns.com/foaf/0.1/> .
 @prefix ns3: <http://swrc.ontoware.org/ontology/#> .
 @prefix ns4: <http://www.w3.org/2002/07/owl#> .
-@prefix ns5: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns5: <http://purl.org/dc/elements/1.1/> .
 @prefix ns6: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns7: <http://purl.org/dc/elements/1.1/#> .
 @prefix ns8: <http://purl.org/ontology/bibo/#> .
-@prefix ns9: <http://purl.org/dc/elements/1.1/> .
+@prefix ns9: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -98,7 +98,13 @@
     ns1:isSubEventOf <http://ceur-ws.org/Vol-232/#conf> ;
     ns6:beginsAtDatetime "2006-11-05T00:00:00+00:00"^^xsd:dateTime ;
     ns6:endsAtDatetime "2006-11-05T00:00:00+00:00"^^xsd:dateTime ;
-    ns9:license "http://choosealicense.com/licenses/no-license/" .
+    ns5:license "http://choosealicense.com/licenses/no-license/" .
+
+<http://ceur-ws.org/Vol-232/#part-WoMO> a ns8:Workshop ;
+    ns1:partOf <http://ceur-ws.org/series/WoMO> ;
+    ns7:title "Workshop on Modular Ontologies 2006" ;
+    ns8:shortTitle "WoMO" ;
+    ns3:edition 1 .
 
 <http://ceur-ws.org/Vol-232/#HeineriStuckenschmidt> a ns2:Person ;
     ns4:sameAs <http://ceur-ws.org/persons/HeineriStuckenschmidt> ;
@@ -120,49 +126,49 @@
 
 <http://ceur-ws.org/Vol-232/#paper4> a ns1:Paper ;
     ns1:partOf <http://ceur-ws.org/Vol-232/> ;
-    ns5:title "Requirements for Logical Modules" ;
+    ns7:title "Requirements for Logical Modules" ;
     ns3:author <http://ceur-ws.org/Vol-232/#FrankiLoebe> .
 
 <http://ceur-ws.org/Vol-232/#paper8> a ns1:Paper ;
     ns1:partOf <http://ceur-ws.org/Vol-232/> ;
-    ns5:title "Implementing Modular Ontologies with Distributed Description Logics" ;
+    ns7:title "Implementing Modular Ontologies with Distributed Description Logics" ;
     ns3:author <http://ceur-ws.org/Vol-232/#HeineriStuckenschmidt> .
 
 <http://ceur-ws.org/Vol-232/#paper1> a ns1:Paper ;
     ns1:partOf <http://ceur-ws.org/Vol-232/> ;
-    ns5:title "Divide and Conquer Semantic Web with Modular Ontologies - A Brief Review of Modular Ontology Language Formalisms" ;
+    ns7:title "Divide and Conquer Semantic Web with Modular Ontologies - A Brief Review of Modular Ontology Language Formalisms" ;
     ns3:author <http://ceur-ws.org/Vol-232/#JieiBao>,
         <http://ceur-ws.org/Vol-232/#VasantiHonavar> .
 
 <http://ceur-ws.org/Vol-232/#paper3> a ns1:Paper ;
     ns1:partOf <http://ceur-ws.org/Vol-232/> ;
-    ns5:title "Mapping properties of heterogeneous ontologies" ;
+    ns7:title "Mapping properties of heterogeneous ontologies" ;
     ns3:author <http://ceur-ws.org/Vol-232/#ChiaraiGhidini>,
         <http://ceur-ws.org/Vol-232/#LucianoiSerafini> .
 
 <http://ceur-ws.org/Vol-232/#paper7> a ns1:Paper ;
     ns1:partOf <http://ceur-ws.org/Vol-232/> ;
-    ns5:title "Towards Structural Criteria for Ontology Modularization" ;
+    ns7:title "Towards Structural Criteria for Ontology Modularization" ;
     ns3:author <http://ceur-ws.org/Vol-232/#AnneiSchlicht>,
         <http://ceur-ws.org/Vol-232/#HeineriStuckenschmidt> .
 
 <http://ceur-ws.org/Vol-232/#paper2> a ns1:Paper ;
     ns1:partOf <http://ceur-ws.org/Vol-232/> ;
-    ns5:title "Modularization: a Key for the Dynamic Selection of Relevant Knowledge Components" ;
+    ns7:title "Modularization: a Key for the Dynamic Selection of Relevant Knowledge Components" ;
     ns3:author <http://ceur-ws.org/Vol-232/#EnricoiMotta>,
         <http://ceur-ws.org/Vol-232/#MartaiSabou>,
         <http://ceur-ws.org/Vol-232/#Mathieuid%27Aquin> .
 
 <http://ceur-ws.org/Vol-232/#paper5> a ns1:Paper ;
     ns1:partOf <http://ceur-ws.org/Vol-232/> ;
-    ns5:title "Development of Modular Ontologies in CASL" ;
+    ns7:title "Development of Modular Ontologies in CASL" ;
     ns3:author <http://ceur-ws.org/Vol-232/#ClaudioiMasolo>,
         <http://ceur-ws.org/Vol-232/#KlausiL%C3%BCttich>,
         <http://ceur-ws.org/Vol-232/#StefanoiBorgo> .
 
 <http://ceur-ws.org/Vol-232/#paper6> a ns1:Paper ;
     ns1:partOf <http://ceur-ws.org/Vol-232/> ;
-    ns5:title "Semantic Import: An Approach for Partial Ontology Reuse" ;
+    ns7:title "Semantic Import: An Approach for Partial Ontology Reuse" ;
     ns3:author <http://ceur-ws.org/Vol-232/#JeffiZ.iPan>,
         <http://ceur-ws.org/Vol-232/#LucianoiSerafini>,
         <http://ceur-ws.org/Vol-232/#YutingiZhao> .
@@ -176,7 +182,7 @@
         <http://ceur-ws.org/Vol-232/#paper6>,
         <http://ceur-ws.org/Vol-232/#paper7>,
         <http://ceur-ws.org/Vol-232/#paper8> ;
-    ns7:issued "2007-01-29T00:00:00+00:00"^^xsd:dateTime ;
+    ns9:issued "2007-01-29T00:00:00+00:00"^^xsd:dateTime ;
     ns8:presentedAt <http://ceur-ws.org/Vol-232/#event> ;
     ns3:editor <http://ceur-ws.org/Vol-232/#AndreiiTamilin>,
         <http://ceur-ws.org/Vol-232/#OliveriKutz>,

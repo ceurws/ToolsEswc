@@ -2,11 +2,11 @@
 @prefix ns2: <http://xmlns.com/foaf/0.1/> .
 @prefix ns3: <http://swrc.ontoware.org/ontology/#> .
 @prefix ns4: <http://www.w3.org/2002/07/owl#> .
-@prefix ns5: <http://purl.org/ontology/bibo/#> .
-@prefix ns6: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns5: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns6: <http://purl.org/ontology/bibo/#> .
 @prefix ns7: <http://purl.org/dc/elements/1.1/> .
-@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns9: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns8: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns9: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -201,10 +201,16 @@
     ns1:hasLocation <http://dbpedia.org/resource/United_States> ;
     ns1:hasPart <http://ceur-ws.org/Vol-1472/#part-IESD> ;
     ns1:isSubEventOf <http://ceur-ws.org/Vol-1472/#conf> ;
-    ns9:beginsAtDatetime "2015-10-12T00:00:00+00:00"^^xsd:dateTime ;
-    ns9:endsAtDatetime "2015-10-12T00:00:00+00:00"^^xsd:dateTime ;
+    ns5:beginsAtDatetime "2015-10-12T00:00:00+00:00"^^xsd:dateTime ;
+    ns5:endsAtDatetime "2015-10-12T00:00:00+00:00"^^xsd:dateTime ;
     ns7:license "http://creativecommons.org/publicdomain/zero/1.0/" ;
     rdfs:seeAlso <http://ceur-ws.org/Vol-1279/#event> .
+
+<http://ceur-ws.org/Vol-1472/#part-IESD> a ns6:Workshop ;
+    ns1:partOf <http://ceur-ws.org/series/IESD> ;
+    ns8:title "Intelligent Exploration of Semantic Data 2015" ;
+    ns6:shortTitle "IESD" ;
+    ns3:edition 4 .
 
 <http://ceur-ws.org/Vol-1472/#DanieliSchwabe> a ns2:Person ;
     ns3:affiliation "" ;
@@ -232,46 +238,46 @@
 
 <http://ceur-ws.org/Vol-1472/#IESD_2015_paper_5> a ns1:Paper ;
     ns1:partOf <http://ceur-ws.org/Vol-1472/> ;
-    ns6:title "Frameworks for Information Exploration - A Case Study" ;
-    ns5:section <http://ceur-ws.org/Vol-1472/#ResearchPapers> ;
+    ns8:title "Frameworks for Information Exploration - A Case Study" ;
+    ns6:section <http://ceur-ws.org/Vol-1472/#ResearchPapers> ;
     ns3:author <http://ceur-ws.org/Vol-1472/#DanieliSchwabe>,
         <http://ceur-ws.org/Vol-1472/#ThiagoiNunes> .
 
 <http://ceur-ws.org/Vol-1472/#IESD_2015_paper_7> a ns1:Paper ;
     ns1:partOf <http://ceur-ws.org/Vol-1472/> ;
-    ns6:title "An Adaptive Faceted Search Interface for Structured Product Offers on the Web" ;
-    ns5:section <http://ceur-ws.org/Vol-1472/#ResearchPapers> ;
+    ns8:title "An Adaptive Faceted Search Interface for Structured Product Offers on the Web" ;
+    ns6:section <http://ceur-ws.org/Vol-1472/#ResearchPapers> ;
     ns3:author <http://ceur-ws.org/Vol-1472/#AlexiStolz>,
         <http://ceur-ws.org/Vol-1472/#MartiniHepp> .
 
 <http://ceur-ws.org/Vol-1472/#IESD_2015_paper_10> a ns1:Paper ;
     ns1:partOf <http://ceur-ws.org/Vol-1472/> ;
-    ns6:title "Detection of Related Semantic Datasets Based on Frequent Subgraph Mining" ;
-    ns5:section <http://ceur-ws.org/Vol-1472/#ResearchPapers> ;
+    ns8:title "Detection of Related Semantic Datasets Based on Frequent Subgraph Mining" ;
+    ns6:section <http://ceur-ws.org/Vol-1472/#ResearchPapers> ;
     ns3:author <http://ceur-ws.org/Vol-1472/#DiegoiL%C3%B3pez-de-Ipi%C3%B1a>,
         <http://ceur-ws.org/Vol-1472/#MikeliEmaldi>,
         <http://ceur-ws.org/Vol-1472/#OscariCorcho> .
 
 <http://ceur-ws.org/Vol-1472/#IESD_2015_paper_12> a ns1:Paper ;
     ns1:partOf <http://ceur-ws.org/Vol-1472/> ;
-    ns6:title "Sorry, I Only Speak Natural Language: a Pattern-based, Data-driven and Guided Approach to Mapping Natural Language Queries to SPARQL" ;
-    ns5:section <http://ceur-ws.org/Vol-1472/#ResearchPapers> ;
+    ns8:title "Sorry, I Only Speak Natural Language: a Pattern-based, Data-driven and Guided Approach to Mapping Natural Language Queries to SPARQL" ;
+    ns6:section <http://ceur-ws.org/Vol-1472/#ResearchPapers> ;
     ns3:author <http://ceur-ws.org/Vol-1472/#ChristinaiUnger>,
         <http://ceur-ws.org/Vol-1472/#MarianoiRico>,
         <http://ceur-ws.org/Vol-1472/#PhilippiCimiano> .
 
 <http://ceur-ws.org/Vol-1472/#IESD_2015_paper_3> a ns1:Paper ;
     ns1:partOf <http://ceur-ws.org/Vol-1472/> ;
-    ns6:title "Automatic Weight Generation and Class Predicate Stability in RDF Summary Graphs" ;
-    ns5:section <http://ceur-ws.org/Vol-1472/#ResearchPapers> ;
+    ns8:title "Automatic Weight Generation and Class Predicate Stability in RDF Summary Graphs" ;
+    ns6:section <http://ceur-ws.org/Vol-1472/#ResearchPapers> ;
     ns3:author <http://ceur-ws.org/Vol-1472/#AustiniMelton>,
         <http://ceur-ws.org/Vol-1472/#MehmetiAydar>,
         <http://ceur-ws.org/Vol-1472/#SerkaniAyvaz> .
 
 <http://ceur-ws.org/Vol-1472/#IESD_2015_paper_6> a ns1:Paper ;
     ns1:partOf <http://ceur-ws.org/Vol-1472/> ;
-    ns6:title "Insights into Entity Recommendation in Web Search" ;
-    ns5:section <http://ceur-ws.org/Vol-1472/#ResearchPapers> ;
+    ns8:title "Insights into Entity Recommendation in Web Search" ;
+    ns6:section <http://ceur-ws.org/Vol-1472/#ResearchPapers> ;
     ns3:author <http://ceur-ws.org/Vol-1472/#NitishiAggarwal>,
         <http://ceur-ws.org/Vol-1472/#PauliBuitelaar>,
         <http://ceur-ws.org/Vol-1472/#PeteriMika>,
@@ -279,8 +285,8 @@
 
 <http://ceur-ws.org/Vol-1472/#IESD_2015_paper_2> a ns1:Paper ;
     ns1:partOf <http://ceur-ws.org/Vol-1472/> ;
-    ns6:title "Linked Data Maps: Providing a Visual Entry Point for the Exploration of Datasets" ;
-    ns5:section <http://ceur-ws.org/Vol-1472/#ResearchPapers> ;
+    ns8:title "Linked Data Maps: Providing a Visual Entry Point for the Exploration of Datasets" ;
+    ns6:section <http://ceur-ws.org/Vol-1472/#ResearchPapers> ;
     ns3:author <http://ceur-ws.org/Vol-1472/#AndreaiMarchetti>,
         <http://ceur-ws.org/Vol-1472/#ClaraiBacciu>,
         <http://ceur-ws.org/Vol-1472/#FabioiValsecchi>,
@@ -289,8 +295,8 @@
 
 <http://ceur-ws.org/Vol-1472/#IESD_2015_paper_4> a ns1:Paper ;
     ns1:partOf <http://ceur-ws.org/Vol-1472/> ;
-    ns6:title "Towards a Uniform User Interface for Editing Mapping Defnitions" ;
-    ns5:section <http://ceur-ws.org/Vol-1472/#ResearchPapers> ;
+    ns8:title "Towards a Uniform User Interface for Editing Mapping Defnitions" ;
+    ns6:section <http://ceur-ws.org/Vol-1472/#ResearchPapers> ;
     ns3:author <http://ceur-ws.org/Vol-1472/#AnastasiaiDimou>,
         <http://ceur-ws.org/Vol-1472/#ErikiMannens>,
         <http://ceur-ws.org/Vol-1472/#PieteriHeyvaert>,
@@ -299,8 +305,8 @@
 
 <http://ceur-ws.org/Vol-1472/#IESD_2015_paper_8> a ns1:Paper ;
     ns1:partOf <http://ceur-ws.org/Vol-1472/> ;
-    ns6:title "DAICA - Digital Assistant Investigating Cultural Assets" ;
-    ns5:section <http://ceur-ws.org/Vol-1472/#ResearchPapers> ;
+    ns8:title "DAICA - Digital Assistant Investigating Cultural Assets" ;
+    ns6:section <http://ceur-ws.org/Vol-1472/#ResearchPapers> ;
     ns3:author <http://ceur-ws.org/Vol-1472/#BrigitteiRauter>,
         <http://ceur-ws.org/Vol-1472/#DaniCristea>,
         <http://ceur-ws.org/Vol-1472/#DanielaiBuleandra>,
@@ -310,8 +316,8 @@
 
 <http://ceur-ws.org/Vol-1472/#IESD_2015_paper_9> a ns1:Paper ;
     ns1:partOf <http://ceur-ws.org/Vol-1472/> ;
-    ns6:title "Benchmarking the Effectiveness of Associating Chains of Links for Exploratory Semantic Search" ;
-    ns5:section <http://ceur-ws.org/Vol-1472/#ResearchPapers> ;
+    ns8:title "Benchmarking the Effectiveness of Associating Chains of Links for Exploratory Semantic Search" ;
+    ns6:section <http://ceur-ws.org/Vol-1472/#ResearchPapers> ;
     ns3:author <http://ceur-ws.org/Vol-1472/#ErikiMannens>,
         <http://ceur-ws.org/Vol-1472/#LaurensiDeiVocht>,
         <http://ceur-ws.org/Vol-1472/#MartiniEbner>,
@@ -331,8 +337,8 @@
         <http://ceur-ws.org/Vol-1472/#IESD_2015_paper_8>,
         <http://ceur-ws.org/Vol-1472/#IESD_2015_paper_9> ;
     ns1:hasSession <http://ceur-ws.org/Vol-1472/#ResearchPapers> ;
-    ns8:issued "2015-10-17T00:00:00+00:00"^^xsd:dateTime ;
-    ns5:presentedAt <http://ceur-ws.org/Vol-1472/#event> ;
+    ns9:issued "2015-10-17T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:presentedAt <http://ceur-ws.org/Vol-1472/#event> ;
     ns3:editor <http://ceur-ws.org/Vol-1472/#DanieliSchwabe>,
         <http://ceur-ws.org/Vol-1472/#DhavalkumariThakker>,
         <http://ceur-ws.org/Vol-1472/#KoujiiKozaki>,
@@ -342,5 +348,5 @@
 
 <http://ceur-ws.org/Vol-1472/#ResearchPapers> a ns1:SessionEvent ;
     ns1:partOf <http://ceur-ws.org/Vol-1472/> ;
-    ns6:title "Research Papers" .
+    ns8:title "Research Papers" .
 

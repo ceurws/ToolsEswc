@@ -1,12 +1,12 @@
-@prefix ns1: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns1: <http://swrc.ontoware.org/ontology/#> .
 @prefix ns2: <http://xmlns.com/foaf/0.1/> .
-@prefix ns3: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns3: <http://purl.org/dc/elements/1.1/#> .
 @prefix ns4: <http://www.w3.org/2002/07/owl#> .
-@prefix ns5: <http://purl.org/dc/elements/1.1/> .
-@prefix ns6: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns5: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns6: <http://data.semanticweb.org/ns/swc/ontology/#> .
 @prefix ns7: <http://purl.org/ontology/bibo/#> .
-@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns9: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns9: <http://purl.org/dc/elements/1.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -173,7 +173,7 @@
     ns2:name "Marco Baioletti" .
 
 <http://ceur-ws.org/Vol-616/#MarcoiGavanelli> a ns2:Person ;
-    ns3:affiliation "" ;
+    ns1:affiliation "" ;
     ns4:sameAs <http://ceur-ws.org/persons/MarcoiGavanelli> ;
     ns2:name "Marco Gavanelli" .
 
@@ -253,7 +253,7 @@
     ns2:name "Terrance Swift" .
 
 <http://ceur-ws.org/Vol-616/#ToniiMancini> a ns2:Person ;
-    ns3:affiliation "" ;
+    ns1:affiliation "" ;
     ns4:sameAs <http://ceur-ws.org/persons/ToniiMancini> ;
     ns2:name "Toni Mancini" .
 
@@ -272,15 +272,21 @@
     ns2:made <http://ceur-ws.org/Vol-616/#paper08> ;
     ns2:name "Wolfgang Faber" .
 
-<http://ceur-ws.org/Vol-616/#event> a ns1:WorkshopEvent ;
-    ns1:hasLocation <http://dbpedia.org/resource/Italy> ;
-    ns1:hasPart <http://ceur-ws.org/Vol-616/#part-RCRA> ;
-    ns1:isSubEventOf <http://ceur-ws.org/Vol-616/#conf> ;
-    ns9:beginsAtDatetime "2010-06-10T00:00:00+00:00"^^xsd:dateTime ;
-    ns9:endsAtDatetime "2010-06-11T00:00:00+00:00"^^xsd:dateTime ;
-    ns5:license "http://choosealicense.com/licenses/no-license/" ;
+<http://ceur-ws.org/Vol-616/#event> a ns6:WorkshopEvent ;
+    ns6:hasLocation <http://dbpedia.org/resource/Italy> ;
+    ns6:hasPart <http://ceur-ws.org/Vol-616/#part-RCRA> ;
+    ns6:isSubEventOf <http://ceur-ws.org/Vol-616/#conf> ;
+    ns8:beginsAtDatetime "2010-06-10T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:endsAtDatetime "2010-06-11T00:00:00+00:00"^^xsd:dateTime ;
+    ns9:license "http://choosealicense.com/licenses/no-license/" ;
     rdfs:seeAlso <http://ceur-ws.org/Vol-451/#event>,
         <http://ceur-ws.org/Vol-589/#event> .
+
+<http://ceur-ws.org/Vol-616/#part-RCRA> a ns7:Workshop ;
+    ns6:partOf <http://ceur-ws.org/series/RCRA> ;
+    ns3:title "Experimental Evaluation of Algorithms for Solving Problems with Combinatorial Explosion 2010" ;
+    ns7:shortTitle "RCRA" ;
+    ns1:edition 17 .
 
 <http://ceur-ws.org/Vol-616/#Lu%C3%ADsiMoniziPereira> a ns2:Person ;
     ns4:sameAs <http://ceur-ws.org/persons/Lu%C3%ADsiMoniziPereira> ;
@@ -294,138 +300,138 @@
         <http://ceur-ws.org/Vol-616/#paper13> ;
     ns2:name "Pierangelo Dell'Acqua" .
 
-<http://ceur-ws.org/Vol-616/#paper06> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-616/> ;
-    ns6:title "An Experimental Evaluation of Max-SAT and PB Solvers on Over-Subscription Planning Problems" ;
-    ns3:author <http://ceur-ws.org/Vol-616/#MarcoiMaratea> .
+<http://ceur-ws.org/Vol-616/#paper06> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-616/> ;
+    ns3:title "An Experimental Evaluation of Max-SAT and PB Solvers on Over-Subscription Planning Problems" ;
+    ns1:author <http://ceur-ws.org/Vol-616/#MarcoiMaratea> .
 
-<http://ceur-ws.org/Vol-616/#paperX1> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-616/> ;
-    ns6:title "An Abstraction-Refinement Approach to Verification of Artificial Neural Networks" ;
+<http://ceur-ws.org/Vol-616/#paperX1> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-616/> ;
+    ns3:title "An Abstraction-Refinement Approach to Verification of Artificial Neural Networks" ;
     ns7:section <http://ceur-ws.org/Vol-616/#Presentedpapersthatalsoappearedatotherevents> ;
-    ns3:author <http://ceur-ws.org/Vol-616/#ArmandoiTacchella>,
+    ns1:author <http://ceur-ws.org/Vol-616/#ArmandoiTacchella>,
         <http://ceur-ws.org/Vol-616/#LucaiPulina> .
 
-<http://ceur-ws.org/Vol-616/#paperX3> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-616/> ;
-    ns6:title "Tabling and Answer Subsumption for Reasoning on Logic Programs with Annotated Disjunctions" ;
+<http://ceur-ws.org/Vol-616/#paperX3> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-616/> ;
+    ns3:title "Tabling and Answer Subsumption for Reasoning on Logic Programs with Annotated Disjunctions" ;
     ns7:section <http://ceur-ws.org/Vol-616/#Presentedpapersthatalsoappearedatotherevents> ;
-    ns3:author <http://ceur-ws.org/Vol-616/#FabrizioiRiguzzi>,
+    ns1:author <http://ceur-ws.org/Vol-616/#FabrizioiRiguzzi>,
         <http://ceur-ws.org/Vol-616/#TerranceiSwift> .
 
-<http://ceur-ws.org/Vol-616/#paperX4> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-616/> ;
-    ns6:title "Problem-Sensitive Restart Heuristics for the DPLL Procedure" ;
+<http://ceur-ws.org/Vol-616/#paperX4> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-616/> ;
+    ns3:title "Problem-Sensitive Restart Heuristics for the DPLL Procedure" ;
     ns7:section <http://ceur-ws.org/Vol-616/#Presentedpapersthatalsoappearedatotherevents> ;
-    ns3:author <http://ceur-ws.org/Vol-616/#CarsteniSinz>,
+    ns1:author <http://ceur-ws.org/Vol-616/#CarsteniSinz>,
         <http://ceur-ws.org/Vol-616/#MarkusiIser> .
 
-<http://ceur-ws.org/Vol-616/#paper02> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-616/> ;
-    ns6:title "Towards a Deterministic Algorithm for the International Timetabling Competition" ;
-    ns3:author <http://ceur-ws.org/Vol-616/#FlorianiLengyel>,
+<http://ceur-ws.org/Vol-616/#paper02> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-616/> ;
+    ns3:title "Towards a Deterministic Algorithm for the International Timetabling Competition" ;
+    ns1:author <http://ceur-ws.org/Vol-616/#FlorianiLengyel>,
         <http://ceur-ws.org/Vol-616/#OscariCh%C3%A1vez-Bosquez>,
         <http://ceur-ws.org/Vol-616/#PilariPozosiParra> .
 
-<http://ceur-ws.org/Vol-616/#paper03> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-616/> ;
-    ns6:title "Observation Strategies for Event Detection with Incidence on Runtime Verification" ;
-    ns3:author <http://ceur-ws.org/Vol-616/#Lu%C3%ADsiMoniziPereira>,
+<http://ceur-ws.org/Vol-616/#paper03> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-616/> ;
+    ns3:title "Observation Strategies for Event Detection with Incidence on Runtime Verification" ;
+    ns1:author <http://ceur-ws.org/Vol-616/#Lu%C3%ADsiMoniziPereira>,
         <http://ceur-ws.org/Vol-616/#MarcoiAlberti>,
         <http://ceur-ws.org/Vol-616/#PierangeloiDell%27Acqua> .
 
-<http://ceur-ws.org/Vol-616/#paper07> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-616/> ;
-    ns6:title "Experimental Assessment of a Threshold Selection Algorithm for Tuning Classifiers in the Field of Hierarchical Text Categorization" ;
-    ns3:author <http://ceur-ws.org/Vol-616/#AndreaiAddis>,
+<http://ceur-ws.org/Vol-616/#paper07> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-616/> ;
+    ns3:title "Experimental Assessment of a Threshold Selection Algorithm for Tuning Classifiers in the Field of Hierarchical Text Categorization" ;
+    ns1:author <http://ceur-ws.org/Vol-616/#AndreaiAddis>,
         <http://ceur-ws.org/Vol-616/#EloisaiVargiu>,
         <http://ceur-ws.org/Vol-616/#GiulianoiArmano> .
 
-<http://ceur-ws.org/Vol-616/#paper08> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-616/> ;
-    ns6:title "Well-Founded Semantics for Logic Programs with Aggregates: Implementation and Experimentation" ;
-    ns3:author <http://ceur-ws.org/Vol-616/#MarioiAlviano>,
+<http://ceur-ws.org/Vol-616/#paper08> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-616/> ;
+    ns3:title "Well-Founded Semantics for Logic Programs with Aggregates: Implementation and Experimentation" ;
+    ns1:author <http://ceur-ws.org/Vol-616/#MarioiAlviano>,
         <http://ceur-ws.org/Vol-616/#NicolaiLeone>,
         <http://ceur-ws.org/Vol-616/#WolfgangiFaber> .
 
-<http://ceur-ws.org/Vol-616/#paper09> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-616/> ;
-    ns6:title "Towards a Fully-Parallel DLV System" ;
-    ns3:author <http://ceur-ws.org/Vol-616/#FrancescoiRicca>,
+<http://ceur-ws.org/Vol-616/#paper09> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-616/> ;
+    ns3:title "Towards a Fully-Parallel DLV System" ;
+    ns1:author <http://ceur-ws.org/Vol-616/#FrancescoiRicca>,
         <http://ceur-ws.org/Vol-616/#MarcoiSirianni>,
         <http://ceur-ws.org/Vol-616/#SimonaiPerri> .
 
-<http://ceur-ws.org/Vol-616/#paper15> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-616/> ;
-    ns6:title "Computing Weighted Solutions in ASP: Representation-Based Method vs. Search-Based Method" ;
-    ns3:author <http://ceur-ws.org/Vol-616/#Duygui%C3%87akmak>,
+<http://ceur-ws.org/Vol-616/#paper15> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-616/> ;
+    ns3:title "Computing Weighted Solutions in ASP: Representation-Based Method vs. Search-Based Method" ;
+    ns1:author <http://ceur-ws.org/Vol-616/#Duygui%C3%87akmak>,
         <http://ceur-ws.org/Vol-616/#EsraiErdem>,
         <http://ceur-ws.org/Vol-616/#HalitiErdo%C4%9Fan> .
 
-<http://ceur-ws.org/Vol-616/#Presentedpapersthatalsoappearedatotherevents> a ns1:SessionEvent ;
-    ns1:partOf <http://ceur-ws.org/Vol-616/> ;
-    ns6:title "Presented papers that also appeared at other events" .
+<http://ceur-ws.org/Vol-616/#Presentedpapersthatalsoappearedatotherevents> a ns6:SessionEvent ;
+    ns6:partOf <http://ceur-ws.org/Vol-616/> ;
+    ns3:title "Presented papers that also appeared at other events" .
 
-<http://ceur-ws.org/Vol-616/#paper10> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-616/> ;
-    ns6:title "Experimental Evaluation of Pheromone Models in ACOPlan" ;
-    ns3:author <http://ceur-ws.org/Vol-616/#AlfredoiMilani>,
+<http://ceur-ws.org/Vol-616/#paper10> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-616/> ;
+    ns3:title "Experimental Evaluation of Pheromone Models in ACOPlan" ;
+    ns1:author <http://ceur-ws.org/Vol-616/#AlfredoiMilani>,
         <http://ceur-ws.org/Vol-616/#FabioiRossi>,
         <http://ceur-ws.org/Vol-616/#MarcoiBaioletti>,
         <http://ceur-ws.org/Vol-616/#ValentinaiPoggioni> .
 
-<http://ceur-ws.org/Vol-616/#paper11> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-616/> ;
-    ns6:title "Knowledge-Based Multi-Criteria Optimization to Support Indoor Positioning" ;
-    ns3:author <http://ceur-ws.org/Vol-616/#AlessandraiMileo>,
+<http://ceur-ws.org/Vol-616/#paper11> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-616/> ;
+    ns3:title "Knowledge-Based Multi-Criteria Optimization to Support Indoor Positioning" ;
+    ns1:author <http://ceur-ws.org/Vol-616/#AlessandraiMileo>,
         <http://ceur-ws.org/Vol-616/#DavideiMerico>,
         <http://ceur-ws.org/Vol-616/#RobertoiBisiani>,
         <http://ceur-ws.org/Vol-616/#TorsteniSchaub> .
 
-<http://ceur-ws.org/Vol-616/#paper13> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-616/> ;
-    ns6:title "Ensuring Agent Properties under Arbitrary Sequences of Incoming Events" ;
-    ns3:author <http://ceur-ws.org/Vol-616/#AriannaiTocchio>,
+<http://ceur-ws.org/Vol-616/#paper13> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-616/> ;
+    ns3:title "Ensuring Agent Properties under Arbitrary Sequences of Incoming Events" ;
+    ns1:author <http://ceur-ws.org/Vol-616/#AriannaiTocchio>,
         <http://ceur-ws.org/Vol-616/#Lu%C3%ADsiMoniziPereira>,
         <http://ceur-ws.org/Vol-616/#PierangeloiDell%27Acqua>,
         <http://ceur-ws.org/Vol-616/#StefaniaiCostantini> .
 
-<http://ceur-ws.org/Vol-616/#paper14> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-616/> ;
-    ns6:title "Boolean Lexicographic Optimization" ;
-    ns3:author <http://ceur-ws.org/Vol-616/#AnaiGra%C3%A7a>,
+<http://ceur-ws.org/Vol-616/#paper14> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-616/> ;
+    ns3:title "Boolean Lexicographic Optimization" ;
+    ns1:author <http://ceur-ws.org/Vol-616/#AnaiGra%C3%A7a>,
         <http://ceur-ws.org/Vol-616/#In%C3%AAsiLynce>,
         <http://ceur-ws.org/Vol-616/#JoaoiMarques-Silva>,
         <http://ceur-ws.org/Vol-616/#JosepiArgelich> .
 
-<http://ceur-ws.org/Vol-616/#paper17> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-616/> ;
-    ns6:title "Job Shop Scheduling with Setup Times: Exploring the Applicability of a Constraint-based Iterative Sampling Approach" ;
-    ns3:author <http://ceur-ws.org/Vol-616/#AmedeoiCesta>,
+<http://ceur-ws.org/Vol-616/#paper17> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-616/> ;
+    ns3:title "Job Shop Scheduling with Setup Times: Exploring the Applicability of a Constraint-based Iterative Sampling Approach" ;
+    ns1:author <http://ceur-ws.org/Vol-616/#AmedeoiCesta>,
         <http://ceur-ws.org/Vol-616/#AngeloiOddi>,
         <http://ceur-ws.org/Vol-616/#RiccardoiRasconi>,
         <http://ceur-ws.org/Vol-616/#StepheniF.iSmith> .
 
-<http://ceur-ws.org/Vol-616/#paperX2> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-616/> ;
-    ns6:title "Fast Planning in Domains with Derived Predicates: An Approach Based on Rule-Action Graphs and Local Search" ;
+<http://ceur-ws.org/Vol-616/#paperX2> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-616/> ;
+    ns3:title "Fast Planning in Domains with Derived Predicates: An Approach Based on Rule-Action Graphs and Local Search" ;
     ns7:section <http://ceur-ws.org/Vol-616/#Presentedpapersthatalsoappearedatotherevents> ;
-    ns3:author <http://ceur-ws.org/Vol-616/#AlessandroiSaetti>,
+    ns1:author <http://ceur-ws.org/Vol-616/#AlessandroiSaetti>,
         <http://ceur-ws.org/Vol-616/#AlfonsoiE.iGerevini>,
         <http://ceur-ws.org/Vol-616/#IvaniSerina>,
         <http://ceur-ws.org/Vol-616/#PaoloiToninelli> .
 
-<http://ceur-ws.org/Vol-616/#paper04> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-616/> ;
-    ns6:title "Combining Constraint Programming, Lagrangian Relaxation and Probabilistic Algorithms to solve the Vehicle Routing Problem" ;
-    ns3:author <http://ceur-ws.org/Vol-616/#%C3%81ngeliA.iJuan>,
+<http://ceur-ws.org/Vol-616/#paper04> a ns6:Paper ;
+    ns6:partOf <http://ceur-ws.org/Vol-616/> ;
+    ns3:title "Combining Constraint Programming, Lagrangian Relaxation and Probabilistic Algorithms to solve the Vehicle Routing Problem" ;
+    ns1:author <http://ceur-ws.org/Vol-616/#%C3%81ngeliA.iJuan>,
         <http://ceur-ws.org/Vol-616/#DanieliGuimarans>,
         <http://ceur-ws.org/Vol-616/#DanieliRiera>,
         <http://ceur-ws.org/Vol-616/#JuaniJos%C3%A9iRamos>,
         <http://ceur-ws.org/Vol-616/#RosaiHerrero> .
 
-<http://ceur-ws.org/Vol-616/> a ns1:Proceedings ;
-    ns1:hasPart <http://ceur-ws.org/Vol-616/#paper02>,
+<http://ceur-ws.org/Vol-616/> a ns6:Proceedings ;
+    ns6:hasPart <http://ceur-ws.org/Vol-616/#paper02>,
         <http://ceur-ws.org/Vol-616/#paper03>,
         <http://ceur-ws.org/Vol-616/#paper04>,
         <http://ceur-ws.org/Vol-616/#paper06>,
@@ -442,9 +448,9 @@
         <http://ceur-ws.org/Vol-616/#paperX2>,
         <http://ceur-ws.org/Vol-616/#paperX3>,
         <http://ceur-ws.org/Vol-616/#paperX4> ;
-    ns1:hasSession <http://ceur-ws.org/Vol-616/#Presentedpapersthatalsoappearedatotherevents> ;
-    ns8:issued "2010-07-22T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:hasSession <http://ceur-ws.org/Vol-616/#Presentedpapersthatalsoappearedatotherevents> ;
+    ns5:issued "2010-07-22T00:00:00+00:00"^^xsd:dateTime ;
     ns7:presentedAt <http://ceur-ws.org/Vol-616/#event> ;
-    ns3:editor <http://ceur-ws.org/Vol-616/#MarcoiGavanelli>,
+    ns1:editor <http://ceur-ws.org/Vol-616/#MarcoiGavanelli>,
         <http://ceur-ws.org/Vol-616/#ToniiMancini> .
 

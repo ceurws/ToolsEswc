@@ -1,11 +1,11 @@
 @prefix ns1: <http://xmlns.com/foaf/0.1/> .
-@prefix ns2: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns3: <http://purl.org/ontology/bibo/#> .
-@prefix ns4: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns2: <http://purl.org/ontology/bibo/#> .
+@prefix ns3: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns4: <http://purl.org/dc/elements/1.1/#> .
 @prefix ns5: <http://data.semanticweb.org/ns/swc/ontology/#> .
 @prefix ns6: <http://www.w3.org/2002/07/owl#> .
 @prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns8: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
 @prefix ns9: <http://purl.org/dc/elements/1.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -96,78 +96,84 @@
     ns5:hasLocation <http://dbpedia.org/resource/Italy> ;
     ns5:hasPart <http://ceur-ws.org/Vol-653/#part-INVIT> ;
     ns5:isSubEventOf <http://ceur-ws.org/Vol-653/#conf> ;
-    ns4:beginsAtDatetime "2010-10-09T00:00:00+00:00"^^xsd:dateTime ;
-    ns4:endsAtDatetime "2010-10-09T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:beginsAtDatetime "2010-10-09T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:endsAtDatetime "2010-10-09T00:00:00+00:00"^^xsd:dateTime ;
     ns9:license "http://choosealicense.com/licenses/no-license/" .
 
+<http://ceur-ws.org/Vol-653/#part-INVIT> a ns2:Workshop ;
+    ns5:partOf <http://ceur-ws.org/series/INVIT> ;
+    ns4:title "Interop-Vlab.It Workshop 2010" ;
+    ns2:shortTitle "INVIT" ;
+    ns3:edition 3 .
+
 <http://ceur-ws.org/Vol-653/#MicheleiMissikoff> a ns1:Person ;
-    ns2:affiliation "" ;
+    ns3:affiliation "" ;
     ns6:sameAs <http://ceur-ws.org/persons/MicheleiMissikoff> ;
     ns1:made <http://ceur-ws.org/Vol-653/#paper3> ;
     ns1:name "Michele Missikoff" .
 
 <http://ceur-ws.org/Vol-653/#PaolaiVelardi> a ns1:Person ;
-    ns2:affiliation "" ;
+    ns3:affiliation "" ;
     ns6:sameAs <http://ceur-ws.org/persons/PaolaiVelardi> ;
     ns1:made <http://ceur-ws.org/Vol-653/#paper2> ;
     ns1:name "Paola Velardi" .
 
 <http://ceur-ws.org/Vol-653/#paper5> a ns5:Paper ;
     ns5:partOf <http://ceur-ws.org/Vol-653/> ;
-    ns8:title "Hierarchical Clustering of Process Schemas" ;
-    ns3:endPage 32 ;
-    ns3:numPages 6 ;
-    ns3:startPage 27 ;
-    ns2:author <http://ceur-ws.org/Vol-653/#ClaudiaiDiamantini>,
+    ns4:title "Hierarchical Clustering of Process Schemas" ;
+    ns2:endPage 32 ;
+    ns2:numPages 6 ;
+    ns2:startPage 27 ;
+    ns3:author <http://ceur-ws.org/Vol-653/#ClaudiaiDiamantini>,
         <http://ceur-ws.org/Vol-653/#DomenicoiPotena> .
 
 <http://ceur-ws.org/Vol-653/#paper6> a ns5:Paper ;
     ns5:partOf <http://ceur-ws.org/Vol-653/> ;
-    ns8:title "Absorptive Capacity In Service Innovation: the Role of IT Capabilities" ;
-    ns3:endPage 36 ;
-    ns3:numPages 4 ;
-    ns3:startPage 33 ;
-    ns2:author <http://ceur-ws.org/Vol-653/#LucaiSabini>,
+    ns4:title "Absorptive Capacity In Service Innovation: the Role of IT Capabilities" ;
+    ns2:endPage 36 ;
+    ns2:numPages 4 ;
+    ns2:startPage 33 ;
+    ns3:author <http://ceur-ws.org/Vol-653/#LucaiSabini>,
         <http://ceur-ws.org/Vol-653/#PaoloiSpagnoletti> .
 
 <http://ceur-ws.org/Vol-653/#paper1> a ns5:Paper ;
     ns5:partOf <http://ceur-ws.org/Vol-653/> ;
-    ns8:title "Collaborative Enterprise Knowledge Mashup" ;
-    ns3:endPage 9 ;
-    ns3:numPages 5 ;
-    ns3:startPage 5 ;
-    ns2:author <http://ceur-ws.org/Vol-653/#DavisiBianchini>,
+    ns4:title "Collaborative Enterprise Knowledge Mashup" ;
+    ns2:endPage 9 ;
+    ns2:numPages 5 ;
+    ns2:startPage 5 ;
+    ns3:author <http://ceur-ws.org/Vol-653/#DavisiBianchini>,
         <http://ceur-ws.org/Vol-653/#MicheleiMelchiori>,
         <http://ceur-ws.org/Vol-653/#ValeriaiDeiAntonellis> .
 
 <http://ceur-ws.org/Vol-653/#paper3> a ns5:Paper ;
     ns5:partOf <http://ceur-ws.org/Vol-653/> ;
-    ns8:title "Reasoning on Business Processes and Ontologies in a Logic Programming Environment" ;
-    ns3:endPage 21 ;
-    ns3:numPages 5 ;
-    ns3:startPage 17 ;
-    ns2:author <http://ceur-ws.org/Vol-653/#FabrizioiSmith>,
+    ns4:title "Reasoning on Business Processes and Ontologies in a Logic Programming Environment" ;
+    ns2:endPage 21 ;
+    ns2:numPages 5 ;
+    ns2:startPage 17 ;
+    ns3:author <http://ceur-ws.org/Vol-653/#FabrizioiSmith>,
         <http://ceur-ws.org/Vol-653/#MaurizioiProietti>,
         <http://ceur-ws.org/Vol-653/#MicheleiMissikoff> .
 
 <http://ceur-ws.org/Vol-653/#paper2> a ns5:Paper ;
     ns5:partOf <http://ceur-ws.org/Vol-653/> ;
-    ns8:title "Clustering Enterprise Networks by Patent Analysis" ;
-    ns3:endPage 16 ;
-    ns3:numPages 7 ;
-    ns3:startPage 10 ;
-    ns2:author <http://ceur-ws.org/Vol-653/#AlessandroiCucchiarelli>,
+    ns4:title "Clustering Enterprise Networks by Patent Analysis" ;
+    ns2:endPage 16 ;
+    ns2:numPages 7 ;
+    ns2:startPage 10 ;
+    ns3:author <http://ceur-ws.org/Vol-653/#AlessandroiCucchiarelli>,
         <http://ceur-ws.org/Vol-653/#FulvioiD%27Antonio>,
         <http://ceur-ws.org/Vol-653/#PaolaiVelardi>,
         <http://ceur-ws.org/Vol-653/#SimoneiOrsini> .
 
 <http://ceur-ws.org/Vol-653/#paper4> a ns5:Paper ;
     ns5:partOf <http://ceur-ws.org/Vol-653/> ;
-    ns8:title "A Semantic Clouding Approach for Cross-Webs Interoperability" ;
-    ns3:endPage 26 ;
-    ns3:numPages 5 ;
-    ns3:startPage 22 ;
-    ns2:author <http://ceur-ws.org/Vol-653/#AlfioiFerrara>,
+    ns4:title "A Semantic Clouding Approach for Cross-Webs Interoperability" ;
+    ns2:endPage 26 ;
+    ns2:numPages 5 ;
+    ns2:startPage 22 ;
+    ns3:author <http://ceur-ws.org/Vol-653/#AlfioiFerrara>,
         <http://ceur-ws.org/Vol-653/#GaiaiVarese>,
         <http://ceur-ws.org/Vol-653/#SilvanaiCastano>,
         <http://ceur-ws.org/Vol-653/#StefanoiMontanelli> .
@@ -180,7 +186,7 @@
         <http://ceur-ws.org/Vol-653/#paper5>,
         <http://ceur-ws.org/Vol-653/#paper6> ;
     ns7:issued "2010-10-21T00:00:00+00:00"^^xsd:dateTime ;
-    ns3:presentedAt <http://ceur-ws.org/Vol-653/#event> ;
-    ns2:editor <http://ceur-ws.org/Vol-653/#MicheleiMissikoff>,
+    ns2:presentedAt <http://ceur-ws.org/Vol-653/#event> ;
+    ns3:editor <http://ceur-ws.org/Vol-653/#MicheleiMissikoff>,
         <http://ceur-ws.org/Vol-653/#PaolaiVelardi> .
 

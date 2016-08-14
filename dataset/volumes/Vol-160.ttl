@@ -1,32 +1,45 @@
-@prefix ns1: <http://www.w3.org/2002/07/owl#> .
-@prefix ns2: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns3: <http://purl.org/dc/elements/1.1/> .
-@prefix ns4: <http://xmlns.com/foaf/0.1/> .
+@prefix ns1: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns2: <http://purl.org/dc/elements/1.1/> .
+@prefix ns3: <http://purl.org/ontology/bibo/#> .
+@prefix ns4: <http://data.semanticweb.org/ns/swc/ontology/#> .
 @prefix ns5: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns6: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns7: <http://purl.org/ontology/bibo/#> .
-@prefix ns8: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns6: <http://xmlns.com/foaf/0.1/> .
+@prefix ns7: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns9: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-160/> a ns2:Proceedings ;
-    ns6:issued "2005-11-15T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:presentedAt <http://ceur-ws.org/Vol-160/#event> ;
-    ns8:editor <http://ceur-ws.org/Vol-160/#MicheleiMissikoff> .
+<http://ceur-ws.org/Vol-160/> a ns4:Proceedings ;
+    ns8:issued "2005-11-15T00:00:00+00:00"^^xsd:dateTime ;
+    ns3:presentedAt <http://ceur-ws.org/Vol-160/#event> ;
+    ns1:editor <http://ceur-ws.org/Vol-160/#MicheleiMissikoff> .
 
-<http://ceur-ws.org/Vol-160/#MicheleiMissikoff> a ns4:Person ;
-    ns1:sameAs <http://ceur-ws.org/persons/MicheleiMissikoff> ;
-    ns4:name "Michele Missikoff" .
+<http://ceur-ws.org/Vol-160/#MicheleiMissikoff> a ns6:Person ;
+    ns9:sameAs <http://ceur-ws.org/persons/MicheleiMissikoff> ;
+    ns6:name "Michele Missikoff" .
 
-<http://ceur-ws.org/Vol-160/#event> a ns2:WorkshopEvent ;
-    ns2:hasLocation <http://dbpedia.org/resource/Portugal> ;
-    ns2:hasPart <http://ceur-ws.org/Vol-160/#part-EMOI>,
+<http://ceur-ws.org/Vol-160/#event> a ns4:WorkshopEvent ;
+    ns4:hasLocation <http://dbpedia.org/resource/Portugal> ;
+    ns4:hasPart <http://ceur-ws.org/Vol-160/#part-EMOI>,
         <http://ceur-ws.org/Vol-160/#part-INTEROP> ;
-    ns2:isSubEventOf <http://ceur-ws.org/Vol-160/#conf> ;
+    ns4:isSubEventOf <http://ceur-ws.org/Vol-160/#conf> ;
     ns5:beginsAtDatetime "2005-06-13T00:00:00+00:00"^^xsd:dateTime ;
     ns5:endsAtDatetime "2005-06-14T00:00:00+00:00"^^xsd:dateTime ;
-    ns3:license "http://choosealicense.com/licenses/no-license/" ;
+    ns2:license "http://choosealicense.com/licenses/no-license/" ;
     rdfs:seeAlso <http://ceur-ws.org/Vol-125/#event> .
+
+<http://ceur-ws.org/Vol-160/#part-EMOI> a ns3:Workshop ;
+    ns4:partOf <http://ceur-ws.org/series/EMOI> ;
+    ns7:title "Enterprise Modelling and Ontologies for Interoperability 2005" ;
+    ns3:shortTitle "EMOI" ;
+    ns1:edition 1 .
+
+<http://ceur-ws.org/Vol-160/#part-INTEROP> a ns3:Workshop ;
+    ns4:partOf <http://ceur-ws.org/series/INTEROP> ;
+    ns7:title "Enterprise Modelling and Ontologies for Interoperability 2005" ;
+    ns3:shortTitle "INTEROP" ;
+    ns1:edition 1 .
 

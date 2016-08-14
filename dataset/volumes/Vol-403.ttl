@@ -1,19 +1,20 @@
 @prefix ns1: <http://www.w3.org/2002/07/owl#> .
 @prefix ns2: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns3: <http://purl.org/ontology/bibo/#> .
+@prefix ns3: <http://purl.org/NET/c4dm/timeline.owl#> .
 @prefix ns4: <http://xmlns.com/foaf/0.1/> .
 @prefix ns5: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns6: <http://purl.org/dc/elements/1.1/> .
-@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns6: <http://purl.org/ontology/bibo/#> .
+@prefix ns7: <http://purl.org/dc/elements/1.1/> .
+@prefix ns8: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns9: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <http://ceur-ws.org/Vol-403/> a ns5:Proceedings ;
-    ns7:issued "2008-10-18T00:00:00+00:00"^^xsd:dateTime ;
-    ns3:presentedAt <http://ceur-ws.org/Vol-403/#event> ;
+    ns9:issued "2008-10-18T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:presentedAt <http://ceur-ws.org/Vol-403/#event> ;
     ns2:editor <http://ceur-ws.org/Vol-403/#AnnaiV.iZhdanova>,
         <http://ceur-ws.org/Vol-403/#AxeliPolleres>,
         <http://ceur-ws.org/Vol-403/#JohniBreslin>,
@@ -44,7 +45,13 @@
     ns5:hasLocation <http://dbpedia.org/resource/Germany> ;
     ns5:hasPart <http://ceur-ws.org/Vol-403/#part-PICKME> ;
     ns5:isSubEventOf <http://ceur-ws.org/Vol-403/#conf> ;
-    ns8:beginsAtDatetime "2008-10-27T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:endsAtDatetime "2008-10-27T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:license "http://choosealicense.com/licenses/no-license/" .
+    ns3:beginsAtDatetime "2008-10-27T00:00:00+00:00"^^xsd:dateTime ;
+    ns3:endsAtDatetime "2008-10-27T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:license "http://choosealicense.com/licenses/no-license/" .
+
+<http://ceur-ws.org/Vol-403/#part-PICKME> a ns6:Workshop ;
+    ns5:partOf <http://ceur-ws.org/series/PICKME> ;
+    ns8:title "Personal Identification and Collaborations: Knowledge Mediation and Extraction 2008" ;
+    ns6:shortTitle "PICKME" ;
+    ns2:edition 3 .
 

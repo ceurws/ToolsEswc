@@ -1,42 +1,61 @@
-@prefix ns1: <http://xmlns.com/foaf/0.1/> .
-@prefix ns2: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns3: <http://purl.org/dc/elements/1.1/> .
+@prefix ns1: <http://www.w3.org/2002/07/owl#> .
+@prefix ns2: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns3: <http://xmlns.com/foaf/0.1/> .
 @prefix ns4: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns5: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns6: <http://purl.org/ontology/bibo/#> .
-@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns8: <http://www.w3.org/2002/07/owl#> .
+@prefix ns5: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns6: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns7: <http://purl.org/ontology/bibo/#> .
+@prefix ns8: <http://purl.org/dc/elements/1.1/> .
+@prefix ns9: <http://purl.org/dc/elements/1.1/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-659/> a ns2:Proceedings ;
-    ns7:issued "2010-10-26T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:presentedAt <http://ceur-ws.org/Vol-659/#event> ;
-    ns5:editor <http://ceur-ws.org/Vol-659/#LyndoniNixon>,
+<http://ceur-ws.org/Vol-659/> a ns5:Proceedings ;
+    ns6:issued "2010-10-26T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:presentedAt <http://ceur-ws.org/Vol-659/#event> ;
+    ns2:editor <http://ceur-ws.org/Vol-659/#LyndoniNixon>,
         <http://ceur-ws.org/Vol-659/#MicheleiMissikof>,
         <http://ceur-ws.org/Vol-659/#SergioiGusmaroli> .
 
-<http://ceur-ws.org/Vol-659/#LyndoniNixon> a ns1:Person ;
-    ns8:sameAs <http://ceur-ws.org/persons/LyndoniNixon> ;
-    ns1:name "Lyndon Nixon" .
+<http://ceur-ws.org/Vol-659/#LyndoniNixon> a ns3:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/LyndoniNixon> ;
+    ns3:name "Lyndon Nixon" .
 
-<http://ceur-ws.org/Vol-659/#MicheleiMissikof> a ns1:Person ;
-    ns8:sameAs <http://ceur-ws.org/persons/MicheleiMissikof> ;
-    ns1:name "Michele Missikof" .
+<http://ceur-ws.org/Vol-659/#MicheleiMissikof> a ns3:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/MicheleiMissikof> ;
+    ns3:name "Michele Missikof" .
 
-<http://ceur-ws.org/Vol-659/#SergioiGusmaroli> a ns1:Person ;
-    ns8:sameAs <http://ceur-ws.org/persons/SergioiGusmaroli> ;
-    ns1:name "Sergio Gusmaroli" .
+<http://ceur-ws.org/Vol-659/#SergioiGusmaroli> a ns3:Person ;
+    ns1:sameAs <http://ceur-ws.org/persons/SergioiGusmaroli> ;
+    ns3:name "Sergio Gusmaroli" .
 
-<http://ceur-ws.org/Vol-659/#event> a ns2:WorkshopEvent ;
-    ns2:hasLocation <http://dbpedia.org/resource/Germany> ;
-    ns2:hasPart <http://ceur-ws.org/Vol-659/#part-COIN>,
+<http://ceur-ws.org/Vol-659/#event> a ns5:WorkshopEvent ;
+    ns5:hasLocation <http://dbpedia.org/resource/Germany> ;
+    ns5:hasPart <http://ceur-ws.org/Vol-659/#part-COIN>,
         <http://ceur-ws.org/Vol-659/#part-EU>,
         <http://ceur-ws.org/Vol-659/#part-IP> ;
-    ns2:isSubEventOf <http://ceur-ws.org/Vol-659/#conf> ;
+    ns5:isSubEventOf <http://ceur-ws.org/Vol-659/#conf> ;
     ns4:beginsAtDatetime "2010-09-01T00:00:00+00:00"^^xsd:dateTime ;
     ns4:endsAtDatetime "2010-09-01T00:00:00+00:00"^^xsd:dateTime ;
-    ns3:license "http://choosealicense.com/licenses/no-license/" .
+    ns8:license "http://choosealicense.com/licenses/no-license/" .
+
+<http://ceur-ws.org/Vol-659/#part-COIN> a ns7:Workshop ;
+    ns5:partOf <http://ceur-ws.org/series/COIN> ;
+    ns9:title "Future Enterprise Systems Workshop 2010" ;
+    ns7:shortTitle "COIN" ;
+    ns2:edition 1 .
+
+<http://ceur-ws.org/Vol-659/#part-EU> a ns7:Workshop ;
+    ns5:partOf <http://ceur-ws.org/series/EU> ;
+    ns9:title "Future Enterprise Systems Workshop 2010" ;
+    ns7:shortTitle "EU" ;
+    ns2:edition 1 .
+
+<http://ceur-ws.org/Vol-659/#part-IP> a ns7:Workshop ;
+    ns5:partOf <http://ceur-ws.org/series/IP> ;
+    ns9:title "Future Enterprise Systems Workshop 2010" ;
+    ns7:shortTitle "IP" ;
+    ns2:edition 1 .
 

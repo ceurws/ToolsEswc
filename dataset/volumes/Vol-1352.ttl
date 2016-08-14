@@ -1,12 +1,12 @@
 @prefix ns1: <http://xmlns.com/foaf/0.1/> .
 @prefix ns2: <http://www.w3.org/2002/07/owl#> .
-@prefix ns3: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns4: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns3: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns4: <http://purl.org/dc/elements/1.1/#> .
 @prefix ns5: <http://swrc.ontoware.org/ontology/#> .
 @prefix ns6: <http://purl.org/ontology/bibo/#> .
-@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns8: <http://purl.org/dc/elements/1.1/> .
-@prefix ns9: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns9: <http://purl.org/dc/elements/1.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -122,13 +122,19 @@
     ns1:made <http://ceur-ws.org/Vol-1352/#paper4> ;
     ns1:name "Timothy Read" .
 
-<http://ceur-ws.org/Vol-1352/#event> a ns4:WorkshopEvent ;
-    ns4:hasLocation <http://dbpedia.org/resource/United_States> ;
-    ns4:hasPart <http://ceur-ws.org/Vol-1352/#part-PATCH> ;
-    ns4:isSubEventOf <http://ceur-ws.org/Vol-1352/#conf> ;
-    ns9:beginsAtDatetime "2016-03-29T00:00:00+00:00"^^xsd:dateTime ;
-    ns9:endsAtDatetime "2016-03-29T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:license "http://creativecommons.org/publicdomain/zero/1.0/" .
+<http://ceur-ws.org/Vol-1352/#event> a ns3:WorkshopEvent ;
+    ns3:hasLocation <http://dbpedia.org/resource/United_States> ;
+    ns3:hasPart <http://ceur-ws.org/Vol-1352/#part-PATCH> ;
+    ns3:isSubEventOf <http://ceur-ws.org/Vol-1352/#conf> ;
+    ns7:beginsAtDatetime "2016-03-29T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:endsAtDatetime "2016-03-29T00:00:00+00:00"^^xsd:dateTime ;
+    ns9:license "http://creativecommons.org/publicdomain/zero/1.0/" .
+
+<http://ceur-ws.org/Vol-1352/#part-PATCH> a ns6:Workshop ;
+    ns3:partOf <http://ceur-ws.org/series/PATCH> ;
+    ns4:title "Personalized Access to Cultural Heritage 2015" ;
+    ns6:shortTitle "PATCH" ;
+    ns5:edition 8 .
 
 <http://ceur-ws.org/Vol-1352/#JohaniOomen> a ns1:Person ;
     ns5:affiliation "" ;
@@ -142,15 +148,15 @@
     ns1:made <http://ceur-ws.org/Vol-1352/#paper3> ;
     ns1:name "Oliviero Stock" .
 
-<http://ceur-ws.org/Vol-1352/#paper5> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1352/> ;
-    ns3:title "Emerging Tastes: Considering How Preferences Evolve" ;
+<http://ceur-ws.org/Vol-1352/#paper5> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1352/> ;
+    ns4:title "Emerging Tastes: Considering How Preferences Evolve" ;
     ns6:section <http://ceur-ws.org/Vol-1352/#Session1IntelligentTechnologyforMuseumVisits> ;
     ns5:author <http://ceur-ws.org/Vol-1352/#DuaneiDegler> .
 
-<http://ceur-ws.org/Vol-1352/#paper6> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1352/> ;
-    ns3:title "Digital Representation Platform and Multi-Scale Representation for a Multidisciplinary Knowledge of Some UNESCO World Heritage Sites in Italy" ;
+<http://ceur-ws.org/Vol-1352/#paper6> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1352/> ;
+    ns4:title "Digital Representation Platform and Multi-Scale Representation for a Multidisciplinary Knowledge of Some UNESCO World Heritage Sites in Italy" ;
     ns6:section <http://ceur-ws.org/Vol-1352/#Session2CulturalHeritagePresentationandCommunication> ;
     ns5:author <http://ceur-ws.org/Vol-1352/#AlessandroiDeiMasi> .
 
@@ -168,64 +174,64 @@
         <http://ceur-ws.org/Vol-1352/#paper8> ;
     ns1:name "Tsvi Kuflick" .
 
-<http://ceur-ws.org/Vol-1352/#paper4> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1352/> ;
-    ns3:title "Mobile Social Learning as a Catalyst for Cultural Heritage" ;
+<http://ceur-ws.org/Vol-1352/#paper4> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1352/> ;
+    ns4:title "Mobile Social Learning as a Catalyst for Cultural Heritage" ;
     ns6:section <http://ceur-ws.org/Vol-1352/#Session1IntelligentTechnologyforMuseumVisits> ;
     ns5:author <http://ceur-ws.org/Vol-1352/#ElenaiB%C3%A1rcena>,
         <http://ceur-ws.org/Vol-1352/#TimothyiRead> .
 
-<http://ceur-ws.org/Vol-1352/#paper8> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1352/> ;
-    ns3:title "Strategies for Coping with Multiple Narratives" ;
+<http://ceur-ws.org/Vol-1352/#paper8> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1352/> ;
+    ns4:title "Strategies for Coping with Multiple Narratives" ;
     ns6:section <http://ceur-ws.org/Vol-1352/#Session2CulturalHeritagePresentationandCommunication> ;
     ns5:author <http://ceur-ws.org/Vol-1352/#AlaniWecker>,
         <http://ceur-ws.org/Vol-1352/#TsviiKuflick> .
 
-<http://ceur-ws.org/Vol-1352/#paper3> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1352/> ;
-    ns3:title "AMuse - An Initial Plan to Associate Museum Visits to Outdoor Cultural Heritage Activities" ;
+<http://ceur-ws.org/Vol-1352/#paper3> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1352/> ;
+    ns4:title "AMuse - An Initial Plan to Associate Museum Visits to Outdoor Cultural Heritage Activities" ;
     ns6:section <http://ceur-ws.org/Vol-1352/#Session1IntelligentTechnologyforMuseumVisits> ;
     ns5:author <http://ceur-ws.org/Vol-1352/#AlaniWecker>,
         <http://ceur-ws.org/Vol-1352/#OlivieroiStock>,
         <http://ceur-ws.org/Vol-1352/#TsviiKuflick> .
 
-<http://ceur-ws.org/Vol-1352/#paper7> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1352/> ;
-    ns3:title "LinkedCulture: Browsing Related Europeana Objects while Watching a Cultural Heritage TV Programme" ;
+<http://ceur-ws.org/Vol-1352/#paper7> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1352/> ;
+    ns4:title "LinkedCulture: Browsing Related Europeana Objects while Watching a Cultural Heritage TV Programme" ;
     ns6:section <http://ceur-ws.org/Vol-1352/#Session2CulturalHeritagePresentationandCommunication> ;
     ns5:author <http://ceur-ws.org/Vol-1352/#JohaniOomen>,
         <http://ceur-ws.org/Vol-1352/#LotteiBaltussen>,
         <http://ceur-ws.org/Vol-1352/#LyndoniNixon> .
 
-<http://ceur-ws.org/Vol-1352/#paper9> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1352/> ;
-    ns3:title "CultureCam: Exploring Europeana Images to Inspire Creative Design" ;
+<http://ceur-ws.org/Vol-1352/#paper9> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1352/> ;
+    ns4:title "CultureCam: Exploring Europeana Images to Inspire Creative Design" ;
     ns6:section <http://ceur-ws.org/Vol-1352/#Session2CulturalHeritagePresentationandCommunication> ;
     ns5:author <http://ceur-ws.org/Vol-1352/#ChristinaiHolm>,
         <http://ceur-ws.org/Vol-1352/#SannaiMartilla>,
         <http://ceur-ws.org/Vol-1352/#SergiuiGordea> .
 
-<http://ceur-ws.org/Vol-1352/#Session2CulturalHeritagePresentationandCommunication> a ns4:SessionEvent ;
-    ns4:partOf <http://ceur-ws.org/Vol-1352/> ;
-    ns3:title "Session 2: Cultural Heritage: Presentation and Communication" .
+<http://ceur-ws.org/Vol-1352/#Session2CulturalHeritagePresentationandCommunication> a ns3:SessionEvent ;
+    ns3:partOf <http://ceur-ws.org/Vol-1352/> ;
+    ns4:title "Session 2: Cultural Heritage: Presentation and Communication" .
 
-<http://ceur-ws.org/Vol-1352/#paper2> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1352/> ;
-    ns3:title "Virtual, Remote Participation in Museum Visits by Older Adults: A Feasibility Study" ;
+<http://ceur-ws.org/Vol-1352/#paper2> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1352/> ;
+    ns4:title "Virtual, Remote Participation in Museum Visits by Older Adults: A Feasibility Study" ;
     ns6:section <http://ceur-ws.org/Vol-1352/#Session1IntelligentTechnologyforMuseumVisits> ;
     ns5:author <http://ceur-ws.org/Vol-1352/#FabioiCasati>,
         <http://ceur-ws.org/Vol-1352/#FlorianiDaniel>,
         <http://ceur-ws.org/Vol-1352/#GalenaiKostoska>,
         <http://ceur-ws.org/Vol-1352/#MarcosiBaez> .
 
-<http://ceur-ws.org/Vol-1352/#Session1IntelligentTechnologyforMuseumVisits> a ns4:SessionEvent ;
-    ns4:partOf <http://ceur-ws.org/Vol-1352/> ;
-    ns3:title "Session 1: Intelligent Technology for Museum Visits" .
+<http://ceur-ws.org/Vol-1352/#Session1IntelligentTechnologyforMuseumVisits> a ns3:SessionEvent ;
+    ns3:partOf <http://ceur-ws.org/Vol-1352/> ;
+    ns4:title "Session 1: Intelligent Technology for Museum Visits" .
 
-<http://ceur-ws.org/Vol-1352/#paper1> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-1352/> ;
-    ns3:title "Fail Better: Lessons Learned from a Formative Evaluation of Social Object Labels" ;
+<http://ceur-ws.org/Vol-1352/#paper1> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-1352/> ;
+    ns4:title "Fail Better: Lessons Learned from a Formative Evaluation of Social Object Labels" ;
     ns6:section <http://ceur-ws.org/Vol-1352/#Session1IntelligentTechnologyforMuseumVisits> ;
     ns5:author <http://ceur-ws.org/Vol-1352/#DannyiBrowne>,
         <http://ceur-ws.org/Vol-1352/#DerekiWilliams>,
@@ -234,8 +240,8 @@
         <http://ceur-ws.org/Vol-1352/#MarcusiWinter>,
         <http://ceur-ws.org/Vol-1352/#MichaeliJohniGorman> .
 
-<http://ceur-ws.org/Vol-1352/> a ns4:Proceedings ;
-    ns4:hasPart <http://ceur-ws.org/Vol-1352/#paper1>,
+<http://ceur-ws.org/Vol-1352/> a ns3:Proceedings ;
+    ns3:hasPart <http://ceur-ws.org/Vol-1352/#paper1>,
         <http://ceur-ws.org/Vol-1352/#paper2>,
         <http://ceur-ws.org/Vol-1352/#paper3>,
         <http://ceur-ws.org/Vol-1352/#paper4>,
@@ -244,9 +250,9 @@
         <http://ceur-ws.org/Vol-1352/#paper7>,
         <http://ceur-ws.org/Vol-1352/#paper8>,
         <http://ceur-ws.org/Vol-1352/#paper9> ;
-    ns4:hasSession <http://ceur-ws.org/Vol-1352/#Session1IntelligentTechnologyforMuseumVisits>,
+    ns3:hasSession <http://ceur-ws.org/Vol-1352/#Session1IntelligentTechnologyforMuseumVisits>,
         <http://ceur-ws.org/Vol-1352/#Session2CulturalHeritagePresentationandCommunication> ;
-    ns7:issued "2015-04-27T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:issued "2015-04-27T00:00:00+00:00"^^xsd:dateTime ;
     ns6:presentedAt <http://ceur-ws.org/Vol-1352/#event> ;
     ns5:editor <http://ceur-ws.org/Vol-1352/#AlaniWecker>,
         <http://ceur-ws.org/Vol-1352/#CristinaiGena>,

@@ -1,35 +1,36 @@
-@prefix ns1: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns2: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns3: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns4: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns5: <http://www.w3.org/2002/07/owl#> .
-@prefix ns6: <http://xmlns.com/foaf/0.1/> .
+@prefix ns1: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns2: <http://www.w3.org/2002/07/owl#> .
+@prefix ns3: <http://xmlns.com/foaf/0.1/> .
+@prefix ns4: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns5: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns6: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix ns7: <http://purl.org/ontology/bibo/#> .
 @prefix ns8: <http://purl.org/dc/elements/1.1/> .
+@prefix ns9: <http://purl.org/dc/elements/1.1/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-283/> a ns1:Proceedings ;
-    ns3:issued "2007-10-04T00:00:00+00:00"^^xsd:dateTime ;
+<http://ceur-ws.org/Vol-283/> a ns4:Proceedings ;
+    ns6:issued "2007-10-04T00:00:00+00:00"^^xsd:dateTime ;
     ns7:presentedAt <http://ceur-ws.org/Vol-283/#event> ;
-    ns4:editor <http://ceur-ws.org/Vol-283/#HeinziHandels>,
+    ns5:editor <http://ceur-ws.org/Vol-283/#HeinziHandels>,
         <http://ceur-ws.org/Vol-283/#HerausgegebenivoniAlexanderiHorsch> .
 
-<http://ceur-ws.org/Vol-283/#HeinziHandels> a ns6:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/HeinziHandels> ;
-    ns6:name "Heinz Handels" .
+<http://ceur-ws.org/Vol-283/#HeinziHandels> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/HeinziHandels> ;
+    ns3:name "Heinz Handels" .
 
-<http://ceur-ws.org/Vol-283/#HerausgegebenivoniAlexanderiHorsch> a ns6:Person ;
-    ns5:sameAs <http://ceur-ws.org/persons/HerausgegebenivoniAlexanderiHorsch> ;
-    ns6:name "Herausgegeben von Alexander Horsch" .
+<http://ceur-ws.org/Vol-283/#HerausgegebenivoniAlexanderiHorsch> a ns3:Person ;
+    ns2:sameAs <http://ceur-ws.org/persons/HerausgegebenivoniAlexanderiHorsch> ;
+    ns3:name "Herausgegeben von Alexander Horsch" .
 
-<http://ceur-ws.org/Vol-283/#event> a ns1:WorkshopEvent ;
-    ns1:hasPart <http://ceur-ws.org/Vol-283/#part-ws> ;
-    ns1:isSubEventOf <http://ceur-ws.org/Vol-283/#conf> ;
-    ns2:beginsAtDatetime "2007-03-27T00:00:00+00:00"^^xsd:dateTime ;
-    ns2:endsAtDatetime "2007-03-27T00:00:00+00:00"^^xsd:dateTime ;
+<http://ceur-ws.org/Vol-283/#event> a ns4:WorkshopEvent ;
+    ns4:hasPart <http://ceur-ws.org/Vol-283/#part-ws> ;
+    ns4:isSubEventOf <http://ceur-ws.org/Vol-283/#conf> ;
+    ns1:beginsAtDatetime "2007-03-27T00:00:00+00:00"^^xsd:dateTime ;
+    ns1:endsAtDatetime "2007-03-27T00:00:00+00:00"^^xsd:dateTime ;
     ns8:license "http://choosealicense.com/licenses/no-license/" ;
     rdfs:seeAlso <http://ceur-ws.org/Vol-116/#event>,
         <http://ceur-ws.org/Vol-12/#event>,
@@ -41,4 +42,8 @@
         <http://ceur-ws.org/Vol-56/#event>,
         <http://ceur-ws.org/Vol-6/#event>,
         <http://ceur-ws.org/Vol-80/#event> .
+
+<http://ceur-ws.org/Vol-283/#part-ws> a ns7:Workshop ;
+    ns4:partOf <http://ceur-ws.org/series/ws> ;
+    ns9:title "Bildverarbeitung für die Medizin 2007: Algorithmen - Systeme - Anwendungen" .
 

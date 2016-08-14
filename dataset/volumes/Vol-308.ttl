@@ -1,11 +1,11 @@
 @prefix ns1: <http://xmlns.com/foaf/0.1/> .
 @prefix ns2: <http://www.w3.org/2002/07/owl#> .
-@prefix ns3: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns4: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns5: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns6: <http://purl.org/ontology/bibo/#> .
-@prefix ns7: <http://purl.org/dc/elements/1.1/> .
-@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns3: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns4: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns5: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns6: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns7: <http://purl.org/ontology/bibo/#> .
+@prefix ns8: <http://purl.org/dc/elements/1.1/> .
 @prefix ns9: <http://purl.org/NET/c4dm/timeline.owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -148,7 +148,7 @@
     ns1:name "Nathalie Deschryver" .
 
 <http://ceur-ws.org/Vol-308/#NikosiKaracapilidis> a ns1:Person ;
-    ns4:affiliation "" ;
+    ns3:affiliation "" ;
     ns2:sameAs <http://ceur-ws.org/persons/NikosiKaracapilidis> ;
     ns1:name "Nikos Karacapilidis" .
 
@@ -233,17 +233,23 @@
     ns1:name "Zacharias Lekkas" .
 
 <http://ceur-ws.org/Vol-308/#andiFransiVaniAssche> a ns1:Person ;
-    ns4:affiliation "" ;
+    ns3:affiliation "" ;
     ns2:sameAs <http://ceur-ws.org/persons/andiFransiVaniAssche> ;
     ns1:name "and Frans Van Assche" .
 
-<http://ceur-ws.org/Vol-308/#event> a ns5:WorkshopEvent ;
-    ns5:hasLocation <http://dbpedia.org/resource/Greece> ;
-    ns5:hasPart <http://ceur-ws.org/Vol-308/#part-TEL-CoPs> ;
-    ns5:isSubEventOf <http://ceur-ws.org/Vol-308/#conf> ;
+<http://ceur-ws.org/Vol-308/#event> a ns4:WorkshopEvent ;
+    ns4:hasLocation <http://dbpedia.org/resource/Greece> ;
+    ns4:hasPart <http://ceur-ws.org/Vol-308/#part-TEL-CoPs> ;
+    ns4:isSubEventOf <http://ceur-ws.org/Vol-308/#conf> ;
     ns9:beginsAtDatetime "2007-09-18T00:00:00+00:00"^^xsd:dateTime ;
     ns9:endsAtDatetime "2007-09-18T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:license "http://choosealicense.com/licenses/no-license/" .
+    ns8:license "http://choosealicense.com/licenses/no-license/" .
+
+<http://ceur-ws.org/Vol-308/#part-TEL-CoPs> a ns7:Workshop ;
+    ns4:partOf <http://ceur-ws.org/series/TEL-CoPs> ;
+    ns6:title "Building Technology Enhanced Learning solutions for Communities of Practice 2007" ;
+    ns7:shortTitle "TEL-CoPs" ;
+    ns3:edition 2 .
 
 <http://ceur-ws.org/Vol-308/#SandyiEliHelou> a ns1:Person ;
     ns2:sameAs <http://ceur-ws.org/persons/SandyiEliHelou> ;
@@ -251,83 +257,83 @@
         <http://ceur-ws.org/Vol-308/#paper08> ;
     ns1:name "Sandy El Helou" .
 
-<http://ceur-ws.org/Vol-308/#paper07> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-308/> ;
-    ns3:title "Exploiting Social Software to Semantically Enrich Multimedia Content for Online Communities" ;
-    ns4:author <http://ceur-ws.org/Vol-308/#ChristinaiEvangelou>,
+<http://ceur-ws.org/Vol-308/#paper07> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-308/> ;
+    ns6:title "Exploiting Social Software to Semantically Enrich Multimedia Content for Online Communities" ;
+    ns3:author <http://ceur-ws.org/Vol-308/#ChristinaiEvangelou>,
         <http://ceur-ws.org/Vol-308/#IoannisiKompatsiaris> .
 
-<http://ceur-ws.org/Vol-308/#paper06> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-308/> ;
-    ns3:title "Advancing Knowledge Management and Exchange between Collaborative Environments: A Tool Integration Perspective" ;
-    ns4:author <http://ceur-ws.org/Vol-308/#AnnaiDeiLiddo>,
+<http://ceur-ws.org/Vol-308/#paper06> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-308/> ;
+    ns6:title "Advancing Knowledge Management and Exchange between Collaborative Environments: A Tool Integration Perspective" ;
+    ns3:author <http://ceur-ws.org/Vol-308/#AnnaiDeiLiddo>,
         <http://ceur-ws.org/Vol-308/#GraziaiConcilio>,
         <http://ceur-ws.org/Vol-308/#SimoniBuckinghumiShum> .
 
-<http://ceur-ws.org/Vol-308/#paper10> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-308/> ;
-    ns3:title "Using Live Virtual Technologies to Support Communities of Practice: the Impact of Extended Events" ;
-    ns4:author <http://ceur-ws.org/Vol-308/#EleftheriaiTomadaki>,
+<http://ceur-ws.org/Vol-308/#paper10> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-308/> ;
+    ns6:title "Using Live Virtual Technologies to Support Communities of Practice: the Impact of Extended Events" ;
+    ns3:author <http://ceur-ws.org/Vol-308/#EleftheriaiTomadaki>,
         <http://ceur-ws.org/Vol-308/#KeviniA.iQuick>,
         <http://ceur-ws.org/Vol-308/#PeteriJ.iScott> .
 
-<http://ceur-ws.org/Vol-308/#paper01> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-308/> ;
-    ns3:title "Individual Learning Characteristics in Web-based Communities of Practice" ;
-    ns4:author <http://ceur-ws.org/Vol-308/#ConstantinosiMourlas>,
+<http://ceur-ws.org/Vol-308/#paper01> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-308/> ;
+    ns6:title "Individual Learning Characteristics in Web-based Communities of Practice" ;
+    ns3:author <http://ceur-ws.org/Vol-308/#ConstantinosiMourlas>,
         <http://ceur-ws.org/Vol-308/#NikosiTsianos>,
         <http://ceur-ws.org/Vol-308/#PanagiotisiGermanakos>,
         <http://ceur-ws.org/Vol-308/#ZachariasiLekkas> .
 
-<http://ceur-ws.org/Vol-308/#paper04> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-308/> ;
-    ns3:title "Using Graphs in Developing Educational Material" ;
-    ns4:author <http://ceur-ws.org/Vol-308/#DimitrisiKalles>,
+<http://ceur-ws.org/Vol-308/#paper04> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-308/> ;
+    ns6:title "Using Graphs in Developing Educational Material" ;
+    ns3:author <http://ceur-ws.org/Vol-308/#DimitrisiKalles>,
         <http://ceur-ws.org/Vol-308/#DionysisiKaraiskakis>,
         <http://ceur-ws.org/Vol-308/#MariaiPouliopoulou>,
         <http://ceur-ws.org/Vol-308/#ThanassisiHadzilacos> .
 
-<http://ceur-ws.org/Vol-308/#paper05> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-308/> ;
-    ns3:title "Don't value the valueless: toward a model of evaluation of knowledge within e-Communities of Practice" ;
-    ns4:author <http://ceur-ws.org/Vol-308/#G%C3%A9raldineiVidou>,
+<http://ceur-ws.org/Vol-308/#paper05> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-308/> ;
+    ns6:title "Don't value the valueless: toward a model of evaluation of knowledge within e-Communities of Practice" ;
+    ns3:author <http://ceur-ws.org/Vol-308/#G%C3%A9raldineiVidou>,
         <http://ceur-ws.org/Vol-308/#Pierre-JeaniBarlatier>,
         <http://ceur-ws.org/Vol-308/#St%C3%A9phaneiJacquemart>,
         <http://ceur-ws.org/Vol-308/#ThibaudiLatour> .
 
-<http://ceur-ws.org/Vol-308/#paper03> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-308/> ;
-    ns3:title "Using a Semantic Wiki in Communities of Practice" ;
-    ns4:author <http://ceur-ws.org/Vol-308/#AdiliEliGhali>,
+<http://ceur-ws.org/Vol-308/#paper03> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-308/> ;
+    ns6:title "Using a Semantic Wiki in Communities of Practice" ;
+    ns3:author <http://ceur-ws.org/Vol-308/#AdiliEliGhali>,
         <http://ceur-ws.org/Vol-308/#AlainiGiboin>,
         <http://ceur-ws.org/Vol-308/#AmiraiTifous>,
         <http://ceur-ws.org/Vol-308/#MicheliBuffa>,
         <http://ceur-ws.org/Vol-308/#RoseiDieng-Kuntz> .
 
-<http://ceur-ws.org/Vol-308/#paper02> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-308/> ;
-    ns3:title "Tackling Acceptability Issues in Communities of Practice by Providing a Lightweight Email-based Interface to eLogbook: a Web 2.0 Collaborative Activity and Asset Management System" ;
-    ns4:author <http://ceur-ws.org/Vol-308/#AmagoiaiMadinaiBerastegui>,
+<http://ceur-ws.org/Vol-308/#paper02> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-308/> ;
+    ns6:title "Tackling Acceptability Issues in Communities of Practice by Providing a Lightweight Email-based Interface to eLogbook: a Web 2.0 Collaborative Activity and Asset Management System" ;
+    ns3:author <http://ceur-ws.org/Vol-308/#AmagoiaiMadinaiBerastegui>,
         <http://ceur-ws.org/Vol-308/#ChiuiManiYu>,
         <http://ceur-ws.org/Vol-308/#ChristopheiSalzmann>,
         <http://ceur-ws.org/Vol-308/#DenisiGillet>,
         <http://ceur-ws.org/Vol-308/#SandyiEliHelou>,
         <http://ceur-ws.org/Vol-308/#YassiniRekik> .
 
-<http://ceur-ws.org/Vol-308/#paper08> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-308/> ;
-    ns3:title "Designing services for CoPs: first results of the PALETTE project" ;
-    ns4:author <http://ceur-ws.org/Vol-308/#AidaiBoukottaya>,
+<http://ceur-ws.org/Vol-308/#paper08> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-308/> ;
+    ns6:title "Designing services for CoPs: first results of the PALETTE project" ;
+    ns3:author <http://ceur-ws.org/Vol-308/#AidaiBoukottaya>,
         <http://ceur-ws.org/Vol-308/#AmauryiDaele>,
         <http://ceur-ws.org/Vol-308/#BernadetteiCharlier>,
         <http://ceur-ws.org/Vol-308/#NathalieiDeschryver>,
         <http://ceur-ws.org/Vol-308/#SandyiEliHelou>,
         <http://ceur-ws.org/Vol-308/#YannickiNaudet> .
 
-<http://ceur-ws.org/Vol-308/#paper09> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-308/> ;
-    ns3:title "From 'Collecting' to 'Deciding': Facilitating the Emergence of Decisions in Argumentative Collaboration" ;
-    ns4:author <http://ceur-ws.org/Vol-308/#ChristosiMettouris>,
+<http://ceur-ws.org/Vol-308/#paper09> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-308/> ;
+    ns6:title "From 'Collecting' to 'Deciding': Facilitating the Emergence of Decisions in Argumentative Collaboration" ;
+    ns3:author <http://ceur-ws.org/Vol-308/#ChristosiMettouris>,
         <http://ceur-ws.org/Vol-308/#DoraiNousia>,
         <http://ceur-ws.org/Vol-308/#GiorgosiGkotsis>,
         <http://ceur-ws.org/Vol-308/#ManolisiTzagarakis>,
@@ -336,8 +342,8 @@
         <http://ceur-ws.org/Vol-308/#SpyrosiChristodoulou>,
         <http://ceur-ws.org/Vol-308/#VasilisiKallistros> .
 
-<http://ceur-ws.org/Vol-308/> a ns5:Proceedings ;
-    ns5:hasPart <http://ceur-ws.org/Vol-308/#paper01>,
+<http://ceur-ws.org/Vol-308/> a ns4:Proceedings ;
+    ns4:hasPart <http://ceur-ws.org/Vol-308/#paper01>,
         <http://ceur-ws.org/Vol-308/#paper02>,
         <http://ceur-ws.org/Vol-308/#paper03>,
         <http://ceur-ws.org/Vol-308/#paper04>,
@@ -347,8 +353,8 @@
         <http://ceur-ws.org/Vol-308/#paper08>,
         <http://ceur-ws.org/Vol-308/#paper09>,
         <http://ceur-ws.org/Vol-308/#paper10> ;
-    ns8:issued "2008-01-07T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:presentedAt <http://ceur-ws.org/Vol-308/#event> ;
-    ns4:editor <http://ceur-ws.org/Vol-308/#NikosiKaracapilidis>,
+    ns5:issued "2008-01-07T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:presentedAt <http://ceur-ws.org/Vol-308/#event> ;
+    ns3:editor <http://ceur-ws.org/Vol-308/#NikosiKaracapilidis>,
         <http://ceur-ws.org/Vol-308/#andiFransiVaniAssche> .
 

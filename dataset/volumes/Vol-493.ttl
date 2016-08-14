@@ -1,37 +1,44 @@
-@prefix ns1: <http://xmlns.com/foaf/0.1/> .
-@prefix ns2: <http://purl.org/dc/elements/1.1/> .
-@prefix ns3: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns4: <http://www.w3.org/2002/07/owl#> .
+@prefix ns1: <http://purl.org/ontology/bibo/#> .
+@prefix ns2: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns3: <http://www.w3.org/2002/07/owl#> .
+@prefix ns4: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix ns5: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns6: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns7: <http://purl.org/ontology/bibo/#> .
-@prefix ns8: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns6: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns7: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns8: <http://purl.org/dc/elements/1.1/> .
+@prefix ns9: <http://xmlns.com/foaf/0.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-493/> a ns6:Proceedings ;
-    ns3:issued "2009-08-21T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:presentedAt <http://ceur-ws.org/Vol-493/#event> ;
-    ns8:editor <http://ceur-ws.org/Vol-493/#LuisiOlsina>,
+<http://ceur-ws.org/Vol-493/> a ns2:Proceedings ;
+    ns4:issued "2009-08-21T00:00:00+00:00"^^xsd:dateTime ;
+    ns1:presentedAt <http://ceur-ws.org/Vol-493/#event> ;
+    ns6:editor <http://ceur-ws.org/Vol-493/#LuisiOlsina>,
         <http://ceur-ws.org/Vol-493/#andiMarcoiWinckler> .
 
-<http://ceur-ws.org/Vol-493/#LuisiOlsina> a ns1:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/LuisiOlsina> ;
-    ns1:name "Luis Olsina" .
+<http://ceur-ws.org/Vol-493/#LuisiOlsina> a ns9:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/LuisiOlsina> ;
+    ns9:name "Luis Olsina" .
 
-<http://ceur-ws.org/Vol-493/#andiMarcoiWinckler> a ns1:Person ;
-    ns4:sameAs <http://ceur-ws.org/persons/andiMarcoiWinckler> ;
-    ns1:name "and Marco Winckler" .
+<http://ceur-ws.org/Vol-493/#andiMarcoiWinckler> a ns9:Person ;
+    ns3:sameAs <http://ceur-ws.org/persons/andiMarcoiWinckler> ;
+    ns9:name "and Marco Winckler" .
 
-<http://ceur-ws.org/Vol-493/#event> a ns6:WorkshopEvent ;
-    ns6:hasLocation <http://dbpedia.org/resource/Spain> ;
-    ns6:hasPart <http://ceur-ws.org/Vol-493/#part-IWWOST> ;
-    ns6:isSubEventOf <http://ceur-ws.org/Vol-493/#conf> ;
+<http://ceur-ws.org/Vol-493/#event> a ns2:WorkshopEvent ;
+    ns2:hasLocation <http://dbpedia.org/resource/Spain> ;
+    ns2:hasPart <http://ceur-ws.org/Vol-493/#part-IWWOST> ;
+    ns2:isSubEventOf <http://ceur-ws.org/Vol-493/#conf> ;
     ns5:beginsAtDatetime "2009-06-23T00:00:00+00:00"^^xsd:dateTime ;
     ns5:endsAtDatetime "2009-06-23T00:00:00+00:00"^^xsd:dateTime ;
-    ns2:license "http://choosealicense.com/licenses/no-license/" ;
+    ns8:license "http://choosealicense.com/licenses/no-license/" ;
     rdfs:seeAlso <http://ceur-ws.org/Vol-153/#event>,
         <http://ceur-ws.org/Vol-445/#event> .
+
+<http://ceur-ws.org/Vol-493/#part-IWWOST> a ns1:Workshop ;
+    ns2:partOf <http://ceur-ws.org/series/IWWOST> ;
+    ns7:title "Web-Oriented Software Technologies 2009" ;
+    ns1:shortTitle "IWWOST" ;
+    ns6:edition 8 .
 

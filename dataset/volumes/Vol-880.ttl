@@ -1,12 +1,12 @@
 @prefix ns1: <http://xmlns.com/foaf/0.1/> .
-@prefix ns2: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns3: <http://purl.org/ontology/bibo/#> .
-@prefix ns4: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns5: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns2: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns3: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns4: <http://purl.org/ontology/bibo/#> .
+@prefix ns5: <http://swrc.ontoware.org/ontology/#> .
 @prefix ns6: <http://www.w3.org/2002/07/owl#> .
 @prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns9: <http://purl.org/dc/elements/1.1/> .
+@prefix ns8: <http://purl.org/dc/elements/1.1/> .
+@prefix ns9: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -237,13 +237,19 @@
     ns1:made <http://ceur-ws.org/Vol-880/#VLDS-p62-Louis> ;
     ns1:name "Youssef Billawala" .
 
-<http://ceur-ws.org/Vol-880/#event> a ns5:WorkshopEvent ;
-    ns5:hasLocation <http://dbpedia.org/resource/United_States> ;
-    ns5:hasPart <http://ceur-ws.org/Vol-880/#part-VLDS> ;
-    ns5:isSubEventOf <http://ceur-ws.org/Vol-880/#conf> ;
+<http://ceur-ws.org/Vol-880/#event> a ns2:WorkshopEvent ;
+    ns2:hasLocation <http://dbpedia.org/resource/United_States> ;
+    ns2:hasPart <http://ceur-ws.org/Vol-880/#part-VLDS> ;
+    ns2:isSubEventOf <http://ceur-ws.org/Vol-880/#conf> ;
     ns7:beginsAtDatetime "2011-09-02T00:00:00+00:00"^^xsd:dateTime ;
     ns7:endsAtDatetime "2011-09-02T00:00:00+00:00"^^xsd:dateTime ;
-    ns9:license "http://choosealicense.com/licenses/no-license/" .
+    ns8:license "http://choosealicense.com/licenses/no-license/" .
+
+<http://ceur-ws.org/Vol-880/#part-VLDS> a ns4:Workshop ;
+    ns2:partOf <http://ceur-ws.org/series/VLDS> ;
+    ns3:title "Very Large Data Search 2011" ;
+    ns4:shortTitle "VLDS" ;
+    ns5:edition 1 .
 
 <http://ceur-ws.org/Vol-880/#AlessandroiBozzon> a ns1:Person ;
     ns6:sameAs <http://ceur-ws.org/persons/AlessandroiBozzon> ;
@@ -252,194 +258,194 @@
     ns1:name "Alessandro Bozzon" .
 
 <http://ceur-ws.org/Vol-880/#FabioiCasati> a ns1:Person ;
-    ns2:affiliation "" ;
+    ns5:affiliation "" ;
     ns6:sameAs <http://ceur-ws.org/persons/FabioiCasati> ;
     ns1:made <http://ceur-ws.org/Vol-880/#VLDS-preface> ;
     ns1:name "Fabio Casati" .
 
 <http://ceur-ws.org/Vol-880/#MarcoiBrambilla> a ns1:Person ;
-    ns2:affiliation "" ;
+    ns5:affiliation "" ;
     ns6:sameAs <http://ceur-ws.org/persons/MarcoiBrambilla> ;
     ns1:made <http://ceur-ws.org/Vol-880/#VLDS-preface> ;
     ns1:name "Marco Brambilla" .
 
 <http://ceur-ws.org/Vol-880/#StefanoiCeri> a ns1:Person ;
-    ns2:affiliation "" ;
+    ns5:affiliation "" ;
     ns6:sameAs <http://ceur-ws.org/persons/StefanoiCeri> ;
     ns1:made <http://ceur-ws.org/Vol-880/#VLDS-preface> ;
     ns1:name "Stefano Ceri" .
 
-<http://ceur-ws.org/Vol-880/#Session2PersonalandSocialSearch> a ns5:SessionEvent ;
-    ns5:partOf <http://ceur-ws.org/Vol-880/> ;
-    ns4:title "Session 2: Personal and Social Search" .
+<http://ceur-ws.org/Vol-880/#Session2PersonalandSocialSearch> a ns2:SessionEvent ;
+    ns2:partOf <http://ceur-ws.org/Vol-880/> ;
+    ns3:title "Session 2: Personal and Social Search" .
 
-<http://ceur-ws.org/Vol-880/#VLDS-p40-Wenerstrom> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-880/> ;
-    ns4:title "Enhanced Visualization for Web-Based Summaries" ;
-    ns3:endPage 45 ;
-    ns3:numPages 6 ;
-    ns3:section <http://ceur-ws.org/Vol-880/#Session4UsingRankingforSelectionVisualizationandValorization> ;
-    ns3:startPage 40 ;
-    ns2:author <http://ceur-ws.org/Vol-880/#BrentiWenerstrom>,
+<http://ceur-ws.org/Vol-880/#VLDS-p40-Wenerstrom> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-880/> ;
+    ns3:title "Enhanced Visualization for Web-Based Summaries" ;
+    ns4:endPage 45 ;
+    ns4:numPages 6 ;
+    ns4:section <http://ceur-ws.org/Vol-880/#Session4UsingRankingforSelectionVisualizationandValorization> ;
+    ns4:startPage 40 ;
+    ns5:author <http://ceur-ws.org/Vol-880/#BrentiWenerstrom>,
         <http://ceur-ws.org/Vol-880/#MehmediKantardzic> .
 
-<http://ceur-ws.org/Vol-880/#Session4UsingRankingforSelectionVisualizationandValorization> a ns5:SessionEvent ;
-    ns5:partOf <http://ceur-ws.org/Vol-880/> ;
-    ns4:title "Session 4: Using Ranking for Selection, Visualization, and Valorization" .
+<http://ceur-ws.org/Vol-880/#Session4UsingRankingforSelectionVisualizationandValorization> a ns2:SessionEvent ;
+    ns2:partOf <http://ceur-ws.org/Vol-880/> ;
+    ns3:title "Session 4: Using Ranking for Selection, Visualization, and Valorization" .
 
-<http://ceur-ws.org/Vol-880/#Session5NewandNewsApplications> a ns5:SessionEvent ;
-    ns5:partOf <http://ceur-ws.org/Vol-880/> ;
-    ns4:title "Session 5: New and News Applications" .
+<http://ceur-ws.org/Vol-880/#Session5NewandNewsApplications> a ns2:SessionEvent ;
+    ns2:partOf <http://ceur-ws.org/Vol-880/> ;
+    ns3:title "Session 5: New and News Applications" .
 
-<http://ceur-ws.org/Vol-880/#VLDS-p07-Morishima> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-880/> ;
-    ns4:title "The Power of Integrated Abstraction for Data-Centric Human/Machine Computations" ;
-    ns3:endPage 10 ;
-    ns3:numPages 4 ;
-    ns3:section <http://ceur-ws.org/Vol-880/#Session2PersonalandSocialSearch> ;
-    ns3:startPage 7 ;
-    ns2:author <http://ceur-ws.org/Vol-880/#AtsuyukiiMorishima>,
+<http://ceur-ws.org/Vol-880/#VLDS-p07-Morishima> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-880/> ;
+    ns3:title "The Power of Integrated Abstraction for Data-Centric Human/Machine Computations" ;
+    ns4:endPage 10 ;
+    ns4:numPages 4 ;
+    ns4:section <http://ceur-ws.org/Vol-880/#Session2PersonalandSocialSearch> ;
+    ns4:startPage 7 ;
+    ns5:author <http://ceur-ws.org/Vol-880/#AtsuyukiiMorishima>,
         <http://ceur-ws.org/Vol-880/#NorihideiShinagawa>,
         <http://ceur-ws.org/Vol-880/#ShojiiMochizuki> .
 
-<http://ceur-ws.org/Vol-880/#VLDS-p11-Castano> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-880/> ;
-    ns4:title "Thematic Exploration of Linked Data" ;
-    ns3:endPage 16 ;
-    ns3:numPages 6 ;
-    ns3:section <http://ceur-ws.org/Vol-880/#Session3DataExtractionandLinking> ;
-    ns3:startPage 11 ;
-    ns2:author <http://ceur-ws.org/Vol-880/#AlfioiFerrara>,
+<http://ceur-ws.org/Vol-880/#VLDS-p11-Castano> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-880/> ;
+    ns3:title "Thematic Exploration of Linked Data" ;
+    ns4:endPage 16 ;
+    ns4:numPages 6 ;
+    ns4:section <http://ceur-ws.org/Vol-880/#Session3DataExtractionandLinking> ;
+    ns4:startPage 11 ;
+    ns5:author <http://ceur-ws.org/Vol-880/#AlfioiFerrara>,
         <http://ceur-ws.org/Vol-880/#SilvanaiCastano>,
         <http://ceur-ws.org/Vol-880/#StefanoiMontanelli> .
 
-<http://ceur-ws.org/Vol-880/#VLDS-p17-Mulwad> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-880/> ;
-    ns4:title "Generating Linked Data by Inferring the Semantics of Tables" ;
-    ns3:endPage 22 ;
-    ns3:numPages 6 ;
-    ns3:section <http://ceur-ws.org/Vol-880/#Session3DataExtractionandLinking> ;
-    ns3:startPage 17 ;
-    ns2:author <http://ceur-ws.org/Vol-880/#AnupamiJoshi>,
+<http://ceur-ws.org/Vol-880/#VLDS-p17-Mulwad> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-880/> ;
+    ns3:title "Generating Linked Data by Inferring the Semantics of Tables" ;
+    ns4:endPage 22 ;
+    ns4:numPages 6 ;
+    ns4:section <http://ceur-ws.org/Vol-880/#Session3DataExtractionandLinking> ;
+    ns4:startPage 17 ;
+    ns5:author <http://ceur-ws.org/Vol-880/#AnupamiJoshi>,
         <http://ceur-ws.org/Vol-880/#TimiFinin>,
         <http://ceur-ws.org/Vol-880/#VarishiMulwad> .
 
-<http://ceur-ws.org/Vol-880/#VLDS-p34-Christoforaki> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-880/> ;
-    ns4:title "Searching Social Updates for Topic-centric Entities" ;
-    ns3:endPage 39 ;
-    ns3:numPages 6 ;
-    ns3:section <http://ceur-ws.org/Vol-880/#Session4UsingRankingforSelectionVisualizationandValorization> ;
-    ns3:startPage 34 ;
-    ns2:author <http://ceur-ws.org/Vol-880/#CongiYu>,
+<http://ceur-ws.org/Vol-880/#VLDS-p34-Christoforaki> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-880/> ;
+    ns3:title "Searching Social Updates for Topic-centric Entities" ;
+    ns4:endPage 39 ;
+    ns4:numPages 6 ;
+    ns4:section <http://ceur-ws.org/Vol-880/#Session4UsingRankingforSelectionVisualizationandValorization> ;
+    ns4:startPage 34 ;
+    ns5:author <http://ceur-ws.org/Vol-880/#CongiYu>,
         <http://ceur-ws.org/Vol-880/#IvieiErunse>,
         <http://ceur-ws.org/Vol-880/#MariaiChristoforaki> .
 
-<http://ceur-ws.org/Vol-880/#VLDS-p46-Bonetti> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-880/> ;
-    ns4:title "Designing a Revenue Mechanism for Federated Search Engines" ;
-    ns3:endPage 51 ;
-    ns3:numPages 6 ;
-    ns3:section <http://ceur-ws.org/Vol-880/#Session4UsingRankingforSelectionVisualizationandValorization> ;
-    ns3:startPage 46 ;
-    ns2:author <http://ceur-ws.org/Vol-880/#LauraiErnestaiBonetti>,
+<http://ceur-ws.org/Vol-880/#VLDS-p46-Bonetti> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-880/> ;
+    ns3:title "Designing a Revenue Mechanism for Federated Search Engines" ;
+    ns4:endPage 51 ;
+    ns4:numPages 6 ;
+    ns4:section <http://ceur-ws.org/Vol-880/#Session4UsingRankingforSelectionVisualizationandValorization> ;
+    ns4:startPage 46 ;
+    ns5:author <http://ceur-ws.org/Vol-880/#LauraiErnestaiBonetti>,
         <http://ceur-ws.org/Vol-880/#NicolaiGatti>,
         <http://ceur-ws.org/Vol-880/#SofiaiCeppi> .
 
-<http://ceur-ws.org/Vol-880/#VLDS-preface> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-880/> ;
-    ns4:title "Preface" ;
-    ns3:endPage 2 ;
-    ns3:numPages 2 ;
-    ns3:startPage 1 ;
-    ns2:author <http://ceur-ws.org/Vol-880/#FabioiCasati>,
+<http://ceur-ws.org/Vol-880/#VLDS-preface> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-880/> ;
+    ns3:title "Preface" ;
+    ns4:endPage 2 ;
+    ns4:numPages 2 ;
+    ns4:startPage 1 ;
+    ns5:author <http://ceur-ws.org/Vol-880/#FabioiCasati>,
         <http://ceur-ws.org/Vol-880/#MarcoiBrambilla>,
         <http://ceur-ws.org/Vol-880/#StefanoiCeri> .
 
-<http://ceur-ws.org/Vol-880/#Session3DataExtractionandLinking> a ns5:SessionEvent ;
-    ns5:partOf <http://ceur-ws.org/Vol-880/> ;
-    ns4:title "Session 3: Data Extraction and Linking" .
+<http://ceur-ws.org/Vol-880/#Session3DataExtractionandLinking> a ns2:SessionEvent ;
+    ns2:partOf <http://ceur-ws.org/Vol-880/> ;
+    ns3:title "Session 3: Data Extraction and Linking" .
 
-<http://ceur-ws.org/Vol-880/#VLDS-p03-Cohen> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-880/> ;
-    ns4:title "On Principles of Egocentric Person Search in Social Networks" ;
-    ns3:endPage 6 ;
-    ns3:numPages 4 ;
-    ns3:section <http://ceur-ws.org/Vol-880/#Session2PersonalandSocialSearch> ;
-    ns3:startPage 3 ;
-    ns2:author <http://ceur-ws.org/Vol-880/#BennyiKimelfeld>,
+<http://ceur-ws.org/Vol-880/#VLDS-p03-Cohen> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-880/> ;
+    ns3:title "On Principles of Egocentric Person Search in Social Networks" ;
+    ns4:endPage 6 ;
+    ns4:numPages 4 ;
+    ns4:section <http://ceur-ws.org/Vol-880/#Session2PersonalandSocialSearch> ;
+    ns4:startPage 3 ;
+    ns5:author <http://ceur-ws.org/Vol-880/#BennyiKimelfeld>,
         <http://ceur-ws.org/Vol-880/#GeorgiaiKoutrika>,
         <http://ceur-ws.org/Vol-880/#JaniVondrak>,
         <http://ceur-ws.org/Vol-880/#SaraiCohen> .
 
-<http://ceur-ws.org/Vol-880/#VLDS-p23-Blanco> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-880/> ;
-    ns4:title "Contextual Data Extraction and Instance-Based Integration" ;
-    ns3:endPage 29 ;
-    ns3:numPages 7 ;
-    ns3:section <http://ceur-ws.org/Vol-880/#Session3DataExtractionandLinking> ;
-    ns3:startPage 23 ;
-    ns2:author <http://ceur-ws.org/Vol-880/#LorenzoiBlanco>,
+<http://ceur-ws.org/Vol-880/#VLDS-p23-Blanco> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-880/> ;
+    ns3:title "Contextual Data Extraction and Instance-Based Integration" ;
+    ns4:endPage 29 ;
+    ns4:numPages 7 ;
+    ns4:section <http://ceur-ws.org/Vol-880/#Session3DataExtractionandLinking> ;
+    ns4:startPage 23 ;
+    ns5:author <http://ceur-ws.org/Vol-880/#LorenzoiBlanco>,
         <http://ceur-ws.org/Vol-880/#PaoloiMerialdo>,
         <http://ceur-ws.org/Vol-880/#PaoloiPapotti>,
         <http://ceur-ws.org/Vol-880/#ValteriCrescenzi> .
 
-<http://ceur-ws.org/Vol-880/#VLDS-p52-Bozzon> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-880/> ;
-    ns4:title "Dynamic Visualizations for Multi-Domain Search Results" ;
-    ns3:endPage 57 ;
-    ns3:numPages 6 ;
-    ns3:section <http://ceur-ws.org/Vol-880/#Session5NewandNewsApplications> ;
-    ns3:startPage 52 ;
-    ns2:author <http://ceur-ws.org/Vol-880/#AlessandroiBozzon>,
+<http://ceur-ws.org/Vol-880/#VLDS-p52-Bozzon> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-880/> ;
+    ns3:title "Dynamic Visualizations for Multi-Domain Search Results" ;
+    ns4:endPage 57 ;
+    ns4:numPages 6 ;
+    ns4:section <http://ceur-ws.org/Vol-880/#Session5NewandNewsApplications> ;
+    ns4:startPage 52 ;
+    ns5:author <http://ceur-ws.org/Vol-880/#AlessandroiBozzon>,
         <http://ceur-ws.org/Vol-880/#LucaiCioria>,
         <http://ceur-ws.org/Vol-880/#MaristellaiMatera>,
         <http://ceur-ws.org/Vol-880/#PieroiFraternali> .
 
-<http://ceur-ws.org/Vol-880/#VLDS-p30-Goasdoue> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-880/> ;
-    ns4:title "Growing Triples on Trees: an XML-RDF Hybrid Model for Annotated Documents" ;
-    ns3:endPage 33 ;
-    ns3:numPages 4 ;
-    ns3:section <http://ceur-ws.org/Vol-880/#Session3DataExtractionandLinking> ;
-    ns3:startPage 30 ;
-    ns2:author <http://ceur-ws.org/Vol-880/#FrancoisiGoasdoue>,
+<http://ceur-ws.org/Vol-880/#VLDS-p30-Goasdoue> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-880/> ;
+    ns3:title "Growing Triples on Trees: an XML-RDF Hybrid Model for Annotated Documents" ;
+    ns4:endPage 33 ;
+    ns4:numPages 4 ;
+    ns4:section <http://ceur-ws.org/Vol-880/#Session3DataExtractionandLinking> ;
+    ns4:startPage 30 ;
+    ns5:author <http://ceur-ws.org/Vol-880/#FrancoisiGoasdoue>,
         <http://ceur-ws.org/Vol-880/#IoanaiManolescu>,
         <http://ceur-ws.org/Vol-880/#JulieniLeblay>,
         <http://ceur-ws.org/Vol-880/#KonstantinosiKaranasos>,
         <http://ceur-ws.org/Vol-880/#StamatisiZampetakis>,
         <http://ceur-ws.org/Vol-880/#YannisiKatsis> .
 
-<http://ceur-ws.org/Vol-880/#VLDS-p58-Furche> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-880/> ;
-    ns4:title "Search Computing Meets Data Extraction" ;
-    ns3:endPage 61 ;
-    ns3:numPages 4 ;
-    ns3:section <http://ceur-ws.org/Vol-880/#Session5NewandNewsApplications> ;
-    ns3:startPage 58 ;
-    ns2:author <http://ceur-ws.org/Vol-880/#AlessandroiBozzon>,
+<http://ceur-ws.org/Vol-880/#VLDS-p58-Furche> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-880/> ;
+    ns3:title "Search Computing Meets Data Extraction" ;
+    ns4:endPage 61 ;
+    ns4:numPages 4 ;
+    ns4:section <http://ceur-ws.org/Vol-880/#Session5NewandNewsApplications> ;
+    ns4:startPage 58 ;
+    ns5:author <http://ceur-ws.org/Vol-880/#AlessandroiBozzon>,
         <http://ceur-ws.org/Vol-880/#ChiaraiPasini>,
         <http://ceur-ws.org/Vol-880/#GiorgioiOrsi>,
         <http://ceur-ws.org/Vol-880/#LucaiTettamanti>,
         <http://ceur-ws.org/Vol-880/#SalvatoreiVadacca>,
         <http://ceur-ws.org/Vol-880/#TimiFurche> .
 
-<http://ceur-ws.org/Vol-880/#VLDS-p62-Louis> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-880/> ;
-    ns4:title "Use of Query Similarity for Improving Presentation of News Verticals" ;
-    ns3:endPage 67 ;
-    ns3:numPages 6 ;
-    ns3:section <http://ceur-ws.org/Vol-880/#Session5NewandNewsApplications> ;
-    ns3:startPage 62 ;
-    ns2:author <http://ceur-ws.org/Vol-880/#AnnieiLouis>,
+<http://ceur-ws.org/Vol-880/#VLDS-p62-Louis> a ns2:Paper ;
+    ns2:partOf <http://ceur-ws.org/Vol-880/> ;
+    ns3:title "Use of Query Similarity for Improving Presentation of News Verticals" ;
+    ns4:endPage 67 ;
+    ns4:numPages 6 ;
+    ns4:section <http://ceur-ws.org/Vol-880/#Session5NewandNewsApplications> ;
+    ns4:startPage 62 ;
+    ns5:author <http://ceur-ws.org/Vol-880/#AnnieiLouis>,
         <http://ceur-ws.org/Vol-880/#EriciCrestan>,
         <http://ceur-ws.org/Vol-880/#FernandoiDiaz>,
         <http://ceur-ws.org/Vol-880/#Jean-FrancoisiCrespo>,
         <http://ceur-ws.org/Vol-880/#RaoiShen>,
         <http://ceur-ws.org/Vol-880/#YoussefiBillawala> .
 
-<http://ceur-ws.org/Vol-880/> a ns5:Proceedings ;
-    ns5:hasPart <http://ceur-ws.org/Vol-880/#VLDS-p03-Cohen>,
+<http://ceur-ws.org/Vol-880/> a ns2:Proceedings ;
+    ns2:hasPart <http://ceur-ws.org/Vol-880/#VLDS-p03-Cohen>,
         <http://ceur-ws.org/Vol-880/#VLDS-p07-Morishima>,
         <http://ceur-ws.org/Vol-880/#VLDS-p11-Castano>,
         <http://ceur-ws.org/Vol-880/#VLDS-p17-Mulwad>,
@@ -452,13 +458,13 @@
         <http://ceur-ws.org/Vol-880/#VLDS-p58-Furche>,
         <http://ceur-ws.org/Vol-880/#VLDS-p62-Louis>,
         <http://ceur-ws.org/Vol-880/#VLDS-preface> ;
-    ns5:hasSession <http://ceur-ws.org/Vol-880/#Session2PersonalandSocialSearch>,
+    ns2:hasSession <http://ceur-ws.org/Vol-880/#Session2PersonalandSocialSearch>,
         <http://ceur-ws.org/Vol-880/#Session3DataExtractionandLinking>,
         <http://ceur-ws.org/Vol-880/#Session4UsingRankingforSelectionVisualizationandValorization>,
         <http://ceur-ws.org/Vol-880/#Session5NewandNewsApplications> ;
-    ns8:issued "2012-08-09T00:00:00+00:00"^^xsd:dateTime ;
-    ns3:presentedAt <http://ceur-ws.org/Vol-880/#event> ;
-    ns2:editor <http://ceur-ws.org/Vol-880/#FabioiCasati>,
+    ns9:issued "2012-08-09T00:00:00+00:00"^^xsd:dateTime ;
+    ns4:presentedAt <http://ceur-ws.org/Vol-880/#event> ;
+    ns5:editor <http://ceur-ws.org/Vol-880/#FabioiCasati>,
         <http://ceur-ws.org/Vol-880/#MarcoiBrambilla>,
         <http://ceur-ws.org/Vol-880/#StefanoiCeri> .
 

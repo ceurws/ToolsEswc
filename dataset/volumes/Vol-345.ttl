@@ -1,40 +1,47 @@
-@prefix ns1: <http://xmlns.com/foaf/0.1/> .
+@prefix ns1: <http://data.semanticweb.org/ns/swc/ontology/#> .
 @prefix ns2: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns3: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns3: <http://purl.org/NET/c4dm/timeline.owl#> .
 @prefix ns4: <http://www.w3.org/2002/07/owl#> .
-@prefix ns5: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns5: <http://purl.org/ontology/bibo/#> .
 @prefix ns6: <http://purl.org/dc/elements/1.1/> .
-@prefix ns7: <http://purl.org/ontology/bibo/#> .
+@prefix ns7: <http://xmlns.com/foaf/0.1/> .
 @prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns9: <http://purl.org/dc/elements/1.1/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-345/> a ns3:Proceedings ;
+<http://ceur-ws.org/Vol-345/> a ns1:Proceedings ;
     ns8:issued "2008-05-16T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:presentedAt <http://ceur-ws.org/Vol-345/#event> ;
+    ns5:presentedAt <http://ceur-ws.org/Vol-345/#event> ;
     ns2:editor <http://ceur-ws.org/Vol-345/#JamesiOhene-Djan>,
         <http://ceur-ws.org/Vol-345/#MarioniHershiiDepartmentiofiComputingGoldsmithsiCollegeUniversityiofiLondonSE>,
         <http://ceur-ws.org/Vol-345/#WALTDiwasiheldiiniconjunctioniwithithe> .
 
-<http://ceur-ws.org/Vol-345/#JamesiOhene-Djan> a ns1:Person ;
+<http://ceur-ws.org/Vol-345/#JamesiOhene-Djan> a ns7:Person ;
     ns4:sameAs <http://ceur-ws.org/persons/JamesiOhene-Djan> ;
-    ns1:name "James Ohene-Djan" .
+    ns7:name "James Ohene-Djan" .
 
-<http://ceur-ws.org/Vol-345/#MarioniHershiiDepartmentiofiComputingGoldsmithsiCollegeUniversityiofiLondonSE> a ns1:Person ;
+<http://ceur-ws.org/Vol-345/#MarioniHershiiDepartmentiofiComputingGoldsmithsiCollegeUniversityiofiLondonSE> a ns7:Person ;
     ns4:sameAs <http://ceur-ws.org/persons/MarioniHershiiDepartmentiofiComputingGoldsmithsiCollegeUniversityiofiLondonSE> ;
-    ns1:name "Marion Hersh  Department of ComputingGoldsmiths CollegeUniversity of LondonSE" .
+    ns7:name "Marion Hersh  Department of ComputingGoldsmiths CollegeUniversity of LondonSE" .
 
-<http://ceur-ws.org/Vol-345/#WALTDiwasiheldiiniconjunctioniwithithe> a ns1:Person ;
+<http://ceur-ws.org/Vol-345/#WALTDiwasiheldiiniconjunctioniwithithe> a ns7:Person ;
     ns4:sameAs <http://ceur-ws.org/persons/WALTDiwasiheldiiniconjunctioniwithithe> ;
-    ns1:name "WALTD was held in conjunction with the" .
+    ns7:name "WALTD was held in conjunction with the" .
 
-<http://ceur-ws.org/Vol-345/#event> a ns3:WorkshopEvent ;
-    ns3:hasLocation <http://dbpedia.org/resource/Spain> ;
-    ns3:hasPart <http://ceur-ws.org/Vol-345/#part-WALTD> ;
-    ns3:isSubEventOf <http://ceur-ws.org/Vol-345/#conf> ;
-    ns5:beginsAtDatetime "2008-07-01T00:00:00+00:00"^^xsd:dateTime ;
-    ns5:endsAtDatetime "2008-07-05T00:00:00+00:00"^^xsd:dateTime ;
+<http://ceur-ws.org/Vol-345/#event> a ns1:WorkshopEvent ;
+    ns1:hasLocation <http://dbpedia.org/resource/Spain> ;
+    ns1:hasPart <http://ceur-ws.org/Vol-345/#part-WALTD> ;
+    ns1:isSubEventOf <http://ceur-ws.org/Vol-345/#conf> ;
+    ns3:beginsAtDatetime "2008-07-01T00:00:00+00:00"^^xsd:dateTime ;
+    ns3:endsAtDatetime "2008-07-05T00:00:00+00:00"^^xsd:dateTime ;
     ns6:license "http://choosealicense.com/licenses/no-license/" .
+
+<http://ceur-ws.org/Vol-345/#part-WALTD> a ns5:Workshop ;
+    ns1:partOf <http://ceur-ws.org/series/WALTD> ;
+    ns9:title "Advanced Learning Technologies for Disabled and Non-Disabled People 2008" ;
+    ns5:shortTitle "WALTD" ;
+    ns2:edition 1 .
 

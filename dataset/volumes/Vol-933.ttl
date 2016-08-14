@@ -1,12 +1,12 @@
-@prefix ns1: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns1: <http://purl.org/dc/elements/1.1/#> .
 @prefix ns2: <http://xmlns.com/foaf/0.1/> .
-@prefix ns3: <http://purl.org/ontology/bibo/#> .
+@prefix ns3: <http://data.semanticweb.org/ns/swc/ontology/#> .
 @prefix ns4: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns5: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns5: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix ns6: <http://www.w3.org/2002/07/owl#> .
 @prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns8: <http://purl.org/dc/elements/1.1/> .
-@prefix ns9: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns8: <http://purl.org/ontology/bibo/#> .
+@prefix ns9: <http://purl.org/dc/elements/1.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -167,111 +167,117 @@
     ns6:sameAs <http://ceur-ws.org/persons/UlfiSeigerroth> ;
     ns2:name "Ulf Seigerroth" .
 
-<http://ceur-ws.org/Vol-933/#event> a ns1:WorkshopEvent ;
-    ns1:hasLocation <http://dbpedia.org/resource/Germany> ;
-    ns1:hasPart <http://ceur-ws.org/Vol-933/#part-PoEM> ;
-    ns1:isSubEventOf <http://ceur-ws.org/Vol-933/#conf> ;
+<http://ceur-ws.org/Vol-933/#event> a ns3:WorkshopEvent ;
+    ns3:hasLocation <http://dbpedia.org/resource/Germany> ;
+    ns3:hasPart <http://ceur-ws.org/Vol-933/#part-PoEM> ;
+    ns3:isSubEventOf <http://ceur-ws.org/Vol-933/#conf> ;
     ns7:beginsAtDatetime "2012-11-07T00:00:00+00:00"^^xsd:dateTime ;
     ns7:endsAtDatetime "2012-11-08T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:license "http://choosealicense.com/licenses/no-license/" .
+    ns9:license "http://choosealicense.com/licenses/no-license/" .
 
-<http://ceur-ws.org/Vol-933/#pap8> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-933/> ;
-    ns5:title "Deconstructing abilities - in search for an ability viewpoint" ;
-    ns3:section <http://ceur-ws.org/Vol-933/#Session2SocialandHumanAspects> ;
+<http://ceur-ws.org/Vol-933/#part-PoEM> a ns8:Workshop ;
+    ns3:partOf <http://ceur-ws.org/series/PoEM> ;
+    ns1:title "PoEM Short Papers 2012" ;
+    ns8:shortTitle "PoEM" ;
+    ns4:edition 5 .
+
+<http://ceur-ws.org/Vol-933/#pap8> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-933/> ;
+    ns1:title "Deconstructing abilities - in search for an ability viewpoint" ;
+    ns8:section <http://ceur-ws.org/Vol-933/#Session2SocialandHumanAspects> ;
     ns4:author <http://ceur-ws.org/Vol-933/#AndersiTell> .
 
-<http://ceur-ws.org/Vol-933/#pap11> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-933/> ;
-    ns5:title "Linking Strategic Innovation to Requirements: a look into Blue Ocean Strategy" ;
-    ns3:section <http://ceur-ws.org/Vol-933/#Session3EnterpriseModelinginUse> ;
+<http://ceur-ws.org/Vol-933/#pap11> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-933/> ;
+    ns1:title "Linking Strategic Innovation to Requirements: a look into Blue Ocean Strategy" ;
+    ns8:section <http://ceur-ws.org/Vol-933/#Session3EnterpriseModelinginUse> ;
     ns4:author <http://ceur-ws.org/Vol-933/#ConstantinosiGiannoulis>,
         <http://ceur-ws.org/Vol-933/#JelenaiZdravkovic> .
 
-<http://ceur-ws.org/Vol-933/#pap4> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-933/> ;
-    ns5:title "Enterprise Architecture Management - State of Research Analysis & A Comparison of Selected Approaches" ;
-    ns3:section <http://ceur-ws.org/Vol-933/#Session1EnterpriseModelingandEnterpriseArchitectureManagement> ;
+<http://ceur-ws.org/Vol-933/#pap4> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-933/> ;
+    ns1:title "Enterprise Architecture Management - State of Research Analysis & A Comparison of Selected Approaches" ;
+    ns8:section <http://ceur-ws.org/Vol-933/#Session1EnterpriseModelingandEnterpriseArchitectureManagement> ;
     ns4:author <http://ceur-ws.org/Vol-933/#AnnaiSonnenberger>,
         <http://ceur-ws.org/Vol-933/#MatthiasiWi%C3%9Fotzki> .
 
-<http://ceur-ws.org/Vol-933/#pap6> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-933/> ;
-    ns5:title "Towards a Framework for Schema Quality in the Schema Integration Process" ;
-    ns3:section <http://ceur-ws.org/Vol-933/#Session2SocialandHumanAspects> ;
+<http://ceur-ws.org/Vol-933/#pap6> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-933/> ;
+    ns1:title "Towards a Framework for Schema Quality in the Schema Integration Process" ;
+    ns8:section <http://ceur-ws.org/Vol-933/#Session2SocialandHumanAspects> ;
     ns4:author <http://ceur-ws.org/Vol-933/#ChristianiKops>,
         <http://ceur-ws.org/Vol-933/#PeteriBellstr%26oumlm> .
 
-<http://ceur-ws.org/Vol-933/#pap7> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-933/> ;
-    ns5:title "Reviving Language/Action Perspective in the Era of Social Software: Research in Progress" ;
-    ns3:section <http://ceur-ws.org/Vol-933/#Session2SocialandHumanAspects> ;
+<http://ceur-ws.org/Vol-933/#pap7> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-933/> ;
+    ns1:title "Reviving Language/Action Perspective in the Era of Social Software: Research in Progress" ;
+    ns8:section <http://ceur-ws.org/Vol-933/#Session2SocialandHumanAspects> ;
     ns4:author <http://ceur-ws.org/Vol-933/#ErikiPerjons>,
         <http://ceur-ws.org/Vol-933/#IliaiBider> .
 
-<http://ceur-ws.org/Vol-933/#pap9> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-933/> ;
-    ns5:title "The Application of EM for Knowledge Flow Analysis and the Development of an Educational IT Ecosystem" ;
-    ns3:section <http://ceur-ws.org/Vol-933/#Session3EnterpriseModelinginUse> ;
+<http://ceur-ws.org/Vol-933/#pap9> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-933/> ;
+    ns1:title "The Application of EM for Knowledge Flow Analysis and the Development of an Educational IT Ecosystem" ;
+    ns8:section <http://ceur-ws.org/Vol-933/#Session3EnterpriseModelinginUse> ;
     ns4:author <http://ceur-ws.org/Vol-933/#GintaiStale>,
         <http://ceur-ws.org/Vol-933/#IvarsiMajors> .
 
-<http://ceur-ws.org/Vol-933/#Session3EnterpriseModelinginUse> a ns1:SessionEvent ;
-    ns1:partOf <http://ceur-ws.org/Vol-933/> ;
-    ns5:title "Session 3: Enterprise Modeling in Use" .
+<http://ceur-ws.org/Vol-933/#Session3EnterpriseModelinginUse> a ns3:SessionEvent ;
+    ns3:partOf <http://ceur-ws.org/Vol-933/> ;
+    ns1:title "Session 3: Enterprise Modeling in Use" .
 
-<http://ceur-ws.org/Vol-933/#pap1> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-933/> ;
-    ns5:title "Comparative Analysis of the Implementation of Business Process Management in Public Administration in Germany and Switzerland" ;
-    ns3:section <http://ceur-ws.org/Vol-933/#Session1EnterpriseModelingandEnterpriseArchitectureManagement> ;
+<http://ceur-ws.org/Vol-933/#pap1> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-933/> ;
+    ns1:title "Comparative Analysis of the Implementation of Business Process Management in Public Administration in Germany and Switzerland" ;
+    ns8:section <http://ceur-ws.org/Vol-933/#Session1EnterpriseModelingandEnterpriseArchitectureManagement> ;
     ns4:author <http://ceur-ws.org/Vol-933/#HenrikiLeopold>,
         <http://ceur-ws.org/Vol-933/#KonradiWalser>,
         <http://ceur-ws.org/Vol-933/#NorbertiAhrend> .
 
-<http://ceur-ws.org/Vol-933/#pap2> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-933/> ;
-    ns5:title "Determining the Role of Abstraction and Executive Control in Process Modeling" ;
-    ns3:section <http://ceur-ws.org/Vol-933/#Session1EnterpriseModelingandEnterpriseArchitectureManagement> ;
+<http://ceur-ws.org/Vol-933/#pap2> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-933/> ;
+    ns1:title "Determining the Role of Abstraction and Executive Control in Process Modeling" ;
+    ns8:section <http://ceur-ws.org/Vol-933/#Session1EnterpriseModelingandEnterpriseArchitectureManagement> ;
     ns4:author <http://ceur-ws.org/Vol-933/#ErikiBarendsen>,
         <http://ceur-ws.org/Vol-933/#IlonaiWilmont>,
         <http://ceur-ws.org/Vol-933/#StijniHoppenbrouwers> .
 
-<http://ceur-ws.org/Vol-933/#pap3> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-933/> ;
-    ns5:title "Towards a coherent enterprise modelling landscape" ;
-    ns3:section <http://ceur-ws.org/Vol-933/#Session1EnterpriseModelingandEnterpriseArchitectureManagement> ;
+<http://ceur-ws.org/Vol-933/#pap3> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-933/> ;
+    ns1:title "Towards a coherent enterprise modelling landscape" ;
+    ns8:section <http://ceur-ws.org/Vol-933/#Session1EnterpriseModelingandEnterpriseArchitectureManagement> ;
     ns4:author <http://ceur-ws.org/Vol-933/#HenderikiProper>,
         <http://ceur-ws.org/Vol-933/#Jean-SebastieniSottet>,
         <http://ceur-ws.org/Vol-933/#MarijaiBjekovic> .
 
-<http://ceur-ws.org/Vol-933/#pap5> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-933/> ;
-    ns5:title "A Trust Ontology for Business Collaborations" ;
-    ns3:section <http://ceur-ws.org/Vol-933/#Session2SocialandHumanAspects> ;
+<http://ceur-ws.org/Vol-933/#pap5> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-933/> ;
+    ns1:title "A Trust Ontology for Business Collaborations" ;
+    ns8:section <http://ceur-ws.org/Vol-933/#Session2SocialandHumanAspects> ;
     ns4:author <http://ceur-ws.org/Vol-933/#HassaniFatemi>,
         <http://ceur-ws.org/Vol-933/#MarteniJ.iVaniSinderen>,
         <http://ceur-ws.org/Vol-933/#RoeliWieringa> .
 
-<http://ceur-ws.org/Vol-933/#Session1EnterpriseModelingandEnterpriseArchitectureManagement> a ns1:SessionEvent ;
-    ns1:partOf <http://ceur-ws.org/Vol-933/> ;
-    ns5:title "Session 1: Enterprise Modeling and Enterprise Architecture Management" .
+<http://ceur-ws.org/Vol-933/#Session1EnterpriseModelingandEnterpriseArchitectureManagement> a ns3:SessionEvent ;
+    ns3:partOf <http://ceur-ws.org/Vol-933/> ;
+    ns1:title "Session 1: Enterprise Modeling and Enterprise Architecture Management" .
 
-<http://ceur-ws.org/Vol-933/#Session2SocialandHumanAspects> a ns1:SessionEvent ;
-    ns1:partOf <http://ceur-ws.org/Vol-933/> ;
-    ns5:title "Session 2: Social and Human Aspects" .
+<http://ceur-ws.org/Vol-933/#Session2SocialandHumanAspects> a ns3:SessionEvent ;
+    ns3:partOf <http://ceur-ws.org/Vol-933/> ;
+    ns1:title "Session 2: Social and Human Aspects" .
 
-<http://ceur-ws.org/Vol-933/#pap10> a ns1:Paper ;
-    ns1:partOf <http://ceur-ws.org/Vol-933/> ;
-    ns5:title "Determining the Role of Enterprise Modeling for Respecting Regulations" ;
-    ns3:section <http://ceur-ws.org/Vol-933/#Session3EnterpriseModelinginUse> ;
+<http://ceur-ws.org/Vol-933/#pap10> a ns3:Paper ;
+    ns3:partOf <http://ceur-ws.org/Vol-933/> ;
+    ns1:title "Determining the Role of Enterprise Modeling for Respecting Regulations" ;
+    ns8:section <http://ceur-ws.org/Vol-933/#Session3EnterpriseModelinginUse> ;
     ns4:author <http://ceur-ws.org/Vol-933/#IlzeiBuksa>,
         <http://ceur-ws.org/Vol-933/#LigitaiBusinska>,
         <http://ceur-ws.org/Vol-933/#LudmilaiPenicina>,
         <http://ceur-ws.org/Vol-933/#MariteiKirikova>,
         <http://ceur-ws.org/Vol-933/#PeterisiRudzajs> .
 
-<http://ceur-ws.org/Vol-933/> a ns1:Proceedings ;
-    ns1:hasPart <http://ceur-ws.org/Vol-933/#pap1>,
+<http://ceur-ws.org/Vol-933/> a ns3:Proceedings ;
+    ns3:hasPart <http://ceur-ws.org/Vol-933/#pap1>,
         <http://ceur-ws.org/Vol-933/#pap10>,
         <http://ceur-ws.org/Vol-933/#pap11>,
         <http://ceur-ws.org/Vol-933/#pap2>,
@@ -282,11 +288,11 @@
         <http://ceur-ws.org/Vol-933/#pap7>,
         <http://ceur-ws.org/Vol-933/#pap8>,
         <http://ceur-ws.org/Vol-933/#pap9> ;
-    ns1:hasSession <http://ceur-ws.org/Vol-933/#Session1EnterpriseModelingandEnterpriseArchitectureManagement>,
+    ns3:hasSession <http://ceur-ws.org/Vol-933/#Session1EnterpriseModelingandEnterpriseArchitectureManagement>,
         <http://ceur-ws.org/Vol-933/#Session2SocialandHumanAspects>,
         <http://ceur-ws.org/Vol-933/#Session3EnterpriseModelinginUse> ;
-    ns9:issued "2012-10-31T00:00:00+00:00"^^xsd:dateTime ;
-    ns3:presentedAt <http://ceur-ws.org/Vol-933/#event> ;
+    ns5:issued "2012-10-31T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:presentedAt <http://ceur-ws.org/Vol-933/#event> ;
     ns4:editor <http://ceur-ws.org/Vol-933/#JanisiStirna>,
         <http://ceur-ws.org/Vol-933/#KurtiSandkuhl>,
         <http://ceur-ws.org/Vol-933/#UlfiSeigerroth> .

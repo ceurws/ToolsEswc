@@ -1,12 +1,12 @@
-@prefix ns1: <http://purl.org/ontology/bibo/#> .
+@prefix ns1: <http://purl.org/dc/elements/1.1/#> .
 @prefix ns2: <http://xmlns.com/foaf/0.1/> .
 @prefix ns3: <http://swrc.ontoware.org/ontology/#> .
 @prefix ns4: <http://www.w3.org/2002/07/owl#> .
-@prefix ns5: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns5: <http://purl.org/ontology/bibo/#> .
 @prefix ns6: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns7: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns8: <http://purl.org/dc/elements/1.1/> .
-@prefix ns9: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns9: <http://purl.org/dc/elements/1.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -23,7 +23,7 @@
     ns2:name "Christophe Senot" .
 
 <http://ceur-ws.org/Vol-585/#DavidiVallet> a ns2:Person ;
-    ns1:place <http://dbpedia.org/resource/Spain> ;
+    ns5:place <http://dbpedia.org/resource/Spain> ;
     ns3:affiliation "Universidad Autónoma de Madrid, Madrid" ;
     ns4:sameAs <http://ceur-ws.org/persons/DavidiVallet> ;
     ns2:name "David Vallet" .
@@ -34,7 +34,7 @@
     ns2:name "Djemel Ziou" .
 
 <http://ceur-ws.org/Vol-585/#FranciscoiM.iCarrero> a ns2:Person ;
-    ns1:place <http://dbpedia.org/resource/Spain> ;
+    ns5:place <http://dbpedia.org/resource/Spain> ;
     ns3:affiliation "Universidad Europea de Madrid, Madrid" ;
     ns4:sameAs <http://ceur-ws.org/persons/FranciscoiM.iCarrero> ;
     ns2:name "Francisco M. Carrero" .
@@ -50,7 +50,7 @@
     ns2:name "Hussein Zedan" .
 
 <http://ceur-ws.org/Vol-585/#Iv%C3%A1niCantador> a ns2:Person ;
-    ns1:place <http://dbpedia.org/resource/Spain> ;
+    ns5:place <http://dbpedia.org/resource/Spain> ;
     ns3:affiliation "Universidad Autónoma de Madrid, Madrid" ;
     ns4:sameAs <http://ceur-ws.org/persons/Iv%C3%A1niCantador> ;
     ns2:name "Iván Cantador" .
@@ -66,7 +66,7 @@
     ns2:name "John Krogstie" .
 
 <http://ceur-ws.org/Vol-585/#Jos%C3%A9iC.iCortizo> a ns2:Person ;
-    ns1:place <http://dbpedia.org/resource/Spain> ;
+    ns5:place <http://dbpedia.org/resource/Spain> ;
     ns3:affiliation "Universidad Europea de Madrid, Madrid" ;
     ns4:sameAs <http://ceur-ws.org/persons/Jos%C3%A9iC.iCortizo> ;
     ns2:name "José C. Cortizo" .
@@ -97,7 +97,7 @@
     ns2:name "Myriam Ribière" .
 
 <http://ceur-ws.org/Vol-585/#PeteriMika> a ns2:Person ;
-    ns1:place <http://dbpedia.org/resource/Spain> ;
+    ns5:place <http://dbpedia.org/resource/Spain> ;
     ns3:affiliation "Yahoo! Research, Barcelona" ;
     ns4:sameAs <http://ceur-ws.org/persons/PeteriMika> ;
     ns2:name "Peter Mika" .
@@ -141,101 +141,107 @@
     ns6:hasLocation <http://dbpedia.org/resource/Greece> ;
     ns6:hasPart <http://ceur-ws.org/Vol-585/#part-APRESW> ;
     ns6:isSubEventOf <http://ceur-ws.org/Vol-585/#conf> ;
-    ns9:beginsAtDatetime "2010-05-31T00:00:00+00:00"^^xsd:dateTime ;
-    ns9:endsAtDatetime "2010-05-31T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:license "http://choosealicense.com/licenses/no-license/" .
+    ns8:beginsAtDatetime "2010-05-31T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:endsAtDatetime "2010-05-31T00:00:00+00:00"^^xsd:dateTime ;
+    ns9:license "http://choosealicense.com/licenses/no-license/" .
+
+<http://ceur-ws.org/Vol-585/#part-APRESW> a ns5:Workshop ;
+    ns6:partOf <http://ceur-ws.org/series/APRESW> ;
+    ns1:title "Adaptation, Personalization and Recommendation in the Social-semantic Web 2010" ;
+    ns5:shortTitle "APRESW" ;
+    ns3:edition 1 .
 
 <http://ceur-ws.org/Vol-585/#InvitedTalk> a ns6:SessionEvent ;
     ns6:partOf <http://ceur-ws.org/Vol-585/> ;
-    ns7:title "Invited Talk" .
+    ns1:title "Invited Talk" .
 
 <http://ceur-ws.org/Vol-585/#keynote> a ns6:Paper ;
     ns6:partOf <http://ceur-ws.org/Vol-585/> ;
-    ns7:title "Interlinking Semantics, the Social Web, and the Real-world" ;
-    ns1:section <http://ceur-ws.org/Vol-585/#InvitedTalk> ;
+    ns1:title "Interlinking Semantics, the Social Web, and the Real-world" ;
+    ns5:section <http://ceur-ws.org/Vol-585/#InvitedTalk> ;
     ns3:author <http://ceur-ws.org/Vol-585/#HarithiAlani> .
 
 <http://ceur-ws.org/Vol-585/#paper7> a ns6:Paper ;
     ns6:partOf <http://ceur-ws.org/Vol-585/> ;
-    ns7:title "Applying a Multi-gated News Model to a Social Web" ;
-    ns1:endPage 64 ;
-    ns1:numPages 7 ;
-    ns1:section <http://ceur-ws.org/Vol-585/#Posters> ;
-    ns1:startPage 58 ;
+    ns1:title "Applying a Multi-gated News Model to a Social Web" ;
+    ns5:endPage 64 ;
+    ns5:numPages 7 ;
+    ns5:section <http://ceur-ws.org/Vol-585/#Posters> ;
+    ns5:startPage 58 ;
     ns3:author <http://ceur-ws.org/Vol-585/#Ying-YingiChen> .
 
 <http://ceur-ws.org/Vol-585/#PositionPapers> a ns6:SessionEvent ;
     ns6:partOf <http://ceur-ws.org/Vol-585/> ;
-    ns7:title "Position Papers" .
+    ns1:title "Position Papers" .
 
 <http://ceur-ws.org/Vol-585/#ResearchPapers> a ns6:SessionEvent ;
     ns6:partOf <http://ceur-ws.org/Vol-585/> ;
-    ns7:title "Research Papers" .
+    ns1:title "Research Papers" .
 
 <http://ceur-ws.org/Vol-585/#paper1> a ns6:Paper ;
     ns6:partOf <http://ceur-ws.org/Vol-585/> ;
-    ns7:title "Using Images in Context-Aware Recommender Systems" ;
-    ns1:endPage 12 ;
-    ns1:numPages 12 ;
-    ns1:section <http://ceur-ws.org/Vol-585/#ResearchPapers> ;
-    ns1:startPage 1 ;
+    ns1:title "Using Images in Context-Aware Recommender Systems" ;
+    ns5:endPage 12 ;
+    ns5:numPages 12 ;
+    ns5:section <http://ceur-ws.org/Vol-585/#ResearchPapers> ;
+    ns5:startPage 1 ;
     ns3:author <http://ceur-ws.org/Vol-585/#DjemeliZiou>,
         <http://ceur-ws.org/Vol-585/#SabriiBoutemedjet> .
 
 <http://ceur-ws.org/Vol-585/#paper2> a ns6:Paper ;
     ns6:partOf <http://ceur-ws.org/Vol-585/> ;
-    ns7:title "A Profile Ontology for Personalised Mobile Shopping Support" ;
-    ns1:endPage 24 ;
-    ns1:numPages 12 ;
-    ns1:section <http://ceur-ws.org/Vol-585/#ResearchPapers> ;
-    ns1:startPage 13 ;
+    ns1:title "A Profile Ontology for Personalised Mobile Shopping Support" ;
+    ns5:endPage 24 ;
+    ns5:numPages 12 ;
+    ns5:section <http://ceur-ws.org/Vol-585/#ResearchPapers> ;
+    ns5:startPage 13 ;
     ns3:author <http://ceur-ws.org/Vol-585/#JohniKrogstie>,
         <http://ceur-ws.org/Vol-585/#LillianiHella> .
 
 <http://ceur-ws.org/Vol-585/#Posters> a ns6:SessionEvent ;
     ns6:partOf <http://ceur-ws.org/Vol-585/> ;
-    ns7:title "Posters" .
+    ns1:title "Posters" .
 
 <http://ceur-ws.org/Vol-585/#paper3> a ns6:Paper ;
     ns6:partOf <http://ceur-ws.org/Vol-585/> ;
-    ns7:title "Beyond Life Streams: Activities and Intentions for Managing Personal Digital Memories" ;
-    ns1:endPage 32 ;
-    ns1:numPages 8 ;
-    ns1:section <http://ceur-ws.org/Vol-585/#PositionPapers> ;
-    ns1:startPage 25 ;
+    ns1:title "Beyond Life Streams: Activities and Intentions for Managing Personal Digital Memories" ;
+    ns5:endPage 32 ;
+    ns5:numPages 8 ;
+    ns5:section <http://ceur-ws.org/Vol-585/#PositionPapers> ;
+    ns5:startPage 25 ;
     ns3:author <http://ceur-ws.org/Vol-585/#ChristopheiSenot>,
         <http://ceur-ws.org/Vol-585/#J%C3%A9r%C3%B4meiPicault>,
         <http://ceur-ws.org/Vol-585/#MyriamiRibi%C3%A8re> .
 
 <http://ceur-ws.org/Vol-585/#paper4> a ns6:Paper ;
     ns6:partOf <http://ceur-ws.org/Vol-585/> ;
-    ns7:title "R3 - A Related Resource Recommender" ;
-    ns1:endPage 49 ;
-    ns1:numPages 17 ;
-    ns1:section <http://ceur-ws.org/Vol-585/#PositionPapers> ;
-    ns1:startPage 33 ;
+    ns1:title "R3 - A Related Resource Recommender" ;
+    ns5:endPage 49 ;
+    ns5:numPages 17 ;
+    ns5:section <http://ceur-ws.org/Vol-585/#PositionPapers> ;
+    ns5:startPage 33 ;
     ns3:author <http://ceur-ws.org/Vol-585/#RolfiSint>,
         <http://ceur-ws.org/Vol-585/#ThomasiKurz>,
         <http://ceur-ws.org/Vol-585/#TobiasiB%C3%BCrger> .
 
 <http://ceur-ws.org/Vol-585/#paper5> a ns6:Paper ;
     ns6:partOf <http://ceur-ws.org/Vol-585/> ;
-    ns7:title "Introduction to Fuzzy-Ontological Context-Aware Recommendations in Mobile Environments" ;
-    ns1:endPage 50 ;
-    ns1:numPages 11 ;
-    ns1:section <http://ceur-ws.org/Vol-585/#Posters> ;
-    ns1:startPage 40 ;
+    ns1:title "Introduction to Fuzzy-Ontological Context-Aware Recommendations in Mobile Environments" ;
+    ns5:endPage 50 ;
+    ns5:numPages 11 ;
+    ns5:section <http://ceur-ws.org/Vol-585/#Posters> ;
+    ns5:startPage 40 ;
     ns3:author <http://ceur-ws.org/Vol-585/#MurieliFoulonneau>,
         <http://ceur-ws.org/Vol-585/#ValentiniGroues>,
         <http://ceur-ws.org/Vol-585/#YannickiNaudet> .
 
 <http://ceur-ws.org/Vol-585/#paper6> a ns6:Paper ;
     ns6:partOf <http://ceur-ws.org/Vol-585/> ;
-    ns7:title "Towards a Multilingual Semantic Folksonomy" ;
-    ns1:endPage 57 ;
-    ns1:numPages 7 ;
-    ns1:section <http://ceur-ws.org/Vol-585/#Posters> ;
-    ns1:startPage 51 ;
+    ns1:title "Towards a Multilingual Semantic Folksonomy" ;
+    ns5:endPage 57 ;
+    ns5:numPages 7 ;
+    ns5:section <http://ceur-ws.org/Vol-585/#Posters> ;
+    ns5:startPage 51 ;
     ns3:author <http://ceur-ws.org/Vol-585/#AntonioiCau>,
         <http://ceur-ws.org/Vol-585/#HusseiniZedan>,
         <http://ceur-ws.org/Vol-585/#MartiniWard>,
@@ -254,8 +260,8 @@
         <http://ceur-ws.org/Vol-585/#PositionPapers>,
         <http://ceur-ws.org/Vol-585/#Posters>,
         <http://ceur-ws.org/Vol-585/#ResearchPapers> ;
-    ns5:issued "2010-05-25T00:00:00+00:00"^^xsd:dateTime ;
-    ns1:presentedAt <http://ceur-ws.org/Vol-585/#event> ;
+    ns7:issued "2010-05-25T00:00:00+00:00"^^xsd:dateTime ;
+    ns5:presentedAt <http://ceur-ws.org/Vol-585/#event> ;
     ns3:editor <http://ceur-ws.org/Vol-585/#DavidiVallet>,
         <http://ceur-ws.org/Vol-585/#FranciscoiM.iCarrero>,
         <http://ceur-ws.org/Vol-585/#Iv%C3%A1niCantador>,

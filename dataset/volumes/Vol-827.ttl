@@ -1,38 +1,39 @@
 @prefix ns1: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns2: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns3: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns4: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns2: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns3: <http://purl.org/dc/elements/1.1/> .
+@prefix ns4: <http://www.w3.org/2002/07/owl#> .
 @prefix ns5: <http://xmlns.com/foaf/0.1/> .
-@prefix ns6: <http://www.w3.org/2002/07/owl#> .
-@prefix ns7: <http://purl.org/dc/elements/1.1/> .
+@prefix ns6: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns7: <http://purl.org/dc/elements/1.1/#> .
 @prefix ns8: <http://purl.org/ontology/bibo/#> .
+@prefix ns9: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <http://ceur-ws.org/Vol-827/> a ns1:Proceedings ;
-    ns3:issued "2012-01-26T00:00:00+00:00"^^xsd:dateTime ;
+    ns9:issued "2012-01-26T00:00:00+00:00"^^xsd:dateTime ;
     ns8:presentedAt <http://ceur-ws.org/Vol-827/#event> ;
-    ns4:editor <http://ceur-ws.org/Vol-827/#JettyiKleijn>,
+    ns2:editor <http://ceur-ws.org/Vol-827/#JettyiKleijn>,
         <http://ceur-ws.org/Vol-827/#Jo%C3%A3oiM.iFernandes>,
         <http://ceur-ws.org/Vol-827/#RicardoiJ.iMachado>,
         <http://ceur-ws.org/Vol-827/#SusannaiDonatelli> .
 
 <http://ceur-ws.org/Vol-827/#JettyiKleijn> a ns5:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/JettyiKleijn> ;
+    ns4:sameAs <http://ceur-ws.org/persons/JettyiKleijn> ;
     ns5:name "Jetty Kleijn" .
 
 <http://ceur-ws.org/Vol-827/#Jo%C3%A3oiM.iFernandes> a ns5:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/Jo%C3%A3oiM.iFernandes> ;
+    ns4:sameAs <http://ceur-ws.org/persons/Jo%C3%A3oiM.iFernandes> ;
     ns5:name "João M. Fernandes" .
 
 <http://ceur-ws.org/Vol-827/#RicardoiJ.iMachado> a ns5:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/RicardoiJ.iMachado> ;
+    ns4:sameAs <http://ceur-ws.org/persons/RicardoiJ.iMachado> ;
     ns5:name "Ricardo J. Machado" .
 
 <http://ceur-ws.org/Vol-827/#SusannaiDonatelli> a ns5:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/SusannaiDonatelli> ;
+    ns4:sameAs <http://ceur-ws.org/persons/SusannaiDonatelli> ;
     ns5:name "Susanna Donatelli" .
 
 <http://ceur-ws.org/Vol-827/#event> a ns1:WorkshopEvent ;
@@ -41,7 +42,25 @@
         <http://ceur-ws.org/Vol-827/#part-NETS>,
         <http://ceur-ws.org/Vol-827/#part-PETRI> ;
     ns1:isSubEventOf <http://ceur-ws.org/Vol-827/#conf> ;
-    ns2:beginsAtDatetime "2010-06-01T00:00:00+00:00"^^xsd:dateTime ;
-    ns2:endsAtDatetime "2010-06-01T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:license "http://choosealicense.com/licenses/no-license/" .
+    ns6:beginsAtDatetime "2010-06-01T00:00:00+00:00"^^xsd:dateTime ;
+    ns6:endsAtDatetime "2010-06-01T00:00:00+00:00"^^xsd:dateTime ;
+    ns3:license "http://choosealicense.com/licenses/no-license/" .
+
+<http://ceur-ws.org/Vol-827/#part-ACSD> a ns8:Workshop ;
+    ns1:partOf <http://ceur-ws.org/series/ACSD> ;
+    ns7:title "Recent Advances in Petri Nets and Concurrency 2010" ;
+    ns8:shortTitle "ACSD" ;
+    ns2:edition 10 .
+
+<http://ceur-ws.org/Vol-827/#part-NETS> a ns8:Workshop ;
+    ns1:partOf <http://ceur-ws.org/series/NETS> ;
+    ns7:title "Recent Advances in Petri Nets and Concurrency 2010" ;
+    ns8:shortTitle "NETS" ;
+    ns2:edition 1 .
+
+<http://ceur-ws.org/Vol-827/#part-PETRI> a ns8:Workshop ;
+    ns1:partOf <http://ceur-ws.org/series/PETRI> ;
+    ns7:title "Recent Advances in Petri Nets and Concurrency 2010" ;
+    ns8:shortTitle "PETRI" ;
+    ns2:edition 31 .
 

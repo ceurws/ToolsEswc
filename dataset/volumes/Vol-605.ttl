@@ -1,11 +1,11 @@
 @prefix ns1: <http://xmlns.com/foaf/0.1/> .
-@prefix ns2: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns3: <http://purl.org/ontology/bibo/#> .
-@prefix ns4: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns5: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns2: <http://purl.org/ontology/bibo/#> .
+@prefix ns3: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns4: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns5: <http://data.semanticweb.org/ns/swc/ontology/#> .
 @prefix ns6: <http://www.w3.org/2002/07/owl#> .
-@prefix ns7: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns8: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
 @prefix ns9: <http://purl.org/dc/elements/1.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -33,7 +33,7 @@
     ns1:name "Carlo Marchetti" .
 
 <http://ceur-ws.org/Vol-605/#DanielaiTiscornia> a ns1:Person ;
-    ns2:affiliation "" ;
+    ns4:affiliation "" ;
     ns6:sameAs <http://ceur-ws.org/persons/DanielaiTiscornia> ;
     ns1:name "Daniela Tiscornia" .
 
@@ -73,8 +73,8 @@
     ns1:name "Paulo Quaresma" .
 
 <http://ceur-ws.org/Vol-605/#PiercarloiRossi> a ns1:Person ;
-    ns3:place <http://dbpedia.org/resource/Italy> ;
-    ns2:affiliation "University of Oriental Piedmont" ;
+    ns2:place <http://dbpedia.org/resource/Italy> ;
+    ns4:affiliation "University of Oriental Piedmont" ;
     ns6:sameAs <http://ceur-ws.org/persons/PiercarloiRossi> ;
     ns1:name "Piercarlo Rossi" .
 
@@ -113,15 +113,21 @@
     ns1:made <http://ceur-ws.org/Vol-605/#paper6> ;
     ns1:name "Valeria de Paiva" .
 
-<http://ceur-ws.org/Vol-605/#event> a ns4:WorkshopEvent ;
-    ns4:hasLocation <http://dbpedia.org/resource/Italy> ;
-    ns4:hasPart <http://ceur-ws.org/Vol-605/#part-LOAIT> ;
-    ns4:isSubEventOf <http://ceur-ws.org/Vol-605/#conf> ;
-    ns7:beginsAtDatetime "2010-07-07T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:endsAtDatetime "2010-07-07T00:00:00+00:00"^^xsd:dateTime ;
+<http://ceur-ws.org/Vol-605/#event> a ns5:WorkshopEvent ;
+    ns5:hasLocation <http://dbpedia.org/resource/Italy> ;
+    ns5:hasPart <http://ceur-ws.org/Vol-605/#part-LOAIT> ;
+    ns5:isSubEventOf <http://ceur-ws.org/Vol-605/#conf> ;
+    ns8:beginsAtDatetime "2010-07-07T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:endsAtDatetime "2010-07-07T00:00:00+00:00"^^xsd:dateTime ;
     ns9:license "http://choosealicense.com/licenses/no-license/" ;
     rdfs:seeAlso <http://ceur-ws.org/Vol-321/#event>,
         <http://ceur-ws.org/Vol-465/#event> .
+
+<http://ceur-ws.org/Vol-605/#part-LOAIT> a ns2:Workshop ;
+    ns5:partOf <http://ceur-ws.org/series/LOAIT> ;
+    ns3:title "Legal Ontologies and Artificial Intelligence Techniques 2010" ;
+    ns2:shortTitle "LOAIT" ;
+    ns4:edition 4 .
 
 <http://ceur-ws.org/Vol-605/#AdamiWyner> a ns1:Person ;
     ns6:sameAs <http://ceur-ws.org/persons/AdamiWyner> ;
@@ -130,122 +136,122 @@
     ns1:name "Adam Wyner" .
 
 <http://ceur-ws.org/Vol-605/#EnricoiFrancesconi> a ns1:Person ;
-    ns2:affiliation "" ;
+    ns4:affiliation "" ;
     ns6:sameAs <http://ceur-ws.org/persons/EnricoiFrancesconi> ;
     ns1:made <http://ceur-ws.org/Vol-605/#paper5> ;
     ns1:name "Enrico Francesconi" .
 
 <http://ceur-ws.org/Vol-605/#SimonettaiMontemagni> a ns1:Person ;
-    ns3:place <http://dbpedia.org/resource/Italy> ;
-    ns2:affiliation "ILC-CNR -- Institute of Computational Linguistics" ;
+    ns2:place <http://dbpedia.org/resource/Italy> ;
+    ns4:affiliation "ILC-CNR -- Institute of Computational Linguistics" ;
     ns6:sameAs <http://ceur-ws.org/persons/SimonettaiMontemagni> ;
     ns1:made <http://ceur-ws.org/Vol-605/#paper4> ;
     ns1:name "Simonetta Montemagni" .
 
-<http://ceur-ws.org/Vol-605/#paper1> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-605/> ;
-    ns5:title "Towards Annotating and Extracting Textual Legal Case Elements" ;
-    ns3:endPage 18 ;
-    ns3:numPages 10 ;
-    ns3:section <http://ceur-ws.org/Vol-605/#SectionILegalKnowledgeExtraction> ;
-    ns3:startPage 9 ;
-    ns2:author <http://ceur-ws.org/Vol-605/#AdamiWyner> .
+<http://ceur-ws.org/Vol-605/#paper1> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-605/> ;
+    ns3:title "Towards Annotating and Extracting Textual Legal Case Elements" ;
+    ns2:endPage 18 ;
+    ns2:numPages 10 ;
+    ns2:section <http://ceur-ws.org/Vol-605/#SectionILegalKnowledgeExtraction> ;
+    ns2:startPage 9 ;
+    ns4:author <http://ceur-ws.org/Vol-605/#AdamiWyner> .
 
-<http://ceur-ws.org/Vol-605/#paper7> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-605/> ;
-    ns5:title "An Ontological Representation of EU Consular Law" ;
-    ns3:endPage 86 ;
-    ns3:numPages 10 ;
-    ns3:section <http://ceur-ws.org/Vol-605/#SectionIILegalKnowledgeModelling> ;
-    ns3:startPage 77 ;
-    ns2:author <http://ceur-ws.org/Vol-605/#ErichiSchweighofer> .
+<http://ceur-ws.org/Vol-605/#paper7> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-605/> ;
+    ns3:title "An Ontological Representation of EU Consular Law" ;
+    ns2:endPage 86 ;
+    ns2:numPages 10 ;
+    ns2:section <http://ceur-ws.org/Vol-605/#SectionIILegalKnowledgeModelling> ;
+    ns2:startPage 77 ;
+    ns4:author <http://ceur-ws.org/Vol-605/#ErichiSchweighofer> .
 
-<http://ceur-ws.org/Vol-605/#paper2> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-605/> ;
-    ns5:title "Suggesting Model Fragments for Sentences in Dutch Law" ;
-    ns3:endPage 28 ;
-    ns3:numPages 10 ;
-    ns3:section <http://ceur-ws.org/Vol-605/#SectionILegalKnowledgeExtraction> ;
-    ns3:startPage 19 ;
-    ns2:author <http://ceur-ws.org/Vol-605/#EmileideiMaat>,
+<http://ceur-ws.org/Vol-605/#paper2> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-605/> ;
+    ns3:title "Suggesting Model Fragments for Sentences in Dutch Law" ;
+    ns2:endPage 28 ;
+    ns2:numPages 10 ;
+    ns2:section <http://ceur-ws.org/Vol-605/#SectionILegalKnowledgeExtraction> ;
+    ns2:startPage 19 ;
+    ns4:author <http://ceur-ws.org/Vol-605/#EmileideiMaat>,
         <http://ceur-ws.org/Vol-605/#RadboudiWinkels> .
 
-<http://ceur-ws.org/Vol-605/#paper3> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-605/> ;
-    ns5:title "Multilingual Text Classification through Combination of Monolingual Classifiers" ;
-    ns3:endPage 38 ;
-    ns3:numPages 10 ;
-    ns3:section <http://ceur-ws.org/Vol-605/#SectionILegalKnowledgeExtraction> ;
-    ns3:startPage 29 ;
-    ns2:author <http://ceur-ws.org/Vol-605/#PauloiQuaresma>,
+<http://ceur-ws.org/Vol-605/#paper3> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-605/> ;
+    ns3:title "Multilingual Text Classification through Combination of Monolingual Classifiers" ;
+    ns2:endPage 38 ;
+    ns2:numPages 10 ;
+    ns2:section <http://ceur-ws.org/Vol-605/#SectionILegalKnowledgeExtraction> ;
+    ns2:startPage 29 ;
+    ns4:author <http://ceur-ws.org/Vol-605/#PauloiQuaresma>,
         <http://ceur-ws.org/Vol-605/#TeresaiGon%C3%A7alves> .
 
-<http://ceur-ws.org/Vol-605/#paper8> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-605/> ;
-    ns5:title "What do you Mean? Arguing for Meaning" ;
-    ns3:endPage 94 ;
-    ns3:numPages 8 ;
-    ns3:section <http://ceur-ws.org/Vol-605/#SectionIILegalKnowledgeModelling> ;
-    ns3:startPage 87 ;
-    ns2:author <http://ceur-ws.org/Vol-605/#AdamiWyner>,
+<http://ceur-ws.org/Vol-605/#paper8> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-605/> ;
+    ns3:title "What do you Mean? Arguing for Meaning" ;
+    ns2:endPage 94 ;
+    ns2:numPages 8 ;
+    ns2:section <http://ceur-ws.org/Vol-605/#SectionIILegalKnowledgeModelling> ;
+    ns2:startPage 87 ;
+    ns4:author <http://ceur-ws.org/Vol-605/#AdamiWyner>,
         <http://ceur-ws.org/Vol-605/#TomivaniEngers> .
 
-<http://ceur-ws.org/Vol-605/#paper6> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-605/> ;
-    ns5:title "Using Intuitionistic Logic as a basis for Legal Ontologies" ;
-    ns3:endPage 76 ;
-    ns3:numPages 8 ;
-    ns3:section <http://ceur-ws.org/Vol-605/#SectionIILegalKnowledgeModelling> ;
-    ns3:startPage 69 ;
-    ns2:author <http://ceur-ws.org/Vol-605/#AlexandreiRademaker>,
+<http://ceur-ws.org/Vol-605/#paper6> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-605/> ;
+    ns3:title "Using Intuitionistic Logic as a basis for Legal Ontologies" ;
+    ns2:endPage 76 ;
+    ns2:numPages 8 ;
+    ns2:section <http://ceur-ws.org/Vol-605/#SectionIILegalKnowledgeModelling> ;
+    ns2:startPage 69 ;
+    ns4:author <http://ceur-ws.org/Vol-605/#AlexandreiRademaker>,
         <http://ceur-ws.org/Vol-605/#EdwardiHermanniHaeusler>,
         <http://ceur-ws.org/Vol-605/#ValeriaideiPaiva> .
 
-<http://ceur-ws.org/Vol-605/#paper9> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-605/> ;
-    ns5:title "Ontologies, ICTs and Law. The International Ontojuris Project" ;
-    ns3:endPage 102 ;
-    ns3:numPages 8 ;
-    ns3:section <http://ceur-ws.org/Vol-605/#SectionIILegalKnowledgeModelling> ;
-    ns3:startPage 95 ;
-    ns2:author <http://ceur-ws.org/Vol-605/#AnaiHayd%C3%A9eiDiiIorio>,
+<http://ceur-ws.org/Vol-605/#paper9> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-605/> ;
+    ns3:title "Ontologies, ICTs and Law. The International Ontojuris Project" ;
+    ns2:endPage 102 ;
+    ns2:numPages 8 ;
+    ns2:section <http://ceur-ws.org/Vol-605/#SectionIILegalKnowledgeModelling> ;
+    ns2:startPage 95 ;
+    ns4:author <http://ceur-ws.org/Vol-605/#AnaiHayd%C3%A9eiDiiIorio>,
         <http://ceur-ws.org/Vol-605/#BibianaiBeatriziLuziClara>,
         <http://ceur-ws.org/Vol-605/#RobertoiGiordanoiLerena> .
 
-<http://ceur-ws.org/Vol-605/#SectionILegalKnowledgeExtraction> a ns4:SessionEvent ;
-    ns4:partOf <http://ceur-ws.org/Vol-605/> ;
-    ns5:title "Section I - Legal Knowledge Extraction" .
+<http://ceur-ws.org/Vol-605/#SectionILegalKnowledgeExtraction> a ns5:SessionEvent ;
+    ns5:partOf <http://ceur-ws.org/Vol-605/> ;
+    ns3:title "Section I - Legal Knowledge Extraction" .
 
-<http://ceur-ws.org/Vol-605/#paper4> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-605/> ;
-    ns5:title "Singling out Legal Knowledge from World Knowledge. An NLP-based approach" ;
-    ns3:endPage 50 ;
-    ns3:numPages 12 ;
-    ns3:section <http://ceur-ws.org/Vol-605/#SectionILegalKnowledgeExtraction> ;
-    ns3:startPage 39 ;
-    ns2:author <http://ceur-ws.org/Vol-605/#FeliceiDell%27Orletta>,
+<http://ceur-ws.org/Vol-605/#paper4> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-605/> ;
+    ns3:title "Singling out Legal Knowledge from World Knowledge. An NLP-based approach" ;
+    ns2:endPage 50 ;
+    ns2:numPages 12 ;
+    ns2:section <http://ceur-ws.org/Vol-605/#SectionILegalKnowledgeExtraction> ;
+    ns2:startPage 39 ;
+    ns4:author <http://ceur-ws.org/Vol-605/#FeliceiDell%27Orletta>,
         <http://ceur-ws.org/Vol-605/#FrancescaiBonin>,
         <http://ceur-ws.org/Vol-605/#GiuliaiVenturi>,
         <http://ceur-ws.org/Vol-605/#SimonettaiMontemagni> .
 
-<http://ceur-ws.org/Vol-605/#paper5> a ns4:Paper ;
-    ns4:partOf <http://ceur-ws.org/Vol-605/> ;
-    ns5:title "A URN Standard for Legal Document Ontology: a Best Practice in the Italian Senate" ;
-    ns3:endPage 68 ;
-    ns3:numPages 16 ;
-    ns3:section <http://ceur-ws.org/Vol-605/#SectionIILegalKnowledgeModelling> ;
-    ns3:startPage 53 ;
-    ns2:author <http://ceur-ws.org/Vol-605/#CarloiMarchetti>,
+<http://ceur-ws.org/Vol-605/#paper5> a ns5:Paper ;
+    ns5:partOf <http://ceur-ws.org/Vol-605/> ;
+    ns3:title "A URN Standard for Legal Document Ontology: a Best Practice in the Italian Senate" ;
+    ns2:endPage 68 ;
+    ns2:numPages 16 ;
+    ns2:section <http://ceur-ws.org/Vol-605/#SectionIILegalKnowledgeModelling> ;
+    ns2:startPage 53 ;
+    ns4:author <http://ceur-ws.org/Vol-605/#CarloiMarchetti>,
         <http://ceur-ws.org/Vol-605/#EnricoiFrancesconi>,
         <http://ceur-ws.org/Vol-605/#PierluigiiSpinosa>,
         <http://ceur-ws.org/Vol-605/#RemigioiPietramala> .
 
-<http://ceur-ws.org/Vol-605/#SectionIILegalKnowledgeModelling> a ns4:SessionEvent ;
-    ns4:partOf <http://ceur-ws.org/Vol-605/> ;
-    ns5:title "Section II - Legal Knowledge Modelling" .
+<http://ceur-ws.org/Vol-605/#SectionIILegalKnowledgeModelling> a ns5:SessionEvent ;
+    ns5:partOf <http://ceur-ws.org/Vol-605/> ;
+    ns3:title "Section II - Legal Knowledge Modelling" .
 
-<http://ceur-ws.org/Vol-605/> a ns4:Proceedings ;
-    ns4:hasPart <http://ceur-ws.org/Vol-605/#paper1>,
+<http://ceur-ws.org/Vol-605/> a ns5:Proceedings ;
+    ns5:hasPart <http://ceur-ws.org/Vol-605/#paper1>,
         <http://ceur-ws.org/Vol-605/#paper2>,
         <http://ceur-ws.org/Vol-605/#paper3>,
         <http://ceur-ws.org/Vol-605/#paper4>,
@@ -254,11 +260,11 @@
         <http://ceur-ws.org/Vol-605/#paper7>,
         <http://ceur-ws.org/Vol-605/#paper8>,
         <http://ceur-ws.org/Vol-605/#paper9> ;
-    ns4:hasSession <http://ceur-ws.org/Vol-605/#SectionIILegalKnowledgeModelling>,
+    ns5:hasSession <http://ceur-ws.org/Vol-605/#SectionIILegalKnowledgeModelling>,
         <http://ceur-ws.org/Vol-605/#SectionILegalKnowledgeExtraction> ;
-    ns8:issued "2010-06-29T00:00:00+00:00"^^xsd:dateTime ;
-    ns3:presentedAt <http://ceur-ws.org/Vol-605/#event> ;
-    ns2:editor <http://ceur-ws.org/Vol-605/#DanielaiTiscornia>,
+    ns7:issued "2010-06-29T00:00:00+00:00"^^xsd:dateTime ;
+    ns2:presentedAt <http://ceur-ws.org/Vol-605/#event> ;
+    ns4:editor <http://ceur-ws.org/Vol-605/#DanielaiTiscornia>,
         <http://ceur-ws.org/Vol-605/#EnricoiFrancesconi>,
         <http://ceur-ws.org/Vol-605/#PiercarloiRossi>,
         <http://ceur-ws.org/Vol-605/#SimonettaiMontemagni> .

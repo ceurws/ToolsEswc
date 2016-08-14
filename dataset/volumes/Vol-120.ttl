@@ -1,37 +1,44 @@
-@prefix ns1: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns2: <http://purl.org/ontology/bibo/#> .
-@prefix ns3: <http://www.w3.org/2002/07/owl#> .
-@prefix ns4: <http://purl.org/dc/elements/1.1/> .
-@prefix ns5: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns6: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns7: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns8: <http://xmlns.com/foaf/0.1/> .
+@prefix ns1: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns2: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns3: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns4: <http://xmlns.com/foaf/0.1/> .
+@prefix ns5: <http://www.w3.org/2002/07/owl#> .
+@prefix ns6: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns8: <http://purl.org/ontology/bibo/#> .
+@prefix ns9: <http://purl.org/dc/elements/1.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<http://ceur-ws.org/Vol-120/> a ns1:Proceedings ;
-    ns6:issued "2004-11-24T00:00:00+00:00"^^xsd:dateTime ;
-    ns2:presentedAt <http://ceur-ws.org/Vol-120/#event> ;
-    ns7:editor <http://ceur-ws.org/Vol-120/#IsabeliRamosiRom%C3%A1n>,
+<http://ceur-ws.org/Vol-120/> a ns2:Proceedings ;
+    ns7:issued "2004-11-24T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:presentedAt <http://ceur-ws.org/Vol-120/#event> ;
+    ns1:editor <http://ceur-ws.org/Vol-120/#IsabeliRamosiRom%C3%A1n>,
         <http://ceur-ws.org/Vol-120/#Jos%C3%A9iJavieriDolado> .
 
-<http://ceur-ws.org/Vol-120/#IsabeliRamosiRom%C3%A1n> a ns8:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/IsabeliRamosiRom%C3%A1n> ;
-    ns8:name "Isabel Ramos Román" .
+<http://ceur-ws.org/Vol-120/#IsabeliRamosiRom%C3%A1n> a ns4:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/IsabeliRamosiRom%C3%A1n> ;
+    ns4:name "Isabel Ramos Román" .
 
-<http://ceur-ws.org/Vol-120/#Jos%C3%A9iJavieriDolado> a ns8:Person ;
-    ns3:sameAs <http://ceur-ws.org/persons/Jos%C3%A9iJavieriDolado> ;
-    ns8:name "José Javier Dolado" .
+<http://ceur-ws.org/Vol-120/#Jos%C3%A9iJavieriDolado> a ns4:Person ;
+    ns5:sameAs <http://ceur-ws.org/persons/Jos%C3%A9iJavieriDolado> ;
+    ns4:name "José Javier Dolado" .
 
-<http://ceur-ws.org/Vol-120/#event> a ns1:WorkshopEvent ;
-    ns1:hasLocation <http://dbpedia.org/resource/Spain> ;
-    ns1:hasPart <http://ceur-ws.org/Vol-120/#part-ADIS> ;
-    ns1:isSubEventOf <http://ceur-ws.org/Vol-120/#conf> ;
-    ns5:beginsAtDatetime "2004-11-09T00:00:00+00:00"^^xsd:dateTime ;
-    ns5:endsAtDatetime "2004-11-09T00:00:00+00:00"^^xsd:dateTime ;
-    ns4:license "http://choosealicense.com/licenses/no-license/" ;
+<http://ceur-ws.org/Vol-120/#event> a ns2:WorkshopEvent ;
+    ns2:hasLocation <http://dbpedia.org/resource/Spain> ;
+    ns2:hasPart <http://ceur-ws.org/Vol-120/#part-ADIS> ;
+    ns2:isSubEventOf <http://ceur-ws.org/Vol-120/#conf> ;
+    ns3:beginsAtDatetime "2004-11-09T00:00:00+00:00"^^xsd:dateTime ;
+    ns3:endsAtDatetime "2004-11-09T00:00:00+00:00"^^xsd:dateTime ;
+    ns9:license "http://choosealicense.com/licenses/no-license/" ;
     rdfs:seeAlso <http://ceur-ws.org/Vol-84/#event>,
         <http://ceur-ws.org/Vol-88/#event> .
+
+<http://ceur-ws.org/Vol-120/#part-ADIS> a ns8:Workshop ;
+    ns2:partOf <http://ceur-ws.org/series/ADIS> ;
+    ns6:title "Decision Support in Software Engineering 2004" ;
+    ns8:shortTitle "ADIS" ;
+    ns1:edition 5 .
 

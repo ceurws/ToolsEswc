@@ -1,12 +1,12 @@
 @prefix ns1: <http://xmlns.com/foaf/0.1/> .
 @prefix ns2: <http://www.w3.org/2002/07/owl#> .
 @prefix ns3: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns4: <http://purl.org/ontology/bibo/#> .
-@prefix ns5: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns4: <http://data.semanticweb.org/ns/swc/ontology/#> .
+@prefix ns5: <http://purl.org/ontology/bibo/#> .
 @prefix ns6: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns7: <http://purl.org/dc/elements/1.1/> .
+@prefix ns7: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns9: <http://dublincore.org/documents/dcmi-terms/#> .
+@prefix ns9: <http://purl.org/dc/elements/1.1/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -192,16 +192,22 @@
     ns1:made <http://ceur-ws.org/Vol-962/#paper07> ;
     ns1:name "Yung En Chee" .
 
-<http://ceur-ws.org/Vol-962/#event> a ns5:WorkshopEvent ;
-    ns5:hasLocation <http://dbpedia.org/resource/Iceland> ;
-    ns5:hasPart <http://ceur-ws.org/Vol-962/#part-BMAW> ;
-    ns5:isSubEventOf <http://ceur-ws.org/Vol-962/#conf> ;
+<http://ceur-ws.org/Vol-962/#event> a ns4:WorkshopEvent ;
+    ns4:hasLocation <http://dbpedia.org/resource/Iceland> ;
+    ns4:hasPart <http://ceur-ws.org/Vol-962/#part-BMAW> ;
+    ns4:isSubEventOf <http://ceur-ws.org/Vol-962/#conf> ;
     ns8:beginsAtDatetime "2012-08-18T00:00:00+00:00"^^xsd:dateTime ;
     ns8:endsAtDatetime "2012-08-18T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:license "http://choosealicense.com/licenses/no-license/" ;
+    ns9:license "http://choosealicense.com/licenses/no-license/" ;
     rdfs:seeAlso <http://ceur-ws.org/Vol-268/#event>,
         <http://ceur-ws.org/Vol-406/#event>,
         <http://ceur-ws.org/Vol-818/#event> .
+
+<http://ceur-ws.org/Vol-962/#part-BMAW> a ns5:Workshop ;
+    ns4:partOf <http://ceur-ws.org/series/BMAW> ;
+    ns6:title "Bayesian Modeling Applications Workshop 2012" ;
+    ns5:shortTitle "BMAW" ;
+    ns3:edition 9 .
 
 <http://ceur-ws.org/Vol-962/#AnniNicholson> a ns1:Person ;
     ns3:affiliation "" ;
@@ -209,104 +215,104 @@
     ns1:made <http://ceur-ws.org/Vol-962/#paper07> ;
     ns1:name "Ann Nicholson" .
 
-<http://ceur-ws.org/Vol-962/#paper10> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-962/> ;
+<http://ceur-ws.org/Vol-962/#paper10> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-962/> ;
     ns6:title "On Approximate Inference of Dynamic Latent Classification Models for Oil Drilling Monitoring" ;
-    ns4:endPage 91 ;
-    ns4:numPages 8 ;
-    ns4:startPage 84 ;
+    ns5:endPage 91 ;
+    ns5:numPages 8 ;
+    ns5:startPage 84 ;
     ns3:author <http://ceur-ws.org/Vol-962/#ShengtongiZhong> .
 
-<http://ceur-ws.org/Vol-962/#paper01> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-962/> ;
+<http://ceur-ws.org/Vol-962/#paper01> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-962/> ;
     ns6:title "Using POMDPs to Forecast Kindergarten Students' Reading Comprehension" ;
-    ns4:endPage 7 ;
-    ns4:numPages 7 ;
-    ns4:startPage 1 ;
+    ns5:endPage 7 ;
+    ns5:numPages 7 ;
+    ns5:startPage 1 ;
     ns3:author <http://ceur-ws.org/Vol-962/#RusselliAlmond>,
         <http://ceur-ws.org/Vol-962/#StephanieiAliOrtaiba>,
         <http://ceur-ws.org/Vol-962/#UmitiTokac> .
 
-<http://ceur-ws.org/Vol-962/#paper06> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-962/> ;
+<http://ceur-ws.org/Vol-962/#paper06> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-962/> ;
     ns6:title "Reactive Bayesian Network Computation using Feedback Control: An Empirical Study" ;
-    ns4:endPage 54 ;
-    ns4:numPages 11 ;
-    ns4:startPage 44 ;
+    ns5:endPage 54 ;
+    ns5:numPages 11 ;
+    ns5:startPage 44 ;
     ns3:author <http://ceur-ws.org/Vol-962/#AbeiIshihara>,
         <http://ceur-ws.org/Vol-962/#ErikiReed>,
         <http://ceur-ws.org/Vol-962/#OleiMengshoel> .
 
-<http://ceur-ws.org/Vol-962/#paper07> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-962/> ;
+<http://ceur-ws.org/Vol-962/#paper07> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-962/> ;
     ns6:title "A State-Transition DBN for Management of Willows in an American Heritage River Catchment" ;
-    ns4:endPage 64 ;
-    ns4:numPages 10 ;
-    ns4:startPage 55 ;
+    ns5:endPage 64 ;
+    ns5:numPages 10 ;
+    ns5:startPage 55 ;
     ns3:author <http://ceur-ws.org/Vol-962/#AnniNicholson>,
         <http://ceur-ws.org/Vol-962/#PedroiQuintana-Ascencio>,
         <http://ceur-ws.org/Vol-962/#YungiEniChee> .
 
-<http://ceur-ws.org/Vol-962/#paper08> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-962/> ;
+<http://ceur-ws.org/Vol-962/#paper08> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-962/> ;
     ns6:title "Conjoint Modeling of Temporal Dependencies in Event Streams" ;
-    ns4:endPage 73 ;
-    ns4:numPages 9 ;
-    ns4:startPage 65 ;
+    ns5:endPage 73 ;
+    ns5:numPages 9 ;
+    ns5:startPage 65 ;
     ns3:author <http://ceur-ws.org/Vol-962/#AnkuriParikh>,
         <http://ceur-ws.org/Vol-962/#AselaiGunawardana>,
         <http://ceur-ws.org/Vol-962/#ChrisiMeek> .
 
-<http://ceur-ws.org/Vol-962/#paper09> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-962/> ;
+<http://ceur-ws.org/Vol-962/#paper09> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-962/> ;
     ns6:title "Topics Over Nonparametric Time: A Supervised Topic Model Using Bayesian Nonparametric Density Estimation" ;
-    ns4:endPage 83 ;
-    ns4:numPages 10 ;
-    ns4:startPage 74 ;
+    ns5:endPage 83 ;
+    ns5:numPages 10 ;
+    ns5:startPage 74 ;
     ns3:author <http://ceur-ws.org/Vol-962/#DanieliWalker>,
         <http://ceur-ws.org/Vol-962/#EriciRingger>,
         <http://ceur-ws.org/Vol-962/#KeviniSeppi> .
 
-<http://ceur-ws.org/Vol-962/#paper03> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-962/> ;
+<http://ceur-ws.org/Vol-962/#paper03> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-962/> ;
     ns6:title "Goal-Based Person Tracking Using a First-Order Probabilistic Model" ;
-    ns4:endPage 25 ;
-    ns4:numPages 8 ;
-    ns4:startPage 18 ;
+    ns5:endPage 25 ;
+    ns5:numPages 8 ;
+    ns5:startPage 18 ;
     ns3:author <http://ceur-ws.org/Vol-962/#KlausiDietmayer>,
         <http://ceur-ws.org/Vol-962/#StephaniReuter>,
         <http://ceur-ws.org/Vol-962/#SusanneiBiundo>,
         <http://ceur-ws.org/Vol-962/#ThomasiGeier> .
 
-<http://ceur-ws.org/Vol-962/#paper05> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-962/> ;
+<http://ceur-ws.org/Vol-962/#paper05> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-962/> ;
     ns6:title "Incorporating Metadata into Dynamic Topic Analysis" ;
-    ns4:endPage 43 ;
-    ns4:numPages 10 ;
-    ns4:startPage 34 ;
+    ns5:endPage 43 ;
+    ns5:numPages 10 ;
+    ns5:startPage 34 ;
     ns3:author <http://ceur-ws.org/Vol-962/#AshwiniKashyap>,
         <http://ceur-ws.org/Vol-962/#BranislaviKveton>,
         <http://ceur-ws.org/Vol-962/#TianxiiLi>,
         <http://ceur-ws.org/Vol-962/#YuiWu> .
 
-<http://ceur-ws.org/Vol-962/#paper04> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-962/> ;
+<http://ceur-ws.org/Vol-962/#paper04> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-962/> ;
     ns6:title "Contrasting Temporal Bayesian Network Models for Analyzing HIV Mutations" ;
-    ns4:endPage 33 ;
-    ns4:numPages 8 ;
-    ns4:startPage 26 ;
+    ns5:endPage 33 ;
+    ns5:numPages 8 ;
+    ns5:startPage 26 ;
     ns3:author <http://ceur-ws.org/Vol-962/#AlmaiRios-Flores>,
         <http://ceur-ws.org/Vol-962/#JesusiA.iGonzalez>,
         <http://ceur-ws.org/Vol-962/#L.iEnriqueiSucar>,
         <http://ceur-ws.org/Vol-962/#LindseyiFiedleriCameras>,
         <http://ceur-ws.org/Vol-962/#PabloiHernandez-Leal> .
 
-<http://ceur-ws.org/Vol-962/#paper02> a ns5:Paper ;
-    ns5:partOf <http://ceur-ws.org/Vol-962/> ;
+<http://ceur-ws.org/Vol-962/#paper02> a ns4:Paper ;
+    ns4:partOf <http://ceur-ws.org/Vol-962/> ;
     ns6:title "High-Level Information Fusion with Bayesian Semantics" ;
-    ns4:endPage 17 ;
-    ns4:numPages 10 ;
-    ns4:startPage 8 ;
+    ns5:endPage 17 ;
+    ns5:numPages 10 ;
+    ns5:startPage 8 ;
     ns3:author <http://ceur-ws.org/Vol-962/#CheoliPark>,
         <http://ceur-ws.org/Vol-962/#KathryniLaskey>,
         <http://ceur-ws.org/Vol-962/#KuochuiChang>,
@@ -314,8 +320,8 @@
         <http://ceur-ws.org/Vol-962/#ShouiMatsumoto>,
         <http://ceur-ws.org/Vol-962/#WeiiSun> .
 
-<http://ceur-ws.org/Vol-962/> a ns5:Proceedings ;
-    ns5:hasPart <http://ceur-ws.org/Vol-962/#paper01>,
+<http://ceur-ws.org/Vol-962/> a ns4:Proceedings ;
+    ns4:hasPart <http://ceur-ws.org/Vol-962/#paper01>,
         <http://ceur-ws.org/Vol-962/#paper02>,
         <http://ceur-ws.org/Vol-962/#paper03>,
         <http://ceur-ws.org/Vol-962/#paper04>,
@@ -325,8 +331,8 @@
         <http://ceur-ws.org/Vol-962/#paper08>,
         <http://ceur-ws.org/Vol-962/#paper09>,
         <http://ceur-ws.org/Vol-962/#paper10> ;
-    ns9:issued "2013-02-12T00:00:00+00:00"^^xsd:dateTime ;
-    ns4:presentedAt <http://ceur-ws.org/Vol-962/#event> ;
+    ns7:issued "2013-02-12T00:00:00+00:00"^^xsd:dateTime ;
+    ns5:presentedAt <http://ceur-ws.org/Vol-962/#event> ;
     ns3:editor <http://ceur-ws.org/Vol-962/#AnniNicholson>,
         <http://ceur-ws.org/Vol-962/#JohniMarkiAgosta>,
         <http://ceur-ws.org/Vol-962/#M.iJuliaiFlores> .

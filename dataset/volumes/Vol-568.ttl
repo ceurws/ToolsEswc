@@ -1,11 +1,12 @@
 @prefix ns1: <http://dublincore.org/documents/dcmi-terms/#> .
-@prefix ns2: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns3: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns2: <http://swrc.ontoware.org/ontology/#> .
+@prefix ns3: <http://purl.org/dc/elements/1.1/> .
 @prefix ns4: <http://data.semanticweb.org/ns/swc/ontology/#> .
-@prefix ns5: <http://purl.org/dc/elements/1.1/> .
-@prefix ns6: <http://www.w3.org/2002/07/owl#> .
-@prefix ns7: <http://purl.org/ontology/bibo/#> .
-@prefix ns8: <http://xmlns.com/foaf/0.1/> .
+@prefix ns5: <http://purl.org/NET/c4dm/timeline.owl#> .
+@prefix ns6: <http://xmlns.com/foaf/0.1/> .
+@prefix ns7: <http://www.w3.org/2002/07/owl#> .
+@prefix ns8: <http://purl.org/ontology/bibo/#> .
+@prefix ns9: <http://purl.org/dc/elements/1.1/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
@@ -13,24 +14,30 @@
 
 <http://ceur-ws.org/Vol-568/> a ns4:Proceedings ;
     ns1:issued "2010-03-18T00:00:00+00:00"^^xsd:dateTime ;
-    ns7:presentedAt <http://ceur-ws.org/Vol-568/#event> ;
-    ns3:editor <http://ceur-ws.org/Vol-568/#AnnetteiteniTeije>,
+    ns8:presentedAt <http://ceur-ws.org/Vol-568/#event> ;
+    ns2:editor <http://ceur-ws.org/Vol-568/#AnnetteiteniTeije>,
         <http://ceur-ws.org/Vol-568/#HeineriStuckenschmidt> .
 
-<http://ceur-ws.org/Vol-568/#AnnetteiteniTeije> a ns8:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/AnnetteiteniTeije> ;
-    ns8:name "Annette ten Teije" .
+<http://ceur-ws.org/Vol-568/#AnnetteiteniTeije> a ns6:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/AnnetteiteniTeije> ;
+    ns6:name "Annette ten Teije" .
 
-<http://ceur-ws.org/Vol-568/#HeineriStuckenschmidt> a ns8:Person ;
-    ns6:sameAs <http://ceur-ws.org/persons/HeineriStuckenschmidt> ;
-    ns8:name "Heiner Stuckenschmidt" .
+<http://ceur-ws.org/Vol-568/#HeineriStuckenschmidt> a ns6:Person ;
+    ns7:sameAs <http://ceur-ws.org/persons/HeineriStuckenschmidt> ;
+    ns6:name "Heiner Stuckenschmidt" .
 
 <http://ceur-ws.org/Vol-568/#event> a ns4:WorkshopEvent ;
     ns4:hasLocation <http://dbpedia.org/resource/Greece> ;
     ns4:hasPart <http://ceur-ws.org/Vol-568/#part-ESWC> ;
     ns4:isSubEventOf <http://ceur-ws.org/Vol-568/#conf> ;
-    ns2:beginsAtDatetime "2010-05-01T00:00:00+00:00"^^xsd:dateTime ;
-    ns2:endsAtDatetime "2010-05-01T00:00:00+00:00"^^xsd:dateTime ;
-    ns5:license "http://choosealicense.com/licenses/no-license/" ;
+    ns5:beginsAtDatetime "2010-05-01T00:00:00+00:00"^^xsd:dateTime ;
+    ns5:endsAtDatetime "2010-05-01T00:00:00+00:00"^^xsd:dateTime ;
+    ns3:license "http://choosealicense.com/licenses/no-license/" ;
     rdfs:seeAlso <http://ceur-ws.org/Vol-367/#event> .
+
+<http://ceur-ws.org/Vol-568/#part-ESWC> a ns8:Workshop ;
+    ns4:partOf <http://ceur-ws.org/series/ESWC> ;
+    ns9:title "Poster Track of the ESWC-10 PhD Symposium" ;
+    ns8:shortTitle "ESWC" ;
+    ns2:edition 1 .
 

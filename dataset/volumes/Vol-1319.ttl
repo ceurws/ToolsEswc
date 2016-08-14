@@ -1,11 +1,11 @@
 @prefix ns1: <http://xmlns.com/foaf/0.1/> .
-@prefix ns2: <http://purl.org/ontology/bibo/#> .
+@prefix ns2: <http://swrc.ontoware.org/ontology/#> .
 @prefix ns3: <http://data.semanticweb.org/ns/swc/ontology/#> .
 @prefix ns4: <http://www.w3.org/2002/07/owl#> .
-@prefix ns5: <http://swrc.ontoware.org/ontology/#> .
-@prefix ns6: <http://purl.org/NET/c4dm/timeline.owl#> .
-@prefix ns7: <http://purl.org/dc/elements/1.1/#> .
-@prefix ns8: <http://purl.org/dc/elements/1.1/> .
+@prefix ns5: <http://purl.org/dc/elements/1.1/#> .
+@prefix ns6: <http://purl.org/ontology/bibo/#> .
+@prefix ns7: <http://purl.org/dc/elements/1.1/> .
+@prefix ns8: <http://purl.org/NET/c4dm/timeline.owl#> .
 @prefix ns9: <http://dublincore.org/documents/dcmi-terms/#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -161,92 +161,98 @@
     ns3:hasLocation <http://dbpedia.org/resource/United_Kingdom> ;
     ns3:hasPart <http://ceur-ws.org/Vol-1319/#part-MORSE> ;
     ns3:isSubEventOf <http://ceur-ws.org/Vol-1319/#conf> ;
-    ns6:beginsAtDatetime "2014-07-21T00:00:00+00:00"^^xsd:dateTime ;
-    ns6:endsAtDatetime "2014-07-21T00:00:00+00:00"^^xsd:dateTime ;
-    ns8:license "http://creativecommons.org/publicdomain/zero/1.0/" .
+    ns8:beginsAtDatetime "2014-07-21T00:00:00+00:00"^^xsd:dateTime ;
+    ns8:endsAtDatetime "2014-07-21T00:00:00+00:00"^^xsd:dateTime ;
+    ns7:license "http://creativecommons.org/publicdomain/zero/1.0/" .
+
+<http://ceur-ws.org/Vol-1319/#part-MORSE> a ns6:Workshop ;
+    ns3:partOf <http://ceur-ws.org/series/MORSE> ;
+    ns5:title "Model-Driven Robot Software Engineering 2014" ;
+    ns6:shortTitle "MORSE" ;
+    ns2:edition 1 .
 
 <http://ceur-ws.org/Vol-1319/#GerdiWagner> a ns1:Person ;
-    ns2:place <http://dbpedia.org/resource/Germany> ;
-    ns5:affiliation "Brandenburgische Technische Universität Cottbus-Senftenberg" ;
+    ns6:place <http://dbpedia.org/resource/Germany> ;
+    ns2:affiliation "Brandenburgische Technische Universität Cottbus-Senftenberg" ;
     ns4:sameAs <http://ceur-ws.org/persons/GerdiWagner> ;
     ns1:made <http://ceur-ws.org/Vol-1319/#morse14_paper_03> ;
     ns1:name "Gerd Wagner" .
 
 <http://ceur-ws.org/Vol-1319/#UweiA%C3%9Fmann> a ns1:Person ;
-    ns2:place <http://dbpedia.org/resource/Germany> ;
-    ns5:affiliation "Technische Universität Dresden" ;
+    ns6:place <http://dbpedia.org/resource/Germany> ;
+    ns2:affiliation "Technische Universität Dresden" ;
     ns4:sameAs <http://ceur-ws.org/persons/UweiA%C3%9Fmann> ;
     ns1:made <http://ceur-ws.org/Vol-1319/#morse14_paper_04> ;
     ns1:name "Uwe Aßmann" .
 
 <http://ceur-ws.org/Vol-1319/#morse14_paper_03> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-1319/> ;
-    ns7:title "Towards a General Framework for Modeling, Simulating and Building Sensor/Actuator Systems and Robots for the Web of Things" ;
-    ns2:endPage 41 ;
-    ns2:numPages 12 ;
-    ns2:startPage 30 ;
-    ns5:author <http://ceur-ws.org/Vol-1319/#GerdiWagner>,
+    ns5:title "Towards a General Framework for Modeling, Simulating and Building Sensor/Actuator Systems and Robots for the Web of Things" ;
+    ns6:endPage 41 ;
+    ns6:numPages 12 ;
+    ns6:startPage 30 ;
+    ns2:author <http://ceur-ws.org/Vol-1319/#GerdiWagner>,
         <http://ceur-ws.org/Vol-1319/#Ion-MirceaiDiaconescu> .
 
 <http://ceur-ws.org/Vol-1319/#morse14_paper_02> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-1319/> ;
-    ns7:title "A Family of Domain-Specific Languages for Specifying Civilian Missions of Multi-Robot Systems" ;
-    ns2:endPage 29 ;
-    ns2:numPages 14 ;
-    ns2:startPage 16 ;
-    ns5:author <http://ceur-ws.org/Vol-1319/#DavideiDiiRuscio>,
+    ns5:title "A Family of Domain-Specific Languages for Specifying Civilian Missions of Multi-Robot Systems" ;
+    ns6:endPage 29 ;
+    ns6:numPages 14 ;
+    ns6:startPage 16 ;
+    ns2:author <http://ceur-ws.org/Vol-1319/#DavideiDiiRuscio>,
         <http://ceur-ws.org/Vol-1319/#IvanoiMalavolta>,
         <http://ceur-ws.org/Vol-1319/#PatrizioiPelliccione> .
 
 <http://ceur-ws.org/Vol-1319/#morse14_paper_07> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-1319/> ;
-    ns7:title "Empirical Study of Planning and Execution for Large Teams of Robots" ;
-    ns2:endPage 90 ;
-    ns2:numPages 13 ;
-    ns2:startPage 78 ;
-    ns5:author <http://ceur-ws.org/Vol-1319/#DanieliSaur>,
+    ns5:title "Empirical Study of Planning and Execution for Large Teams of Robots" ;
+    ns6:endPage 90 ;
+    ns6:numPages 13 ;
+    ns6:startPage 78 ;
+    ns2:author <http://ceur-ws.org/Vol-1319/#DanieliSaur>,
         <http://ceur-ws.org/Vol-1319/#KurtiGeihs>,
         <http://ceur-ws.org/Vol-1319/#TareqiRazauliHaque> .
 
 <http://ceur-ws.org/Vol-1319/#morse14_paper_08> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-1319/> ;
-    ns7:title "3DVFH+: Real-Time Three-Dimensional Obstacle Avoidance Using an Octomap" ;
-    ns2:endPage 102 ;
-    ns2:numPages 12 ;
-    ns2:startPage 91 ;
-    ns5:author <http://ceur-ws.org/Vol-1319/#BeniBellekens>,
+    ns5:title "3DVFH+: Real-Time Three-Dimensional Obstacle Avoidance Using an Octomap" ;
+    ns6:endPage 102 ;
+    ns6:numPages 12 ;
+    ns6:startPage 91 ;
+    ns2:author <http://ceur-ws.org/Vol-1319/#BeniBellekens>,
         <http://ceur-ws.org/Vol-1319/#MaarteniWeyn>,
         <http://ceur-ws.org/Vol-1319/#SimoniVanneste> .
 
 <http://ceur-ws.org/Vol-1319/#morse14_paper_05> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-1319/> ;
-    ns7:title "Experiences with an Approach to Abstract Handling of Content for Human Machine Interaction Applications" ;
-    ns2:endPage 65 ;
-    ns2:numPages 12 ;
-    ns2:startPage 54 ;
-    ns5:author <http://ceur-ws.org/Vol-1319/#Hans-JoachimiB%C3%B6hme>,
+    ns5:title "Experiences with an Approach to Abstract Handling of Content for Human Machine Interaction Applications" ;
+    ns6:endPage 65 ;
+    ns6:numPages 12 ;
+    ns6:startPage 54 ;
+    ns2:author <http://ceur-ws.org/Vol-1319/#Hans-JoachimiB%C3%B6hme>,
         <http://ceur-ws.org/Vol-1319/#JohannesiFonfara>,
         <http://ceur-ws.org/Vol-1319/#RichardiSchmidt>,
         <http://ceur-ws.org/Vol-1319/#SveniHellbach> .
 
 <http://ceur-ws.org/Vol-1319/#morse14_paper_06> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-1319/> ;
-    ns7:title "Code Generator Composition for Model-Driven Engineering of Robotics Component & Connector Systems" ;
-    ns2:endPage 77 ;
-    ns2:numPages 12 ;
-    ns2:startPage 66 ;
-    ns5:author <http://ceur-ws.org/Vol-1319/#AlexanderiRoth>,
+    ns5:title "Code Generator Composition for Model-Driven Engineering of Robotics Component & Connector Systems" ;
+    ns6:endPage 77 ;
+    ns6:numPages 12 ;
+    ns6:startPage 66 ;
+    ns2:author <http://ceur-ws.org/Vol-1319/#AlexanderiRoth>,
         <http://ceur-ws.org/Vol-1319/#AndreasiWortmann>,
         <http://ceur-ws.org/Vol-1319/#BernhardiRumpe>,
         <http://ceur-ws.org/Vol-1319/#JaniOliveriRingert> .
 
 <http://ceur-ws.org/Vol-1319/#morse14_paper_01> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-1319/> ;
-    ns7:title "Towards a Deep, Domain Specific Modeling Framework for Robot Applications" ;
-    ns2:endPage 15 ;
-    ns2:numPages 12 ;
-    ns2:startPage 4 ;
-    ns5:author <http://ceur-ws.org/Vol-1319/#AlexanderiEgurnov>,
+    ns5:title "Towards a Deep, Domain Specific Modeling Framework for Robot Applications" ;
+    ns6:endPage 15 ;
+    ns6:numPages 12 ;
+    ns6:startPage 4 ;
+    ns2:author <http://ceur-ws.org/Vol-1319/#AlexanderiEgurnov>,
         <http://ceur-ws.org/Vol-1319/#ColiniAtkinson>,
         <http://ceur-ws.org/Vol-1319/#FabianiKajzar>,
         <http://ceur-ws.org/Vol-1319/#KatharinaiMarkert>,
@@ -255,11 +261,11 @@
 
 <http://ceur-ws.org/Vol-1319/#morse14_paper_04> a ns3:Paper ;
     ns3:partOf <http://ceur-ws.org/Vol-1319/> ;
-    ns7:title "Towards Context Modeling in Space and Time" ;
-    ns2:endPage 53 ;
-    ns2:numPages 12 ;
-    ns2:startPage 42 ;
-    ns5:author <http://ceur-ws.org/Vol-1319/#ChristianiPiechnick>,
+    ns5:title "Towards Context Modeling in Space and Time" ;
+    ns6:endPage 53 ;
+    ns6:numPages 12 ;
+    ns6:startPage 42 ;
+    ns2:author <http://ceur-ws.org/Vol-1319/#ChristianiPiechnick>,
         <http://ceur-ws.org/Vol-1319/#GeorgiP%C3%BCschel>,
         <http://ceur-ws.org/Vol-1319/#RonnyiKaiser>,
         <http://ceur-ws.org/Vol-1319/#SebastianiG%C3%B6tz>,
@@ -276,7 +282,7 @@
         <http://ceur-ws.org/Vol-1319/#morse14_paper_07>,
         <http://ceur-ws.org/Vol-1319/#morse14_paper_08> ;
     ns9:issued "2015-01-26T00:00:00+00:00"^^xsd:dateTime ;
-    ns2:presentedAt <http://ceur-ws.org/Vol-1319/#event> ;
-    ns5:editor <http://ceur-ws.org/Vol-1319/#GerdiWagner>,
+    ns6:presentedAt <http://ceur-ws.org/Vol-1319/#event> ;
+    ns2:editor <http://ceur-ws.org/Vol-1319/#GerdiWagner>,
         <http://ceur-ws.org/Vol-1319/#UweiA%C3%9Fmann> .
 
