@@ -29,7 +29,7 @@ The program stores generated data in Blazegraph, detail information see [About_B
 
 Running the Extraction Task
 ---------------------------
-Option 1. To accomplish the SemPub2015 Task1 the following commands should be used:
+Option 1. To accomplish the SemPub2015 Task1 the following commands should be entered at the command prompt of the FitLayout JavaScript console:
 ```
 processEvaluationSet(); 
 transformToDomain();
